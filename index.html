@@ -178,7 +178,7 @@
     .btn-nav:hover { opacity: .88; }
 
     /* ─── HERO ─── */
-    .hero { padding: 64px 0 0; text-align: center; position: relative; overflow: hidden; }
+    .hero { padding: 64px 0 0; text-align: center; position: relative; overflow: visible; }
     .hero::before {
       content: ''; position: absolute; inset: 0;
       background: radial-gradient(ellipse 65% 55% at 50% 0%, rgba(200,136,30,0.11) 0%, transparent 68%);
@@ -227,7 +227,7 @@
     .hero-note { font-size: 12px; color: var(--text-dimmer); margin-top: 8px; }
 
     /* ─── IPHONE MOCKUP ─── */
-    .hero-phones { position: relative; margin-top: 52px; }
+    .hero-phones { position: relative; margin-top: 52px; max-width: 760px; margin-left: auto; margin-right: auto; }
     .iphone-mock {
       position: relative; background: #1c0e0e; border-radius: 48px; padding: 11px 10px;
       box-shadow:
@@ -244,17 +244,21 @@
       width: 3.5px; height: 30px; background: #2a1515; border-radius: 3px 0 0 3px;
       box-shadow: 0 46px 0 #2a1515, 0 84px 0 #2a1515;
     }
-    .iphone-screen { border-radius: 38px; overflow: hidden; background: #1a0808; line-height: 0; }
-    .iphone-screen img { width: 100%; display: block; }
+    .iphone-screen {
+      border-radius: 38px; overflow: hidden; background: #1a0808; line-height: 0;
+      aspect-ratio: 9 / 19.5; /* lock to iPhone proportions — same for img and video */
+    }
+    .iphone-screen img  { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .iphone-screen video{ width: 100%; height: 100%; object-fit: cover; display: block; }
     .iphone-island {
       position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
       width: 108px; height: 30px; background: #1c0e0e; border-radius: 20px; z-index: 5; pointer-events: none;
     }
     .phones-fan { display: flex; align-items: flex-end; justify-content: center; padding-top: 20px; overflow: visible; }
     .fan-phone { flex-shrink: 0; position: relative; }
-    .fan-left  { width: 230px; transform: rotate(-10deg) translateY(48px); transform-origin: bottom center; margin-right: -28px; z-index: 1; opacity: .88; }
+    .fan-left  { width: 268px; transform: rotate(-10deg) translateY(40px); transform-origin: bottom center; margin-right: -36px; z-index: 1; opacity: .72; }
     .fan-center { width: 268px; z-index: 3; }
-    .fan-right { width: 230px; transform: rotate(10deg) translateY(48px); transform-origin: bottom center; margin-left: -28px; z-index: 2; opacity: .88; }
+    .fan-right { width: 268px; transform: rotate(10deg) translateY(40px); transform-origin: bottom center; margin-left: -36px; z-index: 2; opacity: .72; }
     .fan-left .iphone-mock, .fan-right .iphone-mock { border-radius: 44px; padding: 10px 9px; }
     .fan-left .iphone-screen, .fan-right .iphone-screen { border-radius: 35px; }
     .phones-floor { height: 40px; background: linear-gradient(to bottom, rgba(18,5,5,.18), transparent); }
@@ -470,7 +474,7 @@
       .split-phone  { order: -1; }
       .nav-links    { display: none; }
       .fan-left, .fan-right { display: none; }
-      .fan-center   { width: 240px; }
+      .fan-left, .fan-right, .fan-center { width: 220px; }
       .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
     }
     @media (max-width: 580px) {
@@ -544,7 +548,15 @@
         <div class="iphone-mock">
           <div class="iphone-island"></div>
           <div class="iphone-screen">
-            <img src="./assets/IMG_6942.PNG" alt="Wisdom iPhone app showing Bhagavad Gita daily shloka in Sanskrit and English" />
+            <video
+              src="./assets/wisdom-demo.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              style="width:100%;display:block;object-fit:cover;"
+            ></video>
           </div>
         </div>
       </div>
