@@ -97,7 +97,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Load fonts non-blocking to remove render-blocking request -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet"></noscript>
+  <!-- Preload LCP image (hero center phone) -->
+  <link rel="preload" as="image" href="assets/IMG_6942.webp" fetchpriority="high">
 
   <style>
     :root {
@@ -541,7 +546,7 @@
         <div class="iphone-mock">
           <div class="iphone-island"></div>
           <div class="iphone-screen">
-            <img src="./assets/IMG_6938.webp" alt="Wisdom app topic personalisation for karma, peace, detachment, and self-realization" />
+            <img src="./assets/IMG_6938.webp" alt="Wisdom app topic personalisation for karma, peace, detachment, and self-realization" loading="lazy" />
           </div>
         </div>
       </div>
@@ -549,7 +554,7 @@
         <div class="iphone-mock">
           <div class="iphone-island"></div>
           <div class="iphone-screen">
-            <img src="./assets/IMG_6942.webp" alt="Wisdom iPhone app showing a Bhagavad Gita verse in Sanskrit and English" />
+            <img src="./assets/IMG_6942.webp" alt="Wisdom iPhone app showing a Bhagavad Gita verse in Sanskrit and English" fetchpriority="high" />
           </div>
         </div>
       </div>
@@ -557,7 +562,7 @@
         <div class="iphone-mock">
           <div class="iphone-island"></div>
           <div class="iphone-screen">
-            <img src="./assets/IMG_6946.webp" alt="Wisdom app deeper meaning screen explaining a Bhagavad Gita verse" />
+            <img src="./assets/IMG_6946.webp" alt="Wisdom app deeper meaning screen explaining a Bhagavad Gita verse" loading="lazy" />
           </div>
         </div>
       </div>
@@ -729,7 +734,7 @@
       </div>
       <div class="split-phone">
         <div class="phone-frame">
-          <img src="./assets/IMG_6942.webp" alt="Wisdom iPhone app showing a Bhagavad Gita verse in Sanskrit and English" />
+          <img src="./assets/IMG_6942.webp" alt="Wisdom iPhone app showing a Bhagavad Gita verse in Sanskrit and English" loading="lazy" />
         </div>
       </div>
     </div>
@@ -758,7 +763,7 @@
       </div>
       <div class="split-phone">
         <div class="phone-frame">
-          <img src="./assets/IMG_6946.webp" alt="Wisdom app screen showing deeper meaning and modern relevance of a Bhagavad Gita shloka" />
+          <img src="./assets/IMG_6946.webp" alt="Wisdom app screen showing deeper meaning and modern relevance of a Bhagavad Gita shloka" loading="lazy" />
         </div>
       </div>
     </div>
@@ -788,7 +793,7 @@
       </div>
       <div class="split-phone">
         <div class="phone-frame">
-          <img src="./assets/IMG_6947.webp" alt="Wisdom app private journal for reflecting on daily Bhagavad Gita shlokas" />
+          <img src="./assets/IMG_6947.webp" alt="Wisdom app private journal for reflecting on daily Bhagavad Gita shlokas" loading="lazy" />
         </div>
       </div>
     </div>
@@ -817,7 +822,7 @@
       </div>
       <div class="split-phone">
         <div class="phone-frame">
-          <img src="./assets/IMG_6938.webp" alt="Wisdom app topic selection screen showing spiritual themes from the Bhagavad Gita" />
+          <img src="./assets/IMG_6938.webp" alt="Wisdom app topic selection screen showing spiritual themes from the Bhagavad Gita" loading="lazy" />
         </div>
       </div>
     </div>
@@ -989,7 +994,7 @@
     <h2>The journey inward begins<br>with a single shloka.</h2>
     <p>Free to download. Start today. One verse. A minute to sit with it.</p>
     <a href="https://apps.apple.com/us/app/wisdom-eternal-quotes/id6747684125" target="_blank" rel="noopener" style="display:inline-block;">
-      <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store" style="height:56px;width:auto;" />
+      <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store" style="height:56px;width:auto;" loading="lazy" />
     </a>
     <p style="font-size:13px;color:var(--text-dimmer);margin-top:16px;">Free · Available on iOS</p>
   </div>
@@ -1000,7 +1005,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-logo" style="display:flex;align-items:center;gap:9px;">
-      <img src="assets/male-logo-dark.webp" alt="Wisdom" style="width:30px;height:30px;border-radius:50%;object-fit:cover;border:1px solid rgba(200,136,30,0.35);" />
+      <img src="assets/male-logo-dark.webp" alt="Wisdom" loading="lazy" style="width:30px;height:30px;border-radius:50%;object-fit:cover;border:1px solid rgba(200,136,30,0.35);" />
       Wisdom
     </div>
     <p class="footer-copy">© 2026 Wisdom</p>
