@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Bhagavad Gita, Sanskrit Shlokas &amp; Hindu Philosophy | Wisdom</title>
+  <meta name="description" content="Deep readings of the Bhagavad Gita — chapter by chapter, shloka by shloka. Sanskrit text, IAST, meaning, and modern relevance. Written for the intellectually curious." />
+  <link rel="canonical" href="https://wisdomquotes.in/blogs/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blog — Bhagavad Gita &amp; Hindu Philosophy | Wisdom" />
+  <meta property="og:description" content="Deep readings of the Bhagavad Gita — chapter by chapter. Sanskrit, meaning, and modern relevance." />
+  <meta property="og:url" content="https://wisdomquotes.in/blogs/" />
+  <meta property="og:site_name" content="Wisdom" />
+  <link rel="icon" type="image/webp" href="../assets/male-logo-dark.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --ink: #0D0D0D;
+      --ink-2: #1a1a1a;
+      --cream: #FAFAF6;
+      --cream-2: #F3F0E8;
+      --gold: #B8860B;
+      --gold-bright: #C9951A;
+      --gold-pale: #FDF6DC;
+      --maroon: #6B1020;
+      --maroon-pale: #FDF0F2;
+      --muted: #7A7468;
+      --muted-2: #999285;
+      --border: #E4E0D6;
+      --nav-bg: #0a0a0a;
+      --nav-text: rgba(250,250,246,0.85);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--nav-bg);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      padding: 0 32px; height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px; font-weight: 700; color: #FAFAF6;
+    }
+    .logo-mark img { width: 28px; height: 28px; border-radius: 6px; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a {
+      font-size: 13.5px; font-weight: 500;
+      color: var(--nav-text); text-decoration: none;
+      letter-spacing: 0.01em; transition: color 0.15s;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a.active { color: var(--gold-bright); }
+    .btn-nav {
+      background: var(--gold-bright); color: var(--ink) !important;
+      padding: 7px 16px; border-radius: 6px;
+      font-weight: 600 !important; font-size: 13px !important;
+    }
+
+    /* HERO */
+    .blog-hero {
+      background: var(--ink);
+      padding: 60px 32px 52px;
+      position: relative; overflow: hidden;
+    }
+    .blog-hero::before {
+      content: 'Blog';
+      position: absolute; right: -10px; bottom: -20px;
+      font-family: 'Playfair Display', serif;
+      font-size: 220px; color: rgba(255,255,255,0.02);
+      line-height: 1; pointer-events: none; user-select: none;
+    }
+    .blog-hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+    .blog-hero-label {
+      font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--gold-bright); font-weight: 600; margin-bottom: 14px;
+    }
+    .blog-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 4vw, 46px); font-weight: 700;
+      color: #FAFAF6; line-height: 1.18; margin-bottom: 12px;
+    }
+    .blog-hero h1 em { font-style: italic; color: var(--gold-bright); }
+    .blog-hero p {
+      font-size: 16px; color: rgba(250,250,246,0.48);
+      max-width: 520px; line-height: 1.65; font-weight: 300;
+    }
+
+    /* LAYOUT */
+    .blog-wrap {
+      max-width: 1100px; margin: 0 auto;
+      padding: 56px 32px 100px;
+    }
+
+    /* SECTION HEADER */
+    .section-head {
+      display: flex; align-items: baseline; gap: 16px;
+      margin-bottom: 32px; padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-head h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px; font-weight: 600; color: var(--ink);
+    }
+    .section-head h2 em { font-style: italic; color: var(--gold); }
+    .section-count {
+      font-size: 11px; letter-spacing: 0.1em; color: var(--muted-2);
+      text-transform: uppercase; font-weight: 500;
+    }
+
+    /* ARTICLE CARDS */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px; margin-bottom: 64px;
+    }
+
+    .article-card {
+      background: white; border: 1px solid var(--border);
+      border-radius: 14px; overflow: hidden;
+      display: flex; flex-direction: column;
+      text-decoration: none;
+      transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+    }
+    .article-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    }
+
+    .card-thumb {
+      background: var(--ink);
+      padding: 28px 28px 20px;
+      position: relative; overflow: hidden;
+      min-height: 130px;
+      display: flex; flex-direction: column; justify-content: flex-end;
+    }
+    .card-thumb::before {
+      position: absolute; right: -10px; top: -10px;
+      font-family: 'Noto Sans Devanagari', serif;
+      font-size: 100px; color: rgba(255,255,255,0.04);
+      line-height: 1; pointer-events: none; user-select: none;
+    }
+    .card-thumb-ch1::before { content: 'अध्याय १'; }
+    .card-thumb-shlok::before { content: 'श्लोक'; }
+    .card-thumb-karma::before { content: 'कर्म'; }
+    .card-thumb-gita::before { content: 'गीता'; }
+
+    .card-chapter-badge {
+      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+      font-weight: 600; color: var(--gold-bright); margin-bottom: 8px;
+    }
+    .card-thumb-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px; font-weight: 600; color: #FAFAF6;
+      line-height: 1.3;
+    }
+    .card-thumb-title em { font-style: italic; color: var(--gold-bright); }
+
+    .card-body { padding: 20px 24px 24px; flex: 1; display: flex; flex-direction: column; }
+    .card-desc {
+      font-size: 14px; line-height: 1.65;
+      color: var(--muted); flex: 1; margin-bottom: 16px;
+    }
+    .card-meta {
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 11.5px; color: var(--muted-2);
+      padding-top: 14px; border-top: 1px solid var(--border);
+    }
+    .card-read-time { font-weight: 500; }
+    .card-arrow {
+      font-size: 13px; color: var(--gold); font-weight: 600;
+    }
+
+    /* TAGS */
+    .card-tags {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px;
+    }
+    .tag {
+      font-size: 10.5px; font-weight: 500;
+      padding: 3px 9px; border-radius: 4px;
+      letter-spacing: 0.06em;
+    }
+    .tag-chapter { background: var(--maroon-pale); color: var(--maroon); }
+    .tag-shloka { background: var(--gold-pale); color: var(--gold); }
+    .tag-philosophy { background: #EBF0F7; color: #0F2A5C; }
+
+    /* COMING SOON SECTION */
+    .coming-section { margin-top: 60px; }
+    .coming-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+    }
+    .coming-card {
+      background: var(--cream-2); border: 1px dashed var(--border);
+      border-radius: 10px; padding: 18px 20px;
+    }
+    .coming-label {
+      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted-2); font-weight: 600; margin-bottom: 6px;
+    }
+    .coming-title { font-size: 13.5px; font-weight: 600; color: var(--muted); line-height: 1.4; }
+    .coming-soon-badge {
+      display: inline-block; margin-top: 8px;
+      font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase;
+      background: var(--border); color: var(--muted-2);
+      padding: 2px 8px; border-radius: 3px; font-weight: 500;
+    }
+
+    /* APP BANNER */
+    .app-banner {
+      background: var(--ink-2); border-radius: 14px;
+      padding: 32px 36px; margin-bottom: 60px;
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 24px; align-items: center;
+    }
+    @media (max-width: 580px) { .app-banner { grid-template-columns: 1fr; } }
+    .app-banner h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px; font-weight: 600; color: #FAFAF6;
+      margin-bottom: 6px; line-height: 1.3;
+    }
+    .app-banner p { font-size: 13.5px; color: rgba(250,250,246,0.48); line-height: 1.6; }
+    .app-banner-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--gold-bright); color: var(--ink);
+      text-decoration: none; padding: 11px 20px;
+      border-radius: 8px; font-size: 13.5px; font-weight: 700;
+      white-space: nowrap; transition: opacity 0.15s;
+    }
+    .app-banner-btn:hover { opacity: 0.88; }
+
+    /* FOOTER */
+    footer {
+      background: var(--ink); padding: 32px 40px;
+      text-align: center; font-size: 12px;
+      letter-spacing: 0.06em; color: rgba(250,250,246,0.3);
+    }
+    footer a { color: rgba(250,250,246,0.45); text-decoration: none; }
+    footer a:hover { color: rgba(250,250,246,0.8); }
+    footer span { color: var(--gold-bright); }
+
+    @media (max-width: 700px) {
+      .blog-hero { padding: 44px 20px 40px; }
+      .blog-wrap { padding: 40px 20px 60px; }
+      .nav-inner { padding: 0 20px; }
+      .nav-links li:nth-child(1),
+      .nav-links li:nth-child(2) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../" class="logo">
+      <div class="logo-mark">
+        <img src="../assets/male-logo-dark.webp" alt="Wisdom" />
+      </div>
+      Wisdom
+    </a>
+    <ul class="nav-links">
+      <li><a href="../#features">Features</a></li>
+      <li><a href="../#how-it-works">How it works</a></li>
+      <li><a href="./index.html" class="active">Blog</a></li>
+      <li>
+        <a href="https://apps.apple.com/us/app/wisdom-eternal-quotes/id6747684125"
+           target="_blank" rel="noopener" class="btn-nav">Download Free</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="blog-hero-label">Wisdom · Journal of Hindu Philosophy</div>
+    <h1>The Bhagavad Gita,<br /><em>read closely</em></h1>
+    <p>Chapter by chapter. Shloka by shloka. With Sanskrit, IAST, meaning, and why it matters on a Tuesday morning in 2026.</p>
+  </div>
+</div>
+
+<div class="blog-wrap">
+
+  <!-- APP BANNER -->
+  <div class="app-banner">
+    <div>
+      <h3>One shloka a day. In Sanskrit. With meaning that lands.</h3>
+      <p>The Wisdom app delivers one verse from the Bhagavad Gita each morning — Devanagari, transliteration, English meaning, deeper explanation, and a private journal. Free on iPhone.</p>
+    </div>
+    <a href="https://apps.apple.com/us/app/wisdom-eternal-quotes/id6747684125"
+       target="_blank" rel="noopener" class="app-banner-btn">Download Free →</a>
+  </div>
+
+  <!-- PUBLISHED -->
+  <div class="section-head">
+    <h2>Bhagavad Gita — <em>Chapter Studies</em></h2>
+    <span class="section-count">1 article published</span>
+  </div>
+
+  <div class="articles-grid">
+
+    <!-- Chapter 1 -->
+    <a href="./bhagwat-geeta-chapter-1.html" class="article-card">
+      <div class="card-thumb card-thumb-ch1">
+        <div class="card-chapter-badge">Bhagavad Gita · Chapter 1 · 47 Verses</div>
+        <div class="card-thumb-title">Arjuna Vishada Yoga —<br /><em>When the Warrior Sat Down</em></div>
+      </div>
+      <div class="card-body">
+        <div class="card-tags">
+          <span class="tag tag-chapter">Chapter 1</span>
+          <span class="tag tag-shloka">47 Shlokas</span>
+          <span class="tag tag-philosophy">Grief &amp; Dharma</span>
+        </div>
+        <div class="card-desc">The most psychologically honest chapter in the Gita begins not with wisdom, but with collapse. Why does the greatest archer in history put down his bow? A close reading of all 47 verses — with Sanskrit, IAST, meaning, and modern context.</div>
+        <div class="card-meta">
+          <span class="card-read-time">~16 min read</span>
+          <span class="card-arrow">Read →</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- COMING SOON -->
+  <div class="coming-section">
+    <div class="section-head">
+      <h2>Coming Soon</h2>
+      <span class="section-count">More chapters &amp; collections</span>
+    </div>
+    <div class="coming-grid">
+      <div class="coming-card">
+        <div class="coming-label">Chapter Study</div>
+        <div class="coming-title">Bhagavad Gita Chapter 2 — Sankhya Yoga</div>
+        <span class="coming-soon-badge">Coming soon</span>
+      </div>
+      <div class="coming-card">
+        <div class="coming-label">Shloka Collection</div>
+        <div class="coming-title">20 Most Famous Shlokas in Sanskrit</div>
+        <span class="coming-soon-badge">Coming soon</span>
+      </div>
+      <div class="coming-card">
+        <div class="coming-label">Teaching</div>
+        <div class="coming-title">Karma — What the Gita Actually Says</div>
+        <span class="coming-soon-badge">Coming soon</span>
+      </div>
+      <div class="coming-card">
+        <div class="coming-label">Guide</div>
+        <div class="coming-title">Bhagwat Geeta Saar — The Complete Essence</div>
+        <span class="coming-soon-badge">Coming soon</span>
+      </div>
+      <div class="coming-card">
+        <div class="coming-label">Collection</div>
+        <div class="coming-title">Krishna Quotes — 50 Teachings with Verse References</div>
+        <span class="coming-soon-badge">Coming soon</span>
+      </div>
+      <div class="coming-card">
+        <div class="coming-label">Chapter Study</div>
+        <div class="coming-title">Bhagavad Gita Chapter 12 — Bhakti Yoga</div>
+        <span class="coming-soon-badge">Coming soon</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Wisdom App · <span>Daily shlokas from the Bhagavad Gita &amp; Hindu scriptures</span> · Free on iPhone</p>
+  <p style="margin-top:8px"><a href="../">wisdomquotes.in</a> &nbsp;·&nbsp; <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Support</a></p>
+</footer>
+
+</body>
+</html>
