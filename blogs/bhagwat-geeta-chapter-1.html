@@ -1222,12 +1222,7 @@
               target="_blank"
               rel="noopener"
               class="btn-nav"
-              onclick="
-                mixpanel.track('App Store Link Clicked', {
-                  location: 'nav',
-                  page: 'Bhagavad Gita Chapter 1 Page',
-                })
-              "
+              data-mp-location="nav"
               >Download Free</a
             >
           </li>
@@ -2182,13 +2177,8 @@
             href="https://apps.apple.com/us/app/wisdom-eternal-quotes/id6747684125"
             target="_blank"
             rel="noopener"
-            onclick="
-              mixpanel.track('App Store Link Clicked', {
-                location: 'about_app',
-                page: 'Bhagavad Gita Chapter 1 Page',
-              })
-            "
-            >Apple App Store</a
+            data-mp-location="about_app"
+            >Apple App Store</
           >.
         </p>
       </div>
@@ -2357,12 +2347,7 @@
           target="_blank"
           rel="noopener"
           class="app-cta-btn"
-          onclick="
-            mixpanel.track('App Store Link Clicked', {
-              location: 'final_cta',
-              page: 'Bhagavad Gita Chapter 1 Page',
-            })
-          "
+          data-mp-location="final_cta"
         >
           Download Free
         </a>
@@ -2468,16 +2453,21 @@
           href="https://apps.apple.com/us/app/wisdom-eternal-quotes/id6747684125"
           target="_blank"
           rel="noopener"
-          onclick="
-            mixpanel.track('App Store Link Clicked', {
-              location: 'footer_app_store',
-              page: 'Bhagavad Gita Chapter 1 Page',
-            })
-          "
-          >App Store</a
+          data-mp-location="footer_app_store"
+          >App Store</
         >
         &nbsp;·&nbsp; <a href="mailto:support@wisdomquotes.in">Support</a>
       </p>
     </footer>
+
+    <script>
+      // Track all App Store links by data-mp-location attribute
+      mixpanel.track_links('a[data-mp-location]', 'App Store Link Clicked', function (el) {
+        return {
+          location: el.getAttribute('data-mp-location'),
+          page: 'Bhagavad Gita Chapter 1',
+        };
+      });
+    </script>
   </body>
 </html>
