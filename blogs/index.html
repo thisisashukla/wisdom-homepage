@@ -579,7 +579,7 @@
               target="_blank"
               rel="noopener"
               class="btn-nav"
-              onclick="mixpanel.track('App Store Link Clicked', { location: 'hero', page: 'Blog List Page' })"
+              data-mp-location="nav"
               >Download Free</a
             >
           </li>
@@ -614,7 +614,7 @@
           target="_blank"
           rel="noopener"
           class="app-banner-btn"
-          onclick="mixpanel.track('App Store Link Clicked', { location: 'nav', page: 'Blog List Page' })"
+          data-mp-location="app_banner"
           >Download Free →</a
         >
       </div>
@@ -627,7 +627,7 @@
 
       <div class="articles-grid">
         <!-- Chapter 1 -->
-        <a href="./bhagwat-geeta-chapter-1.html" class="article-card">
+        <a href="./bhagwat-geeta-chapter-1.html" class="article-card" data-mp-article="Bhagavad Gita Chapter 1">
           <div class="card-thumb card-thumb-ch1">
             <div class="card-chapter-badge">
               Bhagavad Gita · Chapter 1 · 47 Verses
@@ -716,5 +716,23 @@
         <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Support</a>
       </p>
     </footer>
+
+    <script>
+      // Track App Store link clicks
+      mixpanel.track_links('a[data-mp-location]', 'App Store Link Clicked', function (el) {
+        return {
+          location: el.getAttribute('data-mp-location'),
+          page: 'Blog Index',
+        };
+      });
+
+      // Track article card clicks
+      mixpanel.track_links('a[data-mp-article]', 'Article Card Clicked', function (el) {
+        return {
+          article: el.getAttribute('data-mp-article'),
+          page: 'Blog Index',
+        };
+      });
+    </script>
   </body>
 </html>
