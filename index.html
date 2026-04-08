@@ -2575,11 +2575,41 @@
     </script>
 
     <script>
-      mixpanel.track_links('a[data-mp-location]', 'App Store Link Clicked', function (el) {
-        return {
-          location: el.getAttribute('data-mp-location'),
-          page: 'Wisdom Homepage',
-        };
+      (function () {
+        function trackAppStoreClicks(pageName) {
+          document.querySelectorAll("a[data-mp-location]").forEach((link) => {
+            link.addEventListener("click", (event) => {
+              const href = link.href;
+              const openInNewTab =
+                link.target === "_blank" ||
+                event.metaKey ||
+                event.ctrlKey ||
+                event.shiftKey ||
+                event.button === 1;
+
+              const props = {
+                location: link.getAttribute("data-mp-location"),
+                page: pageName,
+                href: href,
+              };
+
+              if (!openInNewTab) event.preventDefault();
+
+              let didNavigate = false;
+              const navigate = () => {
+                if (!openInNewTab && !didNavigate) {
+                  didNavigate = true;
+                  window.location.href = href;
+                }
+              };
+
+              mixpanel.track("App Store Link Clicked", props, navigate);
+              setTimeout(navigate, 300);
+            });
+          });
+        }
+
+        trackAppStoreClicks("Wisdom Homepage");
       });
     </script>
   </body>
