@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support — Wisdom App</title>
+    <meta
+      name="description"
+      content="Get support for the Wisdom app. Contact us for any issues with the app or content at work.ankurshukla@gmail.com."
+    />
+    <link rel="canonical" href="https://wisdomquotes.in/support" />
+    <link rel="icon" type="image/webp" href="assets/male-logo-dark.webp" />
+    <link rel="apple-touch-icon" href="assets/male-logo-dark.webp" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    /></noscript>
+
+    <style>
+      :root {
+        --maroon: #3d0c0c;
+        --maroon-mid: #5c1a1a;
+        --maroon-deep: #1a0606;
+        --gold: #c8881e;
+        --gold-light: #f5c96a;
+        --gold-pale: #fdf3dc;
+        --gold-border: #e8c97a;
+        --gold-dim: rgba(200, 136, 30, 0.15);
+        --text: #f5e8cc;
+        --text-dim: rgba(245, 232, 204, 0.65);
+        --text-dimmer: rgba(245, 232, 204, 0.35);
+        --border: rgba(200, 136, 30, 0.2);
+        --bg: #120505;
+        --bg-warm: #190707;
+        --bg-alt: #0f0404;
+        --bg-card: rgba(255, 255, 255, 0.035);
+        --max: 780px;
+        --r-lg: 20px;
+      }
+
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      html { font-size: 16px; scroll-behavior: smooth; }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Inter", system-ui, sans-serif;
+        font-weight: 400;
+        line-height: 1.7;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      a { color: var(--gold-light); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      /* ── NAV ── */
+      nav {
+        background: var(--bg-alt);
+        border-bottom: 1px solid var(--border);
+        padding: 0 28px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--gold-light);
+        text-decoration: none;
+      }
+      .nav-logo img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid rgba(200, 136, 30, 0.35);
+      }
+      .nav-back {
+        font-size: 13px;
+        color: var(--text-dim);
+        transition: color 0.18s;
+      }
+      .nav-back:hover { color: var(--gold-light); text-decoration: none; }
+
+      /* ── MAIN ── */
+      main {
+        flex: 1;
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 64px 28px 80px;
+        width: 100%;
+      }
+
+      /* ── HERO ── */
+      .page-eyebrow {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 14px;
+      }
+      h1 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(32px, 5vw, 46px);
+        font-weight: 700;
+        color: var(--text);
+        line-height: 1.2;
+        margin-bottom: 18px;
+      }
+      .page-subtitle {
+        font-size: 16px;
+        color: var(--text-dim);
+        max-width: 560px;
+        margin-bottom: 52px;
+      }
+
+      /* ── DIVIDER ── */
+      .divider {
+        height: 1px;
+        background: linear-gradient(to right, transparent, var(--border), transparent);
+        margin: 48px 0;
+      }
+
+      /* ── SECTION HEADINGS ── */
+      h2 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--gold-light);
+        margin-bottom: 14px;
+      }
+
+      p {
+        font-size: 15px;
+        color: var(--text-dim);
+        margin-bottom: 16px;
+      }
+      p:last-child { margin-bottom: 0; }
+
+      ul {
+        list-style: none;
+        margin-bottom: 16px;
+      }
+      ul li {
+        font-size: 15px;
+        color: var(--text-dim);
+        padding: 6px 0 6px 20px;
+        position: relative;
+      }
+      ul li::before {
+        content: "·";
+        position: absolute;
+        left: 0;
+        color: var(--gold);
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      /* ── CONTACT CARD ── */
+      .contact-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--r-lg);
+        padding: 36px 32px;
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .contact-card .contact-label {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+      .contact-card .contact-email {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--gold-light);
+        word-break: break-all;
+      }
+      .contact-card .contact-note {
+        font-size: 14px;
+        color: var(--text-dim);
+        margin: 0;
+      }
+      .contact-btn {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 12px 28px;
+        background: linear-gradient(135deg, var(--gold) 0%, #e8a530 100%);
+        color: #1a0606;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 50px;
+        letter-spacing: 0.03em;
+        transition: opacity 0.18s, transform 0.18s;
+        align-self: flex-start;
+        text-decoration: none;
+      }
+      .contact-btn:hover {
+        opacity: 0.88;
+        transform: translateY(-1px);
+        text-decoration: none;
+      }
+
+      /* ── POLICY SECTION ── */
+      .policy-section {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--r-lg);
+        padding: 32px;
+        margin-top: 12px;
+      }
+      .policy-section h2 {
+        margin-bottom: 18px;
+      }
+      .policy-section p,
+      .policy-section ul li {
+        font-size: 14.5px;
+      }
+
+      /* ── FOOTER ── */
+      footer {
+        background: var(--bg-alt);
+        border-top: 1px solid var(--border);
+        padding: 44px 0;
+      }
+      .footer-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      .footer-logo {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--gold-light);
+        display: flex;
+        align-items: center;
+        gap: 9px;
+      }
+      .footer-logo img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid rgba(200, 136, 30, 0.35);
+      }
+      .footer-copy {
+        font-size: 12.5px;
+        color: var(--text-dimmer);
+      }
+      .footer-links {
+        display: flex;
+        gap: 22px;
+        list-style: none;
+      }
+      .footer-links a {
+        font-size: 12.5px;
+        color: var(--text-dimmer);
+        transition: color 0.18s;
+      }
+      .footer-links a:hover { color: var(--gold-light); }
+
+      @media (max-width: 600px) {
+        main { padding: 44px 20px 64px; }
+        .contact-card { padding: 26px 22px; }
+        .policy-section { padding: 24px 20px; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ── NAV ── -->
+    <nav>
+      <a href="/" class="nav-logo">
+        <img src="assets/male-logo-dark.webp" alt="Wisdom" />
+        Wisdom
+      </a>
+      <a href="/" class="nav-back">← Back to Home</a>
+    </nav>
+
+    <!-- ── MAIN ── -->
+    <main>
+      <p class="page-eyebrow">Help &amp; Support</p>
+      <h1>We're here to help</h1>
+      <p class="page-subtitle">
+        Have a question about the Wisdom app, a problem with the content, or
+        anything else? Reach out and we'll get back to you as soon as possible.
+      </p>
+
+      <!-- Contact card -->
+      <h2>Contact Us</h2>
+      <div class="contact-card">
+        <span class="contact-label">Email support</span>
+        <span class="contact-email">work.ankurshukla@gmail.com</span>
+        <p class="contact-note">
+          Write to us for any app issues, content concerns, subscription
+          questions, or general feedback. We typically respond within 1–2
+          business days.
+        </p>
+        <a href="mailto:work.ankurshukla@gmail.com" class="contact-btn">
+          Send an Email
+        </a>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Support policy -->
+      <div class="policy-section">
+        <h2>Support Policy</h2>
+        <p>
+          Wisdom is committed to providing a respectful, accurate, and
+          spiritually grounded experience. The following outlines how we handle
+          support requests.
+        </p>
+
+        <p><strong style="color: var(--text);">What we can help with</strong></p>
+        <ul>
+          <li>Technical issues — crashes, login problems, notification or widget failures</li>
+          <li>Subscription and billing questions — charges, upgrades, and cancellations</li>
+          <li>Content concerns — inaccuracies in Sanskrit text, translations, or explanations</li>
+          <li>Account and data requests — deleting your account or exported journal entries</li>
+          <li>General feedback and feature suggestions</li>
+        </ul>
+
+        <p><strong style="color: var(--text);">Response time</strong></p>
+        <p>
+          We aim to respond to all support emails within 1–2 business days. More
+          complex content reviews may take up to 5 business days.
+        </p>
+
+        <p><strong style="color: var(--text);">Content accuracy</strong></p>
+        <p>
+          The shlokas and explanations in Wisdom are curated with care from
+          traditional commentaries and scholarly sources. If you believe any
+          content is inaccurate, mistranslated, or presented in a culturally
+          insensitive way, please email us with the specific shloka reference
+          and your concern. We take content feedback seriously and will review
+          every report.
+        </p>
+
+        <p><strong style="color: var(--text);">Subscriptions &amp; refunds</strong></p>
+        <p>
+          Wisdom offers a free tier and an optional Pro subscription managed
+          through the App Store. Subscription billing, cancellation, and refund
+          requests are handled by Apple. You can manage or cancel your
+          subscription at any time from your iPhone's Settings → Apple ID →
+          Subscriptions. If you have trouble with this process, email us and
+          we'll guide you through it.
+        </p>
+
+        <p><strong style="color: var(--text);">Privacy</strong></p>
+        <p>
+          Journal entries you write in the Wisdom app are stored privately on
+          your device and are never shared with us or any third party. We do
+          not sell your data. For any privacy-related questions, email us at
+          <a href="mailto:work.ankurshukla@gmail.com">work.ankurshukla@gmail.com</a>.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <p style="font-size: 14px; color: var(--text-dimmer); text-align: center;">
+        You can also reach us at
+        <a href="mailto:work.ankurshukla@gmail.com">work.ankurshukla@gmail.com</a>
+        — we read every email.
+      </p>
+    </main>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="assets/male-logo-dark.webp" alt="Wisdom" loading="lazy" />
+          Wisdom
+        </div>
+        <p class="footer-copy">© 2026 Wisdom</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
