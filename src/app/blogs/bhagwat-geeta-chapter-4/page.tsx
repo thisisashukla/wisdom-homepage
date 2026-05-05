@@ -1524,6 +1524,8 @@ export default function ChapterFourPage() {
       <p>
         Wisdom © 2026. Part of a
         <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+          target="_blank"
+          rel="noopener"
           data-mp-location="footer"
           >free iPhone app</a
         >

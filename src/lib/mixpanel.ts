@@ -27,7 +27,17 @@ export function trackPageViewed(page: string, path?: string) {
 }
 
 export function trackAppStoreClick(page: string, location: string, href: string) {
-  trackEvent('App Store Button Clicked', { page, location, href })
+  if (typeof window === 'undefined') return
+  try {
+    // sendBeacon survives same-tab navigation; track() over XHR can be cancelled.
+    mixpanel.track(
+      'App Store Button Clicked',
+      { page, location, href },
+      { transport: 'sendBeacon' }
+    )
+  } catch {
+    // noop
+  }
 }
 
 export { mixpanel }
