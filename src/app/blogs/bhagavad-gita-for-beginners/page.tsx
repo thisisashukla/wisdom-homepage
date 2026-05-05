@@ -104,21 +104,90 @@ const pageCSS = `
         }
         .btn-nav:hover { opacity: 0.88; }
 
-        /* Header/Hero */
-        .hero {
-            max-width: var(--max);
-            margin: 3rem auto;
-            padding: 0 2rem;
+        /* ── BREADCRUMB ── */
+        .breadcrumb {
+            background: var(--bg-alt);
+            border-bottom: 1px solid var(--border);
         }
+        .breadcrumb-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 10px 28px;
+            font-size: 12px;
+            color: var(--text-dimmer);
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .breadcrumb-inner a { color: var(--text-dimmer); transition: color 0.15s; }
+        .breadcrumb-inner a:hover { color: var(--gold-light); }
+        .bc-sep { opacity: 0.4; }
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-            color: var(--gold-light);
+        /* ── ARTICLE HERO ── */
+        .article-hero {
+            background: var(--bg-warm);
+            padding: 64px 28px 56px;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
         }
+        .article-hero::before {
+            content: "आरम्भ";
+            position: absolute;
+            right: -10px;
+            bottom: -30px;
+            font-family: "Noto Sans Devanagari", serif;
+            font-size: 200px;
+            color: rgba(200, 136, 30, 0.04);
+            line-height: 1;
+            pointer-events: none;
+            user-select: none;
+        }
+        .article-hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+        .chapter-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(200, 136, 30, 0.1);
+            border: 1px solid rgba(200, 136, 30, 0.28);
+            color: var(--gold-light);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+        }
+        .chapter-badge-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--gold);
+            box-shadow: 0 0 6px var(--gold);
+            flex-shrink: 0;
+        }
+        h1.article-title {
+            font-family: "Playfair Display", Georgia, serif;
+            font-size: clamp(28px, 4vw, 48px);
+            font-weight: 700;
+            color: var(--gold-light);
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+            margin-bottom: 14px;
+        }
+        h1.article-title em { font-style: italic; color: #fff; }
+        .article-subtitle {
+            font-size: 17px;
+            color: var(--text-dim);
+            font-weight: 300;
+            margin-bottom: 32px;
+            line-height: 1.65;
+            max-width: 620px;
+        }
+        .article-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .meta-item { font-size: 12px; color: var(--text-dimmer); letter-spacing: 0.04em; }
+        .meta-sep { color: var(--border); }
 
         .lead {
             font-size: 1.1rem;
@@ -394,9 +463,7 @@ const pageCSS = `
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
+            .article-hero { padding: 44px 20px 40px; }
 
             h2 {
                 font-size: 1.5rem;
@@ -503,14 +570,44 @@ export default function ForBeginnersPage() {
       </div>
     </nav>
 
-    <div className="hero">
-        <h1>Bhagavad Gita for Beginners: Everything You Need to Start</h1>
-        <p className="lead">
-            The Bhagavad Gita is 700 verses across 18 chapters. You can read it in 2 to 4 hours straight through. But most people never finish it. Not because it's too long or too difficult, but because they don't know where to start, what to expect, or how to actually approach the text. This guide is designed to fix that. It tells you what the Gita is, why it matters, which translation to pick, and the single best way to read it.
+    <div className="breadcrumb">
+      <div className="breadcrumb-inner">
+        <a href="/">Wisdom</a>
+        <span className="bc-sep">/</span>
+        <a href="/blogs">Blog</a>
+        <span className="bc-sep">/</span>
+        Bhagavad Gita for Beginners
+      </div>
+    </div>
+
+    <div className="article-hero">
+      <div className="article-hero-inner">
+        <div className="chapter-badge">
+          <div className="chapter-badge-dot"></div>
+          Beginner&apos;s Guide · Start Here
+          <div className="chapter-badge-dot"></div>
+        </div>
+        <h1 className="article-title">
+          Bhagavad Gita for Beginners:<br />
+          <em>Everything You Need to Start</em>
+        </h1>
+        <p className="article-subtitle">
+          700 verses, 18 chapters, 2&ndash;4 hours of reading. What the Gita actually is, why most people never finish it, which translation to pick, and the single best way to read it.
         </p>
+        <div className="article-meta">
+          <span className="meta-item">Beginner&apos;s Guide</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">~10 min read</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">Start here</span>
+        </div>
+      </div>
     </div>
 
     <div className="content">
+        <p className="lead">
+            The Bhagavad Gita is 700 verses across 18 chapters. You can read it in 2 to 4 hours straight through. But most people never finish it. Not because it&apos;s too long or too difficult, but because they don&apos;t know where to start, what to expect, or how to actually approach the text. This guide is designed to fix that. It tells you what the Gita is, why it matters, which translation to pick, and the single best way to read it.
+        </p>
         <h2>What the Bhagavad Gita Is (And What It Isn't)</h2>
         <p>
             The Bhagavad Gita is often referred to as a spiritual text, a holy scripture, or an ancient wisdom tradition. All of that is true. But it is also worth being specific about what the book actually is: a philosophical conversation between two men on a battlefield.

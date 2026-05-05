@@ -104,21 +104,90 @@ const pageCSS = `
         }
         .btn-nav:hover { opacity: 0.88; }
 
-        /* Header/Hero */
-        .hero {
-            max-width: var(--max);
-            margin: 3rem auto;
-            padding: 0 2rem;
+        /* ── BREADCRUMB ── */
+        .breadcrumb {
+            background: var(--bg-alt);
+            border-bottom: 1px solid var(--border);
         }
+        .breadcrumb-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 10px 28px;
+            font-size: 12px;
+            color: var(--text-dimmer);
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .breadcrumb-inner a { color: var(--text-dimmer); transition: color 0.15s; }
+        .breadcrumb-inner a:hover { color: var(--gold-light); }
+        .bc-sep { opacity: 0.4; }
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-            color: var(--gold-light);
+        /* ── ARTICLE HERO ── */
+        .article-hero {
+            background: var(--bg-warm);
+            padding: 64px 28px 56px;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
         }
+        .article-hero::before {
+            content: "कर्म";
+            position: absolute;
+            right: -10px;
+            bottom: -30px;
+            font-family: "Noto Sans Devanagari", serif;
+            font-size: 220px;
+            color: rgba(200, 136, 30, 0.04);
+            line-height: 1;
+            pointer-events: none;
+            user-select: none;
+        }
+        .article-hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+        .chapter-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(200, 136, 30, 0.1);
+            border: 1px solid rgba(200, 136, 30, 0.28);
+            color: var(--gold-light);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+        }
+        .chapter-badge-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--gold);
+            box-shadow: 0 0 6px var(--gold);
+            flex-shrink: 0;
+        }
+        h1.article-title {
+            font-family: "Playfair Display", Georgia, serif;
+            font-size: clamp(28px, 4vw, 48px);
+            font-weight: 700;
+            color: var(--gold-light);
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+            margin-bottom: 14px;
+        }
+        h1.article-title em { font-style: italic; color: #fff; }
+        .article-subtitle {
+            font-size: 17px;
+            color: var(--text-dim);
+            font-weight: 300;
+            margin-bottom: 32px;
+            line-height: 1.65;
+            max-width: 620px;
+        }
+        .article-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .meta-item { font-size: 12px; color: var(--text-dimmer); letter-spacing: 0.04em; }
+        .meta-sep { color: var(--border); }
 
         .lead {
             font-size: 1.1rem;
@@ -416,9 +485,7 @@ const pageCSS = `
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
+            .article-hero { padding: 44px 20px 40px; }
 
             h2 {
                 font-size: 1.5rem;
@@ -517,14 +584,44 @@ export default function KarmaMeaningPage() {
       </div>
     </nav>
 
-    <div className="hero">
-        <h1>Karma Doesn't Mean What You Think It Means</h1>
-        <p className="lead">
-            "Karma will get them." "Good vibes only, the universe is watching." "What goes around comes around." These have become the modern meaning of karma. They describe a cosmic justice system — you put in goodness, the universe deposits goodness back. You do wrong, cosmic punishment arrives. But this is not what the Bhagavad Gita teaches. The word karma appears hundreds of times in the Gita, and almost never means cosmic ledger-keeping. It means action. Specifically, it means the action you perform and the consciousness you bring to it. The distinction matters. It changes everything about how you live.
+    <div className="breadcrumb">
+      <div className="breadcrumb-inner">
+        <a href="/">Wisdom</a>
+        <span className="bc-sep">/</span>
+        <a href="/blogs">Blog</a>
+        <span className="bc-sep">/</span>
+        Karma in the Gita
+      </div>
+    </div>
+
+    <div className="article-hero">
+      <div className="article-hero-inner">
+        <div className="chapter-badge">
+          <div className="chapter-badge-dot"></div>
+          Topic Guide · Core Teaching
+          <div className="chapter-badge-dot"></div>
+        </div>
+        <h1 className="article-title">
+          Karma Doesn&apos;t Mean<br />
+          <em>What You Think It Means</em>
+        </h1>
+        <p className="article-subtitle">
+          Karma isn&apos;t a cosmic ledger. It&apos;s not &ldquo;what goes around comes around.&rdquo; Here&apos;s what the Bhagavad Gita actually teaches — harder, more honest, and more useful than the greeting-card version.
         </p>
+        <div className="article-meta">
+          <span className="meta-item">Topic Guide · Karma Yoga</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">~5 min read</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">Chapters 2, 3 & 4</span>
+        </div>
+      </div>
     </div>
 
     <div className="content">
+        <p className="lead">
+            &ldquo;Karma will get them.&rdquo; &ldquo;Good vibes only, the universe is watching.&rdquo; &ldquo;What goes around comes around.&rdquo; These have become the modern meaning of karma. They describe a cosmic justice system — you put in goodness, the universe deposits goodness back. You do wrong, cosmic punishment arrives. But this is not what the Bhagavad Gita teaches. The word karma appears hundreds of times in the Gita, and almost never means cosmic ledger-keeping. It means action. Specifically, it means the action you perform and the consciousness you bring to it. The distinction matters. It changes everything about how you live.
+        </p>
         <h2>The Literal Meaning: Karma Is Action</h2>
         <p>
             The word karma comes from the Sanskrit root kri, which means "to do." Karma is simply action — any action you perform with your body, your speech, or your mind. Walking is karma. Breathing is karma. Thinking a thought is karma. It is not inherently moral or immoral. It just is.

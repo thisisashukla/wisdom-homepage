@@ -104,20 +104,119 @@ const pageCSS = `
         }
         .btn-nav:hover { opacity: 0.88; }
 
-        /* Header/Hero */
-        .hero {
-            max-width: var(--max);
-            margin: 3rem auto;
-            padding: 0 2rem;
+        /* ── BREADCRUMB ── */
+        .breadcrumb {
+            background: var(--bg-alt);
+            border-bottom: 1px solid var(--border);
         }
+        .breadcrumb-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 10px 28px;
+            font-size: 12px;
+            color: var(--text-dimmer);
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .breadcrumb-inner a { color: var(--text-dimmer); transition: color 0.15s; }
+        .breadcrumb-inner a:hover { color: var(--gold-light); }
+        .bc-sep { opacity: 0.4; }
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
+        /* ── ARTICLE HERO ── */
+        .article-hero {
+            background: var(--bg-warm);
+            padding: 64px 28px 56px;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+        .article-hero::before {
+            content: "शान्ति";
+            position: absolute;
+            right: -10px;
+            bottom: -30px;
+            font-family: "Noto Sans Devanagari", serif;
+            font-size: 200px;
+            color: rgba(200, 136, 30, 0.04);
+            line-height: 1;
+            pointer-events: none;
+            user-select: none;
+        }
+        .article-hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+        .chapter-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(200, 136, 30, 0.1);
+            border: 1px solid rgba(200, 136, 30, 0.28);
             color: var(--gold-light);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+        }
+        .chapter-badge-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--gold);
+            box-shadow: 0 0 6px var(--gold);
+            flex-shrink: 0;
+        }
+        h1.article-title {
+            font-family: "Playfair Display", Georgia, serif;
+            font-size: clamp(28px, 4vw, 48px);
+            font-weight: 700;
+            color: var(--gold-light);
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+            margin-bottom: 14px;
+        }
+        h1.article-title em { font-style: italic; color: #fff; }
+        .article-subtitle {
+            font-size: 17px;
+            color: var(--text-dim);
+            font-weight: 300;
+            margin-bottom: 32px;
+            line-height: 1.65;
+            max-width: 620px;
+        }
+        .article-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .meta-item { font-size: 12px; color: var(--text-dimmer); letter-spacing: 0.04em; }
+        .meta-sep { color: var(--border); }
+
+        /* ── HERO IMAGE ── */
+        .hero-image {
+            position: relative;
+            margin: 0 0 1rem;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--gold-border);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
+                        0 0 0 1px rgba(200, 136, 30, 0.08),
+                        0 4px 24px rgba(200, 136, 30, 0.12);
+        }
+        .hero-image img { display: block; width: 100%; height: auto; }
+        .hero-image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(18, 5, 5, 0) 55%, rgba(18, 5, 5, 0.55) 100%);
+            pointer-events: none;
+        }
+        .hero-image-caption {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 0.9rem;
+            color: var(--text-dimmer);
+            text-align: center;
+            margin-top: 0.85rem;
+            margin-bottom: 2rem;
+            letter-spacing: 0.02em;
         }
 
         .lead {
@@ -416,9 +515,7 @@ const pageCSS = `
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
+            .article-hero { padding: 44px 20px 40px; }
 
             h2 {
                 font-size: 1.5rem;
@@ -517,14 +614,55 @@ export default function AnxietyMentalPeacePage() {
       </div>
     </nav>
 
-    <div className="hero">
-        <h1>The Bhagavad Gita Was Written for Someone Having a Breakdown</h1>
-        <p className="lead">
-            Most people approach the Bhagavad Gita as spiritual wisdom — timeless, distant, comforting in a philosophical sort of way. But that's not what the Gita is. The Gita is a crisis management manual for someone in the middle of what we would now call a panic attack. Chapter 1 opens with a detailed clinical description of exactly that: shaking limbs, dry mouth, trembling bow, mind spinning, fear flooding the body. The Gita's entire philosophical apparatus was designed from the ground up to answer a man in that state. This is not metaphor. This is the foundation of the text.
+    <div className="breadcrumb">
+      <div className="breadcrumb-inner">
+        <a href="/">Wisdom</a>
+        <span className="bc-sep">/</span>
+        <a href="/blogs">Blog</a>
+        <span className="bc-sep">/</span>
+        Anxiety & Mental Peace
+      </div>
+    </div>
+
+    <div className="article-hero">
+      <div className="article-hero-inner">
+        <div className="chapter-badge">
+          <div className="chapter-badge-dot"></div>
+          Topic Guide · Anxiety & Mental Health
+          <div className="chapter-badge-dot"></div>
+        </div>
+        <h1 className="article-title">
+          The Bhagavad Gita Was Written for<br />
+          <em>Someone Having a Breakdown</em>
+        </h1>
+        <p className="article-subtitle">
+          Chapter 1 opens with the world&apos;s most famous panic attack. The Gita&apos;s teaching on anxiety isn&apos;t &ldquo;calm down&rdquo; — it&apos;s a complete diagnosis of how the spiral begins and where to interrupt it.
         </p>
+        <div className="article-meta">
+          <span className="meta-item">Topic Guide · Mental Health</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">~6 min read</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">Chapters 1, 2 & 5</span>
+        </div>
+      </div>
     </div>
 
     <div className="content">
+        <figure className="hero-image">
+          <img
+            src="/assets/krishna_holding_arjuns_hands.png"
+            alt="Krishna holding Arjuna's hands on the battlefield of Kurukshetra, the moment before the teaching of the Bhagavad Gita begins"
+            width={1200}
+            height={800}
+            loading="eager"
+            fetchPriority="high"
+          />
+        </figure>
+        <p className="hero-image-caption">Krishna takes Arjuna&apos;s trembling hands — the moment the Gita begins.</p>
+        <p className="lead">
+            Most people approach the Bhagavad Gita as spiritual wisdom — timeless, distant, comforting in a philosophical sort of way. But that&apos;s not what the Gita is. The Gita is a crisis management manual for someone in the middle of what we would now call a panic attack. Chapter 1 opens with a detailed clinical description of exactly that: shaking limbs, dry mouth, trembling bow, mind spinning, fear flooding the body. The Gita&apos;s entire philosophical apparatus was designed from the ground up to answer a man in that state. This is not metaphor. This is the foundation of the text.
+        </p>
         <h2>What Arjuna's Breakdown Looks Like</h2>
         <p>
             When you read the opening chapter of the Bhagavad Gita — the Vishada Yoga, the "yoga of despair" — you are reading a 2,500-year-old description of an anxiety attack so precise it could serve as a clinical checklist today. Arjuna is standing on the battlefield of Kurukshetra, about to fight his own cousins in what will be the greatest war of the age. And something breaks in him.
