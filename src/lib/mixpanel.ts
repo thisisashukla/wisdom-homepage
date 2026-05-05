@@ -15,6 +15,7 @@ export function initMixpanel() {
 
 export function trackEvent(event: string, props?: Record<string, unknown>) {
   if (typeof window === 'undefined') return
+  initMixpanel()
   try {
     mixpanel.track(event, props)
   } catch {
@@ -28,6 +29,7 @@ export function trackPageViewed(page: string, path?: string) {
 
 export function trackAppStoreClick(page: string, location: string, href: string) {
   if (typeof window === 'undefined') return
+  initMixpanel()
   try {
     // sendBeacon survives same-tab navigation; track() over XHR can be cancelled.
     mixpanel.track(
