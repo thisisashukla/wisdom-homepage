@@ -59,7 +59,7 @@ export default function HomePage() {
           <img
             src="/assets/male-logo-dark.webp"
             alt="Wisdom sage"
-            fetchpriority="high"/>
+            fetchPriority="high"/>
         </div>
 
         <div className="hero-eyebrow">
@@ -118,7 +118,7 @@ export default function HomePage() {
                 <img
                   src="/assets/IMG_6942.webp"
                   alt="Wisdom iPhone app showing a Bhagavad Gita verse in Sanskrit and English"
-                  fetchpriority="high"/>
+                  fetchPriority="high"/>
               </div>
             </div>
           </div>
