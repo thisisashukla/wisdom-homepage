@@ -634,35 +634,97 @@
       .wisdom-entity strong { color: var(--text); font-weight: 600; }
       .wisdom-entity a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
 
-      /* ── APP CTA ── */
+            /* ── APP CTA ── */
       .app-cta {
-        background: linear-gradient(135deg, var(--maroon-mid) 0%, var(--maroon) 100%);
+        background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25);
-        border-radius: 16px;
-        padding: 36px 40px;
-        margin: 0 0 60px;
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 24px;
-        align-items: center;
+        border-top: 3px solid var(--gold);
+        border-radius: 20px;
+        padding: 44px 48px 40px;
+        margin: 48px 0 60px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
       }
-      .app-cta-text h3 { font-family: "Playfair Display", serif; font-size: 20px; font-weight: 700; color: var(--gold-light); margin-bottom: 8px; line-height: 1.3; }
-      .app-cta-text p { font-size: 14px; color: var(--text-dim); line-height: 1.6; }
+      .app-cta::before {
+        content: "ज्ञान";
+        position: absolute;
+        top: -14px;
+        right: -8px;
+        font-family: "Noto Sans Devanagari", sans-serif;
+        font-size: 130px;
+        color: rgba(200, 136, 30, 0.05);
+        line-height: 1;
+        pointer-events: none;
+        user-select: none;
+      }
+      .app-cta-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(200, 136, 30, 0.12);
+        border: 1px solid rgba(200, 136, 30, 0.35);
+        color: var(--gold-light);
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        padding: 5px 14px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+      .app-cta-headline {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(22px, 3vw, 30px);
+        font-weight: 700;
+        color: var(--text);
+        line-height: 1.25;
+        margin-bottom: 14px;
+      }
+      .app-cta-desc {
+        font-size: 15px;
+        color: var(--text-dim);
+        line-height: 1.7;
+        max-width: 480px;
+        margin: 0 auto 22px;
+      }
+      .app-cta-features {
+        display: flex;
+        gap: 6px 18px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 28px;
+      }
+      .app-cta-features span {
+        font-size: 13px;
+        color: var(--gold-light);
+        opacity: 0.8;
+      }
       .app-cta-btn {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
         background: var(--gold);
-        color: #1a0606;
+        color: #120505;
         text-decoration: none;
-        padding: 12px 22px;
-        border-radius: 10px;
-        font-size: 14px;
+        padding: 15px 34px;
+        border-radius: 12px;
+        font-size: 16px;
         font-weight: 700;
-        white-space: nowrap;
-        transition: opacity 0.15s, transform 0.15s;
+        letter-spacing: -0.01em;
+        transition: all 0.2s;
+        box-shadow: 0 4px 22px rgba(200, 136, 30, 0.3);
       }
-      .app-cta-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+      .app-cta-btn:hover {
+        background: var(--gold-light);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 32px rgba(200, 136, 30, 0.5);
+      }
+      .app-cta-sub {
+        font-size: 12px;
+        color: rgba(245, 232, 204, 0.35);
+        margin-top: 14px;
+        letter-spacing: 0.04em;
+      }
 
       /* ── CHAPTER NAV ── */
       .chapter-nav {
@@ -715,7 +777,7 @@
         .nav-inner { padding: 0 20px; }
         .nav-links { display: none; }
         .shloka-body { grid-template-columns: 1fr; }
-        .app-cta { grid-template-columns: 1fr; padding: 28px 24px; }
+        .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
         .insights-box, .wisdom-entity { padding: 20px; }
@@ -1356,23 +1418,31 @@
           </tbody>
         </table>
 
+        <!-- ── APP CTA ── -->
         <div class="app-cta">
-          <div class="app-cta-text">
-            <h3>Start the day with a verse you can actually live.</h3>
-            <p>
-              The Wisdom app sends you one shloka every morning—from Chapter 5 and across the entire Gita. Sanskrit script, transliteration, meaning. Read it on your lock screen. Free for iPhone.
-            </p>
+          <div class="app-cta-eyebrow">Free iOS App</div>
+          <div class="app-cta-headline">One shloka a morning.<br>Let it stay with you all day.</div>
+          <p class="app-cta-desc">
+            The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+          </p>
+          <div class="app-cta-features">
+            <span>✦ Daily shloka in Sanskrit</span>
+            <span>✦ Meaning &amp; modern context</span>
+            <span>✦ Home screen widget</span>
           </div>
           <a
             href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
             target="_blank"
             rel="noopener"
             class="app-cta-btn"
-            data-mp-location="chapter5-cta"
+            data-mp-location="cta"
           >
-            Download Free →
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Download on the App Store
           </a>
+          <div class="app-cta-sub">Free · iPhone · No account needed</div>
         </div>
+
 
         <!-- DIVIDER -->
         <div class="section-divider">
@@ -1446,5 +1516,32 @@
         that delivers daily Bhagavad Gita shlokas. <span>Made with reverence.</span>
       </p>
     </footer>
-  </body>
+  
+    <script>
+      // Track App Store link clicks
+      (function () {
+        document.querySelectorAll("a[data-mp-location]").forEach(function(link) {
+          link.addEventListener("click", function(event) {
+            var href = link.href;
+            var openInNewTab = link.target === "_blank" || event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1;
+            var props = {
+              location: link.getAttribute("data-mp-location"),
+              page: "Bhagavad Gita Chapter 5",
+              href: href,
+            };
+            if (!openInNewTab) event.preventDefault();
+            var didNavigate = false;
+            var navigate = function() {
+              if (!openInNewTab && !didNavigate) {
+                didNavigate = true;
+                window.location.href = href;
+              }
+            };
+            mixpanel.track("App Store Link Clicked", props, navigate);
+            setTimeout(navigate, 300);
+          });
+        });
+      })();
+    </script>
+</body>
 </html>
