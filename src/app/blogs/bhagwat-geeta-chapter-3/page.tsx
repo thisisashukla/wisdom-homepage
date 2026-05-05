@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 3 \u2014 Karma Yoga: Why You Cannot Run | Wisdom",
@@ -567,6 +568,7 @@ const pageCSS = `
         .nav-inner { padding: 0 20px; }
         .nav-links { gap: 16px; }
         .nav-links li:not(:last-child) { display: none; }
+        .mobile-nav-toggle { display: flex; }
         .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
@@ -707,6 +709,7 @@ export default function ChapterThreePage() {
           </div>
           Wisdom
         </a>
+        <MobileNavToggle />
         <ul className="nav-links">
           <li><a href="../#features">Features</a></li>
           <li><a href="../#how-it-works">How it works</a></li>

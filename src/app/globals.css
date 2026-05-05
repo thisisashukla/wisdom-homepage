@@ -25,6 +25,83 @@ a {
   text-decoration: none;
 }
 
+/* ─── Mobile nav hamburger ──────────────────────────────────────────────
+   Hidden by default on every page. Each page's own mobile media query
+   flips `.mobile-nav-toggle { display: flex }` at the appropriate
+   breakpoint (homepage 960px, blogs 700px). */
+.mobile-nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: 14px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.mobile-nav-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #f5c96a;
+  border-radius: 2px;
+  transform-origin: center;
+  transition: transform 0.2s ease, opacity 0.15s ease;
+}
+.mobile-nav-toggle[data-open] span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.mobile-nav-toggle[data-open] span:nth-child(2) {
+  opacity: 0;
+}
+.mobile-nav-toggle[data-open] span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.mobile-nav-drawer {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(18, 5, 5, 0.96);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(200, 136, 30, 0.2);
+  padding: 8px 20px 16px;
+  z-index: 199;
+}
+.mobile-nav-drawer[data-open] {
+  display: block;
+}
+.mobile-nav-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-nav-drawer a {
+  display: block;
+  padding: 14px 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(245, 232, 204, 0.85);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(200, 136, 30, 0.1);
+  transition: color 0.15s;
+}
+.mobile-nav-drawer li:last-child a {
+  border-bottom: 0;
+}
+.mobile-nav-drawer a:hover,
+.mobile-nav-drawer a:focus-visible {
+  color: #f5c96a;
+}
+
 /* Login Page Styles */
 .login-page {
   min-height: 100vh;

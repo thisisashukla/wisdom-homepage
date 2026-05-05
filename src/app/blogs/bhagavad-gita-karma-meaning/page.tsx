@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
   title: "Karma \u2014 What It Actually Means in the Bhagavad Gita | Wisdom",
@@ -426,6 +427,7 @@ const pageCSS = `
             .nav-inner { padding: 0 20px; }
             .nav-links { gap: 16px; }
             .nav-links li:not(:last-child) { display: none; }
+            .mobile-nav-toggle { display: flex; }
         }
     
 `
@@ -495,6 +497,7 @@ export default function KarmaMeaningPage() {
           </div>
           Wisdom
         </a>
+        <MobileNavToggle />
         <ul className="nav-links">
           <li><a href="/#features">Features</a></li>
           <li><a href="/#how-it-works">How it works</a></li>

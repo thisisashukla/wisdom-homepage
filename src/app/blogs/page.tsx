@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
   title: "Blog \u2014 Bhagavad Gita, Sanskrit Shlokas &amp; Hindu Philosophy | Wisdom",
@@ -469,7 +470,13 @@ const pageCSS = `
           padding: 0 20px;
         }
         .nav-links {
+          gap: 16px;
+        }
+        .nav-links li:not(:last-child) {
           display: none;
+        }
+        .mobile-nav-toggle {
+          display: flex;
         }
       }
     
@@ -493,6 +500,7 @@ export default function BlogIndexPage() {
           </div>
           Wisdom
         </a>
+        <MobileNavToggle />
         <ul className="nav-links">
           <li><a href="../#features">Features</a></li>
           <li><a href="../#how-it-works">How it works</a></li>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import schemas from '@/lib/homeSchemas'
 import BlogTracker from '@/components/BlogTracker'
+import MobileNavToggle from '@/components/MobileNavToggle'
 import './home.css'
 
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ export default function HomePage() {
           </div>
           Wisdom
         </div>
+        <MobileNavToggle />
         <ul className="nav-links">
           <li><a href="#features">Features</a></li>
           <li><a href="#how-it-works">How it works</a></li>
