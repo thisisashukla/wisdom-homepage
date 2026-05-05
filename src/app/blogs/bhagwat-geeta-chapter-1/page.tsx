@@ -2010,7 +2010,7 @@ export default function ChapterOnePage() {
 
     
 
-      <BlogTracker pageName="Bhagwat Geeta Chapter 1 Page Viewed" />
+      <BlogTracker pageName="Bhagwat Geeta Chapter 1" />
     </>
   )
 }

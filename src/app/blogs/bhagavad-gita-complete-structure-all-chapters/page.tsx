@@ -1199,13 +1199,13 @@ export default function CompleteStructurePage() {
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  · 
         <a href="/blogs">Blog</a>  · 
-        <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener">Download Free</a>
+        <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download Free</a>
       </p>
     </footer>
 
     
 
-      <BlogTracker pageName="Gita Complete Structure Page Viewed" />
+      <BlogTracker pageName="Gita Complete Structure" />
     </>
   )
 }

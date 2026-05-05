@@ -1,20 +1,15 @@
 'use client'
 
 import { useEffect } from 'react'
-import { usePathname } from 'next/navigation'
-import { initMixpanel, trackEvent } from '@/lib/mixpanel'
+import { initMixpanel } from '@/lib/mixpanel'
 
 export function MixpanelProvider({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname()
-
   useEffect(() => {
     initMixpanel()
   }, [])
 
-  useEffect(() => {
-    trackEvent('Page Viewed', { path: pathname })
-  }, [pathname])
-
+  // Page-view tracking happens in <BlogTracker /> on each page so we get a
+  // proper `page` attribution property. This provider only handles init.
   return children
 }
 

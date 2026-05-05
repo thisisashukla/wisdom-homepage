@@ -974,7 +974,7 @@ export default function HomePage() {
 
     
   
-      <BlogTracker pageName="Home Page" />
+      <BlogTracker pageName="Home" />
     </>
   )
 }

@@ -1585,7 +1585,7 @@ export default function ChapterThreePage() {
   
     
 
-      <BlogTracker pageName="Bhagwat Geeta Chapter 3 Page Viewed" />
+      <BlogTracker pageName="Bhagwat Geeta Chapter 3" />
     </>
   )
 }

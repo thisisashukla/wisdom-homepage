@@ -477,7 +477,7 @@ export default function KarmaMeaningPage() {
         <div className="logo">Wisdom</div>
         <div>
             <a href="https://wisdomquotes.in">Home</a>
-            <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125">Download</a>
+            <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" data-mp-location="nav">Download</a>
             <a href="https://wisdomquotes.in/blogs">Blog</a>
         </div>
     </nav>
@@ -685,7 +685,7 @@ jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā ||</div>
 
     <footer>
         <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125">Download</a></p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" data-mp-location="footer">Download</a></p>
     </footer>
 
     {/* Schema Markup */}
@@ -696,7 +696,7 @@ jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā ||</div>
         {/* Mixpanel */}
     
 
-      <BlogTracker pageName="Gita Karma Meaning Page Viewed" />
+      <BlogTracker pageName="Gita Karma Meaning" />
     </>
   )
 }

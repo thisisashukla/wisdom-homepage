@@ -1378,6 +1378,7 @@ export default function ChapterFivePage() {
       <p>
         Wisdom © 2026. Part of a
         <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+          data-mp-location="footer"
           >free iPhone app</a
         >
         that delivers daily Bhagavad Gita shlokas. <span>Made with reverence.</span>
@@ -1386,7 +1387,7 @@ export default function ChapterFivePage() {
   
     
 
-      <BlogTracker pageName="Bhagwat Geeta Chapter 5 Page Viewed" />
+      <BlogTracker pageName="Bhagwat Geeta Chapter 5" />
     </>
   )
 }

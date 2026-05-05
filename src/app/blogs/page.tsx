@@ -813,7 +813,7 @@ export default function BlogIndexPage() {
 
     
 
-      <BlogTracker pageName="Blog Index Page Viewed" />
+      <BlogTracker pageName="Blog Index" />
     </>
   )
 }

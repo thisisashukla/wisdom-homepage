@@ -22,8 +22,12 @@ export function trackEvent(event: string, props?: Record<string, unknown>) {
   }
 }
 
-export function trackAppStoreClick(location: string, page: string, href: string) {
-  trackEvent('App Store Link Clicked', { location, page, href })
+export function trackPageViewed(page: string, path?: string) {
+  trackEvent('Page Viewed', { page, path: path ?? (typeof window !== 'undefined' ? window.location.pathname : undefined) })
+}
+
+export function trackAppStoreClick(page: string, location: string, href: string) {
+  trackEvent('App Store Button Clicked', { page, location, href })
 }
 
 export { mixpanel }
