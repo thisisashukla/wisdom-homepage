@@ -475,7 +475,7 @@ const pageCSS = `
     
 `
 
-const schemas = []
+const schemas: Record<string, unknown>[] = []
 
 export default function BlogIndexPage() {
   return (
