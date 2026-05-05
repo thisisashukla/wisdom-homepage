@@ -11,7 +11,7 @@ import math, os
 
 W, H = 1200, 630
 SCREENS_DIR = "/Users/ankurshukla/Documents/wisdom-homepage/assets"
-LOGO_PATH  = "/Users/ankurshukla/Documents/wisdom-homepage/assets/male-logo-dark.png"
+LOGO_PATH  = "/Users/ankurshukla/Documents/wisdom-homepage/assets/new-light-logo.png"
 OUT = "/Users/ankurshukla/Documents/wisdom-homepage/og-image.png"
 
 # ── colours ──────────────────────────────────────────────────────────────────
