@@ -424,7 +424,8 @@ const pageCSS = `
             }
 
             .nav-inner { padding: 0 20px; }
-            .nav-links { display: none; }
+            .nav-links { gap: 16px; }
+            .nav-links li:not(:last-child) { display: none; }
         }
     
 `

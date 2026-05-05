@@ -1226,7 +1226,13 @@
           order: -1;
         }
         .nav-links {
+          gap: 16px;
+        }
+        .nav-links li:not(:last-child) {
           display: none;
+        }
+        .nav-inner {
+          padding: 0 20px;
         }
         .fan-left,
         .fan-right {

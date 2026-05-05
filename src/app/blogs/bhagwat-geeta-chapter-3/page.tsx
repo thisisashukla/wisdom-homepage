@@ -565,7 +565,8 @@ const pageCSS = `
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
         .nav-inner { padding: 0 20px; }
-        .nav-links { display: none; }
+        .nav-links { gap: 16px; }
+        .nav-links li:not(:last-child) { display: none; }
         .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
