@@ -192,7 +192,7 @@ const pageCSS = `
         /* ── HERO IMAGE ── */
         .hero-image {
             position: relative;
-            margin: 0 0 1rem;
+            margin: 3rem 0 1rem;
             border-radius: 12px;
             overflow: hidden;
             border: 1px solid var(--gold-border);
@@ -651,7 +651,7 @@ export default function AnxietyMentalPeacePage() {
     <div className="content">
         <figure className="hero-image">
           <img
-            src="/assets/krishna_holding_arjuns_hands.png"
+            src="/assets/krishna_holding_arjuns_hands.webp"
             alt="Krishna holding Arjuna's hands on the battlefield of Kurukshetra, the moment before the teaching of the Bhagavad Gita begins"
             width={1200}
             height={800}
