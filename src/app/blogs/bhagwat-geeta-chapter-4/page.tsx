@@ -1,0 +1,1537 @@
+import type { Metadata } from 'next'
+import BlogTracker from '@/components/BlogTracker'
+
+export const metadata: Metadata = {
+  title: "Bhagavad Gita Chapter 4 \u2014 Jnana Yoga: The Fire That Burns Karma | Wisdom",
+  description: "A deep reading of Bhagavad Gita Chapter 4 (Adhyay 4) \u2014 42 verses on divine incarnation, the yoga of knowledge, why wisdom burns karma, and how to learn from a real teacher. Sanskrit, IAST, meaning, modern relevance.",
+  keywords: "bhagwat geeta chapter 4, bhagavad gita jnana yoga, yada yada hi dharmasya meaning, gita 4.7 meaning, bhagavad gita knowledge yoga, jnana yajna meaning, bhagwat geeta adhyay 4",
+  openGraph: {
+    title: "Bhagavad Gita Chapter 4 \u2014 Jnana Yoga: The Fire That Burns Karma",
+    description: "Chapter 4 opens with the divine promise that goodness will always be protected. But it's really about knowledge as the highest offering \u2014 and how wisdom burns away all karma.",
+    type: 'article',
+    url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4",
+    siteName: 'Wisdom',
+  },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4" },
+}
+
+const pageCSS = `
+
+      :root {
+        --maroon: #3d0c0c;
+        --maroon-mid: #5c1a1a;
+        --gold: #c8881e;
+        --gold-light: #f5c96a;
+        --gold-pale: #fdf3dc;
+        --gold-border: #e8c97a;
+        --gold-dim: rgba(200, 136, 30, 0.15);
+        --text: #f5e8cc;
+        --text-dim: rgba(245, 232, 204, 0.65);
+        --text-dimmer: rgba(245, 232, 204, 0.35);
+        --muted-2: rgba(245, 232, 204, 0.35);
+        --border: rgba(200, 136, 30, 0.2);
+        --bg: #120505;
+        --bg-warm: #190707;
+        --bg-alt: #0f0404;
+        --bg-card: rgba(255, 255, 255, 0.04);
+        --bg-card-hover: rgba(255, 255, 255, 0.07);
+        --max: 780px;
+      }
+
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 88px;
+      }
+
+      body {
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: inherit; text-decoration: none; }
+      img { display: block; max-width: 100%; }
+
+      /* ── NAV ── */
+      body > nav {
+        position: sticky;
+        top: 0;
+        z-index: 200;
+        background: rgba(18, 5, 5, 0.92);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 28px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 21px;
+        font-weight: 700;
+        color: var(--gold-light);
+        text-decoration: none;
+      }
+      .logo-mark {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1.5px solid rgba(200, 136, 30, 0.4);
+        flex-shrink: 0;
+      }
+      .logo-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+      .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-dim); transition: color 0.18s; }
+      .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
+      .btn-nav {
+        background: var(--gold) !important;
+        color: #1a0606 !important;
+        padding: 8px 18px;
+        border-radius: 8px;
+        font-weight: 700;
+        transition: opacity 0.18s;
+      }
+      .btn-nav:hover { opacity: 0.88; }
+
+      /* ── BREADCRUMB ── */
+      .breadcrumb {
+        background: var(--bg-alt);
+        border-bottom: 1px solid var(--border);
+      }
+      .breadcrumb-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 10px 28px;
+        font-size: 12px;
+        color: var(--text-dimmer);
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .breadcrumb-inner a { color: var(--text-dimmer); transition: color 0.15s; }
+      .breadcrumb-inner a:hover { color: var(--gold-light); }
+      .bc-sep { opacity: 0.4; }
+
+      /* ── ARTICLE HERO ── */
+      .article-hero {
+        background: var(--bg-warm);
+        padding: 64px 28px 56px;
+        border-bottom: 1px solid var(--border);
+        position: relative;
+        overflow: hidden;
+      }
+      .article-hero::before {
+        content: "अध्याय ४";
+        position: absolute;
+        right: -10px;
+        bottom: -20px;
+        font-family: "Noto Sans Devanagari", serif;
+        font-size: 180px;
+        color: rgba(200, 136, 30, 0.04);
+        line-height: 1;
+        pointer-events: none;
+        user-select: none;
+      }
+      .article-hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+
+      .chapter-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(200, 136, 30, 0.1);
+        border: 1px solid rgba(200, 136, 30, 0.28);
+        color: var(--gold-light);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 5px 14px;
+        border-radius: 100px;
+        margin-bottom: 20px;
+      }
+      .chapter-badge-dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 6px var(--gold);
+        flex-shrink: 0;
+      }
+      .article-title {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(28px, 4vw, 48px);
+        font-weight: 700;
+        color: var(--gold-light);
+        line-height: 1.15;
+        letter-spacing: -0.5px;
+        margin-bottom: 12px;
+      }
+      .article-title em { font-style: italic; color: #fff; }
+      .article-subtitle {
+        font-size: 17px;
+        color: var(--text-dim);
+        font-weight: 300;
+        margin-bottom: 32px;
+        line-height: 1.65;
+        max-width: 580px;
+      }
+      .article-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+      .meta-item { font-size: 12px; color: var(--text-dimmer); letter-spacing: 0.04em; }
+      .meta-sep { color: var(--border); }
+
+      /* ── ARTICLE BODY ── */
+      .article-wrap { max-width: var(--max); margin: 0 auto; padding: 60px 28px 80px; }
+
+      .prose h2 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--gold-light);
+        margin: 52px 0 16px;
+        line-height: 1.25;
+      }
+      .prose h2[id],
+      .faq-section[id] {
+        scroll-margin-top: 88px;
+      }
+      .prose h2 em { font-style: italic; color: #fff; }
+
+      .prose h3 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--text);
+        margin: 32px 0 12px;
+      }
+
+      .prose p {
+        font-size: 16.5px;
+        line-height: 1.78;
+        color: var(--text-dim);
+        margin-bottom: 20px;
+      }
+      .prose p:last-child { margin-bottom: 0; }
+      .prose strong { font-weight: 600; color: var(--text); }
+      .prose em { font-style: italic; }
+      .lead {
+        font-size: 19px;
+        line-height: 1.7;
+        color: var(--text);
+        font-weight: 300;
+        margin-bottom: 28px;
+      }
+
+      /* ── TOC ── */
+      .toc {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--gold);
+        border-radius: 0 12px 12px 0;
+        padding: 20px 24px;
+        margin: 36px 0 40px;
+      }
+      .toc-label {
+        font-size: 9.5px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--gold);
+        margin-bottom: 12px;
+      }
+      .toc-list { list-style: none; display: flex; flex-direction: column; gap: 7px; counter-reset: toc-counter; }
+      .toc-list li { counter-increment: toc-counter; display: flex; align-items: baseline; gap: 10px; }
+      .toc-list li::before {
+        content: counter(toc-counter);
+        font-family: "Inter", sans-serif;
+        font-size: 10px;
+        font-variant-numeric: tabular-nums;
+        color: var(--text-dimmer);
+        min-width: 14px;
+      }
+      .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
+      .toc-list a:hover { color: var(--gold-light); }
+
+      /* ── SHLOKA CARD ── */
+      .shloka-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        overflow: hidden;
+        margin: 36px 0;
+      }
+      .shloka-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 22px;
+        border-bottom: 1px solid var(--border);
+        background: rgba(200, 136, 30, 0.05);
+      }
+      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
+      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
+      .shloka-sanskrit {
+        padding: 24px 22px 16px;
+        font-family: "Noto Sans Devanagari", serif;
+        font-size: 20px;
+        line-height: 1.75;
+        color: var(--gold-light);
+        border-bottom: 1px solid var(--border);
+      }
+      .shloka-iast {
+        padding: 12px 22px 16px;
+        font-size: 12.5px;
+        line-height: 1.7;
+        color: var(--text-dimmer);
+        border-bottom: 1px solid var(--border);
+        font-style: italic;
+      }
+      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
+      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
+      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
+      .shloka-essence {
+        padding: 14px 22px;
+        background: rgba(200, 136, 30, 0.06);
+        border-top: 1px solid var(--border);
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 15px;
+        color: var(--text-dim);
+      }
+
+      /* ── PULL QUOTE ── */
+      .pull-quote {
+        margin: 40px 0;
+        padding: 28px 32px;
+        border-left: 3px solid var(--gold);
+        background: rgba(200, 136, 30, 0.05);
+        border-radius: 0 12px 12px 0;
+      }
+      .pull-quote blockquote {
+        font-family: "Playfair Display", serif;
+        font-size: 21px;
+        font-style: italic;
+        color: var(--gold-light);
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      .pull-quote cite { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-style: normal; font-weight: 600; }
+
+      /* ── SECTION DIVIDER ── */
+      .section-divider { display: flex; align-items: center; gap: 16px; margin: 56px 0 40px; }
+      .section-divider-line { flex: 1; height: 1px; background: var(--border); }
+      .section-divider-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dimmer); white-space: nowrap; font-weight: 600; }
+
+      /* ── HIGHLIGHT BOX ── */
+      .highlight-box {
+        background: rgba(200, 136, 30, 0.05);
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 20px 24px;
+        margin: 28px 0;
+      }
+      .highlight-box p { font-size: 15px; line-height: 1.7; color: var(--text-dim); }
+      .highlight-box strong { color: var(--gold-light); }
+
+      /* ── KEY INSIGHTS ── */
+      .insights-box {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-top: 2px solid var(--gold);
+        border-radius: 14px;
+        padding: 28px 32px;
+        margin: 48px 0;
+      }
+      .insights-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--gold); margin-bottom: 16px; }
+      .insights-list { list-style: none; display: flex; flex-direction: column; gap: 14px; counter-reset: insight-counter; }
+      .insights-list li {
+        counter-increment: insight-counter;
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        font-size: 14.5px;
+        color: var(--text-dim);
+        line-height: 1.65;
+      }
+      .insights-list li::before {
+        content: counter(insight-counter);
+        font-size: 11px;
+        font-weight: 700;
+        background: rgba(200, 136, 30, 0.15);
+        color: var(--gold);
+        border: 1px solid rgba(200, 136, 30, 0.3);
+        width: 22px;
+        height: 22px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+      .insights-list strong { color: var(--text); font-weight: 600; }
+
+      /* ── VERSE TABLE ── */
+      .verse-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13.5px;
+        margin: 28px 0 40px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .verse-table thead tr { background: rgba(200, 136, 30, 0.08); }
+      .verse-table thead th {
+        text-align: left;
+        padding: 12px 16px;
+        font-size: 9.5px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--gold);
+        font-weight: 700;
+      }
+      .verse-table tbody td {
+        padding: 10px 16px;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+        line-height: 1.55;
+        color: var(--text-dim);
+      }
+      .verse-table tbody tr:last-child td { border-bottom: none; }
+      .verse-table tbody tr:hover { background: var(--bg-card); }
+      .verse-table td:first-child { font-size: 12px; color: var(--gold); font-weight: 600; white-space: nowrap; }
+
+      /* ── FAQ ── */
+      .faq-section {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-top: 2px solid var(--gold);
+        border-radius: 14px;
+        overflow: hidden;
+        margin: 48px 0;
+      }
+      .faq-header { padding: 28px 32px 20px; border-bottom: 1px solid var(--border); }
+      .faq-header-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .faq-header h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--gold-light);
+        line-height: 1.3;
+        margin: 0;
+      }
+      .faq-item { padding: 22px 32px; border-bottom: 1px solid var(--border); }
+      .faq-item:last-child { border-bottom: none; }
+      .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
+      .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
+
+      /* ── WISDOM ENTITY ── */
+      .wisdom-entity {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-top: 2px solid var(--gold);
+        border-radius: 14px;
+        padding: 28px 32px;
+        margin: 48px 0;
+      }
+      .wisdom-entity-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--gold); margin-bottom: 10px; }
+      .wisdom-entity h3 { font-family: "Playfair Display", serif; font-size: 18px; font-weight: 700; color: var(--gold-light); margin-bottom: 10px; }
+      .wisdom-entity p { font-size: 14px; line-height: 1.7; color: var(--text-dim); margin-bottom: 10px; }
+      .wisdom-entity p:last-child { margin-bottom: 0; }
+      .wisdom-entity strong { color: var(--text); font-weight: 600; }
+      .wisdom-entity a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+
+            /* ── APP CTA ── */
+      .app-cta {
+        background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
+        border: 1px solid rgba(200, 136, 30, 0.25);
+        border-top: 3px solid var(--gold);
+        border-radius: 20px;
+        padding: 44px 48px 40px;
+        margin: 48px 0 60px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .app-cta::before {
+        content: "ज्ञान";
+        position: absolute;
+        top: -14px;
+        right: -8px;
+        font-family: "Noto Sans Devanagari", sans-serif;
+        font-size: 130px;
+        color: rgba(200, 136, 30, 0.05);
+        line-height: 1;
+        pointer-events: none;
+        user-select: none;
+      }
+      .app-cta-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(200, 136, 30, 0.12);
+        border: 1px solid rgba(200, 136, 30, 0.35);
+        color: var(--gold-light);
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        padding: 5px 14px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+      .app-cta-headline {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(22px, 3vw, 30px);
+        font-weight: 700;
+        color: var(--text);
+        line-height: 1.25;
+        margin-bottom: 14px;
+      }
+      .app-cta-desc {
+        font-size: 15px;
+        color: var(--text-dim);
+        line-height: 1.7;
+        max-width: 480px;
+        margin: 0 auto 22px;
+      }
+      .app-cta-features {
+        display: flex;
+        gap: 6px 18px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 28px;
+      }
+      .app-cta-features span {
+        font-size: 13px;
+        color: var(--gold-light);
+        opacity: 0.8;
+      }
+      .app-cta-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--gold);
+        color: #120505;
+        text-decoration: none;
+        padding: 15px 34px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        transition: all 0.2s;
+        box-shadow: 0 4px 22px rgba(200, 136, 30, 0.3);
+      }
+      .app-cta-btn:hover {
+        background: var(--gold-light);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 32px rgba(200, 136, 30, 0.5);
+      }
+      .app-cta-sub {
+        font-size: 12px;
+        color: rgba(245, 232, 204, 0.35);
+        margin-top: 14px;
+        letter-spacing: 0.04em;
+      }
+
+      /* ── CHAPTER NAV ── */
+      .chapter-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 20px 0;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        margin: 0 0 40px;
+      }
+      .ch-nav-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .ch-nav-title { font-size: 14px; font-weight: 600; color: var(--text); }
+
+      /* ── RELATED ── */
+      .related-section { margin-bottom: 60px; }
+      .related-section h3 { font-family: "Playfair Display", serif; font-size: 20px; font-weight: 700; color: var(--gold-light); margin-bottom: 20px; }
+      .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+      .related-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 18px 20px;
+        text-decoration: none;
+        transition: border-color 0.15s, background 0.15s, transform 0.15s;
+      }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-dimmer); font-weight: 600; margin-bottom: 6px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
+      /* ── FOOTER ── */
+      footer {
+        background: var(--bg-alt);
+        border-top: 1px solid var(--border);
+        padding: 32px 28px;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        color: var(--text-dimmer);
+      }
+      footer a { color: var(--text-dimmer); transition: color 0.15s; }
+      footer a:hover { color: var(--gold-light); }
+      footer span { color: var(--gold); }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 700px) {
+        .article-hero { padding: 44px 20px 40px; }
+        .article-wrap { padding: 40px 20px 60px; }
+        .nav-inner { padding: 0 20px; }
+        .nav-links { display: none; }
+        .shloka-body { grid-template-columns: 1fr; }
+        .app-cta { padding: 32px 24px; }
+        .pull-quote { padding: 22px 24px; }
+        .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .insights-box, .wisdom-entity { padding: 20px; }
+      }
+    
+`
+
+const schemas = [
+  {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Bhagavad Gita Chapter 4 — Jnana Yoga: The Fire That Burns Karma",
+  "description": "A deep reading of Bhagavad Gita Chapter 4 (Bhagwat Geeta Adhyay 4) — 42 verses on divine incarnation, the yoga of knowledge, why wisdom burns karma, and how to learn from a real teacher.",
+  "author": {
+    "@type": "Organization",
+    "name": "Wisdom",
+    "url": "https://wisdomquotes.in"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wisdom",
+    "url": "https://wisdomquotes.in",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://wisdomquotes.in/assets/male-logo-dark.webp"
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://wisdomquotes.in/og-image.webp",
+    "width": 1200,
+    "height": 630
+  },
+  "datePublished": "2026-05-05",
+  "dateModified": "2026-05-05",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4.html"
+  },
+  "about": {
+    "@type": "Book",
+    "name": "Bhagavad Gita",
+    "author": {
+      "@type": "Person",
+      "name": "Ved Vyasa"
+    }
+  },
+  "keywords": "Bhagavad Gita Chapter 4, Bhagwat Geeta Adhyay 4, Jnana Yoga, yada yada hi dharmasya, jnana yajna"
+},
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Wisdom",
+      "item": "https://wisdomquotes.in/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://wisdomquotes.in/blogs/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bhagavad Gita Chapter 4 — Jnana Yoga",
+      "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4.html"
+    }
+  ]
+},
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Bhagavad Gita Chapter 4 about?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chapter 4, called Jnana Karma Sanyasa Yoga, covers three major themes: the divine promise of periodic re-incarnation to restore dharma (the famous 4.7–4.8 verses), the yoga of knowledge as the highest path of action, and the transformative power of wisdom — described as a fire that burns away all karma. The chapter also contains one of the Gita's most important teachings on how to approach a teacher with humility."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the meaning of 'yada yada hi dharmasya'?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is the opening of verse 4.7. The full verse: 'Whenever there is a decline in dharma (righteousness) and an increase in adharma (unrighteousness), O Arjuna, I manifest myself.' It is one of the most quoted verses in all of Hindu scripture and is often paired with 4.8: 'To protect the righteous, destroy the wicked, and re-establish dharma, I am born age after age.' Together, they articulate the Hindu understanding of history as cyclical — and of goodness as having an ultimate protector."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the Bhagavad Gita say about how to learn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Verse 4.34 is the Gita's clearest teaching on learning. It says: approach those who have truly seen truth with humility (prostrating, not arrogance), sincere questioning (not debate or challenge), and service. Three requirements. The teachers won't share their deepest wisdom with someone who comes with ego or agenda. The gate is humility."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is 'jnana yajna' in the Gita?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jnana yajna means the sacrifice (offering) of knowledge or wisdom. In verse 4.33, Krishna says it is superior to material sacrifices because all actions find their completion in wisdom. The idea is that the ultimate 'offering' you can make is understanding — burning away confusion and operating from clear sight."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many verses are in Chapter 4 of the Bhagavad Gita?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chapter 4 has 42 verses. It is also known as Jnana Karma Sanyasa Yoga — the Yoga of Renunciation of Action through Knowledge."
+      }
+    }
+  ]
+}
+]
+
+export default function ChapterFourPage() {
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: pageCSS }} />
+      {schemas.map((s, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
+      ))}
+
+{/* ── NAV ── */}
+    <nav>
+      <div className="nav-inner">
+        <a href="/" className="logo">
+          <div className="logo-mark">
+            <img src="/assets/male-logo-dark.webp" alt="Wisdom" />
+          </div>
+          Wisdom
+        </a>
+        <ul className="nav-links">
+          <li><a href="../#features">Features</a></li>
+          <li><a href="../#how-it-works">How it works</a></li>
+          <li><a href="../#topics">Topics</a></li>
+          <li><a href="/blogs" className="active">Blog</a></li>
+          <li>
+            <a
+              href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+              target="_blank"
+              rel="noopener"
+              className="btn-nav"
+              data-mp-location="nav"
+              >Download Free</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    {/* ── BREADCRUMB ── */}
+    <div className="breadcrumb">
+      <div className="breadcrumb-inner">
+        <a href="/">Wisdom</a>
+        <span className="bc-sep">/</span>
+        <a href="/blogs">Blog</a>
+        <span className="bc-sep">/</span>
+        Bhagavad Gita Chapter 4
+      </div>
+    </div>
+
+    {/* ── HERO ── */}
+    <div className="article-hero">
+      <div className="article-hero-inner">
+        <div className="chapter-badge">
+          <div className="chapter-badge-dot"></div>
+          Bhagavad Gita · Adhyay 4 · 42 Verses
+          <div className="chapter-badge-dot"></div>
+        </div>
+        <h1 className="article-title">
+          Bhagavad Gita Chapter 4 (Adhyay 4) —<br />
+          <em>Jnana Yoga</em>
+        </h1>
+        <p className="article-subtitle">
+          The fire of knowledge that burns away all karma. Divine incarnation, the yoga of wisdom, and the three requirements for real learning.
+        </p>
+        <div className="article-meta">
+          <span className="meta-item">42 verses · Jnana Karma Sanyasa Yoga</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">~13 min read</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">Chapter 4 of 18</span>
+        </div>
+      </div>
+    </div>
+
+    {/* ── ARTICLE ── */}
+    <div className="article-wrap">
+      <article className="prose">
+        <p className="lead">
+          Chapter 4 opens with one of the most quoted passages in Hindu scripture—Krishna's promise that whenever dharma declines, the Divine appears to restore it. The verses are powerful, and they have shaped how people think about history, justice, and divine intervention for five thousand years. But the chapter itself is about something more intimate and immediate. It's about knowledge as the fire that burns karma. It's about how wisdom transforms action. And it's about the relationship between teacher and student—established with such precision that it has become the model for all real learning in the tradition.
+        </p>
+
+        <p>
+          By Chapter 4, Krishna has been teaching Arjuna philosophy. Now he opens his teaching about his own nature—and in doing so, reveals that understanding what the Divine really is constitutes liberation itself. Not as a reward at the end of practice, but as a direct consequence of that understanding.
+        </p>
+
+        {/* TABLE OF CONTENTS */}
+        <nav className="toc" aria-label="Table of contents">
+          <div className="toc-label">In this article</div>
+          <ol className="toc-list">
+            <li>
+              <a href="#divine-promise">The divine promise—4.7 and 4.8</a>
+            </li>
+            <li>
+              <a href="#divine-action">The nature of divine action—4.9 to 4.14</a>
+            </li>
+            <li>
+              <a href="#yajna">Types of yajna—4.25 to 4.32</a>
+            </li>
+            <li>
+              <a href="#knowledge-highest">Knowledge is the highest yajna—4.33</a>
+            </li>
+            <li>
+              <a href="#approach-teacher">How to approach a teacher—4.34</a>
+            </li>
+            <li>
+              <a href="#fire-wisdom">The fire of wisdom—4.37 to 4.38</a>
+            </li>
+            <li>
+              <a href="#arise">Arise—the chapter's final word</a>
+            </li>
+            <li><a href="#all-verses">All 42 shlokas at a glance</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verses 4.7–4.8 · The Divine Promise
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="divine-promise">The Divine Promise: Goodness Will Be Protected</h2>
+
+        <p>
+          The verses that open Chapter 4 are almost impossibly famous. They have been cited to justify everything from military interventions to spiritual renewal movements. But their meaning is worth sitting with carefully. Krishna is not promising that goodness will win by force. He is promising that goodness has a guardian.
+        </p>
+
+        {/* SHLOKA 4.7 */}
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 4.7</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            यदा यदा हि धर्मस्य ग्लानिर्भवति भारत ।<br />अभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम् ॥
+          </div>
+          <div className="shloka-iast">
+            yadā yadā hi dharmasya glānirbhavati bhārata |<br />abhyutthānamadharmasya tadā''tmānaṃ sṛjāmyaham ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Whenever there is a decline in righteousness (dharma) and an increase in unrighteousness (adharma), O Arjuna, I manifest myself.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">What it reveals</div>
+              <div className="shloka-insight">
+                This verse is not just a promise about the past—it is a claim about how existence is structured. Goodness and justice are not accidental. They have a guardian. The verse offers a frame for understanding dark historical periods not as anomalies but as conditions that precede renewal.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Divine support arrives whenever goodness is threatened—trust in restoration."
+          </div>
+        </div>
+
+        {/* SHLOKA 4.8 */}
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 4.8</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            परित्राणाय साधूनां विनाशाय च दुष्कृताम् ।<br />धर्मसंस्थापनार्थाय संभवामि युगे युगे ॥
+          </div>
+          <div className="shloka-iast">
+            paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām |<br />dharmasaṃsthāpanārthāya saṃbhavāmi yuge yuge ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                To protect the righteous, to destroy the wicked, and to re-establish dharma, I am born age after age.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The deeper dimension</div>
+              <div className="shloka-insight">
+                The pairing with 4.7 is important. The divine doesn't just appear for the protection of the good—it also appears for the destruction of the harmful and the restoration of the moral order. These three purposes are inseparable. The verse tells you what divine protection actually looks like: it requires the end of corruption.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Goodness will always be supported; righteousness never goes unprotected."
+          </div>
+        </div>
+
+        <p>
+          What makes these verses so powerful is their matter-of-factness. Krishna doesn't claim special status for the moment Arjuna is living through. He's saying: this is how the cosmos is organized. When the moral order declines, correction inevitably follows. The Wisdom app brings this teaching to the foreground in your daily practice—these verses appear regularly because they speak to something we need to remember when historical darkness feels permanent.
+        </p>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verses 4.9–4.14 · The Nature of Divine Action
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="divine-action">What Does It Mean to Know the Divine?</h2>
+
+        <p>
+          Verses 9 through 14 shift focus. Krishna isn't talking about distant historical cycles anymore. He's talking about what happens when you understand him—not as a belief, but as a realized knowledge.
+        </p>
+
+        {/* SHLOKA 4.9 */}
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 4.9</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः ।<br />त्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन ॥
+          </div>
+          <div className="shloka-iast">
+            janma karma ca me divyamevaṃ yo vetti tattvataḥ |<br />tyaktvā dehaṃ punarjanma naiti māmeti so'rjuna ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                One who truly knows the divine nature of my birth and activities does not take birth again after leaving this body but comes to me, O Arjuna.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The core teaching</div>
+              <div className="shloka-insight">
+                Understanding the divine nature of action—not just what is done, but the consciousness behind it—is itself liberating. Knowledge here is not intellectual. It is recognition. It's seeing that the distinction between divine and human action dissolves when you understand consciousness itself.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Knowing the divine nature of true wisdom and action brings ultimate freedom."
+          </div>
+        </div>
+
+        <div className="highlight-box">
+          <p>
+            <strong>A structural note:</strong> Notice the pattern. Verses 7-8 promise divine protection. Verse 9 says: understanding this protection, understanding how it works, is itself liberation. The Gita doesn't offer salvation as a distant goal—it offers understanding as the path and the destination simultaneously.
+          </p>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verses 4.33 · Knowledge as the Highest Offering
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="knowledge-highest">Knowledge is the Highest Yajna</h2>
+
+        <p>
+          Chapter 4 contains extensive teachings on different types of yajna—ritual offerings, material sacrifices, breath control, and knowledge itself. Then comes verse 33, which settles the question: which offering is actually the highest?
+        </p>
+
+        {/* SHLOKA 4.33 */}
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 4.33</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप ।<br />सर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते ॥
+          </div>
+          <div className="shloka-iast">
+            śreyāndravyamayādyajñājjñānayajñaḥ parantapa |<br />sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                O destroyer of enemies, the sacrifice of knowledge is superior to the sacrifice of material things. All action in its entirety finds its culmination in wisdom, O Arjuna.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">Why this matters</div>
+              <div className="shloka-insight">
+                Every action, if pursued far enough and deeply enough, eventually asks: but why? The chain of "why" always leads to questions about meaning, identity, and ultimate value. The Gita calls this endpoint jnana—wisdom. Action without wisdom is activity without direction. Wisdom is what completes it.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Wisdom is the highest offering—it transforms and completes all actions."
+          </div>
+        </div>
+
+        <div className="pull-quote">
+          <blockquote>
+            "All action in its entirety finds its culmination in wisdom."
+          </blockquote>
+          <cite>Bhagavad Gita 4.33</cite>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verse 4.34 · How to Approach a Teacher
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="approach-teacher">The Three Gates to Real Learning</h2>
+
+        <p>
+          If knowledge is the highest offering, how does one attain it? Chapter 4, verse 34 is perhaps the tradition's clearest teaching on the conditions necessary for real learning. It's not about intelligence or effort alone. It's about something more subtle: the orientation you bring.
+        </p>
+
+        {/* SHLOKA 4.34 */}
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 4.34</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया ।<br />उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥
+          </div>
+          <div className="shloka-iast">
+            tadviddhi praṇipātena paripraśnena sevayā |<br />upadekṣyanti te jñānaṃ jñāninastattvadarśinaḥ ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Know that wisdom by prostrating yourself (humility), by sincere questioning, and by service. The wise seers of truth will impart knowledge to you.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The framework</div>
+              <div className="shloka-insight">
+                Three requirements for real learning: prostrating (genuine humility, no arrogance), sincere questioning (not challenges or debate tactics, but authentic inquiry), and service (being present, contributing, not just consuming). This is the Gita's model for education. The teacher doesn't distribute wisdom to anyone who asks. They share it with those who arrive with empty hands and open hearts.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "True knowledge unfolds in the presence of humility, service, and honest inquiry."
+          </div>
+        </div>
+
+        <p>
+          This verse has shaped education in the Hindu tradition for millennia. It's why the guru-disciple relationship is structured as it is. The teacher is looking for three things: evidence that you're willing to let go of your ego, evidence that you're genuinely curious rather than argumentative, and evidence that you're willing to contribute to the teaching community, not just extract from it.
+        </p>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verses 4.37–4.38 · The Fire of Wisdom
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="fire-wisdom">Knowledge Is a Fire That Burns Karma</h2>
+
+        <p>
+          Chapter 4's most striking image comes in verses 37 and 38. Knowledge is not described as a light that reveals. It is described as fire that consumes.
+        </p>
+
+        {/* SHLOKA 4.37 */}
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 4.37</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन ।<br />ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥
+          </div>
+          <div className="shloka-iast">
+            yathaidhāṃsi samiddho'gnirbhasmasātkurute'rjuna |<br />jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                As a blazing fire reduces wood to ashes, O Arjuna, so the fire of knowledge reduces all karma to ashes.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The radical claim</div>
+              <div className="shloka-insight">
+                This is one of the Gita's most striking metaphors. The fire of wisdom doesn't gradually neutralize karma—it burns it entirely. The implication: understanding something fully, at its root, dissolves its hold on you. You don't heal your past through effort. You dissolve it through understanding.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Knowledge is the purifier—it burns away all past karma."
+          </div>
+        </div>
+
+        {/* SHLOKA 4.38 */}
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 4.38</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            न हि ज्ञानेन सदृशं पवित्रमिह विद्यते ।<br />तत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति ॥
+          </div>
+          <div className="shloka-iast">
+            na hi jñānena sadṛśaṃ pavitramiha vidyate |<br />tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Nothing in this world is as purifying as wisdom. One who is perfected in yoga finds this wisdom within the self, in the course of time.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The patience required</div>
+              <div className="shloka-insight">
+                The word kālena—"in the course of time"—is significant. Wisdom is not a download. It ripens. You cannot force it. What you can do is practice, sincerely and consistently, and trust the process. The Gita is telling you: don't expect overnight transformation. But do expect transformation.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Nothing purifies the mind and soul like the sincere pursuit of wisdom."
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verse 4.42 · The Final Word
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="arise">Arise: From Understanding to Action</h2>
+
+        <p>
+          Chapter 4 ends with a single word that will echo through the rest of the Gita. After all the teaching on knowledge, wisdom, and divine protection, Krishna's final instruction is this:
+        </p>
+
+        {/* SHLOKA 4.42 */}
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 4.42</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            तस्मादज्ञानसंभूतं हृत्स्थं ज्ञानासिनाऽऽत्मनः ।<br />छित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत ॥
+          </div>
+          <div className="shloka-iast">
+            tasmādajñānasaṃbhūtaṃ hṛtsthaṃ jñānāsinā''tmanaḥ |<br />chittvainaṃ saṃśayaṃ yogamātiṣṭhottiṣṭha bhārata ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Therefore, with the sword of knowledge, cut asunder the doubt born of ignorance that has lodged in your heart. Take refuge in yoga, arise, O Arjuna.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The pivot</div>
+              <div className="shloka-insight">
+                "Arise"—uttiṣṭha—is the last word of Chapter 4. It echoes through to the end of the Gita. Knowledge without action is incomplete. Once you understand, you must stand up. The instruction is physical as much as philosophical. The Gita doesn't end with enlightenment. It ends with standing.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Use knowledge to overcome doubt—then act with steadiness."
+          </div>
+        </div>
+
+        <p>
+          That single command—uttiṣṭha—reframes everything that comes before it. All the teaching about divine incarnation, knowledge as fire, the three gates to learning—it all culminates in action. Not action driven by attachment or ego. But action grounded in understanding. Action taken from a place of clarity. The Wisdom app reminds you of these teachings through daily practice precisely so that you can live them out—not as abstract philosophy, but as lived clarity that guides your decisions and actions.
+        </p>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            All 42 Verses At a Glance
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="all-verses">The Complete Verse Reference</h2>
+
+        <table className="verse-table">
+          <thead>
+            <tr>
+              <th>Verse</th>
+              <th>Speaker</th>
+              <th>Teaching Essence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4.1</td>
+              <td>Krishna</td>
+              <td>True spiritual wisdom is eternal, continually passed on</td>
+            </tr>
+            <tr>
+              <td>4.2</td>
+              <td>Krishna</td>
+              <td>Wisdom survives only when actively preserved and passed on</td>
+            </tr>
+            <tr>
+              <td>4.3</td>
+              <td>Krishna</td>
+              <td>Divine wisdom flows where there is love, trust, and sincerity</td>
+            </tr>
+            <tr>
+              <td>4.4</td>
+              <td>Arjuna</td>
+              <td>Deep questions open the door to deeper truths</td>
+            </tr>
+            <tr>
+              <td>4.5</td>
+              <td>Krishna</td>
+              <td>Even when we forget the soul's greater story, the Divine remembers</td>
+            </tr>
+            <tr>
+              <td>4.6</td>
+              <td>Krishna</td>
+              <td>The Divine is beyond form, yet can take any form to guide</td>
+            </tr>
+            <tr>
+              <td>4.7</td>
+              <td>Krishna</td>
+              <td>Divine support arrives whenever goodness is threatened</td>
+            </tr>
+            <tr>
+              <td>4.8</td>
+              <td>Krishna</td>
+              <td>Goodness will always be supported; righteousness never goes unprotected</td>
+            </tr>
+            <tr>
+              <td>4.9</td>
+              <td>Krishna</td>
+              <td>Knowing the divine nature of action brings ultimate freedom</td>
+            </tr>
+            <tr>
+              <td>4.10</td>
+              <td>Krishna</td>
+              <td>Purity and liberation arise when we let go of attachment, fear, and anger</td>
+            </tr>
+            <tr>
+              <td>4.11</td>
+              <td>Krishna</td>
+              <td>The Divine responds to your sincerity—every path is honored</td>
+            </tr>
+            <tr>
+              <td>4.12</td>
+              <td>Krishna</td>
+              <td>In human life, action brings tangible results; our efforts matter</td>
+            </tr>
+            <tr>
+              <td>4.13</td>
+              <td>Krishna</td>
+              <td>Play your part, but your true self is beyond all roles and outcomes</td>
+            </tr>
+            <tr>
+              <td>4.14</td>
+              <td>Krishna</td>
+              <td>Act with full attention; let go of craving for results</td>
+            </tr>
+            <tr>
+              <td>4.15</td>
+              <td>Krishna</td>
+              <td>Perform duties with understanding—walk in the footsteps of the wise</td>
+            </tr>
+            <tr>
+              <td>4.16</td>
+              <td>Krishna</td>
+              <td>True understanding of action leads to liberation from suffering</td>
+            </tr>
+            <tr>
+              <td>4.17</td>
+              <td>Krishna</td>
+              <td>True wisdom lies in understanding the nature of your actions</td>
+            </tr>
+            <tr>
+              <td>4.18</td>
+              <td>Krishna</td>
+              <td>See beyond external actions—true wisdom lies in understanding intention</td>
+            </tr>
+            <tr>
+              <td>4.19</td>
+              <td>Krishna</td>
+              <td>Burn away desire with knowledge—act selflessly and be truly wise</td>
+            </tr>
+            <tr>
+              <td>4.20</td>
+              <td>Krishna</td>
+              <td>Act wholeheartedly; let go of attachment to results</td>
+            </tr>
+            <tr>
+              <td>4.21</td>
+              <td>Krishna</td>
+              <td>Attachment breeds suffering; detached action purifies the heart</td>
+            </tr>
+            <tr>
+              <td>4.22</td>
+              <td>Krishna</td>
+              <td>Be steady and content—success or failure cannot bind you</td>
+            </tr>
+            <tr>
+              <td>4.23</td>
+              <td>Krishna</td>
+              <td>Liberation is found in selfless action, not in clinging to results</td>
+            </tr>
+            <tr>
+              <td>4.24</td>
+              <td>Krishna</td>
+              <td>See every action, intention, and outcome as part of the Divine whole</td>
+            </tr>
+            <tr>
+              <td>4.25</td>
+              <td>Krishna</td>
+              <td>True spiritual progress comes from both external and inner transformation</td>
+            </tr>
+            <tr>
+              <td>4.26</td>
+              <td>Krishna</td>
+              <td>Mastery over the senses is the gateway to clarity and peace</td>
+            </tr>
+            <tr>
+              <td>4.27</td>
+              <td>Krishna</td>
+              <td>With wisdom, even breath becomes an offering on the path to self-mastery</td>
+            </tr>
+            <tr>
+              <td>4.28</td>
+              <td>Krishna</td>
+              <td>Sincerity in all spiritual efforts leads to inner growth</td>
+            </tr>
+            <tr>
+              <td>4.29</td>
+              <td>Krishna</td>
+              <td>Breath control is a sacred tool for self-transformation</td>
+            </tr>
+            <tr>
+              <td>4.30</td>
+              <td>Krishna</td>
+              <td>Self-discipline and offering one's actions purifies the mind</td>
+            </tr>
+            <tr>
+              <td>4.31</td>
+              <td>Krishna</td>
+              <td>Selfless giving is the pathway to enduring joy and union</td>
+            </tr>
+            <tr>
+              <td>4.32</td>
+              <td>Krishna</td>
+              <td>Sacred intention behind every action leads to true freedom</td>
+            </tr>
+            <tr>
+              <td>4.33</td>
+              <td>Krishna</td>
+              <td>Wisdom is the highest offering—it transforms all actions</td>
+            </tr>
+            <tr>
+              <td>4.34</td>
+              <td>Krishna</td>
+              <td>True knowledge unfolds in humility, service, and honest inquiry</td>
+            </tr>
+            <tr>
+              <td>4.35</td>
+              <td>Krishna</td>
+              <td>True knowledge erases confusion—reveals the unity of all</td>
+            </tr>
+            <tr>
+              <td>4.36</td>
+              <td>Krishna</td>
+              <td>True understanding can carry anyone beyond their past mistakes</td>
+            </tr>
+            <tr>
+              <td>4.37</td>
+              <td>Krishna</td>
+              <td>Knowledge is the fire that burns away all past karma</td>
+            </tr>
+            <tr>
+              <td>4.38</td>
+              <td>Krishna</td>
+              <td>Nothing purifies like the sincere pursuit of wisdom</td>
+            </tr>
+            <tr>
+              <td>4.39</td>
+              <td>Krishna</td>
+              <td>Faith and discipline are the keys to wisdom and true peace</td>
+            </tr>
+            <tr>
+              <td>4.40</td>
+              <td>Krishna</td>
+              <td>Doubt weakens the mind; faith brings peace and fulfillment</td>
+            </tr>
+            <tr>
+              <td>4.41</td>
+              <td>Krishna</td>
+              <td>Be steady and clear within—then your actions cannot bind you</td>
+            </tr>
+            <tr>
+              <td>4.42</td>
+              <td>Krishna</td>
+              <td>Use knowledge to overcome doubt, then arise and act</td>
+            </tr>
+          </tbody>
+        </table>
+
+        {/* ── APP CTA ── */}
+        <div className="app-cta">
+          <div className="app-cta-eyebrow">Free iOS App</div>
+          <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
+          <p className="app-cta-desc">
+            The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+          </p>
+          <div className="app-cta-features">
+            <span>✦ Daily shloka in Sanskrit</span>
+            <span>✦ Meaning & modern context</span>
+            <span>✦ Home screen widget</span>
+          </div>
+          <a
+            href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+            target="_blank"
+            rel="noopener"
+            className="app-cta-btn"
+            data-mp-location="cta"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Download on the App Store
+          </a>
+          <div className="app-cta-sub">Free · iPhone · No account needed</div>
+        </div>
+
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Frequently Asked Questions
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        {/* FAQ */}
+        <div className="faq-section" id="faq">
+          <div className="faq-header">
+            <div className="faq-header-label">Common questions</div>
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What is Bhagavad Gita Chapter 4 about?</div>
+            <div className="faq-a">
+              Chapter 4, called Jnana Karma Sanyasa Yoga, covers three major themes: the divine promise of periodic re-incarnation to restore dharma (the famous 4.7–4.8 verses), the yoga of knowledge as the highest path of action, and the transformative power of wisdom—described as a fire that burns away all karma. The chapter also contains one of the Gita's most important teachings on how to approach a teacher with humility.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What is the meaning of "yada yada hi dharmasya"?</div>
+            <div className="faq-a">
+              This is the opening of verse 4.7. The full verse: "Whenever there is a decline in dharma (righteousness) and an increase in adharma (unrighteousness), O Arjuna, I manifest myself." It is one of the most quoted verses in all of Hindu scripture and is often paired with 4.8: "To protect the righteous, destroy the wicked, and re-establish dharma, I am born age after age." Together, they articulate the Hindu understanding of history as cyclical—and of goodness as having an ultimate protector.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What does the Bhagavad Gita say about how to learn?</div>
+            <div className="faq-a">
+              Verse 4.34 is the Gita's clearest teaching on learning. It says: approach those who have truly seen truth with humility (prostrating, not arrogance), sincere questioning (not debate or challenge), and service. Three requirements. The teachers won't share their deepest wisdom with someone who comes with ego or agenda. The gate is humility.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What is "jnana yajna" in the Gita?</div>
+            <div className="faq-a">
+              Jnana yajna means the sacrifice (offering) of knowledge or wisdom. In verse 4.33, Krishna says it is superior to material sacrifices because all actions find their completion in wisdom. The idea is that the ultimate "offering" you can make is understanding—burning away confusion and operating from clear sight.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">How many verses are in Chapter 4 of the Bhagavad Gita?</div>
+            <div className="faq-a">
+              Chapter 4 has 42 verses. It is also known as Jnana Karma Sanyasa Yoga—the Yoga of Renunciation of Action through Knowledge.
+            </div>
+          </div>
+        </div>
+
+        {/* CHAPTER NAV */}
+        <div className="chapter-nav">
+          <div>
+            <div className="ch-nav-label">Previous</div>
+            <a href="/blogs/bhagwat-geeta-chapter-3" className="ch-nav-title">Chapter 3 — Karma Yoga</a>
+          </div>
+          <div style={{textAlign: 'right'}}>
+            <div className="ch-nav-label">Next</div>
+            <a href="/blogs/bhagwat-geeta-chapter-5" className="ch-nav-title">Chapter 5 — Karma Sanyasa Yoga</a>
+          </div>
+        </div>
+
+      </article>
+    </div>
+
+    {/* FOOTER */}
+    <footer>
+      <p>
+        Wisdom © 2026. Part of a
+        <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+          >free iPhone app</a
+        >
+        that delivers daily Bhagavad Gita shlokas. <span>Made with reverence.</span>
+      </p>
+    </footer>
+  
+    
+
+      <BlogTracker pageName="Bhagwat Geeta Chapter 4 Page Viewed" />
+    </>
+  )
+}
