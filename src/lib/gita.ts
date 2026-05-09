@@ -167,33 +167,33 @@ export const getRelatedVerses = (
  * Drives chapter cards on /gita and hero art on /gita/chapter/[N].
  */
 const CHAPTER_IMAGE: Record<number, { src: string; alt: string }> = {
-  1:  { src: '/assets/arjun_dropping_his_bow_krishna_disappointed.webp', alt: "Arjuna's despair on the battlefield of Kurukshetra" },
-  2:  { src: '/assets/krishna_speaking_with_divine_wisdom.webp',         alt: 'Krishna teaching the Sankhya — the eternal nature of the soul' },
-  3:  { src: '/assets/krishna_guiding_arjun.webp',                       alt: 'Krishna guiding Arjuna toward selfless action' },
-  4:  { src: '/assets/krishna_guiding_arjun_in_later_chapters_of_gita.webp', alt: 'Krishna on the lineage of yoga and the wisdom of action' },
-  5:  { src: '/assets/krishna_guiding_arjun.webp',                       alt: 'Krishna on action and renunciation as one path' },
-  6:  { src: '/assets/close_up_of_krishna.webp',                         alt: 'Krishna on the inward path of meditation' },
-  7:  { src: '/assets/krishna_speaking_with_divine_wisdom.webp',         alt: 'Krishna revealing knowledge and wisdom' },
-  8:  { src: '/assets/close_up_of_krishna.webp',                         alt: 'Krishna on the imperishable Brahman' },
-  9:  { src: '/assets/krishna_speaking_with_divine_wisdom.webp',         alt: 'Krishna sharing the royal knowledge' },
-  10: { src: '/assets/arjun_bowing_to_krishna_divinity.webp',            alt: 'Arjuna bowing — the divine glories of Krishna' },
-  11: { src: '/assets/arjun_bowing_to_krishna_divinity.webp',            alt: 'Arjuna witnessing Krishna’s universal form' },
-  12: { src: '/assets/arjun_asking_krishna_with_folded_hands.webp',      alt: 'Arjuna asking Krishna about the path of devotion' },
-  13: { src: '/assets/krishna_guiding_arjun_in_later_chapters_of_gita.webp', alt: 'Krishna on the field and the knower of the field' },
-  14: { src: '/assets/krishna_guiding_arjun_in_later_chapters_of_gita.webp', alt: 'Krishna on the three modes of nature' },
-  15: { src: '/assets/close_up_of_krishna.webp',                         alt: 'Krishna as the Supreme Person' },
-  16: { src: '/assets/krishna_guiding_arjun_in_later_chapters_of_gita.webp', alt: 'Krishna on the divine and demoniac qualities' },
-  17: { src: '/assets/arjun_requests_krishna_for_guidance.webp',         alt: 'Arjuna requesting Krishna’s guidance on faith' },
-  18: { src: '/assets/krishna_holding_arjuns_hands.webp',               alt: 'Krishna and Arjuna — the final teaching, liberation' },
+  1:  { src: '/assets/chapter1.webp',  alt: "Arjuna's despair on the battlefield of Kurukshetra" },
+  2:  { src: '/assets/chapter2.webp',  alt: 'Krishna teaching the Sankhya — the eternal nature of the self' },
+  3:  { src: '/assets/chapter3.webp',  alt: 'Krishna guiding Arjuna toward selfless action — Karma Yoga' },
+  4:  { src: '/assets/chapter4.webp',  alt: 'Krishna on the lineage of yoga and the wisdom of action' },
+  5:  { src: '/assets/chapter5.webp',  alt: 'Krishna on action and renunciation as one path' },
+  6:  { src: '/assets/chapter6.webp',  alt: 'Krishna on the inward path of meditation — Dhyana Yoga' },
+  7:  { src: '/assets/chapter7.webp',  alt: 'Krishna revealing knowledge and wisdom — Jnana Vijnana Yoga' },
+  8:  { src: '/assets/chapter8.webp',  alt: 'Krishna on the imperishable Brahman and what lies beyond' },
+  9:  { src: '/assets/chapter9.webp',  alt: 'Krishna sharing the royal knowledge and royal secret' },
+  10: { src: '/assets/chapter10.webp', alt: 'Krishna describing his divine glories — Vibhuti Yoga' },
+  11: { src: '/assets/chapter11.webp', alt: 'The Vishwarupa — Krishna\'s cosmic universal form' },
+  12: { src: '/assets/chapter12.webp', alt: 'Arjuna asking Krishna about the path of devotion — Bhakti Yoga' },
+  13: { src: '/assets/chapter13.webp', alt: 'Krishna on the field and the knower of the field' },
+  14: { src: '/assets/chapter14.webp', alt: 'Krishna on the three modes of nature — the Gunas' },
+  15: { src: '/assets/chapter15.webp', alt: 'Krishna as the Supreme Person — Purushottama Yoga' },
+  16: { src: '/assets/chapter16.webp', alt: 'Krishna on divine and demoniac qualities — the two natures' },
+  17: { src: '/assets/chapter17.webp', alt: 'Krishna on the three kinds of faith — Shraddha' },
+  18: { src: '/assets/chapter18.webp', alt: 'Krishna and Arjuna — the final teaching and complete surrender' },
 }
 
 export const chapterImage = (n: number): { src: string; alt: string } =>
-  CHAPTER_IMAGE[n] ?? { src: '/assets/krishna_guiding_arjun.webp', alt: 'Krishna guiding Arjuna' }
+  CHAPTER_IMAGE[n] ?? { src: '/assets/gita.webp', alt: 'Bhagavad Gita — Krishna and Arjuna' }
 
 /** Hero image for the /gita index page itself. */
 export const gitaHeroImage = (): { src: string; alt: string } => ({
-  src: '/assets/krishna_speaking_with_divine_wisdom.webp',
-  alt: 'Krishna speaking the Bhagavad Gita to Arjuna on the battlefield of Kurukshetra',
+  src: '/assets/gita.webp',
+  alt: 'The Bhagavad Gita — Krishna speaking to Arjuna on the battlefield of Kurukshetra',
 })
 
 // ── Hand-crafted intros (overrides for templated copy) ──────────────────────

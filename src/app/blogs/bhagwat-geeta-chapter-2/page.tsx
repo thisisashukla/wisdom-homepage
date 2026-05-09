@@ -808,6 +808,16 @@ export default function ChapterTwoPage() {
     {/* ── ARTICLE ── */}
     <div className="article-wrap">
       <article className="prose">
+                <figure className="chapter-image">
+          <img
+            src="/assets/chapter2.webp"
+            alt="Krishna teaching the eternal nature of the self — Bhagavad Gita Chapter 2"
+            width="1200"
+            height="675"
+            loading="eager"
+          />
+        </figure>
+
         <p className="lead">
           Chapter 1 ends in silence. Arjuna has put down his bow, sunk into his chariot, and told Krishna he will not fight. For the first and only time in the Gita, the great archer has surrendered — not to an enemy, but to his own grief. Chapter 2 is what happens next. And what happens is that the entire framework of how to think about life, action, death, and identity gets rebuilt from the ground up.
         </p>

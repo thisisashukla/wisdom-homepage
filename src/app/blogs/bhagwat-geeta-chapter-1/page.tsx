@@ -842,6 +842,16 @@ export default function ChapterOnePage() {
     {/* ── ARTICLE ── */}
     <div className="article-wrap">
       <article className="prose">
+                <figure className="chapter-image">
+          <img
+            src="/assets/chapter1.webp"
+            alt="Arjuna's despair on the battlefield — Bhagavad Gita Chapter 1"
+            width="1200"
+            height="675"
+            loading="eager"
+          />
+        </figure>
+
         <p className="lead">
           Most teachers rush past Chapter 1. It gets treated as backstory — the
           setup before the philosophy begins in Chapter 2. This is a mistake.

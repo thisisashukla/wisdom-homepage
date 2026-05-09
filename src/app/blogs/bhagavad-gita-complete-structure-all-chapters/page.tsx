@@ -193,6 +193,22 @@ const pageCSS = `
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px; font-style: italic; color: var(--gold-light); line-height: 1.5; margin-bottom: 10px; }
       .pull-quote cite { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-style: normal; font-weight: 600; }
 
+      /* CHAPTER IMAGE */
+      .chapter-image {
+        margin: 32px 0 36px; border-radius: 14px; overflow: hidden;
+        border: 1px solid var(--border);
+        box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+      }
+      .chapter-image img {
+        width: 100%; height: auto; display: block;
+        object-fit: cover;
+      }
+      .chapter-image figcaption {
+        padding: 10px 18px; background: var(--bg-card);
+        font-size: 11.5px; color: var(--text-dimmer); letter-spacing: 0.04em;
+        font-style: italic; border-top: 1px solid var(--border);
+      }
+
       /* SECTION DIVIDER */
       .section-divider { display: flex; align-items: center; gap: 16px; margin: 56px 0 40px; }
       .section-divider-line { flex: 1; height: 1px; background: var(--border); }
@@ -890,6 +906,17 @@ export default function CompleteStructurePage() {
         </div>
 
         <h2 id="ch11">Chapter 11 — The Scene That Breaks Everything</h2>
+
+        <figure className="chapter-image">
+          <img
+            src="/assets/chapter11.webp"
+            alt="The Vishwarupa — Krishna's cosmic universal form as described in Bhagavad Gita Chapter 11"
+            width="1200"
+            height="675"
+            loading="lazy"
+          />
+          <figcaption>The Vishwarupa — the cosmic form Krishna reveals to Arjuna in Chapter 11</figcaption>
+        </figure>
 
         <p>
           Arjuna asks to see it. After four chapters of Krishna describing his divine nature in words, Arjuna says: show me. If you are everything you say you are, show me your universal form.

@@ -768,6 +768,16 @@ export default function ChapterThreePage() {
     {/* ── ARTICLE ── */}
     <div className="article-wrap">
       <article className="prose">
+                <figure className="chapter-image">
+          <img
+            src="/assets/chapter3.webp"
+            alt="Krishna guiding Arjuna toward selfless action — Bhagavad Gita Chapter 3"
+            width="1200"
+            height="675"
+            loading="eager"
+          />
+        </figure>
+
         <p className="lead">
           Arjuna wants out. He has set down his bow, and now he is making his case to Krishna: if knowledge is superior to action, why should he fight? Why not renounce the world, sit quiet in meditation, and let others wage war?
         </p>

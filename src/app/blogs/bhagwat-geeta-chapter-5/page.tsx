@@ -800,6 +800,16 @@ export default function ChapterFivePage() {
     {/* ── ARTICLE ── */}
     <div className="article-wrap">
       <article className="prose">
+                <figure className="chapter-image">
+          <img
+            src="/assets/chapter5.webp"
+            alt="Krishna on action and renunciation as one path — Bhagavad Gita Chapter 5"
+            width="1200"
+            height="675"
+            loading="eager"
+          />
+        </figure>
+
         <p className="lead">
           By the time we reach Chapter 5, the question has been asked in every way possible: should I act, or should I renounce? Krishna has answered it in different registers—philosophically, practically, metaphysically. Chapter 5 gives the final direct answer. Both paths work. But karma yoga—the yoga of selfless action—is the better one for most people. And then it goes deeper, into what it looks like to be truly free from within, while still fully in the middle of things. This is perhaps the most practical chapter in the Gita, because it speaks directly to the confusion of anyone trying to live wisely while still living in the world.
         </p>

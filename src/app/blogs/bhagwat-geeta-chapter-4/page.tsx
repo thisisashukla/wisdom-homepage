@@ -800,6 +800,16 @@ export default function ChapterFourPage() {
     {/* ── ARTICLE ── */}
     <div className="article-wrap">
       <article className="prose">
+                <figure className="chapter-image">
+          <img
+            src="/assets/chapter4.webp"
+            alt="Krishna on the lineage of yoga and wisdom of action — Bhagavad Gita Chapter 4"
+            width="1200"
+            height="675"
+            loading="eager"
+          />
+        </figure>
+
         <p className="lead">
           Chapter 4 opens with one of the most quoted passages in Hindu scripture—Krishna's promise that whenever dharma declines, the Divine appears to restore it. The verses are powerful, and they have shaped how people think about history, justice, and divine intervention for five thousand years. But the chapter itself is about something more intimate and immediate. It's about knowledge as the fire that burns karma. It's about how wisdom transforms action. And it's about the relationship between teacher and student—established with such precision that it has become the model for all real learning in the tradition.
         </p>
