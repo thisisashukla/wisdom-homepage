@@ -10,10 +10,11 @@ export const metadata: Metadata = {
     title: "Karma \u2014 What It Actually Means in the Bhagavad Gita | Wisdom",
     description: "Karma doesn't mean what goes around comes around. Here's what the Bhagavad Gita actually teaches about karma \u2014 and why the real definition matters.",
     type: 'article',
-    url: "https://wisdomquotes.in/blogs",
+    url: "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning",
     siteName: 'Wisdom',
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning" },
 }
 
 const pageCSS = `

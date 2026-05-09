@@ -6,11 +6,12 @@ import MixpanelProvider from '@/components/MixpanelProvider'
 export const metadata: Metadata = {
   title: {
     template: '%s | Wisdom',
-    default: 'Wisdom — Bhagavad Gita',
+    default: 'Wisdom — Bhagavad Gita, Sanskrit Shlokas & Wisdom Quotes',
   },
-  description: 'Free access to the Bhagavad Gita, one verse at a time. Explore all chapters and topic guides.',
+  description: 'Read the Bhagavad Gita verse by verse — Sanskrit shlokas with Hindi and English meaning, wisdom quotes, and daily spiritual practice. Free, ad-free, beautifully presented.',
   openGraph: {
     siteName: 'Wisdom',
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   icons: {
     icon: '/assets/male-logo-dark.webp',

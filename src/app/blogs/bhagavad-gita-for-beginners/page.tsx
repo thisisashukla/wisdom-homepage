@@ -10,10 +10,11 @@ export const metadata: Metadata = {
     title: "Bhagavad Gita for Beginners \u2014 Where to Start and What to Read First | Wisdom",
     description: "The Bhagavad Gita is 700 verses across 18 chapters. Where do you start? A no-nonsense guide for complete beginners.",
     type: 'article',
-    url: "https://wisdomquotes.in/blogs",
+    url: "https://wisdomquotes.in/blogs/bhagavad-gita-for-beginners",
     siteName: 'Wisdom',
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-for-beginners" },
 }
 
 const pageCSS = `
