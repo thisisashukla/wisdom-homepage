@@ -136,10 +136,13 @@
         color: var(--gold-light);
       }
       .btn-nav {
+        display: inline-flex;
+        align-items: center;
         background: var(--gold) !important;
         color: #1a0606 !important;
-        padding: 8px 18px;
-        border-radius: 8px;
+        padding: 13px 22px;
+        border-radius: 10px;
+        font-size: 15px;
         font-weight: 700;
         transition: opacity 0.18s;
       }

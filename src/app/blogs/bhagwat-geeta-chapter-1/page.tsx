@@ -2008,7 +2008,7 @@ export default function ChapterOnePage() {
           rel="noopener"
           data-mp-location="footer_app_store"
           >App Store</a>
-         ·  <a href="mailto:support@wisdomquotes.in">Support</a>
+         ·  <a href="/privacy">Privacy</a>  ·  <a href="/terms">Terms</a>  ·  <a href="mailto:work.ankurshukla@gmail.com">Support</a>
       </p>
     </footer>
 

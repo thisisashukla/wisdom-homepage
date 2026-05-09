@@ -3,11 +3,14 @@
 import { useEffect, useState } from 'react'
 
 const links = [
+  { href: '/gita', label: 'Read the Gita' },
   { href: '/#features', label: 'Features' },
   { href: '/#how-it-works', label: 'How it works' },
   { href: '/#topics', label: 'Topics' },
   { href: '/blogs', label: 'Blog' },
 ]
+
+const APP_STORE_URL = 'https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125'
 
 export function MobileNavToggle() {
   const [open, setOpen] = useState(false)
@@ -50,6 +53,25 @@ export function MobileNavToggle() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-mp-location="mobile_nav_drawer_download"
+              onClick={() => setOpen(false)}
+              style={{
+                display: 'block',
+                marginTop: 8,
+                padding: '13px 4px',
+                fontWeight: 700,
+                color: '#f5c96a',
+                borderBottom: 0,
+              }}
+            >
+              ↓ Download Free on the App Store
+            </a>
+          </li>
         </ul>
       </div>
     </>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Blog \u2014 Bhagavad Gita &amp; Hindu Philosophy | Wisdom",
     description: "Deep readings of the Bhagavad Gita \u2014 chapter by chapter. Sanskrit, meaning, and modern relevance.",
-    type: 'article',
+    type: 'website',
     url: "https://wisdomquotes.in/blogs/",
     siteName: 'Wisdom',
   },
@@ -502,9 +502,9 @@ export default function BlogIndexPage() {
         </a>
         <MobileNavToggle />
         <ul className="nav-links">
-          <li><a href="../#features">Features</a></li>
-          <li><a href="../#how-it-works">How it works</a></li>
-          <li><a href="../#topics">Topics</a></li>
+          <li><a href="/gita">Read the Gita</a></li>
+          <li><a href="/#features">Features</a></li>
+          <li><a href="/#how-it-works">How it works</a></li>
           <li><a href="/blogs" className="active">Blog</a></li>
           <li>
             <a
@@ -814,8 +814,10 @@ export default function BlogIndexPage() {
         · Free on iPhone
       </p>
       <p style={{marginTop: '8px'}}>
-        <a href="/">wisdomquotes.in</a>  · 
-        <a href="#">Privacy</a>  ·  <a href="#">Support</a>
+        <a href="/">wisdomquotes.in</a>  ·
+        <a href="/privacy">Privacy</a>  ·
+        <a href="/terms">Terms</a>  ·
+        <a href="mailto:work.ankurshukla@gmail.com">Support</a>
       </p>
     </footer>
 

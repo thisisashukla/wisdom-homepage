@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://wisdomquotes.in',
     siteName: 'Wisdom',
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630, alt: 'Wisdom — Daily Shloka App for Bhagavad Gita' }],
   },
   alternates: { canonical: 'https://wisdomquotes.in' },
 }
@@ -37,13 +38,14 @@ export default function HomePage() {
         </div>
         <MobileNavToggle />
         <ul className="nav-links">
+          <li><a href="/gita">Read the Gita</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#how-it-works">How it works</a></li>
           <li><a href="#topics">Topics</a></li>
           <li><a href="/blogs/">Blog</a></li>
           <li>
             <a
-              href="https://apps.apple.com/us/app/wisdom-eternal-quotes/id6747684125"
+              href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
               target="_blank"
               rel="noopener"
               className="btn-nav"
@@ -82,7 +84,7 @@ export default function HomePage() {
 
         <div className="hero-actions">
           <a
-            href="https://apps.apple.com/us/app/wisdom-eternal-quotes/id6747684125"
+            href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
             target="_blank"
             rel="noopener"
             data-mp-location="hero_cta"
@@ -95,8 +97,7 @@ export default function HomePage() {
           <a href="#how-it-works" className="btn-ghost">How it works</a>
         </div>
         <p className="hero-note">
-          Free to download · No account needed to start · Widgets, reminders
-          & journaling included
+          ★ 4.9 on the App Store · Free · No account needed · Widgets &amp; journaling included
         </p>
       </div>
 
@@ -178,10 +179,115 @@ export default function HomePage() {
           shloka with its full meaning, its relevance to your life right now,
           and space to sit with it.
         </p>
+        <div style={{"display": "flex", "gap": "12px", "justifyContent": "center", "alignItems": "center", "flexWrap": "wrap", "marginTop": "32px"}}>
+          <a
+            href="/gita"
+            data-mp-location="shloka_block_read_gita"
+            style={{"display": "inline-flex", "alignItems": "center", "justifyContent": "center", "gap": "8px", "background": "var(--gold)", "color": "#1a0606", "padding": "13px 26px", "borderRadius": "10px", "fontSize": "15px", "fontWeight": "700", "textDecoration": "none", "transition": "transform 0.15s, background 0.15s"}}
+          >
+            Read the full Gita →
+          </a>
+          <a
+            href="/hi/gita"
+            hrefLang="hi"
+            data-mp-location="shloka_block_read_hindi"
+            style={{"display": "inline-flex", "alignItems": "center", "justifyContent": "center", "gap": "8px", "background": "transparent", "color": "var(--text-dim)", "padding": "13px 24px", "borderRadius": "10px", "fontSize": "15px", "fontWeight": "500", "border": "1.5px solid var(--border)", "textDecoration": "none", "transition": "border-color 0.15s, color 0.15s"}}
+          >
+            हिन्दी में पढ़ें
+          </a>
+        </div>
       </div>
     </section>
 
     <div className="divider"></div>
+
+
+    {/* ── BHAGAVAD GITA — full scripture available on the site ── */}
+    <style dangerouslySetInnerHTML={{__html: `
+      .read-gita-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 56px; align-items: stretch; }
+      .read-gita-art-col { display: flex; flex-direction: column; gap: 14px; height: 100%; }
+      .read-gita-art-col > div:first-child { flex: 1 1 auto; min-height: 380px; }
+      @media (max-width: 820px) {
+        .read-gita-grid { grid-template-columns: 1fr; gap: 36px; align-items: start; }
+        .read-gita-art-col > div:first-child { min-height: unset; aspect-ratio: 1 / 1; }
+      }
+    `}} />
+    <section className="section section-alt" id="read-gita" style={{"borderTop": "1px solid var(--border)"}}>
+      <div className="wrap read-gita-grid">
+        <div>
+          <div className="eyebrow">The full scripture, online</div>
+          <h2 className="heading" style={{"marginBottom": "18px"}}>
+            The Bhagavad Gita —<br/><em>read every verse, free.</em>
+          </h2>
+          <p className="subtext" style={{"marginBottom": "26px"}}>
+            We didn&apos;t just build an app around the Gita. We&apos;ve put the entire scripture on this site —
+            all 18 chapters, all 700 verses, in Sanskrit, Hindi, and English. Each verse on its own page,
+            cross-linked by theme, with a one-line essence and the speaker named. No login. No paywall.
+          </p>
+          <ul style={{"listStyle": "none", "padding": "0", "margin": "0 0 30px", "display": "grid", "gap": "12px"}}>
+            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
+              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
+              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
+                <strong style={{"color": "var(--text)"}}>18 chapters</strong> with their classical names — Sankhya Yoga, Karma Yoga, Bhakti Yoga, Moksha Sanyasa Yoga.
+              </span>
+            </li>
+            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
+              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
+              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
+                <strong style={{"color": "var(--text)"}}>One page per verse</strong>. Sanskrit Devanagari, Hindi anuvad, English translation.
+              </span>
+            </li>
+            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
+              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
+              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
+                <strong style={{"color": "var(--text)"}}>Browse by theme</strong> — karma, dharma, bhakti, vairagya, the steady mind. The Gita organised by the questions you bring to it.
+              </span>
+            </li>
+            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
+              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
+              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
+                <strong style={{"color": "var(--text)"}}>Hindi mirror</strong> at <a href="/hi/gita" hrefLang="hi" style={{"color": "var(--gold-light)"}}>/hi/gita</a> — every verse in Hindi-first layout.
+              </span>
+            </li>
+          </ul>
+          <div style={{"display": "flex", "gap": "14px", "flexWrap": "wrap"}}>
+            <a href="/gita" className="btn-nav" data-mp-location="home_gita_section_cta">Open the Gita →</a>
+            <a href="/gita/chapter/2/verse/47" className="btn-ghost" data-mp-location="home_gita_section_247">
+              Start with 2.47
+            </a>
+          </div>
+        </div>
+        <div className="read-gita-art-col">
+          <div style={{"position": "relative", "borderRadius": "14px", "overflow": "hidden", "border": "1px solid var(--border)", "background": "var(--bg-warm)"}}>
+            <img
+              src="/assets/krishna_speaking_with_divine_wisdom.webp"
+              alt="Krishna speaking the Bhagavad Gita to Arjuna"
+              style={{"width": "100%", "height": "100%", "objectFit": "cover", "display": "block"}}
+              loading="lazy"
+            />
+            <div style={{"position": "absolute", "inset": "0", "background": "linear-gradient(180deg, transparent 55%, rgba(18, 5, 5, 0.7))", "pointerEvents": "none"}}></div>
+            <div style={{"position": "absolute", "bottom": "20px", "left": "22px", "right": "22px", "fontFamily": "'Playfair Display', Georgia, serif", "fontStyle": "italic", "fontSize": "15.5px", "color": "var(--gold-light, #f5c96a)", "lineHeight": "1.5"}}>
+              &ldquo;Whenever dharma declines, I manifest myself.&rdquo;<br/>
+              <span style={{"fontSize": "12.5px", "fontStyle": "normal", "letterSpacing": "0.08em", "textTransform": "uppercase", "opacity": "0.75"}}>Bhagavad Gita 4.7</span>
+            </div>
+          </div>
+          <div style={{"display": "grid", "gridTemplateColumns": "repeat(3, 1fr)", "gap": "10px", "marginTop": "14px"}}>
+            <a href="/gita/chapter/1" style={{"display": "block", "padding": "12px 14px", "background": "var(--bg-card, rgba(255,255,255,0.04))", "border": "1px solid var(--border)", "borderRadius": "8px", "textDecoration": "none", "fontSize": "12.5px", "color": "var(--text-dim)"}}>
+              <div style={{"color": "var(--gold-light)", "fontFamily": "'Playfair Display', Georgia, serif", "fontSize": "16px", "marginBottom": "2px"}}>Ch. 1</div>
+              Arjuna&apos;s Despair
+            </a>
+            <a href="/gita/chapter/2" style={{"display": "block", "padding": "12px 14px", "background": "var(--bg-card, rgba(255,255,255,0.04))", "border": "1px solid var(--border)", "borderRadius": "8px", "textDecoration": "none", "fontSize": "12.5px", "color": "var(--text-dim)"}}>
+              <div style={{"color": "var(--gold-light)", "fontFamily": "'Playfair Display', Georgia, serif", "fontSize": "16px", "marginBottom": "2px"}}>Ch. 2</div>
+              Sankhya Yoga
+            </a>
+            <a href="/gita/chapter/12" style={{"display": "block", "padding": "12px 14px", "background": "var(--bg-card, rgba(255,255,255,0.04))", "border": "1px solid var(--border)", "borderRadius": "8px", "textDecoration": "none", "fontSize": "12.5px", "color": "var(--text-dim)"}}>
+              <div style={{"color": "var(--gold-light)", "fontFamily": "'Playfair Display', Georgia, serif", "fontSize": "16px", "marginBottom": "2px"}}>Ch. 12</div>
+              Bhakti Yoga
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     
     <section className="section">
@@ -644,59 +750,83 @@ export default function HomePage() {
     
     <section className="section">
       <div className="wrap t-center">
-        <div className="eyebrow">What practitioners say</div>
-        <h2 className="heading" style={{"maxWidth": "480px", "margin": "0 auto"}}>
+        <div className="eyebrow">App Store Reviews</div>
+        <h2 className="heading" style={{"maxWidth": "540px", "margin": "0 auto 10px"}}>
           From those already on the path.
         </h2>
+        {/* Real rating summary */}
+        <div style={{"display": "flex", "alignItems": "center", "justifyContent": "center", "gap": "10px", "marginBottom": "52px"}}>
+          <span style={{"fontFamily": "'Playfair Display', Georgia, serif", "fontSize": "36px", "fontWeight": "700", "color": "var(--gold-light)", "lineHeight": "1"}}>4.9</span>
+          <div style={{"textAlign": "left"}}>
+            <div style={{"color": "var(--gold)", "fontSize": "16px", "letterSpacing": "2px"}}>★★★★★</div>
+            <div style={{"fontSize": "12px", "color": "var(--text-dimmer)", "marginTop": "2px"}}>10 ratings · App Store</div>
+          </div>
+        </div>
         <div className="testi-grid">
+          {/* Review 1 — AbhimanyuDasgupta */}
           <div className="testi-card">
-            <div className="testi-stars">★★★★★</div>
+            <div style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between", "marginBottom": "10px"}}>
+              <div className="testi-stars">★★★★★</div>
+              <div style={{"fontSize": "11px", "color": "var(--text-dimmer)"}}>2 Apr</div>
+            </div>
+            <div style={{"fontSize": "13px", "fontWeight": "700", "color": "var(--gold-light)", "marginBottom": "10px"}}>Exceptional</div>
             <blockquote>
-              "I'd been meaning to 'read the Gita properly' for years. Wisdom
-              got me to actually engage with it — one shloka a day, and it
-              started sticking. I look forward to it every morning now."
+              "This is a gem of a find — I&apos;m not a very religious or spiritual person myself, but the impact of the Shlokas at various points during a stressful day has had a very positive influence...would highly recommend it"
             </blockquote>
             <div className="testi-author">
               <div className="testi-avatar">A</div>
               <div>
-                <div className="testi-name">Arjun M.</div>
-                <div className="testi-role">Studying Karma & Detachment</div>
+                <div className="testi-name">AbhimanyuDasgupta</div>
+                <div className="testi-role">App Store · India</div>
               </div>
             </div>
           </div>
+          {/* Review 2 — rahuliitb16 */}
           <div className="testi-card">
-            <div className="testi-stars">★★★★★</div>
-            <blockquote>
-              "The journal is what keeps me coming back. Writing one sentence
-              about what the verse means for my week — that one habit has
-              changed more than any book I've read this year."
-            </blockquote>
-            <div className="testi-author">
-              <div className="testi-avatar">P</div>
-              <div>
-                <div className="testi-name">Priya S.</div>
-                <div className="testi-role">
-                  Studying Peace & Self-Realization
-                </div>
-              </div>
+            <div style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between", "marginBottom": "10px"}}>
+              <div className="testi-stars">★★★★★</div>
+              <div style={{"fontSize": "11px", "color": "var(--text-dimmer)"}}>4 Apr</div>
             </div>
-          </div>
-          <div className="testi-card">
-            <div className="testi-stars">★★★★★</div>
+            <div style={{"fontSize": "13px", "fontWeight": "700", "color": "var(--gold-light)", "marginBottom": "10px"}}>A Powerful Daily Mindset Companion</div>
             <blockquote>
-              "I put the widget on my lock screen and it's the first thing I see
-              every morning. Small thing — but you end up carrying the verse
-              through the whole day without even trying."
+              "This app feels like a daily companion for mental clarity and inner growth. Highly recommended for anyone looking to bring a bit more peace and perspective into their life."
             </blockquote>
             <div className="testi-author">
               <div className="testi-avatar">R</div>
               <div>
-                <div className="testi-name">Rohan V.</div>
-                <div className="testi-role">Studying Discipline & Wisdom</div>
+                <div className="testi-name">rahuliitb16</div>
+                <div className="testi-role">App Store · India</div>
+              </div>
+            </div>
+          </div>
+          {/* Review 3 — Dibbbuuu */}
+          <div className="testi-card">
+            <div style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between", "marginBottom": "10px"}}>
+              <div className="testi-stars">★★★★★</div>
+              <div style={{"fontSize": "11px", "color": "var(--text-dimmer)"}}>5 Apr</div>
+            </div>
+            <div style={{"fontSize": "13px", "fontWeight": "700", "color": "var(--gold-light)", "marginBottom": "10px"}}>Helps me Stay Calm</div>
+            <blockquote>
+              "Beautiful app with meaningful spiritual quotes. It really helps me stay calm and positive every day."
+            </blockquote>
+            <div className="testi-author">
+              <div className="testi-avatar">D</div>
+              <div>
+                <div className="testi-name">Dibbbuuu</div>
+                <div className="testi-role">App Store · India</div>
               </div>
             </div>
           </div>
         </div>
+        <p style={{"marginTop": "32px", "fontSize": "13px", "color": "var(--text-dimmer)"}}>
+          <a
+            href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{"color": "var(--gold-light)"}}
+            data-mp-location="reviews_app_store_link"
+          >See all reviews on the App Store →</a>
+        </p>
       </div>
     </section>
 
@@ -931,7 +1061,7 @@ export default function HomePage() {
           Free to download. Start today. One verse. A minute to sit with it.
         </p>
         <a
-          href="https://apps.apple.com/us/app/wisdom-eternal-quotes/id6747684125"
+          href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
           target="_blank"
           rel="noopener"
           style={{"display": "inline-block"}}
@@ -963,12 +1093,36 @@ export default function HomePage() {
             style={{"width": "30px", "height": "30px", "borderRadius": "50%", "objectFit": "cover", "border": "1px solid rgba(200, 136, 30, 0.35)"}}/>
           Wisdom
         </div>
-        <p className="footer-copy">© 2026 Wisdom</p>
-        <ul className="footer-links">
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="support.html">Support</a></li>
-        </ul>
+        <p className="footer-copy">© 2026 Wisdom · Ankur Shukla</p>
+        <div style={{"display": "flex", "alignItems": "center", "gap": "20px", "flexWrap": "wrap"}}>
+          {/* Social links */}
+          <a
+            href="https://x.com/sansearchapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Wisdom on X (Twitter)"
+            style={{"color": "var(--text-dimmer)", "fontSize": "13px", "transition": "color 0.15s"}}
+            data-mp-location="footer_twitter"
+          >
+            𝕏
+          </a>
+          <a
+            href="https://www.instagram.com/wisdomquoteapp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Wisdom on Instagram"
+            style={{"color": "var(--text-dimmer)", "fontSize": "13px", "transition": "color 0.15s"}}
+            data-mp-location="footer_instagram"
+          >
+            Instagram
+          </a>
+          {/* Legal & support links */}
+          <ul className="footer-links">
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/terms">Terms</a></li>
+            <li><a href="mailto:work.ankurshukla@gmail.com">Support</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
 

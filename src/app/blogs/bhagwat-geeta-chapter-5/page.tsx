@@ -1387,7 +1387,7 @@ export default function ChapterFivePage() {
           data-mp-location="footer"
           >free iPhone app</a
         >
-        that delivers daily Bhagavad Gita shlokas. <span>Made with reverence.</span>
+        that delivers daily Bhagavad Gita shlokas. Made with reverence.</p><p style={{ marginTop: '8px' }}><a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>
       </p>
     </footer>
   

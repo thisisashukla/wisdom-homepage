@@ -1803,7 +1803,14 @@ export default function ChapterTwoPage() {
     {/* ── FOOTER ── */}
     <footer>
       <p>
-        Wisdom app · Bhagavad Gita learning for the modern mind · <span>wisdomquotes.in</span>
+        Wisdom App · Bhagavad Gita learning for the modern mind · Free on iPhone
+      </p>
+      <p style={{marginTop: '8px'}}>
+        <a href="/">wisdomquotes.in</a>  ·
+        <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer_app_store">App Store</a>  ·
+        <a href="/privacy">Privacy</a>  ·
+        <a href="/terms">Terms</a>  ·
+        <a href="mailto:work.ankurshukla@gmail.com">Support</a>
       </p>
     </footer>
   

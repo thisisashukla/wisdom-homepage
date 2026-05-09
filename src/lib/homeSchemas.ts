@@ -13,7 +13,7 @@ const schemas = [
           "price": "0",
           "priceCurrency": "USD"
         },
-        "url": "https://apps.apple.com/us/app/wisdom-eternal-quotes/id6747684125",
+        "url": "https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125",
         "publisher": {
           "@type": "Organization",
           "name": "Wisdom",
@@ -33,7 +33,7 @@ const schemas = [
         "logo": "https://wisdomquotes.in/assets/male-logo-dark.webp",
         "description": "Wisdom builds daily spiritual practice apps rooted in the Bhagavad Gita and Hindu scriptures.",
         "sameAs": [
-          "https://apps.apple.com/us/app/wisdom-eternal-quotes/id6747684125",
+          "https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125",
           "https://wisdomquotes.in"
         ]
       },

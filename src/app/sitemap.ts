@@ -1,78 +1,130 @@
 import { MetadataRoute } from 'next'
+import { getAllChapters, getAllTopics, getAllVerseRefs, chapterUrl, verseUrl, topicUrl } from '@/lib/gita'
 
 const BASE = 'https://wisdomquotes.in'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: BASE,
-      lastModified: new Date('2026-04-08'),
-      changeFrequency: 'weekly',
-      priority: 1.0,
-    },
-    {
-      url: `${BASE}/blogs`,
-      lastModified: new Date('2026-05-05'),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
+  const now = new Date()
 
-    // Chapter studies
+  const staticPages: MetadataRoute.Sitemap = [
+    { url: BASE, lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
+    { url: `${BASE}/blogs`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     {
-      url: `${BASE}/blogs/bhagwat-geeta-chapter-1`,
-      lastModified: new Date('2026-04-08'),
-      changeFrequency: 'monthly',
-      priority: 0.9,
+      url: `${BASE}/gita`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+      alternates: { languages: { en: `${BASE}/gita`, hi: `${BASE}/hi/gita` } },
     },
     {
-      url: `${BASE}/blogs/bhagwat-geeta-chapter-2`,
-      lastModified: new Date('2026-04-08'),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${BASE}/blogs/bhagwat-geeta-chapter-3`,
-      lastModified: new Date('2026-04-08'),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${BASE}/blogs/bhagwat-geeta-chapter-4`,
-      lastModified: new Date('2026-04-08'),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${BASE}/blogs/bhagwat-geeta-chapter-5`,
-      lastModified: new Date('2026-04-08'),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-
-    // Topic guides
-    {
-      url: `${BASE}/blogs/bhagavad-gita-for-beginners`,
-      lastModified: new Date('2026-04-08'),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${BASE}/blogs/bhagavad-gita-karma-meaning`,
-      lastModified: new Date('2026-04-08'),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${BASE}/blogs/bhagavad-gita-anxiety-mental-peace`,
-      lastModified: new Date('2026-04-08'),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${BASE}/blogs/bhagavad-gita-complete-structure-all-chapters`,
-      lastModified: new Date('2026-04-08'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${BASE}/hi/gita`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+      alternates: { languages: { en: `${BASE}/gita`, hi: `${BASE}/hi/gita` } },
     },
   ]
+
+  // Existing topic guides (kept)
+  const topicGuides = [
+    'bhagavad-gita-for-beginners',
+    'bhagavad-gita-karma-meaning',
+    'bhagavad-gita-anxiety-mental-peace',
+    'bhagavad-gita-complete-structure-all-chapters',
+  ]
+  const topicGuidePages: MetadataRoute.Sitemap = topicGuides.map((slug) => ({
+    url: `${BASE}/blogs/${slug}`,
+    lastModified: new Date('2026-04-08'),
+    changeFrequency: 'monthly',
+    priority: 0.75,
+  }))
+
+  // Chapter pages (EN + HI)
+  const chapters = getAllChapters()
+  const chapterPages: MetadataRoute.Sitemap = chapters.flatMap((ch) => [
+    {
+      url: `${BASE}${chapterUrl(ch.number, 'en')}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+      alternates: {
+        languages: {
+          en: `${BASE}${chapterUrl(ch.number, 'en')}`,
+          hi: `${BASE}${chapterUrl(ch.number, 'hi')}`,
+        },
+      },
+    },
+    {
+      url: `${BASE}${chapterUrl(ch.number, 'hi')}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+      alternates: {
+        languages: {
+          en: `${BASE}${chapterUrl(ch.number, 'en')}`,
+          hi: `${BASE}${chapterUrl(ch.number, 'hi')}`,
+        },
+      },
+    },
+  ])
+
+  // Verse pages (EN + HI) — only for verses we have processed
+  const refs = getAllVerseRefs()
+  const versePages: MetadataRoute.Sitemap = refs.flatMap((r) => [
+    {
+      url: `${BASE}${verseUrl(r.chapter, r.verse, 'en')}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+      alternates: {
+        languages: {
+          en: `${BASE}${verseUrl(r.chapter, r.verse, 'en')}`,
+          hi: `${BASE}${verseUrl(r.chapter, r.verse, 'hi')}`,
+        },
+      },
+    },
+    {
+      url: `${BASE}${verseUrl(r.chapter, r.verse, 'hi')}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+      alternates: {
+        languages: {
+          en: `${BASE}${verseUrl(r.chapter, r.verse, 'en')}`,
+          hi: `${BASE}${verseUrl(r.chapter, r.verse, 'hi')}`,
+        },
+      },
+    },
+  ])
+
+  // Topic hubs (EN + HI)
+  const topics = getAllTopics()
+  const topicPages: MetadataRoute.Sitemap = topics.flatMap((t) => [
+    {
+      url: `${BASE}${topicUrl(t.slug, 'en')}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${BASE}${topicUrl(t.slug, 'en')}`,
+          hi: `${BASE}${topicUrl(t.slug, 'hi')}`,
+        },
+      },
+    },
+    {
+      url: `${BASE}${topicUrl(t.slug, 'hi')}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${BASE}${topicUrl(t.slug, 'en')}`,
+          hi: `${BASE}${topicUrl(t.slug, 'hi')}`,
+        },
+      },
+    },
+  ])
+
+  return [...staticPages, ...topicGuidePages, ...chapterPages, ...versePages, ...topicPages]
 }

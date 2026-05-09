@@ -1,0 +1,137 @@
+import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
+import {
+  getAllChapters,
+  getChapter,
+  getChapterVerses,
+  chapterImage,
+  chapterLede,
+  chapterUrl,
+  verseUrl,
+} from '@/lib/gita'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
+import BlogTracker from '@/components/BlogTracker'
+
+type Params = { chapter: string }
+
+export async function generateStaticParams() {
+  return getAllChapters().map((ch) => ({ chapter: String(ch.number) }))
+}
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const num = Number(params.chapter)
+  const ch = getChapter(num)
+  if (!ch) return { title: 'अध्याय नहीं मिला' }
+  const title = `भगवद् गीता अध्याय ${ch.number} — ${ch.hiName} | Wisdom`
+  const description = `भगवद् गीता का ${ch.number}वाँ अध्याय (${ch.hiName}) — सभी ${ch.totalVerses} श्लोक संस्कृत, हिन्दी और अंग्रेज़ी अनुवाद सहित।`
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `https://wisdomquotes.in${chapterUrl(ch.number, 'hi')}`,
+      languages: {
+        'en-IN': `https://wisdomquotes.in${chapterUrl(ch.number, 'en')}`,
+        'hi-IN': `https://wisdomquotes.in${chapterUrl(ch.number, 'hi')}`,
+      },
+    },
+    openGraph: { title, description, type: 'article', siteName: 'Wisdom' },
+  }
+}
+
+export default async function ChapterPageHi({ params }: { params: Params }) {
+  const num = Number(params.chapter)
+  const ch = getChapter(num)
+  if (!ch) notFound()
+  const verses = await getChapterVerses(num)
+
+  const lede = chapterLede(ch.number, 'hi')
+
+  return (
+    <main className="gita-main">
+      <BlogTracker pageName={`gita_chapter_hi_${ch.number}`} />
+      <nav className="gita-crumb" aria-label="Breadcrumb">
+        <a href="/hi/gita" data-mp-location={`chapter_hi_${ch.number}_crumb_gita`}>भगवद् गीता</a>
+        <span className="sep">›</span>
+        <span>अध्याय {ch.number}</span>
+      </nav>
+
+      <div className="gita-eyebrow">अध्याय {ch.number} · {ch.hiTitle}</div>
+      <h1 className="gita-h1">{ch.hiName}</h1>
+      <p className="gita-lede">{lede ?? ch.hiTitle}</p>
+      <p className="gita-lede" style={{ fontSize: 14, color: 'var(--text-dimmer)', marginTop: -8 }}>
+        {ch.processedVerses === ch.totalVerses
+          ? `सभी ${ch.totalVerses} श्लोक नीचे।`
+          : `${ch.processedVerses} / ${ch.totalVerses} श्लोक उपलब्ध — और जोड़े जा रहे हैं।`}
+      </p>
+
+      <figure className="gita-chapter-hero">
+        <img src={chapterImage(ch.number).src} alt={chapterImage(ch.number).alt} loading="eager" />
+      </figure>
+
+      <GitaAppCTA variant="inline" locale="hi" />
+
+      {verses.length > 0 && (
+        <nav className="gita-jumper" aria-label="श्लोक पर जाएँ">
+          <div className="gita-jumper-label">श्लोक पर जाएँ</div>
+          <div className="gita-jumper-grid">
+            {verses.map((v) => (
+              <a
+                key={v.verse}
+                href={verseUrl(v.chapter, v.verse, 'hi')}
+                data-mp-location={`chapter_hi_${ch.number}_jumper_${v.verse}`}
+              >
+                {v.verse}
+              </a>
+            ))}
+          </div>
+        </nav>
+      )}
+
+      <h2 className="gita-h2">श्लोक</h2>
+      <ul className="gita-verse-list">
+        {verses.map((v) => (
+          <li key={v.verse}>
+            <a href={verseUrl(v.chapter, v.verse, 'hi')} data-mp-location={`chapter_hi_${ch.number}_verse_list_${v.verse}`}>
+              <span className="gita-verse-num">
+                {v.chapter}.{v.verse}
+              </span>
+              <span className="gita-verse-snippet">
+                {(v.hindiTranslation || v.englishTranslation).slice(0, 140)}
+                {(v.hindiTranslation || v.englishTranslation).length > 140 ? '…' : ''}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <GitaAppCTA variant="chapter" locale="hi" chapter={ch} />
+
+      <div className="gita-pn">
+        <a
+          className={`gita-pn-link ${ch.number <= 1 ? 'disabled' : ''}`}
+          href={ch.number > 1 ? chapterUrl(ch.number - 1, 'hi') : '#'}
+          data-mp-location={`chapter_hi_${ch.number}_prev`}
+        >
+          <div className="gita-pn-label">← पिछला अध्याय</div>
+          {ch.number > 1 && (
+            <div className="gita-pn-target">
+              {ch.number - 1}. {getChapter(ch.number - 1)?.hiName}
+            </div>
+          )}
+        </a>
+        <a
+          className={`gita-pn-link right ${ch.number >= 18 ? 'disabled' : ''}`}
+          href={ch.number < 18 ? chapterUrl(ch.number + 1, 'hi') : '#'}
+          data-mp-location={`chapter_hi_${ch.number}_next`}
+        >
+          <div className="gita-pn-label">अगला अध्याय →</div>
+          {ch.number < 18 && (
+            <div className="gita-pn-target">
+              {ch.number + 1}. {getChapter(ch.number + 1)?.hiName}
+            </div>
+          )}
+        </a>
+      </div>
+    </main>
+  )
+}

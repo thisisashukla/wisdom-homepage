@@ -1581,9 +1581,14 @@ export default function ChapterThreePage() {
     {/* ── FOOTER ── */}
     <footer>
       <p>
-        Read the <a href="/blogs">complete Gita commentary</a> on Wisdom.
-        <br />
-        <span>Bhagavad Gita</span> · <span>Chapter 3</span> · <span>Karma Yoga</span>
+        Wisdom App · Bhagavad Gita learning for the modern mind · Free on iPhone
+      </p>
+      <p style={{marginTop: '8px'}}>
+        <a href="/">wisdomquotes.in</a>  ·
+        <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer_app_store">App Store</a>  ·
+        <a href="/privacy">Privacy</a>  ·
+        <a href="/terms">Terms</a>  ·
+        <a href="mailto:work.ankurshukla@gmail.com">Support</a>
       </p>
     </footer>
   
