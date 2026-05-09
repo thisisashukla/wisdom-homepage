@@ -135,6 +135,27 @@
       .nav-links a:hover {
         color: var(--gold-light);
       }
+      .nav-section-link {
+        font-size: 12.5px !important;
+        color: var(--text-dimmer) !important;
+        font-weight: 400 !important;
+      }
+      .nav-section-link:hover {
+        color: var(--text-dim) !important;
+      }
+      .nav-page-link {
+        font-weight: 600 !important;
+        color: var(--text-dim) !important;
+      }
+      .nav-page-link:hover {
+        color: var(--gold-light) !important;
+      }
+      .nav-pipe {
+        width: 1px;
+        height: 16px;
+        background: var(--border);
+        flex-shrink: 0;
+      }
       .btn-nav {
         display: inline-flex;
         align-items: center;

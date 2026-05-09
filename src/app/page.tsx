@@ -38,11 +38,12 @@ export default function HomePage() {
         </div>
         <MobileNavToggle />
         <ul className="nav-links">
-          <li><a href="/gita">Read the Gita</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how-it-works">How it works</a></li>
-          <li><a href="#topics">Topics</a></li>
-          <li><a href="/blogs/">Blog</a></li>
+          <li><a href="#features" className="nav-section-link">Features</a></li>
+          <li><a href="#how-it-works" className="nav-section-link">How it works</a></li>
+          <li><a href="#topics" className="nav-section-link">Topics</a></li>
+          <li className="nav-pipe" aria-hidden="true"></li>
+          <li><a href="/gita" className="nav-page-link">Read the Gita</a></li>
+          <li><a href="/blogs/" className="nav-page-link">Blog</a></li>
           <li>
             <a
               href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
@@ -260,7 +261,7 @@ export default function HomePage() {
         <div className="read-gita-art-col">
           <div style={{"position": "relative", "borderRadius": "14px", "overflow": "hidden", "border": "1px solid var(--border)", "background": "var(--bg-warm)"}}>
             <img
-              src="/assets/krishna_speaking_with_divine_wisdom.webp"
+              src="/assets/gita.webp"
               alt="Krishna speaking the Bhagavad Gita to Arjuna"
               style={{"width": "100%", "height": "100%", "objectFit": "cover", "display": "block"}}
               loading="lazy"

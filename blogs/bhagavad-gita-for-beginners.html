@@ -403,6 +403,78 @@
                 margin-right: 1rem;
             }
         }
+
+      /* ─── HAMBURGER ─── */
+      .nav-ham {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 6px 4px;
+        margin-left: 8px;
+      }
+      .nav-ham span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: var(--gold-light);
+        border-radius: 2px;
+        transition: transform 0.22s ease, opacity 0.18s ease;
+      }
+      .nav-ham.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      .nav-ham.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+      .nav-ham.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+      /* ─── NAV LINK TYPES ─── */
+      .nav-section-link {
+        font-size: 12.5px !important;
+        color: var(--text-dimmer) !important;
+        letter-spacing: 0.01em;
+      }
+      .nav-section-link:hover { color: var(--text-dim) !important; }
+      .nav-page-link {
+        font-weight: 600 !important;
+        color: var(--text-dim) !important;
+      }
+      .nav-page-link:hover { color: var(--gold-light) !important; }
+
+      @media (max-width: 960px) {
+        .nav-ham { display: flex; }
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          right: 0;
+          background: rgba(18, 5, 5, 0.97);
+          backdrop-filter: blur(18px);
+          -webkit-backdrop-filter: blur(18px);
+          border-bottom: 1px solid var(--border);
+          flex-direction: column;
+          padding: 12px 28px 20px;
+          gap: 0;
+          z-index: 199;
+        }
+        .nav-links.open { display: flex; }
+        .nav-links li { width: 100%; }
+        .nav-links li a {
+          display: block;
+          padding: 11px 0;
+          border-bottom: 1px solid rgba(200,136,30,0.08);
+          font-size: 14px !important;
+          color: var(--text-dim) !important;
+          letter-spacing: normal !important;
+        }
+        .nav-links li:last-child a { border-bottom: none; padding-bottom: 0; }
+        .btn-nav {
+          margin-top: 8px;
+          display: inline-flex !important;
+          width: fit-content;
+        }
+      }
     </style>
 </head>
 <body>
@@ -729,5 +801,25 @@ svabhāvaniyataṃ karma kurvann āpnoti kilbiṣam ||</div>
         });
       })();
     </script>
-</body>
+
+    <script>
+      (function () {
+        var ham = document.querySelector('.nav-ham');
+        var links = document.querySelector('.nav-links');
+        if (!ham || !links) return;
+        ham.addEventListener('click', function () {
+          var open = links.classList.toggle('open');
+          ham.classList.toggle('open', open);
+          ham.setAttribute('aria-expanded', String(open));
+        });
+        links.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            links.classList.remove('open');
+            ham.classList.remove('open');
+            ham.setAttribute('aria-expanded', 'false');
+          });
+        });
+      })();
+    </script>
+  </body>
 </html>

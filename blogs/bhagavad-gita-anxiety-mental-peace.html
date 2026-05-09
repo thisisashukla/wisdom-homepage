@@ -13,14 +13,14 @@
     <meta property="og:description" content="The Bhagavad Gita was written for a man in the middle of a panic attack. Here's what it actually says about anxiety, fear, and the path to mental peace.">
     <meta property="og:url" content="https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://wisdomquotes.in/assets/krishna_holding_arjuns_hands.webp">
+    <meta property="og:image" content="https://wisdomquotes.in/assets/chapter4.webp">
     <meta property="article:published_time" content="2026-05-05">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="What the Bhagavad Gita Says About Anxiety, Stress & Mental Peace">
     <meta name="twitter:description" content="The Gita was written for someone having a panic attack. Here's what it actually says about anxiety.">
-    <meta name="twitter:image" content="https://wisdomquotes.in/assets/krishna_holding_arjuns_hands.webp">
+    <meta name="twitter:image" content="https://wisdomquotes.in/assets/chapter4.webp">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
@@ -460,6 +460,78 @@
                 margin-right: 1rem;
             }
         }
+
+      /* ─── HAMBURGER ─── */
+      .nav-ham {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 6px 4px;
+        margin-left: 8px;
+      }
+      .nav-ham span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: var(--gold-light);
+        border-radius: 2px;
+        transition: transform 0.22s ease, opacity 0.18s ease;
+      }
+      .nav-ham.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      .nav-ham.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+      .nav-ham.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+      /* ─── NAV LINK TYPES ─── */
+      .nav-section-link {
+        font-size: 12.5px !important;
+        color: var(--text-dimmer) !important;
+        letter-spacing: 0.01em;
+      }
+      .nav-section-link:hover { color: var(--text-dim) !important; }
+      .nav-page-link {
+        font-weight: 600 !important;
+        color: var(--text-dim) !important;
+      }
+      .nav-page-link:hover { color: var(--gold-light) !important; }
+
+      @media (max-width: 960px) {
+        .nav-ham { display: flex; }
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          right: 0;
+          background: rgba(18, 5, 5, 0.97);
+          backdrop-filter: blur(18px);
+          -webkit-backdrop-filter: blur(18px);
+          border-bottom: 1px solid var(--border);
+          flex-direction: column;
+          padding: 12px 28px 20px;
+          gap: 0;
+          z-index: 199;
+        }
+        .nav-links.open { display: flex; }
+        .nav-links li { width: 100%; }
+        .nav-links li a {
+          display: block;
+          padding: 11px 0;
+          border-bottom: 1px solid rgba(200,136,30,0.08);
+          font-size: 14px !important;
+          color: var(--text-dim) !important;
+          letter-spacing: normal !important;
+        }
+        .nav-links li:last-child a { border-bottom: none; padding-bottom: 0; }
+        .btn-nav {
+          margin-top: 8px;
+          display: inline-flex !important;
+          width: fit-content;
+        }
+      }
     </style>
 </head>
 <body>
@@ -474,7 +546,7 @@
 
     <div class="hero">
         <figure class="hero-image">
-            <img src="../assets/krishna_holding_arjuns_hands.webp"
+            <img src="../assets/chapter4.webp"
                  alt="Krishna holding Arjuna's hands on the battlefield of Kurukshetra, the moment before the teaching of the Bhagavad Gita begins"
                  width="1200" height="800" loading="eager" fetchpriority="high">
         </figure>
@@ -772,5 +844,25 @@ sa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati ||</div>
         });
       })();
     </script>
-</body>
+
+    <script>
+      (function () {
+        var ham = document.querySelector('.nav-ham');
+        var links = document.querySelector('.nav-links');
+        if (!ham || !links) return;
+        ham.addEventListener('click', function () {
+          var open = links.classList.toggle('open');
+          ham.classList.toggle('open', open);
+          ham.setAttribute('aria-expanded', String(open));
+        });
+        links.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            links.classList.remove('open');
+            ham.classList.remove('open');
+            ham.setAttribute('aria-expanded', 'false');
+          });
+        });
+      })();
+    </script>
+  </body>
 </html>
