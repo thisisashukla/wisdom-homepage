@@ -605,6 +605,18 @@ export default function ForBeginnersPage() {
     </div>
 
     <div className="content">
+                <figure className="chapter-image">
+          <img
+            src="/assets/gita.webp"
+            alt="The Bhagavad Gita — Krishna and Arjuna on the battlefield of Kurukshetra"
+            width="1200"
+            height="675"
+            loading="eager"
+            fetchPriority="high"
+          />
+          <figcaption>The battlefield where it all begins</figcaption>
+        </figure>
+
         <p className="lead">
             The Bhagavad Gita is 700 verses across 18 chapters. You can read it in 2 to 4 hours straight through. But most people never finish it. Not because it&apos;s too long or too difficult, but because they don&apos;t know where to start, what to expect, or how to actually approach the text. This guide is designed to fix that. It tells you what the Gita is, why it matters, which translation to pick, and the single best way to read it.
         </p>

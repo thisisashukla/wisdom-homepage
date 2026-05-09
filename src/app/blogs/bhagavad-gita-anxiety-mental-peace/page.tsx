@@ -651,8 +651,8 @@ export default function AnxietyMentalPeacePage() {
     <div className="content">
         <figure className="hero-image">
           <img
-            src="/assets/krishna_holding_arjuns_hands.webp"
-            alt="Krishna holding Arjuna's hands on the battlefield of Kurukshetra, the moment before the teaching of the Bhagavad Gita begins"
+            src="/assets/chapter6.webp"
+            alt="Krishna on the path of meditation and inner stillness — Bhagavad Gita Chapter 6"
             width={1200}
             height={800}
             loading="eager"

@@ -619,6 +619,18 @@ export default function KarmaMeaningPage() {
     </div>
 
     <div className="content">
+                <figure className="chapter-image">
+          <img
+            src="/assets/chapter3.webp"
+            alt="Krishna guiding Arjuna toward selfless action — the true meaning of karma"
+            width="1200"
+            height="675"
+            loading="eager"
+            fetchPriority="high"
+          />
+          <figcaption>Karma Yoga — act fully, want nothing</figcaption>
+        </figure>
+
         <p className="lead">
             &ldquo;Karma will get them.&rdquo; &ldquo;Good vibes only, the universe is watching.&rdquo; &ldquo;What goes around comes around.&rdquo; These have become the modern meaning of karma. They describe a cosmic justice system — you put in goodness, the universe deposits goodness back. You do wrong, cosmic punishment arrives. But this is not what the Bhagavad Gita teaches. The word karma appears hundreds of times in the Gita, and almost never means cosmic ledger-keeping. It means action. Specifically, it means the action you perform and the consciousness you bring to it. The distinction matters. It changes everything about how you live.
         </p>
