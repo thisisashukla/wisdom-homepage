@@ -197,6 +197,30 @@ const pageCSS = `
             line-height: 1.8;
         }
 
+        /* CHAPTER IMAGE */
+        .chapter-image {
+            margin: 32px 0 36px;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+        }
+        .chapter-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+        .chapter-image figcaption {
+            padding: 10px 18px;
+            background: var(--bg-card);
+            font-size: 11.5px;
+            color: var(--text-dimmer);
+            letter-spacing: 0.04em;
+            font-style: italic;
+            border-top: 1px solid var(--border);
+        }
+
         /* Main Content */
         .content {
             max-width: var(--max);

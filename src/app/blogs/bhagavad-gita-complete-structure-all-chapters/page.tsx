@@ -616,6 +616,18 @@ export default function CompleteStructurePage() {
     <div className="article-wrap">
       <article className="prose">
 
+        <figure className="chapter-image">
+          <img
+            src="/assets/chapter11.webp"
+            alt="The Vishwarupa — Krishna's cosmic universal form revealed to Arjuna in Bhagavad Gita Chapter 11"
+            width="1200"
+            height="675"
+            loading="eager"
+            fetchPriority="high"
+          />
+          <figcaption>The Vishwarupa — the cosmic form at the heart of the Gita&apos;s argument</figcaption>
+        </figure>
+
         <p className="lead">
           Most people approach the Bhagavad Gita as a quote book. They pick a verse, put it on a poster, and move on. That's like watching only the trailer and thinking you've seen the film. The Gita is a constructed argument — with a beginning, a buildup, a climax that breaks what you thought you knew, and an ending that lands quietly but hits harder than anything that came before it.
         </p>

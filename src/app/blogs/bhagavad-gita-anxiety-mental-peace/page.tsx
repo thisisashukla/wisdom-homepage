@@ -189,34 +189,28 @@ const pageCSS = `
         .meta-item { font-size: 12px; color: var(--text-dimmer); letter-spacing: 0.04em; }
         .meta-sep { color: var(--border); }
 
-        /* ── HERO IMAGE ── */
-        .hero-image {
-            position: relative;
-            margin: 3rem 0 1rem;
-            border-radius: 12px;
+        /* CHAPTER IMAGE */
+        .chapter-image {
+            margin: 32px 0 36px;
+            border-radius: 14px;
             overflow: hidden;
-            border: 1px solid var(--gold-border);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
-                        0 0 0 1px rgba(200, 136, 30, 0.08),
-                        0 4px 24px rgba(200, 136, 30, 0.12);
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 32px rgba(0,0,0,0.4);
         }
-        .hero-image img { display: block; width: 100%; height: auto; }
-        .hero-image::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(180deg, rgba(18, 5, 5, 0) 55%, rgba(18, 5, 5, 0.55) 100%);
-            pointer-events: none;
+        .chapter-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
         }
-        .hero-image-caption {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-size: 0.9rem;
+        .chapter-image figcaption {
+            padding: 10px 18px;
+            background: var(--bg-card);
+            font-size: 11.5px;
             color: var(--text-dimmer);
-            text-align: center;
-            margin-top: 0.85rem;
-            margin-bottom: 2rem;
-            letter-spacing: 0.02em;
+            letter-spacing: 0.04em;
+            font-style: italic;
+            border-top: 1px solid var(--border);
         }
 
         .lead {
@@ -649,7 +643,7 @@ export default function AnxietyMentalPeacePage() {
     </div>
 
     <div className="content">
-        <figure className="hero-image">
+        <figure className="chapter-image">
           <img
             src="/assets/chapter6.webp"
             alt="Krishna on the path of meditation and inner stillness — Bhagavad Gita Chapter 6"
@@ -658,8 +652,8 @@ export default function AnxietyMentalPeacePage() {
             loading="eager"
             fetchPriority="high"
           />
+          <figcaption>Krishna takes Arjuna&apos;s trembling hands — the moment the Gita begins.</figcaption>
         </figure>
-        <p className="hero-image-caption">Krishna takes Arjuna&apos;s trembling hands — the moment the Gita begins.</p>
         <p className="lead">
             Most people approach the Bhagavad Gita as spiritual wisdom — timeless, distant, comforting in a philosophical sort of way. But that&apos;s not what the Gita is. The Gita is a crisis management manual for someone in the middle of what we would now call a panic attack. Chapter 1 opens with a detailed clinical description of exactly that: shaking limbs, dry mouth, trembling bow, mind spinning, fear flooding the body. The Gita&apos;s entire philosophical apparatus was designed from the ground up to answer a man in that state. This is not metaphor. This is the foundation of the text.
         </p>
