@@ -438,9 +438,13 @@ const schemas = [
   "headline": "The Bhagavad Gita's Complete Structure — How Krishna Builds His Argument Across 18 Chapters",
   "description": "A structural reading of the Bhagavad Gita — how Krishna's discourse is organised across 18 chapters, from Arjuna's crisis to the final surrender of 18.66.",
   "author": {
-    "@type": "Organization",
-    "name": "Wisdom",
-    "url": "https://wisdomquotes.in"
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -604,6 +608,8 @@ export default function CompleteStructurePage() {
           700 verses, 18 chapters, three acts, one devastating climax — and a final line that barely whispers. How Krishna builds his argument from a man sitting in a chariot to the most radical teaching in Sanskrit literature.
         </p>
         <div className="article-meta">
+          <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
           <span className="meta-item">All 18 Chapters</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">~14 min read</span>

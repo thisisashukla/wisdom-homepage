@@ -617,9 +617,13 @@ const schemas = [
   "headline": "Bhagavad Gita Chapter 4 — Jnana Yoga: The Fire That Burns Karma",
   "description": "A deep reading of Bhagavad Gita Chapter 4 (Bhagwat Geeta Adhyay 4) — 42 verses on divine incarnation, the yoga of knowledge, why wisdom burns karma, and how to learn from a real teacher.",
   "author": {
-    "@type": "Organization",
-    "name": "Wisdom",
-    "url": "https://wisdomquotes.in"
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -788,6 +792,8 @@ export default function ChapterFourPage() {
           The fire of knowledge that burns away all karma. Divine incarnation, the yoga of wisdom, and the three requirements for real learning.
         </p>
         <div className="article-meta">
+          <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
           <span className="meta-item">42 verses · Jnana Karma Sanyasa Yoga</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">~13 min read</span>

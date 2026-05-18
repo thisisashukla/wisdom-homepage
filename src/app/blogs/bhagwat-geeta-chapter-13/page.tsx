@@ -308,10 +308,14 @@ const schemas = [
     "description": "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga. All 35 verses on the field and the knower, with Sanskrit, meaning, and modern relevance.",
     "alternativeHeadline": "Bhagavad Gita Chapter 13 (Field & Knower) — All Verses",
     "author": {
-      "@type": "Organization",
-      "name": "Wisdom",
-      "url": "https://wisdomquotes.in"
-    },
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
+  },
     "publisher": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -675,7 +679,9 @@ export default function ChapterPage13() {
             The chapter that separates the seer from the seen. Your body, your reactions, your moods — all observed. By something that is not them. The Gita's most precise diagnostic, hidden in one of its quietest chapters.
           </p>
           <div className="article-meta">
-            <span className="meta-item">35 verses · Kshetra Kshetrajna Vibhaga Yoga</span>
+            <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">35 verses · Kshetra Kshetrajna Vibhaga Yoga</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">~13 min read</span>
             <span className="meta-sep">·</span>

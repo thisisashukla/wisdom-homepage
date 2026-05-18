@@ -617,9 +617,13 @@ const schemas = [
   "headline": "Bhagavad Gita Chapter 2 — Sankhya Yoga: The Chapter That Changes Everything",
   "description": "A deep reading of Bhagavad Gita Chapter 2 (Bhagwat Geeta Adhyay 2) — all 72 verses of Sankhya Yoga with Sanskrit text, IAST transliteration, meaning, and modern relevance.",
   "author": {
-    "@type": "Organization",
-    "name": "Wisdom",
-    "url": "https://wisdomquotes.in"
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -796,6 +800,8 @@ export default function ChapterTwoPage() {
           Seventy-two verses. One question about the soul. One teaching on action. One portrait of a mind that cannot be broken. A close reading.
         </p>
         <div className="article-meta">
+          <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
           <span className="meta-item">72 verses · Sankhya Yoga</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">~18 min read</span>

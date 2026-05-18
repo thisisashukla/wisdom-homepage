@@ -617,9 +617,13 @@ const schemas = [
   "headline": "Bhagavad Gita Chapter 5 — Karma Sanyasa Yoga: The Art of Not Being Touched",
   "description": "A deep reading of Bhagavad Gita Chapter 5 (Bhagwat Geeta Adhyay 5) — 29 verses on renunciation, selfless action, equal vision, inner happiness, and the lotus leaf teaching.",
   "author": {
-    "@type": "Organization",
-    "name": "Wisdom",
-    "url": "https://wisdomquotes.in"
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -788,6 +792,8 @@ export default function ChapterFivePage() {
           How to be fully in the world without being of the world. The lotus leaf. Equal vision. And the quiet recognition that ends in peace.
         </p>
         <div className="article-meta">
+          <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
           <span className="meta-item">29 verses · Karma Sanyasa Yoga</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">~12 min read</span>

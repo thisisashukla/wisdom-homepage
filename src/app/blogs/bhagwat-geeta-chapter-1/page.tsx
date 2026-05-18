@@ -617,9 +617,13 @@ const schemas = [
   "headline": "Bhagavad Gita Chapter 1 — Arjuna Vishada Yoga: When the Warrior Sat Down",
   "description": "A deep reading of Bhagavad Gita Chapter 1 (Bhagwat Geeta Adhyay 1) — all 47 verses of Arjuna Vishada Yoga with Sanskrit text, IAST transliteration, meaning, and modern relevance.",
   "author": {
-    "@type": "Organization",
-    "name": "Wisdom",
-    "url": "https://wisdomquotes.in"
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -830,6 +834,8 @@ export default function ChapterOnePage() {
           can't lift his bow.
         </p>
         <div className="article-meta">
+          <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
           <span className="meta-item">47 verses · Arjuna Vishada Yoga</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">~16 min read</span>

@@ -585,9 +585,13 @@ const schemas = [
   "headline": "Bhagavad Gita Chapter 3 — Karma Yoga: Why You Cannot Run",
   "description": "A deep reading of Bhagavad Gita Chapter 3 (Bhagwat Geeta Adhyay 3) — all 43 verses of Karma Yoga with Sanskrit text, IAST transliteration, meaning, and modern relevance.",
   "author": {
-    "@type": "Organization",
-    "name": "Wisdom",
-    "url": "https://wisdomquotes.in"
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -756,6 +760,8 @@ export default function ChapterThreePage() {
           Arjuna wants out. Not just from the battlefield — from action itself. Chapter 3 is Krishna's answer: action is inescapable. The question is never whether to act, only how. Forty-three verses on duty, desire, and the weight of the example you set.
         </p>
         <div className="article-meta">
+          <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
           <span className="meta-item">43 verses · Karma Yoga</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">~14 min read</span>

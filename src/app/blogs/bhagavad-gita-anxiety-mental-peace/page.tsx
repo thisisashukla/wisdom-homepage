@@ -531,8 +531,13 @@ const schemas = [
   "description": "The Bhagavad Gita was written for a man in the middle of a panic attack. Here's what it actually says about anxiety, fear, and the path to mental peace.",
   "datePublished": "2026-05-05",
   "author": {
-    "@type": "Organization",
-    "name": "Wisdom App"
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -633,6 +638,8 @@ export default function AnxietyMentalPeacePage() {
           Chapter 1 opens with the world&apos;s most famous panic attack. The Gita&apos;s teaching on anxiety isn&apos;t &ldquo;calm down&rdquo; — it&apos;s a complete diagnosis of how the spiral begins and where to interrupt it.
         </p>
         <div className="article-meta">
+          <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
           <span className="meta-item">Topic Guide · Mental Health</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">~6 min read</span>

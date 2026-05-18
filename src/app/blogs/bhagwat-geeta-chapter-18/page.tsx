@@ -308,10 +308,14 @@ const schemas = [
     "description": "Bhagavad Gita Chapter 18 — Moksha Sannyasa Yoga. All 78 verses including 'sarva-dharman parityajya' (18.66) and the final teaching of liberation.",
     "alternativeHeadline": "Bhagavad Gita Chapter 18 (The Final Chapter) — All Verses",
     "author": {
-      "@type": "Organization",
-      "name": "Wisdom",
-      "url": "https://wisdomquotes.in"
-    },
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
+  },
     "publisher": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -729,7 +733,9 @@ export default function ChapterPage18() {
             Seventy-eight verses to close everything. What renunciation actually means. The five causes of any action. Your own duty over a borrowed one. And the verse Krishna calls his most secret of all — abandon every duty, take refuge in me alone.
           </p>
           <div className="article-meta">
-            <span className="meta-item">78 verses · Moksha Sannyasa Yoga</span>
+            <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">78 verses · Moksha Sannyasa Yoga</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">~20 min read</span>
             <span className="meta-sep">·</span>

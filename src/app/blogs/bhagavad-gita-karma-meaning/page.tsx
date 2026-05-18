@@ -532,8 +532,13 @@ const schemas = [
   "description": "Karma doesn't mean what goes around comes around. Here's what the Bhagavad Gita actually teaches about karma.",
   "datePublished": "2026-05-05",
   "author": {
-    "@type": "Organization",
-    "name": "Wisdom App"
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -634,6 +639,8 @@ export default function KarmaMeaningPage() {
           Karma isn&apos;t a cosmic ledger. It&apos;s not &ldquo;what goes around comes around.&rdquo; Here&apos;s what the Bhagavad Gita actually teaches — harder, more honest, and more useful than the greeting-card version.
         </p>
         <div className="article-meta">
+          <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
           <span className="meta-item">Topic Guide · Karma Yoga</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">~5 min read</span>

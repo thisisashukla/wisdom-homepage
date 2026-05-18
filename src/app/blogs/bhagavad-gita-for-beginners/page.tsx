@@ -510,8 +510,13 @@ const schemas = [
   "description": "The Bhagavad Gita is 700 verses across 18 chapters. Where do you start? Which translation? What does it actually cover? A no-nonsense guide for complete beginners.",
   "datePublished": "2026-05-05",
   "author": {
-    "@type": "Organization",
-    "name": "Wisdom App"
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -620,6 +625,8 @@ export default function ForBeginnersPage() {
           700 verses, 18 chapters, 2&ndash;4 hours of reading. What the Gita actually is, why most people never finish it, which translation to pick, and the single best way to read it.
         </p>
         <div className="article-meta">
+          <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
           <span className="meta-item">Beginner&apos;s Guide</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">~10 min read</span>

@@ -308,10 +308,14 @@ const schemas = [
     "description": "Bhagavad Gita Chapter 7 — Jnana Vijnana Yoga. All 30 verses on knowledge vs. realization, the pearls-on-a-thread teaching, and the four kinds of seekers.",
     "alternativeHeadline": "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga) — All Verses",
     "author": {
-      "@type": "Organization",
-      "name": "Wisdom",
-      "url": "https://wisdomquotes.in"
-    },
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
+  },
     "publisher": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -648,7 +652,9 @@ export default function ChapterPage7() {
             The chapter that changes the whole conversation. The world strung like pearls. Four kinds of seekers. And the difference between information and recognition.
           </p>
           <div className="article-meta">
-            <span className="meta-item">30 verses · Jnana Vijnana Yoga</span>
+            <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">30 verses · Jnana Vijnana Yoga</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">~12 min read</span>
             <span className="meta-sep">·</span>

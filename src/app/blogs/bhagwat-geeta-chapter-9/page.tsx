@@ -308,10 +308,14 @@ const schemas = [
     "description": "Bhagavad Gita Chapter 9 — Raja Vidya Raja Guhya Yoga. All 34 verses on the king of knowledge, leaf-flower-fruit-water, and 'my devotee never perishes.'",
     "alternativeHeadline": "Bhagavad Gita Chapter 9 (Raja Vidya Raja Guhya) — All Verses",
     "author": {
-      "@type": "Organization",
-      "name": "Wisdom",
-      "url": "https://wisdomquotes.in"
-    },
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
+  },
     "publisher": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -675,7 +679,9 @@ export default function ChapterPage9() {
             The chapter where Krishna pulls the curtain back. The king of knowledge, the king of secrets. Pure, livable, immediate. The leaf, the flower, the fruit, the water. And the most generous claim in the Gita: my devotee never perishes.
           </p>
           <div className="article-meta">
-            <span className="meta-item">34 verses · Raja Vidya Raja Guhya Yoga</span>
+            <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">34 verses · Raja Vidya Raja Guhya Yoga</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">~13 min read</span>
             <span className="meta-sep">·</span>

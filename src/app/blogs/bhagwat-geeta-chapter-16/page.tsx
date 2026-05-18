@@ -308,10 +308,14 @@ const schemas = [
     "description": "Bhagavad Gita Chapter 16 — Daivasura Sampad Vibhaga Yoga. All 24 verses on divine and demonic natures, and the three gates of ruin: desire, anger, greed.",
     "alternativeHeadline": "Bhagavad Gita Chapter 16 (Two Inner Natures) — All Verses",
     "author": {
-      "@type": "Organization",
-      "name": "Wisdom",
-      "url": "https://wisdomquotes.in"
-    },
+    "@type": "Person",
+    "name": "Ankur Shukla",
+    "url": "https://wisdomquotes.in/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/thisisashukla/",
+      "https://x.com/thisisashukla"
+    ]
+  },
     "publisher": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -621,7 +625,9 @@ export default function ChapterPage16() {
             The Gita's most pointed chapter on character. The qualities that open a life and the ones that close it. The three gates of ruin — desire, anger, greed — and why dropping them is the only ladder out.
           </p>
           <div className="article-meta">
-            <span className="meta-item">24 verses · Daivasura Sampad Vibhaga Yoga</span>
+            <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item">24 verses · Daivasura Sampad Vibhaga Yoga</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">~11 min read</span>
             <span className="meta-sep">·</span>

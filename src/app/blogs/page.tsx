@@ -519,6 +519,7 @@ export default function BlogIndexPage() {
           <li><a href="/#features">Features</a></li>
           <li><a href="/#how-it-works">How it works</a></li>
           <li><a href="/blogs" className="active">Blog</a></li>
+          <li><a href="/about">About</a></li>
           <li>
             <a
               href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
