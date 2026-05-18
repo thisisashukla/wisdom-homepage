@@ -150,6 +150,33 @@ export default async function VersePageHi({ params }: { params: Params }) {
         )}
       </article>
 
+      <div className="gita-pn">
+        <a
+          className={`gita-pn-link ${prev ? '' : 'disabled'}`}
+          href={prev ? verseUrl(prev.chapter, prev.verse, 'hi') : '#'}
+          data-mp-location={`verse_hi_${c}_${v}_prev`}
+        >
+          <div className="gita-pn-label">← पिछला श्लोक</div>
+          {prev && (
+            <div className="gita-pn-target">
+              भगवद् गीता {prev.chapter}.{prev.verse}
+            </div>
+          )}
+        </a>
+        <a
+          className={`gita-pn-link right ${next ? '' : 'disabled'}`}
+          href={next ? verseUrl(next.chapter, next.verse, 'hi') : '#'}
+          data-mp-location={`verse_hi_${c}_${v}_next`}
+        >
+          <div className="gita-pn-label">अगला श्लोक →</div>
+          {next && (
+            <div className="gita-pn-target">
+              भगवद् गीता {next.chapter}.{next.verse}
+            </div>
+          )}
+        </a>
+      </div>
+
       <ShareButtons
         url={verseUrl(c, v, 'hi')}
         text={verse.essence || verse.hindiTranslation || verse.englishTranslation}
@@ -179,33 +206,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
           </ul>
         </>
       )}
-
-      <div className="gita-pn">
-        <a
-          className={`gita-pn-link ${prev ? '' : 'disabled'}`}
-          href={prev ? verseUrl(prev.chapter, prev.verse, 'hi') : '#'}
-          data-mp-location={`verse_hi_${c}_${v}_prev`}
-        >
-          <div className="gita-pn-label">← पिछला श्लोक</div>
-          {prev && (
-            <div className="gita-pn-target">
-              भगवद् गीता {prev.chapter}.{prev.verse}
-            </div>
-          )}
-        </a>
-        <a
-          className={`gita-pn-link right ${next ? '' : 'disabled'}`}
-          href={next ? verseUrl(next.chapter, next.verse, 'hi') : '#'}
-          data-mp-location={`verse_hi_${c}_${v}_next`}
-        >
-          <div className="gita-pn-label">अगला श्लोक →</div>
-          {next && (
-            <div className="gita-pn-target">
-              भगवद् गीता {next.chapter}.{next.verse}
-            </div>
-          )}
-        </a>
-      </div>
     </main>
   )
 }

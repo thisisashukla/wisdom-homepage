@@ -168,6 +168,33 @@ export default async function VersePage({ params }: { params: Params }) {
         )}
       </article>
 
+      <div className="gita-pn">
+        <a
+          className={`gita-pn-link ${prev ? '' : 'disabled'}`}
+          href={prev ? verseUrl(prev.chapter, prev.verse) : '#'}
+          data-mp-location={`verse_${c}_${v}_prev`}
+        >
+          <div className="gita-pn-label">← Previous verse</div>
+          {prev && (
+            <div className="gita-pn-target">
+              Bhagavad Gita {prev.chapter}.{prev.verse}
+            </div>
+          )}
+        </a>
+        <a
+          className={`gita-pn-link right ${next ? '' : 'disabled'}`}
+          href={next ? verseUrl(next.chapter, next.verse) : '#'}
+          data-mp-location={`verse_${c}_${v}_next`}
+        >
+          <div className="gita-pn-label">Next verse →</div>
+          {next && (
+            <div className="gita-pn-target">
+              Bhagavad Gita {next.chapter}.{next.verse}
+            </div>
+          )}
+        </a>
+      </div>
+
       <ShareButtons
         url={verseUrl(c, v)}
         text={verse.essence || verse.englishTranslation}
@@ -197,33 +224,6 @@ export default async function VersePage({ params }: { params: Params }) {
           </ul>
         </>
       )}
-
-      <div className="gita-pn">
-        <a
-          className={`gita-pn-link ${prev ? '' : 'disabled'}`}
-          href={prev ? verseUrl(prev.chapter, prev.verse) : '#'}
-          data-mp-location={`verse_${c}_${v}_prev`}
-        >
-          <div className="gita-pn-label">← Previous verse</div>
-          {prev && (
-            <div className="gita-pn-target">
-              Bhagavad Gita {prev.chapter}.{prev.verse}
-            </div>
-          )}
-        </a>
-        <a
-          className={`gita-pn-link right ${next ? '' : 'disabled'}`}
-          href={next ? verseUrl(next.chapter, next.verse) : '#'}
-          data-mp-location={`verse_${c}_${v}_next`}
-        >
-          <div className="gita-pn-label">Next verse →</div>
-          {next && (
-            <div className="gita-pn-target">
-              Bhagavad Gita {next.chapter}.{next.verse}
-            </div>
-          )}
-        </a>
-      </div>
     </main>
   )
 }
