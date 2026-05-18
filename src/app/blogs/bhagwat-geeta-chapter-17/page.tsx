@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 17 — Shraddhatraya Vibhaga Yoga: You Are What You Trust | Wisdom",
-  description: "An opinionated reading of Bhagavad Gita Chapter 17 (Adhyay 17) — 28 verses on the three kinds of faith. 'You become what you trust' (17.3), the qualities of food (17.7-10), austerity (17.14-17), and giving (17.20-22). And the closing verse that says trust is what makes action real.",
-  keywords: "bhagwat geeta chapter 17, bhagavad gita shraddhatraya vibhaga yoga, bhagwat geeta adhyay 17, three kinds of faith gita, sattvic rajasic tamasic food, shraddha bhagavad gita, austerity of body speech mind, om tat sat",
+  title: "Bhagavad Gita Chapter 17 (Three Kinds of Faith) — Summary",
+  description: "Bhagavad Gita Chapter 17 — Shraddhatraya Vibhaga Yoga. All 28 verses on the three kinds of faith, sattvic food, austerity, giving, and Om Tat Sat.",
+  keywords: "bhagwat geeta chapter 17, bhagavad gita shraddhatraya vibhaga yoga, bhagwat geeta adhyay 17, three kinds of faith gita, sattvic rajasic tamasic food, shraddha bhagavad gita, austerity of body speech mind, om tat sat, Shraddhatraya Vibhaga Yoga meaning, three kinds of faith Bhagavad Gita, sattvic rajasic tamasic food Bhagavad Gita, Bhagavad Gita 17.3 shraddha mayo ayam purushah, Om Tat Sat meaning Bhagavad Gita, three austerities Bhagavad Gita body speech mind",
   openGraph: {
-    title: "Bhagavad Gita Chapter 17 — Shraddhatraya Vibhaga Yoga: You Are What You Trust",
-    description: "The chapter that says you are made of your trust. The food, the speech, the gift — each carries the quality of the faith underneath it.",
+    title: "Bhagavad Gita Chapter 17 (Three Kinds of Faith) — All Verses",
+    description: "Bhagavad Gita Chapter 17 — you are made of what you trust. The three kinds of faith. Om Tat Sat.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter17.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter17.webp", width: 1200, height: 675, alt: "Three lamps of different intensities — sattvic, rajasic, tamasic — illuminating the quality of faith, food, austerity, and giving. Chapter 17 of the Bhagavad Gita, Shraddhatraya Vibhaga Yoga." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 17 — Shraddhatraya Vibhaga Yoga",
-    description: "The chapter that says you are made of your trust. The food, the speech, the gift — each carries the quality of the faith underneath it.",
+    title: "Bhagavad Gita Chapter 17 (Three Kinds of Faith) — All Verses",
+    description: "Bhagavad Gita Chapter 17 — you are made of what you trust. The three kinds of faith. Om Tat Sat.",
     images: ["https://wisdomquotes.in/assets/chapter17.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 17 — Shraddhatraya Vibhaga Yoga: You Are What You Trust",
-    "description": "An opinionated reading of Bhagavad Gita Chapter 17 (Adhyay 17) — 28 verses on the three kinds of faith. 'You become what you trust' (17.3), the qualities of food (17.7-10), austerity (17.14-17), and giving (17.20-22). And the closing verse that says trust is what makes action real.",
+    "description": "Bhagavad Gita Chapter 17 — Shraddhatraya Vibhaga Yoga. All 28 verses on the three kinds of faith, sattvic food, austerity, giving, and Om Tat Sat.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 17 (Three Kinds of Faith) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 17, bhagavad gita shraddhatraya vibhaga yoga, bhagwat geeta adhyay 17, three kinds of faith gita, sattvic rajasic tamasic food, shraddha bhagavad gita, austerity of body speech mind, om tat sat"
+    ],
+    "keywords": "bhagwat geeta chapter 17, bhagavad gita shraddhatraya vibhaga yoga, bhagwat geeta adhyay 17, three kinds of faith gita, sattvic rajasic tamasic food, shraddha bhagavad gita, austerity of body speech mind, om tat sat, Shraddhatraya Vibhaga Yoga meaning, three kinds of faith Bhagavad Gita, sattvic rajasic tamasic food Bhagavad Gita, Bhagavad Gita 17.3 shraddha mayo ayam purushah, Om Tat Sat meaning Bhagavad Gita, three austerities Bhagavad Gita body speech mind",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2678,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,168 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.3",
+    "text": "Each person's trust matches their inner nature, Arjuna. A person is made of trust — whatever one trusts, that is what one becomes.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 17, Verse 3"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत । / श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः ॥",
+      "sattvānurūpā sarvasya śraddhā bhavati bhārata | / śraddhā-mayo'yaṃ puruṣo yo yac-chraddhaḥ sa eva saḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.3"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.8",
+    "text": "Foods that increase longevity, clarity, strength, health, ease, and warmth — that are tasty, smooth, substantial, and heart-pleasing — are dear to the sattvic person.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 17, Verse 8"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः । / रस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः ॥",
+      "āyuḥ-sattva-balārogya-sukha-prīti-vivardhanāḥ | / rasyāḥ snigdhāḥ sthirā hṛdyā āhārāḥ sāttvika-priyāḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.8"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.15",
+    "text": "Speech that does not agitate, that is truthful, pleasant, and beneficial, together with study and practice of the sacred — this is called the austerity of speech.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 17, Verse 15"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । / स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+      "anudvega-karaṃ vākyaṃ satyaṃ priya-hitaṃ ca yat | / svādhyāyābhyasanaṃ caiva vāṅmayaṃ tapa ucyate ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.15"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.16",
+    "text": "Serenity of mind, gentleness, silence, self-control, and purity of feeling — this is called the austerity of the mind.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 17, Verse 16"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "मनःप्रसादः सौम्यत्वं मौनमात्मविनिग्रहः । / भावसंशुद्धिरित्येतत्तपो मानसमुच्यते ॥",
+      "manaḥ-prasādaḥ saumyatvaṃ maunam ātma-vinigrahaḥ | / bhāva-saṃśuddhir ity etat tapo mānasam ucyate ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.16"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.20",
+    "text": "A gift given with the conviction that giving is right, to one who cannot return the gift, in the right place, at the right time, to a worthy recipient — that is called sattvic giving.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 17, Verse 20"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "दातव्यमिति यद्दानं दीयतेऽनुपकारिणे । / देशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम् ॥",
+      "dātavyam iti yad dānaṃ dīyate'nupakāriṇe | / deśe kāle ca pātre ca tad dānaṃ sāttvikaṃ smṛtam ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.20"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.23",
+    "text": "Om, Tat, Sat — these are the three names by which the supreme reality is designated. By that, the brāhmaṇas, the Vedas, and the sacrifices were established at the very beginning.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 17, Verse 23"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "ॐ तत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः । / ब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा ॥",
+      "oṃ tat sad iti nirdeśo brahmaṇas tri-vidhaḥ smṛtaḥ | / brāhmaṇās tena vedāś ca yajñāś ca vihitāḥ purā ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17#verse-17.23"
   }
 ]
 
@@ -501,6 +717,7 @@ export default function ChapterPage17() {
             <li><a href="#without-trust">What action without trust amounts to</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -980,6 +1197,33 @@ export default function ChapterPage17() {
             <div className="faq-a">
               In verse 17.23, Krishna names three traditional designations of Brahman, the supreme reality: <em>Oṃ</em>, <em>Tat</em>, <em>Sat</em>. The teaching is that sacred action requires a naming — an explicit reorientation toward something beyond the act itself. <em>Om</em> begins the act, <em>Tat</em> directs it, <em>Sat</em> grounds it in what is real. The naming changes the action's nature: a small offering with the right naming is more complete than a large offering performed for ego.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Karma — what it actually means in the Gita</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-anxiety-mental-peace" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Mental peace through right action</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-14" className="related-card">
+            <div className="related-card-label">Chapter 14</div>
+            <div className="related-card-title">Gunatraya Vibhaga — The Three Forces</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-16" className="related-card">
+            <div className="related-card-label">Chapter 16</div>
+            <div className="related-card-title">Daivasura Sampad — Two Kinds of Inner Wealth</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-18" className="related-card">
+            <div className="related-card-label">Chapter 18</div>
+            <div className="related-card-title">Moksha Sannyasa Yoga — The Final Teaching</div>
+          </a>
           </div>
         </div>
 

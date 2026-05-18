@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 12 — Bhakti Yoga: How a Devotee Actually Lives | Wisdom",
-  description: "An opinionated reading of Bhagavad Gita Chapter 12 (Adhyay 12) — 20 verses on devotion. Form versus formless, the four-step ladder (12.8-11), and the character of the devotee dear to Krishna (12.13-19).",
-  keywords: "bhagwat geeta chapter 12, bhagavad gita bhakti yoga, bhagwat geeta adhyay 12, form versus formless gita, 12.8 mind on me, qualities of a devotee gita, abhyasa yoga gita, renounce fruits of action",
+  title: "Bhagavad Gita Chapter 12 (Bhakti Yoga) — Summary",
+  description: "Bhagavad Gita Chapter 12 — Bhakti Yoga. All 20 verses on devotion, the four-step ladder of practice, and the qualities of the devotee dear to Krishna.",
+  keywords: "bhagwat geeta chapter 12, bhagavad gita bhakti yoga, bhagwat geeta adhyay 12, form versus formless gita, 12.8 mind on me, qualities of a devotee gita, abhyasa yoga gita, renounce fruits of action, Bhakti Yoga meaning Bhagavad Gita, form vs formless worship Bhagavad Gita, Bhagavad Gita 12.13 qualities of a devotee, Bhagavad Gita 12.18 sama shatrau ca mitre ca, what is bhakti according to Bhagavad Gita, four-step practice ladder Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 12 — Bhakti Yoga: How a Devotee Actually Lives",
-    description: "The shortest chapter in the Gita, and one of the most practical. The four-step ladder. And the character of the devotee Krishna calls dear.",
+    title: "Bhagavad Gita Chapter 12 (Bhakti Yoga) — All Verses",
+    description: "Bhagavad Gita Chapter 12 — how a devotee actually lives. The four-step ladder. The qualities of the one Krishna calls dear.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter12.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter12.webp", width: 1200, height: 675, alt: "A devotee with hands folded, mind steady, surrounded by ordinary life — Chapter 12 of the Bhagavad Gita, Bhakti Yoga, defines the devotee not by belief but by character." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 12 — Bhakti Yoga",
-    description: "The shortest chapter in the Gita, and one of the most practical. The four-step ladder. And the character of the devotee Krishna calls dear.",
+    title: "Bhagavad Gita Chapter 12 (Bhakti Yoga) — All Verses",
+    description: "Bhagavad Gita Chapter 12 — how a devotee actually lives. The four-step ladder. The qualities of the one Krishna calls dear.",
     images: ["https://wisdomquotes.in/assets/chapter12.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 12 — Bhakti Yoga: How a Devotee Actually Lives",
-    "description": "An opinionated reading of Bhagavad Gita Chapter 12 (Adhyay 12) — 20 verses on devotion. Form versus formless, the four-step ladder (12.8-11), and the character of the devotee dear to Krishna (12.13-19).",
+    "description": "Bhagavad Gita Chapter 12 — Bhakti Yoga. All 20 verses on devotion, the four-step ladder of practice, and the qualities of the devotee dear to Krishna.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 12 (Bhakti Yoga) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 12, bhagavad gita bhakti yoga, bhagwat geeta adhyay 12, form versus formless gita, 12.8 mind on me, qualities of a devotee gita, abhyasa yoga gita, renounce fruits of action"
+    ],
+    "keywords": "bhagwat geeta chapter 12, bhagavad gita bhakti yoga, bhagwat geeta adhyay 12, form versus formless gita, 12.8 mind on me, qualities of a devotee gita, abhyasa yoga gita, renounce fruits of action, Bhakti Yoga meaning Bhagavad Gita, form vs formless worship Bhagavad Gita, Bhagavad Gita 12.13 qualities of a devotee, Bhagavad Gita 12.18 sama shatrau ca mitre ca, what is bhakti according to Bhagavad Gita, four-step practice ladder Bhagavad Gita",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2636,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,168 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.2",
+    "text": "The Blessed One said: those who fix their minds on me, who worship me with constant union, filled with supreme trust — they, in my view, are the most united.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 12, Verse 2"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "श्रीभगवानुवाच / मय्यावेश्य मनो ये मां नित्ययुक्ता उपासते । / श्रद्धया परयोपेतास्ते मे युक्ततमा मताः ॥",
+      "śrī bhagavān uvāca | / mayy āveśya mano ye māṃ nitya-yuktā upāsate | / śraddhayā parayopetās te me yuktatamā matāḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.2"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.8",
+    "text": "Fix your mind on me alone. Place your discerning mind in me. You will then live in me, beyond doubt.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 12, Verse 8"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय । / निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः ॥",
+      "mayy eva mana ādhatsva mayi buddhiṃ niveśaya | / nivasiṣyasi mayy eva ata ūrdhvaṃ na saṃśayaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.8"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.12",
+    "text": "Knowledge is better than mere practice; meditation is better than knowledge; renouncing the fruits of action is better than meditation — and from such renunciation, peace follows at once.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 12, Verse 12"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते । / ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम् ॥",
+      "śreyo hi jñānam abhyāsāj jñānād dhyānaṃ viśiṣyate | / dhyānāt karma-phala-tyāgas tyāgāc chāntir anantaram ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.12"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.13",
+    "text": "One who hates no being, who is friendly and compassionate, free of possessiveness and ego, equal in pain and pleasure, forgiving — always content, self-controlled, firm in resolve, with mind and discernment offered to me — that devotee is dear to me.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 12, Verse 13"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च । / निर्ममो निरहङ्कारः समदुःखसुखः क्षमी ॥ / सन्तुष्टः सततं योगी यतात्मा दृढनिश्चयः । / मय्यर्पितमनोबुद्धिर्यो मद्भक्तः स मे प्रियः ॥",
+      "adveṣṭā sarva-bhūtānāṃ maitraḥ karuṇa eva ca | / nirmamo nirahaṅkāraḥ sama-duḥkha-sukhaḥ kṣamī || / santuṣṭaḥ satataṃ yogī yatātmā dṛḍha-niścayaḥ | / mayy arpita-mano-buddhir yo mad-bhaktaḥ sa me priyaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.13"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.15",
+    "text": "The one who disturbs no one in the world, and is disturbed by no one — free of delight, envy, fear, agitation — that one is dear to me.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 12, Verse 15"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः । / हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः ॥",
+      "yasmān nodvijate loko lokān nodvijate ca yaḥ | / harṣāmarṣa-bhayodvegair mukto yaḥ sa ca me priyaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.15"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.18",
+    "text": "Equal to enemy and friend, equal in honour and dishonour, equal in heat and cold, in pleasure and pain — free of attachment.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 12, Verse 18"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "समः शत्रौ च मित्रे च तथा मानापमानयोः । / शीतोष्णसुखदुःखेषु समः सङ्गविवर्जितः ॥",
+      "samaḥ śatrau ca mitre ca tathā mānāpamānayoḥ | / śītoṣṇa-sukha-duḥkheṣu samaḥ saṅga-vivarjitaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12#verse-12.18"
   }
 ]
 
@@ -501,6 +717,7 @@ export default function ChapterPage12() {
             <li><a href="#nectar">The nectar-like teaching — 12.20</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -1013,6 +1230,33 @@ export default function ChapterPage12() {
             <div className="faq-a">
               In verse 12.18, Krishna describes the devotee as equal to friend and enemy. The teaching is not about being cold or impartial. It is about being unhijacked. The devotee still cares about the friend and acts well toward the enemy — but neither the friend's affection nor the enemy's hostility takes over the inner life. Equanimity, in the Gita's sense, is the freedom to love deeply without being captured by what others are doing back.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Karma — what it actually means in the Gita</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-anxiety-mental-peace" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Mental peace through devotion</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-9" className="related-card">
+            <div className="related-card-label">Chapter 9</div>
+            <div className="related-card-title">Raja Vidya Raja Guhya Yoga — The Royal Secret</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-11" className="related-card">
+            <div className="related-card-label">Chapter 11</div>
+            <div className="related-card-title">Vishwarupa Darshana Yoga — The Cosmic Vision</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-13" className="related-card">
+            <div className="related-card-label">Chapter 13</div>
+            <div className="related-card-title">Kshetra Kshetrajna — The Field and the Knower</div>
+          </a>
           </div>
         </div>
 

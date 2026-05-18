@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 6 — Dhyana Yoga: The Lamp That Does Not Flicker | Wisdom",
-  description: "A close, opinionated reading of Bhagavad Gita Chapter 6 (Adhyay 6) — 47 verses on meditation, self-mastery, the restless mind, and the lamp-in-windless-place teaching. Sanskrit, transliteration, meaning, and what this means for someone trying to meditate today.",
-  keywords: "bhagwat geeta chapter 6, bhagavad gita dhyana yoga, bhagwat geeta adhyay 6, lamp in windless place gita, uddharedatmanatmanam, abhyasa vairagya meaning, gita on meditation, restless mind gita, how to meditate bhagavad gita",
+  title: "Bhagavad Gita Chapter 6 (Dhyana Yoga) — Meaning & Verses",
+  description: "Bhagavad Gita Chapter 6 — Dhyana Yoga (Meditation). All 47 verses with Sanskrit, transliteration, meaning, and the lamp-in-windless-place teaching.",
+  keywords: "bhagwat geeta chapter 6, bhagavad gita dhyana yoga, bhagwat geeta adhyay 6, lamp in windless place gita, uddharedatmanatmanam, abhyasa vairagya meaning, gita on meditation, restless mind gita, how to meditate bhagavad gita, Dhyana Yoga summary, Bhagavad Gita 6.5 meaning, Bhagavad Gita 6.34 the mind is like the wind, abhyasa vairagya meaning, lamp in windless place Bhagavad Gita, how to meditate according to Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 6 — Dhyana Yoga: The Lamp That Does Not Flicker",
-    description: "Chapter 6 is the Gita's most practical chapter on meditation — for anyone whose mind won't sit still. The lamp. The wandering mind. The return.",
+    title: "Bhagavad Gita Chapter 6 (Dhyana Yoga) — Summary & Verses",
+    description: "All 47 verses of Bhagavad Gita Chapter 6 — meditation, the restless mind, and the lamp that does not flicker.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter6.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter6.webp", width: 1200, height: 675, alt: "A yogi seated in meditation at the edge of dawn — the mind, lamp-like, no longer flickers. Chapter 6 of the Bhagavad Gita teaches Dhyana Yoga, the path of meditation." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 6 — Dhyana Yoga",
-    description: "Chapter 6 is the Gita's most practical chapter on meditation — for anyone whose mind won't sit still. The lamp. The wandering mind. The return.",
+    title: "Bhagavad Gita Chapter 6 (Dhyana Yoga) — Summary & Verses",
+    description: "All 47 verses of Bhagavad Gita Chapter 6 — meditation, the restless mind, and the lamp that does not flicker.",
     images: ["https://wisdomquotes.in/assets/chapter6.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-5", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 6 — Dhyana Yoga: The Lamp That Does Not Flicker",
-    "description": "A close, opinionated reading of Bhagavad Gita Chapter 6 (Adhyay 6) — 47 verses on meditation, self-mastery, the restless mind, and the lamp-in-windless-place teaching. Sanskrit, transliteration, meaning, and what this means for someone trying to meditate today.",
+    "description": "Bhagavad Gita Chapter 6 — Dhyana Yoga (Meditation). All 47 verses with Sanskrit, transliteration, meaning, and the lamp-in-windless-place teaching.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 6 (Dhyana Yoga) — Summary & Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 6, bhagavad gita dhyana yoga, bhagwat geeta adhyay 6, lamp in windless place gita, uddharedatmanatmanam, abhyasa vairagya meaning, gita on meditation, restless mind gita, how to meditate bhagavad gita"
+    ],
+    "keywords": "bhagwat geeta chapter 6, bhagavad gita dhyana yoga, bhagwat geeta adhyay 6, lamp in windless place gita, uddharedatmanatmanam, abhyasa vairagya meaning, gita on meditation, restless mind gita, how to meditate bhagavad gita, Dhyana Yoga summary, Bhagavad Gita 6.5 meaning, Bhagavad Gita 6.34 the mind is like the wind, abhyasa vairagya meaning, lamp in windless place Bhagavad Gita, how to meditate according to Bhagavad Gita",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2820,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,141 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6#verse-6.5",
+    "text": "Lift yourself by yourself; do not let yourself fall. The self alone is the friend of the self, and the self alone is its enemy.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 6, Verse 5"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । / आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+      "uddhared ātmanā''tmānaṃ nātmānam avasādayet | / ātmaiva hyātmano bandhur ātmaiva ripur ātmanaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6#verse-6.5"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6#verse-6.19",
+    "text": "As a lamp in a windless place does not flicker — that is the comparison given for the disciplined mind of a yogi united in meditation.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 6, Verse 19"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता । / योगिनो यतचित्तस्य युञ्जतो योगमात्मनः ॥",
+      "yathā dīpo nivāta-stho neṅgate sopamā smṛtā | / yogino yatacittasya yuñjato yogam ātmanaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6#verse-6.19"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6#verse-6.26",
+    "text": "Whenever the restless, unsteady mind wanders out, from wherever it has gone, bring it back under the authority of the self.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 6, Verse 26"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् । / ततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ॥",
+      "yato yato niścarati manaścañcalam asthiram | / tatas tato niyamyaitad ātmany eva vaśaṃ nayet ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6#verse-6.26"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6#verse-6.35",
+    "text": "The Blessed One said: Undoubtedly, mighty-armed one, the mind is restless and hard to restrain. But by practice and detachment, it is held.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 6, Verse 35"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "श्रीभगवानुवाच / असंशयं महाबाहो मनो दुर्निग्रहं चलं । / अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ॥",
+      "śrī bhagavān uvāca | / asaṃśayaṃ mahābāho mano durnigrahaṃ calam | / abhyāsena tu kaunteya vairāgyeṇa ca gṛhyate ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6#verse-6.35"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6#verse-6.47",
+    "text": "Among all yogis, the one whose inner self has come to rest in me, who worships me with trust — that one I consider the most fully integrated.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 6, Verse 47"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "योगिनामपि सर्वेषां मद्गतेनान्तरात्मना । / श्रद्धावान्भजते यो मां स मे युक्ततमो मतः ॥",
+      "yoginām api sarveṣāṃ madgatenāntar-ātmanā | / śraddhāvān bhajate yo māṃ sa me yuktatamo mataḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6#verse-6.47"
   }
 ]
 
@@ -502,6 +691,7 @@ export default function ChapterPage6() {
             <li><a href="#highest-yogi">The chapter's final word — trust</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -1170,6 +1360,33 @@ export default function ChapterPage6() {
             <div className="faq-a">
               There is real overlap. Modern mindfulness practices — noticing when the mind wanders, returning attention without judgement, building gradual stability — are exactly what verse 6.26 describes. But the Gita's framing is wider: meditation is not just stress-reduction, it is the training of the entire self toward a stable, equal-visioned, devotionally-anchored way of being. Verse 6.47 makes clear that the deepest yoga is not technique alone but trust.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-anxiety-mental-peace" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">What the Gita says about anxiety & mental peace</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Karma — what it actually means in the Gita</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-5" className="related-card">
+            <div className="related-card-label">Chapter 5</div>
+            <div className="related-card-title">Karma Sanyasa Yoga — Acting Without Being Touched</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-12" className="related-card">
+            <div className="related-card-label">Chapter 12</div>
+            <div className="related-card-title">Bhakti Yoga — How a Devotee Actually Lives</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-14" className="related-card">
+            <div className="related-card-label">Chapter 14</div>
+            <div className="related-card-title">Gunatraya Vibhaga — The Three Forces</div>
+          </a>
           </div>
         </div>
 

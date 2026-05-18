@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 16 — Daivasura Sampad Vibhaga Yoga: Two Kinds of Inner Wealth | Wisdom",
-  description: "An opinionated reading of Bhagavad Gita Chapter 16 (Adhyay 16) — 24 verses on divine and demonic natures. The qualities of the elevated character (16.1-3), the spiral of desire (16.10-16), and the three gates of ruin (16.21).",
-  keywords: "bhagwat geeta chapter 16, bhagavad gita daivi asuri sampad, bhagwat geeta adhyay 16, divine and demonic qualities, three gates of hell gita, kama krodha lobha, qualities of character gita, 16.21 trividham narakasyedam",
+  title: "Bhagavad Gita Chapter 16 (Daivasura Sampad) — Summary",
+  description: "Bhagavad Gita Chapter 16 — Daivasura Sampad Vibhaga Yoga. All 24 verses on divine and demonic natures, and the three gates of ruin: desire, anger, greed.",
+  keywords: "bhagwat geeta chapter 16, bhagavad gita daivi asuri sampad, bhagwat geeta adhyay 16, divine and demonic qualities, three gates of hell gita, kama krodha lobha, qualities of character gita, 16.21 trividham narakasyedam, Daivasura Sampad Vibhaga Yoga meaning, divine and demonic qualities Bhagavad Gita, Bhagavad Gita 16.21 three gates of hell, kama krodha lobha meaning, Bhagavad Gita on ego and character, 16 chapter qualities of devotion",
   openGraph: {
-    title: "Bhagavad Gita Chapter 16 — Daivasura Sampad Vibhaga Yoga: Two Kinds of Inner Wealth",
-    description: "The qualities that open a life and the ones that close it. The three gates of ruin — and the way out.",
+    title: "Bhagavad Gita Chapter 16 (Two Inner Natures) — All Verses",
+    description: "Bhagavad Gita Chapter 16 — qualities that open a life, qualities that close it, and the three gates of ruin (16.21).",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter16.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter16.webp", width: 1200, height: 675, alt: "Two divergent inner orientations — one leading toward freedom, one toward bondage. Chapter 16 of the Bhagavad Gita, Daivasura Sampad Vibhaga Yoga, names the qualities of each." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 16 — Daivasura Sampad Vibhaga Yoga",
-    description: "The qualities that open a life and the ones that close it. The three gates of ruin — and the way out.",
+    title: "Bhagavad Gita Chapter 16 (Two Inner Natures) — All Verses",
+    description: "Bhagavad Gita Chapter 16 — qualities that open a life, qualities that close it, and the three gates of ruin (16.21).",
     images: ["https://wisdomquotes.in/assets/chapter16.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 16 — Daivasura Sampad Vibhaga Yoga: Two Kinds of Inner Wealth",
-    "description": "An opinionated reading of Bhagavad Gita Chapter 16 (Adhyay 16) — 24 verses on divine and demonic natures. The qualities of the elevated character (16.1-3), the spiral of desire (16.10-16), and the three gates of ruin (16.21).",
+    "description": "Bhagavad Gita Chapter 16 — Daivasura Sampad Vibhaga Yoga. All 24 verses on divine and demonic natures, and the three gates of ruin: desire, anger, greed.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 16 (Two Inner Natures) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 16, bhagavad gita daivi asuri sampad, bhagwat geeta adhyay 16, divine and demonic qualities, three gates of hell gita, kama krodha lobha, qualities of character gita, 16.21 trividham narakasyedam"
+    ],
+    "keywords": "bhagwat geeta chapter 16, bhagavad gita daivi asuri sampad, bhagwat geeta adhyay 16, divine and demonic qualities, three gates of hell gita, kama krodha lobha, qualities of character gita, 16.21 trividham narakasyedam, Daivasura Sampad Vibhaga Yoga meaning, divine and demonic qualities Bhagavad Gita, Bhagavad Gita 16.21 three gates of hell, kama krodha lobha meaning, Bhagavad Gita on ego and character, 16 chapter qualities of devotion",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2831,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,114 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16#verse-16.1",
+    "text": "Fearlessness, purity of being, steadiness in the yoga of knowledge, generosity, self-control, sacrifice, study of sacred texts, austerity, straightforwardness — non-violence, truthfulness, freedom from anger, renunciation, inner calm, absence of slander, compassion for all beings, freedom from greed, gentleness, modesty, freedom from restlessness.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 16, Verse 1"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "श्रीभगवानुवाच / अभयं सत्त्वसंशुद्धिः ज्ञानयोगव्यवस्थितिः । / दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम् ॥ / अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम् । / दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम् ॥",
+      "śrī bhagavān uvāca | / abhayaṃ sattva-saṃśuddhir jñāna-yoga-vyavasthitiḥ | / dānaṃ damaś ca yajñaś ca svādhyāyas tapa ārjavam || / ahiṃsā satyam akrodhas tyāgaḥ śāntir apaiśunam | / dayā bhūteṣv aloluptvaṃ mārdavaṃ hrīr acāpalam ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16#verse-16.1"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16#verse-16.3",
+    "text": "Splendour, forgiveness, steadiness, purity, absence of hostility, absence of pride — these belong to the one born into the divine wealth, Arjuna.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 16, Verse 3"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता । / भवन्ति सम्पदं दैवीमभिजातस्य भारत ॥",
+      "tejaḥ kṣamā dhṛtiḥ śaucam adroho nātimānitā | / bhavanti sampadaṃ daivīm abhijātasya bhārata ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16#verse-16.3"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16#verse-16.5",
+    "text": "The divine wealth leads to liberation; the demonic to bondage. Do not grieve, Arjuna — you are born into the divine wealth.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 16, Verse 5"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता । / मा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव ॥",
+      "daivī sampad vimokṣāya nibandhāyāsurī matā | / mā śucaḥ sampadaṃ daivīm abhijāto'si pāṇḍava ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16#verse-16.5"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16#verse-16.21",
+    "text": "Three are the gates of ruin, the destroyers of the self: desire, anger, and greed. Therefore, abandon these three.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 16, Verse 21"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः । / कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत् ॥",
+      "tri-vidhaṃ narakasyedaṃ dvāraṃ nāśanam ātmanaḥ | / kāmaḥ krodhas tathā lobhas tasmād etat trayaṃ tyajet ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16#verse-16.21"
   }
 ]
 
@@ -501,6 +663,7 @@ export default function ChapterPage16() {
             <li><a href="#standard">The closing — a standard higher than impulse</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -1036,6 +1199,33 @@ export default function ChapterPage16() {
             <div className="faq-a">
               Verse 16.24 says that <em>śāstra</em> — the sacred teaching — should be the standard for deciding what should be done and what should not. The verse is not authoritarian. It is making a structural point: impulse alone is unreliable, because impulse is precisely what the previous twenty verses described as captured by desire, anger, and greed. You need a reference point outside the impulse — the accumulated wisdom of the tradition, a wise teacher, or your own deepest values when not in the grip of reactivity.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-anxiety-mental-peace" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">What the Gita says about anger, fear and ego</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Karma — what it actually means in the Gita</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-14" className="related-card">
+            <div className="related-card-label">Chapter 14</div>
+            <div className="related-card-title">Gunatraya Vibhaga — The Three Forces</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-17" className="related-card">
+            <div className="related-card-label">Chapter 17</div>
+            <div className="related-card-title">Shraddhatraya Vibhaga — You Are What You Trust</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-6" className="related-card">
+            <div className="related-card-label">Chapter 6</div>
+            <div className="related-card-title">Dhyana Yoga — The Lamp That Does Not Flicker</div>
+          </a>
           </div>
         </div>
 

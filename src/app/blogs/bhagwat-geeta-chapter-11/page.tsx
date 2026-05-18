@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 11 — Vishwarupa Darshana Yoga: The Vision That Cannot Be Looked At | Wisdom",
-  description: "An honest reading of Bhagavad Gita Chapter 11 (Adhyay 11) — 55 verses on the cosmic form. The thousand suns (11.12), 'I am Time, the destroyer of worlds' (11.32), 'become an instrument' (11.33), and the final, gentler reveal — devotion is the only seeing that lasts.",
-  keywords: "bhagwat geeta chapter 11, bhagavad gita vishwarupa darshana yoga, bhagwat geeta adhyay 11, kaloasmi loka kshaya krit pravriddho, thousand suns gita, cosmic form bhagavad gita, I am time the destroyer of worlds, nimitta matram bhava",
+  title: "Bhagavad Gita Chapter 11 (Vishwarupa Yoga) — Summary",
+  description: "Bhagavad Gita Chapter 11 — Vishwarupa Darshana Yoga. All 55 verses on the cosmic form, the thousand suns, and 'I am Time, the destroyer of worlds.'",
+  keywords: "bhagwat geeta chapter 11, bhagavad gita vishwarupa darshana yoga, bhagwat geeta adhyay 11, kaloasmi loka kshaya krit pravriddho, thousand suns gita, cosmic form bhagavad gita, I am time the destroyer of worlds, nimitta matram bhava, Vishwarupa Darshana Yoga meaning, Bhagavad Gita 11.12 thousand suns, Bhagavad Gita 11.32 kalo asmi loka kshaya krit, I am Time the destroyer of worlds meaning, Bhagavad Gita 11.33 nimitta matram bhava, Krishna cosmic form Bhagavad Gita, Oppenheimer Bhagavad Gita quote",
   openGraph: {
-    title: "Bhagavad Gita Chapter 11 — Vishwarupa Darshana Yoga: The Vision",
-    description: "Arjuna asked to see. Krishna gave him what he asked for. The cosmic form. The thousand suns. Time, the destroyer.",
+    title: "Bhagavad Gita Chapter 11 (Vishwarupa Darshana) — All Verses",
+    description: "Bhagavad Gita Chapter 11 — the cosmic vision. A thousand suns. 'I am Time, the destroyer of worlds.' (11.32)",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter11.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter11.webp", width: 1200, height: 675, alt: "The cosmic form revealed — a vast, blinding vision that exceeds the human eye. Chapter 11 of the Bhagavad Gita, Vishwarupa Darshana Yoga, contains the most famous theophany in any scripture." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 11 — Vishwarupa Darshana Yoga",
-    description: "Arjuna asked to see. Krishna gave him what he asked for. The cosmic form. The thousand suns. Time, the destroyer.",
+    title: "Bhagavad Gita Chapter 11 (Vishwarupa Darshana) — All Verses",
+    description: "Bhagavad Gita Chapter 11 — the cosmic vision. A thousand suns. 'I am Time, the destroyer of worlds.' (11.32)",
     images: ["https://wisdomquotes.in/assets/chapter11.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 11 — Vishwarupa Darshana Yoga: The Vision That Cannot Be Looked At",
-    "description": "An honest reading of Bhagavad Gita Chapter 11 (Adhyay 11) — 55 verses on the cosmic form. The thousand suns (11.12), 'I am Time, the destroyer of worlds' (11.32), 'become an instrument' (11.33), and the final, gentler reveal — devotion is the only seeing that lasts.",
+    "description": "Bhagavad Gita Chapter 11 — Vishwarupa Darshana Yoga. All 55 verses on the cosmic form, the thousand suns, and 'I am Time, the destroyer of worlds.'",
+    "alternativeHeadline": "Bhagavad Gita Chapter 11 (Vishwarupa Darshana) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 11, bhagavad gita vishwarupa darshana yoga, bhagwat geeta adhyay 11, kaloasmi loka kshaya krit pravriddho, thousand suns gita, cosmic form bhagavad gita, I am time the destroyer of worlds, nimitta matram bhava"
+    ],
+    "keywords": "bhagwat geeta chapter 11, bhagavad gita vishwarupa darshana yoga, bhagwat geeta adhyay 11, kaloasmi loka kshaya krit pravriddho, thousand suns gita, cosmic form bhagavad gita, I am time the destroyer of worlds, nimitta matram bhava, Vishwarupa Darshana Yoga meaning, Bhagavad Gita 11.12 thousand suns, Bhagavad Gita 11.32 kalo asmi loka kshaya krit, I am Time the destroyer of worlds meaning, Bhagavad Gita 11.33 nimitta matram bhava, Krishna cosmic form Bhagavad Gita, Oppenheimer Bhagavad Gita quote",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2783,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,141 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11#verse-11.12",
+    "text": "If a thousand suns were to rise at once in the sky, their light might begin to compare with the radiance of that Great Self.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Arjuna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Arjuna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 11, Verse 12"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता । / यदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः ॥",
+      "divi sūrya-sahasrasya bhaved yugapad-utthitā | / yadi bhāḥ sadṛśī sā syād bhāsas tasya mahātmanaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11#verse-11.12"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11#verse-11.32",
+    "text": "The Blessed One said: I am Time, grown mighty, destroyer of worlds, here to consume beings. Even without you, none of these warriors arrayed against you will survive.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 11, Verse 32"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "श्रीभगवानुवाच / कालोऽस्मि लोकक्षयकृत्प्रवृद्धोलोकान्समाहर्तुमिह प्रवृत्तः । / ऋतेऽपि त्वां न भविष्यन्ति सर्वेयेऽवस्थिताः प्रत्यनीकेषु योधाः ॥",
+      "śrī bhagavān uvāca | / kālo'smi loka-kṣaya-kṛt pravṛddho lokān samāhartum iha pravṛttaḥ | / ṛte'pi tvāṃ na bhaviṣyanti sarve ye'vasthitāḥ pratyanīkeṣu yodhāḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11#verse-11.32"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11#verse-11.33",
+    "text": "Therefore — rise. Win fame. Conquer the foes and enjoy a flourishing kingdom. They have already been slain by me. Become only the instrument, Arjuna.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 11, Verse 33"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "तस्मात्त्वमुत्तिष्ठ यशो लभस्वजित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम् । / मयैवैते निहताः पूर्वमेवनिमित्तमात्रं भव सव्यसाचिन् ॥",
+      "tasmāt tvam uttiṣṭha yaśo labhasva jitvā śatrūn bhuṅkṣva rājyaṃ samṛddham | / mayaivaite nihatāḥ pūrvam eva nimitta-mātraṃ bhava savya-sācin ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11#verse-11.33"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11#verse-11.53",
+    "text": "Not by the Vedas, not by austerity, not by charity, not by ritual sacrifice can I be seen in this form as you have just seen me.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 11, Verse 53"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "नाहं वेदैर्न तपसा न दानेन न चेज्यया । / शक्य एवंविधो द्रष्टुं दृष्टवानसि मां यथा ॥",
+      "nāhaṃ vedair na tapasā na dānena na cejyayā | / śakya evaṃ-vidho draṣṭuṃ dṛṣṭavān asi māṃ yathā ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11#verse-11.53"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11#verse-11.55",
+    "text": "The one who works for me, takes me as the supreme, is devoted to me, is free from attachment, and bears no hostility toward any being — that one comes to me, Pandava.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 11, Verse 55"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः । / निर्वैरः सर्वभूतेषु यः स मामेति पाण्डव ॥",
+      "mat-karma-kṛn mat-paramo mad-bhaktaḥ saṅga-varjitaḥ | / nirvairaḥ sarva-bhūteṣu yaḥ sa mām eti pāṇḍava ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11#verse-11.55"
   }
 ]
 
@@ -501,6 +690,7 @@ export default function ChapterPage11() {
             <li><a href="#devotion">The chapter's gentle ending — only devotion sees this</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -1074,6 +1264,33 @@ export default function ChapterPage11() {
             <div className="faq-a">
               After the cosmic vision, in verses 11.41-44, Arjuna apologises for having treated Krishna with casual familiarity — calling him by name, joking with him, eating with him — without realising who he truly was. He asks Krishna to forgive him as a father forgives a son, as a friend forgives a friend, as a lover forgives a beloved. The teaching is that real reverence does not destroy relationship; the friendship was always real, and the cosmic vision only enlarged what it had been holding all along.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-anxiety-mental-peace" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">What the Gita says about fear, death and impermanence</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">The Gita as a story — the climax</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-10" className="related-card">
+            <div className="related-card-label">Chapter 10</div>
+            <div className="related-card-title">Vibhuti Yoga — Sparks of the Divine</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-12" className="related-card">
+            <div className="related-card-label">Chapter 12</div>
+            <div className="related-card-title">Bhakti Yoga — How a Devotee Actually Lives</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-15" className="related-card">
+            <div className="related-card-label">Chapter 15</div>
+            <div className="related-card-title">Purushottama Yoga — Cut the Tree, Find the Source</div>
+          </a>
           </div>
         </div>
 

@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga: The Field and the Knower | Wisdom",
-  description: "An opinionated reading of Bhagavad Gita Chapter 13 (Adhyay 13) — 35 verses on the field and the knower of the field. The body as field (13.2), the qualities of true knowledge (13.8), the supreme that is everywhere (13.16), and seeing oneself as non-doer (13.30).",
-  keywords: "bhagwat geeta chapter 13, bhagavad gita kshetra kshetrajna yoga, bhagwat geeta adhyay 13, field and knower of the field, qualities of knowledge gita, purusha prakriti gita, non-doer self gita, 13.8 amanitvam adambhitvam",
+  title: "Bhagavad Gita Chapter 13 (Kshetra Kshetrajna) — Summary",
+  description: "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga. All 35 verses on the field and the knower, with Sanskrit, meaning, and modern relevance.",
+  keywords: "bhagwat geeta chapter 13, bhagavad gita kshetra kshetrajna yoga, bhagwat geeta adhyay 13, field and knower of the field, qualities of knowledge gita, purusha prakriti gita, non-doer self gita, 13.8 amanitvam adambhitvam, Kshetra Kshetrajna Vibhaga Yoga meaning, field and knower of the field Bhagavad Gita, Bhagavad Gita 13.8 amanitvam adambhitvam, Bhagavad Gita 13.30 prakrtyaiva ca karmani, purusha prakriti Bhagavad Gita, self as witness Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga: The Field and the Knower",
-    description: "The chapter that separates the seer from the seen. Body, reactions, thoughts — all observed by something that is not them.",
+    title: "Bhagavad Gita Chapter 13 (Field & Knower) — All Verses",
+    description: "Bhagavad Gita Chapter 13 — the field and the knower of the field. The Gita's foundational psychology of self-awareness.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter13.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter13.webp", width: 1200, height: 675, alt: "The field and the knower of the field — a meditator observing the play of body, sensation, and thought without being captured by it. Chapter 13 of the Bhagavad Gita." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga",
-    description: "The chapter that separates the seer from the seen. Body, reactions, thoughts — all observed by something that is not them.",
+    title: "Bhagavad Gita Chapter 13 (Field & Knower) — All Verses",
+    description: "Bhagavad Gita Chapter 13 — the field and the knower of the field. The Gita's foundational psychology of self-awareness.",
     images: ["https://wisdomquotes.in/assets/chapter13.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga: The Field and the Knower",
-    "description": "An opinionated reading of Bhagavad Gita Chapter 13 (Adhyay 13) — 35 verses on the field and the knower of the field. The body as field (13.2), the qualities of true knowledge (13.8), the supreme that is everywhere (13.16), and seeing oneself as non-doer (13.30).",
+    "description": "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga. All 35 verses on the field and the knower, with Sanskrit, meaning, and modern relevance.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 13 (Field & Knower) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 13, bhagavad gita kshetra kshetrajna yoga, bhagwat geeta adhyay 13, field and knower of the field, qualities of knowledge gita, purusha prakriti gita, non-doer self gita, 13.8 amanitvam adambhitvam"
+    ],
+    "keywords": "bhagwat geeta chapter 13, bhagavad gita kshetra kshetrajna yoga, bhagwat geeta adhyay 13, field and knower of the field, qualities of knowledge gita, purusha prakriti gita, non-doer self gita, 13.8 amanitvam adambhitvam, Kshetra Kshetrajna Vibhaga Yoga meaning, field and knower of the field Bhagavad Gita, Bhagavad Gita 13.8 amanitvam adambhitvam, Bhagavad Gita 13.30 prakrtyaiva ca karmani, purusha prakriti Bhagavad Gita, self as witness Bhagavad Gita",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2840,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,168 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.2",
+    "text": "The Blessed One said: this body, Arjuna, is called the field. The one who knows it — the knowers call the knower of the field.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 13, Verse 2"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "श्रीभगवानुवाच / इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते । / एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः ॥",
+      "śrī bhagavān uvāca | / idaṃ śarīraṃ kaunteya kṣetram ity abhidhīyate | / etad yo vetti taṃ prāhuḥ kṣetrajña iti tad-vidaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.2"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.7",
+    "text": "Desire, aversion, pleasure, pain, the body, consciousness, steadiness — this field, with its modifications, is briefly described.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 13, Verse 7"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः । / एतत्क्षेत्रं समासेन सविकारमुदाहृतम् ॥",
+      "icchā dveṣaḥ sukhaṃ duḥkhaṃ saṅghātaś cetanā dhṛtiḥ | / etat kṣetraṃ samāsena sa-vikāram udāhṛtam ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.7"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.8",
+    "text": "Absence of pride, absence of pretence, non-violence, patience, simplicity, service to the teacher, cleanliness, steadiness, self-control.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 13, Verse 8"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् । / आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः ॥",
+      "amānitvam adambhitvam ahiṃsā kṣāntir ārjavam | / ācāryopāsanaṃ śaucaṃ sthairyam ātma-vinigrahaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.8"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.16",
+    "text": "Outside and within all beings, unmoving and moving, too subtle to be known — that supreme is both far away and near at hand.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 13, Verse 16"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "बहिरन्तश्च भूतानामचरं चरमेव च । / सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् ॥",
+      "bahir antaś ca bhūtānām acaraṃ caram eva ca | / sūkṣmatvāt tad avijñeyaṃ dūra-sthaṃ cāntike ca tat ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.16"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.30",
+    "text": "The one who sees that all actions are performed by nature alone, and sees the self as the non-doer — that one sees truly.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 13, Verse 30"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः । / यः पश्यति तथाऽऽत्मानमकर्तारं स पश्यति ॥",
+      "prakṛtyaiva ca karmāṇi kriyamāṇāni sarvaśaḥ | / yaḥ paśyati tathātmānam akartāraṃ sa paśyati ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.30"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.34",
+    "text": "As one sun illuminates this whole world, so the knower of the field illuminates the entire field, Arjuna.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 13, Verse 34"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः । / क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत ॥",
+      "yathā prakāśayaty ekaḥ kṛtsnaṃ lokam imaṃ raviḥ | / kṣetraṃ kṣetrī tathā kṛtsnaṃ prakāśayati bhārata ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13#verse-13.34"
   }
 ]
 
@@ -501,6 +717,7 @@ export default function ChapterPage13() {
             <li><a href="#sun-image">The awareness that lights everything — 13.34</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -1017,6 +1234,33 @@ export default function ChapterPage13() {
             <div className="faq-a">
               Verse 13.34 says, 'As one sun illuminates the whole world, so the knower of the field illuminates the entire field.' The image condenses the chapter into one comparison. The sun is not affected by what it lights — dust does not make it dusty, cold does not make it cold. The same is true of awareness: it lights up everything in the field of experience, but is not stained by what it observes. Grief is fully seen; the awareness seeing it remains as it was.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-anxiety-mental-peace" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">What the Gita says about anxiety & mental peace</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-for-beginners" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Bhagavad Gita for beginners</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-14" className="related-card">
+            <div className="related-card-label">Chapter 14</div>
+            <div className="related-card-title">Gunatraya Vibhaga — The Three Forces</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-15" className="related-card">
+            <div className="related-card-label">Chapter 15</div>
+            <div className="related-card-title">Purushottama Yoga — Cut the Tree, Find the Source</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-6" className="related-card">
+            <div className="related-card-label">Chapter 6</div>
+            <div className="related-card-title">Dhyana Yoga — The Lamp That Does Not Flicker</div>
+          </a>
           </div>
         </div>
 

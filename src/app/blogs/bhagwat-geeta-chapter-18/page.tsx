@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 18 — Moksha Sannyasa Yoga: The Final Teaching | Wisdom",
-  description: "An opinionated reading of Bhagavad Gita Chapter 18 (Adhyay 18) — 78 verses on the final teaching. What renunciation means (18.2), the five causes of action (18.14), 'your own duty over another's' (18.47), 'fix the mind on me' (18.65), and the most secret verse of the Gita — 18.66.",
-  keywords: "bhagwat geeta chapter 18, bhagavad gita moksha sannyasa yoga, bhagwat geeta adhyay 18, sarva dharman parityajya, man mana bhava mad bhakto, swadharma gita, five causes of action, charama shloka gita",
+  title: "Bhagavad Gita Chapter 18 (Moksha Sannyasa) — Summary",
+  description: "Bhagavad Gita Chapter 18 — Moksha Sannyasa Yoga. All 78 verses including 'sarva-dharman parityajya' (18.66) and the final teaching of liberation.",
+  keywords: "bhagwat geeta chapter 18, bhagavad gita moksha sannyasa yoga, bhagwat geeta adhyay 18, sarva dharman parityajya, man mana bhava mad bhakto, swadharma gita, five causes of action, charama shloka gita, Moksha Sannyasa Yoga meaning, Bhagavad Gita 18.66 sarva dharman parityajya, Bhagavad Gita 18.65 man mana bhava mad bhakto, Bhagavad Gita 18.47 sva dharma, five causes of action Bhagavad Gita, charama shloka Bhagavad Gita, Bhagavad Gita conclusion summary",
   openGraph: {
-    title: "Bhagavad Gita Chapter 18 — Moksha Sannyasa Yoga: The Final Teaching",
-    description: "The longest chapter. The final word. Abandon every duty, take refuge — and the promise that ends the Gita.",
+    title: "Bhagavad Gita Chapter 18 (The Final Chapter) — All Verses",
+    description: "Bhagavad Gita Chapter 18 — the longest chapter, the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter18.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter18.webp", width: 1200, height: 675, alt: "Krishna and Arjuna at the conclusion of the teaching — confusion gone, doubt cleared, the chariot ready to move. Chapter 18 of the Bhagavad Gita, Moksha Sannyasa Yoga, is the longest and final chapter." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 18 — Moksha Sannyasa Yoga",
-    description: "The longest chapter. The final word. Abandon every duty, take refuge — and the promise that ends the Gita.",
+    title: "Bhagavad Gita Chapter 18 (The Final Chapter) — All Verses",
+    description: "Bhagavad Gita Chapter 18 — the longest chapter, the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
     images: ["https://wisdomquotes.in/assets/chapter18.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 18 — Moksha Sannyasa Yoga: The Final Teaching",
-    "description": "An opinionated reading of Bhagavad Gita Chapter 18 (Adhyay 18) — 78 verses on the final teaching. What renunciation means (18.2), the five causes of action (18.14), 'your own duty over another's' (18.47), 'fix the mind on me' (18.65), and the most secret verse of the Gita — 18.66.",
+    "description": "Bhagavad Gita Chapter 18 — Moksha Sannyasa Yoga. All 78 verses including 'sarva-dharman parityajya' (18.66) and the final teaching of liberation.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 18 (The Final Chapter) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 18, bhagavad gita moksha sannyasa yoga, bhagwat geeta adhyay 18, sarva dharman parityajya, man mana bhava mad bhakto, swadharma gita, five causes of action, charama shloka gita"
+    ],
+    "keywords": "bhagwat geeta chapter 18, bhagavad gita moksha sannyasa yoga, bhagwat geeta adhyay 18, sarva dharman parityajya, man mana bhava mad bhakto, swadharma gita, five causes of action, charama shloka gita, Moksha Sannyasa Yoga meaning, Bhagavad Gita 18.66 sarva dharman parityajya, Bhagavad Gita 18.65 man mana bhava mad bhakto, Bhagavad Gita 18.47 sva dharma, five causes of action Bhagavad Gita, charama shloka Bhagavad Gita, Bhagavad Gita conclusion summary",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 3614,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,222 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.2",
+    "text": "The wise call renunciation the giving up of actions driven by desire. The discerning call letting-go the giving up of the fruits of all actions.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 18, Verse 2"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "श्रीभगवानुवाच / काम्यानां कर्मणां न्यासं संन्यासं कवयो विदुः । / सर्वकर्मफलत्यागं प्राहुस्त्यागं विचक्षणाः ॥",
+      "śrī bhagavān uvāca | / kāmyānāṃ karmaṇāṃ nyāsaṃ sannyāsaṃ kavayo viduḥ | / sarva-karma-phala-tyāgaṃ prāhus tyāgaṃ vicakṣaṇāḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.2"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.14",
+    "text": "The field, the doer, the various instruments, the many different efforts, and the fifth — the unseen — together produce any action.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 18, Verse 14"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अधिष्ठानं तथा कर्ता करणं च पृथग्विधम् । / विविधाश्च पृथक्चेष्टा दैवं चैवात्र पञ्चमम् ॥",
+      "adhiṣṭhānaṃ tathā kartā karaṇaṃ ca pṛthag-vidham | / vividhāś ca pṛthak ceṣṭā daivaṃ caivātra pañcamam ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.14"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.47",
+    "text": "One's own dharma, even when imperfect, is better than another's dharma well performed. The work set by one's own nature, performed, does not incur wrongdoing.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 18, Verse 47"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । / स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+      "śreyān sva-dharmo viguṇaḥ para-dharmāt sv-anuṣṭhitāt | / svabhāva-niyataṃ karma kurvan nāpnoti kilbiṣam ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.47"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.55",
+    "text": "Through devotion, one truly knows me as I am. Then, knowing me in truth, one enters into me at once.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 18, Verse 55"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "भक्त्या मामभिजानाति यावान्यश्चास्मि तत्त्वतः । / ततो मां तत्त्वतो ज्ञात्वा विशते तदनन्तरम् ॥",
+      "bhaktyā mām abhijānāti yāvān yaś cāsmi tattvataḥ | / tato māṃ tattvato jñātvā viśate tad-anantaram ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.55"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.61",
+    "text": "The Lord dwells in the heart of all beings, Arjuna, causing all beings, mounted on the machine of the body, to revolve through māyā.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 18, Verse 61"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति । / भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया ॥",
+      "īśvaraḥ sarva-bhūtānāṃ hṛd-deśe'rjuna tiṣṭhati | / bhrāmayan sarva-bhūtāni yantrārūḍhāni māyayā ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.61"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.65",
+    "text": "Fix your mind on me, be devoted to me, worship me, bow to me. You will come to me — I promise you this truly, for you are dear to me.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 18, Verse 65"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु । / मामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे ॥",
+      "man-manā bhava mad-bhakto mad-yājī māṃ namaskuru | / mām evaiṣyasi satyaṃ te pratijāne priyo'si me ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.65"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.66",
+    "text": "Abandon all duties and take refuge in me alone. I will free you from all wrongdoing. Do not grieve.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 18, Verse 66"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । / अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥",
+      "sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja | / ahaṃ tvā sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.66"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.78",
+    "text": "Where Krishna, the master of yoga, is present, and where Arjuna, the bow-bearer, is — there are prosperity, victory, glory, and firm justice. This is my conviction.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Sanjaya"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Sanjaya"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 18, Verse 78"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः । / तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम ॥",
+      "yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanur-dharaḥ | / tatra śrīr vijayo bhūtir dhruvā nītir matir mama ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18#verse-18.78"
   }
 ]
 
@@ -504,6 +774,7 @@ export default function ChapterPage18() {
             <li><a href="#sanjaya-closes">Sanjaya's final word — 18.78</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -1217,6 +1488,37 @@ export default function ChapterPage18() {
             <div className="faq-a">
               The Gita ends with verse 18.78, spoken by Sanjaya, the narrator: 'Where Krishna, the master of yoga, is present, and where Arjuna, the bow-bearer, is present — there is prosperity, victory, glory, and firm justice. This is my conviction.' The verse is a benediction. The book closes not with the war's outcome but with the assurance that, when the wisdom of the Divine and the willingness of the seeker are joined, the right outcome is already secured.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">All 18 chapters — the full arc</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-for-beginners" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Bhagavad Gita for beginners</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Karma — what it actually means in the Gita</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-17" className="related-card">
+            <div className="related-card-label">Chapter 17</div>
+            <div className="related-card-title">Shraddhatraya Vibhaga — You Are What You Trust</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-12" className="related-card">
+            <div className="related-card-label">Chapter 12</div>
+            <div className="related-card-title">Bhakti Yoga — How a Devotee Actually Lives</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-9" className="related-card">
+            <div className="related-card-label">Chapter 9</div>
+            <div className="related-card-title">Raja Vidya Raja Guhya Yoga — The Royal Secret</div>
+          </a>
           </div>
         </div>
 

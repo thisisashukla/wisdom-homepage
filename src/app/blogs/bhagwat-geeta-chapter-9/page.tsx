@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 9 — Raja Vidya Raja Guhya Yoga: The Royal Secret | Wisdom",
-  description: "An opinionated reading of Bhagavad Gita Chapter 9 (Adhyay 9) — 34 verses on the royal secret of devotion. Pure and easy to practice, the leaf-flower-fruit-water teaching (9.26), the most flawed devotee (9.30), and 'my devotee never perishes' (9.31).",
-  keywords: "bhagwat geeta chapter 9, bhagavad gita raja vidya raja guhya yoga, bhagwat geeta adhyay 9, patram pushpam phalam toyam, my devotee never perishes, 9.22 yogakshemam vahamyaham, sudurachara gita, easy bhakti gita",
+  title: "Bhagavad Gita Chapter 9 (Raja Vidya Yoga) — Summary",
+  description: "Bhagavad Gita Chapter 9 — Raja Vidya Raja Guhya Yoga. All 34 verses on the king of knowledge, leaf-flower-fruit-water, and 'my devotee never perishes.'",
+  keywords: "bhagwat geeta chapter 9, bhagavad gita raja vidya raja guhya yoga, bhagwat geeta adhyay 9, patram pushpam phalam toyam, my devotee never perishes, 9.22 yogakshemam vahamyaham, sudurachara gita, easy bhakti gita, Raja Vidya Raja Guhya Yoga meaning, patram pushpam phalam toyam meaning, Bhagavad Gita 9.22 yoga kshema vahamy aham, Bhagavad Gita 9.30 sudurachara meaning, my devotee never perishes Bhagavad Gita, sarva dharman parityajya mam ekam",
   openGraph: {
-    title: "Bhagavad Gita Chapter 9 — Raja Vidya Raja Guhya Yoga: The Royal Secret",
-    description: "The chapter where Krishna pulls the curtain back. The simplest offering — leaf, flower, fruit, water. The devotee who never perishes.",
+    title: "Bhagavad Gita Chapter 9 (Raja Vidya Raja Guhya) — All Verses",
+    description: "Bhagavad Gita Chapter 9 — the royal secret. Leaf, flower, fruit, water. And 'my devotee never perishes' (9.31).",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter9.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter9.webp", width: 1200, height: 675, alt: "A simple offering — leaf, flower, fruit, water — held with devotion. Chapter 9 of the Bhagavad Gita, Raja Vidya Raja Guhya Yoga, teaches that the highest knowledge is also the most accessible." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 9 — Raja Vidya Raja Guhya Yoga",
-    description: "The chapter where Krishna pulls the curtain back. The simplest offering — leaf, flower, fruit, water. The devotee who never perishes.",
+    title: "Bhagavad Gita Chapter 9 (Raja Vidya Raja Guhya) — All Verses",
+    description: "Bhagavad Gita Chapter 9 — the royal secret. Leaf, flower, fruit, water. And 'my devotee never perishes' (9.31).",
     images: ["https://wisdomquotes.in/assets/chapter9.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 9 — Raja Vidya Raja Guhya Yoga: The Royal Secret",
-    "description": "An opinionated reading of Bhagavad Gita Chapter 9 (Adhyay 9) — 34 verses on the royal secret of devotion. Pure and easy to practice, the leaf-flower-fruit-water teaching (9.26), the most flawed devotee (9.30), and 'my devotee never perishes' (9.31).",
+    "description": "Bhagavad Gita Chapter 9 — Raja Vidya Raja Guhya Yoga. All 34 verses on the king of knowledge, leaf-flower-fruit-water, and 'my devotee never perishes.'",
+    "alternativeHeadline": "Bhagavad Gita Chapter 9 (Raja Vidya Raja Guhya) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 9, bhagavad gita raja vidya raja guhya yoga, bhagwat geeta adhyay 9, patram pushpam phalam toyam, my devotee never perishes, 9.22 yogakshemam vahamyaham, sudurachara gita, easy bhakti gita"
+    ],
+    "keywords": "bhagwat geeta chapter 9, bhagavad gita raja vidya raja guhya yoga, bhagwat geeta adhyay 9, patram pushpam phalam toyam, my devotee never perishes, 9.22 yogakshemam vahamyaham, sudurachara gita, easy bhakti gita, Raja Vidya Raja Guhya Yoga meaning, patram pushpam phalam toyam meaning, Bhagavad Gita 9.22 yoga kshema vahamy aham, Bhagavad Gita 9.30 sudurachara meaning, my devotee never perishes Bhagavad Gita, sarva dharman parityajya mam ekam",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2942,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,168 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.2",
+    "text": "This is the king of knowledge, the king of secrets, supremely pure. It is directly knowable, in accord with dharma, supremely easy to practice, and imperishable.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 9, Verse 2"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "राजविद्या राजगुह्यं पवित्रमिदमुत्तमम् । / प्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम् ॥",
+      "rāja-vidyā rāja-guhyaṃ pavitram idam uttamam | / pratyakṣāvagamaṃ dharmyaṃ susukhaṃ kartum avyayam ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.2"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.22",
+    "text": "For those whose minds are wholly on me, who worship me always — those who are constantly united with me — I bear their yoga and kshema. I bring them what they lack; I preserve what they have.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 9, Verse 22"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । / तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥",
+      "ananyāś cintayanto māṃ ye janāḥ paryupāsate | / teṣāṃ nityābhiyuktānāṃ yoga-kṣemaṃ vahāmy aham ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.22"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.26",
+    "text": "Whoever offers me a leaf, a flower, a fruit, or water with devotion — I accept that devoted offering from one whose heart is pure.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 9, Verse 26"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति । / तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥",
+      "patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati | / tad ahaṃ bhakty-upahṛtam aśnāmi prayatātmanaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.26"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.27",
+    "text": "Whatever you do, whatever you eat, whatever you offer, whatever you give, whatever discipline you practice — Arjuna, do it as an offering to me.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 9, Verse 27"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "यत्करोषि यदश्नासि यज्जुहोषि ददासि यत् । / यत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम् ॥",
+      "yat karoṣi yad aśnāsi yaj juhoṣi dadāsi yat | / yat tapasyasi kaunteya tat kuruṣva mad-arpaṇam ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.27"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.31",
+    "text": "Such a person quickly becomes a soul of dharma and attains lasting peace. Arjuna, declare it openly — my devotee never perishes.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 9, Verse 31"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति । / कौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति ॥",
+      "kṣipraṃ bhavati dharmātmā śaśvac-chāntiṃ nigacchati | / kaunteya pratijānīhi na me bhaktaḥ praṇaśyati ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.31"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.34",
+    "text": "Fix your mind on me, be devoted to me, worship me, bow to me. United with me in this way, fully oriented toward me, you will come to me.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 9, Verse 34"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु । / मामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः ॥",
+      "man-manā bhava mad-bhakto mad-yājī māṃ namaskuru | / mām evaiṣyasi yuktvaivam ātmānaṃ mat-parāyaṇaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.34"
   }
 ]
 
@@ -502,6 +718,7 @@ export default function ChapterPage9() {
             <li><a href="#man-mana">Fix the mind on me — the chapter's final word</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -1073,6 +1290,33 @@ export default function ChapterPage9() {
             <div className="faq-a">
               Verse 9.34 — <em>man-manā bhava mad-bhakto mad-yājī māṃ namaskuru</em> — gives four imperatives that cover thought, feeling, action, and posture. Fix the mind on me. Be devoted to me. Worship me. Bow to me. The Gita repeats this verse, nearly word-for-word, at 18.65, making it the book's signature closing instruction. The teaching is about total orientation — when attention, love, action, and respect all point one way, the path is already being walked.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Karma — what it actually means in the Gita</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-anxiety-mental-peace" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">What the Gita says about anxiety</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-7" className="related-card">
+            <div className="related-card-label">Chapter 7</div>
+            <div className="related-card-title">Jnana Vijnana Yoga — Knowing About vs. Knowing Through</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-10" className="related-card">
+            <div className="related-card-label">Chapter 10</div>
+            <div className="related-card-title">Vibhuti Yoga — Sparks of the Divine</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-12" className="related-card">
+            <div className="related-card-label">Chapter 12</div>
+            <div className="related-card-title">Bhakti Yoga — How a Devotee Actually Lives</div>
+          </a>
           </div>
         </div>
 

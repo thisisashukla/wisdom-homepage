@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 10 — Vibhuti Yoga: Sparks of the Divine | Wisdom",
-  description: "An opinionated reading of Bhagavad Gita Chapter 10 (Adhyay 10) — 42 verses on divine manifestations. The source of all (10.8), the lamp of knowledge inside (10.11), 'I am the Self in the heart of all beings' (10.20), and the closing verse — the universe held by a single fragment (10.42).",
-  keywords: "bhagwat geeta chapter 10, bhagavad gita vibhuti yoga, bhagwat geeta adhyay 10, ekamshena sthito jagat, aham atma gudakesha, lamp of knowledge gita, sparks of divine bhagavad gita, divine manifestations gita",
+  title: "Bhagavad Gita Chapter 10 (Vibhuti Yoga) — Summary",
+  description: "Bhagavad Gita Chapter 10 — Vibhuti Yoga. All 42 verses on divine manifestations, sparks of the Divine, and the universe held in a single fragment.",
+  keywords: "bhagwat geeta chapter 10, bhagavad gita vibhuti yoga, bhagwat geeta adhyay 10, ekamshena sthito jagat, aham atma gudakesha, lamp of knowledge gita, sparks of divine bhagavad gita, divine manifestations gita, Vibhuti Yoga meaning, Bhagavad Gita 10.20 aham atma gudakesha, Bhagavad Gita 10.41 vibhutimat sattvam, Bhagavad Gita 10.42 ekamshena sthito jagat, what are vibhutis in Bhagavad Gita, divine manifestations Krishna",
   openGraph: {
-    title: "Bhagavad Gita Chapter 10 — Vibhuti Yoga: Sparks of the Divine",
-    description: "Every form of greatness in creation is a fragment of one source. The lamp inside. The Self at the heart of everything.",
+    title: "Bhagavad Gita Chapter 10 (Vibhuti Yoga) — All Verses",
+    description: "Bhagavad Gita Chapter 10 — sparks of the Divine. Where to look for God in everything that shines.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter10.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter10.webp", width: 1200, height: 675, alt: "Sparks of divine radiance scattered across the manifest world — Chapter 10 of the Bhagavad Gita, Vibhuti Yoga, teaches that every form of greatness in creation is a fragment of one source." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 10 — Vibhuti Yoga",
-    description: "Every form of greatness in creation is a fragment of one source. The lamp inside. The Self at the heart of everything.",
+    title: "Bhagavad Gita Chapter 10 (Vibhuti Yoga) — All Verses",
+    description: "Bhagavad Gita Chapter 10 — sparks of the Divine. Where to look for God in everything that shines.",
     images: ["https://wisdomquotes.in/assets/chapter10.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 10 — Vibhuti Yoga: Sparks of the Divine",
-    "description": "An opinionated reading of Bhagavad Gita Chapter 10 (Adhyay 10) — 42 verses on divine manifestations. The source of all (10.8), the lamp of knowledge inside (10.11), 'I am the Self in the heart of all beings' (10.20), and the closing verse — the universe held by a single fragment (10.42).",
+    "description": "Bhagavad Gita Chapter 10 — Vibhuti Yoga. All 42 verses on divine manifestations, sparks of the Divine, and the universe held in a single fragment.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 10 (Vibhuti Yoga) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 10, bhagavad gita vibhuti yoga, bhagwat geeta adhyay 10, ekamshena sthito jagat, aham atma gudakesha, lamp of knowledge gita, sparks of divine bhagavad gita, divine manifestations gita"
+    ],
+    "keywords": "bhagwat geeta chapter 10, bhagavad gita vibhuti yoga, bhagwat geeta adhyay 10, ekamshena sthito jagat, aham atma gudakesha, lamp of knowledge gita, sparks of divine bhagavad gita, divine manifestations gita, Vibhuti Yoga meaning, Bhagavad Gita 10.20 aham atma gudakesha, Bhagavad Gita 10.41 vibhutimat sattvam, Bhagavad Gita 10.42 ekamshena sthito jagat, what are vibhutis in Bhagavad Gita, divine manifestations Krishna",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2514,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,168 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.8",
+    "text": "I am the source of all; from me everything proceeds. Knowing this, the wise worship me with wholehearted feeling.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 10, Verse 8"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते । / इति मत्वा भजन्ते मां बुधा भावसमन्विताः ॥",
+      "ahaṃ sarvasya prabhavo mattaḥ sarvaṃ pravartate | / iti matvā bhajante māṃ budhā bhāva-samanvitāḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.8"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.10",
+    "text": "To those who are constantly united with me, who worship me with love, I give the yoga of discernment by which they come to me.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 10, Verse 10"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम् । / ददामि बुद्धियोगं तं येन मामुपयान्ति ते ॥",
+      "teṣāṃ satata-yuktānāṃ bhajatāṃ prīti-pūrvakam | / dadāmi buddhi-yogaṃ taṃ yena mām upayānti te ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.10"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.11",
+    "text": "Out of compassion for them, dwelling in their own being, I destroy the darkness born of ignorance with the shining lamp of knowledge.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 10, Verse 11"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "तेषामेवानुकम्पार्थमहमज्ञानजं तमः । / नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥",
+      "teṣām evānukampārtham aham ajñāna-jaṃ tamaḥ | / nāśayāmy ātma-bhāva-stho jñāna-dīpena bhāsvatā ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.11"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.20",
+    "text": "I am the Self, Arjuna, seated in the heart of all beings. I am the beginning, the middle, and the end of all beings.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 10, Verse 20"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अहमात्मा गुडाकेश सर्वभूताशयस्थितः । / अहमादिश्च मध्यं च भूतानामन्त एव च ॥",
+      "aham ātmā guḍākeśa sarva-bhūtāśaya-sthitaḥ | / aham ādiś ca madhyaṃ ca bhūtānām anta eva ca ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.20"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.41",
+    "text": "Whatever being or thing has splendour, beauty, or power — know it to be born from a spark of my radiance.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 10, Verse 41"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा । / तत्तदेवावगच्छ त्वं मम तेजोंऽशसंभवम् ॥",
+      "yad yad vibhūtimat sattvaṃ śrīmad ūrjitam eva vā | / tat tad evāvagaccha tvaṃ mama tejo'ṃśa-sambhavam ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.41"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.42",
+    "text": "Or, Arjuna, what need is there to know all this in such detail? I support this entire universe with a single fragment of myself.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 10, Verse 42"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अथवा बहुनैतेन किं ज्ञातेन तवार्जुन । / विष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत् ॥",
+      "athavā bahunaitena kiṃ jñātena tavārjuna | / viṣṭabhyāham idaṃ kṛtsnam ekāṃśena sthito jagat ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10#verse-10.42"
   }
 ]
 
@@ -501,6 +717,7 @@ export default function ChapterPage10() {
             <li><a href="#single-fragment">One fragment holds the universe — 10.42</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -1005,6 +1222,33 @@ export default function ChapterPage10() {
             <div className="faq-a">
               Verse 10.42, the final verse of Chapter 10, says, 'Or, Arjuna, what need is there to know all this in such detail? I support this entire universe with a single fragment of myself.' The verse retires the long catalogue with a breathtaking reduction. Whatever you have seen, the unseen is incalculably greater. The whole universe rests on one fragment. The chapter ends in awe and sets up Arjuna's request in Chapter 11 to see the cosmic form directly.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">All 18 chapters — the full arc</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-for-beginners" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Bhagavad Gita for beginners</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-9" className="related-card">
+            <div className="related-card-label">Chapter 9</div>
+            <div className="related-card-title">Raja Vidya Raja Guhya Yoga — The Royal Secret</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-11" className="related-card">
+            <div className="related-card-label">Chapter 11</div>
+            <div className="related-card-title">Vishwarupa Darshana Yoga — The Cosmic Vision</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-15" className="related-card">
+            <div className="related-card-label">Chapter 15</div>
+            <div className="related-card-title">Purushottama Yoga — Cut the Tree, Find the Source</div>
+          </a>
           </div>
         </div>
 

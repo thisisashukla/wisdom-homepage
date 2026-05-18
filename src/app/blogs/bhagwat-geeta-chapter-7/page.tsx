@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 7 — Jnana Vijnana Yoga: Knowing About vs. Knowing Through | Wisdom",
-  description: "An opinionated reading of Bhagavad Gita Chapter 7 (Adhyay 7) — 30 verses on the difference between knowledge and realization, the two natures, the pearls-on-a-thread metaphor, and why most striving never crosses into seeing.",
-  keywords: "bhagwat geeta chapter 7, bhagavad gita jnana vijnana yoga, bhagwat geeta adhyay 7, pearls on a thread gita, four types of devotees gita, maya in bhagavad gita, vasudeva sarvam iti, jnana vs vijnana",
+  title: "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga) — Summary",
+  description: "Bhagavad Gita Chapter 7 — Jnana Vijnana Yoga. All 30 verses on knowledge vs. realization, the pearls-on-a-thread teaching, and the four kinds of seekers.",
+  keywords: "bhagwat geeta chapter 7, bhagavad gita jnana vijnana yoga, bhagwat geeta adhyay 7, pearls on a thread gita, four types of devotees gita, maya in bhagavad gita, vasudeva sarvam iti, jnana vs vijnana, Jnana Vijnana Yoga meaning, Bhagavad Gita 7.7 pearls on a thread, Bhagavad Gita 7.8 taste in water, Vasudeva sarvam iti meaning, four types of devotees Bhagavad Gita, what is maya in Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 7 — Jnana Vijnana Yoga: Knowing About vs. Knowing Through",
-    description: "Chapter 7 separates knowledge from realization. Pearls on a thread. The four seekers. And the rare turning that ends all searching.",
+    title: "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga) — All Verses",
+    description: "All 30 verses of Bhagavad Gita Chapter 7 — pearls strung on a thread, four seekers, and the rare realization 'Vasudeva is everything.'",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter7.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter7.webp", width: 1200, height: 675, alt: "Krishna teaching Arjuna about the two natures — the visible and the imperishable. Chapter 7 of the Bhagavad Gita opens the second half of the text with Jnana Vijnana Yoga: the difference between knowing about something and knowing it through." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 7 — Jnana Vijnana Yoga",
-    description: "Chapter 7 separates knowledge from realization. Pearls on a thread. The four seekers. And the rare turning that ends all searching.",
+    title: "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga) — All Verses",
+    description: "All 30 verses of Bhagavad Gita Chapter 7 — pearls strung on a thread, four seekers, and the rare realization 'Vasudeva is everything.'",
     images: ["https://wisdomquotes.in/assets/chapter7.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 7 — Jnana Vijnana Yoga: Knowing About vs. Knowing Through",
-    "description": "An opinionated reading of Bhagavad Gita Chapter 7 (Adhyay 7) — 30 verses on the difference between knowledge and realization, the two natures, the pearls-on-a-thread metaphor, and why most striving never crosses into seeing.",
+    "description": "Bhagavad Gita Chapter 7 — Jnana Vijnana Yoga. All 30 verses on knowledge vs. realization, the pearls-on-a-thread teaching, and the four kinds of seekers.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 7, bhagavad gita jnana vijnana yoga, bhagwat geeta adhyay 7, pearls on a thread gita, four types of devotees gita, maya in bhagavad gita, vasudeva sarvam iti, jnana vs vijnana"
+    ],
+    "keywords": "bhagwat geeta chapter 7, bhagavad gita jnana vijnana yoga, bhagwat geeta adhyay 7, pearls on a thread gita, four types of devotees gita, maya in bhagavad gita, vasudeva sarvam iti, jnana vs vijnana, Jnana Vijnana Yoga meaning, Bhagavad Gita 7.7 pearls on a thread, Bhagavad Gita 7.8 taste in water, Vasudeva sarvam iti meaning, four types of devotees Bhagavad Gita, what is maya in Bhagavad Gita",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2470,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,141 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.3",
+    "text": "Among thousands of people, one may strive for perfection. Among those striving, perhaps one knows me in truth.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 7, Verse 3"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये । / यततामपि सिद्धानां कश्चिन्मां वेत्ति तत्त्वतः ॥",
+      "manuṣyāṇāṃ sahasreṣu kaścid yatati siddhaye | / yatatām api siddhānāṃ kaścin māṃ vetti tattvataḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.3"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.7",
+    "text": "There is nothing higher than me, Arjuna. All this is strung on me, as pearls are strung on a thread.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 7, Verse 7"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय । / मयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव ॥",
+      "mattaḥ parataraṃ nānyat kiñcid asti dhanañjaya | / mayi sarvam idaṃ protaṃ sūtre maṇi-gaṇā iva ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.7"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.8",
+    "text": "I am the taste in water, Arjuna. I am the light in the moon and the sun. I am the sound of Om in all the Vedas, the sound in space, and the courage in human beings.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 7, Verse 8"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः । / प्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु ॥",
+      "raso'ham apsu kaunteya prabhāsmi śaśi-sūryayoḥ | / praṇavaḥ sarva-vedeṣu śabdaḥ khe pauruṣaṃ nṛṣu ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.8"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.17",
+    "text": "Of these, the wise one — steady, single-pointed in devotion — is the highest. For I am exceedingly dear to the wise one, and that one is dear to me.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 7, Verse 17"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "तेषां ज्ञानी नित्ययुक्त एकभक्तिर्विशिष्यते । / प्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः ॥",
+      "teṣāṃ jñānī nitya-yukta eka-bhaktir viśiṣyate | / priyo hi jñānino'tyartham ahaṃ sa ca mama priyaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.17"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.19",
+    "text": "After many lifetimes, the wise one surrenders to me, recognising — Vāsudeva is everything. Such a great soul is exceedingly rare.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 7, Verse 19"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते । / वासुदेवः सर्वमिति स महात्मा सुदुर्लभः ॥",
+      "bahūnāṃ janmanām ante jñānavān māṃ prapadyate | / vāsudevaḥ sarvam iti sa mahātmā su-durlabhaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.19"
   }
 ]
 
@@ -501,6 +690,7 @@ export default function ChapterPage7() {
             <li><a href="#veiled">Why the divine remains veiled to most</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -1018,6 +1208,33 @@ export default function ChapterPage7() {
             <div className="faq-a">
               Verse 7.25 says the Divine, veiled by yoga-māyā, is not perceptible to everyone. The deluded mistake the visible form for the whole reality. The teaching is that the problem is not the world's structure but the seer's perception. The veil is on our side, not on reality's side. This is good news, because perception can be trained — and the rest of the Gita is, in many ways, that training.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-for-beginners" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Bhagavad Gita for beginners — where to start</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">The Bhagavad Gita as a story — how the argument builds</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-8" className="related-card">
+            <div className="related-card-label">Chapter 8</div>
+            <div className="related-card-title">Akshara Brahma Yoga — What the Mind Has Practiced</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-9" className="related-card">
+            <div className="related-card-label">Chapter 9</div>
+            <div className="related-card-title">Raja Vidya Raja Guhya Yoga — The Royal Secret</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-10" className="related-card">
+            <div className="related-card-label">Chapter 10</div>
+            <div className="related-card-title">Vibhuti Yoga — Sparks of the Divine</div>
+          </a>
           </div>
         </div>
 

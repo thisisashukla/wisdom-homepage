@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 8 — Akshara Brahma Yoga: What the Mind Has Practiced | Wisdom",
-  description: "An honest reading of Bhagavad Gita Chapter 8 (Adhyay 8) — 28 verses on the imperishable Brahman, the moment of death, the state at the end, cosmic time, and the rare path that does not return.",
-  keywords: "bhagwat geeta chapter 8, bhagavad gita akshara brahma yoga, bhagwat geeta adhyay 8, death in bhagavad gita, brahma kalpa days nights, supreme abode gita, antakale ca mam eva smaran, mind at the moment of death gita",
+  title: "Bhagavad Gita Chapter 8 (Akshara Brahma Yoga) — Summary",
+  description: "Bhagavad Gita Chapter 8 — Akshara Brahma Yoga. All 28 verses on the imperishable Brahman, the state at death, Brahma's day, and the path beyond return.",
+  keywords: "bhagwat geeta chapter 8, bhagavad gita akshara brahma yoga, bhagwat geeta adhyay 8, death in bhagavad gita, brahma kalpa days nights, supreme abode gita, antakale ca mam eva smaran, mind at the moment of death gita, Akshara Brahma Yoga meaning, Bhagavad Gita 8.5 anta kale ca mam eva smaran, Bhagavad Gita 8.6 meaning, what is the supreme abode in Bhagavad Gita, Brahma's day and night Bhagavad Gita, om iti ekaksharam brahma",
   openGraph: {
-    title: "Bhagavad Gita Chapter 8 — Akshara Brahma Yoga: What the Mind Has Practiced",
-    description: "Chapter 8 is about death — and therefore about every habit of attention you are building right now. The imperishable. The final moment. The state you will carry.",
+    title: "Bhagavad Gita Chapter 8 (Akshara Brahma Yoga) — All Verses",
+    description: "Bhagavad Gita Chapter 8 — what the mind has practiced, the moment of death, and the imperishable destination.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter8.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter8.webp", width: 1200, height: 675, alt: "Light dispersing into the eternal — Chapter 8 of the Bhagavad Gita teaches Akshara Brahma Yoga: the imperishable, the moment of death, and what the mind has practiced." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 8 — Akshara Brahma Yoga",
-    description: "Chapter 8 is about death — and therefore about every habit of attention you are building right now. The imperishable. The final moment. The state you will carry.",
+    title: "Bhagavad Gita Chapter 8 (Akshara Brahma Yoga) — All Verses",
+    description: "Bhagavad Gita Chapter 8 — what the mind has practiced, the moment of death, and the imperishable destination.",
     images: ["https://wisdomquotes.in/assets/chapter8.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 8 — Akshara Brahma Yoga: What the Mind Has Practiced",
-    "description": "An honest reading of Bhagavad Gita Chapter 8 (Adhyay 8) — 28 verses on the imperishable Brahman, the moment of death, the state at the end, cosmic time, and the rare path that does not return.",
+    "description": "Bhagavad Gita Chapter 8 — Akshara Brahma Yoga. All 28 verses on the imperishable Brahman, the state at death, Brahma's day, and the path beyond return.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 8 (Akshara Brahma Yoga) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 8, bhagavad gita akshara brahma yoga, bhagwat geeta adhyay 8, death in bhagavad gita, brahma kalpa days nights, supreme abode gita, antakale ca mam eva smaran, mind at the moment of death gita"
+    ],
+    "keywords": "bhagwat geeta chapter 8, bhagavad gita akshara brahma yoga, bhagwat geeta adhyay 8, death in bhagavad gita, brahma kalpa days nights, supreme abode gita, antakale ca mam eva smaran, mind at the moment of death gita, Akshara Brahma Yoga meaning, Bhagavad Gita 8.5 anta kale ca mam eva smaran, Bhagavad Gita 8.6 meaning, what is the supreme abode in Bhagavad Gita, Brahma's day and night Bhagavad Gita, om iti ekaksharam brahma",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2407,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,141 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8#verse-8.5",
+    "text": "Whoever remembers me at the end, leaving the body — reaches my state. There is no doubt in this.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 8, Verse 5"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम् । / यः प्रयाति स मद्भावं याति नास्त्यत्र संशयः ॥",
+      "anta-kāle ca mām eva smaran muktvā kalevaram | / yaḥ prayāti sa mad-bhāvaṃ yāti nāsty atra saṃśayaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8#verse-8.5"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8#verse-8.6",
+    "text": "Whatever state a person remembers as they leave the body, that state they reach — because the mind has long been shaped by it.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 8, Verse 6"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम् । / तं तमेवैति कौन्तेय सदा तद्भावभावितः ॥",
+      "yaṃ yaṃ vāpi smaran bhāvaṃ tyajaty ante kalevaram | / taṃ tam evaiti kaunteya sadā tad-bhāva-bhāvitaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8#verse-8.6"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8#verse-8.8",
+    "text": "With a mind disciplined by the yoga of practice, not wandering anywhere else, the one who departs while remembering the supreme divine person reaches that supreme being, Partha.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 8, Verse 8"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अभ्यासयोगयुक्तेन चेतसा नान्यगामिना । / परमं पुरुषं दिव्यं याति पार्थानुचिन्तयन् ॥",
+      "abhyāsa-yoga-yuktena cetasā nānya-gāminā | / paramaṃ puruṣaṃ divyaṃ yāti pārthānucintayan ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8#verse-8.8"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8#verse-8.14",
+    "text": "For the yogi whose mind is undivided, who remembers me constantly, always united with me — I am easy to reach, Partha.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 8, Verse 14"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अनन्यचेताः सततं यो मां स्मरति नित्यशः । / तस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः ॥",
+      "ananya-cetāḥ satataṃ yo māṃ smarati nityaśaḥ | / tasyāhaṃ sulabhaḥ pārtha nitya-yuktasya yoginaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8#verse-8.14"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8#verse-8.21",
+    "text": "That which is called the unmanifest, the imperishable — they call it the supreme destination. Having reached it, beings do not return. That is my supreme abode.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 8, Verse 21"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम् । / यं प्राप्य न निवर्तन्ते तद्धाम परमं मम ॥",
+      "avyakto'kṣara ity uktas tam āhuḥ paramāṃ gatim | / yaṃ prāpya na nivartante tad dhāma paramaṃ mama ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8#verse-8.21"
   }
 ]
 
@@ -501,6 +690,7 @@ export default function ChapterPage8() {
             <li><a href="#two-paths">The chapter's closing — beyond merit</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -1010,6 +1200,33 @@ export default function ChapterPage8() {
             <div className="faq-a">
               Read carefully, no. Chapter 8 is teaching that the state at death is the trained state, and the trained state is the lifelong outcome of where your attention has gone. The chapter is not a special instruction for the final moment. It is a general instruction about how attention shapes being — death just makes the consequences of attention more visible.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-anxiety-mental-peace" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">What the Gita says about anxiety & death</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">All 18 chapters — the full arc</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-7" className="related-card">
+            <div className="related-card-label">Chapter 7</div>
+            <div className="related-card-title">Jnana Vijnana Yoga — Knowing About vs. Knowing Through</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-9" className="related-card">
+            <div className="related-card-label">Chapter 9</div>
+            <div className="related-card-title">Raja Vidya Raja Guhya Yoga — The Royal Secret</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-15" className="related-card">
+            <div className="related-card-label">Chapter 15</div>
+            <div className="related-card-title">Purushottama Yoga — Cut the Tree, Find the Source</div>
+          </a>
           </div>
         </div>
 

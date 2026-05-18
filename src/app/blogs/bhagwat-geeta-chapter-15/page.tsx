@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 15 — Purushottama Yoga: Cut the Tree, Find the Source | Wisdom",
-  description: "An opinionated reading of Bhagavad Gita Chapter 15 (Adhyay 15) — 20 verses on the inverted ashvattha tree, the sword of detachment (15.3), the spark of the Divine in every being (15.7), and Krishna as Purushottama — beyond both the perishable and the imperishable.",
-  keywords: "bhagwat geeta chapter 15, bhagavad gita purushottama yoga, bhagwat geeta adhyay 15, inverted ashvattha tree, sword of detachment gita, purushottama meaning, spark of divine bhagavad gita 15.7, ksharah aksharah purushottamah",
+  title: "Bhagavad Gita Chapter 15 (Purushottama Yoga) — Summary",
+  description: "Bhagavad Gita Chapter 15 — Purushottama Yoga. All 20 verses on the inverted ashvattha tree, the sword of detachment, and the Supreme Self.",
+  keywords: "bhagwat geeta chapter 15, bhagavad gita purushottama yoga, bhagwat geeta adhyay 15, inverted ashvattha tree, sword of detachment gita, purushottama meaning, spark of divine bhagavad gita 15.7, ksharah aksharah purushottamah, Purushottama Yoga meaning, ashvattha tree Bhagavad Gita, Bhagavad Gita 15.7 mamaiva amsho, Bhagavad Gita 15.14 vaishvanaro, Bhagavad Gita 15.15 sarvasya chaham hridi, Purushottama meaning Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 15 — Purushottama Yoga: Cut the Tree, Find the Source",
-    description: "The inverted tree. The sword of detachment. The spark inside every being. And the name Krishna finally claims.",
+    title: "Bhagavad Gita Chapter 15 (Purushottama Yoga) — All Verses",
+    description: "Bhagavad Gita Chapter 15 — the upside-down tree, the sword of detachment, and the Supreme Self beyond change and changelessness.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter15.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter15.webp", width: 1200, height: 675, alt: "An inverted ashvattha tree — roots above, branches below — being cut by the sword of detachment. Chapter 15 of the Bhagavad Gita, Purushottama Yoga, names the Supreme Self beyond both the changing and the unchanging." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 15 — Purushottama Yoga",
-    description: "The inverted tree. The sword of detachment. The spark inside every being. And the name Krishna finally claims.",
+    title: "Bhagavad Gita Chapter 15 (Purushottama Yoga) — All Verses",
+    description: "Bhagavad Gita Chapter 15 — the upside-down tree, the sword of detachment, and the Supreme Self beyond change and changelessness.",
     images: ["https://wisdomquotes.in/assets/chapter15.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 15 — Purushottama Yoga: Cut the Tree, Find the Source",
-    "description": "An opinionated reading of Bhagavad Gita Chapter 15 (Adhyay 15) — 20 verses on the inverted ashvattha tree, the sword of detachment (15.3), the spark of the Divine in every being (15.7), and Krishna as Purushottama — beyond both the perishable and the imperishable.",
+    "description": "Bhagavad Gita Chapter 15 — Purushottama Yoga. All 20 verses on the inverted ashvattha tree, the sword of detachment, and the Supreme Self.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 15 (Purushottama Yoga) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 15, bhagavad gita purushottama yoga, bhagwat geeta adhyay 15, inverted ashvattha tree, sword of detachment gita, purushottama meaning, spark of divine bhagavad gita 15.7, ksharah aksharah purushottamah"
+    ],
+    "keywords": "bhagwat geeta chapter 15, bhagavad gita purushottama yoga, bhagwat geeta adhyay 15, inverted ashvattha tree, sword of detachment gita, purushottama meaning, spark of divine bhagavad gita 15.7, ksharah aksharah purushottamah, Purushottama Yoga meaning, ashvattha tree Bhagavad Gita, Bhagavad Gita 15.7 mamaiva amsho, Bhagavad Gita 15.14 vaishvanaro, Bhagavad Gita 15.15 sarvasya chaham hridi, Purushottama meaning Bhagavad Gita",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2843,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,168 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.3",
+    "text": "Its real form is not perceived here, nor its beginning, end, or foundation. With the strong sword of non-attachment, cut down this deeply rooted ashvattha tree.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 15, Verse 3"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "न रूपमस्येह तथोपलभ्यते नान्तो न चादिर्न च सम्प्रतिष्ठा । / अश्वत्थमेनं सुविरूढमूलमसङ्गशस्त्रेण दृढेन छित्त्वा ॥",
+      "na rūpam asyeha tathopalabhyate nānto na cādir na ca sampratiṣṭhā | / aśvattham enaṃ su-virūḍha-mūlam asaṅga-śastreṇa dṛḍhena chittvā ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.3"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.6",
+    "text": "Neither sun, nor moon, nor fire illumines that place. Having reached it, beings do not return. That is my supreme abode.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 15, Verse 6"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "न तद्भासयते सूर्यो न शशाङ्को न पावकः । / यद्गत्वा न निवर्तन्ते तद्धाम परमं मम ॥",
+      "na tad bhāsayate sūryo na śaśāṅko na pāvakaḥ | / yad gatvā na nivartante tad dhāma paramaṃ mama ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.6"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.7",
+    "text": "A part of myself, eternal, has become the living being in this world. It draws to itself the five senses and the mind, which rest in nature.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 15, Verse 7"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "ममैवांशो जीवलोके जीवभूतः सनातनः । / मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥",
+      "mamaivāṃśo jīva-loke jīva-bhūtaḥ sanātanaḥ | / manaḥ-ṣaṣṭhānīndriyāṇi prakṛti-sthāni karṣati ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.7"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.14",
+    "text": "I become the digestive fire in the bodies of living beings, joined with the in-breath and the out-breath, and I digest the four kinds of food.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 15, Verse 14"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः । / प्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम् ॥",
+      "ahaṃ vaiśvānaro bhūtvā prāṇināṃ deham āśritaḥ | / prāṇāpāna-samāyuktaḥ pacāmy annaṃ catur-vidham ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.14"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.15",
+    "text": "I am seated in the hearts of all beings. From me come memory, knowledge, and the removal of doubt. I am what is to be known through all the Vedas; I am the maker of Vedanta and the knower of the Vedas.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 15, Verse 15"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च । / वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम् ॥",
+      "sarvasya cāhaṃ hṛdi sanniviṣṭo mattaḥ smṛtir jñānam apohanaṃ ca | / vedaiś ca sarvair aham eva vedyo vedānta-kṛd veda-vid eva cāham ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.15"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.18",
+    "text": "Because I am beyond the perishable, and higher than even the imperishable — therefore, in the world and in the Vedas, I am celebrated as Purushottama, the Supreme Self.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 15, Verse 18"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः । / अतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः ॥",
+      "yasmāt kṣaram atīto'ham akṣarād api cottamaḥ | / ato'smi loke vede ca prathitaḥ puruṣottamaḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.18"
   }
 ]
 
@@ -501,6 +717,7 @@ export default function ChapterPage15() {
             <li><a href="#purushottama">The name Krishna finally claims — 15.18</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -972,6 +1189,33 @@ export default function ChapterPage15() {
             <div className="faq-a">
               Verse 15.15 says, 'I am seated in the hearts of all beings. From me come memory, knowledge, and the removal of doubt.' The teaching is that the remembering, the understanding, and the dissolving of confusion are not purely your achievements. They are gifts from the Divine already seated at the centre of your own awareness. The verse rewrites the architecture of inner life: you have always had a collaborator; most of us have just not noticed.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">All 18 chapters — the full arc</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-for-beginners" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Bhagavad Gita for beginners</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-13" className="related-card">
+            <div className="related-card-label">Chapter 13</div>
+            <div className="related-card-title">Kshetra Kshetrajna — The Field and the Knower</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-14" className="related-card">
+            <div className="related-card-label">Chapter 14</div>
+            <div className="related-card-title">Gunatraya Vibhaga — The Three Forces</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-10" className="related-card">
+            <div className="related-card-label">Chapter 10</div>
+            <div className="related-card-title">Vibhuti Yoga — Sparks of the Divine</div>
+          </a>
           </div>
         </div>
 

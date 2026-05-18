@@ -3,24 +3,31 @@ import BlogTracker from '@/components/BlogTracker'
 import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 14 — Gunatraya Vibhaga Yoga: The Three Forces of Inner Weather | Wisdom",
-  description: "An opinionated reading of Bhagavad Gita Chapter 14 (Adhyay 14) — 27 verses on the three gunas (sattva, rajas, tamas). What each one feels like, how each one binds you, and the unwavering devotion that goes beyond all three.",
-  keywords: "bhagwat geeta chapter 14, bhagavad gita gunatraya vibhaga yoga, bhagwat geeta adhyay 14, three gunas explained, sattva rajas tamas, gunatita state, transcending gunas gita, psychology of mood gita",
+  title: "Bhagavad Gita Chapter 14 (Three Gunas) — Summary",
+  description: "Bhagavad Gita Chapter 14 — Gunatraya Vibhaga Yoga. All 27 verses on the three gunas (sattva, rajas, tamas) and the state beyond them.",
+  keywords: "bhagwat geeta chapter 14, bhagavad gita gunatraya vibhaga yoga, bhagwat geeta adhyay 14, three gunas explained, sattva rajas tamas, gunatita state, transcending gunas gita, psychology of mood gita, three gunas Bhagavad Gita explained, sattva rajas tamas meaning, Gunatraya Vibhaga Yoga summary, Bhagavad Gita 14.5 sattvam rajas tama, Bhagavad Gita 14.26 transcending gunas, what is gunatita state",
   openGraph: {
-    title: "Bhagavad Gita Chapter 14 — Gunatraya Vibhaga Yoga: The Three Forces",
-    description: "The Gita's psychology of mood. Sattva, rajas, tamas — and the steadiness that recognises all three without becoming any of them.",
+    title: "Bhagavad Gita Chapter 14 (Three Gunas) — All Verses",
+    description: "Bhagavad Gita Chapter 14 — the three forces of inner weather. Sattva, rajas, tamas. And the state beyond all three.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14",
     siteName: 'Wisdom',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter14.webp", width: 1200, height: 675 }],
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter14.webp", width: 1200, height: 675, alt: "Three streams of inner weather — clarity, restlessness, and dullness — flowing through one steady awareness. Chapter 14 of the Bhagavad Gita, Gunatraya Vibhaga Yoga, names the three forces shaping every mood." }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 14 — Gunatraya Vibhaga Yoga",
-    description: "The Gita's psychology of mood. Sattva, rajas, tamas — and the steadiness that recognises all three without becoming any of them.",
+    title: "Bhagavad Gita Chapter 14 (Three Gunas) — All Verses",
+    description: "Bhagavad Gita Chapter 14 — the three forces of inner weather. Sattva, rajas, tamas. And the state beyond all three.",
     images: ["https://wisdomquotes.in/assets/chapter14.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15" },
 }
 
 const pageCSS = `
@@ -130,7 +137,7 @@ const pageCSS = `
 
       .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
         color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
-      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2[id], .faq-section[id], .related-reading[id] { scroll-margin-top: 88px; }
       .prose h2 em { font-style: italic; color: #fff; }
 
       .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
@@ -217,6 +224,21 @@ const pageCSS = `
       .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
       .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
 
+      .related-reading { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
+        margin: 48px 0; }
+      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
+      .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
+        border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+      .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
+      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
       .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
         border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
         border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
@@ -270,6 +292,7 @@ const pageCSS = `
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+        .related-grid { grid-template-columns: 1fr; }
       }
 
 `
@@ -277,9 +300,13 @@ const pageCSS = `
 const schemas = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": [
+      "Article",
+      "LearningResource"
+    ],
     "headline": "Bhagavad Gita Chapter 14 — Gunatraya Vibhaga Yoga: The Three Forces of Inner Weather",
-    "description": "An opinionated reading of Bhagavad Gita Chapter 14 (Adhyay 14) — 27 verses on the three gunas (sattva, rajas, tamas). What each one feels like, how each one binds you, and the unwavering devotion that goes beyond all three.",
+    "description": "Bhagavad Gita Chapter 14 — Gunatraya Vibhaga Yoga. All 27 verses on the three gunas (sattva, rajas, tamas) and the state beyond them.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 14 (Three Gunas) — All Verses",
     "author": {
       "@type": "Organization",
       "name": "Wisdom",
@@ -306,15 +333,42 @@ const schemas = [
       "@type": "WebPage",
       "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14"
     },
-    "about": {
-      "@type": "Book",
-      "name": "Bhagavad Gita",
-      "author": {
+    "about": [
+      {
+        "@type": "Book",
+        "name": "Bhagavad Gita",
+        "author": {
+          "@type": "Person",
+          "name": "Ved Vyasa"
+        },
+        "url": "https://wisdomquotes.in/gita"
+      },
+      {
         "@type": "Person",
-        "name": "Ved Vyasa"
+        "name": "Krishna",
+        "url": "https://en.wikipedia.org/wiki/Krishna"
+      },
+      {
+        "@type": "Person",
+        "name": "Arjuna",
+        "url": "https://en.wikipedia.org/wiki/Arjuna"
       }
-    },
-    "keywords": "bhagwat geeta chapter 14, bhagavad gita gunatraya vibhaga yoga, bhagwat geeta adhyay 14, three gunas explained, sattva rajas tamas, gunatita state, transcending gunas gita, psychology of mood gita"
+    ],
+    "keywords": "bhagwat geeta chapter 14, bhagavad gita gunatraya vibhaga yoga, bhagwat geeta adhyay 14, three gunas explained, sattva rajas tamas, gunatita state, transcending gunas gita, psychology of mood gita, three gunas Bhagavad Gita explained, sattva rajas tamas meaning, Gunatraya Vibhaga Yoga summary, Bhagavad Gita 14.5 sattvam rajas tama, Bhagavad Gita 14.26 transcending gunas, what is gunatita state",
+    "articleSection": "Bhagavad Gita",
+    "wordCount": 2652,
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".lead",
+        ".shloka-meaning",
+        ".shloka-essence"
+      ]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -330,7 +384,7 @@ const schemas = [
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://wisdomquotes.in/blogs/"
+        "item": "https://wisdomquotes.in/blogs"
       },
       {
         "@type": "ListItem",
@@ -393,6 +447,168 @@ const schemas = [
         }
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.5",
+    "text": "Sattva, rajas, and tamas — the three qualities born of nature — bind the imperishable self to the body, Arjuna.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 14, Verse 5"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः । / निबध्नन्ति महाबाहो देहे देहिनमव्ययम् ॥",
+      "sattvaṃ rajas tama iti guṇāḥ prakṛti-sambhavāḥ | / nibadhnanti mahā-bāho dehe dehinam avyayam ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.5"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.11",
+    "text": "When light and clear understanding arise in all the gates of this body, know that sattva has grown strong.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 14, Verse 11"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते । / ज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत ॥",
+      "sarva-dvāreṣu dehe'smin prakāśa upajāyate | / jñānaṃ yadā tadā vidyād vivṛddhaṃ sattvam ity uta ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.11"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.17",
+    "text": "From sattva comes knowledge; from rajas, greed; from tamas, heedlessness, delusion, and ignorance.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 14, Verse 17"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च । / प्रमादमोहौ तमसो भवतोऽज्ञानमेव च ॥",
+      "sattvāt sañjāyate jñānaṃ rajaso lobha eva ca | / pramāda-mohau tamaso bhavato'jñānam eva ca ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.17"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.22",
+    "text": "The Blessed One said: light, activity, and confusion — when they arise, the one beyond the gunas does not hate them; when they pass, does not long for them.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 14, Verse 22"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "श्रीभगवानुवाच / प्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव । / न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति ॥",
+      "śrī bhagavān uvāca | / prakāśaṃ ca pravṛttiṃ ca moham eva ca pāṇḍava | / na dveṣṭi sampravṛttāni na nivṛttāni kāṅkṣati ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.22"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.24",
+    "text": "Equal in pleasure and pain, self-settled, equal to a clod of earth, a stone, and gold; equal in liked and disliked; steady; equal in blame and self-praise.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 14, Verse 24"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः । / तुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः ॥",
+      "sama-duḥkha-sukhaḥ svasthaḥ sama-loṣṭāśma-kāñcanaḥ | / tulya-priyāpriyo dhīras tulya-nindātma-saṃstutiḥ ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.24"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Quotation",
+    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.26",
+    "text": "The one who serves me with unwavering devotion goes beyond these gunas and becomes fit for union with Brahman.",
+    "spokenByCharacter": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Krishna"
+    },
+    "isPartOf": {
+      "@type": "Book",
+      "name": "Bhagavad Gita, Chapter 14, Verse 26"
+    },
+    "inLanguage": [
+      "sa",
+      "en"
+    ],
+    "alternateName": [
+      "मां च योऽव्यभिचारेण भक्ितयोगेन सेवते । / स गुणान्समतीत्यैतान्ब्रह्मभूयाय कल्पते ॥",
+      "māṃ ca yo'vyabhicāreṇa bhakti-yogena sevate | / sa guṇān samatītyaitān brahma-bhūyāya kalpate ||"
+    ],
+    "url": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.26"
   }
 ]
 
@@ -501,6 +717,7 @@ export default function ChapterPage14() {
             <li><a href="#devotion-transcends">The bridge across — 14.26</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
+            <li><a href="#related-reading">Related reading</a></li>
           </ol>
         </nav>
 
@@ -1033,6 +1250,33 @@ export default function ChapterPage14() {
             <div className="faq-a">
               In verse 14.26, Krishna says: 'The one who serves me with unwavering devotion goes beyond these gunas and becomes fit for union with Brahman.' The bridge is bhakti-yoga — unwavering devotion. Why devotion and not analysis? Because devotion gives the mind a centre outside the field of the gunas. When attention rests there, the gunas continue to come and go, but the centre of identification has shifted. The states still arise; the capture by them has dropped.
             </div>
+          </div>
+        </div>
+
+        <div className="related-reading" id="related-reading">
+          <div className="related-reading-label">Continue reading</div>
+          <h2>Related Reading</h2>
+          <div className="related-grid">
+          <a href="/blogs/bhagavad-gita-anxiety-mental-peace" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">What the Gita says about mood and inner states</div>
+          </a>
+          <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
+            <div className="related-card-label">Topic Guide</div>
+            <div className="related-card-title">Karma — what it actually means in the Gita</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-13" className="related-card">
+            <div className="related-card-label">Chapter 13</div>
+            <div className="related-card-title">Kshetra Kshetrajna — The Field and the Knower</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-17" className="related-card">
+            <div className="related-card-label">Chapter 17</div>
+            <div className="related-card-title">Shraddhatraya Vibhaga — You Are What You Trust</div>
+          </a>
+          <a href="/blogs/bhagwat-geeta-chapter-18" className="related-card">
+            <div className="related-card-label">Chapter 18</div>
+            <div className="related-card-title">Moksha Sannyasa Yoga — The Final Teaching</div>
+          </a>
           </div>
         </div>
 
