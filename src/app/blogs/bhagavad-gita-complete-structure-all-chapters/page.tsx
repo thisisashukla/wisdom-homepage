@@ -577,6 +577,7 @@ export default function CompleteStructurePage() {
           <li><a href="../#how-it-works">How it works</a></li>
           <li><a href="../#topics">Topics</a></li>
           <li><a href="/blogs" className="active">Blog</a></li>
+          <li><a href="/about">About</a></li>
           <li>
             <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" className="btn-nav" data-mp-location="nav">Download Free</a>
           </li>

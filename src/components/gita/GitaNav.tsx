@@ -10,6 +10,7 @@ const labels = {
     home: 'Home',
     gita: 'Bhagavad Gita',
     blog: 'Blog',
+    about: 'About',
     download: 'Download Free',
     switchTo: 'हिन्दी',
   },
@@ -17,6 +18,7 @@ const labels = {
     home: 'होम',
     gita: 'भगवद् गीता',
     blog: 'Blog',
+    about: 'About',
     download: 'मुफ़्त डाउनलोड',
     switchTo: 'English',
   },
@@ -42,6 +44,7 @@ export default function GitaNav({ locale = 'en' }: Props) {
           {/* "Bhagavad Gita" is always the current section — show as active, still links to index */}
           <a href={base} className="gita-nav-active" aria-current="page">{t.gita}</a>
           <a href="/blogs">{t.blog}</a>
+          <a href="/about">{t.about}</a>
           <a href={homeHref}>{t.home}</a>
           <a className="gita-lang-switch" href={altHref} hrefLang={altLocale}>
             {t.switchTo}

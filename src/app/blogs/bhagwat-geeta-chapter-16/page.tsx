@@ -585,6 +585,7 @@ export default function ChapterPage16() {
             <li><a href="/#how-it-works">How it works</a></li>
             <li><a href="/#topics">Topics</a></li>
             <li><a href="/blogs" className="active">Blog</a></li>
+          <li><a href="/about">About</a></li>
             <li>
               <a
                 href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"

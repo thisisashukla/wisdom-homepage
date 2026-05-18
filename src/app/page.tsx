@@ -44,6 +44,7 @@ export default function HomePage() {
           <li className="nav-pipe" aria-hidden="true"></li>
           <li><a href="/gita" className="nav-page-link">Read the Gita</a></li>
           <li><a href="/blogs/" className="nav-page-link">Blog</a></li>
+          <li><a href="/about" className="nav-page-link">About</a></li>
           <li>
             <a
               href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
