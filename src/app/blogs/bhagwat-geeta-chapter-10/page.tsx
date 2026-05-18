@@ -1,0 +1,1059 @@
+import type { Metadata } from 'next'
+import BlogTracker from '@/components/BlogTracker'
+import MobileNavToggle from '@/components/MobileNavToggle'
+
+export const metadata: Metadata = {
+  title: "Bhagavad Gita Chapter 10 — Vibhuti Yoga: Sparks of the Divine | Wisdom",
+  description: "An opinionated reading of Bhagavad Gita Chapter 10 (Adhyay 10) — 42 verses on divine manifestations. The source of all (10.8), the lamp of knowledge inside (10.11), 'I am the Self in the heart of all beings' (10.20), and the closing verse — the universe held by a single fragment (10.42).",
+  keywords: "bhagwat geeta chapter 10, bhagavad gita vibhuti yoga, bhagwat geeta adhyay 10, ekamshena sthito jagat, aham atma gudakesha, lamp of knowledge gita, sparks of divine bhagavad gita, divine manifestations gita",
+  openGraph: {
+    title: "Bhagavad Gita Chapter 10 — Vibhuti Yoga: Sparks of the Divine",
+    description: "Every form of greatness in creation is a fragment of one source. The lamp inside. The Self at the heart of everything.",
+    type: 'article',
+    url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10",
+    siteName: 'Wisdom',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter10.webp", width: 1200, height: 675 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Bhagavad Gita Chapter 10 — Vibhuti Yoga",
+    description: "Every form of greatness in creation is a fragment of one source. The lamp inside. The Self at the heart of everything.",
+    images: ["https://wisdomquotes.in/assets/chapter10.webp"],
+  },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10" },
+}
+
+const pageCSS = `
+
+      :root {
+        --maroon: #3d0c0c;
+        --maroon-mid: #5c1a1a;
+        --gold: #c8881e;
+        --gold-light: #f5c96a;
+        --gold-pale: #fdf3dc;
+        --gold-border: #e8c97a;
+        --gold-dim: rgba(200, 136, 30, 0.15);
+        --text: #f5e8cc;
+        --text-dim: rgba(245, 232, 204, 0.65);
+        --text-dimmer: rgba(245, 232, 204, 0.35);
+        --muted-2: rgba(245, 232, 204, 0.35);
+        --border: rgba(200, 136, 30, 0.2);
+        --bg: #120505;
+        --bg-warm: #190707;
+        --bg-alt: #0f0404;
+        --bg-card: rgba(255, 255, 255, 0.04);
+        --bg-card-hover: rgba(255, 255, 255, 0.07);
+        --max: 780px;
+      }
+
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+
+      body {
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: inherit; text-decoration: none; }
+      img { display: block; max-width: 100%; }
+
+      body > nav {
+        position: sticky; top: 0; z-index: 200;
+        background: rgba(18, 5, 5, 0.92);
+        backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 28px; height: 60px;
+        display: flex; align-items: center; justify-content: space-between; }
+      .logo { display: flex; align-items: center; gap: 9px;
+        font-family: "Playfair Display", Georgia, serif; font-size: 21px; font-weight: 700;
+        color: var(--gold-light); text-decoration: none; }
+      .logo-mark { width: 36px; height: 36px; border-radius: 50%; overflow: hidden;
+        border: 1.5px solid rgba(200, 136, 30, 0.4); flex-shrink: 0; }
+      .logo-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+      .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-dim); transition: color 0.18s; }
+      .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
+      .btn-nav { background: var(--gold) !important; color: #1a0606 !important;
+        padding: 8px 18px; border-radius: 8px; font-weight: 700; transition: opacity 0.18s; }
+      .btn-nav:hover { opacity: 0.88; }
+
+      .breadcrumb { background: var(--bg-alt); border-bottom: 1px solid var(--border); }
+      .breadcrumb-inner { max-width: 1100px; margin: 0 auto; padding: 10px 28px;
+        font-size: 12px; color: var(--text-dimmer); display: flex; gap: 8px; align-items: center; }
+      .breadcrumb-inner a { color: var(--text-dimmer); transition: color 0.15s; }
+      .breadcrumb-inner a:hover { color: var(--gold-light); }
+      .bc-sep { opacity: 0.4; }
+
+      .article-hero {
+        background: var(--bg-warm); padding: 64px 28px 56px;
+        border-bottom: 1px solid var(--border); position: relative; overflow: hidden;
+      }
+      .article-hero::before {
+        content: "अध्याय १०";
+        position: absolute; right: -10px; bottom: -20px;
+        font-family: "Noto Sans Devanagari", serif; font-size: 180px;
+        color: rgba(200, 136, 30, 0.04); line-height: 1; pointer-events: none; user-select: none;
+      }
+      .article-hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+
+      .chapter-badge { display: inline-flex; align-items: center; gap: 8px;
+        background: rgba(200, 136, 30, 0.1); border: 1px solid rgba(200, 136, 30, 0.28);
+        color: var(--gold-light); font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+        text-transform: uppercase; padding: 5px 14px; border-radius: 100px; margin-bottom: 20px; }
+      .chapter-badge-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold);
+        box-shadow: 0 0 6px var(--gold); flex-shrink: 0; }
+      .article-title { font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(28px, 4vw, 48px); font-weight: 700; color: var(--gold-light);
+        line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 12px; }
+      .article-title em { font-style: italic; color: #fff; }
+      .article-subtitle { font-size: 17px; color: var(--text-dim); font-weight: 300;
+        margin-bottom: 32px; line-height: 1.65; max-width: 580px; }
+      .article-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+      .meta-item { font-size: 12px; color: var(--text-dimmer); letter-spacing: 0.04em; }
+      .meta-sep { color: var(--border); }
+
+      .article-wrap { max-width: var(--max); margin: 0 auto; padding: 60px 28px 80px; }
+
+      .chapter-image {
+        margin: 0 0 36px;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        background: var(--bg-warm);
+        box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+      }
+      .chapter-image img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+
+      .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
+        color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
+      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2 em { font-style: italic; color: #fff; }
+
+      .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
+        color: var(--text); margin: 32px 0 12px; }
+
+      .prose p { font-size: 16.5px; line-height: 1.78; color: var(--text-dim); margin-bottom: 20px; }
+      .prose p:last-child { margin-bottom: 0; }
+      .prose strong { font-weight: 600; color: var(--text); }
+      .prose em { font-style: italic; }
+      .lead { font-size: 19px; line-height: 1.7; color: var(--text); font-weight: 300; margin-bottom: 28px; }
+
+      .toc { background: var(--bg-card); border: 1px solid var(--border);
+        border-left: 3px solid var(--gold); border-radius: 0 12px 12px 0;
+        padding: 20px 24px; margin: 36px 0 40px; }
+      .toc-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
+        font-weight: 700; color: var(--gold); margin-bottom: 12px; }
+      .toc-list { list-style: none; display: flex; flex-direction: column; gap: 7px; counter-reset: toc-counter; }
+      .toc-list li { counter-increment: toc-counter; display: flex; align-items: baseline; gap: 10px; }
+      .toc-list li::before { content: counter(toc-counter); font-family: "Inter", sans-serif;
+        font-size: 10px; font-variant-numeric: tabular-nums; color: var(--text-dimmer); min-width: 14px; }
+      .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
+      .toc-list a:hover { color: var(--gold-light); }
+
+      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
+        border-radius: 14px; overflow: hidden; margin: 36px 0; }
+      .shloka-header { display: flex; align-items: center; justify-content: space-between;
+        padding: 12px 22px; border-bottom: 1px solid var(--border);
+        background: rgba(200, 136, 30, 0.05); }
+      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
+        text-transform: uppercase; font-weight: 600; }
+      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
+      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
+        font-size: 20px; line-height: 1.75; color: var(--gold-light);
+        border-bottom: 1px solid var(--border); }
+      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
+        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
+      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
+        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
+      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
+      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
+      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
+        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
+        font-style: italic; font-size: 15px; color: var(--text-dim); }
+
+      .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
+        background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
+      .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
+        font-style: italic; color: var(--gold-light); line-height: 1.5; margin-bottom: 10px; }
+      .pull-quote cite { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+        color: var(--gold); font-style: normal; font-weight: 600; }
+
+      .section-divider { display: flex; align-items: center; gap: 16px; margin: 56px 0 40px; }
+      .section-divider-line { flex: 1; height: 1px; background: var(--border); }
+      .section-divider-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+        color: var(--text-dimmer); white-space: nowrap; font-weight: 600; }
+
+      .highlight-box { background: rgba(200, 136, 30, 0.05); border: 1px solid var(--border);
+        border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0;
+        padding: 20px 24px; margin: 28px 0; }
+      .highlight-box p { font-size: 15px; line-height: 1.7; color: var(--text-dim); }
+      .highlight-box strong { color: var(--gold-light); }
+
+      .verse-table { width: 100%; border-collapse: collapse; font-size: 13.5px;
+        margin: 28px 0 40px; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+      .verse-table thead tr { background: rgba(200, 136, 30, 0.08); }
+      .verse-table thead th { text-align: left; padding: 12px 16px; font-size: 9.5px;
+        letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+      .verse-table tbody td { padding: 10px 16px; border-bottom: 1px solid var(--border);
+        vertical-align: top; line-height: 1.55; color: var(--text-dim); }
+      .verse-table tbody tr:last-child td { border-bottom: none; }
+      .verse-table tbody tr:hover { background: var(--bg-card); }
+      .verse-table td:first-child { font-size: 12px; color: var(--gold); font-weight: 600; white-space: nowrap; }
+
+      .faq-section { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; overflow: hidden; margin: 48px 0; }
+      .faq-header { padding: 28px 32px 20px; border-bottom: 1px solid var(--border); }
+      .faq-header-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .faq-header h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0; }
+      .faq-item { padding: 22px 32px; border-bottom: 1px solid var(--border); }
+      .faq-item:last-child { border-bottom: none; }
+      .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
+      .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
+
+      .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
+        border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
+        border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
+        text-align: center; position: relative; overflow: hidden; }
+      .app-cta::before { content: "विभूति"; position: absolute; top: -14px; right: -8px;
+        font-family: "Noto Sans Devanagari", sans-serif; font-size: 130px;
+        color: rgba(200, 136, 30, 0.05); line-height: 1; pointer-events: none; user-select: none; }
+      .app-cta-eyebrow { display: inline-flex; align-items: center; background: rgba(200, 136, 30, 0.12);
+        border: 1px solid rgba(200, 136, 30, 0.35); color: var(--gold-light); font-size: 11px;
+        font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; padding: 5px 14px;
+        border-radius: 20px; margin-bottom: 20px; }
+      .app-cta-headline { font-family: "Playfair Display", serif;
+        font-size: clamp(22px, 3vw, 30px); font-weight: 700; color: var(--text);
+        line-height: 1.25; margin-bottom: 14px; }
+      .app-cta-desc { font-size: 15px; color: var(--text-dim); line-height: 1.7;
+        max-width: 480px; margin: 0 auto 22px; }
+      .app-cta-features { display: flex; gap: 6px 18px; justify-content: center;
+        flex-wrap: wrap; margin-bottom: 28px; }
+      .app-cta-features span { font-size: 13px; color: var(--gold-light); opacity: 0.8; }
+      .app-cta-btn { display: inline-flex; align-items: center; gap: 10px;
+        background: var(--gold); color: #120505; text-decoration: none;
+        padding: 15px 34px; border-radius: 12px; font-size: 16px; font-weight: 700;
+        letter-spacing: -0.01em; transition: all 0.2s;
+        box-shadow: 0 4px 22px rgba(200, 136, 30, 0.3); }
+      .app-cta-btn:hover { background: var(--gold-light); transform: translateY(-2px);
+        box-shadow: 0 8px 32px rgba(200, 136, 30, 0.5); }
+      .app-cta-sub { font-size: 12px; color: rgba(245, 232, 204, 0.35); margin-top: 14px; letter-spacing: 0.04em; }
+
+      .chapter-nav { display: flex; justify-content: space-between; align-items: center;
+        gap: 16px; padding: 20px 0; border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border); margin: 0 0 40px; }
+      .ch-nav-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .ch-nav-title { font-size: 14px; font-weight: 600; color: var(--text); }
+
+      footer { background: var(--bg-alt); border-top: 1px solid var(--border);
+        padding: 32px 28px; text-align: center; font-size: 12px;
+        letter-spacing: 0.06em; color: var(--text-dimmer); }
+      footer a { color: var(--text-dimmer); transition: color 0.15s; }
+      footer a:hover { color: var(--gold-light); }
+      footer span { color: var(--gold); }
+
+      @media (max-width: 700px) {
+        .article-hero { padding: 44px 20px 40px; }
+        .article-wrap { padding: 40px 20px 60px; }
+        .nav-inner { padding: 0 20px; }
+        .nav-links { gap: 16px; }
+        .nav-links li:not(:last-child) { display: none; }
+        .mobile-nav-toggle { display: flex; }
+        .shloka-body { grid-template-columns: 1fr; }
+        .app-cta { padding: 32px 24px; }
+        .pull-quote { padding: 22px 24px; }
+        .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+      }
+
+`
+
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Bhagavad Gita Chapter 10 — Vibhuti Yoga: Sparks of the Divine",
+    "description": "An opinionated reading of Bhagavad Gita Chapter 10 (Adhyay 10) — 42 verses on divine manifestations. The source of all (10.8), the lamp of knowledge inside (10.11), 'I am the Self in the heart of all beings' (10.20), and the closing verse — the universe held by a single fragment (10.42).",
+    "author": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://wisdomquotes.in/assets/male-logo-dark.webp"
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://wisdomquotes.in/assets/chapter10.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "datePublished": "2026-05-18",
+    "dateModified": "2026-05-18",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10"
+    },
+    "about": {
+      "@type": "Book",
+      "name": "Bhagavad Gita",
+      "author": {
+        "@type": "Person",
+        "name": "Ved Vyasa"
+      }
+    },
+    "keywords": "bhagwat geeta chapter 10, bhagavad gita vibhuti yoga, bhagwat geeta adhyay 10, ekamshena sthito jagat, aham atma gudakesha, lamp of knowledge gita, sparks of divine bhagavad gita, divine manifestations gita"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Wisdom",
+        "item": "https://wisdomquotes.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://wisdomquotes.in/blogs/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bhagavad Gita Chapter 10 — Vibhuti Yoga",
+        "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Bhagavad Gita Chapter 10 about?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chapter 10, called Vibhuti Yoga (the Yoga of Divine Manifestations), is the Gita's training in where to look for the Divine. After Chapter 9 established that the Divine holds everything, Chapter 10 gives Arjuna a long list of where that holding becomes visible — in the sun, the moon, the heart of every being, the silence among secrets, every form of brilliance in creation. The chapter closes with 10.42: the entire universe is sustained by a single fragment of the Divine."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is vibhuti in the Bhagavad Gita?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vibhuti means divine power, glory, or manifestation. In the context of Chapter 10, it refers to specific forms in which the Divine becomes especially visible — the supreme example of any category. Krishna gives Arjuna dozens of these examples. The deeper teaching is the pattern: wherever you encounter the highest expression of any quality — strength, beauty, knowledge, restraint — you are encountering a spark of one source."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the meaning of Bhagavad Gita 10.11?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verse 10.11 says, 'Out of compassion for them, dwelling in their own being, I destroy the darkness born of ignorance with the shining lamp of knowledge.' The verse places the lamp inside the devotee — ātma-bhāva-stho. The Divine is not lighting them from outside; the Divine has lit a lamp from within them. The image is intimate: the work of clearing inner darkness is not yours alone to do, because a light has already been placed inside you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does 'aham atma' mean in Gita 10.20?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verse 10.20 says, 'aham ātmā guḍākeśa sarva-bhūtāśaya-sthitaḥ' — 'I am the Self, Arjuna, seated in the heart of all beings.' It is the centre verse of Chapter 10. After many verses about external splendour, Krishna turns inward and names the most important manifestation — the Divine is in the heart of every being. The teaching reframes every other manifestation as a consequence of this one."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does Bhagavad Gita 10.41 mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verse 10.41 — 'Whatever being or thing is endowed with splendour, beauty, or power — know it to be born from a spark of my radiance' — is the portable summary of Chapter 10. It states the rule: wherever you see brilliance, the brilliance is borrowed. Trace it back and you reach the source. The verse turns the entire chapter into a practice: when you encounter greatness, ask where it came from."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the significance of Gita 10.42?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verse 10.42, the final verse of Chapter 10, says, 'Or, Arjuna, what need is there to know all this in such detail? I support this entire universe with a single fragment of myself.' The verse retires the long catalogue with a breathtaking reduction. Whatever you have seen, the unseen is incalculably greater. The whole universe rests on one fragment. The chapter ends in awe and sets up Arjuna's request in Chapter 11 to see the cosmic form directly."
+        }
+      }
+    ]
+  }
+]
+
+export default function ChapterPage10() {
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: pageCSS }} />
+      {schemas.map((s, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
+      ))}
+
+      {/* ── NAV ── */}
+      <nav>
+        <div className="nav-inner">
+          <a href="/" className="logo">
+            <div className="logo-mark">
+              <img src="/assets/male-logo-dark.webp" alt="Wisdom" />
+            </div>
+            Wisdom
+          </a>
+          <MobileNavToggle />
+          <ul className="nav-links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How it works</a></li>
+            <li><a href="/#topics">Topics</a></li>
+            <li><a href="/blogs" className="active">Blog</a></li>
+            <li>
+              <a
+                href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+                target="_blank"
+                rel="noopener"
+                className="btn-nav"
+                data-mp-location="nav"
+              >Download Free</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      {/* ── BREADCRUMB ── */}
+      <div className="breadcrumb">
+        <div className="breadcrumb-inner">
+          <a href="/">Wisdom</a>
+          <span className="bc-sep">/</span>
+          <a href="/blogs">Blog</a>
+          <span className="bc-sep">/</span>
+          Bhagavad Gita Chapter 10
+        </div>
+      </div>
+
+      {/* ── HERO ── */}
+      <div className="article-hero">
+        <div className="article-hero-inner">
+          <div className="chapter-badge">
+            <div className="chapter-badge-dot"></div>
+            Bhagavad Gita · Adhyay 10 · 42 Verses
+            <div className="chapter-badge-dot"></div>
+          </div>
+          <h1 className="article-title">
+            Bhagavad Gita Chapter 10 (Adhyay 10) —<br />
+            <em>Vibhuti Yoga</em>
+          </h1>
+          <p className="article-subtitle">
+            Where to look for God: in everything that shines. The lamp of knowledge inside the heart. The Self at the beginning, middle, and end. And the single fragment that holds the whole universe.
+          </p>
+          <div className="article-meta">
+            <span className="meta-item">42 verses · Vibhuti Yoga</span>
+            <span className="meta-sep">·</span>
+            <span className="meta-item">~13 min read</span>
+            <span className="meta-sep">·</span>
+            <span className="meta-item">Chapter 10 of 18</span>
+          </div>
+        </div>
+      </div>
+
+      {/* ── ARTICLE ── */}
+      <div className="article-wrap">
+        <article className="prose">
+          <figure className="chapter-image">
+            <img
+              src="/assets/chapter10.webp"
+              alt="Sparks of divine radiance scattered across the manifest world — Chapter 10 of the Bhagavad Gita, Vibhuti Yoga, teaches that every form of greatness in creation is a fragment of one source."
+              width="1200"
+              height="675"
+              loading="eager"
+            />
+          </figure>
+
+        <p className="lead">
+          Chapter 10 is a chapter about where to look. After Chapter 9 establishes that the Divine holds everything, Chapter 10 turns the next, more practical question — if the Divine is in everything, how do I begin to see it? Krishna's answer is unexpectedly concrete. He gives Arjuna a long list of specifics. Look at the sun. Look at the moon. Look at consciousness inside living beings. Look at the silence among secrets. Look at greatness wherever you find it — in art, in courage, in beauty, in restraint — and recognise it as a spark of one radiance.
+        </p>
+
+        <p>
+          This is the chapter most often misread as a mere catalogue. It is not. The list is a training in attention. Most people, most of the time, look at the world and see only itself — a sun, a person, a kind word. Chapter 10 is asking you to look again and notice the second layer. Behind every form of brilliance, the Gita says, is the same source. Once you start seeing this pattern, you cannot easily unsee it. The chapter is not asking you to believe anything. It is asking you to look, with a slightly different question in mind.
+        </p>
+
+        <nav className="toc" aria-label="Table of contents">
+          <div className="toc-label">In this article</div>
+          <ol className="toc-list">
+            <li><a href="#source-of-all">I am the source of all — 10.8</a></li>
+            <li><a href="#lamp-inside">The lamp of knowledge — 10.10 and 10.11</a></li>
+            <li><a href="#self-in-heart">I am the Self in the heart of all beings — 10.20</a></li>
+            <li><a href="#look-at-greatness">How to read a long list of manifestations</a></li>
+            <li><a href="#silence-power">Silence among secrets — and what true power looks like</a></li>
+            <li><a href="#spark">A spark of radiance — 10.41</a></li>
+            <li><a href="#single-fragment">One fragment holds the universe — 10.42</a></li>
+            <li><a href="#all-verses">All verses at a glance</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verses 10.7–10.8 · The Source
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="source-of-all">Where Everything Comes From</h2>
+
+        <p>
+          Chapter 10 opens by establishing what the rest of the chapter will illustrate. Verse 10.8 is the structural claim: <em>I am the source of all; from me, everything proceeds. Knowing this, the wise worship me with wholehearted feeling.</em> The verse is doing two things at once. Metaphysically, it locates the origin of everything in a single point. Practically, it explains why the wise person responds to that knowledge with devotion. When you really know where everything comes from, the response is not analysis. It is reverence.
+        </p>
+
+        <p>
+          Notice the chain. First the recognition (<em>iti matvā</em> — knowing this). Then the response (<em>bhajante</em> — they worship). Then the quality of the response (<em>bhāva-samanvitāḥ</em> — full of feeling). The Gita is not asking for an intellectual concession. It is describing what understanding actually feels like when it lands. The mind sees the source. The heart turns toward it. The two are not separate moves.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 10.8</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते ।<br />इति मत्वा भजन्ते मां बुधा भावसमन्विताः ॥
+          </div>
+          <div className="shloka-iast">
+            ahaṃ sarvasya prabhavo mattaḥ sarvaṃ pravartate |<br />iti matvā bhajante māṃ budhā bhāva-samanvitāḥ ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                I am the source of all; from me everything proceeds. Knowing this, the wise worship me with wholehearted feeling.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">Knowing the source changes the response</div>
+              <div className="shloka-insight">
+                Information alone does not produce devotion. But information about a source — once it actually lands — changes the relationship to everything downstream. The verse is describing what happens after the abstraction stops being an abstraction. The wise are not wise because they know more. They are wise because the knowing has become love.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Knowing the source turns understanding into devotion."
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verses 10.10–10.11 · The Lamp Inside
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="lamp-inside">The Lamp of Knowledge Lit From Within</h2>
+
+        <p>
+          Verses 10.10 and 10.11 are a pair, and together they describe what happens to a person whose devotion has become continuous. Krishna says: to those who are always united with me, who worship with love, I give the <em>buddhi-yoga</em> — the yoga of discernment — by which they come to me. And then he goes further: out of compassion for them, I destroy the darkness born of ignorance, dwelling in their own being, with the shining lamp of knowledge.
+        </p>
+
+        <p>
+          Look closely at where the lamp is. It is <em>ātma-bhāva-stho</em> — placed in their own being. The Divine is not lighting the lamp from outside, illuminating them. The Divine is lighting a lamp from inside them. The image is intimate. The conditions for the lamp's lighting are simple — continuous devotion, love — and the result is the most reassuring promise in the Gita: the darkness in you is not yours alone to fight. It is dispelled by a light that has been placed inside you.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 10.10</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम् ।<br />ददामि बुद्धियोगं तं येन मामुपयान्ति ते ॥
+          </div>
+          <div className="shloka-iast">
+            teṣāṃ satata-yuktānāṃ bhajatāṃ prīti-pūrvakam |<br />dadāmi buddhi-yogaṃ taṃ yena mām upayānti te ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                To those who are constantly united with me, who worship me with love, I give the yoga of discernment by which they come to me.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">What buddhi-yoga is</div>
+              <div className="shloka-insight">
+                <em>Buddhi-yoga</em> is not technique. It is the gift of clearer seeing — the ability to discriminate, in real time, between what is real and what only seems real. The Gita's promise is that this is not earned by effort alone. It is given. The condition is not cleverness. It is continuous orientation toward the Divine in love.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Steady devotion itself draws forth the understanding that reaches the divine."
+          </div>
+        </div>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 10.11</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            तेषामेवानुकम्पार्थमहमज्ञानजं तमः ।<br />नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥
+          </div>
+          <div className="shloka-iast">
+            teṣām evānukampārtham aham ajñāna-jaṃ tamaḥ |<br />nāśayāmy ātma-bhāva-stho jñāna-dīpena bhāsvatā ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Out of compassion for them, dwelling in their own being, I destroy the darkness born of ignorance with the shining lamp of knowledge.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The lamp is on your side of the wall</div>
+              <div className="shloka-insight">
+                The verse places the lamp inside the devotee — <em>ātma-bhāva-stho</em>. This matters. The Divine is not a remote light source you are trying to reach. The light is lit inside you. Your work is not to generate it. Your work is to keep the room ordered enough that the lamp's light is not blocked by your own clutter.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Compassion becomes knowledge that burns away inner darkness."
+          </div>
+        </div>
+
+        <div className="pull-quote">
+          <blockquote>
+            "Out of compassion, dwelling in your own being, I destroy the darkness with the shining lamp of knowledge."
+          </blockquote>
+          <cite>Bhagavad Gita 10.11</cite>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verse 10.20 · The Self in the Heart
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="self-in-heart">I Am the Self Seated in the Heart of All Beings</h2>
+
+        <p>
+          Verse 10.20 is the moment in Chapter 10 where the long list of manifestations gets a personal centre. Krishna says: I am the Self, Arjuna, seated in the heart of all beings. I am the beginning, the middle, and the end of all beings. After many verses about external splendour — among radiant beings I am Indra, among rivers I am the Ganga — the verse turns inward. The most important manifestation is not outside. It is in the heart of every being you will ever meet.
+        </p>
+
+        <p>
+          This is the verse that the rest of the chapter's list exists to support. If you only read the external list, the Gita can sound like a celebration of greatness. Read with 10.20 at the centre, the chapter reverses direction. Yes, the Divine is in the brilliant. The Divine is also in the heart of the unremarkable person sitting next to you on the train. The two manifestations are the same manifestation, in different clothing. The chapter is teaching you to see both with the same recognition.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 10.20</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            अहमात्मा गुडाकेश सर्वभूताशयस्थितः ।<br />अहमादिश्च मध्यं च भूतानामन्त एव च ॥
+          </div>
+          <div className="shloka-iast">
+            aham ātmā guḍākeśa sarva-bhūtāśaya-sthitaḥ |<br />aham ādiś ca madhyaṃ ca bhūtānām anta eva ca ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                I am the Self, Arjuna, seated in the heart of all beings. I am the beginning, the middle, and the end of all beings.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The centre verse of the chapter</div>
+              <div className="shloka-insight">
+                Every other manifestation in Chapter 10 is, in some sense, a footnote to this one. If the Self is in every heart, then everything else — the sun, the moon, the sacred sound — is a consequence, not the centre. The verse asks you to look at the next person you meet with a different awareness: you are looking at the dwelling place of what you have been searching for.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Everything that exists is held within one enduring presence."
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verses 10.21–10.37 · The Long List
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="look-at-greatness">How to Read the Long Catalogue of Manifestations</h2>
+
+        <p>
+          Beginning at verse 10.21 and continuing for about fifteen verses, Krishna gives Arjuna a long catalogue. Among the suns, I am Vishnu. Among the rivers, the Ganga. Among the months, Margashirsha. Among letters, the letter A. Modern readers sometimes find this section tedious — a list of mostly culturally specific examples. That is to misread the section's purpose. The catalogue is not asking you to memorise it. It is training you in a way of seeing.
+        </p>
+
+        <p>
+          Notice the structure of every entry. Krishna names a category — the senses, the seasons, the rivers — and within that category, he names what is supreme. The lesson is portable. Whenever you encounter a category, look for its highest expression, and recognise that expression as the Divine. The list teaches a habit: look at the best of something, see the spark, repeat. After enough repetitions, you start seeing it everywhere. The chapter is, in this sense, a perception training disguised as a hymn.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 10.22</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            वेदानां सामवेदोऽस्मि देवानामस्मि वासवः ।<br />इन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना ॥
+          </div>
+          <div className="shloka-iast">
+            vedānāṃ sāma-vedo'smi devānām asmi vāsavaḥ |<br />indriyāṇāṃ manaś cāsmi bhūtānām asmi cetanā ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Among the Vedas I am the Sama Veda; among the radiant beings I am Indra. Among the senses I am the mind; among living beings I am consciousness.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">Read for the pattern, not the items</div>
+              <div className="shloka-insight">
+                The items are culturally bound. The pattern is universal. Whatever a category's exemplar is — for you, in your time, your place — that is where the Divine is most visibly shining. Read the verse with this question: in my world, what is the equivalent? Not as escape from the verse, but as enactment of it.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "The divine is not elsewhere; it is the awareness within everything."
+          </div>
+        </div>
+
+        <div className="highlight-box">
+          <p>
+            <strong>How to actually use Chapter 10's catalogue:</strong> Pick any category in your life — books, music, kinds of conversations, types of meals, kinds of weather. Identify, honestly, what its supreme example is, for you. Then sit with the recognition that what you are admiring is a spark. The admiration was already half-spiritual. The chapter is just asking you to notice the second half.
+          </p>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verse 10.38 · The Quietest Power
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="silence-power">Silence Among Secrets, Restraint Among Powers</h2>
+
+        <p>
+          Verse 10.38 is one of the chapter's surprising moments. Krishna says: among enforcers, I am the rod of punishment; among those seeking victory, I am wise policy; among secrets, I am silence; among the wise, I am knowledge. The first two are conventional. The third is the verse's quiet bombshell. The deepest secret is not a hidden word. It is silence itself.
+        </p>
+
+        <p>
+          This contradicts most assumptions about spiritual depth. We tend to imagine the highest teaching as a sentence that, once spoken, would unlock everything. The Gita says the opposite. The highest teaching has already been spoken. What is hidden — what is most worth protecting — is the silence underneath the words. Real power, the verse adds, is not volume. It is restraint and timing — knowing what to say, when, and what to leave unsaid. The most important spiritual capacity, by this reading, is the capacity to be quiet when speaking would be easier.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 10.38</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम् ।<br />मौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम् ॥
+          </div>
+          <div className="shloka-iast">
+            daṇḍo damayatām asmi nītir asmi jigīṣatām |<br />maunaṃ caivāsmi guhyānāṃ jñānaṃ jñānavatām aham ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Among enforcers, I am the rod of punishment; among those seeking victory, I am wise policy; among secrets, I am silence; among the wise, I am knowledge.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The deepest secret is silence</div>
+              <div className="shloka-insight">
+                The Sanskrit is <em>maunaṃ caivāsmi guhyānāṃ</em> — among secrets I am silence. The line subverts every model of esoteric teaching. The hidden knowledge is not a hidden sentence. It is the silence that the sentence is trying to gesture at. When the silence is reached, the sentence is no longer needed. The Gita is, in this verse, quietly retiring its own authority.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "True power is measured by restraint, silence, and clear understanding."
+          </div>
+        </div>
+
+        <div className="pull-quote">
+          <blockquote>
+            "Among secrets, I am silence. Among the wise, I am knowledge."
+          </blockquote>
+          <cite>Bhagavad Gita 10.38</cite>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verses 10.41–10.42 · The Closing Reveal
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="spark">Every Form of Brilliance Is a Spark</h2>
+
+        <p>
+          Chapter 10 closes with two of its most important verses. Verse 10.41 says: whatever being or thing is endowed with splendour, beauty, or power — know that to have arisen from a spark of my radiance. The verse retrofits everything that came before. Now you understand why Krishna spent so long enumerating examples of greatness. He was showing you, again and again, what a spark looks like.
+        </p>
+
+        <p>
+          Then comes verse 10.42, the chapter's final word: <em>or, Arjuna, what need is there to know all this in such detail? I sustain this entire universe with a single fragment of myself.</em> The Gita ends the catalogue by admitting that the catalogue is, in the end, unnecessary. You did not need every example. The point of every example was the same. The Divine is in the brilliant, in the ordinary, in the supreme, in the small, and after all of it — the Divine has not been exhausted. A single fragment holds the universe. Everything you have seen is a smaller fragment of that fragment.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 10.41</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा ।<br />तत्तदेवावगच्छ त्वं मम तेजोंऽशसंभवम् ॥
+          </div>
+          <div className="shloka-iast">
+            yad yad vibhūtimat sattvaṃ śrīmad ūrjitam eva vā |<br />tat tad evāvagaccha tvaṃ mama tejo'ṃśa-sambhavam ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Whatever being or thing has splendour, beauty, or power — know it to be born from a spark of my radiance.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The portable version of Chapter 10</div>
+              <div className="shloka-insight">
+                If you only remember one verse from this chapter, make it this one. The verse is a rule: anywhere you see brilliance, the brilliance is borrowed. Trace the brilliance back, and you reach the source. After enough tracing, the source is no longer distant. You start to recognise it everywhere — in art, in courage, in love, in a clear sky, in a kind sentence said at the right time.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Every genuine greatness is only a spark of my radiance."
+          </div>
+        </div>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 10.42</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            अथवा बहुनैतेन किं ज्ञातेन तवार्जुन ।<br />विष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत् ॥
+          </div>
+          <div className="shloka-iast">
+            athavā bahunaitena kiṃ jñātena tavārjuna |<br />viṣṭabhyāham idaṃ kṛtsnam ekāṃśena sthito jagat ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Or, Arjuna, what need is there to know all this in such detail? I support this entire universe with a single fragment of myself.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The line that retires the catalogue</div>
+              <div className="shloka-insight">
+                <em>Ekāṃśena</em> — with one fragment. The entire universe — every spark Krishna has just enumerated — is sustained by a single fragment of the Divine. The catalogue was not exhaustive. It could not be. The point of the catalogue was the recognition, and the recognition leads to a still bigger fact: whatever you have seen, the unseen is incalculably greater. The chapter ends in awe, not in inventory.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "The whole universe rests in a single fragment of the divine."
+          </div>
+        </div>
+
+        <div className="highlight-box">
+          <p>
+            <strong>Why this is the chapter's emotional ending:</strong> Chapter 10 starts as a list and ends as a reduction. After all the looking, the point is not that you have seen many things. The point is that what you have seen is a fragment of a fragment. The right response to that fact is not more cataloguing. It is the awe that produces, naturally, the vision Arjuna asks for in the very next chapter.
+          </p>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            All 42 Verses At a Glance
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="all-verses">The Complete Verse Reference</h2>
+
+        <table className="verse-table">
+          <thead>
+            <tr><th>Verse</th><th>Speaker</th><th>Teaching Essence</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>10.1</td><td>Krishna</td><td>Deeper truth arrives as care for the one who is ready</td></tr>
+            <tr><td>10.2</td><td>Krishna</td><td>Even the highest knowers stand inside the source they seek</td></tr>
+            <tr><td>10.3</td><td>Krishna</td><td>Clear recognition of the divine ends confusion and frees action</td></tr>
+            <tr><td>10.4</td><td>Krishna</td><td>All human qualities arise from the same source</td></tr>
+            <tr><td>10.5</td><td>Krishna</td><td>All qualities are expressions of the same divine source</td></tr>
+            <tr><td>10.6</td><td>Krishna</td><td>All lineages and worlds emerge from Krishna's mind</td></tr>
+            <tr><td>10.7</td><td>Krishna</td><td>True recognition of Krishna's presence makes devotion unshakable</td></tr>
+            <tr><td>10.8</td><td>Krishna</td><td>Knowing the source turns understanding into devotion</td></tr>
+            <tr><td>10.9</td><td>Krishna</td><td>Shared remembrance keeps devotion alive</td></tr>
+            <tr><td>10.10</td><td>Krishna</td><td>Steady devotion itself draws forth the understanding that reaches the divine</td></tr>
+            <tr><td>10.11</td><td>Krishna</td><td>Compassion becomes knowledge that burns away inner darkness</td></tr>
+            <tr><td>10.12</td><td>Arjuna</td><td>Recognition turns into surrender when the highest reality stands revealed</td></tr>
+            <tr><td>10.13</td><td>Arjuna</td><td>The deepest recognition is echoed by the wise and by Krishna himself</td></tr>
+            <tr><td>10.14</td><td>Arjuna</td><td>True recognition begins where ordinary beings cannot see</td></tr>
+            <tr><td>10.15</td><td>Arjuna</td><td>The supreme one is known fully only by the supreme one</td></tr>
+            <tr><td>10.16</td><td>Arjuna</td><td>Only the source can fully name its own presence in the world</td></tr>
+            <tr><td>10.17</td><td>Arjuna</td><td>Devotion needs a form the mind can return to again and again</td></tr>
+            <tr><td>10.18</td><td>Arjuna</td><td>True devotion never feels finished hearing the beloved</td></tr>
+            <tr><td>10.19</td><td>Krishna</td><td>The divine can be named briefly, never exhausted</td></tr>
+            <tr><td>10.20</td><td>Krishna</td><td>Everything that exists is held within one enduring presence</td></tr>
+            <tr><td>10.21</td><td>Krishna</td><td>Every radiance is a sign of one presence</td></tr>
+            <tr><td>10.22</td><td>Krishna</td><td>The divine is not elsewhere; it is the awareness within everything</td></tr>
+            <tr><td>10.23</td><td>Krishna</td><td>Greatness in the world is a visible sign of Krishna's presence</td></tr>
+            <tr><td>10.24</td><td>Krishna</td><td>Greatness in the world is a trace of Krishna everywhere</td></tr>
+            <tr><td>10.25</td><td>Krishna</td><td>The divine appears through the noblest forms of speech, ritual, and nature</td></tr>
+            <tr><td>10.26</td><td>Krishna</td><td>The finest forms in creation are windows into Krishna</td></tr>
+            <tr><td>10.27</td><td>Krishna</td><td>Greatness in the world is a visible trace of Krishna</td></tr>
+            <tr><td>10.28</td><td>Krishna</td><td>Power, fertility, and danger all reveal the same source</td></tr>
+            <tr><td>10.29</td><td>Krishna</td><td>The divine is visible in every order of existence</td></tr>
+            <tr><td>10.30</td><td>Krishna</td><td>Power, devotion, and majesty are all windows into one presence</td></tr>
+            <tr><td>10.31</td><td>Krishna</td><td>One reality appears as every noble force</td></tr>
+            <tr><td>10.32</td><td>Krishna</td><td>All creation and all truth-seeking speech point back to Krishna</td></tr>
+            <tr><td>10.33</td><td>Krishna</td><td>Even letters and time carry Krishna's presence</td></tr>
+            <tr><td>10.34</td><td>Krishna</td><td>Even death and virtue are expressions of the same divine source</td></tr>
+            <tr><td>10.35</td><td>Krishna</td><td>Sacred sound, time, and spring all carry the same presence</td></tr>
+            <tr><td>10.36</td><td>Krishna</td><td>What shines through victory and resolve is not separate from the divine</td></tr>
+            <tr><td>10.37</td><td>Krishna</td><td>Greatness in many forms is one presence showing itself</td></tr>
+            <tr><td>10.38</td><td>Krishna</td><td>True power is measured by restraint, silence, and clear understanding</td></tr>
+            <tr><td>10.39</td><td>Krishna</td><td>All existence grows from one hidden source</td></tr>
+            <tr><td>10.40</td><td>Krishna</td><td>No list can contain the divine's endless expressions</td></tr>
+            <tr><td>10.41</td><td>Krishna</td><td>Every genuine greatness is only a spark of my radiance</td></tr>
+            <tr><td>10.42</td><td>Krishna</td><td>The whole universe rests in a single fragment of the divine</td></tr>
+          </tbody>
+        </table>
+
+        <div className="chapter-nav">
+          <div>
+            <div className="ch-nav-label">Previous</div>
+            <a href="/blogs/bhagwat-geeta-chapter-9" className="ch-nav-title">Chapter 9 — Raja Vidya Raja Guhya Yoga</a>
+          </div>
+          <div style={{ textAlign: 'right' }}>
+            <div className="ch-nav-label">Next</div>
+            <a href="/blogs/bhagwat-geeta-chapter-11" className="ch-nav-title">Chapter 11 — Vishwarupa Darshana Yoga</a>
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Frequently Asked Questions
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <div className="faq-section" id="faq">
+          <div className="faq-header">
+            <div className="faq-header-label">Common questions</div>
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What is Bhagavad Gita Chapter 10 about?</div>
+            <div className="faq-a">
+              Chapter 10, called Vibhuti Yoga (the Yoga of Divine Manifestations), is the Gita's training in where to look for the Divine. After Chapter 9 established that the Divine holds everything, Chapter 10 gives Arjuna a long list of where that holding becomes visible — in the sun, the moon, the heart of every being, the silence among secrets, every form of brilliance in creation. The chapter closes with 10.42: the entire universe is sustained by a single fragment of the Divine.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What is vibhuti in the Bhagavad Gita?</div>
+            <div className="faq-a">
+              <em>Vibhuti</em> means divine power, glory, or manifestation. In the context of Chapter 10, it refers to specific forms in which the Divine becomes especially visible — the supreme example of any category. Krishna gives Arjuna dozens of these examples. The deeper teaching is the pattern: wherever you encounter the highest expression of any quality — strength, beauty, knowledge, restraint — you are encountering a spark of one source.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What is the meaning of Bhagavad Gita 10.11?</div>
+            <div className="faq-a">
+              Verse 10.11 says, 'Out of compassion for them, dwelling in their own being, I destroy the darkness born of ignorance with the shining lamp of knowledge.' The verse places the lamp inside the devotee — <em>ātma-bhāva-stho</em>. The Divine is not lighting them from outside; the Divine has lit a lamp from within them. The image is intimate: the work of clearing inner darkness is not yours alone to do, because a light has already been placed inside you.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What does 'aham atma' mean in Gita 10.20?</div>
+            <div className="faq-a">
+              Verse 10.20 says, '<em>aham ātmā guḍākeśa sarva-bhūtāśaya-sthitaḥ</em>' — 'I am the Self, Arjuna, seated in the heart of all beings.' It is the centre verse of Chapter 10. After many verses about external splendour, Krishna turns inward and names the most important manifestation — the Divine is in the heart of every being. The teaching reframes every other manifestation as a consequence of this one.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What does Bhagavad Gita 10.41 mean?</div>
+            <div className="faq-a">
+              Verse 10.41 — 'Whatever being or thing is endowed with splendour, beauty, or power — know it to be born from a spark of my radiance' — is the portable summary of Chapter 10. It states the rule: wherever you see brilliance, the brilliance is borrowed. Trace it back and you reach the source. The verse turns the entire chapter into a practice: when you encounter greatness, ask where it came from.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What is the significance of Gita 10.42?</div>
+            <div className="faq-a">
+              Verse 10.42, the final verse of Chapter 10, says, 'Or, Arjuna, what need is there to know all this in such detail? I support this entire universe with a single fragment of myself.' The verse retires the long catalogue with a breathtaking reduction. Whatever you have seen, the unseen is incalculably greater. The whole universe rests on one fragment. The chapter ends in awe and sets up Arjuna's request in Chapter 11 to see the cosmic form directly.
+            </div>
+          </div>
+        </div>
+
+          {/* ── APP CTA ── */}
+          <div className="app-cta">
+            <div className="app-cta-eyebrow">Free iOS App</div>
+            <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
+            <p className="app-cta-desc">
+              The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+            </p>
+            <div className="app-cta-features">
+              <span>✦ Daily shloka in Sanskrit</span>
+              <span>✦ Meaning &amp; modern context</span>
+              <span>✦ Home screen widget</span>
+            </div>
+            <a
+              href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+              target="_blank"
+              rel="noopener"
+              className="app-cta-btn"
+              data-mp-location="cta"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              Download on the App Store
+            </a>
+            <div className="app-cta-sub">Free · iPhone · No account needed</div>
+          </div>
+
+        </article>
+      </div>
+
+      {/* FOOTER */}
+      <footer>
+        <p>
+          Wisdom © 2026. Part of a{' '}
+          <a
+            href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+            target="_blank"
+            rel="noopener"
+            data-mp-location="footer"
+          >free iPhone app</a>{' '}
+          that delivers daily Bhagavad Gita shlokas. Made with reverence.
+        </p>
+        <p style={{ marginTop: '8px' }}>
+          <a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>
+        </p>
+      </footer>
+
+      <BlogTracker pageName="Bhagwat Geeta Chapter 10" />
+    </>
+  )
+}

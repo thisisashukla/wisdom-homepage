@@ -1,0 +1,1071 @@
+import type { Metadata } from 'next'
+import BlogTracker from '@/components/BlogTracker'
+import MobileNavToggle from '@/components/MobileNavToggle'
+
+export const metadata: Metadata = {
+  title: "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga: The Field and the Knower | Wisdom",
+  description: "An opinionated reading of Bhagavad Gita Chapter 13 (Adhyay 13) — 35 verses on the field and the knower of the field. The body as field (13.2), the qualities of true knowledge (13.8), the supreme that is everywhere (13.16), and seeing oneself as non-doer (13.30).",
+  keywords: "bhagwat geeta chapter 13, bhagavad gita kshetra kshetrajna yoga, bhagwat geeta adhyay 13, field and knower of the field, qualities of knowledge gita, purusha prakriti gita, non-doer self gita, 13.8 amanitvam adambhitvam",
+  openGraph: {
+    title: "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga: The Field and the Knower",
+    description: "The chapter that separates the seer from the seen. Body, reactions, thoughts — all observed by something that is not them.",
+    type: 'article',
+    url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13",
+    siteName: 'Wisdom',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter13.webp", width: 1200, height: 675 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga",
+    description: "The chapter that separates the seer from the seen. Body, reactions, thoughts — all observed by something that is not them.",
+    images: ["https://wisdomquotes.in/assets/chapter13.webp"],
+  },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13" },
+}
+
+const pageCSS = `
+
+      :root {
+        --maroon: #3d0c0c;
+        --maroon-mid: #5c1a1a;
+        --gold: #c8881e;
+        --gold-light: #f5c96a;
+        --gold-pale: #fdf3dc;
+        --gold-border: #e8c97a;
+        --gold-dim: rgba(200, 136, 30, 0.15);
+        --text: #f5e8cc;
+        --text-dim: rgba(245, 232, 204, 0.65);
+        --text-dimmer: rgba(245, 232, 204, 0.35);
+        --muted-2: rgba(245, 232, 204, 0.35);
+        --border: rgba(200, 136, 30, 0.2);
+        --bg: #120505;
+        --bg-warm: #190707;
+        --bg-alt: #0f0404;
+        --bg-card: rgba(255, 255, 255, 0.04);
+        --bg-card-hover: rgba(255, 255, 255, 0.07);
+        --max: 780px;
+      }
+
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+
+      body {
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: inherit; text-decoration: none; }
+      img { display: block; max-width: 100%; }
+
+      body > nav {
+        position: sticky; top: 0; z-index: 200;
+        background: rgba(18, 5, 5, 0.92);
+        backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 28px; height: 60px;
+        display: flex; align-items: center; justify-content: space-between; }
+      .logo { display: flex; align-items: center; gap: 9px;
+        font-family: "Playfair Display", Georgia, serif; font-size: 21px; font-weight: 700;
+        color: var(--gold-light); text-decoration: none; }
+      .logo-mark { width: 36px; height: 36px; border-radius: 50%; overflow: hidden;
+        border: 1.5px solid rgba(200, 136, 30, 0.4); flex-shrink: 0; }
+      .logo-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+      .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-dim); transition: color 0.18s; }
+      .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
+      .btn-nav { background: var(--gold) !important; color: #1a0606 !important;
+        padding: 8px 18px; border-radius: 8px; font-weight: 700; transition: opacity 0.18s; }
+      .btn-nav:hover { opacity: 0.88; }
+
+      .breadcrumb { background: var(--bg-alt); border-bottom: 1px solid var(--border); }
+      .breadcrumb-inner { max-width: 1100px; margin: 0 auto; padding: 10px 28px;
+        font-size: 12px; color: var(--text-dimmer); display: flex; gap: 8px; align-items: center; }
+      .breadcrumb-inner a { color: var(--text-dimmer); transition: color 0.15s; }
+      .breadcrumb-inner a:hover { color: var(--gold-light); }
+      .bc-sep { opacity: 0.4; }
+
+      .article-hero {
+        background: var(--bg-warm); padding: 64px 28px 56px;
+        border-bottom: 1px solid var(--border); position: relative; overflow: hidden;
+      }
+      .article-hero::before {
+        content: "अध्याय १३";
+        position: absolute; right: -10px; bottom: -20px;
+        font-family: "Noto Sans Devanagari", serif; font-size: 180px;
+        color: rgba(200, 136, 30, 0.04); line-height: 1; pointer-events: none; user-select: none;
+      }
+      .article-hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+
+      .chapter-badge { display: inline-flex; align-items: center; gap: 8px;
+        background: rgba(200, 136, 30, 0.1); border: 1px solid rgba(200, 136, 30, 0.28);
+        color: var(--gold-light); font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+        text-transform: uppercase; padding: 5px 14px; border-radius: 100px; margin-bottom: 20px; }
+      .chapter-badge-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold);
+        box-shadow: 0 0 6px var(--gold); flex-shrink: 0; }
+      .article-title { font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(28px, 4vw, 48px); font-weight: 700; color: var(--gold-light);
+        line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 12px; }
+      .article-title em { font-style: italic; color: #fff; }
+      .article-subtitle { font-size: 17px; color: var(--text-dim); font-weight: 300;
+        margin-bottom: 32px; line-height: 1.65; max-width: 580px; }
+      .article-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+      .meta-item { font-size: 12px; color: var(--text-dimmer); letter-spacing: 0.04em; }
+      .meta-sep { color: var(--border); }
+
+      .article-wrap { max-width: var(--max); margin: 0 auto; padding: 60px 28px 80px; }
+
+      .chapter-image {
+        margin: 0 0 36px;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        background: var(--bg-warm);
+        box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+      }
+      .chapter-image img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+
+      .prose h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700;
+        color: var(--gold-light); margin: 52px 0 16px; line-height: 1.25; }
+      .prose h2[id], .faq-section[id] { scroll-margin-top: 88px; }
+      .prose h2 em { font-style: italic; color: #fff; }
+
+      .prose h3 { font-family: "Playfair Display", Georgia, serif; font-size: 19px; font-weight: 700;
+        color: var(--text); margin: 32px 0 12px; }
+
+      .prose p { font-size: 16.5px; line-height: 1.78; color: var(--text-dim); margin-bottom: 20px; }
+      .prose p:last-child { margin-bottom: 0; }
+      .prose strong { font-weight: 600; color: var(--text); }
+      .prose em { font-style: italic; }
+      .lead { font-size: 19px; line-height: 1.7; color: var(--text); font-weight: 300; margin-bottom: 28px; }
+
+      .toc { background: var(--bg-card); border: 1px solid var(--border);
+        border-left: 3px solid var(--gold); border-radius: 0 12px 12px 0;
+        padding: 20px 24px; margin: 36px 0 40px; }
+      .toc-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
+        font-weight: 700; color: var(--gold); margin-bottom: 12px; }
+      .toc-list { list-style: none; display: flex; flex-direction: column; gap: 7px; counter-reset: toc-counter; }
+      .toc-list li { counter-increment: toc-counter; display: flex; align-items: baseline; gap: 10px; }
+      .toc-list li::before { content: counter(toc-counter); font-family: "Inter", sans-serif;
+        font-size: 10px; font-variant-numeric: tabular-nums; color: var(--text-dimmer); min-width: 14px; }
+      .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
+      .toc-list a:hover { color: var(--gold-light); }
+
+      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
+        border-radius: 14px; overflow: hidden; margin: 36px 0; }
+      .shloka-header { display: flex; align-items: center; justify-content: space-between;
+        padding: 12px 22px; border-bottom: 1px solid var(--border);
+        background: rgba(200, 136, 30, 0.05); }
+      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
+        text-transform: uppercase; font-weight: 600; }
+      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
+      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
+        font-size: 20px; line-height: 1.75; color: var(--gold-light);
+        border-bottom: 1px solid var(--border); }
+      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
+        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
+      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
+        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
+      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
+      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
+      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
+        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
+        font-style: italic; font-size: 15px; color: var(--text-dim); }
+
+      .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
+        background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
+      .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
+        font-style: italic; color: var(--gold-light); line-height: 1.5; margin-bottom: 10px; }
+      .pull-quote cite { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+        color: var(--gold); font-style: normal; font-weight: 600; }
+
+      .section-divider { display: flex; align-items: center; gap: 16px; margin: 56px 0 40px; }
+      .section-divider-line { flex: 1; height: 1px; background: var(--border); }
+      .section-divider-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+        color: var(--text-dimmer); white-space: nowrap; font-weight: 600; }
+
+      .highlight-box { background: rgba(200, 136, 30, 0.05); border: 1px solid var(--border);
+        border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0;
+        padding: 20px 24px; margin: 28px 0; }
+      .highlight-box p { font-size: 15px; line-height: 1.7; color: var(--text-dim); }
+      .highlight-box strong { color: var(--gold-light); }
+
+      .verse-table { width: 100%; border-collapse: collapse; font-size: 13.5px;
+        margin: 28px 0 40px; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+      .verse-table thead tr { background: rgba(200, 136, 30, 0.08); }
+      .verse-table thead th { text-align: left; padding: 12px 16px; font-size: 9.5px;
+        letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+      .verse-table tbody td { padding: 10px 16px; border-bottom: 1px solid var(--border);
+        vertical-align: top; line-height: 1.55; color: var(--text-dim); }
+      .verse-table tbody tr:last-child td { border-bottom: none; }
+      .verse-table tbody tr:hover { background: var(--bg-card); }
+      .verse-table td:first-child { font-size: 12px; color: var(--gold); font-weight: 600; white-space: nowrap; }
+
+      .faq-section { background: var(--bg-card); border: 1px solid var(--border);
+        border-top: 2px solid var(--gold); border-radius: 14px; overflow: hidden; margin: 48px 0; }
+      .faq-header { padding: 28px 32px 20px; border-bottom: 1px solid var(--border); }
+      .faq-header-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+        color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .faq-header h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
+        color: var(--gold-light); line-height: 1.3; margin: 0; }
+      .faq-item { padding: 22px 32px; border-bottom: 1px solid var(--border); }
+      .faq-item:last-child { border-bottom: none; }
+      .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
+      .faq-a { font-size: 14.5px; line-height: 1.72; color: var(--text-dim); }
+
+      .app-cta { background: linear-gradient(160deg, #2d0a0a 0%, #1a0606 100%);
+        border: 1px solid rgba(200, 136, 30, 0.25); border-top: 3px solid var(--gold);
+        border-radius: 20px; padding: 44px 48px 40px; margin: 48px 0 60px;
+        text-align: center; position: relative; overflow: hidden; }
+      .app-cta::before { content: "क्षेत्र"; position: absolute; top: -14px; right: -8px;
+        font-family: "Noto Sans Devanagari", sans-serif; font-size: 130px;
+        color: rgba(200, 136, 30, 0.05); line-height: 1; pointer-events: none; user-select: none; }
+      .app-cta-eyebrow { display: inline-flex; align-items: center; background: rgba(200, 136, 30, 0.12);
+        border: 1px solid rgba(200, 136, 30, 0.35); color: var(--gold-light); font-size: 11px;
+        font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; padding: 5px 14px;
+        border-radius: 20px; margin-bottom: 20px; }
+      .app-cta-headline { font-family: "Playfair Display", serif;
+        font-size: clamp(22px, 3vw, 30px); font-weight: 700; color: var(--text);
+        line-height: 1.25; margin-bottom: 14px; }
+      .app-cta-desc { font-size: 15px; color: var(--text-dim); line-height: 1.7;
+        max-width: 480px; margin: 0 auto 22px; }
+      .app-cta-features { display: flex; gap: 6px 18px; justify-content: center;
+        flex-wrap: wrap; margin-bottom: 28px; }
+      .app-cta-features span { font-size: 13px; color: var(--gold-light); opacity: 0.8; }
+      .app-cta-btn { display: inline-flex; align-items: center; gap: 10px;
+        background: var(--gold); color: #120505; text-decoration: none;
+        padding: 15px 34px; border-radius: 12px; font-size: 16px; font-weight: 700;
+        letter-spacing: -0.01em; transition: all 0.2s;
+        box-shadow: 0 4px 22px rgba(200, 136, 30, 0.3); }
+      .app-cta-btn:hover { background: var(--gold-light); transform: translateY(-2px);
+        box-shadow: 0 8px 32px rgba(200, 136, 30, 0.5); }
+      .app-cta-sub { font-size: 12px; color: rgba(245, 232, 204, 0.35); margin-top: 14px; letter-spacing: 0.04em; }
+
+      .chapter-nav { display: flex; justify-content: space-between; align-items: center;
+        gap: 16px; padding: 20px 0; border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border); margin: 0 0 40px; }
+      .ch-nav-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+        color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
+      .ch-nav-title { font-size: 14px; font-weight: 600; color: var(--text); }
+
+      footer { background: var(--bg-alt); border-top: 1px solid var(--border);
+        padding: 32px 28px; text-align: center; font-size: 12px;
+        letter-spacing: 0.06em; color: var(--text-dimmer); }
+      footer a { color: var(--text-dimmer); transition: color 0.15s; }
+      footer a:hover { color: var(--gold-light); }
+      footer span { color: var(--gold); }
+
+      @media (max-width: 700px) {
+        .article-hero { padding: 44px 20px 40px; }
+        .article-wrap { padding: 40px 20px 60px; }
+        .nav-inner { padding: 0 20px; }
+        .nav-links { gap: 16px; }
+        .nav-links li:not(:last-child) { display: none; }
+        .mobile-nav-toggle { display: flex; }
+        .shloka-body { grid-template-columns: 1fr; }
+        .app-cta { padding: 32px 24px; }
+        .pull-quote { padding: 22px 24px; }
+        .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
+      }
+
+`
+
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga: The Field and the Knower",
+    "description": "An opinionated reading of Bhagavad Gita Chapter 13 (Adhyay 13) — 35 verses on the field and the knower of the field. The body as field (13.2), the qualities of true knowledge (13.8), the supreme that is everywhere (13.16), and seeing oneself as non-doer (13.30).",
+    "author": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://wisdomquotes.in/assets/male-logo-dark.webp"
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://wisdomquotes.in/assets/chapter13.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "datePublished": "2026-05-18",
+    "dateModified": "2026-05-18",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13"
+    },
+    "about": {
+      "@type": "Book",
+      "name": "Bhagavad Gita",
+      "author": {
+        "@type": "Person",
+        "name": "Ved Vyasa"
+      }
+    },
+    "keywords": "bhagwat geeta chapter 13, bhagavad gita kshetra kshetrajna yoga, bhagwat geeta adhyay 13, field and knower of the field, qualities of knowledge gita, purusha prakriti gita, non-doer self gita, 13.8 amanitvam adambhitvam"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Wisdom",
+        "item": "https://wisdomquotes.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://wisdomquotes.in/blogs/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga",
+        "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Bhagavad Gita Chapter 13 about?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chapter 13, called Kshetra Kshetrajna Vibhaga Yoga (the Yoga of the Distinction Between the Field and the Knower of the Field), is the Gita's most precise piece of metaphysical work. Krishna teaches that the body, mind, and reactions are the field (kṣetra), and the awareness that observes them is the knower of the field (kṣetrajña). The chapter then describes the qualities of true knowledge (13.8-12), the supreme reality that is both near and far (13.16), and the freedom that comes from seeing the self as the non-doer (13.30)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the field and the knower of the field in the Bhagavad Gita?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In verse 13.2, Krishna says: 'This body is called the field. The one who knows it is the knower of the field.' The body, mind, emotions, and reactions are all the field — they are what is observed. The knower is the awareness that does the observing. The distinction is the foundation of the Gita's psychology: most suffering comes from confusing the observer with what is being observed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the 18 qualities of knowledge in Bhagavad Gita 13.8-12?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verses 13.8 through 13.12 list eighteen qualities of true knowledge: absence of pride, absence of pretence, non-violence, patience, simplicity, service to the teacher, cleanliness, steadiness, self-control, detachment from sense objects, absence of egoism, recognition of birth-death-ageing-sickness as facts, non-attachment to family, equanimity, unwavering devotion, liking for solitude, constant awareness of the inner reality, and seeing the supreme as the goal. The list is striking because it is almost entirely about character and inner texture, not about ritual or external observance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does Bhagavad Gita 13.16 mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verse 13.16 describes the supreme reality as outside and within all beings, moving and unmoving, too subtle to be known, and 'far away and near at hand' (dūra-sthaṃ ca antike ca). The teaching is that what is everywhere cannot be located in any particular place — and is therefore, in one sense, far (because it is not localised) and in another sense, near (because it is not absent from anywhere)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does it mean to see oneself as the non-doer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In verse 13.30, Krishna says, 'One who sees all actions as performed by nature, and sees the self as the non-doer, sees rightly.' This does not mean abdicating responsibility for one's actions. It means recognising that the deepest self — the awareness — is not the originator of activity in the way the ego insists. Actions happen through the body and mind; the awareness witnesses them. The teaching dissolves a particular kind of suffering — the heavy fiction that you alone are the cause of everything that happens through you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the sun and field image in Bhagavad Gita 13.34?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verse 13.34 says, 'As one sun illuminates the whole world, so the knower of the field illuminates the entire field.' The image condenses the chapter into one comparison. The sun is not affected by what it lights — dust does not make it dusty, cold does not make it cold. The same is true of awareness: it lights up everything in the field of experience, but is not stained by what it observes. Grief is fully seen; the awareness seeing it remains as it was."
+        }
+      }
+    ]
+  }
+]
+
+export default function ChapterPage13() {
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: pageCSS }} />
+      {schemas.map((s, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
+      ))}
+
+      {/* ── NAV ── */}
+      <nav>
+        <div className="nav-inner">
+          <a href="/" className="logo">
+            <div className="logo-mark">
+              <img src="/assets/male-logo-dark.webp" alt="Wisdom" />
+            </div>
+            Wisdom
+          </a>
+          <MobileNavToggle />
+          <ul className="nav-links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How it works</a></li>
+            <li><a href="/#topics">Topics</a></li>
+            <li><a href="/blogs" className="active">Blog</a></li>
+            <li>
+              <a
+                href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+                target="_blank"
+                rel="noopener"
+                className="btn-nav"
+                data-mp-location="nav"
+              >Download Free</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      {/* ── BREADCRUMB ── */}
+      <div className="breadcrumb">
+        <div className="breadcrumb-inner">
+          <a href="/">Wisdom</a>
+          <span className="bc-sep">/</span>
+          <a href="/blogs">Blog</a>
+          <span className="bc-sep">/</span>
+          Bhagavad Gita Chapter 13
+        </div>
+      </div>
+
+      {/* ── HERO ── */}
+      <div className="article-hero">
+        <div className="article-hero-inner">
+          <div className="chapter-badge">
+            <div className="chapter-badge-dot"></div>
+            Bhagavad Gita · Adhyay 13 · 35 Verses
+            <div className="chapter-badge-dot"></div>
+          </div>
+          <h1 className="article-title">
+            Bhagavad Gita Chapter 13 (Adhyay 13) —<br />
+            <em>Kshetra Kshetrajna Vibhaga Yoga</em>
+          </h1>
+          <p className="article-subtitle">
+            The chapter that separates the seer from the seen. Your body, your reactions, your moods — all observed. By something that is not them. The Gita's most precise diagnostic, hidden in one of its quietest chapters.
+          </p>
+          <div className="article-meta">
+            <span className="meta-item">35 verses · Kshetra Kshetrajna Vibhaga Yoga</span>
+            <span className="meta-sep">·</span>
+            <span className="meta-item">~13 min read</span>
+            <span className="meta-sep">·</span>
+            <span className="meta-item">Chapter 13 of 18</span>
+          </div>
+        </div>
+      </div>
+
+      {/* ── ARTICLE ── */}
+      <div className="article-wrap">
+        <article className="prose">
+          <figure className="chapter-image">
+            <img
+              src="/assets/chapter13.webp"
+              alt="The field and the knower of the field — a meditator observing the play of body, sensation, and thought without being captured by it. Chapter 13 of the Bhagavad Gita."
+              width="1200"
+              height="675"
+              loading="eager"
+            />
+          </figure>
+
+        <p className="lead">
+          Chapter 13 is the Gita's most precise piece of metaphysical work, and in some ways its quietest. The chapter does not have a single famous verse the way Chapter 2 or Chapter 11 does. What it has is one of the most useful distinctions in any philosophical tradition — the difference between the <em>kṣetra</em>, the field, and the <em>kṣetrajña</em>, the knower of the field. The body, the mind, the emotions, the conditioned reactions — all of these are the field. The awareness that observes them, that does not change as they change, is the knower.
+        </p>
+
+        <p>
+          Once you grasp this distinction, much of the Gita's earlier teaching becomes clearer. The non-attachment of Chapter 2, the witness-self of Chapter 5, the steady mind of Chapter 6 — they all rest on this one move. You learn to recognize what is observed and what does the observing, and you stop identifying with what is observed. Most modern psychology, two thousand years later, is still rediscovering this distinction under different names. The Gita places it at the centre of Chapter 13 and works through the implications carefully, verse by verse.
+        </p>
+
+        <nav className="toc" aria-label="Table of contents">
+          <div className="toc-label">In this article</div>
+          <ol className="toc-list">
+            <li><a href="#body-as-field">The body is the field — 13.1 and 13.2</a></li>
+            <li><a href="#reactions-are-field">Your reactions belong to the field, not to you</a></li>
+            <li><a href="#qualities-of-knowledge">What knowledge actually looks like — 13.8</a></li>
+            <li><a href="#near-and-far">What is far away and yet within everything</a></li>
+            <li><a href="#attachment-binds">Why attachment to qualities keeps the cycle going</a></li>
+            <li><a href="#non-doer">Seeing oneself as the non-doer</a></li>
+            <li><a href="#sun-image">The awareness that lights everything — 13.34</a></li>
+            <li><a href="#all-verses">All verses at a glance</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verses 13.1–13.2 · The Foundational Distinction
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="body-as-field">The Body Is the Field. You Are the One Who Knows It.</h2>
+
+        <p>
+          Chapter 13 begins with Arjuna asking for the cleanest definitional work of the entire book. He wants to understand the field, the knower of the field, knowledge, and what is to be known. Krishna's reply in verse 13.2 is one of the Gita's most quietly transformative sentences: <em>idaṃ śarīraṃ kṣetram ity abhidhīyate</em> — this body is called the field. The one who knows it is the knower of the field.
+        </p>
+
+        <p>
+          Read it slowly. The body is the field. You are not the body. You are the one who knows the body. The same distinction applies, by extension, to the mind, the thoughts, the moods, the desires. All of these are the field — they are what is observed. The knower is what does the observing. Most psychological suffering, the Gita is suggesting, comes from confusing the observer with what is being observed. You feel anxiety, and instead of noticing that you are observing anxiety, you say <em>I am anxious</em> — and the identification deepens the anxiety. Chapter 13 is the patient unpicking of that confusion.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 13.2</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            श्रीभगवानुवाच<br />इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते ।<br />एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः ॥
+          </div>
+          <div className="shloka-iast">
+            śrī bhagavān uvāca |<br />idaṃ śarīraṃ kaunteya kṣetram ity abhidhīyate |<br />etad yo vetti taṃ prāhuḥ kṣetrajña iti tad-vidaḥ ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                The Blessed One said: this body, Arjuna, is called the field. The one who knows it — the knowers call the knower of the field.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The most useful sentence in modern psychology</div>
+              <div className="shloka-insight">
+                You are not your body. You are not your mind. You are not your moods. You are what is aware of all of these. This is not a metaphysical extravagance. It is the simplest observation a person can make about their own experience: there is what is happening, and there is the one to whom it is happening. The two are not identical, and the Gita is the early text that says so most plainly.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "The body is observed; the knower is something else."
+          </div>
+        </div>
+
+        <div className="pull-quote">
+          <blockquote>
+            "This body is called the field. The one who knows it is the knower of the field."
+          </blockquote>
+          <cite>Bhagavad Gita 13.2</cite>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verse 13.7 · The Reactions Belong to the Field
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="reactions-are-field">Your Reactions Are Not You — They Belong to the Field</h2>
+
+        <p>
+          Verse 13.7 extends the field-knower distinction in a way that is psychologically devastating once you absorb it. Krishna lists what belongs to the field. Desire. Aversion. Pleasure. Pain. The body. Consciousness in its organized form. Steadiness or its lack. All of these, he says, are the field together with its modifications. They are not the knower.
+        </p>
+
+        <p>
+          Read this list and you will recognize most of what you have been calling your inner life. The wanting. The not-wanting. The agreeable sensations. The disagreeable sensations. The Gita is saying — these are all weather, not the sky. They happen in the field. You are not the field. You are the one who knows the field. The implication, lived out, is enormous. The reaction that just took over you is, on this account, observable. If it is observable, it is not, finally, you. The freedom that becomes possible from this single insight is the freedom Chapter 13 is patient enough to spell out.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 13.7</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः ।<br />एतत्क्षेत्रं समासेन सविकारमुदाहृतम् ॥
+          </div>
+          <div className="shloka-iast">
+            icchā dveṣaḥ sukhaṃ duḥkhaṃ saṅghātaś cetanā dhṛtiḥ |<br />etat kṣetraṃ samāsena sa-vikāram udāhṛtam ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Desire, aversion, pleasure, pain, the body, consciousness, steadiness — this field, with its modifications, is briefly described.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">What this verse moves out of "you"</div>
+              <div className="shloka-insight">
+                Read the list. Desire. Aversion. Pleasure. Pain. Steadiness. These are what most of us call our identity. The verse moves all of them out of the knower category. You still have a desire — but the desire is something you are observing, not something you are. Once that shift happens, the desire's grip loosens. It is no longer wrestling you. It is just appearing, somewhere in your field of awareness.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Your reactions belong to the field, not to the knower."
+          </div>
+        </div>
+
+        <div className="highlight-box">
+          <p>
+            <strong>Why this changes daily practice:</strong> The next time anxiety arises, try this experiment. Instead of saying "I am anxious," say "there is anxiety arising in the field." The grammar feels strange at first. After a week, the grammar starts feeling more accurate. The anxiety is still there. You are no longer fused with it. Chapter 13 is teaching exactly this defusion, two thousand years before cognitive therapy named it.
+          </p>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verses 13.8–13.12 · The Qualities of Knowledge
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="qualities-of-knowledge">What Knowledge Actually Looks Like in a Person</h2>
+
+        <p>
+          Verses 13.8 through 13.12 contain the Gita's most concrete description of what knowledge looks like as a quality of character. The list is long — eighteen items in some traditional countings — and it is unexpectedly grounded. Absence of pride. Absence of pretence. Non-violence. Patience. Honesty. Service to the teacher. Cleanliness. Steadiness. Self-control. Detachment from sense objects. Absence of egoism. Recognition of birth, death, ageing, sickness as facts. Non-attachment to family. Constant equanimity. Unwavering devotion. A liking for solitude. Aversion to crowded social life. Constant awareness of the inner reality. And the seeing of the supreme reality as the goal.
+        </p>
+
+        <p>
+          Notice what the list is doing. The Gita has just made a metaphysical distinction — the field versus the knower. Now it asks: what does a person look like who has integrated this distinction? Not someone who has memorised more philosophy. Someone who has stopped needing to perform. Who has stopped reacting to provocation. Who has accepted ordinary facts like mortality without flinching. The list is the Gita's anti-portrait of egoic life — a description of what gets quieter when the field-knower confusion clears.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 13.8</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् ।<br />आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः ॥
+          </div>
+          <div className="shloka-iast">
+            amānitvam adambhitvam ahiṃsā kṣāntir ārjavam |<br />ācāryopāsanaṃ śaucaṃ sthairyam ātma-vinigrahaḥ ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Absence of pride, absence of pretence, non-violence, patience, simplicity, service to the teacher, cleanliness, steadiness, self-control.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The first nine qualities — and what they share</div>
+              <div className="shloka-insight">
+                Each of these qualities, looked at carefully, is the absence of a particular form of ego activity. Pride is ego. Pretence is ego. Violence is ego cornered. Impatience is ego in a hurry. The Gita is not adding new qualities to a person. It is describing what remains when the ego stops demanding so much airtime. The portrait is mostly subtractive.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "True strength is quiet discipline, not self-display."
+          </div>
+        </div>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 13.12</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम् ।<br />एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा ॥
+          </div>
+          <div className="shloka-iast">
+            adhyātma-jñāna-nityatvaṃ tattva-jñānārtha-darśanam |<br />etaj jñānam iti proktam ajñānaṃ yad ato'nyathā ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Constant awareness of the inner reality, and seeing the supreme reality as the meaning — this is called knowledge. Whatever is contrary to this is ignorance.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">Where the list ends</div>
+              <div className="shloka-insight">
+                The list ends with the two qualities the rest of the list was building toward. Constant inner awareness. Seeing the supreme reality as what life is for. The first eighteen items were the conditions; these two are the destination. The Gita is honest that the destination is not separate from the conditions. Without the absence of pride and pretence, the inner awareness does not stabilise. The character work and the metaphysical seeing are one motion.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Knowledge is seeing reality steadily; everything else is confusion."
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verse 13.16 · Near and Far
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="near-and-far">What Is Subtle Cannot Be Located — and Therefore Is Everywhere</h2>
+
+        <p>
+          Verse 13.16 is one of the chapter's most poetic moments, and one of its most precise. Krishna describes the supreme reality as inside and outside all beings, moving and unmoving, subtle and therefore unknowable, far away and near at hand. The phrase that catches readers is the last one. <em>Dūra-sthaṃ ca antike ca</em> — far away and near at hand. Both at once.
+        </p>
+
+        <p>
+          Why this paradox? Because what is everywhere cannot be located. What cannot be located is, in one sense, far — because it is not in any particular place you can point to. And in another sense, near — because there is no place it is not. The verse is not being mystical for the sake of being mystical. It is naming, precisely, the experience of trying to find the Divine. You cannot find it because it is not localised. You cannot miss it because it is not absent. The verse is, in this sense, a permanent answer to the spiritual question: where is it? Everywhere. Including, especially, in the place from which you were doing the searching.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 13.16</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            बहिरन्तश्च भूतानामचरं चरमेव च ।<br />सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् ॥
+          </div>
+          <div className="shloka-iast">
+            bahir antaś ca bhūtānām acaraṃ caram eva ca |<br />sūkṣmatvāt tad avijñeyaṃ dūra-sthaṃ cāntike ca tat ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                Outside and within all beings, unmoving and moving, too subtle to be known — that supreme is both far away and near at hand.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The grammar of omnipresence</div>
+              <div className="shloka-insight">
+                Notice the verse pairs opposites — inside/outside, moving/unmoving, far/near. The Gita is consistently doing this when describing the Divine, because no single side of an opposition is sufficient. The Divine is what holds the opposites. The verse is teaching, by its grammar, that you should not expect to find the Divine in one location and not another. It is the field on which locations appear.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "What seems distant is already within everything."
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verse 13.22 · What Keeps the Cycle Turning
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="attachment-binds">Attachment to Qualities Is What Keeps Pulling You Back</h2>
+
+        <p>
+          Verse 13.22 explains, in one sentence, why people keep ending up in the same patterns life after life — or, if you prefer the psychological reading, year after year within the same life. The verse says: the inner being, situated in nature, experiences the qualities born of nature. Attachment to those qualities is what causes rebirth in good and bad situations.
+        </p>
+
+        <p>
+          Read in the psychological register, this is one of the most useful diagnostic verses in the book. You are caught not by what happens to you. You are caught by your attachment to the qualities (the gunas) — your investment in being a certain kind of person, your craving for the kind of state you prefer, your aversion to the kind of state you don't. Drop the attachment and the qualities still appear; they just no longer have anywhere to land. Most therapy works on changing the qualities. The Gita is making a different bet: change the attachment, and the qualities lose their hold without needing to be changed first.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 13.22</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान् ।<br />कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु ॥
+          </div>
+          <div className="shloka-iast">
+            puruṣaḥ prakṛti-stho hi bhuṅkte prakṛti-jān guṇān |<br />kāraṇaṃ guṇa-saṅgo'sya sad-asad-yoni-janmasu ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                The inner being, situated within nature, experiences the qualities born of nature. Attachment to those qualities is the cause of birth in good and bad situations.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">The cause is not the experience — it is the attachment</div>
+              <div className="shloka-insight">
+                The verse does not say the qualities are the problem. They are inevitable — the inner being situated in nature experiences them. The problem is <em>guṇa-saṅgaḥ</em> — attachment to the qualities. Not the wanting itself, but the gripping of the wanting. Not the pleasure itself, but the insistence on more of it. The diagnosis is surgical.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Attachment to changing qualities keeps the cycle of birth going."
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verse 13.30 · The Non-Doer
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="non-doer">Seeing Oneself as the Non-Doer</h2>
+
+        <p>
+          Verse 13.30 contains the chapter's most counter-intuitive teaching, and one of the Gita's most freeing. Krishna says: one who sees all actions as being performed by nature alone, and sees the self as the non-doer, sees rightly.
+        </p>
+
+        <p>
+          Most modern readers, conditioned by ideologies of personal agency, initially resist this verse. It can sound like a denial of responsibility. It is not. Read carefully, the verse is making a more precise claim. Actions happen. The body acts. The mind decides. The personality reacts. All of this is nature in motion. The deepest <em>self</em> — the knower — is the witness of all this happening. The verse is not asking you to abdicate responsibility for your actions. It is asking you to stop identifying with the doer in a way that creates suffering. You can act fully, accountably, well — and still, at the deepest level, recognize that you are not the originator of the activity in the way you imagined. That recognition is freedom.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 13.30</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः ।<br />यः पश्यति तथाऽऽत्मानमकर्तारं स पश्यति ॥
+          </div>
+          <div className="shloka-iast">
+            prakṛtyaiva ca karmāṇi kriyamāṇāni sarvaśaḥ |<br />yaḥ paśyati tathātmānam akartāraṃ sa paśyati ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                The one who sees that all actions are performed by nature alone, and sees the self as the non-doer — that one sees truly.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">How the verse can be misread, and how to read it right</div>
+              <div className="shloka-insight">
+                The verse does not say you bear no consequences for your actions. It says you are not the doer in the way the ego insists. Karma still applies; outcomes still arrive; responsibility still attaches. What changes is the inner story. You stop carrying the heavy fiction that you alone are the cause. You become, instead, the awareness within which causes converge. The work is still done. The sleeplessness over the work, surprisingly, lifts.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Freedom begins when you stop claiming every action as yours."
+          </div>
+        </div>
+
+        <div className="pull-quote">
+          <blockquote>
+            "All actions are done by nature alone. The one who sees the self as the non-doer — sees rightly."
+          </blockquote>
+          <cite>Bhagavad Gita 13.30</cite>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Verse 13.34 · The Sun and the Field
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="sun-image">As One Sun Lights the Whole World — The Closing Image</h2>
+
+        <p>
+          Chapter 13 ends with one of the most luminous images in the Gita. Krishna says: as one sun illuminates the whole world, so the knower of the field illuminates the whole field. The verse condenses the entire chapter into a single comparison. The sun is far away from what it lights, and yet what it lights is wholly seen by it. The sun is not affected by what it lights — the dust it shines on does not make the sun dusty, the cold of the morning does not make the sun cold.
+        </p>
+
+        <p>
+          The same is true of the knower. Awareness lights up the whole field — body, mind, emotions, sensations — and is not stained by any of it. The grief you feel is fully seen but does not contaminate the awareness seeing it. The joy is fully seen but does not need to be held. The image is the closing picture of the chapter and, in some ways, the closing picture of the Gita's psychology. You are the sun. The field is what your light makes visible. You are not the field. You never were.
+        </p>
+
+        <div className="shloka-card">
+          <div className="shloka-header">
+            <span className="shloka-ref">Bhagavad Gita 13.34</span>
+            <span className="shloka-speaker">Speaker: Krishna</span>
+          </div>
+          <div className="shloka-sanskrit" lang="sa">
+            यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः ।<br />क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत ॥
+          </div>
+          <div className="shloka-iast">
+            yathā prakāśayaty ekaḥ kṛtsnaṃ lokam imaṃ raviḥ |<br />kṣetraṃ kṣetrī tathā kṛtsnaṃ prakāśayati bhārata ||
+          </div>
+          <div className="shloka-body">
+            <div>
+              <div className="shloka-col-label">Meaning</div>
+              <div className="shloka-meaning">
+                As one sun illuminates this whole world, so the knower of the field illuminates the entire field, Arjuna.
+              </div>
+            </div>
+            <div>
+              <div className="shloka-col-label">Why this image holds the whole chapter</div>
+              <div className="shloka-insight">
+                The sun does not become what it lights. Awareness does not become what it observes. The grief is fully witnessed; the awareness witnessing it remains as it was. This is what makes Chapter 13's distinction useful in lived experience. Whatever appears in the field — however intense — does not finally become the seer. The seer is still here. The sun is still up there.
+              </div>
+            </div>
+          </div>
+          <div className="shloka-essence">
+            "Awareness illuminates everything without being touched by what it sees."
+          </div>
+        </div>
+
+        <div className="highlight-box">
+          <p>
+            <strong>How Chapter 13 reframes everything earlier in the Gita:</strong> Once you have the field-knower distinction, the non-attachment of Chapter 2, the witness of Chapter 5, the steady mind of Chapter 6, the equanimity of Chapter 12 — all of them rest on Chapter 13's foundation. The chapter is not as quoted as the others, but it is structurally the most important. Without it, the rest is poetry. With it, the rest becomes practice.
+          </p>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            All 35 Verses At a Glance
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <h2 id="all-verses">The Complete Verse Reference</h2>
+
+        <table className="verse-table">
+          <thead>
+            <tr><th>Verse</th><th>Speaker</th><th>Teaching Essence</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>13.1</td><td>Arjuna</td><td>Real knowing starts by separating the seen from the seer</td></tr>
+            <tr><td>13.2</td><td>Krishna</td><td>The body is observed; the knower is something else</td></tr>
+            <tr><td>13.3</td><td>Krishna</td><td>Knowing the field is incomplete without knowing the knower</td></tr>
+            <tr><td>13.4</td><td>Krishna</td><td>Clear seeing begins by separating the field from the one who knows it</td></tr>
+            <tr><td>13.5</td><td>Krishna</td><td>Ancient sources converge on one disciplined way of seeing</td></tr>
+            <tr><td>13.6</td><td>Krishna</td><td>What you call "me" is a changing system, not a single thing</td></tr>
+            <tr><td>13.7</td><td>Krishna</td><td>Your reactions belong to the field, not to the knower</td></tr>
+            <tr><td>13.8</td><td>Krishna</td><td>True strength is quiet discipline, not self-display</td></tr>
+            <tr><td>13.9</td><td>Krishna</td><td>Freedom begins when desire stops dressing suffering as reward</td></tr>
+            <tr><td>13.10</td><td>Krishna</td><td>Clinging fades; the mind stays level</td></tr>
+            <tr><td>13.11</td><td>Krishna</td><td>True devotion stays with one centre and loses interest in the crowd</td></tr>
+            <tr><td>13.12</td><td>Krishna</td><td>Knowledge is seeing reality steadily; everything else is confusion</td></tr>
+            <tr><td>13.13</td><td>Krishna</td><td>The highest reality frees you precisely because it outgrows every label</td></tr>
+            <tr><td>13.14</td><td>Krishna</td><td>What seems separate is already filled with the supreme reality</td></tr>
+            <tr><td>13.15</td><td>Krishna</td><td>What sustains everything is beyond the senses that perceive it</td></tr>
+            <tr><td>13.16</td><td>Krishna</td><td>What seems distant is already within everything</td></tr>
+            <tr><td>13.17</td><td>Krishna</td><td>Separation is only appearance; the many are held by one</td></tr>
+            <tr><td>13.18</td><td>Krishna</td><td>What illumines everything is already nearest to you</td></tr>
+            <tr><td>13.19</td><td>Krishna</td><td>Clear understanding becomes transformation when devotion receives it</td></tr>
+            <tr><td>13.20</td><td>Krishna</td><td>Change belongs to nature; awareness is not caught in it</td></tr>
+            <tr><td>13.21</td><td>Krishna</td><td>Action belongs to nature; experience belongs to the one who knows</td></tr>
+            <tr><td>13.22</td><td>Krishna</td><td>Attachment to changing qualities keeps the cycle of birth going</td></tr>
+            <tr><td>13.23</td><td>Krishna</td><td>Identity is borrowed from the body; the true self stands beyond it</td></tr>
+            <tr><td>13.24</td><td>Krishna</td><td>Clear seeing frees you while life still continues</td></tr>
+            <tr><td>13.25</td><td>Krishna</td><td>The same realization opens through different disciplines</td></tr>
+            <tr><td>13.26</td><td>Krishna</td><td>Devoted listening can carry a person beyond fear and mortality</td></tr>
+            <tr><td>13.27</td><td>Krishna</td><td>All forms arise from the meeting of awareness and changing nature</td></tr>
+            <tr><td>13.28</td><td>Krishna</td><td>Real seeing notices one imperishable presence in every changing form</td></tr>
+            <tr><td>13.29</td><td>Krishna</td><td>Seeing unity everywhere ends the violence that returns to yourself</td></tr>
+            <tr><td>13.30</td><td>Krishna</td><td>Freedom begins when you stop claiming every action as yours</td></tr>
+            <tr><td>13.31</td><td>Krishna</td><td>Many beings are one reality seen through different forms</td></tr>
+            <tr><td>13.32</td><td>Krishna</td><td>What you are remains unstained, even while life moves through you</td></tr>
+            <tr><td>13.33</td><td>Krishna</td><td>What is everywhere cannot be stained by what changes</td></tr>
+            <tr><td>13.34</td><td>Krishna</td><td>Awareness illuminates everything without being touched by what it sees</td></tr>
+            <tr><td>13.35</td><td>Krishna</td><td>Clear seeing separates you from what changes and opens the way beyond</td></tr>
+          </tbody>
+        </table>
+
+        <div className="chapter-nav">
+          <div>
+            <div className="ch-nav-label">Previous</div>
+            <a href="/blogs/bhagwat-geeta-chapter-12" className="ch-nav-title">Chapter 12 — Bhakti Yoga</a>
+          </div>
+          <div style={{ textAlign: 'right' }}>
+            <div className="ch-nav-label">Next</div>
+            <a href="/blogs/bhagwat-geeta-chapter-14" className="ch-nav-title">Chapter 14 — Gunatraya Vibhaga Yoga</a>
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="section-divider">
+          <div className="section-divider-line"></div>
+          <div className="section-divider-label">
+            Frequently Asked Questions
+          </div>
+          <div className="section-divider-line"></div>
+        </div>
+
+        <div className="faq-section" id="faq">
+          <div className="faq-header">
+            <div className="faq-header-label">Common questions</div>
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What is Bhagavad Gita Chapter 13 about?</div>
+            <div className="faq-a">
+              Chapter 13, called Kshetra Kshetrajna Vibhaga Yoga (the Yoga of the Distinction Between the Field and the Knower of the Field), is the Gita's most precise piece of metaphysical work. Krishna teaches that the body, mind, and reactions are the <em>field</em> (<em>kṣetra</em>), and the awareness that observes them is the <em>knower of the field</em> (<em>kṣetrajña</em>). The chapter then describes the qualities of true knowledge (13.8-12), the supreme reality that is both near and far (13.16), and the freedom that comes from seeing the self as the non-doer (13.30).
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What is the field and the knower of the field in the Bhagavad Gita?</div>
+            <div className="faq-a">
+              In verse 13.2, Krishna says: 'This body is called the field. The one who knows it is the knower of the field.' The body, mind, emotions, and reactions are all the field — they are what is observed. The knower is the awareness that does the observing. The distinction is the foundation of the Gita's psychology: most suffering comes from confusing the observer with what is being observed.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What are the 18 qualities of knowledge in Bhagavad Gita 13.8-12?</div>
+            <div className="faq-a">
+              Verses 13.8 through 13.12 list eighteen qualities of true knowledge: absence of pride, absence of pretence, non-violence, patience, simplicity, service to the teacher, cleanliness, steadiness, self-control, detachment from sense objects, absence of egoism, recognition of birth-death-ageing-sickness as facts, non-attachment to family, equanimity, unwavering devotion, liking for solitude, constant awareness of the inner reality, and seeing the supreme as the goal. The list is striking because it is almost entirely about character and inner texture, not about ritual or external observance.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What does Bhagavad Gita 13.16 mean?</div>
+            <div className="faq-a">
+              Verse 13.16 describes the supreme reality as outside and within all beings, moving and unmoving, too subtle to be known, and 'far away and near at hand' (<em>dūra-sthaṃ ca antike ca</em>). The teaching is that what is everywhere cannot be located in any particular place — and is therefore, in one sense, far (because it is not localised) and in another sense, near (because it is not absent from anywhere).
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What does it mean to see oneself as the non-doer?</div>
+            <div className="faq-a">
+              In verse 13.30, Krishna says, 'One who sees all actions as performed by nature, and sees the self as the non-doer, sees rightly.' This does not mean abdicating responsibility for one's actions. It means recognising that the deepest self — the awareness — is not the originator of activity in the way the ego insists. Actions happen through the body and mind; the awareness witnesses them. The teaching dissolves a particular kind of suffering — the heavy fiction that you alone are the cause of everything that happens through you.
+            </div>
+          </div>
+          <div className="faq-item">
+            <div className="faq-q">What is the sun and field image in Bhagavad Gita 13.34?</div>
+            <div className="faq-a">
+              Verse 13.34 says, 'As one sun illuminates the whole world, so the knower of the field illuminates the entire field.' The image condenses the chapter into one comparison. The sun is not affected by what it lights — dust does not make it dusty, cold does not make it cold. The same is true of awareness: it lights up everything in the field of experience, but is not stained by what it observes. Grief is fully seen; the awareness seeing it remains as it was.
+            </div>
+          </div>
+        </div>
+
+          {/* ── APP CTA ── */}
+          <div className="app-cta">
+            <div className="app-cta-eyebrow">Free iOS App</div>
+            <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
+            <p className="app-cta-desc">
+              The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+            </p>
+            <div className="app-cta-features">
+              <span>✦ Daily shloka in Sanskrit</span>
+              <span>✦ Meaning &amp; modern context</span>
+              <span>✦ Home screen widget</span>
+            </div>
+            <a
+              href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+              target="_blank"
+              rel="noopener"
+              className="app-cta-btn"
+              data-mp-location="cta"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              Download on the App Store
+            </a>
+            <div className="app-cta-sub">Free · iPhone · No account needed</div>
+          </div>
+
+        </article>
+      </div>
+
+      {/* FOOTER */}
+      <footer>
+        <p>
+          Wisdom © 2026. Part of a{' '}
+          <a
+            href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+            target="_blank"
+            rel="noopener"
+            data-mp-location="footer"
+          >free iPhone app</a>{' '}
+          that delivers daily Bhagavad Gita shlokas. Made with reverence.
+        </p>
+        <p style={{ marginTop: '8px' }}>
+          <a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>
+        </p>
+      </footer>
+
+      <BlogTracker pageName="Bhagwat Geeta Chapter 13" />
+    </>
+  )
+}

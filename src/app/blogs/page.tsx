@@ -263,6 +263,19 @@ const pageCSS = `
       .card-thumb-ch3::before { content: "अध्याय ३"; }
       .card-thumb-ch4::before { content: "अध्याय ४"; }
       .card-thumb-ch5::before { content: "अध्याय ५"; }
+      .card-thumb-ch6::before { content: "अध्याय ६"; }
+      .card-thumb-ch7::before { content: "अध्याय ७"; }
+      .card-thumb-ch8::before { content: "अध्याय ८"; }
+      .card-thumb-ch9::before { content: "अध्याय ९"; }
+      .card-thumb-ch10::before { content: "अध्याय १०"; font-size: 80px; }
+      .card-thumb-ch11::before { content: "अध्याय ११"; font-size: 80px; }
+      .card-thumb-ch12::before { content: "अध्याय १२"; font-size: 80px; }
+      .card-thumb-ch13::before { content: "अध्याय १३"; font-size: 80px; }
+      .card-thumb-ch14::before { content: "अध्याय १४"; font-size: 80px; }
+      .card-thumb-ch15::before { content: "अध्याय १५"; font-size: 80px; }
+      .card-thumb-ch16::before { content: "अध्याय १६"; font-size: 80px; }
+      .card-thumb-ch17::before { content: "अध्याय १७"; font-size: 80px; }
+      .card-thumb-ch18::before { content: "अध्याय १८"; font-size: 80px; }
       .card-thumb-shlok::before { content: "श्लोक"; }
       .card-thumb-karma::before { content: "कर्म"; }
       .card-thumb-gita::before { content: "गीता"; }
@@ -555,7 +568,7 @@ export default function BlogIndexPage() {
       {/* CHAPTER STUDIES */}
       <div className="section-head">
         <h2>Bhagavad Gita — <em>Chapter Studies</em></h2>
-        <span className="section-count">5 articles published</span>
+        <span className="section-count">All 18 chapters published</span>
       </div>
 
       <div className="articles-grid">
@@ -668,6 +681,292 @@ export default function BlogIndexPage() {
             </div>
           </div>
         </a>
+
+        {/* Chapter 6 */}
+        <a href="/blogs/bhagwat-geeta-chapter-6" className="article-card" data-mp-article="Bhagavad Gita Chapter 6">
+          <div className="card-thumb card-thumb-ch6">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 6 · 47 Verses</div>
+            <div className="card-thumb-title">Dhyana Yoga —<br /><em>The Lamp That Does Not Flicker</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 6</span>
+              <span className="tag tag-shloka">47 Shlokas</span>
+              <span className="tag tag-philosophy">Meditation</span>
+            </div>
+            <div className="card-desc">
+              The Gita's most practical chapter on meditation. Lift yourself by yourself. The lamp in a windless place. Arjuna's honest objection that the mind is like the wind — and the answer that has worked for two thousand years: practice and detachment.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~14 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 7 */}
+        <a href="/blogs/bhagwat-geeta-chapter-7" className="article-card" data-mp-article="Bhagavad Gita Chapter 7">
+          <div className="card-thumb card-thumb-ch7">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 7 · 30 Verses</div>
+            <div className="card-thumb-title">Jnana Vijnana Yoga —<br /><em>Knowing About vs. Knowing Through</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 7</span>
+              <span className="tag tag-shloka">30 Shlokas</span>
+              <span className="tag tag-philosophy">Knowledge & Realization</span>
+            </div>
+            <div className="card-desc">
+              The seam in the Gita where the camera pulls back. Pearls strung on a thread. The sacred in the taste of water. The four kinds of seekers. And the rare turning that ends all searching — <em>Vāsudeva is everything</em>.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~12 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 8 */}
+        <a href="/blogs/bhagwat-geeta-chapter-8" className="article-card" data-mp-article="Bhagavad Gita Chapter 8">
+          <div className="card-thumb card-thumb-ch8">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 8 · 28 Verses</div>
+            <div className="card-thumb-title">Akshara Brahma Yoga —<br /><em>What the Mind Has Practiced</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 8</span>
+              <span className="tag tag-shloka">28 Shlokas</span>
+              <span className="tag tag-philosophy">Death & Imperishable</span>
+            </div>
+            <div className="card-desc">
+              A chapter about death, and therefore about every moment that is not yet death. Whatever state the mind has practiced — that is what you become at the end. Brahma's day and night. The path that does not return.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~11 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 9 */}
+        <a href="/blogs/bhagwat-geeta-chapter-9" className="article-card" data-mp-article="Bhagavad Gita Chapter 9">
+          <div className="card-thumb card-thumb-ch9">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 9 · 34 Verses</div>
+            <div className="card-thumb-title">Raja Vidya Raja Guhya Yoga —<br /><em>The Royal Secret</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 9</span>
+              <span className="tag tag-shloka">34 Shlokas</span>
+              <span className="tag tag-philosophy">Devotion & Refuge</span>
+            </div>
+            <div className="card-desc">
+              The king of all knowledge — supremely easy to practice. Leaf, flower, fruit, water. Whatever you do, offer it. And the line that has consoled more sufferers than possibly any other in the book — <em>my devotee never perishes</em>.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~13 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 10 */}
+        <a href="/blogs/bhagwat-geeta-chapter-10" className="article-card" data-mp-article="Bhagavad Gita Chapter 10">
+          <div className="card-thumb card-thumb-ch10">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 10 · 42 Verses</div>
+            <div className="card-thumb-title">Vibhuti Yoga —<br /><em>Sparks of the Divine</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 10</span>
+              <span className="tag tag-shloka">42 Shlokas</span>
+              <span className="tag tag-philosophy">Divine Manifestations</span>
+            </div>
+            <div className="card-desc">
+              Where to look for the Divine: in everything that shines. The lamp lit inside the heart. The Self at the heart of every being. And the closing reveal — the whole universe rests on a single fragment.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~13 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 11 */}
+        <a href="/blogs/bhagwat-geeta-chapter-11" className="article-card" data-mp-article="Bhagavad Gita Chapter 11">
+          <div className="card-thumb card-thumb-ch11">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 11 · 55 Verses</div>
+            <div className="card-thumb-title">Vishwarupa Darshana Yoga —<br /><em>The Vision That Cannot Be Looked At</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 11</span>
+              <span className="tag tag-shloka">55 Shlokas</span>
+              <span className="tag tag-philosophy">Cosmic Form</span>
+            </div>
+            <div className="card-desc">
+              Arjuna asked to see. Krishna gave him what he asked for. A thousand suns. Mouths like fire. <em>I am Time, the destroyer of worlds.</em> And the gentler closing — only devotion sees this.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~16 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 12 */}
+        <a href="/blogs/bhagwat-geeta-chapter-12" className="article-card" data-mp-article="Bhagavad Gita Chapter 12">
+          <div className="card-thumb card-thumb-ch12">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 12 · 20 Verses</div>
+            <div className="card-thumb-title">Bhakti Yoga —<br /><em>How a Devotee Actually Lives</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 12</span>
+              <span className="tag tag-shloka">20 Shlokas</span>
+              <span className="tag tag-philosophy">Devotion</span>
+            </div>
+            <div className="card-desc">
+              The shortest chapter, and one of the most practical. The four-step ladder for when meditation is too hard. And the portrait of the devotee Krishna calls dear — measured by friendliness, not by belief.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~11 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 13 */}
+        <a href="/blogs/bhagwat-geeta-chapter-13" className="article-card" data-mp-article="Bhagavad Gita Chapter 13">
+          <div className="card-thumb card-thumb-ch13">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 13 · 35 Verses</div>
+            <div className="card-thumb-title">Kshetra Kshetrajna —<br /><em>The Field and the Knower</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 13</span>
+              <span className="tag tag-shloka">35 Shlokas</span>
+              <span className="tag tag-philosophy">Self & Awareness</span>
+            </div>
+            <div className="card-desc">
+              The Gita's most precise piece of metaphysical work. Your body, your moods, your reactions — all observed. By something that is not them. The foundation underneath every other teaching.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~13 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 14 */}
+        <a href="/blogs/bhagwat-geeta-chapter-14" className="article-card" data-mp-article="Bhagavad Gita Chapter 14">
+          <div className="card-thumb card-thumb-ch14">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 14 · 27 Verses</div>
+            <div className="card-thumb-title">Gunatraya Vibhaga —<br /><em>The Three Forces of Inner Weather</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 14</span>
+              <span className="tag tag-shloka">27 Shlokas</span>
+              <span className="tag tag-philosophy">Three Gunas</span>
+            </div>
+            <div className="card-desc">
+              Why some days are clear, some restless, some you cannot get off the couch. Sattva, rajas, tamas — the Gita's psychology of mood. And the unwavering devotion that goes beyond all three.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~12 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 15 */}
+        <a href="/blogs/bhagwat-geeta-chapter-15" className="article-card" data-mp-article="Bhagavad Gita Chapter 15">
+          <div className="card-thumb card-thumb-ch15">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 15 · 20 Verses</div>
+            <div className="card-thumb-title">Purushottama Yoga —<br /><em>Cut the Tree, Find the Source</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 15</span>
+              <span className="tag tag-shloka">20 Shlokas</span>
+              <span className="tag tag-philosophy">Supreme Self</span>
+            </div>
+            <div className="card-desc">
+              An upside-down tree. The sword of detachment. A spark of the eternal in every being. The fire that digests your dinner. And the name Krishna finally claims — Purushottama, the Self beyond every other self.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~11 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 16 */}
+        <a href="/blogs/bhagwat-geeta-chapter-16" className="article-card" data-mp-article="Bhagavad Gita Chapter 16">
+          <div className="card-thumb card-thumb-ch16">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 16 · 24 Verses</div>
+            <div className="card-thumb-title">Daivasura Sampad —<br /><em>Two Kinds of Inner Wealth</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 16</span>
+              <span className="tag tag-shloka">24 Shlokas</span>
+              <span className="tag tag-philosophy">Character & Ego</span>
+            </div>
+            <div className="card-desc">
+              The qualities that open a life and the ones that close it. The spiral of endless desire. The three gates of ruin — <em>kāma, krodha, lobha</em> — and why dropping them is the only ladder out.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~11 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 17 */}
+        <a href="/blogs/bhagwat-geeta-chapter-17" className="article-card" data-mp-article="Bhagavad Gita Chapter 17">
+          <div className="card-thumb card-thumb-ch17">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 17 · 28 Verses</div>
+            <div className="card-thumb-title">Shraddhatraya Vibhaga —<br /><em>You Are What You Trust</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 17</span>
+              <span className="tag tag-shloka">28 Shlokas</span>
+              <span className="tag tag-philosophy">Faith & Action</span>
+            </div>
+            <div className="card-desc">
+              You are made of your trust — whatever you trust, that is what you become. Three kinds of food, austerity, giving. Om Tat Sat. And the closing claim — action without trust transforms nothing.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~12 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Chapter 18 */}
+        <a href="/blogs/bhagwat-geeta-chapter-18" className="article-card" data-mp-article="Bhagavad Gita Chapter 18">
+          <div className="card-thumb card-thumb-ch18">
+            <div className="card-chapter-badge">Bhagavad Gita · Chapter 18 · 78 Verses</div>
+            <div className="card-thumb-title">Moksha Sannyasa Yoga —<br /><em>The Final Teaching</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-chapter">Chapter 18</span>
+              <span className="tag tag-shloka">78 Shlokas</span>
+              <span className="tag tag-philosophy">Liberation</span>
+            </div>
+            <div className="card-desc">
+              Seventy-eight verses to close everything. Five causes of any action. Your own duty over a borrowed perfection. And the most secret verse of all — <em>abandon every duty, take refuge in me alone</em>.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~20 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
       </div>
 
       {/* TOPIC GUIDES */}
@@ -770,19 +1069,9 @@ export default function BlogIndexPage() {
       <div className="coming-section">
         <div className="section-head">
           <h2>Coming Soon</h2>
-          <span className="section-count">More chapters & collections</span>
+          <span className="section-count">Collections, topic guides &amp; the Upanishads</span>
         </div>
         <div className="coming-grid">
-          <div className="coming-card">
-            <div className="coming-label">Chapter Study</div>
-            <div className="coming-title">Bhagavad Gita Chapter 6 — Dhyana Yoga</div>
-            <span className="coming-soon-badge">Coming soon</span>
-          </div>
-          <div className="coming-card">
-            <div className="coming-label">Chapter Study</div>
-            <div className="coming-title">Bhagavad Gita Chapter 12 — Bhakti Yoga</div>
-            <span className="coming-soon-badge">Coming soon</span>
-          </div>
           <div className="coming-card">
             <div className="coming-label">Shloka Collection</div>
             <div className="coming-title">20 Most Famous Shlokas in Sanskrit</div>
@@ -801,6 +1090,16 @@ export default function BlogIndexPage() {
           <div className="coming-card">
             <div className="coming-label">Topic Guide</div>
             <div className="coming-title">What the Gita Says About Leadership</div>
+            <span className="coming-soon-badge">Coming soon</span>
+          </div>
+          <div className="coming-card">
+            <div className="coming-label">Topic Guide</div>
+            <div className="coming-title">What the Gita Says About Work &amp; Burnout</div>
+            <span className="coming-soon-badge">Coming soon</span>
+          </div>
+          <div className="coming-card">
+            <div className="coming-label">Upanishads</div>
+            <div className="coming-title">Isha Upanishad — A Reader's Guide</div>
             <span className="coming-soon-badge">Coming soon</span>
           </div>
         </div>
