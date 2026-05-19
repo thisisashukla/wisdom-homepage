@@ -13,9 +13,9 @@ function isDev(): boolean {
   )
 }
 
-/** Prefix event names with "Dev_" in local/dev so they don't pollute production analytics. */
+/** Prefix event names with "dev_" in local/dev so they don't pollute production analytics. */
 function prefixEvent(event: string): string {
-  return isDev() ? `Dev_${event}` : event
+  return isDev() ? `dev_${event}` : event
 }
 
 export function initMixpanel() {
