@@ -973,10 +973,32 @@ export default function BlogIndexPage() {
       {/* TOPIC GUIDES */}
       <div className="section-head" style={{marginTop: '56px'}}>
         <h2>Gita Teachings — <em>Topic Guides</em></h2>
-        <span className="section-count">4 articles published</span>
+        <span className="section-count">5 articles published</span>
       </div>
 
       <div className="articles-grid">
+        {/* Beyond Bhagavad Gita - Lesser Known Gitas */}
+        <a href="/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health" className="article-card" data-mp-article="Beyond Bhagavad Gita Quotes">
+          <div className="card-thumb card-thumb-gita">
+            <div className="card-chapter-badge">Topic Guide · 7 Gitas · Mental &amp; Spiritual Health</div>
+            <div className="card-thumb-title">Beyond the Bhagavad Gita —<br /><em>7 Lesser-Known Gitas on Inner Peace</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-philosophy">Ashtavakra · Avadhuta</span>
+              <span className="tag tag-shloka">7 Gitas</span>
+              <span className="tag tag-chapter">Deep Read</span>
+            </div>
+            <div className="card-desc">
+              The Bhagavad Gita is one voice in a vast chorus. The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each carry their own wisdom for mental peace — and most people have never read a word of them.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~12 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
         {/* Anxiety & Mental Peace */}
         <a href="/blogs/bhagavad-gita-anxiety-mental-peace" className="article-card" data-mp-article="Gita Anxiety Mental Peace">
           <div className="card-thumb card-thumb-peace">
