@@ -1,0 +1,107 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: rgba(18, 5, 5, 0.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(200, 136, 30, 0.2);
+}
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 28px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #f5c96a;
+  text-decoration: none;
+}
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1.5px solid rgba(200, 136, 30, 0.4);
+  flex-shrink: 0;
+}
+.logo-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(245, 232, 204, 0.65);
+  transition: color 0.18s;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #f5c96a;
+}
+.nav-section-link {
+  font-size: 12.5px !important;
+  color: rgba(245, 232, 204, 0.35) !important;
+  font-weight: 400 !important;
+}
+.nav-section-link:hover {
+  color: rgba(245, 232, 204, 0.65) !important;
+}
+.nav-page-link {
+  font-weight: 600 !important;
+  color: rgba(245, 232, 204, 0.65) !important;
+}
+.nav-page-link:hover {
+  color: #f5c96a !important;
+}
+.nav-pipe {
+  width: 1px;
+  height: 16px;
+  background: rgba(200, 136, 30, 0.2);
+  flex-shrink: 0;
+}
+.btn-nav {
+  display: inline-flex;
+  align-items: center;
+  background: #c8881e !important;
+  color: #1a0606 !important;
+  padding: 13px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: opacity 0.18s;
+  text-decoration: none;
+}
+.btn-nav:hover {
+  opacity: 0.88;
+  color: #1a0606 !important;
+}
+
+@media (max-width: 960px) {
+  .nav-links {
+    display: none;
+  }
+  .mobile-nav-toggle {
+    display: flex;
+  }
+  .nav-inner {
+    padding: 0 20px;
+  }
+}

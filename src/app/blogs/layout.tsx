@@ -1,8 +1,10 @@
-export default function BlogsLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  // Login wall removed — all blog pages are publicly accessible.
-  return <>{children}</>
+import Nav from '@/components/Nav'
+
+export default function BlogsLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <>
+      <Nav />
+      {children}
+    </>
+  )
 }

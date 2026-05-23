@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
-import MobileNavToggle from '@/components/MobileNavToggle'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga) — Summary",
@@ -66,27 +65,6 @@ const pageCSS = `
 
       a { color: inherit; text-decoration: none; }
       img { display: block; max-width: 100%; }
-
-      body > nav {
-        position: sticky; top: 0; z-index: 200;
-        background: rgba(18, 5, 5, 0.92);
-        backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
-        border-bottom: 1px solid var(--border);
-      }
-      .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 28px; height: 60px;
-        display: flex; align-items: center; justify-content: space-between; }
-      .logo { display: flex; align-items: center; gap: 9px;
-        font-family: "Playfair Display", Georgia, serif; font-size: 21px; font-weight: 700;
-        color: var(--gold-light); text-decoration: none; }
-      .logo-mark { width: 36px; height: 36px; border-radius: 50%; overflow: hidden;
-        border: 1.5px solid rgba(200, 136, 30, 0.4); flex-shrink: 0; }
-      .logo-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
-      .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
-      .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-dim); transition: color 0.18s; }
-      .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
-      .btn-nav { background: var(--gold) !important; color: #1a0606 !important;
-        padding: 8px 18px; border-radius: 8px; font-weight: 700; transition: opacity 0.18s; }
-      .btn-nav:hover { opacity: 0.88; }
 
       .breadcrumb { background: var(--bg-alt); border-bottom: 1px solid var(--border); }
       .breadcrumb-inner { max-width: 1100px; margin: 0 auto; padding: 10px 28px;
@@ -284,10 +262,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .nav-inner { padding: 0 20px; }
-        .nav-links { gap: 16px; }
-        .nav-links li:not(:last-child) { display: none; }
-        .mobile-nav-toggle { display: flex; }
         .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
@@ -596,35 +570,6 @@ export default function ChapterPage7() {
       {schemas.map((s, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
       ))}
-
-      {/* ── NAV ── */}
-      <nav>
-        <div className="nav-inner">
-          <a href="/" className="logo">
-            <div className="logo-mark">
-              <img src="/assets/male-logo-dark.webp" alt="Wisdom" />
-            </div>
-            Wisdom
-          </a>
-          <MobileNavToggle />
-          <ul className="nav-links">
-            <li><a href="/#features">Features</a></li>
-            <li><a href="/#how-it-works">How it works</a></li>
-            <li><a href="/#topics">Topics</a></li>
-            <li><a href="/blogs" className="active">Blog</a></li>
-          <li><a href="/about">About</a></li>
-            <li>
-              <a
-                href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
-                target="_blank"
-                rel="noopener"
-                className="btn-nav"
-                data-mp-location="nav"
-              >Download Free</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
       {/* ── BREADCRUMB ── */}
       <div className="breadcrumb">

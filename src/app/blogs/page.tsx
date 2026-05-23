@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
-import MobileNavToggle from '@/components/MobileNavToggle'
+
 
 export const metadata: Metadata = {
   title: "Blog \u2014 Bhagavad Gita, Sanskrit Shlokas &amp; Hindu Philosophy | Wisdom",
@@ -57,70 +57,6 @@ const pageCSS = `
         color: var(--text);
         line-height: 1.65;
         -webkit-font-smoothing: antialiased;
-      }
-
-      /* NAV */
-      nav {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background: rgba(18, 5, 5, 0.92);
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
-        border-bottom: 1px solid var(--border);
-      }
-      .nav-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 32px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        text-decoration: none;
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: 20px;
-        font-weight: 700;
-        color: var(--gold-light);
-      }
-      .logo-mark img {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        border: 1.5px solid rgba(200, 136, 30, 0.4);
-      }
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 28px;
-        list-style: none;
-      }
-      .nav-links a {
-        font-size: 13.5px;
-        font-weight: 500;
-        color: var(--text-dim);
-        text-decoration: none;
-        letter-spacing: 0.01em;
-        transition: color 0.15s;
-      }
-      .nav-links a:hover {
-        color: var(--gold-light);
-      }
-      .nav-links a.active {
-        color: var(--gold-light);
-      }
-      .btn-nav {
-        background: var(--gold);
-        color: #1a0606 !important;
-        padding: 8px 18px;
-        border-radius: 8px;
-        font-weight: 700 !important;
-        font-size: 14px !important;
       }
 
       /* HERO */
@@ -479,18 +415,6 @@ const pageCSS = `
         .blog-wrap {
           padding: 40px 20px 60px;
         }
-        .nav-inner {
-          padding: 0 20px;
-        }
-        .nav-links {
-          gap: 16px;
-        }
-        .nav-links li:not(:last-child) {
-          display: none;
-        }
-        .mobile-nav-toggle {
-          display: flex;
-        }
       }
     
 `
@@ -504,35 +428,6 @@ export default function BlogIndexPage() {
       {schemas.map((s, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
       ))}
-
-<nav>
-      <div className="nav-inner">
-        <a href="/" className="logo">
-          <div className="logo-mark">
-            <img src="/assets/male-logo-dark.webp" alt="Wisdom" />
-          </div>
-          Wisdom
-        </a>
-        <MobileNavToggle />
-        <ul className="nav-links">
-          <li><a href="/gita">Read the Gita</a></li>
-          <li><a href="/#features">Features</a></li>
-          <li><a href="/#how-it-works">How it works</a></li>
-          <li><a href="/blogs" className="active">Blog</a></li>
-          <li><a href="/about">About</a></li>
-          <li>
-            <a
-              href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
-              target="_blank"
-              rel="noopener"
-              className="btn-nav"
-              data-mp-location="nav"
-              >Download Free</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
 
     <div className="blog-hero">
       <div className="blog-hero-inner">

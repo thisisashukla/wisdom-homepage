@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import Nav from '@/components/Nav'
 
 export const metadata: Metadata = {
   title: 'Terms of Use | Wisdom',
@@ -8,25 +9,13 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 }
 
-const APP_STORE_URL = 'https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125'
-
 export default function TermsPage() {
   return (
     <>
       <BlogTracker pageName="terms" />
       <style dangerouslySetInnerHTML={{ __html: legalCSS }} />
 
-      <nav className="legal-nav">
-        <div className="legal-nav-inner">
-          <a href="/" className="legal-logo">
-            <img src="/assets/male-logo-dark.webp" alt="Wisdom" width={30} height={30} />
-            Wisdom
-          </a>
-          <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="legal-download" data-mp-location="terms_nav_download">
-            Download Free
-          </a>
-        </div>
-      </nav>
+      <Nav />
 
       <main className="legal-main">
         <div className="legal-wrap">
@@ -111,27 +100,6 @@ const legalCSS = `
   body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
   a { color: var(--gold-light); text-decoration: none; }
   a:hover { text-decoration: underline; }
-
-  .legal-nav {
-    position: sticky; top: 0; z-index: 100;
-    background: rgba(18,5,5,0.92);
-    backdrop-filter: blur(18px);
-    border-bottom: 1px solid var(--border);
-  }
-  .legal-nav-inner {
-    max-width: 860px; margin: 0 auto; padding: 0 28px;
-    height: 60px; display: flex; align-items: center; justify-content: space-between;
-  }
-  .legal-logo {
-    display: flex; align-items: center; gap: 9px;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 20px; font-weight: 700; color: var(--gold-light); text-decoration: none;
-  }
-  .legal-logo img { border-radius: 50%; border: 1.5px solid rgba(200,136,30,0.4); }
-  .legal-download {
-    background: var(--gold); color: #1a0606; padding: 8px 18px;
-    border-radius: 8px; font-size: 13.5px; font-weight: 700; text-decoration: none;
-  }
 
   .legal-main { min-height: 70vh; padding: 64px 0 80px; }
   .legal-wrap { max-width: 700px; margin: 0 auto; padding: 0 28px; }

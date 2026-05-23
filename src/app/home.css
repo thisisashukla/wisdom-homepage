@@ -59,49 +59,6 @@
         padding: 0 28px;
       }
 
-      /* ─── NAV ─── */
-      nav {
-        position: sticky;
-        top: 0;
-        z-index: 200;
-        background: rgba(18, 5, 5, 0.92);
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
-        border-bottom: 1px solid var(--border);
-      }
-      .nav-inner {
-        max-width: var(--max);
-        margin: 0 auto;
-        padding: 0 28px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .logo {
-        display: flex;
-        align-items: center;
-        gap: 9px;
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: 21px;
-        font-weight: 700;
-        color: var(--gold-light);
-      }
-      .logo-mark {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 1.5px solid rgba(200, 136, 30, 0.4);
-        flex-shrink: 0;
-      }
-      .logo-mark img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      }
-
       /* Hero logo */
       .hero-logo {
         width: 96px;
@@ -120,57 +77,6 @@
         object-fit: cover;
         display: block;
       }
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 28px;
-        list-style: none;
-      }
-      .nav-links a {
-        font-size: 14px;
-        font-weight: 500;
-        color: var(--text-dim);
-        transition: color 0.18s;
-      }
-      .nav-links a:hover {
-        color: var(--gold-light);
-      }
-      .nav-section-link {
-        font-size: 12.5px !important;
-        color: var(--text-dimmer) !important;
-        font-weight: 400 !important;
-      }
-      .nav-section-link:hover {
-        color: var(--text-dim) !important;
-      }
-      .nav-page-link {
-        font-weight: 600 !important;
-        color: var(--text-dim) !important;
-      }
-      .nav-page-link:hover {
-        color: var(--gold-light) !important;
-      }
-      .nav-pipe {
-        width: 1px;
-        height: 16px;
-        background: var(--border);
-        flex-shrink: 0;
-      }
-      .btn-nav {
-        display: inline-flex;
-        align-items: center;
-        background: var(--gold) !important;
-        color: #1a0606 !important;
-        padding: 13px 22px;
-        border-radius: 10px;
-        font-size: 15px;
-        font-weight: 700;
-        transition: opacity 0.18s;
-      }
-      .btn-nav:hover {
-        opacity: 0.88;
-      }
-
       /* ─── HERO ─── */
       .hero {
         padding: 64px 0 0;
@@ -1249,18 +1155,6 @@
         .split-phone {
           order: -1;
         }
-        .nav-links {
-          gap: 16px;
-        }
-        .nav-links li:not(:last-child) {
-          display: none;
-        }
-        .nav-inner {
-          padding: 0 20px;
-        }
-        .mobile-nav-toggle {
-          display: flex;
-        }
         .fan-left,
         .fan-right {
           display: none;
@@ -1292,4 +1186,357 @@
           padding: 36px 24px;
         }
       }
-    
+
+      /* ─── PATH COLORS ─── */
+      :root {
+        --path-action: #c8881e;
+        --path-action-light: #f5c96a;
+        --path-action-dim: rgba(200,136,30,0.12);
+        --path-action-border: rgba(200,136,30,0.32);
+        --path-wisdom: #6a9e8a;
+        --path-wisdom-light: #9dd4bf;
+        --path-wisdom-dim: rgba(106,158,138,0.12);
+        --path-wisdom-border: rgba(106,158,138,0.32);
+        --path-devotion: #a86080;
+        --path-devotion-light: #d4a0b8;
+        --path-devotion-dim: rgba(168,96,128,0.12);
+        --path-devotion-border: rgba(168,96,128,0.32);
+      }
+
+      /* ─── ANCIENT LENS SECTION ─── */
+      .ancient-lens {
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .ancient-lens::before {
+        content: "श्रीमद्भगवद्गीता";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Noto Sans Devanagari", serif;
+        font-size: clamp(48px, 9vw, 110px);
+        color: rgba(200, 136, 30, 0.04);
+        white-space: nowrap;
+        pointer-events: none;
+        user-select: none;
+        letter-spacing: 0.05em;
+      }
+      .ancient-lens-inner {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 28px;
+        position: relative;
+        z-index: 1;
+      }
+      .ancient-lens-inner blockquote {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(20px, 2.6vw, 30px);
+        font-style: italic;
+        line-height: 1.48;
+        color: var(--gold-light);
+        font-weight: 600;
+        margin-bottom: 32px;
+      }
+      .ancient-lens-inner p {
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--text-dim);
+        line-height: 1.8;
+        margin-bottom: 20px;
+        max-width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .lens-pills {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 36px;
+      }
+      .lens-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 8px 18px;
+        background: rgba(200, 136, 30, 0.07);
+        border: 1px solid rgba(200, 136, 30, 0.22);
+        border-radius: 100px;
+        font-size: 13px;
+        color: var(--text-dim);
+        font-weight: 500;
+      }
+      .lens-pill strong {
+        color: var(--gold-light);
+        font-weight: 600;
+      }
+
+      /* ─── 3 PATHS SECTION ─── */
+      .paths-section {
+        padding: 104px 0;
+        position: relative;
+      }
+      .paths-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 56px;
+      }
+      .path-card {
+        border-radius: var(--r-xl);
+        padding: 36px 30px;
+        border: 1.5px solid;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .path-card:hover {
+        transform: translateY(-3px);
+      }
+      .path-card.action {
+        background: var(--path-action-dim);
+        border-color: var(--path-action-border);
+      }
+      .path-card.action:hover {
+        box-shadow: 0 12px 40px rgba(200,136,30,0.14);
+        border-color: rgba(200,136,30,0.5);
+      }
+      .path-card.wisdom {
+        background: var(--path-wisdom-dim);
+        border-color: var(--path-wisdom-border);
+      }
+      .path-card.wisdom:hover {
+        box-shadow: 0 12px 40px rgba(106,158,138,0.14);
+        border-color: rgba(106,158,138,0.5);
+      }
+      .path-card.devotion {
+        background: var(--path-devotion-dim);
+        border-color: var(--path-devotion-border);
+      }
+      .path-card.devotion:hover {
+        box-shadow: 0 12px 40px rgba(168,96,128,0.14);
+        border-color: rgba(168,96,128,0.5);
+      }
+      .path-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 10.5px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 100px;
+        margin-bottom: 18px;
+      }
+      .path-card.action .path-badge {
+        background: rgba(200,136,30,0.15);
+        color: var(--path-action-light);
+        border: 1px solid rgba(200,136,30,0.3);
+      }
+      .path-card.wisdom .path-badge {
+        background: rgba(106,158,138,0.15);
+        color: var(--path-wisdom-light);
+        border: 1px solid rgba(106,158,138,0.3);
+      }
+      .path-card.devotion .path-badge {
+        background: rgba(168,96,128,0.15);
+        color: var(--path-devotion-light);
+        border: 1px solid rgba(168,96,128,0.3);
+      }
+      .path-card h3 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 6px;
+      }
+      .path-card.action h3 { color: var(--path-action-light); }
+      .path-card.wisdom h3 { color: var(--path-wisdom-light); }
+      .path-card.devotion h3 { color: var(--path-devotion-light); }
+      .path-yoga {
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        font-weight: 500;
+        margin-bottom: 16px;
+        opacity: 0.65;
+      }
+      .path-card.action .path-yoga { color: var(--path-action-light); }
+      .path-card.wisdom .path-yoga { color: var(--path-wisdom-light); }
+      .path-card.devotion .path-yoga { color: var(--path-devotion-light); }
+      .path-desc {
+        font-size: 14.5px;
+        color: var(--text-dim);
+        line-height: 1.7;
+        margin-bottom: 28px;
+        font-weight: 300;
+      }
+      .path-tagline {
+        font-family: "Playfair Display", Georgia, serif;
+        font-style: italic;
+        font-size: 15px;
+        margin-bottom: 28px;
+        line-height: 1.4;
+      }
+      .path-card.action .path-tagline { color: var(--path-action-light); }
+      .path-card.wisdom .path-tagline { color: var(--path-wisdom-light); }
+      .path-card.devotion .path-tagline { color: var(--path-devotion-light); }
+      .path-nodes {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .path-node {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 10px 0;
+        position: relative;
+      }
+      .path-node:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        left: 9px;
+        top: 26px;
+        width: 2px;
+        height: calc(100% - 6px);
+        opacity: 0.3;
+      }
+      .path-card.action .path-node::after { background: var(--path-action); }
+      .path-card.wisdom .path-node::after { background: var(--path-wisdom); }
+      .path-card.devotion .path-node::after { background: var(--path-devotion); }
+      .node-dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1px;
+        border: 2px solid;
+      }
+      .node-dot.filled {
+        border-width: 0;
+      }
+      .path-card.action .node-dot { border-color: var(--path-action); }
+      .path-card.action .node-dot.filled { background: var(--path-action); }
+      .path-card.wisdom .node-dot { border-color: var(--path-wisdom); }
+      .path-card.wisdom .node-dot.filled { background: var(--path-wisdom); }
+      .path-card.devotion .node-dot { border-color: var(--path-devotion); }
+      .path-card.devotion .node-dot.filled { background: var(--path-devotion); }
+      .node-dot svg { display: block; }
+      .node-label {
+        flex: 1;
+      }
+      .node-label strong {
+        display: block;
+        font-size: 13.5px;
+        font-weight: 600;
+        margin-bottom: 2px;
+      }
+      .path-card.action .node-label strong { color: var(--path-action-light); }
+      .path-card.wisdom .node-label strong { color: var(--path-wisdom-light); }
+      .path-card.devotion .node-label strong { color: var(--path-devotion-light); }
+      .node-label span {
+        font-size: 11.5px;
+        color: var(--text-dimmer);
+        font-style: italic;
+      }
+      .node-locked .node-label strong,
+      .node-locked .node-label span {
+        opacity: 0.38;
+      }
+      .node-locked .node-dot {
+        opacity: 0.3;
+        border-style: dashed;
+      }
+      .paths-note {
+        text-align: center;
+        margin-top: 44px;
+        font-size: 15px;
+        color: var(--text-dimmer);
+        font-style: italic;
+        font-family: "Playfair Display", Georgia, serif;
+      }
+      .paths-note strong {
+        color: var(--gold-light);
+        font-style: normal;
+      }
+
+      /* ─── PRACTICE MILESTONE STRIP ─── */
+      .milestone-strip {
+        display: flex;
+        align-items: flex-start;
+        gap: 0;
+        margin-top: 52px;
+        position: relative;
+      }
+      .milestone-strip::before {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: calc(12.5% + 14px);
+        right: calc(12.5% + 14px);
+        height: 1.5px;
+        background: linear-gradient(to right, var(--path-action-border), var(--path-wisdom-border), var(--path-devotion-border));
+      }
+      .milestone {
+        flex: 1;
+        text-align: center;
+        padding: 0 8px;
+        position: relative;
+        z-index: 1;
+      }
+      .milestone-dot {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--maroon-mid);
+        border: 2px solid var(--gold-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 12px;
+        font-size: 11px;
+        font-weight: 800;
+        color: var(--gold-light);
+        font-family: "Playfair Display", serif;
+      }
+      .milestone h4 {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--gold-light);
+        margin-bottom: 4px;
+      }
+      .milestone p {
+        font-size: 12px;
+        color: var(--text-dimmer);
+        line-height: 1.5;
+      }
+
+      @media (max-width: 960px) {
+        .paths-grid {
+          grid-template-columns: 1fr;
+          max-width: 480px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .milestone-strip {
+          flex-direction: column;
+          gap: 20px;
+          align-items: flex-start;
+        }
+        .milestone-strip::before { display: none; }
+        .milestone {
+          display: flex;
+          align-items: flex-start;
+          gap: 16px;
+          text-align: left;
+          padding: 0;
+        }
+        .milestone-dot { margin: 0; flex-shrink: 0; }
+      }
