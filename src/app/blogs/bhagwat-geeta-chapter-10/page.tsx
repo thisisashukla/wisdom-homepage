@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 10 (Vibhuti Yoga) — Summary",
-  description: "Bhagavad Gita Chapter 10 — Vibhuti Yoga. All 42 verses on divine manifestations, sparks of the Divine, and the universe held in a single fragment.",
+  title: "Bhagavad Gita Chapter 10 Summary – Key Verses & Meaning (Vibhuti Yoga)",
+  description: "Bhagavad Gita Chapter 10 (Vibhuti Yoga) — 42 verses on divine manifestations, sparks of the Divine, and the universe held in a single fragment ('ekamshena sthito jagat').",
   keywords: "bhagwat geeta chapter 10, bhagavad gita vibhuti yoga, bhagwat geeta adhyay 10, ekamshena sthito jagat, aham atma gudakesha, lamp of knowledge gita, sparks of divine bhagavad gita, divine manifestations gita, Vibhuti Yoga meaning, Bhagavad Gita 10.20 aham atma gudakesha, Bhagavad Gita 10.41 vibhutimat sattvam, Bhagavad Gita 10.42 ekamshena sthito jagat, what are vibhutis in Bhagavad Gita, divine manifestations Krishna",
   openGraph: {
-    title: "Bhagavad Gita Chapter 10 (Vibhuti Yoga) — All Verses",
+    title: "Bhagavad Gita Chapter 10 Summary – Key Verses & Meaning (Vibhuti Yoga)",
     description: "Bhagavad Gita Chapter 10 — sparks of the Divine. Where to look for God in everything that shines.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 10 (Vibhuti Yoga) — All Verses",
+    title: "Bhagavad Gita Chapter 10 Summary – Key Verses & Meaning (Vibhuti Yoga)",
     description: "Bhagavad Gita Chapter 10 — sparks of the Divine. Where to look for God in everything that shines.",
     images: ["https://wisdomquotes.in/assets/chapter10.webp"],
   },

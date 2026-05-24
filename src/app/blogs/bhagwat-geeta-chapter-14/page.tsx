@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 14 (Three Gunas) — Summary",
-  description: "Bhagavad Gita Chapter 14 — Gunatraya Vibhaga Yoga. All 27 verses on the three gunas (sattva, rajas, tamas) and the state beyond them.",
+  title: "Bhagavad Gita Chapter 14 Summary – Key Verses & Meaning (Three Gunas Yoga)",
+  description: "Bhagavad Gita Chapter 14 (Gunatraya Vibhaga Yoga) — 27 verses on the three gunas — sattva, rajas, tamas — and the gunatita state that lies beyond all three.",
   keywords: "bhagwat geeta chapter 14, bhagavad gita gunatraya vibhaga yoga, bhagwat geeta adhyay 14, three gunas explained, sattva rajas tamas, gunatita state, transcending gunas gita, psychology of mood gita, three gunas Bhagavad Gita explained, sattva rajas tamas meaning, Gunatraya Vibhaga Yoga summary, Bhagavad Gita 14.5 sattvam rajas tama, Bhagavad Gita 14.26 transcending gunas, what is gunatita state",
   openGraph: {
-    title: "Bhagavad Gita Chapter 14 (Three Gunas) — All Verses",
+    title: "Bhagavad Gita Chapter 14 Summary – Key Verses & Meaning (Three Gunas Yoga)",
     description: "Bhagavad Gita Chapter 14 — the three forces of inner weather. Sattva, rajas, tamas. And the state beyond all three.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 14 (Three Gunas) — All Verses",
+    title: "Bhagavad Gita Chapter 14 Summary – Key Verses & Meaning (Three Gunas Yoga)",
     description: "Bhagavad Gita Chapter 14 — the three forces of inner weather. Sattva, rajas, tamas. And the state beyond all three.",
     images: ["https://wisdomquotes.in/assets/chapter14.webp"],
   },

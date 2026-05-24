@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 15 (Purushottama Yoga) — Summary",
-  description: "Bhagavad Gita Chapter 15 — Purushottama Yoga. All 20 verses on the inverted ashvattha tree, the sword of detachment, and the Supreme Self.",
+  title: "Bhagavad Gita Chapter 15 Summary – Key Verses & Meaning (Purushottama Yoga)",
+  description: "Bhagavad Gita Chapter 15 (Purushottama Yoga) — 20 verses on the inverted ashvattha tree, the sword of detachment, and the Supreme Self beyond change.",
   keywords: "bhagwat geeta chapter 15, bhagavad gita purushottama yoga, bhagwat geeta adhyay 15, inverted ashvattha tree, sword of detachment gita, purushottama meaning, spark of divine bhagavad gita 15.7, ksharah aksharah purushottamah, Purushottama Yoga meaning, ashvattha tree Bhagavad Gita, Bhagavad Gita 15.7 mamaiva amsho, Bhagavad Gita 15.14 vaishvanaro, Bhagavad Gita 15.15 sarvasya chaham hridi, Purushottama meaning Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 15 (Purushottama Yoga) — All Verses",
+    title: "Bhagavad Gita Chapter 15 Summary – Key Verses & Meaning (Purushottama Yoga)",
     description: "Bhagavad Gita Chapter 15 — the upside-down tree, the sword of detachment, and the Supreme Self beyond change and changelessness.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 15 (Purushottama Yoga) — All Verses",
+    title: "Bhagavad Gita Chapter 15 Summary – Key Verses & Meaning (Purushottama Yoga)",
     description: "Bhagavad Gita Chapter 15 — the upside-down tree, the sword of detachment, and the Supreme Self beyond change and changelessness.",
     images: ["https://wisdomquotes.in/assets/chapter15.webp"],
   },

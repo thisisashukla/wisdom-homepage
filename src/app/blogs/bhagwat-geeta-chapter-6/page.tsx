@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 6 (Dhyana Yoga) — Meaning & Verses",
-  description: "Bhagavad Gita Chapter 6 — Dhyana Yoga (Meditation). All 47 verses with Sanskrit, transliteration, meaning, and the lamp-in-windless-place teaching.",
+  title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",
+  description: "Read Bhagavad Gita Chapter 6 (Dhyana Yoga) — all 47 verses on meditation, the restless mind, and the lamp-in-windless-place. Sanskrit, Hindi, English & meaning.",
   keywords: "bhagwat geeta chapter 6, bhagavad gita dhyana yoga, bhagwat geeta adhyay 6, lamp in windless place gita, uddharedatmanatmanam, abhyasa vairagya meaning, gita on meditation, restless mind gita, how to meditate bhagavad gita, Dhyana Yoga summary, Bhagavad Gita 6.5 meaning, Bhagavad Gita 6.34 the mind is like the wind, abhyasa vairagya meaning, lamp in windless place Bhagavad Gita, how to meditate according to Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 6 (Dhyana Yoga) — Summary & Verses",
+    title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",
     description: "All 47 verses of Bhagavad Gita Chapter 6 — meditation, the restless mind, and the lamp that does not flicker.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 6 (Dhyana Yoga) — Summary & Verses",
+    title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",
     description: "All 47 verses of Bhagavad Gita Chapter 6 — meditation, the restless mind, and the lamp that does not flicker.",
     images: ["https://wisdomquotes.in/assets/chapter6.webp"],
   },

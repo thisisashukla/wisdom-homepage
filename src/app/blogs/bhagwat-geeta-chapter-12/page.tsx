@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 12 (Bhakti Yoga) — Summary",
-  description: "Bhagavad Gita Chapter 12 — Bhakti Yoga. All 20 verses on devotion, the four-step ladder of practice, and the qualities of the devotee dear to Krishna.",
+  title: "Bhagavad Gita Chapter 12 Summary – Key Verses & Meaning (Bhakti Yoga)",
+  description: "Bhagavad Gita Chapter 12 (Bhakti Yoga) — 20 verses on devotion, the four-step ladder of practice, and the qualities of the devotee Krishna calls dear.",
   keywords: "bhagwat geeta chapter 12, bhagavad gita bhakti yoga, bhagwat geeta adhyay 12, form versus formless gita, 12.8 mind on me, qualities of a devotee gita, abhyasa yoga gita, renounce fruits of action, Bhakti Yoga meaning Bhagavad Gita, form vs formless worship Bhagavad Gita, Bhagavad Gita 12.13 qualities of a devotee, Bhagavad Gita 12.18 sama shatrau ca mitre ca, what is bhakti according to Bhagavad Gita, four-step practice ladder Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 12 (Bhakti Yoga) — All Verses",
+    title: "Bhagavad Gita Chapter 12 Summary – Key Verses & Meaning (Bhakti Yoga)",
     description: "Bhagavad Gita Chapter 12 — how a devotee actually lives. The four-step ladder. The qualities of the one Krishna calls dear.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 12 (Bhakti Yoga) — All Verses",
+    title: "Bhagavad Gita Chapter 12 Summary – Key Verses & Meaning (Bhakti Yoga)",
     description: "Bhagavad Gita Chapter 12 — how a devotee actually lives. The four-step ladder. The qualities of the one Krishna calls dear.",
     images: ["https://wisdomquotes.in/assets/chapter12.webp"],
   },

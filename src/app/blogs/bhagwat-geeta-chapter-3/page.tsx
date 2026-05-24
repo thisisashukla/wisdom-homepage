@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 3 (Karma Yoga) \u2014 Meaning & Verses",
-  description: "Bhagavad Gita Chapter 3 \u2014 Karma Yoga. All 43 verses with Sanskrit, transliteration, meaning. Why action is unavoidable, how it becomes offering, and why your own dharma matters more than another's done perfectly.",
+  title: "Bhagavad Gita Chapter 3 Summary \u2013 Key Verses & Meaning (Karma Yoga)",
+  description: "Bhagavad Gita Chapter 3 (Karma Yoga) \u2014 43 verses on action as offering, your own dharma over a borrowed perfection, and why desire is the real enemy of the seeker.",
   keywords: "bhagwat geeta chapter 3, bhagavad gita karma yoga, karma yoga chapter 3, bhagwat geeta adhyay 3, svadharma meaning, lokasamgraha gita, what gita says about duty, karma yoga meaning, yajna gita, desire is the enemy gita, your own dharma imperfectly, Karma Yoga summary, Bhagavad Gita 3.35 sva-dharme nidhanam shreyah, what is karma yoga in Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 3 (Karma Yoga) \u2014 Summary & Verses",
+    title: "Bhagavad Gita Chapter 3 Summary \u2013 Key Verses & Meaning (Karma Yoga)",
     description: "Forty-three verses on action, duty, desire \u2014 and why the desire to escape responsibility is often just desire in another form.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-3",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 3 (Karma Yoga) \u2014 Summary & Verses",
+    title: "Bhagavad Gita Chapter 3 Summary \u2013 Key Verses & Meaning (Karma Yoga)",
     description: "All 43 verses of Bhagavad Gita Chapter 3 \u2014 action as offering, your own dharma over a borrowed perfection, and why desire is the real enemy.",
     images: ["https://wisdomquotes.in/assets/chapter3.webp"],
   },

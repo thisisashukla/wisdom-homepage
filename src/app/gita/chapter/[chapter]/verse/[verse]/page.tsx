@@ -6,6 +6,7 @@ import {
   getVerse,
   getVerseNeighbors,
   getRelatedVerses,
+  getTopicBridgesForVerse,
   verseUrl,
   chapterUrl,
   topicUrl,
@@ -28,14 +29,39 @@ export async function generateStaticParams() {
   return out
 }
 
+/** Trim a string to ~maxChars without breaking a word; appends ellipsis. */
+const trimToLength = (s: string, maxChars: number): string => {
+  if (!s) return ''
+  const collapsed = s.replace(/\s+/g, ' ').trim()
+  if (collapsed.length <= maxChars) return collapsed
+  const cut = collapsed.slice(0, maxChars)
+  const lastSpace = cut.lastIndexOf(' ')
+  return (lastSpace > 40 ? cut.slice(0, lastSpace) : cut).replace(/[,.;:—-]$/, '') + '…'
+}
+
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const c = Number(params.chapter)
   const v = Number(params.verse)
   const verse = await getVerse(c, v)
   if (!verse) return { title: 'Verse not found' }
   const ch = getChapter(c)
-  const title = `Bhagavad Gita ${c}.${v} — ${verse.essence || verse.englishTranslation.slice(0, 70)} | Wisdom`
-  const description = `${verse.englishTranslation} Bhagavad Gita Chapter ${c}, Verse ${v}${ch ? ` (${ch.enName})` : ''} — Sanskrit, Hindi and English.`
+
+  // ── Title: intent-keyworded, includes chapter context to differentiate
+  //    1,604 otherwise-similar verse pages in SERP. ──
+  const titleHook = verse.essence || trimToLength(verse.englishTranslation, 60)
+  const title = `Bhagavad Gita ${c}.${v} Meaning – ${titleHook}${ch ? ` (${ch.enName})` : ''}`
+
+  // ── Description: 150-160 chars; lead with simpleMeaning if we have it,
+  //    fall back to englishTranslation. Include chapter for context. ──
+  const descLead =
+    verse.simpleMeaning ||
+    verse.detailedMeaning ||
+    verse.englishTranslation
+  const description = trimToLength(
+    `Bhagavad Gita Chapter ${c}, Verse ${v}${ch ? ` (${ch.enName})` : ''}: ${descLead}`,
+    158,
+  )
+
   const ogImage = `https://wisdomquotes.in/api/og/gita/${c}/${v}`
   return {
     title,
@@ -72,6 +98,7 @@ export default async function VersePage({ params }: { params: Params }) {
   const ch = getChapter(c)
   const { prev, next } = getVerseNeighbors(c, v)
   const related = getRelatedVerses(c, v, verse.tags) as IndexEntry[]
+  const topicBridges = getTopicBridgesForVerse(verse.tags)
 
   const quotationLd = {
     '@context': 'https://schema.org',
@@ -86,6 +113,32 @@ export default async function VersePage({ params }: { params: Params }) {
     },
     inLanguage: ['sa', 'en', 'hi'],
   }
+
+  // Article schema lets Google treat the commentary as editorial content
+  // rather than just a snippet — important now that we ship the full
+  // simpleMeaning / detailedMeaning / modernRelevance prose.
+  const articleLd = (verse.simpleMeaning || verse.detailedMeaning) ? {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `Bhagavad Gita ${c}.${v} — ${verse.essence || 'Meaning & Commentary'}`,
+    description: verse.simpleMeaning || verse.detailedMeaning,
+    articleBody: [
+      verse.simpleMeaning,
+      verse.detailedMeaning,
+      verse.modernRelevance,
+      verse.simpleInsight,
+    ].filter(Boolean).join('\n\n'),
+    author: { '@type': 'Organization', name: 'Wisdom' },
+    publisher: { '@type': 'Organization', name: 'Wisdom', url: 'https://wisdomquotes.in' },
+    mainEntityOfPage: `https://wisdomquotes.in${verseUrl(c, v)}`,
+    about: verse.tags.map((t) => ({ '@type': 'Thing', name: t })),
+    isPartOf: {
+      '@type': 'Chapter',
+      name: ch ? `${ch.enName} — ${ch.enTitle}` : `Chapter ${c}`,
+      isPartOf: { '@type': 'Book', name: 'Bhagavad Gita' },
+    },
+    inLanguage: 'en',
+  } : null
 
   const breadcrumbLd = {
     '@context': 'https://schema.org',
@@ -112,6 +165,9 @@ export default async function VersePage({ params }: { params: Params }) {
       <BlogTracker pageName={`gita_verse_${c}_${v}`} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(quotationLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {articleLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      )}
 
       <nav className="gita-crumb" aria-label="Breadcrumb">
         <a href="/gita" data-mp-location={`verse_${c}_${v}_crumb_gita`}>Bhagavad Gita</a>
@@ -167,6 +223,87 @@ export default async function VersePage({ params }: { params: Params }) {
           </div>
         )}
       </article>
+
+      {/* ── Rich commentary block: this is what turns a thin verse page into
+            a 250–400 word indexable page that can actually rank. Each section
+            is rendered only if the underlying field is non-empty so older
+            verse files (pre-V2 rebuild) gracefully fall back. ── */}
+      {(verse.simpleMeaning || verse.detailedMeaning) && (
+        <section className="gita-commentary" aria-label="Meaning and context">
+          {verse.simpleMeaning && (
+            <>
+              <h2 className="gita-h2">What this verse means</h2>
+              <p>{verse.simpleMeaning}</p>
+            </>
+          )}
+
+          {verse.detailedMeaning && (
+            <>
+              <h2 className="gita-h2">Context &amp; commentary</h2>
+              <p>{verse.detailedMeaning}</p>
+            </>
+          )}
+
+          {verse.modernRelevance && (
+            <>
+              <h2 className="gita-h2">Why this verse still matters</h2>
+              <p>{verse.modernRelevance}</p>
+            </>
+          )}
+
+          {verse.simpleInsight && (
+            <>
+              <h2 className="gita-h2">The takeaway</h2>
+              <p style={{ fontStyle: 'italic' }}>{verse.simpleInsight}</p>
+            </>
+          )}
+
+          {verse.translationLiteral && (
+            <details className="gita-details" style={{ marginTop: 28 }}>
+              <summary style={{ cursor: 'pointer', fontWeight: 600, color: 'var(--gold-light)' }}>
+                Word-by-word translation
+              </summary>
+              <p style={{ marginTop: 12, fontFamily: 'serif', lineHeight: 1.8 }} lang="sa">
+                {verse.translationLiteral}
+              </p>
+            </details>
+          )}
+
+          {ch && (
+            <p className="gita-chapter-link" style={{ marginTop: 36, fontSize: 14, color: 'var(--text-dim)' }}>
+              This verse is part of{' '}
+              <a
+                href={chapterUrl(c)}
+                style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}
+                data-mp-location={`verse_${c}_${v}_chapter_context`}
+              >
+                Bhagavad Gita Chapter {c}: {ch.enName} — {ch.enTitle}
+              </a>
+              , which contains {ch.processedVerses} verses{ch.totalVerses && ch.totalVerses !== ch.processedVerses ? ` (of ${ch.totalVerses} total)` : ''}.
+            </p>
+          )}
+
+          {topicBridges.length > 0 && (
+            <p className="gita-topic-bridges" style={{ marginTop: 16, fontSize: 14, color: 'var(--text-dim)' }}>
+              Explore related themes:{' '}
+              {topicBridges.map((t, idx) => (
+                <span key={t.slug}>
+                  {idx > 0 ? ', ' : ''}
+                  <a
+                    href={topicUrl(t.slug)}
+                    style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}
+                    data-mp-location={`verse_${c}_${v}_bridge_${t.slug}`}
+                  >
+                    {t.label}
+                  </a>
+                  {' '}
+                  <span style={{ color: 'var(--text-dimmer)' }}>({t.verseCount} verses)</span>
+                </span>
+              ))}
+            </p>
+          )}
+        </section>
+      )}
 
       <div className="gita-pn">
         <a

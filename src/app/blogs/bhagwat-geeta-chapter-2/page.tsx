@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 2 (Sankhya Yoga) \u2014 Meaning & Verses",
-  description: "Bhagavad Gita Chapter 2 \u2014 Sankhya Yoga. All 72 verses with Sanskrit, transliteration, meaning. The eternal soul, karma without attachment, the famous 2.47, and the sthitaprajna.",
+  title: "Bhagavad Gita Chapter 2 Summary \u2013 Key Verses & Meaning (Sankhya Yoga)",
+  description: "Bhagavad Gita Chapter 2 (Sankhya Yoga) \u2014 72 verses on the eternal soul, action without attachment, the famous 2.47, and the steady mind of the sthitaprajna.",
   keywords: "bhagwat geeta chapter 2, bhagavad gita chapter 2 sankhya yoga, bhagavad gita 2.47, karma without attachment gita, bhagwat geeta adhyay 2, sthitaprajna meaning, nayam hanti na hanyate, karmanyevadhikaras te meaning, eternal soul gita, atman bhagavad gita, nishkama karma, Sankhya Yoga summary, Bhagavad Gita 2.47 meaning, sthitaprajna lakshana, the cascade from attachment to ruin",
   openGraph: {
-    title: "Bhagavad Gita Chapter 2 (Sankhya Yoga) \u2014 Summary & Verses",
+    title: "Bhagavad Gita Chapter 2 Summary \u2013 Key Verses & Meaning (Sankhya Yoga)",
     description: "Seventy-two verses. One question about the soul. One teaching on action. One portrait of a mind that cannot be broken.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 2 (Sankhya Yoga) \u2014 Summary & Verses",
+    title: "Bhagavad Gita Chapter 2 Summary \u2013 Key Verses & Meaning (Sankhya Yoga)",
     description: "All 72 verses of Bhagavad Gita Chapter 2 \u2014 the eternal soul, action without attachment, and the mind that cannot be broken.",
     images: ["https://wisdomquotes.in/assets/chapter2.webp"],
   },

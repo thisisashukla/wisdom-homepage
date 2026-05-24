@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 4 (Jnana Karma Sanyasa Yoga) \u2014 Meaning & Verses",
-  description: "Bhagavad Gita Chapter 4 \u2014 Jnana Karma Sanyasa Yoga. All 42 verses with Sanskrit, transliteration, meaning. Yada yada hi dharmasya, the yoga of knowledge, and how wisdom burns karma.",
+  title: "Bhagavad Gita Chapter 4 Summary \u2013 Key Verses & Meaning (Jnana Karma Yoga)",
+  description: "Bhagavad Gita Chapter 4 (Jnana Karma Sanyasa Yoga) \u2014 42 verses on 'yada yada hi dharmasya,' divine incarnation, the yoga of knowledge, and how wisdom burns karma.",
   keywords: "bhagwat geeta chapter 4, bhagavad gita jnana yoga, yada yada hi dharmasya meaning, gita 4.7 meaning, bhagavad gita knowledge yoga, jnana yajna meaning, bhagwat geeta adhyay 4, divine incarnation gita, jnana agni gita, how to learn from a teacher gita, Jnana Karma Sanyasa Yoga summary, Bhagavad Gita 4.7 meaning, Bhagavad Gita 4.34 tadviddhi pranipatena, knowledge as offering Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 4 (Jnana Karma Sanyasa Yoga) \u2014 Summary & Verses",
+    title: "Bhagavad Gita Chapter 4 Summary \u2013 Key Verses & Meaning (Jnana Karma Yoga)",
     description: "All 42 verses of Bhagavad Gita Chapter 4 \u2014 yada yada hi dharmasya, knowledge as the highest offering, and how wisdom burns away all karma.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 4 (Jnana Karma Sanyasa Yoga) \u2014 Summary & Verses",
+    title: "Bhagavad Gita Chapter 4 Summary \u2013 Key Verses & Meaning (Jnana Karma Yoga)",
     description: "All 42 verses of Bhagavad Gita Chapter 4 \u2014 the promise of divine renewal, the yoga of knowledge, and the model for learning from a real teacher.",
     images: ["https://wisdomquotes.in/assets/chapter4.webp"],
   },

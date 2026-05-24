@@ -5,10 +5,14 @@
  * under `src/content/gita/`. This module is the only thing the routes touch —
  * if the data shape ever changes, only this file updates.
  *
- * Held back from the web (NEVER imported here): simple_meaning, detailed_meaning,
- * modern_relevance, translation_literal, quote_variants, target_audience, tone,
- * category, requisite_concepts, nodeId, path, depth, is_standalone.
- * These live in the app, not on the website. See moat plan.
+ * V2 (May 2026): we now ship the rich commentary fields (simpleMeaning,
+ * detailedMeaning, modernRelevance, translationLiteral) to the web. Earlier
+ * versions held these back; with 1,604 thin verse pages producing near-zero
+ * clicks, the SEO upside is far larger than any "moat" value left in keeping
+ * the commentary app-only.
+ *
+ * Still held back (app-only): quote_variants, target_audience, tone, category,
+ * requisite_concepts, nodeId, path, depth, is_standalone.
  */
 
 import chaptersJson from '@/content/gita/chapters.json'
@@ -26,7 +30,22 @@ export type Verse = {
   englishTranslation: string
   essence: string
   speaker: string
+  /** Deity context, if any (e.g. "Krishna", "Vishnu"). Optional. */
+  deity?: string
   tags: string[]
+  // ── V2 enrichment (optional — older verse files may omit these) ──
+  /** One-sentence "what this verse is saying" — easy reading. */
+  simpleMeaning?: string
+  /** One-line takeaway, the practical insight a reader can carry. */
+  simpleInsight?: string
+  /** 2–3 sentence detailed context: who is speaking to whom, why, what's at stake. */
+  detailedMeaning?: string
+  /** A modern scenario where this verse lands — bridges 2,500 years for a reader. */
+  modernRelevance?: string
+  /** Word-by-word Sanskrit gloss, useful for study. */
+  translationLiteral?: string
+  /** Category: "philosophical", "narrative", "declaration", etc. Used for structuring. */
+  verseType?: string
 }
 
 export type Chapter = {
@@ -137,12 +156,19 @@ export const getVerseNeighbors = (
   }
 }
 
-/** Cheap "related verses" — same chapter, then tag overlap, capped at limit. */
+/**
+ * Related verses — tag overlap weighted higher than chapter proximity, but
+ * deliberately picks a mix so the page links *across* the Gita rather than
+ * to its immediate neighbours (which are already linked via prev/next).
+ *
+ * Returns up to `limit` entries: at most 2 from the same chapter, the rest
+ * from other chapters. This spreads internal PageRank to thin verse pages.
+ */
 export const getRelatedVerses = (
   chapter: number,
   verse: number,
   tags: string[],
-  limit = 4,
+  limit = 6,
 ): IndexEntry[] => {
   const target = `${chapter}-${verse}`
   const tagSet = new Set(tags)
@@ -151,13 +177,43 @@ export const getRelatedVerses = (
     .filter((e) => `${e.chapter}-${e.verse}` !== target)
     .map((e) => {
       const overlap = e.tags.filter((t) => tagSet.has(t)).length
+      // Heavier weight on tag overlap; small bonus for same chapter so we
+      // still surface intra-chapter relations, but don't dominate the list.
       const sameChapter = e.chapter === chapter ? 1 : 0
-      return { entry: e, score: overlap * 10 + sameChapter }
+      return { entry: e, score: overlap * 10 + sameChapter, sameChapter }
     })
     .filter((x) => x.score > 0)
     .sort((a, b) => b.score - a.score)
 
-  return scored.slice(0, limit).map((x) => x.entry)
+  // Quota: at most 2 same-chapter, rest cross-chapter — improves topical link
+  // diversity, which helps thin pages get discovered through related-verse
+  // crawls instead of relying only on the sitemap.
+  const out: IndexEntry[] = []
+  let sameChapterCount = 0
+  const sameChapterCap = 2
+  for (const x of scored) {
+    if (x.sameChapter) {
+      if (sameChapterCount >= sameChapterCap) continue
+      sameChapterCount++
+    }
+    out.push(x.entry)
+    if (out.length >= limit) break
+  }
+  return out
+}
+
+/**
+ * Topical bridges — for a verse with tags, find the top-level topic hubs
+ * (already-published /gita/topic/[slug] pages) it belongs to. This lets the
+ * verse page link "up" into hub pages, which Google crawls more often and
+ * which already have authority.
+ */
+export const getTopicBridgesForVerse = (tags: string[], limit = 3): TopicSummary[] => {
+  const tagSet = new Set(tags)
+  const bridges = topicSummaries
+    .filter((t) => tagSet.has(t.slug))
+    .sort((a, b) => b.verseCount - a.verseCount)
+  return bridges.slice(0, limit)
 }
 
 // ── Chapter imagery ──────────────────────────────────────────────────────────

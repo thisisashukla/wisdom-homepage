@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 16 (Daivasura Sampad) — Summary",
-  description: "Bhagavad Gita Chapter 16 — Daivasura Sampad Vibhaga Yoga. All 24 verses on divine and demonic natures, and the three gates of ruin: desire, anger, greed.",
+  title: "Bhagavad Gita Chapter 16 Summary – Key Verses & Meaning (Daivasura Sampad)",
+  description: "Bhagavad Gita Chapter 16 (Daivasura Sampad Vibhaga Yoga) — 24 verses on divine and demonic natures and the three gates of ruin: desire, anger, greed.",
   keywords: "bhagwat geeta chapter 16, bhagavad gita daivi asuri sampad, bhagwat geeta adhyay 16, divine and demonic qualities, three gates of hell gita, kama krodha lobha, qualities of character gita, 16.21 trividham narakasyedam, Daivasura Sampad Vibhaga Yoga meaning, divine and demonic qualities Bhagavad Gita, Bhagavad Gita 16.21 three gates of hell, kama krodha lobha meaning, Bhagavad Gita on ego and character, 16 chapter qualities of devotion",
   openGraph: {
-    title: "Bhagavad Gita Chapter 16 (Two Inner Natures) — All Verses",
+    title: "Bhagavad Gita Chapter 16 Summary – Key Verses & Meaning (Daivasura Sampad)",
     description: "Bhagavad Gita Chapter 16 — qualities that open a life, qualities that close it, and the three gates of ruin (16.21).",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 16 (Two Inner Natures) — All Verses",
+    title: "Bhagavad Gita Chapter 16 Summary – Key Verses & Meaning (Daivasura Sampad)",
     description: "Bhagavad Gita Chapter 16 — qualities that open a life, qualities that close it, and the three gates of ruin (16.21).",
     images: ["https://wisdomquotes.in/assets/chapter16.webp"],
   },

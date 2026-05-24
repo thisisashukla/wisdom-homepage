@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 17 (Three Kinds of Faith) — Summary",
-  description: "Bhagavad Gita Chapter 17 — Shraddhatraya Vibhaga Yoga. All 28 verses on the three kinds of faith, sattvic food, austerity, giving, and Om Tat Sat.",
+  title: "Bhagavad Gita Chapter 17 Summary – Key Verses & Meaning (Shraddhatraya Yoga)",
+  description: "Bhagavad Gita Chapter 17 (Shraddhatraya Vibhaga Yoga) — 28 verses on the three kinds of faith, sattvic food, austerity, giving, and the meaning of Om Tat Sat.",
   keywords: "bhagwat geeta chapter 17, bhagavad gita shraddhatraya vibhaga yoga, bhagwat geeta adhyay 17, three kinds of faith gita, sattvic rajasic tamasic food, shraddha bhagavad gita, austerity of body speech mind, om tat sat, Shraddhatraya Vibhaga Yoga meaning, three kinds of faith Bhagavad Gita, sattvic rajasic tamasic food Bhagavad Gita, Bhagavad Gita 17.3 shraddha mayo ayam purushah, Om Tat Sat meaning Bhagavad Gita, three austerities Bhagavad Gita body speech mind",
   openGraph: {
-    title: "Bhagavad Gita Chapter 17 (Three Kinds of Faith) — All Verses",
+    title: "Bhagavad Gita Chapter 17 Summary – Key Verses & Meaning (Shraddhatraya Yoga)",
     description: "Bhagavad Gita Chapter 17 — you are made of what you trust. The three kinds of faith. Om Tat Sat.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 17 (Three Kinds of Faith) — All Verses",
+    title: "Bhagavad Gita Chapter 17 Summary – Key Verses & Meaning (Shraddhatraya Yoga)",
     description: "Bhagavad Gita Chapter 17 — you are made of what you trust. The three kinds of faith. Om Tat Sat.",
     images: ["https://wisdomquotes.in/assets/chapter17.webp"],
   },

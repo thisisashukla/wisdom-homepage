@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga) — Summary",
-  description: "Bhagavad Gita Chapter 7 — Jnana Vijnana Yoga. All 30 verses on knowledge vs. realization, the pearls-on-a-thread teaching, and the four kinds of seekers.",
+  title: "Bhagavad Gita Chapter 7 Summary – Key Verses & Meaning (Jnana Vijnana Yoga)",
+  description: "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga) — 30 verses on knowledge vs. realization, the pearls-on-a-thread teaching, maya, and the four kinds of seekers.",
   keywords: "bhagwat geeta chapter 7, bhagavad gita jnana vijnana yoga, bhagwat geeta adhyay 7, pearls on a thread gita, four types of devotees gita, maya in bhagavad gita, vasudeva sarvam iti, jnana vs vijnana, Jnana Vijnana Yoga meaning, Bhagavad Gita 7.7 pearls on a thread, Bhagavad Gita 7.8 taste in water, Vasudeva sarvam iti meaning, four types of devotees Bhagavad Gita, what is maya in Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga) — All Verses",
+    title: "Bhagavad Gita Chapter 7 Summary – Key Verses & Meaning (Jnana Vijnana Yoga)",
     description: "All 30 verses of Bhagavad Gita Chapter 7 — pearls strung on a thread, four seekers, and the rare realization 'Vasudeva is everything.'",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga) — All Verses",
+    title: "Bhagavad Gita Chapter 7 Summary – Key Verses & Meaning (Jnana Vijnana Yoga)",
     description: "All 30 verses of Bhagavad Gita Chapter 7 — pearls strung on a thread, four seekers, and the rare realization 'Vasudeva is everything.'",
     images: ["https://wisdomquotes.in/assets/chapter7.webp"],
   },

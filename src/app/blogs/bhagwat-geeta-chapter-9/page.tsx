@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 9 (Raja Vidya Yoga) — Summary",
-  description: "Bhagavad Gita Chapter 9 — Raja Vidya Raja Guhya Yoga. All 34 verses on the king of knowledge, leaf-flower-fruit-water, and 'my devotee never perishes.'",
+  title: "Bhagavad Gita Chapter 9 Summary – Key Verses & Meaning (Raja Vidya Yoga)",
+  description: "Bhagavad Gita Chapter 9 (Raja Vidya Raja Guhya Yoga) — 34 verses on the king of knowledge, patram pushpam, and 'my devotee never perishes' (9.31).",
   keywords: "bhagwat geeta chapter 9, bhagavad gita raja vidya raja guhya yoga, bhagwat geeta adhyay 9, patram pushpam phalam toyam, my devotee never perishes, 9.22 yogakshemam vahamyaham, sudurachara gita, easy bhakti gita, Raja Vidya Raja Guhya Yoga meaning, patram pushpam phalam toyam meaning, Bhagavad Gita 9.22 yoga kshema vahamy aham, Bhagavad Gita 9.30 sudurachara meaning, my devotee never perishes Bhagavad Gita, sarva dharman parityajya mam ekam",
   openGraph: {
-    title: "Bhagavad Gita Chapter 9 (Raja Vidya Raja Guhya) — All Verses",
+    title: "Bhagavad Gita Chapter 9 Summary – Key Verses & Meaning (Raja Vidya Yoga)",
     description: "Bhagavad Gita Chapter 9 — the royal secret. Leaf, flower, fruit, water. And 'my devotee never perishes' (9.31).",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 9 (Raja Vidya Raja Guhya) — All Verses",
+    title: "Bhagavad Gita Chapter 9 Summary – Key Verses & Meaning (Raja Vidya Yoga)",
     description: "Bhagavad Gita Chapter 9 — the royal secret. Leaf, flower, fruit, water. And 'my devotee never perishes' (9.31).",
     images: ["https://wisdomquotes.in/assets/chapter9.webp"],
   },

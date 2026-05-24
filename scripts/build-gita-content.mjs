@@ -9,12 +9,13 @@
  *            ├── verses/{ch}-{vs}.json   ← per-verse V1 web fields
  *            └── topics/{slug}.json  ← topic hubs (only tags appearing ≥10 times)
  *
- * V1 web fields (the "moat-preserving minimal" set):
+ * V2 web fields (SEO enrichment — 200-400 words per verse for ranking):
  *   sanskrit, hindiTranslation, englishTranslation, essence,
- *   speaker, tags (top 3), chapter, verse, order
+ *   speaker, deity, tags (top 5), chapter, verse, order,
+ *   simpleMeaning, simpleInsight, detailedMeaning, modernRelevance,
+ *   translationLiteral, verseType
  *
- * Held back for V2 (still in raw data, never written to web content):
- *   simple_meaning, detailed_meaning, modern_relevance, translation_literal,
+ * Still held back (app-only, never written to web content):
  *   quote_variants, target_audience, tone, category, requisite_concepts,
  *   nodeId, path, depth, is_standalone, model, schema_version, etc.
  *
@@ -199,12 +200,21 @@ async function main() {
       continue
     }
 
-    // ─── V1 web-safe fields only ───
+    // ─── V2 web-safe fields (richer for SEO) ───
     const englishTranslation = String(gpt.english_translation ?? '').trim()
     const essence = String(gpt.essence ?? gpt.insight ?? '').trim()
     const speaker = String(gpt.speaker ?? 'Narrator').trim()
+    const deity = String(gpt.deity ?? '').trim()
     const allTags = Array.isArray(gpt.tags) ? gpt.tags.map((t) => String(t).trim()).filter(Boolean) : []
-    const topTags = allTags.slice(0, 3) // shown on page; full list never serialized
+    const topTags = allTags.slice(0, 5) // expanded from 3 → 5 for richer internal linking
+
+    // New SEO-ranking fields (previously held back)
+    const simpleMeaning = String(gpt.simple_meaning ?? '').trim()
+    const simpleInsight = String(gpt.simple_insight ?? gpt.insight ?? '').trim()
+    const detailedMeaning = String(gpt.detailed_meaning ?? '').trim()
+    const modernRelevance = String(gpt.modern_relevance ?? '').trim()
+    const translationLiteral = String(gpt.translation_literal ?? '').trim()
+    const verseType = String(gpt.verse_type ?? gpt.category ?? '').trim()
 
     const sanskrit = String(raw.input.verse ?? '').trim()
     const hindiTranslation = String(raw.input.translation ?? '').trim()
@@ -226,7 +236,14 @@ async function main() {
       englishTranslation,
       essence,
       speaker,
+      deity,
       tags: topTags,
+      simpleMeaning,
+      simpleInsight,
+      detailedMeaning,
+      modernRelevance,
+      translationLiteral,
+      verseType,
     }
 
     await fs.writeFile(

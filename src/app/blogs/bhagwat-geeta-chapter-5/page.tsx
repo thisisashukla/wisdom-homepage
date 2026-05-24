@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 5 (Karma Sanyasa Yoga) \u2014 Meaning & Verses",
-  description: "Bhagavad Gita Chapter 5 \u2014 Karma Sanyasa Yoga. All 29 verses with Sanskrit, transliteration, meaning. The lotus leaf teaching, equal vision, and the quiet recognition that ends in peace.",
+  title: "Bhagavad Gita Chapter 5 Summary \u2013 Key Verses & Meaning (Karma Sanyasa Yoga)",
+  description: "Bhagavad Gita Chapter 5 (Karma Sanyasa Yoga) \u2014 29 verses on the lotus leaf teaching, equal vision across all beings, and the quiet recognition that ends in peace.",
   keywords: "bhagwat geeta chapter 5, bhagavad gita karma sanyasa yoga, bhagwat geeta adhyay 5, lotus leaf gita teaching, sama-darshitvam meaning, inner peace gita, brahma nirvana gita, gita chapter 5 meaning, sanyasa vs karma yoga, equal vision Bhagavad Gita, padmapatra gita, Karma Sanyasa Yoga summary, Bhagavad Gita 5.29 suhridam sarva-bhutanam, what is renunciation in Bhagavad Gita, how to act without being touched",
   openGraph: {
-    title: "Bhagavad Gita Chapter 5 (Karma Sanyasa Yoga) \u2014 Summary & Verses",
+    title: "Bhagavad Gita Chapter 5 Summary \u2013 Key Verses & Meaning (Karma Sanyasa Yoga)",
     description: "All 29 verses of Bhagavad Gita Chapter 5 \u2014 the lotus leaf teaching, equal vision across all beings, and where inner happiness actually lives.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-5",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 5 (Karma Sanyasa Yoga) \u2014 Summary & Verses",
+    title: "Bhagavad Gita Chapter 5 Summary \u2013 Key Verses & Meaning (Karma Sanyasa Yoga)",
     description: "All 29 verses of Bhagavad Gita Chapter 5 \u2014 the lotus leaf, equal vision, and the verse on knowing the Divine as the sincere friend of all beings.",
     images: ["https://wisdomquotes.in/assets/chapter5.webp"],
   },

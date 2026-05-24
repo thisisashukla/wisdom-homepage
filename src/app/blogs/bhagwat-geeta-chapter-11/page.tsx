@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 11 (Vishwarupa Yoga) — Summary",
-  description: "Bhagavad Gita Chapter 11 — Vishwarupa Darshana Yoga. All 55 verses on the cosmic form, the thousand suns, and 'I am Time, the destroyer of worlds.'",
+  title: "Bhagavad Gita Chapter 11 Summary – Key Verses & Meaning (Vishwarupa Yoga)",
+  description: "Bhagavad Gita Chapter 11 (Vishwarupa Darshana Yoga) — 55 verses on Krishna's cosmic form, the thousand suns, and 'I am Time, destroyer of worlds' (11.32).",
   keywords: "bhagwat geeta chapter 11, bhagavad gita vishwarupa darshana yoga, bhagwat geeta adhyay 11, kaloasmi loka kshaya krit pravriddho, thousand suns gita, cosmic form bhagavad gita, I am time the destroyer of worlds, nimitta matram bhava, Vishwarupa Darshana Yoga meaning, Bhagavad Gita 11.12 thousand suns, Bhagavad Gita 11.32 kalo asmi loka kshaya krit, I am Time the destroyer of worlds meaning, Bhagavad Gita 11.33 nimitta matram bhava, Krishna cosmic form Bhagavad Gita, Oppenheimer Bhagavad Gita quote",
   openGraph: {
-    title: "Bhagavad Gita Chapter 11 (Vishwarupa Darshana) — All Verses",
+    title: "Bhagavad Gita Chapter 11 Summary – Key Verses & Meaning (Vishwarupa Yoga)",
     description: "Bhagavad Gita Chapter 11 — the cosmic vision. A thousand suns. 'I am Time, the destroyer of worlds.' (11.32)",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 11 (Vishwarupa Darshana) — All Verses",
+    title: "Bhagavad Gita Chapter 11 Summary – Key Verses & Meaning (Vishwarupa Yoga)",
     description: "Bhagavad Gita Chapter 11 — the cosmic vision. A thousand suns. 'I am Time, the destroyer of worlds.' (11.32)",
     images: ["https://wisdomquotes.in/assets/chapter11.webp"],
   },

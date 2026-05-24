@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 13 (Kshetra Kshetrajna) — Summary",
-  description: "Bhagavad Gita Chapter 13 — Kshetra Kshetrajna Vibhaga Yoga. All 35 verses on the field and the knower, with Sanskrit, meaning, and modern relevance.",
+  title: "Bhagavad Gita Chapter 13 Summary – Key Verses & Meaning (Kshetra Kshetrajna Yoga)",
+  description: "Bhagavad Gita Chapter 13 (Kshetra Kshetrajna Vibhaga Yoga) — 35 verses on the field and the knower of the field, purusha-prakriti, and the witness self.",
   keywords: "bhagwat geeta chapter 13, bhagavad gita kshetra kshetrajna yoga, bhagwat geeta adhyay 13, field and knower of the field, qualities of knowledge gita, purusha prakriti gita, non-doer self gita, 13.8 amanitvam adambhitvam, Kshetra Kshetrajna Vibhaga Yoga meaning, field and knower of the field Bhagavad Gita, Bhagavad Gita 13.8 amanitvam adambhitvam, Bhagavad Gita 13.30 prakrtyaiva ca karmani, purusha prakriti Bhagavad Gita, self as witness Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 13 (Field & Knower) — All Verses",
+    title: "Bhagavad Gita Chapter 13 Summary – Key Verses & Meaning (Kshetra Kshetrajna Yoga)",
     description: "Bhagavad Gita Chapter 13 — the field and the knower of the field. The Gita's foundational psychology of self-awareness.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 13 (Field & Knower) — All Verses",
+    title: "Bhagavad Gita Chapter 13 Summary – Key Verses & Meaning (Kshetra Kshetrajna Yoga)",
     description: "Bhagavad Gita Chapter 13 — the field and the knower of the field. The Gita's foundational psychology of self-awareness.",
     images: ["https://wisdomquotes.in/assets/chapter13.webp"],
   },

@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 18 (Moksha Sannyasa) — Summary",
-  description: "Bhagavad Gita Chapter 18 — Moksha Sannyasa Yoga. All 78 verses including 'sarva-dharman parityajya' (18.66) and the final teaching of liberation.",
+  title: "Bhagavad Gita Chapter 18 Summary – Key Verses & Meaning (Moksha Sannyasa)",
+  description: "Bhagavad Gita Chapter 18 (Moksha Sannyasa Yoga) — all 78 verses, the longest chapter, including 'sarva-dharman parityajya' (18.66) and the final teaching of liberation.",
   keywords: "bhagwat geeta chapter 18, bhagavad gita moksha sannyasa yoga, bhagwat geeta adhyay 18, sarva dharman parityajya, man mana bhava mad bhakto, swadharma gita, five causes of action, charama shloka gita, Moksha Sannyasa Yoga meaning, Bhagavad Gita 18.66 sarva dharman parityajya, Bhagavad Gita 18.65 man mana bhava mad bhakto, Bhagavad Gita 18.47 sva dharma, five causes of action Bhagavad Gita, charama shloka Bhagavad Gita, Bhagavad Gita conclusion summary",
   openGraph: {
-    title: "Bhagavad Gita Chapter 18 (The Final Chapter) — All Verses",
+    title: "Bhagavad Gita Chapter 18 Summary – Key Verses & Meaning (Moksha Sannyasa)",
     description: "Bhagavad Gita Chapter 18 — the longest chapter, the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 18 (The Final Chapter) — All Verses",
+    title: "Bhagavad Gita Chapter 18 Summary – Key Verses & Meaning (Moksha Sannyasa)",
     description: "Bhagavad Gita Chapter 18 — the longest chapter, the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
     images: ["https://wisdomquotes.in/assets/chapter18.webp"],
   },

@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 1 (Arjuna Vishada Yoga) \u2014 Meaning & Verses",
-  description: "Bhagavad Gita Chapter 1 \u2014 Arjuna Vishada Yoga. All 47 verses with Sanskrit, transliteration, meaning, and the moment the greatest archer in history put down his bow.",
+  title: "Bhagavad Gita Chapter 1 Summary \u2013 Key Verses & Meaning (Arjuna Vishada Yoga)",
+  description: "Bhagavad Gita Chapter 1 (Arjuna Vishada Yoga) \u2014 47 verses on the despair of Arjuna at Kurukshetra, when the greatest archer in history put down his bow.",
   keywords: "bhagwat geeta chapter 1, bhagwat geeta adhyay 1, arjuna vishada yoga, bhagavad gita chapter 1 shlok, bhagwat geeta chapter 1 in hindi, arjuna grief bhagavad gita, kurukshetra battlefield, dhritarashtra uvacha, arjuna refuses to fight, gita chapter 1 summary, Arjuna Vishada Yoga meaning, Bhagavad Gita 1.1 dharmakshetre kurukshetre, why Arjuna put down his bow, moral crisis Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 1 (Arjuna Vishada Yoga) \u2014 Summary & Verses",
+    title: "Bhagavad Gita Chapter 1 Summary \u2013 Key Verses & Meaning (Arjuna Vishada Yoga)",
     description: "All 47 verses of Bhagavad Gita Chapter 1 \u2014 a great warrior paralysed not by cowardice, but by conscience. The most psychologically honest chapter in the Gita.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-1",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 1 (Arjuna Vishada Yoga) \u2014 Summary & Verses",
+    title: "Bhagavad Gita Chapter 1 Summary \u2013 Key Verses & Meaning (Arjuna Vishada Yoga)",
     description: "All 47 verses of Bhagavad Gita Chapter 1 \u2014 a great warrior paralysed not by cowardice, but by conscience.",
     images: ["https://wisdomquotes.in/assets/chapter1.webp"],
   },
