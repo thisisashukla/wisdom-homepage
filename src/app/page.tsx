@@ -77,7 +77,6 @@ export default function HomePage() {
         <div className="phones-fan">
           <div className="fan-phone fan-left">
             <div className="iphone-mock">
-              <div className="iphone-island"></div>
               <div className="iphone-screen">
                 <img
                   src="/assets/app-path-wisdom.webp"
@@ -88,7 +87,6 @@ export default function HomePage() {
           </div>
           <div className="fan-phone fan-center">
             <div className="iphone-mock">
-              <div className="iphone-island"></div>
               <div className="iphone-screen">
                 <img
                   src="/assets/app-you-are-your-greatest-ally.webp"
@@ -99,7 +97,6 @@ export default function HomePage() {
           </div>
           <div className="fan-phone fan-right">
             <div className="iphone-mock">
-              <div className="iphone-island"></div>
               <div className="iphone-screen">
                 <img
                   src="/assets/app-offering.webp"

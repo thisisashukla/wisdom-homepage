@@ -248,18 +248,9 @@
         object-fit: cover;
         display: block;
       }
-      .iphone-island {
-        position: absolute;
-        top: 12px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 108px;
-        height: 30px;
-        background: #1c0e0e;
-        border-radius: 20px;
-        z-index: 5;
-        pointer-events: none;
-      }
+      /* .iphone-island removed — real iOS dynamic island already lives in
+         each captured screenshot; synthetic overlay caused double-island
+         artefacts. */
       .phones-fan {
         display: flex;
         align-items: flex-end;
@@ -583,20 +574,51 @@
         display: flex;
         justify-content: center;
       }
+      /* .phone-frame — unified with .iphone-mock so every phone on the page
+         shares the same bezel, side buttons, shadow and screen radius. */
       .phone-frame {
         width: 272px;
-        border-radius: var(--r-phone);
-        overflow: hidden;
-        background: #1a0808;
+        position: relative;
+        background: #1c0e0e;
+        border-radius: 48px;
+        padding: 11px 10px;
         box-shadow:
           0 0 0 1px rgba(200, 136, 30, 0.18),
-          0 0 0 2px #2a1212,
-          0 12px 36px rgba(0, 0, 0, 0.3),
-          0 40px 100px rgba(0, 0, 0, 0.45);
+          0 0 0 2.5px #2a1515,
+          inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+          0 32px 80px rgba(0, 0, 0, 0.6),
+          0 8px 20px rgba(0, 0, 0, 0.35);
+      }
+      .phone-frame::after {
+        content: "";
+        position: absolute;
+        right: -3.5px;
+        top: 104px;
+        width: 3.5px;
+        height: 62px;
+        background: #2a1515;
+        border-radius: 0 3px 3px 0;
+      }
+      .phone-frame::before {
+        content: "";
+        position: absolute;
+        left: -3.5px;
+        top: 76px;
+        width: 3.5px;
+        height: 30px;
+        background: #2a1515;
+        border-radius: 3px 0 0 3px;
+        box-shadow:
+          0 46px 0 #2a1515,
+          0 84px 0 #2a1515;
       }
       .phone-frame img {
         width: 100%;
         display: block;
+        border-radius: 38px;
+        background: #1a0808;
+        aspect-ratio: 9 / 19.5;
+        object-fit: cover;
       }
 
       /* ─── SHLOKA QUOTE BLOCK ─── */
