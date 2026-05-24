@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import type { CSSProperties } from 'react'
 import schemas from '@/lib/homeSchemas'
 import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
@@ -36,23 +35,23 @@ export default function HomePage() {
       <div className="wrap">
         <div className="hero-logo">
           <img
-            src="/assets/male-logo-dark.webp"
+            src="/assets/new-light-logo.webp"
             alt="Wisdom sage"
             fetchPriority="high"/>
         </div>
 
         <div className="hero-eyebrow">
-          Ancient wisdom for the modern mind
+          Anxious. Overthinking. Restless. Lost.
         </div>
 
         <h1>
-          The restlessness you feel —<br/><em>they had a name for it.</em>
+          Your mind won&apos;t stop.<br/><em>The Gita knows why.</em>
         </h1>
 
         <p className="hero-sub">
-          Five thousand years ago, a civilization mapped the restless mind — and left behind
-          three paths to steady it. Wisdom gives you a daily 2-minute practice from the Bhagavad Gita,
-          placed on the path that fits how you think, feel, and act.
+          For 5,000 years, three paths have been quieting minds like yours —
+          Action, Wisdom, Devotion. Wisdom places you on yours and gives you a
+          2-minute practice from the Bhagavad Gita each morning.
         </p>
 
         <div className="hero-actions">
@@ -81,8 +80,8 @@ export default function HomePage() {
               <div className="iphone-island"></div>
               <div className="iphone-screen">
                 <img
-                  src="/assets/app-breathe.png"
-                  alt="Wisdom app opening breathing practice — Take three breaths with us"
+                  src="/assets/app-path-wisdom.webp"
+                  alt="Wisdom app Path of Wisdom — Stillness, Witness and Gyan Mastery nodes from the Bhagavad Gita"
                   loading="lazy"/>
               </div>
             </div>
@@ -92,8 +91,8 @@ export default function HomePage() {
               <div className="iphone-island"></div>
               <div className="iphone-screen">
                 <img
-                  src="/assets/path-devotion-reveal.png"
-                  alt="Wisdom app revealing your path — You were made to feel deeply, Path of Devotion"
+                  src="/assets/app-you-are-your-greatest-ally.webp"
+                  alt="Wisdom app today's verse home screen — Bhagavad Gita 6.5: 'You are your own greatest ally and your own greatest challenge'"
                   fetchPriority="high"/>
               </div>
             </div>
@@ -103,8 +102,8 @@ export default function HomePage() {
               <div className="iphone-island"></div>
               <div className="iphone-screen">
                 <img
-                  src="/assets/app-teaching.png"
-                  alt="Wisdom app daily teaching — Your Teaching Today with Bhagavad Gita verse and modern meaning"
+                  src="/assets/app-offering.webp"
+                  alt="Wisdom app Bhakti offering practice — a journal-style reflection prompt after a Bhagavad Gita verse"
                   loading="lazy"/>
               </div>
             </div>
@@ -174,70 +173,120 @@ export default function HomePage() {
             <h3>No map for the inner life</h3>
             <p>
               Modern tools track your sleep and your steps. Nothing
-              guides what's happening inside — or where to go from here.
+              guides what&apos;s happening inside — or where to go from here.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    {/* ── ANCIENT LENS ── */}
-    <section className="section-alt ancient-lens">
-      <div className="ancient-lens-inner">
-        <div className="eyebrow">A different lens</div>
-        <blockquote>
-          "Five thousand years ago, on the battlefield of Kurukshetra,
-          a warrior sat down in despair — overwhelmed, lost, unable to act.
-          What he received changed everything."
-        </blockquote>
-        <p>
-          The Bhagavad Gita is not mythology. It is one of the most sophisticated
-          maps of the inner life ever written — composed by a civilization that
-          studied the mind more deeply than modern psychology, and left behind
-          practical paths for every kind of person.
-        </p>
-        <p>
-          They understood something we've forgotten: not everyone finds clarity
-          the same way. A person driven by action needs a different path than
-          someone who seeks understanding — or someone who finds steadiness
-          through love and surrender.
-        </p>
-        <p style={{"fontFamily": "'Playfair Display', Georgia, serif", "fontStyle": "italic", "fontSize": "17px", "color": "var(--gold-light)", "fontWeight": "600"}}>
-          So they mapped three distinct paths. And every one leads to the same place.
-        </p>
-        <div className="lens-pills">
-          <span className="lens-pill"><strong>Karma Yoga</strong> — the path of action</span>
-          <span className="lens-pill"><strong>Jnana Yoga</strong> — the path of wisdom</span>
-          <span className="lens-pill"><strong>Bhakti Yoga</strong> — the path of devotion</span>
         </div>
       </div>
     </section>
 
     {/* ── THE 3 PATHS ── */}
-    <section className="section paths-section" id="paths">
+    <section className="section section-alt paths-section" id="paths">
       <div className="wrap t-center">
         <div className="eyebrow">The three paths</div>
-        <h2 className="heading" style={{"maxWidth": "600px", "margin": "0 auto 14px"}}>
-          Which path are you on?<br/><em>Wisdom places you there.</em>
+        <h2 className="heading" style={{"maxWidth": "640px", "margin": "0 auto 14px"}}>
+          Which path is your calling?<br/><em>Wisdom places you there.</em>
         </h2>
-        <p className="subtext" style={{"maxWidth": "520px", "margin": "0 auto"}}>
-          Tell us what's been heavy. Tell us how you usually respond.
-          Wisdom reads how you struggle — and places you on the path you need.
-          Each path has nodes you grow through, one practice at a time.
+        <p
+          style={{
+            maxWidth: "620px",
+            margin: "0 auto",
+            fontFamily: "'Playfair Display', Georgia, serif",
+            fontSize: "clamp(18px, 2.1vw, 23px)",
+            fontStyle: "italic",
+            lineHeight: "1.5",
+            color: "#ffffff",
+            fontWeight: 600,
+          }}
+        >
+          The paths Krishna laid out for a restless mind are still open.
         </p>
+
+        <div
+          aria-label="The three paths — Wisdom, Action, Devotion"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "flex-start",
+            gap: "clamp(32px, 6vw, 80px)",
+            flexWrap: "wrap",
+            margin: "48px auto 0",
+          }}
+        >
+          {/* WISDOM */}
+          <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "18px", minWidth: "160px"}}>
+            <div
+              aria-hidden="true"
+              style={{
+                width: "clamp(120px, 14vw, 160px)",
+                height: "clamp(120px, 14vw, 160px)",
+                borderRadius: "50%",
+                background: "radial-gradient(circle at 32% 28%, #f9d176 0%, #f4b740 55%, #9c7000 100%)",
+                boxShadow: "0 0 0 6px rgba(244, 183, 64, 0.10), 0 0 56px rgba(244, 183, 64, 0.38), inset 0 -8px 22px rgba(0, 0, 0, 0.18), inset 0 8px 20px rgba(255, 255, 255, 0.22)",
+              }}
+            ></div>
+            <div style={{fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(22px, 2.4vw, 28px)", fontWeight: 700, color: "#f9d176", lineHeight: 1.1, letterSpacing: "-0.4px"}}>
+              Wisdom
+            </div>
+            <div style={{fontSize: "11.5px", color: "var(--text-dim)", letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 600}}>
+              Jnana · The seeker
+            </div>
+          </div>
+
+          {/* ACTION */}
+          <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "18px", minWidth: "160px"}}>
+            <div
+              aria-hidden="true"
+              style={{
+                width: "clamp(120px, 14vw, 160px)",
+                height: "clamp(120px, 14vw, 160px)",
+                borderRadius: "50%",
+                background: "radial-gradient(circle at 32% 28%, #c2cce9 0%, #8a98cc 55%, #4c5990 100%)",
+                boxShadow: "0 0 0 6px rgba(138, 152, 204, 0.10), 0 0 56px rgba(138, 152, 204, 0.38), inset 0 -8px 22px rgba(0, 0, 0, 0.18), inset 0 8px 20px rgba(255, 255, 255, 0.22)",
+              }}
+            ></div>
+            <div style={{fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(22px, 2.4vw, 28px)", fontWeight: 700, color: "#b8c3e6", lineHeight: 1.1, letterSpacing: "-0.4px"}}>
+              Action
+            </div>
+            <div style={{fontSize: "11.5px", color: "var(--text-dim)", letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 600}}>
+              Karma · The doer
+            </div>
+          </div>
+
+          {/* DEVOTION */}
+          <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "18px", minWidth: "160px"}}>
+            <div
+              aria-hidden="true"
+              style={{
+                width: "clamp(120px, 14vw, 160px)",
+                height: "clamp(120px, 14vw, 160px)",
+                borderRadius: "50%",
+                background: "radial-gradient(circle at 32% 28%, #f0c4d3 0%, #d9789a 55%, #7b3553 100%)",
+                boxShadow: "0 0 0 6px rgba(217, 120, 154, 0.10), 0 0 56px rgba(217, 120, 154, 0.38), inset 0 -8px 22px rgba(0, 0, 0, 0.18), inset 0 8px 20px rgba(255, 255, 255, 0.22)",
+              }}
+            ></div>
+            <div style={{fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(22px, 2.4vw, 28px)", fontWeight: 700, color: "#ecaac3", lineHeight: 1.1, letterSpacing: "-0.4px"}}>
+              Devotion
+            </div>
+            <div style={{fontSize: "11.5px", color: "var(--text-dim)", letterSpacing: "0.14em", textTransform: "uppercase", fontWeight: 600}}>
+              Bhakti · The heart
+            </div>
+          </div>
+        </div>
 
         <div className="paths-grid">
 
-          {/* PATH OF ACTION */}
-          <div className="path-card action reveal" style={{"--d": "0ms"} as CSSProperties}>
-            <div className="path-badge">⚔️ Path of Action</div>
-            <h3>Karma Yoga</h3>
-            <div className="path-yoga">THE WAY OF THE DOER</div>
-            <p className="path-desc">
-              For those who need to move, act, and accomplish — but feel consumed
-              by outcomes, restless when idle, or trapped in cycles of doing more.
+          {/* PATH OF WISDOM */}
+          <div className="path-card wisdom">
+            <div className="path-badge">💡 Path of Wisdom</div>
+            <h3>Jnana Yoga</h3>
+            <div className="path-yoga">THE WAY OF THE SEEKER</div>
+            <p className="path-desc" style={{minHeight: "112px"}}>
+              For those who need to understand — who can&apos;t find peace
+              without clarity, who feel lost in the gap between what they know
+              and what they feel.
             </p>
-            <p className="path-tagline">"Your work becomes your practice."</p>
+            <p className="path-tagline" style={{minHeight: "26px"}}>&ldquo;See through the noise. See what&apos;s real.&rdquo;</p>
             <div className="path-nodes">
               <div className="path-node">
                 <div className="node-dot filled">
@@ -246,77 +295,70 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <div className="node-label">
-                  <strong>Right Action</strong>
-                  <span>Svakarma — act from your nature, not your fear</span>
+                  <strong>Stillness <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
+                  <span>Sthitaprajna — the observer that does not move</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled">
+                  <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                    <path d="M1 3l2 2 4-4" stroke="#120505" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="node-label">
+                  <strong>Clarity <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
+                  <span>Viveka — seeing what is real vs. what fear adds</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
-                  <strong>Detachment</strong>
-                  <span>Vairagya — do the work, release the outcome</span>
-                </div>
-              </div>
-              <div className="path-node node-locked">
-                <div className="node-dot"></div>
-                <div className="node-label">
-                  <strong>Karma Mastery</strong>
-                  <span>Karmayogi — action as a form of worship</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* PATH OF WISDOM */}
-          <div className="path-card wisdom reveal" style={{"--d": "80ms"} as CSSProperties}>
-            <div className="path-badge">💡 Path of Wisdom</div>
-            <h3>Jnana Yoga</h3>
-            <div className="path-yoga">THE WAY OF THE SEEKER</div>
-            <p className="path-desc">
-              For those who need to understand — who can't find peace without clarity,
-              who question everything, who feel lost in the gap between what they know
-              and what they feel.
-            </p>
-            <p className="path-tagline">"See through the noise. See what's real."</p>
-            <div className="path-nodes">
-              <div className="path-node">
-                <div className="node-dot filled">
-                  <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
-                    <path d="M1 3l2 2 4-4" stroke="#120505" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-                <div className="node-label">
                   <strong>Witness</strong>
-                  <span>Sakshi — observe without becoming the thought</span>
+                  <span>Sakshi — the self that watches without becoming</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Inquiry</strong>
-                  <span>Viveka — discern the real from the passing</span>
+                  <span>Vichara — asking who is asking</span>
                 </div>
               </div>
-              <div className="path-node node-locked">
-                <div className="node-dot"></div>
+              <div className="path-node">
+                <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Equanimity</strong>
-                  <span>Sthitaprajna — the steady-minded sage</span>
+                  <span>Samatvam — stillness that survives contact with life</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled"></div>
+                <div className="node-label">
+                  <strong>Vairagya <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· SHARED WITH ACTION</span></strong>
+                  <span>Release of grip — engagement without enslavement</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled" style={{boxShadow: "0 0 0 4px rgba(245, 201, 106, 0.18), 0 0 18px rgba(245, 201, 106, 0.45)"}}></div>
+                <div className="node-label">
+                  <strong style={{color: "#f5c96a"}}>Gyan Mastery <span style={{fontSize: "10.5px", letterSpacing: "0.08em", opacity: 0.75}}>★</span></strong>
+                  <span>Jnanayogi — the knower who is beyond knowing</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* PATH OF DEVOTION */}
-          <div className="path-card devotion reveal" style={{"--d": "160ms"} as CSSProperties}>
-            <div className="path-badge">🙏 Path of Devotion</div>
-            <h3>Bhakti Yoga</h3>
-            <div className="path-yoga">THE WAY OF THE HEART</div>
-            <p className="path-desc">
-              For those who feel deeply — who need to trust again, to reconnect,
-              to find steadiness through surrender rather than control.
+          {/* PATH OF ACTION */}
+          <div className="path-card action">
+            <div className="path-badge">⚔️ Path of Action</div>
+            <h3>Karma Yoga</h3>
+            <div className="path-yoga">THE WAY OF THE DOER</div>
+            <p className="path-desc" style={{minHeight: "112px"}}>
+              For those who need to move, act, and accomplish — but feel
+              consumed by outcomes, restless when idle, or trapped in cycles
+              of doing more.
             </p>
-            <p className="path-tagline">"Let the heart be your guide home."</p>
+            <p className="path-tagline" style={{minHeight: "26px"}}>&ldquo;Your work becomes your practice.&rdquo;</p>
             <div className="path-nodes">
               <div className="path-node">
                 <div className="node-dot filled">
@@ -325,24 +367,181 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <div className="node-label">
-                  <strong>Connection</strong>
-                  <span>Kritajna — recognize what still holds you</span>
+                  <strong>Pause <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
+                  <span>Antara Viraam — the gap before reaction</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled">
+                  <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                    <path d="M1 3l2 2 4-4" stroke="#120505" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="node-label">
+                  <strong>Purpose <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
+                  <span>Nishkama Karma — why you act</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled"></div>
+                <div className="node-label">
+                  <strong>Discipline</strong>
+                  <span>Sadhana — the architecture of consistent action</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled"></div>
+                <div className="node-label">
+                  <strong>Duty</strong>
+                  <span>Svadharma — the work that is specifically yours</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled"></div>
+                <div className="node-label">
+                  <strong>Effort</strong>
+                  <span>Purushartha — right striving without depletion</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled"></div>
+                <div className="node-label">
+                  <strong>Patience</strong>
+                  <span>Titiksha — endurance without collapse</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled"></div>
+                <div className="node-label">
+                  <strong>Vairagya <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· SHARED WITH WISDOM</span></strong>
+                  <span>Release of grip — engagement without enslavement</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled" style={{boxShadow: "0 0 0 4px rgba(245, 201, 106, 0.18), 0 0 18px rgba(245, 201, 106, 0.45)"}}></div>
+                <div className="node-label">
+                  <strong style={{color: "#f5c96a"}}>Karma Mastery <span style={{fontSize: "10.5px", letterSpacing: "0.08em", opacity: 0.75}}>★</span></strong>
+                  <span>Karmayogi — the actor who is free</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* PATH OF DEVOTION */}
+          <div className="path-card devotion">
+            <div className="path-badge">🙏 Path of Devotion</div>
+            <h3>Bhakti Yoga</h3>
+            <div className="path-yoga">THE WAY OF THE HEART</div>
+            <p className="path-desc" style={{minHeight: "112px"}}>
+              For those who feel deeply — who need to trust again, to
+              reconnect, to find steadiness through surrender rather than
+              control.
+            </p>
+            <p className="path-tagline" style={{minHeight: "26px"}}>&ldquo;Let the heart be your guide home.&rdquo;</p>
+            <div className="path-nodes">
+              <div className="path-node">
+                <div className="node-dot filled">
+                  <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                    <path d="M1 3l2 2 4-4" stroke="#120505" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="node-label">
+                  <strong>Trust <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
+                  <span>Shraddha — the willingness to lean</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled">
+                  <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                    <path d="M1 3l2 2 4-4" stroke="#120505" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="node-label">
+                  <strong>Connection <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
+                  <span>Kritajna — recognizing what was always there</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Devotion</strong>
-                  <span>Bhakti — bringing your whole self to what is</span>
+                  <span>Bhakti — sustained gratitude as a way of being</span>
                 </div>
               </div>
-              <div className="path-node node-locked">
-                <div className="node-dot"></div>
+              <div className="path-node">
+                <div className="node-dot filled"></div>
                 <div className="node-label">
-                  <strong>Bhakti Mastery</strong>
+                  <strong>Compassion</strong>
+                  <span>Karuna — feeling others&apos; pain without being consumed</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled"></div>
+                <div className="node-label">
+                  <strong>Acceptance</strong>
+                  <span>Prasada — receiving what life gives without resentment</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled"></div>
+                <div className="node-label">
+                  <strong>Surrender</strong>
+                  <span>Sharanagati — putting down the performance of being fine</span>
+                </div>
+              </div>
+              <div className="path-node">
+                <div className="node-dot filled" style={{boxShadow: "0 0 0 4px rgba(245, 201, 106, 0.18), 0 0 18px rgba(245, 201, 106, 0.45)"}}></div>
+                <div className="node-label">
+                  <strong style={{color: "#f5c96a"}}>Bhakti Mastery <span style={{fontSize: "10.5px", letterSpacing: "0.08em", opacity: 0.75}}>★</span></strong>
                   <span>Bhaktayogi — love as your natural state</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* MOKSHA convergence panel — Ring 7, shared by all three paths */}
+        <div
+          style={{
+            maxWidth: "780px",
+            margin: "44px auto 0",
+            padding: "26px 32px",
+            borderRadius: "22px",
+            background: "linear-gradient(135deg, rgba(245, 201, 106, 0.10) 0%, rgba(200, 136, 30, 0.05) 100%)",
+            border: "1px solid rgba(245, 201, 106, 0.28)",
+            boxShadow: "0 0 60px rgba(216, 162, 63, 0.10), inset 0 0 30px rgba(245, 201, 106, 0.04)",
+            display: "flex",
+            alignItems: "center",
+            gap: "24px",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
+          <div aria-hidden="true" style={{display: "flex", alignItems: "center", gap: "6px"}}>
+            <span style={{width: "14px", height: "14px", borderRadius: "50%", background: "var(--path-wisdom, #f4b740)"}}></span>
+            <span style={{width: "14px", height: "14px", borderRadius: "50%", background: "var(--path-action, #8a98cc)"}}></span>
+            <span style={{width: "14px", height: "14px", borderRadius: "50%", background: "var(--path-devotion, #d9789a)"}}></span>
+            <span style={{fontSize: "16px", color: "var(--text-dim)", margin: "0 6px"}}>→</span>
+            <span
+              style={{
+                width: "44px",
+                height: "44px",
+                borderRadius: "50%",
+                background: "radial-gradient(circle at 32% 28%, #fbe7a3 0%, #d8a23f 55%, #8e6720 100%)",
+                boxShadow: "0 0 0 4px rgba(245, 201, 106, 0.20), 0 0 28px rgba(245, 201, 106, 0.55)",
+                display: "inline-block",
+              }}
+            ></span>
+          </div>
+          <div style={{textAlign: "left", minWidth: "240px"}}>
+            <div style={{fontSize: "11px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "#f5c96a", marginBottom: "4px"}}>
+              Ring 7 · Moksha
+            </div>
+            <div style={{fontFamily: "'Playfair Display', Georgia, serif", fontSize: "22px", fontWeight: 700, color: "var(--gold-light)", lineHeight: 1.15, marginBottom: "4px"}}>
+              Liberation
+            </div>
+            <div style={{fontSize: "13.5px", color: "var(--text-dim)", lineHeight: 1.5}}>
+              Where all three paths arrive.
             </div>
           </div>
         </div>
@@ -353,45 +552,6 @@ export default function HomePage() {
         </p>
       </div>
     </section>
-
-    {/* ── SHLOKA QUOTE BLOCK ── */}
-    <section className="section-warm">
-      <div className="shloka-block">
-        <div className="shloka-deva">
-          कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।<br/>
-          मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥
-        </div>
-        <div className="shloka-en">
-          "You have the right to perform your duties —<br/>
-          but never to the fruits of your actions."
-        </div>
-        <div className="shloka-src">— Bhagavad Gita 2.47</div>
-        <p style={{"fontSize": "15.5px", "color": "var(--text-dim)", "lineHeight": "1.8", "marginTop": "24px", "fontWeight": "300"}}>
-          This is the heart of Karma Yoga — action without attachment.
-          Each path in Wisdom leads you back to a teaching like this: one verse, placed
-          where you are right now, with a 2-minute practice to carry it inward.
-        </p>
-        <div style={{"display": "flex", "gap": "12px", "justifyContent": "center", "alignItems": "center", "flexWrap": "wrap", "marginTop": "32px"}}>
-          <a
-            href="/gita"
-            data-mp-location="shloka_block_read_gita"
-            style={{"display": "inline-flex", "alignItems": "center", "justifyContent": "center", "gap": "8px", "background": "var(--gold)", "color": "#1a0606", "padding": "13px 26px", "borderRadius": "10px", "fontSize": "15px", "fontWeight": "700", "textDecoration": "none"}}
-          >
-            Read the full Gita →
-          </a>
-          <a
-            href="/hi/gita"
-            hrefLang="hi"
-            data-mp-location="shloka_block_read_hindi"
-            style={{"display": "inline-flex", "alignItems": "center", "justifyContent": "center", "gap": "8px", "background": "transparent", "color": "var(--text-dim)", "padding": "13px 24px", "borderRadius": "10px", "fontSize": "15px", "fontWeight": "500", "border": "1.5px solid var(--border)", "textDecoration": "none"}}
-          >
-            हिन्दी में पढ़ें
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <div className="divider"></div>
 
     {/* ── HOW IT WORKS ── */}
     <section className="section section-alt" id="how-it-works">
@@ -420,16 +580,16 @@ export default function HomePage() {
             <p>
               Based on how you struggle and what you need, Wisdom places you on
               one of three ancient paths. Your first teaching is chosen for where
-              you are right now — not a random verse.
+              you are right now — not a random quote.
             </p>
           </div>
           <div className="step">
             <div className="step-num">3</div>
-            <h3>Two minutes. One teaching. One offering.</h3>
+            <h3>Two minutes. One quote. One practice.</h3>
             <p>
-              A verse arrives. Read what it means today.
-              Then the practice asks your heart to respond — one small offering,
-              written privately. That's it. That's the loop.
+              A quote arrives. Read what it means today.
+              Then your path&apos;s practice asks you to respond — one honest line,
+              written privately. That&apos;s the loop.
             </p>
           </div>
         </div>
@@ -466,10 +626,10 @@ export default function HomePage() {
         <div className="split">
           <div className="split-text">
             <span className="pill">Daily Teaching</span>
-            <h2>One verse. What it means today.<br/>Two minutes.</h2>
+            <h2>One quote. What it means today.<br/>Two minutes.</h2>
             <p>
               Every day, Wisdom delivers one teaching chosen for your current path
-              and node — not a random quote. The verse arrives with what it means
+              and node — not a random pull. The quote arrives with what it means
               for your actual life right now, and a clear invitation to practice.
             </p>
             <ul className="check-list">
@@ -479,11 +639,11 @@ export default function HomePage() {
               </li>
               <li>
                 <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                Sanskrit verse with clear modern meaning
+                Sanskrit quote with clear modern meaning
               </li>
               <li>
                 <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                "What this means today" — how it applies to your life right now
+                &ldquo;What this means today&rdquo; — how it applies to your life right now
               </li>
               <li>
                 <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
@@ -494,8 +654,8 @@ export default function HomePage() {
           <div className="split-phone">
             <div className="phone-frame">
               <img
-                src="/assets/app-teaching.png"
-                alt="Wisdom app daily teaching screen showing Bhagavad Gita verse and what it means today"
+                src="/assets/app-you-are-your-greatest-ally.webp"
+                alt="Wisdom app daily teaching home screen showing Bhagavad Gita 6.5 and what it means today"
                 loading="lazy"/>
             </div>
           </div>
@@ -503,47 +663,170 @@ export default function HomePage() {
       </div>
     </section>
 
-    {/* ── FEATURE SPLIT 2: The Offering Practice ── */}
+    {/* ── FEATURE SPLIT 2: Three Practices (one per path) ── */}
     <section className="section section-alt">
-      <div className="wrap">
-        <div className="split flip">
-          <div className="split-text">
-            <span className="pill">The Offering Practice</span>
-            <h2>The verse asks.<br/>Your heart responds.</h2>
-            <p>
-              Reading a verse is one thing. Wisdom goes further: each teaching
-              opens into a practice — an invitation to write one honest response.
-              Who came to mind? What small offering can you make today?
-              This is where the teaching becomes yours.
-            </p>
-            <ul className="check-list">
-              <li>
-                <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                A guided practice prompt after every teaching
-              </li>
-              <li>
-                <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                Write what your heart found — private, no judgement
-              </li>
-              <li>
-                <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                All reflections saved privately to your account
-              </li>
-              <li>
-                <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                Go deeper — read the full verse and traditional commentary
-              </li>
-            </ul>
-          </div>
-          <div className="split-phone">
-            <div className="phone-frame">
+      <div className="wrap t-center">
+        <div className="eyebrow">A practice for every path</div>
+        <h2 className="heading" style={{maxWidth: "680px", margin: "0 auto 14px"}}>
+          Every quote opens into a practice<br/><em>tuned to the path you walk.</em>
+        </h2>
+        <p className="subtext" style={{maxWidth: "580px", margin: "0 auto"}}>
+          The seeker is asked to clarify. The doer is asked to commit. The
+          devoted is asked to offer. Same quote, three different invitations —
+          so the teaching actually lands the way <em>you</em> need it to.
+        </p>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+            gap: "32px",
+            marginTop: "60px",
+            maxWidth: "1040px",
+            marginLeft: "auto",
+            marginRight: "auto",
+            alignItems: "start",
+          }}
+        >
+          {/* WISDOM — Clarity Practice */}
+          <div style={{display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center"}}>
+            <div style={{
+              fontSize: "11px",
+              fontWeight: 700,
+              letterSpacing: "0.16em",
+              textTransform: "uppercase",
+              color: "var(--path-wisdom-light, #f9d176)",
+              marginBottom: "10px",
+            }}>
+              Wisdom · The Clarity Practice
+            </div>
+            <h3 style={{
+              fontFamily: "'Playfair Display', Georgia, serif",
+              fontSize: "clamp(15px, 1.45vw, 17px)",
+              fontWeight: 700,
+              color: "var(--gold-light)",
+              lineHeight: 1.3,
+              marginBottom: "18px",
+              minHeight: "26px",
+              whiteSpace: "nowrap",
+            }}>
+              &ldquo;What did it help you see more clearly?&rdquo;
+            </h3>
+            <div className="phone-frame" style={{maxWidth: "240px"}}>
               <img
-                src="/assets/app-offering.png"
-                alt="Wisdom app offering practice — the verse asks your heart to respond"
+                src="/assets/app-wisdom-practice.png"
+                alt="Wisdom app Clarity Practice — a Jnana-path reflection prompt asking 'What did it help you see more clearly?' with a Reveal my insight button"
                 loading="lazy"/>
             </div>
+            <p style={{
+              fontSize: "14px",
+              color: "var(--text-dim)",
+              lineHeight: 1.65,
+              marginTop: "22px",
+              maxWidth: "280px",
+            }}>
+              The quote clarified something. Name it. One honest line, and the
+              insight lands — for you, not anyone else.
+            </p>
+          </div>
+
+          {/* ACTION — Living Practice */}
+          <div style={{display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center"}}>
+            <div style={{
+              fontSize: "11px",
+              fontWeight: 700,
+              letterSpacing: "0.16em",
+              textTransform: "uppercase",
+              color: "var(--path-action-light, #b8c3e6)",
+              marginBottom: "10px",
+            }}>
+              Action · The Living Practice
+            </div>
+            <h3 style={{
+              fontFamily: "'Playfair Display', Georgia, serif",
+              fontSize: "clamp(15px, 1.45vw, 17px)",
+              fontWeight: 700,
+              color: "var(--gold-light)",
+              lineHeight: 1.3,
+              marginBottom: "18px",
+              minHeight: "26px",
+              whiteSpace: "nowrap",
+            }}>
+              &ldquo;What will you do differently?&rdquo;
+            </h3>
+            <div className="phone-frame" style={{maxWidth: "240px"}}>
+              <img
+                src="/assets/app-action-practice.PNG"
+                alt="Wisdom app Living Practice — a Karma-path commitment prompt asking what you'll do differently today, with an I commit to this button"
+                loading="lazy"/>
+            </div>
+            <p style={{
+              fontSize: "14px",
+              color: "var(--text-dim)",
+              lineHeight: 1.65,
+              marginTop: "22px",
+              maxWidth: "280px",
+            }}>
+              The quote is asking to be lived. Pick one thing you&apos;ll do
+              differently today. Commit to it in writing — privately.
+            </p>
+          </div>
+
+          {/* DEVOTION — Offering Practice */}
+          <div style={{display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center"}}>
+            <div style={{
+              fontSize: "11px",
+              fontWeight: 700,
+              letterSpacing: "0.16em",
+              textTransform: "uppercase",
+              color: "var(--path-devotion-light, #ecaac3)",
+              marginBottom: "10px",
+            }}>
+              Devotion · The Offering Practice
+            </div>
+            <h3 style={{
+              fontFamily: "'Playfair Display', Georgia, serif",
+              fontSize: "clamp(15px, 1.45vw, 17px)",
+              fontWeight: 700,
+              color: "var(--gold-light)",
+              lineHeight: 1.3,
+              marginBottom: "18px",
+              minHeight: "26px",
+              whiteSpace: "nowrap",
+            }}>
+              &ldquo;Who or what came to mind?&rdquo;
+            </h3>
+            <div className="phone-frame" style={{maxWidth: "240px"}}>
+              <img
+                src="/assets/app-devotion-practice.PNG"
+                alt="Wisdom app Offering Practice — a Bhakti-path heart-response prompt asking what small offering you can make today, with an I offer this button"
+                loading="lazy"/>
+            </div>
+            <p style={{
+              fontSize: "14px",
+              color: "var(--text-dim)",
+              lineHeight: 1.65,
+              marginTop: "22px",
+              maxWidth: "280px",
+            }}>
+              The quote is asking your heart to answer. Name who came to mind.
+              Offer one small thing — a word, a thought, an act.
+            </p>
           </div>
         </div>
+
+        <p style={{
+          marginTop: "48px",
+          fontSize: "14px",
+          color: "var(--text-dimmer)",
+          fontStyle: "italic",
+          maxWidth: "560px",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}>
+          Your practice changes shape with your path. The quote stays the same.
+          The invitation to respond is built for how <em>you</em> grow.
+        </p>
       </div>
     </section>
 
@@ -582,8 +865,8 @@ export default function HomePage() {
           <div className="split-phone">
             <div className="phone-frame">
               <img
-                src="/assets/path-nodes.png"
-                alt="Wisdom app path progress showing Connection, Devotion and Bhakti Mastery nodes"
+                src="/assets/app-path-devotion.webp"
+                alt="Wisdom app path progress showing Trust, Devotion and Bhakti Mastery nodes on the Path of Devotion"
                 loading="lazy"/>
             </div>
           </div>
@@ -597,12 +880,12 @@ export default function HomePage() {
         <div className="split flip">
           <div className="split-text">
             <span className="pill">The Sacred Verse</span>
-            <h2>Every teaching is a<br/>Bhagavad Gita verse.</h2>
+            <h2>Every quote is a<br/>Bhagavad Gita verse.</h2>
             <p>
-              Wisdom draws every practice from the Bhagavad Gita and core
-              Hindu scriptures. Not a curated quote. A sacred verse — with its
-              original Sanskrit, chapter and verse reference, and traditional
-              commentary alongside the modern meaning.
+              Wisdom draws every quote from the Bhagavad Gita and core Hindu
+              scriptures. When a quote resonates, you can go deeper into the
+              actual Sanskrit verse and detailed meaning to deepen your
+              practice.
             </p>
             <ul className="check-list">
               <li>
@@ -626,7 +909,7 @@ export default function HomePage() {
           <div className="split-phone">
             <div className="phone-frame">
               <img
-                src="/assets/app-verse-deep.png"
+                src="/assets/app-verse-sanskrit.webp"
                 alt="Wisdom app sacred verse screen showing Sanskrit Bhagavad Gita shloka with detailed meaning"
                 loading="lazy"/>
             </div>
@@ -979,7 +1262,7 @@ export default function HomePage() {
       <div className="footer-inner">
         <div className="footer-logo" style={{"display": "flex", "alignItems": "center", "gap": "9px"}}>
           <img
-            src="/assets/male-logo-dark.webp"
+            src="/assets/new-light-logo.webp"
             alt="Wisdom"
             loading="lazy"
             style={{"width": "30px", "height": "30px", "borderRadius": "50%", "objectFit": "cover", "border": "1px solid rgba(200, 136, 30, 0.35)"}}/>

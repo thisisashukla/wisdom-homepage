@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   icons: {
-    icon: '/assets/male-logo-dark.webp',
+    icon: '/assets/new-light-logo.webp',
   },
 }
 
@@ -30,7 +30,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@400;500&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/assets/male-logo-dark.webp" />
+        <link rel="icon" href="/assets/new-light-logo.webp" />
       </head>
       <body>
         <AuthProvider>

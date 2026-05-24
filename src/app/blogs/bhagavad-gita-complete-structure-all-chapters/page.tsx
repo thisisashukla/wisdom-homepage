@@ -420,7 +420,7 @@ const schemas = [
     "url": "https://wisdomquotes.in",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://wisdomquotes.in/assets/male-logo-dark.webp"
+      "url": "https://wisdomquotes.in/assets/new-light-logo.webp"
     }
   },
   "image": {

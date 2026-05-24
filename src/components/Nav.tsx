@@ -14,7 +14,7 @@ export default function Nav({ showSectionLinks = false, extraLink }: NavProps) {
       <div className="nav-inner">
         <a href="/" className="logo">
           <div className="logo-mark">
-            <img src="/assets/male-logo-dark.webp" alt="Wisdom" />
+            <img src="/assets/new-light-logo.webp" alt="Wisdom" />
           </div>
           Wisdom
         </a>

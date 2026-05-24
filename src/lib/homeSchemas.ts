@@ -30,7 +30,7 @@ const schemas = [
         "@type": "Organization",
         "name": "Wisdom",
         "url": "https://wisdomquotes.in",
-        "logo": "https://wisdomquotes.in/assets/male-logo-dark.webp",
+        "logo": "https://wisdomquotes.in/assets/new-light-logo.webp",
         "description": "Wisdom builds daily spiritual practice apps rooted in the Bhagavad Gita and Hindu scriptures.",
         "sameAs": [
           "https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125",
