@@ -10,7 +10,7 @@ interface NavProps {
 
 export default function Nav({ showSectionLinks = false, extraLink }: NavProps) {
   return (
-    <nav>
+    <nav className="site-nav">
       <div className="nav-inner">
         <a href="/" className="logo">
           <div className="logo-mark">

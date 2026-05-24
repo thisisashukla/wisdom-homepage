@@ -218,6 +218,7 @@ const pageCSS = `
       .card-thumb-peace::before { content: "शान्ति"; }
       .card-thumb-begin::before { content: "आरम्भ"; }
       .card-thumb-arc::before { content: "अठारह"; }
+      .card-thumb-3paths::before { content: "त्रिमार्ग"; font-size: 80px; }
 
       .card-chapter-badge {
         font-size: 9px;
@@ -868,10 +869,32 @@ export default function BlogIndexPage() {
       {/* TOPIC GUIDES */}
       <div className="section-head" style={{marginTop: '56px'}}>
         <h2>Gita Teachings — <em>Topic Guides</em></h2>
-        <span className="section-count">5 articles published</span>
+        <span className="section-count">6 articles published</span>
       </div>
 
       <div className="articles-grid">
+        {/* Krishna's Three Paths */}
+        <a href="/blogs/krishna-three-paths-bhagavad-gita" className="article-card" data-mp-article="Krishna Three Paths">
+          <div className="card-thumb card-thumb-3paths">
+            <div className="card-chapter-badge">Topic Guide · The Three Yogas</div>
+            <div className="card-thumb-title">Krishna&apos;s Three Paths —<br /><em>Karma, Jnana, Bhakti and Where They Meet</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-philosophy">Three Yogas</span>
+              <span className="tag tag-shloka">12+ Verses</span>
+              <span className="tag tag-chapter">Deep Read</span>
+            </div>
+            <div className="card-desc">
+              Krishna does not say there is one way. He lays out three — Action, Wisdom, Devotion — each shaped for a different temperament, all converging on the same reality. Grounded in the verses, with parallels from Tulsidas and modern psychology.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~18 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
         {/* Beyond Bhagavad Gita - Lesser Known Gitas */}
         <a href="/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health" className="article-card" data-mp-article="Beyond Bhagavad Gita Quotes">
           <div className="card-thumb card-thumb-gita">

@@ -711,7 +711,7 @@ export default function HomePage() {
             </h3>
             <div className="phone-frame" style={{maxWidth: "240px"}}>
               <img
-                src="/assets/app-wisdom-practice.png"
+                src="/assets/app-wisdom-practice.webp"
                 alt="Wisdom app Clarity Practice — a Jnana-path reflection prompt asking 'What did it help you see more clearly?' with a Reveal my insight button"
                 loading="lazy"/>
             </div>
@@ -753,7 +753,7 @@ export default function HomePage() {
             </h3>
             <div className="phone-frame" style={{maxWidth: "240px"}}>
               <img
-                src="/assets/app-action-practice.PNG"
+                src="/assets/app-action-practice.webp"
                 alt="Wisdom app Living Practice — a Karma-path commitment prompt asking what you'll do differently today, with an I commit to this button"
                 loading="lazy"/>
             </div>
@@ -795,7 +795,7 @@ export default function HomePage() {
             </h3>
             <div className="phone-frame" style={{maxWidth: "240px"}}>
               <img
-                src="/assets/app-devotion-practice.PNG"
+                src="/assets/app-devotion-practice.webp"
                 alt="Wisdom app Offering Practice — a Bhakti-path heart-response prompt asking what small offering you can make today, with an I offer this button"
                 loading="lazy"/>
             </div>

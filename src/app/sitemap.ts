@@ -32,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'bhagavad-gita-karma-meaning',
     'bhagavad-gita-anxiety-mental-peace',
     'bhagavad-gita-complete-structure-all-chapters',
+    'beyond-bhagavad-gita-quotes-mental-spiritual-health',
   ]
   const topicGuidePages: MetadataRoute.Sitemap = topicGuides.map((slug) => ({
     url: `${BASE}/blogs/${slug}`,
@@ -39,6 +40,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly',
     priority: 0.75,
   }))
+
+  // Newer topic guides (use their own publication dates and higher priority)
+  const newTopicGuides: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE}/blogs/krishna-three-paths-bhagavad-gita`,
+      lastModified: new Date('2026-05-24'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+  ]
 
   // Chapter-study blog pages (the long-form per-chapter essays).
   // Chapters 1–5 still 301 to /gita/chapter/N (see next.config.mjs), so we only
@@ -140,6 +151,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticPages,
     ...topicGuidePages,
+    ...newTopicGuides,
     ...chapterBlogPages,
     ...chapterPages,
     ...versePages,
