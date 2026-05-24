@@ -2,17 +2,31 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 2 \u2014 Sankhya Yoga: The Chapter That Changes Everything | Wisdom",
-  description: "A deep reading of Bhagavad Gita Chapter 2 (Adhyay 2) \u2014 all 72 verses of Sankhya Yoga. The eternal soul, karma without attachment, the famous 2.47 verse, and the portrait of the sthitaprajna. Sanskrit, IAST, meaning, and modern relevance.",
-  keywords: "bhagwat geeta chapter 2, bhagavad gita chapter 2 sankhya yoga, bhagavad gita 2.47, karma without attachment gita, bhagwat geeta adhyay 2, sthitaprajna meaning, nayam hanti na hanyate, karmanyevadhikaras te meaning",
+  title: "Bhagavad Gita Chapter 2 (Sankhya Yoga) \u2014 Meaning & Verses",
+  description: "Bhagavad Gita Chapter 2 \u2014 Sankhya Yoga. All 72 verses with Sanskrit, transliteration, meaning. The eternal soul, karma without attachment, the famous 2.47, and the sthitaprajna.",
+  keywords: "bhagwat geeta chapter 2, bhagavad gita chapter 2 sankhya yoga, bhagavad gita 2.47, karma without attachment gita, bhagwat geeta adhyay 2, sthitaprajna meaning, nayam hanti na hanyate, karmanyevadhikaras te meaning, eternal soul gita, atman bhagavad gita, nishkama karma, Sankhya Yoga summary, Bhagavad Gita 2.47 meaning, sthitaprajna lakshana, the cascade from attachment to ruin",
   openGraph: {
-    title: "Bhagavad Gita Chapter 2 \u2014 Sankhya Yoga: The Chapter That Changes Everything",
+    title: "Bhagavad Gita Chapter 2 (Sankhya Yoga) \u2014 Summary & Verses",
     description: "Seventy-two verses. One question about the soul. One teaching on action. One portrait of a mind that cannot be broken.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2",
     siteName: 'Wisdom',
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter2.webp", width: 1200, height: 675, alt: "Krishna lifting Arjuna out of grief on the chariot \u2014 Chapter 2 of the Bhagavad Gita, Sankhya Yoga, gives the philosophical heart of the text: the eternal soul, the science of action, and the steady mind." }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Bhagavad Gita Chapter 2 (Sankhya Yoga) \u2014 Summary & Verses",
+    description: "All 72 verses of Bhagavad Gita Chapter 2 \u2014 the eternal soul, action without attachment, and the mind that cannot be broken.",
+    images: ["https://wisdomquotes.in/assets/chapter2.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-1", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-3" },
 }
 
 const pageCSS = `
@@ -143,6 +157,16 @@ const pageCSS = `
 
       /* ── ARTICLE BODY ── */
       .article-wrap { max-width: var(--max); margin: 0 auto; padding: 60px 28px 80px; }
+
+      .chapter-image {
+        margin: 0 0 36px;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        background: var(--bg-warm);
+        box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+      }
+      .chapter-image img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 
       .prose h2 {
         font-family: "Playfair Display", Georgia, serif;
@@ -556,50 +580,43 @@ const pageCSS = `
 
 const schemas = [
   {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Bhagavad Gita Chapter 2 — Sankhya Yoga: The Chapter That Changes Everything",
-  "description": "A deep reading of Bhagavad Gita Chapter 2 (Bhagwat Geeta Adhyay 2) — all 72 verses of Sankhya Yoga with Sanskrit text, IAST transliteration, meaning, and modern relevance.",
-  "author": {
-    "@type": "Person",
-    "name": "Ankur Shukla",
-    "url": "https://wisdomquotes.in/about",
-    "sameAs": [
-      "https://www.linkedin.com/in/thisisashukla/",
-      "https://x.com/thisisashukla"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Wisdom",
-    "url": "https://wisdomquotes.in",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://wisdomquotes.in/assets/new-light-logo.webp"
-    }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://wisdomquotes.in/og-image.webp",
-    "width": 1200,
-    "height": 630
-  },
-  "datePublished": "2026-05-05",
-  "dateModified": "2026-05-05",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2.html"
-  },
-  "about": {
-    "@type": "Book",
-    "name": "Bhagavad Gita",
+    "@context": "https://schema.org",
+    "@type": ["Article", "LearningResource"],
+    "headline": "Bhagavad Gita Chapter 2 — Sankhya Yoga: The Chapter That Changes Everything",
+    "description": "Bhagavad Gita Chapter 2 — Sankhya Yoga. All 72 verses with Sanskrit, transliteration, meaning. The eternal soul, action without attachment, and the portrait of the sthitaprajna.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 2 (Sankhya Yoga) — Summary & Verses",
     "author": {
       "@type": "Person",
-      "name": "Ved Vyasa"
+      "name": "Ankur Shukla",
+      "url": "https://wisdomquotes.in/about",
+      "sameAs": ["https://www.linkedin.com/in/thisisashukla/", "https://x.com/thisisashukla"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
+    },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/chapter2.webp", "width": 1200, "height": 675 },
+    "datePublished": "2026-05-05",
+    "dateModified": "2026-05-24",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2" },
+    "about": [
+      { "@type": "Book", "name": "Bhagavad Gita", "author": { "@type": "Person", "name": "Ved Vyasa" }, "url": "https://wisdomquotes.in/gita" },
+      { "@type": "Person", "name": "Krishna", "url": "https://en.wikipedia.org/wiki/Krishna" },
+      { "@type": "Person", "name": "Arjuna", "url": "https://en.wikipedia.org/wiki/Arjuna" }
+    ],
+    "keywords": "bhagwat geeta chapter 2, bhagavad gita chapter 2 sankhya yoga, bhagavad gita 2.47, karma without attachment gita, bhagwat geeta adhyay 2, sthitaprajna meaning, nayam hanti na hanyate, karmanyevadhikaras te meaning, eternal soul gita, nishkama karma, Sankhya Yoga summary, the cascade from attachment to ruin",
+    "articleSection": "Bhagavad Gita",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".lead", ".shloka-meaning", ".shloka-essence"]
     }
   },
-  "keywords": "Bhagavad Gita Chapter 2, Bhagwat Geeta Chapter 2, Sankhya Yoga, karmanyevadhikaras te, sthitaprajna"
-},
   {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -620,7 +637,7 @@ const schemas = [
       "@type": "ListItem",
       "position": 3,
       "name": "Bhagavad Gita Chapter 2 — Sankhya Yoga",
-      "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2.html"
+      "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2"
     }
   ]
 },

@@ -2,17 +2,31 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 1 \u2014 Arjuna Vishada Yoga: When the Warrior Sat Down |\n      Wisdom",
-  description: "A deep reading of Bhagavad Gita Chapter 1 (Adhyay 1) \u2014 all 47 verses of Arjuna Vishada Yoga. Why does the greatest archer in history put down his bow? Sanskrit text, IAST, Hindi meaning, and modern relevance.",
-  keywords: "bhagwat geeta chapter 1, bhagwat geeta adhyay 1, arjuna vishada yoga, bhagavad gita chapter 1 shlok, bhagwat geeta chapter 1 in hindi, arjuna grief bhagavad gita",
+  title: "Bhagavad Gita Chapter 1 (Arjuna Vishada Yoga) \u2014 Meaning & Verses",
+  description: "Bhagavad Gita Chapter 1 \u2014 Arjuna Vishada Yoga. All 47 verses with Sanskrit, transliteration, meaning, and the moment the greatest archer in history put down his bow.",
+  keywords: "bhagwat geeta chapter 1, bhagwat geeta adhyay 1, arjuna vishada yoga, bhagavad gita chapter 1 shlok, bhagwat geeta chapter 1 in hindi, arjuna grief bhagavad gita, kurukshetra battlefield, dhritarashtra uvacha, arjuna refuses to fight, gita chapter 1 summary, Arjuna Vishada Yoga meaning, Bhagavad Gita 1.1 dharmakshetre kurukshetre, why Arjuna put down his bow, moral crisis Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 1 \u2014 Arjuna Vishada Yoga: When the Warrior Sat Down",
-    description: "Chapter 1 is not the Gita's prologue. It is its most honest moment \u2014 a great warrior paralysed not by cowardice, but by conscience. All 47 verses explained.",
+    title: "Bhagavad Gita Chapter 1 (Arjuna Vishada Yoga) \u2014 Summary & Verses",
+    description: "All 47 verses of Bhagavad Gita Chapter 1 \u2014 a great warrior paralysed not by cowardice, but by conscience. The most psychologically honest chapter in the Gita.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-1",
     siteName: 'Wisdom',
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter1.webp", width: 1200, height: 675, alt: "Arjuna collapsed on his chariot at Kurukshetra, bow lowered, gaze on his teachers and kin \u2014 Chapter 1 of the Bhagavad Gita, Arjuna Vishada Yoga, captures the moment grief and dharma collide." }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Bhagavad Gita Chapter 1 (Arjuna Vishada Yoga) \u2014 Summary & Verses",
+    description: "All 47 verses of Bhagavad Gita Chapter 1 \u2014 a great warrior paralysed not by cowardice, but by conscience.",
+    images: ["https://wisdomquotes.in/assets/chapter1.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-1" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2" },
 }
 
 const pageCSS = `
@@ -143,6 +157,16 @@ const pageCSS = `
 
       /* ── ARTICLE BODY ── */
       .article-wrap { max-width: var(--max); margin: 0 auto; padding: 60px 28px 80px; }
+
+      .chapter-image {
+        margin: 0 0 36px;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        background: var(--bg-warm);
+        box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+      }
+      .chapter-image img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 
       .prose h2 {
         font-family: "Playfair Display", Georgia, serif;
@@ -556,50 +580,43 @@ const pageCSS = `
 
 const schemas = [
   {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Bhagavad Gita Chapter 1 — Arjuna Vishada Yoga: When the Warrior Sat Down",
-  "description": "A deep reading of Bhagavad Gita Chapter 1 (Bhagwat Geeta Adhyay 1) — all 47 verses of Arjuna Vishada Yoga with Sanskrit text, IAST transliteration, meaning, and modern relevance.",
-  "author": {
-    "@type": "Person",
-    "name": "Ankur Shukla",
-    "url": "https://wisdomquotes.in/about",
-    "sameAs": [
-      "https://www.linkedin.com/in/thisisashukla/",
-      "https://x.com/thisisashukla"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Wisdom",
-    "url": "https://wisdomquotes.in",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://wisdomquotes.in/assets/new-light-logo.webp"
-    }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://wisdomquotes.in/og-image.webp",
-    "width": 1200,
-    "height": 630
-  },
-  "datePublished": "2026-04-08",
-  "dateModified": "2026-04-08",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-1.html"
-  },
-  "about": {
-    "@type": "Book",
-    "name": "Bhagavad Gita",
+    "@context": "https://schema.org",
+    "@type": ["Article", "LearningResource"],
+    "headline": "Bhagavad Gita Chapter 1 — Arjuna Vishada Yoga: When the Warrior Sat Down",
+    "description": "Bhagavad Gita Chapter 1 — Arjuna Vishada Yoga. All 47 verses with Sanskrit, transliteration, meaning, and the moment the greatest archer in history put down his bow.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 1 (Arjuna Vishada Yoga) — Summary & Verses",
     "author": {
       "@type": "Person",
-      "name": "Ved Vyasa"
+      "name": "Ankur Shukla",
+      "url": "https://wisdomquotes.in/about",
+      "sameAs": ["https://www.linkedin.com/in/thisisashukla/", "https://x.com/thisisashukla"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
+    },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/chapter1.webp", "width": 1200, "height": 675 },
+    "datePublished": "2026-04-08",
+    "dateModified": "2026-05-24",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-1" },
+    "about": [
+      { "@type": "Book", "name": "Bhagavad Gita", "author": { "@type": "Person", "name": "Ved Vyasa" }, "url": "https://wisdomquotes.in/gita" },
+      { "@type": "Person", "name": "Krishna", "url": "https://en.wikipedia.org/wiki/Krishna" },
+      { "@type": "Person", "name": "Arjuna", "url": "https://en.wikipedia.org/wiki/Arjuna" }
+    ],
+    "keywords": "bhagwat geeta chapter 1, bhagwat geeta adhyay 1, arjuna vishada yoga, bhagavad gita chapter 1 shlok, bhagwat geeta chapter 1 in hindi, arjuna grief bhagavad gita, kurukshetra battlefield, dhritarashtra uvacha, arjuna refuses to fight, gita chapter 1 summary, Bhagavad Gita 1.1 dharmakshetre kurukshetre, why Arjuna put down his bow",
+    "articleSection": "Bhagavad Gita",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".lead", ".shloka-meaning", ".shloka-essence"]
     }
   },
-  "keywords": "Bhagavad Gita Chapter 1, Bhagwat Geeta Adhyay 1, Arjuna Vishada Yoga, bhagwat geeta chapter 1 shlok, arjuna grief gita"
-},
   {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -620,7 +637,7 @@ const schemas = [
       "@type": "ListItem",
       "position": 3,
       "name": "Bhagavad Gita Chapter 1 — Arjuna Vishada Yoga",
-      "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-1.html"
+      "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-1"
     }
   ]
 },

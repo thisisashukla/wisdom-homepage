@@ -2,17 +2,31 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 3 \u2014 Karma Yoga: Why You Cannot Run | Wisdom",
-  description: "A deep reading of Bhagavad Gita Chapter 3 (Adhyay 3) \u2014 all 43 verses of Karma Yoga. Why action is unavoidable, duty becomes liberation, and why your own dharma matters more than another's done perfectly. Sanskrit text, IAST, meaning, and modern relevance.",
-  keywords: "bhagwat geeta chapter 3, bhagavad gita karma yoga, karma yoga chapter 3, bhagwat geeta adhyay 3, svadharma meaning, lokasamgraha gita, what gita says about duty, karma yoga meaning",
+  title: "Bhagavad Gita Chapter 3 (Karma Yoga) \u2014 Meaning & Verses",
+  description: "Bhagavad Gita Chapter 3 \u2014 Karma Yoga. All 43 verses with Sanskrit, transliteration, meaning. Why action is unavoidable, how it becomes offering, and why your own dharma matters more than another's done perfectly.",
+  keywords: "bhagwat geeta chapter 3, bhagavad gita karma yoga, karma yoga chapter 3, bhagwat geeta adhyay 3, svadharma meaning, lokasamgraha gita, what gita says about duty, karma yoga meaning, yajna gita, desire is the enemy gita, your own dharma imperfectly, Karma Yoga summary, Bhagavad Gita 3.35 sva-dharme nidhanam shreyah, what is karma yoga in Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 3 \u2014 Karma Yoga: Why You Cannot Run",
-    description: "Forty-three verses on action, duty, desire, and why the desire to escape responsibility is often just desire in another form.",
+    title: "Bhagavad Gita Chapter 3 (Karma Yoga) \u2014 Summary & Verses",
+    description: "Forty-three verses on action, duty, desire \u2014 and why the desire to escape responsibility is often just desire in another form.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-3",
     siteName: 'Wisdom',
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter3.webp", width: 1200, height: 675, alt: "A bullock-driver tilling the field at dawn, offered as the example \u2014 Chapter 3 of the Bhagavad Gita, Karma Yoga, argues that selfless action is itself the path." }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Bhagavad Gita Chapter 3 (Karma Yoga) \u2014 Summary & Verses",
+    description: "All 43 verses of Bhagavad Gita Chapter 3 \u2014 action as offering, your own dharma over a borrowed perfection, and why desire is the real enemy.",
+    images: ["https://wisdomquotes.in/assets/chapter3.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-3" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4" },
 }
 
 const pageCSS = `
@@ -143,6 +157,16 @@ const pageCSS = `
 
       /* ── ARTICLE BODY ── */
       .article-wrap { max-width: var(--max); margin: 0 auto; padding: 60px 28px 80px; }
+
+      .chapter-image {
+        margin: 0 0 36px;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        background: var(--bg-warm);
+        box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+      }
+      .chapter-image img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 
       .prose h2 {
         font-family: "Playfair Display", Georgia, serif;
@@ -524,50 +548,43 @@ const pageCSS = `
 
 const schemas = [
   {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Bhagavad Gita Chapter 3 — Karma Yoga: Why You Cannot Run",
-  "description": "A deep reading of Bhagavad Gita Chapter 3 (Bhagwat Geeta Adhyay 3) — all 43 verses of Karma Yoga with Sanskrit text, IAST transliteration, meaning, and modern relevance.",
-  "author": {
-    "@type": "Person",
-    "name": "Ankur Shukla",
-    "url": "https://wisdomquotes.in/about",
-    "sameAs": [
-      "https://www.linkedin.com/in/thisisashukla/",
-      "https://x.com/thisisashukla"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Wisdom",
-    "url": "https://wisdomquotes.in",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://wisdomquotes.in/assets/new-light-logo.webp"
-    }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://wisdomquotes.in/og-image.webp",
-    "width": 1200,
-    "height": 630
-  },
-  "datePublished": "2026-05-05",
-  "dateModified": "2026-05-05",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-3.html"
-  },
-  "about": {
-    "@type": "Book",
-    "name": "Bhagavad Gita",
+    "@context": "https://schema.org",
+    "@type": ["Article", "LearningResource"],
+    "headline": "Bhagavad Gita Chapter 3 — Karma Yoga: Why You Cannot Run",
+    "description": "Bhagavad Gita Chapter 3 — Karma Yoga. All 43 verses with Sanskrit, transliteration, meaning. Action as offering, your own dharma over a borrowed perfection, and why desire is the real enemy.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 3 (Karma Yoga) — Summary & Verses",
     "author": {
       "@type": "Person",
-      "name": "Ved Vyasa"
+      "name": "Ankur Shukla",
+      "url": "https://wisdomquotes.in/about",
+      "sameAs": ["https://www.linkedin.com/in/thisisashukla/", "https://x.com/thisisashukla"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
+    },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/chapter3.webp", "width": 1200, "height": 675 },
+    "datePublished": "2026-05-05",
+    "dateModified": "2026-05-24",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-3" },
+    "about": [
+      { "@type": "Book", "name": "Bhagavad Gita", "author": { "@type": "Person", "name": "Ved Vyasa" }, "url": "https://wisdomquotes.in/gita" },
+      { "@type": "Person", "name": "Krishna", "url": "https://en.wikipedia.org/wiki/Krishna" },
+      { "@type": "Person", "name": "Arjuna", "url": "https://en.wikipedia.org/wiki/Arjuna" }
+    ],
+    "keywords": "bhagwat geeta chapter 3, bhagavad gita karma yoga, karma yoga chapter 3, bhagwat geeta adhyay 3, svadharma meaning, lokasamgraha gita, yajna gita, desire is the enemy gita, Bhagavad Gita 3.35 sva-dharme nidhanam shreyah, what is karma yoga in Bhagavad Gita",
+    "articleSection": "Bhagavad Gita",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".lead", ".shloka-meaning", ".shloka-essence"]
     }
   },
-  "keywords": "Bhagavad Gita Chapter 3, Bhagwat Geeta Adhyay 3, Karma Yoga, svadharma meaning, lokasamgraha gita"
-},
   {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -588,7 +605,7 @@ const schemas = [
       "@type": "ListItem",
       "position": 3,
       "name": "Bhagavad Gita Chapter 3 — Karma Yoga",
-      "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-3.html"
+      "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-3"
     }
   ]
 },

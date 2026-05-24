@@ -52,11 +52,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Chapter-study blog pages (the long-form per-chapter essays).
-  // Chapters 1–5 still 301 to /gita/chapter/N (see next.config.mjs), so we only
-  // expose the canonical /blogs/... URLs for chapters 6–18 here.
-  const chapterBlogPages: MetadataRoute.Sitemap = Array.from({ length: 13 }, (_, i) => i + 6).map((n) => ({
+  // Chapters 1-5 used to 301 to /gita/chapter/N — the redirect has been
+  // removed so all 18 long-form blog URLs are canonical and listed here.
+  const chapterBlogPages: MetadataRoute.Sitemap = Array.from({ length: 18 }, (_, i) => i + 1).map((n) => ({
     url: `${BASE}/blogs/bhagwat-geeta-chapter-${n}`,
-    lastModified: new Date('2026-05-18'),
+    lastModified: new Date('2026-05-24'),
     changeFrequency: 'monthly',
     priority: 0.85,
   }))

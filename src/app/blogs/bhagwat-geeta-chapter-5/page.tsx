@@ -2,17 +2,31 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 5 \u2014 Karma Sanyasa Yoga: The Art of Not Being Touched | Wisdom",
-  description: "A close reading of Bhagavad Gita Chapter 5 (Adhyay 5) \u2014 29 verses on renunciation, selfless action, equal vision, inner happiness, and the lotus leaf teaching. Sanskrit, IAST, meaning, modern relevance.",
-  keywords: "bhagwat geeta chapter 5, bhagavad gita karma sanyasa yoga, bhagwat geeta adhyay 5, lotus leaf gita teaching, sama-darshitvam meaning, inner peace gita, brahma nirvana gita, gita chapter 5 meaning",
+  title: "Bhagavad Gita Chapter 5 (Karma Sanyasa Yoga) \u2014 Meaning & Verses",
+  description: "Bhagavad Gita Chapter 5 \u2014 Karma Sanyasa Yoga. All 29 verses with Sanskrit, transliteration, meaning. The lotus leaf teaching, equal vision, and the quiet recognition that ends in peace.",
+  keywords: "bhagwat geeta chapter 5, bhagavad gita karma sanyasa yoga, bhagwat geeta adhyay 5, lotus leaf gita teaching, sama-darshitvam meaning, inner peace gita, brahma nirvana gita, gita chapter 5 meaning, sanyasa vs karma yoga, equal vision Bhagavad Gita, padmapatra gita, Karma Sanyasa Yoga summary, Bhagavad Gita 5.29 suhridam sarva-bhutanam, what is renunciation in Bhagavad Gita, how to act without being touched",
   openGraph: {
-    title: "Bhagavad Gita Chapter 5 \u2014 Karma Sanyasa Yoga: The Art of Not Being Touched",
-    description: "Chapter 5 settles the renunciation vs. action debate. The lotus leaf metaphor. Equal vision. And the quiet recognition that ends in peace.",
+    title: "Bhagavad Gita Chapter 5 (Karma Sanyasa Yoga) \u2014 Summary & Verses",
+    description: "All 29 verses of Bhagavad Gita Chapter 5 \u2014 the lotus leaf teaching, equal vision across all beings, and where inner happiness actually lives.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-5",
     siteName: 'Wisdom',
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter5.webp", width: 1200, height: 675, alt: "A lotus leaf untouched by the water it rests on \u2014 Chapter 5 of the Bhagavad Gita, Karma Sanyasa Yoga, on acting in the world without being stained by it." }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Bhagavad Gita Chapter 5 (Karma Sanyasa Yoga) \u2014 Summary & Verses",
+    description: "All 29 verses of Bhagavad Gita Chapter 5 \u2014 the lotus leaf, equal vision, and the verse on knowing the Divine as the sincere friend of all beings.",
+    images: ["https://wisdomquotes.in/assets/chapter5.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-5" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6" },
 }
 
 const pageCSS = `
@@ -143,6 +157,16 @@ const pageCSS = `
 
       /* ── ARTICLE BODY ── */
       .article-wrap { max-width: var(--max); margin: 0 auto; padding: 60px 28px 80px; }
+
+      .chapter-image {
+        margin: 0 0 36px;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        background: var(--bg-warm);
+        box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+      }
+      .chapter-image img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 
       .prose h2 {
         font-family: "Playfair Display", Georgia, serif;
@@ -556,50 +580,43 @@ const pageCSS = `
 
 const schemas = [
   {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Bhagavad Gita Chapter 5 — Karma Sanyasa Yoga: The Art of Not Being Touched",
-  "description": "A deep reading of Bhagavad Gita Chapter 5 (Bhagwat Geeta Adhyay 5) — 29 verses on renunciation, selfless action, equal vision, inner happiness, and the lotus leaf teaching.",
-  "author": {
-    "@type": "Person",
-    "name": "Ankur Shukla",
-    "url": "https://wisdomquotes.in/about",
-    "sameAs": [
-      "https://www.linkedin.com/in/thisisashukla/",
-      "https://x.com/thisisashukla"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Wisdom",
-    "url": "https://wisdomquotes.in",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://wisdomquotes.in/assets/new-light-logo.webp"
-    }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://wisdomquotes.in/og-image.webp",
-    "width": 1200,
-    "height": 630
-  },
-  "datePublished": "2026-05-05",
-  "dateModified": "2026-05-05",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-5.html"
-  },
-  "about": {
-    "@type": "Book",
-    "name": "Bhagavad Gita",
+    "@context": "https://schema.org",
+    "@type": ["Article", "LearningResource"],
+    "headline": "Bhagavad Gita Chapter 5 — Karma Sanyasa Yoga: How to Act Without Being Touched",
+    "description": "Bhagavad Gita Chapter 5 — Karma Sanyasa Yoga. All 29 verses with Sanskrit, transliteration, meaning. The lotus leaf teaching, equal vision across all beings, and the quietly profound 5.29.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 5 (Karma Sanyasa Yoga) — Summary & Verses",
     "author": {
       "@type": "Person",
-      "name": "Ved Vyasa"
+      "name": "Ankur Shukla",
+      "url": "https://wisdomquotes.in/about",
+      "sameAs": ["https://www.linkedin.com/in/thisisashukla/", "https://x.com/thisisashukla"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
+    },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/chapter5.webp", "width": 1200, "height": 675 },
+    "datePublished": "2026-05-05",
+    "dateModified": "2026-05-24",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-5" },
+    "about": [
+      { "@type": "Book", "name": "Bhagavad Gita", "author": { "@type": "Person", "name": "Ved Vyasa" }, "url": "https://wisdomquotes.in/gita" },
+      { "@type": "Person", "name": "Krishna", "url": "https://en.wikipedia.org/wiki/Krishna" },
+      { "@type": "Person", "name": "Arjuna", "url": "https://en.wikipedia.org/wiki/Arjuna" }
+    ],
+    "keywords": "bhagwat geeta chapter 5, bhagavad gita karma sanyasa yoga, bhagwat geeta adhyay 5, lotus leaf gita teaching, sama-darshitvam meaning, inner peace gita, brahma nirvana gita, padmapatra gita, Karma Sanyasa Yoga summary, Bhagavad Gita 5.29 suhridam sarva-bhutanam, how to act without being touched",
+    "articleSection": "Bhagavad Gita",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".lead", ".shloka-meaning", ".shloka-essence"]
     }
   },
-  "keywords": "Bhagavad Gita Chapter 5, Karma Sanyasa Yoga, sama-darshitvam, lotus leaf gita, brahma nirvana"
-},
   {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -620,7 +637,7 @@ const schemas = [
       "@type": "ListItem",
       "position": 3,
       "name": "Bhagavad Gita Chapter 5 — Karma Sanyasa Yoga",
-      "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-5.html"
+      "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-5"
     }
   ]
 },

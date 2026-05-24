@@ -2,17 +2,31 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 4 \u2014 Jnana Yoga: The Fire That Burns Karma | Wisdom",
-  description: "A deep reading of Bhagavad Gita Chapter 4 (Adhyay 4) \u2014 42 verses on divine incarnation, the yoga of knowledge, why wisdom burns karma, and how to learn from a real teacher. Sanskrit, IAST, meaning, modern relevance.",
-  keywords: "bhagwat geeta chapter 4, bhagavad gita jnana yoga, yada yada hi dharmasya meaning, gita 4.7 meaning, bhagavad gita knowledge yoga, jnana yajna meaning, bhagwat geeta adhyay 4",
+  title: "Bhagavad Gita Chapter 4 (Jnana Karma Sanyasa Yoga) \u2014 Meaning & Verses",
+  description: "Bhagavad Gita Chapter 4 \u2014 Jnana Karma Sanyasa Yoga. All 42 verses with Sanskrit, transliteration, meaning. Yada yada hi dharmasya, the yoga of knowledge, and how wisdom burns karma.",
+  keywords: "bhagwat geeta chapter 4, bhagavad gita jnana yoga, yada yada hi dharmasya meaning, gita 4.7 meaning, bhagavad gita knowledge yoga, jnana yajna meaning, bhagwat geeta adhyay 4, divine incarnation gita, jnana agni gita, how to learn from a teacher gita, Jnana Karma Sanyasa Yoga summary, Bhagavad Gita 4.7 meaning, Bhagavad Gita 4.34 tadviddhi pranipatena, knowledge as offering Bhagavad Gita",
   openGraph: {
-    title: "Bhagavad Gita Chapter 4 \u2014 Jnana Yoga: The Fire That Burns Karma",
-    description: "Chapter 4 opens with the divine promise that goodness will always be protected. But it's really about knowledge as the highest offering \u2014 and how wisdom burns away all karma.",
+    title: "Bhagavad Gita Chapter 4 (Jnana Karma Sanyasa Yoga) \u2014 Summary & Verses",
+    description: "All 42 verses of Bhagavad Gita Chapter 4 \u2014 yada yada hi dharmasya, knowledge as the highest offering, and how wisdom burns away all karma.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4",
     siteName: 'Wisdom',
+    locale: 'en_IN',
+    images: [{ url: "https://wisdomquotes.in/assets/chapter4.webp", width: 1200, height: 675, alt: "Krishna teaching the eternal knowledge to Arjuna under the gaze of the sun \u2014 Chapter 4 of the Bhagavad Gita, Jnana Karma Sanyasa Yoga, on divine incarnation and the wisdom that burns karma." }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Bhagavad Gita Chapter 4 (Jnana Karma Sanyasa Yoga) \u2014 Summary & Verses",
+    description: "All 42 verses of Bhagavad Gita Chapter 4 \u2014 the promise of divine renewal, the yoga of knowledge, and the model for learning from a real teacher.",
+    images: ["https://wisdomquotes.in/assets/chapter4.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  other: { "rel=prev": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-3", "rel=next": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-5" },
 }
 
 const pageCSS = `
@@ -143,6 +157,16 @@ const pageCSS = `
 
       /* ── ARTICLE BODY ── */
       .article-wrap { max-width: var(--max); margin: 0 auto; padding: 60px 28px 80px; }
+
+      .chapter-image {
+        margin: 0 0 36px;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        background: var(--bg-warm);
+        box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+      }
+      .chapter-image img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 
       .prose h2 {
         font-family: "Playfair Display", Georgia, serif;
@@ -556,50 +580,43 @@ const pageCSS = `
 
 const schemas = [
   {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Bhagavad Gita Chapter 4 — Jnana Yoga: The Fire That Burns Karma",
-  "description": "A deep reading of Bhagavad Gita Chapter 4 (Bhagwat Geeta Adhyay 4) — 42 verses on divine incarnation, the yoga of knowledge, why wisdom burns karma, and how to learn from a real teacher.",
-  "author": {
-    "@type": "Person",
-    "name": "Ankur Shukla",
-    "url": "https://wisdomquotes.in/about",
-    "sameAs": [
-      "https://www.linkedin.com/in/thisisashukla/",
-      "https://x.com/thisisashukla"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Wisdom",
-    "url": "https://wisdomquotes.in",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://wisdomquotes.in/assets/new-light-logo.webp"
-    }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://wisdomquotes.in/og-image.webp",
-    "width": 1200,
-    "height": 630
-  },
-  "datePublished": "2026-05-05",
-  "dateModified": "2026-05-05",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4.html"
-  },
-  "about": {
-    "@type": "Book",
-    "name": "Bhagavad Gita",
+    "@context": "https://schema.org",
+    "@type": ["Article", "LearningResource"],
+    "headline": "Bhagavad Gita Chapter 4 — Jnana Karma Sanyasa Yoga: The Fire That Burns Karma",
+    "description": "Bhagavad Gita Chapter 4 — Jnana Karma Sanyasa Yoga. All 42 verses with Sanskrit, transliteration, meaning. Yada yada hi dharmasya, the yoga of knowledge, and how wisdom burns karma.",
+    "alternativeHeadline": "Bhagavad Gita Chapter 4 (Jnana Karma Sanyasa Yoga) — Summary & Verses",
     "author": {
       "@type": "Person",
-      "name": "Ved Vyasa"
+      "name": "Ankur Shukla",
+      "url": "https://wisdomquotes.in/about",
+      "sameAs": ["https://www.linkedin.com/in/thisisashukla/", "https://x.com/thisisashukla"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
+    },
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/chapter4.webp", "width": 1200, "height": 675 },
+    "datePublished": "2026-05-05",
+    "dateModified": "2026-05-24",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4" },
+    "about": [
+      { "@type": "Book", "name": "Bhagavad Gita", "author": { "@type": "Person", "name": "Ved Vyasa" }, "url": "https://wisdomquotes.in/gita" },
+      { "@type": "Person", "name": "Krishna", "url": "https://en.wikipedia.org/wiki/Krishna" },
+      { "@type": "Person", "name": "Arjuna", "url": "https://en.wikipedia.org/wiki/Arjuna" }
+    ],
+    "keywords": "bhagwat geeta chapter 4, bhagavad gita jnana yoga, yada yada hi dharmasya meaning, gita 4.7 meaning, jnana yajna meaning, divine incarnation gita, Jnana Karma Sanyasa Yoga summary, Bhagavad Gita 4.34 tadviddhi pranipatena, knowledge as offering Bhagavad Gita",
+    "articleSection": "Bhagavad Gita",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "learningResourceType": "Article",
+    "educationalLevel": "General",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".lead", ".shloka-meaning", ".shloka-essence"]
     }
   },
-  "keywords": "Bhagavad Gita Chapter 4, Bhagwat Geeta Adhyay 4, Jnana Yoga, yada yada hi dharmasya, jnana yajna"
-},
   {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -620,7 +637,7 @@ const schemas = [
       "@type": "ListItem",
       "position": 3,
       "name": "Bhagavad Gita Chapter 4 — Jnana Yoga",
-      "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4.html"
+      "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4"
     }
   ]
 },
