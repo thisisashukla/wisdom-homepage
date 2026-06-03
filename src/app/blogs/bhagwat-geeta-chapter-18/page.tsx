@@ -3,21 +3,21 @@ import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 18 Summary – Key Verses & Meaning (Moksha Sannyasa)",
-  description: "Bhagavad Gita Chapter 18 (Moksha Sannyasa Yoga) — all 78 verses, the longest chapter, including 'sarva-dharman parityajya' (18.66) and the final teaching of liberation.",
+  description: "Bhagavad Gita Chapter 18 (Moksha Sannyasa Yoga), all 78 verses, the longest chapter, including 'sarva-dharman parityajya' (18.66) and the final teaching of liberation.",
   keywords: "bhagwat geeta chapter 18, bhagavad gita moksha sannyasa yoga, bhagwat geeta adhyay 18, sarva dharman parityajya, man mana bhava mad bhakto, swadharma gita, five causes of action, charama shloka gita, Moksha Sannyasa Yoga meaning, Bhagavad Gita 18.66 sarva dharman parityajya, Bhagavad Gita 18.65 man mana bhava mad bhakto, Bhagavad Gita 18.47 sva dharma, five causes of action Bhagavad Gita, charama shloka Bhagavad Gita, Bhagavad Gita conclusion summary",
   openGraph: {
     title: "Bhagavad Gita Chapter 18 Summary – Key Verses & Meaning (Moksha Sannyasa)",
-    description: "Bhagavad Gita Chapter 18 — the longest chapter, the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
+    description: "Bhagavad Gita Chapter 18, the longest chapter, the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter18.webp", width: 1200, height: 675, alt: "Krishna and Arjuna at the conclusion of the teaching — confusion gone, doubt cleared, the chariot ready to move. Chapter 18 of the Bhagavad Gita, Moksha Sannyasa Yoga, is the longest and final chapter." }],
+    images: [{ url: "https://wisdomquotes.in/assets/chapter18.webp", width: 1200, height: 675, alt: "Krishna and Arjuna at the conclusion of the teaching, confusion gone, doubt cleared, the chariot ready to move. Chapter 18 of the Bhagavad Gita, Moksha Sannyasa Yoga, is the longest and final chapter." }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 18 Summary – Key Verses & Meaning (Moksha Sannyasa)",
-    description: "Bhagavad Gita Chapter 18 — the longest chapter, the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
+    description: "Bhagavad Gita Chapter 18, the longest chapter, the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
     images: ["https://wisdomquotes.in/assets/chapter18.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18" },
@@ -381,7 +381,7 @@ const schemas = [
         "name": "What is Bhagavad Gita Chapter 18 about?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Chapter 18, called Moksha Sannyasa Yoga (the Yoga of Liberation through Renunciation), is the longest and final chapter of the Gita — 78 verses. It begins with the definitive distinction between sannyāsa and tyāga (18.2), gives the five causes of any action (18.14), the three kinds of intelligence, doer, and resolve (18.20-39), the famous teaching of svadharma (18.47), and ends with the two most quoted verses of the Gita — 18.65 and 18.66 — the final teaching of devotion and the most secret teaching of total refuge."
+          "text": "Chapter 18, called Moksha Sannyasa Yoga (the Yoga of Liberation through Renunciation), is the longest and final chapter of the Gita (78 verses). It begins with the definitive distinction between sannyāsa and tyāga (18.2), gives the five causes of any action (18.14), the three kinds of intelligence, doer, and resolve (18.20-39), the famous teaching of svadharma (18.47), and ends with the two most quoted verses of the Gita (18.65 and 18.66), the final teaching of devotion and the most secret teaching of total refuge."
         }
       },
       {
@@ -413,7 +413,7 @@ const schemas = [
         "name": "What does Bhagavad Gita 18.65 mean?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 18.65 is the Gita's signature closing instruction: 'Fix your mind on me, be devoted to me, worship me, bow to me. You will come to me — I promise you this truly, because you are dear to me.' The verse repeats, with one change, the formula given earlier in 9.34. The change is the final line — priyo'si me, you are dear to me. The promise is offered not as abstract instruction but as a personal declaration of love."
+          "text": "Verse 18.65 is the Gita's signature closing instruction: 'Fix your mind on me, be devoted to me, worship me, bow to me. You will come to me. I promise you this truly, because you are dear to me.' The verse repeats, with one change, the formula given earlier in 9.34. The change is the final line — priyo'si me, you are dear to me. The promise is offered not as abstract instruction but as a personal declaration of love."
         }
       },
       {
@@ -672,11 +672,11 @@ export default function ChapterPage18() {
             <div className="chapter-badge-dot"></div>
           </div>
           <h1 className="article-title">
-            Bhagavad Gita Chapter 18 (Adhyay 18) —<br />
+            Bhagavad Gita Chapter 18 (Adhyay 18):<br />
             <em>Moksha Sannyasa Yoga</em>
           </h1>
           <p className="article-subtitle">
-            Seventy-eight verses to close everything. What renunciation actually means. The five causes of any action. Your own duty over a borrowed one. And the verse Krishna calls his most secret of all — abandon every duty, take refuge in me alone.
+            Seventy-eight verses to close everything. What renunciation actually means. The five causes of any action. Your own duty over a borrowed one. And the verse Krishna calls his most secret of all, abandon every duty, take refuge in me alone.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -686,6 +686,8 @@ export default function ChapterPage18() {
             <span className="meta-item">~20 min read</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 18 of 18</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -704,26 +706,26 @@ export default function ChapterPage18() {
           </figure>
 
         <p className="lead">
-          Chapter 18 is the longest chapter in the Bhagavad Gita — seventy-eight verses, more than twice the length of most others. It is also the most comprehensive. Krishna does not introduce many new teachings here. Instead, he revisits the most important ones, recasts them in their final form, and pulls them together into a single concluding argument. The chapter is, in a real sense, the Gita reading itself back to itself. By the end of it, Arjuna's doubt is gone and the war can proceed. By the end of it, the reader is left with two of the most important verses in the entire book — 18.65 and 18.66, the final teaching and the most secret teaching.
+          Chapter 18 is the longest chapter in the Bhagavad Gita, seventy-eight verses, more than twice the length of most others. It is also the most comprehensive. Krishna does not introduce many new teachings here. Instead, he revisits the most important ones, recasts them in their final form, and pulls them together into a single concluding argument. The chapter is, in a real sense, the Gita reading itself back to itself. By the end of it, Arjuna's doubt is gone and the war can proceed. By the end of it, the reader is left with two of the most important verses in the entire book, 18.65 and 18.66, the final teaching and the most secret teaching.
         </p>
 
         <p>
-          What is unusual about Chapter 18 is its rhythm. The early verses are taxonomic — three kinds of renunciation, three kinds of action, three kinds of doer, three kinds of intelligence, three kinds of resolve, three kinds of happiness. The chapter goes through these methodically. Then, around verse 50, the tone shifts. The taxonomies recede. The closing verses become personal again. Krishna offers Arjuna his most direct, most tender, and most absolute teachings — the ones that have echoed for two thousand years not because they are clever but because they are, at their root, an invitation to take refuge.
+          What is unusual about Chapter 18 is its rhythm. The early verses are taxonomic, three kinds of renunciation, three kinds of action, three kinds of doer, three kinds of intelligence, three kinds of resolve, three kinds of happiness. The chapter goes through these methodically. Then, around verse 50, the tone shifts. The taxonomies recede. The closing verses become personal again. Krishna offers Arjuna his most direct, most tender, and most absolute teachings, the ones that have echoed for two thousand years not because they are clever but because they are, at their root, an invitation to take refuge.
         </p>
 
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
-            <li><a href="#what-renunciation">What renunciation actually means — 18.2</a></li>
-            <li><a href="#five-causes">The five causes of any action — 18.14</a></li>
-            <li><a href="#without-ego">Action without egoic ownership — 18.17</a></li>
-            <li><a href="#sattvic-buddhi">What real intelligence sees — 18.30</a></li>
-            <li><a href="#own-duty">Your imperfect duty over another's perfect one — 18.47</a></li>
-            <li><a href="#through-devotion">Through devotion, one truly knows — 18.55</a></li>
-            <li><a href="#in-the-heart">The Lord in the heart of all — 18.61</a></li>
-            <li><a href="#most-secret">The chapter's most secret teaching — 18.65 and 18.66</a></li>
-            <li><a href="#arjuna-restored">Arjuna restored — 18.73</a></li>
-            <li><a href="#sanjaya-closes">Sanjaya's final word — 18.78</a></li>
+            <li><a href="#what-renunciation">What renunciation actually means, 18.2</a></li>
+            <li><a href="#five-causes">The five causes of any action, 18.14</a></li>
+            <li><a href="#without-ego">Action without egoic ownership, 18.17</a></li>
+            <li><a href="#sattvic-buddhi">What real intelligence sees, 18.30</a></li>
+            <li><a href="#own-duty">Your imperfect duty over another's perfect one, 18.47</a></li>
+            <li><a href="#through-devotion">Through devotion, one truly knows, 18.55</a></li>
+            <li><a href="#in-the-heart">The Lord in the heart of all, 18.61</a></li>
+            <li><a href="#most-secret">The chapter's most secret teaching, 18.65 and 18.66</a></li>
+            <li><a href="#arjuna-restored">Arjuna restored, 18.73</a></li>
+            <li><a href="#sanjaya-closes">Sanjaya's final word, 18.78</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
             <li><a href="#related-reading">Related reading</a></li>
@@ -742,11 +744,11 @@ export default function ChapterPage18() {
         <h2 id="what-renunciation">Renunciation Is Not What Most People Think</h2>
 
         <p>
-          Chapter 18 opens with Arjuna's final question. What is the difference between <em>sannyāsa</em> — renunciation — and <em>tyāga</em> — letting go? The two words have been used through the Gita, sometimes synonymously, sometimes with subtle distinctions. Arjuna wants the definitive answer.
+          Chapter 18 opens with Arjuna's final question. What is the difference between <em>sannyāsa</em> (renunciation) and <em>tyāga</em> (letting go)? The two words have been used through the Gita, sometimes synonymously, sometimes with subtle distinctions. Arjuna wants the definitive answer.
         </p>
 
         <p>
-          Krishna gives it in verse 18.2. Some wise people say renunciation means giving up desire-driven actions. Others say it means giving up the fruits of all actions. The first is sannyāsa in its narrow sense — giving up specific kinds of activities. The second is tyāga — the inner letting go of results that the Gita has been teaching since Chapter 2. The chapter will, in subsequent verses, side with the second. The truly renounced person is not the one who has stopped acting. It is the one who has stopped clutching the result. This was already the Gita's position in Chapter 5 and 6. Chapter 18 makes it the final position.
+          Krishna gives it in verse 18.2. Some wise people say renunciation means giving up desire-driven actions. Others say it means giving up the fruits of all actions. The first is sannyāsa in its narrow sense, giving up specific kinds of activities. The second is tyāga, the inner letting go of results that the Gita has been teaching since Chapter 2. The chapter will, in subsequent verses, side with the second. The truly renounced person is not the one who has stopped acting. It is the one who has stopped clutching the result. This was already the Gita's position in Chapter 5 and 6. Chapter 18 makes it the final position.
         </p>
 
         <div className="shloka-card">
@@ -770,7 +772,7 @@ export default function ChapterPage18() {
             <div>
               <div className="shloka-col-label">The verse's quiet preference</div>
               <div className="shloka-insight">
-                Notice the asymmetry. The first definition uses <em>kavayaḥ</em> — poets, the wise. The second uses <em>vicakṣaṇāḥ</em> — the discerning, those who see most precisely. The Gita is gently signalling which definition it prefers. Letting go of fruits is the deeper move because it does not require giving up activity. It only requires giving up the grip.
+                Notice the asymmetry. The first definition uses <em>kavayaḥ</em>, the poets, the wise. The second uses <em>vicakṣaṇāḥ</em>, the discerning, those who see most precisely. The Gita is gently signalling which definition it prefers. Letting go of fruits is the deeper move because it does not require giving up activity. It only requires giving up the grip.
               </div>
             </div>
           </div>
@@ -788,14 +790,14 @@ export default function ChapterPage18() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="five-causes">Any Action Has Five Causes — You Are One of Them</h2>
+        <h2 id="five-causes">Any Action Has Five Causes, You Are One of Them</h2>
 
         <p>
-          Verses 18.13 and 18.14 contain one of the Gita's most useful pieces of analytic philosophy. Every action, Krishna says, has five causes. The body (the field where the action happens). The doer (the seemingly individual agent). The various instruments (senses, organs, tools). The many different efforts (the actual movements involved). And the fifth — <em>daivam</em> — the unseen force, divine grace, the larger order. Five causes converge on every action. The ego claims to be one of them. It is not the only one.
+          Verses 18.13 and 18.14 contain one of the Gita's most useful pieces of analytic philosophy. Every action, Krishna says, has five causes. The body (the field where the action happens). The doer (the seemingly individual agent). The various instruments (senses, organs, tools). The many different efforts (the actual movements involved). And the fifth: <em>daivam</em>, the unseen force, divine grace, the larger order. Five causes converge on every action. The ego claims to be one of them. It is not the only one.
         </p>
 
         <p>
-          Why does this matter? Because most of our suffering about action comes from imagining we are the sole cause. When the action succeeds, we feel inflated. When it fails, we feel devastated. Both reactions assume we are doing the work alone. The Gita's five-fold analysis shows that we are, in fact, one of five contributors. The other four — body, instruments, efforts, divine factor — were also necessary. Even when you act perfectly, the result is not yours alone to claim. Even when you act poorly, the result is not yours alone to blame. The five causes share the responsibility — and that sharing is, oddly, the source of peace.
+          Why does this matter? Because most of our suffering about action comes from imagining we are the sole cause. When the action succeeds, we feel inflated. When it fails, we feel devastated. Both reactions assume we are doing the work alone. The Gita's five-fold analysis shows that we are, in fact, one of five contributors. The other four, body, instruments, efforts, divine factor, were also necessary. Even when you act perfectly, the result is not yours alone to claim. Even when you act poorly, the result is not yours alone to blame. The five causes share the responsibility, and that sharing is, oddly, the source of peace.
         </p>
 
         <div className="shloka-card">
@@ -813,13 +815,13 @@ export default function ChapterPage18() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                The field, the doer, the various instruments, the many different efforts, and the fifth — the unseen — together produce any action.
+                The field, the doer, the various instruments, the many different efforts, and the fifth, the unseen, together produce any action.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">What the fifth cause does for you</div>
               <div className="shloka-insight">
-                Notice that the doer is the second item, not the only item. The verse explicitly de-centres the personal agent. The fifth cause — <em>daivam</em> — is the part you cannot plan for, the timing you did not choose, the conditions you did not arrange. Most of us pretend the fifth cause is decorative. The Gita is saying it is structural. Every action requires it. Every action receives it.
+                Notice that the doer is the second item, not the only item. The verse explicitly de-centres the personal agent. The fifth cause (<em>daivam</em>) is the part you cannot plan for, the timing you did not choose, the conditions you did not arrange. Most of us pretend the fifth cause is decorative. The Gita is saying it is structural. Every action requires it. Every action receives it.
               </div>
             </div>
           </div>
@@ -840,11 +842,11 @@ export default function ChapterPage18() {
         <h2 id="without-ego">Without Egoic Ownership, the Stain Doesn't Stick</h2>
 
         <p>
-          Verse 18.17 contains a sentence that has troubled commentators for centuries. Krishna says: the one whose understanding remains unstained, who has no sense of separate self in the action, does not kill — even if he kills all these beings — and is not bound.
+          Verse 18.17 contains a sentence that has troubled commentators for centuries. Krishna says: the one whose understanding remains unstained, who has no sense of separate self in the action, does not kill, even if he kills all these beings, and is not bound.
         </p>
 
         <p>
-          Read carelessly, this is a moral horror. Read carefully, it is a precise teaching about what binds and what doesn't. The verse is not licensing violence. It is identifying what makes an action heavy. The heaviness of an action is not in the action itself; it is in the egoic claim attached to it. The same act, performed by a person who has authentically identified with the larger pattern of dharma rather than with personal want, lands differently in the universe than the same act performed for personal advantage. In Arjuna's specific case — he is being asked to fight a war he did not choose, against opponents who are on the wrong side of dharma, with no personal hatred. The verse is saying that, in such a case, the act can be performed without binding the actor.
+          Read carelessly, this is a moral horror. Read carefully, it is a precise teaching about what binds and what doesn't. The verse is not licensing violence. It is identifying what makes an action heavy. The heaviness of an action is not in the action itself; it is in the egoic claim attached to it. The same act, performed by a person who has authentically identified with the larger pattern of dharma rather than with personal want, lands differently in the universe than the same act performed for personal advantage. In Arjuna's specific case, he is being asked to fight a war he did not choose, against opponents who are on the wrong side of dharma, with no personal hatred. The verse is saying that, in such a case, the act can be performed without binding the actor.
         </p>
 
         <div className="shloka-card">
@@ -868,7 +870,7 @@ export default function ChapterPage18() {
             <div>
               <div className="shloka-col-label">Why this verse is not a moral loophole</div>
               <div className="shloka-insight">
-                The verse is not absolving anyone of the consequences of their actions. It is identifying the inner condition that makes an action either binding or non-binding. The condition is enormously demanding — total freedom from egoic claim, complete alignment with dharma. Almost nobody meets this standard. The verse is naming the ideal, not handing out permission slips.
+                The verse is not absolving anyone of the consequences of their actions. It is identifying the inner condition that makes an action either binding or non-binding. The condition is enormously demanding, total freedom from egoic claim, complete alignment with dharma. Almost nobody meets this standard. The verse is naming the ideal, not handing out permission slips.
               </div>
             </div>
           </div>
@@ -889,7 +891,7 @@ export default function ChapterPage18() {
         <h2 id="sattvic-buddhi">The Intelligence That Knows What Frees and What Binds</h2>
 
         <p>
-          Through verses 18.20-39, Krishna gives the now-familiar three-fold analysis applied to knowledge, action, doer, intelligence, and resolve. Verse 18.30 stands out from the rest. It defines the sattvic intelligence — the highest quality of <em>buddhi</em> — as the intelligence that knows the difference between what should be pursued and what should be withdrawn from, between what should be done and what should not, between fear and fearlessness, between bondage and liberation.
+          Through verses 18.20-39, Krishna gives the now-familiar three-fold analysis applied to knowledge, action, doer, intelligence, and resolve. Verse 18.30 stands out from the rest. It defines the sattvic intelligence (the highest quality of <em>buddhi</em>) as the intelligence that knows the difference between what should be pursued and what should be withdrawn from, between what should be done and what should not, between fear and fearlessness, between bondage and liberation.
         </p>
 
         <p>
@@ -911,13 +913,13 @@ export default function ChapterPage18() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                The intelligence that knows what to engage and what to withdraw from, what should be done and what should not, what is fear and fearlessness, what binds and what frees — that, Arjuna, is sattvic intelligence.
+                The intelligence that knows what to engage and what to withdraw from, what should be done and what should not, what is fear and fearlessness, what binds and what frees, that, Arjuna, is sattvic intelligence.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The deepest definition of wisdom</div>
               <div className="shloka-insight">
-                Most discussions of intelligence focus on capacity — how much one can hold, how fast one can compute. The Gita's definition is different. Intelligence, here, is discrimination. The ability to tell, in the actual moment, which fork in the road leads where. By that standard, very intelligent people can lack <em>buddhi</em>, and very modest people can have it.
+                Most discussions of intelligence focus on capacity: how much one can hold, how fast one can compute. The Gita's definition is different. Intelligence, here, is discrimination. The ability to tell, in the actual moment, which fork in the road leads where. By that standard, very intelligent people can lack <em>buddhi</em>, and very modest people can have it.
               </div>
             </div>
           </div>
@@ -928,7 +930,7 @@ export default function ChapterPage18() {
 
         <div className="pull-quote">
           <blockquote>
-            "The intelligence that knows what binds and what frees — that is the highest intelligence."
+            "The intelligence that knows what binds and what frees, that is the highest intelligence."
           </blockquote>
           <cite>Bhagavad Gita 18.30</cite>
         </div>
@@ -949,7 +951,7 @@ export default function ChapterPage18() {
         </p>
 
         <p>
-          Read carelessly, the verse can sound conservative — a permission to stay in one's caste, one's job, one's marriage, one's role. That is not its main thrust. The deeper teaching is about authenticity. Your work, done in your way, in your voice, with your imperfections — has a kind of integrity that no borrowed work can match, however well-executed. The borrowed work, no matter how polished, is still costume. Your own work, even messy, is the actual transmission of who you are. The Gita is asking you to make peace with the imperfection of your own contribution and to stop comparing it to a more glamorous role you imagine you should be playing.
+          Read carelessly, the verse can sound conservative, a permission to stay in one's caste, one's job, one's marriage, one's role. That is not its main thrust. The deeper teaching is about authenticity. Your work, done in your way, in your voice, with your imperfections, has a kind of integrity that no borrowed work can match, however well-executed. The borrowed work, no matter how polished, is still costume. Your own work, even messy, is the actual transmission of who you are. The Gita is asking you to make peace with the imperfection of your own contribution and to stop comparing it to a more glamorous role you imagine you should be playing.
         </p>
 
         <div className="shloka-card">
@@ -973,7 +975,7 @@ export default function ChapterPage18() {
             <div>
               <div className="shloka-col-label">Why "sva" is the key word</div>
               <div className="shloka-insight">
-                <em>Sva-dharma</em> — one's own duty. <em>Svabhāva-niyatam</em> — set by one's own nature. The verse is pointing toward the work that arises out of who you actually are, not what you have been told to be, not what you would like to imitate. That work, even badly done, registers as authentic. Better work, in someone else's voice, does not.
+                <em>Sva-dharma</em>: one's own duty. <em>Svabhāva-niyatam</em>: set by one's own nature. The verse is pointing toward the work that arises out of who you actually are, not what you have been told to be, not what you would like to imitate. That work, even badly done, registers as authentic. Better work, in someone else's voice, does not.
               </div>
             </div>
           </div>
@@ -1000,11 +1002,11 @@ export default function ChapterPage18() {
         <h2 id="through-devotion">Devoted Love Is How You Actually Know</h2>
 
         <p>
-          Verse 18.55 is one of the most quietly important verses near the end of the chapter. Krishna says: through <em>bhakti</em> — devoted love — one truly knows me as I am. Knowing me in truth, one enters into me at once.
+          Verse 18.55 is one of the most quietly important verses near the end of the chapter. Krishna says: through <em>bhakti</em> (devoted love) one truly knows me as I am. Knowing me in truth, one enters into me at once.
         </p>
 
         <p>
-          Notice the epistemology. The Gita is not saying you can know the Divine through reasoning alone. It is saying that devoted love is itself a form of knowledge — a more accurate one than detached analysis. This is not anti-intellectual. It is just precise. Some things can only be known through the right relationship. A person can be studied, analyzed, and described from outside — and the description will miss what the person is actually like. The same person, encountered through real love, is known differently. The Gita is applying this to the Divine. The deepest knowledge is not the one you assemble from outside. It is the one that arises from inside a real relationship.
+          Notice the epistemology. The Gita is not saying you can know the Divine through reasoning alone. It is saying that devoted love is itself a form of knowledge, a more accurate one than detached analysis. This is not anti-intellectual. It is just precise. Some things can only be known through the right relationship. A person can be studied, analyzed, and described from outside, and the description will miss what the person is actually like. The same person, encountered through real love, is known differently. The Gita is applying this to the Divine. The deepest knowledge is not the one you assemble from outside. It is the one that arises from inside a real relationship.
         </p>
 
         <div className="shloka-card">
@@ -1028,7 +1030,7 @@ export default function ChapterPage18() {
             <div>
               <div className="shloka-col-label">Why love is the deepest knowledge</div>
               <div className="shloka-insight">
-                You cannot know a person, fully, from outside. The deepest knowing requires the relationship. The Gita's claim is structural — the same is true of the Divine. Analysis takes you so far. Devoted love takes you the rest of the way. The two are not in opposition. The analysis prepares the ground; the love does the entering.
+                You cannot know a person, fully, from outside. The deepest knowing requires the relationship. The Gita's claim is structural, the same is true of the Divine. Analysis takes you so far. Devoted love takes you the rest of the way. The two are not in opposition. The analysis prepares the ground; the love does the entering.
               </div>
             </div>
           </div>
@@ -1049,11 +1051,11 @@ export default function ChapterPage18() {
         <h2 id="in-the-heart">The Lord in the Heart, Spinning Us on the Wheel</h2>
 
         <p>
-          Verses 18.61 and 18.62 give one of the most evocative images in the Gita. Krishna says: the Lord dwells in the heart of all beings, and by his māyā causes them to revolve — as if mounted on a machine. The image is striking. Each of us is, in this verse, a being mounted on the wheel of life, spinning according to the deepest pattern of our own conditioning. The Lord is not separate from this; the Lord is at the centre of it.
+          Verses 18.61 and 18.62 give one of the most evocative images in the Gita. Krishna says: the Lord dwells in the heart of all beings, and by his māyā causes them to revolve, as if mounted on a machine. The image is striking. Each of us is, in this verse, a being mounted on the wheel of life, spinning according to the deepest pattern of our own conditioning. The Lord is not separate from this; the Lord is at the centre of it.
         </p>
 
         <p>
-          Then comes the instruction. <em>Surrender to that Lord with your whole being. By that grace, you will reach supreme peace and the eternal home.</em> Notice the move. Once you understand that the spinning is happening through you, not by you, the appropriate response is not control. Control was the illusion that produced the suffering. The appropriate response is surrender — handing over the part of your inner life that was trying, futilely, to drive the machine you are mounted on.
+          Then comes the instruction. <em>Surrender to that Lord with your whole being. By that grace, you will reach supreme peace and the eternal home.</em> Notice the move. Once you understand that the spinning is happening through you, not by you, the appropriate response is not control. Control was the illusion that produced the suffering. The appropriate response is surrender: handing over the part of your inner life that was trying, futilely, to drive the machine you are mounted on.
         </p>
 
         <div className="shloka-card">
@@ -1077,7 +1079,7 @@ export default function ChapterPage18() {
             <div>
               <div className="shloka-col-label">The image of the machine</div>
               <div className="shloka-insight">
-                <em>Yantrārūḍhāni</em> — mounted on a machine. The Gita's image for the body is mechanical. The body is not your enemy; it is the apparatus through which the spinning happens. You are not the one driving it as much as you imagine. There is a deeper director, and the director is closer to you than your own ego.
+                <em>Yantrārūḍhāni</em>: mounted on a machine. The Gita's image for the body is mechanical. The body is not your enemy; it is the apparatus through which the spinning happens. You are not the one driving it as much as you imagine. There is a deeper director, and the director is closer to you than your own ego.
               </div>
             </div>
           </div>
@@ -1105,11 +1107,11 @@ export default function ChapterPage18() {
         <h2 id="most-secret">The Two Verses That End the Gita</h2>
 
         <p>
-          Now we arrive at the two verses that have, more than any others, defined how the Gita is received. Verse 18.65 first. <em>Man-manā bhava mad-bhakto mad-yājī māṃ namaskuru. Mām evaiṣyasi satyaṃ te pratijāne priyo'si me</em>. Fix your mind on me. Be devoted to me. Worship me. Bow to me. You will come to me — I promise you truly, because you are dear to me. The verse is nearly identical to 9.34. The new thing in 18.65 is the last line. <em>Satyaṃ te pratijāne priyo'si me</em>. I promise you truly. Because you are dear to me.
+          Now we arrive at the two verses that have, more than any others, defined how the Gita is received. Verse 18.65 first. <em>Man-manā bhava mad-bhakto mad-yājī māṃ namaskuru. Mām evaiṣyasi satyaṃ te pratijāne priyo'si me</em>. Fix your mind on me. Be devoted to me. Worship me. Bow to me. You will come to me. I promise you truly, because you are dear to me. The verse is nearly identical to 9.34. The new thing in 18.65 is the last line. <em>Satyaṃ te pratijāne priyo'si me</em>. I promise you truly. Because you are dear to me.
         </p>
 
         <p>
-          And then, verse 18.66 — what tradition calls the <em>charama śloka</em>, the final verse, the most secret teaching of all. <em>Sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja</em>. Abandon all dharmas. Take refuge in me alone. <em>Ahaṃ tvāṃ sarva-pāpebhyo mokṣayiṣyāmi, mā śucaḥ</em>. I will free you from all wrongdoing. Do not grieve. The verse is staggering. After eighteen chapters of dharma — duty, action, restraint, technique, knowledge — Krishna's final instruction is to let go of all of it and rest in him. This is not a cancellation of the previous teaching. It is its completion. The dharmas were the necessary ladder. The ladder, at the top, is finally released. What remains is refuge — and the promise that refuge is enough.
+          And then, verse 18.66, what tradition calls the <em>charama śloka</em>: the final verse, the most secret teaching of all. <em>Sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja</em>. Abandon all dharmas. Take refuge in me alone. <em>Ahaṃ tvāṃ sarva-pāpebhyo mokṣayiṣyāmi, mā śucaḥ</em>. I will free you from all wrongdoing. Do not grieve. The verse is staggering. After eighteen chapters of dharma (duty, action, restraint, technique, knowledge), Krishna's final instruction is to let go of all of it and rest in him. This is not a cancellation of the previous teaching. It is its completion. The dharmas were the necessary ladder. The ladder, at the top, is finally released. What remains is refuge, and the promise that refuge is enough.
         </p>
 
         <div className="shloka-card">
@@ -1127,13 +1129,13 @@ export default function ChapterPage18() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Fix your mind on me, be devoted to me, worship me, bow to me. You will come to me — I promise you this truly, for you are dear to me.
+                Fix your mind on me, be devoted to me, worship me, bow to me. You will come to me, I promise you this truly, for you are dear to me.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The line that changes the verse from instruction to love</div>
               <div className="shloka-insight">
-                <em>Priyo'si me</em> — you are dear to me. The Gita's most repeated instruction ends, this time, with a personal declaration of love. The teaching has been pedagogical for seventeen chapters. Here, near the end, it becomes a friendship's most direct sentence. The promise is not abstract. It is given because of the affection.
+                <em>Priyo'si me</em>: you are dear to me. The Gita's most repeated instruction ends, this time, with a personal declaration of love. The teaching has been pedagogical for seventeen chapters. Here, near the end, it becomes a friendship's most direct sentence. The promise is not abstract. It is given because of the affection.
               </div>
             </div>
           </div>
@@ -1163,7 +1165,7 @@ export default function ChapterPage18() {
             <div>
               <div className="shloka-col-label">The Gita's most generous sentence</div>
               <div className="shloka-insight">
-                After eighteen chapters of teaching about right action, the final instruction is to release even the framework of action itself. <em>Sarva-dharmān parityajya</em> — abandon every dharma. <em>Mām ekaṃ śaraṇaṃ vraja</em> — take refuge in me alone. The teaching was the staircase. The staircase, at the top, is finally let go. What remains is the embrace at the top of the staircase — and the promise that the embrace will hold you, fully, regardless of how the climb went. <em>Mā śucaḥ</em> — do not grieve. The Gita ends its most central teaching with a tenderness almost no scripture matches.
+                After eighteen chapters of teaching about right action, the final instruction is to release even the framework of action itself. <em>Sarva-dharmān parityajya</em>: abandon every dharma. <em>Mām ekaṃ śaraṇaṃ vraja</em>: take refuge in me alone. The teaching was the staircase. The staircase, at the top, is finally let go. What remains is the embrace at the top of the staircase, and the promise that the embrace will hold you, fully, regardless of how the climb went. <em>Mā śucaḥ</em>: do not grieve. The Gita ends its most central teaching with a tenderness almost no scripture matches.
               </div>
             </div>
           </div>
@@ -1195,7 +1197,7 @@ export default function ChapterPage18() {
         </p>
 
         <p>
-          Notice what has happened. Eighteen chapters ago, Arjuna was paralysed. He had set down his bow. He had wept on the chariot floor. He had asked Krishna to teach him. Now, at the end, he stands. The Sanskrit word is <em>sthitaḥ</em> — established, firm. The delusion is gone. The memory is restored — not of facts, but of who he is and what he must do. The doubts are gone. He will act. The Gita's pedagogical project is complete. Not because Arjuna has been given new information. Because the confusion that prevented him from acting has been dissolved.
+          Notice what has happened. Eighteen chapters ago, Arjuna was paralysed. He had set down his bow. He had wept on the chariot floor. He had asked Krishna to teach him. Now, at the end, he stands. The Sanskrit word is <em>sthitaḥ</em>, established, firm. The delusion is gone. The memory is restored, not of facts, but of who he is and what he must do. The doubts are gone. He will act. The Gita's pedagogical project is complete. Not because Arjuna has been given new information. Because the confusion that prevented him from acting has been dissolved.
         </p>
 
         <div className="shloka-card">
@@ -1213,7 +1215,7 @@ export default function ChapterPage18() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Arjuna said: my delusion is destroyed, memory restored — by your grace, Achyuta. I stand firm, my doubts gone. I will do what you say.
+                Arjuna said: my delusion is destroyed, memory restored, by your grace, Achyuta. I stand firm, my doubts gone. I will do what you say.
               </div>
             </div>
             <div>
@@ -1237,14 +1239,14 @@ export default function ChapterPage18() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="sanjaya-closes">Where Krishna and Arjuna Are Together — Victory Is Already There</h2>
+        <h2 id="sanjaya-closes">Where Krishna and Arjuna Are Together, Victory Is Already There</h2>
 
         <p>
-          The Gita does not end in Krishna's voice. It does not end in Arjuna's. It ends in the voice of Sanjaya — the narrator who has been describing the dialogue to the blind king Dhritarashtra. Verse 18.78 is Sanjaya's closing comment, and it has become one of the most quoted verses in Indian devotional life.
+          The Gita does not end in Krishna's voice. It does not end in Arjuna's. It ends in the voice of Sanjaya, the narrator who has been describing the dialogue to the blind king Dhritarashtra. Verse 18.78 is Sanjaya's closing comment, and it has become one of the most quoted verses in Indian devotional life.
         </p>
 
         <p>
-          Wherever Krishna, the master of yoga, is present, and wherever Arjuna, the bow-bearer, is present — there is prosperity, victory, glory, and firm justice. <em>Etat me matiḥ</em>. This is my conviction. The verse is a kind of benediction. It says: when the wisdom of the Divine and the willingness of the seeker are joined, the outcome is already secured. Not because the universe is rigged in favour of any particular agent, but because the right alignment — wisdom and willingness, teacher and student, divine and human — produces its own victory. The Gita ends, not with the war's outcome, but with the assurance that the proper alignment has been achieved. The rest is detail.
+          Wherever Krishna, the master of yoga, is present, and wherever Arjuna, the bow-bearer, is present: there is prosperity, victory, glory, and firm justice. <em>Etat me matiḥ</em>. This is my conviction. The verse is a kind of benediction. It says: when the wisdom of the Divine and the willingness of the seeker are joined, the outcome is already secured. Not because the universe is rigged in favour of any particular agent, but because the right alignment (wisdom and willingness, teacher and student, divine and human) produces its own victory. The Gita ends, not with the war's outcome, but with the assurance that the proper alignment has been achieved. The rest is detail.
         </p>
 
         <div className="shloka-card">
@@ -1262,7 +1264,7 @@ export default function ChapterPage18() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Where Krishna, the master of yoga, is present, and where Arjuna, the bow-bearer, is — there are prosperity, victory, glory, and firm justice. This is my conviction.
+                Where Krishna, the master of yoga, is present, and where Arjuna, the bow-bearer, is, there are prosperity, victory, glory, and firm justice. This is my conviction.
               </div>
             </div>
             <div>
@@ -1279,7 +1281,7 @@ export default function ChapterPage18() {
 
         <div className="highlight-box">
           <p>
-            <strong>What the Gita finally leaves you with:</strong> Eighteen chapters of teaching, summarised in two final verses. Fix the mind on the Divine, be devoted, worship, bow — and you will come to me. Abandon every other framework and take refuge here — I will free you, do not grieve. The teaching ends in love. Not in technique. Not in metaphysics. In the assurance that refuge is enough.
+            <strong>What the Gita finally leaves you with:</strong> Eighteen chapters of teaching, summarised in two final verses. Fix the mind on the Divine, be devoted, worship, bow, and you will come to me. Abandon every other framework and take refuge here. I will free you, do not grieve. The teaching ends in love. Not in technique. Not in metaphysics. In the assurance that refuge is enough.
           </p>
         </div>
 
@@ -1383,7 +1385,7 @@ export default function ChapterPage18() {
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous</div>
-            <a href="/blogs/bhagwat-geeta-chapter-17" className="ch-nav-title">Chapter 17 — Shraddhatraya Vibhaga Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-17" className="ch-nav-title">Chapter 17, Shraddhatraya Vibhaga Yoga</a>
           </div>
           <div style={{ textAlign: 'right' }}>
             <div className="ch-nav-label">Series</div>
@@ -1408,37 +1410,37 @@ export default function ChapterPage18() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 18 about?</div>
             <div className="faq-a">
-              Chapter 18, called Moksha Sannyasa Yoga (the Yoga of Liberation through Renunciation), is the longest and final chapter of the Gita — 78 verses. It begins with the definitive distinction between sannyāsa and tyāga (18.2), gives the five causes of any action (18.14), the three kinds of intelligence, doer, and resolve (18.20-39), the famous teaching of <em>svadharma</em> (18.47), and ends with the two most quoted verses of the Gita — 18.65 and 18.66 — the final teaching of devotion and the most secret teaching of total refuge.
+              Chapter 18, called Moksha Sannyasa Yoga (the Yoga of Liberation through Renunciation), is the longest and final chapter of the Gita (78 verses). It begins with the definitive distinction between sannyāsa and tyāga (18.2), gives the five causes of any action (18.14), the three kinds of intelligence, doer, and resolve (18.20-39), the famous teaching of <em>svadharma</em> (18.47), and ends with the two most quoted verses of the Gita (18.65 and 18.66), the final teaching of devotion and the most secret teaching of total refuge.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the meaning of Bhagavad Gita 18.66?</div>
             <div className="faq-a">
-              Verse 18.66 is called the <em>charama śloka</em> — the final verse, the most secret teaching. Krishna says: <em>sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja, ahaṃ tvāṃ sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ</em> — 'Abandon all duties and take refuge in me alone. I will free you from all wrongdoing. Do not grieve.' After eighteen chapters of teaching about right action, the final instruction is to release even the framework of action and rest in pure refuge. The teaching ends with the assurance that refuge is enough.
+              Verse 18.66 is called the <em>charama śloka</em>, the final verse, the most secret teaching. Krishna says: <em>sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja, ahaṃ tvāṃ sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ</em>: 'Abandon all duties and take refuge in me alone. I will free you from all wrongdoing. Do not grieve.' After eighteen chapters of teaching about right action, the final instruction is to release even the framework of action and rest in pure refuge. The teaching ends with the assurance that refuge is enough.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What are the five causes of action in the Bhagavad Gita?</div>
             <div className="faq-a">
-              Verse 18.14 names five factors that produce any action: <em>adhiṣṭhāna</em> (the field or body where action happens), <em>kartā</em> (the doer), <em>karaṇa</em> (the various instruments — senses and tools), <em>ceṣṭā</em> (the many different efforts), and <em>daivam</em> (the unseen factor or divine grace). The teaching is that no action has a single agent. The ego that claims sole credit, or sole blame, is misreading the situation.
+              Verse 18.14 names five factors that produce any action: <em>adhiṣṭhāna</em> (the field or body where action happens), <em>kartā</em> (the doer), <em>karaṇa</em> (the various instruments, senses and tools), <em>ceṣṭā</em> (the many different efforts), and <em>daivam</em> (the unseen factor or divine grace). The teaching is that no action has a single agent. The ego that claims sole credit, or sole blame, is misreading the situation.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does svadharma mean in the Bhagavad Gita?</div>
             <div className="faq-a">
-              <em>Svadharma</em> means 'one's own duty' — the work that arises from one's own nature. Verse 18.47 says: 'One's own dharma, even imperfectly performed, is better than another's dharma performed well.' The teaching is not about staying in one's social caste; it is about authenticity. Work done in your own voice, with your own imperfections, has an integrity that no borrowed work can match. The verse asks you to stop comparing your imperfect contribution to a more glamorous role you imagine you should be playing.
+              <em>Svadharma</em> means 'one's own duty': the work that arises from one's own nature. Verse 18.47 says: 'One's own dharma, even imperfectly performed, is better than another's dharma performed well.' The teaching is not about staying in one's social caste; it is about authenticity. Work done in your own voice, with your own imperfections, has an integrity that no borrowed work can match. The verse asks you to stop comparing your imperfect contribution to a more glamorous role you imagine you should be playing.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 18.65 mean?</div>
             <div className="faq-a">
-              Verse 18.65 is the Gita's signature closing instruction: 'Fix your mind on me, be devoted to me, worship me, bow to me. You will come to me — I promise you this truly, because you are dear to me.' The verse repeats, with one change, the formula given earlier in 9.34. The change is the final line — <em>priyo'si me</em>, you are dear to me. The promise is offered not as abstract instruction but as a personal declaration of love.
+              Verse 18.65 is the Gita's signature closing instruction: 'Fix your mind on me, be devoted to me, worship me, bow to me. You will come to me. I promise you this truly, because you are dear to me.' The verse repeats, with one change, the formula given earlier in 9.34. The change is the final line: <em>priyo'si me</em>, you are dear to me. The promise is offered not as abstract instruction but as a personal declaration of love.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">How does the Bhagavad Gita end?</div>
             <div className="faq-a">
-              The Gita ends with verse 18.78, spoken by Sanjaya, the narrator: 'Where Krishna, the master of yoga, is present, and where Arjuna, the bow-bearer, is present — there is prosperity, victory, glory, and firm justice. This is my conviction.' The verse is a benediction. The book closes not with the war's outcome but with the assurance that, when the wisdom of the Divine and the willingness of the seeker are joined, the right outcome is already secured.
+              The Gita ends with verse 18.78, spoken by Sanjaya, the narrator: 'Where Krishna, the master of yoga, is present, and where Arjuna, the bow-bearer, is present, there is prosperity, victory, glory, and firm justice. This is my conviction.' The verse is a benediction. The book closes not with the war's outcome but with the assurance that, when the wisdom of the Divine and the willingness of the seeker are joined, the right outcome is already secured.
             </div>
           </div>
         </div>
@@ -1449,7 +1451,7 @@ export default function ChapterPage18() {
           <div className="related-grid">
           <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" className="related-card">
             <div className="related-card-label">Topic Guide</div>
-            <div className="related-card-title">All 18 chapters — the full arc</div>
+            <div className="related-card-title">All 18 chapters, the full arc</div>
           </a>
           <a href="/blogs/bhagavad-gita-for-beginners" className="related-card">
             <div className="related-card-label">Topic Guide</div>
@@ -1457,19 +1459,19 @@ export default function ChapterPage18() {
           </a>
           <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
             <div className="related-card-label">Topic Guide</div>
-            <div className="related-card-title">Karma — what it actually means in the Gita</div>
+            <div className="related-card-title">Karma, what it actually means in the Gita</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-17" className="related-card">
             <div className="related-card-label">Chapter 17</div>
-            <div className="related-card-title">Shraddhatraya Vibhaga — You Are What You Trust</div>
+            <div className="related-card-title">Shraddhatraya Vibhaga, You Are What You Trust</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-12" className="related-card">
             <div className="related-card-label">Chapter 12</div>
-            <div className="related-card-title">Bhakti Yoga — How a Devotee Actually Lives</div>
+            <div className="related-card-title">Bhakti Yoga, How a Devotee Actually Lives</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-9" className="related-card">
             <div className="related-card-label">Chapter 9</div>
-            <div className="related-card-title">Raja Vidya Raja Guhya Yoga — The Royal Secret</div>
+            <div className="related-card-title">Raja Vidya Raja Guhya Yoga, The Royal Secret</div>
           </a>
           </div>
         </div>
@@ -1479,7 +1481,7 @@ export default function ChapterPage18() {
             <div className="app-cta-eyebrow">Free iOS App</div>
             <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
             <p className="app-cta-desc">
-              The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+              The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
             </p>
             <div className="app-cta-features">
               <span>✦ Daily shloka in Sanskrit</span>

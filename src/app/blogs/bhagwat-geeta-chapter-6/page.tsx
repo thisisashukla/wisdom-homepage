@@ -3,21 +3,21 @@ import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",
-  description: "Read Bhagavad Gita Chapter 6 (Dhyana Yoga) — all 47 verses on meditation, the restless mind, and the lamp-in-windless-place. Sanskrit, Hindi, English & meaning.",
+  description: "Read Bhagavad Gita Chapter 6 (Dhyana Yoga), all 47 verses on meditation, the restless mind, and the lamp-in-windless-place. Sanskrit, Hindi, English & meaning.",
   keywords: "bhagwat geeta chapter 6, bhagavad gita dhyana yoga, bhagwat geeta adhyay 6, lamp in windless place gita, uddharedatmanatmanam, abhyasa vairagya meaning, gita on meditation, restless mind gita, how to meditate bhagavad gita, Dhyana Yoga summary, Bhagavad Gita 6.5 meaning, Bhagavad Gita 6.34 the mind is like the wind, abhyasa vairagya meaning, lamp in windless place Bhagavad Gita, how to meditate according to Bhagavad Gita",
   openGraph: {
     title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",
-    description: "All 47 verses of Bhagavad Gita Chapter 6 — meditation, the restless mind, and the lamp that does not flicker.",
+    description: "All 47 verses of Bhagavad Gita Chapter 6, meditation, the restless mind, and the lamp that does not flicker.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter6.webp", width: 1200, height: 675, alt: "A yogi seated in meditation at the edge of dawn — the mind, lamp-like, no longer flickers. Chapter 6 of the Bhagavad Gita teaches Dhyana Yoga, the path of meditation." }],
+    images: [{ url: "https://wisdomquotes.in/assets/chapter6.webp", width: 1200, height: 675, alt: "A yogi seated in meditation at the edge of dawn, the mind, lamp-like, no longer flickers. Chapter 6 of the Bhagavad Gita teaches Dhyana Yoga, the path of meditation." }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",
-    description: "All 47 verses of Bhagavad Gita Chapter 6 — meditation, the restless mind, and the lamp that does not flicker.",
+    description: "All 47 verses of Bhagavad Gita Chapter 6, meditation, the restless mind, and the lamp that does not flicker.",
     images: ["https://wisdomquotes.in/assets/chapter6.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6" },
@@ -591,11 +591,11 @@ export default function ChapterPage6() {
             <div className="chapter-badge-dot"></div>
           </div>
           <h1 className="article-title">
-            Bhagavad Gita Chapter 6 (Adhyay 6) —<br />
+            Bhagavad Gita Chapter 6 (Adhyay 6):<br />
             <em>Dhyana Yoga</em>
           </h1>
           <p className="article-subtitle">
-            Krishna's most practical chapter—how to train a mind that won't sit still. The lamp in a windless place. The friend and enemy inside you. And the steadiness that no argument, message, or memory can shake.
+            Krishna's most practical chapter, how to train a mind that won't sit still. The lamp in a windless place. The friend and enemy inside you. And the steadiness that no argument, message, or memory can shake.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -605,6 +605,8 @@ export default function ChapterPage6() {
             <span className="meta-item">~14 min read</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 6 of 18</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -615,7 +617,7 @@ export default function ChapterPage6() {
           <figure className="chapter-image">
             <img
               src="/assets/chapter6.webp"
-              alt="A yogi seated in meditation at the edge of dawn — the mind, lamp-like, no longer flickers. Chapter 6 of the Bhagavad Gita teaches Dhyana Yoga, the path of meditation."
+              alt="A yogi seated in meditation at the edge of dawn, the mind, lamp-like, no longer flickers. Chapter 6 of the Bhagavad Gita teaches Dhyana Yoga, the path of meditation."
               width="1200"
               height="675"
               loading="eager"
@@ -623,7 +625,7 @@ export default function ChapterPage6() {
           </figure>
 
         <p className="lead">
-          By Chapter 6, the Gita stops talking about meditation in the abstract and starts giving instructions. Where to sit. How to sit. What to eat. What to do when the mind, on cue, refuses to cooperate. This is the most practical chapter in the Gita, and it is the one most often skipped by people who want the philosophy without the seat. That is a mistake. Chapter 6 is where Krishna meets you exactly where most attempts at the inner life actually break — at the part where you try to be still, and you can't.
+          By Chapter 6, the Gita stops talking about meditation in the abstract and starts giving instructions. Where to sit. How to sit. What to eat. What to do when the mind, on cue, refuses to cooperate. This is the most practical chapter in the Gita, and it is the one most often skipped by people who want the philosophy without the seat. That is a mistake. Chapter 6 is where Krishna meets you exactly where most attempts at the inner life actually break, at the part where you try to be still, and you can't.
         </p>
 
         <p>
@@ -633,14 +635,14 @@ export default function ChapterPage6() {
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
-            <li><a href="#lift-yourself">Lift yourself by yourself — 6.5</a></li>
+            <li><a href="#lift-yourself">Lift yourself by yourself, 6.5</a></li>
             <li><a href="#friend-enemy">The friend and the enemy are the same person</a></li>
-            <li><a href="#seat-balance">The seat, the food, the sleep — the body matters</a></li>
-            <li><a href="#lamp">The lamp in a windless place — what steadiness looks like</a></li>
+            <li><a href="#seat-balance">The seat, the food, the sleep, the body matters</a></li>
+            <li><a href="#lamp">The lamp in a windless place, what steadiness looks like</a></li>
             <li><a href="#wandering-mind">The wandering mind and the practice of return</a></li>
-            <li><a href="#arjuna-objects">Arjuna interrupts — "the mind is like the wind"</a></li>
-            <li><a href="#nothing-lost">Nothing sincere is ever wasted — 6.40 to 6.45</a></li>
-            <li><a href="#highest-yogi">The chapter's final word — trust</a></li>
+            <li><a href="#arjuna-objects">Arjuna interrupts, "the mind is like the wind"</a></li>
+            <li><a href="#nothing-lost">Nothing sincere is ever wasted, 6.40 to 6.45</a></li>
+            <li><a href="#highest-yogi">The chapter's final word, trust</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
             <li><a href="#related-reading">Related reading</a></li>
@@ -656,14 +658,14 @@ export default function ChapterPage6() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="lift-yourself">Lift Yourself By Yourself — The Most Honest Verse in the Gita</h2>
+        <h2 id="lift-yourself">Lift Yourself By Yourself, The Most Honest Verse in the Gita</h2>
 
         <p>
-          Chapter 6 opens by clarifying what renunciation actually means — and then, in verse 5, Krishna says something that has no equivalent in any other scripture. The exact translation is blunt: lift yourself, by yourself; do not let yourself fall. The same self that can carry you upward is the only thing that can also drag you down. There is no external rescuer in this verse. There is just you, and the part of you that decides whether to rise.
+          Chapter 6 opens by clarifying what renunciation actually means, and then, in verse 5, Krishna says something that has no equivalent in any other scripture. The exact translation is blunt: lift yourself, by yourself; do not let yourself fall. The same self that can carry you upward is the only thing that can also drag you down. There is no external rescuer in this verse. There is just you, and the part of you that decides whether to rise.
         </p>
 
         <p>
-          Most spiritual teaching softens this point. The Gita does not. It puts the responsibility back in your hands at the very moment you would most like to outsource it — the moment when you are tired, ashamed, or stuck. The Gita's view is unsentimental: nobody else can do the lifting. But also — and this is the same verse — nobody else needs to. You already contain what is required.
+          Most spiritual teaching softens this point. The Gita does not. It puts the responsibility back in your hands at the very moment you would most like to outsource it, the moment when you are tired, ashamed, or stuck. The Gita's view is unsentimental: nobody else can do the lifting. But also, and this is the same verse, nobody else needs to. You already contain what is required.
         </p>
 
         <div className="shloka-card">
@@ -717,7 +719,7 @@ export default function ChapterPage6() {
             <div>
               <div className="shloka-col-label">The same instrument, two settings</div>
               <div className="shloka-insight">
-                There is no two-self metaphysics here. There is one mind. When you have trained it, it carries you. When you haven't, it attacks you with your own ammunition — your own memories, your own insecurities, your own loops. The verse is describing a single instrument with two settings.
+                There is no two-self metaphysics here. There is one mind. When you have trained it, it carries you. When you haven't, it attacks you with your own ammunition, your own memories, your own insecurities, your own loops. The verse is describing a single instrument with two settings.
               </div>
             </div>
           </div>
@@ -745,7 +747,7 @@ export default function ChapterPage6() {
         <h2 id="seat-balance">The Body Matters: Seat, Food, Sleep, Breath</h2>
 
         <p>
-          Modern conversations about meditation often skip the body. The Gita doesn't. Verses 6.10 through 6.17 are almost mechanical in their precision — where to sit, how to sit, what to eat, how much to sleep. The text refuses to treat meditation as a purely mental exercise. It treats the body as the instrument, and the instrument has to be in tune.
+          Modern conversations about meditation often skip the body. The Gita doesn't. Verses 6.10 through 6.17 are almost mechanical in their precision, where to sit, how to sit, what to eat, how much to sleep. The text refuses to treat meditation as a purely mental exercise. It treats the body as the instrument, and the instrument has to be in tune.
         </p>
 
         <p>
@@ -773,7 +775,7 @@ export default function ChapterPage6() {
             <div>
               <div className="shloka-col-label">Solitude, not loneliness</div>
               <div className="shloka-insight">
-                The verse asks for <em>rahasi</em> — a private place. Not because meditation requires asceticism, but because the mind, in its early training, cannot handle stimulus. The closed door is not a spiritual achievement. It is a practical concession to a mind that hasn't learned to stay yet.
+                The verse asks for <em>rahasi</em>, a private place. Not because meditation requires asceticism, but because the mind, in its early training, cannot handle stimulus. The closed door is not a spiritual achievement. It is a practical concession to a mind that hasn't learned to stay yet.
               </div>
             </div>
           </div>
@@ -803,7 +805,7 @@ export default function ChapterPage6() {
             <div>
               <div className="shloka-col-label">Balance is non-negotiable</div>
               <div className="shloka-insight">
-                The Gita is rejecting two stereotypes simultaneously — the indulgent person who treats spirituality as decoration on a chaotic life, and the ascetic who tortures the body and calls it discipline. Both fail. The middle path here is not a compromise. It is the only setting where meditation actually works.
+                The Gita is rejecting two stereotypes simultaneously, the indulgent person who treats spirituality as decoration on a chaotic life, and the ascetic who tortures the body and calls it discipline. Both fail. The middle path here is not a compromise. It is the only setting where meditation actually works.
               </div>
             </div>
           </div>
@@ -814,7 +816,7 @@ export default function ChapterPage6() {
 
         <div className="highlight-box">
           <p>
-            <strong>A working translation:</strong> Sleep enough. Eat enough but not too much. Move your body. Don't burn out. Don't crash. Hold the same daily rhythm long enough that your nervous system stops bracing. Then sit down and try to meditate. The Gita is not subtle about this — and it works.
+            <strong>A working translation:</strong> Sleep enough. Eat enough but not too much. Move your body. Don't burn out. Don't crash. Hold the same daily rhythm long enough that your nervous system stops bracing. Then sit down and try to meditate. The Gita is not subtle about this, and it works.
           </p>
         </div>
 
@@ -834,7 +836,7 @@ export default function ChapterPage6() {
         </p>
 
         <p>
-          Most of us do not know what a non-flickering mind feels like, because we have never been in a windless place. We are perpetually in wind — notifications, conversations, planning, replaying. The Gita does not ask you to suppress the wind. It asks you to find — and build — the windless room. Because in that room, you discover that the lamp was always burning. You were just too gusted to notice.
+          Most of us do not know what a non-flickering mind feels like, because we have never been in a windless place. We are perpetually in wind, notifications, conversations, planning, replaying. The Gita does not ask you to suppress the wind. It asks you to find, and build, the windless room. Because in that room, you discover that the lamp was always burning. You were just too gusted to notice.
         </p>
 
         <div className="shloka-card">
@@ -852,13 +854,13 @@ export default function ChapterPage6() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                As a lamp in a windless place does not flicker — that is the comparison given for the disciplined mind of a yogi united in meditation.
+                As a lamp in a windless place does not flicker, that is the comparison given for the disciplined mind of a yogi united in meditation.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The image is the teaching</div>
               <div className="shloka-insight">
-                The Gita gives many definitions of meditation, but this is the only one you can actually picture. And once you picture it, you know the difference between a flickering mind and a steady one — because you've experienced both, even if you didn't have language for either.
+                The Gita gives many definitions of meditation, but this is the only one you can actually picture. And once you picture it, you know the difference between a flickering mind and a steady one, because you've experienced both, even if you didn't have language for either.
               </div>
             </div>
           </div>
@@ -869,7 +871,7 @@ export default function ChapterPage6() {
 
         <div className="pull-quote">
           <blockquote>
-            "As a lamp in a windless place does not flicker — that is the comparison for the mind that has come home."
+            "As a lamp in a windless place does not flicker, that is the comparison for the mind that has come home."
           </blockquote>
           <cite>Bhagavad Gita 6.19</cite>
         </div>
@@ -886,11 +888,11 @@ export default function ChapterPage6() {
         <h2 id="wandering-mind">The Wandering Mind and the Only Technique That Works</h2>
 
         <p>
-          Verse 6.26 is the most useful verse in the chapter, and possibly in the whole book, for anyone who has ever sat down to meditate and failed. The verse is exact about what to do. When the mind wanders — and it will — bring it back. That's it. Not punish it. Not analyze why it wandered. Bring it back. Again. And again.
+          Verse 6.26 is the most useful verse in the chapter, and possibly in the whole book, for anyone who has ever sat down to meditate and failed. The verse is exact about what to do. When the mind wanders, and it will, bring it back. That's it. Not punish it. Not analyze why it wandered. Bring it back. Again. And again.
         </p>
 
         <p>
-          This is the entire practice. Every meditation tradition in the world, secular or religious, eventually says the same thing. The Gita just said it earlier, and clearer, than most. The verse contains a quiet warning too — implicit but unmistakable. If you treat the wandering as failure, you will quit. If you treat the return as the practice itself, you will keep going. The wandering isn't the problem. The drama about the wandering is the problem.
+          This is the entire practice. Every meditation tradition in the world, secular or religious, eventually says the same thing. The Gita just said it earlier, and clearer, than most. The verse contains a quiet warning too, implicit but unmistakable. If you treat the wandering as failure, you will quit. If you treat the return as the practice itself, you will keep going. The wandering isn't the problem. The drama about the wandering is the problem.
         </p>
 
         <div className="shloka-card">
@@ -914,7 +916,7 @@ export default function ChapterPage6() {
             <div>
               <div className="shloka-col-label">The word that matters</div>
               <div className="shloka-insight">
-                <em>Śanaiḥ śanaiḥ</em> — gradually, gradually. The doubling is intentional. You do not break through to a still mind. You inch toward it. People quit meditation because they expect transformation in a week. The Gita is telling you, in the verse before the famous one, that the timeline is much longer and the steps are much smaller than you think.
+                <em>Śanaiḥ śanaiḥ</em>, gradually, gradually. The doubling is intentional. You do not break through to a still mind. You inch toward it. People quit meditation because they expect transformation in a week. The Gita is telling you, in the verse before the famous one, that the timeline is much longer and the steps are much smaller than you think.
               </div>
             </div>
           </div>
@@ -968,14 +970,14 @@ export default function ChapterPage6() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="arjuna-objects">"The Mind Is Like the Wind" — When Arjuna Pushes Back</h2>
+        <h2 id="arjuna-objects">"The Mind Is Like the Wind", When Arjuna Pushes Back</h2>
 
         <p>
           Halfway through the chapter, Arjuna interrupts. He has heard the whole teaching, and he says something most students think but rarely admit out loud: this is impossible. The mind is restless. Trying to hold it is like trying to hold the wind. Anyone who has tried to meditate has felt this. The Gita does not pretend otherwise.
         </p>
 
         <p>
-          What's remarkable is Krishna's response. He doesn't insist Arjuna is wrong. He agrees. Yes, the mind is hard to control. <em>Asaṃśayam</em> — without a doubt. And then he gives the formula that contains every working method of inner transformation: <em>abhyāsa</em> and <em>vairāgya</em>. Practice and detachment. Repetition and not-grasping. That's it. That's the whole technology.
+          What's remarkable is Krishna's response. He doesn't insist Arjuna is wrong. He agrees. Yes, the mind is hard to control. <em>Asaṃśayam</em>, without a doubt. And then he gives the formula that contains every working method of inner transformation: <em>abhyāsa</em> and <em>vairāgya</em>. Practice and detachment. Repetition and not-grasping. That's it. That's the whole technology.
         </p>
 
         <div className="shloka-card">
@@ -999,7 +1001,7 @@ export default function ChapterPage6() {
             <div>
               <div className="shloka-col-label">The first honest student</div>
               <div className="shloka-insight">
-                This is one of the most important verses in the Gita because it gives every reader permission to say the same thing. The mind is hard. You are not failing in some unique way. Even Arjuna — chosen, trained, with the divine teacher in front of him — says, this is too hard. The Gita rewards that honesty with the chapter's most practical verse.
+                This is one of the most important verses in the Gita because it gives every reader permission to say the same thing. The mind is hard. You are not failing in some unique way. Even Arjuna, chosen, trained, with the divine teacher in front of him, says, this is too hard. The Gita rewards that honesty with the chapter's most practical verse.
               </div>
             </div>
           </div>
@@ -1029,7 +1031,7 @@ export default function ChapterPage6() {
             <div>
               <div className="shloka-col-label">The two-word answer</div>
               <div className="shloka-insight">
-                <em>Abhyāsa</em> is practice — showing up, repeatedly, without needing a result today. <em>Vairāgya</em> is detachment — not gripping the outcome, not making each sitting carry the weight of your entire spiritual life. The two work together. Without practice, detachment becomes apathy. Without detachment, practice becomes performance. Together, they are the only thing that works.
+                <em>Abhyāsa</em> is practice, showing up, repeatedly, without needing a result today. <em>Vairāgya</em> is detachment, not gripping the outcome, not making each sitting carry the weight of your entire spiritual life. The two work together. Without practice, detachment becomes apathy. Without detachment, practice becomes performance. Together, they are the only thing that works.
               </div>
             </div>
           </div>
@@ -1040,7 +1042,7 @@ export default function ChapterPage6() {
 
         <div className="pull-quote">
           <blockquote>
-            "The mind is hard to control. But by practice and by letting go — by that, it is held."
+            "The mind is hard to control. But by practice and by letting go, by that, it is held."
           </blockquote>
           <cite>Bhagavad Gita 6.35</cite>
         </div>
@@ -1061,7 +1063,7 @@ export default function ChapterPage6() {
         </p>
 
         <p>
-          He says — no good effort is ever wasted. The one who tries and falls is not destroyed. The practice carries forward, into the next chapter of life, into the next attempt. The Gita refuses to treat sincere effort as a transaction with a deadline. It treats it as a current. Once you've stepped in, you are already moving downstream. Even if you stumble out, the current does not forget you.
+          He says, no good effort is ever wasted. The one who tries and falls is not destroyed. The practice carries forward, into the next chapter of life, into the next attempt. The Gita refuses to treat sincere effort as a transaction with a deadline. It treats it as a current. Once you've stepped in, you are already moving downstream. Even if you stumble out, the current does not forget you.
         </p>
 
         <div className="shloka-card">
@@ -1079,13 +1081,13 @@ export default function ChapterPage6() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                The Blessed One said: O Partha, there is no destruction for such a person — neither in this world, nor in the next. No one who does good ever comes to a bad end, my dear.
+                The Blessed One said: O Partha, there is no destruction for such a person, neither in this world, nor in the next. No one who does good ever comes to a bad end, my dear.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The line that matters</div>
               <div className="shloka-insight">
-                <em>Na hi kalyāṇakṛt kaścid durgatiṃ tāta gacchati</em> — no one who does good comes to a bad end. This is not naive optimism. It is a structural claim about how moral effort accumulates. The Gita is saying: the universe is not indifferent to your trying. Your sincere effort is registered, conserved, and carried forward. Even when you feel like nothing is working.
+                <em>Na hi kalyāṇakṛt kaścid durgatiṃ tāta gacchati</em>, no one who does good comes to a bad end. This is not naive optimism. It is a structural claim about how moral effort accumulates. The Gita is saying: the universe is not indifferent to your trying. Your sincere effort is registered, conserved, and carried forward. Even when you feel like nothing is working.
               </div>
             </div>
           </div>
@@ -1142,7 +1144,7 @@ export default function ChapterPage6() {
         <h2 id="highest-yogi">The Chapter's Surprising Final Word: Trust</h2>
 
         <p>
-          After 46 verses on meditation, posture, breath, balance, and discipline, the chapter ends somewhere unexpected. Krishna says the highest yogi is not the one with the steadiest seat or the longest practice. It is the one whose inner self rests in him, in trust, with love. Bhakti — devotion — quietly takes the crown that one would have expected to go to discipline.
+          After 46 verses on meditation, posture, breath, balance, and discipline, the chapter ends somewhere unexpected. Krishna says the highest yogi is not the one with the steadiest seat or the longest practice. It is the one whose inner self rests in him, in trust, with love. Bhakti, devotion, quietly takes the crown that one would have expected to go to discipline.
         </p>
 
         <p>
@@ -1164,13 +1166,13 @@ export default function ChapterPage6() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Among all yogis, the one whose inner self has come to rest in me, who worships me with trust — that one I consider the most fully integrated.
+                Among all yogis, the one whose inner self has come to rest in me, who worships me with trust, that one I consider the most fully integrated.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">What "trust" does here</div>
               <div className="shloka-insight">
-                The Sanskrit word is <em>śraddhā</em> — not blind belief, but the trust that allows you to actually put weight on something. The yogi who has been practicing alone, controlling the breath, eating moderately — that yogi is real. But Krishna says the deepest integration happens when, after all the technique, you simply trust. The lamp does not flicker because the wind has stopped, but because the lamp has finally rested where it belongs.
+                The Sanskrit word is <em>śraddhā</em>, not blind belief, but the trust that allows you to actually put weight on something. The yogi who has been practicing alone, controlling the breath, eating moderately, that yogi is real. But Krishna says the deepest integration happens when, after all the technique, you simply trust. The lamp does not flicker because the wind has stopped, but because the lamp has finally rested where it belongs.
               </div>
             </div>
           </div>
@@ -1181,7 +1183,7 @@ export default function ChapterPage6() {
 
         <div className="pull-quote">
           <blockquote>
-            "Among all yogis, the one whose inner self rests in me, with trust — that one is the most fully united."
+            "Among all yogis, the one whose inner self rests in me, with trust, that one is the most fully united."
           </blockquote>
           <cite>Bhagavad Gita 6.47</cite>
         </div>
@@ -1255,11 +1257,11 @@ export default function ChapterPage6() {
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous</div>
-            <a href="/blogs/bhagwat-geeta-chapter-5" className="ch-nav-title">Chapter 5 — Karma Sanyasa Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-5" className="ch-nav-title">Chapter 5, Karma Sanyasa Yoga</a>
           </div>
           <div style={{ textAlign: 'right' }}>
             <div className="ch-nav-label">Next</div>
-            <a href="/blogs/bhagwat-geeta-chapter-7" className="ch-nav-title">Chapter 7 — Jnana Vijnana Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-7" className="ch-nav-title">Chapter 7, Jnana Vijnana Yoga</a>
           </div>
         </div>
 
@@ -1280,37 +1282,37 @@ export default function ChapterPage6() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 6 about?</div>
             <div className="faq-a">
-              Chapter 6, called Dhyana Yoga (the Yoga of Meditation), is the Gita's most practical chapter on inner discipline. Across 47 verses, Krishna teaches Arjuna how to actually meditate — where to sit, what to eat, what to do when the mind wanders, and how to deal with the inevitable feeling that the practice is too hard. It contains the famous lamp-in-windless-place metaphor (6.19), Arjuna's honest objection that the mind is like the wind (6.34), and Krishna's reply that practice and detachment (abhyāsa and vairāgya) are the only working tools.
+              Chapter 6, called Dhyana Yoga (the Yoga of Meditation), is the Gita's most practical chapter on inner discipline. Across 47 verses, Krishna teaches Arjuna how to actually meditate, where to sit, what to eat, what to do when the mind wanders, and how to deal with the inevitable feeling that the practice is too hard. It contains the famous lamp-in-windless-place metaphor (6.19), Arjuna's honest objection that the mind is like the wind (6.34), and Krishna's reply that practice and detachment (abhyāsa and vairāgya) are the only working tools.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 6.5 mean?</div>
             <div className="faq-a">
-              Verse 6.5 says, 'Lift yourself by yourself; do not let yourself fall. The self alone is the friend of the self, and the self alone is its enemy.' It is one of the most personally challenging verses in the Gita because it refuses to outsource the work of self-mastery. The same self that can elevate you is the only thing that can drag you down. There is no external rescuer in this verse — and also no external blocker.
+              Verse 6.5 says, 'Lift yourself by yourself; do not let yourself fall. The self alone is the friend of the self, and the self alone is its enemy.' It is one of the most personally challenging verses in the Gita because it refuses to outsource the work of self-mastery. The same self that can elevate you is the only thing that can drag you down. There is no external rescuer in this verse, and also no external blocker.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the lamp in a windless place metaphor?</div>
             <div className="faq-a">
-              Found in verse 6.19, this is one of the Gita's most quoted images. Krishna compares the disciplined mind of a yogi to a lamp placed where no wind blows — it does not flicker. The metaphor describes the felt experience of a steady mind: not a forced suppression of thought, but the natural stillness that arises when the conditions that cause flickering are removed.
+              Found in verse 6.19, this is one of the Gita's most quoted images. Krishna compares the disciplined mind of a yogi to a lamp placed where no wind blows, it does not flicker. The metaphor describes the felt experience of a steady mind: not a forced suppression of thought, but the natural stillness that arises when the conditions that cause flickering are removed.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What did Arjuna object to in Chapter 6?</div>
             <div className="faq-a">
-              In verses 6.33 and 6.34, Arjuna interrupts Krishna and says the teaching is impractical — the mind is too restless, like the wind. He gives every reader permission to admit the same thing. Krishna's response in 6.35 is one of the most important verses in the Gita: yes, the mind is hard to control, but it is held by abhyāsa (practice) and vairāgya (detachment). Repeated practice without attachment to the result is the only method that has ever worked.
+              In verses 6.33 and 6.34, Arjuna interrupts Krishna and says the teaching is impractical, the mind is too restless, like the wind. He gives every reader permission to admit the same thing. Krishna's response in 6.35 is one of the most important verses in the Gita: yes, the mind is hard to control, but it is held by abhyāsa (practice) and vairāgya (detachment). Repeated practice without attachment to the result is the only method that has ever worked.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What happens if you fail at yoga according to Chapter 6?</div>
             <div className="faq-a">
-              Verses 6.40 through 6.45 are the Gita's most reassuring passage on incomplete spiritual effort. Krishna tells Arjuna that no one who has done sincere good is ever destroyed. A person who falls from the path of yoga is not lost — they return to it, either in this life or the next, picking up where they left off. The Gita treats sincere effort as cumulative: nothing you put in is wasted.
+              Verses 6.40 through 6.45 are the Gita's most reassuring passage on incomplete spiritual effort. Krishna tells Arjuna that no one who has done sincere good is ever destroyed. A person who falls from the path of yoga is not lost, they return to it, either in this life or the next, picking up where they left off. The Gita treats sincere effort as cumulative: nothing you put in is wasted.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Is meditation in the Bhagavad Gita similar to modern mindfulness?</div>
             <div className="faq-a">
-              There is real overlap. Modern mindfulness practices — noticing when the mind wanders, returning attention without judgement, building gradual stability — are exactly what verse 6.26 describes. But the Gita's framing is wider: meditation is not just stress-reduction, it is the training of the entire self toward a stable, equal-visioned, devotionally-anchored way of being. Verse 6.47 makes clear that the deepest yoga is not technique alone but trust.
+              There is real overlap. Modern mindfulness practices, noticing when the mind wanders, returning attention without judgement, building gradual stability, are exactly what verse 6.26 describes. But the Gita's framing is wider: meditation is not just stress-reduction, it is the training of the entire self toward a stable, equal-visioned, devotionally-anchored way of being. Verse 6.47 makes clear that the deepest yoga is not technique alone but trust.
             </div>
           </div>
         </div>
@@ -1325,19 +1327,19 @@ export default function ChapterPage6() {
           </a>
           <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
             <div className="related-card-label">Topic Guide</div>
-            <div className="related-card-title">Karma — what it actually means in the Gita</div>
+            <div className="related-card-title">Karma, what it actually means in the Gita</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-5" className="related-card">
             <div className="related-card-label">Chapter 5</div>
-            <div className="related-card-title">Karma Sanyasa Yoga — Acting Without Being Touched</div>
+            <div className="related-card-title">Karma Sanyasa Yoga, Acting Without Being Touched</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-12" className="related-card">
             <div className="related-card-label">Chapter 12</div>
-            <div className="related-card-title">Bhakti Yoga — How a Devotee Actually Lives</div>
+            <div className="related-card-title">Bhakti Yoga, How a Devotee Actually Lives</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-14" className="related-card">
             <div className="related-card-label">Chapter 14</div>
-            <div className="related-card-title">Gunatraya Vibhaga — The Three Forces</div>
+            <div className="related-card-title">Gunatraya Vibhaga, The Three Forces</div>
           </a>
           </div>
         </div>
@@ -1347,7 +1349,7 @@ export default function ChapterPage6() {
             <div className="app-cta-eyebrow">Free iOS App</div>
             <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
             <p className="app-cta-desc">
-              The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+              The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
             </p>
             <div className="app-cta-features">
               <span>✦ Daily shloka in Sanskrit</span>

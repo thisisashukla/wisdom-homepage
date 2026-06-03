@@ -549,6 +549,8 @@ export default function ForBeginnersPage() {
           <span className="meta-item">~10 min read</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">Start here</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -588,13 +590,13 @@ export default function ForBeginnersPage() {
             The Gita is organized into 18 chapters, each with its own focus. Here is a brief overview so you know what to expect.
         </p>
         <p>
-            Chapters 1 and 2 set the stage. Chapter 1 is entirely devoted to Arjuna's crisis — his physical and mental breakdown, his questions, his despair. Chapter 2 is where the philosophical teaching begins. Krishna introduces the foundational ideas: the eternal nature of the soul, the nature of action and inaction, the concept of equanimity, and the beginning of the teaching on karma and dharma.
+            Chapters 1 and 2 set the stage. Chapter 1 is entirely devoted to Arjuna's crisis, his physical and mental breakdown, his questions, his despair. Chapter 2 is where the philosophical teaching begins. Krishna introduces the foundational ideas: the eternal nature of the soul, the nature of action and inaction, the concept of equanimity, and the beginning of the teaching on karma and dharma.
         </p>
         <p>
-            Chapters 3 through 6 explore the practical paths. Chapter 3 is devoted to Karma Yoga — the yoga of action. Chapter 4 introduces the concept of wisdom (jnana). Chapter 5 continues the teaching on action. Chapter 6 focuses on meditation and the discipline of the mind.
+            Chapters 3 through 6 explore the practical paths. Chapter 3 is devoted to Karma Yoga, the yoga of action. Chapter 4 introduces the concept of wisdom (jnana). Chapter 5 continues the teaching on action. Chapter 6 focuses on meditation and the discipline of the mind.
         </p>
         <p>
-            Chapters 7 through 12 go deeper into knowledge and devotion. Chapter 7 discusses the nature of the Supreme. Chapters 8 through 12 develop the concept of bhakti — devotion — and the different ways to approach the divine.
+            Chapters 7 through 12 go deeper into knowledge and devotion. Chapter 7 discusses the nature of the Supreme. Chapters 8 through 12 develop the concept of bhakti, devotion, and the different ways to approach the divine.
         </p>
         <p>
             Chapters 13 through 18 are the most metaphysical. They explore the nature of consciousness, the three qualities (gunas), and culminate in Krishna's final teaching about surrendering all duty to the divine.
@@ -608,10 +610,10 @@ export default function ForBeginnersPage() {
             Many people skip Chapter 1. They think it's just the setup and want to get to the philosophy. Don't do this. Chapter 1 is essential.
         </p>
         <p>
-            In Chapter 1, you meet Arjuna. You experience his crisis. You read his exact words: his fear, his shame, his sense of paralysis. You understand the emotional and human stakes of what is about to be taught. This makes everything that follows land with force. The philosophy in Chapter 2 is not abstract knowledge — it is Krishna's direct response to a man in breakdown.
+            In Chapter 1, you meet Arjuna. You experience his crisis. You read his exact words: his fear, his shame, his sense of paralysis. You understand the emotional and human stakes of what is about to be taught. This makes everything that follows land with force. The philosophy in Chapter 2 is not abstract knowledge, it is Krishna's direct response to a man in breakdown.
         </p>
         <p>
-            Then read Chapter 2. This is where the core teachings begin. Here you encounter ideas like the eternal soul, the difference between action and inaction, the concept of equanimity, and the beginning of karma yoga. Verse 2.47 — "You have a right to perform your duties, but not to the fruits" — appears here. This single verse contains the foundation of the entire Gita's ethics.
+            Then read Chapter 2. This is where the core teachings begin. Here you encounter ideas like the eternal soul, the difference between action and inaction, the concept of equanimity, and the beginning of karma yoga. Verse 2.47, "You have a right to perform your duties, but not to the fruits", appears here. This single verse contains the foundation of the entire Gita's ethics.
         </p>
 
         <h2>Which Translation Should You Choose?</h2>
@@ -631,7 +633,7 @@ export default function ForBeginnersPage() {
             The Living Bhagavad Gita: A Comprehensive Presentation for Modern Times, by Sri Swami Satchidananda, takes an ecumenical approach and relates the teachings to modern life. It is accessible and thoughtful.
         </p>
         <p className="pull-quote">
-            Alternatively, read one verse a day on the Wisdom app. You get the Sanskrit, the transliteration, the meaning, and the context — all in under a minute. This slower approach, spread over a year, allows each verse to do its work on you.
+            Alternatively, read one verse a day on the Wisdom app. You get the Sanskrit, the transliteration, the meaning, and the context, all in under a minute. This slower approach, spread over a year, allows each verse to do its work on you.
         </p>
 
         <h2>Five Landmark Verses to Read Today</h2>
@@ -647,7 +649,7 @@ export default function ForBeginnersPage() {
 māmakāḥ pāṇḍavāś caiva kim akurvata sañjaya ||</div>
             <div className="meaning">
                 <div className="meaning-label">Translation</div>
-                <div className="meaning-text">On the field of dharma, at Kurukshetra, gathering to fight — what did my people do, and what did the Pandavas do, O Sanjaya?</div>
+                <div className="meaning-text">On the field of dharma, at Kurukshetra, gathering to fight, what did my people do, and what did the Pandavas do, O Sanjaya?</div>
             </div>
             <div className="essence">The opening verse. The stage is set. Everything begins here.</div>
         </div>
@@ -716,14 +718,14 @@ svabhāvaniyataṃ karma kurvann āpnoti kilbiṣam ||</div>
         <div className="faq-item">
             <strong>How do I start reading the Bhagavad Gita?</strong>
             <p>
-                Start from the beginning — Chapter 1. Don't skip to the famous verses. Chapter 1 establishes the human and emotional situation (Arjuna's crisis) that makes all of Krishna's teachings necessary and meaningful. Without that context, the philosophy feels abstract. After Chapter 1, read Chapter 2 where the core teachings begin.
+                Start from the beginning, Chapter 1. Don't skip to the famous verses. Chapter 1 establishes the human and emotional situation (Arjuna's crisis) that makes all of Krishna's teachings necessary and meaningful. Without that context, the philosophy feels abstract. After Chapter 1, read Chapter 2 where the core teachings begin.
             </p>
         </div>
 
         <div className="faq-item">
             <strong>Which Bhagavad Gita translation is best for beginners?</strong>
             <p>
-                For accessibility: Eknath Easwaran's translation is widely considered the most readable in English. For thorough traditional commentary: Bhagavad Gita As It Is by A.C. Bhaktivedanta Swami Prabhupada. For scholarly but beautiful writing: Barbara Stoler Miller's translation. Or, read one verse per day on the Wisdom app — Sanskrit, transliteration, meaning, and context all in under a minute.
+                For accessibility: Eknath Easwaran's translation is widely considered the most readable in English. For thorough traditional commentary: Bhagavad Gita As It Is by A.C. Bhaktivedanta Swami Prabhupada. For scholarly but beautiful writing: Barbara Stoler Miller's translation. Or, read one verse per day on the Wisdom app, Sanskrit, transliteration, meaning, and context all in under a minute.
             </p>
         </div>
 
@@ -751,7 +753,7 @@ svabhāvaniyataṃ karma kurvann āpnoti kilbiṣam ||</div>
         <div className="faq-item">
             <strong>Is the Bhagavad Gita suitable for complete beginners with no spiritual background?</strong>
             <p>
-                Yes. The Gita doesn't require prior knowledge of Hinduism or spirituality. It does require patience and willingness to sit with ideas that may be new. The first reading is often the hardest — you are encountering unfamiliar concepts and language. But the basic thrust is clear: a man in crisis is being offered a way to understand his situation differently. That is relatable to anyone.
+                Yes. The Gita doesn't require prior knowledge of Hinduism or spirituality. It does require patience and willingness to sit with ideas that may be new. The first reading is often the hardest, you are encountering unfamiliar concepts and language. But the basic thrust is clear: a man in crisis is being offered a way to understand his situation differently. That is relatable to anyone.
             </p>
         </div>
     </div>
@@ -761,7 +763,7 @@ svabhāvaniyataṃ karma kurvann āpnoti kilbiṣam ||</div>
         <div className="app-cta-eyebrow">Free iOS App</div>
         <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
         <p className="app-cta-desc">
-            The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+            The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
         </p>
         <div className="app-cta-features">
             <span>✦ Daily shloka in Sanskrit</span>

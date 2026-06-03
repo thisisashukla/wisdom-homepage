@@ -552,7 +552,7 @@ export default function AnxietyMentalPeacePage() {
           <em>Someone Having a Breakdown</em>
         </h1>
         <p className="article-subtitle">
-          Chapter 1 opens with the world&apos;s most famous panic attack. The Gita&apos;s teaching on anxiety isn&apos;t &ldquo;calm down&rdquo; — it&apos;s a complete diagnosis of how the spiral begins and where to interrupt it.
+          Chapter 1 opens with the world&apos;s most famous panic attack. The Gita&apos;s teaching on anxiety isn&apos;t &ldquo;calm down.&rdquo; It&apos;s a complete diagnosis of how the spiral begins and where to interrupt it.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -562,6 +562,8 @@ export default function AnxietyMentalPeacePage() {
           <span className="meta-item">~6 min read</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapters 1, 2 & 5</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -576,14 +578,14 @@ export default function AnxietyMentalPeacePage() {
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>Krishna takes Arjuna&apos;s trembling hands — the moment the Gita begins.</figcaption>
+          <figcaption>Krishna takes Arjuna&apos;s trembling hands: the moment the Gita begins.</figcaption>
         </figure>
         <p className="lead">
-            Most people approach the Bhagavad Gita as spiritual wisdom — timeless, distant, comforting in a philosophical sort of way. But that&apos;s not what the Gita is. The Gita is a crisis management manual for someone in the middle of what we would now call a panic attack. Chapter 1 opens with a detailed clinical description of exactly that: shaking limbs, dry mouth, trembling bow, mind spinning, fear flooding the body. The Gita&apos;s entire philosophical apparatus was designed from the ground up to answer a man in that state. This is not metaphor. This is the foundation of the text.
+            Most people approach the Bhagavad Gita as spiritual wisdom, timeless, distant, comforting in a philosophical sort of way. But that&apos;s not what the Gita is. The Gita is a crisis management manual for someone in the middle of what we would now call a panic attack. Chapter 1 opens with a detailed clinical description of exactly that: shaking limbs, dry mouth, trembling bow, mind spinning, fear flooding the body. The Gita&apos;s entire philosophical apparatus was designed from the ground up to answer a man in that state. This is not metaphor. This is the foundation of the text.
         </p>
         <h2>What Arjuna's Breakdown Looks Like</h2>
         <p>
-            When you read the opening chapter of the Bhagavad Gita — the Vishada Yoga, the "yoga of despair" — you are reading a 2,500-year-old description of an anxiety attack so precise it could serve as a clinical checklist today. Arjuna is standing on the battlefield of Kurukshetra, about to fight his own cousins in what will be the greatest war of the age. And something breaks in him.
+            When you read the opening chapter of the Bhagavad Gita, the Vishada Yoga, the "yoga of despair", you are reading a 2,500-year-old description of an anxiety attack so precise it could serve as a clinical checklist today. Arjuna is standing on the battlefield of Kurukshetra, about to fight his own cousins in what will be the greatest war of the age. And something breaks in him.
         </p>
         <p>
             His words tumble out: "My limbs fail me, my mouth goes dry, my skin trembles, my hair stands on end, my bow slips from my hand, and my very mind seems to recoil." He tells Krishna that the thought of killing his own relatives makes him feel physically sick. He cannot do this. He will not do this. He would rather flee than stay.
@@ -618,7 +620,7 @@ smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||</div>
                 <div className="insight-label">What This Teaches</div>
                 <div className="insight-text">This is the Gita's cascade model of psychological collapse. Notice where it starts: not with an external event, not with the feeling of fear, but with what the mind dwells on. You dwell on something. Dwelling creates attachment. Attachment creates the need for a particular outcome (desire). When the outcome doesn't match what you want, you become angry. Anger clouds judgment. Loss of judgment means loss of sense. The spiral spirals. But here is the critical insight: the entry point is earlier than you think. You cannot always control your fear response in the moment. But you can control what you allow your mind to dwell on. That's the interruption point.</div>
             </div>
-            <div className="essence">Guard what you dwell on — the anxiety cascade begins at thought, not at feeling.</div>
+            <div className="essence">Guard what you dwell on: the anxiety cascade begins at thought, not at feeling.</div>
         </div>
 
         <p>
@@ -638,13 +640,13 @@ smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||</div>
 āgamāpāyino'nityāstāṃstitikṣasva bhārata ||</div>
             <div className="meaning">
                 <div className="meaning-label">Translation</div>
-                <div className="meaning-text">Sense contacts give rise to cold and heat, pleasure and pain. They come and go, O Arjuna — they are impermanent. Bear them patiently.</div>
+                <div className="meaning-text">Sense contacts give rise to cold and heat, pleasure and pain. They come and go, O Arjuna, they are impermanent. Bear them patiently.</div>
             </div>
             <div className="insight">
                 <div className="insight-label">What This Teaches</div>
-                <div className="insight-text">The verse doesn't promise that pain won't come. It doesn't say positive thinking will erase difficulty. It says: sense experiences bring both pleasure and pain, and they are temporary. You will feel things you don't want to feel. The work is not to suppress them or argue with them, but to bear them with the recognition that they will pass. The word used is titiksha — often translated as patience, but more precisely, it means endurance. Not passivity. Not resignation. Active bearing.</div>
+                <div className="insight-text">The verse doesn't promise that pain won't come. It doesn't say positive thinking will erase difficulty. It says: sense experiences bring both pleasure and pain, and they are temporary. You will feel things you don't want to feel. The work is not to suppress them or argue with them, but to bear them with the recognition that they will pass. The word used is titiksha, often translated as patience, but more precisely, it means endurance. Not passivity. Not resignation. Active bearing.</div>
             </div>
-            <div className="essence">Endure life's changing experiences with patience — they are temporary.</div>
+            <div className="essence">Endure life&apos;s changing experiences with patience. They are temporary.</div>
         </div>
 
         <p>
@@ -671,13 +673,13 @@ smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||</div>
 vītarāgabhayakrodhaḥ sthitadhīrmunirucyate ||</div>
             <div className="meaning">
                 <div className="meaning-label">Translation</div>
-                <div className="meaning-text">One whose mind is not disturbed by suffering, who does not crave for pleasure, and who is free from attachment, fear, and anger — such a person is called a sage of steady mind.</div>
+                <div className="meaning-text">One whose mind is not disturbed by suffering, who does not crave for pleasure, and who is free from attachment, fear, and anger, such a person is called a sage of steady mind.</div>
             </div>
             <div className="insight">
                 <div className="insight-label">What This Teaches</div>
-                <div className="insight-text">This verse contains three characteristics of the steadfast person: unshaken in suffering (which doesn't mean numb — it means present with it without panic), not desperately craving pleasure (which doesn't mean joyless — it means not grasping), and free from attachment/fear/anger. This is the Gita's portrait of genuine mental health. Not the absence of difficulty. The presence of steadiness in the face of it.</div>
+                <div className="insight-text">This verse contains three characteristics of the steadfast person: unshaken in suffering (which doesn't mean numb, it means present with it without panic), not desperately craving pleasure (which doesn't mean joyless, it means not grasping), and free from attachment/fear/anger. This is the Gita's portrait of genuine mental health. Not the absence of difficulty. The presence of steadiness in the face of it.</div>
             </div>
-            <div className="essence">Steadiness in suffering, restraint in pleasure — this is the steady mind.</div>
+            <div className="essence">Steadiness in suffering, restraint in pleasure: this is the steady mind.</div>
         </div>
 
         <p>
@@ -701,17 +703,17 @@ vītarāgabhayakrodhaḥ sthitadhīrmunirucyate ||</div>
 sa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati ||</div>
             <div className="meaning">
                 <div className="meaning-label">Translation</div>
-                <div className="meaning-text">One who finds happiness within, who is delighted within, who is illuminated within — that yogi attains brahma-nirvana, becoming Brahman.</div>
+                <div className="meaning-text">One who finds happiness within, who is delighted within, who is illuminated within, that yogi attains brahma-nirvana, becoming Brahman.</div>
             </div>
             <div className="insight">
                 <div className="insight-label">What This Teaches</div>
-                <div className="insight-text">Three times in this verse, Krishna uses the word "antar" — within, inside. The happiness you are searching for outside — in outcomes, in approval, in financial security, in the perfect relationship — is not located outside. It's located inside. The anxiety comes from looking for stability in places that are inherently unstable. Your outcomes change. Other people's approval changes. Money comes and goes. But there is something within you that is not trembling. The work is learning to locate it.</div>
+                <div className="insight-text">Three times in this verse, Krishna uses the word "antar": within, inside. The happiness you are searching for outside (in outcomes, in approval, in financial security, in the perfect relationship) is not located outside. It's located inside. The anxiety comes from looking for stability in places that are inherently unstable. Your outcomes change. Other people's approval changes. Money comes and goes. But there is something within you that is not trembling. The work is learning to locate it.</div>
             </div>
-            <div className="essence">The happiness you seek outside is already inside — it was never anywhere else.</div>
+            <div className="essence">The happiness you seek outside is already inside. It was never anywhere else.</div>
         </div>
 
         <p>
-            This is not naive idealism. This is not saying that external conditions don't matter. It is saying that the fundamental peace you are after — the peace that actually allows you to handle difficult circumstances — is not found by fixing all external circumstances. It's found by recognizing that there is a part of you that is not destabilized by what happens. That part is what the Gita keeps pointing toward.
+            This is not naive idealism. This is not saying that external conditions don't matter. It is saying that the fundamental peace you are after (the peace that actually allows you to handle difficult circumstances) is not found by fixing all external circumstances. It's found by recognizing that there is a part of you that is not destabilized by what happens. That part is what the Gita keeps pointing toward.
         </p>
 
         <h2>The Practice: One Verse at a Time</h2>
@@ -730,21 +732,21 @@ sa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati ||</div>
         <div className="faq-item">
             <strong>Does the Bhagavad Gita help with anxiety?</strong>
             <p>
-                Yes — and not just as a collection of comforting quotes. The Gita was written for a man in the middle of what we would now call a panic attack. Its entire philosophical framework is designed specifically to address the mental states of fear, grief, confusion, and paralysis. Verses 2.14, 2.56, 2.62-63, and 5.24 are particularly direct in their treatment of how anxiety arises and how to work with it.
+                Yes, and not just as a collection of comforting quotes. The Gita was written for a man in the middle of what we would now call a panic attack. Its entire philosophical framework is designed specifically to address the mental states of fear, grief, confusion, and paralysis. Verses 2.14, 2.56, 2.62-63, and 5.24 are particularly direct in their treatment of how anxiety arises and how to work with it.
             </p>
         </div>
 
         <div className="faq-item">
             <strong>What does the Gita say about mental peace?</strong>
             <p>
-                The Gita doesn't promise the absence of difficulty. It offers a different relationship to it. The teaching of 2.14 says sense-experiences are temporary; 2.56 describes a mind steady in sorrow and restrained in pleasure; and 5.24 points to inner happiness (antah-sukha) as the source of genuine peace — not external conditions. The peace the Gita points to is built on a shift in where you're looking for stability.
+                The Gita doesn't promise the absence of difficulty. It offers a different relationship to it. The teaching of 2.14 says sense-experiences are temporary; 2.56 describes a mind steady in sorrow and restrained in pleasure; and 5.24 points to inner happiness (antah-sukha) as the source of genuine peace, not external conditions. The peace the Gita points to is built on a shift in where you're looking for stability.
             </p>
         </div>
 
         <div className="faq-item">
             <strong>What does the Gita say about worry and overthinking?</strong>
             <p>
-                Verses 2.62-2.63 describe the cascade: dwelling on an object → attachment → desire → anger → confusion → loss of judgment → collapse. The Gita's analysis of overthinking is that it begins at dwelling — what you consistently turn your attention toward. Managing anxiety in the Gita's framework means managing attention first, and working with emotion second. It's about interrupting the spiral at its origin point.
+                Verses 2.62-2.63 describe the cascade: dwelling on an object → attachment → desire → anger → confusion → loss of judgment → collapse. The Gita's analysis of overthinking is that it begins at dwelling: what you consistently turn your attention toward. Managing anxiety in the Gita's framework means managing attention first, and working with emotion second. It's about interrupting the spiral at its origin point.
             </p>
         </div>
 
@@ -761,7 +763,7 @@ sa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati ||</div>
         <div className="app-cta-eyebrow">Free iOS App</div>
         <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
         <p className="app-cta-desc">
-            The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+            The Wisdom app delivers one Bhagavad Gita verse each day: Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
         </p>
         <div className="app-cta-features">
             <span>✦ Daily shloka in Sanskrit</span>

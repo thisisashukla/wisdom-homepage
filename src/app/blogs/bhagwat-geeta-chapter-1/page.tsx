@@ -758,7 +758,7 @@ export default function ChapterOnePage() {
           <div className="chapter-badge-dot"></div>
         </div>
         <h1 className="article-title">
-          Bhagavad Gita Chapter 1 (Adhyay 1) —<br />
+          Bhagavad Gita Chapter 1 (Adhyay 1):<br />
           <em>Arjuna Vishada Yoga</em>
         </h1>
         <p className="article-subtitle">
@@ -774,6 +774,8 @@ export default function ChapterOnePage() {
           <span className="meta-item">~16 min read</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapter 1 of 18</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -784,7 +786,7 @@ export default function ChapterOnePage() {
                 <figure className="chapter-image">
           <img
             src="/assets/chapter1.webp"
-            alt="Arjuna's despair on the battlefield — Bhagavad Gita Chapter 1"
+            alt="Arjuna's despair on the battlefield, Bhagavad Gita Chapter 1"
             width="1200"
             height="675"
             loading="eager"
@@ -792,7 +794,7 @@ export default function ChapterOnePage() {
         </figure>
 
         <p className="lead">
-          Most teachers rush past Chapter 1. It gets treated as backstory — the
+          Most teachers rush past Chapter 1. It gets treated as backstory, the
           setup before the philosophy begins in Chapter 2. This is a mistake.
           Chapter 1 is the most humanly honest chapter in the Gita. Possibly in
           all of Sanskrit literature. Because it begins not with answers, but
@@ -800,14 +802,14 @@ export default function ChapterOnePage() {
         </p>
 
         <p>
-          Not with noble courage to act — but with the terrifying uncertainty
+          Not with noble courage to act, but with the terrifying uncertainty
           about whether acting is right at all.
         </p>
 
         <p>
           The setting: the battlefield of Kurukshetra. Two armies face each
           other, representing the largest military gathering the subcontinent
-          has known. At the center of it stands Arjuna — the greatest archer of
+          has known. At the center of it stands Arjuna, the greatest archer of
           his age, trained since boyhood for exactly this moment, armed with the
           divine bow Gandiva and the blessings of the gods. And he can't move.
         </p>
@@ -824,29 +826,29 @@ export default function ChapterOnePage() {
           <ol className="toc-list">
             <li>
               <a href="#blind-king"
-                >The blind king's opening question — Bhagavad Gita 1.1</a
+                >The blind king's opening question, Bhagavad Gita 1.1</a
               >
             </li>
             <li>
               <a href="#inventory">The inventory of warriors (1.2–1.19)</a>
             </li>
-            <li><a href="#precipice">The pause at the precipice — 1.20</a></li>
+            <li><a href="#precipice">The pause at the precipice, 1.20</a></li>
             <li>
-              <a href="#faces">When Arjuna sees their faces — 1.26–1.27</a>
+              <a href="#faces">When Arjuna sees their faces, 1.26–1.27</a>
             </li>
             <li>
               <a href="#body"
-                >A body that doesn't lie — physical symptoms 1.29–1.30</a
+                >A body that doesn't lie, physical symptoms 1.29–1.30</a
               >
             </li>
             <li>
               <a href="#argument"
-                >The ethical argument against victory — 1.32–1.44</a
+                >The ethical argument against victory, 1.32–1.44</a
               >
             </li>
             <li>
               <a href="#final"
-                >The final choice — Arjuna sets down his bow, 1.46–1.47</a
+                >The final choice, Arjuna sets down his bow, 1.46–1.47</a
               >
             </li>
             <li><a href="#why">Why Vyasa spent 47 verses on the crisis</a></li>
@@ -868,7 +870,7 @@ export default function ChapterOnePage() {
 
         <p>
           The very first words of the Bhagavad Gita don't belong to Krishna.
-          They don't belong to Arjuna. They belong to Dhritarashtra — a blind
+          They don't belong to Arjuna. They belong to Dhritarashtra, a blind
           king, sitting far from the battlefield, asking his advisor Sanjaya for
           a report.
         </p>
@@ -894,7 +896,7 @@ export default function ChapterOnePage() {
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
                 Dhritarashtra said: O Sanjaya, after assembling on the holy
-                field of Kurukshetra, eager to fight — what did
+                field of Kurukshetra, eager to fight, what did
                 <em>mine</em> and Pandu's sons do?
               </div>
             </div>
@@ -915,14 +917,14 @@ export default function ChapterOnePage() {
 
         <p>
           The word <em>māmakāḥ</em> is important. Dhritarashtra doesn't call
-          them "my sons" or even "the Kauravas." He calls them "mine" — a
+          them "my sons" or even "the Kauravas." He calls them "mine", a
           possessive that has no real translation in English that captures its
           full weight. This is a man who has always confused ownership with
           love. His blindness, the Gita suggests, is not just physical.
         </p>
 
         <p>
-          The Gita also places this scene in <em>dharma-kshetra</em> — the field
+          The Gita also places this scene in <em>dharma-kshetra</em>, the field
           of righteousness. Kurukshetra was already considered a sacred site.
           The battlefield is not just a geographical location; it's being framed
           as a place where the fundamental question of what is right must be
@@ -953,7 +955,7 @@ export default function ChapterOnePage() {
           These verses aren't filler. They accomplish something crucial: they
           establish the weight of what's at stake. When Arjuna's crisis hits, we
           understand its scale because we've been shown what's arrayed on both
-          sides — not abstractions, but named people. Bhishma, who trained half
+          sides, not abstractions, but named people. Bhishma, who trained half
           these warriors. Dronacharya, who taught both armies. Karna, who Arjuna
           knows is secretly his own brother. Every name is a relationship. Every
           warrior is someone's son, someone's teacher, someone's friend.
@@ -964,8 +966,7 @@ export default function ChapterOnePage() {
             <strong>A note on Duryodhana's psychology:</strong> In verses 3–11,
             Duryodhana's report to Dronacharya reveals a man performing
             confidence he doesn't feel. He lists the Pandava warriors almost
-            obsessively, then declares his own side "unlimited" in strength —
-            but the words betray anxiety. He's convincing himself, not his
+            obsessively, then declares his own side "unlimited" in strength, but the words betray anxiety. He's convincing himself, not his
             teacher. The Gita is psychologically precise from its opening
             verses.
           </p>
@@ -984,8 +985,8 @@ export default function ChapterOnePage() {
 
         <p>
           Then comes verse 20. The armies are ready. The conches have been
-          blown. The arrows are nocked. And Arjuna — whose chariot bears the
-          flag of Hanuman, a symbol of devotion and strength — raises his bow.
+          blown. The arrows are nocked. And Arjuna, whose chariot bears the
+          flag of Hanuman, a symbol of devotion and strength, raises his bow.
         </p>
 
         <div className="shloka-card">
@@ -1006,7 +1007,7 @@ export default function ChapterOnePage() {
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
                 Seeing the sons of Dhritarashtra arranged and ready for battle,
-                as the weapons were about to clash — Arjuna, the son of Pandu,
+                as the weapons were about to clash, Arjuna, the son of Pandu,
                 whose chariot bore the monkey banner, lifted his bow.
               </div>
             </div>
@@ -1014,7 +1015,7 @@ export default function ChapterOnePage() {
               <div className="shloka-col-label">The pivot</div>
               <div className="shloka-insight">
                 This is the last moment before everything changes. The bow is
-                lifted — but what follows in verses 21–23 is Arjuna asking
+                lifted, but what follows in verses 21–23 is Arjuna asking
                 Krishna to stop the chariot so he can look. This is not
                 weakness. It is, in fact, his most warrior-like act: pausing
                 before the irrevocable.
@@ -1074,7 +1075,7 @@ export default function ChapterOnePage() {
             <div>
               <div className="shloka-col-label">The human moment</div>
               <div className="shloka-insight">
-                The list is precise and personal. Not "the enemy" — fathers,
+                The list is precise and personal. Not "the enemy", fathers,
                 grandfathers, teachers. The Gita is describing what it looks
                 like when abstract conflict becomes concrete and personal. This
                 is not cowardice. This is recognition.
@@ -1091,13 +1092,13 @@ export default function ChapterOnePage() {
           What collapses Arjuna is not fear of dying. He has faced death before.
           It's something more disorienting: he can no longer tell which side he
           is on. The people he loves are on both sides. His grandfathers, his
-          teachers, his brothers-in-law — distributed across two armies that are
+          teachers, his brothers-in-law, distributed across two armies that are
           about to kill each other.
         </p>
 
         <p>
           His identity has been built on a network of relationships. When those
-          relationships are about to be severed — by his own hand — the self
+          relationships are about to be severed, by his own hand, the self
           built on them begins to dissolve.
         </p>
 
@@ -1149,13 +1150,13 @@ export default function ChapterOnePage() {
                 What the Gita describes here is physiologically accurate:
                 vasoconstriction causes skin-crawling sensations, adrenaline
                 causes trembling, saliva production drops. This is an acute
-                stress response — documented with precision 5,000 years before
+                stress response, documented with precision 5,000 years before
                 we named it.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            "Even the strongest can feel afraid — acknowledge your emotions with
+            "Even the strongest can feel afraid, acknowledge your emotions with
             honesty."
           </div>
         </div>
@@ -1184,8 +1185,7 @@ export default function ChapterOnePage() {
             <div>
               <div className="shloka-col-label">Significance</div>
               <div className="shloka-insight">
-                Gandiva is not just a bow. It's a divine weapon given by Agni —
-                a symbol of Arjuna's identity as the supreme warrior. When it
+                Gandiva is not just a bow. It's a divine weapon given by Agni, a symbol of Arjuna's identity as the supreme warrior. When it
                 slips, something more than a weapon is falling. It's the self he
                 has always known.
               </div>
@@ -1201,14 +1201,14 @@ export default function ChapterOnePage() {
           Two thousand years before the term existed, the Gita is describing a
           panic attack with exact clinical accuracy: vasoconstriction causing
           burning skin, loss of grip strength, inability to stand, mental
-          disorientation. The ancient text didn't need the vocabulary — it had
+          disorientation. The ancient text didn't need the vocabulary, it had
           the observation.
         </p>
 
         <p>
           And crucially, Arjuna is not ashamed of this. He describes it to
           Krishna plainly. He doesn't suppress it, doesn't try to push through.
-          The Gita treats this honesty as important — the necessary first step
+          The Gita treats this honesty as important, the necessary first step
           before anything else can be addressed.
         </p>
 
@@ -1226,7 +1226,7 @@ export default function ChapterOnePage() {
         <p>
           Here is where Chapter 1 gets underappreciated. Arjuna's arguments from
           verse 31 onward are not the rationalizations of a coward. They are a
-          coherent ethical case — and a surprisingly sophisticated one.
+          coherent ethical case, and a surprisingly sophisticated one.
         </p>
 
         <div className="shloka-card">
@@ -1255,7 +1255,7 @@ export default function ChapterOnePage() {
               <div className="shloka-col-label">The inversion</div>
               <div className="shloka-insight">
                 This is Arjuna dismantling the entire framework of why they came
-                to fight. Victory, kingdom, enjoyment — the three things
+                to fight. Victory, kingdom, enjoyment, the three things
                 warriors fight for. He is renouncing all three in one verse.
                 This is not fear. It is a rejection of the premise.
               </div>
@@ -1285,7 +1285,7 @@ export default function ChapterOnePage() {
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
                 Those for whose sake we desire kingdoms, pleasures, and
-                happiness — they themselves stand here on this battlefield,
+                happiness, they themselves stand here on this battlefield,
                 having given up their desire for life and wealth.
               </div>
             </div>
@@ -1295,7 +1295,7 @@ export default function ChapterOnePage() {
                 A crisp consequentialist argument: the beneficiaries of victory
                 are the very people who will die in the pursuit of it. This
                 isn't irrational. This is the observation that the means have
-                devoured the ends — a collapse in the logic of the entire
+                devoured the ends, a collapse in the logic of the entire
                 enterprise.
               </div>
             </div>
@@ -1328,7 +1328,7 @@ export default function ChapterOnePage() {
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
                 Even if those whose minds are blinded by greed cannot see the
-                sin in destroying families and betraying friends — how can we,
+                sin in destroying families and betraying friends, how can we,
                 who clearly see the consequences, fail to turn away from this
                 sin, O Janardana?
               </div>
@@ -1339,7 +1339,7 @@ export default function ChapterOnePage() {
                 Arjuna is making a deontological case: if you can see the harm
                 and others cannot, you bear a greater responsibility to act on
                 that knowledge. This is not rationalization. This is conscience.
-                The problem is not that the argument is wrong — it's that
+                The problem is not that the argument is wrong, it's that
                 Arjuna's 'I' is still attached to the wrong thing.
               </div>
             </div>
@@ -1357,7 +1357,7 @@ export default function ChapterOnePage() {
         </p>
 
         <p>
-          His arguments fail not because they're incorrect — but because they're
+          His arguments fail not because they're incorrect, but because they're
           incomplete. They're rooted in what Krishna will later call
           <em>ahamkara</em>: the ego-self constructed around roles,
           relationships, and outcomes. The "I" that doesn't want to fight is not
@@ -1379,7 +1379,7 @@ export default function ChapterOnePage() {
         </div>
 
         <h2 id="final">
-          The Final Choice — <em>Silence and a Bow Set Down</em>
+          The Final Choice, <em>Silence and a Bow Set Down</em>
         </h2>
 
         <div className="shloka-card">
@@ -1399,8 +1399,7 @@ export default function ChapterOnePage() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                If the armed sons of Dhritarashtra were to kill me in battle —
-                unresisting, unarmed — even that would be better for me.
+                If the armed sons of Dhritarashtra were to kill me in battle, unresisting, unarmed, even that would be better for me.
               </div>
             </div>
             <div>
@@ -1408,7 +1407,7 @@ export default function ChapterOnePage() {
               <div className="shloka-insight">
                 Arjuna is not afraid of death. He's making a principled stand:
                 he would rather be killed than violate his own conscience. This
-                is, in its own way, a warrior's ethic — choosing death over an
+                is, in its own way, a warrior's ethic, choosing death over an
                 action that feels wrong. The problem isn't the courage. It's the
                 source of the conviction.
               </div>
@@ -1448,7 +1447,7 @@ export default function ChapterOnePage() {
                 Sanjaya narrates this to the blind king with journalistic calm.
                 The greatest teacher in Sanskrit literature sits next to the
                 greatest student. The student has his face in his hands. This is
-                where Chapter 1 ends — not with resolution, but with the
+                where Chapter 1 ends, not with resolution, but with the
                 question fully formed and held.
               </div>
             </div>
@@ -1461,11 +1460,10 @@ export default function ChapterOnePage() {
 
         <p>
           Sanjaya's narration ends here. Chapter 1's last image is Arjuna,
-          seated, bow and arrows set aside, mind overwhelmed with grief —
-          <em>śokasaṃvignamānasaḥ</em>. The compound word is worth sitting with:
+          seated, bow and arrows set aside, mind overwhelmed with grief, <em>śokasaṃvignamānasaḥ</em>. The compound word is worth sitting with:
           <em>shoka</em> (grief) + <em>samvigna</em> (agitated, disturbed) +
           <em>manasah</em> (of the mind). A mind disturbed by grief. Not
-          defeated. Not wrong. Simply — brought to a stop.
+          defeated. Not wrong. Simply, brought to a stop.
         </p>
 
         {/* DIVIDER */}
@@ -1482,7 +1480,7 @@ export default function ChapterOnePage() {
         <p>
           The Gita could have begun at Chapter 2. Krishna could have started
           teaching the moment Arjuna felt uncertain. Vyasa chose differently. He
-          spent an entire chapter — 47 verses — documenting the collapse in full
+          spent an entire chapter, 47 verses, documenting the collapse in full
           before a single word of teaching appears.
         </p>
 
@@ -1493,8 +1491,7 @@ export default function ChapterOnePage() {
 
         <p>
           Because wisdom that arrives before the question has weight doesn't
-          land. It bounces off. Arjuna needed to be fully in his confusion —
-          body, mind, ethics, grief, all of it — before he could receive what
+          land. It bounces off. Arjuna needed to be fully in his confusion, body, mind, ethics, grief, all of it, before he could receive what
           Krishna was about to say.
         </p>
 
@@ -1502,7 +1499,7 @@ export default function ChapterOnePage() {
           The same is true of every genuine inquiry. You can read about the
           nature of the self, detachment, duty, and the eternal soul. You can
           understand it intellectually. But it becomes real only when you've
-          been brought to the edge of something — when your identity has been
+          been brought to the edge of something, when your identity has been
           challenged, when the person you thought you were can no longer give
           you direction.
         </p>
@@ -1510,7 +1507,7 @@ export default function ChapterOnePage() {
         <p>
           Arjuna's mistake in Chapter 1 is not that he feels grief. It's that he
           has confused his roles with his essence. He is a son, a student, a
-          friend, a warrior — and when those roles collide, there is no deeper
+          friend, a warrior, and when those roles collide, there is no deeper
           "I" to navigate from. The grief of Chapter 1 is the grief of a self
           built entirely on circumstances, confronting circumstances it cannot
           handle.
@@ -1522,7 +1519,7 @@ export default function ChapterOnePage() {
         </p>
 
         <p>
-          But that teaching requires this — the complete, honest, unsparing
+          But that teaching requires this, the complete, honest, unsparing
           account of what collapse looks like. That's what Chapter 1 gives us.
         </p>
 
@@ -1538,18 +1535,18 @@ export default function ChapterOnePage() {
         {/* ── KEY INSIGHTS ── */}
         <div className="insights-box">
           <div className="insights-label">
-            What Bhagavad Gita Chapter 1 teaches — 5 core insights
+            What Bhagavad Gita Chapter 1 teaches, 5 core insights
           </div>
           <ol className="insights-list">
             <li>
               <strong>Attachment distorts perception.</strong> The Gita's very
-              first line — a blind king asking "what did mine do?" — shows that
+              first line, a blind king asking "what did mine do?", shows that
               attachment shapes the questions we ask before we even begin to
               act.
             </li>
             <li>
               <strong
-                >Grief is not the opposite of wisdom — it is its
+                >Grief is not the opposite of wisdom, it is its
                 precondition.</strong
               >
               Arjuna's vishada (despondency) is the titled subject of the
@@ -1561,7 +1558,7 @@ export default function ChapterOnePage() {
                 >The body registers moral crisis before the mind does.</strong
               >
               In 1.29–1.30, Arjuna describes trembling, dry mouth, burning skin,
-              and a bow slipping from his hand — a physiological stress response
+              and a bow slipping from his hand, a physiological stress response
               documented with clinical precision thousands of years before
               modern neuroscience.
             </li>
@@ -1570,14 +1567,14 @@ export default function ChapterOnePage() {
                 >A coherent ethical argument can still be rooted in the wrong
                 identity.</strong
               >
-              Arjuna's case against fighting is not irrational — but it is built
+              Arjuna's case against fighting is not irrational, but it is built
               on attachment to roles (son, student, friend) rather than on a
               deeper understanding of the self. That is what Krishna addresses
               in Chapter 2.
             </li>
             <li>
               <strong>The question matters as much as the answer.</strong> Vyasa
-              spent an entire chapter — 47 verses — establishing the crisis
+              spent an entire chapter, 47 verses, establishing the crisis
               before Krishna speaks a single word of teaching. The weight of the
               answer depends entirely on the depth of the question.
             </li>
@@ -1588,13 +1585,13 @@ export default function ChapterOnePage() {
         <div className="section-divider">
           <div className="section-divider-line"></div>
           <div className="section-divider-label">
-            All 47 Verses — Quick Reference
+            All 47 Verses, Quick Reference
           </div>
           <div className="section-divider-line"></div>
         </div>
 
         <h2 id="all-verses">
-          Bhagwat Geeta Adhyay 1 — All 47 Shlokas at a Glance
+          Bhagwat Geeta Adhyay 1, All 47 Shlokas at a Glance
         </h2>
 
         <p>
@@ -1615,7 +1612,7 @@ export default function ChapterOnePage() {
               <td>1.1</td>
               <td>Dhritarashtra</td>
               <td>
-                The blind king's opening question — "mine and Pandu's sons"
+                The blind king's opening question, "mine and Pandu's sons"
               </td>
             </tr>
             <tr>
@@ -1653,7 +1650,7 @@ export default function ChapterOnePage() {
               <td>1.26–27</td>
               <td>Sanjaya</td>
               <td>
-                Arjuna recognises relatives on both sides — overcome with
+                Arjuna recognises relatives on both sides, overcome with
                 compassion
               </td>
             </tr>
@@ -1661,7 +1658,7 @@ export default function ChapterOnePage() {
               <td>1.28–46</td>
               <td>Arjuna</td>
               <td>
-                Arjuna's grief — physical symptoms, ethical arguments, final
+                Arjuna's grief, physical symptoms, ethical arguments, final
                 refusal
               </td>
             </tr>
@@ -1682,14 +1679,14 @@ export default function ChapterOnePage() {
         <p>
           <strong>Wisdom</strong> is a free iOS app for daily Bhagavad Gita
           shlokas. Each day, the app delivers one verse from the Bhagavad Gita
-          or other Hindu scriptures — with the original Sanskrit text in
+          or other Hindu scriptures, with the original Sanskrit text in
           Devanagari, IAST transliteration, English meaning, a deeper
           explanation, modern relevance, and a private journal to reflect on it.
           The app also includes home screen and lock screen widgets with
           Sanskrit shlokas and deity chants.
         </p>
         <p>
-          Wisdom is designed for the intellectually curious — people who want to
+          Wisdom is designed for the intellectually curious, people who want to
           engage with ancient Indian philosophy as a living practice, not a
           museum artefact. It supports the Bhagavad Gita, Upanishads, and other
           Hindu scriptures. Free to download on the
@@ -1705,7 +1702,7 @@ export default function ChapterOnePage() {
       <div className="faq-section" id="faq">
         <div className="faq-header">
           <div className="faq-header-label">Frequently Asked Questions</div>
-          <h2>Bhagavad Gita Chapter 1 — Common Questions</h2>
+          <h2>Bhagavad Gita Chapter 1, Common Questions</h2>
         </div>
 
         <div className="faq-item">
@@ -1726,7 +1723,7 @@ export default function ChapterOnePage() {
           <div className="faq-a">
             Arjuna Vishada Yoga means the yoga of Arjuna's grief, or the yoga of
             Arjuna's despondency. In Sanskrit, vishada means deep sorrow or
-            distress, and yoga here means a path or discipline — not exercise.
+            distress, and yoga here means a path or discipline, not exercise.
             The title implies that Arjuna's grief itself is a doorway: his
             collapse is what opens the space for Krishna's teaching. Without the
             depth of the question, the answers would have no ground to land on.
@@ -1739,8 +1736,8 @@ export default function ChapterOnePage() {
           </div>
           <div className="faq-a">
             Bhagavad Gita Chapter 1 has 47 verses (shlokas). It is the shortest
-            chapter philosophically — none of Krishna's direct teachings appear
-            yet — but among the most important for establishing the
+            chapter philosophically, none of Krishna's direct teachings appear
+            yet, but among the most important for establishing the
             psychological and ethical context for everything that follows in the
             remaining 17 chapters.
           </div>
@@ -1749,13 +1746,12 @@ export default function ChapterOnePage() {
         <div className="faq-item">
           <div className="faq-q">Why does Arjuna refuse to fight in Chapter 1?</div>
           <div className="faq-a">
-            Arjuna refuses to fight because he sees his own relatives —
-            grandfathers, teachers, uncles, brothers, friends — arrayed on both
+            Arjuna refuses to fight because he sees his own relatives, grandfathers, teachers, uncles, brothers, friends, arrayed on both
             sides of the battlefield. He argues that victory is meaningless if
             it requires killing the people he loves, that destroying families
             unravels the ethical fabric of society, and that dying unarmed would
             be preferable to this. His arguments are ethically sophisticated
-            rather than cowardly — but they are rooted in attachment to his
+            rather than cowardly, but they are rooted in attachment to his
             roles as a son, student, and friend rather than to his deeper
             identity beyond those roles.
           </div>
@@ -1770,7 +1766,7 @@ export default function ChapterOnePage() {
             mouth drying up, his body trembling, his hair standing on end, his
             skin burning all over, his famous bow Gandiva slipping from his
             hands, and his mind reeling in confusion. These are precise
-            descriptions of an acute stress response — the physiological
+            descriptions of an acute stress response, the physiological
             signature of grief, anxiety, and moral distress, documented with
             clinical accuracy thousands of years before modern psychology named
             them.
@@ -1783,7 +1779,7 @@ export default function ChapterOnePage() {
             The very first words of the Bhagavad Gita are spoken by King
             Dhritarashtra, the blind father of the Kauravas. He asks his advisor
             Sanjaya what happened after both armies assembled on the battlefield
-            of Kurukshetra. The Gita's opening is not a teaching — it is a
+            of Kurukshetra. The Gita's opening is not a teaching, it is a
             question already loaded with a father's blind attachment to his own
             children, introducing the text's central theme of attachment before
             philosophy even begins.
@@ -1794,7 +1790,7 @@ export default function ChapterOnePage() {
           <div className="faq-q">What does "dharma-kshetra kuru-kshetra" mean?</div>
           <div className="faq-a">
             The opening line of the Bhagavad Gita describes Kurukshetra as
-            dharma-kshetra — the field of dharma, or the field of righteousness.
+            dharma-kshetra, the field of dharma, or the field of righteousness.
             The battlefield is not just a physical location; it is presented as
             a place where the fundamental question of right action must be
             confronted directly. This framing immediately establishes that what
@@ -1810,8 +1806,7 @@ export default function ChapterOnePage() {
           <div className="faq-a">
             Chapter 2 is typically considered the philosophical heart of the
             Gita, and later chapters go deeper into yoga, devotion, and
-            metaphysics. But Chapter 1 may be the most humanly important —
-            because it establishes the crisis that makes all wisdom necessary. A
+            metaphysics. But Chapter 1 may be the most humanly important, because it establishes the crisis that makes all wisdom necessary. A
             teaching without a felt question is just information. Arjuna's
             collapse in Chapter 1 is what gives Krishna's answers in the
             chapters that follow their actual weight.
@@ -1821,7 +1816,7 @@ export default function ChapterOnePage() {
         <div className="faq-item">
           <div className="faq-q">What does the Bhagavad Gita say about grief?</div>
           <div className="faq-a">
-            The Bhagavad Gita takes grief seriously — it opens with it. Arjuna's
+            The Bhagavad Gita takes grief seriously, it opens with it. Arjuna's
             despondency in Chapter 1 is treated not as weakness to be dismissed,
             but as the necessary starting point for transformation. The Sanskrit
             word vishada (grief or despondency) appears in the title of Chapter
@@ -1839,7 +1834,7 @@ export default function ChapterOnePage() {
             While Chapter 2 contains the Gita's most frequently cited verses
             (such as 2.47, the karma yoga verse), Chapter 1's most quoted
             shlokas include 1.1 (the opening question), 1.29–1.30 (Arjuna's
-            physical symptoms), and 1.32 — "I do not desire victory, nor
+            physical symptoms), and 1.32, "I do not desire victory, nor
             kingdom, nor pleasures." Verse 1.47, the chapter's closing image of
             Arjuna setting down his bow, is also widely cited as one of the most
             emotionally resonant moments in Sanskrit literature.
@@ -1852,7 +1847,7 @@ export default function ChapterOnePage() {
           <div className="app-cta-eyebrow">Free iOS App</div>
           <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
           <p className="app-cta-desc">
-            The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+            The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
           </p>
           <div className="app-cta-features">
             <span>✦ Daily shloka in Sanskrit</span>
@@ -1889,7 +1884,7 @@ export default function ChapterOnePage() {
           <span
             className="ch-nav-title"
             style={{fontSize: '14px', color: 'var(--muted-2)'}}
-            >Chapter 2 — Sankhya Yoga
+            >Chapter 2, Sankhya Yoga
             <span style={{fontSize: '11px', fontWeight: '400'}}
               >(coming soon)</span
             ></span
@@ -1904,7 +1899,7 @@ export default function ChapterOnePage() {
           <a href="/blogs" className="related-card">
             <div className="related-card-label">Shloka Collection</div>
             <div className="related-card-title">
-              Bhagwat Geeta Shlokas in Sanskrit — 20 Key Verses
+              Bhagwat Geeta Shlokas in Sanskrit, 20 Key Verses
               <span
                 style={{color: 'var(--muted-2)', fontSize: '11px', fontWeight: '400', display: 'block', marginTop: '4px'}}
                 >Coming soon</span
@@ -1914,7 +1909,7 @@ export default function ChapterOnePage() {
           <a href="/blogs" className="related-card">
             <div className="related-card-label">Teaching</div>
             <div className="related-card-title">
-              Karma Quotes from the Bhagavad Gita — What Krishna Actually Said
+              Karma Quotes from the Bhagavad Gita, What Krishna Actually Said
               <span
                 style={{color: 'var(--muted-2)', fontSize: '11px', fontWeight: '400', display: 'block', marginTop: '4px'}}
                 >Coming soon</span
@@ -1924,7 +1919,7 @@ export default function ChapterOnePage() {
           <a href="/blogs" className="related-card">
             <div className="related-card-label">Guide</div>
             <div className="related-card-title">
-              Bhagwat Geeta Saar — The Complete Essence in Plain Language
+              Bhagwat Geeta Saar, The Complete Essence in Plain Language
               <span
                 style={{color: 'var(--muted-2)', fontSize: '11px', fontWeight: '400', display: 'block', marginTop: '4px'}}
                 >Coming soon</span
@@ -1934,7 +1929,7 @@ export default function ChapterOnePage() {
           <a href="/blogs" className="related-card">
             <div className="related-card-label">Blog</div>
             <div className="related-card-title">
-              All Articles — Bhagavad Gita & Hindu Philosophy
+              All Articles, Bhagavad Gita & Hindu Philosophy
             </div>
           </a>
         </div>

@@ -3,21 +3,21 @@ import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 16 Summary – Key Verses & Meaning (Daivasura Sampad)",
-  description: "Bhagavad Gita Chapter 16 (Daivasura Sampad Vibhaga Yoga) — 24 verses on divine and demonic natures and the three gates of ruin: desire, anger, greed.",
+  description: "Bhagavad Gita Chapter 16 (Daivasura Sampad Vibhaga Yoga), 24 verses on divine and demonic natures and the three gates of ruin: desire, anger, greed.",
   keywords: "bhagwat geeta chapter 16, bhagavad gita daivi asuri sampad, bhagwat geeta adhyay 16, divine and demonic qualities, three gates of hell gita, kama krodha lobha, qualities of character gita, 16.21 trividham narakasyedam, Daivasura Sampad Vibhaga Yoga meaning, divine and demonic qualities Bhagavad Gita, Bhagavad Gita 16.21 three gates of hell, kama krodha lobha meaning, Bhagavad Gita on ego and character, 16 chapter qualities of devotion",
   openGraph: {
     title: "Bhagavad Gita Chapter 16 Summary – Key Verses & Meaning (Daivasura Sampad)",
-    description: "Bhagavad Gita Chapter 16 — qualities that open a life, qualities that close it, and the three gates of ruin (16.21).",
+    description: "Bhagavad Gita Chapter 16, qualities that open a life, qualities that close it, and the three gates of ruin (16.21).",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter16.webp", width: 1200, height: 675, alt: "Two divergent inner orientations — one leading toward freedom, one toward bondage. Chapter 16 of the Bhagavad Gita, Daivasura Sampad Vibhaga Yoga, names the qualities of each." }],
+    images: [{ url: "https://wisdomquotes.in/assets/chapter16.webp", width: 1200, height: 675, alt: "Two divergent inner orientations, one leading toward freedom, one toward bondage. Chapter 16 of the Bhagavad Gita, Daivasura Sampad Vibhaga Yoga, names the qualities of each." }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 16 Summary – Key Verses & Meaning (Daivasura Sampad)",
-    description: "Bhagavad Gita Chapter 16 — qualities that open a life, qualities that close it, and the three gates of ruin (16.21).",
+    description: "Bhagavad Gita Chapter 16, qualities that open a life, qualities that close it, and the three gates of ruin (16.21).",
     images: ["https://wisdomquotes.in/assets/chapter16.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16" },
@@ -397,7 +397,7 @@ const schemas = [
         "name": "What are the three gates of hell in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 16.21 names three forces as the gates of self-destruction: kāma (desire that cannot be filled), krodha (anger when that desire is blocked), and lobha (greed that wants more even when enough is at hand). The verse says: 'These three are the gates of ruin, the destroyers of the self — therefore abandon these three.' The three form a single mechanism, and dropping any one starves the other two."
+          "text": "Verse 16.21 names three forces as the gates of self-destruction: kāma (desire that cannot be filled), krodha (anger when that desire is blocked), and lobha (greed that wants more even when enough is at hand). The verse says: 'These three are the gates of ruin, the destroyers of the self; therefore abandon these three.' The three form a single mechanism, and dropping any one starves the other two."
         }
       },
       {
@@ -421,7 +421,7 @@ const schemas = [
         "name": "Why does the Gita say scripture should be the standard?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 16.24 says that śāstra — the sacred teaching — should be the standard for deciding what should be done and what should not. The verse is not authoritarian. It is making a structural point: impulse alone is unreliable, because impulse is precisely what the previous twenty verses described as captured by desire, anger, and greed. You need a reference point outside the impulse — the accumulated wisdom of the tradition, a wise teacher, or your own deepest values when not in the grip of reactivity."
+          "text": "Verse 16.24 says that śāstra — the sacred teaching — should be the standard for deciding what should be done and what should not. The verse is not authoritarian. It is making a structural point: impulse alone is unreliable, because impulse is precisely what the previous twenty verses described as captured by desire, anger, and greed. You need a reference point outside the impulse: the accumulated wisdom of the tradition, a wise teacher, or your own deepest values when not in the grip of reactivity."
         }
       }
     ]
@@ -564,11 +564,11 @@ export default function ChapterPage16() {
             <div className="chapter-badge-dot"></div>
           </div>
           <h1 className="article-title">
-            Bhagavad Gita Chapter 16 (Adhyay 16) —<br />
+            Bhagavad Gita Chapter 16 (Adhyay 16):<br />
             <em>Daivasura Sampad Vibhaga Yoga</em>
           </h1>
           <p className="article-subtitle">
-            The Gita's most pointed chapter on character. The qualities that open a life and the ones that close it. The three gates of ruin — desire, anger, greed — and why dropping them is the only ladder out.
+            The Gita's most pointed chapter on character. The qualities that open a life and the ones that close it. The three gates of ruin, desire, anger, greed, and why dropping them is the only ladder out.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -578,6 +578,8 @@ export default function ChapterPage16() {
             <span className="meta-item">~11 min read</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 16 of 18</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -596,23 +598,23 @@ export default function ChapterPage16() {
           </figure>
 
         <p className="lead">
-          Chapter 16 is one of the Gita's most unfashionable chapters. The vocabulary — divine and demonic natures, the gates of ruin — sounds, to modern ears, dualistic in ways that contemporary spirituality has trained itself away from. Read with patience, the chapter is doing something more nuanced. It is not labelling people as good or evil. It is naming, with clinical precision, the inner qualities that open a life and the ones that close it. The first three verses describe the opening qualities. The next several describe the closing ones. The chapter ends with a sharp diagnostic: three particular forces, dropped, free everything else.
+          Chapter 16 is one of the Gita's most unfashionable chapters. The vocabulary, divine and demonic natures, the gates of ruin, sounds, to modern ears, dualistic in ways that contemporary spirituality has trained itself away from. Read with patience, the chapter is doing something more nuanced. It is not labelling people as good or evil. It is naming, with clinical precision, the inner qualities that open a life and the ones that close it. The first three verses describe the opening qualities. The next several describe the closing ones. The chapter ends with a sharp diagnostic: three particular forces, dropped, free everything else.
         </p>
 
         <p>
-          What makes Chapter 16 useful is its refusal to be vague. Most ethical literature describes character in abstractions — be a good person, live well, treat others kindly. The Gita gives a list. Fearlessness. Purity. Non-violence. Truthfulness. Freedom from anger. Generosity. Compassion. Gentleness. Modesty. On the other side: hypocrisy. Arrogance. Endless desire. Hostility. Pride. The list is concrete because the work is concrete. Character is not produced by aspiration; it is produced by the patient cultivation of specific qualities and the patient subtraction of specific reactivities. Chapter 16 is the manual.
+          What makes Chapter 16 useful is its refusal to be vague. Most ethical literature describes character in abstractions, be a good person, live well, treat others kindly. The Gita gives a list. Fearlessness. Purity. Non-violence. Truthfulness. Freedom from anger. Generosity. Compassion. Gentleness. Modesty. On the other side: hypocrisy. Arrogance. Endless desire. Hostility. Pride. The list is concrete because the work is concrete. Character is not produced by aspiration; it is produced by the patient cultivation of specific qualities and the patient subtraction of specific reactivities. Chapter 16 is the manual.
         </p>
 
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
-            <li><a href="#opening-qualities">The qualities of the divine nature — 16.1 to 16.3</a></li>
-            <li><a href="#two-orientations">Two orientations, two outcomes — 16.5</a></li>
+            <li><a href="#opening-qualities">The qualities of the divine nature, 16.1 to 16.3</a></li>
+            <li><a href="#two-orientations">Two orientations, two outcomes, 16.5</a></li>
             <li><a href="#no-discernment">What is lost when discernment is lost</a></li>
-            <li><a href="#endless-desire">The spiral of insatiable desire — 16.10 to 16.16</a></li>
+            <li><a href="#endless-desire">The spiral of insatiable desire, 16.10 to 16.16</a></li>
             <li><a href="#ego-and-divine">Why ego attacks the very thing it lives inside</a></li>
-            <li><a href="#three-gates">The three gates of ruin — 16.21</a></li>
-            <li><a href="#standard">The closing — a standard higher than impulse</a></li>
+            <li><a href="#three-gates">The three gates of ruin, 16.21</a></li>
+            <li><a href="#standard">The closing, a standard higher than impulse</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
             <li><a href="#related-reading">Related reading</a></li>
@@ -631,7 +633,7 @@ export default function ChapterPage16() {
         <h2 id="opening-qualities">The Inner Wealth That Opens a Life</h2>
 
         <p>
-          Chapter 16 begins with one of the most concrete character lists in spiritual literature. Across three verses, Krishna names roughly twenty-six qualities that constitute the <em>daivī sampat</em> — the divine inner wealth. Fearlessness. Purity of being. Steadiness in the yoga of knowledge. Generosity. Self-restraint. Sacrifice. Study. Austerity. Honesty. Non-violence. Truthfulness. Freedom from anger. Renunciation. Inner calm. Absence of slander. Compassion. Freedom from greed. Gentleness. Modesty. Absence of restlessness. Splendour. Forgiveness. Steadiness. Purity. Absence of hostility. Absence of pride.
+          Chapter 16 begins with one of the most concrete character lists in spiritual literature. Across three verses, Krishna names roughly twenty-six qualities that constitute the <em>daivī sampat</em>, the divine inner wealth. Fearlessness. Purity of being. Steadiness in the yoga of knowledge. Generosity. Self-restraint. Sacrifice. Study. Austerity. Honesty. Non-violence. Truthfulness. Freedom from anger. Renunciation. Inner calm. Absence of slander. Compassion. Freedom from greed. Gentleness. Modesty. Absence of restlessness. Splendour. Forgiveness. Steadiness. Purity. Absence of hostility. Absence of pride.
         </p>
 
         <p>
@@ -653,13 +655,13 @@ export default function ChapterPage16() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Fearlessness, purity of being, steadiness in the yoga of knowledge, generosity, self-control, sacrifice, study of sacred texts, austerity, straightforwardness — non-violence, truthfulness, freedom from anger, renunciation, inner calm, absence of slander, compassion for all beings, freedom from greed, gentleness, modesty, freedom from restlessness.
+                Fearlessness, purity of being, steadiness in the yoga of knowledge, generosity, self-control, sacrifice, study of sacred texts, austerity, straightforwardness, non-violence, truthfulness, freedom from anger, renunciation, inner calm, absence of slander, compassion for all beings, freedom from greed, gentleness, modesty, freedom from restlessness.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">What this list quietly excludes</div>
               <div className="shloka-insight">
-                Notice what is not on this list. There is no mention of belief. No mention of which doctrine one holds. No mention of which rituals one performs. The entire list is about character — how a person reacts when provoked, how they speak when no one is watching, how they handle ordinary daily friction. The Gita's measure of the noble life is interpersonal and interior, not creedal.
+                Notice what is not on this list. There is no mention of belief. No mention of which doctrine one holds. No mention of which rituals one performs. The entire list is about character, how a person reacts when provoked, how they speak when no one is watching, how they handle ordinary daily friction. The Gita's measure of the noble life is interpersonal and interior, not creedal.
               </div>
             </div>
           </div>
@@ -683,13 +685,13 @@ export default function ChapterPage16() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Splendour, forgiveness, steadiness, purity, absence of hostility, absence of pride — these belong to the one born into the divine wealth, Arjuna.
+                Splendour, forgiveness, steadiness, purity, absence of hostility, absence of pride, these belong to the one born into the divine wealth, Arjuna.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">Forgiveness as splendour</div>
               <div className="shloka-insight">
-                <em>Tejas</em> means splendour, radiance, brightness. The verse names <em>kṣamā</em> — forgiveness — right next to it. Forgiveness is not described as weakness here. It is described as a kind of inner brightness. The person who can forgive carries a quality that the unforgiving person cannot fake. The Gita is making this concrete: real splendour is not the splendour that conquers. It is the splendour that releases.
+                <em>Tejas</em> means splendour, radiance, brightness. The verse names <em>kṣamā</em> (forgiveness) right next to it. Forgiveness is not described as weakness here. It is described as a kind of inner brightness. The person who can forgive carries a quality that the unforgiving person cannot fake. The Gita is making this concrete: real splendour is not the splendour that conquers. It is the splendour that releases.
               </div>
             </div>
           </div>
@@ -700,7 +702,7 @@ export default function ChapterPage16() {
 
         <div className="pull-quote">
           <blockquote>
-            "Splendour, forgiveness, steadiness, purity, absence of hostility, absence of pride — these are the inner wealth of the noble life."
+            "Splendour, forgiveness, steadiness, purity, absence of hostility, absence of pride, these are the inner wealth of the noble life."
           </blockquote>
           <cite>Bhagavad Gita 16.3</cite>
         </div>
@@ -714,14 +716,14 @@ export default function ChapterPage16() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="two-orientations">One Nature Opens, the Other Closes — But You Are Not Trapped</h2>
+        <h2 id="two-orientations">One Nature Opens, the Other Closes, But You Are Not Trapped</h2>
 
         <p>
-          Verse 16.5 makes the chapter's central claim explicit, and then immediately softens it. The divine nature leads to freedom, Krishna says. The demonic nature leads to bondage. Then he adds, with surprising tenderness, <em>mā śucaḥ</em> — do not grieve, Arjuna. You are born with the divine nature.
+          Verse 16.5 makes the chapter's central claim explicit, and then immediately softens it. The divine nature leads to freedom, Krishna says. The demonic nature leads to bondage. Then he adds, with surprising tenderness, <em>mā śucaḥ</em>: do not grieve, Arjuna. You are born with the divine nature.
         </p>
 
         <p>
-          Why does he say this? Because the chapter could easily produce despair. The list of demonic qualities is severe. Any honest reader will recognize at least some of those qualities in themselves. Verse 16.5 is the chapter's pre-emptive consolation. The orientations described are not fixed identities. They are tendencies, and tendencies can be cultivated or starved. The verse is telling Arjuna — you are not condemned by what you currently are. You are inclined toward the opening qualities. The work of the chapter, and the life, is to cultivate those further.
+          Why does he say this? Because the chapter could easily produce despair. The list of demonic qualities is severe. Any honest reader will recognize at least some of those qualities in themselves. Verse 16.5 is the chapter's pre-emptive consolation. The orientations described are not fixed identities. They are tendencies, and tendencies can be cultivated or starved. The verse is telling Arjuna, you are not condemned by what you currently are. You are inclined toward the opening qualities. The work of the chapter, and the life, is to cultivate those further.
         </p>
 
         <div className="shloka-card">
@@ -739,13 +741,13 @@ export default function ChapterPage16() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                The divine wealth leads to liberation; the demonic to bondage. Do not grieve, Arjuna — you are born into the divine wealth.
+                The divine wealth leads to liberation; the demonic to bondage. Do not grieve, Arjuna, you are born into the divine wealth.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">Why this verse cannot be skipped</div>
               <div className="shloka-insight">
-                The chapter is going to spend the next ten verses describing the closing qualities, and the descriptions are unflattering. Without 16.5 as the frame, the descriptions would be discouraging. With 16.5 as the frame, they become a map of what to subtract. The verse is the Gita's psychological insurance — do not lose heart while you read what follows; the orientation you have can be deepened, and you are already pointed the right way.
+                The chapter is going to spend the next ten verses describing the closing qualities, and the descriptions are unflattering. Without 16.5 as the frame, the descriptions would be discouraging. With 16.5 as the frame, they become a map of what to subtract. The verse is the Gita's psychological insurance, do not lose heart while you read what follows; the orientation you have can be deepened, and you are already pointed the right way.
               </div>
             </div>
           </div>
@@ -766,11 +768,11 @@ export default function ChapterPage16() {
         <h2 id="no-discernment">When Discernment Is Lost, Everything Else Goes With It</h2>
 
         <p>
-          Verse 16.7 describes what is missing in the orientation Krishna calls demonic. It is not, primarily, viciousness. It is the loss of discernment between what should be done and what should be left alone — <em>pravṛtti</em> and <em>nivṛtti</em>. Once discernment goes, the rest follows. There is no purity. No noble conduct. No truthfulness. Not because these are deliberately rejected, but because the capacity to choose them has been hollowed out.
+          Verse 16.7 describes what is missing in the orientation Krishna calls demonic. It is not, primarily, viciousness. It is the loss of discernment between what should be done and what should be left alone (<em>pravṛtti</em> and <em>nivṛtti</em>). Once discernment goes, the rest follows. There is no purity. No noble conduct. No truthfulness. Not because these are deliberately rejected, but because the capacity to choose them has been hollowed out.
         </p>
 
         <p>
-          This is the Gita's most subtle point about ethical failure. The failure is not heroic, not Faustian, not dramatic. It is more boring. It is the slow loss of the ability to tell good from bad, important from trivial, kindness from cruelty. Once that capacity is dulled — by years of small compromises, by surrounding yourself with the wrong inputs, by repeated dishonesty — the rest of the noble life becomes impossible because the steering mechanism is no longer functional. The chapter is saying: protect discernment. It is the gear that drives everything else.
+          This is the Gita's most subtle point about ethical failure. The failure is not heroic, not Faustian, not dramatic. It is more boring. It is the slow loss of the ability to tell good from bad, important from trivial, kindness from cruelty. Once that capacity is dulled, by years of small compromises, by surrounding yourself with the wrong inputs, by repeated dishonesty, the rest of the noble life becomes impossible because the steering mechanism is no longer functional. The chapter is saying: protect discernment. It is the gear that drives everything else.
         </p>
 
         <div className="shloka-card">
@@ -815,7 +817,7 @@ export default function ChapterPage16() {
         <h2 id="endless-desire">The Spiral of Endless Wanting</h2>
 
         <p>
-          Verses 16.10 through 16.16 describe the spiral that the closing orientation produces. Each verse is more uncomfortable than the last, and the discomfort is the point. The person captured by endless desire — <em>duṣpūram kāmam</em>, desire that can never be filled — gets pulled into hypocrisy, arrogance, intoxication. Then, deluded, they hold onto false beliefs and impure practices. They make plans that center on accumulation. Tomorrow I will have this. Already I have so much. Soon I will defeat that enemy. They identify enemies. They identify rivals. They construct a whole reality around appetite.
+          Verses 16.10 through 16.16 describe the spiral that the closing orientation produces. Each verse is more uncomfortable than the last, and the discomfort is the point. The person captured by endless desire (<em>duṣpūram kāmam</em>, desire that can never be filled) gets pulled into hypocrisy, arrogance, intoxication. Then, deluded, they hold onto false beliefs and impure practices. They make plans that center on accumulation. Tomorrow I will have this. Already I have so much. Soon I will defeat that enemy. They identify enemies. They identify rivals. They construct a whole reality around appetite.
         </p>
 
         <p>
@@ -843,7 +845,7 @@ export default function ChapterPage16() {
             <div>
               <div className="shloka-col-label">The Sanskrit word that anchors the verse</div>
               <div className="shloka-insight">
-                <em>Duṣpūram</em> — that which cannot be filled. The defining feature of the orientation is not the wanting itself. It is the structural impossibility of satisfaction. The wanting renews faster than it can be met. Anyone who has chased a goal only to discover, on reaching it, that the goal had moved — knows this verse from inside.
+                <em>Duṣpūram</em>: that which cannot be filled. The defining feature of the orientation is not the wanting itself. It is the structural impossibility of satisfaction. The wanting renews faster than it can be met. Anyone who has chased a goal only to discover, on reaching it, that the goal had moved, knows this verse from inside.
               </div>
             </div>
           </div>
@@ -867,7 +869,7 @@ export default function ChapterPage16() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Shaken by many conflicting thoughts, wrapped in the net of confusion, attached to the enjoyment of desires — they fall into an impure lower realm.
+                Shaken by many conflicting thoughts, wrapped in the net of confusion, attached to the enjoyment of desires, they fall into an impure lower realm.
               </div>
             </div>
             <div>
@@ -900,11 +902,11 @@ export default function ChapterPage16() {
         <h2 id="ego-and-divine">The Ego That Attacks the Very Thing It Lives Inside</h2>
 
         <p>
-          Verse 16.18 is one of the chapter's most psychologically precise observations. The person captured by ego, force, arrogance, desire, and anger — Krishna says — actually hates him, who dwells in their own body and in the bodies of others. The hostility is directed, unwittingly, at the divine presence that is the very basis of the hostile person's existence.
+          Verse 16.18 is one of the chapter's most psychologically precise observations. The person captured by ego, force, arrogance, desire, and anger, Krishna says, actually hates him, who dwells in their own body and in the bodies of others. The hostility is directed, unwittingly, at the divine presence that is the very basis of the hostile person's existence.
         </p>
 
         <p>
-          Read carefully, this is the chapter's deepest tragedy. The ego does not just suffer; it specifically attacks the source it cannot live without. Every act of arrogance toward another person is an attack on the Divine present in that person. Every act of self-aggrandisement is a betrayal of the Divine present in oneself. The ego, in this account, is at war with its own life-support. The verse names the absurdity of this without rancor — just precision. You cannot win this fight, because you are fighting the thing keeping you alive.
+          Read carefully, this is the chapter's deepest tragedy. The ego does not just suffer; it specifically attacks the source it cannot live without. Every act of arrogance toward another person is an attack on the Divine present in that person. Every act of self-aggrandisement is a betrayal of the Divine present in oneself. The ego, in this account, is at war with its own life-support. The verse names the absurdity of this without rancor, just precision. You cannot win this fight, because you are fighting the thing keeping you alive.
         </p>
 
         <div className="shloka-card">
@@ -922,13 +924,13 @@ export default function ChapterPage16() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Taking refuge in ego, force, arrogance, desire, and anger — they hate me, who dwells in their own body and in the bodies of others, and they find fault with my qualities.
+                Taking refuge in ego, force, arrogance, desire, and anger, they hate me, who dwells in their own body and in the bodies of others, and they find fault with my qualities.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The structural absurdity</div>
               <div className="shloka-insight">
-                The ego is at war with the very ground it stands on. The verse is not a moralism. It is an observation about why ego-driven life feels so unsettled — you cannot relax in a place where you are simultaneously fighting the floor.
+                The ego is at war with the very ground it stands on. The verse is not a moralism. It is an observation about why ego-driven life feels so unsettled, you cannot relax in a place where you are simultaneously fighting the floor.
               </div>
             </div>
           </div>
@@ -946,14 +948,14 @@ export default function ChapterPage16() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="three-gates">The Three Gates of Ruin — Drop These Three</h2>
+        <h2 id="three-gates">The Three Gates of Ruin, Drop These Three</h2>
 
         <p>
           After the long diagnosis, the chapter's climax arrives in verse 16.21 as one of the cleanest summaries in the entire Gita. Krishna names three forces and tells Arjuna to abandon all three. Desire. Anger. Greed. <em>Kāma. Krodha. Lobha</em>. These are the three gates of self-destruction. Dropping them, the very next verse says, frees a person to act for their own highest good and reach the highest state.
         </p>
 
         <p>
-          Notice the structure. The list of opening qualities at the start of the chapter was long — twenty-six items. The list of closing forces, in the climactic prescription, is short — just three. The asymmetry matters. To open a life requires the slow cultivation of many qualities. To close a life requires only three persistent ones. And therefore, conversely, to free a life requires not the cultivation of twenty-six things but the careful dropping of three. The Gita is offering a focused diagnostic: if you cannot work on the whole list of qualities, at least work on these three. Drop desire that can never be filled. Drop the anger that flares when desire is blocked. Drop the greed that wants more even when you already have enough. The three are linked. Dropping any one weakens the other two.
+          Notice the structure. The list of opening qualities at the start of the chapter was long, twenty-six items. The list of closing forces, in the climactic prescription, is short, just three. The asymmetry matters. To open a life requires the slow cultivation of many qualities. To close a life requires only three persistent ones. And therefore, conversely, to free a life requires not the cultivation of twenty-six things but the careful dropping of three. The Gita is offering a focused diagnostic: if you cannot work on the whole list of qualities, at least work on these three. Drop desire that can never be filled. Drop the anger that flares when desire is blocked. Drop the greed that wants more even when you already have enough. The three are linked. Dropping any one weakens the other two.
         </p>
 
         <div className="shloka-card">
@@ -1005,11 +1007,11 @@ export default function ChapterPage16() {
         <h2 id="standard">A Standard Higher Than Your Impulse</h2>
 
         <p>
-          The chapter closes with verses 16.23 and 16.24, which name a subtle but important point. Impulse cannot judge action. Doing whatever your impulse says, the Gita argues, leads neither to fulfilment nor to the highest aim. You need a standard outside the impulse itself — and that standard, the closing verse says, is the sacred teaching. The <em>śāstra</em>. The scriptures. The accumulated wisdom of the tradition.
+          The chapter closes with verses 16.23 and 16.24, which name a subtle but important point. Impulse cannot judge action. Doing whatever your impulse says, the Gita argues, leads neither to fulfilment nor to the highest aim. You need a standard outside the impulse itself, and that standard, the closing verse says, is the sacred teaching. The <em>śāstra</em>. The scriptures. The accumulated wisdom of the tradition.
         </p>
 
         <p>
-          Modern readers sometimes balk at the appeal to scripture as the standard. But read the verse generously. The Gita is not saying you should suspend judgment and obey a text. It is saying that your impulse, by itself, is not enough — because the impulse is precisely what the previous twenty verses described as captured. You need a reference point outside the captured system. The tradition is one such reference point. So is a wise teacher. So is your own deepest values, articulated when you were not in the grip of the impulse. The point is structural. Impulse is not the highest authority on what to do. Something steadier has to be.
+          Modern readers sometimes balk at the appeal to scripture as the standard. But read the verse generously. The Gita is not saying you should suspend judgment and obey a text. It is saying that your impulse, by itself, is not enough, because the impulse is precisely what the previous twenty verses described as captured. You need a reference point outside the captured system. The tradition is one such reference point. So is a wise teacher. So is your own deepest values, articulated when you were not in the grip of the impulse. The point is structural. Impulse is not the highest authority on what to do. Something steadier has to be.
         </p>
 
         <div className="shloka-card">
@@ -1033,7 +1035,7 @@ export default function ChapterPage16() {
             <div>
               <div className="shloka-col-label">Why impulse is not enough</div>
               <div className="shloka-insight">
-                If impulse were a reliable guide, the previous twenty verses would not have been necessary. The chapter has just described, in detail, what happens to a life governed by impulse — the spiral of insatiable desire, the loss of discernment, the captured ego. The standard the verse names is not authoritarian. It is, simply, something steadier than the impulse — anything that points you back to the qualities the chapter opened with.
+                If impulse were a reliable guide, the previous twenty verses would not have been necessary. The chapter has just described, in detail, what happens to a life governed by impulse, the spiral of insatiable desire, the loss of discernment, the captured ego. The standard the verse names is not authoritarian. It is, simply, something steadier than the impulse, anything that points you back to the qualities the chapter opened with.
               </div>
             </div>
           </div>
@@ -1044,7 +1046,7 @@ export default function ChapterPage16() {
 
         <div className="highlight-box">
           <p>
-            <strong>What Chapter 16 leaves you with:</strong> Two lists. The opening qualities, slowly cultivated, that build the noble life. The closing forces, persistently dropped, that stop the spiral. And one cleanest prescription: <em>kāma, krodha, lobha</em> — desire, anger, greed. Drop these three. The chapter does not give you elaborate technique. It gives you a focus. Three gates to close. The rest of the work becomes possible once they are.
+            <strong>What Chapter 16 leaves you with:</strong> Two lists. The opening qualities, slowly cultivated, that build the noble life. The closing forces, persistently dropped, that stop the spiral. And one cleanest prescription: <em>kāma, krodha, lobha</em>: desire, anger, greed. Drop these three. The chapter does not give you elaborate technique. It gives you a focus. Three gates to close. The rest of the work becomes possible once they are.
           </p>
         </div>
 
@@ -1094,11 +1096,11 @@ export default function ChapterPage16() {
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous</div>
-            <a href="/blogs/bhagwat-geeta-chapter-15" className="ch-nav-title">Chapter 15 — Purushottama Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-15" className="ch-nav-title">Chapter 15, Purushottama Yoga</a>
           </div>
           <div style={{ textAlign: 'right' }}>
             <div className="ch-nav-label">Next</div>
-            <a href="/blogs/bhagwat-geeta-chapter-17" className="ch-nav-title">Chapter 17 — Shraddhatraya Vibhaga Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-17" className="ch-nav-title">Chapter 17, Shraddhatraya Vibhaga Yoga</a>
           </div>
         </div>
 
@@ -1119,7 +1121,7 @@ export default function ChapterPage16() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 16 about?</div>
             <div className="faq-a">
-              Chapter 16, called Daivasura Sampad Vibhaga Yoga (the Yoga of the Distinction Between Divine and Demonic Natures), is the Gita's character-development chapter. Krishna lists about twenty-six qualities that make up the divine inner wealth (16.1-3), then describes the contrasting orientation that closes a life (16.4-16). The chapter ends with the famous prescription of 16.21: three gates of ruin — desire, anger, and greed — should be abandoned.
+              Chapter 16, called Daivasura Sampad Vibhaga Yoga (the Yoga of the Distinction Between Divine and Demonic Natures), is the Gita's character-development chapter. Krishna lists about twenty-six qualities that make up the divine inner wealth (16.1-3), then describes the contrasting orientation that closes a life (16.4-16). The chapter ends with the famous prescription of 16.21: three gates of ruin, desire, anger, and greed, should be abandoned.
             </div>
           </div>
           <div className="faq-item">
@@ -1131,7 +1133,7 @@ export default function ChapterPage16() {
           <div className="faq-item">
             <div className="faq-q">What are the three gates of hell in the Bhagavad Gita?</div>
             <div className="faq-a">
-              Verse 16.21 names three forces as the gates of self-destruction: <em>kāma</em> (desire that cannot be filled), <em>krodha</em> (anger when that desire is blocked), and <em>lobha</em> (greed that wants more even when enough is at hand). The verse says: 'These three are the gates of ruin, the destroyers of the self — therefore abandon these three.' The three form a single mechanism, and dropping any one starves the other two.
+              Verse 16.21 names three forces as the gates of self-destruction: <em>kāma</em> (desire that cannot be filled), <em>krodha</em> (anger when that desire is blocked), and <em>lobha</em> (greed that wants more even when enough is at hand). The verse says: 'These three are the gates of ruin, the destroyers of the self; therefore abandon these three.' The three form a single mechanism, and dropping any one starves the other two.
             </div>
           </div>
           <div className="faq-item">
@@ -1143,13 +1145,13 @@ export default function ChapterPage16() {
           <div className="faq-item">
             <div className="faq-q">Is Chapter 16 saying some people are demonic?</div>
             <div className="faq-a">
-              Read carefully, no. The chapter describes two inner orientations — the opening qualities and the closing ones — not two kinds of people. Verse 16.5 makes this explicit: Krishna immediately reassures Arjuna, 'Do not grieve — you are born with the divine nature.' The orientations are tendencies that can be cultivated or starved. The chapter is a map of qualities to grow and qualities to subtract, not a binary judgement on persons.
+              Read carefully, no. The chapter describes two inner orientations, the opening qualities and the closing ones, not two kinds of people. Verse 16.5 makes this explicit: Krishna immediately reassures Arjuna, 'Do not grieve, you are born with the divine nature.' The orientations are tendencies that can be cultivated or starved. The chapter is a map of qualities to grow and qualities to subtract, not a binary judgement on persons.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Why does the Gita say scripture should be the standard?</div>
             <div className="faq-a">
-              Verse 16.24 says that <em>śāstra</em> — the sacred teaching — should be the standard for deciding what should be done and what should not. The verse is not authoritarian. It is making a structural point: impulse alone is unreliable, because impulse is precisely what the previous twenty verses described as captured by desire, anger, and greed. You need a reference point outside the impulse — the accumulated wisdom of the tradition, a wise teacher, or your own deepest values when not in the grip of reactivity.
+              Verse 16.24 says that <em>śāstra</em> (the sacred teaching) should be the standard for deciding what should be done and what should not. The verse is not authoritarian. It is making a structural point: impulse alone is unreliable, because impulse is precisely what the previous twenty verses described as captured by desire, anger, and greed. You need a reference point outside the impulse: the accumulated wisdom of the tradition, a wise teacher, or your own deepest values when not in the grip of reactivity.
             </div>
           </div>
         </div>
@@ -1164,19 +1166,19 @@ export default function ChapterPage16() {
           </a>
           <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
             <div className="related-card-label">Topic Guide</div>
-            <div className="related-card-title">Karma — what it actually means in the Gita</div>
+            <div className="related-card-title">Karma, what it actually means in the Gita</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-14" className="related-card">
             <div className="related-card-label">Chapter 14</div>
-            <div className="related-card-title">Gunatraya Vibhaga — The Three Forces</div>
+            <div className="related-card-title">Gunatraya Vibhaga, The Three Forces</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-17" className="related-card">
             <div className="related-card-label">Chapter 17</div>
-            <div className="related-card-title">Shraddhatraya Vibhaga — You Are What You Trust</div>
+            <div className="related-card-title">Shraddhatraya Vibhaga, You Are What You Trust</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-6" className="related-card">
             <div className="related-card-label">Chapter 6</div>
-            <div className="related-card-title">Dhyana Yoga — The Lamp That Does Not Flicker</div>
+            <div className="related-card-title">Dhyana Yoga, The Lamp That Does Not Flicker</div>
           </a>
           </div>
         </div>
@@ -1186,7 +1188,7 @@ export default function ChapterPage16() {
             <div className="app-cta-eyebrow">Free iOS App</div>
             <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
             <p className="app-cta-desc">
-              The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+              The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
             </p>
             <div className="app-cta-features">
               <span>✦ Daily shloka in Sanskrit</span>

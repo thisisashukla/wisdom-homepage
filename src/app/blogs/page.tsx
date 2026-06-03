@@ -432,11 +432,12 @@ export default function BlogIndexPage() {
 
     <div className="blog-hero">
       <div className="blog-hero-inner">
-        <div className="blog-hero-label">Wisdom · Journal of Hindu Philosophy</div>
+        <div className="blog-hero-label">Wisdom · Reading the Bhagavad Gita</div>
         <h1>The Bhagavad Gita,<br /><em>read closely</em></h1>
         <p>
-          Chapter by chapter. Shloka by shloka. With Sanskrit, IAST, meaning,
-          and why it matters on a Tuesday morning in 2026.
+          All 18 chapters. Chapter by chapter, shloka by shloka. Sanskrit, IAST,
+          Hindi, and what the verse is actually saying, including the parts that
+          most summaries skip.
         </p>
       </div>
     </div>
@@ -445,11 +446,11 @@ export default function BlogIndexPage() {
       {/* APP BANNER */}
       <div className="app-banner">
         <div>
-          <h3>One shloka a day. In Sanskrit. With meaning that lands.</h3>
+          <h3>One verse a day. What it means right now.</h3>
           <p>
-            The Wisdom app delivers one verse from the Bhagavad Gita each
-            morning — Devanagari, transliteration, English meaning, deeper
-            explanation, and a private journal. Free on iPhone.
+            The Wisdom app delivers one Bhagavad Gita verse each morning:
+            Devanagari, transliteration, English meaning, and a guided
+            reflection practice. Free on iPhone.
           </p>
         </div>
         <a
@@ -464,7 +465,7 @@ export default function BlogIndexPage() {
 
       {/* CHAPTER STUDIES */}
       <div className="section-head">
-        <h2>Bhagavad Gita — <em>Chapter Studies</em></h2>
+        <h2>Bhagavad Gita, <em>Chapter Studies</em></h2>
         <span className="section-count">All 18 chapters published</span>
       </div>
 
@@ -504,7 +505,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Soul & Duty</span>
             </div>
             <div className="card-desc">
-              The philosophical heart of the Gita. The eternal soul, 2.47 (the most quoted verse in the world), the cascade from thought to ruin, and the portrait of a mind that cannot be broken — the sthitaprajna.
+              The philosophical heart of the Gita. The eternal soul, 2.47 (the most quoted verse in the world), the cascade from thought to ruin, and the portrait of a mind that cannot be broken: the sthitaprajna.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~18 min read</span>
@@ -526,7 +527,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Action & Dharma</span>
             </div>
             <div className="card-desc">
-              Why you cannot not act. The logic of yajna — how action becomes offering. Lokasamgraha: the weight of the example you set. Your own dharma, imperfectly — and why desire is the real enemy.
+              Why you cannot not act. The logic of yajna: how action becomes offering. Lokasamgraha: the weight of the example you set. Your own dharma, imperfectly. And why desire is the real enemy.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~14 min read</span>
@@ -548,7 +549,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Knowledge & Karma</span>
             </div>
             <div className="card-desc">
-              Yada yada hi dharmasya — the divine promise of renewal. The yoga of knowledge as the highest offering. How wisdom burns away past karma. And the Gita's model for how to learn from a real teacher.
+              Yada yada hi dharmasya: the divine promise of renewal. The yoga of knowledge as the highest offering. How wisdom burns away past karma. And the Gita's model for how to learn from a real teacher.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~13 min read</span>
@@ -570,7 +571,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Renunciation & Peace</span>
             </div>
             <div className="card-desc">
-              The lotus leaf teaching. Equal vision across all beings. Where inner happiness actually lives. And the quietly profound verse 5.29 — knowing the Divine as the sincere friend of all beings.
+              The lotus leaf teaching. Equal vision across all beings. Where inner happiness actually lives. And the quietly profound verse 5.29, where Krishna calls himself the sincere friend of all beings.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -592,7 +593,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Meditation</span>
             </div>
             <div className="card-desc">
-              The Gita's most practical chapter on meditation. Lift yourself by yourself. The lamp in a windless place. Arjuna's honest objection that the mind is like the wind — and the answer that has worked for two thousand years: practice and detachment.
+              The Gita's most practical chapter on meditation. Lift yourself by yourself. The lamp in a windless place. Arjuna's honest objection that the mind is like the wind, and the answer: practice and detachment.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~14 min read</span>
@@ -614,7 +615,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Knowledge & Realization</span>
             </div>
             <div className="card-desc">
-              The seam in the Gita where the camera pulls back. Pearls strung on a thread. The sacred in the taste of water. The four kinds of seekers. And the rare turning that ends all searching — <em>Vāsudeva is everything</em>.
+              The seam in the Gita where the camera pulls back. Pearls strung on a thread. The sacred in the taste of water. The four kinds of seekers. And the rare turning that ends all searching: <em>Vāsudeva is everything</em>.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -636,7 +637,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Death & Imperishable</span>
             </div>
             <div className="card-desc">
-              A chapter about death, and therefore about every moment that is not yet death. Whatever state the mind has practiced — that is what you become at the end. Brahma's day and night. The path that does not return.
+              A chapter about death, and therefore about every moment that is not yet death. Whatever state the mind has practiced, that is what you become at the end. Brahma's day and night. The path that does not return.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~11 min read</span>
@@ -658,7 +659,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Devotion & Refuge</span>
             </div>
             <div className="card-desc">
-              The king of all knowledge — supremely easy to practice. Leaf, flower, fruit, water. Whatever you do, offer it. And the line that has consoled more sufferers than possibly any other in the book — <em>my devotee never perishes</em>.
+              The king of all knowledge, supremely easy to practice. Leaf, flower, fruit, water. Whatever you do, offer it. And the line that has consoled more sufferers than possibly any other in the book: <em>my devotee never perishes</em>.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~13 min read</span>
@@ -680,7 +681,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Divine Manifestations</span>
             </div>
             <div className="card-desc">
-              Where to look for the Divine: in everything that shines. The lamp lit inside the heart. The Self at the heart of every being. And the closing reveal — the whole universe rests on a single fragment.
+              Where to look for the Divine: in everything that shines. The lamp lit inside the heart. The Self at the heart of every being. And the closing reveal: the whole universe rests on a single fragment.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~13 min read</span>
@@ -702,7 +703,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Cosmic Form</span>
             </div>
             <div className="card-desc">
-              Arjuna asked to see. Krishna gave him what he asked for. A thousand suns. Mouths like fire. <em>I am Time, the destroyer of worlds.</em> And the gentler closing — only devotion sees this.
+              Arjuna asked to see. Krishna gave him what he asked for. A thousand suns. Mouths like fire. <em>I am Time, the destroyer of worlds.</em> And the gentler closing: only devotion sees this.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~16 min read</span>
@@ -724,7 +725,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Devotion</span>
             </div>
             <div className="card-desc">
-              The shortest chapter, and one of the most practical. The four-step ladder for when meditation is too hard. And the portrait of the devotee Krishna calls dear — measured by friendliness, not by belief.
+              The shortest chapter, and one of the most practical. The four-step ladder for when meditation is too hard. And the portrait of the devotee Krishna calls dear: measured by friendliness, not by belief.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~11 min read</span>
@@ -746,7 +747,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Self & Awareness</span>
             </div>
             <div className="card-desc">
-              The Gita's most precise piece of metaphysical work. Your body, your moods, your reactions — all observed. By something that is not them. The foundation underneath every other teaching.
+              The Gita's most precise piece of metaphysical work. Your body, your moods, your reactions, all observed. By something that is not them. The foundation underneath every other teaching.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~13 min read</span>
@@ -768,7 +769,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Three Gunas</span>
             </div>
             <div className="card-desc">
-              Why some days are clear, some restless, some you cannot get off the couch. Sattva, rajas, tamas — the Gita's psychology of mood. And the unwavering devotion that goes beyond all three.
+              Why some days are clear, some restless, some you cannot get off the couch. Sattva, rajas, tamas: the Gita's psychology of mood. And the unwavering devotion that goes beyond all three.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -790,7 +791,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Supreme Self</span>
             </div>
             <div className="card-desc">
-              An upside-down tree. The sword of detachment. A spark of the eternal in every being. The fire that digests your dinner. And the name Krishna finally claims — Purushottama, the Self beyond every other self.
+              An upside-down tree. The sword of detachment. A spark of the eternal in every being. The fire that digests your dinner. And the name Krishna finally claims: Purushottama, the Self beyond every other self.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~11 min read</span>
@@ -812,7 +813,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Character & Ego</span>
             </div>
             <div className="card-desc">
-              The qualities that open a life and the ones that close it. The spiral of endless desire. The three gates of ruin — <em>kāma, krodha, lobha</em> — and why dropping them is the only ladder out.
+              The qualities that open a life and the ones that close it. The spiral of endless desire. The three gates of ruin: <em>kāma, krodha, lobha</em>. And why dropping them is the only ladder out.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~11 min read</span>
@@ -834,7 +835,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Faith & Action</span>
             </div>
             <div className="card-desc">
-              You are made of your trust — whatever you trust, that is what you become. Three kinds of food, austerity, giving. Om Tat Sat. And the closing claim — action without trust transforms nothing.
+              You are made of your trust. Whatever you trust, that is what you become. Three kinds of food, austerity, giving. Om Tat Sat. And the closing claim: action without trust transforms nothing.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -856,7 +857,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Liberation</span>
             </div>
             <div className="card-desc">
-              Seventy-eight verses to close everything. Five causes of any action. Your own duty over a borrowed perfection. And the most secret verse of all — <em>abandon every duty, take refuge in me alone</em>.
+              Seventy-eight verses to close everything. Five causes of any action. Your own duty over a borrowed perfection. And the most secret verse of all: <em>abandon every duty, take refuge in me alone</em>.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~20 min read</span>
@@ -868,7 +869,7 @@ export default function BlogIndexPage() {
 
       {/* TOPIC GUIDES */}
       <div className="section-head" style={{marginTop: '56px'}}>
-        <h2>Gita Teachings — <em>Topic Guides</em></h2>
+        <h2>Gita Teachings, <em>Topic Guides</em></h2>
         <span className="section-count">6 articles published</span>
       </div>
 
@@ -877,7 +878,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/krishna-three-paths-bhagavad-gita" className="article-card" data-mp-article="Krishna Three Paths">
           <div className="card-thumb card-thumb-3paths">
             <div className="card-chapter-badge">Topic Guide · The Three Yogas</div>
-            <div className="card-thumb-title">Krishna&apos;s Three Paths —<br /><em>Karma, Jnana, Bhakti and Where They Meet</em></div>
+            <div className="card-thumb-title">Krishna&apos;s Three Paths:<br /><em>Karma, Jnana, Bhakti and Where They Meet</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -886,7 +887,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Deep Read</span>
             </div>
             <div className="card-desc">
-              Krishna does not say there is one way. He lays out three — Action, Wisdom, Devotion — each shaped for a different temperament, all converging on the same reality. Grounded in the verses, with parallels from Tulsidas and modern psychology.
+              Krishna does not say there is one way. He lays out three: Action, Wisdom, Devotion, each shaped for a different temperament, all converging on the same reality. Grounded in the verses, with parallels from Tulsidas and modern psychology.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~18 min read</span>
@@ -899,7 +900,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health" className="article-card" data-mp-article="Beyond Bhagavad Gita Quotes">
           <div className="card-thumb card-thumb-gita">
             <div className="card-chapter-badge">Topic Guide · 7 Gitas · Mental &amp; Spiritual Health</div>
-            <div className="card-thumb-title">Beyond the Bhagavad Gita —<br /><em>7 Lesser-Known Gitas on Inner Peace</em></div>
+            <div className="card-thumb-title">Beyond the Bhagavad Gita:<br /><em>7 Lesser-Known Gitas on Inner Peace</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -1055,9 +1056,15 @@ export default function BlogIndexPage() {
       </p>
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  ·
+        <a href="/blogs">Blog</a>  ·
+        <a href="/gita">Bhagavad Gita</a>  ·
         <a href="/privacy">Privacy</a>  ·
         <a href="/terms">Terms</a>  ·
+        <a href="/methodology">Methodology</a>  ·
         <a href="mailto:work.ankurshukla@gmail.com">Support</a>
+      </p>
+      <p style={{marginTop: '6px', fontSize: '11px', opacity: 0.7}}>
+        Wisdom editorial translations. Commentary AI-drafted, human-reviewed. <a href="/methodology">Methodology →</a>
       </p>
     </footer>
 

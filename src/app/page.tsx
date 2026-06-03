@@ -49,7 +49,7 @@ export default function HomePage() {
         </h1>
 
         <p className="hero-sub">
-          For 5,000 years, three paths have been quieting minds like yours —
+          For 5,000 years, three paths have been quieting minds like yours:
           Action, Wisdom, Devotion. Wisdom places you on yours and gives you a
           2-minute practice from the Bhagavad Gita each morning.
         </p>
@@ -114,7 +114,7 @@ export default function HomePage() {
     <div className="proof-bar">
       <div className="proof-inner">
         <div className="proof-item">
-          <strong>3 ancient paths</strong> — Action, Wisdom, Devotion
+          <strong>3 ancient paths</strong>: Action, Wisdom, Devotion
         </div>
         <div className="proof-item">
           <strong>2 minutes a day</strong>, one teaching at a time
@@ -136,7 +136,7 @@ export default function HomePage() {
           The mind hasn't changed.<br/>Only the world got louder.
         </h2>
         <p className="subtext" style={{"maxWidth": "560px", "margin": "0 auto"}}>
-          Anxiety, overthinking, disconnection, loss of direction — these aren't new problems.
+          Anxiety, overthinking, disconnection, loss of direction. These aren't new problems.
           Ancient cultures gave them names, mapped their roots, and built practices to move through them.
           We lost the map.
         </p>
@@ -161,7 +161,7 @@ export default function HomePage() {
             <div className="prob-icon">🧩</div>
             <h3>Disconnected from what's real</h3>
             <p>
-              Work, expectations, roles — pulling you in five directions
+              Work, expectations, roles, pulling you in five directions
               at once. None of them tell you who you actually are.
             </p>
           </div>
@@ -170,7 +170,7 @@ export default function HomePage() {
             <h3>No map for the inner life</h3>
             <p>
               Modern tools track your sleep and your steps. Nothing
-              guides what&apos;s happening inside — or where to go from here.
+              guides what&apos;s happening inside, or where to go from here.
             </p>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function HomePage() {
         </p>
 
         <div
-          aria-label="The three paths — Wisdom, Action, Devotion"
+          aria-label="The three paths: Wisdom, Action, Devotion"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -279,7 +279,7 @@ export default function HomePage() {
             <h3>Jnana Yoga</h3>
             <div className="path-yoga">THE WAY OF THE SEEKER</div>
             <p className="path-desc" style={{minHeight: "112px"}}>
-              For those who need to understand — who can&apos;t find peace
+              For those who need to understand, who can&apos;t find peace
               without clarity, who feel lost in the gap between what they know
               and what they feel.
             </p>
@@ -293,7 +293,7 @@ export default function HomePage() {
                 </div>
                 <div className="node-label">
                   <strong>Stillness <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
-                  <span>Sthitaprajna — the observer that does not move</span>
+                  <span>Sthitaprajna: the observer that does not move</span>
                 </div>
               </div>
               <div className="path-node">
@@ -304,42 +304,42 @@ export default function HomePage() {
                 </div>
                 <div className="node-label">
                   <strong>Clarity <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
-                  <span>Viveka — seeing what is real vs. what fear adds</span>
+                  <span>Viveka: seeing what is real vs. what fear adds</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Witness</strong>
-                  <span>Sakshi — the self that watches without becoming</span>
+                  <span>Sakshi: the self that watches without becoming</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Inquiry</strong>
-                  <span>Vichara — asking who is asking</span>
+                  <span>Vichara: asking who is asking</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Equanimity</strong>
-                  <span>Samatvam — stillness that survives contact with life</span>
+                  <span>Samatvam: stillness that survives contact with life</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Vairagya <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· SHARED WITH ACTION</span></strong>
-                  <span>Release of grip — engagement without enslavement</span>
+                  <span>Release of grip. Engagement without enslavement.</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled" style={{boxShadow: "0 0 0 4px rgba(245, 201, 106, 0.18), 0 0 18px rgba(245, 201, 106, 0.45)"}}></div>
                 <div className="node-label">
                   <strong style={{color: "#f5c96a"}}>Gyan Mastery <span style={{fontSize: "10.5px", letterSpacing: "0.08em", opacity: 0.75}}>★</span></strong>
-                  <span>Jnanayogi — the knower who is beyond knowing</span>
+                  <span>Jnanayogi: the knower who is beyond knowing</span>
                 </div>
               </div>
             </div>
@@ -351,7 +351,7 @@ export default function HomePage() {
             <h3>Karma Yoga</h3>
             <div className="path-yoga">THE WAY OF THE DOER</div>
             <p className="path-desc" style={{minHeight: "112px"}}>
-              For those who need to move, act, and accomplish — but feel
+              For those who need to move, act, and accomplish, but feel
               consumed by outcomes, restless when idle, or trapped in cycles
               of doing more.
             </p>
@@ -365,7 +365,7 @@ export default function HomePage() {
                 </div>
                 <div className="node-label">
                   <strong>Pause <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
-                  <span>Antara Viraam — the gap before reaction</span>
+                  <span>Antara Viraam: the gap before reaction</span>
                 </div>
               </div>
               <div className="path-node">
@@ -376,49 +376,49 @@ export default function HomePage() {
                 </div>
                 <div className="node-label">
                   <strong>Purpose <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
-                  <span>Nishkama Karma — why you act</span>
+                  <span>Nishkama Karma: why you act</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Discipline</strong>
-                  <span>Sadhana — the architecture of consistent action</span>
+                  <span>Sadhana: the architecture of consistent action</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Duty</strong>
-                  <span>Svadharma — the work that is specifically yours</span>
+                  <span>Svadharma: the work that is specifically yours</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Effort</strong>
-                  <span>Purushartha — right striving without depletion</span>
+                  <span>Purushartha: right striving without depletion</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Patience</strong>
-                  <span>Titiksha — endurance without collapse</span>
+                  <span>Titiksha: endurance without collapse</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Vairagya <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· SHARED WITH WISDOM</span></strong>
-                  <span>Release of grip — engagement without enslavement</span>
+                  <span>Release of grip. Engagement without enslavement.</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled" style={{boxShadow: "0 0 0 4px rgba(245, 201, 106, 0.18), 0 0 18px rgba(245, 201, 106, 0.45)"}}></div>
                 <div className="node-label">
                   <strong style={{color: "#f5c96a"}}>Karma Mastery <span style={{fontSize: "10.5px", letterSpacing: "0.08em", opacity: 0.75}}>★</span></strong>
-                  <span>Karmayogi — the actor who is free</span>
+                  <span>Karmayogi: the actor who is free</span>
                 </div>
               </div>
             </div>
@@ -430,7 +430,7 @@ export default function HomePage() {
             <h3>Bhakti Yoga</h3>
             <div className="path-yoga">THE WAY OF THE HEART</div>
             <p className="path-desc" style={{minHeight: "112px"}}>
-              For those who feel deeply — who need to trust again, to
+              For those who feel deeply, who need to trust again, to
               reconnect, to find steadiness through surrender rather than
               control.
             </p>
@@ -444,7 +444,7 @@ export default function HomePage() {
                 </div>
                 <div className="node-label">
                   <strong>Trust <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
-                  <span>Shraddha — the willingness to lean</span>
+                  <span>Shraddha: the willingness to lean</span>
                 </div>
               </div>
               <div className="path-node">
@@ -455,42 +455,42 @@ export default function HomePage() {
                 </div>
                 <div className="node-label">
                   <strong>Connection <span style={{opacity: 0.55, fontWeight: 500, fontSize: "10.5px", letterSpacing: "0.06em"}}>· ENTRY</span></strong>
-                  <span>Kritajna — recognizing what was always there</span>
+                  <span>Kritajna: recognizing what was always there</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Devotion</strong>
-                  <span>Bhakti — sustained gratitude as a way of being</span>
+                  <span>Bhakti: sustained gratitude as a way of being</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Compassion</strong>
-                  <span>Karuna — feeling others&apos; pain without being consumed</span>
+                  <span>Karuna: feeling others&apos; pain without being consumed</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Acceptance</strong>
-                  <span>Prasada — receiving what life gives without resentment</span>
+                  <span>Prasada: receiving what life gives without resentment</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled"></div>
                 <div className="node-label">
                   <strong>Surrender</strong>
-                  <span>Sharanagati — putting down the performance of being fine</span>
+                  <span>Sharanagati: putting down the performance of being fine</span>
                 </div>
               </div>
               <div className="path-node">
                 <div className="node-dot filled" style={{boxShadow: "0 0 0 4px rgba(245, 201, 106, 0.18), 0 0 18px rgba(245, 201, 106, 0.45)"}}></div>
                 <div className="node-label">
                   <strong style={{color: "#f5c96a"}}>Bhakti Mastery <span style={{fontSize: "10.5px", letterSpacing: "0.08em", opacity: 0.75}}>★</span></strong>
-                  <span>Bhaktayogi — love as your natural state</span>
+                  <span>Bhaktayogi: love as your natural state</span>
                 </div>
               </div>
             </div>
@@ -545,7 +545,7 @@ export default function HomePage() {
 
         <p className="paths-note">
           Wisdom reads your struggles and places you on the right path.
-          <strong> You don't choose — you discover.</strong>
+          <strong> You don't choose. You discover.</strong>
         </p>
       </div>
     </section>
@@ -558,7 +558,7 @@ export default function HomePage() {
           Tell us what's heavy.<br/>Receive your path.<br/>Practice two minutes a day.
         </h2>
         <p className="subtext" style={{"maxWidth": "520px", "margin": "0 auto 60px"}}>
-          Wisdom isn't a content feed. It's a guided practice system — built around
+          Wisdom isn't a content feed. It's a guided practice system, built around
           the way ancient teachers actually taught.
         </p>
         <div className="steps">
@@ -573,11 +573,11 @@ export default function HomePage() {
           </div>
           <div className="step">
             <div className="step-num">2</div>
-            <h3>Receive your path — and your first teaching.</h3>
+            <h3>Receive your path. Your first teaching follows.</h3>
             <p>
               Based on how you struggle and what you need, Wisdom places you on
               one of three ancient paths. Your first teaching is chosen for where
-              you are right now — not a random quote.
+              you are right now. Not a random quote.
             </p>
           </div>
           <div className="step">
@@ -585,7 +585,7 @@ export default function HomePage() {
             <h3>Two minutes. One quote. One practice.</h3>
             <p>
               A quote arrives. Read what it means today.
-              Then your path&apos;s practice asks you to respond — one honest line,
+              Then your path&apos;s practice asks you to respond. One honest line,
               written privately. That&apos;s the loop.
             </p>
           </div>
@@ -626,7 +626,7 @@ export default function HomePage() {
             <h2>One quote. What it means today.<br/>Two minutes.</h2>
             <p>
               Every day, Wisdom delivers one teaching chosen for your current path
-              and node — not a random pull. The quote arrives with what it means
+              and node. Not a random pull. The quote arrives with what it means
               for your actual life right now, and a clear invitation to practice.
             </p>
             <ul className="check-list">
@@ -640,7 +640,7 @@ export default function HomePage() {
               </li>
               <li>
                 <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                &ldquo;What this means today&rdquo; — how it applies to your life right now
+                &ldquo;What this means today&rdquo;: how it applies to your life right now
               </li>
               <li>
                 <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
@@ -669,7 +669,7 @@ export default function HomePage() {
         </h2>
         <p className="subtext" style={{maxWidth: "580px", margin: "0 auto"}}>
           The seeker is asked to clarify. The doer is asked to commit. The
-          devoted is asked to offer. Same quote, three different invitations —
+          devoted is asked to offer. Same quote, three different invitations,
           so the teaching actually lands the way <em>you</em> need it to.
         </p>
 
@@ -723,7 +723,7 @@ export default function HomePage() {
               maxWidth: "280px",
             }}>
               The quote clarified something. Name it. One honest line, and the
-              insight lands — for you, not anyone else.
+              insight lands. Just for you.
             </p>
           </div>
 
@@ -765,7 +765,7 @@ export default function HomePage() {
               maxWidth: "280px",
             }}>
               The quote is asking to be lived. Pick one thing you&apos;ll do
-              differently today. Commit to it in writing — privately.
+              differently today. Commit to it in writing. Privately.
             </p>
           </div>
 
@@ -807,7 +807,7 @@ export default function HomePage() {
               maxWidth: "280px",
             }}>
               The quote is asking your heart to answer. Name who came to mind.
-              Offer one small thing — a word, a thought, an act.
+              Offer one small thing: a word, a thought, an act.
             </p>
           </div>
         </div>
@@ -835,7 +835,7 @@ export default function HomePage() {
             <span className="pill">Your Path Progress</span>
             <h2>Each practice moves you<br/>through your path.</h2>
             <p>
-              Wisdom isn't a daily quote app — it's a progression. Every practice
+              Wisdom isn't a daily quote app. It's a progression. Every practice
               advances you through nodes on your path. Watch yourself move from
               Connection to Devotion to Mastery, day by day. The sages built
               this as a journey. So did we.
@@ -843,7 +843,7 @@ export default function HomePage() {
             <ul className="check-list">
               <li>
                 <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                Nodes unlock as you practice — Connection, Devotion, Mastery
+                Nodes unlock as you practice: Connection, Devotion, Mastery
               </li>
               <li>
                 <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
@@ -855,7 +855,7 @@ export default function HomePage() {
               </li>
               <li>
                 <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                Wisdom grows when you return — every day counts
+                Wisdom grows when you return. Every day counts.
               </li>
             </ul>
           </div>
@@ -876,8 +876,8 @@ export default function HomePage() {
       <div className="wrap">
         <div className="split flip">
           <div className="split-text">
-            <span className="pill">The Sacred Verse</span>
-            <h2>Every quote is a<br/>Bhagavad Gita verse.</h2>
+            <span className="pill">The Scripture</span>
+            <h2>Every quote traces back to<br/>a Bhagavad Gita verse.</h2>
             <p>
               Wisdom draws every quote from the Bhagavad Gita and core Hindu
               scriptures. When a quote resonates, you can go deeper into the
@@ -895,7 +895,7 @@ export default function HomePage() {
               </li>
               <li>
                 <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                Chapter and verse reference — every teaching is traceable
+                Chapter and verse reference. Every teaching is traceable.
               </li>
               <li>
                 <span className="ck"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="#1a0606" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
@@ -930,10 +930,10 @@ export default function HomePage() {
         <div>
           <div className="eyebrow">The full scripture, online</div>
           <h2 className="heading" style={{"marginBottom": "18px"}}>
-            The Bhagavad Gita —<br/><em>read every verse, free.</em>
+            The Bhagavad Gita.<br/><em>Read every verse, free.</em>
           </h2>
           <p className="subtext" style={{"marginBottom": "26px"}}>
-            Wisdom has put the entire Bhagavad Gita on this site —
+            Wisdom has put the entire Bhagavad Gita on this site:
             all 18 chapters, all 700 verses, in Sanskrit, Hindi, and English. Each verse on its own
             page, with a one-line essence, the speaker named, and cross-links by theme.
             No login. No paywall. Just the scripture.
@@ -942,25 +942,25 @@ export default function HomePage() {
             <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
               <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
               <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
-                <strong style={{"color": "var(--text)"}}>18 chapters</strong> — Sankhya Yoga, Karma Yoga, Bhakti Yoga, Moksha Sanyasa Yoga, and all the rest.
+                <strong style={{"color": "var(--text)"}}>18 chapters</strong>: Sankhya Yoga, Karma Yoga, Bhakti Yoga, Moksha Sanyasa Yoga, and all the rest.
               </span>
             </li>
             <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
               <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
               <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
-                <strong style={{"color": "var(--text)"}}>One page per verse</strong> — Sanskrit Devanagari, Hindi anuvad, English translation.
+                <strong style={{"color": "var(--text)"}}>One page per verse</strong>: Sanskrit Devanagari, Hindi anuvad, English translation.
               </span>
             </li>
             <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
               <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
               <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
-                <strong style={{"color": "var(--text)"}}>Browse by theme</strong> — karma, dharma, bhakti, vairagya, the steady mind. The Gita organized around the questions you bring.
+                <strong style={{"color": "var(--text)"}}>Browse by theme</strong>: karma, dharma, bhakti, vairagya, the steady mind. The Gita organized around the questions you bring.
               </span>
             </li>
             <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
               <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
               <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
-                <strong style={{"color": "var(--text)"}}>Hindi mirror</strong> at <a href="/hi/gita" hrefLang="hi" style={{"color": "var(--gold-light)"}}>/hi/gita</a> — every verse in Hindi-first layout.
+                <strong style={{"color": "var(--text)"}}>Hindi mirror</strong> at <a href="/hi/gita" hrefLang="hi" style={{"color": "var(--gold-light)"}}>/hi/gita</a>: every verse in Hindi-first layout.
               </span>
             </li>
           </ul>
@@ -1090,7 +1090,7 @@ export default function HomePage() {
           A different kind of<br/>mental wellness app.
         </h2>
         <p className="subtext" style={{"maxWidth": "520px", "margin": "0 auto"}}>
-          Not mindfulness. Not motivation. Ancient teachings — made into
+          Not mindfulness. Not motivation. Ancient teachings, brought into
           a daily practice for the life you're actually living.
         </p>
         <div className="about-grid">
@@ -1099,7 +1099,7 @@ export default function HomePage() {
             <h3>What is Wisdom?</h3>
             <p>
               Wisdom is an iPhone app for daily practice rooted in the Bhagavad Gita.
-              You choose your path — Action, Wisdom, or Devotion — and receive one
+              You choose your path (Action, Wisdom, or Devotion) and receive one
               2-minute guided teaching each day, drawn from Hindu scriptures. Each
               practice has a verse, a modern meaning, and an offering prompt for your reflection.
             </p>
@@ -1108,8 +1108,7 @@ export default function HomePage() {
             <div className="about-card-icon">🧘</div>
             <h3>Who is Wisdom for?</h3>
             <p>
-              Wisdom is for anyone feeling restless, overwhelmed, disconnected, or directionless —
-              and open to a different lens. Whether you&apos;ve read the Gita before or never heard of it,
+              Wisdom is for anyone feeling restless, overwhelmed, disconnected, or directionless, and open to a different lens. Whether you&apos;ve read the Gita before or never heard of it,
               Wisdom meets you where you are and places you on the path that fits how you actually think and feel.
             </p>
           </div>
@@ -1117,7 +1116,7 @@ export default function HomePage() {
             <div className="about-card-icon">📖</div>
             <h3>Why ancient wisdom?</h3>
             <p>
-              Modern approaches to mental wellness treat symptoms. The Bhagavad Gita goes to the source —
+              Modern approaches to mental wellness treat symptoms. The Bhagavad Gita goes to the source:
               the nature of the mind, the ego, the self. A civilization that saw clearly 5,000 years ago
               left behind precise instructions. Wisdom makes those instructions available in two minutes a day.
             </p>
@@ -1158,7 +1157,7 @@ export default function HomePage() {
               </svg>
             </button>
             <div className="faq-a">
-              When you first open Wisdom, it asks you a few honest questions — what&apos;s been weighing on you,
+              When you first open Wisdom, it asks you a few honest questions: what&apos;s been weighing on you,
               how you usually respond when life gets heavy, and what you want to achieve. Based on your answers,
               Wisdom places you on the path that fits how you actually think, feel, and act. You can also
               switch between paths or explore all three as your practice deepens.
@@ -1174,7 +1173,7 @@ export default function HomePage() {
             </button>
             <div className="faq-a">
               Wisdom is a spiritual practice app, not a clinical mental health tool. That said, many users
-              find it deeply calming and clarifying — especially for the kind of anxiety that comes from
+              find it deeply calming and clarifying, especially for the kind of anxiety that comes from
               overthinking, loss of direction, or feeling disconnected from meaning. The Bhagavad Gita
               addresses the root causes of mental restlessness directly. If you&apos;re experiencing serious
               mental health challenges, we encourage you to also seek professional support.
@@ -1189,7 +1188,7 @@ export default function HomePage() {
               </svg>
             </button>
             <div className="faq-a">
-              No. Wisdom is built for complete beginners. You don&apos;t need any prior knowledge — every
+              No. Wisdom is built for complete beginners. You don&apos;t need any prior knowledge. Every
               teaching comes with a clear, plain-English explanation of what the verse means and how it
               applies to your life right now. The Sanskrit text is there if you want it, but never required.
             </div>
@@ -1204,8 +1203,8 @@ export default function HomePage() {
             </button>
             <div className="faq-a">
               Two minutes. One teaching arrives, you read what it means today, and write one honest
-              reflection in the offering practice. That&apos;s the complete loop. You can go deeper — read
-              the full Sanskrit verse and commentary — but the core practice is always two minutes.
+              reflection in the offering practice. That&apos;s the complete loop. You can go deeper: read
+              the full Sanskrit verse and commentary. The core practice is always two minutes.
             </div>
           </div>
 
@@ -1219,7 +1218,7 @@ export default function HomePage() {
             <div className="faq-a">
               Wisdom is free to download. The free version lets you try your first practice and see today&apos;s
               teaching. The subscription (3 days free, then monthly or yearly) unlocks the full daily practice
-              system — your path, all nodes, the reflection journal, and access to all three paths as you
+              system: your path, all nodes, the reflection journal, and access to all three paths as you
               grow. It&apos;s available on the App Store for iPhone.
             </div>
           </div>
@@ -1266,6 +1265,9 @@ export default function HomePage() {
           Wisdom
         </div>
         <p className="footer-copy">© 2026 Wisdom · Ankur Shukla</p>
+        <p style={{"fontSize": "11px", "color": "var(--text-dimmer)", "marginTop": "4px"}}>
+          Wisdom editorial translations. Commentary AI-drafted, human-reviewed. <a href="/methodology" style={{"color": "var(--text-dimmer)"}}>Methodology →</a>
+        </p>
         <div style={{"display": "flex", "alignItems": "center", "gap": "20px", "flexWrap": "wrap"}}>
           <a
             href="https://x.com/sansearchapp"
@@ -1286,6 +1288,7 @@ export default function HomePage() {
           <ul className="footer-links">
             <li><a href="/privacy">Privacy</a></li>
             <li><a href="/terms">Terms</a></li>
+            <li><a href="/methodology">Methodology</a></li>
             <li><a href="mailto:work.ankurshukla@gmail.com">Support</a></li>
           </ul>
         </div>

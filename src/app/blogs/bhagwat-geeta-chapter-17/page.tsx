@@ -3,21 +3,21 @@ import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 17 Summary – Key Verses & Meaning (Shraddhatraya Yoga)",
-  description: "Bhagavad Gita Chapter 17 (Shraddhatraya Vibhaga Yoga) — 28 verses on the three kinds of faith, sattvic food, austerity, giving, and the meaning of Om Tat Sat.",
+  description: "Bhagavad Gita Chapter 17 (Shraddhatraya Vibhaga Yoga), 28 verses on the three kinds of faith, sattvic food, austerity, giving, and the meaning of Om Tat Sat.",
   keywords: "bhagwat geeta chapter 17, bhagavad gita shraddhatraya vibhaga yoga, bhagwat geeta adhyay 17, three kinds of faith gita, sattvic rajasic tamasic food, shraddha bhagavad gita, austerity of body speech mind, om tat sat, Shraddhatraya Vibhaga Yoga meaning, three kinds of faith Bhagavad Gita, sattvic rajasic tamasic food Bhagavad Gita, Bhagavad Gita 17.3 shraddha mayo ayam purushah, Om Tat Sat meaning Bhagavad Gita, three austerities Bhagavad Gita body speech mind",
   openGraph: {
     title: "Bhagavad Gita Chapter 17 Summary – Key Verses & Meaning (Shraddhatraya Yoga)",
-    description: "Bhagavad Gita Chapter 17 — you are made of what you trust. The three kinds of faith. Om Tat Sat.",
+    description: "Bhagavad Gita Chapter 17, you are made of what you trust. The three kinds of faith. Om Tat Sat.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter17.webp", width: 1200, height: 675, alt: "Three lamps of different intensities — sattvic, rajasic, tamasic — illuminating the quality of faith, food, austerity, and giving. Chapter 17 of the Bhagavad Gita, Shraddhatraya Vibhaga Yoga." }],
+    images: [{ url: "https://wisdomquotes.in/assets/chapter17.webp", width: 1200, height: 675, alt: "Three lamps of different intensities, sattvic, rajasic, tamasic, illuminating the quality of faith, food, austerity, and giving. Chapter 17 of the Bhagavad Gita, Shraddhatraya Vibhaga Yoga." }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 17 Summary – Key Verses & Meaning (Shraddhatraya Yoga)",
-    description: "Bhagavad Gita Chapter 17 — you are made of what you trust. The three kinds of faith. Om Tat Sat.",
+    description: "Bhagavad Gita Chapter 17, you are made of what you trust. The three kinds of faith. Om Tat Sat.",
     images: ["https://wisdomquotes.in/assets/chapter17.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17" },
@@ -381,7 +381,7 @@ const schemas = [
         "name": "What is Bhagavad Gita Chapter 17 about?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Chapter 17, called Shraddhatraya Vibhaga Yoga (the Yoga of the Threefold Faith), is the Gita's audit of ordinary life. Krishna teaches that śraddhā (trust or faith) comes in three qualities — sattvic, rajasic, tamasic — and that this underlying quality shapes every ordinary action: food, sacrifice, austerity, giving. The chapter contains the famous claim of 17.3 — 'A person is made of trust; whatever one trusts, that is what one becomes' — and ends by naming Om Tat Sat as the three designations of the supreme reality."
+          "text": "Chapter 17, called Shraddhatraya Vibhaga Yoga (the Yoga of the Threefold Faith), is the Gita's audit of ordinary life. Krishna teaches that śraddhā (trust or faith) comes in three qualities — sattvic, rajasic, tamasic — and that this underlying quality shapes every ordinary action: food, sacrifice, austerity, giving. The chapter contains the famous claim of 17.3: 'A person is made of trust; whatever one trusts, that is what one becomes' , and ends by naming Om Tat Sat as the three designations of the supreme reality."
         }
       },
       {
@@ -389,7 +389,7 @@ const schemas = [
         "name": "What does shraddha mean in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Śraddhā is usually translated as 'faith,' but 'trust' captures more of its meaning. It is what you actually put your weight on — what you instinctively rely on when you act without thinking. Verse 17.3 makes the most pointed claim about it: 'A person is made of trust; whatever trust they hold, that is what they become.' You are not what you say you believe. You are what you reach for when you need reassurance."
+          "text": "Śraddhā is usually translated as 'faith,' but 'trust' captures more of its meaning. It is what you actually put your weight on, what you instinctively rely on when you act without thinking. Verse 17.3 makes the most pointed claim about it: 'A person is made of trust; whatever trust they hold, that is what they become.' You are not what you say you believe. You are what you reach for when you need reassurance."
         }
       },
       {
@@ -413,7 +413,7 @@ const schemas = [
         "name": "What does Bhagavad Gita 17.20 say about giving?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 17.20 defines sattvic giving as a gift offered with the conviction that giving is right, to a worthy recipient, at the right place and time, and to one who cannot return the favour (anupakāriṇe). The purest giving has no possibility of reciprocation. The moment exchange becomes possible, the gift starts to become a transaction. The Gita is naming what genuine giving looks like — and how rare it actually is."
+          "text": "Verse 17.20 defines sattvic giving as a gift offered with the conviction that giving is right, to a worthy recipient, at the right place and time, and to one who cannot return the favour (anupakāriṇe). The purest giving has no possibility of reciprocation. The moment exchange becomes possible, the gift starts to become a transaction. The Gita is naming what genuine giving looks like, and how rare it actually is."
         }
       },
       {
@@ -421,7 +421,7 @@ const schemas = [
         "name": "What does 'Om Tat Sat' mean in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In verse 17.23, Krishna names three traditional designations of Brahman, the supreme reality: Oṃ, Tat, Sat. The teaching is that sacred action requires a naming — an explicit reorientation toward something beyond the act itself. Om begins the act, Tat directs it, Sat grounds it in what is real. The naming changes the action's nature: a small offering with the right naming is more complete than a large offering performed for ego."
+          "text": "In verse 17.23, Krishna names three traditional designations of Brahman, the supreme reality: Oṃ, Tat, Sat. The teaching is that sacred action requires a naming: an explicit reorientation toward something beyond the act itself. Om begins the act, Tat directs it, Sat grounds it in what is real. The naming changes the action's nature: a small offering with the right naming is more complete than a large offering performed for ego."
         }
       }
     ]
@@ -618,11 +618,11 @@ export default function ChapterPage17() {
             <div className="chapter-badge-dot"></div>
           </div>
           <h1 className="article-title">
-            Bhagavad Gita Chapter 17 (Adhyay 17) —<br />
+            Bhagavad Gita Chapter 17 (Adhyay 17):<br />
             <em>Shraddhatraya Vibhaga Yoga</em>
           </h1>
           <p className="article-subtitle">
-            The chapter that says: you are made of your trust. The food, the sacrifice, the speech, the gift — each carries the quality of the faith underneath it. The Gita's most precise audit of ordinary life.
+            The chapter that says: you are made of your trust. The food, the sacrifice, the speech, the gift, each carries the quality of the faith underneath it. The Gita's most precise audit of ordinary life.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -632,6 +632,8 @@ export default function ChapterPage17() {
             <span className="meta-item">~12 min read</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 17 of 18</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -650,22 +652,22 @@ export default function ChapterPage17() {
           </figure>
 
         <p className="lead">
-          Chapter 17 is the Bhagavad Gita's deepest audit of ordinary life. Arjuna opens it with a practical question: what about people who do not know the scriptures and still act with faith? Are their actions valid? Krishna's answer becomes one of the most psychologically precise teachings in the book. He does not begin by talking about action. He begins by talking about <em>śraddhā</em> — faith, or more accurately, trust. The quality of any action, the chapter argues, is determined by the quality of the trust underneath it. The same outward act — a prayer, a meal, a donation, a discipline — carries entirely different consequences depending on what was being trusted when the act was performed.
+          Chapter 17 is the Bhagavad Gita's deepest audit of ordinary life. Arjuna opens it with a practical question: what about people who do not know the scriptures and still act with faith? Are their actions valid? Krishna's answer becomes one of the most psychologically precise teachings in the book. He does not begin by talking about action. He begins by talking about <em>śraddhā</em> (faith, or more accurately, trust). The quality of any action, the chapter argues, is determined by the quality of the trust underneath it. The same outward act (a prayer, a meal, a donation, a discipline) carries entirely different consequences depending on what was being trusted when the act was performed.
         </p>
 
         <p>
-          Then comes one of the Gita's most quietly devastating sentences. <em>Śraddhā-mayo'yaṃ puruṣaḥ, yo yac-chraddhaḥ sa eva saḥ</em>. The person is made of trust; whatever trust they hold, that is what they become. Read carefully, this is one of the strongest claims in any wisdom literature. You are not made of your beliefs, exactly. You are not made of your actions, exactly. You are made of what you have placed your weight on — what you have come to rely upon at the deepest level. Change that, and you change. Do not change that, and nothing else you do can fundamentally shift you. Chapter 17 is the unfolding of this single insight across the surfaces of daily life: food, sacrifice, austerity, charity.
+          Then comes one of the Gita's most quietly devastating sentences. <em>Śraddhā-mayo'yaṃ puruṣaḥ, yo yac-chraddhaḥ sa eva saḥ</em>. The person is made of trust; whatever trust they hold, that is what they become. Read carefully, this is one of the strongest claims in any wisdom literature. You are not made of your beliefs, exactly. You are not made of your actions, exactly. You are made of what you have placed your weight on, what you have come to rely upon at the deepest level. Change that, and you change. Do not change that, and nothing else you do can fundamentally shift you. Chapter 17 is the unfolding of this single insight across the surfaces of daily life: food, sacrifice, austerity, charity.
         </p>
 
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
-            <li><a href="#you-are-trust">You are what you trust — 17.3</a></li>
+            <li><a href="#you-are-trust">You are what you trust, 17.3</a></li>
             <li><a href="#food">Three kinds of food, three kinds of life</a></li>
             <li><a href="#austerity-three">Austerity of body, speech, and mind</a></li>
-            <li><a href="#speech">The discipline of speech — 17.15</a></li>
-            <li><a href="#giving">Three kinds of giving — 17.20 to 17.22</a></li>
-            <li><a href="#om-tat-sat">Om, Tat, Sat — the three names</a></li>
+            <li><a href="#speech">The discipline of speech, 17.15</a></li>
+            <li><a href="#giving">Three kinds of giving, 17.20 to 17.22</a></li>
+            <li><a href="#om-tat-sat">Om, Tat, Sat, the three names</a></li>
             <li><a href="#without-trust">What action without trust amounts to</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
@@ -682,14 +684,14 @@ export default function ChapterPage17() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="you-are-trust">You Are Made of Trust — and It Becomes What You Trust</h2>
+        <h2 id="you-are-trust">You Are Made of Trust, and It Becomes What You Trust</h2>
 
         <p>
-          Chapter 17 opens with Krishna's claim that <em>śraddhā</em> — faith, or more precisely, trust — comes in three varieties, matching the three gunas of Chapter 14. Sattvic trust. Rajasic trust. Tamasic trust. Same word, different qualities. Some people trust in clarity and steadiness. Some trust in achievement and recognition. Some trust in dullness and convention. The category you fall into is largely the result of your underlying nature.
+          Chapter 17 opens with Krishna's claim that <em>śraddhā</em> (faith, or more precisely, trust) comes in three varieties, matching the three gunas of Chapter 14. Sattvic trust. Rajasic trust. Tamasic trust. Same word, different qualities. Some people trust in clarity and steadiness. Some trust in achievement and recognition. Some trust in dullness and convention. The category you fall into is largely the result of your underlying nature.
         </p>
 
         <p>
-          Then verse 17.3 lands one of the strongest sentences in the Gita. <em>Śraddhā-mayo'yaṃ puruṣaḥ</em>. The person is made of trust. And then: <em>yo yac-chraddhaḥ sa eva saḥ</em>. Whatever a person trusts, that is what they become. The sentence does not say a person <em>has</em> trust. It says a person <em>is</em> trust — and specifically, the trust they have placed somewhere. Change the placement, change the person. This is the chapter's whole argument, condensed into eight Sanskrit syllables.
+          Then verse 17.3 lands one of the strongest sentences in the Gita. <em>Śraddhā-mayo'yaṃ puruṣaḥ</em>. The person is made of trust. And then: <em>yo yac-chraddhaḥ sa eva saḥ</em>. Whatever a person trusts, that is what they become. The sentence does not say a person <em>has</em> trust. It says a person <em>is</em> trust, specifically the trust they have placed somewhere. Change the placement, change the person. This is the chapter's whole argument, condensed into eight Sanskrit syllables.
         </p>
 
         <div className="shloka-card">
@@ -707,7 +709,7 @@ export default function ChapterPage17() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Each person's trust matches their inner nature, Arjuna. A person is made of trust — whatever one trusts, that is what one becomes.
+                Each person's trust matches their inner nature, Arjuna. A person is made of trust, whatever one trusts, that is what one becomes.
               </div>
             </div>
             <div>
@@ -741,7 +743,7 @@ export default function ChapterPage17() {
         <h2 id="food">What You Eat Reveals What You Trust</h2>
 
         <p>
-          After the metaphysical opening, Krishna gets remarkably specific. He turns to food. Each kind of food, he says, is dear to a different kind of person, and the preference reveals the underlying quality. Sattvic foods — fresh, nourishing, life-giving, balanced — are preferred by people whose trust is steady and clear. Rajasic foods — overly bitter, sharp, salty, hot — are preferred by the restless and the wanting. Tamasic foods — stale, leftover, putrid — are preferred by those whose inner life has dulled.
+          After the metaphysical opening, Krishna gets remarkably specific. He turns to food. Each kind of food, he says, is dear to a different kind of person, and the preference reveals the underlying quality. Sattvic foods, fresh, nourishing, life-giving, balanced, are preferred by people whose trust is steady and clear. Rajasic foods, overly bitter, sharp, salty, hot, are preferred by the restless and the wanting. Tamasic foods, stale, leftover, putrid, are preferred by those whose inner life has dulled.
         </p>
 
         <p>
@@ -763,7 +765,7 @@ export default function ChapterPage17() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Foods that increase longevity, clarity, strength, health, ease, and warmth — that are tasty, smooth, substantial, and heart-pleasing — are dear to the sattvic person.
+                Foods that increase longevity, clarity, strength, health, ease, and warmth, that are tasty, smooth, substantial, and heart-pleasing, are dear to the sattvic person.
               </div>
             </div>
             <div>
@@ -780,7 +782,7 @@ export default function ChapterPage17() {
 
         <div className="highlight-box">
           <p>
-            <strong>Why this is not just dietary advice:</strong> The chapter's structure is recursive. Every form of ordinary action — food, sacrifice, austerity, giving — gets the same three-fold analysis. The same underlying quality (trust) shows up everywhere. Your meal, your prayer, your charity, your discipline — all of them reveal what you actually rely on. Chapter 17 is asking you to look across all these surfaces and notice the pattern.
+            <strong>Why this is not just dietary advice:</strong> The chapter's structure is recursive. Every form of ordinary action (food, sacrifice, austerity, giving) gets the same three-fold analysis. The same underlying quality (trust) shows up everywhere. Your meal, your prayer, your charity, your discipline: all of them reveal what you actually rely on. Chapter 17 is asking you to look across all these surfaces and notice the pattern.
           </p>
         </div>
 
@@ -796,11 +798,11 @@ export default function ChapterPage17() {
         <h2 id="austerity-three">Austerity of Body, Speech, and Mind</h2>
 
         <p>
-          Verses 17.14 through 17.17 give one of the cleanest definitions of <em>tapas</em> — austerity — in any tradition. Krishna divides it into three layers. Austerity of body: reverence for the wise, cleanliness, simplicity, sexual restraint, non-violence. Austerity of speech: words that do not agitate, that are true, pleasant, beneficial, and the practice of study. Austerity of mind: serenity, gentleness, silence, self-control, purity of feeling. Three concentric circles. The outer is what you do with your body. The middle is what you do with your speech. The inner is the quality of your mind.
+          Verses 17.14 through 17.17 give one of the cleanest definitions of <em>tapas</em> (austerity) in any tradition. Krishna divides it into three layers. Austerity of body: reverence for the wise, cleanliness, simplicity, sexual restraint, non-violence. Austerity of speech: words that do not agitate, that are true, pleasant, beneficial, and the practice of study. Austerity of mind: serenity, gentleness, silence, self-control, purity of feeling. Three concentric circles. The outer is what you do with your body. The middle is what you do with your speech. The inner is the quality of your mind.
         </p>
 
         <p>
-          What makes this typology useful is its sequence. The Gita is not telling you to fix the inner life first. It is telling you that the three are linked, and that disciplines in any one can affect the other two. If you cannot yet quiet the mind, work on the speech. If you cannot yet train the speech, work on the body. Each circle supports the others. This is why traditional disciplines often begin with bodily practices — they are the easiest to grip, and they prepare conditions for the subtler work to become possible.
+          What makes this typology useful is its sequence. The Gita is not telling you to fix the inner life first. It is telling you that the three are linked, and that disciplines in any one can affect the other two. If you cannot yet quiet the mind, work on the speech. If you cannot yet train the speech, work on the body. Each circle supports the others. This is why traditional disciplines often begin with bodily practices, they are the easiest to grip, and they prepare conditions for the subtler work to become possible.
         </p>
 
         <div className="shloka-card">
@@ -818,13 +820,13 @@ export default function ChapterPage17() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Serenity of mind, gentleness, silence, self-control, and purity of feeling — this is called the austerity of the mind.
+                Serenity of mind, gentleness, silence, self-control, and purity of feeling, this is called the austerity of the mind.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">Why "austerity of mind" is the hardest</div>
               <div className="shloka-insight">
-                The list is short, but each item is difficult. Serenity. Gentleness. Silence. Self-control. Purity of feeling. None of these can be performed for an audience. They are entirely interior. The Gita is naming the most demanding work of all — the slow training of how the mind moves when no one is watching it.
+                The list is short, but each item is difficult. Serenity. Gentleness. Silence. Self-control. Purity of feeling. None of these can be performed for an audience. They are entirely interior. The Gita is naming the most demanding work of all, the slow training of how the mind moves when no one is watching it.
               </div>
             </div>
           </div>
@@ -845,7 +847,7 @@ export default function ChapterPage17() {
         <h2 id="speech">Words That Do Not Agitate, That Are True, That Help</h2>
 
         <p>
-          Verse 17.15 deserves its own pause. The Gita defines austerity of speech as words that meet four criteria. <em>Anudvega-karam</em> — does not agitate. <em>Satya</em> — true. <em>Priya-hita</em> — pleasant and beneficial. And the practice of study and self-reflection. Four standards. Most modern speech fails at least one. Most spiritual speech, in particular, tends to fail the first — words that comfort but agitate the long-term mind, or words that are technically true but delivered without care for the hearing.
+          Verse 17.15 deserves its own pause. The Gita defines austerity of speech as words that meet four criteria. <em>Anudvega-karam</em>: does not agitate. <em>Satya</em>: true. <em>Priya-hita</em>: pleasant and beneficial. And the practice of study and self-reflection. Four standards. Most modern speech fails at least one. Most spiritual speech, in particular, tends to fail the first: words that comfort but agitate the long-term mind, or words that are technically true but delivered without care for the hearing.
         </p>
 
         <p>
@@ -867,7 +869,7 @@ export default function ChapterPage17() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Speech that does not agitate, that is truthful, pleasant, and beneficial, together with study and practice of the sacred — this is called the austerity of speech.
+                Speech that does not agitate, that is truthful, pleasant, and beneficial, together with study and practice of the sacred, this is called the austerity of speech.
               </div>
             </div>
             <div>
@@ -884,7 +886,7 @@ export default function ChapterPage17() {
 
         <div className="pull-quote">
           <blockquote>
-            "Speech that does not agitate, that is true, pleasant, and beneficial — this is the austerity of speech."
+            "Speech that does not agitate, that is true, pleasant, and beneficial, this is the austerity of speech."
           </blockquote>
           <cite>Bhagavad Gita 17.15</cite>
         </div>
@@ -901,11 +903,11 @@ export default function ChapterPage17() {
         <h2 id="giving">The Quality of a Gift Is in the Giving, Not the Object</h2>
 
         <p>
-          Verses 17.20 through 17.22 turn to giving — <em>dāna</em>. Like food, like austerity, giving comes in three forms. Sattvic giving is offered with the feeling that giving is a duty, to a worthy person, at the right place and time, without expectation of return. Rajasic giving is offered with hope of return, or with reluctance, or for the sake of being seen as generous. Tamasic giving is offered at the wrong place, wrong time, to undeserving people, or with contempt and disrespect.
+          Verses 17.20 through 17.22 turn to giving (<em>dāna</em>). Like food, like austerity, giving comes in three forms. Sattvic giving is offered with the feeling that giving is a duty, to a worthy person, at the right place and time, without expectation of return. Rajasic giving is offered with hope of return, or with reluctance, or for the sake of being seen as generous. Tamasic giving is offered at the wrong place, wrong time, to undeserving people, or with contempt and disrespect.
         </p>
 
         <p>
-          What is striking is that the quality of the gift is determined by the inner state of the giver, not by the magnitude of the object. A small gift given with the right feeling outranks a large gift given for the wrong reasons. This is the Gita's consistent message about action — the outer act is the surface; the underlying motive is the substance. The same charity, performed by two different people, can produce two entirely different effects in the giver, because what the giver is becoming through the act depends on the trust underneath it.
+          What is striking is that the quality of the gift is determined by the inner state of the giver, not by the magnitude of the object. A small gift given with the right feeling outranks a large gift given for the wrong reasons. This is the Gita's consistent message about action, the outer act is the surface; the underlying motive is the substance. The same charity, performed by two different people, can produce two entirely different effects in the giver, because what the giver is becoming through the act depends on the trust underneath it.
         </p>
 
         <div className="shloka-card">
@@ -923,13 +925,13 @@ export default function ChapterPage17() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                A gift given with the conviction that giving is right, to one who cannot return the gift, in the right place, at the right time, to a worthy recipient — that is called sattvic giving.
+                A gift given with the conviction that giving is right, to one who cannot return the gift, in the right place, at the right time, to a worthy recipient, that is called sattvic giving.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The strangest phrase in the verse</div>
               <div className="shloka-insight">
-                <em>Anupakāriṇe</em> — to one who cannot return the gift. The Gita is explicit that the purest form of giving is the one that has no possibility of reciprocation. The moment reciprocation enters, the gift becomes a transaction. Most modern "giving" is actually exchange, dressed up. The Gita is naming what genuine giving looks like — and how rarely it happens.
+                <em>Anupakāriṇe</em>: to one who cannot return the gift. The Gita is explicit that the purest form of giving is the one that has no possibility of reciprocation. The moment reciprocation enters, the gift becomes a transaction. Most modern "giving" is actually exchange, dressed up. The Gita is naming what genuine giving looks like, and how rarely it happens.
               </div>
             </div>
           </div>
@@ -947,14 +949,14 @@ export default function ChapterPage17() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="om-tat-sat">Om, Tat, Sat — Why Sacred Action Has a Naming</h2>
+        <h2 id="om-tat-sat">Om, Tat, Sat, Why Sacred Action Has a Naming</h2>
 
         <p>
-          Toward the end of the chapter, Krishna names a formula: <em>Oṃ Tat Sat</em>. These are the three traditional designations of Brahman, the supreme reality. The Vedas, the priests, and the sacrifices all began, the verse says, by invocations of these names. The implication is structural. Sacred action requires a naming — a verbal acknowledgement that it is being directed beyond itself, toward what is real.
+          Toward the end of the chapter, Krishna names a formula: <em>Oṃ Tat Sat</em>. These are the three traditional designations of Brahman, the supreme reality. The Vedas, the priests, and the sacrifices all began, the verse says, by invocations of these names. The implication is structural. Sacred action requires a naming: a verbal acknowledgement that it is being directed beyond itself, toward what is real.
         </p>
 
         <p>
-          Why does the naming matter? Because action without naming reverts to ego. The naming is the explicit handing-over. <em>Oṃ</em> begins the act. <em>Tat</em> directs it. <em>Sat</em> grounds it in what is real. The chapter is making the same point as Chapter 9 — every action becomes complete when it is offered. Chapter 17 is just adding the technical detail of how the offering happens linguistically. Even a small offering, performed with the right naming, becomes a sacred act. A large offering, performed without the naming, remains a personal transaction.
+          Why does the naming matter? Because action without naming reverts to ego. The naming is the explicit handing-over. <em>Oṃ</em> begins the act. <em>Tat</em> directs it. <em>Sat</em> grounds it in what is real. The chapter is making the same point as Chapter 9: every action becomes complete when it is offered. Chapter 17 is just adding the technical detail of how the offering happens linguistically. Even a small offering, performed with the right naming, becomes a sacred act. A large offering, performed without the naming, remains a personal transaction.
         </p>
 
         <div className="shloka-card">
@@ -972,13 +974,13 @@ export default function ChapterPage17() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Om, Tat, Sat — these are the three names by which the supreme reality is designated. By that, the brāhmaṇas, the Vedas, and the sacrifices were established at the very beginning.
+                Om, Tat, Sat, these are the three names by which the supreme reality is designated. By that, the brāhmaṇas, the Vedas, and the sacrifices were established at the very beginning.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">Why the naming changes the action</div>
               <div className="shloka-insight">
-                An action performed without naming what it is for stays personal. The same action performed with the explicit reorientation toward something larger becomes sacred. The naming is not magic. It is structural — it tells your own mind where the offering is being placed, and the mind responds to that placement.
+                An action performed without naming what it is for stays personal. The same action performed with the explicit reorientation toward something larger becomes sacred. The naming is not magic. It is structural, it tells your own mind where the offering is being placed, and the mind responds to that placement.
               </div>
             </div>
           </div>
@@ -999,11 +1001,11 @@ export default function ChapterPage17() {
         <h2 id="without-trust">Without Trust, Even the Right Action Is Empty</h2>
 
         <p>
-          The chapter closes with one of the Gita's hardest sentences. Verse 17.28 says: any sacrifice, gift, or austerity performed without <em>śraddhā</em> — without trust — is called <em>asat</em> — unreal. Its fruit exists neither here nor hereafter. The verse closes the loop that opened in 17.3. You are made of your trust. Therefore, action without trust does not actually count.
+          The chapter closes with one of the Gita's hardest sentences. Verse 17.28 says: any sacrifice, gift, or austerity performed without <em>śraddhā</em> (without trust) is called <em>asat</em>, unreal. Its fruit exists neither here nor hereafter. The verse closes the loop that opened in 17.3. You are made of your trust. Therefore, action without trust does not actually count.
         </p>
 
         <p>
-          Read carefully, this is not pessimism. It is calibration. The Gita is making the same point that contemporary psychology calls intrinsic motivation. Action performed because you authentically believe in it operates differently from action performed because you were told to. The first transforms the actor; the second leaves them roughly where they were. <em>Aśraddhayā hutaṃ</em> — offered without trust — is the form of the second. The chapter ends by warning against the most common form of religious failure: performing the actions and not believing in them. Performing without trust, the chapter says, produces no real fruit. The action was technically done. The actor did not change.
+          Read carefully, this is not pessimism. It is calibration. The Gita is making the same point that contemporary psychology calls intrinsic motivation. Action performed because you authentically believe in it operates differently from action performed because you were told to. The first transforms the actor; the second leaves them roughly where they were. <em>Aśraddhayā hutaṃ</em> (offered without trust) is the form of the second. The chapter ends by warning against the most common form of religious failure: performing the actions and not believing in them. Performing without trust, the chapter says, produces no real fruit. The action was technically done. The actor did not change.
         </p>
 
         <div className="shloka-card">
@@ -1021,7 +1023,7 @@ export default function ChapterPage17() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Whatever is offered, given, or done as austerity — performed without trust — is called unreal, Arjuna. It bears no fruit, neither here nor hereafter.
+                Whatever is offered, given, or done as austerity, performed without trust, is called unreal, Arjuna. It bears no fruit, neither here nor hereafter.
               </div>
             </div>
             <div>
@@ -1038,7 +1040,7 @@ export default function ChapterPage17() {
 
         <div className="highlight-box">
           <p>
-            <strong>What Chapter 17 finally asks of you:</strong> Audit your life. The food. The speech. The austerities. The giving. Ask, of each, what trust is underneath. Not what you say you believe. What you actually reach for, when no one is watching. That is what you are slowly becoming. Change the placement of the trust, and the rest of the chapter — the food, the speech, the giving — will start to follow on its own.
+            <strong>What Chapter 17 finally asks of you:</strong> Audit your life. The food. The speech. The austerities. The giving. Ask, of each, what trust is underneath. Not what you say you believe. What you actually reach for, when no one is watching. That is what you are slowly becoming. Change the placement of the trust, and the rest of the chapter (the food, the speech, the giving) will start to follow on its own.
           </p>
         </div>
 
@@ -1092,11 +1094,11 @@ export default function ChapterPage17() {
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous</div>
-            <a href="/blogs/bhagwat-geeta-chapter-16" className="ch-nav-title">Chapter 16 — Daivasura Sampad Vibhaga Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-16" className="ch-nav-title">Chapter 16, Daivasura Sampad Vibhaga Yoga</a>
           </div>
           <div style={{ textAlign: 'right' }}>
             <div className="ch-nav-label">Next</div>
-            <a href="/blogs/bhagwat-geeta-chapter-18" className="ch-nav-title">Chapter 18 — Moksha Sannyasa Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-18" className="ch-nav-title">Chapter 18, Moksha Sannyasa Yoga</a>
           </div>
         </div>
 
@@ -1117,37 +1119,37 @@ export default function ChapterPage17() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 17 about?</div>
             <div className="faq-a">
-              Chapter 17, called Shraddhatraya Vibhaga Yoga (the Yoga of the Threefold Faith), is the Gita's audit of ordinary life. Krishna teaches that <em>śraddhā</em> (trust or faith) comes in three qualities — sattvic, rajasic, tamasic — and that this underlying quality shapes every ordinary action: food, sacrifice, austerity, giving. The chapter contains the famous claim of 17.3 — 'A person is made of trust; whatever one trusts, that is what one becomes' — and ends by naming Om Tat Sat as the three designations of the supreme reality.
+              Chapter 17, called Shraddhatraya Vibhaga Yoga (the Yoga of the Threefold Faith), is the Gita's audit of ordinary life. Krishna teaches that <em>śraddhā</em> (trust or faith) comes in three qualities (sattvic, rajasic, tamasic) and that this underlying quality shapes every ordinary action: food, sacrifice, austerity, giving. The chapter contains the famous claim of 17.3: 'A person is made of trust; whatever one trusts, that is what one becomes' , and ends by naming Om Tat Sat as the three designations of the supreme reality.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does shraddha mean in the Bhagavad Gita?</div>
             <div className="faq-a">
-              <em>Śraddhā</em> is usually translated as 'faith,' but 'trust' captures more of its meaning. It is what you actually put your weight on — what you instinctively rely on when you act without thinking. Verse 17.3 makes the most pointed claim about it: 'A person is made of trust; whatever trust they hold, that is what they become.' You are not what you say you believe. You are what you reach for when you need reassurance.
+              <em>Śraddhā</em> is usually translated as 'faith,' but 'trust' captures more of its meaning. It is what you actually put your weight on, what you instinctively rely on when you act without thinking. Verse 17.3 makes the most pointed claim about it: 'A person is made of trust; whatever trust they hold, that is what they become.' You are not what you say you believe. You are what you reach for when you need reassurance.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What are the three kinds of food in the Bhagavad Gita?</div>
             <div className="faq-a">
-              Verses 17.7-10 describe three categories. Sattvic food: fresh, nourishing, life-giving, balanced. Rajasic food: overly bitter, sharp, salty, hot — exciting to the senses but disturbing to the body. Tamasic food: stale, leftover, putrid, fermented. The teaching is not strictly dietary. It is diagnostic. What you reach for reveals what your nervous system has come to rely on. The food is one window into the underlying trust.
+              Verses 17.7-10 describe three categories. Sattvic food: fresh, nourishing, life-giving, balanced. Rajasic food: overly bitter, sharp, salty, hot, exciting to the senses but disturbing to the body. Tamasic food: stale, leftover, putrid, fermented. The teaching is not strictly dietary. It is diagnostic. What you reach for reveals what your nervous system has come to rely on. The food is one window into the underlying trust.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What are the three austerities in Bhagavad Gita 17.14-17?</div>
             <div className="faq-a">
-              Krishna describes austerity at three layers. Austerity of body: reverence, cleanliness, simplicity, restraint, non-violence (17.14). Austerity of speech: words that do not agitate, that are true, pleasant, and beneficial, plus study (17.15). Austerity of mind: serenity, gentleness, silence, self-control, purity of feeling (17.16). The three are concentric circles — bodily disciplines support speech disciplines support mental disciplines.
+              Krishna describes austerity at three layers. Austerity of body: reverence, cleanliness, simplicity, restraint, non-violence (17.14). Austerity of speech: words that do not agitate, that are true, pleasant, and beneficial, plus study (17.15). Austerity of mind: serenity, gentleness, silence, self-control, purity of feeling (17.16). The three are concentric circles, bodily disciplines support speech disciplines support mental disciplines.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 17.20 say about giving?</div>
             <div className="faq-a">
-              Verse 17.20 defines sattvic giving as a gift offered with the conviction that giving is right, to a worthy recipient, at the right place and time, and to one who cannot return the favour (<em>anupakāriṇe</em>). The purest giving has no possibility of reciprocation. The moment exchange becomes possible, the gift starts to become a transaction. The Gita is naming what genuine giving looks like — and how rare it actually is.
+              Verse 17.20 defines sattvic giving as a gift offered with the conviction that giving is right, to a worthy recipient, at the right place and time, and to one who cannot return the favour (<em>anupakāriṇe</em>). The purest giving has no possibility of reciprocation. The moment exchange becomes possible, the gift starts to become a transaction. The Gita is naming what genuine giving looks like, and how rare it actually is.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does 'Om Tat Sat' mean in the Bhagavad Gita?</div>
             <div className="faq-a">
-              In verse 17.23, Krishna names three traditional designations of Brahman, the supreme reality: <em>Oṃ</em>, <em>Tat</em>, <em>Sat</em>. The teaching is that sacred action requires a naming — an explicit reorientation toward something beyond the act itself. <em>Om</em> begins the act, <em>Tat</em> directs it, <em>Sat</em> grounds it in what is real. The naming changes the action's nature: a small offering with the right naming is more complete than a large offering performed for ego.
+              In verse 17.23, Krishna names three traditional designations of Brahman, the supreme reality: <em>Oṃ</em>, <em>Tat</em>, <em>Sat</em>. The teaching is that sacred action requires a naming: an explicit reorientation toward something beyond the act itself. <em>Om</em> begins the act, <em>Tat</em> directs it, <em>Sat</em> grounds it in what is real. The naming changes the action's nature: a small offering with the right naming is more complete than a large offering performed for ego.
             </div>
           </div>
         </div>
@@ -1158,7 +1160,7 @@ export default function ChapterPage17() {
           <div className="related-grid">
           <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
             <div className="related-card-label">Topic Guide</div>
-            <div className="related-card-title">Karma — what it actually means in the Gita</div>
+            <div className="related-card-title">Karma, what it actually means in the Gita</div>
           </a>
           <a href="/blogs/bhagavad-gita-anxiety-mental-peace" className="related-card">
             <div className="related-card-label">Topic Guide</div>
@@ -1166,15 +1168,15 @@ export default function ChapterPage17() {
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-14" className="related-card">
             <div className="related-card-label">Chapter 14</div>
-            <div className="related-card-title">Gunatraya Vibhaga — The Three Forces</div>
+            <div className="related-card-title">Gunatraya Vibhaga, The Three Forces</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-16" className="related-card">
             <div className="related-card-label">Chapter 16</div>
-            <div className="related-card-title">Daivasura Sampad — Two Kinds of Inner Wealth</div>
+            <div className="related-card-title">Daivasura Sampad, Two Kinds of Inner Wealth</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-18" className="related-card">
             <div className="related-card-label">Chapter 18</div>
-            <div className="related-card-title">Moksha Sannyasa Yoga — The Final Teaching</div>
+            <div className="related-card-title">Moksha Sannyasa Yoga, The Final Teaching</div>
           </a>
           </div>
         </div>
@@ -1184,7 +1186,7 @@ export default function ChapterPage17() {
             <div className="app-cta-eyebrow">Free iOS App</div>
             <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
             <p className="app-cta-desc">
-              The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+              The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
             </p>
             <div className="app-cta-features">
               <span>✦ Daily shloka in Sanskrit</span>

@@ -3,21 +3,21 @@ import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 10 Summary – Key Verses & Meaning (Vibhuti Yoga)",
-  description: "Bhagavad Gita Chapter 10 (Vibhuti Yoga) — 42 verses on divine manifestations, sparks of the Divine, and the universe held in a single fragment ('ekamshena sthito jagat').",
+  description: "Bhagavad Gita Chapter 10 (Vibhuti Yoga), 42 verses on divine manifestations, sparks of the Divine, and the universe held in a single fragment ('ekamshena sthito jagat').",
   keywords: "bhagwat geeta chapter 10, bhagavad gita vibhuti yoga, bhagwat geeta adhyay 10, ekamshena sthito jagat, aham atma gudakesha, lamp of knowledge gita, sparks of divine bhagavad gita, divine manifestations gita, Vibhuti Yoga meaning, Bhagavad Gita 10.20 aham atma gudakesha, Bhagavad Gita 10.41 vibhutimat sattvam, Bhagavad Gita 10.42 ekamshena sthito jagat, what are vibhutis in Bhagavad Gita, divine manifestations Krishna",
   openGraph: {
     title: "Bhagavad Gita Chapter 10 Summary – Key Verses & Meaning (Vibhuti Yoga)",
-    description: "Bhagavad Gita Chapter 10 — sparks of the Divine. Where to look for God in everything that shines.",
+    description: "Bhagavad Gita Chapter 10, sparks of the Divine. Where to look for God in everything that shines.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter10.webp", width: 1200, height: 675, alt: "Sparks of divine radiance scattered across the manifest world — Chapter 10 of the Bhagavad Gita, Vibhuti Yoga, teaches that every form of greatness in creation is a fragment of one source." }],
+    images: [{ url: "https://wisdomquotes.in/assets/chapter10.webp", width: 1200, height: 675, alt: "Sparks of divine radiance scattered across the manifest world, Chapter 10 of the Bhagavad Gita, Vibhuti Yoga, teaches that every form of greatness in creation is a fragment of one source." }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 10 Summary – Key Verses & Meaning (Vibhuti Yoga)",
-    description: "Bhagavad Gita Chapter 10 — sparks of the Divine. Where to look for God in everything that shines.",
+    description: "Bhagavad Gita Chapter 10, sparks of the Divine. Where to look for God in everything that shines.",
     images: ["https://wisdomquotes.in/assets/chapter10.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10" },
@@ -389,7 +389,7 @@ const schemas = [
         "name": "What is vibhuti in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Vibhuti means divine power, glory, or manifestation. In the context of Chapter 10, it refers to specific forms in which the Divine becomes especially visible — the supreme example of any category. Krishna gives Arjuna dozens of these examples. The deeper teaching is the pattern: wherever you encounter the highest expression of any quality — strength, beauty, knowledge, restraint — you are encountering a spark of one source."
+          "text": "Vibhuti means divine power, glory, or manifestation. In the context of Chapter 10, it refers to specific forms in which the Divine becomes especially visible: the supreme example of any category. Krishna gives Arjuna dozens of these examples. The deeper teaching is the pattern: wherever you encounter the highest expression of any quality (strength, beauty, knowledge, restraint) you are encountering a spark of one source."
         }
       },
       {
@@ -405,7 +405,7 @@ const schemas = [
         "name": "What does 'aham atma' mean in Gita 10.20?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 10.20 says, 'aham ātmā guḍākeśa sarva-bhūtāśaya-sthitaḥ' — 'I am the Self, Arjuna, seated in the heart of all beings.' It is the centre verse of Chapter 10. After many verses about external splendour, Krishna turns inward and names the most important manifestation — the Divine is in the heart of every being. The teaching reframes every other manifestation as a consequence of this one."
+          "text": "Verse 10.20 says, 'aham ātmā guḍākeśa sarva-bhūtāśaya-sthitaḥ' — 'I am the Self, Arjuna, seated in the heart of all beings.' It is the centre verse of Chapter 10. After many verses about external splendour, Krishna turns inward and names the most important manifestation: the Divine is in the heart of every being. The teaching reframes every other manifestation as a consequence of this one."
         }
       },
       {
@@ -618,7 +618,7 @@ export default function ChapterPage10() {
             <div className="chapter-badge-dot"></div>
           </div>
           <h1 className="article-title">
-            Bhagavad Gita Chapter 10 (Adhyay 10) —<br />
+            Bhagavad Gita Chapter 10 (Adhyay 10):<br />
             <em>Vibhuti Yoga</em>
           </h1>
           <p className="article-subtitle">
@@ -632,6 +632,8 @@ export default function ChapterPage10() {
             <span className="meta-item">~13 min read</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 10 of 18</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -650,23 +652,23 @@ export default function ChapterPage10() {
           </figure>
 
         <p className="lead">
-          Chapter 10 is a chapter about where to look. After Chapter 9 establishes that the Divine holds everything, Chapter 10 turns the next, more practical question — if the Divine is in everything, how do I begin to see it? Krishna's answer is unexpectedly concrete. He gives Arjuna a long list of specifics. Look at the sun. Look at the moon. Look at consciousness inside living beings. Look at the silence among secrets. Look at greatness wherever you find it — in art, in courage, in beauty, in restraint — and recognise it as a spark of one radiance.
+          Chapter 10 is a chapter about where to look. After Chapter 9 establishes that the Divine holds everything, Chapter 10 turns the next, more practical question, if the Divine is in everything, how do I begin to see it? Krishna's answer is unexpectedly concrete. He gives Arjuna a long list of specifics. Look at the sun. Look at the moon. Look at consciousness inside living beings. Look at the silence among secrets. Look at greatness wherever you find it, in art, in courage, in beauty, in restraint, and recognise it as a spark of one radiance.
         </p>
 
         <p>
-          This is the chapter most often misread as a mere catalogue. It is not. The list is a training in attention. Most people, most of the time, look at the world and see only itself — a sun, a person, a kind word. Chapter 10 is asking you to look again and notice the second layer. Behind every form of brilliance, the Gita says, is the same source. Once you start seeing this pattern, you cannot easily unsee it. The chapter is not asking you to believe anything. It is asking you to look, with a slightly different question in mind.
+          This is the chapter most often misread as a mere catalogue. It is not. The list is a training in attention. Most people, most of the time, look at the world and see only itself, a sun, a person, a kind word. Chapter 10 is asking you to look again and notice the second layer. Behind every form of brilliance, the Gita says, is the same source. Once you start seeing this pattern, you cannot easily unsee it. The chapter is not asking you to believe anything. It is asking you to look, with a slightly different question in mind.
         </p>
 
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
-            <li><a href="#source-of-all">I am the source of all — 10.8</a></li>
-            <li><a href="#lamp-inside">The lamp of knowledge — 10.10 and 10.11</a></li>
-            <li><a href="#self-in-heart">I am the Self in the heart of all beings — 10.20</a></li>
+            <li><a href="#source-of-all">I am the source of all, 10.8</a></li>
+            <li><a href="#lamp-inside">The lamp of knowledge, 10.10 and 10.11</a></li>
+            <li><a href="#self-in-heart">I am the Self in the heart of all beings, 10.20</a></li>
             <li><a href="#look-at-greatness">How to read a long list of manifestations</a></li>
-            <li><a href="#silence-power">Silence among secrets — and what true power looks like</a></li>
-            <li><a href="#spark">A spark of radiance — 10.41</a></li>
-            <li><a href="#single-fragment">One fragment holds the universe — 10.42</a></li>
+            <li><a href="#silence-power">Silence among secrets, and what true power looks like</a></li>
+            <li><a href="#spark">A spark of radiance, 10.41</a></li>
+            <li><a href="#single-fragment">One fragment holds the universe, 10.42</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
             <li><a href="#related-reading">Related reading</a></li>
@@ -689,7 +691,7 @@ export default function ChapterPage10() {
         </p>
 
         <p>
-          Notice the chain. First the recognition (<em>iti matvā</em> — knowing this). Then the response (<em>bhajante</em> — they worship). Then the quality of the response (<em>bhāva-samanvitāḥ</em> — full of feeling). The Gita is not asking for an intellectual concession. It is describing what understanding actually feels like when it lands. The mind sees the source. The heart turns toward it. The two are not separate moves.
+          Notice the chain. First the recognition (<em>iti matvā</em>, knowing this). Then the response (<em>bhajante</em>, they worship). Then the quality of the response (<em>bhāva-samanvitāḥ</em>, full of feeling). The Gita is not asking for an intellectual concession. It is describing what understanding actually feels like when it lands. The mind sees the source. The heart turns toward it. The two are not separate moves.
         </p>
 
         <div className="shloka-card">
@@ -713,7 +715,7 @@ export default function ChapterPage10() {
             <div>
               <div className="shloka-col-label">Knowing the source changes the response</div>
               <div className="shloka-insight">
-                Information alone does not produce devotion. But information about a source — once it actually lands — changes the relationship to everything downstream. The verse is describing what happens after the abstraction stops being an abstraction. The wise are not wise because they know more. They are wise because the knowing has become love.
+                Information alone does not produce devotion. But information about a source, once it actually lands, changes the relationship to everything downstream. The verse is describing what happens after the abstraction stops being an abstraction. The wise are not wise because they know more. They are wise because the knowing has become love.
               </div>
             </div>
           </div>
@@ -734,11 +736,11 @@ export default function ChapterPage10() {
         <h2 id="lamp-inside">The Lamp of Knowledge Lit From Within</h2>
 
         <p>
-          Verses 10.10 and 10.11 are a pair, and together they describe what happens to a person whose devotion has become continuous. Krishna says: to those who are always united with me, who worship with love, I give the <em>buddhi-yoga</em> — the yoga of discernment — by which they come to me. And then he goes further: out of compassion for them, I destroy the darkness born of ignorance, dwelling in their own being, with the shining lamp of knowledge.
+          Verses 10.10 and 10.11 are a pair, and together they describe what happens to a person whose devotion has become continuous. Krishna says: to those who are always united with me, who worship with love, I give the <em>buddhi-yoga</em> (the yoga of discernment) by which they come to me. And then he goes further: out of compassion for them, I destroy the darkness born of ignorance, dwelling in their own being, with the shining lamp of knowledge.
         </p>
 
         <p>
-          Look closely at where the lamp is. It is <em>ātma-bhāva-stho</em> — placed in their own being. The Divine is not lighting the lamp from outside, illuminating them. The Divine is lighting a lamp from inside them. The image is intimate. The conditions for the lamp's lighting are simple — continuous devotion, love — and the result is the most reassuring promise in the Gita: the darkness in you is not yours alone to fight. It is dispelled by a light that has been placed inside you.
+          Look closely at where the lamp is. It is <em>ātma-bhāva-stho</em>, placed in their own being. The Divine is not lighting the lamp from outside, illuminating them. The Divine is lighting a lamp from inside them. The image is intimate. The conditions for the lamp's lighting are simple (continuous devotion, love), and the result is the most reassuring promise in the Gita: the darkness in you is not yours alone to fight. It is dispelled by a light that has been placed inside you.
         </p>
 
         <div className="shloka-card">
@@ -762,7 +764,7 @@ export default function ChapterPage10() {
             <div>
               <div className="shloka-col-label">What buddhi-yoga is</div>
               <div className="shloka-insight">
-                <em>Buddhi-yoga</em> is not technique. It is the gift of clearer seeing — the ability to discriminate, in real time, between what is real and what only seems real. The Gita's promise is that this is not earned by effort alone. It is given. The condition is not cleverness. It is continuous orientation toward the Divine in love.
+                <em>Buddhi-yoga</em> is not technique. It is the gift of clearer seeing: the ability to discriminate, in real time, between what is real and what only seems real. The Gita's promise is that this is not earned by effort alone. It is given. The condition is not cleverness. It is continuous orientation toward the Divine in love.
               </div>
             </div>
           </div>
@@ -792,7 +794,7 @@ export default function ChapterPage10() {
             <div>
               <div className="shloka-col-label">The lamp is on your side of the wall</div>
               <div className="shloka-insight">
-                The verse places the lamp inside the devotee — <em>ātma-bhāva-stho</em>. This matters. The Divine is not a remote light source you are trying to reach. The light is lit inside you. Your work is not to generate it. Your work is to keep the room ordered enough that the lamp's light is not blocked by your own clutter.
+                The verse places the lamp inside the devotee (<em>ātma-bhāva-stho</em>). This matters. The Divine is not a remote light source you are trying to reach. The light is lit inside you. Your work is not to generate it. Your work is to keep the room ordered enough that the lamp's light is not blocked by your own clutter.
               </div>
             </div>
           </div>
@@ -820,7 +822,7 @@ export default function ChapterPage10() {
         <h2 id="self-in-heart">I Am the Self Seated in the Heart of All Beings</h2>
 
         <p>
-          Verse 10.20 is the moment in Chapter 10 where the long list of manifestations gets a personal centre. Krishna says: I am the Self, Arjuna, seated in the heart of all beings. I am the beginning, the middle, and the end of all beings. After many verses about external splendour — among radiant beings I am Indra, among rivers I am the Ganga — the verse turns inward. The most important manifestation is not outside. It is in the heart of every being you will ever meet.
+          Verse 10.20 is the moment in Chapter 10 where the long list of manifestations gets a personal centre. Krishna says: I am the Self, Arjuna, seated in the heart of all beings. I am the beginning, the middle, and the end of all beings. After many verses about external splendour, among radiant beings I am Indra, among rivers I am the Ganga, the verse turns inward. The most important manifestation is not outside. It is in the heart of every being you will ever meet.
         </p>
 
         <p>
@@ -848,7 +850,7 @@ export default function ChapterPage10() {
             <div>
               <div className="shloka-col-label">The centre verse of the chapter</div>
               <div className="shloka-insight">
-                Every other manifestation in Chapter 10 is, in some sense, a footnote to this one. If the Self is in every heart, then everything else — the sun, the moon, the sacred sound — is a consequence, not the centre. The verse asks you to look at the next person you meet with a different awareness: you are looking at the dwelling place of what you have been searching for.
+                Every other manifestation in Chapter 10 is, in some sense, a footnote to this one. If the Self is in every heart, then everything else, the sun, the moon, the sacred sound, is a consequence, not the centre. The verse asks you to look at the next person you meet with a different awareness: you are looking at the dwelling place of what you have been searching for.
               </div>
             </div>
           </div>
@@ -869,11 +871,11 @@ export default function ChapterPage10() {
         <h2 id="look-at-greatness">How to Read the Long Catalogue of Manifestations</h2>
 
         <p>
-          Beginning at verse 10.21 and continuing for about fifteen verses, Krishna gives Arjuna a long catalogue. Among the suns, I am Vishnu. Among the rivers, the Ganga. Among the months, Margashirsha. Among letters, the letter A. Modern readers sometimes find this section tedious — a list of mostly culturally specific examples. That is to misread the section's purpose. The catalogue is not asking you to memorise it. It is training you in a way of seeing.
+          Beginning at verse 10.21 and continuing for about fifteen verses, Krishna gives Arjuna a long catalogue. Among the suns, I am Vishnu. Among the rivers, the Ganga. Among the months, Margashirsha. Among letters, the letter A. Modern readers sometimes find this section tedious, a list of mostly culturally specific examples. That is to misread the section's purpose. The catalogue is not asking you to memorise it. It is training you in a way of seeing.
         </p>
 
         <p>
-          Notice the structure of every entry. Krishna names a category — the senses, the seasons, the rivers — and within that category, he names what is supreme. The lesson is portable. Whenever you encounter a category, look for its highest expression, and recognise that expression as the Divine. The list teaches a habit: look at the best of something, see the spark, repeat. After enough repetitions, you start seeing it everywhere. The chapter is, in this sense, a perception training disguised as a hymn.
+          Notice the structure of every entry. Krishna names a category, the senses, the seasons, the rivers, and within that category, he names what is supreme. The lesson is portable. Whenever you encounter a category, look for its highest expression, and recognise that expression as the Divine. The list teaches a habit: look at the best of something, see the spark, repeat. After enough repetitions, you start seeing it everywhere. The chapter is, in this sense, a perception training disguised as a hymn.
         </p>
 
         <div className="shloka-card">
@@ -897,7 +899,7 @@ export default function ChapterPage10() {
             <div>
               <div className="shloka-col-label">Read for the pattern, not the items</div>
               <div className="shloka-insight">
-                The items are culturally bound. The pattern is universal. Whatever a category's exemplar is — for you, in your time, your place — that is where the Divine is most visibly shining. Read the verse with this question: in my world, what is the equivalent? Not as escape from the verse, but as enactment of it.
+                The items are culturally bound. The pattern is universal. Whatever a category's exemplar is, for you, in your time, your place, that is where the Divine is most visibly shining. Read the verse with this question: in my world, what is the equivalent? Not as escape from the verse, but as enactment of it.
               </div>
             </div>
           </div>
@@ -908,7 +910,7 @@ export default function ChapterPage10() {
 
         <div className="highlight-box">
           <p>
-            <strong>How to actually use Chapter 10's catalogue:</strong> Pick any category in your life — books, music, kinds of conversations, types of meals, kinds of weather. Identify, honestly, what its supreme example is, for you. Then sit with the recognition that what you are admiring is a spark. The admiration was already half-spiritual. The chapter is just asking you to notice the second half.
+            <strong>How to actually use Chapter 10's catalogue:</strong> Pick any category in your life (books, music, kinds of conversations, types of meals, kinds of weather). Identify, honestly, what its supreme example is, for you. Then sit with the recognition that what you are admiring is a spark. The admiration was already half-spiritual. The chapter is just asking you to notice the second half.
           </p>
         </div>
 
@@ -928,7 +930,7 @@ export default function ChapterPage10() {
         </p>
 
         <p>
-          This contradicts most assumptions about spiritual depth. We tend to imagine the highest teaching as a sentence that, once spoken, would unlock everything. The Gita says the opposite. The highest teaching has already been spoken. What is hidden — what is most worth protecting — is the silence underneath the words. Real power, the verse adds, is not volume. It is restraint and timing — knowing what to say, when, and what to leave unsaid. The most important spiritual capacity, by this reading, is the capacity to be quiet when speaking would be easier.
+          This contradicts most assumptions about spiritual depth. We tend to imagine the highest teaching as a sentence that, once spoken, would unlock everything. The Gita says the opposite. The highest teaching has already been spoken. What is hidden, what is most worth protecting, is the silence underneath the words. Real power, the verse adds, is not volume. It is restraint and timing, knowing what to say, when, and what to leave unsaid. The most important spiritual capacity, by this reading, is the capacity to be quiet when speaking would be easier.
         </p>
 
         <div className="shloka-card">
@@ -952,7 +954,7 @@ export default function ChapterPage10() {
             <div>
               <div className="shloka-col-label">The deepest secret is silence</div>
               <div className="shloka-insight">
-                The Sanskrit is <em>maunaṃ caivāsmi guhyānāṃ</em> — among secrets I am silence. The line subverts every model of esoteric teaching. The hidden knowledge is not a hidden sentence. It is the silence that the sentence is trying to gesture at. When the silence is reached, the sentence is no longer needed. The Gita is, in this verse, quietly retiring its own authority.
+                The Sanskrit is <em>maunaṃ caivāsmi guhyānāṃ</em>: among secrets I am silence. The line subverts every model of esoteric teaching. The hidden knowledge is not a hidden sentence. It is the silence that the sentence is trying to gesture at. When the silence is reached, the sentence is no longer needed. The Gita is, in this verse, quietly retiring its own authority.
               </div>
             </div>
           </div>
@@ -980,11 +982,11 @@ export default function ChapterPage10() {
         <h2 id="spark">Every Form of Brilliance Is a Spark</h2>
 
         <p>
-          Chapter 10 closes with two of its most important verses. Verse 10.41 says: whatever being or thing is endowed with splendour, beauty, or power — know that to have arisen from a spark of my radiance. The verse retrofits everything that came before. Now you understand why Krishna spent so long enumerating examples of greatness. He was showing you, again and again, what a spark looks like.
+          Chapter 10 closes with two of its most important verses. Verse 10.41 says: whatever being or thing is endowed with splendour, beauty, or power, know that to have arisen from a spark of my radiance. The verse retrofits everything that came before. Now you understand why Krishna spent so long enumerating examples of greatness. He was showing you, again and again, what a spark looks like.
         </p>
 
         <p>
-          Then comes verse 10.42, the chapter's final word: <em>or, Arjuna, what need is there to know all this in such detail? I sustain this entire universe with a single fragment of myself.</em> The Gita ends the catalogue by admitting that the catalogue is, in the end, unnecessary. You did not need every example. The point of every example was the same. The Divine is in the brilliant, in the ordinary, in the supreme, in the small, and after all of it — the Divine has not been exhausted. A single fragment holds the universe. Everything you have seen is a smaller fragment of that fragment.
+          Then comes verse 10.42, the chapter's final word: <em>or, Arjuna, what need is there to know all this in such detail? I sustain this entire universe with a single fragment of myself.</em> The Gita ends the catalogue by admitting that the catalogue is, in the end, unnecessary. You did not need every example. The point of every example was the same. The Divine is in the brilliant, in the ordinary, in the supreme, in the small, and after all of it, the Divine has not been exhausted. A single fragment holds the universe. Everything you have seen is a smaller fragment of that fragment.
         </p>
 
         <div className="shloka-card">
@@ -1002,13 +1004,13 @@ export default function ChapterPage10() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Whatever being or thing has splendour, beauty, or power — know it to be born from a spark of my radiance.
+                Whatever being or thing has splendour, beauty, or power, know it to be born from a spark of my radiance.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The portable version of Chapter 10</div>
               <div className="shloka-insight">
-                If you only remember one verse from this chapter, make it this one. The verse is a rule: anywhere you see brilliance, the brilliance is borrowed. Trace the brilliance back, and you reach the source. After enough tracing, the source is no longer distant. You start to recognise it everywhere — in art, in courage, in love, in a clear sky, in a kind sentence said at the right time.
+                If you only remember one verse from this chapter, make it this one. The verse is a rule: anywhere you see brilliance, the brilliance is borrowed. Trace the brilliance back, and you reach the source. After enough tracing, the source is no longer distant. You start to recognise it everywhere, in art, in courage, in love, in a clear sky, in a kind sentence said at the right time.
               </div>
             </div>
           </div>
@@ -1038,7 +1040,7 @@ export default function ChapterPage10() {
             <div>
               <div className="shloka-col-label">The line that retires the catalogue</div>
               <div className="shloka-insight">
-                <em>Ekāṃśena</em> — with one fragment. The entire universe — every spark Krishna has just enumerated — is sustained by a single fragment of the Divine. The catalogue was not exhaustive. It could not be. The point of the catalogue was the recognition, and the recognition leads to a still bigger fact: whatever you have seen, the unseen is incalculably greater. The chapter ends in awe, not in inventory.
+                <em>Ekāṃśena</em>: with one fragment. The entire universe (every spark Krishna has just enumerated) is sustained by a single fragment of the Divine. The catalogue was not exhaustive. It could not be. The point of the catalogue was the recognition, and the recognition leads to a still bigger fact: whatever you have seen, the unseen is incalculably greater. The chapter ends in awe, not in inventory.
               </div>
             </div>
           </div>
@@ -1117,11 +1119,11 @@ export default function ChapterPage10() {
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous</div>
-            <a href="/blogs/bhagwat-geeta-chapter-9" className="ch-nav-title">Chapter 9 — Raja Vidya Raja Guhya Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-9" className="ch-nav-title">Chapter 9, Raja Vidya Raja Guhya Yoga</a>
           </div>
           <div style={{ textAlign: 'right' }}>
             <div className="ch-nav-label">Next</div>
-            <a href="/blogs/bhagwat-geeta-chapter-11" className="ch-nav-title">Chapter 11 — Vishwarupa Darshana Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-11" className="ch-nav-title">Chapter 11, Vishwarupa Darshana Yoga</a>
           </div>
         </div>
 
@@ -1142,31 +1144,31 @@ export default function ChapterPage10() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 10 about?</div>
             <div className="faq-a">
-              Chapter 10, called Vibhuti Yoga (the Yoga of Divine Manifestations), is the Gita's training in where to look for the Divine. After Chapter 9 established that the Divine holds everything, Chapter 10 gives Arjuna a long list of where that holding becomes visible — in the sun, the moon, the heart of every being, the silence among secrets, every form of brilliance in creation. The chapter closes with 10.42: the entire universe is sustained by a single fragment of the Divine.
+              Chapter 10, called Vibhuti Yoga (the Yoga of Divine Manifestations), is the Gita's training in where to look for the Divine. After Chapter 9 established that the Divine holds everything, Chapter 10 gives Arjuna a long list of where that holding becomes visible, in the sun, the moon, the heart of every being, the silence among secrets, every form of brilliance in creation. The chapter closes with 10.42: the entire universe is sustained by a single fragment of the Divine.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is vibhuti in the Bhagavad Gita?</div>
             <div className="faq-a">
-              <em>Vibhuti</em> means divine power, glory, or manifestation. In the context of Chapter 10, it refers to specific forms in which the Divine becomes especially visible — the supreme example of any category. Krishna gives Arjuna dozens of these examples. The deeper teaching is the pattern: wherever you encounter the highest expression of any quality — strength, beauty, knowledge, restraint — you are encountering a spark of one source.
+              <em>Vibhuti</em> means divine power, glory, or manifestation. In the context of Chapter 10, it refers to specific forms in which the Divine becomes especially visible: the supreme example of any category. Krishna gives Arjuna dozens of these examples. The deeper teaching is the pattern: wherever you encounter the highest expression of any quality (strength, beauty, knowledge, restraint) you are encountering a spark of one source.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the meaning of Bhagavad Gita 10.11?</div>
             <div className="faq-a">
-              Verse 10.11 says, 'Out of compassion for them, dwelling in their own being, I destroy the darkness born of ignorance with the shining lamp of knowledge.' The verse places the lamp inside the devotee — <em>ātma-bhāva-stho</em>. The Divine is not lighting them from outside; the Divine has lit a lamp from within them. The image is intimate: the work of clearing inner darkness is not yours alone to do, because a light has already been placed inside you.
+              Verse 10.11 says, 'Out of compassion for them, dwelling in their own being, I destroy the darkness born of ignorance with the shining lamp of knowledge.' The verse places the lamp inside the devotee (<em>ātma-bhāva-stho</em>). The Divine is not lighting them from outside; the Divine has lit a lamp from within them. The image is intimate: the work of clearing inner darkness is not yours alone to do, because a light has already been placed inside you.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does 'aham atma' mean in Gita 10.20?</div>
             <div className="faq-a">
-              Verse 10.20 says, '<em>aham ātmā guḍākeśa sarva-bhūtāśaya-sthitaḥ</em>' — 'I am the Self, Arjuna, seated in the heart of all beings.' It is the centre verse of Chapter 10. After many verses about external splendour, Krishna turns inward and names the most important manifestation — the Divine is in the heart of every being. The teaching reframes every other manifestation as a consequence of this one.
+              Verse 10.20 says: '<em>aham ātmā guḍākeśa sarva-bhūtāśaya-sthitaḥ</em>' ('I am the Self, Arjuna, seated in the heart of all beings.'). It is the centre verse of Chapter 10. After many verses about external splendour, Krishna turns inward and names the most important manifestation: the Divine is in the heart of every being. The teaching reframes every other manifestation as a consequence of this one.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 10.41 mean?</div>
             <div className="faq-a">
-              Verse 10.41 — 'Whatever being or thing is endowed with splendour, beauty, or power — know it to be born from a spark of my radiance' — is the portable summary of Chapter 10. It states the rule: wherever you see brilliance, the brilliance is borrowed. Trace it back and you reach the source. The verse turns the entire chapter into a practice: when you encounter greatness, ask where it came from.
+              Verse 10.41, 'Whatever being or thing is endowed with splendour, beauty, or power, know it to be born from a spark of my radiance', is the portable summary of Chapter 10. It states the rule: wherever you see brilliance, the brilliance is borrowed. Trace it back and you reach the source. The verse turns the entire chapter into a practice: when you encounter greatness, ask where it came from.
             </div>
           </div>
           <div className="faq-item">
@@ -1183,7 +1185,7 @@ export default function ChapterPage10() {
           <div className="related-grid">
           <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" className="related-card">
             <div className="related-card-label">Topic Guide</div>
-            <div className="related-card-title">All 18 chapters — the full arc</div>
+            <div className="related-card-title">All 18 chapters, the full arc</div>
           </a>
           <a href="/blogs/bhagavad-gita-for-beginners" className="related-card">
             <div className="related-card-label">Topic Guide</div>
@@ -1191,15 +1193,15 @@ export default function ChapterPage10() {
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-9" className="related-card">
             <div className="related-card-label">Chapter 9</div>
-            <div className="related-card-title">Raja Vidya Raja Guhya Yoga — The Royal Secret</div>
+            <div className="related-card-title">Raja Vidya Raja Guhya Yoga, The Royal Secret</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-11" className="related-card">
             <div className="related-card-label">Chapter 11</div>
-            <div className="related-card-title">Vishwarupa Darshana Yoga — The Cosmic Vision</div>
+            <div className="related-card-title">Vishwarupa Darshana Yoga, The Cosmic Vision</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-15" className="related-card">
             <div className="related-card-label">Chapter 15</div>
-            <div className="related-card-title">Purushottama Yoga — Cut the Tree, Find the Source</div>
+            <div className="related-card-title">Purushottama Yoga, Cut the Tree, Find the Source</div>
           </a>
           </div>
         </div>
@@ -1209,7 +1211,7 @@ export default function ChapterPage10() {
             <div className="app-cta-eyebrow">Free iOS App</div>
             <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
             <p className="app-cta-desc">
-              The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+              The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
             </p>
             <div className="app-cta-features">
               <span>✦ Daily shloka in Sanskrit</span>

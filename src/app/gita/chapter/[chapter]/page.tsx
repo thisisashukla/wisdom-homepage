@@ -100,6 +100,10 @@ export default async function ChapterPage({ params }: { params: Params }) {
           ? `All ${ch.totalVerses} verses below.`
           : `${ch.processedVerses} of ${ch.totalVerses} verses available — more being added.`}
       </p>
+      <p style={{ fontSize: 12, color: 'var(--text-dimmer)', marginTop: 8, fontStyle: 'italic' }}>
+        Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026.{' '}
+        <a href="/methodology" style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}>Methodology →</a>
+      </p>
 
       <figure className="gita-chapter-hero">
         <img src={chapterImage(ch.number).src} alt={chapterImage(ch.number).alt} loading="eager" />

@@ -556,7 +556,7 @@ export default function CompleteStructurePage() {
           The Bhagavad Gita Is a <em>Screenplay.</em><br />Here's How It's Built.
         </h1>
         <p className="article-subtitle">
-          700 verses, 18 chapters, three acts, one devastating climax — and a final line that barely whispers. How Krishna builds his argument from a man sitting in a chariot to the most radical teaching in Sanskrit literature.
+          700 verses, 18 chapters, three acts, one devastating climax, and a final line that barely whispers. How Krishna builds his argument from a man sitting in a chariot to the most radical teaching in Sanskrit literature.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -566,6 +566,8 @@ export default function CompleteStructurePage() {
           <span className="meta-item">~14 min read</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">Complete structural guide</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -582,15 +584,15 @@ export default function CompleteStructurePage() {
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>The Vishwarupa — the cosmic form at the heart of the Gita&apos;s argument</figcaption>
+          <figcaption>The Vishwarupa, the cosmic form at the heart of the Gita&apos;s argument</figcaption>
         </figure>
 
         <p className="lead">
-          Most people approach the Bhagavad Gita as a quote book. They pick a verse, put it on a poster, and move on. That's like watching only the trailer and thinking you've seen the film. The Gita is a constructed argument — with a beginning, a buildup, a climax that breaks what you thought you knew, and an ending that lands quietly but hits harder than anything that came before it.
+          Most people approach the Bhagavad Gita as a quote book. They pick a verse, put it on a poster, and move on. That's like watching only the trailer and thinking you've seen the film. The Gita is a constructed argument, with a beginning, a buildup, a climax that breaks what you thought you knew, and an ending that lands quietly but hits harder than anything that came before it.
         </p>
 
         <p>
-          Here's what's remarkable: Krishna doesn't start with his biggest claim. He earns it. Over eighteen chapters, he takes a man who is intellectually sharp but emotionally collapsed and rebuilds him — not by comforting him, but by completely restructuring how he understands himself, action, death, and the nature of the universe. By the end, the man who was sitting in a chariot unable to lift his bow says: <em>my confusion is gone, I am ready.</em>
+          Here's what's remarkable: Krishna doesn't start with his biggest claim. He earns it. Over eighteen chapters, he takes a man who is intellectually sharp but emotionally collapsed and rebuilds him, not by comforting him, but by completely restructuring how he understands himself, action, death, and the nature of the universe. By the end, the man who was sitting in a chariot unable to lift his bow says: <em>my confusion is gone, I am ready.</em>
         </p>
 
         <p>
@@ -601,12 +603,12 @@ export default function CompleteStructurePage() {
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
-            <li><a href="#setup">The setup — why the conversation even happens</a></li>
-            <li><a href="#act1">Act I — The Inner Foundation (Chapters 1–6)</a></li>
-            <li><a href="#act2">Act II — The Revelation (Chapters 7–12)</a></li>
-            <li><a href="#ch11">Chapter 11 — the scene that changes everything</a></li>
-            <li><a href="#act3">Act III — The Philosophy Deepened (Chapters 13–18)</a></li>
-            <li><a href="#1866">18.66 — the ending that reframes everything</a></li>
+            <li><a href="#setup">The setup, why the conversation even happens</a></li>
+            <li><a href="#act1">Act I, The Inner Foundation (Chapters 1–6)</a></li>
+            <li><a href="#act2">Act II, The Revelation (Chapters 7–12)</a></li>
+            <li><a href="#ch11">Chapter 11, the scene that changes everything</a></li>
+            <li><a href="#act3">Act III, The Philosophy Deepened (Chapters 13–18)</a></li>
+            <li><a href="#1866">18.66, the ending that reframes everything</a></li>
             <li><a href="#patterns">Five things Krishna does across all 18 chapters</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
           </ol>
@@ -641,11 +643,11 @@ export default function CompleteStructurePage() {
               <div className="shloka-insight">Notice what the blind king calls his sons: <em>maamakāḥ</em> — mine. Not "the Kauravas." Mine. The Gita's opening word signals exactly the problem that will run through the whole conversation: attachment, and the distortion of reality it produces.</div>
             </div>
           </div>
-          <div className="shloka-essence">"My sons" — not "the Kauravas." The disease is in the first word.</div>
+          <div className="shloka-essence">"My sons", not "the Kauravas." The disease is in the first word.</div>
         </div>
 
         <p>
-          Why does this matter? Because the Gita is framed as a war story, but the enemy it's actually fighting is attachment — to roles, to outcomes, to the idea that "my side" is a meaningful concept in the first place. The opening verse encodes the problem before the story has even properly begun.
+          Why does this matter? Because the Gita is framed as a war story, but the enemy it's actually fighting is attachment, to roles, to outcomes, to the idea that "my side" is a meaningful concept in the first place. The opening verse encodes the problem before the story has even properly begun.
         </p>
 
         <p>
@@ -666,14 +668,14 @@ export default function CompleteStructurePage() {
             </div>
             <div>
               <div className="shloka-col-label">What it signals</div>
-              <div className="shloka-insight">The hero has collapsed. Not from weakness — from the weight of his own conscience. Chapter 1 is the Gita's inciting incident, its first act break. Everything from Chapter 2 onwards is Krishna's response to this moment.</div>
+              <div className="shloka-insight">The hero has collapsed. Not from weakness, from the weight of his own conscience. Chapter 1 is the Gita's inciting incident, its first act break. Everything from Chapter 2 onwards is Krishna's response to this moment.</div>
             </div>
           </div>
           <div className="shloka-essence">The bow is down. The conversation is about to begin.</div>
         </div>
 
         <p>
-          Chapter 1 is brilliant structural writing. It makes you feel the full weight of the situation before any philosophy begins. Arjuna's grief is specific, earned, and real — he names the people he sees across the field, describes his physical symptoms in precise detail (shaking limbs, burning skin, bow slipping from his hands), and makes sophisticated ethical arguments for inaction. He's not stupid. He's not cowardly. He is genuinely caught in an impossible situation. And that matters, because what Krishna says to him over the next 17 chapters has to be worthy of the real seriousness of his crisis.
+          Chapter 1 is brilliant structural writing. It makes you feel the full weight of the situation before any philosophy begins. Arjuna's grief is specific, earned, and real, he names the people he sees across the field, describes his physical symptoms in precise detail (shaking limbs, burning skin, bow slipping from his hands), and makes sophisticated ethical arguments for inaction. He's not stupid. He's not cowardly. He is genuinely caught in an impossible situation. And that matters, because what Krishna says to him over the next 17 chapters has to be worthy of the real seriousness of his crisis.
         </p>
 
         {/* ACT 1 */}
@@ -703,14 +705,14 @@ export default function CompleteStructurePage() {
             </div>
             <div>
               <div className="shloka-col-label">Why Krishna starts here</div>
-              <div className="shloka-insight">Before he can teach Arjuna anything about action, he has to establish the nature of what's actually at stake. If Arjuna is wrong about what dying means — if the soul is actually eternal — then his entire moral calculus changes. Metaphysics before ethics. Foundation before house.</div>
+              <div className="shloka-insight">Before he can teach Arjuna anything about action, he has to establish the nature of what's actually at stake. If Arjuna is wrong about what dying means, if the soul is actually eternal, then his entire moral calculus changes. Metaphysics before ethics. Foundation before house.</div>
             </div>
           </div>
           <div className="shloka-essence">The diagnosis before the prescription.</div>
         </div>
 
         <p>
-          Why start with the soul? Because every practical teaching that follows — about action, duty, attachment, peace — rests on this foundation. If the self that you're protecting when you grieve is actually eternal and indestructible, then the nature of "loss" is different. If the soul cannot be killed, then certain arguments about the moral horror of battle need to be re-examined.
+          Why start with the soul? Because every practical teaching that follows, about action, duty, attachment, peace, rests on this foundation. If the self that you're protecting when you grieve is actually eternal and indestructible, then the nature of "loss" is different. If the soul cannot be killed, then certain arguments about the moral horror of battle need to be re-examined.
         </p>
 
         <div className="shloka-card">
@@ -723,23 +725,23 @@ export default function CompleteStructurePage() {
           <div className="shloka-body">
             <div>
               <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">The soul is never born, never dies. It has not come into being, does not come into being, will not come into being. Unborn, eternal, ever-existing, primeval — it is not slain when the body is slain.</div>
+              <div className="shloka-meaning">The soul is never born, never dies. It has not come into being, does not come into being, will not come into being. Unborn, eternal, ever-existing, primeval, it is not slain when the body is slain.</div>
             </div>
             <div>
               <div className="shloka-col-label">The foundation stone</div>
-              <div className="shloka-insight">This is the keystone of the Gita's entire structure. Every teaching that follows — about acting without attachment, about equanimity in success and failure, about inner peace — is downstream of this claim. If you are eternal, then the temporary disruptions of life have a different weight.</div>
+              <div className="shloka-insight">This is the keystone of the Gita's entire structure. Every teaching that follows, about acting without attachment, about equanimity in success and failure, about inner peace, is downstream of this claim. If you are eternal, then the temporary disruptions of life have a different weight.</div>
             </div>
           </div>
           <div className="shloka-essence">The foundation that makes all the other teachings possible.</div>
         </div>
 
         <p>
-          With the metaphysical foundation in place, Krishna moves to the practical. Chapter 2 gives us 2.47 — the verse that has probably been quoted more than any other in the Gita. And the reason it lands so hard is exactly because it comes after the soul teaching. Once you understand that you are not the outcome, you can act differently.
+          With the metaphysical foundation in place, Krishna moves to the practical. Chapter 2 gives us 2.47, the verse that has probably been quoted more than any other in the Gita. And the reason it lands so hard is exactly because it comes after the soul teaching. Once you understand that you are not the outcome, you can act differently.
         </p>
 
         <div className="shloka-card">
           <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.47 — The Most Quoted Verse</span>
+            <span className="shloka-ref">Bhagavad Gita 2.47, The Most Quoted Verse</span>
             <span className="shloka-speaker">Speaker: Krishna</span>
           </div>
           <div className="shloka-sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥</div>
@@ -751,19 +753,19 @@ export default function CompleteStructurePage() {
             </div>
             <div>
               <div className="shloka-col-label">The full picture</div>
-              <div className="shloka-insight">Four instructions, not two. Act (yes). Don't claim the outcome (yes). Don't make the outcome your motivation (yes). And — the fourth, usually ignored — don't use this teaching as an excuse for doing nothing. The Gita's karma teaching is as anti-nihilism as it is anti-ambition.</div>
+              <div className="shloka-insight">Four instructions, not two. Act (yes). Don't claim the outcome (yes). Don't make the outcome your motivation (yes). And, the fourth, usually ignored, don't use this teaching as an excuse for doing nothing. The Gita's karma teaching is as anti-nihilism as it is anti-ambition.</div>
             </div>
           </div>
           <div className="shloka-essence">Act fully. Hold lightly. But act.</div>
         </div>
 
         <p>
-          Chapters 3, 4, and 5 extend and ground this teaching. Chapter 3 says: you cannot not act — even the decision to sit still is an action. Chapter 4 drops a quiet bombshell (Krishna begins to hint at his own divine nature — more on that shortly). Chapter 5 resolves the apparent contradiction between renunciation and action: the lotus leaf lives in water but remains dry. You can be fully in the world, doing everything required, without being soaked by it.
+          Chapters 3, 4, and 5 extend and ground this teaching. Chapter 3 says: you cannot not act, even the decision to sit still is an action. Chapter 4 drops a quiet bombshell (Krishna begins to hint at his own divine nature, more on that shortly). Chapter 5 resolves the apparent contradiction between renunciation and action: the lotus leaf lives in water but remains dry. You can be fully in the world, doing everything required, without being soaked by it.
         </p>
 
         <div className="shloka-card">
           <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 5.10 — The Lotus Leaf</span>
+            <span className="shloka-ref">Bhagavad Gita 5.10, The Lotus Leaf</span>
             <span className="shloka-speaker">Speaker: Krishna</span>
           </div>
           <div className="shloka-sanskrit">ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः । लिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥</div>
@@ -771,23 +773,23 @@ export default function CompleteStructurePage() {
           <div className="shloka-body">
             <div>
               <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">One who acts, offering all actions to the Divine and abandoning attachment, is untouched by negativity — like a lotus leaf untouched by water.</div>
+              <div className="shloka-meaning">One who acts, offering all actions to the Divine and abandoning attachment, is untouched by negativity, like a lotus leaf untouched by water.</div>
             </div>
             <div>
               <div className="shloka-col-label">The metaphor that closes Act I</div>
-              <div className="shloka-insight">By the end of Chapter 5, the practical teaching is complete. You can act without being consumed. You can be present without being swept away. The lotus leaf doesn't avoid the water — it lives in it. That's the goal.</div>
+              <div className="shloka-insight">By the end of Chapter 5, the practical teaching is complete. You can act without being consumed. You can be present without being swept away. The lotus leaf doesn't avoid the water, it lives in it. That's the goal.</div>
             </div>
           </div>
           <div className="shloka-essence">In the world, but not of it.</div>
         </div>
 
         <p>
-          Chapter 6 is the hinge. It covers meditation — dhyana yoga — and contains one of the most humanly honest exchanges in the entire Gita. Arjuna listens to all of Krishna's teaching on meditation and mind control, and then says, essentially: this is impossible. The mind is like wind. How can anyone control it?
+          Chapter 6 is the hinge. It covers meditation, dhyana yoga, and contains one of the most humanly honest exchanges in the entire Gita. Arjuna listens to all of Krishna's teaching on meditation and mind control, and then says, essentially: this is impossible. The mind is like wind. How can anyone control it?
         </p>
 
         <div className="pull-quote">
-          <blockquote>"The mind is restless, turbulent, powerful, obstinate — controlling it seems as difficult as controlling the wind."</blockquote>
-          <cite>Arjuna — Bhagavad Gita 6.34</cite>
+          <blockquote>"The mind is restless, turbulent, powerful, obstinate, controlling it seems as difficult as controlling the wind."</blockquote>
+          <cite>Arjuna, Bhagavad Gita 6.34</cite>
         </div>
 
         <p>
@@ -795,7 +797,7 @@ export default function CompleteStructurePage() {
         </p>
 
         <p>
-          Act I — six chapters, the philosophical foundation of the Gita — ends here. Arjuna has a theory of the self, a theory of action, a theory of renunciation, and the beginning of a meditation practice. He is better equipped than when he started. But Krishna is not done. Not even close.
+          Act I, six chapters, the philosophical foundation of the Gita, ends here. Arjuna has a theory of the self, a theory of action, a theory of renunciation, and the beginning of a meditation practice. He is better equipped than when he started. But Krishna is not done. Not even close.
         </p>
 
         {/* ACT 2 */}
@@ -825,18 +827,18 @@ export default function CompleteStructurePage() {
           <div className="shloka-body">
             <div>
               <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">O Arjuna, there is nothing higher than me. All of this — the entire universe — is strung on me like pearls on a thread.</div>
+              <div className="shloka-meaning">O Arjuna, there is nothing higher than me. All of this, the entire universe, is strung on me like pearls on a thread.</div>
             </div>
             <div>
               <div className="shloka-col-label">The shift in register</div>
-              <div className="shloka-insight">Chapters 1–6 were advice from a wise friend. Chapter 7 is the moment the friend starts telling you who he actually is. The Gita's tone changes here permanently. What follows is not philosophy — it is progressive revelation.</div>
+              <div className="shloka-insight">Chapters 1–6 were advice from a wise friend. Chapter 7 is the moment the friend starts telling you who he actually is. The Gita's tone changes here permanently. What follows is not philosophy, it is progressive revelation.</div>
             </div>
           </div>
           <div className="shloka-essence">The philosopher reveals himself to be the universe.</div>
         </div>
 
         <p>
-          Chapter 8 introduces the idea that what you hold in your mind at death matters — that the quality of consciousness at the moment of departure shapes what follows. Chapter 9 offers what Krishna calls the "royal secret" — the most intimate revelation yet: <em>I am in all things and all things are in me. And I accept whatever is offered with genuine love, even a leaf, a flower, a drop of water.</em>
+          Chapter 8 introduces the idea that what you hold in your mind at death matters, that the quality of consciousness at the moment of departure shapes what follows. Chapter 9 offers what Krishna calls the "royal secret", the most intimate revelation yet: <em>I am in all things and all things are in me. And I accept whatever is offered with genuine love, even a leaf, a flower, a drop of water.</em>
         </p>
 
         <div className="shloka-card">
@@ -849,7 +851,7 @@ export default function CompleteStructurePage() {
           <div className="shloka-body">
             <div>
               <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">Whoever offers me with devotion a leaf, a flower, a fruit, or water — I accept that offering with love from a pure heart.</div>
+              <div className="shloka-meaning">Whoever offers me with devotion a leaf, a flower, a fruit, or water, I accept that offering with love from a pure heart.</div>
             </div>
             <div>
               <div className="shloka-col-label">The intimacy of Chapter 9</div>
@@ -860,11 +862,11 @@ export default function CompleteStructurePage() {
         </div>
 
         <p>
-          Chapter 10 is Krishna's catalogue of his own divine manifestations. He is the Ganga among rivers, the Himalaya among mountains, the lion among animals, the thunderbolt among weapons, the letter A among alphabets, the spring among seasons. The teaching is that whenever you encounter something of surpassing beauty, power, or excellence, you are glimpsing a fragment of the divine. This is not philosophy — it is a way of training the eyes to see.
+          Chapter 10 is Krishna's catalogue of his own divine manifestations. He is the Ganga among rivers, the Himalaya among mountains, the lion among animals, the thunderbolt among weapons, the letter A among alphabets, the spring among seasons. The teaching is that whenever you encounter something of surpassing beauty, power, or excellence, you are glimpsing a fragment of the divine. This is not philosophy, it is a way of training the eyes to see.
         </p>
 
         <div className="highlight-box">
-          <p><strong>The narrative logic of Chapters 7–10:</strong> Krishna is building up to something. He spends four chapters systematically establishing his divine nature — making cosmic claim after cosmic claim, each larger than the last. He is not doing this to be impressive. He is preparing Arjuna for what he is about to be asked to see. When Chapter 11 arrives, the buildup has earned what it's about to show.</p>
+          <p><strong>The narrative logic of Chapters 7–10:</strong> Krishna is building up to something. He spends four chapters systematically establishing his divine nature, making cosmic claim after cosmic claim, each larger than the last. He is not doing this to be impressive. He is preparing Arjuna for what he is about to be asked to see. When Chapter 11 arrives, the buildup has earned what it's about to show.</p>
         </div>
 
         {/* CHAPTER 11 */}
@@ -874,7 +876,7 @@ export default function CompleteStructurePage() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="ch11">Chapter 11 — The Scene That Breaks Everything</h2>
+        <h2 id="ch11">Chapter 11, The Scene That Breaks Everything</h2>
 
         <figure className="chapter-image">
           <img
@@ -884,7 +886,7 @@ export default function CompleteStructurePage() {
             height="675"
             loading="lazy"
           />
-          <figcaption>The Vishwarupa — the cosmic form Krishna reveals to Arjuna in Chapter 11</figcaption>
+          <figcaption>The Vishwarupa, the cosmic form Krishna reveals to Arjuna in Chapter 11</figcaption>
         </figure>
 
         <p>
@@ -892,12 +894,12 @@ export default function CompleteStructurePage() {
         </p>
 
         <p>
-          Krishna gives him divine sight. And what Arjuna sees is the entire cosmos — every god, every being, every world, past and future — contained within one form. He sees the warriors arrayed on both sides of the battle already consumed, already dead. He sees time itself in the shape of his charioteer.
+          Krishna gives him divine sight. And what Arjuna sees is the entire cosmos, every god, every being, every world, past and future, contained within one form. He sees the warriors arrayed on both sides of the battle already consumed, already dead. He sees time itself in the shape of his charioteer.
         </p>
 
         <div className="shloka-card">
           <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 11.12 — Sanjaya Describes the Vision</span>
+            <span className="shloka-ref">Bhagavad Gita 11.12, Sanjaya Describes the Vision</span>
             <span className="shloka-speaker">Speaker: Sanjaya (narrating)</span>
           </div>
           <div className="shloka-sanskrit">दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता । यदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः ॥</div>
@@ -909,10 +911,10 @@ export default function CompleteStructurePage() {
             </div>
             <div>
               <div className="shloka-col-label">The scale of the vision</div>
-              <div className="shloka-insight">Sanjaya, narrating from afar with his own divine sight, can barely find language. A thousand suns. Not metaphorically — as the only approximation available for what Arjuna is experiencing. This is the Gita's cinematic set piece, its single most visually overwhelming moment.</div>
+              <div className="shloka-insight">Sanjaya, narrating from afar with his own divine sight, can barely find language. A thousand suns. Not metaphorically, as the only approximation available for what Arjuna is experiencing. This is the Gita's cinematic set piece, its single most visually overwhelming moment.</div>
             </div>
           </div>
-          <div className="shloka-essence">A thousand suns — and still an approximation.</div>
+          <div className="shloka-essence">A thousand suns, and still an approximation.</div>
         </div>
 
         <p>
@@ -921,7 +923,7 @@ export default function CompleteStructurePage() {
 
         <div className="shloka-card">
           <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 11.32 — "I Am Time"</span>
+            <span className="shloka-ref">Bhagavad Gita 11.32, "I Am Time"</span>
             <span className="shloka-speaker">Speaker: Krishna (in the cosmic form)</span>
           </div>
           <div className="shloka-sanskrit">कालोऽस्मि लोकक्षयकृत्प्रवृद्धो लोकान्समाहर्तुमिह प्रवृत्तः । ऋतेऽपि त्वां न भविष्यन्ति सर्वे येऽवस्थिताः प्रत्यनीकेषु योधाः ॥</div>
@@ -933,14 +935,14 @@ export default function CompleteStructurePage() {
             </div>
             <div>
               <div className="shloka-col-label">The terrifying implication</div>
-              <div className="shloka-insight">This dismantles Arjuna's entire case for inaction. He had argued: I shouldn't fight because these men will die. Krishna is saying: they are already dead. Time has already determined this. Your participation or non-participation changes nothing about the outcome — it only determines whether you fulfil your role in what is already happening.</div>
+              <div className="shloka-insight">This dismantles Arjuna's entire case for inaction. He had argued: I shouldn't fight because these men will die. Krishna is saying: they are already dead. Time has already determined this. Your participation or non-participation changes nothing about the outcome, it only determines whether you fulfil your role in what is already happening.</div>
             </div>
           </div>
           <div className="shloka-essence">"They are already dead. The only question is whether you stand in your place."</div>
         </div>
 
         <p>
-          Arjuna is terrified. He begs Krishna to return to his human form. He says: the world was more beautiful when I could see your face. This is not weakness — it is the honest response to genuine overwhelm. No human being can hold the cosmic vision for long. And Krishna, with characteristic grace, returns to his familiar form and teaches Arjuna Chapter 12: after you have seen what I am, the appropriate response is devotion. Not terror. Not philosophical analysis. Just love.
+          Arjuna is terrified. He begs Krishna to return to his human form. He says: the world was more beautiful when I could see your face. This is not weakness, it is the honest response to genuine overwhelm. No human being can hold the cosmic vision for long. And Krishna, with characteristic grace, returns to his familiar form and teaches Arjuna Chapter 12: after you have seen what I am, the appropriate response is devotion. Not terror. Not philosophical analysis. Just love.
         </p>
 
         {/* ACT 3 */}
@@ -957,19 +959,19 @@ export default function CompleteStructurePage() {
         </p>
 
         <p>
-          Chapters 13 through 18 are the Gita's systematic philosophy — dense, rigorous, building on everything that came before. They are sometimes called the Gita's most difficult section. They are also, in many ways, its most complete.
+          Chapters 13 through 18 are the Gita's systematic philosophy, dense, rigorous, building on everything that came before. They are sometimes called the Gita's most difficult section. They are also, in many ways, its most complete.
         </p>
 
         <p>
-          <strong>Chapter 13</strong> introduces the distinction between the field (kshetra — the body, the material) and the knower of the field (kshetrajna — the soul, the conscious witness). This is the Gita's clearest map of identity: you are not your body, not your mind, not your circumstances. You are the one who knows them.
+          <strong>Chapter 13</strong> introduces the distinction between the field (kshetra, the body, the material) and the knower of the field (kshetrajna, the soul, the conscious witness). This is the Gita's clearest map of identity: you are not your body, not your mind, not your circumstances. You are the one who knows them.
         </p>
 
         <p>
-          <strong>Chapter 14</strong> introduces the three gunas — sattva (clarity, harmony), rajas (activity, passion), and tamas (inertia, heaviness). These are the three qualities of material nature that shape every human experience. Understanding them is a diagnostic tool: when you are restless, rajas is dominant. When you are clear and calm, sattva is active. When you cannot motivate yourself, tamas has taken hold. The guna framework is one of the Gita's most practically useful contributions.
+          <strong>Chapter 14</strong> introduces the three gunas, sattva (clarity, harmony), rajas (activity, passion), and tamas (inertia, heaviness). These are the three qualities of material nature that shape every human experience. Understanding them is a diagnostic tool: when you are restless, rajas is dominant. When you are clear and calm, sattva is active. When you cannot motivate yourself, tamas has taken hold. The guna framework is one of the Gita's most practically useful contributions.
         </p>
 
         <p>
-          <strong>Chapter 15</strong> offers one of the Gita's most striking images — the eternal ashvattha tree, with its roots above and branches below. The manifest world is this inverted tree. To understand it, you have to see where the roots actually are — in the eternal, not the temporal.
+          <strong>Chapter 15</strong> offers one of the Gita's most striking images, the eternal ashvattha tree, with its roots above and branches below. The manifest world is this inverted tree. To understand it, you have to see where the roots actually are, in the eternal, not the temporal.
         </p>
 
         <p>
@@ -989,7 +991,7 @@ export default function CompleteStructurePage() {
         <h2 id="1866">The Verse That Reframes Everything That Came Before</h2>
 
         <p>
-          Chapter 18 is the Gita's longest chapter — 78 verses — and its most complete. It synthesises karma yoga, jnana yoga, bhakti yoga. It revisits renunciation. It discusses the three gunas in action. It offers a final taxonomy of knowledge, action, reason, and determination.
+          Chapter 18 is the Gita's longest chapter, 78 verses, and its most complete. It synthesises karma yoga, jnana yoga, bhakti yoga. It revisits renunciation. It discusses the three gunas in action. It offers a final taxonomy of knowledge, action, reason, and determination.
         </p>
 
         <p>
@@ -997,12 +999,12 @@ export default function CompleteStructurePage() {
         </p>
 
         <p>
-          After 17 chapters of philosophy, yoga, meditation, cosmic revelation, and systematic metaphysics — after offering Arjuna every possible framework for understanding his situation — Krishna offers a different kind of teaching. Not a framework. Not a path. A relationship.
+          After 17 chapters of philosophy, yoga, meditation, cosmic revelation, and systematic metaphysics, after offering Arjuna every possible framework for understanding his situation, Krishna offers a different kind of teaching. Not a framework. Not a path. A relationship.
         </p>
 
         <div className="shloka-card">
           <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.66 — The Final Teaching</span>
+            <span className="shloka-ref">Bhagavad Gita 18.66, The Final Teaching</span>
             <span className="shloka-speaker">Speaker: Krishna</span>
           </div>
           <div className="shloka-sanskrit">सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥</div>
@@ -1014,18 +1016,18 @@ export default function CompleteStructurePage() {
             </div>
             <div>
               <div className="shloka-col-label">Why this is the most radical verse in the Gita</div>
-              <div className="shloka-insight">The Gita has spent 17 chapters teaching dharma — your duty, the various paths, the right way to act in every circumstance. And now Krishna says: let all of that go and just trust me. This is not the abandonment of ethics. It is their transcendence. After all the frameworks, the final teaching is not a technique. It is trust. Not believe-in-me. Trust me completely.</div>
+              <div className="shloka-insight">The Gita has spent 17 chapters teaching dharma, your duty, the various paths, the right way to act in every circumstance. And now Krishna says: let all of that go and just trust me. This is not the abandonment of ethics. It is their transcendence. After all the frameworks, the final teaching is not a technique. It is trust. Not believe-in-me. Trust me completely.</div>
             </div>
           </div>
           <div className="shloka-essence">"Let go of all conditions. I will take care of you."</div>
         </div>
 
         <p>
-          Think about the structural weight of this. Chapter 2 gives us 2.47 — do your duty without attachment to results. A teaching about action and detachment. It asks a lot of the practitioner. It requires discipline, awareness, a kind of active renunciation in the middle of doing. Chapter 18 gives us 18.66 — surrender completely. Not even dharma as a basis. Just: come to me.
+          Think about the structural weight of this. Chapter 2 gives us 2.47, do your duty without attachment to results. A teaching about action and detachment. It asks a lot of the practitioner. It requires discipline, awareness, a kind of active renunciation in the middle of doing. Chapter 18 gives us 18.66, surrender completely. Not even dharma as a basis. Just: come to me.
         </p>
 
         <p>
-          The Gita begins by teaching Arjuna to act without depending on outcomes. It ends by inviting him to stop depending on anything at all — except the one he's been talking to for 17 chapters. The progression is: independence from outcomes → independence from frameworks → complete dependence on the divine. The spiritual journey in the Gita goes not from dependence to independence, but from small dependence (on outcomes, on results, on role) to the only dependence that doesn't create bondage.
+          The Gita begins by teaching Arjuna to act without depending on outcomes. It ends by inviting him to stop depending on anything at all, except the one he's been talking to for 17 chapters. The progression is: independence from outcomes → independence from frameworks → complete dependence on the divine. The spiritual journey in the Gita goes not from dependence to independence, but from small dependence (on outcomes, on results, on role) to the only dependence that doesn't create bondage.
         </p>
 
         <p>
@@ -1042,23 +1044,23 @@ export default function CompleteStructurePage() {
           <div className="shloka-body">
             <div>
               <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">Fix your mind on me, be devoted to me, worship me, bow to me. You will come to me. I truly promise you this — you are dear to me.</div>
+              <div className="shloka-meaning">Fix your mind on me, be devoted to me, worship me, bow to me. You will come to me. I truly promise you this, you are dear to me.</div>
             </div>
             <div>
               <div className="shloka-col-label">The most personal moment</div>
-              <div className="shloka-insight">The God who revealed himself as the destroyer of worlds two chapters ago now says: you are dear to me. Priyah asi me. The scale swings from cosmic terror to personal tenderness. This is not a contradiction — it is the full picture. The very same being is both.</div>
+              <div className="shloka-insight">The God who revealed himself as the destroyer of worlds two chapters ago now says: you are dear to me. Priyah asi me. The scale swings from cosmic terror to personal tenderness. This is not a contradiction, it is the full picture. The very same being is both.</div>
             </div>
           </div>
-          <div className="shloka-essence">"You are dear to me." — After everything, this is what he says.</div>
+          <div className="shloka-essence">"You are dear to me.", After everything, this is what he says.</div>
         </div>
 
         <p>
-          And then — the final voice in the Gita belongs not to Krishna but to Arjuna. The discourse is over. The choice is his. Krishna has done his work. What does Arjuna say?
+          And then, the final voice in the Gita belongs not to Krishna but to Arjuna. The discourse is over. The choice is his. Krishna has done his work. What does Arjuna say?
         </p>
 
         <div className="shloka-card">
           <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.73 — Arjuna's Last Words</span>
+            <span className="shloka-ref">Bhagavad Gita 18.73, Arjuna's Last Words</span>
             <span className="shloka-speaker">Speaker: Arjuna</span>
           </div>
           <div className="shloka-sanskrit">नष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत । स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव ॥</div>
@@ -1070,10 +1072,10 @@ export default function CompleteStructurePage() {
             </div>
             <div>
               <div className="shloka-col-label">The perfect ending</div>
-              <div className="shloka-insight">The Gita begins with Arjuna sitting down and putting his bow aside, overcome with grief and confusion. It ends with Arjuna standing up — steady, clear, ready. The battlefield hasn't changed. The armies are still there. But the man who faces them is completely different. That is the transformation the Gita accomplishes.</div>
+              <div className="shloka-insight">The Gita begins with Arjuna sitting down and putting his bow aside, overcome with grief and confusion. It ends with Arjuna standing up, steady, clear, ready. The battlefield hasn't changed. The armies are still there. But the man who faces them is completely different. That is the transformation the Gita accomplishes.</div>
             </div>
           </div>
-          <div className="shloka-essence">"My delusion is gone. I am ready." — The only answer that matters.</div>
+          <div className="shloka-essence">"My delusion is gone. I am ready.", The only answer that matters.</div>
         </div>
 
         {/* PATTERNS SECTION */}
@@ -1086,13 +1088,13 @@ export default function CompleteStructurePage() {
         <h2 id="patterns">Five Things Krishna Does Across All 18 Chapters</h2>
 
         <div className="insights-box">
-          <div className="insights-label">The Gita's Craft — What Krishna's Discourse Actually Does</div>
+          <div className="insights-label">The Gita's Craft, What Krishna's Discourse Actually Does</div>
           <ul className="insights-list">
-            <li><strong>He earns every claim.</strong> Krishna doesn't announce his biggest ideas first. He builds a foundation, then a floor, then a wall. The claim "I am time, the destroyer of worlds" lands in Chapter 11 with devastating force precisely because six chapters of philosophy have already been established. The Vishwarupa is not a revelation without context — it is the culmination of an argument.</li>
-            <li><strong>He answers the question behind the question.</strong> Arjuna asks: should I fight? Krishna answers: you don't understand what death is, what the self is, or what action is — so the question you're asking is malformed. He rebuilds the questioner before he answers the question.</li>
-            <li><strong>He alternates between grandeur and intimacy.</strong> The Gita moves rhythmically between cosmic claims and personal warmth. After the terror of the Vishwarupa, the softness of 9.26 (I accept even a leaf). After the systematic philosophy of Chapters 13–17, the tenderness of 18.65 (you are dear to me). The oscillation is intentional — it keeps the teaching from becoming either coldly abstract or sentimentally narrow.</li>
-            <li><strong>He never removes Arjuna's choice.</strong> At the end of the entire discourse, Krishna explicitly says (18.63): "I have told you the most secret wisdom. Now reflect on it fully, and do as you wish." After 700 verses, the autonomy is returned. The Gita is not a command. It is an invitation to clarity — and clarity still requires a choice.</li>
-            <li><strong>The ending is quieter than the climax.</strong> Chapter 11 is the Gita's most spectacular moment. But 18.66 — whispered, intimate, radical — is its most important. The Gita builds to thunder and ends in stillness. That is a structural choice, and it is perfect.</li>
+            <li><strong>He earns every claim.</strong> Krishna doesn't announce his biggest ideas first. He builds a foundation, then a floor, then a wall. The claim "I am time, the destroyer of worlds" lands in Chapter 11 with devastating force precisely because six chapters of philosophy have already been established. The Vishwarupa is not a revelation without context, it is the culmination of an argument.</li>
+            <li><strong>He answers the question behind the question.</strong> Arjuna asks: should I fight? Krishna answers: you don't understand what death is, what the self is, or what action is, so the question you're asking is malformed. He rebuilds the questioner before he answers the question.</li>
+            <li><strong>He alternates between grandeur and intimacy.</strong> The Gita moves rhythmically between cosmic claims and personal warmth. After the terror of the Vishwarupa, the softness of 9.26 (I accept even a leaf). After the systematic philosophy of Chapters 13–17, the tenderness of 18.65 (you are dear to me). The oscillation is intentional, it keeps the teaching from becoming either coldly abstract or sentimentally narrow.</li>
+            <li><strong>He never removes Arjuna's choice.</strong> At the end of the entire discourse, Krishna explicitly says (18.63): "I have told you the most secret wisdom. Now reflect on it fully, and do as you wish." After 700 verses, the autonomy is returned. The Gita is not a command. It is an invitation to clarity, and clarity still requires a choice.</li>
+            <li><strong>The ending is quieter than the climax.</strong> Chapter 11 is the Gita's most spectacular moment. But 18.66, whispered, intimate, radical, is its most important. The Gita builds to thunder and ends in stillness. That is a structural choice, and it is perfect.</li>
           </ul>
         </div>
 
@@ -1101,7 +1103,7 @@ export default function CompleteStructurePage() {
           <div className="app-cta-eyebrow">Free iOS App</div>
           <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
           <p className="app-cta-desc">
-            The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+            The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
           </p>
           <div className="app-cta-features">
             <span>✦ Daily shloka in Sanskrit</span>
@@ -1131,32 +1133,32 @@ export default function CompleteStructurePage() {
 
           <div className="faq-item">
             <div className="faq-q">How is the Bhagavad Gita structured?</div>
-            <div className="faq-a">The Gita's 18 chapters fall into three broad movements. Chapters 1–6 deal with action, duty, and the self — the practical foundation. Chapters 7–12 shift register dramatically: Krishna reveals his divine nature, culminating in the Vishwarupa (cosmic form) of Chapter 11. Chapters 13–18 systematise and deepen — the field and its knower, the three gunas, divine and demonic natures, and the grand synthesis of Chapter 18. The arc runs from crisis, through philosophical foundation, through cosmic revelation, to intimate surrender.</div>
+            <div className="faq-a">The Gita's 18 chapters fall into three broad movements. Chapters 1–6 deal with action, duty, and the self, the practical foundation. Chapters 7–12 shift register dramatically: Krishna reveals his divine nature, culminating in the Vishwarupa (cosmic form) of Chapter 11. Chapters 13–18 systematise and deepen, the field and its knower, the three gunas, divine and demonic natures, and the grand synthesis of Chapter 18. The arc runs from crisis, through philosophical foundation, through cosmic revelation, to intimate surrender.</div>
           </div>
 
           <div className="faq-item">
             <div className="faq-q">What is the climax of the Bhagavad Gita?</div>
-            <div className="faq-a">Chapter 11 — the Vishwarupa Darshana Yoga — is the Gita's dramatic climax. Arjuna asks to see Krishna's universal form. He is given divine sight. He sees the entire cosmos — all gods, all beings, all time — within Krishna. He sees warriors already dead before the battle begins. He sees Krishna as Kala (Time) itself. Arjuna is overwhelmed and begs Krishna to return to his human form. But the Gita's most important verse — 18.66 — comes seven chapters later, almost in a whisper.</div>
+            <div className="faq-a">Chapter 11, the Vishwarupa Darshana Yoga, is the Gita's dramatic climax. Arjuna asks to see Krishna's universal form. He is given divine sight. He sees the entire cosmos, all gods, all beings, all time, within Krishna. He sees warriors already dead before the battle begins. He sees Krishna as Kala (Time) itself. Arjuna is overwhelmed and begs Krishna to return to his human form. But the Gita's most important verse, 18.66, comes seven chapters later, almost in a whisper.</div>
           </div>
 
           <div className="faq-item">
             <div className="faq-q">What is the final teaching of the Bhagavad Gita?</div>
-            <div className="faq-a">The final teaching is 18.66: "Abandon all dharmas and take refuge in me alone. I will free you from all sins. Do not grieve." This is the most radical verse in the Gita — and the most intimate. After 17 chapters of philosophy, yoga, cosmic revelation, and metaphysics, Krishna's last instruction is not a technique or a path. It is a relationship. Trust me completely. I will handle the rest.</div>
+            <div className="faq-a">The final teaching is 18.66: "Abandon all dharmas and take refuge in me alone. I will free you from all sins. Do not grieve." This is the most radical verse in the Gita, and the most intimate. After 17 chapters of philosophy, yoga, cosmic revelation, and metaphysics, Krishna's last instruction is not a technique or a path. It is a relationship. Trust me completely. I will handle the rest.</div>
           </div>
 
           <div className="faq-item">
             <div className="faq-q">What are the three sections of the Bhagavad Gita?</div>
-            <div className="faq-a">The Gita is traditionally divided into three hexads: (1) Chapters 1–6, the Karma/Jnana Kanda — focused on action, self-knowledge, and meditation; (2) Chapters 7–12, the Bhakti Kanda — focused on devotion, the nature of the Divine, and the cosmic form; (3) Chapters 13–18, the Jnana-Vijnana Kanda — focused on deeper metaphysical distinctions. The arc tracks the shift from practical ethics, to theological revelation, to systematic philosophy and final surrender.</div>
+            <div className="faq-a">The Gita is traditionally divided into three hexads: (1) Chapters 1–6, the Karma/Jnana Kanda, focused on action, self-knowledge, and meditation; (2) Chapters 7–12, the Bhakti Kanda, focused on devotion, the nature of the Divine, and the cosmic form; (3) Chapters 13–18, the Jnana-Vijnana Kanda, focused on deeper metaphysical distinctions. The arc tracks the shift from practical ethics, to theological revelation, to systematic philosophy and final surrender.</div>
           </div>
 
           <div className="faq-item">
             <div className="faq-q">What does Arjuna say at the end of the Bhagavad Gita?</div>
-            <div className="faq-a">Arjuna's final words are verse 18.73: "My delusion is destroyed. By your grace, my memory has returned. I am free of doubt. I am steady. I will act according to your word." The Gita begins with Arjuna sitting down, putting his bow away, overwhelmed and refusing to act. It ends with him standing up, resolute, ready. The discourse hasn't changed the situation — the armies are still there. But the man who faces them is completely different.</div>
+            <div className="faq-a">Arjuna's final words are verse 18.73: "My delusion is destroyed. By your grace, my memory has returned. I am free of doubt. I am steady. I will act according to your word." The Gita begins with Arjuna sitting down, putting his bow away, overwhelmed and refusing to act. It ends with him standing up, resolute, ready. The discourse hasn't changed the situation, the armies are still there. But the man who faces them is completely different.</div>
           </div>
 
           <div className="faq-item">
             <div className="faq-q">Why does the Gita keep going after Chapter 11?</div>
-            <div className="faq-a">Because the cosmic vision alone is not enough. Arjuna has been shown what Krishna is. But knowledge of what someone is doesn't automatically tell you how to relate to them or how to live with that knowledge. Chapters 12–18 are the Gita's answer to the question: now that you've seen the truth, what do you do with it? They systematise the earlier teachings, deepen the metaphysics, and arrive at the most personal teaching of all — not a framework, but a complete surrender of self.</div>
+            <div className="faq-a">Because the cosmic vision alone is not enough. Arjuna has been shown what Krishna is. But knowledge of what someone is doesn't automatically tell you how to relate to them or how to live with that knowledge. Chapters 12–18 are the Gita's answer to the question: now that you've seen the truth, what do you do with it? They systematise the earlier teachings, deepen the metaphysics, and arrive at the most personal teaching of all, not a framework, but a complete surrender of self.</div>
           </div>
         </div>
 
@@ -1166,23 +1168,23 @@ export default function CompleteStructurePage() {
           <div className="related-grid">
             <a href="/blogs/bhagwat-geeta-chapter-1" className="related-card">
               <div className="related-card-label">Chapter 1 · 47 verses</div>
-              <div className="related-card-title">Arjuna Vishada Yoga — When the Warrior Sat Down</div>
+              <div className="related-card-title">Arjuna Vishada Yoga, When the Warrior Sat Down</div>
             </a>
             <a href="/blogs/bhagwat-geeta-chapter-2" className="related-card">
               <div className="related-card-label">Chapter 2 · 72 verses</div>
-              <div className="related-card-title">Sankhya Yoga — The Chapter That Changes Everything</div>
+              <div className="related-card-title">Sankhya Yoga, The Chapter That Changes Everything</div>
             </a>
             <a href="/blogs/bhagwat-geeta-chapter-3" className="related-card">
               <div className="related-card-label">Chapter 3 · 43 verses</div>
-              <div className="related-card-title">Karma Yoga — Why You Cannot Run</div>
+              <div className="related-card-title">Karma Yoga, Why You Cannot Run</div>
             </a>
             <a href="/blogs/bhagwat-geeta-chapter-4" className="related-card">
               <div className="related-card-label">Chapter 4 · 42 verses</div>
-              <div className="related-card-title">Jnana Yoga — The Fire That Burns Karma</div>
+              <div className="related-card-title">Jnana Yoga, The Fire That Burns Karma</div>
             </a>
             <a href="/blogs/bhagwat-geeta-chapter-5" className="related-card">
               <div className="related-card-label">Chapter 5 · 29 verses</div>
-              <div className="related-card-title">Karma Sanyasa — How to Act Without Being Touched</div>
+              <div className="related-card-title">Karma Sanyasa, How to Act Without Being Touched</div>
             </a>
             <a href="/blogs/bhagavad-gita-for-beginners" className="related-card">
               <div className="related-card-label">Beginner's Guide</div>

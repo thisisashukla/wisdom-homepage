@@ -718,7 +718,7 @@ export default function ChapterFourPage() {
           <div className="chapter-badge-dot"></div>
         </div>
         <h1 className="article-title">
-          Bhagavad Gita Chapter 4 (Adhyay 4) —<br />
+          Bhagavad Gita Chapter 4 (Adhyay 4):<br />
           <em>Jnana Yoga</em>
         </h1>
         <p className="article-subtitle">
@@ -732,6 +732,8 @@ export default function ChapterFourPage() {
           <span className="meta-item">~13 min read</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapter 4 of 18</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -742,7 +744,7 @@ export default function ChapterFourPage() {
                 <figure className="chapter-image">
           <img
             src="/assets/chapter4.webp"
-            alt="Krishna on the lineage of yoga and wisdom of action — Bhagavad Gita Chapter 4"
+            alt="Krishna on the lineage of yoga and wisdom of action, Bhagavad Gita Chapter 4"
             width="1200"
             height="675"
             loading="eager"
@@ -750,11 +752,11 @@ export default function ChapterFourPage() {
         </figure>
 
         <p className="lead">
-          Chapter 4 opens with one of the most quoted passages in Hindu scripture—Krishna's promise that whenever dharma declines, the Divine appears to restore it. The verses are powerful, and they have shaped how people think about history, justice, and divine intervention for five thousand years. But the chapter itself is about something more intimate and immediate. It's about knowledge as the fire that burns karma. It's about how wisdom transforms action. And it's about the relationship between teacher and student—established with such precision that it has become the model for all real learning in the tradition.
+          Chapter 4 opens with one of the most quoted passages in Hindu scripture, Krishna's promise that whenever dharma declines, the Divine appears to restore it. The verses are powerful, and they have shaped how people think about history, justice, and divine intervention for five thousand years. But the chapter itself is about something more intimate and immediate. It's about knowledge as the fire that burns karma. It's about how wisdom transforms action. And it's about the relationship between teacher and student, established with such precision that it has become the model for all real learning in the tradition.
         </p>
 
         <p>
-          By Chapter 4, Krishna has been teaching Arjuna philosophy. Now he opens his teaching about his own nature—and in doing so, reveals that understanding what the Divine really is constitutes liberation itself. Not as a reward at the end of practice, but as a direct consequence of that understanding.
+          By Chapter 4, Krishna has been teaching Arjuna philosophy. Now he opens his teaching about his own nature, and in doing so, reveals that understanding what the Divine really is constitutes liberation itself. Not as a reward at the end of practice, but as a direct consequence of that understanding.
         </p>
 
         {/* TABLE OF CONTENTS */}
@@ -762,25 +764,25 @@ export default function ChapterFourPage() {
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
             <li>
-              <a href="#divine-promise">The divine promise—4.7 and 4.8</a>
+              <a href="#divine-promise">The divine promise, 4.7 and 4.8</a>
             </li>
             <li>
-              <a href="#divine-action">The nature of divine action—4.9 to 4.14</a>
+              <a href="#divine-action">The nature of divine action, 4.9 to 4.14</a>
             </li>
             <li>
-              <a href="#yajna">Types of yajna—4.25 to 4.32</a>
+              <a href="#yajna">Types of yajna, 4.25 to 4.32</a>
             </li>
             <li>
-              <a href="#knowledge-highest">Knowledge is the highest yajna—4.33</a>
+              <a href="#knowledge-highest">Knowledge is the highest yajna, 4.33</a>
             </li>
             <li>
-              <a href="#approach-teacher">How to approach a teacher—4.34</a>
+              <a href="#approach-teacher">How to approach a teacher, 4.34</a>
             </li>
             <li>
-              <a href="#fire-wisdom">The fire of wisdom—4.37 to 4.38</a>
+              <a href="#fire-wisdom">The fire of wisdom, 4.37 to 4.38</a>
             </li>
             <li>
-              <a href="#arise">Arise—the chapter's final word</a>
+              <a href="#arise">Arise, the chapter's final word</a>
             </li>
             <li><a href="#all-verses">All 42 shlokas at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
@@ -824,12 +826,12 @@ export default function ChapterFourPage() {
             <div>
               <div className="shloka-col-label">What it reveals</div>
               <div className="shloka-insight">
-                This verse is not just a promise about the past—it is a claim about how existence is structured. Goodness and justice are not accidental. They have a guardian. The verse offers a frame for understanding dark historical periods not as anomalies but as conditions that precede renewal.
+                This verse is not just a promise about the past, it is a claim about how existence is structured. Goodness and justice are not accidental. They have a guardian. The verse offers a frame for understanding dark historical periods not as anomalies but as conditions that precede renewal.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            "Divine support arrives whenever goodness is threatened—trust in restoration."
+            "Divine support arrives whenever goodness is threatened, trust in restoration."
           </div>
         </div>
 
@@ -855,7 +857,7 @@ export default function ChapterFourPage() {
             <div>
               <div className="shloka-col-label">The deeper dimension</div>
               <div className="shloka-insight">
-                The pairing with 4.7 is important. The divine doesn't just appear for the protection of the good—it also appears for the destruction of the harmful and the restoration of the moral order. These three purposes are inseparable. The verse tells you what divine protection actually looks like: it requires the end of corruption.
+                The pairing with 4.7 is important. The divine doesn't just appear for the protection of the good, it also appears for the destruction of the harmful and the restoration of the moral order. These three purposes are inseparable. The verse tells you what divine protection actually looks like: it requires the end of corruption.
               </div>
             </div>
           </div>
@@ -865,7 +867,7 @@ export default function ChapterFourPage() {
         </div>
 
         <p>
-          What makes these verses so powerful is their matter-of-factness. Krishna doesn't claim special status for the moment Arjuna is living through. He's saying: this is how the cosmos is organized. When the moral order declines, correction inevitably follows. The Wisdom app brings this teaching to the foreground in your daily practice—these verses appear regularly because they speak to something we need to remember when historical darkness feels permanent.
+          What makes these verses so powerful is their matter-of-factness. Krishna doesn't claim special status for the moment Arjuna is living through. He's saying: this is how the cosmos is organized. When the moral order declines, correction inevitably follows. The Wisdom app brings this teaching to the foreground in your daily practice, these verses appear regularly because they speak to something we need to remember when historical darkness feels permanent.
         </p>
 
         {/* DIVIDER */}
@@ -880,7 +882,7 @@ export default function ChapterFourPage() {
         <h2 id="divine-action">What Does It Mean to Know the Divine?</h2>
 
         <p>
-          Verses 9 through 14 shift focus. Krishna isn't talking about distant historical cycles anymore. He's talking about what happens when you understand him—not as a belief, but as a realized knowledge.
+          Verses 9 through 14 shift focus. Krishna isn't talking about distant historical cycles anymore. He's talking about what happens when you understand him, not as a belief, but as a realized knowledge.
         </p>
 
         {/* SHLOKA 4.9 */}
@@ -905,7 +907,7 @@ export default function ChapterFourPage() {
             <div>
               <div className="shloka-col-label">The core teaching</div>
               <div className="shloka-insight">
-                Understanding the divine nature of action—not just what is done, but the consciousness behind it—is itself liberating. Knowledge here is not intellectual. It is recognition. It's seeing that the distinction between divine and human action dissolves when you understand consciousness itself.
+                Understanding the divine nature of action, not just what is done, but the consciousness behind it, is itself liberating. Knowledge here is not intellectual. It is recognition. It's seeing that the distinction between divine and human action dissolves when you understand consciousness itself.
               </div>
             </div>
           </div>
@@ -916,7 +918,7 @@ export default function ChapterFourPage() {
 
         <div className="highlight-box">
           <p>
-            <strong>A structural note:</strong> Notice the pattern. Verses 7-8 promise divine protection. Verse 9 says: understanding this protection, understanding how it works, is itself liberation. The Gita doesn't offer salvation as a distant goal—it offers understanding as the path and the destination simultaneously.
+            <strong>A structural note:</strong> Notice the pattern. Verses 7-8 promise divine protection. Verse 9 says: understanding this protection, understanding how it works, is itself liberation. The Gita doesn't offer salvation as a distant goal, it offers understanding as the path and the destination simultaneously.
           </p>
         </div>
 
@@ -932,7 +934,7 @@ export default function ChapterFourPage() {
         <h2 id="knowledge-highest">Knowledge is the Highest Yajna</h2>
 
         <p>
-          Chapter 4 contains extensive teachings on different types of yajna—ritual offerings, material sacrifices, breath control, and knowledge itself. Then comes verse 33, which settles the question: which offering is actually the highest?
+          Chapter 4 contains extensive teachings on different types of yajna, ritual offerings, material sacrifices, breath control, and knowledge itself. Then comes verse 33, which settles the question: which offering is actually the highest?
         </p>
 
         {/* SHLOKA 4.33 */}
@@ -957,12 +959,12 @@ export default function ChapterFourPage() {
             <div>
               <div className="shloka-col-label">Why this matters</div>
               <div className="shloka-insight">
-                Every action, if pursued far enough and deeply enough, eventually asks: but why? The chain of "why" always leads to questions about meaning, identity, and ultimate value. The Gita calls this endpoint jnana—wisdom. Action without wisdom is activity without direction. Wisdom is what completes it.
+                Every action, if pursued far enough and deeply enough, eventually asks: but why? The chain of "why" always leads to questions about meaning, identity, and ultimate value. The Gita calls this endpoint jnana, wisdom. Action without wisdom is activity without direction. Wisdom is what completes it.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            "Wisdom is the highest offering—it transforms and completes all actions."
+            "Wisdom is the highest offering, it transforms and completes all actions."
           </div>
         </div>
 
@@ -1060,12 +1062,12 @@ export default function ChapterFourPage() {
             <div>
               <div className="shloka-col-label">The radical claim</div>
               <div className="shloka-insight">
-                This is one of the Gita's most striking metaphors. The fire of wisdom doesn't gradually neutralize karma—it burns it entirely. The implication: understanding something fully, at its root, dissolves its hold on you. You don't heal your past through effort. You dissolve it through understanding.
+                This is one of the Gita's most striking metaphors. The fire of wisdom doesn't gradually neutralize karma, it burns it entirely. The implication: understanding something fully, at its root, dissolves its hold on you. You don't heal your past through effort. You dissolve it through understanding.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            "Knowledge is the purifier—it burns away all past karma."
+            "Knowledge is the purifier, it burns away all past karma."
           </div>
         </div>
 
@@ -1091,7 +1093,7 @@ export default function ChapterFourPage() {
             <div>
               <div className="shloka-col-label">The patience required</div>
               <div className="shloka-insight">
-                The word kālena—"in the course of time"—is significant. Wisdom is not a download. It ripens. You cannot force it. What you can do is practice, sincerely and consistently, and trust the process. The Gita is telling you: don't expect overnight transformation. But do expect transformation.
+                The word kālena, "in the course of time", is significant. Wisdom is not a download. It ripens. You cannot force it. What you can do is practice, sincerely and consistently, and trust the process. The Gita is telling you: don't expect overnight transformation. But do expect transformation.
               </div>
             </div>
           </div>
@@ -1137,17 +1139,17 @@ export default function ChapterFourPage() {
             <div>
               <div className="shloka-col-label">The pivot</div>
               <div className="shloka-insight">
-                "Arise"—uttiṣṭha—is the last word of Chapter 4. It echoes through to the end of the Gita. Knowledge without action is incomplete. Once you understand, you must stand up. The instruction is physical as much as philosophical. The Gita doesn't end with enlightenment. It ends with standing.
+                "Arise", uttiṣṭha, is the last word of Chapter 4. It echoes through to the end of the Gita. Knowledge without action is incomplete. Once you understand, you must stand up. The instruction is physical as much as philosophical. The Gita doesn't end with enlightenment. It ends with standing.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            "Use knowledge to overcome doubt—then act with steadiness."
+            "Use knowledge to overcome doubt, then act with steadiness."
           </div>
         </div>
 
         <p>
-          That single command—uttiṣṭha—reframes everything that comes before it. All the teaching about divine incarnation, knowledge as fire, the three gates to learning—it all culminates in action. Not action driven by attachment or ego. But action grounded in understanding. Action taken from a place of clarity. The Wisdom app reminds you of these teachings through daily practice precisely so that you can live them out—not as abstract philosophy, but as lived clarity that guides your decisions and actions.
+          That single command, uttiṣṭha, reframes everything that comes before it. All the teaching about divine incarnation, knowledge as fire, the three gates to learning, it all culminates in action. Not action driven by attachment or ego. But action grounded in understanding. Action taken from a place of clarity. The Wisdom app reminds you of these teachings through daily practice precisely so that you can live them out, not as abstract philosophy, but as lived clarity that guides your decisions and actions.
         </p>
 
         {/* DIVIDER */}
@@ -1223,7 +1225,7 @@ export default function ChapterFourPage() {
             <tr>
               <td>4.11</td>
               <td>Krishna</td>
-              <td>The Divine responds to your sincerity—every path is honored</td>
+              <td>The Divine responds to your sincerity, every path is honored</td>
             </tr>
             <tr>
               <td>4.12</td>
@@ -1243,7 +1245,7 @@ export default function ChapterFourPage() {
             <tr>
               <td>4.15</td>
               <td>Krishna</td>
-              <td>Perform duties with understanding—walk in the footsteps of the wise</td>
+              <td>Perform duties with understanding, walk in the footsteps of the wise</td>
             </tr>
             <tr>
               <td>4.16</td>
@@ -1258,12 +1260,12 @@ export default function ChapterFourPage() {
             <tr>
               <td>4.18</td>
               <td>Krishna</td>
-              <td>See beyond external actions—true wisdom lies in understanding intention</td>
+              <td>See beyond external actions, true wisdom lies in understanding intention</td>
             </tr>
             <tr>
               <td>4.19</td>
               <td>Krishna</td>
-              <td>Burn away desire with knowledge—act selflessly and be truly wise</td>
+              <td>Burn away desire with knowledge, act selflessly and be truly wise</td>
             </tr>
             <tr>
               <td>4.20</td>
@@ -1278,7 +1280,7 @@ export default function ChapterFourPage() {
             <tr>
               <td>4.22</td>
               <td>Krishna</td>
-              <td>Be steady and content—success or failure cannot bind you</td>
+              <td>Be steady and content, success or failure cannot bind you</td>
             </tr>
             <tr>
               <td>4.23</td>
@@ -1333,7 +1335,7 @@ export default function ChapterFourPage() {
             <tr>
               <td>4.33</td>
               <td>Krishna</td>
-              <td>Wisdom is the highest offering—it transforms all actions</td>
+              <td>Wisdom is the highest offering, it transforms all actions</td>
             </tr>
             <tr>
               <td>4.34</td>
@@ -1343,7 +1345,7 @@ export default function ChapterFourPage() {
             <tr>
               <td>4.35</td>
               <td>Krishna</td>
-              <td>True knowledge erases confusion—reveals the unity of all</td>
+              <td>True knowledge erases confusion, reveals the unity of all</td>
             </tr>
             <tr>
               <td>4.36</td>
@@ -1373,7 +1375,7 @@ export default function ChapterFourPage() {
             <tr>
               <td>4.41</td>
               <td>Krishna</td>
-              <td>Be steady and clear within—then your actions cannot bind you</td>
+              <td>Be steady and clear within, then your actions cannot bind you</td>
             </tr>
             <tr>
               <td>4.42</td>
@@ -1388,7 +1390,7 @@ export default function ChapterFourPage() {
           <div className="app-cta-eyebrow">Free iOS App</div>
           <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
           <p className="app-cta-desc">
-            The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+            The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
           </p>
           <div className="app-cta-features">
             <span>✦ Daily shloka in Sanskrit</span>
@@ -1427,13 +1429,13 @@ export default function ChapterFourPage() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 4 about?</div>
             <div className="faq-a">
-              Chapter 4, called Jnana Karma Sanyasa Yoga, covers three major themes: the divine promise of periodic re-incarnation to restore dharma (the famous 4.7–4.8 verses), the yoga of knowledge as the highest path of action, and the transformative power of wisdom—described as a fire that burns away all karma. The chapter also contains one of the Gita's most important teachings on how to approach a teacher with humility.
+              Chapter 4, called Jnana Karma Sanyasa Yoga, covers three major themes: the divine promise of periodic re-incarnation to restore dharma (the famous 4.7–4.8 verses), the yoga of knowledge as the highest path of action, and the transformative power of wisdom, described as a fire that burns away all karma. The chapter also contains one of the Gita's most important teachings on how to approach a teacher with humility.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the meaning of "yada yada hi dharmasya"?</div>
             <div className="faq-a">
-              This is the opening of verse 4.7. The full verse: "Whenever there is a decline in dharma (righteousness) and an increase in adharma (unrighteousness), O Arjuna, I manifest myself." It is one of the most quoted verses in all of Hindu scripture and is often paired with 4.8: "To protect the righteous, destroy the wicked, and re-establish dharma, I am born age after age." Together, they articulate the Hindu understanding of history as cyclical—and of goodness as having an ultimate protector.
+              This is the opening of verse 4.7. The full verse: "Whenever there is a decline in dharma (righteousness) and an increase in adharma (unrighteousness), O Arjuna, I manifest myself." It is one of the most quoted verses in all of Hindu scripture and is often paired with 4.8: "To protect the righteous, destroy the wicked, and re-establish dharma, I am born age after age." Together, they articulate the Hindu understanding of history as cyclical, and of goodness as having an ultimate protector.
             </div>
           </div>
           <div className="faq-item">
@@ -1445,13 +1447,13 @@ export default function ChapterFourPage() {
           <div className="faq-item">
             <div className="faq-q">What is "jnana yajna" in the Gita?</div>
             <div className="faq-a">
-              Jnana yajna means the sacrifice (offering) of knowledge or wisdom. In verse 4.33, Krishna says it is superior to material sacrifices because all actions find their completion in wisdom. The idea is that the ultimate "offering" you can make is understanding—burning away confusion and operating from clear sight.
+              Jnana yajna means the sacrifice (offering) of knowledge or wisdom. In verse 4.33, Krishna says it is superior to material sacrifices because all actions find their completion in wisdom. The idea is that the ultimate "offering" you can make is understanding, burning away confusion and operating from clear sight.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">How many verses are in Chapter 4 of the Bhagavad Gita?</div>
             <div className="faq-a">
-              Chapter 4 has 42 verses. It is also known as Jnana Karma Sanyasa Yoga—the Yoga of Renunciation of Action through Knowledge.
+              Chapter 4 has 42 verses. It is also known as Jnana Karma Sanyasa Yoga, the Yoga of Renunciation of Action through Knowledge.
             </div>
           </div>
         </div>
@@ -1460,11 +1462,11 @@ export default function ChapterFourPage() {
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous</div>
-            <a href="/blogs/bhagwat-geeta-chapter-3" className="ch-nav-title">Chapter 3 — Karma Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-3" className="ch-nav-title">Chapter 3, Karma Yoga</a>
           </div>
           <div style={{textAlign: 'right'}}>
             <div className="ch-nav-label">Next</div>
-            <a href="/blogs/bhagwat-geeta-chapter-5" className="ch-nav-title">Chapter 5 — Karma Sanyasa Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-5" className="ch-nav-title">Chapter 5, Karma Sanyasa Yoga</a>
           </div>
         </div>
 

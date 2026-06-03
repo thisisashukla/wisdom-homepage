@@ -3,21 +3,21 @@ import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 13 Summary – Key Verses & Meaning (Kshetra Kshetrajna Yoga)",
-  description: "Bhagavad Gita Chapter 13 (Kshetra Kshetrajna Vibhaga Yoga) — 35 verses on the field and the knower of the field, purusha-prakriti, and the witness self.",
+  description: "Bhagavad Gita Chapter 13 (Kshetra Kshetrajna Vibhaga Yoga), 35 verses on the field and the knower of the field, purusha-prakriti, and the witness self.",
   keywords: "bhagwat geeta chapter 13, bhagavad gita kshetra kshetrajna yoga, bhagwat geeta adhyay 13, field and knower of the field, qualities of knowledge gita, purusha prakriti gita, non-doer self gita, 13.8 amanitvam adambhitvam, Kshetra Kshetrajna Vibhaga Yoga meaning, field and knower of the field Bhagavad Gita, Bhagavad Gita 13.8 amanitvam adambhitvam, Bhagavad Gita 13.30 prakrtyaiva ca karmani, purusha prakriti Bhagavad Gita, self as witness Bhagavad Gita",
   openGraph: {
     title: "Bhagavad Gita Chapter 13 Summary – Key Verses & Meaning (Kshetra Kshetrajna Yoga)",
-    description: "Bhagavad Gita Chapter 13 — the field and the knower of the field. The Gita's foundational psychology of self-awareness.",
+    description: "Bhagavad Gita Chapter 13, the field and the knower of the field. The Gita's foundational psychology of self-awareness.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter13.webp", width: 1200, height: 675, alt: "The field and the knower of the field — a meditator observing the play of body, sensation, and thought without being captured by it. Chapter 13 of the Bhagavad Gita." }],
+    images: [{ url: "https://wisdomquotes.in/assets/chapter13.webp", width: 1200, height: 675, alt: "The field and the knower of the field, a meditator observing the play of body, sensation, and thought without being captured by it. Chapter 13 of the Bhagavad Gita." }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 13 Summary – Key Verses & Meaning (Kshetra Kshetrajna Yoga)",
-    description: "Bhagavad Gita Chapter 13 — the field and the knower of the field. The Gita's foundational psychology of self-awareness.",
+    description: "Bhagavad Gita Chapter 13, the field and the knower of the field. The Gita's foundational psychology of self-awareness.",
     images: ["https://wisdomquotes.in/assets/chapter13.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13" },
@@ -405,7 +405,7 @@ const schemas = [
         "name": "What does Bhagavad Gita 13.16 mean?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 13.16 describes the supreme reality as outside and within all beings, moving and unmoving, too subtle to be known, and 'far away and near at hand' (dūra-sthaṃ ca antike ca). The teaching is that what is everywhere cannot be located in any particular place — and is therefore, in one sense, far (because it is not localised) and in another sense, near (because it is not absent from anywhere)."
+          "text": "Verse 13.16 describes the supreme reality as outside and within all beings, moving and unmoving, too subtle to be known, and 'far away and near at hand' (dūra-sthaṃ ca antike ca). The teaching is that what is everywhere cannot be located in any particular place, and is therefore, in one sense, far (because it is not localised) and in another sense, near (because it is not absent from anywhere)."
         }
       },
       {
@@ -618,11 +618,11 @@ export default function ChapterPage13() {
             <div className="chapter-badge-dot"></div>
           </div>
           <h1 className="article-title">
-            Bhagavad Gita Chapter 13 (Adhyay 13) —<br />
+            Bhagavad Gita Chapter 13 (Adhyay 13):<br />
             <em>Kshetra Kshetrajna Vibhaga Yoga</em>
           </h1>
           <p className="article-subtitle">
-            The chapter that separates the seer from the seen. Your body, your reactions, your moods — all observed. By something that is not them. The Gita's most precise diagnostic, hidden in one of its quietest chapters.
+            The chapter that separates the seer from the seen. Your body, your reactions, your moods, all observed. By something that is not them. The Gita's most precise diagnostic, hidden in one of its quietest chapters.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -632,6 +632,8 @@ export default function ChapterPage13() {
             <span className="meta-item">~13 min read</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 13 of 18</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -650,23 +652,23 @@ export default function ChapterPage13() {
           </figure>
 
         <p className="lead">
-          Chapter 13 is the Gita's most precise piece of metaphysical work, and in some ways its quietest. The chapter does not have a single famous verse the way Chapter 2 or Chapter 11 does. What it has is one of the most useful distinctions in any philosophical tradition — the difference between the <em>kṣetra</em>, the field, and the <em>kṣetrajña</em>, the knower of the field. The body, the mind, the emotions, the conditioned reactions — all of these are the field. The awareness that observes them, that does not change as they change, is the knower.
+          Chapter 13 is the Gita's most precise piece of metaphysical work, and in some ways its quietest. The chapter does not have a single famous verse the way Chapter 2 or Chapter 11 does. What it has is one of the most useful distinctions in any philosophical tradition: the difference between the <em>kṣetra</em>, the field, and the <em>kṣetrajña</em>, the knower of the field. The body, the mind, the emotions, the conditioned reactions: all of these are the field. The awareness that observes them, that does not change as they change, is the knower.
         </p>
 
         <p>
-          Once you grasp this distinction, much of the Gita's earlier teaching becomes clearer. The non-attachment of Chapter 2, the witness-self of Chapter 5, the steady mind of Chapter 6 — they all rest on this one move. You learn to recognize what is observed and what does the observing, and you stop identifying with what is observed. Most modern psychology, two thousand years later, is still rediscovering this distinction under different names. The Gita places it at the centre of Chapter 13 and works through the implications carefully, verse by verse.
+          Once you grasp this distinction, much of the Gita's earlier teaching becomes clearer. The non-attachment of Chapter 2, the witness-self of Chapter 5, the steady mind of Chapter 6, they all rest on this one move. You learn to recognize what is observed and what does the observing, and you stop identifying with what is observed. Most modern psychology, two thousand years later, is still rediscovering this distinction under different names. The Gita places it at the centre of Chapter 13 and works through the implications carefully, verse by verse.
         </p>
 
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
-            <li><a href="#body-as-field">The body is the field — 13.1 and 13.2</a></li>
+            <li><a href="#body-as-field">The body is the field, 13.1 and 13.2</a></li>
             <li><a href="#reactions-are-field">Your reactions belong to the field, not to you</a></li>
-            <li><a href="#qualities-of-knowledge">What knowledge actually looks like — 13.8</a></li>
+            <li><a href="#qualities-of-knowledge">What knowledge actually looks like, 13.8</a></li>
             <li><a href="#near-and-far">What is far away and yet within everything</a></li>
             <li><a href="#attachment-binds">Why attachment to qualities keeps the cycle going</a></li>
             <li><a href="#non-doer">Seeing oneself as the non-doer</a></li>
-            <li><a href="#sun-image">The awareness that lights everything — 13.34</a></li>
+            <li><a href="#sun-image">The awareness that lights everything, 13.34</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
             <li><a href="#related-reading">Related reading</a></li>
@@ -685,11 +687,11 @@ export default function ChapterPage13() {
         <h2 id="body-as-field">The Body Is the Field. You Are the One Who Knows It.</h2>
 
         <p>
-          Chapter 13 begins with Arjuna asking for the cleanest definitional work of the entire book. He wants to understand the field, the knower of the field, knowledge, and what is to be known. Krishna's reply in verse 13.2 is one of the Gita's most quietly transformative sentences: <em>idaṃ śarīraṃ kṣetram ity abhidhīyate</em> — this body is called the field. The one who knows it is the knower of the field.
+          Chapter 13 begins with Arjuna asking for the cleanest definitional work of the entire book. He wants to understand the field, the knower of the field, knowledge, and what is to be known. Krishna's reply in verse 13.2 is one of the Gita's most quietly transformative sentences: <em>idaṃ śarīraṃ kṣetram ity abhidhīyate</em>: this body is called the field. The one who knows it is the knower of the field.
         </p>
 
         <p>
-          Read it slowly. The body is the field. You are not the body. You are the one who knows the body. The same distinction applies, by extension, to the mind, the thoughts, the moods, the desires. All of these are the field — they are what is observed. The knower is what does the observing. Most psychological suffering, the Gita is suggesting, comes from confusing the observer with what is being observed. You feel anxiety, and instead of noticing that you are observing anxiety, you say <em>I am anxious</em> — and the identification deepens the anxiety. Chapter 13 is the patient unpicking of that confusion.
+          Read it slowly. The body is the field. You are not the body. You are the one who knows the body. The same distinction applies, by extension, to the mind, the thoughts, the moods, the desires. All of these are the field: they are what is observed. The knower is what does the observing. Most psychological suffering, the Gita is suggesting, comes from confusing the observer with what is being observed. You feel anxiety, and instead of noticing that you are observing anxiety, you say <em>I am anxious</em>, and the identification deepens the anxiety. Chapter 13 is the patient unpicking of that confusion.
         </p>
 
         <div className="shloka-card">
@@ -707,7 +709,7 @@ export default function ChapterPage13() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                The Blessed One said: this body, Arjuna, is called the field. The one who knows it — the knowers call the knower of the field.
+                The Blessed One said: this body, Arjuna, is called the field. The one who knows it, the knowers call the knower of the field.
               </div>
             </div>
             <div>
@@ -738,14 +740,14 @@ export default function ChapterPage13() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="reactions-are-field">Your Reactions Are Not You — They Belong to the Field</h2>
+        <h2 id="reactions-are-field">Your Reactions Are Not You, They Belong to the Field</h2>
 
         <p>
           Verse 13.7 extends the field-knower distinction in a way that is psychologically devastating once you absorb it. Krishna lists what belongs to the field. Desire. Aversion. Pleasure. Pain. The body. Consciousness in its organized form. Steadiness or its lack. All of these, he says, are the field together with its modifications. They are not the knower.
         </p>
 
         <p>
-          Read this list and you will recognize most of what you have been calling your inner life. The wanting. The not-wanting. The agreeable sensations. The disagreeable sensations. The Gita is saying — these are all weather, not the sky. They happen in the field. You are not the field. You are the one who knows the field. The implication, lived out, is enormous. The reaction that just took over you is, on this account, observable. If it is observable, it is not, finally, you. The freedom that becomes possible from this single insight is the freedom Chapter 13 is patient enough to spell out.
+          Read this list and you will recognize most of what you have been calling your inner life. The wanting. The not-wanting. The agreeable sensations. The disagreeable sensations. The Gita is saying, these are all weather, not the sky. They happen in the field. You are not the field. You are the one who knows the field. The implication, lived out, is enormous. The reaction that just took over you is, on this account, observable. If it is observable, it is not, finally, you. The freedom that becomes possible from this single insight is the freedom Chapter 13 is patient enough to spell out.
         </p>
 
         <div className="shloka-card">
@@ -763,13 +765,13 @@ export default function ChapterPage13() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Desire, aversion, pleasure, pain, the body, consciousness, steadiness — this field, with its modifications, is briefly described.
+                Desire, aversion, pleasure, pain, the body, consciousness, steadiness, this field, with its modifications, is briefly described.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">What this verse moves out of "you"</div>
               <div className="shloka-insight">
-                Read the list. Desire. Aversion. Pleasure. Pain. Steadiness. These are what most of us call our identity. The verse moves all of them out of the knower category. You still have a desire — but the desire is something you are observing, not something you are. Once that shift happens, the desire's grip loosens. It is no longer wrestling you. It is just appearing, somewhere in your field of awareness.
+                Read the list. Desire. Aversion. Pleasure. Pain. Steadiness. These are what most of us call our identity. The verse moves all of them out of the knower category. You still have a desire, but the desire is something you are observing, not something you are. Once that shift happens, the desire's grip loosens. It is no longer wrestling you. It is just appearing, somewhere in your field of awareness.
               </div>
             </div>
           </div>
@@ -796,11 +798,11 @@ export default function ChapterPage13() {
         <h2 id="qualities-of-knowledge">What Knowledge Actually Looks Like in a Person</h2>
 
         <p>
-          Verses 13.8 through 13.12 contain the Gita's most concrete description of what knowledge looks like as a quality of character. The list is long — eighteen items in some traditional countings — and it is unexpectedly grounded. Absence of pride. Absence of pretence. Non-violence. Patience. Honesty. Service to the teacher. Cleanliness. Steadiness. Self-control. Detachment from sense objects. Absence of egoism. Recognition of birth, death, ageing, sickness as facts. Non-attachment to family. Constant equanimity. Unwavering devotion. A liking for solitude. Aversion to crowded social life. Constant awareness of the inner reality. And the seeing of the supreme reality as the goal.
+          Verses 13.8 through 13.12 contain the Gita's most concrete description of what knowledge looks like as a quality of character. The list is long, eighteen items in some traditional countings, and it is unexpectedly grounded. Absence of pride. Absence of pretence. Non-violence. Patience. Honesty. Service to the teacher. Cleanliness. Steadiness. Self-control. Detachment from sense objects. Absence of egoism. Recognition of birth, death, ageing, sickness as facts. Non-attachment to family. Constant equanimity. Unwavering devotion. A liking for solitude. Aversion to crowded social life. Constant awareness of the inner reality. And the seeing of the supreme reality as the goal.
         </p>
 
         <p>
-          Notice what the list is doing. The Gita has just made a metaphysical distinction — the field versus the knower. Now it asks: what does a person look like who has integrated this distinction? Not someone who has memorised more philosophy. Someone who has stopped needing to perform. Who has stopped reacting to provocation. Who has accepted ordinary facts like mortality without flinching. The list is the Gita's anti-portrait of egoic life — a description of what gets quieter when the field-knower confusion clears.
+          Notice what the list is doing. The Gita has just made a metaphysical distinction, the field versus the knower. Now it asks: what does a person look like who has integrated this distinction? Not someone who has memorised more philosophy. Someone who has stopped needing to perform. Who has stopped reacting to provocation. Who has accepted ordinary facts like mortality without flinching. The list is the Gita's anti-portrait of egoic life, a description of what gets quieter when the field-knower confusion clears.
         </p>
 
         <div className="shloka-card">
@@ -822,7 +824,7 @@ export default function ChapterPage13() {
               </div>
             </div>
             <div>
-              <div className="shloka-col-label">The first nine qualities — and what they share</div>
+              <div className="shloka-col-label">The first nine qualities, and what they share</div>
               <div className="shloka-insight">
                 Each of these qualities, looked at carefully, is the absence of a particular form of ego activity. Pride is ego. Pretence is ego. Violence is ego cornered. Impatience is ego in a hurry. The Gita is not adding new qualities to a person. It is describing what remains when the ego stops demanding so much airtime. The portrait is mostly subtractive.
               </div>
@@ -848,7 +850,7 @@ export default function ChapterPage13() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Constant awareness of the inner reality, and seeing the supreme reality as the meaning — this is called knowledge. Whatever is contrary to this is ignorance.
+                Constant awareness of the inner reality, and seeing the supreme reality as the meaning, this is called knowledge. Whatever is contrary to this is ignorance.
               </div>
             </div>
             <div>
@@ -872,14 +874,14 @@ export default function ChapterPage13() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="near-and-far">What Is Subtle Cannot Be Located — and Therefore Is Everywhere</h2>
+        <h2 id="near-and-far">What Is Subtle Cannot Be Located, and Therefore Is Everywhere</h2>
 
         <p>
-          Verse 13.16 is one of the chapter's most poetic moments, and one of its most precise. Krishna describes the supreme reality as inside and outside all beings, moving and unmoving, subtle and therefore unknowable, far away and near at hand. The phrase that catches readers is the last one. <em>Dūra-sthaṃ ca antike ca</em> — far away and near at hand. Both at once.
+          Verse 13.16 is one of the chapter's most poetic moments, and one of its most precise. Krishna describes the supreme reality as inside and outside all beings, moving and unmoving, subtle and therefore unknowable, far away and near at hand. The phrase that catches readers is the last one. <em>Dūra-sthaṃ ca antike ca</em>: far away and near at hand. Both at once.
         </p>
 
         <p>
-          Why this paradox? Because what is everywhere cannot be located. What cannot be located is, in one sense, far — because it is not in any particular place you can point to. And in another sense, near — because there is no place it is not. The verse is not being mystical for the sake of being mystical. It is naming, precisely, the experience of trying to find the Divine. You cannot find it because it is not localised. You cannot miss it because it is not absent. The verse is, in this sense, a permanent answer to the spiritual question: where is it? Everywhere. Including, especially, in the place from which you were doing the searching.
+          Why this paradox? Because what is everywhere cannot be located. What cannot be located is, in one sense, far, because it is not in any particular place you can point to. And in another sense, near, because there is no place it is not. The verse is not being mystical for the sake of being mystical. It is naming, precisely, the experience of trying to find the Divine. You cannot find it because it is not localised. You cannot miss it because it is not absent. The verse is, in this sense, a permanent answer to the spiritual question: where is it? Everywhere. Including, especially, in the place from which you were doing the searching.
         </p>
 
         <div className="shloka-card">
@@ -897,13 +899,13 @@ export default function ChapterPage13() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Outside and within all beings, unmoving and moving, too subtle to be known — that supreme is both far away and near at hand.
+                Outside and within all beings, unmoving and moving, too subtle to be known, that supreme is both far away and near at hand.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The grammar of omnipresence</div>
               <div className="shloka-insight">
-                Notice the verse pairs opposites — inside/outside, moving/unmoving, far/near. The Gita is consistently doing this when describing the Divine, because no single side of an opposition is sufficient. The Divine is what holds the opposites. The verse is teaching, by its grammar, that you should not expect to find the Divine in one location and not another. It is the field on which locations appear.
+                Notice the verse pairs opposites, inside/outside, moving/unmoving, far/near. The Gita is consistently doing this when describing the Divine, because no single side of an opposition is sufficient. The Divine is what holds the opposites. The verse is teaching, by its grammar, that you should not expect to find the Divine in one location and not another. It is the field on which locations appear.
               </div>
             </div>
           </div>
@@ -924,11 +926,11 @@ export default function ChapterPage13() {
         <h2 id="attachment-binds">Attachment to Qualities Is What Keeps Pulling You Back</h2>
 
         <p>
-          Verse 13.22 explains, in one sentence, why people keep ending up in the same patterns life after life — or, if you prefer the psychological reading, year after year within the same life. The verse says: the inner being, situated in nature, experiences the qualities born of nature. Attachment to those qualities is what causes rebirth in good and bad situations.
+          Verse 13.22 explains, in one sentence, why people keep ending up in the same patterns life after life, or, if you prefer the psychological reading, year after year within the same life. The verse says: the inner being, situated in nature, experiences the qualities born of nature. Attachment to those qualities is what causes rebirth in good and bad situations.
         </p>
 
         <p>
-          Read in the psychological register, this is one of the most useful diagnostic verses in the book. You are caught not by what happens to you. You are caught by your attachment to the qualities (the gunas) — your investment in being a certain kind of person, your craving for the kind of state you prefer, your aversion to the kind of state you don't. Drop the attachment and the qualities still appear; they just no longer have anywhere to land. Most therapy works on changing the qualities. The Gita is making a different bet: change the attachment, and the qualities lose their hold without needing to be changed first.
+          Read in the psychological register, this is one of the most useful diagnostic verses in the book. You are caught not by what happens to you. You are caught by your attachment to the qualities (the gunas), your investment in being a certain kind of person, your craving for the kind of state you prefer, your aversion to the kind of state you don't. Drop the attachment and the qualities still appear; they just no longer have anywhere to land. Most therapy works on changing the qualities. The Gita is making a different bet: change the attachment, and the qualities lose their hold without needing to be changed first.
         </p>
 
         <div className="shloka-card">
@@ -950,9 +952,9 @@ export default function ChapterPage13() {
               </div>
             </div>
             <div>
-              <div className="shloka-col-label">The cause is not the experience — it is the attachment</div>
+              <div className="shloka-col-label">The cause is not the experience, it is the attachment</div>
               <div className="shloka-insight">
-                The verse does not say the qualities are the problem. They are inevitable — the inner being situated in nature experiences them. The problem is <em>guṇa-saṅgaḥ</em> — attachment to the qualities. Not the wanting itself, but the gripping of the wanting. Not the pleasure itself, but the insistence on more of it. The diagnosis is surgical.
+                The verse does not say the qualities are the problem. They are inevitable: the inner being situated in nature experiences them. The problem is <em>guṇa-saṅgaḥ</em>, attachment to the qualities. Not the wanting itself, but the gripping of the wanting. Not the pleasure itself, but the insistence on more of it. The diagnosis is surgical.
               </div>
             </div>
           </div>
@@ -977,7 +979,7 @@ export default function ChapterPage13() {
         </p>
 
         <p>
-          Most modern readers, conditioned by ideologies of personal agency, initially resist this verse. It can sound like a denial of responsibility. It is not. Read carefully, the verse is making a more precise claim. Actions happen. The body acts. The mind decides. The personality reacts. All of this is nature in motion. The deepest <em>self</em> — the knower — is the witness of all this happening. The verse is not asking you to abdicate responsibility for your actions. It is asking you to stop identifying with the doer in a way that creates suffering. You can act fully, accountably, well — and still, at the deepest level, recognize that you are not the originator of the activity in the way you imagined. That recognition is freedom.
+          Most modern readers, conditioned by ideologies of personal agency, initially resist this verse. It can sound like a denial of responsibility. It is not. Read carefully, the verse is making a more precise claim. Actions happen. The body acts. The mind decides. The personality reacts. All of this is nature in motion. The deepest <em>self</em> (the knower) is the witness of all this happening. The verse is not asking you to abdicate responsibility for your actions. It is asking you to stop identifying with the doer in a way that creates suffering. You can act fully, accountably, well, and still, at the deepest level, recognize that you are not the originator of the activity in the way you imagined. That recognition is freedom.
         </p>
 
         <div className="shloka-card">
@@ -995,7 +997,7 @@ export default function ChapterPage13() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                The one who sees that all actions are performed by nature alone, and sees the self as the non-doer — that one sees truly.
+                The one who sees that all actions are performed by nature alone, and sees the self as the non-doer, that one sees truly.
               </div>
             </div>
             <div>
@@ -1012,7 +1014,7 @@ export default function ChapterPage13() {
 
         <div className="pull-quote">
           <blockquote>
-            "All actions are done by nature alone. The one who sees the self as the non-doer — sees rightly."
+            "All actions are done by nature alone. The one who sees the self as the non-doer, sees rightly."
           </blockquote>
           <cite>Bhagavad Gita 13.30</cite>
         </div>
@@ -1026,14 +1028,14 @@ export default function ChapterPage13() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="sun-image">As One Sun Lights the Whole World — The Closing Image</h2>
+        <h2 id="sun-image">As One Sun Lights the Whole World, The Closing Image</h2>
 
         <p>
-          Chapter 13 ends with one of the most luminous images in the Gita. Krishna says: as one sun illuminates the whole world, so the knower of the field illuminates the whole field. The verse condenses the entire chapter into a single comparison. The sun is far away from what it lights, and yet what it lights is wholly seen by it. The sun is not affected by what it lights — the dust it shines on does not make the sun dusty, the cold of the morning does not make the sun cold.
+          Chapter 13 ends with one of the most luminous images in the Gita. Krishna says: as one sun illuminates the whole world, so the knower of the field illuminates the whole field. The verse condenses the entire chapter into a single comparison. The sun is far away from what it lights, and yet what it lights is wholly seen by it. The sun is not affected by what it lights, the dust it shines on does not make the sun dusty, the cold of the morning does not make the sun cold.
         </p>
 
         <p>
-          The same is true of the knower. Awareness lights up the whole field — body, mind, emotions, sensations — and is not stained by any of it. The grief you feel is fully seen but does not contaminate the awareness seeing it. The joy is fully seen but does not need to be held. The image is the closing picture of the chapter and, in some ways, the closing picture of the Gita's psychology. You are the sun. The field is what your light makes visible. You are not the field. You never were.
+          The same is true of the knower. Awareness lights up the whole field, body, mind, emotions, sensations, and is not stained by any of it. The grief you feel is fully seen but does not contaminate the awareness seeing it. The joy is fully seen but does not need to be held. The image is the closing picture of the chapter and, in some ways, the closing picture of the Gita's psychology. You are the sun. The field is what your light makes visible. You are not the field. You never were.
         </p>
 
         <div className="shloka-card">
@@ -1057,7 +1059,7 @@ export default function ChapterPage13() {
             <div>
               <div className="shloka-col-label">Why this image holds the whole chapter</div>
               <div className="shloka-insight">
-                The sun does not become what it lights. Awareness does not become what it observes. The grief is fully witnessed; the awareness witnessing it remains as it was. This is what makes Chapter 13's distinction useful in lived experience. Whatever appears in the field — however intense — does not finally become the seer. The seer is still here. The sun is still up there.
+                The sun does not become what it lights. Awareness does not become what it observes. The grief is fully witnessed; the awareness witnessing it remains as it was. This is what makes Chapter 13's distinction useful in lived experience. Whatever appears in the field, however intense, does not finally become the seer. The seer is still here. The sun is still up there.
               </div>
             </div>
           </div>
@@ -1068,7 +1070,7 @@ export default function ChapterPage13() {
 
         <div className="highlight-box">
           <p>
-            <strong>How Chapter 13 reframes everything earlier in the Gita:</strong> Once you have the field-knower distinction, the non-attachment of Chapter 2, the witness of Chapter 5, the steady mind of Chapter 6, the equanimity of Chapter 12 — all of them rest on Chapter 13's foundation. The chapter is not as quoted as the others, but it is structurally the most important. Without it, the rest is poetry. With it, the rest becomes practice.
+            <strong>How Chapter 13 reframes everything earlier in the Gita:</strong> Once you have the field-knower distinction, the non-attachment of Chapter 2, the witness of Chapter 5, the steady mind of Chapter 6, the equanimity of Chapter 12: all of them rest on Chapter 13's foundation. The chapter is not as quoted as the others, but it is structurally the most important. Without it, the rest is poetry. With it, the rest becomes practice.
           </p>
         </div>
 
@@ -1129,11 +1131,11 @@ export default function ChapterPage13() {
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous</div>
-            <a href="/blogs/bhagwat-geeta-chapter-12" className="ch-nav-title">Chapter 12 — Bhakti Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-12" className="ch-nav-title">Chapter 12, Bhakti Yoga</a>
           </div>
           <div style={{ textAlign: 'right' }}>
             <div className="ch-nav-label">Next</div>
-            <a href="/blogs/bhagwat-geeta-chapter-14" className="ch-nav-title">Chapter 14 — Gunatraya Vibhaga Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-14" className="ch-nav-title">Chapter 14, Gunatraya Vibhaga Yoga</a>
           </div>
         </div>
 
@@ -1160,7 +1162,7 @@ export default function ChapterPage13() {
           <div className="faq-item">
             <div className="faq-q">What is the field and the knower of the field in the Bhagavad Gita?</div>
             <div className="faq-a">
-              In verse 13.2, Krishna says: 'This body is called the field. The one who knows it is the knower of the field.' The body, mind, emotions, and reactions are all the field — they are what is observed. The knower is the awareness that does the observing. The distinction is the foundation of the Gita's psychology: most suffering comes from confusing the observer with what is being observed.
+              In verse 13.2, Krishna says: 'This body is called the field. The one who knows it is the knower of the field.' The body, mind, emotions, and reactions are all the field, they are what is observed. The knower is the awareness that does the observing. The distinction is the foundation of the Gita's psychology: most suffering comes from confusing the observer with what is being observed.
             </div>
           </div>
           <div className="faq-item">
@@ -1172,19 +1174,19 @@ export default function ChapterPage13() {
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 13.16 mean?</div>
             <div className="faq-a">
-              Verse 13.16 describes the supreme reality as outside and within all beings, moving and unmoving, too subtle to be known, and 'far away and near at hand' (<em>dūra-sthaṃ ca antike ca</em>). The teaching is that what is everywhere cannot be located in any particular place — and is therefore, in one sense, far (because it is not localised) and in another sense, near (because it is not absent from anywhere).
+              Verse 13.16 describes the supreme reality as outside and within all beings, moving and unmoving, too subtle to be known, and 'far away and near at hand' (<em>dūra-sthaṃ ca antike ca</em>). The teaching is that what is everywhere cannot be located in any particular place, and is therefore, in one sense, far (because it is not localised) and in another sense, near (because it is not absent from anywhere).
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does it mean to see oneself as the non-doer?</div>
             <div className="faq-a">
-              In verse 13.30, Krishna says, 'One who sees all actions as performed by nature, and sees the self as the non-doer, sees rightly.' This does not mean abdicating responsibility for one's actions. It means recognising that the deepest self — the awareness — is not the originator of activity in the way the ego insists. Actions happen through the body and mind; the awareness witnesses them. The teaching dissolves a particular kind of suffering — the heavy fiction that you alone are the cause of everything that happens through you.
+              In verse 13.30, Krishna says, 'One who sees all actions as performed by nature, and sees the self as the non-doer, sees rightly.' This does not mean abdicating responsibility for one's actions. It means recognising that the deepest self, the awareness, is not the originator of activity in the way the ego insists. Actions happen through the body and mind; the awareness witnesses them. The teaching dissolves a particular kind of suffering, the heavy fiction that you alone are the cause of everything that happens through you.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the sun and field image in Bhagavad Gita 13.34?</div>
             <div className="faq-a">
-              Verse 13.34 says, 'As one sun illuminates the whole world, so the knower of the field illuminates the entire field.' The image condenses the chapter into one comparison. The sun is not affected by what it lights — dust does not make it dusty, cold does not make it cold. The same is true of awareness: it lights up everything in the field of experience, but is not stained by what it observes. Grief is fully seen; the awareness seeing it remains as it was.
+              Verse 13.34 says, 'As one sun illuminates the whole world, so the knower of the field illuminates the entire field.' The image condenses the chapter into one comparison. The sun is not affected by what it lights, dust does not make it dusty, cold does not make it cold. The same is true of awareness: it lights up everything in the field of experience, but is not stained by what it observes. Grief is fully seen; the awareness seeing it remains as it was.
             </div>
           </div>
         </div>
@@ -1203,15 +1205,15 @@ export default function ChapterPage13() {
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-14" className="related-card">
             <div className="related-card-label">Chapter 14</div>
-            <div className="related-card-title">Gunatraya Vibhaga — The Three Forces</div>
+            <div className="related-card-title">Gunatraya Vibhaga, The Three Forces</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-15" className="related-card">
             <div className="related-card-label">Chapter 15</div>
-            <div className="related-card-title">Purushottama Yoga — Cut the Tree, Find the Source</div>
+            <div className="related-card-title">Purushottama Yoga, Cut the Tree, Find the Source</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-6" className="related-card">
             <div className="related-card-label">Chapter 6</div>
-            <div className="related-card-title">Dhyana Yoga — The Lamp That Does Not Flicker</div>
+            <div className="related-card-title">Dhyana Yoga, The Lamp That Does Not Flicker</div>
           </a>
           </div>
         </div>
@@ -1221,7 +1223,7 @@ export default function ChapterPage13() {
             <div className="app-cta-eyebrow">Free iOS App</div>
             <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
             <p className="app-cta-desc">
-              The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+              The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
             </p>
             <div className="app-cta-features">
               <span>✦ Daily shloka in Sanskrit</span>

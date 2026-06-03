@@ -63,6 +63,10 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
           ? `सभी ${ch.totalVerses} श्लोक नीचे।`
           : `${ch.processedVerses} / ${ch.totalVerses} श्लोक उपलब्ध — और जोड़े जा रहे हैं।`}
       </p>
+      <p style={{ fontSize: 12, color: 'var(--text-dimmer)', marginTop: 8, fontStyle: 'italic' }}>
+        Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026.{' '}
+        <a href="/methodology" style={{ color: 'var(--text-dimmer)', textDecoration: 'underline' }}>Methodology →</a>
+      </p>
 
       <figure className="gita-chapter-hero">
         <img src={chapterImage(ch.number).src} alt={chapterImage(ch.number).alt} loading="eager" />

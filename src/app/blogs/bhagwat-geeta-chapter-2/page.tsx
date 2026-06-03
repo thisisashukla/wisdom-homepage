@@ -726,7 +726,7 @@ export default function ChapterTwoPage() {
           <div className="chapter-badge-dot"></div>
         </div>
         <h1 className="article-title">
-          Bhagavad Gita Chapter 2 (Adhyay 2) —<br />
+          Bhagavad Gita Chapter 2 (Adhyay 2):<br />
           <em>Sankhya Yoga</em>
         </h1>
         <p className="article-subtitle">
@@ -740,6 +740,8 @@ export default function ChapterTwoPage() {
           <span className="meta-item">~18 min read</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapter 2 of 18</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -750,7 +752,7 @@ export default function ChapterTwoPage() {
                 <figure className="chapter-image">
           <img
             src="/assets/chapter2.webp"
-            alt="Krishna teaching the eternal nature of the self — Bhagavad Gita Chapter 2"
+            alt="Krishna teaching the eternal nature of the self, Bhagavad Gita Chapter 2"
             width="1200"
             height="675"
             loading="eager"
@@ -758,7 +760,7 @@ export default function ChapterTwoPage() {
         </figure>
 
         <p className="lead">
-          Chapter 1 ends in silence. Arjuna has put down his bow, sunk into his chariot, and told Krishna he will not fight. For the first and only time in the Gita, the great archer has surrendered — not to an enemy, but to his own grief. Chapter 2 is what happens next. And what happens is that the entire framework of how to think about life, action, death, and identity gets rebuilt from the ground up.
+          Chapter 1 ends in silence. Arjuna has put down his bow, sunk into his chariot, and told Krishna he will not fight. For the first and only time in the Gita, the great archer has surrendered, not to an enemy, but to his own grief. Chapter 2 is what happens next. And what happens is that the entire framework of how to think about life, action, death, and identity gets rebuilt from the ground up.
         </p>
 
         <p>
@@ -770,22 +772,22 @@ export default function ChapterTwoPage() {
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
             <li>
-              <a href="#krishna-diagnosis">Krishna's diagnosis — what Arjuna got wrong (2.1–2.11)</a>
+              <a href="#krishna-diagnosis">Krishna's diagnosis, what Arjuna got wrong (2.1–2.11)</a>
             </li>
             <li>
               <a href="#eternal-soul">The teaching on the eternal soul (2.12–2.30)</a>
             </li>
             <li>
-              <a href="#dharma-argument">Why Arjuna must fight — the dharma argument (2.31–2.38)</a>
+              <a href="#dharma-argument">Why Arjuna must fight, the dharma argument (2.31–2.38)</a>
             </li>
             <li>
-              <a href="#most-quoted">The most quoted verse in history — 2.47</a>
+              <a href="#most-quoted">The most quoted verse in history, 2.47</a>
             </li>
             <li>
               <a href="#avoiding-duty">What avoiding your duty actually costs you</a>
             </li>
             <li>
-              <a href="#cascade">From thought to ruin — the cascade (2.62–2.63)</a>
+              <a href="#cascade">From thought to ruin, the cascade (2.62–2.63)</a>
             </li>
             <li>
               <a href="#sthitaprajna">The portrait of a sthitaprajna (2.54–2.72)</a>
@@ -843,7 +845,7 @@ export default function ChapterTwoPage() {
         </div>
 
         <p>
-          This is crucial to understand. Krishna's first direct words are not "I understand your pain" or "Let me comfort you." He says, in effect: your grief and your words are in contradiction. You claim to speak wisdom but you're acting as though you believe something you've just said you don't believe. This isn't cruelty. This is clarity. The Gita is fundamentally a text about inconsistency — about seeing where we contradict ourselves.
+          This is crucial to understand. Krishna's first direct words are not "I understand your pain" or "Let me comfort you." He says, in effect: your grief and your words are in contradiction. You claim to speak wisdom but you're acting as though you believe something you've just said you don't believe. This isn't cruelty. This is clarity. The Gita is fundamentally a text about inconsistency, about seeing where we contradict ourselves.
         </p>
 
         {/* SECTION 2: ETERNAL SOUL */}
@@ -884,17 +886,17 @@ export default function ChapterTwoPage() {
             <div>
               <div className="shloka-col-label">The philosophical move</div>
               <div className="shloka-insight">
-                This verse is the foundation of everything that follows. If the soul is eternal, then grief over death is a category error. If the Self cannot be harmed, then action — even violent action — takes on a completely different moral weight. Krishna is not saying "don't worry, they'll reincarnate." He's saying something more radical: what you think dies never existed to begin with.
+                This verse is the foundation of everything that follows. If the soul is eternal, then grief over death is a category error. If the Self cannot be harmed, then action, even violent action, takes on a completely different moral weight. Krishna is not saying "don't worry, they'll reincarnate." He's saying something more radical: what you think dies never existed to begin with.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            You are eternal — nothing can destroy your true self.
+            You are eternal, nothing can destroy your true self.
           </div>
         </div>
 
         <p>
-          The logic is elegant. If the soul is unborn and eternal, then "birth" and "death" are not absolute events — they are transitions of the body, not the self. They are like changing clothes.
+          The logic is elegant. If the soul is unborn and eternal, then "birth" and "death" are not absolute events, they are transitions of the body, not the self. They are like changing clothes.
         </p>
 
         <div className="shloka-card">
@@ -918,7 +920,7 @@ export default function ChapterTwoPage() {
             <div>
               <div className="shloka-col-label">The metaphor</div>
               <div className="shloka-insight">
-                The garment metaphor is one of the Gita's most concrete images. You don't mourn the death of a shirt when you put on a new one. The shirt was never you. Why should you mourn the death of a body? This is not abstract — it's asking you to think about what you're actually grieving.
+                The garment metaphor is one of the Gita's most concrete images. You don't mourn the death of a shirt when you put on a new one. The shirt was never you. Why should you mourn the death of a body? This is not abstract, it's asking you to think about what you're actually grieving.
               </div>
             </div>
           </div>
@@ -928,7 +930,7 @@ export default function ChapterTwoPage() {
         </div>
 
         <p>
-          And between these two verses, Krishna gives a third piece of advice: endure what comes. Verse 2.14 speaks to the transient nature of sensation — pain and pleasure come and go, heat and cold come and go. Build the capacity to endure them without being destabilized. What you cannot control, you must outlast.
+          And between these two verses, Krishna gives a third piece of advice: endure what comes. Verse 2.14 speaks to the transient nature of sensation, pain and pleasure come and go, heat and cold come and go. Build the capacity to endure them without being destabilized. What you cannot control, you must outlast.
         </p>
 
         <div className="shloka-card">
@@ -957,7 +959,7 @@ export default function ChapterTwoPage() {
             </div>
           </div>
           <div className="shloka-essence">
-            Endure life's changing experiences with patience — they are temporary.
+            Endure life's changing experiences with patience, they are temporary.
           </div>
         </div>
 
@@ -976,7 +978,7 @@ export default function ChapterTwoPage() {
 
         <div className="highlight-box">
           <p>
-            <strong>Understanding dharma in the Gita:</strong> Dharma is not a universal rule. It is the unique duty that arises from who you are, what your role is, and what the moment demands. For Arjuna, who was born as a kshatriya — a warrior — whose entire training has been in the martial arts, whose family has a righteous claim, and whose opponent is himself leading an unrighteous war — the dharma is to fight. This is not "always fight." This is "for you, now, in this exact moment, this is what duty demands."
+            <strong>Understanding dharma in the Gita:</strong> Dharma is not a universal rule. It is the unique duty that arises from who you are, what your role is, and what the moment demands. For Arjuna, who was born as a kshatriya, a warrior, whose entire training has been in the martial arts, whose family has a righteous claim, and whose opponent is himself leading an unrighteous war, the dharma is to fight. This is not "always fight." This is "for you, now, in this exact moment, this is what duty demands."
           </p>
         </div>
 
@@ -1014,7 +1016,7 @@ export default function ChapterTwoPage() {
             <div>
               <div className="shloka-col-label">The four parts</div>
               <div className="shloka-insight">
-                This verse is often reduced to "do your duty but don't claim the results." But it has four distinct moves: (1) do your duty — this is positive; (2) don't claim ownership of outcomes — negative; (3) don't make the fruit your motive — negative; (4) don't use this teaching as an excuse for inaction — negative. The fourth part is almost always ignored. The verse is anti-nihilism as much as it is anti-ambition.
+                This verse is often reduced to "do your duty but don't claim the results." But it has four distinct moves: (1) do your duty, this is positive; (2) don't claim ownership of outcomes, negative; (3) don't make the fruit your motive, negative; (4) don't use this teaching as an excuse for inaction, negative. The fourth part is almost always ignored. The verse is anti-nihilism as much as it is anti-ambition.
               </div>
             </div>
           </div>
@@ -1024,7 +1026,7 @@ export default function ChapterTwoPage() {
         </div>
 
         <p>
-          The verse is saying: you must act. You have a right to action. But you have no right to demand the universe give you the outcome you want. Your job is to act with full effort and integrity. The results are not in your control — and trying to control them is the path to suffering. But not acting — using detachment as an excuse for inaction — is the opposite extreme, and the verse explicitly forbids it.
+          The verse is saying: you must act. You have a right to action. But you have no right to demand the universe give you the outcome you want. Your job is to act with full effort and integrity. The results are not in your control, and trying to control them is the path to suffering. But not acting, using detachment as an excuse for inaction, is the opposite extreme, and the verse explicitly forbids it.
         </p>
 
         <p>
@@ -1071,7 +1073,7 @@ export default function ChapterTwoPage() {
         <h2 id="avoiding-duty">What Avoiding Your Duty Actually Costs You</h2>
 
         <p>
-          Arjuna made several sophisticated-sounding arguments for why he shouldn't fight. He said fighting would create sin. He said destroying families would cause chaos. He said it was better to die unarmed. These weren't simplistic objections — they came from a place of genuine moral concern. And Krishna addresses each one not by dismissing Arjuna's worry, but by showing where his logic fails.
+          Arjuna made several sophisticated-sounding arguments for why he shouldn't fight. He said fighting would create sin. He said destroying families would cause chaos. He said it was better to die unarmed. These weren't simplistic objections, they came from a place of genuine moral concern. And Krishna addresses each one not by dismissing Arjuna's worry, but by showing where his logic fails.
         </p>
 
         <p>
@@ -1079,7 +1081,7 @@ export default function ChapterTwoPage() {
         </p>
 
         <p>
-          This is something most modern discussions of the Gita miss entirely. We want it to be about universal truths — don't be attached, don't grasp at outcomes. But it's equally about particularity: you have a specific duty, arising from who you are. And avoiding it is not noble. It's escape. The Gita doesn't let you off the hook.
+          This is something most modern discussions of the Gita miss entirely. We want it to be about universal truths, don't be attached, don't grasp at outcomes. But it's equally about particularity: you have a specific duty, arising from who you are. And avoiding it is not noble. It's escape. The Gita doesn't let you off the hook.
         </p>
 
         {/* SECTION 6: CASCADE */}
@@ -1116,7 +1118,7 @@ export default function ChapterTwoPage() {
             <div>
               <div className="shloka-col-label">The first link</div>
               <div className="shloka-insight">
-                Notice that the cascade begins with thought. You think about something — you dwell on it, replay it, fantasize about it. That dwelling creates attachment. Not the object itself creates attachment, but your repeated thinking about it. This is why the first link is the most important: if you can interrupt it here, the rest of the cascade never begins.
+                Notice that the cascade begins with thought. You think about something, you dwell on it, replay it, fantasize about it. That dwelling creates attachment. Not the object itself creates attachment, but your repeated thinking about it. This is why the first link is the most important: if you can interrupt it here, the rest of the cascade never begins.
               </div>
             </div>
           </div>
@@ -1146,7 +1148,7 @@ export default function ChapterTwoPage() {
             <div>
               <div className="shloka-col-label">The full cascade</div>
               <div className="shloka-insight">
-                The Gita's description of collapse is precise: anger clouds the mind — delusion sets in. You start to forget what matters. Your judgment deteriorates. And finally, your self-destruction follows inevitably. Each step is necessary and flows from the previous one. But they're also preventable — if you can break the chain at any point, you stop the cascade.
+                The Gita's description of collapse is precise: anger clouds the mind, delusion sets in. You start to forget what matters. Your judgment deteriorates. And finally, your self-destruction follows inevitably. Each step is necessary and flows from the previous one. But they're also preventable, if you can break the chain at any point, you stop the cascade.
               </div>
             </div>
           </div>
@@ -1193,7 +1195,7 @@ export default function ChapterTwoPage() {
             <div>
               <div className="shloka-col-label">The sincere question</div>
               <div className="shloka-insight">
-                This is one of the best questions in the entire Gita. Arjuna doesn't ask how to become wise — he asks what it looks like. How can I recognize it? How can I recognize it in myself? He's asking for a portrait, a description of wisdom from the outside. Not an abstract principle, but observable characteristics.
+                This is one of the best questions in the entire Gita. Arjuna doesn't ask how to become wise, he asks what it looks like. How can I recognize it? How can I recognize it in myself? He's asking for a portrait, a description of wisdom from the outside. Not an abstract principle, but observable characteristics.
               </div>
             </div>
           </div>
@@ -1227,7 +1229,7 @@ export default function ChapterTwoPage() {
             <div>
               <div className="shloka-col-label">Freedom from desire</div>
               <div className="shloka-insight">
-                This is crucial: freedom from desire doesn't mean wanting nothing. It means your sense of wholeness, your sense of being complete, no longer depends on getting anything from the world. You are full without it. The key phrase is "satisfied in the self alone by the self" — your completeness comes from within, not from external acquisition.
+                This is crucial: freedom from desire doesn't mean wanting nothing. It means your sense of wholeness, your sense of being complete, no longer depends on getting anything from the world. You are full without it. The key phrase is "satisfied in the self alone by the self", your completeness comes from within, not from external acquisition.
               </div>
             </div>
           </div>
@@ -1257,7 +1259,7 @@ export default function ChapterTwoPage() {
             <div>
               <div className="shloka-col-label">The three freedoms</div>
               <div className="shloka-insight">
-                The sthitaprajna has three key characteristics: they are undisturbed in suffering, not overjoyed in pleasure, and free from attachment, fear, and anger. Notice that this is not numbness — it's steadiness. They're still experiencing what happens, but they're not being dragged around by it.
+                The sthitaprajna has three key characteristics: they are undisturbed in suffering, not overjoyed in pleasure, and free from attachment, fear, and anger. Notice that this is not numbness, it's steadiness. They're still experiencing what happens, but they're not being dragged around by it.
               </div>
             </div>
           </div>
@@ -1275,7 +1277,7 @@ export default function ChapterTwoPage() {
           <div className="app-cta-eyebrow">Free iOS App</div>
           <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
           <p className="app-cta-desc">
-            The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+            The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
           </p>
           <div className="app-cta-features">
             <span>✦ Daily shloka in Sanskrit</span>
@@ -1323,7 +1325,7 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.1</td>
               <td>Sanjaya</td>
-              <td>Even heroes feel lost — help arrives at the darkest hour</td>
+              <td>Even heroes feel lost, help arrives at the darkest hour</td>
             </tr>
             <tr>
               <td>2.2</td>
@@ -1338,7 +1340,7 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.4</td>
               <td>Arjuna</td>
-              <td>Facing duty can conflict with deep feelings — it's human</td>
+              <td>Facing duty can conflict with deep feelings, it's human</td>
             </tr>
             <tr>
               <td>2.5</td>
@@ -1388,7 +1390,7 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.14</td>
               <td>Krishna</td>
-              <td>Endure life's changing experiences — they are temporary</td>
+              <td>Endure life's changing experiences, they are temporary</td>
             </tr>
             <tr>
               <td>2.15</td>
@@ -1408,7 +1410,7 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.18</td>
               <td>Krishna</td>
-              <td>Your true self is beyond destruction — act with courage</td>
+              <td>Your true self is beyond destruction, act with courage</td>
             </tr>
             <tr>
               <td>2.19</td>
@@ -1418,7 +1420,7 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.20</td>
               <td>Krishna</td>
-              <td>You are eternal — nothing can destroy your true self</td>
+              <td>You are eternal, nothing can destroy your true self</td>
             </tr>
             <tr>
               <td>2.21</td>
@@ -1438,7 +1440,7 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.24</td>
               <td>Krishna</td>
-              <td>The soul is indestructible — nothing can harm your innermost self</td>
+              <td>The soul is indestructible, nothing can harm your innermost self</td>
             </tr>
             <tr>
               <td>2.25</td>
@@ -1468,7 +1470,7 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.30</td>
               <td>Krishna</td>
-              <td>The soul is eternal — do not grieve over temporary changes</td>
+              <td>The soul is eternal, do not grieve over temporary changes</td>
             </tr>
             <tr>
               <td>2.31</td>
@@ -1503,7 +1505,7 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.37</td>
               <td>Krishna</td>
-              <td>Take decisive action — growth comes from commitment, not results</td>
+              <td>Take decisive action, growth comes from commitment, not results</td>
             </tr>
             <tr>
               <td>2.38</td>
@@ -1598,7 +1600,7 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.56</td>
               <td>Krishna</td>
-              <td>Steadiness in suffering and restraint in happiness — this is wisdom</td>
+              <td>Steadiness in suffering and restraint in happiness, this is wisdom</td>
             </tr>
             <tr>
               <td>2.57</td>
@@ -1689,15 +1691,15 @@ export default function ChapterTwoPage() {
           <div className="related-grid">
             <a href="/blogs/bhagwat-geeta-chapter-1" className="related-card">
               <div className="related-card-label">Previous</div>
-              <div className="related-card-title">Chapter 1 — Arjuna Vishada Yoga</div>
+              <div className="related-card-title">Chapter 1, Arjuna Vishada Yoga</div>
             </a>
             <a href="/blogs/bhagwat-geeta-chapter-3" className="related-card">
               <div className="related-card-label">Next</div>
-              <div className="related-card-title">Chapter 3 — Karma Yoga</div>
+              <div className="related-card-title">Chapter 3, Karma Yoga</div>
             </a>
             <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
               <div className="related-card-label">Deep Dive</div>
-              <div className="related-card-title">Karma — What It Actually Means in the Gita</div>
+              <div className="related-card-title">Karma, What It Actually Means in the Gita</div>
             </a>
           </div>
         </div>
@@ -1711,31 +1713,31 @@ export default function ChapterTwoPage() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 2 about?</div>
             <div className="faq-a">
-              Chapter 2, called Sankhya Yoga or the Yoga of Knowledge, is the philosophical foundation of the entire Gita. It contains Krishna's first direct teachings to Arjuna — on the eternal nature of the soul, the dharma of a warrior, action without attachment to results, and the portrait of the sthitaprajna or person of steady wisdom. It is the longest chapter of the Gita's first half and arguably its most dense.
+              Chapter 2, called Sankhya Yoga or the Yoga of Knowledge, is the philosophical foundation of the entire Gita. It contains Krishna's first direct teachings to Arjuna, on the eternal nature of the soul, the dharma of a warrior, action without attachment to results, and the portrait of the sthitaprajna or person of steady wisdom. It is the longest chapter of the Gita's first half and arguably its most dense.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the most important verse in Chapter 2?</div>
             <div className="faq-a">
-              The most famous is 2.47 — "karmany evadhikaras te ma phaleshu kadachana" — often translated as "you have a right to work, not to the fruits of work." But 2.20 (the soul is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument.
+              The most famous is 2.47, "karmany evadhikaras te ma phaleshu kadachana", often translated as "you have a right to work, not to the fruits of work." But 2.20 (the soul is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is "sthitaprajna" in the Bhagavad Gita?</div>
             <div className="faq-a">
-              Sthitaprajna literally means "one of steady wisdom" — sthita means steady or stable, prajna means wisdom or intelligence. Arjuna asks Krishna in verse 2.54 what such a person looks like from the outside. Krishna answers across verses 2.55–2.72: they are not disturbed by sorrow, not elated by pleasure, free from attachment, fear, and anger, and their senses are under control like a tortoise withdrawing its limbs.
+              Sthitaprajna literally means "one of steady wisdom", sthita means steady or stable, prajna means wisdom or intelligence. Arjuna asks Krishna in verse 2.54 what such a person looks like from the outside. Krishna answers across verses 2.55–2.72: they are not disturbed by sorrow, not elated by pleasure, free from attachment, fear, and anger, and their senses are under control like a tortoise withdrawing its limbs.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 2.47 mean?</div>
             <div className="faq-a">
-              2.47 says: you have the right to act, but not to claim the fruits of your actions; do not let the fruits be your motive; and do not fall into the trap of inaction either. Most people quote only the first half. The verse's fourth clause — not being attached to inaction — is what gives it its full force. The Gita is not advocating detachment as passivity. It is advocating engaged action with equanimity.
+              2.47 says: you have the right to act, but not to claim the fruits of your actions; do not let the fruits be your motive; and do not fall into the trap of inaction either. Most people quote only the first half. The verse's fourth clause, not being attached to inaction, is what gives it its full force. The Gita is not advocating detachment as passivity. It is advocating engaged action with equanimity.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">How many verses are in Bhagavad Gita Chapter 2?</div>
             <div className="faq-a">
-              Chapter 2 has 72 verses, making it one of the longest chapters in the Gita. It is also philosophically the densest — containing the core teachings on the soul, duty, action, and wisdom that the remaining 16 chapters expand upon.
+              Chapter 2 has 72 verses, making it one of the longest chapters in the Gita. It is also philosophically the densest, containing the core teachings on the soul, duty, action, and wisdom that the remaining 16 chapters expand upon.
             </div>
           </div>
           <div className="faq-item">

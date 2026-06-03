@@ -686,11 +686,11 @@ export default function ChapterThreePage() {
           <div className="chapter-badge-dot"></div>
         </div>
         <h1 className="article-title">
-          Bhagavad Gita Chapter 3 (Adhyay 3) —<br />
+          Bhagavad Gita Chapter 3 (Adhyay 3):<br />
           <em>Karma Yoga: Why You Cannot Run</em>
         </h1>
         <p className="article-subtitle">
-          Arjuna wants out. Not just from the battlefield — from action itself. Chapter 3 is Krishna's answer: action is inescapable. The question is never whether to act, only how. Forty-three verses on duty, desire, and the weight of the example you set.
+          Arjuna wants out. Not just from the battlefield, from action itself. Chapter 3 is Krishna's answer: action is inescapable. The question is never whether to act, only how. Forty-three verses on duty, desire, and the weight of the example you set.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -700,6 +700,8 @@ export default function ChapterThreePage() {
           <span className="meta-item">~14 min read</span>
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapter 3 of 18</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -710,7 +712,7 @@ export default function ChapterThreePage() {
                 <figure className="chapter-image">
           <img
             src="/assets/chapter3.webp"
-            alt="Krishna guiding Arjuna toward selfless action — Bhagavad Gita Chapter 3"
+            alt="Krishna guiding Arjuna toward selfless action, Bhagavad Gita Chapter 3"
             width="1200"
             height="675"
             loading="eager"
@@ -734,28 +736,28 @@ export default function ChapterThreePage() {
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
             <li>
-              <a href="#arjuna-question">Arjuna's question — why act if wisdom is higher?</a>
+              <a href="#arjuna-question">Arjuna's question, why act if wisdom is higher?</a>
             </li>
             <li>
               <a href="#two-paths">Two paths, equally valid (3.3)</a>
             </li>
             <li>
-              <a href="#you-cannot-not-act">You cannot not act — even for a moment (3.5)</a>
+              <a href="#you-cannot-not-act">You cannot not act, even for a moment (3.5)</a>
             </li>
             <li>
-              <a href="#yajna">The logic of yajna — acting as sacred service (3.9–3.16)</a>
+              <a href="#yajna">The logic of yajna, acting as sacred service (3.9–3.16)</a>
             </li>
             <li>
-              <a href="#lokasamgraha">Lokasamgraha — the weight of your example (3.21–3.26)</a>
+              <a href="#lokasamgraha">Lokasamgraha, the weight of your example (3.21–3.26)</a>
             </li>
             <li>
               <a href="#ego-claims">The ego's claim on action (3.27)</a>
             </li>
             <li>
-              <a href="#svadharma">Your dharma, imperfectly — better than another's perfectly (3.35)</a>
+              <a href="#svadharma">Your dharma, imperfectly, better than another's perfectly (3.35)</a>
             </li>
             <li>
-              <a href="#desire-anger">The real enemy — desire and anger (3.37)</a>
+              <a href="#desire-anger">The real enemy, desire and anger (3.37)</a>
             </li>
             <li>
               <a href="#hierarchy">The hierarchy of the inner life (3.42–3.43)</a>
@@ -781,7 +783,7 @@ export default function ChapterThreePage() {
         </p>
 
         <p>
-          If wisdom is higher than action — why do you ask me to engage in this terrible war?
+          If wisdom is higher than action, why do you ask me to engage in this terrible war?
         </p>
 
         <p>
@@ -794,7 +796,7 @@ export default function ChapterThreePage() {
 
         <div className="highlight-box">
           <p>
-            <strong>The deeper pattern:</strong> Notice that both Arjuna's collapse in Chapter 1 and his demand for escape in Chapter 3 follow the same impulse — a desire to get out. First out of the battle. Now out of action itself. The Gita is not gentle on this impulse. It names it directly: this is delusion. And what creates the delusion is not cowardice or weakness, but a fundamental misunderstanding of what freedom means.
+            <strong>The deeper pattern:</strong> Notice that both Arjuna's collapse in Chapter 1 and his demand for escape in Chapter 3 follow the same impulse, a desire to get out. First out of the battle. Now out of action itself. The Gita is not gentle on this impulse. It names it directly: this is delusion. And what creates the delusion is not cowardice or weakness, but a fundamental misunderstanding of what freedom means.
           </p>
         </div>
 
@@ -829,21 +831,21 @@ export default function ChapterThreePage() {
             <div>
               <div className="shloka-col-label">The opening truth</div>
               <div className="shloka-insight">
-                Both are legitimate. The Gita doesn't favor mystics over activists or scholars over soldiers. What matters is that the path matches the nature of the person. You don't abandon your nature — you elevate it. This is the key to everything that follows.
+                Both are legitimate. The Gita doesn't favor mystics over activists or scholars over soldiers. What matters is that the path matches the nature of the person. You don't abandon your nature, you elevate it. This is the key to everything that follows.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            "Both knowledge and action are equally valid paths — choose the one that matches your nature."
+            "Both knowledge and action are equally valid paths, choose the one that matches your nature."
           </div>
         </div>
 
         <p>
-          This verse is Krishna's opening move. He's not dismissing Arjuna's interest in knowledge. He's saying: yes, both paths exist. But for you — someone born into the warrior caste, trained in action your whole life — attempting to forcibly transform yourself into a wandering ascetic is not spirituality. It's escape. It's using the language of spirituality to justify the desire to run away.
+          This verse is Krishna's opening move. He's not dismissing Arjuna's interest in knowledge. He's saying: yes, both paths exist. But for you, someone born into the warrior caste, trained in action your whole life, attempting to forcibly transform yourself into a wandering ascetic is not spirituality. It's escape. It's using the language of spirituality to justify the desire to run away.
         </p>
 
         <p>
-          The Gita's argument is sophisticated here. It's saying that your nature — your temperament, your gifts, your conditioning — is not an obstacle to overcome. It's the foundation of your spiritual path. The question is not: how do I become someone else? The question is: how do I fully become myself?
+          The Gita's argument is sophisticated here. It's saying that your nature, your temperament, your gifts, your conditioning, is not an obstacle to overcome. It's the foundation of your spiritual path. The question is not: how do I become someone else? The question is: how do I fully become myself?
         </p>
 
         {/* DIVIDER */}
@@ -878,17 +880,17 @@ export default function ChapterThreePage() {
             <div>
               <div className="shloka-col-label">The refutation of escape</div>
               <div className="shloka-insight">
-                This is the Gita's decisive blow against the fantasy of complete inaction. You cannot opt out. Even sitting still involves the action of breathing, thinking, wanting. The body will act. The mind will act. The senses will seek. You are not choosing whether to act — you're choosing whether to act consciously.
+                This is the Gita's decisive blow against the fantasy of complete inaction. You cannot opt out. Even sitting still involves the action of breathing, thinking, wanting. The body will act. The mind will act. The senses will seek. You are not choosing whether to act, you're choosing whether to act consciously.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            "You cannot avoid action — embrace it with awareness instead of denial."
+            "You cannot avoid action, embrace it with awareness instead of denial."
           </div>
         </div>
 
         <p>
-          This verse is ruthless in its honesty. The person who sits in the forest with closed eyes, claiming non-action, is still breathing. Still thinking. Still experiencing. The breath is action. The thought is action. The experience is action. To claim that you are performing no action is not humility — it's self-deception.
+          This verse is ruthless in its honesty. The person who sits in the forest with closed eyes, claiming non-action, is still breathing. Still thinking. Still experiencing. The breath is action. The thought is action. The experience is action. To claim that you are performing no action is not humility, it's self-deception.
         </p>
 
         <p>
@@ -918,7 +920,7 @@ export default function ChapterThreePage() {
         </p>
 
         <p>
-          Krishna's answer is <em>yajna</em> — often translated as "sacrifice," but meaning something more fundamental: the transformation of action into an offering. When you stop doing something for yourself and start doing it for something larger, the entire quality of the action changes.
+          Krishna's answer is <em>yajna</em>, often translated as "sacrifice," but meaning something more fundamental: the transformation of action into an offering. When you stop doing something for yourself and start doing it for something larger, the entire quality of the action changes.
         </p>
 
         <div className="shloka-card">
@@ -942,7 +944,7 @@ export default function ChapterThreePage() {
             <div>
               <div className="shloka-col-label">The transformation</div>
               <div className="shloka-insight">
-                The same action, done for yourself, traps you in the results. Done as service, it frees you. This is not magical thinking — it's a precise description of what happens when the ego steps back and something larger becomes the purpose. You're the same person doing the same action, but the quality of your being has shifted.
+                The same action, done for yourself, traps you in the results. Done as service, it frees you. This is not magical thinking, it's a precise description of what happens when the ego steps back and something larger becomes the purpose. You're the same person doing the same action, but the quality of your being has shifted.
               </div>
             </div>
           </div>
@@ -952,7 +954,7 @@ export default function ChapterThreePage() {
         </div>
 
         <p>
-          This is where the Wisdom app becomes relevant to understanding this teaching. Every day, the app sends a shloka — a verse from the Gita — not for the user to profit from or compete over, but to deepen their understanding of what freedom truly means. The same text, received as knowledge rather than as information. The shift from self-serving to service-oriented is everything.
+          This is where the Wisdom app becomes relevant to understanding this teaching. Every day, the app sends a shloka, a verse from the Gita, not for the user to profit from or compete over, but to deepen their understanding of what freedom truly means. The same text, received as knowledge rather than as information. The shift from self-serving to service-oriented is everything.
         </p>
 
         {/* DIVIDER */}
@@ -967,7 +969,7 @@ export default function ChapterThreePage() {
         <h2 id="lokasamgraha">The Weight of What Others Will Do</h2>
 
         <p>
-          Now Krishna introduces a concept that cuts deeper than personal liberation. It's not enough to act without attachment. You also have to accept that your actions become a standard. Great people, wise people, those with influence — their actions are watched. Their choices become permissions.
+          Now Krishna introduces a concept that cuts deeper than personal liberation. It's not enough to act without attachment. You also have to accept that your actions become a standard. Great people, wise people, those with influence, their actions are watched. Their choices become permissions.
         </p>
 
         <div className="shloka-card">
@@ -991,12 +993,12 @@ export default function ChapterThreePage() {
             <div>
               <div className="shloka-col-label">The responsibility</div>
               <div className="shloka-insight">
-                This is where personal freedom meets social reality. The desire to withdraw is not just a spiritual failure — it's an abandonment of lokasamgraha, the holding together of the world. If you have gifts, influence, or wisdom, and you choose to hide them out of fear or the desire for peace, the world feels that absence. Others lose a model. Others lose a permission to do their own work.
+                This is where personal freedom meets social reality. The desire to withdraw is not just a spiritual failure, it's an abandonment of lokasamgraha, the holding together of the world. If you have gifts, influence, or wisdom, and you choose to hide them out of fear or the desire for peace, the world feels that absence. Others lose a model. Others lose a permission to do their own work.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            "Your actions shape what others believe is possible — lead with awareness."
+            "Your actions shape what others believe is possible, lead with awareness."
           </div>
         </div>
 
@@ -1005,7 +1007,7 @@ export default function ChapterThreePage() {
         </p>
 
         <p>
-          Lokasamgraha — the welfare of the world — is not a burden you choose to take on. It's a fact that's already true. You're already setting an example. The only question is whether you'll do it consciously or unconsciously.
+          Lokasamgraha, the welfare of the world, is not a burden you choose to take on. It's a fact that's already true. You're already setting an example. The only question is whether you'll do it consciously or unconsciously.
         </p>
 
         {/* DIVIDER */}
@@ -1040,17 +1042,17 @@ export default function ChapterThreePage() {
             <div>
               <div className="shloka-col-label">The subtler freedom</div>
               <div className="shloka-insight">
-                The ego's claim on action is where suffering begins. The one who thinks they're the sole author of their successes also becomes the sole bearer of their failures. The Gita offers a different accounting: nature acts through us; we are instruments, not owners. This realization — not as belief, but as lived understanding — is freedom.
+                The ego's claim on action is where suffering begins. The one who thinks they're the sole author of their successes also becomes the sole bearer of their failures. The Gita offers a different accounting: nature acts through us; we are instruments, not owners. This realization, not as belief, but as lived understanding, is freedom.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            "Freedom begins when you realize you are not the sole doer — nature acts through you."
+            "Freedom begins when you realize you are not the sole doer, nature acts through you."
           </div>
         </div>
 
         <p>
-          This is one of the Gita's most paradoxical teachings. It's saying that while you cannot avoid action, you also cannot truly be the sole author of action. The qualities of nature — sattva, rajas, tamas — are constantly acting through you. Your body is made of these qualities. Your mind is made of these qualities. Your preferences and aversions are made of these qualities.
+          This is one of the Gita's most paradoxical teachings. It's saying that while you cannot avoid action, you also cannot truly be the sole author of action. The qualities of nature, sattva, rajas, tamas, are constantly acting through you. Your body is made of these qualities. Your mind is made of these qualities. Your preferences and aversions are made of these qualities.
         </p>
 
         <p>
@@ -1089,12 +1091,12 @@ export default function ChapterThreePage() {
             <div>
               <div className="shloka-col-label">The radical teaching</div>
               <div className="shloka-insight">
-                This is one of the Gita's most counter-cultural teachings for our age of endless comparison. The impulse to become someone else — to follow another path because it looks better from the outside — is described here as fearful and dangerous. Your path, however imperfect, is yours. It carries authenticity. Another's path, however polished, is a masquerade.
+                This is one of the Gita's most counter-cultural teachings for our age of endless comparison. The impulse to become someone else, to follow another path because it looks better from the outside, is described here as fearful and dangerous. Your path, however imperfect, is yours. It carries authenticity. Another's path, however polished, is a masquerade.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            "Stay true to your own path — your journey is sacred and unchallengeable."
+            "Stay true to your own path, your journey is sacred and unchallengeable."
           </div>
         </div>
 
@@ -1136,23 +1138,23 @@ export default function ChapterThreePage() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                It is desire, it is anger, born of the rajo-guna, all-devouring and greatly sinful — know this as the enemy in this world.
+                It is desire, it is anger, born of the rajo-guna, all-devouring and greatly sinful, know this as the enemy in this world.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The diagnosis</div>
               <div className="shloka-insight">
-                After being asked by Arjuna what forces drive a person to sin, Krishna doesn't say ignorance or circumstance. He says desire and anger — specifically, the restless quality of the mind that creates wanting and reaction. These are described as the real enemies: not the Kauravas across the field, but the forces within.
+                After being asked by Arjuna what forces drive a person to sin, Krishna doesn't say ignorance or circumstance. He says desire and anger, specifically, the restless quality of the mind that creates wanting and reaction. These are described as the real enemies: not the Kauravas across the field, but the forces within.
               </div>
             </div>
           </div>
           <div className="shloka-essence">
-            "The true battle is within — overcoming desire and anger is the way to lasting peace."
+            "The true battle is within, overcoming desire and anger is the way to lasting peace."
           </div>
         </div>
 
         <p>
-          Here is where Chapter 3 moves from philosophy to psychology. The enemy isn't external. You've been fighting the wrong fight if you think the problem is other people, circumstances, or even your own inaction. The real enemy is the restless wanting in the mind — the craving for what you don't have and the rejection of what you do.
+          Here is where Chapter 3 moves from philosophy to psychology. The enemy isn't external. You've been fighting the wrong fight if you think the problem is other people, circumstances, or even your own inaction. The real enemy is the restless wanting in the mind, the craving for what you don't have and the rejection of what you do.
         </p>
 
         <p>
@@ -1195,7 +1197,7 @@ export default function ChapterThreePage() {
             <div>
               <div className="shloka-col-label">The architecture</div>
               <div className="shloka-insight">
-                This is not an escape hierarchy. It's a ladder of control. You don't destroy the body or abandon the senses. You use each higher level to govern the lower. Use the intellect to govern the mind, the Self to govern the intellect. Desire is powerful — but you have something more powerful available to you.
+                This is not an escape hierarchy. It's a ladder of control. You don't destroy the body or abandon the senses. You use each higher level to govern the lower. Use the intellect to govern the mind, the Self to govern the intellect. Desire is powerful, but you have something more powerful available to you.
               </div>
             </div>
           </div>
@@ -1205,7 +1207,7 @@ export default function ChapterThreePage() {
         </div>
 
         <p>
-          The chapter ends not with withdrawal but with mastery. Not with escape but with building a structure inside yourself where the higher can govern the lower. Your body wants. Your senses seek. Your mind desires. Your intellect rationalizes. And beyond all of this is the Self — the witness, the awareness that stands free of all of it.
+          The chapter ends not with withdrawal but with mastery. Not with escape but with building a structure inside yourself where the higher can govern the lower. Your body wants. Your senses seek. Your mind desires. Your intellect rationalizes. And beyond all of this is the Self, the witness, the awareness that stands free of all of it.
         </p>
 
         <p>
@@ -1240,7 +1242,7 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.2</td>
               <td>Arjuna</td>
-              <td>Your words confuse me — teach me clearly.</td>
+              <td>Your words confuse me, teach me clearly.</td>
             </tr>
             <tr>
               <td>3.3</td>
@@ -1255,7 +1257,7 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.5</td>
               <td>Krishna</td>
-              <td>You cannot avoid action — nature compels you.</td>
+              <td>You cannot avoid action, nature compels you.</td>
             </tr>
             <tr>
               <td>3.6</td>
@@ -1270,7 +1272,7 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.8</td>
               <td>Krishna</td>
-              <td>Meaningful action matters — even for basic survival.</td>
+              <td>Meaningful action matters, even for basic survival.</td>
             </tr>
             <tr>
               <td>3.9</td>
@@ -1325,7 +1327,7 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.19</td>
               <td>Krishna</td>
-              <td>Perform your duty without attachment — this leads to freedom.</td>
+              <td>Perform your duty without attachment, this leads to freedom.</td>
             </tr>
             <tr>
               <td>3.20</td>
@@ -1350,7 +1352,7 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.24</td>
               <td>Krishna</td>
-              <td>Your actions echo — lead with awareness.</td>
+              <td>Your actions echo, lead with awareness.</td>
             </tr>
             <tr>
               <td>3.25</td>
@@ -1360,12 +1362,12 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.26</td>
               <td>Krishna</td>
-              <td>Lead by example with empathy — inspire, don't impose.</td>
+              <td>Lead by example with empathy, inspire, don't impose.</td>
             </tr>
             <tr>
               <td>3.27</td>
               <td>Krishna</td>
-              <td>Nature acts through you — the ego claims the credit.</td>
+              <td>Nature acts through you, the ego claims the credit.</td>
             </tr>
             <tr>
               <td>3.28</td>
@@ -1415,7 +1417,7 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.37</td>
               <td>Krishna</td>
-              <td>Desire and anger are the real enemies — overcome them.</td>
+              <td>Desire and anger are the real enemies, overcome them.</td>
             </tr>
             <tr>
               <td>3.38</td>
@@ -1430,7 +1432,7 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.40</td>
               <td>Krishna</td>
-              <td>Guard your senses, mind, and intellect — they're gateways of desire.</td>
+              <td>Guard your senses, mind, and intellect, they're gateways of desire.</td>
             </tr>
             <tr>
               <td>3.41</td>
@@ -1445,7 +1447,7 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.43</td>
               <td>Krishna</td>
-              <td>With self-mastery, overcome desire — the formidable inner enemy.</td>
+              <td>With self-mastery, overcome desire, the formidable inner enemy.</td>
             </tr>
           </tbody>
         </table>
@@ -1455,7 +1457,7 @@ export default function ChapterThreePage() {
           <div className="app-cta-eyebrow">Free iOS App</div>
           <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
           <p className="app-cta-desc">
-            The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+            The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
           </p>
           <div className="app-cta-features">
             <span>✦ Daily shloka in Sanskrit</span>
@@ -1480,11 +1482,11 @@ export default function ChapterThreePage() {
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous Chapter</div>
-            <div className="ch-nav-title"><a href="/blogs/bhagwat-geeta-chapter-2">Chapter 2 — Sankhya Yoga</a></div>
+            <div className="ch-nav-title"><a href="/blogs/bhagwat-geeta-chapter-2">Chapter 2, Sankhya Yoga</a></div>
           </div>
           <div style={{textAlign: 'right'}}>
             <div className="ch-nav-label">Next Chapter</div>
-            <div className="ch-nav-title"><a href="/blogs/bhagwat-geeta-chapter-4">Chapter 4 — Jnana Yoga</a></div>
+            <div className="ch-nav-title"><a href="/blogs/bhagwat-geeta-chapter-4">Chapter 4, Jnana Yoga</a></div>
           </div>
         </div>
 
@@ -1505,23 +1507,23 @@ export default function ChapterThreePage() {
           </div>
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 3 about?</div>
-            <div className="faq-a">Chapter 3, called Karma Yoga or the Yoga of Action, addresses the fundamental question: if spiritual wisdom is better than action, why should one act at all? Krishna argues that no one can avoid action — even for a moment — and that the key lies in performing action as a form of sacred service (yajna) without attachment to results. The chapter also introduces the concept of lokasamgraha — the responsibility of great people to act as examples for the world.</div>
+            <div className="faq-a">Chapter 3, called Karma Yoga or the Yoga of Action, addresses the fundamental question: if spiritual wisdom is better than action, why should one act at all? Krishna argues that no one can avoid action, even for a moment, and that the key lies in performing action as a form of sacred service (yajna) without attachment to results. The chapter also introduces the concept of lokasamgraha, the responsibility of great people to act as examples for the world.</div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is karma yoga in the Bhagavad Gita?</div>
-            <div className="faq-a">Karma yoga is the path of selfless action — performing one's duties without attachment to outcomes, treating every action as an offering to something larger than the self. It is described in Chapter 3 as the appropriate path for most people who are active in the world. Unlike renunciation, which withdraws from action, karma yoga transforms action itself into the spiritual path.</div>
+            <div className="faq-a">Karma yoga is the path of selfless action, performing one's duties without attachment to outcomes, treating every action as an offering to something larger than the self. It is described in Chapter 3 as the appropriate path for most people who are active in the world. Unlike renunciation, which withdraws from action, karma yoga transforms action itself into the spiritual path.</div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does svadharma mean in the Gita?</div>
-            <div className="faq-a">Svadharma means your own duty, your own path, your own nature-driven calling. In 3.35, Krishna says it is better to perform your own dharma imperfectly than to perform another's dharma perfectly. This is not a defense of staying comfortable — it is a teaching about authenticity and the dangers of comparison and imitation.</div>
+            <div className="faq-a">Svadharma means your own duty, your own path, your own nature-driven calling. In 3.35, Krishna says it is better to perform your own dharma imperfectly than to perform another's dharma perfectly. This is not a defense of staying comfortable, it is a teaching about authenticity and the dangers of comparison and imitation.</div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does the Gita say about avoiding your responsibility?</div>
-            <div className="faq-a">The Gita is extremely direct on this. In Chapter 3, Krishna argues that no one can avoid action — attempting to do so is itself an action, driven by desire and self-deception. The desire to escape from one's duties is identified not as wisdom or detachment but as a form of delusion (moha). Arjuna's wish to renounce at the start is diagnosed throughout the chapter as an escape mechanism, not a spiritual achievement.</div>
+            <div className="faq-a">The Gita is extremely direct on this. In Chapter 3, Krishna argues that no one can avoid action, attempting to do so is itself an action, driven by desire and self-deception. The desire to escape from one's duties is identified not as wisdom or detachment but as a form of delusion (moha). Arjuna's wish to renounce at the start is diagnosed throughout the chapter as an escape mechanism, not a spiritual achievement.</div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is lokasamgraha in the Bhagavad Gita?</div>
-            <div className="faq-a">Lokasamgraha means "the holding together of the world" or "the welfare of humanity." It appears in Chapter 3 as the reason wise and great people must continue to act — not for personal gain, but because their actions set the standard for what others will do. To withdraw from engagement when one has influence is to abandon a responsibility to the larger good.</div>
+            <div className="faq-a">Lokasamgraha means "the holding together of the world" or "the welfare of humanity." It appears in Chapter 3 as the reason wise and great people must continue to act, not for personal gain, but because their actions set the standard for what others will do. To withdraw from engagement when one has influence is to abandon a responsibility to the larger good.</div>
           </div>
         </div>
       </article>

@@ -3,21 +3,21 @@ import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 8 Summary – Key Verses & Meaning (Akshara Brahma Yoga)",
-  description: "Bhagavad Gita Chapter 8 (Akshara Brahma Yoga) — 28 verses on the imperishable Brahman, the moment of death, and the path beyond return. Sanskrit, Hindi & English.",
+  description: "Bhagavad Gita Chapter 8 (Akshara Brahma Yoga), 28 verses on the imperishable Brahman, the moment of death, and the path beyond return. Sanskrit, Hindi & English.",
   keywords: "bhagwat geeta chapter 8, bhagavad gita akshara brahma yoga, bhagwat geeta adhyay 8, death in bhagavad gita, brahma kalpa days nights, supreme abode gita, antakale ca mam eva smaran, mind at the moment of death gita, Akshara Brahma Yoga meaning, Bhagavad Gita 8.5 anta kale ca mam eva smaran, Bhagavad Gita 8.6 meaning, what is the supreme abode in Bhagavad Gita, Brahma's day and night Bhagavad Gita, om iti ekaksharam brahma",
   openGraph: {
     title: "Bhagavad Gita Chapter 8 Summary – Key Verses & Meaning (Akshara Brahma Yoga)",
-    description: "Bhagavad Gita Chapter 8 — what the mind has practiced, the moment of death, and the imperishable destination.",
+    description: "Bhagavad Gita Chapter 8, what the mind has practiced, the moment of death, and the imperishable destination.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter8.webp", width: 1200, height: 675, alt: "Light dispersing into the eternal — Chapter 8 of the Bhagavad Gita teaches Akshara Brahma Yoga: the imperishable, the moment of death, and what the mind has practiced." }],
+    images: [{ url: "https://wisdomquotes.in/assets/chapter8.webp", width: 1200, height: 675, alt: "Light dispersing into the eternal, Chapter 8 of the Bhagavad Gita teaches Akshara Brahma Yoga: the imperishable, the moment of death, and what the mind has practiced." }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 8 Summary – Key Verses & Meaning (Akshara Brahma Yoga)",
-    description: "Bhagavad Gita Chapter 8 — what the mind has practiced, the moment of death, and the imperishable destination.",
+    description: "Bhagavad Gita Chapter 8, what the mind has practiced, the moment of death, and the imperishable destination.",
     images: ["https://wisdomquotes.in/assets/chapter8.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8" },
@@ -591,11 +591,11 @@ export default function ChapterPage8() {
             <div className="chapter-badge-dot"></div>
           </div>
           <h1 className="article-title">
-            Bhagavad Gita Chapter 8 (Adhyay 8) —<br />
+            Bhagavad Gita Chapter 8 (Adhyay 8):<br />
             <em>Akshara Brahma Yoga</em>
           </h1>
           <p className="article-subtitle">
-            Chapter 8 is about the last moment — and therefore about every moment. The imperishable Brahman, the practice that carries you across death, and a quietly terrifying fact: you will leave with whatever you have rehearsed.
+            Chapter 8 is about the last moment, and therefore about every moment. The imperishable Brahman, the practice that carries you across death, and a quietly terrifying fact: you will leave with whatever you have rehearsed.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -605,6 +605,8 @@ export default function ChapterPage8() {
             <span className="meta-item">~11 min read</span>
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 8 of 18</span>
+          <span className="meta-sep">·</span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -615,7 +617,7 @@ export default function ChapterPage8() {
           <figure className="chapter-image">
             <img
               src="/assets/chapter8.webp"
-              alt="Light dispersing into the eternal — Chapter 8 of the Bhagavad Gita teaches Akshara Brahma Yoga: the imperishable, the moment of death, and what the mind has practiced."
+              alt="Light dispersing into the eternal, Chapter 8 of the Bhagavad Gita teaches Akshara Brahma Yoga: the imperishable, the moment of death, and what the mind has practiced."
               width="1200"
               height="675"
               loading="eager"
@@ -623,23 +625,23 @@ export default function ChapterPage8() {
           </figure>
 
         <p className="lead">
-          Chapter 8 is a chapter about death, and therefore — though it does not announce this directly — a chapter about every moment that is not yet death. Krishna begins by defining seven terms Arjuna has just asked about: Brahman, adhyatma, karma, adhibhuta, adhidaiva, adhiyajna, and the question of what happens at the moment of departure. The first answers are crisp, almost technical. Then the chapter pivots to its real subject, which is not the metaphysical inventory but the practical question that sits underneath every spiritual practice ever invented: what state of mind will I be in at the end?
+          Chapter 8 is a chapter about death, and therefore, though it does not announce this directly, a chapter about every moment that is not yet death. Krishna begins by defining seven terms Arjuna has just asked about: Brahman, adhyatma, karma, adhibhuta, adhidaiva, adhiyajna, and the question of what happens at the moment of departure. The first answers are crisp, almost technical. Then the chapter pivots to its real subject, which is not the metaphysical inventory but the practical question that sits underneath every spiritual practice ever invented: what state of mind will I be in at the end?
         </p>
 
         <p>
-          Most modern readers flinch from this question because it sounds morbid. The Gita treats it the opposite way. The question is not morbid — it is clarifying. The state of mind at the end, the Gita says, is not a separate event. It is the cumulative output of everything the mind has practiced. The most quietly serious sentence in Chapter 8 is verse 8.6: <em>whatever state of being you remember at the end, you reach that state, because the mind has been shaped by it</em>. The end follows the practice. Therefore the practice <em>is</em> the end, already begun.
+          Most modern readers flinch from this question because it sounds morbid. The Gita treats it the opposite way. The question is not morbid, it is clarifying. The state of mind at the end, the Gita says, is not a separate event. It is the cumulative output of everything the mind has practiced. The most quietly serious sentence in Chapter 8 is verse 8.6: <em>whatever state of being you remember at the end, you reach that state, because the mind has been shaped by it</em>. The end follows the practice. Therefore the practice <em>is</em> the end, already begun.
         </p>
 
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
-            <li><a href="#seven-terms">The seven terms — Krishna gets technical</a></li>
-            <li><a href="#end-state">The state at the end — 8.5 and 8.6</a></li>
+            <li><a href="#seven-terms">The seven terms, Krishna gets technical</a></li>
+            <li><a href="#end-state">The state at the end, 8.5 and 8.6</a></li>
             <li><a href="#what-rehearsed">You leave with what you rehearsed</a></li>
-            <li><a href="#easy-reach">Constant remembrance — the easy reach</a></li>
-            <li><a href="#cosmic-time">Cosmic time — the day and night of Brahma</a></li>
+            <li><a href="#easy-reach">Constant remembrance, the easy reach</a></li>
+            <li><a href="#cosmic-time">Cosmic time, the day and night of Brahma</a></li>
             <li><a href="#beyond-return">The path beyond return</a></li>
-            <li><a href="#two-paths">The chapter's closing — beyond merit</a></li>
+            <li><a href="#two-paths">The chapter's closing, beyond merit</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
             <li><a href="#related-reading">Related reading</a></li>
@@ -655,7 +657,7 @@ export default function ChapterPage8() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="seven-terms">Krishna Gets Technical — The Seven Terms</h2>
+        <h2 id="seven-terms">Krishna Gets Technical, The Seven Terms</h2>
 
         <p>
           Arjuna opens Chapter 8 with a series of definitional questions. What is Brahman? What is the inner self? What is action? What is the field of beings? What is the divine? What is the inner sacrifice? And what happens at the moment of departure from the body? Krishna's reply is unusually crisp and structured. He defines each term in two lines, almost like a glossary, before moving to the chapter's deeper teaching.
@@ -686,7 +688,7 @@ export default function ChapterPage8() {
             <div>
               <div className="shloka-col-label">Why precise definitions matter here</div>
               <div className="shloka-insight">
-                The Gita is about to make claims about death that depend on these terms. Without the definitions, the later verses become mystical platitudes. With them, the claim is structural: there is an imperishable, there is your particular nature, and there is action — and these three are not the same. Clarity about what is what makes the rest of the chapter possible.
+                The Gita is about to make claims about death that depend on these terms. Without the definitions, the later verses become mystical platitudes. With them, the claim is structural: there is an imperishable, there is your particular nature, and there is action, and these three are not the same. Clarity about what is what makes the rest of the chapter possible.
               </div>
             </div>
           </div>
@@ -704,14 +706,14 @@ export default function ChapterPage8() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="end-state">Whatever You Remember at the End — That You Become</h2>
+        <h2 id="end-state">Whatever You Remember at the End, That You Become</h2>
 
         <p>
           After the definitions, Krishna moves to the chapter's most personal teaching. The state of mind you hold at the moment of leaving the body shapes what you carry forward. The first time you read this, it can feel ominous, like a final exam. Read more carefully, the verse is not ominous. It is mechanical. It is just describing how attention works.
         </p>
 
         <p>
-          Verse 8.6 says: whatever state a person remembers at the end, that state they reach, because the mind has been shaped by it. The Sanskrit phrase is <em>sadā tad-bhāva-bhāvitaḥ</em> — always conditioned by that state. The Gita is making an unsentimental claim about habit. Whatever the mind has been trained to return to, that is where it will go when consciousness loses its anchors. Death just removes the anchors. The direction was already set.
+          Verse 8.6 says: whatever state a person remembers at the end, that state they reach, because the mind has been shaped by it. The Sanskrit phrase is <em>sadā tad-bhāva-bhāvitaḥ</em>, always conditioned by that state. The Gita is making an unsentimental claim about habit. Whatever the mind has been trained to return to, that is where it will go when consciousness loses its anchors. Death just removes the anchors. The direction was already set.
         </p>
 
         <div className="shloka-card">
@@ -729,13 +731,13 @@ export default function ChapterPage8() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Whoever remembers me at the end, leaving the body — reaches my state. There is no doubt in this.
+                Whoever remembers me at the end, leaving the body, reaches my state. There is no doubt in this.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The verse is about training, not luck</div>
               <div className="shloka-insight">
-                It sounds like a single instruction — remember Krishna at the end. But the next verse clarifies: the mind at the end is the mind you have trained. You cannot install a new attention pattern at the last second. The teaching is not about that moment alone. It is about every moment leading to it.
+                It sounds like a single instruction, remember Krishna at the end. But the next verse clarifies: the mind at the end is the mind you have trained. You cannot install a new attention pattern at the last second. The teaching is not about that moment alone. It is about every moment leading to it.
               </div>
             </div>
           </div>
@@ -759,13 +761,13 @@ export default function ChapterPage8() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Whatever state a person remembers as they leave the body, that state they reach — because the mind has long been shaped by it.
+                Whatever state a person remembers as they leave the body, that state they reach, because the mind has long been shaped by it.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The hinge phrase: sadā tad-bhāva-bhāvitaḥ</div>
               <div className="shloka-insight">
-                <em>Always conditioned by that state.</em> This is the Gita's way of saying: you cannot fake the end. Whatever the mind has practiced returning to — that is what it will return to when the practice becomes involuntary. The end is determined by the training, not by intention in the moment.
+                <em>Always conditioned by that state.</em> This is the Gita's way of saying: you cannot fake the end. Whatever the mind has practiced returning to, that is what it will return to when the practice becomes involuntary. The end is determined by the training, not by intention in the moment.
               </div>
             </div>
           </div>
@@ -776,7 +778,7 @@ export default function ChapterPage8() {
 
         <div className="pull-quote">
           <blockquote>
-            "Whatever state the mind has long been shaped by — that is what it becomes at the end."
+            "Whatever state the mind has long been shaped by, that is what it becomes at the end."
           </blockquote>
           <cite>Bhagavad Gita 8.6</cite>
         </div>
@@ -793,11 +795,11 @@ export default function ChapterPage8() {
         <h2 id="what-rehearsed">You Will Leave With What You Rehearsed</h2>
 
         <p>
-          Once 8.6 lands, 8.7 and 8.8 become urgent rather than abstract. Krishna says: therefore, at all times remember me, and fight. Notice the verb — fight. The Gita does not split spiritual practice from the conduct of daily life. The training of attention happens inside the work, not instead of it.
+          Once 8.6 lands, 8.7 and 8.8 become urgent rather than abstract. Krishna says: therefore, at all times remember me, and fight. Notice the verb, fight. The Gita does not split spiritual practice from the conduct of daily life. The training of attention happens inside the work, not instead of it.
         </p>
 
         <p>
-          Verse 8.8 then makes the cumulative claim explicit. The mind trained by practice (<em>abhyāsa-yoga</em>), fixed on nothing else, reaches the supreme. The word <em>abhyāsa</em> recurs across the Gita — repetition, the patient grooving of a habit. Your end-state, the chapter says, will be the dominant groove of your attention. So the question is not what you intend to be at the end. The question is what you are practicing right now, repeatedly, when no one is watching.
+          Verse 8.8 then makes the cumulative claim explicit. The mind trained by practice (<em>abhyāsa-yoga</em>), fixed on nothing else, reaches the supreme. The word <em>abhyāsa</em> recurs across the Gita, repetition, the patient grooving of a habit. Your end-state, the chapter says, will be the dominant groove of your attention. So the question is not what you intend to be at the end. The question is what you are practicing right now, repeatedly, when no one is watching.
         </p>
 
         <div className="shloka-card">
@@ -821,7 +823,7 @@ export default function ChapterPage8() {
             <div>
               <div className="shloka-col-label">Practice is structural, not optional</div>
               <div className="shloka-insight">
-                Notice the chain: <em>abhyāsa-yoga-yuktena cetasā</em> — by a mind made one with the yoga of practice. The mind does not just decide at the end. The mind is the cumulative deposit of every prior decision. Practice is not a virtue you add. It is the mechanism by which you become anything at all.
+                Notice the chain: <em>abhyāsa-yoga-yuktena cetasā</em>, by a mind made one with the yoga of practice. The mind does not just decide at the end. The mind is the cumulative deposit of every prior decision. Practice is not a virtue you add. It is the mechanism by which you become anything at all.
               </div>
             </div>
           </div>
@@ -832,7 +834,7 @@ export default function ChapterPage8() {
 
         <div className="highlight-box">
           <p>
-            <strong>Translated for the modern reader:</strong> Whatever you spend your attention on — scrolling, worrying, planning, watching, learning, loving — is what your mind will gravitate toward when the lights start going down. The Gita is not threatening you with this. It is informing you. Your end-state is being authored, daily, by your most repeated thought patterns.
+            <strong>Translated for the modern reader:</strong> Whatever you spend your attention on, scrolling, worrying, planning, watching, learning, loving, is what your mind will gravitate toward when the lights start going down. The Gita is not threatening you with this. It is informing you. Your end-state is being authored, daily, by your most repeated thought patterns.
           </p>
         </div>
 
@@ -848,11 +850,11 @@ export default function ChapterPage8() {
         <h2 id="easy-reach">Constant Remembrance Makes the Divine Easy to Reach</h2>
 
         <p>
-          After the difficult teachings on death, Krishna offers a verse that lightens the chapter's tone. He says: for the one whose mind is wholly on me, who remembers me constantly — I am easy to reach. The Sanskrit word is <em>sulabhah</em>. Easy. Not difficult. Not a reward at the end of an austere struggle. Easy.
+          After the difficult teachings on death, Krishna offers a verse that lightens the chapter's tone. He says: for the one whose mind is wholly on me, who remembers me constantly, I am easy to reach. The Sanskrit word is <em>sulabhah</em>. Easy. Not difficult. Not a reward at the end of an austere struggle. Easy.
         </p>
 
         <p>
-          This is one of the chapter's most consoling verses. The path the Gita has been describing — disciplined remembrance, training of attention — does not stay difficult. After the initial period of building the habit, the habit carries itself. The Divine is not playing hard to get. The Divine is playing easy to get, but the easiness requires a continuity of attention that most lives never assemble. The verse is an invitation, not a warning.
+          This is one of the chapter's most consoling verses. The path the Gita has been describing, disciplined remembrance, training of attention, does not stay difficult. After the initial period of building the habit, the habit carries itself. The Divine is not playing hard to get. The Divine is playing easy to get, but the easiness requires a continuity of attention that most lives never assemble. The verse is an invitation, not a warning.
         </p>
 
         <div className="shloka-card">
@@ -870,13 +872,13 @@ export default function ChapterPage8() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                For the yogi whose mind is undivided, who remembers me constantly, always united with me — I am easy to reach, Partha.
+                For the yogi whose mind is undivided, who remembers me constantly, always united with me, I am easy to reach, Partha.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">The word that turns the chapter</div>
               <div className="shloka-insight">
-                <em>Sulabhaḥ</em> — easy. The Gita is not built on heroic struggle. It is built on continuity. The yogi reaches the Divine easily not because they have superhuman discipline, but because they have stopped intermittently directing attention elsewhere. The reach is easy because the distance was always small.
+                <em>Sulabhaḥ</em>, easy. The Gita is not built on heroic struggle. It is built on continuity. The yogi reaches the Divine easily not because they have superhuman discipline, but because they have stopped intermittently directing attention elsewhere. The reach is easy because the distance was always small.
               </div>
             </div>
           </div>
@@ -887,7 +889,7 @@ export default function ChapterPage8() {
 
         <div className="pull-quote">
           <blockquote>
-            "For the one whose mind is undivided and remembers me constantly — I am easy to reach."
+            "For the one whose mind is undivided and remembers me constantly, I am easy to reach."
           </blockquote>
           <cite>Bhagavad Gita 8.14</cite>
         </div>
@@ -901,14 +903,14 @@ export default function ChapterPage8() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="cosmic-time">Brahma's Day and Brahma's Night — Putting Your Week Into Perspective</h2>
+        <h2 id="cosmic-time">Brahma's Day and Brahma's Night, Putting Your Week Into Perspective</h2>
 
         <p>
-          Halfway through Chapter 8 the camera pulls back enormously. Krishna describes Brahma's day — a thousand <em>yuga</em>s long. Brahma's night — the same. The numbers are not meant as cosmology in the modern sense. They are meant as a sudden reframing of scale. Your life, your project, your urgent week — all of it sits inside something so much larger that ordinary urgency becomes embarrassing.
+          Halfway through Chapter 8 the camera pulls back enormously. Krishna describes Brahma's day, a thousand <em>yuga</em>s long. Brahma's night, the same. The numbers are not meant as cosmology in the modern sense. They are meant as a sudden reframing of scale. Your life, your project, your urgent week, all of it sits inside something so much larger that ordinary urgency becomes embarrassing.
         </p>
 
         <p>
-          What is the practical use of this? The Gita is doing what good astronomy still does. It is making your problems smaller without making them meaningless. The deadline at work matters. The argument with a friend matters. But against a thousand yugas of Brahma's day, the argument cannot also be cosmic. It must take its place. This is how the Gita reduces anxiety — not by denying the importance of things, but by setting them inside a frame so large that no single thing can be allowed to feel infinite.
+          What is the practical use of this? The Gita is doing what good astronomy still does. It is making your problems smaller without making them meaningless. The deadline at work matters. The argument with a friend matters. But against a thousand yugas of Brahma's day, the argument cannot also be cosmic. It must take its place. This is how the Gita reduces anxiety, not by denying the importance of things, but by setting them inside a frame so large that no single thing can be allowed to feel infinite.
         </p>
 
         <div className="shloka-card">
@@ -926,7 +928,7 @@ export default function ChapterPage8() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Those who know that Brahma's day lasts a thousand yugas, and his night lasts a thousand yugas — they truly know day and night.
+                Those who know that Brahma's day lasts a thousand yugas, and his night lasts a thousand yugas, they truly know day and night.
               </div>
             </div>
             <div>
@@ -953,11 +955,11 @@ export default function ChapterPage8() {
         <h2 id="beyond-return">The Path That Does Not Return</h2>
 
         <p>
-          After the cosmology, Krishna names the destination. He calls it <em>akṣaram</em> — the imperishable — and says: those who reach it do not return. The Sanskrit phrase is <em>yaṃ prāpya na nivartante</em>. Having reached it, they do not come back. This is the Gita's deepest claim about liberation. It is not a better next life. It is the end of the cycle of needing a next life.
+          After the cosmology, Krishna names the destination. He calls it <em>akṣaram</em>, the imperishable, and says: those who reach it do not return. The Sanskrit phrase is <em>yaṃ prāpya na nivartante</em>. Having reached it, they do not come back. This is the Gita's deepest claim about liberation. It is not a better next life. It is the end of the cycle of needing a next life.
         </p>
 
         <p>
-          Modern readers sometimes find this troubling. Doesn't "not coming back" mean leaving everything behind? The Gita's answer, implicit across the chapter, is that what you leave behind is the compulsion to return — the unfinished wanting, the unresolved grief, the unspent attachment. The verse is not promising annihilation. It is promising completion. The pearls are still on the thread. You have just stopped being a pearl.
+          Modern readers sometimes find this troubling. Doesn't "not coming back" mean leaving everything behind? The Gita's answer, implicit across the chapter, is that what you leave behind is the compulsion to return, the unfinished wanting, the unresolved grief, the unspent attachment. The verse is not promising annihilation. It is promising completion. The pearls are still on the thread. You have just stopped being a pearl.
         </p>
 
         <div className="shloka-card">
@@ -975,13 +977,13 @@ export default function ChapterPage8() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                That which is called the unmanifest, the imperishable — they call it the supreme destination. Having reached it, beings do not return. That is my supreme abode.
+                That which is called the unmanifest, the imperishable, they call it the supreme destination. Having reached it, beings do not return. That is my supreme abode.
               </div>
             </div>
             <div>
               <div className="shloka-col-label">What completion means here</div>
               <div className="shloka-insight">
-                The phrase <em>tad dhāma paramaṃ mama</em> — "that is my supreme home" — is intimate. Krishna is not pointing at an abstract beyond. He is pointing at where he himself lives. The destination is a relationship as much as a place. To reach it is to come home, not to be erased.
+                The phrase <em>tad dhāma paramaṃ mama</em>, "that is my supreme home", is intimate. Krishna is not pointing at an abstract beyond. He is pointing at where he himself lives. The destination is a relationship as much as a place. To reach it is to come home, not to be erased.
               </div>
             </div>
           </div>
@@ -1006,7 +1008,7 @@ export default function ChapterPage8() {
         </p>
 
         <p>
-          Notice what just happened. Krishna has spent the chapter teaching practice, training, remembrance. Then at the end he says — the truly understanding yogi has surpassed even the merit accumulated by sacrifices and austerities. The point is not that practice is wasted. The point is that practice is not a transaction. You are not stacking up cosmic merit points. You are becoming something — and the something has its own destination that does not need the merit. The Gita is, here, undercutting transactional spirituality even while teaching it.
+          Notice what just happened. Krishna has spent the chapter teaching practice, training, remembrance. Then at the end he says, the truly understanding yogi has surpassed even the merit accumulated by sacrifices and austerities. The point is not that practice is wasted. The point is that practice is not a transaction. You are not stacking up cosmic merit points. You are becoming something, and the something has its own destination that does not need the merit. The Gita is, here, undercutting transactional spirituality even while teaching it.
         </p>
 
         <div className="shloka-card">
@@ -1024,7 +1026,7 @@ export default function ChapterPage8() {
             <div>
               <div className="shloka-col-label">Meaning</div>
               <div className="shloka-meaning">
-                Whatever merit is promised in the Vedas, in sacrifices, in austerities, and in gifts — the yogi who knows this transcends all of it, and reaches the primal supreme abode.
+                Whatever merit is promised in the Vedas, in sacrifices, in austerities, and in gifts, the yogi who knows this transcends all of it, and reaches the primal supreme abode.
               </div>
             </div>
             <div>
@@ -1095,11 +1097,11 @@ export default function ChapterPage8() {
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous</div>
-            <a href="/blogs/bhagwat-geeta-chapter-7" className="ch-nav-title">Chapter 7 — Jnana Vijnana Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-7" className="ch-nav-title">Chapter 7, Jnana Vijnana Yoga</a>
           </div>
           <div style={{ textAlign: 'right' }}>
             <div className="ch-nav-label">Next</div>
-            <a href="/blogs/bhagwat-geeta-chapter-9" className="ch-nav-title">Chapter 9 — Raja Vidya Raja Guhya Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-9" className="ch-nav-title">Chapter 9, Raja Vidya Raja Guhya Yoga</a>
           </div>
         </div>
 
@@ -1120,37 +1122,37 @@ export default function ChapterPage8() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 8 about?</div>
             <div className="faq-a">
-              Chapter 8 (Akshara Brahma Yoga) is the Gita's chapter on death — and therefore on every moment that is not yet death. Krishna defines seven key spiritual terms, then teaches that the state of mind at the end of life is the cumulative output of everything the mind has practiced. The chapter contains the famous teaching of 8.6 — that whatever state a person remembers at the end is the state they reach. It also introduces Brahma's day and night, the imperishable destination from which one does not return, and the two paths after death.
+              Chapter 8 (Akshara Brahma Yoga) is the Gita's chapter on death, and therefore on every moment that is not yet death. Krishna defines seven key spiritual terms, then teaches that the state of mind at the end of life is the cumulative output of everything the mind has practiced. The chapter contains the famous teaching of 8.6, that whatever state a person remembers at the end is the state they reach. It also introduces Brahma's day and night, the imperishable destination from which one does not return, and the two paths after death.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 8.6 mean?</div>
             <div className="faq-a">
-              Verse 8.6 says, 'Whatever state of being one remembers when leaving the body, that state one attains, because the mind has long been shaped by it.' It is not a verse about being dramatic in the final moment. It is a verse about training. The mind at the end is the mind you have trained — by what it has repeatedly returned to in life. The end is the cumulative output of practice, not a separate event.
+              Verse 8.6 says, 'Whatever state of being one remembers when leaving the body, that state one attains, because the mind has long been shaped by it.' It is not a verse about being dramatic in the final moment. It is a verse about training. The mind at the end is the mind you have trained, by what it has repeatedly returned to in life. The end is the cumulative output of practice, not a separate event.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the meaning of antakale ca mam eva smaran?</div>
             <div className="faq-a">
-              This is the opening phrase of verse 8.5 — 'at the end, remembering me alone.' Krishna says one who departs while remembering him reaches his state. But the very next verse clarifies that this end-remembrance is only possible for the mind that has long practiced it. You cannot install a new attention pattern at the last moment. The teaching is about lifelong rehearsal, not a deathbed manoeuvre.
+              This is the opening phrase of verse 8.5, 'at the end, remembering me alone.' Krishna says one who departs while remembering him reaches his state. But the very next verse clarifies that this end-remembrance is only possible for the mind that has long practiced it. You cannot install a new attention pattern at the last moment. The teaching is about lifelong rehearsal, not a deathbed manoeuvre.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What are Brahma's day and night in the Bhagavad Gita?</div>
             <div className="faq-a">
-              In verses 8.17-19, Krishna describes Brahma's day as lasting a thousand yugas, and his night as lasting another thousand. At the start of Brahma's day, all beings emerge from the unmanifest. At nightfall, they dissolve back. The teaching is partly cosmology and partly therapeutic — it widens the frame so that ordinary urgency stops feeling cosmic. The Gita uses scale to dissolve panic.
+              In verses 8.17-19, Krishna describes Brahma's day as lasting a thousand yugas, and his night as lasting another thousand. At the start of Brahma's day, all beings emerge from the unmanifest. At nightfall, they dissolve back. The teaching is partly cosmology and partly therapeutic, it widens the frame so that ordinary urgency stops feeling cosmic. The Gita uses scale to dissolve panic.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the supreme abode (paramam dhama) in the Bhagavad Gita?</div>
             <div className="faq-a">
-              Verse 8.21 calls the supreme abode the unmanifest, the imperishable — and says those who reach it do not return. It is described as Krishna's own home (tad dhāma paramaṃ mama). The phrase means liberation from the cycle of return. It is not annihilation but completion — the cessation of the compulsions that bring consciousness back into embodied life.
+              Verse 8.21 calls the supreme abode the unmanifest, the imperishable, and says those who reach it do not return. It is described as Krishna's own home (tad dhāma paramaṃ mama). The phrase means liberation from the cycle of return. It is not annihilation but completion, the cessation of the compulsions that bring consciousness back into embodied life.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Is Chapter 8 saying we should only think of God at death?</div>
             <div className="faq-a">
-              Read carefully, no. Chapter 8 is teaching that the state at death is the trained state, and the trained state is the lifelong outcome of where your attention has gone. The chapter is not a special instruction for the final moment. It is a general instruction about how attention shapes being — death just makes the consequences of attention more visible.
+              Read carefully, no. Chapter 8 is teaching that the state at death is the trained state, and the trained state is the lifelong outcome of where your attention has gone. The chapter is not a special instruction for the final moment. It is a general instruction about how attention shapes being, death just makes the consequences of attention more visible.
             </div>
           </div>
         </div>
@@ -1165,19 +1167,19 @@ export default function ChapterPage8() {
           </a>
           <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" className="related-card">
             <div className="related-card-label">Topic Guide</div>
-            <div className="related-card-title">All 18 chapters — the full arc</div>
+            <div className="related-card-title">All 18 chapters, the full arc</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-7" className="related-card">
             <div className="related-card-label">Chapter 7</div>
-            <div className="related-card-title">Jnana Vijnana Yoga — Knowing About vs. Knowing Through</div>
+            <div className="related-card-title">Jnana Vijnana Yoga, Knowing About vs. Knowing Through</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-9" className="related-card">
             <div className="related-card-label">Chapter 9</div>
-            <div className="related-card-title">Raja Vidya Raja Guhya Yoga — The Royal Secret</div>
+            <div className="related-card-title">Raja Vidya Raja Guhya Yoga, The Royal Secret</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-15" className="related-card">
             <div className="related-card-label">Chapter 15</div>
-            <div className="related-card-title">Purushottama Yoga — Cut the Tree, Find the Source</div>
+            <div className="related-card-title">Purushottama Yoga, Cut the Tree, Find the Source</div>
           </a>
           </div>
         </div>
@@ -1187,7 +1189,7 @@ export default function ChapterPage8() {
             <div className="app-cta-eyebrow">Free iOS App</div>
             <div className="app-cta-headline">One shloka a morning.<br />Let it stay with you all day.</div>
             <p className="app-cta-desc">
-              The Wisdom app delivers one Bhagavad Gita verse each day — Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
+              The Wisdom app delivers one Bhagavad Gita verse each day, Devanagari script, transliteration, meaning, and how it applies right now. 700 verses. Home screen widget. Free.
             </p>
             <div className="app-cta-features">
               <span>✦ Daily shloka in Sanskrit</span>
