@@ -285,13 +285,7 @@ export default function MethodologyPage() {
 
       <Nav />
 
-      <div className="breadcrumb">
-        <div className="breadcrumb-inner">
-          <a href="/">Wisdom</a>
-          <span>&rsaquo;</span>
-          <span>Methodology</span>
-        </div>
-      </div>
+
 
       <div className="page-hero">
         <div className="page-hero-inner">
