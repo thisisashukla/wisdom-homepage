@@ -177,18 +177,18 @@ export default async function VersePage({ params }: { params: Params }) {
         <span>Verse {v}</span>
       </nav>
 
-      <div className=”gita-eyebrow”>
+      <div className="gita-eyebrow">
         {ch?.enName ?? `Chapter ${c}`} · Verse {v}
       </div>
-      <h1 className=”gita-h1”>Bhagavad Gita {c}.{v}</h1>
+      <h1 className="gita-h1">Bhagavad Gita {c}.{v}</h1>
       {verse.essence && (
-        <p className=”gita-lede” style={{ fontStyle: 'italic', color: 'var(--gold-pale)', maxWidth: 640 }}>
+        <p className="gita-lede" style={{ fontStyle: 'italic', color: 'var(--gold-pale)', maxWidth: 640 }}>
           &ldquo;{verse.essence}&rdquo;
         </p>
       )}
       <p style={{ fontSize: 12, color: 'var(--text-dimmer)', marginTop: 4, marginBottom: 8, fontStyle: 'italic' }}>
         Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026.{' '}
-        <a href=”/methodology” style={{ color: 'var(--text-dimmer)', textDecoration: 'underline' }}>Methodology →</a>
+        <a href="/methodology" style={{ color: 'var(--text-dimmer)', textDecoration: 'underline' }}>Methodology →</a>
       </p>
 
       <article className="gita-verse-card">
