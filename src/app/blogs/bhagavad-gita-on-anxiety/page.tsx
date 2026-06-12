@@ -612,7 +612,7 @@ export default function GitaOnAnxietyPage() {
       <div className="content">
         <figure className="chapter-image">
           <img
-            src="/og-image.webp"
+            src="/assets/chapter1.webp"
             alt="Arjuna and Krishna on the battlefield of Kurukshetra, the setting of the Bhagavad Gita's teaching on anxiety and the restless mind"
             width="1200"
             height="675"

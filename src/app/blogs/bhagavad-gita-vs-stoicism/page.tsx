@@ -658,7 +658,7 @@ export default function GitaVsStoicismPage() {
     <div className="content">
       <figure className="chapter-image">
         <img
-          src="/og-image.webp"
+          src="/assets/gita-montage.webp"
           alt="Bhagavad Gita vs Stoicism: parallel teachings on action, equanimity, and the self"
           width="1200"
           height="675"
