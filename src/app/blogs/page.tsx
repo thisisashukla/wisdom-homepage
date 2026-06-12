@@ -178,47 +178,98 @@ const pageCSS = `
         padding: 28px 28px 20px;
         position: relative;
         overflow: hidden;
-        min-height: 130px;
+        height: 160px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
       }
       .card-thumb::before {
         position: absolute;
-        right: -10px;
-        top: -10px;
-        font-family: "Noto Sans Devanagari", serif;
-        font-size: 100px;
-        color: rgba(255, 255, 255, 0.04);
+        right: 12px;
+        bottom: -18px;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 130px;
+        color: rgba(255, 255, 255, 0.11);
         line-height: 1;
         pointer-events: none;
         user-select: none;
+        font-weight: 700;
       }
-      .card-thumb-ch1::before { content: "अध्याय १"; }
-      .card-thumb-ch2::before { content: "अध्याय २"; }
-      .card-thumb-ch3::before { content: "अध्याय ३"; }
-      .card-thumb-ch4::before { content: "अध्याय ४"; }
-      .card-thumb-ch5::before { content: "अध्याय ५"; }
-      .card-thumb-ch6::before { content: "अध्याय ६"; }
-      .card-thumb-ch7::before { content: "अध्याय ७"; }
-      .card-thumb-ch8::before { content: "अध्याय ८"; }
-      .card-thumb-ch9::before { content: "अध्याय ९"; }
-      .card-thumb-ch10::before { content: "अध्याय १०"; font-size: 80px; }
-      .card-thumb-ch11::before { content: "अध्याय ११"; font-size: 80px; }
-      .card-thumb-ch12::before { content: "अध्याय १२"; font-size: 80px; }
-      .card-thumb-ch13::before { content: "अध्याय १३"; font-size: 80px; }
-      .card-thumb-ch14::before { content: "अध्याय १४"; font-size: 80px; }
-      .card-thumb-ch15::before { content: "अध्याय १५"; font-size: 80px; }
-      .card-thumb-ch16::before { content: "अध्याय १६"; font-size: 80px; }
-      .card-thumb-ch17::before { content: "अध्याय १७"; font-size: 80px; }
-      .card-thumb-ch18::before { content: "अध्याय १८"; font-size: 80px; }
-      .card-thumb-shlok::before { content: "श्लोक"; }
-      .card-thumb-karma::before { content: "कर्म"; }
-      .card-thumb-gita::before { content: "गीता"; }
-      .card-thumb-peace::before { content: "शान्ति"; }
-      .card-thumb-begin::before { content: "आरम्भ"; }
-      .card-thumb-arc::before { content: "अठारह"; }
-      .card-thumb-3paths::before { content: "त्रिमार्ग"; font-size: 80px; }
+      .card-thumb-ch1::before  { content: "1"; }
+      .card-thumb-ch2::before  { content: "2"; }
+      .card-thumb-ch3::before  { content: "3"; }
+      .card-thumb-ch4::before  { content: "4"; }
+      .card-thumb-ch5::before  { content: "5"; }
+      .card-thumb-ch6::before  { content: "6"; }
+      .card-thumb-ch7::before  { content: "7"; }
+      .card-thumb-ch8::before  { content: "8"; }
+      .card-thumb-ch9::before  { content: "9"; }
+      .card-thumb-ch10::before { content: "10"; font-size: 110px; }
+      .card-thumb-ch11::before { content: "11"; font-size: 110px; }
+      .card-thumb-ch12::before { content: "12"; font-size: 110px; }
+      .card-thumb-ch13::before { content: "13"; font-size: 110px; }
+      .card-thumb-ch14::before { content: "14"; font-size: 110px; }
+      .card-thumb-ch15::before { content: "15"; font-size: 110px; }
+      .card-thumb-ch16::before { content: "16"; font-size: 110px; }
+      .card-thumb-ch17::before { content: "17"; font-size: 110px; }
+      .card-thumb-ch18::before { content: "18"; font-size: 110px; }
+      .card-thumb-shlok::before    { content: "ॐ"; font-family: "Noto Sans Devanagari", serif; font-size: 130px; }
+      .card-thumb-karma::before    { content: "क"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-gita::before     { content: "ग"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-peace::before    { content: "शं"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-begin::before    { content: "आ"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-arc::before      { content: "१८"; font-family: "Noto Sans Devanagari", serif; font-size: 110px; }
+      .card-thumb-3paths::before   { content: "३"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-247::before      { content: "२"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-sthita::before   { content: "स्"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-nishkama::before { content: "नि"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-anxiety2::before { content: "मन"; font-family: "Noto Sans Devanagari", serif; font-size: 110px; }
+      .card-thumb-death::before    { content: "आ"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-dharma::before   { content: "ध"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-gunas::before    { content: "गु"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-students::before { content: "अ"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-stoic::before    { content: "तु"; font-family: "Noto Sans Devanagari", serif; }
+
+      /* ── CARD THUMB COLOR GROUPS ── */
+
+      /* Group A: Karma / Action — warm copper-amber */
+      .card-thumb-ch1, .card-thumb-ch2, .card-thumb-ch3,
+      .card-thumb-ch4, .card-thumb-ch5, .card-thumb-ch6,
+      .card-thumb-karma, .card-thumb-247, .card-thumb-nishkama,
+      .card-thumb-students {
+        background: linear-gradient(135deg, rgba(180, 75, 15, 0.18) 0%, var(--bg-alt) 65%);
+        border-top: 2px solid rgba(210, 105, 30, 0.75);
+      }
+
+      /* Group B: Bhakti / Devotion — warm yellow-gold */
+      .card-thumb-ch7, .card-thumb-ch8, .card-thumb-ch9,
+      .card-thumb-ch10, .card-thumb-ch11, .card-thumb-ch12,
+      .card-thumb-3paths, .card-thumb-arc, .card-thumb-begin,
+      .card-thumb-shlok, .card-thumb-gita {
+        background: linear-gradient(135deg, rgba(180, 145, 10, 0.16) 0%, var(--bg-alt) 65%);
+        border-top: 2px solid rgba(210, 168, 20, 0.75);
+      }
+
+      /* Group C: Jnana / Knowledge — soft violet */
+      .card-thumb-ch13, .card-thumb-ch14, .card-thumb-ch15,
+      .card-thumb-ch16, .card-thumb-ch17, .card-thumb-ch18,
+      .card-thumb-sthita, .card-thumb-dharma, .card-thumb-gunas,
+      .card-thumb-death {
+        background: linear-gradient(135deg, rgba(100, 70, 190, 0.13) 0%, var(--bg-alt) 65%);
+        border-top: 2px solid rgba(150, 110, 220, 0.70);
+      }
+
+      /* Group D: Peace / Mental health — teal */
+      .card-thumb-peace, .card-thumb-anxiety2 {
+        background: linear-gradient(135deg, rgba(15, 145, 130, 0.14) 0%, var(--bg-alt) 65%);
+        border-top: 2px solid rgba(25, 190, 170, 0.70);
+      }
+
+      /* Group E: Comparative / Crossover — cool steel-blue */
+      .card-thumb-stoic {
+        background: linear-gradient(135deg, rgba(55, 100, 190, 0.13) 0%, var(--bg-alt) 65%);
+        border-top: 2px solid rgba(80, 140, 220, 0.70);
+      }
 
       .card-chapter-badge {
         font-size: 9px;
@@ -230,10 +281,14 @@ const pageCSS = `
       }
       .card-thumb-title {
         font-family: "Playfair Display", serif;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         color: var(--gold-light);
         line-height: 1.3;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
       .card-thumb-title em {
         font-style: italic;
@@ -292,6 +347,15 @@ const pageCSS = `
       .tag-shloka {
         background: rgba(200, 136, 30, 0.1);
         color: var(--gold-light);
+      }
+      .tag-sanskrit {
+        background: transparent;
+        color: var(--gold);
+        border: 1px solid rgba(200, 136, 30, 0.30);
+        font-family: "Noto Sans Devanagari", serif;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        padding: 2px 9px;
       }
       .tag-philosophy {
         background: rgba(255, 255, 255, 0.08);
@@ -870,7 +934,7 @@ export default function BlogIndexPage() {
       {/* TOPIC GUIDES */}
       <div className="section-head" style={{marginTop: '56px'}}>
         <h2>Gita Teachings, <em>Topic Guides</em></h2>
-        <span className="section-count">6 articles published</span>
+        <span className="section-count">15 articles published</span>
       </div>
 
       <div className="articles-grid">
@@ -882,6 +946,7 @@ export default function BlogIndexPage() {
           </div>
           <div className="card-body">
             <div className="card-tags">
+              <span className="tag tag-sanskrit">त्रिमार्ग</span>
               <span className="tag tag-philosophy">Three Yogas</span>
               <span className="tag tag-shloka">12+ Verses</span>
               <span className="tag tag-chapter">Deep Read</span>
@@ -904,6 +969,7 @@ export default function BlogIndexPage() {
           </div>
           <div className="card-body">
             <div className="card-tags">
+              <span className="tag tag-sanskrit">गीता</span>
               <span className="tag tag-philosophy">Ashtavakra · Avadhuta</span>
               <span className="tag tag-shloka">7 Gitas</span>
               <span className="tag tag-chapter">Deep Read</span>
@@ -926,6 +992,7 @@ export default function BlogIndexPage() {
           </div>
           <div className="card-body">
             <div className="card-tags">
+              <span className="tag tag-sanskrit">शान्ति</span>
               <span className="tag tag-philosophy">Mental Peace</span>
               <span className="tag tag-shloka">Chapters 2 & 5</span>
               <span className="tag tag-chapter">Quick Read</span>
@@ -948,6 +1015,7 @@ export default function BlogIndexPage() {
           </div>
           <div className="card-body">
             <div className="card-tags">
+              <span className="tag tag-sanskrit">कर्म</span>
               <span className="tag tag-philosophy">Karma Yoga</span>
               <span className="tag tag-shloka">Chapters 2, 3, 4</span>
               <span className="tag tag-chapter">Quick Read</span>
@@ -970,6 +1038,7 @@ export default function BlogIndexPage() {
           </div>
           <div className="card-body">
             <div className="card-tags">
+              <span className="tag tag-sanskrit">अष्टादश</span>
               <span className="tag tag-philosophy">All 18 Chapters</span>
               <span className="tag tag-shloka">Structure & Arc</span>
               <span className="tag tag-chapter">Deep Read</span>
@@ -992,6 +1061,7 @@ export default function BlogIndexPage() {
           </div>
           <div className="card-body">
             <div className="card-tags">
+              <span className="tag tag-sanskrit">आरम्भ</span>
               <span className="tag tag-philosophy">All 18 Chapters</span>
               <span className="tag tag-shloka">Guide</span>
               <span className="tag tag-chapter">Quick Read</span>
@@ -1001,6 +1071,213 @@ export default function BlogIndexPage() {
             </div>
             <div className="card-meta">
               <span className="card-read-time">~7 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* BG 2.47 */}
+        <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" className="article-card" data-mp-article="BG 2.47 Karmanye Vadhikaraste">
+          <div className="card-thumb card-thumb-247">
+            <div className="card-chapter-badge">Verse Deep Dive · Chapter 2, Verse 47</div>
+            <div className="card-thumb-title">Karmanye Vadhikaraste —<br /><em>The Most Misread Line in the Gita</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">कर्मण्य</span>
+              <span className="tag tag-philosophy">Karma Yoga</span>
+              <span className="tag tag-shloka">BG 2.47</span>
+              <span className="tag tag-chapter">Verse Guide</span>
+            </div>
+            <div className="card-desc">
+              Four instructions in 32 syllables. Most people quote the first half. The second half is what changes everything. Full Sanskrit, word-by-word breakdown, and why the fourth clause is the one nobody talks about.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~8 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Sthitaprajna */}
+        <a href="/blogs/sthitaprajna-bhagavad-gita" className="article-card" data-mp-article="Sthitaprajna Bhagavad Gita">
+          <div className="card-thumb card-thumb-sthita">
+            <div className="card-chapter-badge">Concept Guide · Chapter 2, Verses 55–72</div>
+            <div className="card-thumb-title">Sthitaprajna —<br /><em>The 18-Verse Portrait of an Unshakeable Mind</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">स्थितप्रज्ञ</span>
+              <span className="tag tag-philosophy">Equanimity</span>
+              <span className="tag tag-shloka">18 Verses</span>
+              <span className="tag tag-chapter">Concept Guide</span>
+            </div>
+            <div className="card-desc">
+              Arjuna asked: what does a person of steady wisdom actually look like? Krishna answered across 18 consecutive verses. The kachhua image, the cascade from desire to ruin, the ocean that receives rivers without overflowing.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~10 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Nishkama Karma */}
+        <a href="/blogs/nishkama-karma-bhagavad-gita" className="article-card" data-mp-article="Nishkama Karma Guide">
+          <div className="card-thumb card-thumb-nishkama">
+            <div className="card-chapter-badge">Topic Guide · Karma Yoga</div>
+            <div className="card-thumb-title">Nishkama Karma —<br /><em>Acting Without Attachment to Results</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">निष्काम</span>
+              <span className="tag tag-philosophy">Karma Yoga</span>
+              <span className="tag tag-shloka">7 Verses</span>
+              <span className="tag tag-chapter">Concept Guide</span>
+            </div>
+            <div className="card-desc">
+              Nishkama karma is not passivity. The Gita explicitly forbids inaction in the same verse it forbids attachment to results. What it actually means, why it is hard, and what changes when you practice it.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~9 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Gita on Anxiety (new deep-dive) */}
+        <a href="/blogs/bhagavad-gita-on-anxiety" className="article-card" data-mp-article="Bhagavad Gita On Anxiety">
+          <div className="card-thumb card-thumb-anxiety2">
+            <div className="card-chapter-badge">Topic Guide · Mental Peace</div>
+            <div className="card-thumb-title">What the Gita Says About Anxiety —<br /><em>9 Verses That Actually Help</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">मनस्</span>
+              <span className="tag tag-philosophy">Mental Peace</span>
+              <span className="tag tag-shloka">9 Verses</span>
+              <span className="tag tag-chapter">Deep Read</span>
+            </div>
+            <div className="card-desc">
+              The Gita opens with a panic attack. Arjuna&apos;s hands shake, his bow drops, his voice breaks. Krishna&apos;s 700-verse answer begins here. Nine specific verses on anxiety, the cascade from craving to collapse, and where to interrupt it.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~11 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Death and Soul */}
+        <a href="/blogs/bhagavad-gita-on-death-and-the-soul" className="article-card" data-mp-article="Bhagavad Gita On Death and Soul">
+          <div className="card-thumb card-thumb-death">
+            <div className="card-chapter-badge">Topic Guide · Chapter 2</div>
+            <div className="card-thumb-title">The Gita on Death and the Soul —<br /><em>What Actually Cannot Be Destroyed</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">आत्मन्</span>
+              <span className="tag tag-philosophy">Atman</span>
+              <span className="tag tag-shloka">BG 2.19–2.25</span>
+              <span className="tag tag-chapter">Concept Guide</span>
+            </div>
+            <div className="card-desc">
+              Weapons do not cut it. Fire does not burn it. Water does not wet it. Wind does not dry it. The Gita&apos;s first move is a structural claim about the nature of the self — and it changes everything that follows.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~9 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Dharma */}
+        <a href="/blogs/dharma-meaning-bhagavad-gita" className="article-card" data-mp-article="Dharma Meaning Bhagavad Gita">
+          <div className="card-thumb card-thumb-dharma">
+            <div className="card-chapter-badge">Concept Guide · Core Teaching</div>
+            <div className="card-thumb-title">Dharma in the Gita —<br /><em>What It Means and What It Doesn&apos;t</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">धर्म</span>
+              <span className="tag tag-philosophy">Dharma</span>
+              <span className="tag tag-shloka">5 Key Verses</span>
+              <span className="tag tag-chapter">Concept Guide</span>
+            </div>
+            <div className="card-desc">
+              Dharma appears 72 times in the Gita. It never quite means &quot;duty.&quot; Svadharma, sanatana dharma, the dharma-kshetra, and the final instruction to abandon all dharma: how they fit together.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~10 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Three Gunas */}
+        <a href="/blogs/sattva-rajas-tamas-three-gunas-bhagavad-gita" className="article-card" data-mp-article="Three Gunas Sattva Rajas Tamas">
+          <div className="card-thumb card-thumb-gunas">
+            <div className="card-chapter-badge">Concept Guide · Chapter 14</div>
+            <div className="card-thumb-title">Sattva, Rajas, Tamas —<br /><em>The Gita&apos;s Psychology of Inner States</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">गुण</span>
+              <span className="tag tag-philosophy">Three Gunas</span>
+              <span className="tag tag-shloka">Chapter 14</span>
+              <span className="tag tag-chapter">Concept Guide</span>
+            </div>
+            <div className="card-desc">
+              Why some mornings are clear, some restless, and some you cannot get off the couch. Sattva, rajas, tamas: the Gita&apos;s framework for reading your own inner states. And the state beyond all three.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~9 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* For Students */}
+        <a href="/blogs/bhagavad-gita-for-students" className="article-card" data-mp-article="Bhagavad Gita For Students">
+          <div className="card-thumb card-thumb-students">
+            <div className="card-chapter-badge">Topic Guide · For Students</div>
+            <div className="card-thumb-title">Bhagavad Gita for Students —<br /><em>9 Lessons on Focus, Failure &amp; Effort</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">अभ्यास</span>
+              <span className="tag tag-philosophy">Discipline</span>
+              <span className="tag tag-shloka">9 Lessons</span>
+              <span className="tag tag-chapter">Practical Guide</span>
+            </div>
+            <div className="card-desc">
+              The Gita was taught to someone who froze under pressure before the biggest test of his life. Nine lessons specifically for students: results anxiety, effort without attachment, self-mastery, and what to do after failure.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~9 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Gita vs Stoicism */}
+        <a href="/blogs/bhagavad-gita-vs-stoicism" className="article-card" data-mp-article="Bhagavad Gita vs Stoicism">
+          <div className="card-thumb card-thumb-stoic">
+            <div className="card-chapter-badge">Comparative Philosophy</div>
+            <div className="card-thumb-title">Bhagavad Gita vs Stoicism —<br /><em>9 Teachings That Keep Finding Each Other</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">समता</span>
+              <span className="tag tag-philosophy">Stoicism</span>
+              <span className="tag tag-shloka">9 Parallels</span>
+              <span className="tag tag-chapter">Comparison</span>
+            </div>
+            <div className="card-desc">
+              Marcus Aurelius and Krishna never met. They reached remarkably similar conclusions about action, equanimity, duty, and the self. Nine parallel teachings, and where the two traditions actually diverge.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~12 min read</span>
               <span className="card-arrow">Read →</span>
             </div>
           </div>

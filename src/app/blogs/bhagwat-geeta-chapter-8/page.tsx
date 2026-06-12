@@ -3,7 +3,7 @@ import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 8 Summary – Key Verses & Meaning (Akshara Brahma Yoga)",
-  description: "Bhagavad Gita Chapter 8 (Akshara Brahma Yoga), 28 verses on the imperishable Brahman, the moment of death, and the path beyond return. Sanskrit, Hindi & English.",
+  description: "Whatever you think of at the moment of death — that you become. Bhagavad Gita Chapter 8 on death, rebirth, and the imperishable Brahman. All 28 verses in Sanskrit, Hindi and English.",
   keywords: "bhagwat geeta chapter 8, bhagavad gita akshara brahma yoga, bhagwat geeta adhyay 8, death in bhagavad gita, brahma kalpa days nights, supreme abode gita, antakale ca mam eva smaran, mind at the moment of death gita, Akshara Brahma Yoga meaning, Bhagavad Gita 8.5 anta kale ca mam eva smaran, Bhagavad Gita 8.6 meaning, what is the supreme abode in Bhagavad Gita, Brahma's day and night Bhagavad Gita, om iti ekaksharam brahma",
   openGraph: {
     title: "Bhagavad Gita Chapter 8 Summary – Key Verses & Meaning (Akshara Brahma Yoga)",

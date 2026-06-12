@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Karma \u2014 What It Actually Means in the Bhagavad Gita | Wisdom",
-  description: "Karma doesn't mean 'what goes around comes around.' That's a greeting card. Here's what the Bhagavad Gita actually teaches about karma \u2014 and why the real definition is harder, and more useful.",
-  keywords: "karma meaning in bhagavad gita, what is karma, karma definition, bhagavad gita karma yoga, what does karma mean in hinduism, karma in gita, karma meaning hindi, karma actual meaning",
+  title: "Karma: The Real Meaning in the Bhagavad Gita (Not What You Think) | Wisdom",
+  description: "Karma is not cosmic payback. The Gita's Chapter 3 defines it precisely: act without attachment to results. Here's what nishkama karma and karma phala actually mean, with the exact verses.",
+  keywords: "karma meaning in bhagavad gita, what is karma, karma definition, bhagavad gita karma yoga, what does karma mean in hinduism, karma in gita, karma meaning hindi, karma actual meaning, nishkama karma, karma yoga chapter 3, karma phala meaning, bhagavad gita 2.47 meaning",
   openGraph: {
-    title: "Karma \u2014 What It Actually Means in the Bhagavad Gita | Wisdom",
-    description: "Karma doesn't mean what goes around comes around. Here's what the Bhagavad Gita actually teaches about karma \u2014 and why the real definition matters.",
+    title: "Karma: The Real Meaning in the Bhagavad Gita (Not What You Think) | Wisdom",
+    description: "Karma is not cosmic payback. Chapter 3 of the Gita defines it precisely: act without attachment to results. Here's what the verses actually say.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning",
     siteName: 'Wisdom',

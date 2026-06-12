@@ -49,6 +49,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.85,
     },
+    // June 2026 batch — 9 new topic/concept pages
+    ...[
+      'bhagavad-gita-2-47-karmanye-vadhikaraste',
+      'sthitaprajna-bhagavad-gita',
+      'nishkama-karma-bhagavad-gita',
+      'bhagavad-gita-on-anxiety',
+      'bhagavad-gita-on-death-and-the-soul',
+      'dharma-meaning-bhagavad-gita',
+      'sattva-rajas-tamas-three-gunas-bhagavad-gita',
+      'bhagavad-gita-for-students',
+      'bhagavad-gita-vs-stoicism',
+    ].map((slug) => ({
+      url: `${BASE}/blogs/${slug}`,
+      lastModified: new Date('2026-06-12'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.88,
+    })),
   ]
 
   // Chapter-study blog pages (the long-form per-chapter essays).

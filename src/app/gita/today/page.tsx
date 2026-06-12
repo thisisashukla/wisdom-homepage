@@ -15,9 +15,9 @@ import BlogTracker from '@/components/BlogTracker'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'Bhagavad Gita — Verse of the Day | Wisdom',
+  title: 'Hindu Verse of the Day — Bhagavad Gita | Wisdom',
   description:
-    'A new verse from the Bhagavad Gita each day. Sanskrit, Hindi, English, and the essence in a single line. Your daily anchor.',
+    'A new verse from the Bhagavad Gita every day. Sanskrit original, Hindi and English meaning, and the essence in a single line. Your daily Hindu practice.',
   alternates: {
     canonical: 'https://wisdomquotes.in/gita/today',
     languages: {

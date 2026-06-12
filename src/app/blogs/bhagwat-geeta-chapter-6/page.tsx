@@ -3,7 +3,7 @@ import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",
-  description: "Read Bhagavad Gita Chapter 6 (Dhyana Yoga), all 47 verses on meditation, the restless mind, and the lamp-in-windless-place. Sanskrit, Hindi, English & meaning.",
+  description: "The mind is harder to tame than the wind — here's how to do it. Bhagavad Gita Chapter 6 (Dhyana Yoga): Krishna's complete guide to meditation, the restless mind, and the lamp-in-windless-place. All 47 verses in Sanskrit, Hindi and English.",
   keywords: "bhagwat geeta chapter 6, bhagavad gita dhyana yoga, bhagwat geeta adhyay 6, lamp in windless place gita, uddharedatmanatmanam, abhyasa vairagya meaning, gita on meditation, restless mind gita, how to meditate bhagavad gita, Dhyana Yoga summary, Bhagavad Gita 6.5 meaning, Bhagavad Gita 6.34 the mind is like the wind, abhyasa vairagya meaning, lamp in windless place Bhagavad Gita, how to meditate according to Bhagavad Gita",
   openGraph: {
     title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",

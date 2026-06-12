@@ -916,7 +916,7 @@ export default function KrishnaThreePathsPage() {
           </div>
           <div className="insight">
             <div className="insight-label">Why this is the path, not just a tactic</div>
-            <div className="insight-text">Krishna&apos;s claim is large. He says unattached action is not just a healthier way to work: it is itself the road to the supreme. Action becomes spiritual when it stops being transactional. The bricklayer who lays the brick without demanding to see the cathedral is, at that moment, doing the same inner work as the contemplative who has renounced the world.</div>
+            <div className="insight-text">Krishna&apos;s claim is large. He says unattached action is not just a healthier way to work: it is itself the road to the supreme. Action becomes spiritual when it stops being transactional. The craftsman who shapes the stone without demanding to see the temple completed is, at that moment, doing the same inner work as the contemplative who has renounced the world.</div>
           </div>
           <div className="essence">Action done without grasping is itself the path.</div>
         </div>

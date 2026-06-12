@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 11 Summary – Key Verses & Meaning (Vishwarupa Yoga)",
-  description: "Bhagavad Gita Chapter 11 (Vishwarupa Darshana Yoga), 55 verses on Krishna's cosmic form, the thousand suns, and 'I am Time, destroyer of worlds' (11.32).",
-  keywords: "bhagwat geeta chapter 11, bhagavad gita vishwarupa darshana yoga, bhagwat geeta adhyay 11, kaloasmi loka kshaya krit pravriddho, thousand suns gita, cosmic form bhagavad gita, I am time the destroyer of worlds, nimitta matram bhava, Vishwarupa Darshana Yoga meaning, Bhagavad Gita 11.12 thousand suns, Bhagavad Gita 11.32 kalo asmi loka kshaya krit, I am Time the destroyer of worlds meaning, Bhagavad Gita 11.33 nimitta matram bhava, Krishna cosmic form Bhagavad Gita, Oppenheimer Bhagavad Gita quote",
+  title: "What Does Bhagavad Gita Chapter 11 Actually Show? | Wisdom",
+  description: "Chapter 11 is where Arjuna asks to see Krishna's true form and immediately regrets it. All 55 verses with Sanskrit, Hindi and English meaning, including 11.32 (the Oppenheimer verse) and 11.33.",
+  keywords: "bhagwat geeta chapter 11, bhagavad gita vishwarupa darshana yoga, bhagwat geeta adhyay 11, kaloasmi loka kshaya krit pravriddho, thousand suns gita, cosmic form bhagavad gita, I am time the destroyer of worlds, nimitta matram bhava, Vishwarupa Darshana Yoga meaning, Bhagavad Gita 11.12 thousand suns, Bhagavad Gita 11.32 kalo asmi loka kshaya krit, I am Time the destroyer of worlds meaning, Bhagavad Gita 11.33 nimitta matram bhava, Krishna cosmic form Bhagavad Gita, Oppenheimer Bhagavad Gita quote, Oppenheimer bhagavad gita verse, I am time the destroyer of worlds full context",
   openGraph: {
-    title: "Bhagavad Gita Chapter 11 Summary – Key Verses & Meaning (Vishwarupa Yoga)",
-    description: "Bhagavad Gita Chapter 11, the cosmic vision. A thousand suns. 'I am Time, the destroyer of worlds.' (11.32)",
+    title: "What Does Bhagavad Gita Chapter 11 Actually Show? | Wisdom",
+    description: "Arjuna asked to see Krishna's real form and immediately begged him to stop. All 55 verses explained, including the one Oppenheimer quoted at Trinity.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11",
     siteName: 'Wisdom',
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 11 Summary – Key Verses & Meaning (Vishwarupa Yoga)",
-    description: "Bhagavad Gita Chapter 11, the cosmic vision. A thousand suns. 'I am Time, the destroyer of worlds.' (11.32)",
+    title: "What Does Bhagavad Gita Chapter 11 Actually Show? | Wisdom",
+    description: "Arjuna asked to see Krishna's real form and immediately begged him to stop. All 55 verses explained, including the one Oppenheimer quoted at Trinity.",
     images: ["https://wisdomquotes.in/assets/chapter11.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11" },

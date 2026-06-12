@@ -330,33 +330,36 @@ const pageCSS = `
         margin: 48px 0;
       }
       .insights-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--gold); margin-bottom: 16px; }
-      .insights-list { list-style: none; display: flex; flex-direction: column; gap: 14px; counter-reset: insight-counter; }
+                  .insights-list { list-style: none; display: flex; flex-direction: column; gap: 0; counter-reset: insight-counter; }
       .insights-list li {
         counter-increment: insight-counter;
-        display: flex;
-        align-items: flex-start;
-        gap: 14px;
+        position: relative;
+        padding: 22px 0 22px 52px;
+        border-bottom: 1px solid var(--border);
         font-size: 14.5px;
         color: var(--text-dim);
-        line-height: 1.65;
+        line-height: 1.7;
       }
+      .insights-list li:last-child { border-bottom: none; padding-bottom: 0; }
       .insights-list li::before {
         content: counter(insight-counter);
-        font-size: 11px;
+        position: absolute;
+        left: 0;
+        top: 22px;
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
         font-weight: 700;
-        background: rgba(200, 136, 30, 0.15);
+        background: rgba(200, 136, 30, 0.12);
         color: var(--gold);
-        border: 1px solid rgba(200, 136, 30, 0.3);
-        width: 22px;
-        height: 22px;
-        border-radius: 6px;
+        border: 1px solid rgba(200, 136, 30, 0.35);
+        border-radius: 8px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        margin-top: 1px;
       }
-      .insights-list strong { color: var(--text); font-weight: 600; }
+      .insights-list strong { color: var(--text); font-weight: 600; display: block; margin-bottom: 5px; font-size: 15px; }
 
       /* ── VERSE TABLE ── */
       .verse-table {

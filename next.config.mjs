@@ -10,6 +10,17 @@ const nextConfig = {
   // blog URL so the browser/CDN cannot lock in another permanent redirect or
   // stale response in the future. (It does NOT clear cached 301s already in a
   // browser — those must be cleared client-side via hard refresh or incognito.)
+  async redirects() {
+    return [
+      // Google has indexed the old static-export .html URL; 301 to the clean canonical.
+      {
+        source: '/blogs/bhagwat-geeta-chapter-1.html',
+        destination: '/blogs/bhagwat-geeta-chapter-1',
+        permanent: true,
+      },
+    ]
+  },
+
   async headers() {
     return [
       {

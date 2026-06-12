@@ -2,17 +2,17 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "What the Bhagavad Gita Says About Anxiety, Stress & Mental Peace | Wisdom",
-  description: "The Bhagavad Gita was written for a man in the middle of a panic attack. Here's what it actually says about anxiety, fear, and the path to mental peace \u2014 beyond the Instagram quotes.",
-  keywords: "bhagavad gita anxiety, bhagavad gita mental peace, gita quotes for stress, bhagavad gita depression, what does gita say about worry, gita mental health, bhagavad gita peace of mind",
+  title: "What Does the Bhagavad Gita Say About Anxiety and Fear? | Wisdom",
+  description: "The Gita opens with Arjuna mid-panic attack: hands shaking, bow dropped, unable to breathe. Chapter 2 through 6 build a specific answer to anxiety, dread, and mental restlessness, verse by verse.",
+  keywords: "bhagavad gita anxiety, bhagavad gita mental peace, gita quotes for stress, bhagavad gita depression, what does gita say about worry, gita mental health, bhagavad gita peace of mind, bhagavad gita on stress, bhagavad gita on fear, bhagavad gita mental health, bhagavad gita 6.5 meaning, gita on overthinking",
   openGraph: {
-    title: "What the Bhagavad Gita Says About Anxiety, Stress & Mental Peace | Wisdom",
-    description: "The Bhagavad Gita was written for a man in the middle of a panic attack. Here's what it actually says about anxiety, fear, and the path to mental peace.",
+    title: "What Does the Bhagavad Gita Say About Anxiety and Fear? | Wisdom",
+    description: "The Gita opens with Arjuna mid-panic attack. What follows is a 700-verse answer to anxiety, dread, and mental restlessness. Here are the key verses.",
     type: 'article',
-    url: "https://wisdomquotes.in/blogs",
+    url: "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace",
     siteName: 'Wisdom',
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace" },
 }
 
 const pageCSS = `

@@ -2,15 +2,16 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: "The Bhagavad Gita's Complete Structure \u2014 How Krishna Builds His Argument Across 18 Chapters | Wisdom",
-  description: "The Bhagavad Gita isn't a collection of quotes. It's an argument \u2014 18 chapters, three acts, one devastating climax, and a final line that reframes everything. Here's how Krishna's discourse actually works, from Chapter 1's breakdown to 18.66's surrender.",
-  keywords: "bhagavad gita structure, bhagavad gita all chapters summary, bhagavad gita 18 chapters, how is bhagavad gita organised, bhagavad gita complete guide, bhagavad gita story arc, bhagavad gita vishwarupa, bhagavad gita chapter summary, gita 18.66 meaning, bhagavad gita arc",
+  title: "How the Bhagavad Gita Is Structured: All 18 Chapters Explained | Wisdom",
+  description: "The Gita is a single argument in 18 chapters: ethics, then cosmology, then devotion, then the final surrender of 18.66. Here is a summary of every chapter and how they connect into one arc.",
+  keywords: "bhagavad gita structure, bhagavad gita all chapters summary, bhagavad gita 18 chapters, how is bhagavad gita organised, bhagavad gita complete guide, bhagavad gita story arc, bhagavad gita vishwarupa, bhagavad gita chapter summary, gita 18.66 meaning, bhagavad gita arc, bhagavad gita 18 chapters summary, bhagavad gita storyline, bhagavad gita 18.66 meaning, bhagavad gita plot, bhagavad gita overview",
   openGraph: {
-    title: "The Bhagavad Gita's Complete Structure \u2014 How Krishna Builds His Argument Across 18 Chapters",
-    description: "The Gita isn't a quote wall. It's an argument built with the patience and precision of a great screenplay. Here's how it works \u2014 the setup, the escalation, the climax, and the quiet ending that lands hardest of all.",
+    title: "How the Bhagavad Gita Is Structured: All 18 Chapters Explained | Wisdom",
+    description: "18 chapters, one argument. The Gita moves from Arjuna's breakdown to 18.66, the line that changes everything. Here is every chapter summarized.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-complete-structure-all-chapters",
     siteName: 'Wisdom',
+    images: [{ url: 'https://wisdomquotes.in/assets/gita-montage.webp', width: 1200, height: 675, alt: 'The Bhagavad Gita across 18 chapters' }],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-complete-structure-all-chapters" },
 }
@@ -239,21 +240,36 @@ const pageCSS = `
         padding: 28px 32px; margin: 48px 0;
       }
       .insights-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--gold); margin-bottom: 16px; }
-      .insights-list { list-style: none; display: flex; flex-direction: column; gap: 14px; counter-reset: insight-counter; }
+                  .insights-list { list-style: none; display: flex; flex-direction: column; gap: 0; counter-reset: insight-counter; }
       .insights-list li {
-        counter-increment: insight-counter; display: flex;
-        align-items: flex-start; gap: 14px;
-        font-size: 14.5px; color: var(--text-dim); line-height: 1.65;
+        counter-increment: insight-counter;
+        position: relative;
+        padding: 22px 0 22px 52px;
+        border-bottom: 1px solid var(--border);
+        font-size: 14.5px;
+        color: var(--text-dim);
+        line-height: 1.7;
       }
+      .insights-list li:last-child { border-bottom: none; padding-bottom: 0; }
       .insights-list li::before {
-        content: counter(insight-counter); font-size: 11px; font-weight: 700;
-        background: rgba(200,136,30,0.15); color: var(--gold);
-        border: 1px solid rgba(200,136,30,0.3);
-        width: 22px; height: 22px; border-radius: 6px;
-        display: flex; align-items: center; justify-content: center;
-        flex-shrink: 0; margin-top: 1px;
+        content: counter(insight-counter);
+        position: absolute;
+        left: 0;
+        top: 22px;
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+        font-weight: 700;
+        background: rgba(200, 136, 30, 0.12);
+        color: var(--gold);
+        border: 1px solid rgba(200, 136, 30, 0.35);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
       }
-      .insights-list strong { color: var(--text); font-weight: 600; }
+      .insights-list strong { color: var(--text); font-weight: 600; display: block; margin-bottom: 5px; font-size: 15px; }
 
       /* FAQ */
       .faq-section {
@@ -425,9 +441,9 @@ const schemas = [
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://wisdomquotes.in/og-image.webp",
+    "url": "https://wisdomquotes.in/assets/gita-montage.webp",
     "width": 1200,
-    "height": 630
+    "height": 675
   },
   "datePublished": "2026-05-05",
   "dateModified": "2026-05-05",
@@ -577,8 +593,8 @@ export default function CompleteStructurePage() {
 
         <figure className="chapter-image">
           <img
-            src="/assets/chapter11.webp"
-            alt="The Vishwarupa — Krishna's cosmic universal form revealed to Arjuna in Bhagavad Gita Chapter 11"
+            src="/assets/gita-montage.webp"
+            alt="The Bhagavad Gita across 18 chapters — from Arjuna's collapse to the cosmic Vishwarupa to Krishna's final whispered teaching"
             width="1200"
             height="675"
             loading="eager"
