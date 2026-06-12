@@ -592,7 +592,6 @@ export default function DharmaMeaningPage() {
             height="675"
             loading="eager"
             fetchPriority="high"
-            onError={(e) => { (e.target as HTMLImageElement).src = '/og-image.webp' }}
           />
           <figcaption>Dharma: the teaching that holds the Gita together</figcaption>
         </figure>

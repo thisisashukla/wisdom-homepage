@@ -590,7 +590,6 @@ export default function ThreeGunasPage() {
           height="675"
           loading="eager"
           fetchPriority="high"
-          onError={(e) => { (e.target as HTMLImageElement).src = '/og-image.webp' }}
         />
         <figcaption>Chapter 14: The three strands woven through all of nature</figcaption>
       </figure>

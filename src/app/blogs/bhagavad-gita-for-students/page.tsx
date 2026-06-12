@@ -605,7 +605,6 @@ export default function GitaForStudentsPage() {
           height="675"
           loading="eager"
           fetchPriority="high"
-          onError={(e) => { (e.target as HTMLImageElement).src = '/og-image.webp' }}
         />
         <figcaption>Abhyasa: the practice of consistent effort, without attachment to the result</figcaption>
       </figure>
