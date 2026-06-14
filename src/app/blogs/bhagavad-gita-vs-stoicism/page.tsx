@@ -588,7 +588,7 @@ const schemas = [
         "name": "Did the Stoics influence the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Almost certainly not. The Bhagavad Gita is generally dated to somewhere between the 5th century BCE and the 2nd century CE. Stoicism was founded by Zeno of Citium around 300 BCE in Athens. While there was some contact between Greek and Indian philosophical traditions (especially after Alexander), no direct line of influence connects Stoicism to the Gita. The similarities are most likely independent convergence: different people asking the same questions about human flourishing and reaching similar answers."
+          "text": "Almost certainly not. The Bhagavad Gita is generally dated by mainstream scholarship to somewhere between the 5th century BCE and the 2nd century CE — though this refers to the text as compiled and preserved. Recent researchers like Nilesh Oak (When Did the Mahabharata War Happen?, 2011) use astronomical observations embedded in the Mahabharata to argue the underlying events and oral tradition are far older, potentially dating to around 5561 BCE. This remains an active area of inquiry rather than settled consensus. Stoicism was founded by Zeno of Citium around 300 BCE in Athens. While there was some contact between Greek and Indian philosophical traditions (especially after Alexander), no direct line of influence connects Stoicism to the Gita. The similarities are most likely independent convergence: different people asking the same questions about human flourishing and reaching similar answers."
         }
       },
       {
@@ -674,10 +674,10 @@ export default function GitaVsStoicismPage() {
 
       <h2>Brief Background</h2>
       <p>
-        Stoicism began with Zeno of Citium, who founded a school in Athens around 300 BCE. It was developed by Cleanthes, Chrysippus, and later popularized in Rome by Epictetus (a former slave) and Marcus Aurelius (an emperor). Stoicism teaches that the good life consists in living according to reason and nature, focusing on what is within your control, and accepting with equanimity everything that is not.
+        <a href="https://plato.stanford.edu/entries/stoicism/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Stoicism</a> began with Zeno of Citium, who founded a school in Athens around 300 BCE. It was developed by Cleanthes, Chrysippus, and later popularized in Rome by <a href="https://plato.stanford.edu/entries/epictetus/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus</a> (a former slave) and Marcus Aurelius (an emperor). Stoicism teaches that the good life consists in living according to reason and nature, focusing on what is within your control — what Epictetus called <em>ta eph&apos; hēmin</em> (things up to us) — and accepting with equanimity everything that is not.
       </p>
       <p>
-        The Bhagavad Gita is set within the Mahabharata. Its date is debated, but it was likely composed or finalized between 400 BCE and 200 CE. It records a conversation between the warrior Arjuna and his charioteer Krishna (an avatar of Vishnu) on the eve of a war. The core of Krishna&apos;s teaching is about the nature of action, duty, self, and liberation. It is one of the most widely read philosophical texts in human history.
+        The Bhagavad Gita is set within the Mahabharata. Its date is actively debated. Mainstream scholarship places the text&apos;s composition or final compilation between 400 BCE and 200 CE. However, recent researchers using astronomical methods have proposed significantly earlier dates for the underlying events. Nilesh Oak, in <em>When Did the Mahabharata War Happen?</em> (2011), cross-references the sky descriptions and planetary positions within the Mahabharata against historical astronomy, arriving at a date of around 5561 BCE for the war itself — suggesting the oral tradition that became the Gita is far older than the compiled text. This line of research is not yet part of the academic mainstream, but it represents a serious and growing body of inquiry. It records a conversation between the warrior Arjuna and his charioteer Krishna (an avatar of Vishnu) on the eve of a war. The core of Krishna&apos;s teaching is about the nature of action, duty, self, and liberation. It is one of the most widely read philosophical texts in human history.
       </p>
       <p>
         The two traditions almost certainly did not influence each other. What they share, they arrived at independently.
@@ -692,11 +692,11 @@ export default function GitaVsStoicismPage() {
 
       <div className="stoic-quote">
         <div className="quote-text">&ldquo;Some things are in our control and others not. Things in our control are opinion, pursuit, desire, aversion, and, in a word, whatever are our own actions. Things not in our control are body, reputation, command, and, in one word, whatever are not our own actions.&rdquo;</div>
-        <div className="quote-source">Epictetus, Enchiridion, I</div>
+        <div className="quote-source"><a href="https://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus, Enchiridion, I</a> (tr. Carter)</div>
       </div>
 
       <div className="shloka-card">
-        <div className="verse-number">Bhagavad Gita 2.47</div>
+        <div className="verse-number"><a href="https://sacred-texts.com/hin/gita/bg02.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.47</a></div>
         <div className="sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।</div>
         <div className="transliteration">karmaṇyevādhikāraste mā phaleṣu kadācana</div>
         <div className="meaning">
@@ -705,7 +705,7 @@ export default function GitaVsStoicismPage() {
         </div>
         <div className="insight">
           <div className="insight-label">The Parallel</div>
-          <div className="insight-text">The Gita maps almost exactly onto Epictetus&apos;s dichotomy. Action (karma) is yours. The fruit (phala) is not. Both traditions arrive at the same practical instruction: put all your attention and integrity into what you can do, and release your grip on the outcome. The Gita uses the language of duty; Epictetus uses the language of rationality. The prescription is identical.</div>
+          <div className="insight-text">The Gita maps almost exactly onto Epictetus&apos;s dichotomy. The Sanskrit is precise: <em>karmaṇi</em> (in action), <em>eva</em> (only), <em>adhikāraḥ</em> (your rightful domain) — <em>mā phaleṣu kadācana</em> (never in the fruits, not once). Action (<em>karma</em>) is yours. The fruit (<em>phala</em>) is not. And crucially, the verse adds a third instruction that is often missed: <em>mā te saṅgo&apos;stvakarmaṇi</em> — do not become attached to inaction either. Epictetus draws a line between internals and externals. The Gita draws the same line and then warns you not to use it as an excuse to stop acting altogether. Both traditions arrive at the same practical instruction: full effort, released grip.</div>
         </div>
       </div>
 
@@ -718,11 +718,11 @@ export default function GitaVsStoicismPage() {
 
       <div className="stoic-quote">
         <div className="quote-text">&ldquo;Never esteem anything as of advantage to you that will make you break your word or lose your self-respect.&rdquo;</div>
-        <div className="quote-source">Marcus Aurelius, Meditations, III.7</div>
+        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, III.7</a></div>
       </div>
 
       <p>
-        The Gita&apos;s nishkama karma, action without desire for the fruit, makes the same structural claim. You do not act in order to acquire something external. You act because the action is the right thing to do, because it is your dharma. The quality of the action is what matters. The external reward is incidental.
+        The Gita&apos;s <a href="https://www.wisdomlib.org/concept/nishkama-karma" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>nishkama karma</a>, action without desire for the fruit, makes the same structural claim. You do not act in order to acquire something external. You act because the action is the right thing to do, because it is your dharma. The quality of the action is what matters. The external reward is incidental.
       </p>
 
       <div className="comparison-row">
@@ -744,8 +744,8 @@ export default function GitaVsStoicismPage() {
       </p>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Confine yourself to the present.&rdquo;</div>
-        <div className="quote-source">Marcus Aurelius, Meditations, VIII.7</div>
+        <div className="quote-text">&ldquo;Wipe out the imagination. Stop pulling the strings. Confine yourself to the present.&rdquo;</div>
+        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VII.29</a> (tr. Hays)</div>
       </div>
 
       <p>
@@ -761,11 +761,11 @@ export default function GitaVsStoicismPage() {
 
       <div className="stoic-quote">
         <div className="quote-text">&ldquo;Remember that you are an actor in a drama, the character of which is determined by the author: if short, a short one; if long, a long one. If he wishes you to act the part of a poor man, see that you act it naturally; if the part of a lame man, or a magistrate, or a private person, do the same. For this is your duty, to act well the part that is given to you.&rdquo;</div>
-        <div className="quote-source">Epictetus, Enchiridion, XVII</div>
+        <div className="quote-source"><a href="https://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus, Enchiridion, XVII</a> (tr. Carter)</div>
       </div>
 
       <div className="shloka-card">
-        <div className="verse-number">Bhagavad Gita 3.35 and 18.47</div>
+        <div className="verse-number"><a href="https://sacred-texts.com/hin/gita/bg03.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 3.35</a> and <a href="https://sacred-texts.com/hin/gita/bg18.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>18.47</a></div>
         <div className="sanskrit">श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।</div>
         <div className="transliteration">śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt</div>
         <div className="meaning">
@@ -774,7 +774,7 @@ export default function GitaVsStoicismPage() {
         </div>
         <div className="insight">
           <div className="insight-label">The Parallel</div>
-          <div className="insight-text">Svadharma, your own duty in your own circumstances, maps closely to Epictetus&apos;s &quot;act the part given to you.&quot; Arjuna was trying to avoid his role as a warrior. Epictetus, born a slave, performed his role with such completeness that he became one of the most admired philosophers of his century. Both traditions say: you may not have chosen this role. Do it well. That is what you have.</div>
+          <div className="insight-text"><em>Svadharma</em> — your own duty in your own circumstances — maps closely to Epictetus&apos;s &quot;act the part given to you.&quot; The Gita states this twice, in slightly different registers. BG 3.35 (<em>śreyānsvadharmo viguṇaḥ</em>) says your own imperfect duty is better than another&apos;s well-executed one — and adds that <em>svadharme nidhanaṃ śreyaḥ</em>: dying in your own duty is preferable to following another&apos;s path. BG 18.47 repeats the first line but adds <em>svabhāvaniyataṃ karma</em>: action fixed by your own nature. The Gita&apos;s point is not merely social role (as older caste readings sometimes framed it) but alignment between action and nature. Epictetus, born a slave, performed his role with such completeness that he became one of the most admired philosophers of his century. Both traditions say: you may not have chosen this role. Do it with your whole nature. That is what you have.</div>
         </div>
       </div>
 
@@ -782,12 +782,12 @@ export default function GitaVsStoicismPage() {
       <div className="similarity-label">Similarity 5 of 9</div>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;The same mind in all circumstances.&rdquo;</div>
-        <div className="quote-source">Marcus Aurelius, Meditations, VI.2</div>
+        <div className="quote-text">&ldquo;Just that you do the right thing. The rest doesn&apos;t matter. Cold or warm. Tired or well-rested. Despised or honored. Dying — or busy with other assignments.&rdquo;</div>
+        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VI.2</a> (tr. Hays)</div>
       </div>
 
       <div className="shloka-card">
-        <div className="verse-number">Bhagavad Gita 2.38</div>
+        <div className="verse-number"><a href="https://sacred-texts.com/hin/gita/bg02.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.38</a></div>
         <div className="sanskrit">सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥</div>
         <div className="transliteration">sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||</div>
         <div className="meaning">
@@ -796,7 +796,7 @@ export default function GitaVsStoicismPage() {
         </div>
         <div className="insight">
           <div className="insight-label">The Parallel</div>
-          <div className="insight-text">Both Marcus and Krishna are asking for the same inner posture: steadiness regardless of outcome. This does not mean indifference to results, or pretending outcomes don&apos;t matter. It means that your inner state, your capacity to act well, your judgment, does not change depending on whether you win or lose. Both traditions treat this equanimity as a practice, not a personality trait.</div>
+          <div className="insight-text">Both Marcus and Krishna are asking for the same inner posture: steadiness regardless of outcome. The Sanskrit lists the pairs explicitly — <em>sukha-duḥkhe</em> (pleasure and pain), <em>lābhālābhau</em> (gain and loss), <em>jayājayau</em> (victory and defeat) — and asks you to hold them <em>same</em> (<em>same kṛtvā</em>). Not equally good. Not indifferent. Same. The Stoic equivalent is Marcus&apos;s word <em>eudaimonia</em> — flourishing — which the Stoics held does not come in degrees and cannot be added to or subtracted from by external events. Neither tradition is asking you to stop caring. Both are asking you to locate caring in the action rather than in what the action produces.</div>
         </div>
         <div className="essence">Same quality of mind in all circumstances.</div>
       </div>
@@ -809,13 +809,8 @@ export default function GitaVsStoicismPage() {
       </p>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;You have power over your mind, not outside events. Realize this, and you will find strength.&rdquo;</div>
-        <div className="quote-source">Marcus Aurelius, Meditations, VI.8</div>
-      </div>
-
-      <div className="stoic-quote">
         <div className="quote-text">&ldquo;Nowhere can man find a quieter or more untroubled retreat than in his own soul.&rdquo;</div>
-        <div className="quote-source">Marcus Aurelius, Meditations, IV.3</div>
+        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, IV.3</a> (tr. Farquharson)</div>
       </div>
 
       <p>
@@ -831,11 +826,11 @@ export default function GitaVsStoicismPage() {
 
       <div className="stoic-quote">
         <div className="quote-text">&ldquo;Think of yourself as dead. You have lived your life. Now take what&apos;s left and live it properly.&rdquo;</div>
-        <div className="quote-source">Marcus Aurelius, Meditations, VII.9</div>
+        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VII.56</a> (tr. Hays)</div>
       </div>
 
       <div className="shloka-card">
-        <div className="verse-number">Bhagavad Gita 2.19-20</div>
+        <div className="verse-number"><a href="https://sacred-texts.com/hin/gita/bg02.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.19–20</a></div>
         <div className="sanskrit">य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् । उभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥</div>
         <div className="transliteration">ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam | ubhau tau na vijānīto nāyaṃ hanti na hanyate ||</div>
         <div className="meaning">
@@ -844,7 +839,7 @@ export default function GitaVsStoicismPage() {
         </div>
         <div className="insight">
           <div className="insight-label">The Parallel and the Difference</div>
-          <div className="insight-text">Both traditions arrive at the same practical outcome: the fear of death should not dominate your choices. But the routes are different. The Gita grounds this in the metaphysics of the atman, the self is eternal and cannot actually die. Stoicism grounds it in reason and attitude: death is not an evil, it is simply the return of what was borrowed. The Stoic is rational about mortality. The Gita says mortality itself is, at the deepest level, an illusion.</div>
+          <div className="insight-text">Both traditions arrive at the same practical outcome: the fear of death should not dominate your choices. But the routes are very different. The Gita grounds this in a precise metaphysics of the atman. BG 2.20 piles up five Sanskrit terms for this: <em>aja</em> (unborn), <em>nitya</em> (eternal), <em>śāśvata</em> (everlasting), <em>purāṇa</em> (ancient, beginningless), and <em>avyaya</em> (without decay). The self is not merely persistent; it is constitutively outside the categories of birth and death. Stoicism reaches the same practical destination by a different road: death is not an evil because evil requires harm to the rational faculty, and death ends the rational faculty rather than harming it. Marcus&apos;s memento mori is a cognitive discipline for the living. The Gita&apos;s teaching is a metaphysical claim about what the self actually is. They agree on the behavioral prescription; they disagree, fundamentally, on why.</div>
         </div>
       </div>
 
@@ -856,8 +851,8 @@ export default function GitaVsStoicismPage() {
       </p>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;What injures the hive injures the bee.&rdquo;</div>
-        <div className="quote-source">Marcus Aurelius, Meditations, VI.54</div>
+        <div className="quote-text">&ldquo;That which is not good for the bee-hive cannot be good for the bee.&rdquo;</div>
+        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VI.54</a> (tr. Long)</div>
       </div>
 
       <p>
@@ -872,8 +867,8 @@ export default function GitaVsStoicismPage() {
       </p>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;When you wake up in the morning, tell yourself: the people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous and surly... But I have seen the beauty of good, and the ugliness of evil, and have recognized that the wrongdoer has a nature related to my own.&rdquo;</div>
-        <div className="quote-source">Marcus Aurelius, Meditations, II.1</div>
+        <div className="quote-text">&ldquo;When you wake up in the morning, tell yourself: the people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous and surly. They are like this because they can&apos;t tell good from evil. But I have seen the beauty of good, and the ugliness of evil, and have recognized that the wrongdoer has a nature related to my own — not of the same blood or birth, but the same mind, and possessing a share of the divine.&rdquo;</div>
+        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, II.1</a> (tr. Hays)</div>
       </div>
 
       <p>
@@ -916,6 +911,19 @@ export default function GitaVsStoicismPage() {
       <p>
         If you have found Stoicism useful and have not read the Gita, the second is likely to reward you. If you have read the Gita and find the Meditations unfamiliar, the overlay is closer than you might expect. The disagreements, where they exist, are worth sitting with too.
       </p>
+
+      <div className="highlight-box" style={{marginTop: '2rem'}}>
+        <h3>Primary Sources and Further Reading</h3>
+        <p>
+          <strong>Stoic texts:</strong> The <a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Meditations of Marcus Aurelius</a> (tr. George Long, Project Gutenberg) and the <a href="https://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Enchiridion of Epictetus</a> (tr. Elizabeth Carter, MIT Classics Archive) are available free online. For scholarly context on Stoic ethics and the doctrine of indifferents, see the <a href="https://plato.stanford.edu/entries/stoicism/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Stanford Encyclopedia of Philosophy entry on Stoicism</a> (Baltzly, 2023) and the <a href="https://plato.stanford.edu/entries/epictetus/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>entry on Epictetus</a> (Graver, 2025).
+        </p>
+        <p>
+          <strong>Bhagavad Gita:</strong> The full text is available at <a href="https://sacred-texts.com/hin/gita/index.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>sacred-texts.com</a> (Edwin Arnold&apos;s verse translation) and at <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Vedabase</a> (Prabhupada&apos;s translation with verse-by-verse purport). For the nishkama karma doctrine specifically, <a href="https://www.wisdomlib.org/concept/nishkama-karma" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Wisdomlib&apos;s cross-referenced entry</a> traces the concept across the Gita, Tilak&apos;s <em>Gita Rahasya</em>, and Vivekananda&apos;s lectures.
+        </p>
+        <p style={{fontSize: '0.85em', opacity: 0.7, marginTop: '0.75rem'}}>
+          <strong>Note on translations:</strong> Stoic quotes in this article draw on three English translations: George Long (1862, public domain), A.S.L. Farquharson (Oxford, 1944), and Gregory Hays (Modern Library, 2002). Where the translation used differs from the Project Gutenberg (Long) text, it is noted inline. The Gita translations follow the Sanskrit closely; <em>karma</em> (action), <em>phala</em> (fruit/result), <em>dharma</em> (duty/cosmic order), and <em>svadharma</em> (one&apos;s own duty) are used in their original sense throughout.
+        </p>
+      </div>
     </div>
 
     <div className="faq-section">
@@ -938,7 +946,7 @@ export default function GitaVsStoicismPage() {
       <div className="faq-item">
         <strong>Did the Stoics influence the Bhagavad Gita?</strong>
         <p>
-          Almost certainly not. The Gita was composed in India between roughly 400 BCE and 200 CE. Stoicism began in Athens around 300 BCE. While some contact existed between Greek and Indian thought after Alexander, no direct line connects these two traditions. The similarities are most likely independent convergence: different people asking the same questions about human action and reaching similar answers.
+          Almost certainly not. Mainstream scholarship places the Gita&apos;s compilation between roughly 400 BCE and 200 CE, though researchers like Nilesh Oak argue the astronomical evidence within the Mahabharata points to the war — and thus the oral tradition behind the Gita — dating as far back as 5561 BCE. Stoicism began in Athens around 300 BCE. While some contact existed between Greek and Indian thought after Alexander, no direct line connects these two traditions. The similarities are most likely independent convergence: different people asking the same questions about human action and reaching similar answers.
         </p>
       </div>
 
