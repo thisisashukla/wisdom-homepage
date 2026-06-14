@@ -696,7 +696,7 @@ export default function GitaVsStoicismPage() {
       </div>
 
       <div className="shloka-card">
-        <div className="verse-number"><a href="https://sacred-texts.com/hin/gita/bg02.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.47</a></div>
+        <div className="verse-number"><a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.47</a></div>
         <div className="sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।</div>
         <div className="transliteration">karmaṇyevādhikāraste mā phaleṣu kadācana</div>
         <div className="meaning">
@@ -765,7 +765,7 @@ export default function GitaVsStoicismPage() {
       </div>
 
       <div className="shloka-card">
-        <div className="verse-number"><a href="https://sacred-texts.com/hin/gita/bg03.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 3.35</a> and <a href="https://sacred-texts.com/hin/gita/bg18.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>18.47</a></div>
+        <div className="verse-number"><a href="/gita/chapter/3/verse/35" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 3.35</a> and <a href="/gita/chapter/18/verse/47" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>18.47</a></div>
         <div className="sanskrit">श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।</div>
         <div className="transliteration">śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt</div>
         <div className="meaning">
@@ -787,7 +787,7 @@ export default function GitaVsStoicismPage() {
       </div>
 
       <div className="shloka-card">
-        <div className="verse-number"><a href="https://sacred-texts.com/hin/gita/bg02.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.38</a></div>
+        <div className="verse-number"><a href="/gita/chapter/2/verse/38" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.38</a></div>
         <div className="sanskrit">सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥</div>
         <div className="transliteration">sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||</div>
         <div className="meaning">
@@ -830,7 +830,7 @@ export default function GitaVsStoicismPage() {
       </div>
 
       <div className="shloka-card">
-        <div className="verse-number"><a href="https://sacred-texts.com/hin/gita/bg02.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.19–20</a></div>
+        <div className="verse-number"><a href="/gita/chapter/2/verse/19" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.19–20</a></div>
         <div className="sanskrit">य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् । उभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥</div>
         <div className="transliteration">ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam | ubhau tau na vijānīto nāyaṃ hanti na hanyate ||</div>
         <div className="meaning">
@@ -918,7 +918,7 @@ export default function GitaVsStoicismPage() {
           <strong>Stoic texts:</strong> The <a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Meditations of Marcus Aurelius</a> (tr. George Long, Project Gutenberg) and the <a href="https://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Enchiridion of Epictetus</a> (tr. Elizabeth Carter, MIT Classics Archive) are available free online. For scholarly context on Stoic ethics and the doctrine of indifferents, see the <a href="https://plato.stanford.edu/entries/stoicism/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Stanford Encyclopedia of Philosophy entry on Stoicism</a> (Baltzly, 2023) and the <a href="https://plato.stanford.edu/entries/epictetus/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>entry on Epictetus</a> (Graver, 2025).
         </p>
         <p>
-          <strong>Bhagavad Gita:</strong> The full text is available at <a href="https://sacred-texts.com/hin/gita/index.htm" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>sacred-texts.com</a> (Edwin Arnold&apos;s verse translation) and at <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Vedabase</a> (Prabhupada&apos;s translation with verse-by-verse purport). For the nishkama karma doctrine specifically, <a href="https://www.wisdomlib.org/concept/nishkama-karma" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Wisdomlib&apos;s cross-referenced entry</a> traces the concept across the Gita, Tilak&apos;s <em>Gita Rahasya</em>, and Vivekananda&apos;s lectures.
+          <strong>Bhagavad Gita:</strong> Browse the full text verse by verse at <a href="/gita/chapter/2/verse/47" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>wisdomquotes.in/gita</a>, with Sanskrit, transliteration, and meaning for all 700 shlokas. The key verses discussed in this article: <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>BG 2.47</a> (nishkama karma), <a href="/gita/chapter/2/verse/38" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>BG 2.38</a> (equanimity), <a href="/gita/chapter/2/verse/19" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>BG 2.19–20</a> (the atman), <a href="/gita/chapter/3/verse/35" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>BG 3.35</a> and <a href="/gita/chapter/18/verse/47" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>BG 18.47</a> (svadharma). For the nishkama karma doctrine in depth, see our <a href="/blogs/nishkama-karma-bhagavad-gita" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>dedicated piece on nishkama karma</a>.
         </p>
         <p style={{fontSize: '0.85em', opacity: 0.7, marginTop: '0.75rem'}}>
           <strong>Note on translations:</strong> Stoic quotes in this article draw on three English translations: George Long (1862, public domain), A.S.L. Farquharson (Oxford, 1944), and Gregory Hays (Modern Library, 2002). Where the translation used differs from the Project Gutenberg (Long) text, it is noted inline. The Gita translations follow the Sanskrit closely; <em>karma</em> (action), <em>phala</em> (fruit/result), <em>dharma</em> (duty/cosmic order), and <em>svadharma</em> (one&apos;s own duty) are used in their original sense throughout.
