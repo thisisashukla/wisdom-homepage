@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 14 Summary – Key Verses & Meaning (Three Gunas Yoga)",
@@ -139,28 +140,6 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
-
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
@@ -262,7 +241,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -694,35 +672,13 @@ export default function ChapterPage14() {
           What is unusual about the Gita's framing here is that it gives no preference. Most spiritual traditions tell you to prefer light over dark, clarity over dullness, virtue over vice. The Gita acknowledges that sattva is closer to liberation than the other two, but warns immediately that even sattva binds. The goal is not to live always in the highest force. The goal is to be free of capture by any force, including the most pleasant one.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 14.5</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः ।<br />निबध्नन्ति महाबाहो देहे देहिनमव्ययम् ॥
-          </div>
-          <div className="shloka-iast">
-            sattvaṃ rajas tama iti guṇāḥ prakṛti-sambhavāḥ |<br />nibadhnanti mahā-bāho dehe dehinam avyayam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Sattva, rajas, and tamas, the three qualities born of nature, bind the imperishable self to the body, Arjuna.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why "bind" is the right verb</div>
-              <div className="shloka-insight">
-                The verse does not say the gunas <em>are</em> the self. It says they <em>bind</em> the self. The distinction matters. Whatever you are feeling (clear, restless, dull) is binding only because you have agreed to identify with it. The Gita is going to spend the chapter unpicking that agreement.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Nature's three forces keep the changeless one identified with the body."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 14.5"
+          speaker="Krishna"
+          sanskrit="सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः । निबध्नन्ति महाबाहो देहे देहिनमव्ययम् ॥"
+          iast="sattvaṃ rajas tama iti guṇāḥ prakṛti-sambhavāḥ | nibadhnanti mahā-bāho dehe dehinam avyayam ||"
+          essence="Nature's three forces keep the changeless one identified with the body."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -743,35 +699,13 @@ export default function ChapterPage14() {
           Anyone who has had a particularly good week of practice knows this trap. The state was pleasant. You started planning your life around producing more of it. The producing became its own anxiety. The Gita is saying, the state was real, but your relationship to it has now made it sticky. The freedom is not in having more sattva. It is in having sattva without grasping it. The same warning applies to spiritual knowledge. You learn something true; you start defining yourself by knowing it. The knowing becomes another rung of the same ladder, only now the ladder is invisible because the rung looks like the destination.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 14.6</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् ।<br />सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ॥
-          </div>
-          <div className="shloka-iast">
-            tatra sattvaṃ nirmalatvāt prakāśakam anāmayam |<br />sukha-saṅgena badhnāti jñāna-saṅgena cānagha ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Among these, sattva, being pure, luminous, and unafflicted, binds through attachment to happiness and to knowledge, sinless one.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why sattva is a more dangerous trap than tamas</div>
-              <div className="shloka-insight">
-                Tamas you can see is a problem. Sattva looks like progress. Therefore the attachment to sattva often goes unexamined for years. The Gita is the rare scripture that warns about this directly. The clarity is real. The grip on clarity is the bondage. You are looking for the right kind of life; the Gita reminds you that even the right kind of life can be held wrongly.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Even clarity becomes bondage when you cling to its pleasure."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 14.6"
+          speaker="Krishna"
+          sanskrit="तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् । सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ॥"
+          iast="tatra sattvaṃ nirmalatvāt prakāśakam anāmayam | sukha-saṅgena badhnāti jñāna-saṅgena cānagha ||"
+          essence="Even clarity becomes bondage when you cling to its pleasure."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -799,35 +733,13 @@ export default function ChapterPage14() {
           What is hard about rajas is that it looks productive. Sattva looks calm; tamas looks lazy; rajas looks like getting things done. From the outside, the rajasic life appears to be a successful life. The Gita's diagnosis is that the productivity is its own kind of capture. You are not driving the action; the craving is driving you. The verse is asking you to notice that the engine has become the driver. Stopping is not the answer (the Gita is not anti-action). Recognizing that the action is not yours, even while you do it, is the answer.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 14.7</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् ।<br />तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ॥
-          </div>
-          <div className="shloka-iast">
-            rajo rāgātmakaṃ viddhi tṛṣṇā-saṅga-samudbhavam |<br />tan nibadhnāti kaunteya karma-saṅgena dehinam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Know rajas as the force of passion, born of craving and attachment. It binds the embodied being through attachment to action, son of Kunti.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The verse that names modern overwork</div>
-              <div className="shloka-insight">
-                <em>Karma-saṅgena</em>: attachment to action. The Gita is naming, in one phrase, what modern productivity culture has not yet diagnosed. The doing is not the problem. The attachment to the doing is. You can have either the doing or the attachment. The Gita is asking you to choose the first without the second.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Craving turns action into a chain."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 14.7"
+          speaker="Krishna"
+          sanskrit="रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् । तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ॥"
+          iast="rajo rāgātmakaṃ viddhi tṛṣṇā-saṅga-samudbhavam | tan nibadhnāti kaunteya karma-saṅgena dehinam ||"
+          essence="Craving turns action into a chain."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -848,35 +760,16 @@ export default function ChapterPage14() {
           What makes tamas dangerous is that it does not announce itself. It feels like rest. It feels like deserved easing. It feels like "I'll start tomorrow." The verse is a careful warning. The thing pulling you down is not pulling violently. It is pulling so softly that you participate in it. Every time you choose comfort over the right action, every time you postpone the necessary conversation, every time you scroll for thirty more minutes when you could have slept, that is tamas, doing its quiet work. Naming it is the first step in stopping it.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 14.8</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् ।<br />प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ॥
-          </div>
-          <div className="shloka-iast">
-            tamas tv ajñāna-jaṃ viddhi mohanaṃ sarva-dehinām |<br />pramādālasya-nidrābhis tan nibadhnāti bhārata ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Know tamas as born of ignorance, deluding all embodied beings. It binds them through heedlessness, laziness, and sleep, Arjuna.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The three softest traps</div>
-              <div className="shloka-insight">
-                Heedlessness. Laziness. Sleep. None of them feel like a fall. Each one feels like a small kindness to yourself. The Gita's clarity is that the small kindnesses, accumulated, are how a life quietly gets lost. Tamas does not need to win in a dramatic moment. It wins in the unwatched ten minutes.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Confusion binds most through laziness, not force."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 14.8"
+          speaker="Krishna"
+          sanskrit="तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ॥"
+          iast="tamas tv ajñāna-jaṃ viddhi mohanaṃ sarva-dehinām | pramādālasya-nidrābhis tan nibadhnāti bhārata ||"
+          meaning="Know tamas as born of ignorance, deluding all embodied beings. It binds them through heedlessness, laziness, and sleep, Arjuna."
+          insightLabel="The three softest traps"
+          insight="Heedlessness. Laziness. Sleep. None of them feel like a fall. Each one feels like a small kindness to yourself. The Gita's clarity is that the small kindnesses, accumulated, are how a life quietly gets lost. Tamas does not need to win in a dramatic moment. It wins in the unwatched ten minutes."
+          essence="Confusion binds most through laziness, not force."
+        />
 
         <div className="highlight-box">
           <p>
@@ -903,65 +796,27 @@ export default function ChapterPage14() {
           Verse 14.17 condenses the diagnostic: from sattva comes knowledge; from rajas, greed; from tamas, negligence and delusion. Each force produces its characteristic outputs. Once you know the outputs, you can read backwards from your day. A day full of clear seeing, sattva was strong. A day full of wanting and rushing, rajas dominated. A day where nothing got done and nothing felt important, tamas had the floor. The Gita is teaching a kind of inner meteorology. You start to read your own weather.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 14.11</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते ।<br />ज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत ॥
-          </div>
-          <div className="shloka-iast">
-            sarva-dvāreṣu dehe'smin prakāśa upajāyate |<br />jñānaṃ yadā tadā vidyād vivṛddhaṃ sattvam ity uta ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                When light and clear understanding arise in all the gates of this body, know that sattva has grown strong.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What sattva actually feels like</div>
-              <div className="shloka-insight">
-                Not the spiritual high you imagine, but a kind of clear-eyed availability. The day looks crisp. Decisions are easier. The same situations that would have triggered you yesterday simply land and pass. The Gita is saying: when you notice this, recognise it as a state, not as an achievement. The state will pass too. Enjoying it without gripping it is the practice.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Inner brightness is the sign that clarity is taking over."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 14.11"
+          speaker="Krishna"
+          sanskrit="सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते । ज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत ॥"
+          iast="sarva-dvāreṣu dehe'smin prakāśa upajāyate | jñānaṃ yadā tadā vidyād vivṛddhaṃ sattvam ity uta ||"
+          meaning="When light and clear understanding arise in all the gates of this body, know that sattva has grown strong."
+          insightLabel="What sattva actually feels like"
+          insight="Not the spiritual high you imagine, but a kind of clear-eyed availability. The day looks crisp. Decisions are easier. The same situations that would have triggered you yesterday simply land and pass. The Gita is saying: when you notice this, recognise it as a state, not as an achievement. The state will pass too. Enjoying it without gripping it is the practice."
+          essence="Inner brightness is the sign that clarity is taking over."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 14.17</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च ।<br />प्रमादमोहौ तमसो भवतोऽज्ञानमेव च ॥
-          </div>
-          <div className="shloka-iast">
-            sattvāt sañjāyate jñānaṃ rajaso lobha eva ca |<br />pramāda-mohau tamaso bhavato'jñānam eva ca ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                From sattva comes knowledge; from rajas, greed; from tamas, heedlessness, delusion, and ignorance.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Read your day backwards</div>
-              <div className="shloka-insight">
-                If today produced clarity, sattva was strong. If today produced grasping and overwork, rajas led. If today produced fog and avoidance, tamas held the floor. The verse is a calibration tool. You do not need to guess the inner state. You can read it from the outputs.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Your mental weather has causes: clarity, craving, and confusion each grow from different qualities."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 14.17"
+          speaker="Krishna"
+          sanskrit="सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च । प्रमादमोहौ तमसो भवतोऽज्ञानमेव च ॥"
+          iast="sattvāt sañjāyate jñānaṃ rajaso lobha eva ca | pramāda-mohau tamaso bhavato'jñānam eva ca ||"
+          meaning="From sattva comes knowledge; from rajas, greed; from tamas, heedlessness, delusion, and ignorance."
+          insightLabel="Read your day backwards"
+          insight="If today produced clarity, sattva was strong. If today produced grasping and overwork, rajas led. If today produced fog and avoidance, tamas held the floor. The verse is a calibration tool. You do not need to guess the inner state. You can read it from the outputs."
+          essence="Your mental weather has causes: clarity, craving, and confusion each grow from different qualities."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -982,65 +837,27 @@ export default function ChapterPage14() {
           Notice what the portrait does not say. It does not say the gunas stop appearing. It does not say the person no longer experiences clarity, restlessness, or dullness. It says the person no longer reacts to the appearing and disappearing of these states. The states still arise. The reactivity has dropped. The freedom is not from the weather. It is from being captured by the weather. You can have a tamasic afternoon and not be defeated by it. You can have a sattvic morning and not chase it. The same is true of every other state. Freedom is the dropped grip, not the dropped weather.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 14.22</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रीभगवानुवाच<br />प्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव ।<br />न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति ॥
-          </div>
-          <div className="shloka-iast">
-            śrī bhagavān uvāca |<br />prakāśaṃ ca pravṛttiṃ ca moham eva ca pāṇḍava |<br />na dveṣṭi sampravṛttāni na nivṛttāni kāṅkṣati ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The Blessed One said: light, activity, and confusion, when they arise, the one beyond the gunas does not hate them; when they pass, does not long for them.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The two halves of the portrait</div>
-              <div className="shloka-insight">
-                <em>Na dveṣṭi … na kāṅkṣati</em>: does not hate, does not long for. The portrait is built on these two negations. The states arise; you do not push them away. The states pass; you do not chase them. The same posture toward all three. That is what "beyond" means here. Not above. Not absent. Just no longer captured.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Freedom begins when changing states stop controlling your response."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 14.22"
+          speaker="Krishna"
+          sanskrit="श्रीभगवानुवाच प्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव । न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति ॥"
+          iast="śrī bhagavān uvāca | prakāśaṃ ca pravṛttiṃ ca moham eva ca pāṇḍava | na dveṣṭi sampravṛttāni na nivṛttāni kāṅkṣati ||"
+          meaning="The Blessed One said: light, activity, and confusion, when they arise, the one beyond the gunas does not hate them; when they pass, does not long for them."
+          insightLabel="The two halves of the portrait"
+          insight="Na dveṣṭi … na kāṅkṣati: does not hate, does not long for. The portrait is built on these two negations. The states arise; you do not push them away. The states pass; you do not chase them. The same posture toward all three. That is what \"beyond\" means here. Not above. Not absent. Just no longer captured."
+          essence="Freedom begins when changing states stop controlling your response."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 14.24</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः ।<br />तुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः ॥
-          </div>
-          <div className="shloka-iast">
-            sama-duḥkha-sukhaḥ svasthaḥ sama-loṣṭāśma-kāñcanaḥ |<br />tulya-priyāpriyo dhīras tulya-nindātma-saṃstutiḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Equal in pleasure and pain, self-settled, equal to a clod of earth, a stone, and gold; equal in liked and disliked; steady; equal in blame and self-praise.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The behaviourist test</div>
-              <div className="shloka-insight">
-                The Gita gives you an external check. Watch how a person reacts to praise and to blame. Watch how they handle gain and loss. If their inner state is equally steady across both, they have moved beyond reactive attachment to the gunas. The test is not about beliefs. It is about behaviour under fluctuation. By that test, very few people are guṇātīta. But the direction is recognisable.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Steadiness means nothing external gets to decide your centre."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 14.24"
+          speaker="Krishna"
+          sanskrit="समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः । तुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः ॥"
+          iast="sama-duḥkha-sukhaḥ svasthaḥ sama-loṣṭāśma-kāñcanaḥ | tulya-priyāpriyo dhīras tulya-nindātma-saṃstutiḥ ||"
+          meaning="Equal in pleasure and pain, self-settled, equal to a clod of earth, a stone, and gold; equal in liked and disliked; steady; equal in blame and self-praise."
+          insightLabel="The behaviourist test"
+          insight="The Gita gives you an external check. Watch how a person reacts to praise and to blame. Watch how they handle gain and loss. If their inner state is equally steady across both, they have moved beyond reactive attachment to the gunas. The test is not about beliefs. It is about behaviour under fluctuation. By that test, very few people are guṇātīta. But the direction is recognisable."
+          essence="Steadiness means nothing external gets to decide your centre."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -1061,35 +878,16 @@ export default function ChapterPage14() {
           Why devotion? Because devotion gives the mind something to rest on that is outside the gunas. The gunas operate on what is inside the field, clarity, restlessness, dullness, but devotion is directed toward what is outside the field altogether. When attention is genuinely placed on the Divine, the gunas continue to come and go in their familiar patterns, but the centre of identification has shifted. You are no longer being moved by the weather, because your inner centre has moved to higher ground. The chapter is saying that this is the practical way through, not analysis of the gunas (which the chapter has just given), but devotion that rests beyond them.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 14.26</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            मां च योऽव्यभिचारेण भक्ितयोगेन सेवते ।<br />स गुणान्समतीत्यैतान्ब्रह्मभूयाय कल्पते ॥
-          </div>
-          <div className="shloka-iast">
-            māṃ ca yo'vyabhicāreṇa bhakti-yogena sevate |<br />sa guṇān samatītyaitān brahma-bhūyāya kalpate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The one who serves me with unwavering devotion goes beyond these gunas and becomes fit for union with Brahman.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why analysis is not enough</div>
-              <div className="shloka-insight">
-                You can study the gunas for years and still be captured by them. Diagnosis is not the same as freedom. The verse names the actual mechanism of release, devotion that does not waver. The unwavering part matters. Intermittent devotion does not lift you out, because between the spikes you fall back into capture. The continuity of attention is what does the work.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Steady devotion can carry you beyond the forces that shape ordinary life."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 14.26"
+          speaker="Krishna"
+          sanskrit="मां च योऽव्यभिचारेण भक्ितयोगेन सेवते । स गुणान्समतीत्यैतान्ब्रह्मभूयाय कल्पते ॥"
+          iast="māṃ ca yo'vyabhicāreṇa bhakti-yogena sevate | sa guṇān samatītyaitān brahma-bhūyāya kalpate ||"
+          meaning="The one who serves me with unwavering devotion goes beyond these gunas and becomes fit for union with Brahman."
+          insightLabel="Why analysis is not enough"
+          insight="You can study the gunas for years and still be captured by them. Diagnosis is not the same as freedom. The verse names the actual mechanism of release, devotion that does not waver. The unwavering part matters. Intermittent devotion does not lift you out, because between the spikes you fall back into capture. The continuity of attention is what does the work."
+          essence="Steady devotion can carry you beyond the forces that shape ordinary life."
+        />
 
         <div className="pull-quote">
           <blockquote>

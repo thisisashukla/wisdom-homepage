@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "What the Bhagavad Gita Says About Anxiety: 9 Verses That Help | Wisdom",
@@ -197,96 +198,6 @@ const pageCSS = `
         p {
             margin-bottom: 1.5rem;
             color: var(--text-dim);
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-
-        .shloka-card:hover {
-            background: var(--bg-card-hover);
-        }
-
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .meaning-text {
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .insight-text {
-            color: var(--text-dim);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -645,20 +556,14 @@ export default function GitaOnAnxietyPage() {
           Krishna&apos;s first move is not reassurance. It is redirection of attention. He points to the nature of experience itself.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.14</div>
-          <div className="sanskrit">मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥</div>
-          <div className="transliteration">mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ | āgamāpāyino&apos;nityāstāṃstitikṣasva bhārata ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">The things you feel through your senses, like hot and cold or comfort and discomfort, are just momentary and will pass. Arjuna, be patient and endure them.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">It inspires the practice of titiksha, patient endurance and equanimity, helping you stay stable no matter what sensations or feelings arise. This is not a command to suppress emotion. It is an observation about impermanence: the thing producing the fear, the discomfort, the dread, will not stay. Today, we often react to uncomfortable situations, whether a stressful meeting, an argument, or physical discomfort. This verse reminds us not to get carried away by these feelings but to patiently allow them to pass.</div>
-          </div>
-          <div className="essence">All experiences, pleasant or unpleasant, are fleeting. Develop titiksha, patient endurance.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.14"
+          sanskrit="मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥"
+          iast="mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ | āgamāpāyino'nityāstāṃstitikṣasva bhārata ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="All experiences, pleasant or unpleasant, are fleeting. Develop titiksha, patient endurance."
+        />
 
         <p>
           The word titiksha is important here. It does not mean ignore or suppress. It means bear with patience, endure without being consumed. The Gita is not asking Arjuna to pretend the fear is not there. It is asking him to hold it without being dissolved by it.
@@ -716,55 +621,37 @@ export default function GitaOnAnxietyPage() {
           This is what happened to Arjuna in Chapter 1. He had been dwelling on the consequences of the battle. Attachment to his relatives, to his own identity as a good person who does not harm family, had hardened into a craving: I must not do this. When that craving met the reality that he was going to have to act anyway, the cascade followed. By the time Krishna speaks, Arjuna&apos;s discernment is gone. He cannot think. That is why a philosophical dialogue is necessary: he needs his buddhi restored before he can act.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.65</div>
-          <div className="sanskrit">प्रसादे सर्वदुःखानां हानिरस्योपजायते । प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते ॥</div>
-          <div className="transliteration">prasāde sarvaduḥkhānāṃ hānirasyopajāyate | prasannacetaso hyāśu buddhiḥ paryavatiṣṭhate ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">When the mind and heart are pure and steady, all sorrow disappears, and your intelligence naturally settles in the highest reality.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">Purifying your chitta through self-restraint and balance brings emotional resilience and sharpness of insight. When prasada arises, it dissolves all distress. When the mind is peaceful and free from agitation, your buddhi (discriminative intelligence) easily and quickly becomes steady. Today, when overwhelmed by stress, emotional ups and downs, or confusion, this teaching reminds us that by practicing self-mastery and keeping the mind calm, clarity and wise decision-making return.</div>
-          </div>
-          <div className="essence">Clarity within dissolves sorrow and brings lasting wisdom.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.65"
+          sanskrit="प्रसादे सर्वदुःखानां हानिरस्योपजायते । प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते ॥"
+          iast="prasāde sarvaduḥkhānāṃ hānirasyopajāyate | prasannacetaso hyāśu buddhiḥ paryavatiṣṭhate ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Clarity within dissolves sorrow and brings lasting wisdom."
+        />
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.66</div>
-          <div className="sanskrit">नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना । न चाभावयतः शान्तिरशान्तस्य कुतः सुखम् ॥</div>
-          <div className="transliteration">nāsti buddhirayuktasya na cāyuktasya bhāvanā | na cābhāvayataḥ śāntiraśāntasya kutaḥ sukham ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">If you do not have control over your senses and mind, your thinking is unclear, you cannot develop true intention, and without this, you will not find peace or lasting happiness.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">Building the ability to pause before reacting and keeping the senses in check leads to a clear mind, better decision-making, and inner harmony. The sequence here is exact: without inner discipline, no clarity. Without clarity, no shanti. Without shanti, no sukha. This is not a moral prescription. It is a causal description. In today&apos;s world, distractions are everywhere. This verse reminds us that happiness doesn&apos;t come from chasing every impulse but from inner discipline.</div>
-          </div>
-          <div className="essence">Sukha, true happiness, is born from a peaceful and disciplined inner world.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.66"
+          sanskrit="नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना । न चाभावयतः शान्तिरशान्तस्य कुतः सुखम् ॥"
+          iast="nāsti buddhirayuktasya na cāyuktasya bhāvanā | na cābhāvayataḥ śāntiraśāntasya kutaḥ sukham ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Sukha, true happiness, is born from a peaceful and disciplined inner world."
+        />
 
         <h2>You Are Your Own Friend and Enemy</h2>
         <p>
           Chapter 6 contains a verse that cuts directly against the usual way people relate to their anxiety. It is common to experience anxiety as something that happens to you, something external or at least involuntary. The Gita offers a different framing.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 6.5</div>
-          <div className="sanskrit">उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥</div>
-          <div className="transliteration">uddharedātmanā&apos;&apos;tmānaṃ nātmānamavasādayet | ātmaiva hyātmano bandhurātmaiva ripurātmanaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Uplift yourself through your own actions and thoughts. Do not let yourself fall, because you alone are your own friend and also your own enemy.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">This verse teaches self-leadership and responsibility. Practicing self-awareness and positive self-dialogue can help us break past self-made barriers and uplift our own spirit. When facing stress, failure, or low confidence, we often blame others or external situations. This shloka reminds us to strengthen our mind, believe in our own efforts, and practice self-compassion. Our real progress depends on our own inner sankalpa (resolve) and actions.</div>
-          </div>
-          <div className="essence">You are your greatest mitra and your own shatru. Choose upliftment.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 6.5"
+          sanskrit="उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥"
+          iast="uddharedātmanā''tmānaṃ nātmānamavasādayet | ātmaiva hyātmano bandhurātmaiva ripurātmanaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="You are your greatest mitra and your own shatru. Choose upliftment."
+        />
 
         <p>
           This is not a statement of blame. It is a statement of agency. The same mind that produces anxiety can produce steadiness. The question is what you do with it. Arjuna&apos;s mind collapsed because it was running a particular pattern. That pattern can be changed. You are, in the Gita&apos;s framing, capable of both the destruction and the rescue of your own clarity.
@@ -781,40 +668,28 @@ export default function GitaOnAnxietyPage() {
           BG 12.15 describes what a person looks like when prasada is the operating condition.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 12.15</div>
-          <div className="sanskrit">यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः । हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः ॥</div>
-          <div className="transliteration">yasmānnodvijate loko lokānnodvijate ca yaḥ | harṣāmarṣabhayodvegairmukto yaḥ sa ca me priyaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">A person who does not cause agitation to others, is not disturbed by others, and remains free from excitement, anger, envy, fear, and restlessness, is beloved to Bhagavan.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">This verse guides us to develop emotional steadiness and a compassionate approach toward others, skills that enhance psychological resilience and deepen inner tranquility. The person described here is not emotionless. They are free from the specific torments: harsha (excessive excitement), amarsha (agitation), bhaya (fear), udvega (anxiety). Staying free from emotional turbulence preserves mental well-being and spreads a sense of peace.</div>
-          </div>
-          <div className="essence">Calmness toward all beings leads to inner harmony and endears us to the Divine.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 12.15"
+          sanskrit="यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः । हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः ॥"
+          iast="yasmānnodvijate loko lokānnodvijate ca yaḥ | harṣāmarṣabhayodvegairmukto yaḥ sa ca me priyaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Calmness toward all beings leads to inner harmony and endears us to the Divine."
+        />
 
         <h2>The Practice Verse: The Mind Is Genuinely Hard</h2>
         <p>
           This is the verse that earns trust, because Krishna admits the obvious. Arjuna, in Chapter 6, has complained that the mind is too restless to control. He is right. Krishna agrees.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 6.35</div>
-          <div className="sanskrit">श्री भगवानुवाच असंशयं महाबाहो मनो दुर्निग्रहं चलं । अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ॥</div>
-          <div className="transliteration">śrī bhagavānuvāca asaṃśayaṃ mahābāho mano durnigrahaṃ calaṃ | abhyāsena tu kaunteya vairāgyeṇa ca gṛhyate ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Shri Krishna says: Yes, Arjuna, you are right. The mind is restless and hard to control. But it can be brought under control through regular practice (abhyasa) and detachment (vairagya).</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">This verse builds patience and discipline. It encourages us to keep showing up, accepting that mastery over the mind is a gradual process, not an instant achievement. Through regular habits like meditation, mindful study, or focusing on duty without clinging to results, you can train your mind for focus and calm even in busy or difficult times. The reassurance here is not that it is easy. It is that it is possible.</div>
-          </div>
-          <div className="essence">With steady practice and detachment, even the restless mind becomes peaceful.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 6.35"
+          sanskrit="श्री भगवानुवाच असंशयं महाबाहो मनो दुर्निग्रहं चलं । अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ॥"
+          iast="śrī bhagavānuvāca asaṃśayaṃ mahābāho mano durnigrahaṃ calaṃ | abhyāsena tu kaunteya vairāgyeṇa ca gṛhyate ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="With steady practice and detachment, even the restless mind becomes peaceful."
+        />
 
         <p>
           Abhyasa means regular practice, showing up again and again. Vairagya means detachment or non-attachment, loosening the grip of craving. The Gita does not promise quick results. It says these two things, practiced over time, work. That is a more honest claim than most systems make, and it is why the Gita has been read for this reason for a long time.
@@ -849,20 +724,14 @@ export default function GitaOnAnxietyPage() {
           BG 2.38 offers the direct instruction for this state. Treat gain and loss, success and failure, as equal, then act. That is not indifference. It is the specific internal condition that allows you to act without being owned by what might happen.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.38</div>
-          <div className="sanskrit">सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥</div>
-          <div className="transliteration">sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Keep your mind steady in both good and bad times, whether you win or lose or gain or lose something. Then, do your duty without fear of wrongdoing.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">This verse builds the internal skill of samatva, cultivating emotional resilience, steady focus, and performing one&apos;s work without obsession over results. This leads to a calmer, steadier mind. In daily life, we often feel stressed by wins and losses at work or in relationships. This teaching encourages doing our best without getting overly affected by results or others&apos; opinions.</div>
-          </div>
-          <div className="essence">Do your kartavya with a balanced mind, unaffected by external outcomes.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.38"
+          sanskrit="सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥"
+          iast="sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Do your kartavya with a balanced mind, unaffected by external outcomes."
+        />
 
         <p>
           Samatva, the equanimity described here, is not a destination. It is a practice. The Gita does not promise that Arjuna will feel fine immediately. It gives him a different way to hold the situation, and then, across 17 more chapters, fills in the reasoning that supports that way of holding it.

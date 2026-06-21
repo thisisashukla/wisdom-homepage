@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 4 Summary \u2013 Key Verses & Meaning (Jnana Karma Yoga)",
@@ -238,52 +239,6 @@ const pageCSS = `
       .toc-list a:hover { color: var(--gold-light); }
 
       /* ── SHLOKA CARD ── */
-      .shloka-card {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        overflow: hidden;
-        margin: 36px 0;
-      }
-      .shloka-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 12px 22px;
-        border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05);
-      }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit {
-        padding: 24px 22px 16px;
-        font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px;
-        line-height: 1.75;
-        color: var(--gold-light);
-        border-bottom: 1px solid var(--border);
-      }
-      .shloka-iast {
-        padding: 12px 22px 16px;
-        font-size: 12.5px;
-        line-height: 1.7;
-        color: var(--text-dimmer);
-        border-bottom: 1px solid var(--border);
-        font-style: italic;
-      }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence {
-        padding: 14px 22px;
-        background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border);
-        font-family: "Playfair Display", serif;
-        font-style: italic;
-        font-size: 15px;
-        color: var(--text-dim);
-      }
 
       /* ── PULL QUOTE ── */
       .pull-quote {
@@ -572,7 +527,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -808,66 +762,25 @@ export default function ChapterFourPage() {
         </p>
 
         {/* SHLOKA 4.7 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 4.7</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यदा यदा हि धर्मस्य ग्लानिर्भवति भारत ।<br />अभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम् ॥
-          </div>
-          <div className="shloka-iast">
-            yadā yadā hi dharmasya glānirbhavati bhārata |<br />abhyutthānamadharmasya tadā''tmānaṃ sṛjāmyaham ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Whenever there is a decline in righteousness (dharma) and an increase in unrighteousness (adharma), O Arjuna, I manifest myself.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What it reveals</div>
-              <div className="shloka-insight">
-                This verse is not just a promise about the past, it is a claim about how existence is structured. Goodness and justice are not accidental. They have a guardian. The verse offers a frame for understanding dark historical periods not as anomalies but as conditions that precede renewal.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Divine support arrives whenever goodness is threatened, trust in restoration."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.7"
+          speaker="Krishna"
+          sanskrit="यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम् ॥"
+          iast="yadā yadā hi dharmasya glānirbhavati bhārata | abhyutthānamadharmasya tadā''tmānaṃ sṛjāmyaham ||"
+          essence="Divine support arrives whenever goodness is threatened, trust in restoration."
+        />
 
         {/* SHLOKA 4.8 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 4.8</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            परित्राणाय साधूनां विनाशाय च दुष्कृताम् ।<br />धर्मसंस्थापनार्थाय संभवामि युगे युगे ॥
-          </div>
-          <div className="shloka-iast">
-            paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām |<br />dharmasaṃsthāpanārthāya saṃbhavāmi yuge yuge ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                To protect the righteous, to destroy the wicked, and to re-establish dharma, I am born age after age.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The deeper dimension</div>
-              <div className="shloka-insight">
-                The pairing with 4.7 is important. The divine doesn't just appear for the protection of the good, it also appears for the destruction of the harmful and the restoration of the moral order. These three purposes are inseparable. The verse tells you what divine protection actually looks like: it requires the end of corruption.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Goodness will always be supported; righteousness never goes unprotected."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.8"
+          speaker="Krishna"
+          sanskrit="परित्राणाय साधूनां विनाशाय च दुष्कृताम् । धर्मसंस्थापनार्थाय संभवामि युगे युगे ॥"
+          iast="paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām | dharmasaṃsthāpanārthāya saṃbhavāmi yuge yuge ||"
+          meaning="To protect the righteous, to destroy the wicked, and to re-establish dharma, I am born age after age."
+          insightLabel="The deeper dimension"
+          insight="The pairing with 4.7 is important. The divine doesn't just appear for the protection of the good, it also appears for the destruction of the harmful and the restoration of the moral order. These three purposes are inseparable. The verse tells you what divine protection actually looks like: it requires the end of corruption."
+          essence="Goodness will always be supported; righteousness never goes unprotected."
+        />
 
         <p>
           What makes these verses so powerful is their matter-of-factness. Krishna doesn't claim special status for the moment Arjuna is living through. He's saying: this is how the cosmos is organized. When the moral order declines, correction inevitably follows. The Wisdom app brings this teaching to the foreground in your daily practice, these verses appear regularly because they speak to something we need to remember when historical darkness feels permanent.
@@ -889,35 +802,16 @@ export default function ChapterFourPage() {
         </p>
 
         {/* SHLOKA 4.9 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 4.9</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः ।<br />त्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन ॥
-          </div>
-          <div className="shloka-iast">
-            janma karma ca me divyamevaṃ yo vetti tattvataḥ |<br />tyaktvā dehaṃ punarjanma naiti māmeti so'rjuna ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                One who truly knows the divine nature of my birth and activities does not take birth again after leaving this body but comes to me, O Arjuna.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The core teaching</div>
-              <div className="shloka-insight">
-                Understanding the divine nature of action, not just what is done, but the consciousness behind it, is itself liberating. Knowledge here is not intellectual. It is recognition. It's seeing that the distinction between divine and human action dissolves when you understand consciousness itself.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Knowing the divine nature of true wisdom and action brings ultimate freedom."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.9"
+          speaker="Krishna"
+          sanskrit="जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः । त्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन ॥"
+          iast="janma karma ca me divyamevaṃ yo vetti tattvataḥ | tyaktvā dehaṃ punarjanma naiti māmeti so'rjuna ||"
+          meaning="One who truly knows the divine nature of my birth and activities does not take birth again after leaving this body but comes to me, O Arjuna."
+          insightLabel="The core teaching"
+          insight="Understanding the divine nature of action, not just what is done, but the consciousness behind it, is itself liberating. Knowledge here is not intellectual. It is recognition. It's seeing that the distinction between divine and human action dissolves when you understand consciousness itself."
+          essence="Knowing the divine nature of true wisdom and action brings ultimate freedom."
+        />
 
         <div className="highlight-box">
           <p>
@@ -941,35 +835,16 @@ export default function ChapterFourPage() {
         </p>
 
         {/* SHLOKA 4.33 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 4.33</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप ।<br />सर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते ॥
-          </div>
-          <div className="shloka-iast">
-            śreyāndravyamayādyajñājjñānayajñaḥ parantapa |<br />sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                O destroyer of enemies, the sacrifice of knowledge is superior to the sacrifice of material things. All action in its entirety finds its culmination in wisdom, O Arjuna.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why this matters</div>
-              <div className="shloka-insight">
-                Every action, if pursued far enough and deeply enough, eventually asks: but why? The chain of "why" always leads to questions about meaning, identity, and ultimate value. The Gita calls this endpoint jnana, wisdom. Action without wisdom is activity without direction. Wisdom is what completes it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Wisdom is the highest offering, it transforms and completes all actions."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.33"
+          speaker="Krishna"
+          sanskrit="श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप । सर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते ॥"
+          iast="śreyāndravyamayādyajñājjñānayajñaḥ parantapa | sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate ||"
+          meaning="O destroyer of enemies, the sacrifice of knowledge is superior to the sacrifice of material things. All action in its entirety finds its culmination in wisdom, O Arjuna."
+          insightLabel="Why this matters"
+          insight="Every action, if pursued far enough and deeply enough, eventually asks: but why? The chain of \"why\" always leads to questions about meaning, identity, and ultimate value. The Gita calls this endpoint jnana, wisdom. Action without wisdom is activity without direction. Wisdom is what completes it."
+          essence="Wisdom is the highest offering, it transforms and completes all actions."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -994,35 +869,16 @@ export default function ChapterFourPage() {
         </p>
 
         {/* SHLOKA 4.34 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 4.34</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया ।<br />उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥
-          </div>
-          <div className="shloka-iast">
-            tadviddhi praṇipātena paripraśnena sevayā |<br />upadekṣyanti te jñānaṃ jñāninastattvadarśinaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Know that wisdom by prostrating yourself (humility), by sincere questioning, and by service. The wise seers of truth will impart knowledge to you.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The framework</div>
-              <div className="shloka-insight">
-                Three requirements for real learning: prostrating (genuine humility, no arrogance), sincere questioning (not challenges or debate tactics, but authentic inquiry), and service (being present, contributing, not just consuming). This is the Gita's model for education. The teacher doesn't distribute wisdom to anyone who asks. They share it with those who arrive with empty hands and open hearts.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "True knowledge unfolds in the presence of humility, service, and honest inquiry."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.34"
+          speaker="Krishna"
+          sanskrit="तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया । उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥"
+          iast="tadviddhi praṇipātena paripraśnena sevayā | upadekṣyanti te jñānaṃ jñāninastattvadarśinaḥ ||"
+          meaning="Know that wisdom by prostrating yourself (humility), by sincere questioning, and by service. The wise seers of truth will impart knowledge to you."
+          insightLabel="The framework"
+          insight="Three requirements for real learning: prostrating (genuine humility, no arrogance), sincere questioning (not challenges or debate tactics, but authentic inquiry), and service (being present, contributing, not just consuming). This is the Gita's model for education. The teacher doesn't distribute wisdom to anyone who asks. They share it with those who arrive with empty hands and open hearts."
+          essence="True knowledge unfolds in the presence of humility, service, and honest inquiry."
+        />
 
         <p>
           This verse has shaped education in the Hindu tradition for millennia. It's why the guru-disciple relationship is structured as it is. The teacher is looking for three things: evidence that you're willing to let go of your ego, evidence that you're genuinely curious rather than argumentative, and evidence that you're willing to contribute to the teaching community, not just extract from it.
@@ -1044,66 +900,28 @@ export default function ChapterFourPage() {
         </p>
 
         {/* SHLOKA 4.37 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 4.37</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन ।<br />ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥
-          </div>
-          <div className="shloka-iast">
-            yathaidhāṃsi samiddho'gnirbhasmasātkurute'rjuna |<br />jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                As a blazing fire reduces wood to ashes, O Arjuna, so the fire of knowledge reduces all karma to ashes.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The radical claim</div>
-              <div className="shloka-insight">
-                This is one of the Gita's most striking metaphors. The fire of wisdom doesn't gradually neutralize karma, it burns it entirely. The implication: understanding something fully, at its root, dissolves its hold on you. You don't heal your past through effort. You dissolve it through understanding.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Knowledge is the purifier, it burns away all past karma."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.37"
+          speaker="Krishna"
+          sanskrit="यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन । ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥"
+          iast="yathaidhāṃsi samiddho'gnirbhasmasātkurute'rjuna | jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā ||"
+          meaning="As a blazing fire reduces wood to ashes, O Arjuna, so the fire of knowledge reduces all karma to ashes."
+          insightLabel="The radical claim"
+          insight="This is one of the Gita's most striking metaphors. The fire of wisdom doesn't gradually neutralize karma, it burns it entirely. The implication: understanding something fully, at its root, dissolves its hold on you. You don't heal your past through effort. You dissolve it through understanding."
+          essence="Knowledge is the purifier, it burns away all past karma."
+        />
 
         {/* SHLOKA 4.38 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 4.38</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            न हि ज्ञानेन सदृशं पवित्रमिह विद्यते ।<br />तत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति ॥
-          </div>
-          <div className="shloka-iast">
-            na hi jñānena sadṛśaṃ pavitramiha vidyate |<br />tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Nothing in this world is as purifying as wisdom. One who is perfected in yoga finds this wisdom within the self, in the course of time.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The patience required</div>
-              <div className="shloka-insight">
-                The word kālena, "in the course of time", is significant. Wisdom is not a download. It ripens. You cannot force it. What you can do is practice, sincerely and consistently, and trust the process. The Gita is telling you: don't expect overnight transformation. But do expect transformation.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Nothing purifies the mind and soul like the sincere pursuit of wisdom."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.38"
+          speaker="Krishna"
+          sanskrit="न हि ज्ञानेन सदृशं पवित्रमिह विद्यते । तत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति ॥"
+          iast="na hi jñānena sadṛśaṃ pavitramiha vidyate | tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati ||"
+          meaning="Nothing in this world is as purifying as wisdom. One who is perfected in yoga finds this wisdom within the self, in the course of time."
+          insightLabel="The patience required"
+          insight="The word kālena, \"in the course of time\", is significant. Wisdom is not a download. It ripens. You cannot force it. What you can do is practice, sincerely and consistently, and trust the process. The Gita is telling you: don't expect overnight transformation. But do expect transformation."
+          essence="Nothing purifies the mind and soul like the sincere pursuit of wisdom."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -1121,35 +939,16 @@ export default function ChapterFourPage() {
         </p>
 
         {/* SHLOKA 4.42 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 4.42</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तस्मादज्ञानसंभूतं हृत्स्थं ज्ञानासिनाऽऽत्मनः ।<br />छित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत ॥
-          </div>
-          <div className="shloka-iast">
-            tasmādajñānasaṃbhūtaṃ hṛtsthaṃ jñānāsinā''tmanaḥ |<br />chittvainaṃ saṃśayaṃ yogamātiṣṭhottiṣṭha bhārata ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Therefore, with the sword of knowledge, cut asunder the doubt born of ignorance that has lodged in your heart. Take refuge in yoga, arise, O Arjuna.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The pivot</div>
-              <div className="shloka-insight">
-                "Arise", uttiṣṭha, is the last word of Chapter 4. It echoes through to the end of the Gita. Knowledge without action is incomplete. Once you understand, you must stand up. The instruction is physical as much as philosophical. The Gita doesn't end with enlightenment. It ends with standing.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Use knowledge to overcome doubt, then act with steadiness."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.42"
+          speaker="Krishna"
+          sanskrit="तस्मादज्ञानसंभूतं हृत्स्थं ज्ञानासिनाऽऽत्मनः । छित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत ॥"
+          iast="tasmādajñānasaṃbhūtaṃ hṛtsthaṃ jñānāsinā''tmanaḥ | chittvainaṃ saṃśayaṃ yogamātiṣṭhottiṣṭha bhārata ||"
+          meaning="Therefore, with the sword of knowledge, cut asunder the doubt born of ignorance that has lodged in your heart. Take refuge in yoga, arise, O Arjuna."
+          insightLabel="The pivot"
+          insight="\"Arise\", uttiṣṭha, is the last word of Chapter 4. It echoes through to the end of the Gita. Knowledge without action is incomplete. Once you understand, you must stand up. The instruction is physical as much as philosophical. The Gita doesn't end with enlightenment. It ends with standing."
+          essence="Use knowledge to overcome doubt, then act with steadiness."
+        />
 
         <p>
           That single command, uttiṣṭha, reframes everything that comes before it. All the teaching about divine incarnation, knowledge as fire, the three gates to learning, it all culminates in action. Not action driven by attachment or ego. But action grounded in understanding. Action taken from a place of clarity. The Wisdom app reminds you of these teachings through daily practice precisely so that you can live them out, not as abstract philosophy, but as lived clarity that guides your decisions and actions.

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 12 Summary – Key Verses & Meaning (Bhakti Yoga)",
@@ -139,28 +140,6 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
-
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
@@ -262,7 +241,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -694,336 +672,21 @@ export default function ChapterPage12() {
           Krishna's answer might surprise readers who expect the formless path to be praised as more advanced. He says, instead, that those who fix their minds on him with supreme trust are, in his view, the most united. Then in 12.5, he adds the practical observation: the formless path is harder for embodied beings, because the unmanifest is, by definition, difficult for a mind that lives inside a body to reach. The verse does not say the formless path is wrong. It says it is harder. For most of us, in most lives, devotion to a form is the accessible door.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 12.2</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रीभगवानुवाच<br />मय्यावेश्य मनो ये मां नित्ययुक्ता उपासते ।<br />श्रद्धया परयोपेतास्ते मे युक्ततमा मताः ॥
-          </div>
-          <div className="shloka-iast">
-            śrī bhagavān uvāca |<br />mayy āveśya mano ye māṃ nitya-yuktā upāsate |<br />śraddhayā parayopetās te me yuktatamā matāḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The Blessed One said: those who fix their minds on me, who worship me with constant union, filled with supreme trust, they, in my view, are the most united.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why Krishna prefers the personal path</div>
-              <div className="shloka-insight">
-                The verse is not metaphysical preference. It is anthropological observation. The personal form gives the mind something to return to. The formless absolute, however true, does not give the mind a handle. The Gita is consistently practical about this, what works for an embodied person is the more useful path, even if a different path is, in principle, equally valid.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Full trust and steady remembrance make devotion complete."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 12.2"
+          speaker="Krishna"
+          sanskrit="श्रीभगवानुवाच मय्यावेश्य मनो ये मां नित्ययुक्ता उपासते । श्रद्धया परयोपेतास्ते मे युक्ततमा मताः ॥"
+          iast="śrī bhagavān uvāca | mayy āveśya mano ye māṃ nitya-yuktā upāsate | śraddhayā parayopetās te me yuktatamā matāḥ ||"
+          essence="Full trust and steady remembrance make devotion complete."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 12.5</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम् ।<br />अव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते ॥
-          </div>
-          <div className="shloka-iast">
-            kleśo'dhikataras teṣām avyaktāsakta-cetasām |<br />avyaktā hi gatir duḥkhaṃ dehavadbhir avāpyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                For those whose minds cling to the unmanifest, the struggle is greater. The unmanifest path is hard to reach for embodied beings.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The body is not a problem to solve</div>
-              <div className="shloka-insight">
-                The Gita accepts that you live in a body and shapes its teaching to that fact. It does not ask you to pretend you are pure formless awareness. It asks you to use the form-life you actually have, including relationships, devotion, gratitude, as the actual path. The body is not an obstacle to spiritual progress. It is the equipment with which spiritual progress happens.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The subtlest path is hardest for a body-bound mind."
-          </div>
-        </div>
-
-        {/* DIVIDER */}
-        <div className="section-divider">
-          <div className="section-divider-line"></div>
-          <div className="section-divider-label">
-            Verses 12.8–12.11 · The Ladder
-          </div>
-          <div className="section-divider-line"></div>
-        </div>
-
-        <h2 id="ladder">The Four-Step Ladder for When Devotion Is Hard</h2>
-
-        <p>
-          Verses 12.8 through 12.11 contain one of the most practical sequences in the Gita. Krishna describes a four-rung ladder, each rung easier than the one before, so that no honest seeker is left without a way forward. The ladder is staggered with great care.
-        </p>
-
-        <p>
-          First rung: fix your mind on me, place your discernment in me, and you will live in me. If that is too hard, second rung: practice. <em>Abhyāsa</em>. Repeated return of attention. If even practice is too hard, third rung: work for my sake. Do your actions as offerings to me. Even this, if it cannot be done, leaves a fourth rung. Renounce the fruits of action. Stop clinging to outcomes. The ladder is gentle. Each rung accepts that not everyone can stand on the rung above. The Gita is meeting the reader exactly where the reader is.
-        </p>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 12.8</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            मय्येव मन आधत्स्व मयि बुद्धिं निवेशय ।<br />निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः ॥
-          </div>
-          <div className="shloka-iast">
-            mayy eva mana ādhatsva mayi buddhiṃ niveśaya |<br />nivasiṣyasi mayy eva ata ūrdhvaṃ na saṃśayaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Fix your mind on me alone. Place your discerning mind in me. You will then live in me, beyond doubt.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The first rung, the ideal</div>
-              <div className="shloka-insight">
-                If you can simply place attention and discernment on the Divine and keep them there, the rest follows. This is the destination. Most people are not standing at this rung yet. The next three verses are for them.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "A divided mind settles when both thought and feeling rest in the divine."
-          </div>
-        </div>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 12.9–12.11</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अथ चित्तं समाधातुं न शक्नोषि मयि स्थिरम् ।<br />अभ्यासयोगेन ततो मामिच्छाप्तुं धनञ्जय ॥<br />अभ्यासेऽप्यसमर्थोऽसि मत्कर्मपरमो भव ।<br />मदर्थमपि कर्माणि कुर्वन् सिद्धिमवाप्स्यसि ॥<br />अथैतदप्यशक्तोऽसि कर्तुं मद्योगमाश्रितः ।<br />सर्वकर्मफलत्यागं ततः कुरु यतात्मवान् ॥
-          </div>
-          <div className="shloka-iast">
-            atha cittaṃ samādhātuṃ na śaknoṣi mayi sthiram |<br />abhyāsa-yogena tato mām icchāptuṃ dhanañjaya ||<br />abhyāse'py asamartho'si mat-karma-paramo bhava |<br />mad-artham api karmāṇi kurvan siddhim avāpsyasi ||<br />athaitad apy aśakto'si kartuṃ mad-yogam āśritaḥ |<br />sarva-karma-phala-tyāgaṃ tataḥ kuru yatātmavān ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                If you cannot steadily fix your mind on me, then seek me through practice. If practice itself is too hard, then work for my sake, and you will reach completion through action. If even this is beyond you, taking refuge in my yoga, then renounce the fruits of all action, with the self restrained.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The Gita's gentlest pedagogy</div>
-              <div className="shloka-insight">
-                Three downgrades in three verses. The Gita is telling you: there is no rung that has no rung beneath it. If the highest is out of reach, try practice. If practice is out of reach, offer your actions. If even that is out of reach, at the very least, stop clinging to results. The lowest rung, letting go of outcomes, is still on the same ladder. Nobody is left without a place to stand.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Practice, offered action, or releasing results, devotion has many doors."
-          </div>
-        </div>
-
-        <div className="highlight-box">
-          <p>
-            <strong>Why the ladder matters more than most people notice:</strong> Most spiritual teaching describes only the top rung. The Gita describes the whole staircase, including the rung that meets a tired, distracted, mid-life person where they actually are. The teaching is not less serious for being gentle. It is more serious, because seriousness, here, includes being honest about how hard the highest is, and offering an honest place to stand below it.
-          </p>
-        </div>
-
-        {/* DIVIDER */}
-        <div className="section-divider">
-          <div className="section-divider-line"></div>
-          <div className="section-divider-label">
-            Verse 12.12 · Peace Follows Immediately
-          </div>
-          <div className="section-divider-line"></div>
-        </div>
-
-        <h2 id="renunciation-of-results">The Lowest Rung Is Also the Most Direct</h2>
-
-        <p>
-          Verse 12.12 then does something startling. After ranking the rungs (knowledge above practice, meditation above knowledge, renunciation of results above meditation), Krishna says: <em>and peace follows immediately from renunciation</em>. The verse undercuts the apparent ranking. The lowest-seeming rung (the one offered to the most distracted seeker) turns out to be the most direct path to peace.
-        </p>
-
-        <p>
-          Why? Because the others are technical. They require capacity, training, focus. Renunciation of results requires only one move: to stop holding onto outcomes. That single move is available to anyone, at any moment, regardless of training. And it produces peace immediately. Not eventually. Not after years of practice. <em>Anantaram</em>: immediately. The verse is, in a way, the Gita's most practical claim. The thing that brings peace fastest is also the thing closest to where you already are.
-        </p>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 12.12</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते ।<br />ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम् ॥
-          </div>
-          <div className="shloka-iast">
-            śreyo hi jñānam abhyāsāj jñānād dhyānaṃ viśiṣyate |<br />dhyānāt karma-phala-tyāgas tyāgāc chāntir anantaram ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Knowledge is better than mere practice; meditation is better than knowledge; renouncing the fruits of action is better than meditation, and from such renunciation, peace follows at once.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The line that subverts the ranking</div>
-              <div className="shloka-insight">
-                <em>Tyāgāc chāntir anantaram</em>: from renunciation, peace immediately. The Gita's emotional climax in this chapter is not the loftiest practice. It is the most accessible one. Stop clinging to the result. The clinging was the suffering. The peace was always available; it was just hidden by the grip.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Peace begins when you stop clinging to what your action produces."
-          </div>
-        </div>
-
-        <div className="pull-quote">
-          <blockquote>
-            "From renunciation of the fruits of action, peace, immediately."
-          </blockquote>
-          <cite>Bhagavad Gita 12.12</cite>
-        </div>
-
-        {/* DIVIDER */}
-        <div className="section-divider">
-          <div className="section-divider-line"></div>
-          <div className="section-divider-label">
-            Verses 12.13–12.19 · The Devotee's Character
-          </div>
-          <div className="section-divider-line"></div>
-        </div>
-
-        <h2 id="character">What a Real Devotee Actually Looks Like</h2>
-
-        <p>
-          The final seven verses of Chapter 12 are some of the most beautiful in the Gita, and also the most disarming. Krishna gives a portrait of the kind of person he calls dear to himself. What is striking is what the portrait does <em>not</em> include. There is no mention of how loud the prayer is. No mention of how often the rituals are performed. No mention of any external mark of religiosity. The entire portrait is about interpersonal texture and inner balance.
-        </p>
-
-        <p>
-          The devotee, Krishna says, hates no being. Is friendly. Is compassionate. Has let go of possessiveness. Is equal in pleasure and pain. Forgives. Disturbs no one and is disturbed by no one. Expects nothing. Is content with whatever comes. Equal to friend and enemy, honour and dishonour, heat and cold. The portrait is, in a quiet way, a definition. The Gita's measure of a devotee is character, not creed. Devotion produces a certain kind of presence in a person, and that presence, more than any belief they hold, is what makes them dear.
-        </p>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 12.13–12.14</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च ।<br />निर्ममो निरहङ्कारः समदुःखसुखः क्षमी ॥<br />सन्तुष्टः सततं योगी यतात्मा दृढनिश्चयः ।<br />मय्यर्पितमनोबुद्धिर्यो मद्भक्तः स मे प्रियः ॥
-          </div>
-          <div className="shloka-iast">
-            adveṣṭā sarva-bhūtānāṃ maitraḥ karuṇa eva ca |<br />nirmamo nirahaṅkāraḥ sama-duḥkha-sukhaḥ kṣamī ||<br />santuṣṭaḥ satataṃ yogī yatātmā dṛḍha-niścayaḥ |<br />mayy arpita-mano-buddhir yo mad-bhaktaḥ sa me priyaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                One who hates no being, who is friendly and compassionate, free of possessiveness and ego, equal in pain and pleasure, forgiving, always content, self-controlled, firm in resolve, with mind and discernment offered to me, that devotee is dear to me.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The portrait reads as a description of a good neighbor</div>
-              <div className="shloka-insight">
-                Read this list out loud. None of these qualities require theology to verify. Hates no being. Friendly. Compassionate. Forgiving. The verse describes someone you would want to live next to, work with, share a meal with. The Gita is saying, that is what devotion looks like from the outside. The interior of the devotion is between the devotee and the Divine. The exterior is just being a decent human being.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Devotion shows up as friendliness, forgiveness, and emotional steadiness."
-          </div>
-        </div>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 12.15</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः ।<br />हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः ॥
-          </div>
-          <div className="shloka-iast">
-            yasmān nodvijate loko lokān nodvijate ca yaḥ |<br />harṣāmarṣa-bhayodvegair mukto yaḥ sa ca me priyaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The one who disturbs no one in the world, and is disturbed by no one, free of delight, envy, fear, agitation, that one is dear to me.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Two-way non-disturbance</div>
-              <div className="shloka-insight">
-                Most people manage one side of this. Some are easy to be around but get rattled by the world. Others are unshakable but somehow rattle everyone around them. The Gita's devotee is both, does not disturb, is not disturbed. The two are linked. The internal stillness produces external gentleness. The external gentleness preserves the internal stillness. Each direction reinforces the other.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "True devotion leaves no wake of disturbance."
-          </div>
-        </div>
-
-        <div className="pull-quote">
-          <blockquote>
-            "The one who disturbs no one in the world, and is disturbed by no one, that one is dear to me."
-          </blockquote>
-          <cite>Bhagavad Gita 12.15</cite>
-        </div>
-
-        {/* DIVIDER */}
-        <div className="section-divider">
-          <div className="section-divider-line"></div>
-          <div className="section-divider-label">
-            Verse 12.18 · Equal to Friend and Enemy
-          </div>
-          <div className="section-divider-line"></div>
-        </div>
-
-        <h2 id="equanimity">Equal to Friend and Enemy, the Hardest Line</h2>
-
-        <p>
-          Verse 12.18 is the chapter's hardest sentence, and the one most likely to make modern readers pause. Krishna says the devotee is equal to friend and enemy. Equal to honour and dishonour. Equal to heat and cold, pleasure and pain. Free of attachment. The line about friend and enemy can sound cold, as though the devotee is being asked to flatten love into impartiality.
-        </p>
-
-        <p>
-          That is not what is being asked. The verse is not about how much you care. It is about how much you are <em>captured</em>. The devotee still cares about the friend, still acts well toward the enemy. But neither the friend's warmth nor the enemy's hostility commandeers the inner life. Equanimity here means the inner life is no longer property of the relationships. You can love deeply and still not be hijacked. Most of us know what it feels like to be the opposite: to have a single text message wreck a whole afternoon. The verse is describing the freedom from that mechanism.
-        </p>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 12.18</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            समः शत्रौ च मित्रे च तथा मानापमानयोः ।<br />शीतोष्णसुखदुःखेषु समः सङ्गविवर्जितः ॥
-          </div>
-          <div className="shloka-iast">
-            samaḥ śatrau ca mitre ca tathā mānāpamānayoḥ |<br />śītoṣṇa-sukha-duḥkheṣu samaḥ saṅga-vivarjitaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Equal to enemy and friend, equal in honour and dishonour, equal in heat and cold, in pleasure and pain, free of attachment.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What equanimity is and isn't</div>
-              <div className="shloka-insight">
-                Equanimity is not the absence of love. It is the absence of capture. You can love your friend without your equilibrium being entirely dependent on their love coming back. You can be kind to the person who insulted you without their insult living rent-free in your head for the next week. The verse is teaching the freedom that comes from caring without clinging.
-              </div>
-            </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 12.5"
+          speaker="Krishna"
+          sanskrit="क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम् । अव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते ॥"
+          iast="kleśo'dhikataras teṣām avyaktāsakta-cetasām | avyaktā hi gatir duḥkhaṃ dehavadbhir avāpyate ||"
+          essence="The subtlest path is hardest for a body-bound mind."
+        />
           </div>
           <div className="shloka-essence">
             "Real devotion stays even when life feels hostile or kind."
@@ -1055,35 +718,16 @@ export default function ChapterPage12() {
           Notice the word <em>śraddadhānāḥ</em>, those with śraddhā (trust). Trust is what makes the teaching nectar rather than just information. Without trust, the verse remains a description of a difficult kind of person. With trust, the description becomes a possibility, something one can move toward, slowly, over time. The chapter ends, in this way, the way many of the Gita's most important chapters end. Not with a command. With an invitation.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 12.20</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            ये तु धर्म्यामृतमिदं यथोक्तं पर्युपासते ।<br />श्रद्दधाना मत्परमा भक्तास्तेऽतीव मे प्रियाः ॥
-          </div>
-          <div className="shloka-iast">
-            ye tu dharmyāmṛtam idaṃ yathoktaṃ paryupāsate |<br />śraddadhānā mat-paramā bhaktās te'tīva me priyāḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Those devotees who, full of trust, taking me as the supreme, live by this nectar-like dharma that I have spoken, they are exceedingly dear to me.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why the teaching is called nectar</div>
-              <div className="shloka-insight">
-                Nectar (<em>amṛta</em>) is the substance of immortality in Indian mythology. The Gita calls the qualities of devotion <em>nectar-like</em> because they produce, in the person who embodies them, a kind of inner deathlessness: a steadiness no event can finally undo. The chapter ends with the promise that this nectar is available to anyone willing to trust.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Faithful practice turns devotion into closeness."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 12.20"
+          speaker="Krishna"
+          sanskrit="ये तु धर्म्यामृतमिदं यथोक्तं पर्युपासते । श्रद्दधाना मत्परमा भक्तास्तेऽतीव मे प्रियाः ॥"
+          iast="ye tu dharmyāmṛtam idaṃ yathoktaṃ paryupāsate | śraddadhānā mat-paramā bhaktās te'tīva me priyāḥ ||"
+          meaning="Those devotees who, full of trust, taking me as the supreme, live by this nectar-like dharma that I have spoken, they are exceedingly dear to me."
+          insightLabel="Why the teaching is called nectar"
+          insight="Nectar (amṛta) is the substance of immortality in Indian mythology. The Gita calls the qualities of devotion nectar-like because they produce, in the person who embodies them, a kind of inner deathlessness: a steadiness no event can finally undo. The chapter ends with the promise that this nectar is available to anyone willing to trust."
+          essence="Faithful practice turns devotion into closeness."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">

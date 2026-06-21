@@ -1570,3 +1570,495 @@
         }
         .milestone-dot { margin: 0; flex-shrink: 0; }
       }
+
+      /* ═══════════════════════════════════════════════════════════════
+         PERSONALITY & ANIMATION LAYER
+      ═══════════════════════════════════════════════════════════════ */
+
+      /* ─── CORE KEYFRAMES ─── */
+      @keyframes orb-breathe {
+        0%, 100% { transform: translateX(-50%) scale(1);   opacity: 0.75; }
+        50%       { transform: translateX(-50%) scale(1.3); opacity: 1;    }
+      }
+      @keyframes phone-float {
+        0%, 100% { transform: translateY(0px); }
+        50%       { transform: translateY(-10px); }
+      }
+      @keyframes fan-left-float {
+        0%, 100% { transform: rotate(-10deg) translateY(40px); }
+        50%       { transform: rotate(-10deg) translateY(33px); }
+      }
+      @keyframes fan-right-float {
+        0%, 100% { transform: rotate(10deg) translateY(40px); }
+        50%       { transform: rotate(10deg) translateY(33px); }
+      }
+      @keyframes sanskrit-drift {
+        0%, 100% { transform: translate(-50%, -50%) scale(1)    rotate(0deg);   opacity: 0.032; }
+        33%       { transform: translate(-50%, -53%) scale(1.03) rotate(0.6deg); opacity: 0.052; }
+        66%       { transform: translate(-50%, -48%) scale(0.97) rotate(-0.4deg); opacity: 0.028; }
+      }
+      @keyframes verse-glow {
+        0%, 100% { border-color: rgba(200,136,30,0.28); box-shadow: none; }
+        50%       { border-color: rgba(200,136,30,0.52); box-shadow: 0 0 32px rgba(200,136,30,0.12); }
+      }
+      @keyframes orb-wisdom-pulse {
+        0%, 100% { box-shadow: 0 0 0 6px rgba(244,183,64,0.10), 0 0 56px rgba(244,183,64,0.38), inset 0 -8px 22px rgba(0,0,0,0.18), inset 0 8px 20px rgba(255,255,255,0.22); }
+        50%       { box-shadow: 0 0 0 12px rgba(244,183,64,0.08), 0 0 80px rgba(244,183,64,0.55), inset 0 -8px 22px rgba(0,0,0,0.18), inset 0 8px 20px rgba(255,255,255,0.22); }
+      }
+      @keyframes orb-action-pulse {
+        0%, 100% { box-shadow: 0 0 0 6px rgba(138,152,204,0.10), 0 0 56px rgba(138,152,204,0.38), inset 0 -8px 22px rgba(0,0,0,0.18), inset 0 8px 20px rgba(255,255,255,0.22); }
+        50%       { box-shadow: 0 0 0 12px rgba(138,152,204,0.08), 0 0 80px rgba(138,152,204,0.55), inset 0 -8px 22px rgba(0,0,0,0.18), inset 0 8px 20px rgba(255,255,255,0.22); }
+      }
+      @keyframes orb-devotion-pulse {
+        0%, 100% { box-shadow: 0 0 0 6px rgba(217,120,154,0.10), 0 0 56px rgba(217,120,154,0.38), inset 0 -8px 22px rgba(0,0,0,0.18), inset 0 8px 20px rgba(255,255,255,0.22); }
+        50%       { box-shadow: 0 0 0 12px rgba(217,120,154,0.08), 0 0 80px rgba(217,120,154,0.55), inset 0 -8px 22px rgba(0,0,0,0.18), inset 0 8px 20px rgba(255,255,255,0.22); }
+      }
+      @keyframes dot-pulse {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(200,136,30,0.45); }
+        50%       { box-shadow: 0 0 0 7px rgba(200,136,30,0);   }
+      }
+      @keyframes shimmer-sweep {
+        0%   { left: -75%; }
+        100% { left: 130%; }
+      }
+      @keyframes arrow-nudge {
+        0%, 100% { transform: translateX(0); }
+        50%       { transform: translateX(4px); }
+      }
+      @keyframes slide-up-stagger {
+        from { opacity: 0; transform: translateY(22px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes cursor-glow-fade-in {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+
+      /* ─── HERO GLOW ORB ─── */
+      .hero-glow-orb {
+        position: absolute;
+        top: -80px;
+        left: 50%;
+        width: 720px;
+        height: 720px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(200,136,30,0.13) 0%, rgba(200,136,30,0.04) 50%, transparent 70%);
+        pointer-events: none;
+        z-index: 0;
+        animation: orb-breathe 8s ease-in-out infinite;
+      }
+
+      /* ─── SANSKRIT WATERMARK ─── */
+      .hero-sanskrit-bg {
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        font-family: 'Noto Sans Devanagari', serif;
+        font-size: clamp(28px, 5.5vw, 68px);
+        color: rgba(200,136,30,0.032);
+        white-space: nowrap;
+        pointer-events: none;
+        user-select: none;
+        letter-spacing: 0.06em;
+        animation: sanskrit-drift 16s ease-in-out infinite;
+        z-index: 0;
+      }
+
+      /* Make sure hero content sits above decorative layers */
+      .hero .wrap > *:not(.hero-glow-orb):not(.hero-sanskrit-bg) { position: relative; z-index: 1; }
+      .hero-phones { position: relative; z-index: 1; }
+
+      /* ─── PHONE FLOAT ─── */
+      .fan-center {
+        animation: phone-float 5.5s ease-in-out infinite;
+      }
+      .fan-left {
+        animation: fan-left-float 6.5s ease-in-out infinite 0.7s;
+      }
+      .fan-right {
+        animation: fan-right-float 6s ease-in-out infinite 1.4s;
+      }
+
+      /* ─── PATH ORBS PULSE ─── */
+      .path-orb-wisdom  { animation: orb-wisdom-pulse  4.5s ease-in-out infinite; }
+      .path-orb-action  { animation: orb-action-pulse  4.5s ease-in-out infinite 0.9s; }
+      .path-orb-devotion{ animation: orb-devotion-pulse 4.5s ease-in-out infinite 1.8s; }
+
+      /* ─── VERSE STRIP GLOW ─── */
+      .verse-strip {
+        animation: verse-glow 4s ease-in-out infinite;
+      }
+
+      /* ─── ENTRY CARDS STAGGERED ENTRANCE ─── */
+      .entry-grid .entry-card:nth-child(1) {
+        animation: slide-up-stagger 0.65s cubic-bezier(0.16,1,0.3,1) both;
+        animation-delay: 0.05s;
+      }
+      .entry-grid .entry-card:nth-child(2) {
+        animation: slide-up-stagger 0.65s cubic-bezier(0.16,1,0.3,1) both;
+        animation-delay: 0.15s;
+      }
+      .entry-grid .entry-card:nth-child(3) {
+        animation: slide-up-stagger 0.65s cubic-bezier(0.16,1,0.3,1) both;
+        animation-delay: 0.25s;
+      }
+
+      /* ─── ENTRY CARD CTA ARROW NUDGE ─── */
+      .entry-card-cta {
+        position: relative;
+        display: inline-block;
+        transition: color 0.18s, transform 0.22s cubic-bezier(0.34,1.56,0.64,1);
+      }
+      .entry-card:hover .entry-card-cta {
+        transform: translateX(5px);
+      }
+
+      /* ─── CARD SHIMMER ON HOVER ─── */
+      .prob-card,
+      .about-card,
+      .feat-card {
+        overflow: hidden;
+      }
+      .prob-card::after,
+      .about-card::after,
+      .feat-card::after {
+        content: '';
+        position: absolute;
+        top: -60%;
+        left: -75%;
+        width: 50%;
+        height: 220%;
+        background: linear-gradient(
+          105deg,
+          transparent,
+          rgba(200,136,30,0.07),
+          transparent
+        );
+        transform: skewX(-18deg);
+        pointer-events: none;
+        transition: none;
+      }
+      .prob-card:hover::after,
+      .about-card:hover::after,
+      .feat-card:hover::after {
+        animation: shimmer-sweep 0.55s ease forwards;
+      }
+
+      /* ─── BTN-READ-GITA ARROW NUDGE ─── */
+      .btn-read-gita:hover {
+        /* existing hover preserved; add subtle scale */
+        transform: translateY(-1px) scale(1.015);
+      }
+
+      /* ─── MILESTONE DOT PULSE ─── */
+      .milestone-dot {
+        animation: dot-pulse 2.8s ease-in-out infinite;
+      }
+      .milestone:nth-child(2) .milestone-dot { animation-delay: 0.5s; }
+      .milestone:nth-child(3) .milestone-dot { animation-delay: 1.0s; }
+      .milestone:nth-child(4) .milestone-dot { animation-delay: 1.5s; }
+
+      /* ─── PROOF BAR ITEMS SLIDE IN ─── */
+      .proof-item {
+        animation: slide-up-stagger 0.5s ease both;
+      }
+      .proof-item:nth-child(1) { animation-delay: 0.05s; }
+      .proof-item:nth-child(2) { animation-delay: 0.12s; }
+      .proof-item:nth-child(3) { animation-delay: 0.19s; }
+      .proof-item:nth-child(4) { animation-delay: 0.26s; }
+
+      /* ─── SCROLL REVEAL — STAGGER HELPERS ─── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(26px);
+        transition:
+          opacity 0.62s cubic-bezier(0.16,1,0.3,1),
+          transform 0.62s cubic-bezier(0.16,1,0.3,1);
+        transition-delay: var(--d, 0ms);
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ─── CURSOR GLOW (desktop hover only) ─── */
+      .cursor-glow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(200,136,30,0.07) 0%, transparent 65%);
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0;
+        transition: opacity 0.4s ease, transform 0.08s linear;
+        will-change: transform;
+      }
+
+      /* ─── TESTI CARD HOVER ─── */
+      .testi-card {
+        transition: transform 0.22s ease, border-color 0.2s, box-shadow 0.2s;
+      }
+      .testi-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(200,136,30,0.38);
+        box-shadow: 0 12px 36px rgba(0,0,0,0.3);
+      }
+
+      /* ─── STEP CARD HOVER ─── */
+      .step {
+        transition: transform 0.22s ease;
+      }
+      .step:hover {
+        transform: translateY(-4px);
+      }
+      .step-num {
+        transition: box-shadow 0.25s ease, background 0.25s ease;
+      }
+      .step:hover .step-num {
+        background: var(--maroon);
+        box-shadow: 0 0 0 4px rgba(200,136,30,0.2), 0 0 24px rgba(200,136,30,0.28);
+      }
+
+      /* ─── ABOUT CARD ICON BOUNCE ON HOVER ─── */
+      .about-card-icon {
+        display: inline-block;
+        transition: transform 0.28s cubic-bezier(0.34,1.56,0.64,1);
+      }
+      .about-card:hover .about-card-icon {
+        transform: scale(1.22) rotate(-4deg);
+      }
+
+      /* ─── PATH CARD BADGE SHIMMER ─── */
+      .path-badge {
+        position: relative;
+        overflow: hidden;
+      }
+      .path-badge::after {
+        content: '';
+        position: absolute;
+        top: 0; left: -60%; width: 40%; height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+        pointer-events: none;
+      }
+      .path-card:hover .path-badge::after {
+        animation: shimmer-sweep 0.6s ease forwards;
+      }
+
+      /* ─── REDUCE MOTION SAFETY ─── */
+      @media (prefers-reduced-motion: reduce) {
+        .fan-center,
+        .fan-left,
+        .fan-right,
+        .hero-glow-orb,
+        .hero-sanskrit-bg,
+        .path-orb-wisdom,
+        .path-orb-action,
+        .path-orb-devotion,
+        .verse-strip,
+        .milestone-dot,
+        .proof-item,
+        .entry-grid .entry-card {
+          animation: none !important;
+        }
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
+        }
+      }
+
+      /* ─── HERO READ GITA BUTTON ─── */
+      .btn-read-gita {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: transparent;
+        color: var(--gold-light);
+        padding: 13px 26px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        border: 1.5px solid rgba(200, 136, 30, 0.55);
+        transition: border-color 0.18s, background 0.18s, color 0.18s;
+        white-space: nowrap;
+      }
+      .btn-read-gita:hover {
+        border-color: var(--gold-light);
+        background: rgba(200, 136, 30, 0.09);
+        color: #fff;
+      }
+
+      /* ─── HERO SECONDARY LINKS ROW ─── */
+      .hero-secondary-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 18px;
+        flex-wrap: wrap;
+        animation: heroFade 0.5s ease both;
+        animation-delay: 340ms;
+      }
+      .hero-secondary-nav a {
+        font-size: 13px;
+        color: var(--text-dimmer);
+        transition: color 0.18s;
+        text-decoration: none;
+      }
+      .hero-secondary-nav a:hover {
+        color: var(--gold-light);
+      }
+      .hero-sep {
+        color: var(--text-dimmer);
+        opacity: 0.4;
+        font-size: 13px;
+      }
+
+      /* ─── THREE ENTRY POINTS SECTION ─── */
+      .entry-section {
+        padding: 56px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .entry-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .entry-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background: var(--bg-card);
+        border: 1.5px solid var(--border);
+        border-radius: 18px;
+        padding: 28px 26px;
+        text-decoration: none;
+        color: inherit;
+        transition: border-color 0.2s, background 0.2s, transform 0.2s;
+        cursor: pointer;
+      }
+      .entry-card:hover {
+        border-color: rgba(200, 136, 30, 0.5);
+        background: rgba(200, 136, 30, 0.05);
+        transform: translateY(-2px);
+      }
+      .entry-card-featured {
+        border-color: rgba(200, 136, 30, 0.38);
+        background: linear-gradient(135deg, rgba(200, 136, 30, 0.07) 0%, rgba(200, 136, 30, 0.03) 100%);
+        position: relative;
+      }
+      .entry-card-featured::before {
+        content: "TODAY";
+        position: absolute;
+        top: -11px;
+        left: 24px;
+        background: var(--gold);
+        color: #1a0606;
+        font-size: 9.5px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        padding: 3px 10px;
+        border-radius: 100px;
+      }
+      .entry-card-featured:hover {
+        border-color: var(--gold);
+        background: rgba(200, 136, 30, 0.1);
+      }
+      .entry-card-icon {
+        font-size: 28px;
+        margin-bottom: 14px;
+        line-height: 1;
+      }
+      .entry-card-body {
+        flex: 1;
+      }
+      .entry-card-body h3 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--gold-light);
+        margin-bottom: 8px;
+        line-height: 1.2;
+      }
+      .entry-card-body p {
+        font-size: 14px;
+        color: var(--text-dim);
+        line-height: 1.65;
+        margin-bottom: 20px;
+      }
+      .entry-card-cta {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--gold);
+        margin-top: auto;
+        transition: color 0.18s;
+      }
+      .entry-card:hover .entry-card-cta {
+        color: var(--gold-light);
+      }
+      @media (max-width: 760px) {
+        .entry-grid {
+          grid-template-columns: 1fr;
+          max-width: 420px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      /* ─── FEATURED VERSE STRIP ─── */
+      .verse-strip {
+        margin: 48px 0 0;
+        padding: 28px 32px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, rgba(200,136,30,0.07) 0%, rgba(200,136,30,0.03) 100%);
+        border: 1px solid rgba(200,136,30,0.28);
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+      .verse-strip-ref {
+        flex-shrink: 0;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--gold);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        opacity: 0.85;
+        padding-top: 2px;
+        min-width: 60px;
+      }
+      .verse-strip-body {
+        flex: 1;
+        min-width: 200px;
+      }
+      .verse-strip-body blockquote {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(16px, 1.7vw, 19px);
+        font-style: italic;
+        color: var(--gold-light);
+        line-height: 1.55;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .verse-strip-body a {
+        font-size: 13px;
+        color: var(--gold);
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.18s;
+      }
+      .verse-strip-body a:hover {
+        color: var(--gold-light);
+      }
+      @media (max-width: 580px) {
+        .verse-strip {
+          padding: 22px 20px;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }

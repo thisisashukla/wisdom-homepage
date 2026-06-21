@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Sattva, Rajas, Tamas: The Three Gunas of the Bhagavad Gita Explained | Wisdom",
@@ -197,96 +198,6 @@ const pageCSS = `
         p {
             margin-bottom: 1.5rem;
             color: var(--text-dim);
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-
-        .shloka-card:hover {
-            background: var(--bg-card-hover);
-        }
-
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .meaning-text {
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .insight-text {
-            color: var(--text-dim);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -606,20 +517,14 @@ export default function ThreeGunasPage() {
         The Gita begins Chapter 14 by identifying the gunas as the fundamental mechanism by which prakriti (nature) operates. They bind the atman (the unchanging inner self) to the body and mind.
       </p>
 
-      <div className="shloka-card">
-        <div className="verse-number">Bhagavad Gita 14.5</div>
-        <div className="sanskrit">सत्त्वं रजस्तम इति गुणाः प्रकृतिसंभवाः । निबध्नन्ति महाबाहो देहे देहिनमव्ययम् ॥</div>
-        <div className="transliteration">sattvaṃ rajastama iti guṇāḥ prakṛtisaṃbhavāḥ | nibadhnanti mahābāho dehe dehinamavyayam ||</div>
-        <div className="meaning">
-          <div className="meaning-label">Translation</div>
-          <div className="meaning-text">The qualities of nature, sattva (clarity), rajas (activity), and tamas (inertia), tie the unchanging atman (inner self) to the body.</div>
-        </div>
-        <div className="insight">
-          <div className="insight-label">What This Teaches</div>
-          <div className="insight-text">The atman is described as avyayam, unchanging, imperishable. The gunas don&apos;t change it. They bind it, meaning they create the experience of being caught up in a particular state. The teaching here builds self-awareness by distinguishing what you are (the witness) from what you&apos;re currently experiencing (the guna-state). You observe the state instead of being consumed by it.</div>
-        </div>
-        <div className="essence">You are not your moods or qualities; you are the unchanging atman.</div>
-      </div>
+            <ShlokaCard
+        verseRef="Bhagavad Gita 14.5"
+        sanskrit="सत्त्वं रजस्तम इति गुणाः प्रकृतिसंभवाः । निबध्नन्ति महाबाहो देहे देहिनमव्ययम् ॥"
+        iast="sattvaṃ rajastama iti guṇāḥ prakṛtisaṃbhavāḥ | nibadhnanti mahābāho dehe dehinamavyayam ||"
+        meaningLabel="Translation"
+        insightLabel="What This Teaches"
+        essence="You are not your moods or qualities; you are the unchanging atman."
+      />
 
       <h2>What &quot;Guna&quot; Actually Means</h2>
       <p>
@@ -634,20 +539,14 @@ export default function ThreeGunasPage() {
         Sattva is the quality of light, purity, and knowing. When sattva is high, you think clearly, you feel interested in learning, you&apos;re not chasing or avoiding anything particular. There is a kind of lightness. You can sit with a problem without urgency. You read something and it goes in.
       </p>
 
-      <div className="shloka-card">
-        <div className="verse-number">Bhagavad Gita 14.6</div>
-        <div className="sanskrit">तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् । सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ॥</div>
-        <div className="transliteration">tatra sattvaṃ nirmalatvātprakāśakamanāmayam | sukhasaṅgena badhnāti jñānasaṅgena cānagha ||</div>
-        <div className="meaning">
-          <div className="meaning-label">Translation</div>
-          <div className="meaning-text">Sattva is the pure and clear quality within us that brings light, peace, and knowledge, but even these good things can create attachment and keep us tied to the world.</div>
-        </div>
-        <div className="insight">
-          <div className="insight-label">What This Teaches</div>
-          <div className="insight-text">This is the part that surprises people. Sattva binds you too. The mechanism is attachment to the good feeling: clinging to your calm, pride in your clarity, addiction to feeling wise. The Gita doesn&apos;t say sattva is bad. It says don&apos;t get attached to it. Pursue it as a working condition, not as a destination. The moment you start defending your peacefulness or feeling superior because of your clarity, you&apos;ve lost the thread.</div>
-        </div>
-        <div className="essence">Even purity can bind if we cling to it.</div>
-      </div>
+            <ShlokaCard
+        verseRef="Bhagavad Gita 14.6"
+        sanskrit="तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् । सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ॥"
+        iast="tatra sattvaṃ nirmalatvātprakāśakamanāmayam | sukhasaṅgena badhnāti jñānasaṅgena cānagha ||"
+        meaningLabel="Translation"
+        insightLabel="What This Teaches"
+        essence="Even purity can bind if we cling to it."
+      />
 
       <p>
         In daily life, a sattvic day might look like this: waking before sunrise without an alarm, eating lightly, doing focused work without compulsive checking of the phone, feeling genuine interest in what you&apos;re doing. You don&apos;t manufacture this state. You create conditions that make it more likely: sleep, food, what you consume mentally, who you spend time with.
@@ -658,20 +557,14 @@ export default function ThreeGunasPage() {
         Rajas is the quality of activity, drive, and craving. It is not evil. Without rajas nothing gets done. Every goal pursued, every project launched, every competition entered runs on rajas. The problem is the attachment it creates: the need for the outcome, the agitation when things don&apos;t move, the constant planning and wanting.
       </p>
 
-      <div className="shloka-card">
-        <div className="verse-number">Bhagavad Gita 14.7</div>
-        <div className="sanskrit">रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् । तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ॥</div>
-        <div className="transliteration">rajo rāgātmakaṃ viddhi tṛṣṇāsaṅgasamudbhavam | tannibadhnāti kaunteya karmasaṅgena dehinam ||</div>
-        <div className="meaning">
-          <div className="meaning-label">Translation</div>
-          <div className="meaning-text">Rajas, born of desire and attachment, ties the embodied self to action through constant craving and clinging to what it does.</div>
-        </div>
-        <div className="insight">
-          <div className="insight-label">What This Teaches</div>
-          <div className="insight-text">Rajas binds through two mechanisms: trishna (thirst, craving) and sanga (attachment to the action itself). You get caught not just in wanting the result but in the activity. Work addiction is a rajas trap. So is the inability to stop checking your phone: there&apos;s no clear desire, just a restless pull toward stimulation. The antidote is not stopping all action but developing discernment about which actions you&apos;re attached to and why.</div>
-        </div>
-        <div className="essence">Attachment to actions comes from desires; freedom begins with self-awareness.</div>
-      </div>
+            <ShlokaCard
+        verseRef="Bhagavad Gita 14.7"
+        sanskrit="रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् । तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ॥"
+        iast="rajo rāgātmakaṃ viddhi tṛṣṇāsaṅgasamudbhavam | tannibadhnāti kaunteya karmasaṅgena dehinam ||"
+        meaningLabel="Translation"
+        insightLabel="What This Teaches"
+        essence="Attachment to actions comes from desires; freedom begins with self-awareness."
+      />
 
       <p>
         A heavily rajasic day has a particular texture: you feel busy, slightly agitated, productive in bursts, but with a background hum of anxiety. You get things done but the satisfaction doesn&apos;t quite arrive. You finish one thing and immediately move to the next. The doing is compulsive, not chosen.
@@ -682,20 +575,14 @@ export default function ThreeGunasPage() {
         Tamas is the quality of heaviness, inertia, and delusion. It binds through negligence, laziness, and sleep. At its root is ajnana, ignorance, specifically the inability to see clearly what is happening or what needs to be done.
       </p>
 
-      <div className="shloka-card">
-        <div className="verse-number">Bhagavad Gita 14.8</div>
-        <div className="sanskrit">तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ॥</div>
-        <div className="transliteration">tamastvajñānajaṃ viddhi mohanaṃ sarvadehinām | pramādālasyanidrābhistannibadhnāti bhārata ||</div>
-        <div className="meaning">
-          <div className="meaning-label">Translation</div>
-          <div className="meaning-text">Tamas comes from ignorance and causes confusion in all living beings. It binds through carelessness, laziness, and excessive sleep.</div>
-        </div>
-        <div className="insight">
-          <div className="insight-label">What This Teaches</div>
-          <div className="insight-text">The word mohanam means &quot;that which deludes.&quot; Tamas doesn&apos;t feel dramatic. It feels like nothing much is wrong, you just don&apos;t feel like doing anything. Procrastination, excessive sleep, numbing through distraction: these are tamasic patterns. The Gita also notes that tamas covers knowledge, pramada means negligence or carelessness, a specific kind of not-looking. The self-deception of tamas is that it often feels like rest.</div>
-        </div>
-        <div className="essence">Tamas keeps us bound through ignorance, laziness, and carelessness.</div>
-      </div>
+            <ShlokaCard
+        verseRef="Bhagavad Gita 14.8"
+        sanskrit="तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ॥"
+        iast="tamastvajñānajaṃ viddhi mohanaṃ sarvadehinām | pramādālasyanidrābhistannibadhnāti bhārata ||"
+        meaningLabel="Translation"
+        insightLabel="What This Teaches"
+        essence="Tamas keeps us bound through ignorance, laziness, and carelessness."
+      />
 
       <p>
         It&apos;s worth noting that rest itself is not tamasic. Sleep after genuine exertion is sattvic. Rest taken as recovery is appropriate. Tamas is the heavy sleep that comes from avoidance, the couch that becomes a hiding place, the hour of video content consumed without choosing it. The quality is not in the activity but in what produces and what follows it.
@@ -706,20 +593,14 @@ export default function ThreeGunasPage() {
         The gunas don&apos;t sit in separate compartments. They compete. At any moment one predominates, but the other two are present and shifting. When sattva rises, it suppresses rajas and tamas. When rajas surges, it overtakes sattva&apos;s calm and tamas&apos;s inertia. This is why you can go from clarity to agitation within the same afternoon.
       </p>
 
-      <div className="shloka-card">
-        <div className="verse-number">Bhagavad Gita 14.10</div>
-        <div className="sanskrit">रजस्तमश्चाभिभूय सत्त्वं भवति भारत । रजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा ॥</div>
-        <div className="transliteration">rajastamaścābhibhūya sattvaṃ bhavati bhārata | rajaḥ sattvaṃ tamaścaiva tamaḥ sattvaṃ rajastathā ||</div>
-        <div className="meaning">
-          <div className="meaning-label">Translation</div>
-          <div className="meaning-text">At any time, one quality, clarity (sattva), activity (rajas), or inertia (tamas), becomes stronger by overcoming the others. These forces in us are always shifting.</div>
-        </div>
-        <div className="insight">
-          <div className="insight-label">What This Teaches</div>
-          <div className="insight-text">The Gita&apos;s model here is dynamic, not static. You are not stuck in a guna state. One quality overtakes the others by overcoming their pull. This is why the Gita recommends specific practices: they are designed to build conditions where sattva gains ground over rajas and tamas. Diet, sleep, activity, study, company, all of it shifts the balance.</div>
-        </div>
-        <div className="essence">Your inner state is always changing; self-awareness lets you move towards balance.</div>
-      </div>
+            <ShlokaCard
+        verseRef="Bhagavad Gita 14.10"
+        sanskrit="रजस्तमश्चाभिभूय सत्त्वं भवति भारत । रजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा ॥"
+        iast="rajastamaścābhibhūya sattvaṃ bhavati bhārata | rajaḥ sattvaṃ tamaścaiva tamaḥ sattvaṃ rajastathā ||"
+        meaningLabel="Translation"
+        insightLabel="What This Teaches"
+        essence="Your inner state is always changing; self-awareness lets you move towards balance."
+      />
 
       <h2>How to Read Your Own Gunas Right Now</h2>
       <p>
@@ -759,39 +640,14 @@ export default function ThreeGunasPage() {
         Here is the part the wellness world tends to miss. The Gita&apos;s goal is not to maximize sattva. It is to go beyond all three gunas entirely. This state is called gunatita. Verse 14.20 describes it directly.
       </p>
 
-      <div className="shloka-card">
-        <div className="verse-number">Bhagavad Gita 14.20</div>
-        <div className="sanskrit">गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान् । जन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते ॥</div>
-        <div className="transliteration">guṇānetānatītya trīndehī dehasamudbhavān | janmamṛtyujarāduḥkhairvimukto'mṛtamaśnute ||</div>
-        <div className="meaning">
-          <div className="meaning-label">Translation</div>
-          <div className="meaning-text">When a person rises above the three qualities that create the body, they become free from the pains of birth, aging, and death, and experience a state that is undying.</div>
-        </div>
-        <div className="insight">
-          <div className="insight-label">What This Teaches</div>
-          <div className="insight-text">The goal is transcendence of the entire guna framework, not optimization within it. This matters because it tells you what you are actually working toward. Cultivating sattva is useful as a working condition, a platform from which clarity can develop. But the platform is not the destination. The destination is the state where you are no longer caught by any of the three: not compelled by rajas, not darkened by tamas, and not attached to sattva either.</div>
-        </div>
-        <div className="essence">Transcend the hold of nature&apos;s three qualities to discover true freedom and undying bliss.</div>
-      </div>
-
-      <p>
-        How does one reach this state? Verse 14.26 gives the most direct answer in the chapter:
-      </p>
-
-      <div className="shloka-card">
-        <div className="verse-number">Bhagavad Gita 14.26</div>
-        <div className="sanskrit">मां च योऽव्यभिचारेण भक्तियोगेन सेवते । स गुणान्समतीत्यैतान् ब्रह्मभूयाय कल्पते ॥</div>
-        <div className="transliteration">māṃ ca yo'vyabhicāreṇa bhaktiyogena sevate | sa guṇānsamatītyaitān brahmabhūyāya kalpate ||</div>
-        <div className="meaning">
-          <div className="meaning-label">Translation</div>
-          <div className="meaning-text">Anyone who serves the Supreme with single-minded, undivided devotion can rise above all the natural qualities and become fit for union with the Supreme Truth.</div>
-        </div>
-        <div className="insight">
-          <div className="insight-label">What This Teaches</div>
-          <div className="insight-text">The word avyabhicharena means &quot;without wavering,&quot; undivided, consistent. The path offered is not intellectual analysis of the gunas but devotion that doesn&apos;t split its attention. The Gita here is saying that the way out of the guna trap is not to manage the gunas better from within, but to orient yourself toward something beyond them entirely. The gunas pull you in various directions. Undivided devotion pulls in one direction only.</div>
-        </div>
-        <div className="essence">Pure, continuous bhakti lifts you above all limitations and connects you to the ultimate reality.</div>
-      </div>
+            <ShlokaCard
+        verseRef="Bhagavad Gita 14.20"
+        sanskrit="गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान् । जन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते ॥"
+        iast="guṇānetānatītya trīndehī dehasamudbhavān | janmamṛtyujarāduḥkhairvimukto'mṛtamaśnute ||"
+        meaningLabel="Translation"
+        insightLabel="What This Teaches"
+        essence="Transcend the hold of nature's three qualities to discover true freedom and undying bliss."
+      />
     </div>
 
     <div className="faq-section">

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "What the Bhagavad Gita Says About Death, the Soul, and What Comes After | Wisdom",
@@ -197,96 +198,6 @@ const pageCSS = `
         p {
             margin-bottom: 1.5rem;
             color: var(--text-dim);
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-
-        .shloka-card:hover {
-            background: var(--bg-card-hover);
-        }
-
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .meaning-text {
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .insight-text {
-            color: var(--text-dim);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -611,20 +522,14 @@ export default function DeathAndSoulPage() {
           BG 2.13 introduces this logic with the gentlest possible example: the body itself already passes through radical change, and we don&apos;t say the person dies each time.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.13</div>
-          <div className="sanskrit">देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥</div>
-          <div className="transliteration">dehino&apos;sminyathā dehe kaumāraṃ yauvanaṃ jarā | tathā dehāntaraprāptirdhīrastatra na muhyati ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Just as the body goes through childhood, youth, and old age, in the same way the ātman moves from one body to another. The wise do not get confused or disturbed by this.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">The argument is an analogy. You were once a child. That child&apos;s body no longer exists. But no one says you died between childhood and adulthood. The dehi passed through those forms. Death, Krishna is suggesting, is the same kind of transition, just more complete. The wise person sees this and is not thrown by it.</div>
-          </div>
-          <div className="essence">You are the changeless ātman; let go of fear when facing change.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.13"
+          sanskrit="देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥"
+          iast="dehino'sminyathā dehe kaumāraṃ yauvanaṃ jarā | tathā dehāntaraprāptirdhīrastatra na muhyati ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="You are the changeless ātman; let go of fear when facing change."
+        />
 
         <p>
           This is where the Gita&apos;s argument about death begins. Not with a promise about heaven, not with a comfort about reunion. With a structural claim: you have already survived enormous change. What you are has persisted through all of it. The death of the body is a change in degree, not in kind.
@@ -635,20 +540,14 @@ export default function DeathAndSoulPage() {
           The most famous verse on this subject is 2.23. It is often quoted as a standalone comfort, but it only works as the conclusion of an argument already in progress. Krishna has been laying out the nature of the atman for six verses. Then he states it in the form of four absolute negations.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.23: nainam chindanti shastrani</div>
-          <div className="sanskrit">नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः । न चैनं क्लेदयन्त्यापो न शोषयति मारुतः ॥</div>
-          <div className="transliteration">nainaṃ chindanti śastrāṇi nainaṃ dahati pāvakaḥ | na cainaṃ kledayantyāpo na śoṣayati mārutaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Weapons cannot cut it. Fire cannot burn it. Water cannot wet it. Wind cannot dry it.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">The four elements in classical Indian cosmology are earth, fire, water, and air. Their characteristic actions are: earth displaces, fire burns, water wets, wind dries. Krishna is saying the atman is invulnerable to all four of these actions. This is not because the atman is very tough or well-protected. It is because the atman is not of the same order of reality as anything these elements can affect. You cannot cut what is not material. You cannot burn what has no substance to combust.</div>
-          </div>
-          <div className="essence">Your ātman cannot be harmed by anything outside. You are forever whole within.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.23: nainam chindanti shastrani"
+          sanskrit="नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः । न चैनं क्लेदयन्त्यापो न शोषयति मारुतः ॥"
+          iast="nainaṃ chindanti śastrāṇi nainaṃ dahati pāvakaḥ | na cainaṃ kledayantyāpo na śoṣayati mārutaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Your ātman cannot be harmed by anything outside. You are forever whole within."
+        />
 
         <p>
           The verse that follows, 2.24, continues the description. The atman is acchedya (cannot be cut), adahya (cannot be burned), akledya (cannot be wet), and ashoshya (cannot be dried). It is nitya (perpetual), sarvagatah (all-pervading), sthanuh (stable), achala (unmoving), and sanatana (beginningless). These are not poetic intensifiers. Each term is doing conceptual work. Together they describe something that is not located anywhere in particular, does not move, does not begin, does not end, and cannot be acted upon by any physical force.
@@ -663,20 +562,14 @@ export default function DeathAndSoulPage() {
           BG 2.20 is the direct statement. It comes before 2.23 and establishes the terms that 2.23 then applies. The verse is dense. Every noun carries weight.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.20</div>
-          <div className="sanskrit">न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥</div>
-          <div className="transliteration">na jāyate mriyate vā kadācinnāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato&apos;yaṃ purāṇo na hanyate hanyamāne śarīre ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">The atman never takes birth and never dies. It does not come into being nor ceases to exist. It is birthless (aja), eternal (nitya), changeless (shashvata), and beginningless (purana). Even if the sharira is destroyed, the atman is not harmed.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">The last line is the pivot: na hanyate hanyamane sharire. Even when the body is being slain, the atman is not slain. This is spoken to a man on a battlefield. It is not abstract comfort. It is a claim about what is actually happening when a body dies, stated in the plainest possible terms. The sharira ends. The atman does not.</div>
-          </div>
-          <div className="essence">The atman is birthless, eternal, and untouched by destruction.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.20"
+          sanskrit="न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"
+          iast="na jāyate mriyate vā kadācinnāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="The atman is birthless, eternal, and untouched by destruction."
+        />
 
         <p>
           The four Sanskrit adjectives here are worth sitting with separately. Aja means without birth, literally &ldquo;not born.&rdquo; Nitya means eternal, always existing. Shashvata means changeless, the same across all time. Purana means beginningless, without a starting point. Together they describe something that was never created and can never be destroyed, because creation and destruction are only possible for things that enter and exit existence. The atman never entered. It is not going anywhere.
@@ -687,20 +580,14 @@ export default function DeathAndSoulPage() {
           The most accessible image the Gita offers for the continuity of the dehi is the clothes analogy in 2.22. It is the verse that gets quoted most often in conversations about reincarnation, and for good reason. It does not require any metaphysical background to understand.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.22</div>
-          <div className="sanskrit">वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥</div>
-          <div className="transliteration">vāsāṃsi jīrṇāni yathā vihāya navāni gṛhṇāti naro&apos;parāṇi | tathā śarīrāṇi vihāya jīrṇānyanyāni saṃyāti navāni dehī ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Just as a person discards worn-out clothes and puts on new ones, the dehi leaves behind old, worn-out bodies and moves into new ones.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">The analogy is deliberately mundane. Changing clothes is not a crisis. The person doing the changing is not diminished by it. What changes is the outer layer. What continues is the one wearing it. The Gita is saying that the relationship between the dehi and the sharira is exactly this. The body is a garment. It wears out. The dehi takes another. What the analogy does not address is memory, personality, or the specifics of what continues. The Gita is making a structural point, not a personal one.</div>
-          </div>
-          <div className="essence">You are not the sharira; you are the ever-renewing dehi.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.22"
+          sanskrit="वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥"
+          iast="vāsāṃsi jīrṇāni yathā vihāya navāni gṛhṇāti naro'parāṇi | tathā śarīrāṇi vihāya jīrṇānyanyāni saṃyāti navāni dehī ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="You are not the sharira; you are the ever-renewing dehi."
+        />
 
         <p>
           The limit of the analogy is worth acknowledging. We know what we mean when we say &ldquo;the same person in different clothes.&rdquo; We mean the face, the voice, the memories, the relationships. The Gita&apos;s claim is more minimal. What continues is the dehi, the one who inhabits the body. The memories, the personality, the relational ties: these are built up in each life from the sharira and the senses, and they are left behind with the body. What continues is deeper than that, and harder to point at.
@@ -737,20 +624,14 @@ export default function DeathAndSoulPage() {
           The Gita returns to the question of what continues in Chapter 15. BG 15.7 says that every living being in this world is an eternal portion of the Paramātma, but becomes identified with the mind and the five senses, taking them to be its real self.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 15.7</div>
-          <div className="sanskrit">ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥</div>
-          <div className="transliteration">mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ | manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Every living being in this world is an eternal part of Paramātma, but becomes attached to the mind and five senses, mistaking them to be its true self.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">The jiva (individual soul) is described as an eternal amsha, a portion of the divine. It is sanātana, without beginning or end. But it becomes entangled in the mind and senses, forgetting its origin. After death, this entanglement continues into the next life. The karma accumulated through the attachment to the senses draws the jiva into a new body suited to that karma. This is the Gita&apos;s brief account of what continues and why.</div>
-          </div>
-          <div className="essence">You are always a part of Paramātma, greater than your mind or senses.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 15.7"
+          sanskrit="ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥"
+          iast="mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ | manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="You are always a part of Paramātma, greater than your mind or senses."
+        />
 
         <p>
           The mechanics of what determines the next birth are addressed more fully in Chapter 8, where Krishna describes the state of consciousness at the moment of death as particularly significant. The Gita does not offer a detailed map of the afterlife. What it does offer is a direction of travel: the dehi continues, shaped by what it has been attached to. The goal is to weaken that attachment, so the continuity becomes less about the senses and more about the atman itself.

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "What Does Bhagavad Gita Chapter 11 Actually Show? | Wisdom",
@@ -139,28 +140,6 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
-
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
@@ -262,7 +241,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -667,65 +645,13 @@ export default function ChapterPage11() {
           What is also remarkable: Arjuna asks softly. <em>If you think I am capable of seeing it, then show me.</em> The asker is not demanding. He recognizes that the seeing may not be in his control, that the asking itself is a kind of surrender. This is what makes the request work. The Gita does not give cosmic vision to anyone who insists. It gives it to one who has acknowledged that the seeing is a gift, not an entitlement.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 11.3</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            एवमेतद्यथात्थ त्वमात्मानं परमेश्वर ।<br />द्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम ॥
-          </div>
-          <div className="shloka-iast">
-            evam etad yathāttha tvam ātmānaṃ parameśvara |<br />draṣṭum icchāmi te rūpam aiśvaraṃ puruṣottama ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Everything you have said about yourself is true, Supreme Lord. And yet, I wish to see your sovereign form, O Supreme Person.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Belief and seeing are not opposites</div>
-              <div className="shloka-insight">
-                Arjuna's request is not a failure of trust. It is the natural progression of trust. You can completely believe the report from a friend and still need to see for yourself. The verse honors that. The Gita does not require blind belief. It anticipates that real belief eventually wants to see.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Belief becomes complete only when it wants to see."
-          </div>
-        </div>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 11.4</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            मन्यसे यदि तच्छक्यं मया द्रष्टुमिति प्रभो ।<br />योगेश्वर ततो मे त्वं दर्शयाऽऽत्मानमव्ययम् ॥
-          </div>
-          <div className="shloka-iast">
-            manyase yadi tac chakyaṃ mayā draṣṭum iti prabho |<br />yogeśvara tato me tvaṃ darśayātmānam avyayam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                If you think I am able to behold that form, Lord, Master of yoga, show me your imperishable Self.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The qualifier that earns the vision</div>
-              <div className="shloka-insight">
-                <em>If you think I am able</em>. Arjuna does not assume he is ready. He defers to Krishna's judgement. This single qualifier is what makes the request a real request rather than a demand. It is also the deeper psychological move: he has stopped trying to control even what he is asking for.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Real vision begins when control gives way to asking."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 11.3"
+          speaker="Arjuna"
+          sanskrit="एवमेतद्यथात्थ त्वमात्मानं परमेश्वर । द्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम ॥"
+          iast="evam etad yathāttha tvam ātmānaṃ parameśvara | draṣṭum icchāmi te rūpam aiśvaraṃ puruṣottama ||"
+          essence="Belief becomes complete only when it wants to see."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -746,35 +672,16 @@ export default function ChapterPage11() {
           This is one of the most cited verses in the Gita, partly because Robert Oppenheimer reached for it when he watched the first atomic bomb detonate. The instinct was correct. When ordinary language fails, when the event you are witnessing has overflowed every comparison, Sanskrit's reach for a thousand suns has a precision that ordinary English does not. The verse names the experience of confronting something so large that the act of seeing it changes you. Not just intellectually. Existentially.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 11.12</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता ।<br />यदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः ॥
-          </div>
-          <div className="shloka-iast">
-            divi sūrya-sahasrasya bhaved yugapad-utthitā |<br />yadi bhāḥ sadṛśī sā syād bhāsas tasya mahātmanaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                If a thousand suns were to rise at once in the sky, their light might begin to compare with the radiance of that Great Self.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why this verse keeps being quoted</div>
-              <div className="shloka-insight">
-                Comparison fails. The verse names that failure with the most generous comparison ordinary imagination can produce, and admits even that does not reach. The Gita is teaching, through Arjuna's mouth, what to do when language runs out. You name the failure. The naming itself is a kind of accuracy.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Even the brightest familiar light cannot measure the cosmic form's radiance."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 11.12"
+          speaker="Arjuna"
+          sanskrit="दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता । यदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः ॥"
+          iast="divi sūrya-sahasrasya bhaved yugapad-utthitā | yadi bhāḥ sadṛśī sā syād bhāsas tasya mahātmanaḥ ||"
+          meaning="If a thousand suns were to rise at once in the sky, their light might begin to compare with the radiance of that Great Self."
+          insightLabel="Why this verse keeps being quoted"
+          insight="Comparison fails. The verse names that failure with the most generous comparison ordinary imagination can produce, and admits even that does not reach. The Gita is teaching, through Arjuna's mouth, what to do when language runs out. You name the failure. The naming itself is a kind of accuracy."
+          essence="Even the brightest familiar light cannot measure the cosmic form's radiance."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -802,35 +709,16 @@ export default function ChapterPage11() {
           This is the Gita's honesty about religious experience. The encounter with the absolute is not pleasant. It is not the soft comfort that contemporary spirituality often promises. It is the meeting of finite consciousness with infinite reality, and finite consciousness does not survive the meeting intact. Arjuna does not collapse into bliss. He collapses into terror, then into reverence. The chapter is teaching that the highest experience is not the most pleasant one, and that the difference matters.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 11.19</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अनादिमध्यान्तमनन्तवीर्यमनन्तबाहुं शशिसूर्यनेत्रम् ।<br />पश्यामि त्वां दीप्तहुताशवक्त्रंस्वतेजसा विश्वमिदं तपन्तम् ॥
-          </div>
-          <div className="shloka-iast">
-            anādi-madhyāntam ananta-vīryam ananta-bāhuṃ śaśi-sūrya-netram |<br />paśyāmi tvāṃ dīpta-hutāśa-vaktraṃ sva-tejasā viśvam idaṃ tapantam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                I see you, without beginning, middle, or end, of infinite power, with infinite arms, eyes like sun and moon, mouths like blazing fire, scorching this entire world with your own radiance.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The vision exceeds the seer</div>
-              <div className="shloka-insight">
-                The verse uses negations to describe what positive language cannot, no beginning, no middle, no end. Each negation widens what cannot be held. By the end of the verse, the seer is being scorched by what he is seeing. The vision is not gentle. The vision is the truth, and the truth is more than a human eye was meant to hold all at once.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "What overwhelms the mind can also dissolve its resistance."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 11.19"
+          speaker="Arjuna"
+          sanskrit="अनादिमध्यान्तमनन्तवीर्यमनन्तबाहुं शशिसूर्यनेत्रम् । पश्यामि त्वां दीप्तहुताशवक्त्रंस्वतेजसा विश्वमिदं तपन्तम् ॥"
+          iast="anādi-madhyāntam ananta-vīryam ananta-bāhuṃ śaśi-sūrya-netram | paśyāmi tvāṃ dīpta-hutāśa-vaktraṃ sva-tejasā viśvam idaṃ tapantam ||"
+          meaning="I see you, without beginning, middle, or end, of infinite power, with infinite arms, eyes like sun and moon, mouths like blazing fire, scorching this entire world with your own radiance."
+          insightLabel="The vision exceeds the seer"
+          insight="The verse uses negations to describe what positive language cannot, no beginning, no middle, no end. Each negation widens what cannot be held. By the end of the verse, the seer is being scorched by what he is seeing. The vision is not gentle. The vision is the truth, and the truth is more than a human eye was meant to hold all at once."
+          essence="What overwhelms the mind can also dissolve its resistance."
+        />
 
         <div className="highlight-box">
           <p>
@@ -857,35 +745,16 @@ export default function ChapterPage11() {
           Read the verse outside of the war context, and it widens. The relationship is already changing. The job is already ending. The body is already aging. Whatever you are gripping is already loosening, not because you are doing anything wrong but because Time is what Time is. The verse is unsparing. But it is also, paradoxically, freeing. The thing you fear losing is not yours to keep. Knowing this is not despair. It is accuracy, and accuracy is the precondition for clean action.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 11.32</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रीभगवानुवाच<br />कालोऽस्मि लोकक्षयकृत्प्रवृद्धोलोकान्समाहर्तुमिह प्रवृत्तः ।<br />ऋतेऽपि त्वां न भविष्यन्ति सर्वेयेऽवस्थिताः प्रत्यनीकेषु योधाः ॥
-          </div>
-          <div className="shloka-iast">
-            śrī bhagavān uvāca |<br />kālo'smi loka-kṣaya-kṛt pravṛddho lokān samāhartum iha pravṛttaḥ |<br />ṛte'pi tvāṃ na bhaviṣyanti sarve ye'vasthitāḥ pratyanīkeṣu yodhāḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The Blessed One said: I am Time, grown mighty, destroyer of worlds, here to consume beings. Even without you, none of these warriors arrayed against you will survive.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why this verse will not let go of readers</div>
-              <div className="shloka-insight">
-                The truthfulness is the reason. Time is the one fact every human being eventually meets, and no metaphysics can be honest without naming it. The Gita names it here, in the loudest possible way, and uses the naming to do something therapeutic, to remove the illusion that any of us are holding the world together by gripping it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "What is ending was never in your hands to preserve."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 11.32"
+          speaker="Krishna"
+          sanskrit="श्रीभगवानुवाच कालोऽस्मि लोकक्षयकृत्प्रवृद्धोलोकान्समाहर्तुमिह प्रवृत्तः । ऋतेऽपि त्वां न भविष्यन्ति सर्वेयेऽवस्थिताः प्रत्यनीकेषु योधाः ॥"
+          iast="śrī bhagavān uvāca | kālo'smi loka-kṣaya-kṛt pravṛddho lokān samāhartum iha pravṛttaḥ | ṛte'pi tvāṃ na bhaviṣyanti sarve ye'vasthitāḥ pratyanīkeṣu yodhāḥ ||"
+          meaning="The Blessed One said: I am Time, grown mighty, destroyer of worlds, here to consume beings. Even without you, none of these warriors arrayed against you will survive."
+          insightLabel="Why this verse will not let go of readers"
+          insight="The truthfulness is the reason. Time is the one fact every human being eventually meets, and no metaphysics can be honest without naming it. The Gita names it here, in the loudest possible way, and uses the naming to do something therapeutic, to remove the illusion that any of us are holding the world together by gripping it."
+          essence="What is ending was never in your hands to preserve."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -913,35 +782,16 @@ export default function ChapterPage11() {
           Read this verse outside the immediate war context, and it becomes a working principle for every difficult act. You are not the originator of what is going to happen. You are not the final cause. You are the instrument, present, accountable, attentive, through which a larger pattern moves. This is one of the Gita's most freeing teachings, because it dissolves the most exhausting illusion in adult life: the illusion that you are personally responsible for outcomes you do not control. The work is still yours to do. The outcome was never yours to own.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 11.33</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तस्मात्त्वमुत्तिष्ठ यशो लभस्वजित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम् ।<br />मयैवैते निहताः पूर्वमेवनिमित्तमात्रं भव सव्यसाचिन् ॥
-          </div>
-          <div className="shloka-iast">
-            tasmāt tvam uttiṣṭha yaśo labhasva jitvā śatrūn bhuṅkṣva rājyaṃ samṛddham |<br />mayaivaite nihatāḥ pūrvam eva nimitta-mātraṃ bhava savya-sācin ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Therefore, rise. Win fame. Conquer the foes and enjoy a flourishing kingdom. They have already been slain by me. Become only the instrument, Arjuna.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The most freeing sentence in the chapter</div>
-              <div className="shloka-insight">
-                <em>Nimitta-mātraṃ bhava</em>: be only the instrument. This is not a small responsibility. It is, properly understood, almost all the responsibility you can actually carry. The work (done cleanly, attentively, accountably) is yours. The outcome belongs to the larger pattern. Holding both ends of that distinction, at the same time, is the whole spiritual life condensed.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Act fully, but let the larger order carry the result."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 11.33"
+          speaker="Krishna"
+          sanskrit="तस्मात्त्वमुत्तिष्ठ यशो लभस्वजित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम् । मयैवैते निहताः पूर्वमेवनिमित्तमात्रं भव सव्यसाचिन् ॥"
+          iast="tasmāt tvam uttiṣṭha yaśo labhasva jitvā śatrūn bhuṅkṣva rājyaṃ samṛddham | mayaivaite nihatāḥ pūrvam eva nimitta-mātraṃ bhava savya-sācin ||"
+          meaning="Therefore, rise. Win fame. Conquer the foes and enjoy a flourishing kingdom. They have already been slain by me. Become only the instrument, Arjuna."
+          insightLabel="The most freeing sentence in the chapter"
+          insight="Nimitta-mātraṃ bhava: be only the instrument. This is not a small responsibility. It is, properly understood, almost all the responsibility you can actually carry. The work (done cleanly, attentively, accountably) is yours. The outcome belongs to the larger pattern. Holding both ends of that distinction, at the same time, is the whole spiritual life condensed."
+          essence="Act fully, but let the larger order carry the result."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -962,35 +812,16 @@ export default function ChapterPage11() {
           The honesty here is unusual in spiritual literature. Most religious texts establish the supremacy of the Divine and stop there. The Gita lets Arjuna feel embarrassed about the prior familiarity. Then it does something even more important, it makes clear that the familiarity was not wrong. Krishna will, by the end of the chapter, take back his cosmic form and reappear as the human friend. The vision does not replace the friendship. It enlarges what the friendship has always contained.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 11.44</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तस्मात्प्रणम्य प्रणिधाय कायंप्रसादये त्वामहमीशमीड्यम् ।<br />पितेव पुत्रस्य सखेव सख्युःप्रियः प्रियायार्हसि देव सोढुम् ॥
-          </div>
-          <div className="shloka-iast">
-            tasmāt praṇamya praṇidhāya kāyaṃ prasādaye tvām aham īśam īḍyam |<br />piteva putrasya sakheva sakhyuḥ priyaḥ priyāyārhasi deva soḍhum ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Therefore, bowing my body down, I seek to please you, the worthy Lord. As a father forgives a son, as a friend forgives a friend, as a lover the beloved, Lord, forgive me.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Real reverence does not erase relationship</div>
-              <div className="shloka-insight">
-                The three analogies Arjuna reaches for (father, friend, lover) are all intimate. The verse does not say <em>now that I have seen who you really are, I will treat you with distance</em>. It says, please forgive me as someone close to me would forgive me. The cosmic vision does not destroy the closeness. The closeness was always real.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "True reverence asks forgiveness without excuses."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 11.44"
+          speaker="Arjuna"
+          sanskrit="तस्मात्प्रणम्य प्रणिधाय कायंप्रसादये त्वामहमीशमीड्यम् । पितेव पुत्रस्य सखेव सख्युःप्रियः प्रियायार्हसि देव सोढुम् ॥"
+          iast="tasmāt praṇamya praṇidhāya kāyaṃ prasādaye tvām aham īśam īḍyam | piteva putrasya sakheva sakhyuḥ priyaḥ priyāyārhasi deva soḍhum ||"
+          meaning="Therefore, bowing my body down, I seek to please you, the worthy Lord. As a father forgives a son, as a friend forgives a friend, as a lover the beloved, Lord, forgive me."
+          insightLabel="Real reverence does not erase relationship"
+          insight="The three analogies Arjuna reaches for (father, friend, lover) are all intimate. The verse does not say now that I have seen who you really are, I will treat you with distance. It says, please forgive me as someone close to me would forgive me. The cosmic vision does not destroy the closeness. The closeness was always real."
+          essence="True reverence asks forgiveness without excuses."
+        />
 
         <div className="highlight-box">
           <p>
@@ -1017,65 +848,27 @@ export default function ChapterPage11() {
           And then comes the verse that ends the chapter, and ends, in some sense, the central teaching of the entire Gita. <em>The one who works for me, takes me as the supreme, is devoted to me, free from attachment, without hatred for any being: that one comes to me.</em> That is the formula. Work, oriented toward the Divine. Devotion. Non-attachment to outcomes. Non-hatred toward beings. Four ingredients, simple to list, hard to hold together, but together they are the complete recipe. Everything the Gita has been teaching, finally, reduces to this verse.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 11.53</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            नाहं वेदैर्न तपसा न दानेन न चेज्यया ।<br />शक्य एवंविधो द्रष्टुं दृष्टवानसि मां यथा ॥
-          </div>
-          <div className="shloka-iast">
-            nāhaṃ vedair na tapasā na dānena na cejyayā |<br />śakya evaṃ-vidho draṣṭuṃ dṛṣṭavān asi māṃ yathā ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Not by the Vedas, not by austerity, not by charity, not by ritual sacrifice can I be seen in this form as you have just seen me.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The Gita retires the merit economy</div>
-              <div className="shloka-insight">
-                Every accumulative path, study, austerity, charity, ritual, is here explicitly named and explicitly insufficient. This is not the Gita rejecting those practices. It is the Gita placing them in their proper rank. They prepare the ground. They do not, by themselves, produce the vision. Only one thing produces the vision, and Krishna names it in the next verse.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The deepest vision comes through devotion, not mere accomplishment."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 11.53"
+          speaker="Krishna"
+          sanskrit="नाहं वेदैर्न तपसा न दानेन न चेज्यया । शक्य एवंविधो द्रष्टुं दृष्टवानसि मां यथा ॥"
+          iast="nāhaṃ vedair na tapasā na dānena na cejyayā | śakya evaṃ-vidho draṣṭuṃ dṛṣṭavān asi māṃ yathā ||"
+          meaning="Not by the Vedas, not by austerity, not by charity, not by ritual sacrifice can I be seen in this form as you have just seen me."
+          insightLabel="The Gita retires the merit economy"
+          insight="Every accumulative path, study, austerity, charity, ritual, is here explicitly named and explicitly insufficient. This is not the Gita rejecting those practices. It is the Gita placing them in their proper rank. They prepare the ground. They do not, by themselves, produce the vision. Only one thing produces the vision, and Krishna names it in the next verse."
+          essence="The deepest vision comes through devotion, not mere accomplishment."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 11.55</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः ।<br />निर्वैरः सर्वभूतेषु यः स मामेति पाण्डव ॥
-          </div>
-          <div className="shloka-iast">
-            mat-karma-kṛn mat-paramo mad-bhaktaḥ saṅga-varjitaḥ |<br />nirvairaḥ sarva-bhūteṣu yaḥ sa mām eti pāṇḍava ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The one who works for me, takes me as the supreme, is devoted to me, is free from attachment, and bears no hostility toward any being, that one comes to me, Pandava.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The five-part formula</div>
-              <div className="shloka-insight">
-                Work for the Divine. Hold the Divine as supreme. Be devoted. Drop attachment. Hold no enmity. The five elements form a complete spiritual program. Notice that they are not exotic, they are five orientations of an ordinary working life. The Gita's most radical claim, at the end of its most overwhelming chapter, is that the path is not complicated. It is just rare.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Devotion matures into freedom when attachment and hostility are gone."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 11.55"
+          speaker="Krishna"
+          sanskrit="मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः । निर्वैरः सर्वभूतेषु यः स मामेति पाण्डव ॥"
+          iast="mat-karma-kṛn mat-paramo mad-bhaktaḥ saṅga-varjitaḥ | nirvairaḥ sarva-bhūteṣu yaḥ sa mām eti pāṇḍava ||"
+          meaning="The one who works for me, takes me as the supreme, is devoted to me, is free from attachment, and bears no hostility toward any being, that one comes to me, Pandava."
+          insightLabel="The five-part formula"
+          insight="Work for the Divine. Hold the Divine as supreme. Be devoted. Drop attachment. Hold no enmity. The five elements form a complete spiritual program. Notice that they are not exotic, they are five orientations of an ordinary working life. The Gita's most radical claim, at the end of its most overwhelming chapter, is that the path is not complicated. It is just rare."
+          essence="Devotion matures into freedom when attachment and hostility are gone."
+        />
 
         <div className="pull-quote">
           <blockquote>

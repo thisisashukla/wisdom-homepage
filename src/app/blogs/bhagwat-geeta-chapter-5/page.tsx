@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 5 Summary \u2013 Key Verses & Meaning (Karma Sanyasa Yoga)",
@@ -238,52 +239,6 @@ const pageCSS = `
       .toc-list a:hover { color: var(--gold-light); }
 
       /* ── SHLOKA CARD ── */
-      .shloka-card {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        overflow: hidden;
-        margin: 36px 0;
-      }
-      .shloka-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 12px 22px;
-        border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05);
-      }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit {
-        padding: 24px 22px 16px;
-        font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px;
-        line-height: 1.75;
-        color: var(--gold-light);
-        border-bottom: 1px solid var(--border);
-      }
-      .shloka-iast {
-        padding: 12px 22px 16px;
-        font-size: 12.5px;
-        line-height: 1.7;
-        color: var(--text-dimmer);
-        border-bottom: 1px solid var(--border);
-        font-style: italic;
-      }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence {
-        padding: 14px 22px;
-        background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border);
-        font-family: "Playfair Display", serif;
-        font-style: italic;
-        font-size: 15px;
-        color: var(--text-dim);
-      }
 
       /* ── PULL QUOTE ── */
       .pull-quote {
@@ -572,7 +527,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -805,66 +759,28 @@ export default function ChapterFivePage() {
         </p>
 
         {/* SHLOKA 5.2 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 5.2</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            संन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ ।<br />तयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते ॥
-          </div>
-          <div className="shloka-iast">
-            saṃnyāsaḥ karmayogaśca niḥśreyasakarāvubhau |<br />tayostu karmasaṃnyāsātkarmayogo viśiṣyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Both renunciation and the yoga of action lead to the highest good. But of the two, karma yoga is superior to renunciation of action.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The practical answer</div>
-              <div className="shloka-insight">
-                The resolution of the either/or that has been building since Chapter 2. Both paths work. But for a person still engaged in the world, which most of us are, selfless action is more direct than renunciation. The Gita is saying: don't wait. Begin now, where you are, with what you have.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Selfless action is a greater path to growth than mere withdrawal."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 5.2"
+          speaker="Krishna"
+          sanskrit="संन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ । तयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते ॥"
+          iast="saṃnyāsaḥ karmayogaśca niḥśreyasakarāvubhau | tayostu karmasaṃnyāsātkarmayogo viśiṣyate ||"
+          meaning="Both renunciation and the yoga of action lead to the highest good. But of the two, karma yoga is superior to renunciation of action."
+          insightLabel="The practical answer"
+          insight="The resolution of the either/or that has been building since Chapter 2. Both paths work. But for a person still engaged in the world, which most of us are, selfless action is more direct than renunciation. The Gita is saying: don't wait. Begin now, where you are, with what you have."
+          essence="Selfless action is a greater path to growth than mere withdrawal."
+        />
 
         {/* SHLOKA 5.3 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 5.3</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति ।<br />निर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते ॥
-          </div>
-          <div className="shloka-iast">
-            jñeyaḥ sa nityasaṃnyāsī yo na dveṣṭi na kāṅkṣati |<br />nirdvandvo hi mahābāho sukhaṃ bandhātpramucyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                One who neither hates nor craves for anything is to be known as ever-renounced. Free from all dualities, O Arjuna, one is easily liberated from bondage.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The deeper understanding</div>
-              <div className="shloka-insight">
-                True renunciation is an internal state, not an external status. A person in business clothes who neither craves for gain nor resents loss is more renounced than a monk who silently covets peace. The Gita is describing a state of mind, not a lifestyle choice.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Freedom is found by rising above desire and aversion."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 5.3"
+          speaker="Krishna"
+          sanskrit="ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति । निर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते ॥"
+          iast="jñeyaḥ sa nityasaṃnyāsī yo na dveṣṭi na kāṅkṣati | nirdvandvo hi mahābāho sukhaṃ bandhātpramucyate ||"
+          meaning="One who neither hates nor craves for anything is to be known as ever-renounced. Free from all dualities, O Arjuna, one is easily liberated from bondage."
+          insightLabel="The deeper understanding"
+          insight="True renunciation is an internal state, not an external status. A person in business clothes who neither craves for gain nor resents loss is more renounced than a monk who silently covets peace. The Gita is describing a state of mind, not a lifestyle choice."
+          essence="Freedom is found by rising above desire and aversion."
+        />
 
         <p>
           This is the Gita's final word on the renunciation question, and it is liberating. You don't need to abandon the world. You need to abandon your desperate grip on it. A householder who acts with detachment is more renounced than an ascetic who secretly wants spiritual prestige. The distinction isn't external. It's the quality of your internal freedom.
@@ -886,35 +802,16 @@ export default function ChapterFivePage() {
         </p>
 
         {/* SHLOKA 5.10 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 5.10</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः ।<br />लिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥
-          </div>
-          <div className="shloka-iast">
-            brahmaṇyādhāya karmāṇi saṅgaṃ tyaktvā karoti yaḥ |<br />lipyate na sa pāpena padmapatramivāmbhasā ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                One who acts, offering all actions to Brahman and abandoning attachment, is untouched by sin, like a lotus leaf untouched by water.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The teaching within the metaphor</div>
-              <div className="shloka-insight">
-                The lotus leaf lives in water, draws nourishment from water, and is never wet. You can be fully engaged in the world, relationships, work, creativity, conflict, and remain untouched by its contamination if the attachment is absent. The key is offering, brahmaṇya ādhāya. When you recognize that your actions ultimately belong to something greater than your ego, you become free within them.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Act with surrender; let go of attachment, nothing negative can touch you."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 5.10"
+          speaker="Krishna"
+          sanskrit="ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः । लिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥"
+          iast="brahmaṇyādhāya karmāṇi saṅgaṃ tyaktvā karoti yaḥ | lipyate na sa pāpena padmapatramivāmbhasā ||"
+          meaning="One who acts, offering all actions to Brahman and abandoning attachment, is untouched by sin, like a lotus leaf untouched by water."
+          insightLabel="The teaching within the metaphor"
+          insight="The lotus leaf lives in water, draws nourishment from water, and is never wet. You can be fully engaged in the world, relationships, work, creativity, conflict, and remain untouched by its contamination if the attachment is absent. The key is offering, brahmaṇya ādhāya. When you recognize that your actions ultimately belong to something greater than your ego, you become free within them."
+          essence="Act with surrender; let go of attachment, nothing negative can touch you."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -943,35 +840,16 @@ export default function ChapterFivePage() {
         </p>
 
         {/* SHLOKA 5.18 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 5.18</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            विद्याविनयसंपन्ने ब्राह्मणे गवि हस्तिनि ।<br />शुनि चैव श्वपाके च पण्डिताः समदर्शिनः ॥
-          </div>
-          <div className="shloka-iast">
-            vidyāvinayasaṃpanne brāhmaṇe gavi hastini |<br />śuni caiva śvapāke ca paṇḍitāḥ samadarśinaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The truly learned see with equal vision a learned and humble brahmin, a cow, an elephant, a dog, and even a dog-eater.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What equal vision means</div>
-              <div className="shloka-insight">
-                Equal vision (sama-darshitvam) is not the same as being blind to difference. It means the wise person's fundamental regard for each being is not affected by the being's social status, species, or appearance. This is one of the Gita's most radical social teachings. The dog-eater was the lowest caste in ancient society. To put that figure in the same sentence of regard as a brahmin was revolutionary.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "See the Divine in everyone, regardless of outer differences."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 5.18"
+          speaker="Krishna"
+          sanskrit="विद्याविनयसंपन्ने ब्राह्मणे गवि हस्तिनि । शुनि चैव श्वपाके च पण्डिताः समदर्शिनः ॥"
+          iast="vidyāvinayasaṃpanne brāhmaṇe gavi hastini | śuni caiva śvapāke ca paṇḍitāḥ samadarśinaḥ ||"
+          meaning="The truly learned see with equal vision a learned and humble brahmin, a cow, an elephant, a dog, and even a dog-eater."
+          insightLabel="What equal vision means"
+          insight="Equal vision (sama-darshitvam) is not the same as being blind to difference. It means the wise person's fundamental regard for each being is not affected by the being's social status, species, or appearance. This is one of the Gita's most radical social teachings. The dog-eater was the lowest caste in ancient society. To put that figure in the same sentence of regard as a brahmin was revolutionary."
+          essence="See the Divine in everyone, regardless of outer differences."
+        />
 
         <div className="highlight-box">
           <p>
@@ -995,35 +873,16 @@ export default function ChapterFivePage() {
         </p>
 
         {/* SHLOKA 5.24 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 5.24</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः ।<br />स योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति ॥
-          </div>
-          <div className="shloka-iast">
-            yo'ntaḥsukho'ntarārāmastathāntarjyotireva yaḥ |<br />sa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                One who finds happiness within, who is pleased within, who is illuminated within, that yogi attains Brahman-nirvana and becomes Brahman.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The direction of attention</div>
-              <div className="shloka-insight">
-                Three "within" words in a single verse: happiness within, delight within, light within. The Gita's consistent message: what you are looking for outside is located inside. This verse is its most concentrated statement of that teaching. You're not seeking something distant. You're recognizing what's already true.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Your truest peace and joy are always inside you, never outside."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 5.24"
+          speaker="Krishna"
+          sanskrit="योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः । स योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति ॥"
+          iast="yo'ntaḥsukho'ntarārāmastathāntarjyotireva yaḥ | sa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati ||"
+          meaning="One who finds happiness within, who is pleased within, who is illuminated within, that yogi attains Brahman-nirvana and becomes Brahman."
+          insightLabel="The direction of attention"
+          insight="Three \"within\" words in a single verse: happiness within, delight within, light within. The Gita's consistent message: what you are looking for outside is located inside. This verse is its most concentrated statement of that teaching. You're not seeking something distant. You're recognizing what's already true."
+          essence="Your truest peace and joy are always inside you, never outside."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -1041,35 +900,16 @@ export default function ChapterFivePage() {
         </p>
 
         {/* SHLOKA 5.29 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 5.29</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम् ।<br />सुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति ॥
-          </div>
-          <div className="shloka-iast">
-            bhoktāraṃ yajñatapasāṃ sarvalokamaheśvaram |<br />suhṛdaṃ sarvabhūtānāṃ jñātvā māṃ śāntimṛcchati ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Having known me as the enjoyer of all sacrifices and austerities, the great Lord of all the worlds, and the sincere friend of all living beings, one attains peace.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The ultimate teaching</div>
-              <div className="shloka-insight">
-                The chapter ends not with a technique or a discipline but with recognition. When you truly know, not believe, not hope, but know, that the universe is friendly, that all effort is received and honored, and that you are not alone in it, peace arrives. Not as a reward. As the natural consequence of that knowledge. The key word is suhṛdam, sincere friend. Not indifferent universe. Not hostile force. Friend.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Trusting the Divine as the friend of all beings leads to true peace."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 5.29"
+          speaker="Krishna"
+          sanskrit="भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम् । सुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति ॥"
+          iast="bhoktāraṃ yajñatapasāṃ sarvalokamaheśvaram | suhṛdaṃ sarvabhūtānāṃ jñātvā māṃ śāntimṛcchati ||"
+          meaning="Having known me as the enjoyer of all sacrifices and austerities, the great Lord of all the worlds, and the sincere friend of all living beings, one attains peace."
+          insightLabel="The ultimate teaching"
+          insight="The chapter ends not with a technique or a discipline but with recognition. When you truly know, not believe, not hope, but know, that the universe is friendly, that all effort is received and honored, and that you are not alone in it, peace arrives. Not as a reward. As the natural consequence of that knowledge. The key word is suhṛdam, sincere friend. Not indifferent universe. Not hostile force. Friend."
+          essence="Trusting the Divine as the friend of all beings leads to true peace."
+        />
 
         <p>
           This is how Chapter 5 ends. Not with a command. With a promise. When you understand that you are held, that your efforts matter, that your suffering has meaning, that you belong to something larger than your fear, peace becomes inevitable. It's not something you achieve. It's something you recognize. The Wisdom app brings this teaching to you daily because it's the teaching that sustains practice when practice feels difficult. You're not earning salvation. You're remembering that you were never lost.

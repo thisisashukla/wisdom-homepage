@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Nishkama Karma: Acting Without Attachment (Bhagavad Gita) | Wisdom",
@@ -197,96 +198,6 @@ const pageCSS = `
         p {
             margin-bottom: 1.5rem;
             color: var(--text-dim);
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-
-        .shloka-card:hover {
-            background: var(--bg-card-hover);
-        }
-
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .meaning-text {
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .insight-text {
-            color: var(--text-dim);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -641,20 +552,14 @@ export default function NishkamaKarmaPage() {
           This is the verse the whole teaching rests on. It appears in Chapter 2, where Krishna has begun dismantling Arjuna&apos;s paralysis by reframing what action is for.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.47</div>
-          <div className="sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥</div>
-          <div className="transliteration">karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo&apos;stvakarmaṇi ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">You have the right to do your actions, but not to control the results. Do not be attached to the fruits of your actions, and do not fall into inaction.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">This verse builds viveka (discernment) and steadiness. It helps us practice detached effort, reducing anxiety, and empowering us to keep acting even in uncertainty. Notice the four distinct instructions packed here: act, do not claim the fruit, do not let the fruit be your motive, and crucially, do not use this teaching to justify inaction. All four are required together.</div>
-          </div>
-          <div className="essence">Focus on right action, let go of attachment to results.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.47"
+          sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
+          iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Focus on right action, let go of attachment to results."
+        />
 
         <p>
           The fourth instruction deserves attention. Krishna explicitly addresses the escape hatch: &ldquo;well, if I shouldn&apos;t care about results, why do anything at all?&rdquo; The Gita closes that door directly. Inaction is not an option. You are embodied, you have duties, you are in relationship with others and with the world. The question is not whether to act, but the internal quality you bring to acting.
@@ -665,20 +570,14 @@ export default function NishkamaKarmaPage() {
           Chapter 3 shifts the frame. Instead of talking about what you should not want, it talks about what the action can be for. The reframe is around yajna, which is usually translated as sacrifice or ritual offering.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 3.9</div>
-          <div className="sanskrit">यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः । तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥</div>
-          <div className="transliteration">yajñārthātkarmaṇo&apos;nyatra loko&apos;yaṃ karmabandhanaḥ | tadarthaṃ karma kaunteya muktasaṃgaḥ samācara ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">When you do your duties only for yourself, you get trapped by their results. But if you do your duties for Yajna, with selflessness and for the larger order, you stay free. So, do what is right without being attached.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">This verse nurtures the mental freedom that comes from selfless action. It encourages cultivating detachment and aligning your work with something beyond personal benefit, which is a tool for resilience and inner calm. The action itself does not change. What changes is what the action is for. When it is for you and your craving, it binds. When it is offered outward, it frees.</div>
-          </div>
-          <div className="essence">Selfless action, done as an offering, brings true freedom.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.9"
+          sanskrit="यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः । तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥"
+          iast="yajñārthātkarmaṇo'nyatra loko'yaṃ karmabandhanaḥ | tadarthaṃ karma kaunteya muktasaṃgaḥ samācara ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Selfless action, done as an offering, brings true freedom."
+        />
 
         <p>
           The yajna framing does something useful. It does not ask you to stop caring. It redirects what you care about. Instead of asking &ldquo;what will I get?&rdquo;, you ask &ldquo;what does this serve?&rdquo; The quality of your effort does not drop. In fact, many people find their work improves when the anxiety about personal outcome stops driving it. You are no longer managing the work through the filter of &ldquo;how does this look for me.&rdquo; You are just doing the work.
@@ -693,35 +592,23 @@ export default function NishkamaKarmaPage() {
           Two verses from Chapter 3 and 4 describe what the internal state of nishkama karma actually feels like when it is working.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 3.19</div>
-          <div className="sanskrit">तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥</div>
-          <div className="transliteration">tasmādasaktaḥ satataṃ kāryaṃ karma samācara | asakto hyācarankarma paramāpnoti pūruṣaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Do your duties faithfully, but do not cling to their results. Acting without selfish attachment helps you connect with your true, highest Self.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">Practicing detachment from results creates equanimity. It trains you to stay balanced, direct your energy toward purposeful action, and avoid stress caused by obsessing over things beyond control. The verse does not promise you will get what you want. It promises something the Gita considers more valuable: you become free while acting.</div>
-          </div>
-          <div className="essence">Detached action leads to inner freedom and the ultimate realization.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.19"
+          sanskrit="तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥"
+          iast="tasmādasaktaḥ satataṃ kāryaṃ karma samācara | asakto hyācarankarma paramāpnoti pūruṣaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Detached action leads to inner freedom and the ultimate realization."
+        />
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 4.20</div>
-          <div className="sanskrit">त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः । कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥</div>
-          <div className="transliteration">tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ | karmaṇyabhipravṛtto&apos;pi naiva kiñcitkaroti saḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">When a person lets go of attachment to results, feels content always, and does not depend on anything, then even while acting, they are not truly &apos;doing&apos; anything.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">This verse trains your discerning intellect to focus on the process, not just the results, cultivating inner contentment and resilience. Nityatripta means always content, not content after the good outcome arrives. The contentment precedes the result because it is not conditional on the result.</div>
-          </div>
-          <div className="essence">Freedom comes when you act without clinging to success or failure.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.20"
+          sanskrit="त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः । कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥"
+          iast="tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ | karmaṇyabhipravṛtto'pi naiva kiñcitkaroti saḥ ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Freedom comes when you act without clinging to success or failure."
+        />
 
         <h2>What About Ambition? Is This Just Giving Up?</h2>
         <p>
@@ -760,20 +647,14 @@ export default function NishkamaKarmaPage() {
           By Chapter 18, the Gita is completing its argument. Krishna makes a clarification that is easy to miss: you cannot actually stop acting. Renouncing action entirely is not an option for an embodied person.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 18.11</div>
-          <div className="sanskrit">न हि देहभृता शक्यं त्यक्तुं कर्माण्यशेषतः । यस्तु कर्मफलत्यागी स त्यागीत्यभिधीयते ॥</div>
-          <div className="transliteration">na hi dehabhṛtā śakyaṃ tyaktuṃ karmāṇyaśeṣataḥ | yastu karmaphalatyāgī sa tyāgītyabhidhīyate ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">A person living in a body cannot completely stop doing actions. Only giving up the desire for rewards from those actions makes someone a true tyagi (renunciate).</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">This verse helps you develop detachment from outcomes and become more present and less burdened by expectations. The Gita is closing the renunciation escape hatch again. Real renunciation is not leaving your responsibilities. It is doing your responsibilities while releasing the craving for what you hope they will produce. The tyagi, the one who has given up, has given up outcome-craving, not action.</div>
-          </div>
-          <div className="essence">Letting go of the desire for results brings real freedom and peace.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.11"
+          sanskrit="न हि देहभृता शक्यं त्यक्तुं कर्माण्यशेषतः । यस्तु कर्मफलत्यागी स त्यागीत्यभिधीयते ॥"
+          iast="na hi dehabhṛtā śakyaṃ tyaktuṃ karmāṇyaśeṣataḥ | yastu karmaphalatyāgī sa tyāgītyabhidhīyate ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Letting go of the desire for results brings real freedom and peace."
+        />
 
         <p>
           This verse makes nishkama karma accessible to people who live ordinary lives. You do not have to be a monk. You do not have to withdraw from your work, your family, your responsibilities. You engage fully. The practice is in the quality of inner relationship to what you are doing, whether you are clinging to a specific result or whether you are genuinely willing to let the outcome be what it is.

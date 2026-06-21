@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita 2.47: Karmanye Vadhikaraste Meaning Explained | Wisdom",
@@ -197,96 +198,6 @@ const pageCSS = `
         p {
             margin-bottom: 1.5rem;
             color: var(--text-dim);
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-
-        .shloka-card:hover {
-            background: var(--bg-card-hover);
-        }
-
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .meaning-text {
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .insight-text {
-            color: var(--text-dim);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -639,20 +550,14 @@ export default function BG247Page() {
           Before interpreting, the text itself. Read this slowly once.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.47</div>
-          <div className="sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।<br />मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥</div>
-          <div className="transliteration">karmaṇyevādhikāraste mā phaleṣu kadācana |<br />mā karmaphalaheturbhūrmā te saṅgo&apos;stvakarmaṇi ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">You have the right to do your actions, but not to control the results. Do not be attached to the fruits of your actions, and do not fall into inaction.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Contains</div>
-            <div className="insight-text">This verse builds viveka (discernment) and steadiness. It lays out the practice of detached effort, nishkama karma, in four specific instructions: act, do not own results, do not let results be the motive, do not use this as cover for not acting. Each clause corrects a different failure mode.</div>
-          </div>
-          <div className="essence">Focus on right action, let go of attachment to results.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.47"
+          sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
+          iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
+          meaningLabel="Translation"
+          insightLabel="What This Contains"
+          essence="Focus on right action, let go of attachment to results."
+        />
 
         <p>
           The verse is spoken by Krishna to Arjuna in the middle of a battlefield. Arjuna has collapsed. He will not fight. He says the cost is too high, the grief too great, the outcome too uncertain. Krishna&apos;s answer, across 700 verses, begins here, with this one.
@@ -756,35 +661,23 @@ export default function BG247Page() {
           BG 2.47 does not stand alone. The Gita returns to this teaching repeatedly, each time from a slightly different angle. Two verses that extend the same idea:
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 3.19</div>
-          <div className="sanskrit">तस्मादसक्तः सततं कार्यं कर्म समाचर ।<br />असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥</div>
-          <div className="transliteration">tasmādasaktaḥ satataṃ kāryaṃ karma samācara |<br />asakto hyācaran karma paramāpnoti pūruṣaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Therefore, always perform your required duties without attachment. By performing duty without attachment, a person attains the highest.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Adds</div>
-            <div className="insight-text">Chapter 3 picks up where 2.47 leaves off. Here Krishna makes the instruction continuous: not just in hard moments but always, as a steady practice. The word satatam means perpetually, constantly. This is not a situational tactic for when things get difficult. It is a way of working.</div>
-          </div>
-          <div className="essence">Detached action, practiced continuously, leads to the highest.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.19"
+          sanskrit="तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥"
+          iast="tasmādasaktaḥ satataṃ kāryaṃ karma samācara | asakto hyācaran karma paramāpnoti pūruṣaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="What This Adds"
+          essence="Detached action, practiced continuously, leads to the highest."
+        />
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 4.20</div>
-          <div className="sanskrit">त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः ।<br />कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥</div>
-          <div className="transliteration">tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ |<br />karmaṇyabhipravṛtto&apos;pi naiva kiñcitkaroti saḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Having abandoned attachment to the fruits of actions, always content and self-sufficient, even while engaged in action, such a person does nothing at all.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Adds</div>
-            <div className="insight-text">This verse describes the paradox of karma yoga at its fullest expression. The person is fully active, engaged in the work, but because they have let go of attachment to results so completely, they are in a deep sense not the doer. They are not accumulating karma in the way that binds. Chapter 4 takes the principle in 2.47 to its logical conclusion: action without the psychological weight of ownership.</div>
-          </div>
-          <div className="essence">Act fully and cling to nothing. That is the highest freedom.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.20"
+          sanskrit="त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः । कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥"
+          iast="tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ | karmaṇyabhipravṛtto'pi naiva kiñcitkaroti saḥ ||"
+          meaningLabel="Translation"
+          insightLabel="What This Adds"
+          essence="Act fully and cling to nothing. That is the highest freedom."
+        />
 
         <p>
           The arc across these three verses is worth noting. 2.47 gives the instruction. 3.19 says practice it always, not just when under pressure. 4.20 describes what it looks like when the practice is complete: full engagement in work, with none of the ego-weight of ownership attached to it.

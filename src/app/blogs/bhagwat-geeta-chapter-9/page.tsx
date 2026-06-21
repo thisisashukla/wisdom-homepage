@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 9 Summary – Key Verses & Meaning (Raja Vidya Yoga)",
@@ -139,28 +140,6 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
-
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
@@ -262,7 +241,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -695,35 +673,16 @@ export default function ChapterPage9() {
           Notice what Krishna is doing with this list. He is dismantling, in advance, every argument for why the deepest truth must be hard, hidden, reserved for the long-disciplined. The Gita's most exalted teaching is announced as the most accessible. This is not anti-discipline, the previous chapter spent twenty-eight verses on training the mind. It is a statement that the destination of the discipline, once reached, turns out to have been close to home all along.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 9.2</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            राजविद्या राजगुह्यं पवित्रमिदमुत्तमम् ।<br />प्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम् ॥
-          </div>
-          <div className="shloka-iast">
-            rāja-vidyā rāja-guhyaṃ pavitram idam uttamam |<br />pratyakṣāvagamaṃ dharmyaṃ susukhaṃ kartum avyayam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                This is the king of knowledge, the king of secrets, supremely pure. It is directly knowable, in accord with dharma, supremely easy to practice, and imperishable.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Five qualities that change the conversation</div>
-              <div className="shloka-insight">
-                Three of the five adjectives are the surprise. <em>Pratyakṣa-avagamam</em>, you can verify this in your own experience. <em>Dharmyam</em>, it does not contradict your duties. <em>Su-sukhaṃ kartum</em>, it is easy to practice. The Gita's highest teaching is not a hidden esoteric. It is what becomes available once the noise has been turned down enough to hear it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The highest truth is both profound and simple to live."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 9.2"
+          speaker="Krishna"
+          sanskrit="राजविद्या राजगुह्यं पवित्रमिदमुत्तमम् । प्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम् ॥"
+          iast="rāja-vidyā rāja-guhyaṃ pavitram idam uttamam | pratyakṣāvagamaṃ dharmyaṃ susukhaṃ kartum avyayam ||"
+          meaning="This is the king of knowledge, the king of secrets, supremely pure. It is directly knowable, in accord with dharma, supremely easy to practice, and imperishable."
+          insightLabel="Five qualities that change the conversation"
+          insight="Three of the five adjectives are the surprise. Pratyakṣa-avagamam, you can verify this in your own experience. Dharmyam, it does not contradict your duties. Su-sukhaṃ kartum, it is easy to practice. The Gita's highest teaching is not a hidden esoteric. It is what becomes available once the noise has been turned down enough to hear it."
+          essence="The highest truth is both profound and simple to live."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -751,35 +710,16 @@ export default function ChapterPage9() {
           Western theological categories struggle with this. It is not pantheism (God = everything). It is not classical theism (God is separate from everything). It is what the Vaishnava tradition would later call <em>achintya-bheda-abheda</em>, inconceivable simultaneous difference and non-difference. The image is asymmetric. The container is in you, but you are not in the container. Practically, this lets the Gita say two things that other traditions have to choose between: everything is sacred, and the sacred is not exhausted by everything.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 9.4</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            मया ततमिदं सर्वं जगदव्यक्तमूर्तिना ।<br />मत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः ॥
-          </div>
-          <div className="shloka-iast">
-            mayā tatam idaṃ sarvaṃ jagad avyakta-mūrtinā |<br />mat-sthāni sarva-bhūtāni na cāhaṃ teṣv avasthitaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                All this world is pervaded by my unmanifest form. All beings dwell in me. But I am not contained in them.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What the asymmetry buys us</div>
-              <div className="shloka-insight">
-                If God were exhausted by the world, the world's suffering would be God's defeat. If God were entirely separate from the world, the world's suffering would not be God's concern. The Gita's asymmetric position lets the Divine be intimate with all suffering without being defeated by it. Every being is held. Nothing held diminishes the holder.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The supreme reality holds everything without being held by anything."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 9.4"
+          speaker="Krishna"
+          sanskrit="मया ततमिदं सर्वं जगदव्यक्तमूर्तिना । मत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः ॥"
+          iast="mayā tatam idaṃ sarvaṃ jagad avyakta-mūrtinā | mat-sthāni sarva-bhūtāni na cāhaṃ teṣv avasthitaḥ ||"
+          meaning="All this world is pervaded by my unmanifest form. All beings dwell in me. But I am not contained in them."
+          insightLabel="What the asymmetry buys us"
+          insight="If God were exhausted by the world, the world's suffering would be God's defeat. If God were entirely separate from the world, the world's suffering would not be God's concern. The Gita's asymmetric position lets the Divine be intimate with all suffering without being defeated by it. Every being is held. Nothing held diminishes the holder."
+          essence="The supreme reality holds everything without being held by anything."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -800,35 +740,16 @@ export default function ChapterPage9() {
           This is the Gita's reply to the persistent human appetite for spiritual spectacle. The Divine is not failing to appear. It is appearing in forms our perception has trained itself to ignore. The teacher in the next room. The grieving parent in the elevator. The slightly worn-out friend who keeps showing up. Verse 9.11 is asking you, with some patience, to look again at the ordinary, because the ordinary is where the Divine has chosen to live.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 9.11</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम् ।<br />परं भावमजानन्तो मम भूतमहेश्वरम् ॥
-          </div>
-          <div className="shloka-iast">
-            avajānanti māṃ mūḍhā mānuṣīṃ tanum āśritam |<br />paraṃ bhāvam ajānanto mama bhūta-maheśvaram ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Fools dismiss me when I am clothed in human form, not knowing my higher nature as the great Lord of all beings.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The verse is about you, not about Krishna</div>
-              <div className="shloka-insight">
-                The accusation in this verse is not at people two thousand years ago who missed Krishna in person. It is at every reader who is currently mistaking the ordinary surface of their life for the whole of it. The Divine is not hiding. We are looking at it without recognising it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Ordinary appearance can hide the highest reality."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 9.11"
+          speaker="Krishna"
+          sanskrit="अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम् । परं भावमजानन्तो मम भूतमहेश्वरम् ॥"
+          iast="avajānanti māṃ mūḍhā mānuṣīṃ tanum āśritam | paraṃ bhāvam ajānanto mama bhūta-maheśvaram ||"
+          meaning="Fools dismiss me when I am clothed in human form, not knowing my higher nature as the great Lord of all beings."
+          insightLabel="The verse is about you, not about Krishna"
+          insight="The accusation in this verse is not at people two thousand years ago who missed Krishna in person. It is at every reader who is currently mistaking the ordinary surface of their life for the whole of it. The Divine is not hiding. We are looking at it without recognising it."
+          essence="Ordinary appearance can hide the highest reality."
+        />
 
         <div className="highlight-box">
           <p>
@@ -855,35 +776,16 @@ export default function ChapterPage9() {
           Modern readers often hesitate at this verse. It can sound like a transactional promise, believe hard enough, and the universe will provide. That is not the verse's structure. The condition is not belief. The condition is undivided attention. <em>Ananyāś cintayanto</em>, those who think of me without thinking of anything else. This is rare. Most prayer is hedged with backup plans. The verse is describing the unhedged state, and saying that, in that state, the providing happens. Whether it is a metaphysical promise or a psychological observation, the verse names something real: the mind that is not splitting itself between God and Plan B is met differently than the one that is.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 9.22</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते ।<br />तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥
-          </div>
-          <div className="shloka-iast">
-            ananyāś cintayanto māṃ ye janāḥ paryupāsate |<br />teṣāṃ nityābhiyuktānāṃ yoga-kṣemaṃ vahāmy aham ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                For those whose minds are wholly on me, who worship me always, those who are constantly united with me, I bear their yoga and kshema. I bring them what they lack; I preserve what they have.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The two words that carry the verse</div>
-              <div className="shloka-insight">
-                <em>Yoga</em> here means acquisition, bringing what is not yet present. <em>Kṣema</em> means protection, preserving what already is. Together they cover the whole of material concern. The verse is saying: when the mind is undivided, the part of you that was anxiously managing acquisition and preservation can rest. Something else takes over the carrying.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Unwavering devotion is met by unwavering support."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 9.22"
+          speaker="Krishna"
+          sanskrit="अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥"
+          iast="ananyāś cintayanto māṃ ye janāḥ paryupāsate | teṣāṃ nityābhiyuktānāṃ yoga-kṣemaṃ vahāmy aham ||"
+          meaning="For those whose minds are wholly on me, who worship me always, those who are constantly united with me, I bear their yoga and kshema. I bring them what they lack; I preserve what they have."
+          insightLabel="The two words that carry the verse"
+          insight="Yoga here means acquisition, bringing what is not yet present. Kṣema means protection, preserving what already is. Together they cover the whole of material concern. The verse is saying: when the mind is undivided, the part of you that was anxiously managing acquisition and preservation can rest. Something else takes over the carrying."
+          essence="Unwavering devotion is met by unwavering support."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -911,35 +813,16 @@ export default function ChapterPage9() {
           Notice the structure of the verse. The object offered is almost irrelevant. The qualifier is everything. <em>Bhaktyā prayacchati</em>, offered with devotion. <em>Prayatātmanaḥ</em>, from a sincere heart. The cost is measured in love, not in the value of the item. A glass of water given with full presence is more complete, in this scheme, than an elaborate ritual performed mechanically. The verse is a permanent rebuke to spiritual showmanship.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 9.26</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति ।<br />तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥
-          </div>
-          <div className="shloka-iast">
-            patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati |<br />tad ahaṃ bhakty-upahṛtam aśnāmi prayatātmanaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Whoever offers me a leaf, a flower, a fruit, or water with devotion, I accept that devoted offering from one whose heart is pure.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why this verse democratised Indian spirituality</div>
-              <div className="shloka-insight">
-                Before this verse, complex Vedic rituals were the prevailing model of religious access. After this verse, the model widens. The widow in a small village offering a flower is engaged in the same act, with the same standing, as the priest performing the elaborate sacrifice. The cost is leveled. The Divine is reachable through what is at hand.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "A small offering becomes complete when devotion fills it."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 9.26"
+          speaker="Krishna"
+          sanskrit="पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति । तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥"
+          iast="patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati | tad ahaṃ bhakty-upahṛtam aśnāmi prayatātmanaḥ ||"
+          meaning="Whoever offers me a leaf, a flower, a fruit, or water with devotion, I accept that devoted offering from one whose heart is pure."
+          insightLabel="Why this verse democratised Indian spirituality"
+          insight="Before this verse, complex Vedic rituals were the prevailing model of religious access. After this verse, the model widens. The widow in a small village offering a flower is engaged in the same act, with the same standing, as the priest performing the elaborate sacrifice. The cost is leveled. The Divine is reachable through what is at hand."
+          essence="A small offering becomes complete when devotion fills it."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -960,35 +843,16 @@ export default function ChapterPage9() {
           Read literally, this is a transformation of how a life can feel. The work email is an offering. The meal is an offering. The difficult conversation is an offering. None of these become magically pleasant by being offered. But they stop being yours alone. The weight changes. You are no longer carrying the day to extract benefit from it; you are passing it through your hands toward something larger. This is the practical content of <em>karma yoga</em>, and Chapter 9 is where the practice gets named most directly.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 9.27</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यत्करोषि यदश्नासि यज्जुहोषि ददासि यत् ।<br />यत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम् ॥
-          </div>
-          <div className="shloka-iast">
-            yat karoṣi yad aśnāsi yaj juhoṣi dadāsi yat |<br />yat tapasyasi kaunteya tat kuruṣva mad-arpaṇam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Whatever you do, whatever you eat, whatever you offer, whatever you give, whatever discipline you practice, Arjuna, do it as an offering to me.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The shift from doing to offering</div>
-              <div className="shloka-insight">
-                <em>Mad-arpaṇam</em>, "offered to me." The verse does not change the activity. It changes the direction. Same email, same meal, same conversation, but the question is no longer just what will it get me. The question is also who is this for. A life directed outside itself stops feeling like a chase and starts feeling like a service.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Every action becomes complete when it is offered."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 9.27"
+          speaker="Krishna"
+          sanskrit="यत्करोषि यदश्नासि यज्जुहोषि ददासि यत् । यत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम् ॥"
+          iast="yat karoṣi yad aśnāsi yaj juhoṣi dadāsi yat | yat tapasyasi kaunteya tat kuruṣva mad-arpaṇam ||"
+          meaning="Whatever you do, whatever you eat, whatever you offer, whatever you give, whatever discipline you practice, Arjuna, do it as an offering to me."
+          insightLabel="The shift from doing to offering"
+          insight="Mad-arpaṇam, \"offered to me.\" The verse does not change the activity. It changes the direction. Same email, same meal, same conversation, but the question is no longer just what will it get me. The question is also who is this for. A life directed outside itself stops feeling like a chase and starts feeling like a service."
+          essence="Every action becomes complete when it is offered."
+        />
 
         <div className="highlight-box">
           <p>
@@ -1015,65 +879,27 @@ export default function ChapterPage9() {
           Read carelessly, this can sound like a cheap absolution. Read carefully, it is one of the most morally serious claims in the book. The verse is not saying past conduct doesn't matter. It is saying the direction of the soul matters more than its history. A clean turning, not a cleaner past, is what is required. The verse is the Gita's most explicit rejection of the idea that anyone is too far gone to begin. The door is open from where you are now.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 9.30</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अपि चेत्सुदुराचारो भजते मामनन्यभाक् ।<br />साधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः ॥
-          </div>
-          <div className="shloka-iast">
-            api cet sudurācāro bhajate mām ananya-bhāk |<br />sādhur eva sa mantavyaḥ samyag vyavasito hi saḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Even if a person of very poor conduct turns to me with undivided devotion, they are to be regarded as righteous, for their resolve is rightly placed.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What the verse is and isn't saying</div>
-              <div className="shloka-insight">
-                The verse is not saying conduct doesn't matter. It is saying that a wholehearted turn outranks accumulated wrong. The condition is <em>ananya-bhāk</em>, undivided, not partial, not strategic. The verse rewards orientation, not history. This is good news for anyone who has ever wondered if they are too late.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Undivided devotion can outweigh even a deeply flawed life."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 9.30"
+          speaker="Krishna"
+          sanskrit="अपि चेत्सुदुराचारो भजते मामनन्यभाक् । साधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः ॥"
+          iast="api cet sudurācāro bhajate mām ananya-bhāk | sādhur eva sa mantavyaḥ samyag vyavasito hi saḥ ||"
+          meaning="Even if a person of very poor conduct turns to me with undivided devotion, they are to be regarded as righteous, for their resolve is rightly placed."
+          insightLabel="What the verse is and isn't saying"
+          insight="The verse is not saying conduct doesn't matter. It is saying that a wholehearted turn outranks accumulated wrong. The condition is ananya-bhāk, undivided, not partial, not strategic. The verse rewards orientation, not history. This is good news for anyone who has ever wondered if they are too late."
+          essence="Undivided devotion can outweigh even a deeply flawed life."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 9.31</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति ।<br />कौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति ॥
-          </div>
-          <div className="shloka-iast">
-            kṣipraṃ bhavati dharmātmā śaśvac-chāntiṃ nigacchati |<br />kaunteya pratijānīhi na me bhaktaḥ praṇaśyati ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Such a person quickly becomes a soul of dharma and attains lasting peace. Arjuna, declare it openly, my devotee never perishes.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The line that carries the chapter</div>
-              <div className="shloka-insight">
-                <em>Na me bhaktaḥ praṇaśyati.</em> My devotee never perishes. The verb is in the present tense. It is a structural claim about how the universe is set up. The one who has turned wholeheartedly toward the Divine cannot be finally destroyed, by their past, by their circumstances, by their fear. The Gita asks Arjuna to <em>declare</em> this, to take it seriously enough to say out loud.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Devotion quickly changes a person and protects them from ruin."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 9.31"
+          speaker="Krishna"
+          sanskrit="क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति । कौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति ॥"
+          iast="kṣipraṃ bhavati dharmātmā śaśvac-chāntiṃ nigacchati | kaunteya pratijānīhi na me bhaktaḥ praṇaśyati ||"
+          meaning="Such a person quickly becomes a soul of dharma and attains lasting peace. Arjuna, declare it openly, my devotee never perishes."
+          insightLabel="The line that carries the chapter"
+          insight="Na me bhaktaḥ praṇaśyati. My devotee never perishes. The verb is in the present tense. It is a structural claim about how the universe is set up. The one who has turned wholeheartedly toward the Divine cannot be finally destroyed, by their past, by their circumstances, by their fear. The Gita asks Arjuna to declare this, to take it seriously enough to say out loud."
+          essence="Devotion quickly changes a person and protects them from ruin."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -1101,35 +927,16 @@ export default function ChapterPage9() {
           Why does this become the closing of so many of the Gita's chapters? Because it is the Gita's compressed practice. Strip away the philosophy, the metaphysics, the long debates about action and renunciation, and what remains is this. Where is your attention going? Where is your love going? Where are your actions going? Where is your respect going? If all four are pointing one way, the rest follows. The royal secret of Chapter 9 is, finally, this orientation.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 9.34</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु ।<br />मामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः ॥
-          </div>
-          <div className="shloka-iast">
-            man-manā bhava mad-bhakto mad-yājī māṃ namaskuru |<br />mām evaiṣyasi yuktvaivam ātmānaṃ mat-parāyaṇaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Fix your mind on me, be devoted to me, worship me, bow to me. United with me in this way, fully oriented toward me, you will come to me.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Four imperatives, one direction</div>
-              <div className="shloka-insight">
-                Most spiritual instructions are about specific techniques. This verse is about direction. The four verbs cover thought (<em>manā</em>), feeling (<em>bhakta</em>), action (<em>yājī</em>), and posture (<em>namaskuru</em>). If all four are aligned, the path is already being walked. The Gita is condensing eighteen chapters into one verse, and it does so by pointing at orientation, not at technique.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Total orientation toward the divine becomes the way to reach the divine."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 9.34"
+          speaker="Krishna"
+          sanskrit="मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु । मामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः ॥"
+          iast="man-manā bhava mad-bhakto mad-yājī māṃ namaskuru | mām evaiṣyasi yuktvaivam ātmānaṃ mat-parāyaṇaḥ ||"
+          meaning="Fix your mind on me, be devoted to me, worship me, bow to me. United with me in this way, fully oriented toward me, you will come to me."
+          insightLabel="Four imperatives, one direction"
+          insight="Most spiritual instructions are about specific techniques. This verse is about direction. The four verbs cover thought (manā), feeling (bhakta), action (yājī), and posture (namaskuru). If all four are aligned, the path is already being walked. The Gita is condensing eighteen chapters into one verse, and it does so by pointing at orientation, not at technique."
+          essence="Total orientation toward the divine becomes the way to reach the divine."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">

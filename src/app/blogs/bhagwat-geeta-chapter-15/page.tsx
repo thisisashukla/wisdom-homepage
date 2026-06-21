@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 15 Summary – Key Verses & Meaning (Purushottama Yoga)",
@@ -139,28 +140,6 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
-
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
@@ -262,7 +241,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -694,35 +672,16 @@ export default function ChapterPage15() {
           What does "roots above" mean? It means the source of the world you experience is not in the world. The visible branches, your circumstances, your body, your relationships, the things you can touch, are not what hold the world together. The roots are above, in a reality not visible from where the branches grow. Verse 15.2 then explains how the visible branches behave. They grow in all directions, nourished by the three gunas, with sense-objects as their fresh shoots. Action-bound roots descend into the human world, tying everything to results. The tree is the cycle of bound existence. It grows endlessly, because each new desire becomes a new shoot.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 15.1</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रीभगवानुवाच<br />ऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम् ।<br />छन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित् ॥
-          </div>
-          <div className="shloka-iast">
-            śrī bhagavān uvāca |<br />ūrdhva-mūlam adhaḥ-śākham aśvatthaṃ prāhur avyayam |<br />chandāṃsi yasya parṇāni yas taṃ veda sa veda-vit ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The Blessed One said: they speak of the imperishable ashvattha tree, with roots above and branches below. Its leaves are the sacred verses. The one who knows this tree knows the Vedas.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why the inversion is the point</div>
-              <div className="shloka-insight">
-                If the roots were below, as in any normal tree, you could imagine reaching them by digging deeper into ordinary experience. The Gita's image refuses this. The source is not below. It is above. You will not find it by going further into the visible. You find it by recognizing that the visible is dangling from somewhere you cannot point at.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Understanding the world-tree is the beginning of true understanding."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 15.1"
+          speaker="Krishna"
+          sanskrit="श्रीभगवानुवाच ऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम् । छन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित् ॥"
+          iast="śrī bhagavān uvāca | ūrdhva-mūlam adhaḥ-śākham aśvatthaṃ prāhur avyayam | chandāṃsi yasya parṇāni yas taṃ veda sa veda-vit ||"
+          meaning="The Blessed One said: they speak of the imperishable ashvattha tree, with roots above and branches below. Its leaves are the sacred verses. The one who knows this tree knows the Vedas."
+          insightLabel="Why the inversion is the point"
+          insight="If the roots were below, as in any normal tree, you could imagine reaching them by digging deeper into ordinary experience. The Gita's image refuses this. The source is not below. It is above. You will not find it by going further into the visible. You find it by recognizing that the visible is dangling from somewhere you cannot point at."
+          essence="Understanding the world-tree is the beginning of true understanding."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -743,35 +702,16 @@ export default function ChapterPage15() {
           Modern readers sometimes hear this verse as ascetic. It is not. The Gita has spent the previous fourteen chapters arguing against world-rejection. The tree is not the world itself; it is the binding pattern of grasping that keeps consciousness tied to result-driven existence. The sword does not cut down trees, relationships, jobs, or pleasures. It cuts the grasping that turns each of these into another root holding you in the same cycle. After the cut, the same world is still there. Your relationship to it has changed. The cycle no longer renews itself from your grasping, because the grasping is what was feeding the roots.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 15.3</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            न रूपमस्येह तथोपलभ्यते नान्तो न चादिर्न च सम्प्रतिष्ठा ।<br />अश्वत्थमेनं सुविरूढमूलमसङ्गशस्त्रेण दृढेन छित्त्वा ॥
-          </div>
-          <div className="shloka-iast">
-            na rūpam asyeha tathopalabhyate nānto na cādir na ca sampratiṣṭhā |<br />aśvattham enaṃ su-virūḍha-mūlam asaṅga-śastreṇa dṛḍhena chittvā ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Its real form is not perceived here, nor its beginning, end, or foundation. With the strong sword of non-attachment, cut down this deeply rooted ashvattha tree.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What asanga actually cuts</div>
-              <div className="shloka-insight">
-                <em>Asaṅga</em>: non-clinging. The sword is not violence. It is the willingness to stop clutching the results. Every time you act without gripping the outcome, you cut a root. The Gita is not asking for a single dramatic act. It is asking for repeated, accurate cuts: the daily reduction of grasping, until the cycle no longer has fuel.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "What traps you has no fixed form; detachment cuts it cleanly."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 15.3"
+          speaker="Krishna"
+          sanskrit="न रूपमस्येह तथोपलभ्यते नान्तो न चादिर्न च सम्प्रतिष्ठा । अश्वत्थमेनं सुविरूढमूलमसङ्गशस्त्रेण दृढेन छित्त्वा ॥"
+          iast="na rūpam asyeha tathopalabhyate nānto na cādir na ca sampratiṣṭhā | aśvattham enaṃ su-virūḍha-mūlam asaṅga-śastreṇa dṛḍhena chittvā ||"
+          meaning="Its real form is not perceived here, nor its beginning, end, or foundation. With the strong sword of non-attachment, cut down this deeply rooted ashvattha tree."
+          insightLabel="What asanga actually cuts"
+          insight="Asaṅga: non-clinging. The sword is not violence. It is the willingness to stop clutching the results. Every time you act without gripping the outcome, you cut a root. The Gita is not asking for a single dramatic act. It is asking for repeated, accurate cuts: the daily reduction of grasping, until the cycle no longer has fuel."
+          essence="What traps you has no fixed form; detachment cuts it cleanly."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -799,35 +739,16 @@ export default function ChapterPage15() {
           And then the verse closes with the now-familiar promise: <em>yad gatvā na nivartante</em>: having reached it, beings do not return. That is Krishna's supreme abode. The destination is the same one Chapter 8 named, the same one Chapter 11 hinted at after the cosmic vision. Chapter 15 is just giving it a slightly different angle, framed this time as the source of all visible light. The destination is where the light has been coming from all along.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 15.6</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            न तद्भासयते सूर्यो न शशाङ्को न पावकः ।<br />यद्गत्वा न निवर्तन्ते तद्धाम परमं मम ॥
-          </div>
-          <div className="shloka-iast">
-            na tad bhāsayate sūryo na śaśāṅko na pāvakaḥ |<br />yad gatvā na nivartante tad dhāma paramaṃ mama ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Neither sun, nor moon, nor fire illumines that place. Having reached it, beings do not return. That is my supreme abode.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The source of light cannot be lit by light</div>
-              <div className="shloka-insight">
-                The verse is teaching, with its very grammar, that the deepest reality is not one more visible thing alongside other visible things. It is the conditioning ground of visibility itself. You cannot search for it with the same eyes that search for objects. The seeing has to deepen before the seen can change.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The highest home is beyond every ordinary light and beyond return."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 15.6"
+          speaker="Krishna"
+          sanskrit="न तद्भासयते सूर्यो न शशाङ्को न पावकः । यद्गत्वा न निवर्तन्ते तद्धाम परमं मम ॥"
+          iast="na tad bhāsayate sūryo na śaśāṅko na pāvakaḥ | yad gatvā na nivartante tad dhāma paramaṃ mama ||"
+          meaning="Neither sun, nor moon, nor fire illumines that place. Having reached it, beings do not return. That is my supreme abode."
+          insightLabel="The source of light cannot be lit by light"
+          insight="The verse is teaching, with its very grammar, that the deepest reality is not one more visible thing alongside other visible things. It is the conditioning ground of visibility itself. You cannot search for it with the same eyes that search for objects. The seeing has to deepen before the seen can change."
+          essence="The highest home is beyond every ordinary light and beyond return."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -848,35 +769,16 @@ export default function ChapterPage15() {
           Read carefully, this verse changes how you can look at every other person. Each of them is, by the same teaching, a fragment of the same source. The arrogant colleague. The kind stranger. The difficult relative. Every one of them, in their innermost being, is exactly what you are. The recognition does not erase the difficulty of dealing with them. It changes the regard you hold for the being underneath the difficulty. This is the Gita's working basis for compassion, not a moral injunction, but a metaphysical fact about who is in the room.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 15.7</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            ममैवांशो जीवलोके जीवभूतः सनातनः ।<br />मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥
-          </div>
-          <div className="shloka-iast">
-            mamaivāṃśo jīva-loke jīva-bhūtaḥ sanātanaḥ |<br />manaḥ-ṣaṣṭhānīndriyāṇi prakṛti-sthāni karṣati ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                A part of myself, eternal, has become the living being in this world. It draws to itself the five senses and the mind, which rest in nature.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What this verse changes in how you see others</div>
-              <div className="shloka-insight">
-                Every conscious being you encounter is, at the core, the same fragment-of-the-eternal that you are. This is the structural reason compassion is rational, not just kind. You are not being asked to manufacture warmth toward people who do not deserve it. You are being asked to recognize what they are made of, the same thing you are made of, and to let that recognition shape how you treat them.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "What is eternal gets pulled around by what changes."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 15.7"
+          speaker="Krishna"
+          sanskrit="ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥"
+          iast="mamaivāṃśo jīva-loke jīva-bhūtaḥ sanātanaḥ | manaḥ-ṣaṣṭhānīndriyāṇi prakṛti-sthāni karṣati ||"
+          meaning="A part of myself, eternal, has become the living being in this world. It draws to itself the five senses and the mind, which rest in nature."
+          insightLabel="What this verse changes in how you see others"
+          insight="Every conscious being you encounter is, at the core, the same fragment-of-the-eternal that you are. This is the structural reason compassion is rational, not just kind. You are not being asked to manufacture warmth toward people who do not deserve it. You are being asked to recognize what they are made of, the same thing you are made of, and to let that recognition shape how you treat them."
+          essence="What is eternal gets pulled around by what changes."
+        />
 
         <div className="highlight-box">
           <p>
@@ -903,35 +805,16 @@ export default function ChapterPage15() {
           Read this slowly. The metabolism that is, even as you read, processing your last meal, Krishna is naming that as his presence. The breath moving in and out, his presence. The Gita does not put the Divine in temples and step away from the body. The Gita puts the Divine inside the body, in the most mundane physiological processes, and asks you to recognize it. This is the chapter's quiet inversion: you have been searching for the sacred elsewhere; the sacred has been digesting your dinner.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 15.14</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः ।<br />प्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम् ॥
-          </div>
-          <div className="shloka-iast">
-            ahaṃ vaiśvānaro bhūtvā prāṇināṃ deham āśritaḥ |<br />prāṇāpāna-samāyuktaḥ pacāmy annaṃ catur-vidham ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                I become the digestive fire in the bodies of living beings, joined with the in-breath and the out-breath, and I digest the four kinds of food.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The Divine inside your physiology</div>
-              <div className="shloka-insight">
-                If you wanted to undermine every form of body-rejecting spirituality in one verse, this is the verse. The fire that digests your dinner is named as the Divine. Your body is not a problem to escape. It is the local apparatus through which the sacred is currently operating. The Gita is consistent about this, the body is the equipment, and the equipment is, in this verse, given the highest possible compliment.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The divine is already working inside your body as life itself."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 15.14"
+          speaker="Krishna"
+          sanskrit="अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः । प्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम् ॥"
+          iast="ahaṃ vaiśvānaro bhūtvā prāṇināṃ deham āśritaḥ | prāṇāpāna-samāyuktaḥ pacāmy annaṃ catur-vidham ||"
+          meaning="I become the digestive fire in the bodies of living beings, joined with the in-breath and the out-breath, and I digest the four kinds of food."
+          insightLabel="The Divine inside your physiology"
+          insight="If you wanted to undermine every form of body-rejecting spirituality in one verse, this is the verse. The fire that digests your dinner is named as the Divine. Your body is not a problem to escape. It is the local apparatus through which the sacred is currently operating. The Gita is consistent about this, the body is the equipment, and the equipment is, in this verse, given the highest possible compliment."
+          essence="The divine is already working inside your body as life itself."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -952,35 +835,16 @@ export default function ChapterPage15() {
           Notice the implication. Every time you have remembered something just when you needed to. Every time a confused situation suddenly became clear. Every time a stubborn doubt finally dissolved. These were not pure mechanism. The verse is naming them as small acts of the Divine, operating from the centre of your own awareness. The chapter is reframing the architecture of inner life. You are not the lone author of your understanding. There is, the verse says, a contributor.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 15.15</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च ।<br />वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम् ॥
-          </div>
-          <div className="shloka-iast">
-            sarvasya cāhaṃ hṛdi sanniviṣṭo mattaḥ smṛtir jñānam apohanaṃ ca |<br />vedaiś ca sarvair aham eva vedyo vedānta-kṛd veda-vid eva cāham ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                I am seated in the hearts of all beings. From me come memory, knowledge, and the removal of doubt. I am what is to be known through all the Vedas; I am the maker of Vedanta and the knower of the Vedas.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Where memory comes from</div>
-              <div className="shloka-insight">
-                The verse is gently rewriting what you thought was personal effort. The remembering, the knowing, the clarifying, they are gifts from the centre already inside you. You did not produce them alone. The recognition does not make you less competent. It makes you less alone. You have always had a collaborator. Most of us have just not noticed who.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The deepest knowing comes from the one already dwelling within every heart."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 15.15"
+          speaker="Krishna"
+          sanskrit="सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च । वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम् ॥"
+          iast="sarvasya cāhaṃ hṛdi sanniviṣṭo mattaḥ smṛtir jñānam apohanaṃ ca | vedaiś ca sarvair aham eva vedyo vedānta-kṛd veda-vid eva cāham ||"
+          meaning="I am seated in the hearts of all beings. From me come memory, knowledge, and the removal of doubt. I am what is to be known through all the Vedas; I am the maker of Vedanta and the knower of the Vedas."
+          insightLabel="Where memory comes from"
+          insight="The verse is gently rewriting what you thought was personal effort. The remembering, the knowing, the clarifying, they are gifts from the centre already inside you. You did not produce them alone. The recognition does not make you less competent. It makes you less alone. You have always had a collaborator. Most of us have just not noticed who."
+          essence="The deepest knowing comes from the one already dwelling within every heart."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -1008,35 +872,16 @@ export default function ChapterPage15() {
           This is the only place in the Gita where Krishna names himself by this specific title. The chapter is called Purushottama Yoga because of this naming. The teaching is not just metaphysical taxonomy. It is the answer to anyone who would stop at impersonal absolute awareness and call that the highest reality. The Gita's claim is that there is something higher even than impersonal awareness, and that higher thing is what was speaking to Arjuna all along. The intimacy of the friendship, the personalness of the teaching, the love that Krishna keeps directing at Arjuna, all of this is real, because what is being expressed through Krishna is not less than the impersonal absolute. It is more.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 15.18</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः ।<br />अतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः ॥
-          </div>
-          <div className="shloka-iast">
-            yasmāt kṣaram atīto'ham akṣarād api cottamaḥ |<br />ato'smi loke vede ca prathitaḥ puruṣottamaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Because I am beyond the perishable, and higher than even the imperishable, therefore, in the world and in the Vedas, I am celebrated as Purushottama, the Supreme Self.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The name Krishna finally claims</div>
-              <div className="shloka-insight">
-                Across fifteen chapters, Krishna has been called many things: friend, teacher, Lord, supreme person. This is the only verse where he claims a specific title for himself. <em>Puruṣottama</em>. The Supreme Self. The naming matters because of the structural claim it carries: there is a reality higher than impersonal absolute awareness, and that reality is what has been speaking. The closeness of the conversation is not a downgrade from the highest. It is the highest, in conversation.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The highest reality lies beyond both change and permanence."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 15.18"
+          speaker="Krishna"
+          sanskrit="यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः । अतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः ॥"
+          iast="yasmāt kṣaram atīto'ham akṣarād api cottamaḥ | ato'smi loke vede ca prathitaḥ puruṣottamaḥ ||"
+          meaning="Because I am beyond the perishable, and higher than even the imperishable, therefore, in the world and in the Vedas, I am celebrated as Purushottama, the Supreme Self."
+          insightLabel="The name Krishna finally claims"
+          insight="Across fifteen chapters, Krishna has been called many things: friend, teacher, Lord, supreme person. This is the only verse where he claims a specific title for himself. Puruṣottama. The Supreme Self. The naming matters because of the structural claim it carries: there is a reality higher than impersonal absolute awareness, and that reality is what has been speaking. The closeness of the conversation is not a downgrade from the highest. It is the highest, in conversation."
+          essence="The highest reality lies beyond both change and permanence."
+        />
 
         <div className="highlight-box">
           <p>

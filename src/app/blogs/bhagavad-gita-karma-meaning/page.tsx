@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Karma: The Real Meaning in the Bhagavad Gita (Not What You Think) | Wisdom",
@@ -197,96 +198,6 @@ const pageCSS = `
         p {
             margin-bottom: 1.5rem;
             color: var(--text-dim);
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-
-        .shloka-card:hover {
-            background: var(--bg-card-hover);
-        }
-
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .meaning-text {
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .insight-text {
-            color: var(--text-dim);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -601,22 +512,14 @@ export default function KarmaMeaningPage() {
             The Gita's most important statement about karma comes in Chapter 2, verse 47. This is the foundation of the entire Karma Yoga section. Read this verse slowly.
         </p>
 
-        <div className="shloka-card">
-            <div className="verse-number">Bhagavad Gita 2.47</div>
-            <div className="sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।
-मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥</div>
-            <div className="transliteration">karmaṇyevādhikāraste mā phaleṣu kadācana |
-mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||</div>
-            <div className="meaning">
-                <div className="meaning-label">Translation</div>
-                <div className="meaning-text">You have a right to perform your prescribed duties, but you are not entitled to the fruits. Never consider yourself the cause of the results, and never be attached to not doing your duty.</div>
-            </div>
-            <div className="insight">
-                <div className="insight-label">What This Teaches</div>
-                <div className="insight-text">This single verse contains four instructions. First: act. You have not just permission but duty to perform action. Second: don't claim the fruits. The result is not yours to own. Third: don't let the anticipated fruit be your motive. If you're doing something only for the reward, you're building dependence on an outcome you don't fully control. Fourth: don't use this teaching to justify inaction. "Detachment from results" is not the same as "don't bother." All four pieces together describe the actual practice.</div>
-            </div>
-            <div className="essence">Do your duty. Let go of the outcome. Both halves matter.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.47"
+          sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
+          iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Do your duty. Let go of the outcome. Both halves matter."
+        />
 
         <p>
             This teaching is radical because it inverts how most people think about action. Most people think: "I will do X in order to get Y." The motive is the fruit. If the fruit arrives, they feel successful. If it doesn't, they feel cheated, angry, or empty. And their entire sense of self-worth becomes dependent on whether the outcome materialized.
@@ -640,22 +543,14 @@ mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||</div>
             Chapter 3 of the Gita is entirely devoted to Karma Yoga, the yoga of action. It offers a radically different framing of why we act.
         </p>
 
-        <div className="shloka-card">
-            <div className="verse-number">Bhagavad Gita 3.9</div>
-            <div className="sanskrit">यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः ।
-तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥</div>
-            <div className="transliteration">yajñārthātkarmaṇo'nyatra loko'yaṃ karmabandhanaḥ |
-tadarthaṃ karma kaunteya muktasaṃgaḥ samācara ||</div>
-            <div className="meaning">
-                <div className="meaning-label">Translation</div>
-                <div className="meaning-text">Action done for any reason other than as a sacred offering (yajna) creates bondage in this world. Therefore, perform your duties as an offering, free from attachment, O Arjuna.</div>
-            </div>
-            <div className="insight">
-                <div className="insight-label">What This Teaches</div>
-                <div className="insight-text">The Gita's transformation of karma is not about what you do. It's about why. The exact same action (cooking a meal, writing code, teaching a class, caring for someone) binds you if done with ego-craving and frees you if done as an offering. What changes is the consciousness you bring to it. Yajna (usually translated as "sacrifice" or "sacred offering") is the key. You're performing the action not for personal gain but as service to something larger.</div>
-            </div>
-            <div className="essence">Freedom comes from acting for a higher purpose, not personal gain.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.9"
+          sanskrit="यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः । तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥"
+          iast="yajñārthātkarmaṇo'nyatra loko'yaṃ karmabandhanaḥ | tadarthaṃ karma kaunteya muktasaṃgaḥ samācara ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Freedom comes from acting for a higher purpose, not personal gain."
+        />
 
         <p>
             This is the practical meaning of karma yoga. You are not renouncing the world. You are renouncing your demand to own the fruits. You do the action because it is your duty, because you see it as service, because it is the right thing to do. The quality of your life shifts not because circumstances change, but because you have shifted why you are acting.
@@ -673,22 +568,14 @@ tadarthaṃ karma kaunteya muktasaṃgaḥ samācara ||</div>
             But here is the critical sentence: wisdom burns all karma. Not gradually. Not carefully. Completely.
         </p>
 
-        <div className="shloka-card">
-            <div className="verse-number">Bhagavad Gita 4.37</div>
-            <div className="sanskrit">यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन ।
-ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥</div>
-            <div className="transliteration">yathaidhāṃsi samiddho'gnirbhasmasātkurute'rjuna |
-jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā ||</div>
-            <div className="meaning">
-                <div className="meaning-label">Translation</div>
-                <div className="meaning-text">As a blazing fire reduces wood to ashes, the fire of knowledge reduces all karma to ashes, O Arjuna.</div>
-            </div>
-            <div className="insight">
-                <div className="insight-label">What This Teaches</div>
-                <div className="insight-text">This is the Gita's most important statement about past karma. It is not permanent. It is not fate. Understanding (genuine understanding of the nature of action and consciousness) burns it. The image is not of gradual dissolution but of fire consuming wood completely. This means: you are not locked into your past. Change of consciousness can alter the trajectory of your life.</div>
-            </div>
-            <div className="essence">Knowledge is the fire that burns away all karma.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.37"
+          sanskrit="यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन । ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥"
+          iast="yathaidhāṃsi samiddho'gnirbhasmasātkurute'rjuna | jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Knowledge is the fire that burns away all karma."
+        />
 
         <p>
             This is why the Gita, written for a warrior in a moment of paralysis, is radically hopeful. Arjuna cannot undo the past. He cannot change the fact that he is on a battlefield about to fight his own family. But he can change his consciousness about what he is doing. And that change of consciousness is not just therapeutic. It is transformative. It alters what happens next.

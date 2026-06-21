@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 10 Summary – Key Verses & Meaning (Vibhuti Yoga)",
@@ -139,28 +140,6 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
-
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
@@ -262,7 +241,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -694,35 +672,13 @@ export default function ChapterPage10() {
           Notice the chain. First the recognition (<em>iti matvā</em>, knowing this). Then the response (<em>bhajante</em>, they worship). Then the quality of the response (<em>bhāva-samanvitāḥ</em>, full of feeling). The Gita is not asking for an intellectual concession. It is describing what understanding actually feels like when it lands. The mind sees the source. The heart turns toward it. The two are not separate moves.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 10.8</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते ।<br />इति मत्वा भजन्ते मां बुधा भावसमन्विताः ॥
-          </div>
-          <div className="shloka-iast">
-            ahaṃ sarvasya prabhavo mattaḥ sarvaṃ pravartate |<br />iti matvā bhajante māṃ budhā bhāva-samanvitāḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                I am the source of all; from me everything proceeds. Knowing this, the wise worship me with wholehearted feeling.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Knowing the source changes the response</div>
-              <div className="shloka-insight">
-                Information alone does not produce devotion. But information about a source, once it actually lands, changes the relationship to everything downstream. The verse is describing what happens after the abstraction stops being an abstraction. The wise are not wise because they know more. They are wise because the knowing has become love.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Knowing the source turns understanding into devotion."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 10.8"
+          speaker="Krishna"
+          sanskrit="अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते । इति मत्वा भजन्ते मां बुधा भावसमन्विताः ॥"
+          iast="ahaṃ sarvasya prabhavo mattaḥ sarvaṃ pravartate | iti matvā bhajante māṃ budhā bhāva-samanvitāḥ ||"
+          essence="Knowing the source turns understanding into devotion."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -743,65 +699,13 @@ export default function ChapterPage10() {
           Look closely at where the lamp is. It is <em>ātma-bhāva-stho</em>, placed in their own being. The Divine is not lighting the lamp from outside, illuminating them. The Divine is lighting a lamp from inside them. The image is intimate. The conditions for the lamp's lighting are simple (continuous devotion, love), and the result is the most reassuring promise in the Gita: the darkness in you is not yours alone to fight. It is dispelled by a light that has been placed inside you.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 10.10</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम् ।<br />ददामि बुद्धियोगं तं येन मामुपयान्ति ते ॥
-          </div>
-          <div className="shloka-iast">
-            teṣāṃ satata-yuktānāṃ bhajatāṃ prīti-pūrvakam |<br />dadāmi buddhi-yogaṃ taṃ yena mām upayānti te ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                To those who are constantly united with me, who worship me with love, I give the yoga of discernment by which they come to me.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What buddhi-yoga is</div>
-              <div className="shloka-insight">
-                <em>Buddhi-yoga</em> is not technique. It is the gift of clearer seeing: the ability to discriminate, in real time, between what is real and what only seems real. The Gita's promise is that this is not earned by effort alone. It is given. The condition is not cleverness. It is continuous orientation toward the Divine in love.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Steady devotion itself draws forth the understanding that reaches the divine."
-          </div>
-        </div>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 10.11</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तेषामेवानुकम्पार्थमहमज्ञानजं तमः ।<br />नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥
-          </div>
-          <div className="shloka-iast">
-            teṣām evānukampārtham aham ajñāna-jaṃ tamaḥ |<br />nāśayāmy ātma-bhāva-stho jñāna-dīpena bhāsvatā ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Out of compassion for them, dwelling in their own being, I destroy the darkness born of ignorance with the shining lamp of knowledge.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The lamp is on your side of the wall</div>
-              <div className="shloka-insight">
-                The verse places the lamp inside the devotee (<em>ātma-bhāva-stho</em>). This matters. The Divine is not a remote light source you are trying to reach. The light is lit inside you. Your work is not to generate it. Your work is to keep the room ordered enough that the lamp's light is not blocked by your own clutter.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Compassion becomes knowledge that burns away inner darkness."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 10.10"
+          speaker="Krishna"
+          sanskrit="तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम् । ददामि बुद्धियोगं तं येन मामुपयान्ति ते ॥"
+          iast="teṣāṃ satata-yuktānāṃ bhajatāṃ prīti-pūrvakam | dadāmi buddhi-yogaṃ taṃ yena mām upayānti te ||"
+          essence="Steady devotion itself draws forth the understanding that reaches the divine."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -829,35 +733,13 @@ export default function ChapterPage10() {
           This is the verse that the rest of the chapter's list exists to support. If you only read the external list, the Gita can sound like a celebration of greatness. Read with 10.20 at the centre, the chapter reverses direction. Yes, the Divine is in the brilliant. The Divine is also in the heart of the unremarkable person sitting next to you on the train. The two manifestations are the same manifestation, in different clothing. The chapter is teaching you to see both with the same recognition.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 10.20</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अहमात्मा गुडाकेश सर्वभूताशयस्थितः ।<br />अहमादिश्च मध्यं च भूतानामन्त एव च ॥
-          </div>
-          <div className="shloka-iast">
-            aham ātmā guḍākeśa sarva-bhūtāśaya-sthitaḥ |<br />aham ādiś ca madhyaṃ ca bhūtānām anta eva ca ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                I am the Self, Arjuna, seated in the heart of all beings. I am the beginning, the middle, and the end of all beings.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The centre verse of the chapter</div>
-              <div className="shloka-insight">
-                Every other manifestation in Chapter 10 is, in some sense, a footnote to this one. If the Self is in every heart, then everything else, the sun, the moon, the sacred sound, is a consequence, not the centre. The verse asks you to look at the next person you meet with a different awareness: you are looking at the dwelling place of what you have been searching for.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Everything that exists is held within one enduring presence."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 10.20"
+          speaker="Krishna"
+          sanskrit="अहमात्मा गुडाकेश सर्वभूताशयस्थितः । अहमादिश्च मध्यं च भूतानामन्त एव च ॥"
+          iast="aham ātmā guḍākeśa sarva-bhūtāśaya-sthitaḥ | aham ādiś ca madhyaṃ ca bhūtānām anta eva ca ||"
+          essence="Everything that exists is held within one enduring presence."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -878,30 +760,12 @@ export default function ChapterPage10() {
           Notice the structure of every entry. Krishna names a category, the senses, the seasons, the rivers, and within that category, he names what is supreme. The lesson is portable. Whenever you encounter a category, look for its highest expression, and recognise that expression as the Divine. The list teaches a habit: look at the best of something, see the spark, repeat. After enough repetitions, you start seeing it everywhere. The chapter is, in this sense, a perception training disguised as a hymn.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 10.22</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            वेदानां सामवेदोऽस्मि देवानामस्मि वासवः ।<br />इन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना ॥
-          </div>
-          <div className="shloka-iast">
-            vedānāṃ sāma-vedo'smi devānām asmi vāsavaḥ |<br />indriyāṇāṃ manaś cāsmi bhūtānām asmi cetanā ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Among the Vedas I am the Sama Veda; among the radiant beings I am Indra. Among the senses I am the mind; among living beings I am consciousness.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Read for the pattern, not the items</div>
-              <div className="shloka-insight">
-                The items are culturally bound. The pattern is universal. Whatever a category's exemplar is, for you, in your time, your place, that is where the Divine is most visibly shining. Read the verse with this question: in my world, what is the equivalent? Not as escape from the verse, but as enactment of it.
-              </div>
-            </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 10.22"
+          speaker="Krishna"
+          sanskrit="वेदानां सामवेदोऽस्मि देवानामस्मि वासवः । इन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना ॥"
+          iast="vedānāṃ sāma-vedo'smi devānām asmi vāsavaḥ | indriyāṇāṃ manaś cāsmi bhūtānām asmi cetanā ||"
+        />
           </div>
           <div className="shloka-essence">
             "The divine is not elsewhere; it is the awareness within everything."
@@ -933,35 +797,13 @@ export default function ChapterPage10() {
           This contradicts most assumptions about spiritual depth. We tend to imagine the highest teaching as a sentence that, once spoken, would unlock everything. The Gita says the opposite. The highest teaching has already been spoken. What is hidden, what is most worth protecting, is the silence underneath the words. Real power, the verse adds, is not volume. It is restraint and timing, knowing what to say, when, and what to leave unsaid. The most important spiritual capacity, by this reading, is the capacity to be quiet when speaking would be easier.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 10.38</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम् ।<br />मौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम् ॥
-          </div>
-          <div className="shloka-iast">
-            daṇḍo damayatām asmi nītir asmi jigīṣatām |<br />maunaṃ caivāsmi guhyānāṃ jñānaṃ jñānavatām aham ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Among enforcers, I am the rod of punishment; among those seeking victory, I am wise policy; among secrets, I am silence; among the wise, I am knowledge.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The deepest secret is silence</div>
-              <div className="shloka-insight">
-                The Sanskrit is <em>maunaṃ caivāsmi guhyānāṃ</em>: among secrets I am silence. The line subverts every model of esoteric teaching. The hidden knowledge is not a hidden sentence. It is the silence that the sentence is trying to gesture at. When the silence is reached, the sentence is no longer needed. The Gita is, in this verse, quietly retiring its own authority.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "True power is measured by restraint, silence, and clear understanding."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 10.38"
+          speaker="Krishna"
+          sanskrit="दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम् । मौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम् ॥"
+          iast="daṇḍo damayatām asmi nītir asmi jigīṣatām | maunaṃ caivāsmi guhyānāṃ jñānaṃ jñānavatām aham ||"
+          essence="True power is measured by restraint, silence, and clear understanding."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -989,163 +831,13 @@ export default function ChapterPage10() {
           Then comes verse 10.42, the chapter's final word: <em>or, Arjuna, what need is there to know all this in such detail? I sustain this entire universe with a single fragment of myself.</em> The Gita ends the catalogue by admitting that the catalogue is, in the end, unnecessary. You did not need every example. The point of every example was the same. The Divine is in the brilliant, in the ordinary, in the supreme, in the small, and after all of it, the Divine has not been exhausted. A single fragment holds the universe. Everything you have seen is a smaller fragment of that fragment.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 10.41</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा ।<br />तत्तदेवावगच्छ त्वं मम तेजोंऽशसंभवम् ॥
-          </div>
-          <div className="shloka-iast">
-            yad yad vibhūtimat sattvaṃ śrīmad ūrjitam eva vā |<br />tat tad evāvagaccha tvaṃ mama tejo'ṃśa-sambhavam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Whatever being or thing has splendour, beauty, or power, know it to be born from a spark of my radiance.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The portable version of Chapter 10</div>
-              <div className="shloka-insight">
-                If you only remember one verse from this chapter, make it this one. The verse is a rule: anywhere you see brilliance, the brilliance is borrowed. Trace the brilliance back, and you reach the source. After enough tracing, the source is no longer distant. You start to recognise it everywhere, in art, in courage, in love, in a clear sky, in a kind sentence said at the right time.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Every genuine greatness is only a spark of my radiance."
-          </div>
-        </div>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 10.42</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अथवा बहुनैतेन किं ज्ञातेन तवार्जुन ।<br />विष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत् ॥
-          </div>
-          <div className="shloka-iast">
-            athavā bahunaitena kiṃ jñātena tavārjuna |<br />viṣṭabhyāham idaṃ kṛtsnam ekāṃśena sthito jagat ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Or, Arjuna, what need is there to know all this in such detail? I support this entire universe with a single fragment of myself.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The line that retires the catalogue</div>
-              <div className="shloka-insight">
-                <em>Ekāṃśena</em>: with one fragment. The entire universe (every spark Krishna has just enumerated) is sustained by a single fragment of the Divine. The catalogue was not exhaustive. It could not be. The point of the catalogue was the recognition, and the recognition leads to a still bigger fact: whatever you have seen, the unseen is incalculably greater. The chapter ends in awe, not in inventory.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The whole universe rests in a single fragment of the divine."
-          </div>
-        </div>
-
-        <div className="highlight-box">
-          <p>
-            <strong>Why this is the chapter's emotional ending:</strong> Chapter 10 starts as a list and ends as a reduction. After all the looking, the point is not that you have seen many things. The point is that what you have seen is a fragment of a fragment. The right response to that fact is not more cataloguing. It is the awe that produces, naturally, the vision Arjuna asks for in the very next chapter.
-          </p>
-        </div>
-
-        {/* DIVIDER */}
-        <div className="section-divider">
-          <div className="section-divider-line"></div>
-          <div className="section-divider-label">
-            All 42 Verses At a Glance
-          </div>
-          <div className="section-divider-line"></div>
-        </div>
-
-        <h2 id="all-verses">The Complete Verse Reference</h2>
-
-        <table className="verse-table">
-          <thead>
-            <tr><th>Verse</th><th>Speaker</th><th>Teaching Essence</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>10.1</td><td>Krishna</td><td>Deeper truth arrives as care for the one who is ready</td></tr>
-            <tr><td>10.2</td><td>Krishna</td><td>Even the highest knowers stand inside the source they seek</td></tr>
-            <tr><td>10.3</td><td>Krishna</td><td>Clear recognition of the divine ends confusion and frees action</td></tr>
-            <tr><td>10.4</td><td>Krishna</td><td>All human qualities arise from the same source</td></tr>
-            <tr><td>10.5</td><td>Krishna</td><td>All qualities are expressions of the same divine source</td></tr>
-            <tr><td>10.6</td><td>Krishna</td><td>All lineages and worlds emerge from Krishna's mind</td></tr>
-            <tr><td>10.7</td><td>Krishna</td><td>True recognition of Krishna's presence makes devotion unshakable</td></tr>
-            <tr><td>10.8</td><td>Krishna</td><td>Knowing the source turns understanding into devotion</td></tr>
-            <tr><td>10.9</td><td>Krishna</td><td>Shared remembrance keeps devotion alive</td></tr>
-            <tr><td>10.10</td><td>Krishna</td><td>Steady devotion itself draws forth the understanding that reaches the divine</td></tr>
-            <tr><td>10.11</td><td>Krishna</td><td>Compassion becomes knowledge that burns away inner darkness</td></tr>
-            <tr><td>10.12</td><td>Arjuna</td><td>Recognition turns into surrender when the highest reality stands revealed</td></tr>
-            <tr><td>10.13</td><td>Arjuna</td><td>The deepest recognition is echoed by the wise and by Krishna himself</td></tr>
-            <tr><td>10.14</td><td>Arjuna</td><td>True recognition begins where ordinary beings cannot see</td></tr>
-            <tr><td>10.15</td><td>Arjuna</td><td>The supreme one is known fully only by the supreme one</td></tr>
-            <tr><td>10.16</td><td>Arjuna</td><td>Only the source can fully name its own presence in the world</td></tr>
-            <tr><td>10.17</td><td>Arjuna</td><td>Devotion needs a form the mind can return to again and again</td></tr>
-            <tr><td>10.18</td><td>Arjuna</td><td>True devotion never feels finished hearing the beloved</td></tr>
-            <tr><td>10.19</td><td>Krishna</td><td>The divine can be named briefly, never exhausted</td></tr>
-            <tr><td>10.20</td><td>Krishna</td><td>Everything that exists is held within one enduring presence</td></tr>
-            <tr><td>10.21</td><td>Krishna</td><td>Every radiance is a sign of one presence</td></tr>
-            <tr><td>10.22</td><td>Krishna</td><td>The divine is not elsewhere; it is the awareness within everything</td></tr>
-            <tr><td>10.23</td><td>Krishna</td><td>Greatness in the world is a visible sign of Krishna's presence</td></tr>
-            <tr><td>10.24</td><td>Krishna</td><td>Greatness in the world is a trace of Krishna everywhere</td></tr>
-            <tr><td>10.25</td><td>Krishna</td><td>The divine appears through the noblest forms of speech, ritual, and nature</td></tr>
-            <tr><td>10.26</td><td>Krishna</td><td>The finest forms in creation are windows into Krishna</td></tr>
-            <tr><td>10.27</td><td>Krishna</td><td>Greatness in the world is a visible trace of Krishna</td></tr>
-            <tr><td>10.28</td><td>Krishna</td><td>Power, fertility, and danger all reveal the same source</td></tr>
-            <tr><td>10.29</td><td>Krishna</td><td>The divine is visible in every order of existence</td></tr>
-            <tr><td>10.30</td><td>Krishna</td><td>Power, devotion, and majesty are all windows into one presence</td></tr>
-            <tr><td>10.31</td><td>Krishna</td><td>One reality appears as every noble force</td></tr>
-            <tr><td>10.32</td><td>Krishna</td><td>All creation and all truth-seeking speech point back to Krishna</td></tr>
-            <tr><td>10.33</td><td>Krishna</td><td>Even letters and time carry Krishna's presence</td></tr>
-            <tr><td>10.34</td><td>Krishna</td><td>Even death and virtue are expressions of the same divine source</td></tr>
-            <tr><td>10.35</td><td>Krishna</td><td>Sacred sound, time, and spring all carry the same presence</td></tr>
-            <tr><td>10.36</td><td>Krishna</td><td>What shines through victory and resolve is not separate from the divine</td></tr>
-            <tr><td>10.37</td><td>Krishna</td><td>Greatness in many forms is one presence showing itself</td></tr>
-            <tr><td>10.38</td><td>Krishna</td><td>True power is measured by restraint, silence, and clear understanding</td></tr>
-            <tr><td>10.39</td><td>Krishna</td><td>All existence grows from one hidden source</td></tr>
-            <tr><td>10.40</td><td>Krishna</td><td>No list can contain the divine's endless expressions</td></tr>
-            <tr><td>10.41</td><td>Krishna</td><td>Every genuine greatness is only a spark of my radiance</td></tr>
-            <tr><td>10.42</td><td>Krishna</td><td>The whole universe rests in a single fragment of the divine</td></tr>
-          </tbody>
-        </table>
-
-        <div className="chapter-nav">
-          <div>
-            <div className="ch-nav-label">Previous</div>
-            <a href="/blogs/bhagwat-geeta-chapter-9" className="ch-nav-title">Chapter 9, Raja Vidya Raja Guhya Yoga</a>
-          </div>
-          <div style={{ textAlign: 'right' }}>
-            <div className="ch-nav-label">Next</div>
-            <a href="/blogs/bhagwat-geeta-chapter-11" className="ch-nav-title">Chapter 11, Vishwarupa Darshana Yoga</a>
-          </div>
-        </div>
-
-        {/* DIVIDER */}
-        <div className="section-divider">
-          <div className="section-divider-line"></div>
-          <div className="section-divider-label">
-            Frequently Asked Questions
-          </div>
-          <div className="section-divider-line"></div>
-        </div>
-
-        <div className="faq-section" id="faq">
-          <div className="faq-header">
-            <div className="faq-header-label">Common questions</div>
-            <h2>Frequently Asked Questions</h2>
-          </div>
-          <div className="faq-item">
-            <div className="faq-q">What is Bhagavad Gita Chapter 10 about?</div>
-            <div className="faq-a">
-              Chapter 10, called Vibhuti Yoga (the Yoga of Divine Manifestations), is the Gita's training in where to look for the Divine. After Chapter 9 established that the Divine holds everything, Chapter 10 gives Arjuna a long list of where that holding becomes visible, in the sun, the moon, the heart of every being, the silence among secrets, every form of brilliance in creation. The chapter closes with 10.42: the entire universe is sustained by a single fragment of the Divine.
-            </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 10.41"
+          speaker="Krishna"
+          sanskrit="यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा । तत्तदेवावगच्छ त्वं मम तेजोंऽशसंभवम् ॥"
+          iast="yad yad vibhūtimat sattvaṃ śrīmad ūrjitam eva vā | tat tad evāvagaccha tvaṃ mama tejo'ṃśa-sambhavam ||"
+          essence="Every genuine greatness is only a spark of my radiance."
+        />
           </div>
           <div className="faq-item">
             <div className="faq-q">What is vibhuti in the Bhagavad Gita?</div>

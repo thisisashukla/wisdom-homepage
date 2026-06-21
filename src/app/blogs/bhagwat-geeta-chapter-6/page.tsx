@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",
@@ -139,28 +140,6 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
-
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
@@ -262,7 +241,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -668,457 +646,21 @@ export default function ChapterPage6() {
           Most spiritual teaching softens this point. The Gita does not. It puts the responsibility back in your hands at the very moment you would most like to outsource it, the moment when you are tired, ashamed, or stuck. The Gita's view is unsentimental: nobody else can do the lifting. But also, and this is the same verse, nobody else needs to. You already contain what is required.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.5</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् ।<br />आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥
-          </div>
-          <div className="shloka-iast">
-            uddhared ātmanā''tmānaṃ nātmānam avasādayet |<br />ātmaiva hyātmano bandhur ātmaiva ripur ātmanaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Lift yourself by yourself; do not let yourself fall. The self alone is the friend of the self, and the self alone is its enemy.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why this verse hits so hard</div>
-              <div className="shloka-insight">
-                Notice what the verse does not say. It does not say God will lift you. It does not say a guru will lift you. It says <em>you</em> lift you. The same verse that places the responsibility on you also tells you that you have the capacity. The Gita assumes you are not broken. You are just unhandled.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Your own inner handling makes you rise or collapse."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 6.5"
+          speaker="Krishna"
+          sanskrit="उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥"
+          iast="uddhared ātmanā''tmānaṃ nātmānam avasādayet | ātmaiva hyātmano bandhur ātmaiva ripur ātmanaḥ ||"
+          essence="Your own inner handling makes you rise or collapse."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.6</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            बन्धुरात्माऽऽत्मनस्तस्य येनात्मैवात्मना जितः ।<br />अनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत् ॥
-          </div>
-          <div className="shloka-iast">
-            bandhur ātmā''tmanas tasya yenātmaivātmanā jitaḥ |<br />anātmanas tu śatrutve vartetātmaiva śatruvat ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                For one who has mastered the lower self by the higher self, the self is a friend. For one who has not, the same self acts like an enemy.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The same instrument, two settings</div>
-              <div className="shloka-insight">
-                There is no two-self metaphysics here. There is one mind. When you have trained it, it carries you. When you haven't, it attacks you with your own ammunition, your own memories, your own insecurities, your own loops. The verse is describing a single instrument with two settings.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The same inner nature that frees you can also fight you."
-          </div>
-        </div>
-
-        <div className="pull-quote">
-          <blockquote>
-            "The self alone is the friend of the self, and the self alone is its enemy."
-          </blockquote>
-          <cite>Bhagavad Gita 6.5</cite>
-        </div>
-
-        {/* DIVIDER */}
-        <div className="section-divider">
-          <div className="section-divider-line"></div>
-          <div className="section-divider-label">
-            Verses 6.10–6.17 · The Practical Setup
-          </div>
-          <div className="section-divider-line"></div>
-        </div>
-
-        <h2 id="seat-balance">The Body Matters: Seat, Food, Sleep, Breath</h2>
-
-        <p>
-          Modern conversations about meditation often skip the body. The Gita doesn't. Verses 6.10 through 6.17 are almost mechanical in their precision, where to sit, how to sit, what to eat, how much to sleep. The text refuses to treat meditation as a purely mental exercise. It treats the body as the instrument, and the instrument has to be in tune.
-        </p>
-
-        <p>
-          If you have ever tried to meditate after a heavy meal, a sleepless night, or on a chair that wrecks your back, you already know why Chapter 6 spends so much time on logistics. The inner work fails when the outer support fails. The Gita is the opposite of an ungrounded spiritual text. It treats meditation as a craft, and craft requires the right setup.
-        </p>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.10</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            योगी युञ्जीत सततमात्मानं रहसि स्थितः ।<br />एकाकी यतचित्तात्मा निराशीरपरिग्रहः ॥
-          </div>
-          <div className="shloka-iast">
-            yogī yuñjīta satatam ātmānaṃ rahasi sthitaḥ |<br />ekākī yatacittātmā nirāśīr aparigrahaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The yogi should constantly engage the mind in meditation, dwelling alone, in solitude, with body and mind controlled, free from desire and possessiveness.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Solitude, not loneliness</div>
-              <div className="shloka-insight">
-                The verse asks for <em>rahasi</em>, a private place. Not because meditation requires asceticism, but because the mind, in its early training, cannot handle stimulus. The closed door is not a spiritual achievement. It is a practical concession to a mind that hasn't learned to stay yet.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Steady inward practice begins when desire and possessiveness end."
-          </div>
-        </div>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.16–17</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः ।<br />न चातिस्वप्नशीलस्य जाग्रतो नैव चार्जुन ॥<br />युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु ।<br />युक्तस्वप्नावबोधस्य योगो भवति दुःखहा ॥
-          </div>
-          <div className="shloka-iast">
-            nātyaśnatas tu yogo'sti na caikāntam anaśnataḥ |<br />na cātisvapnaśīlasya jāgrato naiva cārjuna ||<br />yuktāhāra vihārasya yuktaceṣṭasya karmasu |<br />yukta svapnāvabodhasya yogo bhavati duḥkhahā ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Yoga is not for one who eats too much, nor for one who eats nothing. It is not for one who sleeps too much, nor for one who stays awake too long. Yoga that destroys suffering belongs to one who is balanced in food, in activity, in work, and in sleep and waking.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Balance is non-negotiable</div>
-              <div className="shloka-insight">
-                The Gita is rejecting two stereotypes simultaneously, the indulgent person who treats spirituality as decoration on a chaotic life, and the ascetic who tortures the body and calls it discipline. Both fail. The middle path here is not a compromise. It is the only setting where meditation actually works.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Balance makes meditation possible; extremes break it."
-          </div>
-        </div>
-
-        <div className="highlight-box">
-          <p>
-            <strong>A working translation:</strong> Sleep enough. Eat enough but not too much. Move your body. Don't burn out. Don't crash. Hold the same daily rhythm long enough that your nervous system stops bracing. Then sit down and try to meditate. The Gita is not subtle about this, and it works.
-          </p>
-        </div>
-
-        {/* DIVIDER */}
-        <div className="section-divider">
-          <div className="section-divider-line"></div>
-          <div className="section-divider-label">
-            Verse 6.19 · The Lamp in a Windless Place
-          </div>
-          <div className="section-divider-line"></div>
-        </div>
-
-        <h2 id="lamp">The Lamp in a Windless Place</h2>
-
-        <p>
-          Chapter 6 contains one of the most quoted images in the entire tradition. The disciplined mind, Krishna says, is like a lamp in a place where no wind blows. It does not flicker. It does not strain to stay lit. It is simply still, and gives light because that is what it does.
-        </p>
-
-        <p>
-          Most of us do not know what a non-flickering mind feels like, because we have never been in a windless place. We are perpetually in wind, notifications, conversations, planning, replaying. The Gita does not ask you to suppress the wind. It asks you to find, and build, the windless room. Because in that room, you discover that the lamp was always burning. You were just too gusted to notice.
-        </p>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.19</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता ।<br />योगिनो यतचित्तस्य युञ्जतो योगमात्मनः ॥
-          </div>
-          <div className="shloka-iast">
-            yathā dīpo nivāta-stho neṅgate sopamā smṛtā |<br />yogino yatacittasya yuñjato yogam ātmanaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                As a lamp in a windless place does not flicker, that is the comparison given for the disciplined mind of a yogi united in meditation.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The image is the teaching</div>
-              <div className="shloka-insight">
-                The Gita gives many definitions of meditation, but this is the only one you can actually picture. And once you picture it, you know the difference between a flickering mind and a steady one, because you've experienced both, even if you didn't have language for either.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "A trained mind becomes steady enough to stop flickering."
-          </div>
-        </div>
-
-        <div className="pull-quote">
-          <blockquote>
-            "As a lamp in a windless place does not flicker, that is the comparison for the mind that has come home."
-          </blockquote>
-          <cite>Bhagavad Gita 6.19</cite>
-        </div>
-
-        {/* DIVIDER */}
-        <div className="section-divider">
-          <div className="section-divider-line"></div>
-          <div className="section-divider-label">
-            Verses 6.25–6.26 · The Practice of Return
-          </div>
-          <div className="section-divider-line"></div>
-        </div>
-
-        <h2 id="wandering-mind">The Wandering Mind and the Only Technique That Works</h2>
-
-        <p>
-          Verse 6.26 is the most useful verse in the chapter, and possibly in the whole book, for anyone who has ever sat down to meditate and failed. The verse is exact about what to do. When the mind wanders, and it will, bring it back. That's it. Not punish it. Not analyze why it wandered. Bring it back. Again. And again.
-        </p>
-
-        <p>
-          This is the entire practice. Every meditation tradition in the world, secular or religious, eventually says the same thing. The Gita just said it earlier, and clearer, than most. The verse contains a quiet warning too, implicit but unmistakable. If you treat the wandering as failure, you will quit. If you treat the return as the practice itself, you will keep going. The wandering isn't the problem. The drama about the wandering is the problem.
-        </p>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.25</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            शनैः शनैरुपरमेद्बुद्ध्या धृतिगृहीतया ।<br />आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत् ॥
-          </div>
-          <div className="shloka-iast">
-            śanaiḥ śanair uparamed buddhyā dhṛti-gṛhītayā |<br />ātmasaṃsthaṃ manaḥ kṛtvā na kiñcid api cintayet ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Gradually, gradually, by steady discernment held with patience, let the mind become still. Fix the mind in the self, and think of nothing else.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The word that matters</div>
-              <div className="shloka-insight">
-                <em>Śanaiḥ śanaiḥ</em>, gradually, gradually. The doubling is intentional. You do not break through to a still mind. You inch toward it. People quit meditation because they expect transformation in a week. The Gita is telling you, in the verse before the famous one, that the timeline is much longer and the steps are much smaller than you think.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Stillness comes by degrees when the mind stops feeding itself."
-          </div>
-        </div>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.26</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् ।<br />ततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ॥
-          </div>
-          <div className="shloka-iast">
-            yato yato niścarati manaścañcalam asthiram |<br />tatas tato niyamyaitad ātmany eva vaśaṃ nayet ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Whenever the restless, unsteady mind wanders out, from wherever it has gone, bring it back under the authority of the self.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">This is the whole technique</div>
-              <div className="shloka-insight">
-                The verse does not ask you to prevent wandering. It assumes wandering. The instruction is only about what to do after. <em>Bring it back.</em> The technique is humble, repetitive, and complete. Every time you bring the mind back, the bringing-back muscle gets stronger. Eventually, the mind starts coming back on its own.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The mind is mastered by repeated return, not by force."
-          </div>
-        </div>
-
-        <div className="highlight-box">
-          <p>
-            <strong>This is why meditation feels like failure:</strong> Because we measure ourselves by the wandering, not by the return. The Gita inverts the measurement. The successful meditator is not the one whose mind doesn't wander. It is the one who keeps returning. By that standard, every honest sitting is a successful one.
-          </p>
-        </div>
-
-        {/* DIVIDER */}
-        <div className="section-divider">
-          <div className="section-divider-line"></div>
-          <div className="section-divider-label">
-            Verses 6.33–6.36 · Arjuna's Honest Interruption
-          </div>
-          <div className="section-divider-line"></div>
-        </div>
-
-        <h2 id="arjuna-objects">"The Mind Is Like the Wind", When Arjuna Pushes Back</h2>
-
-        <p>
-          Halfway through the chapter, Arjuna interrupts. He has heard the whole teaching, and he says something most students think but rarely admit out loud: this is impossible. The mind is restless. Trying to hold it is like trying to hold the wind. Anyone who has tried to meditate has felt this. The Gita does not pretend otherwise.
-        </p>
-
-        <p>
-          What's remarkable is Krishna's response. He doesn't insist Arjuna is wrong. He agrees. Yes, the mind is hard to control. <em>Asaṃśayam</em>, without a doubt. And then he gives the formula that contains every working method of inner transformation: <em>abhyāsa</em> and <em>vairāgya</em>. Practice and detachment. Repetition and not-grasping. That's it. That's the whole technology.
-        </p>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.34</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् ।<br />तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥
-          </div>
-          <div className="shloka-iast">
-            cañcalaṃ hi manaḥ kṛṣṇa pramāthi balavad dṛḍham |<br />tasyāhaṃ nigrahaṃ manye vāyor iva suduṣkaram ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The mind, Krishna, is restless, turbulent, strong, and stubborn. Controlling it seems to me as hard as controlling the wind.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The first honest student</div>
-              <div className="shloka-insight">
-                This is one of the most important verses in the Gita because it gives every reader permission to say the same thing. The mind is hard. You are not failing in some unique way. Even Arjuna, chosen, trained, with the divine teacher in front of him, says, this is too hard. The Gita rewards that honesty with the chapter's most practical verse.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The mind resists control like wind resists the hand."
-          </div>
-        </div>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.35</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रीभगवानुवाच<br />असंशयं महाबाहो मनो दुर्निग्रहं चलं ।<br />अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ॥
-          </div>
-          <div className="shloka-iast">
-            śrī bhagavān uvāca |<br />asaṃśayaṃ mahābāho mano durnigrahaṃ calam |<br />abhyāsena tu kaunteya vairāgyeṇa ca gṛhyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The Blessed One said: Undoubtedly, mighty-armed one, the mind is restless and hard to restrain. But by practice and detachment, it is held.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The two-word answer</div>
-              <div className="shloka-insight">
-                <em>Abhyāsa</em> is practice, showing up, repeatedly, without needing a result today. <em>Vairāgya</em> is detachment, not gripping the outcome, not making each sitting carry the weight of your entire spiritual life. The two work together. Without practice, detachment becomes apathy. Without detachment, practice becomes performance. Together, they are the only thing that works.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "A restless mind is not a verdict; it is a training ground."
-          </div>
-        </div>
-
-        <div className="pull-quote">
-          <blockquote>
-            "The mind is hard to control. But by practice and by letting go, by that, it is held."
-          </blockquote>
-          <cite>Bhagavad Gita 6.35</cite>
-        </div>
-
-        {/* DIVIDER */}
-        <div className="section-divider">
-          <div className="section-divider-line"></div>
-          <div className="section-divider-label">
-            Verses 6.40–6.45 · Nothing Sincere Is Ever Lost
-          </div>
-          <div className="section-divider-line"></div>
-        </div>
-
-        <h2 id="nothing-lost">The Quiet Promise: Sincere Effort Is Never Wasted</h2>
-
-        <p>
-          After the practice instructions, Arjuna asks the question every honest practitioner has eventually asked. What if I try and I don't finish? What if I fall halfway? Krishna's answer is one of the most reassuring passages in any wisdom literature.
-        </p>
-
-        <p>
-          He says, no good effort is ever wasted. The one who tries and falls is not destroyed. The practice carries forward, into the next chapter of life, into the next attempt. The Gita refuses to treat sincere effort as a transaction with a deadline. It treats it as a current. Once you've stepped in, you are already moving downstream. Even if you stumble out, the current does not forget you.
-        </p>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.40</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रीभगवानुवाच<br />पार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते ।<br />न हि कल्याणकृत्कश्चिद्दुर्गतिं तात गच्छति ॥
-          </div>
-          <div className="shloka-iast">
-            śrī bhagavān uvāca |<br />pārtha naiveha nāmutra vināśas tasya vidyate |<br />na hi kalyāṇakṛt kaścid durgatiṃ tāta gacchati ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The Blessed One said: O Partha, there is no destruction for such a person, neither in this world, nor in the next. No one who does good ever comes to a bad end, my dear.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The line that matters</div>
-              <div className="shloka-insight">
-                <em>Na hi kalyāṇakṛt kaścid durgatiṃ tāta gacchati</em>, no one who does good comes to a bad end. This is not naive optimism. It is a structural claim about how moral effort accumulates. The Gita is saying: the universe is not indifferent to your trying. Your sincere effort is registered, conserved, and carried forward. Even when you feel like nothing is working.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Sincere effort toward the good cannot end in ruin."
-          </div>
-        </div>
-
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.43</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम् ।<br />यतते च ततो भूयः संसिद्धौ कुरुनन्दन ॥
-          </div>
-          <div className="shloka-iast">
-            tatra taṃ buddhi-saṃyogaṃ labhate paurva-dehikam |<br />yatate ca tato bhūyaḥ saṃsiddhau kurunandana ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                There, that person regains the inner understanding earned in the previous life, and then strives forward, with renewed effort, toward fullness.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Practice has a memory</div>
-              <div className="shloka-insight">
-                Whether you read this literally (reincarnation) or psychologically (the unconscious carries forward what you've worked on), the claim is the same: nothing you put in is lost. The next attempt starts further along than the previous one ended. This is why people who return to meditation after years away often find it surprisingly accessible.
-              </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 6.6"
+          speaker="Krishna"
+          sanskrit="बन्धुरात्माऽऽत्मनस्तस्य येनात्मैवात्मना जितः । अनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत् ॥"
+          iast="bandhur ātmā''tmanas tasya yenātmaivātmanā jitaḥ | anātmanas tu śatrutve vartetātmaiva śatruvat ||"
+          essence="The same inner nature that frees you can also fight you."
+        />
             </div>
           </div>
           <div className="shloka-essence">
@@ -1151,35 +693,13 @@ export default function ChapterPage6() {
           This sets up the rest of the Gita. Chapters 7 through 12 will go deep into devotion as a practice. But it begins here, at the end of the meditation chapter, with Krishna refusing to let the reader believe that technique is the whole story. The deepest steadiness, he says, comes not from controlling the mind but from giving it somewhere to rest. Trust is the final yoga.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 6.47</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            योगिनामपि सर्वेषां मद्गतेनान्तरात्मना ।<br />श्रद्धावान्भजते यो मां स मे युक्ततमो मतः ॥
-          </div>
-          <div className="shloka-iast">
-            yoginām api sarveṣāṃ madgatenāntar-ātmanā |<br />śraddhāvān bhajate yo māṃ sa me yuktatamo mataḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Among all yogis, the one whose inner self has come to rest in me, who worships me with trust, that one I consider the most fully integrated.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What "trust" does here</div>
-              <div className="shloka-insight">
-                The Sanskrit word is <em>śraddhā</em>, not blind belief, but the trust that allows you to actually put weight on something. The yogi who has been practicing alone, controlling the breath, eating moderately, that yogi is real. But Krishna says the deepest integration happens when, after all the technique, you simply trust. The lamp does not flicker because the wind has stopped, but because the lamp has finally rested where it belongs.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Trusting devotion is the highest integration of yoga."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 6.47"
+          speaker="Krishna"
+          sanskrit="योगिनामपि सर्वेषां मद्गतेनान्तरात्मना । श्रद्धावान्भजते यो मां स मे युक्ततमो मतः ॥"
+          iast="yoginām api sarveṣāṃ madgatenāntar-ātmanā | śraddhāvān bhajate yo māṃ sa me yuktatamo mataḥ ||"
+          essence="Trusting devotion is the highest integration of yoga."
+        />
 
         <div className="pull-quote">
           <blockquote>

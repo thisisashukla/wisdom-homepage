@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 2 Summary \u2013 Key Verses & Meaning (Sankhya Yoga)",
@@ -238,52 +239,6 @@ const pageCSS = `
       .toc-list a:hover { color: var(--gold-light); }
 
       /* ── SHLOKA CARD ── */
-      .shloka-card {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        overflow: hidden;
-        margin: 36px 0;
-      }
-      .shloka-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 12px 22px;
-        border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05);
-      }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit {
-        padding: 24px 22px 16px;
-        font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px;
-        line-height: 1.75;
-        color: var(--gold-light);
-        border-bottom: 1px solid var(--border);
-      }
-      .shloka-iast {
-        padding: 12px 22px 16px;
-        font-size: 12.5px;
-        line-height: 1.7;
-        color: var(--text-dimmer);
-        border-bottom: 1px solid var(--border);
-        font-style: italic;
-      }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence {
-        padding: 14px 22px;
-        background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border);
-        font-family: "Playfair Display", serif;
-        font-style: italic;
-        font-size: 15px;
-        color: var(--text-dim);
-      }
 
       /* ── PULL QUOTE ── */
       .pull-quote {
@@ -572,7 +527,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -817,35 +771,13 @@ export default function ChapterTwoPage() {
           Krishna doesn't begin with philosophy. He begins with a diagnosis. Look at verse 2.11.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.11</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्री भगवानुवाच<br />अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे ।<br />गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः ॥
-          </div>
-          <div className="shloka-iast">
-            śrī bhagavānuvāca<br />aśocyānanvaśocastvaṃ prajñāvādāṃśca bhāṣase |<br />gatāsūnagatāsūṃśca nānuśocanti paṇḍitāḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The Blessed Lord said: You grieve for those who need not be grieved for, yet speak words of wisdom. The wise grieve neither for the living nor for the dead.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What it reveals</div>
-              <div className="shloka-insight">
-                Krishna is pointing out a contradiction in Arjuna. He's performing grief while claiming wisdom. He's speaking like a philosopher while acting like someone who has abandoned philosophy. Krishna will spend the next 71 verses resolving this contradiction.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            Wise people do not grieve for what is inevitable; they see beyond temporary changes.
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.11"
+          speaker="Krishna"
+          sanskrit="श्री भगवानुवाच अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे । गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः ॥"
+          iast="śrī bhagavānuvāca aśocyānanvaśocastvaṃ prajñāvādāṃśca bhāṣase | gatāsūnagatāsūṃśca nānuśocanti paṇḍitāḥ ||"
+          essence="Wise people do not grieve for what is inevitable; they see beyond temporary changes."
+        />
 
         <p>
           This is crucial to understand. Krishna's first direct words are not "I understand your pain" or "Let me comfort you." He says, in effect: your grief and your words are in contradiction. You claim to speak wisdom but you're acting as though you believe something you've just said you don't believe. This isn't cruelty. This is clarity. The Gita is fundamentally a text about inconsistency, about seeing where we contradict ourselves.
@@ -868,30 +800,12 @@ export default function ChapterTwoPage() {
           Verse 2.20 is the bedrock of the entire Gita.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.20</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः ।<br />अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥
-          </div>
-          <div className="shloka-iast">
-            na jāyate mriyate vā kadācinnāyaṃ bhūtvā bhavitā vā na bhūyaḥ |<br />ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The soul is never born nor does it ever die. It has not come into being, does not come into being, and will not come into being. It is unborn, eternal, ever-existing, and primeval. It is not slain when the body is slain.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The philosophical move</div>
-              <div className="shloka-insight">
-                This verse is the foundation of everything that follows. If the soul is eternal, then grief over death is a category error. If the Self cannot be harmed, then action, even violent action, takes on a completely different moral weight. Krishna is not saying "don't worry, they'll reincarnate." He's saying something more radical: what you think dies never existed to begin with.
-              </div>
-            </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.20"
+          speaker="Krishna"
+          sanskrit="न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"
+          iast="na jāyate mriyate vā kadācinnāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||"
+        />
           </div>
           <div className="shloka-essence">
             You are eternal, nothing can destroy your true self.
@@ -902,69 +816,31 @@ export default function ChapterTwoPage() {
           The logic is elegant. If the soul is unborn and eternal, then "birth" and "death" are not absolute events, they are transitions of the body, not the self. They are like changing clothes.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.22</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि ।<br />तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥
-          </div>
-          <div className="shloka-iast">
-            vāsāṃsi jīrṇāni yathā vihāya navāni gṛhṇāti naro'parāṇi |<br />tathā śarīrāṇi vihāya jīrṇānyanyāni saṃyāti navāni dehī ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Just as a person puts on new garments, giving up old ones, similarly, the soul accepts new material bodies, giving up the old and useless ones.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The metaphor</div>
-              <div className="shloka-insight">
-                The garment metaphor is one of the Gita's most concrete images. You don't mourn the death of a shirt when you put on a new one. The shirt was never you. Why should you mourn the death of a body? This is not abstract, it's asking you to think about what you're actually grieving.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            You are the eternal soul, not the temporary body.
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.22"
+          speaker="Krishna"
+          sanskrit="वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥"
+          iast="vāsāṃsi jīrṇāni yathā vihāya navāni gṛhṇāti naro'parāṇi | tathā śarīrāṇi vihāya jīrṇānyanyāni saṃyāti navāni dehī ||"
+          meaning="Just as a person puts on new garments, giving up old ones, similarly, the soul accepts new material bodies, giving up the old and useless ones."
+          insightLabel="The metaphor"
+          insight="The garment metaphor is one of the Gita's most concrete images. You don't mourn the death of a shirt when you put on a new one. The shirt was never you. Why should you mourn the death of a body? This is not abstract, it's asking you to think about what you're actually grieving."
+          essence="You are the eternal soul, not the temporary body."
+        />
 
         <p>
           And between these two verses, Krishna gives a third piece of advice: endure what comes. Verse 2.14 speaks to the transient nature of sensation, pain and pleasure come and go, heat and cold come and go. Build the capacity to endure them without being destabilized. What you cannot control, you must outlast.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.14</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः ।<br />आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥
-          </div>
-          <div className="shloka-iast">
-            mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ |<br />āgamāpāyino'nityāstāṃstitikṣasva bhārata ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                O Arjuna, the contacts of the senses with objects bring cold and heat, pleasure and pain. They come and go, they are impermanent. Endure them, O descendant of Bharata.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The practice</div>
-              <div className="shloka-insight">
-                This is the practice: watch what comes and goes. Don't cling to pleasure, don't shrink from pain. Both are temporary. The person who can remain stable while everything changes is the person who has understood the difference between the self and the body.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            Endure life's changing experiences with patience, they are temporary.
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.14"
+          speaker="Krishna"
+          sanskrit="मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥"
+          iast="mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ | āgamāpāyino'nityāstāṃstitikṣasva bhārata ||"
+          meaning="O Arjuna, the contacts of the senses with objects bring cold and heat, pleasure and pain. They come and go, they are impermanent. Endure them, O descendant of Bharata."
+          insightLabel="The practice"
+          insight="This is the practice: watch what comes and goes. Don't cling to pleasure, don't shrink from pain. Both are temporary. The person who can remain stable while everything changes is the person who has understood the difference between the self and the body."
+          essence="Endure life's changing experiences with patience, they are temporary."
+        />
 
         {/* SECTION 3: DHARMA ARGUMENT */}
         <div className="section-divider">
@@ -998,35 +874,16 @@ export default function ChapterTwoPage() {
           2.47 is the most quoted verse of the Gita. In boardrooms, yoga studios, and self-help books, it shows up as a teaching on detachment. But people almost always quote only the first half and miss the verse's full force. The verse has four parts, and they're all equally important.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.47</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।<br />मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥
-          </div>
-          <div className="shloka-iast">
-            karmaṇyevādhikāraste mā phaleṣu kadācana |<br />mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of the results of your activities, and never be attached to not doing your duty.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The four parts</div>
-              <div className="shloka-insight">
-                This verse is often reduced to "do your duty but don't claim the results." But it has four distinct moves: (1) do your duty, this is positive; (2) don't claim ownership of outcomes, negative; (3) don't make the fruit your motive, negative; (4) don't use this teaching as an excuse for inaction, negative. The fourth part is almost always ignored. The verse is anti-nihilism as much as it is anti-ambition.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            Do your duty sincerely, and let go of expectations for the outcome.
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.47"
+          speaker="Krishna"
+          sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
+          iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
+          meaning="You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of the results of your activities, and never be attached to not doing your duty."
+          insightLabel="The four parts"
+          insight="This verse is often reduced to \"do your duty but don't claim the results.\" But it has four distinct moves: (1) do your duty, this is positive; (2) don't claim ownership of outcomes, negative; (3) don't make the fruit your motive, negative; (4) don't use this teaching as an excuse for inaction, negative. The fourth part is almost always ignored. The verse is anti-nihilism as much as it is anti-ambition."
+          essence="Do your duty sincerely, and let go of expectations for the outcome."
+        />
 
         <p>
           The verse is saying: you must act. You have a right to action. But you have no right to demand the universe give you the outcome you want. Your job is to act with full effort and integrity. The results are not in your control, and trying to control them is the path to suffering. But not acting, using detachment as an excuse for inaction, is the opposite extreme, and the verse explicitly forbids it.
@@ -1036,35 +893,16 @@ export default function ChapterTwoPage() {
           The very next verse clarifies what this looks like in practice.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.48</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय ।<br />सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥
-          </div>
-          <div className="shloka-iast">
-            yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya |<br />siddhyasiddhyoḥ samo bhūtvā samatvaṃ yoga ucyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Perform your duties established in yoga, abandoning attachment. Be even-minded in success and failure, for equanimity is called yoga.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What yoga means</div>
-              <div className="shloka-insight">
-                The very next verse after the famous 2.47 defines yoga not as a physical practice but as equanimity of mind in success and failure. This is the operating system behind detachment. It's not numbness or resignation. It's the capacity to remain clear and functional regardless of whether things go your way or not.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            True yoga is remaining balanced and calm, regardless of success or failure.
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.48"
+          speaker="Krishna"
+          sanskrit="योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय । सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥"
+          iast="yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya | siddhyasiddhyoḥ samo bhūtvā samatvaṃ yoga ucyate ||"
+          meaning="Perform your duties established in yoga, abandoning attachment. Be even-minded in success and failure, for equanimity is called yoga."
+          insightLabel="What yoga means"
+          insight="The very next verse after the famous 2.47 defines yoga not as a physical practice but as equanimity of mind in success and failure. This is the operating system behind detachment. It's not numbness or resignation. It's the capacity to remain clear and functional regardless of whether things go your way or not."
+          essence="True yoga is remaining balanced and calm, regardless of success or failure."
+        />
 
         {/* SECTION 5: AVOIDING YOUR DUTY */}
         <div className="section-divider">
@@ -1100,65 +938,27 @@ export default function ChapterTwoPage() {
           Toward the end of Chapter 2, Krishna gives what is perhaps the Gita's most precise description of psychological collapse. It's a sequence, and understanding it is crucial because it shows you where the break in the chain can happen.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.62</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते ।<br />सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥
-          </div>
-          <div className="shloka-iast">
-            dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate |<br />saṅgāt saṃjāyate kāmaḥ kāmātkrodho'bhijāyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                From thinking about sense objects, attachment develops; from attachment, desire is born; from desire, anger arises.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The first link</div>
-              <div className="shloka-insight">
-                Notice that the cascade begins with thought. You think about something, you dwell on it, replay it, fantasize about it. That dwelling creates attachment. Not the object itself creates attachment, but your repeated thinking about it. This is why the first link is the most important: if you can interrupt it here, the rest of the cascade never begins.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            Dwelling on desires creates attachment; attachment creates anger.
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.62"
+          speaker="Krishna"
+          sanskrit="ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥"
+          iast="dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate | saṅgāt saṃjāyate kāmaḥ kāmātkrodho'bhijāyate ||"
+          meaning="From thinking about sense objects, attachment develops; from attachment, desire is born; from desire, anger arises."
+          insightLabel="The first link"
+          insight="Notice that the cascade begins with thought. You think about something, you dwell on it, replay it, fantasize about it. That dwelling creates attachment. Not the object itself creates attachment, but your repeated thinking about it. This is why the first link is the most important: if you can interrupt it here, the rest of the cascade never begins."
+          essence="Dwelling on desires creates attachment; attachment creates anger."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.63</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः ।<br />स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥
-          </div>
-          <div className="shloka-iast">
-            krodhādbhavati saṃmohaḥ saṃmohātsmṛtivibhramaḥ |<br />smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                From anger comes delusion; from delusion, loss of memory; from loss of memory, the destruction of intelligence; from the destruction of intelligence, one perishes.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The full cascade</div>
-              <div className="shloka-insight">
-                The Gita's description of collapse is precise: anger clouds the mind, delusion sets in. You start to forget what matters. Your judgment deteriorates. And finally, your self-destruction follows inevitably. Each step is necessary and flows from the previous one. But they're also preventable, if you can break the chain at any point, you stop the cascade.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            Anger clouds the mind; a clouded mind destroys intelligence.
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.63"
+          speaker="Krishna"
+          sanskrit="क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥"
+          iast="krodhādbhavati saṃmohaḥ saṃmohātsmṛtivibhramaḥ | smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||"
+          meaning="From anger comes delusion; from delusion, loss of memory; from loss of memory, the destruction of intelligence; from the destruction of intelligence, one perishes."
+          insightLabel="The full cascade"
+          insight="The Gita's description of collapse is precise: anger clouds the mind, delusion sets in. You start to forget what matters. Your judgment deteriorates. And finally, your self-destruction follows inevitably. Each step is necessary and flows from the previous one. But they're also preventable, if you can break the chain at any point, you stop the cascade."
+          essence="Anger clouds the mind; a clouded mind destroys intelligence."
+        />
 
         <p>
           This is the Gita's 2500-year-old theory of how the mind falls apart. The sequence is: dwelling on something → attachment → desire → anger (when blocked) → confusion → memory loss → loss of judgment → self-destruction. Each step is both inevitable and avoidable. The key insight is that the interruption point is always the first link: what you allow your mind to dwell on.
@@ -1177,99 +977,42 @@ export default function ChapterTwoPage() {
           The chapter reaches its culmination in one of the Gita's most important passages. Arjuna asks Krishna a question that is both simple and profound.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.54</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            स्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव ।<br />स्थितधीः किं प्रभाषेत किमासीत व्रजेत किम् ॥
-          </div>
-          <div className="shloka-iast">
-            sthitaprajñasya kā bhāṣā samādhisthasya keśava |<br />sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                O Krishna, what is the description of one whose wisdom is steady, one established in deep absorption? How does such a person speak, how does such a person sit, how does such a person walk?
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The sincere question</div>
-              <div className="shloka-insight">
-                This is one of the best questions in the entire Gita. Arjuna doesn't ask how to become wise, he asks what it looks like. How can I recognize it? How can I recognize it in myself? He's asking for a portrait, a description of wisdom from the outside. Not an abstract principle, but observable characteristics.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            The sincere seeker asks: what does true inner balance look like?
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.54"
+          speaker="Arjuna"
+          sanskrit="स्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव । स्थितधीः किं प्रभाषेत किमासीत व्रजेत किम् ॥"
+          iast="sthitaprajñasya kā bhāṣā samādhisthasya keśava | sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim ||"
+          meaning="O Krishna, what is the description of one whose wisdom is steady, one established in deep absorption? How does such a person speak, how does such a person sit, how does such a person walk?"
+          insightLabel="The sincere question"
+          insight="This is one of the best questions in the entire Gita. Arjuna doesn't ask how to become wise, he asks what it looks like. How can I recognize it? How can I recognize it in myself? He's asking for a portrait, a description of wisdom from the outside. Not an abstract principle, but observable characteristics."
+          essence="The sincere seeker asks: what does true inner balance look like?"
+        />
 
         <p>
           And Krishna answers with a portrait that spans verses 2.55 through 2.72. It is not a portrait of a detached saint sitting in a cave. It is a portrait of a person who remains functional, clear, and present even when life is burning around them.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.55</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            प्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान् ।<br />आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते ॥
-          </div>
-          <div className="shloka-iast">
-            prajahāti yadā kāmān sarvān pārtha manogatān |<br />ātmanyevātmanā tuṣṭaḥ sthitaprajñastadocyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                One is called a person of steady wisdom when they abandon all desires of the mind, O Arjuna, and remain satisfied in the self alone by the self.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Freedom from desire</div>
-              <div className="shloka-insight">
-                This is crucial: freedom from desire doesn't mean wanting nothing. It means your sense of wholeness, your sense of being complete, no longer depends on getting anything from the world. You are full without it. The key phrase is "satisfied in the self alone by the self", your completeness comes from within, not from external acquisition.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            Freedom from desire brings deep contentment.
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.55"
+          speaker="Krishna"
+          sanskrit="प्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान् । आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते ॥"
+          iast="prajahāti yadā kāmān sarvān pārtha manogatān | ātmanyevātmanā tuṣṭaḥ sthitaprajñastadocyate ||"
+          meaning="One is called a person of steady wisdom when they abandon all desires of the mind, O Arjuna, and remain satisfied in the self alone by the self."
+          insightLabel="Freedom from desire"
+          insight="This is crucial: freedom from desire doesn't mean wanting nothing. It means your sense of wholeness, your sense of being complete, no longer depends on getting anything from the world. You are full without it. The key phrase is \"satisfied in the self alone by the self\", your completeness comes from within, not from external acquisition."
+          essence="Freedom from desire brings deep contentment."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 2.56</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः ।<br />वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ॥
-          </div>
-          <div className="shloka-iast">
-            duḥkheṣvanudvignamanāḥ sukheṣu vigataspṛhaḥ |<br />vītarāgabhayakrodhaḥ sthitadhīrmunirucyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                One whose mind is not disturbed even in the threefold miseries, who is not elated when there is happiness, and who is free from attachment, fear and anger, is called a sage of steady mind.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The three freedoms</div>
-              <div className="shloka-insight">
-                The sthitaprajna has three key characteristics: they are undisturbed in suffering, not overjoyed in pleasure, and free from attachment, fear, and anger. Notice that this is not numbness, it's steadiness. They're still experiencing what happens, but they're not being dragged around by it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            Steadiness of mind comes from detachment and equanimity, not from the sway of outer circumstances.
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.56"
+          speaker="Krishna"
+          sanskrit="दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः । वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ॥"
+          iast="duḥkheṣvanudvignamanāḥ sukheṣu vigataspṛhaḥ | vītarāgabhayakrodhaḥ sthitadhīrmunirucyate ||"
+          meaning="One whose mind is not disturbed even in the threefold miseries, who is not elated when there is happiness, and who is free from attachment, fear and anger, is called a sage of steady mind."
+          insightLabel="The three freedoms"
+          insight="The sthitaprajna has three key characteristics: they are undisturbed in suffering, not overjoyed in pleasure, and free from attachment, fear, and anger. Notice that this is not numbness, it's steadiness. They're still experiencing what happens, but they're not being dragged around by it."
+          essence="Steadiness of mind comes from detachment and equanimity, not from the sway of outer circumstances."
+        />
 
         <p>
           This is the portrait. Not an ascetic. Not someone withdrawn from life. But someone who can remain clear, integrated, and functional regardless of what life brings. Someone who has broken the connection between what happens externally and their internal stability.

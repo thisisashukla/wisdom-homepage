@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Sthitaprajna: The Bhagavad Gita's 18-Verse Portrait of an Unshakeable Mind | Wisdom",
@@ -197,96 +198,6 @@ const pageCSS = `
         p {
             margin-bottom: 1.5rem;
             color: var(--text-dim);
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-
-        .shloka-card:hover {
-            background: var(--bg-card-hover);
-        }
-
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .meaning-text {
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .insight-text {
-            color: var(--text-dim);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -689,20 +600,14 @@ export default function SthitaprajnaPage() {
           Krishna begins at the starting point, which is internal. The first characteristic is not behavioral at all. It is about what is absent.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.55</div>
-          <div className="sanskrit">प्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान् ।<br />आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते ॥</div>
-          <div className="transliteration">prajahāti yadā kāmān sarvān pārtha manogatān |<br />ātmanyevātmanā tuṣṭaḥ sthitaprajñastadocyate ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">When a person gives up all desires that come from the mind, and is satisfied within themselves by their own self, that person is called one of steady wisdom.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Means</div>
-            <div className="insight-text">This builds the inner skill of viveka, discernment, helping us recognize which desires arise out of habit and which are truly aligned with our deeper self. It encourages mental clarity and points toward contentment through self-sufficiency, not through accumulation.</div>
-          </div>
-          <div className="essence">True contentment is found by letting go of endless desires and resting in the fullness of your own atman.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.55"
+          sanskrit="प्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान् । आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते ॥"
+          iast="prajahāti yadā kāmān sarvān pārtha manogatān | ātmanyevātmanā tuṣṭaḥ sthitaprajñastadocyate ||"
+          meaningLabel="Translation"
+          insightLabel="What This Means"
+          essence="True contentment is found by letting go of endless desires and resting in the fullness of your own atman."
+        />
 
         <p>
           The phrase manogatan is worth noting. These are desires that live in the mind, not just desires for external things. The sthitaprajna has not abandoned wanting because the world stopped offering things to want. They have abandoned the pattern of the mind that generates wanting as a default state. The distinction matters because it explains why this is not a state that depends on circumstances. External conditions can change, but the pattern of the mind is something the person controls.
@@ -716,20 +621,14 @@ export default function SthitaprajnaPage() {
           Several verses after the opening, Krishna gives the section&apos;s most vivid image. It describes a specific capacity, not a permanent state.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.58</div>
-          <div className="sanskrit">यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः ।<br />इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥</div>
-          <div className="transliteration">yadā saṃharate cāyaṃ kūrmo&apos;ṅgānīva sarvaśaḥ |<br />indriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">When you pull your senses away from outside attractions, like a turtle pulls in its limbs from the world, your understanding becomes steady and calm.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Means</div>
-            <div className="insight-text">Building the skill of withdrawing from distractions strengthens self-control and helps steady the mind. The turtle does not keep its limbs retracted forever. It can extend them again when the environment is safe. The point is voluntary, on-demand retraction, not permanent withdrawal.</div>
-          </div>
-          <div className="essence">Steadiness comes from withdrawing your senses from distractions, just as the kachhua does.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.58"
+          sanskrit="यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः । इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥"
+          iast="yadā saṃharate cāyaṃ kūrmo'ṅgānīva sarvaśaḥ | indriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā ||"
+          meaningLabel="Translation"
+          insightLabel="What This Means"
+          essence="Steadiness comes from withdrawing your senses from distractions, just as the kachhua does."
+        />
 
         <p>
           The turtle image is specific in a way that is easy to miss. A turtle does not permanently retract its limbs. It has the capacity to retract them when the environment is threatening, and to extend them again when it is safe. This is pratyahara, the ability to disengage attention from sense objects at will. It is a skill, not a permanent condition.
@@ -747,35 +646,23 @@ export default function SthitaprajnaPage() {
           After describing the positive qualities of steady wisdom, verses 2.62 and 2.63 describe the opposite: what happens when you do not exercise this withdrawal. Krishna lays out a sequence with unusual precision. Each step follows from the previous one, and the speed of the sequence is the point.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.62</div>
-          <div className="sanskrit">ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते ।<br />सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥</div>
-          <div className="transliteration">dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate |<br />saṅgāt saṃjāyate kāmaḥ kāmātkrodho&apos;bhijāyate ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">When you constantly think about objects and pleasures, you become attached to them. This attachment creates desire, which leads to anger if unfulfilled.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">This verse teaches the importance of mindful awareness. By observing and guiding our thoughts, we can prevent unnecessary attachments and the cycle of frustration. It is a lesson in self-control, emotional intelligence, and building inner peace.</div>
-          </div>
-          <div className="essence">Guard your mind&apos;s focus, for your thoughts shape your destiny.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.62"
+          sanskrit="ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥"
+          iast="dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate | saṅgāt saṃjāyate kāmaḥ kāmātkrodho'bhijāyate ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Guard your mind's focus, for your thoughts shape your destiny."
+        />
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.63</div>
-          <div className="sanskrit">क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः ।<br />स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥</div>
-          <div className="transliteration">krodhādbhavati saṃmohaḥ saṃmohātsmṛtivibhramaḥ |<br />smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Anger leads to confusion, then loss of memory and understanding, and finally a person falls from their true path.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">Uncontrolled desires and anger scatter the mind and bring confusion. This verse describes not a sudden collapse but a gradual sequence. Each step is both a symptom and a cause of the next one. Self-mastery preserves wisdom.</div>
-          </div>
-          <div className="essence">Uncontrolled desires and anger scatter the mind and bring confusion; self-mastery preserves wisdom.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.63"
+          sanskrit="क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥"
+          iast="krodhādbhavati saṃmohaḥ saṃmohātsmṛtivibhramaḥ | smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Uncontrolled desires and anger scatter the mind and bring confusion; self-mastery preserves wisdom."
+        />
 
         <p>
           Written out in sequence, the cascade across 2.62 and 2.63 is:
@@ -817,20 +704,14 @@ export default function SthitaprajnaPage() {
           BG 2.65 gives the clearest counter to the numbness interpretation:
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.65</div>
-          <div className="sanskrit">प्रसादे सर्वदुःखानां हानिरस्योपजायते ।<br />प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते ॥</div>
-          <div className="transliteration">prasāde sarvaduḥkhānāṃ hānirasyopajāyate |<br />prasannacetaso hyāśu buddhiḥ paryavatiṣṭhate ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">When the mind and heart are pure and steady, all sorrow disappears, and your intelligence naturally settles in the highest reality.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Means</div>
-            <div className="insight-text">Purifying the chitta through self-restraint and balance brings emotional resilience and sharpness of insight. This verse encourages developing inner steadiness as a skill, and describes its outcome not as blankness but as prasada, a positive quality of serenity and clarity.</div>
-          </div>
-          <div className="essence">Clarity within dissolves sorrow and brings lasting wisdom.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.65"
+          sanskrit="प्रसादे सर्वदुःखानां हानिरस्योपजायते । प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते ॥"
+          iast="prasāde sarvaduḥkhānāṃ hānirasyopajāyate | prasannacetaso hyāśu buddhiḥ paryavatiṣṭhate ||"
+          meaningLabel="Translation"
+          insightLabel="What This Means"
+          essence="Clarity within dissolves sorrow and brings lasting wisdom."
+        />
 
         <p>
           Prasada is the word in this verse. It is often translated as serenity or grace. But prasada has a quality of brightness, warmth, clarity. It is not the absence of feeling. It is a particular kind of radiant stillness. The verse says that when this prasada is established, all sorrow falls away, and the intellect naturally settles. This is the outcome of sthitaprajna, and it is the opposite of numbness.
@@ -841,20 +722,14 @@ export default function SthitaprajnaPage() {
           Near the end of the sthitaprajna section, Krishna gives a second extended image. If the turtle verse describes a capacity (voluntary withdrawal of attention), the ocean verse describes a quality (what that capacity makes possible over time).
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 2.70</div>
-          <div className="sanskrit">आपूर्यमाणमचलप्रतिष्ठं<br />समुद्रमापः प्रविशन्ति यद्वत् ।<br />तद्वत्कामा यं प्रविशन्ति सर्वे<br />स शान्तिमाप्नोति न कामकामी ॥</div>
-          <div className="transliteration">āpūryamāṇamacalapratiṣṭhaṃ<br />samudramāpaḥ praviśanti yadvat |<br />tadvatkāmā yaṃ praviśanti sarve<br />sa śāntimāpnoti na kāmakāmī ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Just as the ocean stays steady and is not disturbed even when many rivers flow into it, a person who stays balanced and calm amidst all desires and pleasures attains real shanti. The person who constantly chases desires does not find true peace.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Means</div>
-            <div className="insight-text">This verse teaches the internal skill of vairagya, disciplined detachment, the ability to welcome life&apos;s experiences without being swayed or agitated by them. The ocean does not refuse the rivers. It receives them and remains unchanged. That is the quality being described.</div>
-          </div>
-          <div className="essence">Stay steady like the ocean. Let desires come and go, but hold on to inner shanti.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.70"
+          sanskrit="आपूर्यमाणमचलप्रतिष्ठं समुद्रमापः प्रविशन्ति यद्वत् । तद्वत्कामा यं प्रविशन्ति सर्वे स शान्तिमाप्नोति न कामकामी ॥"
+          iast="āpūryamāṇamacalapratiṣṭhaṃ samudramāpaḥ praviśanti yadvat | tadvatkāmā yaṃ praviśanti sarve sa śāntimāpnoti na kāmakāmī ||"
+          meaningLabel="Translation"
+          insightLabel="What This Means"
+          essence="Stay steady like the ocean. Let desires come and go, but hold on to inner shanti."
+        />
 
         <p>
           The ocean does not block the rivers. It does not refuse them. They come in, they are received, the ocean does not change. This is a very different image from the turtle, which withdraws. Here the sthitaprajna is fully open to experience. Sense objects arrive. Desires arise. The world comes in. And nothing moves the ground.

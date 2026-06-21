@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita for Beginners \u2014 Where to Start and What to Read First | Wisdom",
@@ -197,74 +198,6 @@ const pageCSS = `
         p {
             margin-bottom: 1.5rem;
             color: var(--text-dim);
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-
-        .shloka-card:hover {
-            background: var(--bg-card-hover);
-        }
-
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .meaning-text {
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -641,57 +574,29 @@ export default function ForBeginnersPage() {
             If you want to get a taste of the Gita right now, here are five verses that capture different aspects of the teaching.
         </p>
 
-        <div className="shloka-card">
-            <div className="verse-number">Bhagavad Gita 1.1</div>
-            <div className="sanskrit">धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः ।
-मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥</div>
-            <div className="transliteration">dharmakṣetre kurukṣetre samaveta yuyutsavaḥ |
-māmakāḥ pāṇḍavāś caiva kim akurvata sañjaya ||</div>
-            <div className="meaning">
-                <div className="meaning-label">Translation</div>
-                <div className="meaning-text">On the field of dharma, at Kurukshetra, gathering to fight, what did my people do, and what did the Pandavas do, O Sanjaya?</div>
-            </div>
-            <div className="essence">The opening verse. The stage is set. Everything begins here.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 1.1"
+          sanskrit="धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥"
+          iast="dharmakṣetre kurukṣetre samaveta yuyutsavaḥ | māmakāḥ pāṇḍavāś caiva kim akurvata sañjaya ||"
+          meaningLabel="Translation"
+          essence="The opening verse. The stage is set. Everything begins here."
+        />
 
-        <div className="shloka-card">
-            <div className="verse-number">Bhagavad Gita 2.47</div>
-            <div className="sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।
-मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥</div>
-            <div className="transliteration">karmaṇyevādhikāraste mā phaleṣu kadācana |
-mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||</div>
-            <div className="meaning">
-                <div className="meaning-label">Translation</div>
-                <div className="meaning-text">You have a right to perform your prescribed duties, but you are not entitled to the fruits. Never consider yourself the cause of the results, and never be attached to not doing your duty.</div>
-            </div>
-            <div className="essence">The most famous verse. The foundation of karma yoga.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.47"
+          sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
+          iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
+          meaningLabel="Translation"
+          essence="The most famous verse. The foundation of karma yoga."
+        />
 
-        <div className="shloka-card">
-            <div className="verse-number">Bhagavad Gita 2.20</div>
-            <div className="sanskrit">न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः ।
-अजो नित्यः शाश्वतोऽयं पुरानो न हन्यते हन्यमाने शरीरे ॥</div>
-            <div className="transliteration">na jāyate mriyate vā kadācin nāyaṃ bhūtvā bhavitā vā na bhūyaḥ |
-ajo nityaḥ śāśvato'yaṃ purāno na hanyate hanyamāne śarīre ||</div>
-            <div className="meaning">
-                <div className="meaning-label">Translation</div>
-                <div className="meaning-text">The soul is never born, nor does it ever die. It is eternal, immortal, unchanging, and ageless. The body may be destroyed, but the soul endures.</div>
-            </div>
-            <div className="essence">The metaphysical heart. What you really are.</div>
-        </div>
-
-        <div className="shloka-card">
-            <div className="verse-number">Bhagavad Gita 3.35</div>
-            <div className="sanskrit">श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।
-स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥</div>
-            <div className="transliteration">śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt |
-svabhāvaniyataṃ karma kurvann āpnoti kilbiṣam ||</div>
-            <div className="meaning">
-                <div className="meaning-label">Translation</div>
-                <div className="meaning-text">Better your own dharma, imperfectly done, than another's dharma done perfectly. Acting according to your own nature, you incur no sin.</div>
-            </div>
-            <div className="essence">Stay on your own path. Comparison is fear in disguise.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.35"
+          sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥"
+          iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svabhāvaniyataṃ karma kurvann āpnoti kilbiṣam ||"
+          meaningLabel="Translation"
+          essence="Stay on your own path. Comparison is fear in disguise."
+        />
 
         <h2>What to Expect: The Gita Challenges You</h2>
         <p>

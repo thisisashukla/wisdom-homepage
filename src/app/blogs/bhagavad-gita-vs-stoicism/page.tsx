@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita vs Stoicism: 9 Teachings That Are Surprisingly Similar | Wisdom",
@@ -197,96 +198,6 @@ const pageCSS = `
         p {
             margin-bottom: 1.5rem;
             color: var(--text-dim);
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-
-        .shloka-card:hover {
-            background: var(--bg-card-hover);
-        }
-
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .meaning-text {
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .insight-text {
-            color: var(--text-dim);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -695,19 +606,13 @@ export default function GitaVsStoicismPage() {
         <div className="quote-source"><a href="https://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus, Enchiridion, I</a> (tr. Carter)</div>
       </div>
 
-      <div className="shloka-card">
-        <div className="verse-number"><a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.47</a></div>
-        <div className="sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।</div>
-        <div className="transliteration">karmaṇyevādhikāraste mā phaleṣu kadācana</div>
-        <div className="meaning">
-          <div className="meaning-label">Translation</div>
-          <div className="meaning-text">You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions.</div>
-        </div>
-        <div className="insight">
-          <div className="insight-label">The Parallel</div>
-          <div className="insight-text">The Gita maps almost exactly onto Epictetus&apos;s dichotomy. The Sanskrit is precise: <em>karmaṇi</em> (in action), <em>eva</em> (only), <em>adhikāraḥ</em> (your rightful domain) — <em>mā phaleṣu kadācana</em> (never in the fruits, not once). Action (<em>karma</em>) is yours. The fruit (<em>phala</em>) is not. And crucially, the verse adds a third instruction that is often missed: <em>mā te saṅgo&apos;stvakarmaṇi</em> — do not become attached to inaction either. Epictetus draws a line between internals and externals. The Gita draws the same line and then warns you not to use it as an excuse to stop acting altogether. Both traditions arrive at the same practical instruction: full effort, released grip.</div>
-        </div>
-      </div>
+            <ShlokaCard
+        verseRef=""
+        sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।"
+        iast="karmaṇyevādhikāraste mā phaleṣu kadācana"
+        meaningLabel="Translation"
+        insightLabel="The Parallel"
+      />
 
       <h2>Similarity 2: Virtue Is the Only True Good</h2>
       <div className="similarity-label">Similarity 2 of 9</div>
@@ -764,19 +669,13 @@ export default function GitaVsStoicismPage() {
         <div className="quote-source"><a href="https://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus, Enchiridion, XVII</a> (tr. Carter)</div>
       </div>
 
-      <div className="shloka-card">
-        <div className="verse-number"><a href="/gita/chapter/3/verse/35" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 3.35</a> and <a href="/gita/chapter/18/verse/47" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>18.47</a></div>
-        <div className="sanskrit">श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।</div>
-        <div className="transliteration">śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt</div>
-        <div className="meaning">
-          <div className="meaning-label">Translation (BG 3.35)</div>
-          <div className="meaning-text">Better is one&apos;s own dharma, though imperfectly performed, than the dharma of another well performed.</div>
-        </div>
-        <div className="insight">
-          <div className="insight-label">The Parallel</div>
-          <div className="insight-text"><em>Svadharma</em> — your own duty in your own circumstances — maps closely to Epictetus&apos;s &quot;act the part given to you.&quot; The Gita states this twice, in slightly different registers. BG 3.35 (<em>śreyānsvadharmo viguṇaḥ</em>) says your own imperfect duty is better than another&apos;s well-executed one — and adds that <em>svadharme nidhanaṃ śreyaḥ</em>: dying in your own duty is preferable to following another&apos;s path. BG 18.47 repeats the first line but adds <em>svabhāvaniyataṃ karma</em>: action fixed by your own nature. The Gita&apos;s point is not merely social role (as older caste readings sometimes framed it) but alignment between action and nature. Epictetus, born a slave, performed his role with such completeness that he became one of the most admired philosophers of his century. Both traditions say: you may not have chosen this role. Do it with your whole nature. That is what you have.</div>
-        </div>
-      </div>
+            <ShlokaCard
+        verseRef=""
+        sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।"
+        iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt"
+        meaningLabel="Translation (BG 3.35)"
+        insightLabel="The Parallel"
+      />
 
       <h2>Similarity 5: Equanimity in Success and Failure</h2>
       <div className="similarity-label">Similarity 5 of 9</div>
@@ -786,20 +685,14 @@ export default function GitaVsStoicismPage() {
         <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VI.2</a> (tr. Hays)</div>
       </div>
 
-      <div className="shloka-card">
-        <div className="verse-number"><a href="/gita/chapter/2/verse/38" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.38</a></div>
-        <div className="sanskrit">सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥</div>
-        <div className="transliteration">sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||</div>
-        <div className="meaning">
-          <div className="meaning-label">Translation</div>
-          <div className="meaning-text">Be equal in pleasure and pain, in gain and loss, in victory and defeat. Then enter the battle. You will not incur sin.</div>
-        </div>
-        <div className="insight">
-          <div className="insight-label">The Parallel</div>
-          <div className="insight-text">Both Marcus and Krishna are asking for the same inner posture: steadiness regardless of outcome. The Sanskrit lists the pairs explicitly — <em>sukha-duḥkhe</em> (pleasure and pain), <em>lābhālābhau</em> (gain and loss), <em>jayājayau</em> (victory and defeat) — and asks you to hold them <em>same</em> (<em>same kṛtvā</em>). Not equally good. Not indifferent. Same. The Stoic equivalent is Marcus&apos;s word <em>eudaimonia</em> — flourishing — which the Stoics held does not come in degrees and cannot be added to or subtracted from by external events. Neither tradition is asking you to stop caring. Both are asking you to locate caring in the action rather than in what the action produces.</div>
-        </div>
-        <div className="essence">Same quality of mind in all circumstances.</div>
-      </div>
+            <ShlokaCard
+        verseRef=""
+        sanskrit="सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥"
+        iast="sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||"
+        meaningLabel="Translation"
+        insightLabel="The Parallel"
+        essence="Same quality of mind in all circumstances."
+      />
 
       <h2>Similarity 6: The Inner Citadel</h2>
       <div className="similarity-label">Similarity 6 of 9</div>
@@ -829,19 +722,13 @@ export default function GitaVsStoicismPage() {
         <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VII.56</a> (tr. Hays)</div>
       </div>
 
-      <div className="shloka-card">
-        <div className="verse-number"><a href="/gita/chapter/2/verse/19" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Bhagavad Gita 2.19–20</a></div>
-        <div className="sanskrit">य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् । उभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥</div>
-        <div className="transliteration">ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam | ubhau tau na vijānīto nāyaṃ hanti na hanyate ||</div>
-        <div className="meaning">
-          <div className="meaning-label">Translation</div>
-          <div className="meaning-text">Those who think the atman kills or is killed are mistaken. The atman neither kills nor is killed.</div>
-        </div>
-        <div className="insight">
-          <div className="insight-label">The Parallel and the Difference</div>
-          <div className="insight-text">Both traditions arrive at the same practical outcome: the fear of death should not dominate your choices. But the routes are very different. The Gita grounds this in a precise metaphysics of the atman. BG 2.20 piles up five Sanskrit terms for this: <em>aja</em> (unborn), <em>nitya</em> (eternal), <em>śāśvata</em> (everlasting), <em>purāṇa</em> (ancient, beginningless), and <em>avyaya</em> (without decay). The self is not merely persistent; it is constitutively outside the categories of birth and death. Stoicism reaches the same practical destination by a different road: death is not an evil because evil requires harm to the rational faculty, and death ends the rational faculty rather than harming it. Marcus&apos;s memento mori is a cognitive discipline for the living. The Gita&apos;s teaching is a metaphysical claim about what the self actually is. They agree on the behavioral prescription; they disagree, fundamentally, on why.</div>
-        </div>
-      </div>
+            <ShlokaCard
+        verseRef=""
+        sanskrit="य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् । उभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥"
+        iast="ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam | ubhau tau na vijānīto nāyaṃ hanti na hanyate ||"
+        meaningLabel="Translation"
+        insightLabel="The Parallel and the Difference"
+      />
 
       <h2>Similarity 8: Service, Duty, and the Common Good</h2>
       <div className="similarity-label">Similarity 8 of 9</div>

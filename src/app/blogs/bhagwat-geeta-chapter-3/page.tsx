@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 3 Summary \u2013 Key Verses & Meaning (Karma Yoga)",
@@ -238,52 +239,6 @@ const pageCSS = `
       .toc-list a:hover { color: var(--gold-light); }
 
       /* ── SHLOKA CARD ── */
-      .shloka-card {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        overflow: hidden;
-        margin: 36px 0;
-      }
-      .shloka-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 12px 22px;
-        border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05);
-      }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit {
-        padding: 24px 22px 16px;
-        font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px;
-        line-height: 1.75;
-        color: var(--gold-light);
-        border-bottom: 1px solid var(--border);
-      }
-      .shloka-iast {
-        padding: 12px 22px 16px;
-        font-size: 12.5px;
-        line-height: 1.7;
-        color: var(--text-dimmer);
-        border-bottom: 1px solid var(--border);
-        font-style: italic;
-      }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence {
-        padding: 14px 22px;
-        background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border);
-        font-family: "Playfair Display", serif;
-        font-style: italic;
-        font-size: 15px;
-        color: var(--text-dim);
-      }
 
       /* ── PULL QUOTE ── */
       .pull-quote {
@@ -540,7 +495,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -813,35 +767,16 @@ export default function ChapterThreePage() {
 
         <h2 id="two-paths">Two Legitimate Paths</h2>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 3.3</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            लोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ ।<br />ज्ञानयोगेन सांख्यानां कर्मयोगेन योगिनाम् ॥
-          </div>
-          <div className="shloka-iast">
-            loke'smindvividhā niṣṭhā purā proktā mayānagha | jñānayogena sāṃkhyānāṃ karmayogena yoginām ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                In this world, I have described two paths of spiritual practice: the path of knowledge for those inclined toward understanding, and the path of action (karma yoga) for those inclined toward doing.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The opening truth</div>
-              <div className="shloka-insight">
-                Both are legitimate. The Gita doesn't favor mystics over activists or scholars over soldiers. What matters is that the path matches the nature of the person. You don't abandon your nature, you elevate it. This is the key to everything that follows.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Both knowledge and action are equally valid paths, choose the one that matches your nature."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.3"
+          speaker="Krishna"
+          sanskrit="लोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ । ज्ञानयोगेन सांख्यानां कर्मयोगेन योगिनाम् ॥"
+          iast="loke'smindvividhā niṣṭhā purā proktā mayānagha | jñānayogena sāṃkhyānāṃ karmayogena yoginām ||"
+          meaning="In this world, I have described two paths of spiritual practice: the path of knowledge for those inclined toward understanding, and the path of action (karma yoga) for those inclined toward doing."
+          insightLabel="The opening truth"
+          insight="Both are legitimate. The Gita doesn't favor mystics over activists or scholars over soldiers. What matters is that the path matches the nature of the person. You don't abandon your nature, you elevate it. This is the key to everything that follows."
+          essence="Both knowledge and action are equally valid paths, choose the one that matches your nature."
+        />
 
         <p>
           This verse is Krishna's opening move. He's not dismissing Arjuna's interest in knowledge. He's saying: yes, both paths exist. But for you, someone born into the warrior caste, trained in action your whole life, attempting to forcibly transform yourself into a wandering ascetic is not spirituality. It's escape. It's using the language of spirituality to justify the desire to run away.
@@ -862,35 +797,16 @@ export default function ChapterThreePage() {
 
         <h2 id="you-cannot-not-act">You Cannot Avoid Action</h2>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 3.5</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत् ।<br />कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः ॥
-          </div>
-          <div className="shloka-iast">
-            na hi kaścitakṣaṇamapi jātu tiṣṭhatyakarmakṛt | kāryate hyavaśaḥ karma sarvaḥ prakṛtijairguṇaiḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                No one can remain without performing some action even for a single moment. Everyone is made to act, helplessly, by the qualities born of material nature.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The refutation of escape</div>
-              <div className="shloka-insight">
-                This is the Gita's decisive blow against the fantasy of complete inaction. You cannot opt out. Even sitting still involves the action of breathing, thinking, wanting. The body will act. The mind will act. The senses will seek. You are not choosing whether to act, you're choosing whether to act consciously.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "You cannot avoid action, embrace it with awareness instead of denial."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.5"
+          speaker="Krishna"
+          sanskrit="न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत् । कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः ॥"
+          iast="na hi kaścitakṣaṇamapi jātu tiṣṭhatyakarmakṛt | kāryate hyavaśaḥ karma sarvaḥ prakṛtijairguṇaiḥ ||"
+          meaning="No one can remain without performing some action even for a single moment. Everyone is made to act, helplessly, by the qualities born of material nature."
+          insightLabel="The refutation of escape"
+          insight="This is the Gita's decisive blow against the fantasy of complete inaction. You cannot opt out. Even sitting still involves the action of breathing, thinking, wanting. The body will act. The mind will act. The senses will seek. You are not choosing whether to act, you're choosing whether to act consciously."
+          essence="You cannot avoid action, embrace it with awareness instead of denial."
+        />
 
         <p>
           This verse is ruthless in its honesty. The person who sits in the forest with closed eyes, claiming non-action, is still breathing. Still thinking. Still experiencing. The breath is action. The thought is action. The experience is action. To claim that you are performing no action is not humility, it's self-deception.
@@ -926,35 +842,16 @@ export default function ChapterThreePage() {
           Krishna's answer is <em>yajna</em>, often translated as "sacrifice," but meaning something more fundamental: the transformation of action into an offering. When you stop doing something for yourself and start doing it for something larger, the entire quality of the action changes.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 3.9</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः ।<br />तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥
-          </div>
-          <div className="shloka-iast">
-            yajñārthātkarmaṇo'nyatra loko'yaṃ karmabandhanaḥ | tadarthaṃ karma kaunteya muktasaṃgaḥ samācara ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Work done as a sacrifice (yajna) does not bind; but work done for selfish purposes is bondage. Perform your duties as an offering, free from attachment.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The transformation</div>
-              <div className="shloka-insight">
-                The same action, done for yourself, traps you in the results. Done as service, it frees you. This is not magical thinking, it's a precise description of what happens when the ego steps back and something larger becomes the purpose. You're the same person doing the same action, but the quality of your being has shifted.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Freedom comes from serving a purpose larger than yourself."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.9"
+          speaker="Krishna"
+          sanskrit="यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः । तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥"
+          iast="yajñārthātkarmaṇo'nyatra loko'yaṃ karmabandhanaḥ | tadarthaṃ karma kaunteya muktasaṃgaḥ samācara ||"
+          meaning="Work done as a sacrifice (yajna) does not bind; but work done for selfish purposes is bondage. Perform your duties as an offering, free from attachment."
+          insightLabel="The transformation"
+          insight="The same action, done for yourself, traps you in the results. Done as service, it frees you. This is not magical thinking, it's a precise description of what happens when the ego steps back and something larger becomes the purpose. You're the same person doing the same action, but the quality of your being has shifted."
+          essence="Freedom comes from serving a purpose larger than yourself."
+        />
 
         <p>
           This is where the Wisdom app becomes relevant to understanding this teaching. Every day, the app sends a shloka, a verse from the Gita, not for the user to profit from or compete over, but to deepen their understanding of what freedom truly means. The same text, received as knowledge rather than as information. The shift from self-serving to service-oriented is everything.
@@ -975,35 +872,16 @@ export default function ChapterThreePage() {
           Now Krishna introduces a concept that cuts deeper than personal liberation. It's not enough to act without attachment. You also have to accept that your actions become a standard. Great people, wise people, those with influence, their actions are watched. Their choices become permissions.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 3.21</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः ।<br />स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ॥
-          </div>
-          <div className="shloka-iast">
-            yadyadācarati śreṣṭhastattadevetaro janaḥ | sa yatpramāṇaṃ kurute lokastadanuvartate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Whatever a great person does, ordinary people will follow. Whatever standards they set, the world will adopt.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The responsibility</div>
-              <div className="shloka-insight">
-                This is where personal freedom meets social reality. The desire to withdraw is not just a spiritual failure, it's an abandonment of lokasamgraha, the holding together of the world. If you have gifts, influence, or wisdom, and you choose to hide them out of fear or the desire for peace, the world feels that absence. Others lose a model. Others lose a permission to do their own work.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Your actions shape what others believe is possible, lead with awareness."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.21"
+          speaker="Krishna"
+          sanskrit="यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः । स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ॥"
+          iast="yadyadācarati śreṣṭhastattadevetaro janaḥ | sa yatpramāṇaṃ kurute lokastadanuvartate ||"
+          meaning="Whatever a great person does, ordinary people will follow. Whatever standards they set, the world will adopt."
+          insightLabel="The responsibility"
+          insight="This is where personal freedom meets social reality. The desire to withdraw is not just a spiritual failure, it's an abandonment of lokasamgraha, the holding together of the world. If you have gifts, influence, or wisdom, and you choose to hide them out of fear or the desire for peace, the world feels that absence. Others lose a model. Others lose a permission to do their own work."
+          essence="Your actions shape what others believe is possible, lead with awareness."
+        />
 
         <p>
           This verse has a sting in it. It means that Arjuna's desire to renounce is not just his own choice. If the greatest warrior of the age puts down his bow and runs to the forest, others will see that and think: renunciation is possible, withdrawal is permissible, the world's problems are not my concern. His refusal to act has ripple effects.
@@ -1024,35 +902,16 @@ export default function ChapterThreePage() {
 
         <h2 id="ego-claims">Who Is the Doer?</h2>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 3.27</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः ।<br />अहङ्कारविमूढात्मा कर्ताऽहमिति मन्यते ॥
-          </div>
-          <div className="shloka-iast">
-            prakṛteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśaḥ | ahaṅkāravimūḍhātmā kartā'hamiti manyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                All actions are performed by the qualities of material nature, but one who is deluded by ego thinks "I am the doer."
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The subtler freedom</div>
-              <div className="shloka-insight">
-                The ego's claim on action is where suffering begins. The one who thinks they're the sole author of their successes also becomes the sole bearer of their failures. The Gita offers a different accounting: nature acts through us; we are instruments, not owners. This realization, not as belief, but as lived understanding, is freedom.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Freedom begins when you realize you are not the sole doer, nature acts through you."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.27"
+          speaker="Krishna"
+          sanskrit="प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः । अहङ्कारविमूढात्मा कर्ताऽहमिति मन्यते ॥"
+          iast="prakṛteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśaḥ | ahaṅkāravimūḍhātmā kartā'hamiti manyate ||"
+          meaning="All actions are performed by the qualities of material nature, but one who is deluded by ego thinks \"I am the doer.\""
+          insightLabel="The subtler freedom"
+          insight="The ego's claim on action is where suffering begins. The one who thinks they're the sole author of their successes also becomes the sole bearer of their failures. The Gita offers a different accounting: nature acts through us; we are instruments, not owners. This realization, not as belief, but as lived understanding, is freedom."
+          essence="Freedom begins when you realize you are not the sole doer, nature acts through you."
+        />
 
         <p>
           This is one of the Gita's most paradoxical teachings. It's saying that while you cannot avoid action, you also cannot truly be the sole author of action. The qualities of nature, sattva, rajas, tamas, are constantly acting through you. Your body is made of these qualities. Your mind is made of these qualities. Your preferences and aversions are made of these qualities.
@@ -1073,35 +932,16 @@ export default function ChapterThreePage() {
 
         <h2 id="svadharma">Better Your Own Path Imperfectly</h2>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 3.35</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।<br />स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥
-          </div>
-          <div className="shloka-iast">
-            śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                It is better to perform your own dharma imperfectly than to perform another's dharma perfectly. Even death in one's own dharma is better; another's dharma is full of fear.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The radical teaching</div>
-              <div className="shloka-insight">
-                This is one of the Gita's most counter-cultural teachings for our age of endless comparison. The impulse to become someone else, to follow another path because it looks better from the outside, is described here as fearful and dangerous. Your path, however imperfect, is yours. It carries authenticity. Another's path, however polished, is a masquerade.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Stay true to your own path, your journey is sacred and unchallengeable."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.35"
+          speaker="Krishna"
+          sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥"
+          iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ||"
+          meaning="It is better to perform your own dharma imperfectly than to perform another's dharma perfectly. Even death in one's own dharma is better; another's dharma is full of fear."
+          insightLabel="The radical teaching"
+          insight="This is one of the Gita's most counter-cultural teachings for our age of endless comparison. The impulse to become someone else, to follow another path because it looks better from the outside, is described here as fearful and dangerous. Your path, however imperfect, is yours. It carries authenticity. Another's path, however polished, is a masquerade."
+          essence="Stay true to your own path, your journey is sacred and unchallengeable."
+        />
 
         <p>
           This verse is a salve and a challenge simultaneously. It says: you don't need to be perfect at your own dharma. You can stumble. You can fail. You can be clumsy and uncertain. That's still better than being perfect at someone else's calling.
@@ -1126,35 +966,16 @@ export default function ChapterThreePage() {
           Having established that you cannot avoid action and that your action matters, Krishna now identifies what actually corrupts action. It's not action itself. It's not engagement in the world. It's something more specific: desire and anger.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 3.37</span>
-            <span className="shloka-speaker">Speaker: Krishna (in response to Arjuna)</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            काम एष क्रोध एष रजोगुणसमुद्भवः ।<br />महाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ॥
-          </div>
-          <div className="shloka-iast">
-            kāma eṣa krodha eṣa rajoguṇasamudbhavaḥ | mahāśano mahāpāpmā viddhyenamiha vairiṇam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                It is desire, it is anger, born of the rajo-guna, all-devouring and greatly sinful, know this as the enemy in this world.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The diagnosis</div>
-              <div className="shloka-insight">
-                After being asked by Arjuna what forces drive a person to sin, Krishna doesn't say ignorance or circumstance. He says desire and anger, specifically, the restless quality of the mind that creates wanting and reaction. These are described as the real enemies: not the Kauravas across the field, but the forces within.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The true battle is within, overcoming desire and anger is the way to lasting peace."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.37"
+          speaker="Krishna (in response to Arjuna)"
+          sanskrit="काम एष क्रोध एष रजोगुणसमुद्भवः । महाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ॥"
+          iast="kāma eṣa krodha eṣa rajoguṇasamudbhavaḥ | mahāśano mahāpāpmā viddhyenamiha vairiṇam ||"
+          meaning="It is desire, it is anger, born of the rajo-guna, all-devouring and greatly sinful, know this as the enemy in this world."
+          insightLabel="The diagnosis"
+          insight="After being asked by Arjuna what forces drive a person to sin, Krishna doesn't say ignorance or circumstance. He says desire and anger, specifically, the restless quality of the mind that creates wanting and reaction. These are described as the real enemies: not the Kauravas across the field, but the forces within."
+          essence="The true battle is within, overcoming desire and anger is the way to lasting peace."
+        />
 
         <p>
           Here is where Chapter 3 moves from philosophy to psychology. The enemy isn't external. You've been fighting the wrong fight if you think the problem is other people, circumstances, or even your own inaction. The real enemy is the restless wanting in the mind, the craving for what you don't have and the rejection of what you do.
@@ -1179,35 +1000,16 @@ export default function ChapterThreePage() {
           Chapter 3 ends with a structure. It describes the hierarchy of the inner life and shows how freedom is actually constructed.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 3.42–3.43</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः ।<br />मनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः ॥<br /><br />एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना ।<br />जहि शत्रुं महाबाहो कामरूपं दुरासदम् ॥
-          </div>
-          <div className="shloka-iast">
-            indriyāṇi parāṇyāhurindriyebhyaḥ paraṃ manaḥ | manasastu parā buddhiryo buddheḥ paratastu saḥ ||<br /><br />evaṃ buddheḥ paraṃ buddhvā saṃstabhyātmānamātmanā | jahi śatruṃ mahābāho kāmarūpaṃ durāsadam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The senses are higher than the body; the mind is higher than the senses; the intellect is higher than the mind. And higher than the intellect is the Self. Knowing the Self to be superior to the intellect, restrain your lower self with your higher Self, and slay this formidable enemy in the form of desire.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The architecture</div>
-              <div className="shloka-insight">
-                This is not an escape hierarchy. It's a ladder of control. You don't destroy the body or abandon the senses. You use each higher level to govern the lower. Use the intellect to govern the mind, the Self to govern the intellect. Desire is powerful, but you have something more powerful available to you.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Master your senses through the mind, mind through intellect, intellect through Self."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.42–3.43"
+          speaker="Krishna"
+          sanskrit="इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः । मनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः ॥ एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना । जहि शत्रुं महाबाहो कामरूपं दुरासदम् ॥"
+          iast="indriyāṇi parāṇyāhurindriyebhyaḥ paraṃ manaḥ | manasastu parā buddhiryo buddheḥ paratastu saḥ || evaṃ buddheḥ paraṃ buddhvā saṃstabhyātmānamātmanā | jahi śatruṃ mahābāho kāmarūpaṃ durāsadam ||"
+          meaning="The senses are higher than the body; the mind is higher than the senses; the intellect is higher than the mind. And higher than the intellect is the Self. Knowing the Self to be superior to the intellect, restrain your lower self with your higher Self, and slay this formidable enemy in the form of desire."
+          insightLabel="The architecture"
+          insight="This is not an escape hierarchy. It's a ladder of control. You don't destroy the body or abandon the senses. You use each higher level to govern the lower. Use the intellect to govern the mind, the Self to govern the intellect. Desire is powerful, but you have something more powerful available to you."
+          essence="Master your senses through the mind, mind through intellect, intellect through Self."
+        />
 
         <p>
           The chapter ends not with withdrawal but with mastery. Not with escape but with building a structure inside yourself where the higher can govern the lower. Your body wants. Your senses seek. Your mind desires. Your intellect rationalizes. And beyond all of this is the Self, the witness, the awareness that stands free of all of it.

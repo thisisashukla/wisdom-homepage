@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
+import React from 'react'
 import schemas from '@/lib/homeSchemas'
 import BlogTracker from '@/components/BlogTracker'
+import HomeAnimations from '@/components/HomeAnimations'
 import Nav from '@/components/Nav'
 import './home.css'
 
@@ -32,6 +34,8 @@ export default function HomePage() {
 
     {/* ── HERO ── */}
     <section className="hero">
+      <div className="hero-glow-orb" aria-hidden="true" />
+      <div className="hero-sanskrit-bg" aria-hidden="true">श्रीमद्भगवद्गीता</div>
       <div className="wrap">
         <div className="hero-logo">
           <img
@@ -66,11 +70,20 @@ export default function HomePage() {
               alt="Download on the App Store"
               style={{"height": "52px", "width": "auto", "display": "block"}}/>
           </a>
-          <a href="#how-it-works" className="btn-ghost">See how it works</a>
+          <a href="/gita/chapter/1" className="btn-read-gita" data-mp-location="hero_read_gita_cta">
+            Start Reading the Gita →
+          </a>
         </div>
         <p className="hero-note">
           ★ 4.9 on the App Store · Free · No account needed · 2 minutes a day
         </p>
+        <div className="hero-secondary-nav">
+          <a href="/gita/today" data-mp-location="hero_today_verse_link">Today&apos;s verse</a>
+          <span className="hero-sep">·</span>
+          <a href="/hi/gita" hrefLang="hi" data-mp-location="hero_hindi_link">हिंदी में पढ़ें</a>
+          <span className="hero-sep">·</span>
+          <a href="#how-it-works" data-mp-location="hero_how_it_works_link">How it works ↓</a>
+        </div>
       </div>
 
       <div className="hero-phones">
@@ -128,6 +141,139 @@ export default function HomePage() {
       </div>
     </div>
 
+    {/* ── THREE ENTRY POINTS ── */}
+    <section className="entry-section">
+      <div className="wrap">
+        <div className="entry-grid">
+          <a href="/gita/chapter/1" className="entry-card" data-mp-location="home_entry_read_gita">
+            <div className="entry-card-icon">📖</div>
+            <div className="entry-card-body">
+              <h3>Read the Gita</h3>
+              <p>All 18 chapters, 700 verses. Start where Arjuna started — with a mind full of doubt.</p>
+            </div>
+            <div className="entry-card-cta">Begin with Chapter 1 →</div>
+          </a>
+          <a href="/gita/today" className="entry-card entry-card-featured" data-mp-location="home_entry_today_verse">
+            <div className="entry-card-icon">🌅</div>
+            <div className="entry-card-body">
+              <h3>Today&apos;s Verse</h3>
+              <p>One shloka from the Gita, delivered fresh each day. A moment of clarity in two minutes.</p>
+            </div>
+            <div className="entry-card-cta">Open today&apos;s verse →</div>
+          </a>
+          <a href="/hi/gita" className="entry-card" hrefLang="hi" data-mp-location="home_entry_hindi_gita">
+            <div className="entry-card-icon">🕉️</div>
+            <div className="entry-card-body">
+              <h3>हिंदी में पढ़ें</h3>
+              <p>सम्पूर्ण भगवद्गीता — संस्कृत, हिंदी अनुवाद और विस्तृत अर्थ सहित। निःशुल्क।</p>
+            </div>
+            <div className="entry-card-cta">हिंदी गीता खोलें →</div>
+          </a>
+        </div>
+
+        {/* Featured verse strip */}
+        <div className="verse-strip">
+          <div className="verse-strip-ref">BG 2.47</div>
+          <div className="verse-strip-body">
+            <blockquote>
+              &ldquo;You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of the results of your activities, and never be attached to not doing your duty.&rdquo;
+            </blockquote>
+            <a href="/gita/chapter/2/verse/47" data-mp-location="home_verse_strip_247">
+              Read this verse in full →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ── BHAGAVAD GITA FULL SCRIPTURE (moved up — most-clicked section) ── */}
+    <style dangerouslySetInnerHTML={{__html: `
+      .read-gita-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 56px; align-items: stretch; }
+      .read-gita-art-col { display: flex; flex-direction: column; gap: 14px; height: 100%; }
+      .read-gita-art-col > div:first-child { flex: 1 1 auto; min-height: 380px; }
+      @media (max-width: 820px) {
+        .read-gita-grid { grid-template-columns: 1fr; gap: 36px; align-items: start; }
+        .read-gita-art-col > div:first-child { min-height: unset; aspect-ratio: 1 / 1; }
+      }
+    `}} />
+    <section className="section" id="read-gita" style={{"borderBottom": "1px solid var(--border)"}}>
+      <div className="wrap read-gita-grid">
+        <div>
+          <div className="eyebrow">The full scripture, online</div>
+          <h2 className="heading" style={{"marginBottom": "18px"}}>
+            The Bhagavad Gita.<br/><em>Read every verse, free.</em>
+          </h2>
+          <p className="subtext" style={{"marginBottom": "26px"}}>
+            Wisdom has put the entire Bhagavad Gita on this site:
+            all 18 chapters, all 700 verses, in Sanskrit, Hindi, and English. Each verse on its own
+            page, with a one-line essence, the speaker named, and cross-links by theme.
+            No login. No paywall. Just the scripture.
+          </p>
+          <ul style={{"listStyle": "none", "padding": "0", "margin": "0 0 30px", "display": "grid", "gap": "12px"}}>
+            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
+              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
+              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
+                <strong style={{"color": "var(--text)"}}>18 chapters</strong>: Sankhya Yoga, Karma Yoga, Bhakti Yoga, Moksha Sanyasa Yoga, and all the rest.
+              </span>
+            </li>
+            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
+              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
+              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
+                <strong style={{"color": "var(--text)"}}>One page per verse</strong>: Sanskrit Devanagari, Hindi anuvad, English translation.
+              </span>
+            </li>
+            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
+              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
+              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
+                <strong style={{"color": "var(--text)"}}>Browse by theme</strong>: karma, dharma, bhakti, vairagya, the steady mind. The Gita organized around the questions you bring.
+              </span>
+            </li>
+            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
+              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
+              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
+                <strong style={{"color": "var(--text)"}}>Hindi mirror</strong> at <a href="/hi/gita" hrefLang="hi" style={{"color": "var(--gold-light)"}}>/hi/gita</a>: every verse in Hindi-first layout.
+              </span>
+            </li>
+          </ul>
+          <div style={{"display": "flex", "gap": "14px", "flexWrap": "wrap"}}>
+            <a href="/gita" className="btn-nav" data-mp-location="home_gita_section_cta">Open the Gita →</a>
+            <a href="/gita/chapter/2/verse/47" className="btn-ghost" data-mp-location="home_gita_section_247">
+              Start with 2.47 — Karma Yoga
+            </a>
+          </div>
+        </div>
+        <div className="read-gita-art-col">
+          <div style={{"position": "relative", "borderRadius": "14px", "overflow": "hidden", "border": "1px solid var(--border)", "background": "var(--bg-warm)"}}>
+            <img
+              src="/assets/gita.webp"
+              alt="Krishna speaking the Bhagavad Gita to Arjuna"
+              style={{"width": "100%", "height": "100%", "objectFit": "cover", "display": "block"}}
+              loading="lazy"
+            />
+            <div style={{"position": "absolute", "inset": "0", "background": "linear-gradient(180deg, transparent 55%, rgba(18, 5, 5, 0.7))", "pointerEvents": "none"}}></div>
+            <div style={{"position": "absolute", "bottom": "20px", "left": "22px", "right": "22px", "fontFamily": "'Playfair Display', Georgia, serif", "fontStyle": "italic", "fontSize": "15.5px", "color": "var(--gold-light, #f5c96a)", "lineHeight": "1.5"}}>
+              &ldquo;Whenever dharma declines, I manifest myself.&rdquo;<br/>
+              <span style={{"fontSize": "12.5px", "fontStyle": "normal", "letterSpacing": "0.08em", "textTransform": "uppercase", "opacity": "0.75"}}>Bhagavad Gita 4.7</span>
+            </div>
+          </div>
+          <div style={{"display": "grid", "gridTemplateColumns": "repeat(3, 1fr)", "gap": "10px", "marginTop": "14px"}}>
+            <a href="/gita/chapter/1" style={{"display": "block", "padding": "12px 14px", "background": "var(--bg-card, rgba(255,255,255,0.04))", "border": "1px solid var(--border)", "borderRadius": "8px", "textDecoration": "none", "fontSize": "12.5px", "color": "var(--text-dim)"}}>
+              <div style={{"color": "var(--gold-light)", "fontFamily": "'Playfair Display', Georgia, serif", "fontSize": "16px", "marginBottom": "2px"}}>Ch. 1</div>
+              Arjuna&apos;s Despair
+            </a>
+            <a href="/gita/chapter/2" style={{"display": "block", "padding": "12px 14px", "background": "var(--bg-card, rgba(255,255,255,0.04))", "border": "1px solid var(--border)", "borderRadius": "8px", "textDecoration": "none", "fontSize": "12.5px", "color": "var(--text-dim)"}}>
+              <div style={{"color": "var(--gold-light)", "fontFamily": "'Playfair Display', Georgia, serif", "fontSize": "16px", "marginBottom": "2px"}}>Ch. 2</div>
+              Sankhya Yoga
+            </a>
+            <a href="/gita/chapter/12" style={{"display": "block", "padding": "12px 14px", "background": "var(--bg-card, rgba(255,255,255,0.04))", "border": "1px solid var(--border)", "borderRadius": "8px", "textDecoration": "none", "fontSize": "12.5px", "color": "var(--text-dim)"}}>
+              <div style={{"color": "var(--gold-light)", "fontFamily": "'Playfair Display', Georgia, serif", "fontSize": "16px", "marginBottom": "2px"}}>Ch. 12</div>
+              Bhakti Yoga
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     {/* ── PROBLEM ── */}
     <section className="section">
       <div className="wrap t-center">
@@ -141,7 +287,7 @@ export default function HomePage() {
           We lost the map.
         </p>
         <div className="problem-grid">
-          <div className="prob-card">
+          <div className="prob-card reveal" style={{"--d": "0ms"} as React.CSSProperties}>
             <div className="prob-icon">🌀</div>
             <h3>Overthinking that never resolves</h3>
             <p>
@@ -149,7 +295,7 @@ export default function HomePage() {
               The clarity you needed never arrives. The loop keeps running.
             </p>
           </div>
-          <div className="prob-card">
+          <div className="prob-card reveal" style={{"--d": "80ms"} as React.CSSProperties}>
             <div className="prob-icon">📱</div>
             <h3>Distraction instead of depth</h3>
             <p>
@@ -157,7 +303,7 @@ export default function HomePage() {
               Every day ends with the feeling that nothing quite landed.
             </p>
           </div>
-          <div className="prob-card">
+          <div className="prob-card reveal" style={{"--d": "160ms"} as React.CSSProperties}>
             <div className="prob-icon">🧩</div>
             <h3>Disconnected from what's real</h3>
             <p>
@@ -165,7 +311,7 @@ export default function HomePage() {
               at once. None of them tell you who you actually are.
             </p>
           </div>
-          <div className="prob-card">
+          <div className="prob-card reveal" style={{"--d": "240ms"} as React.CSSProperties}>
             <div className="prob-icon">🧭</div>
             <h3>No map for the inner life</h3>
             <p>
@@ -214,6 +360,7 @@ export default function HomePage() {
           <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "18px", minWidth: "160px"}}>
             <div
               aria-hidden="true"
+              className="path-orb-wisdom"
               style={{
                 width: "clamp(120px, 14vw, 160px)",
                 height: "clamp(120px, 14vw, 160px)",
@@ -234,6 +381,7 @@ export default function HomePage() {
           <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "18px", minWidth: "160px"}}>
             <div
               aria-hidden="true"
+              className="path-orb-action"
               style={{
                 width: "clamp(120px, 14vw, 160px)",
                 height: "clamp(120px, 14vw, 160px)",
@@ -254,6 +402,7 @@ export default function HomePage() {
           <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "18px", minWidth: "160px"}}>
             <div
               aria-hidden="true"
+              className="path-orb-devotion"
               style={{
                 width: "clamp(120px, 14vw, 160px)",
                 height: "clamp(120px, 14vw, 160px)",
@@ -274,7 +423,7 @@ export default function HomePage() {
         <div className="paths-grid">
 
           {/* PATH OF WISDOM */}
-          <div className="path-card wisdom">
+          <div className="path-card wisdom reveal" style={{"--d": "0ms"} as React.CSSProperties}>
             <div className="path-badge">💡 Path of Wisdom</div>
             <h3>Jnana Yoga</h3>
             <div className="path-yoga">THE WAY OF THE SEEKER</div>
@@ -346,7 +495,7 @@ export default function HomePage() {
           </div>
 
           {/* PATH OF ACTION */}
-          <div className="path-card action">
+          <div className="path-card action reveal" style={{"--d": "120ms"} as React.CSSProperties}>
             <div className="path-badge">⚔️ Path of Action</div>
             <h3>Karma Yoga</h3>
             <div className="path-yoga">THE WAY OF THE DOER</div>
@@ -425,7 +574,7 @@ export default function HomePage() {
           </div>
 
           {/* PATH OF DEVOTION */}
-          <div className="path-card devotion">
+          <div className="path-card devotion reveal" style={{"--d": "240ms"} as React.CSSProperties}>
             <div className="path-badge">🙏 Path of Devotion</div>
             <h3>Bhakti Yoga</h3>
             <div className="path-yoga">THE WAY OF THE HEART</div>
@@ -562,7 +711,7 @@ export default function HomePage() {
           the way ancient teachers actually taught.
         </p>
         <div className="steps">
-          <div className="step">
+          <div className="step reveal" style={{"--d": "0ms"} as React.CSSProperties}>
             <div className="step-num">1</div>
             <h3>Breathe. Then tell us what's weighing on you.</h3>
             <p>
@@ -571,7 +720,7 @@ export default function HomePage() {
               shape everything that follows.
             </p>
           </div>
-          <div className="step">
+          <div className="step reveal" style={{"--d": "100ms"} as React.CSSProperties}>
             <div className="step-num">2</div>
             <h3>Receive your path. Your first teaching follows.</h3>
             <p>
@@ -580,7 +729,7 @@ export default function HomePage() {
               you are right now. Not a random quote.
             </p>
           </div>
-          <div className="step">
+          <div className="step reveal" style={{"--d": "200ms"} as React.CSSProperties}>
             <div className="step-num">3</div>
             <h3>Two minutes. One quote. One practice.</h3>
             <p>
@@ -915,94 +1064,6 @@ export default function HomePage() {
       </div>
     </section>
 
-    {/* ── BHAGAVAD GITA FULL SCRIPTURE ── */}
-    <style dangerouslySetInnerHTML={{__html: `
-      .read-gita-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 56px; align-items: stretch; }
-      .read-gita-art-col { display: flex; flex-direction: column; gap: 14px; height: 100%; }
-      .read-gita-art-col > div:first-child { flex: 1 1 auto; min-height: 380px; }
-      @media (max-width: 820px) {
-        .read-gita-grid { grid-template-columns: 1fr; gap: 36px; align-items: start; }
-        .read-gita-art-col > div:first-child { min-height: unset; aspect-ratio: 1 / 1; }
-      }
-    `}} />
-    <section className="section" id="read-gita" style={{"borderTop": "1px solid var(--border)"}}>
-      <div className="wrap read-gita-grid">
-        <div>
-          <div className="eyebrow">The full scripture, online</div>
-          <h2 className="heading" style={{"marginBottom": "18px"}}>
-            The Bhagavad Gita.<br/><em>Read every verse, free.</em>
-          </h2>
-          <p className="subtext" style={{"marginBottom": "26px"}}>
-            Wisdom has put the entire Bhagavad Gita on this site:
-            all 18 chapters, all 700 verses, in Sanskrit, Hindi, and English. Each verse on its own
-            page, with a one-line essence, the speaker named, and cross-links by theme.
-            No login. No paywall. Just the scripture.
-          </p>
-          <ul style={{"listStyle": "none", "padding": "0", "margin": "0 0 30px", "display": "grid", "gap": "12px"}}>
-            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
-              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
-              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
-                <strong style={{"color": "var(--text)"}}>18 chapters</strong>: Sankhya Yoga, Karma Yoga, Bhakti Yoga, Moksha Sanyasa Yoga, and all the rest.
-              </span>
-            </li>
-            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
-              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
-              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
-                <strong style={{"color": "var(--text)"}}>One page per verse</strong>: Sanskrit Devanagari, Hindi anuvad, English translation.
-              </span>
-            </li>
-            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
-              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
-              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
-                <strong style={{"color": "var(--text)"}}>Browse by theme</strong>: karma, dharma, bhakti, vairagya, the steady mind. The Gita organized around the questions you bring.
-              </span>
-            </li>
-            <li style={{"display": "flex", "gap": "12px", "alignItems": "flex-start"}}>
-              <span style={{"color": "var(--gold-light)", "flexShrink": 0}}>◆</span>
-              <span style={{"color": "var(--text-dim)", "fontSize": "15.5px", "lineHeight": "1.65"}}>
-                <strong style={{"color": "var(--text)"}}>Hindi mirror</strong> at <a href="/hi/gita" hrefLang="hi" style={{"color": "var(--gold-light)"}}>/hi/gita</a>: every verse in Hindi-first layout.
-              </span>
-            </li>
-          </ul>
-          <div style={{"display": "flex", "gap": "14px", "flexWrap": "wrap"}}>
-            <a href="/gita" className="btn-nav" data-mp-location="home_gita_section_cta">Open the Gita →</a>
-            <a href="/gita/chapter/2/verse/47" className="btn-ghost" data-mp-location="home_gita_section_247">
-              Start with 2.47
-            </a>
-          </div>
-        </div>
-        <div className="read-gita-art-col">
-          <div style={{"position": "relative", "borderRadius": "14px", "overflow": "hidden", "border": "1px solid var(--border)", "background": "var(--bg-warm)"}}>
-            <img
-              src="/assets/gita.webp"
-              alt="Krishna speaking the Bhagavad Gita to Arjuna"
-              style={{"width": "100%", "height": "100%", "objectFit": "cover", "display": "block"}}
-              loading="lazy"
-            />
-            <div style={{"position": "absolute", "inset": "0", "background": "linear-gradient(180deg, transparent 55%, rgba(18, 5, 5, 0.7))", "pointerEvents": "none"}}></div>
-            <div style={{"position": "absolute", "bottom": "20px", "left": "22px", "right": "22px", "fontFamily": "'Playfair Display', Georgia, serif", "fontStyle": "italic", "fontSize": "15.5px", "color": "var(--gold-light, #f5c96a)", "lineHeight": "1.5"}}>
-              &ldquo;Whenever dharma declines, I manifest myself.&rdquo;<br/>
-              <span style={{"fontSize": "12.5px", "fontStyle": "normal", "letterSpacing": "0.08em", "textTransform": "uppercase", "opacity": "0.75"}}>Bhagavad Gita 4.7</span>
-            </div>
-          </div>
-          <div style={{"display": "grid", "gridTemplateColumns": "repeat(3, 1fr)", "gap": "10px", "marginTop": "14px"}}>
-            <a href="/gita/chapter/1" style={{"display": "block", "padding": "12px 14px", "background": "var(--bg-card, rgba(255,255,255,0.04))", "border": "1px solid var(--border)", "borderRadius": "8px", "textDecoration": "none", "fontSize": "12.5px", "color": "var(--text-dim)"}}>
-              <div style={{"color": "var(--gold-light)", "fontFamily": "'Playfair Display', Georgia, serif", "fontSize": "16px", "marginBottom": "2px"}}>Ch. 1</div>
-              Arjuna&apos;s Despair
-            </a>
-            <a href="/gita/chapter/2" style={{"display": "block", "padding": "12px 14px", "background": "var(--bg-card, rgba(255,255,255,0.04))", "border": "1px solid var(--border)", "borderRadius": "8px", "textDecoration": "none", "fontSize": "12.5px", "color": "var(--text-dim)"}}>
-              <div style={{"color": "var(--gold-light)", "fontFamily": "'Playfair Display', Georgia, serif", "fontSize": "16px", "marginBottom": "2px"}}>Ch. 2</div>
-              Sankhya Yoga
-            </a>
-            <a href="/gita/chapter/12" style={{"display": "block", "padding": "12px 14px", "background": "var(--bg-card, rgba(255,255,255,0.04))", "border": "1px solid var(--border)", "borderRadius": "8px", "textDecoration": "none", "fontSize": "12.5px", "color": "var(--text-dim)"}}>
-              <div style={{"color": "var(--gold-light)", "fontFamily": "'Playfair Display', Georgia, serif", "fontSize": "16px", "marginBottom": "2px"}}>Ch. 12</div>
-              Bhakti Yoga
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     {/* ── TESTIMONIALS ── */}
     <section className="section section-alt">
       <div className="wrap t-center">
@@ -1018,7 +1079,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="testi-grid">
-          <div className="testi-card">
+          <div className="testi-card reveal" style={{"--d": "0ms"} as React.CSSProperties}>
             <div style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between", "marginBottom": "10px"}}>
               <div className="testi-stars">★★★★★</div>
               <div style={{"fontSize": "11px", "color": "var(--text-dimmer)"}}>2 Apr</div>
@@ -1035,7 +1096,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="testi-card">
+          <div className="testi-card reveal" style={{"--d": "100ms"} as React.CSSProperties}>
             <div style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between", "marginBottom": "10px"}}>
               <div className="testi-stars">★★★★★</div>
               <div style={{"fontSize": "11px", "color": "var(--text-dimmer)"}}>4 Apr</div>
@@ -1052,7 +1113,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="testi-card">
+          <div className="testi-card reveal" style={{"--d": "200ms"} as React.CSSProperties}>
             <div style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between", "marginBottom": "10px"}}>
               <div className="testi-stars">★★★★★</div>
               <div style={{"fontSize": "11px", "color": "var(--text-dimmer)"}}>5 Apr</div>
@@ -1094,7 +1155,7 @@ export default function HomePage() {
           a daily practice for the life you're actually living.
         </p>
         <div className="about-grid">
-          <div className="about-card">
+          <div className="about-card reveal" style={{"--d": "0ms"} as React.CSSProperties}>
             <div className="about-card-icon">🪔</div>
             <h3>What is Wisdom?</h3>
             <p>
@@ -1104,7 +1165,7 @@ export default function HomePage() {
               practice has a verse, a modern meaning, and an offering prompt for your reflection.
             </p>
           </div>
-          <div className="about-card">
+          <div className="about-card reveal" style={{"--d": "100ms"} as React.CSSProperties}>
             <div className="about-card-icon">🧘</div>
             <h3>Who is Wisdom for?</h3>
             <p>
@@ -1112,7 +1173,7 @@ export default function HomePage() {
               Wisdom meets you where you are and places you on the path that fits how you actually think and feel.
             </p>
           </div>
-          <div className="about-card">
+          <div className="about-card reveal" style={{"--d": "200ms"} as React.CSSProperties}>
             <div className="about-card-icon">📖</div>
             <h3>Why ancient wisdom?</h3>
             <p>
@@ -1250,6 +1311,16 @@ export default function HomePage() {
         <p style={{"fontSize": "13px", "color": "var(--text-dimmer)", "marginTop": "16px"}}>
           Free · 3-day trial · Available on iOS
         </p>
+        <p style={{"fontSize": "14px", "color": "var(--text-dim)", "marginTop": "28px"}}>
+          Not ready to download?{" "}
+          <a
+            href="/gita/chapter/1"
+            style={{"color": "var(--gold-light)", "fontWeight": 600}}
+            data-mp-location="final_cta_read_gita"
+          >
+            Start reading the Gita online →
+          </a>
+        </p>
       </div>
     </section>
 
@@ -1296,6 +1367,7 @@ export default function HomePage() {
     </footer>
 
     <BlogTracker pageName="Home" />
+    <HomeAnimations />
     </>
   )
 }

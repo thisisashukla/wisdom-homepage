@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 8 Summary – Key Verses & Meaning (Akshara Brahma Yoga)",
@@ -139,28 +140,6 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
-
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
@@ -262,7 +241,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -667,24 +645,12 @@ export default function ChapterPage8() {
           Most readers skip past these opening verses, looking for the more famous teaching that follows. But the definitions matter. They establish that the Gita's spiritual vocabulary is not vague. <em>Brahman</em> is the imperishable, the supreme. <em>Adhyatma</em> is one's own nature. <em>Karma</em> is the creative offering that brings beings into existence. The Gita is not a mystical wash. It is a precise system, with terms that mean specific things.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 8.3</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रीभगवानुवाच<br />अक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते ।<br />भूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः ॥
-          </div>
-          <div className="shloka-iast">
-            śrī bhagavān uvāca |<br />akṣaraṃ brahma paramaṃ svabhāvo'dhyātmam ucyate |<br />bhūta-bhāvodbhava-karo visargaḥ karma-saṃjñitaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The Blessed One said: The imperishable is the supreme Brahman. One's own nature is called adhyatma. The creative offering that brings beings into existence is called karma.
-              </div>
-            </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 8.3"
+          speaker="Krishna"
+          sanskrit="श्रीभगवानुवाच अक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते । भूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः ॥"
+          iast="śrī bhagavān uvāca | akṣaraṃ brahma paramaṃ svabhāvo'dhyātmam ucyate | bhūta-bhāvodbhava-karo visargaḥ karma-saṃjñitaḥ ||"
+        />
             <div>
               <div className="shloka-col-label">Why precise definitions matter here</div>
               <div className="shloka-insight">
@@ -716,65 +682,24 @@ export default function ChapterPage8() {
           Verse 8.6 says: whatever state a person remembers at the end, that state they reach, because the mind has been shaped by it. The Sanskrit phrase is <em>sadā tad-bhāva-bhāvitaḥ</em>, always conditioned by that state. The Gita is making an unsentimental claim about habit. Whatever the mind has been trained to return to, that is where it will go when consciousness loses its anchors. Death just removes the anchors. The direction was already set.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 8.5</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम् ।<br />यः प्रयाति स मद्भावं याति नास्त्यत्र संशयः ॥
-          </div>
-          <div className="shloka-iast">
-            anta-kāle ca mām eva smaran muktvā kalevaram |<br />yaḥ prayāti sa mad-bhāvaṃ yāti nāsty atra saṃśayaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Whoever remembers me at the end, leaving the body, reaches my state. There is no doubt in this.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The verse is about training, not luck</div>
-              <div className="shloka-insight">
-                It sounds like a single instruction, remember Krishna at the end. But the next verse clarifies: the mind at the end is the mind you have trained. You cannot install a new attention pattern at the last second. The teaching is not about that moment alone. It is about every moment leading to it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The last remembered presence shapes the next state of being."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 8.5"
+          speaker="Krishna"
+          sanskrit="अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम् । यः प्रयाति स मद्भावं याति नास्त्यत्र संशयः ॥"
+          iast="anta-kāle ca mām eva smaran muktvā kalevaram | yaḥ prayāti sa mad-bhāvaṃ yāti nāsty atra saṃśayaḥ ||"
+          essence="The last remembered presence shapes the next state of being."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 8.6</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम् ।<br />तं तमेवैति कौन्तेय सदा तद्भावभावितः ॥
-          </div>
-          <div className="shloka-iast">
-            yaṃ yaṃ vāpi smaran bhāvaṃ tyajaty ante kalevaram |<br />taṃ tam evaiti kaunteya sadā tad-bhāva-bhāvitaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Whatever state a person remembers as they leave the body, that state they reach, because the mind has long been shaped by it.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The hinge phrase: sadā tad-bhāva-bhāvitaḥ</div>
-              <div className="shloka-insight">
-                <em>Always conditioned by that state.</em> This is the Gita's way of saying: you cannot fake the end. Whatever the mind has practiced returning to, that is what it will return to when the practice becomes involuntary. The end is determined by the training, not by intention in the moment.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The end follows the state you have trained."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 8.6"
+          speaker="Krishna"
+          sanskrit="यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम् । तं तमेवैति कौन्तेय सदा तद्भावभावितः ॥"
+          iast="yaṃ yaṃ vāpi smaran bhāvaṃ tyajaty ante kalevaram | taṃ tam evaiti kaunteya sadā tad-bhāva-bhāvitaḥ ||"
+          meaning="Whatever state a person remembers as they leave the body, that state they reach, because the mind has long been shaped by it."
+          insightLabel="The hinge phrase: sadā tad-bhāva-bhāvitaḥ"
+          insight="Always conditioned by that state. This is the Gita's way of saying: you cannot fake the end. Whatever the mind has practiced returning to, that is what it will return to when the practice becomes involuntary. The end is determined by the training, not by intention in the moment."
+          essence="The end follows the state you have trained."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -802,35 +727,16 @@ export default function ChapterPage8() {
           Verse 8.8 then makes the cumulative claim explicit. The mind trained by practice (<em>abhyāsa-yoga</em>), fixed on nothing else, reaches the supreme. The word <em>abhyāsa</em> recurs across the Gita, repetition, the patient grooving of a habit. Your end-state, the chapter says, will be the dominant groove of your attention. So the question is not what you intend to be at the end. The question is what you are practicing right now, repeatedly, when no one is watching.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 8.8</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अभ्यासयोगयुक्तेन चेतसा नान्यगामिना ।<br />परमं पुरुषं दिव्यं याति पार्थानुचिन्तयन् ॥
-          </div>
-          <div className="shloka-iast">
-            abhyāsa-yoga-yuktena cetasā nānya-gāminā |<br />paramaṃ puruṣaṃ divyaṃ yāti pārthānucintayan ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                With a mind disciplined by the yoga of practice, not wandering anywhere else, the one who departs while remembering the supreme divine person reaches that supreme being, Partha.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Practice is structural, not optional</div>
-              <div className="shloka-insight">
-                Notice the chain: <em>abhyāsa-yoga-yuktena cetasā</em>, by a mind made one with the yoga of practice. The mind does not just decide at the end. The mind is the cumulative deposit of every prior decision. Practice is not a virtue you add. It is the mechanism by which you become anything at all.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "What the mind has practiced most will claim you at the end."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 8.8"
+          speaker="Krishna"
+          sanskrit="अभ्यासयोगयुक्तेन चेतसा नान्यगामिना । परमं पुरुषं दिव्यं याति पार्थानुचिन्तयन् ॥"
+          iast="abhyāsa-yoga-yuktena cetasā nānya-gāminā | paramaṃ puruṣaṃ divyaṃ yāti pārthānucintayan ||"
+          meaning="With a mind disciplined by the yoga of practice, not wandering anywhere else, the one who departs while remembering the supreme divine person reaches that supreme being, Partha."
+          insightLabel="Practice is structural, not optional"
+          insight="Notice the chain: abhyāsa-yoga-yuktena cetasā, by a mind made one with the yoga of practice. The mind does not just decide at the end. The mind is the cumulative deposit of every prior decision. Practice is not a virtue you add. It is the mechanism by which you become anything at all."
+          essence="What the mind has practiced most will claim you at the end."
+        />
 
         <div className="highlight-box">
           <p>
@@ -857,35 +763,16 @@ export default function ChapterPage8() {
           This is one of the chapter's most consoling verses. The path the Gita has been describing, disciplined remembrance, training of attention, does not stay difficult. After the initial period of building the habit, the habit carries itself. The Divine is not playing hard to get. The Divine is playing easy to get, but the easiness requires a continuity of attention that most lives never assemble. The verse is an invitation, not a warning.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 8.14</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अनन्यचेताः सततं यो मां स्मरति नित्यशः ।<br />तस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः ॥
-          </div>
-          <div className="shloka-iast">
-            ananya-cetāḥ satataṃ yo māṃ smarati nityaśaḥ |<br />tasyāhaṃ sulabhaḥ pārtha nitya-yuktasya yoginaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                For the yogi whose mind is undivided, who remembers me constantly, always united with me, I am easy to reach, Partha.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The word that turns the chapter</div>
-              <div className="shloka-insight">
-                <em>Sulabhaḥ</em>, easy. The Gita is not built on heroic struggle. It is built on continuity. The yogi reaches the Divine easily not because they have superhuman discipline, but because they have stopped intermittently directing attention elsewhere. The reach is easy because the distance was always small.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Constant remembrance makes the divine easy to reach."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 8.14"
+          speaker="Krishna"
+          sanskrit="अनन्यचेताः सततं यो मां स्मरति नित्यशः । तस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः ॥"
+          iast="ananya-cetāḥ satataṃ yo māṃ smarati nityaśaḥ | tasyāhaṃ sulabhaḥ pārtha nitya-yuktasya yoginaḥ ||"
+          meaning="For the yogi whose mind is undivided, who remembers me constantly, always united with me, I am easy to reach, Partha."
+          insightLabel="The word that turns the chapter"
+          insight="Sulabhaḥ, easy. The Gita is not built on heroic struggle. It is built on continuity. The yogi reaches the Divine easily not because they have superhuman discipline, but because they have stopped intermittently directing attention elsewhere. The reach is easy because the distance was always small."
+          essence="Constant remembrance makes the divine easy to reach."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -913,35 +800,16 @@ export default function ChapterPage8() {
           What is the practical use of this? The Gita is doing what good astronomy still does. It is making your problems smaller without making them meaningless. The deadline at work matters. The argument with a friend matters. But against a thousand yugas of Brahma's day, the argument cannot also be cosmic. It must take its place. This is how the Gita reduces anxiety, not by denying the importance of things, but by setting them inside a frame so large that no single thing can be allowed to feel infinite.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 8.17</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदुः ।<br />रात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः ॥
-          </div>
-          <div className="shloka-iast">
-            sahasra-yuga-paryantam ahar yad brahmaṇo viduḥ |<br />rātriṃ yuga-sahasrāntāṃ te'ho-rātra-vido janāḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Those who know that Brahma's day lasts a thousand yugas, and his night lasts a thousand yugas, they truly know day and night.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The therapeutic use of scale</div>
-              <div className="shloka-insight">
-                The verse is not asking you to do anything with Brahma's day. It is asking you to know it. Knowing puts the week's panic in scale. The therapy is structural: you cannot suffer with the same intensity inside the right frame. The Gita's cosmology is, partly, a deliberate widening of frame for a frantic mind.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Cosmic time reveals how small ordinary urgency is."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 8.17"
+          speaker="Krishna"
+          sanskrit="सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदुः । रात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः ॥"
+          iast="sahasra-yuga-paryantam ahar yad brahmaṇo viduḥ | rātriṃ yuga-sahasrāntāṃ te'ho-rātra-vido janāḥ ||"
+          meaning="Those who know that Brahma's day lasts a thousand yugas, and his night lasts a thousand yugas, they truly know day and night."
+          insightLabel="The therapeutic use of scale"
+          insight="The verse is not asking you to do anything with Brahma's day. It is asking you to know it. Knowing puts the week's panic in scale. The therapy is structural: you cannot suffer with the same intensity inside the right frame. The Gita's cosmology is, partly, a deliberate widening of frame for a frantic mind."
+          essence="Cosmic time reveals how small ordinary urgency is."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -962,35 +830,16 @@ export default function ChapterPage8() {
           Modern readers sometimes find this troubling. Doesn't "not coming back" mean leaving everything behind? The Gita's answer, implicit across the chapter, is that what you leave behind is the compulsion to return, the unfinished wanting, the unresolved grief, the unspent attachment. The verse is not promising annihilation. It is promising completion. The pearls are still on the thread. You have just stopped being a pearl.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 8.21</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम् ।<br />यं प्राप्य न निवर्तन्ते तद्धाम परमं मम ॥
-          </div>
-          <div className="shloka-iast">
-            avyakto'kṣara ity uktas tam āhuḥ paramāṃ gatim |<br />yaṃ prāpya na nivartante tad dhāma paramaṃ mama ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                That which is called the unmanifest, the imperishable, they call it the supreme destination. Having reached it, beings do not return. That is my supreme abode.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What completion means here</div>
-              <div className="shloka-insight">
-                The phrase <em>tad dhāma paramaṃ mama</em>, "that is my supreme home", is intimate. Krishna is not pointing at an abstract beyond. He is pointing at where he himself lives. The destination is a relationship as much as a place. To reach it is to come home, not to be erased.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The highest arrival is beyond return."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 8.21"
+          speaker="Krishna"
+          sanskrit="अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम् । यं प्राप्य न निवर्तन्ते तद्धाम परमं मम ॥"
+          iast="avyakto'kṣara ity uktas tam āhuḥ paramāṃ gatim | yaṃ prāpya na nivartante tad dhāma paramaṃ mama ||"
+          meaning="That which is called the unmanifest, the imperishable, they call it the supreme destination. Having reached it, beings do not return. That is my supreme abode."
+          insightLabel="What completion means here"
+          insight="The phrase tad dhāma paramaṃ mama, \"that is my supreme home\", is intimate. Krishna is not pointing at an abstract beyond. He is pointing at where he himself lives. The destination is a relationship as much as a place. To reach it is to come home, not to be erased."
+          essence="The highest arrival is beyond return."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -1011,35 +860,16 @@ export default function ChapterPage8() {
           Notice what just happened. Krishna has spent the chapter teaching practice, training, remembrance. Then at the end he says, the truly understanding yogi has surpassed even the merit accumulated by sacrifices and austerities. The point is not that practice is wasted. The point is that practice is not a transaction. You are not stacking up cosmic merit points. You are becoming something, and the something has its own destination that does not need the merit. The Gita is, here, undercutting transactional spirituality even while teaching it.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 8.28</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            वेदेषु यज्ञेषु तपःसु चैव दानेषु यत्पुण्यफलं प्रदिष्टम् ।<br />अत्येति तत्सर्वमिदं विदित्वा योगी परं स्थानमुपैति चाद्यम् ॥
-          </div>
-          <div className="shloka-iast">
-            vedeṣu yajñeṣu tapaḥsu caiva dāneṣu yat puṇya-phalaṃ pradiṣṭam |<br />atyeti tat sarvam idaṃ viditvā yogī paraṃ sthānam upaiti cādyam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Whatever merit is promised in the Vedas, in sacrifices, in austerities, and in gifts, the yogi who knows this transcends all of it, and reaches the primal supreme abode.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why the Gita undercuts merit at the end</div>
-              <div className="shloka-insight">
-                Merit is a useful frame for beginners. But at a certain depth, accumulating merit becomes another form of clinging. The yogi who has actually understood the chapter does not need the merit because they no longer need any return. The closing verse retires the transaction quietly, without dismissing it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Knowing the way beyond rewards leads to the highest home."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 8.28"
+          speaker="Krishna"
+          sanskrit="वेदेषु यज्ञेषु तपःसु चैव दानेषु यत्पुण्यफलं प्रदिष्टम् । अत्येति तत्सर्वमिदं विदित्वा योगी परं स्थानमुपैति चाद्यम् ॥"
+          iast="vedeṣu yajñeṣu tapaḥsu caiva dāneṣu yat puṇya-phalaṃ pradiṣṭam | atyeti tat sarvam idaṃ viditvā yogī paraṃ sthānam upaiti cādyam ||"
+          meaning="Whatever merit is promised in the Vedas, in sacrifices, in austerities, and in gifts, the yogi who knows this transcends all of it, and reaches the primal supreme abode."
+          insightLabel="Why the Gita undercuts merit at the end"
+          insight="Merit is a useful frame for beginners. But at a certain depth, accumulating merit becomes another form of clinging. The yogi who has actually understood the chapter does not need the merit because they no longer need any return. The closing verse retires the transaction quietly, without dismissing it."
+          essence="Knowing the way beyond rewards leads to the highest home."
+        />
 
         <div className="highlight-box">
           <p>

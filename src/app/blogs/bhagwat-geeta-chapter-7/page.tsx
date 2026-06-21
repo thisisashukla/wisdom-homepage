@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 7 Summary – Key Verses & Meaning (Jnana Vijnana Yoga)",
@@ -139,27 +140,7 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
+
 
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
@@ -262,7 +243,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -667,35 +647,16 @@ export default function ChapterPage7() {
           If you have ever felt that your spiritual reading has accumulated but your spiritual seeing has not, this verse names the gap. The Gita is going to spend the next twelve chapters trying to close that gap. But the closing requires a different posture than the one most readers bring, less acquisition, more recognition.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 7.3</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये ।<br />यततामपि सिद्धानां कश्चिन्मां वेत्ति तत्त्वतः ॥
-          </div>
-          <div className="shloka-iast">
-            manuṣyāṇāṃ sahasreṣu kaścid yatati siddhaye |<br />yatatām api siddhānāṃ kaścin māṃ vetti tattvataḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Among thousands of people, one may strive for perfection. Among those striving, perhaps one knows me in truth.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What this verse is actually doing</div>
-              <div className="shloka-insight">
-                Krishna is calibrating the conversation. He is not threatening. He is saying: the ratio between effort and arrival is not what you think. You have probably been measuring success in books read, practices logged, hours sat. The Gita's measurement is different, and the gap between the two is the work of the next twelve chapters.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "True knowing is rarer than striving, even among the successful."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 7.3"
+          speaker="Krishna"
+          sanskrit="मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये । यततामपि सिद्धानां कश्चिन्मां वेत्ति तत्त्वतः ॥"
+          iast="manuṣyāṇāṃ sahasreṣu kaścid yatati siddhaye | yatatām api siddhānāṃ kaścin māṃ vetti tattvataḥ ||"
+          meaning="Among thousands of people, one may strive for perfection. Among those striving, perhaps one knows me in truth."
+          insightLabel="What this verse is actually doing"
+          insight="Krishna is calibrating the conversation. He is not threatening. He is saying: the ratio between effort and arrival is not what you think. You have probably been measuring success in books read, practices logged, hours sat. The Gita's measurement is different, and the gap between the two is the work of the next twelve chapters."
+          essence="True knowing is rarer than striving, even among the successful."
+        />
 
         <div className="highlight-box">
           <p>
@@ -722,35 +683,16 @@ export default function ChapterPage7() {
           Krishna's claim is that reality is the same shape. Every thing you see, each person, each object, each event, is the pearl. The Divine is the thread. The thread is not louder than the pearls. It is not even visible most of the time. But it is what makes the collection of pearls into something coherent. The Gita is not asking you to abandon the world of pearls. It is asking you to notice the thread.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 7.7</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय ।<br />मयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव ॥
-          </div>
-          <div className="shloka-iast">
-            mattaḥ parataraṃ nānyat kiñcid asti dhanañjaya |<br />mayi sarvam idaṃ protaṃ sūtre maṇi-gaṇā iva ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                There is nothing higher than me, Arjuna. All this is strung on me, as pearls are strung on a thread.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why this image lasts</div>
-              <div className="shloka-insight">
-                Other scriptures make divine immanence sound abstract, God is everywhere, God is in all things. This verse gives you a picture you can hold. Pearls are individual, distinguishable, and beautiful. They are also, structurally, not separate. The thread changes nothing about how a pearl looks. It only changes whether it belongs.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Everything is held in one sustaining reality."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 7.7"
+          speaker="Krishna"
+          sanskrit="मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय । मयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव ॥"
+          iast="mattaḥ parataraṃ nānyat kiñcid asti dhanañjaya | mayi sarvam idaṃ protaṃ sūtre maṇi-gaṇā iva ||"
+          meaning="There is nothing higher than me, Arjuna. All this is strung on me, as pearls are strung on a thread."
+          insightLabel="Why this image lasts"
+          insight="Other scriptures make divine immanence sound abstract, God is everywhere, God is in all things. This verse gives you a picture you can hold. Pearls are individual, distinguishable, and beautiful. They are also, structurally, not separate. The thread changes nothing about how a pearl looks. It only changes whether it belongs."
+          essence="Everything is held in one sustaining reality."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -778,35 +720,16 @@ export default function ChapterPage7() {
           This is the Gita's quiet, persistent counter-argument to every form of spiritual escapism. The sacred is not somewhere else. It is in the glass of water you drank this morning. The sunlight on your wall. The sound of a conversation in the next room. You do not have to leave your life to find the Divine. You have to notice your life more carefully.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 7.8</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः ।<br />प्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु ॥
-          </div>
-          <div className="shloka-iast">
-            raso'ham apsu kaunteya prabhāsmi śaśi-sūryayoḥ |<br />praṇavaḥ sarva-vedeṣu śabdaḥ khe pauruṣaṃ nṛṣu ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                I am the taste in water, Arjuna. I am the light in the moon and the sun. I am the sound of Om in all the Vedas, the sound in space, and the courage in human beings.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The Gita's anti-escapism</div>
-              <div className="shloka-insight">
-                Notice the verse does not say <em>I am behind</em> these things. It says <em>I am</em> these things. The taste of water is not a sign pointing to the Divine. The taste is the Divine, expressed through your tongue. The verse refuses any separation between sacred and ordinary. It places the entire weight of the sacred on the ordinary's shoulder.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The sacred is already inside ordinary experience."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 7.8"
+          speaker="Krishna"
+          sanskrit="रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः । प्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु ॥"
+          iast="raso'ham apsu kaunteya prabhāsmi śaśi-sūryayoḥ | praṇavaḥ sarva-vedeṣu śabdaḥ khe pauruṣaṃ nṛṣu ||"
+          meaning="I am the taste in water, Arjuna. I am the light in the moon and the sun. I am the sound of Om in all the Vedas, the sound in space, and the courage in human beings."
+          insightLabel="The Gita's anti-escapism"
+          insight="Notice the verse does not say I am behind these things. It says I am these things. The taste of water is not a sign pointing to the Divine. The taste is the Divine, expressed through your tongue. The verse refuses any separation between sacred and ordinary. It places the entire weight of the sacred on the ordinary's shoulder."
+          essence="The sacred is already inside ordinary experience."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -827,35 +750,16 @@ export default function ChapterPage7() {
           Note what the verse does not say. It does not say you can <em>think</em> your way out of māyā. It does not say more reading, more practice, more discipline alone can do it. It says the way through illusion is refuge. Not effort. Refuge. This will be controversial to anyone whose spiritual self-image is built on independence. The Gita is making a structural claim: there is a layer of confusion that no amount of self-generated effort can clear, because the effort itself is happening inside the confusion. The only way out is to lean on something outside the system.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 7.14</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            दैवी ह्येषा गुणमयी मम माया दुरत्यया ।<br />मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ॥
-          </div>
-          <div className="shloka-iast">
-            daivī hyeṣā guṇa-mayī mama māyā duratyayā |<br />mām eva ye prapadyante māyām etāṃ taranti te ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                This divine māyā of mine, woven of the three qualities, is hard to cross. Only those who take refuge in me cross beyond it.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why "refuge" and not "effort"</div>
-              <div className="shloka-insight">
-                The mind that is trying to escape its own confusion is the confused mind doing the escaping. It cannot succeed because it is the problem. Refuge is the act of admitting this, and resting your weight on something that is not the confused mind. The Gita names that something. But the structural point is wider: at some level of difficulty, leaning is the only working move.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The way beyond the veil is not force, but refuge."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 7.14"
+          speaker="Krishna"
+          sanskrit="दैवी ह्येषा गुणमयी मम माया दुरत्यया । मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ॥"
+          iast="daivī hyeṣā guṇa-mayī mama māyā duratyayā | mām eva ye prapadyante māyām etāṃ taranti te ||"
+          meaning="This divine māyā of mine, woven of the three qualities, is hard to cross. Only those who take refuge in me cross beyond it."
+          insightLabel="Why \"refuge\" and not \"effort\""
+          insight="The mind that is trying to escape its own confusion is the confused mind doing the escaping. It cannot succeed because it is the problem. Refuge is the act of admitting this, and resting your weight on something that is not the confused mind. The Gita names that something. But the structural point is wider: at some level of difficulty, leaning is the only working move."
+          essence="The way beyond the veil is not force, but refuge."
+        />
 
         <div className="highlight-box">
           <p>
@@ -882,65 +786,27 @@ export default function ChapterPage7() {
           What is generous about this list: all four are welcomed. The person who prays after a panic attack, the person who reads scripture because they cannot let go of the question, the person who asks for help with a job interview, none of them are turned away. What is pointed: Krishna says the fourth, the wise devotee whose love is no longer instrumental, is dearest. The hierarchy is not moral. It is structural. The first three loves something through the Divine. The fourth loves the Divine. They are different relationships.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 7.16</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन ।<br />आर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ ॥
-          </div>
-          <div className="shloka-iast">
-            catur-vidhā bhajante māṃ janāḥ sukṛtino'rjuna |<br />ārto jijñāsur arthārthī jñānī ca bharatarṣabha ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Four kinds of good people turn toward me, Arjuna: the distressed, the seeker of knowledge, the seeker of fortune, and the wise one, best of the Bharatas.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The door is open to all</div>
-              <div className="shloka-insight">
-                The Gita does not require purity of motive to begin. It requires only direction. The person who comes from pain is not lesser than the person who comes from wisdom. They are entering through different doors of the same house. The verse is a permission slip for anyone who has thought they needed to be "more spiritual" before they could pray.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Different needs can still lead to one real turning toward the divine."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 7.16"
+          speaker="Krishna"
+          sanskrit="चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन । आर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ ॥"
+          iast="catur-vidhā bhajante māṃ janāḥ sukṛtino'rjuna | ārto jijñāsur arthārthī jñānī ca bharatarṣabha ||"
+          meaning="Four kinds of good people turn toward me, Arjuna: the distressed, the seeker of knowledge, the seeker of fortune, and the wise one, best of the Bharatas."
+          insightLabel="The door is open to all"
+          insight="The Gita does not require purity of motive to begin. It requires only direction. The person who comes from pain is not lesser than the person who comes from wisdom. They are entering through different doors of the same house. The verse is a permission slip for anyone who has thought they needed to be \"more spiritual\" before they could pray."
+          essence="Different needs can still lead to one real turning toward the divine."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 7.17</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तेषां ज्ञानी नित्ययुक्त एकभक्तिर्विशिष्यते ।<br />प्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः ॥
-          </div>
-          <div className="shloka-iast">
-            teṣāṃ jñānī nitya-yukta eka-bhaktir viśiṣyate |<br />priyo hi jñānino'tyartham ahaṃ sa ca mama priyaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Of these, the wise one, steady, single-pointed in devotion, is the highest. For I am exceedingly dear to the wise one, and that one is dear to me.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">When the relationship reverses direction</div>
-              <div className="shloka-insight">
-                Notice the symmetry. The wise one finds the Divine dear, <em>and</em> the Divine finds the wise one dear. The relationship becomes mutual. This is a quiet but radical shift, the seeker is no longer just seeking. The seeker is also being sought. The conversation is two-way.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Deep knowing and devoted love become a mutual bond."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 7.17"
+          speaker="Krishna"
+          sanskrit="तेषां ज्ञानी नित्ययुक्त एकभक्तिर्विशिष्यते । प्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः ॥"
+          iast="teṣāṃ jñānī nitya-yukta eka-bhaktir viśiṣyate | priyo hi jñānino'tyartham ahaṃ sa ca mama priyaḥ ||"
+          meaning="Of these, the wise one, steady, single-pointed in devotion, is the highest. For I am exceedingly dear to the wise one, and that one is dear to me."
+          insightLabel="When the relationship reverses direction"
+          insight="Notice the symmetry. The wise one finds the Divine dear, and the Divine finds the wise one dear. The relationship becomes mutual. This is a quiet but radical shift, the seeker is no longer just seeking. The seeker is also being sought. The conversation is two-way."
+          essence="Deep knowing and devoted love become a mutual bond."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -968,35 +834,16 @@ export default function ChapterPage7() {
           The verse can be read in two ways. The traditional reading is literal, many lifetimes, real ones, before the recognition arrives. The psychological reading is that this is what it feels like even within a single life: that the recognition seems to arrive after enormous distance has been crossed. Either way, the destination is the same and is named clearly: <em>God is all this</em>. Not God is somewhere, beyond. God is here, as this. The thread is the pearls, seen finally as the thread.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 7.19</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते ।<br />वासुदेवः सर्वमिति स महात्मा सुदुर्लभः ॥
-          </div>
-          <div className="shloka-iast">
-            bahūnāṃ janmanām ante jñānavān māṃ prapadyate |<br />vāsudevaḥ sarvam iti sa mahātmā su-durlabhaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                After many lifetimes, the wise one surrenders to me, recognising, Vāsudeva is everything. Such a great soul is exceedingly rare.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The five words that matter</div>
-              <div className="shloka-insight">
-                <em>Vāsudevaḥ sarvam iti</em>, God is everything. Not God is in everything. Not God includes everything. <em>God is</em> everything. The grammar removes the last layer of distance. The realization of this verse is the destination of every other verse in the book.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Deep seeing ends in surrender to the one reality in all things."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 7.19"
+          speaker="Krishna"
+          sanskrit="बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते । वासुदेवः सर्वमिति स महात्मा सुदुर्लभः ॥"
+          iast="bahūnāṃ janmanām ante jñānavān māṃ prapadyate | vāsudevaḥ sarvam iti sa mahātmā su-durlabhaḥ ||"
+          meaning="After many lifetimes, the wise one surrenders to me, recognising, Vāsudeva is everything. Such a great soul is exceedingly rare."
+          insightLabel="The five words that matter"
+          insight="Vāsudevaḥ sarvam iti, God is everything. Not God is in everything. Not God includes everything. God is everything. The grammar removes the last layer of distance. The realization of this verse is the destination of every other verse in the book."
+          essence="Deep seeing ends in surrender to the one reality in all things."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -1017,35 +864,16 @@ export default function ChapterPage7() {
           This matters for how we live. If the problem were absence, we would need to search. The problem being distorted seeing, we need to clean the seeing. Different verb, different practice. The rest of the Gita is, in many ways, a long instruction on how to clean the seeing, through devotion, through equanimity, through service, through trust. Chapter 7 ends by naming the problem precisely. Chapter 8 onward begins to answer it.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 7.25</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            नाहं प्रकाशः सर्वस्य योगमायासमावृतः ।<br />मूढोऽयं नाभिजानाति लोको मामजमव्ययम् ॥
-          </div>
-          <div className="shloka-iast">
-            nāhaṃ prakāśaḥ sarvasya yoga-māyā-samāvṛtaḥ |<br />mūḍho'yaṃ nābhijānāti loko mām ajam avyayam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Veiled by yoga-māyā, I am not visible to everyone. The deluded world does not recognise me as unborn and imperishable.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The problem is the seer, not the seen</div>
-              <div className="shloka-insight">
-                The Divine is not playing hide-and-seek. The veil is on our side. This is good news, philosophically. If the problem were the world's structure, we would be stuck. The problem being our perception, the perception can change. The Gita's pedagogical strategy assumes this, it spends most of its time training perception, not arguing metaphysics.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The hidden divine is missed by confused seeing, not by absence."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 7.25"
+          speaker="Krishna"
+          sanskrit="नाहं प्रकाशः सर्वस्य योगमायासमावृतः । मूढोऽयं नाभिजानाति लोको मामजमव्ययम् ॥"
+          iast="nāhaṃ prakāśaḥ sarvasya yoga-māyā-samāvṛtaḥ | mūḍho'yaṃ nābhijānāti loko mām ajam avyayam ||"
+          meaning="Veiled by yoga-māyā, I am not visible to everyone. The deluded world does not recognise me as unborn and imperishable."
+          insightLabel="The problem is the seer, not the seen"
+          insight="The Divine is not playing hide-and-seek. The veil is on our side. This is good news, philosophically. If the problem were the world's structure, we would be stuck. The problem being our perception, the perception can change. The Gita's pedagogical strategy assumes this, it spends most of its time training perception, not arguing metaphysics."
+          essence="The hidden divine is missed by confused seeing, not by absence."
+        />
 
         <div className="highlight-box">
           <p>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Krishna's Three Paths, Karma, Jnana, Bhakti | Bhagavad Gita's Three Yogas Explained",
@@ -237,75 +238,6 @@ const pageCSS = `
             padding-bottom: 0.75rem;
             flex: 1;
             margin: 0;
-        }
-
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-        .shloka-card:hover { background: var(--bg-card-hover); }
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        .shloka-card .meaning-text { color: var(--text); line-height: 1.7; }
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        .shloka-card .insight-text { color: var(--text-dim); line-height: 1.7; font-size: 0.95rem; }
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         .pull-quote {
@@ -887,58 +819,40 @@ export default function KrishnaThreePathsPage() {
           The Gita&apos;s most quoted verse belongs to this path. It is the answer Krishna gives in chapter 2 when Arjuna&apos;s collapse has reached its lowest point, when the warrior has put down his bow and is ready to leave the field. Krishna does not console him. He does not say <em>you do not have to fight</em>. He gives him a different relationship with the act of fighting:
         </p>
 
-        <div className="shloka-card" id="verse-2-47">
-          <div className="verse-number">Bhagavad Gita 2.47</div>
-          <div className="sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।{'\n'}मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥</div>
-          <div className="transliteration">karmaṇyevādhikāraste mā phaleṣu kadācana |{'\n'}mā karmaphalahetur bhūr mā te saṅgo&apos;stvakarmaṇi ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">You have a right to action alone, never to its fruits. Do not become the cause of the result, and do not cling to inaction.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What this actually says</div>
-            <div className="insight-text">Most people read this as a teaching about renunciation. It is not. It is a teaching about ownership. Krishna is not saying <em>do not want anything</em>. He is saying you have authority over one thing (the act) and you do not have authority over the second thing (the fruit). The fruit is shaped by a thousand causes, of which your effort is one. When you try to control what was never yours to control, you suffer. When you do your work fully and release the fruit, you finally do the work well.</div>
-          </div>
-          <div className="essence">Action belongs to you. The result does not.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.47"
+          sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
+          iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalahetur bhūr mā te saṅgo'stvakarmaṇi ||"
+          meaningLabel="Translation"
+          insightLabel="What this actually says"
+          essence="Action belongs to you. The result does not."
+        />
 
         <p>
           The reason this teaching survives across three millennia is that it solves a very specific psychological problem. We are wired to act for outcomes. We pour effort in and we expect proportional return. When the return does not come, or when it comes late, or in the wrong currency, we collapse, we blame, we burn out. Krishna&apos;s teaching is not <em>care less</em>. It is <em>care fully, but separate the caring from the demanding</em>. He repeats it a chapter later, more directly:
         </p>
 
-        <div className="shloka-card" id="verse-3-19">
-          <div className="verse-number">Bhagavad Gita 3.19</div>
-          <div className="sanskrit">तस्मादसक्तः सततं कार्यं कर्म समाचर ।{'\n'}असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥</div>
-          <div className="transliteration">tasmādasaktaḥ satataṃ kāryaṃ karma samācara |{'\n'}asakto hyācarankarma paramāpnoti pūruṣaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Therefore, always perform your duty without attachment; by acting without attachment, a person reaches the supreme.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why this is the path, not just a tactic</div>
-            <div className="insight-text">Krishna&apos;s claim is large. He says unattached action is not just a healthier way to work: it is itself the road to the supreme. Action becomes spiritual when it stops being transactional. The craftsman who shapes the stone without demanding to see the temple completed is, at that moment, doing the same inner work as the contemplative who has renounced the world.</div>
-          </div>
-          <div className="essence">Action done without grasping is itself the path.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.19"
+          sanskrit="तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥"
+          iast="tasmādasaktaḥ satataṃ kāryaṃ karma samācara | asakto hyācarankarma paramāpnoti pūruṣaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="Why this is the path, not just a tactic"
+          essence="Action done without grasping is itself the path."
+        />
 
         <p>
           And then, in chapter 3, Krishna gives the verse that turns Karma Yoga from a personal discipline into something cosmic, an offering:
         </p>
 
-        <div className="shloka-card" id="verse-3-30">
-          <div className="verse-number">Bhagavad Gita 3.30</div>
-          <div className="sanskrit">मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा ।{'\n'}निराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः ॥</div>
-          <div className="transliteration">mayi sarvāṇi karmāṇi saṃnyasyādhyātmacetasā |{'\n'}nirāśīrnirmamo bhūtvā yudhyasva vigatajvaraḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Surrender all actions to me with the disciplined mind. Free from desire, possessiveness, and sorrow, fight.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Vigata-jvara: the fever has left</div>
-            <div className="insight-text">The last word, <em>vigatajvaraḥ</em>, is precise. <em>Jvara</em> is fever. Krishna is naming the experience of acting from anxiety: that low-grade feverishness most modern lives are conducted in. He says the cure is not less action; it is offered action. When you give the act to something larger than your private ledger of wins and losses, the fever lifts. You can still fight. You just no longer need the fight to define you.</div>
-          </div>
-          <div className="essence">When the act is offered, the fever leaves.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.30"
+          sanskrit="मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा । निराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः ॥"
+          iast="mayi sarvāṇi karmāṇi saṃnyasyādhyātmacetasā | nirāśīrnirmamo bhūtvā yudhyasva vigatajvaraḥ ||"
+          meaningLabel="Translation"
+          insightLabel="Vigata-jvara: the fever has left"
+          essence="When the act is offered, the fever leaves."
+        />
 
         <h3>Tulsidas, eight hundred years later, in different words</h3>
 
@@ -982,58 +896,40 @@ export default function KrishnaThreePathsPage() {
           The second path is for a different kind of restlessness. The Karma Yogi cannot sit still; the Jnana Yogi cannot stop asking. For this seeker, the relief comes not from doing the right thing but from seeing the right thing clearly, finally, without the haze that ordinary thought leaves behind. Krishna&apos;s claim in chapter 4 is unusually large:
         </p>
 
-        <div className="shloka-card" id="verse-4-38">
-          <div className="verse-number">Bhagavad Gita 4.38</div>
-          <div className="sanskrit">न हि ज्ञानेन सदृशं पवित्रमिह विद्यते ।{'\n'}तत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति ॥</div>
-          <div className="transliteration">na hi jñānena sadṛśaṃ pavitramiha vidyate |{'\n'}tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">No purifier compares to knowledge in this world. The one perfected in yoga finds that knowledge within the self, in time.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Knowledge that purifies, not knowledge that informs</div>
-            <div className="insight-text">Krishna is not talking about facts. He is talking about <em>jnana</em>: direct understanding of what is real and what is appearance. The knowledge of who you are, beneath the conditioning. When this kind of knowing happens, it does not just add information; it removes confusion. That is what <em>pavitra</em> means here: purifier. Wrong-seeing leaves the system the way clean water removes silt.</div>
-          </div>
-          <div className="essence">Nothing purifies like knowledge. Wrong-seeing is the only real dirt.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.38"
+          sanskrit="न हि ज्ञानेन सदृशं पवित्रमिह विद्यते । तत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति ॥"
+          iast="na hi jñānena sadṛśaṃ pavitramiha vidyate | tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati ||"
+          meaningLabel="Translation"
+          insightLabel="Knowledge that purifies, not knowledge that informs"
+          essence="Nothing purifies like knowledge. Wrong-seeing is the only real dirt."
+        />
 
         <p>
           But this knowledge is not bought cheaply. The Gita has very specific instructions for how it is approached:
         </p>
 
-        <div className="shloka-card" id="verse-4-34">
-          <div className="verse-number">Bhagavad Gita 4.34</div>
-          <div className="sanskrit">तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया ।{'\n'}उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥</div>
-          <div className="transliteration">tadviddhi praṇipātena paripraśnena sevayā |{'\n'}upadekṣyanti te jñānaṃ jñāninastattvadarśinaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Know that by prostration, by sincere questioning, and by service. The wise who see reality will teach you that knowledge.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Three movements, in this exact order</div>
-            <div className="insight-text">Bowing first, asking second, serving third. The order matters. Most modern learners start with the question and skip the humility. As a result, the question itself comes out distorted by the ego asking it. Krishna&apos;s sequence assumes the learner has first put down the need to be right. Only then does the real question become possible. And only then does the answer have a place to land.</div>
-          </div>
-          <div className="essence">Bow, then ask, then serve. Knowledge enters in that order.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.34"
+          sanskrit="तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया । उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥"
+          iast="tadviddhi praṇipātena paripraśnena sevayā | upadekṣyanti te jñānaṃ jñāninastattvadarśinaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="Three movements, in this exact order"
+          essence="Bow, then ask, then serve. Knowledge enters in that order."
+        />
 
         <p>
           The content of this knowledge (what the Jnani actually comes to see) is laid out across the middle chapters of the Gita, and most cleanly in chapter 13. Here Krishna draws the central distinction of the entire tradition: between <em>kshetra</em> (the field: the body, the mind, the emotions, all observable experience) and <em>kshetrajna</em> (the knower of the field: pure awareness, watching). Almost everything we suffer about is in the field. The knower has never been wounded.
         </p>
 
-        <div className="shloka-card" id="verse-13-24">
-          <div className="verse-number">Bhagavad Gita 13.24</div>
-          <div className="sanskrit">य एवं वेत्ति पुरुषं प्रकृतिं च गुणैःसह ।{'\n'}सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते ॥</div>
-          <div className="transliteration">ya evaṃ vetti puruṣaṃ prakṛtiṃ ca guṇaiḥsaha |{'\n'}sarvathā vartamāno&apos;pi na sa bhūyo&apos;bhijāyate ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Whoever thus knows the purusha and prakriti together with the qualities is not born again, even while living and acting in every way.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Liberation that doesn&apos;t require renunciation</div>
-            <div className="insight-text">The crucial phrase is <em>sarvathā vartamāno&apos;pi</em>: even while living and acting in every way. Krishna is not asking the Jnani to leave the world. He is saying: once you have seen the difference between the field and the knower, you can do anything in the field (work a job, raise children, fight a war) and not be bound by it. Liberation is a shift in identity, not a change of address.</div>
-          </div>
-          <div className="essence">Clear seeing frees you while life still continues.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 13.24"
+          sanskrit="य एवं वेत्ति पुरुषं प्रकृतिं च गुणैःसह । सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते ॥"
+          iast="ya evaṃ vetti puruṣaṃ prakṛtiṃ ca guṇaiḥsaha | sarvathā vartamāno'pi na sa bhūyo'bhijāyate ||"
+          meaningLabel="Translation"
+          insightLabel="Liberation that doesn&apos;t require renunciation"
+          essence="Clear seeing frees you while life still continues."
+        />
 
         <h3>The Upanishadic root, neti, neti</h3>
 
@@ -1061,77 +957,53 @@ export default function KrishnaThreePathsPage() {
           The third path begins where the second ends. Jnana Yoga asks you to see clearly, but Krishna, with disarming honesty, admits in chapter 12 that this is hard:
         </p>
 
-        <div className="shloka-card" id="verse-12-5">
-          <div className="verse-number">Bhagavad Gita 12.5</div>
-          <div className="sanskrit">क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम् ।{'\n'}अव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते ॥</div>
-          <div className="transliteration">kleśo&apos;dhikatarasteṣāmavyaktāsaktacetasām |{'\n'}avyaktā hi gatirduḥkhaṃ dehavadbhiravāpyate ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">For those whose minds cling to the unmanifest, the struggle is greater. The unmanifest path is hard to reach for embodied beings.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Krishna&apos;s honesty about the abstract</div>
-            <div className="insight-text">Pure Jnana, meditation on the formless, unmanifest reality, is not impossible. It is just brutally hard for human beings, because human beings are bodies, and bodies live in relationship to forms. Krishna does not shame anyone for finding the abstract path difficult. He offers an alternative that meets us where we actually live: in feeling, in form, in relationship.</div>
-          </div>
-          <div className="essence">The subtlest path is hardest for a body-bound mind. There is another way.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 12.5"
+          sanskrit="क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम् । अव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते ॥"
+          iast="kleśo'dhikatarasteṣāmavyaktāsaktacetasām | avyaktā hi gatirduḥkhaṃ dehavadbhiravāpyate ||"
+          meaningLabel="Translation"
+          insightLabel="Krishna&apos;s honesty about the abstract"
+          essence="The subtlest path is hardest for a body-bound mind. There is another way."
+        />
 
         <p>
           That alternative is Bhakti. Where Jnana asks <em>what is real?</em>, Bhakti asks <em>whom do I love?</em>. The answer is the same (the Supreme) but the route is utterly different. Bhakti uses what is already in the human heart: the capacity for attachment, longing, surrender. It does not eliminate emotion; it reorients it. The same energy that gets spent on a hundred small attachments is gathered up and turned toward the one source from which all attachment seemed to come in the first place.
         </p>
 
-        <div className="shloka-card" id="verse-12-8">
-          <div className="verse-number">Bhagavad Gita 12.8</div>
-          <div className="sanskrit">मय्येव मन आधत्स्व मयि बुद्धिं निवेशय ।{'\n'}निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः ॥</div>
-          <div className="transliteration">mayyeva mana ādhatsva mayi buddhiṃ niveśaya |{'\n'}nivasiṣyasi mayyeva ata ūrdhvaṃ na saṃśayaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Fix your mind on me alone. Place your discerning mind in me, and you will live in me, beyond doubt.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">A divided mind is the disease</div>
-            <div className="insight-text">Most psychological suffering is the suffering of fragmentation. Part of you wants this, part of you wants that, part of you is criticizing both parts. Krishna&apos;s instruction is not <em>think more carefully</em>. It is <em>gather both your thought and your feeling into one focus</em>. The mind, when finally pointed at one thing it loves, stops splitting itself. The peace is not the reward; the gathering is the peace.</div>
-          </div>
-          <div className="essence">A divided mind settles when both thought and feeling rest in one place.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 12.8"
+          sanskrit="मय्येव मन आधत्स्व मयि बुद्धिं निवेशय । निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः ॥"
+          iast="mayyeva mana ādhatsva mayi buddhiṃ niveśaya | nivasiṣyasi mayyeva ata ūrdhvaṃ na saṃśayaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="A divided mind is the disease"
+          essence="A divided mind settles when both thought and feeling rest in one place."
+        />
 
         <p>
           And then, in chapter 9, Krishna gives the verse that has comforted more sufferers than possibly any other line in the book, the promise underneath the entire path:
         </p>
 
-        <div className="shloka-card" id="verse-9-22">
-          <div className="verse-number">Bhagavad Gita 9.22</div>
-          <div className="sanskrit">अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते ।{'\n'}तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥</div>
-          <div className="transliteration">ananyāścintayanto māṃ ye janāḥ paryupāsate |{'\n'}teṣāṃ nityābhiyuktānāṃ yogakṣemaṃ vahāmyaham ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Those who think of me alone and worship me with unwavering focus, I carry their welfare and security.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Yoga-kshema: getting and keeping</div>
-            <div className="insight-text">The compound word <em>yoga-kshema</em> is precise. <em>Yoga</em> is acquiring what you do not yet have. <em>Kshema</em> is preserving what you already have. Krishna takes both burdens. The devotee&apos;s job is not to engineer outcomes; it is to remain devoted. Read this verse on a hard morning. It does not promise that life will be easy. It promises that the load is not yours alone.</div>
-          </div>
-          <div className="essence">Unwavering devotion is met by unwavering support.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 9.22"
+          sanskrit="अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥"
+          iast="ananyāścintayanto māṃ ye janāḥ paryupāsate | teṣāṃ nityābhiyuktānāṃ yogakṣemaṃ vahāmyaham ||"
+          meaningLabel="Translation"
+          insightLabel="Yoga-kshema: getting and keeping"
+          essence="Unwavering devotion is met by unwavering support."
+        />
 
         <p>
           The most beautiful thing about Bhakti is the smallness of the offering it requires. There is no minimum donation. There is no spiritual qualification. Krishna says this directly:
         </p>
 
-        <div className="shloka-card" id="verse-9-26">
-          <div className="verse-number">Bhagavad Gita 9.26</div>
-          <div className="sanskrit">पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति ।{'\n'}तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥</div>
-          <div className="transliteration">patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati |{'\n'}tadahaṃ bhaktyupahṛtamaśnāmi prayatātmanaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Whoever offers me a leaf, a flower, a fruit, or water with devotion, I accept that devoted offering from the pure-hearted.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">It is the devotion, not the object</div>
-            <div className="insight-text">A leaf. A flower. A fruit. Water. The cheapest things on earth. Krishna chose the items deliberately, to make it clear that Bhakti is not about wealth or ritual or scholarship. It is about what fills the offering. A glass of water given from the heart contains more than an elaborate ceremony given from obligation. This is the great democratization of the spiritual life.</div>
-          </div>
-          <div className="essence">A small offering becomes complete when devotion fills it.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 9.26"
+          sanskrit="पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति । तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥"
+          iast="patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati | tadahaṃ bhaktyupahṛtamaśnāmi prayatātmanaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="It is the devotion, not the object"
+          essence="A small offering becomes complete when devotion fills it."
+        />
 
         <h3>Tulsidas, surrender in Awadhi verse</h3>
 
@@ -1148,39 +1020,27 @@ export default function KrishnaThreePathsPage() {
           </div>
         </div>
 
-        <div className="shloka-card" id="verse-11-33">
-          <div className="verse-number">Bhagavad Gita 11.33</div>
-          <div className="sanskrit">तस्मात्त्वमुत्तिष्ठ यशो लभस्व ... मयैवैते निहताः पूर्वमेव{'\n'}निमित्तमात्रं भव सव्यसाचिन् ॥</div>
-          <div className="transliteration">tasmāttvamuttiṣṭha yaśo labhasva ... mayaivaite nihatāḥ pūrvameva{'\n'}nimittamātraṃ bhava savyasācin ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Therefore rise and win fame. They have already been slain by me; become only the instrument, Arjuna.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Karma Yoga and Bhakti Yoga, fused in one verse</div>
-            <div className="insight-text">This verse is the seam where the paths meet. Krishna does not tell Arjuna not to act. He tells him to act fully (<em>uttishtha</em>, rise). But he also relieves him of the metaphysical burden of being the doer. <em>Nimitta-matra</em>: only the instrument. You bring the bow. The larger movement of things has already decided where the arrow lands. This is the same instruction Tulsidas distilled into <em>hoihi soi jo rama rachi rakha</em>.</div>
-          </div>
-          <div className="essence">Act fully. Let the larger order carry the result.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 11.33"
+          sanskrit="तस्मात्त्वमुत्तिष्ठ यशो लभस्व ... मयैवैते निहताः पूर्वमेव निमित्तमात्रं भव सव्यसाचिन् ॥"
+          iast="tasmāttvamuttiṣṭha yaśo labhasva ... mayaivaite nihatāḥ pūrvameva nimittamātraṃ bhava savyasācin ||"
+          meaningLabel="Translation"
+          insightLabel="Karma Yoga and Bhakti Yoga, fused in one verse"
+          essence="Act fully. Let the larger order carry the result."
+        />
 
         <p>
           And then, the verse that closes the entire Gita, the line Krishna calls the most secret teaching of all:
         </p>
 
-        <div className="shloka-card" id="verse-18-66">
-          <div className="verse-number">Bhagavad Gita 18.66: the final teaching</div>
-          <div className="sanskrit">सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज ।{'\n'}अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥</div>
-          <div className="transliteration">sarvadharmān parityajya mām ekaṃ śaraṇaṃ vraja |{'\n'}ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Abandon all duties and take refuge in me alone. I will free you from all wrongdoing; do not grieve.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Ma shuchah: do not grieve</div>
-            <div className="insight-text">After seventeen chapters of teaching (every framework, every distinction, every yoga) Krishna ends with the simplest possible instruction. Drop the burden of getting it right. Hand the load to me. The last two words, <em>ma shuchah</em>, are tender: do not grieve. The Gita that began with Arjuna&apos;s grief ends with Krishna&apos;s promise that the grief has nowhere left to live.</div>
-          </div>
-          <div className="essence">Total refuge ends the burden of fear.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.66: the final teaching"
+          sanskrit="सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥"
+          iast="sarvadharmān parityajya mām ekaṃ śaraṇaṃ vraja | ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="Ma shuchah: do not grieve"
+          essence="Total refuge ends the burden of fear."
+        />
 
         <h3>Modern parallel, surrender as a regulated nervous system</h3>
 
@@ -1206,77 +1066,53 @@ export default function KrishnaThreePathsPage() {
           The clearest single statement of this is in chapter 7, where Krishna describes the four kinds of people who turn toward him:
         </p>
 
-        <div className="shloka-card" id="verse-7-16">
-          <div className="verse-number">Bhagavad Gita 7.16</div>
-          <div className="sanskrit">चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन ।{'\n'}आर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ ॥</div>
-          <div className="transliteration">caturvidhā bhajante māṃ janāḥ sukṛtino&apos;rjuna |{'\n'}ārto jijñāsurarthārthī jñānī ca bharatarṣabha ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Four kinds of virtuous people worship me, Arjuna: the distressed, the seeker of knowledge, the one who wants material good, and the wise one, best of the Bharatas.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">All four count</div>
-            <div className="insight-text">Krishna does not say only the wise should approach him. He names the suffering person who comes because the suffering has nowhere else to go. The curious one who comes because the question will not let them rest. The person who wants something concrete and comes asking for it. And the one who has already understood, and comes simply because that is what understanding does. All four are called <em>sukritina</em>: virtuous. The door, Krishna is saying, has many handles, and any of them will open it.</div>
-          </div>
-          <div className="essence">Different needs lead to one real turning.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 7.16"
+          sanskrit="चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन । आर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ ॥"
+          iast="caturvidhā bhajante māṃ janāḥ sukṛtino'rjuna | ārto jijñāsurarthārthī jñānī ca bharatarṣabha ||"
+          meaningLabel="Translation"
+          insightLabel="All four count"
+          essence="Different needs lead to one real turning."
+        />
 
         <p>
           And immediately after, Krishna admits something tender: that of these four, one is dearer than the others. Not because the others are unworthy, but because in this one the paths have already fused:
         </p>
 
-        <div className="shloka-card" id="verse-7-17">
-          <div className="verse-number">Bhagavad Gita 7.17</div>
-          <div className="sanskrit">तेषां ज्ञानी नित्ययुक्त एकभक्तिर्विशिष्यते ।{'\n'}प्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः ॥</div>
-          <div className="transliteration">teṣāṃ jñānī nityayukta ekabhaktirviśiṣyate |{'\n'}priyo hi jñānino&apos;tyarthamahaṃ sa ca mama priyaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Among these four, the wise devotee, ever united, one-pointed, is distinguished. For I am exceedingly dear to the wise one, and the wise one is dear to me.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Jnani-bhakta: the wise lover</div>
-            <div className="insight-text">The phrase <em>jnani-bhakta</em> is doing enormous work. It is the seeker in whom Jnana and Bhakti have stopped being separate paths and become one disposition: clear seeing combined with devoted love. Krishna does not name this as a fourth path. He names it as what happens at the end of the other two. Wisdom turns into love; love refines into wisdom. The summit looks the same whether you arrived from the north face or the south.</div>
-          </div>
-          <div className="essence">Deep knowing and devoted love become a mutual bond.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 7.17"
+          sanskrit="तेषां ज्ञानी नित्ययुक्त एकभक्तिर्विशिष्यते । प्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः ॥"
+          iast="teṣāṃ jñānī nityayukta ekabhaktirviśiṣyate | priyo hi jñānino'tyarthamahaṃ sa ca mama priyaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="Jnani-bhakta: the wise lover"
+          essence="Deep knowing and devoted love become a mutual bond."
+        />
 
         <p>
           And in chapter 4, one of the most pluralistic verses Krishna ever delivers, a single line that has carried more spiritual generosity than perhaps any other:
         </p>
 
-        <div className="shloka-card" id="verse-4-11">
-          <div className="verse-number">Bhagavad Gita 4.11</div>
-          <div className="sanskrit">ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम् ।{'\n'}मम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः ॥</div>
-          <div className="transliteration">ye yathā māṃ prapadyante tāṃstathaiva bhajāmyaham |{'\n'}mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">As people approach me, so I respond to them. All people, in every way, follow my path.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">The path adapts to the seeker</div>
-            <div className="insight-text">Krishna is saying: the destination does not change, but the door does. Approach with intellect, and you will be answered with insight. Approach with love, and you will be answered with presence. Approach with work, and the work itself will become your teacher. There is no wrong way in. There is only the way you actually arrive.</div>
-          </div>
-          <div className="essence">The path you walk is the one that walks back to meet you.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.11"
+          sanskrit="ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम् । मम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः ॥"
+          iast="ye yathā māṃ prapadyante tāṃstathaiva bhajāmyaham | mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="The path adapts to the seeker"
+          essence="The path you walk is the one that walks back to meet you."
+        />
 
         <p>
           And finally, in chapter 12, the great verse that some have read as a ranking and others as a sequence, but is best read as a description of where each path naturally settles:
         </p>
 
-        <div className="shloka-card" id="verse-12-12">
-          <div className="verse-number">Bhagavad Gita 12.12</div>
-          <div className="sanskrit">श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते ।{'\n'}ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम् ॥</div>
-          <div className="transliteration">śreyo hi jñānamabhyāsājjñānāddhyānaṃ viśiṣyate |{'\n'}dhyānātkarmaphalatyāgastyāgācchāntiranantaram ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Knowledge is better than mere practice; meditation is better than knowledge. Better than meditation is renouncing the fruits of action. From that renunciation, peace follows at once.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">All three paths in one verse</div>
-            <div className="insight-text">Notice what Krishna does. He moves from <em>abhyasa</em> (practice: Karma Yoga&apos;s discipline), to <em>jnana</em> (knowledge: the Jnani&apos;s insight), to <em>dhyana</em> (meditation: the inner one-pointedness all three paths develop), to <em>karma-phala-tyaga</em> (renouncing the fruit of action, which is itself the highest form of Karma Yoga, ripened by both Jnana and Bhakti). And the result is not progress; it is <em>shanti anantaram</em> — peace, immediately. The paths are not really competing. They are completing each other.</div>
-          </div>
-          <div className="essence">Peace begins when you stop clinging to what your action produces. All three paths help you get there.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 12.12"
+          sanskrit="श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते । ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम् ॥"
+          iast="śreyo hi jñānamabhyāsājjñānāddhyānaṃ viśiṣyate | dhyānātkarmaphalatyāgastyāgācchāntiranantaram ||"
+          meaningLabel="Translation"
+          insightLabel="All three paths in one verse"
+          essence="Peace begins when you stop clinging to what your action produces. All three paths help you get there."
+        />
 
         <p className="pull-quote">
           The path you can actually walk is more important than the path that sounds most impressive. Krishna&apos;s genius is to have laid out three real roads, and to have said, in his own voice, that he is at the end of every one.

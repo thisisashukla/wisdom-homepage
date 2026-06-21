@@ -228,6 +228,102 @@ a {
   margin-bottom: 16px;
 }
 
+/* ── ShlokaCard component ───────────────────────────────────────────────── */
+.shloka-card {
+  background: var(--bg-card, rgba(255,255,255,0.04));
+  border: 1px solid var(--border, rgba(200,136,30,0.2));
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 36px 0;
+  transition: border-color 0.2s;
+}
+.shloka-card:hover {
+  border-color: rgba(200, 136, 30, 0.4);
+}
+.shloka-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 22px;
+  border-bottom: 1px solid var(--border, rgba(200,136,30,0.2));
+  background: rgba(200, 136, 30, 0.05);
+}
+.shloka-ref {
+  font-size: 11px;
+  color: var(--gold, #c8881e);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.shloka-speaker {
+  font-size: 11px;
+  color: var(--text-dimmer, rgba(245,232,204,0.35));
+  letter-spacing: 0.06em;
+}
+.shloka-sanskrit {
+  padding: 24px 22px 20px;
+  font-family: "Noto Sans Devanagari", serif;
+  font-size: 20px;
+  line-height: 1.9;
+  color: var(--gold-light, #f5c96a);
+  border-bottom: 1px solid var(--border, rgba(200,136,30,0.2));
+  text-align: center;
+  /* each BR becomes a visible line-break between the two padas */
+}
+.shloka-iast {
+  padding: 12px 22px 16px;
+  font-size: 12.5px;
+  line-height: 1.8;
+  color: var(--text-dimmer, rgba(245,232,204,0.35));
+  border-bottom: 1px solid var(--border, rgba(200,136,30,0.2));
+  font-style: italic;
+  text-align: center;
+}
+.shloka-body {
+  padding: 20px 22px 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.shloka-col-label {
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-dimmer, rgba(245,232,204,0.35));
+  margin-bottom: 8px;
+}
+.shloka-meaning {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-dim, rgba(245,232,204,0.65));
+}
+.shloka-insight {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--gold-light, #f5c96a);
+}
+.shloka-essence {
+  padding: 14px 22px;
+  background: rgba(200, 136, 30, 0.06);
+  border-top: 1px solid var(--border, rgba(200,136,30,0.2));
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--text-dim, rgba(245,232,204,0.65));
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .shloka-body {
+    grid-template-columns: 1fr;
+  }
+  .shloka-sanskrit {
+    font-size: 17px;
+    padding: 18px 16px 16px;
+  }
+}
+
 .page-loading {
   min-height: 100vh;
   display: flex;

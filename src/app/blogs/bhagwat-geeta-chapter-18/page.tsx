@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 18 Summary – Key Verses & Meaning (Moksha Sannyasa)",
@@ -139,28 +140,6 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
-
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
@@ -262,7 +241,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -751,35 +729,16 @@ export default function ChapterPage18() {
           Krishna gives it in verse 18.2. Some wise people say renunciation means giving up desire-driven actions. Others say it means giving up the fruits of all actions. The first is sannyāsa in its narrow sense, giving up specific kinds of activities. The second is tyāga, the inner letting go of results that the Gita has been teaching since Chapter 2. The chapter will, in subsequent verses, side with the second. The truly renounced person is not the one who has stopped acting. It is the one who has stopped clutching the result. This was already the Gita's position in Chapter 5 and 6. Chapter 18 makes it the final position.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.2</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रीभगवानुवाच<br />काम्यानां कर्मणां न्यासं संन्यासं कवयो विदुः ।<br />सर्वकर्मफलत्यागं प्राहुस्त्यागं विचक्षणाः ॥
-          </div>
-          <div className="shloka-iast">
-            śrī bhagavān uvāca |<br />kāmyānāṃ karmaṇāṃ nyāsaṃ sannyāsaṃ kavayo viduḥ |<br />sarva-karma-phala-tyāgaṃ prāhus tyāgaṃ vicakṣaṇāḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The wise call renunciation the giving up of actions driven by desire. The discerning call letting-go the giving up of the fruits of all actions.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The verse's quiet preference</div>
-              <div className="shloka-insight">
-                Notice the asymmetry. The first definition uses <em>kavayaḥ</em>, the poets, the wise. The second uses <em>vicakṣaṇāḥ</em>, the discerning, those who see most precisely. The Gita is gently signalling which definition it prefers. Letting go of fruits is the deeper move because it does not require giving up activity. It only requires giving up the grip.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Renunciation means releasing both craving and attachment to results."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.2"
+          speaker="Krishna"
+          sanskrit="श्रीभगवानुवाच काम्यानां कर्मणां न्यासं संन्यासं कवयो विदुः । सर्वकर्मफलत्यागं प्राहुस्त्यागं विचक्षणाः ॥"
+          iast="śrī bhagavān uvāca | kāmyānāṃ karmaṇāṃ nyāsaṃ sannyāsaṃ kavayo viduḥ | sarva-karma-phala-tyāgaṃ prāhus tyāgaṃ vicakṣaṇāḥ ||"
+          meaning="The wise call renunciation the giving up of actions driven by desire. The discerning call letting-go the giving up of the fruits of all actions."
+          insightLabel="The verse's quiet preference"
+          insight="Notice the asymmetry. The first definition uses kavayaḥ, the poets, the wise. The second uses vicakṣaṇāḥ, the discerning, those who see most precisely. The Gita is gently signalling which definition it prefers. Letting go of fruits is the deeper move because it does not require giving up activity. It only requires giving up the grip."
+          essence="Renunciation means releasing both craving and attachment to results."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -800,35 +759,16 @@ export default function ChapterPage18() {
           Why does this matter? Because most of our suffering about action comes from imagining we are the sole cause. When the action succeeds, we feel inflated. When it fails, we feel devastated. Both reactions assume we are doing the work alone. The Gita's five-fold analysis shows that we are, in fact, one of five contributors. The other four, body, instruments, efforts, divine factor, were also necessary. Even when you act perfectly, the result is not yours alone to claim. Even when you act poorly, the result is not yours alone to blame. The five causes share the responsibility, and that sharing is, oddly, the source of peace.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.14</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अधिष्ठानं तथा कर्ता करणं च पृथग्विधम् ।<br />विविधाश्च पृथक्चेष्टा दैवं चैवात्र पञ्चमम् ॥
-          </div>
-          <div className="shloka-iast">
-            adhiṣṭhānaṃ tathā kartā karaṇaṃ ca pṛthag-vidham |<br />vividhāś ca pṛthak ceṣṭā daivaṃ caivātra pañcamam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The field, the doer, the various instruments, the many different efforts, and the fifth, the unseen, together produce any action.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What the fifth cause does for you</div>
-              <div className="shloka-insight">
-                Notice that the doer is the second item, not the only item. The verse explicitly de-centres the personal agent. The fifth cause (<em>daivam</em>) is the part you cannot plan for, the timing you did not choose, the conditions you did not arrange. Most of us pretend the fifth cause is decorative. The Gita is saying it is structural. Every action requires it. Every action receives it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Action has many causes, and no one factor owns the result."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.14"
+          speaker="Krishna"
+          sanskrit="अधिष्ठानं तथा कर्ता करणं च पृथग्विधम् । विविधाश्च पृथक्चेष्टा दैवं चैवात्र पञ्चमम् ॥"
+          iast="adhiṣṭhānaṃ tathā kartā karaṇaṃ ca pṛthag-vidham | vividhāś ca pṛthak ceṣṭā daivaṃ caivātra pañcamam ||"
+          meaning="The field, the doer, the various instruments, the many different efforts, and the fifth, the unseen, together produce any action."
+          insightLabel="What the fifth cause does for you"
+          insight="Notice that the doer is the second item, not the only item. The verse explicitly de-centres the personal agent. The fifth cause (daivam) is the part you cannot plan for, the timing you did not choose, the conditions you did not arrange. Most of us pretend the fifth cause is decorative. The Gita is saying it is structural. Every action requires it. Every action receives it."
+          essence="Action has many causes, and no one factor owns the result."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -849,35 +789,16 @@ export default function ChapterPage18() {
           Read carelessly, this is a moral horror. Read carefully, it is a precise teaching about what binds and what doesn't. The verse is not licensing violence. It is identifying what makes an action heavy. The heaviness of an action is not in the action itself; it is in the egoic claim attached to it. The same act, performed by a person who has authentically identified with the larger pattern of dharma rather than with personal want, lands differently in the universe than the same act performed for personal advantage. In Arjuna's specific case, he is being asked to fight a war he did not choose, against opponents who are on the wrong side of dharma, with no personal hatred. The verse is saying that, in such a case, the act can be performed without binding the actor.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.17</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यस्य नाहङ्कृतो भावो बुद्धिर्यस्य न लिप्यते ।<br />हत्वापि स इमाँल्लोकान्न हन्ति न निबध्यते ॥
-          </div>
-          <div className="shloka-iast">
-            yasya nāhaṅkṛto bhāvo buddhir yasya na lipyate |<br />hatvāpi sa imāṁl lokān na hanti na nibadhyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                One whose mind is free of egoic ownership, whose understanding is unstained, does not kill, even by slaying all these beings, and is not bound.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why this verse is not a moral loophole</div>
-              <div className="shloka-insight">
-                The verse is not absolving anyone of the consequences of their actions. It is identifying the inner condition that makes an action either binding or non-binding. The condition is enormously demanding, total freedom from egoic claim, complete alignment with dharma. Almost nobody meets this standard. The verse is naming the ideal, not handing out permission slips.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Without egoic ownership, action leaves no stain."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.17"
+          speaker="Krishna"
+          sanskrit="यस्य नाहङ्कृतो भावो बुद्धिर्यस्य न लिप्यते । हत्वापि स इमाँल्लोकान्न हन्ति न निबध्यते ॥"
+          iast="yasya nāhaṅkṛto bhāvo buddhir yasya na lipyate | hatvāpi sa imāṁl lokān na hanti na nibadhyate ||"
+          meaning="One whose mind is free of egoic ownership, whose understanding is unstained, does not kill, even by slaying all these beings, and is not bound."
+          insightLabel="Why this verse is not a moral loophole"
+          insight="The verse is not absolving anyone of the consequences of their actions. It is identifying the inner condition that makes an action either binding or non-binding. The condition is enormously demanding, total freedom from egoic claim, complete alignment with dharma. Almost nobody meets this standard. The verse is naming the ideal, not handing out permission slips."
+          essence="Without egoic ownership, action leaves no stain."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -898,35 +819,16 @@ export default function ChapterPage18() {
           Notice the five pairs. <em>Pravṛtti / nivṛtti</em>. <em>Kārya / akārya</em>. <em>Bhaya / abhaya</em>. <em>Bandha / mokṣa</em>. The highest intelligence is not impressive knowledge or sophisticated argument. It is the ability to discriminate, in any moment, between these five pairs. What direction leads forward and what direction draws back. What action should be done and what action should not. What is genuine fear and what is unnecessary fear. What binds the soul and what frees it. A person with this discrimination, the verse implies, can navigate any situation. A person without it gets repeatedly caught.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.30</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये ।<br />बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी ॥
-          </div>
-          <div className="shloka-iast">
-            pravṛttiṃ ca nivṛttiṃ ca kāryākārye bhayābhaye |<br />bandhaṃ mokṣaṃ ca yā vetti buddhiḥ sā pārtha sāttvikī ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The intelligence that knows what to engage and what to withdraw from, what should be done and what should not, what is fear and fearlessness, what binds and what frees, that, Arjuna, is sattvic intelligence.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The deepest definition of wisdom</div>
-              <div className="shloka-insight">
-                Most discussions of intelligence focus on capacity: how much one can hold, how fast one can compute. The Gita's definition is different. Intelligence, here, is discrimination. The ability to tell, in the actual moment, which fork in the road leads where. By that standard, very intelligent people can lack <em>buddhi</em>, and very modest people can have it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "True intelligence recognizes the difference between bondage and freedom."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.30"
+          speaker="Krishna"
+          sanskrit="प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये । बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी ॥"
+          iast="pravṛttiṃ ca nivṛttiṃ ca kāryākārye bhayābhaye | bandhaṃ mokṣaṃ ca yā vetti buddhiḥ sā pārtha sāttvikī ||"
+          meaning="The intelligence that knows what to engage and what to withdraw from, what should be done and what should not, what is fear and fearlessness, what binds and what frees, that, Arjuna, is sattvic intelligence."
+          insightLabel="The deepest definition of wisdom"
+          insight="Most discussions of intelligence focus on capacity: how much one can hold, how fast one can compute. The Gita's definition is different. Intelligence, here, is discrimination. The ability to tell, in the actual moment, which fork in the road leads where. By that standard, very intelligent people can lack buddhi, and very modest people can have it."
+          essence="True intelligence recognizes the difference between bondage and freedom."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -954,35 +856,16 @@ export default function ChapterPage18() {
           Read carelessly, the verse can sound conservative, a permission to stay in one's caste, one's job, one's marriage, one's role. That is not its main thrust. The deeper teaching is about authenticity. Your work, done in your way, in your voice, with your imperfections, has a kind of integrity that no borrowed work can match, however well-executed. The borrowed work, no matter how polished, is still costume. Your own work, even messy, is the actual transmission of who you are. The Gita is asking you to make peace with the imperfection of your own contribution and to stop comparing it to a more glamorous role you imagine you should be playing.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.47</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।<br />स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥
-          </div>
-          <div className="shloka-iast">
-            śreyān sva-dharmo viguṇaḥ para-dharmāt sv-anuṣṭhitāt |<br />svabhāva-niyataṃ karma kurvan nāpnoti kilbiṣam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                One's own dharma, even when imperfect, is better than another's dharma well performed. The work set by one's own nature, performed, does not incur wrongdoing.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why "sva" is the key word</div>
-              <div className="shloka-insight">
-                <em>Sva-dharma</em>: one's own duty. <em>Svabhāva-niyatam</em>: set by one's own nature. The verse is pointing toward the work that arises out of who you actually are, not what you have been told to be, not what you would like to imitate. That work, even badly done, registers as authentic. Better work, in someone else's voice, does not.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Your imperfect duty is cleaner than a borrowed perfection."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.47"
+          speaker="Krishna"
+          sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥"
+          iast="śreyān sva-dharmo viguṇaḥ para-dharmāt sv-anuṣṭhitāt | svabhāva-niyataṃ karma kurvan nāpnoti kilbiṣam ||"
+          meaning="One's own dharma, even when imperfect, is better than another's dharma well performed. The work set by one's own nature, performed, does not incur wrongdoing."
+          insightLabel="Why \"sva\" is the key word"
+          insight="Sva-dharma: one's own duty. Svabhāva-niyatam: set by one's own nature. The verse is pointing toward the work that arises out of who you actually are, not what you have been told to be, not what you would like to imitate. That work, even badly done, registers as authentic. Better work, in someone else's voice, does not."
+          essence="Your imperfect duty is cleaner than a borrowed perfection."
+        />
 
         <div className="highlight-box">
           <p>
@@ -1009,35 +892,16 @@ export default function ChapterPage18() {
           Notice the epistemology. The Gita is not saying you can know the Divine through reasoning alone. It is saying that devoted love is itself a form of knowledge, a more accurate one than detached analysis. This is not anti-intellectual. It is just precise. Some things can only be known through the right relationship. A person can be studied, analyzed, and described from outside, and the description will miss what the person is actually like. The same person, encountered through real love, is known differently. The Gita is applying this to the Divine. The deepest knowledge is not the one you assemble from outside. It is the one that arises from inside a real relationship.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.55</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            भक्त्या मामभिजानाति यावान्यश्चास्मि तत्त्वतः ।<br />ततो मां तत्त्वतो ज्ञात्वा विशते तदनन्तरम् ॥
-          </div>
-          <div className="shloka-iast">
-            bhaktyā mām abhijānāti yāvān yaś cāsmi tattvataḥ |<br />tato māṃ tattvato jñātvā viśate tad-anantaram ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Through devotion, one truly knows me as I am. Then, knowing me in truth, one enters into me at once.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why love is the deepest knowledge</div>
-              <div className="shloka-insight">
-                You cannot know a person, fully, from outside. The deepest knowing requires the relationship. The Gita's claim is structural, the same is true of the Divine. Analysis takes you so far. Devoted love takes you the rest of the way. The two are not in opposition. The analysis prepares the ground; the love does the entering.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Devoted love turns understanding into immediate nearness."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.55"
+          speaker="Krishna"
+          sanskrit="भक्त्या मामभिजानाति यावान्यश्चास्मि तत्त्वतः । ततो मां तत्त्वतो ज्ञात्वा विशते तदनन्तरम् ॥"
+          iast="bhaktyā mām abhijānāti yāvān yaś cāsmi tattvataḥ | tato māṃ tattvato jñātvā viśate tad-anantaram ||"
+          meaning="Through devotion, one truly knows me as I am. Then, knowing me in truth, one enters into me at once."
+          insightLabel="Why love is the deepest knowledge"
+          insight="You cannot know a person, fully, from outside. The deepest knowing requires the relationship. The Gita's claim is structural, the same is true of the Divine. Analysis takes you so far. Devoted love takes you the rest of the way. The two are not in opposition. The analysis prepares the ground; the love does the entering."
+          essence="Devoted love turns understanding into immediate nearness."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -1058,35 +922,16 @@ export default function ChapterPage18() {
           Then comes the instruction. <em>Surrender to that Lord with your whole being. By that grace, you will reach supreme peace and the eternal home.</em> Notice the move. Once you understand that the spinning is happening through you, not by you, the appropriate response is not control. Control was the illusion that produced the suffering. The appropriate response is surrender: handing over the part of your inner life that was trying, futilely, to drive the machine you are mounted on.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.61</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति ।<br />भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया ॥
-          </div>
-          <div className="shloka-iast">
-            īśvaraḥ sarva-bhūtānāṃ hṛd-deśe'rjuna tiṣṭhati |<br />bhrāmayan sarva-bhūtāni yantrārūḍhāni māyayā ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The Lord dwells in the heart of all beings, Arjuna, causing all beings, mounted on the machine of the body, to revolve through māyā.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The image of the machine</div>
-              <div className="shloka-insight">
-                <em>Yantrārūḍhāni</em>: mounted on a machine. The Gita's image for the body is mechanical. The body is not your enemy; it is the apparatus through which the spinning happens. You are not the one driving it as much as you imagine. There is a deeper director, and the director is closer to you than your own ego.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The deeper mover is not your ego, and surrender begins there."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.61"
+          speaker="Krishna"
+          sanskrit="ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति । भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया ॥"
+          iast="īśvaraḥ sarva-bhūtānāṃ hṛd-deśe'rjuna tiṣṭhati | bhrāmayan sarva-bhūtāni yantrārūḍhāni māyayā ||"
+          meaning="The Lord dwells in the heart of all beings, Arjuna, causing all beings, mounted on the machine of the body, to revolve through māyā."
+          insightLabel="The image of the machine"
+          insight="Yantrārūḍhāni: mounted on a machine. The Gita's image for the body is mechanical. The body is not your enemy; it is the apparatus through which the spinning happens. You are not the one driving it as much as you imagine. There is a deeper director, and the director is closer to you than your own ego."
+          essence="The deeper mover is not your ego, and surrender begins there."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -1114,65 +959,27 @@ export default function ChapterPage18() {
           And then, verse 18.66, what tradition calls the <em>charama śloka</em>: the final verse, the most secret teaching of all. <em>Sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja</em>. Abandon all dharmas. Take refuge in me alone. <em>Ahaṃ tvāṃ sarva-pāpebhyo mokṣayiṣyāmi, mā śucaḥ</em>. I will free you from all wrongdoing. Do not grieve. The verse is staggering. After eighteen chapters of dharma (duty, action, restraint, technique, knowledge), Krishna's final instruction is to let go of all of it and rest in him. This is not a cancellation of the previous teaching. It is its completion. The dharmas were the necessary ladder. The ladder, at the top, is finally released. What remains is refuge, and the promise that refuge is enough.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.65</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु ।<br />मामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे ॥
-          </div>
-          <div className="shloka-iast">
-            man-manā bhava mad-bhakto mad-yājī māṃ namaskuru |<br />mām evaiṣyasi satyaṃ te pratijāne priyo'si me ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Fix your mind on me, be devoted to me, worship me, bow to me. You will come to me, I promise you this truly, for you are dear to me.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The line that changes the verse from instruction to love</div>
-              <div className="shloka-insight">
-                <em>Priyo'si me</em>: you are dear to me. The Gita's most repeated instruction ends, this time, with a personal declaration of love. The teaching has been pedagogical for seventeen chapters. Here, near the end, it becomes a friendship's most direct sentence. The promise is not abstract. It is given because of the affection.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Wholehearted devotion becomes the shortest path home."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.65"
+          speaker="Krishna"
+          sanskrit="मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु । मामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे ॥"
+          iast="man-manā bhava mad-bhakto mad-yājī māṃ namaskuru | mām evaiṣyasi satyaṃ te pratijāne priyo'si me ||"
+          meaning="Fix your mind on me, be devoted to me, worship me, bow to me. You will come to me, I promise you this truly, for you are dear to me."
+          insightLabel="The line that changes the verse from instruction to love"
+          insight="Priyo'si me: you are dear to me. The Gita's most repeated instruction ends, this time, with a personal declaration of love. The teaching has been pedagogical for seventeen chapters. Here, near the end, it becomes a friendship's most direct sentence. The promise is not abstract. It is given because of the affection."
+          essence="Wholehearted devotion becomes the shortest path home."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.66</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज ।<br />अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥
-          </div>
-          <div className="shloka-iast">
-            sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja |<br />ahaṃ tvā sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Abandon all duties and take refuge in me alone. I will free you from all wrongdoing. Do not grieve.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The Gita's most generous sentence</div>
-              <div className="shloka-insight">
-                After eighteen chapters of teaching about right action, the final instruction is to release even the framework of action itself. <em>Sarva-dharmān parityajya</em>: abandon every dharma. <em>Mām ekaṃ śaraṇaṃ vraja</em>: take refuge in me alone. The teaching was the staircase. The staircase, at the top, is finally let go. What remains is the embrace at the top of the staircase, and the promise that the embrace will hold you, fully, regardless of how the climb went. <em>Mā śucaḥ</em>: do not grieve. The Gita ends its most central teaching with a tenderness almost no scripture matches.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Total refuge ends the burden of fear."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.66"
+          speaker="Krishna"
+          sanskrit="सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥"
+          iast="sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja | ahaṃ tvā sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ ||"
+          meaning="Abandon all duties and take refuge in me alone. I will free you from all wrongdoing. Do not grieve."
+          insightLabel="The Gita's most generous sentence"
+          insight="After eighteen chapters of teaching about right action, the final instruction is to release even the framework of action itself. Sarva-dharmān parityajya: abandon every dharma. Mām ekaṃ śaraṇaṃ vraja: take refuge in me alone. The teaching was the staircase. The staircase, at the top, is finally let go. What remains is the embrace at the top of the staircase, and the promise that the embrace will hold you, fully, regardless of how the climb went. Mā śucaḥ: do not grieve. The Gita ends its most central teaching with a tenderness almost no scripture matches."
+          essence="Total refuge ends the burden of fear."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -1200,35 +1007,16 @@ export default function ChapterPage18() {
           Notice what has happened. Eighteen chapters ago, Arjuna was paralysed. He had set down his bow. He had wept on the chariot floor. He had asked Krishna to teach him. Now, at the end, he stands. The Sanskrit word is <em>sthitaḥ</em>, established, firm. The delusion is gone. The memory is restored, not of facts, but of who he is and what he must do. The doubts are gone. He will act. The Gita's pedagogical project is complete. Not because Arjuna has been given new information. Because the confusion that prevented him from acting has been dissolved.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.73</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अर्जुन उवाच<br />नष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत ।<br />स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव ॥
-          </div>
-          <div className="shloka-iast">
-            arjuna uvāca |<br />naṣṭo mohaḥ smṛtir labdhā tvat-prasādān mayācyuta |<br />sthito'smi gata-sandehaḥ kariṣye vacanaṃ tava ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Arjuna said: my delusion is destroyed, memory restored, by your grace, Achyuta. I stand firm, my doubts gone. I will do what you say.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why this is the structural climax</div>
-              <div className="shloka-insight">
-                The Gita is a teaching, but it is also a story. The story is of a person at his lowest point, paralysed by despair, learning through eighteen chapters of dialogue, and arriving at a clarity that allows him to act. Verse 18.73 is the moment of arrival. Without this verse, the teaching is abstract. With it, the teaching is a journey completed.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Grace ends confusion and turns insight into obedience."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.73"
+          speaker="Arjuna"
+          sanskrit="अर्जुन उवाच नष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत । स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव ॥"
+          iast="arjuna uvāca | naṣṭo mohaḥ smṛtir labdhā tvat-prasādān mayācyuta | sthito'smi gata-sandehaḥ kariṣye vacanaṃ tava ||"
+          meaning="Arjuna said: my delusion is destroyed, memory restored, by your grace, Achyuta. I stand firm, my doubts gone. I will do what you say."
+          insightLabel="Why this is the structural climax"
+          insight="The Gita is a teaching, but it is also a story. The story is of a person at his lowest point, paralysed by despair, learning through eighteen chapters of dialogue, and arriving at a clarity that allows him to act. Verse 18.73 is the moment of arrival. Without this verse, the teaching is abstract. With it, the teaching is a journey completed."
+          essence="Grace ends confusion and turns insight into obedience."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -1249,35 +1037,16 @@ export default function ChapterPage18() {
           Wherever Krishna, the master of yoga, is present, and wherever Arjuna, the bow-bearer, is present: there is prosperity, victory, glory, and firm justice. <em>Etat me matiḥ</em>. This is my conviction. The verse is a kind of benediction. It says: when the wisdom of the Divine and the willingness of the seeker are joined, the outcome is already secured. Not because the universe is rigged in favour of any particular agent, but because the right alignment (wisdom and willingness, teacher and student, divine and human) produces its own victory. The Gita ends, not with the war's outcome, but with the assurance that the proper alignment has been achieved. The rest is detail.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 18.78</span>
-            <span className="shloka-speaker">Speaker: Sanjaya</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः ।<br />तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम ॥
-          </div>
-          <div className="shloka-iast">
-            yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanur-dharaḥ |<br />tatra śrīr vijayo bhūtir dhruvā nītir matir mama ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Where Krishna, the master of yoga, is present, and where Arjuna, the bow-bearer, is, there are prosperity, victory, glory, and firm justice. This is my conviction.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why this verse closes the book</div>
-              <div className="shloka-insight">
-                The Gita does not need to describe the war's outcome. It ends with the assurance that the inner alignment has been achieved. When the Divine and the seeker are properly oriented toward each other, the outer outcome will follow. The verse is the book's way of telling the reader that everything that needed to happen, in the deepest sense, has happened.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Right action carries its own victory."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.78"
+          speaker="Sanjaya"
+          sanskrit="यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः । तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम ॥"
+          iast="yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanur-dharaḥ | tatra śrīr vijayo bhūtir dhruvā nītir matir mama ||"
+          meaning="Where Krishna, the master of yoga, is present, and where Arjuna, the bow-bearer, is, there are prosperity, victory, glory, and firm justice. This is my conviction."
+          insightLabel="Why this verse closes the book"
+          insight="The Gita does not need to describe the war's outcome. It ends with the assurance that the inner alignment has been achieved. When the Divine and the seeker are properly oriented toward each other, the outer outcome will follow. The verse is the book's way of telling the reader that everything that needed to happen, in the deepest sense, has happened."
+          essence="Right action carries its own victory."
+        />
 
         <div className="highlight-box">
           <p>

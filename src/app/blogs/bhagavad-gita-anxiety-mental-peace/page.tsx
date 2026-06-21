@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "What Does the Bhagavad Gita Say About Anxiety and Fear? | Wisdom",
@@ -196,96 +197,6 @@ const pageCSS = `
         p {
             margin-bottom: 1.5rem;
             color: var(--text-dim);
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-
-        .shloka-card:hover {
-            background: var(--bg-card-hover);
-        }
-
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .meaning-text {
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .insight-text {
-            color: var(--text-dim);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -602,24 +513,13 @@ export default function AnxietyMentalPeacePage() {
             The Gita's most precise analysis of how anxiety and psychological collapse actually happen is contained in verses 2.62-2.63. These two verses outline the entire cascade: from dwelling to attachment to desire to anger to confusion to lost memory to destroyed intelligence to complete disintegration.
         </p>
 
-        <div className="shloka-card">
-            <div className="verse-number">Bhagavad Gita 2.62-2.63</div>
-            <div className="sanskrit">ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते ।
-सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥ २.६२ ॥
-क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः ।
-स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥ २.६३ ॥</div>
-            <div className="transliteration">dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate |
-saṅgāt saṃjāyate kāmaḥ kāmātkrodho'bhijāyate ||
-krodhādbhavati saṃmohaḥ saṃmohātsmṛtivibhramaḥ |
-smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||</div>
-            <div className="meaning">
-                <div className="meaning-label">Translation</div>
-                <div className="meaning-text">From dwelling on sense objects arises attachment; from attachment arises desire; from desire arises anger. From anger comes delusion; from delusion, loss of memory; from loss of memory, destruction of intelligence; from the destruction of intelligence, one perishes.</div>
-            </div>
-            <div className="insight">
-                <div className="insight-label">What This Teaches</div>
-                <div className="insight-text">This is the Gita's cascade model of psychological collapse. Notice where it starts: not with an external event, not with the feeling of fear, but with what the mind dwells on. You dwell on something. Dwelling creates attachment. Attachment creates the need for a particular outcome (desire). When the outcome doesn't match what you want, you become angry. Anger clouds judgment. Loss of judgment means loss of sense. The spiral spirals. But here is the critical insight: the entry point is earlier than you think. You cannot always control your fear response in the moment. But you can control what you allow your mind to dwell on. That's the interruption point.</div>
-            </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.62-2.63"
+          sanskrit="ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥ २.६२ ॥ क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥ २.६३ ॥"
+          iast="dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate | saṅgāt saṃjāyate kāmaḥ kāmātkrodho'bhijāyate || krodhādbhavati saṃmohaḥ saṃmohātsmṛtivibhramaḥ | smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+        />
             <div className="essence">Guard what you dwell on: the anxiety cascade begins at thought, not at feeling.</div>
         </div>
 
@@ -632,22 +532,14 @@ smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||</div>
             The Gita does not offer to eliminate difficulty or fear. It offers something more useful: a way to bear it. This is the teaching of verse 2.14.
         </p>
 
-        <div className="shloka-card">
-            <div className="verse-number">Bhagavad Gita 2.14</div>
-            <div className="sanskrit">मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः ।
-आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥</div>
-            <div className="transliteration">mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ |
-āgamāpāyino'nityāstāṃstitikṣasva bhārata ||</div>
-            <div className="meaning">
-                <div className="meaning-label">Translation</div>
-                <div className="meaning-text">Sense contacts give rise to cold and heat, pleasure and pain. They come and go, O Arjuna, they are impermanent. Bear them patiently.</div>
-            </div>
-            <div className="insight">
-                <div className="insight-label">What This Teaches</div>
-                <div className="insight-text">The verse doesn't promise that pain won't come. It doesn't say positive thinking will erase difficulty. It says: sense experiences bring both pleasure and pain, and they are temporary. You will feel things you don't want to feel. The work is not to suppress them or argue with them, but to bear them with the recognition that they will pass. The word used is titiksha, often translated as patience, but more precisely, it means endurance. Not passivity. Not resignation. Active bearing.</div>
-            </div>
-            <div className="essence">Endure life&apos;s changing experiences with patience. They are temporary.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.14"
+          sanskrit="मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥"
+          iast="mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ | āgamāpāyino'nityāstāṃstitikṣasva bhārata ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Endure life's changing experiences with patience. They are temporary."
+        />
 
         <p>
             This is radically different from the popular wisdom of anxiety management. It is not "positive affirmations." It is not "reprogramming your thoughts." It is recognizing that some discomfort is simply part of being alive, and the work is learning to not add suffering on top of the discomfort through resistance, denial, or desperation to make it stop immediately.
@@ -665,22 +557,14 @@ smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||</div>
             The next teaching defines what a mentally healthy person actually looks like. It's not someone who never feels anything. It's someone whose happiness doesn't depend on things working out perfectly.
         </p>
 
-        <div className="shloka-card">
-            <div className="verse-number">Bhagavad Gita 2.56</div>
-            <div className="sanskrit">दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः ।
-वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ॥</div>
-            <div className="transliteration">duḥkheṣvanudvignamanāḥ sukheṣu vigataspṛhaḥ |
-vītarāgabhayakrodhaḥ sthitadhīrmunirucyate ||</div>
-            <div className="meaning">
-                <div className="meaning-label">Translation</div>
-                <div className="meaning-text">One whose mind is not disturbed by suffering, who does not crave for pleasure, and who is free from attachment, fear, and anger, such a person is called a sage of steady mind.</div>
-            </div>
-            <div className="insight">
-                <div className="insight-label">What This Teaches</div>
-                <div className="insight-text">This verse contains three characteristics of the steadfast person: unshaken in suffering (which doesn't mean numb, it means present with it without panic), not desperately craving pleasure (which doesn't mean joyless, it means not grasping), and free from attachment/fear/anger. This is the Gita's portrait of genuine mental health. Not the absence of difficulty. The presence of steadiness in the face of it.</div>
-            </div>
-            <div className="essence">Steadiness in suffering, restraint in pleasure: this is the steady mind.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 2.56"
+          sanskrit="दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः । वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ॥"
+          iast="duḥkheṣvanudvignamanāḥ sukheṣu vigataspṛhaḥ | vītarāgabhayakrodhaḥ sthitadhīrmunirucyate ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Steadiness in suffering, restraint in pleasure: this is the steady mind."
+        />
 
         <p>
             Notice what the verse does not say. It does not say "a sage has no negative feelings." It does not say "a steady mind never experiences pain." It says the sage is not disturbed, not destabilized, not fragmented by the experience. The experience can be there. The mind can remain whole.
@@ -695,22 +579,14 @@ vītarāgabhayakrodhaḥ sthitadhīrmunirucyate ||</div>
             The most profound teaching about peace comes near the end of the Gita. In verses 5.21 and 5.24, Krishna describes where happiness actually exists. Most people are looking for it in the wrong place.
         </p>
 
-        <div className="shloka-card">
-            <div className="verse-number">Bhagavad Gita 5.24</div>
-            <div className="sanskrit">योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः ।
-स योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति ॥</div>
-            <div className="transliteration">yo'ntaḥsukho'ntarārāmastathāntarjyotireva yaḥ |
-sa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati ||</div>
-            <div className="meaning">
-                <div className="meaning-label">Translation</div>
-                <div className="meaning-text">One who finds happiness within, who is delighted within, who is illuminated within, that yogi attains brahma-nirvana, becoming Brahman.</div>
-            </div>
-            <div className="insight">
-                <div className="insight-label">What This Teaches</div>
-                <div className="insight-text">Three times in this verse, Krishna uses the word "antar": within, inside. The happiness you are searching for outside (in outcomes, in approval, in financial security, in the perfect relationship) is not located outside. It's located inside. The anxiety comes from looking for stability in places that are inherently unstable. Your outcomes change. Other people's approval changes. Money comes and goes. But there is something within you that is not trembling. The work is learning to locate it.</div>
-            </div>
-            <div className="essence">The happiness you seek outside is already inside. It was never anywhere else.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 5.24"
+          sanskrit="योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः । स योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति ॥"
+          iast="yo'ntaḥsukho'ntarārāmastathāntarjyotireva yaḥ | sa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="The happiness you seek outside is already inside. It was never anywhere else."
+        />
 
         <p>
             This is not naive idealism. This is not saying that external conditions don't matter. It is saying that the fundamental peace you are after (the peace that actually allows you to handle difficult circumstances) is not found by fixing all external circumstances. It's found by recognizing that there is a part of you that is not destabilized by what happens. That part is what the Gita keeps pointing toward.

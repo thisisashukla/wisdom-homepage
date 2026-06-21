@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 16 Summary – Key Verses & Meaning (Daivasura Sampad)",
@@ -139,27 +140,7 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
+
 
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
@@ -262,7 +243,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -640,65 +620,27 @@ export default function ChapterPage16() {
           Notice what unites the list. Almost every quality is either the absence of a reactivity or the presence of a quiet strength. The absence of anger. The absence of slander. The absence of pride. The presence of forgiveness, gentleness, modesty. The Gita's portrait of a noble character is not loud. It is what is not happening that defines it. The character does not need to dominate. Does not need to retaliate. Does not need to elevate itself by lowering others. The strength is interior, and it shows up externally as restraint.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 16.1–16.2</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रीभगवानुवाच<br />अभयं सत्त्वसंशुद्धिः ज्ञानयोगव्यवस्थितिः ।<br />दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम् ॥<br />अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम् ।<br />दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम् ॥
-          </div>
-          <div className="shloka-iast">
-            śrī bhagavān uvāca |<br />abhayaṃ sattva-saṃśuddhir jñāna-yoga-vyavasthitiḥ |<br />dānaṃ damaś ca yajñaś ca svādhyāyas tapa ārjavam ||<br />ahiṃsā satyam akrodhas tyāgaḥ śāntir apaiśunam |<br />dayā bhūteṣv aloluptvaṃ mārdavaṃ hrīr acāpalam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Fearlessness, purity of being, steadiness in the yoga of knowledge, generosity, self-control, sacrifice, study of sacred texts, austerity, straightforwardness, non-violence, truthfulness, freedom from anger, renunciation, inner calm, absence of slander, compassion for all beings, freedom from greed, gentleness, modesty, freedom from restlessness.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What this list quietly excludes</div>
-              <div className="shloka-insight">
-                Notice what is not on this list. There is no mention of belief. No mention of which doctrine one holds. No mention of which rituals one performs. The entire list is about character, how a person reacts when provoked, how they speak when no one is watching, how they handle ordinary daily friction. The Gita's measure of the noble life is interpersonal and interior, not creedal.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Right action starts with disciplined character."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 16.1–16.2"
+          speaker="Krishna"
+          sanskrit="श्रीभगवानुवाच अभयं सत्त्वसंशुद्धिः ज्ञानयोगव्यवस्थितिः । दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम् ॥ अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम् । दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम् ॥"
+          iast="śrī bhagavān uvāca | abhayaṃ sattva-saṃśuddhir jñāna-yoga-vyavasthitiḥ | dānaṃ damaś ca yajñaś ca svādhyāyas tapa ārjavam || ahiṃsā satyam akrodhas tyāgaḥ śāntir apaiśunam | dayā bhūteṣv aloluptvaṃ mārdavaṃ hrīr acāpalam ||"
+          meaning="Fearlessness, purity of being, steadiness in the yoga of knowledge, generosity, self-control, sacrifice, study of sacred texts, austerity, straightforwardness, non-violence, truthfulness, freedom from anger, renunciation, inner calm, absence of slander, compassion for all beings, freedom from greed, gentleness, modesty, freedom from restlessness."
+          insightLabel="What this list quietly excludes"
+          insight="Notice what is not on this list. There is no mention of belief. No mention of which doctrine one holds. No mention of which rituals one performs. The entire list is about character, how a person reacts when provoked, how they speak when no one is watching, how they handle ordinary daily friction. The Gita's measure of the noble life is interpersonal and interior, not creedal."
+          essence="Right action starts with disciplined character."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 16.3</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता ।<br />भवन्ति सम्पदं दैवीमभिजातस्य भारत ॥
-          </div>
-          <div className="shloka-iast">
-            tejaḥ kṣamā dhṛtiḥ śaucam adroho nātimānitā |<br />bhavanti sampadaṃ daivīm abhijātasya bhārata ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Splendour, forgiveness, steadiness, purity, absence of hostility, absence of pride, these belong to the one born into the divine wealth, Arjuna.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Forgiveness as splendour</div>
-              <div className="shloka-insight">
-                <em>Tejas</em> means splendour, radiance, brightness. The verse names <em>kṣamā</em> (forgiveness) right next to it. Forgiveness is not described as weakness here. It is described as a kind of inner brightness. The person who can forgive carries a quality that the unforgiving person cannot fake. The Gita is making this concrete: real splendour is not the splendour that conquers. It is the splendour that releases.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "True strength looks like forgiveness, steadiness, and no need to dominate."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 16.3"
+          speaker="Krishna"
+          sanskrit="तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता । भवन्ति सम्पदं दैवीमभिजातस्य भारत ॥"
+          iast="tejaḥ kṣamā dhṛtiḥ śaucam adroho nātimānitā | bhavanti sampadaṃ daivīm abhijātasya bhārata ||"
+          meaning="Splendour, forgiveness, steadiness, purity, absence of hostility, absence of pride, these belong to the one born into the divine wealth, Arjuna."
+          insightLabel="Forgiveness as splendour"
+          insight="Tejas means splendour, radiance, brightness. The verse names kṣamā (forgiveness) right next to it. Forgiveness is not described as weakness here. It is described as a kind of inner brightness. The person who can forgive carries a quality that the unforgiving person cannot fake. The Gita is making this concrete: real splendour is not the splendour that conquers. It is the splendour that releases."
+          essence="True strength looks like forgiveness, steadiness, and no need to dominate."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -726,35 +668,16 @@ export default function ChapterPage16() {
           Why does he say this? Because the chapter could easily produce despair. The list of demonic qualities is severe. Any honest reader will recognize at least some of those qualities in themselves. Verse 16.5 is the chapter's pre-emptive consolation. The orientations described are not fixed identities. They are tendencies, and tendencies can be cultivated or starved. The verse is telling Arjuna, you are not condemned by what you currently are. You are inclined toward the opening qualities. The work of the chapter, and the life, is to cultivate those further.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 16.5</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता ।<br />मा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव ॥
-          </div>
-          <div className="shloka-iast">
-            daivī sampad vimokṣāya nibandhāyāsurī matā |<br />mā śucaḥ sampadaṃ daivīm abhijāto'si pāṇḍava ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The divine wealth leads to liberation; the demonic to bondage. Do not grieve, Arjuna, you are born into the divine wealth.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why this verse cannot be skipped</div>
-              <div className="shloka-insight">
-                The chapter is going to spend the next ten verses describing the closing qualities, and the descriptions are unflattering. Without 16.5 as the frame, the descriptions would be discouraging. With 16.5 as the frame, they become a map of what to subtract. The verse is the Gita's psychological insurance, do not lose heart while you read what follows; the orientation you have can be deepened, and you are already pointed the right way.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Freedom grows from one kind of character; bondage grows from another."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 16.5"
+          speaker="Krishna"
+          sanskrit="दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता । मा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव ॥"
+          iast="daivī sampad vimokṣāya nibandhāyāsurī matā | mā śucaḥ sampadaṃ daivīm abhijāto'si pāṇḍava ||"
+          meaning="The divine wealth leads to liberation; the demonic to bondage. Do not grieve, Arjuna, you are born into the divine wealth."
+          insightLabel="Why this verse cannot be skipped"
+          insight="The chapter is going to spend the next ten verses describing the closing qualities, and the descriptions are unflattering. Without 16.5 as the frame, the descriptions would be discouraging. With 16.5 as the frame, they become a map of what to subtract. The verse is the Gita's psychological insurance, do not lose heart while you read what follows; the orientation you have can be deepened, and you are already pointed the right way."
+          essence="Freedom grows from one kind of character; bondage grows from another."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -775,35 +698,16 @@ export default function ChapterPage16() {
           This is the Gita's most subtle point about ethical failure. The failure is not heroic, not Faustian, not dramatic. It is more boring. It is the slow loss of the ability to tell good from bad, important from trivial, kindness from cruelty. Once that capacity is dulled, by years of small compromises, by surrounding yourself with the wrong inputs, by repeated dishonesty, the rest of the noble life becomes impossible because the steering mechanism is no longer functional. The chapter is saying: protect discernment. It is the gear that drives everything else.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 16.7</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            प्रवृत्तिं च निवृत्तिं च जना न विदुरासुराः ।<br />न शौचं नापि चाचारो न सत्यं तेषु विद्यते ॥
-          </div>
-          <div className="shloka-iast">
-            pravṛttiṃ ca nivṛttiṃ ca janā na vidur āsurāḥ |<br />na śaucaṃ nāpi cācāro na satyaṃ teṣu vidyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Those of a shadowed nature do not know what should be pursued and what should be withdrawn from. In them, there is no purity, no noble conduct, no truthfulness.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Discernment is the master quality</div>
-              <div className="shloka-insight">
-                Lose this one, and the rest collapse. Most ethical lapses are not failures of strength; they are failures of seeing. The person making the wrong choice has, often, already misperceived the situation. The Gita identifies the root: train the ability to distinguish, and most other ethical training takes care of itself.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Without discernment, conduct collapses and truth disappears."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 16.7"
+          speaker="Krishna"
+          sanskrit="प्रवृत्तिं च निवृत्तिं च जना न विदुरासुराः । न शौचं नापि चाचारो न सत्यं तेषु विद्यते ॥"
+          iast="pravṛttiṃ ca nivṛttiṃ ca janā na vidur āsurāḥ | na śaucaṃ nāpi cācāro na satyaṃ teṣu vidyate ||"
+          meaning="Those of a shadowed nature do not know what should be pursued and what should be withdrawn from. In them, there is no purity, no noble conduct, no truthfulness."
+          insightLabel="Discernment is the master quality"
+          insight="Lose this one, and the rest collapse. Most ethical lapses are not failures of strength; they are failures of seeing. The person making the wrong choice has, often, already misperceived the situation. The Gita identifies the root: train the ability to distinguish, and most other ethical training takes care of itself."
+          essence="Without discernment, conduct collapses and truth disappears."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -824,65 +728,27 @@ export default function ChapterPage16() {
           By verse 16.16 the spiral is complete. Many conflicting desires shake the mind. Confusion sets in like a net. Pleasures grip without releasing. And the person falls into a state the Gita calls a lower realm of misery. Note what the verses do not say. They do not say the person is punished by an external power for being bad. They say the spiral is self-generating. Each desire fed produces more desire. Each pleasure grasped produces more grasping. The lower realm is not a sentence handed down. It is the natural result of the unchecked spiral.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 16.10</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            काममाश्रित्य दुष्पूरं दम्भमानमदान्विताः ।<br />मोहाद्गृहीत्वासद्ग्राहान्प्रवर्तन्तेऽशुचिव्रताः ॥
-          </div>
-          <div className="shloka-iast">
-            kāmam āśritya duṣpūraṃ dambha-māna-madānvitāḥ |<br />mohād gṛhītvāsad-grāhān pravartante'śuci-vratāḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Taking refuge in desire that cannot be filled, full of hypocrisy, pride, and intoxication, they wander under delusion, clinging to false notions and impure practices.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The Sanskrit word that anchors the verse</div>
-              <div className="shloka-insight">
-                <em>Duṣpūram</em>: that which cannot be filled. The defining feature of the orientation is not the wanting itself. It is the structural impossibility of satisfaction. The wanting renews faster than it can be met. Anyone who has chased a goal only to discover, on reaching it, that the goal had moved, knows this verse from inside.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Endless wanting turns the mind into a home for delusion."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 16.10"
+          speaker="Krishna"
+          sanskrit="काममाश्रित्य दुष्पूरं दम्भमानमदान्विताः । मोहाद्गृहीत्वासद्ग्राहान्प्रवर्तन्तेऽशुचिव्रताः ॥"
+          iast="kāmam āśritya duṣpūraṃ dambha-māna-madānvitāḥ | mohād gṛhītvāsad-grāhān pravartante'śuci-vratāḥ ||"
+          meaning="Taking refuge in desire that cannot be filled, full of hypocrisy, pride, and intoxication, they wander under delusion, clinging to false notions and impure practices."
+          insightLabel="The Sanskrit word that anchors the verse"
+          insight="Duṣpūram: that which cannot be filled. The defining feature of the orientation is not the wanting itself. It is the structural impossibility of satisfaction. The wanting renews faster than it can be met. Anyone who has chased a goal only to discover, on reaching it, that the goal had moved, knows this verse from inside."
+          essence="Endless wanting turns the mind into a home for delusion."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 16.16</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अनेकचित्तविभ्रान्ता मोहजालसमावृताः ।<br />प्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ ॥
-          </div>
-          <div className="shloka-iast">
-            aneka-citta-vibhrāntā moha-jāla-samāvṛtāḥ |<br />prasaktāḥ kāma-bhogeṣu patanti narake'śucau ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Shaken by many conflicting thoughts, wrapped in the net of confusion, attached to the enjoyment of desires, they fall into an impure lower realm.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The mechanism is self-generated</div>
-              <div className="shloka-insight">
-                The falling is not imposed from above. The verse describes the falling as the natural consequence of attachment to desires that cannot be filled. The Gita does not need a punishing deity to explain misery. The misery is the spiral, running on the fuel the person keeps feeding it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Desire scatters the mind, and confusion turns that scattering into a fall."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 16.16"
+          speaker="Krishna"
+          sanskrit="अनेकचित्तविभ्रान्ता मोहजालसमावृताः । प्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ ॥"
+          iast="aneka-citta-vibhrāntā moha-jāla-samāvṛtāḥ | prasaktāḥ kāma-bhogeṣu patanti narake'śucau ||"
+          meaning="Shaken by many conflicting thoughts, wrapped in the net of confusion, attached to the enjoyment of desires, they fall into an impure lower realm."
+          insightLabel="The mechanism is self-generated"
+          insight="The falling is not imposed from above. The verse describes the falling as the natural consequence of attachment to desires that cannot be filled. The Gita does not need a punishing deity to explain misery. The misery is the spiral, running on the fuel the person keeps feeding it."
+          essence="Desire scatters the mind, and confusion turns that scattering into a fall."
+        />
 
         <div className="highlight-box">
           <p>
@@ -909,35 +775,16 @@ export default function ChapterPage16() {
           Read carefully, this is the chapter's deepest tragedy. The ego does not just suffer; it specifically attacks the source it cannot live without. Every act of arrogance toward another person is an attack on the Divine present in that person. Every act of self-aggrandisement is a betrayal of the Divine present in oneself. The ego, in this account, is at war with its own life-support. The verse names the absurdity of this without rancor, just precision. You cannot win this fight, because you are fighting the thing keeping you alive.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 16.18</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अहङ्कारं बलं दर्पं कामं क्रोधं च संश्रिताः ।<br />मामात्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयकाः ॥
-          </div>
-          <div className="shloka-iast">
-            ahaṅkāraṃ balaṃ darpaṃ kāmaṃ krodhaṃ ca saṃśritāḥ |<br />mām ātma-para-deheṣu pradviṣanto'bhyasūyakāḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Taking refuge in ego, force, arrogance, desire, and anger, they hate me, who dwells in their own body and in the bodies of others, and they find fault with my qualities.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The structural absurdity</div>
-              <div className="shloka-insight">
-                The ego is at war with the very ground it stands on. The verse is not a moralism. It is an observation about why ego-driven life feels so unsettled, you cannot relax in a place where you are simultaneously fighting the floor.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Ego makes you fight the divine presence you carry yourself."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 16.18"
+          speaker="Krishna"
+          sanskrit="अहङ्कारं बलं दर्पं कामं क्रोधं च संश्रिताः । मामात्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयकाः ॥"
+          iast="ahaṅkāraṃ balaṃ darpaṃ kāmaṃ krodhaṃ ca saṃśritāḥ | mām ātma-para-deheṣu pradviṣanto'bhyasūyakāḥ ||"
+          meaning="Taking refuge in ego, force, arrogance, desire, and anger, they hate me, who dwells in their own body and in the bodies of others, and they find fault with my qualities."
+          insightLabel="The structural absurdity"
+          insight="The ego is at war with the very ground it stands on. The verse is not a moralism. It is an observation about why ego-driven life feels so unsettled, you cannot relax in a place where you are simultaneously fighting the floor."
+          essence="Ego makes you fight the divine presence you carry yourself."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -958,35 +805,16 @@ export default function ChapterPage16() {
           Notice the structure. The list of opening qualities at the start of the chapter was long, twenty-six items. The list of closing forces, in the climactic prescription, is short, just three. The asymmetry matters. To open a life requires the slow cultivation of many qualities. To close a life requires only three persistent ones. And therefore, conversely, to free a life requires not the cultivation of twenty-six things but the careful dropping of three. The Gita is offering a focused diagnostic: if you cannot work on the whole list of qualities, at least work on these three. Drop desire that can never be filled. Drop the anger that flares when desire is blocked. Drop the greed that wants more even when you already have enough. The three are linked. Dropping any one weakens the other two.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 16.21</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः ।<br />कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत् ॥
-          </div>
-          <div className="shloka-iast">
-            tri-vidhaṃ narakasyedaṃ dvāraṃ nāśanam ātmanaḥ |<br />kāmaḥ krodhas tathā lobhas tasmād etat trayaṃ tyajet ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Three are the gates of ruin, the destroyers of the self: desire, anger, and greed. Therefore, abandon these three.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The cleanest prescription in the Gita</div>
-              <div className="shloka-insight">
-                Three words. <em>Kāma. Krodha. Lobha</em>. Desire that cannot be filled. Anger when the desire is blocked. Greed that wants more even after the desire is met. They form a single mechanism. Dropping any one starves the other two. The verse is the chapter's most actionable line, and one of the Gita's most actionable lines overall.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Three inner forces open the way to ruin; dropping them protects the self."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 16.21"
+          speaker="Krishna"
+          sanskrit="त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः । कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत् ॥"
+          iast="tri-vidhaṃ narakasyedaṃ dvāraṃ nāśanam ātmanaḥ | kāmaḥ krodhas tathā lobhas tasmād etat trayaṃ tyajet ||"
+          meaning="Three are the gates of ruin, the destroyers of the self: desire, anger, and greed. Therefore, abandon these three."
+          insightLabel="The cleanest prescription in the Gita"
+          insight="Three words. Kāma. Krodha. Lobha. Desire that cannot be filled. Anger when the desire is blocked. Greed that wants more even after the desire is met. They form a single mechanism. Dropping any one starves the other two. The verse is the chapter's most actionable line, and one of the Gita's most actionable lines overall."
+          essence="Three inner forces open the way to ruin; dropping them protects the self."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -1014,35 +842,16 @@ export default function ChapterPage16() {
           Modern readers sometimes balk at the appeal to scripture as the standard. But read the verse generously. The Gita is not saying you should suspend judgment and obey a text. It is saying that your impulse, by itself, is not enough, because the impulse is precisely what the previous twenty verses described as captured. You need a reference point outside the captured system. The tradition is one such reference point. So is a wise teacher. So is your own deepest values, articulated when you were not in the grip of the impulse. The point is structural. Impulse is not the highest authority on what to do. Something steadier has to be.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 16.24</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ ।<br />ज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि ॥
-          </div>
-          <div className="shloka-iast">
-            tasmāc chāstraṃ pramāṇaṃ te kāryākārya-vyavasthitau |<br />jñātvā śāstra-vidhānoktaṃ karma kartum ihārhasi ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Therefore, let the sacred teaching be your standard in deciding what should be done and what should not. Knowing what is prescribed in that teaching, perform your action here.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why impulse is not enough</div>
-              <div className="shloka-insight">
-                If impulse were a reliable guide, the previous twenty verses would not have been necessary. The chapter has just described, in detail, what happens to a life governed by impulse, the spiral of insatiable desire, the loss of discernment, the captured ego. The standard the verse names is not authoritarian. It is, simply, something steadier than the impulse, anything that points you back to the qualities the chapter opened with.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Impulse cannot judge action; a higher standard must."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 16.24"
+          speaker="Krishna"
+          sanskrit="तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ । ज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि ॥"
+          iast="tasmāc chāstraṃ pramāṇaṃ te kāryākārya-vyavasthitau | jñātvā śāstra-vidhānoktaṃ karma kartum ihārhasi ||"
+          meaning="Therefore, let the sacred teaching be your standard in deciding what should be done and what should not. Knowing what is prescribed in that teaching, perform your action here."
+          insightLabel="Why impulse is not enough"
+          insight="If impulse were a reliable guide, the previous twenty verses would not have been necessary. The chapter has just described, in detail, what happens to a life governed by impulse, the spiral of insatiable desire, the loss of discernment, the captured ego. The standard the verse names is not authoritarian. It is, simply, something steadier than the impulse, anything that points you back to the qualities the chapter opened with."
+          essence="Impulse cannot judge action; a higher standard must."
+        />
 
         <div className="highlight-box">
           <p>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 17 Summary – Key Verses & Meaning (Shraddhatraya Yoga)",
@@ -139,28 +140,6 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
-
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
@@ -262,7 +241,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -694,24 +672,12 @@ export default function ChapterPage17() {
           Then verse 17.3 lands one of the strongest sentences in the Gita. <em>Śraddhā-mayo'yaṃ puruṣaḥ</em>. The person is made of trust. And then: <em>yo yac-chraddhaḥ sa eva saḥ</em>. Whatever a person trusts, that is what they become. The sentence does not say a person <em>has</em> trust. It says a person <em>is</em> trust, specifically the trust they have placed somewhere. Change the placement, change the person. This is the chapter's whole argument, condensed into eight Sanskrit syllables.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 17.3</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत ।<br />श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः ॥
-          </div>
-          <div className="shloka-iast">
-            sattvānurūpā sarvasya śraddhā bhavati bhārata |<br />śraddhā-mayo'yaṃ puruṣo yo yac-chraddhaḥ sa eva saḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Each person's trust matches their inner nature, Arjuna. A person is made of trust, whatever one trusts, that is what one becomes.
-              </div>
-            </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 17.3"
+          speaker="Krishna"
+          sanskrit="सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत । श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः ॥"
+          iast="sattvānurūpā sarvasya śraddhā bhavati bhārata | śraddhā-mayo'yaṃ puruṣo yo yac-chraddhaḥ sa eva saḥ ||"
+        />
             <div>
               <div className="shloka-col-label">The most condensed psychology in the Gita</div>
               <div className="shloka-insight">
@@ -750,35 +716,13 @@ export default function ChapterPage17() {
           The list is one of the most concrete passages in any spiritual text. Modern readers sometimes find it surprising. We expect spiritual literature to discuss meditation and prayer. The Gita discusses meals. Why? Because the chapter's basic claim is that there is no separation between ordinary life and inner life. The food you choose is not a separate question from the trust you live by. It is the same question, expressed at the level of the plate. What you reach for when you are hungry shows what your nervous system has come to rely on. The Gita is saying you can read your own state by what you eat.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 17.8</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः ।<br />रस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः ॥
-          </div>
-          <div className="shloka-iast">
-            āyuḥ-sattva-balārogya-sukha-prīti-vivardhanāḥ |<br />rasyāḥ snigdhāḥ sthirā hṛdyā āhārāḥ sāttvika-priyāḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Foods that increase longevity, clarity, strength, health, ease, and warmth, that are tasty, smooth, substantial, and heart-pleasing, are dear to the sattvic person.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The body as inner diagnostic</div>
-              <div className="shloka-insight">
-                Whether you take this verse as dietary advice or as a metaphor, the structural claim holds. What sustains a body well sustains an inner life well. The two are not separable. The Gita is not asking you to renounce the plate. It is asking you to notice what your plate is voting for.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Wholesome food quietly builds the conditions for a steadier life."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 17.8"
+          speaker="Krishna"
+          sanskrit="आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः । रस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः ॥"
+          iast="āyuḥ-sattva-balārogya-sukha-prīti-vivardhanāḥ | rasyāḥ snigdhāḥ sthirā hṛdyā āhārāḥ sāttvika-priyāḥ ||"
+          essence="Wholesome food quietly builds the conditions for a steadier life."
+        />
 
         <div className="highlight-box">
           <p>
@@ -805,35 +749,13 @@ export default function ChapterPage17() {
           What makes this typology useful is its sequence. The Gita is not telling you to fix the inner life first. It is telling you that the three are linked, and that disciplines in any one can affect the other two. If you cannot yet quiet the mind, work on the speech. If you cannot yet train the speech, work on the body. Each circle supports the others. This is why traditional disciplines often begin with bodily practices, they are the easiest to grip, and they prepare conditions for the subtler work to become possible.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 17.16</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            मनःप्रसादः सौम्यत्वं मौनमात्मविनिग्रहः ।<br />भावसंशुद्धिरित्येतत्तपो मानसमुच्यते ॥
-          </div>
-          <div className="shloka-iast">
-            manaḥ-prasādaḥ saumyatvaṃ maunam ātma-vinigrahaḥ |<br />bhāva-saṃśuddhir ity etat tapo mānasam ucyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Serenity of mind, gentleness, silence, self-control, and purity of feeling, this is called the austerity of the mind.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why "austerity of mind" is the hardest</div>
-              <div className="shloka-insight">
-                The list is short, but each item is difficult. Serenity. Gentleness. Silence. Self-control. Purity of feeling. None of these can be performed for an audience. They are entirely interior. The Gita is naming the most demanding work of all, the slow training of how the mind moves when no one is watching it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "A trained mind is its own austerity."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 17.16"
+          speaker="Krishna"
+          sanskrit="मनःप्रसादः सौम्यत्वं मौनमात्मविनिग्रहः । भावसंशुद्धिरित्येतत्तपो मानसमुच्यते ॥"
+          iast="manaḥ-prasādaḥ saumyatvaṃ maunam ātma-vinigrahaḥ | bhāva-saṃśuddhir ity etat tapo mānasam ucyate ||"
+          essence="A trained mind is its own austerity."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -854,35 +776,13 @@ export default function ChapterPage17() {
           What is striking about this verse is the priority order. <em>Anudvega-karam</em> comes first. Before truthful. Before pleasant. Before beneficial. The standard is that the speech does not agitate. This is not a suggestion to avoid hard truths. It is a suggestion that hard truths should be delivered without producing unnecessary disturbance. The Gita is asking for the rare combination of honesty and care. Most speech is honest and careless. Some speech is careful and dishonest. The Gita's standard for austere speech is both at once.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 17.15</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् ।<br />स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥
-          </div>
-          <div className="shloka-iast">
-            anudvega-karaṃ vākyaṃ satyaṃ priya-hitaṃ ca yat |<br />svādhyāyābhyasanaṃ caiva vāṅmayaṃ tapa ucyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Speech that does not agitate, that is truthful, pleasant, and beneficial, together with study and practice of the sacred, this is called the austerity of speech.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The four-fold test of speech</div>
-              <div className="shloka-insight">
-                Before you speak, four questions: does this need to be said? Is it true? Is it kind? Is it useful? Most disciplines ask one or two. The Gita is asking all four, with the first having priority. Truthful speech that is unnecessarily agitating does not count as austere. The verse is one of the most precise communication ethics in any text.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Speech becomes discipline when it tells the truth without creating harm."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 17.15"
+          speaker="Krishna"
+          sanskrit="अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥"
+          iast="anudvega-karaṃ vākyaṃ satyaṃ priya-hitaṃ ca yat | svādhyāyābhyasanaṃ caiva vāṅmayaṃ tapa ucyate ||"
+          essence="Speech becomes discipline when it tells the truth without creating harm."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -910,35 +810,16 @@ export default function ChapterPage17() {
           What is striking is that the quality of the gift is determined by the inner state of the giver, not by the magnitude of the object. A small gift given with the right feeling outranks a large gift given for the wrong reasons. This is the Gita's consistent message about action, the outer act is the surface; the underlying motive is the substance. The same charity, performed by two different people, can produce two entirely different effects in the giver, because what the giver is becoming through the act depends on the trust underneath it.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 17.20</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            दातव्यमिति यद्दानं दीयतेऽनुपकारिणे ।<br />देशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम् ॥
-          </div>
-          <div className="shloka-iast">
-            dātavyam iti yad dānaṃ dīyate'nupakāriṇe |<br />deśe kāle ca pātre ca tad dānaṃ sāttvikaṃ smṛtam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                A gift given with the conviction that giving is right, to one who cannot return the gift, in the right place, at the right time, to a worthy recipient, that is called sattvic giving.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The strangest phrase in the verse</div>
-              <div className="shloka-insight">
-                <em>Anupakāriṇe</em>: to one who cannot return the gift. The Gita is explicit that the purest form of giving is the one that has no possibility of reciprocation. The moment reciprocation enters, the gift becomes a transaction. Most modern "giving" is actually exchange, dressed up. The Gita is naming what genuine giving looks like, and how rarely it happens.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Giving becomes pure when nothing is being bought in return."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 17.20"
+          speaker="Krishna"
+          sanskrit="दातव्यमिति यद्दानं दीयतेऽनुपकारिणे । देशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम् ॥"
+          iast="dātavyam iti yad dānaṃ dīyate'nupakāriṇe | deśe kāle ca pātre ca tad dānaṃ sāttvikaṃ smṛtam ||"
+          meaning="A gift given with the conviction that giving is right, to one who cannot return the gift, in the right place, at the right time, to a worthy recipient, that is called sattvic giving."
+          insightLabel="The strangest phrase in the verse"
+          insight="Anupakāriṇe: to one who cannot return the gift. The Gita is explicit that the purest form of giving is the one that has no possibility of reciprocation. The moment reciprocation enters, the gift becomes a transaction. Most modern \"giving\" is actually exchange, dressed up. The Gita is naming what genuine giving looks like, and how rarely it happens."
+          essence="Giving becomes pure when nothing is being bought in return."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -959,35 +840,16 @@ export default function ChapterPage17() {
           Why does the naming matter? Because action without naming reverts to ego. The naming is the explicit handing-over. <em>Oṃ</em> begins the act. <em>Tat</em> directs it. <em>Sat</em> grounds it in what is real. The chapter is making the same point as Chapter 9: every action becomes complete when it is offered. Chapter 17 is just adding the technical detail of how the offering happens linguistically. Even a small offering, performed with the right naming, becomes a sacred act. A large offering, performed without the naming, remains a personal transaction.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 17.23</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            ॐ तत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः ।<br />ब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा ॥
-          </div>
-          <div className="shloka-iast">
-            oṃ tat sad iti nirdeśo brahmaṇas tri-vidhaḥ smṛtaḥ |<br />brāhmaṇās tena vedāś ca yajñāś ca vihitāḥ purā ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Om, Tat, Sat, these are the three names by which the supreme reality is designated. By that, the brāhmaṇas, the Vedas, and the sacrifices were established at the very beginning.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why the naming changes the action</div>
-              <div className="shloka-insight">
-                An action performed without naming what it is for stays personal. The same action performed with the explicit reorientation toward something larger becomes sacred. The naming is not magic. It is structural, it tells your own mind where the offering is being placed, and the mind responds to that placement.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Sacred action matters because it points beyond itself to what is real."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 17.23"
+          speaker="Krishna"
+          sanskrit="ॐ तत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः । ब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा ॥"
+          iast="oṃ tat sad iti nirdeśo brahmaṇas tri-vidhaḥ smṛtaḥ | brāhmaṇās tena vedāś ca yajñāś ca vihitāḥ purā ||"
+          meaning="Om, Tat, Sat, these are the three names by which the supreme reality is designated. By that, the brāhmaṇas, the Vedas, and the sacrifices were established at the very beginning."
+          insightLabel="Why the naming changes the action"
+          insight="An action performed without naming what it is for stays personal. The same action performed with the explicit reorientation toward something larger becomes sacred. The naming is not magic. It is structural, it tells your own mind where the offering is being placed, and the mind responds to that placement."
+          essence="Sacred action matters because it points beyond itself to what is real."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -1008,35 +870,16 @@ export default function ChapterPage17() {
           Read carefully, this is not pessimism. It is calibration. The Gita is making the same point that contemporary psychology calls intrinsic motivation. Action performed because you authentically believe in it operates differently from action performed because you were told to. The first transforms the actor; the second leaves them roughly where they were. <em>Aśraddhayā hutaṃ</em> (offered without trust) is the form of the second. The chapter ends by warning against the most common form of religious failure: performing the actions and not believing in them. Performing without trust, the chapter says, produces no real fruit. The action was technically done. The actor did not change.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 17.28</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत् ।<br />असदित्युच्यते पार्थ न च तत्प्रेत्य नो इह ॥
-          </div>
-          <div className="shloka-iast">
-            aśraddhayā hutaṃ dattaṃ tapas taptaṃ kṛtaṃ ca yat |<br />asad ity ucyate pārtha na ca tat pretya no iha ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Whatever is offered, given, or done as austerity, performed without trust, is called unreal, Arjuna. It bears no fruit, neither here nor hereafter.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why trust is non-negotiable</div>
-              <div className="shloka-insight">
-                The Gita is not saying you have to have certainty before you can act. It is saying you have to be acting from something you actually believe in, rather than from social pressure or mechanical obligation. Going through the motions does not, in this account, count as the motions. The chapter ends by closing the loop: you become what you trust, so action without trust transforms nothing.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Trust is what makes action real; without it, effort becomes empty."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 17.28"
+          speaker="Krishna"
+          sanskrit="अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत् । असदित्युच्यते पार्थ न च तत्प्रेत्य नो इह ॥"
+          iast="aśraddhayā hutaṃ dattaṃ tapas taptaṃ kṛtaṃ ca yat | asad ity ucyate pārtha na ca tat pretya no iha ||"
+          meaning="Whatever is offered, given, or done as austerity, performed without trust, is called unreal, Arjuna. It bears no fruit, neither here nor hereafter."
+          insightLabel="Why trust is non-negotiable"
+          insight="The Gita is not saying you have to have certainty before you can act. It is saying you have to be acting from something you actually believe in, rather than from social pressure or mechanical obligation. Going through the motions does not, in this account, count as the motions. The chapter ends by closing the loop: you become what you trust, so action without trust transforms nothing."
+          essence="Trust is what makes action real; without it, effort becomes empty."
+        />
 
         <div className="highlight-box">
           <p>

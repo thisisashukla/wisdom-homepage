@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 1 Summary \u2013 Key Verses & Meaning (Arjuna Vishada Yoga)",
@@ -238,52 +239,6 @@ const pageCSS = `
       .toc-list a:hover { color: var(--gold-light); }
 
       /* ── SHLOKA CARD ── */
-      .shloka-card {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        overflow: hidden;
-        margin: 36px 0;
-      }
-      .shloka-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 12px 22px;
-        border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05);
-      }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit {
-        padding: 24px 22px 16px;
-        font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px;
-        line-height: 1.75;
-        color: var(--gold-light);
-        border-bottom: 1px solid var(--border);
-      }
-      .shloka-iast {
-        padding: 12px 22px 16px;
-        font-size: 12.5px;
-        line-height: 1.7;
-        color: var(--text-dimmer);
-        border-bottom: 1px solid var(--border);
-        font-style: italic;
-      }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence {
-        padding: 14px 22px;
-        background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border);
-        font-family: "Playfair Display", serif;
-        font-style: italic;
-        font-size: 15px;
-        color: var(--text-dim);
-      }
 
       /* ── PULL QUOTE ── */
       .pull-quote {
@@ -572,7 +527,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -881,42 +835,16 @@ export default function ChapterOnePage() {
         <p>Listen carefully to how he asks it.</p>
 
         {/* SHLOKA 1.1 */}
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 1.1</span>
-            <span className="shloka-speaker">Speaker: Dhritarashtra</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            धृतराष्ट्र उवाच<br />धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः ।<br />मामकाः
-            पाण्डवाश्चैव किमकुर्वत सञ्जय ॥
-          </div>
-          <div className="shloka-iast">
-            dhṛtarāṣṭra uvāca<br />dharmakṣetre kurukṣetre samavetā yuyutsavaḥ
-            |<br />māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Dhritarashtra said: O Sanjaya, after assembling on the holy
-                field of Kurukshetra, eager to fight, what did
-                <em>mine</em> and Pandu's sons do?
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What it reveals</div>
-              <div className="shloka-insight">
-                The Gita's first sentence already contains the war's root cause.
-                "Mine" (māmakāḥ). Not "the armies." Not "the warriors." Mine and
-                theirs. The blind king has already sorted the world into us and
-                them before anything has happened.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Our perspective is shaped by our attachments and fears."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 1.1"
+          speaker="Dhritarashtra"
+          sanskrit="धृतराष्ट्र उवाच धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥"
+          iast="dhṛtarāṣṭra uvāca dharmakṣetre kurukṣetre samavetā yuyutsavaḥ | māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya ||"
+          meaning="Dhritarashtra said: O Sanjaya, after assembling on the holy field of Kurukshetra, eager to fight, what did mine and Pandu's sons do?"
+          insightLabel="What it reveals"
+          insight="The Gita's first sentence already contains the war's root cause. \"Mine\" (māmakāḥ). Not \"the armies.\" Not \"the warriors.\" Mine and theirs. The blind king has already sorted the world into us and them before anything has happened."
+          essence="Our perspective is shaped by our attachments and fears."
+        />
 
         <p>
           The word <em>māmakāḥ</em> is important. Dhritarashtra doesn't call
@@ -992,43 +920,15 @@ export default function ChapterOnePage() {
           flag of Hanuman, a symbol of devotion and strength, raises his bow.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 1.20</span>
-            <span className="shloka-speaker">Narrator: Sanjaya</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अथ व्यवस्थितान् दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः ।<br />प्रवृत्ते
-            शस्त्रसंपाते धनुरुद्यम्य पाण्डवः ॥
-          </div>
-          <div className="shloka-iast">
-            atha vyavasthitān dṛṣṭvā dhārtarāṣṭrānkapidhvajaḥ |<br />pravṛtte
-            śastrasaṃpāte dhanurudyamya pāṇḍavaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Seeing the sons of Dhritarashtra arranged and ready for battle,
-                as the weapons were about to clash, Arjuna, the son of Pandu,
-                whose chariot bore the monkey banner, lifted his bow.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The pivot</div>
-              <div className="shloka-insight">
-                This is the last moment before everything changes. The bow is
-                lifted, but what follows in verses 21–23 is Arjuna asking
-                Krishna to stop the chariot so he can look. This is not
-                weakness. It is, in fact, his most warrior-like act: pausing
-                before the irrevocable.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Pause and ready yourself before facing life's great challenges."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 1.20"
+          sanskrit="अथ व्यवस्थितान् दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः । प्रवृत्ते शस्त्रसंपाते धनुरुद्यम्य पाण्डवः ॥"
+          iast="atha vyavasthitān dṛṣṭvā dhārtarāṣṭrānkapidhvajaḥ | pravṛtte śastrasaṃpāte dhanurudyamya pāṇḍavaḥ ||"
+          meaning="Seeing the sons of Dhritarashtra arranged and ready for battle, as the weapons were about to clash, Arjuna, the son of Pandu, whose chariot bore the monkey banner, lifted his bow."
+          insightLabel="The pivot"
+          insight="This is the last moment before everything changes. The bow is lifted, but what follows in verses 21–23 is Arjuna asking Krishna to stop the chariot so he can look. This is not weakness. It is, in fact, his most warrior-like act: pausing before the irrevocable."
+          essence="Pause and ready yourself before facing life's great challenges."
+        />
 
         <p>
           In verses 21–23, Arjuna asks Krishna to position their chariot between
@@ -1049,47 +949,15 @@ export default function ChapterOnePage() {
 
         <p>Arjuna doesn't see an army. He sees people.</p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 1.26–1.27</span>
-            <span className="shloka-speaker">Narrator: Sanjaya</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            तत्रापश्यत्स्थितान्पार्थः पितृ़नथ पितामहान् ।<br />आचार्यान्मातुलान्भ्रातृ़न्पुत्रान्पौत्रान्सखींस्तथा
-            ॥<br /><br />श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि ।<br />तान्समीक्ष्य स
-            कौन्तेयः सर्वान्बन्धूनवस्थितान् ॥
-          </div>
-          <div className="shloka-iast">
-            tatrāpaśyatsthitānpārthaḥ pitṛ̈natha pitāmahān |<br />ācāryānmātulānbhrātṛ̈nputrānpautrānsakhīṃstathā
-            ||<br /><br />śvaśurānsuhṛdaścaiva senayorubhayorapi |<br />tānsamīkṣya
-            sa kaunteyaḥ sarvānbandhūnavasthitān ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                There Arjuna saw, standing in both armies: fathers,
-                grandfathers, teachers, maternal uncles, brothers, sons,
-                grandsons, friends, fathers-in-law, and well-wishers. Seeing all
-                these relatives arrayed on both sides, the son of Kunti was
-                overwhelmed with great compassion.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The human moment</div>
-              <div className="shloka-insight">
-                The list is precise and personal. Not "the enemy", fathers,
-                grandfathers, teachers. The Gita is describing what it looks
-                like when abstract conflict becomes concrete and personal. This
-                is not cowardice. This is recognition.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Recognize the humanity in every conflict; behind every role is a
-            relationship."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 1.26–1.27"
+          sanskrit="तत्रापश्यत्स्थितान्पार्थः पितृ़नथ पितामहान् । आचार्यान्मातुलान्भ्रातृ़न्पुत्रान्पौत्रान्सखींस्तथा ॥ श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि । तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान् ॥"
+          iast="tatrāpaśyatsthitānpārthaḥ pitṛ̈natha pitāmahān | ācāryānmātulānbhrātṛ̈nputrānpautrānsakhīṃstathā || śvaśurānsuhṛdaścaiva senayorubhayorapi | tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān ||"
+          meaning="There Arjuna saw, standing in both armies: fathers, grandfathers, teachers, maternal uncles, brothers, sons, grandsons, friends, fathers-in-law, and well-wishers. Seeing all these relatives arrayed on both sides, the son of Kunti was overwhelmed with great compassion."
+          insightLabel="The human moment"
+          insight="The list is precise and personal. Not \"the enemy\", fathers, grandfathers, teachers. The Gita is describing what it looks like when abstract conflict becomes concrete and personal. This is not cowardice. This is recognition."
+          essence="Recognize the humanity in every conflict; behind every role is a relationship."
+        />
 
         <p>
           What collapses Arjuna is not fear of dying. He has faced death before.
@@ -1126,79 +994,27 @@ export default function ChapterOnePage() {
 
         <p>Arjuna doesn't philosophize first. His body responds first.</p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 1.29</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            सीदन्ति मम गात्राणि मुखं च परिशुष्यति ।<br />वेपथुश्च शरीरे मे
-            रोमहर्षश्च जायते ॥
-          </div>
-          <div className="shloka-iast">
-            sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati |<br />vepathuśca śarīre
-            me romaharṣaśca jāyate ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                My limbs give way and fail. My mouth is drying up. My body
-                trembles. My hair stands on end.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Clinical precision</div>
-              <div className="shloka-insight">
-                What the Gita describes here is physiologically accurate:
-                vasoconstriction causes skin-crawling sensations, adrenaline
-                causes trembling, saliva production drops. This is an acute
-                stress response, documented with precision 5,000 years before
-                we named it.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Even the strongest can feel afraid, acknowledge your emotions with
-            honesty."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 1.29"
+          speaker="Arjuna"
+          sanskrit="सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥"
+          iast="sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati | vepathuśca śarīre me romaharṣaśca jāyate ||"
+          meaning="My limbs give way and fail. My mouth is drying up. My body trembles. My hair stands on end."
+          insightLabel="Clinical precision"
+          insight="What the Gita describes here is physiologically accurate: vasoconstriction causes skin-crawling sensations, adrenaline causes trembling, saliva production drops. This is an acute stress response, documented with precision 5,000 years before we named it."
+          essence="Even the strongest can feel afraid, acknowledge your emotions with honesty."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 1.30</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते ।<br />न च
-            शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥
-          </div>
-          <div className="shloka-iast">
-            gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate |<br />na ca
-            śaknomyavasthātuṃ bhramatīva ca me manaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The Gandiva slips from my hand. My skin burns all over. I cannot
-                stand. My mind reels and spins.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Significance</div>
-              <div className="shloka-insight">
-                Gandiva is not just a bow. It's a divine weapon given by Agni, a symbol of Arjuna's identity as the supreme warrior. When it
-                slips, something more than a weapon is falling. It's the self he
-                has always known.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "In moments of deep confusion and overwhelm, expressing your
-            vulnerability is a sign of true strength."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 1.30"
+          speaker="Arjuna"
+          sanskrit="गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥"
+          iast="gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate | na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ ||"
+          meaning="The Gandiva slips from my hand. My skin burns all over. I cannot stand. My mind reels and spins."
+          insightLabel="Significance"
+          insight="Gandiva is not just a bow. It's a divine weapon given by Agni, a symbol of Arjuna's identity as the supreme warrior. When it slips, something more than a weapon is falling. It's the self he has always known."
+          essence="In moments of deep confusion and overwhelm, expressing your vulnerability is a sign of true strength."
+        />
 
         <p>
           Two thousand years before the term existed, the Gita is describing a
@@ -1232,125 +1048,38 @@ export default function ChapterOnePage() {
           coherent ethical case, and a surprisingly sophisticated one.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 1.32</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च ।<br />किं नो राज्येन
-            गोविन्द किं भोगैर्जीवितेन वा ॥
-          </div>
-          <div className="shloka-iast">
-            na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca |<br />kiṃ no
-            rājyena govinda kiṃ bhogairjīvitena vā ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                I do not want victory, Krishna. I do not want a kingdom or
-                pleasures. Of what use is a kingdom to us, Govinda? Of what use
-                are enjoyments or even life itself?
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The inversion</div>
-              <div className="shloka-insight">
-                This is Arjuna dismantling the entire framework of why they came
-                to fight. Victory, kingdom, enjoyment, the three things
-                warriors fight for. He is renouncing all three in one verse.
-                This is not fear. It is a rejection of the premise.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "True fulfillment comes from living with purpose, not from external
-            success."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 1.32"
+          speaker="Arjuna"
+          sanskrit="न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च । किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा ॥"
+          iast="na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca | kiṃ no rājyena govinda kiṃ bhogairjīvitena vā ||"
+          meaning="I do not want victory, Krishna. I do not want a kingdom or pleasures. Of what use is a kingdom to us, Govinda? Of what use are enjoyments or even life itself?"
+          insightLabel="The inversion"
+          insight="This is Arjuna dismantling the entire framework of why they came to fight. Victory, kingdom, enjoyment, the three things warriors fight for. He is renouncing all three in one verse. This is not fear. It is a rejection of the premise."
+          essence="True fulfillment comes from living with purpose, not from external success."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 1.33</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च ।<br />त इमेऽवस्थिता
-            युद्धे प्राणांस्त्यक्त्वा धनानि च ॥
-          </div>
-          <div className="shloka-iast">
-            yeṣāmarthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca |<br />ta
-            ime'vasthitā yuddhe prāṇāṃstyaktvā dhanāni ca ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Those for whose sake we desire kingdoms, pleasures, and
-                happiness, they themselves stand here on this battlefield,
-                having given up their desire for life and wealth.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The logic</div>
-              <div className="shloka-insight">
-                A crisp consequentialist argument: the beneficiaries of victory
-                are the very people who will die in the pursuit of it. This
-                isn't irrational. This is the observation that the means have
-                devoured the ends, a collapse in the logic of the entire
-                enterprise.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Meaning lies not in possessions, but in understanding and valuing
-            the people and sacrifices behind them."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 1.33"
+          speaker="Arjuna"
+          sanskrit="येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च । त इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च ॥"
+          iast="yeṣāmarthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca | ta ime'vasthitā yuddhe prāṇāṃstyaktvā dhanāni ca ||"
+          meaning="Those for whose sake we desire kingdoms, pleasures, and happiness, they themselves stand here on this battlefield, having given up their desire for life and wealth."
+          insightLabel="The logic"
+          insight="A crisp consequentialist argument: the beneficiaries of victory are the very people who will die in the pursuit of it. This isn't irrational. This is the observation that the means have devoured the ends, a collapse in the logic of the entire enterprise."
+          essence="Meaning lies not in possessions, but in understanding and valuing the people and sacrifices behind them."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 1.38–1.39</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यद्यप्येते न पश्यन्ति लोभोपहतचेतसः ।<br />कुलक्षयकृतं दोषं
-            मित्रद्रोहे च पातकम् ॥<br /><br />कथं न ज्ञेयमस्माभिः
-            पापादस्मान्निवर्तितुम् ।<br />कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन
-            ॥
-          </div>
-          <div className="shloka-iast">
-            yadyapyete na paśyanti lobhopahatacetasaḥ |<br />kulakṣayakṛtaṃ
-            doṣaṃ mitradrohe ca pātakam ||<br /><br />kathaṃ na jñeyamasmābhiḥ
-            pāpādasmānnivartitum |<br />kulakṣayakṛtaṃ doṣaṃ
-            prapaśyadbhirjanārdana ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Even if those whose minds are blinded by greed cannot see the
-                sin in destroying families and betraying friends, how can we,
-                who clearly see the consequences, fail to turn away from this
-                sin, O Janardana?
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The ethics</div>
-              <div className="shloka-insight">
-                Arjuna is making a deontological case: if you can see the harm
-                and others cannot, you bear a greater responsibility to act on
-                that knowledge. This is not rationalization. This is conscience.
-                The problem is not that the argument is wrong, it's that
-                Arjuna's 'I' is still attached to the wrong thing.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Awareness of consequences brings the responsibility to act wisely."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 1.38–1.39"
+          speaker="Arjuna"
+          sanskrit="यद्यप्येते न पश्यन्ति लोभोपहतचेतसः । कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम् ॥ कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम् । कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन ॥"
+          iast="yadyapyete na paśyanti lobhopahatacetasaḥ | kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam || kathaṃ na jñeyamasmābhiḥ pāpādasmānnivartitum | kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana ||"
+          meaning="Even if those whose minds are blinded by greed cannot see the sin in destroying families and betraying friends, how can we, who clearly see the consequences, fail to turn away from this sin, O Janardana?"
+          insightLabel="The ethics"
+          insight="Arjuna is making a deontological case: if you can see the harm and others cannot, you bear a greater responsibility to act on that knowledge. This is not rationalization. This is conscience. The problem is not that the argument is wrong, it's that Arjuna's 'I' is still attached to the wrong thing."
+          essence="Awareness of consequences brings the responsibility to act wisely."
+        />
 
         <p>
           This is not a small point. Arjuna isn't wrong that destroying families
@@ -1385,81 +1114,26 @@ export default function ChapterOnePage() {
           The Final Choice, <em>Silence and a Bow Set Down</em>
         </h2>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 1.46</span>
-            <span className="shloka-speaker">Speaker: Arjuna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः ।<br />धार्तराष्ट्रा रणे
-            हन्युस्तन्मे क्षेमतरं भवेत् ॥
-          </div>
-          <div className="shloka-iast">
-            yadi māmapratīkāramaśastraṃ śastrapāṇayaḥ |<br />dhārtarāṣṭrā raṇe
-            hanyustanme kṣemataraṃ bhavet ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                If the armed sons of Dhritarashtra were to kill me in battle, unresisting, unarmed, even that would be better for me.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Not cowardice</div>
-              <div className="shloka-insight">
-                Arjuna is not afraid of death. He's making a principled stand:
-                he would rather be killed than violate his own conscience. This
-                is, in its own way, a warrior's ethic, choosing death over an
-                action that feels wrong. The problem isn't the courage. It's the
-                source of the conviction.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Strength is found not just in fighting, but in choosing peace over
-            retaliation."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 1.46"
+          speaker="Arjuna"
+          sanskrit="यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः । धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत् ॥"
+          iast="yadi māmapratīkāramaśastraṃ śastrapāṇayaḥ | dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet ||"
+          meaning="If the armed sons of Dhritarashtra were to kill me in battle, unresisting, unarmed, even that would be better for me."
+          insightLabel="Not cowardice"
+          insight="Arjuna is not afraid of death. He's making a principled stand: he would rather be killed than violate his own conscience. This is, in its own way, a warrior's ethic, choosing death over an action that feels wrong. The problem isn't the courage. It's the source of the conviction."
+          essence="Strength is found not just in fighting, but in choosing peace over retaliation."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 1.47</span>
-            <span className="shloka-speaker">Narrator: Sanjaya</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            सञ्जय उवाच<br />एवमुक्त्वाऽर्जुनः संख्ये रथोपस्थ उपाविशत् ।<br />विसृज्य
-            सशरं चापं शोकसंविग्नमानसः ॥
-          </div>
-          <div className="shloka-iast">
-            sañjaya uvāca<br />evamuktvā'rjunaḥ saṃkhye rathopastha upāviśat
-            |<br />visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Sanjaya said: Having spoken thus on the battlefield, Arjuna sat
-                down upon the seat of his chariot, casting aside both bow and
-                arrows, his mind overwhelmed with grief.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The end of Chapter 1</div>
-              <div className="shloka-insight">
-                Sanjaya narrates this to the blind king with journalistic calm.
-                The greatest teacher in Sanskrit literature sits next to the
-                greatest student. The student has his face in his hands. This is
-                where Chapter 1 ends, not with resolution, but with the
-                question fully formed and held.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Even our heroes face moments of deep inner struggle; pausing and
-            accepting our feelings is a vital part of the journey."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 1.47"
+          sanskrit="सञ्जय उवाच एवमुक्त्वाऽर्जुनः संख्ये रथोपस्थ उपाविशत् । विसृज्य सशरं चापं शोकसंविग्नमानसः ॥"
+          iast="sañjaya uvāca evamuktvā'rjunaḥ saṃkhye rathopastha upāviśat | visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ ||"
+          meaning="Sanjaya said: Having spoken thus on the battlefield, Arjuna sat down upon the seat of his chariot, casting aside both bow and arrows, his mind overwhelmed with grief."
+          insightLabel="The end of Chapter 1"
+          insight="Sanjaya narrates this to the blind king with journalistic calm. The greatest teacher in Sanskrit literature sits next to the greatest student. The student has his face in his hands. This is where Chapter 1 ends, not with resolution, but with the question fully formed and held."
+          essence="Even our heroes face moments of deep inner struggle; pausing and accepting our feelings is a vital part of the journey."
+        />
 
         <p>
           Sanjaya's narration ends here. Chapter 1's last image is Arjuna,

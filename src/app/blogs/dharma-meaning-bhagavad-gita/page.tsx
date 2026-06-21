@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Dharma in the Bhagavad Gita: What It Means and Why It's Not What You Think | Wisdom",
@@ -197,96 +198,6 @@ const pageCSS = `
         p {
             margin-bottom: 1.5rem;
             color: var(--text-dim);
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-
-        .shloka-card:hover {
-            background: var(--bg-card-hover);
-        }
-
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .meaning-text {
-            color: var(--text);
-            line-height: 1.7;
-        }
-
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .shloka-card .insight-text {
-            color: var(--text-dim);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -637,20 +548,14 @@ export default function DharmaMeaningPage() {
           The clearest statement of svadharma in the Gita comes in Chapter 3. It is blunt. It admits imperfection. It does not promise that walking your own path will produce better results.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 3.35</div>
-          <div className="sanskrit">श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥</div>
-          <div className="transliteration">śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">It is better to perform your own dharma, even if imperfectly, than to carry out another&apos;s dharma perfectly. Dying while following your own dharma is better, because living by another&apos;s dharma brings fear.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">The verse uses the word viguna: deficient in qualities, imperfect. The Gita is not saying &ldquo;follow your dharma because you will do it better than anyone else.&rdquo; It is saying follow it even when you are not doing it well. Even a flawed walk down your own path is better than a flawless performance of someone else&apos;s. The reason it gives is fear. Paradharma, living another&apos;s path, generates bhaya. Fear. The fear of being found out. The fear of not measuring up. The fear of a life that doesn&apos;t actually fit.</div>
-          </div>
-          <div className="essence">Walk your own path, for it alone leads to lasting well-being.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 3.35"
+          sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥"
+          iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Walk your own path, for it alone leads to lasting well-being."
+        />
 
         <p>
           This is striking in a culture that values visible success. The verse is not measuring outcomes. It is measuring the quality of the life from the inside. A life spent performing another&apos;s dharma well produces a particular kind of interior damage: you become skilled at something that was never yours, and you live in constant low-level fear of the gap between your performance and your actual nature.
@@ -676,35 +581,23 @@ export default function DharmaMeaningPage() {
           Chapter 4 introduces the cosmic dimension of dharma. Krishna describes a pattern that operates across ages: dharma declines, adharma rises, and Krishna takes form to restore the balance.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 4.7</div>
-          <div className="sanskrit">यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम् ॥</div>
-          <div className="transliteration">yadā yadā hi dharmasya glānirbhavati bhārata | abhyutthānamadharmasya tadā&apos;&apos;tmānaṃ sṛjāmyaham ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Whenever dharma weakens and adharma increases, O Arjuna, I manifest myself in visible form.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">The word glani means deterioration, weakness, fatigue. Dharma can get tired. It can be worn down by sustained adharma until it loses its coherence as a force in the world. Krishna&apos;s response is not to send a message or a law. He comes himself. This is the theology of the avatar: when the situation requires it, the divine takes on the limitation of form in order to act within the specific conditions of the world.</div>
-          </div>
-          <div className="essence">Whenever dharma weakens, renewal comes. Trust in the cycle of restoration.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.7"
+          sanskrit="यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम् ॥"
+          iast="yadā yadā hi dharmasya glānirbhavati bhārata | abhyutthānamadharmasya tadā''tmānaṃ sṛjāmyaham ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Whenever dharma weakens, renewal comes. Trust in the cycle of restoration."
+        />
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 4.8</div>
-          <div className="sanskrit">परित्राणाय साधूनां विनाशाय च दुष्कृताम् । धर्मसंस्थापनार्थाय संभवामि युगे युगे ॥</div>
-          <div className="transliteration">paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām | dharmasaṃsthāpanārthāya saṃbhavāmi yuge yuge ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">To protect those who uphold dharma, to destroy those who create harm, and to firmly re-establish dharma: I arise in every age.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">The phrase yuge yuge, in every age, carries a particular weight. This is not a single historical event. It is a recurring pattern. The Gita is saying that the restoration of dharma is not a one-time achievement. It requires active, recurring renewal. Dharma left alone does not maintain itself. It requires those who uphold it, and periodically something larger that corrects the course when individual effort is not enough.</div>
-          </div>
-          <div className="essence">Dharma is always supported and restored, no matter the era.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 4.8"
+          sanskrit="परित्राणाय साधूनां विनाशाय च दुष्कृताम् । धर्मसंस्थापनार्थाय संभवामि युगे युगे ॥"
+          iast="paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām | dharmasaṃsthāpanārthāya saṃbhavāmi yuge yuge ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Dharma is always supported and restored, no matter the era."
+        />
 
         <p>
           These two verses are frequently quoted as comfort in difficult times: things are bad, but correction will come. That reading is not wrong, but it is incomplete. The verses are also making a structural claim about how the cosmos works. Dharma is not self-sustaining. It requires both human effort and something beyond human effort. Both are real and both are necessary.
@@ -715,20 +608,14 @@ export default function DharmaMeaningPage() {
           The teaching from BG 3.35 is essentially repeated in Chapter 18 at a higher register. By the time we reach Chapter 18, Arjuna and the reader have been through the full arc of the Gita. The restatement here is not accidental. It is the Gita confirming that this teaching belongs at both the beginning and the end of the path.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 18.47</div>
-          <div className="sanskrit">श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥</div>
-          <div className="transliteration">śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svabhāvaniyataṃ karma kurvannāpnoti kilbiṣam ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Doing your own work, even if imperfect, is better than doing someone else&apos;s work perfectly. You do not create wrong when you live by your natural duties.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">The key phrase here is svabhava-niyatam: determined by one&apos;s own nature. The work that flows from svabhava is not chosen. It is discerned. You find it by looking at what your actual nature is, not by choosing what looks prestigious or virtuous from the outside. The verse then says that acting from svabhava does not produce kilbisha, wrongdoing or sin. There is a protection in authentic action that is not available in imitation.</div>
-          </div>
-          <div className="essence">Walking your own path, true to your nature, brings real peace and protects you from inner trouble.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.47"
+          sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥"
+          iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svabhāvaniyataṃ karma kurvannāpnoti kilbiṣam ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Walking your own path, true to your nature, brings real peace and protects you from inner trouble."
+        />
 
         <p>
           The difference between BG 3.35 and BG 18.47 is in the framing. In Chapter 3, the teaching is framed against the danger of paradharma. In Chapter 18, it is framed positively: act from svabhava, and you are protected. The teaching has moved from warning to affirmation. After 15 chapters of instruction, the Gita is saying: this is still it. This is the core of what I was saying from the beginning.
@@ -739,20 +626,14 @@ export default function DharmaMeaningPage() {
           The last teaching of the Gita appears to contradict everything that came before. After spending 17 chapters building the case for dharma, svadharma, and right action, BG 18.66 says: abandon all dharma. Come to me alone.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Bhagavad Gita 18.66</div>
-          <div className="sanskrit">सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥</div>
-          <div className="transliteration">sarvadharmānparityajya māmekaṃ śaraṇaṃ vraja | ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Set aside all dharmas and take refuge in me alone. I will free you from all wrongdoing. Do not be afraid.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">What This Teaches</div>
-            <div className="insight-text">The apparent paradox dissolves when you see what is being abandoned. Sarva-dharman, all dharmas. Not specific dharmas, but the entire framework of dharma as self-managed obligation. The teaching is not &ldquo;stop acting rightly.&rdquo; It is: stop relating to right action as something you are managing and maintaining through your own effort. The matured student of the Gita arrives at the point where the very category of dharma as personal project falls away, and what remains is action arising directly from surrender to the divine. The action is the same. The source has shifted.</div>
-          </div>
-          <div className="essence">Let go and trust fully. Freedom and peace will follow.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 18.66"
+          sanskrit="सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥"
+          iast="sarvadharmānparityajya māmekaṃ śaraṇaṃ vraja | ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="What This Teaches"
+          essence="Let go and trust fully. Freedom and peace will follow."
+        />
 
         <p>
           This verse is sometimes used to argue that the Gita ultimately dismisses all ethical frameworks as obstacles to pure devotion. That reading requires ignoring the 700 verses that precede it. The verse is not canceling the dharma teaching. It is describing what happens at its completion. You do not arrive at surrender by skipping the work of dharma. You arrive at it by doing that work until the clinging to it as personal achievement falls away.

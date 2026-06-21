@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 13 Summary – Key Verses & Meaning (Kshetra Kshetrajna Yoga)",
@@ -139,28 +140,6 @@ const pageCSS = `
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
-      .shloka-card { background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: 14px; overflow: hidden; margin: 36px 0; }
-      .shloka-header { display: flex; align-items: center; justify-content: space-between;
-        padding: 12px 22px; border-bottom: 1px solid var(--border);
-        background: rgba(200, 136, 30, 0.05); }
-      .shloka-ref { font-size: 11px; color: var(--gold); letter-spacing: 0.12em;
-        text-transform: uppercase; font-weight: 600; }
-      .shloka-speaker { font-size: 11px; color: var(--text-dimmer); letter-spacing: 0.06em; }
-      .shloka-sanskrit { padding: 24px 22px 16px; font-family: "Noto Sans Devanagari", serif;
-        font-size: 20px; line-height: 1.75; color: var(--gold-light);
-        border-bottom: 1px solid var(--border); }
-      .shloka-iast { padding: 12px 22px 16px; font-size: 12.5px; line-height: 1.7;
-        color: var(--text-dimmer); border-bottom: 1px solid var(--border); font-style: italic; }
-      .shloka-body { padding: 20px 22px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-      .shloka-col-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
-        font-weight: 700; color: var(--text-dimmer); margin-bottom: 8px; }
-      .shloka-meaning { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
-      .shloka-insight { font-size: 14px; line-height: 1.7; color: var(--gold-light); }
-      .shloka-essence { padding: 14px 22px; background: rgba(200, 136, 30, 0.06);
-        border-top: 1px solid var(--border); font-family: "Playfair Display", serif;
-        font-style: italic; font-size: 15px; color: var(--text-dim); }
-
       .pull-quote { margin: 40px 0; padding: 28px 32px; border-left: 3px solid var(--gold);
         background: rgba(200, 136, 30, 0.05); border-radius: 0 12px 12px 0; }
       .pull-quote blockquote { font-family: "Playfair Display", serif; font-size: 21px;
@@ -262,7 +241,6 @@ const pageCSS = `
       @media (max-width: 700px) {
         .article-hero { padding: 44px 20px 40px; }
         .article-wrap { padding: 40px 20px 60px; }
-        .shloka-body { grid-template-columns: 1fr; }
         .app-cta { padding: 32px 24px; }
         .pull-quote { padding: 22px 24px; }
         .faq-header, .faq-item { padding-left: 20px; padding-right: 20px; }
@@ -694,35 +672,13 @@ export default function ChapterPage13() {
           Read it slowly. The body is the field. You are not the body. You are the one who knows the body. The same distinction applies, by extension, to the mind, the thoughts, the moods, the desires. All of these are the field: they are what is observed. The knower is what does the observing. Most psychological suffering, the Gita is suggesting, comes from confusing the observer with what is being observed. You feel anxiety, and instead of noticing that you are observing anxiety, you say <em>I am anxious</em>, and the identification deepens the anxiety. Chapter 13 is the patient unpicking of that confusion.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 13.2</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            श्रीभगवानुवाच<br />इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते ।<br />एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः ॥
-          </div>
-          <div className="shloka-iast">
-            śrī bhagavān uvāca |<br />idaṃ śarīraṃ kaunteya kṣetram ity abhidhīyate |<br />etad yo vetti taṃ prāhuḥ kṣetrajña iti tad-vidaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The Blessed One said: this body, Arjuna, is called the field. The one who knows it, the knowers call the knower of the field.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The most useful sentence in modern psychology</div>
-              <div className="shloka-insight">
-                You are not your body. You are not your mind. You are not your moods. You are what is aware of all of these. This is not a metaphysical extravagance. It is the simplest observation a person can make about their own experience: there is what is happening, and there is the one to whom it is happening. The two are not identical, and the Gita is the early text that says so most plainly.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "The body is observed; the knower is something else."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 13.2"
+          speaker="Krishna"
+          sanskrit="श्रीभगवानुवाच इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते । एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः ॥"
+          iast="śrī bhagavān uvāca | idaṃ śarīraṃ kaunteya kṣetram ity abhidhīyate | etad yo vetti taṃ prāhuḥ kṣetrajña iti tad-vidaḥ ||"
+          essence="The body is observed; the knower is something else."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -750,35 +706,16 @@ export default function ChapterPage13() {
           Read this list and you will recognize most of what you have been calling your inner life. The wanting. The not-wanting. The agreeable sensations. The disagreeable sensations. The Gita is saying, these are all weather, not the sky. They happen in the field. You are not the field. You are the one who knows the field. The implication, lived out, is enormous. The reaction that just took over you is, on this account, observable. If it is observable, it is not, finally, you. The freedom that becomes possible from this single insight is the freedom Chapter 13 is patient enough to spell out.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 13.7</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः ।<br />एतत्क्षेत्रं समासेन सविकारमुदाहृतम् ॥
-          </div>
-          <div className="shloka-iast">
-            icchā dveṣaḥ sukhaṃ duḥkhaṃ saṅghātaś cetanā dhṛtiḥ |<br />etat kṣetraṃ samāsena sa-vikāram udāhṛtam ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Desire, aversion, pleasure, pain, the body, consciousness, steadiness, this field, with its modifications, is briefly described.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">What this verse moves out of "you"</div>
-              <div className="shloka-insight">
-                Read the list. Desire. Aversion. Pleasure. Pain. Steadiness. These are what most of us call our identity. The verse moves all of them out of the knower category. You still have a desire, but the desire is something you are observing, not something you are. Once that shift happens, the desire's grip loosens. It is no longer wrestling you. It is just appearing, somewhere in your field of awareness.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Your reactions belong to the field, not to the knower."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 13.7"
+          speaker="Krishna"
+          sanskrit="इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः । एतत्क्षेत्रं समासेन सविकारमुदाहृतम् ॥"
+          iast="icchā dveṣaḥ sukhaṃ duḥkhaṃ saṅghātaś cetanā dhṛtiḥ | etat kṣetraṃ samāsena sa-vikāram udāhṛtam ||"
+          meaning="Desire, aversion, pleasure, pain, the body, consciousness, steadiness, this field, with its modifications, is briefly described."
+          insightLabel="What this verse moves out of \"you\""
+          insight="Read the list. Desire. Aversion. Pleasure. Pain. Steadiness. These are what most of us call our identity. The verse moves all of them out of the knower category. You still have a desire, but the desire is something you are observing, not something you are. Once that shift happens, the desire's grip loosens. It is no longer wrestling you. It is just appearing, somewhere in your field of awareness."
+          essence="Your reactions belong to the field, not to the knower."
+        />
 
         <div className="highlight-box">
           <p>
@@ -805,65 +742,27 @@ export default function ChapterPage13() {
           Notice what the list is doing. The Gita has just made a metaphysical distinction, the field versus the knower. Now it asks: what does a person look like who has integrated this distinction? Not someone who has memorised more philosophy. Someone who has stopped needing to perform. Who has stopped reacting to provocation. Who has accepted ordinary facts like mortality without flinching. The list is the Gita's anti-portrait of egoic life, a description of what gets quieter when the field-knower confusion clears.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 13.8</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् ।<br />आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः ॥
-          </div>
-          <div className="shloka-iast">
-            amānitvam adambhitvam ahiṃsā kṣāntir ārjavam |<br />ācāryopāsanaṃ śaucaṃ sthairyam ātma-vinigrahaḥ ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Absence of pride, absence of pretence, non-violence, patience, simplicity, service to the teacher, cleanliness, steadiness, self-control.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The first nine qualities, and what they share</div>
-              <div className="shloka-insight">
-                Each of these qualities, looked at carefully, is the absence of a particular form of ego activity. Pride is ego. Pretence is ego. Violence is ego cornered. Impatience is ego in a hurry. The Gita is not adding new qualities to a person. It is describing what remains when the ego stops demanding so much airtime. The portrait is mostly subtractive.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "True strength is quiet discipline, not self-display."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 13.8"
+          speaker="Krishna"
+          sanskrit="अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् । आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः ॥"
+          iast="amānitvam adambhitvam ahiṃsā kṣāntir ārjavam | ācāryopāsanaṃ śaucaṃ sthairyam ātma-vinigrahaḥ ||"
+          meaning="Absence of pride, absence of pretence, non-violence, patience, simplicity, service to the teacher, cleanliness, steadiness, self-control."
+          insightLabel="The first nine qualities, and what they share"
+          insight="Each of these qualities, looked at carefully, is the absence of a particular form of ego activity. Pride is ego. Pretence is ego. Violence is ego cornered. Impatience is ego in a hurry. The Gita is not adding new qualities to a person. It is describing what remains when the ego stops demanding so much airtime. The portrait is mostly subtractive."
+          essence="True strength is quiet discipline, not self-display."
+        />
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 13.12</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम् ।<br />एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा ॥
-          </div>
-          <div className="shloka-iast">
-            adhyātma-jñāna-nityatvaṃ tattva-jñānārtha-darśanam |<br />etaj jñānam iti proktam ajñānaṃ yad ato'nyathā ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Constant awareness of the inner reality, and seeing the supreme reality as the meaning, this is called knowledge. Whatever is contrary to this is ignorance.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Where the list ends</div>
-              <div className="shloka-insight">
-                The list ends with the two qualities the rest of the list was building toward. Constant inner awareness. Seeing the supreme reality as what life is for. The first eighteen items were the conditions; these two are the destination. The Gita is honest that the destination is not separate from the conditions. Without the absence of pride and pretence, the inner awareness does not stabilise. The character work and the metaphysical seeing are one motion.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Knowledge is seeing reality steadily; everything else is confusion."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 13.12"
+          speaker="Krishna"
+          sanskrit="अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम् । एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा ॥"
+          iast="adhyātma-jñāna-nityatvaṃ tattva-jñānārtha-darśanam | etaj jñānam iti proktam ajñānaṃ yad ato'nyathā ||"
+          meaning="Constant awareness of the inner reality, and seeing the supreme reality as the meaning, this is called knowledge. Whatever is contrary to this is ignorance."
+          insightLabel="Where the list ends"
+          insight="The list ends with the two qualities the rest of the list was building toward. Constant inner awareness. Seeing the supreme reality as what life is for. The first eighteen items were the conditions; these two are the destination. The Gita is honest that the destination is not separate from the conditions. Without the absence of pride and pretence, the inner awareness does not stabilise. The character work and the metaphysical seeing are one motion."
+          essence="Knowledge is seeing reality steadily; everything else is confusion."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -884,35 +783,16 @@ export default function ChapterPage13() {
           Why this paradox? Because what is everywhere cannot be located. What cannot be located is, in one sense, far, because it is not in any particular place you can point to. And in another sense, near, because there is no place it is not. The verse is not being mystical for the sake of being mystical. It is naming, precisely, the experience of trying to find the Divine. You cannot find it because it is not localised. You cannot miss it because it is not absent. The verse is, in this sense, a permanent answer to the spiritual question: where is it? Everywhere. Including, especially, in the place from which you were doing the searching.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 13.16</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            बहिरन्तश्च भूतानामचरं चरमेव च ।<br />सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् ॥
-          </div>
-          <div className="shloka-iast">
-            bahir antaś ca bhūtānām acaraṃ caram eva ca |<br />sūkṣmatvāt tad avijñeyaṃ dūra-sthaṃ cāntike ca tat ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                Outside and within all beings, unmoving and moving, too subtle to be known, that supreme is both far away and near at hand.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The grammar of omnipresence</div>
-              <div className="shloka-insight">
-                Notice the verse pairs opposites, inside/outside, moving/unmoving, far/near. The Gita is consistently doing this when describing the Divine, because no single side of an opposition is sufficient. The Divine is what holds the opposites. The verse is teaching, by its grammar, that you should not expect to find the Divine in one location and not another. It is the field on which locations appear.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "What seems distant is already within everything."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 13.16"
+          speaker="Krishna"
+          sanskrit="बहिरन्तश्च भूतानामचरं चरमेव च । सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् ॥"
+          iast="bahir antaś ca bhūtānām acaraṃ caram eva ca | sūkṣmatvāt tad avijñeyaṃ dūra-sthaṃ cāntike ca tat ||"
+          meaning="Outside and within all beings, unmoving and moving, too subtle to be known, that supreme is both far away and near at hand."
+          insightLabel="The grammar of omnipresence"
+          insight="Notice the verse pairs opposites, inside/outside, moving/unmoving, far/near. The Gita is consistently doing this when describing the Divine, because no single side of an opposition is sufficient. The Divine is what holds the opposites. The verse is teaching, by its grammar, that you should not expect to find the Divine in one location and not another. It is the field on which locations appear."
+          essence="What seems distant is already within everything."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -933,35 +813,16 @@ export default function ChapterPage13() {
           Read in the psychological register, this is one of the most useful diagnostic verses in the book. You are caught not by what happens to you. You are caught by your attachment to the qualities (the gunas), your investment in being a certain kind of person, your craving for the kind of state you prefer, your aversion to the kind of state you don't. Drop the attachment and the qualities still appear; they just no longer have anywhere to land. Most therapy works on changing the qualities. The Gita is making a different bet: change the attachment, and the qualities lose their hold without needing to be changed first.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 13.22</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान् ।<br />कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु ॥
-          </div>
-          <div className="shloka-iast">
-            puruṣaḥ prakṛti-stho hi bhuṅkte prakṛti-jān guṇān |<br />kāraṇaṃ guṇa-saṅgo'sya sad-asad-yoni-janmasu ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The inner being, situated within nature, experiences the qualities born of nature. Attachment to those qualities is the cause of birth in good and bad situations.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">The cause is not the experience, it is the attachment</div>
-              <div className="shloka-insight">
-                The verse does not say the qualities are the problem. They are inevitable: the inner being situated in nature experiences them. The problem is <em>guṇa-saṅgaḥ</em>, attachment to the qualities. Not the wanting itself, but the gripping of the wanting. Not the pleasure itself, but the insistence on more of it. The diagnosis is surgical.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Attachment to changing qualities keeps the cycle of birth going."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 13.22"
+          speaker="Krishna"
+          sanskrit="पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान् । कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु ॥"
+          iast="puruṣaḥ prakṛti-stho hi bhuṅkte prakṛti-jān guṇān | kāraṇaṃ guṇa-saṅgo'sya sad-asad-yoni-janmasu ||"
+          meaning="The inner being, situated within nature, experiences the qualities born of nature. Attachment to those qualities is the cause of birth in good and bad situations."
+          insightLabel="The cause is not the experience, it is the attachment"
+          insight="The verse does not say the qualities are the problem. They are inevitable: the inner being situated in nature experiences them. The problem is guṇa-saṅgaḥ, attachment to the qualities. Not the wanting itself, but the gripping of the wanting. Not the pleasure itself, but the insistence on more of it. The diagnosis is surgical."
+          essence="Attachment to changing qualities keeps the cycle of birth going."
+        />
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -982,35 +843,16 @@ export default function ChapterPage13() {
           Most modern readers, conditioned by ideologies of personal agency, initially resist this verse. It can sound like a denial of responsibility. It is not. Read carefully, the verse is making a more precise claim. Actions happen. The body acts. The mind decides. The personality reacts. All of this is nature in motion. The deepest <em>self</em> (the knower) is the witness of all this happening. The verse is not asking you to abdicate responsibility for your actions. It is asking you to stop identifying with the doer in a way that creates suffering. You can act fully, accountably, well, and still, at the deepest level, recognize that you are not the originator of the activity in the way you imagined. That recognition is freedom.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 13.30</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः ।<br />यः पश्यति तथाऽऽत्मानमकर्तारं स पश्यति ॥
-          </div>
-          <div className="shloka-iast">
-            prakṛtyaiva ca karmāṇi kriyamāṇāni sarvaśaḥ |<br />yaḥ paśyati tathātmānam akartāraṃ sa paśyati ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                The one who sees that all actions are performed by nature alone, and sees the self as the non-doer, that one sees truly.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">How the verse can be misread, and how to read it right</div>
-              <div className="shloka-insight">
-                The verse does not say you bear no consequences for your actions. It says you are not the doer in the way the ego insists. Karma still applies; outcomes still arrive; responsibility still attaches. What changes is the inner story. You stop carrying the heavy fiction that you alone are the cause. You become, instead, the awareness within which causes converge. The work is still done. The sleeplessness over the work, surprisingly, lifts.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Freedom begins when you stop claiming every action as yours."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 13.30"
+          speaker="Krishna"
+          sanskrit="प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः । यः पश्यति तथाऽऽत्मानमकर्तारं स पश्यति ॥"
+          iast="prakṛtyaiva ca karmāṇi kriyamāṇāni sarvaśaḥ | yaḥ paśyati tathātmānam akartāraṃ sa paśyati ||"
+          meaning="The one who sees that all actions are performed by nature alone, and sees the self as the non-doer, that one sees truly."
+          insightLabel="How the verse can be misread, and how to read it right"
+          insight="The verse does not say you bear no consequences for your actions. It says you are not the doer in the way the ego insists. Karma still applies; outcomes still arrive; responsibility still attaches. What changes is the inner story. You stop carrying the heavy fiction that you alone are the cause. You become, instead, the awareness within which causes converge. The work is still done. The sleeplessness over the work, surprisingly, lifts."
+          essence="Freedom begins when you stop claiming every action as yours."
+        />
 
         <div className="pull-quote">
           <blockquote>
@@ -1038,35 +880,16 @@ export default function ChapterPage13() {
           The same is true of the knower. Awareness lights up the whole field, body, mind, emotions, sensations, and is not stained by any of it. The grief you feel is fully seen but does not contaminate the awareness seeing it. The joy is fully seen but does not need to be held. The image is the closing picture of the chapter and, in some ways, the closing picture of the Gita's psychology. You are the sun. The field is what your light makes visible. You are not the field. You never were.
         </p>
 
-        <div className="shloka-card">
-          <div className="shloka-header">
-            <span className="shloka-ref">Bhagavad Gita 13.34</span>
-            <span className="shloka-speaker">Speaker: Krishna</span>
-          </div>
-          <div className="shloka-sanskrit" lang="sa">
-            यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः ।<br />क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत ॥
-          </div>
-          <div className="shloka-iast">
-            yathā prakāśayaty ekaḥ kṛtsnaṃ lokam imaṃ raviḥ |<br />kṣetraṃ kṣetrī tathā kṛtsnaṃ prakāśayati bhārata ||
-          </div>
-          <div className="shloka-body">
-            <div>
-              <div className="shloka-col-label">Meaning</div>
-              <div className="shloka-meaning">
-                As one sun illuminates this whole world, so the knower of the field illuminates the entire field, Arjuna.
-              </div>
-            </div>
-            <div>
-              <div className="shloka-col-label">Why this image holds the whole chapter</div>
-              <div className="shloka-insight">
-                The sun does not become what it lights. Awareness does not become what it observes. The grief is fully witnessed; the awareness witnessing it remains as it was. This is what makes Chapter 13's distinction useful in lived experience. Whatever appears in the field, however intense, does not finally become the seer. The seer is still here. The sun is still up there.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Awareness illuminates everything without being touched by what it sees."
-          </div>
-        </div>
+                <ShlokaCard
+          verseRef="Bhagavad Gita 13.34"
+          speaker="Krishna"
+          sanskrit="यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः । क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत ॥"
+          iast="yathā prakāśayaty ekaḥ kṛtsnaṃ lokam imaṃ raviḥ | kṣetraṃ kṣetrī tathā kṛtsnaṃ prakāśayati bhārata ||"
+          meaning="As one sun illuminates this whole world, so the knower of the field illuminates the entire field, Arjuna."
+          insightLabel="Why this image holds the whole chapter"
+          insight="The sun does not become what it lights. Awareness does not become what it observes. The grief is fully witnessed; the awareness witnessing it remains as it was. This is what makes Chapter 13's distinction useful in lived experience. Whatever appears in the field, however intense, does not finally become the seer. The seer is still here. The sun is still up there."
+          essence="Awareness illuminates everything without being touched by what it sees."
+        />
 
         <div className="highlight-box">
           <p>

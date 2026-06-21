@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Beyond the Bhagavad Gita: Best Quotes on Mental & Spiritual Health from 7 Lesser-Known Gitas | Wisdom",
@@ -220,76 +221,6 @@ const pageCSS = `
             padding-bottom: 0.75rem;
             flex: 1;
             margin: 0;
-        }
-
-        /* Shloka Card */
-        .shloka-card {
-            background: var(--bg-card);
-            border: 1px solid var(--gold-dim);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            transition: background 0.3s;
-        }
-        .shloka-card:hover { background: var(--bg-card-hover); }
-        .shloka-card .verse-number {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-        .shloka-card .sanskrit {
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 1.1rem;
-            color: var(--gold-light);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-        .shloka-card .transliteration {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            font-style: italic;
-            color: var(--text-dimmer);
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-        .shloka-card .meaning {
-            background: rgba(200,136,30,0.05);
-            padding: 1rem;
-            border-left: 3px solid var(--gold);
-            margin-bottom: 1rem;
-            border-radius: 4px;
-        }
-        .shloka-card .meaning-label {
-            font-size: 0.75rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        .shloka-card .meaning-text { color: var(--text); line-height: 1.7; }
-        .shloka-card .insight {
-            background: var(--bg-alt);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-        }
-        .shloka-card .insight-label {
-            font-size: 0.75rem;
-            color: var(--text-dimmer);
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        .shloka-card .insight-text { color: var(--text-dim); line-height: 1.7; font-size: 0.95rem; }
-        .shloka-card .essence {
-            font-style: italic;
-            color: var(--gold-light);
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
         }
 
         /* Pull Quote */
@@ -595,35 +526,23 @@ export default function BeyondBhagavadGitaPage() {
           For mental health, this teaching has a very specific implication. The anxiety you feel is real. The grief is real. But you are not identical to them. There is a part of you that watches these states arise and pass, and that part has never been wounded.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Ashtavakra Gita 1.5</div>
-          <div className="sanskrit">न त्वं विप्रादिको वर्णो नाश्रमी नाक्षगोचरः ।{'\n'}असङ्गोऽसि निराकारो विश्वसाक्षी सुखी भव ॥</div>
-          <div className="transliteration">na tvaṃ viprādiko varṇo nāśramī nākṣagocaraḥ |{'\n'}asaṅgo&apos;si nirākāro viśvasākṣī sukhī bhava ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">You are not any caste or stage of life. You are not perceived by the senses. You are unattached, formless, the witness of the entire universe. Knowing this, be happy.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">Every identity label (profession, status, age, personality type) is something you witness. None of it is the witness itself. Ashtavakra doesn&apos;t ask you to improve your identity or upgrade your self-image. He asks you to step back from all of it and recognize what&apos;s doing the witnessing. That recognition, he says, is happiness itself, not a reward for achieving it, but the natural state of awareness knowing itself.</div>
-          </div>
-          <div className="essence">You witness the universe. No label can contain the witness.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Ashtavakra Gita 1.5"
+          sanskrit="न त्वं विप्रादिको वर्णो नाश्रमी नाक्षगोचरः ।{'\n'}असङ्गोऽसि निराकारो विश्वसाक्षी सुखी भव ॥"
+          iast="na tvaṃ viprādiko varṇo nāśramī nākṣagocaraḥ |asaṅgo'si nirākāro viśvasākṣī sukhī bhava ||"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="You witness the universe. No label can contain the witness."
+        />
 
-        <div className="shloka-card">
-          <div className="verse-number">Ashtavakra Gita 1.17</div>
-          <div className="sanskrit">निरपेक्षो निर्विकारो निर्भरः शीतलाशयः ।{'\n'}अगाधबुद्धिरक्षुब्धो भव चिन्मात्रवासनः ॥</div>
-          <div className="transliteration">nirapekṣo nirvikāro nirbharaḥ śītalāśayaḥ |{'\n'}agādhabuddhirakṣubdho bhava cinmātravāsanaḥ ||</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Be without expectation, without modification, self-sufficient, with a cool heart. Be of unfathomable intelligence, undisturbed, established in pure awareness alone.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">This verse is the Ashtavakra Gita&apos;s compressed portrait of inner health: no expectations from the world, no reactive modifications, self-complete, cool-hearted, of unfathomable depth, undisturbed. The goal isn&apos;t emotional peak performance. It&apos;s a baseline so stable that experiences arise and pass through it without shattering it.</div>
-          </div>
-          <div className="essence">Coolness, depth, undisturbed awareness: these are one thing, not many.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Ashtavakra Gita 1.17"
+          sanskrit="निरपेक्षो निर्विकारो निर्भरः शीतलाशयः ।{'\n'}अगाधबुद्धिरक्षुब्धो भव चिन्मात्रवासनः ॥"
+          iast="nirapekṣo nirvikāro nirbharaḥ śītalāśayaḥ |agādhabuddhirakṣubdho bhava cinmātravāsanaḥ ||"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="Coolness, depth, undisturbed awareness: these are one thing, not many."
+        />
 
         {/* ── AVADHUTA GITA ── */}
         <div className="gita-header">
@@ -638,33 +557,21 @@ export default function BeyondBhagavadGitaPage() {
           For people in the grip of depression, anxiety, grief, or persistent self-criticism, this text offers something unusual: not advice, but a mirror held up to a different possibility of being. You are not the suffering. You are not the mind that keeps recycling it. Something in you has remained untouched.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Avadhuta Gita 3.15</div>
-          <div className="sanskrit">सन्तापदुःखजनको न विधिः कदाचित्{'\n'}सन्तापयोगजनितं न मनः कदाचित् ।{'\n'}यस्मादहङ्कृतिरियं न च मे कदाचित्{'\n'}ज्ञानामृतं समरसं गगनोपमोऽहम् ॥</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">I am not fate that causes suffering, nor the mind born from suffering; this ego is not mine. I am the nectar of wisdom, steady and like the sky.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">Dattatreya strips away three things people typically identify with during psychological suffering: the circumstances that caused the pain, the mind that keeps reliving it, and the ego that makes it feel personal. What remains? &ldquo;Gyanamritam&rdquo;: the nectar of wisdom, steady, unchanging, vast as the sky. This is not spiritual bypassing. It is pointing to a part of you that, regardless of what you have been through, has not been destroyed by it.</div>
-          </div>
-          <div className="essence">You are the steady, unifying wisdom beyond pain, mind, and ego.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Avadhuta Gita 3.15"
+          sanskrit="सन्तापदुःखजनको न विधिः कदाचित्{'\n'}सन्तापयोगजनितं न मनः कदाचित् ।{'\n'}यस्मादहङ्कृतिरियं न च मे कदाचित्{'\n'}ज्ञानामृतं समरसं गगनोपमोऽहम् ॥"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="You are the steady, unifying wisdom beyond pain, mind, and ego."
+        />
 
-        <div className="shloka-card">
-          <div className="verse-number">Avadhuta Gita 3.34</div>
-          <div className="sanskrit">किं नाम रोदिषि सखे न जरा न मृत्युः{'\n'}किं नाम रोदिषि सखे न च जन्म दुःखम् ।{'\n'}किं नाम रोदिषि सखे न च ते विकारो{'\n'}ज्ञानामृतं समरसं गगनोपमोऽहम् ॥</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Why do you weep, friend? You have no old age, no death, no birth, no suffering, no faults. I am the nectar of wisdom, pure and like the infinite sky beyond all.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">The opening question, &ldquo;why do you weep?&rdquo;, is not dismissive. It is genuinely curious. Dattatreya isn&apos;t telling you your grief is wrong. He is pointing to a deeper question: what part of you is crying, and is that part actually who you are? The list of things you don&apos;t have (old age, death, birth, suffering, flaws) is a claim about what your true nature actually is, underneath the biographical story the mind keeps running.</div>
-          </div>
-          <div className="essence">You are timeless wisdom, untouched by birth, death, or suffering.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Avadhuta Gita 3.34"
+          sanskrit="किं नाम रोदिषि सखे न जरा न मृत्युः{'\n'}किं नाम रोदिषि सखे न च जन्म दुःखम् ।{'\n'}किं नाम रोदिषि सखे न च ते विकारो{'\n'}ज्ञानामृतं समरसं गगनोपमोऽहम् ॥"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="You are timeless wisdom, untouched by birth, death, or suffering."
+        />
 
         <p className="pull-quote">
           &ldquo;Why do you weep, friend?&rdquo; The Avadhuta Gita isn&apos;t dismissing your grief. It&apos;s asking you which part of you is actually suffering. The answer might surprise you.
@@ -680,33 +587,21 @@ export default function BeyondBhagavadGitaPage() {
           The Ram Gita appears in the Adhyatma Ramayana. It is the teaching that Rama gives to Lakshmana before the final battle with Ravana. Unlike the battlefield setting of the Bhagavad Gita, this context is quieter: a brother sitting with his brother, asking to understand the nature of reality before the great struggle begins.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Ram Gita · Verse 55</div>
-          <div className="sanskrit">आदौ च मध्ये च तथैव चान्ततो भवं विदित्वा भयशोककारणम् ।{'\n'}हित्वा समस्तं विधिवादचोदितं भजेत्स्वमात्मानमथाखिलात्मनाम् ॥</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Knowing that fear and sorrow are the cause of the world&apos;s beginning, middle, and end, abandon all prescribed external actions and worship your own inner being as the true self of all beings.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">Rama says fear and sorrow are not problems that appear occasionally in an otherwise comfortable world. They are the texture of worldly existence itself: at the beginning, in the middle, and at the end. Once you accept this, you stop being surprised by suffering and start doing the only thing that actually works: turning inward. Not as an escape from the world, but as the only source of stability that isn&apos;t subject to the world&apos;s constant change.</div>
-          </div>
-          <div className="essence">Fear and sorrow underlie all of existence; true refuge is devotion to your own inner self.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Ram Gita · Verse 55"
+          sanskrit="आदौ च मध्ये च तथैव चान्ततो भवं विदित्वा भयशोककारणम् ।{'\n'}हित्वा समस्तं विधिवादचोदितं भजेत्स्वमात्मानमथाखिलात्मनाम् ॥"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="Fear and sorrow underlie all of existence; true refuge is devotion to your own inner self."
+        />
 
-        <div className="shloka-card">
-          <div className="verse-number">Ram Gita · Verse 40</div>
-          <div className="sanskrit">अनाद्यविद्योद्भवबुद्धिबिम्बितो जीवप्रकाशोऽयमितीर्यते चितः ।{'\n'}आत्माधियः साक्षितया पृथक्स्थितो बुध्द्यापरिच्छिन्नपरः स एव हि ॥</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">The living being is the light of consciousness reflected in intellect born from beginningless ignorance; the true self is separate from intellect as its witness and beyond its distinctions.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">Overthinking, rumination, the restless loop of &ldquo;what if&rdquo; and &ldquo;why did I&rdquo;: all of this belongs to the intellect. And the intellect, Rama says, is like a mirror reflecting consciousness, not consciousness itself. Your true self is the witness watching the intellect, not the intellect itself. When you identify with the thoughts instead of the witness, every swing of the mind feels like a swing in who you are. When you recognize the witness, you find something that doesn&apos;t swing.</div>
-          </div>
-          <div className="essence">Your true self is the unchanging watcher beyond intellect and its illusions.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Ram Gita · Verse 40"
+          sanskrit="अनाद्यविद्योद्भवबुद्धिबिम्बितो जीवप्रकाशोऽयमितीर्यते चितः ।{'\n'}आत्माधियः साक्षितया पृथक्स्थितो बुध्द्यापरिच्छिन्नपरः स एव हि ॥"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="Your true self is the unchanging watcher beyond intellect and its illusions."
+        />
 
         {/* ── HANS GITA ── */}
         <div className="gita-header">
@@ -718,33 +613,21 @@ export default function BeyondBhagavadGitaPage() {
           The Hans Gita (Hamsa Gita) is a discourse found in the Shanti Parva of the Mahabharata, where the divine swan (a symbol of discernment and purity) instructs on virtue, wisdom, and the qualities of those who have truly cultivated their inner life. Its focus is intensely practical: how does a person with real inner development actually behave when provoked, attacked, or tested?
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Hans Gita · Verse 10</div>
-          <div className="sanskrit">परश्चेदेनमति वादबानैर्भृशं विध्येच्छम एवेह कार्यः ।{'\n'}संरोष्यमाणः प्रतिहृष्यते यः स आदत्ते सुकृतं वै परस्य ॥</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">If others fiercely attack the wise person with harsh words like arrows, he remains calm. One who stays inwardly pleased despite another&apos;s anger inherits that person&apos;s goodness.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">What this verse describes is the capacity to remain internally stable when attacked, not numb, not suppressed, but genuinely at rest. The person who cannot do this will have their day wrecked by every difficult interaction. The person who can do this is carrying something that external events cannot easily disturb.</div>
-          </div>
-          <div className="essence">Calmness in the face of harsh attack transforms others&apos; anger into your own good.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Hans Gita · Verse 10"
+          sanskrit="परश्चेदेनमति वादबानैर्भृशं विध्येच्छम एवेह कार्यः ।{'\n'}संरोष्यमाणः प्रतिहृष्यते यः स आदत्ते सुकृतं वै परस्य ॥"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="Calmness in the face of harsh attack transforms others' anger into your own good."
+        />
 
-        <div className="shloka-card">
-          <div className="verse-number">Hans Gita · Verse 15</div>
-          <div className="sanskrit">अक्रोधनः क्रुध्यतां वै विशिष्टस्तथा तितिक्षुरतितिक्षोर्विशिष्टः ।{'\n'}अमानुषान्मानुषो वै विशिष्टस् तथा ज्ञानाज्ज्ञानवान्वै प्रधानः ॥</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">A person who does not get angry at angry people is superior. The tolerant one surpasses the intolerant. Among all beings, the human is distinguished by the capacity for wisdom, and among humans, the wise surpass the ignorant.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">The Hans Gita presents a hierarchy not of status but of inner capacity. The highest rung isn&apos;t wealth, power, or intelligence. It&apos;s the person who can stay calm when others are not. This is what anger management traditions, modern therapeutic frameworks, and cognitive-behavioral approaches converge on: the ability to regulate your own response instead of being governed by the other person&apos;s state.</div>
-          </div>
-          <div className="essence">True superiority lies in calmness amid anger and wisdom over ignorance.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Hans Gita · Verse 15"
+          sanskrit="अक्रोधनः क्रुध्यतां वै विशिष्टस्तथा तितिक्षुरतितिक्षोर्विशिष्टः ।{'\n'}अमानुषान्मानुषो वै विशिष्टस् तथा ज्ञानाज्ज्ञानवान्वै प्रधानः ॥"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="True superiority lies in calmness amid anger and wisdom over ignorance."
+        />
 
         <div className="highlight-box">
           <h3>What the Hans Gita Says About Anger</h3>
@@ -763,19 +646,13 @@ export default function BeyondBhagavadGitaPage() {
           The Shakti Gita is the Goddess&apos;s own teaching. It appears within the Devi Bhagavata Purana and presents a vision of divinity entirely woven into every form of existence. Its core insight for mental health is about integration: the recognition that the energy in your restlessness and the stability in your stillness are not opposites. They are two expressions of the same consciousness.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Shakti Gita 1.80</div>
-          <div className="sanskrit">कार्यब्रह्मस्वरूपेत्र विश्वास्मिन जङ्गमे मम ।{'\n'}वर्त्तते चिद्विलासस्तु स्थावरे सद्विलासिता ॥</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">In this universe shaped as the active and the supreme, my conscious play exists in all that moves, and my true presence in all that is still.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">The Goddess is saying she is in both: the movement and the stillness, the activity and the rest. We often frame inner peace as the absence of activity: you will be well when the anxious thoughts stop, when life calms down. The Shakti Gita suggests something different: the consciousness that animates your busiest, most scattered day is the same consciousness present in your most peaceful moment. Recognizing this dissolves the internal war between how you are and how you think you should be.</div>
-          </div>
-          <div className="essence">True self is present as conscious energy in movement and stable presence in stillness.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Shakti Gita 1.80"
+          sanskrit="कार्यब्रह्मस्वरूपेत्र विश्वास्मिन जङ्गमे मम ।{'\n'}वर्त्तते चिद्विलासस्तु स्थावरे सद्विलासिता ॥"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="True self is present as conscious energy in movement and stable presence in stillness."
+        />
 
         {/* ── SHAMBHU GITA ── */}
         <div className="gita-header">
@@ -787,19 +664,13 @@ export default function BeyondBhagavadGitaPage() {
           The Shambhu Gita is Shiva&apos;s teaching, found within the Skanda Purana. Shiva, as the lord of dissolution and liberation, speaks about what happens to inner obstacles (particularly fear and desire) when genuine liberation is approached. His teaching is precise on what happens to psychological suffering at its deepest level.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Shambhu Gita 6.135</div>
-          <div className="sanskrit">भयमैथुनरूपिण्यो जीवन्मुक्तौ घटत्तयः ।{'\n'}राजसिक्यो विलीयन्ते स्वीयेषु कारणेवलम् ॥</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">In the liberated being, the fear and passion-like rajasic tendencies dissolve completely, merging back into their own source.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">Shiva does not describe fear as something to be overcome through effort or willpower. He describes it as something that dissolves naturally, by returning to its own origin. Suppressing fear doesn&apos;t dissolve it; it pressurizes it. Fighting fear often intensifies it. Shiva&apos;s teaching points toward something different: when you trace fear back to where it arises in you, rather than endlessly reacting to it in the world, it loses its grip. The source of fear, when seen clearly, cannot maintain its power.</div>
-          </div>
-          <div className="essence">Fears and desires vanish by dissolving naturally into their own origin in liberation.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Shambhu Gita 6.135"
+          sanskrit="भयमैथुनरूपिण्यो जीवन्मुक्तौ घटत्तयः ।{'\n'}राजसिक्यो विलीयन्ते स्वीयेषु कारणेवलम् ॥"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="Fears and desires vanish by dissolving naturally into their own origin in liberation."
+        />
 
         <p className="pull-quote">
           Shiva&apos;s teaching on fear isn&apos;t about overcoming it through courage. It&apos;s about following it back to where it arises, and finding that at its source, it cannot sustain itself.
@@ -815,33 +686,21 @@ export default function BeyondBhagavadGitaPage() {
           The Vishnu Gita appears within the Mahabharata&apos;s Shanti Parva as Vishnu&apos;s direct teaching on the nature of suffering, liberation, and how the senses bind the mind. It is particularly relevant for those caught in cycles of craving and aversion (wanting certain outcomes desperately, pushing others away) who find that this push and pull is the very engine of their anxiety.
         </p>
 
-        <div className="shloka-card">
-          <div className="verse-number">Vishnu Gita 1.75</div>
-          <div className="sanskrit">अज्ञानदेव भीतीनामुत्पत्तिजायते सुरा : ।{'\n'}अज्ञानमेव जन्तूनां हेतुस्तापत्रयस्य वै ॥</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">O divine beings, ignorance alone gives rise to fear. Ignorance alone is the cause of the threefold suffering.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">Vishnu names ignorance (not circumstance, not bad luck, not other people) as the root of fear and suffering. This is not fatalistic. It is liberating: if ignorance is the cause, then clarity is the cure. Every genuine moment of self-understanding is not just intellectually satisfying. It is actively therapeutic.</div>
-          </div>
-          <div className="essence">Fear and suffering arise only from ignorance, not from reality itself.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Vishnu Gita 1.75"
+          sanskrit="अज्ञानदेव भीतीनामुत्पत्तिजायते सुरा : ।{'\n'}अज्ञानमेव जन्तूनां हेतुस्तापत्रयस्य वै ॥"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="Fear and suffering arise only from ignorance, not from reality itself."
+        />
 
-        <div className="shloka-card">
-          <div className="verse-number">Vishnu Gita 4.76</div>
-          <div className="sanskrit">इन्द्रियम्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ ।{'\n'}तयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ ॥</div>
-          <div className="meaning">
-            <div className="meaning-label">Translation</div>
-            <div className="meaning-text">Every sense has attachment for its own objects and aversion for the opposite. One should not be controlled by either, for these two are the obstacles of one who seeks freedom.</div>
-          </div>
-          <div className="insight">
-            <div className="insight-label">Why This Matters for Mental Health</div>
-            <div className="insight-text">Vishnu is precise: the issue is not your senses, not pleasure, not pain. The issue is being controlled by the pull of craving and the push of aversion. This is almost exactly what modern ACT (Acceptance and Commitment Therapy) describes as psychological inflexibility, the state of being governed by emotional reactions rather than freely choosing your response. Craving and aversion are called &ldquo;paripanthi&rdquo;: obstacles, enemies of freedom.</div>
-          </div>
-          <div className="essence">Refusing to be controlled by attraction or aversion frees your movement and choice.</div>
-        </div>
+                <ShlokaCard
+          verseRef="Vishnu Gita 4.76"
+          sanskrit="इन्द्रियम्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ ।{'\n'}तयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ ॥"
+          meaningLabel="Translation"
+          insightLabel="Why This Matters for Mental Health"
+          essence="Refusing to be controlled by attraction or aversion frees your movement and choice."
+        />
 
         <h2>What All These Gitas Share</h2>
         <p>

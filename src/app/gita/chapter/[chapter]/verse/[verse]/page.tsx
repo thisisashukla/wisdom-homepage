@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import React from 'react'
 import { notFound } from 'next/navigation'
 import {
   getAllChapters,
@@ -27,6 +28,21 @@ export async function generateStaticParams() {
     }
   }
   return out
+}
+
+/**
+ * Split Sanskrit text at each single danda (।), placing each pada on its own line.
+ * Lookbehind keeps the danda attached to the first pada.
+ */
+function formatSanskrit(text: string): React.ReactNode {
+  const parts = text.split(/(?<=।)\s+/)
+  if (parts.length <= 1) return text
+  return parts.map((part, i) => (
+    <React.Fragment key={i}>
+      {i > 0 && <br />}
+      {part}
+    </React.Fragment>
+  ))
 }
 
 /** Trim a string to ~maxChars without breaking a word; appends ellipsis. */
@@ -193,7 +209,7 @@ export default async function VersePage({ params }: { params: Params }) {
 
       <article className="gita-verse-card">
         <div className="gita-sanskrit" lang="sa">
-          {verse.sanskrit}
+          {formatSanskrit(verse.sanskrit)}
         </div>
 
         <div className="gita-translation">
