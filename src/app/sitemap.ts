@@ -49,6 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.85,
     },
+    {
+      url: `${BASE}/blogs/rise-and-failure-of-gitagpt`,
+      lastModified: new Date('2026-06-19'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
     // June 2026 batch — 9 new topic/concept pages
     ...[
       'bhagavad-gita-2-47-karmanye-vadhikaraste',

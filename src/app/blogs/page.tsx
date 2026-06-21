@@ -229,6 +229,7 @@ const pageCSS = `
       .card-thumb-gunas::before    { content: "गु"; font-family: "Noto Sans Devanagari", serif; }
       .card-thumb-students::before { content: "अ"; font-family: "Noto Sans Devanagari", serif; }
       .card-thumb-stoic::before    { content: "तु"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-gitagpt::before  { content: "AI"; font-family: "Playfair Display", serif; font-size: 110px; font-weight: 900; }
 
       /* ── CARD THUMB COLOR GROUPS ── */
 
@@ -266,6 +267,11 @@ const pageCSS = `
       }
 
       /* Group E: Comparative / Crossover — cool steel-blue */
+      .card-thumb-gitagpt {
+        background: linear-gradient(135deg, rgba(196, 74, 74, 0.13) 0%, var(--bg-alt) 65%);
+        border-top: 2px solid rgba(220, 120, 90, 0.65);
+      }
+
       .card-thumb-stoic {
         background: linear-gradient(135deg, rgba(55, 100, 190, 0.13) 0%, var(--bg-alt) 65%);
         border-top: 2px solid rgba(80, 140, 220, 0.70);
@@ -934,10 +940,33 @@ export default function BlogIndexPage() {
       {/* TOPIC GUIDES */}
       <div className="section-head" style={{marginTop: '56px'}}>
         <h2>Gita Teachings, <em>Topic Guides</em></h2>
-        <span className="section-count">15 articles published</span>
+        <span className="section-count">16 articles published</span>
       </div>
 
       <div className="articles-grid">
+        {/* Rise and Failure of GitaGPT */}
+        <a href="/blogs/rise-and-failure-of-gitagpt" className="article-card" data-mp-article="Rise and Failure of GitaGPT">
+          <div className="card-thumb card-thumb-gitagpt">
+            <div className="card-chapter-badge">Product Teardown · Religious AI · India</div>
+            <div className="card-thumb-title">The Rise and Failure of GitaGPT:<br /><em>What Went Wrong When India Put Krishna on a GPU</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">गीता-GPT</span>
+              <span className="tag tag-philosophy">AI · Religion · India</span>
+              <span className="tag tag-shloka">5 Chatbots</span>
+              <span className="tag tag-chapter">Deep Read</span>
+            </div>
+            <div className="card-desc">
+              In early 2023, a Google engineer launched GitaGPT as a weekend project. Five clones followed in 60 days. Several told users it was fine to kill if it was their dharma. A product teardown of what those bots got wrong, and what a real Krishna assistant needs.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~14 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
         {/* Krishna's Three Paths */}
         <a href="/blogs/krishna-three-paths-bhagavad-gita" className="article-card" data-mp-article="Krishna Three Paths">
           <div className="card-thumb card-thumb-3paths">
