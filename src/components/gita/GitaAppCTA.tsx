@@ -104,7 +104,7 @@ export default function GitaAppCTA({ variant, locale = 'en', verse, chapter }: P
             <div className="gita-cta-phone-island" />
             <div className="gita-cta-phone-screen">
               <img
-                src="/assets/app-you-are-your-greatest-ally.webp"
+                src="/assets/home-screen-quote3.webp"
                 alt={t.captionApp}
                 loading="lazy"
               />

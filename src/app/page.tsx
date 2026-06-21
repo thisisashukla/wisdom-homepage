@@ -92,8 +92,8 @@ export default function HomePage() {
             <div className="iphone-mock">
               <div className="iphone-screen">
                 <img
-                  src="/assets/app-path-wisdom.webp"
-                  alt="Wisdom app Path of Wisdom — Stillness, Witness and Gyan Mastery nodes from the Bhagavad Gita"
+                  src="/assets/user-progress.webp"
+                  alt="Wisdom app progress screen — Seeker of Wisdom on Jnana Yoga showing day streak, bookmarks, practices completed, and 43% Path of Wisdom progress"
                   loading="lazy"/>
               </div>
             </div>
@@ -102,8 +102,8 @@ export default function HomePage() {
             <div className="iphone-mock">
               <div className="iphone-screen">
                 <img
-                  src="/assets/app-you-are-your-greatest-ally.webp"
-                  alt="Wisdom app today's verse home screen — Bhagavad Gita 6.5: 'You are your own greatest ally and your own greatest challenge'"
+                  src="/assets/home-screen-quote2.webp"
+                  alt="Wisdom app today's verse home screen — Ashtavakra Gita 20.10: 'What if your true self is untouched by life's ups and downs?'"
                   fetchPriority="high"/>
               </div>
             </div>
@@ -112,8 +112,8 @@ export default function HomePage() {
             <div className="iphone-mock">
               <div className="iphone-screen">
                 <img
-                  src="/assets/app-offering.webp"
-                  alt="Wisdom app Bhakti offering practice — a journal-style reflection prompt after a Bhagavad Gita verse"
+                  src="/assets/detailed-screen.webp"
+                  alt="Wisdom app detailed verse screen — Ashtavakra Gita 2.17 with The Teaching, The Insight, and the Sanskrit verse"
                   loading="lazy"/>
               </div>
             </div>
@@ -800,8 +800,8 @@ export default function HomePage() {
           <div className="split-phone">
             <div className="phone-frame">
               <img
-                src="/assets/app-you-are-your-greatest-ally.webp"
-                alt="Wisdom app daily teaching home screen showing Bhagavad Gita 6.5 and what it means today"
+                src="/assets/home-screen-quote1.webp"
+                alt="Wisdom app daily teaching home screen showing Ashtavakra Gita 2.1 — 'You are pure awareness, untouched by confusion' — on the Path of Wisdom"
                 loading="lazy"/>
             </div>
           </div>
@@ -1011,8 +1011,8 @@ export default function HomePage() {
           <div className="split-phone">
             <div className="phone-frame">
               <img
-                src="/assets/app-path-devotion.webp"
-                alt="Wisdom app path progress showing Trust, Devotion and Bhakti Mastery nodes on the Path of Devotion"
+                src="/assets/app-path-wisdom.webp"
+                alt="Wisdom app path progress showing Stillness, Witness and Gyan Mastery nodes unlocking on the Path of Wisdom"
                 loading="lazy"/>
             </div>
           </div>
@@ -1026,12 +1026,12 @@ export default function HomePage() {
         <div className="split flip">
           <div className="split-text">
             <span className="pill">The Scripture</span>
-            <h2>Every quote traces back to<br/>a Bhagavad Gita verse.</h2>
+            <h2>Every quote traces back to<br/>a Hindu scripture.</h2>
             <p>
-              Wisdom draws every quote from the Bhagavad Gita and core Hindu
-              scriptures. When a quote resonates, you can go deeper into the
-              actual Sanskrit verse and detailed meaning to deepen your
-              practice.
+              Wisdom draws every quote from the Bhagavad Gita, the Upanishads,
+              the Ashtavakra Gita and other core Hindu scriptures. When a quote
+              resonates, you can go deeper into the actual Sanskrit verse and
+              detailed meaning to deepen your practice.
             </p>
             <ul className="check-list">
               <li>
@@ -1055,8 +1055,8 @@ export default function HomePage() {
           <div className="split-phone">
             <div className="phone-frame">
               <img
-                src="/assets/app-verse-sanskrit.webp"
-                alt="Wisdom app sacred verse screen showing Sanskrit Bhagavad Gita shloka with detailed meaning"
+                src="/assets/sanskrit-word-by-word.webp"
+                alt="Wisdom app verse screen — Ashtavakra Gita 2.17 in Sanskrit Devanagari with English translation and word-by-word transliteration"
                 loading="lazy"/>
             </div>
           </div>
