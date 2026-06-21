@@ -628,9 +628,6 @@ export default function CompleteStructurePage() {
           iast="dharmakṣetre kurukṣetre samavetā yuyutsavaḥ | māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya ||"
           essence="My sons&quot;, not &quot;the Kauravas.&quot; The disease is in the first word."
         />
-          </div>
-          <div className="shloka-essence">The diagnosis before the prescription.</div>
-        </div>
 
         <p>
           Why start with the soul? Because every practical teaching that follows, about action, duty, attachment, peace, rests on this foundation. If the self that you're protecting when you grieve is actually eternal and indestructible, then the nature of "loss" is different. If the soul cannot be killed, then certain arguments about the moral horror of battle need to be re-examined.
@@ -641,10 +638,8 @@ export default function CompleteStructurePage() {
           speaker="Krishna"
           sanskrit="न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"
           iast="na jāyate mriyate vā kadācinnāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||"
+          essence="The foundation that makes all the other teachings possible."
         />
-          </div>
-          <div className="shloka-essence">The foundation that makes all the other teachings possible.</div>
-        </div>
 
         <p>
           With the metaphysical foundation in place, Krishna moves to the practical. Chapter 2 gives us 2.47, the verse that has probably been quoted more than any other in the Gita. And the reason it lands so hard is exactly because it comes after the soul teaching. Once you understand that you are not the outcome, you can act differently.

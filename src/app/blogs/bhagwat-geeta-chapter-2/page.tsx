@@ -805,12 +805,8 @@ export default function ChapterTwoPage() {
           speaker="Krishna"
           sanskrit="न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"
           iast="na jāyate mriyate vā kadācinnāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||"
+          essence="You are eternal, nothing can destroy your true self."
         />
-          </div>
-          <div className="shloka-essence">
-            You are eternal, nothing can destroy your true self.
-          </div>
-        </div>
 
         <p>
           The logic is elegant. If the soul is unborn and eternal, then "birth" and "death" are not absolute events, they are transitions of the body, not the self. They are like changing clothes.

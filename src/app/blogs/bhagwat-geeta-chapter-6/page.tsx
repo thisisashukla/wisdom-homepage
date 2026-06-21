@@ -661,12 +661,6 @@ export default function ChapterPage6() {
           iast="bandhur ātmā''tmanas tasya yenātmaivātmanā jitaḥ | anātmanas tu śatrutve vartetātmaiva śatruvat ||"
           essence="The same inner nature that frees you can also fight you."
         />
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Nothing gained in sincere practice is ever truly lost."
-          </div>
-        </div>
 
         <div className="highlight-box">
           <p>

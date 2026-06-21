@@ -677,18 +677,10 @@ export default function ChapterPage17() {
           speaker="Krishna"
           sanskrit="सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत । श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः ॥"
           iast="sattvānurūpā sarvasya śraddhā bhavati bhārata | śraddhā-mayo'yaṃ puruṣo yo yac-chraddhaḥ sa eva saḥ ||"
+          insightLabel="The most condensed psychology in the Gita"
+          insight="Trust is not what you say you believe. It is what you actually act on when you act without thinking. Where do you instinctively turn when something goes wrong? What do you reach for when you need reassurance? That is your real trust. The Gita is saying you are gradually becoming the thing you reach for. The implication is uncomfortable. It is also accurate."
+          essence="Trust is not just held; it becomes the person."
         />
-            <div>
-              <div className="shloka-col-label">The most condensed psychology in the Gita</div>
-              <div className="shloka-insight">
-                Trust is not what you say you believe. It is what you actually act on when you act without thinking. Where do you instinctively turn when something goes wrong? What do you reach for when you need reassurance? That is your real trust. The Gita is saying you are gradually becoming the thing you reach for. The implication is uncomfortable. It is also accurate.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "Trust is not just held; it becomes the person."
-          </div>
-        </div>
 
         <div className="pull-quote">
           <blockquote>

@@ -765,12 +765,8 @@ export default function ChapterPage10() {
           speaker="Krishna"
           sanskrit="वेदानां सामवेदोऽस्मि देवानामस्मि वासवः । इन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना ॥"
           iast="vedānāṃ sāma-vedo'smi devānām asmi vāsavaḥ | indriyāṇāṃ manaś cāsmi bhūtānām asmi cetanā ||"
+          essence="The divine is not elsewhere; it is the awareness within everything."
         />
-          </div>
-          <div className="shloka-essence">
-            "The divine is not elsewhere; it is the awareness within everything."
-          </div>
-        </div>
 
         <div className="highlight-box">
           <p>
@@ -838,6 +834,11 @@ export default function ChapterPage10() {
           iast="yad yad vibhūtimat sattvaṃ śrīmad ūrjitam eva vā | tat tad evāvagaccha tvaṃ mama tejo'ṃśa-sambhavam ||"
           essence="Every genuine greatness is only a spark of my radiance."
         />
+
+        <div className="faq-section" id="faq">
+          <div className="faq-header">
+            <div className="faq-header-label">Frequently Asked Questions</div>
+            <h2>Questions About Bhagavad Gita Chapter 10</h2>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is vibhuti in the Bhagavad Gita?</div>

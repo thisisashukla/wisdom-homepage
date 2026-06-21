@@ -650,18 +650,10 @@ export default function ChapterPage8() {
           speaker="Krishna"
           sanskrit="श्रीभगवानुवाच अक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते । भूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः ॥"
           iast="śrī bhagavān uvāca | akṣaraṃ brahma paramaṃ svabhāvo'dhyātmam ucyate | bhūta-bhāvodbhava-karo visargaḥ karma-saṃjñitaḥ ||"
+          insightLabel="Why precise definitions matter here"
+          insight="The Gita is about to make claims about death that depend on these terms. Without the definitions, the later verses become mystical platitudes. With them, the claim is structural: there is an imperishable, there is your particular nature, and there is action, and these three are not the same. Clarity about what is what makes the rest of the chapter possible."
+          essence="What lasts, what you are, and what you do are not the same."
         />
-            <div>
-              <div className="shloka-col-label">Why precise definitions matter here</div>
-              <div className="shloka-insight">
-                The Gita is about to make claims about death that depend on these terms. Without the definitions, the later verses become mystical platitudes. With them, the claim is structural: there is an imperishable, there is your particular nature, and there is action, and these three are not the same. Clarity about what is what makes the rest of the chapter possible.
-              </div>
-            </div>
-          </div>
-          <div className="shloka-essence">
-            "What lasts, what you are, and what you do are not the same."
-          </div>
-        </div>
 
         {/* DIVIDER */}
         <div className="section-divider">

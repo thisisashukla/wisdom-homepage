@@ -687,11 +687,6 @@ export default function ChapterPage12() {
           iast="kleśo'dhikataras teṣām avyaktāsakta-cetasām | avyaktā hi gatir duḥkhaṃ dehavadbhir avāpyate ||"
           essence="The subtlest path is hardest for a body-bound mind."
         />
-          </div>
-          <div className="shloka-essence">
-            "Real devotion stays even when life feels hostile or kind."
-          </div>
-        </div>
 
         <div className="highlight-box">
           <p>
