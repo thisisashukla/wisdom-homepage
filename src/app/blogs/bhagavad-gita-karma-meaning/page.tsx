@@ -517,7 +517,9 @@ export default function KarmaMeaningPage() {
           sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
           iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
           meaningLabel="Translation"
+          meaning="You have a right to perform your prescribed duties, but you are not entitled to the fruits. Never consider yourself the cause of the results, and never be attached to not doing your duty."
           insightLabel="What This Teaches"
+          insight="This single verse contains four instructions. First: act. You have not just permission but duty to perform action. Second: don't claim the fruits. The result is not yours to own. Third: don't let the anticipated fruit be your motive. If you're doing something only for the reward, you're building dependence on an outcome you don't fully control. Fourth: don't use this teaching to justify inaction. Detachment from results is not the same as don't bother. All four pieces together describe the actual practice."
           essence="Do your duty. Let go of the outcome. Both halves matter."
         />
 
@@ -548,7 +550,9 @@ export default function KarmaMeaningPage() {
           sanskrit="यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः । तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥"
           iast="yajñārthātkarmaṇo'nyatra loko'yaṃ karmabandhanaḥ | tadarthaṃ karma kaunteya muktasaṃgaḥ samācara ||"
           meaningLabel="Translation"
+          meaning="Action done for any reason other than as a sacred offering (yajna) creates bondage in this world. Therefore, perform your duties as an offering, free from attachment, O Arjuna."
           insightLabel="What This Teaches"
+          insight="The Gita's transformation of karma is not about what you do. It's about why. The exact same action (cooking a meal, writing code, teaching a class, caring for someone) binds you if done with ego-craving and frees you if done as an offering. What changes is the consciousness you bring to it. Yajna (usually translated as sacrifice or sacred offering) is the key. You're performing the action not for personal gain but as service to something larger."
           essence="Freedom comes from acting for a higher purpose, not personal gain."
         />
 
@@ -573,7 +577,9 @@ export default function KarmaMeaningPage() {
           sanskrit="यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन । ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥"
           iast="yathaidhāṃsi samiddho'gnirbhasmasātkurute'rjuna | jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā ||"
           meaningLabel="Translation"
+          meaning="As a blazing fire reduces wood to ashes, the fire of knowledge reduces all karma to ashes, O Arjuna."
           insightLabel="What This Teaches"
+          insight="This is the Gita's most important statement about past karma. It is not permanent. It is not fate. Understanding (genuine understanding of the nature of action and consciousness) burns it. The image is not of gradual dissolution but of fire consuming wood completely. This means: you are not locked into your past. Change of consciousness can alter the trajectory of your life."
           essence="Knowledge is the fire that burns away all karma."
         />
 

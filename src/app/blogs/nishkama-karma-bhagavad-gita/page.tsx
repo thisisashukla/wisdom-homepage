@@ -557,7 +557,9 @@ export default function NishkamaKarmaPage() {
           sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
           iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
           meaningLabel="Translation"
+          meaning="You have the right to do your actions, but not to control the results. Do not be attached to the fruits of your actions, and do not fall into inaction."
           insightLabel="What This Teaches"
+          insight="This verse builds viveka (discernment) and steadiness. It helps us practice detached effort, reducing anxiety, and empowering us to keep acting even in uncertainty. Notice the four distinct instructions packed here: act, do not claim the fruit, do not let the fruit be your motive, and crucially, do not use this teaching to justify inaction. All four are required together."
           essence="Focus on right action, let go of attachment to results."
         />
 
@@ -575,7 +577,9 @@ export default function NishkamaKarmaPage() {
           sanskrit="यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः । तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥"
           iast="yajñārthātkarmaṇo'nyatra loko'yaṃ karmabandhanaḥ | tadarthaṃ karma kaunteya muktasaṃgaḥ samācara ||"
           meaningLabel="Translation"
+          meaning="When you do your duties only for yourself, you get trapped by their results. But if you do your duties for Yajna, with selflessness and for the larger order, you stay free. So, do what is right without being attached."
           insightLabel="What This Teaches"
+          insight="This verse nurtures the mental freedom that comes from selfless action. It encourages cultivating detachment and aligning your work with something beyond personal benefit, which is a tool for resilience and inner calm. The action itself does not change. What changes is what the action is for. When it is for you and your craving, it binds. When it is offered outward, it frees."
           essence="Selfless action, done as an offering, brings true freedom."
         />
 
@@ -597,7 +601,9 @@ export default function NishkamaKarmaPage() {
           sanskrit="तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥"
           iast="tasmādasaktaḥ satataṃ kāryaṃ karma samācara | asakto hyācarankarma paramāpnoti pūruṣaḥ ||"
           meaningLabel="Translation"
+          meaning="Do your duties faithfully, but do not cling to their results. Acting without selfish attachment helps you connect with your true, highest Self."
           insightLabel="What This Teaches"
+          insight="Practicing detachment from results creates equanimity. It trains you to stay balanced, direct your energy toward purposeful action, and avoid stress caused by obsessing over things beyond control. The verse does not promise you will get what you want. It promises something the Gita considers more valuable: you become free while acting."
           essence="Detached action leads to inner freedom and the ultimate realization."
         />
 
@@ -606,7 +612,9 @@ export default function NishkamaKarmaPage() {
           sanskrit="त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः । कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥"
           iast="tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ | karmaṇyabhipravṛtto'pi naiva kiñcitkaroti saḥ ||"
           meaningLabel="Translation"
+          meaning="When a person lets go of attachment to results, feels content always, and does not depend on anything, then even while acting, they are not truly 'doing' anything."
           insightLabel="What This Teaches"
+          insight="This verse trains your discerning intellect to focus on the process, not just the results, cultivating inner contentment and resilience. Nityatripta means always content, not content after the good outcome arrives. The contentment precedes the result because it is not conditional on the result."
           essence="Freedom comes when you act without clinging to success or failure."
         />
 
@@ -652,7 +660,9 @@ export default function NishkamaKarmaPage() {
           sanskrit="न हि देहभृता शक्यं त्यक्तुं कर्माण्यशेषतः । यस्तु कर्मफलत्यागी स त्यागीत्यभिधीयते ॥"
           iast="na hi dehabhṛtā śakyaṃ tyaktuṃ karmāṇyaśeṣataḥ | yastu karmaphalatyāgī sa tyāgītyabhidhīyate ||"
           meaningLabel="Translation"
+          meaning="A person living in a body cannot completely stop doing actions. Only giving up the desire for rewards from those actions makes someone a true tyagi (renunciate)."
           insightLabel="What This Teaches"
+          insight="This verse helps you develop detachment from outcomes and become more present and less burdened by expectations. The Gita is closing the renunciation escape hatch again. Real renunciation is not leaving your responsibilities. It is doing your responsibilities while releasing the craving for what you hope they will produce. The tyagi, the one who has given up, has given up outcome-craving, not action."
           essence="Letting go of the desire for results brings real freedom and peace."
         />
 

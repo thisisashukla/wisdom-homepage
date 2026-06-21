@@ -611,7 +611,9 @@ export default function GitaVsStoicismPage() {
         sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।"
         iast="karmaṇyevādhikāraste mā phaleṣu kadācana"
         meaningLabel="Translation"
+        meaning="You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions."
         insightLabel="The Parallel"
+        insight="The Gita maps almost exactly onto Epictetus's dichotomy. The Sanskrit is precise: karmanyi (in action), eva (only), adhikarah (your rightful domain) — ma phaleSu kadacana (never in the fruits, not once). Action (karma) is yours. The fruit (phala) is not. And crucially, the verse adds a third instruction that is often missed: ma te sango'stvakarmayi — do not become attached to inaction either. Epictetus draws a line between internals and externals. The Gita draws the same line and then warns you not to use it as an excuse to stop acting altogether. Both traditions arrive at the same practical instruction: full effort, released grip."
       />
 
       <h2>Similarity 2: Virtue Is the Only True Good</h2>
@@ -674,7 +676,9 @@ export default function GitaVsStoicismPage() {
         sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।"
         iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt"
         meaningLabel="Translation (BG 3.35)"
+        meaning="Better is one's own dharma, though imperfectly performed, than the dharma of another well performed."
         insightLabel="The Parallel"
+        insight="Svadharma — your own duty in your own circumstances — maps closely to Epictetus's act the part given to you. The Gita states this twice, in slightly different registers. BG 3.35 says your own imperfect duty is better than another's well-executed one — and adds that svadharme nidhanam sreyah: dying in your own duty is preferable to following another's path. BG 18.47 repeats the first line but adds svabhava-niyatam karma: action fixed by your own nature. The Gita's point is not merely social role but alignment between action and nature. Epictetus, born a slave, performed his role with such completeness that he became one of the most admired philosophers of his century. Both traditions say: you may not have chosen this role. Do it with your whole nature. That is what you have."
       />
 
       <h2>Similarity 5: Equanimity in Success and Failure</h2>
@@ -690,7 +694,9 @@ export default function GitaVsStoicismPage() {
         sanskrit="सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥"
         iast="sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||"
         meaningLabel="Translation"
+        meaning="Be equal in pleasure and pain, in gain and loss, in victory and defeat. Then enter the battle. You will not incur sin."
         insightLabel="The Parallel"
+        insight="Both Marcus and Krishna are asking for the same inner posture: steadiness regardless of outcome. The Sanskrit lists the pairs explicitly — sukha-duhkhe (pleasure and pain), labhalabhau (gain and loss), jayajayau (victory and defeat) — and asks you to hold them same (same krtva). Not equally good. Not indifferent. Same. The Stoic equivalent is Marcus's word eudaimonia — flourishing — which the Stoics held does not come in degrees and cannot be added to or subtracted from by external events. Neither tradition is asking you to stop caring. Both are asking you to locate caring in the action rather than in what the action produces."
         essence="Same quality of mind in all circumstances."
       />
 
@@ -727,7 +733,9 @@ export default function GitaVsStoicismPage() {
         sanskrit="य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् । उभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥"
         iast="ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam | ubhau tau na vijānīto nāyaṃ hanti na hanyate ||"
         meaningLabel="Translation"
+        meaning="Those who think the atman kills or is killed are mistaken. The atman neither kills nor is killed."
         insightLabel="The Parallel and the Difference"
+        insight="Both traditions arrive at the same practical outcome: the fear of death should not dominate your choices. But the routes are very different. The Gita grounds this in a precise metaphysics of the atman. BG 2.20 piles up five Sanskrit terms for this: aja (unborn), nitya (eternal), sasvata (everlasting), purana (ancient, beginningless), and avyaya (without decay). The self is not merely persistent; it is constitutively outside the categories of birth and death. Stoicism reaches the same practical destination by a different road: death is not an evil because evil requires harm to the rational faculty, and death ends the rational faculty rather than harming it. Marcus's memento mori is a cognitive discipline for the living. The Gita's teaching is a metaphysical claim about what the self actually is. They agree on the behavioral prescription; they disagree, fundamentally, on why."
       />
 
       <h2>Similarity 8: Service, Duty, and the Common Good</h2>

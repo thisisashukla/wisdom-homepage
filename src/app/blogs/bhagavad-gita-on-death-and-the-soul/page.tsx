@@ -527,7 +527,9 @@ export default function DeathAndSoulPage() {
           sanskrit="देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥"
           iast="dehino'sminyathā dehe kaumāraṃ yauvanaṃ jarā | tathā dehāntaraprāptirdhīrastatra na muhyati ||"
           meaningLabel="Translation"
+          meaning="Just as the body goes through childhood, youth, and old age, in the same way the ātman moves from one body to another. The wise do not get confused or disturbed by this."
           insightLabel="What This Teaches"
+          insight="The argument is an analogy. You were once a child. That child's body no longer exists. But no one says you died between childhood and adulthood. The dehi passed through those forms. Death, Krishna is suggesting, is the same kind of transition, just more complete. The wise person sees this and is not thrown by it."
           essence="You are the changeless ātman; let go of fear when facing change."
         />
 
@@ -545,7 +547,9 @@ export default function DeathAndSoulPage() {
           sanskrit="नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः । न चैनं क्लेदयन्त्यापो न शोषयति मारुतः ॥"
           iast="nainaṃ chindanti śastrāṇi nainaṃ dahati pāvakaḥ | na cainaṃ kledayantyāpo na śoṣayati mārutaḥ ||"
           meaningLabel="Translation"
+          meaning="Weapons cannot cut it. Fire cannot burn it. Water cannot wet it. Wind cannot dry it."
           insightLabel="What This Teaches"
+          insight="The four elements in classical Indian cosmology are earth, fire, water, and air. Their characteristic actions are: earth displaces, fire burns, water wets, wind dries. Krishna is saying the atman is invulnerable to all four of these actions. This is not because the atman is very tough or well-protected. It is because the atman is not of the same order of reality as anything these elements can affect. You cannot cut what is not material. You cannot burn what has no substance to combust."
           essence="Your ātman cannot be harmed by anything outside. You are forever whole within."
         />
 
@@ -567,7 +571,9 @@ export default function DeathAndSoulPage() {
           sanskrit="न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"
           iast="na jāyate mriyate vā kadācinnāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||"
           meaningLabel="Translation"
+          meaning="The atman never takes birth and never dies. It does not come into being nor ceases to exist. It is birthless (aja), eternal (nitya), changeless (shashvata), and beginningless (purana). Even if the sharira is destroyed, the atman is not harmed."
           insightLabel="What This Teaches"
+          insight="The last line is the pivot: na hanyate hanyamane sharire. Even when the body is being slain, the atman is not slain. This is spoken to a man on a battlefield. It is not abstract comfort. It is a claim about what is actually happening when a body dies, stated in the plainest possible terms. The sharira ends. The atman does not."
           essence="The atman is birthless, eternal, and untouched by destruction."
         />
 
@@ -585,7 +591,9 @@ export default function DeathAndSoulPage() {
           sanskrit="वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥"
           iast="vāsāṃsi jīrṇāni yathā vihāya navāni gṛhṇāti naro'parāṇi | tathā śarīrāṇi vihāya jīrṇānyanyāni saṃyāti navāni dehī ||"
           meaningLabel="Translation"
+          meaning="Just as a person discards worn-out clothes and puts on new ones, the dehi leaves behind old, worn-out bodies and moves into new ones."
           insightLabel="What This Teaches"
+          insight="The analogy is deliberately mundane. Changing clothes is not a crisis. The person doing the changing is not diminished by it. What changes is the outer layer. What continues is the one wearing it. The Gita is saying that the relationship between the dehi and the sharira is exactly this. The body is a garment. It wears out. The dehi takes another. What the analogy does not address is memory, personality, or the specifics of what continues. The Gita is making a structural point, not a personal one."
           essence="You are not the sharira; you are the ever-renewing dehi."
         />
 
@@ -629,7 +637,9 @@ export default function DeathAndSoulPage() {
           sanskrit="ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥"
           iast="mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ | manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati ||"
           meaningLabel="Translation"
+          meaning="Every living being in this world is an eternal part of Paramātma, but becomes attached to the mind and five senses, mistaking them to be its true self."
           insightLabel="What This Teaches"
+          insight="The jiva (individual soul) is described as an eternal amsha, a portion of the divine. It is sanātana, without beginning or end. But it becomes entangled in the mind and senses, forgetting its origin. After death, this entanglement continues into the next life. The karma accumulated through the attachment to the senses draws the jiva into a new body suited to that karma. This is the Gita's brief account of what continues and why."
           essence="You are always a part of Paramātma, greater than your mind or senses."
         />
 

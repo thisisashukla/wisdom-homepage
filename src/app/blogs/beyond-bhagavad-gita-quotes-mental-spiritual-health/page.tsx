@@ -531,7 +531,9 @@ export default function BeyondBhagavadGitaPage() {
           sanskrit="न त्वं विप्रादिको वर्णो नाश्रमी नाक्षगोचरः ।{'\n'}असङ्गोऽसि निराकारो विश्वसाक्षी सुखी भव ॥"
           iast="na tvaṃ viprādiko varṇo nāśramī nākṣagocaraḥ |asaṅgo'si nirākāro viśvasākṣī sukhī bhava ||"
           meaningLabel="Translation"
+          meaning="You are not any caste or stage of life. You are not perceived by the senses. You are unattached, formless, the witness of the entire universe. Knowing this, be happy."
           insightLabel="Why This Matters for Mental Health"
+          insight="Every identity label (profession, status, age, personality type) is something you witness. None of it is the witness itself. Ashtavakra doesn't ask you to improve your identity or upgrade your self-image. He asks you to step back from all of it and recognize what's doing the witnessing. That recognition, he says, is happiness itself, not a reward for achieving it, but the natural state of awareness knowing itself."
           essence="You witness the universe. No label can contain the witness."
         />
 
@@ -540,7 +542,9 @@ export default function BeyondBhagavadGitaPage() {
           sanskrit="निरपेक्षो निर्विकारो निर्भरः शीतलाशयः ।{'\n'}अगाधबुद्धिरक्षुब्धो भव चिन्मात्रवासनः ॥"
           iast="nirapekṣo nirvikāro nirbharaḥ śītalāśayaḥ |agādhabuddhirakṣubdho bhava cinmātravāsanaḥ ||"
           meaningLabel="Translation"
+          meaning="Be without expectation, without modification, self-sufficient, with a cool heart. Be of unfathomable intelligence, undisturbed, established in pure awareness alone."
           insightLabel="Why This Matters for Mental Health"
+          insight="This verse is the Ashtavakra Gita's compressed portrait of inner health: no expectations from the world, no reactive modifications, self-complete, cool-hearted, of unfathomable depth, undisturbed. The goal isn't emotional peak performance. It's a baseline so stable that experiences arise and pass through it without shattering it."
           essence="Coolness, depth, undisturbed awareness: these are one thing, not many."
         />
 
@@ -561,7 +565,9 @@ export default function BeyondBhagavadGitaPage() {
           verseRef="Avadhuta Gita 3.15"
           sanskrit="सन्तापदुःखजनको न विधिः कदाचित्{'\n'}सन्तापयोगजनितं न मनः कदाचित् ।{'\n'}यस्मादहङ्कृतिरियं न च मे कदाचित्{'\n'}ज्ञानामृतं समरसं गगनोपमोऽहम् ॥"
           meaningLabel="Translation"
+          meaning="I am not fate that causes suffering, nor the mind born from suffering; this ego is not mine. I am the nectar of wisdom, steady and like the sky."
           insightLabel="Why This Matters for Mental Health"
+          insight="Dattatreya strips away three things people typically identify with during psychological suffering: the circumstances that caused the pain, the mind that keeps reliving it, and the ego that makes it feel personal. What remains? Gyanamritam: the nectar of wisdom, steady, unchanging, vast as the sky. This is not spiritual bypassing. It is pointing to a part of you that, regardless of what you have been through, has not been destroyed by it."
           essence="You are the steady, unifying wisdom beyond pain, mind, and ego."
         />
 
@@ -569,7 +575,9 @@ export default function BeyondBhagavadGitaPage() {
           verseRef="Avadhuta Gita 3.34"
           sanskrit="किं नाम रोदिषि सखे न जरा न मृत्युः{'\n'}किं नाम रोदिषि सखे न च जन्म दुःखम् ।{'\n'}किं नाम रोदिषि सखे न च ते विकारो{'\n'}ज्ञानामृतं समरसं गगनोपमोऽहम् ॥"
           meaningLabel="Translation"
+          meaning="Why do you weep, friend? You have no old age, no death, no birth, no suffering, no faults. I am the nectar of wisdom, pure and like the infinite sky beyond all."
           insightLabel="Why This Matters for Mental Health"
+          insight="The opening question, why do you weep?, is not dismissive. It is genuinely curious. Dattatreya isn't telling you your grief is wrong. He is pointing to a deeper question: what part of you is crying, and is that part actually who you are? The list of things you don't have (old age, death, birth, suffering, flaws) is a claim about what your true nature actually is, underneath the biographical story the mind keeps running."
           essence="You are timeless wisdom, untouched by birth, death, or suffering."
         />
 
@@ -591,7 +599,9 @@ export default function BeyondBhagavadGitaPage() {
           verseRef="Ram Gita · Verse 55"
           sanskrit="आदौ च मध्ये च तथैव चान्ततो भवं विदित्वा भयशोककारणम् ।{'\n'}हित्वा समस्तं विधिवादचोदितं भजेत्स्वमात्मानमथाखिलात्मनाम् ॥"
           meaningLabel="Translation"
+          meaning="Knowing that fear and sorrow are the cause of the world's beginning, middle, and end, abandon all prescribed external actions and worship your own inner being as the true self of all beings."
           insightLabel="Why This Matters for Mental Health"
+          insight="Rama says fear and sorrow are not problems that appear occasionally in an otherwise comfortable world. They are the texture of worldly existence itself: at the beginning, in the middle, and at the end. Once you accept this, you stop being surprised by suffering and start doing the only thing that actually works: turning inward. Not as an escape from the world, but as the only source of stability that isn't subject to the world's constant change."
           essence="Fear and sorrow underlie all of existence; true refuge is devotion to your own inner self."
         />
 
@@ -599,7 +609,9 @@ export default function BeyondBhagavadGitaPage() {
           verseRef="Ram Gita · Verse 40"
           sanskrit="अनाद्यविद्योद्भवबुद्धिबिम्बितो जीवप्रकाशोऽयमितीर्यते चितः ।{'\n'}आत्माधियः साक्षितया पृथक्स्थितो बुध्द्यापरिच्छिन्नपरः स एव हि ॥"
           meaningLabel="Translation"
+          meaning="The living being is the light of consciousness reflected in intellect born from beginningless ignorance; the true self is separate from intellect as its witness and beyond its distinctions."
           insightLabel="Why This Matters for Mental Health"
+          insight="Overthinking, rumination, the restless loop of what if and why did I: all of this belongs to the intellect. And the intellect, Rama says, is like a mirror reflecting consciousness, not consciousness itself. Your true self is the witness watching the intellect, not the intellect itself. When you identify with the thoughts instead of the witness, every swing of the mind feels like a swing in who you are. When you recognize the witness, you find something that doesn't swing."
           essence="Your true self is the unchanging watcher beyond intellect and its illusions."
         />
 
@@ -617,7 +629,9 @@ export default function BeyondBhagavadGitaPage() {
           verseRef="Hans Gita · Verse 10"
           sanskrit="परश्चेदेनमति वादबानैर्भृशं विध्येच्छम एवेह कार्यः ।{'\n'}संरोष्यमाणः प्रतिहृष्यते यः स आदत्ते सुकृतं वै परस्य ॥"
           meaningLabel="Translation"
+          meaning="If others fiercely attack the wise person with harsh words like arrows, he remains calm. One who stays inwardly pleased despite another's anger inherits that person's goodness."
           insightLabel="Why This Matters for Mental Health"
+          insight="What this verse describes is the capacity to remain internally stable when attacked, not numb, not suppressed, but genuinely at rest. The person who cannot do this will have their day wrecked by every difficult interaction. The person who can do this is carrying something that external events cannot easily disturb."
           essence="Calmness in the face of harsh attack transforms others' anger into your own good."
         />
 
@@ -625,7 +639,9 @@ export default function BeyondBhagavadGitaPage() {
           verseRef="Hans Gita · Verse 15"
           sanskrit="अक्रोधनः क्रुध्यतां वै विशिष्टस्तथा तितिक्षुरतितिक्षोर्विशिष्टः ।{'\n'}अमानुषान्मानुषो वै विशिष्टस् तथा ज्ञानाज्ज्ञानवान्वै प्रधानः ॥"
           meaningLabel="Translation"
+          meaning="A person who does not get angry at angry people is superior. The tolerant one surpasses the intolerant. Among all beings, the human is distinguished by the capacity for wisdom, and among humans, the wise surpass the ignorant."
           insightLabel="Why This Matters for Mental Health"
+          insight="The Hans Gita presents a hierarchy not of status but of inner capacity. The highest rung isn't wealth, power, or intelligence. It's the person who can stay calm when others are not. This is what anger management traditions, modern therapeutic frameworks, and cognitive-behavioral approaches converge on: the ability to regulate your own response instead of being governed by the other person's state."
           essence="True superiority lies in calmness amid anger and wisdom over ignorance."
         />
 
@@ -650,7 +666,9 @@ export default function BeyondBhagavadGitaPage() {
           verseRef="Shakti Gita 1.80"
           sanskrit="कार्यब्रह्मस्वरूपेत्र विश्वास्मिन जङ्गमे मम ।{'\n'}वर्त्तते चिद्विलासस्तु स्थावरे सद्विलासिता ॥"
           meaningLabel="Translation"
+          meaning="In this universe shaped as the active and the supreme, my conscious play exists in all that moves, and my true presence in all that is still."
           insightLabel="Why This Matters for Mental Health"
+          insight="The Goddess is saying she is in both: the movement and the stillness, the activity and the rest. We often frame inner peace as the absence of activity: you will be well when the anxious thoughts stop, when life calms down. The Shakti Gita suggests something different: the consciousness that animates your busiest, most scattered day is the same consciousness present in your most peaceful moment. Recognizing this dissolves the internal war between how you are and how you think you should be."
           essence="True self is present as conscious energy in movement and stable presence in stillness."
         />
 
@@ -668,7 +686,9 @@ export default function BeyondBhagavadGitaPage() {
           verseRef="Shambhu Gita 6.135"
           sanskrit="भयमैथुनरूपिण्यो जीवन्मुक्तौ घटत्तयः ।{'\n'}राजसिक्यो विलीयन्ते स्वीयेषु कारणेवलम् ॥"
           meaningLabel="Translation"
+          meaning="In the liberated being, the fear and passion-like rajasic tendencies dissolve completely, merging back into their own source."
           insightLabel="Why This Matters for Mental Health"
+          insight="Shiva does not describe fear as something to be overcome through effort or willpower. He describes it as something that dissolves naturally, by returning to its own origin. Suppressing fear doesn't dissolve it; it pressurizes it. Fighting fear often intensifies it. Shiva's teaching points toward something different: when you trace fear back to where it arises in you, rather than endlessly reacting to it in the world, it loses its grip. The source of fear, when seen clearly, cannot maintain its power."
           essence="Fears and desires vanish by dissolving naturally into their own origin in liberation."
         />
 
@@ -690,7 +710,9 @@ export default function BeyondBhagavadGitaPage() {
           verseRef="Vishnu Gita 1.75"
           sanskrit="अज्ञानदेव भीतीनामुत्पत्तिजायते सुरा : ।{'\n'}अज्ञानमेव जन्तूनां हेतुस्तापत्रयस्य वै ॥"
           meaningLabel="Translation"
+          meaning="O divine beings, ignorance alone gives rise to fear. Ignorance alone is the cause of the threefold suffering."
           insightLabel="Why This Matters for Mental Health"
+          insight="Vishnu names ignorance (not circumstance, not bad luck, not other people) as the root of fear and suffering. This is not fatalistic. It is liberating: if ignorance is the cause, then clarity is the cure. Every genuine moment of self-understanding is not just intellectually satisfying. It is actively therapeutic."
           essence="Fear and suffering arise only from ignorance, not from reality itself."
         />
 
@@ -698,7 +720,9 @@ export default function BeyondBhagavadGitaPage() {
           verseRef="Vishnu Gita 4.76"
           sanskrit="इन्द्रियम्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ ।{'\n'}तयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ ॥"
           meaningLabel="Translation"
+          meaning="Every sense has attachment for its own objects and aversion for the opposite. One should not be controlled by either, for these two are the obstacles of one who seeks freedom."
           insightLabel="Why This Matters for Mental Health"
+          insight="Vishnu is precise: the issue is not your senses, not pleasure, not pain. The issue is being controlled by the pull of craving and the push of aversion. This is almost exactly what modern ACT (Acceptance and Commitment Therapy) describes as psychological inflexibility, the state of being governed by emotional reactions rather than freely choosing your response. Craving and aversion are called paripanthi: obstacles, enemies of freedom."
           essence="Refusing to be controlled by attraction or aversion frees your movement and choice."
         />
 

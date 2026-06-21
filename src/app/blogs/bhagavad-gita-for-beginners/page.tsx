@@ -579,6 +579,7 @@ export default function ForBeginnersPage() {
           sanskrit="धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥"
           iast="dharmakṣetre kurukṣetre samaveta yuyutsavaḥ | māmakāḥ pāṇḍavāś caiva kim akurvata sañjaya ||"
           meaningLabel="Translation"
+          meaning="On the field of dharma, at Kurukshetra, gathering to fight, what did my people do, and what did the Pandavas do, O Sanjaya?"
           essence="The opening verse. The stage is set. Everything begins here."
         />
 
@@ -587,6 +588,7 @@ export default function ForBeginnersPage() {
           sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
           iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
           meaningLabel="Translation"
+          meaning="You have a right to perform your prescribed duties, but you are not entitled to the fruits. Never consider yourself the cause of the results, and never be attached to not doing your duty."
           essence="The most famous verse. The foundation of karma yoga."
         />
 
@@ -595,6 +597,7 @@ export default function ForBeginnersPage() {
           sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥"
           iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svabhāvaniyataṃ karma kurvann āpnoti kilbiṣam ||"
           meaningLabel="Translation"
+          meaning="Better your own dharma, imperfectly done, than another's dharma done perfectly. Acting according to your own nature, you incur no sin."
           essence="Stay on your own path. Comparison is fear in disguise."
         />
 

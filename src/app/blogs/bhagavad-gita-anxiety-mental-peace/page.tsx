@@ -518,10 +518,11 @@ export default function AnxietyMentalPeacePage() {
           sanskrit="ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥ २.६२ ॥ क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥ २.६३ ॥"
           iast="dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate | saṅgāt saṃjāyate kāmaḥ kāmātkrodho'bhijāyate || krodhādbhavati saṃmohaḥ saṃmohātsmṛtivibhramaḥ | smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||"
           meaningLabel="Translation"
+          meaning="From dwelling on sense objects arises attachment; from attachment arises desire; from desire arises anger. From anger comes delusion; from delusion, loss of memory; from loss of memory, destruction of intelligence; from the destruction of intelligence, one perishes."
           insightLabel="What This Teaches"
+          insight="This is the Gita's cascade model of psychological collapse. Notice where it starts: not with an external event, not with the feeling of fear, but with what the mind dwells on. You dwell on something. Dwelling creates attachment. Attachment creates the need for a particular outcome (desire). When the outcome doesn't match what you want, you become angry. Anger clouds judgment. Loss of judgment means loss of sense. The spiral spirals. But here is the critical insight: the entry point is earlier than you think. You cannot always control your fear response in the moment. But you can control what you allow your mind to dwell on. That's the interruption point."
+          essence="Guard what you dwell on: the anxiety cascade begins at thought, not at feeling."
         />
-            <div className="essence">Guard what you dwell on: the anxiety cascade begins at thought, not at feeling.</div>
-        </div>
 
         <p>
             What makes this analysis powerful is that it doesn't blame the anxiety itself. It traces the actual mechanism. Most people struggling with anxiety experience it as a sudden, irrational event: "I'm feeling anxious and I don't even know why." But the Gita traces it back further. The anxiety has a cause, and that cause is usually what you have been dwelling on, often unconsciously, for some time.
@@ -537,7 +538,9 @@ export default function AnxietyMentalPeacePage() {
           sanskrit="मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥"
           iast="mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ | āgamāpāyino'nityāstāṃstitikṣasva bhārata ||"
           meaningLabel="Translation"
+          meaning="Sense contacts give rise to cold and heat, pleasure and pain. They come and go, O Arjuna, they are impermanent. Bear them patiently."
           insightLabel="What This Teaches"
+          insight="The verse doesn't promise that pain won't come. It doesn't say positive thinking will erase difficulty. It says: sense experiences bring both pleasure and pain, and they are temporary. You will feel things you don't want to feel. The work is not to suppress them or argue with them, but to bear them with the recognition that they will pass. The word used is titiksha, often translated as patience, but more precisely, it means endurance. Not passivity. Not resignation. Active bearing."
           essence="Endure life's changing experiences with patience. They are temporary."
         />
 
@@ -562,7 +565,9 @@ export default function AnxietyMentalPeacePage() {
           sanskrit="दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः । वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ॥"
           iast="duḥkheṣvanudvignamanāḥ sukheṣu vigataspṛhaḥ | vītarāgabhayakrodhaḥ sthitadhīrmunirucyate ||"
           meaningLabel="Translation"
+          meaning="One whose mind is not disturbed by suffering, who does not crave for pleasure, and who is free from attachment, fear, and anger, such a person is called a sage of steady mind."
           insightLabel="What This Teaches"
+          insight="This verse contains three characteristics of the steadfast person: unshaken in suffering (which doesn't mean numb, it means present with it without panic), not desperately craving pleasure (which doesn't mean joyless, it means not grasping), and free from attachment/fear/anger. This is the Gita's portrait of genuine mental health. Not the absence of difficulty. The presence of steadiness in the face of it."
           essence="Steadiness in suffering, restraint in pleasure: this is the steady mind."
         />
 
@@ -584,7 +589,9 @@ export default function AnxietyMentalPeacePage() {
           sanskrit="योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः । स योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति ॥"
           iast="yo'ntaḥsukho'ntarārāmastathāntarjyotireva yaḥ | sa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati ||"
           meaningLabel="Translation"
+          meaning="One who finds happiness within, who is delighted within, who is illuminated within, that yogi attains brahma-nirvana, becoming Brahman."
           insightLabel="What This Teaches"
+          insight="Three times in this verse, Krishna uses the word &quot;antar&quot;: within, inside. The happiness you are searching for outside (in outcomes, in approval, in financial security, in the perfect relationship) is not located outside. It's located inside. The anxiety comes from looking for stability in places that are inherently unstable. Your outcomes change. Other people's approval changes. Money comes and goes. But there is something within you that is not trembling. The work is learning to locate it."
           essence="The happiness you seek outside is already inside. It was never anywhere else."
         />
 

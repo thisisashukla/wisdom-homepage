@@ -522,7 +522,9 @@ export default function ThreeGunasPage() {
         sanskrit="सत्त्वं रजस्तम इति गुणाः प्रकृतिसंभवाः । निबध्नन्ति महाबाहो देहे देहिनमव्ययम् ॥"
         iast="sattvaṃ rajastama iti guṇāḥ prakṛtisaṃbhavāḥ | nibadhnanti mahābāho dehe dehinamavyayam ||"
         meaningLabel="Translation"
+        meaning="The qualities of nature, sattva (clarity), rajas (activity), and tamas (inertia), tie the unchanging atman (inner self) to the body."
         insightLabel="What This Teaches"
+        insight="The atman is described as avyayam, unchanging, imperishable. The gunas don't change it. They bind it, meaning they create the experience of being caught up in a particular state. The teaching here builds self-awareness by distinguishing what you are (the witness) from what you're currently experiencing (the guna-state). You observe the state instead of being consumed by it."
         essence="You are not your moods or qualities; you are the unchanging atman."
       />
 
@@ -544,7 +546,9 @@ export default function ThreeGunasPage() {
         sanskrit="तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् । सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ॥"
         iast="tatra sattvaṃ nirmalatvātprakāśakamanāmayam | sukhasaṅgena badhnāti jñānasaṅgena cānagha ||"
         meaningLabel="Translation"
+        meaning="Sattva is the pure and clear quality within us that brings light, peace, and knowledge, but even these good things can create attachment and keep us tied to the world."
         insightLabel="What This Teaches"
+        insight="This is the part that surprises people. Sattva binds you too. The mechanism is attachment to the good feeling: clinging to your calm, pride in your clarity, addiction to feeling wise. The Gita doesn't say sattva is bad. It says don't get attached to it. Pursue it as a working condition, not as a destination. The moment you start defending your peacefulness or feeling superior because of your clarity, you've lost the thread."
         essence="Even purity can bind if we cling to it."
       />
 
@@ -562,7 +566,9 @@ export default function ThreeGunasPage() {
         sanskrit="रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् । तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ॥"
         iast="rajo rāgātmakaṃ viddhi tṛṣṇāsaṅgasamudbhavam | tannibadhnāti kaunteya karmasaṅgena dehinam ||"
         meaningLabel="Translation"
+        meaning="Rajas, born of desire and attachment, ties the embodied self to action through constant craving and clinging to what it does."
         insightLabel="What This Teaches"
+        insight="Rajas binds through two mechanisms: trishna (thirst, craving) and sanga (attachment to the action itself). You get caught not just in wanting the result but in the activity. Work addiction is a rajas trap. So is the inability to stop checking your phone: there's no clear desire, just a restless pull toward stimulation. The antidote is not stopping all action but developing discernment about which actions you're attached to and why."
         essence="Attachment to actions comes from desires; freedom begins with self-awareness."
       />
 
@@ -580,7 +586,9 @@ export default function ThreeGunasPage() {
         sanskrit="तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ॥"
         iast="tamastvajñānajaṃ viddhi mohanaṃ sarvadehinām | pramādālasyanidrābhistannibadhnāti bhārata ||"
         meaningLabel="Translation"
+        meaning="Tamas comes from ignorance and causes confusion in all living beings. It binds through carelessness, laziness, and excessive sleep."
         insightLabel="What This Teaches"
+        insight="The word mohanam means that which deludes. Tamas doesn't feel dramatic. It feels like nothing much is wrong, you just don't feel like doing anything. Procrastination, excessive sleep, numbing through distraction: these are tamasic patterns. The Gita also notes that tamas covers knowledge, pramada means negligence or carelessness, a specific kind of not-looking. The self-deception of tamas is that it often feels like rest."
         essence="Tamas keeps us bound through ignorance, laziness, and carelessness."
       />
 
@@ -598,7 +606,9 @@ export default function ThreeGunasPage() {
         sanskrit="रजस्तमश्चाभिभूय सत्त्वं भवति भारत । रजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा ॥"
         iast="rajastamaścābhibhūya sattvaṃ bhavati bhārata | rajaḥ sattvaṃ tamaścaiva tamaḥ sattvaṃ rajastathā ||"
         meaningLabel="Translation"
+        meaning="At any time, one quality, clarity (sattva), activity (rajas), or inertia (tamas), becomes stronger by overcoming the others. These forces in us are always shifting."
         insightLabel="What This Teaches"
+        insight="The Gita's model here is dynamic, not static. You are not stuck in a guna state. One quality overtakes the others by overcoming their pull. This is why the Gita recommends specific practices: they are designed to build conditions where sattva gains ground over rajas and tamas. Diet, sleep, activity, study, company, all of it shifts the balance."
         essence="Your inner state is always changing; self-awareness lets you move towards balance."
       />
 
@@ -645,8 +655,25 @@ export default function ThreeGunasPage() {
         sanskrit="गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान् । जन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते ॥"
         iast="guṇānetānatītya trīndehī dehasamudbhavān | janmamṛtyujarāduḥkhairvimukto'mṛtamaśnute ||"
         meaningLabel="Translation"
+        meaning="When a person rises above the three qualities that create the body, they become free from the pains of birth, aging, and death, and experience a state that is undying."
         insightLabel="What This Teaches"
+        insight="The goal is transcendence of the entire guna framework, not optimization within it. This matters because it tells you what you are actually working toward. Cultivating sattva is useful as a working condition, a platform from which clarity can develop. But the platform is not the destination. The destination is the state where you are no longer caught by any of the three: not compelled by rajas, not darkened by tamas, and not attached to sattva either."
         essence="Transcend the hold of nature's three qualities to discover true freedom and undying bliss."
+      />
+
+      <p>
+        How does one reach this state? Verse 14.26 gives the most direct answer in the chapter:
+      </p>
+
+            <ShlokaCard
+        verseRef="Bhagavad Gita 14.26"
+        sanskrit="मां च योऽव्यभिचारेण भक्तियोगेन सेवते । स गुणान्समतीत्यैतान् ब्रह्मभूयाय कल्पते ॥"
+        iast="māṃ ca yo'vyabhicāreṇa bhaktiyogena sevate | sa guṇānsamatītyaitān brahmabhūyāya kalpate ||"
+        meaningLabel="Translation"
+        meaning="Anyone who serves the Supreme with single-minded, undivided devotion can rise above all the natural qualities and become fit for union with the Supreme Truth."
+        insightLabel="What This Teaches"
+        insight="The word avyabhicharena means without wavering, undivided, consistent. The path offered is not intellectual analysis of the gunas but devotion that doesn't split its attention. The Gita here is saying that the way out of the guna trap is not to manage the gunas better from within, but to orient yourself toward something beyond them entirely. The gunas pull you in various directions. Undivided devotion pulls in one direction only."
+        essence="Pure, continuous bhakti lifts you above all limitations and connects you to the ultimate reality."
       />
     </div>
 

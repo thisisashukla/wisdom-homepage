@@ -539,7 +539,9 @@ export default function GitaForStudentsPage() {
         sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
         iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
         meaningLabel="Translation"
+        meaning="You have the right to do your actions, but not to control the results. Do not be attached to the fruits of your actions, and do not fall into inaction."
         insightLabel="For Students"
+        insight="The verse has four parts. Act. Don't claim the result. Don't let the anticipated result be your only reason for acting. And don't use any of this as an excuse not to try. Exam anxiety is almost always about the fourth item leaking into the second: you become so focused on the outcome that the action (the study, the practice, the work) gets contaminated by the fear of the result. The verse is saying: those are two separate things. Keep them separate."
         essence="Focus on right action, let go of attachment to results."
       />
 
@@ -559,7 +561,9 @@ export default function GitaForStudentsPage() {
         sanskrit="नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः । शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः ॥"
         iast="niyataṃ kuru karma tvaṃ karma jyāyo hyakarmaṇaḥ | śarīrayātrāpi ca te na prasiddhyedakarmaṇaḥ ||"
         meaningLabel="Translation"
+        meaning="Do your duties as prescribed by dharma. Acting is better than not acting, because even keeping your body going is not possible without action."
         insightLabel="For Students"
+        insight="Niyatam karma means &quot;prescribed duty.&quot; For a student, that is clear: study, attend class, do the practice problems, write the drafts. The Gita is not asking you to be inspired. It's saying: action, even uninspired action, beats non-action. You don't wait for motivation to arrive before you open the book. You open the book and the motivation sometimes follows. Sometimes it doesn't, and you do the work anyway."
         essence="Choose karma over inaction; your path requires your effort."
       />
 
@@ -575,7 +579,9 @@ export default function GitaForStudentsPage() {
         sanskrit="उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥"
         iast="uddharedātmanā''tmānaṃ nātmānamavasādayet | ātmaiva hyātmano bandhurātmaiva ripurātmanaḥ ||"
         meaningLabel="Translation"
+        meaning="Uplift yourself through your own actions and thoughts. Do not let yourself fall, because you alone are your own friend and also your own enemy."
         insightLabel="For Students"
+        insight="The Gita is not asking you to be your own cheerleader. It is asking you to recognize that the self-talk you maintain, the narratives you carry about your own capability, whether you study tonight or scroll for three hours instead, are all choices that either lift or sink you. No teacher, no parent, no exam system is as powerful in this regard as the choices you make about your own mind."
         essence="You are your greatest ally and your own worst obstacle. Choose upliftment."
       />
 
@@ -587,7 +593,9 @@ export default function GitaForStudentsPage() {
         sanskrit="बन्धुरात्माऽऽत्मनस्तस्य येनात्मैवात्मना जितः । अनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत् ॥"
         iast="bandhurātmā''tmanastasya yenātmaivātmanā jitaḥ | anātmanastu śatrutve vartetātmaiva śatruvat ||"
         meaningLabel="Translation"
+        meaning="If you have learned to guide your own mind, you become your own friend. If you have not, your own mind acts like your enemy."
         insightLabel="For Students"
+        insight="This verse follows directly from 6.5. The mind that argues you out of studying, that tells you to check your phone one more time, that says you're not smart enough so why bother, that is the unmastered mind acting as an enemy. The mastered mind is a tool you can use. It focuses when you ask it to. It rests when you need it to. It doesn't catastrophize about the future during the exam. Self-mastery is not a personality trait. It's a skill."
         essence="Mastery of self turns your inner nature into your greatest ally."
       />
 
@@ -603,7 +611,9 @@ export default function GitaForStudentsPage() {
         sanskrit="अभयं सत्त्वसंशुद्धिः ज्ञानयोगव्यवस्थितिः । दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम् ॥"
         iast="abhayaṃ sattvasaṃśuddhiḥ jñānayogavyavasthitiḥ | dānaṃ damaśca yajñaśca svādhyāyastapa ārjavam ||"
         meaningLabel="Translation"
+        meaning="Fearlessness, purity of heart, firmness in the path of knowledge, generosity, control over the senses, self-study, discipline, and simplicity in body, speech, and mind."
         insightLabel="For Students"
+        insight="Two words stand out: abhayam (fearlessness) and svadhyaya (self-study). They are listed side by side. Fearlessness here doesn't mean never feeling fear. It means not letting fear drive your decisions. And svadhyaya, which literally means self-study or study of the self, points to learning as a genuine orientation, not just a means to an end. A student with both qualities learns because they want to understand, and they act in spite of fear."
         essence="Fearlessness, purity, discipline, and self-study lead to clarity and inner harmony."
       />
 
@@ -619,7 +629,9 @@ export default function GitaForStudentsPage() {
         sanskrit="मनःप्रसादः सौम्यत्वं मौनमात्मविनिग्रहः । भावसंशुद्धिरित्येतत्तपो मानसमुच्यते ॥"
         iast="manaḥprasādaḥ saumyatvaṃ maunamātmavinigrahaḥ | bhāvasaṃśuddhirityetattapo mānasamucyate ||"
         meaningLabel="Translation"
+        meaning="Mental happiness, gentleness, silence, self-control, and purifying your intentions: this is what is called the discipline of the mind."
         insightLabel="For Students"
+        insight="Mauna, silence, is listed here as a form of mental tapas. For a student, this is the discipline of sustained attention: the ability to work for an extended period without interruption, without checking, without the noise of social media or background chatter. Atma-vinigraha, self-restraint, is the practice of not following every impulse the mind produces. Bhava-samshuddhi, purifying your intentions, means studying because you want to understand, not just to perform or to be seen to be studying."
         essence="True discipline starts by mastering and purifying your mind."
       />
 
@@ -673,7 +685,9 @@ export default function GitaForStudentsPage() {
         sanskrit="यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः । तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम ॥"
         iast="yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanurdharaḥ | tatra śrīrvijayo bhūtirdhruvā nītirmatirmama ||"
         meaningLabel="Translation"
+        meaning="Where there is Krishna, the master of yoga, and Arjuna, who holds the bow, there you will find prosperity, victory, strength, and firm ethics. This is my belief."
         insightLabel="For Students"
+        insight="The verse is symbolic but precise. Krishna represents guidance, clarity, values, the wisdom that orients action. Arjuna represents skill, effort, and the willingness to act. When both are present, victory follows. For a student: align with what is right (study honestly, prepare with integrity, don't cheat, don't take shortcuts that compromise your actual understanding) and then act with full effort. That combination, wisdom and skill together, is what produces lasting results."
         essence="Fortune, victory, and lasting achievement come when you unite clarity with skillful action."
       />
 

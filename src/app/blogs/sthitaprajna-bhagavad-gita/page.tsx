@@ -605,7 +605,9 @@ export default function SthitaprajnaPage() {
           sanskrit="प्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान् । आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते ॥"
           iast="prajahāti yadā kāmān sarvān pārtha manogatān | ātmanyevātmanā tuṣṭaḥ sthitaprajñastadocyate ||"
           meaningLabel="Translation"
+          meaning="When a person gives up all desires that come from the mind, and is satisfied within themselves by their own self, that person is called one of steady wisdom."
           insightLabel="What This Means"
+          insight="This builds the inner skill of viveka, discernment, helping us recognize which desires arise out of habit and which are truly aligned with our deeper self. It encourages mental clarity and points toward contentment through self-sufficiency, not through accumulation."
           essence="True contentment is found by letting go of endless desires and resting in the fullness of your own atman."
         />
 
@@ -626,7 +628,9 @@ export default function SthitaprajnaPage() {
           sanskrit="यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः । इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥"
           iast="yadā saṃharate cāyaṃ kūrmo'ṅgānīva sarvaśaḥ | indriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā ||"
           meaningLabel="Translation"
+          meaning="When you pull your senses away from outside attractions, like a turtle pulls in its limbs from the world, your understanding becomes steady and calm."
           insightLabel="What This Means"
+          insight="Building the skill of withdrawing from distractions strengthens self-control and helps steady the mind. The turtle does not keep its limbs retracted forever. It can extend them again when the environment is safe. The point is voluntary, on-demand retraction, not permanent withdrawal."
           essence="Steadiness comes from withdrawing your senses from distractions, just as the kachhua does."
         />
 
@@ -651,7 +655,9 @@ export default function SthitaprajnaPage() {
           sanskrit="ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥"
           iast="dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate | saṅgāt saṃjāyate kāmaḥ kāmātkrodho'bhijāyate ||"
           meaningLabel="Translation"
+          meaning="When you constantly think about objects and pleasures, you become attached to them. This attachment creates desire, which leads to anger if unfulfilled."
           insightLabel="What This Teaches"
+          insight="This verse teaches the importance of mindful awareness. By observing and guiding our thoughts, we can prevent unnecessary attachments and the cycle of frustration. It is a lesson in self-control, emotional intelligence, and building inner peace."
           essence="Guard your mind's focus, for your thoughts shape your destiny."
         />
 
@@ -660,7 +666,9 @@ export default function SthitaprajnaPage() {
           sanskrit="क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥"
           iast="krodhādbhavati saṃmohaḥ saṃmohātsmṛtivibhramaḥ | smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||"
           meaningLabel="Translation"
+          meaning="Anger leads to confusion, then loss of memory and understanding, and finally a person falls from their true path."
           insightLabel="What This Teaches"
+          insight="Uncontrolled desires and anger scatter the mind and bring confusion. This verse describes not a sudden collapse but a gradual sequence. Each step is both a symptom and a cause of the next one. Self-mastery preserves wisdom."
           essence="Uncontrolled desires and anger scatter the mind and bring confusion; self-mastery preserves wisdom."
         />
 
@@ -709,7 +717,9 @@ export default function SthitaprajnaPage() {
           sanskrit="प्रसादे सर्वदुःखानां हानिरस्योपजायते । प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते ॥"
           iast="prasāde sarvaduḥkhānāṃ hānirasyopajāyate | prasannacetaso hyāśu buddhiḥ paryavatiṣṭhate ||"
           meaningLabel="Translation"
+          meaning="When the mind and heart are pure and steady, all sorrow disappears, and your intelligence naturally settles in the highest reality."
           insightLabel="What This Means"
+          insight="Purifying the chitta through self-restraint and balance brings emotional resilience and sharpness of insight. This verse encourages developing inner steadiness as a skill, and describes its outcome not as blankness but as prasada, a positive quality of serenity and clarity."
           essence="Clarity within dissolves sorrow and brings lasting wisdom."
         />
 
@@ -727,7 +737,9 @@ export default function SthitaprajnaPage() {
           sanskrit="आपूर्यमाणमचलप्रतिष्ठं समुद्रमापः प्रविशन्ति यद्वत् । तद्वत्कामा यं प्रविशन्ति सर्वे स शान्तिमाप्नोति न कामकामी ॥"
           iast="āpūryamāṇamacalapratiṣṭhaṃ samudramāpaḥ praviśanti yadvat | tadvatkāmā yaṃ praviśanti sarve sa śāntimāpnoti na kāmakāmī ||"
           meaningLabel="Translation"
+          meaning="Just as the ocean stays steady and is not disturbed even when many rivers flow into it, a person who stays balanced and calm amidst all desires and pleasures attains real shanti. The person who constantly chases desires does not find true peace."
           insightLabel="What This Means"
+          insight="This verse teaches the internal skill of vairagya, disciplined detachment, the ability to welcome life's experiences without being swayed or agitated by them. The ocean does not refuse the rivers. It receives them and remains unchanged. That is the quality being described."
           essence="Stay steady like the ocean. Let desires come and go, but hold on to inner shanti."
         />
 

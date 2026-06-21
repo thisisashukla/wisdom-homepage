@@ -561,7 +561,9 @@ export default function GitaOnAnxietyPage() {
           sanskrit="मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥"
           iast="mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ | āgamāpāyino'nityāstāṃstitikṣasva bhārata ||"
           meaningLabel="Translation"
+          meaning="The things you feel through your senses, like hot and cold or comfort and discomfort, are just momentary and will pass. Arjuna, be patient and endure them."
           insightLabel="What This Teaches"
+          insight="It inspires the practice of titiksha, patient endurance and equanimity, helping you stay stable no matter what sensations or feelings arise. This is not a command to suppress emotion. It is an observation about impermanence: the thing producing the fear, the discomfort, the dread, will not stay. Today, we often react to uncomfortable situations, whether a stressful meeting, an argument, or physical discomfort. This verse reminds us not to get carried away by these feelings but to patiently allow them to pass."
           essence="All experiences, pleasant or unpleasant, are fleeting. Develop titiksha, patient endurance."
         />
 
@@ -626,7 +628,9 @@ export default function GitaOnAnxietyPage() {
           sanskrit="प्रसादे सर्वदुःखानां हानिरस्योपजायते । प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते ॥"
           iast="prasāde sarvaduḥkhānāṃ hānirasyopajāyate | prasannacetaso hyāśu buddhiḥ paryavatiṣṭhate ||"
           meaningLabel="Translation"
+          meaning="When the mind and heart are pure and steady, all sorrow disappears, and your intelligence naturally settles in the highest reality."
           insightLabel="What This Teaches"
+          insight="Purifying your chitta through self-restraint and balance brings emotional resilience and sharpness of insight. When prasada arises, it dissolves all distress. When the mind is peaceful and free from agitation, your buddhi (discriminative intelligence) easily and quickly becomes steady. Today, when overwhelmed by stress, emotional ups and downs, or confusion, this teaching reminds us that by practicing self-mastery and keeping the mind calm, clarity and wise decision-making return."
           essence="Clarity within dissolves sorrow and brings lasting wisdom."
         />
 
@@ -635,7 +639,9 @@ export default function GitaOnAnxietyPage() {
           sanskrit="नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना । न चाभावयतः शान्तिरशान्तस्य कुतः सुखम् ॥"
           iast="nāsti buddhirayuktasya na cāyuktasya bhāvanā | na cābhāvayataḥ śāntiraśāntasya kutaḥ sukham ||"
           meaningLabel="Translation"
+          meaning="If you do not have control over your senses and mind, your thinking is unclear, you cannot develop true intention, and without this, you will not find peace or lasting happiness."
           insightLabel="What This Teaches"
+          insight="Building the ability to pause before reacting and keeping the senses in check leads to a clear mind, better decision-making, and inner harmony. The sequence here is exact: without inner discipline, no clarity. Without clarity, no shanti. Without shanti, no sukha. This is not a moral prescription. It is a causal description. In today's world, distractions are everywhere. This verse reminds us that happiness doesn't come from chasing every impulse but from inner discipline."
           essence="Sukha, true happiness, is born from a peaceful and disciplined inner world."
         />
 
@@ -649,7 +655,9 @@ export default function GitaOnAnxietyPage() {
           sanskrit="उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥"
           iast="uddharedātmanā''tmānaṃ nātmānamavasādayet | ātmaiva hyātmano bandhurātmaiva ripurātmanaḥ ||"
           meaningLabel="Translation"
+          meaning="Uplift yourself through your own actions and thoughts. Do not let yourself fall, because you alone are your own friend and also your own enemy."
           insightLabel="What This Teaches"
+          insight="This verse teaches self-leadership and responsibility. Practicing self-awareness and positive self-dialogue can help us break past self-made barriers and uplift our own spirit. When facing stress, failure, or low confidence, we often blame others or external situations. This shloka reminds us to strengthen our mind, believe in our own efforts, and practice self-compassion. Our real progress depends on our own inner sankalpa (resolve) and actions."
           essence="You are your greatest mitra and your own shatru. Choose upliftment."
         />
 
@@ -673,7 +681,9 @@ export default function GitaOnAnxietyPage() {
           sanskrit="यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः । हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः ॥"
           iast="yasmānnodvijate loko lokānnodvijate ca yaḥ | harṣāmarṣabhayodvegairmukto yaḥ sa ca me priyaḥ ||"
           meaningLabel="Translation"
+          meaning="A person who does not cause agitation to others, is not disturbed by others, and remains free from excitement, anger, envy, fear, and restlessness, is beloved to Bhagavan."
           insightLabel="What This Teaches"
+          insight="This verse guides us to develop emotional steadiness and a compassionate approach toward others, skills that enhance psychological resilience and deepen inner tranquility. The person described here is not emotionless. They are free from the specific torments: harsha (excessive excitement), amarsha (agitation), bhaya (fear), udvega (anxiety). Staying free from emotional turbulence preserves mental well-being and spreads a sense of peace."
           essence="Calmness toward all beings leads to inner harmony and endears us to the Divine."
         />
 
@@ -687,7 +697,9 @@ export default function GitaOnAnxietyPage() {
           sanskrit="श्री भगवानुवाच असंशयं महाबाहो मनो दुर्निग्रहं चलं । अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ॥"
           iast="śrī bhagavānuvāca asaṃśayaṃ mahābāho mano durnigrahaṃ calaṃ | abhyāsena tu kaunteya vairāgyeṇa ca gṛhyate ||"
           meaningLabel="Translation"
+          meaning="Shri Krishna says: Yes, Arjuna, you are right. The mind is restless and hard to control. But it can be brought under control through regular practice (abhyasa) and detachment (vairagya)."
           insightLabel="What This Teaches"
+          insight="This verse builds patience and discipline. It encourages us to keep showing up, accepting that mastery over the mind is a gradual process, not an instant achievement. Through regular habits like meditation, mindful study, or focusing on duty without clinging to results, you can train your mind for focus and calm even in busy or difficult times. The reassurance here is not that it is easy. It is that it is possible."
           essence="With steady practice and detachment, even the restless mind becomes peaceful."
         />
 
@@ -729,7 +741,9 @@ export default function GitaOnAnxietyPage() {
           sanskrit="सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥"
           iast="sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||"
           meaningLabel="Translation"
+          meaning="Keep your mind steady in both good and bad times, whether you win or lose or gain or lose something. Then, do your duty without fear of wrongdoing."
           insightLabel="What This Teaches"
+          insight="This verse builds the internal skill of samatva, cultivating emotional resilience, steady focus, and performing one's work without obsession over results. This leads to a calmer, steadier mind. In daily life, we often feel stressed by wins and losses at work or in relationships. This teaching encourages doing our best without getting overly affected by results or others' opinions."
           essence="Do your kartavya with a balanced mind, unaffected by external outcomes."
         />
 

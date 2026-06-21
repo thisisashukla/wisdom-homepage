@@ -555,7 +555,9 @@ export default function BG247Page() {
           sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
           iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
           meaningLabel="Translation"
+          meaning="You have the right to do your actions, but not to control the results. Do not be attached to the fruits of your actions, and do not fall into inaction."
           insightLabel="What This Contains"
+          insight="This verse builds viveka (discernment) and steadiness. It lays out the practice of detached effort, nishkama karma, in four specific instructions: act, do not own results, do not let results be the motive, do not use this as cover for not acting. Each clause corrects a different failure mode."
           essence="Focus on right action, let go of attachment to results."
         />
 
@@ -666,7 +668,9 @@ export default function BG247Page() {
           sanskrit="तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥"
           iast="tasmādasaktaḥ satataṃ kāryaṃ karma samācara | asakto hyācaran karma paramāpnoti pūruṣaḥ ||"
           meaningLabel="Translation"
+          meaning="Therefore, always perform your required duties without attachment. By performing duty without attachment, a person attains the highest."
           insightLabel="What This Adds"
+          insight="Chapter 3 picks up where 2.47 leaves off. Here Krishna makes the instruction continuous: not just in hard moments but always, as a steady practice. The word satatam means perpetually, constantly. This is not a situational tactic for when things get difficult. It is a way of working."
           essence="Detached action, practiced continuously, leads to the highest."
         />
 
@@ -675,7 +679,9 @@ export default function BG247Page() {
           sanskrit="त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः । कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥"
           iast="tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ | karmaṇyabhipravṛtto'pi naiva kiñcitkaroti saḥ ||"
           meaningLabel="Translation"
+          meaning="Having abandoned attachment to the fruits of actions, always content and self-sufficient, even while engaged in action, such a person does nothing at all."
           insightLabel="What This Adds"
+          insight="This verse describes the paradox of karma yoga at its fullest expression. The person is fully active, engaged in the work, but because they have let go of attachment to results so completely, they are in a deep sense not the doer. They are not accumulating karma in the way that binds. Chapter 4 takes the principle in 2.47 to its logical conclusion: action without the psychological weight of ownership."
           essence="Act fully and cling to nothing. That is the highest freedom."
         />
 

@@ -553,7 +553,9 @@ export default function DharmaMeaningPage() {
           sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥"
           iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ||"
           meaningLabel="Translation"
+          meaning="It is better to perform your own dharma, even if imperfectly, than to carry out another's dharma perfectly. Dying while following your own dharma is better, because living by another's dharma brings fear."
           insightLabel="What This Teaches"
+          insight="The verse uses the word viguna: deficient in qualities, imperfect. The Gita is not saying follow your dharma because you will do it better than anyone else. It is saying follow it even when you are not doing it well. Even a flawed walk down your own path is better than a flawless performance of someone else's. The reason it gives is fear. Paradharma, living another's path, generates bhaya. Fear. The fear of being found out. The fear of not measuring up. The fear of a life that doesn't actually fit."
           essence="Walk your own path, for it alone leads to lasting well-being."
         />
 
@@ -586,7 +588,9 @@ export default function DharmaMeaningPage() {
           sanskrit="यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम् ॥"
           iast="yadā yadā hi dharmasya glānirbhavati bhārata | abhyutthānamadharmasya tadā''tmānaṃ sṛjāmyaham ||"
           meaningLabel="Translation"
+          meaning="Whenever dharma weakens and adharma increases, O Arjuna, I manifest myself in visible form."
           insightLabel="What This Teaches"
+          insight="The word glani means deterioration, weakness, fatigue. Dharma can get tired. It can be worn down by sustained adharma until it loses its coherence as a force in the world. Krishna's response is not to send a message or a law. He comes himself. This is the theology of the avatar: when the situation requires it, the divine takes on the limitation of form in order to act within the specific conditions of the world."
           essence="Whenever dharma weakens, renewal comes. Trust in the cycle of restoration."
         />
 
@@ -595,7 +599,9 @@ export default function DharmaMeaningPage() {
           sanskrit="परित्राणाय साधूनां विनाशाय च दुष्कृताम् । धर्मसंस्थापनार्थाय संभवामि युगे युगे ॥"
           iast="paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām | dharmasaṃsthāpanārthāya saṃbhavāmi yuge yuge ||"
           meaningLabel="Translation"
+          meaning="To protect those who uphold dharma, to destroy those who create harm, and to firmly re-establish dharma: I arise in every age."
           insightLabel="What This Teaches"
+          insight="The phrase yuge yuge, in every age, carries a particular weight. This is not a single historical event. It is a recurring pattern. The Gita is saying that the restoration of dharma is not a one-time achievement. It requires active, recurring renewal. Dharma left alone does not maintain itself. It requires those who uphold it, and periodically something larger that corrects the course when individual effort is not enough."
           essence="Dharma is always supported and restored, no matter the era."
         />
 
@@ -613,7 +619,9 @@ export default function DharmaMeaningPage() {
           sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥"
           iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svabhāvaniyataṃ karma kurvannāpnoti kilbiṣam ||"
           meaningLabel="Translation"
+          meaning="Doing your own work, even if imperfect, is better than doing someone else's work perfectly. You do not create wrong when you live by your natural duties."
           insightLabel="What This Teaches"
+          insight="The key phrase here is svabhava-niyatam: determined by one's own nature. The work that flows from svabhava is not chosen. It is discerned. You find it by looking at what your actual nature is, not by choosing what looks prestigious or virtuous from the outside. The verse then says that acting from svabhava does not produce kilbisha, wrongdoing or sin. There is a protection in authentic action that is not available in imitation."
           essence="Walking your own path, true to your nature, brings real peace and protects you from inner trouble."
         />
 
@@ -631,7 +639,9 @@ export default function DharmaMeaningPage() {
           sanskrit="सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥"
           iast="sarvadharmānparityajya māmekaṃ śaraṇaṃ vraja | ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ ||"
           meaningLabel="Translation"
+          meaning="Set aside all dharmas and take refuge in me alone. I will free you from all wrongdoing. Do not be afraid."
           insightLabel="What This Teaches"
+          insight="The apparent paradox dissolves when you see what is being abandoned. Sarva-dharman, all dharmas. Not specific dharmas, but the entire framework of dharma as self-managed obligation. The teaching is not stop acting rightly. It is: stop relating to right action as something you are managing and maintaining through your own effort. The matured student of the Gita arrives at the point where the very category of dharma as personal project falls away, and what remains is action arising directly from surrender to the divine. The action is the same. The source has shifted."
           essence="Let go and trust fully. Freedom and peace will follow."
         />
 
