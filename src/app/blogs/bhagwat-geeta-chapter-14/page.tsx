@@ -844,7 +844,7 @@ export default function ChapterPage14() {
           iast="śrī bhagavān uvāca | prakāśaṃ ca pravṛttiṃ ca moham eva ca pāṇḍava | na dveṣṭi sampravṛttāni na nivṛttāni kāṅkṣati ||"
           meaning="The Blessed One said: light, activity, and confusion, when they arise, the one beyond the gunas does not hate them; when they pass, does not long for them."
           insightLabel="The two halves of the portrait"
-          insight="Na dveṣṭi … na kāṅkṣati: does not hate, does not long for. The portrait is built on these two negations. The states arise; you do not push them away. The states pass; you do not chase them. The same posture toward all three. That is what \"beyond\" means here. Not above. Not absent. Just no longer captured."
+          insight="Na dveṣṭi … na kāṅkṣati: does not hate, does not long for. The portrait is built on these two negations. The states arise; you do not push them away. The states pass; you do not chase them. The same posture toward all three. That is what &quot;beyond&quot; means here. Not above. Not absent. Just no longer captured."
           essence="Freedom begins when changing states stop controlling your response."
         />
 

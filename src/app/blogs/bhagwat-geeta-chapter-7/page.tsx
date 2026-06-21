@@ -756,7 +756,7 @@ export default function ChapterPage7() {
           sanskrit="दैवी ह्येषा गुणमयी मम माया दुरत्यया । मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ॥"
           iast="daivī hyeṣā guṇa-mayī mama māyā duratyayā | mām eva ye prapadyante māyām etāṃ taranti te ||"
           meaning="This divine māyā of mine, woven of the three qualities, is hard to cross. Only those who take refuge in me cross beyond it."
-          insightLabel="Why \"refuge\" and not \"effort\""
+          insightLabel="Why &quot;refuge&quot; and not &quot;effort&quot;"
           insight="The mind that is trying to escape its own confusion is the confused mind doing the escaping. It cannot succeed because it is the problem. Refuge is the act of admitting this, and resting your weight on something that is not the confused mind. The Gita names that something. But the structural point is wider: at some level of difficulty, leaning is the only working move."
           essence="The way beyond the veil is not force, but refuge."
         />
@@ -793,7 +793,7 @@ export default function ChapterPage7() {
           iast="catur-vidhā bhajante māṃ janāḥ sukṛtino'rjuna | ārto jijñāsur arthārthī jñānī ca bharatarṣabha ||"
           meaning="Four kinds of good people turn toward me, Arjuna: the distressed, the seeker of knowledge, the seeker of fortune, and the wise one, best of the Bharatas."
           insightLabel="The door is open to all"
-          insight="The Gita does not require purity of motive to begin. It requires only direction. The person who comes from pain is not lesser than the person who comes from wisdom. They are entering through different doors of the same house. The verse is a permission slip for anyone who has thought they needed to be \"more spiritual\" before they could pray."
+          insight="The Gita does not require purity of motive to begin. It requires only direction. The person who comes from pain is not lesser than the person who comes from wisdom. They are entering through different doors of the same house. The verse is a permission slip for anyone who has thought they needed to be &quot;more spiritual&quot; before they could pray."
           essence="Different needs can still lead to one real turning toward the divine."
         />
 

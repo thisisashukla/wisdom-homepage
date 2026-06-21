@@ -881,7 +881,7 @@ export default function ChapterTwoPage() {
           iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
           meaning="You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of the results of your activities, and never be attached to not doing your duty."
           insightLabel="The four parts"
-          insight="This verse is often reduced to \"do your duty but don't claim the results.\" But it has four distinct moves: (1) do your duty, this is positive; (2) don't claim ownership of outcomes, negative; (3) don't make the fruit your motive, negative; (4) don't use this teaching as an excuse for inaction, negative. The fourth part is almost always ignored. The verse is anti-nihilism as much as it is anti-ambition."
+          insight="This verse is often reduced to &quot;do your duty but don't claim the results.&quot; But it has four distinct moves: (1) do your duty, this is positive; (2) don't claim ownership of outcomes, negative; (3) don't make the fruit your motive, negative; (4) don't use this teaching as an excuse for inaction, negative. The fourth part is almost always ignored. The verse is anti-nihilism as much as it is anti-ambition."
           essence="Do your duty sincerely, and let go of expectations for the outcome."
         />
 
@@ -999,7 +999,7 @@ export default function ChapterTwoPage() {
           iast="prajahāti yadā kāmān sarvān pārtha manogatān | ātmanyevātmanā tuṣṭaḥ sthitaprajñastadocyate ||"
           meaning="One is called a person of steady wisdom when they abandon all desires of the mind, O Arjuna, and remain satisfied in the self alone by the self."
           insightLabel="Freedom from desire"
-          insight="This is crucial: freedom from desire doesn't mean wanting nothing. It means your sense of wholeness, your sense of being complete, no longer depends on getting anything from the world. You are full without it. The key phrase is \"satisfied in the self alone by the self\", your completeness comes from within, not from external acquisition."
+          insight="This is crucial: freedom from desire doesn't mean wanting nothing. It means your sense of wholeness, your sense of being complete, no longer depends on getting anything from the world. You are full without it. The key phrase is &quot;satisfied in the self alone by the self&quot;, your completeness comes from within, not from external acquisition."
           essence="Freedom from desire brings deep contentment."
         />
 

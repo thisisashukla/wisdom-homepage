@@ -850,7 +850,7 @@ export default function ChapterPage9() {
           iast="yat karoṣi yad aśnāsi yaj juhoṣi dadāsi yat | yat tapasyasi kaunteya tat kuruṣva mad-arpaṇam ||"
           meaning="Whatever you do, whatever you eat, whatever you offer, whatever you give, whatever discipline you practice, Arjuna, do it as an offering to me."
           insightLabel="The shift from doing to offering"
-          insight="Mad-arpaṇam, \"offered to me.\" The verse does not change the activity. It changes the direction. Same email, same meal, same conversation, but the question is no longer just what will it get me. The question is also who is this for. A life directed outside itself stops feeling like a chase and starts feeling like a service."
+          insight="Mad-arpaṇam, &quot;offered to me.&quot; The verse does not change the activity. It changes the direction. Same email, same meal, same conversation, but the question is no longer just what will it get me. The question is also who is this for. A life directed outside itself stops feeling like a chase and starts feeling like a service."
           essence="Every action becomes complete when it is offered."
         />
 

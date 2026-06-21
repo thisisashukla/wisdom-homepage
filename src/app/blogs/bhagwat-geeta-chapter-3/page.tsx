@@ -907,7 +907,7 @@ export default function ChapterThreePage() {
           speaker="Krishna"
           sanskrit="प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः । अहङ्कारविमूढात्मा कर्ताऽहमिति मन्यते ॥"
           iast="prakṛteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśaḥ | ahaṅkāravimūḍhātmā kartā'hamiti manyate ||"
-          meaning="All actions are performed by the qualities of material nature, but one who is deluded by ego thinks \"I am the doer.\""
+          meaning="All actions are performed by the qualities of material nature, but one who is deluded by ego thinks &quot;I am the doer.&quot;"
           insightLabel="The subtler freedom"
           insight="The ego's claim on action is where suffering begins. The one who thinks they're the sole author of their successes also becomes the sole bearer of their failures. The Gita offers a different accounting: nature acts through us; we are instruments, not owners. This realization, not as belief, but as lived understanding, is freedom."
           essence="Freedom begins when you realize you are not the sole doer, nature acts through you."

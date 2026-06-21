@@ -712,7 +712,7 @@ export default function ChapterPage13() {
           sanskrit="इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः । एतत्क्षेत्रं समासेन सविकारमुदाहृतम् ॥"
           iast="icchā dveṣaḥ sukhaṃ duḥkhaṃ saṅghātaś cetanā dhṛtiḥ | etat kṣetraṃ samāsena sa-vikāram udāhṛtam ||"
           meaning="Desire, aversion, pleasure, pain, the body, consciousness, steadiness, this field, with its modifications, is briefly described."
-          insightLabel="What this verse moves out of \"you\""
+          insightLabel="What this verse moves out of &quot;you&quot;"
           insight="Read the list. Desire. Aversion. Pleasure. Pain. Steadiness. These are what most of us call our identity. The verse moves all of them out of the knower category. You still have a desire, but the desire is something you are observing, not something you are. Once that shift happens, the desire's grip loosens. It is no longer wrestling you. It is just appearing, somewhere in your field of awareness."
           essence="Your reactions belong to the field, not to the knower."
         />

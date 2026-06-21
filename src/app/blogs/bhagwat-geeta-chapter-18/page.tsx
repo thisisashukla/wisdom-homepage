@@ -862,7 +862,7 @@ export default function ChapterPage18() {
           sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥"
           iast="śreyān sva-dharmo viguṇaḥ para-dharmāt sv-anuṣṭhitāt | svabhāva-niyataṃ karma kurvan nāpnoti kilbiṣam ||"
           meaning="One's own dharma, even when imperfect, is better than another's dharma well performed. The work set by one's own nature, performed, does not incur wrongdoing."
-          insightLabel="Why \"sva\" is the key word"
+          insightLabel="Why &quot;sva&quot; is the key word"
           insight="Sva-dharma: one's own duty. Svabhāva-niyatam: set by one's own nature. The verse is pointing toward the work that arises out of who you actually are, not what you have been told to be, not what you would like to imitate. That work, even badly done, registers as authentic. Better work, in someone else's voice, does not."
           essence="Your imperfect duty is cleaner than a borrowed perfection."
         />

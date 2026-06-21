@@ -837,7 +837,7 @@ export default function ChapterPage8() {
           iast="avyakto'kṣara ity uktas tam āhuḥ paramāṃ gatim | yaṃ prāpya na nivartante tad dhāma paramaṃ mama ||"
           meaning="That which is called the unmanifest, the imperishable, they call it the supreme destination. Having reached it, beings do not return. That is my supreme abode."
           insightLabel="What completion means here"
-          insight="The phrase tad dhāma paramaṃ mama, \"that is my supreme home\", is intimate. Krishna is not pointing at an abstract beyond. He is pointing at where he himself lives. The destination is a relationship as much as a place. To reach it is to come home, not to be erased."
+          insight="The phrase tad dhāma paramaṃ mama, &quot;that is my supreme home&quot;, is intimate. Krishna is not pointing at an abstract beyond. He is pointing at where he himself lives. The destination is a relationship as much as a place. To reach it is to come home, not to be erased."
           essence="The highest arrival is beyond return."
         />
 

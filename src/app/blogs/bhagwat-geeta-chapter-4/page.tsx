@@ -842,7 +842,7 @@ export default function ChapterFourPage() {
           iast="śreyāndravyamayādyajñājjñānayajñaḥ parantapa | sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate ||"
           meaning="O destroyer of enemies, the sacrifice of knowledge is superior to the sacrifice of material things. All action in its entirety finds its culmination in wisdom, O Arjuna."
           insightLabel="Why this matters"
-          insight="Every action, if pursued far enough and deeply enough, eventually asks: but why? The chain of \"why\" always leads to questions about meaning, identity, and ultimate value. The Gita calls this endpoint jnana, wisdom. Action without wisdom is activity without direction. Wisdom is what completes it."
+          insight="Every action, if pursued far enough and deeply enough, eventually asks: but why? The chain of &quot;why&quot; always leads to questions about meaning, identity, and ultimate value. The Gita calls this endpoint jnana, wisdom. Action without wisdom is activity without direction. Wisdom is what completes it."
           essence="Wisdom is the highest offering, it transforms and completes all actions."
         />
 
@@ -919,7 +919,7 @@ export default function ChapterFourPage() {
           iast="na hi jñānena sadṛśaṃ pavitramiha vidyate | tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati ||"
           meaning="Nothing in this world is as purifying as wisdom. One who is perfected in yoga finds this wisdom within the self, in the course of time."
           insightLabel="The patience required"
-          insight="The word kālena, \"in the course of time\", is significant. Wisdom is not a download. It ripens. You cannot force it. What you can do is practice, sincerely and consistently, and trust the process. The Gita is telling you: don't expect overnight transformation. But do expect transformation."
+          insight="The word kālena, &quot;in the course of time&quot;, is significant. Wisdom is not a download. It ripens. You cannot force it. What you can do is practice, sincerely and consistently, and trust the process. The Gita is telling you: don't expect overnight transformation. But do expect transformation."
           essence="Nothing purifies the mind and soul like the sincere pursuit of wisdom."
         />
 
@@ -946,7 +946,7 @@ export default function ChapterFourPage() {
           iast="tasmādajñānasaṃbhūtaṃ hṛtsthaṃ jñānāsinā''tmanaḥ | chittvainaṃ saṃśayaṃ yogamātiṣṭhottiṣṭha bhārata ||"
           meaning="Therefore, with the sword of knowledge, cut asunder the doubt born of ignorance that has lodged in your heart. Take refuge in yoga, arise, O Arjuna."
           insightLabel="The pivot"
-          insight="\"Arise\", uttiṣṭha, is the last word of Chapter 4. It echoes through to the end of the Gita. Knowledge without action is incomplete. Once you understand, you must stand up. The instruction is physical as much as philosophical. The Gita doesn't end with enlightenment. It ends with standing."
+          insight="&quot;Arise&quot;, uttiṣṭha, is the last word of Chapter 4. It echoes through to the end of the Gita. Knowledge without action is incomplete. Once you understand, you must stand up. The instruction is physical as much as philosophical. The Gita doesn't end with enlightenment. It ends with standing."
           essence="Use knowledge to overcome doubt, then act with steadiness."
         />
 

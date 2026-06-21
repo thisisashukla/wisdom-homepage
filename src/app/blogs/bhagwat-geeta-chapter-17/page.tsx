@@ -817,7 +817,7 @@ export default function ChapterPage17() {
           iast="dātavyam iti yad dānaṃ dīyate'nupakāriṇe | deśe kāle ca pātre ca tad dānaṃ sāttvikaṃ smṛtam ||"
           meaning="A gift given with the conviction that giving is right, to one who cannot return the gift, in the right place, at the right time, to a worthy recipient, that is called sattvic giving."
           insightLabel="The strangest phrase in the verse"
-          insight="Anupakāriṇe: to one who cannot return the gift. The Gita is explicit that the purest form of giving is the one that has no possibility of reciprocation. The moment reciprocation enters, the gift becomes a transaction. Most modern \"giving\" is actually exchange, dressed up. The Gita is naming what genuine giving looks like, and how rarely it happens."
+          insight="Anupakāriṇe: to one who cannot return the gift. The Gita is explicit that the purest form of giving is the one that has no possibility of reciprocation. The moment reciprocation enters, the gift becomes a transaction. Most modern &quot;giving&quot; is actually exchange, dressed up. The Gita is naming what genuine giving looks like, and how rarely it happens."
           essence="Giving becomes pure when nothing is being bought in return."
         />
 

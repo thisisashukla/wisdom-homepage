@@ -880,7 +880,7 @@ export default function ChapterFivePage() {
           iast="yo'ntaḥsukho'ntarārāmastathāntarjyotireva yaḥ | sa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati ||"
           meaning="One who finds happiness within, who is pleased within, who is illuminated within, that yogi attains Brahman-nirvana and becomes Brahman."
           insightLabel="The direction of attention"
-          insight="Three \"within\" words in a single verse: happiness within, delight within, light within. The Gita's consistent message: what you are looking for outside is located inside. This verse is its most concentrated statement of that teaching. You're not seeking something distant. You're recognizing what's already true."
+          insight="Three &quot;within&quot; words in a single verse: happiness within, delight within, light within. The Gita's consistent message: what you are looking for outside is located inside. This verse is its most concentrated statement of that teaching. You're not seeking something distant. You're recognizing what's already true."
           essence="Your truest peace and joy are always inside you, never outside."
         />
 

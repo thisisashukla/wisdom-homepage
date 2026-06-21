@@ -842,7 +842,7 @@ export default function ChapterOnePage() {
           iast="dhṛtarāṣṭra uvāca dharmakṣetre kurukṣetre samavetā yuyutsavaḥ | māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya ||"
           meaning="Dhritarashtra said: O Sanjaya, after assembling on the holy field of Kurukshetra, eager to fight, what did mine and Pandu's sons do?"
           insightLabel="What it reveals"
-          insight="The Gita's first sentence already contains the war's root cause. \"Mine\" (māmakāḥ). Not \"the armies.\" Not \"the warriors.\" Mine and theirs. The blind king has already sorted the world into us and them before anything has happened."
+          insight="The Gita's first sentence already contains the war's root cause. &quot;Mine&quot; (māmakāḥ). Not &quot;the armies.&quot; Not &quot;the warriors.&quot; Mine and theirs. The blind king has already sorted the world into us and them before anything has happened."
           essence="Our perspective is shaped by our attachments and fears."
         />
 
@@ -955,7 +955,7 @@ export default function ChapterOnePage() {
           iast="tatrāpaśyatsthitānpārthaḥ pitṛ̈natha pitāmahān | ācāryānmātulānbhrātṛ̈nputrānpautrānsakhīṃstathā || śvaśurānsuhṛdaścaiva senayorubhayorapi | tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān ||"
           meaning="There Arjuna saw, standing in both armies: fathers, grandfathers, teachers, maternal uncles, brothers, sons, grandsons, friends, fathers-in-law, and well-wishers. Seeing all these relatives arrayed on both sides, the son of Kunti was overwhelmed with great compassion."
           insightLabel="The human moment"
-          insight="The list is precise and personal. Not \"the enemy\", fathers, grandfathers, teachers. The Gita is describing what it looks like when abstract conflict becomes concrete and personal. This is not cowardice. This is recognition."
+          insight="The list is precise and personal. Not &quot;the enemy&quot;, fathers, grandfathers, teachers. The Gita is describing what it looks like when abstract conflict becomes concrete and personal. This is not cowardice. This is recognition."
           essence="Recognize the humanity in every conflict; behind every role is a relationship."
         />
 

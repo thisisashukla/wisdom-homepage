@@ -626,7 +626,7 @@ export default function CompleteStructurePage() {
           speaker="Dhritarashtra"
           sanskrit="धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥"
           iast="dharmakṣetre kurukṣetre samavetā yuyutsavaḥ | māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya ||"
-          essence="My sons\", not \"the Kauravas.\" The disease is in the first word."
+          essence="My sons&quot;, not &quot;the Kauravas.&quot; The disease is in the first word."
         />
           </div>
           <div className="shloka-essence">The diagnosis before the prescription.</div>
