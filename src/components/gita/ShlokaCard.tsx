@@ -51,9 +51,9 @@ export default function ShlokaCard({
 }: ShlokaCardProps) {
   // Parse "Bhagavad Gita X.Y" → chapter, verse for audio lookup
   const refMatch = verseRef.match(/(\d+)\.(\d+)/)
-  const audio = refMatch
-    ? getVerseAudio(Number(refMatch[1]), Number(refMatch[2]))
-    : null
+  const ch = refMatch ? Number(refMatch[1]) : undefined
+  const vs = refMatch ? Number(refMatch[2]) : undefined
+  const audio = ch && vs ? getVerseAudio(ch, vs) : null
 
   return (
     <div className="shloka-card">
@@ -63,7 +63,7 @@ export default function ShlokaCard({
       </div>
 
       {audio ? (
-        <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={sanskrit} />
+        <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={sanskrit} chapter={ch} verse={vs} />
       ) : (
         <SanskritText text={sanskrit} className="shloka-sanskrit" />
       )}

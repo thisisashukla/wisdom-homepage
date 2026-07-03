@@ -83,7 +83,7 @@ export default async function TodayPageHi() {
 
       <article className="gita-verse-card">
         {audio ? (
-          <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={verse.sanskrit} />
+          <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={verse.sanskrit} chapter={ref.chapter} verse={ref.verse} />
         ) : (
           <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
         )}

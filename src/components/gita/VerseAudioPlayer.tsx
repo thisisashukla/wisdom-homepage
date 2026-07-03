@@ -2,6 +2,7 @@
 
 import React, { useRef, useState, useCallback, useEffect } from 'react'
 import type { AudioTimestamp } from '@/lib/gita'
+import { trackEvent } from '@/lib/mixpanel'
 import SanskritText from './SanskritText'
 
 interface Props {
@@ -9,11 +10,14 @@ interface Props {
   timestamps: AudioTimestamp[]
   /** Full Sanskrit shloka text (with dandas) for rendering with karaoke highlight. */
   text: string
+  chapter?: number
+  verse?: number
 }
 
-export default function VerseAudioPlayer({ audioSrc, timestamps, text }: Props) {
+export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, verse }: Props) {
   const audioRef = useRef<HTMLAudioElement>(null)
   const rafRef = useRef<number>(0)
+  const hasTracked = useRef(false)
   const [playing, setPlaying] = useState(false)
   const [activeIdx, setActiveIdx] = useState(-1)
   const [currentTime, setCurrentTime] = useState(0)
@@ -49,7 +53,19 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text }: Props) 
   useEffect(() => {
     const audio = audioRef.current
     if (!audio) return
-    const onPlay = () => { setPlaying(true); rafRef.current = requestAnimationFrame(tick) }
+    const onPlay = () => {
+      setPlaying(true)
+      rafRef.current = requestAnimationFrame(tick)
+      if (!hasTracked.current) {
+        hasTracked.current = true
+        trackEvent('Shloka Played', {
+          chapter,
+          verse,
+          shloka: chapter && verse ? `${chapter}.${verse}` : undefined,
+          page: window.location.pathname,
+        })
+      }
+    }
     const onPause = () => { setPlaying(false); cancelAnimationFrame(rafRef.current) }
     const onEnded = () => {
       setPlaying(false)

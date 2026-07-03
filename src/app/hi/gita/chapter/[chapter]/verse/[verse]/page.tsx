@@ -143,7 +143,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
 
       <article className="gita-verse-card">
         {audio ? (
-          <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={verse.sanskrit} />
+          <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={verse.sanskrit} chapter={c} verse={v} />
         ) : (
           <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
         )}
