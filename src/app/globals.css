@@ -335,3 +335,80 @@ a {
   font-size: 32px;
   letter-spacing: 0.1em;
 }
+
+/* ── Verse audio player (global — used in gita pages and blog ShlokaCards) ── */
+.verse-audio-player {
+  margin-bottom: 24px;
+}
+.verse-audio-words {
+  font-family: "Noto Sans Devanagari", "Inter", sans-serif;
+  font-size: 22px;
+  line-height: 1.9;
+  color: var(--gold-pale, #fdf3dc);
+  text-align: center;
+}
+.sa-word {
+  border-radius: 4px;
+  transition: background 0.1s, color 0.1s;
+}
+.verse-audio-player .sa-word.active {
+  background: rgba(200, 136, 30, 0.32);
+  color: var(--gold-light, #f5c96a);
+}
+.verse-audio-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border, rgba(200, 136, 30, 0.2));
+}
+.verse-audio-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--gold, #c8881e);
+  color: #1a0606;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(200, 136, 30, 0.35);
+  transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+.verse-audio-btn:hover {
+  background: var(--gold-light, #f5c96a);
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(200, 136, 30, 0.5);
+}
+.verse-audio-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.verse-audio-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.verse-audio-label {
+  font-size: 11px;
+  color: var(--text-dim, rgba(245, 232, 204, 0.65));
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.verse-audio-time {
+  font-size: 11px;
+  color: var(--text-dimmer, rgba(245, 232, 204, 0.35));
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.05em;
+}
+@media (max-width: 640px) {
+  .verse-audio-words { font-size: 19px; }
+  .verse-audio-btn { width: 46px; height: 46px; }
+}

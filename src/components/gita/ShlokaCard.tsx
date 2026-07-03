@@ -1,4 +1,7 @@
 import React from 'react'
+import SanskritText from './SanskritText'
+import VerseAudioPlayer from './VerseAudioPlayer'
+import { getVerseAudio } from '@/lib/gita'
 
 export interface ShlokaCardProps {
   /** Verse reference, e.g. "Bhagavad Gita 7.3" */
@@ -22,23 +25,7 @@ export interface ShlokaCardProps {
 }
 
 /**
- * Split Sanskrit text at each single danda (।), placing each pada on its own line.
- * Double danda (॥) stays attached to the last pada.
- */
-function formatSanskrit(text: string): React.ReactNode {
-  // Split at single-danda followed by whitespace, keeping the danda with the preceding pada
-  const parts = text.split(/(?<=।)\s+/)
-  if (parts.length <= 1) return text
-  return parts.map((part, i) => (
-    <React.Fragment key={i}>
-      {i > 0 && <br />}
-      {part}
-    </React.Fragment>
-  ))
-}
-
-/**
- * Same treatment for IAST: split at | (single pipe) followed by whitespace.
+ * Split IAST transliteration at | (single pipe) followed by whitespace.
  */
 function formatIast(text: string): React.ReactNode {
   const parts = text.split(/(?<=\|)\s+/)
@@ -62,6 +49,12 @@ export default function ShlokaCard({
   insightLabel = 'What this verse is doing',
   essence,
 }: ShlokaCardProps) {
+  // Parse "Bhagavad Gita X.Y" → chapter, verse for audio lookup
+  const refMatch = verseRef.match(/(\d+)\.(\d+)/)
+  const audio = refMatch
+    ? getVerseAudio(Number(refMatch[1]), Number(refMatch[2]))
+    : null
+
   return (
     <div className="shloka-card">
       <div className="shloka-header">
@@ -69,9 +62,11 @@ export default function ShlokaCard({
         {speaker && <span className="shloka-speaker">Speaker: {speaker}</span>}
       </div>
 
-      <div className="shloka-sanskrit" lang="sa">
-        {formatSanskrit(sanskrit)}
-      </div>
+      {audio ? (
+        <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={sanskrit} />
+      ) : (
+        <SanskritText text={sanskrit} className="shloka-sanskrit" />
+      )}
 
       {iast && (
         <div className="shloka-iast">

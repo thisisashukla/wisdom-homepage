@@ -10,6 +10,9 @@ import {
 } from '@/lib/gita'
 import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import BlogTracker from '@/components/BlogTracker'
+import SanskritText from '@/components/gita/SanskritText'
+import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
+import { getVerseAudio } from '@/lib/gita'
 
 export const revalidate = 3600
 
@@ -48,6 +51,7 @@ export default async function TodayPageHi() {
   const ref = todaysVerseRef()
   if (!ref) notFound()
   const verse = await getVerse(ref.chapter, ref.verse)
+  const audio = verse ? getVerseAudio(ref.chapter, ref.verse) : null
   if (!verse) notFound()
   const ch = getChapter(ref.chapter)
 
@@ -78,7 +82,11 @@ export default async function TodayPageHi() {
       )}
 
       <article className="gita-verse-card">
-        <div className="gita-sanskrit" lang="sa">{verse.sanskrit}</div>
+        {audio ? (
+          <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={verse.sanskrit} />
+        ) : (
+          <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
+        )}
         <div className="gita-translation">
           <div className="gita-translation-label">हिन्दी अनुवाद</div>
           <div className="gita-translation-text gita-translation-text--hi" lang="hi">{verse.hindiTranslation}</div>

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import React from 'react'
 import { notFound } from 'next/navigation'
+import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
 import {
   getAllChapters,
   getChapter,
@@ -8,6 +8,7 @@ import {
   getVerseNeighbors,
   getRelatedVerses,
   getTopicBridgesForVerse,
+  getVerseAudio,
   verseUrl,
   chapterUrl,
   topicUrl,
@@ -17,6 +18,7 @@ import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import BlogTracker from '@/components/BlogTracker'
 import ShareButtons from '@/components/gita/ShareButtons'
 import VerseBookmark from '@/components/gita/VerseBookmark'
+import SanskritText from '@/components/gita/SanskritText'
 
 type Params = { chapter: string; verse: string }
 
@@ -28,17 +30,6 @@ export async function generateStaticParams() {
     }
   }
   return out
-}
-
-function formatSanskrit(text: string): React.ReactNode {
-  const parts = text.split(/(?<=।)\s+/)
-  if (parts.length <= 1) return text
-  return parts.map((part, i) => (
-    <React.Fragment key={i}>
-      {i > 0 && <br />}
-      {part}
-    </React.Fragment>
-  ))
 }
 
 const trimToLength = (s: string, maxChars: number): string => {
@@ -100,6 +91,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
   const v = Number(params.verse)
   const verse = await getVerse(c, v)
   if (!verse) notFound()
+  const audio = getVerseAudio(c, v)
   const ch = getChapter(c)
   const { prev, next } = getVerseNeighbors(c, v)
   const related = getRelatedVerses(c, v, verse.tags) as IndexEntry[]
@@ -150,9 +142,11 @@ export default async function VersePageHi({ params }: { params: Params }) {
       </p>
 
       <article className="gita-verse-card">
-        <div className="gita-sanskrit" lang="sa">
-          {formatSanskrit(verse.sanskrit)}
-        </div>
+        {audio ? (
+          <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={verse.sanskrit} />
+        ) : (
+          <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
+        )}
 
         <div className="gita-translation">
           <div className="gita-translation-label">हिन्दी अनुवाद</div>

@@ -15,6 +15,8 @@
  * requisite_concepts, nodeId, path, depth, is_standalone.
  */
 
+import fs from 'fs'
+import path from 'path'
 import chaptersJson from '@/content/gita/chapters.json'
 import indexJson from '@/content/gita/index.json'
 import topicsJson from '@/content/gita/topics.json'
@@ -363,6 +365,38 @@ const CHAPTER_LEDE_HI: Record<number, string> = {
 
 export const chapterLede = (n: number, locale: 'en' | 'hi' = 'en'): string | null =>
   (locale === 'hi' ? CHAPTER_LEDE_HI : CHAPTER_LEDE_EN)[n] ?? null
+
+// ── Audio manifest ──────────────────────────────────────────────────────────
+
+export type WordMeaning = { word: string; meaning: string }
+export type AudioTimestamp = { text: string; start: number; end: number; meanings: WordMeaning[] }
+
+export type VerseAudio = {
+  /** Relative path from /public, e.g. "gita/bg_02_047.mp3" */
+  audio: string
+  timestamps: AudioTimestamp[]
+}
+
+let _audioManifest: Record<string, VerseAudio> | null = null
+
+function getAudioManifest(): Record<string, VerseAudio> {
+  if (_audioManifest) return _audioManifest
+  try {
+    const p = path.join(process.cwd(), 'public/audio/gita/manifest.json')
+    _audioManifest = JSON.parse(fs.readFileSync(p, 'utf-8'))
+    return _audioManifest!
+  } catch {
+    _audioManifest = {}
+    return _audioManifest
+  }
+}
+
+export function getVerseAudio(chapter: number, verse: number): VerseAudio | null {
+  const manifest = getAudioManifest()
+  const entry = manifest[`${chapter}:${verse}`]
+  if (!entry?.timestamps?.length) return null
+  return { audio: entry.audio, timestamps: entry.timestamps }
+}
 
 // ── URL helpers ──────────────────────────────────────────────────────────────
 
