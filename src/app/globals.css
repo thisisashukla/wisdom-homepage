@@ -343,7 +343,7 @@ a {
 .verse-audio-words {
   font-family: "Noto Sans Devanagari", "Inter", sans-serif;
   font-size: 22px;
-  line-height: 1.9;
+  line-height: 2.1;
   color: var(--gold-pale, #fdf3dc);
   text-align: center;
 }
@@ -351,9 +351,50 @@ a {
   border-radius: 4px;
   transition: background 0.1s, color 0.1s;
 }
-.verse-audio-player .sa-word.active {
-  background: rgba(200, 136, 30, 0.32);
-  color: var(--gold-light, #f5c96a);
+.verse-audio-words .sa-word {
+  display: inline-block;
+  padding: 0 2px;
+  transition: color 0.5s ease, background 0.35s ease, box-shadow 0.35s ease,
+    text-shadow 0.35s ease, padding 0.35s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.verse-audio-words .sa-danda {
+  transition: color 0.5s ease;
+}
+/* Words/dandas not yet reached sit dimmed while playing; everything else (already
+   recited, or the player idle/reset) stays at the normal full-brightness color above. */
+.verse-audio-words .dim {
+  color: rgba(253, 243, 220, 0.38);
+}
+.verse-audio-words .sa-word.active {
+  color: #ffd9a3;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(255, 141, 61, 0.16);
+  box-shadow: 0 0 0 1px rgba(255, 154, 66, 0.32), 0 0 14px rgba(255, 141, 61, 0.22);
+  text-shadow: 0 0 10px rgba(255, 154, 66, 0.35);
+  transform: scale(1.04);
+  animation: sa-word-pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes sa-word-pop {
+  0% {
+    transform: scale(0.96);
+    box-shadow: 0 0 0 1px rgba(255, 154, 66, 0), 0 0 0 rgba(255, 141, 61, 0);
+  }
+  60% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1.04);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .verse-audio-words .sa-word {
+    transition: color 0.3s ease, background 0.3s ease;
+  }
+  .verse-audio-words .sa-word.active {
+    animation: none;
+    transform: none;
+  }
 }
 .verse-audio-controls {
   display: flex;
@@ -401,6 +442,12 @@ a {
   color: var(--text-dim, rgba(245, 232, 204, 0.65));
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+.verse-audio-label:hover {
+  color: var(--gold-light, #f5c96a);
+  border-bottom-color: rgba(200, 136, 30, 0.4);
 }
 .verse-audio-time {
   font-size: 11px;

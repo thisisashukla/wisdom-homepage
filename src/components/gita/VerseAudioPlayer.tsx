@@ -20,6 +20,9 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
   const hasTracked = useRef(false)
   const [playing, setPlaying] = useState(false)
   const [activeIdx, setActiveIdx] = useState(-1)
+  // Last word reached so far, tracked separately from activeIdx so brief gaps between
+  // word timestamps don't flash the whole verse back to its dimmed "upcoming" state.
+  const [revealIdx, setRevealIdx] = useState(timestamps.length)
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
   const [loadError, setLoadError] = useState(false)
@@ -34,14 +37,27 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
     [timestamps],
   )
 
+  const findRevealIdx = useCallback(
+    (t: number) => {
+      let idx = -1
+      for (let i = 0; i < timestamps.length; i++) {
+        if (t >= timestamps[i].start) idx = i
+        else break
+      }
+      return idx
+    },
+    [timestamps],
+  )
+
   const tick = useCallback(() => {
     const audio = audioRef.current
     if (!audio) return
     const t = audio.currentTime
     setCurrentTime(t)
     setActiveIdx(findActiveIdx(t))
+    setRevealIdx(findRevealIdx(t))
     if (!audio.paused) rafRef.current = requestAnimationFrame(tick)
-  }, [findActiveIdx])
+  }, [findActiveIdx, findRevealIdx])
 
   const toggle = () => {
     const audio = audioRef.current
@@ -70,6 +86,7 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
     const onEnded = () => {
       setPlaying(false)
       setActiveIdx(-1)
+      setRevealIdx(timestamps.length)
       setCurrentTime(0)
       cancelAnimationFrame(rafRef.current)
     }
@@ -104,7 +121,7 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
         preload="metadata"
       />
 
-      <SanskritText text={text} activeIdx={activeIdx} className="verse-audio-words" />
+      <SanskritText text={text} activeIdx={activeIdx} revealIdx={revealIdx} className="verse-audio-words" />
 
       <div className="verse-audio-controls">
         <button
@@ -125,7 +142,9 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
           )}
         </button>
         <div className="verse-audio-caption">
-          <span className="verse-audio-label">Sanskrit recitation</span>
+          <a href="/tts" className="verse-audio-label" data-mp-location="verse_audio_credit">
+            Sanskrit recitation
+          </a>
           <span className="verse-audio-time">
             {fmt(currentTime)}{duration ? ` / ${fmt(duration)}` : ''}
           </span>
