@@ -230,6 +230,12 @@ const pageCSS = `
       .card-thumb-students::before { content: "अ"; font-family: "Noto Sans Devanagari", serif; }
       .card-thumb-stoic::before    { content: "तु"; font-family: "Noto Sans Devanagari", serif; }
       .card-thumb-gitagpt::before  { content: "AI"; font-family: "Playfair Display", serif; font-size: 110px; font-weight: 900; }
+      .card-thumb-saar::before     { content: "सार"; font-family: "Noto Sans Devanagari", serif; font-size: 110px; }
+      .card-thumb-krishna::before  { content: "कृ"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-shlokas20::before{ content: "२०"; font-family: "Noto Sans Devanagari", serif; font-size: 120px; }
+      .card-thumb-gayatri::before  { content: "गा"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-mahamantra::before { content: "हरे"; font-family: "Noto Sans Devanagari", serif; font-size: 110px; }
+      .card-thumb-gitasanskrit::before { content: "३०"; font-family: "Noto Sans Devanagari", serif; font-size: 120px; }
 
       /* ── CARD THUMB COLOR GROUPS ── */
 
@@ -246,7 +252,8 @@ const pageCSS = `
       .card-thumb-ch7, .card-thumb-ch8, .card-thumb-ch9,
       .card-thumb-ch10, .card-thumb-ch11, .card-thumb-ch12,
       .card-thumb-3paths, .card-thumb-arc, .card-thumb-begin,
-      .card-thumb-shlok, .card-thumb-gita {
+      .card-thumb-shlok, .card-thumb-gita,
+      .card-thumb-krishna, .card-thumb-mahamantra, .card-thumb-gayatri {
         background: linear-gradient(135deg, rgba(180, 145, 10, 0.16) 0%, var(--bg-alt) 65%);
         border-top: 2px solid rgba(210, 168, 20, 0.75);
       }
@@ -255,7 +262,8 @@ const pageCSS = `
       .card-thumb-ch13, .card-thumb-ch14, .card-thumb-ch15,
       .card-thumb-ch16, .card-thumb-ch17, .card-thumb-ch18,
       .card-thumb-sthita, .card-thumb-dharma, .card-thumb-gunas,
-      .card-thumb-death {
+      .card-thumb-death, .card-thumb-saar,
+      .card-thumb-shlokas20, .card-thumb-gitasanskrit {
         background: linear-gradient(135deg, rgba(100, 70, 190, 0.13) 0%, var(--bg-alt) 65%);
         border-top: 2px solid rgba(150, 110, 220, 0.70);
       }
@@ -940,10 +948,148 @@ export default function BlogIndexPage() {
       {/* TOPIC GUIDES */}
       <div className="section-head" style={{marginTop: '56px'}}>
         <h2>Gita Teachings, <em>Topic Guides</em></h2>
-        <span className="section-count">16 articles published</span>
+        <span className="section-count">22 articles published</span>
       </div>
 
       <div className="articles-grid">
+        {/* Bhagwat Geeta Saar */}
+        <a href="/blogs/bhagwat-geeta-saar" className="article-card" data-mp-article="Bhagwat Geeta Saar">
+          <div className="card-thumb card-thumb-saar">
+            <div className="card-chapter-badge">The Complete Essence · All 18 Chapters</div>
+            <div className="card-thumb-title">Bhagwat Geeta Saar —<br /><em>The Essence in 18 Verses</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">गीता सार</span>
+              <span className="tag tag-philosophy">All 18 Chapters</span>
+              <span className="tag tag-shloka">22 Verses</span>
+              <span className="tag tag-chapter">Deep Read</span>
+            </div>
+            <div className="card-desc">
+              The famous WhatsApp &ldquo;Geeta Saar&rdquo; you have read isn&apos;t actually in the Gita. Here is what Krishna really taught &mdash; one core verse for each of the 18 chapters, in Sanskrit, Hindi, and English.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~15 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Krishna Quotes 50 */}
+        <a href="/blogs/krishna-quotes" className="article-card" data-mp-article="Krishna Quotes 50">
+          <div className="card-thumb card-thumb-krishna">
+            <div className="card-chapter-badge">Collection · 50 Teachings · Verse-Referenced</div>
+            <div className="card-thumb-title">Krishna Quotes —<br /><em>50 Teachings from the Gita</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">कृष्ण</span>
+              <span className="tag tag-philosophy">50 Quotes</span>
+              <span className="tag tag-shloka">10 Themes</span>
+              <span className="tag tag-chapter">Reference</span>
+            </div>
+            <div className="card-desc">
+              Fifty Krishna quotes from the Bhagavad Gita, grouped by theme, each with the verse reference and the context most social-media versions strip away. Action, devotion, meditation, surrender, character.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~14 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* 20 Famous Sanskrit Shlokas */}
+        <a href="/blogs/20-famous-sanskrit-shlokas" className="article-card" data-mp-article="20 Famous Sanskrit Shlokas">
+          <div className="card-thumb card-thumb-shlokas20">
+            <div className="card-chapter-badge">Collection · 20 Shlokas · Hindi &amp; English</div>
+            <div className="card-thumb-title">20 Famous Sanskrit Shlokas —<br /><em>with Meaning in Hindi &amp; English</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">श्लोक</span>
+              <span className="tag tag-philosophy">Vedas · Upanishads · Gita</span>
+              <span className="tag tag-shloka">20 Verses</span>
+              <span className="tag tag-chapter">Reference</span>
+            </div>
+            <div className="card-desc">
+              The twenty Sanskrit shlokas every educated person should know &mdash; from Vakratunda Mahakaya to Asato Ma Sadgamaya to Karmanye Vadhikaraste. Devanagari, IAST, English translation, and Hindi meaning for each.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~14 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Gayatri Mantra */}
+        <a href="/blogs/gayatri-mantra-meaning" className="article-card" data-mp-article="Gayatri Mantra Meaning">
+          <div className="card-thumb card-thumb-gayatri">
+            <div className="card-chapter-badge">Mantra Guide · Rig Veda 3.62.10</div>
+            <div className="card-thumb-title">Gayatri Mantra —<br /><em>Word-by-Word Meaning &amp; How to Chant</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">गायत्री</span>
+              <span className="tag tag-philosophy">Rig Veda</span>
+              <span className="tag tag-shloka">24 Syllables</span>
+              <span className="tag tag-chapter">Deep Read</span>
+            </div>
+            <div className="card-desc">
+              The most-recited Sanskrit mantra on earth. Word by word: bhur, bhuvah, svah, savitur, vareṇyam, bhargo, dhīmahi. What it actually asks for is not wealth or protection &mdash; it is illumination of the intellect.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~12 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Hare Krishna Mahamantra */}
+        <a href="/blogs/hare-krishna-mahamantra" className="article-card" data-mp-article="Hare Krishna Mahamantra">
+          <div className="card-thumb card-thumb-mahamantra">
+            <div className="card-chapter-badge">Mantra Guide · Kali Santarana Upanishad</div>
+            <div className="card-thumb-title">Hare Krishna Mahamantra —<br /><em>Meaning, History &amp; Kirtan</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">हरे कृष्ण</span>
+              <span className="tag tag-philosophy">Bhakti · Chaitanya · ISKCON</span>
+              <span className="tag tag-shloka">16 Words</span>
+              <span className="tag tag-chapter">Deep Read</span>
+            </div>
+            <div className="card-desc">
+              A sixteen-word mantra that George Harrison put on the UK charts in 1969. Chaitanya popularized it in 16th-century Bengal; Prabhupada carried it to New York in 1965. What the words mean, and what nama-kirtan is actually doing.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~13 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* BG Quotes in Sanskrit */}
+        <a href="/blogs/bhagavad-gita-quotes-sanskrit" className="article-card" data-mp-article="BG Quotes in Sanskrit">
+          <div className="card-thumb card-thumb-gitasanskrit">
+            <div className="card-chapter-badge">Collection · 30 Verses · Sanskrit · Hindi · English</div>
+            <div className="card-thumb-title">Bhagavad Gita Quotes in Sanskrit —<br /><em>30 Verses with Meaning</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">गीता</span>
+              <span className="tag tag-philosophy">6 Themes</span>
+              <span className="tag tag-shloka">30 Shlokas</span>
+              <span className="tag tag-chapter">Reference</span>
+            </div>
+            <div className="card-desc">
+              Most Gita quotes online strip away the Sanskrit. This piece restores it. Thirty famous verses across six themes &mdash; karma, atman, bhakti, paramatman, shanti, shoka &mdash; each in Devanagari, IAST, English, and Hindi.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~16 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
         {/* Rise and Failure of GitaGPT */}
         <a href="/blogs/rise-and-failure-of-gitagpt" className="article-card" data-mp-article="Rise and Failure of GitaGPT">
           <div className="card-thumb card-thumb-gitagpt">
@@ -1317,37 +1463,37 @@ export default function BlogIndexPage() {
       <div className="coming-section">
         <div className="section-head">
           <h2>Coming Soon</h2>
-          <span className="section-count">Collections, topic guides &amp; the Upanishads</span>
+          <span className="section-count">Mantras, verse deep-dives &amp; core concepts</span>
         </div>
         <div className="coming-grid">
           <div className="coming-card">
-            <div className="coming-label">Shloka Collection</div>
-            <div className="coming-title">20 Most Famous Shlokas in Sanskrit</div>
+            <div className="coming-label">Verse Guide</div>
+            <div className="coming-title">Yada Yada Hi Dharmasya — BG 4.7 Line by Line</div>
             <span className="coming-soon-badge">Coming soon</span>
           </div>
           <div className="coming-card">
-            <div className="coming-label">Guide</div>
-            <div className="coming-title">Bhagwat Geeta Saar — The Complete Essence</div>
+            <div className="coming-label">Mantra Guide</div>
+            <div className="coming-title">Mahamrityunjaya Mantra — Meaning &amp; History</div>
+            <span className="coming-soon-badge">Coming soon</span>
+          </div>
+          <div className="coming-card">
+            <div className="coming-label">Concept Guide</div>
+            <div className="coming-title">Moksha — What Liberation Actually Means in the Gita</div>
             <span className="coming-soon-badge">Coming soon</span>
           </div>
           <div className="coming-card">
             <div className="coming-label">Collection</div>
-            <div className="coming-title">Krishna Quotes — 50 Teachings with Verse References</div>
+            <div className="coming-title">30 Bhagavad Gita Quotes on Life</div>
             <span className="coming-soon-badge">Coming soon</span>
           </div>
           <div className="coming-card">
-            <div className="coming-label">Topic Guide</div>
-            <div className="coming-title">What the Gita Says About Leadership</div>
+            <div className="coming-label">Reader&apos;s Guide</div>
+            <div className="coming-title">Which Bhagavad Gita Translation Should You Read?</div>
             <span className="coming-soon-badge">Coming soon</span>
           </div>
           <div className="coming-card">
-            <div className="coming-label">Topic Guide</div>
-            <div className="coming-title">What the Gita Says About Work &amp; Burnout</div>
-            <span className="coming-soon-badge">Coming soon</span>
-          </div>
-          <div className="coming-card">
-            <div className="coming-label">Upanishads</div>
-            <div className="coming-title">Isha Upanishad — A Reader's Guide</div>
+            <div className="coming-label">Story Guide</div>
+            <div className="coming-title">Mahabharata Summary — What Happened Before the Gita</div>
             <span className="coming-soon-badge">Coming soon</span>
           </div>
         </div>
