@@ -4,13 +4,14 @@ import { useEffect, useState } from 'react'
 
 const links = [
   { href: '/gita', label: 'Read the Gita' },
-  { href: '/#features', label: 'Features' },
-  { href: '/#how-it-works', label: 'How it works' },
-  { href: '/#topics', label: 'Topics' },
+  { href: '/hi/gita', label: 'हिंदी गीता' },
+  { href: '/gita/today', label: "Today's Verse" },
   { href: '/blogs', label: 'Blog' },
 ]
 
-const APP_STORE_URL = 'https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125'
+// Mobile drawer's app CTA now routes to /app (on-site landing), not the
+// App Store directly.
+const APP_LANDING_URL = '/app'
 
 export function MobileNavToggle() {
   const [open, setOpen] = useState(false)
@@ -55,10 +56,8 @@ export function MobileNavToggle() {
           ))}
           <li>
             <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-mp-location="mobile_nav_drawer_download"
+              href={APP_LANDING_URL}
+              data-mp-location="mobile_nav_drawer_ios_app"
               onClick={() => setOpen(false)}
               style={{
                 display: 'block',
@@ -69,7 +68,7 @@ export function MobileNavToggle() {
                 borderBottom: 0,
               }}
             >
-              ↓ Download Free on the App Store
+              Get the App →
             </a>
           </li>
         </ul>

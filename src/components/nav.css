@@ -6,6 +6,41 @@ nav.site-nav {
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(200, 136, 30, 0.2);
+  transition: background 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+/* Overlay variant — sits on top of the hero backdrop image.
+   Stays sticky (so it remains visible on scroll) but starts transparent-with-scrim.
+   The `.scrolled` class is toggled from HomeAnimations once the hero leaves the viewport. */
+.hero-shell {
+  position: relative;
+}
+.hero-shell nav.site-nav.site-nav--overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 3, 3, 0.62) 0%,
+    rgba(10, 3, 3, 0.28) 60%,
+    rgba(10, 3, 3, 0) 100%
+  );
+  border-bottom: 0;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.hero-shell nav.site-nav.site-nav--overlay .logo,
+.hero-shell nav.site-nav.site-nav--overlay .nav-page-link {
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.55);
+}
+/* Once scrolled past the hero, restore the solid glass background */
+nav.site-nav.site-nav--scrolled {
+  background: rgba(18, 5, 5, 0.92) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  border-bottom: 1px solid rgba(200, 136, 30, 0.2) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+nav.site-nav.site-nav--scrolled .logo,
+nav.site-nav.site-nav--scrolled .nav-page-link {
+  text-shadow: none;
 }
 .nav-inner {
   max-width: 1100px;

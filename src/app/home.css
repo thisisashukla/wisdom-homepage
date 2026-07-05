@@ -84,6 +84,78 @@
         position: relative;
         overflow: visible;
       }
+
+      /* ── SPLIT HERO ── */
+      .hero-split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: calc(100vh - 64px);
+        padding: 0;
+        text-align: left;
+        overflow: hidden;
+      }
+      .hero-text-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 72px 56px 72px clamp(24px, 6vw, 80px);
+        position: relative;
+        z-index: 2;
+      }
+      .hero-text-col .hero-eyebrow { margin-bottom: 20px; }
+      .hero-text-col .hero-sub { margin-left: 0; margin-right: 0; }
+      .hero-text-col .hero-actions { justify-content: flex-start; }
+      .hero-text-col h1 { margin-left: 0; margin-right: 0; }
+      .hero-text-col .hero-secondary-nav { justify-content: flex-start; }
+      .hero-text-col .hero-note { text-align: left; }
+      .hero-image-col {
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        display: block;
+      }
+      .hero-image-fade {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          90deg,
+          var(--bg, #120505) 0%,
+          rgba(18, 5, 5, 0.5) 28%,
+          transparent 58%
+        );
+        pointer-events: none;
+      }
+      @media (max-width: 860px) {
+        .hero-split {
+          grid-template-columns: 1fr;
+          min-height: unset;
+        }
+        .hero-image-col {
+          order: -1;
+          height: 60vw;
+          max-height: 420px;
+        }
+        .hero-image-fade {
+          background: linear-gradient(
+            180deg,
+            transparent 35%,
+            var(--bg, #120505) 100%
+          );
+        }
+        .hero-text-col {
+          padding: 28px 20px 52px;
+          text-align: center;
+        }
+        .hero-text-col .hero-actions { justify-content: center; }
+        .hero-text-col h1 { margin-left: auto; margin-right: auto; }
+        .hero-text-col .hero-sub { margin-left: auto; margin-right: auto; }
+      }
+
       .hero::before {
         content: "";
         position: absolute;
@@ -369,11 +441,30 @@
       }
 
       /* ─── PROBLEM CARDS ─── */
+      /* Switched from CSS-grid to flex so orphan cards (e.g. the trailing
+         two in a 4-col row of six) center under the row above instead of
+         left-aligning. */
       .problem-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 14px;
         margin-top: 52px;
+      }
+      .problem-grid > .prob-card {
+        flex: 0 0 calc((100% - 42px) / 4); /* 4 cols, 3 gaps of 14px */
+        min-width: 220px;
+      }
+      @media (max-width: 900px) {
+        .problem-grid > .prob-card {
+          flex-basis: calc((100% - 14px) / 2); /* 2 cols */
+        }
+      }
+      @media (max-width: 600px) {
+        .problem-grid > .prob-card {
+          flex-basis: 100%;
+          min-width: 0;
+        }
       }
       .prob-card {
         background: var(--bg-card);
@@ -1131,10 +1222,18 @@
           opacity 0.55s ease,
           transform 0.55s ease;
         transition-delay: var(--d, 0ms);
+        /* Safety net: if the IntersectionObserver never fires (JS error,
+           late hydration, unmounted animation runtime), .reveal elements
+           fade in on their own after 3s so we never ship an empty grid. */
+        animation: reveal-fallback 0.55s ease 3s forwards;
       }
       .reveal.visible {
         opacity: 1;
         transform: translateY(0);
+        animation: none;
+      }
+      @keyframes reveal-fallback {
+        to { opacity: 1; transform: translateY(0); }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -1155,9 +1254,7 @@
 
       /* ─── RESPONSIVE ─── */
       @media (max-width: 960px) {
-        .problem-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
+        /* .problem-grid now uses flex; its responsive rules live above. */
         .feat-grid {
           grid-template-columns: repeat(2, 1fr);
         }
@@ -1198,9 +1295,7 @@
         }
       }
       @media (max-width: 580px) {
-        .problem-grid {
-          grid-template-columns: 1fr;
-        }
+        /* .problem-grid now uses flex; its responsive rules live above. */
         .feat-grid {
           grid-template-columns: 1fr;
         }
@@ -1775,10 +1870,13 @@
           opacity 0.62s cubic-bezier(0.16,1,0.3,1),
           transform 0.62s cubic-bezier(0.16,1,0.3,1);
         transition-delay: var(--d, 0ms);
+        /* Safety net: fall back to visible after 3s if the observer never fires. */
+        animation: reveal-fallback 0.6s cubic-bezier(0.16,1,0.3,1) 3s forwards;
       }
       .reveal.visible {
         opacity: 1;
         transform: translateY(0);
+        animation: none;
       }
 
       /* ─── CURSOR GLOW (desktop hover only) ─── */
@@ -2060,5 +2158,526 @@
           padding: 22px 20px;
           flex-direction: column;
           gap: 10px;
+        }
+      }
+
+      /* ─── IMMERSIVE HERO (Krishna backdrop) ─── */
+      .hero-shell {
+        position: relative;
+        background: var(--bg);
+      }
+      .hero.hero-immersive {
+        position: relative;
+        width: 100%;
+        min-height: min(100svh, 900px);
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        text-align: left;
+      }
+      .hero.hero-immersive .hero-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Keep Krishna's face in view — image is tall/portrait, container is
+           wide, so we anchor toward the top of the artwork. */
+        object-position: 62% 18%;
+        display: block;
+        z-index: 0;
+        transform: scale(1.02);
+      }
+      /* Left→right darkening scrim keeps text readable on the dark side while
+         letting the Krishna image breathe on the right. */
+      .hero.hero-immersive .hero-scrim {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(10, 3, 3, 0.96) 0%,
+            rgba(10, 3, 3, 0.88) 22%,
+            rgba(10, 3, 3, 0.62) 40%,
+            rgba(10, 3, 3, 0.22) 62%,
+            rgba(10, 3, 3, 0.00) 82%
+          ),
+          linear-gradient(
+            180deg,
+            rgba(10, 3, 3, 0.55) 0%,
+            rgba(10, 3, 3, 0.00) 22%,
+            rgba(10, 3, 3, 0.00) 68%,
+            rgba(10, 3, 3, 0.85) 100%
+          );
+        pointer-events: none;
+      }
+      /* Soft gold glow behind the copy — evokes the divine light in the artwork. */
+      .hero.hero-immersive .hero-glow {
+        position: absolute;
+        left: -10%;
+        top: 20%;
+        width: 55%;
+        height: 60%;
+        z-index: 1;
+        background: radial-gradient(
+          ellipse at 30% 50%,
+          rgba(200, 136, 30, 0.14) 0%,
+          rgba(200, 136, 30, 0) 65%
+        );
+        pointer-events: none;
+        filter: blur(4px);
+      }
+      .hero.hero-immersive .hero-inner {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 128px 28px 96px;
+      }
+      .hero.hero-immersive .hero-content {
+        max-width: 620px;
+      }
+      /* Darker chip so the eyebrow reads clearly on the bright cloud areas
+         of the artwork. */
+      .hero.hero-immersive .hero-eyebrow {
+        margin-bottom: 22px;
+        background: rgba(10, 3, 3, 0.72);
+        border-color: rgba(245, 201, 106, 0.45);
+        color: #f9d788;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+      }
+      .hero.hero-immersive h1 {
+        max-width: none;
+        margin: 0 0 22px;
+        text-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.7),
+          0 1px 4px rgba(0, 0, 0, 0.6);
+      }
+      .hero.hero-immersive .hero-sub {
+        max-width: 520px;
+        margin: 0 0 30px;
+        color: rgba(248, 240, 220, 0.92);
+        text-shadow:
+          0 1px 3px rgba(0, 0, 0, 0.75),
+          0 2px 14px rgba(0, 0, 0, 0.55);
+      }
+      .hero.hero-immersive .hero-note {
+        color: rgba(248, 240, 220, 0.72);
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+      }
+      .hero.hero-immersive .hero-actions {
+        justify-content: flex-start;
+        margin: 0 0 14px;
+        gap: 14px;
+      }
+      .hero.hero-immersive .hero-secondary-nav {
+        justify-content: flex-start;
+        margin-top: 22px;
+      }
+      .hero.hero-immersive .hero-secondary-nav a {
+        color: rgba(248, 240, 220, 0.82);
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+      }
+      .hero.hero-immersive .hero-secondary-nav a:hover {
+        color: #fff;
+      }
+      .hero.hero-immersive .hero-sep {
+        color: rgba(248, 240, 220, 0.5);
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+      }
+
+      /* Primary CTA — solid gold, high contrast against dark scrim */
+      .btn-read-gita-primary {
+        background: var(--gold) !important;
+        color: #1a0606 !important;
+        border-color: var(--gold) !important;
+        box-shadow: 0 12px 32px rgba(200, 136, 30, 0.28), 0 0 0 1px rgba(200, 136, 30, 0.5) inset;
+      }
+      .btn-read-gita-primary:hover {
+        background: #d49424 !important;
+        color: #120404 !important;
+        border-color: #d49424 !important;
+      }
+
+      /* Ghost secondary CTA next to primary — for Today's Verse link */
+      .btn-hero-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--gold-light);
+        padding: 13px 22px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        border: 1.5px solid rgba(245, 201, 106, 0.35);
+        text-decoration: none;
+        transition: background 0.18s, border-color 0.18s, color 0.18s;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+      }
+      .btn-hero-secondary:hover {
+        background: rgba(245, 201, 106, 0.12);
+        border-color: var(--gold-light);
+        color: #fff;
+      }
+
+      /* Tablet / small desktop */
+      @media (max-width: 1024px) {
+        .hero.hero-immersive .hero-bg {
+          object-position: 60% 18%;
+        }
+        .hero.hero-immersive .hero-inner {
+          padding: 112px 24px 80px;
+        }
+      }
+
+      /* Mobile — image sits behind everything, text anchored to the bottom
+         over a strong vertical scrim so both nav overlay and content stay
+         legible. */
+      @media (max-width: 720px) {
+        .hero.hero-immersive {
+          min-height: min(92svh, 780px);
+          align-items: flex-end;
+        }
+        .hero.hero-immersive .hero-bg {
+          /* On mobile the copy lives at the bottom, so anchor to the top of
+             the artwork — Krishna's face fills the upper viewport. */
+          object-position: 55% 12%;
+        }
+        .hero.hero-immersive .hero-scrim {
+          /* Keep the top of the artwork visible (Krishna's face + halo)
+             then ramp aggressively into darkness by ~40% so ALL the copy
+             below sits on a solid dark backing. */
+          background:
+            linear-gradient(
+              180deg,
+              rgba(10, 3, 3, 0.72) 0%,
+              rgba(10, 3, 3, 0.10) 18%,
+              rgba(10, 3, 3, 0.28) 34%,
+              rgba(10, 3, 3, 0.68) 48%,
+              rgba(10, 3, 3, 0.90) 65%,
+              rgba(10, 3, 3, 0.97) 85%,
+              rgba(10, 3, 3, 1) 100%
+            );
+        }
+        .hero.hero-immersive .hero-glow {
+          left: -20%;
+          top: 55%;
+          width: 90%;
+          height: 45%;
+        }
+        .hero.hero-immersive .hero-inner {
+          padding: 72px 20px 40px;
+        }
+        .hero.hero-immersive .hero-content {
+          max-width: 100%;
+        }
+        .hero.hero-immersive h1 {
+          font-size: clamp(30px, 8vw, 42px);
+        }
+        .hero.hero-immersive .hero-sub {
+          font-size: 15px;
+          max-width: 100%;
+        }
+        .hero.hero-immersive .hero-actions {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 10px;
+        }
+        .hero.hero-immersive .hero-actions .btn-read-gita-primary,
+        .hero.hero-immersive .hero-actions .btn-hero-secondary {
+          justify-content: center;
+          width: 100%;
+        }
+        .hero.hero-immersive .hero-note,
+        .hero.hero-immersive .hero-secondary-nav {
+          text-align: center;
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .hero.hero-immersive .hero-inner {
+          padding: 68px 18px 32px;
+        }
+        .hero.hero-immersive .hero-secondary-nav {
+          gap: 8px;
+        }
+      }
+
+      /* ─── ALL 18 CHAPTERS — flex layout so the trailing 2 tiles center
+         under the row above instead of left-aligning. */
+      .chapters-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+        max-width: 1080px;
+        margin: 0 auto;
+      }
+      .chapters-grid > .chapter-tile {
+        flex: 0 0 calc((100% - 42px) / 4); /* 4 cols */
+        display: block;
+        padding: 18px 20px;
+        background: var(--bg-card, rgba(255, 255, 255, 0.04));
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        text-decoration: none;
+        color: var(--text);
+        transition: border-color 0.18s, background 0.18s, transform 0.15s;
+      }
+      .chapters-grid > .chapter-tile:hover {
+        border-color: rgba(200, 136, 30, 0.5);
+        background: rgba(200, 136, 30, 0.06);
+      }
+      .chapter-tile-num {
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--text-dimmer);
+        margin-bottom: 6px;
+      }
+      .chapter-tile-name {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--gold-light);
+        line-height: 1.25;
+        margin-bottom: 4px;
+      }
+      .chapter-tile-title {
+        font-size: 13.5px;
+        color: var(--text-dim);
+        line-height: 1.45;
+      }
+      @media (max-width: 960px) {
+        .chapters-grid > .chapter-tile {
+          flex-basis: calc((100% - 28px) / 3); /* 3 cols */
+        }
+      }
+      @media (max-width: 700px) {
+        .chapters-grid > .chapter-tile {
+          flex-basis: calc((100% - 14px) / 2); /* 2 cols */
+        }
+      }
+      @media (max-width: 460px) {
+        .chapters-grid > .chapter-tile {
+          flex-basis: 100%;
+        }
+      }
+
+      /* ─── TWO-CARD VARIANT of the entry grid (for pages that keep only
+         Read the Gita + हिंदी, with the interactive Today's Verse below). ── */
+      .entry-grid.entry-grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (max-width: 720px) {
+        .entry-grid.entry-grid-2 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ─── HOMEPAGE APP SECTION (the "also on iPhone" beat) ─── */
+      .homepage-app-section {
+        position: relative;
+        background:
+          radial-gradient(ellipse 60% 70% at 20% 30%, rgba(200, 136, 30, 0.06) 0%, transparent 65%),
+          var(--bg-warm, #190707);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      }
+      .app-section-actions {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      /* Custom Apple-style "Download on the App Store" button — styled to
+         match the site aesthetic (dark surface, gold rule) so it feels
+         intentional next to our other CTAs rather than a pasted-in badge. */
+      .btn-app-store {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 11px 22px 11px 18px;
+        background: #0d0303;
+        color: #f5e8cc;
+        border: 1.5px solid rgba(245, 201, 106, 0.55);
+        border-radius: 12px;
+        text-decoration: none;
+        line-height: 1;
+        transition: background 0.18s, border-color 0.18s, transform 0.15s, box-shadow 0.18s;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+      }
+      .btn-app-store:hover {
+        background: #150606;
+        border-color: var(--gold-light);
+        transform: translateY(-1px);
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(245, 201, 106, 0.12);
+      }
+      .btn-app-store-icon {
+        width: 26px;
+        height: 26px;
+        color: var(--gold-light);
+        flex-shrink: 0;
+      }
+      .btn-app-store-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        text-align: left;
+      }
+      .btn-app-store-eyebrow {
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(245, 232, 204, 0.62);
+        font-weight: 600;
+      }
+      .btn-app-store-label {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--gold-light);
+        letter-spacing: -0.2px;
+      }
+      @media (max-width: 600px) {
+        .app-section-actions {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .btn-app-store {
+          justify-content: center;
+        }
+      }
+
+      /* ─── TODAY'S VERSE — interactive playable card (audio + karaoke) ─── */
+      .today-verse-card {
+        max-width: 820px;
+        margin: 28px auto 0;
+        padding: 34px clamp(22px, 4vw, 44px) 28px;
+        border-radius: 20px;
+        background:
+          linear-gradient(180deg, rgba(245, 201, 106, 0.05) 0%, rgba(245, 201, 106, 0.015) 100%),
+          rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(245, 201, 106, 0.32);
+        box-shadow:
+          0 30px 80px rgba(0, 0, 0, 0.35),
+          inset 0 1px 0 rgba(255, 255, 255, 0.03);
+      }
+      .today-verse-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+      }
+      .today-verse-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--gold-light);
+      }
+      .today-verse-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 8px var(--gold);
+      }
+      .today-verse-ref {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: clamp(15px, 1.6vw, 17px);
+        font-weight: 700;
+        color: var(--text-dim);
+        letter-spacing: 0.02em;
+      }
+      /* If audio isn't available for the day's verse, fall back to a plain
+         Sanskrit line that matches the karaoke type-treatment. */
+      .today-verse-sanskrit {
+        font-family: 'Noto Serif Devanagari', serif;
+        font-size: clamp(18px, 2.4vw, 24px);
+        color: var(--gold-light);
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+      .today-verse-card .verse-audio-player {
+        margin-bottom: 22px;
+      }
+      .today-verse-meaning {
+        border-left: 3px solid var(--gold-light);
+        padding-left: 18px;
+        margin: 0 0 16px;
+        font-family: 'Playfair Display', Georgia, serif;
+        font-style: italic;
+        font-size: clamp(15px, 1.55vw, 18px);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      .today-verse-insight {
+        font-size: 14px;
+        color: var(--text-dim);
+        line-height: 1.6;
+        margin: 0 0 22px;
+      }
+      .today-verse-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        padding-top: 18px;
+        border-top: 1px dashed rgba(245, 201, 106, 0.22);
+      }
+      .today-verse-hint {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        color: var(--text-dimmer);
+      }
+      .today-verse-hint span {
+        color: var(--gold-light);
+        font-size: 10px;
+      }
+      .today-verse-deeper {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--gold-light);
+        text-decoration: none;
+        transition: color 0.18s, transform 0.18s;
+      }
+      .today-verse-deeper:hover {
+        color: #fff;
+        transform: translateX(2px);
+      }
+      @media (max-width: 640px) {
+        .today-verse-card {
+          margin-top: 22px;
+          border-radius: 16px;
+          padding: 26px 20px 22px;
+        }
+        .today-verse-footer {
+          flex-direction: column;
+          align-items: flex-start;
         }
       }

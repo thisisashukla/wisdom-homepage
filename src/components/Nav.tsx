@@ -1,16 +1,21 @@
 import MobileNavToggle from './MobileNavToggle'
 import './nav.css'
 
-const APP_STORE_URL = 'https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125'
+// Nav's "Get the App" now routes to the on-site /app landing page, not
+// directly to the App Store — the landing explains the daily-practice app
+// and then hands off to the App Store with warmer intent.
+const APP_LANDING_URL = '/app'
 
 interface NavProps {
   showSectionLinks?: boolean
   extraLink?: { href: string; label: string; hrefLang?: string }
+  /** When true, the nav renders transparent (no solid bg) so it sits over a hero backdrop. */
+  overlayHero?: boolean
 }
 
-export default function Nav({ showSectionLinks = false, extraLink }: NavProps) {
+export default function Nav({ extraLink, overlayHero }: NavProps) {
   return (
-    <nav className="site-nav">
+    <nav className={`site-nav${overlayHero ? ' site-nav--overlay' : ''}`}>
       <div className="nav-inner">
         <a href="/" className="logo">
           <div className="logo-mark">
@@ -20,17 +25,10 @@ export default function Nav({ showSectionLinks = false, extraLink }: NavProps) {
         </a>
         <MobileNavToggle />
         <ul className="nav-links">
-          {showSectionLinks && (
-            <>
-              <li><a href="#how-it-works" className="nav-section-link">How it works</a></li>
-              <li><a href="#paths" className="nav-section-link">The 3 Paths</a></li>
-              <li><a href="#features" className="nav-section-link">Features</a></li>
-              <li className="nav-pipe" aria-hidden="true"></li>
-            </>
-          )}
           <li><a href="/gita" className="nav-page-link">Read the Gita</a></li>
+          <li><a href="/hi/gita" hrefLang="hi" className="nav-page-link">हिंदी गीता</a></li>
+          <li><a href="/gita/today" className="nav-page-link">Today&apos;s Verse</a></li>
           <li><a href="/blogs/" className="nav-page-link">Blog</a></li>
-          <li><a href="/about" className="nav-page-link">About</a></li>
           {extraLink && (
             <li>
               <a href={extraLink.href} hrefLang={extraLink.hrefLang} className="nav-page-link">
@@ -40,12 +38,10 @@ export default function Nav({ showSectionLinks = false, extraLink }: NavProps) {
           )}
           <li>
             <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener"
-              className="btn-nav"
-              data-mp-location="nav"
-            >Download Free</a>
+              href={APP_LANDING_URL}
+              className="btn-nav btn-nav-secondary"
+              data-mp-location="nav_ios_app"
+            >Get the App →</a>
           </li>
         </ul>
       </div>

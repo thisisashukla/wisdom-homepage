@@ -1,96 +1,98 @@
+// Structured data for the homepage — the free Bhagavad Gita web reader.
+// The MobileApplication schema has moved to appSchemas.ts (used on /app).
 const schemas = [
   {
-    "@context": "https://schema.org",
-    "@graph": [
+    '@context': 'https://schema.org',
+    '@graph': [
       {
-        "@type": "MobileApplication",
-        "name": "Wisdom \u2014 Daily Shloka & Bhagavad Gita App",
-        "operatingSystem": "iOS",
-        "applicationCategory": "LifestyleApplication",
-        "description": "Wisdom is a Bhagavad Gita and daily shloka app for iPhone. Receive one Sanskrit shloka each day with English meaning, deeper explanation, modern relevance, journaling, home screen widgets, and personalised spiritual themes.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
+        '@type': 'WebSite',
+        name: 'Wisdom — Bhagavad Gita Online',
+        url: 'https://wisdomquotes.in',
+        description:
+          'Read the complete Bhagavad Gita online — all 18 chapters, 700 verses in Sanskrit, Hindi and English. Free. No login. One verse per page with simple meaning and detailed commentary.',
+        publisher: {
+          '@type': 'Organization',
+          name: 'Wisdom',
+          url: 'https://wisdomquotes.in',
+          logo: 'https://wisdomquotes.in/assets/new-light-logo.webp',
         },
-        "url": "https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Wisdom",
-          "url": "https://wisdomquotes.in"
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: 'https://wisdomquotes.in/gita?q={search_term_string}',
+          'query-input': 'required name=search_term_string',
         },
-        "screenshot": [
-          "https://wisdomquotes.in/assets/IMG_6942.webp",
-          "https://wisdomquotes.in/assets/IMG_6946.webp",
-          "https://wisdomquotes.in/assets/IMG_6947.webp",
-          "https://wisdomquotes.in/assets/IMG_6938.webp"
-        ]
       },
       {
-        "@type": "Organization",
-        "name": "Wisdom",
-        "url": "https://wisdomquotes.in",
-        "logo": "https://wisdomquotes.in/assets/new-light-logo.webp",
-        "description": "Wisdom builds daily spiritual practice apps rooted in the Bhagavad Gita and Hindu scriptures.",
-        "sameAs": [
-          "https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125",
-          "https://wisdomquotes.in"
-        ]
+        '@type': 'Book',
+        name: 'Bhagavad Gita',
+        alternateName: ['Bhagavat Gita', 'Bhagwat Geeta', 'भगवद्गीता'],
+        author: { '@type': 'Person', name: 'Vyasa' },
+        inLanguage: ['sa', 'hi', 'en'],
+        numberOfPages: 700,
+        bookFormat: 'https://schema.org/EBook',
+        isAccessibleForFree: true,
+        url: 'https://wisdomquotes.in/gita',
+        description:
+          'The Bhagavad Gita — 18 chapters, 700 verses spoken by Krishna to Arjuna on the battlefield of Kurukshetra. Available here in Sanskrit Devanagari, Hindi anuvad, and English translation with detailed commentary. Free to read online.',
       },
       {
-        "@type": "FAQPage",
-        "mainEntity": [
+        '@type': 'Organization',
+        name: 'Wisdom',
+        url: 'https://wisdomquotes.in',
+        logo: 'https://wisdomquotes.in/assets/new-light-logo.webp',
+        description:
+          'Wisdom is a free online Bhagavad Gita reader — every verse in Sanskrit, Hindi and English with simple meaning and detailed commentary. An accompanying iOS app offers a daily practice.',
+        sameAs: [
+          'https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125',
+          'https://wisdomquotes.in',
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: [
           {
-            "@type": "Question",
-            "name": "What is the best Bhagavad Gita app for daily reading?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Wisdom is designed specifically for daily Bhagavad Gita reading. It delivers one shloka a day with Sanskrit text, English meaning, deeper explanation, modern relevance, and a private journal \u2014 making it easy to build a sustainable daily practice."
-            }
+            '@type': 'Question',
+            name: 'Where can I read the complete Bhagavad Gita online for free?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'You can read every verse of the Bhagavad Gita free at wisdomquotes.in/gita. All 18 chapters and 700 verses are available in Sanskrit Devanagari, Hindi and English. No login. No paywall. One verse per page with a simple meaning and detailed commentary.',
+            },
           },
           {
-            "@type": "Question",
-            "name": "Does Wisdom include Sanskrit shlokas with meaning?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Every shloka in Wisdom includes the original Sanskrit text, a simple English meaning, a deeper explanation drawn from traditional commentary, and a section on modern relevance."
-            }
+            '@type': 'Question',
+            name: 'Does the Wisdom Gita reader include Sanskrit and Hindi?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. Every verse includes the original Sanskrit in Devanagari, a Hindi anuvad, and an English translation. Hindi readers can start at wisdomquotes.in/hi/gita for the Hindi-first layout.',
+            },
           },
           {
-            "@type": "Question",
-            "name": "Can I use Wisdom as a daily spiritual practice app?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Wisdom is built around a one-shloka-a-day format designed to become a sustainable daily spiritual practice. You choose your delivery time, pick spiritual themes, and reflect in a private journal after each verse."
-            }
+            '@type': 'Question',
+            name: 'Is a login or download required to read the Gita on Wisdom?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'No. The Bhagavad Gita reader is a free website. No sign-up, no download, no paywall. If you want a daily practice on your phone, there is an optional iOS app at wisdomquotes.in/app.',
+            },
           },
           {
-            "@type": "Question",
-            "name": "Does the app include journaling and reminders?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Wisdom includes a private journal tied to each shloka, daily reminders at your chosen time, and home screen widgets so the verse stays with you throughout the day."
-            }
+            '@type': 'Question',
+            name: 'How is the Wisdom Gita translation done?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Sanskrit and Hindi text are drawn from traditional sources. English translations are Wisdom editorial. Detailed commentary is AI-drafted from traditional commentaries (Shankara, Ramanuja, modern acharyas) and human-reviewed. Every verse links to a methodology page.',
+            },
           },
           {
-            "@type": "Question",
-            "name": "Is Wisdom only for the Bhagavad Gita or other scriptures too?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Wisdom draws primarily from the Bhagavad Gita but also includes shlokas from other Hindu scriptures. The content is curated and personalised to the spiritual themes you choose."
-            }
+            '@type': 'Question',
+            name: 'Which verse of the Bhagavad Gita should I read first?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Most readers start with BG 2.47 — Karmanye vadhikaraste — the most quoted verse in the Gita on doing your duty without attachment to results. Chapter 2 (Sankhya Yoga) is where Krishna begins the teaching in earnest. Chapter 1 is the setup.',
+            },
           },
-          {
-            "@type": "Question",
-            "name": "Is Wisdom available on iPhone?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Wisdom is available on the App Store for iPhone. It is free to download."
-            }
-          }
-        ]
-      }
-    ]
-  }
+        ],
+      },
+    ],
+  },
 ]
 export default schemas

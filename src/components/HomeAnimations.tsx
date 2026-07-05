@@ -70,6 +70,27 @@ export default function HomeAnimations() {
     )
     countEls.forEach((el) => countObserver.observe(el))
 
+    // ── Nav overlay → solid transition ─────────────────────────────────
+    // While the hero is on screen the nav is a translucent overlay on the
+    // Krishna backdrop; once the hero scrolls out, swap the nav to the
+    // solid glass style so links stay legible against page content.
+    const heroEl = document.querySelector<HTMLElement>('.hero.hero-immersive')
+    const navEl = document.querySelector<HTMLElement>('nav.site-nav.site-nav--overlay')
+    let navObserver: IntersectionObserver | null = null
+    if (heroEl && navEl) {
+      navObserver = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.intersectionRatio < 0.15) {
+            navEl.classList.add('site-nav--scrolled')
+          } else {
+            navEl.classList.remove('site-nav--scrolled')
+          }
+        },
+        { threshold: [0, 0.15, 0.5, 1] }
+      )
+      navObserver.observe(heroEl)
+    }
+
     // ── Cursor glow (desktop only) ────────────────────────────────────
     const glow = document.createElement('div')
     glow.className = 'cursor-glow'
@@ -97,6 +118,7 @@ export default function HomeAnimations() {
     return () => {
       revealObserver.disconnect()
       countObserver.disconnect()
+      navObserver?.disconnect()
       faqHandlers.forEach(({ btn, fn }) => btn.removeEventListener('click', fn))
       document.removeEventListener('mousemove', onMouseMove)
       document.removeEventListener('mouseleave', onMouseLeave)
