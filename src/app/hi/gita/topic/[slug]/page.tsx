@@ -46,6 +46,16 @@ export default async function TopicPageHi({ params }: { params: Params }) {
         <span>विषय: {topic.label}</span>
       </nav>
 
+      <div className="lang-switch">
+        <span className="lang-switch-label">Also in</span>
+        <a
+          href={topicUrl(topic.slug, 'en')}
+          data-mp-location={`topic_hi_${topic.slug}_lang_en`}
+        >
+          Read in English
+        </a>
+      </div>
+
       <div className="gita-eyebrow">विषय · {topic.verseCount} श्लोक</div>
       <h1 className="gita-h1">भगवद् गीता में {cap}</h1>
       <p className="gita-lede">

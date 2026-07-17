@@ -74,6 +74,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.88,
     })),
+    // July 2026 batch — Sanskrit concept deep-dives
+    ...[
+      'ahankara-meaning-bhagavad-gita',
+      'maya-meaning-bhagavad-gita',
+    ].map((slug) => ({
+      url: `${BASE}/blogs/${slug}`,
+      lastModified: new Date('2026-07-17'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.88,
+    })),
   ]
 
   // Chapter-study blog pages (the long-form per-chapter essays).

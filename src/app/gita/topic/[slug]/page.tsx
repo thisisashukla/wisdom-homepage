@@ -83,6 +83,16 @@ export default async function TopicPage({ params }: { params: Params }) {
         <span>Topic: {topic.label}</span>
       </nav>
 
+      <div className="lang-switch">
+        <span className="lang-switch-label">Also in</span>
+        <a
+          href={topicUrl(topic.slug, 'hi')}
+          data-mp-location={`topic_${topic.slug}_lang_hi`}
+        >
+          हिन्दी में पढ़ें
+        </a>
+      </div>
+
       <div className="gita-eyebrow">Theme · {topic.verseCount} verses</div>
       <h1 className="gita-h1">{cap} in the Bhagavad Gita</h1>
       <p className="gita-lede">

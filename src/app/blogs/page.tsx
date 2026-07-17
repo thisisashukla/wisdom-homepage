@@ -226,6 +226,8 @@ const pageCSS = `
       .card-thumb-anxiety2::before { content: "मन"; font-family: "Noto Sans Devanagari", serif; font-size: 110px; }
       .card-thumb-death::before    { content: "आ"; font-family: "Noto Sans Devanagari", serif; }
       .card-thumb-dharma::before   { content: "ध"; font-family: "Noto Sans Devanagari", serif; }
+      .card-thumb-ahankara::before { content: "अहं"; font-family: "Noto Sans Devanagari", serif; font-size: 110px; }
+      .card-thumb-maya::before     { content: "माया"; font-family: "Noto Sans Devanagari", serif; font-size: 100px; }
       .card-thumb-gunas::before    { content: "गु"; font-family: "Noto Sans Devanagari", serif; }
       .card-thumb-students::before { content: "अ"; font-family: "Noto Sans Devanagari", serif; }
       .card-thumb-stoic::before    { content: "तु"; font-family: "Noto Sans Devanagari", serif; }
@@ -263,7 +265,8 @@ const pageCSS = `
       .card-thumb-ch16, .card-thumb-ch17, .card-thumb-ch18,
       .card-thumb-sthita, .card-thumb-dharma, .card-thumb-gunas,
       .card-thumb-death, .card-thumb-saar,
-      .card-thumb-shlokas20, .card-thumb-gitasanskrit {
+      .card-thumb-shlokas20, .card-thumb-gitasanskrit,
+      .card-thumb-ahankara, .card-thumb-maya {
         background: linear-gradient(135deg, rgba(100, 70, 190, 0.13) 0%, var(--bg-alt) 65%);
         border-top: 2px solid rgba(150, 110, 220, 0.70);
       }
@@ -948,7 +951,7 @@ export default function BlogIndexPage() {
       {/* TOPIC GUIDES */}
       <div className="section-head" style={{marginTop: '56px'}}>
         <h2>Gita Teachings, <em>Topic Guides</em></h2>
-        <span className="section-count">22 articles published</span>
+        <span className="section-count">24 articles published</span>
       </div>
 
       <div className="articles-grid">
@@ -1435,6 +1438,52 @@ export default function BlogIndexPage() {
           </div>
         </a>
 
+        {/* Ahankara Meaning */}
+        <a href="/blogs/ahankara-meaning-bhagavad-gita" className="article-card" data-mp-article="Ahankara Meaning Bhagavad Gita">
+          <div className="card-thumb card-thumb-ahankara">
+            <div className="card-chapter-badge">Concept Guide · Sanskrit Term</div>
+            <div className="card-thumb-title">Ahankara —<br /><em>The Gita&apos;s Word for Ego</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">अहंकार</span>
+              <span className="tag tag-philosophy">Identity &amp; Self</span>
+              <span className="tag tag-shloka">Chapters 3, 13, 16 &amp; 18</span>
+              <span className="tag tag-chapter">Concept Guide</span>
+            </div>
+            <div className="card-desc">
+              Ahankara doesn&apos;t mean pride or arrogance. It means I-maker — the mechanism in the mind that creates the sense of being a separate, bounded self. The Gita diagnoses it as the root misidentification, not a personality flaw.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~8 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Maya Meaning */}
+        <a href="/blogs/maya-meaning-bhagavad-gita" className="article-card" data-mp-article="Maya Meaning Bhagavad Gita">
+          <div className="card-thumb card-thumb-maya">
+            <div className="card-chapter-badge">Concept Guide · Sanskrit Term</div>
+            <div className="card-thumb-title">Maya —<br /><em>Illusion in the Bhagavad Gita</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">माया</span>
+              <span className="tag tag-philosophy">Reality &amp; Illusion</span>
+              <span className="tag tag-shloka">BG 7.14, 14.19, 18.61</span>
+              <span className="tag tag-chapter">Concept Guide</span>
+            </div>
+            <div className="card-desc">
+              Maya doesn&apos;t mean the world is fake. In the Gita it is the divine power that makes the real appear as something other than what it is — composed of the three gunas, and crossed not by argument but by surrender.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~9 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
         {/* Gita vs Stoicism */}
         <a href="/blogs/bhagavad-gita-vs-stoicism" className="article-card" data-mp-article="Bhagavad Gita vs Stoicism">
           <div className="card-thumb card-thumb-stoic">
@@ -1479,6 +1528,11 @@ export default function BlogIndexPage() {
           <div className="coming-card">
             <div className="coming-label">Concept Guide</div>
             <div className="coming-title">Moksha — What Liberation Actually Means in the Gita</div>
+            <span className="coming-soon-badge">Coming soon</span>
+          </div>
+          <div className="coming-card">
+            <div className="coming-label">Concept Guide</div>
+            <div className="coming-title">Dharma vs Karma — How the Two Forces Relate</div>
             <span className="coming-soon-badge">Coming soon</span>
           </div>
           <div className="coming-card">

@@ -289,6 +289,32 @@ const TOPIC_INTRO_EN: Record<string, string> = {
     "Sanjaya is the witness. Through him, the blind king Dhritarashtra hears the conversation he could not see. These are the verses he reports.",
   dhritarashtra:
     "The blind king who asks. Dhritarashtra's question opens the Gita — and his fear shapes everything that follows.",
+  ahankara:
+    "Ahaṅkāra is the I-maker — the mechanism by which the infinite self mistakes itself for a limited, named, positioned person. The Gita doesn't condemn the ego. It diagnoses it as the root misidentification and points beyond it.",
+  maya:
+    "Māyā is not illusion in the sense that the world is fake. It is the power that makes the real appear as something other than it is. The Gita calls it divine, composed of the three gunas, and almost impossible to cross — except by surrender.",
+  moksha:
+    "Moksha is the Gita's word for liberation — not escape from the world, but freedom within it. It is what remains when the misidentification falls away. These are the verses where Krishna names what the entire teaching is ultimately for.",
+  atman:
+    "The ātman is what you actually are, before any label. Not the body, not the mind, not the roles. The part that watches the changing while remaining unchanged. The Gita's first move — and its last — is always toward this.",
+  kama:
+    "Kāma is desire in the deepest sense: not preference, but the pull that drags the senses toward objects and starts the cascade the Gita warns against. These are the verses where Krishna traces what kāma does to a human life.",
+  krodha:
+    "From desire comes frustration. From frustration comes krodha — the anger that clouds the intellect and makes clear action impossible. The Gita's teaching on anger is almost clinical: understand its origin, and the grip loosens.",
+  viveka:
+    "Viveka is discernment — the capacity to distinguish the real from the unreal, the permanent from the transient, ātman from non-ātman. Without it, every other practice is blind. These are the verses where the Gita trains that faculty.",
+  tapas:
+    "Tapas is austerity — not punishment, but the voluntary friction that purifies. The Gita names three kinds: of body, speech, and mind. And it describes the one kind of tapas that destroys the practitioner rather than refining them.",
+  dhyana:
+    "Dhyāna is meditation — not as technique but as state. The Gita is precise: what the posture should be, what the mind should do, and what the signs of progress look like. It is simultaneously the hardest practice and the most necessary.",
+  shraddha:
+    "Shraddha is faith — not belief in a creed, but the orientation of trust that shapes everything a person does. The Gita says it plainly: you are made of your shraddha. Whatever you trust, you become.",
+  samatva:
+    "Samatva is equanimity — not indifference, but equal-mindedness toward pleasure and pain, gain and loss, praise and blame. The Gita calls it yoga. This steadiness is what practice is actually building toward.",
+  yajna:
+    "Yajna is sacrifice — the act of offering that turns action into something larger than its immediate purpose. The Gita expands it far beyond ritual: the sacrifice of knowledge, the sacrifice of breath, the sacrifice of attachment to results.",
+  prakriti:
+    "Prakriti is the entirety of manifest nature — everything that arises, changes, and passes. The Gita teaches that all you see, feel, and think emerges from prakriti. The purusha, the conscious witness, is distinct from it — and recognising that distinction is the beginning of freedom.",
 }
 
 const TOPIC_INTRO_HI: Record<string, string> = {
@@ -313,6 +339,32 @@ const TOPIC_INTRO_HI: Record<string, string> = {
   battlefield: "कुरुक्षेत्र में स्थापित श्लोक। शंख, सेनाएँ, और प्रथम बाण से पहले की चुप्पी।",
   sanjaya: "संजय साक्षी हैं। उन्हीं के माध्यम से अंधे राजा धृतराष्ट्र वह संवाद सुनते हैं जो वे देख नहीं सके।",
   dhritarashtra: "अंधे राजा का प्रश्न गीता खोलता है — और उनका भय उसे आकार देता है।",
+  ahankara:
+    "अहंकार वह 'मैं-निर्माता' है — जिससे असीम आत्मा एक सीमित, नामधारी व्यक्ति होने की भूल करती है। गीता अहंकार की निंदा नहीं करती — वह उसे मूल भ्रांति के रूप में पहचानती है और उससे परे इशारा करती है।",
+  maya:
+    "माया का अर्थ यह नहीं कि संसार झूठा है। यह वह शक्ति है जो सत्य को उससे भिन्न दिखाती है जैसा वह है। गीता इसे दैवी, तीन गुणों से बनी, और पार करने में अत्यंत कठिन बताती है — केवल शरण से पार होती है।",
+  moksha:
+    "मोक्ष गीता का शब्द है मुक्ति के लिए — संसार से पलायन नहीं, उसमें स्वतंत्रता। जब भ्रांति मिटती है, जो शेष रहता है वही मोक्ष है। ये वे श्लोक हैं जहाँ कृष्ण उस लक्ष्य का नाम लेते हैं जिसके लिए सारी शिक्षा है।",
+  atman:
+    "आत्मा वह है जो आप वास्तव में हैं — किसी नाम, शरीर या भूमिका से पहले। जो बदलते को देखती है, स्वयं अपरिवर्तित रहकर। गीता का पहला क़दम और अंतिम क़दम — दोनों इसी की ओर।",
+  kama:
+    "काम केवल इच्छा नहीं — वह खिंचाव है जो इन्द्रियों को विषयों की ओर ले जाता है और उस पूरी शृंखला को शुरू करता है जिसके विरुद्ध गीता चेतावनी देती है। ये वे श्लोक हैं जहाँ कृष्ण दिखाते हैं कि काम एक जीवन के साथ क्या करता है।",
+  krodha:
+    "इच्छा से निराशा, निराशा से क्रोध — वह क्रोध जो बुद्धि को धुंधला करता है और स्पष्ट कर्म को असंभव बनाता है। गीता का क्रोध पर उपदेश लगभग वैज्ञानिक है: उसके मूल को समझो, और पकड़ ढीली होती है।",
+  viveka:
+    "विवेक वह भेदबुद्धि है — सत्य को असत्य से, नित्य को अनित्य से, आत्मा को अनात्मा से पहचानने की क्षमता। इसके बिना सभी साधनाएँ अंधी हैं। ये वे श्लोक हैं जहाँ गीता इस क्षमता को प्रशिक्षित करती है।",
+  tapas:
+    "तपस् साधना है — दंड नहीं, बल्कि वह स्वैच्छिक अनुशासन जो परिष्कृत करता है। गीता तीन प्रकार बताती है: शरीर का, वाणी का, मन का। और वह तपस् भी जो साधक को परिष्कृत नहीं — नष्ट करता है।",
+  dhyana:
+    "ध्यान केवल एक विधि नहीं — एक अवस्था है। गीता इस पर सटीक है: आसन कैसा हो, मन क्या करे, सफलता के लक्षण क्या हैं। और यह सबसे कठिन साधना क्यों है और सबसे आवश्यक भी।",
+  shraddha:
+    "श्रद्धा विश्वास है — किसी मत का नहीं, बल्कि वह विश्वास जो व्यक्ति के हर कर्म को आकार देता है। गीता सीधे कहती है: आप अपनी श्रद्धा से बने हैं। जो आप पर विश्वास करते हैं, वैसे ही बन जाते हैं।",
+  samatva:
+    "समत्व वह समभाव है — उदासीनता नहीं, बल्कि सुख और दुःख, लाभ और हानि, प्रशंसा और निंदा के प्रति एक-सी स्थिरता। गीता इसे योग कहती है। यही स्थिरता साधना का असली गंतव्य है।",
+  yajna:
+    "यज्ञ समर्पण का कर्म है — वह अर्पण जो किसी क्रिया को उसके तात्कालिक उद्देश्य से परे ले जाता है। गीता इसे अनुष्ठान से बहुत आगे ले जाती है: ज्ञान-यज्ञ, प्राण-यज्ञ, फल की कामना का समर्पण।",
+  prakriti:
+    "प्रकृति वह समस्त प्रकट सत्ता है — जो कुछ भी उठता, बदलता और मिटता है। गीता सिखाती है कि आप जो देखते, अनुभव करते और सोचते हैं वह सब प्रकृति से उठता है। और पुरुष — चेतन साक्षी — उससे अलग है। यही पहचान मुक्ति का आरम्भ है।",
 }
 
 export const topicIntro = (slug: string, locale: 'en' | 'hi' = 'en'): string | null =>
