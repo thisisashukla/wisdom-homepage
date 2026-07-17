@@ -242,6 +242,18 @@ const pageCSS = `
   .app-cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(200,136,30,0.5); }
   .app-cta-sub { font-size: 12px; color: rgba(245,232,204,0.35); margin-top: 14px; letter-spacing: 0.04em; }
 
+  .topic-cta {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    background: rgba(200,136,30,0.07); border: 1px solid rgba(200,136,30,0.3);
+    border-left: 4px solid var(--gold); border-radius: 0 10px 10px 0;
+    padding: 18px 22px; margin: 2.5rem 0 1rem; text-decoration: none;
+    transition: background 0.15s;
+  }
+  .topic-cta:hover { background: rgba(200,136,30,0.12); }
+  .topic-cta-label { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 5px; }
+  .topic-cta-title { font-size: 15px; font-weight: 600; color: var(--gold-light); line-height: 1.4; }
+  .topic-cta-sub { font-size: 12.5px; color: var(--text-dimmer); margin-top: 4px; }
+
   footer {
     background: var(--bg-warm); border-top: 1px solid var(--border);
     padding: 3rem 2rem; text-align: center;
@@ -421,6 +433,21 @@ export default function AhankaraMeaningPage() {
           If you search &ldquo;ahankara meaning&rdquo; expecting to find the Sanskrit equivalent of Western ego, you will get some things right and some things importantly wrong. Ahankara is not pride. It is not self-esteem, positive or negative. It is not your personality. It is the function that creates the sense that there is a particular &ldquo;you&rdquo; at all.
         </p>
 
+        <a
+          href="/gita/topic/ahankara"
+          className="topic-cta"
+          data-mp-location="blog_ahankara_topic_cta"
+        >
+          <div>
+            <div className="topic-cta-label">Bhagavad Gita · Topic Page</div>
+            <div className="topic-cta-title">Read all 10 verses on अहंकार (Ahankara)</div>
+            <div className="topic-cta-sub">Sanskrit · Hindi · English — chapters 3, 13, 16 &amp; 18</div>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+
         <h2>The Literal Meaning: I-Maker</h2>
         <p>
           The word breaks into two parts: <em>aham</em> means &ldquo;I&rdquo; — it is the first-person pronoun in Sanskrit, the same root as the Latin <em>ego</em>. <em>Kāra</em> means maker, the one who does or creates, from the root <em>kri</em> (to do or make). Ahankara is therefore the &ldquo;I-maker&rdquo; — not the I itself, but the mechanism that produces it.
@@ -561,14 +588,6 @@ export default function AhankaraMeaningPage() {
           These are not three separate paths. They are three angles on the same reorientation: from the constructed self as center, to the witnessing awareness as ground, with the constructed self now understood as a useful instrument rather than the ultimate fact.
         </p>
 
-        <h2>A Note on the Hindi Page</h2>
-        <p>
-          If you arrived here from the Hindi version of this topic at{' '}
-          <a href="/hi/gita/topic/ahankara" style={{ color: 'var(--gold-light)' }}>
-            /hi/gita/topic/ahankara
-          </a>
-          , that page lists all 10 Gita verses where ahankara appears — with Sanskrit text and Hindi translations. This blog gives you the conceptual scaffolding for what those verses are saying; that page gives you the verses themselves in order. They&apos;re designed to be read together.
-        </p>
       </div>
 
       <div className="faq-section">
