@@ -1,7 +1,5 @@
 import Nav from '@/components/Nav'
 
-type Props = { locale?: 'en' | 'hi' }
-
-export default function GitaNav({ locale = 'en' }: Props) {
+export default function GitaNav(_props: { locale?: 'en' | 'hi' }) {
   return <Nav />
 }
