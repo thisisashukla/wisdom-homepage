@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: 'https://wisdomquotes.in/blogs/ahankara-meaning-bhagavad-gita',
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/assets/ahankar.webp', width: 1248, height: 832 }],
   },
   alternates: { canonical: 'https://wisdomquotes.in/blogs/ahankara-meaning-bhagavad-gita' },
 }
@@ -396,14 +396,14 @@ export default function AhankaraMeaningPage() {
       <div className="content">
         <figure className="chapter-image">
           <img
-            src="/assets/chapter16.webp"
-            alt="Krishna describing divine and demoniac natures — the chapter that names ahankara as a force that binds"
-            width="1200"
-            height="675"
+            src="/assets/ahankar.webp"
+            alt="Abstract painting of a cosmic face dissolving into swirling forces — representing the I-maker, ahankara, in the Bhagavad Gita"
+            width="1248"
+            height="832"
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>Chapter 16 — where ahankara's destructive form is named most plainly</figcaption>
+          <figcaption>The I-maker — a self that is constructed, not found</figcaption>
         </figure>
 
         <div className="definition-box">
