@@ -238,6 +238,7 @@ const pageCSS = `
       .card-thumb-gayatri::before  { content: "गा"; font-family: "Noto Sans Devanagari", serif; }
       .card-thumb-mahamantra::before { content: "हरे"; font-family: "Noto Sans Devanagari", serif; font-size: 110px; }
       .card-thumb-gitasanskrit::before { content: "३०"; font-family: "Noto Sans Devanagari", serif; font-size: 120px; }
+      .card-thumb-whichgita::before { content: "अनुवाद"; font-family: "Noto Sans Devanagari", serif; font-size: 72px; }
 
       /* ── CARD THUMB COLOR GROUPS ── */
 
@@ -266,7 +267,7 @@ const pageCSS = `
       .card-thumb-sthita, .card-thumb-dharma, .card-thumb-gunas,
       .card-thumb-death, .card-thumb-saar,
       .card-thumb-shlokas20, .card-thumb-gitasanskrit,
-      .card-thumb-ahankara, .card-thumb-maya {
+      .card-thumb-ahankara, .card-thumb-maya, .card-thumb-whichgita {
         background: linear-gradient(135deg, rgba(100, 70, 190, 0.13) 0%, var(--bg-alt) 65%);
         border-top: 2px solid rgba(150, 110, 220, 0.70);
       }
@@ -951,10 +952,33 @@ export default function BlogIndexPage() {
       {/* TOPIC GUIDES */}
       <div className="section-head" style={{marginTop: '56px'}}>
         <h2>Gita Teachings, <em>Topic Guides</em></h2>
-        <span className="section-count">24 articles published</span>
+        <span className="section-count">25 articles published</span>
       </div>
 
       <div className="articles-grid">
+        {/* Which Gita Translation */}
+        <a href="/blogs/best-bhagavad-gita-translation" className="article-card" data-mp-article="Best Bhagavad Gita Translation">
+          <div className="card-thumb card-thumb-whichgita">
+            <div className="card-chapter-badge">Reader&apos;s Guide · Translations &amp; Commentaries</div>
+            <div className="card-thumb-title">Three Hundred Translations, One Gita —<br /><em>Which One Should You Read?</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">अनुवाद</span>
+              <span className="tag tag-philosophy">12+ Editions</span>
+              <span className="tag tag-shloka">4 Traditions</span>
+              <span className="tag tag-chapter">Chooser&apos;s Guide</span>
+            </div>
+            <div className="card-desc">
+              Easwaran or Prabhupada? Gita Press or Penguin? Every translation is also an interpretation. A reader-by-reader guide to the major Gitas, with every criticism cited to its source.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~13 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
         {/* Bhagwat Geeta Saar */}
         <a href="/blogs/bhagwat-geeta-saar" className="article-card" data-mp-article="Bhagwat Geeta Saar">
           <div className="card-thumb card-thumb-saar">

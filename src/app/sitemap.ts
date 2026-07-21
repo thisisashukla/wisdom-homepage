@@ -84,6 +84,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.88,
     })),
+    {
+      url: `${BASE}/blogs/best-bhagavad-gita-translation`,
+      lastModified: new Date('2026-07-19'),
+      changeFrequency: 'monthly',
+      priority: 0.90,
+    },
   ]
 
   // Chapter-study blog pages (the long-form per-chapter essays).
