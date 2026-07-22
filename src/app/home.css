@@ -2423,38 +2423,54 @@
       }
       .chapters-grid > .chapter-tile {
         flex: 0 0 calc((100% - 42px) / 4); /* 4 cols */
-        display: block;
-        padding: 18px 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
         background: var(--bg-card, rgba(255, 255, 255, 0.04));
         border: 1px solid var(--border);
         border-radius: 12px;
         text-decoration: none;
         color: var(--text);
-        transition: border-color 0.18s, background 0.18s, transform 0.15s;
+        overflow: hidden;
+        transition: border-color 0.18s, transform 0.18s;
       }
       .chapters-grid > .chapter-tile:hover {
         border-color: rgba(200, 136, 30, 0.5);
-        background: rgba(200, 136, 30, 0.06);
+        transform: translateY(-2px);
+      }
+      .chapter-tile-img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: center 25%;
+        display: block;
+        border-bottom: 1px solid var(--border);
+      }
+      .chapter-tile-body {
+        padding: 14px 16px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        flex: 1;
       }
       .chapter-tile-num {
-        font-size: 11px;
-        letter-spacing: 0.14em;
+        font-size: 10.5px;
+        letter-spacing: 0.13em;
         text-transform: uppercase;
         color: var(--text-dimmer);
-        margin-bottom: 6px;
       }
       .chapter-tile-name {
         font-family: 'Playfair Display', Georgia, serif;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 700;
         color: var(--gold-light);
         line-height: 1.25;
-        margin-bottom: 4px;
       }
       .chapter-tile-title {
-        font-size: 13.5px;
+        font-size: 12.5px;
         color: var(--text-dim);
-        line-height: 1.45;
+        line-height: 1.4;
+        margin-top: 1px;
       }
       @media (max-width: 960px) {
         .chapters-grid > .chapter-tile {

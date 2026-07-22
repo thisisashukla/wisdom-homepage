@@ -4,7 +4,7 @@ import schemas from '@/lib/homeSchemas'
 import BlogTracker from '@/components/BlogTracker'
 import HomeAnimations from '@/components/HomeAnimations'
 import Nav from '@/components/Nav'
-import { getAllChapters, getAllVerseRefs, getVerse, getVerseAudio } from '@/lib/gita'
+import { getAllChapters, getAllVerseRefs, getVerse, getVerseAudio, chapterImage } from '@/lib/gita'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
 import './home.css'
 
@@ -426,18 +426,24 @@ export default async function HomePage() {
             </p>
           </div>
           <div className="chapters-grid">
-            {chapters.map((ch) => (
-              <a
-                key={ch.number}
-                href={`/gita/chapter/${ch.number}`}
-                data-mp-location={`home_chapter_grid_${ch.number}`}
-                className="chapter-tile"
-              >
-                <div className="chapter-tile-num">Chapter {ch.number} · {ch.totalVerses} verses</div>
-                <div className="chapter-tile-name">{ch.enName}</div>
-                <div className="chapter-tile-title">{ch.enTitle}</div>
-              </a>
-            ))}
+            {chapters.map((ch) => {
+              const img = chapterImage(ch.number)
+              return (
+                <a
+                  key={ch.number}
+                  href={`/gita/chapter/${ch.number}`}
+                  data-mp-location={`home_chapter_grid_${ch.number}`}
+                  className="chapter-tile"
+                >
+                  <img className="chapter-tile-img" src={img.src} alt={img.alt} loading="lazy" />
+                  <div className="chapter-tile-body">
+                    <div className="chapter-tile-num">Chapter {ch.number} · {ch.totalVerses} verses</div>
+                    <div className="chapter-tile-name">{ch.enName}</div>
+                    <div className="chapter-tile-title">{ch.enTitle}</div>
+                  </div>
+                </a>
+              )
+            })}
           </div>
           <div className="t-center" style={{ marginTop: '30px' }}>
             <a href="/gita" className="btn-ghost" data-mp-location="home_chapters_all">See the full chapter index →</a>
