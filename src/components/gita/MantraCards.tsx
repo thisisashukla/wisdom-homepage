@@ -12,6 +12,12 @@ interface Props {
   variants: Variant[]
   chapter: number
   verse: number
+  locale?: 'en' | 'hi'
+}
+
+const STRINGS = {
+  en: { title: 'Carry it with you', copy: '⧉ Copy', copied: '✓ Copied' },
+  hi: { title: 'इसे साथ रखें', copy: '⧉ कॉपी करें', copied: '✓ कॉपी हो गया' },
 }
 
 /**
@@ -19,8 +25,9 @@ interface Props {
  * after the takeaway. The "card" variant is featured as a mini quote-card;
  * alternates are copyable pills. Tapping copies with a gold pulse.
  */
-export default function MantraCards({ variants, chapter, verse }: Props) {
+export default function MantraCards({ variants, chapter, verse, locale = 'en' }: Props) {
   const [copied, setCopied] = useState<number | null>(null)
+  const t = STRINGS[locale]
 
   const featured = variants.find((v) => v.format === 'card') ?? variants[0]
   const rest = variants.filter((v) => v !== featured)
@@ -45,7 +52,7 @@ export default function MantraCards({ variants, chapter, verse }: Props) {
   return (
     <div className="gv-mantra-strip">
       <div className="gv-mantra-strip-head">
-        <span className="gv-mantra-strip-label">Carry it with you</span>
+        <span className="gv-mantra-strip-label">{t.title}</span>
       </div>
 
       <button
@@ -55,7 +62,7 @@ export default function MantraCards({ variants, chapter, verse }: Props) {
         aria-label={`Copy: ${featured.text}`}
       >
         <span className="gv-mantra-hero-text">{featured.text}</span>
-        <span className="gv-mantra-hero-cta">{copied === -1 ? '✓ Copied' : '⧉ Copy'}</span>
+        <span className="gv-mantra-hero-cta">{copied === -1 ? t.copied : t.copy}</span>
       </button>
 
       {rest.length > 0 && (

@@ -1565,6 +1565,7 @@ a.gv-key:hover {
   align-items: center;
   gap: 16px;
   padding: 16px 20px;
+  min-width: 0; /* grid items default to min-width:auto — without this the nowrap teaser forces overflow */
   border-radius: 999px;
   border: 1px solid var(--border);
   background: transparent;
