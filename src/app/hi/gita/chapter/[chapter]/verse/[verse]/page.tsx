@@ -11,11 +11,11 @@ import {
   getVerseAudio,
   verseUrl,
   chapterUrl,
+  chapterImage,
   topicUrl,
 } from '@/lib/gita'
 import type { IndexEntry } from '@/lib/gita'
 import { getBlogLinksForVerse } from '@/lib/blogVerseLinks'
-import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import BlogTracker from '@/components/BlogTracker'
 import ShareButtons from '@/components/gita/ShareButtons'
 import VerseBookmark from '@/components/gita/VerseBookmark'
@@ -99,6 +99,17 @@ export default async function VersePageHi({ params }: { params: Params }) {
   const topicBridges = getTopicBridgesForVerse(verse.tags)
   const blogLinks = getBlogLinksForVerse(c, v)
 
+  // Parse word-by-word translation: "word (gloss) / word (gloss) / ..."
+  const wordByWord = verse.translationLiteral
+    ? verse.translationLiteral
+        .split(' / ')
+        .map(token => {
+          const m = token.match(/^(.+?)\s+\((.+?)\)$/)
+          return m ? { sanskrit: m[1].trim(), gloss: m[2].trim() } : null
+        })
+        .filter((x): x is { sanskrit: string; gloss: string } => x !== null)
+    : []
+
   const quotationLd = {
     '@context': 'https://schema.org',
     '@type': 'Quotation',
@@ -131,6 +142,24 @@ export default async function VersePageHi({ params }: { params: Params }) {
 
       <div className="gita-eyebrow">
         {ch?.hiName ?? `अध्याय ${c}`} · श्लोक {v}
+        {verse.verseType && (
+          <span style={{
+            display: 'inline-block',
+            marginLeft: '10px',
+            fontSize: '10px',
+            fontWeight: 700,
+            letterSpacing: '0.12em',
+            textTransform: 'uppercase',
+            color: 'rgba(245,201,106,0.75)',
+            background: 'rgba(245,201,106,0.1)',
+            border: '1px solid rgba(245,201,106,0.22)',
+            borderRadius: '4px',
+            padding: '2px 7px',
+            verticalAlign: 'middle',
+          }}>
+            {verse.verseType}
+          </span>
+        )}
       </div>
       <h1 className="gita-h1">भगवद् गीता {c}.{v}</h1>
       {verse.essence && (
@@ -162,6 +191,11 @@ export default async function VersePageHi({ params }: { params: Params }) {
           <div className="gita-translation-text" lang="en">
             {verse.englishTranslation}
           </div>
+          {verse.speaker && (
+            <div style={{ fontSize: '12px', color: 'var(--text-dimmer)', marginTop: '8px', fontStyle: 'italic' }}>
+              — {verse.speaker}
+            </div>
+          )}
         </div>
 
         {verse.tags.length > 0 && (
@@ -182,65 +216,167 @@ export default async function VersePageHi({ params }: { params: Params }) {
         )}
       </article>
 
-      {/* Hindi page renders the same enriched commentary block. The source
-          data is still authored in English (single source of truth), so we
-          surface it under English-glossed headings — readers searching in
-          Hindi still benefit from the substance, and the headings stay
-          consistent across the bilingual experience. */}
+      {/* ── Word-by-word translation grid ── */}
+      {wordByWord.length > 0 && (
+        <section style={{ marginTop: '32px' }} aria-label="शब्दार्थ">
+          <div style={{
+            fontSize: '10px',
+            fontWeight: 700,
+            letterSpacing: '0.18em',
+            textTransform: 'uppercase',
+            color: 'rgba(245,201,106,0.45)',
+            marginBottom: '14px',
+          }}>
+            शब्द-दर-शब्द अर्थ
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+            {wordByWord.map((w, i) => (
+              <div key={i} style={{
+                background: 'rgba(255,255,255,0.03)',
+                border: '1px solid rgba(245,201,106,0.14)',
+                borderRadius: '8px',
+                padding: '10px 14px',
+                textAlign: 'center',
+                minWidth: '70px',
+              }}>
+                <div style={{ fontSize: '15px', fontFamily: 'serif', color: 'var(--gold-pale, #f5e6b8)', marginBottom: '5px', lineHeight: 1.3 }} lang="sa">
+                  {w.sanskrit}
+                </div>
+                <div style={{ fontSize: '11px', color: 'var(--text-dimmer)', letterSpacing: '0.02em' }}>
+                  {w.gloss}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {(verse.simpleMeaning || verse.detailedMeaning) && (
-        <section className="gita-commentary" aria-label="अर्थ और संदर्भ">
-          {verse.simpleMeaning && (
-            <>
-              <h2 className="gita-h2">श्लोक का अर्थ</h2>
-              <p>{verse.simpleMeaning}</p>
-            </>
-          )}
+        <section className="gita-commentary" aria-label="अर्थ और संदर्भ" style={{ marginTop: '40px' }}>
 
-          {verse.detailedMeaning && (
-            <>
-              <h2 className="gita-h2">संदर्भ और टिप्पणी</h2>
-              <p>{verse.detailedMeaning}</p>
-            </>
-          )}
+          <style dangerouslySetInnerHTML={{ __html: `
+            @supports (animation-timeline: view()) {
+              @keyframes cmnt-in {
+                from { opacity: 0; transform: translateY(20px); }
+                to   { opacity: 1; transform: translateY(0); }
+              }
+              .cmnt-block {
+                animation: cmnt-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+                animation-timeline: view();
+                animation-range: entry 0% entry 35%;
+              }
+            }
+            .cmnt-card {
+              transition: border-left-color 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
+            }
+            .cmnt-card:hover {
+              border-left-color: rgba(245,201,106,0.8) !important;
+              background: rgba(255,255,255,0.05) !important;
+              box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+            }
+          ` }} />
 
-          {verse.modernRelevance && (
-            <>
-              <h2 className="gita-h2">आज के संदर्भ में</h2>
-              <p>{verse.modernRelevance}</p>
-            </>
-          )}
+          {[
+            verse.simpleMeaning   && { n: '01', label: 'इस श्लोक का अर्थ',   text: verse.simpleMeaning },
+            verse.detailedMeaning && { n: '02', label: 'संदर्भ और टिप्पणी',   text: verse.detailedMeaning },
+            verse.modernRelevance && { n: '03', label: 'आज के जीवन में महत्व', text: verse.modernRelevance },
+          ].filter(Boolean).map((item) => {
+            const { n, label, text } = item as { n: string; label: string; text: string }
+            return (
+              <div
+                key={n}
+                className="cmnt-block cmnt-card"
+                style={{
+                  borderLeft: '3px solid rgba(245,201,106,0.38)',
+                  background: 'rgba(255,255,255,0.028)',
+                  borderRadius: '0 14px 14px 0',
+                  padding: '22px 26px 26px',
+                  marginBottom: '12px',
+                }}
+              >
+                <div style={{ fontSize: '11px', fontWeight: 700, color: 'rgba(245,201,106,0.4)', marginBottom: '9px', letterSpacing: '0.08em' }}>
+                  {n}
+                </div>
+                <h2 style={{ fontSize: '20px', fontWeight: 700, color: 'var(--text, #f0e6d0)', margin: '0 0 14px', lineHeight: 1.2, letterSpacing: '-0.015em' }}>
+                  {label}
+                </h2>
+                <p style={{ margin: 0, lineHeight: 1.8, color: 'var(--text-dim, rgba(240,230,208,0.75))', fontSize: '15.5px' }}>
+                  {text}
+                </p>
+              </div>
+            )
+          })}
 
           {verse.simpleInsight && (
-            <>
-              <h2 className="gita-h2">सार</h2>
-              <p style={{ fontStyle: 'italic' }}>{verse.simpleInsight}</p>
-            </>
-          )}
-
-          {verse.translationLiteral && (
-            <details className="gita-details" style={{ marginTop: 28 }}>
-              <summary style={{ cursor: 'pointer', fontWeight: 600, color: 'var(--gold-light)' }}>
-                शब्दार्थ
-              </summary>
-              <p style={{ marginTop: 12, fontFamily: 'serif', lineHeight: 1.8 }} lang="sa">
-                {verse.translationLiteral}
+            <div
+              className="cmnt-block"
+              style={{
+                margin: '20px 0 4px',
+                background: 'rgba(245,201,106,0.07)',
+                border: '1px solid rgba(245,201,106,0.32)',
+                borderRadius: '16px',
+                padding: '36px 32px 38px',
+                textAlign: 'center',
+              }}
+            >
+              <div style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(245,201,106,0.5)', marginBottom: '20px' }}>
+                सार
+              </div>
+              <p style={{ margin: '0 auto', maxWidth: '520px', fontSize: '20px', fontStyle: 'italic', color: 'var(--gold-pale, #f5e6b8)', lineHeight: 1.65, letterSpacing: '-0.01em' }}>
+                &ldquo;{verse.simpleInsight}&rdquo;
               </p>
-            </details>
+            </div>
           )}
 
           {ch && (
-            <p className="gita-chapter-link" style={{ marginTop: 36, fontSize: 14, color: 'var(--text-dim)' }}>
-              यह श्लोक{' '}
-              <a
-                href={chapterUrl(c, 'hi')}
-                style={{ color: 'var(--gold-light)', textDecoration: 'underline' }}
-                data-mp-location={`verse_hi_${c}_${v}_chapter_context`}
-              >
-                भगवद् गीता अध्याय {c}: {ch.hiName} — {ch.hiTitle}
-              </a>{' '}
-              का भाग है, जिसमें कुल {ch.processedVerses} श्लोक हैं
-              {ch.totalVerses && ch.totalVerses !== ch.processedVerses ? ` (कुल ${ch.totalVerses} में से)` : ''}।
-            </p>
+            <a
+              href={chapterUrl(c, 'hi')}
+              data-mp-location={`verse_hi_${c}_${v}_chapter_card`}
+              style={{
+                display: 'block',
+                marginTop: 36,
+                borderRadius: '14px',
+                overflow: 'hidden',
+                border: '1px solid rgba(245,201,106,0.25)',
+                textDecoration: 'none',
+                background: 'var(--bg-card, rgba(255,255,255,0.04))',
+              }}
+            >
+              {/* Hero image strip */}
+              <div style={{ position: 'relative', height: '130px', overflow: 'hidden' }}>
+                <img
+                  src={chapterImage(c).src}
+                  alt={chapterImage(c).alt}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  loading="lazy"
+                />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(10,5,20,0.15) 0%, rgba(10,5,20,0.75) 100%)' }} />
+                <div style={{
+                  position: 'absolute',
+                  bottom: '12px',
+                  left: '18px',
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  letterSpacing: '0.13em',
+                  textTransform: 'uppercase',
+                  color: 'rgba(245,201,106,0.85)',
+                }}>
+                  अध्याय {c} · {ch.hiTitle}
+                </div>
+              </div>
+              {/* Card body */}
+              <div style={{ padding: '16px 20px 18px' }}>
+                <div style={{ fontSize: '17px', fontWeight: 700, color: 'var(--text)', marginBottom: '5px', lineHeight: 1.3 }}>
+                  {ch.hiName}
+                </div>
+                <div style={{ fontSize: '13px', color: 'var(--text-dimmer)', marginBottom: '14px' }}>
+                  {ch.processedVerses}{ch.totalVerses && ch.totalVerses !== ch.processedVerses ? ` / ${ch.totalVerses}` : ''} श्लोक
+                </div>
+                <span style={{ fontSize: '13.5px', fontWeight: 600, color: 'var(--gold-light, #e8c070)' }}>
+                  इस अध्याय के सभी श्लोक पढ़ें →
+                </span>
+              </div>
+            </a>
           )}
 
           {topicBridges.length > 0 && (
@@ -265,7 +401,65 @@ export default async function VersePageHi({ params }: { params: Params }) {
         </section>
       )}
 
-      <div className="gita-pn">
+      {/* ── Go Deeper: curated blog links for this verse ── */}
+      {blogLinks.length > 0 && (
+        <section
+          style={{ margin: '48px 0 0' }}
+          data-mp-section={`verse_hi_${c}_${v}_go_deeper`}
+          aria-label="और जानें"
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '20px' }}>
+            <div style={{ flex: 1, height: '1px', background: 'rgba(245,201,106,0.15)' }} />
+            <div style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--text-dimmer)', whiteSpace: 'nowrap' }}>
+              और जानें
+            </div>
+            <div style={{ flex: 1, height: '1px', background: 'rgba(245,201,106,0.15)' }} />
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            {blogLinks.map((link) => (
+              <a
+                key={link.slug}
+                href={`/blog/${link.slug}`}
+                data-mp-location={`verse_hi_${c}_${v}_blog_${link.slug}`}
+                data-mp-event="Blog Deep Dive Clicked"
+                data-mp-props={JSON.stringify({ verse: `${c}.${v}`, slug: link.slug, locale: 'hi' })}
+                style={{
+                  display: 'flex',
+                  alignItems: 'stretch',
+                  background: 'var(--bg-card, rgba(255,255,255,0.04))',
+                  border: '1px solid rgba(245,201,106,0.18)',
+                  borderRadius: '14px',
+                  overflow: 'hidden',
+                  textDecoration: 'none',
+                  minHeight: '96px',
+                }}
+              >
+                <div style={{ flexShrink: 0, width: '110px', position: 'relative', overflow: 'hidden' }}>
+                  <img
+                    src={link.image}
+                    alt=""
+                    aria-hidden="true"
+                    style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+                    loading="lazy"
+                  />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, transparent 60%, rgba(10,5,20,0.55))' }} />
+                </div>
+                <div style={{ padding: '16px 18px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '6px', flex: 1 }}>
+                  <div style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dimmer)' }}>
+                    Essay
+                  </div>
+                  <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--gold-light, #e8c070)', lineHeight: 1.4 }}>
+                    {link.cta}
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <div className="gita-pn" style={{ marginTop: '48px' }}>
         <a
           className={`gita-pn-link ${prev ? '' : 'disabled'}`}
           href={prev ? verseUrl(prev.chapter, prev.verse, 'hi') : '#'}
@@ -298,50 +492,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
         title={`भगवद् गीता ${c}.${v}`}
         locale="hi"
       />
-
-      <GitaAppCTA variant="verse" locale="hi" verse={{ chapter: c, verse: v }} />
-
-      {/* ── Go Deeper: curated blog links for this verse ── */}
-      {blogLinks.length > 0 && (
-        <section
-          style={{ margin: '40px 0 8px' }}
-          data-mp-section={`verse_hi_${c}_${v}_go_deeper`}
-          aria-label="और जानें"
-        >
-          <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--text-dimmer)', marginBottom: '14px' }}>
-            और जानें
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {blogLinks.map((link) => (
-              <a
-                key={link.slug}
-                href={`/blog/${link.slug}`}
-                data-mp-location={`verse_hi_${c}_${v}_blog_${link.slug}`}
-                data-mp-event="Blog Deep Dive Clicked"
-                data-mp-props={JSON.stringify({ verse: `${c}.${v}`, slug: link.slug, locale: 'hi' })}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  gap: '12px',
-                  background: 'var(--bg-card, rgba(255,255,255,0.04))',
-                  border: '1px solid rgba(245,201,106,0.2)',
-                  borderRadius: '10px',
-                  padding: '14px 18px',
-                  textDecoration: 'none',
-                  color: 'var(--gold-light, #e8c070)',
-                  fontSize: '14px',
-                  lineHeight: 1.5,
-                  transition: 'border-color 0.15s, background 0.15s',
-                }}
-              >
-                <span>{link.cta}</span>
-                <span style={{ flexShrink: 0, opacity: 0.5, fontSize: '18px' }}>↗</span>
-              </a>
-            ))}
-          </div>
-        </section>
-      )}
 
       {related.length > 0 && (
         <>

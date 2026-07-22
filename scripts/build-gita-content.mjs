@@ -15,9 +15,12 @@
  *   simpleMeaning, simpleInsight, detailedMeaning, modernRelevance,
  *   translationLiteral, verseType
  *
- * Still held back (app-only, never written to web content):
- *   quote_variants, target_audience, tone, category, requisite_concepts,
- *   nodeId, path, depth, is_standalone, model, schema_version, etc.
+ * V3 web fields (full enrichment — verse pages use all of it):
+ *   insight, quoteVariants, requisiteConcepts, category, tone,
+ *   targetAudience, nodeId, path, depth
+ *
+ * Still held back (pipeline-internal only):
+ *   is_standalone, model, schema_version, prompt_* etc.
  *
  * Run with: npm run gita:update
  */
@@ -216,6 +219,28 @@ async function main() {
     const translationLiteral = String(gpt.translation_literal ?? '').trim()
     const verseType = String(gpt.verse_type ?? gpt.category ?? '').trim()
 
+    // ─── V3 fields: full enrichment for richer verse pages ───
+    const insight = String(gpt.insight ?? '').trim()
+    const quoteVariants = Array.isArray(gpt.quote_variants)
+      ? gpt.quote_variants
+          .map((q) => ({
+            format: String(q?.format ?? '').trim(),
+            text: String(q?.quote_text ?? q?.text ?? '').trim(),
+          }))
+          .filter((q) => q.format && q.text)
+      : []
+    const requisiteConcepts = Array.isArray(gpt.requisite_concepts)
+      ? gpt.requisite_concepts.map((s) => String(s).trim()).filter(Boolean)
+      : []
+    const category = String(gpt.category ?? '').trim()
+    const tone = String(gpt.tone ?? '').trim()
+    const targetAudience = Array.isArray(gpt.target_audience)
+      ? gpt.target_audience.map((s) => String(s).trim()).filter(Boolean)
+      : []
+    const nodeId = String(gpt.nodeId ?? '').trim()
+    const nodePath = String(gpt.path ?? '').trim()
+    const depth = String(gpt.depth ?? '').trim()
+
     const sanskrit = String(raw.input.verse ?? '').trim()
     const hindiTranslation = String(raw.input.translation ?? '').trim()
     const order = Number(meta.order ?? 0)
@@ -244,6 +269,15 @@ async function main() {
       modernRelevance,
       translationLiteral,
       verseType,
+      insight,
+      quoteVariants,
+      requisiteConcepts,
+      category,
+      tone,
+      targetAudience,
+      nodeId,
+      nodePath,
+      depth,
     }
 
     await fs.writeFile(

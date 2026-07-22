@@ -844,3 +844,974 @@
   .gita-pn { grid-template-columns: 1fr; }
   .gita-pn-link.right { text-align: left; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   Verse page v2 — calm rhythm, entrance + scroll motion,
+   interlinear word-by-word gloss. All classes prefixed `gv-`.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Motion primitives ── */
+@keyframes gvRise {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+/* Staggered entrance on load; delay via --d */
+.gv-rise {
+  animation: gvRise 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--d, 0s);
+}
+/* Scroll-driven reveal — progressive enhancement */
+@supports (animation-timeline: view()) {
+  .gv-reveal {
+    animation: gvRise 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 32%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gv-rise, .gv-reveal { animation: none; }
+  .gv-word, .gv-cmnt, .gv-chcard, .gv-blogcard, .gv-mantra-pill, .gv-key { transition: none !important; }
+}
+
+/* ── Verse type chip ── */
+.gv-type-chip {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(245, 201, 106, 0.75);
+  background: rgba(245, 201, 106, 0.1);
+  border: 1px solid rgba(245, 201, 106, 0.22);
+  border-radius: 999px;
+  padding: 2px 9px;
+  vertical-align: middle;
+}
+
+.gv-type-chip--tone {
+  color: rgba(245, 232, 204, 0.6);
+  background: rgba(245, 232, 204, 0.05);
+  border-color: rgba(245, 232, 204, 0.15);
+}
+
+/* ── Depth indicator: how esoteric the verse is ── */
+.gv-depth {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 10px;
+  vertical-align: middle;
+  cursor: help;
+}
+.gv-depth i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(245, 201, 106, 0.18);
+}
+.gv-depth i.on { background: rgba(245, 201, 106, 0.7); }
+.gv-depth em {
+  margin-left: 5px;
+  font-size: 10px;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dimmer);
+}
+
+/* ── Concept keys: what this verse is built on ── */
+.gv-keys {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 26px;
+}
+.gv-keys-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dimmer);
+  margin-right: 2px;
+}
+.gv-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(245, 201, 106, 0.28);
+  background: rgba(200, 136, 30, 0.06);
+  color: var(--gold-light);
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+a.gv-key:hover {
+  background: rgba(200, 136, 30, 0.14);
+  border-color: rgba(245, 201, 106, 0.55);
+  transform: translateY(-1px);
+}
+.gv-key-count {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: rgba(245, 201, 106, 0.55);
+  background: rgba(245, 201, 106, 0.1);
+  border-radius: 999px;
+  padding: 1px 7px;
+}
+.gv-key--plain {
+  color: var(--text-dim);
+  border-color: var(--border);
+  background: transparent;
+}
+
+/* ── Carry it with you: featured mantra card + copyable pills ── */
+@keyframes gvCopyPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(245, 201, 106, 0.45); }
+  100% { box-shadow: 0 0 0 14px rgba(245, 201, 106, 0); }
+}
+.gv-mantra-strip {
+  position: relative;
+  margin: 16px 0 0;
+  padding: 24px 22px 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(200, 136, 30, 0.3);
+  background:
+    radial-gradient(120% 150% at 50% -25%, rgba(200, 136, 30, 0.1), transparent 58%),
+    rgba(255, 255, 255, 0.02);
+  overflow: hidden;
+}
+.gv-mantra-strip::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: -30px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 60% 40%, rgba(200, 136, 30, 0.07), transparent 70%);
+  pointer-events: none;
+}
+.gv-mantra-strip-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 14px;
+}
+.gv-mantra-strip-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(245, 201, 106, 0.65);
+}
+.gv-mantra-strip-label::before,
+.gv-mantra-strip-label::after {
+  content: '✦';
+  font-size: 8px;
+  color: rgba(245, 201, 106, 0.4);
+}
+/* Featured mantra: a mini quote-card */
+.gv-mantra-hero {
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 2px 8px 6px;
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
+}
+.gv-mantra-hero-text {
+  display: block;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+  color: var(--gold-pale);
+  max-width: 500px;
+  margin: 0 auto;
+}
+.gv-mantra-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 13px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(245, 201, 106, 0.35);
+  background: rgba(200, 136, 30, 0.08);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.gv-mantra-hero:hover .gv-mantra-hero-cta {
+  background: rgba(200, 136, 30, 0.16);
+  border-color: rgba(245, 201, 106, 0.6);
+}
+.gv-mantra-hero.copied .gv-mantra-hero-cta {
+  animation: gvCopyPulse 0.7s ease-out;
+  border-color: var(--gold);
+  background: rgba(200, 136, 30, 0.2);
+}
+/* Alternate mantras: quiet pills below a dashed rule */
+.gv-mantra-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(200, 136, 30, 0.22);
+}
+.gv-mantra-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(200, 136, 30, 0.24);
+  background: transparent;
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.gv-mantra-pill .cp {
+  font-size: 12px;
+  color: rgba(245, 201, 106, 0.45);
+  transition: color 0.2s ease;
+}
+.gv-mantra-pill:hover {
+  border-color: rgba(245, 201, 106, 0.55);
+  background: rgba(200, 136, 30, 0.09);
+  color: var(--gold-pale);
+  transform: translateY(-1px);
+}
+.gv-mantra-pill:hover .cp { color: var(--gold-light); }
+.gv-mantra-pill.copied {
+  animation: gvCopyPulse 0.7s ease-out;
+  border-color: var(--gold);
+  color: var(--gold-pale);
+  background: rgba(200, 136, 30, 0.12);
+}
+@media (max-width: 640px) {
+  .gv-mantra-strip { padding: 18px 14px 14px; border-radius: 16px; }
+  .gv-mantra-hero-text { font-size: 18px; }
+  .gv-mantra-pill { width: 100%; justify-content: center; text-align: center; }
+}
+
+/* ── Centered hero (app-inspired) ── */
+.gv-hero-head {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.gv-hero-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.gv-hero-eyebrow::after {
+  content: '';
+  display: block;
+  width: 34px;
+  height: 2px;
+  border-radius: 2px;
+  background: rgba(200, 136, 30, 0.5);
+  margin: 10px auto 0;
+}
+.gv-hero-h1 { margin-bottom: 16px; }
+.gv-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.gv-hero-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(200, 136, 30, 0.35);
+  background: rgba(200, 136, 30, 0.06);
+  color: var(--gold-light);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.gv-hero-badges .gv-type-chip { margin-left: 0; }
+.gv-hero-badges .gv-depth { margin-left: 2px; }
+.gv-hero-essence {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--gold-pale);
+  max-width: 560px;
+  margin: 0 auto 12px;
+}
+.gv-hero-byline {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--text-dimmer);
+  margin: 0 auto;
+  max-width: 560px;
+}
+.gv-hero-byline a { color: var(--text-dimmer); text-decoration: underline; }
+/* One human line replacing jargon chips: "A declaration · expansive in mood · …" */
+.gv-hero-note {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-dimmer);
+  letter-spacing: 0.02em;
+  margin: -6px auto 16px;
+  max-width: 560px;
+}
+
+/* ── Hero verse card: ambient glow + breathing space ── */
+.gv-hero-card {
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid rgba(200, 136, 30, 0.28);
+  background:
+    radial-gradient(130% 100% at 50% -30%, rgba(200, 136, 30, 0.12), transparent 58%),
+    var(--bg-warm);
+  box-shadow: 0 30px 70px -38px rgba(0, 0, 0, 0.7);
+  margin-top: 34px;
+  overflow: visible; /* the label chip sits on the border */
+}
+.gv-hero-card::before {
+  /* hairline gold shimmer along the top edge */
+  content: '';
+  position: absolute;
+  top: 0; left: 10%; right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(245, 201, 106, 0.55), transparent);
+}
+.gv-hero-card::after {
+  /* soft decorative circle in the corner, like the app's verse card */
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, rgba(200, 136, 30, 0.09), rgba(200, 136, 30, 0.025) 60%, transparent 72%);
+  pointer-events: none;
+}
+/* Label chip sitting on the card's top border */
+.gv-card-chip {
+  position: absolute;
+  top: -13px;
+  left: 26px;
+  padding: 4px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(200, 136, 30, 0.4);
+  background: var(--bg);
+  color: var(--gold-light);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+/* ◆ ◆ ◆ ornament */
+.gv-diamonds {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin: 4px 0 18px;
+}
+.gv-diamonds i {
+  width: 6px;
+  height: 6px;
+  background: rgba(200, 136, 30, 0.55);
+  transform: rotate(45deg);
+}
+.gv-diamonds i:nth-child(2) { background: rgba(245, 201, 106, 0.75); }
+/* English as the main reading line */
+.gv-en-quote {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 18.5px;
+  line-height: 1.7;
+  color: var(--text);
+  text-align: center;
+  max-width: 560px;
+  margin: 22px auto 0;
+}
+.gv-en-speaker {
+  text-align: center;
+  font-size: 12.5px;
+  font-style: italic;
+  color: var(--text-dimmer);
+  margin-top: 10px;
+}
+/* line — ❋ — line divider with attribution */
+.gv-orn-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 380px;
+  margin: 24px auto 0;
+}
+.gv-orn-divider span {
+  flex: 1;
+  height: 1px;
+  background: rgba(200, 136, 30, 0.3);
+}
+.gv-orn-divider em {
+  font-style: normal;
+  font-size: 13px;
+  color: rgba(200, 136, 30, 0.7);
+  line-height: 1;
+}
+.gv-card-attrib {
+  text-align: center;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 13.5px;
+  letter-spacing: 0.04em;
+  color: var(--text-dimmer);
+  margin-top: 12px;
+}
+
+/* ── Insight callout (app-style) ── */
+.gv-insight {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 22px;
+  margin: 0 0 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(200, 136, 30, 0.2);
+  background: rgba(255, 255, 255, 0.03);
+}
+.gv-insight-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(200, 136, 30, 0.12);
+  color: var(--gold-light);
+  font-size: 14px;
+}
+.gv-insight p {
+  margin: 2px 0 0;
+  font-style: italic;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--text-dim);
+}
+
+/* ── Ornamental section header (centered, calm) ── */
+.gv-sechead {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 22px;
+}
+.gv-sechead::before,
+.gv-sechead::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(245, 201, 106, 0.22));
+}
+.gv-sechead::after {
+  background: linear-gradient(90deg, rgba(245, 201, 106, 0.22), transparent);
+}
+.gv-sechead-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(245, 201, 106, 0.6);
+  white-space: nowrap;
+}
+.gv-sechead-label::before,
+.gv-sechead-label::after {
+  content: '✦';
+  font-size: 8px;
+  color: rgba(245, 201, 106, 0.35);
+}
+.gv-sechead-sub {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-dimmer);
+  margin: -12px 0 22px;
+}
+
+/* ── Interlinear word-by-word gloss ── */
+.gv-wbw {
+  margin-top: 48px;
+}
+.gv-wbw-flow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 2px;
+  padding: 22px 18px 20px;
+  border: 1px solid rgba(200, 136, 30, 0.16);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.018);
+}
+.gv-word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 9px 13px 8px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  cursor: default;
+  transition: opacity 0.3s ease, background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+/* Focus-follow: hovering one word gently dims the rest */
+.gv-wbw-flow:hover .gv-word:not(:hover) { opacity: 0.4; }
+.gv-word:hover,
+.gv-word:focus-visible {
+  background: rgba(200, 136, 30, 0.09);
+  border-color: rgba(245, 201, 106, 0.32);
+  transform: translateY(-2px);
+  outline: none;
+}
+.gv-word-sa {
+  font-family: "Noto Sans Devanagari", "Inter", sans-serif;
+  font-size: 19px;
+  line-height: 1.4;
+  color: var(--gold-pale);
+}
+.gv-word-en {
+  font-size: 11.5px;
+  line-height: 1.4;
+  color: var(--text-dim);
+  text-align: center;
+  max-width: 132px;
+  letter-spacing: 0.02em;
+}
+/* Literal reading strip beneath the gloss */
+.gv-literal {
+  margin-top: 14px;
+  padding: 13px 18px;
+  border-left: 2px solid rgba(200, 136, 30, 0.45);
+  border-radius: 0 10px 10px 0;
+  background: rgba(200, 136, 30, 0.05);
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--text-dim);
+}
+.gv-literal b {
+  font-weight: 600;
+  color: rgba(245, 201, 106, 0.75);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+/* ── Commentary journey cards ── */
+.gv-cmnt {
+  position: relative;
+  border-left: 2px solid rgba(245, 201, 106, 0.32);
+  border-radius: 0 16px 16px 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.032), rgba(255, 255, 255, 0.015));
+  padding: 24px 28px 27px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  transition: border-left-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+.gv-cmnt:hover {
+  border-left-color: rgba(245, 201, 106, 0.8);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.025));
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.28);
+}
+/* Ghost numeral floating in the corner */
+.gv-cmnt-ghost {
+  position: absolute;
+  top: -14px;
+  right: 6px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(245, 201, 106, 0.06);
+  pointer-events: none;
+  user-select: none;
+}
+.gv-cmnt-kicker {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(245, 201, 106, 0.5);
+  margin-bottom: 8px;
+}
+.gv-cmnt-h {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 12px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.gv-cmnt-p {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.85;
+  color: var(--text-dim);
+}
+
+/* ── Takeaway callout ── */
+.gv-takeaway {
+  position: relative;
+  margin: 26px 0 4px;
+  padding: 44px 32px 42px;
+  text-align: center;
+  border: 1px solid rgba(245, 201, 106, 0.3);
+  border-radius: 20px;
+  background:
+    radial-gradient(90% 120% at 50% 0%, rgba(200, 136, 30, 0.1), transparent 62%),
+    rgba(245, 201, 106, 0.04);
+  overflow: hidden;
+}
+.gv-takeaway::before {
+  content: '❝';
+  display: block;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 34px;
+  line-height: 1;
+  color: rgba(245, 201, 106, 0.4);
+  margin-bottom: 14px;
+}
+.gv-takeaway-kicker {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(245, 201, 106, 0.5);
+  margin-bottom: 16px;
+}
+.gv-takeaway-quote {
+  margin: 0 auto;
+  max-width: 520px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 21px;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--gold-pale);
+  letter-spacing: -0.005em;
+}
+
+/* ── Chapter + blog cards: lift on hover ── */
+.gv-chcard {
+  display: block;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.gv-chcard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(245, 201, 106, 0.5) !important;
+  box-shadow: 0 14px 36px -18px rgba(0, 0, 0, 0.7);
+}
+.gv-blogcard {
+  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+}
+.gv-blogcard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(245, 201, 106, 0.45) !important;
+  background: var(--bg-card-hover) !important;
+}
+
+/* ── Prev/next: nudge the arrow ── */
+.gita-pn-link .gita-pn-label { transition: color 0.2s ease; }
+.gita-pn-link:hover .gita-pn-label { color: var(--gold-light); }
+
+/* ── Continue the dialogue: directional bar (distinct from Related quote cards) ── */
+.gv-pn {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 12px;
+}
+.gv-pn-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
+}
+.gv-pn-card.disabled { opacity: 0.35; pointer-events: none; }
+/* Next is the primary action — filled and gold */
+.gv-pn-card.next {
+  border-color: rgba(245, 201, 106, 0.45);
+  background: linear-gradient(135deg, rgba(200, 136, 30, 0.14), rgba(200, 136, 30, 0.05));
+}
+.gv-pn-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(245, 201, 106, 0.6);
+  box-shadow: 0 12px 30px -16px rgba(0, 0, 0, 0.7);
+}
+.gv-pn-card.next:hover { background: linear-gradient(135deg, rgba(200, 136, 30, 0.2), rgba(200, 136, 30, 0.08)); }
+.gv-pn-arrow {
+  flex-shrink: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--gold);
+  transition: transform 0.22s ease, color 0.22s ease;
+}
+.gv-pn-card:hover .gv-pn-arrow { color: var(--gold-light); }
+.gv-pn-card.prev:hover .gv-pn-arrow { transform: translateX(-4px); }
+.gv-pn-card.next:hover .gv-pn-arrow { transform: translateX(4px); }
+.gv-pn-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
+}
+.gv-pn-body.right { text-align: right; align-items: flex-end; }
+.gv-pn-kicker {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.gv-pn-card.next .gv-pn-kicker { color: var(--gold-light); }
+.gv-pn-teaser {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.gv-pn-card:hover .gv-pn-teaser { color: var(--text); }
+
+/* ── Floating verse navigator ── */
+.gv-versenav {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 5px;
+  border-radius: 999px;
+  border: 1px solid rgba(200, 136, 30, 0.35);
+  background: rgba(18, 5, 5, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 12px 34px -10px rgba(0, 0, 0, 0.75);
+}
+.gv-versenav-btn {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 15px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dim);
+  white-space: nowrap;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.gv-versenav-btn:hover {
+  color: var(--gold-light);
+  background: rgba(200, 136, 30, 0.12);
+}
+.gv-versenav-btn.disabled { opacity: 0.3; pointer-events: none; }
+.gv-versenav-now {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(200, 136, 30, 0.14);
+  border: 1px solid rgba(200, 136, 30, 0.3);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+/* ── Related verses: quote cards ── */
+.gv-related-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.gv-rel-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  padding: 18px 20px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
+}
+.gv-rel-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(245, 201, 106, 0.5);
+  background: var(--bg-card-hover);
+  box-shadow: 0 12px 32px -18px rgba(0, 0, 0, 0.7);
+}
+.gv-rel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.gv-rel-num {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--gold);
+}
+.gv-rel-tag {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  color: rgba(245, 201, 106, 0.65);
+  background: rgba(200, 136, 30, 0.08);
+  border: 1px solid rgba(200, 136, 30, 0.22);
+  border-radius: 999px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+.gv-rel-quote {
+  margin: 0;
+  flex: 1;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+.gv-rel-card:hover .gv-rel-quote { color: var(--gold-pale); }
+.gv-rel-cta {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--gold-light);
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+.gv-rel-card:hover .gv-rel-cta { opacity: 1; }
+
+/* ── Mobile-web pass (phone viewing is first-class) ── */
+@media (max-width: 640px) {
+  /* Hero */
+  .gv-hero-head { margin-bottom: 4px; }
+  .gv-hero-eyebrow { font-size: 10px; letter-spacing: 0.22em; }
+  .gv-hero-h1 { margin-bottom: 12px; }
+  .gv-hero-badges { gap: 6px; margin-bottom: 14px; }
+  .gv-hero-pill { padding: 5px 13px; font-size: 12px; }
+  .gv-hero-essence { font-size: 16.5px; padding: 0 4px; }
+  .gv-hero-byline { font-size: 11px; padding: 0 8px; }
+
+  /* Verse card */
+  .gv-hero-card { margin-top: 28px; border-radius: 16px; }
+  .gv-card-chip { left: 18px; font-size: 10px; padding: 4px 12px; }
+  .gv-diamonds { margin: 8px 0 14px; }
+  .gv-en-quote { font-size: 16.5px; margin-top: 18px; }
+  .gv-orn-divider { max-width: 260px; margin-top: 20px; }
+  .gv-card-attrib { font-size: 12.5px; }
+  .gv-hero-card::after { width: 84px; height: 84px; }
+
+  /* Word-by-word */
+  .gv-wbw { margin-top: 40px; }
+  .gv-wbw-flow { padding: 14px 8px 12px; gap: 4px 0; border-radius: 14px; }
+  .gv-word { padding: 7px 8px 6px; border-radius: 10px; }
+  .gv-word-sa { font-size: 16.5px; }
+  .gv-word-en { font-size: 10.5px; max-width: 96px; }
+  /* No hover on touch — keep all words full opacity */
+  .gv-wbw-flow:hover .gv-word:not(:hover) { opacity: 1; }
+  .gv-literal { font-size: 12.5px; padding: 11px 14px; }
+  .gv-sechead-sub { font-size: 12px; padding: 0 12px; }
+
+  /* Insight + concepts */
+  .gv-insight { padding: 14px 16px; gap: 11px; border-radius: 14px; }
+  .gv-insight-icon { width: 30px; height: 30px; font-size: 12px; }
+  .gv-insight p { font-size: 13.5px; }
+  .gv-keys { gap: 7px; }
+  .gv-key { padding: 6px 12px; font-size: 12.5px; }
+
+  /* Commentary */
+  .gv-cmnt { padding: 18px 18px 20px; border-radius: 0 14px 14px 0; margin-bottom: 10px; }
+  .gv-cmnt-ghost { font-size: 58px; top: -10px; }
+  .gv-cmnt-h { font-size: 18px; }
+  .gv-cmnt-p { font-size: 14.5px; line-height: 1.75; }
+
+  /* Takeaway */
+  .gv-takeaway { padding: 30px 20px 28px; border-radius: 16px; }
+  .gv-takeaway-quote { font-size: 17.5px; }
+
+  /* Depth chip: hide the text label, keep the dots */
+  .gv-depth em { display: none; }
+
+  /* Hero note */
+  .gv-hero-note { font-size: 12px; padding: 0 10px; }
+
+  /* Continue-the-dialogue: stack, next first (primary action on top) */
+  .gv-pn { grid-template-columns: 1fr; }
+  .gv-pn-card.next { order: -1; }
+  .gv-pn-card { padding: 13px 18px; gap: 12px; }
+  .gv-pn-teaser { font-size: 12.5px; }
+
+  /* Floating verse navigator: respect safe area, slightly tighter */
+  .gv-versenav {
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    max-width: calc(100vw - 24px);
+  }
+  .gv-versenav-btn { padding: 0 12px; font-size: 12.5px; }
+  .gv-versenav-now { padding: 0 12px; font-size: 13px; }
+
+  /* Related quote cards stack */
+  .gv-related-grid { grid-template-columns: 1fr; }
+  .gv-rel-card { padding: 16px 18px 14px; }
+}
+
+/* Touch devices generally: hover-dimming off */
+@media (hover: none) {
+  .gv-wbw-flow:hover .gv-word:not(:hover) { opacity: 1; }
+}

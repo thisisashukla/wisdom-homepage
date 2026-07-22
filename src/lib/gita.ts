@@ -11,8 +11,10 @@
  * clicks, the SEO upside is far larger than any "moat" value left in keeping
  * the commentary app-only.
  *
- * Still held back (app-only): quote_variants, target_audience, tone, category,
- * requisite_concepts, nodeId, path, depth, is_standalone.
+ * V3 (July 2026): full enrichment ships to the web — quoteVariants,
+ * requisiteConcepts, insight, category, tone, targetAudience, nodeId,
+ * nodePath, depth. Verse pages use these for shareable quote cards,
+ * concept chips, and reading-mood metadata.
  */
 
 import fs from 'fs'
@@ -48,6 +50,25 @@ export type Verse = {
   translationLiteral?: string
   /** Category: "philosophical", "narrative", "declaration", etc. Used for structuring. */
   verseType?: string
+  // ── V3 enrichment (optional — full pipeline data) ──
+  /** Sharper analytical one-liner, distinct from simpleInsight. */
+  insight?: string
+  /** Short shareable phrasings: card / widget / notification / lockscreen. */
+  quoteVariants?: { format: string; text: string }[]
+  /** Concepts a reader should know to fully absorb this verse (e.g. Karma, Dharma). */
+  requisiteConcepts?: string[]
+  /** "philosophical" | "narrative" | "declaration" | ... */
+  category?: string
+  /** Emotional register of the verse: "grounding", "urgent", "consoling", ... */
+  tone?: string
+  /** Who this verse most speaks to: "students", "professionals", ... */
+  targetAudience?: string[]
+  /** Internal knowledge-graph node (e.g. "vairagya"). */
+  nodeId?: string
+  /** Knowledge-graph path (e.g. "action"). */
+  nodePath?: string
+  /** "surface" | "mid" | "deep" — how esoteric the verse is. */
+  depth?: string
 }
 
 export type Chapter = {
@@ -144,8 +165,8 @@ export const getVerseNeighbors = (
   chapter: number,
   verse: number,
 ): {
-  prev: { chapter: number; verse: number } | null
-  next: { chapter: number; verse: number } | null
+  prev: IndexEntry | null
+  next: IndexEntry | null
 } => {
   const sorted = [...indexEntries].sort((a, b) => a.order - b.order)
   const idx = sorted.findIndex((e) => e.chapter === chapter && e.verse === verse)
@@ -153,8 +174,8 @@ export const getVerseNeighbors = (
   const prev = idx > 0 ? sorted[idx - 1] : null
   const next = idx < sorted.length - 1 ? sorted[idx + 1] : null
   return {
-    prev: prev ? { chapter: prev.chapter, verse: prev.verse } : null,
-    next: next ? { chapter: next.chapter, verse: next.verse } : null,
+    prev,
+    next,
   }
 }
 
@@ -210,6 +231,15 @@ export const getRelatedVerses = (
  * verse page link "up" into hub pages, which Google crawls more often and
  * which already have authority.
  */
+/**
+ * Resolve a free-form concept name (e.g. "Nishkama", "Karma") to a published
+ * topic hub, if one exists. Used to turn requisiteConcepts into internal links.
+ */
+export const findTopicForConcept = (concept: string): TopicSummary | null => {
+  const slug = concept.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+  return topicSummaries.find((t) => t.slug === slug) ?? null
+}
+
 export const getTopicBridgesForVerse = (tags: string[], limit = 3): TopicSummary[] => {
   const tagSet = new Set(tags)
   const bridges = topicSummaries

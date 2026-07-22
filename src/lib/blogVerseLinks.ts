@@ -20,10 +20,37 @@ export interface BlogLink {
   title: string
   /** Exciting, specific call-to-action shown as the link text */
   cta: string
+  /** Hero image path (from /public) to show on the card */
+  image: string
 }
 
-/** Map from "chapter-verse" to ordered BlogLink array (most specific first). */
-const VERSE_BLOG_MAP: Record<string, BlogLink[]> = {
+/** One representative image per blog slug. */
+const BLOG_IMAGES: Record<string, string> = {
+  'bhagavad-gita-2-47-karmanye-vadhikaraste':      '/assets/chapter2.webp',
+  'bhagavad-gita-karma-meaning':                    '/assets/chapter3.webp',
+  'nishkama-karma-bhagavad-gita':                   '/assets/chapter3.webp',
+  'sthitaprajna-bhagavad-gita':                     '/assets/chapter2.webp',
+  'bhagavad-gita-on-anxiety':                       '/assets/chapter6.webp',
+  'bhagavad-gita-anxiety-mental-peace':             '/assets/chapter6.webp',
+  'bhagavad-gita-on-death-and-the-soul':            '/assets/gita-montage.webp',
+  'dharma-meaning-bhagavad-gita':                   '/assets/chapter4.webp',
+  'ahankara-meaning-bhagavad-gita':                 '/assets/ahankar.webp',
+  'maya-meaning-bhagavad-gita':                     '/assets/gita-montage.webp',
+  'krishna-three-paths-bhagavad-gita':              '/assets/3paths.webp',
+  'sattva-rajas-tamas-three-gunas-bhagavad-gita':   '/assets/chapter14.webp',
+  '20-famous-sanskrit-shlokas':                     '/assets/sanskrit-word-by-word.webp',
+  'bhagwat-geeta-saar':                             '/assets/gita.webp',
+  'bhagavad-gita-for-beginners':                    '/assets/gita-montage.webp',
+  'bhagavad-gita-for-students':                     '/assets/chapter6.webp',
+  'best-bhagavad-gita-translation':                 '/assets/gitatranslations.webp',
+  'hare-krishna-mahamantra':                        '/assets/chapter9.webp',
+  'bhagavad-gita-complete-structure-all-chapters':  '/assets/gita-montage.webp',
+}
+
+type RawLink = Omit<BlogLink, 'image'>
+
+/** Map from "chapter-verse" to ordered RawLink array (most specific first). */
+const VERSE_BLOG_MAP: Record<string, RawLink[]> = {
 
   // ── Chapter 2 ──────────────────────────────────────────────────────────────
 
@@ -557,9 +584,13 @@ const VERSE_BLOG_MAP: Record<string, BlogLink[]> = {
 }
 
 /**
- * Returns the curated blog links for a given verse.
+ * Returns the curated blog links for a given verse, with images resolved.
  * Returns an empty array when no blogs are mapped to that verse.
  */
 export function getBlogLinksForVerse(chapter: number, verse: number): BlogLink[] {
-  return VERSE_BLOG_MAP[`${chapter}-${verse}`] ?? []
+  const raw = VERSE_BLOG_MAP[`${chapter}-${verse}`] ?? []
+  return raw.map((link) => ({
+    ...link,
+    image: BLOG_IMAGES[link.slug] ?? '/assets/gita.webp',
+  }))
 }
