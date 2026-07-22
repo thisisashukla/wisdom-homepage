@@ -13,6 +13,7 @@ import {
   topicUrl,
 } from '@/lib/gita'
 import type { IndexEntry } from '@/lib/gita'
+import { getBlogLinksForVerse } from '@/lib/blogVerseLinks'
 import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import BlogTracker from '@/components/BlogTracker'
 import ShareButtons from '@/components/gita/ShareButtons'
@@ -103,6 +104,7 @@ export default async function VersePage({ params }: { params: Params }) {
   const related = getRelatedVerses(c, v, verse.tags) as IndexEntry[]
   const topicBridges = getTopicBridgesForVerse(verse.tags)
   const audio = getVerseAudio(c, v)
+  const blogLinks = getBlogLinksForVerse(c, v)
 
   const quotationLd = {
     '@context': 'https://schema.org',
@@ -350,6 +352,48 @@ export default async function VersePage({ params }: { params: Params }) {
       />
 
       <GitaAppCTA variant="verse" locale="en" verse={{ chapter: c, verse: v }} />
+
+      {/* ── Go Deeper: curated blog links for this verse ── */}
+      {blogLinks.length > 0 && (
+        <section
+          style={{ margin: '40px 0 8px' }}
+          data-mp-section={`verse_${c}_${v}_go_deeper`}
+          aria-label="Go deeper"
+        >
+          <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--text-dimmer)', marginBottom: '14px' }}>
+            Go deeper
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            {blogLinks.map((link) => (
+              <a
+                key={link.slug}
+                href={`/blog/${link.slug}`}
+                data-mp-location={`verse_${c}_${v}_blog_${link.slug}`}
+                data-mp-event="Blog Deep Dive Clicked"
+                data-mp-props={JSON.stringify({ verse: `${c}.${v}`, slug: link.slug })}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '12px',
+                  background: 'var(--bg-card, rgba(255,255,255,0.04))',
+                  border: '1px solid rgba(245,201,106,0.2)',
+                  borderRadius: '10px',
+                  padding: '14px 18px',
+                  textDecoration: 'none',
+                  color: 'var(--gold-light, #e8c070)',
+                  fontSize: '14px',
+                  lineHeight: 1.5,
+                  transition: 'border-color 0.15s, background 0.15s',
+                }}
+              >
+                <span>{link.cta}</span>
+                <span style={{ flexShrink: 0, opacity: 0.5, fontSize: '18px' }}>↗</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
       {related.length > 0 && (
         <>
