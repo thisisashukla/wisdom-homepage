@@ -127,7 +127,7 @@ export default async function HomePage() {
                 here, free, in Sanskrit, Hindi and English.
               </p>
               <div className="hero-actions">
-                <a href="/gita/chapter/1" className="btn-read-gita btn-read-gita-primary" data-mp-location="hero_read_gita_cta">
+                <a href="/gita/chapter/1/verse/1" className="btn-read-gita btn-read-gita-primary" data-mp-location="hero_read_gita_cta">
                   Start Reading the Gita →
                 </a>
                 <a href="/gita/today" className="btn-hero-secondary" data-mp-location="hero_today_verse_link">
@@ -163,13 +163,13 @@ export default async function HomePage() {
       <section className="entry-section">
         <div className="wrap">
           <div className="entry-grid entry-grid-2">
-            <a href="/gita/chapter/1" className="entry-card" data-mp-location="home_entry_read_gita">
+            <a href="/gita/chapter/1/verse/1" className="entry-card" data-mp-location="home_entry_read_gita">
               <div className="entry-card-icon">📖</div>
               <div className="entry-card-body">
                 <h3>Read the Gita</h3>
                 <p>All 18 chapters, 700 verses. Start where Arjuna started — with a mind full of doubt.</p>
               </div>
-              <div className="entry-card-cta">Begin with Chapter 1 →</div>
+              <div className="entry-card-cta">Begin with Verse 1.1 →</div>
             </a>
             <a href="/hi/gita" className="entry-card" hrefLang="hi" data-mp-location="home_entry_hindi_gita">
               <div className="entry-card-icon">🕉️</div>
@@ -181,9 +181,78 @@ export default async function HomePage() {
             </a>
           </div>
 
+          {/* ── WHICH PATH? QUIZ ── */}
+          <style dangerouslySetInnerHTML={{ __html: `
+            .path-quiz-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+            @media (max-width: 600px) {
+              .path-quiz-grid { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 8px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+              .path-quiz-grid::-webkit-scrollbar { display: none; }
+              .path-quiz-grid > a { flex: 0 0 172px; }
+            }
+          ` }} />
+          <div style={{ margin: '32px 0 0' }} data-mp-section="path_quiz">
+            <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--text-dimmer)', marginBottom: '10px' }}>
+              Not sure where to start?
+            </div>
+            <div className="path-quiz-grid">
+              {[
+                {
+                  path: 'Karma',
+                  sanskrit: 'कर्म योग',
+                  gloss: 'Act without attachment to results',
+                  hook: 'For the doer who can\'t stop doing',
+                  href: '/gita/chapter/2/verse/47',
+                  mp: 'home_path_karma',
+                },
+                {
+                  path: 'Jnana',
+                  sanskrit: 'ज्ञान योग',
+                  gloss: 'The self is beyond birth and death',
+                  hook: 'For the thinker asking what is real',
+                  href: '/gita/chapter/2/verse/20',
+                  mp: 'home_path_jnana',
+                },
+                {
+                  path: 'Bhakti',
+                  sanskrit: 'भक्ति योग',
+                  gloss: 'Offer what you have — leaf, flower, water',
+                  hook: 'For the devotee who leads with heart',
+                  href: '/gita/chapter/9/verse/26',
+                  mp: 'home_path_bhakti',
+                },
+              ].map((p) => (
+                <a
+                  key={p.path}
+                  href={p.href}
+                  data-mp-location={p.mp}
+                  data-mp-event="Path Selected"
+                  data-mp-props={JSON.stringify({ path: p.path.toLowerCase(), verse: p.href })}
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '6px',
+                    padding: '16px 16px',
+                    background: 'var(--bg-card, rgba(255,255,255,0.04))',
+                    border: '1px solid var(--border)',
+                    borderRadius: '12px',
+                    textDecoration: 'none',
+                    transition: 'border-color 0.15s',
+                  }}
+                >
+                  <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '18px', fontWeight: 700, color: 'var(--gold-light)' }}>
+                    {p.path}
+                  </div>
+                  <div style={{ fontSize: '12px', color: 'var(--text-dimmer)', fontStyle: 'italic' }}>{p.sanskrit}</div>
+                  <div style={{ fontSize: '12.5px', color: 'var(--text-dim)', lineHeight: 1.45, marginTop: '2px' }}>{p.hook}</div>
+                  <div style={{ fontSize: '11.5px', color: 'var(--gold-light)', marginTop: 'auto', paddingTop: '8px' }}>Start here →</div>
+                </a>
+              ))}
+            </div>
+          </div>
+
           {/* Interactive Today's Verse — sits where the old BG 2.47 strip used to. */}
           {todayVerse && todayRef && (
-            <div className="today-verse-card">
+            <div className="today-verse-card" data-mp-section="today_verse_card">
               <div className="today-verse-head">
                 <div className="today-verse-eyebrow">
                   <span className="today-verse-dot" aria-hidden="true" />
@@ -218,14 +287,17 @@ export default async function HomePage() {
                 <div className="today-verse-hint">
                   <span aria-hidden="true">▶</span> Press play — follow the Sanskrit word by word.
                 </div>
-                <a
-                  href={`/gita/chapter/${todayRef.chapter}/verse/${todayRef.verse}`}
-                  className="today-verse-deeper"
-                  data-mp-location="home_today_verse_go_deeper"
-                >
-                  Go deeper into this verse →
-                </a>
               </div>
+              <a
+                href={`/gita/chapter/${todayRef.chapter}/verse/${todayRef.verse}`}
+                className="btn-read-gita btn-read-gita-primary"
+                style={{ display: 'block', textAlign: 'center', marginTop: '18px' }}
+                data-mp-location="home_today_verse_go_deeper"
+                data-mp-event="Today Verse CTA Clicked"
+                data-mp-props={JSON.stringify({ verse: `${todayRef.chapter}.${todayRef.verse}` })}
+              >
+                Read this verse in full →
+              </a>
             </div>
           )}
         </div>
@@ -655,7 +727,7 @@ export default async function HomePage() {
           <h2>The scripture is right here.<br/><em>Open it and begin.</em></h2>
           <p>All 18 chapters. 700 verses. Sanskrit, Hindi, English. Free.</p>
           <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/gita/chapter/1" className="btn-read-gita btn-read-gita-primary" data-mp-location="final_cta_read_gita">
+            <a href="/gita/chapter/1/verse/1" className="btn-read-gita btn-read-gita-primary" data-mp-location="final_cta_read_gita">
               Start Reading the Gita →
             </a>
             <a href="/gita/today" className="btn-hero-secondary" data-mp-location="final_cta_today">

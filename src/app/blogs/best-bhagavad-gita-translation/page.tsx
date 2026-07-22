@@ -525,7 +525,7 @@ export default function BestGitaTranslationPage() {
             Adi Shankara wrote the oldest surviving commentary in the 8th century and read the Gita as teaching liberation through knowledge alone. Ramanuja answered in the 11th century: the yogas of action and knowledge are real, but they culminate in devotion. Madhva read it as teaching the eternal distinctness of the soul and God. Abhinavagupta, the Kashmir Shaiva master, read the battlefield itself as the war between knowledge and ignorance inside a person. Each of these is a complete, rigorous, sincere reading. Each is still followed today.
         </p>
         <p>
-            The tradition has a generous name for this: adhikari-bheda, the recognition that different aspirants need different doors. A translation is never just a translation; it descends from one of these doors, or opens a new one. So the honest question is not &ldquo;which Gita is correct?&rdquo; It is &ldquo;which door are you standing in front of?&rdquo;
+            The tradition has a generous name for this: <strong>adhikāri-bheda</strong>, the recognition that different aspirants need different doors. A translation is never just a translation; it descends from one of these doors, or opens a new one. So the honest question is not &ldquo;which Gita is correct?&rdquo; It is &ldquo;which door are you standing in front of?&rdquo;
         </p>
 
         <h2>One Verse, Four Readings</h2>

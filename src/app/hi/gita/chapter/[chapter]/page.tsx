@@ -4,6 +4,7 @@ import {
   getAllChapters,
   getChapter,
   getChapterVerses,
+  getVerse,
   chapterImage,
   chapterLede,
   chapterUrl,
@@ -42,7 +43,10 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
   const num = Number(params.chapter)
   const ch = getChapter(num)
   if (!ch) notFound()
-  const verses = await getChapterVerses(num)
+  const [verses, firstVerse] = await Promise.all([
+    getChapterVerses(num),
+    getVerse(num, 1),
+  ])
 
   const lede = chapterLede(ch.number, 'hi')
 
@@ -74,24 +78,35 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
 
       <GitaAppCTA variant="inline" locale="hi" />
 
-      {verses.length > 0 && (
-        <nav className="gita-jumper" aria-label="श्लोक पर जाएँ">
-          <div className="gita-jumper-label">श्लोक पर जाएँ</div>
-          <div className="gita-jumper-grid">
-            {verses.map((v) => (
-              <a
-                key={v.verse}
-                href={verseUrl(v.chapter, v.verse, 'hi')}
-                data-mp-location={`chapter_hi_${ch.number}_jumper_${v.verse}`}
-              >
-                {v.verse}
-              </a>
-            ))}
+      {/* ── FIRST VERSE INLINE ── */}
+      {firstVerse && (
+        <div style={{ margin: '32px 0 8px' }} data-mp-section={`inline_verse_hi_${ch.number}_1`}>
+          <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--text-dimmer)', marginBottom: '14px' }}>
+            प्रथम श्लोक · {ch.number}.1
           </div>
-        </nav>
+          <div style={{ background: 'var(--bg-card, rgba(255,255,255,0.04))', border: '1px solid rgba(245,201,106,0.3)', borderRadius: '14px', padding: '24px 26px' }}>
+            {firstVerse.sanskrit && (
+              <div style={{ fontFamily: "'Noto Sans Devanagari', 'Mangal', serif", fontSize: '18px', lineHeight: 1.8, color: 'var(--text)', marginBottom: '16px', textAlign: 'center' }}>
+                {firstVerse.sanskrit}
+              </div>
+            )}
+            {firstVerse.hindiTranslation && (
+              <blockquote style={{ borderLeft: '2px solid rgba(245,201,106,0.4)', paddingLeft: '14px', margin: '0 0 14px', fontStyle: 'italic', fontSize: '15px', color: 'var(--gold-pale, #f5e6b8)', lineHeight: 1.6 }} lang="hi">
+                &ldquo;{firstVerse.hindiTranslation}&rdquo;
+              </blockquote>
+            )}
+            <a
+              href={verseUrl(ch.number, 1, 'hi')}
+              data-mp-location={`chapter_hi_${ch.number}_inline_verse_1`}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: 'var(--gold, #c8881e)', color: '#1a0606', padding: '10px 20px', borderRadius: '8px', fontSize: '13.5px', fontWeight: 700, textDecoration: 'none' }}
+            >
+              पूरा श्लोक {ch.number}.1 पढ़ें →
+            </a>
+          </div>
+        </div>
       )}
 
-      <h2 className="gita-h2">श्लोक</h2>
+      <h2 className="gita-h2" style={{ marginTop: '40px' }}>सभी श्लोक</h2>
       <ul className="gita-verse-list">
         {verses.map((v) => (
           <li key={v.verse}>
