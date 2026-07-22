@@ -736,18 +736,123 @@
 }
 .gita-verse-list a {
   display: flex;
-  gap: 16px;
-  align-items: baseline;
-  padding: 14px 18px;
+  gap: 0;
+  align-items: flex-start;
+  padding: 18px 20px;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  transition: all 0.15s;
+  border-radius: 10px;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
 }
 .gita-verse-list a:hover {
   background: var(--bg-card-hover);
   border-color: rgba(200, 136, 30, 0.4);
+  box-shadow: 0 4px 18px -8px rgba(0, 0, 0, 0.45);
 }
+
+/* ── Verse reference column (chapter.verse) ── */
+.gita-verse-ref {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 56px;
+  padding-right: 16px;
+  margin-right: 18px;
+  border-right: 1px solid var(--border);
+  padding-top: 2px;
+  transition: border-color 0.15s;
+}
+.gita-verse-list a:hover .gita-verse-ref {
+  border-right-color: rgba(200, 136, 30, 0.35);
+}
+.gita-verse-ref-num {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.gita-verse-ref-ch {
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dimmer);
+}
+
+/* ── Verse body (essence + insight + footer) ── */
+.gita-verse-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.gita-verse-essence {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--gold-pale);
+  letter-spacing: -0.005em;
+}
+.gita-verse-insight {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.gita-verse-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+.gita-verse-depth {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  padding: 2px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-dimmer);
+}
+.gita-verse-depth--deep {
+  color: rgba(245, 201, 106, 0.75);
+  border-color: rgba(245, 201, 106, 0.28);
+  background: rgba(245, 201, 106, 0.06);
+}
+.gita-verse-depth--mid {
+  color: var(--text-dim);
+  border-color: var(--border);
+}
+.gita-verse-depth--surface {
+  color: var(--text-dimmer);
+  border-color: var(--border);
+}
+.gita-verse-arrow {
+  font-size: 15px;
+  color: var(--text-dimmer);
+  flex-shrink: 0;
+  transition: color 0.15s, transform 0.15s;
+  margin-left: 8px;
+}
+.gita-verse-list a:hover .gita-verse-arrow {
+  color: var(--gold-light);
+  transform: translateX(3px);
+}
+
+/* legacy — kept for any non-topic list usage */
 .gita-verse-num {
   font-family: "Playfair Display", Georgia, serif;
   font-size: 18px;
@@ -760,6 +865,15 @@
   font-size: 14.5px;
   color: var(--text-dim);
   line-height: 1.55;
+}
+
+@media (max-width: 640px) {
+  .gita-verse-list a { padding: 14px 14px; }
+  .gita-verse-ref { width: 46px; padding-right: 12px; margin-right: 13px; }
+  .gita-verse-ref-num { font-size: 16px; }
+  .gita-verse-ref-ch { font-size: 9px; margin-top: 4px; }
+  .gita-verse-essence { font-size: 14.5px; }
+  .gita-verse-insight { font-size: 12.5px; }
 }
 
 /* ── Prev/Next ── */

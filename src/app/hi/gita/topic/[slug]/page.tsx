@@ -69,12 +69,25 @@ export default async function TopicPageHi({ params }: { params: Params }) {
               href={verseUrl(v.chapter, v.verse, 'hi')}
               data-mp-location={`topic_hi_${topic.slug}_verse_${v.chapter}_${v.verse}`}
             >
-              <span className="gita-verse-num">
-                {v.chapter}.{v.verse}
-              </span>
-              <span className="gita-verse-snippet">
-                {(v.hindiTranslation || v.englishTranslation).slice(0, 140)}
-              </span>
+              <div className="gita-verse-ref">
+                <span className="gita-verse-ref-num">{v.chapter}.{v.verse}</span>
+                <span className="gita-verse-ref-ch">अ. {v.chapter}</span>
+              </div>
+              <div className="gita-verse-body">
+                <p className="gita-verse-essence">
+                  {v.essence || v.englishTranslation}
+                </p>
+                <p className="gita-verse-insight">
+                  {(v.hindiTranslation || v.englishTranslation).slice(0, 120)}
+                </p>
+                <div className="gita-verse-footer">
+                  {v.depth
+                    ? <span className={`gita-verse-depth gita-verse-depth--${v.depth}`}>{v.depth}</span>
+                    : <span />
+                  }
+                  <span className="gita-verse-arrow">→</span>
+                </div>
+              </div>
             </a>
           </li>
         ))}

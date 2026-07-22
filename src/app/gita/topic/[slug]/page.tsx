@@ -106,10 +106,27 @@ export default async function TopicPage({ params }: { params: Params }) {
               href={verseUrl(v.chapter, v.verse)}
               data-mp-location={`topic_${topic.slug}_verse_${v.chapter}_${v.verse}`}
             >
-              <span className="gita-verse-num">
-                {v.chapter}.{v.verse}
-              </span>
-              <span className="gita-verse-snippet">{v.essence || v.englishTranslation}</span>
+              <div className="gita-verse-ref">
+                <span className="gita-verse-ref-num">{v.chapter}.{v.verse}</span>
+                <span className="gita-verse-ref-ch">Ch. {v.chapter}</span>
+              </div>
+              <div className="gita-verse-body">
+                <p className="gita-verse-essence">
+                  {v.essence || v.englishTranslation}
+                </p>
+                {(v.simpleInsight || v.simpleMeaning) && (
+                  <p className="gita-verse-insight">
+                    {v.simpleInsight || v.simpleMeaning}
+                  </p>
+                )}
+                <div className="gita-verse-footer">
+                  {v.depth
+                    ? <span className={`gita-verse-depth gita-verse-depth--${v.depth}`}>{v.depth}</span>
+                    : <span />
+                  }
+                  <span className="gita-verse-arrow">→</span>
+                </div>
+              </div>
             </a>
           </li>
         ))}
