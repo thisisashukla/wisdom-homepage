@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-58_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-58_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-58.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-58.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":58,"order":105,"sanskrit":"यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः । इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥","hindiTranslation":"जिस तरह कछुआ अपने अङ्गोंको सब ओरसे समेट लेता है, ऐसे ही जिस कालमें यह कर्मयोगी इन्द्रियोंके विषयोंसे इन्द्रियोंको सब प्रकारसे समेट लेता हटा लेता है, तब उसकी बुद्धि प्रतिष्ठित हो जाती है ॥","englishTranslation":"When this one draws the senses fully back from sense-objects, like a tortoise withdrawing its limbs, wisdom is steady.","essence":"Steadiness begins when the senses stop running outward.","speaker":"Krishna","deity":"","tags":["indriya-nigraha","sense-withdrawal","tortoise-metaphor","steady-wisdom","pragya"],"simpleMeaning":"Wisdom becomes stable when the senses are pulled back from the things they chase, just as a tortoise draws in its limbs.","simpleInsight":"You do not need to chase every attraction. Real steadiness begins when attention comes home.","detailedMeaning":"On Kurukshetra, Arjuna is frozen between duty and grief. Krishna has been describing the person whose understanding no longer wavers. Here he gives the image: like a tortoise, the wise one draws the senses away from their objects, and the mind becomes steady.","modernRelevance":"You open your phone to check one message, then three more tabs, then a video you did not mean to watch. The day starts leaking away the moment your attention keeps reaching outward.","translationLiteral":"यदा (when) / संहरते (withdraws) / च (and) / अयम् (this one) / कूर्मः (tortoise) / अङ्गानि (limbs) / इव (like) / सर्वशः (from all sides) / इन्द्रियाणि (the senses) / इन्द्रियार्थेभ्यः (from sense-objects) / तस्य (of that one) / प्रज्ञा (wisdom) / प्रतिष्ठिता (steadfast)","verseType":"metaphor","insight":"It shifts the mind from constant reaching to deliberate withdrawal from distraction.","quoteVariants":[{"format":"card","text":"Withdraw the senses completely. Steady wisdom begins there."},{"format":"widget","text":"Pull the senses back. Wisdom stands firm."},{"format":"notification","text":"My mind settles when the senses stop reaching."},{"format":"lockscreen","text":"Withdraw the senses. Let wisdom hold."}],"requisiteConcepts":["indriya","pragya"],"category":"philosophical","tone":"grounding","targetAudience":["students","professionals","general"],"nodeId":"equanimity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

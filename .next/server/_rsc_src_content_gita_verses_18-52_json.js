@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-52_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-52_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-52.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-52.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":52,"order":675,"sanskrit":"विविक्तसेवी लघ्वाशी यतवाक्कायमानसः । ध्यानयोगपरो नित्यं वैराग्यं समुपाश्रितः ॥","hindiTranslation":"जो विशुद्ध सात्त्विकी बुद्धिसे युक्त, वैराग्यके आश्रित, एकान्तका सेवन करनेवाला और नियमित भोजन करनेवाला साधक धैर्यपूर्वक इन्द्रियोंका नियमन करके, शरीरवाणीमनको वशमें करके, शब्दादि विषयोंका त्याग करके और रागद्वेषको छोड़कर निरन्तर ध्यानयोगके परायण हो जाता है, वह अहंकार, बल, दर्प, काम, क्रोध और परिग्रहका त्याग करके एवं निर्मम तथा शान्त होकर ब्रह्मप्राप्तिका पात्र हो जाता है ॥","englishTranslation":"Dwelling in solitude, eating lightly, and controlling speech, body, and mind, one stays absorbed in meditation, grounded in non-attachment.","essence":"Freedom grows from deliberate simplicity and steady restraint.","speaker":"Krishna","deity":"","tags":["viviikta-seva","laghvashi","yatavak-kaya-manas","dhyana-yoga","vairagya"],"simpleMeaning":"A serious seeker lives simply, keeps the senses under control, and stays devoted to meditation with non-attachment.","simpleInsight":"There is calm in a life that is deliberately uncluttered.","detailedMeaning":"On the battlefield, Krishna is finishing his map of inner freedom for Arjuna. After describing the purified mind, he adds the daily disciplines that support it: solitude, light eating, restraint of speech, body, and mind, and steady meditation rooted in non-attachment.","modernRelevance":"You turn off your phone, skip the extra noise, and sit alone before dawn. The mind settles faster when the day stops feeding it distractions.","translationLiteral":"विविक्तसेवी (dwelling in solitude) / लघ्वाशी (eating lightly) / यतवाक्कायमानसः (one whose speech, body, and mind are restrained) / ध्यानयोगपरो (devoted to meditation-yoga) / नित्यं (always) / वैराग्यं (non-attachment) / समुपाश्रितः (taking refuge in)","verseType":"teaching","insight":"It shifts the focus from heroic moments to the habits that make inner steadiness possible.","quoteVariants":[],"requisiteConcepts":["vairagya","dhyana","yoga"],"category":"philosophical","tone":"grounding","targetAudience":["students","professionals","general"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

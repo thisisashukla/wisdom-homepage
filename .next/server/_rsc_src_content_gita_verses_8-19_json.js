@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-19_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-19_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-19.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/8-19.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":19,"order":329,"sanskrit":"भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते । रात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे ॥","hindiTranslation":"हे पार्थ  वही यह प्राणिसमुदाय उत्पन्न होहोकर प्रकृतिके परवश हुआ ब्रह्माके दिनके समय उत्पन्न होता है और ब्रह्माकी रात्रिके समय लीन होता है ॥","englishTranslation":"O Arjuna, this entire group of beings is born again and again, and is dissolved at the coming of night; at the coming of day, it rises again, helplessly.","essence":"All formed things return and rise again under nature’s compulsion.","speaker":"Krishna","deity":"","tags":["cosmic_cycle","pralaya","srishti","avyakta","prakriti"],"simpleMeaning":"All living beings keep arising and dissolving again and again. They do so under the pull of nature, not by choice.","simpleInsight":"You can stop mistaking repeated change for permanence.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen by grief while Krishna explains the rhythm behind all created life. After describing cosmic day and night, Krishna says every being rises and falls in that cycle under nature’s compulsion.","modernRelevance":"You build a life, a role, a relationship, then watch it shift overnight. What felt fixed was always moving through a larger rhythm you do not control.","translationLiteral":"भूतग्रामः (group of beings) / सः (that same) / एव (indeed) / अयम् (this) / भूत्वा भूत्वा (having become again and again) / प्रलीयते (is dissolved) / रात्र्यागमे (at the coming of night) / अवशः (helplessly, under compulsion) / पार्थ (O Partha) / प्रभवति (arises) / अहरागमे (at the coming of day)","verseType":"declaration","insight":"It shifts the mind from clinging to temporary forms toward seeing their repeated rising and falling as natural.","quoteVariants":[],"requisiteConcepts":["Prakriti","Avyakta"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

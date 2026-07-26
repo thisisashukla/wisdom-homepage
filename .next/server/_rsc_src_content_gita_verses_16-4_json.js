@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_16-4_json";
+exports.ids = ["_rsc_src_content_gita_verses_16-4_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/16-4.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/16-4.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":16,"verse":4,"order":575,"sanskrit":"दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च । अज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम् ॥","hindiTranslation":"हे पृथानन्दन  दम्भ करना, घमण्ड करना, अभिमान करना, क्रोध करना, कठोरता रखना और अविवेकका होना भी  ये सभी आसुरीसम्पदाको प्राप्त हुए मनुष्यके लक्षण हैं ॥","englishTranslation":"O son of Pritha, hypocrisy, arrogance, self-importance, anger, harshness, and ignorance are the marks of one born with demonic qualities.","essence":"False pride and cruelty reveal a nature already turned away from wisdom.","speaker":"Krishna","deity":"","tags":["asuri-sampad","darpa","abhimana","parushya","krodha"],"simpleMeaning":"False display, pride, self-importance, anger, harsh speech, and ignorance are signs of a destructive nature.","simpleInsight":"It feels clarifying to name the habits that poison character before they harden into identity.","detailedMeaning":"On the battlefield, Krishna has just described the qualities of a noble nature. Now he turns to Arjuna and names the opposite pattern: hypocrisy, pride, anger, cruelty, and ignorance. The contrast prepares Arjuna to see what kind of life leads to bondage.","modernRelevance":"In a tense family argument, someone smiles politely while cutting you down, then explodes when challenged. The verse names that mix of pride, cruelty, and blindness for what it is.","translationLiteral":"दम्भः (hypocrisy) / दर्पः (arrogance) / अभिमानः (self-importance) / च (and) / क्रोधः (anger) / पारुष्यम् (harshness) / एव (indeed) / च (and) / अज्ञानम् (ignorance) / च (and) / अभिजातस्य (of one born) / पार्थ (O Partha) / सम्पदम् (qualities) / आसुरीम् (demonic)","verseType":"declaration","insight":"It teaches you to spot character by recurring reactions, not by polished appearances.","quoteVariants":[{"format":"card","text":"Hypocrisy, arrogance, anger, and harshness mark a demonic nature."},{"format":"widget","text":"Drop arrogance. Drop harshness."},{"format":"notification","text":"Arrogance and harshness are not strength."},{"format":"lockscreen","text":"Reject arrogance. Choose restraint."}],"requisiteConcepts":[],"category":"philosophical","tone":"reflective","targetAudience":["general","students","parents"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-43_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-43_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-43.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-43.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":43,"order":276,"sanskrit":"तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम् । यतते च ततो भूयः संसिद्धौ कुरुनन्दन ॥","hindiTranslation":"हे कुरुनन्दन  वहाँपर उसको पूर्वजन्मकृत साधनसम्पत्ति अनायास ही प्राप्त हो जाती है ।  फिर उससे वह साधनकी सिद्धिके विषयमें पुनः विशेषतासे यत्न करता है ॥","englishTranslation":"O son of Kuru, there he effortlessly regains the spiritual understanding from his previous life. Then he strives again, with greater force, toward complete success.","essence":"Nothing gained in sincere practice is ever truly lost.","speaker":"Krishna","deity":"","tags":["yogabhraṣṭa","punyakarma","previous-life practice","buddhisamyooga","recovery of discipline"],"simpleMeaning":"A person who falls from yoga does not lose everything. He regains the insight and practice from a former life and continues striving toward full success.","simpleInsight":"Progress is not erased by failure. What you have truly practiced comes back and keeps working for you.","detailedMeaning":"On the battlefield, Arjuna fears that a failed spiritual effort is wasted. Krishna answers by describing the yogi who falls short: even after death, the person regains past discernment and resumes the path with renewed strength.","modernRelevance":"You return to a practice after months away and expect to start from zero. Something in you remembers. The old discipline is not gone; it waits to be reawakened.","translationLiteral":"तत्र (there) / तम् (that) / बुद्धिसंयोगम् (union with discernment) / लभते (he attains) / पौर्वदेहिकम् (belonging to the former body) / यतते (he strives) / च (and) / ततः (then) / भूयः (again) / संसिद्धौ (toward complete success) / कुरुनन्दन (O son of Kuru)","verseType":"teaching","insight":"It shifts the mind from fear of wasted effort to trust in accumulated practice.","quoteVariants":[],"requisiteConcepts":["Yoga","buddhi"],"category":"philosophical","tone":"calming","targetAudience":["students","professionals","general"],"nodeId":"patience","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

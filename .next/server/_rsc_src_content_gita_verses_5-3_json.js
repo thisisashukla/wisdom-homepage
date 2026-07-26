@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-3_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-3_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-3.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/5-3.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":3,"order":207,"sanskrit":"ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति । निर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते ॥","hindiTranslation":"हे महाबाहो  जो मनुष्य न किसीसे द्वेष करता है और न किसीकी आकाङ्क्षा करता है वह कर्मयोगी सदा संन्यासी समझनेयोग्य है क्योंकि द्वन्द्वोंसे रहित मनुष्य सुखपूर्वक संसारबन्धनसे मुक्त हो जाता है ॥","englishTranslation":"One who neither hates nor desires is always a renunciant. Free from opposites, such a person is easily released from bondage, O mighty-armed one.","essence":"Freedom comes when craving and resistance no longer steer the mind.","speaker":"Krishna","deity":"","tags":["vairagya","karma-sannyasa","dvesha","kanksha","dvandva"],"simpleMeaning":"A true renunciant is not someone who abandons action, but someone who drops hatred and craving. Freedom comes when inner opposites no longer pull the mind.","simpleInsight":"There is relief in not being dragged by what you want or reject.","detailedMeaning":"On the battlefield, Arjuna is torn between two paths: renunciation and action. Krishna now sharpens the teaching. Real renunciation is not escape; it is inner freedom from hatred, craving, and the tug of opposites.","modernRelevance":"You open a message from someone you resent, then feel the old heat rise. Or you keep refreshing for praise that never arrives. The grip is not the event — it is the wanting and resisting.","translationLiteral":"ज्ञेयः (to be understood) / सः (that one) / नित्यसंन्यासी (always-renunciant) / यः (who) / न (not) / द्वेष्टि (hates) / न (not) / काङ्क्षति (desires) / निर्द्वन्द्वः (free from opposites) / हि (indeed) / महाबाहो (O mighty-armed one) / सुखम् (easily) / बन्धात् (from bondage) / प्रमुच्यते (is released)","verseType":"teaching","insight":"It shifts renunciation from outward withdrawal to inward non-reactivity.","quoteVariants":[{"format":"card","text":"Neither hate nor craving binds you. Freedom begins there."},{"format":"widget","text":"No hatred. No craving. Free."},{"format":"notification","text":"What binds me most is wanting and resisting."},{"format":"lockscreen","text":"Release hate, release craving, live free."}],"requisiteConcepts":["Vairagya","Karma"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"vairagya","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

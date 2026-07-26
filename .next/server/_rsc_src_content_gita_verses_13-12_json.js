@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-12_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-12_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-12.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/13-12.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":12,"order":501,"sanskrit":"अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम् । एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोन्यथा ॥","hindiTranslation":"अध्यात्मज्ञानमें नित्यनिरन्तर रहना, तत्त्वज्ञानके अर्थरूप परमात्माको सब जगह देखना  यह पूर्वोक्त साधनसमुदाय तो ज्ञान है और जो इसके विपरीत है वह अज्ञान है  ऐसा कहा गया है ॥","englishTranslation":"Constant awareness of the inner reality, and seeing the supreme reality as the meaning of true understanding—this is called knowledge; whatever is contrary to this is ignorance.","essence":"Knowledge is seeing reality steadily; everything else is confusion.","speaker":"Krishna","deity":"","tags":["adhyatma","tattva-jnana","viveka","avidya","kshetra-kshetrajna"],"simpleMeaning":"Real knowledge means staying aware of the inner reality and seeing the supreme reality everywhere. Anything that misses this is ignorance.","simpleInsight":"Clear seeing feels simpler than grasping at appearances.","detailedMeaning":"On the battlefield, Arjuna is frozen, and Krishna is defining what real understanding looks like. After listing the qualities of a mature seeker, he says knowledge is steady awareness of the inner reality and seeing the supreme reality everywhere; anything else is ignorance.","modernRelevance":"You keep chasing labels, opinions, and surface facts in a tense conversation, but the deeper issue is what is actually real. This verse pulls attention back to that.","translationLiteral":"अध्यात्म-ज्ञान (knowledge of the inner reality) / नित्यत्वम् (constantness) / तत्त्व-ज्ञान-अर्थ-दर्शनम् (seeing the meaning of knowledge of reality) / एतत् (this) / ज्ञानम् (knowledge) / इति (thus) / प्रोक्तम् (is called) / अज्ञानम् (ignorance) / यत् (which) / अतः अन्यथा (other than this)","verseType":"teaching","insight":"It shifts the mind from collecting information to seeing what truly matters beneath appearances.","quoteVariants":[],"requisiteConcepts":["Adhyatma","Tattva","Avidya","Vidya"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"inquiry","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

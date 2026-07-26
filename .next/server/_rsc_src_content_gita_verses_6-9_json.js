@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-9_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-9_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-9.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/6-9.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":9,"order":242,"sanskrit":"सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु । साधुष्वपि च पापेषु समबुद्धिर्विशिष्यते ॥","hindiTranslation":"सुहृद्, मित्र, वैरी, उदासीन, मध्यस्थ, द्वेष्य और सम्बन्धियोंमें तथा साधुआचरण करनेवालोंमें और पापआचरण करनेवालोंमें भी समबुद्धिवाला मनुष्य श्रेष्ठ है ॥","englishTranslation":"The one whose understanding is equal toward friend, enemy, neutral person, mediator, hateful person, relative, the virtuous, and the sinful is श्रेष्ठ.","essence":"Equal vision toward all people marks the highest steadiness.","speaker":"Krishna","deity":"","tags":["samabuddhi","equanimity","friend-enemy","meditation","bias"],"simpleMeaning":"A calm, even-minded person does not get pulled by labels like friend, enemy, good, or bad. That balanced understanding is considered best.","simpleInsight":"You stop being manipulated by preference and aversion, and that gives real inner freedom.","detailedMeaning":"On the battlefield of Kurukshetra, Krishna keeps teaching Arjuna how a steady meditator sees the world. After describing mastery over the mind and senses, he says the highest balance is to look on all people without bias.","modernRelevance":"A group chat splits into camps and everyone wants your reaction. You feel the pull to defend one side and condemn the other. This verse asks for a steadier mind that does not get recruited by emotion.","translationLiteral":"सुहृद् (well-wisher) / मित्र (friend) / अरि (enemy) / उदासीन (indifferent) / मध्यस्थ (mediator) / द्वेष्य (hateful) / बन्धुषु (among relatives) / साधुषु (among the virtuous) / अपि (also) / च (and) / पापेषु (among the sinful) / समबुद्धिः (equal understanding) / विशिष्यते (is श्रेष्ठ)","verseType":"teaching","insight":"It trains you to respond from clear seeing, not from liking and disliking.","quoteVariants":[{"format":"card","text":"See friend and enemy with the same mind. That steadiness is higher."},{"format":"widget","text":"Equal mind, every face."},{"format":"notification","text":"My mind is sharper when it stops choosing sides."},{"format":"lockscreen","text":"Hold everyone in one clear regard."}],"requisiteConcepts":["samabuddhi"],"category":"philosophical","tone":"reflective","targetAudience":["general","couples","professionals"],"nodeId":"equanimity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

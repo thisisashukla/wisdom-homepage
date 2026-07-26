@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_17-2_json";
+exports.ids = ["_rsc_src_content_gita_verses_17-2_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/17-2.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/17-2.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":17,"verse":2,"order":597,"sanskrit":"श्री भगवानुवाचत्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा । सात्त्विकी राजसी चैव तामसी चेति तां श्रृणु ॥","hindiTranslation":"श्रीभगवान् बोले  मनुष्योंकी वह स्वभावसे उत्पन्न हुई श्रद्धा सात्त्विकी तथा राजसी और तामसी  ऐसे तीन तरहकी ही होती है, उसको तुम मेरेसे सुनो ॥","englishTranslation":"The faith of embodied beings is born of their nature. It is of three kinds: sattvic, rajasic, and tamasic. Listen to this.","essence":"Faith takes the shape of the nature beneath it.","speaker":"Krishna","deity":"","tags":["shraddha","sattva","rajas","tamas","gunas"],"simpleMeaning":"Faith is not all the same. It comes from a person\'s nature and appears in three forms: clear, restless, or dull.","simpleInsight":"Your deepest beliefs are not random; they reveal the quality of your inner state.","detailedMeaning":"Arjuna has asked why people worship in different ways. On the battlefield at Kurukshetra, Krishna begins his answer by explaining that faith itself reflects a person\'s nature, and that it can be clear, restless, or dull.","modernRelevance":"You watch someone defend a choice they barely understand, then realise the energy behind it matters as much as the belief itself. The shape of faith reveals the state underneath.","translationLiteral":"त्रिविधा (threefold) / भवति (is) / श्रद्धा (faith) / देहिनां (of embodied beings) / सा (that) / स्वभावजा (born of nature) / सात्त्विकी (sattvic) / राजसी (rajasic) / च (and) / एव (indeed) / तामसी (tamasic) / चेति (thus) / तां (that) / श्रृणु (listen)","verseType":"teaching","insight":"It shifts attention from judging beliefs alone to noticing the inner quality that produces them.","quoteVariants":[],"requisiteConcepts":["Shraddha","Sattva","Rajas","Tamas"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"trust","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

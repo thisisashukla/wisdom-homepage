@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-35_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-35_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-35.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-35.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":35,"order":449,"sanskrit":"सञ्जय उवाचएतच्छ्रुत्वा वचनं केशवस्यकृताञ्जलिर्वेपमानः किरीटी । नमस्कृत्वा भूय एवाह कृष्णंसगद्गदं भीतभीतः प्रणम्य ॥","hindiTranslation":"सञ्जय बोले  भगवान् केशवका यह वचन सुनकर भयसे कम्पित हुए किरीटी अर्जुन हाथ जोड़कर नमस्कार करके और अत्यन्त भयभीत होकर फिर प्रणाम करके गद्गदं वाणीसे भगवान् कृष्णसे बोले ॥","englishTranslation":"Sanjaya said: Hearing Krishna\'s words, Arjuna trembled, folded his hands, bowed again and again, and spoke to Krishna in a choked voice, filled with fear.","essence":"Awe can break speech before it becomes prayer.","speaker":"Sanjaya","deity":"","tags":["vishwarupa","arjuna","sanjaya","awe","prostration"],"simpleMeaning":"Arjuna is overwhelmed by Krishna\'s cosmic revelation. He trembles, bows, and can only speak with fear.","simpleInsight":"A true encounter can leave even the strongest person wordless, humbled, and shaken open.","detailedMeaning":"On the battlefield of Kurukshetra, Krishna has just revealed the cosmic form. Arjuna, the crowned warrior, cannot stand before it. He folds his hands, trembles, bows again, and prepares to answer from fear and awe.","modernRelevance":"You hear a truth that strips away your excuses. Your mouth goes dry, your body tightens, and all you can do is bow to what is real.","translationLiteral":"सञ्जय उवाच (Sanjaya said) / एतत् (this) / श्रुत्वा (having heard) / वचनम् (word/speech) / केशवस्य (of Keshava) / कृताञ्जलिः (with folded hands) / वेपमानः (trembling) / किरीटी (the crowned one, Arjuna) / नमस्कृत्वा (having bowed) / भूयः (again) / एव (indeed) / आह (said) / कृष्णम् (to Krishna) / सगद्गदम् (in a choked voice) / भीतभीतः (very frightened) / प्रणम्य (having prostrated)","verseType":"narrative","insight":"It shows the collapse of ego before overwhelming reality, setting up Arjuna\'s prayer of awe.","quoteVariants":[],"requisiteConcepts":["Vishwarupa"],"category":"narrative","tone":"reflective","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

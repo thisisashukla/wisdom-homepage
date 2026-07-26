@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-34_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-34_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-34.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-34.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":34,"order":657,"sanskrit":"यया तु धर्मकामार्थान् धृत्या धारयतेऽर्जुन । प्रसङ्गेन फलाकाङ्क्षी धृतिः सा पार्थ राजसी ॥","hindiTranslation":"हे पृथानन्दन अर्जुन  फलकी इच्छावाला मनुष्य जिस धृतिके द्वारा धर्म, काम भोग और अर्थको अत्यन्त आसक्तिपूर्वक धारण करता है, वह धृति राजसी है ॥","englishTranslation":"Arjuna, the steadiness that clings intensely to duty, pleasure, and wealth, while craving results, is passionate steadiness.","essence":"Steadiness becomes restless when it is tied to reward.","speaker":"Krishna","deity":"","tags":["rajas","dhriti","attachment","phalakanksa","sattva-rajas"],"simpleMeaning":"A person can appear steady and disciplined, yet still be driven by attachment to duty, pleasure, and wealth, along with desire for results. That kind of firmness is restless, not pure.","simpleInsight":"Not all self-control is clean. You can look composed while still being pulled by wanting.","detailedMeaning":"On the Kurukshetra battlefield, Krishna is sorting Arjuna\'s inner life into clear types. After describing higher steadiness, he now names a lesser kind: the firmness that holds onto duty, pleasure, and wealth because it wants payoff. It is still discipline, but mixed with craving.","modernRelevance":"You keep a strict routine, but every habit is secretly aimed at applause, profit, or control. The outside looks disciplined; the inside is bargaining.","translationLiteral":"यया (by which) / तु (but) / धर्मकामार्थान् (duty, desire, and wealth) / धृत्या (by steadiness) / धारयते (one holds) / अर्जुन (Arjuna) / प्रसङ्गेन (through attachment) / फलाकाङ्क्षी (one desiring results) / धृतिः (steadiness) / सा (that) / पार्थ (Partha) / राजसी (passionate)","verseType":"declaration","insight":"It separates true discipline from ambition disguised as discipline, so you can see what is actually driving your effort.","quoteVariants":[{"format":"card","text":"Clinging steadiness chases duty, pleasure, and wealth for results."},{"format":"widget","text":"Hold, but do not cling."},{"format":"notification","text":"Even steadiness can be driven by craving."},{"format":"lockscreen","text":"Steady hands, unclenched wanting."}],"requisiteConcepts":["dhriti","rajas","dharma","kama","artha"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","entrepreneurs"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-42_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-42_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-42.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-42.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":42,"order":204,"sanskrit":"तस्मादज्ञानसंभूतं हृत्स्थं ज्ञानासिनाऽऽत्मनः । छित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत ॥","hindiTranslation":"इसलिये हे भरतवंशी अर्जुन  हृदयमें स्थित इस अज्ञानसे उत्पन्न अपने संशयका ज्ञानरूप तलवारसे छेदन करके योग समता में स्थित हो जा, और युद्धके लिये खड़ा हो जा ॥","englishTranslation":"Therefore, O Bharata, cut away this doubt in your heart, born of ignorance, with the sword of knowledge. Stand in yoga and rise up for battle.","essence":"Knowledge cuts doubt, and then action becomes possible again.","speaker":"Krishna","deity":"","tags":["doubt","ignorance","clear seeing","kurukshetra","action after insight"],"simpleMeaning":"Knowledge should cut through inner doubt, and then you should stand steady and act. Krishna is telling Arjuna to stop wavering and rise for battle.","simpleInsight":"Doubt loses power when you face it directly instead of obeying it.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is still frozen while the war waits. Krishna ends his teaching with one final command: use clear understanding to cut away the doubt born of ignorance, then stand up and fight.","modernRelevance":"You have the message typed out, but your finger hovers over send because you fear the fallout. The mind wants another delay; clarity asks for one clean decision.","translationLiteral":"तस्मात् (therefore) / अज्ञानसंभूतम् (born of ignorance) / हृत्स्थम् (situated in the heart) / ज्ञानासिना (with the sword of knowledge) / आत्मनः (of the self) / छित्त्वा (having cut) / एनम् (this) / संशयम् (doubt) / योगम् (in yoga) / आतिष्ठ (stand in) / उत्तिष्ठ (rise up) / भारत (O Bharata)","verseType":"teaching","insight":"It shifts the mind from hesitation to decisive action after understanding is clear.","quoteVariants":[{"format":"card","text":"Cut doubt with clear seeing. Stand in yoga. Rise and act."},{"format":"widget","text":"Cut doubt. Stand. Rise."},{"format":"notification","text":"Your doubt is the blade’s target, not your life."},{"format":"lockscreen","text":"Cut doubt. Stand in yoga. Rise."}],"requisiteConcepts":["Avidya","Viveka","Yoga"],"category":"philosophical","tone":"inspiring","targetAudience":["students","professionals","general"],"nodeId":"inquiry","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

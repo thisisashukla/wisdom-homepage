@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-50_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-50_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-50.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-50.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":50,"order":464,"sanskrit":"सञ्जय उवाचइत्यर्जुनं वासुदेवस्तथोक्त्वास्वकं रूपं दर्शयामास भूयः । आश्वासयामास च भीतमेनंभूत्वा पुनः सौम्यवपुर्महात्मा ॥","hindiTranslation":"सञ्जय बोले  वासुदेवभगवान् ने अर्जुनसे ऐसा कहकर फिर उसी प्रकारसे अपना रूप देवरूप दिखाया और महात्मा श्रीकृष्णने पुनः सौम्यवपु द्विभुजरूप होकर इस भयभीत अर्जुनको आश्वासन दिया ॥","englishTranslation":"Sanjaya said: After speaking thus to Arjuna, Vasudeva revealed his own form again. The great one then reassured the frightened Arjuna, taking once more a gentle form.","essence":"A vision can shake you; compassion brings you back.","speaker":"Sanjaya","deity":"","tags":["vishwarupa","sanjaya","gentle-form","reassurance","arjuna-fear"],"simpleMeaning":"After speaking to Arjuna, Krishna showed his gentler form again and calmed Arjuna’s fear.","simpleInsight":"Fear eases when the overwhelming vision gives way to something human and familiar.","detailedMeaning":"On Kurukshetra, Arjuna has just seen the terrifying cosmic form and trembles. Sanjaya reports that Krishna, seeing his fear, returns to a gentle form and reassures him. The moment is about mercy after awe.","modernRelevance":"You finally say the hard truth, and the other person goes quiet. Then you soften your voice, steady your face, and help them breathe again.","translationLiteral":"सञ्जय उवाच (Sanjaya said) / इति (thus) / अर्जुनम् (to Arjuna) / वासुदेवः (Vasudeva) / तथा उक्त्वा (having spoken thus) / स्वकम् (his own) / रूपम् (form) / दर्शयामास (showed) / भूयः (again) / आश्वासयामास (reassured) / च (and) / भीतम् (the frightened one) / एनम् (him) / भूत्वा (having become) / पुनः (again) / सौम्य-वपुः (gentle-bodied / gentle form) / महात्मा (the great one)","verseType":"narrative","insight":"It shows that revelation must be followed by reassurance when the listener is overwhelmed.","quoteVariants":[],"requisiteConcepts":["Vishwarupa"],"category":"narrative","tone":"grounding","targetAudience":["general","couples","parents"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

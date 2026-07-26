@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-8_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-8_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-8.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/8-8.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":8,"order":318,"sanskrit":"अभ्यासयोगयुक्तेन चेतसा नान्यगामिना । परमं पुरुषं दिव्यं याति पार्थानुचिन्तयन् ॥","hindiTranslation":"हे पृथानन्दन  अभ्यासयोगसे युक्त और अन्यका चिन्तन न करनेवाले चित्तसे परम दिव्य पुरुषका चिन्तन करता हुआ शरीर छोड़नेवाला मनुष्य उसीको प्राप्त हो जाता है ॥","englishTranslation":"One who departs while remembering the divine person with a mind trained by practice and fixed on nothing else reaches that supreme divine being, O Partha.","essence":"What the mind has practiced most will claim you at the end.","speaker":"Krishna","deity":"","tags":["abhyasa","antakala","manas","parama-purusha","smarana"],"simpleMeaning":"A mind trained by steady practice, and not wandering to other things, reaches the supreme divine being when life ends.","simpleInsight":"Steady repetition can shape the mind so deeply that it carries you toward what you love most.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is still frozen between action and fear. Krishna continues the teaching about death and remembrance, saying that a mind trained in practice and fixed on the divine reaches the highest divine person.","modernRelevance":"You keep checking your phone in the hospital waiting room, trying to stay steady before the call comes. What your mind has practiced returning to will meet you in the hardest moment.","translationLiteral":"अभ्यासयोगयुक्तेन (joined with the yoga of practice) / चेतसा (with the mind) / नान्यगामिना (not going elsewhere) / परमं (supreme) / पुरुषं (person) / दिव्यं (divine) / याति (goes, reaches) / पार्थ (O Partha) / अनुचिन्तयन् (contemplating, remembering)","verseType":"teaching","insight":"It shifts attention from last-minute panic to lifelong mental training.","quoteVariants":[{"format":"card","text":"Train the mind on the divine. At death, it carries you home."},{"format":"widget","text":"Practice fixes the mind on the divine."},{"format":"notification","text":"A practiced mind goes where it keeps returning."},{"format":"lockscreen","text":"Return the mind. Reach the highest."}],"requisiteConcepts":["Abhyasa","Smarana","Manas"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"trust","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

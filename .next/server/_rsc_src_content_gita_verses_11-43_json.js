@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-43_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-43_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-43.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-43.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":43,"order":457,"sanskrit":"पितासि लोकस्य चराचरस्यत्वमस्य पूज्यश्च गुरुर्गरीयान् । न त्वत्समोऽस्त्यभ्यधिकः कुतोऽन्योलोकत्रयेऽप्यप्रतिमप्रभाव ॥","hindiTranslation":"आप ही इस चराचर संसारके पिता हैं, आप ही पूजनीय हैं और आप ही गुरुओंके महान् गुरु हैं ।  हे अनन्त प्रभावशाली भगवन्  इस त्रिलोकीमें आपके समान भी दूसरा कोई नहीं है, फिर अधिक तो हो ही कैसे सकता है ॥","englishTranslation":"You are the father of all moving and unmoving beings, the highest object of reverence, and the greatest teacher. In the three worlds, no one equals you, much less surpasses you.","essence":"Recognition of the highest power dissolves all comparison.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna-prayer","reverence","guru","unmatched-power"],"simpleMeaning":"Arjuna recognizes Krishna as the father, teacher, and highest object of reverence for all beings. No one in the three worlds is equal to him.","simpleInsight":"Awe becomes humility when you finally see what stands before you.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has just seen Krishna\'s cosmic form and is overwhelmed. After apologizing for his earlier familiarity, he now names Krishna as the source, teacher, and unmatched power behind all existence.","modernRelevance":"You stand before someone whose wisdom exposes your smallness — a mentor, a parent, a truth you can no longer argue with. The only honest response is reverence.","translationLiteral":"पिता (father) / असि (are) / लोकस्य (of the world) / चराचरस्य (of the moving and unmoving) / त्वम् (you) / अस्य (of this) / पूज्यः (worthy of worship) / च (and) / गुरुः (teacher) / गरीयान् (the greatest) / न (not) / त्वत्समः (equal to you) / अस्ति (there is) / अभ्यधिकः (greater) / कुतः (how) / अन्यः (another) / लोकत्रये (in the three worlds) / अपि (even) / अप्रतिमप्रभाव (of unmatched power)","verseType":"declaration","insight":"It shifts the mind from familiarity and ego to reverence and surrender.","quoteVariants":[],"requisiteConcepts":["Bhakti","Guru"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

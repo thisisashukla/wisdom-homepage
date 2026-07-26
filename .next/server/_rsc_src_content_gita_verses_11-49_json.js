@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-49_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-49_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-49.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-49.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":49,"order":463,"sanskrit":"मा ते व्यथा मा च विमूढभावोदृष्ट्वा रूपं घोरमीदृङ्ममेदम् । व्यपेतभीः प्रीतमनाः पुनस्त्वंतदेव मे रूपमिदं प्रपश्य ॥","hindiTranslation":"यह इस प्रकारका मेरा घोररूप देखकर तेरेको व्यथा नहीं होनी चाहिये और मूढ़भाव भी नहीं होना चाहिये ।  अब निर्भय और प्रसन्न मनवाला होकर तू फिर उसी मेरे इस चतुर्भुज रूपको अच्छी तरह देख ले ॥","englishTranslation":"Do not be distressed or confused by this fierce form of mine. Free from fear and calm-minded, look again upon this very form of mine.","essence":"Fear must drop before the deeper vision can be seen.","speaker":"Krishna","deity":"Krishna","tags":["vishwarupa","abhaya","arjuna","cosmic-form","bhaya"],"simpleMeaning":"Krishna tells Arjuna not to panic after seeing the terrifying form. Fear and confusion should fall away, and Arjuna should look again with a calm, glad mind.","simpleInsight":"Even overwhelming awe can become steady when fear drops away.","detailedMeaning":"On the battlefield, Arjuna has just seen Krishna\'s terrible cosmic form and is shaken. Krishna immediately soothes him, telling him not to lose his mind or fear. This verse turns the vision from terror back into relationship.","modernRelevance":"You read a message that changes everything, and your chest tightens before you can think. The first task is not analysis — it is to steady the mind enough to see clearly.","translationLiteral":"मा (do not) / ते (your) / व्यथा (distress) / मा (do not) / च (and) / विमूढभावः (confused state) / दृष्ट्वा (having seen) / रूपम् (form) / घोरम् (fierce) / ईदृक् (such) / मम (my) / इदम् (this) / व्यपेतभीः (fear gone) / प्रीतमनाः (with pleased mind) / पुनः (again) / त्वम् (you) / तदेव (that very) / मे (my) / रूपम् (form) / इदम् (this) / प्रपश्य (look upon)","verseType":"teaching","insight":"It shifts the response from panic to composed seeing, so the mind can receive what is being shown.","quoteVariants":[],"requisiteConcepts":["Vishwarupa"],"category":"devotional","tone":"calming","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

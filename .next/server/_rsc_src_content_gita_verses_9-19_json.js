@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-19_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-19_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-19.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-19.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":19,"order":357,"sanskrit":"तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च । अमृतं चैव मृत्युश्च सदसच्चाहमर्जुन ॥","hindiTranslation":"हे अर्जुन  संसारके हितके लिये मैं ही सूर्यरूपसे तपता हूँ, जलको ग्रहण करता हूँ और फिर उस जलको वर्षारूपसे बरसा देता हूँ ।  और तो क्या कहूँ अमृत और मृत्यु तथा सत् और असत् भी मैं ही हूँ ॥","englishTranslation":"I heat the world as the sun, I hold back the rain and send it forth. I am immortality and death, being and non-being, Arjuna.","essence":"Opposites do not stand outside the divine; they flow from it.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","divine omnipresence","rain","sun","amrita"],"simpleMeaning":"Krishna says he is the force behind sunlight, rain, immortality, death, existence, and non-existence. Everything that sustains and changes the world moves through him.","simpleInsight":"The world feels less random when you see one presence behind both nourishment and loss.","detailedMeaning":"On the battlefield, Arjuna still stands frozen while Krishna keeps widening the vision. After naming himself as the source of many sacred powers, Krishna now says even heat, rain, immortality, death, being, and non-being all move through him.","modernRelevance":"You watch a storm flood the street, then clear the next morning, and realize the same sky held both. This verse trains you to see order inside forces that look opposite.","translationLiteral":"तपामि (I heat) / अहम् (I) / अहम् (I) / वर्षम् (rain) / निगृह्णामि (I hold back) / उत्सृजामि (I release) / च (and) / अमृतम् (immortality) / च (and) / एव (indeed) / मृत्युः (death) / च (and) / सत् (being) / असत् (non-being) / च (and) / अहम् (I am) / अर्जुन (Arjuna)","verseType":"declaration","insight":"It shifts the mind from dividing life into good and bad forces to seeing one reality working through both.","quoteVariants":[{"format":"card","text":"I warm the world, hold back rain, and send it forth. I am life and death."},{"format":"widget","text":"I heat, I withhold, I release."},{"format":"notification","text":"Even rain and death move through one presence."},{"format":"lockscreen","text":"One presence moves rain and death."}],"requisiteConcepts":["Brahman","Bhakti"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

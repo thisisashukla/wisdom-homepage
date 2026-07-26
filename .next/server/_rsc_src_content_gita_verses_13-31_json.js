@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-31_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-31_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-31.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/13-31.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":31,"order":520,"sanskrit":"यदा भूतपृथग्भावमेकस्थमनुपश्यति । तत एव च विस्तारं ब्रह्म सम्पद्यते तदा ॥","hindiTranslation":"जिस कालमें साधक प्राणियोंके अलगअलग भावोंको एक प्रकृतिमें ही स्थित देखता है और उस प्रकृतिसे ही उन सबका विस्तार देखता है, उस कालमें वह ब्रह्मको प्राप्त हो जाता है ॥","englishTranslation":"When one sees all beings as rooted in one nature and all expansion arising from that source, one attains the supreme reality.","essence":"Many beings are one reality seen through different forms.","speaker":"Krishna","deity":"","tags":["kshetra-kshetrajna","brahman","unity-in-diversity","anupashyati","field-and-knower"],"simpleMeaning":"When a person sees the many forms of living beings as arising from one underlying reality, that person reaches that reality.","simpleInsight":"Separation starts to soften. What looked divided begins to feel like one living whole.","detailedMeaning":"On Kurukshetra, Krishna is still answering Arjuna’s crisis by showing how a wise person sees. After learning to notice the body, action, and the true self correctly, the seeker now sees many beings as expressions of one source and moves toward Brahman.","modernRelevance":"You watch a family argument and stop seeing only sides. Beneath the anger, fear, pride, and hurt, you begin to notice one shared human source moving through different forms.","translationLiteral":"यदा (when) / भूतपृथग्भावम् (the separate states of beings) / एकस्थम् (standing in one place) / अनुपश्यति (one sees clearly) / ततः (then) / एव (indeed) / च (and) / विस्तारम् (expansion) / ब्रह्म (the supreme reality) / सम्पद्यते (attains) / तदा (at that time)","verseType":"teaching","insight":"It shifts perception from isolated forms to the single reality behind them.","quoteVariants":[{"format":"card","text":"See one source in all beings. The supreme reality opens."},{"format":"widget","text":"One source. Many forms."},{"format":"notification","text":"Everything separate is still rooted in one source."},{"format":"lockscreen","text":"See one source in all forms."}],"requisiteConcepts":["Brahman","Prakriti"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"inquiry","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

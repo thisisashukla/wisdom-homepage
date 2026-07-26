@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-21_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-21_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-21.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-21.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":21,"order":183,"sanskrit":"निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः । शारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥","hindiTranslation":"जिसका शरीर और अन्तःकरण अच्छी तरहसे वशमें किया हुआ है, जिसने सब प्रकारके संग्रहका परित्याग कर दिया है, ऐसा आशारहित कर्मयोगी केवल शरीरसम्बन्धी कर्म करता हुआ भी पापको प्राप्त नहीं होता ॥","englishTranslation":"One who has no hope, who has controlled the body and mind, and who has given up all possessions, does only bodily action and incurs no fault.","essence":"Freedom from clinging keeps action untouched.","speaker":"Krishna","deity":"","tags":["nishkama","aparigraha","karma-yoga","self-mastery","action-without-clinging"],"simpleMeaning":"A person who has no craving, controls the body and mind, and lets go of possessions can act without being stained by wrongdoing.","simpleInsight":"There is relief in acting cleanly without carrying greed, clinging, or inner noise.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen by grief and duty. Krishna keeps refining karma yoga: act without craving, without possession, without inner entanglement. Even bodily action stays clean when the mind is mastered.","modernRelevance":"You sign the resignation letter, delete the backup plan, and still keep your hands steady. The fear is there, but it no longer owns the action.","translationLiteral":"निराशीर् (without hope) / यतचित्तात्मा (one whose mind and inner being are controlled) / त्यक्तसर्वपरिग्रहः (one who has abandoned all possessions) / शारीरम् (bodily) / केवलम् (only) / कर्म (action) / कुर्वन् (doing) / न (not) / आप्नोति (attains) / किल्बिषम् (fault)","verseType":"teaching","insight":"It shifts action from possession and anxiety to clean, necessary doing.","quoteVariants":[],"requisiteConcepts":["Nishkama","Aparigraha"],"category":"philosophical","tone":"grounding","targetAudience":["general","professionals","entrepreneurs"],"nodeId":"vairagya","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

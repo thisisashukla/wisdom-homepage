@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-41_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-41_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-41.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-41.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":41,"order":203,"sanskrit":"योगसंन्यस्तकर्माणं ज्ञानसंछिन्नसंशयम् । आत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय ॥","hindiTranslation":"हे धनञ्जय  योग समता के द्वारा जिसका सम्पूर्ण कर्मोंसे सम्बन्धविच्छेद हो गया है और ज्ञानके द्वारा जिसके सम्पूर्ण संशयोंका नाश हो गया है, ऐसे स्वरूपपरायण मनुष्यको कर्म नहीं बाँधते ॥","englishTranslation":"O Dhananjaya, actions do not bind the one who has renounced action through yoga, whose doubts have been cut away by knowledge, and who abides in the true self.","essence":"Freedom begins when action no longer leaves a hook.","speaker":"Krishna","deity":"","tags":["jnana-yoga","karma-bandha","yogasannyasta","sanshaya","atma-vanta"],"simpleMeaning":"A person rooted in yoga, free of doubt, and established in the true self is not trapped by actions. Action still happens, but it no longer leaves a binding mark.","simpleInsight":"You can stay active without becoming trapped by what you do.","detailedMeaning":"On Kurukshetra, Arjuna is still frozen between armies. Krishna has been dismantling his confusion verse by verse. Here he gives the turning point: when knowledge cuts doubt and yoga loosens attachment, action no longer binds.","modernRelevance":"You send the message, sign the papers, or walk away from the room knowing the choice is clean. The body acts, but the mind no longer clings to the residue.","translationLiteral":"योगसंन्यस्तकर्माणम् (one whose actions are renounced through yoga) / ज्ञानसंछिन्नसंशयम् (one whose doubts are cut away by knowledge) / आत्मवन्तम् (the one established in the true self) / न (not) / कर्माणि (actions) / निबध्नन्ति (bind) / धनञ्जय (O Dhananjaya)","verseType":"declaration","insight":"It shifts attention from the action itself to the state of inner freedom in which action happens.","quoteVariants":[{"format":"card","text":"Actions do not bind the one who knows the true self."},{"format":"widget","text":"Know the true self. Actions cannot bind."},{"format":"notification","text":"The work passes through; it does not bind you."},{"format":"lockscreen","text":"Know the true self. Remain unbound."}],"requisiteConcepts":["Yoga","Avidya","Vidya","Atman","Karma"],"category":"philosophical","tone":"expansive","targetAudience":["students","professionals","entrepreneurs"],"nodeId":"vairagya","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-21_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-21_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-21.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/13-21.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":21,"order":510,"sanskrit":"कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते । पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते ॥","hindiTranslation":"प्रकृति और पुरुष  दोनोंको ही तुम अनादि समझो और विकारों तथा गुणोंको भी प्रकृतिसे ही उत्पन्न समझो ।  कार्य और करणके द्वारा होनेवाली क्रियाओंको उत्पन्न करनेमें प्रकृति हेतु कही जाती है और सुखदुःखोंके भोक्तापनमें पुरुष हेतु कहा जाता है ॥","englishTranslation":"Nature is said to be the cause of the body, the senses, and action. The inner being is said to be the cause of experiencing pleasure and pain.","essence":"Action belongs to nature; experience belongs to the one who knows.","speaker":"Krishna","deity":"","tags":["prakriti","purusha","kshetra-kshetrajna","doership","bhoktṛtva"],"simpleMeaning":"The body, senses, and actions belong to nature. Pleasure and pain are experienced by the inner being. Krishna separates the changing process from the one who experiences it.","simpleInsight":"You can stop confusing what happens with who you are.","detailedMeaning":"On the battlefield, Arjuna is frozen between duty and grief. Krishna explains that nature drives bodily action, while the inner being only experiences pleasure and pain. This distinction prepares Arjuna to act without mistaking himself for the moving field.","modernRelevance":"You watch your body tense before a hard conversation, then feel the sting afterward. This verse reminds you that the surge belongs to nature; the witness is not the storm.","translationLiteral":"कार्यकारणकर्तृत्वे (in the doership of body, senses, and action) / हेतुः (cause) / प्रकृतिः (nature) / उच्यते (is said) । / पुरुषः (the inner being) / सुखदुःखानाम् (of pleasure and pain) / भोक्तृत्वे (in the state of experiencer) / हेतुः (cause) / उच्यते (is said)","verseType":"teaching","insight":"It shifts the mind from self-blame to clear witnessing of action and experience.","quoteVariants":[],"requisiteConcepts":["Prakriti","Purusha","Kshetra","Kshetrajna"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"inquiry","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-62_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-62_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-62.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-62.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":62,"order":109,"sanskrit":"ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥","hindiTranslation":"विषयोंका चिन्तन करनेवाले मनुष्यकी उन विषयोंमें आसक्ति पैदा हो जाती है ।  आसक्तिसे कामना पैदा होती है ।  कामनासे क्रोध पैदा होता है ।  क्रोध होनेपर सम्मोह मूढ़भाव हो जाता है ।  सम्मोहसे स्मृति भ्रष्ट हो जाती है ।  स्मृति भ्रष्ट होनेपर बुद्धिका नाश हो जाता है ।  बुद्धिका नाश होनेपर मनुष्यका पतन हो जाता है ॥","englishTranslation":"Thinking about sense objects creates attachment to them. Attachment gives rise to desire; desire gives rise to anger.","essence":"What you dwell on becomes what you cling to, then what burns you.","speaker":"Krishna","deity":"","tags":["indriya","kama","krodha","sangha","manas"],"simpleMeaning":"Fixating on pleasures or objects creates attachment. Attachment turns into wanting, and wanting turns into anger when blocked.","simpleInsight":"There is relief in catching the chain early, before a small craving hardens into a reaction you regret.","detailedMeaning":"On the battlefield, Arjuna is frozen and Krishna is tracing the inner mechanics of collapse. He shows how the mind falls step by step: thought, attachment, desire, anger, confusion, ruin. This verse explains why self-mastery matters.","modernRelevance":"You keep checking a message thread, then the silence starts to sting, then irritation takes over. The verse names that slide from fixation to fury before it owns you.","translationLiteral":"ध्यायतः (while thinking of) / विषयान् (sense objects) / पुंसः (for a person) / सङ्गः (attachment) / तेषु (to them) / उपजायते (arises) / सङ्गात् (from attachment) / संजायते (is born) / कामः (desire) / कामात् (from desire) / क्रोधः (anger) / अभिजायते (arises strongly)","verseType":"teaching","insight":"It teaches you to interrupt the chain at the first attachment, not after the anger has already taken root.","quoteVariants":[{"format":"card","text":"Attachment begins in thought. Desire follows. Anger comes next."},{"format":"widget","text":"Thought breeds attachment; attachment breeds anger."},{"format":"notification","text":"One repeated thought can turn into anger."},{"format":"lockscreen","text":"Watch thought before it becomes rage."}],"requisiteConcepts":["kama","krodha","vairagya"],"category":"philosophical","tone":"reflective","targetAudience":["general","couples","students"],"nodeId":"vairagya","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

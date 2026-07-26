@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-42_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-42_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-42.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-42.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":42,"order":456,"sanskrit":"यच्चावहासार्थमसत्कृतोऽसिविहारशय्यासनभोजनेषु । एकोऽथवाप्यच्युत तत्समक्षंतत्क्षामये त्वामहमप्रमेयम् ॥","hindiTranslation":"आपकी महिमा और स्वरूपको न जानते हुए मेरे सखा हैं ऐसा मानकर मैंने प्रमादसे अथवा प्रेमसे भी हठपूर्वक बिना सोचेसमझे हे कृष्ण  हे यादव  हे सखे  इस प्रकार जो कुछ कहा है और हे अच्युत  हँसीदिल्लगीमें, चलतेफिरते, सोतेजागते, उठतेबैठते, खातेपीते समयमें अकेले अथवा उन सखाओं, कुटुम्बियों आदिके सामने मेरे द्वारा आपका जो कुछ तिरस्कार किया गया है, वह सब अप्रमेस्वरूप आपसे मैं क्षमा करवाता हूँ ॥","englishTranslation":"Whatever disrespect I showed you in jest, while walking, resting, sitting, eating, alone or before others, I ask your immeasurable forgiveness.","essence":"Familiarity can hide greatness until awe breaks through.","speaker":"Arjuna","deity":"Krishna","tags":["arjuna-prayer","forgiveness","vishwarupa","reverence","humility"],"simpleMeaning":"Arjuna asks Krishna to forgive every careless or disrespectful thing he said or did, in private and in public.","simpleInsight":"A humble heart can repair what pride once damaged.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has just seen Krishna\'s cosmic form and feels overwhelmed by his own carelessness. He now confesses the many times he treated Krishna casually or disrespectfully, and begs forgiveness before the divine presence.","modernRelevance":"You realize, too late, how casually you spoke to someone who was carrying more than you knew. The apology is no longer about saving face; it is about seeing clearly.","translationLiteral":"यत् (whatever) च (and) अवहासार्थम् (for the sake of jest) असत्कृतः (shown disrespect) असि (you were) विहार-शय्या-आसन-भोजनेषु (in walking, resting, sitting, and eating) । एकः (alone) अथवा (or) अपि (also) अच्युत (O infallible one) तत्-समक्षम् (in that presence) तत् (that) क्षामये (I ask forgiveness) त्वाम् (you) अहम् (I) अप्रमेयम् (immeasurable one) ॥","verseType":"devotional","insight":"It shifts the mind from familiarity to reverence, and from embarrassment to honest repair.","quoteVariants":[],"requisiteConcepts":["Bhakti"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"devotion-n","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-73_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-73_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-73.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-73.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":73,"order":696,"sanskrit":"अर्जुन उवाचनष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत । स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव ॥","hindiTranslation":"अर्जुन बोले  हे अच्युत  आपकी कृपासे मेरा मोह नष्ट हो गया है और स्मृति प्राप्त हो गयी है ।  मैं सन्देहरहित होकर स्थित हूँ ।  अब मैं आपकी आज्ञाका पालन करूँगा ॥","englishTranslation":"Arjuna said: By your grace, O Achyuta, my delusion is destroyed and memory restored. I stand free of doubt and will do what you say.","essence":"Grace ends confusion and turns insight into obedience.","speaker":"Arjuna","deity":"","tags":["arjuna","achyuta","krishna-grace","surrender","doubt-cleared"],"simpleMeaning":"Arjuna says Krishna\'s grace has removed his confusion. His doubt is gone, and he is ready to follow Krishna\'s instruction.","simpleInsight":"Relief comes when inner conflict ends and the next step becomes clear.","detailedMeaning":"On Kurukshetra, Arjuna has been shattered by grief and hesitation. After Krishna\'s teaching, he speaks with a changed mind: confusion has fallen away, clarity has returned, and he is ready to act in alignment with Krishna.","modernRelevance":"You finally make the call after days of avoidance. The knot in your chest loosens, not because the choice became easy, but because you know what you must do.","translationLiteral":"अर्जुन उवाच (Arjuna said) / नष्टः (destroyed) / मोहः (delusion) / स्मृतिः (memory) / लब्धा (obtained) / त्वत्-प्रसादात् (by your grace) / मया (by me) / अच्युत (O Achyuta) / स्थितः अस्मि (I am standing) / गत-सन्देहः (without doubt) / करिष्ये (I will do) / वचनम् (word) / तव (your)","verseType":"declaration","insight":"It shifts you from paralysis and second-guessing into clear, committed action.","quoteVariants":[{"format":"card","text":"Your grace cleared my doubt. I will do what you say."},{"format":"widget","text":"Grace cleared doubt. I obey."},{"format":"notification","text":"The fog is gone. Now I can follow."},{"format":"lockscreen","text":"Doubt is gone. I will follow."}],"requisiteConcepts":["shraddha","bhakti"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

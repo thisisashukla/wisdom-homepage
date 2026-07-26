@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-34_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-34_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-34.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-34.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":34,"order":81,"sanskrit":"अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम् । संभावितस्य चाकीर्तिर्मरणादतिरिच्यते ॥","hindiTranslation":"और सब प्राणी भी तेरी सदा रहनेवाली अपकीर्तिका कथन अर्थात निंदा करेंगे ।  वह अपकीर्ति सम्मानित मनुष्यके लिये मृत्युसे भी बढ़कर दुःखदायी होती है ॥","englishTranslation":"And all beings will speak of your everlasting disgrace. For an honored person, disgrace is worse than death.","essence":"A honored life can be wounded more by shame than by death.","speaker":"Krishna","deity":"","tags":["akirti","honor","shame","kshatriya","kurukshetra"],"simpleMeaning":"People will keep speaking of your disgrace, and for someone who has been honored, that shame feels worse than death.","simpleInsight":"Honor can feel more fragile than life itself, and avoiding your duty can wound it deeply.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has lowered his bow and is wavering. Krishna warns him that if he turns away now, the world will remember not his greatness but his disgrace. For a warrior known for honor, that loss cuts deeper than death.","modernRelevance":"You walk out of a room knowing the hard truth but choosing silence. The image that follows you is not comfort — it is the version of yourself that backed away.","translationLiteral":"अकीर्तिम् (disgrace) / च (and) / अपि (also) / भूतानि (beings) / कथयिष्यन्ति (will speak) / ते (of you) / अव्ययाम् (everlasting) / संभावितस्य (of one who has been honored) / च (and) / अकीर्तिः (disgrace) / मरणात् (than death) / अतिरिच्यते (is greater)","verseType":"teaching","insight":"It shifts the mind from fearing pain to fearing the loss of integrity.","quoteVariants":[],"requisiteConcepts":["dharma"],"category":"motivational","tone":"grounding","targetAudience":["general","professionals","students"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

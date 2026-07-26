@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-21_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-21_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-21.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-21.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":21,"order":254,"sanskrit":"सुखमात्यन्तिकं यत्तद्बुद्धिग्राह्यमतीन्द्रियम् । वेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वतः ॥","hindiTranslation":"जो सुख आत्यन्तिक, अतीन्द्रिय और बुद्धिग्राह्य है, उस सुखका जिस अवस्थामें अनुभव करता है और जिस सुखमें स्थित हुआ यह ध्यानयोगी फिर कभी तत्त्वसे विचलित नहीं होता ॥","englishTranslation":"One knows the boundless joy beyond the senses and grasped by the discerning mind; established in it, one never truly falls away.","essence":"True joy is deeper than sensation and keeps you from wavering.","speaker":"Krishna","deity":"","tags":["dhyana","samadhi","buddhi","indriya","inner-joy"],"simpleMeaning":"Meditation reveals a deep joy that the senses cannot reach. Once someone is grounded in it, that person no longer wavers in truth.","simpleInsight":"There is relief in discovering a steadiness that does not depend on outer conditions.","detailedMeaning":"On the battlefield, Arjuna has stopped fighting and Krishna is teaching him how the mind can become unshaken. After describing inner stillness, Krishna names the reward: a joy deeper than the senses, known only by the discerning mind, from which the meditator does not fall away.","modernRelevance":"You sit alone after a hard decision, phone face down, heart still racing. Then something quieter arrives — not excitement, not escape, but a steadiness that does not need applause to remain.","translationLiteral":"सुखम् (joy) / अत्यन्तिकम् (boundless, ultimate) / यत् (which) / तत् (that) / बुद्धिग्राह्यम् (grasped by the discerning mind) / अतीन्द्रियम् (beyond the senses) / वेत्ति (knows) / यत्र (in which) / न (not) / च (and) / एव (indeed) / अयम् (this one) / स्थितः (established) / चलति (falls away, wavers) / तत्त्वतः (in truth)","verseType":"teaching","insight":"It shifts attention from chasing stimulation to recognising a joy that stabilises the mind.","quoteVariants":[{"format":"card","text":"A joy beyond the senses holds you steady. Once known, it does not leave."},{"format":"widget","text":"Beyond the senses, joy holds firm."},{"format":"notification","text":"Some joy stays. It doesn\'t shake you loose."},{"format":"lockscreen","text":"Know the joy that never wavers."}],"requisiteConcepts":["Buddhi","Indriya","Dhyana","Samadhi"],"category":"philosophical","tone":"expansive","targetAudience":["students","professionals","general"],"nodeId":"stillness","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-10_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-10_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-10.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-10.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":10,"order":348,"sanskrit":"मयाऽध्यक्षेण प्रकृतिः सूयते सचराचरम् । हेतुनाऽनेन कौन्तेय जगद्विपरिवर्तते ॥","hindiTranslation":"प्रकृति मेरी अध्यक्षतामें सम्पूर्ण चराचर जगत् को रचती है ।  हे कुन्तीनन्दन  इसी हेतुसे जगत् का विविध प्रकारसे परिवर्तन होता है ॥","englishTranslation":"Nature, under my supervision, brings forth all moving and unmoving beings. Because of this, the world keeps changing, O son of Kunti.","essence":"Change is not chaotic; it unfolds within a higher order.","speaker":"Krishna","deity":"Krishna","tags":["prakriti","omnipresence","divine oversight","cosmic order","chapter 9"],"simpleMeaning":"All changing life unfolds under Krishna\'s supervision. The world keeps transforming because nature works through his oversight.","simpleInsight":"You can stop feeling abandoned by change. What shifts is not random; it still rests within a larger order.","detailedMeaning":"On the Kurukshetra battlefield, Krishna keeps answering Arjuna\'s deepest confusion. After explaining creation and his detachment from it, he now says that nature itself brings forth the whole moving and unmoving world under his supervision, and that this is why everything keeps changing.","modernRelevance":"A plan collapses, a relationship changes, or a job disappears overnight, and it feels like chaos. This verse says the turning of events is not outside the larger order you cannot yet see.","translationLiteral":"मया (by me) / अध्यक्षेण (as overseer) / प्रकृतिः (nature) / सूयते (gives birth, brings forth) / सचराचरम् (the moving and the unmoving) / हेतुना (because, by reason) / अनेन (of this) / कौन्तेय (O son of Kunti) / जगत् (the world) / विपरिवर्तते (keeps turning, keeps changing)","verseType":"declaration","insight":"It shifts the mind from seeing change as random to seeing it as governed by a deeper intelligence.","quoteVariants":[{"format":"card","text":"Nature moves under my gaze. The world changes because of that."},{"format":"widget","text":"Nature works under my rule."},{"format":"notification","text":"The world changes because nothing acts outside my oversight."},{"format":"lockscreen","text":"Nature moves under my oversight."}],"requisiteConcepts":["Prakriti"],"category":"devotional","tone":"expansive","targetAudience":["general","professionals","entrepreneurs"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

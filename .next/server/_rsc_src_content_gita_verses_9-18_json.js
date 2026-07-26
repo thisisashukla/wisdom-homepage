@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-18_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-18_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-18.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-18.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":18,"order":356,"sanskrit":"गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत् । प्रभवः प्रलयः स्थानं निधानं बीजमव्ययम् ॥","hindiTranslation":"क्रतु मैं हूँ, यज्ञ मैं हूँ, स्वधा मैं हूँ, औषध मैं हूँ, मन्त्र मैं हूँ, घृत मैं हूँ, अग्नि मैं हूँ और हवनरूप क्रिया भी मैं हूँ ।  जाननेयोग्य पवित्र, ओंकार, ऋग्वेद, सामवेद और यजुर्वेद भी मैं ही हूँ ।  इस सम्पूर्ण जगत्का पिता, धाता, माता, पितामह, गति, भर्ता, प्रभु, साक्षी, निवास, आश्रय, सुहृद्, उत्पत्ति, प्रलय, स्थान, निधान तथा अविनाशी बीज भी मैं ही हूँ ॥","englishTranslation":"I am the goal, the supporter, the lord, the witness, the refuge, the friend, the source, the dissolution, the resting place, the treasure, and the imperishable seed.","essence":"Everything rests in one imperishable source.","speaker":"Krishna","deity":"Krishna","tags":["krishna-vibhuti","omnipresence","imperishable-seed","refuge","witness"],"simpleMeaning":"Krishna says he is everything that supports, witnesses, shelters, begins, ends, and sustains existence.","simpleInsight":"You are not alone inside the world; the deepest reality is already holding, seeing, and guiding everything.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen before battle while Krishna expands the meaning of divine presence. After naming himself in sacred forms and cosmic roles, Krishna now says he is the goal, shelter, witness, source, and imperishable seed of all that exists.","modernRelevance":"You are sitting in a parked car after a hard call, afraid of what happens next. The verse reminds you that the same reality that receives the ending also holds the beginning.","translationLiteral":"गतिः (goal) / भर्ता (supporter) / प्रभुः (lord) / साक्षी (witness) / निवासः (dwelling) / शरणम् (refuge) / सुहृत् (well-wisher) / प्रभवः (source) / प्रलयः (dissolution) / स्थानम् (resting place) / निधानम् (treasure) / बीजम् (seed) / अव्ययम् (imperishable)","verseType":"declaration","insight":"It shifts the mind from seeing the world as separate pieces to seeing one sustaining presence in all roles.","quoteVariants":[{"format":"card","text":"The divine is your refuge, witness, and source."},{"format":"widget","text":"Refuge, witness, source."},{"format":"notification","text":"What holds you also watches over you."},{"format":"lockscreen","text":"Take refuge in the imperishable source."}],"requisiteConcepts":["Bhakti","Brahman"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-3_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-3_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-3.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/18-3.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":3,"order":626,"sanskrit":"त्याज्यं दोषवदित्येके कर्म प्राहुर्मनीषिणः । यज्ञदानतपःकर्म न त्याज्यमिति चापरे ॥","hindiTranslation":"श्रीभगवान् बोले  कई विद्वान् काम्यकर्मोंके त्यागको संन्यास कहते हैं और कई विद्वान् सम्पूर्ण कर्मोंके फलके त्यागको त्याग कहते हैं ।  कई विद्वान् कहते हैं कि कर्मोंको दोषकी तरह छोड़ देना चाहिये और कई विद्वान् कहते हैं कि यज्ञ, दान और तपरूप कर्मोंका त्याग नहीं करना चाहिये ॥","englishTranslation":"Some wise people say all action should be abandoned as flawed. Others say sacrifice, giving, and disciplined effort should not be abandoned.","essence":"Renunciation is not simple refusal; some actions must remain.","speaker":"Krishna","deity":"","tags":["tyaga","sannyasa","yajna","dana","tapas"],"simpleMeaning":"Some teachers say action itself should be dropped because it seems flawed. Others say sacrifice, charity, and disciplined effort should never be dropped.","simpleInsight":"Not all renunciation is the same. The real question is what should be released and what must continue.","detailedMeaning":"On the battlefield, Arjuna has asked the final question: what is renunciation, and what is true letting go? Krishna now shows that even wise people disagree. Some reject action itself; others preserve sacrifice, giving, and discipline.","modernRelevance":"You’re about to quit a commitment because it feels messy and imperfect. Part of you wants to drop everything; part of you knows some responsibilities still matter.","translationLiteral":"त्याज्यम् (to be abandoned) / दोषवत् (as flawed) / इति (thus) / एके (some) / कर्म (action) / प्राहुः (say) / मनीषिणः (the wise) / यज्ञदानतपःकर्म (sacrifice-giving-austerity-actions) / न (not) / त्याज्यम् (to be abandoned) / इति (thus) / च (and) / अपरे (others)","verseType":"teaching","insight":"It separates blind rejection from wise release, so you can keep what purifies action and drop what binds it.","quoteVariants":[],"requisiteConcepts":["tyaga","sannyasa","yajna","dana","tapas"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"vairagya","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-34_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-34_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-34.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-34.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":34,"order":448,"sanskrit":"द्रोणं च भीष्मं च जयद्रथं चकर्णं तथाऽन्यानपि योधवीरान् । मया हतांस्त्वं जहि मा व्यथिष्ठायुध्यस्व जेतासि रणे सपत्नान् ॥","hindiTranslation":"द्रोण, भीष्म, जयद्रथ और कर्ण तथा अन्य सभी मेरे द्वारा मारे हुए शूरवीरोंको तुम मारो ।  तुम व्यथा मत करो और युद्ध करो ।  युद्धमें तुम निःसन्देह वैरियोंको जीतोगे ॥","englishTranslation":"Drona, Bhishma, Jayadratha, Karna, and the other great warriors have already been slain by Me. Do not falter; fight, and you will surely conquer your enemies in battle.","essence":"The battle is already decided; your task is only to act.","speaker":"Krishna","deity":"Krishna","tags":["kurukshetra","vishwarupa","arjuna","fearlessness","battle-command"],"simpleMeaning":"Krishna tells Arjuna that the great warriors are already defeated in the larger order of events. Arjuna should stop trembling, keep fighting, and trust that victory is already assured.","simpleInsight":"Fear loosens when you stop carrying the whole outcome alone.","detailedMeaning":"On Kurukshetra, Arjuna still stands shaken before the cosmic form. Krishna names Drona, Bhishma, Jayadratha, Karna, and the rest as already fallen in His vision, then pushes Arjuna back into action. The verse seals the command: fight without fear.","modernRelevance":"You are about to send the message, end the relationship, or walk into the hearing that changes everything. The body shakes, but the decision is already made.","translationLiteral":"द्रोणं (Drona) / च (and) / भीष्मं (Bhishma) / च (and) / जयद्रथं (Jayadratha) / च (and) / कर्णं (Karna) / तथा (and) / अन्यान् (others) / अपि (also) / योधवीरान् (great warriors) / मया (by Me) / हतान् (slain) / त्वं (you) / जहि (slay) / मा (do not) / व्यथिष्ठाः (be distressed) / आयुध्यस्व (fight) / जेतासि (you will conquer) / रणे (in battle) / सपत्नान् (enemies)","verseType":"declaration","insight":"It shifts action from personal doubt to trust in a larger order already at work.","quoteVariants":[],"requisiteConcepts":["Vishwarupa","Krishna","Arjuna"],"category":"motivational","tone":"inspiring","targetAudience":["general","professionals"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-31_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-31_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-31.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-31.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":31,"order":78,"sanskrit":"स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि । धर्म्याद्धि युद्धाछ्रेयोऽन्यत्क्षत्रियस्य न विद्यते ॥","hindiTranslation":"अपने स्वधर्म क्षात्रधर्म को देखकर भी तुम्हें विकम्पित अर्थात् कर्तव्यकर्मसे विचलित नहीं होना चाहिये क्योंकि धर्ममय युद्धसे बढ़कर क्षत्रियके लिये दूसरा कोई कल्याणकारक कर्म नहीं है ॥","englishTranslation":"Considering your own duty, you should not waver. For a warrior, no action is more beneficial than a righteous battle.","essence":"Right action can feel hard and still be the best choice.","speaker":"Krishna","deity":"","tags":["swadharma","kshatriya-dharma","righteous-battle","wavering","kurukshetra"],"simpleMeaning":"Arjuna is told not to hesitate once he sees his own duty clearly. For a warrior, fighting for what is right is the best course.","simpleInsight":"Clarity can end inner conflict. Once duty is seen, wavering becomes unnecessary.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has dropped into doubt while the armies wait. Krishna answers the paralysis directly: for a warrior, righteous battle is not a failure of morality but the clearest expression of it.","modernRelevance":"You are standing at the door, phone in hand, about to send the message you have delayed for weeks. The discomfort is real, but the right action does not disappear because it feels hard.","translationLiteral":"स्वधर्मम् (one\'s own duty) / अपि (even) / च (and) / अवेक्ष्य (considering) / न (not) / विकम्पितुम् (to waver) / अर्हसि (you should) / धर्म्यात् (from righteous) / हि (indeed) / युद्धात् (from battle) / श्रेयः (more beneficial) / अन्यत् (other) / क्षत्रियस्य (for a warrior) / न (not) / विद्यते (there is)","verseType":"teaching","insight":"It shifts you from hesitation to committed action when your role and responsibility are already clear.","quoteVariants":[{"format":"card","text":"Know your duty. A righteous battle outranks every other choice for a warrior."},{"format":"widget","text":"Duty first. Do not waver."},{"format":"notification","text":"Your duty is clear. Hesitation only clouds it."},{"format":"lockscreen","text":"Stand firm in rightful duty."}],"requisiteConcepts":["dharma","swadharma"],"category":"motivational","tone":"inspiring","targetAudience":["students","professionals","entrepreneurs","general"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

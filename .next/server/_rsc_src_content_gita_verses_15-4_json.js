@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-4_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-4_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-4.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/15-4.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":4,"order":555,"sanskrit":"ततः पदं तत्परिमार्गितव्य    यस्मिन्गता न निवर्तन्ति भूयः । तमेव चाद्यं पुरुषं प्रपद्ये    यतः प्रवृत्तिः प्रसृता पुराणी ॥","hindiTranslation":"उसके बाद उस परमपदपरमात्मा की खोज करनी चाहिये जिसको प्राप्त होनेपर मनुष्य फिर लौटकर संसारमें नहीं आते और जिससे अनादिकालसे चली आनेवाली यह सृष्टि विस्तारको प्राप्त हुई है, उस आदिपुरुष परमात्माके ही मैं शरण हूँ ॥","englishTranslation":"Therefore one should seek that supreme state, reaching which one does not return again. I take refuge in that original Person from whom this ancient creation has spread forth.","essence":"The final refuge is a state where return itself stops.","speaker":"Krishna","deity":"","tags":["purushottama","paramam padam","anavrtti","prapatti","samsara"],"simpleMeaning":"Beyond the changing world lies a supreme state where return stops. Krishna says that state should be sought, and he himself takes refuge in the original Person from whom creation unfolds.","simpleInsight":"There is relief in knowing the deepest search is not endless. Some places in life are meant to end the cycle, not improve it.","detailedMeaning":"Arjuna stands frozen between two armies while Krishna leads him past the tangled world-tree of change. After showing how to cut free from the lower world, Krishna points to the final destination: the supreme state beyond return, rooted in the original Person.","modernRelevance":"You keep reopening the same message thread, the same argument, the same regret. At some point you realize the answer is not another round of fixing, but a deeper place to stand.","translationLiteral":"ततः (therefore) / पदम् (state) / तत् (that) / परिमार्गितव्यम् (should be sought) / यस्मिन् (in which) / गताः (gone) / न (not) / निवर्तन्ति (return) / भूयः (again) / तम् (that) / एव (indeed) / च (and) / आद्यम् (original) / पुरुषम् (Person) / प्रपद्ये (I take refuge) / यतः (from whom) / प्रवृत्तिः (emanation) / प्रसृता (spread forth) / पुराणी (ancient)","verseType":"declaration","insight":"It shifts the mind from managing the cycle to seeking what ends the cycle entirely.","quoteVariants":[{"format":"card","text":"Seek the state with no return. Take refuge in the original Person."},{"format":"widget","text":"Go where return ends."},{"format":"notification","text":"What you seek is a place you never leave."},{"format":"lockscreen","text":"Seek the source. Return ends there."}],"requisiteConcepts":["Samsara","Moksha","Purusha"],"category":"philosophical","tone":"expansive","targetAudience":["general","students"],"nodeId":"moksha","nodePath":"convergence","depth":"deep"}');
+
+/***/ })
+
+};
+;

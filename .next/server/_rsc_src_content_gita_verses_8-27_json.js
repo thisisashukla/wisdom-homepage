@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-27_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-27_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-27.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/8-27.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":27,"order":337,"sanskrit":"नैते सृती पार्थ जानन्योगी मुह्यति कश्चन । तस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन ॥","hindiTranslation":"हे पृथानन्दन  इन दोनों मार्गोंको जाननेवाला कोई भी योगी मोहित नहीं होता ।  अतः हे अर्जुन  तू सब समयमें योगयुक्त हो जा ॥","englishTranslation":"O Arjuna, the yogi who knows these two paths is never deluded. Therefore, remain steadfast in yoga at all times.","essence":"Understanding the two paths keeps the mind unshaken.","speaker":"Krishna","deity":"","tags":["akshara-brahma","uttarayana","dakshinayana","moksha-marga","yoga-yukta"],"simpleMeaning":"A person who understands these two routes after death is not confused. Krishna tells Arjuna to stay connected to yoga at all times.","simpleInsight":"Knowing what is real steadies you when choices feel final.","detailedMeaning":"On the battlefield, Krishna has just explained the bright and dark routes after death. Arjuna is frozen between action and renunciation, so Krishna closes the lesson: understanding removes confusion, and steady yoga keeps the mind clear.","modernRelevance":"You are standing in a hospital corridor after hearing two very different medical opinions. Panic wants to decide for you. Clear understanding, held calmly, keeps you from being dragged by fear.","translationLiteral":"नैते (these not) / सृती (two paths) / पार्थ (O Partha) / जानन् (knowing) / योगी (the yogi) / मुह्यति (is deluded) / कश्चन (anyone) / तस्मात् (therefore) / सर्वेषु (in all) / कालेषु (times) / योगयुक्तः (joined in yoga) / भव (be) / अर्जुन (O Arjuna)","verseType":"teaching","insight":"It shifts you from reactive confusion to steady awareness, even when the stakes feel absolute.","quoteVariants":[{"format":"card","text":"Know the two paths. Delusion cannot touch the one rooted in yoga."},{"format":"widget","text":"Know both paths. Stay rooted."},{"format":"notification","text":"Clarity ends confusion; stay joined to yoga."},{"format":"lockscreen","text":"Know the paths. Remain in yoga."}],"requisiteConcepts":["Yoga","Moksha"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

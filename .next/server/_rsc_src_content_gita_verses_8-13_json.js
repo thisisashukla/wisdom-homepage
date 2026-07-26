@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-13_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-13_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-13.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/8-13.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":13,"order":323,"sanskrit":"ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन् । यः प्रयाति त्यजन्देहं स याति परमां गतिम् ॥","hindiTranslation":"इन्द्रियोंके सम्पूर्ण द्वारोंको रोककर मनका हृदयमें निरोध करके और अपने प्राणोंको मस्तकमें स्थापित करके योगधारणामें सम्यक् प्रकारसे स्थित हुआ जो साधक ऊँ इस एक अक्षर ब्रह्मका उच्चारण और मेरा स्मरण करता हुआ शरीरको छोड़कर जाता है, वह परमगतिको प्राप्त होता है ॥","englishTranslation":"Uttering Om, the one-syllable Brahman, and remembering Me, one who departs while leaving the body attains the supreme state.","essence":"Final remembrance can carry consciousness beyond the body.","speaker":"Krishna","deity":"Krishna","tags":["om","akshara-brahma","antakale","smarana","parama-gati"],"simpleMeaning":"A person who leaves the body while remembering Om and Krishna reaches the highest destination.","simpleInsight":"The final moment is not empty; it can carry the mind straight toward liberation.","detailedMeaning":"Krishna is still answering Arjuna on the battlefield, where death feels near and every choice is stripped bare. After explaining the path of disciplined departure, he says that one who leaves the body while uttering Om and remembering him reaches the supreme state.","modernRelevance":"At a bedside, a family member grips your hand and the room goes quiet. In that stripped-down moment, what the mind holds most deeply matters more than anything spoken before.","translationLiteral":"ॐ (Om) / इति (thus) / एकाक्षरम् (one-syllable) / ब्रह्म (Brahman) / व्याहरन् (uttering) / माम् (Me) / अनुस्मरन् (remembering repeatedly) / यः (who) / प्रयाति (departs) / त्यजन् (leaving) / देहम् (the body) / सः (he) / याति (goes) / परमाम् (supreme) / गतिम् (state, destination)","verseType":"declaration","insight":"It shifts attention from panic at death to the quality of awareness carried into the final release.","quoteVariants":[{"format":"card","text":"Remember the divine as you leave the body. That remembrance opens the highest state."},{"format":"widget","text":"Om on the lips, Me in the mind."},{"format":"notification","text":"The last thought shapes the next arrival."},{"format":"lockscreen","text":"Remember the divine; reach the highest state."}],"requisiteConcepts":["Brahman","Moksha","Purusha"],"category":"philosophical","tone":"expansive","targetAudience":["general","students"],"nodeId":"moksha","nodePath":"convergence","depth":"deep"}');
+
+/***/ })
+
+};
+;

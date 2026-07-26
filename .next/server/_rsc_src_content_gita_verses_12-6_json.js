@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_12-6_json";
+exports.ids = ["_rsc_src_content_gita_verses_12-6_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/12-6.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/12-6.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":12,"verse":6,"order":475,"sanskrit":"ये तु सर्वाणि कर्माणि मयि संन्यस्य मत्पराः । अनन्येनैव योगेन मां ध्यायन्त उपासते ॥","hindiTranslation":"परन्तु जो कर्मोंको मेरे अर्पण करके और मेरे परायण होकर अनन्ययोगसे मेरा ही ध्यान करते हुए मेरी उपासना करते हैं ॥","englishTranslation":"But those who surrender all actions to Me, take Me as their highest aim, and worship Me with single-pointed devotion, meditating on Me alone.","essence":"Total devotion turns every action into worship.","speaker":"Krishna","deity":"","tags":["bhakti","ananya-bhakti","karma-sannyasa","upasana","single-pointed-devotion"],"simpleMeaning":"People who give all their actions to Krishna, make him their highest aim, and worship him with single-minded devotion are described here.","simpleInsight":"There is relief in not carrying your actions alone; devotion turns effort into offering.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen while Krishna explains the deepest form of devotion. After describing subtler worship, Krishna now names the devotee who places every action at his feet and keeps a single, undivided focus on him.","modernRelevance":"You finish a hard conversation, then stop replaying it for approval. The action was yours to give; the burden of ownership can be laid down.","translationLiteral":"ये (those who) / तु (but) / सर्वाणि (all) / कर्माणि (actions) / मयि (in Me) / संन्यस्य (having renounced, offered) / मत्पराः (those devoted to Me as the highest) / अनन्येन (with no other) / एव (indeed) / योगेन (with yoga) / माम् (Me) / ध्यायन्तः (meditating) / उपासते (worship)","verseType":"teaching","insight":"It shifts action from self-ownership to offering, so effort becomes worship instead of control.","quoteVariants":[{"format":"card","text":"Offer every action to Me. Keep Me as your only aim."},{"format":"widget","text":"Give Me your actions. Seek nothing else."},{"format":"notification","text":"The work is yours; the offering is Mine."},{"format":"lockscreen","text":"Act for Me. Meditate on Me alone."}],"requisiteConcepts":["Bhakti","Karma","Yoga"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"devotion-n","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

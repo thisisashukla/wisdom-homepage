@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-22_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-22_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-22.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-22.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":22,"order":436,"sanskrit":"रुद्रादित्या वसवो ये च साध्याविश्वेऽश्िवनौ मरुतश्चोष्मपाश्च । गन्धर्वयक्षासुरसिद्धसङ्घावीक्षन्ते त्वां विस्मिताश्चैव सर्वे ॥","hindiTranslation":"जो ग्यारह रुद्र, बारह आदित्य, आठ वसु, बारह साध्यगण, दस विश्वेदेव और दो अश्विनीकुमार, उनचास मरुद्गण, सात पितृगण तथा गन्धर्व, यक्ष, असुर और सिद्धोंके समुदाय हैं, वे सभी चकित होकर आपको देख रहे हैं ॥","englishTranslation":"The eleven Rudras, the twelve Adityas, the eight Vasus, the twelve Sadhyas, the Visvedevas, the two Ashvins, the forty-nine Maruts, the ancestors, and the hosts of Gandharvas, Yakshas, Asuras, and Siddhas all gaze at you in wonder.","essence":"Even the highest beings stand astonished before Krishna\'s vastness.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna","cosmic-form","celestial-beings","awe"],"simpleMeaning":"Arjuna says that every class of celestial and powerful beings is astonished and looking at Krishna\'s cosmic form.","simpleInsight":"Awe can dissolve rank, status, and fear at once.","detailedMeaning":"On Kurukshetra, Arjuna is still staring at Krishna\'s cosmic form. He sees not only warriors and kings, but every class of radiant beings looking on in wonder. The vision is so vast that even the highest beings are reduced to stunned witnesses.","modernRelevance":"You walk into a room and realize the whole hierarchy has gone quiet. The moment is bigger than anyone\'s status, and everyone can feel it.","translationLiteral":"रुद्रादित्या (Rudras and Adityas) / वसवः (Vasus) / ये (who) / च (and) / साध्याः (Sadhyas) / विश्वे (the Visvedevas) / अश्विनौ (the two Ashvins) / मरुतः (Maruts) / च (and) / उष्मपाः (ancestors) / च (and) / गन्धर्व-यक्ष-असुर-सिद्ध-सङ्घाः (hosts of Gandharvas, Yakshas, Asuras, and Siddhas) / वीक्षन्ते (look upon) / त्वाम् (you) / विस्मिताः (astonished) / च एव (and indeed) / सर्वे (all)","verseType":"declaration","insight":"It shifts attention from human rank to the overwhelming scale of the divine presence.","quoteVariants":[],"requisiteConcepts":["Vishwarupa"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

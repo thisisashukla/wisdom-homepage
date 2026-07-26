@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-17_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-17_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-17.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-17.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":17,"order":17,"sanskrit":"काश्यश्च परमेष्वासः शिखण्डी च महारथः । धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः ॥","hindiTranslation":"हे राजन् श्रेष्ठ धनुषवाले काशिराज और महारथी शिखण्डी तथा धृष्टद्युम्न एवं राजा विराट और अजेय सात्यकि, राजा द्रुपद और द्रौपदी के पाँचों पुत्र तथा लम्बीलम्बी भुजाओंवाले सुभद्रापुत्र अभिमन्यु  इन सभी ने सब ओर से अलगअलग अपनेअपने शंख बजाये ॥","englishTranslation":"The great archer from Kashi, Shikhandi the great warrior, Dhrishtadyumna, Virata, and invincible Satyaki.","essence":"Names and conches turn hesitation into commitment.","speaker":"Sanjaya","deity":"","tags":["kurukshetra","conch-blowing","pandava-allies","battlefield-roll-call","sanjaya"],"simpleMeaning":"This is a battlefield roll call. More warriors on the Pandava side blow their conches before the war begins.","simpleInsight":"The scene builds tension: the war is no longer abstract; every name makes the confrontation real.","detailedMeaning":"On Kurukshetra, the Pandava allies answer the Kaurava conches with their own. Sanjaya lists more warriors as each one blows a conch, sharpening the moment before battle into a final, audible commitment.","modernRelevance":"A room goes quiet before the announcement. One by one, the people who will stand with you are named, and the moment stops being theoretical.","translationLiteral":"काशीः (the king of Kashi) / च (and) / परमेष्वासः (supreme archer) / शिखण्डी (Shikhandi) / च (and) / महारथः (great warrior) / धृष्टद्युम्नः (Dhrishtadyumna) / विराटः (Virata) / च (and) / सात्यकिः (Satyaki) / च (and) / अपराजितः (invincible)","verseType":"narrative","insight":"It shifts attention from strategy to resolve: the side has chosen itself, and action is about to begin.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"grounding","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

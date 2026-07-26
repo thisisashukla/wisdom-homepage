@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-5.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/13-5.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":5,"order":494,"sanskrit":"ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक् । ब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्िचतैः ॥","hindiTranslation":"यह क्षेत्रक्षेत्रज्ञका तत्त्व ऋषियोंके द्वारा बहुत विस्तारसे कहा गया है तथा वेदोंकी ऋचाओंद्वारा बहुत प्रकारसे कहा गया है और युक्तियुक्त एवं निश्चित किये हुए ब्रह्मसूत्रके पदोंद्वारा भी कहा गया है ॥","englishTranslation":"This truth about the field and the knower has been sung in many ways by sages, in varied Vedic hymns, and in the reasoned, conclusive verses of the Brahma Sutras.","essence":"Ancient sources converge on one disciplined way of seeing.","speaker":"Krishna","deity":"","tags":["kshetra-kshetrajna","brahmasutra","rishis","vedas","inquiry"],"simpleMeaning":"Sages, Vedic hymns, and the Brahma Sutras all point to the same understanding of the field and the knower.","simpleInsight":"You are not being asked to believe blindly; the teaching is grounded in many clear sources.","detailedMeaning":"On the battlefield of Kurukshetra, Krishna is unpacking the difference between the field and the knower for Arjuna. Before listing the parts of the field, he says this understanding has already been taught by sages, hymns, and the Brahma Sutras.","modernRelevance":"You hear the same hard truth from a mentor, a book, and your own quiet reflection. The repetition matters: some realities deserve to be confirmed from every angle before you act.","translationLiteral":"ऋषिभिः (by sages) / बहुधा (in many ways) / गीतम् (sung) / छन्दोभिः (by hymns or meters) / विविधैः (in varied forms) / पृथक् (separately) / ब्रह्मसूत्रपदैः (by Brahma Sutra verses) / च (and) / एव (indeed) / हेतुमद्भिः (by reasoned, cause-based) / विनिश्चितैः (by conclusive, well-determined [statements])","verseType":"teaching","insight":"It shifts the mind from treating wisdom as opinion to seeing it as a tested, cross-verified understanding.","quoteVariants":[],"requisiteConcepts":["Kshetra","Kshetrajna","Brahma Sutra","Vedas"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"inquiry","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

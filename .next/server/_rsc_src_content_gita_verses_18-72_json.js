@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-72_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-72_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-72.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-72.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":72,"order":695,"sanskrit":"कच्चिदेतच्छ्रुतं पार्थ त्वयैकाग्रेण चेतसा । कच्चिदज्ञानसंमोहः प्रनष्टस्ते धनञ्जय ॥","hindiTranslation":"हे पृथानन्दन  क्या तुमने एकाग्रचित्तसे इसको सुना और हे धनञ्जय  क्या तुम्हारा अज्ञानसे उत्पन्न मोह नष्ट हुआ ॥","englishTranslation":"O Partha, have you heard this with one-pointed mind? O Dhananjaya, has the delusion born of ignorance been destroyed in you?","essence":"True listening should end confusion, not just collect words.","speaker":"Krishna","deity":"","tags":["one-pointed-mind","ignorance","delusion","kurukshetra","final-check"],"simpleMeaning":"Krishna asks whether Arjuna has listened carefully and whether his confusion has been cleared away.","simpleInsight":"Being heard fully can be the first sign that confusion is loosening.","detailedMeaning":"On the battlefield at Kurukshetra, Krishna has finished his long teaching and turns to Arjuna, checking whether the words have truly landed. The war still waits, but the real test is whether Arjuna\'s ignorance and confusion have been broken.","modernRelevance":"After a hard conversation, you pause and ask yourself: did I really listen, or just hear the words? That moment decides whether confusion is still running the show.","translationLiteral":"कच्चिद् (whether) / एतत् (this) / श्रुतम् (heard) / पार्थ (O Partha) / त्वया (by you) / एकाग्रेण (with one-pointed) / चेतसा (mind) / कच्चिद् (whether) / अज्ञान-संमोहः (delusion born of ignorance) / प्रनष्टः (destroyed) / ते (your) / धनञ्जय (O Dhananjaya)","verseType":"inquiry","insight":"It shifts attention from passive hearing to whether understanding has actually taken root.","quoteVariants":[],"requisiteConcepts":["avidya","ekagra"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"moksha","nodePath":"convergence","depth":"surface"}');
+
+/***/ })
+
+};
+;

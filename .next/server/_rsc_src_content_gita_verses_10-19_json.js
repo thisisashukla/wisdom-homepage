@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-19_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-19_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-19.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/10-19.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":19,"order":391,"sanskrit":"श्री भगवानुवाचहन्त ते कथयिष्यामि दिव्या ह्यात्मविभूतयः । प्राधान्यतः कुरुश्रेष्ठ नास्त्यन्तो विस्तरस्य मे ॥","hindiTranslation":"श्रीभगवान् बोले  हाँ, ठीक है ।  मैं अपनी दिव्य विभूतियोंको तेरे लिये प्रधानतासे संक्षेपसे कहूँगा क्योंकि हे कुरुश्रेष्ठ  मेरी विभूतियोंके विस्तारका अन्त नहीं है ॥","englishTranslation":"Krishna said: I will tell you briefly of my divine manifestations, chief of them, Arjuna, for there is no end to their विस्तार.","essence":"The divine can be named briefly, never exhausted.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","janardana","limitless-manifestations","divine-presence","krishna-teaching"],"simpleMeaning":"Krishna agrees to describe his chief divine manifestations, but only in brief, because his full extent has no limit.","simpleInsight":"There is comfort in knowing the divine presence cannot be exhausted or fully measured.","detailedMeaning":"On Kurukshetra, Arjuna keeps asking Krishna to explain how to remember him in daily life. Krishna now answers by promising a selective list of his chief manifestations, while making clear that his full greatness cannot be contained in any list.","modernRelevance":"You ask someone to explain what keeps them steady through chaos, and they give you a few examples — then admit the real answer is bigger than any summary.","translationLiteral":"श्रीभगवानुवाच (the Blessed Lord said) / हन्त (indeed) / ते (to you) / कथयिष्यामि (I will tell) / दिव्याः (divine) / हि (indeed) / आत्मविभूतयः (my own manifestations) / प्राधान्यतः (chiefly / in the main) / कुरुश्रेष्ठ (O best of the Kurus) / नास्ति (there is not) / अन्तः (end) / विस्तरस्य (of the विस्तार / spread) / मे (of me)","verseType":"teaching","insight":"It shifts attention from trying to catalogue the divine to recognising its limitless presence in what stands out most.","quoteVariants":[],"requisiteConcepts":["Bhakti","Vibhuti"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

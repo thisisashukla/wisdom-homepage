@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-30_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-30_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-30.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-30.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":30,"order":653,"sanskrit":"प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये । बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी ॥","hindiTranslation":"हे पृथानन्दन  जो बुद्धि प्रवृत्ति और निवृत्तिको, कर्तव्य और अकर्तव्यको, भय और अभयको तथा बन्धन और मोक्षको जानती है, वह बुद्धि सात्त्विकी है ॥","englishTranslation":"O Partha, the intellect that knows what leads forward and what withdraws, what should be done and not done, what is fear and fearlessness, what binds and what frees, is sattvic.","essence":"True intelligence recognizes the difference between bondage and freedom.","speaker":"Krishna","deity":"","tags":["sattvic-buddhi","viveka","bandha-moksha","kartavya","fearlessness"],"simpleMeaning":"A clear mind can tell the difference between action and withdrawal, right and wrong action, fear and fearlessness, bondage and freedom.","simpleInsight":"You do not need more noise; you need better seeing.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna stands unable to act. Krishna now classifies the powers of understanding, showing that the highest intellect can distinguish duty from non-duty, fear from fearlessness, and bondage from freedom.","modernRelevance":"You are staring at a message you know will change everything. The real question is not what feels safer, but whether your mind can see what binds and what frees.","translationLiteral":"प्रवृत्तिम् (forward action) / च (and) / निवृत्तिम् (withdrawal) / च (and) / कार्याकार्ये (what should be done and what should not be done) / भयाभये (fear and fearlessness) / बन्धम् (bondage) / मोक्षम् (freedom) / च (and) / या (which) / वेत्ति (knows) / बुद्धिः (intellect) / सा (that) / पार्थ (O Partha) / सात्त्विकी (sattvic)","verseType":"teaching","insight":"It trains discernment: not every option is equal, and clear seeing separates duty from confusion.","quoteVariants":[{"format":"card","text":"Clear intellect knows what binds and what frees."},{"format":"widget","text":"Know what binds. Know what frees."},{"format":"notification","text":"The clearest mind sees both bondage and freedom."},{"format":"lockscreen","text":"See clearly. Know what frees."}],"requisiteConcepts":["buddhi","sattva","viveka","bandha","moksha"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-5.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/1-5.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":5,"order":5,"sanskrit":"धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् । पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ॥","hindiTranslation":"यहाँ पाण्डवों की सेना में बड़ेबड़े शूरवीर हैं, जिनके बहुत बड़ेबड़े धनुष हैं तथा जो युद्ध में भीम और अर्जुनके समान हैं ।  उनमें युयुधान सात्यकि, राजा विराट और महारथी द्रुपद भी हैं ।  धृष्टकेतु और चेकितान तथा पराक्रमी काशिराज भी हैं ।  पुरुजित् और कुन्तिभोजये दोनों भाई तथा मनुष्योंमें श्रेष्ठ शैब्य भी हैं ।  पराक्रमी युधामन्यु और पराक्रमी उत्तमौजा भी हैं ।  सुभद्रापुत्र अभिमन्यु और द्रौपदी के पाँचों पुत्र भी हैं ।  ये सबकेसब महारथी हैं ॥","englishTranslation":"Dhृष्टकेतु, Chekitana, and the valiant king of Kashi; Purujit, Kuntibhoja, and Shaibya, the best among men.","essence":"The battlefield is already full of power and named allies.","speaker":"Sanjaya","deity":"","tags":["kurukshetra","pandava-army","warriors","sanjaya","battlefield"],"simpleMeaning":"Sanjaya continues listing the mighty warriors in the Pandava army.","simpleInsight":"The battlefield is crowded with strength on both sides, and the conflict is real.","detailedMeaning":"On Kurukshetra, Sanjaya keeps naming the warriors standing with the Pandavas. This is not teaching yet; it is the buildup that shows Arjuna facing a vast, disciplined force before Krishna begins to answer his collapse.","modernRelevance":"You walk into a room knowing the decision ahead will affect everyone there. The names, the faces, the stakes keep piling up before you can even speak.","translationLiteral":"धृष्टकेतुः (Dhṛṣṭaketu) / चेकितानः (Chekitana) / काशिराजः (king of Kashi) / वीर्यवान् (valiant) / पुरुजित् (Purujit) / कुन्तिभोजः (Kuntibhoja) / शैब्यः (Shaibya) / नरपुङ्गवः (best among men)","verseType":"narrative","insight":"It frames the scene as overwhelming reality, not abstract debate.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"grounding","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

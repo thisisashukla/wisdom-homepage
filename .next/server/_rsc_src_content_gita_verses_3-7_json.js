@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-7_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-7_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-7.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/3-7.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":7,"order":126,"sanskrit":"यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन । कर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते ॥","hindiTranslation":"हे अर्जुन जो मनुष्य मनसे इन्द्रियोंपर नियन्त्रण करके आसक्तिरहित होकर निष्काम भावसे समस्त इन्द्रियोंके द्वारा कर्मयोगका आचरण करता है, वही श्रेष्ठ है ॥","englishTranslation":"Arjuna, the one who restrains the senses with the mind and begins karma yoga without attachment is श्रेष्ठ.","essence":"Self-mastery makes action noble, not the outer task alone.","speaker":"Krishna","deity":"","tags":["indriya-nigraha","karma-yoga","asakti","manas","senses-control"],"simpleMeaning":"The best way to act is to keep the senses under the mind\'s control and do your work without attachment.","simpleInsight":"You do not need to be dragged around by impulse to be effective.","detailedMeaning":"On Kurukshetra, Arjuna is frozen between two armies. Krishna has already shown that action cannot be avoided and hypocrisy is useless. Now he gives the better method: control the senses, act through the body, and stay free of craving.","modernRelevance":"You are about to send the message, make the apology, or walk out of the room. The pull to react is strong, but the cleaner move is to steady the mind first and act without grabbing for the result.","translationLiteral":"यः (who) / तु (indeed) / इन्द्रियाणि (the senses) / मनसा (with the mind) / नियम्य (having restrained) / आरभते (begins) / अर्जुन (Arjuna) / कर्मेन्द्रियैः (with the organs of action) / कर्मयोगम् (karma yoga) / असक्तः (unattached) / सः (he) / विशिष्यते (is श्रेष्ठ, excels)","verseType":"teaching","insight":"It shifts action from impulse-led reaction to deliberate, disciplined doing.","quoteVariants":[{"format":"card","text":"Restrain the senses. Do your work without clinging."},{"format":"widget","text":"Control senses. Act unattached."},{"format":"notification","text":"The senses can obey; the work still gets done."},{"format":"lockscreen","text":"Act cleanly. Stay unattached."}],"requisiteConcepts":["manas","indriya","karma-yoga","asakti"],"category":"philosophical","tone":"grounding","targetAudience":["general","students","professionals"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

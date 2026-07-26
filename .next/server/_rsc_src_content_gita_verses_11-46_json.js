@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-46_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-46_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-46.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-46.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":46,"order":460,"sanskrit":"किरीटिनं गदिनं चक्रहस्तमिच्छामि त्वां द्रष्टुमहं तथैव । तेनैव रूपेण चतुर्भुजेनसहस्रबाहो भव विश्वमूर्ते ॥","hindiTranslation":"मैं आपको वैसे ही किरीटधारी, गदाधारी और हाथमें चक्र लिये हुए देखना चाहता हूँ ।  इसलिये हे सहस्रबाहो  हे विश्वमूर्ते  आप उसी चतुर्भुजरूपसे हो जाइये ॥","englishTranslation":"I want to see you again in your crowned form, with mace and discus in your hands. O Thousand-Armed One, O Universal Form, return to that four-armed shape.","essence":"The infinite can overwhelm; devotion asks for a form the heart can bear.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna","chaturbhuja","krishna","bhakti"],"simpleMeaning":"Arjuna asks Krishna to return to the familiar four-armed form with crown, mace, and discus. The overwhelming cosmic form has moved him, but he longs for a shape he can meet with devotion.","simpleInsight":"Awe can be too much to hold. The heart asks for a form it can love without fear.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna has just seen Krishna\'s vast cosmic form and feels shaken. He now asks Krishna to return to the four-armed form he knows, because the infinite vision is overwhelming and he can meet that gentler form with steadier devotion.","modernRelevance":"You finally see the full truth of a situation, and it leaves you trembling. After the shock, you want something familiar enough to hold without breaking.","translationLiteral":"किरीटिनम् (crowned) / गदिनम् (with mace) / चक्रहस्तम् (with discus in hand) / इच्छामि (I want) / त्वाम् (you) / द्रष्टुम् (to see) / अहम् (I) / तथा एव (just so, exactly) / तेन एव (by that very) / रूपेण (form) / चतुर्भुजेन (with four arms) / सहस्रबाहो (O thousand-armed one) / भव (be) / विश्वमूर्ते (O universal form)","verseType":"devotional","insight":"It teaches you that reverence can include a need for limits, and that love may ask for a form the mind can bear.","quoteVariants":[],"requisiteConcepts":["Vishwarupa","Bhakti"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

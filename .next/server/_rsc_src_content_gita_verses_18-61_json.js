@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-61_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-61_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-61.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-61.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":61,"order":684,"sanskrit":"ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति । भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया ॥","hindiTranslation":"हे अर्जुन  ईश्वर सम्पूर्ण प्राणियोंके हृदयमें रहता है और अपनी मायासे शरीररूपी यन्त्रपर आरूढ़ हुए सम्पूर्ण प्राणियोंको उनके स्वभावके अनुसार भ्रमण कराता रहता है ॥","englishTranslation":"O Arjuna, the Lord abides in the heart of all beings and, by His maya, causes all beings mounted on a body-machine to revolve according to their nature.","essence":"The deeper mover is not your ego, and surrender begins there.","speaker":"Krishna","deity":"","tags":["maya","ishvara","hṛद्देश","surrender","body-machine"],"simpleMeaning":"The divine lives in every being’s heart and moves all beings through maya, as if they were riding a body-machine and turning according to their nature.","simpleInsight":"You are not as in control as you think, and that can be deeply humbling.","detailedMeaning":"Krishna is still answering Arjuna’s refusal to fight. After saying Arjuna’s nature will drive him, he now explains the deeper force behind all movement: the divine within every being, and the veil of maya that makes bodies seem self-directed. This prepares Arjuna to surrender.","modernRelevance":"You keep replaying the same argument in your head, certain you are choosing freely, yet your fears and habits keep steering you back. This verse points to the deeper forces already moving the machine.","translationLiteral":"ईश्वरः (the Lord) / सर्वभूतानाम् (of all beings) / हृद्देशे (in the heart-place) / अर्जुन (Arjuna) / तिष्ठति (dwells) / भ्रामयन् (causing to revolve) / सर्वभूतानि (all beings) / यन्त्रारूढानि (mounted on a machine) / मायया (by maya)","verseType":"teaching","insight":"It shifts responsibility from egoic control to humble surrender to the deeper order already at work.","quoteVariants":[],"requisiteConcepts":["maya","ishvara"],"category":"devotional","tone":"reflective","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-64_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-64_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-64.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-64.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":64,"order":111,"sanskrit":"रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन् । आत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति ॥","hindiTranslation":"वशीभूत अन्तःकरणवाला कर्मयोगी साधक रागद्वेषसे रहित अपने वशमें की हुई इन्द्रियोंके द्वारा विषयोंका सेवन करता हुआ अन्तःकरणकी निर्मलता को प्राप्त हो जाता है ।  निर्मलता प्राप्त होनेपर साधकके सम्पूर्ण दुःखोंका नाश हो जाता है और ऐसे शुद्ध चित्तवाले साधककी बुद्धि निःसन्देह बहुत जल्दी परमात्मामें स्थिर हो जाती है ॥","englishTranslation":"The disciplined person, moving among objects with senses under control and free from attraction and aversion, attains serenity.","essence":"Freedom comes from meeting experience without attraction or aversion.","speaker":"Krishna","deity":"","tags":["raga","dvesha","indriya-nigraha","prasada","sankhya-yoga"],"simpleMeaning":"A person with controlled senses can engage with the world without craving or rejecting it, and that steadiness brings inner clarity.","simpleInsight":"You do not have to flee life to stay clear inside.","detailedMeaning":"On the battlefield, Arjuna is frozen by grief and conflict. Krishna explains that the one who keeps the senses under inner control, without clinging or rejecting, can move through experience and still become serene.","modernRelevance":"You open a message from someone you both miss and resent. The old reaction wants to pull you in or push you away. This verse points to a third way: stay steady, respond cleanly.","translationLiteral":"राग-द्वेष-वियुक्तैः (free from attraction and aversion) / तु (but) / विषयान् (objects) / इन्द्रियैः (with the senses) / चरन् (moving about) / आत्म-वश्यैः (under the control of the inner self) / विधेय-आत्मा (disciplined person) / प्रसादम् (serenity) / अधिगच्छति (attains)","verseType":"teaching","insight":"It shifts the mind from reaction to regulated contact with experience.","quoteVariants":[],"requisiteConcepts":["raga","dvesha","indriya","prasada"],"category":"philosophical","tone":"grounding","targetAudience":["general","students"],"nodeId":"equanimity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

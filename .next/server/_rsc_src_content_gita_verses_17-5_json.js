@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_17-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_17-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/17-5.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/17-5.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":17,"verse":5,"order":600,"sanskrit":"अशास्त्रविहितं घोरं तप्यन्ते ये तपो जनाः । दम्भाहङ्कारसंयुक्ताः कामरागबलान्विताः ॥","hindiTranslation":"जो मनुष्य शास्त्रविधिसे रहित घोर तप करते हैं जो दम्भ और अहङ्कारसे अच्छी तरह युक्त हैं जो भोगपदार्थ, आसक्ति और हठसे युक्त हैं जो शरीरमें स्थित पाँच भूतोंको अर्थात् पाञ्चभौतिक शरीरको तथा अन्तःकरणमें स्थित मुझ परमात्माको भी कृश करनेवाले हैं उन अज्ञानियोंको तू आसुर निश्चयवाले आसुरी सम्पदावाले समझ ॥","englishTranslation":"People who perform harsh austerities without scriptural guidance, driven by vanity, ego, desire, attachment, and stubbornness, are not purified by them.","essence":"Harsh effort without right guidance can deepen ego instead of cleansing it.","speaker":"Krishna","deity":"","tags":["tapas","dambha","ahankara","kamaraga","asuri-sampad"],"simpleMeaning":"Severe self-punishment without right guidance, mixed with pride and craving, does not make a person better.","simpleInsight":"Not every hard practice is cleansing. Struggle can still feed ego.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna is frozen, and Krishna is explaining the difference between real discipline and distorted effort. Here he describes people who force harsh austerity without guidance, driven by vanity, ego, desire, and stubbornness.","modernRelevance":"Someone bragging about a brutal detox, sleep deprivation, or punishing routine may look committed, but the hidden motive is still control and self-display.","translationLiteral":"अशास्त्रविहितम् (not laid down by scripture) / घोरम् (severe, terrible) / तप्यन्ते (they practice austerity) / ये (who) / तपः (austerity) / जनाः (people) / दम्भ-अहङ्कार-संयुक्ताः (joined with hypocrisy and ego) / काम-राग-बल-अन्विताः (endowed with desire, attachment, and forceful stubbornness)","verseType":"teaching","insight":"It warns you to examine motive before praising endurance. A hard practice can still strengthen the wrong parts of you.","quoteVariants":[],"requisiteConcepts":["tapas","ahankara","dambha","kama","raga"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","entrepreneurs","general"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

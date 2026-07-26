@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-5.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/5-5.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":5,"order":209,"sanskrit":"यत्सांख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते । एकं सांख्यं च योगं च यः पश्यति स पश्यति ॥","hindiTranslation":"सांख्ययोगियोंके द्वारा जो तत्त्व प्राप्त किया जाता है, कर्मयोगियोंके द्वारा भी वही प्राप्त किया जाता है ।  अतः जो मनुष्य सांख्ययोग और कर्मयोगको फलरूपमें एक देखता है, वही ठीक देखता है ॥","englishTranslation":"The state reached by the wise is also reached through yoga. One who sees wisdom and yoga as one sees rightly.","essence":"Different paths can lead to the same freedom.","speaker":"Krishna","deity":"","tags":["sankhya","karma-yoga","nonduality","equivalence","renunciation"],"simpleMeaning":"The wise path of understanding and the path of disciplined action lead to the same realization. Seeing them as separate is the mistake.","simpleInsight":"You can stop ranking paths and relax into what they both accomplish.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is still frozen, and Krishna is untangling a false split. He says the state reached by clear understanding is also reached through disciplined action, so the two are not rivals.","modernRelevance":"You are stuck between quitting and pushing harder, as if only one choice can be right. This verse cuts through that panic: different methods can lead to the same settled place.","translationLiteral":"यत् (that which) / सांख्यैः (by the wise of analysis) / प्राप्यते (is attained) / स्थानं (state) / तत् (that) / योगैः (by yogis) / अपि (also) / गम्यते (is reached) / एकं (one) / सांख्यं (analysis) / च (and) / योगं (yoga) / च (and) / यः (who) / पश्यति (sees) / सः (that one) / पश्यति (sees rightly)","verseType":"teaching","insight":"It shifts the mind from arguing over methods to recognizing the shared result beneath them.","quoteVariants":[{"format":"card","text":"Wisdom and yoga reach the same place. Seeing them as one is clear seeing."},{"format":"widget","text":"Wisdom and yoga arrive together."},{"format":"notification","text":"The path differs; the arrival does not."},{"format":"lockscreen","text":"One truth. Two paths. Same arrival."}],"requisiteConcepts":["Sankhya","Yoga","Moksha"],"category":"philosophical","tone":"expansive","targetAudience":["students","professionals","general"],"nodeId":"vairagya","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

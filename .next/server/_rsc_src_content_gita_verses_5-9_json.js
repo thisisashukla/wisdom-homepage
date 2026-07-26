@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-9_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-9_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-9.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/5-9.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":9,"order":213,"sanskrit":"प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि । इन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन् ॥","hindiTranslation":"तत्त्वको जाननेवाला सांख्ययोगी देखता, सुनता, छूता, सूँघता, खाता, चलता, ग्रहण करता, बोलता, मलमूत्र का त्याग करता, सोता हुआ, श्वास लेता तथा आँखें खोलता और मूँदता हुआ भी सम्पूर्ण इन्द्रियाँ इन्द्रियोंके विषयोंमें बरत रही हैं  ऐसा समझकर मैं स्वयं कुछ भी नहीं करता हूँ  ऐसा माने ॥","englishTranslation":"Even while speaking, releasing, taking, opening, and closing the eyes, the wise know: the senses move among their objects.","essence":"Action happens; ownership is the illusion.","speaker":"Krishna","deity":"","tags":["indriya","sense-objects","kartṛtva","non-doership","vairagya"],"simpleMeaning":"A person who knows the truth understands that actions are happening through the senses, not through a separate doer.","simpleInsight":"You can stay unentangled even while life keeps moving through you.","detailedMeaning":"On the battlefield of Kurukshetra, Krishna is teaching Arjuna how a wise person acts without inner bondage. After saying the self is not the doer, he adds that speaking, taking, blinking, and every bodily act belong to the senses moving among their objects.","modernRelevance":"Your phone lights up, your mouth answers, your hand reaches for the message. This verse asks you to notice the movement before you call it \'me.\'","translationLiteral":"प्रलपन् (speaking) / विसृजन् (releasing) / गृह्णन् (taking) / उन्मिषन् (opening the eyes) / निमिषन् (closing the eyes) / अपि (even) / इन्द्रियाणि (the senses) / इन्द्रियार्थेषु (among sense-objects) / वर्तन्ते (move) / इति (thus) / धारयन् (holding in mind)","verseType":"teaching","insight":"It shifts attention from personal ownership of action to clear witnessing of bodily processes.","quoteVariants":[],"requisiteConcepts":["Indriya","Ahamkara","Vairagya"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"vairagya","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-33_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-33_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-33.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-33.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":33,"order":152,"sanskrit":"सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि । प्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति ॥","hindiTranslation":"सम्पूर्ण प्राणी प्रकृतिको प्राप्त होते हैं ।  ज्ञानी महापुरुष भी अपनी प्रकृतिके अनुसार चेष्टा करता है ।  फिर इसमें किसीका हठ क्या करेगा ॥","englishTranslation":"Even the wise act according to their own nature. All beings follow nature; what can restraint do?","essence":"Nature drives behavior; force alone cannot overrule it.","speaker":"Krishna","deity":"","tags":["prakriti","gunas","self-mastery","habit","restraint"],"simpleMeaning":"Even a wise person acts according to their own nature. Every living being follows its nature, so force alone cannot change that.","simpleInsight":"There is relief in seeing that not everything yields to willpower.","detailedMeaning":"On Kurukshetra, Arjuna is frozen between duty and grief. Krishna explains that deep tendencies shape behavior: even the wise act from their nature. This verse prepares Arjuna to understand why mere force cannot solve inner conflict.","modernRelevance":"You promise yourself you will not check the phone again, then your hand reaches for it before you notice. Krishna points to the harder truth: habits run deep, and brute force alone rarely wins.","translationLiteral":"सदृशं (according to) / चेष्टते (acts) / स्वस्याः (of one\'s own) / प्रकृतेः (nature) / ज्ञानवान् अपि (even the wise) / प्रकृतिम् (nature) / यान्ति (go to) / भूतानि (all beings) / निग्रहः (restraint) / किम् (what) / करिष्यति (will do)","verseType":"teaching","insight":"It shifts attention from moral self-blame to honest observation of ingrained tendencies.","quoteVariants":[{"format":"card","text":"Even the wise move by nature. Restraint cannot rewrite what beings are."},{"format":"widget","text":"Nature moves all. Restraint cannot remake it."},{"format":"notification","text":"I can force behavior, but not erase nature."},{"format":"lockscreen","text":"See nature clearly. Stop fighting its pull."}],"requisiteConcepts":["prakriti"],"category":"philosophical","tone":"reflective","targetAudience":["general","students","professionals"],"nodeId":"vairagya","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

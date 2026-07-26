@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-22_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-22_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-22.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/5-22.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":22,"order":226,"sanskrit":"ये हि संस्पर्शजा भोगा दुःखयोनय एव ते । आद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः ॥","hindiTranslation":"क्योंकि हे कुन्तीनन्दन  जो इन्द्रियों और विषयोंके संयोगसे पैदा होनेवाले भोग सुख हैं, वे आदिअन्तवाले और दुःखके ही कारण हैं ।  अतः विवेकशील मनुष्य उनमें रमण नहीं करता ॥","englishTranslation":"The pleasures born from contact with the senses are only sources of suffering. They have a beginning and an end, O Arjuna, and the wise do not delight in them.","essence":"Passing pleasure loses its power when its ending is seen.","speaker":"Krishna","deity":"","tags":["indriya","vishaya","bhoga","vairagya","duhkha"],"simpleMeaning":"Pleasures that come from the senses do not last and often lead to suffering. A clear-minded person does not get absorbed in them.","simpleInsight":"You can enjoy life without being pulled around by every passing pleasure.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen before the war. Krishna continues teaching him how to see clearly: sense-based pleasures are temporary, and their sweetness hides the suffering they bring. A steady mind stops chasing them.","modernRelevance":"You open your phone for one quick check and lose twenty minutes, then feel worse. The pull was brief; the aftertaste was not. Clear seeing breaks that loop.","translationLiteral":"ये (these) / हि (indeed) / संस्पर्शजा (born from contact) / भोगाः (pleasures) / दुःखयोनयः (sources of suffering) / एव (only) / ते (they) । / आद्यन्तवन्तः (having beginning and end) / कौन्तेय (O son of Kunti) / न (not) / तेषु (in them) / रमते (delights) / बुधः (the wise person)","verseType":"teaching","insight":"It shifts attention from chasing stimulation to seeing its cost before you reach for it.","quoteVariants":[{"format":"card","text":"Sense-pleasures begin and end. The wise do not cling to what breeds suffering."},{"format":"widget","text":"Begin and end. Do not cling."},{"format":"notification","text":"What flashes pleasure often plants suffering."},{"format":"lockscreen","text":"Let passing pleasure pass."}],"requisiteConcepts":["Vairagya","Buddhi","Indriya"],"category":"philosophical","tone":"reflective","targetAudience":["general","students","professionals"],"nodeId":"vairagya","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

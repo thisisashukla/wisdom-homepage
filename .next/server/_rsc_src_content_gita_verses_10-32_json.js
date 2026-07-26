@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-32_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-32_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-32.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/10-32.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":32,"order":404,"sanskrit":"सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन । अध्यात्मविद्या विद्यानां वादः प्रवदतामहम् ॥","hindiTranslation":"हे अर्जुन  सम्पूर्ण सर्गोंके आदि, मध्य तथा अन्तमें मैं ही हूँ ।  विद्याओंमें अध्यात्मविद्या और परस्पर शास्त्रार्थ करनेवालोंकातत्त्वनिर्णयके लिये किया जानेवाला वाद मैं हूँ ॥","englishTranslation":"I am the beginning, the middle, and the end of all creation, Arjuna. Among all forms of knowledge, I am the knowledge of the true self; among speakers, I am the reasoned debate that seeks truth.","essence":"All creation and all truth-seeking speech point back to Krishna.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","adhyatmavidya","vadah","creation-cycle","truth-seeking"],"simpleMeaning":"Krishna says he is the beginning, middle, and end of all creation. He is also the deepest self-knowledge and the honest debate that seeks truth.","simpleInsight":"Reality is not random or separate from the divine; even truth-seeking speech belongs to that same presence.","detailedMeaning":"On the battlefield, Arjuna stands frozen while Krishna keeps revealing where the divine can be seen. After naming many visible forms, Krishna says he is the start, middle, and end of every creation, and the truth-seeking debate among those who study.","modernRelevance":"You are in a room where two people argue past each other, each trying to win. Krishna points to the kind of speech that actually searches for truth, not ego.","translationLiteral":"सर्गाणाम् (of creations) / आदिः (the beginning) / अन्तः (the end) / च (and) / मध्यं (the middle) / च (and) / एव (indeed) / अहम् (I) / अर्जुन (Arjuna) / अध्यात्मविद्या (knowledge of the true self) / विद्यानाम् (among knowledges) / वादः (reasoned debate) / प्रवदताम् (among those who speak) / अहम् (I)","verseType":"declaration","insight":"It shifts attention from isolated facts to the presence that holds every beginning, process, and ending together.","quoteVariants":[],"requisiteConcepts":["adhyatma","vidya","vibhuti"],"category":"devotional","tone":"expansive","targetAudience":["students","general"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

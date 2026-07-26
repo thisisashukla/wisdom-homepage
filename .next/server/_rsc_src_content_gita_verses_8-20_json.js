@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-20_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-20_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-20.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/8-20.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":20,"order":330,"sanskrit":"परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः । यः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति ॥","hindiTranslation":"परन्तु उस अव्यक्त ब्रह्माजीके सूक्ष्मशरीर से अन्य अनादि सर्वश्रेष्ठ भावरूप जो अव्यक्त है, उसका सम्पूर्ण प्राणियोंके नष्ट होनेपर भी नाश नहीं होता ॥","englishTranslation":"Beyond that unmanifest is another, eternal unmanifest. Even when all beings perish, it does not perish.","essence":"What is deepest in reality cannot be destroyed by any ending.","speaker":"Krishna","deity":"","tags":["akshara","avyakta","sanatana","imperishable","cosmic dissolution"],"simpleMeaning":"There is something beyond the visible world that is eternal and cannot be destroyed, even when all living things disappear.","simpleInsight":"The deepest reality is not vulnerable to collapse, so loss does not have the final word.","detailedMeaning":"On Kurukshetra, with Arjuna shaken and the armies waiting, Krishna keeps tracing reality beyond birth and death. After describing how beings arise and dissolve, he points to what remains when every form vanishes: the eternal unmanifest.","modernRelevance":"You watch a relationship, a career, or a plan fall apart and feel the floor disappear. This verse says the deepest ground of reality is still there, untouched by the collapse.","translationLiteral":"परस्तस्मात् (beyond that) / तु (but) / भावः (state/being) / अन्यः (another) / अव्यक्तः (unmanifest) / अव्यक्तात् (than the unmanifest) / सनातनः (eternal) / यः (which) / सः (that) / सर्वेषु (in all) / भूतेषु (beings) / नश्यत्सु (when perishing) / न (not) / विनश्यति (perishes)","verseType":"declaration","insight":"It shifts attention from what changes and disappears to what remains present through every change.","quoteVariants":[{"format":"card","text":"Beyond every ending, the eternal unmanifest remains untouched."},{"format":"widget","text":"What is eternal does not perish."},{"format":"notification","text":"Everything can end. The unmanifest does not."},{"format":"lockscreen","text":"Beyond endings, the eternal remains."}],"requisiteConcepts":["avyakta","akshara","sanatana"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

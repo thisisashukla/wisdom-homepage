@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-40_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-40_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-40.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-40.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":40,"order":159,"sanskrit":"इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते । एतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम् ॥","hindiTranslation":"इन्द्रियाँ, मन और बुद्धि इस कामके वासस्थान कहे गये हैं ।  यह काम इन इन्द्रियाँ, मन और बुद्धि के द्वारा ज्ञानको ढककर देहाभिमानी मनुष्यको मोहित करता है ॥","englishTranslation":"The senses, the mind, and the discerning mind are said to be its seat. Through them, it deludes the embodied person by veiling understanding.","essence":"Desire conquers by hijacking the mind\'s own instruments.","speaker":"Krishna","deity":"","tags":["kama","indriya","manas","buddhi","self-mastery"],"simpleMeaning":"Desire works through the senses, the restless mind, and the discerning mind. It clouds understanding and makes a person act blindly.","simpleInsight":"You are less helpless when you can see how desire takes over your mind.","detailedMeaning":"On the Kurukshetra field, Arjuna is still frozen, and Krishna is tracing the enemy inside the human system. Desire does not attack from outside; it uses the senses, the restless mind, and even the discerning mind to cloud judgment.","modernRelevance":"You open a message you knew would pull you off course, and suddenly the whole evening is gone. The pull did not begin in the app; it began in the chain of attention.","translationLiteral":"इन्द्रियाणि (the senses) / मनः (the mind) / बुद्धिः (the discerning mind) / अस्य (of this) / अधिष्ठानम् (seat, basis) / उच्यते (is said to be) । / एतैः (through these) / विमोहयति (deludes) / एषः (this) / ज्ञानम् (understanding) / आवृत्य (covering) / देहिनम् (the embodied one)","verseType":"teaching","insight":"It teaches you to watch where desire enters so you can interrupt the slide before judgment is lost.","quoteVariants":[],"requisiteConcepts":["Kama","Manas","Buddhi","Indriya"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

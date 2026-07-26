@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-39_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-39_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-39.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-39.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":39,"order":39,"sanskrit":"कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम् । कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन ॥","hindiTranslation":"यद्यपि लोभ के कारण जिनका विवेकविचार लुप्त हो गया है, ऐसे ये दुर्योधन आदि कुल का नाश करने से होनेवाले दोष को और मित्रों के साथ द्वेष करने से होनेवाले पाप को नहीं देखते, तो भी हे जनार्दन कुल का नाश करने से होनेवाले दोष को ठीकठीक जाननेवाले हमलोग इस पाप से निवृत्त होनेका विचार क्यों न करें ॥","englishTranslation":"Why should we not turn away from this sin, when we clearly see the fault in destroying the family, O Janardana?","essence":"Clear sight makes withdrawal from harm the only sane choice.","speaker":"Arjuna","deity":"","tags":["kulaksaya","family-destruction","moral-refusal","arjuna-doubt","adharma"],"simpleMeaning":"Arjuna says that because he can see the harm caused by destroying the family, he and his side should turn away from this wrong action.","simpleInsight":"Seeing the damage clearly makes hesitation feel responsible, not weak.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is no longer thinking like a warrior eager for victory. He sees that killing relatives will destroy the family itself, and he asks Krishna why they should not step back from such wrongdoing.","modernRelevance":"You are about to send the message that will break a family apart. The facts are clear, and so is the damage. This verse is the moment you ask whether continuing is worth becoming the person who did it.","translationLiteral":"कथं (how) / न (not) / ज्ञेयम् (to be known) / अस्माभिः (by us) / पापात् (from sin) / अस्मात् (from this) / निवर्तितुम् (to turn back) / कुलक्षयकृतम् (caused by family-destruction) / दोषम् (fault) / प्रपश्यद्भिः (by those clearly seeing) / जनार्दन (O Janardana)","verseType":"inquiry","insight":"It shifts the mind from winning to refusing harm once the cost is understood.","quoteVariants":[],"requisiteConcepts":["dharma","adharma"],"category":"narrative","tone":"reflective","targetAudience":["general","parents","couples"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

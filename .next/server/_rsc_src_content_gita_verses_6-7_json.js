@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-7_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-7_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-7.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/6-7.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":7,"order":240,"sanskrit":"जितात्मनः प्रशान्तस्य परमात्मा समाहितः । शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥","hindiTranslation":"जिसने अपनेआपपर अपनी विजय कर ली है, उस शीतउष्ण अनुकूलताप्रतिकूलता सुखदुःख तथा मानअपमानमें निर्विकार मनुष्यको परमात्मा नित्यप्राप्त हैं ॥","englishTranslation":"For one who has conquered the self and is serene, the supreme reality is ever present in heat and cold, pleasure and pain, honor and dishonor.","essence":"Steadiness makes the highest reality feel near in every opposite.","speaker":"Krishna","deity":"","tags":["dhyana-yoga","jitatma","prashanta","samatva","manapaman"],"simpleMeaning":"A person who has mastered the restless mind stays steady through comfort and discomfort, praise and insult. In that steadiness, the supreme reality is immediately present.","simpleInsight":"You do not need life to become gentle before you can be at ease.","detailedMeaning":"On Kurukshetra, Arjuna is still frozen, and Krishna keeps teaching the inner discipline needed to act rightly. After saying the self can be either friend or enemy, Krishna adds that the conquered, peaceful person remains unchanged through heat, cold, pleasure, pain, praise, and insult.","modernRelevance":"You get praised in the meeting, then criticized in the hallway, and your mood swings with both. This verse asks for a steadier center that no comment can shake.","translationLiteral":"जितात्मनः (of one who has conquered the self) / प्रशान्तस्य (of the serene) / परमात्मा (the supreme reality) / समाहितः (is present, absorbed) / शीतोष्णसुखदुःखेषु (in cold and heat, pleasure and pain) / तथा (and also) / मानापमानयोः (in honor and dishonor)","verseType":"teaching","insight":"It shifts attention from outer conditions to inner steadiness, showing that true presence is possible amid opposites.","quoteVariants":[],"requisiteConcepts":["Manas","Buddhi","Purusha","Prakriti"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"stillness","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

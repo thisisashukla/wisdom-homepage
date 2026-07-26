@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-59_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-59_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-59.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-59.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":59,"order":106,"sanskrit":"विषया विनिवर्तन्ते निराहारस्य देहिनः । रसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते ॥","hindiTranslation":"निराहारी इन्द्रियोंको विषयोंसे हटानेवाले मनुष्यके भी विषय तो निवृत्त हो जाते हैं, पर रस निवृत्त नहीं होता ।  परन्तु इस स्थितप्रज्ञ मनुष्यका तो रस भी परमात्मतत्त्वका अनुभव होनेसे निवृत्त हो जाता है ॥","englishTranslation":"Objects fall away from the self-denying person, but the taste for them remains. For the one who has seen the supreme reality, even that taste falls away.","essence":"Craving ends only when a higher reality becomes more compelling.","speaker":"Krishna","deity":"","tags":["vairagya","indriya","rasavarga","sense-restraint","sthitaprajna"],"simpleMeaning":"Stopping the senses is not enough. The outer attraction may fade, but the inner taste remains until a higher reality is directly seen.","simpleInsight":"Real freedom comes from seeing more clearly, not just forcing restraint.","detailedMeaning":"On the battlefield, Arjuna is frozen, and Krishna is explaining why mere suppression cannot solve inner bondage. Even if the senses are pulled back, the craving remains until a deeper vision replaces it.","modernRelevance":"You delete the app, mute the chat, and swear off the habit — yet the urge returns at midnight. The surface trigger is gone, but the deeper appetite still needs to be seen through.","translationLiteral":"विषयाः (objects of the senses) / विनिवर्तन्ते (turn away) / निराहारस्य (of the one without intake) / देहिनः (of the embodied one) / रसवर्जम् (except for taste) / रसः (taste) / अपि (even) / अस्य (of this one) / परम् (the supreme) / दृष्ट्वा (having seen) / निवर्तते (turns away)","verseType":"teaching","insight":"It shifts the mind from suppression to transformation: remove the craving by changing what you truly value.","quoteVariants":[{"format":"card","text":"Objects can leave you alone. Desire leaves only after the supreme is seen."},{"format":"widget","text":"Taste ends only with clear seeing."},{"format":"notification","text":"The object is gone. The pull may still remain."},{"format":"lockscreen","text":"See the supreme. Desire falls away."}],"requisiteConcepts":["Vairagya","Buddhi","Prakriti"],"category":"philosophical","tone":"reflective","targetAudience":["general","students","professionals"],"nodeId":"vairagya","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-19_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-19_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-19.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-19.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":19,"order":642,"sanskrit":"ज्ञानं कर्म च कर्ता च त्रिधैव गुणभेदतः । प्रोच्यते गुणसंख्याने यथावच्छृणु तान्यपि ॥","hindiTranslation":"गुणसंख्यान गुणोंके सम्बन्धसे प्रत्येक पदार्थके भिन्नभिन्न भेदोंकी गणना करनेवाले शास्त्रमें गुणोंके भेदसे ज्ञान और कर्म तथा कर्ता तीनतीन प्रकारसे ही कहे जाते हैं, उनको भी तुम यथार्थरूपसे सुनो ॥","englishTranslation":"In the analysis of the three qualities, knowledge, action, and the doer are each said to be threefold. Listen now to these distinctions as they truly are.","essence":"Every action, knower, and deed carries the mark of a quality.","speaker":"Krishna","deity":"","tags":["gunas","triguna","karma","karta","jnana"],"simpleMeaning":"Knowledge, action, and the doer are each understood in three different ways according to the three qualities. Krishna asks Arjuna to listen carefully to this classification.","simpleInsight":"It reminds you that not all thinking, acting, or acting-from-self is the same.","detailedMeaning":"On the battlefield, Arjuna is still frozen while Krishna explains how action works beneath the surface. After saying that knowledge, action, and the doer can be divided in three ways, Krishna prepares Arjuna to hear how the qualities shape everything.","modernRelevance":"You can do the same task with a clear mind, a restless mind, or a dull mind. The outer act looks identical, but the inner quality changes everything.","translationLiteral":"ज्ञानं (knowledge) / कर्म (action) / च (and) / कर्ता (doer) / च (and) / त्रिधा (threefold) / एव (indeed) / गुणभेदतः (according to the distinctions of the qualities) / प्रोच्यते (are said) / गुणसंख्याने (in the analysis of the qualities) / यथावत् (as they truly are) / शृणु (listen) / तानि (those) / अपि (also)","verseType":"teaching","insight":"It shifts attention from the outer event to the quality of consciousness behind it.","quoteVariants":[],"requisiteConcepts":["gunas","karma","karta","jnana"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

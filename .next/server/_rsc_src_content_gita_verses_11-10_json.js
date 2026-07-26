@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-10_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-10_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-10.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-10.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":10,"order":424,"sanskrit":"अनेकवक्त्रनयनमनेकाद्भुतदर्शनम् । अनेकदिव्याभरणं दिव्यानेकोद्यतायुधम् ॥","hindiTranslation":"जिसके अनेक मुख और नेत्र हैं, अनेक तहरके अद्भुत दर्शन हैं, अनेक दिव्य आभूषण हैं, हाथोंमें उठाये हुए अनेक दिव्य आयुध हैं तथा जिनके गलेमें दिव्य मालाएँ हैं, जो दिव्य वस्त्र पहने हुए हैं, जिनके ललाट तथा शरीरपर दिव्य चन्दन, कुंकुम आदि लगा हुआ है, ऐसे सम्पूर्ण आश्चर्यमय, अनन्तरूपवाले तथा चारों तरफ मुखवाले देवअपने दिव्य स्वरूप को भगवान् ने दिखाया ॥","englishTranslation":"With many mouths and eyes, with countless wondrous forms, adorned with many divine ornaments and many uplifted divine weapons.","essence":"The divine form cannot be held inside one human image.","speaker":"Sanjaya","deity":"","tags":["vishwarupa","cosmic-form","divine-vision","multiform","sanjaya"],"simpleMeaning":"The cosmic form appears with countless faces, eyes, ornaments, and divine weapons. It is a vast, overwhelming vision rather than a single human shape.","simpleInsight":"Some truths cannot be reduced to one familiar form.","detailedMeaning":"On the battlefield, Krishna has just granted Arjuna divine sight. Sanjaya now describes what Arjuna sees: a limitless form filled with faces, eyes, ornaments, and weapons. This verse is one detail in the unfolding vision, not the full revelation itself.","modernRelevance":"You finally see the full picture after weeks of narrow thinking, and it is bigger, stranger, and harder to contain than you expected.","translationLiteral":"अनेक (many) / वक्त्र (mouths) / नयनम् (eyes) / अनेक (many) / अद्भुत-दर्शनम् (wonderful sights) / अनेक (many) / दिव्य-आभरणम् (divine ornaments) / दिव्य-अनेक-उद्यत-आयुधम् (divine, many, raised weapons)","verseType":"narrative","insight":"It trains the mind to accept that reality may exceed ordinary categories and familiar appearances.","quoteVariants":[],"requisiteConcepts":["Vishwarupa"],"category":"narrative","tone":"expansive","targetAudience":["general","students"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

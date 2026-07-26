@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_12-20_json";
+exports.ids = ["_rsc_src_content_gita_verses_12-20_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/12-20.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/12-20.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":12,"verse":20,"order":489,"sanskrit":"ये तु धर्म्यामृतमिदं यथोक्तं पर्युपासते । श्रद्दधाना मत्परमा भक्तास्तेऽतीव मे प्रियाः ॥","hindiTranslation":"जो मेरेमें श्रद्धा रखनेवाले और मेरे परायण हुए भक्त पहले कहे हुए इस धर्ममय अमृतका अच्छी तरहसे सेवन करते हैं, वे मुझे अत्यन्त प्रिय हैं ॥","englishTranslation":"Those devotees who trust, take refuge in Me, and faithfully live this nectar-like teaching are exceedingly dear to Me.","essence":"Faithful practice turns devotion into closeness.","speaker":"Krishna","deity":"","tags":["bhakti","shraddha","matparah","devotee","priya"],"simpleMeaning":"People who trust Krishna, hold him as their highest aim, and faithfully practice this teaching are very dear to him.","simpleInsight":"Devotion is not just feeling close; it is living the teaching with trust and steady love.","detailedMeaning":"On the battlefield of Kurukshetra, after Krishna has described the qualities of a beloved devotee, he closes the chapter with a direct promise: the person who trusts him, makes him the highest aim, and practices this teaching becomes especially dear to him.","modernRelevance":"You keep returning to the same hard promise you made to yourself, even when no one applauds. That quiet loyalty changes your relationship to the thing you serve.","translationLiteral":"ये (those who) / तु (indeed) / धर्म्यामृतम् (nectar of righteous living) / इदम् (this) / यथा उक्तम् (as spoken) / पर्युपासते (diligently practice) / श्रद्दधानाः (with trust) / मत्परमाः (having Me as the highest) / भक्ताः (devotees) / ते (they) / अतीव (very) / मे (to Me) / प्रियाः (dear)","verseType":"declaration","insight":"It shifts devotion from emotion alone to faithful, repeated practice grounded in trust.","quoteVariants":[{"format":"card","text":"Trust Me fully, live this teaching, and become dear to Me."},{"format":"widget","text":"Trust. Practice. Become dear."},{"format":"notification","text":"Faithful practice makes you deeply dear to Me."},{"format":"lockscreen","text":"Trust fully. Live the teaching."}],"requisiteConcepts":["Bhakti","Shraddha"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"bhakti-m","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

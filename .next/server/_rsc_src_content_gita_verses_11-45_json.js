@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-45_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-45_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-45.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-45.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":45,"order":459,"sanskrit":"अदृष्टपूर्वं हृषितोऽस्मि दृष्ट्वाभयेन च प्रव्यथितं मनो मे । तदेव मे दर्शय देव रूपंप्रसीद देवेश जगन्निवास ॥","hindiTranslation":"मैंने ऐसा रुप पहले कभी नहीं देखा ।  इस रूपको देखकर मैं हर्षित हो रहा हूँ और साथहीसाथ भयसे मेरा मन अत्यन्त व्यथित हो रहा है ।  अतः आप मुझे अपने उसी देवरूपको सौम्य विष्णुरूपको दिखाइये ।  हे देवेश  हे जगन्निवास  आप प्रसन्न होइये ॥","englishTranslation":"I have never seen this form before. Seeing it, I am filled with joy, yet my mind is troubled by fear. Show me again your gentle divine form; be pleased, O Lord of lords, O dwelling of the world.","essence":"A vision can awaken joy and fear at once.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna-prayer","devotional-awe","four-armed-form","surrender"],"simpleMeaning":"Arjuna is overwhelmed by Krishna\'s cosmic form. He asks to see the familiar, gentle form again because the vast vision fills him with both awe and fear.","simpleInsight":"Even wonder can become too much; the heart still longs for what feels safe and known.","detailedMeaning":"On Kurukshetra, Arjuna has just seen Krishna\'s universal form and cannot bear its intensity. He is thrilled by the revelation, yet shaken by fear. So he asks Krishna to withdraw that overwhelming vision and appear again in the gentler, familiar form.","modernRelevance":"You finally hear the brutal truth you asked for, and it lands harder than expected. Part of you is grateful; part of you wants the conversation to return to something human again.","translationLiteral":"अदृष्टपूर्वम् (never seen before) / हृषितः (delighted) / अस्मि (I am) / दृष्ट्वा (having seen) / अभयेन (with fearlessness) / च (and) / प्रव्यथितम् (disturbed) / मनः (mind) / मे (my) / तत् (that) / एव (only) / मे (to me) / दर्शय (show) / देव (O divine one) / रूपम् (form) / प्रसीद (be gracious) / देवेश (Lord of lords) / जगन्निवास (dwelling of the world)","verseType":"devotional","insight":"It shows that revelation must be met with humility, and that surrender can include asking for a form the mind can bear.","quoteVariants":[],"requisiteConcepts":["vishwarupa"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

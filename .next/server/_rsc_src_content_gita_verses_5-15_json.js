@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-15_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-15_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-15.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/5-15.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":15,"order":219,"sanskrit":"नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः । अज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः ॥","hindiTranslation":"सर्वव्यापी परमात्मा न किसीके पापकर्मको और न शुभकर्मको ही ग्रहण करता है किन्तु अज्ञानसे ज्ञान ढका हुआ है, उसीसे सब जीव मोहित हो रहे हैं ॥","englishTranslation":"The all-pervading one takes neither anyone\'s wrongdoing nor anyone\'s good deed. Knowledge is covered by ignorance, and that is why living beings are deluded.","essence":"Ignorance, not action, is what keeps beings confused.","speaker":"Krishna","deity":"","tags":["avidya","karma-phala","jnana","delusion","witness"],"simpleMeaning":"The divine does not collect anyone\'s good or bad actions. People get confused because ignorance covers their understanding.","simpleInsight":"You are not trapped by what you did, but by what you fail to see.","detailedMeaning":"Krishna is still answering Arjuna on the battlefield, where duty feels impossible and every choice seems stained. He shifts the focus from action itself to the ignorance that distorts understanding, showing why people stay confused about responsibility.","modernRelevance":"You replay one mistake at 2 a.m. and treat it like your identity. This verse cuts deeper: the real problem is not the act alone, but the ignorance that keeps repeating it.","translationLiteral":"नादत्ते (does not take) / कस्यचित् (of anyone) / पापम् (wrongdoing) / न (not) / च (and) / एव (indeed) / सुकृतम् (good deed) / विभुः (the all-pervading one) / अज्ञानेन (by ignorance) / आवृतम् (covered) / ज्ञानम् (knowledge) / तेन (by that) / मुह्यन्ति (are deluded) / जन्तवः (living beings)","verseType":"declaration","insight":"It shifts attention from moral bookkeeping to clear seeing. When ignorance lifts, the mind stops being ruled by confusion.","quoteVariants":[{"format":"card","text":"The all-pervading one takes no one’s good or bad deed. Ignorance hides knowledge, and beings are confused."},{"format":"widget","text":"Ignorance veils knowledge; beings lose their way."},{"format":"notification","text":"The confusion is not in action. It is in ignorance."},{"format":"lockscreen","text":"Ignorance veils knowledge. Delusion follows."}],"requisiteConcepts":["Avidya","Buddhi","Karma"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

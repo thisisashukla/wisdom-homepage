@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-64_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-64_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-64.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-64.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":64,"order":687,"sanskrit":"सर्वगुह्यतमं भूयः श्रृणु मे परमं वचः । इष्टोऽसि मे दृढमिति ततो वक्ष्यामि ते हितम् ॥","hindiTranslation":"सबसे अत्यन्त गोपनीय वचन तू फिर मेरेसे सुन ।  तू मेरा अत्यन्त प्रिय है, इसलिये मैं तेरे हितकी बात कहूँगा ॥","englishTranslation":"Listen again to My most secret word. You are dear to Me, so I will speak for your good.","essence":"The deepest teaching is spoken as care, not command.","speaker":"Krishna","deity":"Krishna","tags":["sharanagati","krishna-priya","guhyatama","final-teaching","bhakti"],"simpleMeaning":"Krishna asks Arjuna to hear one more secret teaching. Because Arjuna is dear to him, Krishna will speak only what is truly beneficial.","simpleInsight":"Being loved means being told what helps, not just what comforts.","detailedMeaning":"On the Kurukshetra field, Arjuna has already been told the deepest teaching: surrender to Krishna. Krishna now pauses before the final command and says there is still a more secret word to hear. He speaks as a teacher who cares personally for Arjuna\'s welfare.","modernRelevance":"A friend stops you before you make the wrong call and says, \'Hear me out once more — I’m telling you this because I care.\' That moment can change everything.","translationLiteral":"सर्वगुह्यतमं (most secret) / भूयः (again) / श्रृणु (listen) / मे (my) / परमं (highest) / वचः (word) / इष्टः असि (you are dear) / मे (to me) / दृढम् (truly) / इति (thus) / ततः (therefore) / वक्ष्यामि (I will speak) / ते (to you) / हितम् (what is good)","verseType":"declaration","insight":"It shifts the listener from passive hearing to trusting that the next instruction is meant for their good.","quoteVariants":[],"requisiteConcepts":["sharanagati"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

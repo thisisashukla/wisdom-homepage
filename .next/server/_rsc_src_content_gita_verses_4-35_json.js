@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-35_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-35_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-35.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-35.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":35,"order":197,"sanskrit":"यज्ज्ञात्वा न पुनर्मोहमेवं यास्यसि पाण्डव । येन भूतान्यशेषेण द्रक्ष्यस्यात्मन्यथो मयि ॥","hindiTranslation":"जिस तत्त्वज्ञान का अनुभव करनेके बाद तू फिर इस प्रकार मोहको नहीं प्राप्त होगा, और हे अर्जुन  जिस तत्त्वज्ञान से तू सम्पूर्ण प्राणियोंको निःशेषभावसे पहले अपनेमें और उसके बाद मुझ सच्चिदानन्दघन परमात्मामें देखेगा ॥","englishTranslation":"Knowing which, you will not fall into confusion again. Through which, you will see all beings without remainder first in yourself, and then in me.","essence":"Knowing deeply ends confusion by revealing one reality in all beings.","speaker":"Krishna","deity":"Krishna","tags":["jnana","moha","sarvabhuta","advaita","atma-darshana"],"simpleMeaning":"True understanding ends confusion. It lets you see every being as part of one reality, first within yourself and then in the supreme reality.","simpleInsight":"Clarity feels like relief: the world stops looking scattered and starts making sense as one whole.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen while Krishna explains the knowledge that dissolves his confusion. This verse says that real understanding changes perception itself: the many beings are seen without separation, first in the true self and then in Krishna.","modernRelevance":"You stare at a message before sending it, knowing it will change everything. Clear seeing cuts through the fear of fragments and lets you act from wholeness instead of panic.","translationLiteral":"यत् (which) / ज्ञात्वा (having known) / न (not) / पुनः (again) / मोहम् (delusion, confusion) / एवम् (thus) / यास्यसि (you will go into) / पाण्डव (O Pandava) / येन (by which) / भूतानि (beings) / अशेषेण (without remainder) / द्रक्ष्यसि (you will see) / आत्मनि (in the self) / अथो (then) / मयि (in me)","verseType":"declaration","insight":"It shifts perception from isolated pieces to a single connected reality, reducing confusion at the root.","quoteVariants":[{"format":"card","text":"Know this, and confusion ends. All beings appear first in you, then in me."},{"format":"widget","text":"Know this. Confusion ends."},{"format":"notification","text":"Seeing clearly, everything fits inside one reality."},{"format":"lockscreen","text":"Know clearly. See all beings as one."}],"requisiteConcepts":["Atman","Brahman","Maya"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

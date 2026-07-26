@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-27_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-27_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-27.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-27.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":27,"order":260,"sanskrit":"प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम् । उपैति शान्तरजसं ब्रह्मभूतमकल्मषम् ॥","hindiTranslation":"जिसके सब पाप नष्ट हो गये हैं, जिसका रजोगुण तथा मन सर्वथा शान्तनिर्मल हो गया है, ऐसे इस ब्रह्मस्वरूप योगीको निश्चित ही उत्तम सात्त्विक सुख प्राप्त होता है ॥","englishTranslation":"The yogi whose mind is peaceful, whose passion is stilled, and who is free from impurity attains the highest joy.","essence":"Joy comes when the restless mind finally becomes still.","speaker":"Krishna","deity":"","tags":["dhyana","manas","rajas","buddhi","samadhi"],"simpleMeaning":"A person who has calmed the mind, quieted passion, and become free of inner impurity reaches the highest kind of joy.","simpleInsight":"Stillness is not emptiness; it is where a deeper happiness becomes available.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is being taught how to master the mind that keeps dragging him into fear and confusion. Krishna says that when the mind becomes peaceful and passion settles, the yogi reaches a higher joy.","modernRelevance":"After the argument ends and your phone stops buzzing, you finally sit in silence and notice how noisy your own mind has been. Relief begins there, not in the next distraction.","translationLiteral":"प्रशान्तमनसम् (with a fully peaceful mind) / हि (indeed) / एनम् (this) / योगिनम् (the yogi) / सुखम् (joy) / उत्तमम् (highest) / उपैति (attains) / शान्तरजसम् (with passion stilled) / ब्रह्मभूतम् (become Brahman) / अकल्मषम् (spotless, free from impurity)","verseType":"teaching","insight":"It shifts the goal from chasing stimulation to cultivating inner quiet that can actually receive joy.","quoteVariants":[{"format":"card","text":"A peaceful mind meets the highest joy."},{"format":"widget","text":"Still mind. Highest joy."},{"format":"notification","text":"Peace, not pursuit, opens the highest joy."},{"format":"lockscreen","text":"Still the mind. Joy arrives."}],"requisiteConcepts":["manas","rajas","buddhi","Brahman"],"category":"philosophical","tone":"calming","targetAudience":["students","professionals","general"],"nodeId":"stillness","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

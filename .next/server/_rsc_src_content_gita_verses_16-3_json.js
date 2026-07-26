@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_16-3_json";
+exports.ids = ["_rsc_src_content_gita_verses_16-3_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/16-3.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/16-3.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":16,"verse":3,"order":574,"sanskrit":"तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता । भवन्ति सम्पदं दैवीमभिजातस्य भारत ॥","hindiTranslation":"तेज प्रभाव, क्षमा, धैर्य, शरीरकी शुद्धि, वैरभावका न रहना और मानको न चाहना, हे भरतवंशी अर्जुन  ये सभी दैवी सम्पदाको प्राप्त हुए मनुष्यके लक्षण हैं ॥","englishTranslation":"Splendor, forgiveness, steadiness, purity, absence of hostility, and lack of pride belong to the one born with divine qualities, O Bharata.","essence":"True strength looks like forgiveness, steadiness, and no need to dominate.","speaker":"Krishna","deity":"","tags":["daivi-sampad","forgiveness","humility","steadiness","purity"],"simpleMeaning":"A person with noble qualities shows strength, forgiveness, steadiness, purity, no hostility, and no pride.","simpleInsight":"You can measure character by how powerfully someone stays gentle.","detailedMeaning":"On the battlefield of Kurukshetra, Krishna is listing the qualities that mark a truly noble person. After naming nonviolence, truth, and self-control, he adds the traits that make divine character visible in action.","modernRelevance":"A tense family dinner turns sharp, and everyone is waiting for you to strike back. This verse says real strength can stay clean, calm, and uninflated under pressure.","translationLiteral":"तेजः (splendor) / क्षमा (forgiveness) / धृतिः (steadiness) / शौचम् (purity) / अद्रोहः (absence of hostility) / नातिमानिता (lack of pride) / भवन्ति (become) / सम्पदम् (attainment) / दैवीम् (divine) / अभिजातस्य (of one born) / भारत (O Bharata)","verseType":"teaching","insight":"It shifts attention from outer success to the inner traits that reveal a disciplined character.","quoteVariants":[{"format":"card","text":"Divine character shows itself as strength, forgiveness, and humility."},{"format":"widget","text":"Strength without pride. Forgiveness without weakness."},{"format":"notification","text":"Real strength leaves no room for pride."},{"format":"lockscreen","text":"Be strong, pure, and unproud."}],"requisiteConcepts":[],"category":"philosophical","tone":"grounding","targetAudience":["general","students","parents"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

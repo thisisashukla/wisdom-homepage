@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-25_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-25_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-25.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-25.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":25,"order":25,"sanskrit":"भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम् । उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति ॥","hindiTranslation":"संजय बोले  हे भरतवंशी राजन् निद्राविजयी अर्जुन के द्वारा इस तरह कहने पर अन्तर्यामी भगवान् श्रीकृष्ण ने दोनों सेनाओं के मध्यभाग में पितामह भीष्म और आचार्य द्रोण के सामने तथा सम्पूर्ण राजाओं के सामने श्रेष्ठ रथको खड़ा करके इस तरह कहा कि हे पार्थ इन इकट्ठे हुए कुरुवंशियोंको देख ॥","englishTranslation":"Standing before Bhishma, Drona, and all the rulers, Krishna said, \\"O Partha, behold these assembled Kurus.\\"","essence":"Seeing the people involved makes denial impossible.","speaker":"Krishna","deity":"","tags":["kurukshetra","bhishma","drona","chariot","scene-setting"],"simpleMeaning":"Krishna positions Arjuna’s chariot between the armies and asks him to look at the gathered Kurus, including Bhishma, Drona, and the kings.","simpleInsight":"Before the conflict becomes action, Arjuna is made to face the people he must fight.","detailedMeaning":"On Kurukshetra, Krishna drives Arjuna’s chariot into the space between both armies. He stops before Bhishma, Drona, and the gathered kings, and tells Arjuna to look closely. This moment forces the warrior to see the human cost before the battle begins.","modernRelevance":"You stand at the edge of a hard message, and the people it will hurt are all in front of you. Before you speak or act, you have to look directly.","translationLiteral":"भीष्म-द्रोण-प्रमुखतः (in front of Bhishma and Drona) / सर्वेषाम् (of all) / च (and) / महीक्षिताम् (of kings) / उवाच (said) / पार्थ (O Partha) / पश्य (behold) / एतान् (these) / समवेतान् (assembled) / कुरून् (Kurus) / इति (thus)","verseType":"narrative","insight":"It shifts the mind from abstract conflict to direct seeing of real people and real stakes.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"grounding","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

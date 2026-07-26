@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-14_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-14_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-14.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/13-14.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":14,"order":503,"sanskrit":"सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम् । सर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति ॥","hindiTranslation":"वे परमात्मा सब जगह हाथों और पैरोंवाले, सब जगह नेत्रों, सिरों और मुखोंवाले तथा सब जगह कानोंवाले हैं ।  वे संसारमें सबको व्याप्त करके स्थित हैं ॥","englishTranslation":"The supreme reality has hands and feet everywhere, eyes, heads, and faces everywhere, and ears everywhere. It pervades all things and stands within all things.","essence":"What seems separate is already filled with the supreme reality.","speaker":"Krishna","deity":"","tags":["sarvatra","kshetrajna","omnipresence","vishvavyapi","bhagavan"],"simpleMeaning":"The supreme reality is not limited to one form or place. It is present everywhere, expressed through all beings and all senses.","simpleInsight":"You can stop feeling cut off from the sacred. Presence is already here, all around and within.","detailedMeaning":"On the battlefield, Arjuna is being taught what the knower of the field is. Krishna now describes the supreme reality as present everywhere, with no outside at all. This verse deepens the vision before the next line explains that it is beyond ordinary senses.","modernRelevance":"You sit alone in a crowded train after a hard conversation, feeling separate from everyone around you. This verse says the deeper reality has never left the room.","translationLiteral":"सर्वतः (everywhere) / पाणिपादम् (hands and feet) / तत् (that) / सर्वतः (everywhere) / अक्षिशिरोमुखम् (eyes, heads, and faces) / सर्वतः (everywhere) / श्रुतिमत् (having ears) / लोके (in the world) / सर्वम् (all) / आवृत्य (covering) / तिष्ठति (stands, remains)","verseType":"declaration","insight":"It shifts attention from a distant divine object to a presence that already pervades experience.","quoteVariants":[{"format":"card","text":"The supreme reality is present in every being, every sense, every place."},{"format":"widget","text":"Everywhere is already held."},{"format":"notification","text":"Nothing is outside the supreme reality."},{"format":"lockscreen","text":"The divine fills every place."}],"requisiteConcepts":["kshetra","kshetrajna"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

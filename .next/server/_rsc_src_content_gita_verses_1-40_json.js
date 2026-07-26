@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-40_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-40_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-40.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-40.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":40,"order":40,"sanskrit":"कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः । धर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत ॥","hindiTranslation":"कुल का क्षय होने पर सदा से चलते आये कुलधर्म नष्ट हो जाते हैं और धर्म का नाश होनेपर बचे हुए सम्पूर्ण कुल को अधर्म दबा लेता है ॥","englishTranslation":"When a family falls apart, its ancient duties disappear. When duty is lost, wrongdoing overtakes the whole family.","essence":"Destroy the family, and the moral order inside it collapses.","speaker":"Arjuna","deity":"","tags":["kuladharma","family-destruction","adharma","lineage","arjuna-grief"],"simpleMeaning":"When a family is broken, its long-standing duties disappear. Once duty is gone, wrongdoing spreads through the whole family.","simpleInsight":"A broken structure does not stay neutral for long; it quickly trains people toward harm.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna looks beyond the fight and sees a larger collapse. If the Kuru family is destroyed, its old duties will vanish, and the disorder of war will spread through everything that remains.","modernRelevance":"A household where promises keep getting broken does not stay stable for long. Soon the children learn the chaos as normal, and everyone starts living by damage control instead of responsibility.","translationLiteral":"कुलक्षये (on the destruction of the family) / प्रणश्यन्ति (are destroyed) / कुलधर्माः (family duties) / सनातनाः (ancient, eternal) । / धर्मे (when duty) / नष्टे (is destroyed) / कुलम् (the family) / कृत्स्नम् (entire) / अधर्मः (wrongdoing) / अभिभवति (overpowers) / उत (indeed)","verseType":"teaching","insight":"It shifts attention from immediate victory to the long-term moral cost of breaking inherited obligations.","quoteVariants":[{"format":"card","text":"Break the family line, and ancient duties collapse. Lose duty, and wrongdoing takes over."},{"format":"widget","text":"Lose duty. Wrongdoing spreads."},{"format":"notification","text":"When duty breaks, everything else starts to rot."},{"format":"lockscreen","text":"Protect duty. Protect the whole family."}],"requisiteConcepts":["dharma","adharma","kuladharma"],"category":"philosophical","tone":"reflective","targetAudience":["parents","couples","general"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

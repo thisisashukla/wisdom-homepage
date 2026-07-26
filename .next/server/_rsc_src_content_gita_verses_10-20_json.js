@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-20_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-20_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-20.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/10-20.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":20,"order":392,"sanskrit":"अहमात्मा गुडाकेश सर्वभूताशयस्थितः । अहमादिश्च मध्यं च भूतानामन्त एव च ॥","hindiTranslation":"हे नींदको जीतनेवाले अर्जुन  सम्पूर्ण प्राणियोंके आदि, मध्य तथा अन्तमें भी मैं ही हूँ और प्राणियोंके अन्तःकरणमें आत्मरूपसे भी मैं ही स्थित हूँ ॥","englishTranslation":"I am the Self, O Gudakesha, seated in the heart of all beings. I am the beginning, the middle, and the end of all beings.","essence":"Everything that exists is held within one enduring presence.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","antaryamin","sarvabhuta","janardana","krishna"],"simpleMeaning":"Krishna says he lives within every being as the inner self and is present at every stage of existence: beginning, middle, and end.","simpleInsight":"You are held inside something far larger than your private story.","detailedMeaning":"On the battlefield, Arjuna asks to hear more of Krishna’s divine manifestations. Krishna answers that he is not distant: he dwells in the heart of every being and is present at every stage of life, from origin to completion.","modernRelevance":"You sit beside someone in a hospital corridor, watching a life change in silence. This verse says the deepest presence is already there, inside every beginning, middle, and ending.","translationLiteral":"अहम् (I am) / आत्मा (the Self) / गुडाकेश (O Gudakesha) / सर्वभूताशयस्थितः (standing in the heart of all beings) / अहम् (I am) / आदिः (the beginning) / च (and) / मध्यम् (the middle) / च (and) / भूतानाम् (of beings) / अन्तः (the end) / एव (indeed) / च (and)","verseType":"declaration","insight":"It shifts attention from scattered appearances to the single presence running through all change.","quoteVariants":[{"format":"card","text":"I am in every heart. I am the start, middle, and end of all beings."},{"format":"widget","text":"All beings begin, endure, end in Me."},{"format":"notification","text":"What lives in every heart is Me."},{"format":"lockscreen","text":"I am beginning, middle, and end."}],"requisiteConcepts":["Atman","Brahman"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

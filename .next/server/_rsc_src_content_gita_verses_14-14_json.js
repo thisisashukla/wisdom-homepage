@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_14-14_json";
+exports.ids = ["_rsc_src_content_gita_verses_14-14_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/14-14.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/14-14.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":14,"verse":14,"order":538,"sanskrit":"यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत् । तदोत्तमविदां लोकानमलान्प्रतिपद्यते ॥","hindiTranslation":"जिस समय सत्त्वगुण बढ़ा हो, उस समय यदि देहधारी मनुष्य मर जाता है, तो वह,उत्तमवेत्ताओंके निर्मल लोकोंमें जाता है ॥","englishTranslation":"When sattva is predominant at death, the embodied being reaches the pure worlds of the wise.","essence":"A clear state carries consciousness toward a clearer destination.","speaker":"Krishna","deity":"","tags":["sattva","gunas","death","afterlife","clarity"],"simpleMeaning":"If a person dies while sattva is strongest, that being reaches pure realms associated with the wise.","simpleInsight":"Your dominant state matters most at the end; it shapes where consciousness moves next.","detailedMeaning":"Krishna continues explaining the three gunas to Arjuna on the battlefield. After naming the signs of rajas and tamas, he shows the quieter power of sattva: if death comes while clarity is strongest, the being moves toward pure worlds, not confusion.","modernRelevance":"You are exhausted after a long day, and your mind is either clear or clouded when the hardest conversation arrives. The state you live in most deeply leaves the strongest imprint.","translationLiteral":"यदा (when) / सत्त्वे (in sattva) / प्रवृद्धे (having become strong) / तु (indeed) / प्रलयम् (dissolution; death) / याति (goes) / देहभृत् (the embodied one) / तदा (then) / उत्तमविदाम् (of the knowers of the highest) / लोकान् (worlds) / अमलान् (pure, stainless) / प्रतिपद्यते (attains)","verseType":"teaching","insight":"It shifts attention from isolated actions to the quality of mind that dominates your life.","quoteVariants":[],"requisiteConcepts":["sattva","gunas","deha-bhrit"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

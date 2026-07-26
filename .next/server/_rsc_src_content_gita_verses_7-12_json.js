@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-12_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-12_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-12.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/7-12.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":12,"order":292,"sanskrit":"ये चैव सात्त्विका भावा राजसास्तामसाश्च ये । मत्त एवेति तान्विद्धि नत्वहं तेषु ते मयि ॥","hindiTranslation":"और तो क्या कहूँ जितने भी सात्त्विक, राजस और तामस भाव हैं, वे सब मुझ से ही होते हैं  ऐसा समझो ।  पर मैं उनमें और वे मेरेमें नहीं हैं ॥","englishTranslation":"Know that all states of being—sattvic, rajasic, and tamasic—arise from Me. I am not in them; they are in Me.","essence":"All qualities arise in the divine, yet the divine is not bound by any of them.","speaker":"Krishna","deity":"Krishna","tags":["gunas","sattva-rajas-tamas","maya","krishna-immanence","transcendence"],"simpleMeaning":"Every mode of nature—clear, restless, or dull—comes from Krishna. But Krishna is beyond all of them and is not confined by any one quality.","simpleInsight":"You can notice your moods without believing they define the deepest reality.","detailedMeaning":"On Kurukshetra, Arjuna is still shaken while Krishna keeps unfolding the truth behind all experience. After naming his powers in the world, Krishna now says that every quality of mind and nature comes from him, yet he remains beyond those qualities.","modernRelevance":"You feel calm in the morning, driven by noon, numb by night, and then call one of those states “me.” This verse reminds you that moods pass through you; they are not your deepest identity.","translationLiteral":"ये (which) / च (and) / एव (indeed) / सात्त्विकाः (sattvic) / भावाḥ (states of being) / राजसाः (rajasic) / तामसाः (tamasic) / च (and) / ये (which) / मत्तः (from Me) / एव (indeed) / इति (thus) / तान् (them) / विद्धि (know) / न (not) / तु (but) / अहम् (I) / तेषु (in them) / ते (they) / मयि (in Me)","verseType":"declaration","insight":"It shifts attention from identifying with changing states to recognising the source behind them.","quoteVariants":[{"format":"card","text":"All states arise from Me. I remain untouched by them."},{"format":"widget","text":"They come from Me; I am beyond them."},{"format":"notification","text":"Everything in you comes from Me, but I am not trapped there."},{"format":"lockscreen","text":"All qualities arise in Me, not I in them."}],"requisiteConcepts":["gunas","sattva","rajas","tamas"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

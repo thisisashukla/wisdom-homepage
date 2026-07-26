@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-66_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-66_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-66.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-66.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":66,"order":689,"sanskrit":"सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥","hindiTranslation":"सम्पूर्ण धर्मोंका आश्रय छोड़कर तू केवल मेरी शरणमें आ जा ।  मैं तुझे सम्पूर्ण पापोंसे मुक्त कर दूँगा, चिन्ता मत कर ॥","englishTranslation":"Abandon all duties and take refuge in Me alone. I will free you from all wrongdoing; do not grieve.","essence":"Total refuge ends the burden of fear.","speaker":"Krishna","deity":"Krishna","tags":["sharanagati","moksha","surrender","krishna","final-teaching"],"simpleMeaning":"Let go of every lesser support and place yourself fully in Krishna\'s care. He promises freedom from all wrongdoing and asks Arjuna not to grieve.","simpleInsight":"There is relief in surrendering what you cannot finally control.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has been broken open by doubt. After teaching him every path, Krishna gives the final, most secret instruction: stop clinging to every other support and come to Me alone. This is the closing turn of the entire dialogue.","modernRelevance":"You are standing outside a hospital room, phone in hand, after the call that changed everything. At some point, control runs out. This verse speaks to the moment you stop bargaining and finally place the burden down.","translationLiteral":"सर्वधर्मान् (all duties) / परित्यज्य (having abandoned) / माम् (to Me) / एकम् (alone) / शरणम् (refuge) / व्रज (go) / अहम् (I) / त्वा (you) / सर्वपापेभ्यः (from all wrongdoing) / मोक्षयिष्यामि (will free) / मा (do not) / शुचः (grieve)","verseType":"declaration","insight":"It shifts the mind from self-managed control to complete reliance on the divine.","quoteVariants":[{"format":"card","text":"Leave every duty behind. Take refuge in Me alone."},{"format":"widget","text":"Release all claims. Refuge is enough."},{"format":"notification","text":"I can let go; I am not carrying this alone."},{"format":"lockscreen","text":"Take refuge. Let grief fall away."}],"requisiteConcepts":["dharma"],"category":"devotional","tone":"surrender","targetAudience":["general","students","parents"],"nodeId":"moksha","nodePath":"convergence","depth":"deep"}');
+
+/***/ })
+
+};
+;

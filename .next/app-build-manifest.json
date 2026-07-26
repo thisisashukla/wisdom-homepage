@@ -1,0 +1,74 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/gita/chapter/[chapter]/verse/[verse]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/gita/chapter/[chapter]/verse/[verse]/page.js"
+    ],
+    "/gita/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/gita/layout.css",
+      "static/chunks/app/gita/layout.js"
+    ],
+    "/hi/gita/topic/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hi/gita/topic/[slug]/page.js"
+    ],
+    "/hi/gita/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/hi/gita/layout.css",
+      "static/chunks/app/hi/gita/layout.js"
+    ],
+    "/gita/topic/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/gita/topic/[slug]/page.js"
+    ],
+    "/hi/gita/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hi/gita/page.js"
+    ],
+    "/hi/gita/chapter/[chapter]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hi/gita/chapter/[chapter]/page.js"
+    ],
+    "/hi/gita/chapter/[chapter]/verse/[verse]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hi/gita/chapter/[chapter]/verse/[verse]/page.js"
+    ],
+    "/gita/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/gita/page.js"
+    ],
+    "/blogs/dharma-meaning-bhagavad-gita/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blogs/dharma-meaning-bhagavad-gita/page.js"
+    ],
+    "/blogs/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/blogs/layout.css",
+      "static/chunks/app/blogs/layout.js"
+    ]
+  }
+}

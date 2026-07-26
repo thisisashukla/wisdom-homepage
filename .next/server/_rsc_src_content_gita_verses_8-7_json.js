@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-7_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-7_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-7.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/8-7.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":7,"order":317,"sanskrit":"तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च । मय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम् ॥","hindiTranslation":"इसलिये तू सब समयमें मेरा स्मरण कर और युद्ध भी कर ।  मेरेमें मन और बुद्धि अर्पित करनेवाला तू निःसन्देह मेरेको ही प्राप्त होगा ॥","englishTranslation":"Therefore, remember Me at all times and fight. With mind and intellect offered to Me, you will surely come to Me.","essence":"Action and remembrance can happen together without conflict.","speaker":"Krishna","deity":"","tags":["smarana","nishkama-karma","mind-offering","battlefield-dharma","bhakti-yoga"],"simpleMeaning":"Keep the divine in mind all the time, do your duty, and place your thoughts and understanding there. Then you will surely reach the divine.","simpleInsight":"You do not have to choose between devotion and action. Both can live in the same moment.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen before the battle. Krishna has already taught that the final thought shapes the final destination. Now he goes further: remembrance and action are not opposites, and a warrior can fight without losing inward devotion.","modernRelevance":"You are in the middle of a hard conversation, heart racing, ready to back away. This verse says you can stay present, do what must be done, and keep your attention anchored.","translationLiteral":"तस्मात् (therefore) / सर्वेषु कालेषु (at all times) / माम् (Me) / अनुस्मर (remember continuously) / युध्य (fight) / च (and) / मयि (in Me) / अर्पित (offered) / मनः (mind) / बुद्धिः (intellect) / माम् (Me) / एव (indeed) / एष्यसि (you will come) / असंशयम् (without doubt)","verseType":"teaching","insight":"It joins outer duty with inward remembrance, so action no longer fragments the mind.","quoteVariants":[{"format":"card","text":"Remember the divine at all times. Fight with your whole mind offered."},{"format":"widget","text":"Remember. Act. Offer mind and intellect."},{"format":"notification","text":"Stay with the divine, even while you fight."},{"format":"lockscreen","text":"Remember the divine. Act without splitting."}],"requisiteConcepts":["Bhakti","Dharma","Manas","Buddhi"],"category":"devotional","tone":"devotional","targetAudience":["general","students","professionals"],"nodeId":"surrender","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

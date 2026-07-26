@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_14-4_json";
+exports.ids = ["_rsc_src_content_gita_verses_14-4_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/14-4.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/14-4.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":14,"verse":4,"order":528,"sanskrit":"सर्वयोनिषु कौन्तेय मूर्तयः सम्भवन्ति याः । तासां ब्रह्म महद्योनिरहं बीजप्रदः पिता ॥","hindiTranslation":"हे कुन्तीनन्दन  सम्पूर्ण योनियोंमें प्राणियोंके जितने शरीर पैदा होते हैं, उन सबकी मूल प्रकृति तो माता है और मैं बीजस्थापन करनेवाला पिता हूँ ॥","englishTranslation":"O son of Kunti, in all forms of birth, the material nature is the womb, and I am the seed-giving father.","essence":"All forms arise from one source, and the divine gives them life.","speaker":"Krishna","deity":"","tags":["prakriti","mahat-brahma","yoni","seed","cosmic-origin"],"simpleMeaning":"All living forms come from the same source of nature, while Krishna says he is the seed-giving father behind their coming into being.","simpleInsight":"You are not isolated from life. Everything that appears is joined by one hidden source.","detailedMeaning":"On the battlefield, Arjuna is still frozen while Krishna explains how life itself unfolds. After describing nature as the womb of all beings, Krishna says he is the seed-giving father, linking every form of life to a single divine source.","modernRelevance":"You look at a newborn’s face and then at an old family photo, and the same lineage runs through both. Behind every separate life, there is one shared source you rarely notice.","translationLiteral":"सर्वयोनिषु (in all wombs/forms of birth) / कौन्तेय (O son of Kunti) / मूर्तयः (forms/bodies) / सम्भवन्ति (come into being) / याः (which) / तासाम् (of those) / ब्रह्म (material nature) / महत् (great) / योनिः (womb/source) / अहम् (I) / बीजप्रदः (seed-giving) / पिता (father)","verseType":"teaching","insight":"It shifts attention from isolated individuals to the one source from which all forms arise.","quoteVariants":[{"format":"card","text":"All life rises from one source. I am the seed behind every birth."},{"format":"widget","text":"One source. One seed."},{"format":"notification","text":"Every birth has one source, and one giver of seed."},{"format":"lockscreen","text":"One source births all forms."}],"requisiteConcepts":["Prakriti"],"category":"devotional","tone":"expansive","targetAudience":["general"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

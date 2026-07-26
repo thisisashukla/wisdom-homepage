@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-61_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-61_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-61.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-61.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":61,"order":108,"sanskrit":"तानि सर्वाणि संयम्य युक्त आसीत मत्परः । वशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता ॥","hindiTranslation":"कर्मयोगी साधक उन सम्पूर्ण इन्द्रियोंको वशमें करके मेरे परायण होकर बैठे क्योंकि जिसकी इन्द्रियाँ वशमें हैं, उसकी बुद्धि प्रतिष्ठित है ॥","englishTranslation":"Having restrained all the senses, the disciplined one should sit devoted to Me. For one whose senses are under control, wisdom is firmly established.","essence":"Wisdom becomes steady only when the senses are no longer in charge.","speaker":"Krishna","deity":"","tags":["indriya-samyama","pragya","sense-control","inner-discipline","mind-stability"],"simpleMeaning":"Hold the senses in check and stay focused on the divine. When the senses are controlled, clear wisdom becomes steady.","simpleInsight":"Self-control is not repression; it creates the inner steadiness needed for clear judgment.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna is overwhelmed before the fight even begins. Krishna answers his confusion by pointing to inner discipline: control the senses, turn the mind toward the divine, and wisdom will stop wavering.","modernRelevance":"You open your phone to avoid one hard message and lose ten minutes. The real issue is not the screen — it is whether your senses are steering you or you are steering them.","translationLiteral":"तानि (those) / सर्वाणि (all) / संयम्य (having restrained) / युक्तः (disciplined, aligned) / आसीत (should sit) / मत्परः (devoted to Me) / वशे (under control) / हि (indeed) / यस्य (whose) / इन्द्रियाणि (senses) / तस्य (of that one) / प्रज्ञा (wisdom) / प्रतिष्ठिता (firmly established)","verseType":"teaching","insight":"It shifts attention from reacting to every impulse toward holding the senses steady so judgment can stay clear.","quoteVariants":[{"format":"card","text":"Control the senses. Then wisdom stands firm."},{"format":"widget","text":"Senses restrained, wisdom stands."},{"format":"notification","text":"My senses settle, and my mind does too."},{"format":"lockscreen","text":"Restrain the senses. Steady the mind."}],"requisiteConcepts":["Indriya","Pragya"],"category":"philosophical","tone":"grounding","targetAudience":["students","professionals","general"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

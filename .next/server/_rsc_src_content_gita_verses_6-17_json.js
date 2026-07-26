@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-17_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-17_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-17.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-17.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":17,"order":250,"sanskrit":"युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु । युक्तस्वप्नावबोधस्य योगो भवति दुःखहा ॥","hindiTranslation":"दुःखोंका नाश करनेवाला योग तो यथायोग्य आहार और विहार करनेवालेका, कर्मोंमें यथायोग्य चेष्टा करनेवालेका तथा यथायोग्य सोने और जागनेवालेका ही सिद्ध होता है ॥","englishTranslation":"Yoga that destroys suffering comes from balanced eating, balanced activity, balanced work, and balanced sleep and waking.","essence":"Balanced living makes inner practice possible.","speaker":"Krishna","deity":"","tags":["dhyana","moderation","sleep","ahara","vihara"],"simpleMeaning":"A steady practice works when daily life is balanced: eating, moving, working, sleeping, and waking all in proper measure.","simpleInsight":"Inner steadiness starts with ordinary habits, not with forcing the mind.","detailedMeaning":"Krishna is still teaching Arjuna how to steady himself after the battlefield collapse. He says meditation will not hold if the body and daily routine are extreme. The practice becomes possible only when life itself is kept in balance.","modernRelevance":"You skip meals, scroll past midnight, then wonder why your mind feels broken during the hard conversation at 9 a.m. Balance in the body gives the mind a place to stand.","translationLiteral":"युक्ताहारविहारस्य (of one with balanced eating and movement) / युक्तचेष्टस्य (of one with balanced effort) / कर्मसु (in actions) / युक्तस्वप्नावबोधस्य (of one with balanced sleep and waking) / योगः (yoga) / भवति (becomes) / दुःखहा (destroyer of suffering)","verseType":"teaching","insight":"It shifts discipline from heroic intensity to sustainable rhythm.","quoteVariants":[{"format":"card","text":"Balance your habits. Yoga destroys suffering."},{"format":"widget","text":"Eat, work, sleep in measure."},{"format":"notification","text":"Maybe suffering eases when your habits stop swinging."},{"format":"lockscreen","text":"Live in measure. Let suffering fall."}],"requisiteConcepts":["Yoga"],"category":"philosophical","tone":"grounding","targetAudience":["students","professionals","general"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

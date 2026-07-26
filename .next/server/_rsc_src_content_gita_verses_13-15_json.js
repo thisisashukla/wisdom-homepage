@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-15_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-15_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-15.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/13-15.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":15,"order":504,"sanskrit":"सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम् । असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च ॥","hindiTranslation":"वे परमात्मा सम्पूर्ण इन्द्रियोंसे रहित हैं और सम्पूर्ण इन्द्रियोंके विषयोंको प्रकाशित करनेवाले हैं आसक्तिरहित हैं और सम्पूर्ण संसारका भरणपोषण करनेवाले हैं तथा गुणोंसे रहित हैं और सम्पूर्ण गुणोंके भोक्ता हैं ॥","englishTranslation":"The supreme reality has no senses, yet illumines every sense-object. It is detached, supports all beings, beyond the three qualities, and yet experiences the qualities.","essence":"What sustains everything is beyond the senses that perceive it.","speaker":"Krishna","deity":"Krishna","tags":["kshetrajna","gunas","nirguna","sarvabhrit","indriya"],"simpleMeaning":"The supreme being has no senses, yet makes all perception possible. It is free from attachment, sustains everything, stands beyond the three qualities, and still experiences them all.","simpleInsight":"You are held by what is beyond grasping. That can bring quiet trust.","detailedMeaning":"On Kurukshetra, Arjuna is still stunned by Krishna\'s teaching about the field and the knower of the field. Krishna now describes the supreme reality in paradox: beyond bodily senses, yet the source of all experience; beyond qualities, yet present to all qualities.","modernRelevance":"You sit in a hospital corridor, unable to fix the outcome. Something larger than your control is still holding the whole scene together.","translationLiteral":"सर्वेन्द्रियगुणाभासम् (shining through the qualities of all senses) / सर्वेन्द्रियविवर्जितम् (devoid of all senses) / असक्तम् (unattached) / सर्वभृत् (supporter of all) / च (and) / एव (indeed) / निर्गुणम् (without qualities) / गुणभोक्तृ (enjoyer of qualities) / च (and)","verseType":"declaration","insight":"It shifts attention from visible form to the unseen presence that makes all form possible.","quoteVariants":[],"requisiteConcepts":["Brahman","gunas","indriya"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

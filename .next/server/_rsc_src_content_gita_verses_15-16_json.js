@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-16_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-16_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-16.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/15-16.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":16,"order":567,"sanskrit":"द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च । क्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते ॥","hindiTranslation":"इस संसारमें क्षर नाशवान् और अक्षर अविनाशी  ये दो प्रकारके पुरुष हैं ।  सम्पूर्ण प्राणियोंके शरीर नाशवान् और कूटस्थ जीवात्मा अविनाशी कहा जाता है ॥","englishTranslation":"In this world, there are two kinds of beings: the perishable and the imperishable. All embodied beings are perishable; the steadfast one is called imperishable.","essence":"What changes is not the whole of you.","speaker":"Krishna","deity":"","tags":["kshara","akshara","kootastha","purusha","impermanence"],"simpleMeaning":"There are two kinds of existence here: what changes and what does not. Bodies pass away, but the unchanging reality within remains.","simpleInsight":"You can stop clinging to what fades and rest in what does not.","detailedMeaning":"On the battlefield, Arjuna is frozen between duty and grief. Krishna widens the frame beyond the war: all bodies are temporary, but the steady reality within them is not. This verse prepares Arjuna to act without mistaking the body for the whole person.","modernRelevance":"You watch a loved one age in a hospital room and feel time stripping everything away. This verse reminds you that what changes is not the deepest reality of a person.","translationLiteral":"द्वौ (two) / इमौ (these) / पुरुषौ (beings) / लोके (in the world) / क्षरः (perishable) / च (and) / अक्षरः (imperishable) / एव (indeed) / च (and) / क्षरः (perishable) / सर्वाणि (all) / भूतानि (beings) / कूटस्थः (steadfast) / अक्षरः (imperishable) / उच्यते (is called)","verseType":"teaching","insight":"It shifts the mind from identifying with the changing body to recognising the unchanging witness.","quoteVariants":[{"format":"card","text":"All embodied beings pass. The steadfast one does not."},{"format":"widget","text":"Passage and permanence."},{"format":"notification","text":"Everything changing is not the whole story."},{"format":"lockscreen","text":"What changes is not all you are."}],"requisiteConcepts":["Purusha"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

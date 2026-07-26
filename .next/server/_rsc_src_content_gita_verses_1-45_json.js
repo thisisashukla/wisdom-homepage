@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-45_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-45_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-45.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-45.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":45,"order":45,"sanskrit":"अहो बत महत्पापं कर्तुं व्यवसिता वयम् । यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः ॥","hindiTranslation":"यह बड़े आश्चर्य और खेद की बात है कि हमलोग बड़ा भारी पाप करने का निश्चय कर बैठे हैं, जो कि राज्य और सुख के लोभ से अपने स्वजनों को मारने के लिये तैयार हो गये हैं ॥","englishTranslation":"Alas, we have resolved to commit a grave wrong—driven by greed for kingdom and pleasure, we are ready to kill our own kin.","essence":"Greed can make even victory feel like a crime.","speaker":"Arjuna","deity":"","tags":["kinship","moral-crisis","greed","arjuna-vishada","violence"],"simpleMeaning":"Arjuna sees the war as a terrible wrong. He feels they are driven by greed for power and pleasure, and ready to kill their own relatives.","simpleInsight":"A clear conscience can appear even in the middle of confusion.","detailedMeaning":"On Kurukshetra, Arjuna looks at the armies and recoils. The fight is no longer about victory; it feels like kin-killing for power and comfort. This verse captures the moment his moral horror becomes explicit.","modernRelevance":"You are about to send the message that will break a family apart, and you can feel the wrongness before your finger moves. That hesitation is not weakness.","translationLiteral":"अहो बत (alas indeed) / महत्पापं (great sin / grave wrong) / कर्तुं (to do) / व्यवसिता (resolved) / वयम् (we) / यत् (that) / राज्यसुखलोभेन (by greed for kingdom-pleasure) / हन्तुं (to kill) / स्वजनम् (one\'s own people / kin) / उद्यताः (prepared / ready)","verseType":"declaration","insight":"It shifts the mind from winning at any cost to noticing the moral price of winning.","quoteVariants":[],"requisiteConcepts":["dharma","adharma"],"category":"philosophical","tone":"reflective","targetAudience":["general","couples"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

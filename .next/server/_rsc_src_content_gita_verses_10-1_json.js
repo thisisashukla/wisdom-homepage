@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-1_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-1_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-1.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/10-1.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":1,"order":373,"sanskrit":"श्री भगवानुवाचभूय एव महाबाहो श्रृणु मे परमं वचः । यत्तेऽहं प्रीयमाणाय वक्ष्यामि हितकाम्यया ॥","hindiTranslation":"श्रीभगवान् बोले  हे महाबाहो अर्जुन  मेरे परम वचनको तुम फिर भी सुनो, जिसे मैं तुम्हारे हितकी कामनासे कहूँगा क्योंकि तुम मेरेमें अत्यन्त प्रेम रखते हो ॥","englishTranslation":"The Blessed Lord said: Listen again, O mighty-armed one, to my supreme word, which I will speak for your welfare because you are deeply dear to me.","essence":"Deeper truth arrives as care for the one who is ready.","speaker":"Krishna","deity":"","tags":["vibhuti","krishna-speech","supreme-word","listener-dear","chapter-10"],"simpleMeaning":"Krishna asks Arjuna to listen again to a deeper teaching, spoken for Arjuna’s good because he is dear to him.","simpleInsight":"Being loved means being taught what you most need, not only what you want to hear.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna stands overwhelmed while Krishna prepares to reveal a deeper teaching. This verse opens the tenth chapter by showing that the coming wisdom is not abstract; it is spoken personally, out of care, to steady Arjuna before the war.","modernRelevance":"A mentor leans in after your second failed attempt and says, “Listen carefully — I’m telling you this for your good.” The hardest truths often arrive wrapped in care.","translationLiteral":"श्रीभगवानुवाच (the Blessed Lord said) / भूयः (again) / एव (indeed) / महाबाहो (O mighty-armed one) / श्रृणु (listen) / मे (to my) / परमम् (supreme) / वचः (word) / यत् (which) / ते (to you) / अहम् (I) / प्रीयमाणाय (to one who is dear) / वक्ष्यामि (will speak) / हितकाम्यया (with desire for your welfare)","verseType":"declaration","insight":"It frames teaching as an act of loving concern, not distant instruction.","quoteVariants":[],"requisiteConcepts":["Bhakti"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

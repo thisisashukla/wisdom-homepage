@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-55_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-55_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-55.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-55.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":55,"order":102,"sanskrit":"श्री भगवानुवाचप्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान् । आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते ॥","hindiTranslation":"श्रीभगवान् बोले  हे पृथानन्दन  जिस कालमें साधक मनोगत सम्पूर्ण कामनाओंका अच्छी तरह त्याग कर देता है और अपनेआपसे अपनेआपमें ही सन्तुष्ट रहता है, उस कालमें वह स्थितप्रज्ञ कहा जाता है ॥","englishTranslation":"The divine said: When a person gives up all desires that arise in the mind, and is satisfied in the true self by the true self alone, that person is called steady in wisdom.","essence":"Steadiness begins when desire no longer defines your sense of enough.","speaker":"Krishna","deity":"","tags":["sthitaprajna","kama","contentment","manas","atma"],"simpleMeaning":"A person becomes steady in wisdom when all mental desires are released and contentment comes from within, not from outside things.","simpleInsight":"There is relief in not needing anything extra to feel complete.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has asked what a truly steady person looks like. Krishna answers by describing the inner turning point: desire no longer rules the mind, and contentment comes from the true self itself.","modernRelevance":"You finally get the promotion, the message, the praise — and still feel restless. This verse points to the deeper shift: stop waiting for outside approval to settle you.","translationLiteral":"श्री भगवानुवाच (the divine said) / प्रजहाति (gives up) / यदा (when) / कामान् (desires) / सर्वान् (all) / पार्थ (O Partha) / मनोगतान् (arising in the mind) / आत्मनि (in the true self) / एव (indeed) / आत्मना (by the true self) / तुष्टः (satisfied) / स्थितप्रज्ञः (steady in wisdom) / तदा (then) / उच्यते (is called)","verseType":"declaration","insight":"It shifts the mind from chasing satisfaction to recognising contentment as inward and already available.","quoteVariants":[{"format":"card","text":"Desire falls away. The true self becomes enough."},{"format":"widget","text":"Want nothing. Rest within."},{"format":"notification","text":"Peace begins when the mind stops asking for more."},{"format":"lockscreen","text":"Rest in the true self alone."}],"requisiteConcepts":["Atman","Manas","Kama","Buddhi"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

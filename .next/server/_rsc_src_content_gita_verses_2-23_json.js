@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-23_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-23_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-23.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-23.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":23,"order":70,"sanskrit":"नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः । न चैनं क्लेदयन्त्यापो न शोषयति मारुतः ॥","hindiTranslation":"शस्त्र इस शरीरीको काट नहीं सकते, अग्नि इसको जला नहीं सकती, जल इसको गीला नहीं कर सकता और वायु इसको सुखा नहीं सकती ॥","englishTranslation":"Weapons cannot cut it, fire cannot burn it, water cannot wet it, and wind cannot dry it.","essence":"Your deepest reality is beyond every physical force.","speaker":"Krishna","deity":"","tags":["atman","indestructible self","kurukshetra","physical elements","immortality"],"simpleMeaning":"The true self cannot be harmed by weapons, fire, water, or wind. It is beyond physical destruction.","simpleInsight":"Fear loosens when you stop treating the deepest part of you as fragile.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen before the war begins. Krishna answers his fear by explaining that the inner being is not made of matter at all, so no physical force can destroy it.","modernRelevance":"You read the message that changes everything after a breakup, a diagnosis, or a dismissal. The body may be shaken, but the deepest part of you is not at the mercy of events.","translationLiteral":"नैनं (not this) / छिन्दन्ति (cut) / शस्त्राणि (weapons) / नैनं (not this) / दहति (burns) / पावकः (fire) / न (not) / च (and) / एनं (this) / क्लेदयन्ति (wet) / आपो (waters) / न (not) / शोषयति (dries) / मारुतः (wind)","verseType":"declaration","insight":"It shifts attention from protecting the body to recognising the untouched witness within.","quoteVariants":[{"format":"card","text":"What you are cannot be destroyed. No force can touch it."},{"format":"widget","text":"Uncuttable. Unburnable. Undrying."},{"format":"notification","text":"Nothing can touch what you truly are."},{"format":"lockscreen","text":"You cannot be destroyed."}],"requisiteConcepts":["Atman","dehi"],"category":"philosophical","tone":"expansive","targetAudience":["general","students"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

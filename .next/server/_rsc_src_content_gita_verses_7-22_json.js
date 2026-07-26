@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-22_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-22_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-22.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/7-22.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":22,"order":302,"sanskrit":"स तया श्रद्धया युक्तस्तस्याराधनमीहते । लभते च ततः कामान्मयैव विहितान् हि तान् ॥","hindiTranslation":"उस मेरे द्वारा दृढ़ की हुई श्रद्धासे युक्त होकर वह मनुष्य सकामभावपूर्वक उस देवताकी उपासना करता है और उसकी वह कामना पूरी भी होती है परन्तु वह कामनापूर्ति मेरे द्वारा विहित की हुई होती है ॥","englishTranslation":"Endowed with that faith, that person seeks that worship, and receives those desires, granted by Me alone.","essence":"Faith draws the result, but the deeper order grants it.","speaker":"Krishna","deity":"","tags":["shraddha","devata-upasana","kamya-phala","bhagavata-order","chapter-7"],"simpleMeaning":"A person with strong faith turns to that chosen deity and gets the desired result, but even that fulfillment is ultimately arranged by Krishna.","simpleInsight":"What feels like a personal gain is still being held within a larger order.","detailedMeaning":"Krishna is explaining to Arjuna why people with mixed motives worship different deities. He has already said he strengthens their faith; now he adds that the resulting fulfillment also comes through his ordering, not independent power.","modernRelevance":"You finally get the opportunity you prayed for, and it feels completely earned. This verse asks you to notice the hidden order behind the result, not just your effort.","translationLiteral":"स (that person) / तया (with that) / श्रद्धया (faith) / युक्तः (endowed) / तस्य (of that) / आराधनम् (worship) / ईहते (seeks) / लभते (obtains) / च (and) / ततः (then) / कामान् (desires) / मया (by Me) / एव (alone) / विहितान् (ordained) / हि (indeed) / तान् (those)","verseType":"teaching","insight":"It shifts attention from the visible object of worship to the deeper source that makes any result possible.","quoteVariants":[],"requisiteConcepts":["Shraddha","Deva"],"category":"devotional","tone":"reflective","targetAudience":["general"],"nodeId":"trust","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

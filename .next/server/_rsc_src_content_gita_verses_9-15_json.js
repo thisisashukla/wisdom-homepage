@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-15_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-15_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-15.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-15.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":15,"order":353,"sanskrit":"ज्ञानयज्ञेन चाप्यन्ये यजन्तो मामुपासते । एकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम् ॥","hindiTranslation":"दूसरे साधक ज्ञानयज्ञके द्वारा एकीभावसे अभेदभावसे मेरा पूजन करते हुए मेरी उपासना करते हैं और दूसरे कई साधक अपनेको पृथक् मानकर चारों तरफ मुखवाले मेरे विराट्ररुपकी अर्थात् संसारको मेरा विराट्ररुप मानकर सेव्यसेवकभावसे मेरी अनेक प्रकारसे उपासना करते हैं ॥","englishTranslation":"Others worship Me through the sacrifice of knowledge, seeing Me as one, as separate, or as the all-facing form.","essence":"The same reality can be approached as one, many, or all-encompassing.","speaker":"Krishna","deity":"Krishna","tags":["jnana-yajna","vishvatomukha","ekatva","prthaktva","upasana"],"simpleMeaning":"Some people worship Krishna through understanding. They see him as one reality, as separate forms, or as the universal form facing everywhere.","simpleInsight":"There is more than one way to approach the divine, and sincere understanding itself can become worship.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna still stands frozen while Krishna reveals how people come near him. After describing devotion and sacrifice, Krishna adds that some approach through knowledge, seeing him as one, as distinct, or as the all-facing universal form.","modernRelevance":"You are trying to make sense of a loss, and every explanation feels partial. One person sees unity, another sees difference, another sees the whole pattern. The verse says all three can be forms of reverent seeing.","translationLiteral":"ज्ञानयज्ञेन (through the sacrifice of knowledge) / च (and) / अपि (also) / अन्ये (others) / यजन्तः (worshipping) / माम् (Me) / उपासते (they worship) / एकत्वेन (through oneness) / पृथक्त्वेन (through separateness) / बहुधा (in many ways) / विश्वतोमुखम् (the all-facing one)","verseType":"teaching","insight":"It expands devotion beyond one style of belief and shows that understanding can itself be an offering.","quoteVariants":[{"format":"card","text":"Some worship Me through knowledge, seeing Me as one, many, and all-facing."},{"format":"widget","text":"One, many, all-facing."},{"format":"notification","text":"Knowledge can worship from many angles."},{"format":"lockscreen","text":"See the one in every form."}],"requisiteConcepts":["upasana","jnana","vishvarupa"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

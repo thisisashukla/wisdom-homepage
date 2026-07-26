@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-20_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-20_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-20.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-20.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":20,"order":253,"sanskrit":"यत्रोपरमते चित्तं निरुद्धं योगसेवया । यत्र चैवात्मनाऽऽत्मानं पश्यन्नात्मनि तुष्यति ॥","hindiTranslation":"योगका सेवन करनेसे जिस अवस्थामें निरुद्ध चित्त उपराम हो जाता है तथा जिस अवस्थामें स्वयं अपनेआप से अपनेआपको देखता हुआ अपनेआपमें ही सन्तुष्ट हो जाता है ॥","englishTranslation":"When the restrained mind becomes still through yoga practice, and the person sees the true self by the true self, one is content in the true self alone.","essence":"Stillness reveals a completeness that no outside thing can improve.","speaker":"Krishna","deity":"","tags":["dhyana","chitta","uparama","atman-darshan","self-contentment"],"simpleMeaning":"Through steady yoga practice, the mind becomes quiet. In that quiet, a person directly sees the true self and feels complete within it.","simpleInsight":"Stillness is not emptiness; it is the relief of no longer needing anything outside yourself.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is still trapped in inner conflict. Krishna describes the state meditation can reach: the mind settles, the true self is directly seen, and contentment no longer depends on outside things.","modernRelevance":"You finally put the phone down after an hour of scrolling and sit in silence. The noise thins, and the craving for one more distraction loses its grip.","translationLiteral":"यत्र (where/in which state) / उपरमते (comes to rest) / चित्तम् (the mind) / निरुद्धम् (restrained) / योगसेवया (through the practice of yoga) / यत्र (where/in which state) / च (and) / एव (indeed) / आत्मना (by the true self) / आत्मानम् (the true self) / पश्यन् (seeing) / आत्मनि (in the true self) / तुष्यति (is content)","verseType":"teaching","insight":"It shifts attention from chasing stimulation to resting in direct awareness.","quoteVariants":[{"format":"card","text":"The mind rests. The true self sees the true self and wants nothing else."},{"format":"widget","text":"Mind rests; the true self remains."},{"format":"notification","text":"Stillness is when the true self is enough."},{"format":"lockscreen","text":"Rest in yourself. Nothing more is needed."}],"requisiteConcepts":["chitta","atman","yoga"],"category":"philosophical","tone":"calming","targetAudience":["students","professionals","general"],"nodeId":"stillness","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

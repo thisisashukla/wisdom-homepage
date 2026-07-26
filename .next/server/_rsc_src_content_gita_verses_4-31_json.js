@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-31_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-31_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-31.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-31.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":31,"order":193,"sanskrit":"यज्ञशिष्टामृतभुजो यान्ति ब्रह्म सनातनम् । नायं लोकोऽस्त्ययज्ञस्य कुतो़ऽन्यः कुरुसत्तम ॥","hindiTranslation":"हे कुरुवंशियोंमें श्रेष्ठ अर्जुन  यज्ञसे बचे हुए अमृतका अनुभव करनेवाले सनातन परब्रह्म परमात्माको प्राप्त होते हैं ।  यज्ञ न करनेवाले मनुष्यके लिये यह मनुष्यलोक भी सुखदायक नहीं है, फिर परलोक कैसे सुखदायक होगा ॥","englishTranslation":"Those who partake of the nectar left over from sacrifice attain the eternal supreme reality. This world is not for the one who does not perform sacrifice; how then the next world?","essence":"A life without offering cannot even support itself.","speaker":"Krishna","deity":"","tags":["yajna","anna-prasada","reciprocity","karma-yoga","sacrifice"],"simpleMeaning":"People who live by sacrifice and accept its blessed remainder move toward the eternal supreme reality. Without sacrifice, even this life loses its value, so the next one cannot be better.","simpleInsight":"There is relief in giving before taking. Life feels fuller when you live as a participant, not a consumer.","detailedMeaning":"On the battlefield, Arjuna is frozen while Krishna explains how action can become sacred. After describing many forms of sacrifice, Krishna says that those who receive the blessed remainder of sacrifice move toward the eternal supreme reality, while a life without sacrifice cannot even sustain this world.","modernRelevance":"You keep taking from a relationship, a team, or a family without giving anything back. Eventually the whole thing feels lifeless. The verse says participation is what keeps life alive.","translationLiteral":"यज्ञशिष्टामृतभुजो (those who eat the nectar left over from sacrifice) / यान्ति (go) / ब्रह्म (to the supreme reality) / सनातनम् (eternal) । / न (not) / अयम् (this) / लोकः (world) / अस्ति (is) / अयज्ञस्य (for one without sacrifice) / कुतः (how) / अन्यः (the other) / कुरुसत्तम (O best among the Kurus)","verseType":"teaching","insight":"It shifts the mind from passive consumption to reciprocal offering, showing that meaningful living depends on contribution.","quoteVariants":[{"format":"card","text":"Share the sacred remainder. Refuse sacrifice, and even this world turns barren."},{"format":"widget","text":"Give. Receive. Refuse nothing sacred."},{"format":"notification","text":"Without sacrifice, even this world feels empty."},{"format":"lockscreen","text":"Offer first. Life opens from there."}],"requisiteConcepts":["Yajna"],"category":"motivational","tone":"grounding","targetAudience":["general","professionals","parents"],"nodeId":"effort","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

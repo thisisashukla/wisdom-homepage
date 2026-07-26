@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-14_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-14_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-14.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-14.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":14,"order":133,"sanskrit":"अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः । यज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः ॥","hindiTranslation":"सम्पूर्ण प्राणी अन्नसे उत्पन्न होते हैं ।  अन्न वर्षासे होती है ।  वर्षा यज्ञसे होती है ।  यज्ञ कर्मोंसे निष्पन्न होता है ।  कर्मोंको तू वेदसे उत्पन्न जान और वेदको अक्षरब्रह्मसे प्रकट हुआ जान ।  इसलिये वह सर्वव्यापी परमात्मा यज्ञ कर्तव्यकर्म में नित्य प्रतिष्ठित है ॥","englishTranslation":"All beings arise from food. Food comes from rain. Rain comes from sacrifice. Sacrifice arises from action.","essence":"Action sustains the cycle that makes life possible.","speaker":"Krishna","deity":"","tags":["yajna","anna","parjanya","karma","sustenance"],"simpleMeaning":"Life depends on a chain: food comes from rain, rain comes from sacrifice, and sacrifice comes from action.","simpleInsight":"Your actions are not isolated; they feed the whole web that sustains life.","detailedMeaning":"On the battlefield, Arjuna is frozen while Krishna explains how human life is held together. This verse begins the chain linking food, rain, sacrifice, and action, showing that personal conduct affects the whole order.","modernRelevance":"You open the fridge after a long week and forget the path behind that meal: weather, work, trade, care. One careless act can still belong to a larger system.","translationLiteral":"अन्नात् (from food) / भवन्ति (come into being) / भूतानि (beings) / पर्जन्यात् (from rain) / अन्नसम्भवः (food-born) / यज्ञात् (from sacrifice) / भवति (comes) / पर्जन्यः (rain) / यज्ञः (sacrifice) / कर्मसमुद्भवः (action-born)","verseType":"teaching","insight":"It shifts attention from private consumption to the shared systems your actions sustain.","quoteVariants":[],"requisiteConcepts":["yajna","karma"],"category":"philosophical","tone":"grounding","targetAudience":["general","students","entrepreneurs"],"nodeId":"effort","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

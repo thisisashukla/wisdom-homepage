@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-16_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-16_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-16.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-16.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":16,"order":135,"sanskrit":"एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः । अघायुरिन्द्रियारामो मोघं पार्थ स जीवति ॥","hindiTranslation":"हे पार्थ जो मनुष्य इस लोकमें इस प्रकार परम्परासे प्रचलित सृष्टिचक्रके अनुसार नहीं चलता, वह इन्द्रियोंके द्वारा भोगोंमें रमण करनेवाला अघायु पापमय जीवन बितानेवाला मनुष्य संसारमें व्यर्थ ही जीता है ॥","englishTranslation":"O Partha, the one who does not follow this cycle set in motion here lives in vain, delighting only in the senses and living a life of wrongdoing.","essence":"A life detached from duty empties itself from within.","speaker":"Krishna","deity":"","tags":["karma-yoga","yajna","indriya-sukha","dharma","cycle-of-action"],"simpleMeaning":"A person who ignores the world’s proper cycle of action and only chases pleasure ends up living a wasted life.","simpleInsight":"There is relief in seeing that a meaningful life is not random pleasure-seeking.","detailedMeaning":"On the battlefield, Arjuna stands frozen while Krishna explains how life itself depends on a shared cycle of action, sacrifice, and responsibility. This verse warns that refusing that order for private pleasure makes a person’s life hollow.","modernRelevance":"You keep scrolling, snacking, and numbing out after a hard day, but something inside feels dead. Krishna names that drift: a life cut off from responsibility begins to waste itself.","translationLiteral":"एवम् (thus) / प्रवर्तितम् (set in motion) / चक्रम् (cycle) / न (not) / अनुवर्तयति (follows) / इह (here) / यः (who) / अघायुः (one whose life is tainted by wrongdoing) / इन्द्रियारामः (delighting in the senses) / मोघम् (in vain) / पार्थ (O Partha) / सः (he) / जीवति (lives)","verseType":"teaching","insight":"It shifts the mind from appetite as freedom to responsibility as the condition for a meaningful life.","quoteVariants":[{"format":"card","text":"Live the cycle. Refuse it, and life turns empty."},{"format":"widget","text":"Refuse the cycle, and life goes hollow."},{"format":"notification","text":"A life ruled by appetite wastes itself."},{"format":"lockscreen","text":"Follow dharma. Don\'t waste your life."}],"requisiteConcepts":["Karma","Dharma","Yajna"],"category":"philosophical","tone":"grounding","targetAudience":["general","students","professionals"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

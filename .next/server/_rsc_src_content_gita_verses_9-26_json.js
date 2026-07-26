@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-26_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-26_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-26.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-26.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":26,"order":364,"sanskrit":"पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति । तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥","hindiTranslation":"जो भक्त पत्र, पुष्प, फल, जल आदि यथासाध्य प्राप्त वस्तु को भक्तिपूर्वक मेरे अर्पण करता है, उस मेरेमें तल्लीन हुए अन्तःकरणवाले भक्तके द्वारा भक्तिपूर्वक दिये हुए उपहारभेंट को मैं खा लेता हूँ ॥","englishTranslation":"Whoever offers me a leaf, a flower, a fruit, or water with devotion, I accept that devoted offering from the pure-hearted.","essence":"A small offering becomes complete when devotion fills it.","speaker":"Krishna","deity":"","tags":["bhakti","naivedya","offering","prasad","sincerity"],"simpleMeaning":"Even the smallest offering becomes meaningful when it is given with devotion and a sincere heart.","simpleInsight":"You do not need grand gestures to be received. Sincerity makes the offering complete.","detailedMeaning":"On the battlefield, Arjuna is frozen, and Krishna begins teaching the kind of relationship that can hold a life together. He says that a simple leaf, flower, fruit, or water offered with devotion is enough for him to accept.","modernRelevance":"You bring a small homemade meal to someone grieving, unsure it is enough. What matters is not the size of the gift, but the love carried into it.","translationLiteral":"पत्रम् (leaf) / पुष्पम् (flower) / फलम् (fruit) / तोयम् (water) / यः (who) / मे (to me) / भक्त्या (with devotion) / प्रयच्छति (offers) / तत् (that) / अहम् (I) / भक्त्युपहृतम् (devotion-offered) / अश्नामि (I accept / consume) / प्रयतात्मनः (of the pure-hearted person)","verseType":"devotional","insight":"It shifts devotion from performance to sincerity, showing that wholehearted offering is what truly counts.","quoteVariants":[{"format":"card","text":"Offer what you have with devotion. The divine accepts the heart, not the price."},{"format":"widget","text":"Devotion matters more than riches."},{"format":"notification","text":"A leaf offered with love is enough."},{"format":"lockscreen","text":"Offer simply. Be wholehearted."}],"requisiteConcepts":["Bhakti"],"category":"devotional","tone":"devotional","targetAudience":["general","parents","students"],"nodeId":"connection","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

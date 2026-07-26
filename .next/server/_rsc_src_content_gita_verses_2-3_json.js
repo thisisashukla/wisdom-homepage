@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-3_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-3_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-3.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/2-3.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":3,"order":50,"sanskrit":"क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते । क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप ॥","hindiTranslation":"हे पृथानन्दन अर्जुन  इस नपुंसकताको मत प्राप्त हो क्योंकि तुम्हारेमें यह उचित नहीं है ।  हे परंतप  हृदयकी इस तुच्छ दुर्बलताका त्याग करके युद्धके लिये खड़े हो जाओ ॥","englishTranslation":"Do not yield to weakness, Partha. It does not suit you. Cast off this petty weakness of heart and rise, scorcher of foes.","essence":"Weakness is optional; the call to act remains.","speaker":"Krishna","deity":"","tags":["arjuna","kurukshetra","hredaudurbalya","partha","courage"],"simpleMeaning":"Krishna tells Arjuna not to sink into weakness. He must drop this small-hearted fear and stand up to fight.","simpleInsight":"There is strength in refusing to stay collapsed when duty calls.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has frozen in grief and doubt. Krishna answers sharply, telling him this collapse does not belong to him. The moment demands courage, not self-pity.","modernRelevance":"You are halfway through a hard conversation, your voice starts shaking, and you want to back out. This verse says the collapse is temporary — stand back up and finish what must be done.","translationLiteral":"क्लैब्यम् (weakness / impotence) / मा स्म (do not) / गमः (go / fall into) / पार्थ (O Partha) / न (not) / एतत् (this) / त्वयि (in you) / उपपद्यते (is fitting) / क्षुद्रम् (petty) / हृदयदौर्बल्यम् (weakness of heart) / त्यक्त्वा (having abandoned) / उत्तिष्ठ (rise) / परन्तप (O scorcher of foes)","verseType":"teaching","insight":"It shifts the mind from self-doubt to immediate responsibility.","quoteVariants":[{"format":"card","text":"Do not yield to weakness. Rise and do what stands before you."},{"format":"widget","text":"Drop weakness. Rise."},{"format":"notification","text":"This weakness is not yours to keep."},{"format":"lockscreen","text":"Cast off weakness. Rise now."}],"requisiteConcepts":["dharma"],"category":"motivational","tone":"inspiring","targetAudience":["general","students","professionals"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

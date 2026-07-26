@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-24_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-24_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-24.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-24.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":24,"order":143,"sanskrit":"उत्सीदेयुरिमे लोका न कुर्यां कर्म चेदहम् । सङ्करस्य च कर्ता स्यामुपहन्यामिमाः प्रजाः ॥","hindiTranslation":"हे पार्थ  अगर मैं किसी समय सावधान होकर कर्तव्यकर्म न करूँ तो बड़ी हानि हो जाय क्योंकि मनुष्य सब प्रकारसे मेरे ही मार्गका अनुसरण करते हैं ।  यदि मैं कर्म न करूँ, तो ये सब मनुष्य नष्टभ्रष्ट हो जायँ और मैं वर्णसंकरताको करनेवाला तथा इस समस्त प्रजाको नष्ट करनेवाला बनूँ ॥","englishTranslation":"If I did not act, these worlds would fall into ruin. I would create disorder and destroy these people.","essence":"Even the highest must act to prevent disorder.","speaker":"Krishna","deity":"","tags":["lokasangraha","duty","karma-yoga","social-order","responsibility"],"simpleMeaning":"Krishna says that even he must keep acting, because if he stopped, society would fall into disorder and people would be harmed.","simpleInsight":"Your actions matter beyond you. Neglecting what you must do can unsettle many lives.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen. Krishna explains that duty is not optional even for the highest being: if he stopped acting, the social order would break and people would suffer. This verse strengthens the case for steady action.","modernRelevance":"You skip the hard conversation, hoping the problem will wait. It doesn\'t. Silence spreads confusion, and everyone around you ends up paying for your avoidance.","translationLiteral":"उत्सीदेयुः (would fall into ruin) / इमे (these) / लोकाः (worlds) / न (not) / कुर्याम् (I would do) / कर्म (action) / चेत् (if) / अहम् (I) / सङ्करस्य (of disorder / mixed confusion) / च (and) / कर्ता (maker) / स्याम् (I would become) / उपहन्याम् (I would destroy) / इमाः (these) / प्रजाः (people)","verseType":"teaching","insight":"It shifts duty from personal preference to responsibility for the wider order.","quoteVariants":[],"requisiteConcepts":["dharma","karma"],"category":"motivational","tone":"grounding","targetAudience":["general","professionals","parents"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

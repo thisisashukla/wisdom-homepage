@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_12-11_json";
+exports.ids = ["_rsc_src_content_gita_verses_12-11_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/12-11.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/12-11.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":12,"verse":11,"order":480,"sanskrit":"अथैतदप्यशक्तोऽसि कर्तुं मद्योगमाश्रितः । सर्वकर्मफलत्यागं ततः कुरु यतात्मवान् ॥","hindiTranslation":"अगर मेरे योगसमता के आश्रित हुआ तू इसपूर्वश्लोकमें कहे गये साधन को भी करनेमें असमर्थ है, तो मनइन्द्रियोंको वशमें करके सम्पूर्ण कर्मोंके फलका त्याग कर ॥","englishTranslation":"If you still cannot do even this while taking refuge in my yoga, then, self-controlled, renounce all fruits of action.","essence":"Let go of the result; the action itself is the practice.","speaker":"Krishna","deity":"","tags":["bhakti-yoga","karmaphala-tyaga","yatayatmana","vairagya","surrender"],"simpleMeaning":"If even devotion-filled practice feels too hard, give up the need to own the results of your actions. Stay controlled and let the work be enough.","simpleInsight":"There is relief in releasing the demand that every action must pay you back.","detailedMeaning":"On Kurukshetra, Arjuna is frozen between duty and grief. Krishna has already offered steadier practices, and now lowers the threshold again: if even that is too hard, renounce attachment to the fruits of action and keep your mind controlled.","modernRelevance":"You sent the message, then kept checking for a reply that could save or ruin your day. This verse asks you to stop feeding on the outcome and return to the act itself.","translationLiteral":"अथ (then) / एतत् अपि (this also) / अशक्तः असि (you are unable) / कर्तुम् (to do) / मद्योगम् आश्रितः (taking refuge in my yoga) / सर्व-कर्म-फल-त्यागम् (renunciation of all fruits of action) / ततः (then) / कुरु (do) / यत-आत्मवान् (self-controlled)","verseType":"teaching","insight":"It shifts attention from owning results to releasing them after sincere effort.","quoteVariants":[],"requisiteConcepts":["Bhakti","Karma","Vairagya"],"category":"devotional","tone":"calming","targetAudience":["general","professionals","students"],"nodeId":"surrender","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

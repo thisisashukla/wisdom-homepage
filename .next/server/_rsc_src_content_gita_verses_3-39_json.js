@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-39_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-39_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-39.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-39.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":39,"order":158,"sanskrit":"आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा । कामरूपेण कौन्तेय दुष्पूरेणानलेन च ॥","hindiTranslation":"और हे कुन्तीनन्दन  इस अग्निके समान कभी तृप्त न होनेवाले और विवेकियोंके नित्य वैरी इस कामके द्वारा मनुष्यका विवेक ढका हुआ है ॥","englishTranslation":"O son of Kunti, wisdom is covered by this desire, the eternal enemy of the wise, as fire is never satisfied.","essence":"Desire does not just tempt; it hides wisdom itself.","speaker":"Krishna","deity":"","tags":["kama","buddhi","avidya","inner conflict","desire"],"simpleMeaning":"Desire hides clear understanding. It never feels satisfied, and it keeps working against the wise like an unquenchable fire.","simpleInsight":"You can see how craving does not just tempt you; it blinds you.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen while Krishna explains the real enemy behind confusion. Desire does not merely distract; it covers wisdom itself, like a fire that never says enough.","modernRelevance":"You open one more tab, then another, then another, hoping the urge will settle. It does not. It keeps your judgment fogged until you notice what is driving you.","translationLiteral":"आवृतम् (covered) / ज्ञानम् (wisdom) / एतेन (by this) / ज्ञानिनः (of the wise) / नित्य-वैरिणा (by the eternal enemy) / काम-रूपेण (in the form of desire) / कौन्तेय (O son of Kunti) / दुष्पूरेण (by the hard-to-satisfy) / अनलेन (by fire)","verseType":"teaching","insight":"It shifts attention from fighting symptoms to seeing desire as the force that clouds judgment.","quoteVariants":[],"requisiteConcepts":["Kama","Buddhi","Viveka"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

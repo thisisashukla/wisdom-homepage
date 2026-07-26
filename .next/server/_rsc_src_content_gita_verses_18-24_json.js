@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-24_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-24_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-24.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-24.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":24,"order":647,"sanskrit":"यत्तु कामेप्सुना कर्म साहङ्कारेण वा पुनः । क्रियते बहुलायासं तद्राजसमुदाहृतम् ॥","hindiTranslation":"परन्तु जो कर्म भोगोंको चाहनेवाले मनुष्यके द्वारा अहंकार अथवा परिश्रमपूर्वक किया जाता है, वह राजस कहा गया है ॥","englishTranslation":"But action done with desire for pleasure, or with ego, or with great strain, is said to be rajasic.","essence":"Desire and ego turn action restless, even when it looks productive.","speaker":"Krishna","deity":"","tags":["rajas","desire-driven-action","ahamkara","strain","guna-triad"],"simpleMeaning":"Action driven by craving, ego, or strain belongs to restlessness, not clarity. It is active, but it is not clean.","simpleInsight":"You can spot the difference between healthy effort and effort fueled by wanting.","detailedMeaning":"On Kurukshetra, with Arjuna frozen and the war still waiting, Krishna explains how action can be shaped by the three qualities. After describing clear action, he now names the kind driven by desire, pride, and strain.","modernRelevance":"You keep pushing because you want the praise, the win, the proof. The work gets done, but it leaves you tighter than before.","translationLiteral":"यत् (which) / तु (but) / कामेप्सुना (by one desiring pleasure) / कर्म (action) / साहङ्कारेण (with ego) / वा (or) / पुनः (again) / क्रियते (is done) / बहुलायासम् (with great effort) / तत् (that) / राजसम् (rajasic) / उदाहृतम् (is called)","verseType":"teaching","insight":"It teaches you to notice when effort is powered by craving and self-importance, not purpose.","quoteVariants":[],"requisiteConcepts":["Ahamkara","Kama"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","entrepreneurs"],"nodeId":"effort","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

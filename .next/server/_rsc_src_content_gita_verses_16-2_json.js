@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_16-2_json";
+exports.ids = ["_rsc_src_content_gita_verses_16-2_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/16-2.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/16-2.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":16,"verse":2,"order":573,"sanskrit":"अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम् । दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम् ॥","hindiTranslation":"अहिंसा, सत्यभाषण क्रोध न करना संसारकी कामनाका त्याग अन्तःकरणमें रागद्वेषजनित हलचलका न होना चुगली न करना प्राणियोंपर दया करना सांसारिक विषयोंमें न ललचाना अन्तःकरणकी कोमलता अकर्तव्य करनेमें लज्जा चपलताका अभाव ॥","englishTranslation":"Nonviolence, truthfulness, freedom from anger, renunciation, inner calm, absence of slander, compassion for all beings, freedom from greed, gentleness, modesty, and absence of restlessness.","essence":"A noble character is proven by how gently it reacts.","speaker":"Krishna","deity":"","tags":["ahimsa","satya","akrodha","dainya","apaisunam"],"simpleMeaning":"A divine life is built from nonviolence, honesty, calm, compassion, restraint, and modest conduct.","simpleInsight":"Virtue is not one grand gesture. It is a steady character that shows up in small reactions.","detailedMeaning":"On the battlefield of Kurukshetra, Krishna continues listing the qualities that mark a noble nature. Arjuna is frozen between duty and fear, and this verse gives him the inner standards that make right action possible.","modernRelevance":"You are about to send the angry message, repeat the gossip, or take the easy shortcut. This verse asks for a different reflex: soften, tell the truth, and stop the spiral.","translationLiteral":"अहिंसा (nonviolence) / सत्य (truth) / अक्रोधः (freedom from anger) / त्यागः (renunciation) / शान्तिः (calm) / अपैशुनम् (absence of slander) / दया (compassion) / भूतेषु (toward beings) / अलोलुप्त्वम् (freedom from greed) / मार्दवम् (gentleness) / ह्रीः (modesty) / अचापलम् (absence of restlessness)","verseType":"teaching","insight":"It trains the mind to replace impulse with restraint, and reaction with humane conduct.","quoteVariants":[],"requisiteConcepts":[],"category":"philosophical","tone":"reflective","targetAudience":["general","students","professionals"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

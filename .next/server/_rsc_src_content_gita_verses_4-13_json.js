@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-13_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-13_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-13.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-13.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":13,"order":175,"sanskrit":"चातुर्वर्ण्यं मया सृष्टं गुणकर्मविभागशः । तस्य कर्तारमपि मां विद्ध्यकर्तारमव्ययम् ॥","hindiTranslation":"मेरे द्वारा गुणों और कर्मोंके विभागपूर्वक चारों वर्णोंकी रचना की गयी है ।  उससृष्टिरचना आदि का कर्ता होनेपर भी मुझ अव्यय रमेश्वरको तू अकर्ता जान ।  कारण कि कर्मोंके फलमें मेरी स्पृहा नहीं है, इसलिये मुझे कर्म लिप्त नहीं करते ।  इस प्रकार जो मुझे तत्त्वसे जान लेता है, वह भी कर्मोंसे नहीं बँधता ॥","englishTranslation":"The four social orders were created by Me according to qualities and actions. Though I am their maker, know Me as the unchanging non-doer.","essence":"The source of order stands outside the order it creates.","speaker":"Krishna","deity":"Krishna","tags":["varna","guna","karma","akarta","avyaya"],"simpleMeaning":"The four social orders arise from qualities and actions, but Krishna says he remains the unchanging one who is not bound by creation.","simpleInsight":"You can participate in structure without being trapped by it.","detailedMeaning":"On the battlefield, Arjuna is frozen by conflict and confusion. Krishna now explains that even the world\'s order comes from him, yet he is not bound by what he sets in motion. The teaching points beyond social roles to the unchanging source behind them.","modernRelevance":"You are handed a role, a label, a family pattern, a job title, and everyone acts as if that is all you are. This verse says the structure may shape action, but it does not imprison the one who sees clearly.","translationLiteral":"चातुर्वर्ण्यम् (the four social orders) / मया (by Me) / सृष्टम् (created) / गुणकर्मविभागशः (according to division of qualities and actions) / तस्य (of that) / कर्तारम् (maker) / अपि (even) / माम् (Me) / विद्धि (know) / अकर्तारम् (as non-doer) / अव्ययम् (unchanging)","verseType":"declaration","insight":"It shifts the mind from identifying with social form to seeing the unchanging awareness behind all roles.","quoteVariants":[{"format":"card","text":"The order of life comes from Me. I remain untouched by it."},{"format":"widget","text":"Created all. Claimed none."},{"format":"notification","text":"The maker is not trapped in the making."},{"format":"lockscreen","text":"Act fully. Remain untouched."}],"requisiteConcepts":["guna","karma","varna"],"category":"philosophical","tone":"expansive","targetAudience":["students","professionals","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

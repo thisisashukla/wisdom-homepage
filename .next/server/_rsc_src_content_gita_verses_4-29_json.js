@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-29_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-29_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-29.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-29.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":29,"order":191,"sanskrit":"अपाने जुह्वति प्राण प्राणेऽपानं तथाऽपरे । प्राणापानगती रुद्ध्वा प्राणायामपरायणाः ॥","hindiTranslation":"दूसरे कितने ही प्राणायामके परायण हुए योगीलोग अपानमें प्राणका पूरक करके, प्राण और अपानकी गति रोककर फिर प्राणमें अपानका हवन करते हैं तथा अन्य कितने ही नियमित आहार करनेवाले प्राणोंका प्राणोंमें हवन किया करते हैं ।  ये सभी साधक यज्ञोंद्वारा पापोंका नाश करनेवाले और यज्ञोंको जाननेवाले हैं ॥","englishTranslation":"Some offer the outgoing breath into the incoming breath, and the incoming breath into the outgoing breath, restraining the movement of both through breath-control as their aim. Others, with regulated food, offer the breaths into the breaths. All of them know sacrifice and are cleansed by sacrifice.","essence":"Breath itself can become disciplined offering.","speaker":"Krishna","deity":"","tags":["pranayama","yajna","regulated-eating","breath-control","tapas"],"simpleMeaning":"Some practitioners use breath-control as a kind of sacrifice. They regulate inhalation and exhalation, and others do the same with disciplined eating.","simpleInsight":"Even breathing can become a disciplined offering, not a restless habit.","detailedMeaning":"On Kurukshetra, Arjuna is frozen, and Krishna keeps unfolding the many forms of disciplined action. After speaking of offerings, austerity, and study, he adds breath-control and regulated eating as living sacrifices done by serious practitioners.","modernRelevance":"You catch yourself holding your breath before sending the message. Instead of letting anxiety drive the body, you slow the breath and regain command of yourself.","translationLiteral":"अपाने (into the outgoing breath) / जुह्वति (offer) / प्राणम् (the incoming breath) / प्राणे (into the incoming breath) / अपानम् (the outgoing breath) / तथाऽपरे (and others likewise) / प्राणापानगती (the movements of incoming and outgoing breaths) / रुद्ध्वा (having restrained) / प्राणायामपरायणाः (devoted to breath-control)","verseType":"teaching","insight":"It turns ordinary bodily regulation into a conscious practice that steadies the mind and weakens impulsive reactivity.","quoteVariants":[],"requisiteConcepts":["prana","apana","pranayama","yajna"],"category":"philosophical","tone":"grounding","targetAudience":["students","general"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

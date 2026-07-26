@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-21_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-21_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-21.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-21.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":21,"order":359,"sanskrit":"ते तं भुक्त्वा स्वर्गलोकं विशालंक्षीणे पुण्ये मर्त्यलोकं विशन्ति । एव त्रयीधर्ममनुप्रपन्नागतागतं कामकामा लभन्ते ॥","hindiTranslation":"वे उस विशाल स्वर्गलोकके भोगोंको भोगकर पुण्य क्षीण होनेपर मृत्युलोकमें आ जाते हैं ।  इस प्रकार तीनों वेदोंमें कहे हुए सकाम धर्मका आश्रय लिये हुए भोगोंकी कामना करनेवाले मनुष्य आवागमनको प्राप्त होते हैं ॥","englishTranslation":"After enjoying the vast heaven-world, they return to the mortal world when their merit is exhausted. Thus, those who follow the ritual path of the three Vedas and seek pleasures gain repeated coming and going.","essence":"What is won by wanting is lost by time.","speaker":"Krishna","deity":"","tags":["svarga","punya","tri-veda","punarjanma","kama"],"simpleMeaning":"People who seek heavenly rewards through ritual enjoy those rewards for a while, but when their merit is used up, they return to ordinary life and the cycle continues.","simpleInsight":"Short-lived rewards feel satisfying, but they do not end restlessness.","detailedMeaning":"On the Kurukshetra field, Krishna is exposing the limits of reward-seeking religion. After describing ritualists who aim for heaven, he says even that highest pleasure is temporary: merit fades, the reward ends, and the seeker returns to mortal life.","modernRelevance":"You finally get the promotion, the applause, the bonus trip — and by Monday the hunger is back. Krishna points to the exhaustion behind every reward that depends on accumulation.","translationLiteral":"ते (they) / तम् (that) / भुक्त्वा (having enjoyed) / स्वर्गलोकम् (heaven-world) / विशालम् (vast) / क्षीणे (having become exhausted) / पुण्ये (merit) / मर्त्यलोकम् (mortal world) / विशन्ति (enter) / एवम् (thus) / त्रयीधर्मम् (the three-Veda ritual dharma) / अनुप्रपन्नाः (having resorted to) / गतागतम् (coming and going) / कामकामा (desiring pleasures) / लभन्ते (obtain)","verseType":"teaching","insight":"It shifts the mind from chasing temporary payoff to seeing the loop beneath it.","quoteVariants":[{"format":"card","text":"Pleasure earned by merit ends. The cycle starts again."},{"format":"widget","text":"Enjoy, return, repeat."},{"format":"notification","text":"Even heaven ends when merit runs out."},{"format":"lockscreen","text":"What is earned is temporary."}],"requisiteConcepts":["Karma","Dharma","Moksha"],"category":"philosophical","tone":"reflective","targetAudience":["general","entrepreneurs","professionals"],"nodeId":"vairagya","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

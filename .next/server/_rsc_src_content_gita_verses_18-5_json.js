@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-5.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/18-5.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":5,"order":628,"sanskrit":"यज्ञदानतपःकर्म न त्याज्यं कार्यमेव तत् । यज्ञो दानं तपश्चैव पावनानि मनीषिणाम् ॥","hindiTranslation":"यज्ञ, दान और तपरूप कर्मोंका त्याग नहीं करना चाहिये, प्रत्युत उनको तो करना ही चाहिये क्योंकि यज्ञ, दान और तप  ये तीनों ही कर्म मनीषियोंको पवित्र करनेवाले हैं ॥","englishTranslation":"Sacrifice, giving, and disciplined effort should not be abandoned; they must be done. These three actions purify thoughtful people.","essence":"What purifies you should be done, not dropped.","speaker":"Krishna","deity":"","tags":["yajna","dana","tapas","renunciation","purification"],"simpleMeaning":"Sacrifice, giving, and disciplined effort should not be dropped. They are actions that purify a thoughtful person.","simpleInsight":"Doing what cleanses you matters more than escaping effort.","detailedMeaning":"On the battlefield, Arjuna is still trapped between renouncing action and acting rightly. Krishna answers by naming three acts that should never be abandoned: sacrifice, giving, and disciplined effort. He is narrowing renunciation into a cleaner, truer form.","modernRelevance":"You want to skip the donation, the difficult conversation, the morning practice. Something in you calls it optional. Krishna says these are exactly the acts that clear the mind.","translationLiteral":"यज्ञ (sacrifice) / दान (giving) / तपःकर्म (discipline-action) / न (not) / त्याज्यम् (to be abandoned) / कार्यम् (to be done) / एव (indeed) / तत् (that) / यज्ञः (sacrifice) / दानम् (giving) / तपः (disciplined effort) / च (and) / एव (indeed) / पावनानि (purifying) / मनीषिणाम् (of thoughtful people)","verseType":"teaching","insight":"It shifts renunciation from avoidance to purification through action.","quoteVariants":[],"requisiteConcepts":["yajna","dana","tapas"],"category":"philosophical","tone":"grounding","targetAudience":["general","students","professionals"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

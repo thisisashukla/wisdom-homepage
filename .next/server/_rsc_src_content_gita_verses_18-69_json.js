@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-69_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-69_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-69.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-69.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":69,"order":692,"sanskrit":"न च तस्मान्मनुष्येषु कश्िचन्मे प्रियकृत्तमः । भविता न च मे तस्मादन्यः प्रियतरो भुवि ॥","hindiTranslation":"उसके समान मेरा अत्यन्त प्रिय कार्य करनेवाला मनुष्योंमें कोई भी नहीं है और इस भूमण्डलपर उसके समान मेरा दूसरा कोई प्रियतर होगा भी नहीं ॥","englishTranslation":"Among all human beings, no one does what is more dear to me than he does. On this earth, no one will ever be dearer than he is.","essence":"Sharing this teaching becomes the highest form of devotion.","speaker":"Krishna","deity":"","tags":["bhakti","teaching-the-teaching","krishna-priya","parama-guhya","knowledge-sharing"],"simpleMeaning":"Anyone who passes on this sacred teaching becomes especially dear to Krishna. No one on earth can surpass that devotion.","simpleInsight":"Teaching what you have received is not small. It is treated as a deeply loving act.","detailedMeaning":"The war is over, and Krishna is giving Arjuna the final seal on the whole dialogue. After warning him to share this teaching carefully, Krishna now says that the one who spreads it with devotion becomes the dearest person on earth to him.","modernRelevance":"You explain a hard-earned lesson to someone who is ready to hear it, not to impress them. The act of passing on what truly helped you becomes its own offering.","translationLiteral":"न च (and not) / तस्मात् (than him) / मनुष्येषु (among human beings) / कश्चित् (anyone) / मे (to me) / प्रिय-कृत्तमः (most dear-doing) / भविता (will become) / न च (and not) / मे (to me) / तस्मात् (than him) / अन्यः (another) / प्रियतरो (dearer) / भुवि (on earth)","verseType":"declaration","insight":"It shifts the reader from private ownership of wisdom to generous transmission of it.","quoteVariants":[{"format":"card","text":"No one is dearer to me than the one who shares this teaching."},{"format":"widget","text":"Share this teaching. Nothing is dearer."},{"format":"notification","text":"Passing this on is what makes you dear."},{"format":"lockscreen","text":"Share the teaching. Be held dear."}],"requisiteConcepts":["Bhakti","Krishna"],"category":"devotional","tone":"devotional","targetAudience":["students","general"],"nodeId":"bhakti-m","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

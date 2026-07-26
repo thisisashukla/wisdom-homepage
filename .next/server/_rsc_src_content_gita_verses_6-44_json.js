@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-44_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-44_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-44.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-44.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":44,"order":277,"sanskrit":"पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः । जिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते ॥","hindiTranslation":"वह श्रीमानोंके घरमें जन्म लेनेवाला योगभ्रष्ट मनुष्य भोगोंके परवश होता हुआ भी पूर्वजन्ममें किये हुए अभ्याससाधन के कारण ही परमात्माकी तरफ खिंच जाता है क्योंकि योगसमता का जिज्ञासु भी वेदोंमें कहे हुए सकाम कर्मोंका अतिक्रमण कर जाता है ॥","englishTranslation":"Even against his will, he is drawn onward by that earlier practice. Even the seeker of yoga goes beyond the sound of ritual words.","essence":"Earlier practice keeps pulling you forward, even against resistance.","speaker":"Krishna","deity":"","tags":["dhyana","abhyasa","yogabhrashta","shabdabrahma","samskara"],"simpleMeaning":"Past practice pulls a person toward yoga even when the person is not fully in control. A sincere seeker also rises beyond ritual words and outer religious forms.","simpleInsight":"Your deepest practice keeps working even when willpower fades.","detailedMeaning":"On the battlefield at Kurukshetra, Arjuna is being taught why no sincere effort is ever wasted. Krishna explains that past practice keeps drawing a fallen yogi back, and even the mere seeker of yoga moves beyond ritual-minded action.","modernRelevance":"You open your meditation app after weeks of skipping it, and something in you still remembers the way. That quiet pull is not random — practice leaves a trail.","translationLiteral":"पूर्वाभ्यासेन (by earlier practice) / तेन (by that) / एव (indeed) / ह्रियते (is drawn away) / हि (certainly) / अवशः (against his will) / अपि (even) / सः (he) । / जिज्ञासुः (seeker) / अपि (even) / योगस्य (of yoga) / शब्दब्रह्म (sound-Brahman / ritual words) / अति-वर्तते (goes beyond) ॥","verseType":"teaching","insight":"It reframes spiritual effort as cumulative: even broken practice keeps carrying you forward.","quoteVariants":[],"requisiteConcepts":["Yoga","Abhyasa","Shabdabrahma"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

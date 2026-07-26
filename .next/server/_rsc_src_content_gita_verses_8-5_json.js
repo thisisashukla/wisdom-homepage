@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-5.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/8-5.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":5,"order":315,"sanskrit":"अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम् । यः प्रयाति स मद्भावं याति नास्त्यत्र संशयः ॥","hindiTranslation":"जो मनुष्य अन्तकालमें भी मेरा स्मरण करते हुए शरीर छोड़कर जाता है, वह मेरे स्वरुप को ही प्राप्त होता है, इसमें सन्देह नहीं है ॥","englishTranslation":"Whoever remembers Me at the end and leaves the body attains My state; there is no doubt.","essence":"The last remembered presence shapes the next state of being.","speaker":"Krishna","deity":"Krishna","tags":["antakala","smarana","madbhava","mrityu","bhakti"],"simpleMeaning":"A person who remembers Krishna at the moment of death and leaves the body reaches Krishna\'s state without doubt.","simpleInsight":"The final thought matters most, so the mind can be trained toward what is highest.","detailedMeaning":"On the battlefield, Arjuna is hearing Krishna describe the inner condition that shapes death itself. After explaining the body, the self, and the sacred act, Krishna now gives the decisive promise: remembrance at the final moment carries a person beyond bodily ending.","modernRelevance":"You are sitting beside a hospital bed, trying to stay steady while everything is slipping away. What the mind holds in that last, fragile moment may matter more than the words anyone says.","translationLiteral":"अन्तकाले (at the end of life) / च (and) / माम् (Me) / एव (indeed) / स्मरन् (remembering) / मुक्त्वा (having छोड़कर / leaving) / कलेवरम् (the body) / यः (who) / प्रयाति (goes forth) / सः (that one) / मद्भावम् (My state) / याति (attains) / न (not) / अस्ति (is) / अत्र (here) / संशयः (doubt)","verseType":"declaration","insight":"It shifts attention from physical ending to the quality of final remembrance.","quoteVariants":[{"format":"card","text":"Remember Me at death. You will come to My state."},{"format":"widget","text":"Remember Me. Leave without fear."},{"format":"notification","text":"The last thought carries you farther than the body."},{"format":"lockscreen","text":"Remember Me at the end."}],"requisiteConcepts":["Bhakti","Smarana"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"trust","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

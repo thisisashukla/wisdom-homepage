@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-6_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-6_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-6.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/5-6.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":6,"order":210,"sanskrit":"संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः । योगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति ॥","hindiTranslation":"परन्तु हे महाबाहो  कर्मयोगके बिना संन्यास सिद्ध होना कठिन है ।  मननशील कर्मयोगी शीघ्र ही ब्रह्मको प्राप्त हो जाता है ॥","englishTranslation":"But, mighty-armed one, renunciation without yoga is hard to attain. The disciplined seeker in yoga quickly reaches the supreme reality.","essence":"Real renunciation grows through practice, not withdrawal.","speaker":"Krishna","deity":"","tags":["karma-sannyasa","renunciation","yoga","brahman","muni"],"simpleMeaning":"Letting go is not achieved by avoiding action. A steady, disciplined path of yoga leads the thoughtful seeker to the supreme reality quickly.","simpleInsight":"Relief comes from knowing that real renunciation is built through practice, not by forcing yourself to withdraw.","detailedMeaning":"On Kurukshetra, Arjuna is frozen between battle and moral collapse. Krishna continues dismantling the false split between renunciation and action, saying that mere withdrawal is hard, but a disciplined seeker can reach Brahman swiftly.","modernRelevance":"You quit the argument, delete the app, and still feel the same pull inside. The outer move did nothing because the habit was never uprooted.","translationLiteral":"संन्यासः (renunciation) / तु (but) / महाबाहो (mighty-armed one) / दुःखम् (with difficulty) / आप्तुम् (to attain) / अयोगतः (without yoga) / योगयुक्तः (joined with yoga) / मुनिः (the contemplative sage) / ब्रह्म (the supreme reality) / नचिरेण (without delay) / अधिगच्छति (attains)","verseType":"teaching","insight":"It shifts renunciation from escape to transformation: act rightly until inner freedom becomes natural.","quoteVariants":[{"format":"card","text":"Renunciation is hard without yoga. Joined to practice, the sage reaches the supreme reality quickly."},{"format":"widget","text":"Renounce through yoga, not escape."},{"format":"notification","text":"Renunciation works only when action is disciplined."},{"format":"lockscreen","text":"Practice first. Renunciation follows."}],"requisiteConcepts":["Yoga","Brahman","Muni"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"vairagya","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

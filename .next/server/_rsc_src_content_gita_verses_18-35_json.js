@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-35_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-35_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-35.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-35.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":35,"order":658,"sanskrit":"यया स्वप्नं भयं शोकं विषादं मदमेव च । न विमुञ्चति दुर्मेधा धृतिः सा पार्थ तामसी ॥","hindiTranslation":"हे पार्थ  दुष्ट बुद्धिवाला मनुष्य जिस धृतिके द्वारा निद्रा, भय, चिन्ता, दुःख और घमण्डको भी नहीं छोड़ता, वह धृति तामसी है ॥","englishTranslation":"The dull-minded one does not let go of sleep, fear, grief, sorrow, and pride. That steadfastness is tamasic, Arjuna.","essence":"Clinging to fear and sorrow is not strength; it is tamasic inertia.","speaker":"Krishna","deity":"","tags":["tamasic","dhriti","gunas","fear","grief"],"simpleMeaning":"Some people hold on to sleepiness, fear, grief, despair, and pride instead of releasing them. That kind of stubbornness is dull and tamasic.","simpleInsight":"Not every kind of firmness is strength; some of it is just clinging to what keeps you heavy.","detailedMeaning":"On the battlefield at Kurukshetra, Krishna is classifying the kinds of resolve that drive action. After describing sattvic and rajasic steadfastness, he names the lowest form: the mind that cannot release fear, grief, sorrow, sleep, or pride.","modernRelevance":"You keep replaying the same failure in bed at 2 a.m., feeding the fear instead of setting it down. Krishna calls that not strength, but heaviness.","translationLiteral":"यया (by which) / स्वप्नम् (sleep) / भयम् (fear) / शोकम् (grief) / विषादम् (sorrow) / मदम् (pride) / एव (even) / च (and) / न विमुञ्चति (does not let go) / दुर्मेधाः (the dull-minded one) / धृतिः (steadfastness) / सा (that) / पार्थ (Arjuna) / तामसी (tamasic)","verseType":"teaching","insight":"It shifts you to notice whether your resolve is clarifying action or merely preserving mental fog.","quoteVariants":[{"format":"card","text":"Steadfastness that keeps fear and grief alive is tamasic."},{"format":"widget","text":"Keep nothing that darkens the mind."},{"format":"notification","text":"Some strength is just holding on to what hurts."},{"format":"lockscreen","text":"Release what weakens your mind."}],"requisiteConcepts":["dhriti","tamasic","gunas"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-48_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-48_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-48.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-48.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":48,"order":671,"sanskrit":"सहजं कर्म कौन्तेय सदोषमपि न त्यजेत् । सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः ॥","hindiTranslation":"हे कुन्तीनन्दन  दोषयुक्त होनेपर भी सहज कर्मका त्याग नहीं करना चाहिये क्योंकि सम्पूर्ण कर्म धुएँसे अग्निकी तरह किसीनकिसी दोषसे युक्त हैं ॥","englishTranslation":"O son of Kunti, one should not abandon one\'s natural duty, even if it has flaws. All undertakings are clouded by some defect, just as fire is veiled by smoke.","essence":"Your right work is still right, even when it is imperfect.","speaker":"Krishna","deity":"","tags":["svadharma","natural-duty","imperfection","karma-yoga","action-flaws"],"simpleMeaning":"Do not give up your natural duty just because it is imperfect. Every action has some flaw in it.","simpleInsight":"You can stay committed without demanding perfection from yourself or your work.","detailedMeaning":"On Kurukshetra, Krishna continues guiding Arjuna after praising one’s own duty. He now warns him not to reject his natural role because it is imperfect. The battlefield decision still stands, and this verse removes the excuse of “not ideal.”","modernRelevance":"You are about to send the apology, start the difficult conversation, or take the job that fits your values but feels messy. Imperfection is not a reason to freeze.","translationLiteral":"सहजम् (natural) / कर्म (action, duty) / कौन्तेय (O son of Kunti) / सदोषम् (with fault) / अपि (even) / न (not) / त्यजेत् (should abandon) / सर्वारम्भाः (all undertakings) / हि (indeed) / दोषेण (by fault/defect) / धूमेन (by smoke) / अग्निः (fire) / इव (like) / आवृताः (covered)","verseType":"teaching","insight":"It shifts the mind from perfectionism to faithful action despite flaws.","quoteVariants":[{"format":"card","text":"Do not abandon your duty for its flaws. Every action carries some smoke."},{"format":"widget","text":"Keep your duty. Faults come with action."},{"format":"notification","text":"Even right action comes with smoke."},{"format":"lockscreen","text":"Do the work. Accept the smoke."}],"requisiteConcepts":["dharma"],"category":"motivational","tone":"grounding","targetAudience":["general","students","professionals"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

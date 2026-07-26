@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-7_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-7_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-7.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/4-7.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":7,"order":169,"sanskrit":"यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम् ॥","hindiTranslation":"हे भरतवंशी अर्जुन जबजब धर्मकी हानि और अधर्मकी वृद्धि होती है, तबतब ही मैं अपनेआपको साकाररूपसे प्रकट करता हूँ ॥","englishTranslation":"Whenever there is a decline of dharma and a rise of adharma, I manifest myself.","essence":"When dharma collapses, the divine steps into history.","speaker":"Krishna","deity":"Krishna","tags":["avatara","dharma","adharma","krishna-manifestation","cosmic-order"],"simpleMeaning":"Whenever righteous order declines and wrongdoing rises, Krishna says he manifests in the world to restore balance.","simpleInsight":"Even in chaos, the world is not abandoned. Help arrives when the balance is most strained.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen before the war. Krishna has already said he knows all births and is unborn. Now he explains why divine presence enters history: to answer the collapse of dharma and the rise of adharma.","modernRelevance":"A family, company, or community starts normalizing what once felt unacceptable. The slide feels slow, then sudden. This verse says the turning point is not invisible — the force that restores order is already at work.","translationLiteral":"यदा यदा (whenever) / हि (indeed) / धर्मस्य (of dharma) / ग्लानिः (decline) / भवति (becomes) / भारत (O Bharata) / अभ्युत्थानम् (rise) / अधर्मस्य (of adharma) / तदा (then) / आत्मानम् (myself) / सृजामि (I create/manifest) / अहम् (I)","verseType":"declaration","insight":"It shifts the mind from helplessness to confidence that disorder is not the final word.","quoteVariants":[{"format":"card","text":"When dharma weakens and adharma rises, I appear."},{"format":"widget","text":"Dharma falls. I return."},{"format":"notification","text":"When order breaks, I come into form."},{"format":"lockscreen","text":"When dharma fails, I appear."}],"requisiteConcepts":["dharma","adharma","avatara"],"category":"philosophical","tone":"expansive","targetAudience":["general","students","professionals"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

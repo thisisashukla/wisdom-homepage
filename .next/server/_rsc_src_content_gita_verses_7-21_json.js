@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-21_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-21_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-21.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/7-21.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":21,"order":301,"sanskrit":"यो यो यां यां तनुं भक्तः श्रद्धयार्चितुमिच्छति । तस्य तस्याचलां श्रद्धां तामेव विदधाम्यहम् ॥","hindiTranslation":"जोजो भक्त जिसजिस देवताका श्रद्धापूर्वक पूजन करना चाहता है, उसउस देवताके प्रति मैं उसकी श्रद्धाको दृढ़ कर देता हूँ ॥","englishTranslation":"Whatever form a devotee wants to worship with faith, I make that faith firm in that very form.","essence":"Faith becomes firm where the devotee turns.","speaker":"Krishna","deity":"","tags":["shraddha","devata-upasana","bhakti","faith","chapter-7"],"simpleMeaning":"Krishna says he strengthens a devotee\'s faith in whatever form that devotee wishes to worship.","simpleInsight":"Faith is not random here; it is being shaped and steadied from within.","detailedMeaning":"On the battlefield, Arjuna hears Krishna explain why different worshippers turn toward different forms. Krishna says the inner steadiness behind that devotion is also supported by him, which prepares the next verse about how such worship bears fruit.","modernRelevance":"You keep returning to the same prayer, the same image, the same practice, even when your mind wanders. What feels like your own devotion is being quietly strengthened.","translationLiteral":"यो यो (whatever) / यां यां (whatever) / तनुं (form) / भक्तः (devotee) / श्रद्धया (with faith) / अर्चितुम् (to worship) / इच्छति (wants) / तस्य तस्य (for that very one) / अचलाम् (unshaken) / श्रद्धाम् (faith) / ताम् एव (that itself) / विदधामि (I make firm) / अहम् (I)","verseType":"teaching","insight":"It shifts attention from judging other forms of devotion to seeing faith itself as something nurtured and deepened.","quoteVariants":[],"requisiteConcepts":["Shraddha","Deva","Bhakti"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"trust","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

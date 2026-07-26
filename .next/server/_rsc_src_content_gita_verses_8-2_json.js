@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-2_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-2_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-2.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/8-2.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":2,"order":312,"sanskrit":"अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन । प्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः ॥","hindiTranslation":"अर्जुन बोले  हे पुरुषोत्तम  वह ब्रह्म क्या है अध्यात्म क्या है कर्म क्या है अधिभूत किसको कहा गया है और अधिदैव किसको कहा जाता है यहाँ अधियज्ञ कौन है और वह इस देहमें कैसे है हे मधूसूदन  नियतात्मा वशीभूत अन्तःकरणवाले मनुष्यके द्वारा अन्तकालमें आप कैसे जाननेमें आते हैं ॥","englishTranslation":"Arjuna said: O Madhusudana, who is the sacrifice here, and how does he dwell in this body? And at the time of death, how are you known by those with disciplined minds?","essence":"Real understanding begins by asking what remains when life is ending.","speaker":"Arjuna","deity":"","tags":["adhiyajna","akshara-brahma","prayanakala","arjuna-question","disciplined-mind"],"simpleMeaning":"Arjuna asks who the inner sacrificer is, how that presence lives in the body, and how a disciplined person can know Krishna at death.","simpleInsight":"It feels honest to admit confusion before asking for clarity.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna has already asked about Brahman, the self, action, and the other hidden realities. He now presses Krishna further: who is the inner lord of sacrifice, how is that presence in the body, and how can a steady mind know Krishna at the final moment?","modernRelevance":"You are standing in a hospital corridor, waiting for news that could change everything. The mind wants one clear answer: what truly matters now, and how do I hold it when time is running out?","translationLiteral":"अधियज्ञः (the lord of sacrifice) / कथम् (how) / कः (who) / अत्र (here) / देहे (in the body) / अस्मिन् (this) / मधुसूदन (Madhusudana) / प्रयाणकाले (at the time of departure) / च (and) / कथम् (how) / ज्ञेयः (to be known) / असि (you are) / नियतात्मभिः (by those with disciplined minds)","verseType":"inquiry","insight":"It shifts the mind from vague belief to precise questioning about the deepest reality.","quoteVariants":[],"requisiteConcepts":["adhiyajna","prayanakala","niyatatma"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"inquiry","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

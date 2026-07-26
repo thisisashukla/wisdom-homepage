@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_16-6_json";
+exports.ids = ["_rsc_src_content_gita_verses_16-6_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/16-6.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/16-6.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":16,"verse":6,"order":577,"sanskrit":"द्वौ भूतसर्गौ लोकेऽस्मिन् दैव आसुर एव च । दैवो विस्तरशः प्रोक्त आसुरं पार्थ मे श्रृणु ॥","hindiTranslation":"इस लोकमें दो तरहके प्राणियोंकी सृष्टि है  दैवी और आसुरी ।  दैवीका तो मैंने विस्तारसे वर्णन कर दिया, अब हे पार्थ  तुम मेरेसे आसुरीका विस्तार सुनो ॥","englishTranslation":"In this world there are two kinds of beings: the divine and the shadowed. I have already described the divine in detail; now listen to the shadowed, Arjuna.","essence":"Human life divides by inner orientation, not by appearance.","speaker":"Krishna","deity":"","tags":["daivi-sampad","asuri-sampad","chapter-16","human-nature","moral-classification"],"simpleMeaning":"Krishna says there are two broad kinds of human nature: one shaped by clarity and virtue, the other by ego and confusion. He has already explained the first and now turns to the second.","simpleInsight":"It helps you see that character is not random. The way you live reveals which current is shaping you.","detailedMeaning":"On the Kurukshetra battlefield, Krishna is not just answering Arjuna’s fear of fighting; he is diagnosing the deeper forces that drive human behavior. After describing the divine qualities, he now introduces the opposite pattern so Arjuna can recognize it clearly.","modernRelevance":"You watch a group chat turn cruel in minutes, and one voice keeps escalating everything. This verse helps you name the pattern: not every reaction comes from the same kind of character.","translationLiteral":"द्वौ (two) / भूतसर्गौ (classes of beings) / लोकेऽस्मिन् (in this world) / दैवः (divine) / आसुरः (shadowed) / एव (indeed) / च (and) / दैवः (the divine) / विस्तरशः (in detail) / प्रोक्तः (has been spoken) / आसुरम् (the shadowed) / पार्थ (Arjuna) / मे (from me) / श्रृणु (listen)","verseType":"teaching","insight":"It shifts attention from judging isolated actions to seeing the underlying nature behind them.","quoteVariants":[],"requisiteConcepts":["daivi","asuri"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

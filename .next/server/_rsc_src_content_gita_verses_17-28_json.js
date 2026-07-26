@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_17-28_json";
+exports.ids = ["_rsc_src_content_gita_verses_17-28_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/17-28.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/17-28.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":17,"verse":28,"order":623,"sanskrit":"अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत् । असदित्युच्यते पार्थ न च तत्प्रेत्य नो इह ॥","hindiTranslation":"हे पार्थ  अश्रद्धासे किया हुआ हवन, दिया हुआ दान और तपा हुआ तप तथा और भी जो,कुछ किया जाय, वह सब असत्  ऐसा कहा जाता है ।  उसका फल न यहाँ होता है, न मरनेके बाद ही होता है अर्थात् उसका कहीं भी सत् फल नहीं होता ॥","englishTranslation":"O Partha, sacrifice, charity, austerity, and any deed done without trust are called unreal. Its fruit exists neither here nor after death.","essence":"Trust is what makes action real; without it, effort becomes empty.","speaker":"Krishna","deity":"","tags":["shraddha","homa","dana","tapas","sat-asat"],"simpleMeaning":"Actions like sacrifice, charity, and austerity lose their value when done without trust. They produce no real result in this life or after death.","simpleInsight":"Trust is what makes effort alive; without it, even noble action feels hollow.","detailedMeaning":"Krishna has just explained that the word \'sat\' belongs to real, worthy action. Now, with Arjuna still shaken on the battlefield, he closes the thought by saying that sacrifice, giving, and austerity done without trust are empty and bear no lasting fruit.","modernRelevance":"You donate money because it looks good, or apologize because others expect it, but your heart is absent. The act may happen, yet it leaves no real trace inside you or around you.","translationLiteral":"अश्रद्धया (without trust) / हुतं (offered in sacrifice) / दत्तं (given) / तपःतप्तं (austerity performed) / कृतं (done) / च (and) / यत् (whatever) / असत् (unreal) / इति (thus) / उच्यते (is called) / पार्थ (O Partha) / न (not) / च (and) / तत् (that) / प्रेत्य (after death) / न (not) / इह (here)","verseType":"declaration","insight":"It shifts action from performance to sincerity, showing that inner trust is what gives deeds weight.","quoteVariants":[{"format":"card","text":"Without trust, even sacred acts turn empty. Their fruit never lands here or beyond."},{"format":"widget","text":"No trust, no fruit."},{"format":"notification","text":"Without trust, even good deeds leave nothing behind."},{"format":"lockscreen","text":"Trust gives action its fruit."}],"requisiteConcepts":["Shraddha"],"category":"devotional","tone":"reflective","targetAudience":["general","students"],"nodeId":"trust","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-72_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-72_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-72.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-72.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":72,"order":119,"sanskrit":"एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति । स्थित्वाऽस्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति ॥","hindiTranslation":"हे पृथानन्दन  यह ब्राह्मी स्थिति है ।  इसको प्राप्त होकर कभी कोई मोहित नहीं होता ।  इस स्थितिमें यदि अन्तकालमें भी स्थित हो जाय, तो निर्वाण शान्त ब्रह्मकी प्राप्ति हो जाती है ॥","englishTranslation":"Arjuna, this is the Brahmic state. Having reached it, one is never deluded. Remaining established in it even at the end of life, one attains freedom in the supreme reality.","essence":"Steadiness in the supreme reality ends confusion, even at life’s edge.","speaker":"Krishna","deity":"","tags":["brahmi-sthiti","brahmanirvana","equanimity","delusion","death-awareness"],"simpleMeaning":"A person who reaches this steady inner state is no longer confused. Even at life’s end, that steadiness leads to freedom in the supreme reality.","simpleInsight":"There is relief in knowing that clarity can become so deep it cannot be shaken, even at the end.","detailedMeaning":"After Krishna describes the still mind that no longer chases desire, he names the result for Arjuna on the battlefield: this is the Brahmic state. A person established in it is not confused, and even death cannot undo it.","modernRelevance":"You are sitting in a hospital corridor after a hard diagnosis, and panic keeps trying to take over. This verse points to a steadiness that does not collapse, even there.","translationLiteral":"एषा (this) / ब्राह्मी (of Brahman) / स्थितिः (state) / पार्थ (Arjuna) / न (not) / एनाम् (this) / प्राप्य (having attained) / विमुह्यति (is deluded) / स्थित्वा (having remained established) / अस्याम् (in this) / अन्तकाले (at the end of life) / अपि (even) / ब्रह्मनिर्वाणम् (freedom in Brahman) / ऋच्छति (attains)","verseType":"declaration","insight":"It shifts the goal from temporary calm to an unbroken inner steadiness that survives the hardest moment.","quoteVariants":[{"format":"card","text":"Reach this steady state. Delusion ends, and freedom in the supreme reality remains."},{"format":"widget","text":"Steady in Brahman, beyond delusion."},{"format":"notification","text":"Even at the end, this steadiness carries you through."},{"format":"lockscreen","text":"Stay steady; delusion cannot touch you."}],"requisiteConcepts":["Brahman","Moksha","Buddhi"],"category":"philosophical","tone":"expansive","targetAudience":["general","students"],"nodeId":"equanimity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

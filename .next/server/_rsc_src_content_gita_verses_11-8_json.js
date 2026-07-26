@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-8_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-8_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-8.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/11-8.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":8,"order":422,"sanskrit":"न तु मां शक्यसे द्रष्टुमनेनैव स्वचक्षुषा । दिव्यं ददामि ते चक्षुः पश्य मे योगमैश्वरम् ॥","hindiTranslation":"परन्तु तू अपनी इस आँखसे अर्थात् चर्मचक्षुसे मेरेको देख ही नहीं सकता, इसलिये मैं तुझे दिव्य चक्षु देता हूँ, जिससे तू मेरी ईश्वरसम्बन्धी सामर्थ्यको देख ॥","englishTranslation":"You cannot see me with these ordinary eyes. I give you divine sight, so you may behold my supreme power.","essence":"Ordinary sight cannot hold the infinite; grace must widen the eye.","speaker":"Krishna","deity":"Krishna","tags":["vishwarupa","divya-chakshus","ishvara-shakti","darshana","krishna-cosmic-form"],"simpleMeaning":"Ordinary sight is not enough to see Krishna\'s true form. He gives Arjuna a divine way of seeing so he can witness that supreme power.","simpleInsight":"Some things cannot be grasped by effort alone; they must be granted from beyond ordinary sight.","detailedMeaning":"On Kurukshetra, Arjuna has asked to see the cosmic form. Krishna has already shown that the universe rests within him, but ordinary eyesight still cannot take it in. So Krishna gives Arjuna divine sight, preparing him to witness the full majesty of the cosmic form.","modernRelevance":"You can stare at the same problem for hours and still miss what matters. Sometimes clarity does not come from looking harder, but from receiving a wider way of seeing.","translationLiteral":"न तु (but not) / मां (me) / शक्यसे (you are able) / द्रष्टुम् (to see) / अनेन (with this) / एव (only) / स्वचक्षुषा (with your own eyes) / दिव्यम् (divine) / ददामि (I give) / ते (to you) / चक्षुः (eyesight) / पश्य (see) / मे (my) / योगम् (power) / ऐश्वरम् (sovereign)","verseType":"declaration","insight":"It shifts the mind from forced inspection to receptive seeing.","quoteVariants":[],"requisiteConcepts":["vishwarupa","divya-chakshus","ishvara"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

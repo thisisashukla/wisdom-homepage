@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-28_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-28_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-28.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-28.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":28,"order":442,"sanskrit":"यथा नदीनां बहवोऽम्बुवेगाःसमुद्रमेवाभिमुखाः द्रवन्ति । तथा तवामी नरलोकवीराविशन्ति वक्त्राण्यभिविज्वलन्ति ॥","hindiTranslation":"जैसे नदियोंके बहुतसे जलके प्रवाह स्वाभाविक ही समुद्रके सम्मुख दौड़ते हैं, ऐसे ही वे संसारके महान् शूरवीर आपके प्रज्वलित मुखोंमें प्रवेश कर रहे हैं ॥","englishTranslation":"As many streams of water rush naturally toward the sea, so these great warriors of the world enter your blazing mouths.","essence":"All motion is already rushing toward its end.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna","cosmic-form","inevitability","river-metaphor"],"simpleMeaning":"The great warriors are rushing into Krishna’s blazing mouths just as rivers rush toward the sea.","simpleInsight":"Overwhelming force can still move toward one inevitable end.","detailedMeaning":"On Kurukshetra, Arjuna sees Krishna’s cosmic form and watches warriors vanish into the blazing mouths. He compares their movement to rivers rushing toward the sea, stunned by the scale of what is happening.","modernRelevance":"You watch a situation swallow everything you hoped to control: a breakup, a resignation, a diagnosis. Some forces do not negotiate; they carry everything toward their end.","translationLiteral":"यथा (as) / नदीनाम् (of rivers) / बहवः (many) / अम्बुवेगाः (water-currents) / समुद्रम् (the sea) / एव (indeed) / अभिमुखाः (facing) / द्रवन्ति (run) / तथा (so) / तव (your) / अमी (these) / नरलोकवीराः (heroes of the human world) / विशन्ति (enter) / वक्त्राणि (mouths) / अभिविज्वलन्ति (blazing)","verseType":"metaphor","insight":"It shifts the mind from resistance to recognition of inevitability.","quoteVariants":[],"requisiteConcepts":["Vishwarupa"],"category":"narrative","tone":"expansive","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

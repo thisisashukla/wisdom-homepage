@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-3_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-3_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-3.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/11-3.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":3,"order":417,"sanskrit":"एवमेतद्यथात्थ त्वमात्मानं परमेश्वर । द्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम ॥","hindiTranslation":"हे पुरुषोत्तम  आप अपनेआपको जैसा कहते हैं, यह वास्तवमें ऐसा ही है ।  हे परमेश्वर  आपके ईश्वरसम्बन्धी रूपको मैं देखना चाहता हूँ ॥","englishTranslation":"O Supreme Person, everything you have said about yourself is true. Yet I wish to see your divine form.","essence":"Belief becomes complete only when it wants to see.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","darshana","arjuna","parameshvara","ishvara-rupa"],"simpleMeaning":"Arjuna accepts Krishna’s words as true, but asks to see Krishna’s divine form directly.","simpleInsight":"Trust can deepen into longing for direct experience, not just belief.","detailedMeaning":"On the battlefield, Arjuna has already heard Krishna explain his divine greatness. The armies still wait, the crisis is still alive, and Arjuna now asks for something beyond words: direct sight of Krishna’s supreme, divine form.","modernRelevance":"A friend explains something painful and true, and you nod because you believe them. But part of you still needs to see the full reality for yourself before you can move forward.","translationLiteral":"एवम् (thus) / एतत् (this) / यथा (as) / आथ्थ (you have said) / त्वम् (you) / आत्मानम् (yourself) / परमेश्वर (O Supreme Lord) / द्रष्टुम् (to see) / इच्छामि (I wish) / ते (your) / रूपम् (form) / ऐश्वरम् (divine) / पुरुषोत्तम (O Supreme Person)","verseType":"inquiry","insight":"It shifts the seeker from verbal understanding to direct vision.","quoteVariants":[{"format":"card","text":"Your words are true. Still, I long to see your divine form."},{"format":"widget","text":"Truth is known. Now show the divine form."},{"format":"notification","text":"I believe you. Now let me see your divine form."},{"format":"lockscreen","text":"Truth is heard. Vision is next."}],"requisiteConcepts":["Bhakti","Darshana"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

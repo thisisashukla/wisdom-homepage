@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-6_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-6_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-6.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/8-6.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":6,"order":316,"sanskrit":"यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम् । तं तमेवैति कौन्तेय सदा तद्भावभावितः ॥","hindiTranslation":"हे कुन्तीपुत्र अर्जुन  मनुष्य अन्तकाल में जिसजिस भी भावका स्मरण करते हुए शरीर छोड़ता है वह उस अन्तकालके भावसे सदा भावित होता हुआ उसउसको ही प्राप्त होता है अर्थात् उसउस योनिमें ही चला जाता है ॥","englishTranslation":"Whatever state a person remembers at the end, that state is reached, because the mind has been shaped by it.","essence":"The end follows the state you have trained.","speaker":"Krishna","deity":"","tags":["antakala","smarana","bhava","manas","samskara"],"simpleMeaning":"The final thought at death shapes where consciousness goes next. A person tends toward whatever state has been cultivated again and again.","simpleInsight":"What you repeatedly dwell on becomes the shape of your ending.","detailedMeaning":"On the battlefield, Arjuna is frozen between duty and grief. Krishna deepens the teaching on the final moment: the state of mind at death is not random, but the result of a life repeatedly formed by habit and attention.","modernRelevance":"You lie awake after a hard conversation, replaying the same fear. That repeated inner loop does not just reflect you — it trains the direction your mind takes next.","translationLiteral":"यं यं (whatever) / वा अपि (also indeed) / स्मरन् (remembering) / भावम् (state of being) / त्यजति (abandons) / अन्ते (at the end) / कलेवरम् (the body) / तम् तम् एव (that very) / एति (attains) / कौन्तेय (O son of Kunti) / सदा (always) / तद्भावभावितः (formed by that state)","verseType":"teaching","insight":"It shifts attention from the last moment alone to the whole pattern of what the mind has been fed.","quoteVariants":[],"requisiteConcepts":["manas","bhava","antakala"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

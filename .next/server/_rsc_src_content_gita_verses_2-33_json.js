@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-33_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-33_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-33.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-33.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":33,"order":80,"sanskrit":"अथ चैत्त्वमिमं धर्म्यं संग्रामं न करिष्यसि । ततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि ॥","hindiTranslation":"अब अगर तू यह धर्ममय युद्ध नहीं करेगा, तो अपने धर्म और कीर्तिका त्याग करके पापको प्राप्त होगा ॥","englishTranslation":"If you do not fight this righteous war, you will abandon your duty and honor and incur blame.","essence":"Avoiding the right duty does not protect you; it stains you.","speaker":"Krishna","deity":"","tags":["svadharma","kshatriya-dharma","honor","blame","kurukshetra"],"simpleMeaning":"Refusing a just battle would mean abandoning your duty and honor, and that choice would bring blame.","simpleInsight":"Avoiding the hard right thing can feel safer, but it leaves a heavier mark than action.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen while Krishna answers his collapse with hard clarity. After saying this battle is righteous, Krishna warns that refusing it would mean abandoning the role Arjuna was born to carry.","modernRelevance":"You’re staring at a message you know you must send, because staying silent will hurt more. The fear of discomfort is real, but so is the cost of walking away from what you know is right.","translationLiteral":"अथ (then) / च (and) / एत् (this) / त्वम् (you) / इमम् (this) / धर्म्यम् (righteous) / संग्रामम् (war) / न (not) / करिष्यसि (will do) / ततः (then) / स्वधर्मम् (one\'s own duty) / कीर्तिम् (honor) / च (and) / हित्वा (having abandoned) / पापम् (blame / wrongdoing) / अवाप्स्यसि (you will obtain)","verseType":"teaching","insight":"It shifts the mind from fear-based avoidance to responsibility for the action that preserves integrity.","quoteVariants":[{"format":"card","text":"Refuse the right fight, and you lose your honor."},{"format":"widget","text":"Refuse duty, inherit blame."},{"format":"notification","text":"Avoiding the right act has a cost."},{"format":"lockscreen","text":"Do the hard duty. Keep your name."}],"requisiteConcepts":["dharma","svadharma"],"category":"motivational","tone":"grounding","targetAudience":["general","students","professionals"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

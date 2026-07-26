@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-42_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-42_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-42.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-42.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":42,"order":275,"sanskrit":"अथवा योगिनामेव कुले भवति धीमताम् । एतद्धि दुर्लभतरं लोके जन्म यदीदृशम् ॥","hindiTranslation":"अथवा वैराग्यवान् योगभ्रष्ट ज्ञानवान् योगियोंके कुलमें ही जन्म लेता है ।  इस प्रकारका जो यह जन्म है, यह संसारमें बहुत ही दुर्लभ है ॥","englishTranslation":"Or he is born into the family of wise yogis. Such a birth is very rare in this world.","essence":"A fallen practitioner is not lost; the next birth can restart the work.","speaker":"Krishna","deity":"","tags":["yogabhraṣṭa","punyakarma","sadhana","rebirth","family-of-yogis"],"simpleMeaning":"A person who falls from yoga may be born into a family of wise practitioners. That kind of birth is very rare.","simpleInsight":"Even a setback can place you closer to renewal than you think.","detailedMeaning":"Krishna is reassuring Arjuna after describing the yogi who slips from practice. The one who has not finished the path does not vanish; that person may return in a family shaped by wisdom and discipline, where practice can continue.","modernRelevance":"You feel like you wasted years after a relapse, a failed attempt, or a broken routine. The path is not erased; the next good environment can carry you forward again.","translationLiteral":"अथवा (or) / योगिनाम् (of yogis) / एव (indeed) / कुले (in the family) / भवति (is born) / धीमताम् (of the wise) । / एतत् (this) / हि (indeed) / दुर्लभतरम् (more rare) / लोके (in the world) / जन्म (birth) / यत् (which) / ईदृशम् (of this kind)","verseType":"teaching","insight":"It shifts the mind from seeing failure as loss to seeing it as a delayed continuation of practice.","quoteVariants":[],"requisiteConcepts":["Yoga","dharma"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

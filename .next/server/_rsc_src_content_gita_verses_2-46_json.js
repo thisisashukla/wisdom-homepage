@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-46_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-46_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-46.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-46.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":46,"order":93,"sanskrit":"यावानर्थ उदपाने सर्वतः संप्लुतोदके । तावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः ॥","hindiTranslation":"सब तरफसे परिपूर्ण महान् जलाशयके प्राप्त होनेपर छोटे गड्ढों में भरे जल में मनुष्यका जितना प्रयोजन रहता है अर्थात् कुछ भी प्रयोजन नहीं रहता, वेदों और शास्त्रोंको तत्त्वसे जाननेवाले ब्रह्मज्ञानीका सम्पूर्ण वेदोंमें उतना ही प्रयोजन रहता है अर्थात् कुछ भी प्रयोजन नहीं रहता ॥","englishTranslation":"For one who understands, all the Vedas are as useful as a small puddle when a great reservoir of water is at hand.","essence":"Complete understanding makes lesser sources unnecessary.","speaker":"Krishna","deity":"","tags":["vedas","brahmajna","knowledge","reservoir","scriptural-limits"],"simpleMeaning":"A person who truly understands the supreme reality needs the Vedas no more than a person beside a full reservoir needs a tiny puddle.","simpleInsight":"There is relief in not needing endless guidance once the deeper truth is seen.","detailedMeaning":"On the battlefield, Arjuna is overwhelmed by duty, grief, and contradiction. Krishna answers by showing that real understanding is not scattered across many rules and rituals. For the one who truly knows, the whole point has been grasped.","modernRelevance":"You have read every article, saved every thread, and still feel unsure before making the hard call. At some point, more input stops helping; clear seeing does.","translationLiteral":"यावान् (as much) / अर्थः (use, purpose) / उदपाने (in a small water-source) / सर्वतः (from all sides) / संप्लुतोदके (in a fully flooded reservoir) / तावान् (that much) / सर्वेषु (in all) / वेदेषु (in the Vedas) / ब्राह्मणस्य (for the knower of Brahman) / विजानतः (for one who truly knows)","verseType":"declaration","insight":"It shifts the mind from collecting information to recognizing the decisive truth that makes excess instruction unnecessary.","quoteVariants":[{"format":"card","text":"A knower needs little from all the Vedas. Full understanding makes lesser teachings fall away."},{"format":"widget","text":"Full knowing makes lesser knowing small."},{"format":"notification","text":"When truth is complete, many texts become unnecessary."},{"format":"lockscreen","text":"Full understanding makes lesser sources fade."}],"requisiteConcepts":["Brahman","Vidya"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

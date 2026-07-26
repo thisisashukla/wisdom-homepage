@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-6_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-6_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-6.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/3-6.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":6,"order":125,"sanskrit":"कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन् । इन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते ॥","hindiTranslation":"जो कर्मेन्द्रियों सम्पूर्ण इन्द्रियों को हठपूर्वक रोककर मनसे इन्द्रियोंके विषयोंका चिन्तन करता रहता है, वह मूढ़ बुद्धिवाला मनुष्य मिथ्याचारी मिथ्या आचरण करनेवाला कहा जाता है ॥","englishTranslation":"One who restrains the organs of action but keeps thinking of sense objects in the mind is deluded and called a hypocrite.","essence":"Outer restraint means nothing if the mind still feeds desire.","speaker":"Krishna","deity":"","tags":["indriya-nigraha","manas","hypocrisy","karma-yoga","desire"],"simpleMeaning":"Holding back your actions while the mind still chases desire is self-deception. Outer restraint means little without inner discipline.","simpleInsight":"It removes the comfort of pretending. Real restraint must include the mind, not just visible behavior.","detailedMeaning":"On Kurukshetra, Arjuna is frozen between duty and grief. Krishna sharpens the teaching: merely stopping the body while the mind clings to desire is not true renunciation. This verse exposes false restraint before showing the right way forward.","modernRelevance":"You delete the app, but keep checking the craving in your head. You cancel the habit, yet rehearse it all day. The form changed; the attachment did not.","translationLiteral":"कर्मेन्द्रियाणि (organs of action) / संयम्य (having restrained) / यः (who) / आस्ते (sits) / मनसा (with the mind) / स्मरन् (remembering, thinking of) / इन्द्रियार्थान् (sense objects) / विमूढात्मा (deluded one) / मिथ्याचारः (false actor, hypocrite) / सः (he) / उच्यते (is called)","verseType":"teaching","insight":"It shifts attention from outward control to inner honesty. The real task is to align thought and action together.","quoteVariants":[],"requisiteConcepts":["Manas","Karma"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

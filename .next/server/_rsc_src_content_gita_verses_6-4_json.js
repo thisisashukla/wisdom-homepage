@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-4_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-4_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-4.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/6-4.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":4,"order":237,"sanskrit":"यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते । सर्वसङ्कल्पसंन्यासी योगारूढस्तदोच्यते ॥","hindiTranslation":"जिस समय न इन्द्रियोंके भोगोंमें तथा न कर्मोंमें ही आसक्त होता है, उस समय वह सम्पूर्ण संकल्पोंका त्यागी मनुष्य योगारूढ़ कहा जाता है ॥","englishTranslation":"When one no longer clings to sense pleasures or to actions, that person is called established in yoga, having renounced all intentions.","essence":"Yoga begins when neither pleasure nor action can hook you.","speaker":"Krishna","deity":"","tags":["dhyana","vairagya","indriya","sankalpa","yogarudha"],"simpleMeaning":"A person is truly steady in yoga when neither pleasures nor actions hook the mind, and all intentions have been let go.","simpleInsight":"There is relief in not being owned by wanting or doing.","detailedMeaning":"On Kurukshetra, Arjuna is frozen, and Krishna is teaching him how to become inwardly steady. After saying that practice leads toward stillness, Krishna now names the state: a person who no longer clings to pleasures or actions is established in yoga.","modernRelevance":"You finish the presentation, then keep refreshing the email thread for praise. Or you stop chasing the praise and feel your shoulders drop. This verse names that release.","translationLiteral":"यदा (when) हि (indeed) न (not) इन्द्रियार्थेषु (in sense objects) न (not) कर्मसु (in actions) अनुषज्जते (clings) / सर्वसङ्कल्पसंन्यासी (renouncer of all intentions) / योगारूढः (established in yoga) तदा (then) उच्यते (is called)","verseType":"declaration","insight":"It shifts attention from achievement and stimulation to non-clinging presence.","quoteVariants":[{"format":"card","text":"No craving for pleasures. No clinging to action. Yoga stands."},{"format":"widget","text":"Release pleasure, release action."},{"format":"notification","text":"I’m settled when neither pleasure nor effort pulls me."},{"format":"lockscreen","text":"No craving. No clinging. Yoga."}],"requisiteConcepts":["Vairagya","Yoga","Manas","Sankalpa"],"category":"philosophical","tone":"calming","targetAudience":["students","professionals","entrepreneurs"],"nodeId":"stillness","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

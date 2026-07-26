@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-50_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-50_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-50.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-50.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":50,"order":673,"sanskrit":"सिद्धिं प्राप्तो यथा ब्रह्म तथाप्नोति निबोध मे । समासेनैव कौन्तेय निष्ठा ज्ञानस्य या परा ॥","hindiTranslation":"हे कौन्तेय  सिद्धिअन्तःकरणकी शुद्धि को प्राप्त हुआ साधक ब्रह्मको, जो कि ज्ञानकी परा निष्ठा है, जिस प्रकारसे प्राप्त होता है, उस प्रकारको तुम मुझसे संक्षेपमें ही समझो ॥","englishTranslation":"Listen to me briefly, O Arjuna, as I explain how one who has reached perfection attains the supreme reality, the highest culmination of knowledge.","essence":"Knowledge has a highest point: direct arrival, not endless thinking.","speaker":"Krishna","deity":"","tags":["brahma","jnana","siddhi","nishtha","moksha"],"simpleMeaning":"Krishna asks Arjuna to listen briefly as he explains how a perfected seeker reaches the supreme reality, the highest point of knowledge.","simpleInsight":"Real understanding is not endless theory; it leads somewhere, and that destination changes everything.","detailedMeaning":"On Kurukshetra, with Arjuna still frozen and the war about to begin, Krishna turns from renunciation to the final destination of wisdom. He promises a brief explanation of how inner perfection leads to the supreme reality, the highest completion of knowledge.","modernRelevance":"You have read, reflected, and still feel stuck at the edge of a hard choice. At some point, understanding must become arrival — not more analysis.","translationLiteral":"सिद्धिं प्राप्तः (having attained perfection) / यथा (how) / ब्रह्म (the supreme reality) / तथा (so) / आप्नोति (attains) / निबोध (listen carefully) / मे (from me) / समासेन (briefly) / एव (indeed) / कौन्तेय (O son of Kunti) / निष्ठा (culmination / steadfastness) / ज्ञानस्य (of knowledge) / या (which) / परा (supreme)","verseType":"declaration","insight":"It shifts the mind from collecting ideas to seeking the final state those ideas point toward.","quoteVariants":[],"requisiteConcepts":["Brahman","Vidya"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

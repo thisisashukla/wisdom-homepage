@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-47_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-47_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-47.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-47.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":47,"order":94,"sanskrit":"कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥","hindiTranslation":"कर्तव्यकर्म करनेमें ही तेरा अधिकार है, फलोंमें कभी नहीं ।  अतः तू कर्मफलका हेतु भी मत बन और तेरी अकर्मण्यतामें भी आसक्ति न हो ॥","englishTranslation":"You have a right to action alone, never to its fruits. Do not become the cause of the result, and do not cling to inaction.","essence":"Action belongs to you; the result does not.","speaker":"Krishna","deity":"","tags":["karma-yoga","nishkama","attachment","outcome","duty"],"simpleMeaning":"You control your action, not what it produces. Do your duty without chasing the reward or getting attached to doing nothing.","simpleInsight":"There is relief in giving your full effort without carrying the burden of the result.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna is frozen and Krishna begins rebuilding his sense of duty. Here Krishna draws the first hard line: act because it is yours to do, not because you can own what comes after.","modernRelevance":"You send the apology text after midnight, then keep rereading it for the perfect reply. This verse cuts that loop: speak, act, and stop trying to control the response.","translationLiteral":"कर्मणि (in action) / एव (only) / अधिकारः (right) / ते (your) / मा (not) / फलेषु (in fruits) / कदाचन (at any time) / मा (not) / कर्मफलहेतुः (cause of the fruit of action) / भूः (become) / मा (not) / ते (your) / सङ्गः (attachment) / अस्तु (let there be) / अकर्मणि (in inaction)","verseType":"teaching","insight":"It shifts attention from controlling outcomes to carrying out the action cleanly.","quoteVariants":[{"format":"card","text":"Do the work. Release the result."},{"format":"widget","text":"Act fully. Want nothing."},{"format":"notification","text":"Your task is action, not ownership."},{"format":"lockscreen","text":"Work fully. Let outcomes go."}],"requisiteConcepts":["Karma","Nishkama","Dharma"],"category":"philosophical","tone":"grounding","targetAudience":["general","students","professionals"],"nodeId":"vairagya","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

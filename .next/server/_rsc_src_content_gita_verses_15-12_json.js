@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-12_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-12_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-12.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/15-12.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":12,"order":563,"sanskrit":"यदादित्यगतं तेजो जगद्भासयतेऽखिलम् । यच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम् ॥","hindiTranslation":"सूर्यमें आया हुआ जो तेज सम्पूर्ण जगत् को प्रकाशित करता है और जो तेज चन्द्रमामें है तथा जो तेज अग्निमें है, उस तेजको मेरा ही जान ॥","englishTranslation":"The radiance in the sun, the moon, and the fire is Mine alone.","essence":"Every brightness in the world points back to one source.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","radiance","surya","chandra","agni"],"simpleMeaning":"Krishna says that the light shining in the sun, the moon, and fire belongs to him. All visible brilliance is a sign of his presence.","simpleInsight":"The world feels less random when you notice its brightness has a source.","detailedMeaning":"On Kurukshetra, Arjuna is still frozen while Krishna explains how the divine presence runs through all life. Here Krishna points to the most obvious forms of radiance, showing that even the light of the cosmos is not separate from him.","modernRelevance":"You step outside after a sleepless night and the morning sun still reaches you. The warmth, the glow on water, the flame on your stove — nothing ordinary is truly separate from the source behind it.","translationLiteral":"यत् (which) / आदित्य-गतं (gone into the sun) / तेजः (radiance) / जगत् (the world) / भासयते (illumines) / अखिलम् (entire) / यत् (which) / चन्द्रमसि (in the moon) / यत् (which) / अग्नौ (in fire) / तत् (that) / तेजः (radiance) / विद्धि (know) / मामकम् (Mine)","verseType":"declaration","insight":"It shifts attention from isolated objects to the living presence shining through them.","quoteVariants":[{"format":"card","text":"The light in sun, moon, and fire is Mine."},{"format":"widget","text":"All radiance is Mine."},{"format":"notification","text":"That brightness you see is already Mine."},{"format":"lockscreen","text":"See every light as Mine."}],"requisiteConcepts":["Bhakti","Deva"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

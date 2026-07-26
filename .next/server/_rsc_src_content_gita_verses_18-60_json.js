@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-60_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-60_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-60.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-60.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":60,"order":683,"sanskrit":"स्वभावजेन कौन्तेय निबद्धः स्वेन कर्मणा । कर्तुं नेच्छसि यन्मोहात्करिष्यस्यवशोऽपि तत् ॥","hindiTranslation":"हे कुन्तीनन्दन  अपने स्वभावजन्य कर्मसे बँधा हुआ तू मोहके कारण जो नहीं करना चाहता, उसको तू क्षात्रप्रकृतिके परवश होकर करेगा ॥","englishTranslation":"Bound by your own nature-born duty, you will do what you do not want to do in confusion. Even against your will, you will act.","essence":"Resistance cannot cancel what your nature is already set to do.","speaker":"Krishna","deity":"","tags":["svabhava","kshatriya-dharma","mohah","kurukshetra","self-deception"],"simpleMeaning":"Your own nature pushes you toward certain actions. Confusion may make you resist them, but you may still end up doing them anyway.","simpleInsight":"It can feel relieving to stop fighting what your character and role are already asking of you.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna keeps resisting the war. Krishna tells him that his warrior nature is already shaping his choices. Even if Arjuna refuses in confusion, that same nature will still drive him to act.","modernRelevance":"You keep saying you won\'t send the message, quit the job, or tell the hard truth. Hours later, the same pressure inside you pushes you to do it anyway.","translationLiteral":"स्वभावजेन (born of one\'s own nature) / कौन्तेय (O son of Kunti) / निबद्धः (bound) / स्वेन (by one\'s own) / कर्मणा (by action) / कर्तुं (to do) / न इच्छसि (you do not wish) / यत् (that which) / मोहात् (from confusion) / करिष्यसि (you will do) / अवशः अपि (even unwillingly) / तत् (that)","verseType":"teaching","insight":"It shifts you from self-deception to honest recognition of the forces already moving your behavior.","quoteVariants":[{"format":"card","text":"Your nature binds you. Even resistance becomes action."},{"format":"widget","text":"Nature binds. Resistance still acts."},{"format":"notification","text":"What you resist may still be what you do."},{"format":"lockscreen","text":"Your nature moves you. Act knowingly."}],"requisiteConcepts":["svabhava","dharma","mohah"],"category":"philosophical","tone":"reflective","targetAudience":["general"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

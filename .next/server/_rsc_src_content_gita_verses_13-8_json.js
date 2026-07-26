@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-8_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-8_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-8.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/13-8.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":8,"order":497,"sanskrit":"अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् । आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः ॥","hindiTranslation":"मानित्वअपनेमें श्रेष्ठताके भाव का न होना, दम्भित्वदिखावटीपन का न होना, अहिंसा, क्षमा, सरलता, गुरुकी सेवा, बाहरभीतरकी शुद्धि, स्थिरता और मनका वशमें होना ॥","englishTranslation":"Absence of pride, absence of pretence, nonviolence, forgiveness, simplicity, service to the teacher, purity, steadiness, and self-control.","essence":"True strength is quiet discipline, not self-display.","speaker":"Krishna","deity":"","tags":["ahimsa","arjava","shaucha","amaanitvam","self-control"],"simpleMeaning":"A disciplined life is marked by humility, honesty, nonviolence, forgiveness, simplicity, respect for the teacher, cleanliness, steadiness, and self-mastery.","simpleInsight":"Real strength looks calm, clean, and unforced.","detailedMeaning":"On the battlefield, Arjuna is frozen, and Krishna begins listing the qualities that shape a person fit for clear seeing. After defining the field of body and mind, he names the inner discipline that makes wisdom possible.","modernRelevance":"You are about to send the message that could end a friendship, and your chest tightens. This verse asks whether you can stay honest, clean in motive, and steady instead of performing or striking out.","translationLiteral":"अमानित्वम् (absence of pride) / अदम्भित्वम् (absence of pretence) / अहिंसा (nonviolence) / क्षान्तिः (forgiveness) / आर्जवम् (simplicity) / आचार्य-उपासनम् (service to the teacher) / शौचम् (purity) / स्थैर्यम् (steadiness) / आत्म-विनिग्रहः (self-control)","verseType":"teaching","insight":"It shifts attention from image-building to character-building, showing that inner discipline prepares the mind for truth.","quoteVariants":[],"requisiteConcepts":["Kshetra","Kshetrajna"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

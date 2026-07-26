@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-33_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-33_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-33.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-33.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":33,"order":33,"sanskrit":"येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च । त इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च ॥","hindiTranslation":"जिनके लिये हमारी राज्य, भोग और सुखकी इच्छा है, वे ही ये सब अपने प्राणों की और धन की आशा का त्याग करके युद्ध में खड़े हैं ॥","englishTranslation":"Those for whom we wanted kingdom, pleasures, and comfort stand here in battle, ready to give up life and wealth.","essence":"The prize is empty when the people attached to it stand in the line of fire.","speaker":"Arjuna","deity":"","tags":["kurukshetra","arjuna-vishada","family-conflict","battlefield","relatives"],"simpleMeaning":"The people Arjuna hoped to protect and enjoy life with are standing on the battlefield, willing to risk everything. That makes his refusal to fight even heavier.","simpleInsight":"Grief deepens when the people you would fight for are the same people you might have to fight.","detailedMeaning":"Arjuna is still frozen between the two armies on Kurukshetra. He looks at the relatives, teachers, and elders on the opposite side and realizes that the kingdom he once wanted is tied to their lives. That recognition sharpens his collapse.","modernRelevance":"You open a family group chat and see the people you love lined up on opposite sides of a painful inheritance dispute. The choice is no longer abstract; every option cuts into someone familiar.","translationLiteral":"येषाम् (for whom) / अर्थे (for the sake) / काङ्क्षितम् (desired) / नः (by us) / राज्यम् (kingdom) / भोगाः (pleasures) / सुखानि (comforts) / च (and) / ते (they) / इमे (these) / अवस्थिताḥ (standing) / युद्धे (in battle) / प्राणान् (lives) / त्यक्त्वा (giving up) / धनानि (wealth) / च (and)","verseType":"narrative","insight":"It turns the battle from a political contest into a personal wound, making action feel unbearable.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"reflective","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-6_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-6_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-6.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/15-6.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":6,"order":557,"sanskrit":"न तद्भासयते सूर्यो न शशाङ्को न पावकः । यद्गत्वा न निवर्तन्ते तद्धाम परमं मम ॥","hindiTranslation":"उसपरमपद को न सूर्य, न चन्द्र और न अग्नि ही प्रकाशित कर सकती है और जिसको प्राप्त होकर जीव लौटकर संसारमें नहीं आते, वही मेरा परमधाम है ॥","englishTranslation":"The sun, moon, and fire do not illumine that place. Having reached it, one does not return. That supreme abode is Mine.","essence":"The highest home is beyond every ordinary light and beyond return.","speaker":"Krishna","deity":"Krishna","tags":["parama-dhama","purushottama","returnlessness","transcendence","cosmic-light"],"simpleMeaning":"Krishna says his highest abode cannot be illuminated by ordinary light, and anyone who reaches it does not come back to the cycle of return.","simpleInsight":"There is relief in knowing the highest goal is beyond ordinary measures and beyond coming back to the same struggle.","detailedMeaning":"Arjuna stands shaken on the battlefield, and Krishna has been describing the highest reality beyond decay and return. Now Krishna names that goal directly: a supreme abode beyond sun, moon, and fire, reached by those who will not fall back into the cycle.","modernRelevance":"You leave a hospital room after a final goodbye, and the fluorescent lights feel weak against what just changed. Some thresholds are not about more effort — they are about crossing into a life that cannot be undone.","translationLiteral":"न (not) / तत् (that) / भासयते (illumines) / सूर्यः (the sun) / न (not) / शशाङ्कः (the moon) / न (not) / पावकः (fire) / यत् (which) / गत्वा (having gone) / न (not) / निवर्तन्ते (they return) / तत् (that) / धाम (abode) / परमम् (supreme) / मम (Mine)","verseType":"declaration","insight":"It shifts attention from temporary sources of guidance to the unchanging goal that ends return.","quoteVariants":[{"format":"card","text":"No light reaches that abode. Once reached, return ends."},{"format":"widget","text":"Beyond sun, moon, fire."},{"format":"notification","text":"What you seek outlasts every light you know."},{"format":"lockscreen","text":"Go there. Return ends there."}],"requisiteConcepts":["Brahman","Moksha","Purushottama"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

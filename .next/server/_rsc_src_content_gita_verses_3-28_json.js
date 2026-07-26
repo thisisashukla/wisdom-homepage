@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-28_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-28_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-28.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-28.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":28,"order":147,"sanskrit":"तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः । गुणा गुणेषु वर्तन्त इति मत्वा न सज्जते ॥","hindiTranslation":"हे महाबाहो गुणविभाग और कर्मविभागको तत्त्वसे जाननेवाला महापुरुष सम्पूर्ण गुण ही गुणोंमें बरत रहे हैं  ऐसा मानकर उनमें आसक्त नहीं होता ॥","englishTranslation":"The one who truly understands the division of qualities and actions does not cling, seeing that qualities act upon qualities.","essence":"Seeing action as nature\'s movement ends attachment.","speaker":"Krishna","deity":"","tags":["gunas","karma-yoga","vairagya","ahankara","kartabhava"],"simpleMeaning":"A person who understands how qualities and actions work sees that nature is doing the acting, not the separate ego. That understanding removes attachment.","simpleInsight":"You can stay involved without getting entangled. Clear seeing creates freedom.","detailedMeaning":"On Kurukshetra, Arjuna is frozen between duty and grief. Krishna deepens the lesson: the wise person sees that the forces of nature are moving through action, not a separate doer. That vision ends clinging.","modernRelevance":"You watch yourself getting pulled into a family argument, then catch the pattern before speaking. The pause changes everything: you stop defending a self-image and start seeing the forces at work.","translationLiteral":"तत्त्ववित् (one who knows the truth) / तु (indeed) / महाबाहो (mighty-armed one) / गुणकर्मविभागयोः (of the division of qualities and actions) / गुणाः (the qualities) / गुणेषु (among the qualities) / वर्तन्ते (move/operate) / इति (thus) / मत्वा (having understood) / न (not) / सज्जते (becomes attached)","verseType":"teaching","insight":"It shifts attention from personal ownership of action to clear observation of how nature operates.","quoteVariants":[{"format":"card","text":"Qualities move qualities. The wise do not cling."},{"format":"widget","text":"Qualities act on qualities. Stay unattached."},{"format":"notification","text":"What moves is the qualities, not the chooser."},{"format":"lockscreen","text":"See qualities at work. Release attachment."}],"requisiteConcepts":["gunas","karma","ahankara","vairagya"],"category":"philosophical","tone":"expansive","targetAudience":["students","professionals","general"],"nodeId":"vairagya","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

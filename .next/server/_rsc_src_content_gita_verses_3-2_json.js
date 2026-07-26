@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-2_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-2_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-2.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/3-2.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":2,"order":121,"sanskrit":"व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे । तदेकं वद निश्िचत्य येन श्रेयोऽहमाप्नुयाम् ॥","hindiTranslation":"अर्जुन बोले  हे जनार्दन अगर आप कर्मसे बुद्धि ज्ञान को श्रेष्ठ मानते हैं, तो फिर हे केशव मुझे घोर कर्ममें क्यों लगाते हैं  आप अपने मिले हुएसे वचनोंसे मेरी बुद्धिको मोहितसी कर रहे हैं ।  अतः आप निश्चय करके एक बात को कहिये, जिससे मैं कल्याणको प्राप्त हो जाऊँ ॥","englishTranslation":"Arjuna said: Your words seem mixed and confusing to me. Tell me one thing clearly, so I may find the highest good.","essence":"Confusion ends when the mind asks for one clear direction.","speaker":"Arjuna","deity":"","tags":["arjuna-doubt","mixed-teaching","clear-guidance","kurukshetra","chapter-3"],"simpleMeaning":"Arjuna says Krishna\'s advice feels mixed and confusing. He asks for one clear teaching that will lead him to the highest good.","simpleInsight":"Clarity matters when your life is at a crossroads. Mixed guidance only deepens fear.","detailedMeaning":"On the battlefield, Arjuna has already admitted his collapse. Now he pushes Krishna harder: if knowledge is higher, why is he being urged toward terrible action? This verse is Arjuna asking for one decisive teaching before he can move.","modernRelevance":"You are standing outside a hospital room, phone in hand, unable to decide whether to tell the hard truth. Half-answers only stretch the dread. This verse names the need for one clear direction.","translationLiteral":"व्यामिश्रेण (mixed) / इव (as if) / वाक्येन (by words) / बुद्धिम् (understanding) / मोहयसि (you confuse) / इव (as if) / मे (my) / तत् (that) / एकम् (one) / वद (speak) / निश्िचत्य (after deciding) / येन (by which) / श्रेयः (highest good) / अहम् (I) / आप्नुयाम् (may attain)","verseType":"inquiry","insight":"It shifts the mind from juggling options to demanding a single, workable truth.","quoteVariants":[{"format":"card","text":"Your words blur my mind. Speak one clear truth."},{"format":"widget","text":"One clear truth, not mixed words."},{"format":"notification","text":"I need one clear answer, not two directions."},{"format":"lockscreen","text":"Choose one truth. Let confusion end."}],"requisiteConcepts":[],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"inquiry","nodePath":"wisdom","depth":"surface"}');
+
+/***/ })
+
+};
+;

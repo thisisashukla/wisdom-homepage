@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-24_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-24_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-24.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/10-24.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":24,"order":396,"sanskrit":"पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम् । सेनानीनामहं स्कन्दः सरसामस्मि सागरः ॥","hindiTranslation":"हे पार्थ  पुरोहितोंमें मुख्य बृहस्पतिको मेरा स्वरूप समझो ।  सेनापतियोंमें स्कन्द और जलाशयोंमें समुद्र मैं हूँ ॥","englishTranslation":"Among priests, know Me as Brihaspati; among commanders, I am Skanda; among waters, I am the ocean.","essence":"Greatness in the world is a trace of Krishna everywhere.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","brihaspati","skanda","ocean","divine-manifestations"],"simpleMeaning":"Krishna says he is the highest among priests, the commander Skanda, and the ocean among all waters.","simpleInsight":"The world is not separate from the divine presence you move through every day.","detailedMeaning":"On the battlefield of Kurukshetra, Krishna keeps revealing how his presence shows up in the world around Arjuna. After naming the greatest among beings and powers, he points to Brihaspati, Skanda, and the ocean to show that excellence and vastness are reflections of him.","modernRelevance":"You stand at the shore after a hard day and feel small before the dark water. The verse says that same vastness is not empty — it is a sign of the divine everywhere.","translationLiteral":"पुरोधसाम् (among priests) / च (and) / मुख्यम् (the chief) / माम् (Me) / विद्धि (know) / पार्थ (O Partha) / बृहस्पतिम् (Brihaspati) / सेनानीनाम् (among commanders) / अहम् (I) / स्कन्दः (Skanda) / सरसाम् (among waters) / अस्मि (am) / सागरः (the ocean)","verseType":"teaching","insight":"It trains the mind to recognise greatness, order, and depth as expressions of one source.","quoteVariants":[],"requisiteConcepts":["Bhakti","Deva"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-15_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-15_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-15.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-15.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":15,"order":134,"sanskrit":"कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम् । तस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम् ॥","hindiTranslation":"सम्पूर्ण प्राणी अन्नसे उत्पन्न होते हैं ।  अन्न वर्षासे होती है ।  वर्षा यज्ञसे होती है ।  यज्ञ कर्मोंसे निष्पन्न होता है ।  कर्मोंको तू वेदसे उत्पन्न जान और वेदको अक्षरब्रह्मसे प्रकट हुआ जान ।  इसलिये वह सर्वव्यापी परमात्मा यज्ञ कर्तव्यकर्म में नित्य प्रतिष्ठित है ॥","englishTranslation":"Know that action comes from the Vedas, and the Vedas come from the imperishable. Therefore, the all-pervading supreme reality is always established in sacrifice.","essence":"Right action is not random; it rests in a deeper, sustaining order.","speaker":"Krishna","deity":"","tags":["yajna","karma-yoga","veda","akshara","cosmic-order"],"simpleMeaning":"Action arises from sacred order, that order arises from the imperishable, and the all-pervading supreme reality is rooted in selfless offering.","simpleInsight":"Work feels lighter when you see it as part of a larger order, not a personal burden.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen while Krishna explains the hidden structure behind right action. After showing how sacrifice sustains life, Krishna now traces action back to the Vedas and beyond them to the imperishable source, grounding karma yoga in cosmic order.","modernRelevance":"You are about to make a hard call that affects other people, and the choice feels bigger than your mood. This verse reminds you that right action belongs to a larger order than personal preference.","translationLiteral":"कर्म (action) / ब्रह्मोद्भवं (born from Brahman) / विद्धि (know) / ब्रह्म (Brahman) / अक्षरसमुद्भवम् (arising from the imperishable) / तस्मात् (therefore) / सर्वगतम् (all-pervading) / ब्रह्म (Brahman) / नित्यम् (always) / यज्ञे (in sacrifice) / प्रतिष्ठितम् (established)","verseType":"teaching","insight":"It shifts action from private ambition to participation in a sacred pattern.","quoteVariants":[],"requisiteConcepts":["Karma","Dharma","Yajna"],"category":"philosophical","tone":"expansive","targetAudience":["students","professionals","entrepreneurs"],"nodeId":"effort","nodePath":"action","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_14-17_json";
+exports.ids = ["_rsc_src_content_gita_verses_14-17_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/14-17.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/14-17.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":14,"verse":17,"order":541,"sanskrit":"सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च । प्रमादमोहौ तमसो भवतोऽज्ञानमेव च ॥","hindiTranslation":"सत्त्वगुणसे ज्ञान और रजोगुणसे लोभ आदि ही उत्पन्न होते हैं तमोगुणसे प्रमाद, मोह एवं अज्ञान भी उत्पन्न होता है ॥","englishTranslation":"From sattva comes knowledge; from rajas, greed; from tamas, negligence, delusion, and ignorance.","essence":"Your mental weather has causes: clarity, craving, and confusion each grow from different qualities.","speaker":"Krishna","deity":"","tags":["gunas","sattva","rajas","tamas","greed"],"simpleMeaning":"A clear, balanced nature gives rise to understanding. Restless nature produces greed. Heavy, dull nature produces carelessness, delusion, and ignorance.","simpleInsight":"You can stop treating every bad impulse as random and start seeing what kind of energy is feeding it.","detailedMeaning":"On Kurukshetra, Krishna keeps explaining the three gunas to Arjuna, who is frozen before battle. After showing how they shape rebirth and action, Krishna now names their inner effects: sattva brings knowledge, rajas brings greed, and tamas brings confusion.","modernRelevance":"You open your phone at 1 a.m. and feel the pull to keep scrolling, buying, comparing, numbing. The verse helps you name the force behind the spiral instead of calling it \'just me.\'","translationLiteral":"सत्त्वात् (from sattva) / सञ्जायते (is born) / ज्ञानम् (knowledge) / रजसः (from rajas) / लोभः (greed) / एव (indeed) / च (and) / प्रमादमोहौ (negligence and delusion) / तमसः (from tamas) / भवन्ति (arise) / अज्ञानम् (ignorance) / एव (indeed) / च (and)","verseType":"teaching","insight":"It shifts attention from moral self-blame to pattern recognition: notice which guna is driving the mind, then respond wisely.","quoteVariants":[{"format":"card","text":"Clarity grows from sattva. Greed, delusion, and ignorance grow from the other two."},{"format":"widget","text":"Sattva reveals. Rajas grasps. Tamas obscures."},{"format":"notification","text":"My confusion has a source: the guna I feed."},{"format":"lockscreen","text":"Choose clarity. Starve confusion."}],"requisiteConcepts":["sattva","rajas","tamas"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

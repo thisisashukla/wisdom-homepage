@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-2_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-2_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-2.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/15-2.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":2,"order":553,"sanskrit":"अधश्चोर्ध्वं प्रसृतास्तस्य शाखा     गुणप्रवृद्धा विषयप्रवालाः । अधश्च मूलान्यनुसन्ततानि     कर्मानुबन्धीनि मनुष्यलोके ॥","hindiTranslation":"उस संसारवृक्षकी गुणोंसत्त्व, रज और तम के द्वारा बढ़ी हुई तथा विषयरूप कोंपलोंवाली शाखाएँ नीचे, मध्यमें और ऊपर सब जगह फैली हुई हैं ।  मनुष्यलोकमें कर्मोंके अनुसार बाँधनेवाले मूल भी नीचे और ऊपर सभी लोकोंमें व्याप्त हो रहे हैं ॥","englishTranslation":"Its branches spread below, above, and across. They are nourished by the three qualities, with sense-pleasures as their shoots. In the human world, action-bound roots extend everywhere, tying beings to results.","essence":"Craving and action keep the world-tree growing in every direction.","speaker":"Krishna","deity":"","tags":["ashvattha","gunas","indriya-vishaya","karma-bandha","samsara"],"simpleMeaning":"The world-tree spreads everywhere, fed by the three qualities and by desire for sense-pleasures. Its roots reach through human life through action and its consequences.","simpleInsight":"You can feel how deeply life is entangled when desire and action keep feeding the same tree.","detailedMeaning":"Krishna has just described the upside-down world-tree of existence to Arjuna on the battlefield. Now he shows how it grows: the three qualities feed its branches, sense-pleasures keep them alive, and action binds the roots through human life.","modernRelevance":"You keep checking one message, then another, then another. Each small craving feeds the whole pattern until it feels like the pattern is running you.","translationLiteral":"अधः (below) / च (and) / ऊर्ध्वं (above) / प्रसृताः (spread out) / तस्य (of that) / शाखाः (branches) / गुणप्रवृद्धाः (grown by the qualities) / विषयप्रवालाः (with sense-objects as shoots) / अधः (below) / च (and) / मूलानि (roots) / अनुसन्ततानि (extended everywhere) / कर्मानुबन्धीनि (bound by action) / मनुष्यलोके (in the human world)","verseType":"metaphor","insight":"It shifts attention from isolated choices to the hidden system of craving and consequence that keeps experience looping.","quoteVariants":[],"requisiteConcepts":["gunas","karma","samsara","vairagya"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"vairagya","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

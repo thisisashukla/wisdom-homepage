@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-16_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-16_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-16.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-16.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":16,"order":63,"sanskrit":"नासतो विद्यते भावो नाभावो विद्यते सतः । उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः ॥","hindiTranslation":"टिप्पणी प0 55 असत् का तो भाव सत्ता विद्यमान नहीं है और सत् का अभाव विद्यमान नहीं है, तत्त्वदर्शी महापुरुषोंने इन दोनोंका ही अन्त अर्थात् तत्त्व देखा है ॥","englishTranslation":"The unreal has no being; the real has no nonbeing. Seers have understood the boundary of both.","essence":"What passes away was never ultimate; what is real cannot vanish.","speaker":"Krishna","deity":"","tags":["sat-asat","tattvadarshi","impermanence","reality","duality"],"simpleMeaning":"What is temporary does not truly exist, and what is real cannot be destroyed. Those who see clearly understand the difference between the two.","simpleInsight":"You can stop treating every passing fear or loss as ultimate. Some things vanish; what is real stays.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen before the battle. Krishna has already told him to endure changing sensations; now he goes deeper, showing that the wise see through appearance itself. This verse defines what can truly be lost and what cannot.","modernRelevance":"You reread a message that stung, then imagine the whole relationship collapsing. Krishna’s point cuts through that spiral: not every passing state deserves the weight you give it.","translationLiteral":"नासतः (of the unreal) / विद्यते (exists) / भावः (being) / न (not) / अभावः (nonbeing) / विद्यते (exists) / सतः (of the real) / उभयोः (of both) / अपि (also) / दृष्टः (seen) / अन्तः (limit) / तु (indeed) / अनयोः (of these) / तत्त्वदर्शिभिः (by seers of reality)","verseType":"declaration","insight":"It shifts attention from appearances to what remains unchanged beneath them.","quoteVariants":[{"format":"card","text":"The unreal never is. The real never ceases."},{"format":"widget","text":"Unreal fades. Real remains."},{"format":"notification","text":"What is real cannot disappear."},{"format":"lockscreen","text":"The real remains. The unreal passes."}],"requisiteConcepts":["sat","asat","tattvadarshi"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

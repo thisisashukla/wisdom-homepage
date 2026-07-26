@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-8_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-8_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-8.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/3-8.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":8,"order":127,"sanskrit":"नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः । शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः ॥","hindiTranslation":"तू शास्त्रविधिसे नियत किये हुए कर्तव्यकर्म कर क्योंकि कर्म न करनेकी अपेक्षा कर्म करना श्रेष्ठ है तथा कर्म न करनेसे तेरा शरीरनिर्वाह भी सिद्ध नहीं होगा ॥","englishTranslation":"Do the duty prescribed for you. Action is better than inaction, and even your body cannot be sustained by inaction.","essence":"Right action is unavoidable; even survival depends on it.","speaker":"Krishna","deity":"","tags":["karma yoga","niyata karma","duty","inaction","kurukshetra"],"simpleMeaning":"Krishna tells Arjuna to do the duty assigned to him. Action is better than sitting idle, and even basic life cannot continue through inaction.","simpleInsight":"There is relief in moving forward: doing the needed thing is cleaner than freezing in fear.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is paralysed with doubt. Krishna answers the paralysis directly: do the duty that is already yours. This verse turns the argument from fear into action.","modernRelevance":"You are staring at the unanswered message, the apology, the hard resignation email. Waiting for perfect certainty only deepens the knot; action is what loosens it.","translationLiteral":"नियतं (prescribed) / कुरु (do) / कर्म (action, duty) / त्वं (you) / कर्म (action) / ज्यायः (better) / हि (indeed) / अकर्मणः (than inaction) / शरीरयात्रा (bodily maintenance, livelihood) / अपि (also, even) / च (and) / ते (your) / न (not) / प्रसिद्ध्येत् (would be accomplished) / अकर्मणः (by inaction)","verseType":"teaching","insight":"It shifts the mind from avoiding discomfort to fulfilling the task already in front of you.","quoteVariants":[{"format":"card","text":"Do your rightful work. Inaction cannot even sustain your body."},{"format":"widget","text":"Do the work. Inaction fails."},{"format":"notification","text":"Even your body depends on action."},{"format":"lockscreen","text":"Do your duty. Inaction will not hold."}],"requisiteConcepts":["karma","dharma"],"category":"motivational","tone":"grounding","targetAudience":["general","students","professionals"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

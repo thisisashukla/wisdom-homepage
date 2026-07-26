@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-47_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-47_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-47.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-47.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":47,"order":47,"sanskrit":"सञ्जय उवाचएवमुक्त्वाऽर्जुनः संख्ये रथोपस्थ उपाविशत् । विसृज्य सशरं चापं शोकसंविग्नमानसः ॥","hindiTranslation":"संजय बोले  ऐसा कहकर शोकाकुल मनवाले अर्जुन बाणसहित धनुष का त्याग करके युद्धभूमि में रथके मध्यभाग में बैठ गये ॥","englishTranslation":"Sanjaya said: Saying this, Arjuna sat down on the chariot seat in the midst of the battlefield, casting aside his bow and arrows, his mind overwhelmed by grief.","essence":"Grief can make even a warrior lay down his weapons.","speaker":"Sanjaya","deity":"","tags":["arjuna","kurukshetra","despair","chariot","battlefield"],"simpleMeaning":"Arjuna gives up his bow and sits down in the chariot, overwhelmed by grief.","simpleInsight":"Sometimes the body stops before the heart can bear one more step.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has just voiced his despair. Sanjaya watches him drop his bow and arrows and sink down on the chariot seat. The war is about to begin, but Arjuna is already broken.","modernRelevance":"You open the message, stare at it, and set the phone down. The decision is still there, but your hands have gone still because the weight of it has landed.","translationLiteral":"सञ्जय उवाच (Sanjaya said) / एवम् (thus) / उक्त्वा (having spoken) / अर्जुनः (Arjuna) / संख्ये (in battle) / रथोपस्थे (on the chariot seat) / उपाविशत् (sat down) / विसृज्य (casting aside) / सशरम् (with arrows) / चापम् (bow) / शोकसंविग्नमानसः (mind agitated by grief)","verseType":"narrative","insight":"It shows the exact moment paralysis takes over, before Krishna begins to answer it.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"grounding","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

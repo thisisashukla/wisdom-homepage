@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-22_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-22_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-22.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-22.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":22,"order":360,"sanskrit":"अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥","hindiTranslation":"जो अनन्य भक्त मेरा चिन्तन करते हुए मेरी उपासना करते हैं, मेरेमें निरन्तर लगे हुए उन भक्तोंका योगक्षेम अप्राप्तकी प्राप्ति और प्राप्तकी रक्षा मैं वहन करता हूँ ॥","englishTranslation":"Those who think of me alone and worship me with unwavering focus—I carry their welfare and security.","essence":"Unwavering devotion is met by unwavering support.","speaker":"Krishna","deity":"Krishna","tags":["ananyabhakti","yogakshema","one-pointed-devotion","krishna-shelter","bhakti-assurance"],"simpleMeaning":"People who focus on Krishna alone and worship him steadily do not have to carry every burden by themselves. He takes responsibility for their well-being and security.","simpleInsight":"Devotion can feel like being held instead of having to hold everything alone.","detailedMeaning":"On the battlefield, Arjuna is frozen between duty and grief. After exposing the limits of ritual and mixed motives, Krishna gives a promise to the devoted: those who turn to him without divided attention are personally sustained by him.","modernRelevance":"You are staring at a hospital bill, a breakup text, and a job notice all at once. This verse answers the panic that says, \'I have to hold everything myself.\'","translationLiteral":"अनन्याः (with no other focus) / चिन्तयन्तः (thinking) / माम् (me) / ये (those who) / जनाः (people) / पर्युपासते (worship all around) / तेषाम् (for them) / नित्य-अभियुक्तानाम् (for those always joined) / योग-क्षेमम् (welfare and security) / वहामि (I carry) / अहम् (I)","verseType":"declaration","insight":"It shifts devotion from asking for favors to trusting steady support. The mind stops clutching and begins relying.","quoteVariants":[{"format":"card","text":"Think of me alone. I carry your welfare and protection."},{"format":"widget","text":"One-pointed devotion. Carried completely."},{"format":"notification","text":"I do not abandon the one who stays with me."},{"format":"lockscreen","text":"Stay with me; I carry all."}],"requisiteConcepts":["Bhakti","Shraddha","Yoga","Kshema"],"category":"devotional","tone":"devotional","targetAudience":["general","couples","professionals"],"nodeId":"trust","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

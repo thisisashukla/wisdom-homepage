@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-15_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-15_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-15.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-15.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":15,"order":638,"sanskrit":"शरीरवाङ्मनोभिर्यत्कर्म प्रारभते नरः । न्याय्यं वा विपरीतं वा पञ्चैते तस्य हेतवः ॥","hindiTranslation":"मनुष्य, शरीर वाणी और मनके द्वारा शास्त्रविहित अथवा शास्त्रविरुद्ध जो कुछ भी कर्म आरम्भ करता है, उसके ये पूर्वोक्त पाँचों हेतु होते हैं ॥","englishTranslation":"Whatever action a person begins through body, speech, and mind—right or wrong—has these five causes.","essence":"Every deed comes from five causes, not one isolated doer.","speaker":"Krishna","deity":"","tags":["five causes","agency","kartṛtva","body-speech-mind","sankhya"],"simpleMeaning":"Any action a person starts through body, speech, or mind is driven by five causes, whether the action is proper or improper.","simpleInsight":"You are not the lone maker of your actions; many forces are already at work.","detailedMeaning":"On the Kurukshetra field, Krishna is breaking Arjuna’s usual idea of agency. After naming five causes behind every action, he adds that any deed begun through body, speech, or mind—right or wrong—arises from those causes, not from a single isolated doer.","modernRelevance":"You send the message in anger, then later say, “I just snapped.” Krishna points earlier: the body, words, mind, habits, and conditions were already moving.","translationLiteral":"शरीरवाङ्मनोभिः (through body, speech, and mind) / यत् (whatever) / कर्म (action) / प्रारभते (begins) / नरः (a person) / न्याय्यम् (right, proper) / वा (or) / विपरीतम् (wrong, contrary) / वा (or) / पञ्च (five) / एते (these) / तस्य (of that) / हेतवः (causes)","verseType":"teaching","insight":"It shifts blame and pride away from a single ego and toward a clearer view of how action actually arises.","quoteVariants":[],"requisiteConcepts":["karma","kartṛtva"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"karma-m","nodePath":"action","depth":"deep"}');
+
+/***/ })
+
+};
+;

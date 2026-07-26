@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-23_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-23_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-23.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/7-23.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":23,"order":303,"sanskrit":"अन्तवत्तु फलं तेषां तद्भवत्यल्पमेधसाम् । देवान्देवयजो यान्ति मद्भक्ता यान्ति मामपि ॥","hindiTranslation":"परन्तु उन अल्पबुद्धिवाले मनुष्योंको उन देवताओंकी आराधनाका फल अन्तवाला नाशवान् ही मिलता है ।  देवताओंका पूजन करनेवाले देवताओंको प्राप्त होते हैं और मेरे भक्त मेरे ही प्राप्त होते हैं ॥","englishTranslation":"But the reward gained by those of limited understanding is finite. Those who worship the radiant beings go to the radiant beings; my devotees come to me.","essence":"Finite worship brings finite results; devotion returns you to Krishna.","speaker":"Krishna","deity":"Krishna","tags":["shraddha","devata-upasana","bhakti","limited-fruit","krishna-gati"],"simpleMeaning":"Half-hearted understanding gives limited results. Those who worship lesser powers reach those powers, while Krishna\'s devotees reach Krishna.","simpleInsight":"Your deepest allegiance determines your destination.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is still frozen while Krishna explains devotion. After showing how faith can be placed in many forms, Krishna draws the line: limited worship gives limited fruit, but devotion to him leads to him.","modernRelevance":"You keep checking three different opinions before sending the message that matters. The mind wants a safe outcome, but the heart follows the thing it truly serves.","translationLiteral":"अन्तवत्तु (finite indeed) / फलम् (fruit, result) / तेषाम् (of those) / तत् (that) / भवति (becomes) / अल्पमेधसाम् (of the little-wise) / देवान् (to the radiant beings) / देवयजः (worshippers of the radiant beings) / यान्ति (go) / मद्भक्ताः (my devotees) / यान्ति (go) / माम् (to me) / अपि (also)","verseType":"declaration","insight":"It shifts attention from short-term gains to the object of devotion itself.","quoteVariants":[{"format":"card","text":"Limited worship ends in limited gain. My devotees come to me."},{"format":"widget","text":"Finite worship, finite fruit. Devotion comes home."},{"format":"notification","text":"What you worship shapes where you finally arrive."},{"format":"lockscreen","text":"Worship reveals the destination."}],"requisiteConcepts":["Bhakti","Shraddha"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

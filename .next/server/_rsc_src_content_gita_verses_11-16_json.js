@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-16_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-16_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-16.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-16.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":16,"order":430,"sanskrit":"अनेकबाहूदरवक्त्रनेत्रंपश्यामि त्वां सर्वतोऽनन्तरूपम् । नान्तं न मध्यं न पुनस्तवादिंपश्यामि विश्वेश्वर विश्वरूप ॥","hindiTranslation":"हे विश्वरूप  हे विश्वेश्वरव  आपको मैं अनेक हाथों, पेटों, मुखों और नेत्रोंवाला तथा सब ओरसे अनन्त रूपोंवाला देख रहा हूँ ।  मैं आपके न आदिको, न मध्यको और न अन्तको ही देख रहा हूँ ॥","englishTranslation":"I see You with many arms, bellies, mouths, and eyes, everywhere without end. I see no beginning, middle, or end of You, O Lord of all, O cosmic form.","essence":"The largest reality has no edge the mind can grasp.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna","limitless-form","awe","cosmic-vision"],"simpleMeaning":"Arjuna sees Krishna’s cosmic form as limitless, with countless arms, mouths, and eyes. He cannot find its beginning, middle, or end.","simpleInsight":"A mind can be overwhelmed by what is greater than it and still stay reverent.","detailedMeaning":"On Kurukshetra, Arjuna has been granted the vision of Krishna’s universal form. Stunned, he describes an immeasurable presence with countless features and no visible limits. This verse deepens his awe before the form that is about to reveal its full power.","modernRelevance":"You stand before a truth too large to fit your old categories. The urge to label it fades; reverence begins where control ends.","translationLiteral":"अनेकबाहु (many-armed) / उदर (bellied) / वक्त्र (mouthed) / नेत्र (eyed) / पश्यामि (I see) / त्वाम् (You) / सर्वतः (everywhere) / अनन्तरूपम् (endless-formed) / न अन्तम् (no end) / न मध्यम् (no middle) / न पुनः तव आदिम् (nor again Your beginning) / पश्यामि (I see) / विश्वेश्वर (Lord of all) / विश्वरूप (cosmic form)","verseType":"declaration","insight":"It shifts the mind from measuring reality to bowing before what cannot be contained.","quoteVariants":[],"requisiteConcepts":["Vishwarupa"],"category":"devotional","tone":"expansive","targetAudience":["students","general"],"nodeId":"surrender","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

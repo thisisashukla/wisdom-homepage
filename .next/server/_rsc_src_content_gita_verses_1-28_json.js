@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-28_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-28_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-28.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-28.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":28,"order":28,"sanskrit":"अर्जुन उवाचकृपया परयाऽऽविष्टो विषीदन्निदमब्रवीत् । दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम् ॥","hindiTranslation":"अर्जुन बोले  हे कृष्ण युद्ध की इच्छावाले इस कुटुम्बसमुदाय को अपने सामने उपस्थित देखकर मेरे अङ्ग शिथिल हो रहे हैं और मुख सूख रहा है तथा मेरे शरीर में कँपकँपी आ रही है एवं रोंगटे खड़े हो रहे हैं ।  हाथ से गाण्डीव धनुष गिर रहा है और त्वचा भी जल रही है ।  मेरा मन भ्रमितसा हो रहा है और मैं खड़े रहने में भी असमर्थ हो रहा हूँ ॥","englishTranslation":"Arjuna said: Seeing my own people gathered here, eager for battle, I am overcome with pity and grief, O Krishna.","essence":"Compassion can stop the warrior before the first arrow flies.","speaker":"Arjuna","deity":"","tags":["arjuna-vishada","karuna","kurukshetra","relatives","battlefield-grief"],"simpleMeaning":"Arjuna tells Krishna that seeing his own relatives gathered for battle has overwhelmed him with grief and pity.","simpleInsight":"Love can make violence feel unbearable, even when duty is waiting.","detailedMeaning":"On Kurukshetra, Arjuna has already recognized fathers, teachers, cousins, and friends on both sides. Now, seeing his own people ready to fight, he collapses into grief. This verse marks the moment his inner conflict becomes impossible to hide.","modernRelevance":"You open a message thread and realize the argument will wound people you love. Your body tightens before your mind can defend the choice.","translationLiteral":"अर्जुन उवाच (Arjuna said) / कृपया (by compassion or pity) / परया (supreme) / आविष्टः (overcome) / विषीदन् (grieving) / इदम् (this) / अब्रवीत् (spoke) / दृष्ट्वा (having seen) / इमम् (this) / स्वजनम् (my own people) / कृष्ण (O Krishna) / युयुत्सुम् (desiring to fight) / समुपस्थितम् (assembled before me)","verseType":"declaration","insight":"It shifts the reader from abstract conflict to the human cost hidden inside it.","quoteVariants":[],"requisiteConcepts":["karuna"],"category":"devotional","tone":"reflective","targetAudience":["general","couples","parents"],"nodeId":"compassion","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

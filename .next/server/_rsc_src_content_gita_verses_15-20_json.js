@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-20_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-20_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-20.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/15-20.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":20,"order":571,"sanskrit":"इति गुह्यतमं शास्त्रमिदमुक्तं मयाऽनघ । एतद्बुद्ध्वा बुद्धिमान्स्यात्कृतकृत्यश्च भारत ॥","hindiTranslation":"हे निष्पाप अर्जुन  इस प्रकार यह अत्यन्त गोपनीय शास्त्र मेरे द्वारा कहा गया है ।  हे भरतवंशी अर्जुन  इसको जानकर मनुष्य ज्ञानवान् तथा प्राप्तप्राप्तव्य और कृतकृत्य हो जाता है ॥","englishTranslation":"O sinless Arjuna, thus this most secret teaching has been spoken by Me. Knowing this, a person becomes wise and has accomplished all that must be done, O descendant of Bharata.","essence":"Secret knowledge makes a person complete.","speaker":"Krishna","deity":"Krishna","tags":["purushottama","guhyatama","krtakrtya","jnana","moksha"],"simpleMeaning":"Krishna says he has shared the most hidden teaching. A person who truly understands it becomes wise and feels complete, with nothing essential left undone.","simpleInsight":"There is relief in knowing that real understanding can end inner incompleteness.","detailedMeaning":"On the battlefield of Kurukshetra, after revealing the supreme self and the secret of liberation, Krishna closes the teaching. Arjuna stands at the edge of war, and Krishna says this knowledge is not just information — it is the completion of a human life.","modernRelevance":"You finish the hardest conversation of your life and sit in silence afterward, knowing the truth has finally been said. Some understandings do not add more to you; they make you whole.","translationLiteral":"इति (thus) / गुह्यतमम् (most secret) / शास्त्रम् (teaching) / इदम् (this) / उक्तम् (spoken) / मया (by me) / अनघ (O sinless one) / एतत् (this) / बुद्ध्वा (having known) / बुद्धिमान् (wise) / स्यात् (becomes) / कृतकृत्यः (one who has done what must be done) / च (and) / भारत (O descendant of Bharata)","verseType":"declaration","insight":"It shifts the mind from collecting ideas to recognising the kind of understanding that completes action and ends doubt.","quoteVariants":[{"format":"card","text":"Know this secret fully. Wisdom ends in completion."},{"format":"widget","text":"Know it. Be complete."},{"format":"notification","text":"Understanding this, nothing essential remains undone."},{"format":"lockscreen","text":"Know this, and be complete."}],"requisiteConcepts":["Purushottama","Moksha"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"moksha","nodePath":"convergence","depth":"deep"}');
+
+/***/ })
+
+};
+;

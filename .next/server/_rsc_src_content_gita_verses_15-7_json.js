@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-7_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-7_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-7.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/15-7.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":7,"order":558,"sanskrit":"ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥","hindiTranslation":"इस संसारमें जीव बना हुआ आत्मा मेरा ही सनातन अंश है परन्तु वह प्रकृतिमें स्थित मन और पाँचों इन्द्रियोंको आकर्षित करता है अपना मान लेता है ॥","englishTranslation":"The embodied being in this world is my eternal part, yet it draws the mind and the five senses, which rest in nature.","essence":"What is eternal gets pulled around by what changes.","speaker":"Krishna","deity":"Krishna","tags":["purushottama","jiva","manas","indriyas","prakriti"],"simpleMeaning":"The living being is Krishna\'s eternal part, but it gets pulled by the mind and senses that belong to nature and mistakes them for itself.","simpleInsight":"You are larger than the impulses that tug at you.","detailedMeaning":"On Kurukshetra, after Krishna has pointed Arjuna toward the supreme abode, he explains why embodied beings still wander. The true self is eternal and related to Krishna, yet the mind and senses, rooted in changing nature, pull it into identification and confusion.","modernRelevance":"You know the feeling: you meant to stay calm, then one comment, one craving, one memory drags you off center. The verse explains that pull as the mind and senses taking over.","translationLiteral":"ममैव (my indeed) / अंशः (part) / जीवलोके (in the world of living beings) / जीवभूतः (become a living being) / सनातनः (eternal) / मनःषष्ठानि (mind as the sixth, together with the five) / इन्द्रियाणि (senses) / प्रकृतिस्थानि (situated in nature) / कर्षति (draws, pulls)","verseType":"declaration","insight":"It shifts attention from blaming the self to seeing how nature drags awareness into identification.","quoteVariants":[],"requisiteConcepts":["manas","indriyas","prakriti"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"purushottama","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

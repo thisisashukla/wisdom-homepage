@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-28_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-28_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-28.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-28.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":28,"order":75,"sanskrit":"अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत । अव्यक्तनिधनान्येव तत्र का परिदेवना ॥","hindiTranslation":"हे भारत  सभी प्राणी जन्मसे पहले अप्रकट थे और मरनेके बाद अप्रकट हो जायँगे, केवल बीचमें ही प्रकट दीखते हैं ।  अतः इसमें शोक करनेकी बात ही क्या है ॥","englishTranslation":"All beings are unmanifest before birth and unmanifest after death; they are manifest only in between. Why grieve over that?","essence":"What appears briefly was never meant to be clung to.","speaker":"Krishna","deity":"","tags":["birth-and-death","impermanence","lamentation","kurukshetra","atman-body"],"simpleMeaning":"All beings are hidden before birth and hidden again after death. Since life is only a brief visible interval, there is no reason for grief.","simpleInsight":"Sorrow loosens when you stop treating a passing form as permanent.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen by grief. Krishna continues his teaching about the body and the true self, saying that all beings are unmanifest before birth and after death, and only briefly visible in between. That makes lamentation over loss misplaced.","modernRelevance":"You are staring at a hospital monitor, waiting for news you cannot control. The shape of a life is changing in front of you. This verse steadies the heart by showing that appearance and disappearance are not the whole story.","translationLiteral":"अव्यक्तादीनि (unmanifest at the beginning) / भूतानि (beings) / व्यक्तमध्यानि (manifest in the middle) / भारत (O Bharata) / अव्यक्तनिधनान्येव (unmanifest at the end also) / तत्र (there) / का (what) / परिदेवना (lamentation)","verseType":"teaching","insight":"It shifts attention from the temporary display to the larger continuity beneath it.","quoteVariants":[{"format":"card","text":"Beings appear for a moment. Grief cannot hold what was never yours to keep."},{"format":"widget","text":"Appearing is brief. Grief is misplaced."},{"format":"notification","text":"They were hidden before, hidden after—why grieve the middle?"},{"format":"lockscreen","text":"Appear, pass, vanish. Do not grieve."}],"requisiteConcepts":["Atman"],"category":"philosophical","tone":"reflective","targetAudience":["general","parents","couples"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-7_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-7_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-7.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/13-7.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":7,"order":496,"sanskrit":"इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः । एतत्क्षेत्रं समासेन सविकारमुदाहृतम् ॥","hindiTranslation":"इच्छा, द्वेष, सुख, दुःख, संघात, चेतना प्राणशक्ति और धृति  इन विकारोंसहित यह क्षेत्र संक्षेपसे कहा गया है ॥","englishTranslation":"Desire, aversion, pleasure, pain, the body, consciousness, and steadiness: this field, together with its changes, is briefly described.","essence":"Your reactions belong to the field, not to the knower.","speaker":"Krishna","deity":"","tags":["kshetra","kshetrajna","iccha","dvesha","sukha-duhkha"],"simpleMeaning":"The field includes the body, feelings, impulses, and the mind\'s steadiness. All of these are part of what changes, not the knower behind them.","simpleInsight":"You can stop confusing your moods and reactions with who you are.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen, and Krishna begins separating what changes from what truly knows. After naming the field\'s basic parts, Krishna now includes desire, aversion, pleasure, pain, and steadiness as part of the same changing nature.","modernRelevance":"You feel a surge of attraction, then irritation, then numbness, and call it your identity. This verse asks you to see those shifts as passing states, not your core.","translationLiteral":"इच्छा (desire) / द्वेषः (aversion) / सुखं (pleasure) / दुःखं (pain) / सङ्घातः (the body as a composite) / चेतना (consciousness) / धृतिः (steadiness) / एतत् (this) / क्षेत्रम् (field) / समासेन (briefly) / सविकारम् (with changes) / उदाहृतम् (is described)","verseType":"teaching","insight":"It shifts attention from identifying with reactions to observing them as changing contents of the field.","quoteVariants":[],"requisiteConcepts":["kshetra","vikara"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"inquiry","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

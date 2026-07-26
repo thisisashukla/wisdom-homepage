@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-47_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-47_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-47.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-47.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":47,"order":461,"sanskrit":"श्री भगवानुवाचमया प्रसन्नेन तवार्जुनेदंरूपं परं दर्शितमात्मयोगात् । तेजोमयं विश्वमनन्तमाद्यंयन्मे त्वदन्येन न दृष्टपूर्वम् ॥","hindiTranslation":"श्रीभगवान् बोले  हे अर्जुन  मैंने प्रसन्न होकर अपनी सामर्थ्यसे यह अत्यन्त श्रेष्ठ, तेजोमय, सबका आदि और अनन्त विश्वरूप तुझे दिखाया है, जिसको तुम्हारे सिवाय पहले किसीने नहीं देखा है ॥","englishTranslation":"Krishna said: O Arjuna, I have shown you this supreme, radiant, endless, original form through my grace. No one except you has seen it before.","essence":"What is most sacred is seen only by grace.","speaker":"Krishna","deity":"Krishna","tags":["vishwarupa","grace","divine-revelation","arjuna","cosmic-form"],"simpleMeaning":"Krishna tells Arjuna that he has revealed this radiant, original, endless form through his own power, and no one else has seen it before.","simpleInsight":"A rare glimpse can feel like grace, not achievement.","detailedMeaning":"On the battlefield, Arjuna has just begged to see Krishna\'s familiar form again after the overwhelming cosmic vision. Krishna answers that the vision itself came by his grace and power, and that Arjuna has been given a sight no one else has received.","modernRelevance":"You finally understand something that had been hidden for years — not because you forced it, but because the moment was given to you.","translationLiteral":"श्रीभगवानुवाच (the Lord said) / मया (by me) / प्रसन्नेन (being pleased) / तव (to you) / अर्जुन (Arjuna) / इदम् (this) / रूपम् (form) / परम् (supreme) / दर्शितम् (shown) / आत्मयोगात् (through my own power) / तेजोमयम् (full of radiance) / विश्वम् (all) / अनन्तम् (endless) / आद्यम् (original) / यत् (which) / मे (of me) / त्वदन्येन (by anyone other than you) / न (not) / दृष्टपूर्वम् (seen before)","verseType":"declaration","insight":"It shifts the mind from ownership of insight to gratitude for revelation.","quoteVariants":[],"requisiteConcepts":["Bhakti","Krishna"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

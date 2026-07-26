@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-15_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-15_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-15.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/15-15.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":15,"order":566,"sanskrit":"सर्वस्य चाहं हृदि सन्निविष्टो    मत्तः स्मृतिर्ज्ञानमपोहनं च । वेदैश्च सर्वैरहमेव वेद्यो    वेदान्तकृद्वेदविदेव चाहम् ॥","hindiTranslation":"मैं सम्पूर्ण प्राणियोंके हृदयमें स्थित हूँ ।  मेरेसे ही स्मृति, ज्ञान और अपोहन संशय आदि दोषोंका नाश होता है ।  सम्पूर्ण वेदोंके द्वारा मैं ही जाननेयोग्य हूँ ।  वेदोंके तत्त्वका निर्णय करनेवाला और वेदोंको जाननेवाला भी मैं ही हूँ ॥","englishTranslation":"I dwell in the hearts of all beings. Memory, knowledge, and removal of doubt come from Me. I am the one known through all the Vedas, the maker of Vedanta, and the knower of the Vedas.","essence":"The deepest knowing comes from the one already dwelling within every heart.","speaker":"Krishna","deity":"Krishna","tags":["hridaya","smriti","vedanta","vedavid","inner guidance"],"simpleMeaning":"Krishna says He lives in every being’s heart. Memory, understanding, and the clearing of confusion come from Him. All the Vedas point to Him, and He is their final knower.","simpleInsight":"You are not left to figure life out alone; the deepest clarity is already near you.","detailedMeaning":"On the battlefield, Arjuna is frozen and Krishna keeps expanding the teaching. After showing how He sustains life in the world, Krishna now reveals that He also lives in every heart, giving memory, understanding, and the clearing of confusion. Even the Vedas point back to Him.","modernRelevance":"You sit awake after a painful conversation, replaying every sentence and doubting your own judgment. This verse says the mind’s clarity is not manufactured by strain alone; it can be received from a deeper center.","translationLiteral":"सर्वस्य (of all) / च (and) / अहम् (I) / हृदि (in the heart) / सन्निविष्टः (dwelling) / मत्तः (from Me) / स्मृतिः (memory) / ज्ञानम् (knowledge) / अपोहनम् (removal) / च (and) / वेदैः (through the Vedas) / च (and) / सर्वैः (all) / अहम् (I) / एव (indeed) / वेद्यः (to be known) / वेदान्तकृत् (maker of Vedanta) / वेदविद् (knower of the Vedas) / एव (indeed) / च (and) / अहम् (I)","verseType":"declaration","insight":"It shifts attention from scattered mental effort to a deeper source of remembrance and discernment.","quoteVariants":[{"format":"card","text":"I live in every heart. All knowing comes from Me."},{"format":"widget","text":"I dwell in every heart."},{"format":"notification","text":"Memory, clarity, and release begin in Me."},{"format":"lockscreen","text":"I dwell in every heart, beyond every text."}],"requisiteConcepts":["Vedanta","smriti","jnana"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

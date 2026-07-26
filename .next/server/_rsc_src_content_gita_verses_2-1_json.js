@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-1_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-1_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-1.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/2-1.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":1,"order":48,"sanskrit":"सञ्जय उवाचतं तथा कृपयाऽविष्टमश्रुपूर्णाकुलेक्षणम् । विषीदन्तमिदं वाक्यमुवाच मधुसूदनः ॥","hindiTranslation":"संजय बोले  वैसी कायरता से आविष्ट उन अर्जुन के प्रति, जो कि विषाद कर रहे हैं और आँसुओं के कारण जिनके नेत्रों की देखने की शक्ति अवरुद्ध हो रही है, भगवान् मधुसूदन ये आगे कहे जानेवाले वचन बोले ॥","englishTranslation":"Sanjaya said: To Arjuna, overcome by pity, his eyes full of tears and clouded with grief, Madhusudana spoke these words.","essence":"Grief opens the door for instruction.","speaker":"Sanjaya","deity":"","tags":["kurukshetra","arjuna","sanjaya","grief","krishna"],"simpleMeaning":"Sanjaya describes Arjuna in tears and grief as Krishna begins to speak to him.","simpleInsight":"Even the deepest collapse can become the starting point of guidance.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has broken down before the fight begins. Sanjaya describes his tear-filled, confused state just before Krishna answers him. This verse sets the emotional scene for the teaching that follows.","modernRelevance":"You sit in your car after a brutal phone call, unable to start the engine. Before any advice can help, the mind first has to be seen in its breaking point.","translationLiteral":"सञ्जय उवाच (Sanjaya said) / तम् (to him) / तथा (thus) / कृपया (by pity) / आविष्टम् (overcome) / अश्रु-पूर्ण-आकुल-ईक्षणम् (with eyes full of tears and troubled) / विषीदन्तम् (grieving) / इदम् (this) / वाक्यम् (speech) / उवाच (spoke) / मधुसूदनः (Madhusudana)","verseType":"narrative","insight":"It frames the teaching as a response to collapse, not abstract theory.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"reflective","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

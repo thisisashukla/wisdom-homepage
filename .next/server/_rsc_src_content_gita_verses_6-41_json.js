@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-41_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-41_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-41.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-41.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":41,"order":274,"sanskrit":"प्राप्य पुण्यकृतां लोकानुषित्वा शाश्वतीः समाः । शुचीनां श्रीमतां गेहे योगभ्रष्टोऽभिजायते ॥","hindiTranslation":"वह योगभ्रष्ट पुण्यकर्म करनेवालोंके लोकोंको प्राप्त होकर और वहाँ बहुत वर्षोंतक रहकर फिर यहाँ शुद्ध श्रीमानोंके घरमें जन्म लेता है ॥","englishTranslation":"The one who falls from yoga reaches the worlds earned by good deeds, dwells there for many long years, and is then born again in the house of the pure and prosperous.","essence":"A fall from yoga still carries you forward.","speaker":"Krishna","deity":"","tags":["yogabhrashta","punyakrita","rebirth","sadhana","family-birth"],"simpleMeaning":"A person who slips from yoga does not lose everything. After enjoying the results of good deeds for a long time, that person is born again in a pure, prosperous family.","simpleInsight":"A setback on the path is not the end. Even a fall can become a new starting point.","detailedMeaning":"Arjuna has asked what happens if someone begins the path of yoga but fails before completion. Krishna answers with reassurance: the effort is not wasted. A fallen yogi rises again into favorable conditions, carrying the momentum of past practice.","modernRelevance":"You meditated for months, then life derailed you. The verse says the effort did not vanish; it can return as a better beginning, not a failure.","translationLiteral":"प्राप्य (having attained) / पुण्यकृताम् (of those who have done good deeds) / लोकान् (worlds) / उषित्वा (having dwelt) / शाश्वतीः (lasting, long) / समाः (years) / शुचीनाम् (of the pure) / श्रीमताम् (of the prosperous) / गेहे (in the house) / योगभ्रष्टः (one fallen from yoga) / अभिजायते (is born again)","verseType":"teaching","insight":"It shifts the mind from shame about interruption to trust in the continuity of practice.","quoteVariants":[],"requisiteConcepts":["Yoga","Karma"],"category":"philosophical","tone":"calming","targetAudience":["students","general"],"nodeId":"patience","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

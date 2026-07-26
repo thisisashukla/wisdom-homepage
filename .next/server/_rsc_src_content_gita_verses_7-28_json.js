@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-28_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-28_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-28.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/7-28.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":28,"order":308,"sanskrit":"येषां त्वन्तगतं पापं जनानां पुण्यकर्मणाम् । ते द्वन्द्वमोहनिर्मुक्ता भजन्ते मां दृढव्रताः ॥","hindiTranslation":"परन्तु जिन पुण्यकर्मा मनुष्योंके पाप नष्ट गये हैं, वे द्वन्द्वमोहसे रहित हुए मनुष्य दृढ़व्रती होकर मेरा भजन करते हैं ॥","englishTranslation":"But those whose wrongdoing has been cleared away, and whose good deeds have matured, are freed from confusion and worship me with firm resolve.","essence":"Clear hearts stop wavering and move toward the divine with resolve.","speaker":"Krishna","deity":"","tags":["dvandvamoha","punyakarma","dṛḍhavrata","bhajana","moral-purification"],"simpleMeaning":"People whose harmful impulses have been cleared and whose good actions have ripened are no longer torn by confusion. With steady commitment, they turn toward Krishna.","simpleInsight":"Clarity feels possible again when inner conflict stops pulling you apart.","detailedMeaning":"On the battlefield, Arjuna is trapped between duty and grief. Krishna explains that only people whose inner corruption has thinned and whose good actions have ripened can move beyond confusion and turn toward him with steady resolve.","modernRelevance":"You sit in the car after a hard conversation, replaying every sentence and feeling split in two. The mind that has stopped feeding its own confusion can finally choose cleanly.","translationLiteral":"येषाम् (of whom) / तु (but) / अन्तगतं (ended, destroyed) / पापं (wrongdoing) / जनानाम् (of people) / पुण्यकर्मणाम् (whose actions are meritorious) / ते (they) / द्वन्द्वमोहनिर्मुक्ताः (freed from the confusion of opposites) / भजन्ते (worship, serve) / माम् (me) / दृढव्रताः (firmly resolved)","verseType":"teaching","insight":"It shifts the focus from divided impulse to steadiness of commitment.","quoteVariants":[],"requisiteConcepts":["Bhakti","Dvandva","Punya","Papa"],"category":"devotional","tone":"devotional","targetAudience":["general"],"nodeId":"trust","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

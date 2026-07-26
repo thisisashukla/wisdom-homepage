@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-9_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-9_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-9.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/1-9.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":9,"order":9,"sanskrit":"अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः । नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः ॥","hindiTranslation":"इनके अतिरिक्त बहुतसे शूरवीर हैं, जिन्होंने मेरे लिये अपने जीने की इच्छा का भी त्याग कर दिया है और जो अनेक प्रकार के शस्त्रअस्त्रों को चलानेवाले हैं तथा जो सबकेसब युद्धकला में अत्यन्त चतुर हैं ॥","englishTranslation":"Besides these, many heroes have given up their lives for my sake. They wield many kinds of weapons and are all skilled in warfare.","essence":"Confidence built on numbers still trembles before battle.","speaker":"Duryodhana","deity":"","tags":["kurukshetra","duryodhana","battlefield","kuru-army","warriors"],"simpleMeaning":"More warriors stand on Duryodhana\'s side too. They are fearless, heavily armed, and experienced in battle.","simpleInsight":"Pride can inflate strength into certainty, even before the first blow lands.","detailedMeaning":"On the Kurukshetra field, Duryodhana keeps listing his side’s champions to Drona. After naming Bhishma, Karna, and others, he adds more fearless fighters who are ready to die for him. The speech builds his confidence before the war begins.","modernRelevance":"Before a high-stakes confrontation, someone rattles off every ally, every backup, every advantage, trying to silence doubt with a show of force.","translationLiteral":"अन्ये (others) / च (and) / बहवः (many) / शूराः (heroes) / मदर्थे (for my sake) / त्यक्तजीविताः (having given up life) / नानाशस्त्रप्रहरणाः (wielding various weapons) / सर्वे (all) / युद्धविशारदाः (expert in warfare)","verseType":"narrative","insight":"It shows how fear can be masked by tallying strength instead of facing reality.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"grounding","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

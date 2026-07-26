@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-13_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-13_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-13.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-13.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":13,"order":246,"sanskrit":"समं कायशिरोग्रीवं धारयन्नचलं स्थिरः । संप्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन् ॥","hindiTranslation":"काया, शिर और ग्रीवाको सीधे अचल धारण करके तथा दिशाओंको न देखकर केवल अपनी नासिकाके अग्रभागको देखते हुए स्थिर होकर बैठे ॥","englishTranslation":"Holding the body, head, and neck straight and still, and gazing only at the tip of the nose without looking around.","essence":"Steady posture is the first gate to a steady mind.","speaker":"Krishna","deity":"","tags":["dhyana","asana","mind-control","sense-withdrawal","meditation-posture"],"simpleMeaning":"Sit with your body straight and still. Keep your gaze fixed and do not let the eyes wander.","simpleInsight":"Stillness begins with the body. A steady posture helps the mind stop scattering.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is being taught how to meditate after the basic setup has been given. Krishna now moves from the seat and the breath of practice to the body\'s alignment, showing that inner training begins with disciplined stillness.","modernRelevance":"You sit down to breathe for five minutes, but your eyes keep jumping to the phone, the door, the clock. The practice starts when the body stops asking to escape.","translationLiteral":"समम् (straight/even) / काय-शिरो-ग्रीवम् (body-head-neck) / धारयन् (holding) / अचलम् (motionless) / स्थिरः (steady) / संप्रेक्ष्य (gazing) / नासिका-अग्रम् (tip of the nose) / स्वम् (own) / दिशः (directions) / च (and) / अनवलोकयन् (not looking)","verseType":"teaching","insight":"It shifts meditation from a vague idea to a concrete bodily discipline.","quoteVariants":[],"requisiteConcepts":["dhyana","yoga"],"category":"philosophical","tone":"grounding","targetAudience":["students","general"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

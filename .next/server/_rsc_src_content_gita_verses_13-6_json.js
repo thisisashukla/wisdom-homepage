@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-6_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-6_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-6.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/13-6.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":6,"order":495,"sanskrit":"महाभूतान्यहङ्कारो बुद्धिरव्यक्तमेव च । इन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः ॥","hindiTranslation":"मूल प्रकृति, समष्टि बुद्धि महत्तत्त्व, समष्टि अहंकार, पाँच महाभूत और दस इन्द्रियाँ, एक मन तथा पाँचों इन्द्रियोंके पाँच विषय   यह चौबीस तत्त्वोंवाला क्षेत्र है ॥","englishTranslation":"The five great elements, ego, intellect, the unmanifest, the ten senses, the one mind, and the five sense-objects: this is the field in brief.","essence":"What you call “me” is a changing system, not a single thing.","speaker":"Krishna","deity":"","tags":["kshetra","mahabhuta","ahankara","buddhi","indriya"],"simpleMeaning":"The body-mind world is made of many parts: elements, ego, intellect, senses, mind, and sense-objects. Krishna is naming the field so Arjuna can see it clearly.","simpleInsight":"You stop mistaking your changing equipment for who you are.","detailedMeaning":"On the battlefield, Arjuna is frozen, and Krishna begins mapping reality with precision. After introducing the field and the knower of the field, he lists the twenty-four components that make up the field itself, so Arjuna can separate what changes from what knows.","modernRelevance":"You sit in a therapist’s office after saying, “I don’t know what’s wrong with me.” The first relief is naming the parts: body, thoughts, impulses, roles, reactions. Clarity starts there.","translationLiteral":"महाभूतानि (the five great elements) / अहङ्कारः (ego) / बुद्धिः (intellect) / अव्यक्तम् (the unmanifest) / एव (indeed) / च (and) / इन्द्रियाणि (the senses) / दश (ten) / एकम् (one) / च (and) / पञ्च (five) / च (and) / इन्द्रियगोचराः (sense-objects)","verseType":"teaching","insight":"It trains the mind to dissect experience into components instead of collapsing everything into a single identity.","quoteVariants":[],"requisiteConcepts":["Kshetra","Ahamkara","Buddhi","Manas","Indriya"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"inquiry","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-5.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/7-5.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":5,"order":285,"sanskrit":"अपरेयमितस्त्वन्यां प्रकृतिं विद्धि मे पराम् । जीवभूतां महाबाहो ययेदं धार्यते जगत् ॥","hindiTranslation":"पृथ्वी, जल, तेज, वायु, आकाश  ये पञ्चमहाभूत और मन, बुद्धि तथा अहंकार  यह आठ प्रकारके भेदोंवाली मेरी अपरा प्रकृति है ।  हे महाबाहो  इस अपरा प्रकृतिसे भिन्न मेरी जीवरूपा बनी हुुई मेरी परा प्रकृतिको जान, जिसके द्वारा यह जगत् धारण किया जाता है ॥","englishTranslation":"Know My higher nature, which is different from this lower nature, O mighty-armed one. By that living nature, this world is sustained.","essence":"What sustains the world is subtler than what the senses first show.","speaker":"Krishna","deity":"","tags":["prakriti","para-prakriti","apara-prakriti","jiva-bhuta","sustaining-force"],"simpleMeaning":"There is a higher nature beyond matter and mind. That living power holds up the whole world.","simpleInsight":"Reality is not just what changes. Something living and subtler is what keeps everything going.","detailedMeaning":"On the battlefield, Arjuna is frozen while Krishna begins explaining what lies behind the visible world. After naming the lower nature, Krishna points to a higher living nature that sustains everything. The teaching prepares Arjuna to see reality beyond what the senses can grasp.","modernRelevance":"You look at a room full of charts, deadlines, and noise, and still feel something essential is missing. Krishna points to the deeper force that makes the whole system hold together.","translationLiteral":"अपरा (lower) / इयम् (this) / इतः (from this) / तु (but) / अन्याम् (another) / प्रकृतिम् (nature) / विद्धि (know) / मे (My) / पराम् (higher) / जीवभूताम् (become living) / महाबाहो (O mighty-armed one) / यया (by which) / इदम् (this) / धार्यते (is sustained) / जगत् (world)","verseType":"teaching","insight":"It shifts attention from surface appearances to the sustaining principle underneath them.","quoteVariants":[],"requisiteConcepts":["Prakriti"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;
