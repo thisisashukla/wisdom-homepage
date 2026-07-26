@@ -7,6 +7,11 @@ import './search.css'
 
 const BACKEND = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8000'
 
+// In production, the search experience is gated behind a "Coming Soon" state.
+// NODE_ENV is inlined at build time by Next.js — `next dev` → 'development',
+// `next build` → 'production'. Dev keeps the full working search.
+const IS_PROD = process.env.NODE_ENV === 'production'
+
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 interface Intent {
@@ -368,6 +373,97 @@ function AssistantBubble({
   )
 }
 
+// ── Coming Soon (prod only) ───────────────────────────────────────────────────
+
+const COMING_SOON_CSS = `
+  .coming-soon {
+    max-width: 620px;
+    margin: 80px auto 0;
+    padding: 44px 32px 40px;
+    text-align: center;
+    border: 1px solid rgba(200, 136, 30, 0.22);
+    border-radius: 16px;
+    background:
+      radial-gradient(120% 100% at 50% 0%, rgba(200, 136, 30, 0.08) 0%, transparent 60%),
+      rgba(255, 255, 255, 0.02);
+    animation: coming-soon-fade 0.5s ease-out both;
+  }
+  @keyframes coming-soon-fade {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .coming-soon__label {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #f5c96a;
+    font-weight: 600;
+    padding: 6px 12px;
+    border: 1px solid rgba(200, 136, 30, 0.35);
+    border-radius: 999px;
+    margin-bottom: 22px;
+  }
+  .coming-soon__title {
+    font-family: "Cormorant Garamond", "Georgia", serif;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 500;
+    color: #f5e8cc;
+    line-height: 1.15;
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+  }
+  .coming-soon__sub {
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(245, 232, 204, 0.7);
+    max-width: 480px;
+    margin: 0 auto 26px;
+  }
+  .coming-soon__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #f5c96a;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid rgba(200, 136, 30, 0.35);
+    border-radius: 999px;
+    transition: background 0.15s, color 0.15s;
+  }
+  .coming-soon__cta:hover {
+    background: rgba(200, 136, 30, 0.1);
+    color: #f5e8cc;
+  }
+`
+
+function ComingSoon() {
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: COMING_SOON_CSS }} />
+      <section className="coming-soon" data-mp-section="search_coming_soon">
+        <span className="coming-soon__label">Coming Soon</span>
+        <h1 className="coming-soon__title">
+          Ask the Scriptures — <br />
+          arriving soon.
+        </h1>
+        <p className="coming-soon__sub">
+          A new way to search across the Bhagavad Gita, Upanishads, and more —
+          in natural language. We&apos;re polishing it now.
+        </p>
+        <a
+          className="coming-soon__cta"
+          href="/gita"
+          data-mp-location="search_coming_soon_cta"
+        >
+          Explore the Gita in the meantime →
+        </a>
+      </section>
+    </>
+  )
+}
+
 // ── Main page ─────────────────────────────────────────────────────────────────
 
 export default function SearchPage() {
@@ -421,6 +517,9 @@ export default function SearchPage() {
   }, [updateMsg])
 
   async function handleSend(overrideQuery?: string) {
+    // Prod is gated behind Coming Soon — bail early even if the input is
+    // somehow triggered (e.g. programmatic focus + Enter).
+    if (IS_PROD) return
     const q = (overrideQuery ?? input).trim()
     if (!q || isAnyLoading) return
 
@@ -497,7 +596,9 @@ export default function SearchPage() {
         {/* ── Message list ─────────────────────────────────────────────── */}
         <div className="chat-messages">
           {messages.length === 0 && (
-            <ChatWelcome onSuggest={q => handleSend(q)} />
+            IS_PROD
+              ? <ComingSoon />
+              : <ChatWelcome onSuggest={q => handleSend(q)} />
           )}
 
           {messages.map(msg =>
@@ -518,6 +619,9 @@ export default function SearchPage() {
         </div>
 
         {/* ── Input bar ────────────────────────────────────────────────── */}
+        {/* In production the entire search flow is gated — disable the
+            textarea + send button and swap the placeholder. Dev keeps the
+            full working input. */}
         <div className="chat-input-bar">
           <textarea
             ref={inputRef}
@@ -534,15 +638,16 @@ export default function SearchPage() {
                 handleSend()
               }
             }}
-            placeholder="Ask about life, scripture, or the self…"
-            disabled={isAnyLoading}
+            placeholder={IS_PROD ? 'Search coming soon…' : 'Ask about life, scripture, or the self…'}
+            disabled={IS_PROD || isAnyLoading}
+            aria-disabled={IS_PROD || isAnyLoading}
             rows={1}
           />
           <button
             className="chat-send"
             onClick={() => handleSend()}
-            disabled={isAnyLoading || !input.trim()}
-            aria-label="Send"
+            disabled={IS_PROD || isAnyLoading || !input.trim()}
+            aria-label={IS_PROD ? 'Search coming soon' : 'Send'}
           >
             {isAnyLoading
               ? <span className="btn-spinner" />
