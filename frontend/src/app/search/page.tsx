@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react'
 import Nav from '@/components/Nav'
+import BlogTracker from '@/components/BlogTracker'
 import './search.css'
 
 const BACKEND = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8000'
@@ -489,6 +490,7 @@ export default function SearchPage() {
 
   return (
     <>
+      <BlogTracker pageName="search" />
       <Nav />
       <main className="chat-page">
 

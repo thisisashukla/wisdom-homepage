@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { signInWithPopup } from 'firebase/auth'
 import { auth, googleProvider } from '@/lib/firebase'
 import { useAuth } from '@/context/AuthContext'
+import BlogTracker from '@/components/BlogTracker'
 
 
 export default function LoginPage() {
@@ -33,6 +34,7 @@ export default function LoginPage() {
 
   return (
     <div className="login-page">
+      <BlogTracker pageName="login" />
       <div className="login-card">
         <div className="login-logo">
           <span className="login-logo-dot"></span>

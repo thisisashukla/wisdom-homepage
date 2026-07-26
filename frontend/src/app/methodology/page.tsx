@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
+import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
   title: 'How Wisdom Content Is Made — Methodology & Disclosure | Wisdom',
@@ -281,6 +282,7 @@ const pageCSS = `
 export default function MethodologyPage() {
   return (
     <>
+      <BlogTracker pageName="methodology" />
       <style dangerouslySetInnerHTML={{ __html: pageCSS }} />
 
       <Nav />
