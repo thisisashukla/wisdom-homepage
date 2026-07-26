@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-23_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-23_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-23.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-23.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":23,"order":361,"sanskrit":"येऽप्यन्यदेवता भक्ता यजन्ते श्रद्धयाऽन्विताः । तेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम् ॥","hindiTranslation":"हे कुन्तीनन्दन जो भी भक्त मनुष्य श्रद्धापूर्वक अन्य देवताओंका पूजन करते हैं, वे भी करते हैं मेरा ही पूजन, पर करते है अविधिपूर्वक ॥","englishTranslation":"Even those who, filled with trust, worship other radiant beings, worship Me alone, but in the wrong way, O son of Kunti.","essence":"All sincere worship reaches the one reality, even when the form is confused.","speaker":"Krishna","deity":"Krishna","tags":["other-deities","shraddha","exclusive-devotion","upasana","bhakti"],"simpleMeaning":"People who worship other radiant beings with trust are still, in a deeper sense, worshipping Krishna, but without the full understanding of how worship truly works.","simpleInsight":"Trust matters, but clear understanding keeps devotion from becoming fragmented.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna still stands frozen while Krishna explains why different forms of worship do not stand apart from the supreme reality. This verse is part of a larger teaching that all sincere worship ultimately reaches Krishna, though not always with full knowledge.","modernRelevance":"You light a lamp before one name, pray before another, and still feel the same ache for help. The heart reaches upward; the mind only names the doorway differently.","translationLiteral":"येऽपि (even those who) / अन्यदेवता-भक्ताः (devotees of other radiant beings) / यजन्ते (worship) / श्रद्धया अन्विताः (endowed with trust) / तेऽपि (they also) / माम् एव (Me alone) / कौन्तेय (O son of Kunti) / यजन्ति (worship) / अविधिपूर्वकम् (in an improper way)","verseType":"teaching","insight":"It shifts devotion from many separate targets to one underlying source.","quoteVariants":[],"requisiteConcepts":["Shraddha","Bhakti"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

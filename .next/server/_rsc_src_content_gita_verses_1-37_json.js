@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-37_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-37_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-37.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-37.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":37,"order":37,"sanskrit":"तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान् । स्वजनं हि कथं हत्वा सुखिनः स्याम माधव ॥","hindiTranslation":"इसलिये अपने बान्धव इन धृतराष्ट्रसम्बन्धियों को मारने के लिये हम योग्य नहीं हैं क्योंकि हे माधव अपने कुटुम्बियों को मारकर हम कैसे सुखी होंगे ॥","englishTranslation":"Therefore, we are not fit to kill our own kinsmen, the sons of Dhritarashtra. How could we be happy after killing our relatives, O Madhava?","essence":"Kinship makes violence feel unbearable.","speaker":"Arjuna","deity":"","tags":["arjuna-vishada","kinship","nonviolence","kurukshetra","family-conflict"],"simpleMeaning":"Arjuna says the Kaurava side are his own relatives, so killing them would not bring happiness.","simpleInsight":"You can feel the cost of violence before you act, and that honesty matters.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna looks at the men he is meant to fight and sees family, not enemies. Krishna is pressing him toward action, but Arjuna\'s heart is breaking under the thought of killing his own kin.","modernRelevance":"You are about to send the message that will end a friendship. Before you hit send, you feel the weight of what cannot be undone.","translationLiteral":"तस्मात् (therefore) / न अर्हाः (not fit) / वयम् (we) / हन्तुम् (to kill) / धार्तराष्ट्रान् (the sons of Dhritarashtra) / स्व-बान्धवान् (our own relatives) / स्व-जनम् (our own people) / हि (indeed) / कथम् (how) / हत्वा (having killed) / सुखिनः (happy) / स्याम (we would be) / माधव (O Madhava)","verseType":"teaching","insight":"It shifts the mind from winning to seeing the human cost of action.","quoteVariants":[],"requisiteConcepts":[],"category":"philosophical","tone":"reflective","targetAudience":["general","couples","parents"],"nodeId":"compassion","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

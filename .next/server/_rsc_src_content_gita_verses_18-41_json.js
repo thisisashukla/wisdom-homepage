@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-41_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-41_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-41.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-41.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":41,"order":664,"sanskrit":"ब्राह्मणक्षत्रियविशां शूद्राणां च परंतप । कर्माणि प्रविभक्तानि स्वभावप्रभवैर्गुणैः ॥","hindiTranslation":"हे परंतप  ब्राह्मण, क्षत्रिय, वैश्य और शूद्रोंके कर्म स्वभावसे उत्पन्न हुए तीनों गुणोंके द्वारा विभक्त किये गये हैं ॥","englishTranslation":"O scorcher of foes, the duties of priests, warriors, merchants, and workers are divided according to the qualities born of their nature.","essence":"Your rightful work comes from your nature, not imitation.","speaker":"Krishna","deity":"","tags":["varna","svabhava","guna","dharma","role"],"simpleMeaning":"Different kinds of work belong to different people according to their nature and qualities.","simpleInsight":"You do not have to copy someone else’s role. Your nature points toward the work that fits you.","detailedMeaning":"On the battlefield at Kurukshetra, Arjuna still hesitates while Krishna keeps unfolding the structure of right action. Here Krishna explains that social roles and duties are not random; they arise from the qualities built into a person\'s nature.","modernRelevance":"A student keeps forcing themselves into a career because everyone praises it, while their real strengths are elsewhere. The pressure eases when they stop copying and start listening to what fits.","translationLiteral":"ब्राह्मण-क्षत्रिय-विशां (of priests, warriors, merchants) / शूद्राणां (of workers) / च (and) / परंतप (O scorcher of foes) / कर्माणि (duties / actions) / प्रविभक्तानि (are divided) / स्वभाव-प्रभवैः (born of one’s nature) / गुणैः (by the qualities)","verseType":"teaching","insight":"It shifts attention from borrowed identity to the work that matches your actual nature.","quoteVariants":[],"requisiteConcepts":["Dharma","Guna","Svabhava"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","entrepreneurs"],"nodeId":"duty","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

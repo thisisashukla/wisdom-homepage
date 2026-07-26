@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-45_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-45_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-45.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-45.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":45,"order":278,"sanskrit":"प्रयत्नाद्यतमानस्तु योगी संशुद्धकिल्बिषः । अनेकजन्मसंसिद्धस्ततो याति परां गतिम् ॥","hindiTranslation":"परन्तु जो योगी प्रयत्नपूर्वक यत्न करता है और जिसके पाप नष्ट हो गये हैं तथा जो अनेक जन्मोंसे सिद्ध हुआ है, वह योगी फिर परमगतिको प्राप्त हो जाता है ॥","englishTranslation":"But the yogi who keeps striving with effort, whose impurities have been cleared, and who has been perfected through many births, reaches the highest goal.","essence":"Persistent striving eventually ripens into the highest fulfillment.","speaker":"Krishna","deity":"","tags":["dhyana-yoga","abhyasa","purification","many-births","param-gati"],"simpleMeaning":"Persistent effort clears inner impurities, and over many lives of practice, the yogi reaches the highest goal.","simpleInsight":"Progress is not wasted. Every sincere attempt adds up, even when results feel far away.","detailedMeaning":"On Kurukshetra, Krishna is answering Arjuna’s fear that spiritual effort can be lost. After describing how practice carries forward across births, he says that the one who keeps striving, becomes purified, and matures through many lives finally reaches the highest state.","modernRelevance":"You return to the mat after months away, stiff and distracted, wondering whether any of it still counts. It does. The effort itself keeps shaping you, even when progress feels invisible.","translationLiteral":"प्रयत्नात् (by effort) / यतमानः (striving) / तु (but) / योगी (yogi) / संशुद्धकिल्बिषः (with impurities fully cleansed) / अनेकजन्मसंसिद्धः (perfected through many births) / ततः (then) / याति (goes) / पराम् (highest) / गतिम् (goal)","verseType":"teaching","insight":"It shifts the mind from judging practice by speed to trusting cumulative transformation.","quoteVariants":[{"format":"card","text":"Keep striving. Cleansed over time, you reach the highest goal."},{"format":"widget","text":"Strive on. Purity ripens into arrival."},{"format":"notification","text":"Effort keeps working, even across many lives."},{"format":"lockscreen","text":"Keep striving. The highest goal awaits."}],"requisiteConcepts":["Yoga","Karma","Moksha"],"category":"philosophical","tone":"inspiring","targetAudience":["students","general"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

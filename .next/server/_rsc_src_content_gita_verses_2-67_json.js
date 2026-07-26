@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-67_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-67_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-67.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-67.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":67,"order":114,"sanskrit":"इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते । तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥","hindiTranslation":"अपनेअपने विषयोंमें विचरती हुई इन्द्रियोंमेंसे एक ही इन्द्रिय जिस मनको अपना अनुगामी बना लेती है, वह अकेला मन जलमें नौकाको वायुकी तरह इसकी बुद्धिको हर लेता है ॥","englishTranslation":"As the winds carry a boat on water, even one roaming sense can sweep away the mind\'s discernment.","essence":"One uncontrolled sense can carry the mind away.","speaker":"Krishna","deity":"","tags":["indriya","manas","buddhi","sense-control","attention"],"simpleMeaning":"If even one sense runs after its objects, it can pull the mind along and destroy clear judgment, like wind pushing a boat off course.","simpleInsight":"A small lapse of attention can undo a lot of inner steadiness.","detailedMeaning":"On Kurukshetra, Arjuna is still frozen, and Krishna is showing why inner control matters before action begins. Even one sense chasing its object can drag the mind away and sink discernment, just as wind overturns a boat.","modernRelevance":"You open one app “for a minute,” then your focus is gone. A single unchecked pull can scatter the whole mind before you notice.","translationLiteral":"इन्द्रियाणाम् (of the senses) / हि (indeed) / चरताम् (roaming) / यत् (which) / मनः (the mind) / अनुविधीयते (follows after) / तत् (that) / अस्य (of this one) / हरति (takes away) / प्रज्ञाम् (discernment) / वायुः (the wind) / नावम् इव (like a boat) / अम्भसि (on water)","verseType":"metaphor","insight":"It teaches you to treat attention as fragile: one unchecked sense can derail judgment.","quoteVariants":[{"format":"card","text":"One wandering sense can sink discernment. Guard the mind like a boat in wind."},{"format":"widget","text":"Guard the mind. One sense can capsize it."},{"format":"notification","text":"One roaming sense can steal my discernment."},{"format":"lockscreen","text":"Guard the senses. Protect the mind."}],"requisiteConcepts":["Manas","Buddhi","Indriya"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-22_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-22_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-22.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-22.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":22,"order":255,"sanskrit":"यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः । यस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते ॥","hindiTranslation":"जिस लाभकी प्राप्ति होनेपर उससे अधिक कोई दूसरा लाभ उसके माननेमें भी नहीं आता और जिसमें स्थित होनेपर वह बड़े भारी दुःखसे भी विचलित नहीं किया जा सकता ॥","englishTranslation":"Having attained it, one thinks no greater gain exists. Established in it, one is not shaken even by great sorrow.","essence":"True fulfillment leaves nothing more to chase and nothing strong enough to unsettle you.","speaker":"Krishna","deity":"","tags":["dhyana","samadhi","chitta","vairagya","steadiness"],"simpleMeaning":"A person who reaches this state sees nothing greater to attain and cannot be shaken even by severe suffering.","simpleInsight":"There is calm in no longer needing life to be different.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna’s mind is being trained to settle beyond fear and restlessness. Krishna describes a state so complete that no other gain seems higher, and even heavy sorrow cannot disturb it.","modernRelevance":"You get the message that would normally wreck your day, and your chest stays open anyway. Nothing inside you begs for a different reality.","translationLiteral":"यम् (which) / लब्ध्वा (having attained) / च (and) / अपरम् (another) / लाभम् (gain) / मन्यते (one considers) / न (not) / अधिकम् (greater) / ततः (than that) / यस्मिन् (in which) / स्थितः (established) / न (not) / दुःखेन (by sorrow) / गुरुणा (heavy) / अपि (even) / विचाल्यते (is shaken)","verseType":"teaching","insight":"It shifts the mind from chasing improvement to resting in unshakable steadiness.","quoteVariants":[{"format":"card","text":"Gain this stillness, and no loss can shake you."},{"format":"widget","text":"No gain outranks this stillness."},{"format":"notification","text":"Nothing higher remains once this is reached."},{"format":"lockscreen","text":"Stand here. Nothing can unseat you."}],"requisiteConcepts":["Yoga","Chitta","Dhyana"],"category":"philosophical","tone":"calming","targetAudience":["students","professionals","general"],"nodeId":"stillness","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

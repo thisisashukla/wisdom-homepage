@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-23_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-23_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-23.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-23.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":23,"order":185,"sanskrit":"गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः । यज्ञायाचरतः कर्म समग्रं प्रविलीयते ॥","hindiTranslation":"जिसकी आसक्ति सर्वथा मिट गयी है, जो मुक्त हो गया है, जिसकी बुद्धि स्वरूपके ज्ञानमें स्थित है, ऐसे केवल यज्ञके लिये कर्म करनेवाले मनुष्यके सम्पूर्ण कर्म विलीन हो जाते हैं ॥","englishTranslation":"For one who has given up attachment, is freed, and whose mind rests in knowledge, all action melts away when done only for sacrifice.","essence":"Action loses its grip when it becomes offering, not possession.","speaker":"Krishna","deity":"","tags":["nishkama-karma","yajna","attachment","jnaana","karma-phala"],"simpleMeaning":"When attachment is gone and the mind rests in clear understanding, work done as an offering no longer binds a person.","simpleInsight":"There is relief in acting without clinging; the work can be complete without leaving a burden behind.","detailedMeaning":"On Kurukshetra, Arjuna is frozen before the war. Krishna keeps teaching how action can be purified. Here he says that when a person is free of attachment and grounded in knowledge, even action disappears as bondage if it is done only as sacrifice.","modernRelevance":"You send the message, make the apology, or sign the resignation with a steady hand. The act is finished; the mental grip on it does not have to continue.","translationLiteral":"गतसङ्गस्य (of one gone beyond attachment) / मुक्तस्य (of one freed) / ज्ञानावस्थितचेतसः (of one whose mind is established in knowledge) / यज्ञाय (for sacrifice) / आचरतः (practising) / कर्म (action) / समग्रम् (entire) / प्रविलीयते (melts away)","verseType":"teaching","insight":"It shifts action from self-protection to offering, so effort no longer leaves a chain of consequences in the mind.","quoteVariants":[{"format":"card","text":"Give up attachment. Do the work as sacrifice, and action dissolves."},{"format":"widget","text":"Act as sacrifice. Leave no trace."},{"format":"notification","text":"When work becomes offering, it stops binding you."},{"format":"lockscreen","text":"Offer the work. Let action dissolve."}],"requisiteConcepts":["Karma","Jñāna","Yajña","Vairagya"],"category":"philosophical","tone":"expansive","targetAudience":["general","professionals","entrepreneurs"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

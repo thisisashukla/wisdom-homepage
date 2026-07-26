@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-33_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-33_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-33.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-33.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":33,"order":266,"sanskrit":"अर्जुन उवाचयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन । एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम् ॥","hindiTranslation":"अर्जुन बोले  हे मधुसूदन  आपने समतापूर्वक जो यह योग कहा है, मनकी चञ्चलताके कारण मैं इस योगकी स्थिर स्थिति नहीं देखता हूँ ॥","englishTranslation":"Arjuna said: Krishna, you have described this yoga as balanced, but I do not see its steady practice, because the mind is restless.","essence":"Restlessness makes even clear teaching feel unreachable.","speaker":"Arjuna","deity":"","tags":["manas","chitta","restlessness","arjuna-doubt","dhyana-yoga"],"simpleMeaning":"Arjuna says the balanced state Krishna described sounds clear, but his restless mind cannot hold it steadily.","simpleInsight":"It is honest to admit when the mind is too unsettled to stay still.","detailedMeaning":"On the battlefield, Arjuna has heard Krishna describe the calm, even-minded yogi. But the pressure of war and his own agitation make that ideal feel unreachable, so he admits the problem directly.","modernRelevance":"You sit in the car before walking into a hard conversation, heart racing, rehearsing every possible outcome. Part of you knows the right thing; another part cannot settle long enough to do it.","translationLiteral":"अर्जुन उवाच (Arjuna said) / यः (which) / अयम् (this) / योगः (yoga) / त्वया (by you) / प्रोक्तः (spoken) / साम्येन (with balance) / मधुसूदन (O Madhusudana) / एतस्य (of this) / अहम् (I) / न (not) / पश्यामि (see) / चञ्चलत्वात् (because of restlessness) / स्थितिम् (steady state) / स्थिराम् (firm)","verseType":"inquiry","insight":"It names mental restlessness as the first obstacle, so the response becomes steadiness rather than self-blame.","quoteVariants":[],"requisiteConcepts":["manas","chitta","yoga"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"patience","nodePath":"wisdom","depth":"surface"}');
+
+/***/ })
+
+};
+;

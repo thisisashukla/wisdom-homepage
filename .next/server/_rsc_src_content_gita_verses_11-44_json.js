@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-44_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-44_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-44.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-44.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":44,"order":458,"sanskrit":"तस्मात्प्रणम्य प्रणिधाय कायंप्रसादये त्वामहमीशमीड्यम् । पितेव पुत्रस्य सखेव सख्युःप्रियः प्रियायार्हसि देव सोढुम् ॥","hindiTranslation":"इसलिये शरीरसे लम्बा पड़कर स्तुति करनेयोग्य आप ईश्वरको मैं प्रणाम करके प्रसन्न करना चाहता हूँ ।  जैसे पिता पुत्रके, मित्र मित्रके और पति पत्नीके अपमानको सह लेता है, ऐसे ही हे देव  आप मेरे द्वारा किया गया अपमान सहनेमें समर्थ हैं ॥","englishTranslation":"Therefore, bowing down my body, I seek to please You, the worthy Lord of praise. Like a father bearing a son’s fault, a friend bearing a friend’s, or a lover bearing a beloved’s, You should forgive what I have done.","essence":"True reverence asks forgiveness without excuses.","speaker":"Arjuna","deity":"Krishna","tags":["arjuna-prayer","forgiveness","vishwarupa","humility","bhakti"],"simpleMeaning":"Arjuna bows fully to Krishna and asks for forgiveness, saying Krishna should bear his disrespect the way loved ones bear each other’s faults.","simpleInsight":"Humility can repair what fear and pride have strained.","detailedMeaning":"Arjuna stands before Krishna’s cosmic form on the battlefield, shaken by awe and guilt. After seeing the vastness of Krishna’s being, he lowers his body completely and asks forgiveness for past familiarity and disrespect.","modernRelevance":"You realize, halfway through a harsh message, that you crossed a line. Pride wants to defend itself; humility lets you own the harm and ask forgiveness plainly.","translationLiteral":"तस्मात् (therefore) / प्रणम्य (bowing down) / प्रणिधाय (placing down) / कायम् (the body) / प्रसादये (I seek to please) / त्वाम् (You) / अहम् (I) / ईशम् (the Lord) / ईड्यम् (worthy of praise) / पितेव (like a father) / पुत्रस्य (of a son) / सखा इव (like a friend) / सख्युः (of a friend) / प्रियः (a beloved) / प्रियायाः (of a beloved) / अर्हसि (You should) / देव (O radiant one) / सोढुम् (to bear / forgive)","verseType":"devotional","insight":"It shifts the response from self-protection to humble repair.","quoteVariants":[],"requisiteConcepts":["Bhakti","Vishwarupa"],"category":"devotional","tone":"devotional","targetAudience":["general","couples"],"nodeId":"surrender","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

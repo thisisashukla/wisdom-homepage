@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-11_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-11_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-11.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-11.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":11,"order":130,"sanskrit":"देवान्भावयतानेन ते देवा भावयन्तु वः । परस्परं भावयन्तः श्रेयः परमवाप्स्यथ ॥","hindiTranslation":"प्रजापति ब्रह्माजीने सृष्टिके आदिकालमें कर्तव्यकर्मोंके विधानसहित प्रजामनुष्य आदि की रचना करके उनसे, प्रधानतया मनुष्योंसे कहा कि तुमलोग इस कर्तव्यके द्वारा सबकी वृद्धि करो और वह कर्तव्यकर्मरूप यज्ञ तुमलोगोंको कर्तव्यपालनकी आवश्यक सामग्री प्रदान करनेवाला हो ।  अपने कर्तव्यकर्मके द्वारा तुमलोग देवताओंको उन्नत करो और वे देवतालोग अपने कर्तव्यके द्वारा तुमलोगोंको उन्नत करें ।  इस प्रकार एकदूसरेको उन्नत करते हुए तुमलोग परम कल्याणको प्राप्त हो जाओगे ॥","englishTranslation":"By nurturing the radiant beings through this duty, let them nurture you. Nurturing one another, you will attain the highest good.","essence":"Your duty nourishes the whole, and the whole nourishes you back.","speaker":"Unknown","deity":"","tags":["yajna","lokasangraha","mutuality","deva","karma-yoga"],"simpleMeaning":"Support the larger order through your actions, and that order will support you in return. Mutual support leads to the highest good.","simpleInsight":"You are not isolated. What you give to the whole comes back as support for your own life.","detailedMeaning":"Krishna is still explaining sacrifice as a social and cosmic exchange. After showing that action should be offered rather than hoarded, he says that humans and the radiant beings sustain each other through duty. This is the bridge between private effort and shared order.","modernRelevance":"You keep the neighborhood garden alive, and it keeps feeding everyone. The effort feels one-sided until you see how much your own life depends on what you sustain.","translationLiteral":"देवान् (the radiant beings) / भावयत (nurture, support) / अनेन (through this) / ते (those) / देवा (the radiant beings) / भावयन्तु (may nurture, support) / वः (you) / परस्परम् (mutually, one another) / भावयन्तः (nurturing, supporting) / श्रेयः (the highest good) / परम् (supreme) / अवाप्स्यथ (you will attain)","verseType":"teaching","insight":"It shifts action from self-protection to participation in a mutual system of giving and receiving.","quoteVariants":[],"requisiteConcepts":["Yajna","Deva","Dharma"],"category":"philosophical","tone":"grounding","targetAudience":["general","parents","professionals"],"nodeId":"effort","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

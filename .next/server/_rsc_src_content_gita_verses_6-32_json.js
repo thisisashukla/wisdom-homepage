@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-32_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-32_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-32.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-32.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":32,"order":265,"sanskrit":"आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन । सुखं वा यदि वा दुःखं सः योगी परमो मतः ॥","hindiTranslation":"हे अर्जुन  जो ध्यानयुक्त ज्ञानी महापुरुष अपने शरीरकी उपमासे सब जगह अपनेको समान देखता है और सुख अथवा दुःखको भी समान देखता है, वह परम योगी माना गया है ॥","englishTranslation":"O Arjuna, the yogi who sees all beings as equal through the measure of the true self, and sees pleasure and pain alike, is considered the highest yogi.","essence":"Equal vision makes you unshaken by pleasure or pain.","speaker":"Krishna","deity":"","tags":["samatva","dhyana","equanimity","sukha-duhkha","meditative-vision"],"simpleMeaning":"A true meditator sees every being with equal regard and does not get thrown off by pleasure or pain.","simpleInsight":"There is freedom in meeting life without flinching or favoring one side.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen while Krishna teaches the discipline of meditation. After showing that the divine is present in all beings, Krishna now gives the inner test: the highest yogi sees every being and every feeling with the same steady mind.","modernRelevance":"You get praised in the morning and criticized by evening. If your whole mood rises and falls with each message, this verse asks for a steadier center.","translationLiteral":"आत्मौपम्येन (by comparison with the self) / सर्वत्र (everywhere) / समम् (equally) / पश्यति (sees) / यः (who) / अर्जुन (Arjuna) / सुखम् (pleasure) / वा (or) / यदि (if) / वा (or) / दुःखम् (pain) / सः (that) / योगी (yogi) / परमः (highest) / मतः (is considered)","verseType":"declaration","insight":"It shifts the mind from personal reaction to even-minded seeing.","quoteVariants":[{"format":"card","text":"See all beings as yourself. Pleasure and pain lose their power."},{"format":"widget","text":"Equal in joy and grief."},{"format":"notification","text":"The highest yogi stays even in pleasure and pain."},{"format":"lockscreen","text":"See all as yourself. Stay even."}],"requisiteConcepts":["Atman","Yoga"],"category":"philosophical","tone":"calming","targetAudience":["students","professionals","general"],"nodeId":"equanimity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

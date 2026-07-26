@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-26_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-26_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-26.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/5-26.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":26,"order":230,"sanskrit":"कामक्रोधवियुक्तानां यतीनां यतचेतसाम् । अभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम् ॥","hindiTranslation":"कामक्रोधसे सर्वथा रहित, जीते हुए मनवाले और स्वरूपका साक्षात्कार किये हुए सांख्ययोगियोंके लिये दोनों ओरसेशरीरके रहते हुए अथवा शरीर छूटनेके बाद निर्वाण ब्रह्म परिपूर्ण है ॥","englishTranslation":"For those free from desire and anger, with disciplined minds and self-knowledge, freedom in the supreme reality is near on both sides.","essence":"Freedom comes when desire and anger no longer govern the mind.","speaker":"Krishna","deity":"","tags":["kama","krodha","yati","yatacetas","brahmanirvana"],"simpleMeaning":"When desire and anger no longer control the mind, and a person knows the true self, inner freedom is close whether alive or after death.","simpleInsight":"There is relief in seeing that freedom begins with inner mastery, not with changing the world.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen while Krishna explains the state of one who has gone beyond craving and rage. This verse continues the teaching on inner release: the person who knows the true self can rest in freedom even before the body falls.","modernRelevance":"You read the message that set you off, and the reply is already forming. This verse asks you to notice the heat before it becomes action, because freedom starts there.","translationLiteral":"काम-क्रोध-वियुक्तानाम् (for those free from desire and anger) / यतीनाम् (for disciplined renouncers) / यत-चेतसाम् (for those with controlled minds) / अभितः (on both sides) / ब्रह्म-निर्वाणम् (freedom in the supreme reality) / वर्तते (is present) / विदित-आत्मनाम् (for those who know the true self)","verseType":"teaching","insight":"It shifts attention from managing events to mastering the reactions that bind them.","quoteVariants":[{"format":"card","text":"Freedom is near when desire and anger no longer rule you."},{"format":"widget","text":"Drop desire. Silence anger. Freedom appears."},{"format":"notification","text":"The mind is calm; freedom is already close."},{"format":"lockscreen","text":"Calm mind. Freedom near."}],"requisiteConcepts":["Kama","Manas","Brahman","Atman"],"category":"philosophical","tone":"grounding","targetAudience":["general","students","professionals"],"nodeId":"stillness","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

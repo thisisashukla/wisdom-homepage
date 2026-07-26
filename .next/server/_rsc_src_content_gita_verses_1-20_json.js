@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-20_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-20_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-20.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-20.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":20,"order":20,"sanskrit":"अथ व्यवस्थितान् दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः । प्रवृत्ते शस्त्रसंपाते धनुरुद्यम्य पाण्डवः ॥","hindiTranslation":"हे महीपते धृतराष्ट्र अब शस्त्रों के चलने की तैयारी हो ही रही थी कि उस समय अन्यायपूर्वक राज्य को धारण करनेवाले राजाओं और उनके साथियों को व्यवस्थितरूप से सामने खड़े हुए देखकर कपिध्वज पाण्डुपुत्र अर्जुन ने अपना गाण्डीव धनुष उठा लिया और अन्तर्यामी भगवान् श्रीकृष्ण से ये वचन बोले ॥","englishTranslation":"Then, seeing the sons of Dhritarashtra standing in battle order while the weapons were about to begin, Arjuna lifted his bow.","essence":"The battle reaches its threshold, and action begins before words do.","speaker":"Sanjaya","deity":"","tags":["kurukshetra","arjuna","gandiva","battlefield","dhritarashtra"],"simpleMeaning":"Arjuna sees the opposing army ready for battle and raises his bow.","simpleInsight":"The body moves toward action even when the mind is about to hesitate.","detailedMeaning":"On Kurukshetra, the two armies stand ready. Sanjaya describes the exact instant before violence begins: Arjuna sees the sons of Dhritarashtra arrayed before him and lifts Gandiva. This is the moment just before his inner collapse turns into speech.","modernRelevance":"You are about to send the message that changes everything. Your hand is on the phone, your chest tight, and you know there is no taking it back.","translationLiteral":"अथ (then) / व्यवस्थितान् (arrayed, standing in order) / दृष्ट्वा (having seen) / धार्तराष्ट्रान् (the sons of Dhritarashtra) / कपिध्वजः (he whose banner bears Hanuman) / प्रवृत्ते (when begun) / शस्त्रसंपाते (the clash of weapons) / धनुः (bow) / उद्यम्य (lifting) / पाण्डवः (the son of Pandu)","verseType":"narrative","insight":"It shows the threshold before decisive speech or action, when seeing clearly forces a response.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"grounding","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

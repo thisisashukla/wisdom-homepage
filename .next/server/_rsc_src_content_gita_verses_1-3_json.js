@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-3_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-3_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-3.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/1-3.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":3,"order":3,"sanskrit":"पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् । व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ॥","hindiTranslation":"हे आचार्य आपके बुद्धिमान् शिष्य द्रुपदपुत्र धृष्टद्युम्न के द्वारा व्यूहरचना से खड़ी की हुई पाण्डवों की इस बड़ी भारी सेना को देखिये ॥","englishTranslation":"O teacher, look at this great army of the sons of Pandu, arranged in battle formation by your wise disciple, the son of Drupada.","essence":"A battlefield can be won first by how it is described.","speaker":"Duryodhana","deity":"","tags":["kurukshetra","duryodhana","drona","pandava-army","battle-prelude"],"simpleMeaning":"Duryodhana points out the Pandava army to Drona and reminds him that the commander is Drona\'s own clever student.","simpleInsight":"Comparison and pressure can be used to shake another person\'s resolve.","detailedMeaning":"On Kurukshetra, Duryodhana sees the Pandava forces drawn up against him. He turns to Drona and highlights the army\'s size and the skill of Dhृष्टद्युम्न, Drona\'s former student, to stir urgency before battle begins.","modernRelevance":"You walk into a tense meeting and someone names the room\'s strongest rival first. The point is not just information; it is pressure, meant to unsettle the person across the table.","translationLiteral":"पश्य (look) / एताम् (this) / पाण्डुपुत्राणाम् (of the sons of Pandu) / आचार्य (O teacher) / महतीम् (great) / चमूम् (army) / व्यूढाम् (arrayed in formation) / द्रुपदपुत्रेण (by the son of Drupada) / तव (your) / शिष्येण (by the disciple) / धीमता (wise)","verseType":"narrative","insight":"It shows how speech can frame a situation to influence another person\'s response before action begins.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"grounding","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

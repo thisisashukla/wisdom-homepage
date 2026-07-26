@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_14-8_json";
+exports.ids = ["_rsc_src_content_gita_verses_14-8_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/14-8.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/14-8.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":14,"verse":8,"order":532,"sanskrit":"तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ॥","hindiTranslation":"हे भरतवंशी अर्जुन  सम्पूर्ण देहधारियोंको मोहित करनेवाले तमोगुणको तुम अज्ञानसे उत्पन्न होनेवाला समझो ।  वह प्रमाद, आलस्य और निद्राके द्वारा देहधारियोंको बाँधता है ॥","englishTranslation":"Arjuna, know tamas to be born of ignorance and deluding all embodied beings. It binds them through heedlessness, laziness, and sleep.","essence":"Confusion binds most through laziness, not force.","speaker":"Krishna","deity":"","tags":["tamas","gunatraya","pramada","alasya","nidra"],"simpleMeaning":"Tamas is the force of confusion and inertia. It clouds judgment and traps people through carelessness, laziness, and sleepiness.","simpleInsight":"You can spot what drags you down by watching what dulls your mind and delays your action.","detailedMeaning":"Krishna is still teaching Arjuna on the battlefield, where the three gunas are being explained one by one. After describing sattva and rajas, he now names tamas as the force that clouds living beings and binds them through dullness.","modernRelevance":"You open your phone “for a minute” and lose half an hour, then feel foggy and late. That drag is not harmless rest; it is tamas quietly taking the wheel.","translationLiteral":"तमः (darkness/inertia) / तु (indeed) / अज्ञानजम् (born of ignorance) / विद्धि (know) / मोहनम् (deluding) / सर्वदेहिनाम् (of all embodied beings) / प्रमाद-आलस्य-निद्राभिः (through heedlessness, laziness, and sleep) / तत् (that) / निबध्नाति (binds) / भारत (Arjuna)","verseType":"teaching","insight":"It teaches you to identify inertia by its symptoms: delay, dullness, and mental fog.","quoteVariants":[{"format":"card","text":"Darkness is born of confusion. It binds through heedlessness, laziness, and sleep."},{"format":"widget","text":"Know darkness by its binding habits."},{"format":"notification","text":"Heedlessness, laziness, sleep—there’s darkness at work."},{"format":"lockscreen","text":"See darkness by how it binds."}],"requisiteConcepts":["tamas","avidya","pramada","alasya","nidra"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

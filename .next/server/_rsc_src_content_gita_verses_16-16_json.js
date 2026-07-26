@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_16-16_json";
+exports.ids = ["_rsc_src_content_gita_verses_16-16_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/16-16.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/16-16.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":16,"verse":16,"order":587,"sanskrit":"अनेकचित्तविभ्रान्ता मोहजालसमावृताः । प्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ ॥","hindiTranslation":"कामनाओंके कारण तरहतरहसे भ्रमित चित्तवाले, मोहजालमें अच्छी तरहसे फँसे हुए तथा पदार्थों और भोगोंमें अत्यन्त आसक्त रहनेवाले मनुष्य भयङ्कर नरकोंमें गिरते हैं ॥","englishTranslation":"Deluded by many desires, trapped in the net of confusion, and deeply attached to pleasures, people fall into a lower realm of misery.","essence":"Desire scatters the mind, and confusion turns that scattering into a fall.","speaker":"Krishna","deity":"","tags":["kama","mohajala","attachment","delusion","mind-scatter"],"simpleMeaning":"A mind pulled in many directions by desire gets caught in confusion and falls into misery through attachment to pleasure.","simpleInsight":"There is relief in seeing that confusion is not your nature; it is what unchecked wanting does to the mind.","detailedMeaning":"Krishna is still speaking to Arjuna on the battlefield, where pride, fear, and craving are all visible in human action. He describes people whose minds are scattered by desire, who get trapped in delusion and sink into miserable choices.","modernRelevance":"You open your phone for one thing and end up half-lost in ten cravings, three tabs, and a bad mood. The mind does not stay neutral for long when it keeps feeding wanting.","translationLiteral":"अनेकचित्तविभ्रान्ताः (confused by many minds/desires) / मोहजालसमावृताः (covered by the net of delusion) / प्रसक्ताः (attached) / कामभोगेषु (in pleasures of desire) / पतन्ति (fall) / नरके (into a lower realm) / अशुचौ (impure, miserable)","verseType":"teaching","insight":"It shifts attention from chasing pleasure to noticing how desire fragments judgment.","quoteVariants":[{"format":"card","text":"Desire scatters the mind. Attachment drags it into misery."},{"format":"widget","text":"Scattered mind, trapped life."},{"format":"notification","text":"Too many wants, and the mind starts falling."},{"format":"lockscreen","text":"Watch desire before it traps you."}],"requisiteConcepts":["Kama","Maya","Avidya"],"category":"philosophical","tone":"reflective","targetAudience":["general","students","professionals"],"nodeId":"witness","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

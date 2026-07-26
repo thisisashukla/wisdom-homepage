@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-1_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-1_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-1.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/11-1.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":1,"order":415,"sanskrit":"अर्जुन उवाचमदनुग्रहाय परमं गुह्यमध्यात्मसंज्ञितम् । यत्त्वयोक्तं वचस्तेन मोहोऽयं विगतो मम ॥","hindiTranslation":"अर्जुन बोले  केवल मेरेपर कृपा करनेके लिये ही आपने जो परम गोपनीय अध्यात्मतत्तव जाननेका वचन कहा, उससे मेरा यह मोह नष्ट हो गया है ॥","englishTranslation":"Arjuna said: By the gracious words you spoke for my benefit alone, my delusion has been dispelled.","essence":"Clarity arrives when the hidden teaching is finally heard as personal grace.","speaker":"Arjuna","deity":"Krishna","tags":["arjuna","moha","parama-guhya","adhyatma","krishna-grace"],"simpleMeaning":"Arjuna says Krishna’s hidden teaching has cleared away his confusion. He feels the words were spoken just for his own good.","simpleInsight":"Real understanding can feel like a fog lifting all at once.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has just heard Krishna speak about the deepest spiritual truth. Before the cosmic vision appears, he pauses in gratitude, saying that Krishna’s secret teaching has already removed his confusion.","modernRelevance":"After a hard conversation, you suddenly see what you were avoiding all along. The relief is not in winning the argument, but in having the fog lift.","translationLiteral":"अर्जुन उवाच (Arjuna said) / मदनुग्रहाय (for my grace / for my benefit) / परमम् (supreme) / गुह्यम् (secret) / अध्यात्मसंज्ञितम् (called concerning the inner self) / यत् (which) / त्वया उक्तम् (spoken by you) / वचः (words) / तेन (by that) / मोहः अयम् (this delusion) / विगतः (has gone away) / मम (of mine)","verseType":"devotional","insight":"It shifts the mind from confusion to gratitude, recognizing clarity as a gift received.","quoteVariants":[],"requisiteConcepts":["Bhakti","Avidya"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"devotion-n","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

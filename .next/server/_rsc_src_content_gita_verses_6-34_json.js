@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-34_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-34_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-34.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-34.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":34,"order":267,"sanskrit":"चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥","hindiTranslation":"क्योंकि हे कृष्ण  मन बड़ा ही चञ्चल, प्रमथनशील, दृढ़ जिद्दी और बलवान् है ।  उसका निग्रह करना मैं वायुकी तरह अत्यन्त कठिन मानता हूँ ॥","englishTranslation":"The mind is restless, turbulent, stubborn, and strong. I think controlling it is as hard as controlling the wind.","essence":"The mind resists control like wind resists the hand.","speaker":"Arjuna","deity":"","tags":["manas","dhyana","chanchala","self-mastery","meditation"],"simpleMeaning":"Arjuna admits that the mind is wild, forceful, and hard to restrain, almost like trying to catch the wind.","simpleInsight":"It feels honest to admit how hard inner control can be.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has just asked Krishna about the steady state of meditation. He now confesses the real obstacle: the mind itself. This verse deepens the problem before Krishna answers with a practical method.","modernRelevance":"You sit down to pray, meditate, or even make one clean decision, and your thoughts scatter in every direction. The struggle is real before the discipline even begins.","translationLiteral":"चञ्चलम् (restless) / हि (indeed) / मनः (mind) / कृष्ण (O Krishna) / प्रमाथि (turbulent) / बलवत् (strong) / दृढम् (stubborn, firm) । / तस्य (of that) / अहम् (I) / निग्रहम् (control, restraint) / मन्ये (consider) / वायोः (of wind) / इव (like) / सुदुष्करम् (very difficult)","verseType":"inquiry","insight":"It names the first obstacle clearly: the mind is not naturally obedient, so practice must begin with that fact.","quoteVariants":[],"requisiteConcepts":["manas","dhyana"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"patience","nodePath":"wisdom","depth":"surface"}');
+
+/***/ })
+
+};
+;

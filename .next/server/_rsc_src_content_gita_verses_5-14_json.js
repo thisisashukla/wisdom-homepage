@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-14_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-14_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-14.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/5-14.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":14,"order":218,"sanskrit":"न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः । न कर्मफलसंयोगं स्वभावस्तु प्रवर्तते ॥","hindiTranslation":"परमेश्वर मनुष्योंके न कर्तापनकी, न कर्मोंकी और न कर्मफलके साथ संयोगकी रचना करते हैं किन्तु स्वभाव ही बरत रहा है ॥","englishTranslation":"The supreme being creates neither doership nor actions nor the link between action and result for people. Nature alone keeps moving.","essence":"What looks like personal control is nature moving through form.","speaker":"Krishna","deity":"","tags":["doership","svabhava","karma-phala","prakriti","karta-bhava"],"simpleMeaning":"The supreme being does not manufacture a separate doer, the actions, or the binding link between action and result. What actually operates is nature.","simpleInsight":"There is relief in seeing that the ego is not the center of everything.","detailedMeaning":"On Kurukshetra, Arjuna is frozen, unable to act without guilt. Krishna goes deeper than duty and explains that the sense of personal doership is not the ultimate reality. Actions unfold through nature, not through a separate self.","modernRelevance":"You replay a painful conversation at 2 a.m. and blame yourself for everything. This verse cuts through that loop: the ego claims ownership, but many forces move through a person.","translationLiteral":"न (not) / कर्तृत्वं (doership) / न (not) / कर्माणि (actions) / लोकस्य (of the world / for people) / सृजति (creates) / प्रभुः (the supreme being) / न (not) / कर्मफलसंयोगं (connection with action-result) / स्वभावः (nature) / तु (but) / प्रवर्तते (moves onward / operates)","verseType":"declaration","insight":"It shifts the mind from self-blame to clear seeing of how action actually happens.","quoteVariants":[{"format":"card","text":"The supreme being makes neither doer nor deed. Nature alone moves the world."},{"format":"widget","text":"No doer. No deed. Nature moves."},{"format":"notification","text":"Maybe the doing was never really mine."},{"format":"lockscreen","text":"Nature acts; the ego only claims."}],"requisiteConcepts":["Prakriti","Karma"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

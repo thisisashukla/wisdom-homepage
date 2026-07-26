@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-27_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-27_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-27.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/5-27.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":27,"order":231,"sanskrit":"स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः । प्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ ॥","hindiTranslation":"बाह्य पदार्थोंको बाहर ही छोड़कर और नेत्रोंकी दृष्टिको भौंहोंके बीचमें स्थित करके तथा नासिकामें विचरनेवाले प्राण और अपान वायुको सम करके जिसकी इन्द्रियाँ, मन और बुद्धि अपने वशमें हैं, जो मोक्षपरायण है तथा जो इच्छा, भय और क्रोधसे सर्वथा रहित है, वह मुनि सदा मुक्त ही है ॥","englishTranslation":"Leaving outer objects outside, fixing the gaze between the eyebrows, and balancing the inward and outward breaths moving through the nose.","essence":"Outer restraint and balanced breath prepare the mind for freedom.","speaker":"Krishna","deity":"","tags":["pranayama","sense-withdrawal","brahmacharya","meditation","mind-control"],"simpleMeaning":"Withdraw the senses from outer objects, steady the gaze, and balance the breath. This prepares the mind for deep inward focus.","simpleInsight":"Stillness begins with deliberate restraint, not with forcing the mind to obey.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is being taught how to recover inner mastery. After describing the liberated one, Krishna gives the practical method: withdraw the senses, steady the eyes, and regulate the breath. It is a supporting step in a larger discipline.","modernRelevance":"You sit in the car before walking into a room where one conversation could change everything. Before the door opens, you breathe, settle your eyes, and stop feeding the noise.","translationLiteral":"स्पर्शान् (outer contacts) / कृत्वा (having made) / बहिः (outside) / बाह्यान् (outer) / चक्षुः (the eyes) / च एव (and indeed) / अन्तरे (between) / भ्रुवोः (the eyebrows) / प्राणापानौ (the inward and outward breaths) / समौ (equal) / कृत्वा (having made) / नासाभ्यन्तरचारिणौ (moving within the nose)","verseType":"teaching","insight":"It shifts attention from outer stimulation to bodily regulation, creating the conditions for a steadier mind.","quoteVariants":[],"requisiteConcepts":["prana","apana","indriya"],"category":"philosophical","tone":"grounding","targetAudience":["students","general"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

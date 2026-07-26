@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-4_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-4_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-4.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/13-4.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":4,"order":493,"sanskrit":"तत्क्षेत्रं यच्च यादृक् च यद्विकारि यतश्च यत् । स च यो यत्प्रभावश्च तत्समासेन मे श्रृणु ॥","hindiTranslation":"वह क्षेत्र जो है, जैसा है, जिन विकारोंवाला है और जिससे जो पैदा हुआ है तथा वह क्षेत्रज्ञ भी जो है और जिस प्रभाववाला है, वह सब संक्षेपमें मेरेसे सुन ॥","englishTranslation":"Listen to the field, its nature, its changes, its source, and the knower of the field, along with that knower\'s powers, in brief.","essence":"Clear seeing begins by separating the field from the one who knows it.","speaker":"Krishna","deity":"","tags":["kshetra","kshetrajna","viveka","field-and-knower","chapter-13"],"simpleMeaning":"Krishna is about to explain, in brief, what the field is like, how it changes, where it comes from, and what the knower of the field is like.","simpleInsight":"You do not have to guess at reality; you can learn to examine it closely.","detailedMeaning":"On the battlefield, Arjuna is frozen and Krishna begins teaching the difference between the body-field and the knower within it. After naming that distinction, Krishna now promises a compact explanation of the field’s nature, changes, source, and the knower’s power.","modernRelevance":"You are staring at a decision that keeps changing shape: the facts, your mood, and your motives all blur together. This verse says to slow down and examine each layer clearly before you act.","translationLiteral":"तत् (that) / क्षेत्रम् (the field) / यत् (which) / च (and) / यादृक् (what sort) / च (and) / यत्-विकारि (having what changes) / यतः (from where) / च (and) / यत् (what) / सः (that) / च (and) / यः (who) / यत्-प्रभावः (having what power) / च (and) / तत् (that) / समासेन (in brief) / मे (from me) / श्रृणु (hear)","verseType":"teaching","insight":"It shifts the mind from vague reaction to careful discrimination between what is changing and what is aware of it.","quoteVariants":[],"requisiteConcepts":["Kshetra","Kshetrajna"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"inquiry","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

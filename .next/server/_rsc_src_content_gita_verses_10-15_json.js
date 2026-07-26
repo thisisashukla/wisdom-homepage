@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-15_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-15_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-15.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/10-15.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":15,"order":387,"sanskrit":"स्वयमेवात्मनाऽत्मानं वेत्थ त्वं पुरुषोत्तम । भूतभावन भूतेश देवदेव जगत्पते ॥","hindiTranslation":"हे भूतभावन  हे भूतेश  हे देवदेव  हे जगत्पते  हे पुरुषोत्तम  आप स्वयं ही अपनेआपसे अपनेआपको जानते हैं ॥","englishTranslation":"O Supreme Person, you alone know yourself by yourself, O source of all beings, lord of all beings, divine of the divine, ruler of the world.","essence":"The supreme one is known fully only by the supreme one.","speaker":"Arjuna","deity":"Krishna","tags":["purushottama","vishvarupa","bhagavan","arjuna-stuti","cosmic-lord"],"simpleMeaning":"Arjuna praises Krishna as the Supreme Person who alone fully knows his own nature and rules over all beings.","simpleInsight":"There is relief in meeting a presence greater than explanation, one that already knows itself and the world.","detailedMeaning":"On the battlefield, Arjuna has begun to see Krishna not as a charioteer alone, but as the Supreme Person behind all existence. He bows in awe and says that Krishna alone fully knows his own nature, while all beings depend on him.","modernRelevance":"You sit across from someone whose motives you cannot read, yet they seem to hold the whole room together. This verse names that rare recognition: some presence is deeper than your questions.","translationLiteral":"स्वयमेव (by oneself alone) / आत्मना (by the self) / आत्मानम् (the self) / वेत्थ (you know) / त्वम् (you) / पुरुषोत्तम (O Supreme Person) / भूतभावन (O source of beings) / भूतेश (O lord of beings) / देवदेव (O divine of the divine) / जगत्पते (O ruler of the world)","verseType":"devotional","insight":"It shifts reverence from asking for proof to recognising a reality that is self-luminous and complete.","quoteVariants":[{"format":"card","text":"You alone know yourself. All beings rest in your knowing."},{"format":"widget","text":"Self-known, world-ruling, source of all."},{"format":"notification","text":"Only you fully know what you are."},{"format":"lockscreen","text":"You alone know yourself, O Supreme One."}],"requisiteConcepts":["Purusha","Brahman","Bhakti"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

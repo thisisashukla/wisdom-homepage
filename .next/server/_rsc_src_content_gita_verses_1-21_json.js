@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-21_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-21_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-21.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-21.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":21,"order":21,"sanskrit":"अर्जुन उवाचहृषीकेशं तदा वाक्यमिदमाह महीपते । सेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत ॥","hindiTranslation":"अर्जुन बोले  हे अच्युत दोनों सेनाओं के मध्य में मेरे रथ को आप तब तक खड़ा कीजिये, जब तक मैं युद्धक्षेत्र में खड़े हुए इन युद्ध की इच्छावालों को देख न लूँ कि इस युद्धरूप उद्योग में मुझे किनकिन के साथ युद्ध करना योग्य है ॥","englishTranslation":"Arjuna said: O Hrishikesha, place my chariot between the two armies, O Achyuta, until I can look at these men who wish to fight and see with whom I must battle in this war.","essence":"Clear sight comes before decisive action.","speaker":"Arjuna","deity":"","tags":["kurukshetra","arjuna","chariot","battlefield","pause"],"simpleMeaning":"Arjuna asks Krishna to stop his chariot between the two armies so he can see who he must fight.","simpleInsight":"Before a hard act, he chooses to look clearly instead of rushing forward.","detailedMeaning":"On Kurukshetra, the battle is about to begin and Arjuna has already raised his bow. Then he asks Krishna to place the chariot between the armies, because he wants one clear look at the people he is expected to fight before the first strike.","modernRelevance":"You are one step from sending the message, signing the form, or walking away. Before the point of no return, Arjuna’s pause asks for one honest look.","translationLiteral":"अर्जुन उवाच (Arjuna said) / हृषीकेशं (to Hrishikesha) / तदा (then) / वाक्यम् (words) / इदम् (this) / आह (said) / महीपते (O king) / सेनयोः (of the two armies) / उभयोः (both) / मध्ये (in the middle) / रथम् (chariot) / स्थापय (place) / मे (my) / अच्युत (O Achyuta)","verseType":"narrative","insight":"It teaches you to pause before irreversible action and face the human reality of what you are about to do.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"reflective","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-5.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/2-5.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":5,"order":52,"sanskrit":"गुरूनहत्वा हि महानुभावान्श्रेयो भोक्तुं भैक्ष्यमपीह लोके । हत्वार्थकामांस्तु गुरूनिहैवभुञ्जीय भोगान् रुधिरप्रदिग्धान् ॥","hindiTranslation":"महानुभाव गुरुजनोंको न मारकर इस लोकमें मैं भिक्षाका अन्न खाना भी श्रेष्ठ समझता हूँ ।  क्योंकि गुरुजनोंको मारकर यहाँ रक्तसे सने हुए तथा धनकी कामनाकी मुख्यतावाले भोगोंको ही तो भोगूँगा ॥","englishTranslation":"It is better to live on alms in this world than to kill these great teachers. If I kill them, the pleasures I enjoy here will be stained with blood and bound to greed.","essence":"A victory that destroys reverence is already a loss.","speaker":"Arjuna","deity":"","tags":["guru","arjuna-dilemma","kurukshetra","moral-cost","bhiksha"],"simpleMeaning":"Arjuna says it would be better to live on alms than kill his respected teachers. He sees any victory gained that way as tainted by blood and greed.","simpleInsight":"Some gains cost too much. Clear conscience matters more than winning.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen between two armies. Krishna has urged him to act, but Arjuna now names the moral cost: these are not enemies only, but revered teachers. His refusal deepens the crisis and shows how tangled duty has become.","modernRelevance":"You are about to send the message that will end a friendship, or take the promotion that depends on someone else being pushed out. The win feels dirty before you even touch it.","translationLiteral":"गुरून् (teachers) / अहत्वा (without killing) / हि (indeed) / महानुभावान् (great-souled, noble) / श्रेयः (better) / भोक्तुम् (to eat/enjoy) / भैक्ष्यम् (alms) / अपि (even) / इह (here) / लोके (in the world) / हत्वा (having killed) / अर्थकामान् (those driven by wealth and desire) / तु (but) / गुरून् (teachers) / इह (here) / एव (indeed) / भुञ्जीय (I would enjoy) / भोगान् (pleasures) / रुधिरप्रदिग्धान् (stained with blood)","verseType":"teaching","insight":"It shifts the question from can I win to can I live with the cost.","quoteVariants":[],"requisiteConcepts":["dharma","guru"],"category":"philosophical","tone":"reflective","targetAudience":["general","students","professionals"],"nodeId":"compassion","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

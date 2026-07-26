@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-28_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-28_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-28.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/5-28.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":28,"order":232,"sanskrit":"यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः । विगतेच्छाभयक्रोधो यः सदा मुक्त एव सः ॥","hindiTranslation":"बाह्य पदार्थोंको बाहर ही छोड़कर और नेत्रोंकी दृष्टिको भौंहोंके बीचमें स्थित करके तथा नासिकामें विचरनेवाले प्राण और अपान वायुको सम करके जिसकी इन्द्रियाँ, मन और बुद्धि अपने वशमें हैं, जो मोक्षपरायण है तथा जो इच्छा, भय और क्रोधसे सर्वथा रहित है, वह मुनि सदा मुक्त ही है ॥","englishTranslation":"One who has controlled the senses, mind, and intellect, who seeks freedom as the highest aim, and who is free from desire, fear, and anger is forever free.","essence":"Freedom begins where desire, fear, and anger lose authority.","speaker":"Krishna","deity":"","tags":["indriya-nigraha","manas","buddhi","vairagya","moksha"],"simpleMeaning":"A person who has mastered the senses, mind, and intellect, and has let go of desire, fear, and anger, lives in freedom already.","simpleInsight":"There is relief in seeing that freedom is not far away; it begins the moment inner agitation loosens its grip.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is still trapped in confusion while Krishna keeps pointing toward inner release. After describing disciplined meditation, Krishna says the person who has mastered the senses, mind, and intellect is already free, even before the body falls.","modernRelevance":"You are about to send the message that could end a relationship, and your chest is tight with fear. This verse points to the steadiness that lets you act without being ruled by panic.","translationLiteral":"यतेन्द्रियमनःबुद्धिः (with senses, mind, and intellect controlled) / मुनिः (the sage) / मोक्षपरायणः (having freedom as the highest aim) / विगतेच्छाभयक्रोधः (free from desire, fear, and anger) / यः (who) / सदा (always) / मुक्तः (free) / एव (indeed) / सः (that one)","verseType":"declaration","insight":"It shifts attention from outer circumstances to inner mastery as the sign of freedom.","quoteVariants":[{"format":"card","text":"Master the senses, mind, and reason. Freedom is already yours."},{"format":"widget","text":"Controlled senses. Already free."},{"format":"notification","text":"When desire, fear, and anger end, freedom remains."},{"format":"lockscreen","text":"Master the mind. Freedom is present."}],"requisiteConcepts":["indriya","manas","buddhi","moksha"],"category":"philosophical","tone":"calming","targetAudience":["students","professionals","general"],"nodeId":"stillness","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-38_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-38_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-38.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/10-38.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":38,"order":410,"sanskrit":"दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम् । मौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम् ॥","hindiTranslation":"दमन करनेवालोंमें दण्डनीति और विजय चाहनेवालोंमें नीति मैं हूँ ।  गोपनीय भावोंमें मौन और ज्ञानवानोंमें ज्ञान मैं हूँ ॥","englishTranslation":"Among enforcers, I am punishment; among those seeking victory, I am policy. Among secrets, I am silence; among the wise, I am knowledge.","essence":"True power is measured by restraint, silence, and clear understanding.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","niti","mauna","danda","jnana"],"simpleMeaning":"Krishna says he appears as rightful force, strategic conduct, silence, and true understanding wherever they are found.","simpleInsight":"Power does not always shout. The deepest strength can look like restraint, quiet, and clear understanding.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen while Krishna reveals how the divine works through the world. Here Krishna names four forms of his presence: corrective force, wise strategy, silence, and the knowledge that belongs to the wise.","modernRelevance":"You are in a room where one harsh word could break everything. The strongest move is not volume — it may be restraint, timing, and the calm choice to say only what is true.","translationLiteral":"दण्डः (punishment/discipline) / दमयताम् (among those who restrain) / अस्मि (I am) / नीतिḥ (policy/right conduct) / अस्मि (I am) / जिगीषताम् (among those who seek victory) । / मौनम् (silence) / च (and) / एव (indeed) / अस्मि (I am) / गुह्यानाम् (among secrets) / ज्ञानम् (knowledge) / ज्ञानवताम् (among the wise) / अहम् (I am)","verseType":"declaration","insight":"It shifts attention from raw force to disciplined, intelligent action shaped by silence.","quoteVariants":[{"format":"card","text":"Order is my force. Silence is my secret. Knowledge is my crown."},{"format":"widget","text":"Discipline, silence, knowledge: all mine."},{"format":"notification","text":"The sharpest force can still be silent."},{"format":"lockscreen","text":"Silence holds force. Knowledge holds all."}],"requisiteConcepts":["Bhakti","Jnana"],"category":"devotional","tone":"expansive","targetAudience":["general","professionals","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

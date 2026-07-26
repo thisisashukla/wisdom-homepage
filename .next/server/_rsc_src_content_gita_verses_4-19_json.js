@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-19_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-19_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-19.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-19.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":19,"order":181,"sanskrit":"यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः । ज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः ॥","hindiTranslation":"जिसके सम्पूर्ण कर्मोंके आरम्भ संकल्प और कामनासे रहित हैं तथा जिसके सम्पूर्ण कर्म ज्ञानरूपी अग्निसे जल गये हैं, उसको ज्ञानिजन भी पण्डित बुद्धिमान् कहते हैं ॥","englishTranslation":"The wise call that person learned whose actions begin without desire or personal planning, and whose deeds are burned by the fire of knowledge.","essence":"Knowledge frees action from craving and leaves no binding trace.","speaker":"Krishna","deity":"","tags":["jnana-agni","kamasankalpa","karma-burnt","pandita","detached-action"],"simpleMeaning":"A truly wise person starts actions without craving or mental scheming, and knowledge has already burned up the binding force of those actions.","simpleInsight":"You can act in the world without being driven by wanting or trapped by your own deeds.","detailedMeaning":"On the battlefield, Arjuna is still frozen, and Krishna keeps refining the meaning of right action. After showing that true wisdom sees beyond action and inaction, he now defines the person whom the wise respect: one whose beginnings are free from craving and whose karmic burden has been consumed by knowledge.","modernRelevance":"You send the difficult message after checking your motives one last time. Not to win, not to be praised, not to control the result — only because it is the clean thing to do.","translationLiteral":"यस्य (whose) / सर्वे (all) / समारम्भाः (undertakings, beginnings of action) / कामसङ्कल्पवर्जिताः (free from desire and intention) / ज्ञानाग्निदग्धकर्माणं (whose actions are burnt by the fire of knowledge) / तम् (that person) / आहुः (they call) / पण्डितं (learned, wise) / बुधाः (the wise)","verseType":"declaration","insight":"It shifts action from desire-driven effort to intention-free clarity, where knowledge dissolves the binding residue of doing.","quoteVariants":[],"requisiteConcepts":["Karma","Vidya","Avidya"],"category":"philosophical","tone":"expansive","targetAudience":["students","professionals","entrepreneurs"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

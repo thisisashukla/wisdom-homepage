@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-32_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-32_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-32.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-32.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":32,"order":79,"sanskrit":"यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम् । सुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम् ॥","hindiTranslation":"अपनेआप प्राप्त हुआ युद्ध खुला हुआ स्वर्गका दरवाजा भी है ।  हे पृथानन्दन  वे क्षत्रिय बड़े सुखी भाग्यशाली हैं, जिनको ऐसा युद्ध प्राप्त होता है ॥","englishTranslation":"An unbidden battle is an open gate to higher realms. O Partha, fortunate are the warriors who receive such a war.","essence":"A righteous burden can become the highest opening.","speaker":"Krishna","deity":"","tags":["kshatriya-dharma","righteous-battle","svargadvara","kurukshetra","duty-under-pressure"],"simpleMeaning":"A warrior who is given a righteous battle has a rare chance to act with honor and courage. Krishna calls such an opportunity a doorway to a higher realm.","simpleInsight":"Hard duty can be a privilege, not a burden.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna is frozen by grief. Krishna answers by reframing the war: for a warrior, this is not random violence but a rare righteous duty. Such a battle is presented as a doorway to a higher realm.","modernRelevance":"You are handed the hard conversation you hoped would disappear: telling the truth, ending the false peace, or standing up when silence would be easier. The moment is costly, but it is also clean.","translationLiteral":"यदृच्छया (by chance / unbidden) / च (and) / उपपन्नम् (obtained / come upon) / स्वर्गद्वारम् (gate to higher realms) / अपावृतम् (opened) / सुखिनः (fortunate) / क्षत्रियाः (warriors) / पार्थ (O Partha) / लभन्ते (receive / obtain) / युद्धम् (battle) / ईदृशम् (such)","verseType":"teaching","insight":"It shifts the mind from avoiding difficulty to recognizing honorable obligation when it appears.","quoteVariants":[],"requisiteConcepts":["dharma","svarga","kshatriya"],"category":"motivational","tone":"inspiring","targetAudience":["general","students","professionals"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

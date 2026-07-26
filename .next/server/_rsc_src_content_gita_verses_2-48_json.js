@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-48_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-48_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-48.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-48.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":48,"order":95,"sanskrit":"योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय । सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥","hindiTranslation":"हे धनञ्जय  तू आसक्तिका त्याग करके सिद्धिअसिद्धिमें सम होकर योगमें स्थित हुआ कर्मोंको कर क्योंकि समत्व ही योग कहा जाता है ॥","englishTranslation":"O Dhananjaya, perform actions while established in yoga, abandoning attachment. Remain equal in success and failure, for equanimity is called yoga.","essence":"Equanimity turns action into yoga.","speaker":"Krishna","deity":"","tags":["equanimity","samatva","karma-yoga","attachment","success-failure"],"simpleMeaning":"Keep doing your duty without clinging to results. Stay steady whether things work out or not; that steady balance is yoga.","simpleInsight":"You can stay calm without stopping action. Inner balance makes effort cleaner and less painful.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen before the war. Krishna has already told him to act without craving results; now he sharpens that teaching: stay balanced in victory and defeat, because that inner evenness is the heart of yoga.","modernRelevance":"You send the message, then stare at the screen waiting for a reply. The mind rises and falls with every notification; this verse teaches you to keep your centre anyway.","translationLiteral":"योगस्थः (established in yoga) / कुरु (do) / कर्माणि (actions) / सङ्गं (attachment) / त्यक्त्वा (having abandoned) / धनञ्जय (O Dhananjaya) / सिद्ध्यसिद्ध्योः (in success and failure) / समः (equal) / भूत्वा (having become) / समत्वं (equanimity) / योगः (yoga) / उच्यते (is called)","verseType":"teaching","insight":"It shifts attention from outcome-chasing to steady action, so success and failure stop controlling the mind.","quoteVariants":[{"format":"card","text":"Do the work. Stand equal in success and failure."},{"format":"widget","text":"Act in equanimity; release attachment."},{"format":"notification","text":"Success and failure can both pass through you."},{"format":"lockscreen","text":"Act steadily. Stay equal."}],"requisiteConcepts":["Karma","Yoga"],"category":"philosophical","tone":"grounding","targetAudience":["students","professionals","entrepreneurs","general"],"nodeId":"equanimity","nodePath":"wisdom","depth":"surface"}');
+
+/***/ })
+
+};
+;

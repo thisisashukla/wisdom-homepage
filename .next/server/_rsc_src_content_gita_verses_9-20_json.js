@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-20_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-20_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-20.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-20.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":20,"order":358,"sanskrit":"त्रैविद्या मां सोमपाः पूतपापायज्ञैरिष्ट्वा स्वर्गतिं प्रार्थयन्ते । ते पुण्यमासाद्य सुरेन्द्रलोकमश्नन्ति दिव्यान्दिवि देवभोगान् ॥","hindiTranslation":"वेदत्रयीमें कहे हुए सकाम अनुष्ठानको करनेवाले और सोमरसको पीनेवाले जो पापरहित मनुष्य यज्ञोंके द्वारा इन्द्ररूपसे मेरा पूजन करके स्वर्गप्राप्तिकी प्रार्थना करते हैं, वे पुण्यके फलस्वरूप इन्द्रलोकको प्राप्त करके वहाँ स्वर्गमें देवताओंके दिव्य भोगोंको भोगते हैं ॥","englishTranslation":"Those who know the three Vedas, drink soma, and are purified by sacrifice pray for heaven. Having earned merit, they enjoy the divine pleasures of the realm of the radiant beings.","essence":"Rewarded devotion still keeps you bound to return.","speaker":"Krishna","deity":"","tags":["soma","yajna","svarga","punya","trai-vidya"],"simpleMeaning":"People who perform Vedic sacrifices and seek reward pray for heaven. They gain merit, reach the heavenly realm, and enjoy its pleasures for a time.","simpleInsight":"Chasing reward can take you higher, but only for a while.","detailedMeaning":"On the battlefield, Arjuna is frozen while Krishna opens a wider vision of action, reward, and the limits of ritual. Here Krishna describes people who worship for heavenly gain, showing that even rewarded action remains bound to return.","modernRelevance":"You finish a big religious event, post the photos, and wait for the praise to feel like enough. The verse reminds you that reward-seeking always keeps you reaching for the next high.","translationLiteral":"त्रैविद्या (knowers of the three Vedas) / मां (me) / सोमपाः (drinkers of soma) / पूतपापाः (purified from sin) / यज्ञैः (by sacrifices) / इष्ट्वा (having worshipped) / स्वर्गतिम् (heavenly attainment) / प्रार्थयन्ते (they pray for) / ते (they) / पुण्यम् (merit) / आसाद्य (having attained) / सुरेन्द्रलोकम् (realm of the lord of the radiant beings) / अश्नन्ति (they enjoy) / दिव्यान् (divine) / दिवि (in heaven) / देवभोगान् (pleasures of the radiant beings)","verseType":"teaching","insight":"It shifts the mind from spiritual transaction to seeing the limits of reward-based worship.","quoteVariants":[],"requisiteConcepts":["yajna","punya","svarga"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"trust","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

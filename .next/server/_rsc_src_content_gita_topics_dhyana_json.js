@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_topics_dhyana_json";
+exports.ids = ["_rsc_src_content_gita_topics_dhyana_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/topics/dhyana.json":
+/*!*********************************************!*\
+  !*** ./src/content/gita/topics/dhyana.json ***!
+  \*********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"slug":"dhyana","label":"dhyana","verseCount":31,"verses":[{"chapter":6,"verse":2},{"chapter":6,"verse":3},{"chapter":6,"verse":4},{"chapter":6,"verse":8},{"chapter":6,"verse":10},{"chapter":6,"verse":11},{"chapter":6,"verse":12},{"chapter":6,"verse":13},{"chapter":6,"verse":14},{"chapter":6,"verse":15},{"chapter":6,"verse":16},{"chapter":6,"verse":17},{"chapter":6,"verse":18},{"chapter":6,"verse":19},{"chapter":6,"verse":20},{"chapter":6,"verse":21},{"chapter":6,"verse":22},{"chapter":6,"verse":24},{"chapter":6,"verse":25},{"chapter":6,"verse":26},{"chapter":6,"verse":27},{"chapter":6,"verse":28},{"chapter":6,"verse":29},{"chapter":6,"verse":30},{"chapter":6,"verse":32},{"chapter":6,"verse":34},{"chapter":6,"verse":35},{"chapter":6,"verse":36},{"chapter":6,"verse":44},{"chapter":12,"verse":12},{"chapter":13,"verse":25}]}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-2_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-2_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-2.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/10-2.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":2,"order":374,"sanskrit":"न मे विदुः सुरगणाः प्रभवं न महर्षयः । अहमादिर्हि देवानां महर्षीणां च सर्वशः ॥","hindiTranslation":"मेरे प्रकट होनेको न देवता जानते हैं और न महर्षि क्योंकि मैं सब प्रकारसे देवताओं और महर्षियोंका आदि हूँ ॥","englishTranslation":"The hosts of devas do not know my origin, nor do the great sages, for I am the beginning of the devas and the great sages in every way.","essence":"Even the highest knowers stand inside the source they seek.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","krishna-origin","devas","maharshi","cosmic-source"],"simpleMeaning":"Even the devas and great sages do not know Krishna’s full source, because he is their own beginning.","simpleInsight":"Awe deepens when you realize the highest minds still cannot contain the divine.","detailedMeaning":"On Kurukshetra, Arjuna is still shaken and listening. Krishna begins revealing his divine presence in the world, but first says that even the devas and great sages do not fully know his origin, because he stands before all of them as their source.","modernRelevance":"You think you have understood someone because they are brilliant, spiritual, or widely respected. Then they reveal a depth that even the best minds cannot fully map.","translationLiteral":"न (not) / मे (my) / विदुः (know) / सुरगणाः (hosts of devas) / प्रभवम् (origin) / न (not) / महर्षयः (great sages) / अहम (I) / आदिः (beginning) / हि (indeed) / देवानाम् (of devas) / महर्षीणाम् (of great sages) / च (and) / सर्वशः (in every way)","verseType":"declaration","insight":"It shifts the mind from treating the divine as an object of study to recognising it as the source of all knowers.","quoteVariants":[],"requisiteConcepts":["Deva","Maharshi"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

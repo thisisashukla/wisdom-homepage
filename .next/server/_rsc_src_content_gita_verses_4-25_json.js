@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-25_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-25_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-25.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-25.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":25,"order":187,"sanskrit":"दैवमेवापरे यज्ञं योगिनः पर्युपासते । ब्रह्माग्नावपरे यज्ञं यज्ञेनैवोपजुह्वति ॥","hindiTranslation":"अन्य योगीलोग भगवदर्पणरूप यज्ञका ही अनुष्ठान करते हैं और दूसरे योगीलोग ब्रह्मरूप अग्निमें विचाररूप यज्ञके द्वारा ही जीवात्मारूप यज्ञका हवन करते हैं ॥","englishTranslation":"Some yogis offer sacrifice to the divine alone. Others offer the self into the fire of Brahman through sacrifice itself.","essence":"Sacrifice changes shape, but its aim remains surrender into the absolute.","speaker":"Krishna","deity":"","tags":["yajna","brahmagni","offering","karma-yoga","jnana-yoga"],"simpleMeaning":"Different yogis practice sacrifice in different ways. Some dedicate worship to the divine, while others make the act of sacrifice itself into an offering within Brahman.","simpleInsight":"There are many forms of sincere practice, but all can become a way of offering the whole self.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is still frozen while Krishna keeps unfolding the inner logic of action. After describing sacrifice as purified knowledge, Krishna now shows that yogic practice can take different forms, all aimed at offering action back into the absolute.","modernRelevance":"You sit in a quiet room before a hard decision, trying to get the wording right before you speak. The form may differ, but the real task is the same: let the act become an offering, not a performance.","translationLiteral":"दैवमेव (to the divine alone) / अपरे (others) / यज्ञम् (sacrifice) / योगिनः (yogis) / पर्युपासते (worship) / ब्रह्माग्नौ (in the fire of Brahman) / अपरे (others) / यज्ञम् (sacrifice) / यज्ञेन (by sacrifice) / एव (indeed) / उपजुह्वति (offer)","verseType":"teaching","insight":"It shifts attention from the outer form of practice to the inward quality of offering.","quoteVariants":[],"requisiteConcepts":["yajna","brahman"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

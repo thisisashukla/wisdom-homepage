@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-39_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-39_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-39.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-39.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":39,"order":86,"sanskrit":"एषा तेऽभिहिता सांख्ये बुद्धिर्योगे त्विमां श्रृणु । बुद्ध्यायुक्तो यया पार्थ कर्मबन्धं प्रहास्यसि ॥","hindiTranslation":"हे पार्थ यह समबुद्धि तेरे लिए पहले सांख्ययोगमें कही गयी, अब तू इसको कर्मयोगके विषयमें सुन जिस समबुद्धिसे युक्त हुआ तू कर्मबन्धनका त्याग कर देगा ॥","englishTranslation":"This wisdom has been taught to you in Sankhya. Now hear it in yoga. Equipped with this understanding, Arjuna, you will cast off the bondage of action.","essence":"Clear understanding frees action from bondage.","speaker":"Krishna","deity":"","tags":["sankhya","buddhi","karmabandha","karma-yoga","jñana"],"simpleMeaning":"Krishna says the same wisdom has already been explained as knowledge, and now he will explain it as action. With this clear understanding, Arjuna can break free from the bondage created by action.","simpleInsight":"The same truth can free you both in thought and in action.","detailedMeaning":"On Kurukshetra, Arjuna is frozen before battle. Krishna has already spoken of the self through wisdom, and now he turns to action. He says this same understanding will free Arjuna from being trapped by what he does.","modernRelevance":"You understand the principle in a quiet room, then face the hard conversation. The real test is whether that clarity still holds when action begins.","translationLiteral":"एषा (this) / ते (to you) / अभिहिता (has been taught) / सांख्ये (in Sankhya) / बुद्धिः (wisdom) / योगे (in yoga) / तु (now) / इमाम् (this) / श्रृणु (hear) / बुद्ध्या (with understanding) / युक्तः (equipped) / यया (by which) / पार्थ (Arjuna) / कर्मबन्धम् (bondage of action) / प्रहास्यसि (you will cast off)","verseType":"teaching","insight":"It shifts the mind from seeing knowledge and action as separate to seeing action as the expression of clear understanding.","quoteVariants":[],"requisiteConcepts":["Sankhya","Buddhi","Karma"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

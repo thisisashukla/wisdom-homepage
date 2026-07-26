@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_14-22_json";
+exports.ids = ["_rsc_src_content_gita_verses_14-22_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/14-22.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/14-22.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":14,"verse":22,"order":546,"sanskrit":"श्री भगवानुवाचप्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव । न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति ॥","hindiTranslation":"श्रीभगवान् बोले  हे पाण्डव  प्रकाश, प्रवृत्ति तथा मोह  ये सभी अच्छी तरहसे प्रवृत्त हो जायँ तो भी गुणातीत मनुष्य इनसे द्वेष नहीं करता, और ये सभी निवृत्त हो जायँ तो इनकी इच्छा नहीं करता ॥","englishTranslation":"Krishna said: O Arjuna, the one who has gone beyond the three gunas does not hate light, activity, or confusion when they appear, and does not long for them when they disappear.","essence":"Freedom begins when changing states stop controlling your response.","speaker":"Krishna","deity":"","tags":["gunas","equanimity","vairagya","mohah","inner states"],"simpleMeaning":"A person beyond the three gunas stays even-minded. When clarity, energy, or confusion appear, there is no hatred. When they fade, there is no craving.","simpleInsight":"You stop fighting your changing states and stop chasing the next one.","detailedMeaning":"On the battlefield, Arjuna has asked how someone rises beyond the three gunas. Krishna answers with a test: the mature person does not react with aversion when clarity, drive, or confusion appear, and does not cling when they pass.","modernRelevance":"You wake up clear one day, restless the next, numb after that. Instead of treating each state like a verdict on your life, you let it move through without panic or pursuit.","translationLiteral":"श्री भगवानुवाच (the Blessed One said) / प्रकाशं (light) / च (and) / प्रवृत्तिं (activity) / च (and) / मोहमेव (and delusion itself) / च (and) / पाण्डव (O Pandava) / न द्वेष्टि (does not hate) / सम्प्रवृत्तानि (when arisen) / न निवृत्तानि (when ceased) / काङ्क्षति (desire)","verseType":"teaching","insight":"It teaches you to observe changing inner states without resistance or craving.","quoteVariants":[{"format":"card","text":"Do not hate brightness, motion, or confusion. Do not crave their absence."},{"format":"widget","text":"Neither resist nor crave the changing gunas."},{"format":"notification","text":"Let light, drive, and fog come and go."},{"format":"lockscreen","text":"Remain unmoved as qualities rise and fall."}],"requisiteConcepts":["gunas","vairagya"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"equanimity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

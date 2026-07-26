@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-36_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-36_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-36.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-36.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":36,"order":450,"sanskrit":"अर्जुन उवाचस्थाने हृषीकेश तव प्रकीर्त्याजगत् प्रहृष्यत्यनुरज्यते च । रक्षांसि भीतानि दिशो द्रवन्तिसर्वे नमस्यन्ति च सिद्धसङ्घाः ॥","hindiTranslation":"अर्जुन बोले  हे अन्तर्यामी भगवन्  आपके नाम, गुण, लीलाका कीर्तन करनेसे यह सम्पूर्ण जगत् हर्षित हो रहा है और अनुरागप्रेम को प्राप्त हो रहा है ।  आपके नाम, गुण आदिके कीर्तनसे भयभीत होकर राक्षसलोग दसों दिशाओंमें भागते हुए जा रहे हैं और सम्पूर्ण सिद्धगण आपको नमस्कार कर रहे हैं ।  यह सब होना उचित ही है ॥","englishTranslation":"Arjuna said: O Hrishikesha, by chanting Your names and glories, the whole world rejoices and becomes devoted. By that chanting, frightened beings flee in all directions, and all the perfected ones bow to You. This is only fitting.","essence":"The divine name can turn fear into devotion and disorder into reverence.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","hrishikesha","stuti","nama-kirtana","arjuna-prayer"],"simpleMeaning":"Arjuna says that praising Krishna fills the world with joy and love, drives fearful forces away, and makes perfected beings bow in respect.","simpleInsight":"Praise changes the atmosphere of the mind and the world around it.","detailedMeaning":"On Kurukshetra, after seeing Krishna\'s cosmic form, Arjuna is no longer arguing—he is overwhelmed. With his hands folded, he says that Krishna\'s glory makes the world rejoice, makes dark forces flee, and makes the perfected bow down.","modernRelevance":"You walk into a room where fear has spread through everyone, and one steady voice names what is true. The tension shifts at once; panic loses its grip.","translationLiteral":"अर्जुन उवाच (Arjuna said) / स्थाने (rightly; fittingly) / हृषीकेश (O Hrishikesha) / तव (Your) / प्रकीर्त्य (by glorifying; by chanting) / जगत् (the world) / प्रहृष्यति (rejoices greatly) / अनुरज्यते (becomes devoted; becomes attached in love) / च (and) / रक्षांसि (beings of darkness; hostile beings) / भीतानि (frightened) / दिशः (directions) / द्रवन्ति (flee) / सर्वे (all) / नमस्यन्ति (bow down) / च (and) / सिद्धसङ्घाः (assemblies of perfected beings)","verseType":"devotional","insight":"It shifts attention from fear to reverence, showing that praise can reorder experience.","quoteVariants":[{"format":"card","text":"Your name awakens joy, devotion, and awe in every being."},{"format":"widget","text":"Your name turns fear to reverence."},{"format":"notification","text":"Even fear bows when Your name is spoken."},{"format":"lockscreen","text":"Speak the divine name. Fear yields."}],"requisiteConcepts":["Bhakti","Krishna","Vishwarupa"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"devotion-n","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-37_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-37_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-37.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-37.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":37,"order":156,"sanskrit":"श्री भगवानुवाचकाम एष क्रोध एष रजोगुणसमुद्भवः । महाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ॥","hindiTranslation":"श्रीभगवान् बोले  रजोगुणसे उत्पन्न हुआ यह काम ही क्रोध है ।  यह बहुत खानेवाला और महापापी है ।  इस विषयमें तू इसको ही वैरी जान ॥","englishTranslation":"Krishna said: Desire, born of rajas, turns into anger. It is all-consuming and deeply destructive. Know it as your enemy here.","essence":"Desire is not harmless; it mutates into the force that ruins judgment.","speaker":"Krishna","deity":"","tags":["rajas","kama","krodha","inner-enemy","discernment"],"simpleMeaning":"Desire, born from restlessness, turns into anger and destroys clarity. Krishna says to recognize it as an enemy before it takes over.","simpleInsight":"You can catch the fire early, before it becomes a blaze that controls your choices.","detailedMeaning":"Arjuna has asked why people act against their own judgment. Krishna answers on the battlefield: the real enemy is not outside, but the force of desire rising into anger and blinding discernment. This verse names it so Arjuna can fight it first.","modernRelevance":"You open a message, feel ignored, and the irritation hardens into a cutting reply. The first spark looked harmless; the full fire changes everything.","translationLiteral":"श्रीभगवानुवाच (the Lord said) / कामः (desire) / एषः (this) / क्रोधः (anger) / एषः (this) / रजोगुणसमुद्भवः (born from the quality of passion) / महाशनः (all-devouring) / महापाप्मा (greatly destructive) / विद्धि (know) / एनम् (this) / इह (here) / वैरिणम् (as an enemy)","verseType":"teaching","insight":"It shifts the mind from blaming others to spotting the inner impulse that distorts action.","quoteVariants":[{"format":"card","text":"Desire becomes anger. Treat it as the enemy."},{"format":"widget","text":"Desire devours. Know it as enemy."},{"format":"notification","text":"That urge can turn into anger before you notice."},{"format":"lockscreen","text":"Name desire before it names you."}],"requisiteConcepts":["rajas","kama","krodha"],"category":"philosophical","tone":"grounding","targetAudience":["general","couples","professionals"],"nodeId":"vairagya","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

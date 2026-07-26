@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-25_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-25_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-25.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/8-25.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":25,"order":335,"sanskrit":"धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम् । तत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते ॥","hindiTranslation":"जिस मार्गमें धूमका अधिपति देवता, रात्रिका अधिपति देवता, कृष्णपक्षका अधिपति देवता और छः महीनोंवाले दक्षिणायनका अधिपति देवता है, शरीर छोड़कर उस मार्गसे गया हुआ योगी सकाम मनुष्य चन्द्रमाकी ज्योतिको प्राप्त होकर लौट आता है अर्थात् जन्ममरणको प्राप्त होता है ॥","englishTranslation":"In the path ruled by smoke, night, the dark fortnight, and the six months of the southern course, the yogi who departs there returns after reaching the moon\'s light.","essence":"Some routes only delay return; they do not end the cycle.","speaker":"Krishna","deity":"","tags":["uttarayana","dakshinayana","lunar-path","post-death","return"],"simpleMeaning":"A person who departs through this darker path reaches a lunar realm and returns again to mortal life.","simpleInsight":"Not every departure leads beyond return. Some paths circle back into the same struggle.","detailedMeaning":"Krishna is still answering Arjuna on Kurukshetra, explaining the two post-death courses. After naming the bright path that leads beyond return, he names the darker path: one that ends in return. The point is to distinguish release from recurrence.","modernRelevance":"You choose what feels easier because it is familiar, then wonder why you are back in the same pattern again. Some choices carry you forward; others quietly send you in circles.","translationLiteral":"धूमः (smoke) / रात्रिः (night) / तथा (and) / कृष्णः (the dark fortnight) / षण्मासा (six months) / दक्षिणायनम् (the southern course) / तत्र (there) / चान्द्रमसम् (lunar) / ज्योतिः (light) / योगी (the yogi) / प्राप्य (having reached) / निवर्तते (returns)","verseType":"teaching","insight":"It shifts attention from vague spirituality to seeing the difference between a path that frees and a path that repeats.","quoteVariants":[],"requisiteConcepts":["moksha","samsara"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

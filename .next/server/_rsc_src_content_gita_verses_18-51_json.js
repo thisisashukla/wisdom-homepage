@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-51_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-51_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-51.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-51.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":51,"order":674,"sanskrit":"बुद्ध्या विशुद्धया युक्तो धृत्याऽऽत्मानं नियम्य च । शब्दादीन् विषयांस्त्यक्त्वा रागद्वेषौ व्युदस्य च ॥","hindiTranslation":"जो विशुद्ध सात्त्विकी बुद्धिसे युक्त, वैराग्यके आश्रित, एकान्तका सेवन करनेवाला और नियमित भोजन करनेवाला साधक धैर्यपूर्वक इन्द्रियोंका नियमन करके, शरीरवाणीमनको वशमें करके, शब्दादि विषयोंका त्याग करके और रागद्वेषको छोड़कर निरन्तर ध्यानयोगके परायण हो जाता है, वह अहंकार, बल, दर्प, काम, क्रोध और परिग्रहका त्याग करके एवं निर्मम तथा शान्त होकर ब्रह्मप्राप्तिका पात्र हो जाता है ॥","englishTranslation":"Endowed with purified understanding, holding the self steady with firm resolve, giving up sense-objects, and casting away attraction and aversion...","essence":"Purified resolve cuts the pull of craving and aversion.","speaker":"Krishna","deity":"","tags":["buddhi","dhriti","indriya-nigraha","raga-dvesha","vairagya"],"simpleMeaning":"A person with clear understanding steadies the mind, restrains the senses, gives up sense pleasures, and drops attraction and aversion.","simpleInsight":"Freedom starts when impulse no longer runs the show.","detailedMeaning":"On the battlefield, Arjuna still needs a way back to inner steadiness. Krishna explains the discipline of a seeker who wants Brahman: purified understanding, firm resolve, restraint of the senses, and release from craving and aversion.","modernRelevance":"You open your phone to escape one uncomfortable message, then another craving follows. The mind keeps pulling until you deliberately stop feeding it.","translationLiteral":"बुद्ध्या (with understanding) / विशुद्धया (purified) / युक्तः (endowed) / धृत्या (with firmness) / आत्मानम् (the self) / नियम्य (having restrained) / च (and) / शब्दादीन् (sound and so on) / विषयान् (sense-objects) / त्यक्त्वा (having abandoned) / राग-द्वेषौ (attraction and aversion) / व्युदस्य (having cast away) / च (and)","verseType":"teaching","insight":"It shifts attention from reacting to training the mind to stay steady under pressure.","quoteVariants":[],"requisiteConcepts":["Buddhi","Vairagya","Dhriti"],"category":"philosophical","tone":"grounding","targetAudience":["students","general"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

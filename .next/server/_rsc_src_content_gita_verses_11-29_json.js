@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-29_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-29_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-29.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-29.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":29,"order":443,"sanskrit":"यथा प्रदीप्तं ज्वलनं पतङ्गाविशन्ति नाशाय समृद्धवेगाः । तथैव नाशाय विशन्ति लोकास्तवापि वक्त्राणि समृद्धवेगाः ॥","hindiTranslation":"जैसे पतंगे मोहवश अपना नाश करनेके लिये बड़े वेगसे दौड़ते हुए प्रज्वलित अग्निमें प्रविष्ट होते हैं, ऐसे ही ये सब लोग भी मोहवश अपना नाश करनेके लिये बड़े वेगसे दौड़ते हुए आपके मुखोंमें प्रविष्ट हो रहे हैं ॥","englishTranslation":"As moths rush with great speed into a blazing fire to their destruction, so these people rush with great speed into your mouths to their destruction.","essence":"Blind desire runs straight into its own ruin.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna","cosmic-form","moths","destruction"],"simpleMeaning":"Arjuna sees people rushing helplessly into Krishna\'s blazing mouths, like moths flying into fire and destroying themselves.","simpleInsight":"Some forces are so overwhelming that resistance looks like self-destruction.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is staring at Krishna\'s cosmic form. He sees warriors, kings, and armies rushing into those terrible, flaming mouths. The image is not instruction but horror: the war\'s end is already unfolding in divine sight.","modernRelevance":"You keep walking toward the thing you know will burn you: a toxic relationship, a lie you can no longer sustain, a choice that feels inevitable and wrong.","translationLiteral":"यथा (just as) / प्रदीप्तम् (blazing) / ज्वलनम् (fire) / पतङ्गाः (moths) / विशन्ति (enter) / नाशाय (for destruction) / समृद्धवेगाः (with great speed) / तथा (so) / एव (indeed) / नाशाय (for destruction) / विशन्ति (enter) / लोकाः (people) / तव (your) / अपि (also) / वक्त्राणि (mouths) / समृद्धवेगाः (with great speed)","verseType":"narrative","insight":"It shifts the mind from seeing destruction as accidental to seeing how blindness can carry people straight into it.","quoteVariants":[],"requisiteConcepts":["Vishwarupa"],"category":"narrative","tone":"reflective","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"medium"}');
+
+/***/ })
+
+};
+;

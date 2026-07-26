@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-4_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-4_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-4.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/7-4.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":4,"order":284,"sanskrit":"भूमिरापोऽनलो वायुः खं मनो बुद्धिरेव च । अहङ्कार इतीयं मे भिन्ना प्रकृतिरष्टधा ॥","hindiTranslation":"पृथ्वी, जल, तेज, वायु, आकाश  ये पञ्चमहाभूत और मन, बुद्धि तथा अहंकार  यह आठ प्रकारके भेदोंवाली मेरी अपरा प्रकृति है ।  हे महाबाहो  इस अपरा प्रकृतिसे भिन्न जीवरूप बनी हुई मेरी परा प्रकृतिको जान, जिसके द्वारा यह जगत् धारण किया जाता है ॥","englishTranslation":"Earth, water, fire, air, ether, mind, intellect, and ego: this is My eightfold lower nature.","essence":"What changes is not the whole of what you are.","speaker":"Krishna","deity":"","tags":["prakriti","ahamkara","buddhi","manas","pancha-mahabhuta"],"simpleMeaning":"Krishna names eight parts of his lower nature: the five elements, mind, intellect, and ego. This is the material side of existence, not the highest reality.","simpleInsight":"You can stop mistaking the changing layers of life for what is ultimate.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen while Krishna begins to explain the structure of reality. After promising full knowledge, Krishna first separates the changing world into eight parts: the elements, mind, intellect, and ego. This verse sets up the contrast with the higher nature that follows.","modernRelevance":"You are overwhelmed by your own reactions, your thoughts, and the noise around you. This verse helps you see those layers as parts of life, not the deepest truth about you.","translationLiteral":"भूमिः (earth) / आपः (water) / अनलः (fire) / वायुः (air) / खम् (ether) / मनः (mind) / बुद्धिः (intellect) / एव (indeed) / च (and) / अहङ्कारः (ego) / इति (thus) / इयम् (this) / मे (my) / भिन्ना (separate) / प्रकृतिः (nature) / अष्टधा (eightfold)","verseType":"teaching","insight":"It shifts attention from identifying with the changing mind-body complex to seeing it as only the lower field.","quoteVariants":[],"requisiteConcepts":["Prakriti","Manas","Buddhi","Ahamkara"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

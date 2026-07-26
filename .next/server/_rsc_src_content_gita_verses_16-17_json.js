@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_16-17_json";
+exports.ids = ["_rsc_src_content_gita_verses_16-17_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/16-17.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/16-17.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":16,"verse":17,"order":588,"sanskrit":"आत्मसम्भाविताः स्तब्धा धनमानमदान्विताः । यजन्ते नामयज्ञैस्ते दम्भेनाविधिपूर्वकम् ॥","hindiTranslation":"अपनेको सबसे अधिक पूज्य माननेवाले, अकड़ रखनेवाले तथा धन और मानके मदमें चूर रहनेवाले वे मनुष्य दम्भसे अविधिपूर्वक नाममात्रके यज्ञोंसे यजन करते हैं ॥","englishTranslation":"Self-important, stubborn, drunk on wealth and praise, they perform ritual in name only, with pretence and without proper method.","essence":"Pride can hollow out sacred action until only appearance remains.","speaker":"Krishna","deity":"","tags":["ahamkara","dambha","ritual","wealth-pride","false-piety"],"simpleMeaning":"People swollen with pride, wealth, and status may still perform rituals, but only as show. The outer act remains, while the inner sincerity and right method are missing.","simpleInsight":"Real practice feels clean and humble, not flashy or self-congratulatory.","detailedMeaning":"On the battlefield, Krishna is exposing the inner decay behind outward piety. After describing deluded people trapped in desire, he shows another mask: ritual done for show by the proud, rich, and stubborn. The issue is not action itself, but false motive.","modernRelevance":"You post the apology, attend the ceremony, and say the right words — but your chest is tight with image-management. Krishna names the gap between appearance and sincerity.","translationLiteral":"आत्मसम्भाविताः (self-important) / स्तब्धा (stubborn, rigid) / धनमानमदान्विताः (endowed with wealth-pride and honor-pride) / यजन्ते (they perform ritual) / नामयज्ञैः (with name-only sacrifices) / ते (they) / दम्भेन (with pretence) / अविधिपूर्वकम् (without proper method)","verseType":"teaching","insight":"It teaches you to examine motive, not just performance, and to let practice become honest rather than decorative.","quoteVariants":[{"format":"card","text":"Pride turns worship into performance. Ritual without sincerity is only noise."},{"format":"widget","text":"Ritual without sincerity is empty."},{"format":"notification","text":"I can do the form and still miss the heart."},{"format":"lockscreen","text":"Drop pretence. Practice with honesty."}],"requisiteConcepts":["Ahamkara","Dharma"],"category":"philosophical","tone":"reflective","targetAudience":["general","students","professionals"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

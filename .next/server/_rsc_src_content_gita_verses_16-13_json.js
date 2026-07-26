@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_16-13_json";
+exports.ids = ["_rsc_src_content_gita_verses_16-13_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/16-13.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/16-13.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":16,"verse":13,"order":584,"sanskrit":"इदमद्य मया लब्धमिमं प्राप्स्ये मनोरथम् । इदमस्तीदमपि मे भविष्यति पुनर्धनम् ॥","hindiTranslation":"इतनी वस्तुएँ तो हमने आज प्राप्त कर लीं और अब इस मनोरथको प्राप्त पूरा कर लेंगे । ,इतना धन तो हमारे पास है ही, इतना धन फिर हो जायगा ॥","englishTranslation":"This much I have gained today; I will get this desire fulfilled. This wealth is mine now, and more will be mine again.","essence":"Possession feeds appetite when the mind mistakes gain for completion.","speaker":"Unknown","deity":"","tags":["lobha","artha","possessiveness","greed-cycle","asuri-sampad"],"simpleMeaning":"A deluded person keeps thinking, “I have gained this, I will get more, and this wealth will keep increasing.”","simpleInsight":"Possession can become a trap when the mind keeps turning gain into hunger.","detailedMeaning":"Krishna is exposing the inner speech of the demonic-minded person after describing greed, rage, and unfair gain. The speaker is not a hero in battle but a mind trapped in endless acquisition, convinced that today’s gain will lead to tomorrow’s.","modernRelevance":"You check your account after a bonus and immediately start planning the next purchase, the next upgrade, the next win. The mind never says, enough.","translationLiteral":"इदम् (this) / अद्य (today) / मया (by me) / लब्धम् (gained) / इमम् (this) / प्राप्स्ये (I will obtain) / मनोरथम् (desired wish) / इदम् (this) / अस्ति (is) / इदम् (this) / अपि (also) / मे (of me) / भविष्यति (will be) / पुनः (again) / धनम् (wealth)","verseType":"declaration","insight":"It reveals how greed multiplies itself by turning every gain into proof that more is owed.","quoteVariants":[],"requisiteConcepts":[],"category":"philosophical","tone":"reflective","targetAudience":["general","entrepreneurs"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"surface"}');
+
+/***/ })
+
+};
+;

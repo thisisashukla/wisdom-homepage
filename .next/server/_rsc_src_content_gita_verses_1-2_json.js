@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-2_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-2_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-2.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/1-2.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":2,"order":2,"sanskrit":"सञ्जय उवाचदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा । आचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ॥","hindiTranslation":"संजय बोले  उस समय वज्रव्यूहसे खड़ी हुई पाण्डवसेना को देखकर राजा दुर्योधन द्रोणाचार्य के पास जाकर यह वचन बोला ॥","englishTranslation":"Sanjaya said: Seeing the Pandava army arranged in battle formation, King Duryodhana went to Dronacharya and spoke these words.","essence":"War becomes real the moment the enemy is seen clearly.","speaker":"Sanjaya","deity":"","tags":["kurukshetra","duryodhana","dronacharya","pandava-army","battle-formation"],"simpleMeaning":"Duryodhana sees the Pandava army in battle formation and goes to Drona to speak.","simpleInsight":"The scene tightens before the war begins.","detailedMeaning":"On the battlefield at Kurukshetra, Duryodhana sees the Pandava army drawn up in disciplined formation. He immediately approaches Drona, his teacher, and begins speaking. This is the moment just before fear, pride, and strategy spill into words.","modernRelevance":"You spot the other side is ready, organized, and serious. Before you can hide behind confidence, you walk straight to the person who taught you and admit the pressure.","translationLiteral":"सञ्जय उवाच (Sanjaya said) / दृष्ट्वा (having seen) / तु (indeed) / पाण्डवानीकं (the Pandava army) / व्यूढं (arrayed in formation) / दुर्योधनः (Duryodhana) / तदा (then) / आचार्यम् (to the teacher) / उपसङ्गम्य (having approached) / राजा (the king) / वचनम् (words) / अब्रवीत् (spoke)","verseType":"narrative","insight":"It sets up the first crack in Duryodhana’s certainty and moves the scene into open confrontation.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"grounding","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-7_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-7_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-7.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/18-7.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":7,"order":630,"sanskrit":"नियतस्य तु संन्यासः कर्मणो नोपपद्यते । मोहात्तस्य परित्यागस्तामसः परिकीर्तितः ॥","hindiTranslation":"नियत कर्मका तो त्याग करना उचित नहीं है ।  उसका मोहपूर्वक त्याग करना तामस कहा गया है ॥","englishTranslation":"Abandoning prescribed action is not right. Giving it up in confusion is called tamasic.","essence":"Right action should not be abandoned just because it feels difficult.","speaker":"Krishna","deity":"","tags":["tyaga","tamasic","niyata-karma","renunciation","dharma"],"simpleMeaning":"You should not give up the work that is properly yours to do. If you drop it out of confusion, that is a dark and dull kind of renunciation.","simpleInsight":"Relief comes from knowing that clarity, not escape, is the real test of renunciation.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is still trapped between action and refusal. Krishna now sharpens the teaching: some duties cannot be discarded just because they feel heavy. This verse defines confused renunciation as a failure of understanding.","modernRelevance":"You are about to quit a hard conversation because it feels uncomfortable, not because it is wrong. The urge to escape can look noble, but confusion is not wisdom.","translationLiteral":"नियतस्य (of the prescribed) / तु (indeed) / संन्यासः (renunciation) / कर्मणः (of action) / न (not) / उपपद्यते (is उचित / is fitting) । / मोहात् (from confusion) / तस्य (of that) / परित्यागः (abandonment) / तामसः (tamasic) / परिकीर्तितः (is called)","verseType":"declaration","insight":"It shifts the mind from avoiding responsibility to testing whether the urge to quit is clear or merely fearful.","quoteVariants":[{"format":"card","text":"Do your rightful work. Confused abandonment is darkness."},{"format":"widget","text":"Keep the duty. Drop confusion."},{"format":"notification","text":"Walking away from duty in confusion is not freedom."},{"format":"lockscreen","text":"Hold duty. Release confusion."}],"requisiteConcepts":["Dharma","Avidya"],"category":"philosophical","tone":"grounding","targetAudience":["general","professionals","students"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-3_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-3_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-3.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/10-3.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":3,"order":375,"sanskrit":"यो मामजमनादिं च वेत्ति लोकमहेश्वरम् । असम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते ॥","hindiTranslation":"जो मनुष्य मुझे अजन्मा, अनादि और सम्पूर्ण लोकोंका महान् ईश्वर जानता है अर्थात् दृढ़तासे मानता है, वह मनुष्योंमें असम्मूढ़ जानकार है और वह सम्पूर्ण पापोंसे मुक्त हो जाता है ॥","englishTranslation":"One who knows Me as unborn, beginningless, and the great lord of all worlds is undeluded among mortals and is freed from every wrong deed.","essence":"Clear recognition of the divine ends confusion and frees action.","speaker":"Krishna","deity":"Krishna","tags":["krishna","lokamaheshvara","ajanma","anadi","delusion"],"simpleMeaning":"Knowing Krishna as unborn, beginningless, and the ruler of all worlds removes confusion and frees a person from wrongdoing.","simpleInsight":"There is relief in seeing that clear understanding can cut through confusion and loosen the grip of harmful action.","detailedMeaning":"On Kurukshetra, Arjuna is still shaken while Krishna unfolds his divine presence. After revealing his limitless reach, Krishna says that the person who truly knows him as unborn, beginningless, and lord of all worlds passes beyond confusion and wrongdoing.","modernRelevance":"You are standing at the edge of a choice that could change everything, and the noise in your head is louder than your judgment. Seeing what is higher than fear can steady the whole mind.","translationLiteral":"यः (one who) / माम् (Me) / अजम् (unborn) / अनादिम् (beginningless) / च (and) / वेत्ति (knows) / लोकमहेश्वरम् (the great lord of all worlds) / असम्मूढः (undeluded) / सः (that one) / मर्त्येषु (among mortals) / सर्वपापैः (from all wrong deeds) / प्रमुच्यते (is freed)","verseType":"declaration","insight":"It shifts devotion from vague admiration to clear recognition, and that recognition dissolves confusion at its root.","quoteVariants":[{"format":"card","text":"Know Me as unborn and beginningless. Clear seeing frees you from every wrong deed."},{"format":"widget","text":"Know the unborn Lord. Delusion falls away."},{"format":"notification","text":"Seeing the unborn Lord clears everything else away."},{"format":"lockscreen","text":"Know the unborn Lord, and be free."}],"requisiteConcepts":["Bhakti","Avidya"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-13_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-13_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-13.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-13.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":13,"order":132,"sanskrit":"यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः । भुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात् ॥","hindiTranslation":"यज्ञशेष योग का अनुभव करनेवाले श्रेष्ठ मनुष्य सम्पूर्ण पापोंसे मुक्त हो जाते हैं ।  परन्तु जो केवल अपने लिये ही पकाते अर्थात् सब कर्म करते हैं, वे पापीलोग तो पापका ही भक्षण करते हैं ॥","englishTranslation":"Those who eat the leftovers of sacrifice are freed from all faults. Those who cook only for themselves eat only wrongdoing.","essence":"What is offered purifies; what is hoarded for the self corrupts.","speaker":"Krishna","deity":"","tags":["yajna","selflessness","offering","karmic-purity","egoism"],"simpleMeaning":"People who take only what remains after offering their work for the larger order are cleansed. People who act only for themselves end up consuming their own wrongdoing.","simpleInsight":"Generosity purifies effort; selfishness poisons it.","detailedMeaning":"On the battlefield, Arjuna is frozen and Krishna is rebuilding the meaning of action. After explaining sacrifice and mutual support, Krishna says that the noble live on what is left after offering first; self-centered action only deepens impurity.","modernRelevance":"You finish dinner and notice you grabbed the best piece before anyone else. That tiny reflex is the same one that makes larger acts feel hollow.","translationLiteral":"यज्ञशिष्टाशिनः (eating what remains after sacrifice) / सन्तः (the good, the noble) / मुच्यन्ते (are freed) / सर्वकिल्बिषैः (from all faults) / भुञ्जते (they eat/enjoy) / ते (they) / तु (but) / अघं (wrongdoing) / पापाः (the sinful) / ये (those who) / पचन्ति (cook) / आत्मकारणात् (for their own sake)","verseType":"teaching","insight":"It shifts action from self-collection to offering, so work becomes clean instead of contaminated by greed.","quoteVariants":[{"format":"card","text":"Eat what is shared. Self-serving work turns into fault."},{"format":"widget","text":"Share first. Keep nothing for ego."},{"format":"notification","text":"What you keep only for yourself stains the act."},{"format":"lockscreen","text":"Serve, share, and let ego starve."}],"requisiteConcepts":["Yajna","Karma"],"category":"philosophical","tone":"grounding","targetAudience":["general","professionals","entrepreneurs"],"nodeId":"effort","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

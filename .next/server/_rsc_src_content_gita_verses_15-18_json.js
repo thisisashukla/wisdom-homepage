@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-18_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-18_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-18.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/15-18.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":18,"order":569,"sanskrit":"यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः । अतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः ॥","hindiTranslation":"मैं क्षरसे अतीत हूँ और अक्षरसे भी उत्तम हूँ, इसलिये लोकमें और वेदमें पुरुषोत्तम नामसे प्रसिद्ध हूँ ॥","englishTranslation":"I am beyond the perishable and even beyond the imperishable. Therefore, I am known in the world and in the Vedas as Purushottama, the Supreme Self.","essence":"The highest reality lies beyond both change and permanence.","speaker":"Krishna","deity":"Krishna","tags":["purushottama","kshara","akshara","paramatma","chapter-15"],"simpleMeaning":"Krishna says he is beyond both the changing world and the unchanging principle behind it. That is why he is called the Supreme Self.","simpleInsight":"Reality is larger than both what fades and what seems permanent.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen, and Krishna has been leading him through the deepest levels of reality. After explaining the perishable, the imperishable, and the supreme being beyond both, Krishna now names himself as that highest reality.","modernRelevance":"You finally reach the thing you thought would settle everything — the title, the relationship, the achievement — and it still feels incomplete. Krishna points beyond every stopping place.","translationLiteral":"यस्मात् (because) / क्षरम् (the perishable) / अतीतः (beyond) / अहम् (I) / अक्षरात् (than the imperishable) / अपि (also) / च (and) / उत्तमः (higher) / अतः (therefore) / अस्मि (I am) / लोके (in the world) / वेदे (in the Veda) / च (and) / प्रथितः (well known) / पुरुषोत्तमः (Purushottama)","verseType":"declaration","insight":"It shifts the mind from settling for any limited identity to recognising the highest reality beyond all categories.","quoteVariants":[{"format":"card","text":"Beyond change, beyond the changeless, I am the Supreme Self."},{"format":"widget","text":"Beyond change, beyond changelessness."},{"format":"notification","text":"Even the imperishable is not the highest."},{"format":"lockscreen","text":"Beyond all change, the Supreme Self."}],"requisiteConcepts":["kshara","akshara","purushottama"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-15_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-15_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-15.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-15.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":15,"order":62,"sanskrit":"यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ । समदुःखसुखं धीरं सोऽमृतत्वाय कल्पते ॥","hindiTranslation":"कारण कि हे पुरुषोंमें श्रेष्ठ अर्जुन सुखदुःखमें सम रहनेवाले जिस धीर मनुष्यको ये मात्रास्पर्श पदार्थ व्यथित सुखीदुःखी नहीं कर पाते, वह अमर होनेमें समर्थ हो जाता है अर्थात् वह अमर हो जाता है ॥","englishTranslation":"The wise person who is not shaken by these, and remains equal in pain and pleasure, becomes fit for freedom.","essence":"Freedom begins where pain and pleasure stop controlling you.","speaker":"Krishna","deity":"","tags":["samaduhkhasukha","dhira","amritatva","equanimity","sense-contact"],"simpleMeaning":"A steady person who stays even through pleasure and pain is not thrown off by changing experiences and becomes ready for inner freedom.","simpleInsight":"You do not need to be ruled by every high and low. Steadiness itself becomes strength.","detailedMeaning":"On Kurukshetra, Arjuna is still reeling from grief and confusion. Krishna has already said the body changes and sensations pass. Now he shows the next step: the person who stays even through pleasure and pain is the one ready for freedom.","modernRelevance":"Your phone lights up with bad news, then a compliment, then another crisis. The mind jerks in every direction. This verse asks for a steadier center that does not collapse with each swing.","translationLiteral":"यम् (whom) / हि (indeed) / न (not) / व्यथयन्ति (disturb) / एते (these) / पुरुषम् (person) / पुरुषर्षभ (best among men) / समदुःखसुखम् (equal in pain and pleasure) / धीरम् (steadfast one) / सः (that one) / अमृतत्वाय (for immortality) / कल्पते (is fit)","verseType":"teaching","insight":"It shifts the mind from chasing comfort and avoiding pain to holding both with equal steadiness.","quoteVariants":[{"format":"card","text":"Pain and pleasure cannot shake the steadfast one. Such a person is fit for freedom."},{"format":"widget","text":"Stay equal. Nothing can shake you."},{"format":"notification","text":"I can feel this fully and still not be moved."},{"format":"lockscreen","text":"Meet pain and joy the same."}],"requisiteConcepts":["Dhira","Amritatva"],"category":"philosophical","tone":"grounding","targetAudience":["general","students"],"nodeId":"equanimity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

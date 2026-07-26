@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-16_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-16_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-16.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-16.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":16,"order":178,"sanskrit":"किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिताः । तत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात् ॥","hindiTranslation":"कर्म क्या है और अकर्म क्या है  इस प्रकार इस विषयमें विद्वान् भी मोहित हो जाते हैं ।  अतः वह कर्मतत्त्व मैं तुम्हें भलीभाँति कहूँगा, जिसको जानकर तू अशुभ संसारबन्धन से मुक्त हो जायगा ॥","englishTranslation":"What is action, and what is inaction? Even the wise are confused here. I will explain that action to you, knowing which you will be freed from what is harmful.","essence":"Clear seeing about action is what breaks bondage.","speaker":"Krishna","deity":"","tags":["karma-tattva","akarma","vikarma","jnana-yoga","moksha"],"simpleMeaning":"Even intelligent people get confused about what action and inaction really mean. Krishna says he will explain it clearly so Arjuna can be freed from harmful bondage.","simpleInsight":"Clarity can break confusion that effort alone cannot.","detailedMeaning":"On the battlefield, Arjuna is frozen, and Krishna has begun untangling the deepest question behind duty. After saying that wise people are confused about action, he promises to explain the real nature of action so Arjuna can move without bondage.","modernRelevance":"You stand at the edge of a hard choice and realize you do not even know what the right kind of action looks like. Before moving, you need clarity, not more noise.","translationLiteral":"किम् (what) / कर्म (action) / किम्-अकर्म (what [is] inaction) / इति (thus) / कवयः (the wise) / अपि (even) / अत्र (here) / मोहिताः (deluded) / तत् (that) / ते (to you) / कर्म (action) / प्रवक्ष्यामि (I will explain fully) / यत् (which) / ज्ञात्वा (having known) / मोक्ष्यसे (you will be freed) / अशुभात् (from the harmful)","verseType":"inquiry","insight":"It shifts the mind from guessing about action to learning its true structure.","quoteVariants":[{"format":"card","text":"Even the wise are confused here. I will show you what action really is."},{"format":"widget","text":"Know action. Confusion falls away."},{"format":"notification","text":"Even the wise miss this: action can free you."},{"format":"lockscreen","text":"Know action clearly. Harm loses its grip."}],"requisiteConcepts":["karma","akarma","moksha"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"inquiry","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

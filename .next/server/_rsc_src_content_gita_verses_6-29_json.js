@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-29_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-29_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-29.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-29.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":29,"order":262,"sanskrit":"सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि । ईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः ॥","hindiTranslation":"सब जगह अपने स्वरूपको देखनेवाला और ध्यानयोगसे युक्त अन्तःकरणवाला योगा अपने स्वरूपको सम्पूर्ण प्राणियोंमें स्थित देखता है और सम्पूर्ण प्राणियोंको अपने स्वरूपमें देखता है ॥","englishTranslation":"The one united in yoga sees the true self in all beings and all beings in the true self, seeing everything with equal vision.","essence":"Equal vision dissolves the illusion of separation.","speaker":"Krishna","deity":"","tags":["samadarshana","dhyana","sarvabhutastha","yoga-yukta","advaita"],"simpleMeaning":"A person steady in meditation sees the same inner self present in every living being, and sees every living being within that same self.","simpleInsight":"Separation softens. What remains is a quiet sense of shared belonging.","detailedMeaning":"Krishna is still teaching Arjuna on the battlefield, where fear and division are everywhere. After describing the settled meditator, he now shows the deeper vision that meditation reveals: one who is united in yoga sees the same self in every being and every being in that same self.","modernRelevance":"You are in a tense room where everyone feels like an opponent. This verse shifts the room: the person across from you is no longer a threat to manage, but a life sharing the same ground.","translationLiteral":"सर्वभूतस्थम् (situated in all beings) / आत्मानम् (the true self) / सर्वभूतानि (all beings) / च (and) / आत्मनि (in the true self) / ईक्षते (sees) / योगयुक्तात्मा (the inner being united in yoga) / सर्वत्र (everywhere) / समदर्शनः (one of equal vision)","verseType":"teaching","insight":"It trains the mind to move from separation to shared essence, changing how you look at people before you act toward them.","quoteVariants":[{"format":"card","text":"See the true self in all beings. See all beings in the true self."},{"format":"widget","text":"All beings in one true self."},{"format":"notification","text":"Everything you meet is already within the same true self."},{"format":"lockscreen","text":"One vision. All beings within."}],"requisiteConcepts":["Atman","Yoga","Samadarshana"],"category":"philosophical","tone":"expansive","targetAudience":["general","students","couples"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

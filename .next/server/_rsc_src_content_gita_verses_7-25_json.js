@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-25_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-25_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-25.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/7-25.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":25,"order":305,"sanskrit":"नाहं प्रकाशः सर्वस्य योगमायासमावृतः । मूढोऽयं नाभिजानाति लोको मामजमव्ययम् ॥","hindiTranslation":"जो मूढ़ मनुष्य मेरेको अज और अविनाशी ठीक तरहसे नहीं जानते मानते, उन सबके सामने योगमायासे अच्छी तरहसे आवृत हुआ मैं प्रकट नहीं होता ॥","englishTranslation":"Veiled by yoga-maya, I am not visible to everyone. Deluded people do not recognize me as unborn and imperishable.","essence":"The hidden divine is missed by confused seeing, not by absence.","speaker":"Krishna","deity":"Krishna","tags":["yogamaya","ajam","avyayam","delusion","krishna-identity"],"simpleMeaning":"Krishna says he is hidden from people who are confused. They do not recognize his unborn, unchanging nature because their minds are covered by the veil of appearance.","simpleInsight":"Not seeing clearly is often the real barrier, not the truth itself.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is still shaken, and Krishna is explaining why ordinary vision cannot grasp his true nature. Even while standing before everyone, Krishna says the confused miss him because the veil of appearance covers their seeing.","modernRelevance":"You can sit beside someone who loves you and still miss what they are trying to say because your mind is already defending itself. The problem is often not absence, but distorted seeing.","translationLiteral":"नाहम् (I am not) / प्रकाशः (manifest) / सर्वस्य (to everyone) / योगमायासमावृतः (covered by yoga-maya) । / मूढः (deluded) / अयम् (this) / न अभिजानाति (does not know) / लोकः (world) / माम् (me) / अजम् (unborn) / अव्ययम् (imperishable) ॥","verseType":"declaration","insight":"It shifts attention from demanding proof to clearing the mind that cannot recognize what is already present.","quoteVariants":[{"format":"card","text":"The deluded do not see me. I remain unborn and imperishable."},{"format":"widget","text":"Veil hides me; delusion misses me."},{"format":"notification","text":"What you call hidden is only your confusion."},{"format":"lockscreen","text":"Delusion hides the unborn, imperishable presence."}],"requisiteConcepts":["Maya","Avidya"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

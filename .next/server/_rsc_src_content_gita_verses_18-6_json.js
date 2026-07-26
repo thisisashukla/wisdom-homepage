@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-6_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-6_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-6.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/18-6.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":6,"order":629,"sanskrit":"एतान्यपि तु कर्माणि सङ्गं त्यक्त्वा फलानि च । कर्तव्यानीति मे पार्थ निश्िचतं मतमुत्तमम् ॥","hindiTranslation":"हे पार्थ  पूर्वोक्त यज्ञ, दान और तप   इन कर्मोंको तथा दूसरे भी कर्मोंको आसक्ति और फलोंका त्याग करके करना चाहिये  यह मेरा निश्चित किया हुआ उत्तम मत है ॥","englishTranslation":"Even these actions, and all other actions, should be done without attachment and without wanting their results. This is my settled and best teaching, O Arjuna.","essence":"Right action is complete only when desire for reward is dropped.","speaker":"Krishna","deity":"","tags":["nishkama-karma","tyaga","phala-tyaga","karma-yoga","krishna-teaching"],"simpleMeaning":"Even sacred actions and all other duties should be done without clinging to results. Krishna says this is the best and settled teaching.","simpleInsight":"You can give your full effort without carrying the burden of control.","detailedMeaning":"On the battlefield, Arjuna is frozen between duty and fear. Krishna continues his teaching on renunciation, making one thing clear: even offerings, charity, and discipline should be done without attachment to results. This verse sharpens the path of action.","modernRelevance":"You send the message, make the apology, or hand in the project, then sit with the uncertainty. The value was in doing it rightly, not in controlling how it lands.","translationLiteral":"एतानि (these) / अपि (also) / तु (indeed) / कर्माणि (actions) / सङ्गं (attachment) / त्यक्त्वा (having given up) / फलानि (results) / च (and) / कर्तव्यानीति (ought to be done) / मे (my) / पार्थ (O Partha) / निश्चितं (settled) / मतम् (opinion/teaching) / उत्तमम् (best)","verseType":"teaching","insight":"It shifts action from outcome-hunger to clean participation in what must be done.","quoteVariants":[{"format":"card","text":"Do the work. Release the result."},{"format":"widget","text":"Act fully. Want nothing."},{"format":"notification","text":"The work is yours. The result is not."},{"format":"lockscreen","text":"Work without clinging to outcomes."}],"requisiteConcepts":["Karma","Nishkama"],"category":"philosophical","tone":"grounding","targetAudience":["students","professionals","entrepreneurs"],"nodeId":"vairagya","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

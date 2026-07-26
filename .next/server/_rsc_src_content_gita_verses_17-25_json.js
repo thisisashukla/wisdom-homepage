@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_17-25_json";
+exports.ids = ["_rsc_src_content_gita_verses_17-25_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/17-25.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/17-25.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":17,"verse":25,"order":620,"sanskrit":"तदित्यनभिसन्धाय फलं यज्ञतपःक्रियाः । दानक्रियाश्च विविधाः क्रियन्ते मोक्षकाङ्क्षि ॥","hindiTranslation":"तत् नामसे कहे जानेवाले परमात्माके लिये ही सब कुछ है  ऐसा मानकर मुक्ति चाहनेवाले मनुष्योंद्वारा फलकी इच्छासे रहित होकर अनेक प्रकारकी यज्ञ और तपरूप क्रियाएँ तथा दानरूप क्रियाएँ की जाती हैं ॥","englishTranslation":"Thinking “all this is for the supreme reality,” seekers of freedom perform many kinds of sacrifice, austerity, and giving without wanting the result.","essence":"Freedom deepens when action stops demanding a private return.","speaker":"Krishna","deity":"","tags":["yajna","tapas","dana","nishkama","moksha"],"simpleMeaning":"People seeking freedom do sacred actions, self-discipline, and giving without chasing personal reward. They treat the work itself as an offering.","simpleInsight":"You can act with devotion and still let go of what comes back.","detailedMeaning":"On Kurukshetra, Arjuna is frozen before battle, and Krishna keeps building the inner discipline needed to act rightly. Here he explains that seekers of freedom perform sacrifice, austerity, and giving without clinging to personal gain.","modernRelevance":"You send the apology, make the donation, or do the hard right thing — and no one thanks you. The act still stands complete without applause.","translationLiteral":"तत् (that) / इति (thus) / अनभिसन्धाय (without aiming at) / फलम् (fruit, result) / यज्ञ (sacrifice) / तपः (austerity) / क्रियाः (actions) / दान-क्रियाः (acts of giving) / च (and) / विविधाः (various) / क्रियन्ते (are done) / मोक्ष-काङ्क्षि (by those desiring freedom)","verseType":"teaching","insight":"It shifts action from self-benefit to offering, so the mind stops bargaining with life.","quoteVariants":[{"format":"card","text":"Offer the work. Release the reward."},{"format":"widget","text":"Give fully. Keep nothing."},{"format":"notification","text":"The result can go. The offering remains."},{"format":"lockscreen","text":"Work as offering, not bargain."}],"requisiteConcepts":["Karma","Moksha"],"category":"devotional","tone":"reflective","targetAudience":["general","students","professionals"],"nodeId":"surrender","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

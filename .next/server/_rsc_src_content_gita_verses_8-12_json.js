@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-12_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-12_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-12.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/8-12.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":12,"order":322,"sanskrit":"सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च । मूर्ध्न्याधायात्मनः प्राणमास्थितो योगधारणाम् ॥","hindiTranslation":"इन्द्रियोंके सम्पूर्ण द्वारोंको रोककर मनका हृदयमें निरोध करके और अपने प्राणोंको मस्तकमें स्थापित करके योगधारणामें सम्यक् प्रकारसे स्थित हुआ जो ऊँ इस एक अक्षर ब्रह्मका उच्चारण और मेरा स्मरण करता हुआ शरीरको छोड़कर जाता है, वह परमगतिको प्राप्त होता है ॥","englishTranslation":"Closing all the doors of the senses, holding the mind in the heart, and placing the life-force in the head, one remains fixed in yoga-discipline.","essence":"Mastery of the senses and mind prepares one for the final passage.","speaker":"Krishna","deity":"","tags":["pratyahara","prana","yogadharana","sense-withdrawal","death-practice"],"simpleMeaning":"At the moment of death, the practitioner shuts the senses, steadies the mind in the heart, and places the life-force at the head through yoga practice.","simpleInsight":"Lasting steadiness begins with disciplined control, not with panic.","detailedMeaning":"On the battlefield of Kurukshetra, Krishna is explaining the final discipline of leaving the body with full awareness. After describing the imperishable goal, he gives the inner method: restrain the senses, gather the mind, and hold the life-force in focused stillness.","modernRelevance":"A hospital room goes quiet after bad news. Instead of scattering into fear, you can gather yourself, steady your breath, and meet the moment with trained attention.","translationLiteral":"सर्वद्वाराणि (all doors) / संयम्य (having restrained) / मनः (mind) / हृदि (in the heart) / निरुध्य (having confined) / च (and) / मूर्ध्नि (in the head) / आधाय (having placed) / आत्मनः (of oneself) / प्राणम् (life-force) / आस्थितः (steadfast) / योगधारणाम् (yoga-discipline)","verseType":"teaching","insight":"It shifts the mind from accidental reaction to deliberate inner control.","quoteVariants":[],"requisiteConcepts":["prana","yoga","manas"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

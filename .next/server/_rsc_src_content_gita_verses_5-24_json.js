@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-24_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-24_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-24.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/5-24.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":24,"order":228,"sanskrit":"योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः । स योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति ॥","hindiTranslation":"जो मनुष्य केवल परमात्मामें सुखवाला है और केवल परमात्मामें रमण करनेवाला है तथा जो केवल परमात्मामें ज्ञानवाला है, वह ब्रह्ममें अपनी स्थितिका अनुभव करनेवाला सांख्ययोगी निर्वाण ब्रह्मको प्राप्त होता है ॥","englishTranslation":"One who finds happiness within, delights within, and has inner light alone, becomes one with the supreme reality and reaches freedom in the supreme reality.","essence":"Inner fulfillment makes freedom possible right now.","speaker":"Krishna","deity":"","tags":["brahmanirvana","antarjyoti","inner-contentment","vairagya","samadhi"],"simpleMeaning":"Real freedom comes to the person who finds joy, delight, and clear awareness within, rather than depending on outside things.","simpleInsight":"You can stop bargaining with the world when inner contentment becomes enough.","detailedMeaning":"On Kurukshetra, as Arjuna is being taught how to act without being ruled by craving, Krishna describes the person who no longer depends on outer pleasures. Such a person rests in inner joy and reaches freedom in the supreme reality.","modernRelevance":"You close the app, silence the room, and still feel the pull to check one more message. This verse points to the rare relief of not needing the next hit of approval or distraction.","translationLiteral":"यः (who) / अन्तःसुखः (one whose happiness is भीतर / within) / अन्तरारामः (one whose delight is within) / तथा (and) / अन्तर्ज्योतिः (inner light) / एव (alone) / यः (who) / सः (that one) / योगी (yogi) / ब्रह्मनिर्वाणम् (freedom in the supreme reality) / ब्रह्मभूतः (become the supreme reality) / अधिगच्छति (attains)","verseType":"declaration","insight":"It shifts attention from chasing stimulation to resting in inner fullness.","quoteVariants":[{"format":"card","text":"Inner joy ends craving. Inner light ends the chase."},{"format":"widget","text":"Joy within. Light within. Freedom follows."},{"format":"notification","text":"What you seek outside is already shining within."},{"format":"lockscreen","text":"Turn inward. Freedom is already there."}],"requisiteConcepts":["Brahman","Yoga"],"category":"philosophical","tone":"expansive","targetAudience":["students","professionals","general"],"nodeId":"stillness","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-26_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-26_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-26.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/8-26.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":26,"order":336,"sanskrit":"शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते । एकया यात्यनावृत्तिमन्ययाऽऽवर्तते पुनः ॥","hindiTranslation":"क्योंकि शुक्ल और कृष्ण  ये दोनों गतियाँ अनादिकालसे जगत्प्राणिमात्र के साथ सम्बन्ध रखनेवाली मानी गई हैं ।  इनमेंसे एक गतिमें जानेवालेको लौटना नहीं पड़ता और दूसरी गतिमें जानेवालेको लौटना पड़ता है ॥","englishTranslation":"The bright and the dark are the two eternal paths of the world. One leads to non-return; the other brings return again.","essence":"Some choices free you from the cycle; others send you back into it.","speaker":"Krishna","deity":"","tags":["uttarayana","dakshinayana","punaravritti","moksha","gati"],"simpleMeaning":"Two eternal paths exist. One leads beyond repeated return, and the other brings a person back again.","simpleInsight":"There is relief in knowing not every road leads to the same loop.","detailedMeaning":"On the battlefield at Kurukshetra, Krishna has begun explaining the last journey of life to Arjuna. After naming the bright and dark routes, he now states the larger rule: one path ends rebirth, the other returns the traveler again.","modernRelevance":"You are standing at a crossroads after a breakup, a resignation letter in hand. One choice ends the old cycle; the other sends you back into it with a new name.","translationLiteral":"शुक्लकृष्णे (the bright and the dark) / गती (paths) / हि (indeed) / एते (these) / जगतः (of the world) / शाश्वते (eternal) / मते (are held to be) । / एकया (by one) / याति (goes) / अनावृत्तिम् (to non-return) / अन्यया (by the other) / आवर्तते (returns) / पुनः (again)","verseType":"teaching","insight":"It shifts attention from surface success to the deeper direction a life is moving in.","quoteVariants":[{"format":"card","text":"One path ends the return. The other sends you back."},{"format":"widget","text":"Choose the path that returns not."},{"format":"notification","text":"Some paths bring you back. One does not."},{"format":"lockscreen","text":"Walk the path beyond return."}],"requisiteConcepts":["moksha","samsara","yoga"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"vairagya","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

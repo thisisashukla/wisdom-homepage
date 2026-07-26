@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_17-21_json";
+exports.ids = ["_rsc_src_content_gita_verses_17-21_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/17-21.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/17-21.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":17,"verse":21,"order":616,"sanskrit":"यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुनः । दीयते च परिक्लिष्टं तद्दानं राजसं स्मृतम् ॥","hindiTranslation":"किन्तु जो दान प्रत्युपकारके लिये अथवा फलप्राप्तिका उद्देश्य बनाकर फिर क्लेशपूर्वक दिया जाता है, वह दान राजस कहा जाता है ॥","englishTranslation":"But charity given in return, or for a desired result, and given grudgingly, is said to be rajasic.","essence":"A gift becomes lesser the moment it starts asking for something back.","speaker":"Krishna","deity":"","tags":["dana","rajas","pratyupakara","phala-iccha","seva"],"simpleMeaning":"A gift loses its purity when you give it to get something back or to force a result, especially if you give it unwillingly.","simpleInsight":"Generosity feels lighter when it is not secretly a trade.","detailedMeaning":"On Kurukshetra, Krishna is classifying the nature of giving for Arjuna, who is still shaken and searching for right action. After pure giving, Krishna now names a second kind: charity mixed with expectation, strain, and return-seeking.","modernRelevance":"You send the money, then keep checking whether they thanked you properly. The gift was real, but part of you was still negotiating.","translationLiteral":"यत् (which) / तु (but) / प्रत्युपकारार्थम् (for return-favor) / फलम् (fruit, result) / उद्दिश्य (aiming at) / वा (or) / पुनः (again) / दीयते (is given) / च (and) / परिक्लिष्टम् (with strain, grudgingly) / तत् (that) / दानम् (gift, charity) / राजसम् (rajasic) / स्मृतम् (is called)","verseType":"teaching","insight":"It teaches you to notice hidden bargaining inside generosity and strip it out.","quoteVariants":[{"format":"card","text":"Give without bargaining. A gift tied to gain is stained."},{"format":"widget","text":"Give cleanly. No return."},{"format":"notification","text":"I gave to receive back."},{"format":"lockscreen","text":"Give freely. Drop the hidden price."}],"requisiteConcepts":["dana","rajas","phala"],"category":"philosophical","tone":"reflective","targetAudience":["general","couples","parents"],"nodeId":"bhakti-m","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

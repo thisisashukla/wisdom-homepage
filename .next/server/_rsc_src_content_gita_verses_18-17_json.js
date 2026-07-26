@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-17_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-17_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-17.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-17.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":17,"order":640,"sanskrit":"यस्य नाहंकृतो भावो बुद्धिर्यस्य न लिप्यते । हत्वापि स इमाँल्लोकान्न हन्ति न निबध्यते ॥","hindiTranslation":"जिसका अहंकृतभाव नहीं है और जिसकी बुद्धि लिप्त नहीं होती, वह इन सम्पूर्ण प्राणियोंको मारकर भी न मारता है और न बँधता है ॥","englishTranslation":"One who has no sense of separate self and whose understanding remains unstained does not kill, even by killing all these beings, and is not bound.","essence":"Without egoic ownership, action leaves no stain.","speaker":"Krishna","deity":"","tags":["ahamkara","kartṛtva","karma-bandha","nishkama","doership"],"simpleMeaning":"A person who has dropped ego and stays inwardly untouched is not truly the killer, and is not trapped by the act.","simpleInsight":"There is relief in seeing that action does not have to stain you when ego is absent.","detailedMeaning":"On the battlefield of Kurukshetra, Krishna is still answering Arjuna\'s panic about action and guilt. After explaining the many causes behind any deed, he now says the deepest shift is to lose the sense of separate doership. Then even the hardest action does not bind.","modernRelevance":"You make the call that ends a broken partnership. The words are heavy, but you do not have to carry them as personal guilt if you acted from clarity, not ego.","translationLiteral":"यस्य (whose) / न (not) / अहंकृतः (made by ego; marked by separate self) / भावः (state) / बुद्धिः (understanding) / यस्य (whose) / न (not) / लिप्यते (is stained; clings) / हत्वा अपि (even after killing) / सः (that one) / इमान् लोकान् (these beings) / न (not) / हन्ति (kills) / न (not) / निबध्यते (is bound)","verseType":"teaching","insight":"It shifts responsibility from self-image to clear action, so the mind stops clinging to ownership.","quoteVariants":[{"format":"card","text":"No separate self acts here. No bondage follows."},{"format":"widget","text":"Act, untouched."},{"format":"notification","text":"The deed happens, but the doer was never real."},{"format":"lockscreen","text":"Act without ego. Remain unbound."}],"requisiteConcepts":["Ahamkara","Karma","Moksha"],"category":"philosophical","tone":"expansive","targetAudience":["general","professionals","students"],"nodeId":"vairagya","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-2_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-2_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-2.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/18-2.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":2,"order":625,"sanskrit":"श्री भगवानुवाचकाम्यानां कर्मणां न्यासं संन्यासं कवयो विदुः । सर्वकर्मफलत्यागं प्राहुस्त्यागं विचक्षणाः ॥","hindiTranslation":"॥","englishTranslation":"The wise call renunciation the giving up of desire-born actions. The discerning call renunciation the giving up of all results of action.","essence":"Renunciation means releasing both craving and attachment to results.","speaker":"Krishna","deity":"","tags":["sannyasa","tyaga","karmaphala","nishkama","chapter-18"],"simpleMeaning":"Wise people define renunciation in two ways: giving up actions driven by desire, and giving up attachment to all results of action.","simpleInsight":"Freedom begins when you stop clinging to what action might bring you.","detailedMeaning":"On the battlefield at Kurukshetra, Arjuna asks Krishna to separate renunciation from giving up action. Krishna answers by defining both terms carefully, because Arjuna needs a clear way to act without inner bondage.","modernRelevance":"You send the hard message, hit submit, and then keep checking for approval. This verse cuts that loop: do the work, then release the grip on what comes back.","translationLiteral":"श्रीभगवानुवाच (the Blessed Lord said) / काम्यानां (of desire-born) / कर्मणां (actions) / न्यासं (giving up) / संन्यासं (renunciation) / कवयः (the wise) / विदुः (know) / सर्वकर्मफलत्यागं (giving up all fruits of action) / प्राहुः (they call) / त्यागं (renunciation) / विचक्षणाः (the discerning)","verseType":"teaching","insight":"It shifts the mind from controlling outcomes to releasing attachment while still acting.","quoteVariants":[{"format":"card","text":"Renunciation is not escape. It is letting go of desire and the fruit of action."},{"format":"widget","text":"Drop desire. Drop results."},{"format":"notification","text":"Renunciation may mean releasing the result, not the action."},{"format":"lockscreen","text":"Let go of desire and results."}],"requisiteConcepts":["Karma","Nishkama"],"category":"philosophical","tone":"reflective","targetAudience":["general","students","professionals"],"nodeId":"moksha","nodePath":"convergence","depth":"medium"}');
+
+/***/ })
+
+};
+;

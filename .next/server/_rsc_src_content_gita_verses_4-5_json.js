@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-5.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/4-5.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":5,"order":167,"sanskrit":"श्री भगवानुवाचबहूनि मे व्यतीतानि जन्मानि तव चार्जुन । तान्यहं वेद सर्वाणि न त्वं वेत्थ परन्तप ॥","hindiTranslation":"श्रीभगवान् बोले  हे परन्तप अर्जुन  मेरे और तेरे बहुतसे जन्म हो चुके हैं ।  उन सबको मैं जानता हूँ, पर तू नहीं जानता ॥","englishTranslation":"Krishna said: Many births of yours and mine have passed, Arjuna. I know them all, but you do not, enemy-burner.","essence":"Your memory is partial; the divine awareness is not.","speaker":"Krishna","deity":"","tags":["janma","smriti","krishna","arjuna","timelessness"],"simpleMeaning":"Krishna says that both of them have passed through many births, but only Krishna remembers them all. Arjuna does not remember his own past births.","simpleInsight":"It softens pride and confusion: your present view is limited, but reality is larger than what you can recall.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna questions how Krishna could have taught the ancient sun-god long ago. Krishna answers by shifting the frame: both of them have crossed many births, but only Krishna remembers them fully. The teaching prepares Arjuna for a deeper truth about Krishna\'s timeless nature.","modernRelevance":"You argue from memory, but the other person sees the whole pattern. In a family conflict, you remember only the last hurt; the deeper story stretches far beyond what you can hold.","translationLiteral":"श्री भगवानुवाच (the Blessed Lord said) / बहूनि (many) / मे (my) / व्यतीतानि (passed) / जन्मानि (births) / तव (your) / च (and) / अर्जुन (Arjuna) / तानि (those) / अहं (I) / वेद (know) / सर्वाणि (all) / न (not) / त्वं (you) / वेत्थ (know) / परन्तप (enemy-burner)","verseType":"declaration","insight":"It shifts the mind from assuming its own memory is complete to recognising a wider continuity of existence.","quoteVariants":[],"requisiteConcepts":["janma"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

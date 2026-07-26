@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_12-1_json";
+exports.ids = ["_rsc_src_content_gita_verses_12-1_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/12-1.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/12-1.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":12,"verse":1,"order":470,"sanskrit":"अर्जुन उवाचएवं सततयुक्ता ये भक्तास्त्वां पर्युपासते । येचाप्यक्षरमव्यक्तं तेषां के योगवित्तमाः ॥","hindiTranslation":"जो भक्त इस प्रकार निरन्तर आपमें लगे रहकर आपसगुण भगवान् की उपासना करते हैं और जो अविनाशी निराकारकी ही उपासना करते हैं, उनमेंसे उत्तम योगवेत्ता कौन हैं ॥","englishTranslation":"Arjuna said: Those devotees who worship You with constant devotion, and those who worship the imperishable, unmanifest reality—who among them are the most accomplished in yoga?","essence":"Devotion can face the divine as form or as formless reality.","speaker":"Arjuna","deity":"","tags":["bhakti","akshara","avyakta","upasana","yogavittama"],"simpleMeaning":"Arjuna asks whether devoted worship of Krishna or worship of the imperishable, formless reality is the higher yoga.","simpleInsight":"It is honest to ask which form of devotion leads deepest.","detailedMeaning":"On Kurukshetra, with Arjuna still uncertain and the battle waiting, he asks Krishna a sharp question: is loving the personal divine better, or is worshipping the unmanifest absolute higher? Chapter 12 begins by comparing two ways of devotion.","modernRelevance":"You stand between two paths: a relationship that feels alive, and a principle that feels pure. The question is not weak — it is the mind trying to find the deepest way to give itself.","translationLiteral":"अर्जुन उवाच (Arjuna said) / एवम् (thus) / सततयुक्ताः (constantly devoted) / ये (those who) / भक्ताः (devotees) / त्वाम् (You) / पर्युपासते (worship) / ये (those who) / च (and) / अपि (also) / अक्षरम् (the imperishable) / अव्यक्तम् (the unmanifest) / तेषाम् (of them) / के (which) / योगवित्तमाः (most accomplished in yoga)","verseType":"inquiry","insight":"It frames devotion as a real choice between personal love and abstract contemplation, preparing Krishna\'s answer.","quoteVariants":[],"requisiteConcepts":["Bhakti","Akshara","Avyakta","Yoga"],"category":"devotional","tone":"reflective","targetAudience":["general","students"],"nodeId":"trust","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-17_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-17_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-17.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/10-17.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":17,"order":389,"sanskrit":"कथं विद्यामहं योगिंस्त्वां सदा परिचिन्तयन् । केषु केषु च भावेषु चिन्त्योऽसि भगवन्मया ॥","hindiTranslation":"हे योगिन्  हरदम साङ्गोपाङ्ग चिन्तन करता हुआ मैं आपको कैसे जानूँ  और हे भगवन्  किनकिन भावोंमें आप मेरे द्वारा चिन्तन किये जा सकते हैं अर्थात् किनकिन भावोंमें मैं आपका चिन्तन करूँ ॥","englishTranslation":"O Yogi, how shall I know You by constant contemplation? In what forms should You be contemplated, O Blessed One?","essence":"Devotion needs a form the mind can return to again and again.","speaker":"Arjuna","deity":"Krishna","tags":["vibhuti","arjuna-prayer","krishna-remembrance","bhagavan","contemplation"],"simpleMeaning":"Arjuna asks Krishna how to keep remembering him and in what forms he should meditate on him.","simpleInsight":"Love wants a way to remember. The heart asks for a thousand doors back to the beloved.","detailedMeaning":"On the battlefield, Arjuna has moved from fear to reverence. After asking Krishna to describe his divine manifestations, he now asks how to hold Krishna in constant contemplation and through which forms that remembrance should happen.","modernRelevance":"You meet someone who changed your life, then realise you keep forgetting what made them matter. The mind wants a concrete way to stay oriented toward what it reveres.","translationLiteral":"कथम् (how) / विद्याम् (may I know) / अहम् (I) / योगिन् (O Yogi) / त्वाम् (You) / सदा (always) / परिचिन्तयन् (contemplating fully) / केषु केषु (in which which) / च (and) / भावेषु (in forms / states) / चिन्त्यः (to be contemplated) / असि (You are) / भगवन् (O Blessed One) / मया (by me)","verseType":"inquiry","insight":"It shifts devotion from vague feeling to specific remembrance through form, image, and attention.","quoteVariants":[],"requisiteConcepts":["Bhakti","Vibhuti","Yoga"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

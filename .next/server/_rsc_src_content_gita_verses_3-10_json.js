@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-10_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-10_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-10.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-10.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":10,"order":129,"sanskrit":"सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः । अनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक् ॥","hindiTranslation":"प्रजापति ब्रह्माजीने सृष्टिके आदिकालमें कर्तव्यकर्मोंके विधानसहित प्रजामनुष्य आदि की रचना करके उनसे प्रधानतया मनुष्योंसे कहा कि तुमलोग इस कर्तव्यके द्वारा सबकी वृद्धि करो और वह कर्तव्यकर्मरूप यज्ञ तुमलोगोंको कर्तव्यपालनकी आवश्यक सामग्री प्रदान करनेवाला हो ।  अपने कर्तव्यकर्मके द्वारा तुमलोग देवताओंको उन्नत करो और वे देवतालोग अपने कर्तव्यके द्वारा तुमलोगोंको उन्नत करें ।  इस प्रकार एकदूसरेको उन्नत करते हुए तुमलोग परम कल्याणको प्राप्त हो जाओगे ॥","englishTranslation":"In the beginning, Prajapati created beings together with sacrifice and said: “By this, you shall prosper. May this sacrifice be the wish-fulfilling cow for you.”","essence":"Life flourishes when duty becomes mutual support.","speaker":"Krishna","deity":"","tags":["yajna","prajapati","mutual-support","dharma","shared-duty"],"simpleMeaning":"At the start of creation, Prajapati set up a way of living where sacrifice and duty help all beings flourish. The message is to support life through shared responsibility.","simpleInsight":"Your work is not isolated; it feeds a larger exchange that keeps life going.","detailedMeaning":"On Kurukshetra, Arjuna has frozen before battle, and Krishna is tracing action back to the order of creation itself. He says Prajapati made beings with sacrifice built in, so human life is meant to nourish and be nourished through duty.","modernRelevance":"You are stocking shelves before dawn, or caring for a parent no one sees. The task feels small, but it belongs to a larger web that lets everyone else keep moving.","translationLiteral":"सहयज्ञाः (together with sacrifice) / प्रजाः (beings) / सृष्ट्वा (having created) / पुरा (in the beginning) / उवाच (said) / प्रजापतिः (Prajapati) / अनेन (by this) / प्रसविष्यध्वम् (you shall prosper) / एषः (this) / वः (for you) / अस्तु (may be) / इष्टकामधुक् (the wish-fulfilling cow)","verseType":"teaching","insight":"It shifts action from private gain to participation in a shared order.","quoteVariants":[],"requisiteConcepts":["Yajna","Dharma"],"category":"philosophical","tone":"grounding","targetAudience":["general","parents","professionals"],"nodeId":"effort","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

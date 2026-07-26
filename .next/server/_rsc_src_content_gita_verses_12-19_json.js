@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_12-19_json";
+exports.ids = ["_rsc_src_content_gita_verses_12-19_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/12-19.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/12-19.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":12,"verse":19,"order":488,"sanskrit":"तुल्यनिन्दास्तुतिर्मौनी सन्तुष्टो येनकेनचित् । अनिकेतः स्थिरमतिर्भक्ितमान्मे प्रियो नरः ॥","hindiTranslation":"जो शत्रु और मित्रमें तथा मानअपमानमें सम है और शीतउष्ण अनुकूलताप्रतिकूलता तथा सुखदुःखमें सम है एवं आसक्तिसे रहित है, और जो निन्दास्तुतिको समान समझनेवाला, मननशील, जिसकिसी प्रकारसे भी शरीरका निर्वाह होनेमें संतुष्ट, रहनेके स्थान तथा शरीरमें ममताआसक्तिसे रहित और स्थिर बुद्धिवाला है, वह भक्तिमान् मनुष्य मुझे प्रिय है ॥","englishTranslation":"Equal in praise and blame, silent, content with whatever comes, homeless, steady-minded—the devoted person is dear to me.","essence":"Praise and blame lose power over the one who stands steady.","speaker":"Krishna","deity":"","tags":["bhakti","sthitaprajna","nindastuti","aniketa","santosha"],"simpleMeaning":"A devoted person stays steady through praise and blame, remains quiet, accepts whatever comes, feels no possessiveness about home, and keeps a firm mind.","simpleInsight":"Real devotion looks calm, unshaken, and unneedy.","detailedMeaning":"On the battlefield at Kurukshetra, Arjuna is still trapped in fear and grief. Krishna describes the devotee who has become inwardly steady: unmoved by praise or blame, free from clinging, and content with whatever life provides.","modernRelevance":"You post something vulnerable, then watch the comments. Praise inflates, criticism stings, and your day tilts. This verse asks for a steadier center than public reaction.","translationLiteral":"तुल्य (equal) / निन्दा (blame) / स्तुति (praise) / मौनी (silent) / सन्तुष्टः (content) / येनकेनचित् (by whatever means) / अनिकेतः (without a home) / स्थिरमतिः (steady-minded) / भक्तिमान् (devoted) / मे (to me) / प्रियः (dear) / नरः (person)","verseType":"teaching","insight":"It shifts attention from managing approval to holding inner steadiness in every response.","quoteVariants":[],"requisiteConcepts":["bhakti"],"category":"devotional","tone":"reflective","targetAudience":["general","students","professionals"],"nodeId":"bhakti-m","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

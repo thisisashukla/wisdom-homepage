@@ -1,0 +1,12 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-dotenv==1.0.1
+pydantic==2.8.2
+pydantic-settings==2.4.0
+numpy==1.26.4
+sentence-transformers==3.1.1
+tf-keras>=2.16.0          # keras 3 compat shim for transformers
+torch>=2.3.0
+sarvamai==0.1.0
+httpx==0.27.2
+supabase>=2.0.0           # verse-of-day persistence

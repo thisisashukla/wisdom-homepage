@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-26_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-26_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-26.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-26.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":26,"order":73,"sanskrit":"अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम् । तथापि त्वं महाबाहो नैवं शोचितुमर्हसि ॥","hindiTranslation":"हे महाबाहो  अगर तुम इस देहीको नित्य पैदा होनेवाला अथवा नित्य मरनेवाला भी मानो, तो भी तुम्हें इस प्रकार शोक नहीं करना चाहिये ॥","englishTranslation":"O mighty-armed one, even if you think this embodied being is always born and always dies, you still should not grieve like this.","essence":"Even the plain fact of change is no reason to drown in sorrow.","speaker":"Krishna","deity":"","tags":["janma-mrityu","shoka","embodied-being","kurukshetra","grief"],"simpleMeaning":"Even if you see this embodied being as something that keeps being born and dying, grief is still not fitting. Krishna is pushing Arjuna beyond sorrow itself.","simpleInsight":"You do not need to collapse into grief just because change is happening.","detailedMeaning":"On the battlefield at Kurukshetra, Arjuna is frozen by sorrow while Krishna keeps dismantling his fear. After explaining the imperishable nature of the embodied being, Krishna adds one more step: even under a simpler view of life and death, grief is still not the right response.","modernRelevance":"You are sitting beside a hospital bed, bracing for news you cannot control. Even if you think only in terms of birth and death, panic does not help you meet the moment.","translationLiteral":"अथ (even then) / च (also) / एनम् (this) / नित्यजातम् (always born) / नित्यम् (always) / वा (or) / मन्यसे (you think) / मृतम् (dead) / तथापि (even so) / त्वम् (you) / महाबाहो (mighty-armed one) / नैवम् (not like this) / शोचितुम् (to grieve) / अर्हसि (you should)","verseType":"teaching","insight":"It shifts the mind from emotional collapse to steady seeing, even before deeper understanding arrives.","quoteVariants":[],"requisiteConcepts":["dehi"],"category":"philosophical","tone":"reflective","targetAudience":["general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

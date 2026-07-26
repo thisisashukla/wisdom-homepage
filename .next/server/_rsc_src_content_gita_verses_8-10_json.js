@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-10_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-10_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-10.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/8-10.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":10,"order":320,"sanskrit":"प्रयाणकाले मनसाऽचलेनभक्त्या युक्तो योगबलेन चैव । भ्रुवोर्मध्ये प्राणमावेश्य सम्यक्स तं परं पुरुषमुपैति दिव्यम् ॥","hindiTranslation":"वह भक्तियुक्त मनुष्य अन्तसमयमें अचल मनसे और योगबलके द्वारा भृकुटीके मध्यमें प्राणोंको अच्छी तरहसे प्रविष्ट करके शरीर छोड़नेपर उस परम दिव्य पुरुषको ही प्राप्त होता है ॥","englishTranslation":"At the time of departure, one who leaves the body with an unmoving mind, devotion, and the power of yoga, placing the life-force between the eyebrows, reaches the divine supreme person.","essence":"Steady devotion carries awareness beyond the body\'s final threshold.","speaker":"Krishna","deity":"","tags":["antakala","prana","bhrumadhya","yogabala","achala-manas"],"simpleMeaning":"At death, a devoted person who keeps the mind steady and directs the life-force with yogic focus reaches the divine supreme person.","simpleInsight":"The final moment is not chaos when the mind has been trained to stay still.","detailedMeaning":"On the battlefield of Kurukshetra, Krishna is answering Arjuna’s fear of death and the final moment. After describing the supreme, imperishable goal, he now explains the inner condition that carries a person there: steady mind, devotion, and concentrated yoga at departure.","modernRelevance":"A surgeon says, \'We need a decision now,\' and your chest tightens. This verse points to the kind of inner steadiness that lets a person meet the last, hardest moment without panic.","translationLiteral":"प्रयाणकाले (at the time of departure) / मनसा (with the mind) / अचलेन (unmoving) / भक्त्या (with devotion) / युक्तः (joined) / योगबलेन (by the power of yoga) / च (and) / एव (indeed) / भ्रुवोः (of the two eyebrows) / मध्ये (in the middle) / प्राणम् (the life-force) / आवेश्य (placing) / सम्यक् (properly) / सः (that one) / तम् (that) / परम् (supreme) / पुरुषम् (person) / उपैति (reaches) / दिव्यम् (divine)","verseType":"teaching","insight":"It shifts attention from the fear of leaving the body to the quality of awareness at the moment of leaving.","quoteVariants":[],"requisiteConcepts":["Bhakti","Yoga","Brahman"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"stillness","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

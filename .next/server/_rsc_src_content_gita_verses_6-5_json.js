@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-5.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/6-5.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":5,"order":238,"sanskrit":"उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥","hindiTranslation":"अपने द्वारा अपना उद्धार करे, अपना पतन न करे क्योंकि आप ही अपना मित्र है और आप ही अपना शत्रु है ॥","englishTranslation":"Lift yourself by yourself; do not let yourself fall. The true self is its own friend, and the true self is its own enemy.","essence":"Your own inner handling makes you rise or collapse.","speaker":"Krishna","deity":"","tags":["self-mastery","dhyana-yoga","manas","discipline","inner-conflict"],"simpleMeaning":"Your own effort can raise you or ruin you. The same mind that helps you grow can also drag you down.","simpleInsight":"You are not helpless in your own life; the way you handle yourself changes everything.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen. Krishna begins to show him that the greatest struggle is not outside, but within. Before victory or defeat in war, a person must learn whether the self supports or sabotages itself.","modernRelevance":"You are about to send the message, quit the habit, or tell the truth—and the old voice says to delay again. In that moment, your own inner handling decides whether you rise or shrink.","translationLiteral":"उद्धरेत् (should lift up) / आत्मना (by the self) / आत्मानम् (the self) / न (not) / आत्मानम् (the self) / अवसादयेत् (should let fall) / आत्मा (the self) / एव (indeed) / हि (for) / आत्मनः (of the self) / बन्धुः (friend) / आत्मा (the self) / एव (indeed) / रिपुः (enemy) / आत्मनः (of the self)","verseType":"teaching","insight":"It shifts responsibility inward: stop waiting for rescue and start becoming the force that steadies you.","quoteVariants":[{"format":"card","text":"Lift yourself with discipline. Let yourself fall, and you become your own enemy."},{"format":"widget","text":"Lift yourself. Do not sink yourself."},{"format":"notification","text":"I can be my own ally—or my own undoing."},{"format":"lockscreen","text":"Rise by yourself. Do not fall."}],"requisiteConcepts":["manas","dhyana","yoga"],"category":"motivational","tone":"grounding","targetAudience":["students","professionals","general"],"nodeId":"discipline","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

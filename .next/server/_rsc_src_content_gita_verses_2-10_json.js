@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-10_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-10_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-10.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-10.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":10,"order":57,"sanskrit":"तमुवाच हृषीकेशः प्रहसन्निव भारत । सेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः ॥","hindiTranslation":"हे भरतवंशोद्भव धृतराष्ट्र दोनों सेनाओंके मध्यभागमें विषाद करते हुए उस अर्जुनके प्रति हँसते हुएसे भगवान् हृषीकेश यह आगे कहे जानेवाले वचन बोले ॥","englishTranslation":"Hṛṣīkeśa spoke to the grieving Arjuna, smiling slightly, in the midst of the two armies.","essence":"Guidance begins when grief is met without rejection.","speaker":"Krishna","deity":"","tags":["kurukshetra","arjuna","hृषीकेśa","battlefield","grief"],"simpleMeaning":"Krishna begins speaking to Arjuna, who is overwhelmed with grief between the two armies.","simpleInsight":"Even in collapse, the teaching begins with presence, not panic.","detailedMeaning":"Arjuna stands between the two armies, unable to fight. Krishna, seeing his collapse, begins the conversation with a calm, almost gentle smile. This verse marks the turning point from silence and grief to guidance.","modernRelevance":"You are frozen in the middle of a hard decision, and everything in you wants to shut down. The first real help often arrives not as pressure, but as a steady voice that can hold your fear.","translationLiteral":"तम् (to him) / उवाच (spoke) / हृषीकेशः (Hṛṣīkeśa) / प्रहसन्निव (as if smiling) / भारत (O descendant of Bharata) / सेनयोः (of the two armies) / उभयोः (of both) / मध्ये (in the middle) / विषीदन्तम् (to the grieving one) / इदम् (these) / वचः (words)","verseType":"narrative","insight":"It shifts the mind from emotional paralysis to receiving guidance.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"grounding","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

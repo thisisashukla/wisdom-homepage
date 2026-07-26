@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-18_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-18_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-18.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-18.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":18,"order":251,"sanskrit":"यदा विनियतं चित्तमात्मन्येवावतिष्ठते । निःस्पृहः सर्वकामेभ्यो युक्त इत्युच्यते तदा ॥","hindiTranslation":"वशमें किया हुआ चित्त जिस कालमें अपने स्वरूपमें ही स्थित हो जाता है और स्वयं सम्पूर्ण पदार्थोंसे निःस्पृह हो जाता है, उस कालमें वह योगी है  ऐसा कहा जाता है ॥","englishTranslation":"When the controlled mind rests in the true self alone and is free from craving for all pleasures, that person is called united in yoga.","essence":"Yoga begins when craving loses its grip and the mind comes home.","speaker":"Krishna","deity":"","tags":["dhyana","manas","vairagya","chitta","atman"],"simpleMeaning":"A person is truly steady in yoga when the mind settles into the true self and no longer chases every desire.","simpleInsight":"There is relief in not needing every craving to be answered.","detailedMeaning":"On the battlefield, Arjuna is frozen, and Krishna is teaching the method of inner mastery. After describing balanced habits, Krishna names the real sign of yoga: a mind that has come home to the true self and no longer runs after desire.","modernRelevance":"You finally close the laptop after midnight, but your mind keeps reaching for one more reply, one more check, one more fix. Peace begins when the chasing stops.","translationLiteral":"यदा (when) / विनियतं (well-controlled) / चित्तम् (mind) / आत्मनि (in the true self) / एव (alone) / अवतिष्ठते (rests) / निःस्पृहः (free from craving) / सर्वकामेभ्यः (from all desires) / युक्तः (united, disciplined) / इति (thus) / उच्यते (is called) / तदा (then)","verseType":"teaching","insight":"It shifts attention from managing impulses to recognizing the mind’s settled state.","quoteVariants":[{"format":"card","text":"The controlled mind rests in the true self. Craving falls away."},{"format":"widget","text":"Mind rests. Wanting ends."},{"format":"notification","text":"The mind is quiet when wanting is gone."},{"format":"lockscreen","text":"Rest in the true self. Release wanting."}],"requisiteConcepts":["Manas","Chitta","Atman","Vairagya","Yoga"],"category":"philosophical","tone":"calming","targetAudience":["students","professionals","general"],"nodeId":"stillness","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_17-27_json";
+exports.ids = ["_rsc_src_content_gita_verses_17-27_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/17-27.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/17-27.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":17,"verse":27,"order":622,"sanskrit":"यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते । कर्म चैव तदर्थीयं सदित्येवाभिधीयते ॥","hindiTranslation":"यज्ञ, तप और दानरूप क्रियामें जो स्थिति निष्ठा है, वह भी सत्  ऐसे कही जाती है और उस परमात्माके निमित्त किया जानेवाला कर्म भी सत्  ऐसा ही कहा जाता है ॥","englishTranslation":"Steadfastness in sacrifice, austerity, and giving is called sat. Action done for that purpose is also called sat.","essence":"Steady offering makes ordinary action sacred.","speaker":"Krishna","deity":"","tags":["shraddha","sat","yajna","tapas","dana"],"simpleMeaning":"Steady dedication in sacrifice, disciplined effort, and giving is called sat. Any action done for that sacred purpose is also called sat.","simpleInsight":"Your effort becomes meaningful when it is steady and offered with sincerity.","detailedMeaning":"On the battlefield, Arjuna is still frozen while Krishna explains the quality of true offering. In this verse, Krishna says that steadfastness in sacrifice, austerity, and giving is itself sacred, and so is any action done for that higher purpose.","modernRelevance":"You keep showing up for a hard promise no one can verify: caring for a parent, finishing a repair, telling the truth. The steadiness itself gives the act its worth.","translationLiteral":"यज्ञे (in sacrifice) / तपसि (in austerity) / दाने (in giving) / च (and) / स्थितिः (steadfastness) / सत् (sat) / इति (thus) / च (and) / उच्यते (is called) । कर्म (action) / च (and) / एव (indeed) / तत्-अर्थीयं (for that purpose) / सत् (sat) / इति (thus) / एव (indeed) / अभिधीयते (is called)","verseType":"teaching","insight":"It shifts attention from the size of the act to the steadiness and intention behind it.","quoteVariants":[{"format":"card","text":"Steadfast sacrifice, austerity, and giving are called sat. So is action offered for that."},{"format":"widget","text":"Steadfast action is sat."},{"format":"notification","text":"What you offer steadily is already sacred."},{"format":"lockscreen","text":"Offer steadily. That is sat."}],"requisiteConcepts":["Shraddha","Dharma"],"category":"devotional","tone":"devotional","targetAudience":["general","parents","professionals"],"nodeId":"trust","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

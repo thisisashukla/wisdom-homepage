@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-22_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-22_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-22.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-22.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":22,"order":184,"sanskrit":"यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥","hindiTranslation":"जो कर्मयोगी फल की इच्छा के बिना, अपनेआप जो कुछ मिल जाय, उसमें सन्तुष्ट रहता है और जो ईर्ष्यासे रहित, द्वन्द्वोंसे अतीत तथा सिद्धि और असिद्धिमें सम है, वह कर्म करते हुए भी उससे नहीं बँधता ॥","englishTranslation":"Content with whatever comes by itself, beyond opposites, free from envy, equal in success and failure, such a person is not bound even while acting.","essence":"Equal-minded action leaves no hook for bondage.","speaker":"Krishna","deity":"","tags":["karma-yoga","vairagya","samatva","envy","success-failure"],"simpleMeaning":"A person who is satisfied with whatever comes naturally, stays calm through ups and downs, and does not envy others remains free even while working.","simpleInsight":"Freedom grows when success and failure stop controlling your mood.","detailedMeaning":"On Kurukshetra, Arjuna is frozen by the weight of consequences. Krishna keeps refining karma yoga: act, but do not let gain, loss, praise, or envy chain the mind. This verse names the inner freedom that makes action clean.","modernRelevance":"You sent the message, waited, and saw the outcome go sideways. The old urge is to compare, resent, or replay everything. This verse says the work can stay yours without the emotional leash.","translationLiteral":"यदृच्छा-लाभ-सन्तुष्टः (content with spontaneous gain) / द्वन्द्व-अतीतः (beyond pairs of opposites) / विमत्सरः (free from envy) / समः (equal) / सिद्धि-असिद्धौ (in success and failure) / च (and) / कृत्वा अपि (even while doing) / न (not) / निबध्यते (is bound)","verseType":"teaching","insight":"It shifts attention from chasing results to staying even-minded while acting.","quoteVariants":[{"format":"card","text":"Take what comes. Stay equal in success and failure. Action no longer binds."},{"format":"widget","text":"Content with what comes; untouched by outcomes."},{"format":"notification","text":"I can act fully and still remain free."},{"format":"lockscreen","text":"Act without craving. Stay equal."}],"requisiteConcepts":["Karma","Vairagya"],"category":"philosophical","tone":"grounding","targetAudience":["general","professionals","entrepreneurs"],"nodeId":"vairagya","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

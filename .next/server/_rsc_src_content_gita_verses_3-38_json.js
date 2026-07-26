@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-38_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-38_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-38.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-38.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":38,"order":157,"sanskrit":"धूमेनाव्रियते वह्निर्यथाऽऽदर्शो मलेन च । यथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम् ॥","hindiTranslation":"जैसे धुएँसे अग्नि और मैलसे दर्पण ढक जाता है तथा जैसे जेरसे गर्भ ढका रहता है, ऐसे ही उस कामके द्वारा यह ज्ञान  विवेक ढका हुआ है ॥","englishTranslation":"As fire is covered by smoke, a mirror by dust, and a womb by a membrane, so clear seeing is covered by desire.","essence":"Clear seeing is not destroyed; it is simply covered.","speaker":"Krishna","deity":"","tags":["kama","viveka","avidya","rajas","inner-veiling"],"simpleMeaning":"Desire hides clear seeing just as smoke hides fire, dust hides a mirror, and a womb-covering hides an embryo.","simpleInsight":"The problem is not lack of intelligence. Something deeper is veiling what you already know.","detailedMeaning":"On Kurukshetra, Arjuna has asked why people do wrong even against their will. Krishna has named desire as the enemy, and now he shows how it works: it does not erase wisdom, it covers it, just as smoke, dust, and a womb-covering hide what is already there.","modernRelevance":"You know the right thing to say, but the message sits unopened while anger blurs your judgment. The clarity is still there; something is clouding it.","translationLiteral":"धूमेन (by smoke) / आव्रियते (is covered) / वह्निः (fire) / यथा (as) / आदर्शः (mirror) / मलेन (by dust) / च (and) / यथा (as) / उल्बेन (by a membrane/womb-covering) / आवृतः (covered) / गर्भः (womb/embryo) / तथा (so) / तेन (by that) / इदम् (this) / आवृतम् (is covered)","verseType":"metaphor","insight":"It shifts attention from searching for new answers to removing the obstruction already blocking clear judgment.","quoteVariants":[],"requisiteConcepts":["Kama","Viveka","Avidya"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

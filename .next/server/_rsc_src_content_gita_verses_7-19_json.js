@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-19_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-19_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-19.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/7-19.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":19,"order":299,"sanskrit":"बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते । वासुदेवः सर्वमिति स महात्मा सुदुर्लभः ॥","hindiTranslation":"बहुत जन्मोंके अन्तमें अर्थात् मनुष्यजन्ममें सब कुछ परमात्मा ही है, ऐसा जो ज्ञानवान् मेरे शरण होता है, वह महात्मा अत्यन्त दुर्लभ है ॥","englishTranslation":"After many births, the wise one surrenders to Me, knowing that Vasudeva is everything. Such a great soul is very rare.","essence":"Deep seeing ends in surrender to the one reality in all things.","speaker":"Krishna","deity":"Krishna","tags":["vasudeva","prapatti","mahात्मa","sarvam iti","jnana-bhakti"],"simpleMeaning":"Real understanding ripens over many lives. At its peak, a person sees that everything is the divine and naturally turns in surrender.","simpleInsight":"There is relief in not forcing faith; deep seeing itself becomes surrender.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna stands frozen while Krishna explains why some people truly know Him. After many births, rare wisdom matures into surrender: the person sees Vasudeva in all things and comes home to Krishna.","modernRelevance":"You keep searching for one more fix, one more answer, one more sign. Then a quiet certainty lands: nothing is separate, and the need to grasp begins to loosen.","translationLiteral":"बहूनाम् (of many) / जन्मनाम् (births) / अन्ते (at the end) / ज्ञानवान् (the wise one) / माम् (to Me) / प्रपद्यते (surrenders) / वासुदेवः (Vasudeva) / सर्वम् (everything) / इति (thus) / सः (that) / महात्मा (great soul) / सुदुर्लभः (very rare)","verseType":"declaration","insight":"It shifts the mind from fragmented seeking to whole-hearted surrender.","quoteVariants":[{"format":"card","text":"After many lives, wisdom bows to the divine. Everything is Vasudeva."},{"format":"widget","text":"All is Vasudeva. Surrender follows."},{"format":"notification","text":"Understanding ends in surrender: everything is the divine."},{"format":"lockscreen","text":"See everything as the divine."}],"requisiteConcepts":["Bhakti","Brahman","Shraddha"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

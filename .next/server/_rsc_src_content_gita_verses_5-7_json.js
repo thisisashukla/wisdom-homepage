@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_5-7_json";
+exports.ids = ["_rsc_src_content_gita_verses_5-7_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/5-7.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/5-7.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":5,"verse":7,"order":211,"sanskrit":"योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः । सर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते ॥","hindiTranslation":"जिसकी इन्द्रियाँ अपने वशमें हैं, जिसका अन्तःकरण निर्मल है, जिसका शरीर अपने वशमें है और सम्पूर्ण प्राणियोंकी आत्मा ही जिसकी आत्मा है, ऐसा कर्मयोगी कर्म करते हुए भी लिप्त नहीं होता ॥","englishTranslation":"A disciplined yogi, pure in mind, self-mastered, and senses conquered, sees the same self in all beings and is not tainted by action while acting.","essence":"Inner freedom lets action happen without leaving a trace.","speaker":"Krishna","deity":"","tags":["karma-sannyasa","jितendriya","manas-shuddhi","samyama","nonattachment"],"simpleMeaning":"A person grounded in yoga, with a pure mind and mastered senses, acts without being stained by action because they see the same self in all beings.","simpleInsight":"You can stay fully active without getting spiritually or emotionally contaminated by what you do.","detailedMeaning":"On the battlefield at Kurukshetra, Arjuna is still frozen between action and renunciation. Krishna explains that true renunciation is not escape, but inner mastery: a person who has purified the mind, controlled the senses, and sees one self in all beings can act without being bound.","modernRelevance":"You answer the message, attend the meeting, and still feel the pull to perform, impress, or defend yourself. This verse says the work can happen without the inner stain of grasping.","translationLiteral":"योगयुक्तः (joined in yoga) / विशुद्धात्मा (pure inner being) / विजितात्मा (self-mastered) / जितेन्द्रियः (senses conquered) / सर्वभूतात्मभूतात्मा (whose self has become the self of all beings) / कुर्वन् अपि (even while acting) / न (not) / लिप्यते (is stained, clings)","verseType":"teaching","insight":"It shifts action from self-protection to clear participation, so work happens without leaving a residue of clinging.","quoteVariants":[],"requisiteConcepts":["Yoga","Atman","Indriya","Manas"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","entrepreneurs"],"nodeId":"vairagya","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

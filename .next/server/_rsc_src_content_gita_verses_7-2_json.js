@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-2_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-2_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-2.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/7-2.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":2,"order":282,"sanskrit":"ज्ञानं तेऽहं सविज्ञानमिदं वक्ष्याम्यशेषतः । यज्ज्ञात्वा नेह भूयोऽन्यज्ज्ञातव्यमवशिष्यते ॥","hindiTranslation":"तेरे लिये मैं विज्ञानसहित ज्ञान सम्पूर्णतासे कहूँगा, जिसको जाननेके बाद फिर यहाँ कुछ भी जानना बाकी नहीं रहेगा ॥","englishTranslation":"I will reveal to you knowledge together with direct realization in full. Knowing that, nothing more remains to be known here.","essence":"Real knowing leaves no unfinished hunger for more.","speaker":"Krishna","deity":"","tags":["jnana","vijnana","complete_knowledge","chapter7","krishna_teaching"],"simpleMeaning":"Krishna promises to explain both understanding and direct realization completely, so that after grasping it, nothing else needs to be learned about the matter.","simpleInsight":"There is relief in a truth that ends restless searching.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna has lowered his bow and Krishna begins the deepest teaching of Chapter 7. After saying he will reveal himself fully, Krishna promises a knowledge so complete that it leaves no remainder for doubt.","modernRelevance":"You finally ask the question you have avoided for years: whether to stay in the safe job, leave the relationship, or tell the truth. A real answer ends the spinning.","translationLiteral":"ज्ञानम् (knowledge) / ते (to you) / अहम् (I) / सविज्ञानम् (with realization) / इदम् (this) / वक्ष्यामि (will speak) / अशेषतः (completely) / यत् (which) / ज्ञात्वा (having known) / न (not) / इह (here) / भूयः (again) / अन्यत् (other) / ज्ञातव्यम् (to be known) / अवशिष्यते (remains)","verseType":"declaration","insight":"It shifts the mind from endless partial answers to a truth that settles the whole search.","quoteVariants":[{"format":"card","text":"Know this fully. Nothing else remains once it is seen."},{"format":"widget","text":"Know it fully. Nothing remains."},{"format":"notification","text":"Once this is known, the search ends."},{"format":"lockscreen","text":"Know fully. Nothing else remains."}],"requisiteConcepts":["Jnana","Vijnana"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

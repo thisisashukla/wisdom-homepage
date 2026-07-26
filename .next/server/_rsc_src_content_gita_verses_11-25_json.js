@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-25_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-25_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-25.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-25.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":25,"order":439,"sanskrit":"दंष्ट्राकरालानि च ते मुखानिदृष्ट्वैव कालानलसन्निभानि । दिशो न जाने न लभे च शर्मप्रसीद देवेश जगन्निवास ॥","hindiTranslation":"आपके प्रलयकालकी अग्निके समान प्रज्वलित और दाढ़ोंके कारण विकराल भयानक मुखोंको देखकर मुझे न तो दिशाओंका ज्ञान हो रहा है और न शान्ति ही मिल रही है ।  इसलिये हे देवेश  हे जगन्निवास  आप प्रसन्न होइये ॥","englishTranslation":"Seeing your flaming, terrible mouths with their fangs, I can no longer find directions or peace. Be gracious, Lord of the divine beings, dwelling place of the world.","essence":"True awe ends control and turns the heart toward surrender.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna","surrender","awe","cosmic-form"],"simpleMeaning":"Arjuna is overwhelmed by Krishna\'s terrifying cosmic form. He cannot orient himself or find peace, and he begs Krishna to soften and show mercy.","simpleInsight":"Overwhelming power can break the mind open into humility and plea.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is still looking at Krishna\'s cosmic form. The many fanged mouths blaze like destruction itself, and Arjuna loses all sense of direction and calm. This cry comes from fear, awe, and surrender.","modernRelevance":"You open a message and realize your words have already changed everything. For a second, you cannot tell what to do next. That stunned silence is where this verse lives.","translationLiteral":"दंष्ट्राकरालानि (terrible with fangs) / च (and) / ते (your) / मुखानि (mouths) / दृष्ट्वा (having seen) / एव (indeed) / कालानलसन्निभानि (resembling the fire of destruction) / दिशः (directions) / न (not) / जाने (I know) / न (not) / लभे (I find) / च (and) / शर्म (peace) / प्रसीद (be gracious) / देवेश (Lord of the divine beings) / जगन्निवास (dwelling place of the world)","verseType":"devotional","insight":"It shifts the mind from control to surrender when the scale of reality becomes too large to manage.","quoteVariants":[],"requisiteConcepts":["Bhakti","Vishwarupa"],"category":"devotional","tone":"devotional","targetAudience":["general"],"nodeId":"surrender","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-13_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-13_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-13.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/7-13.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":13,"order":293,"sanskrit":"त्रिभिर्गुणमयैर्भावैरेभिः सर्वमिदं जगत् । मोहितं नाभिजानाति मामेभ्यः परमव्ययम् ॥","hindiTranslation":"किन्तु  इन तीनों गुणरूप भावोंसे मोहित यह सब जगत् इन गुणोंसे अतीत अविनाशी मुझे नहीं जानता ॥","englishTranslation":"Deluded by these three qualities, the whole world does not know me, who am beyond them and imperishable.","essence":"Three qualities can hide the imperishable reality from plain sight.","speaker":"Krishna","deity":"Krishna","tags":["triguna","maya","avyaya","jnana-vijnana","perception"],"simpleMeaning":"The whole world gets confused by the three qualities of nature and fails to recognize Krishna as the imperishable reality beyond them.","simpleInsight":"It feels freeing to know confusion is not failure; it is a veil that can be lifted.","detailedMeaning":"Krishna is still speaking to Arjuna on the battlefield, where fear and doubt have frozen action. After explaining that all moods and qualities arise from him, he now says the world stays trapped inside them and cannot recognize what is beyond change.","modernRelevance":"You are certain a person is being difficult, but your own anger is coloring every word they say. This verse points to the hidden filter that keeps reality from being seen clearly.","translationLiteral":"त्रिभिः (by three) / गुणमयैः (made of qualities) / भावैः (states) / एभिः (by these) / सर्वम् (all) / इदम् (this) / जगत् (world) / मोहितम् (deluded) / न (not) / अभिजानाति (knows) / माम् (me) / एभ्यः (from these) / परम् (beyond) / अव्ययम् (imperishable)","verseType":"teaching","insight":"It shifts the mind from reacting inside appearances to asking what lies beyond them.","quoteVariants":[{"format":"card","text":"The world is dazzled by the three qualities. It misses the imperishable beyond them."},{"format":"widget","text":"Three qualities blind. The beyond remains unseen."},{"format":"notification","text":"What you see is shaped by the three qualities."},{"format":"lockscreen","text":"See beyond the three qualities."}],"requisiteConcepts":["triguna","maya","avyaya"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

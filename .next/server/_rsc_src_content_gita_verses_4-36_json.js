@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-36_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-36_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-36.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-36.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":36,"order":198,"sanskrit":"अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः । सर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि ॥","hindiTranslation":"अगर तू सब पापियोंसे भी अधिक पापी है, तो भी तू ज्ञानरूपी नौकाके द्वारा निःसन्देह सम्पूर्ण पापसमुद्रसे अच्छी तरह तर जायगा ॥","englishTranslation":"Even if you are the worst of wrongdoers, you will cross all wrongdoing by the raft of knowledge alone.","essence":"Clear understanding can carry even the heaviest past across.","speaker":"Krishna","deity":"","tags":["jnana","papa","papa-krita","knowledge","transformation"],"simpleMeaning":"Even if someone has done terrible things, clear understanding can still carry them beyond the whole burden of wrongdoing.","simpleInsight":"There is relief in knowing your worst history does not have the final word.","detailedMeaning":"On the battlefield, Arjuna is frozen by guilt and confusion. Krishna keeps teaching him that knowledge changes everything: even someone burdened by the worst wrongdoing can cross over it. The next verse shows that this knowledge burns action itself.","modernRelevance":"You replay the mistake in your head after the argument, the lie, the betrayal. Krishna says the mind can stop circling the wound: clear understanding can still carry you through.","translationLiteral":"अपि (even) / चेदसि (even if you are) / पापेभ्यः (than wrongdoers) / सर्वेभ्यः (all) / पापकृत्तमः (most sinful) / सर्वम् (all) / ज्ञानप्लवेन (by the raft of knowledge) / एव (alone) / वृजिनम् (wrongdoing / trouble) / सन्तरिष्यसि (you will cross over)","verseType":"declaration","insight":"It shifts the mind from self-condemnation to transformation through clear seeing.","quoteVariants":[{"format":"card","text":"No past is too heavy for clear understanding. Knowledge carries you across."},{"format":"widget","text":"Knowledge carries you across."},{"format":"notification","text":"Even the worst past can be crossed by understanding."},{"format":"lockscreen","text":"Let understanding carry you across."}],"requisiteConcepts":["Vidya","Karma"],"category":"philosophical","tone":"expansive","targetAudience":["general","students"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-36_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-36_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-36.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-36.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":36,"order":155,"sanskrit":"अर्जुन उवाचअथ केन प्रयुक्तोऽयं पापं चरति पूरुषः । अनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः ॥","hindiTranslation":"अर्जुन बोले  हे वार्ष्णेय  फिर यह मनुष्य न चाहता हुआ भी जबर्दस्ती लगाये हुएकी तरह किससे प्रेरित होकर पापका आचरण करता है ॥","englishTranslation":"Arjuna said: O descendant of the Vrishni clan, what drives a person to commit wrongdoing, even unwillingly, as if forced?","essence":"Compulsion has a cause, and Arjuna wants to name it.","speaker":"Arjuna","deity":"","tags":["inner conflict","compulsion","arjuna-question","moral struggle","rajas"],"simpleMeaning":"Arjuna asks what makes a person do wrong even when they do not want to, as if some force is pushing them.","simpleInsight":"It gives language to the strange moment when you feel split between intention and action.","detailedMeaning":"On Kurukshetra, Arjuna has already been told to rise above attachment and follow his duty. Instead of accepting the teaching, he turns to Krishna with a deeper question: what power makes people act against their own will?","modernRelevance":"You promise yourself you will not send that text, open that tab, or say that cutting remark. Then you do it anyway. The question is no longer moral blame — it is: what is driving me?","translationLiteral":"अर्जुन उवाच (Arjuna said) / अथ (then) / केन (by what) / प्रयुक्तः (impelled) / अयम् (this) / पापम् (wrongdoing) / चरति (does) / पूरुषः (person) / अनिच्छन् (not desiring) / अपि (even) / वार्ष्णेय (O descendant of the Vrishni clan) / बलात् (by force) / इव (as if) / नियोजितः (appointed / driven) ॥","verseType":"inquiry","insight":"It shifts attention from self-blame to investigating the hidden force behind compulsive action.","quoteVariants":[{"format":"card","text":"What force makes a person do wrong against their will?"},{"format":"widget","text":"What drives unwilling wrongdoing?"},{"format":"notification","text":"Why do I do what I do not want?"},{"format":"lockscreen","text":"Name the force behind wrongdoing."}],"requisiteConcepts":["rajas"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"inquiry","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-6_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-6_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-6.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/11-6.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":6,"order":420,"sanskrit":"पश्यादित्यान्वसून्रुद्रानश्िवनौ मरुतस्तथा । बहून्यदृष्टपूर्वाणि पश्याऽश्चर्याणि भारत ॥","hindiTranslation":"हे भरतवंशोद्भव अर्जुन तू बारह आदित्योंको, आठ वसुओंको, ग्यारह रुद्रोंको और दो अश्विनीकुमारोंको तथा उनचास मरुद्गणोंको देख ।  जिनको तूने पहले कभी देखा नहीं, ऐसे बहुतसे आश्चर्यजनक रूपोंको भी तू देख ॥","englishTranslation":"See the twelve Adityas, the eight Vasus, the eleven Rudras, the two Ashvins, and the forty-nine Maruts. See many wonders never seen before, O Bharata.","essence":"The familiar universe is only a small part of what Krishna reveals.","speaker":"Krishna","deity":"Krishna","tags":["vishvarupa","adityas","rudras","ashvins","maruts"],"simpleMeaning":"Krishna invites Arjuna to see the cosmic form’s many divine beings and wonders, beyond anything he has seen before.","simpleInsight":"A wider reality is already present; fear shrinks when the mind can hold more than one familiar shape.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has asked to see Krishna’s immeasurable form. Krishna begins unveiling it by pointing out radiant beings and astonishing forms within himself. This verse expands Arjuna’s vision before the full cosmic revelation.","modernRelevance":"You think one conversation will define everything, then the room opens and you realize there are larger forces, larger patterns, and more than one way to understand what is happening.","translationLiteral":"पश्य (see) / आदित्यान् (the Adityas) / वसून् (the Vasus) / रुद्रान् (the Rudras) / अश्विनौ (the two Ashvins) / मरुतः (the Maruts) / तथा (and) / बहूनि (many) / अदृष्टपूर्वाणि (never-seen-before) / पश्य (see) / आश्चर्याणि (wonders) / भारत (O Bharata)","verseType":"teaching","insight":"It trains the mind to widen its frame before it judges what is in front of it.","quoteVariants":[],"requisiteConcepts":["Vishwarupa"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

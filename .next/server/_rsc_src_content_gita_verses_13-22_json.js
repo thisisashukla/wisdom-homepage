@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-22_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-22_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-22.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/13-22.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":22,"order":511,"sanskrit":"पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान् । कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु ॥","hindiTranslation":"प्रकृतिमें स्थित पुरुष ही प्रकृतिजन्य गुणोंका भोक्ता बनता है और गुणोंका सङ्ग ही उसके ऊँचनीच योनियोंमें जन्म लेनेका कारण बनता है ॥","englishTranslation":"The inner being, situated in nature, experiences the qualities born of nature. Attachment to those qualities causes birth in good and bad wombs.","essence":"Attachment to changing qualities keeps the cycle of birth going.","speaker":"Krishna","deity":"","tags":["prakriti","gunas","gुणसंग","punarjanma","kshetrajna"],"simpleMeaning":"The inner being, while tied to nature, experiences its changing qualities. Clinging to those qualities is what leads to repeated births in favorable and unfavorable forms.","simpleInsight":"What traps you is not experience itself, but your attachment to its changing moods and pulls.","detailedMeaning":"On the battlefield, Arjuna is frozen, and Krishna is explaining why suffering repeats. The inner being, caught in nature, tastes its changing qualities; that same attachment becomes the cause of future births in better or worse conditions.","modernRelevance":"You keep replaying the same argument in your head after the call ends. The event is over, but your attachment to its emotional charge keeps pulling you back.","translationLiteral":"पुरुषः (the inner being) / प्रकृतिस्थः (situated in nature) / हि (indeed) / भुङ्क्ते (experiences) / प्रकृतिजान् (born of nature) / गुणान् (qualities) / कारणम् (cause) / गुणसङ्गः (attachment to qualities) / अस्य (of this) / सत्-असत् (good and bad) / योनि-जन्मसु (in womb-births)","verseType":"teaching","insight":"It shifts attention from the event to the attachment that keeps the cycle going.","quoteVariants":[],"requisiteConcepts":["Prakriti","Purusha","gunas"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"vairagya","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

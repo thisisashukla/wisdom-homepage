@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-33_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-33_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-33.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-33.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":33,"order":447,"sanskrit":"तस्मात्त्वमुत्तिष्ठ यशो लभस्वजित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम् । मयैवैते निहताः पूर्वमेवनिमित्तमात्रं भव सव्यसाचिन् ॥","hindiTranslation":"इसलिये तुम युद्धके लिये खड़े हो जाओ और यशको प्राप्त करो तथा शत्रुओंको जीतकर धनधान्यसे सम्पन्न राज्यको भोगो ।  ये सभी मेरे द्वारा पहलेसे ही मारे हुए हैं ।  हे सव्यसाचिन्  तुम निमित्तमात्र बन जाओ ॥","englishTranslation":"Therefore, rise and win fame. Conquer your enemies and enjoy a prosperous kingdom. They have already been slain by me; become only the instrument, Arjuna.","essence":"Act fully, but let the larger order carry the result.","speaker":"Krishna","deity":"Krishna","tags":["nimitta","sharanagati","kurukshetra","vishwarupa","karma-yoga"],"simpleMeaning":"Krishna tells Arjuna to stand up, fight, and claim the kingdom, but without ego. The enemies are already defeated in the larger order; Arjuna must only act as the instrument.","simpleInsight":"You can move with full force without carrying the burden of control.","detailedMeaning":"On Kurukshetra, Arjuna stands frozen while the cosmic form reveals the war’s outcome. Krishna now turns that vision into action: Arjuna must rise, fight, and reclaim the kingdom, but without claiming authorship of the result.","modernRelevance":"You’re about to send the message that will change a family forever, and your hands shake. This verse says: do the necessary act cleanly, without pretending you control everything it will unleash.","translationLiteral":"तस्मात् (therefore) / त्वम् (you) / उत्तिष्ठ (rise) / यशः (fame) / लभस्व (gain) / जित्वा (having conquered) / शत्रून् (enemies) / भुङ्क्ष्व (enjoy) / राज्यं (kingdom) / समृद्धम् (prosperous) / मया (by me) / एव (indeed) / एते (these) / निहताः (slain) / पूर्वम् (already) / एव (indeed) / निमित्तमात्रम् (mere instrument) / भव (become) / सव्यसाचिन् (Arjuna)","verseType":"declaration","insight":"It shifts action from self-importance to right participation in what is already unfolding.","quoteVariants":[{"format":"card","text":"Rise and act. The victory is already mine."},{"format":"widget","text":"Rise. Be the instrument."},{"format":"notification","text":"The outcome is settled; your role is to move."},{"format":"lockscreen","text":"Rise. Serve the task. Release control."}],"requisiteConcepts":["Bhakti","Karma","Sharanagati"],"category":"devotional","tone":"devotional","targetAudience":["general","entrepreneurs","students"],"nodeId":"surrender","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

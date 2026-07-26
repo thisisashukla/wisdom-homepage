@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-29_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-29_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-29.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-29.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":29,"order":367,"sanskrit":"समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः । ये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम् ॥","hindiTranslation":"मैं सम्पूर्ण प्राणियोंमें समान हूँ ।  उन प्राणियोंमें न तो कोई मेरा द्वेषी है और न कोई प्रिय है ।  परन्तु जो भक्तिपूर्वक मेरा भजन करते हैं, वे मेरेमें हैं और मैं उनमें हूँ ॥","englishTranslation":"I am equal toward all beings. No one is hated by me, and no one is especially dear. But those who worship me with devotion dwell in me, and I dwell in them.","essence":"Equality is universal; intimacy is born through devotion.","speaker":"Krishna","deity":"Krishna","tags":["bhakti","samatva","mutual-indwelling","krishna-presence","devotional-intimacy"],"simpleMeaning":"The divine is not partial or biased. Everyone is met equally, but loving devotion creates a living closeness between the divine and the devotee.","simpleInsight":"You do not have to earn basic worth; devotion changes distance into intimacy.","detailedMeaning":"Krishna is still speaking on the battlefield to Arjuna, after teaching him to offer every action to the divine. Now he clarifies a subtle point: divine presence is equal everywhere, yet sincere devotion creates a mutual indwelling that transforms relationship.","modernRelevance":"You send the message, then wait for the reply that might never come. This verse says the deepest presence is not bought by approval; it grows where devotion is real.","translationLiteral":"समः (equal) / अहम् (I) / सर्वभूतेषु (toward all beings) / न (not) / मे (to me) / द्वेष्यः (hated one) / अस्ति (is) / न (not) / प्रियः (dear one) / ये (those who) / भजन्ति (worship) / तु (but) / माम् (me) / भक्त्या (with devotion) / मयि (in me) / ते (they) / तेषु (in them) / च (and) / अपि (also) / अहम् (I)","verseType":"declaration","insight":"It shifts the mind from trying to impress the divine to entering a relationship of mutual presence.","quoteVariants":[{"format":"card","text":"I hold all beings equally. Devotion makes you dwell in me, and me in you."},{"format":"widget","text":"Equal to all. Near to the devoted."},{"format":"notification","text":"No one is farther from me than anyone else."},{"format":"lockscreen","text":"Devotion draws me into you."}],"requisiteConcepts":["Bhakti"],"category":"devotional","tone":"devotional","targetAudience":["general","students","couples"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

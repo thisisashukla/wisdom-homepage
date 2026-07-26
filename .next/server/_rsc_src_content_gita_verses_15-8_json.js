@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-8_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-8_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-8.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/15-8.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":8,"order":559,"sanskrit":"शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः । गृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात् ॥","hindiTranslation":"जैसे वायु गन्धके स्थानसे गन्धको ग्रहण करके ले जाती है, ऐसे ही शरीरादिका स्वामी बना हुआ जीवात्मा भी जिस शरीरको छोड़ता है, वहाँसे मनसहित इन्द्रियोंको ग्रहण करके फिर जिस शरीरको प्राप्त होता है, उसमें चला जाता है ॥","englishTranslation":"Just as the wind carries fragrance from its source, the embodied being carries the mind and senses into a new body.","essence":"The body changes, but the carried pattern moves on.","speaker":"Krishna","deity":"","tags":["punarjanma","manas","indriya","dehantara","atma-gati"],"simpleMeaning":"The embodied being leaves one body and enters another, carrying the mind and senses along, just as wind carries scent.","simpleInsight":"What moves on is not a fixed personality, but the whole pattern of mind and sense that clings to experience.","detailedMeaning":"On Kurukshetra, while Arjuna is frozen and Krishna is explaining what truly moves through life and death, the teaching turns subtle. The embodied being does not simply vanish; it carries the mind and senses onward, like wind carrying fragrance from one place to another.","modernRelevance":"You leave a job, a city, or a relationship, and the same habits travel with you. The outer setting changes fast; the inner pattern arrives first.","translationLiteral":"शरीरम् (body) / यत् (which) / अवाप्नोति (attains) / यत् (which) / च अपि (and also) / उत्क्रामति (leaves) / ईश्वरः (the lord) / गृहीत्वा (having taken) / एतानि (these) / संयाति (goes forth) / वायुः (wind) / गन्धान् (fragrances) / इव (like) / आशयात् (from a source)","verseType":"teaching","insight":"It shifts attention from the body as the whole self to the carried pattern of mind and senses.","quoteVariants":[],"requisiteConcepts":["manas","indriya","prakriti"],"category":"philosophical","tone":"reflective","targetAudience":["students","general"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-16_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-16_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-16.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/13-16.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":16,"order":505,"sanskrit":"बहिरन्तश्च भूतानामचरं चरमेव च । सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् ॥","hindiTranslation":"वे परमात्मा सम्पूर्ण प्राणियोंके बाहरभीतर परिपूर्ण हैं और चरअचर प्राणियोंके रूपमें भी वे ही हैं एवं दूरसेदूर तथा नजदीकसेनजदीक भी वे ही हैं ।  वे अत्यन्त सूक्ष्म होनेसे जाननेका विषय नहीं हैं ॥","englishTranslation":"The supreme reality is inside and outside all beings, moving and unmoving. Because it is subtle, it cannot be known; it is far away and near at hand.","essence":"What seems distant is already within everything.","speaker":"Krishna","deity":"","tags":["antaryamin","sarvavyapi","sukshma","bhutanam","paratva"],"simpleMeaning":"The supreme reality fills everything, inside and outside all beings. It is both moving and still, yet too subtle to grasp directly. It feels far away and also very near.","simpleInsight":"Closeness and distance are both misleading when reality is subtler than the senses.","detailedMeaning":"On Kurukshetra, while Arjuna stands frozen between two armies, Krishna keeps unfolding the nature of what truly pervades existence. After describing it as beyond senses, he now says it is inside and outside all beings, moving and unmoving, near and far.","modernRelevance":"You can sit in a crowded train and still feel utterly cut off, or sit alone and feel deeply held. This verse points to a presence that is closer than your own searching.","translationLiteral":"बहिः (outside) / अन्तः (inside) / च (and) / भूतानाम् (of beings) / अचरम् (unmoving) / चरम् (moving) / एव (indeed) / च (and) / सूक्ष्मत्वात् (because of subtlety) / तत् (that) / अविज्ञेयम् (not knowable) / दूरस्थम् (far away) / च (and) / अन्तिके (near) / च (and) / तत् (that)","verseType":"teaching","insight":"It shifts attention from physical distance to direct recognition of what is already present.","quoteVariants":[],"requisiteConcepts":["Brahman","Maya","Purusha"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

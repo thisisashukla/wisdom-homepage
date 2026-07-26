@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-15_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-15_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-15.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-15.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":15,"order":248,"sanskrit":"युञ्जन्नेवं सदाऽऽत्मानं योगी नियतमानसः । शान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति ॥","hindiTranslation":"नियत मनवाला योगी मनको इस तरहसे सदा परमात्मामें लगाता हुआ मेरेमें सम्यक् स्थितिवाली जो निर्वाणपरमा शान्ति है, उसको प्राप्त हो जाता है ॥","englishTranslation":"The disciplined yogi, always uniting the mind in this way, attains the supreme peace of freedom rooted in Me.","essence":"A steady mind reaches the peace that restlessness can never touch.","speaker":"Krishna","deity":"","tags":["dhyana","manas","nirvana","yoga","mental-discipline"],"simpleMeaning":"A steady yogi keeps the mind gathered and focused, and reaches the highest peace rooted in the divine presence.","simpleInsight":"Stillness is not found by escaping life, but by training the mind to rest in one place.","detailedMeaning":"On the battlefield, Arjuna is being taught how to sit, breathe, and gather the mind without wavering. Krishna now names the result of that practice: a mind held steadily in yoga reaches the highest peace, the calm that ends inner disturbance.","modernRelevance":"You close the laptop after an argument and your mind keeps replaying every line. The body is still, but the mind keeps running. This verse points to the deeper quiet that comes only when attention is trained.","translationLiteral":"युञ्जन् (uniting) / एवम् (thus) / सदा (always) / आत्मानम् (the inner self) / योगी (the yogi) / नियत-मानसः (with a disciplined mind) / शान्तिम् (peace) / निर्वाण-परमाम् (supreme freedom) / मत्-संस्थाम् (rooted in Me) / अधिगच्छति (attains)","verseType":"teaching","insight":"It shifts attention from chasing relief to building a mind that can actually hold peace.","quoteVariants":[{"format":"card","text":"Keep the mind united. Supreme peace comes."},{"format":"widget","text":"Unite the mind. Enter peace."},{"format":"notification","text":"A disciplined mind reaches the quiet beyond striving."},{"format":"lockscreen","text":"Hold the mind steady. Peace arrives."}],"requisiteConcepts":["manas","yoga","nirvana"],"category":"philosophical","tone":"calming","targetAudience":["students","professionals","general"],"nodeId":"stillness","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

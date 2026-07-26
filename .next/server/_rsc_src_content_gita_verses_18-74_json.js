@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-74_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-74_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-74.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-74.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":74,"order":697,"sanskrit":"सञ्जय उवाचइत्यहं वासुदेवस्य पार्थस्य च महात्मनः । संवादमिममश्रौषमद्भुतं रोमहर्षणम् ॥","hindiTranslation":"सञ्जय बोले  इस प्रकार मैंने भगवान् वासुदेव और महात्मा पृथानन्दन अर्जुनका यह रोमाञ्चित करनेवाला अद्भुत संवाद सुना ॥","englishTranslation":"Sanjaya said: Thus I heard this wondrous, hair-raising dialogue between Vasudeva and the great-souled Partha.","essence":"A true dialogue can leave the listener shaken and changed.","speaker":"Sanjaya","deity":"","tags":["sanjaya","dialogue","kurukshetra","arjuna","vasudeva"],"simpleMeaning":"Sanjaya closes by saying he heard this astonishing exchange between Krishna and Arjuna.","simpleInsight":"Some truths arrive as living experience, not secondhand theory.","detailedMeaning":"The war is still paused on Kurukshetra. Arjuna has just regained clarity, and Krishna’s teaching is complete. Sanjaya ends by telling Dhritarashtra that he personally heard this extraordinary dialogue between Vasudeva and the great-souled Arjuna.","modernRelevance":"You sit in a silent car after a life-changing conversation, still feeling the words in your body. Some exchanges are not just heard; they rearrange you.","translationLiteral":"सञ्जय उवाच (Sanjaya said) / इति (thus) / अहम् (I) / वासुदेवस्य (of Vasudeva) / पार्थस्य (of Partha) / च (and) / महात्मनः (of the great-souled one) / संवादम् (dialogue) / इमम् (this) / अश्रौषम् (I heard) / अद्भुतम् (wonderful) / रोमहर्षणम् (hair-raising)","verseType":"narrative","insight":"It frames the Gita as a witnessed transformation, not a detached lecture.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"reflective","targetAudience":["general","students"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

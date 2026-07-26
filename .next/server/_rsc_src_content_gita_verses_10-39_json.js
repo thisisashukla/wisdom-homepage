@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-39_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-39_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-39.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/10-39.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":39,"order":411,"sanskrit":"यच्चापि सर्वभूतानां बीजं तदहमर्जुन । न तदस्ति विना यत्स्यान्मया भूतं चराचरम् ॥","hindiTranslation":"हे अर्जुन सम्पूर्ण प्राणियोंका जो बीज है, वह बीज मैं ही हूँ क्योंकि मेरे बिना कोई भी चरअचर प्राणी नहीं है अर्थात् चरअचर सब कुछ मैं ही हूँ ॥","englishTranslation":"Arjuna, I am the seed of all beings. Without me, nothing moving or unmoving could exist.","essence":"All existence grows from one hidden source.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","sarvabhuta","beej","krishna-omnipresence","moving-unmoving"],"simpleMeaning":"Krishna says he is the source of every being. Nothing that moves or stands still can exist without him.","simpleInsight":"You are never truly separate from the source of life.","detailedMeaning":"On Kurukshetra, with Arjuna still shaken and the battle waiting, Krishna keeps unfolding his divine presence. After naming his manifestations, he says he is the seed of all beings and the source of everything moving and unmoving.","modernRelevance":"Standing alone in a hospital corridor while waiting for news, it can feel like life has split into separate pieces. This verse says the same source runs through all of it.","translationLiteral":"यच्चापि (and whatever also) / सर्वभूतानाम् (of all beings) / बीजम् (seed) / तत् (that) / अहम् (I am) / अर्जुन (Arjuna) / न (not) / तत् (that) / अस्ति (there is) / विना (without) / यत् (which) / स्यात् (would be) / मया (by me) / भूतम् (being) / चराचरम् (moving and unmoving)","verseType":"declaration","insight":"It shifts the mind from seeing life as scattered events to seeing one living source behind all forms.","quoteVariants":[{"format":"card","text":"I am the seed in every being. Nothing exists apart from me."},{"format":"widget","text":"All life begins in me."},{"format":"notification","text":"Nothing living stands outside me."},{"format":"lockscreen","text":"All beings arise within me."}],"requisiteConcepts":["Vibhuti"],"category":"devotional","tone":"expansive","targetAudience":["general"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

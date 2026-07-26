@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-22_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-22_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-22.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/8-22.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":22,"order":332,"sanskrit":"पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया । यस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम् ॥","hindiTranslation":"हे पृथानन्दन अर्जुन  सम्पूर्ण प्राणी जिसके अन्तर्गत हैं और जिससे यह सम्पूर्ण संसार व्याप्त है, वह परम पुरुष परमात्मा तो अनन्यभक्तिसे प्राप्त होनेयोग्य है ॥","englishTranslation":"O Arjuna, the supreme person is reached through undivided devotion. All beings dwell within that being, and this entire world is pervaded by that being.","essence":"Undivided devotion reaches the one presence that holds all beings.","speaker":"Krishna","deity":"Krishna","tags":["ananyabhakti","parama-purusha","sarvabhuta","vyapti","bhakti-yoga"],"simpleMeaning":"The supreme person is reached through single-pointed devotion. That presence holds all beings within it and fills the whole world.","simpleInsight":"You are not reaching something distant; you are turning toward the presence already holding everything together.","detailedMeaning":"Arjuna stands shaken on the battlefield, and Krishna has just described the imperishable highest reality. Now he adds the heart of the path: that supreme person is not reached by divided effort, but by undivided devotion, because every being already rests within that presence.","modernRelevance":"You sit in your car after a painful phone call, knowing you must answer honestly. The courage comes easier when you remember the person you face is not separate from the whole web of life.","translationLiteral":"पुरुषः (person) / सः (that) / परः (supreme) / पार्थ (O Partha) / भक्त्या (through devotion) / लभ्यः (is attainable) / तु (indeed) / अनन्यया (undivided) / यस्य (whose) / अन्तःस्थानि (situated within) / भूतानि (beings) / येन (by whom) / सर्वम् (all) / इदम् (this) / ततम् (pervaded)","verseType":"teaching","insight":"It shifts devotion from private feeling to direct recognition of shared presence in all beings.","quoteVariants":[{"format":"card","text":"Undivided devotion reaches the supreme person. All beings live within that one."},{"format":"widget","text":"One devotion reaches the One who pervades all."},{"format":"notification","text":"Everything already rests in the one you seek."},{"format":"lockscreen","text":"Devotion reaches the one in all."}],"requisiteConcepts":["Bhakti","Purusha"],"category":"devotional","tone":"devotional","targetAudience":["general","students","couples"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

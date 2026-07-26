@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-31_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-31_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-31.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-31.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":31,"order":445,"sanskrit":"आख्याहि मे को भवानुग्ररूपोनमोऽस्तु ते देववर प्रसीद । विज्ञातुमिच्छामि भवन्तमाद्यंन हि प्रजानामि तव प्रवृत्तिम् ॥","hindiTranslation":"मुझे यह बताइये कि उग्ररूपवाले आप कौन हैं हे देवताओंमें श्रेष्ठ  आपको नमस्कार हो ।  आप प्रसन्न होइये ।  आदिरूप आपको मैं तत्त्वसे जानना चाहता हूँ क्योंकि मैं आपकी प्रवृत्तिको नहीं जानता ॥","englishTranslation":"Tell me who You are in this fierce form. Salutations to You, best of the radiant beings; be gracious. I wish to know You, the primal one, for I do not understand Your purpose.","essence":"Fear bows first, then asks to know what stands before it.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna","surrender","prayer","cosmic-form"],"simpleMeaning":"Arjuna bows in fear and asks Krishna to reveal who this terrible form is. He wants to understand the primal source behind the overwhelming vision.","simpleInsight":"Awe can become clarity when fear turns into honest asking.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has just seen Krishna\'s cosmic form devouring the armies. Overwhelmed, he stops resisting, bows, and asks the one question left: who is this fierce presence, and what is its purpose?","modernRelevance":"You are staring at a message that changes everything, and your first reaction is fear. Before you can act, you have to ask the honest question: what is really happening here?","translationLiteral":"आख्याहि (tell) / मे (to me) / कः (who) / भवान् (You are) / उग्र-रूपः (fierce-formed) / नमः अस्तु (salutations be) / ते (to You) / देव-वर (best of the radiant beings) / प्रसीद (be gracious) / विज्ञातुम् इच्छामि (I wish to know) / भवन्तम् (You) / आद्यम् (the primal one) / न हि (indeed not) / प्रजानामि (I know) / तव (Your) / प्रवृत्तिम् (purpose / action)","verseType":"inquiry","insight":"It shifts the mind from panic to reverent inquiry before judgment.","quoteVariants":[],"requisiteConcepts":["Vishwarupa"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

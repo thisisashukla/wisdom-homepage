@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-19_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-19_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-19.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/13-19.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":19,"order":508,"sanskrit":"इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः । मद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते ॥","hindiTranslation":"इस प्रकार क्षेत्र, ज्ञान और ज्ञेयको संक्षेपसे कहा गया ।  मेरा भक्त इसको तत्त्वसे जानकर मेरे भावको प्राप्त हो जाता है ॥","englishTranslation":"Thus, field, knowledge, and the knowable have been explained briefly. My devotee, understanding this, attains my state.","essence":"Clear understanding becomes transformation when devotion receives it.","speaker":"Krishna","deity":"","tags":["kshetra","kshetrajna","madbhava","bhakta","jnana"],"simpleMeaning":"Krishna summarizes the teaching on the body, knowledge, and the object of knowledge. He says that a devotee who truly understands this reaches his own state.","simpleInsight":"Real understanding is not just mental clarity; it deepens devotion and transforms who you become.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna is still frozen while Krishna finishes explaining the field, knowledge, and the knowable. This verse closes the teaching by saying that understanding these truths is not abstract — it leads the devotee into Krishna’s own state.","modernRelevance":"You finally understand a pattern in your relationships after years of repeating it. The insight matters, but the real shift is that you stop living from confusion and start living from alignment.","translationLiteral":"इति (thus) / क्षेत्रम् (the field) / तथा (and also) / ज्ञानम् (knowledge) / ज्ञेयम् (the knowable) / च (and) / उक्तम् (has been spoken) / समासतः (briefly) / मद्भक्तः (my devotee) / एतत् (this) / विज्ञाय (having known) / मद्भावाय (to my state) / उपपद्यते (attains)","verseType":"declaration","insight":"It turns understanding into a doorway: clear seeing becomes a change in identity and devotion.","quoteVariants":[{"format":"card","text":"Know the field and the knower. Devotion carries you into my being."},{"format":"widget","text":"Know field, knowing, and the known."},{"format":"notification","text":"Understanding this changes more than thought — it changes your being."},{"format":"lockscreen","text":"Know this. Enter my being."}],"requisiteConcepts":["Kshetra","Kshetrajna","Bhakta"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

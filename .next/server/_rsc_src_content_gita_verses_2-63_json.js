@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-63_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-63_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-63.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-63.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":63,"order":110,"sanskrit":"क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥","hindiTranslation":"विषयोंका चिन्तन करनेवाले मनुष्यकी उन विषयोंमें आसक्ति पैदा हो जाती है ।  आसक्तिसे कामना पैदा होती है ।  कामनासे क्रोध पैदा होता है ।  क्रोध होनेपर सम्मोह मूढ़भाव हो जाता है ।  सम्मोहसे स्मृति भ्रष्ट हो जाती है ।  स्मृति भ्रष्ट होनेपर बुद्धिका नाश हो जाता है ।  बुद्धिका नाश होनेपर मनुष्यका पतन हो जाता है ॥","englishTranslation":"From anger comes delusion; from delusion, confusion of memory; from confusion of memory, loss of discernment; from loss of discernment, ruin.","essence":"Anger first distorts seeing, then destroys the mind that should guide action.","speaker":"Krishna","deity":"","tags":["krodha","smrti","buddhi","delusion","self-control"],"simpleMeaning":"Anger starts a chain reaction: confusion, broken memory, lost judgment, and finally self-destruction.","simpleInsight":"You can feel the warning inside anger before it turns into damage.","detailedMeaning":"On Kurukshetra, Arjuna’s crisis is not only about battle but about what happens inside a mind under pressure. Krishna traces the inner collapse: anger leads to confusion, confusion erases memory, memory loss destroys discernment, and then a person falls.","modernRelevance":"You read one hostile message and your chest tightens. Within minutes, you forget what mattered, misread everything, and say the thing you’ll regret later.","translationLiteral":"क्रोधात् (from anger) / भवति (arises) / संमोहः (delusion) / संमोहात् (from delusion) / स्मृतिविभ्रमः (confusion of memory) / स्मृतिभ्रंशात् (from loss of memory) / बुद्धिनाशः (destruction of discernment) / बुद्धिनाशात् (from destruction of discernment) / प्रणश्यति (one is ruined)","verseType":"teaching","insight":"It teaches you to interrupt anger early, before it hijacks memory and judgment.","quoteVariants":[{"format":"card","text":"Anger clouds memory. When discernment falls, you fall with it."},{"format":"widget","text":"Anger breaks memory, then judgment."},{"format":"notification","text":"Anger didn’t just flare up; it erased my clear seeing."},{"format":"lockscreen","text":"Guard discernment before anger takes it."}],"requisiteConcepts":["buddhi","smrti"],"category":"philosophical","tone":"reflective","targetAudience":["general","professionals"],"nodeId":"equanimity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-7_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-7_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-7.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/7-7.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":7,"order":287,"sanskrit":"मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय । मयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव ॥","hindiTranslation":"हे धनञ्जय  मेरे बढ़कर इस जगत् का दूसरा कोई किञ्चिन्मात्र भी कारण नहीं है ।  जैसे सूतकी मणियाँ सूतके धागेमें पिरोयी हुई होती हैं, ऐसे ही यह सम्पूर्ण जगत् मेरेमें ही ओतप्रोत है ॥","englishTranslation":"O Dhananjaya, nothing exists higher than Me. All this world is strung on Me like pearls on a thread.","essence":"Everything is held in one sustaining reality.","speaker":"Krishna","deity":"Krishna","tags":["parama-prakriti","vibhuti","cosmic unity","krishna as support","thread and beads"],"simpleMeaning":"Krishna says nothing is greater than him, and the whole world is held together within him like beads on a string.","simpleInsight":"You can stop feeling cut off from life. What holds everything also holds you.","detailedMeaning":"On the battlefield, Arjuna is frozen and overwhelmed. Krishna has already explained the two levels of nature and now reveals the deepest claim: nothing is beyond him, and the entire world is woven through him. This shifts Arjuna from fear to a larger vision of reality.","modernRelevance":"You are staring at a hospital corridor, waiting for news that could change everything. The room feels isolated, but this verse says nothing is truly separate from the ground that holds it all.","translationLiteral":"मत्तः (than Me) / परतरं (higher) / न (not) / अन्यत् (other) / किञ्चिद् (anything) / अस्ति (exists) / धनञ्जय (O Dhananjaya) / मयि (in Me) / सर्वम् (all) / इदम् (this) / प्रोतम् (strung) / सूत्रे (on a thread) / मणिगणाः (clusters of gems) / इव (like)","verseType":"declaration","insight":"It shifts the mind from scattered fragments to a single sustaining presence beneath all experience.","quoteVariants":[{"format":"card","text":"Nothing stands above Me. The world rests in Me like gems on a thread."},{"format":"widget","text":"All rests in Me."},{"format":"notification","text":"Nothing is outside the one that holds everything together."},{"format":"lockscreen","text":"Everything hangs on the divine."}],"requisiteConcepts":["prakriti","bhagavan"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

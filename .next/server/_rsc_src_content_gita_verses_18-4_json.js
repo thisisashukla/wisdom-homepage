@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-4_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-4_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-4.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/18-4.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":4,"order":627,"sanskrit":"निश्चयं श्रृणु मे तत्र त्यागे भरतसत्तम । त्यागो हि पुरुषव्याघ्र त्रिविधः संप्रकीर्तितः ॥","hindiTranslation":"हे भरतवंशियोंमें श्रेष्ठ अर्जुन  तू संन्यास और त्याग  इन दोनोंमेंसे पहले त्यागके विषयमें मेरा निश्चय सुन क्योंकि हे पुरुषश्रेष्ठ  त्याग तीन प्रकारका कहा गया है ॥","englishTranslation":"Arjuna, first hear my settled view on renunciation. Renunciation is said to be threefold.","essence":"Renunciation is not one thing; it has distinct forms.","speaker":"Krishna","deity":"","tags":["tyaga","sannyasa","chapter-18","renunciation","discrimination"],"simpleMeaning":"Krishna tells Arjuna to listen carefully to his clear view on renunciation. He says renunciation has three forms, so the subject needs to be understood with precision.","simpleInsight":"Clarity replaces confusion when a hard choice is named carefully.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna still stands trapped between action and withdrawal. Krishna begins to untangle the final teaching by saying that renunciation itself must be understood in distinct forms, because not every kind of letting go means the same thing.","modernRelevance":"You are staring at an email that could end a partnership, and you keep rereading it. Before the decision, you need to know what kind of letting go is actually being asked of you.","translationLiteral":"निश्चयं (settled view) / श्रृणु (hear) / मे (my) / तत्र (there) / त्यागे (on renunciation) / भरतसत्तम (best of the Bharatas) । / त्यागः (renunciation) / हि (indeed) / पुरुषव्याघ्र (tiger among men) / त्रिविधः (threefold) / संप्रकीर्तितः (is declared) ॥","verseType":"teaching","insight":"It shifts the mind from vague renunciation to precise discrimination about what must be released.","quoteVariants":[],"requisiteConcepts":["tyaga","sannyasa"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"purpose","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

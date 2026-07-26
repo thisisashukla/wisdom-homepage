@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-55_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-55_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-55.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-55.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":55,"order":678,"sanskrit":"भक्त्या मामभिजानाति यावान्यश्चास्मि तत्त्वतः । ततो मां तत्त्वतो ज्ञात्वा विशते तदनन्तरम् ॥","hindiTranslation":"उस पराभक्तिसे मेरेको, मैं जितना हूँ और जो हूँ  इसको तत्त्वसे जान लेता है तथा मेरेको तत्त्वसे जानकर फिर तत्काल मेरेमें प्रविष्ट हो जाता है ॥","englishTranslation":"Through devoted love, one truly knows Me as I am. Knowing Me in truth, one enters into Me at once.","essence":"Devoted love turns understanding into immediate nearness.","speaker":"Krishna","deity":"Krishna","tags":["bhakti","parabhakti","direct-knowledge","krishna","union"],"simpleMeaning":"Devoted love lets a person know Krishna truly, beyond surface ideas. That true knowing leads straight into closeness with him.","simpleInsight":"Love is not just feeling; it becomes the way to real understanding and intimacy.","detailedMeaning":"On Kurukshetra, after Krishna has described the calm devotee who no longer clings or grieves, he gives the culmination of bhakti. The final question is no longer how to act, but how to know the divine directly and completely.","modernRelevance":"You can study someone for years and still miss them. Then one act of wholehearted love cuts through every theory and makes them unmistakably real.","translationLiteral":"भक्त्या (through devoted love) / माम् (Me) / अभिजानाति (knows truly) / यावान् (as much as) / यः (who) / च (and) / अस्मि (I am) / तत्त्वतः (in truth) / ततः (then) / माम् (Me) / तत्त्वतः (in truth) / ज्ञात्वा (having known) / विशते (enters) / तत्-अनन्तरम् (immediately after)","verseType":"declaration","insight":"It shifts devotion from emotion alone to a mode of direct knowing that changes relationship into union.","quoteVariants":[{"format":"card","text":"Devoted love reveals Me as I truly am. Knowing Me truly, you enter Me at once."},{"format":"widget","text":"Love first. Know fully. Enter at once."},{"format":"notification","text":"Devoted love shows what words never can."},{"format":"lockscreen","text":"Love knows. Knowing becomes union."}],"requisiteConcepts":["Bhakti","Brahman"],"category":"devotional","tone":"devotional","targetAudience":["general","students","couples"],"nodeId":"bhakti-m","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

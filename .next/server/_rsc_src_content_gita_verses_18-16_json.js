@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-16_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-16_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-16.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-16.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":16,"order":639,"sanskrit":"तत्रैवं सति कर्तारमात्मानं केवलं तु यः । पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः ॥","hindiTranslation":"परन्तु ऐसे पाँच हेतुओंके होनेपर भी जो उस कर्मोंके विषयमें केवल शुद्ध आत्माको कर्ता मानता है, वह दुर्मति ठीक नहीं समझता क्योंकि उसकी बुद्धि शुद्ध नहीं है ॥","englishTranslation":"But one who sees only the pure self as the doer, even though these five causes are present, has not seen rightly; such a confused mind does not understand.","essence":"Action has many causes; the pure self is not the lone doer.","speaker":"Krishna","deity":"","tags":["kartā","five causes","akṛtabuddhi","agency","doership"],"simpleMeaning":"Action does not come from the pure self alone. A confused person wrongly thinks the self is the only doer and misses the real causes at work.","simpleInsight":"You can stop carrying the whole burden of authorship. Clear seeing brings relief from false responsibility.","detailedMeaning":"On the Kurukshetra battlefield, Krishna is dismantling Arjuna\'s confusion about action. After naming the five causes behind every deed, he warns that a person with muddled understanding wrongly blames or claims the pure self as the sole doer.","modernRelevance":"You replay a conversation at 1 a.m. and decide, \\"I caused everything.\\" Krishna cuts through that mental trap: one person is rarely the whole cause.","translationLiteral":"तत्र (there) / एवम् (thus) / सति (being present) / कर्तारम् (the doer) / आत्मानम् (the self) / केवलम् (only) / तु (but) / यः (who) / पश्यति (sees) / अकृतबुद्धित्वात् (because of unformed understanding) / न (not) / सः (he) / पश्यति (sees) / दुर्मतिः (confused-minded one)","verseType":"teaching","insight":"It shifts the mind from personal overclaiming to clear seeing of shared causes.","quoteVariants":[{"format":"card","text":"Five causes act. The pure self is not the lone doer."},{"format":"widget","text":"The self is not the only doer."},{"format":"notification","text":"I keep calling myself the doer, but five forces are at work."},{"format":"lockscreen","text":"See action clearly. Drop false authorship."}],"requisiteConcepts":["Atman","Buddhi","Karma"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-47_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-47_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-47.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-47.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":47,"order":670,"sanskrit":"श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥","hindiTranslation":"अच्छी तरहसे अनुष्ठान किये हुए परधर्मसे गुणरहित अपना धर्म श्रेष्ठ है ।  कारण कि स्वभावसे नियत किये हुए स्वधर्मरूप कर्मको करता हुआ मनुष्य पापको प्राप्त नहीं होता ॥","englishTranslation":"One\'s own duty, though imperfect, is better than another\'s duty well performed. Doing the work set by one\'s nature, a person does not incur wrongdoing.","essence":"Your imperfect duty is cleaner than a borrowed perfection.","speaker":"Krishna","deity":"","tags":["svadharma","paradharma","nature-based-duty","karma-yoga","alignment"],"simpleMeaning":"It is better to do your own duty, even imperfectly, than to do someone else\'s duty well. Acting according to your nature does not lead you into wrongdoing.","simpleInsight":"You can stop measuring yourself against other people\'s lives. Peace comes from doing what is actually yours.","detailedMeaning":"On Kurukshetra, Arjuna is frozen by doubt, and Krishna keeps returning him to action. After teaching sacrifice and devotion through work, Krishna now sharpens the point: the duty born of your own nature is safer than copying someone else\'s path.","modernRelevance":"You are tempted to take the job that looks impressive, the role that earns praise, the life that belongs to someone else. This verse says the mismatch itself creates friction; your own work, even imperfectly done, keeps you clean.","translationLiteral":"श्रेयान् (better) / स्वधर्मः (one\'s own duty) / विगुणः (without qualities, imperfect) / परधर्मात् (than another\'s duty) / स्वनुष्ठितात् (well performed) / स्वभावनियतं (fixed by one\'s own nature) / कर्म (action, work) / कुर्वन् (doing) / न (not) / आप्नोति (attains) / किल्बिषम् (wrongdoing, fault)","verseType":"teaching","insight":"It shifts the mind from comparison to alignment: choose the work that matches your nature, not the work that flatters your ego.","quoteVariants":[{"format":"card","text":"Your own duty matters more than another\'s perfect role."},{"format":"widget","text":"Own duty first. чужer\'s role never fits."},{"format":"notification","text":"The right work is yours, even when it\'s messy."},{"format":"lockscreen","text":"Do your own work. Leave the rest."}],"requisiteConcepts":["Dharma","Karma"],"category":"philosophical","tone":"grounding","targetAudience":["students","professionals","entrepreneurs","general"],"nodeId":"duty","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

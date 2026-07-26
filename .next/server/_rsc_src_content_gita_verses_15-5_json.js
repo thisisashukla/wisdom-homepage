@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-5.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/15-5.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":5,"order":556,"sanskrit":"निर्मानमोहा जितसङ्गदोषा    अध्यात्मनित्या विनिवृत्तकामाः । द्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञै    र्गच्छन्त्यमूढाः पदमव्ययं तत् ॥","hindiTranslation":"जो मान और मोहसे रहित हो गये हैं, जिन्होंने आसक्तिसे होनेवाले दोषोंको जीत लिया है, जो नित्यनिरन्तर परमात्मामें ही लगे हुए हैं, जो अपनी दृष्टिसे सम्पूर्ण कामनाओंसे रहित हो गये हैं, जो सुखदुःखरूप द्वन्द्वोंसे मुक्त हो गये हैं, ऐसे ऊँची स्थितिवाले मोहरहित साधक भक्त उस अविनाशी परमपदपरमात्मा को प्राप्त होते हैं ॥","englishTranslation":"Free from pride and delusion, victorious over attachment, ever rooted in the true self, desireless, and beyond the opposites of pleasure and pain, the undeluded reach that imperishable state.","essence":"Freedom begins when pride, craving, and inner division fall away.","speaker":"Krishna","deity":"","tags":["purushottama","moksha","vairagya","dvandva","adhyatma"],"simpleMeaning":"Those who lose pride, cut attachment, stay rooted in the true self, and rise above pleasure and pain reach the imperishable state.","simpleInsight":"Freedom feels less like gaining something and more like losing what kept you divided.","detailedMeaning":"On Kurukshetra, with Arjuna frozen between duty and grief, Krishna keeps pointing beyond the battlefield. After describing the cosmic tree and the highest abode, he names the inner qualities needed to reach it: no pride, no attachment, no craving, no confusion.","modernRelevance":"You are about to send the message that may end a relationship, or finally leave the safe path that has become false. This verse says clarity arrives when pride, craving, and emotional whiplash stop steering.","translationLiteral":"निर्मानमोहाः (free from pride and delusion) / जितसङ्गदोषाः (who have conquered the fault of attachment) / अध्यात्मनित्याः (ever devoted to the true self) / विनिवृत्तकामाः (whose desires have fully withdrawn) / द्वन्द्वैः (from the pairs of opposites) / विमुक्ताः (freed) / सुखदुःखसंज्ञैः (named pleasure and pain) / गच्छन्ति (they reach) / अमूढाः (the undeluded) / पदम् (state) / अव्ययम् (imperishable) / तत् (that)","verseType":"teaching","insight":"It shifts the mind from chasing comfort to becoming fit for freedom.","quoteVariants":[{"format":"card","text":"Drop pride, craving, and the pull of opposites. The imperishable state opens."},{"format":"widget","text":"No pride. No craving. No split."},{"format":"notification","text":"The undeluded reach what desire cannot hold."},{"format":"lockscreen","text":"Release pride, craving, and duality."}],"requisiteConcepts":["Atman","Moksha","Vairagya","Dvandva"],"category":"philosophical","tone":"expansive","targetAudience":["general","students"],"nodeId":"moksha","nodePath":"convergence","depth":"deep"}');
+
+/***/ })
+
+};
+;

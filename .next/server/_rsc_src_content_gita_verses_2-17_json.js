@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-17_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-17_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-17.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-17.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":17,"order":64,"sanskrit":"अविनाशि तु तद्विद्धि येन सर्वमिदं ततम् । विनाशमव्ययस्यास्य न कश्चित् कर्तुमर्हति ॥","hindiTranslation":"अविनाशी तो उसको जान, जिससे यह सम्पूर्ण संसार व्याप्त है ।  इस अविनाशीका विनाश कोई भी नहीं कर सकता ॥","englishTranslation":"Know that to be imperishable by which this entire world is pervaded. No one can destroy this imperishable reality.","essence":"What truly pervades everything cannot be destroyed.","speaker":"Krishna","deity":"","tags":["imperishable","nitya","atman","pervasion","deathlessness"],"simpleMeaning":"Know that the reality behind everything is imperishable. No force can destroy what pervades the whole world.","simpleInsight":"Fear loosens when you realize what is deepest in you cannot be harmed.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has dropped into despair and Krishna begins rebuilding his understanding from the ground up. After saying the unreal has no lasting existence, Krishna now points to what cannot be destroyed at all.","modernRelevance":"A diagnosis, a breakup, a public failure — everything seems to collapse at once. This verse reminds you that the deepest reality in you is not fragile, even when your situation is.","translationLiteral":"अविनाशि (imperishable) / तु (indeed) / तत् (that) / विद्धि (know) / येन (by which) / सर्वम् इदम् (all this) / ततम् (pervaded) / विनाशम् (destruction) / अव्ययस्य अस्य (of this imperishable) / न कश्चित् (no one) / कर्तुम् (to do) / अर्हति (is able)","verseType":"declaration","insight":"It shifts attention from what changes to what remains untouched beneath change.","quoteVariants":[{"format":"card","text":"Know the presence that fills all things. Nothing can destroy it."},{"format":"widget","text":"Imperishable reality fills all."},{"format":"notification","text":"What fills everything cannot be destroyed."},{"format":"lockscreen","text":"Know the imperishable that pervades all."}],"requisiteConcepts":["Atman"],"category":"philosophical","tone":"expansive","targetAudience":["general","students"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

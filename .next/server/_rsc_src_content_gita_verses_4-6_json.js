@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-6_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-6_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-6.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/4-6.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":6,"order":168,"sanskrit":"अजोऽपि सन्नव्ययात्मा भूतानामीश्वरोऽपि सन् । प्रकृतिं स्वामधिष्ठाय संभवाम्यात्ममायया ॥","hindiTranslation":"मैं अजन्मा और अविनाशीस्वरूप होते हुए भी तथा सम्पूर्ण प्राणियोंका ईश्वर होते हुए भी अपनी प्रकृतिको अधीन करके अपनी योगमायासे प्रकट होता हूँ ॥","englishTranslation":"Though unborn and imperishable, and though I am the lord of all beings, I manifest myself by controlling my own nature through my own power of appearance.","essence":"The unborn can still appear without ceasing to be free.","speaker":"Krishna","deity":"Krishna","tags":["avatar","janma","prakriti","yogamaya","krishna-incarnation"],"simpleMeaning":"Krishna says he is unborn and imperishable, yet still appears in the world by using his own power over nature.","simpleInsight":"What seems like a birth is really a chosen appearance, not a limitation.","detailedMeaning":"Arjuna has asked how Krishna could have taught the sun at the beginning of time. Krishna answers that he is not bound by ordinary birth at all. On this battlefield, with Arjuna confused about time, divinity, and incarnation, Krishna reveals that his appearance is a deliberate manifestation.","modernRelevance":"Someone you trust suddenly acts in a way you never expected, and you wonder what is real. This verse says appearance can hide power: not everything that shows up is bound the way it seems.","translationLiteral":"अजः (unborn) / अपि (even though) / सन् (being) / अव्ययात्मा (of imperishable nature) / भूतानाम् (of beings) / ईश्वरः (lord) / अपि (even though) / सन् (being) / प्रकृतिम् (nature) / स्वाम् (own) / अधिष्ठाय (having taken control of) / संभवामि (I manifest) / आत्ममायया (by my own power of appearance)","verseType":"declaration","insight":"It shifts the mind from seeing Krishna as a historical figure to seeing incarnation as conscious manifestation.","quoteVariants":[],"requisiteConcepts":["Prakriti","Maya"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

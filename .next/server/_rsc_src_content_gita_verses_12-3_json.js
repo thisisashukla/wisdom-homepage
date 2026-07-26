@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_12-3_json";
+exports.ids = ["_rsc_src_content_gita_verses_12-3_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/12-3.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/12-3.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":12,"verse":3,"order":472,"sanskrit":"ये त्वक्षरमनिर्देश्यमव्यक्तं पर्युपासते । सर्वत्रगमचिन्त्यं च कूटस्थमचलं ध्रुवम् ॥","hindiTranslation":"जो अपनी इन्द्रियोंको वशमें करके अचिन्त्य, सब जगह परिपूर्ण, अनिर्देश्य, कूटस्थ, अचल, ध्रुव, अक्षर और अव्यक्तकी उपासना करते हैं, वे प्राणिमात्रके हितमें रत और सब जगह समबुद्धिवाले मनुष्य मुझे ही प्राप्त होते हैं ॥","englishTranslation":"Those who worship the unchanging, the indefinable, the unmanifest, the all-pervading, the unthinkable, the unmoving, the eternal, the imperishable—restraining the senses—reach Me alone.","essence":"The deepest devotion reaches what never changes.","speaker":"Krishna","deity":"","tags":["bhakti","akshara","avyakta","sarvatraga","indriya-samyama"],"simpleMeaning":"People who worship the imperishable, unmanifest reality by controlling their senses and seeing it everywhere ultimately reach Krishna.","simpleInsight":"The mind grows quiet when it stops chasing forms and learns to honor what never changes.","detailedMeaning":"On Kurukshetra, Arjuna asks which kind of devotee is best. Krishna answers by describing those who seek the formless, changeless reality with disciplined senses and equal vision. This verse completes the description before Krishna says they reach him.","modernRelevance":"You close the app after another day of chasing names, images, and reactions. Something deeper in you is tired of surfaces and wants what does not flicker.","translationLiteral":"ये (those who) / तु (but) / अक्षरम् (the imperishable) / अनिर्देश्यम् (the indefinable) / अव्यक्तम् (the unmanifest) / पर्युपासते (worship all around) / सर्वत्रगम् (all-pervading) / अचिन्त्यम् (unthinkable) / च (and) / कूटस्थम् (unchanging) / अचलम् (unmoving) / ध्रुवम् (eternal)","verseType":"teaching","insight":"It shifts devotion from visible forms to steady awareness of what is everywhere and unchanged.","quoteVariants":[],"requisiteConcepts":["Bhakti","Akshara","Avyakta","Indriya-samyama","Samatva"],"category":"devotional","tone":"expansive","targetAudience":["students","general"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

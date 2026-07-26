@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-41_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-41_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-41.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-41.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":41,"order":455,"sanskrit":"सखेति मत्वा प्रसभं यदुक्तंहे कृष्ण हे यादव हे सखेति । अजानता महिमानं तवेदंमया प्रमादात्प्रणयेन वापि ॥","hindiTranslation":"आपकी महिमा और स्वरूपको न जानते हुए मेरे सखा हैं ऐसा मानकर मैंने प्रमादसे अथवा प्रेमसे हठपूर्वक बिना सोचेसमझे हे कृष्ण  हे यादव  हे सखे  इस प्रकार जो कुछ कहा है और हे अच्युत  हँसीदिल्लगीमें, चलतेफिरते, सोतेजागते, उठतेबैठते, खातेपीते समयमें अकेले अथवा उन सखाओं, कुटुम्बियों आदिके सामने मेरे द्वारा आपका जो कुछ तिरस्कार किया गया है वह सब अप्रमेयस्वरुप आपसे मैं क्षमा माँगता हूँ ॥","englishTranslation":"Thinking of you as a friend, I addressed you carelessly: “O Krishna, O Yadava, O friend.” Not knowing your greatness, I spoke in negligence or affection. I ask forgiveness from your immeasurable form for every disrespect I showed in laughter, play, walking, sleeping, sitting, eating, alone or before companions and relatives.","essence":"Familiarity without recognition becomes disrespect; awe restores the right relation.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna-prayer","forgiveness","awe","bhakti"],"simpleMeaning":"Arjuna apologizes for treating Krishna casually as a friend, not knowing his true greatness. He asks forgiveness for every disrespectful word and act.","simpleInsight":"Real reverence begins when casual familiarity turns into humble recognition.","detailedMeaning":"On the battlefield, Arjuna has just seen Krishna\'s cosmic form and is overwhelmed. The friend he joked with now appears immeasurable. Struck by shame, Arjuna names his careless words and asks forgiveness before that vast presence.","modernRelevance":"You joke too freely with someone until one moment reveals how much they carry. Then embarrassment arrives first, and respect becomes honest.","translationLiteral":"सखा-इति (as a friend) / मत्वा (thinking) / प्रसभम् (boldly, carelessly) / यत् (whatever) / उक्तम् (was said) / हे कृष्ण (O Krishna) / हे यादव (O Yadava) / हे सखः-इति (O friend) / अजानता (not knowing) / महिमानम् (greatness) / तव (your) / इदम् (this) / मया (by me) / प्रमादात् (through negligence) / प्रणयेन (through affection) / वा अपि (or even) / यत् (whatever) / अवहास-अर्थम् (for the sake of joking) / असत्कृतः (treated disrespectfully) / असि (you are) / विहार-शय्या-आसन-भोजनेषु (in recreation, sleep, seat, and भोजन) / एकः अथवा अपि (alone or even) / अच्युत (O infallible one) / तत् (that) / समक्षम (in the presence) / तत् क्षामये (that I ask forgiveness) / त्वाम् (from you) / अहम् (I) / अप्रमेयम् (immeasurable one)","verseType":"devotional","insight":"It shifts devotion from familiarity to humility, teaching the reader to recognise greatness before speaking lightly.","quoteVariants":[],"requisiteConcepts":["Bhakti","Vishwarupa"],"category":"devotional","tone":"devotional","targetAudience":["general","students","couples"],"nodeId":"devotion-n","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

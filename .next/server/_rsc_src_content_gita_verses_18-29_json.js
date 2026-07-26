@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-29_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-29_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-29.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-29.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":29,"order":652,"sanskrit":"बुद्धेर्भेदं धृतेश्चैव गुणतस्त्रिविधं श्रृणु । प्रोच्यमानमशेषेण पृथक्त्वेन धनञ्जय ॥","hindiTranslation":"हे धनञ्जय  अब तू गुणोंके अनुसार बुद्धि और धृतिके भी तीन प्रकारके भेद अलगअलगरूपसे सुन, जो कि मेरे द्वारा पूर्णरूपसे कहे जा रहे हैं ॥","englishTranslation":"O Dhananjaya, now hear the threefold distinctions of understanding and steadfastness according to the three qualities, fully and separately explained.","essence":"Understanding and resolve differ by the quality that shapes them.","speaker":"Krishna","deity":"","tags":["buddhi","dhriti","gunas","sattva-rajas-tamas","discrimination"],"simpleMeaning":"Krishna asks Arjuna to listen to the three kinds of understanding and steadfastness, explained separately according to the three qualities.","simpleInsight":"Clear seeing begins by sorting what kind of mind is at work.","detailedMeaning":"On the battlefield, Arjuna still stands torn between action and collapse. Krishna now turns to the inner equipment behind choice itself: understanding and steadfastness. He prepares Arjuna to see how the three qualities shape the mind before explaining each one.","modernRelevance":"You are staring at two job offers, one safe and one honest, and your mind keeps changing its story. First notice what kind of understanding is speaking, then decide.","translationLiteral":"बुद्धेः (of understanding) / भेदम् (the distinctions) / धृतेः (of steadfastness) / च (and) / एव (indeed) / गुणतः (according to the qualities) / त्रिविधम् (threefold) / श्रृणु (hear) / प्रोच्यमानम् (being explained) / अशेषेण (completely) / पृथक्त्वेन (separately) / धनञ्जय (O Dhananjaya)","verseType":"teaching","insight":"It shifts attention from the decision itself to the quality of mind making the decision.","quoteVariants":[],"requisiteConcepts":["buddhi","dhriti","gunas"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

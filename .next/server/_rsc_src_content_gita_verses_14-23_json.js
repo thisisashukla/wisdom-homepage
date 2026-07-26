@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_14-23_json";
+exports.ids = ["_rsc_src_content_gita_verses_14-23_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/14-23.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/14-23.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":14,"verse":23,"order":547,"sanskrit":"उदासीनवदासीनो गुणैर्यो न विचाल्यते । गुणा वर्तन्त इत्येव योऽवतिष्ठति नेङ्गते ॥","hindiTranslation":"जो उदासीनकी तरह स्थित है और जो गुणोंके द्वारा विचलित नहीं किया जा सकता तथा गुण ही गुणोंमें बरत रहे हैं  इस भावसे जो अपने स्वरूपमें ही स्थित रहता है और स्वयं कोई भी चेष्टा नहीं करता ॥","englishTranslation":"One who remains like an indifferent witness, unmoved by the three qualities, stands firm and does not stir, knowing only that the qualities are acting among themselves.","essence":"Freedom begins when movement happens, but identity does not.","speaker":"Krishna","deity":"","tags":["gunas","gunatita","equanimity","witness-consciousness","inner-stability"],"simpleMeaning":"A wise person stays steady, not shaken by the three qualities, and sees that they are only moving among themselves.","simpleInsight":"You can stop identifying with every passing mood and impulse. That creates a quiet kind of freedom.","detailedMeaning":"On Kurukshetra, Arjuna asks how a person rises beyond the three qualities. Krishna answers with a mark of inner maturity: the wise one sits like an uninvolved witness, while the qualities keep shifting around them. This verse sharpens that answer.","modernRelevance":"A harsh email lands, your chest tightens, and the old urge to react flares up. This verse teaches you to notice the surge without becoming it.","translationLiteral":"उदासीनवद् (like one indifferent) / आसीनः (seated, remaining) / गुणैः (by the qualities) / यः (who) / न (not) / विचाल्यते (is shaken) / गुणाः (the qualities) / वर्तन्ते (are acting) / इति (thus) / एव (only) / यः (who) / अवतिष्ठति (remains established) / न (not) / ईङ्गते (moves)","verseType":"teaching","insight":"It shifts attention from being carried by mental states to remaining established while they change.","quoteVariants":[{"format":"card","text":"Stay unmoved. The qualities move; you do not."},{"format":"widget","text":"The qualities move. You remain."},{"format":"notification","text":"The pull is there, but I don’t have to move."},{"format":"lockscreen","text":"Remain steady. Let qualities pass."}],"requisiteConcepts":["gunas","vairagya","chitta"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"equanimity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

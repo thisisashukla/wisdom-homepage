@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-1_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-1_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-1.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/4-1.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":1,"order":163,"sanskrit":"श्री भगवानुवाचइमं विवस्वते योगं प्रोक्तवानहमव्ययम् । विवस्वान् मनवे प्राह मनुरिक्ष्वाकवेऽब्रवीत् ॥","hindiTranslation":"श्रीभगवान् बोले  मैंने इस अविनाशी योगको सूर्यसे कहा था ।  फिर सूर्यने अपने पुत्र वैवस्वत मनुसे कहा और मनुने अपने पुत्र राजा इक्ष्वाकुसे कहा ॥","englishTranslation":"The Lord said: I taught this imperishable yoga to Vivasvan. Vivasvan taught it to Manu, and Manu taught it to Ikshvaku.","essence":"Timeless wisdom survives by being passed on, not newly invented.","speaker":"Krishna","deity":"","tags":["parampara","avyaya-yoga","vivasvan","manu","ikshvaku"],"simpleMeaning":"Krishna says he taught this timeless yoga to the sun-god, who passed it to Manu, then to Ikshvaku. The teaching is ancient and preserved through a lineage.","simpleInsight":"Some truths are not invented in a moment; they are handed down carefully across generations.","detailedMeaning":"On Kurukshetra, with Arjuna shaken and unable to fight, Krishna begins by tracing the teaching back through an ancient lineage: from himself to Vivasvan, then to Manu, then to Ikshvaku. He is showing that this is not a new opinion, but a lost inheritance now being restored.","modernRelevance":"You inherit a practice from a teacher who learned it from someone before them, and they from someone before them. What feels new to you may be older than your doubts.","translationLiteral":"श्रीभगवानुवाच (the Lord said) / इमम् (this) / विवस्वते (to Vivasvan) / योगम् (yoga) / प्रोक्तवान् (taught) / अहम् (I) / अव्ययम् (imperishable) / विवस्वान् (Vivasvan) / मनवे (to Manu) / प्राह (said) / मनुः (Manu) / इक्ष्वाकवे (to Ikshvaku) / अब्रवीत् (spoke)","verseType":"declaration","insight":"It shifts the mind from treating wisdom as personal invention to seeing it as a preserved lineage of understanding.","quoteVariants":[],"requisiteConcepts":["Yoga","parampara"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

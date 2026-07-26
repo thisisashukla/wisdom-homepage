@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-5.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/3-5.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":5,"order":124,"sanskrit":"न हि कश्िचत्क्षणमपि जातु तिष्ठत्यकर्मकृत् । कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः ॥","hindiTranslation":"कोई भी मनुष्य किसी भी अवस्थामें क्षणमात्र भी कर्म किये बिना नहीं रह सकता क्योंकि प्रकृतिके परवश हुए सब प्राणियोंसे प्रकृतिजन्य गुण कर्म कराते हैं ॥","englishTranslation":"No one can remain without action even for a moment. Everyone is driven to act by the qualities born of nature.","essence":"Inaction is an illusion; nature is already moving you.","speaker":"Krishna","deity":"","tags":["prakriti","gunas","karma-yoga","inaction","agency"],"simpleMeaning":"No one can stay inactive forever. The qualities of nature keep pushing every person into action.","simpleInsight":"You are not failing by acting; action is part of being human.","detailedMeaning":"On the battlefield, Arjuna wants to withdraw from the war. Krishna answers by showing that complete inaction is impossible: even hesitation, avoidance, and refusal are also movements shaped by nature. This verse deepens the case for right action.","modernRelevance":"You sit frozen with your phone in hand, avoiding the email that could change everything. Even that delay is a kind of action. The question is not whether you act, but what is steering you.","translationLiteral":"न हि (indeed not) / कश्चित् (anyone) / क्षणम् अपि (even for a moment) / जातु (ever) / तिष्ठति (remains) / अकर्मकृत् (one who does no action) / कार्यते (is made to act) / हि (indeed) / अवशः (helplessly) / कर्म (action) / सर्वः (everyone) / प्रकृतिजैः (born of nature) / गुणैः (by the qualities)","verseType":"teaching","insight":"It shifts the mind from pretending neutrality to seeing what force is already moving you.","quoteVariants":[],"requisiteConcepts":["Prakriti","gunas","Karma"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","entrepreneurs"],"nodeId":"effort","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

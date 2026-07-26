@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_3-25_json";
+exports.ids = ["_rsc_src_content_gita_verses_3-25_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/3-25.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/3-25.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":3,"verse":25,"order":144,"sanskrit":"सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत । कुर्याद्विद्वांस्तथासक्तश्िचकीर्षुर्लोकसंग्रहम् ॥","hindiTranslation":"हे भरतवंशोद्भव अर्जुन कर्ममें आसक्त हुए अज्ञानीजन जिस प्रकार कर्म करते हैं, आसक्तिरहित विद्वान भी लोकसंग्रह करना चाहता हुआ उसी प्रकार कर्म करे ।  तत्त्वज्ञ महापुरुष कर्मोंमें आसक्तिवाले अज्ञानी मनुष्योंकी बुद्धिमें भ्रम उत्पन्न न करे, प्रत्युत स्वयं समस्त कर्मोंको अच्छी तरहसे करता हुआ उनसे भी वैसे ही करवाये ॥","englishTranslation":"As the ignorant act with attachment to action, so should the wise act without attachment, seeking the welfare of the world.","essence":"Wisdom keeps acting, but never for personal gain.","speaker":"Krishna","deity":"","tags":["lokasangraha","karmayoga","asakti","wise-action","role-model"],"simpleMeaning":"A wise person should keep acting, but without clinging to the results. The point is to support the world, not feed ego.","simpleInsight":"You can stay fully engaged without getting trapped by craving recognition or payoff.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen while Krishna explains how action should continue. Even the wise must work, not for personal gain, but to keep the world in order and guide others by example.","modernRelevance":"You’re the senior person in a room full of anxious newcomers, and everyone is watching how you handle the pressure. Stay active, stay steady, and let your example carry the room.","translationLiteral":"सक्ताः (attached) / कर्मणि (in action) / अविद्वांसः (the ignorant) / यथा (as) / कुर्वन्ति (perform) / भारत (O Bharata) / कुर्यात् (should perform) / विद्वान् (the wise) / तथा (likewise) / असक्तः (without attachment) / चिकीर्षुः (desiring to do) / लोकसंग्रहम् (the welfare/order of the world)","verseType":"teaching","insight":"It shifts action from self-serving ambition to responsible participation for the good of others.","quoteVariants":[{"format":"card","text":"Act like the world needs you. Want nothing for yourself."},{"format":"widget","text":"Do the work. Release the reward."},{"format":"notification","text":"The wise act too — without clinging."},{"format":"lockscreen","text":"Act for the world. Leave no trace of wanting."}],"requisiteConcepts":["Karma","Dharma"],"category":"philosophical","tone":"grounding","targetAudience":["students","professionals","entrepreneurs"],"nodeId":"effort","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

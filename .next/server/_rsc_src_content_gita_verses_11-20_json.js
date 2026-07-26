@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-20_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-20_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-20.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-20.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":20,"order":434,"sanskrit":"द्यावापृथिव्योरिदमन्तरं हिव्याप्तं त्वयैकेन दिशश्च सर्वाः । दृष्ट्वाऽद्भुतं रूपमुग्रं तवेदंलोकत्रयं प्रव्यथितं महात्मन् ॥","hindiTranslation":"हे महात्मन्  यह स्वर्ग और पृथ्वीके बीचका अन्तराल और सम्पूर्ण दिशाएँ एक आपसे ही परिपूर्ण हैं ।  आपके इस अद्भुत और उग्ररूपको देखकर तीनों लोक व्यथित व्याकुल हो रहे हैं ॥","englishTranslation":"The space between heaven and earth and all directions are filled by You alone. Seeing Your wondrous and fierce form, the three worlds tremble, O great one.","essence":"One vision can overwhelm every boundary you thought was real.","speaker":"Arjuna","deity":"Krishna","tags":["vishvarupa","arjuna","cosmic-form","awe","surrender"],"simpleMeaning":"Arjuna sees that Krishna fills every direction and every space. The sight of Krishna\'s vast and fierce form makes all three worlds tremble.","simpleInsight":"Awe can undo the illusion of control in a single moment.","detailedMeaning":"On Kurukshetra, Arjuna is still staring at Krishna\'s cosmic form. He now sees that every direction and every space are filled by Krishna alone, and that this overwhelming vision has shaken the three worlds. The verse deepens the shock before the next wave of praise.","modernRelevance":"You open a message expecting a normal reply, and instead you see the full weight of what you’re dealing with. The room, the plan, the future — everything suddenly feels larger than your control.","translationLiteral":"द्यावापृथिव्योः (of heaven and earth) / इदम् (this) / अन्तरम् (intermediate space) / हि (indeed) / व्याप्तम् (pervaded) / त्वया (by You) / एकेन (alone) / दिशः (directions) / च (and) / सर्वाः (all) / दृष्ट्वा (having seen) / अद्भुतम् (wondrous) / रूपम् (form) / उग्रम् (fierce) / तव (Your) / इदम् (this) / लोकत्रयम् (three worlds) / प्रव्यथितम् (shaken) / महात्मन् (O great one)","verseType":"declaration","insight":"It shifts the mind from seeing reality as manageable to seeing it as vast, living, and beyond personal control.","quoteVariants":[],"requisiteConcepts":[],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

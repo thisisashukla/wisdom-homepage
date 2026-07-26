@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-27_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-27_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-27.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-27.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":27,"order":365,"sanskrit":"यत्करोषि यदश्नासि यज्जुहोषि ददासि यत् । यत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम् ॥","hindiTranslation":"हे कुन्तीपुत्र  तू जो कुछ करता है, जो कुछ खाता है, जो कुछ यज्ञ करता है, जो कुछ दान देता है और जो कुछ तप करता है, वह सब मेरे अर्पण कर दे ॥","englishTranslation":"Whatever you do, whatever you eat, whatever you offer, whatever you give, and whatever austerity you practice, offer it to me.","essence":"Every action becomes complete when it is offered.","speaker":"Krishna","deity":"","tags":["madarpanam","offering","bhakti","daily action","austerity"],"simpleMeaning":"Whatever you do in daily life can become an offering. Work, food, giving, sacrifice, and discipline all gain meaning when dedicated to the divine.","simpleInsight":"Ordinary life stops feeling fragmented. Even small actions can carry devotion.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna is frozen, and Krishna is showing him how to live without inner division. After teaching that even simple offerings matter, Krishna now widens the practice: every act, from eating to austerity, can be given back to him.","modernRelevance":"You finish a hard day, eat in silence, answer messages, and keep going. This verse says none of it is too small to be offered with care.","translationLiteral":"यत्करोषि (whatever you do) / यदश्नासि (whatever you eat) / यज्जुहोषि (whatever you offer in sacrifice) / ददासि (you give) / यत् (whatever) / यत्तपस्यसि (whatever austerity you practice) / कौन्तेय (O son of Kunti) / तत्कुरुष्व (do that) / मदर्पणम् (as an offering to me)","verseType":"teaching","insight":"It turns daily activity into devotion, so nothing is spiritually wasted.","quoteVariants":[{"format":"card","text":"Offer every act to the divine. Nothing need be left outside."},{"format":"widget","text":"Make all you do an offering."},{"format":"notification","text":"Even this can be offered."},{"format":"lockscreen","text":"Offer everything. Keep nothing separate."}],"requisiteConcepts":["Bhakti","Seva","Tapas"],"category":"devotional","tone":"devotional","targetAudience":["general","students","professionals"],"nodeId":"surrender","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

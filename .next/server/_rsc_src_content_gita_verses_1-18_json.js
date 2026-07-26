@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-18_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-18_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-18.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-18.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":18,"order":18,"sanskrit":"द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते । सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक् ॥","hindiTranslation":"हे राजन् श्रेष्ठ धनुषवाले काशिराज और महारथी शिखण्डी तथा धृष्टद्युम्न एवं राजा विराट और अजेय सात्यकि, राजा द्रुपद और द्रौपदी के पाँचों पुत्र तथा लम्बीलम्बी भुजाओंवाले सुभद्रापुत्र अभिमन्यु  इन सभी ने सब ओर से अलगअलग अपनेअपने शंख बजाये ॥","englishTranslation":"Drupada, Draupadi\'s sons, and mighty Abhimanyu each blew their conches separately, O lord of the earth.","essence":"Allied resolve announces itself before the battle starts.","speaker":"Sanjaya","deity":"","tags":["kurukshetra","conch-blowing","pandava-army","abhimanyu","drupada"],"simpleMeaning":"Drupada, Draupadi\'s sons, and Abhimanyu each blew their conches. The Pandava side answers the Kaurava side with a full display of strength.","simpleInsight":"Strength can be announced before a single blow is struck.","detailedMeaning":"On Kurukshetra, the Pandava allies answer the enemy\'s gathering with their own conches. Drupada, Draupadi\'s sons, and Abhimanyu sound their horns one by one, showing that Arjuna is not alone before the war begins.","modernRelevance":"A room goes quiet before you speak up against something wrong. Your voice may tremble, but the moment you join in, everyone knows you are not backing down.","translationLiteral":"द्रुपदः (Drupada) / द्रौपदेयाः (Draupadi\'s sons) / च (and) / सर्वशः (all together) / पृथिवीपते (O lord of the earth) / सौभद्रः (Abhimanyu, son of Subhadra) / च (and) / महाबाहुः (mighty-armed) / शङ्खान् (conches) / दध्मुः (blew) / पृथक् पृथक् (separately each)","verseType":"narrative","insight":"It shifts attention from silent fear to visible resolve before action begins.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"grounding","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

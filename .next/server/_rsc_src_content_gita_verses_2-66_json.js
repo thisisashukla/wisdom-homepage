@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_2-66_json";
+exports.ids = ["_rsc_src_content_gita_verses_2-66_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/2-66.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/2-66.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":2,"verse":66,"order":113,"sanskrit":"नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना । न चाभावयतः शान्तिरशान्तस्य कुतः सुखम् ॥","hindiTranslation":"जिसके मनइन्द्रियाँ संयमित नहीं हैं, ऐसे मनुष्यकी व्यवसायात्मिका बुद्धि नहीं होती और व्यवसायात्मिका बुद्धि न होनेसे उसमें कर्तव्यपरायणताकी भावना नहीं होती ।  ऐसी भावना न होनेसे उसको शान्ति नहीं मिलती ।  फिर शान्तिरहित मनुष्यको सुख कैसे मिल सकता है ॥","englishTranslation":"A restless mind has no steady discernment, no steady purpose, no peace, and without peace, no happiness.","essence":"Without inner discipline, even happiness has no place to stand.","speaker":"Krishna","deity":"","tags":["indriya-nigraha","buddhi","shanti","manas","samyama"],"simpleMeaning":"A person who cannot control the mind and senses lacks clear judgment, steady purpose, peace, and therefore real happiness.","simpleInsight":"Peace is not accidental; it grows from inner discipline.","detailedMeaning":"On Kurukshetra, Arjuna is frozen between duty and grief. Krishna explains that a mind ruled by the senses cannot hold steady judgment or purpose. Without that inner order, peace cannot arise, and without peace, happiness slips away.","modernRelevance":"You open your phone to calm down, then ten minutes later you are more scattered than before. Krishna points to the real problem: a mind that cannot hold itself together cannot produce peace on demand.","translationLiteral":"नास्ति (there is not) / बुद्धिः (steady discernment) / अयुक्तस्य (of one who is unrestrained) / न (not) / च (and) / अयुक्तस्य (of one who is unrestrained) / भावना (steady purpose) / न (not) / च (and) / अभावयतः (of one who lacks inner cultivation) / शान्तिः (peace) / अशान्तस्य (of one without peace) / कुतः (how can there be) / सुखम् (happiness)","verseType":"teaching","insight":"It shifts attention from chasing comfort to building inner steadiness first.","quoteVariants":[{"format":"card","text":"No restraint, no steady mind. No peace, no happiness."},{"format":"widget","text":"Unsteady mind, no peace."},{"format":"notification","text":"Without inner order, peace never arrives."},{"format":"lockscreen","text":"Train the mind. Peace follows."}],"requisiteConcepts":["Buddhi","Manas","Shanti"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"equanimity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

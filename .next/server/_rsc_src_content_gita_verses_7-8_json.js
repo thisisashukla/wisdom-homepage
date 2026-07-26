@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-8_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-8_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-8.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/7-8.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":8,"order":288,"sanskrit":"रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः । प्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु ॥","hindiTranslation":"हे कुन्तीनन्दन  जलोंमें रस मैं हूँ, चन्द्रमा और सूर्यमें प्रभा प्रकाश मैं हूँ, सम्पूर्ण वेदोंमें प्रणव ओंकार मैं हूँ, आकाशमें शब्द और मनुष्योंमें पुरुषार्थ मैं हूँ ॥","englishTranslation":"O son of Kunti, I am the taste in water, the light in the moon and sun, the syllable Om in all the Vedas, the sound in space, and the valor in human beings.","essence":"The sacred is already inside ordinary experience.","speaker":"Krishna","deity":"","tags":["vibhuti","om","manifestation","krishna-in-all-things","vedic-sound"],"simpleMeaning":"Krishna says he is the life and meaning present in ordinary things: taste in water, light in the sun and moon, Om in the Vedas, sound in space, and strength in people.","simpleInsight":"The world feels less ordinary when you notice the divine presence already filling it.","detailedMeaning":"On Kurukshetra, with Arjuna still needing certainty, Krishna begins showing how his presence runs through the world. He does not stay distant; he names himself in the taste, light, sound, and strength that sustain life.","modernRelevance":"You sip water after a long, anxious day and suddenly notice how simple relief can feel sacred. The same presence shows up in sunlight, music, breath, and the courage to keep going.","translationLiteral":"रसः (taste) / अहम् (I am) / अप्सु (in waters) / कौन्तेय (O son of Kunti) / प्रभा (light) / अस्मि (am) / शशि-सूर्ययोः (of moon and sun) / प्रणवः (the sacred syllable Om) / सर्व-वेदेषु (in all the Vedas) / शब्दः (sound) / खे (in space) / पौरुषम् (valor / human strength) / नृषु (in human beings)","verseType":"declaration","insight":"It shifts attention from searching for the divine elsewhere to recognising it in lived experience.","quoteVariants":[],"requisiteConcepts":["Bhakti","Deva"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-30_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-30_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-30.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/10-30.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":30,"order":402,"sanskrit":"प्रह्लादश्चास्मि दैत्यानां कालः कलयतामहम् । मृगाणां च मृगेन्द्रोऽहं वैनतेयश्च पक्षिणाम् ॥","hindiTranslation":"दैत्योंमें प्रह्लाद और गणना करनेवालोंमें काल मैं हूँ  ।  पशुओंमें सिंह और पक्षियोंमें गरुड मैं हूँ ॥","englishTranslation":"Among the daityas I am Prahlada; among calculators I am Time. Among beasts I am the lion, and among birds I am Garuda.","essence":"Power, devotion, and majesty are all windows into one presence.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","prahlada","garuda","time","divine-manifestations"],"simpleMeaning":"Krishna says he is present as Prahlada among the daityas, as Time among those who count, as the lion among beasts, and as Garuda among birds.","simpleInsight":"Strength and devotion are not separate from the divine presence.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna is overwhelmed and Krishna begins revealing where divine presence can be seen in the world. He names Prahlada, Time, the lion, and Garuda to show that greatness, power, and devotion all point back to him.","modernRelevance":"You watch a child protect a smaller one, or see fierce courage in someone facing illness without flinching. The same force that makes greatness visible is not random — it carries a deeper presence.","translationLiteral":"प्रह्लादः (Prahlada) / च (and) / अस्मि (I am) / दैत्यानाम् (among the daityas) / कालः (Time) / कलयताम् (among those who count) / अहम् (I) / मृगाणाम् (among beasts) / च (and) / मृगेन्द्रः (lion) / अहम् (I) / वैनतेयः (Garuda) / च (and) / पक्षिणाम् (among birds)","verseType":"declaration","insight":"It trains the mind to recognise the divine in excellence, courage, and devoted steadfastness.","quoteVariants":[{"format":"card","text":"I shine in Prahlada, Time, the lion, and Garuda."},{"format":"widget","text":"Prahlada, Time, lion, Garuda."},{"format":"notification","text":"The fierce and the faithful both carry my mark."},{"format":"lockscreen","text":"See me in power and devotion."}],"requisiteConcepts":[],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_16-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_16-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/16-5.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/16-5.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":16,"verse":5,"order":576,"sanskrit":"दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता । मा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव ॥","hindiTranslation":"दैवीसम्पत्ति मुक्तिके लिये और आसुरीसम्पत्ति बन्धनके लिये है ।  हे पाण्डव तुम दैवीसम्पत्तिको प्राप्त हुए हो, इसलिये तुम्हें शोक चिन्ता नहीं करना चाहिये ॥","englishTranslation":"The divine nature leads to freedom; the demonic nature leads to bondage. Do not grieve, Pandava. You are born with the divine nature.","essence":"Freedom grows from one kind of character; bondage grows from another.","speaker":"Krishna","deity":"","tags":["daivi-sampad","asuri-sampad","freedom-bondage","ego","chapter-16"],"simpleMeaning":"Qualities that uplift a person lead to freedom, while qualities rooted in ego create bondage. Krishna tells Arjuna not to despair, because Arjuna already has the qualities that lead upward.","simpleInsight":"There is relief in knowing your deeper orientation already points toward freedom.","detailedMeaning":"On Kurukshetra, after listing the traits of the divine and the demonic, Krishna turns to Arjuna directly. The battlefield is still frozen, but the teaching sharpens: Arjuna is not trapped by fear. His deeper nature already belongs to the side that frees.","modernRelevance":"You catch yourself spiralling after a harsh conversation, wondering whether you are becoming the kind of person you fear. This verse says to stop and remember what you are already leaning toward.","translationLiteral":"दैवी (divine) / सम्पत् (nature or wealth) / विमोक्षाय (for freedom) / निबन्धाय (for bondage) / आसुरी (demonic) / मता (is held to be) / मा (do not) / शुचः (grieve) / सम्पदम् (nature or wealth) / दैवीम् (divine) / अभिजातः (born with) / असि (you are) / पाण्डव (Pandava)","verseType":"teaching","insight":"It shifts attention from self-doubt to the qualities you are cultivating, so you can align with what frees rather than what binds.","quoteVariants":[{"format":"card","text":"The divine nature frees. The demonic nature binds."},{"format":"widget","text":"Divine nature frees; demonic nature binds."},{"format":"notification","text":"You were born for freedom, not bondage."},{"format":"lockscreen","text":"Choose the nature that frees you."}],"requisiteConcepts":["sampad","daivi","asuri"],"category":"philosophical","tone":"grounding","targetAudience":["general","students"],"nodeId":"purpose","nodePath":"action","depth":"medium"}');
+
+/***/ })
+
+};
+;

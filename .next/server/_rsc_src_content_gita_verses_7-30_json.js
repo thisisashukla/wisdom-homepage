@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-30_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-30_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-30.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/7-30.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":30,"order":310,"sanskrit":"साधिभूताधिदैवं मां साधियज्ञं च ये विदुः । प्रयाणकालेऽपि च मां ते विदुर्युक्तचेतसः ॥","hindiTranslation":"जो मनुष्य अधिभूत, अधिदैव और अधियज्ञके सहित मुझे जानते हैं, वे युक्तचेता मनुष्य अन्तकालमें भी मुझे ही जानते हैं अर्थात् प्राप्त होते हैं ॥","englishTranslation":"Those who know me together with the physical realm, the radiant powers, and the inner sacrifice know me even at the time of death.","essence":"Complete understanding remains steady even at the moment of departure.","speaker":"Krishna","deity":"Krishna","tags":["adhibhuta","adhidaiva","adhiyajna","antakala","yuktacetas"],"simpleMeaning":"Those who understand Krishna as present in the physical world, the divine powers, and the ritual offering remember him even at death.","simpleInsight":"There is calm in knowing that clear understanding can hold even in the final moment.","detailedMeaning":"On Kurukshetra, after Krishna has explained the deeper structure of reality, he gives Arjuna the final key: the one who truly understands him in every layer of existence does not lose that understanding at death. The teaching closes the chapter by tying knowledge to the last moment of life.","modernRelevance":"At a bedside when machines are beeping and everyone is silent, the mind does not reach for trivia. It reaches for what was truly known. This verse points to a clarity strong enough to stay present at the end.","translationLiteral":"स-अधिभूत-आधिदैवम् (together with the physical realm and the radiant powers) / माम् (me) / स-अधियज्ञम् (together with the inner sacrifice) / च (and) / ये (those who) / विदुः (know) / प्रयाण-काले (at the time of departure/death) / अपि (even) / च (and) / माम् (me) / ते (they) / विदुः (know) / युक्त-चेतसः (those with a disciplined mind)","verseType":"declaration","insight":"It shifts the mind from partial religious ideas to a unified vision of reality.","quoteVariants":[{"format":"card","text":"Know the whole order of existence, and death cannot confuse you."},{"format":"widget","text":"See the whole. Leave undisturbed."},{"format":"notification","text":"The end reveals what the whole life understood."},{"format":"lockscreen","text":"Know the whole, even at the end."}],"requisiteConcepts":["Adhibhuta","Adhidaiva","Adhiyajna","Yuktacetas"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

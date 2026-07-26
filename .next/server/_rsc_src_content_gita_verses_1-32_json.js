@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-32_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-32_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-32.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-32.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":32,"order":32,"sanskrit":"न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च । किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा ॥","hindiTranslation":"हे कृष्ण मैं न तो विजय चाहता हूँ, न राज्य चाहता हूँ और न सुखों को ही चाहता हूँ ।  हे गोविन्द हमलोगों को राज्य से क्या लाभ भोगों से क्या लाभ अथवा जीने से भी क्या लाभ ॥","englishTranslation":"I do not desire victory, Krishna, nor kingdom, nor pleasures. What use is kingdom to us, Govinda? What use are pleasures or even life?","essence":"Victory means nothing when the price is the destruction of what you love.","speaker":"Arjuna","deity":"","tags":["arjuna-vishada","battlefield-crisis","vairagya","despair","kurukshetra"],"simpleMeaning":"Arjuna says he no longer wants victory, a kingdom, pleasure, or even life itself. The fight has lost its meaning for him.","simpleInsight":"When the goal feels hollow, even success stops mattering.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna stands collapsed before Krishna. After seeing his own relatives as enemies, he rejects victory, rule, pleasure, and even survival itself. This verse deepens his crisis and shows how completely his desire to fight has broken.","modernRelevance":"You are staring at the email that could save your career, but it asks you to betray yourself. Suddenly the promotion, the applause, even the job feel empty.","translationLiteral":"न काङ्क्षे (I do not desire) / विजयम् (victory) / कृष्ण (Krishna) / न (nor) / च (and) / राज्यम् (kingdom) / सुखानि (pleasures) / च (and) / किम् (what) / नः (to us) / राज्येन (with kingdom) / गोविन्द (Govinda) / किम् (what) / भोगैः (with pleasures) / जीवितेन (with life) / वा (or)","verseType":"declaration","insight":"It exposes the moment when outer success can no longer justify inner collapse.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"reflective","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

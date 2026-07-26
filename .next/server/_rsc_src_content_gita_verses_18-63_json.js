@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-63_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-63_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-63.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-63.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":63,"order":686,"sanskrit":"इति ते ज्ञानमाख्यातं गुह्याद्गुह्यतरं मया । विमृश्यैतदशेषेण यथेच्छसि तथा कुरु ॥","hindiTranslation":"यह गुह्यसे भी गुह्यतर शरणागतिरूप ज्ञान मैंने तुझे कह दिया ।  अब तू इसपर अच्छी तरहसे विचार करके जैसा चाहता है, वैसा कर ॥","englishTranslation":"Thus I have explained to you the most secret wisdom. Reflect on it fully, and then do as you wish.","essence":"True guidance ends by returning choice to you.","speaker":"Krishna","deity":"","tags":["sharanagati","final-teaching","free-choice","krishna-arjuna","moksha-sannyasa"],"simpleMeaning":"Krishna says he has given Arjuna the deepest teaching. Arjuna should think it through completely and then decide what to do.","simpleInsight":"Real freedom includes thinking clearly before choosing.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has heard Krishna’s final teaching about surrender and inner freedom. Krishna does not force obedience. He gives the deepest instruction, then leaves Arjuna responsible for his own choice.","modernRelevance":"You’ve heard every side of a painful decision and still feel pulled apart. The clearest voice may not be the loudest one — it may be the one that leaves room for honest choice.","translationLiteral":"इति (thus) / ते (to you) / ज्ञानम् (wisdom) / आख्यातम् (has been explained) / गुह्यात् (than the secret) / गुह्यतरम् (more secret) / मया (by me) / विमृश्य (having reflected upon) / एतत् (this) / अशेषेण (completely) / यथा (as) / इच्छसि (you wish) / तथा (so) / कुरु (do)","verseType":"declaration","insight":"It shifts the mind from pressure to responsibility: understand fully, then decide without inner coercion.","quoteVariants":[{"format":"card","text":"I have shown you the deepest secret. Reflect fully, then choose your course."},{"format":"widget","text":"Reflect fully. Then choose."},{"format":"notification","text":"The decision is yours after full reflection."},{"format":"lockscreen","text":"Reflect fully. Then act freely."}],"requisiteConcepts":["sharanagati"],"category":"devotional","tone":"reflective","targetAudience":["general","students","professionals"],"nodeId":"surrender","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

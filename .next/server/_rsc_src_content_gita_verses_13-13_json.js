@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_13-13_json";
+exports.ids = ["_rsc_src_content_gita_verses_13-13_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/13-13.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/13-13.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":13,"verse":13,"order":502,"sanskrit":"ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वाऽमृतमश्नुते । अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते ॥","hindiTranslation":"जो ज्ञेय है, उसपरमात्मतत्त्व को मैं अच्छी तरहसे कहूँगा, जिसको जानकर मनुष्य अमरताका अनुभव कर लेता है ।  वह ज्ञेयतत्त्व अनादि और परम ब्रह्म है ।  उसको न सत् कहा जा सकता है और न असत् ही कहा जा सकता है ॥","englishTranslation":"I will now tell you what is to be known. Knowing it, one attains freedom. It is beginningless supreme reality, beyond existence and nonexistence.","essence":"The highest reality frees you precisely because it outgrows every label.","speaker":"Krishna","deity":"","tags":["kshetra-kshetrajna","brahman","amrita","anadi","sat-asat"],"simpleMeaning":"Krishna says he will explain the highest reality that can be known. Knowing it brings freedom. It is beginningless, supreme, and beyond ordinary ideas of real and unreal.","simpleInsight":"There is relief in knowing the deepest truth cannot be boxed into simple labels.","detailedMeaning":"On the battlefield, Arjuna is frozen and Krishna begins the teaching on field and knower. After describing the qualities that prepare a seeker, Krishna now points to the highest object of knowledge itself: the beginningless supreme reality that ends confusion.","modernRelevance":"You are trying to name something that changes your whole life — but every label feels too small. Some truths are not objects you can pin down; they must be known directly.","translationLiteral":"ज्ञेयम् (what is to be known) / यत् (which) / तत् (that) / प्रवक्ष्यामि (I will clearly tell) / यत् (which) / ज्ञात्वा (having known) / अमृतम् (freedom / immortality) / अश्नुते (attains) / अनादिमत् (beginningless) / परम् (supreme) / ब्रह्म (supreme reality) / न (not) / सत् (existent) / तत् (that) / न (not) / असत् (nonexistent) / उच्यते (is called)","verseType":"declaration","insight":"It shifts the mind from arguing about appearances to seeking direct understanding of what underlies them.","quoteVariants":[{"format":"card","text":"Know the supreme reality. It has no beginning, and it escapes all labels."},{"format":"widget","text":"Know the supreme reality. Beyond being, beyond nonbeing."},{"format":"notification","text":"What you seek cannot be named as real or unreal."},{"format":"lockscreen","text":"Know the beginningless supreme reality."}],"requisiteConcepts":["Brahman","Amrita"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

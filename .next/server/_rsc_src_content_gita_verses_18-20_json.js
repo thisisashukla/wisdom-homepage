@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-20_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-20_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-20.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-20.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":20,"order":643,"sanskrit":"सर्वभूतेषु येनैकं भावमव्ययमीक्षते । अविभक्तं विभक्तेषु तज्ज्ञानं विद्धि सात्त्विकम् ॥","hindiTranslation":"जिस ज्ञानके द्वारा साधक सम्पूर्ण विभक्त प्राणियोंमें विभागरहित एक अविनाशी भावसत्ता को देखता है, उस ज्ञानको तुम सात्त्विक समझो ॥","englishTranslation":"Know that knowledge to be sattvic by which one sees the one imperishable reality in all beings, undivided among the divided.","essence":"True understanding sees one undivided reality inside every divided form.","speaker":"Krishna","deity":"","tags":["sattva","ekatva","bheda","avyaya","guna"],"simpleMeaning":"Pure understanding sees one unchanging reality in all beings, even though they appear separate.","simpleInsight":"Separation stops feeling final. You begin to notice the same reality shining through every face.","detailedMeaning":"On Kurukshetra, with Arjuna frozen before battle, Krishna turns from action to vision. He explains that the highest clear understanding sees one imperishable reality in all beings, even though they appear divided.","modernRelevance":"You walk into a room after an argument and see only sides, labels, and distance. This verse asks you to look again and notice the shared humanity beneath the split.","translationLiteral":"सर्वभूतेषु (in all beings) / येन (by which) / एकम् (one) / भावम् (reality/state) / अव्ययम् (imperishable) / ईक्षते (sees) / अविभक्तम् (undivided) / विभक्तेषु (among the divided) / तत् (that) / ज्ञानम् (knowledge) / विद्धि (know) / सात्त्विकम् (sattvic)","verseType":"declaration","insight":"It shifts perception from surface differences to the underlying unity that makes judgment softer.","quoteVariants":[{"format":"card","text":"See one imperishable reality in every being. That knowledge is pure."},{"format":"widget","text":"One reality, many forms."},{"format":"notification","text":"What looks divided may still be one."},{"format":"lockscreen","text":"See the one in the many."}],"requisiteConcepts":["sattva","guna","jnana"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-70_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-70_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-70.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-70.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":70,"order":693,"sanskrit":"अध्येष्यते च य इमं धर्म्यं संवादमावयोः । ज्ञानयज्ञेन तेनाहमिष्टः स्यामिति मे मतिः ॥","hindiTranslation":"जो मनुष्य हम दोनोंके इस धर्ममय संवादका अध्ययन करेगा, उसके द्वारा भी मैं ज्ञानयज्ञसे पूजित होऊँगा  ऐसा मेरा मत है ॥","englishTranslation":"Whoever studies this sacred dialogue of ours will also worship me through the sacrifice of knowledge; that is my view.","essence":"Sincere study of this dialogue becomes worship itself.","speaker":"Krishna","deity":"Krishna","tags":["jnana-yajna","sacred dialogue","study as worship","chapter 18","krishna-arjuna"],"simpleMeaning":"Reading and studying Krishna and Arjuna’s sacred dialogue is itself a form of worship through knowledge.","simpleInsight":"You do not have to wait for a ritual moment; sincere study can already be an offering.","detailedMeaning":"On the battlefield of Kurukshetra, Krishna is finishing his teaching to Arjuna after the crisis has been named and answered. He says that anyone who studies this sacred dialogue between them is performing a sacrifice of knowledge and is worshipping him.","modernRelevance":"You open a book late at night because a hard decision is waiting tomorrow. The reading is not escape; it becomes an offering that steadies your mind before you act.","translationLiteral":"अध्येष्यते (will study) / च (also) / यः (whoever) / इमम् (this) / धर्म्यम् (sacred, righteous) / संवादम् (dialogue) / आवयोः (of us two) / ज्ञानयज्ञेन (through the sacrifice of knowledge) / तेन (by that one) / अहम् (I) / इष्टः (worshipped) / स्याम् (may be) / इति (thus) / मे (my) / मतिः (view)","verseType":"declaration","insight":"It turns study into practice, and learning into an act of reverence rather than information gathering.","quoteVariants":[{"format":"card","text":"Study our sacred dialogue. Knowledge itself becomes worship."},{"format":"widget","text":"Read deeply. Knowledge is worship."},{"format":"notification","text":"Learning this is its own offering."},{"format":"lockscreen","text":"Study with reverence. That is worship."}],"requisiteConcepts":["Bhakti","Jnana","Yajna"],"category":"devotional","tone":"devotional","targetAudience":["students","general"],"nodeId":"gyan-m","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

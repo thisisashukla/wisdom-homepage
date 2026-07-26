@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_1-36_json";
+exports.ids = ["_rsc_src_content_gita_verses_1-36_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/1-36.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/1-36.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":1,"verse":36,"order":36,"sanskrit":"निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन । पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः ॥","hindiTranslation":"हे जनार्दन इन धृतराष्ट्रसम्बन्धियों को मारकर हमलोगों को क्या प्रसन्नता होगी इन आततायियों को मारने से तो हमें पाप ही लगेगा ॥","englishTranslation":"O Janardana, what joy would come to us by killing these sons of Dhritarashtra? Killing these aggressors would only bring us sin.","essence":"Violence against kin brings no joy; it only deepens the wound.","speaker":"Arjuna","deity":"","tags":["kinship","moral-anguish","kurukshetra","ahimsa","family-war"],"simpleMeaning":"Arjuna says that killing his own relatives will bring no happiness and will only stain the killers with wrongdoing.","simpleInsight":"Moral clarity can feel painful, but it keeps you from confusing victory with peace.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna sees the war’s real cost: teachers, relatives, and family on both sides. Faced with the sons of Dhritarashtra, he says killing them would bring no joy and would burden the killers with wrongdoing.","modernRelevance":"You are about to expose a lie that will break a family dinner open. The room goes silent, and you realize winning the argument would cost something deeper than being right.","translationLiteral":"निहत्य (by killing) / धार्तराष्ट्रान् (the sons of Dhritarashtra) / नः (to us) / का (what) / प्रीतिः (joy) / स्यात् (would be) / जनार्दन (O Janardana) / पापम् (sin) / एव (only) / आश्रयेत् (would come upon) / अस्मान् (us) / हत्वा (having killed) / एतान् (these) / आततायिनः (aggressors)","verseType":"declaration","insight":"It shifts the mind from triumph to moral consequence before taking irreversible action.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"reflective","targetAudience":["general","couples","parents"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-28_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-28_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-28.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-28.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":28,"order":190,"sanskrit":"द्रव्ययज्ञास्तपोयज्ञा योगयज्ञास्तथापरे । स्वाध्यायज्ञानयज्ञाश्च यतयः संशितव्रताः ॥","hindiTranslation":"दूसरे कितने ही तीक्ष्ण व्रत करनेवाले प्रयत्नशील साधक द्रव्यसम्बन्धी यज्ञ करनेवाले हैं, और कितने ही तपोयज्ञ करनेवाले हैं, और दूसरे कितने ही योगयज्ञ करनेवाले हैं, तथा कितने ही स्वाध्यायरूप ज्ञानयज्ञ करनेवाले हैं ॥","englishTranslation":"Others offer wealth, austerity, yoga, and the study of sacred texts as sacrifice, while disciplined seekers make these offerings with firm vows.","essence":"Sacrifice can be wealth, effort, austerity, or study.","speaker":"Krishna","deity":"","tags":["svadhyaya","tapas","yajna","discipline","karma-yoga"],"simpleMeaning":"Different seekers turn different things into an offering: wealth, austerity, yoga practice, and study. All of them are disciplined forms of sacrifice.","simpleInsight":"There is more than one way to live with devotion to practice. Even study and restraint can become an offering.","detailedMeaning":"On the battlefield, Arjuna is frozen, and Krishna keeps widening his view of action. After describing sensory restraint and inner discipline, Krishna now names other seekers who turn wealth, austerity, yoga practice, and self-study into offerings.","modernRelevance":"You are up before dawn, opening a book instead of your phone, or skipping comfort to keep a vow. The sacrifice is not only dramatic; it can be quiet, disciplined, and mental.","translationLiteral":"द्रव्ययज्ञाः (wealth-offering sacrificers) / तपोयज्ञाः (austerity-offering sacrificers) / योगयज्ञाः (yoga-offering sacrificers) / तथा (likewise) / अपरे (others) / स्वाध्याय-ज्ञान-यज्ञाः (self-study and knowledge sacrificers) / च (and) / यतयः (disciplined seekers) / संशित-व्रताः (those with firm vows)","verseType":"teaching","insight":"It expands sacrifice beyond ritual into daily disciplines like study, restraint, and practice.","quoteVariants":[],"requisiteConcepts":["Yajna","Tapas","Svadhyaya"],"category":"philosophical","tone":"reflective","targetAudience":["students","professionals","general"],"nodeId":"inquiry","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

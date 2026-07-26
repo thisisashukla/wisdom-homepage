@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_15-10_json";
+exports.ids = ["_rsc_src_content_gita_verses_15-10_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/15-10.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/15-10.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":15,"verse":10,"order":561,"sanskrit":"उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम् । विमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः ॥","hindiTranslation":"शरीरको छोड़कर जाते हुए या दूसरे शरीरमें स्थित हुए अथवा विषयोंको भोगते हुए भी गुणोंसे युक्त जीवात्माके स्वरूपको मूढ़ मनुष्य नहीं जानते, ज्ञानरूपी नेत्रोंवाले ज्ञानी मनुष्य ही जानते हैं ॥","englishTranslation":"The deluded do not see the inner being departing, staying, or enjoying the world through the qualities. Those with the eye of understanding do see.","essence":"What changes is seen by the wise; the true self is not what moves.","speaker":"Krishna","deity":"","tags":["purushottama","gunas","jiva","knowledge-eye","body-identification"],"simpleMeaning":"Ordinary sight cannot grasp the true self moving through bodies and experiences. Only clear understanding sees what is really happening.","simpleInsight":"It brings relief from identifying with every passing role, state, or sensation.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen between duty and grief. Krishna explains that the true self is not visible to ordinary perception: it seems to move, stay, and enjoy through changing bodies, but only wisdom can recognize it.","modernRelevance":"You watch yourself become a different person in every room: child, employee, partner, patient, critic. The verse says the deepest part of you is not any of those shifting masks.","translationLiteral":"उत्क्रामन्तम् (departing) / स्थितम् (remaining) / वा (or) / अपि (also) / भुञ्जानम् (enjoying) / वा (or) / गुणान्वितम् (endowed with the qualities) / विमूढाः (the deluded) / न (not) / अनुपश्यन्ति (perceive) / पश्यन्ति (see) / ज्ञानचक्षुषः (those with the eye of knowledge)","verseType":"teaching","insight":"It shifts attention from the changing body and moods to the unchanging witness behind them.","quoteVariants":[{"format":"card","text":"Delusion misses the inner being. Clear seeing knows it never leaves."},{"format":"widget","text":"See clearly: action changes, the true self does not."},{"format":"notification","text":"What seems to move was never what you are."},{"format":"lockscreen","text":"See through change. The true self remains."}],"requisiteConcepts":["Purusha","Prakriti","Gunas","Atman","Buddhi"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

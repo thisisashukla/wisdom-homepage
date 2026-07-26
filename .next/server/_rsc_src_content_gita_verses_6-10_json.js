@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_6-10_json";
+exports.ids = ["_rsc_src_content_gita_verses_6-10_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/6-10.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/6-10.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":6,"verse":10,"order":243,"sanskrit":"योगी युञ्जीत सततमात्मानं रहसि स्थितः । एकाकी यतचित्तात्मा निराशीरपरिग्रहः ॥","hindiTranslation":"भोगबुद्धिसे संग्रह न करनेवाला, इच्छारहित और अन्तःकरण तथा शरीरको वशमें रखनेवाला योगी अकेला एकान्तमें स्थित होकर मनको निरन्तर परमात्मामें लगाये ॥","englishTranslation":"The disciplined yogi, dwelling alone in seclusion, should constantly unite the mind with the supreme being, free from desire and possessiveness, with body and mind under control.","essence":"Steady inward practice begins when desire and possessiveness end.","speaker":"Krishna","deity":"","tags":["dhyana","aparigraha","nirasha","yatatmya","seclusion"],"simpleMeaning":"A yogi should sit alone, keep the mind steadily focused on the divine, and let go of desire and possessiveness.","simpleInsight":"There is relief in not needing to grasp anything before you can be steady.","detailedMeaning":"Krishna is still teaching Arjuna on the battlefield, where fear and attachment have frozen action. After describing the settled yogi, he now gives the practice itself: withdraw, control the mind, and turn inward until desire and grasping fall away.","modernRelevance":"You close the bedroom door after a draining day, but your mind keeps reaching for messages, praise, and proof. This verse asks you to sit down, stop grasping, and return inward.","translationLiteral":"योगी (the yogi) / युञ्जीत (should unite) / सततम् (constantly) / आत्मानम् (the self/mind) / रहसि (in seclusion) / स्थितः (स्थित, established) / एकाकी (alone) / यतचित्तात्मा (one whose mind and inner being are restrained) / निराशीः (without desire) / अपरिग्रहः (without possessiveness)","verseType":"teaching","insight":"It shifts practice from chasing stimulation to steady inward attention.","quoteVariants":[{"format":"card","text":"Withdraw alone. Keep the mind on the divine without wanting anything."},{"format":"widget","text":"Alone. Unwanted. Unclenched."},{"format":"notification","text":"Stillness starts when wanting and holding both loosen."},{"format":"lockscreen","text":"Be alone. Stay inward. Release desire."}],"requisiteConcepts":["manas","aparigraha","nirasha","yoga"],"category":"philosophical","tone":"grounding","targetAudience":["students","professionals","general"],"nodeId":"discipline","nodePath":"action","depth":"surface"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-5.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/10-5.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":5,"order":377,"sanskrit":"अहिंसा समता तुष्टिस्तपो दानं यशोऽयशः । भवन्ति भावा भूतानां मत्त एव पृथग्विधाः ॥","hindiTranslation":"बुद्धि, ज्ञान, असम्मोह, क्षमा, सत्य, दम, शम, सुख, दुःख, भव, अभाव, भय, अभय, अहिंसा, समता, तुष्टि, तप, दान, यश और अपयश  प्राणियोंके ये अनेक प्रकारके और अलगअलग बीस भाव मेरेसे ही होते हैं ॥","englishTranslation":"Nonviolence, equanimity, contentment, austerity, charity, honor, and dishonor—all these different states of beings arise from Me alone.","essence":"All qualities are expressions of the same divine source.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","ahimsa","samata","tapas","daana"],"simpleMeaning":"Nonviolence, balance, contentment, discipline, generosity, honor, and dishonor all arise from Krishna alone in different beings.","simpleInsight":"You do not have to manufacture your best qualities alone; they are already rooted in something larger.","detailedMeaning":"On the battlefield, Arjuna is frozen by conflict. Krishna is revealing that even the finest human qualities—nonviolence, balance, contentment, discipline, generosity, honor, and dishonor—do not arise independently. They all flow from Krishna\'s presence in beings.","modernRelevance":"You catch yourself being kind in one conversation and harsh in the next, then wonder which version is real. This verse says the deeper source is bigger than either mood.","translationLiteral":"अहिंसा (nonviolence) / समता (equanimity) / तुष्टिः (contentment) / तपः (austerity) / दानम् (charity) / यशः (honor) / अयशः (dishonor) / भवन्ति (they become) / भावाḥ (states) / भूतानाम् (of beings) / मत् (from Me) / एव (only) / पृथग्विधाः (of different kinds)","verseType":"declaration","insight":"It shifts attention from self-judgment to the source of qualities, so you can align with what nourishes them.","quoteVariants":[{"format":"card","text":"Every human quality rises from the divine. Nothing stands apart."},{"format":"widget","text":"All qualities arise from Me."},{"format":"notification","text":"Even your best traits come from the divine."},{"format":"lockscreen","text":"Nothing in you stands apart."}],"requisiteConcepts":["Bhakti"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

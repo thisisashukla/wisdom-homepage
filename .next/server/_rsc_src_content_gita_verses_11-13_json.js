@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-13_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-13_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-13.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-13.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":13,"order":427,"sanskrit":"तत्रैकस्थं जगत्कृत्स्नं प्रविभक्तमनेकधा । अपश्यद्देवदेवस्य शरीरे पाण्डवस्तदा ॥","hindiTranslation":"उस समय अर्जुनने देवोंके देव भगवान् के उस शरीरमें एक जगह स्थित अनेक प्रकारके विभागोंमें विभक्त सम्पूर्ण जगत् को देखा ॥","englishTranslation":"There Arjuna saw the entire universe gathered in one place, divided in countless ways within the body of the Lord of the gods.","essence":"One form can contain the whole universe.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna","cosmic-form","universal-vision","krishna-glory"],"simpleMeaning":"Arjuna saw the whole universe inside Krishna\'s cosmic form, all held together in one body and yet appearing in countless forms.","simpleInsight":"Awe can break the mind open when it sees how much larger reality is than its fears.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is already overwhelmed by Krishna\'s cosmic form. In this moment he sees the whole universe gathered inside that single body, divided into countless forms. The vision is so vast that ordinary seeing can no longer hold it.","modernRelevance":"You open a message expecting one answer, and instead the situation reveals a whole web of hidden causes, loyalties, and consequences. The simple story you carried in your head suddenly looks too small.","translationLiteral":"तत्र (there) / एकस्थम् (in one place) / जगत्-कृत्स्नम् (the entire universe) / प्रविभक्तम् (divided) / अनेकधा (in many ways) / अपश्यत् (saw) / देवदेवस्य (of the Lord of the gods) / शरीरे (in the body) / पाण्डवः (the son of Pandu, Arjuna) / तदा (then)","verseType":"declaration","insight":"It shifts the mind from narrow, personal perception to a wider vision of interconnected reality.","quoteVariants":[],"requisiteConcepts":["Vishwarupa","Bhakti"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

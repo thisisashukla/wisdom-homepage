@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_4-20_json";
+exports.ids = ["_rsc_src_content_gita_verses_4-20_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/4-20.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/4-20.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":4,"verse":20,"order":182,"sanskrit":"त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः । कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥","hindiTranslation":"जो कर्म और फलकी आसक्तिका त्याग करके आश्रयसे रहित और सदा तृप्त है, वह कर्मोंमें अच्छी तरह लगा हुआ भी वास्तवमें कुछ भी नहीं करता ॥","englishTranslation":"One who has abandoned attachment to the fruits of action, remains ever content, and depends on nothing, does nothing at all even while fully engaged in action.","essence":"Action loses its grip when nothing in you waits to possess its fruit.","speaker":"Krishna","deity":"","tags":["karma-phala","anashakti","nityatripta","nirashraya","nishkama-karma"],"simpleMeaning":"A person can stay fully active and still be inwardly free by dropping attachment to results and resting in inner contentment.","simpleInsight":"You can give yourself completely without being owned by the outcome.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna is frozen between duty and grief. Krishna now explains the hidden freedom of action: the wise person acts, yet inwardly clings to nothing, so the action leaves no binding trace.","modernRelevance":"You send the message, make the call, or resign from the safe job — and then you stop chasing the reaction. The clean act is enough.","translationLiteral":"त्यक्त्वा (having abandoned) / कर्मफलासङ्गम् (attachment to the fruit of action) / नित्यतृप्तः (ever content) / निराश्रयः (without dependence) / कर्मणि (in action) / अभिप्रवृत्तः अपि (even while fully engaged) / न एव (indeed not) / किञ्चित् (anything) / करोति (does) / सः (he)","verseType":"declaration","insight":"It shifts attention from ownership of results to freedom within action.","quoteVariants":[{"format":"card","text":"Act fully. The doer is already free."},{"format":"widget","text":"Engaged, yet untouched."},{"format":"notification","text":"The action is happening, but nothing is being clung to."},{"format":"lockscreen","text":"Work without grasping. Stay complete."}],"requisiteConcepts":["Karma","Vairagya"],"category":"philosophical","tone":"expansive","targetAudience":["general","professionals","entrepreneurs"],"nodeId":"vairagya","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;

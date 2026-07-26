@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-27_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-27_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-27.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/7-27.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":27,"order":307,"sanskrit":"इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत । सर्वभूतानि संमोहं सर्गे यान्ति परन्तप ॥","hindiTranslation":"हे भरतवंशमें उत्पन्न परंतप  इच्छा राग और द्वेषसे उत्पन्न होनेवाले द्वन्द्वमोहसे मोहित सम्पूर्ण प्राणी संसारमें मूढ़ताको अर्थात् जन्ममरणको प्राप्त हो रहे हैं ॥","englishTranslation":"O descendant of Bharata, all beings fall into delusion at birth, from the confusion born of desire and aversion, O scorcher of foes.","essence":"Desire and aversion turn clear seeing into confusion.","speaker":"Krishna","deity":"","tags":["dvandva","raga-dvesha","moha","samsara","attraction-aversion"],"simpleMeaning":"Desire and aversion create confusion in living beings, and that confusion keeps them trapped in repeated cycles of ignorance and rebirth.","simpleInsight":"It is relieving to see that confusion has a cause, not just a character flaw.","detailedMeaning":"Krishna is still answering Arjuna on the battlefield, where everything feels split between duty and fear. He explains that ordinary beings are pushed into confusion by attraction and aversion, and that confusion keeps them caught in repeated birth and death.","modernRelevance":"You know the moment you want one thing badly and hate the other option so much that you cannot think clearly. That tug-of-war is the very fog Krishna names.","translationLiteral":"इच्छा-द्वेष (desire and aversion) / समुत्थेन (arising from) / द्वन्द्व-मोहेन (by the delusion of opposites) / भारत (O Bharata) / सर्व-भूतानि (all beings) / संमोहं (delusion) / सर्गे (at birth / in creation) / यान्ति (go to) / परन्तप (O scorcher of foes)","verseType":"teaching","insight":"It shifts the mind from blaming itself to noticing the forces of attraction and rejection that distort judgment.","quoteVariants":[{"format":"card","text":"Desire and aversion cloud every birth. Opposites keep beings confused."},{"format":"widget","text":"Desire and aversion breed confusion."},{"format":"notification","text":"What pulls you and repels you can blind you."},{"format":"lockscreen","text":"See through desire and aversion."}],"requisiteConcepts":["dvandva","raga","dvesha","samsara"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"clarity","nodePath":"wisdom","depth":"medium"}');
+
+/***/ })
+
+};
+;

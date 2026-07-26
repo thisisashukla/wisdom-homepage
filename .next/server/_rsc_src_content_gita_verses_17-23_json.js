@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_17-23_json";
+exports.ids = ["_rsc_src_content_gita_verses_17-23_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/17-23.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/17-23.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":17,"verse":23,"order":618,"sanskrit":"तत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः । ब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा ॥","hindiTranslation":"ऊँ, तत् और सत्  इन तीनों नामोंसे जिस परमात्माका निर्देश किया गया है, उसी परमात्माने सृष्टिके आदिमें वेदों, ब्राह्मणों और यज्ञोंकी रचना की है ॥","englishTranslation":"Om, Tat, and Sat are the three names by which the supreme reality is known. By that, the Vedas, the priests, and the sacrifices were established in the beginning.","essence":"Sacred action matters because it points beyond itself to what is real.","speaker":"Krishna","deity":"","tags":["om","tat","sat","yajna","vedas"],"simpleMeaning":"The sacred syllables Om, Tat, and Sat point to the supreme reality. They also mark the origin of the Vedas, priests, and sacrifices.","simpleInsight":"Sacred words are not decoration; they point the mind back to what is most real.","detailedMeaning":"Krishna is still answering Arjuna on the battlefield, but the teaching has moved from kinds of faith to the deepest frame behind all sacred action. He says that Om, Tat, and Sat are ancient names for the supreme reality, and that Vedic order, priests, and sacrifice arise from that source.","modernRelevance":"Before a memorial, a wedding, or a vow, people often reach for words that feel bigger than personal opinion. This verse reminds you that some words are meant to align action with what is most real, not just sound holy.","translationLiteral":"तत् (that) / सत् (being, real) / इति (thus) / निर्देशः (designation, name) / ब्रह्मणः (of Brahman, the supreme reality) / त्रिविधः (threefold) / स्मृतः (is remembered, is known) / ब्राह्मणाः (priests, sacred knowers) / तेन (by that) / वेदाः (the Vedas) / च (and) / यज्ञाः (sacrifices) / च (and) / विहिताः (were ordained, established) / पुरा (in the beginning, formerly)","verseType":"declaration","insight":"It shifts practice from ritual as habit to ritual as alignment with the real.","quoteVariants":[{"format":"card","text":"Om, Tat, and Sat name the supreme reality. From that, sacred order begins."},{"format":"widget","text":"Om. Tat. Sat. The real source."},{"format":"notification","text":"Three names, one reality behind everything."},{"format":"lockscreen","text":"Om, Tat, Sat: the real source"}],"requisiteConcepts":["Brahman","yajna"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"bhakti-m","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_14-20_json";
+exports.ids = ["_rsc_src_content_gita_verses_14-20_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/14-20.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/14-20.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":14,"verse":20,"order":544,"sanskrit":"गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान् । जन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते ॥","hindiTranslation":"देहधारी विवेकी मनुष्य देहको उत्पन्न करनेवाले इन तीनों गुणोंका अतिक्रमण करके जन्म, मृत्यु और वृद्धावस्थारूप दुःखोंसे रहित हुआ अमरताका अनुभव करता है ॥","englishTranslation":"The embodied one who rises beyond these three qualities, which arise from the body, is freed from birth, death, old age, and sorrow, and attains immortality.","essence":"Freedom begins when the three qualities no longer define you.","speaker":"Krishna","deity":"","tags":["gunas","janma-mrtyu-jara-duhkha","amritam","dehi","moksha"],"simpleMeaning":"A person who rises above the three qualities that shape the body is no longer bound by birth, death, old age, or sorrow.","simpleInsight":"There is relief in seeing that suffering belongs to change, not to what is deepest in you.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is frozen between duty and grief. Krishna has just explained the three qualities and their grip on human life. Now he points to the way beyond them: freedom from the cycle of bodily suffering.","modernRelevance":"You watch your body age in the mirror, then feel the panic rise with every ache, deadline, and loss. This verse says the deepest part of you is not trapped in that churn.","translationLiteral":"गुणान् (qualities) / एतान् (these) / अतीत्य (having gone beyond) / त्रीन् (three) / देही (the embodied one) / देहसमुद्भवान् (born from the body) / जन्म-मृत्यु-जरा-दुःखैः (by birth, death, old age, and sorrow) / विमुक्तः (freed) / अमृतम् (immortality) / अश्नुते (attains)","verseType":"declaration","insight":"It shifts attention from managing symptoms of change to seeing the self as untouched by them.","quoteVariants":[{"format":"card","text":"Go beyond the three qualities. Birth, death, old age, and sorrow fall away."},{"format":"widget","text":"Beyond the three. Beyond suffering."},{"format":"notification","text":"The body changes. What you are does not."},{"format":"lockscreen","text":"Rise beyond change. Know immortality."}],"requisiteConcepts":["gunas","dehi","moksha"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"moksha","nodePath":"convergence","depth":"deep"}');
+
+/***/ })
+
+};
+;

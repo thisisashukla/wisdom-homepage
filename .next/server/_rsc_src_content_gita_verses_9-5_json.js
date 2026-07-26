@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-5_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-5_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-5.json":
+/*!******************************************!*\
+  !*** ./src/content/gita/verses/9-5.json ***!
+  \******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":5,"order":343,"sanskrit":"न च मत्स्थानि भूतानि पश्य मे योगमैश्वरम् । भूतभृन्न च भूतस्थो ममात्मा भूतभावनः ॥","hindiTranslation":"यह सब संसार मेरे निराकार स्वरूपसे व्याप्त है ।  सम्पूर्ण प्राणी मुझ में स्थित हैं परन्तु मैं उनमें स्थित नहीं हूँ तथा वे प्राणी भी मेरेमें स्थित नहीं हैं  मेरे इस ईश्वरसम्बन्धी योगसामर्थ्य को देख  सम्पूर्ण प्राणियोंको उत्पन्न करनेवाला और उनका धारण, भरणपोषण करनेवाला मेरा स्वरूप उन प्राणियोंमें स्थित नहीं है ॥","englishTranslation":"Behold My divine power: beings are not in Me, and yet I sustain all beings.","essence":"The supreme reality sustains all beings without being contained by them.","speaker":"Krishna","deity":"Krishna","tags":["ishvara-yoga","omnipresence","bhutabhrit","bhutabhaavana","ch9"],"simpleMeaning":"Krishna says that all beings are sustained by him, yet he is not contained within them. He asks Arjuna to see this divine power.","simpleInsight":"You can be the source of everything without being trapped inside what you sustain.","detailedMeaning":"On the Kurukshetra battlefield, Arjuna is still receiving Krishna’s teaching about how the supreme reality pervades the world. Krishna now sharpens the point: all beings depend on him, yet he remains untouched by them. This verse deepens the mystery of divine presence.","modernRelevance":"You keep a family together, answer every message, and hold everything in place — yet no one sees how untouched you remain beneath it all.","translationLiteral":"न / च (not) / मत्स्थानि (situated in Me) / भूतानि (beings) / पश्य (behold) / मे (My) / योगम् (powerful union) / ऐश्वरम् (divine, sovereign) / भूतभृत् (sustainer of beings) / न (not) / च (and not) / भूतस्थः (situated in beings) / मम (My) / आत्मा (self) / भूतभावनः (the source and nourisher of beings)","verseType":"teaching","insight":"It shifts the mind from seeing presence as entanglement to seeing it as sustaining without being confined.","quoteVariants":[],"requisiteConcepts":["Brahman","Bhakti","Maya"],"category":"devotional","tone":"expansive","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"deep"}');
+
+/***/ })
+
+};
+;

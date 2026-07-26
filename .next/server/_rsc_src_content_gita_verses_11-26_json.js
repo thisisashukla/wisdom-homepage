@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-26_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-26_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-26.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-26.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":26,"order":440,"sanskrit":"अमी च त्वां धृतराष्ट्रस्य पुत्राःसर्वे सहैवावनिपालसङ्घैः । भीष्मो द्रोणः सूतपुत्रस्तथाऽसौसहास्मदीयैरपि योधमुख्यैः ॥","hindiTranslation":"हमारे मुख्य योद्धाओंके सहित भीष्म, द्रोण और वह कर्ण भी आपमें प्रविष्ट हो रहे हैं ।  राजाओंके समुदायोंके सहित धृतराष्ट्रके वे ही सबकेसब पुत्र आपके विकराल दाढ़ोंके कारण भयंकर मुखोंमें बड़ी तेजीसे प्रविष्ट हो रहे हैं ।  उनमेंसे कईएक तो चूर्ण हुए सिरोंसहित आपके दाँतोंके बीचमें फँसे हुए दीख रहे हैं ॥","englishTranslation":"Bhishma, Drona, Karna, and all the sons of Dhritarashtra, along with the hosts of kings and our own chief warriors, are rushing into your fearful mouths. Some are seen caught between your teeth, with crushed heads.","essence":"Even the greatest warriors are swallowed by what exceeds them.","speaker":"Arjuna","deity":"Krishna","tags":["vishwarupa","arjuna","kurukshetra","mahabharata","bhishma"],"simpleMeaning":"Arjuna sees the great warriors and kings being pulled into Krishna\'s terrible cosmic mouth, where some are crushed between the teeth.","simpleInsight":"A human battle suddenly looks powerless against a force far beyond it.","detailedMeaning":"On Kurukshetra, Arjuna is staring into Krishna\'s cosmic form and losing all sense of ordinary battle. Bhishma, Drona, Karna, and the Kauravas appear to be rushing into those terrible mouths, showing Arjuna that the war\'s outcome is already overwhelming human control.","modernRelevance":"You watch a situation collapse faster than anyone can stop it: a breakup, a lawsuit, a family conflict. Suddenly, all the planning looks tiny beside what is already in motion.","translationLiteral":"अमी (these) / च (and) / त्वां (you) / धृतराष्ट्रस्य (of Dhritarashtra) / पुत्राः (sons) / सर्वे (all) / सह (together with) / एव (indeed) / अवनिपालसङ्घैः (with hosts of kings) / भीष्मः (Bhishma) / द्रोणः (Drona) / सूतपुत्रः (the charioteer\'s son) / तथा (and) / असौ (that one) / सह (together with) / अस्मदीयैः (with our own) / अपि (also) / योधमुख्यैः (with chief warriors)","verseType":"narrative","insight":"It shifts the mind from seeing events as manageable to seeing them as forces larger than personal control.","quoteVariants":[],"requisiteConcepts":[],"category":"narrative","tone":"expansive","targetAudience":["general"],"nodeId":"","nodePath":"","depth":"surface"}');
+
+/***/ })
+
+};
+;

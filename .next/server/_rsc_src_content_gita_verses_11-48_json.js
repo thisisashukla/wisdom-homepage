@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_11-48_json";
+exports.ids = ["_rsc_src_content_gita_verses_11-48_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/11-48.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/11-48.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":11,"verse":48,"order":462,"sanskrit":"न वेदयज्ञाध्ययनैर्न दानैर्न च क्रियाभिर्न तपोभिरुग्रैः । एवंरूपः शक्य अहं नृलोकेद्रष्टुं त्वदन्येन कुरुप्रवीर ॥","hindiTranslation":"हे कुरुप्रवीर मनुष्यलोकमें इस प्रकारके विश्वरूपवाला मैं न वेदोंके पढ़नेसे, न यज्ञोंके अनुष्ठानसे, न दानसे, न उग्र तपोंसे और न मात्र क्रियाओंसे तेरे कृपापात्रके सिवाय और किसीके द्वारा देखा जाना शक्य हूँ ॥","englishTranslation":"I cannot be seen in this form in the human world by study of the Vedas, sacrifice, charity, severe austerity, or ritual acts—except by you, Arjuna.","essence":"The highest vision cannot be forced; it arrives only through grace.","speaker":"Krishna","deity":"Krishna","tags":["vishvarupa","krishna-grace","bhagavad-darshana","austerity","ritual-limits"],"simpleMeaning":"Krishna says his cosmic form cannot be seen through rituals, study, gifts, or harsh austerity. Only Arjuna, by divine grace, has that vision.","simpleInsight":"Not every treasure is earned. Some things are given only when the heart is ready.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna has already seen Krishna\'s cosmic form and wants the familiar four-armed form again. Krishna explains that this vision is not won by scholarship, sacrifice, charity, or austerity. It appears only through special grace.","modernRelevance":"You can read every book, follow every rule, and still miss what matters most. The moment of real seeing often arrives only after the grip of control finally loosens.","translationLiteral":"न (not) / वेदयज्ञाध्ययनैः (by Veda-study and sacrifices) / न (not) / दानैः (by gifts) / न (not) / च (and) / क्रियाभिः (by actions) / न (not) / तपोभिः (by austerities) / उग्रैः (severe) / एवंरूपः (of this form) / शक्यः (possible) / अहम् (I) / नृलोके (in the human world) / द्रष्टुम् (to be seen) / त्वदन्येन (by anyone other than you) / कुरुप्रवीर (O best of the Kurus)","verseType":"teaching","insight":"It shifts the mind from achievement to receptivity, showing that the deepest vision cannot be forced.","quoteVariants":[],"requisiteConcepts":["Bhakti","Shraddha","Tapas"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"surrender","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

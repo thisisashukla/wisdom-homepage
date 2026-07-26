@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_10-37_json";
+exports.ids = ["_rsc_src_content_gita_verses_10-37_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/10-37.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/10-37.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":10,"verse":37,"order":409,"sanskrit":"वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनंजयः । मुनीनामप्यहं व्यासः कवीनामुशना कविः ॥","hindiTranslation":"वृष्णिवंशियोंमें वासुदेव और पाण्डवोंमें धनञ्जय मैं हूँ ।  मुनियोंमें वेदव्यास और कवियोंमें कवि शुक्राचार्य भी मैं हूँ ॥","englishTranslation":"Among the Vrishnis I am Vasudeva; among the Pandavas I am Dhananjaya. Among sages I am Vyasa, and among poets I am Ushana, the poet.","essence":"Greatness in many forms is one presence showing itself.","speaker":"Krishna","deity":"Krishna","tags":["vibhuti","krishna-glories","vasudeva","dhananjaya","vyasa"],"simpleMeaning":"Krishna says that the finest examples in different groups of people are his expressions. Greatness in warriors, sages, and poets all points back to him.","simpleInsight":"You do not need to chase fragmented ideals; the same presence can shine through many forms.","detailedMeaning":"On the Kurukshetra battlefield, while Arjuna stands frozen, Krishna keeps unfolding his divine presence. After naming his manifestations in nature and power, he now points to living human greatness: the might of Dhananjaya, the wisdom of Vyasa, the brilliance of great poets.","modernRelevance":"You meet a mentor, a fighter, and a writer who all seem to carry the same rare force. Instead of worshipping separate idols, you begin to sense one current moving through them all.","translationLiteral":"वृष्णीनाम् (among the Vrishnis) / वासुदेवः (Vasudeva) / अस्मि (I am) / पाण्डवानाम् (among the Pandavas) / धनंजयः (Dhananjaya) / मुनीनाम् (among sages) / अपि (also) / अहम् (I) / व्यासः (Vyasa) / कवीनाम् (among poets) / उशना (Ushana) / कविः (poet)","verseType":"declaration","insight":"It shifts the mind from isolated admiration to seeing one source expressed in many gifts.","quoteVariants":[{"format":"card","text":"I am the best in every line of greatness."},{"format":"widget","text":"Greatness bears one source."},{"format":"notification","text":"Every great name points back to one presence."},{"format":"lockscreen","text":"All greatness returns to one source."}],"requisiteConcepts":["Bhakti","Vibhuti"],"category":"devotional","tone":"expansive","targetAudience":["students","professionals","general"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

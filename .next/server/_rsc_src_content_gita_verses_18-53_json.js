@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_18-53_json";
+exports.ids = ["_rsc_src_content_gita_verses_18-53_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/18-53.json":
+/*!********************************************!*\
+  !*** ./src/content/gita/verses/18-53.json ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":18,"verse":53,"order":676,"sanskrit":"अहङ्कारं बलं दर्पं कामं क्रोधं परिग्रहम् । विमुच्य निर्ममः शान्तो ब्रह्मभूयाय कल्पते ॥","hindiTranslation":"जो विशुद्ध सात्त्विकी बुद्धिसे युक्त, वैराग्यके आश्रित, एकान्तका सेवन करनेवाला और नियमित भोजन करनेवाला साधक धैर्यपूर्वक इन्द्रियोंका नियमन करके, शरीरवाणीमनको वशमें करके, शब्दादि विषयोंका त्याग करके और रागद्वेषको छोड़कर निरन्तर ध्यानयोगके परायण हो जाता है, वह अहंकार, बल, दर्प, काम, क्रोध और परिग्रहका त्याग करके एवं निर्मम तथा शान्त होकर ब्रह्मप्राप्तिका पात्र हो जाता है ॥","englishTranslation":"Free from ego, force, pride, desire, anger, and possession, one becomes peaceful, without “mine,” and fit for union with the supreme reality.","essence":"Peace begins when the sense of ownership ends.","speaker":"Krishna","deity":"","tags":["ahamkara","mamakara","parigraha","vairagya","brahmabhuta"],"simpleMeaning":"Let go of ego, pride, craving, anger, and possessiveness. When the sense of “mine” falls away, the mind becomes peaceful and ready for the supreme reality.","simpleInsight":"Freedom feels lighter than victory. What you release matters more than what you collect.","detailedMeaning":"On the battlefield of Kurukshetra, Arjuna is still frozen, and Krishna is finishing his teaching on renunciation. After showing the discipline of meditation, he names the inner poisons that block freedom: ego, force, pride, desire, anger, and possessiveness.","modernRelevance":"You type a reply full of defensiveness, then stop before sending. In that pause, you can feel the grip of “I must win” loosening. That release is the real turning point.","translationLiteral":"अहङ्कारम् (ego) / बलम् (force) / दर्पम् (pride) / कामम् (desire) / क्रोधम् (anger) / परिग्रहम् (possessiveness) / विमुच्य (having released) / निर्ममः (without mine-ness) / शान्तः (peaceful) / ब्रह्मभूयाय (for becoming the supreme reality) / कल्पते (is fit)","verseType":"declaration","insight":"It shifts the goal from self-protection to inner freedom by dropping the habits that harden the mind.","quoteVariants":[{"format":"card","text":"Release ego, pride, desire, and anger. Peace makes you fit for the supreme reality."},{"format":"widget","text":"Drop ego. Become peaceful."},{"format":"notification","text":"What remains when pride leaves is peace."},{"format":"lockscreen","text":"Let go. Become peaceful. Rise."}],"requisiteConcepts":["Ahamkara","Vairagya","Brahman"],"category":"philosophical","tone":"reflective","targetAudience":["general","students"],"nodeId":"moksha","nodePath":"convergence","depth":"deep"}');
+
+/***/ })
+
+};
+;

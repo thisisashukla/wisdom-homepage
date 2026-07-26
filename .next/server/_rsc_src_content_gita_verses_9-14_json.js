@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_9-14_json";
+exports.ids = ["_rsc_src_content_gita_verses_9-14_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/9-14.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/9-14.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":9,"verse":14,"order":352,"sanskrit":"सततं कीर्तयन्तो मां यतन्तश्च दृढव्रताः । नमस्यन्तश्च मां भक्त्या नित्ययुक्ता उपासते ॥","hindiTranslation":"नित्य मेरेमें युक्त मनुष्य दृढ़व्रती होकर लगनपूर्वक साधनमें लगे हुए और भक्तिपूर्वक कीर्तन करते हुए तथा नमस्कार करते हुये निरन्तर मेरी उपासना करते हैं ॥","englishTranslation":"Ever united with Me, steadfast in vows, they worship Me by chanting, striving, and bowing with devotion.","essence":"Steady devotion becomes a life of continual remembrance.","speaker":"Krishna","deity":"Krishna","tags":["bhakti","nityayukta","kirtana","namas","dhrdhabrata"],"simpleMeaning":"Devoted people keep chanting, bowing, and striving with steady commitment, always focused on Krishna.","simpleInsight":"Love becomes a practice, not just a feeling.","detailedMeaning":"On the battlefield, Arjuna is still frozen while Krishna describes the people who stay inwardly connected to him. These devotees do not merely believe; they keep chanting, bowing, and practicing with firm resolve.","modernRelevance":"You light a candle before dawn, repeat the same prayer, and keep showing up even when your mind is tired. Devotion lives in repetition.","translationLiteral":"सततं (continuously) / कीर्तयन्तः (chanting) / मां (Me) / यतन्तः (striving) / च (and) / दृढव्रताः (steadfast in vows) / नमस्यन्तः (bowing) / च (and) / मां (Me) / भक्त्या (with devotion) / नित्ययुक्ताः (always united) / उपासते (worship)","verseType":"devotional","insight":"It shifts devotion from private emotion to repeated, embodied practice.","quoteVariants":[],"requisiteConcepts":["Bhakti","Shraddha"],"category":"devotional","tone":"devotional","targetAudience":["general"],"nodeId":"bhakti-m","nodePath":"devotion","depth":"surface"}');
+
+/***/ })
+
+};
+;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_7-17_json";
+exports.ids = ["_rsc_src_content_gita_verses_7-17_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/7-17.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/7-17.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":7,"verse":17,"order":297,"sanskrit":"तेषां ज्ञानी नित्ययुक्त एकभक्ितर्विशिष्यते । प्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः ॥","hindiTranslation":"उन चार भक्तोंमें मेरेमें निरन्तर लगा हुआ, अनन्यभक्तिवाला ज्ञानी अर्थात् प्रेमी भक्त श्रेष्ठ है क्योंकि ज्ञानी भक्तको मैं अत्यन्त प्रिय हूँ और वह भी मेरेको अत्यन्त प्रिय है ॥","englishTranslation":"Among those four, the wise devotee who is ever united and one-pointed is श्रेष्ठ. For I am exceedingly dear to the wise one, and the wise one is dear to me.","essence":"Deep knowing and devoted love become a mutual bond.","speaker":"Krishna","deity":"","tags":["bhakti","jnana","ananyabhakti","nityayukta","priyata"],"simpleMeaning":"Among the four kinds of devotees, the wise one who is constantly devoted and single-minded stands highest. Krishna says this devotee is very dear to him, and he is very dear to that devotee.","simpleInsight":"Love deepens when understanding and devotion become one.","detailedMeaning":"On the battlefield of Kurukshetra, with Arjuna still shaken, Krishna has just described four kinds of people who turn to him. Now he crowns the wise devotee as the highest: the one whose devotion is steady, exclusive, and intimate. This verse sets up the deeper claim that follows.","modernRelevance":"You finally understand someone you once only admired from a distance. The relationship changes when attention, trust, and knowledge stop competing and start reinforcing each other.","translationLiteral":"तेषाम् (among them) / ज्ञानी (the wise one) / नित्ययुक्तः (ever united) / एकभक्तिः (one-pointed in devotion) / विशिष्यते (is distinguished, is श्रेष्ठ) । / प्रियः (dear) / हि (indeed) / ज्ञानिनः (of the wise one) / अत्यर्थम् (greatly, exceedingly) / अहम् (I) / सः (that one) / च (and) / मम (to me) / प्रियः (dear)","verseType":"declaration","insight":"It shifts devotion from neediness to intimate understanding.","quoteVariants":[],"requisiteConcepts":["Bhakti","Jnana"],"category":"devotional","tone":"devotional","targetAudience":["general","students"],"nodeId":"connection","nodePath":"devotion","depth":"medium"}');
+
+/***/ })
+
+};
+;

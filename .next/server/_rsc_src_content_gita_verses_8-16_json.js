@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_content_gita_verses_8-16_json";
+exports.ids = ["_rsc_src_content_gita_verses_8-16_json"];
+exports.modules = {
+
+/***/ "(rsc)/./src/content/gita/verses/8-16.json":
+/*!*******************************************!*\
+  !*** ./src/content/gita/verses/8-16.json ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"chapter":8,"verse":16,"order":326,"sanskrit":"आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन । मामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते ॥","hindiTranslation":"हे अर्जुन  ब्रह्मलोकतक सभी लोक पुनरावर्ती है परन्तु हे कौन्तेय  मुझे प्राप्त होनेपर पुनर्जन्म नहीं होता ॥","englishTranslation":"All worlds up to Brahma\'s realm return again, Arjuna. But having reached me, O son of Kunti, there is no rebirth.","essence":"Even the highest attainments return, but union with Krishna does not.","speaker":"Krishna","deity":"Krishna","tags":["brahmaloka","punaravarti","rebirth","moksha","krishna"],"simpleMeaning":"Even the highest realms are temporary and lead back into rebirth. Only reaching Krishna ends that cycle completely.","simpleInsight":"There is relief in knowing that the deepest security is beyond every passing world.","detailedMeaning":"On the battlefield at Kurukshetra, Arjuna stands frozen before war. Krishna has already spoken of remembrance and liberation, and now he sharpens the point: even the highest heavens are not final. Only reaching him ends the cycle of return.","modernRelevance":"You finally get what you wanted, and the relief lasts a week. Then the old restlessness comes back. This verse points to a security that does not wear out.","translationLiteral":"आब्रह्मभुवनात् (up to the world of Brahma) / लोकाः (worlds) / पुनरावर्तिनः (returning again) / अर्जुन (Arjuna) / माम् (me) / उपेत्य (having reached) / तु (but) / कौन्तेय (son of Kunti) / पुनर्जन्म (rebirth) / न (not) / विद्यते (exists)","verseType":"declaration","insight":"It shifts the mind from chasing better conditions to seeking what ends the entire cycle of return.","quoteVariants":[{"format":"card","text":"Every world returns again. Reaching me ends rebirth."},{"format":"widget","text":"All worlds return. Reaching me does not."},{"format":"notification","text":"Even Brahma\'s realm turns back. Reaching me does not."},{"format":"lockscreen","text":"Reach me. End return."}],"requisiteConcepts":["Brahman","Moksha","Samsara"],"category":"philosophical","tone":"expansive","targetAudience":["students","general"],"nodeId":"clarity","nodePath":"wisdom","depth":"deep"}');
+
+/***/ })
+
+};
+;
