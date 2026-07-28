@@ -10,6 +10,7 @@ import {
 } from '@/lib/gita'
 import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import BlogTracker from '@/components/BlogTracker'
+import DailyVerseEmail from '@/components/gita/DailyVerseEmail'
 import SanskritText from '@/components/gita/SanskritText'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
 import { getVerseAudio } from '@/lib/gita'
@@ -214,6 +215,9 @@ export default async function TodayPageHi() {
           )}
         </div>
       </article>
+
+      {/* ── Email capture — daily verse retention hook ── */}
+      <DailyVerseEmail page="gita_today_hi" locale="hi" />
 
       {/* ── The backstory ── */}
       {context && (
