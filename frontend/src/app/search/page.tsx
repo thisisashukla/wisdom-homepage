@@ -20,6 +20,10 @@ interface Intent {
   // Optional (backend added these in the 2026-07-28 pipeline changes).
   intent_type?: string
   likely_scriptures?: string[]
+  // HARD scripture filter. Populated by /intent when the user explicitly names
+  // a scripture ("Gita", "Ramcharitmanas", ...). MUST be forwarded verbatim
+  // to /search — dropping it here defeats the entire per-intent filter path.
+  scripture_lock?: string[]
 }
 
 interface VerseResult {
@@ -84,12 +88,7 @@ function humanize(slug: string): string {
     .join(' ')
 }
 
-/**
- * Display-friendly verse reference. Source data uses commas as the join
- * character across nested references (Ramcharitmanas "1,65,दोहा,1",
- * Gita "3,78"). Swap to a middle-dot for readability without touching
- * the underlying uid.
- */
+/** "1,65,दोहा,1" → "1·65·दोहा·1". Comma is a join char in source data. */
 function formatVerseRef(id: string): string {
   return id.replace(/,/g, '·')
 }
@@ -97,17 +96,11 @@ function formatVerseRef(id: string): string {
 /** True when a speaker field is worth displaying. */
 function hasRealSpeaker(s: string | undefined): boolean {
   if (!s) return false
-  const cleaned = s.trim().toLowerCase()
-  return (
-    cleaned !== '' &&
-    cleaned !== 'unknown' &&
-    cleaned !== 'anonymous' &&
-    cleaned !== 'na' &&
-    cleaned !== 'n/a'
-  )
+  const c = s.trim().toLowerCase()
+  return c !== '' && c !== 'unknown' && c !== 'anonymous' && c !== 'na' && c !== 'n/a'
 }
 
-/** Flatten a Segment[] into plain-text paragraphs for the clipboard. */
+/** Flatten Segment[] into plain text for the clipboard. */
 function segmentsToPlainText(segments: Segment[], verses: VerseResult[]): string {
   const byUid = Object.fromEntries(verses.map(v => [v.uid, v]))
   return segments.map(seg => {
@@ -214,19 +207,14 @@ function SendIcon() {
   )
 }
 
-/**
- * Small oil-lamp glyph — the Deepika motif from wisdom.md §11.
- * Serves as the assistant's identity mark on every message.
- */
+/** Small oil-lamp glyph — Deepika motif from wisdom.md §11. */
 function WisdomMark() {
   return (
     <svg viewBox="0 0 24 24" fill="none" width="14" height="14" aria-hidden>
-      {/* Flame */}
       <path
         d="M12 3c1.1 2.2.5 3.6-.6 4.7-1 1-1.4 2.1-.7 3.3.4.7 1.3 1 2 .6.9-.5 1-1.6.5-2.6 1.6.7 2.4 2.2 2.4 3.9 0 2.4-1.9 4.3-4.3 4.3S7 15.3 7 12.9C7 10 9.5 6.8 12 3z"
         fill="currentColor"
       />
-      {/* Base */}
       <path d="M6.5 19.5 h11 c0 1.1-.9 2-2 2 h-7 c-1.1 0-2-.9-2-2z" fill="currentColor" opacity="0.65" />
     </svg>
   )
@@ -262,8 +250,8 @@ function PullQuote({
 }) {
   const [expanded, setExpanded] = useState(false)
   const displayText = verse.essence || verse.english_translation
-  // Sanskrit is now always visible in the collapsed card, so the expand
-  // toggle only exists when translation / meaning / insight / tags are present.
+  // Sanskrit is now always visible in the collapsed card, so it no longer
+  // gates the expand toggle — only meaning/insight/tags do.
   const hasDetail =
     (verse.english_translation && verse.english_translation !== displayText) ||
     verse.simple_meaning ||
@@ -327,7 +315,7 @@ function PullQuote({
           </div>
         </div>
 
-        {/* Body: essence line (prominent) + Devanagari shloka (subtle). */}
+        {/* Body: essence line (prominent) + Devanagari (subtle). */}
         <p className="pull-quote__text">{displayText}</p>
         {verse.verse_sanskrit && (
           <p
@@ -339,7 +327,6 @@ function PullQuote({
           </p>
         )}
 
-        {/* Expanded detail: translation, meaning, insight, tags. */}
         {expanded && (
           <div className="pull-quote__detail">
             {verse.english_translation && verse.english_translation !== displayText && (
@@ -447,13 +434,13 @@ function PhaseIndicator({ phase, intents }: { phase: LoadPhase; intents: Intent[
 }
 
 // ── Suggested questions ───────────────────────────────────────────────────────
-// Each card has a title (the question the user will send) and a hint (what
-// the seeker is likely feeling behind that question). Six cards fill a 2×3
-// grid at desktop, stack single-column on mobile.
+// Two-column grid of cards. Each has a title (the question the user sends)
+// and a hint (what the seeker is likely feeling behind it). Six cards on
+// desktop, stack single-column on mobile.
 
 const SUGGESTED: Array<{ title: string; hint: string }> = [
   { title: 'How to be at peace during uncertainty?',        hint: 'When the ground keeps moving.' },
-  { title: 'What does the Gita say about duty and action?', hint: 'On karma, dharma, and doing the work.' },
+  { title: 'What does the Gita say about duty and action?', hint: 'Karma, dharma, and doing the work.' },
   { title: 'Verses on overcoming fear and anxiety',         hint: 'Steadying the restless mind.' },
   { title: 'How do I control my restless mind?',            hint: 'Practices from the Yoga Sutras.' },
   { title: 'What is the nature of the self?',               hint: 'Atman, Brahman, and everything between.' },
@@ -470,9 +457,12 @@ function ChatWelcome({ onSuggest }: { onSuggest: (q: string) => void }) {
       </div>
       <h1 className="chat-welcome__title">Ask the Scriptures</h1>
       <p className="chat-welcome__sub">
-        Wisdom from 18,000+ verses — Bhagavad Gita, Upanishads, Ashtavakra Gita,
-        Ramcharitmanas, Yoga Sutras, and more.
+        Wisdom from 18,000+ verses — the Bhagavad Gita, Upanishads,
+        Ashtavakra Gita, Ramcharitmanas, Yoga Sutras, and more.
       </p>
+      <div className="chat-welcome__ornament" aria-hidden>
+        <span /><span /><span />
+      </div>
       <div className="chat-welcome__grid">
         {SUGGESTED.map(s => (
           <button
@@ -483,6 +473,23 @@ function ChatWelcome({ onSuggest }: { onSuggest: (q: string) => void }) {
           >
             <span className="suggestion-card__title">{s.title}</span>
             <span className="suggestion-card__hint">{s.hint}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+/** LEGACY chip-based welcome — retained for reference only; not rendered. */
+function _LegacyChatWelcome({ onSuggest }: { onSuggest: (q: string) => void }) {
+  return (
+    <div className="chat-welcome">
+      <h1 className="chat-welcome__title">Ask the Scriptures</h1>
+      <p className="chat-welcome__sub">Wisdom from 18,000+ verses.</p>
+      <div className="chat-welcome__suggestions">
+        {SUGGESTED.map(s => (
+          <button key={s.title} className="search-suggestion" onClick={() => onSuggest(s.title)}>
+            {s.title}
           </button>
         ))}
       </div>
@@ -775,11 +782,10 @@ export default function SearchPage() {
     }
   }, [updateMsg])
 
-  // Copy-to-clipboard with a global "Copied" toast at the bottom of the page.
+  // Copy-to-clipboard with a bottom-center toast confirmation.
   const [copyToast, setCopyToast] = useState(false)
   const handleCopy = useCallback((text: string) => {
     if (!text) return
-    // navigator.clipboard is HTTPS-only; fall through silently in http-dev.
     const done = () => {
       setCopyToast(true)
       window.setTimeout(() => setCopyToast(false), 1500)
@@ -787,17 +793,13 @@ export default function SearchPage() {
     if (navigator.clipboard?.writeText) {
       navigator.clipboard.writeText(text).then(done).catch(() => { /* ignore */ })
     } else {
-      // Legacy fallback for older browsers / non-secure contexts.
       try {
         const ta = document.createElement('textarea')
         ta.value = text
-        ta.style.position = 'fixed'
-        ta.style.opacity = '0'
+        ta.style.position = 'fixed'; ta.style.opacity = '0'
         document.body.appendChild(ta)
-        ta.select()
-        document.execCommand('copy')
-        document.body.removeChild(ta)
-        done()
+        ta.select(); document.execCommand('copy')
+        document.body.removeChild(ta); done()
       } catch { /* ignore */ }
     }
   }, [])
@@ -850,10 +852,11 @@ export default function SearchPage() {
 
       // 2 — retrieve verses
       //
-      // The /search endpoint now takes full Intent objects (intent, description,
-      // intent_type, likely_scriptures) so search can apply per-type diversity
-      // rules and scripture-hint biases. Passing just strings breaks Pydantic
-      // validation server-side — this is intentional post-2026-07-28.
+      // Forward the intents to /search as full objects. scripture_lock is
+      // the HARD filter that pins each intent's cosine retrieval to a
+      // specific scripture — dropping it here would make single-scripture
+      // and comparison queries silently return whatever cosine surfaces
+      // across the whole corpus (Dheesh Gita, Vishnu Gita, etc.).
       const searchRes  = await fetch(`${BACKEND}/api/v1/search`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -863,6 +866,7 @@ export default function SearchPage() {
             description: i.description,
             intent_type: i.intent_type || 'philosophical',
             likely_scriptures: i.likely_scriptures || [],
+            scripture_lock: i.scripture_lock || [],
           })),
           top_k: 6,
         }),
@@ -920,9 +924,9 @@ export default function SearchPage() {
         </div>
 
         {/* ── Input bar ────────────────────────────────────────────────── */}
-        {/* Pill-shaped input; textarea + send button sit in one rounded frame
-            for a modern chat feel. In production the whole flow is gated
-            behind a Coming Soon state — inputs disabled, placeholder swapped. */}
+        {/* In production the entire search flow is gated — disable the
+            textarea + send button and swap the placeholder. Dev keeps the
+            full working input. */}
         <div className="chat-input-bar">
           <div className="chat-input-wrap">
             <textarea
