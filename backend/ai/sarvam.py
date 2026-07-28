@@ -138,6 +138,72 @@ class SarvamClient:
             retries=1,
         )
 
+    def synthesize_rag_stream(
+        self,
+        system_prompt: str,
+        user_content: str,
+        max_tokens: int = 4096,
+    ):
+        """
+        Streaming variant of synthesize_rag. Yields raw text deltas as they
+        arrive from the Sarvam SSE stream. Callers are responsible for
+        buffering the full JSON and parsing at end-of-stream (the JSON is a
+        single object — no meaningful mid-stream parse).
+
+        The wisdom-homepage frontend consumes this by streaming raw chunks to
+        the UI as "typing" progress, then re-parsing the accumulated buffer as
+        JSON once the stream closes to render the final segment layout.
+
+        Yields str chunks (may be '', callers should skip empty). Never yields
+        None. Raises on transport or SDK errors; empty completion raises
+        ValueError so the caller can decide whether to fall back to non-stream.
+
+        NOTE: JSON mode + streaming is technically supported by the Sarvam API
+        (see docs). If the deployed model or plan does not stream a JSON
+        response cleanly, fall back to the non-streaming synthesize_rag().
+        """
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user",   "content": user_content},
+        ]
+        additional: dict = {
+            "reasoning_effort": None,
+            "response_format": {"type": "json_object"},
+        }
+
+        try:
+            stream = self._client.chat.completions(
+                model=self.model,
+                messages=messages,
+                temperature=0.4,
+                max_tokens=max_tokens,
+                stream=True,
+                request_options={"additional_body_parameters": additional},
+            )
+        except Exception as e:
+            logger.error("Sarvam stream open failed: %s", e)
+            raise
+
+        total_chars = 0
+        for event in stream:
+            # SDK event shape: event.choices[0].delta.content (str or None)
+            try:
+                delta = event.choices[0].delta
+            except (AttributeError, IndexError):
+                continue
+            chunk = getattr(delta, "content", None) or ""
+            if chunk:
+                total_chars += len(chunk)
+                yield chunk
+
+        if total_chars == 0:
+            raise ValueError(
+                "Sarvam stream produced zero content — reasoning may have consumed "
+                "the token budget or the endpoint rejected streaming JSON."
+            )
+
+        logger.info("Sarvam stream complete | total_chars=%d", total_chars)
+
     def generate_json(self, system_prompt: str, user_content: str, max_tokens: int = 2048) -> dict:
         """
         Generic JSON generation — used for verse-of-day context (date_context,

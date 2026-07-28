@@ -12,6 +12,12 @@ class Settings(BaseSettings):
         env_file=".env",
         env_file_encoding="utf-8",
         extra="ignore",
+        # `model_dir` and `model_config` both start with "model_" — pydantic
+        # v2 protects that namespace by default and warns at class-creation
+        # time. Opt out so our field names are allowed. (We're using
+        # pydantic-settings, not defining actual model weights, so nothing
+        # is at risk here.)
+        protected_namespaces=(),
     )
 
     # ── Sarvam ───────────────────────────────────────────────────────────────

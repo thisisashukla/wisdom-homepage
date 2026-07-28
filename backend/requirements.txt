@@ -9,4 +9,6 @@ tf-keras>=2.16.0          # keras 3 compat shim for transformers
 torch>=2.3.0
 sarvamai==0.1.0
 httpx==0.27.2
-supabase>=2.0.0           # verse-of-day persistence
+supabase>=2.0.0           # verse-of-day + verses pgvector + audio storage
+requests>=2.31.0          # http backend for vagdhenu (self-hosted GPU service)
+gradio_client>=1.3.0      # hf_space backend for vagdhenu (default)

@@ -120,3 +120,21 @@ async def health_check():
         "embedder_loaded": _embedder is not None and _embedder._model is not None,
         "index_size": _index.size if _index else 0,
     }
+
+
+# ── Entry point ──────────────────────────────────────────────────────────────
+# Boot the server when this file is invoked directly (`python main.py`) so it
+# behaves the same as `uvicorn main:app --host 0.0.0.0 --port 8000 --reload`.
+# For production, still prefer `uvicorn` on the command line so you can pass
+# --workers, --log-config, --lifespan, etc.
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(
+        "main:app",
+        host=os.environ.get("HOST", "0.0.0.0"),
+        port=int(os.environ.get("PORT", "8000")),
+        # reload=True picks up code changes without a manual restart during
+        # development. Turn this off in production via UVICORN_RELOAD=0.
+        reload=os.environ.get("UVICORN_RELOAD", "1") == "1",
+    )
