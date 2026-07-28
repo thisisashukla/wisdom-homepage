@@ -3,12 +3,12 @@ import BlogTracker from '@/components/BlogTracker'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "Sattva, Rajas, Tamas: The Three Gunas of the Bhagavad Gita Explained | Wisdom",
-  description: "The Gita says three qualities (gunas) make up all of nature, including your personality and moods. Sattva is clarity, rajas is drive, tamas is inertia. Understanding them changes how you read your own inner states.",
+  title: "Sattva, Rajas, Tamas Meaning — The Three Gunas of the Bhagavad Gita, Explained Simply | Wisdom",
+  description: "Sattva (clarity), rajas (drive) and tamas (inertia) are the three gunas of the Bhagavad Gita. Chapter 14 says they make up all of nature — including your personality, food, work and moods. Here is what each one means, how they interact, and how to read your own state right now.",
   keywords: "sattva rajas tamas meaning, three gunas bhagavad gita, sattva rajas tamas explained, what are the three gunas, gunatraya bhagavad gita, sattva guna meaning, rajas guna meaning, tamas guna meaning, gunatita state, bhagavad gita chapter 14, three gunas in daily life",
   openGraph: {
-    title: "Sattva, Rajas, Tamas: The Three Gunas of the Bhagavad Gita Explained | Wisdom",
-    description: "The Gita says three qualities (gunas) make up all of nature, including your personality and moods. Sattva is clarity, rajas is drive, tamas is inertia.",
+    title: "Sattva, Rajas, Tamas Meaning — The Three Gunas of the Bhagavad Gita, Explained Simply",
+    description: "Sattva (clarity), rajas (drive) and tamas (inertia) — the three gunas of the Gita explained simply, with Chapter 14 verses and how to read your own state right now.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/sattva-rajas-tamas-three-gunas-bhagavad-gita",
     siteName: 'Wisdom',
@@ -506,7 +506,7 @@ export default function ThreeGunasPage() {
       </figure>
 
       <p className="lead">
-        Some mornings you wake up clear, focused, ready to think. Other mornings you wake up irritable, scattered, and find yourself doing things you didn&apos;t plan to do. The Bhagavad Gita has a precise account of why this happens. It&apos;s not a character flaw. It&apos;s not random. It&apos;s the gunas.
+        <strong>Sattva, rajas and tamas</strong> are the three gunas — the three fundamental qualities — that the Bhagavad Gita says make up all of nature, including your personality, your food, your work, and your current mood. <strong>Sattva</strong> is clarity and knowledge. <strong>Rajas</strong> is activity and desire. <strong>Tamas</strong> is inertia and confusion. Chapter 14 lays out the full framework in 27 verses, and it changes how you read your own inner states once you see it. Some mornings you wake up clear, focused, ready to think — that is sattva rising. Other mornings you wake up irritable, scattered, restless — that is rajas. Some days you cannot move at all — that is tamas. The Gita&apos;s account is precise and practical.
       </p>
 
       <h2>Why the Gunas Matter</h2>

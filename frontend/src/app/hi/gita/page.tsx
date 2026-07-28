@@ -11,9 +11,9 @@ import BlogTracker from '@/components/BlogTracker'
 import SavedVersesPanel from '@/components/gita/SavedVersesPanel'
 
 export const metadata: Metadata = {
-  title: 'भगवद् गीता — सभी 18 अध्याय, संस्कृत श्लोक हिन्दी अनुवाद सहित | Wisdom',
+  title: 'भगवद् गीता — 700 श्लोक हिन्दी अर्थ सहित | सभी 18 अध्याय | Wisdom',
   description:
-    'भगवद् गीता ऑनलाइन पढ़ें। 18 अध्याय, 700 श्लोक — संस्कृत मूल, हिन्दी अनुवाद और अंग्रेज़ी अर्थ सहित।',
+    'सम्पूर्ण भगवद् गीता हिन्दी में पढ़ें — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ सहित। 18 अध्याय, 700 से अधिक श्लोक, सरल हिन्दी में। निःशुल्क ऑनलाइन।',
   alternates: {
     canonical: 'https://wisdomquotes.in/hi/gita',
     languages: {
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'भगवद् गीता — सभी 18 अध्याय हिन्दी अनुवाद सहित',
-    description: 'भगवद् गीता ऑनलाइन पढ़ें — अध्याय दर अध्याय, श्लोक दर श्लोक।',
+    title: 'भगवद् गीता — 700 श्लोक हिन्दी अर्थ सहित | सभी 18 अध्याय',
+    description: 'सम्पूर्ण भगवद् गीता हिन्दी में — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ। 18 अध्याय, 700 श्लोक।',
     url: 'https://wisdomquotes.in/hi/gita',
     type: 'website',
     siteName: 'Wisdom',

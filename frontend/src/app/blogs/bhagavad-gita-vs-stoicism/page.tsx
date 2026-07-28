@@ -3,12 +3,12 @@ import BlogTracker from '@/components/BlogTracker'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita vs Stoicism: 9 Teachings That Are Surprisingly Similar | Wisdom",
-  description: "Marcus Aurelius and Krishna never met. But they reached remarkably similar conclusions about action, equanimity, duty, and the self. Here are 9 parallel teachings — and where they actually differ.",
+  title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Actually Share | Wisdom",
+  description: "Marcus Aurelius and Krishna never met, yet reached strikingly similar conclusions on action, equanimity and duty. 9 side-by-side teachings — where Stoicism and the Gita agree, and the one place they part ways.",
   keywords: "bhagavad gita vs stoicism, bhagavad gita stoicism comparison, stoicism and hinduism, marcus aurelius bhagavad gita, gita and stoic philosophy, stoicism karma yoga, epictetus bhagavad gita, meditations marcus aurelius gita, stoicism detachment results",
   openGraph: {
-    title: "Bhagavad Gita vs Stoicism: 9 Teachings That Are Surprisingly Similar | Wisdom",
-    description: "Marcus Aurelius and Krishna never met. But they reached similar conclusions about action, equanimity, duty, and the self. 9 parallel teachings and where they differ.",
+    title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Actually Share",
+    description: "Marcus Aurelius and Krishna never met — yet they reached strikingly similar conclusions on action, equanimity, and duty. 9 side-by-side teachings, and the one place Stoicism and the Gita part ways.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
     siteName: 'Wisdom',

@@ -3,12 +3,12 @@ import BlogTracker from '@/components/BlogTracker'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita for Students: 9 Lessons on Focus, Failure, and Effort | Wisdom",
-  description: "The Gita was taught to someone who froze under pressure right before the biggest test of his life. Here are 9 lessons specifically relevant to students: focus, results anxiety, effort, failure, and the mind.",
+  title: "Bhagavad Gita for Students — Key Verses on Focus, Exam Stress & Effort (Exam-Ready Summary) | Wisdom",
+  description: "The Gita was taught to someone who froze under pressure right before the biggest test of his life. 9 key verses for students — focus, exam stress, results anxiety, effort, and the restless mind — with Sanskrit, meaning and application.",
   keywords: "bhagavad gita for students, bhagavad gita lessons for students, bhagavad gita on focus, bhagavad gita exam stress, bhagavad gita student life, bhagavad gita on effort and results, bhagavad gita study tips, bhagavad gita for youth, bhagavad gita on discipline",
   openGraph: {
-    title: "Bhagavad Gita for Students: 9 Lessons on Focus, Failure, and Effort | Wisdom",
-    description: "The Gita was taught to someone who froze under pressure right before the biggest test of his life. 9 lessons on focus, results anxiety, effort, and the mind.",
+    title: "Bhagavad Gita for Students — Key Verses on Focus, Exam Stress & Effort",
+    description: "The Gita was taught to someone who froze under pressure right before the biggest test of his life. 9 key verses for students on focus, exam stress, effort, failure, and the mind.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-for-students",
     siteName: 'Wisdom',

@@ -12,6 +12,7 @@ import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import BlogTracker from '@/components/BlogTracker'
 import SanskritText from '@/components/gita/SanskritText'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
+import DailyVerseEmail from '@/components/gita/DailyVerseEmail'
 import { getVerseAudio } from '@/lib/gita'
 
 // Re-render once an hour so the day rolls over cleanly without manual rebuilds.
@@ -218,6 +219,9 @@ export default async function TodayPage() {
           )}
         </div>
       </article>
+
+      {/* ── Email capture — highest-engagement page, the only retention hook ── */}
+      <DailyVerseEmail page="gita_today" locale="en" />
 
       {/* ── The backstory ── */}
       {context && (

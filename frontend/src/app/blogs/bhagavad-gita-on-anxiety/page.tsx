@@ -3,12 +3,12 @@ import BlogTracker from '@/components/BlogTracker'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "What the Bhagavad Gita Says About Anxiety: 9 Verses That Help | Wisdom",
-  description: "The Bhagavad Gita opens with a panic attack. Arjuna shakes, his bow drops, his vision blurs. Krishna's answer spans 18 chapters. Here are 9 verses specifically about anxiety, fear, and the restless mind.",
+  title: "Bhagavad Gita on Anxiety — 9 Verses That Directly Address Fear, Worry & Overthinking | Wisdom",
+  description: "The Gita opens with a panic attack: Arjuna shakes, his bow drops, his vision blurs. 9 verses that directly address anxiety, fear, worry and the restless mind — Sanskrit, English meaning, and what Krishna actually tells him to do.",
   keywords: "bhagavad gita on anxiety, what does bhagavad gita say about anxiety, bhagavad gita verses for anxiety, bhagavad gita stress, bhagavad gita on fear, bhagavad gita mental health, bhagavad gita on worry, bhagavad gita restless mind, bhagavad gita depression",
   openGraph: {
-    title: "What the Bhagavad Gita Says About Anxiety: 9 Verses That Help | Wisdom",
-    description: "The Gita opens with a panic attack. Arjuna's hands shake, his bow drops. Krishna's answer spans 18 chapters. Here are 9 verses specifically about anxiety and the restless mind.",
+    title: "Bhagavad Gita on Anxiety — 9 Verses That Directly Address Fear, Worry & Overthinking",
+    description: "The Gita opens with a panic attack — Arjuna shakes, his bow drops. 9 verses that directly address anxiety, fear, worry and the restless mind, with Sanskrit and English meaning.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-on-anxiety",
     siteName: 'Wisdom',
