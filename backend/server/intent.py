@@ -40,34 +40,86 @@ _VALID_TYPES: set[str] = {
 }
 
 
-# ── Scripture slug allow-list (must match the corpus) ────────────────────────
-# Anything not in this set is dropped from scripture_lock — retrieval against
-# an unknown scripture would return zero rows and silently break the query.
+# ── Scripture slug allow-list (loaded dynamically from the corpus) ───────────
+# We used to hardcode this. That broke silently when the corpus used different
+# spellings (e.g. "ramacharitamanas" instead of "ramcharitmanas") — the alias
+# map pointed at slugs that didn't exist, so scripture_lock filtered to zero.
+# Now we read whatever the loaded index actually contains, so the allow-list
+# always matches reality.
+#
+# Falls back to a broad hardcoded set if the index isn't initialised yet
+# (e.g. someone imports this module during test collection).
 
-_KNOWN_SCRIPTURES: set[str] = {
+_FALLBACK_KNOWN_SCRIPTURES: set[str] = {
+    # v1 corpus snapshot (from `python -c "collections.Counter of verses.json"`).
     "bhagwad_gita",
-    "katha_upanishad", "isha_upanishad", "mundaka_upanishad",
-    "chandogya_upanishad", "brihadaranyaka_upanishad", "mandukya_upanishad",
-    "taittiriya_upanishad", "kena_upanishad", "prashna_upanishad",
-    "aitareya_upanishad",
-    "yoga_sutras",
-    "ramayana", "ramcharitmanas",
-    "mahabharata",
-    "srimad_bhagavatam", "vishnu_purana",
-    "ashtavakra_gita",
+    "ramacharitamanas",
+    "shambhu_gita", "shakti_gita", "vishnu_gita", "dheesh_gita",
+    "surya_gita", "ram_gita", "hans_gita", "avadhuta_gita", "ashtavakra_gita",
+    "brihadaranyak_upanishad", "chhandogya_upanishad", "maha_upanishad",
+    "tejobindu_upanishad", "tripad_vibhuti_mahanarayana_upanishad",
+    "shandilya_upanishad", "shri_ram_rahasya_upanishad", "taittiriya_upanishad",
+    "yogakundalini_upanishad", "kaushitaki_upanishad", "yogatattva_upanishad",
+    "maitrayani_upanishad", "yogachudamani_upanishad", "dhyanbindu_upanishad",
+    "kath_upanishad", "shwetashwetar_upanishad", "brahmavidya_upanishad",
+    "rama_purva_tapiniya_upanishad", "paingal_upanishad", "prashn_upanishad",
+    "pashupat_upanishad", "maitreya_upanishad", "adhyatma_upanishad",
+    "akshmalika_upanishad", "mandala_brahmana_upanishad", "mundaka_upanishad",
+    "nirvana_upanishad", "shukrahasya_upanishad", "katharudra_upanishad",
+    "naadbindu_upanishad", "akshi_upanishad", "parabrahm_upanishad",
+    "sita_upanishad", "niralamb_upanishad", "aitareya_upanishad",
+    "garuda_upanishad", "yagyavalkya_upanishad", "atmabodh_upanishad",
+    "amritnad_upanishad", "sharabh_upanishad", "aatma_upanishad",
+    "advyataarak_upanishad", "paramhans_parivrajak_upanishad",
+    "devi_upanishad", "dakhsinamurti_upanishad", "kundika_upanishad",
+    "sarvasaar_upanishad", "garbh_upanishad", "krishna_upanishad",
+    "jabal_upanishad", "kaivalya_upanishad", "kshurika_upanishad",
+    "amritbindu_upanishad", "maantrik_upanishad", "aarunik_upanishad",
+    "isha_upanishad", "bhavna_upanishad", "narayana_upanishad",
+    "tripur_upanishad", "skand_upanishad", "ekakshar_upanishad",
+    "kalagnirudra_upanishad", "mahavakya_upanishad", "pranav_upanishad",
+    "vajrasuchika_upanishad", "mandukya_upanishad", "brahvrach_upanishad",
+    "turiyateet_upanishad", "bhikshuk_upanishad", "kalisamtaran_upanishad",
+    "shiv_sankalp_upanishad",
     "other",
 }
 
+_known_cache: set[str] | None = None
 
-# ── Alias → canonical slug ──────────────────────────────────────────────────
-# The LLM emits sloppy slugs constantly. This map normalises them before the
-# allow-list check so we don't lose scripture_lock to a formatting mistake.
-# "gita" alone is the biggest one: without this the model's "gita" gets
-# dropped as unknown and scripture_lock ends up empty, causing retrieval
-# to return Dheesh Gita / Vishnu Gita by cosine.
+
+def _known_scriptures() -> set[str]:
+    """
+    Return the set of scripture slugs actually present in the loaded corpus.
+    Cached after first lookup. Falls back to a hardcoded snapshot if the
+    index isn't ready.
+    """
+    global _known_cache
+    if _known_cache is not None:
+        return _known_cache
+    try:
+        from ai.index import get_index
+        idx = get_index()
+        # Both NumpyScriptureIndex and SupabaseScriptureIndex expose _by_scripture
+        # as an internal dict of scripture → verses. We only need the keys.
+        by_scripture = getattr(idx, "_by_scripture", None)
+        if by_scripture:
+            _known_cache = set(by_scripture.keys())
+            logger.info("Loaded %d scripture slugs from live index", len(_known_cache))
+            return _known_cache
+    except Exception as e:
+        logger.warning("Could not load scripture set from index (%s) — using fallback", e)
+    _known_cache = set(_FALLBACK_KNOWN_SCRIPTURES)
+    return _known_cache
+
+
+# ── Alias → canonical corpus slug ────────────────────────────────────────────
+# User-facing names on the left → the ACTUAL slug used in verses.json on the
+# right. If the corpus later renames a scripture (e.g. "ramacharitamanas" →
+# "ramcharitmanas"), update this map — the alias key stays the same because
+# it's what users type.
 
 _SCRIPTURE_ALIASES: dict[str, str] = {
-    # Bhagavad Gita — every reasonable variant of the name
+    # ── Bhagavad Gita ──
     "gita": "bhagwad_gita",
     "the_gita": "bhagwad_gita",
     "bg": "bhagwad_gita",
@@ -80,35 +132,71 @@ _SCRIPTURE_ALIASES: dict[str, str] = {
     "shrimad_bhagavad_gita": "bhagwad_gita",
     "shreemad_bhagavad_gita": "bhagwad_gita",
 
-    # Ramcharitmanas
-    "tulsi_ramayan": "ramcharitmanas",
-    "tulsidas_ramayana": "ramcharitmanas",
-    "tulsidas": "ramcharitmanas",
-    "ramcharit_manas": "ramcharitmanas",
-    "sri_ramcharitmanas": "ramcharitmanas",
+    # ── Ramcharitmanas — corpus spells it "ramacharitamanas" ──
+    "ramcharitmanas": "ramacharitamanas",
+    "ramcharit_manas": "ramacharitamanas",
+    "ram_charit_manas": "ramacharitamanas",
+    "ram_charitamanas": "ramacharitamanas",
+    "sri_ramcharitmanas": "ramacharitamanas",
+    "shri_ramcharitmanas": "ramacharitamanas",
+    "tulsi_ramayan": "ramacharitamanas",
+    "tulsi_ramayana": "ramacharitamanas",
+    "tulsidas_ramayana": "ramacharitamanas",
+    "ramayan_of_tulsidas": "ramacharitamanas",
+    "tulsidas": "ramacharitamanas",
 
-    # Ramayana
+    # ── Ramayana (Valmiki) — NOT in v1 corpus but keep the mapping so
+    # future additions Just Work. Users saying "Ramayana" typically mean
+    # Valmiki's, not Tulsidas's Ramcharitmanas.
     "valmiki_ramayana": "ramayana",
 
-    # Yoga Sutras
+    # ── Yoga Sutras ──
     "patanjali": "yoga_sutras",
+    "patanjali_sutras": "yoga_sutras",
     "patanjali_yoga_sutras": "yoga_sutras",
     "yogasutras": "yoga_sutras",
 
-    # Mahabharata
+    # ── Mahabharata / Bhagavatam / Puranas ──
     "mahabharat": "mahabharata",
-
-    # Bhagavatam
     "bhagavatam": "srimad_bhagavatam",
     "bhagavat_purana": "srimad_bhagavatam",
     "shrimad_bhagavatam": "srimad_bhagavatam",
 
-    # Ashtavakra
+    # ── Other Gitas the corpus has ──
     "ashtavakra": "ashtavakra_gita",
+    "avadhoot_gita": "avadhuta_gita",
+    "avadhoot": "avadhuta_gita",
+    "avadhuta": "avadhuta_gita",
+    "hansa_gita": "hans_gita",
+    "hansagita": "hans_gita",
+    "hamsa_gita": "hans_gita",
 
-    # Upanishads — plural stays empty (not a specific scripture)
-    "upanishads": "",   # explicit drop
-    "upanishad":  "",
+    # ── Upanishads (corpus uses shortened / alternate spellings) ──
+    "katha_upanishad": "kath_upanishad",
+    "kathaupanishad": "kath_upanishad",
+    "chandogya_upanishad": "chhandogya_upanishad",
+    "chhandogya": "chhandogya_upanishad",
+    "chandogya": "chhandogya_upanishad",
+    "brihadaranyaka_upanishad": "brihadaranyak_upanishad",
+    "brihad_upanishad": "brihadaranyak_upanishad",
+    "brihadaranyaka": "brihadaranyak_upanishad",
+    "prashna_upanishad": "prashn_upanishad",
+    "prashnopanishad": "prashn_upanishad",
+    "shvetashvatara_upanishad": "shwetashwetar_upanishad",
+    "svetasvatara_upanishad": "shwetashwetar_upanishad",
+    "shwetashvatara": "shwetashwetar_upanishad",
+    "ishavasya_upanishad": "isha_upanishad",
+    "ishopanishad": "isha_upanishad",
+    "ishaupanishad": "isha_upanishad",
+    "mundakopanishad": "mundaka_upanishad",
+    "mandukyaupanishad": "mandukya_upanishad",
+    "mandukyopanishad": "mandukya_upanishad",
+    "aitareyaupanishad": "aitareya_upanishad",
+    "taittiriyaupanishad": "taittiriya_upanishad",
+    "taittiriya": "taittiriya_upanishad",
+    # Plural (unspecific) → drop
+    "upanishads": "",
+    "upanishad": "",
 }
 
 
@@ -142,14 +230,15 @@ def _clean_slug_list(raw: Any, max_len: int, known_only: bool) -> list[str]:
     """
     if not isinstance(raw, list):
         return []
+    allow = _known_scriptures() if known_only else None
     out: list[str] = []
     seen: set[str] = set()
     for s in raw:
         slug = _canonical_slug(s)
         if not slug or slug in seen:
             continue
-        if known_only and slug not in _KNOWN_SCRIPTURES:
-            logger.info("Dropped unknown scripture slug %r (not in allow-list)", s)
+        if allow is not None and slug not in allow:
+            logger.info("Dropped unknown scripture slug %r → %r (not in loaded corpus)", s, slug)
             continue
         out.append(slug)
         seen.add(slug)
@@ -165,13 +254,26 @@ def _clean_slug_list(raw: Any, max_len: int, known_only: bool) -> list[str]:
 # "ramcharitmanas". This is the belt to the prompt's suspenders.
 
 _GITA_QUALIFIERS = re.compile(
-    r"\b(ashtavakra|vishnu|dheesh|uddhava|avadhoot|anu|hansa|ganesha|shiva|guru|kapila|ribhu)\s+gita\b",
+    r"\b(ashtavakra|vishnu|dheesh|uddhava|avadhoot|avadhuta|anu|hans|hansa|hamsa|ganesha|shiva|shambhu|shakti|surya|ram|guru|kapila|ribhu)\s+gita\b",
     re.IGNORECASE,
 )
 _BARE_GITA_MENTION = re.compile(r"\b(bhagavad\s+gita|bhagwad\s+gita|bhagwat\s+gita|the\s+gita|gita|bg)\b", re.IGNORECASE)
-_RAMCHARIT_MENTION = re.compile(r"\b(ramcharit\s*manas|tulsi(?:das)?(?:\s+ramayan)?|ramchaitmanas|ramcharitmanas)\b", re.IGNORECASE)
+_RAMCHARIT_MENTION = re.compile(r"\b(ramacharitamanas|ramcharit\s*manas|tulsi(?:das)?(?:\s+ramayan[a]?)?|ramchaitmanas|ramcharitmanas)\b", re.IGNORECASE)
 _YOGASUTRA_MENTION = re.compile(r"\b(yoga\s+sutras?|patanjali)\b", re.IGNORECASE)
 _ASHTAVAKRA_MENTION = re.compile(r"\bashtavakra(\s+gita)?\b", re.IGNORECASE)
+
+# Qualified-gita specific patterns → map to the actual corpus slugs so
+# "vishnu gita on X", "dheesh gita on Y", etc. lock to those texts.
+_QUALIFIED_GITA_MAP: list[tuple[re.Pattern[str], str]] = [
+    (re.compile(r"\bvishnu\s+gita\b",      re.IGNORECASE), "vishnu_gita"),
+    (re.compile(r"\bdheesh\s+gita\b",      re.IGNORECASE), "dheesh_gita"),
+    (re.compile(r"\bshambhu\s+gita\b",     re.IGNORECASE), "shambhu_gita"),
+    (re.compile(r"\bshakti\s+gita\b",      re.IGNORECASE), "shakti_gita"),
+    (re.compile(r"\bsurya\s+gita\b",       re.IGNORECASE), "surya_gita"),
+    (re.compile(r"\bram\s+gita\b",         re.IGNORECASE), "ram_gita"),
+    (re.compile(r"\b(hans|hansa|hamsa)\s+gita\b", re.IGNORECASE), "hans_gita"),
+    (re.compile(r"\b(avadhoot|avadhuta)\s+gita\b", re.IGNORECASE), "avadhuta_gita"),
+]
 
 
 def _infer_locks_from_query(query: str) -> list[str]:
@@ -179,24 +281,31 @@ def _infer_locks_from_query(query: str) -> list[str]:
     Return the scriptures the raw query explicitly names, using text patterns
     that don't require the LLM to have followed instructions. Used as a
     fallback when the model returned empty scripture_lock but the query
-    clearly named a scripture.
+    clearly named a scripture. Returned slugs are ALREADY canonical (they
+    match the corpus).
     """
     locks: list[str] = []
 
-    # Gita → bhagwad_gita, UNLESS a qualifier ("ashtavakra gita", "vishnu
-    # gita", etc.) precedes it — those are different texts and get their
-    # own explicit mentions.
+    # ── Named non-Bhagavad Gitas ── (Vishnu, Dheesh, Shambhu, …).
+    # Match first because these are more specific than a bare "gita" mention.
+    for pat, slug in _QUALIFIED_GITA_MAP:
+        if pat.search(query):
+            locks.append(slug)
+
+    # Ashtavakra has its own regex because "Ashtavakra" without "gita" also counts.
+    if _ASHTAVAKRA_MENTION.search(query):
+        locks.append("ashtavakra_gita")
+
+    # ── Bare "Gita" → Bhagavad Gita ──
+    # Only when a bare (unqualified) Gita mention exists in the query. If ONLY
+    # a qualified-gita phrase is present, don't inject Bhagavad Gita.
     if _BARE_GITA_MENTION.search(query):
-        # If a qualified gita is what appeared, respect that.
-        if _ASHTAVAKRA_MENTION.search(query):
-            locks.append("ashtavakra_gita")
-        # If ONLY qualifier-gita appears (no bare Gita mention outside it),
-        # skip. Otherwise the bare mention → bhagwad_gita.
         if not _GITA_QUALIFIERS.search(query) or _bare_gita_beyond_qualifier(query):
             locks.append("bhagwad_gita")
 
+    # ── Ramcharitmanas — canonical corpus slug is "ramacharitamanas" ──
     if _RAMCHARIT_MENTION.search(query):
-        locks.append("ramcharitmanas")
+        locks.append("ramacharitamanas")
 
     if _YOGASUTRA_MENTION.search(query):
         locks.append("yoga_sutras")
