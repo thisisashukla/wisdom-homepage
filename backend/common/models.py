@@ -1,107 +1,130 @@
 """
 models.py — Shared Pydantic request/response schemas.
 
-Change history (2026-07-28):
-- Intent now carries intent_type + likely_scriptures (soft hint, not filter).
-- IntentRequest accepts optional context (compact prior turn) for follow-up rewriting.
-- IntentResponse can return a rewritten standalone query.
-- SearchRequest.intents is now List[Intent] (was List[str]) so the search layer
-  can use intent_type for diversity rules and likely_scriptures for score bias.
-- SearchRequest gets min_score (floor) and diversify_scriptures (cap-per-scripture).
-- RagRequest carries intent_type so the synthesizer can pick a voice profile.
+v2 changes (retrieval overhaul):
+  - Intent gains `intent_type` (routes voice profile in RAG) and `scripture_hint`
+    (soft signal, NOT a hard filter).
+  - IntentRequest accepts optional turn `history` for follow-up rewriting.
+  - IntentResponse can carry a rewritten `standalone_query` and a `verse_refs`
+    fast-path payload (when the query cites specific chapter.verse ids).
+  - SearchResponse gains `no_strong_match` — the frontend can show a fallback
+    UI instead of piping weak verses to RAG.
+  - VerseResult gains `source` (dense | reranked | verse_ref) and
+    `rerank_score` (populated only when the reranker ran).
+  - RagRequest accepts `intent_type` so we can pick a voice profile per call.
 """
 from __future__ import annotations
 
-from typing import Any, Dict, List, Literal, Optional
+from typing import List, Literal, Optional
 from pydantic import BaseModel, Field
 
 
-# ── Intent typing ─────────────────────────────────────────────────────────────
-# Fixed vocabulary so downstream code can branch on it without string chaos.
-# Keep this list short; add types only when a distinct voice/retrieval rule
-# actually depends on it.
+# ── Shared enums ──────────────────────────────────────────────────────────────
+
+# Intent type gates BOTH the voice profile (RAG prompt suffix) and downstream
+# retrieval heuristics (e.g. narrative queries deserve longer passages).
 IntentType = Literal[
-    "grief",           # loss, mourning, heartbreak, deep sadness
-    "practical",       # "how do I stop being angry", concrete life problem
-    "philosophical",   # nature of self / reality / karma / dharma
-    "devotional",      # bhakti, surrender, prayer, love of the divine
-    "intellectual",    # scholarly, comparative, definitional
-    "referential",     # asks for a specific verse or chapter by reference
-    "narrative",       # asks for a story, backstory, dialogue
+    "grief",         # loss, sadness, longing
+    "philosophical", # abstract inquiry — self, reality, karma, dharma
+    "practical",     # "how do I stop being angry" — actionable
+    "devotional",    # bhakti, surrender, love of the divine
+    "referential",   # asks about a specific verse / chapter / speaker
+    "narrative",     # asks for a story, backstory, dialogue
+    "other",         # fallback — voice defaults to philosophical
 ]
+
+Scripture = str  # free-form slug so we can add scriptures without churn
+
+
+# ── Turn history (for follow-up rewriting) ────────────────────────────────────
+
+class Turn(BaseModel):
+    """One prior turn of the conversation. Kept small on purpose."""
+    role: Literal["user", "assistant"]
+    content: str = Field(..., max_length=2000)
 
 
 # ── Intent endpoint ───────────────────────────────────────────────────────────
 
 class IntentRequest(BaseModel):
     query: str = Field(..., min_length=3, max_length=500)
-    # Compact summary of the prior assistant turn (≤ 150 tokens recommended).
-    # If present, the intent extractor rewrites context-dependent queries
-    # ("tell me more", "what about anger") into standalone form before
-    # extracting intents.
-    context: Optional[str] = Field(default=None, max_length=2000)
+    # Optional last 2–4 turns. When present the model may rewrite a bare
+    # follow-up ("tell me more", "what about anger") into a standalone query.
+    history: Optional[List[Turn]] = None
 
 
 class Intent(BaseModel):
     intent: str
     description: str
-    intent_type: IntentType = "philosophical"
-    # Soft hint from the model — used to bias search scores, NOT as a hard
-    # filter. Empty list means "no preference".
-    likely_scriptures: List[str] = Field(default_factory=list)
-    # HARD pre-filter. Populated ONLY when the user explicitly names a
-    # scripture in the query (e.g. "what does the Gita say about anger",
-    # "compare Gita and Ramcharitmanas"). Cosine retrieval for this intent
-    # runs over the filtered subset only — verses from other scriptures
-    # cannot appear in this intent's candidate pool.
-    #
-    # For a comparison query naming two scriptures, the intent extractor
-    # produces two intents (one per scripture), each with its own
-    # single-element scripture_lock — each becomes an independent targeted
-    # retrieval call.
-    scripture_lock: List[str] = Field(default_factory=list)
+    # Voice + retrieval routing. Model always emits this; defaults to "other".
+    intent_type: IntentType = "other"
+
+
+class VerseRef(BaseModel):
+    """
+    A parsed chapter.verse citation.
+
+    Two-level: Gita 2.47 → chapter=2, verse=47, section=None
+    Three-level: Katha 1.2.15 → chapter=1, section=2, verse=15 (Upanishads
+    that index chapter.section.verse). `section=None` means a flat 2-level
+    ref. The uid is built by joining non-None parts with commas.
+    """
+    scripture: Scripture              # canonical slug: "bhagwad_gita"
+    chapter: int
+    verse: int
+    section: Optional[int] = None     # 3-level refs (Katha, Chhandogya, etc.)
+    raw: str                          # what the user typed
 
 
 class IntentResponse(BaseModel):
     query: str
-    valid: bool = True          # False = off-topic or injection — frontend stops pipeline
-    reason: str = ""            # human-readable explanation when valid=False
+    valid: bool = True                # False = off-topic or injection
+    reason: str = ""                  # human-readable explanation when invalid
     intents: List[Intent]
-    # Filled only when the raw query was a follow-up and the extractor
-    # rewrote it into a standalone form. Frontend can display this so the
-    # user sees what was searched.
-    rewritten_query: Optional[str] = None
+
+    # Optional signals produced by the intent stage
+    standalone_query: Optional[str] = None   # follow-up rewritten into standalone
+    scripture_hint: List[Scripture] = []     # soft signal — NOT a hard filter
+    verse_refs: List[VerseRef] = []          # parsed fast-path payload
 
 
 # ── Search endpoint ───────────────────────────────────────────────────────────
 
+class SearchIntent(BaseModel):
+    """
+    One intent as forwarded by the frontend to /search.
+
+    The frontend passes full intent objects (not plain strings) so it can
+    carry per-intent signals — most notably `scripture_lock`, a hard filter
+    that pins retrieval to a specific scripture when the user names one
+    explicitly ("only from the Gita", "just Upanishads"). This avoids the
+    bug where a single-scripture query silently pulls from the whole corpus.
+
+    `likely_scriptures` is a soft hint — same semantics as SearchRequest's
+    top-level `scripture_hint` but expressed per intent.
+    """
+    intent: str
+    description: str = ""
+    intent_type: IntentType = "other"
+    likely_scriptures: List[Scripture] = []
+    scripture_lock: List[Scripture] = []   # HARD per-intent scripture filter
+
+
 class SearchRequest(BaseModel):
-    intents: List[Intent]                         # rich objects, not raw strings
-    top_k: int = Field(default=8, ge=1, le=20)    # final results returned
-    # Hard filter — used only when the UI has an explicit "search in X" toggle.
-    scripture_filter: Optional[List[str]] = None
-    # Score floor. Verses below this cosine similarity are dropped even if
-    # they made top_k. Calibrated against golden_v1 — the enriched BGE-M3
-    # index typically returns 0.55+ for real matches and 0.30–0.40 for
-    # noise. 0.35 is a conservative floor.
-    min_score: float = Field(default=0.35, ge=0.0, le=1.0)
-    # If true, at most `max_per_scripture` verses from any single scripture
-    # can appear in the final top_k. Prevents Gita from dominating every
-    # inter-scripture question.
-    diversify_scriptures: bool = True
-    max_per_scripture: int = Field(default=3, ge=1, le=10)
-    # Multiplier applied to cosine score when a verse's scripture matches
-    # one of the intent's likely_scriptures hints. 1.0 = no bias.
-    scripture_hint_bias: float = Field(default=1.08, ge=1.0, le=1.5)
-    # Additive bonus per additional intent that a verse also matched. A
-    # verse hit by 2 of 2 intents scores higher than one hit by 1.
-    coverage_bonus_per_extra_hit: float = Field(default=0.05, ge=0.0, le=0.2)
+    intents: List[SearchIntent]
+    top_k: int = Field(default=8, ge=1, le=20)             # bumped 5 → 8
+    scripture_filter: Optional[List[Scripture]] = None      # HARD filter (UI toggle)
+    scripture_hint: Optional[List[Scripture]] = None        # SOFT bias only
+    verse_refs: Optional[List[VerseRef]] = None             # fast-path
+    max_per_scripture: int = Field(default=3, ge=1, le=10)  # diversity cap
+    score_floor: float = Field(default=0.42, ge=0.0, le=1.0)  # → no_strong_match
+    enable_reranker: bool = True
 
 
 class VerseResult(BaseModel):
     uid: str
-    scripture: str
-    scripture_slug: str
+    scripture: Scripture
+    scripture_slug: Scripture
     verse_id: str
     verse_sanskrit: str
     verse_hindi: str
@@ -112,71 +135,69 @@ class VerseResult(BaseModel):
     modern_relevance: str
     speaker: str
     tags: List[str]
-    score: float                        # final composite score (post-bias, post-bonus)
-    raw_score: float = 0.0              # original cosine, useful for eval / debugging
-    intent: str                         # best-matching intent text
-    intent_hits: int = 1                # how many intents this verse matched
-    match_reason: str = "semantic"      # "semantic" | "verse_ref" | "hybrid"
-    # ── Audio (populated when using the Supabase-backed index) ───────────
-    # audio_url is nullable — a null value means the frontend should call
-    # POST /api/v1/audio/generate to lazily produce audio via vagdhenu.
-    audio_url: Optional[str] = None
-    audio_timestamps: Optional[List[dict]] = None
-    # Prosody hint carried through so the play button can pass it to
-    # /audio/generate when audio_url is missing. Defaults to anushtubh.
-    meter: str = "anushtubh"
+    score: float                              # final rank score used for ordering
+    dense_score: float = 0.0                  # raw cosine
+    rerank_score: Optional[float] = None      # populated only when reranker ran
+    intent: str                               # which intent surfaced this verse
+    intent_coverage: int = 1                  # how many intents hit this verse
+    source: Literal["dense", "reranked", "verse_ref"] = "dense"
 
 
 class SearchResponse(BaseModel):
-    results: List[VerseResult]              # deduplicated, sorted by score
-    dropped_below_floor: int = 0            # how many candidates were below min_score
-    scriptures_present: List[str] = []      # ordered by count, for RAG attribution
+    results: List[VerseResult]
+    no_strong_match: bool = False             # frontend can show fallback UI
+    top_dense_score: float = 0.0              # for debugging / observability
 
 
 # ── RAG endpoint ─────────────────────────────────────────────────────────────
 
 class Segment(BaseModel):
-    type: str                      # "text" | "verse"
-    content: Optional[str] = None  # for type="text": prose paragraphs
-    uid: Optional[str] = None      # for type="verse": exact verse uid
+    type: Literal["text", "verse"]
+    content: Optional[str] = None             # text segments
+    uid: Optional[str] = None                 # verse segments
 
 
 class RagRequest(BaseModel):
     query: str
     verses: List[VerseResult]
-    mode: str = "crisp"                          # "crisp" | "detailed" | "story"
-    # Drives voice-profile selection in the RAG prompt. Optional; if absent,
-    # the default philosophical profile is used.
-    intent_type: Optional[IntentType] = None
-    # If the retrieval spans multiple scriptures, pass them here so the
-    # synthesizer can attribute correctly ("The Gita says X, while the
-    # Katha Upanishad emphasizes Y").
-    scriptures_present: List[str] = Field(default_factory=list)
+    mode: Literal["crisp", "detailed"] = "crisp"
+    intent_type: IntentType = "other"         # picks voice profile in prompts/rag.py
 
 
 class RagResponse(BaseModel):
     query: str
-    segments: List[Segment]        # structured answer: alternating text + verse blocks
-    verse_uids_used: List[str]     # ordered list of verse uids used
+    segments: List[Segment]
+    verse_uids_used: List[str]
 
 
-# ── Verse of the Day endpoint (unchanged) ────────────────────────────────────
+# ── Streaming (SSE) ───────────────────────────────────────────────────────────
+
+class RagStreamChunk(BaseModel):
+    """
+    Emitted by /api/v1/rag/stream over SSE.
+
+      kind='delta' — raw token delta (frontend accumulates into a JSON buffer)
+      kind='done'  — final parsed segments + verse_uids_used
+      kind='error' — human-readable failure
+    """
+    kind: Literal["delta", "done", "error"]
+    delta: Optional[str] = None
+    segments: Optional[List[Segment]] = None
+    verse_uids_used: Optional[List[str]] = None
+    error: Optional[str] = None
+
+
+# ── Verse of the Day endpoint (unchanged) ─────────────────────────────────────
 
 class VerseOfDayResponse(BaseModel):
-    """
-    The daily curated verse — returned by GET /api/v1/verse-of-day.
-    The frontend uses chapter + verse to look up the full verse content from
-    its own static JSON, and renders date_context / why_chosen / story as
-    editorial sections around the verse.
-    """
-    date: str
+    date: str                   # "YYYY-MM-DD" — the IST calendar date
     chapter: int
     verse: int
-    verse_uid: str
+    verse_uid: str              # "bhagwad_gita:chapter.verse"
 
-    day_of_week: str
-    deity: str
-    day_name_hi: str
+    day_of_week: str            # "Tuesday"
+    deity: str                  # "Mangal (Mars)"
+    day_name_hi: str            # "Mangalvar"
 
     date_context: str
     why_chosen: str

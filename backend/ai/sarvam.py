@@ -7,7 +7,7 @@ Key findings from docs (docs.sarvam.ai/api/api-guides-tutorials/chat-completion/
   with finish_reason='length'. Fix: explicitly disable via additional_body_parameters.
 - response_format, reasoning_effort, and other extra params must go through
   request_options.additional_body_parameters in the Python SDK to be guaranteed sent.
-- sarvam-30b max_tokens: up to 4096 (Starter) / 8192 (Pro).
+- sarvam-105b (replaces deprecated sarvam-30b) max_tokens: up to 4096 (Starter) / 16384 (Pro) / 128000 (Business).
 """
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ import json
 import logging
 import re
 import time
-from typing import Any
+from typing import Any, Iterator
 
 from sarvamai import SarvamAI
 
@@ -31,7 +31,7 @@ def _parse_json(text: str) -> Any:
 
 
 class SarvamClient:
-    def __init__(self, api_key: str, model: str = "sarvam-30b"):
+    def __init__(self, api_key: str, model: str = "sarvam-105b"):
         self.model   = model
         self._client = SarvamAI(api_subscription_key=api_key)
         logger.info("SarvamClient ready | model=%s", model)
@@ -143,66 +143,58 @@ class SarvamClient:
         system_prompt: str,
         user_content: str,
         max_tokens: int = 4096,
-    ):
+    ) -> Iterator[str]:
         """
-        Streaming variant of synthesize_rag. Yields raw text deltas as they
-        arrive from the Sarvam SSE stream. Callers are responsible for
-        buffering the full JSON and parsing at end-of-stream (the JSON is a
-        single object — no meaningful mid-stream parse).
+        Streaming variant of synthesize_rag. Yields raw content deltas as they
+        arrive from Sarvam. The caller is responsible for accumulating the
+        deltas into a JSON buffer and parsing at the end.
 
-        The wisdom-homepage frontend consumes this by streaming raw chunks to
-        the UI as "typing" progress, then re-parsing the accumulated buffer as
-        JSON once the stream closes to render the final segment layout.
+        The response is emitted as `json_mode` so the accumulated text is
+        guaranteed to be a valid JSON object once complete. Individual deltas
+        are NOT JSON-valid — do not attempt to parse them mid-stream.
 
-        Yields str chunks (may be '', callers should skip empty). Never yields
-        None. Raises on transport or SDK errors; empty completion raises
-        ValueError so the caller can decide whether to fall back to non-stream.
-
-        NOTE: JSON mode + streaming is technically supported by the Sarvam API
-        (see docs). If the deployed model or plan does not stream a JSON
-        response cleanly, fall back to the non-streaming synthesize_rag().
+        reasoning_effort is disabled (same as non-streaming path); with json
+        mode Sarvam should not emit reasoning_content deltas, but we defensively
+        skip anything that arrives on that channel.
         """
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user",   "content": user_content},
         ]
-        additional: dict = {
+        additional = {
             "reasoning_effort": None,
-            "response_format": {"type": "json_object"},
+            "response_format":  {"type": "json_object"},
         }
 
         try:
             stream = self._client.chat.completions(
-                model=self.model,
-                messages=messages,
-                temperature=0.4,
-                max_tokens=max_tokens,
-                stream=True,
-                request_options={"additional_body_parameters": additional},
+                model            = self.model,
+                messages         = messages,
+                temperature      = 0.4,
+                max_tokens       = max_tokens,
+                stream           = True,
+                request_options  = {"additional_body_parameters": additional},
             )
         except Exception as e:
             logger.error("Sarvam stream open failed: %s", e)
             raise
 
-        total_chars = 0
-        for event in stream:
-            # SDK event shape: event.choices[0].delta.content (str or None)
+        for chunk in stream:
+            # Sarvam mirrors OpenAI-style SSE deltas: choices[0].delta.content
             try:
-                delta = event.choices[0].delta
-            except (AttributeError, IndexError):
+                choices = getattr(chunk, "choices", None) or []
+                if not choices:
+                    continue
+                delta = getattr(choices[0], "delta", None)
+                if delta is None:
+                    continue
+                content = getattr(delta, "content", None)
+                if content:
+                    yield content
+            except Exception as e:
+                # Do NOT let a malformed chunk kill the stream — log and continue.
+                logger.warning("Malformed stream chunk skipped: %s", e)
                 continue
-            chunk = getattr(delta, "content", None) or ""
-            if chunk:
-                total_chars += len(chunk)
-                yield chunk
-
-        if total_chars == 0:
-            raise ValueError(
-                "Sarvam stream produced zero content — reasoning may have consumed "
-                "the token budget or the endpoint rejected streaming JSON."
-            )
-
-        logger.info("Sarvam stream complete | total_chars=%d", total_chars)
 
     def generate_json(self, system_prompt: str, user_content: str, max_tokens: int = 2048) -> dict:
         """
@@ -232,7 +224,7 @@ def get_sarvam() -> SarvamClient:
     return _client
 
 
-def init_sarvam(api_key: str, model: str = "sarvam-30b") -> SarvamClient:
+def init_sarvam(api_key: str, model: str = "sarvam-105b") -> SarvamClient:
     global _client
     _client = SarvamClient(api_key=api_key, model=model)
     return _client

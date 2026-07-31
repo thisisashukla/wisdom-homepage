@@ -285,10 +285,10 @@
 
 .suggestion-card__hint {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: rgba(245, 232, 204, 0.6);
   line-height: 1.5;
-  font-style: italic;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-style: normal;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Legacy chip-style suggestion (kept for other callers of .search-suggestion). */
@@ -440,8 +440,8 @@
   margin: 0 0 14px;
   font-size: 1rem;
   line-height: 1.78;
-  color: var(--text-secondary);
-  font-weight: 300;
+  color: rgba(245, 232, 204, 0.88);
+  font-weight: 400;
   letter-spacing: 0.002em;
 }
 
@@ -458,11 +458,11 @@
 .pull-quote {
   position: relative;
   margin: 20px 0;
-  padding: 18px 18px 16px 20px;
+  padding: 18px 18px 16px 22px;
   background:
-    linear-gradient(180deg, rgba(200, 136, 30, 0.055) 0%, rgba(200, 136, 30, 0.02) 100%),
-    rgba(255, 255, 255, 0.015);
-  border: 1px solid var(--border-soft);
+    linear-gradient(180deg, rgba(200, 136, 30, 0.10) 0%, rgba(200, 136, 30, 0.04) 100%),
+    rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(200, 136, 30, 0.28);
   border-left: none;
   border-radius: 0 var(--radius-card) var(--radius-card) 0;
   opacity: 0;
@@ -472,9 +472,9 @@
 }
 
 .pull-quote:hover {
-  border-color: var(--border-mid);
+  border-color: rgba(200, 136, 30, 0.48);
   transform: translateY(-1px);
-  box-shadow: 0 6px 24px -12px rgba(200, 136, 30, 0.22);
+  box-shadow: 0 6px 28px -10px rgba(200, 136, 30, 0.32);
 }
 
 /* Left accent bar as a pseudo-element so the border-radius is clean. */
@@ -483,9 +483,9 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 3px;
-  background: linear-gradient(to bottom, var(--gold-core), var(--gold-bright));
-  border-radius: 3px 0 0 3px;
+  width: 4px;
+  background: linear-gradient(to bottom, var(--gold-bright), var(--gold-core));
+  border-radius: 4px 0 0 4px;
 }
 
 .pull-quote__inner {
@@ -530,14 +530,14 @@
 .pull-quote__ref-num {
   font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
   font-size: 0.78rem;
-  color: rgba(200, 136, 30, 0.85);
+  color: rgba(200, 136, 30, 1);
   letter-spacing: 0.02em;
   font-style: normal;
   white-space: nowrap;
 }
 
 .pull-quote__speaker {
-  color: var(--text-muted);
+  color: rgba(245, 232, 204, 0.6);
   font-size: 0.75rem;
   letter-spacing: 0.02em;
   white-space: nowrap;
@@ -569,15 +569,16 @@
   font-style: normal;
 }
 
-/* Body: the essence line — larger, prominent serif italic. */
+/* Body: the essence line — serif upright, weight 700 for legibility. No italic. */
 .pull-quote__text {
   font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
-  font-size: 1.14rem;
-  line-height: 1.55;
-  color: var(--gold-bright);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.18rem;
+  line-height: 1.5;
+  color: #f5e8cc;
   margin: 0;
-  letter-spacing: 0.005em;
+  letter-spacing: 0.01em;
 }
 
 /* Devanagari shloka: shown in the collapsed card too. */
@@ -592,7 +593,7 @@
 .pull-quote__devanagari--inline {
   font-size: 0.9rem;
   line-height: 1.75;
-  color: rgba(245, 232, 204, 0.4);
+  color: rgba(245, 232, 204, 0.6);
   margin: -4px 0 0;
   letter-spacing: 0.01em;
 }
@@ -682,35 +683,36 @@
 .pull-quote__detail {
   margin-top: 4px;
   padding-top: 14px;
-  border-top: 1px solid rgba(200, 136, 30, 0.14);
+  border-top: 1px solid rgba(200, 136, 30, 0.28);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   overflow: hidden;
   animation: expandDown 0.28s ease both;
 }
 
 .pull-quote__translation {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 0.94rem;
-  line-height: 1.7;
-  color: rgba(245, 232, 204, 0.7);
-  font-style: italic;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.96rem;
+  line-height: 1.72;
+  color: rgba(245, 232, 204, 0.84);
+  font-style: normal;
+  font-weight: 400;
   margin: 0;
 }
 
 .pull-quote__meaning {
-  font-size: 0.9rem;
-  line-height: 1.7;
-  color: rgba(245, 232, 204, 0.55);
+  font-size: 0.92rem;
+  line-height: 1.72;
+  color: rgba(245, 232, 204, 0.82);
   margin: 0;
 }
 
 .pull-quote__insight {
-  font-size: 0.9rem;
-  line-height: 1.7;
-  color: rgba(245, 232, 204, 0.7);
-  border-left: 2px solid rgba(200, 136, 30, 0.28);
+  font-size: 0.92rem;
+  line-height: 1.72;
+  color: rgba(245, 232, 204, 0.88);
+  border-left: 3px solid rgba(200, 136, 30, 0.55);
   padding-left: 14px;
   margin: 0;
 }
@@ -724,11 +726,11 @@
 
 .pull-quote__tag {
   padding: 3px 10px;
-  background: rgba(200, 136, 30, 0.08);
-  border: 1px solid var(--border-soft);
+  background: rgba(200, 136, 30, 0.12);
+  border: 1px solid rgba(200, 136, 30, 0.28);
   border-radius: 6px;
   font-size: 0.72rem;
-  color: rgba(200, 136, 30, 0.7);
+  color: rgba(200, 136, 30, 0.9);
   letter-spacing: 0.02em;
   transition: background var(--transition-fast), color var(--transition-fast);
 }

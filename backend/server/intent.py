@@ -1,499 +1,121 @@
 """
-server/intent.py — POST /intent
+server/intent.py — POST /api/v1/intent
 
-Step 1 of the RAG pipeline. Single LLM call handles:
-  - guardrail (rejects off-topic / injection)
-  - follow-up rewriting (if req.context provided)
-  - intent extraction with type + likely_scriptures (soft) + scripture_lock (hard)
+Step 1 of the RAG pipeline.
 
-Server-side hardening (2026-07-28):
-  - Alias normalisation: whatever the model emits ("gita", "bhagavad_gita",
-    "tulsidas", …) gets rewritten to the canonical slug used by the corpus
-    ("bhagwad_gita", "ramcharitmanas", …) BEFORE the allow-list check. The
-    LLM is not reliable about slugs; this map is authoritative.
-  - Auto-inject scripture_lock=["bhagwad_gita"] when the raw query mentions
-    "gita" (or "bg") without a qualifying prefix and the model failed to
-    populate scripture_lock. Belt-and-suspenders defense — the prompt tells
-    the model to do this, and if it doesn't, we do it here.
+Validates the query (rejects off-topic / injection), extracts 1–3 intents,
+tags each with an intent_type (routes voice profile), optionally emits a
+scripture_hint (soft signal), and — when history is provided — rewrites
+follow-up queries into standalone queries. It also parses obvious
+chapter.verse citations via the regex fast-path so downstream retrieval
+can short-circuit to a direct uid lookup.
+
+Everything above happens in ONE LLM call plus one cheap regex pass.
 """
 from __future__ import annotations
 
 import logging
-import re
-from typing import Any
+from typing import Set
 
 from fastapi import APIRouter
 
 from ai.sarvam import get_sarvam
-from common.models import IntentRequest, IntentResponse, Intent, IntentType
+from ai.verse_ref import parse as parse_verse_refs
+from common.models import Intent, IntentRequest, IntentResponse
+
 from prompts.intent import INTENT_SYSTEM_PROMPT, build_intent_user_prompt
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
 
 
-# ── Valid intent_type values (defensive coercion) ────────────────────────────
-
-_VALID_TYPES: set[str] = {
-    "grief", "practical", "philosophical", "devotional",
-    "intellectual", "referential", "narrative",
-}
-
-
-# ── Scripture slug allow-list (loaded dynamically from the corpus) ───────────
-# We used to hardcode this. That broke silently when the corpus used different
-# spellings (e.g. "ramacharitamanas" instead of "ramcharitmanas") — the alias
-# map pointed at slugs that didn't exist, so scripture_lock filtered to zero.
-# Now we read whatever the loaded index actually contains, so the allow-list
-# always matches reality.
-#
-# Falls back to a broad hardcoded set if the index isn't initialised yet
-# (e.g. someone imports this module during test collection).
-
-_FALLBACK_KNOWN_SCRIPTURES: set[str] = {
-    # v1 corpus snapshot (from `python -c "collections.Counter of verses.json"`).
-    "bhagwad_gita",
+# Whitelist of scripture slugs the model may emit as a hint. Anything else
+# is silently dropped — protects downstream code from typos / hallucinations.
+_KNOWN_SCRIPTURES: Set[str] = {
+    "bhagwad_gita", "ashtavakra_gita", "ram_gita", "hans_gita",
+    "vishnu_gita", "shakti_gita", "shambhu_gita", "surya_gita", "dheesh_gita",
     "ramacharitamanas",
-    "shambhu_gita", "shakti_gita", "vishnu_gita", "dheesh_gita",
-    "surya_gita", "ram_gita", "hans_gita", "avadhuta_gita", "ashtavakra_gita",
-    "brihadaranyak_upanishad", "chhandogya_upanishad", "maha_upanishad",
-    "tejobindu_upanishad", "tripad_vibhuti_mahanarayana_upanishad",
-    "shandilya_upanishad", "shri_ram_rahasya_upanishad", "taittiriya_upanishad",
-    "yogakundalini_upanishad", "kaushitaki_upanishad", "yogatattva_upanishad",
-    "maitrayani_upanishad", "yogachudamani_upanishad", "dhyanbindu_upanishad",
-    "kath_upanishad", "shwetashwetar_upanishad", "brahmavidya_upanishad",
-    "rama_purva_tapiniya_upanishad", "paingal_upanishad", "prashn_upanishad",
-    "pashupat_upanishad", "maitreya_upanishad", "adhyatma_upanishad",
-    "akshmalika_upanishad", "mandala_brahmana_upanishad", "mundaka_upanishad",
-    "nirvana_upanishad", "shukrahasya_upanishad", "katharudra_upanishad",
-    "naadbindu_upanishad", "akshi_upanishad", "parabrahm_upanishad",
-    "sita_upanishad", "niralamb_upanishad", "aitareya_upanishad",
-    "garuda_upanishad", "yagyavalkya_upanishad", "atmabodh_upanishad",
-    "amritnad_upanishad", "sharabh_upanishad", "aatma_upanishad",
-    "advyataarak_upanishad", "paramhans_parivrajak_upanishad",
-    "devi_upanishad", "dakhsinamurti_upanishad", "kundika_upanishad",
-    "sarvasaar_upanishad", "garbh_upanishad", "krishna_upanishad",
-    "jabal_upanishad", "kaivalya_upanishad", "kshurika_upanishad",
-    "amritbindu_upanishad", "maantrik_upanishad", "aarunik_upanishad",
-    "isha_upanishad", "bhavna_upanishad", "narayana_upanishad",
-    "tripur_upanishad", "skand_upanishad", "ekakshar_upanishad",
-    "kalagnirudra_upanishad", "mahavakya_upanishad", "pranav_upanishad",
-    "vajrasuchika_upanishad", "mandukya_upanishad", "brahvrach_upanishad",
-    "turiyateet_upanishad", "bhikshuk_upanishad", "kalisamtaran_upanishad",
-    "shiv_sankalp_upanishad",
-    "other",
+    "isha_upanishad", "kath_upanishad", "mundaka_upanishad", "mandukya_upanishad",
+    "chhandogya_upanishad", "brihadaranyak_upanishad", "prashn_upanishad",
+    "taittiriya_upanishad", "shwetashwetar_upanishad", "aitareya_upanishad",
+    "kaivalya_upanishad", "kena_upanishad",
+    # Extend as needed — the full list is in the corpus but we don't need it
+    # here; unknown hints just get dropped and search proceeds unbiased.
 }
 
-_known_cache: set[str] | None = None
-
-
-def _known_scriptures() -> set[str]:
-    """
-    Return the set of scripture slugs actually present in the loaded corpus.
-    Cached after first lookup. Falls back to a hardcoded snapshot if the
-    index isn't ready.
-    """
-    global _known_cache
-    if _known_cache is not None:
-        return _known_cache
-    try:
-        from ai.index import get_index
-        idx = get_index()
-        # Both NumpyScriptureIndex and SupabaseScriptureIndex expose _by_scripture
-        # as an internal dict of scripture → verses. We only need the keys.
-        by_scripture = getattr(idx, "_by_scripture", None)
-        if by_scripture:
-            _known_cache = set(by_scripture.keys())
-            logger.info("Loaded %d scripture slugs from live index", len(_known_cache))
-            return _known_cache
-    except Exception as e:
-        logger.warning("Could not load scripture set from index (%s) — using fallback", e)
-    _known_cache = set(_FALLBACK_KNOWN_SCRIPTURES)
-    return _known_cache
-
-
-# ── Alias → canonical corpus slug ────────────────────────────────────────────
-# User-facing names on the left → the ACTUAL slug used in verses.json on the
-# right. If the corpus later renames a scripture (e.g. "ramacharitamanas" →
-# "ramcharitmanas"), update this map — the alias key stays the same because
-# it's what users type.
-
-_SCRIPTURE_ALIASES: dict[str, str] = {
-    # ── Bhagavad Gita ──
-    "gita": "bhagwad_gita",
-    "the_gita": "bhagwad_gita",
-    "bg": "bhagwad_gita",
-    "bhagavad_gita": "bhagwad_gita",
-    "bhagavadgita": "bhagwad_gita",
-    "bhagwadgita": "bhagwad_gita",
-    "bhagwat_gita": "bhagwad_gita",
-    "bhagawad_gita": "bhagwad_gita",
-    "bhagavat_gita": "bhagwad_gita",
-    "shrimad_bhagavad_gita": "bhagwad_gita",
-    "shreemad_bhagavad_gita": "bhagwad_gita",
-
-    # ── Ramcharitmanas — corpus spells it "ramacharitamanas" ──
-    "ramcharitmanas": "ramacharitamanas",
-    "ramcharit_manas": "ramacharitamanas",
-    "ram_charit_manas": "ramacharitamanas",
-    "ram_charitamanas": "ramacharitamanas",
-    "sri_ramcharitmanas": "ramacharitamanas",
-    "shri_ramcharitmanas": "ramacharitamanas",
-    "tulsi_ramayan": "ramacharitamanas",
-    "tulsi_ramayana": "ramacharitamanas",
-    "tulsidas_ramayana": "ramacharitamanas",
-    "ramayan_of_tulsidas": "ramacharitamanas",
-    "tulsidas": "ramacharitamanas",
-
-    # ── Ramayana (Valmiki) — NOT in v1 corpus but keep the mapping so
-    # future additions Just Work. Users saying "Ramayana" typically mean
-    # Valmiki's, not Tulsidas's Ramcharitmanas.
-    "valmiki_ramayana": "ramayana",
-
-    # ── Yoga Sutras ──
-    "patanjali": "yoga_sutras",
-    "patanjali_sutras": "yoga_sutras",
-    "patanjali_yoga_sutras": "yoga_sutras",
-    "yogasutras": "yoga_sutras",
-
-    # ── Mahabharata / Bhagavatam / Puranas ──
-    "mahabharat": "mahabharata",
-    "bhagavatam": "srimad_bhagavatam",
-    "bhagavat_purana": "srimad_bhagavatam",
-    "shrimad_bhagavatam": "srimad_bhagavatam",
-
-    # ── Other Gitas the corpus has ──
-    "ashtavakra": "ashtavakra_gita",
-    "avadhoot_gita": "avadhuta_gita",
-    "avadhoot": "avadhuta_gita",
-    "avadhuta": "avadhuta_gita",
-    "hansa_gita": "hans_gita",
-    "hansagita": "hans_gita",
-    "hamsa_gita": "hans_gita",
-
-    # ── Upanishads (corpus uses shortened / alternate spellings) ──
-    "katha_upanishad": "kath_upanishad",
-    "kathaupanishad": "kath_upanishad",
-    "chandogya_upanishad": "chhandogya_upanishad",
-    "chhandogya": "chhandogya_upanishad",
-    "chandogya": "chhandogya_upanishad",
-    "brihadaranyaka_upanishad": "brihadaranyak_upanishad",
-    "brihad_upanishad": "brihadaranyak_upanishad",
-    "brihadaranyaka": "brihadaranyak_upanishad",
-    "prashna_upanishad": "prashn_upanishad",
-    "prashnopanishad": "prashn_upanishad",
-    "shvetashvatara_upanishad": "shwetashwetar_upanishad",
-    "svetasvatara_upanishad": "shwetashwetar_upanishad",
-    "shwetashvatara": "shwetashwetar_upanishad",
-    "ishavasya_upanishad": "isha_upanishad",
-    "ishopanishad": "isha_upanishad",
-    "ishaupanishad": "isha_upanishad",
-    "mundakopanishad": "mundaka_upanishad",
-    "mandukyaupanishad": "mandukya_upanishad",
-    "mandukyopanishad": "mandukya_upanishad",
-    "aitareyaupanishad": "aitareya_upanishad",
-    "taittiriyaupanishad": "taittiriya_upanishad",
-    "taittiriya": "taittiriya_upanishad",
-    # Plural (unspecific) → drop
-    "upanishads": "",
-    "upanishad": "",
+_VALID_INTENT_TYPES: Set[str] = {
+    "grief", "philosophical", "practical",
+    "devotional", "referential", "narrative", "other",
 }
-
-
-def _canonical_slug(raw: str) -> str:
-    """
-    Normalise a raw slug to canonical form.
-      - trim + lowercase
-      - collapse whitespace and dashes to underscores
-      - apply the alias map
-    Empty string means "drop this slug entirely."
-    """
-    if not isinstance(raw, str):
-        return ""
-    s = raw.strip().lower()
-    s = re.sub(r"[\s\-]+", "_", s)   # "bhagavad gita" → "bhagavad_gita"
-    s = re.sub(r"_+", "_", s).strip("_")
-    if s in _SCRIPTURE_ALIASES:
-        s = _SCRIPTURE_ALIASES[s]
-    return s
-
-
-def _clean_slug_list(raw: Any, max_len: int, known_only: bool) -> list[str]:
-    """
-    Normalise a raw list-of-slugs from the model:
-      - drop non-strings
-      - apply alias normalisation
-      - dedupe (preserve first-seen order)
-      - cap at max_len
-      - if known_only, drop anything not in _KNOWN_SCRIPTURES (used for
-        scripture_lock — a bogus slug there causes retrieval to return 0 rows)
-    """
-    if not isinstance(raw, list):
-        return []
-    allow = _known_scriptures() if known_only else None
-    out: list[str] = []
-    seen: set[str] = set()
-    for s in raw:
-        slug = _canonical_slug(s)
-        if not slug or slug in seen:
-            continue
-        if allow is not None and slug not in allow:
-            logger.info("Dropped unknown scripture slug %r → %r (not in loaded corpus)", s, slug)
-            continue
-        out.append(slug)
-        seen.add(slug)
-        if len(out) >= max_len:
-            break
-    return out
-
-
-# ── Query text scan: infer scripture_lock the model missed ──────────────────
-# If the raw query mentions "gita" (with no qualifier like "ashtavakra",
-# "vishnu", "dheesh", "uddhava", "avadhoot"), and the model returned empty
-# scripture_lock, inject bhagwad_gita. Same idea for "tulsidas" /
-# "ramcharitmanas". This is the belt to the prompt's suspenders.
-
-_GITA_QUALIFIERS = re.compile(
-    r"\b(ashtavakra|vishnu|dheesh|uddhava|avadhoot|avadhuta|anu|hans|hansa|hamsa|ganesha|shiva|shambhu|shakti|surya|ram|guru|kapila|ribhu)\s+gita\b",
-    re.IGNORECASE,
-)
-_BARE_GITA_MENTION = re.compile(r"\b(bhagavad\s+gita|bhagwad\s+gita|bhagwat\s+gita|the\s+gita|gita|bg)\b", re.IGNORECASE)
-_RAMCHARIT_MENTION = re.compile(r"\b(ramacharitamanas|ramcharit\s*manas|tulsi(?:das)?(?:\s+ramayan[a]?)?|ramchaitmanas|ramcharitmanas)\b", re.IGNORECASE)
-_YOGASUTRA_MENTION = re.compile(r"\b(yoga\s+sutras?|patanjali)\b", re.IGNORECASE)
-_ASHTAVAKRA_MENTION = re.compile(r"\bashtavakra(\s+gita)?\b", re.IGNORECASE)
-
-# Qualified-gita specific patterns → map to the actual corpus slugs so
-# "vishnu gita on X", "dheesh gita on Y", etc. lock to those texts.
-_QUALIFIED_GITA_MAP: list[tuple[re.Pattern[str], str]] = [
-    (re.compile(r"\bvishnu\s+gita\b",      re.IGNORECASE), "vishnu_gita"),
-    (re.compile(r"\bdheesh\s+gita\b",      re.IGNORECASE), "dheesh_gita"),
-    (re.compile(r"\bshambhu\s+gita\b",     re.IGNORECASE), "shambhu_gita"),
-    (re.compile(r"\bshakti\s+gita\b",      re.IGNORECASE), "shakti_gita"),
-    (re.compile(r"\bsurya\s+gita\b",       re.IGNORECASE), "surya_gita"),
-    (re.compile(r"\bram\s+gita\b",         re.IGNORECASE), "ram_gita"),
-    (re.compile(r"\b(hans|hansa|hamsa)\s+gita\b", re.IGNORECASE), "hans_gita"),
-    (re.compile(r"\b(avadhoot|avadhuta)\s+gita\b", re.IGNORECASE), "avadhuta_gita"),
-]
-
-
-def _infer_locks_from_query(query: str) -> list[str]:
-    """
-    Return the scriptures the raw query explicitly names, using text patterns
-    that don't require the LLM to have followed instructions. Used as a
-    fallback when the model returned empty scripture_lock but the query
-    clearly named a scripture. Returned slugs are ALREADY canonical (they
-    match the corpus).
-    """
-    locks: list[str] = []
-
-    # ── Named non-Bhagavad Gitas ── (Vishnu, Dheesh, Shambhu, …).
-    # Match first because these are more specific than a bare "gita" mention.
-    for pat, slug in _QUALIFIED_GITA_MAP:
-        if pat.search(query):
-            locks.append(slug)
-
-    # Ashtavakra has its own regex because "Ashtavakra" without "gita" also counts.
-    if _ASHTAVAKRA_MENTION.search(query):
-        locks.append("ashtavakra_gita")
-
-    # ── Bare "Gita" → Bhagavad Gita ──
-    # Only when a bare (unqualified) Gita mention exists in the query. If ONLY
-    # a qualified-gita phrase is present, don't inject Bhagavad Gita.
-    if _BARE_GITA_MENTION.search(query):
-        if not _GITA_QUALIFIERS.search(query) or _bare_gita_beyond_qualifier(query):
-            locks.append("bhagwad_gita")
-
-    # ── Ramcharitmanas — canonical corpus slug is "ramacharitamanas" ──
-    if _RAMCHARIT_MENTION.search(query):
-        locks.append("ramacharitamanas")
-
-    if _YOGASUTRA_MENTION.search(query):
-        locks.append("yoga_sutras")
-
-    # De-dup, preserve first-seen order.
-    seen: set[str] = set()
-    out: list[str] = []
-    for s in locks:
-        if s not in seen:
-            out.append(s)
-            seen.add(s)
-    return out
-
-
-def _bare_gita_beyond_qualifier(query: str) -> bool:
-    """
-    True if the query has "gita" separately from any "<qualifier> gita" phrase.
-    E.g. "Ashtavakra Gita vs the Gita" → True (the second "the Gita" is bare).
-         "Ashtavakra Gita on freedom"  → False (only qualified).
-    """
-    # Strip out every "<qualifier> gita" span, then look for remaining "gita" tokens.
-    stripped = _GITA_QUALIFIERS.sub(" ", query)
-    return bool(_BARE_GITA_MENTION.search(stripped))
-
-
-# ── Intent coercion ──────────────────────────────────────────────────────────
-
-def _coerce_intent(raw: dict, fallback_query: str) -> Intent:
-    """Safely construct an Intent from potentially-malformed model output."""
-    intent_text = (raw.get("intent") or fallback_query).strip()
-    description = (raw.get("description") or "").strip()
-
-    raw_type = (raw.get("intent_type") or "philosophical").strip().lower()
-    intent_type: IntentType = raw_type if raw_type in _VALID_TYPES else "philosophical"  # type: ignore[assignment]
-
-    # SOFT hint — tolerate unknown slugs (they just won't match any real
-    # verse's scripture and the bias multiplier ends up 1.0).
-    likely_scriptures = _clean_slug_list(raw.get("likely_scriptures"), max_len=3, known_only=False)
-
-    # HARD filter — normalise aliases, then reject anything not in the
-    # allow-list so retrieval never gets an empty candidate pool from a
-    # hallucinated scripture name.
-    scripture_lock = _clean_slug_list(raw.get("scripture_lock"), max_len=2, known_only=True)
-
-    return Intent(
-        intent=intent_text,
-        description=description,
-        intent_type=intent_type,
-        likely_scriptures=likely_scriptures,
-        scripture_lock=scripture_lock,
-    )
-
-
-def _apply_lock_fallback(intents: list[Intent], query: str) -> list[Intent]:
-    """
-    Defense-in-depth. If every intent came back with an empty scripture_lock
-    BUT the raw query text explicitly names one or more scriptures, inject
-    those locks so retrieval respects the user's intent.
-
-    - Single-scripture query ("gita on anger") + 1 empty-locked intent:
-        set scripture_lock=[<the named scripture>] on that intent.
-    - Two-scripture query ("gita and ramcharitmanas") + N empty-locked intents:
-        if N == 1, split into 2 intents (one per named scripture), same text.
-        if N == 2, set each intent's lock to a different named scripture
-        (in the order they appear in the query).
-        if N > 2, leave alone — user's compound intent is doing something
-        we don't understand and we don't want to corrupt it.
-    """
-    inferred = _infer_locks_from_query(query)
-    if not inferred:
-        return intents
-
-    already_locked = any(i.scripture_lock for i in intents)
-    if already_locked:
-        return intents
-
-    if len(inferred) == 1:
-        # Single-scripture case: stamp every intent with the lock. Retrieval
-        # will filter each intent's search to that scripture. Cheap and safe.
-        for i in intents:
-            i.scripture_lock = inferred[:]
-        logger.info("Auto-injected scripture_lock=%s from query text scan", inferred)
-        return intents
-
-    if len(inferred) == 2 and len(intents) == 1:
-        # Two-scripture comparison the model failed to decompose. Duplicate
-        # the intent, locking each copy to one scripture.
-        template = intents[0]
-        new_intents = []
-        for slug in inferred:
-            new_intents.append(Intent(
-                intent=template.intent,
-                description=template.description,
-                intent_type=template.intent_type,
-                likely_scriptures=list(template.likely_scriptures),
-                scripture_lock=[slug],
-            ))
-        logger.info("Split single-intent into %d for scripture_lock decomposition: %s", len(new_intents), inferred)
-        return new_intents
-
-    if len(inferred) == 2 and len(intents) == 2:
-        # Model produced two intents but didn't lock either. Assign one
-        # scripture to each (order-preserving from the query).
-        for i, slug in zip(intents, inferred):
-            i.scripture_lock = [slug]
-        logger.info("Assigned scripture_lock across %d intents: %s", len(intents), inferred)
-        return intents
-
-    # Anything more elaborate — leave the LLM's structure intact.
-    return intents
 
 
 @router.post("/intent", response_model=IntentResponse, tags=["search"])
 async def extract_intents(req: IntentRequest) -> IntentResponse:
     """
-    Step 1: validate → (optionally) rewrite follow-up → extract intents →
-    apply query-text scripture_lock fallback.
+    Step 1 of the RAG pipeline: validate, extract intents, parse verse refs,
+    optionally rewrite follow-up queries.
 
-    Returns valid=False (with reason) for off-topic / injection queries — the
-    frontend should stop the pipeline and show the reason. Otherwise returns
-    valid=True with 1–4 rich Intent objects and, when applicable, a
-    rewritten_query for the frontend to display.
+    Returns valid=False (with a reason) for off-topic queries and injection
+    attempts — the frontend should stop the pipeline.
 
-    Falls back to a single-intent direct search if the LLM call fails, so the
-    pipeline never dies at step 1.
+    Returns valid=True with 1–3 focused intents on success. If the LLM call
+    fails, falls back to a single-intent direct search over the raw query.
     """
-    rewritten: str | None = None
-    raw_intents: list[Any] = []
+    # Verse-ref fast-path — cheap regex, runs regardless of LLM outcome
+    verse_refs = parse_verse_refs(req.query)
 
     try:
+        history = [t.model_dump() for t in req.history] if req.history else None
         result = get_sarvam().extract_intents(
             INTENT_SYSTEM_PROMPT,
-            build_intent_user_prompt(req.query, req.context),
+            build_intent_user_prompt(req.query, history=history),
         )
 
         # Guardrail: model flagged query as invalid
         if result.get("valid") is False:
             reason = result.get("reason", "This question is outside the scope of scripture search.")
-            logger.info("Query rejected by guardrail: %r — %s", req.query[:80], reason)
+            logger.info("Query rejected: %r — %s", req.query[:80], reason)
             return IntentResponse(query=req.query, valid=False, reason=reason, intents=[])
 
-        rewritten_raw = result.get("rewritten_query")
-        if isinstance(rewritten_raw, str) and rewritten_raw.strip():
-            rewritten = rewritten_raw.strip()
-
-        raw_intents = result.get("intents", []) or []
+        raw_intents      = result.get("intents", []) or []
+        standalone_query = (result.get("standalone_query") or "").strip() or None
+        scripture_hint   = result.get("scripture_hint") or []
 
     except Exception as e:
         logger.warning("Intent extraction failed (%s) — falling back to direct search", e)
-        raw_intents = []
+        raw_intents      = []
+        standalone_query = None
+        scripture_hint   = []
 
-    # Fallback: treat full query (or its rewrite, if we got one) as a single intent.
+    # Fallback: use the raw query as a single intent
     if not raw_intents:
-        fallback_q = rewritten or req.query
-        intents = [Intent(
-            intent=fallback_q,
-            description="direct search",
-            intent_type="philosophical",
-            likely_scriptures=[],
-            scripture_lock=[],
-        )]
-        intents = _apply_lock_fallback(intents, req.query)
-        return IntentResponse(query=req.query, valid=True, intents=intents, rewritten_query=rewritten)
+        raw_intents = [{
+            "intent":      standalone_query or req.query,
+            "description": "direct search",
+            "intent_type": "other",
+        }]
 
-    # Coerce each raw dict into a validated Intent; cap at 4.
-    intents = [_coerce_intent(i, req.query) for i in raw_intents[:4] if isinstance(i, dict)]
+    # Sanitize + coerce intent objects. Cap at 3 (prompt says 1–2 default,
+    # 3 for compound queries only — enforce the ceiling here).
+    intents: list[Intent] = []
+    for raw in raw_intents[:3]:
+        itype = raw.get("intent_type", "other")
+        if itype not in _VALID_INTENT_TYPES:
+            itype = "other"
+        intents.append(Intent(
+            intent      = raw.get("intent", req.query),
+            description = raw.get("description", ""),
+            intent_type = itype,
+        ))
 
-    if not intents:
-        # Every raw entry was malformed — same fallback.
-        fallback_q = rewritten or req.query
-        intents = [Intent(
-            intent=fallback_q,
-            description="direct search",
-            intent_type="philosophical",
-            likely_scriptures=[],
-            scripture_lock=[],
-        )]
-
-    # Belt-and-suspenders: infer scripture_lock from the raw query text when
-    # the LLM missed it. This is the fix for "how do Gita and Ramcharitmanas
-    # resonate?" returning Dheesh Gita and Vishnu Gita — the model wasn't
-    # locking, so no filter got applied, so cosine picked whatever ranked
-    # highest. Now the query text itself drives the lock as a fallback.
-    intents = _apply_lock_fallback(intents, req.query)
+    # Sanitize scripture_hint against the whitelist. Silently drop the rest.
+    hint = [s for s in (scripture_hint or []) if s in _KNOWN_SCRIPTURES][:2]
 
     return IntentResponse(
-        query=req.query,
-        valid=True,
-        intents=intents,
-        rewritten_query=rewritten,
+        query            = req.query,
+        valid            = True,
+        intents          = intents,
+        standalone_query = standalone_query,
+        scripture_hint   = hint,
+        verse_refs       = verse_refs,
     )

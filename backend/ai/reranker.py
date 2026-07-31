@@ -1,31 +1,33 @@
 """
-reranker.py — Cross-encoder reranker for scripture search.
+reranker.py — BGE-M3 cross-encoder reranker (bge-reranker-v2-m3).
 
-Model: BAAI/bge-reranker-v2-m3 (~2.3 GB, lazy-loaded from HF cache).
+Two-stage retrieval: dense retrieval pulls a wide candidate pool (top-40),
+this cross-encoder reranks it to top-k (5–8). Per sanscripts notebook §10
+this materially improved P-hit@5 on the golden set — especially for hinglish
+and question-shaped queries where the bi-encoder was under-confident.
 
-Why: bake-off §10 in sanscripts/notebooks/scripture_indic_sbert_zvec.ipynb
-showed BGE-M3 dense retrieval + bge-reranker-v2-m3 on top-40 → top-k lifts
-P-hit@5 meaningfully vs. pure dense. Cross-encoders score (query, doc) pairs
-jointly instead of dot-product on separate embeddings, so they catch relevance
-subtleties dense retrieval misses.
+Design notes:
+  - This is OPTIONAL. If the model can't be loaded (no network, disk full,
+    incompatible torch), the module records the failure once and every
+    subsequent rerank call returns the input unchanged. The pipeline
+    degrades gracefully to dense-only retrieval.
+  - Reranker score is on a different scale than cosine — do NOT compare them.
+    We keep both on the VerseResult so the search endpoint can use rerank_score
+    for ordering while dense_score stays available for debugging.
+  - The rerank input document is the SAME enriched text form used at index
+    time (Hindi + English translation + essence + simple_meaning + tags).
+    Consistency matters — a bare English translation would tank cross-encoder
+    scores relative to what the dense side scored on.
 
-Cost profile:
-  - Model load: ~5s on cold start, ~2GB RAM after warm.
-  - Per query: ~50-200ms for a batch of 40 pairs on CPU.
-  - Runs AFTER the semantic top-40 pull, so the cost is per-query, not per-verse.
-
-Kept behind a flag (settings.reranker_enabled) so it can be turned off
-without touching search.py — falls through as a pass-through.
+Cost: ~30–80ms for 40 pairs on CPU with bge-reranker-v2-m3 (568MB float32).
+Acceptable for the /api/v1/search hot path if we keep the pool <= 40.
 """
 from __future__ import annotations
 
 import logging
 import os
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
-import numpy as np
-
-# Guard TF/Flax off before any transformers import (same reason as embedder.py).
 os.environ.setdefault("USE_TF", "0")
 os.environ.setdefault("USE_FLAX", "0")
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
@@ -33,89 +35,138 @@ os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 logger = logging.getLogger(__name__)
 
 
+def _enriched_doc(verse: dict) -> str:
+    """
+    Build the same enriched string the corpus was embedded from.
+    Order matters — matches sanscripts/notebooks embed doc format.
+    """
+    parts = []
+    if verse.get("translation"):
+        parts.append(verse["translation"])
+    if verse.get("english_translation"):
+        parts.append(verse["english_translation"])
+    if verse.get("essence"):
+        parts.append(verse["essence"])
+    if verse.get("simple_meaning"):
+        parts.append(verse["simple_meaning"])
+    tags = verse.get("tags") or []
+    if isinstance(tags, list) and tags:
+        parts.append(" ".join(tags))
+    if verse.get("verse_text"):  # Devanagari appended
+        parts.append(verse["verse_text"])
+    return "\n".join(parts)
+
+
 class BgeReranker:
     """
-    Thin wrapper around sentence-transformers CrossEncoder.
+    Thin wrapper around FlagEmbedding.FlagReranker (bge-reranker-v2-m3).
 
-    Scores (query, passage) pairs jointly. Returns a numpy array of scores,
-    one per pair, in the input order. Higher = more relevant.
+    Falls back to a no-op if the model can't be loaded — see module docstring.
     """
 
     def __init__(self, model_source: str = "BAAI/bge-reranker-v2-m3"):
         self.model_source = model_source
         self._model = None
+        self._load_failed = False
 
     def _load(self) -> None:
-        if self._model is not None:
+        if self._model is not None or self._load_failed:
             return
         try:
-            from sentence_transformers import CrossEncoder
-        except ImportError as e:
-            raise ImportError("Run: pip install sentence-transformers") from e
+            # Prefer FlagEmbedding (native BGE tooling); fall back to
+            # sentence_transformers CrossEncoder which also supports the same
+            # weights.
+            try:
+                from FlagEmbedding import FlagReranker
+                logger.info("Loading bge-reranker-v2-m3 via FlagEmbedding …")
+                self._model = FlagReranker(self.model_source, use_fp16=True)
+                self._impl = "flag"
+            except ImportError:
+                from sentence_transformers import CrossEncoder
+                logger.info("Loading bge-reranker-v2-m3 via CrossEncoder …")
+                self._model = CrossEncoder(self.model_source)
+                self._impl = "cross_encoder"
+            logger.info("Reranker ready (%s)", self._impl)
+        except Exception as e:
+            # Any load failure → degrade to no-op. Log once so we notice.
+            logger.warning(
+                "Reranker unavailable — falling back to dense-only retrieval. Reason: %s", e
+            )
+            self._load_failed = True
 
-        logger.info("Loading BGE reranker from %s …", self.model_source)
-        # max_length=512 covers a query + a full enriched verse (Hindi +
-        # English + essence + insight easily fits).
-        self._model = CrossEncoder(self.model_source, max_length=512)
-        logger.info("BGE reranker ready.")
+    @property
+    def available(self) -> bool:
+        return self._model is not None
 
-    def score(self, query: str, passages: List[str]) -> np.ndarray:
-        """
-        Score every passage against the query. Returns float32 array of shape (N,).
-        Higher score = more relevant. Range is model-specific (typically -10..10
-        raw logits); use it for RELATIVE ranking, not as an absolute probability.
-        """
-        if not passages:
-            return np.array([], dtype=np.float32)
+    def score(self, query: str, docs: List[str]) -> Optional[List[float]]:
+        """Return raw reranker scores for each (query, doc). None if unavailable."""
         self._load()
-        pairs = [(query, p) for p in passages]
-        scores = self._model.predict(
-            pairs,
-            batch_size=16,
-            show_progress_bar=False,
-            convert_to_numpy=True,
-        )
-        return scores.astype(np.float32)
+        if self._load_failed:
+            return None
+        pairs = [(query, d) for d in docs]
+        try:
+            if self._impl == "flag":
+                # FlagReranker.compute_score handles batch natively
+                out = self._model.compute_score(pairs, normalize=True)
+                # Single pair returns float, batch returns list — normalise
+                if isinstance(out, (int, float)):
+                    return [float(out)]
+                return [float(x) for x in out]
+            else:
+                scores = self._model.predict(pairs, batch_size=32, show_progress_bar=False)
+                return [float(x) for x in scores]
+        except Exception as e:
+            logger.error("Reranker scoring failed: %s", e)
+            return None
 
-    def score_batch(self, queries_and_passages: List[tuple[str, str]]) -> np.ndarray:
-        """Score arbitrary (query, passage) pairs — useful for multi-intent."""
-        if not queries_and_passages:
-            return np.array([], dtype=np.float32)
-        self._load()
-        scores = self._model.predict(
-            queries_and_passages,
-            batch_size=16,
-            show_progress_bar=False,
-            convert_to_numpy=True,
-        )
-        return scores.astype(np.float32)
+    def rerank(
+        self,
+        query: str,
+        candidates: List[dict],
+        top_k: int,
+    ) -> List[Tuple[dict, float]]:
+        """
+        Score `candidates` (each: {verse, sim, intent, ...}) and return the
+        top_k sorted by reranker score. Falls through to input order if the
+        reranker is unavailable — caller uses that as the signal to keep
+        dense ordering.
+        """
+        if not candidates:
+            return []
+        docs = [_enriched_doc(c["verse"]) for c in candidates]
+        scores = self.score(query, docs)
+        if scores is None:
+            # No-op fallback: return top_k in input order, score=None sentinel
+            return [(c, float("nan")) for c in candidates[:top_k]]
+        paired = list(zip(candidates, scores))
+        paired.sort(key=lambda t: t[1], reverse=True)
+        return paired[:top_k]
 
 
 # ── Module singleton ──────────────────────────────────────────────────────────
-# Follows the same pattern as embedder.py / sarvam.py.
 
 _reranker: Optional[BgeReranker] = None
 
 
 def get_reranker() -> Optional[BgeReranker]:
-    """Returns the reranker if initialised, else None (feature disabled)."""
+    """Return the reranker singleton or None if init_reranker was never called."""
     return _reranker
 
 
-def init_reranker(model_name: str = "BAAI/bge-reranker-v2-m3", eager: bool = False) -> BgeReranker:
+def init_reranker(model_source: str = "BAAI/bge-reranker-v2-m3") -> BgeReranker:
     """
-    Register the singleton. If eager=True, loads the model now (adds ~5s to
-    startup but avoids first-query latency spike). If eager=False, model
-    loads lazily on the first score() call.
+    Instantiate the reranker singleton. Does NOT eagerly load weights — first
+    scoring call triggers _load(). This keeps startup fast; the ~1–2s model
+    load hits the first search request instead of every uvicorn restart.
+
+    Pass an empty string to skip creation entirely (disable reranker at
+    the config layer).
     """
     global _reranker
-    _reranker = BgeReranker(model_source=model_name)
-    if eager:
-        _reranker._load()
+    if not model_source:
+        _reranker = None
+        logger.info("Reranker disabled by config")
+        return None  # type: ignore[return-value]
+    _reranker = BgeReranker(model_source=model_source)
+    logger.info("Reranker singleton created (lazy load): %s", model_source)
     return _reranker
-
-
-def disable_reranker() -> None:
-    """Drop the singleton — search will fall through as pass-through."""
-    global _reranker
-    _reranker = None
