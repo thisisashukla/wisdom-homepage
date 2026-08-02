@@ -13,7 +13,7 @@ import SavedVersesPanel from '@/components/gita/SavedVersesPanel'
 export const metadata: Metadata = {
   title: 'भगवद् गीता — 700 श्लोक हिन्दी अर्थ सहित | सभी 18 अध्याय | Wisdom',
   description:
-    'सम्पूर्ण भगवद् गीता हिन्दी में पढ़ें — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ सहित। 18 अध्याय, 700 से अधिक श्लोक, सरल हिन्दी में। निःशुल्क ऑनलाइन।',
+    'सम्पूर्ण भगवद् गीता हिन्दी में पढ़ें — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ सहित। 18 अध्याय, 700 से अधिक श्लोक, सरल हिन्दी में। PDF डाउनलोड की ज़रूरत नहीं — सीधे ऑनलाइन, निःशुल्क।',
   alternates: {
     canonical: 'https://wisdomquotes.in/hi/gita',
     languages: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'भगवद् गीता — 700 श्लोक हिन्दी अर्थ सहित | सभी 18 अध्याय',
-    description: 'सम्पूर्ण भगवद् गीता हिन्दी में — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ। 18 अध्याय, 700 श्लोक।',
+    description: 'सम्पूर्ण भगवद् गीता हिन्दी में — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ। 18 अध्याय, 700 श्लोक। PDF की ज़रूरत नहीं, सीधे ऑनलाइन पढ़ें।',
     url: 'https://wisdomquotes.in/hi/gita',
     type: 'website',
     siteName: 'Wisdom',

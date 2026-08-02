@@ -12,11 +12,17 @@ class Settings(BaseSettings):
         env_file=".env",
         env_file_encoding="utf-8",
         extra="ignore",
+        # `model_dir` and `model_config` both start with "model_" — pydantic
+        # v2 protects that namespace by default and warns at class-creation
+        # time. Opt out so our field names are allowed. (We're using
+        # pydantic-settings, not defining actual model weights, so nothing
+        # is at risk here.)
+        protected_namespaces=(),
     )
 
     # ── Sarvam ───────────────────────────────────────────────────────────────
     sarvam_api_key: str = ""
-    sarvam_model: str = "sarvam-30b"
+    sarvam_model: str = "sarvam-105b"
 
     # ── Data directory (self-contained; no sanscripts dependency) ────────────
     # Directory containing embeddings.npy and verses.json.
@@ -29,9 +35,14 @@ class Settings(BaseSettings):
     # ── Embedding model name (used when model_dir is empty) ───────────────────
     embed_model: str = "BAAI/bge-m3"
 
+    # ── Reranker ─────────────────────────────────────────────────────────────
+    # HF model id for the cross-encoder reranker. Empty string disables the
+    # reranker entirely (search degrades gracefully to dense-only).
+    reranker_model: str = "BAAI/bge-reranker-v2-m3"
+
     # ── Search defaults ───────────────────────────────────────────────────────
-    default_top_k: int = 5
-    max_intents: int = 4
+    default_top_k: int = 8       # bumped 5 → 8 with cross-intent re-ranking
+    max_intents: int = 3         # cap now enforced at 3 (1–2 default)
     rag_max_verses: int = 8
 
     # ── CORS ──────────────────────────────────────────────────────────────────

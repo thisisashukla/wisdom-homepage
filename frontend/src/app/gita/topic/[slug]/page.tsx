@@ -10,12 +10,37 @@ export async function generateStaticParams() {
   return getAllTopics().map((t) => ({ slug: t.slug }))
 }
 
+/**
+ * Alternate spellings / transliterations for topics that have multiple
+ * common English renderings. Injected into meta descriptions so Google
+ * matches queries with either spelling (e.g. "samatva" AND "samatvam",
+ * "nishkama" AND "niskama").
+ */
+const TOPIC_ALIASES: Record<string, string[]> = {
+  samatva: ['samatvam', 'samatva'],
+  nishkama: ['nishkam', 'nishkama', 'niskama'],
+  indriya: ['indriya', 'indriya nigraha'],
+  vairagya: ['vairagya', 'detachment', 'renunciation'],
+  ahankara: ['ahankara', 'ahamkara', 'ego'],
+  sharanagati: ['sharanagati', 'saranagati', 'surrender'],
+  'karma-phala': ['karma phala', 'karmaphala', 'fruit of action'],
+  atman: ['atman', 'atma', 'self'],
+  jnana: ['jnana', 'jñana', 'knowledge'],
+  bhakti: ['bhakti', 'devotion'],
+  dharma: ['dharma', 'duty', 'righteousness'],
+  moksha: ['moksha', 'mokṣa', 'liberation'],
+}
+
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const topic = await getTopic(params.slug)
   if (!topic) return { title: 'Topic not found' }
   const cap = topic.label.replace(/\b\w/g, (c) => c.toUpperCase())
+  const aliases = TOPIC_ALIASES[params.slug]
+  const aliasString = aliases && aliases.length > 1
+    ? ` (also spelled ${aliases.filter(a => a.toLowerCase() !== topic.label.toLowerCase()).join(', ')})`
+    : ''
   const title = `${cap} in the Bhagavad Gita — ${topic.verseCount} Verses with Meaning | Wisdom`
-  const description = `${topic.verseCount} Bhagavad Gita verses on ${topic.label}, in Sanskrit, Hindi and English. The Gita's teaching on ${topic.label}, drawn from across all chapters.`
+  const description = `${topic.verseCount} Bhagavad Gita verses on ${topic.label}${aliasString}, in Sanskrit, Hindi and English. The Gita's teaching on ${topic.label}, drawn from across all chapters.`
   return {
     title,
     description,

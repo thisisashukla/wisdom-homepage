@@ -46,6 +46,26 @@ const trimToLength = (s: string, maxChars: number): string => {
   return (lastSpace > 40 ? cut.slice(0, lastSpace) : cut).replace(/[,.;:—-]$/, '') + '…'
 }
 
+/**
+ * Extract the first pada (half-line) of a Devanagari shloka.
+ * Splits on ।, ॥, |, ॥, and newlines. Trims to ~50 chars.
+ * Used in verse-page titles so Google's SERP shows a distinctive
+ * fingerprint for each verse — helps rank for verse-number queries
+ * like "9.23", "2.71" where Sanskrit-quoting competitors dominate.
+ */
+const firstDevaPada = (sanskrit: string, maxChars = 50): string => {
+  if (!sanskrit) return ''
+  const first = sanskrit
+    .split(/[।॥|\n\r]/)[0]
+    ?.replace(/\s+/g, ' ')
+    .trim()
+  if (!first) return ''
+  if (first.length <= maxChars) return first
+  const cut = first.slice(0, maxChars)
+  const lastSpace = cut.lastIndexOf(' ')
+  return (lastSpace > 20 ? cut.slice(0, lastSpace) : cut) + '…'
+}
+
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const c = Number(params.chapter)
   const v = Number(params.verse)
@@ -53,10 +73,15 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!verse) return { title: 'Verse not found' }
   const ch = getChapter(c)
 
-  // ── Title: intent-keyworded, includes chapter context to differentiate
-  //    1,604 otherwise-similar verse pages in SERP. ──
-  const titleHook = verse.essence || trimToLength(verse.englishTranslation, 60)
-  const title = `Bhagavad Gita ${c}.${v} Meaning – ${titleHook}${ch ? ` (${ch.enName})` : ''}`
+  // ── Title: leads with verse reference (matches "9.23", "bhagavad gita 9.23"
+  //    query patterns), includes Devanagari opening as a distinctive
+  //    fingerprint so 1,604 otherwise-similar verse pages don't cannibalize
+  //    each other in SERP. Falls back to essence when Sanskrit is missing. ──
+  const devaOpen = firstDevaPada(verse.sanskrit)
+  const englishHook = verse.essence || trimToLength(verse.englishTranslation, 60)
+  const title = devaOpen
+    ? `Bhagavad Gita ${c}.${v} — ${devaOpen} | Sanskrit, Meaning & Translation`
+    : `Bhagavad Gita ${c}.${v} Meaning – ${englishHook}${ch ? ` (${ch.enName})` : ''}`
 
   // ── Description: 150-160 chars; lead with simpleMeaning if we have it,
   //    fall back to englishTranslation. Include chapter for context. ──

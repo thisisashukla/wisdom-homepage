@@ -1,0 +1,1086 @@
+/* =========================================================================
+   Wisdom · Ask the Scriptures — chat page
+   Design goals: warm, engaging, modern (ChatGPT/Claude cadence) but restrained.
+   Palette is anchored to wisdom.md Temple Dawn tokens — gold (#c8881e / #f5c96a),
+   warm dark bg (#0e0c08 body → #120505 for input surface), cream text (#f5e8cc).
+   ========================================================================= */
+
+/* ── Design tokens (page-scoped) ──────────────────────────────────────────── */
+
+.chat-page {
+  --gold-core:   #c8881e;
+  --gold-bright: #f5c96a;
+  --gold-deep:   #8a5f18;
+  --gold-glow:   rgba(200, 136, 30, 0.35);
+
+  --bg-surface-1: rgba(200, 136, 30, 0.04);
+  --bg-surface-2: rgba(200, 136, 30, 0.08);
+  --bg-surface-3: rgba(200, 136, 30, 0.14);
+  --border-soft:  rgba(200, 136, 30, 0.16);
+  --border-mid:   rgba(200, 136, 30, 0.28);
+  --border-strong:rgba(200, 136, 30, 0.5);
+
+  --text-primary:   #f5e8cc;
+  --text-secondary: rgba(245, 232, 204, 0.72);
+  --text-muted:     rgba(245, 232, 204, 0.45);
+  --text-faint:     rgba(245, 232, 204, 0.25);
+
+  --radius-card:  16px;
+  --radius-pill:  999px;
+  --radius-input: 24px;
+
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-med:  0.24s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Keyframes ─────────────────────────────────────────────────────────────── */
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes expandDown {
+  from { opacity: 0; transform: translateY(-4px); max-height: 0; }
+  to   { opacity: 1; transform: translateY(0); max-height: 500px; }
+}
+
+@keyframes ripple {
+  0%   { transform: scale(1);   opacity: 0.55; }
+  100% { transform: scale(2.8); opacity: 0; }
+}
+
+@keyframes playPulse {
+  0%, 100% { box-shadow: 0 0 0 0   rgba(200, 136, 30, 0.55); }
+  50%       { box-shadow: 0 0 0 8px rgba(200, 136, 30, 0); }
+}
+
+@keyframes stepIn {
+  from { opacity: 0; transform: translateX(-6px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Deepika-style breathing glow on the assistant avatar while thinking. */
+@keyframes deepikaGlow {
+  0%, 100% { box-shadow: 0 0 8px  rgba(200, 136, 30, 0.35), inset 0 0 4px rgba(200, 136, 30, 0.25); opacity: 1; }
+  50%       { box-shadow: 0 0 14px rgba(200, 136, 30, 0.6),  inset 0 0 6px rgba(200, 136, 30, 0.4);  opacity: 0.92; }
+}
+
+/* Cursor-style typing dots while a response is being composed. */
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30%           { transform: translateY(-4px); opacity: 1; }
+}
+
+@keyframes shimmerBar {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* ── Chat page layout ──────────────────────────────────────────────────────── */
+
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Soft warm vignette behind messages so the page feels lit from above. */
+.chat-page::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 260px;
+  background: radial-gradient(120% 100% at 50% 0%, rgba(200, 136, 30, 0.055) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Message list ──────────────────────────────────────────────────────────── */
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 44px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  position: relative;
+  z-index: 1;
+}
+
+.chat-messages::-webkit-scrollbar { width: 6px; }
+.chat-messages::-webkit-scrollbar-track { background: transparent; }
+.chat-messages::-webkit-scrollbar-thumb {
+  background: rgba(200, 136, 30, 0.18);
+  border-radius: 3px;
+}
+.chat-messages::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 136, 30, 0.32);
+}
+
+/* ── Welcome screen ────────────────────────────────────────────────────────── */
+/* Center the whole welcome vertically in the visible space (roughly). The
+   `margin: auto` on a flex column pushes it toward the vertical middle;
+   the top padding keeps it from crashing into the vignette. */
+
+.chat-welcome {
+  margin: auto 0;
+  padding: 32px 8px 48px;
+  text-align: center;
+  animation: fadeIn 0.6s ease both;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slightly larger, warmer avatar for the Deepika mark. */
+.chat-welcome__mark {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(255, 210, 130, 0.28), rgba(200, 136, 30, 0.08) 70%);
+  border: 1px solid var(--border-strong);
+  color: var(--gold-bright);
+  animation: deepikaGlow 3.5s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(200, 136, 30, 0.14);
+}
+
+.chat-welcome__mark svg { width: 18px; height: 18px; }
+
+/* Bigger, more editorial hero. Serif italic on "Scriptures" so the word
+   feels like a callout — the whole point of the page is the noun. */
+.chat-welcome__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.2rem, 5.8vw, 3.4rem);
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0 0 14px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.chat-welcome__sub {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0 auto 24px;
+  line-height: 1.7;
+  letter-spacing: 0.003em;
+  max-width: 520px;
+}
+
+/* Three-dot gold ornament between subtitle and cards — a tiny piece of
+   craft that signals "the design was thought about." */
+.chat-welcome__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 4px auto 30px;
+  height: 20px;
+}
+.chat-welcome__ornament span {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(200, 136, 30, 0.6);
+  animation: deepikaGlow 4s ease-in-out infinite;
+}
+.chat-welcome__ornament span:nth-child(2) {
+  width: 5px;
+  height: 5px;
+  background: var(--gold-bright);
+  animation-delay: 0.3s;
+}
+.chat-welcome__ornament span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Grid of richer suggestion cards. Two columns, generous padding, more
+   presence than the old chip design. */
+.chat-welcome__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.suggestion-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 20px;
+  background:
+    linear-gradient(180deg, rgba(200, 136, 30, 0.05) 0%, rgba(200, 136, 30, 0.015) 100%),
+    rgba(255, 255, 255, 0.015);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+  text-align: left;
+  min-height: 78px;
+  overflow: hidden;
+}
+
+/* Faint left-side glow on hover — echoes the verse card's gold bar. */
+.suggestion-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--gold-core), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-med);
+}
+
+.suggestion-card:hover {
+  background:
+    linear-gradient(180deg, rgba(200, 136, 30, 0.09) 0%, rgba(200, 136, 30, 0.03) 100%),
+    rgba(255, 255, 255, 0.02);
+  border-color: var(--border-mid);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -12px rgba(200, 136, 30, 0.28);
+}
+
+.suggestion-card:hover::before { opacity: 1; }
+
+.suggestion-card:active { transform: translateY(0); }
+
+.suggestion-card__title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+  letter-spacing: 0.002em;
+}
+
+.suggestion-card__hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Legacy chip-style suggestion (kept for other callers of .search-suggestion). */
+.search-suggestion {
+  padding: 9px 16px;
+  background: var(--bg-surface-1);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-pill);
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+  text-align: left;
+}
+
+.search-suggestion:hover {
+  background: var(--bg-surface-2);
+  border-color: var(--border-mid);
+  color: var(--text-primary);
+}
+
+/* ── User bubble ───────────────────────────────────────────────────────────── */
+
+.user-bubble {
+  align-self: flex-end;
+  max-width: 76%;
+  background: linear-gradient(135deg, rgba(200, 136, 30, 0.14), rgba(200, 136, 30, 0.08));
+  border: 1px solid var(--border-mid);
+  border-radius: 18px 18px 4px 18px;
+  padding: 12px 18px;
+  margin: 16px 0 28px;
+  animation: fadeIn 0.22s ease both;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02) inset;
+}
+
+.user-bubble p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  word-break: break-word;
+}
+
+/* ── Assistant bubble (avatar + content column) ────────────────────────────── */
+
+.assistant-bubble {
+  align-self: flex-start;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 14px;
+  margin-bottom: 36px;
+  animation: fadeIn 0.28s ease both;
+}
+
+.assistant-bubble__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 30%, rgba(200, 136, 30, 0.35), rgba(200, 136, 30, 0.08) 70%);
+  border: 1px solid var(--border-mid);
+  color: var(--gold-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: box-shadow var(--transition-med);
+}
+
+.assistant-bubble--thinking .assistant-bubble__avatar {
+  animation: deepikaGlow 2.4s ease-in-out infinite;
+}
+
+.assistant-bubble__body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Post-answer action row (copy, deepen, etc.) — appears on hover of the body. */
+.assistant-bubble__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  min-height: 26px;
+  opacity: 0;
+  transition: opacity var(--transition-med);
+}
+
+.assistant-bubble:hover .assistant-bubble__actions,
+.assistant-bubble:focus-within .assistant-bubble__actions {
+  opacity: 1;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.icon-btn:hover {
+  background: var(--bg-surface-1);
+  border-color: var(--border-soft);
+  color: var(--text-primary);
+}
+
+.icon-btn--active {
+  color: var(--gold-bright);
+}
+
+/* error inside chat */
+.chat-error {
+  padding: 14px 18px;
+  border-left: 3px solid var(--border-mid);
+  background: var(--bg-surface-1);
+  border-radius: 0 10px 10px 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ── Answer prose ──────────────────────────────────────────────────────────── */
+
+.answer-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.answer-block__prose {
+  padding: 2px 0;
+}
+
+.answer-block__prose p {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  line-height: 1.78;
+  color: var(--text-secondary);
+  font-weight: 300;
+  letter-spacing: 0.002em;
+}
+
+.answer-block__prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Verse card (the pull-quote) ──────────────────────────────────────────── */
+
+/* Structural container: the outer element becomes a proper card with warm
+   background gradient, soft border on three sides, and the gold "bar" on
+   the left kept as a bright accent. Hover lifts subtly + intensifies glow.  */
+
+.pull-quote {
+  position: relative;
+  margin: 20px 0;
+  padding: 18px 18px 16px 20px;
+  background:
+    linear-gradient(180deg, rgba(200, 136, 30, 0.055) 0%, rgba(200, 136, 30, 0.02) 100%),
+    rgba(255, 255, 255, 0.015);
+  border: 1px solid var(--border-soft);
+  border-left: none;
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  opacity: 0;
+  animation: fadeSlideUp 0.45s ease both;
+  animation-delay: var(--anim-delay, 0ms);
+  transition: border-color var(--transition-med), transform var(--transition-med), box-shadow var(--transition-med);
+}
+
+.pull-quote:hover {
+  border-color: var(--border-mid);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px -12px rgba(200, 136, 30, 0.22);
+}
+
+/* Left accent bar as a pseudo-element so the border-radius is clean. */
+.pull-quote__bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--gold-core), var(--gold-bright));
+  border-radius: 3px 0 0 3px;
+}
+
+.pull-quote__inner {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Header: scripture badge, verse ref, speaker on the left; actions on the right. */
+.pull-quote__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pull-quote__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.pull-quote__scripture {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  background: var(--bg-surface-3);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--gold-bright);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.pull-quote__ref-num {
+  font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+  font-size: 0.78rem;
+  color: rgba(200, 136, 30, 0.85);
+  letter-spacing: 0.02em;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.pull-quote__speaker {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.pull-quote__speaker::before {
+  content: '·';
+  margin-right: 8px;
+  color: var(--text-faint);
+}
+
+.pull-quote__actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* Legacy .pull-quote__ref kept for back-compat (still targeted from other JSX). */
+.pull-quote__ref {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: rgba(200, 136, 30, 0.75);
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.pull-quote__ref em {
+  font-style: normal;
+}
+
+/* Body: the essence line — larger, prominent serif italic. */
+.pull-quote__text {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 1.14rem;
+  line-height: 1.55;
+  color: var(--gold-bright);
+  margin: 0;
+  letter-spacing: 0.005em;
+}
+
+/* Devanagari shloka: shown in the collapsed card too. */
+.pull-quote__devanagari {
+  font-family: 'Noto Sans Devanagari', 'Tiro Devanagari Sanskrit', sans-serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: rgba(245, 232, 204, 0.66);
+  margin: 0;
+}
+
+.pull-quote__devanagari--inline {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: rgba(245, 232, 204, 0.4);
+  margin: -4px 0 0;
+  letter-spacing: 0.01em;
+}
+
+/* Play button — larger, warmer, more inviting. */
+.pull-quote__play {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(200, 136, 30, 0.18), rgba(200, 136, 30, 0.1));
+  border: 1px solid var(--border-mid);
+  color: var(--gold-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+  overflow: hidden;
+}
+
+.pull-quote__play:hover:not(:disabled) {
+  background: linear-gradient(135deg, rgba(200, 136, 30, 0.28), rgba(200, 136, 30, 0.16));
+  border-color: var(--border-strong);
+  color: #fff2c4;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px var(--gold-glow);
+}
+
+.pull-quote__play:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.pull-quote__play--active {
+  background: linear-gradient(135deg, rgba(200, 136, 30, 0.32), rgba(200, 136, 30, 0.18));
+  border-color: var(--border-strong);
+  color: #fff2c4;
+  animation: playPulse 1.6s ease infinite;
+}
+
+.pull-quote__play--loading {
+  color: var(--gold-core);
+  cursor: wait;
+}
+
+.pull-quote__play:disabled {
+  cursor: wait;
+}
+
+.pull-quote__play-ripple {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  animation: ripple 1.2s ease infinite;
+  pointer-events: none;
+}
+
+/* Expand button — subtle, secondary. */
+.pull-quote__expand {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-faint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.pull-quote__expand:hover,
+.pull-quote__expand--open {
+  background: var(--bg-surface-1);
+  border-color: var(--border-soft);
+  color: rgba(200, 136, 30, 0.85);
+}
+
+/* Expanded detail panel. */
+.pull-quote__detail {
+  margin-top: 4px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(200, 136, 30, 0.14);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+  animation: expandDown 0.28s ease both;
+}
+
+.pull-quote__translation {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.94rem;
+  line-height: 1.7;
+  color: rgba(245, 232, 204, 0.7);
+  font-style: italic;
+  margin: 0;
+}
+
+.pull-quote__meaning {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(245, 232, 204, 0.55);
+  margin: 0;
+}
+
+.pull-quote__insight {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(245, 232, 204, 0.7);
+  border-left: 2px solid rgba(200, 136, 30, 0.28);
+  padding-left: 14px;
+  margin: 0;
+}
+
+.pull-quote__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.pull-quote__tag {
+  padding: 3px 10px;
+  background: rgba(200, 136, 30, 0.08);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  font-size: 0.72rem;
+  color: rgba(200, 136, 30, 0.7);
+  letter-spacing: 0.02em;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.pull-quote__tag:hover {
+  background: rgba(200, 136, 30, 0.14);
+  color: var(--gold-bright);
+}
+
+/* ── Phase indicator ───────────────────────────────────────────────────────── */
+
+.phase-indicator {
+  padding: 2px 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.phase-indicator__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.phase-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: stepIn 0.3s ease both;
+}
+
+.phase-step__dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-med), border-color var(--transition-med);
+}
+
+.phase-step--done .phase-step__dot {
+  background: rgba(200, 136, 30, 0.18);
+  border: 1px solid var(--border-mid);
+  color: var(--gold-core);
+}
+
+.phase-step--active .phase-step__dot {
+  background: rgba(200, 136, 30, 0.12);
+  border: 1px solid var(--border-mid);
+  box-shadow: 0 0 8px rgba(200, 136, 30, 0.35);
+}
+
+.phase-step--pending .phase-step__dot {
+  background: rgba(245, 232, 204, 0.04);
+  border: 1px solid rgba(245, 232, 204, 0.1);
+}
+
+.phase-step__spinner {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(200, 136, 30, 0.25);
+  border-top-color: var(--gold-core);
+  animation: spin 0.75s linear infinite;
+}
+
+.phase-step__label {
+  font-size: 0.87rem;
+  letter-spacing: 0.005em;
+  transition: color var(--transition-med);
+}
+
+.phase-step--done .phase-step__label    { color: var(--text-muted); }
+.phase-step--active .phase-step__label  { color: var(--text-primary); font-weight: 500; }
+.phase-step--pending .phase-step__label { color: var(--text-faint); }
+
+.phase-indicator__intents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-left: 32px;
+}
+
+.phase-intent-chip {
+  padding: 3px 11px;
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  color: rgba(200, 136, 30, 0.85);
+  letter-spacing: 0.01em;
+  animation: fadeIn 0.3s ease both;
+}
+
+/* Cursor-style typing dots for when the RAG stage is composing the answer. */
+.typing-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0;
+  margin-left: 32px;
+  color: var(--gold-bright);
+}
+.typing-dots span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: typingBounce 1.2s ease-in-out infinite;
+}
+.typing-dots span:nth-child(2) { animation-delay: 0.15s; }
+.typing-dots span:nth-child(3) { animation-delay: 0.3s; }
+
+/* ── Explore deeper (kept, restyled) ──────────────────────────────────────── */
+
+.explore-deeper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+  padding: 9px 20px;
+  background: transparent;
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-pill);
+  color: var(--gold-bright);
+  font-size: 0.84rem;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+  animation: fadeIn 0.4s ease both;
+}
+
+.explore-deeper:hover:not(:disabled) {
+  background: var(--bg-surface-2);
+  border-color: var(--border-strong);
+  color: #fff2c4;
+}
+
+.explore-deeper:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* ── Input bar ─────────────────────────────────────────────────────────────── */
+
+.chat-input-bar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 16px 28px 24px;
+  background: linear-gradient(180deg, rgba(14, 12, 8, 0) 0%, rgba(14, 12, 8, 0.96) 40%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  position: relative;
+  z-index: 2;
+}
+
+.chat-input-wrap {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-input);
+  padding: 4px 6px 4px 4px;
+  transition: border-color var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-med);
+}
+
+.chat-input-wrap:focus-within {
+  border-color: var(--border-strong);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 0 3px rgba(200, 136, 30, 0.12);
+}
+
+.chat-input {
+  flex: 1;
+  resize: none;
+  border: none;
+  background: transparent;
+  padding: 11px 12px 11px 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: var(--text-primary);
+  outline: none;
+  overflow-y: auto;
+  max-height: 140px;
+}
+
+.chat-input:disabled { opacity: 0.4; }
+
+.chat-input::placeholder {
+  color: var(--text-faint);
+}
+
+.chat-send {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, var(--gold-core), var(--gold-bright));
+  color: #1a1108;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    opacity var(--transition-fast);
+  padding: 0;
+  align-self: center;
+  margin: 0 2px;
+}
+
+.chat-send:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(200, 136, 30, 0.45);
+}
+
+.chat-send:active:not(:disabled) {
+  transform: scale(0.94);
+}
+
+.chat-send:disabled {
+  opacity: 0.35;
+  cursor: default;
+  background: rgba(200, 136, 30, 0.35);
+  color: rgba(26, 17, 8, 0.6);
+}
+
+/* ── Spinners ─────────────────────────────────────────────────────────────── */
+
+.btn-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(26, 17, 8, 0.3);
+  border-top-color: #1a1108;
+  animation: spin 0.7s linear infinite;
+}
+
+/* Spinner inside a golden button (send / play) — inverted for contrast. */
+.pull-quote__play .btn-spinner {
+  border-color: rgba(200, 136, 30, 0.25);
+  border-top-color: var(--gold-bright);
+  width: 12px;
+  height: 12px;
+  border-width: 2px;
+}
+
+/* ── Copy-confirmation toast (no wire needed; just class-toggle) ──────────── */
+
+.copy-toast {
+  position: fixed;
+  bottom: 96px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  background: rgba(200, 136, 30, 0.18);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  color: var(--gold-bright);
+  font-size: 0.82rem;
+  z-index: 100;
+  animation: fadeIn 0.2s ease both;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+}
+
+/* ── Mobile ────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .chat-page {
+    height: calc(100dvh - 60px);
+    max-width: 100%;
+  }
+
+  .chat-messages {
+    padding: 24px 16px 8px;
+  }
+
+  .chat-input-bar {
+    padding: 12px 14px 18px;
+  }
+
+  .user-bubble {
+    max-width: 88%;
+  }
+
+  .chat-welcome {
+    padding: 24px 0 40px;
+  }
+
+  .chat-welcome__title {
+    font-size: 1.75rem;
+  }
+
+  .chat-welcome__sub {
+    font-size: 0.86rem;
+    margin-bottom: 28px;
+  }
+
+  .chat-welcome__grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 4px;
+  }
+
+  .assistant-bubble {
+    grid-template-columns: 28px 1fr;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .assistant-bubble__avatar {
+    width: 26px;
+    height: 26px;
+  }
+
+  .pull-quote {
+    margin: 16px 0;
+    padding: 14px 14px 12px 16px;
+  }
+
+  .pull-quote__text {
+    font-size: 1.05rem;
+  }
+
+  .pull-quote__header {
+    gap: 8px;
+  }
+
+  .pull-quote__actions {
+    /* Keep actions on the same row on mobile so the card stays compact. */
+    margin-left: auto;
+  }
+
+  .answer-block__prose p {
+    font-size: 0.96rem;
+  }
+
+  /* Hover-driven actions don't work on touch; always show them faintly. */
+  .assistant-bubble__actions {
+    opacity: 0.7;
+  }
+}

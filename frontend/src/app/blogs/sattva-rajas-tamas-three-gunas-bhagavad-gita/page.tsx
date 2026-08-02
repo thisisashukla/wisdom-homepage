@@ -414,6 +414,38 @@ const schemas = [
       },
       {
         "@type": "Question",
+        "name": "What is sattva guna?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sattva guna is the quality of clarity, purity, and knowledge. In the Bhagavad Gita (BG 14.6), sattva is described as pure and illuminating — free of impurity. When sattva is strong, you feel clear, calm, alert, and interested in learning without craving or aversion. The Gita warns that even sattva binds through attachment to happiness and knowledge — it is the best guna to cultivate but not the final goal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is rajas guna?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rajas guna is the quality of activity, desire, and restlessness. In BG 14.7, rajas is described as the source of craving and attachment — it binds the soul through the compulsion to act. When rajas dominates you feel driven, ambitious, agitated, and unable to sit still. Rajas is the engine of the world's work but also the source of most stress when it is unregulated."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is tamas guna?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tamas guna is the quality of inertia, heaviness, and delusion. In BG 14.8, tamas is described as born of ignorance — it binds the soul through negligence, laziness, and sleep. When tamas dominates you feel heavy, unmotivated, confused, or emotionally shut down. Tamas is not moral evil; it is a natural condition that can be shifted through better food, rest, activity, and consciousness."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the three gunas in the Bhagavad Gita?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The three gunas in the Bhagavad Gita are sattva (clarity), rajas (activity), and tamas (inertia). Together they form the entire fabric of prakriti (nature), including your body, mind, food, work, and current mood. Chapter 14 (Gunatraya Vibhaga Yoga) is dedicated to them, and Chapters 17 and 18 apply the framework to food, worship, sacrifice, action, knowledge, and duty."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "How do the three gunas affect daily life?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -684,6 +716,34 @@ export default function ThreeGunasPage() {
         <strong>What are sattva, rajas, and tamas?</strong>
         <p>
           Sattva, rajas, and tamas are the three gunas, the three fundamental qualities that the Bhagavad Gita says make up all of prakriti (nature). Sattva is clarity, lightness, and knowledge. Rajas is activity, desire, and restlessness. Tamas is inertia, heaviness, and delusion. They are not personality types. They are forces present in everything and everyone in varying combinations.
+        </p>
+      </div>
+
+      <div className="faq-item">
+        <strong>What is sattva guna?</strong>
+        <p>
+          Sattva guna is the quality of clarity, purity, and knowledge. In BG 14.6 sattva is described as pure and illuminating — free of impurity. When sattva is strong, you feel clear, calm, alert, and interested in learning without craving or aversion. The Gita warns that even sattva binds through attachment to happiness and knowledge — it is the best guna to cultivate but not the final goal.
+        </p>
+      </div>
+
+      <div className="faq-item">
+        <strong>What is rajas guna?</strong>
+        <p>
+          Rajas guna is the quality of activity, desire, and restlessness. In BG 14.7 rajas is described as the source of craving and attachment — it binds the soul through the compulsion to act. When rajas dominates you feel driven, ambitious, agitated, and unable to sit still. Rajas is the engine of the world&apos;s work but also the source of most stress when it is unregulated.
+        </p>
+      </div>
+
+      <div className="faq-item">
+        <strong>What is tamas guna?</strong>
+        <p>
+          Tamas guna is the quality of inertia, heaviness, and delusion. In BG 14.8 tamas is described as born of ignorance — it binds through negligence, laziness, and sleep. When tamas dominates you feel heavy, unmotivated, confused, or emotionally shut down. Tamas is not moral evil; it is a natural condition that can be shifted through better food, rest, activity, and consciousness.
+        </p>
+      </div>
+
+      <div className="faq-item">
+        <strong>What are the three gunas in the Bhagavad Gita?</strong>
+        <p>
+          The three gunas in the Bhagavad Gita are sattva (clarity), rajas (activity), and tamas (inertia). Together they form the entire fabric of prakriti (nature) — including your body, mind, food, work and current mood. Chapter 14 (Gunatraya Vibhaga Yoga) is dedicated to them, and Chapters 17 and 18 apply the framework to food, worship, sacrifice, action, knowledge and duty.
         </p>
       </div>
 
