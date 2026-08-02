@@ -480,23 +480,6 @@ function ChatWelcome({ onSuggest }: { onSuggest: (q: string) => void }) {
   )
 }
 
-/** LEGACY chip-based welcome — retained for reference only; not rendered. */
-function _LegacyChatWelcome({ onSuggest }: { onSuggest: (q: string) => void }) {
-  return (
-    <div className="chat-welcome">
-      <h1 className="chat-welcome__title">Ask the Scriptures</h1>
-      <p className="chat-welcome__sub">Wisdom from 18,000+ verses.</p>
-      <div className="chat-welcome__suggestions">
-        {SUGGESTED.map(s => (
-          <button key={s.title} className="search-suggestion" onClick={() => onSuggest(s.title)}>
-            {s.title}
-          </button>
-        ))}
-      </div>
-    </div>
-  )
-}
-
 function UserBubble({ text }: { text: string }) {
   return (
     <div className="user-bubble">
