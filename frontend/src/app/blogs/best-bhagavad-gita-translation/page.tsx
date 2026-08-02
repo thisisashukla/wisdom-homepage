@@ -3,12 +3,12 @@ import BlogTracker from '@/components/BlogTracker'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "Which Bhagavad Gita Translation Should You Read? | Wisdom",
-  description: "Nearly 300 English translations of the Bhagavad Gita existed by 1982. This guide compares the major ones by reader type, with every criticism cited to its source.",
+  title: "Best Bhagavad Gita Translation — A Reader-by-Reader Guide to All Major English Versions | Wisdom",
+  description: "The best Bhagavad Gita translation depends on who you are. Compare Eknath Easwaran, Winthrop Sargeant, Prabhupada, Stephen Mitchell, Radhakrishnan and more — with every criticism cited to its source. Which version you should read, in one page.",
   keywords: "best bhagavad gita translation, which bhagavad gita to read, bhagavad gita as it is review, sadhak sanjivani english, eknath easwaran gita, gita press bhagavad gita, shankara gita bhashya english, bhagavad gita for beginners, gita rahasya tilak, jnaneshwari english, bibek debroy gita, bhagavad gita commentary comparison",
   openGraph: {
-    title: "Which Bhagavad Gita Translation Should You Read? | Wisdom",
-    description: "Every Gita translation is also an interpretation. A reader-by-reader guide to the major translations and commentaries, with criticisms cited to named sources.",
+    title: "Best Bhagavad Gita Translation — A Reader-by-Reader Guide to All Major English Versions",
+    description: "Every Gita translation is also an interpretation. A reader-by-reader guide to the best translations and commentaries — Easwaran, Sargeant, Prabhupada, Mitchell, Radhakrishnan — with criticisms cited to named sources.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/best-bhagavad-gita-translation",
     siteName: 'Wisdom',

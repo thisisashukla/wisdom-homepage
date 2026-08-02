@@ -3,12 +3,12 @@ import BlogTracker from '@/components/BlogTracker'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "Nishkama Karma: Acting Without Attachment (Bhagavad Gita) | Wisdom",
-  description: "Nishkama karma means action without desire for results. Not passive. The Gita calls it the highest form of work. Here's what it means, why it's hard, and 7 verses that show how to actually do it.",
+  title: "Nishkama Karma Meaning — Krishna's Definition of Selfless Action in the Bhagavad Gita | Wisdom",
+  description: "Nishkama karma (निष्काम कर्म) means action without attachment to results — Krishna's central teaching in Chapters 2 and 3 of the Bhagavad Gita. What it is, why it's not passivity, and 7 verses that show how to actually do it.",
   keywords: "nishkama karma meaning, nishkama karma bhagavad gita, nishkama karma in daily life, nishkama karma yoga, action without attachment gita, detached action bhagavad gita, karma yoga without desire, nishkama karma explained, yajna karma gita",
   openGraph: {
-    title: "Nishkama Karma: Acting Without Attachment (Bhagavad Gita) | Wisdom",
-    description: "Nishkama karma means action without desire for results. Not passive. The Gita calls it the highest form of work. Here's what the verses actually say.",
+    title: "Nishkama Karma Meaning — Krishna's Definition of Selfless Action in the Bhagavad Gita",
+    description: "Nishkama karma (निष्काम कर्म) — action without attachment to results. Krishna's central teaching, what it actually means, and 7 verses that show how to do it.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/nishkama-karma-bhagavad-gita",
     siteName: 'Wisdom',

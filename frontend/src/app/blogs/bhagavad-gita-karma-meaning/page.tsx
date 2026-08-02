@@ -3,12 +3,12 @@ import BlogTracker from '@/components/BlogTracker'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "Karma: The Real Meaning in the Bhagavad Gita (Not What You Think) | Wisdom",
-  description: "Karma is not cosmic payback. The Gita's Chapter 3 defines it precisely: act without attachment to results. Here's what nishkama karma and karma phala actually mean, with the exact verses.",
+  title: "Karma in the Bhagavad Gita — The Real Meaning + 7 Key Verses (Chapter 3 Explained) | Wisdom",
+  description: "Karma is not cosmic payback. Chapter 3 of the Bhagavad Gita defines it precisely: act without attachment to results. The real meaning of karma, plus 7 shlokas on karma from the Gita with Sanskrit and English meaning.",
   keywords: "karma meaning in bhagavad gita, what is karma, karma definition, bhagavad gita karma yoga, what does karma mean in hinduism, karma in gita, karma meaning hindi, karma actual meaning, nishkama karma, karma yoga chapter 3, karma phala meaning, bhagavad gita 2.47 meaning",
   openGraph: {
-    title: "Karma: The Real Meaning in the Bhagavad Gita (Not What You Think) | Wisdom",
-    description: "Karma is not cosmic payback. Chapter 3 of the Gita defines it precisely: act without attachment to results. Here's what the verses actually say.",
+    title: "Karma in the Bhagavad Gita — The Real Meaning + 7 Key Verses (Chapter 3 Explained)",
+    description: "Karma is not cosmic payback. Chapter 3 of the Bhagavad Gita defines it precisely — act without attachment to results. Real meaning plus 7 karma shlokas from the Gita with Sanskrit and English.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning",
     siteName: 'Wisdom',
@@ -607,6 +607,61 @@ export default function KarmaMeaningPage() {
                 If you're anxious about whether your efforts will pay off, the Gita's teaching is: act fully, but release the demand to own the outcome. Your job is the quality of your action. The fruits are not your business.
             </p>
         </div>
+
+        {/* ── Quick reference: karma quotes / shlokas — targets "karma quotes" query cluster ── */}
+        <h2 id="karma-quotes">7 Karma Quotes from the Bhagavad Gita</h2>
+        <p>
+            The seven verses below are the Gita&apos;s core teaching on karma, compressed. Read them as a quick reference; for full context and meaning, follow the link on each. If you want a longer, quote-only companion piece, see our{' '}
+            <a href="/blogs/karma-quotes-bhagavad-gita" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_karma_quotes">
+                Karma Quotes from the Bhagavad Gita
+            </a>{' '}
+            page — a curated list of 10 shlokas on karma with Sanskrit, transliteration and English meaning.
+        </p>
+
+        <ol className="karma-quotes-list" style={{ paddingLeft: 20, margin: '18px 0 32px' }}>
+            <li style={{ marginBottom: 18 }}>
+                <strong>Bhagavad Gita 2.47</strong> · <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em>
+                <br />
+                &ldquo;You have a right to action, never to its fruits.&rdquo;{' '}
+                <a href="/gita/chapter/2/verse/47" data-mp-location="karma_quote_2_47" style={{ color: 'var(--gold-light)' }}>Read →</a>
+            </li>
+            <li style={{ marginBottom: 18 }}>
+                <strong>Bhagavad Gita 2.48</strong> · <em>yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya</em>
+                <br />
+                &ldquo;Established in yoga, do your work — abandoning attachment, remaining even in success and failure. Evenness of mind is called yoga.&rdquo;{' '}
+                <a href="/gita/chapter/2/verse/48" data-mp-location="karma_quote_2_48" style={{ color: 'var(--gold-light)' }}>Read →</a>
+            </li>
+            <li style={{ marginBottom: 18 }}>
+                <strong>Bhagavad Gita 3.9</strong> · <em>yajñārthātkarmaṇo&apos;nyatra loko&apos;yaṃ karmabandhanaḥ</em>
+                <br />
+                &ldquo;Action done as a sacred offering (yajna) does not bind. Any other action creates bondage.&rdquo;{' '}
+                <a href="/gita/chapter/3/verse/9" data-mp-location="karma_quote_3_9" style={{ color: 'var(--gold-light)' }}>Read →</a>
+            </li>
+            <li style={{ marginBottom: 18 }}>
+                <strong>Bhagavad Gita 3.19</strong> · <em>tasmādasaktaḥ satataṃ kāryaṃ karma samācara</em>
+                <br />
+                &ldquo;Therefore, always perform your duty without attachment. Acting unattached, a person reaches the highest.&rdquo;{' '}
+                <a href="/gita/chapter/3/verse/19" data-mp-location="karma_quote_3_19" style={{ color: 'var(--gold-light)' }}>Read →</a>
+            </li>
+            <li style={{ marginBottom: 18 }}>
+                <strong>Bhagavad Gita 3.35</strong> · <em>śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt</em>
+                <br />
+                &ldquo;Better to do your own duty imperfectly than another&apos;s perfectly. Doing your own dharma, even if flawed, is safer.&rdquo;{' '}
+                <a href="/gita/chapter/3/verse/35" data-mp-location="karma_quote_3_35" style={{ color: 'var(--gold-light)' }}>Read →</a>
+            </li>
+            <li style={{ marginBottom: 18 }}>
+                <strong>Bhagavad Gita 4.18</strong> · <em>karmaṇyakarma yaḥ paśyedakarmaṇi ca karma yaḥ</em>
+                <br />
+                &ldquo;The one who sees inaction in action, and action in inaction — that one is wise among people.&rdquo;{' '}
+                <a href="/gita/chapter/4/verse/18" data-mp-location="karma_quote_4_18" style={{ color: 'var(--gold-light)' }}>Read →</a>
+            </li>
+            <li style={{ marginBottom: 18 }}>
+                <strong>Bhagavad Gita 4.37</strong> · <em>jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā</em>
+                <br />
+                &ldquo;As fire reduces wood to ashes, the fire of knowledge reduces all karma to ashes.&rdquo;{' '}
+                <a href="/gita/chapter/4/verse/37" data-mp-location="karma_quote_4_37" style={{ color: 'var(--gold-light)' }}>Read →</a>
+            </li>
+        </ol>
     </div>
 
     <div className="faq-section">

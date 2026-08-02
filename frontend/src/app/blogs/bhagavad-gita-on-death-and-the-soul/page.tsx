@@ -3,12 +3,12 @@ import BlogTracker from '@/components/BlogTracker'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "What the Bhagavad Gita Says About Death, the Soul, and What Comes After | Wisdom",
-  description: "The Gita's teaching on death is not comfort. It's a structural claim: the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it, water doesn't wet it. Here's what BG 2.19-2.25 actually says.",
+  title: "Bhagavad Gita on Death — 'The Soul Cannot Be Cut, Burned or Wet' (BG 2.19-2.25 Explained) | Wisdom",
+  description: "What the Bhagavad Gita actually says about death and the soul. Krishna's answer to Arjuna is not comfort — it's a structural claim: the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it, water doesn't wet it. BG 2.19-2.25 explained, with Sanskrit and English meaning.",
   keywords: "bhagavad gita on death, bhagavad gita soul after death, atman bhagavad gita, nainam chindanti shastrani meaning, what does gita say about death, bhagavad gita death is not real, bhagavad gita 2.20 meaning, bhagavad gita atman eternal, bhagavad gita reincarnation, dehi meaning gita",
   openGraph: {
-    title: "What the Bhagavad Gita Says About Death, the Soul, and What Comes After | Wisdom",
-    description: "The Gita's teaching on death is not comfort. It's a structural claim: the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it. Here's what BG 2.19-2.25 actually says.",
+    title: "Bhagavad Gita on Death — 'The Soul Cannot Be Cut, Burned or Wet' (BG 2.19-2.25)",
+    description: "What the Bhagavad Gita says about death and the soul — Krishna's structural claim in BG 2.19-2.25 that the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul",
     siteName: 'Wisdom',

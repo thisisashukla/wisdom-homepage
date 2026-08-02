@@ -3,12 +3,12 @@ import BlogTracker from '@/components/BlogTracker'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 18 — All 78 Verses, 'Abandon All Duties' & the Final Teaching | Wisdom",
-  description: "Moksha Sannyasa Yoga — the Gita's longest and final chapter. All 78 verses with Sanskrit, Hindi and English meaning, including 18.66 'Abandon all duties, take refuge in me alone' and 18.47 on swadharma.",
+  title: "Bhagavad Gita Chapter 18 — The Longest Chapter (78 Verses), 'Abandon All Duties' & the Final Teaching | Wisdom",
+  description: "Chapter 18 is the longest chapter of the Bhagavad Gita — 78 verses of Moksha Sannyasa Yoga, the final teaching. All verses with Sanskrit, Hindi and English meaning, including 18.66 'Abandon all duties, take refuge in me alone' and 18.47 on swadharma.",
   keywords: "bhagwat geeta chapter 18, bhagavad gita moksha sannyasa yoga, bhagwat geeta adhyay 18, sarva dharman parityajya, man mana bhava mad bhakto, swadharma gita, five causes of action, charama shloka gita, Moksha Sannyasa Yoga meaning, Bhagavad Gita 18.66 sarva dharman parityajya, Bhagavad Gita 18.65 man mana bhava mad bhakto, Bhagavad Gita 18.47 sva dharma, five causes of action Bhagavad Gita, charama shloka Bhagavad Gita, Bhagavad Gita conclusion summary",
   openGraph: {
-    title: "Bhagavad Gita Chapter 18 Summary – Key Verses & Meaning (Moksha Sannyasa)",
-    description: "Bhagavad Gita Chapter 18, the longest chapter, the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
+    title: "Bhagavad Gita Chapter 18 — The Longest Chapter (78 Verses) & the Final Teaching",
+    description: "Bhagavad Gita Chapter 18 is the longest chapter — 78 verses of the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18",
     siteName: 'Wisdom',
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 18 Summary – Key Verses & Meaning (Moksha Sannyasa)",
-    description: "Bhagavad Gita Chapter 18, the longest chapter, the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
+    title: "Bhagavad Gita Chapter 18 — The Longest Chapter (78 Verses) & the Final Teaching",
+    description: "Bhagavad Gita Chapter 18 is the longest chapter — 78 verses of the final teaching. 'Abandon all duties and take refuge in me alone.' (18.66)",
     images: ["https://wisdomquotes.in/assets/chapter18.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-18" },
