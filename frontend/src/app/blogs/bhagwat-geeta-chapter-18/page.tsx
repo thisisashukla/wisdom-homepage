@@ -816,7 +816,7 @@ export default function ChapterPage18() {
         </p>
 
         <p>
-          Notice the five pairs. <em>Pravṛtti / nivṛtti</em>. <em>Kārya / akārya</em>. <em>Bhaya / abhaya</em>. <em>Bandha / mokṣa</em>. The highest intelligence is not impressive knowledge or sophisticated argument. It is the ability to discriminate, in any moment, between these five pairs. What direction leads forward and what direction draws back. What action should be done and what action should not. What is genuine fear and what is unnecessary fear. What binds the soul and what frees it. A person with this discrimination, the verse implies, can navigate any situation. A person without it gets repeatedly caught.
+          Notice the five pairs. <em>Pravṛtti / nivṛtti</em>. <em>Kārya / akārya</em>. <em>Bhaya / abhaya</em>. <em>Bandha / mokṣa</em>. The highest intelligence is not impressive knowledge or sophisticated argument. It is the ability to discriminate, in any moment, between these five pairs. What direction leads forward and what direction draws back. What action should be done and what action should not. What is genuine fear and what is unnecessary fear. What binds the atman and what frees it. A person with this discrimination, the verse implies, can navigate any situation. A person without it gets repeatedly caught.
         </p>
 
                 <ShlokaCard
@@ -849,7 +849,7 @@ export default function ChapterPage18() {
         <h2 id="own-duty">Your Imperfect Duty Over Another's Perfect One</h2>
 
         <p>
-          Verse 18.47 is one of the most often-quoted and most often-misunderstood verses in the Gita. Krishna says: better is one's own dharma, even if imperfectly performed, than another's dharma well performed. The performance of one's natural duty leads to no sin. The verse echoes a similar sentence from Chapter 3.
+          Verse 18.47 is one of the most often-quoted and most often-misunderstood verses in the Gita. Krishna says: better is one's own dharma, even if imperfectly performed, than another's dharma well performed. The performance of one's natural duty leads to no papa. The verse echoes a similar sentence from Chapter 3.
         </p>
 
         <p>

@@ -290,7 +290,7 @@ export default function KrishnaQuotesPage() {
 
         <h2>On Action and Duty</h2>
         <p>
-          The Gita begins as a manual for someone who has stopped being able to act. Arjuna cannot lift his bow. Krishna&apos;s first extended teaching is not about God or the soul &mdash; it is about work. What action is, why it cannot be avoided, and how to perform it without being destroyed by the outcome. This is karma yoga, and BG 2.47 is its most concentrated line.
+          The Gita begins as a manual for someone who has stopped being able to act. Arjuna cannot lift his bow. Krishna&apos;s first extended teaching is not about Bhagavan or the atman &mdash; it is about work. What action is, why it cannot be avoided, and how to perform it without being destroyed by the outcome. This is karma yoga, and BG 2.47 is its most concentrated line.
         </p>
 
         <ShlokaCard
@@ -374,7 +374,7 @@ export default function KrishnaQuotesPage() {
           meaningLabel="Translation"
           meaning="An eternal fragment of my own being becomes the individual self in the world of the living, drawing to itself the mind and the five senses that abide in nature."
           insightLabel="Context"
-          insight="Chapter 15, called the beeja shloka — the seed verse. Krishna finally names what the individual soul is. Not identical with God. Not separate from God. An eternal fragment. Every other teaching in the Gita rests on this claim about identity."
+          insight="Chapter 15, called the beeja shloka — the seed verse. Krishna finally names what the individual atman is. Not identical with Bhagavan. Not separate from Bhagavan. An eternal fragment. Every other teaching in the Gita rests on this claim about identity."
           essence="You are an eternal fragment of the divine, temporarily embodied."
         />
 
@@ -525,7 +525,7 @@ export default function KrishnaQuotesPage() {
           meaningLabel="Translation"
           meaning="Whenever dharma declines and adharma rises, Arjuna, I bring myself forth."
           insightLabel="Context"
-          insight="Chapter 4. Krishna's most famous statement of the avatar doctrine. It is not a claim that God intervenes casually. It is a claim that dharma is not left to collapse. When the balance is broken badly enough, something shows up to restore it."
+          insight="Chapter 4. Krishna's most famous statement of the avatar doctrine. It is not a claim that Bhagavan intervenes casually. It is a claim that dharma is not left to collapse. When the balance is broken badly enough, something shows up to restore it."
           essence="Dharma is not abandoned. When it falls, the divine returns to raise it."
         />
 
@@ -675,7 +675,7 @@ export default function KrishnaQuotesPage() {
 
         <h2>On the Divine Everywhere</h2>
         <p>
-          Krishna&apos;s theology is not distant. In chapters 7 and 10 he describes himself as woven into the world &mdash; the taste of water, the light of the sun, the intelligence of the intelligent. These verses are the Gita&apos;s answer to the question, &ldquo;Where is God?&rdquo; The answer is: look at what you are already looking at, but see it correctly.
+          Krishna&apos;s theology is not distant. In chapters 7 and 10 he describes himself as woven into the world &mdash; the taste of water, the light of the sun, the intelligence of the intelligent. These verses are the Gita&apos;s answer to the question, &ldquo;Where is Bhagavan?&rdquo; The answer is: look at what you are already looking at, but see it correctly.
         </p>
 
         <div className="quote-inline">
@@ -705,7 +705,7 @@ export default function KrishnaQuotesPage() {
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 10.41</div>
           <div className="quote-text">&ldquo;Whatever is glorious, whatever is beautiful, whatever is mighty &mdash; know that as arising from a spark of my splendor.&rdquo;</div>
-          <div className="quote-context">Chapter 10, closing the vibhuti list. Not that every excellent thing is God, but that every excellent thing points toward the source of excellence.</div>
+          <div className="quote-context">Chapter 10, closing the vibhuti list. Not that every excellent thing is Bhagavan, but that every excellent thing points toward the source of excellence.</div>
         </div>
 
         <div className="pull-quote">

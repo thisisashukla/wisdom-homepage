@@ -396,7 +396,7 @@ const schemas = [
       },
       {
         "@type": "Question",
-        "name": "Is Chapter 8 saying we should only think of God at death?",
+        "name": "Is Chapter 8 saying we should only think of Bhagavan at death?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Read carefully, no. Chapter 8 is teaching that the state at death is the trained state, and the trained state is the lifelong outcome of where your attention has gone. The chapter is not a special instruction for the final moment. It is a general instruction about how attention shapes being — death just makes the consequences of attention more visible."
@@ -972,7 +972,7 @@ export default function ChapterPage8() {
             </div>
           </div>
           <div className="faq-item">
-            <div className="faq-q">Is Chapter 8 saying we should only think of God at death?</div>
+            <div className="faq-q">Is Chapter 8 saying we should only think of Bhagavan at death?</div>
             <div className="faq-a">
               Read carefully, no. Chapter 8 is teaching that the state at death is the trained state, and the trained state is the lifelong outcome of where your attention has gone. The chapter is not a special instruction for the final moment. It is a general instruction about how attention shapes being, death just makes the consequences of attention more visible.
             </div>

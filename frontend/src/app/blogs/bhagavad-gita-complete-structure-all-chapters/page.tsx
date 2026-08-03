@@ -489,7 +489,7 @@ const schemas = [
       "name": "What is the final teaching of the Bhagavad Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The final teaching is 18.66: 'Abandon all dharmas and take refuge in me alone. I will free you from all sins. Do not grieve.' This is the most radical verse in the Gita — and the most intimate. After 17 chapters of philosophy, yoga, cosmic revelation, and metaphysics, Krishna's last instruction is not a technique or a path. It is a relationship. Trust me completely. I will handle the rest."
+        "text": "The final teaching is 18.66: 'Abandon all dharmas and take refuge in me alone. I will free you from all papa. Do not grieve.' This is the most radical verse in the Gita — and the most intimate. After 17 chapters of philosophy, yoga, cosmic revelation, and metaphysics, Krishna's last instruction is not a technique or a path. It is a relationship. Trust me completely. I will handle the rest."
       }
     },
     {
@@ -630,7 +630,7 @@ export default function CompleteStructurePage() {
         />
 
         <p>
-          Why start with the soul? Because every practical teaching that follows, about action, duty, attachment, peace, rests on this foundation. If the self that you're protecting when you grieve is actually eternal and indestructible, then the nature of "loss" is different. If the soul cannot be killed, then certain arguments about the moral horror of battle need to be re-examined.
+          Why start with the atman? Because every practical teaching that follows, about action, duty, attachment, peace, rests on this foundation. If the self that you're protecting when you grieve is actually eternal and indestructible, then the nature of "loss" is different. If the atman cannot be killed, then certain arguments about the moral horror of battle need to be re-examined.
         </p>
 
                 <ShlokaCard
@@ -642,7 +642,7 @@ export default function CompleteStructurePage() {
         />
 
         <p>
-          With the metaphysical foundation in place, Krishna moves to the practical. Chapter 2 gives us 2.47, the verse that has probably been quoted more than any other in the Gita. And the reason it lands so hard is exactly because it comes after the soul teaching. Once you understand that you are not the outcome, you can act differently.
+          With the metaphysical foundation in place, Krishna moves to the practical. Chapter 2 gives us 2.47, the verse that has probably been quoted more than any other in the Gita. And the reason it lands so hard is exactly because it comes after the atman teaching. Once you understand that you are not the outcome, you can act differently.
         </p>
 
                 <ShlokaCard
@@ -774,7 +774,7 @@ export default function CompleteStructurePage() {
 
           <div className="faq-item">
             <div className="faq-q">What is the final teaching of the Bhagavad Gita?</div>
-            <div className="faq-a">The final teaching is 18.66: "Abandon all dharmas and take refuge in me alone. I will free you from all sins. Do not grieve." This is the most radical verse in the Gita, and the most intimate. After 17 chapters of philosophy, yoga, cosmic revelation, and metaphysics, Krishna's last instruction is not a technique or a path. It is a relationship. Trust me completely. I will handle the rest.</div>
+            <div className="faq-a">The final teaching is 18.66: "Abandon all dharmas and take refuge in me alone. I will free you from all papa. Do not grieve." This is the most radical verse in the Gita, and the most intimate. After 17 chapters of philosophy, yoga, cosmic revelation, and metaphysics, Krishna's last instruction is not a technique or a path. It is a relationship. Trust me completely. I will handle the rest.</div>
           </div>
 
           <div className="faq-item">

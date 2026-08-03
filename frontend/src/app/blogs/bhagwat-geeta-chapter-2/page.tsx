@@ -4,21 +4,21 @@ import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 2 Summary \u2013 Key Verses & Meaning (Sankhya Yoga)",
-  description: "Bhagavad Gita Chapter 2 (Sankhya Yoga) \u2014 72 verses on the eternal soul, action without attachment, the famous 2.47, and the steady mind of the sthitaprajna.",
-  keywords: "bhagwat geeta chapter 2, bhagavad gita chapter 2 sankhya yoga, bhagavad gita 2.47, karma without attachment gita, bhagwat geeta adhyay 2, sthitaprajna meaning, nayam hanti na hanyate, karmanyevadhikaras te meaning, eternal soul gita, atman bhagavad gita, nishkama karma, Sankhya Yoga summary, Bhagavad Gita 2.47 meaning, sthitaprajna lakshana, the cascade from attachment to ruin",
+  description: "Bhagavad Gita Chapter 2 (Sankhya Yoga) \u2014 72 verses on the eternal atman, action without attachment, the famous 2.47, and the steady mind of the sthitaprajna.",
+  keywords: "bhagwat geeta chapter 2, bhagavad gita chapter 2 sankhya yoga, bhagavad gita 2.47, karma without attachment gita, bhagwat geeta adhyay 2, sthitaprajna meaning, nayam hanti na hanyate, karmanyevadhikaras te meaning, eternal atman gita, atman bhagavad gita, nishkama karma, Sankhya Yoga summary, Bhagavad Gita 2.47 meaning, sthitaprajna lakshana, the cascade from attachment to ruin",
   openGraph: {
     title: "Bhagavad Gita Chapter 2 Summary \u2013 Key Verses & Meaning (Sankhya Yoga)",
-    description: "Seventy-two verses. One question about the soul. One teaching on action. One portrait of a mind that cannot be broken.",
+    description: "Seventy-two verses. One question about the atman. One teaching on action. One portrait of a mind that cannot be broken.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter2.webp", width: 1200, height: 675, alt: "Krishna lifting Arjuna out of grief on the chariot \u2014 Chapter 2 of the Bhagavad Gita, Sankhya Yoga, gives the philosophical heart of the text: the eternal soul, the science of action, and the steady mind." }],
+    images: [{ url: "https://wisdomquotes.in/assets/chapter2.webp", width: 1200, height: 675, alt: "Krishna lifting Arjuna out of grief on the chariot \u2014 Chapter 2 of the Bhagavad Gita, Sankhya Yoga, gives the philosophical heart of the text: the eternal atman, the science of action, and the steady mind." }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 2 Summary \u2013 Key Verses & Meaning (Sankhya Yoga)",
-    description: "All 72 verses of Bhagavad Gita Chapter 2 \u2014 the eternal soul, action without attachment, and the mind that cannot be broken.",
+    description: "All 72 verses of Bhagavad Gita Chapter 2 \u2014 the eternal atman, action without attachment, and the mind that cannot be broken.",
     images: ["https://wisdomquotes.in/assets/chapter2.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2" },
@@ -540,7 +540,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": ["Article", "LearningResource"],
     "headline": "Bhagavad Gita Chapter 2 — Sankhya Yoga: The Chapter That Changes Everything",
-    "description": "Bhagavad Gita Chapter 2 — Sankhya Yoga. All 72 verses with Sanskrit, transliteration, meaning. The eternal soul, action without attachment, and the portrait of the sthitaprajna.",
+    "description": "Bhagavad Gita Chapter 2 — Sankhya Yoga. All 72 verses with Sanskrit, transliteration, meaning. The eternal atman, action without attachment, and the portrait of the sthitaprajna.",
     "alternativeHeadline": "Bhagavad Gita Chapter 2 (Sankhya Yoga) — Summary & Verses",
     "author": {
       "@type": "Person",
@@ -563,7 +563,7 @@ const schemas = [
       { "@type": "Person", "name": "Krishna", "url": "https://en.wikipedia.org/wiki/Krishna" },
       { "@type": "Person", "name": "Arjuna", "url": "https://en.wikipedia.org/wiki/Arjuna" }
     ],
-    "keywords": "bhagwat geeta chapter 2, bhagavad gita chapter 2 sankhya yoga, bhagavad gita 2.47, karma without attachment gita, bhagwat geeta adhyay 2, sthitaprajna meaning, nayam hanti na hanyate, karmanyevadhikaras te meaning, eternal soul gita, nishkama karma, Sankhya Yoga summary, the cascade from attachment to ruin",
+    "keywords": "bhagwat geeta chapter 2, bhagavad gita chapter 2 sankhya yoga, bhagavad gita 2.47, karma without attachment gita, bhagwat geeta adhyay 2, sthitaprajna meaning, nayam hanti na hanyate, karmanyevadhikaras te meaning, eternal atman gita, nishkama karma, Sankhya Yoga summary, the cascade from attachment to ruin",
     "articleSection": "Bhagavad Gita",
     "inLanguage": "en",
     "isAccessibleForFree": true,
@@ -607,7 +607,7 @@ const schemas = [
       "name": "What is Bhagavad Gita Chapter 2 about?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 2, called Sankhya Yoga or the Yoga of Knowledge, is the philosophical foundation of the entire Gita. It contains Krishna's first direct teachings to Arjuna — on the eternal nature of the soul, the dharma of a warrior, action without attachment to results, and the portrait of the sthitaprajna or person of steady wisdom. It is the longest chapter of the Gita's first half and arguably its most dense."
+        "text": "Chapter 2, called Sankhya Yoga or the Yoga of Knowledge, is the philosophical foundation of the entire Gita. It contains Krishna's first direct teachings to Arjuna — on the eternal nature of the atman, the dharma of a warrior, action without attachment to results, and the portrait of the sthitaprajna or person of steady wisdom. It is the longest chapter of the Gita's first half and arguably its most dense."
       }
     },
     {
@@ -615,7 +615,7 @@ const schemas = [
       "name": "What is the most important verse in Chapter 2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The most famous is 2.47 — 'karmany evadhikaras te ma phaleshu kadachana' — often translated as 'you have a right to work, not to the fruits of work.' But 2.20 (the soul is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument."
+        "text": "The most famous is 2.47 — 'karmany evadhikaras te ma phaleshu kadachana' — often translated as 'you have a right to work, not to the fruits of work.' But 2.20 (the atman is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument."
       }
     },
     {
@@ -639,7 +639,7 @@ const schemas = [
       "name": "How many verses are in Bhagavad Gita Chapter 2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 2 has 72 verses, making it one of the longest chapters in the Gita. It is also philosophically the densest — containing the core teachings on the soul, duty, action, and wisdom that the remaining 16 chapters expand upon."
+        "text": "Chapter 2 has 72 verses, making it one of the longest chapters in the Gita. It is also philosophically the densest — containing the core teachings on the atman, duty, action, and wisdom that the remaining 16 chapters expand upon."
       }
     },
     {
@@ -687,7 +687,7 @@ export default function ChapterTwoPage() {
           <em>Sankhya Yoga</em>
         </h1>
         <p className="article-subtitle">
-          Seventy-two verses. One question about the soul. One teaching on action. One portrait of a mind that cannot be broken. A close reading.
+          Seventy-two verses. One question about the atman. One teaching on action. One portrait of a mind that cannot be broken. A close reading.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -732,7 +732,7 @@ export default function ChapterTwoPage() {
               <a href="#krishna-diagnosis">Krishna's diagnosis, what Arjuna got wrong (2.1–2.11)</a>
             </li>
             <li>
-              <a href="#eternal-soul">The teaching on the eternal soul (2.12–2.30)</a>
+              <a href="#eternal-atman">The teaching on the eternal atman (2.12–2.30)</a>
             </li>
             <li>
               <a href="#dharma-argument">Why Arjuna must fight, the dharma argument (2.31–2.38)</a>
@@ -786,11 +786,11 @@ export default function ChapterTwoPage() {
         {/* SECTION 2: ETERNAL SOUL */}
         <div className="section-divider">
           <div className="section-divider-line"></div>
-          <div className="section-divider-label">Verses 2.12–2.30 · The Eternal Soul</div>
+          <div className="section-divider-label">Verses 2.12–2.30 · The Eternal Atman</div>
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="eternal-soul">The Foundation: What Cannot Die</h2>
+        <h2 id="eternal-atman">The Foundation: What Cannot Die</h2>
 
         <p>
           Before Krishna gives Arjuna any practical instruction, he has to establish what kind of thing Arjuna actually is. This is not abstract philosophy. It is the foundation that makes everything else in the Gita make sense. If you don't understand what the self is, you can't understand why certain actions matter and others don't.
@@ -809,7 +809,7 @@ export default function ChapterTwoPage() {
         />
 
         <p>
-          The logic is elegant. If the soul is unborn and eternal, then "birth" and "death" are not absolute events, they are transitions of the body, not the self. They are like changing clothes.
+          The logic is elegant. If the atman is unborn and eternal, then "birth" and "death" are not absolute events, they are transitions of the body, not the self. They are like changing clothes.
         </p>
 
                 <ShlokaCard
@@ -817,10 +817,10 @@ export default function ChapterTwoPage() {
           speaker="Krishna"
           sanskrit="वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥"
           iast="vāsāṃsi jīrṇāni yathā vihāya navāni gṛhṇāti naro'parāṇi | tathā śarīrāṇi vihāya jīrṇānyanyāni saṃyāti navāni dehī ||"
-          meaning="Just as a person puts on new garments, giving up old ones, similarly, the soul accepts new material bodies, giving up the old and useless ones."
+          meaning="Just as a person puts on new garments, giving up old ones, similarly, the atman accepts new material bodies, giving up the old and useless ones."
           insightLabel="The metaphor"
           insight="The garment metaphor is one of the Gita's most concrete images. You don't mourn the death of a shirt when you put on a new one. The shirt was never you. Why should you mourn the death of a body? This is not abstract, it's asking you to think about what you're actually grieving."
-          essence="You are the eternal soul, not the temporary body."
+          essence="You are the eternal atman, not the temporary body."
         />
 
         <p>
@@ -1167,12 +1167,12 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.21</td>
               <td>Krishna</td>
-              <td>You are the eternal soul; unaffected by change</td>
+              <td>You are the eternal atman; unaffected by change</td>
             </tr>
             <tr>
               <td>2.22</td>
               <td>Krishna</td>
-              <td>You are the eternal soul, not the temporary body</td>
+              <td>You are the eternal atman, not the temporary body</td>
             </tr>
             <tr>
               <td>2.23</td>
@@ -1182,12 +1182,12 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.24</td>
               <td>Krishna</td>
-              <td>The soul is indestructible, nothing can harm your innermost self</td>
+              <td>The atman is indestructible, nothing can harm your innermost self</td>
             </tr>
             <tr>
               <td>2.25</td>
               <td>Krishna</td>
-              <td>You are the unchanging soul; do not grieve for passing things</td>
+              <td>You are the unchanging atman; do not grieve for passing things</td>
             </tr>
             <tr>
               <td>2.26</td>
@@ -1207,12 +1207,12 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.29</td>
               <td>Krishna</td>
-              <td>The soul is a wondrous mystery, beyond easy understanding</td>
+              <td>The atman is a wondrous mystery, beyond easy understanding</td>
             </tr>
             <tr>
               <td>2.30</td>
               <td>Krishna</td>
-              <td>The soul is eternal, do not grieve over temporary changes</td>
+              <td>The atman is eternal, do not grieve over temporary changes</td>
             </tr>
             <tr>
               <td>2.31</td>
@@ -1455,13 +1455,13 @@ export default function ChapterTwoPage() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 2 about?</div>
             <div className="faq-a">
-              Chapter 2, called Sankhya Yoga or the Yoga of Knowledge, is the philosophical foundation of the entire Gita. It contains Krishna's first direct teachings to Arjuna, on the eternal nature of the soul, the dharma of a warrior, action without attachment to results, and the portrait of the sthitaprajna or person of steady wisdom. It is the longest chapter of the Gita's first half and arguably its most dense.
+              Chapter 2, called Sankhya Yoga or the Yoga of Knowledge, is the philosophical foundation of the entire Gita. It contains Krishna's first direct teachings to Arjuna, on the eternal nature of the atman, the dharma of a warrior, action without attachment to results, and the portrait of the sthitaprajna or person of steady wisdom. It is the longest chapter of the Gita's first half and arguably its most dense.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the most important verse in Chapter 2?</div>
             <div className="faq-a">
-              The most famous is 2.47, "karmany evadhikaras te ma phaleshu kadachana", often translated as "you have a right to work, not to the fruits of work." But 2.20 (the soul is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument.
+              The most famous is 2.47, "karmany evadhikaras te ma phaleshu kadachana", often translated as "you have a right to work, not to the fruits of work." But 2.20 (the atman is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument.
             </div>
           </div>
           <div className="faq-item">
@@ -1479,7 +1479,7 @@ export default function ChapterTwoPage() {
           <div className="faq-item">
             <div className="faq-q">How many verses are in Bhagavad Gita Chapter 2?</div>
             <div className="faq-a">
-              Chapter 2 has 72 verses, making it one of the longest chapters in the Gita. It is also philosophically the densest, containing the core teachings on the soul, duty, action, and wisdom that the remaining 16 chapters expand upon.
+              Chapter 2 has 72 verses, making it one of the longest chapters in the Gita. It is also philosophically the densest, containing the core teachings on the atman, duty, action, and wisdom that the remaining 16 chapters expand upon.
             </div>
           </div>
           <div className="faq-item">

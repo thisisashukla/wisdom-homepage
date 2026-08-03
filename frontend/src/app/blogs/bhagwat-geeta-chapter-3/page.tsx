@@ -736,7 +736,7 @@ export default function ChapterThreePage() {
         <h2 id="arjuna-question">The Question That Cannot Be Dismissed</h2>
 
         <p>
-          Arjuna has watched Chapter 2 with careful attention. He has heard Krishna teach that the Self is eternal, that the body dies but the soul does not, that action without attachment is the path to freedom. And he has listened to all of it. But now he asks Krishna directly:
+          Arjuna has watched Chapter 2 with careful attention. He has heard Krishna teach that the Self is eternal, that the body dies but the atman does not, that action without attachment is the path to freedom. And he has listened to all of it. But now he asks Krishna directly:
         </p>
 
         <p>
@@ -971,9 +971,9 @@ export default function ChapterThreePage() {
           speaker="Krishna (in response to Arjuna)"
           sanskrit="काम एष क्रोध एष रजोगुणसमुद्भवः । महाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ॥"
           iast="kāma eṣa krodha eṣa rajoguṇasamudbhavaḥ | mahāśano mahāpāpmā viddhyenamiha vairiṇam ||"
-          meaning="It is desire, it is anger, born of the rajo-guna, all-devouring and greatly sinful, know this as the enemy in this world."
+          meaning="It is desire, it is anger, born of the rajo-guna, all-devouring and greatly harmful (mahāpāpmā), know this as the enemy in this world."
           insightLabel="The diagnosis"
-          insight="After being asked by Arjuna what forces drive a person to sin, Krishna doesn't say ignorance or circumstance. He says desire and anger, specifically, the restless quality of the mind that creates wanting and reaction. These are described as the real enemies: not the Kauravas across the field, but the forces within."
+          insight="After being asked by Arjuna what forces drive a person toward papa, Krishna doesn't say ignorance or circumstance. He says desire and anger, specifically, the restless quality of the mind that creates wanting and reaction. These are described as the real enemies: not the Kauravas across the field, but the forces within."
           essence="The true battle is within, overcoming desire and anger is the way to lasting peace."
         />
 
@@ -1217,7 +1217,7 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.36</td>
               <td>Arjuna</td>
-              <td>What forces drive a person to sin?</td>
+              <td>What forces drive a person toward papa?</td>
             </tr>
             <tr>
               <td>3.37</td>

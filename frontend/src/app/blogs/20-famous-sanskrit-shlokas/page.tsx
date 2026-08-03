@@ -443,7 +443,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaningLabel="Translation"
           meaning="I am seated in the hearts of all beings. From me come memory, knowledge, and their loss. I alone am to be known through all the Vedas. I am the author of Vedanta, and I am also the knower of the Vedas."
           insightLabel="Context & Use"
-          insight="One of Krishna's most explicit statements of his indwelling nature. It is chanted before meals in many households as part of the Vaishnava tradition — a reminder that the giver, the food, and the eater are all held within the same divine presence. Also central to the Upanishadic teaching that God is not distant but seated in the heart."
+          insight="One of Krishna's most explicit statements of his indwelling nature. It is chanted before meals in many households as part of the Vaishnava tradition — a reminder that the giver, the food, and the eater are all held within the same divine presence. Also central to the Upanishadic teaching that Bhagavan is not distant but seated in the heart."
           essence="The divine is seated in every heart, and every scripture points there."
         />
 
@@ -459,7 +459,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           sanskrit="सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥"
           iast="sarvadharmān parityajya mām ekaṃ śaraṇaṃ vraja | ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ ||"
           meaningLabel="Translation"
-          meaning="Abandon every dharma and take refuge in me alone. I will free you from all sins. Do not grieve."
+          meaning="Abandon every dharma and take refuge in me alone. I will free you from all papa. Do not grieve."
           insightLabel="Context & Use"
           insight="Traditional commentators call this the charama shloka — the ultimate verse of the Bhagavad Gita. After seventeen chapters of instruction about action, knowledge, meditation, and devotion, Krishna's final word is a release: let go of every framework you have been holding, take refuge, and do not grieve."
           essence="Let go of every framework. Take refuge. Do not grieve."
@@ -577,7 +577,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           sanskrit="त्वमेव माता च पिता त्वमेव त्वमेव बन्धुश्च सखा त्वमेव । त्वमेव विद्या द्रविणं त्वमेव त्वमेव सर्वं मम देव देव ॥"
           iast="tvameva mātā ca pitā tvameva tvameva bandhuśca sakhā tvameva | tvameva vidyā draviṇaṃ tvameva tvameva sarvaṃ mama deva deva ||"
           meaningLabel="Translation"
-          meaning="You alone are mother and father. You alone are relative and friend. You alone are knowledge and wealth. You alone are everything to me, O God of gods."
+          meaning="You alone are mother and father. You alone are relative and friend. You alone are knowledge and wealth. You alone are everything to me, O Deva of devas."
           insightLabel="Context & Use"
           insight="One of the most emotionally direct devotional verses in the Sanskrit tradition. Its rhetorical device is the repetition of tvameva &mdash; 'you alone' &mdash; through every human role of intimacy and support. Chanted at the close of aartis and in bhajans across sects."
           essence="Every relationship of shelter — parent, friend, teacher — is finally the one Divine."

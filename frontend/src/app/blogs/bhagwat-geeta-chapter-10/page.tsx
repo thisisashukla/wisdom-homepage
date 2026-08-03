@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords: "bhagwat geeta chapter 10, bhagavad gita vibhuti yoga, bhagwat geeta adhyay 10, ekamshena sthito jagat, aham atma gudakesha, lamp of knowledge gita, sparks of divine bhagavad gita, divine manifestations gita, Vibhuti Yoga meaning, Bhagavad Gita 10.20 aham atma gudakesha, Bhagavad Gita 10.41 vibhutimat sattvam, Bhagavad Gita 10.42 ekamshena sthito jagat, what are vibhutis in Bhagavad Gita, divine manifestations Krishna",
   openGraph: {
     title: "Bhagavad Gita Chapter 10 Summary – Key Verses & Meaning (Vibhuti Yoga)",
-    description: "Bhagavad Gita Chapter 10, sparks of the Divine. Where to look for God in everything that shines.",
+    description: "Bhagavad Gita Chapter 10, sparks of the Divine. Where to look for Bhagavan in everything that shines.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10",
     siteName: 'Wisdom',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 10 Summary – Key Verses & Meaning (Vibhuti Yoga)",
-    description: "Bhagavad Gita Chapter 10, sparks of the Divine. Where to look for God in everything that shines.",
+    description: "Bhagavad Gita Chapter 10, sparks of the Divine. Where to look for Bhagavan in everything that shines.",
     images: ["https://wisdomquotes.in/assets/chapter10.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10" },
@@ -600,7 +600,7 @@ export default function ChapterPage10() {
             <em>Vibhuti Yoga</em>
           </h1>
           <p className="article-subtitle">
-            Where to look for God: in everything that shines. The lamp of knowledge inside the heart. The Self at the beginning, middle, and end. And the single fragment that holds the whole universe.
+            Where to look for Bhagavan: in everything that shines. The lamp of knowledge inside the heart. The Self at the beginning, middle, and end. And the single fragment that holds the whole universe.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>

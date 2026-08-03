@@ -174,7 +174,7 @@ const schemas = [
         "name": "Is the famous 'क्या लेकर आए थे' Geeta Saar quote actually from the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. The Hindi passage that begins 'क्या लेकर आए थे, क्या लेकर जाओगे' ('What did you bring, what will you take?') is a modern devotional paraphrase, likely popularized by Doordarshan's Mahabharat serial. It captures a general Hindu sentiment about impermanence, but it is not a direct translation of any single Gita verse. The closest actual Gita teaching on non-possession is BG 2.22 (the soul discards old bodies like worn clothes) and BG 2.14 (impermanence is the nature of experience)."
+          "text": "No. The Hindi passage that begins 'क्या लेकर आए थे, क्या लेकर जाओगे' ('What did you bring, what will you take?') is a modern devotional paraphrase, likely popularized by Doordarshan's Mahabharat serial. It captures a general Hindu sentiment about impermanence, but it is not a direct translation of any single Gita verse. The closest actual Gita teaching on non-possession is BG 2.22 (the atman discards old bodies like worn clothes) and BG 2.14 (impermanence is the nature of experience)."
         }
       },
       {
@@ -182,7 +182,7 @@ const schemas = [
         "name": "What is the single most important verse in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The most-cited verse is BG 2.47: karmaṇyevādhikāraste mā phaleṣu kadācana. 'You have the right to your action, never to its fruit.' Traditional commentators consider BG 18.66 (sarva-dharmān parityajya) the ultimate teaching, because it is Krishna's final instruction. BG 15.7 is called the 'seed verse' because it declares the individual soul as an eternal fragment of the divine. Any of these three could reasonably be called the 'essence verse' of the Gita."
+          "text": "The most-cited verse is BG 2.47: karmaṇyevādhikāraste mā phaleṣu kadācana. 'You have the right to your action, never to its fruit.' Traditional commentators consider BG 18.66 (sarva-dharmān parityajya) the ultimate teaching, because it is Krishna's final instruction. BG 15.7 is called the 'seed verse' because it declares the individual atman as an eternal fragment of the divine. Any of these three could reasonably be called the 'essence verse' of the Gita."
         }
       },
       {
@@ -303,7 +303,7 @@ export default function BhagwatGeetaSaarPage() {
           It is a beautiful piece of devotional Hindi prose. It is also a compression that puts thoughts in Krishna&apos;s mouth that Krishna does not literally say. The Gita is not a text about &ldquo;whatever happens is for the good.&rdquo; It is a text in which Krishna repeatedly tells Arjuna that his current understanding is wrong and needs to be corrected. That is a very different kind of teaching.
         </p>
         <p>
-          The line closest to a real Gita source is the middle passage about the soul not being born and not dying. That echoes BG 2.20 quite directly. The rest &mdash; &ldquo;whatever happened was good,&rdquo; &ldquo;what did you bring&rdquo; &mdash; is affectionate Hindu commentary, not translation. Knowing this matters. The Gita&apos;s actual teaching is more surgical.
+          The line closest to a real Gita source is the middle passage about the atman not being born and not dying. That echoes BG 2.20 quite directly. The rest &mdash; &ldquo;whatever happened was good,&rdquo; &ldquo;what did you bring&rdquo; &mdash; is affectionate Hindu commentary, not translation. Knowing this matters. The Gita&apos;s actual teaching is more surgical.
         </p>
 
         <h2>The Four Verses Most Commentators Call the Real Essence</h2>
@@ -336,7 +336,7 @@ export default function BhagwatGeetaSaarPage() {
 
         <h3>2. BG 15.7 — The Seed Verse</h3>
         <p>
-          If BG 2.47 is the instruction verse, BG 15.7 is the metaphysical foundation. Krishna states outright what the individual soul actually is. Everything else in the Gita rests on this.
+          If BG 2.47 is the instruction verse, BG 15.7 is the metaphysical foundation. Krishna states outright what the individual atman actually is. Everything else in the Gita rests on this.
         </p>
 
         <ShlokaCard
@@ -346,7 +346,7 @@ export default function BhagwatGeetaSaarPage() {
           meaningLabel="Translation"
           meaning="An eternal fragment of my own being becomes the individual living self in the world of the living, drawing to itself the mind and the five senses that abide in nature."
           insightLabel="Why this is the essence"
-          insight="Vaishnava commentators call this the beeja shloka (seed verse) of the entire Gita. It answers the deepest question: what am I, really? Krishna says: a sanatana amsha — an eternal fragment — of the divine. Not identical with God, but not separate either. Every teaching about detachment, dharma, and devotion follows from this claim about identity."
+          insight="Vaishnava commentators call this the beeja shloka (seed verse) of the entire Gita. It answers the deepest question: what am I, really? Krishna says: a sanatana amsha — an eternal fragment — of the divine. Not identical with Bhagavan, but not separate either. Every teaching about detachment, dharma, and devotion follows from this claim about identity."
           essence="You are an eternal fragment of the divine, temporarily embodied."
         />
 
@@ -360,7 +360,7 @@ export default function BhagwatGeetaSaarPage() {
           sanskrit="सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥"
           iast="sarvadharmānparityajya māmekaṃ śaraṇaṃ vraja | ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ ||"
           meaningLabel="Translation"
-          meaning="Abandon every duty and take refuge in me alone. I will free you from all sins. Do not grieve."
+          meaning="Abandon every duty and take refuge in me alone. I will free you from all papa. Do not grieve."
           insightLabel="Why this is the essence"
           insight="After eighteen chapters of instruction about action, knowledge, meditation, and devotion, Krishna's last word is a release. The word 'sarva-dharman' means every dharma — every rule you have been holding, every framework you have used to know what to do. Release them, and rest in surrender. This is not lawlessness. It is the mature devotee's move: the rules brought you to the door, and the door only opens through trust."
           essence="Let go of every framework. Take refuge. Do not grieve."
@@ -468,7 +468,7 @@ export default function BhagwatGeetaSaarPage() {
             <div className="chapter-essence-num">10<small>Vibhuti</small></div>
             <div>
               <div className="chapter-essence-title">Wherever There Is Glory <em>— &ldquo;Whatever is glorious, powerful, or beautiful &mdash; know it as a spark of mine.&rdquo; (10.41)</em></div>
-              <div className="chapter-essence-body">Krishna teaches the practice of vibhuti-darshan &mdash; seeing the divine in what excels. Not everything is God, but every excellence points toward God. The mountain among mountains, the poet among poets, the river among rivers.</div>
+              <div className="chapter-essence-body">Krishna teaches the practice of vibhuti-darshan &mdash; seeing the divine in what excels. Not everything is Bhagavan, but every excellence points toward Bhagavan. The mountain among mountains, the poet among poets, the river among rivers.</div>
             </div>
           </div>
 
@@ -631,14 +631,14 @@ export default function BhagwatGeetaSaarPage() {
         <div className="faq-item">
           <strong>Is the famous &ldquo;क्या लेकर आए थे&rdquo; Geeta Saar quote actually from the Bhagavad Gita?</strong>
           <p>
-            No. The Hindi passage that begins &ldquo;क्या लेकर आए थे, क्या लेकर जाओगे&rdquo; (&ldquo;What did you bring, what will you take?&rdquo;) is a modern devotional paraphrase, likely popularized by Doordarshan&apos;s Mahabharat serial. It captures a general Hindu sentiment about impermanence, but it is not a direct translation of any single Gita verse. The closest actual Gita teaching on non-possession is BG 2.22 (the soul discards old bodies like worn clothes) and BG 2.14 (impermanence is the nature of experience).
+            No. The Hindi passage that begins &ldquo;क्या लेकर आए थे, क्या लेकर जाओगे&rdquo; (&ldquo;What did you bring, what will you take?&rdquo;) is a modern devotional paraphrase, likely popularized by Doordarshan&apos;s Mahabharat serial. It captures a general Hindu sentiment about impermanence, but it is not a direct translation of any single Gita verse. The closest actual Gita teaching on non-possession is BG 2.22 (the atman discards old bodies like worn clothes) and BG 2.14 (impermanence is the nature of experience).
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What is the single most important verse in the Bhagavad Gita?</strong>
           <p>
-            The most-cited verse is BG 2.47: <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em>. &ldquo;You have the right to your action, never to its fruit.&rdquo; Traditional commentators consider BG 18.66 (<em>sarva-dharmān parityajya</em>) the ultimate teaching, because it is Krishna&apos;s final instruction. BG 15.7 is called the &ldquo;seed verse&rdquo; because it declares the individual soul as an eternal fragment of the divine. Any of these three could reasonably be called the &ldquo;essence verse&rdquo; of the Gita.
+            The most-cited verse is BG 2.47: <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em>. &ldquo;You have the right to your action, never to its fruit.&rdquo; Traditional commentators consider BG 18.66 (<em>sarva-dharmān parityajya</em>) the ultimate teaching, because it is Krishna&apos;s final instruction. BG 15.7 is called the &ldquo;seed verse&rdquo; because it declares the individual atman as an eternal fragment of the divine. Any of these three could reasonably be called the &ldquo;essence verse&rdquo; of the Gita.
           </p>
         </div>
 

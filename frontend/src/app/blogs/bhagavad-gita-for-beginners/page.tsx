@@ -434,7 +434,7 @@ const schemas = [
       "name": "What is the Bhagavad Gita about, in simple terms?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It is a conversation between Arjuna, a warrior paralyzed by doubt, and Krishna, his guide. The core themes are the nature of the eternal soul, performing duty without attachment to results, different paths to liberation, and achieving inner peace despite chaos."
+        "text": "It is a conversation between Arjuna, a warrior paralyzed by doubt, and Krishna, his guide. The core themes are the nature of the atman, performing duty without attachment to results, different paths to liberation, and achieving inner peace despite chaos."
       }
     }
   ]
@@ -523,7 +523,7 @@ export default function ForBeginnersPage() {
             The Gita is organized into 18 chapters, each with its own focus. Here is a brief overview so you know what to expect.
         </p>
         <p>
-            Chapters 1 and 2 set the stage. Chapter 1 is entirely devoted to Arjuna's crisis, his physical and mental breakdown, his questions, his despair. Chapter 2 is where the philosophical teaching begins. Krishna introduces the foundational ideas: the eternal nature of the soul, the nature of action and inaction, the concept of equanimity, and the beginning of the teaching on karma and dharma.
+            Chapters 1 and 2 set the stage. Chapter 1 is entirely devoted to Arjuna's crisis, his physical and mental breakdown, his questions, his despair. Chapter 2 is where the philosophical teaching begins. Krishna introduces the foundational ideas: the eternal nature of the atman, the nature of action and inaction, the concept of equanimity, and the beginning of the teaching on karma and dharma.
         </p>
         <p>
             Chapters 3 through 6 explore the practical paths. Chapter 3 is devoted to Karma Yoga, the yoga of action. Chapter 4 introduces the concept of wisdom (jnana). Chapter 5 continues the teaching on action. Chapter 6 focuses on meditation and the discipline of the mind.
@@ -546,7 +546,7 @@ export default function ForBeginnersPage() {
             In Chapter 1, you meet Arjuna. You experience his crisis. You read his exact words: his fear, his shame, his sense of paralysis. You understand the emotional and human stakes of what is about to be taught. This makes everything that follows land with force. The philosophy in Chapter 2 is not abstract knowledge, it is Krishna's direct response to a man in breakdown.
         </p>
         <p>
-            Then read Chapter 2. This is where the core teachings begin. Here you encounter ideas like the eternal soul, the difference between action and inaction, the concept of equanimity, and the beginning of karma yoga. Verse 2.47, "You have a right to perform your duties, but not to the fruits", appears here. This single verse contains the foundation of the entire Gita's ethics.
+            Then read Chapter 2. This is where the core teachings begin. Here you encounter ideas like the atman, the difference between action and inaction, the concept of equanimity, and the beginning of karma yoga. Verse 2.47, "You have a right to perform your duties, but not to the fruits", appears here. This single verse contains the foundation of the entire Gita's ethics.
         </p>
 
         <h2>Which Translation Should You Choose?</h2>
@@ -597,7 +597,7 @@ export default function ForBeginnersPage() {
           sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥"
           iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svabhāvaniyataṃ karma kurvann āpnoti kilbiṣam ||"
           meaningLabel="Translation"
-          meaning="Better your own dharma, imperfectly done, than another's dharma done perfectly. Acting according to your own nature, you incur no sin."
+          meaning="Better your own dharma, imperfectly done, than another's dharma done perfectly. Acting according to your own nature, you incur no papa."
           essence="Stay on your own path. Comparison is fear in disguise."
         />
 
@@ -647,7 +647,7 @@ export default function ForBeginnersPage() {
         <div className="faq-item">
             <strong>What is the Bhagavad Gita about, in simple terms?</strong>
             <p>
-                It is a conversation between a warrior named Arjuna and his guide Krishna, taking place on the morning of a great battle. Arjuna is paralyzed by doubt and fear. Krishna's response becomes the Gita. The core themes are: the nature of the eternal soul, the importance of performing one's duty without attachment to results, the different paths to liberation (knowledge, action, devotion), and how to achieve inner peace despite the chaos of the world.
+                It is a conversation between a warrior named Arjuna and his guide Krishna, taking place on the morning of a great battle. Arjuna is paralyzed by doubt and fear. Krishna's response becomes the Gita. The core themes are: the nature of the atman, the importance of performing one's duty without attachment to results, the different paths to liberation (knowledge, action, devotion), and how to achieve inner peace despite the chaos of the world.
             </p>
         </div>
 

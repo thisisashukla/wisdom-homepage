@@ -491,7 +491,7 @@ const schemas = [
         "name": "What is the difference between Stoicism and Hinduism?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Gita includes devotion (bhakti) to a personal God, which Stoicism lacks entirely. The Gita has a clear metaphysics of atman (individual self) and Brahman (ultimate reality). Stoicism uses the Logos as its cosmic organizing principle, but this is impersonal. The Gita offers personal liberation (moksha). Stoicism aims at eudaimonia (flourishing) within this life. The Gita's goal is to transcend the guna framework; Stoicism's goal is to live in accordance with nature and reason."
+          "text": "The Gita includes devotion (bhakti) to Bhagavan, which Stoicism lacks entirely. The Gita has a clear metaphysics of atman (individual self) and Brahman (ultimate reality). Stoicism uses the Logos as its cosmic organizing principle, but this is impersonal. The Gita offers personal liberation (moksha). Stoicism aims at eudaimonia (flourishing) within this life. The Gita's goal is to transcend the guna framework; Stoicism's goal is to live in accordance with nature and reason."
         }
       },
       {
@@ -694,7 +694,7 @@ export default function GitaVsStoicismPage() {
         sanskrit="सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥"
         iast="sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||"
         meaningLabel="Translation"
-        meaning="Be equal in pleasure and pain, in gain and loss, in victory and defeat. Then enter the battle. You will not incur sin."
+        meaning="Be equal in pleasure and pain, in gain and loss, in victory and defeat. Then enter the battle. You will not incur papa."
         insightLabel="The Parallel"
         insight="Both Marcus and Krishna are asking for the same inner posture: steadiness regardless of outcome. The Sanskrit lists the pairs explicitly — sukha-duhkhe (pleasure and pain), labhalabhau (gain and loss), jayajayau (victory and defeat) — and asks you to hold them same (same krtva). Not equally good. Not indifferent. Same. The Stoic equivalent is Marcus's word eudaimonia — flourishing — which the Stoics held does not come in degrees and cannot be added to or subtracted from by external events. Neither tradition is asking you to stop caring. Both are asking you to locate caring in the action rather than in what the action produces."
         essence="Same quality of mind in all circumstances."
@@ -708,7 +708,7 @@ export default function GitaVsStoicismPage() {
       </p>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Nowhere can man find a quieter or more untroubled retreat than in his own soul.&rdquo;</div>
+        <div className="quote-text">&ldquo;Nowhere can man find a quieter or more untroubled retreat than in his own atman.&rdquo;</div>
         <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, IV.3</a> (tr. Farquharson)</div>
       </div>
 
@@ -778,10 +778,10 @@ export default function GitaVsStoicismPage() {
       <div className="highlight-box">
         <h3>Genuine Differences</h3>
         <p>
-          The Gita has bhakti. Stoicism does not. The Gita&apos;s final teaching in Chapter 18 is surrender to Krishna through devotion. There is a personal God, a personal relationship, and grace that descends to the devotee. Stoicism&apos;s Logos is impersonal. You align with it through reason. There is no divine relationship, no surrender, no grace.
+          The Gita has bhakti. Stoicism does not. The Gita&apos;s final teaching in Chapter 18 is surrender to Krishna through devotion. There is Bhagavan, a personal relationship, and kripa that descends to the devotee. Stoicism&apos;s Logos is impersonal. You align with it through reason. There is no divine relationship, no surrender, no grace.
         </p>
         <p>
-          The Gita has a full metaphysics of atman and Brahman: the individual self and the cosmic self are ultimately identical. Stoicism has no equivalent. The Stoics believed the soul dispersed at death. They had no concept of moksha, liberation from the cycle of birth and death.
+          The Gita has a full metaphysics of atman and Brahman: the individual self and the cosmic self are ultimately identical. Stoicism has no equivalent. The Stoics believed the atman dispersed at death. They had no concept of moksha, liberation from the cycle of birth and death.
         </p>
         <p>
           The Gita offers multiple paths, karma yoga, jnana yoga, bhakti yoga, raja yoga, for different types of practitioners. Stoicism is essentially one path: reason applied consistently to the dichotomy of control. This makes Stoicism simpler and in some ways more portable. The Gita is more expansive.
@@ -834,7 +834,7 @@ export default function GitaVsStoicismPage() {
       <div className="faq-item">
         <strong>What is the difference between Stoicism and Hinduism?</strong>
         <p>
-          The Gita includes devotion (bhakti) to a personal God, which Stoicism lacks entirely. The Gita has a complete metaphysics of atman (individual self) and Brahman (cosmic self), and offers liberation (moksha). Stoicism&apos;s goal is eudaimonia (flourishing) within this life, through reason and virtue. Stoicism is impersonal; the Gita is both philosophical and devotional. The Gita has multiple paths for different practitioners; Stoicism has essentially one.
+          The Gita includes devotion (bhakti) to Bhagavan, which Stoicism lacks entirely. The Gita has a complete metaphysics of atman (individual self) and Brahman (cosmic self), and offers liberation (moksha). Stoicism&apos;s goal is eudaimonia (flourishing) within this life, through reason and virtue. Stoicism is impersonal; the Gita is both philosophical and devotional. The Gita has multiple paths for different practitioners; Stoicism has essentially one.
         </p>
       </div>
 
