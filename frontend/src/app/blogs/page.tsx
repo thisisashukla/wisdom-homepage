@@ -268,8 +268,7 @@ const pageCSS = `
       .card-thumb-sthita, .card-thumb-dharma, .card-thumb-gunas,
       .card-thumb-death, .card-thumb-saar,
       .card-thumb-shlokas20, .card-thumb-gitasanskrit,
-      .card-thumb-ahankara, .card-thumb-maya, .card-thumb-whichgita,
-      .card-thumb-atman {
+      .card-thumb-ahankara, .card-thumb-maya, .card-thumb-whichgita, .card-thumb-atman {
         background: linear-gradient(135deg, rgba(100, 70, 190, 0.13) 0%, var(--bg-alt) 65%);
         border-top: 2px solid rgba(150, 110, 220, 0.70);
       }
@@ -1510,11 +1509,11 @@ export default function BlogIndexPage() {
           </div>
         </a>
 
-        {/* Atman vs Soul */}
+        {/* Soul Is Not Atman */}
         <a href="/blogs/atman-not-soul-bhagavad-gita" className="article-card" data-mp-article="Atman Not Soul Bhagavad Gita">
           <div className="card-thumb card-thumb-atman">
             <div className="card-chapter-badge">Concept Guide · Sanskrit Term</div>
-            <div className="card-thumb-title">Atman Is Not Soul —<br /><em>The Distinction the Gita Actually Draws</em></div>
+            <div className="card-thumb-title">Soul Is Not Atman —<br /><em>The Distinction the Gita Actually Draws</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -1524,10 +1523,10 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Concept Guide</span>
             </div>
             <div className="card-desc">
-              Translating ātman as &ldquo;soul&rdquo; is the most common philosophical error in English-language Indian spirituality. The two words carry different metaphysical premises. Here is what the Gita actually says — verse by verse.
+              Translating ātman as &ldquo;soul&rdquo; is the most common philosophical error in English-language Indian spirituality. The two words carry different metaphysical premises. Here is what the Gita actually says — verse by verse, with the Bible&apos;s own account of the soul for contrast.
             </div>
             <div className="card-meta">
-              <span className="card-read-time">~10 min read</span>
+              <span className="card-read-time">~12 min read</span>
               <span className="card-arrow">Read →</span>
             </div>
           </div>
