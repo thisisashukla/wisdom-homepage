@@ -631,7 +631,7 @@ const schemas = [
       "name": "Why does Arjuna refuse to fight in Chapter 1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Arjuna refuses to fight because he sees his own relatives — grandfathers, teachers, uncles, brothers, friends — arrayed on both sides of the battlefield. He argues that victory is meaningless if it requires killing the people he loves, that destroying families unravels the ethical fabric of society, and that dying unarmed would be preferable to this. His arguments are ethically sophisticated, not cowardly — but they are rooted in attachment to his roles as a son, student, and friend rather than to his deeper duty as a warrior and a soul."
+        "text": "Arjuna refuses to fight because he sees his own relatives — grandfathers, teachers, uncles, brothers, friends — arrayed on both sides of the battlefield. He argues that victory is meaningless if it requires killing the people he loves, that destroying families unravels the ethical fabric of society, and that dying unarmed would be preferable to this. His arguments are ethically sophisticated, not cowardly — but they are rooted in attachment to his roles as a son, student, and friend rather than to his deeper duty as a warrior and a atman."
       }
     },
     {
@@ -1075,7 +1075,7 @@ export default function ChapterOnePage() {
           speaker="Arjuna"
           sanskrit="यद्यप्येते न पश्यन्ति लोभोपहतचेतसः । कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम् ॥ कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम् । कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन ॥"
           iast="yadyapyete na paśyanti lobhopahatacetasaḥ | kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam || kathaṃ na jñeyamasmābhiḥ pāpādasmānnivartitum | kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana ||"
-          meaning="Even if those whose minds are blinded by greed cannot see the sin in destroying families and betraying friends, how can we, who clearly see the consequences, fail to turn away from this sin, O Janardana?"
+          meaning="Even if those whose minds are blinded by greed cannot see the papa in destroying families and betraying friends, how can we, who clearly see the consequences, fail to turn away from this papa, O Janardana?"
           insightLabel="The ethics"
           insight="Arjuna is making a deontological case: if you can see the harm and others cannot, you bear a greater responsibility to act on that knowledge. This is not rationalization. This is conscience. The problem is not that the argument is wrong, it's that Arjuna's 'I' is still attached to the wrong thing."
           essence="Awareness of consequences brings the responsibility to act wisely."
@@ -1174,7 +1174,7 @@ export default function ChapterOnePage() {
 
         <p>
           The same is true of every genuine inquiry. You can read about the
-          nature of the self, detachment, duty, and the eternal soul. You can
+          nature of the self, detachment, duty, and the atman. You can
           understand it intellectually. But it becomes real only when you've
           been brought to the edge of something, when your identity has been
           challenged, when the person you thought you were can no longer give

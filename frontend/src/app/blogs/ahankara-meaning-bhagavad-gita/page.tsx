@@ -469,7 +469,7 @@ export default function AhankaraMeaningPage() {
           sanskrit="प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः । अहंकारविमूढात्मा कर्ताहमिति मन्यते ॥"
           iast="prakṛteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśaḥ | ahaṅkāravimūḍhātmā kartāhamiti manyate ||"
           meaningLabel="Translation"
-          meaning="All actions are being performed by the gunas of nature in every respect. But a person whose soul is deluded by ahankara thinks: I am the doer."
+          meaning="All actions are being performed by the gunas of nature in every respect. But a person whose atman is deluded by ahankara thinks: I am the doer."
           insightLabel="What This Teaches"
           insight="The phrase ahamkara-vimudhatma means 'one whose self is bewildered by the I-maker.' The word vimudha is strong — it means thoroughly confused, stupefied. The Gita is not saying you are wrong to act. It is saying that the belief 'I am the ultimate source and owner of this action' is the specific confusion that creates bondage. The gunas — the three forces of nature (sattva, rajas, tamas) — are operating through the instrument of a human body and mind. Ahankara steps in and claims it all as personal production."
           essence="Actions arise from nature. The one who mistakes themselves for the doer is caught in the I-maker's illusion."

@@ -425,7 +425,7 @@ const schemas = [
         "name": "What is rajas guna?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rajas guna is the quality of activity, desire, and restlessness. In BG 14.7, rajas is described as the source of craving and attachment — it binds the soul through the compulsion to act. When rajas dominates you feel driven, ambitious, agitated, and unable to sit still. Rajas is the engine of the world's work but also the source of most stress when it is unregulated."
+          "text": "Rajas guna is the quality of activity, desire, and restlessness. In BG 14.7, rajas is described as the source of craving and attachment — it binds the atman through the compulsion to act. When rajas dominates you feel driven, ambitious, agitated, and unable to sit still. Rajas is the engine of the world's work but also the source of most stress when it is unregulated."
         }
       },
       {
@@ -433,7 +433,7 @@ const schemas = [
         "name": "What is tamas guna?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tamas guna is the quality of inertia, heaviness, and delusion. In BG 14.8, tamas is described as born of ignorance — it binds the soul through negligence, laziness, and sleep. When tamas dominates you feel heavy, unmotivated, confused, or emotionally shut down. Tamas is not moral evil; it is a natural condition that can be shifted through better food, rest, activity, and consciousness."
+          "text": "Tamas guna is the quality of inertia, heaviness, and delusion. In BG 14.8, tamas is described as born of ignorance — it binds the atman through negligence, laziness, and sleep. When tamas dominates you feel heavy, unmotivated, confused, or emotionally shut down. Tamas is not moral evil; it is a natural condition that can be shifted through better food, rest, activity, and consciousness."
         }
       },
       {
@@ -729,7 +729,7 @@ export default function ThreeGunasPage() {
       <div className="faq-item">
         <strong>What is rajas guna?</strong>
         <p>
-          Rajas guna is the quality of activity, desire, and restlessness. In BG 14.7 rajas is described as the source of craving and attachment — it binds the soul through the compulsion to act. When rajas dominates you feel driven, ambitious, agitated, and unable to sit still. Rajas is the engine of the world&apos;s work but also the source of most stress when it is unregulated.
+          Rajas guna is the quality of activity, desire, and restlessness. In BG 14.7 rajas is described as the source of craving and attachment — it binds the atman through the compulsion to act. When rajas dominates you feel driven, ambitious, agitated, and unable to sit still. Rajas is the engine of the world&apos;s work but also the source of most stress when it is unregulated.
         </p>
       </div>
 

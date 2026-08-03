@@ -61,7 +61,7 @@ export default function GitaIndexPage() {
       <section className="gita-hero">
         <div>
           <div className="gita-eyebrow">Bhagavad Gita · श्रीमद्भगवद्गीता</div>
-          <h1 className="gita-h1">The Song of God, in full.</h1>
+          <h1 className="gita-h1">The Song of Bhagavan, in full.</h1>
           <p className="gita-lede">
             Krishna speaks. Arjuna listens. 700 verses, 18 chapters, one conversation that changed how millions
             understand duty, action, devotion and the self. Read every verse here in Sanskrit, Hindi and English —

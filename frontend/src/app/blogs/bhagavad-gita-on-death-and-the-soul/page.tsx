@@ -3,18 +3,18 @@ import BlogTracker from '@/components/BlogTracker'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita on Death — 'The Soul Cannot Be Cut, Burned or Wet' (BG 2.19-2.25 Explained) | Wisdom",
-  description: "What the Bhagavad Gita actually says about death and the soul. Krishna's answer to Arjuna is not comfort — it's a structural claim: the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it, water doesn't wet it. BG 2.19-2.25 explained, with Sanskrit and English meaning.",
-  keywords: "bhagavad gita on death, bhagavad gita soul after death, atman bhagavad gita, nainam chindanti shastrani meaning, what does gita say about death, bhagavad gita death is not real, bhagavad gita 2.20 meaning, bhagavad gita atman eternal, bhagavad gita reincarnation, dehi meaning gita",
+  title: "Bhagavad Gita on Death — 'The Atman Cannot Be Cut, Burned or Wet' (BG 2.19-2.25 Explained) | Wisdom",
+  description: "What the Bhagavad Gita actually says about death and the atman. Krishna's answer to Arjuna is not comfort — it's a structural claim: the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it, water doesn't wet it. BG 2.19-2.25 explained, with Sanskrit and English meaning.",
+  keywords: "bhagavad gita on death, bhagavad gita atman after death, atman bhagavad gita, nainam chindanti shastrani meaning, what does gita say about death, bhagavad gita death is not real, bhagavad gita 2.20 meaning, bhagavad gita atman eternal, bhagavad gita reincarnation, dehi meaning gita",
   openGraph: {
-    title: "Bhagavad Gita on Death — 'The Soul Cannot Be Cut, Burned or Wet' (BG 2.19-2.25)",
-    description: "What the Bhagavad Gita says about death and the soul — Krishna's structural claim in BG 2.19-2.25 that the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it.",
+    title: "Bhagavad Gita on Death — 'The Atman Cannot Be Cut, Burned or Wet' (BG 2.19-2.25)",
+    description: "What the Bhagavad Gita says about death and the atman — Krishna's structural claim in BG 2.19-2.25 that the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it.",
     type: 'article',
-    url: "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul",
+    url: "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-atman",
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-atman" },
 }
 
 const pageCSS = `
@@ -382,7 +382,7 @@ const schemas = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "What the Bhagavad Gita Says About Death, the Soul, and What Comes After | Wisdom",
+    "headline": "What the Bhagavad Gita Says About Death, the Atman, and What Comes After | Wisdom",
     "description": "The Gita's teaching on death is not comfort. It's a structural claim: the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it, water doesn't wet it.",
     "datePublished": "2026-06-12",
     "author": {
@@ -462,7 +462,7 @@ export default function DeathAndSoulPage() {
           <span className="bc-sep">/</span>
           <a href="/blogs">Blog</a>
           <span className="bc-sep">/</span>
-          Death and the Soul in the Gita
+          Death and the Atman in the Gita
         </div>
       </div>
 
@@ -639,7 +639,7 @@ export default function DeathAndSoulPage() {
           meaningLabel="Translation"
           meaning="Every living being in this world is an eternal part of Paramātma, but becomes attached to the mind and five senses, mistaking them to be its true self."
           insightLabel="What This Teaches"
-          insight="The jiva (individual soul) is described as an eternal amsha, a portion of the divine. It is sanātana, without beginning or end. But it becomes entangled in the mind and senses, forgetting its origin. After death, this entanglement continues into the next life. The karma accumulated through the attachment to the senses draws the jiva into a new body suited to that karma. This is the Gita's brief account of what continues and why."
+          insight="The jiva (individual atman) is described as an eternal amsha, a portion of the divine. It is sanātana, without beginning or end. But it becomes entangled in the mind and senses, forgetting its origin. After death, this entanglement continues into the next life. The karma accumulated through the attachment to the senses draws the jiva into a new body suited to that karma. This is the Gita's brief account of what continues and why."
           essence="You are always a part of Paramātma, greater than your mind or senses."
         />
 
@@ -682,7 +682,7 @@ export default function DeathAndSoulPage() {
         <div className="faq-item">
           <strong>What is the atman in the Bhagavad Gita?</strong>
           <p>
-            The atman is the self that cannot be destroyed. The Gita distinguishes it from the sharira (body) and even from the dehi (the embodied self). The atman is avyakta (unmanifest), achintya (beyond thought), and avikaryam (without modification). BG 2.20 calls it aja (unborn), nitya (eternal), shashvata (changeless), and purana (beginningless). It is not a soul in the Christian sense, a discrete personal entity that either goes to heaven or hell. It is closer to pure consciousness, the witness that is present in every experience.
+            The atman is the self that cannot be destroyed. The Gita distinguishes it from the sharira (body) and even from the dehi (the embodied self). The atman is avyakta (unmanifest), achintya (beyond thought), and avikaryam (without modification). BG 2.20 calls it aja (unborn), nitya (eternal), shashvata (changeless), and purana (beginningless). It is not a atman in the Christian sense, a discrete personal entity that either goes to heaven or hell. It is closer to pure consciousness, the witness that is present in every experience.
           </p>
         </div>
 
@@ -735,7 +735,7 @@ export default function DeathAndSoulPage() {
         <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
-      <BlogTracker pageName="Bhagavad Gita On Death and Soul" />
+      <BlogTracker pageName="Bhagavad Gita On Death and Atman" />
     </>
   )
 }

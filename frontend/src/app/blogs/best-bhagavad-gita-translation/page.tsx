@@ -522,7 +522,7 @@ export default function BestGitaTranslationPage() {
             The Gita holds three great teachings in tension: karma (action), jnana (knowledge), and bhakti (devotion). Each has chapters where it appears supreme. Which one is the final teaching? The text lets you argue any of the three, and for over a thousand years, the greatest minds of Indian philosophy did exactly that.
         </p>
         <p>
-            Adi Shankara wrote the oldest surviving commentary in the 8th century and read the Gita as teaching liberation through knowledge alone. Ramanuja answered in the 11th century: the yogas of action and knowledge are real, but they culminate in devotion. Madhva read it as teaching the eternal distinctness of the soul and God. Abhinavagupta, the Kashmir Shaiva master, read the battlefield itself as the war between knowledge and ignorance inside a person. Each of these is a complete, rigorous, sincere reading. Each is still followed today.
+            Adi Shankara wrote the oldest surviving commentary in the 8th century and read the Gita as teaching liberation through knowledge alone. Ramanuja answered in the 11th century: the yogas of action and knowledge are real, but they culminate in devotion. Madhva read it as teaching the eternal distinctness of the atman and Bhagavan. Abhinavagupta, the Kashmir Shaiva master, read the battlefield itself as the war between knowledge and ignorance inside a person. Each of these is a complete, rigorous, sincere reading. Each is still followed today.
         </p>
         <p>
             The tradition has a generous name for this: <strong>adhikāri-bheda</strong>, the recognition that different aspirants need different doors. A translation is never just a translation; it descends from one of these doors, or opens a new one. So the honest question is not &ldquo;which Gita is correct?&rdquo; It is &ldquo;which door are you standing in front of?&rdquo;
@@ -541,7 +541,7 @@ export default function BestGitaTranslationPage() {
           meaningLabel="Translation"
           meaning="Abandon all duties and take refuge in Me alone. I will free you from all wrongdoing; do not grieve."
           insightLabel="Why This Verse Divides the Commentators"
-          insight="What does 'abandoning all dharmas' mean? For Shankara, it is the knower of Brahman renouncing all action in the realization of non-difference from the Supreme. For Ramanuja, it means giving up the sense of ownership and reward, not the duties themselves, in loving dependence on the Lord. For Madhva, it is the eternally dependent soul turning to the one Independent Being, with that dependence never dissolving. For the Gaudiya tradition behind ISKCON, it is the summit of the whole text: pure devotional surrender. Four traditions, four liberations, one Sanskrit line."
+          insight="What does 'abandoning all dharmas' mean? For Shankara, it is the knower of Brahman renouncing all action in the realization of non-difference from the Supreme. For Ramanuja, it means giving up the sense of ownership and reward, not the duties themselves, in loving dependence on the Lord. For Madhva, it is the eternally dependent atman turning to the one Independent Being, with that dependence never dissolving. For the Gaudiya tradition behind ISKCON, it is the summit of the whole text: pure devotional surrender. Four traditions, four liberations, one Sanskrit line."
           essence="The verse every school reads as its own conclusion."
         />
 

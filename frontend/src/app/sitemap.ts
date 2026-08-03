@@ -90,6 +90,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.90,
     },
+    // August 2026 batch — Sanskrit concept deep-dives
+    {
+      url: `${BASE}/blogs/atman-not-soul-bhagavad-gita`,
+      lastModified: new Date('2026-08-03'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.88,
+    },
   ]
 
   // Chapter-study blog pages (the long-form per-chapter essays).

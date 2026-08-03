@@ -239,6 +239,7 @@ const pageCSS = `
       .card-thumb-mahamantra::before { content: "हरे"; font-family: "Noto Sans Devanagari", serif; font-size: 110px; }
       .card-thumb-gitasanskrit::before { content: "३०"; font-family: "Noto Sans Devanagari", serif; font-size: 120px; }
       .card-thumb-whichgita::before { content: "अनुवाद"; font-family: "Noto Sans Devanagari", serif; font-size: 72px; }
+      .card-thumb-atman::before    { content: "आत्मन्"; font-family: "Noto Sans Devanagari", serif; font-size: 72px; }
 
       /* ── CARD THUMB COLOR GROUPS ── */
 
@@ -267,7 +268,7 @@ const pageCSS = `
       .card-thumb-sthita, .card-thumb-dharma, .card-thumb-gunas,
       .card-thumb-death, .card-thumb-saar,
       .card-thumb-shlokas20, .card-thumb-gitasanskrit,
-      .card-thumb-ahankara, .card-thumb-maya, .card-thumb-whichgita {
+      .card-thumb-ahankara, .card-thumb-maya, .card-thumb-whichgita, .card-thumb-atman {
         background: linear-gradient(135deg, rgba(100, 70, 190, 0.13) 0%, var(--bg-alt) 65%);
         border-top: 2px solid rgba(150, 110, 220, 0.70);
       }
@@ -952,7 +953,7 @@ export default function BlogIndexPage() {
       {/* TOPIC GUIDES */}
       <div className="section-head" style={{marginTop: '56px'}}>
         <h2>Gita Teachings, <em>Topic Guides</em></h2>
-        <span className="section-count">25 articles published</span>
+        <span className="section-count">26 articles published</span>
       </div>
 
       <div className="articles-grid">
@@ -1503,6 +1504,29 @@ export default function BlogIndexPage() {
             </div>
             <div className="card-meta">
               <span className="card-read-time">~9 min read</span>
+              <span className="card-arrow">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        {/* Soul Is Not Atman */}
+        <a href="/blogs/atman-not-soul-bhagavad-gita" className="article-card" data-mp-article="Atman Not Soul Bhagavad Gita">
+          <div className="card-thumb card-thumb-atman">
+            <div className="card-chapter-badge">Concept Guide · Sanskrit Term</div>
+            <div className="card-thumb-title">Soul Is Not Atman —<br /><em>The Distinction the Gita Actually Draws</em></div>
+          </div>
+          <div className="card-body">
+            <div className="card-tags">
+              <span className="tag tag-sanskrit">आत्मन्</span>
+              <span className="tag tag-philosophy">Self &amp; Identity</span>
+              <span className="tag tag-shloka">BG 2.20, 13.31, 15.7</span>
+              <span className="tag tag-chapter">Concept Guide</span>
+            </div>
+            <div className="card-desc">
+              Translating ātman as &ldquo;soul&rdquo; is the most common philosophical error in English-language Indian spirituality. The two words carry different metaphysical premises. Here is what the Gita actually says — verse by verse, with the Bible&apos;s own account of the soul for contrast.
+            </div>
+            <div className="card-meta">
+              <span className="card-read-time">~12 min read</span>
               <span className="card-arrow">Read →</span>
             </div>
           </div>

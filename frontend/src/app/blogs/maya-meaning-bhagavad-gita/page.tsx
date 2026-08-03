@@ -320,7 +320,7 @@ const schemas = [
         name: 'What is the difference between maya and avidya?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Maya and avidya (ignorance) are related but not identical. Maya is the cosmic power that projects the apparent diversity — it operates at the level of Ishvara (the cosmic divine). Avidya is the individual-level ignorance that misidentifies the self with the body-mind complex — it operates at the level of the jiva (individual soul). Avidya is, you could say, maya seen from the inside of the individual experience. When the Upanishads and Vedanta speak of removing maya, they usually mean removing avidya: not cancelling the appearance of the world, but correcting the misidentification of what you are within it.",
+          text: "Maya and avidya (ignorance) are related but not identical. Maya is the cosmic power that projects the apparent diversity — it operates at the level of Ishvara (the cosmic divine). Avidya is the individual-level ignorance that misidentifies the self with the body-mind complex — it operates at the level of the jiva (individual atman). Avidya is, you could say, maya seen from the inside of the individual experience. When the Upanishads and Vedanta speak of removing maya, they usually mean removing avidya: not cancelling the appearance of the world, but correcting the misidentification of what you are within it.",
         },
       },
     ],
@@ -545,7 +545,7 @@ export default function MayaMeaningPage() {
 
         <h2>Maya and the Gita&apos;s Final Teaching</h2>
         <p>
-          The Gita does not end with a theory of maya. It ends with an instruction: &ldquo;Take refuge in me alone. I will free you from all sins. Do not grieve&rdquo; (BG 18.66). The word for refuge is <em>śaraṇam</em> — complete shelter, the giving over of self-management.
+          The Gita does not end with a theory of maya. It ends with an instruction: &ldquo;Take refuge in me alone. I will free you from all papa. Do not grieve&rdquo; (BG 18.66). The word for refuge is <em>śaraṇam</em> — complete shelter, the giving over of self-management.
         </p>
         <p>
           This is the Gita&apos;s answer to maya: not the accumulation of correct ideas about it, but the reorientation of consciousness from the bounded self (which is maya&apos;s construction) to what is beyond it. The world doesn&apos;t disappear. The gunas don&apos;t stop operating. But the center of gravity shifts. And from that shifted center, the world is seen differently — not as a trap, not as a dream, but as the play of the divine, which is always pointing toward its source.
@@ -589,7 +589,7 @@ export default function MayaMeaningPage() {
         <div className="faq-item">
           <strong>What is the difference between maya and avidya?</strong>
           <p>
-            Maya is the cosmic power that projects apparent diversity from undivided reality — operating at the level of the universal divine (Ishvara). Avidya is the individual-level ignorance that misidentifies the self with the body-mind complex — operating at the level of the individual soul (jiva). Avidya is, you could say, maya experienced from inside an individual life. The Vedantic and Gita path aims at dissolving avidya — not by cancelling the world&apos;s appearance, but by correcting the misidentification of what you are within it.
+            Maya is the cosmic power that projects apparent diversity from undivided reality — operating at the level of the universal divine (Ishvara). Avidya is the individual-level ignorance that misidentifies the self with the body-mind complex — operating at the level of the individual atman (jiva). Avidya is, you could say, maya experienced from inside an individual life. The Vedantic and Gita path aims at dissolving avidya — not by cancelling the world&apos;s appearance, but by correcting the misidentification of what you are within it.
           </p>
         </div>
       </div>

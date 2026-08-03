@@ -516,7 +516,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Quotation",
     "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.31",
-    "text": "Such a person quickly becomes a soul of dharma and attains lasting peace. Arjuna, declare it openly — my devotee never perishes.",
+    "text": "Such a person quickly becomes an atman of dharma and attains lasting peace. Arjuna, declare it openly — my devotee never perishes.",
     "spokenByCharacter": {
       "@type": "Person",
       "name": "Krishna"
@@ -707,7 +707,7 @@ export default function ChapterPage9() {
         </p>
 
         <p>
-          Western theological categories struggle with this. It is not pantheism (God = everything). It is not classical theism (God is separate from everything). It is what the Vaishnava tradition would later call <em>achintya-bheda-abheda</em>, inconceivable simultaneous difference and non-difference. The image is asymmetric. The container is in you, but you are not in the container. Practically, this lets the Gita say two things that other traditions have to choose between: everything is sacred, and the sacred is not exhausted by everything.
+          Western theological categories struggle with this. It is not pantheism (Bhagavan = everything). It is not classical theism (Bhagavan is separate from everything). It is what the Vaishnava tradition would later call <em>achintya-bheda-abheda</em>, inconceivable simultaneous difference and non-difference. The image is asymmetric. The container is in you, but you are not in the container. Practically, this lets the Gita say two things that other traditions have to choose between: everything is sacred, and the sacred is not exhausted by everything.
         </p>
 
                 <ShlokaCard
@@ -717,7 +717,7 @@ export default function ChapterPage9() {
           iast="mayā tatam idaṃ sarvaṃ jagad avyakta-mūrtinā | mat-sthāni sarva-bhūtāni na cāhaṃ teṣv avasthitaḥ ||"
           meaning="All this world is pervaded by my unmanifest form. All beings dwell in me. But I am not contained in them."
           insightLabel="What the asymmetry buys us"
-          insight="If God were exhausted by the world, the world's suffering would be God's defeat. If God were entirely separate from the world, the world's suffering would not be God's concern. The Gita's asymmetric position lets the Divine be intimate with all suffering without being defeated by it. Every being is held. Nothing held diminishes the holder."
+          insight="If Bhagavan were exhausted by the world, the world's suffering would be Bhagavan's defeat. If Bhagavan were entirely separate from the world, the world's suffering would not be Bhagavan's concern. The Gita's asymmetric position lets the Divine be intimate with all suffering without being defeated by it. Every being is held. Nothing held diminishes the holder."
           essence="The supreme reality holds everything without being held by anything."
         />
 
@@ -773,7 +773,7 @@ export default function ChapterPage9() {
         </p>
 
         <p>
-          Modern readers often hesitate at this verse. It can sound like a transactional promise, believe hard enough, and the universe will provide. That is not the verse's structure. The condition is not belief. The condition is undivided attention. <em>Ananyāś cintayanto</em>, those who think of me without thinking of anything else. This is rare. Most prayer is hedged with backup plans. The verse is describing the unhedged state, and saying that, in that state, the providing happens. Whether it is a metaphysical promise or a psychological observation, the verse names something real: the mind that is not splitting itself between God and Plan B is met differently than the one that is.
+          Modern readers often hesitate at this verse. It can sound like a transactional promise, believe hard enough, and the universe will provide. That is not the verse's structure. The condition is not belief. The condition is undivided attention. <em>Ananyāś cintayanto</em>, those who think of me without thinking of anything else. This is rare. Most prayer is hedged with backup plans. The verse is describing the unhedged state, and saying that, in that state, the providing happens. Whether it is a metaphysical promise or a psychological observation, the verse names something real: the mind that is not splitting itself between Bhagavan and Plan B is met differently than the one that is.
         </p>
 
                 <ShlokaCard
@@ -876,7 +876,7 @@ export default function ChapterPage9() {
         </p>
 
         <p>
-          Read carelessly, this can sound like a cheap absolution. Read carefully, it is one of the most morally serious claims in the book. The verse is not saying past conduct doesn't matter. It is saying the direction of the soul matters more than its history. A clean turning, not a cleaner past, is what is required. The verse is the Gita's most explicit rejection of the idea that anyone is too far gone to begin. The door is open from where you are now.
+          Read carelessly, this can sound like a cheap absolution. Read carefully, it is one of the most morally serious claims in the book. The verse is not saying past conduct doesn't matter. It is saying the direction of the atman matters more than its history. A clean turning, not a cleaner past, is what is required. The verse is the Gita's most explicit rejection of the idea that anyone is too far gone to begin. The door is open from where you are now.
         </p>
 
                 <ShlokaCard
@@ -895,7 +895,7 @@ export default function ChapterPage9() {
           speaker="Krishna"
           sanskrit="क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति । कौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति ॥"
           iast="kṣipraṃ bhavati dharmātmā śaśvac-chāntiṃ nigacchati | kaunteya pratijānīhi na me bhaktaḥ praṇaśyati ||"
-          meaning="Such a person quickly becomes a soul of dharma and attains lasting peace. Arjuna, declare it openly, my devotee never perishes."
+          meaning="Such a person quickly becomes an atman of dharma and attains lasting peace. Arjuna, declare it openly, my devotee never perishes."
           insightLabel="The line that carries the chapter"
           insight="Na me bhaktaḥ praṇaśyati. My devotee never perishes. The verb is in the present tense. It is a structural claim about how the universe is set up. The one who has turned wholeheartedly toward the Divine cannot be finally destroyed, by their past, by their circumstances, by their fear. The Gita asks Arjuna to declare this, to take it seriously enough to say out loud."
           essence="Devotion quickly changes a person and protects them from ruin."

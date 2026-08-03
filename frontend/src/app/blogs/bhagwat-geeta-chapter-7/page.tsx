@@ -361,7 +361,7 @@ const schemas = [
         "name": "What is Bhagavad Gita Chapter 7 about?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Chapter 7, called Jnana Vijnana Yoga, marks the seam in the Bhagavad Gita. The first six chapters focused on the seeker's inner discipline. From Chapter 7 onward, Krishna shifts to revealing the nature of reality itself — the two levels of nature, the divine immanence in all things (the pearls-on-a-thread image in 7.7), the four kinds of seekers (7.16-17), and the rare recognition that Vāsudevaḥ sarvam iti — God is everything (7.19)."
+          "text": "Chapter 7, called Jnana Vijnana Yoga, marks the seam in the Bhagavad Gita. The first six chapters focused on the seeker's inner discipline. From Chapter 7 onward, Krishna shifts to revealing the nature of reality itself — the two levels of nature, the divine immanence in all things (the pearls-on-a-thread image in 7.7), the four kinds of seekers (7.16-17), and the rare recognition that Vāsudevaḥ sarvam iti — Bhagavan is all this (7.19)."
         }
       },
       {
@@ -518,7 +518,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Quotation",
     "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.19",
-    "text": "After many lifetimes, the wise one surrenders to me, recognising — Vāsudeva is everything. Such a great soul is exceedingly rare.",
+    "text": "After many lifetimes, the wise one surrenders to me, recognising — Vāsudeva is everything. Such a great atman is exceedingly rare.",
     "spokenByCharacter": {
       "@type": "Person",
       "name": "Krishna"
@@ -690,7 +690,7 @@ export default function ChapterPage7() {
           iast="mattaḥ parataraṃ nānyat kiñcid asti dhanañjaya | mayi sarvam idaṃ protaṃ sūtre maṇi-gaṇā iva ||"
           meaning="There is nothing higher than me, Arjuna. All this is strung on me, as pearls are strung on a thread."
           insightLabel="Why this image lasts"
-          insight="Other scriptures make divine immanence sound abstract, God is everywhere, God is in all things. This verse gives you a picture you can hold. Pearls are individual, distinguishable, and beautiful. They are also, structurally, not separate. The thread changes nothing about how a pearl looks. It only changes whether it belongs."
+          insight="Other scriptures make divine immanence sound abstract, Bhagavan is everywhere, Bhagavan is in all things. This verse gives you a picture you can hold. Pearls are individual, distinguishable, and beautiful. They are also, structurally, not separate. The thread changes nothing about how a pearl looks. It only changes whether it belongs."
           essence="Everything is held in one sustaining reality."
         />
 
@@ -827,11 +827,11 @@ export default function ChapterPage7() {
         <h2 id="vasudeva">After Many Lifetimes: The Recognition That Ends Searching</h2>
 
         <p>
-          Verse 7.19 is one of the most quietly weighty verses in the entire book. It says: after many lifetimes, the wise one surrenders, recognising that <em>vāsudevaḥ sarvam iti</em>, God is all this. That recognition, Krishna says, makes the person a great soul, and very rare.
+          Verse 7.19 is one of the most quietly weighty verses in the entire book. It says: after many lifetimes, the wise one surrenders, recognising that <em>vāsudevaḥ sarvam iti</em>, Bhagavan is all this. That recognition, Krishna says, makes the person a great atman, and very rare.
         </p>
 
         <p>
-          The verse can be read in two ways. The traditional reading is literal, many lifetimes, real ones, before the recognition arrives. The psychological reading is that this is what it feels like even within a single life: that the recognition seems to arrive after enormous distance has been crossed. Either way, the destination is the same and is named clearly: <em>God is all this</em>. Not God is somewhere, beyond. God is here, as this. The thread is the pearls, seen finally as the thread.
+          The verse can be read in two ways. The traditional reading is literal, many lifetimes, real ones, before the recognition arrives. The psychological reading is that this is what it feels like even within a single life: that the recognition seems to arrive after enormous distance has been crossed. Either way, the destination is the same and is named clearly: <em>Bhagavan is all this</em>. Not Bhagavan is somewhere, beyond. Bhagavan is here, as this. The thread is the pearls, seen finally as the thread.
         </p>
 
                 <ShlokaCard
@@ -839,9 +839,9 @@ export default function ChapterPage7() {
           speaker="Krishna"
           sanskrit="बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते । वासुदेवः सर्वमिति स महात्मा सुदुर्लभः ॥"
           iast="bahūnāṃ janmanām ante jñānavān māṃ prapadyate | vāsudevaḥ sarvam iti sa mahātmā su-durlabhaḥ ||"
-          meaning="After many lifetimes, the wise one surrenders to me, recognising, Vāsudeva is everything. Such a great soul is exceedingly rare."
+          meaning="After many lifetimes, the wise one surrenders to me, recognising, Vāsudeva is everything. Such a great atman is exceedingly rare."
           insightLabel="The five words that matter"
-          insight="Vāsudevaḥ sarvam iti, God is everything. Not God is in everything. Not God includes everything. God is everything. The grammar removes the last layer of distance. The realization of this verse is the destination of every other verse in the book."
+          insight="Vāsudevaḥ sarvam iti, Bhagavan is all this. Not Bhagavan is in everything. Not Bhagavan includes everything. Bhagavan is all this. The grammar removes the last layer of distance. The realization of this verse is the destination of every other verse in the book."
           essence="Deep seeing ends in surrender to the one reality in all things."
         />
 
@@ -958,7 +958,7 @@ export default function ChapterPage7() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 7 about?</div>
             <div className="faq-a">
-              Chapter 7, called Jnana Vijnana Yoga, marks the seam in the Bhagavad Gita. The first six chapters focused on the seeker's inner discipline. From Chapter 7 onward, Krishna shifts to revealing the nature of reality itself, the two levels of nature, the divine immanence in all things (the pearls-on-a-thread image in 7.7), the four kinds of seekers (7.16-17), and the rare recognition that <em>Vāsudevaḥ sarvam iti</em>, God is everything (7.19).
+              Chapter 7, called Jnana Vijnana Yoga, marks the seam in the Bhagavad Gita. The first six chapters focused on the seeker's inner discipline. From Chapter 7 onward, Krishna shifts to revealing the nature of reality itself, the two levels of nature, the divine immanence in all things (the pearls-on-a-thread image in 7.7), the four kinds of seekers (7.16-17), and the rare recognition that <em>Vāsudevaḥ sarvam iti</em>, Bhagavan is all this (7.19).
             </div>
           </div>
           <div className="faq-item">

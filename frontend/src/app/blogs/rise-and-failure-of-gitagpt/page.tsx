@@ -663,7 +663,7 @@ export default function GitaGptRiseAndFailurePage() {
         <h2>What was actually missing from the product</h2>
 
         <p>
-          Put a product hat on, and the failure mode is clear. These were not religious products. They were costume parties. The model wore Krishna&apos;s clothes, but the only thing telling it how to behave was a paragraph of instructions and the user&apos;s last message. There was no retrieval. There was no grounding. There were no domain experts in the loop. There was no version of the bot that could tell you which verse it was actually citing, because most of the time it was not citing one. It was hallucinating in the voice of God.
+          Put a product hat on, and the failure mode is clear. These were not religious products. They were costume parties. The model wore Krishna&apos;s clothes, but the only thing telling it how to behave was a paragraph of instructions and the user&apos;s last message. There was no retrieval. There was no grounding. There were no domain experts in the loop. There was no version of the bot that could tell you which verse it was actually citing, because most of the time it was not citing one. It was hallucinating in the voice of the Divine.
         </p>
 
         <p>
