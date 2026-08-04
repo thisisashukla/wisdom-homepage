@@ -8,34 +8,51 @@ import {
   chapterUrl,
   topicUrl,
 } from '@/lib/gita'
-import GitaAppCTA from '@/components/gita/GitaAppCTA'
+// GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
+// for the Scripture AI waitlist while that product launches.
+import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
 import BlogTracker from '@/components/BlogTracker'
 import SanskritText from '@/components/gita/SanskritText'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
-import DailyVerseEmail from '@/components/gita/DailyVerseEmail'
+// DailyVerseEmail source preserved at @/components/gita/DailyVerseEmail — usage
+// disabled for now; only the Scripture AI waitlist is shown on this page.
+// import DailyVerseEmail from '@/components/gita/DailyVerseEmail'
 import { getVerseAudio } from '@/lib/gita'
 
 // Re-render once an hour so the day rolls over cleanly without manual rebuilds.
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'Hindu Verse of the Day — Bhagavad Gita | Wisdom',
+  title: 'Bhagavad Gita — Verse of the Day (Hindu Verse of the Day) | Wisdom',
   description:
-    'A new verse from the Bhagavad Gita every day. Sanskrit original, Hindi and English meaning, and the essence in a single line. Your daily Hindu practice.',
+    'A new verse from the Bhagavad Gita every day. Sanskrit original, Hindi and English meaning, plus the story behind why this shloka fits today. Your daily Hindu spiritual practice.',
   alternates: {
     canonical: 'https://wisdomquotes.in/gita/today',
     languages: {
+      'en': 'https://wisdomquotes.in/gita/today',
       'en-IN': 'https://wisdomquotes.in/gita/today',
+      'hi': 'https://wisdomquotes.in/hi/gita/today',
       'hi-IN': 'https://wisdomquotes.in/hi/gita/today',
+      'x-default': 'https://wisdomquotes.in/gita/today',
     },
   },
   openGraph: {
     title: 'Bhagavad Gita — Verse of the Day',
-    description: 'A new verse from the Bhagavad Gita each day.',
+    description: 'A new verse from the Bhagavad Gita each day, with story and context.',
     url: 'https://wisdomquotes.in/gita/today',
     siteName: 'Wisdom',
     type: 'article',
+    locale: 'en_IN',
+    alternateLocale: ['hi_IN'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bhagavad Gita — Verse of the Day',
+    description: 'A new verse from the Bhagavad Gita each day.',
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  keywords: 'hindu verse of the day, bhagavad gita verse of the day, daily shloka, shloka of the day, sanskrit verse daily',
 }
 
 // ── Types ─────────────────────────────────────────────────────────────────────
@@ -120,9 +137,52 @@ export default async function TodayPage() {
     timeZone: 'UTC',
   })
 
+  const isoDate = new Date().toISOString()
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Quotation',
+    text: verse.sanskrit,
+    inLanguage: 'sa',
+    spokenByCharacter: verse.speaker
+      ? { '@type': 'Person', name: verse.speaker }
+      : undefined,
+    creator: { '@type': 'Person', name: 'Vyasa' },
+    isPartOf: {
+      '@type': 'Chapter',
+      name: ch?.enName ?? `Bhagavad Gita Chapter ${chapter}`,
+      position: chapter,
+      isPartOf: { '@type': 'Book', name: 'Bhagavad Gita', url: 'https://wisdomquotes.in/gita' },
+    },
+    datePublished: isoDate,
+  }
+  const webPageLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: `Bhagavad Gita ${verse.chapter}.${verse.verse} — Verse of the Day`,
+    url: 'https://wisdomquotes.in/gita/today',
+    inLanguage: 'en',
+    lastReviewed: isoDate,
+    mainEntity: {
+      '@type': 'Quotation',
+      text: verse.englishTranslation,
+      spokenByCharacter: verse.speaker
+        ? { '@type': 'Person', name: verse.speaker }
+        : undefined,
+    },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Bhagavad Gita', item: 'https://wisdomquotes.in/gita' },
+        { '@type': 'ListItem', position: 2, name: 'Verse of the day', item: 'https://wisdomquotes.in/gita/today' },
+      ],
+    },
+  }
+
   return (
     <main className="gita-main">
       <BlogTracker pageName="gita_today" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageLd) }} />
 
       <nav className="gita-crumb" aria-label="Breadcrumb">
         <a href="/gita" data-mp-location="today_crumb_gita">Bhagavad Gita</a>
@@ -220,8 +280,9 @@ export default async function TodayPage() {
         </div>
       </article>
 
-      {/* ── Email capture — highest-engagement page, the only retention hook ── */}
-      <DailyVerseEmail page="gita_today" locale="en" />
+      {/* ── DailyVerseEmail removed for now — Scripture AI waitlist below is
+             the only signup on this page. Component code preserved at
+             @/components/gita/DailyVerseEmail. */}
 
       {/* ── The backstory ── */}
       {context && (
@@ -244,7 +305,7 @@ export default async function TodayPage() {
         </div>
       )}
 
-      <GitaAppCTA variant="verse" locale="en" verse={verse} />
+      <ScriptureAIGitaCTA variant="verse" locale="en" verse={verse} pageName="Gita Today" />
     </main>
   )
 }

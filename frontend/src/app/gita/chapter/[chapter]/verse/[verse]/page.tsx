@@ -18,6 +18,7 @@ import {
 import type { IndexEntry } from '@/lib/gita'
 import { getBlogLinksForVerse } from '@/lib/blogVerseLinks'
 import BlogTracker from '@/components/BlogTracker'
+import FeedbackWidget from '@/components/FeedbackWidget'
 import ShareButtons from '@/components/gita/ShareButtons'
 import VerseBookmark from '@/components/gita/VerseBookmark'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
@@ -73,15 +74,14 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!verse) return { title: 'Verse not found' }
   const ch = getChapter(c)
 
-  // ── Title: leads with verse reference (matches "9.23", "bhagavad gita 9.23"
-  //    query patterns), includes Devanagari opening as a distinctive
-  //    fingerprint so 1,604 otherwise-similar verse pages don't cannibalize
-  //    each other in SERP. Falls back to essence when Sanskrit is missing. ──
+  // ── Title: leads with verse reference and includes the "BG c.v" shortform
+  //    that appears verbatim in ~40% of GSC queries ("bg 2.44", "bg 9.23",
+  //    "bg 18.78" etc.). Devanagari opening still fingerprints the verse. ──
   const devaOpen = firstDevaPada(verse.sanskrit)
   const englishHook = verse.essence || trimToLength(verse.englishTranslation, 60)
   const title = devaOpen
-    ? `Bhagavad Gita ${c}.${v} — ${devaOpen} | Sanskrit, Meaning & Translation`
-    : `Bhagavad Gita ${c}.${v} Meaning – ${englishHook}${ch ? ` (${ch.enName})` : ''}`
+    ? `Bhagavad Gita ${c}.${v} (BG ${c}.${v}) — ${devaOpen} | Sanskrit, Meaning & Translation`
+    : `Bhagavad Gita ${c}.${v} (BG ${c}.${v}) Meaning – ${englishHook}${ch ? ` (${ch.enName})` : ''}`
 
   // ── Description: 150-160 chars; lead with simpleMeaning if we have it,
   //    fall back to englishTranslation. Include chapter for context. ──
@@ -90,7 +90,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     verse.detailedMeaning ||
     verse.englishTranslation
   const description = trimToLength(
-    `Bhagavad Gita Chapter ${c}, Verse ${v}${ch ? ` (${ch.enName})` : ''}: ${descLead}`,
+    `BG ${c}.${v} — Bhagavad Gita Chapter ${c}, Verse ${v}${ch ? ` (${ch.enName})` : ''}: ${descLead}`,
     158,
   )
 
@@ -98,11 +98,22 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return {
     title,
     description,
+    keywords: [
+      `bhagavad gita ${c}.${v}`,
+      `bg ${c}.${v}`,
+      `gita ${c}.${v}`,
+      `${c}.${v}`,
+      `bhagavad gita chapter ${c} verse ${v}`,
+      ch ? `${ch.enName.toLowerCase()}` : '',
+    ].filter(Boolean).join(', '),
     alternates: {
       canonical: `https://wisdomquotes.in${verseUrl(c, v)}`,
       languages: {
+        'en': `https://wisdomquotes.in${verseUrl(c, v, 'en')}`,
         'en-IN': `https://wisdomquotes.in${verseUrl(c, v, 'en')}`,
+        'hi': `https://wisdomquotes.in${verseUrl(c, v, 'hi')}`,
         'hi-IN': `https://wisdomquotes.in${verseUrl(c, v, 'hi')}`,
+        'x-default': `https://wisdomquotes.in${verseUrl(c, v, 'en')}`,
       },
     },
     openGraph: {
@@ -111,11 +122,13 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       url: `https://wisdomquotes.in${verseUrl(c, v)}`,
       type: 'article',
       siteName: 'Wisdom',
+      locale: 'en_IN',
+      alternateLocale: ['hi_IN'],
       images: [{ url: ogImage, width: 1200, height: 630, alt: `Bhagavad Gita ${c}.${v}` }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `Bhagavad Gita ${c}.${v}`,
+      title: `Bhagavad Gita ${c}.${v} — ${verse.essence || ''}`,
       description: verse.englishTranslation,
       images: [ogImage],
     },
@@ -135,8 +148,6 @@ export default async function VersePage({ params }: { params: Params }) {
   const blogLinks = getBlogLinksForVerse(c, v)
 
   // ── V3 enrichment: raw pipeline labels → human copy ──
-  // ("declaration / expansive / medium" means nothing to a casual reader —
-  //  render one friendly guidance line instead of jargon chips.)
   const typeLabel = ({
     teaching:    'A core teaching',
     declaration: 'A declaration',
@@ -153,13 +164,11 @@ export default async function VersePage({ params }: { params: Params }) {
     deep:    'builds on earlier teachings',
   } as Record<string, string>)[verse.depth ?? '']
   const heroNote = [typeLabel, toneLabel, depthNote].filter(Boolean).join(' · ')
-  // Concepts worth knowing, resolved to published topic hubs where possible
   const conceptLinks = (verse.requisiteConcepts ?? []).map((name) => ({
     name,
     topic: findTopicForConcept(name),
   }))
 
-  // Parse word-by-word translation: "word (gloss) / word (gloss) / ..."
   const wordByWord = verse.translationLiteral
     ? verse.translationLiteral
         .split(' / ')
@@ -170,23 +179,40 @@ export default async function VersePage({ params }: { params: Params }) {
         .filter((x): x is { sanskrit: string; gloss: string } => x !== null)
     : []
 
+  // ── Structured data ─────────────────────────────────────────────────────────
+
+  // Identify speaker as a named Person for entity search — helps Google
+  // connect verses to Krishna/Arjuna knowledge-graph nodes.
+  const speakerPerson = verse.speaker
+    ? {
+        '@type': 'Person',
+        name: verse.speaker,
+        ...(verse.speaker.toLowerCase().includes('krishna') && {
+          alternateName: ['Sri Krishna', 'श्रीकृष्ण', 'Bhagavan'],
+        }),
+        ...(verse.speaker.toLowerCase().includes('arjuna') && {
+          alternateName: ['अर्जुन', 'Partha'],
+        }),
+      }
+    : undefined
+
   const quotationLd = {
     '@context': 'https://schema.org',
     '@type': 'Quotation',
     text: verse.englishTranslation,
-    creator: { '@type': 'Person', name: verse.speaker },
+    creator: speakerPerson,
+    spokenByCharacter: speakerPerson,
     about: verse.tags,
     isPartOf: {
       '@type': 'Chapter',
       name: ch ? `${ch.enName} — ${ch.enTitle}` : `Chapter ${c}`,
-      isPartOf: { '@type': 'Book', name: 'Bhagavad Gita' },
+      position: c,
+      isPartOf: { '@type': 'Book', name: 'Bhagavad Gita', url: 'https://wisdomquotes.in/gita' },
     },
     inLanguage: ['sa', 'en', 'hi'],
+    url: `https://wisdomquotes.in${verseUrl(c, v)}`,
   }
 
-  // Article schema lets Google treat the commentary as editorial content
-  // rather than just a snippet — important now that we ship the full
-  // simpleMeaning / detailedMeaning / modernRelevance prose.
   const articleLd = (verse.simpleMeaning || verse.detailedMeaning) ? {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -198,16 +224,34 @@ export default async function VersePage({ params }: { params: Params }) {
       verse.modernRelevance,
       verse.simpleInsight,
     ].filter(Boolean).join('\n\n'),
-    author: { '@type': 'Organization', name: 'Wisdom' },
-    publisher: { '@type': 'Organization', name: 'Wisdom', url: 'https://wisdomquotes.in' },
+    author: {
+      '@type': 'Person',
+      name: 'Ankur Shukla',
+      url: 'https://wisdomquotes.in/about',
+      sameAs: ['https://x.com/sansearchapp'],
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Wisdom',
+      url: 'https://wisdomquotes.in',
+      logo: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/assets/new-light-logo.webp' },
+    },
     mainEntityOfPage: `https://wisdomquotes.in${verseUrl(c, v)}`,
+    image: [`https://wisdomquotes.in/api/og/gita/${c}/${v}`],
     about: verse.tags.map((t) => ({ '@type': 'Thing', name: t })),
+    mentions: [
+      { '@type': 'Book', name: 'Bhagavad Gita', url: 'https://wisdomquotes.in/gita' },
+      ...(speakerPerson ? [speakerPerson] : []),
+    ],
     isPartOf: {
       '@type': 'Chapter',
       name: ch ? `${ch.enName} — ${ch.enTitle}` : `Chapter ${c}`,
+      position: c,
       isPartOf: { '@type': 'Book', name: 'Bhagavad Gita' },
     },
     inLanguage: 'en',
+    datePublished: '2026-06-12',
+    dateModified: '2026-08-01',
   } : null
 
   const breadcrumbLd = {
@@ -230,6 +274,66 @@ export default async function VersePage({ params }: { params: Params }) {
     ],
   }
 
+  // ── Audio schema (only when we have the recitation for this verse) ──
+  const audioLd = audio ? {
+    '@context': 'https://schema.org',
+    '@type': 'AudioObject',
+    name: `Bhagavad Gita ${c}.${v} — Sanskrit recitation`,
+    description: `Sanskrit chanting of Bhagavad Gita verse ${c}.${v}${ch ? ` from ${ch.enName}` : ''}.`,
+    contentUrl: audio.audio.startsWith('http') ? audio.audio : `https://wisdomquotes.in${audio.audio}`,
+    encodingFormat: 'audio/mpeg',
+    inLanguage: 'sa',
+    isPartOf: {
+      '@type': 'Book',
+      name: 'Bhagavad Gita',
+      url: 'https://wisdomquotes.in/gita',
+    },
+  } : null
+
+  // ── Auto-generated FAQ + FAQPage schema — grabs People Also Ask real estate
+  //    for verse-number queries. Only emitted when we have enough to answer
+  //    each question honestly. ──
+  type Faq = { q: string; a: string }
+  const faqs: Faq[] = []
+  if (verse.simpleMeaning) {
+    faqs.push({
+      q: `What does Bhagavad Gita ${c}.${v} mean?`,
+      a: verse.simpleMeaning,
+    })
+  } else if (verse.englishTranslation) {
+    faqs.push({
+      q: `What does Bhagavad Gita ${c}.${v} mean?`,
+      a: verse.englishTranslation,
+    })
+  }
+  if (verse.speaker) {
+    faqs.push({
+      q: `Who speaks Bhagavad Gita ${c}.${v}?`,
+      a: `${verse.speaker} speaks this verse${ch ? `, on the battlefield of Kurukshetra, in the chapter titled "${ch.enName}" (${ch.enTitle}).` : '.'}`,
+    })
+  }
+  if (ch) {
+    faqs.push({
+      q: `Which chapter of the Bhagavad Gita contains verse ${c}.${v}?`,
+      a: `Verse ${v} sits in Chapter ${c} of the Bhagavad Gita — ${ch.enName}, "${ch.enTitle}". The chapter has ${ch.totalVerses} verses in total.`,
+    })
+  }
+  if (verse.modernRelevance) {
+    faqs.push({
+      q: `Why does Bhagavad Gita ${c}.${v} matter today?`,
+      a: verse.modernRelevance,
+    })
+  }
+  const faqLd = faqs.length >= 2 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  } : null
+
   return (
     <main className="gita-main">
       <BlogTracker pageName={`gita_verse_${c}_${v}`} />
@@ -237,6 +341,12 @@ export default async function VersePage({ params }: { params: Params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {articleLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      )}
+      {audioLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(audioLd) }} />
+      )}
+      {faqLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       )}
 
       <nav className="gita-crumb gv-rise" aria-label="Breadcrumb">
@@ -249,7 +359,12 @@ export default async function VersePage({ params }: { params: Params }) {
 
       <header className="gv-hero-head">
         <div className="gv-hero-eyebrow gv-rise" style={{ '--d': '0.06s' } as CSSProperties}>Sacred verse</div>
-        <h1 className="gita-h1 gv-hero-h1 gv-rise" style={{ '--d': '0.12s' } as CSSProperties}>Bhagavad Gita {c}.{v}</h1>
+        <h1 className="gita-h1 gv-hero-h1 gv-rise" style={{ '--d': '0.12s' } as CSSProperties}>
+          Bhagavad Gita {c}.{v}
+          <span className="gv-hero-h1-sub" style={{ display: 'block', fontSize: '0.65em', fontWeight: 500, opacity: 0.75, marginTop: '0.35em' }}>
+            BG {c}.{v} · Chapter {c}, Verse {v}
+          </span>
+        </h1>
         <div className="gv-hero-badges gv-rise" style={{ '--d': '0.18s' } as CSSProperties}>
           <span className="gv-hero-pill">{ch?.enName ?? `Chapter ${c}`} · Verse {v}</span>
         </div>
@@ -276,7 +391,6 @@ export default async function VersePage({ params }: { params: Params }) {
           <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
         )}
 
-        {/* English rendered as the main reading line, app-style: centered, serif, italic */}
         <p className="gv-en-quote" lang="en">{verse.englishTranslation}</p>
         {verse.speaker && <div className="gv-en-speaker">— {verse.speaker}</div>}
 
@@ -348,7 +462,6 @@ export default async function VersePage({ params }: { params: Params }) {
             </div>
           )}
 
-          {/* Concepts this verse stands on — linked to topic hubs where published */}
           {conceptLinks.length > 0 && (
             <div className="gv-keys gv-reveal" aria-label="Concepts behind this verse">
               <span className="gv-keys-label">Built on</span>
@@ -371,7 +484,6 @@ export default async function VersePage({ params }: { params: Params }) {
             </div>
           )}
 
-          {/* Numbered commentary journey: meaning → context → relevance */}
           {[
             verse.simpleMeaning   && { n: '01', label: 'What this verse means',       kicker: 'In plain words',   text: verse.simpleMeaning },
             verse.detailedMeaning && { n: '02', label: 'Context & commentary',         kicker: 'On the battlefield', text: verse.detailedMeaning },
@@ -388,7 +500,6 @@ export default async function VersePage({ params }: { params: Params }) {
             )
           })}
 
-          {/* Takeaway — prominent callout */}
           {verse.simpleInsight && (
             <div className="gv-takeaway gv-reveal">
               <div className="gv-takeaway-kicker">The takeaway</div>
@@ -396,7 +507,6 @@ export default async function VersePage({ params }: { params: Params }) {
             </div>
           )}
 
-          {/* Carry it with you — pocket versions, right where the meaning just landed */}
           {(verse.quoteVariants?.length ?? 0) > 0 && (
             <div className="gv-reveal">
               <MantraCards variants={verse.quoteVariants!} chapter={c} verse={v} />
@@ -424,11 +534,12 @@ export default async function VersePage({ params }: { params: Params }) {
                 background: 'var(--bg-card, rgba(255,255,255,0.04))',
               }}
             >
-              {/* Hero image strip */}
               <div style={{ position: 'relative', height: '130px', overflow: 'hidden' }}>
                 <img
                   src={chapterImage(c).src}
                   alt={chapterImage(c).alt}
+                  width={1200}
+                  height={260}
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                   loading="lazy"
                 />
@@ -446,7 +557,6 @@ export default async function VersePage({ params }: { params: Params }) {
                   Chapter {c} · {ch.enTitle}
                 </div>
               </div>
-              {/* Card body */}
               <div style={{ padding: '16px 20px 18px' }}>
                 <div style={{ fontSize: '17px', fontWeight: 700, color: 'var(--text)', marginBottom: '5px', lineHeight: 1.3 }}>
                   {ch.enName}
@@ -483,6 +593,45 @@ export default async function VersePage({ params }: { params: Params }) {
         </section>
       )}
 
+      {/* ── Common questions (rendered to match FAQPage schema above) ── */}
+      {faqs.length >= 2 && (
+        <section className="gv-reveal" style={{ marginTop: '56px' }} aria-label="Common questions about this verse">
+          <div className="gv-sechead">
+            <span className="gv-sechead-label">Common questions</span>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginTop: '18px' }}>
+            {faqs.map((f, i) => (
+              <details
+                key={i}
+                style={{
+                  background: 'var(--bg-card, rgba(255,255,255,0.04))',
+                  border: '1px solid rgba(245,201,106,0.18)',
+                  borderRadius: '12px',
+                  padding: '14px 18px',
+                }}
+              >
+                <summary
+                  style={{
+                    fontSize: '15px',
+                    fontWeight: 600,
+                    color: 'var(--text)',
+                    cursor: 'pointer',
+                    listStyle: 'none',
+                  }}
+                >
+                  {f.q}
+                </summary>
+                <p style={{ marginTop: '10px', fontSize: '14.5px', lineHeight: 1.65, color: 'var(--text-dim)' }}>
+                  {f.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <FeedbackWidget pageType="verse" pageId={`verse_${c}_${v}`} pageName={`gita_verse_${c}_${v}`} />
+
       {/* ── Go Deeper: curated blog links for this verse ── */}
       {blogLinks.length > 0 && (
         <section
@@ -499,7 +648,7 @@ export default async function VersePage({ params }: { params: Params }) {
             {blogLinks.map((link) => (
               <a
                 key={link.slug}
-                href={`/blog/${link.slug}`}
+                href={`/blogs/${link.slug}`}
                 data-mp-location={`verse_${c}_${v}_blog_${link.slug}`}
                 data-mp-event="Blog Deep Dive Clicked"
                 data-mp-props={JSON.stringify({ verse: `${c}.${v}`, slug: link.slug })}
@@ -515,19 +664,18 @@ export default async function VersePage({ params }: { params: Params }) {
                   minHeight: '96px',
                 }}
               >
-                {/* Thumbnail */}
                 <div style={{ flexShrink: 0, width: '110px', position: 'relative', overflow: 'hidden' }}>
                   <img
                     src={link.image}
                     alt=""
                     aria-hidden="true"
+                    width={110}
+                    height={96}
                     style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
                     loading="lazy"
                   />
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, transparent 60%, rgba(10,5,20,0.55))' }} />
                 </div>
-
-                {/* Text */}
                 <div style={{ padding: '16px 18px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '6px', flex: 1 }}>
                   <div style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dimmer)' }}>
                     Essay
@@ -573,7 +721,7 @@ export default async function VersePage({ params }: { params: Params }) {
         </div>
       </section>
 
-      {/* ── Floating verse navigator: always reachable, never lost ── */}
+      {/* ── Floating verse navigator ── */}
       <nav className="gv-versenav" aria-label="Verse navigation">
         {prev ? (
           <a href={verseUrl(prev.chapter, prev.verse)} className="gv-versenav-btn" data-mp-location={`verse_${c}_${v}_float_prev`} aria-label={`Previous verse ${prev.chapter}.${prev.verse}`}>

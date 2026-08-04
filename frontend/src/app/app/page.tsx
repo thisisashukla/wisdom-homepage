@@ -40,7 +40,7 @@ export default function AppLandingPage() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
       ))}
 
-      <Nav showSectionLinks />
+      <Nav showSectionLinks pageName="App Landing" />
 
       {/* ── HERO ── */}
       <section className="section" style={{ paddingTop: 64, paddingBottom: 40, borderBottom: '1px solid var(--border)' }}>

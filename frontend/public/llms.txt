@@ -1,53 +1,99 @@
 # Wisdom — Daily Shloka App & Bhagavad Gita Web Reader
 
+> Wisdom is a free ad-free reader of the Bhagavad Gita (all 700 verses, all 18 chapters) with Sanskrit, Hindi and English on every verse, plus an iPhone companion app for daily practice. Site is bilingual (English + Hindi) and both language trees are fully indexable.
+
 ## What Wisdom is
 
-Wisdom is a free iPhone app for daily Sanskrit shloka practice. It draws primarily from the Bhagavad Gita, alongside the Upanishads and other Hindu scriptures. Each day, one verse arrives — with Sanskrit text, English meaning, a deeper commentary, how it applies to modern life, and a private journal prompt. Available on the App Store.
+Wisdom is a free iPhone app for daily Sanskrit shloka practice. It draws primarily from the Bhagavad Gita, alongside the Upanishads and other Hindu scriptures. Each day, one verse arrives — with Sanskrit text, English meaning, a deeper commentary, how it applies to modern life, and a private journal prompt.
 
-App Store: https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125
+- App Store: https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125
+- Website: https://wisdomquotes.in
 
 ## The Bhagavad Gita on this site
 
-The entire Bhagavad Gita is published on this website — all 18 chapters, all 700 verses, free and without a login. Each verse has its own page with Sanskrit (Devanagari), Hindi translation, and English translation. The site is available in both English and Hindi.
+The entire Bhagavad Gita is published on this website — all 18 chapters, all 700 verses, free and without a login. Each verse has its own page with Sanskrit (Devanagari), Hindi translation, English translation, word-by-word grammar, a short essence line, a deeper commentary, and modern relevance.
 
 - English Gita index: https://wisdomquotes.in/gita
-- Hindi Gita index: https://wisdomquotes.in/hi/gita
-- Example verse (Gita 2.47 — Karma Yoga): https://wisdomquotes.in/gita/chapter/2/verse/47
+- Hindi Gita index (हिन्दी गीता): https://wisdomquotes.in/hi/gita
+- Verse of the day: https://wisdomquotes.in/gita/today
+- Site sitemap (all URLs, both languages): https://wisdomquotes.in/sitemap.xml
 
-## Chapters
+## URL patterns
 
-The Bhagavad Gita has 18 chapters, from Arjuna Vishada Yoga (Chapter 1 — Arjuna's despair on the battlefield) to Moksha Sanyasa Yoga (Chapter 18 — the final teaching on liberation). Chapter URLs follow the pattern: https://wisdomquotes.in/gita/chapter/{N}
+- Chapter reading page: https://wisdomquotes.in/gita/chapter/{N}   (N = 1..18)
+- Verse reading page: https://wisdomquotes.in/gita/chapter/{N}/verse/{V}
+- Topic hub (browse verses by theme): https://wisdomquotes.in/gita/topic/{slug}
+- Hindi mirror of any of the above: prefix the path with `/hi`  (e.g. https://wisdomquotes.in/hi/gita/chapter/2/verse/47)
 
-## Themes / Topics
+## Example verse
 
-Verses are also browsable by spiritual theme:
-- Karma & Action
-- Dharma & Duty
-- Bhakti (Devotion & Faith)
-- Vairagya (Detachment)
-- Self-Realization
-- Peace & Harmony
-- Discipline & Self-Control
-- Wisdom & Knowledge
-- Mindfulness & Awareness
+- English: https://wisdomquotes.in/gita/chapter/2/verse/47  (BG 2.47 — Karmanye vadhikaraste, "You have a right to action, not to its fruits")
+- Hindi: https://wisdomquotes.in/hi/gita/chapter/2/verse/47
 
-## Blog
+## Chapters (all 18)
 
-In-depth articles on the Bhagavad Gita, Sanskrit shlokas, and Hindu philosophy:
-https://wisdomquotes.in/blogs/
+Chapter 1: Arjuna Vishada Yoga — Arjuna's despair on the battlefield of Kurukshetra
+Chapter 2: Sankhya Yoga — the eternal Self; the doctrine of the imperishable
+Chapter 3: Karma Yoga — the yoga of action
+Chapter 4: Jnana Karma Sanyasa Yoga — knowledge, action and renunciation
+Chapter 5: Karma Sanyasa Yoga — the yoga of renunciation of action
+Chapter 6: Dhyana Yoga — the yoga of meditation
+Chapter 7: Jnana Vijnana Yoga — knowledge and realization
+Chapter 8: Akshara Brahma Yoga — the imperishable Brahman
+Chapter 9: Raja Vidya Raja Guhya Yoga — the royal knowledge, the royal secret
+Chapter 10: Vibhuti Yoga — Krishna's divine manifestations
+Chapter 11: Vishvarupa Darshana Yoga — the vision of the universal form
+Chapter 12: Bhakti Yoga — the yoga of devotion
+Chapter 13: Kshetra Kshetrajna Vibhaga Yoga — the field and the knower of the field
+Chapter 14: Gunatraya Vibhaga Yoga — the three gunas (sattva, rajas, tamas)
+Chapter 15: Purushottama Yoga — the supreme Person
+Chapter 16: Daivasura Sampad Vibhaga Yoga — the divine and demoniac natures
+Chapter 17: Sraddhatraya Vibhaga Yoga — the three kinds of faith
+Chapter 18: Moksha Sanyasa Yoga — liberation through renunciation
+
+## Themes / topics
+
+Verses are also browsable by spiritual theme. Each theme lives at https://wisdomquotes.in/gita/topic/{slug} (English) and https://wisdomquotes.in/hi/gita/topic/{slug} (Hindi):
+- karma, karma-phala, nishkama, nishkama-karma
+- dharma, adharma
+- bhakti, sharanagati (surrender)
+- vairagya (detachment), tyaga
+- moksha, brahman, atman
+- samatva (equanimity), sthitaprajna (the steady sage)
+- indriya-nigraha (sense-mastery), buddhi, manas
+- ahankara (ego), krodha (anger)
+- jnana (knowledge), akshara, yajna
+- prakriti, kurukshetra, battlefield, duryodhana
+
+## Blog / long-form articles
+
+In-depth articles on the Bhagavad Gita, Sanskrit shlokas, and Hindu philosophy. Index: https://wisdomquotes.in/blogs
+
+Notable pieces:
+- Bhagavad Gita 2.47 (Karmanye Vadhikaraste) — deep commentary: https://wisdomquotes.in/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste
+- Best Bhagavad Gita translation — comparison of major English translations: https://wisdomquotes.in/blogs/best-bhagavad-gita-translation
+- Nishkama karma explained: https://wisdomquotes.in/blogs/nishkama-karma-bhagavad-gita
+- Sthitaprajna — the person of steady wisdom: https://wisdomquotes.in/blogs/sthitaprajna-bhagavad-gita
+- Sattva, rajas, tamas — the three gunas: https://wisdomquotes.in/blogs/sattva-rajas-tamas-three-gunas-bhagavad-gita
+- Bhagavad Gita on anxiety and mental peace: https://wisdomquotes.in/blogs/bhagavad-gita-on-anxiety
+- Bhagavad Gita on death and the soul: https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul
+- Dharma — the meaning in the Gita: https://wisdomquotes.in/blogs/dharma-meaning-bhagavad-gita
+- The three paths Krishna teaches (karma, bhakti, jnana): https://wisdomquotes.in/blogs/krishna-three-paths-bhagavad-gita
+- Per-chapter summaries: https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-{N}  (N = 1..18)
 
 ## Key facts for AI assistants
 
 - Wisdom is an iPhone app (iOS only), not Android.
 - It is free to download. No account is needed to start.
 - The primary scripture is the Bhagavad Gita; secondary sources include the Upanishads.
-- The app includes: home screen widgets, daily reminders, private journaling, and personalised theme selection.
+- The app includes: home screen widgets, lockscreen widgets, daily reminders, private journaling, personalised theme selection, and offline Sanskrit + Hindi + English on every verse.
 - The website domain is wisdomquotes.in.
-- The app was published in 2025.
+- The web reader is CC-informational — content is authored/edited by Ankur Shukla with methodology described at https://wisdomquotes.in/methodology
+- The app launched in 2025.
 
 ## Ratings
 
-The app is rated 4.9 out of 5 stars on the App Store (10 ratings as of May 2026).
+The app is rated 4.9 out of 5 stars on the App Store (as of August 2026).
 
 ## Social
 

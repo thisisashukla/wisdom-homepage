@@ -6,6 +6,7 @@ import HomeAnimations from '@/components/HomeAnimations'
 import Nav from '@/components/Nav'
 import { getAllChapters, getAllVerseRefs, getVerse, getVerseAudio, chapterImage } from '@/lib/gita'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
+import { ScriptureAITeaser, ScriptureAIHeroCTA, ScriptureAIWaitlistButton } from '@/components/ScriptureAIWaitlist'
 import './home.css'
 
 // Revalidate hourly so the daily verse rolls over without a manual rebuild
@@ -23,15 +24,15 @@ function todaysVerseRef() {
 }
 
 export const metadata: Metadata = {
-  title: 'Bhagavad Gita — Read All 700 Verses Online in Sanskrit, Hindi & English | Wisdom',
+  title: 'Bhagavad Gita: Read All 700 Verses Online in Sanskrit, Hindi & English | Wisdom',
   description:
-    'Read the complete Bhagavad Gita online — all 18 chapters, 700 verses in Sanskrit, Hindi and English. Free. No login. One verse per page with simple meaning and detailed commentary.',
+    'Read the complete Bhagavad Gita online. All 18 chapters, 700 verses in Sanskrit, Hindi and English. Free. No login. One verse per page with simple meaning and detailed commentary.',
   keywords:
     'bhagavad gita, bhagavad gita online, bhagavad gita hindi, bhagavad gita english, gita verses, bhagavad gita 2.47, bhagavad gita free',
   openGraph: {
-    title: 'Bhagavad Gita — Read All 700 Verses Free Online | Wisdom',
+    title: 'Bhagavad Gita: Read All 700 Verses Free Online | Wisdom',
     description:
-      'The complete Bhagavad Gita — 18 chapters, 700 verses in Sanskrit, Hindi and English. Free to read, no login, no download required.',
+      'The complete Bhagavad Gita. 18 chapters, 700 verses in Sanskrit, Hindi and English. Free to read, no login, no download required.',
     type: 'website',
     url: 'https://wisdomquotes.in',
     siteName: 'Wisdom',
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
         url: 'https://wisdomquotes.in/og-image.webp',
         width: 1200,
         height: 630,
-        alt: 'Wisdom — Read the Bhagavad Gita free online',
+        alt: 'Wisdom. Read the Bhagavad Gita free online',
       },
     ],
   },
@@ -74,11 +75,11 @@ const BLOGS = [
   {
     slug: 'krishna-three-paths-bhagavad-gita',
     title: 'Krishna knew everyone seeks him differently, so he opened three doors',
-    dek: "Why the Gita's three paths — Karma, Jnana, Bhakti — are one teaching read through three temperaments.",
+    dek: "Karma, Jnana, Bhakti. Three paths, one teaching, three kinds of minds.",
   },
   {
     slug: 'bhagavad-gita-2-47-karmanye-vadhikaraste',
-    title: 'BG 2.47 — Karmanye vadhikaraste',
+    title: 'BG 2.47: Karmanye vadhikaraste',
     dek: 'The most quoted verse in the Gita, unpacked line by line.',
   },
   {
@@ -102,7 +103,7 @@ export default async function HomePage() {
 
       {/* ── NAV + HERO (immersive Krishna backdrop) ── */}
       <div className="hero-shell">
-        <Nav showSectionLinks overlayHero />
+        <Nav showSectionLinks overlayHero pageName="Home" />
 
         <section className="hero hero-immersive">
           <img
@@ -122,8 +123,7 @@ export default async function HomePage() {
                 Your mind won&apos;t stop.<br/><em>The Gita knows why.</em>
               </h1>
               <p className="hero-sub">
-                For 5,000 years, three paths have quieted minds like yours —
-                Action, Wisdom, Devotion. Read every verse of the Bhagavad Gita
+                For 5,000 years, three paths have quieted minds like yours: Action, Wisdom, Devotion. Read every verse of the Bhagavad Gita
                 here, free, in Sanskrit, Hindi and English.
               </p>
               <div className="hero-actions">
@@ -137,10 +137,11 @@ export default async function HomePage() {
               <p className="hero-note">
                 Free · No login · 700 verses · Sanskrit, Hindi &amp; English
               </p>
+              <ScriptureAIHeroCTA mpLocation="hero_scripture_ai_cta" pageName="Home" />
               <div className="hero-secondary-nav">
                 <a href="/hi/gita" hrefLang="hi" data-mp-location="hero_hindi_link">हिंदी में पढ़ें</a>
                 <span className="hero-sep">·</span>
-                <a href="/gita/chapter/2/verse/47" data-mp-location="hero_verse_247">BG 2.47 — Karma Yoga</a>
+                <a href="/gita/chapter/2/verse/47" data-mp-location="hero_verse_247">BG 2.47: Karma Yoga</a>
                 <span className="hero-sep">·</span>
                 <a href="/gita/chapter/11/verse/12" data-mp-location="hero_verse_1112">Vishwarupa 11.12</a>
               </div>
@@ -167,7 +168,7 @@ export default async function HomePage() {
               <div className="entry-card-icon">📖</div>
               <div className="entry-card-body">
                 <h3>Read the Gita</h3>
-                <p>All 18 chapters, 700 verses. Start where Arjuna started — with a mind full of doubt.</p>
+                <p>All 18 chapters, 700 verses. Start where Arjuna started, with a mind full of doubt.</p>
               </div>
               <div className="entry-card-cta">Begin with Verse 1.1 →</div>
             </a>
@@ -175,7 +176,7 @@ export default async function HomePage() {
               <div className="entry-card-icon">🕉️</div>
               <div className="entry-card-body">
                 <h3>हिंदी में पढ़ें</h3>
-                <p>सम्पूर्ण भगवद्गीता — संस्कृत, हिंदी अनुवाद और विस्तृत अर्थ सहित। निःशुल्क।</p>
+                <p>सम्पूर्ण भगवद्गीता। संस्कृत, हिंदी अनुवाद और विस्तृत अर्थ सहित। निःशुल्क।</p>
               </div>
               <div className="entry-card-cta">हिंदी गीता खोलें →</div>
             </a>
@@ -215,7 +216,7 @@ export default async function HomePage() {
                 {
                   path: 'Bhakti',
                   sanskrit: 'भक्ति योग',
-                  gloss: 'Offer what you have — leaf, flower, water',
+                  gloss: 'Offer what you have: leaf, flower, water',
                   hook: 'For the devotee who leads with heart',
                   href: '/gita/chapter/9/verse/26',
                   mp: 'home_path_bhakti',
@@ -285,7 +286,7 @@ export default async function HomePage() {
 
               <div className="today-verse-footer">
                 <div className="today-verse-hint">
-                  <span aria-hidden="true">▶</span> Press play — follow the Sanskrit word by word.
+                  <span aria-hidden="true">▶</span> Press play and follow the Sanskrit word by word.
                 </div>
               </div>
               <a
@@ -330,7 +331,7 @@ export default async function HomePage() {
               {[
                 ['18 chapters', 'Sankhya Yoga, Karma Yoga, Bhakti Yoga, Moksha Sanyasa Yoga, and all the rest.'],
                 ['One page per verse', 'Sanskrit Devanagari, Hindi anuvad, English translation.'],
-                ['Browse by theme', 'karma, dharma, bhakti, vairagya, the steady mind — the Gita organized around the questions you bring.'],
+                ['Browse by theme', 'karma, dharma, bhakti, vairagya, the steady mind. The Gita organized around the questions you bring.'],
                 ['Hindi mirror', 'every verse in Hindi-first layout at /hi/gita.'],
               ].map(([t, b]) => (
                 <li key={t} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
@@ -344,7 +345,7 @@ export default async function HomePage() {
             <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
               <a href="/gita" className="btn-nav" data-mp-location="home_gita_section_cta">Open the Gita →</a>
               <a href="/gita/chapter/2/verse/47" className="btn-ghost" data-mp-location="home_gita_section_247">
-                Start with 2.47 — Karma Yoga
+                Start with 2.47, Karma Yoga
               </a>
             </div>
           </div>
@@ -376,7 +377,7 @@ export default async function HomePage() {
               <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dimmer)', flexShrink: 0 }}>Most searched</span>
               {ICONIC_VERSES.slice(0, 4).map((v) => (
                 <a key={v.ref} href={`/gita/chapter/${v.chapter}/verse/${v.verse}`} style={{ fontSize: '13px', color: 'var(--gold-light)', textDecoration: 'none', opacity: 0.85 }}>
-                  BG {v.ref} — {v.label} →
+                  BG {v.ref}: {v.label} →
                 </a>
               ))}
             </div>
@@ -392,15 +393,15 @@ export default async function HomePage() {
             The scripture, in the form you actually need it.
           </h2>
           <p className="subtext" style={{ maxWidth: 560, margin: '0 auto 48px' }}>
-            Every one of the 700 verses gets its own page — six things you can rely on being there.
+            Every one of the 700 verses gets its own page. Six things you can count on being there.
           </p>
           <div className="problem-grid">
             {[
               { icon: '🕉️', h: 'Sanskrit Devanagari', p: 'The original verse, cleanly typeset in Devanagari with proper spacing for reading and study.' },
               { icon: 'हि', h: 'Hindi anuvad', p: 'A faithful Hindi translation for readers who prefer the mother tongue of most Gita commentaries.' },
-              { icon: 'A', h: 'English translation', p: 'A clear, modern English rendering — Wisdom editorial, human-reviewed against traditional commentary.' },
+              { icon: 'A', h: 'English translation', p: 'A clear, modern English rendering. Wisdom-editorial, human-reviewed against traditional commentary.' },
               { icon: '✎', h: 'Simple meaning + insight', p: 'One sentence that says what the verse actually means. One line you can carry into your day.' },
-              { icon: '📚', h: 'Detailed commentary', p: 'Who is speaking, to whom, why, and what is at stake — with the Sanskrit terms unpacked.' },
+              { icon: '📚', h: 'Detailed commentary', p: 'Who is speaking, to whom, why it matters, and what is at stake. Sanskrit terms explained throughout.' },
               { icon: '🧭', h: 'Cross-links by theme', p: 'Every verse links out by karma, dharma, bhakti, vairagya, so you can follow the thread instead of just the page number.' },
             ].map((c) => (
               <div key={c.h} className="prob-card">
@@ -419,10 +420,10 @@ export default async function HomePage() {
           <div className="t-center">
             <div className="eyebrow">All 18 chapters</div>
             <h2 className="heading" style={{ maxWidth: 640, margin: '0 auto 14px' }}>
-              Every chapter of the Gita — start anywhere.
+              Every chapter of the Gita. Start anywhere.
             </h2>
             <p className="subtext" style={{ maxWidth: 560, margin: '0 auto 48px' }}>
-              From Arjuna&apos;s despair (Ch. 1) to Krishna&apos;s final surrender teaching (Ch. 18) — every verse in Sanskrit, Hindi and English.
+              From Arjuna&apos;s despair (Ch. 1) to Krishna&apos;s final surrender teaching (Ch. 18). Every verse in Sanskrit, Hindi and English.
             </p>
           </div>
           <div className="chapters-grid">
@@ -460,7 +461,7 @@ export default async function HomePage() {
               The verses everyone comes for.
             </h2>
             <p className="subtext" style={{ maxWidth: 560, margin: '0 auto 40px' }}>
-              These are the ones people search first. Start with any of them — every page has the Sanskrit, meaning, and commentary in one place.
+              The verses most people come to first. Every page has the Sanskrit, the meaning, and commentary in one place.
             </p>
           </div>
           <div
@@ -511,11 +512,11 @@ export default async function HomePage() {
           <p className="subtext" style={{ maxWidth: 560, margin: '0 auto' }}>
             Anxiety, overthinking, disconnection, loss of direction. Ancient cultures gave these
             names, mapped their roots, and built practices to move through them. We lost the map.
-            The Gita is that map — and it is on this site, verse by verse.
+            The Gita is that map. It is on this site, verse by verse.
           </p>
           <div className="problem-grid">
             {[
-              { icon: '🌀', h: 'Overthinking that never resolves', p: 'You think in circles. The Gita has a name for the mind that will not settle — and a practice to still it.' },
+              { icon: '🌀', h: 'Overthinking that never resolves', p: 'You think in circles. The Gita has a name for the mind that will not settle, and a practice to still it.' },
               { icon: '📱', h: 'Distraction instead of depth', p: 'Scrolling offers relief and leaves you emptier. The Gita points at what actually fills you.' },
               { icon: '🧩', h: 'Disconnected from what is real', p: 'Roles, expectations, five directions at once. Krishna gives Arjuna one question that cuts through all of it.' },
               { icon: '🧭', h: 'No map for the inner life', p: 'Modern tools track your sleep and your steps. The Gita is 700 verses of the terrain inside you.' },
@@ -539,7 +540,7 @@ export default async function HomePage() {
               The Gita, organized around the questions you bring.
             </h2>
             <p className="subtext" style={{ maxWidth: 560, margin: '0 auto 40px' }}>
-              Every verse is tagged by concept. Pick a theme and read only the verses that touch it — across all 18 chapters.
+              Every verse is tagged by concept. Pick a theme and read only the verses that touch it, across all 18 chapters.
             </p>
           </div>
           <div
@@ -601,10 +602,10 @@ export default async function HomePage() {
                 हिंदी में
               </div>
               <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(22px, 2.4vw, 30px)', color: 'var(--gold-light)', lineHeight: 1.2, marginBottom: '10px' }}>
-                सम्पूर्ण भगवद्गीता — हिंदी में, निःशुल्क।
+                सम्पूर्ण भगवद्गीता। हिंदी में, निःशुल्क।
               </h2>
               <p style={{ color: 'var(--text-dim)', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
-                Every verse also lives on a Hindi-first mirror — same 18 chapters, same 700 verses,
+                Every verse also lives on a Hindi-first mirror. Same 18 chapters, same 700 verses,
                 laid out with Hindi anuvad and vistrit arth in front.
               </p>
             </div>
@@ -680,17 +681,17 @@ export default async function HomePage() {
             <div className="about-card">
               <div className="about-card-icon">📖</div>
               <h3>Complete</h3>
-              <p>All 18 chapters. All 700 verses. Sanskrit Devanagari, Hindi anuvad, English translation, and detailed commentary — on every single verse.</p>
+              <p>All 18 chapters. All 700 verses. Sanskrit Devanagari, Hindi anuvad, English translation, and detailed commentary on every single verse.</p>
             </div>
             <div className="about-card">
               <div className="about-card-icon">🕯️</div>
               <h3>Free &amp; ad-free</h3>
-              <p>No login. No paywall. No ads. Nothing between you and the scripture. If you want a daily-practice layer on your phone, there is an <a href="/app" style={{ color: 'var(--gold-light)' }}>iOS app</a> — optional.</p>
+              <p>No login. No paywall. No ads. Nothing between you and the scripture. The <a href="/app" style={{ color: 'var(--gold-light)' }}>iOS app</a> adds a daily-practice layer if you want one.</p>
             </div>
             <div className="about-card">
               <div className="about-card-icon">🔎</div>
               <h3>Sourced and transparent</h3>
-              <p>Sanskrit and Hindi from traditional sources. English translations Wisdom-editorial. Commentary AI-drafted from Shankara, Ramanuja and modern acharyas — human-reviewed. <a href="/methodology" style={{ color: 'var(--gold-light)' }}>Methodology →</a></p>
+              <p>Sanskrit and Hindi from traditional sources. English translations Wisdom-editorial. Commentary AI-drafted from Shankara, Ramanuja and modern acharyas, human-reviewed. <a href="/methodology" style={{ color: 'var(--gold-light)' }}>Methodology →</a></p>
             </div>
           </div>
         </div>
@@ -705,12 +706,12 @@ export default async function HomePage() {
           </h2>
           <div className="faq-list" role="list">
             {[
-              { q: 'Is it really free?', a: 'Yes. The full Bhagavad Gita — all 18 chapters, 700 verses, in Sanskrit, Hindi and English with commentary — is free to read on this site. No sign-up. No paywall. No ads.' },
+              { q: 'Is it really free?', a: 'Yes. The full Bhagavad Gita, all 18 chapters and 700 verses in Sanskrit, Hindi and English with commentary, is free to read on this site. No sign-up. No paywall. No ads.' },
               { q: 'Do I need to log in?', a: 'No. Just visit any chapter or verse URL and start reading. Nothing is gated behind an account.' },
-              { q: 'Is the Gita available in Hindi?', a: 'Yes. Every verse also lives on a Hindi-first mirror at /hi/gita — same 700 verses, Hindi anuvad and vistrit arth laid out in front of the English.' },
+              { q: 'Is the Gita available in Hindi?', a: 'Yes. Every verse also lives on a Hindi-first mirror at /hi/gita. Same 700 verses, Hindi anuvad and vistrit arth laid out in front of the English.' },
               { q: 'How are the translations sourced?', a: 'Sanskrit and Hindi are drawn from traditional sources. English translations are Wisdom-editorial. Commentary is AI-drafted from Shankara, Ramanuja and modern acharyas, and human-reviewed. See the Methodology page for the full detail.' },
-              { q: 'Which verse should I read first?', a: 'Most readers start with BG 2.47 — Karmanye vadhikaraste — the most quoted verse in the Gita, on doing your duty without attachment to results. If you want the full arc, Chapter 1 sets the scene and Chapter 2 is where Krishna begins teaching.' },
-              { q: 'Do you have an app?', a: 'The Gita itself is free on this website — that is the main product. There is an optional iPhone app that turns the Gita into a 2-minute daily practice. See /app.' },
+              { q: 'Which verse should I read first?', a: 'Most readers start with BG 2.47 (Karmanye vadhikaraste), the most quoted verse in the Gita, on doing your duty without attachment to results. If you want the full arc, Chapter 1 sets the scene and Chapter 2 is where Krishna begins teaching.' },
+              { q: 'Do you have an app?', a: 'The Gita itself is free on this website. That is the main product. There is an optional iPhone app that turns the Gita into a 2-minute daily practice. See /app.' },
             ].map((f) => (
               <div key={f.q} className="faq-item" role="listitem">
                 <button className="faq-q" aria-expanded="false">
@@ -743,6 +744,32 @@ export default async function HomePage() {
           <p style={{ fontSize: '13px', color: 'var(--text-dimmer)', marginTop: '20px' }}>
             No login · No paywall · Sanskrit + Hindi + English
           </p>
+          {/* Scripture AI waitlist nudge */}
+          <div style={{
+            marginTop: '32px',
+            paddingTop: '28px',
+            borderTop: '1px solid rgba(245, 201, 106, 0.15)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '12px',
+          }}>
+            <p style={{ fontSize: '13px', color: 'var(--text-dimmer)', margin: 0 }}>
+              Want to <em>ask</em> the scripture a question?
+            </p>
+            <ScriptureAIWaitlistButton
+              variant="ghost"
+              mpLocation="final_cta_scripture_ai"
+              pageName="Home"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ── ASK SCRIPTURE AI — coming soon waitlist ── */}
+      <section className="section" id="scripture-ai" style={{ borderBottom: '1px solid var(--border)' }}>
+        <div className="wrap">
+          <ScriptureAITeaser mpLocation="home_scripture_ai_section" pageName="Home" />
         </div>
       </section>
 
@@ -751,13 +778,13 @@ export default async function HomePage() {
         <div className="wrap">
           <div className="split">
             <div className="split-text">
-              <div className="eyebrow">Also — on iPhone</div>
+              <div className="eyebrow">Also on iPhone</div>
               <h2 className="heading" style={{ marginBottom: 18 }}>
                 Prefer a 2-minute<br/>daily practice?<br/><em>Try the iOS app.</em>
               </h2>
               <p className="subtext" style={{ marginBottom: 26 }}>
                 The Wisdom app turns the Gita into a daily rhythm. One teaching each morning,
-                chosen for your path — Action, Wisdom, or Devotion. Read here on the web anytime;
+                chosen for your path: Action, Wisdom, or Devotion. Read here on the web anytime;
                 the app adds the loop that makes the practice stick.
               </p>
               <ul className="check-list" style={{ marginBottom: 30 }}>
@@ -810,7 +837,7 @@ export default async function HomePage() {
               <div className="phone-frame">
                 <img
                   src="/assets/home-screen-quote1.webp"
-                  alt="Wisdom app — a daily Bhagavad Gita teaching on the iPhone home screen"
+                  alt="Wisdom app, a daily Bhagavad Gita teaching on the iPhone home screen"
                   loading="lazy"
                 />
               </div>

@@ -1,208 +1,207 @@
 import { MetadataRoute } from 'next'
+import fs from 'node:fs'
+import path from 'node:path'
 import { getAllChapters, getAllTopics, getAllVerseRefs, chapterUrl, verseUrl, topicUrl } from '@/lib/gita'
 
 const BASE = 'https://wisdomquotes.in'
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date()
+// A single point-in-time date for "content that doesn't change often" — used
+// for verse/chapter/topic pages so Google isn't told every page was updated
+// today on every rebuild.  Bump this when the underlying corpus changes.
+const CORPUS_UPDATED = new Date('2026-08-01')
 
+// Locale-alternates helper — Google reads both `en-IN`/`hi-IN` (region-tagged)
+// and `en`/`hi` (region-agnostic); emit both so India-outside users also match.
+// Also emits `x-default` per Google's hreflang guidance.
+function langAlts(enPath: string, hiPath: string) {
+  return {
+    languages: {
+      'en': `${BASE}${enPath}`,
+      'en-IN': `${BASE}${enPath}`,
+      'hi': `${BASE}${hiPath}`,
+      'hi-IN': `${BASE}${hiPath}`,
+      'x-default': `${BASE}${enPath}`,
+    },
+  }
+}
+
+/**
+ * Enumerate every /blogs/<slug>/page.tsx at build time so no new blog is
+ * silently missing from the sitemap.  Falls back to an empty list at runtime
+ * (this file is only invoked at build).
+ */
+function enumerateBlogSlugs(): string[] {
+  try {
+    const dir = path.join(process.cwd(), 'src/app/blogs')
+    return fs
+      .readdirSync(dir, { withFileTypes: true })
+      .filter((e) => e.isDirectory())
+      .filter((e) => {
+        try {
+          return fs.existsSync(path.join(dir, e.name, 'page.tsx'))
+        } catch {
+          return false
+        }
+      })
+      .map((e) => e.name)
+      .sort()
+  } catch (err) {
+    console.warn('[sitemap] blog enumeration failed:', err)
+    return []
+  }
+}
+
+// Curated per-slug lastmod / priority overrides — used for a handful of
+// tent-pole articles where publication date matters. Slugs not in the map
+// default to CORPUS_UPDATED and priority 0.75.
+const BLOG_LASTMOD: Record<string, { date: string; priority?: number }> = {
+  'bhagavad-gita-for-beginners': { date: '2026-04-08', priority: 0.75 },
+  'bhagavad-gita-karma-meaning': { date: '2026-04-08', priority: 0.75 },
+  'bhagavad-gita-anxiety-mental-peace': { date: '2026-04-08', priority: 0.75 },
+  'bhagavad-gita-complete-structure-all-chapters': { date: '2026-04-08', priority: 0.75 },
+  'beyond-bhagavad-gita-quotes-mental-spiritual-health': { date: '2026-04-08', priority: 0.75 },
+  'krishna-three-paths-bhagavad-gita': { date: '2026-05-24', priority: 0.85 },
+  'rise-and-failure-of-gitagpt': { date: '2026-06-19', priority: 0.85 },
+  'bhagavad-gita-2-47-karmanye-vadhikaraste': { date: '2026-06-12', priority: 0.9 },
+  'sthitaprajna-bhagavad-gita': { date: '2026-06-12', priority: 0.88 },
+  'nishkama-karma-bhagavad-gita': { date: '2026-06-12', priority: 0.88 },
+  'bhagavad-gita-on-anxiety': { date: '2026-06-12', priority: 0.88 },
+  'bhagavad-gita-on-death-and-the-soul': { date: '2026-06-12', priority: 0.88 },
+  'dharma-meaning-bhagavad-gita': { date: '2026-06-12', priority: 0.88 },
+  'sattva-rajas-tamas-three-gunas-bhagavad-gita': { date: '2026-06-12', priority: 0.88 },
+  'bhagavad-gita-for-students': { date: '2026-06-12', priority: 0.88 },
+  'bhagavad-gita-vs-stoicism': { date: '2026-06-12', priority: 0.88 },
+  'ahankara-meaning-bhagavad-gita': { date: '2026-07-17', priority: 0.88 },
+  'maya-meaning-bhagavad-gita': { date: '2026-07-17', priority: 0.88 },
+  'best-bhagavad-gita-translation': { date: '2026-07-19', priority: 0.9 },
+  'atman-not-soul-bhagavad-gita': { date: '2026-08-03', priority: 0.88 },
+}
+
+export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
-    { url: BASE, lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
-    { url: `${BASE}/app`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${BASE}/blogs`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${BASE}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE}/tts`, lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
+    {
+      url: BASE,
+      lastModified: CORPUS_UPDATED,
+      changeFrequency: 'weekly',
+      priority: 1.0,
+      alternates: langAlts('/', '/hi/gita'),
+    },
+    { url: `${BASE}/app`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/blogs`, lastModified: CORPUS_UPDATED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${BASE}/about`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE}/methodology`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${BASE}/tts`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.4 },
+    { url: `${BASE}/search`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.5 },
     {
       url: `${BASE}/gita`,
-      lastModified: now,
+      lastModified: CORPUS_UPDATED,
       changeFrequency: 'weekly',
       priority: 0.95,
-      alternates: { languages: { en: `${BASE}/gita`, hi: `${BASE}/hi/gita` } },
+      alternates: langAlts('/gita', '/hi/gita'),
     },
     {
       url: `${BASE}/hi/gita`,
-      lastModified: now,
+      lastModified: CORPUS_UPDATED,
       changeFrequency: 'weekly',
       priority: 0.95,
-      alternates: { languages: { en: `${BASE}/gita`, hi: `${BASE}/hi/gita` } },
+      alternates: langAlts('/gita', '/hi/gita'),
+    },
+    {
+      url: `${BASE}/gita/today`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+      alternates: langAlts('/gita/today', '/hi/gita/today'),
+    },
+    {
+      url: `${BASE}/hi/gita/today`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+      alternates: langAlts('/gita/today', '/hi/gita/today'),
     },
   ]
 
-  // Existing topic guides (kept)
-  const topicGuides = [
-    'bhagavad-gita-for-beginners',
-    'bhagavad-gita-karma-meaning',
-    'bhagavad-gita-anxiety-mental-peace',
-    'bhagavad-gita-complete-structure-all-chapters',
-    'beyond-bhagavad-gita-quotes-mental-spiritual-health',
-  ]
-  const topicGuidePages: MetadataRoute.Sitemap = topicGuides.map((slug) => ({
-    url: `${BASE}/blogs/${slug}`,
-    lastModified: new Date('2026-04-08'),
-    changeFrequency: 'monthly',
-    priority: 0.75,
-  }))
-
-  // Newer topic guides (use their own publication dates and higher priority)
-  const newTopicGuides: MetadataRoute.Sitemap = [
-    {
-      url: `${BASE}/blogs/krishna-three-paths-bhagavad-gita`,
-      lastModified: new Date('2026-05-24'),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${BASE}/blogs/rise-and-failure-of-gitagpt`,
-      lastModified: new Date('2026-06-19'),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    // June 2026 batch — 9 new topic/concept pages
-    ...[
-      'bhagavad-gita-2-47-karmanye-vadhikaraste',
-      'sthitaprajna-bhagavad-gita',
-      'nishkama-karma-bhagavad-gita',
-      'bhagavad-gita-on-anxiety',
-      'bhagavad-gita-on-death-and-the-soul',
-      'dharma-meaning-bhagavad-gita',
-      'sattva-rajas-tamas-three-gunas-bhagavad-gita',
-      'bhagavad-gita-for-students',
-      'bhagavad-gita-vs-stoicism',
-    ].map((slug) => ({
+  // All blogs — enumerated from the filesystem at build so no post is missed.
+  const blogSlugs = enumerateBlogSlugs()
+  const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => {
+    const override = BLOG_LASTMOD[slug]
+    return {
       url: `${BASE}/blogs/${slug}`,
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly' as const,
-      priority: 0.88,
-    })),
-    // July 2026 batch — Sanskrit concept deep-dives
-    ...[
-      'ahankara-meaning-bhagavad-gita',
-      'maya-meaning-bhagavad-gita',
-    ].map((slug) => ({
-      url: `${BASE}/blogs/${slug}`,
-      lastModified: new Date('2026-07-17'),
-      changeFrequency: 'monthly' as const,
-      priority: 0.88,
-    })),
-    {
-      url: `${BASE}/blogs/best-bhagavad-gita-translation`,
-      lastModified: new Date('2026-07-19'),
+      lastModified: override ? new Date(override.date) : CORPUS_UPDATED,
       changeFrequency: 'monthly',
-      priority: 0.90,
-    },
-    // August 2026 batch — Sanskrit concept deep-dives
-    {
-      url: `${BASE}/blogs/atman-not-soul-bhagavad-gita`,
-      lastModified: new Date('2026-08-03'),
-      changeFrequency: 'monthly' as const,
-      priority: 0.88,
-    },
-  ]
+      priority: override?.priority ?? 0.75,
+    }
+  })
 
-  // Chapter-study blog pages (the long-form per-chapter essays).
-  // Chapters 1-5 used to 301 to /gita/chapter/N — the redirect has been
-  // removed so all 18 long-form blog URLs are canonical and listed here.
-  const chapterBlogPages: MetadataRoute.Sitemap = Array.from({ length: 18 }, (_, i) => i + 1).map((n) => ({
-    url: `${BASE}/blogs/bhagwat-geeta-chapter-${n}`,
-    lastModified: new Date('2026-05-24'),
-    changeFrequency: 'monthly',
-    priority: 0.85,
-  }))
-
-  // Chapter pages (EN + HI)
+  // Chapter reading pages (EN + HI paired)
   const chapters = getAllChapters()
-  const chapterPages: MetadataRoute.Sitemap = chapters.flatMap((ch) => [
-    {
-      url: `${BASE}${chapterUrl(ch.number, 'en')}`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-      alternates: {
-        languages: {
-          en: `${BASE}${chapterUrl(ch.number, 'en')}`,
-          hi: `${BASE}${chapterUrl(ch.number, 'hi')}`,
-        },
+  const chapterPages: MetadataRoute.Sitemap = chapters.flatMap((ch) => {
+    const en = chapterUrl(ch.number, 'en')
+    const hi = chapterUrl(ch.number, 'hi')
+    return [
+      {
+        url: `${BASE}${en}`,
+        lastModified: CORPUS_UPDATED,
+        changeFrequency: 'monthly',
+        priority: 0.85,
+        alternates: langAlts(en, hi),
       },
-    },
-    {
-      url: `${BASE}${chapterUrl(ch.number, 'hi')}`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-      alternates: {
-        languages: {
-          en: `${BASE}${chapterUrl(ch.number, 'en')}`,
-          hi: `${BASE}${chapterUrl(ch.number, 'hi')}`,
-        },
+      {
+        url: `${BASE}${hi}`,
+        lastModified: CORPUS_UPDATED,
+        changeFrequency: 'monthly',
+        priority: 0.85,
+        alternates: langAlts(en, hi),
       },
-    },
-  ])
+    ]
+  })
 
-  // Verse pages (EN + HI) — only for verses we have processed
+  // Verse pages (EN + HI paired). ~700 * 2 = ~1400 URLs.
   const refs = getAllVerseRefs()
-  const versePages: MetadataRoute.Sitemap = refs.flatMap((r) => [
-    {
-      url: `${BASE}${verseUrl(r.chapter, r.verse, 'en')}`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-      alternates: {
-        languages: {
-          en: `${BASE}${verseUrl(r.chapter, r.verse, 'en')}`,
-          hi: `${BASE}${verseUrl(r.chapter, r.verse, 'hi')}`,
-        },
+  const versePages: MetadataRoute.Sitemap = refs.flatMap((r) => {
+    const en = verseUrl(r.chapter, r.verse, 'en')
+    const hi = verseUrl(r.chapter, r.verse, 'hi')
+    return [
+      {
+        url: `${BASE}${en}`,
+        lastModified: CORPUS_UPDATED,
+        changeFrequency: 'yearly',
+        priority: 0.7,
+        alternates: langAlts(en, hi),
       },
-    },
-    {
-      url: `${BASE}${verseUrl(r.chapter, r.verse, 'hi')}`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-      alternates: {
-        languages: {
-          en: `${BASE}${verseUrl(r.chapter, r.verse, 'en')}`,
-          hi: `${BASE}${verseUrl(r.chapter, r.verse, 'hi')}`,
-        },
+      {
+        url: `${BASE}${hi}`,
+        lastModified: CORPUS_UPDATED,
+        changeFrequency: 'yearly',
+        priority: 0.7,
+        alternates: langAlts(en, hi),
       },
-    },
-  ])
+    ]
+  })
 
-  // Topic hubs (EN + HI)
+  // Topic hubs (EN + HI paired)
   const topics = getAllTopics()
-  const topicPages: MetadataRoute.Sitemap = topics.flatMap((t) => [
-    {
-      url: `${BASE}${topicUrl(t.slug, 'en')}`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-      alternates: {
-        languages: {
-          en: `${BASE}${topicUrl(t.slug, 'en')}`,
-          hi: `${BASE}${topicUrl(t.slug, 'hi')}`,
-        },
+  const topicPages: MetadataRoute.Sitemap = topics.flatMap((t) => {
+    const en = topicUrl(t.slug, 'en')
+    const hi = topicUrl(t.slug, 'hi')
+    return [
+      {
+        url: `${BASE}${en}`,
+        lastModified: CORPUS_UPDATED,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: langAlts(en, hi),
       },
-    },
-    {
-      url: `${BASE}${topicUrl(t.slug, 'hi')}`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-      alternates: {
-        languages: {
-          en: `${BASE}${topicUrl(t.slug, 'en')}`,
-          hi: `${BASE}${topicUrl(t.slug, 'hi')}`,
-        },
+      {
+        url: `${BASE}${hi}`,
+        lastModified: CORPUS_UPDATED,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: langAlts(en, hi),
       },
-    },
-  ])
+    ]
+  })
 
-  return [
-    ...staticPages,
-    ...topicGuidePages,
-    ...newTopicGuides,
-    ...chapterBlogPages,
-    ...chapterPages,
-    ...versePages,
-    ...topicPages,
-  ]
+  return [...staticPages, ...blogPages, ...chapterPages, ...versePages, ...topicPages]
 }

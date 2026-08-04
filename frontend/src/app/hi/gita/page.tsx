@@ -17,8 +17,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://wisdomquotes.in/hi/gita',
     languages: {
+      'en': 'https://wisdomquotes.in/gita',
       'en-IN': 'https://wisdomquotes.in/gita',
+      'hi': 'https://wisdomquotes.in/hi/gita',
       'hi-IN': 'https://wisdomquotes.in/hi/gita',
+      'x-default': 'https://wisdomquotes.in/gita',
     },
   },
   openGraph: {
@@ -27,6 +30,14 @@ export const metadata: Metadata = {
     url: 'https://wisdomquotes.in/hi/gita',
     type: 'website',
     siteName: 'Wisdom',
+    locale: 'hi_IN',
+    alternateLocale: ['en_IN'],
+    images: ['/og-image.webp'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'भगवद् गीता — 700 श्लोक हिन्दी अर्थ सहित',
+    description: 'सम्पूर्ण भगवद् गीता हिन्दी में — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ।',
     images: ['/og-image.webp'],
   },
 }
@@ -37,9 +48,37 @@ export default function GitaIndexPageHi() {
   const totalProcessed = chapters.reduce((s, c) => s + c.processedVerses, 0)
   const hero = gitaHeroImage()
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Book',
+    name: 'भगवद् गीता',
+    alternateName: ['Bhagavad Gita', 'श्रीमद्भगवद्गीता', 'Geeta', 'Gita'],
+    inLanguage: ['sa', 'hi', 'en'],
+    bookFormat: 'EBook',
+    numberOfPages: 700,
+    isAccessibleForFree: true,
+    url: 'https://wisdomquotes.in/hi/gita',
+    author: {
+      '@type': 'Person',
+      name: 'व्यास',
+      alternateName: 'Vyasa',
+    },
+    character: [
+      { '@type': 'Person', name: 'श्रीकृष्ण', alternateName: 'Krishna' },
+      { '@type': 'Person', name: 'अर्जुन', alternateName: 'Arjuna' },
+    ],
+    hasPart: chapters.map((ch) => ({
+      '@type': 'Chapter',
+      name: `${ch.hiName} — भगवद् गीता अध्याय ${ch.number}`,
+      url: `https://wisdomquotes.in${chapterUrl(ch.number, 'hi')}`,
+      position: ch.number,
+    })),
+  }
+
   return (
     <main className="gita-main-wide">
       <BlogTracker pageName="gita_index_hi" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* HERO */}
       <section className="gita-hero">
         <div>

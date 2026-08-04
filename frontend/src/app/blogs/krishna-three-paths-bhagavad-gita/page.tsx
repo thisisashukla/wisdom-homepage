@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
+import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
 
 export const metadata: Metadata = {
   title: "Krishna's Three Paths, Karma, Jnana, Bhakti | Bhagavad Gita's Three Yogas Explained",
@@ -1211,23 +1213,7 @@ export default function KrishnaThreePathsPage() {
           You begin with the path that fits you. As you deepen, you can move between paths, because, as Krishna himself says in 7.17, the seeker who has gathered both wisdom and devotion is the one closest to him. The architecture of the app is not invented. It is the architecture of the Gita itself, made walkable.
         </p>
 
-        <div className="app-cta">
-          <div className="app-cta-eyebrow">Free iOS App · The Three Paths</div>
-          <div className="app-cta-headline">Find your path. Walk it, two minutes at a time.</div>
-          <p className="app-cta-desc">
-            Wisdom places you on the path that fits your nature (Action, Knowledge, or Devotion) and gives you one practice each morning from the Bhagavad Gita and the wider Hindu tradition. Sanskrit, meaning, reflection. Switch paths as you deepen. Free on iPhone.
-          </p>
-          <div className="app-cta-features">
-            <span>✦ Path of Action · Karma Yoga</span>
-            <span>✦ Path of Wisdom · Jnana Yoga</span>
-            <span>✦ Path of Devotion · Bhakti Yoga</span>
-          </div>
-          <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" className="app-cta-btn" data-mp-location="cta">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" /></svg>
-            Download on the App Store
-          </a>
-          <div className="app-cta-sub">Free · iPhone · No account needed</div>
-        </div>
+        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Krishna Three Paths"} />
 
         <h2>A Closing Thought</h2>
 
@@ -1284,6 +1270,8 @@ export default function KrishnaThreePathsPage() {
       </article>
 
       {/* FAQ */}
+
+      <FeedbackWidget pageType="blog" />
       <section className="faq-section" itemScope itemType="https://schema.org/FAQPage" aria-labelledby="faq-heading">
         <h2 id="faq-heading">Frequently Asked Questions</h2>
 

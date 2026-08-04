@@ -1,0 +1,859 @@
+/* ── Scripture AI Waitlist — Modal + CTA styles ─────────────────────────── */
+
+/* ═══ NAV BUTTON ═══════════════════════════════════════════════════════════ */
+.btn-nav-scripture {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px 9px 14px;
+  background: linear-gradient(135deg, #f5c96a 0%, #d9a03a 100%);
+  color: #1a0606;
+  border: none;
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.005em;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 2px 12px rgba(245, 201, 106, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  transition: transform 0.12s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+.btn-nav-scripture:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+  box-shadow: 0 4px 18px rgba(245, 201, 106, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.32);
+}
+.btn-nav-scripture .sai-pulse-dot {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #1a0606;
+  flex-shrink: 0;
+}
+.btn-nav-scripture .sai-pulse-dot::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: rgba(26, 6, 6, 0.5);
+  animation: sai-pulse 1.8s ease-out infinite;
+}
+@keyframes sai-pulse {
+  0%   { transform: scale(1);   opacity: 0.6; }
+  100% { transform: scale(2.6); opacity: 0;   }
+}
+
+/* ═══ COMING SOON pill (used inside modal / teaser) ════════════════════════ */
+.sai-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-light, #f5c96a);
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: rgba(245, 201, 106, 0.1);
+  border: 1px solid rgba(245, 201, 106, 0.35);
+}
+.sai-soon-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-light, #f5c96a);
+  box-shadow: 0 0 8px rgba(245, 201, 106, 0.7);
+}
+
+/* ═══ HERO INLINE CTA ══════════════════════════════════════════════════════ */
+.sai-hero-cta {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(245, 201, 106, 0.14);
+}
+.sai-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, rgba(245, 201, 106, 0.14) 0%, rgba(245, 201, 106, 0.06) 100%);
+  border: 1px solid rgba(245, 201, 106, 0.35);
+  border-radius: 999px;
+  color: var(--text, #fff);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.12s;
+  backdrop-filter: blur(4px);
+}
+.sai-hero-btn:hover {
+  background: linear-gradient(135deg, rgba(245, 201, 106, 0.22) 0%, rgba(245, 201, 106, 0.1) 100%);
+  border-color: rgba(245, 201, 106, 0.6);
+  transform: translateY(-1px);
+}
+.sai-hero-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f5c96a, #d9a03a);
+  color: #1a0606;
+  font-size: 13px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.sai-hero-btn-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.15;
+  text-align: left;
+}
+.sai-hero-btn-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-light, #f5c96a);
+  opacity: 0.85;
+  margin-bottom: 2px;
+}
+.sai-hero-btn-arrow {
+  color: var(--gold-light, #f5c96a);
+  font-size: 15px;
+  margin-left: 4px;
+  transition: transform 0.15s;
+}
+.sai-hero-btn:hover .sai-hero-btn-arrow {
+  transform: translateX(2px);
+}
+
+/* ═══ MODAL ════════════════════════════════════════════════════════════════ */
+.sai-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 3, 3, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999;
+  /* Plain block layout. Overlay itself scrolls when the modal is taller
+     than the viewport. Modal is centered horizontally by margin:auto and
+     sits near the top with padding for breathing room. */
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 40px 20px;
+  animation: sai-fade-in 0.2s ease;
+}
+@keyframes sai-fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+.sai-modal {
+  position: relative;
+  background: linear-gradient(180deg, #1a0d0d 0%, #120707 100%);
+  border: 1px solid rgba(245, 201, 106, 0.22);
+  border-radius: 24px;
+  padding: 40px 36px 32px;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.7), 0 0 40px rgba(245, 201, 106, 0.05) inset;
+  animation: sai-slide-up 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes sai-slide-up {
+  from { transform: translateY(16px) scale(0.98); opacity: 0; }
+  to   { transform: translateY(0)    scale(1);    opacity: 1; }
+}
+@media (max-width: 480px) {
+  .sai-modal { padding: 30px 22px 24px; border-radius: 20px; }
+}
+
+.sai-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: color 0.15s, background 0.15s, border-color 0.15s;
+}
+.sai-modal-close:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ── Modal header ── */
+.sai-modal-header {
+  text-align: center;
+  margin-bottom: 26px;
+}
+.sai-modal-header .sai-soon-badge { margin-bottom: 14px; }
+.sai-modal-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--gold-light, #f5c96a);
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+.sai-modal-sub {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.55;
+  margin: 0;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Question label ── */
+.sai-q {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+/* ── Chip options (single-select, big, low friction) ── */
+.sai-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+.sai-chip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s, transform 0.08s;
+  color: rgba(255, 255, 255, 0.85);
+}
+.sai-chip:hover {
+  border-color: rgba(245, 201, 106, 0.4);
+  background: rgba(245, 201, 106, 0.04);
+}
+.sai-chip--selected {
+  border-color: rgba(245, 201, 106, 0.75);
+  background: rgba(245, 201, 106, 0.08);
+  color: #fff;
+}
+.sai-chip-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background: rgba(245, 201, 106, 0.1);
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+.sai-chip--selected .sai-chip-icon {
+  background: rgba(245, 201, 106, 0.22);
+}
+.sai-chip-label {
+  font-size: 14.5px;
+  font-weight: 500;
+  flex: 1;
+}
+.sai-chip-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  font-size: 11px;
+  transition: all 0.15s;
+}
+.sai-chip--selected .sai-chip-check {
+  border-color: var(--gold-light, #f5c96a);
+  background: var(--gold-light, #f5c96a);
+  color: #1a0606;
+}
+
+/* ── Email + submit inline ── */
+.sai-email-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.sai-email-input {
+  flex: 1;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14.5px;
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+.sai-email-input::placeholder { color: rgba(255, 255, 255, 0.3); }
+.sai-email-input:focus {
+  border-color: rgba(245, 201, 106, 0.6);
+  background: rgba(255, 255, 255, 0.06);
+}
+.sai-submit {
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #f5c96a 0%, #d9a03a 100%);
+  color: #1a0606;
+  font-size: 14.5px;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.1s, filter 0.15s, opacity 0.15s;
+  box-shadow: 0 2px 10px rgba(245, 201, 106, 0.25);
+}
+.sai-submit:hover:not(:disabled) {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+.sai-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+@media (max-width: 420px) {
+  .sai-email-row { flex-direction: column; }
+  .sai-submit { width: 100%; }
+}
+.sai-footnote {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0;
+  text-align: center;
+}
+.sai-error {
+  font-size: 12.5px;
+  color: #f87171;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+/* ── Done state ── */
+.sai-done {
+  text-align: center;
+  padding: 20px 0 8px;
+}
+.sai-done-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f5c96a 0%, #d9a03a 100%);
+  color: #1a0606;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: 0 auto 18px;
+  box-shadow: 0 0 40px rgba(245, 201, 106, 0.3);
+}
+.sai-done-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--gold-light, #f5c96a);
+  margin: 0 0 10px;
+}
+.sai-done-sub {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+  margin: 0 0 24px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sai-done-close {
+  padding: 12px 32px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.sai-done-close:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ═══ INLINE TEASER (used inside page sections) ═══════════════════════════ */
+.sai-teaser {
+  border: 1px solid rgba(245, 201, 106, 0.28);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(245, 201, 106, 0.06) 0%, rgba(200, 136, 30, 0.03) 100%);
+  padding: 40px 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+@media (max-width: 640px) {
+  .sai-teaser { padding: 28px 22px 24px; gap: 22px; }
+}
+.sai-teaser-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: start;
+}
+@media (max-width: 700px) {
+  .sai-teaser-inner { grid-template-columns: 1fr; gap: 20px; }
+}
+.sai-teaser-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+.sai-teaser-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 700;
+  color: var(--gold-light, #f5c96a);
+  margin: 0;
+  line-height: 1.2;
+}
+.sai-teaser-sub {
+  font-size: 15px;
+  color: var(--text-dim, rgba(255, 255, 255, 0.6));
+  line-height: 1.65;
+  margin: 0;
+}
+.sai-teaser-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.sai-teaser-example {
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 3px solid rgba(245, 201, 106, 0.4);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-dim, rgba(255, 255, 255, 0.6));
+  font-style: italic;
+  line-height: 1.4;
+}
+.sai-teaser-btn {
+  align-self: flex-start;
+  padding: 13px 26px;
+  background: linear-gradient(135deg, #f5c96a 0%, #d9a03a 100%);
+  color: #1a0606;
+  font-size: 14.5px;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.1s, filter 0.15s;
+  box-shadow: 0 2px 12px rgba(245, 201, 106, 0.25);
+}
+.sai-teaser-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+@media (max-width: 640px) {
+  .sai-teaser-btn { width: 100%; }
+}
+
+/* Final CTA ghost variant */
+.sai-ghost-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  background: transparent;
+  border: 1px solid rgba(245, 201, 106, 0.5);
+  border-radius: 999px;
+  color: var(--gold-light, #f5c96a);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.12s;
+}
+.sai-ghost-btn:hover {
+  background: rgba(245, 201, 106, 0.08);
+  border-color: rgba(245, 201, 106, 0.75);
+  transform: translateY(-1px);
+}
+
+/* ═══ GITA PAGE CTAS ═══════════════════════════════════════════════════════ */
+
+/* Inline one-liner (top of gita/chapter/verse pages) */
+.sai-gita-inline {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  margin: 24px 0;
+  background: rgba(245, 201, 106, 0.05);
+  border: 1px solid rgba(245, 201, 106, 0.25);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+.sai-gita-inline-copy {
+  flex: 1;
+  min-width: 220px;
+}
+.sai-gita-inline-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold-light, #f5c96a);
+  margin-bottom: 3px;
+}
+.sai-gita-inline-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-light, #f5c96a);
+  box-shadow: 0 0 8px rgba(245, 201, 106, 0.7);
+  flex-shrink: 0;
+}
+.sai-gita-inline-sub {
+  font-size: 13px;
+  color: var(--text-dim, rgba(245, 232, 204, 0.65));
+  line-height: 1.5;
+}
+.sai-gita-inline-btn {
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #f5c96a 0%, #d9a03a 100%);
+  color: #1a0606;
+  font-size: 13.5px;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.1s, filter 0.15s;
+  box-shadow: 0 2px 10px rgba(245, 201, 106, 0.25);
+}
+.sai-gita-inline-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+
+/* Full block (end of chapter / today's verse / topic) */
+.sai-gita-block {
+  position: relative;
+  margin: 48px 0;
+  padding: 40px 40px 36px;
+  background: linear-gradient(180deg, rgba(245, 201, 106, 0.06) 0%, rgba(200, 136, 30, 0.02) 100%);
+  border: 1px solid rgba(245, 201, 106, 0.28);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.sai-gita-block-glow {
+  position: absolute;
+  top: -60%;
+  right: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(ellipse at center, rgba(245, 201, 106, 0.12), transparent 60%);
+  filter: blur(30px);
+  pointer-events: none;
+}
+.sai-gita-block-inner {
+  position: relative;
+  z-index: 1;
+}
+.sai-gita-block-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-light, #f5c96a);
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(245, 201, 106, 0.1);
+  border: 1px solid rgba(245, 201, 106, 0.3);
+  margin-bottom: 16px;
+}
+.sai-gita-block-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-light, #f5c96a);
+  box-shadow: 0 0 8px rgba(245, 201, 106, 0.7);
+}
+.sai-gita-block-head {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 700;
+  color: var(--gold-light, #f5c96a);
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+.sai-gita-block-sub {
+  font-size: 15px;
+  color: var(--text-dim, rgba(245, 232, 204, 0.65));
+  line-height: 1.65;
+  margin: 0 0 22px;
+  max-width: 640px;
+}
+.sai-gita-block-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.sai-gita-block-example {
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 3px solid rgba(245, 201, 106, 0.5);
+  border-radius: 8px;
+  font-size: 13.5px;
+  color: var(--text-dim, rgba(245, 232, 204, 0.65));
+  font-style: italic;
+  line-height: 1.4;
+}
+.sai-gita-block-btn {
+  align-self: flex-start;
+}
+
+@media (max-width: 640px) {
+  .sai-gita-block { padding: 28px 22px 24px; margin: 32px 0; }
+  .sai-gita-inline { flex-direction: column; align-items: flex-start; }
+  .sai-gita-inline-btn { width: 100%; text-align: center; }
+}
+
+/* ═══ GITA VERSE/CHAPTER INLINE SIGNUP ═════════════════════════════════════ */
+/* Low-cognitive-load: eyebrow → one-line heading → email + button → done.
+   No example cards, no modal — the whole signup is inline right here. */
+.sai-gita-inline-card {
+  position: relative;
+  margin: 48px 0;
+  padding: 32px 32px 28px;
+  background: linear-gradient(180deg, rgba(245, 201, 106, 0.05) 0%, rgba(200, 136, 30, 0.02) 100%);
+  border: 1px solid rgba(245, 201, 106, 0.26);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.sai-gita-inline-glow {
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 55%;
+  height: 200%;
+  background: radial-gradient(ellipse at center, rgba(245, 201, 106, 0.11), transparent 60%);
+  filter: blur(30px);
+  pointer-events: none;
+}
+.sai-gita-inline-body {
+  position: relative;
+  z-index: 1;
+}
+.sai-gita-inline-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-light, #f5c96a);
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(245, 201, 106, 0.1);
+  border: 1px solid rgba(245, 201, 106, 0.3);
+  margin-bottom: 16px;
+}
+.sai-gita-inline-eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-light, #f5c96a);
+  box-shadow: 0 0 8px rgba(245, 201, 106, 0.7);
+}
+.sai-gita-inline-head {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(22px, 3vw, 26px);
+  font-weight: 700;
+  color: var(--gold-light, #f5c96a);
+  line-height: 1.25;
+  margin: 0 0 8px;
+}
+.sai-gita-inline-sub-line {
+  font-size: 14.5px;
+  color: var(--text-dim, rgba(245, 232, 204, 0.62));
+  line-height: 1.55;
+  margin: 0 0 18px;
+  max-width: 520px;
+}
+.sai-gita-inline-form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.sai-gita-inline-input {
+  flex: 1 1 240px;
+  min-width: 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(245, 201, 106, 0.22);
+  background: rgba(0, 0, 0, 0.28);
+  color: var(--text, #f5e8cc);
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+.sai-gita-inline-input::placeholder {
+  color: rgba(245, 232, 204, 0.3);
+}
+.sai-gita-inline-input:focus {
+  border-color: rgba(245, 201, 106, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+}
+.sai-gita-inline-submit {
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #f5c96a 0%, #d9a03a 100%);
+  color: #1a0606;
+  font-size: 14.5px;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.1s, filter 0.15s, opacity 0.15s;
+  box-shadow: 0 2px 12px rgba(245, 201, 106, 0.25);
+}
+.sai-gita-inline-submit:hover:not(:disabled) {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+.sai-gita-inline-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+.sai-gita-inline-error {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #f4a3a3;
+}
+.sai-gita-inline-footnote {
+  margin: 12px 0 0;
+  font-size: 11.5px;
+  color: rgba(245, 232, 204, 0.35);
+  letter-spacing: 0.02em;
+}
+.sai-gita-inline-done {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(245, 201, 106, 0.1);
+  border: 1px solid rgba(245, 201, 106, 0.32);
+}
+.sai-gita-inline-done-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5c96a 0%, #d9a03a 100%);
+  color: #1a0606;
+  font-size: 15px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.sai-gita-inline-done-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--gold-light, #f5c96a);
+  margin-bottom: 2px;
+}
+.sai-gita-inline-done-sub {
+  font-size: 13.5px;
+  color: var(--text-dim, rgba(245, 232, 204, 0.62));
+  line-height: 1.5;
+}
+@media (max-width: 640px) {
+  .sai-gita-inline-card { padding: 24px 20px 22px; margin: 32px 0; border-radius: 16px; }
+  .sai-gita-inline-submit { width: 100%; }
+}
+
+/* ── Optional chip row inside the inline gita signup ── */
+.sai-gita-inline-chips-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(245, 232, 204, 0.42);
+  margin: 0 0 8px;
+}
+.sai-gita-inline-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.sai-gita-inline-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  color: rgba(245, 232, 204, 0.75);
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.08s;
+  white-space: nowrap;
+}
+.sai-gita-inline-chip:hover {
+  border-color: rgba(245, 201, 106, 0.4);
+  background: rgba(245, 201, 106, 0.04);
+  color: var(--text, #f5e8cc);
+}
+.sai-gita-inline-chip--on {
+  border-color: rgba(245, 201, 106, 0.7);
+  background: rgba(245, 201, 106, 0.14);
+  color: var(--gold-light, #f5c96a);
+}

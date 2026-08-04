@@ -10,8 +10,11 @@ import {
   chapterUrl,
   verseUrl,
 } from '@/lib/gita'
-import GitaAppCTA from '@/components/gita/GitaAppCTA'
+// GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
+// for the Scripture AI waitlist while that product launches.
+import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
 import BlogTracker from '@/components/BlogTracker'
+import FeedbackWidget from '@/components/FeedbackWidget'
 
 type Params = { chapter: string }
 
@@ -31,11 +34,34 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     alternates: {
       canonical: `https://wisdomquotes.in${chapterUrl(ch.number, 'hi')}`,
       languages: {
+        'en': `https://wisdomquotes.in${chapterUrl(ch.number, 'en')}`,
         'en-IN': `https://wisdomquotes.in${chapterUrl(ch.number, 'en')}`,
+        'hi': `https://wisdomquotes.in${chapterUrl(ch.number, 'hi')}`,
         'hi-IN': `https://wisdomquotes.in${chapterUrl(ch.number, 'hi')}`,
+        'x-default': `https://wisdomquotes.in${chapterUrl(ch.number, 'en')}`,
       },
     },
-    openGraph: { title, description, type: 'article', siteName: 'Wisdom' },
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      siteName: 'Wisdom',
+      url: `https://wisdomquotes.in${chapterUrl(ch.number, 'hi')}`,
+      locale: 'hi_IN',
+      alternateLocale: ['en_IN'],
+      images: [
+        {
+          url: `https://wisdomquotes.in${chapterImage(ch.number).src}`,
+          alt: chapterImage(ch.number).alt,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [`https://wisdomquotes.in${chapterImage(ch.number).src}`],
+    },
   }
 }
 
@@ -50,9 +76,40 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
 
   const lede = chapterLede(ch.number, 'hi')
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Chapter',
+    name: `${ch.hiName} — भगवद् गीता अध्याय ${ch.number}`,
+    alternateName: [`Bhagavad Gita Chapter ${ch.number}`, `भगवद् गीता अध्याय ${ch.number}`],
+    isPartOf: {
+      '@type': 'Book',
+      name: 'भगवद् गीता',
+      alternateName: 'Bhagavad Gita',
+      url: 'https://wisdomquotes.in/hi/gita',
+    },
+    position: ch.number,
+    inLanguage: ['sa', 'hi', 'en'],
+  }
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'भगवद् गीता', item: 'https://wisdomquotes.in/hi/gita' },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: `अध्याय ${ch.number}: ${ch.hiName}`,
+        item: `https://wisdomquotes.in${chapterUrl(ch.number, 'hi')}`,
+      },
+    ],
+  }
+
   return (
     <main className="gita-main">
       <BlogTracker pageName={`gita_chapter_hi_${ch.number}`} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <nav className="gita-crumb" aria-label="Breadcrumb">
         <a href="/hi/gita" data-mp-location={`chapter_hi_${ch.number}_crumb_gita`}>भगवद् गीता</a>
         <span className="sep">›</span>
@@ -104,6 +161,8 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
         </div>
       )}
 
+      <FeedbackWidget pageType="chapter" pageId={`chapter_hi_${ch.number}`} pageName={`gita_chapter_hi_${ch.number}`} />
+
       <h2 className="gita-h2" style={{ marginTop: '40px' }}>सभी श्लोक</h2>
       <ul className="gita-verse-list">
         {verses.map((v) => (
@@ -129,7 +188,8 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
         ))}
       </ul>
 
-      <GitaAppCTA variant="chapter" locale="hi" chapter={ch} />
+      <ScriptureAIGitaCTA variant="chapter" locale="hi" chapter={ch} pageName={`Hindi Gita Chapter ${ch.number}`} />
+
 
       <div className="gita-pn">
         <a

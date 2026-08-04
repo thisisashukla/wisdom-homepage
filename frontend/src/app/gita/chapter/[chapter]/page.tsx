@@ -10,8 +10,11 @@ import {
   chapterUrl,
   verseUrl,
 } from '@/lib/gita'
-import GitaAppCTA from '@/components/gita/GitaAppCTA'
+// GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
+// for the Scripture AI waitlist while that product launches.
+import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
 import BlogTracker from '@/components/BlogTracker'
+import FeedbackWidget from '@/components/FeedbackWidget'
 
 type Params = { chapter: string }
 
@@ -31,8 +34,11 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     alternates: {
       canonical: `https://wisdomquotes.in${chapterUrl(ch.number)}`,
       languages: {
+        'en': `https://wisdomquotes.in${chapterUrl(ch.number, 'en')}`,
         'en-IN': `https://wisdomquotes.in${chapterUrl(ch.number, 'en')}`,
+        'hi': `https://wisdomquotes.in${chapterUrl(ch.number, 'hi')}`,
         'hi-IN': `https://wisdomquotes.in${chapterUrl(ch.number, 'hi')}`,
+        'x-default': `https://wisdomquotes.in${chapterUrl(ch.number, 'en')}`,
       },
     },
     openGraph: {
@@ -41,6 +47,20 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       url: `https://wisdomquotes.in${chapterUrl(ch.number)}`,
       type: 'article',
       siteName: 'Wisdom',
+      locale: 'en_IN',
+      alternateLocale: ['hi_IN'],
+      images: [
+        {
+          url: `https://wisdomquotes.in${chapterImage(ch.number).src}`,
+          alt: chapterImage(ch.number).alt,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [`https://wisdomquotes.in${chapterImage(ch.number).src}`],
     },
   }
 }
@@ -144,6 +164,8 @@ export default async function ChapterPage({ params }: { params: Params }) {
         </div>
       )}
 
+      <FeedbackWidget pageType="chapter" pageId={`chapter_${ch.number}`} pageName={`gita_chapter_${ch.number}`} />
+
       <h2 className="gita-h2" style={{ marginTop: '40px' }}>All verses</h2>
       <ul className="gita-verse-list">
         {verses.map((v) => (
@@ -168,7 +190,8 @@ export default async function ChapterPage({ params }: { params: Params }) {
         ))}
       </ul>
 
-      <GitaAppCTA variant="chapter" locale="en" chapter={ch} />
+      <ScriptureAIGitaCTA variant="chapter" locale="en" chapter={ch} pageName={`Gita Chapter ${ch.number}`} />
+
 
       <div className="gita-pn">
         <a

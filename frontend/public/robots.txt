@@ -1,4 +1,40 @@
+# Wisdom (wisdomquotes.in) — robots policy
+# Public site is fully crawlable. Only internal API routes are excluded.
+
 User-agent: *
+Allow: /
+Disallow: /api/
+
+# Explicit allowance for well-behaved AI research crawlers so our
+# Bhagavad Gita corpus reaches the LLM knowledge layer.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://wisdomquotes.in/sitemap.xml

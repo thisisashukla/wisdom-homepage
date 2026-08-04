@@ -18,22 +18,35 @@ import { getVerseAudio } from '@/lib/gita'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'भगवद् गीता — आज का श्लोक | Wisdom',
-  description: 'हर दिन भगवद् गीता का एक श्लोक — संस्कृत, हिन्दी और अंग्रेज़ी में। आपकी रोज़ की लय।',
+  title: 'भगवद् गीता — आज का श्लोक (Aaj Ka Shlok) | Wisdom',
+  description: 'हर दिन भगवद् गीता का एक श्लोक — संस्कृत, हिन्दी और अंग्रेज़ी में। आज इस श्लोक की कहानी और आपके जीवन से जुड़ाव। आपकी रोज़ की आध्यात्मिक लय।',
   alternates: {
     canonical: 'https://wisdomquotes.in/hi/gita/today',
     languages: {
+      'en': 'https://wisdomquotes.in/gita/today',
       'en-IN': 'https://wisdomquotes.in/gita/today',
+      'hi': 'https://wisdomquotes.in/hi/gita/today',
       'hi-IN': 'https://wisdomquotes.in/hi/gita/today',
+      'x-default': 'https://wisdomquotes.in/gita/today',
     },
   },
   openGraph: {
     title: 'भगवद् गीता — आज का श्लोक',
-    description: 'हर दिन भगवद् गीता का एक श्लोक।',
+    description: 'हर दिन भगवद् गीता का एक श्लोक — संदर्भ और अर्थ सहित।',
     url: 'https://wisdomquotes.in/hi/gita/today',
     siteName: 'Wisdom',
     type: 'article',
+    locale: 'hi_IN',
+    alternateLocale: ['en_IN'],
+    images: ['https://wisdomquotes.in/og-image.webp'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'भगवद् गीता — आज का श्लोक',
+    description: 'हर दिन भगवद् गीता का एक श्लोक।',
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  keywords: 'aaj ka shlok, आज का श्लोक, hindu verse of the day, गीता का आज का श्लोक, daily gita shlok hindi',
 }
 
 // ── Types ─────────────────────────────────────────────────────────────────────
@@ -117,9 +130,45 @@ export default async function TodayPageHi() {
     timeZone: 'UTC',
   })
 
+  const isoDate = new Date().toISOString()
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Quotation',
+    text: verse.sanskrit,
+    inLanguage: 'sa',
+    spokenByCharacter: verse.speaker
+      ? { '@type': 'Person', name: verse.speaker }
+      : undefined,
+    creator: { '@type': 'Person', name: 'Vyasa', alternateName: 'व्यास' },
+    isPartOf: {
+      '@type': 'Chapter',
+      name: ch?.hiName ?? `भगवद् गीता अध्याय ${chapter}`,
+      position: chapter,
+      isPartOf: { '@type': 'Book', name: 'भगवद् गीता', url: 'https://wisdomquotes.in/hi/gita' },
+    },
+    datePublished: isoDate,
+  }
+  const webPageLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: `भगवद् गीता ${verse.chapter}.${verse.verse} — आज का श्लोक`,
+    url: 'https://wisdomquotes.in/hi/gita/today',
+    inLanguage: 'hi',
+    lastReviewed: isoDate,
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'भगवद् गीता', item: 'https://wisdomquotes.in/hi/gita' },
+        { '@type': 'ListItem', position: 2, name: 'आज का श्लोक', item: 'https://wisdomquotes.in/hi/gita/today' },
+      ],
+    },
+  }
+
   return (
     <main className="gita-main">
       <BlogTracker pageName="gita_today_hi" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageLd) }} />
 
       <nav className="gita-crumb" aria-label="Breadcrumb">
         <a href="/hi/gita" data-mp-location="today_crumb_gita">भगवद् गीता</a>

@@ -17,8 +17,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://wisdomquotes.in/gita',
     languages: {
+      'en': 'https://wisdomquotes.in/gita',
       'en-IN': 'https://wisdomquotes.in/gita',
+      'hi': 'https://wisdomquotes.in/hi/gita',
       'hi-IN': 'https://wisdomquotes.in/hi/gita',
+      'x-default': 'https://wisdomquotes.in/gita',
     },
   },
   openGraph: {
@@ -27,6 +30,14 @@ export const metadata: Metadata = {
     url: 'https://wisdomquotes.in/gita',
     type: 'website',
     siteName: 'Wisdom',
+    locale: 'en_IN',
+    alternateLocale: ['hi_IN'],
+    images: ['/og-image.webp'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bhagavad Gita — All 18 Chapters with Sanskrit, Hindi & English',
+    description: 'Read the Bhagavad Gita online — chapter by chapter, verse by verse.',
     images: ['/og-image.webp'],
   },
 }

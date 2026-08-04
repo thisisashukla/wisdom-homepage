@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getAllTopics, getTopic, getTopicVerses, topicIntro, topicUrl, verseUrl } from '@/lib/gita'
-import GitaAppCTA from '@/components/gita/GitaAppCTA'
+// GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
+// for the Scripture AI waitlist while that product launches.
+import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
 import BlogTracker from '@/components/BlogTracker'
 
 type Params = { slug: string }
@@ -47,8 +49,11 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     alternates: {
       canonical: `https://wisdomquotes.in${topicUrl(topic.slug)}`,
       languages: {
+        'en': `https://wisdomquotes.in${topicUrl(topic.slug, 'en')}`,
         'en-IN': `https://wisdomquotes.in${topicUrl(topic.slug, 'en')}`,
+        'hi': `https://wisdomquotes.in${topicUrl(topic.slug, 'hi')}`,
         'hi-IN': `https://wisdomquotes.in${topicUrl(topic.slug, 'hi')}`,
+        'x-default': `https://wisdomquotes.in${topicUrl(topic.slug, 'en')}`,
       },
     },
     openGraph: {
@@ -57,7 +62,15 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       url: `https://wisdomquotes.in${topicUrl(topic.slug)}`,
       type: 'article',
       siteName: 'Wisdom',
+      images: ['https://wisdomquotes.in/og-image.webp'],
     },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['https://wisdomquotes.in/og-image.webp'],
+    },
+    keywords: aliases ? aliases.join(', ') : undefined,
   }
 }
 
@@ -78,16 +91,17 @@ export default async function TopicPage({ params }: { params: Params }) {
       name: `Bhagavad Gita ${v.chapter}.${v.verse}`,
     })),
   }
+  // NOTE: dropped the intermediate "Topics" crumb because there's no
+  // /gita/topic index page — the previous middle link 404'd.
   const breadcrumbLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Bhagavad Gita', item: 'https://wisdomquotes.in/gita' },
-      { '@type': 'ListItem', position: 2, name: 'Topics', item: 'https://wisdomquotes.in/gita/topic' },
       {
         '@type': 'ListItem',
-        position: 3,
-        name: topic.label,
+        position: 2,
+        name: `${topic.label} in the Bhagavad Gita`,
         item: `https://wisdomquotes.in${topicUrl(topic.slug)}`,
       },
     ],
@@ -157,7 +171,7 @@ export default async function TopicPage({ params }: { params: Params }) {
         ))}
       </ul>
 
-      <GitaAppCTA variant="chapter" locale="en" />
+      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName="Gita Topic" />
     </main>
   )
 }

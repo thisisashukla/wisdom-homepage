@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
@@ -399,6 +400,8 @@ export default function KarmaQuotesPage() {
         </p>
       </div>
 
+
+      <FeedbackWidget pageType="blog" />
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
 

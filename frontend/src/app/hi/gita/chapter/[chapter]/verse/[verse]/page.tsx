@@ -19,6 +19,7 @@ import {
 import type { IndexEntry } from '@/lib/gita'
 import { getBlogLinksForVerse } from '@/lib/blogVerseLinks'
 import BlogTracker from '@/components/BlogTracker'
+import FeedbackWidget from '@/components/FeedbackWidget'
 import ShareButtons from '@/components/gita/ShareButtons'
 import VerseBookmark from '@/components/gita/VerseBookmark'
 import SanskritText from '@/components/gita/SanskritText'
@@ -45,47 +46,78 @@ const trimToLength = (s: string, maxChars: number): string => {
   return (lastSpace > 40 ? cut.slice(0, lastSpace) : cut).replace(/[,.;:—-]$/, '') + '…'
 }
 
+const firstDevaPada = (sanskrit: string, maxChars = 50): string => {
+  if (!sanskrit) return ''
+  const first = sanskrit
+    .split(/[।॥|\n\r]/)[0]
+    ?.replace(/\s+/g, ' ')
+    .trim()
+  if (!first) return ''
+  if (first.length <= maxChars) return first
+  const cut = first.slice(0, maxChars)
+  const lastSpace = cut.lastIndexOf(' ')
+  return (lastSpace > 20 ? cut.slice(0, lastSpace) : cut) + '…'
+}
+
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const c = Number(params.chapter)
   const v = Number(params.verse)
   const verse = await getVerse(c, v)
   if (!verse) return { title: 'श्लोक नहीं मिला' }
   const ch = getChapter(c)
+  const devaOpen = firstDevaPada(verse.sanskrit)
   const titleHook = verse.essence || trimToLength(verse.hindiTranslation || verse.englishTranslation, 60)
-  const title = `भगवद् गीता ${c}.${v} अर्थ – ${titleHook}${ch ? ` (${ch.hiName})` : ''}`
+  const title = devaOpen
+    ? `भगवद् गीता ${c}.${v} (BG ${c}.${v}) — ${devaOpen} | अर्थ, अनुवाद व टिप्पणी`
+    : `भगवद् गीता ${c}.${v} (BG ${c}.${v}) अर्थ – ${titleHook}${ch ? ` (${ch.hiName})` : ''}`
   const descLead =
     verse.simpleMeaning ||
     verse.detailedMeaning ||
     verse.hindiTranslation ||
     verse.englishTranslation
   const description = trimToLength(
-    `भगवद् गीता अध्याय ${c}, श्लोक ${v}${ch ? ` (${ch.hiName})` : ''}: ${descLead}`,
+    `भगवद् गीता ${c}.${v} — अध्याय ${c}, श्लोक ${v}${ch ? ` (${ch.hiName})` : ''}: ${descLead}`,
     158,
   )
+  const ogImage = `https://wisdomquotes.in/api/og/gita/${c}/${v}`
   return {
     title,
     description,
+    keywords: [
+      `भगवद् गीता ${c}.${v}`,
+      `गीता ${c}.${v}`,
+      `bg ${c}.${v}`,
+      `bhagavad gita ${c}.${v}`,
+      `गीता अध्याय ${c} श्लोक ${v}`,
+      ch ? ch.hiName : '',
+    ].filter(Boolean).join(', '),
     alternates: {
       canonical: `https://wisdomquotes.in${verseUrl(c, v, 'hi')}`,
       languages: {
+        'en': `https://wisdomquotes.in${verseUrl(c, v, 'en')}`,
         'en-IN': `https://wisdomquotes.in${verseUrl(c, v, 'en')}`,
+        'hi': `https://wisdomquotes.in${verseUrl(c, v, 'hi')}`,
         'hi-IN': `https://wisdomquotes.in${verseUrl(c, v, 'hi')}`,
+        'x-default': `https://wisdomquotes.in${verseUrl(c, v, 'en')}`,
       },
     },
     openGraph: {
-      title: `भगवद् गीता ${c}.${v}`,
+      title: `भगवद् गीता ${c}.${v} — ${verse.essence || ''}`,
       description: verse.hindiTranslation,
+      url: `https://wisdomquotes.in${verseUrl(c, v, 'hi')}`,
       type: 'article',
       siteName: 'Wisdom',
+      locale: 'hi_IN',
+      alternateLocale: ['en_IN'],
       images: [
-        { url: `https://wisdomquotes.in/api/og/gita/${c}/${v}`, width: 1200, height: 630, alt: `भगवद् गीता ${c}.${v}` },
+        { url: ogImage, width: 1200, height: 630, alt: `भगवद् गीता ${c}.${v}` },
       ],
     },
     twitter: {
       card: 'summary_large_image',
       title: `भगवद् गीता ${c}.${v}`,
       description: verse.hindiTranslation,
-      images: [`https://wisdomquotes.in/api/og/gita/${c}/${v}`],
+      images: [ogImage],
     },
   }
 }
@@ -102,7 +134,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
   const topicBridges = getTopicBridgesForVerse(verse.tags)
   const blogLinks = getBlogLinksForVerse(c, v)
 
-  // Parse word-by-word translation: "word (gloss) / word (gloss) / ..."
   const wordByWord = verse.translationLiteral
     ? verse.translationLiteral
         .split(' / ')
@@ -113,7 +144,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
         .filter((x): x is { sanskrit: string; gloss: string } => x !== null)
     : []
 
-  // ── V3 enrichment: raw pipeline labels → human Hindi copy ──
   const typeLabel = ({
     teaching:    'एक मूल शिक्षा',
     declaration: 'एक घोषणा',
@@ -142,24 +172,167 @@ export default async function VersePageHi({ params }: { params: Params }) {
     topic: findTopicForConcept(name),
   }))
 
+  // ── Structured data ─────────────────────────────────────────────────────────
+
+  const speakerPerson = verse.speaker
+    ? {
+        '@type': 'Person',
+        name: verse.speaker,
+        ...(verse.speaker.toLowerCase().includes('krishna') && {
+          alternateName: ['श्रीकृष्ण', 'Sri Krishna', 'Bhagavan'],
+        }),
+        ...(verse.speaker.toLowerCase().includes('arjuna') && {
+          alternateName: ['अर्जुन', 'Partha'],
+        }),
+      }
+    : undefined
+
   const quotationLd = {
     '@context': 'https://schema.org',
     '@type': 'Quotation',
     text: verse.hindiTranslation || verse.englishTranslation,
-    creator: { '@type': 'Person', name: verse.speaker },
+    creator: speakerPerson,
+    spokenByCharacter: speakerPerson,
     about: verse.tags,
     isPartOf: {
       '@type': 'Chapter',
       name: ch ? ch.hiName : `अध्याय ${c}`,
-      isPartOf: { '@type': 'Book', name: 'भगवद् गीता' },
+      position: c,
+      isPartOf: { '@type': 'Book', name: 'भगवद् गीता', url: 'https://wisdomquotes.in/hi/gita' },
     },
     inLanguage: ['sa', 'hi', 'en'],
+    url: `https://wisdomquotes.in${verseUrl(c, v, 'hi')}`,
   }
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'भगवद् गीता', item: 'https://wisdomquotes.in/hi/gita' },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: `अध्याय ${c}${ch ? `: ${ch.hiName}` : ''}`,
+        item: `https://wisdomquotes.in${chapterUrl(c, 'hi')}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `श्लोक ${v}`,
+        item: `https://wisdomquotes.in${verseUrl(c, v, 'hi')}`,
+      },
+    ],
+  }
+
+  const articleLd = (verse.simpleMeaning || verse.detailedMeaning) ? {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `भगवद् गीता ${c}.${v} — ${verse.essence || 'अर्थ और टिप्पणी'}`,
+    description: verse.simpleMeaning || verse.detailedMeaning,
+    articleBody: [
+      verse.simpleMeaning,
+      verse.detailedMeaning,
+      verse.modernRelevance,
+      verse.simpleInsight,
+    ].filter(Boolean).join('\n\n'),
+    author: {
+      '@type': 'Person',
+      name: 'Ankur Shukla',
+      url: 'https://wisdomquotes.in/about',
+      sameAs: ['https://x.com/sansearchapp'],
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Wisdom',
+      url: 'https://wisdomquotes.in',
+      logo: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/assets/new-light-logo.webp' },
+    },
+    mainEntityOfPage: `https://wisdomquotes.in${verseUrl(c, v, 'hi')}`,
+    image: [`https://wisdomquotes.in/api/og/gita/${c}/${v}`],
+    about: verse.tags.map((t) => ({ '@type': 'Thing', name: t })),
+    mentions: [
+      { '@type': 'Book', name: 'भगवद् गीता', url: 'https://wisdomquotes.in/hi/gita' },
+      ...(speakerPerson ? [speakerPerson] : []),
+    ],
+    isPartOf: {
+      '@type': 'Chapter',
+      name: ch ? ch.hiName : `अध्याय ${c}`,
+      position: c,
+      isPartOf: { '@type': 'Book', name: 'भगवद् गीता' },
+    },
+    inLanguage: 'hi',
+    datePublished: '2026-06-12',
+    dateModified: '2026-08-01',
+  } : null
+
+  const audioLd = audio ? {
+    '@context': 'https://schema.org',
+    '@type': 'AudioObject',
+    name: `भगवद् गीता ${c}.${v} — संस्कृत गायन`,
+    description: `भगवद् गीता के श्लोक ${c}.${v}${ch ? ` (${ch.hiName})` : ''} का संस्कृत गायन।`,
+    contentUrl: audio.audio.startsWith('http') ? audio.audio : `https://wisdomquotes.in${audio.audio}`,
+    encodingFormat: 'audio/mpeg',
+    inLanguage: 'sa',
+    isPartOf: {
+      '@type': 'Book',
+      name: 'भगवद् गीता',
+      url: 'https://wisdomquotes.in/hi/gita',
+    },
+  } : null
+
+  // ── Auto-generated FAQ + FAQPage schema (Hindi) ──
+  type Faq = { q: string; a: string }
+  const faqs: Faq[] = []
+  const hindiMeaning = verse.simpleMeaning || verse.hindiTranslation || verse.englishTranslation
+  if (hindiMeaning) {
+    faqs.push({
+      q: `भगवद् गीता ${c}.${v} का क्या अर्थ है?`,
+      a: hindiMeaning,
+    })
+  }
+  if (verse.speaker) {
+    faqs.push({
+      q: `भगवद् गीता ${c}.${v} किसने कहा है?`,
+      a: `यह श्लोक ${verse.speaker} द्वारा कहा गया है${ch ? `, कुरुक्षेत्र की भूमि पर, अध्याय "${ch.hiName}" में।` : '।'}`,
+    })
+  }
+  if (ch) {
+    faqs.push({
+      q: `भगवद् गीता ${c}.${v} किस अध्याय में है?`,
+      a: `श्लोक ${v} भगवद् गीता के ${c}वें अध्याय में है — ${ch.hiName}। इस अध्याय में कुल ${ch.totalVerses} श्लोक हैं।`,
+    })
+  }
+  if (verse.modernRelevance) {
+    faqs.push({
+      q: `भगवद् गीता ${c}.${v} आज के जीवन में क्यों प्रासंगिक है?`,
+      a: verse.modernRelevance,
+    })
+  }
+  const faqLd = faqs.length >= 2 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    inLanguage: 'hi',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  } : null
 
   return (
     <main className="gita-main">
       <BlogTracker pageName={`gita_verse_hi_${c}_${v}`} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(quotationLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      {articleLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      )}
+      {audioLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(audioLd) }} />
+      )}
+      {faqLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      )}
 
       <nav className="gita-crumb gv-rise" aria-label="Breadcrumb">
         <a href="/hi/gita" data-mp-location={`verse_hi_${c}_${v}_crumb_gita`}>भगवद् गीता</a>
@@ -174,7 +347,12 @@ export default async function VersePageHi({ params }: { params: Params }) {
 
       <header className="gv-hero-head">
         <div className="gv-hero-eyebrow gv-rise" style={{ '--d': '0.06s' } as CSSProperties}>पवित्र श्लोक</div>
-        <h1 className="gita-h1 gv-hero-h1 gv-rise" style={{ '--d': '0.12s' } as CSSProperties}>भगवद् गीता {c}.{v}</h1>
+        <h1 className="gita-h1 gv-hero-h1 gv-rise" style={{ '--d': '0.12s' } as CSSProperties}>
+          भगवद् गीता {c}.{v}
+          <span className="gv-hero-h1-sub" style={{ display: 'block', fontSize: '0.65em', fontWeight: 500, opacity: 0.75, marginTop: '0.35em' }}>
+            BG {c}.{v} · अध्याय {c}, श्लोक {v}
+          </span>
+        </h1>
         <div className="gv-hero-badges gv-rise" style={{ '--d': '0.18s' } as CSSProperties}>
           <span className="gv-hero-pill">{ch?.hiName ?? `अध्याय ${c}`} · श्लोक {v}</span>
         </div>
@@ -201,7 +379,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
           <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
         )}
 
-        {/* Hindi rendered as the main reading line on the Hindi page */}
         <p className="gv-en-quote" lang="hi">{verse.hindiTranslation}</p>
         {verse.speaker && <div className="gv-en-speaker">— {verse.speaker}</div>}
 
@@ -235,7 +412,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
         )}
       </article>
 
-      {/* ── Word-by-word: interlinear gloss ── */}
       {wordByWord.length > 0 && (
         <section className="gv-wbw gv-reveal" aria-label="शब्दार्थ">
           <div className="gv-sechead">
@@ -272,7 +448,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
             </div>
           )}
 
-          {/* Concepts this verse stands on — linked to topic hubs where published */}
           {conceptLinks.length > 0 && (
             <div className="gv-keys gv-reveal" aria-label="इस श्लोक के मूल भाव">
               <span className="gv-keys-label">आधार</span>
@@ -318,7 +493,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
             </div>
           )}
 
-          {/* Carry it with you — pocket versions, right where the meaning just landed */}
           {(verse.quoteVariants?.length ?? 0) > 0 && (
             <div className="gv-reveal">
               <MantraCards variants={verse.quoteVariants!} chapter={c} verse={v} locale="hi" />
@@ -346,11 +520,12 @@ export default async function VersePageHi({ params }: { params: Params }) {
                 background: 'var(--bg-card, rgba(255,255,255,0.04))',
               }}
             >
-              {/* Hero image strip */}
               <div style={{ position: 'relative', height: '130px', overflow: 'hidden' }}>
                 <img
                   src={chapterImage(c).src}
                   alt={chapterImage(c).alt}
+                  width={1200}
+                  height={260}
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                   loading="lazy"
                 />
@@ -368,7 +543,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
                   अध्याय {c} · {ch.hiTitle}
                 </div>
               </div>
-              {/* Card body */}
               <div style={{ padding: '16px 20px 18px' }}>
                 <div style={{ fontSize: '17px', fontWeight: 700, color: 'var(--text)', marginBottom: '5px', lineHeight: 1.3 }}>
                   {ch.hiName}
@@ -405,7 +579,45 @@ export default async function VersePageHi({ params }: { params: Params }) {
         </section>
       )}
 
-      {/* ── Go Deeper: curated blog links for this verse ── */}
+      {/* ── सामान्य प्रश्न (matches FAQPage schema) ── */}
+      {faqs.length >= 2 && (
+        <section className="gv-reveal" style={{ marginTop: '56px' }} aria-label="इस श्लोक के बारे में सामान्य प्रश्न">
+          <div className="gv-sechead">
+            <span className="gv-sechead-label">सामान्य प्रश्न</span>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginTop: '18px' }}>
+            {faqs.map((f, i) => (
+              <details
+                key={i}
+                style={{
+                  background: 'var(--bg-card, rgba(255,255,255,0.04))',
+                  border: '1px solid rgba(245,201,106,0.18)',
+                  borderRadius: '12px',
+                  padding: '14px 18px',
+                }}
+              >
+                <summary
+                  style={{
+                    fontSize: '15px',
+                    fontWeight: 600,
+                    color: 'var(--text)',
+                    cursor: 'pointer',
+                    listStyle: 'none',
+                  }}
+                >
+                  {f.q}
+                </summary>
+                <p style={{ marginTop: '10px', fontSize: '14.5px', lineHeight: 1.65, color: 'var(--text-dim)' }}>
+                  {f.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <FeedbackWidget pageType="verse" pageId={`verse_hi_${c}_${v}`} pageName={`gita_verse_hi_${c}_${v}`} />
+
       {blogLinks.length > 0 && (
         <section
           className="gv-reveal"
@@ -421,7 +633,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
             {blogLinks.map((link) => (
               <a
                 key={link.slug}
-                href={`/blog/${link.slug}`}
+                href={`/blogs/${link.slug}`}
                 data-mp-location={`verse_hi_${c}_${v}_blog_${link.slug}`}
                 data-mp-event="Blog Deep Dive Clicked"
                 data-mp-props={JSON.stringify({ verse: `${c}.${v}`, slug: link.slug, locale: 'hi' })}
@@ -442,6 +654,8 @@ export default async function VersePageHi({ params }: { params: Params }) {
                     src={link.image}
                     alt=""
                     aria-hidden="true"
+                    width={110}
+                    height={96}
                     style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
                     loading="lazy"
                   />
@@ -461,7 +675,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
         </section>
       )}
 
-      {/* ── Continue the dialogue: prominent prev/next with teasers ── */}
       <section className="gv-reveal" style={{ marginTop: '56px' }} aria-label="आगे पढ़ें">
         <div className="gv-sechead">
           <span className="gv-sechead-label">संवाद आगे बढ़ाएँ</span>
@@ -492,7 +705,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
         </div>
       </section>
 
-      {/* ── Floating verse navigator: always reachable, never lost ── */}
       <nav className="gv-versenav" aria-label="श्लोक नेविगेशन">
         {prev ? (
           <a href={verseUrl(prev.chapter, prev.verse, 'hi')} className="gv-versenav-btn" data-mp-location={`verse_hi_${c}_${v}_float_prev`} aria-label={`पिछला श्लोक ${prev.chapter}.${prev.verse}`}>

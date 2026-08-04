@@ -3,13 +3,13 @@ import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 
 export const metadata: Metadata = {
-  title: 'About Ankur Shukla — Founder of Wisdom & Dadly | iOS Apps for Everyday Practice',
+  title: 'About Ankur Shukla, Founder of Wisdom & Dadly | iOS Apps for Everyday Practice',
   description:
     'I’m Ankur Shukla, an iOS app developer and lifelong student of the Bhagavad Gita. I build Wisdom (daily shloka app) and Dadly (AI companion for new dads). Here is who I am and how I write.',
   keywords:
     'Ankur Shukla, Wisdom app founder, Dadly app founder, Bhagavad Gita writer, iOS app developer, indie iOS developer, Sanskrit shloka app, dadlyapp.com',
   openGraph: {
-    title: 'About Ankur Shukla — iOS Developer, Founder of Wisdom & Dadly',
+    title: 'About Ankur Shukla, iOS Developer, Founder of Wisdom & Dadly',
     description:
       'Ankur Shukla is an iOS app developer and writer. He builds Wisdom (Bhagavad Gita app) and Dadly (AI app for new dads), and writes long-form essays on the Gita.',
     type: 'profile',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Ankur Shukla — Founder of Wisdom & Dadly',
+    title: 'About Ankur Shukla, Founder of Wisdom & Dadly',
     description:
       'iOS developer and writer. Builds Wisdom (Bhagavad Gita daily shloka app) and Dadly (AI app for expecting and new dads).',
     creator: '@thisisashukla',
@@ -219,7 +219,7 @@ const aboutPageSchema = {
   url: 'https://wisdomquotes.in/about',
   name: 'About Ankur Shukla',
   description:
-    'About the author behind Wisdom — Ankur Shukla, iOS app developer and student of the Bhagavad Gita.',
+    'About the author behind Wisdom. Ankur Shukla, iOS app developer and student of the Bhagavad Gita.',
   mainEntity: { '@id': 'https://wisdomquotes.in/about#person' },
   isPartOf: {
     '@type': 'WebSite',
@@ -276,7 +276,7 @@ export default function AboutPage() {
         <h2>Who I am</h2>
         <p>
           I&rsquo;m an iOS app developer and a long-time, slow-paced student of the
-          Bhagavad Gita. I read it the way most people read it &mdash; not as a
+          Bhagavad Gita. I read it the way most people read it. Not as a
           scholar, not in an ashram, but in pieces, over years, in the gaps
           between work and life. The essays on this blog are a record of that
           reading: chapter by chapter, verse by verse, with Sanskrit text,
@@ -296,12 +296,12 @@ export default function AboutPage() {
           breakdown. A great warrior, on the morning of the war he&rsquo;s trained
           his whole life for, puts down his weapon and refuses to fight. The
           first chapter is just him explaining why. Everything that follows is
-          Krishna talking him back into action &mdash; not by suppressing the
+          Krishna talking him back into action. Not by suppressing the
           doubt, but by reframing what action even means.
         </p>
         <p>
-          That arc &mdash; from collapse, to inquiry, to a different kind of
-          action &mdash; is the one I keep meeting in my own life, in my work,
+          That arc, from collapse to inquiry to a different kind of
+          action, is the one I keep meeting in my own life, in my work,
           and in the people around me. So I write about it, slowly, one chapter
           at a time. Each article on this site is grounded in the primary
           Sanskrit text and traditional commentary, but written from the
@@ -337,7 +337,7 @@ export default function AboutPage() {
             data-mp-location="about_app_wisdom"
           >
             <div className="app-card-label">Wisdom · iOS</div>
-            <h3>Wisdom &mdash; Daily Bhagavad Gita</h3>
+            <h3>Wisdom: Daily Bhagavad Gita</h3>
             <p>
               One Sanskrit shloka a day with English meaning, deeper context,
               modern relevance, journaling and home screen widgets. Free on
@@ -353,7 +353,7 @@ export default function AboutPage() {
             data-mp-location="about_app_dadly"
           >
             <div className="app-card-label">Dadly · iOS &amp; Android</div>
-            <h3>Dadly &mdash; for expecting &amp; new dads</h3>
+            <h3>Dadly: for expecting and new dads</h3>
             <p>
               An AI companion for the partner role: pregnancy symptoms, scan
               report explanations in plain English, weekly briefs, and calm
