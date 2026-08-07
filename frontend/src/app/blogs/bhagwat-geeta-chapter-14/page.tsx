@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "Bhagavad Gita Chapter 14, the three forces of inner weather. Sattva, rajas, tamas. And the state beyond all three.",
     images: ["https://wisdomquotes.in/assets/chapter14.webp"],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14' } },
   robots: {
     index: true,
     follow: true,

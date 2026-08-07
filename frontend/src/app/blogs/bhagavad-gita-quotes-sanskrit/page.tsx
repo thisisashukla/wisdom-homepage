@@ -5,18 +5,38 @@ import ShlokaCard from '@/components/gita/ShlokaCard'
 import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Quotes in Sanskrit — 30 Famous Verses with Hindi & English Meaning | Wisdom",
-  description: "The most famous Bhagavad Gita quotes in original Sanskrit (Devanagari), with IAST transliteration, Hindi meaning, and English translation. Karma, atman, bhakti, and the verses every seeker returns to.",
+  title: "30 Most Famous Bhagavad Gita Quotes in Sanskrit — with English Meaning & Transliteration | Wisdom",
+  description: "The 30 most famous Bhagavad Gita quotes in original Sanskrit (Devanagari), each with IAST transliteration you can read aloud, plain English meaning, and short context. Karma, atman, bhakti, surrender — the verses every seeker returns to.",
   keywords: "bhagavad gita quotes in sanskrit, bhagwat geeta shlok in sanskrit, gita shlok sanskrit, bhagavad gita verses in sanskrit, gita quotes sanskrit with meaning, geeta shloka in sanskrit with hindi meaning, one line gita quotes sanskrit, bhagavad gita famous verses, karmanye vadhikaraste, sarva dharman parityajya",
   openGraph: {
-    title: "Bhagavad Gita Quotes in Sanskrit — 30 Famous Verses | Wisdom",
+    title: "30 Most Famous Bhagavad Gita Quotes in Sanskrit — with English Meaning | Wisdom",
     description: "The most famous Gita verses in Devanagari, with IAST, Hindi, and English meaning. Karma, atman, bhakti, and the verses every seeker returns to.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit",
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "30 Most Famous Bhagavad Gita Quotes in Sanskrit — with English Meaning | Wisdom",
+    description: "The most famous Gita verses in Devanagari, with IAST, Hindi, and English meaning. Karma, atman, bhakti, and the verses every seeker returns to.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit",
+      'en-IN': "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit",
+      'x-default': "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -144,6 +164,9 @@ const schemas = [
     "headline": "Bhagavad Gita Quotes in Sanskrit — 30 Famous Verses with Hindi and English Meaning",
     "description": "The most famous Bhagavad Gita quotes in original Sanskrit (Devanagari), with IAST transliteration, Hindi meaning, and English translation. Karma, atman, bhakti — the verses every seeker returns to.",
     "datePublished": "2026-07-05",
+    "dateModified": "2026-08-01",
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit" },
     "author": {
       "@type": "Person",
       "name": "Ankur Shukla",
@@ -155,9 +178,19 @@ const schemas = [
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Wisdom App",
-      "url": "https://wisdomquotes.in"
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+      { "@type": "ListItem", "position": 3, "name": "Bhagavad Gita Quotes in Sanskrit — 30 Famous Verses with Hindi & English Meaning", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit" }
+    ]
   },
   {
     "@context": "https://schema.org",

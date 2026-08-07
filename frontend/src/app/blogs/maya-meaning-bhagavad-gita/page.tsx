@@ -19,7 +19,23 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: 'https://wisdomquotes.in/blogs/maya-meaning-bhagavad-gita' },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Maya Meaning — Illusion in the Bhagavad Gita | Wisdom",
+    description: "Maya doesn't mean the world is fake. In the Gita, it is the power that makes the real appear as something other than it is. BG 7.14 calls it divine and 'hard to cross.'",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: 'https://wisdomquotes.in/blogs/maya-meaning-bhagavad-gita',
+    languages: { 'x-default': 'https://wisdomquotes.in/blogs/maya-meaning-bhagavad-gita' },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -261,11 +277,12 @@ const pageCSS = `
 const schemas = [
   {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': ['Article', 'LearningResource'],
     headline: 'Maya Meaning — Illusion in the Bhagavad Gita',
     description:
       "Maya doesn't mean the world is fake. In the Gita, it is the power that makes the real appear as something other than it is — divine, woven of the gunas, and hard to cross.",
     datePublished: '2026-07-17',
+    dateModified: '2026-08-01',
     author: {
       '@type': 'Person',
       name: 'Ankur Shukla',
@@ -277,9 +294,26 @@ const schemas = [
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Wisdom App',
+      name: 'Wisdom',
       url: 'https://wisdomquotes.in',
+      logo: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/assets/new-light-logo.webp' },
     },
+    image: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://wisdomquotes.in/blogs/maya-meaning-bhagavad-gita' },
+    articleSection: 'Bhagavad Gita concepts',
+    inLanguage: 'en',
+    isAccessibleForFree: true,
+    learningResourceType: 'Article',
+    educationalLevel: 'General',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Wisdom', item: 'https://wisdomquotes.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://wisdomquotes.in/blogs/' },
+      { '@type': 'ListItem', position: 3, name: 'Maya Meaning — Illusion in the Bhagavad Gita', item: 'https://wisdomquotes.in/blogs/maya-meaning-bhagavad-gita' },
+    ],
   },
   {
     '@context': 'https://schema.org',

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "Bhagavad Gita Chapter 8, what the mind has practiced, the moment of death, and the imperishable destination.",
     images: ["https://wisdomquotes.in/assets/chapter8.webp"],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-8' } },
   robots: {
     index: true,
     follow: true,

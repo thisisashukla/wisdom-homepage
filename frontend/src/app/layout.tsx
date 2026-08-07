@@ -62,9 +62,11 @@ export const metadata: Metadata = {
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
   twitter: {
+    // site = the site's brand handle; creator = the author's handle.
+    // Unified with all page-level Article schemas across the site.
     card: 'summary_large_image',
     site: '@sansearchapp',
-    creator: '@sansearchapp',
+    creator: '@thisisashukla',
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   icons: {

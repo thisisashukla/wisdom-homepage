@@ -228,7 +228,7 @@ export default async function VersePage({ params }: { params: Params }) {
       '@type': 'Person',
       name: 'Ankur Shukla',
       url: 'https://wisdomquotes.in/about',
-      sameAs: ['https://x.com/sansearchapp'],
+      sameAs: ['https://www.linkedin.com/in/thisisashukla/', 'https://x.com/thisisashukla'],
     },
     publisher: {
       '@type': 'Organization',
@@ -630,7 +630,6 @@ export default async function VersePage({ params }: { params: Params }) {
         </section>
       )}
 
-      <FeedbackWidget pageType="verse" pageId={`verse_${c}_${v}`} pageName={`gita_verse_${c}_${v}`} />
 
       {/* ── Go Deeper: curated blog links for this verse ── */}
       {blogLinks.length > 0 && (
@@ -746,7 +745,31 @@ export default async function VersePage({ params }: { params: Params }) {
             <span className="gv-sechead-label">Verses in the same spirit</span>
           </div>
           <ul className="gv-related-grid">
-            {related.map((r) => {
+            {related.slice(0, Math.ceil(related.length / 2)).map((r) => {
+              const sharedTag = r.tags?.find((t) => verse.tags.includes(t))
+              return (
+                <li key={`${r.chapter}-${r.verse}`}>
+                  <a
+                    className="gv-rel-card"
+                    href={verseUrl(r.chapter, r.verse)}
+                    data-mp-location={`verse_${c}_${v}_related_${r.chapter}_${r.verse}`}
+                  >
+                    <div className="gv-rel-top">
+                      <span className="gv-rel-num">{r.chapter}.{r.verse}</span>
+                      {sharedTag && <span className="gv-rel-tag">{sharedTag.replace(/-/g, ' ')}</span>}
+                    </div>
+                    <p className="gv-rel-quote">&ldquo;{r.essence || r.snippet}&rdquo;</p>
+                    <span className="gv-rel-cta">Read verse →</span>
+                  </a>
+                </li>
+              )
+            })}
+          </ul>
+
+          <FeedbackWidget pageType="verse" pageId={`verse_${c}_${v}`} pageName={`gita_verse_${c}_${v}`} />
+
+          <ul className="gv-related-grid">
+            {related.slice(Math.ceil(related.length / 2)).map((r) => {
               const sharedTag = r.tags?.find((t) => verse.tags.includes(t))
               return (
                 <li key={`${r.chapter}-${r.verse}`}>

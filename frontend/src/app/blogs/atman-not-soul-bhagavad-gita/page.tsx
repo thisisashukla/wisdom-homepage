@@ -19,7 +19,23 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/assets/atmavssoul.webp', width: 1672, height: 941 }],
   },
-  alternates: { canonical: 'https://wisdomquotes.in/blogs/atman-not-soul-bhagavad-gita' },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: 'Atman vs Soul: The Distinction the Bhagavad Gita Actually Draws | Wisdom',
+    description: "Every English translation of the Gita calls ātman 'soul.' That's a 200-year-old mistranslation. Soul is created, individual, judged by belief, given one life. Atman is uncreated, not the doer, decided by karma, cycled across lifetimes.",
+    images: ['https://wisdomquotes.in/assets/atmavssoul.webp'],
+  },
+  alternates: {
+    canonical: 'https://wisdomquotes.in/blogs/atman-not-soul-bhagavad-gita',
+    languages: { 'x-default': 'https://wisdomquotes.in/blogs/atman-not-soul-bhagavad-gita' },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -309,11 +325,12 @@ const pageCSS = `
 const schemas = [
   {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': ['Article', 'LearningResource'],
     headline: 'Atman vs Soul: The Distinction the Bhagavad Gita Actually Draws',
     description:
       "Translating atman as 'soul' is the most common philosophical error in Indian spirituality. The two words carry different metaphysical premises. Here is the distinction the Gita actually draws.",
     datePublished: '2026-08-03',
+    dateModified: '2026-08-04',
     author: {
       '@type': 'Person',
       name: 'Ankur Shukla',
@@ -325,9 +342,26 @@ const schemas = [
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Wisdom App',
+      name: 'Wisdom',
       url: 'https://wisdomquotes.in',
+      logo: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/assets/new-light-logo.webp' },
     },
+    image: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/assets/atmavssoul.webp', width: 1672, height: 941 },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://wisdomquotes.in/blogs/atman-not-soul-bhagavad-gita' },
+    articleSection: 'Bhagavad Gita concepts',
+    inLanguage: 'en',
+    isAccessibleForFree: true,
+    learningResourceType: 'Article',
+    educationalLevel: 'General',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Wisdom', item: 'https://wisdomquotes.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://wisdomquotes.in/blogs/' },
+      { '@type': 'ListItem', position: 3, name: 'Atman vs Soul: The Distinction the Bhagavad Gita Actually Draws', item: 'https://wisdomquotes.in/blogs/atman-not-soul-bhagavad-gita' },
+    ],
   },
   {
     '@context': 'https://schema.org',
@@ -677,6 +711,8 @@ export default function AtmanNotSoulPage() {
           </p>
         </div>
 
+        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Atman Not Soul Bhagavad Gita"} />
+
         <h2>Why the Distinction Matters Practically</h2>
         <p>
           The difference between atman and soul changes what Arjuna&apos;s problem actually is, and what the solution to it is.
@@ -844,8 +880,6 @@ export default function AtmanNotSoulPage() {
           </p>
         </div>
       </div>
-
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Atman Not Soul Bhagavad Gita"} />
 
       <footer>
         <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>

@@ -16,7 +16,27 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/assets/gita-montage.webp', width: 1200, height: 675, alt: 'The Bhagavad Gita across 18 chapters' }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-complete-structure-all-chapters" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "How the Bhagavad Gita Is Structured: All 18 Chapters Explained | Wisdom",
+    description: "18 chapters, one argument. The Gita moves from Arjuna's breakdown to 18.66, the line that changes everything. Here is every chapter summarized.",
+    images: ['https://wisdomquotes.in/assets/gita-montage.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-complete-structure-all-chapters",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/bhagavad-gita-complete-structure-all-chapters",
+      'en-IN': "https://wisdomquotes.in/blogs/bhagavad-gita-complete-structure-all-chapters",
+      'x-default': "https://wisdomquotes.in/blogs/bhagavad-gita-complete-structure-all-chapters",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `

@@ -5,18 +5,38 @@ import ShlokaCard from '@/components/gita/ShlokaCard'
 import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita on Death — 'The Atman Cannot Be Cut, Burned or Wet' (BG 2.19-2.25 Explained) | Wisdom",
-  description: "What the Bhagavad Gita actually says about death and the atman. Krishna's answer to Arjuna is not comfort — it's a structural claim: the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it, water doesn't wet it. BG 2.19-2.25 explained, with Sanskrit and English meaning.",
+  title: "What the Bhagavad Gita Says About Death — The Soul Is Never Born, Never Dies (BG 2.19-2.25) | Wisdom",
+  description: "What does the Bhagavad Gita say about death? Krishna's answer to a grieving Arjuna: the soul (atman) is never born and never dies. Weapons cannot cut it, fire cannot burn it, water cannot wet it. BG 2.19-2.25 in Sanskrit, English, and plain modern words.",
   keywords: "bhagavad gita on death, bhagavad gita atman after death, atman bhagavad gita, nainam chindanti shastrani meaning, what does gita say about death, bhagavad gita death is not real, bhagavad gita 2.20 meaning, bhagavad gita atman eternal, bhagavad gita reincarnation, dehi meaning gita",
   openGraph: {
-    title: "Bhagavad Gita on Death — 'The Atman Cannot Be Cut, Burned or Wet' (BG 2.19-2.25)",
-    description: "What the Bhagavad Gita says about death and the atman — Krishna's structural claim in BG 2.19-2.25 that the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it.",
+    title: "What the Bhagavad Gita Says About Death — The Soul Is Never Born, Never Dies (BG 2.19-2.25)",
+    description: "Krishna's answer to a grieving Arjuna: the soul is never born and never dies. Weapons cannot cut it, fire cannot burn it. BG 2.19-2.25 in Sanskrit, English, and plain modern words.",
     type: 'article',
-    url: "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-atman",
+    url: "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul",
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-atman" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "What the Bhagavad Gita Says About Death — The Soul Is Never Born, Never Dies (BG 2.19-2.25)",
+    description: "Krishna's answer to a grieving Arjuna: the soul is never born and never dies. Weapons cannot cut it, fire cannot burn it. BG 2.19-2.25 in Sanskrit and English.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul",
+      'en-IN': "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul",
+      'x-default': "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -387,6 +407,9 @@ const schemas = [
     "headline": "What the Bhagavad Gita Says About Death, the Atman, and What Comes After | Wisdom",
     "description": "The Gita's teaching on death is not comfort. It's a structural claim: the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it, water doesn't wet it.",
     "datePublished": "2026-06-12",
+    "dateModified": "2026-08-01",
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul" },
     "author": {
       "@type": "Person",
       "name": "Ankur Shukla",
@@ -398,9 +421,19 @@ const schemas = [
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Wisdom App",
-      "url": "https://wisdomquotes.in"
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+      { "@type": "ListItem", "position": 3, "name": "Bhagavad Gita on Death — 'The Atman Cannot Be Cut, Burned or Wet' (BG 2.19-2.25 Explained)", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul" }
+    ]
   },
   {
     "@context": "https://schema.org",

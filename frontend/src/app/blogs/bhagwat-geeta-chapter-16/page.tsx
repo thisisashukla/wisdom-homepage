@@ -5,11 +5,11 @@ import ShlokaCard from '@/components/gita/ShlokaCard'
 import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 16 Summary – Key Verses & Meaning (Daivasura Sampad)",
-  description: "Bhagavad Gita Chapter 16 (Daivasura Sampad Vibhaga Yoga), 24 verses on divine and demonic natures and the three gates of ruin: desire, anger, greed.",
+  title: "Bhagavad Gita Chapter 16 Summary — The Divine and Demonic Natures Explained (Daivasura Sampad Yoga)",
+  description: "Bhagavad Gita Chapter 16 in plain English: the divine (daivi) qualities that open a life vs the demonic (asuri) qualities that close it, and Krishna's three gates of hell — desire, anger, and greed (BG 16.21). All 24 verses summarised with modern examples.",
   keywords: "bhagwat geeta chapter 16, bhagavad gita daivi asuri sampad, bhagwat geeta adhyay 16, divine and demonic qualities, three gates of hell gita, kama krodha lobha, qualities of character gita, 16.21 trividham narakasyedam, Daivasura Sampad Vibhaga Yoga meaning, divine and demonic qualities Bhagavad Gita, Bhagavad Gita 16.21 three gates of hell, kama krodha lobha meaning, Bhagavad Gita on ego and character, 16 chapter qualities of devotion",
   openGraph: {
-    title: "Bhagavad Gita Chapter 16 Summary – Key Verses & Meaning (Daivasura Sampad)",
+    title: "Bhagavad Gita Chapter 16 Summary — The Divine and Demonic Natures (Daivasura Sampad Yoga)",
     description: "Bhagavad Gita Chapter 16, qualities that open a life, qualities that close it, and the three gates of ruin (16.21).",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16",
@@ -19,11 +19,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bhagavad Gita Chapter 16 Summary – Key Verses & Meaning (Daivasura Sampad)",
+    title: "Bhagavad Gita Chapter 16 Summary — The Divine and Demonic Natures (Daivasura Sampad Yoga)",
     description: "Bhagavad Gita Chapter 16, qualities that open a life, qualities that close it, and the three gates of ruin (16.21).",
     images: ["https://wisdomquotes.in/assets/chapter16.webp"],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16" },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16",
+    languages: { 'x-default': "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-16" },
+  },
   robots: {
     index: true,
     follow: true,

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "Bhagavad Gita Chapter 9, the royal secret. Leaf, flower, fruit, water. And 'my devotee never perishes' (9.31).",
     images: ["https://wisdomquotes.in/assets/chapter9.webp"],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9' } },
   robots: {
     index: true,
     follow: true,

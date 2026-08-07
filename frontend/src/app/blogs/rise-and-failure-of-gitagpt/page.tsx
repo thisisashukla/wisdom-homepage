@@ -14,7 +14,27 @@ export const metadata: Metadata = {
     url: "https://wisdomquotes.in/blogs/rise-and-failure-of-gitagpt",
     siteName: 'Wisdom',
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/rise-and-failure-of-gitagpt" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "The Rise and Failure of GitaGPT: What Went Wrong When India Tried to Put Krishna on a GPU | Wisdom",
+    description: "Five GitaGPTs launched in 2023. Several condoned violence and praised politicians. A product designer's dissection of why they failed, and what a real Krishna AI needs.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/rise-and-failure-of-gitagpt",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/rise-and-failure-of-gitagpt",
+      'en-IN': "https://wisdomquotes.in/blogs/rise-and-failure-of-gitagpt",
+      'x-default': "https://wisdomquotes.in/blogs/rise-and-failure-of-gitagpt",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -433,13 +453,29 @@ const schemas = [
     "headline": "The Rise and Failure of GitaGPT: What Went Wrong When India Tried to Put Krishna on a GPU",
     "description": "Between January and March 2023, at least five GitaGPTs launched in India. A product breakdown of what those bots got wrong, and what an actual working Bhagavad Gita AI needs.",
     "datePublished": "2026-06-19",
+    "dateModified": "2026-08-01",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/rise-and-failure-of-gitagpt" },
     "author": {
       "@type": "Person",
       "name": "Ankur Shukla",
       "url": "https://wisdomquotes.in/about",
       "sameAs": ["https://www.linkedin.com/in/thisisashukla/", "https://x.com/thisisashukla"]
     },
-    "publisher": { "@type": "Organization", "name": "Wisdom App", "url": "https://wisdomquotes.in" }
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+      { "@type": "ListItem", "position": 3, "name": "The Rise and Failure of GitaGPT", "item": "https://wisdomquotes.in/blogs/rise-and-failure-of-gitagpt" }
+    ]
   },
   {
     "@context": "https://schema.org",

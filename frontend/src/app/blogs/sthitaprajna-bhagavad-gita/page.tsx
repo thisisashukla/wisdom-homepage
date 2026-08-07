@@ -16,7 +16,23 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/sthitaprajna-bhagavad-gita" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Sthitaprajna: The Bhagavad Gita's 18-Verse Portrait of an Unshakeable Mind | Wisdom",
+    description: "Sthitaprajna is the Gita's word for a person whose wisdom is steady. BG 2.55-2.72 lists the exact qualities. Not calm at all costs. Steady at the root.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/sthitaprajna-bhagavad-gita",
+    languages: { 'x-default': "https://wisdomquotes.in/blogs/sthitaprajna-bhagavad-gita" },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -473,6 +489,15 @@ const schemas = [
       "name": "Wisdom App",
       "url": "https://wisdomquotes.in"
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs/" },
+      { "@type": "ListItem", "position": 3, "name": "Sthitaprajna: The Bhagavad Gita's 18-Verse Portrait of an Unshakeable Mind", "item": "https://wisdomquotes.in/blogs/sthitaprajna-bhagavad-gita" }
+    ]
   },
   {
     "@context": "https://schema.org",

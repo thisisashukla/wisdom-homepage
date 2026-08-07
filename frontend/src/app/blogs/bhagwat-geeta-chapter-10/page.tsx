@@ -23,7 +23,10 @@ export const metadata: Metadata = {
     description: "Bhagavad Gita Chapter 10, sparks of the Divine. Where to look for Bhagavan in everything that shines.",
     images: ["https://wisdomquotes.in/assets/chapter10.webp"],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10" },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10",
+    languages: { 'x-default': "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-10" },
+  },
   robots: {
     index: true,
     follow: true,

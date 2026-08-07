@@ -5,17 +5,37 @@ import ShlokaCard from '@/components/gita/ShlokaCard'
 import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
 
 export const metadata: Metadata = {
-  title: "Best Bhagavad Gita Translation — A Reader-by-Reader Guide to All Major English Versions | Wisdom",
-  description: "The best Bhagavad Gita translation depends on who you are. Compare Eknath Easwaran, Winthrop Sargeant, Prabhupada, Stephen Mitchell, Radhakrishnan and more — with every criticism cited to its source. Which version you should read, in one page.",
+  title: "Which Bhagavad Gita Translation Should You Read? — Every Major English Version, Compared | Wisdom",
+  description: "Which Bhagavad Gita translation is best for you? A side-by-side reader's guide to Eknath Easwaran, Winthrop Sargeant, Prabhupada's As It Is, Stephen Mitchell, Radhakrishnan, Bibek Debroy and more — with excerpts, honest criticisms, and who each version is actually written for.",
   keywords: "best bhagavad gita translation, which bhagavad gita to read, bhagavad gita as it is review, sadhak sanjivani english, eknath easwaran gita, gita press bhagavad gita, shankara gita bhashya english, bhagavad gita for beginners, gita rahasya tilak, jnaneshwari english, bibek debroy gita, bhagavad gita commentary comparison",
   openGraph: {
-    title: "Best Bhagavad Gita Translation — A Reader-by-Reader Guide to All Major English Versions",
-    description: "Every Gita translation is also an interpretation. A reader-by-reader guide to the best translations and commentaries — Easwaran, Sargeant, Prabhupada, Mitchell, Radhakrishnan — with criticisms cited to named sources.",
+    title: "Which Bhagavad Gita Translation Should You Read? — Every Major English Version, Compared",
+    description: "A side-by-side reader's guide to every major English Bhagavad Gita — Easwaran, Sargeant, Prabhupada, Mitchell, Radhakrishnan, Debroy — with excerpts, honest criticisms, and who each version is written for.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/best-bhagavad-gita-translation",
     siteName: 'Wisdom',
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/best-bhagavad-gita-translation" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Which Bhagavad Gita Translation Should You Read? — Every Major English Version, Compared",
+    description: "A side-by-side reader's guide to every major English Bhagavad Gita — Easwaran, Sargeant, Prabhupada, Mitchell, Radhakrishnan, Debroy — with honest criticisms and who each is for.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/best-bhagavad-gita-translation",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/best-bhagavad-gita-translation",
+      'en-IN': "https://wisdomquotes.in/blogs/best-bhagavad-gita-translation",
+      'x-default': "https://wisdomquotes.in/blogs/best-bhagavad-gita-translation",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -419,13 +439,20 @@ const schemas = [
     "headline": "Which Bhagavad Gita Translation Should You Read?",
     "description": "A reader-by-reader guide to the major Bhagavad Gita translations and commentaries, from classical Sanskrit bhashyas to Gita Press to modern English versions.",
     "datePublished": "2026-07-19",
+    "dateModified": "2026-08-01",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/best-bhagavad-gita-translation" },
     "author": {
       "@type": "Person",
       "name": "Ankur Shukla",
       "url": "https://wisdomquotes.in/about",
       "sameAs": ["https://www.linkedin.com/in/thisisashukla/", "https://x.com/thisisashukla"]
     },
-    "publisher": { "@type": "Organization", "name": "Wisdom App", "url": "https://wisdomquotes.in" }
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
+    }
   },
   {
     "@context": "https://schema.org",

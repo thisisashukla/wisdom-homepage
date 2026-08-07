@@ -32,6 +32,7 @@ export default function Nav({ extraLink, overlayHero, pageName = 'unknown' }: Na
           <li><a href="/gita/today" className="nav-page-link">Today&apos;s Verse</a></li>
           <li><a href="/search" className="nav-page-link">Ask</a></li>
           <li><a href="/blogs" className="nav-page-link">Blog</a></li>
+          <li><a href="/app" className="nav-page-link">App</a></li>
           {extraLink && (
             <li>
               <a href={extraLink.href} hrefLang={extraLink.hrefLang} className="nav-page-link">

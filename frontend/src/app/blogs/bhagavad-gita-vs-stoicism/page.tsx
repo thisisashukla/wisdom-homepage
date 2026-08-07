@@ -16,7 +16,27 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Actually Share",
+    description: "Marcus Aurelius and Krishna never met — yet they reached strikingly similar conclusions on action, equanimity, and duty. 9 side-by-side teachings, and the one place Stoicism and the Gita part ways.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
+      'en-IN': "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
+      'x-default': "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -461,6 +481,9 @@ const schemas = [
     "headline": "Bhagavad Gita vs Stoicism: 9 Teachings That Are Surprisingly Similar | Wisdom",
     "description": "Marcus Aurelius and Krishna never met. But they reached remarkably similar conclusions about action, equanimity, duty, and the self. 9 parallel teachings and where they differ.",
     "datePublished": "2026-06-12",
+    "dateModified": "2026-08-01",
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism" },
     "author": {
       "@type": "Person",
       "name": "Ankur Shukla",
@@ -472,9 +495,19 @@ const schemas = [
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Wisdom App",
-      "url": "https://wisdomquotes.in"
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+      { "@type": "ListItem", "position": 3, "name": "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Actually Share", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism" }
+    ]
   },
   {
     "@context": "https://schema.org",
@@ -569,6 +602,105 @@ export default function GitaVsStoicismPage() {
     </div>
 
     <div className="content">
+      {/* ── Above-the-fold comparison table + BG 2.47 hand-off. GSC says this
+           page pulls comparison-intent search — users want the side-by-side
+           right away, not 8 minutes of prose to get to it. The 2.47 CTA below
+           gives the single most useful onward click ("nishkama karma vs
+           Stoic dichotomy of control") to search readers who bounce fast. ── */}
+      <section
+        aria-label="Bhagavad Gita vs Stoicism — quick comparison"
+        style={{
+          margin: '28px 0 32px',
+          padding: '20px 22px 22px',
+          background: 'linear-gradient(160deg, rgba(200,136,30,0.08) 0%, rgba(200,136,30,0.03) 100%)',
+          border: '1px solid rgba(200,136,30,0.28)',
+          borderRadius: '14px',
+        }}
+      >
+        <div style={{
+          fontSize: 11,
+          letterSpacing: '0.14em',
+          textTransform: 'uppercase',
+          fontWeight: 700,
+          color: 'var(--gold, #c8881e)',
+          marginBottom: 10,
+        }}>
+          The comparison, at a glance
+        </div>
+        <table style={{
+          width: '100%',
+          borderCollapse: 'collapse',
+          fontSize: '14px',
+          lineHeight: 1.55,
+          color: 'var(--text-dim)',
+        }}>
+          <thead>
+            <tr>
+              <th style={{ textAlign: 'left', padding: '8px 10px 10px 0', fontWeight: 700, color: 'var(--gold-light)', width: '28%', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Question</th>
+              <th style={{ textAlign: 'left', padding: '8px 10px', fontWeight: 700, color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Stoicism</th>
+              <th style={{ textAlign: 'left', padding: '8px 0 10px 10px', fontWeight: 700, color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Bhagavad Gita</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={{ padding: '10px 10px 10px 0', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top', color: 'var(--text)', fontWeight: 600 }}>What is up to me?</td>
+              <td style={{ padding: '10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>Judgments, desires, actions — the dichotomy of control (Epictetus).</td>
+              <td style={{ padding: '10px 0 10px 10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>The action itself, never the fruit — <em>nishkama karma</em> (BG 2.47).</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '10px 10px 10px 0', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top', color: 'var(--text)', fontWeight: 600 }}>What is the good?</td>
+              <td style={{ padding: '10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>Virtue alone. Externals are preferred indifferents.</td>
+              <td style={{ padding: '10px 0 10px 10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}><em>Dharma</em> lived without craving results.</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '10px 10px 10px 0', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top', color: 'var(--text)', fontWeight: 600 }}>What holds it together?</td>
+              <td style={{ padding: '10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>Impersonal Logos — cosmic reason.</td>
+              <td style={{ padding: '10px 0 10px 10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}><em>Bhagavan</em> — personal, and relatable through <em>bhakti</em>.</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '10px 10px 10px 0', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top', color: 'var(--text)', fontWeight: 600 }}>What is the self?</td>
+              <td style={{ padding: '10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>Rational faculty (<em>hēgemonikon</em>) — dispersed at death.</td>
+              <td style={{ padding: '10px 0 10px 10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}><em>Atman</em> — unborn, undying, witness (BG 2.20).</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '10px 10px 10px 0', verticalAlign: 'top', color: 'var(--text)', fontWeight: 600 }}>The goal?</td>
+              <td style={{ padding: '10px', verticalAlign: 'top' }}><em>Eudaimonia</em> — flourishing, in this life, through reason.</td>
+              <td style={{ padding: '10px 0 10px 10px', verticalAlign: 'top' }}><em>Moksha</em> — liberation, beyond the guna framework.</td>
+            </tr>
+          </tbody>
+        </table>
+        <a
+          href="/gita/chapter/2/verse/47"
+          data-mp-location="stoic_blog_hero_cta_2_47"
+          data-mp-event="Stoic Blog 2.47 Hand-off Clicked"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '14px',
+            marginTop: '22px',
+            padding: '14px 18px',
+            background: 'rgba(200,136,30,0.12)',
+            border: '1px solid rgba(200,136,30,0.4)',
+            borderLeft: '4px solid var(--gold, #c8881e)',
+            borderRadius: '0 10px 10px 0',
+            textDecoration: 'none',
+            color: 'var(--text)',
+          }}
+        >
+          <div>
+            <div style={{ fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 700, color: 'var(--gold, #c8881e)', marginBottom: 4 }}>The one verse to read next</div>
+            <div style={{ fontSize: '15.5px', fontWeight: 700, color: 'var(--gold-light, #f5c96a)', lineHeight: 1.35 }}>
+              BG 2.47 — <em>Nishkama karma</em> vs the Stoic dichotomy of control
+            </div>
+            <div style={{ fontSize: 13, color: 'var(--text-dim)', marginTop: 3 }}>
+              Sanskrit + audio + line-by-line meaning. 2 minutes.
+            </div>
+          </div>
+          <span aria-hidden="true" style={{ fontSize: 22, color: 'var(--gold-light)', flexShrink: 0 }}>→</span>
+        </a>
+      </section>
+
       <figure className="chapter-image">
         <img
           src="/assets/gita-montage.webp"
@@ -609,13 +741,14 @@ export default function GitaVsStoicismPage() {
       </div>
 
             <ShlokaCard
-        verseRef=""
+        verseRef="Bhagavad Gita 2.47"
         sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।"
         iast="karmaṇyevādhikāraste mā phaleṣu kadācana"
         meaningLabel="Translation"
         meaning="You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions."
         insightLabel="The Parallel"
         insight="The Gita maps almost exactly onto Epictetus's dichotomy. The Sanskrit is precise: karmanyi (in action), eva (only), adhikarah (your rightful domain) — ma phaleSu kadacana (never in the fruits, not once). Action (karma) is yours. The fruit (phala) is not. And crucially, the verse adds a third instruction that is often missed: ma te sango'stvakarmayi — do not become attached to inaction either. Epictetus draws a line between internals and externals. The Gita draws the same line and then warns you not to use it as an excuse to stop acting altogether. Both traditions arrive at the same practical instruction: full effort, released grip."
+        mpLocation="stoic_blog_shloka_read_2_47"
       />
 
       <h2>Similarity 2: Virtue Is the Only True Good</h2>
@@ -674,7 +807,8 @@ export default function GitaVsStoicismPage() {
       </div>
 
             <ShlokaCard
-        verseRef=""
+        verseRef="Bhagavad Gita 3.35"
+        mpLocation="stoic_blog_shloka_read_3_35"
         sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।"
         iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt"
         meaningLabel="Translation (BG 3.35)"
@@ -692,7 +826,8 @@ export default function GitaVsStoicismPage() {
       </div>
 
             <ShlokaCard
-        verseRef=""
+        verseRef="Bhagavad Gita 2.38"
+        mpLocation="stoic_blog_shloka_read_2_38"
         sanskrit="सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥"
         iast="sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||"
         meaningLabel="Translation"
@@ -731,7 +866,8 @@ export default function GitaVsStoicismPage() {
       </div>
 
             <ShlokaCard
-        verseRef=""
+        verseRef="Bhagavad Gita 2.19"
+        mpLocation="stoic_blog_shloka_read_2_19"
         sanskrit="य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् । उभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥"
         iast="ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam | ubhau tau na vijānīto nāyaṃ hanti na hanyate ||"
         meaningLabel="Translation"

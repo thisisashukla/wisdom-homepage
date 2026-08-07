@@ -16,7 +16,27 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/gayatri-mantra-meaning" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Gayatri Mantra — Meaning, Word-by-Word Translation & How to Chant | Wisdom",
+    description: "What the Gayatri Mantra actually says. Word-by-word Sanskrit translation, history, and how to chant it.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/gayatri-mantra-meaning",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/gayatri-mantra-meaning",
+      'en-IN': "https://wisdomquotes.in/blogs/gayatri-mantra-meaning",
+      'x-default': "https://wisdomquotes.in/blogs/gayatri-mantra-meaning",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -144,6 +164,8 @@ const schemas = [
     "headline": "Gayatri Mantra — Meaning, Word-by-Word Translation, and How to Recite It",
     "description": "The Gayatri Mantra is the most-recited Sanskrit mantra on earth. Here is what it actually says — in Sanskrit, Hindi, and English, with a word-by-word breakdown, history, and how to chant it.",
     "datePublished": "2026-07-05",
+    "dateModified": "2026-08-01",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/gayatri-mantra-meaning" },
     "author": {
       "@type": "Person",
       "name": "Ankur Shukla",
@@ -155,9 +177,19 @@ const schemas = [
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Wisdom App",
-      "url": "https://wisdomquotes.in"
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+      { "@type": "ListItem", "position": 3, "name": "Gayatri Mantra — Meaning & Translation", "item": "https://wisdomquotes.in/blogs/gayatri-mantra-meaning" }
+    ]
   },
   {
     "@context": "https://schema.org",

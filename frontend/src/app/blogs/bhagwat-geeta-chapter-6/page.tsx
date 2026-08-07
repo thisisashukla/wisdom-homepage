@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "All 47 verses of Bhagavad Gita Chapter 6, meditation, the restless mind, and the lamp that does not flicker.",
     images: ["https://wisdomquotes.in/assets/chapter6.webp"],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6' } },
   robots: {
     index: true,
     follow: true,

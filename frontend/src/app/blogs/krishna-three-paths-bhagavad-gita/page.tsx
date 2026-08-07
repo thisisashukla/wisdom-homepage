@@ -34,9 +34,16 @@ export const metadata: Metadata = {
     description: "Krishna lays out three paths in the Bhagavad Gita, Action, Wisdom, Devotion. A deep reading grounded in the verses, with Tulsidas and modern psychology.",
     images: ['https://wisdomquotes.in/assets/3paths.webp'],
     creator: '@thisisashukla',
-    site: '@thisisashukla',
+    site: '@sansearchapp',
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/krishna-three-paths-bhagavad-gita" },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/krishna-three-paths-bhagavad-gita",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/krishna-three-paths-bhagavad-gita",
+      'en-IN': "https://wisdomquotes.in/blogs/krishna-three-paths-bhagavad-gita",
+      'x-default': "https://wisdomquotes.in/blogs/krishna-three-paths-bhagavad-gita",
+    },
+  },
   robots: {
     index: true,
     follow: true,

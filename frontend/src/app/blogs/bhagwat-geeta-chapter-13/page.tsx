@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "Bhagavad Gita Chapter 13, the field and the knower of the field. The Gita's foundational psychology of self-awareness.",
     images: ["https://wisdomquotes.in/assets/chapter13.webp"],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-13' } },
   robots: {
     index: true,
     follow: true,

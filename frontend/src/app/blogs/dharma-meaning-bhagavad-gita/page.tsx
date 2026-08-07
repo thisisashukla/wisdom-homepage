@@ -16,7 +16,27 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/dharma-meaning-bhagavad-gita" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Dharma in the Bhagavad Gita: What It Means and Why It's Not What You Think | Wisdom",
+    description: "Dharma doesn't mean duty or religion. In the Gita, it's closer to 'your own nature, acted on.' Svadharma is Krishna's answer to Arjuna's paralysis. Here's what the Gita actually says.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/dharma-meaning-bhagavad-gita",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/dharma-meaning-bhagavad-gita",
+      'en-IN': "https://wisdomquotes.in/blogs/dharma-meaning-bhagavad-gita",
+      'x-default': "https://wisdomquotes.in/blogs/dharma-meaning-bhagavad-gita",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -387,6 +407,8 @@ const schemas = [
     "headline": "Dharma in the Bhagavad Gita: What It Means and Why It's Not What You Think | Wisdom",
     "description": "Dharma doesn't mean duty or religion. In the Gita, it's closer to your own nature, acted on. Svadharma is Krishna's answer to Arjuna's paralysis.",
     "datePublished": "2026-06-12",
+    "dateModified": "2026-08-01",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/dharma-meaning-bhagavad-gita" },
     "author": {
       "@type": "Person",
       "name": "Ankur Shukla",
@@ -398,9 +420,19 @@ const schemas = [
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Wisdom App",
-      "url": "https://wisdomquotes.in"
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+      { "@type": "ListItem", "position": 3, "name": "Dharma in the Bhagavad Gita", "item": "https://wisdomquotes.in/blogs/dharma-meaning-bhagavad-gita" }
+    ]
   },
   {
     "@context": "https://schema.org",

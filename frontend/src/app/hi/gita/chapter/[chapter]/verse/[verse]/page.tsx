@@ -239,7 +239,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
       '@type': 'Person',
       name: 'Ankur Shukla',
       url: 'https://wisdomquotes.in/about',
-      sameAs: ['https://x.com/sansearchapp'],
+      sameAs: ['https://www.linkedin.com/in/thisisashukla/', 'https://x.com/thisisashukla'],
     },
     publisher: {
       '@type': 'Organization',
@@ -411,6 +411,80 @@ export default async function VersePageHi({ params }: { params: Params }) {
           </div>
         )}
       </article>
+
+      {/* ── Above-the-fold next-verse CTA (Hindi only). Hindi verse pages get
+           ~1 verse/session on mobile from search — the "continue the dialogue"
+           prev/next block sits below FAQs and blog links, and most bounces
+           never reach it. This compact primary-styled CTA appears right after
+           the verse card so search landings see a forward path before scrolling
+           into commentary. English pages already convert on prev/next lower on
+           the page; the addition here is Hindi-only. ── */}
+      {(next || prev) && (
+        <nav
+          aria-label="अगला/पिछला श्लोक"
+          className="gv-reveal"
+          style={{
+            display: 'grid',
+            gridTemplateColumns: prev && next ? 'auto 1fr' : '1fr',
+            gap: '10px',
+            margin: '18px 0 8px',
+          }}
+        >
+          {prev && (
+            <a
+              href={verseUrl(prev.chapter, prev.verse, 'hi')}
+              data-mp-location={`verse_hi_${c}_${v}_hero_prev`}
+              data-mp-event="Hindi Verse Hero Prev Clicked"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                padding: '13px 16px',
+                background: 'rgba(255,255,255,0.03)',
+                border: '1px solid rgba(200,136,30,0.28)',
+                borderRadius: '10px',
+                textDecoration: 'none',
+                color: 'var(--text-dim, rgba(245,232,204,0.65))',
+                fontSize: '13.5px',
+                fontWeight: 600,
+              }}
+            >
+              <span aria-hidden="true">←</span>
+              <span>पिछला · BG {prev.chapter}.{prev.verse}</span>
+            </a>
+          )}
+          {next && (
+            <a
+              href={verseUrl(next.chapter, next.verse, 'hi')}
+              data-mp-location={`verse_hi_${c}_${v}_hero_next`}
+              data-mp-event="Hindi Verse Hero Next Clicked"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: '14px',
+                padding: '14px 18px',
+                background: 'linear-gradient(135deg, var(--gold, #c8881e) 0%, #e0a24a 100%)',
+                borderRadius: '10px',
+                textDecoration: 'none',
+                color: '#120505',
+                boxShadow: '0 4px 18px rgba(200,136,30,0.28)',
+              }}
+            >
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 700, opacity: 0.75 }}>
+                  अगला श्लोक · संवाद जारी रखें
+                </div>
+                <div style={{ fontSize: '15.5px', fontWeight: 700, marginTop: 2, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  भगवद् गीता {next.chapter}.{next.verse}
+                  {next.essence && <span style={{ fontWeight: 500, opacity: 0.9 }}> — {next.essence.length > 42 ? next.essence.slice(0, 42) + '…' : next.essence}</span>}
+                </div>
+              </div>
+              <span aria-hidden="true" style={{ fontSize: 22, fontWeight: 700, flexShrink: 0 }}>→</span>
+            </a>
+          )}
+        </nav>
+      )}
 
       {wordByWord.length > 0 && (
         <section className="gv-wbw gv-reveal" aria-label="शब्दार्थ">
@@ -616,7 +690,6 @@ export default async function VersePageHi({ params }: { params: Params }) {
         </section>
       )}
 
-      <FeedbackWidget pageType="verse" pageId={`verse_hi_${c}_${v}`} pageName={`gita_verse_hi_${c}_${v}`} />
 
       {blogLinks.length > 0 && (
         <section
@@ -729,7 +802,31 @@ export default async function VersePageHi({ params }: { params: Params }) {
             <span className="gv-sechead-label">इसी भाव के श्लोक</span>
           </div>
           <ul className="gv-related-grid">
-            {related.map((r) => {
+            {related.slice(0, Math.ceil(related.length / 2)).map((r) => {
+              const sharedTag = r.tags?.find((t) => verse.tags.includes(t))
+              return (
+                <li key={`${r.chapter}-${r.verse}`}>
+                  <a
+                    className="gv-rel-card"
+                    href={verseUrl(r.chapter, r.verse, 'hi')}
+                    data-mp-location={`verse_hi_${c}_${v}_related_${r.chapter}_${r.verse}`}
+                  >
+                    <div className="gv-rel-top">
+                      <span className="gv-rel-num">{r.chapter}.{r.verse}</span>
+                      {sharedTag && <span className="gv-rel-tag">{sharedTag.replace(/-/g, ' ')}</span>}
+                    </div>
+                    <p className="gv-rel-quote">&ldquo;{r.essence || r.snippet}&rdquo;</p>
+                    <span className="gv-rel-cta">श्लोक पढ़ें →</span>
+                  </a>
+                </li>
+              )
+            })}
+          </ul>
+
+          <FeedbackWidget pageType="verse" pageId={`verse_hi_${c}_${v}`} pageName={`gita_verse_hi_${c}_${v}`} />
+
+          <ul className="gv-related-grid">
+            {related.slice(Math.ceil(related.length / 2)).map((r) => {
               const sharedTag = r.tags?.find((t) => verse.tags.includes(t))
               return (
                 <li key={`${r.chapter}-${r.verse}`}>

@@ -293,7 +293,7 @@ export function ScriptureAIWaitlistButton({
 
   if (variant === 'nav') {
     button = (
-      <button type="button" className="btn-nav-scripture" onClick={trackedOnClick}>
+      <button type="button" className="btn-nav-scripture" onClick={trackedOnClick} data-mp-section="sai_nav">
         <span className="sai-pulse-dot" aria-hidden="true" />
         Ask Scripture AI
       </button>
@@ -306,7 +306,7 @@ export function ScriptureAIWaitlistButton({
     )
   } else if (variant === 'primary') {
     button = (
-      <button type="button" className="sai-teaser-btn" onClick={trackedOnClick}>
+      <button type="button" className="sai-teaser-btn" onClick={trackedOnClick} data-mp-section="sai_home_button">
         Join the Waitlist →
       </button>
     )
@@ -344,7 +344,7 @@ export function ScriptureAITeaser({
 
   return (
     <>
-      <div className="sai-teaser">
+      <div className="sai-teaser" data-mp-section="sai_home_teaser">
         <div className="sai-teaser-inner">
           <div className="sai-teaser-left">
             <span className="sai-soon-badge">Coming Soon</span>
@@ -395,7 +395,7 @@ export function ScriptureAIHeroCTA({
 
   return (
     <>
-      <div className="sai-hero-cta">
+      <div className="sai-hero-cta" data-mp-section="sai_hero_cta">
         <button
           type="button"
           className="sai-hero-btn"

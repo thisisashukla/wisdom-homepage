@@ -161,11 +161,36 @@ export default async function ChapterPageHi({ params }: { params: Params }) {
         </div>
       )}
 
-      <FeedbackWidget pageType="chapter" pageId={`chapter_hi_${ch.number}`} pageName={`gita_chapter_hi_${ch.number}`} />
 
       <h2 className="gita-h2" style={{ marginTop: '40px' }}>सभी श्लोक</h2>
       <ul className="gita-verse-list">
-        {verses.map((v) => (
+        {verses.slice(0, Math.ceil(verses.length / 2)).map((v) => (
+          <li key={v.verse}>
+            <a href={verseUrl(v.chapter, v.verse, 'hi')} data-mp-location={`chapter_hi_${ch.number}_verse_list_${v.verse}`}>
+              <div className="gita-verse-ref">
+                <span className="gita-verse-ref-num">{v.chapter}.{v.verse}</span>
+                <span className="gita-verse-ref-ch">अ. {v.chapter}</span>
+              </div>
+              <div className="gita-verse-body">
+                <p className="gita-verse-essence">{v.essence || v.englishTranslation}</p>
+                <p className="gita-verse-insight">
+                  {(v.hindiTranslation || v.englishTranslation).slice(0, 120)}
+                  {(v.hindiTranslation || v.englishTranslation).length > 120 ? '…' : ''}
+                </p>
+                <div className="gita-verse-footer">
+                  {v.depth ? <span className={`gita-verse-depth gita-verse-depth--${v.depth}`}>{v.depth}</span> : <span />}
+                  <span className="gita-verse-arrow">→</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <FeedbackWidget pageType="chapter" pageId={`chapter_hi_${ch.number}`} pageName={`gita_chapter_hi_${ch.number}`} />
+
+      <ul className="gita-verse-list">
+        {verses.slice(Math.ceil(verses.length / 2)).map((v) => (
           <li key={v.verse}>
             <a href={verseUrl(v.chapter, v.verse, 'hi')} data-mp-location={`chapter_hi_${ch.number}_verse_list_${v.verse}`}>
               <div className="gita-verse-ref">

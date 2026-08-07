@@ -16,7 +16,27 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/20-famous-sanskrit-shlokas" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "20 Famous Sanskrit Shlokas — with Meaning in Hindi and English | Wisdom",
+    description: "The twenty Sanskrit shlokas every educated Indian should know by heart. Devanagari, IAST, English, and Hindi meaning for each.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/20-famous-sanskrit-shlokas",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/20-famous-sanskrit-shlokas",
+      'en-IN': "https://wisdomquotes.in/blogs/20-famous-sanskrit-shlokas",
+      'x-default': "https://wisdomquotes.in/blogs/20-famous-sanskrit-shlokas",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -144,6 +164,9 @@ const schemas = [
     "headline": "20 Famous Sanskrit Shlokas — with Meaning in Hindi and English",
     "description": "The twenty Sanskrit shlokas every educated Indian should know by heart — from Vakratunda Mahakaya to Om Purnamadah — with accurate Devanagari, IAST, English, and Hindi meaning.",
     "datePublished": "2026-07-05",
+    "dateModified": "2026-08-01",
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/20-famous-sanskrit-shlokas" },
     "author": {
       "@type": "Person",
       "name": "Ankur Shukla",
@@ -155,9 +178,19 @@ const schemas = [
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Wisdom App",
-      "url": "https://wisdomquotes.in"
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+      { "@type": "ListItem", "position": 3, "name": "20 Famous Sanskrit Shlokas with Meaning in Hindi and English", "item": "https://wisdomquotes.in/blogs/20-famous-sanskrit-shlokas" }
+    ]
   },
   {
     "@context": "https://schema.org",

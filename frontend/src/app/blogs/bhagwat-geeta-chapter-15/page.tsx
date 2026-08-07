@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "Bhagavad Gita Chapter 15, the upside-down tree, the sword of detachment, and the Supreme Self beyond change and changelessness.",
     images: ["https://wisdomquotes.in/assets/chapter15.webp"],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15' } },
   robots: {
     index: true,
     follow: true,

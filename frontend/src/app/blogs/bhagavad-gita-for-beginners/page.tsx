@@ -16,7 +16,27 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-for-beginners" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Bhagavad Gita for Beginners — Where to Start and What to Read First | Wisdom",
+    description: "The Bhagavad Gita is 700 verses across 18 chapters. Where do you start? A no-nonsense guide for complete beginners.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-for-beginners",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/bhagavad-gita-for-beginners",
+      'en-IN': "https://wisdomquotes.in/blogs/bhagavad-gita-for-beginners",
+      'x-default': "https://wisdomquotes.in/blogs/bhagavad-gita-for-beginners",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -388,6 +408,8 @@ const schemas = [
   "headline": "Bhagavad Gita for Beginners — Where to Start and What to Read First | Wisdom",
   "description": "The Bhagavad Gita is 700 verses across 18 chapters. Where do you start? Which translation? What does it actually cover? A no-nonsense guide for complete beginners.",
   "datePublished": "2026-05-05",
+  "dateModified": "2026-08-01",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-for-beginners" },
   "author": {
     "@type": "Person",
     "name": "Ankur Shukla",
@@ -399,9 +421,19 @@ const schemas = [
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Wisdom App",
-    "url": "https://wisdomquotes.in"
+    "name": "Wisdom",
+    "url": "https://wisdomquotes.in",
+    "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
   }
+},
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+    { "@type": "ListItem", "position": 3, "name": "Bhagavad Gita for Beginners", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-for-beginners" }
+  ]
 },
   {
   "@context": "https://schema.org",

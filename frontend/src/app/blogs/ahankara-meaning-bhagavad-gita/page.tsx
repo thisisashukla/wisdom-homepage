@@ -19,7 +19,23 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/assets/ahankar.webp', width: 1248, height: 832 }],
   },
-  alternates: { canonical: 'https://wisdomquotes.in/blogs/ahankara-meaning-bhagavad-gita' },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Ahankara Meaning — The Bhagavad Gita's Word for Ego | Wisdom",
+    description: "Ahankara is not 'ego' in the Western sense. It is the 'I-maker' — the mechanism that causes the infinite self to mistake itself for a finite, named person.",
+    images: ['https://wisdomquotes.in/assets/ahankar.webp'],
+  },
+  alternates: {
+    canonical: 'https://wisdomquotes.in/blogs/ahankara-meaning-bhagavad-gita',
+    languages: { 'x-default': 'https://wisdomquotes.in/blogs/ahankara-meaning-bhagavad-gita' },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -274,11 +290,12 @@ const pageCSS = `
 const schemas = [
   {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': ['Article', 'LearningResource'],
     headline: "Ahankara Meaning — The Bhagavad Gita's Word for Ego",
     description:
       "Ahankara is not ego in the Western sense. It is the I-maker — the mechanism that causes the infinite self to mistake itself for a finite person. Here is what the Gita says.",
     datePublished: '2026-07-17',
+    dateModified: '2026-08-01',
     author: {
       '@type': 'Person',
       name: 'Ankur Shukla',
@@ -290,9 +307,26 @@ const schemas = [
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Wisdom App',
+      name: 'Wisdom',
       url: 'https://wisdomquotes.in',
+      logo: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/assets/new-light-logo.webp' },
     },
+    image: { '@type': 'ImageObject', url: 'https://wisdomquotes.in/assets/ahankar.webp', width: 1248, height: 832 },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://wisdomquotes.in/blogs/ahankara-meaning-bhagavad-gita' },
+    articleSection: 'Bhagavad Gita concepts',
+    inLanguage: 'en',
+    isAccessibleForFree: true,
+    learningResourceType: 'Article',
+    educationalLevel: 'General',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Wisdom', item: 'https://wisdomquotes.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://wisdomquotes.in/blogs/' },
+      { '@type': 'ListItem', position: 3, name: "Ahankara Meaning — The Bhagavad Gita's Word for Ego", item: 'https://wisdomquotes.in/blogs/ahankara-meaning-bhagavad-gita' },
+    ],
   },
   {
     '@context': 'https://schema.org',

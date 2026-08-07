@@ -16,7 +16,23 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-saar" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Bhagwat Geeta Saar — The Essence of the Bhagavad Gita in 18 Verses | Wisdom",
+    description: "The famous 'Geeta Saar' quote isn't in the Gita. Here's what Krishna actually taught — one core verse per chapter.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-saar",
+    languages: { 'x-default': "https://wisdomquotes.in/blogs/bhagwat-geeta-saar" },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -158,6 +174,15 @@ const schemas = [
       "name": "Wisdom App",
       "url": "https://wisdomquotes.in"
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs/" },
+      { "@type": "ListItem", "position": 3, "name": "Bhagwat Geeta Saar — The Essence of the Bhagavad Gita", "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-saar" }
+    ]
   },
   {
     "@context": "https://schema.org",

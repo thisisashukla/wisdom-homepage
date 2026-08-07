@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "Bhagavad Gita Chapter 12, how a devotee actually lives. The four-step ladder. The qualities of the one Krishna calls dear.",
     images: ["https://wisdomquotes.in/assets/chapter12.webp"],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12' } },
   robots: {
     index: true,
     follow: true,

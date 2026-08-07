@@ -16,7 +16,27 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Karma in the Bhagavad Gita — The Real Meaning + 7 Key Verses (Chapter 3 Explained)",
+    description: "Karma is not cosmic payback. Chapter 3 of the Bhagavad Gita defines it precisely — act without attachment to results. Real meaning plus 7 karma shlokas from the Gita with Sanskrit and English.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning",
+      'en-IN': "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning",
+      'x-default': "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -388,6 +408,8 @@ const schemas = [
   "headline": "Karma — What It Actually Means in the Bhagavad Gita | Wisdom",
   "description": "Karma doesn't mean what goes around comes around. Here's what the Bhagavad Gita actually teaches about karma.",
   "datePublished": "2026-05-05",
+  "dateModified": "2026-08-01",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning" },
   "author": {
     "@type": "Person",
     "name": "Ankur Shukla",
@@ -399,9 +421,19 @@ const schemas = [
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Wisdom App",
-    "url": "https://wisdomquotes.in"
+    "name": "Wisdom",
+    "url": "https://wisdomquotes.in",
+    "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
   }
+},
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+    { "@type": "ListItem", "position": 3, "name": "Karma in the Bhagavad Gita — The Real Meaning", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning" }
+  ]
 },
   {
   "@context": "https://schema.org",

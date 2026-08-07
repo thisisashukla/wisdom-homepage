@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "All 30 verses of Bhagavad Gita Chapter 7, pearls strung on a thread, four seekers, and the rare realization 'Vasudeva is everything.'",
     images: ["https://wisdomquotes.in/assets/chapter7.webp"],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7" },
+  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7' } },
   robots: {
     index: true,
     follow: true,

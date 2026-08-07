@@ -14,8 +14,29 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health",
     siteName: 'Wisdom',
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Beyond the Bhagavad Gita: Best Quotes on Mental & Spiritual Health from 7 Lesser-Known Gitas | Wisdom",
+    description: "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each carry profound wisdom for mental and spiritual health.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health",
+      'en-IN': "https://wisdomquotes.in/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health",
+      'x-default': "https://wisdomquotes.in/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -415,13 +436,30 @@ const schemas = [
     "headline": "Beyond the Bhagavad Gita: Best Quotes on Mental & Spiritual Health from 7 Lesser-Known Gitas",
     "description": "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each carry profound wisdom for mental and spiritual health.",
     "datePublished": "2026-05-20",
+    "dateModified": "2026-08-01",
+    "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health" },
     "author": {
       "@type": "Person",
       "name": "Ankur Shukla",
       "url": "https://wisdomquotes.in/about",
       "sameAs": ["https://www.linkedin.com/in/thisisashukla/", "https://x.com/thisisashukla"]
     },
-    "publisher": { "@type": "Organization", "name": "Wisdom App", "url": "https://wisdomquotes.in" }
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+      { "@type": "ListItem", "position": 3, "name": "Beyond the Bhagavad Gita: Best Quotes on Mental & Spiritual Health from 7 Lesser-Known Gitas", "item": "https://wisdomquotes.in/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health" }
+    ]
   },
   {
     "@context": "https://schema.org",

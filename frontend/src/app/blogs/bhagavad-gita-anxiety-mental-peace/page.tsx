@@ -14,8 +14,29 @@ export const metadata: Metadata = {
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace",
     siteName: 'Wisdom',
+    images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "What Does the Bhagavad Gita Say About Anxiety and Fear? | Wisdom",
+    description: "The Gita opens with Arjuna mid-panic attack. What follows is a 700-verse answer to anxiety, dread, and mental restlessness. Here are the key verses.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace",
+      'en-IN': "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace",
+      'x-default': "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -387,6 +408,9 @@ const schemas = [
   "headline": "What the Bhagavad Gita Says About Anxiety, Stress & Mental Peace | Wisdom",
   "description": "The Bhagavad Gita was written for a man in the middle of a panic attack. Here's what it actually says about anxiety, fear, and the path to mental peace.",
   "datePublished": "2026-05-05",
+  "dateModified": "2026-08-01",
+  "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace" },
   "author": {
     "@type": "Person",
     "name": "Ankur Shukla",
@@ -398,9 +422,19 @@ const schemas = [
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Wisdom App",
-    "url": "https://wisdomquotes.in"
+    "name": "Wisdom",
+    "url": "https://wisdomquotes.in",
+    "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
   }
+},
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+    { "@type": "ListItem", "position": 3, "name": "What Does the Bhagavad Gita Say About Anxiety and Fear?", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace" }
+  ]
 },
   {
   "@context": "https://schema.org",

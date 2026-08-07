@@ -16,7 +16,27 @@ export const metadata: Metadata = {
     siteName: 'Wisdom',
     images: [{ url: 'https://wisdomquotes.in/og-image.webp', width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/hare-krishna-mahamantra" },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@sansearchapp',
+    creator: '@thisisashukla',
+    title: "Hare Krishna Mahamantra — Meaning, History, and the Practice of Kirtan | Wisdom",
+    description: "A 16-word Sanskrit mantra that traveled from a minor Upanishad to a Bengali saint to the Billboard charts. What it means, where it came from, and how to actually chant it.",
+    images: ['https://wisdomquotes.in/og-image.webp'],
+  },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/hare-krishna-mahamantra",
+    languages: {
+      'en': "https://wisdomquotes.in/blogs/hare-krishna-mahamantra",
+      'en-IN': "https://wisdomquotes.in/blogs/hare-krishna-mahamantra",
+      'x-default': "https://wisdomquotes.in/blogs/hare-krishna-mahamantra",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
 }
 
 const pageCSS = `
@@ -144,6 +164,8 @@ const schemas = [
     "headline": "Hare Krishna Mahamantra — Meaning, History, and the Practice of Kirtan",
     "description": "A close reading of the 16-word Sanskrit Mahamantra: its source in the Kali Santarana Upanishad, its transmission through Chaitanya Mahaprabhu, its global reach through ISKCON, and how to actually chant it.",
     "datePublished": "2026-07-05",
+    "dateModified": "2026-08-01",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/hare-krishna-mahamantra" },
     "author": {
       "@type": "Person",
       "name": "Ankur Shukla",
@@ -155,9 +177,19 @@ const schemas = [
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Wisdom App",
-      "url": "https://wisdomquotes.in"
+      "name": "Wisdom",
+      "url": "https://wisdomquotes.in",
+      "logo": { "@type": "ImageObject", "url": "https://wisdomquotes.in/assets/new-light-logo.webp" }
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
+      { "@type": "ListItem", "position": 3, "name": "Hare Krishna Mahamantra", "item": "https://wisdomquotes.in/blogs/hare-krishna-mahamantra" }
+    ]
   },
   {
     "@context": "https://schema.org",

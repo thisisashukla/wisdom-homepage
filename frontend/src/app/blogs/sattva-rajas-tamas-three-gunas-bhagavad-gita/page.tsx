@@ -5,11 +5,11 @@ import ShlokaCard from '@/components/gita/ShlokaCard'
 import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
 
 export const metadata: Metadata = {
-  title: "Sattva, Rajas, Tamas Meaning — The Three Gunas of the Bhagavad Gita, Explained Simply | Wisdom",
-  description: "Sattva (clarity), rajas (drive) and tamas (inertia) are the three gunas of the Bhagavad Gita. Chapter 14 says they make up all of nature — including your personality, food, work and moods. Here is what each one means, how they interact, and how to read your own state right now.",
+  title: "Sattva, Rajas, Tamas — The Three Gunas Explained (and Which One Is Running You Right Now) | Wisdom",
+  description: "Sattva (clarity), rajas (drive), tamas (inertia) — the three gunas of the Bhagavad Gita explained in plain English. What each one feels like, how they show up in your food, work and moods, which one is dominant in you right now, and how Chapter 14 says to move beyond them.",
   keywords: "sattva rajas tamas meaning, three gunas bhagavad gita, sattva rajas tamas explained, what are the three gunas, gunatraya bhagavad gita, sattva guna meaning, rajas guna meaning, tamas guna meaning, gunatita state, bhagavad gita chapter 14, three gunas in daily life",
   openGraph: {
-    title: "Sattva, Rajas, Tamas Meaning — The Three Gunas of the Bhagavad Gita, Explained Simply",
+    title: "Sattva, Rajas, Tamas — The Three Gunas Explained (and Which One Is Running You Right Now)",
     description: "Sattva (clarity), rajas (drive) and tamas (inertia) — the three gunas of the Gita explained simply, with Chapter 14 verses and how to read your own state right now.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/sattva-rajas-tamas-three-gunas-bhagavad-gita",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Sattva, Rajas, Tamas — The Three Gunas of the Bhagavad Gita, Explained Simply",
+    title: "Sattva, Rajas, Tamas — The Three Gunas Explained (and Which One Is Running You Right Now)",
     description: "Sattva (clarity), rajas (drive) and tamas (inertia) — the three gunas of the Gita, and how to read your own state right now.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },

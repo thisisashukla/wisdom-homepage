@@ -23,7 +23,10 @@ export const metadata: Metadata = {
     description: "Bhagavad Gita Chapter 17, you are made of what you trust. The three kinds of faith. Om Tat Sat.",
     images: ["https://wisdomquotes.in/assets/chapter17.webp"],
   },
-  alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17" },
+  alternates: {
+    canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17",
+    languages: { 'x-default': "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-17" },
+  },
   robots: {
     index: true,
     follow: true,
