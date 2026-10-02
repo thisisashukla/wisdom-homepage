@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 5 Summary \u2013 Key Verses & Meaning (Karma Sanyasa Yoga)",
@@ -1092,7 +1092,7 @@ export default function ChapterFivePage() {
           </tbody>
         </table>
 
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 5"} />
+        <GitaAppCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 5"} />
 
 
       <FeedbackWidget pageType="blog" />
@@ -1163,14 +1163,7 @@ export default function ChapterFivePage() {
     {/* FOOTER */}
     <footer>
       <p>
-        Wisdom © 2026. Part of a
-        <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
-          target="_blank"
-          rel="noopener"
-          data-mp-location="footer"
-          >free iPhone app</a
-        >
-        that delivers daily Bhagavad Gita shlokas. Made with reverence.</p><p style={{ marginTop: '8px' }}><a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>
+        Wisdom © 2026. <a href="/gita" data-mp-location="footer_read_gita">Read the Bhagavad Gita online.</a> Made with reverence.</p><p style={{ marginTop: '8px' }}><a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>
       </p>
     </footer>
   

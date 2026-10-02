@@ -1,0 +1,26 @@
+[functions.reflection-stt]
+verify_jwt = true
+
+[functions.reflection-process]
+verify_jwt = true
+
+[functions.reflection-tts]
+verify_jwt = true
+
+[functions.reflection-discuss]
+verify_jwt = true
+
+[functions.weekly-insight]
+verify_jwt = true
+
+[functions.reflection-history]
+verify_jwt = true
+
+[functions.sync-entitlement]
+verify_jwt = true
+
+[functions.revenuecat-webhook]
+verify_jwt = false
+
+[functions.backfill-quote-embeddings]
+verify_jwt = false

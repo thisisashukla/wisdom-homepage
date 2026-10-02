@@ -5,6 +5,7 @@ const nextConfig = {
   // links + sitemap URLs are written).  Prevents 308 redirects on links that
   // accidentally include the trailing slash.
   trailingSlash: false,
+  skipTrailingSlashRedirect: true,
 
   // Chapters 1-5 used to redirect to /gita/chapter/N via a 301. The redirect
   // has been removed — the long-form article blogs at
@@ -15,19 +16,17 @@ const nextConfig = {
       {
         source: '/blogs/bhagwat-geeta-chapter-1.html',
         destination: '/blogs/bhagwat-geeta-chapter-1',
-        permanent: true,
-      },
-      // Canonicalise the apex `www` host and any accidental trailing slash on /blogs/
-      {
-        source: '/blogs/',
-        destination: '/blogs',
-        permanent: true,
+        statusCode: 301,
       },
     ]
   },
 
   async headers() {
     return [
+      {
+        source: '/.well-known/apple-app-site-association',
+        headers: [{ key: 'Content-Type', value: 'application/json' }],
+      },
       {
         // Chapter blog pages — allow the CDN to hold them briefly but keep
         // them revalidatable so content edits appear within the hour.

@@ -91,38 +91,11 @@ export default function HomeAnimations() {
       navObserver.observe(heroEl)
     }
 
-    // ── Cursor glow (desktop only) ────────────────────────────────────
-    const glow = document.createElement('div')
-    glow.className = 'cursor-glow'
-    document.body.appendChild(glow)
-
-    let glowVisible = false
-    const onMouseMove = (e: MouseEvent) => {
-      if (!glowVisible) {
-        glow.style.opacity = '1'
-        glowVisible = true
-      }
-      glow.style.transform = `translate(${e.clientX - 160}px, ${e.clientY - 160}px)`
-    }
-    const onMouseLeave = () => {
-      glow.style.opacity = '0'
-      glowVisible = false
-    }
-
-    // Only on non-touch devices
-    if (window.matchMedia('(hover: hover)').matches) {
-      document.addEventListener('mousemove', onMouseMove)
-      document.addEventListener('mouseleave', onMouseLeave)
-    }
-
     return () => {
       revealObserver.disconnect()
       countObserver.disconnect()
       navObserver?.disconnect()
       faqHandlers.forEach(({ btn, fn }) => btn.removeEventListener('click', fn))
-      document.removeEventListener('mousemove', onMouseMove)
-      document.removeEventListener('mouseleave', onMouseLeave)
-      if (document.body.contains(glow)) document.body.removeChild(glow)
     }
   }, [])
 

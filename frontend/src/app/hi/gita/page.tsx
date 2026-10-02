@@ -1,3 +1,5 @@
+import ContinueReading from '@/components/gita/ReadingProgress'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import type { Metadata } from 'next'
 import {
   getAllChapters,
@@ -137,8 +139,10 @@ export default function GitaIndexPageHi() {
           </div>
         </div>
       </section>
+      <ContinueReading locale="hi" />
 
       <SavedVersesPanel locale="hi" />
+      <GitaAppCTA variant="inline" locale="hi" placement="hub_intro" />
 
       {/* CHAPTERS */}
       <h2 className="gita-h2">सभी 18 अध्याय</h2>
@@ -188,6 +192,7 @@ export default function GitaIndexPageHi() {
           </a>
         ))}
       </div>
+
     </main>
   )
 }

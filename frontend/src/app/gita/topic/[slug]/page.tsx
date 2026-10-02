@@ -1,9 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getAllTopics, getTopic, getTopicVerses, topicIntro, topicUrl, verseUrl } from '@/lib/gita'
-// GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
-// for the Scripture AI waitlist while that product launches.
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import BlogTracker from '@/components/BlogTracker'
 
 type Params = { slug: string }
@@ -171,7 +169,7 @@ export default async function TopicPage({ params }: { params: Params }) {
         ))}
       </ul>
 
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName="Gita Topic" />
+      <GitaAppCTA variant="chapter" locale="en" pageName="Gita Topic" />
     </main>
   )
 }

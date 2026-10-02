@@ -1,5 +1,5 @@
 """
-main.py — FastAPI entry point for the Wisdom scripture search backend.
+main.py — FastAPI entry point for the shared Wisdom website and mobile backend.
 
 Pipeline:
     POST /api/v1/intent      → validate + extract 1-3 intents (Sarvam AI)
@@ -14,7 +14,7 @@ Verse of the Day:
 Startup:
     Loads verses.json + embeddings.npy from DATA_DIR (default: ./data)
     Loads BGE-M3 from MODEL_DIR if set, else HuggingFace cache (~560 MB first run)
-    Creates the reranker singleton (weights lazy-loaded on first request)
+    Loads the reranker weights before the application reports ready
 
 Run:
     uvicorn main:app --host 0.0.0.0 --port 8000 --reload
@@ -26,6 +26,7 @@ import os
 os.environ.setdefault("USE_TF", "0")
 os.environ.setdefault("USE_FLAX", "0")
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+os.environ.setdefault("HF_HUB_DISABLE_XET", "1")
 
 import logging
 import sys
@@ -39,10 +40,14 @@ from ai.embedder import init_embedder
 from ai.index import init_index
 from ai.reranker import init_reranker
 from ai.sarvam import init_sarvam
+from ai.vagdhenu import init_vagdhenu
 from server import intent as intent_router
 from server import search as search_router
 from server import rag as rag_router
 from server import verse_of_day as verse_of_day_router
+from server import audio as audio_router
+from server import reflections as reflections_router
+from server import entitlements as entitlements_router
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -66,6 +71,15 @@ async def lifespan(app: FastAPI):
     init_sarvam(api_key=settings.sarvam_api_key, model=settings.sarvam_model)
     logger.info("Sarvam client ready (model=%s)", settings.sarvam_model)
 
+    init_vagdhenu(
+        backend=settings.vagdhenu_backend,
+        hf_space_id=settings.vagdhenu_hf_space_id,
+        hf_api_name=settings.vagdhenu_hf_api_name,
+        http_url=settings.vagdhenu_http_url or None,
+        http_auth=settings.vagdhenu_http_auth or None,
+        http_timeout=settings.vagdhenu_http_timeout,
+    )
+
     # 2. BGE-M3 embedder (for query embedding at request time)
     embedder = init_embedder(
         model_dir  = settings.model_dir,
@@ -77,12 +91,12 @@ async def lifespan(app: FastAPI):
     idx = init_index(data_dir=settings.data_dir)
     logger.info("Index ready: %d verses", idx.size)
 
-    # 4. Reranker (singleton; weights lazy-loaded on first search).
-    # Set RERANKER_MODEL="" to disable — search then degrades to dense only.
-    reranker = init_reranker(model_source=settings.reranker_model)
+    # 4. Reranker. A configured model is loaded before readiness so the first
+    # request never pays model startup cost. Set RERANKER_MODEL="" to disable.
+    reranker = init_reranker(model_source=settings.reranker_model, eager=True)
     logger.info(
         "Reranker %s",
-        "created (lazy load on first request)" if reranker else "DISABLED (no reranker configured)",
+        "loaded and ready" if reranker and reranker.available else "DISABLED (no reranker configured)",
     )
 
     logger.info("═══ Wisdom backend ready ═══")
@@ -93,9 +107,11 @@ async def lifespan(app: FastAPI):
 # ── App ───────────────────────────────────────────────────────────────────────
 
 app = FastAPI(
-    title="Wisdom Scripture Search API",
+    title="Wisdom Shared API",
     description=(
-        "Three-step RAG pipeline over 18k Hindu scripture verses. "
+        "Shared website and mobile API over 18k Hindu scripture verses. "
+        "Includes the three-step public search RAG pipeline and an authenticated "
+        "daily-reflection, speech, progression, and subscription API. "
         "Step 1: intent extraction (+ verse-ref fast-path, follow-up rewrite). "
         "Step 2: BGE-M3 semantic search + cross-intent re-ranking + optional "
         "bge-reranker-v2-m3 + scripture diversity + score-floor gating. "
@@ -118,11 +134,14 @@ app.include_router(intent_router.router,        prefix="/api/v1")
 app.include_router(search_router.router,        prefix="/api/v1")
 app.include_router(rag_router.router,           prefix="/api/v1")
 app.include_router(verse_of_day_router.router,  prefix="/api/v1")
+app.include_router(audio_router.router,         prefix="/api/v1")
+app.include_router(reflections_router.router,   prefix="/api/v1")
+app.include_router(entitlements_router.router,  prefix="/api/v1")
 
 
 @app.get("/", tags=["health"])
 async def root():
-    return {"status": "ok", "service": "wisdom-search", "version": app.version}
+    return {"status": "ok", "service": "wisdom-shared-backend", "version": app.version}
 
 
 @app.get("/health", tags=["health"])

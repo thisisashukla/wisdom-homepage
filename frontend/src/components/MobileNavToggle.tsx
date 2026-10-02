@@ -68,7 +68,7 @@ export function MobileNavToggle() {
                 borderBottom: 0,
               }}
             >
-              Get the App →
+              Get the iPhone app →
             </a>
           </li>
         </ul>

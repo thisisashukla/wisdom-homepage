@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 import time
 from abc import ABC, abstractmethod
 from collections import defaultdict
@@ -35,6 +36,31 @@ from typing import Any, Dict, List, Optional
 import numpy as np
 
 logger = logging.getLogger(__name__)
+
+
+def _enriched_row_to_verse(uid: str, row: dict[str, Any]) -> dict[str, Any]:
+    """Normalise the saved enriched-index metadata to the backend verse shape."""
+    reference = str(row.get("verse_id") or "")
+    # An enriched sequential ID is not proof of a chapter/verse citation.
+    # The source-text join in from_data_dir restores such references when verified.
+    if reference.isdigit() and int(reference) == int(row.get("order") or 0):
+        reference = ""
+    return {
+        "script_ref": uid,
+        "scripture": row.get("scripture_slug") or row.get("scripture") or "",
+        "orig_ref": reference,
+        "order": int(row.get("order") or 0),
+        "verse_text": row.get("verse_sanskrit") or "",
+        "translation": row.get("verse_hindi") or "",
+        "english_translation": row.get("english_translation") or "",
+        "essence": row.get("essence") or "",
+        "simple_meaning": row.get("simple_meaning") or "",
+        "insight": row.get("insight") or row.get("simple_insight") or "",
+        "modern_relevance": row.get("modern_relevance") or "",
+        "speaker": row.get("speaker") or "",
+        "tags": row.get("tags") or [],
+        "meter": row.get("meter") or "anushtubh",
+    }
 
 
 # ── Interface ─────────────────────────────────────────────────────────────────
@@ -79,6 +105,8 @@ class NumpyScriptureIndex(ScriptureIndex):
         self._verses     = verses
         self._embeddings = embeddings                    # (N, 1024) float32, L2-normalised
         self._by_ref: Dict[str, dict] = {v["script_ref"]: v for v in verses}
+        self._by_ref.update({v["source_alias"]: v for v in verses if v.get("source_alias")})
+        self._position_by_ref: Dict[str, int] = {v["script_ref"]: i for i, v in enumerate(verses)}
         self._by_scripture: Dict[str, list] = defaultdict(list)
         for v in verses:
             self._by_scripture[v["scripture"]].append(v)
@@ -91,7 +119,37 @@ class NumpyScriptureIndex(ScriptureIndex):
     @classmethod
     def from_data_dir(cls, data_dir: Path) -> "NumpyScriptureIndex":
         t0 = time.perf_counter()
-        embed_path  = data_dir / "embeddings.npy"
+        enriched_embeddings = data_dir / "bge_m3_enriched.npy"
+        enriched_uids = data_dir / "bge_m3_enriched_uids.json"
+        enriched_meta = data_dir / "verse_meta.json"
+
+        if enriched_embeddings.exists() and enriched_uids.exists() and enriched_meta.exists():
+            logger.info("Loading enriched embeddings from %s …", enriched_embeddings)
+            embeddings = np.load(str(enriched_embeddings)).astype(np.float32)
+            uids = json.loads(enriched_uids.read_text(encoding="utf-8"))
+            metadata = json.loads(enriched_meta.read_text(encoding="utf-8"))
+            if len(uids) != len(set(uids)):
+                raise ValueError("Enriched scripture index contains duplicate verse IDs")
+            verses = [_enriched_row_to_verse(uid, metadata[uid]) for uid in uids]
+            # Enriched verse_id can be an ordinal (e.g. Gita 267), not a chapter
+            # citation. Restore references only after matching the actual Sanskrit.
+            source_file = data_dir / "verses.json"
+            if source_file.exists():
+                source_rows = json.loads(source_file.read_text(encoding="utf-8"))
+                by_order = {(v["scripture"], int(v["order"])): v for v in source_rows if v.get("scripture") and v.get("order") is not None}
+                for verse in verses:
+                    original = by_order.get((verse["scripture"], verse["order"]))
+                    if (original and verse["verse_text"] and
+                        re.sub(r"\s", "", original.get("verse_text", "")) == re.sub(r"\s", "", verse["verse_text"])):
+                        verse["orig_ref"] = original["orig_ref"]
+                        verse["source_alias"] = original["script_ref"]
+            logger.info(
+                "Loaded enriched index in %.1fs — %d unique verses, embeddings %s",
+                time.perf_counter() - t0, len(verses), embeddings.shape,
+            )
+            return cls(verses, embeddings)
+
+        embed_path = data_dir / "embeddings.npy"
         verses_path = data_dir / "verses.json"
 
         logger.info("Loading embeddings from %s …", embed_path)
@@ -129,6 +187,10 @@ class NumpyScriptureIndex(ScriptureIndex):
 
     def get_verse(self, script_ref: str) -> Optional[dict]:
         return self._by_ref.get(script_ref)
+
+    def get_embedding(self, script_ref: str) -> Optional[np.ndarray]:
+        position = self._position_by_ref.get(script_ref)
+        return None if position is None else self._embeddings[position].copy()
 
     def get_neighbours(self, scripture: str, order: int, window: int = 2) -> list[dict]:
         return [

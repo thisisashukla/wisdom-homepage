@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 2 Summary \u2013 Key Verses & Meaning (Sankhya Yoga)",
@@ -1016,7 +1016,7 @@ export default function ChapterTwoPage() {
           This is the portrait. Not an ascetic. Not someone withdrawn from life. But someone who can remain clear, integrated, and functional regardless of what life brings. Someone who has broken the connection between what happens externally and their internal stability.
         </p>
 
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 2"} />
+        <GitaAppCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 2"} />
 
 
         {/* CHAPTER NAV */}
@@ -1481,7 +1481,7 @@ export default function ChapterTwoPage() {
       </p>
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  ·
-        <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer_app_store">App Store</a>  ·
+        <a href="/gita" data-mp-location="footer_read_gita">Read the Gita</a>  ·
         <a href="/privacy">Privacy</a>  ·
         <a href="/terms">Terms</a>  ·
         <a href="mailto:work.ankurshukla@gmail.com">Support</a>

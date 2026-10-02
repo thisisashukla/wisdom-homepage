@@ -1,23 +1,24 @@
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import type { Metadata } from 'next'
 import React from 'react'
 import appSchemas from '@/lib/appSchemas'
 import BlogTracker from '@/components/BlogTracker'
 import HomeAnimations from '@/components/HomeAnimations'
 import Nav from '@/components/Nav'
-import '../home.css'
+import './app.css'
 
-const APP_STORE_URL = 'https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125'
+
 
 export const metadata: Metadata = {
   title: 'Wisdom for iPhone — Daily Bhagavad Gita Practice App',
   description:
-    'The Wisdom iOS app: 2 minutes a day of guided Bhagavad Gita practice. Pick your path — Action, Wisdom, or Devotion — and receive a daily teaching with a reflection you keep private. Free on the App Store.',
+    'The Wisdom iOS app: 2 minutes a day of guided Bhagavad Gita practice. Pick your path — Action, Wisdom, or Devotion — and receive a daily teaching with a reflection you keep private. Free to start, with a paid plan for more.',
   keywords:
     'bhagavad gita app, daily shloka app, gita practice iphone, wisdom app, daily verse widget, karma yoga app',
   openGraph: {
     title: 'Wisdom for iPhone — Daily Bhagavad Gita Practice',
     description:
-      'A 2-minute daily practice rooted in the Gita. Free on iPhone. Pick your path — Action, Wisdom, Devotion — and grow one teaching at a time.',
+      'A 2-minute daily practice rooted in the Gita. Free to start on iPhone, with a paid plan for more. Pick your path — Action, Wisdom, Devotion — and grow one teaching at a time.',
     type: 'website',
     url: 'https://wisdomquotes.in/app',
     siteName: 'Wisdom',
@@ -52,24 +53,16 @@ export default function AppLandingPage() {
           <p className="subtext" style={{ maxWidth: 560, margin: '0 auto 32px' }}>
             Wisdom for iPhone turns the Gita into a rhythm you can hold. One
             teaching a day, chosen for your path — Action, Wisdom, or Devotion.
-            Free.
+            Free to start, with a paid plan for more.
           </p>
           <div className="hero-actions" style={{ justifyContent: 'center' }}>
-            <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener"
-              className="btn-read-gita btn-read-gita-primary"
-              data-mp-location="app_hero_download"
-            >
-              Download Free on the App Store →
-            </a>
+            <GitaAppCTA variant="hero" placement="hero" />
             <a href="/" className="btn-hero-secondary" data-mp-location="app_hero_read_online">
               Just want to read it? →
             </a>
           </div>
           <p className="hero-note" style={{ marginTop: 18, textAlign: 'center' }}>
-            Free · 3-day trial on premium · ★ 4.9 on the App Store · iPhone only
+            Free to start · Paid plan available · iPhone and iPad
           </p>
 
           {/* Three-phone fan */}
@@ -405,11 +398,6 @@ export default function AppLandingPage() {
               </div>
             ))}
           </div>
-          <p style={{ marginTop: '32px', fontSize: '13px', color: 'var(--text-dimmer)' }}>
-            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold-light)' }} data-mp-location="app_reviews_link">
-              See all reviews on the App Store →
-            </a>
-          </p>
         </div>
       </section>
 
@@ -424,11 +412,11 @@ export default function AppLandingPage() {
             {[
               {
                 q: 'Is Wisdom free?',
-                a: 'The Wisdom app is free to download. The free version includes today’s teaching and your first practice. A premium subscription (3-day trial, then monthly or yearly) unlocks the full daily-practice system: your path, all nodes, the reflection journal, and access to all three paths as you grow.',
+                a: 'The Wisdom app is free to download. The free version includes today’s teaching and your first practice. A paid subscription unlocks the full daily-practice system: your path, all nodes, the reflection journal, and access to all three paths as you grow.',
               },
               {
                 q: 'What platforms is the app on?',
-                a: 'iPhone only, for now. The full Bhagavad Gita is available free on the web at wisdomquotes.in — no download required — if you’re on Android or desktop.',
+                a: 'iPhone and iPad, for now. The full Bhagavad Gita is available free on the web at wisdomquotes.in — no download required — if you’re on Android or desktop.',
               },
               {
                 q: 'How does the app choose my path?',
@@ -467,18 +455,9 @@ export default function AppLandingPage() {
         <div className="wrap">
           <h2>The path was already drawn.<br/><em>You just have to walk it.</em></h2>
           <p>Free to download. Two minutes a day. One teaching, one path, one step at a time.</p>
-          <a
-            href={APP_STORE_URL}
-            target="_blank"
-            rel="noopener"
-            className="btn-read-gita btn-read-gita-primary"
-            style={{ display: 'inline-flex' }}
-            data-mp-location="app_bottom_cta"
-          >
-            Download Free on the App Store →
-          </a>
+          <GitaAppCTA variant="chapter" placement="footer" />
           <p style={{ fontSize: '13px', color: 'var(--text-dimmer)', marginTop: '16px' }}>
-            Free · 3-day trial on premium · Available on iPhone
+            Free to start · Paid plan available · iPhone and iPad
           </p>
           <p style={{ fontSize: '14px', color: 'var(--text-dim)', marginTop: '28px' }}>
             Not ready to download?{' '}

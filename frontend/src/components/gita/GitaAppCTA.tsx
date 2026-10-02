@@ -1,139 +1,80 @@
-/**
- * Reusable App Store CTA for /gita and /hi/gita routes.
- *
- * Three variants:
- *   - "inline"  → small one-liner with button. Used inside hero / above breadcrumbs.
- *   - "verse"   → end-of-verse block with phone mockup. The deepest-funnel placement.
- *   - "chapter" → end-of-chapter block, copy emphasises the daily reading habit.
- *
- * All clicks are tracked via data-mp-location attribute for Mixpanel funnel analysis.
- */
+'use client'
 
-import { Verse, Chapter } from '@/lib/gita'
+import { useEffect, useRef, useState } from 'react'
+import { usePathname } from 'next/navigation'
+import type { Verse, Chapter } from '@/lib/gita'
+import { deviceOS, appOffer, type DeviceOS } from '@/lib/device'
+import { appStoreUrl, pageContext } from '@/lib/funnel'
+import { nextPlace, readPlace, readingUrl } from '@/lib/reading-progress'
+import { trackEvent, trackCTAImpression } from '@/lib/mixpanel'
 
-type Variant = 'inline' | 'verse' | 'chapter'
 type Props = {
-  variant: Variant
+  variant: 'inline' | 'verse' | 'chapter' | 'hero'
+  placement?: 'hero' | 'article_inline' | 'verse_end' | 'chapter_end' | 'hub_intro' | 'footer'
   locale?: 'en' | 'hi'
-  /** Pass when variant === 'verse' for contextual copy ("a verse like 2.47") */
   verse?: Pick<Verse, 'chapter' | 'verse'> | null
-  /** Pass when variant === 'chapter' for contextual copy ("kept reading Bhakti Yoga") */
   chapter?: Pick<Chapter, 'number' | 'enName' | 'hiName' | 'totalVerses'> | null
+  pageName?: string
 }
 
-const APP_URL = 'https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125'
-const APP_STORE_BADGE =
-  'https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg'
-
-const copy = {
-  en: {
-    inlineHead: 'Read a verse a day on your iPhone',
-    inlineSub: 'Wisdom — free. Sanskrit, Hindi, English & a private journal.',
-    verseHead: (c?: number, v?: number) =>
-      c && v ? `Loved verse ${c}.${v}? Get one like it every morning.` : 'Get a verse like this every morning.',
-    verseSub:
-      'Wisdom delivers one shloka a day to your iPhone — Sanskrit, Hindi, English, deeper meaning, and space to reflect. Free.',
-    chapterHead: (name?: string) =>
-      name ? `Finished ${name}? Keep the rhythm going.` : 'Finished this chapter? Keep the rhythm going.',
-    chapterSub:
-      'The Wisdom app reads the Gita to you, one verse a day. Lockscreen widgets, gentle reminders, no algorithms — just the next verse, when you need it.',
-    primary: 'Download on the App Store',
-    secondary: 'Read more on the web',
-    appStoreAlt: 'Download Wisdom on the App Store',
-    captionApp: 'Wisdom on iPhone',
-    daily: 'A verse a day',
-    free: 'Free, no account needed',
-    quiet: 'No ads, no algorithm',
-  },
-  hi: {
-    inlineHead: 'iPhone पर रोज़ एक श्लोक पढ़ें',
-    inlineSub: 'Wisdom — मुफ़्त। संस्कृत, हिन्दी, अंग्रेज़ी और एक निजी डायरी।',
-    verseHead: (c?: number, v?: number) =>
-      c && v ? `${c}.${v} पसंद आया? रोज़ ऐसा ही एक श्लोक पाएं।` : 'रोज़ ऐसा ही एक श्लोक पाएं।',
-    verseSub:
-      'Wisdom आपके iPhone पर रोज़ एक श्लोक भेजता है — संस्कृत, हिन्दी, अंग्रेज़ी, गहरा अर्थ, और चिंतन के लिए जगह। मुफ़्त।',
-    chapterHead: (name?: string) =>
-      name ? `${name} पूरा हो गया? लय बनाए रखें।` : 'अध्याय पूरा हो गया? लय बनाए रखें।',
-    chapterSub:
-      'Wisdom ऐप आपको रोज़ एक श्लोक देता है — Lockscreen widgets, सौम्य reminders, कोई algorithm नहीं — बस अगला श्लोक, जब आपको चाहिए।',
-    primary: 'App Store से डाउनलोड करें',
-    secondary: 'वेब पर पढ़ना जारी रखें',
-    appStoreAlt: 'Wisdom को App Store से डाउनलोड करें',
-    captionApp: 'iPhone पर Wisdom',
-    daily: 'रोज़ एक श्लोक',
-    free: 'मुफ़्त, बिना अकाउंट',
-    quiet: 'कोई विज्ञापन नहीं',
-  },
-}
-
-export default function GitaAppCTA({ variant, locale = 'en', verse, chapter }: Props) {
-  const t = copy[locale]
-
-  if (variant === 'inline') {
-    return (
-      <aside className="gita-cta-inline" aria-label={t.inlineHead}>
-        <div>
-          <div className="gita-cta-inline-head">{t.inlineHead}</div>
-          <div className="gita-cta-inline-sub">{t.inlineSub}</div>
-        </div>
-        <a
-          href={APP_URL}
-          target="_blank"
-          rel="noopener"
-          className="gita-cta-inline-btn"
-          data-mp-location={`gita_${locale}_${variant}`}
-        >
-          ↓ App Store
-        </a>
-      </aside>
-    )
-  }
-
-  const head =
-    variant === 'verse'
-      ? t.verseHead(verse?.chapter, verse?.verse)
-      : t.chapterHead(locale === 'hi' ? chapter?.hiName : chapter?.enName)
-  const sub = variant === 'verse' ? t.verseSub : t.chapterSub
-  const mpKey = `gita_${locale}_${variant}${variant === 'verse' && verse ? `_${verse.chapter}.${verse.verse}` : ''}${variant === 'chapter' && chapter ? `_ch${chapter.number}` : ''}`
-
-  return (
-    <aside className="gita-cta-block" aria-label={head}>
-      <div className="gita-cta-block-grid">
-        <div className="gita-cta-block-art">
-          <div className="gita-cta-phone">
-            <div className="gita-cta-phone-island" />
-            <div className="gita-cta-phone-screen">
-              <img
-                src="/assets/home-screen-quote3.webp"
-                alt={t.captionApp}
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="gita-cta-block-body">
-          <div className="gita-cta-block-eyebrow">{locale === 'hi' ? 'Wisdom ऐप' : 'The Wisdom app'}</div>
-          <h3 className="gita-cta-block-head">{head}</h3>
-          <p className="gita-cta-block-sub">{sub}</p>
-          <ul className="gita-cta-block-bullets">
-            <li>◆ {t.daily}</li>
-            <li>◆ {t.free}</li>
-            <li>◆ {t.quiet}</li>
-          </ul>
-          <div className="gita-cta-block-actions">
-            <a
-              href={APP_URL}
-              target="_blank"
-              rel="noopener"
-              className="gita-cta-store"
-              data-mp-location={mpKey}
-              aria-label={t.appStoreAlt}
-            >
-              <img src={APP_STORE_BADGE} alt={t.appStoreAlt} />
-            </a>
-          </div>
-        </div>
-      </div>
-    </aside>
-  )
+export default function GitaAppCTA({ variant, placement, locale = 'en', verse, chapter }: Props) {
+  const path = usePathname()
+  const [os, setOS] = useState<DeviceOS | null>(null)
+  const [savedUrl, setSavedUrl] = useState<string | null>(null)
+  const node = useRef<HTMLElement>(null)
+  const shown = useRef('')
+  const position = placement || (variant === 'verse' ? 'verse_end' : variant === 'inline' ? 'article_inline' : variant === 'hero' ? 'hero' : 'chapter_end')
+  useEffect(() => {
+    setOS(deviceOS(navigator.userAgent, navigator.maxTouchPoints))
+    const saved = readPlace()
+    setSavedUrl(saved ? readingUrl(saved) : null)
+  }, [path])
+  const offer = appOffer(os)
+  const app = offer !== 'web_reading'
+  const desktop = offer === 'desktop_app'
+  const context = pageContext(path)
+  useEffect(() => {
+    if (!os || !node.current) return
+    const key = `${path}:${offer}:${position}`
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting) && shown.current !== key) {
+        shown.current = key
+        trackCTAImpression(path, { ...pageContext(path), os, variant: offer, placement: position })
+        observer.disconnect()
+      }
+    }, { threshold: 0.4 })
+    observer.observe(node.current)
+    return () => observer.disconnect()
+  }, [path, os, offer, position])
+  const hi = locale === 'hi'
+  const prefix = hi ? '/hi' : ''
+  const next = verse ? nextPlace({ ...verse, locale }) : null
+  const webUrl = next ? readingUrl(next) : verse ? `${prefix}/gita` : savedUrl || (chapter && chapter.number < 18 ? `${prefix}/gita/chapter/${chapter.number + 1}/verse/1` : `${prefix}/gita/chapter/1/verse/1`)
+  const translation = path.includes('best-bhagavad-gita-translation')
+  const karma = path.includes('karma-quotes')
+  const heading = app
+    ? hi ? 'रोज़ एक श्लोक, आपके iPhone पर' : karma ? 'Carry a teaching into your day.' : translation ? 'Make time for a little Gita, every day.' : 'Keep a verse with you.'
+    : hi ? 'पढ़ना जारी रखें' : verse ? next ? 'Read the next verse.' : 'Explore another chapter.' : 'A little reading, every day.'
+  const description = app
+    ? hi ? 'संस्कृत श्लोक, अंग्रेज़ी अर्थ और होम स्क्रीन विजेट। शुरुआत मुफ़्त है; अधिक सुविधाओं के लिए सशुल्क प्लान है।' : 'Sanskrit verses, English meaning, and a home screen widget. Free to start, with an optional paid plan.'
+    : hi ? 'हिंदी में यहीं पढ़ें। यह ब्राउज़र आपका आखिरी पढ़ा श्लोक याद रखता है।' : 'Read free on the web. Your place is saved in this browser. The app is available for iPhone and iPad.'
+  const props = { ...context, os, variant: offer, placement: position, ...(verse ? { verse: `${verse.chapter}.${verse.verse}` } : {}) }
+  return <aside ref={node} className={`reader-cta reader-cta--${variant}`} data-reader-cta data-placement={position} data-offer={os ? offer : 'loading'} aria-label={hi ? 'पढ़ना जारी रखें' : 'Daily reading with Wisdom'}>
+    <div className="reader-cta-copy">
+      {app && <div className="reader-cta-brand"><img src="/assets/new-light-logo.webp" width="28" height="28" alt="" /><span>{hi ? 'Wisdom · iPhone और iPad के लिए' : 'Wisdom for iPhone & iPad'}</span></div>}
+      {variant !== 'hero' && <h3>{heading}</h3>}
+      <p>{description}</p>
+    </div>
+    <div className="reader-cta-actions">
+      <a className={app ? 'reader-cta-store' : 'reader-cta-link'} href={app ? appStoreUrl(path, process.env.NEXT_PUBLIC_APP_STORE_PROVIDER_ID) : webUrl}
+        {...(app ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+        onClick={() => trackEvent(app ? 'App Store Button Clicked' : 'Continue Reading Clicked', props)}>
+        {app ? <img src="/assets/app-store-badge.svg" width="162" height="48" alt={hi ? 'App Store से Wisdom डाउनलोड करें' : 'Download Wisdom on the App Store'} /> : hi ? 'पढ़ना जारी रखें →' : 'Continue reading →'}
+      </a>
+      {desktop && <details className="reader-cta-qr" onToggle={event => { if (event.currentTarget.open) trackEvent('App QR Shown', props) }}>
+        <summary>{hi ? 'iPhone से स्कैन करें' : 'Scan with your iPhone'} <span aria-hidden="true">↗</span></summary>
+        <div className="reader-cta-qr-panel"><img src="/assets/wisdom-app-qr.svg" width="160" height="160" alt="QR code to download Wisdom on the App Store" /><p>{hi ? 'iPhone का कैमरा खोलकर स्कैन करें।' : 'Open your iPhone camera and scan to get Wisdom.'}</p></div>
+      </details>}
+    </div>
+  </aside>
 }

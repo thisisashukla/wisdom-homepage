@@ -75,9 +75,20 @@ interface AssistantMessage {
   detailedSegments: Segment[]
   detailPhase: DetailPhase
   error: string
+  conversationState?: Record<string, { text: string; evidence: string }[]>
 }
 
 type ChatMessage = UserMessage | AssistantMessage
+
+function conversationHistory(messages: ChatMessage[]) {
+  return messages.flatMap<{ role: 'user' | 'assistant'; content: string }>(message => {
+    if (message.role === 'user') return [{ role: 'user' as const, content: message.text.slice(0, 2000) }];
+    if (message.phase !== 'done') return [];
+    return [{ role: 'assistant' as const, content: segmentsToPlainText(
+      message.detailPhase === 'done' ? message.detailedSegments : message.crispSegments, message.verses
+    ).slice(0, 2000) }];
+  }).slice(-32);
+}
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -90,7 +101,7 @@ function humanize(slug: string): string {
 
 /** "1,65,दोहा,1" → "1·65·दोहा·1". Comma is a join char in source data. */
 function formatVerseRef(id: string): string {
-  return id.replace(/,/g, '·')
+  return id.replace(/[, _]/g, '·')
 }
 
 /** True when a speaker field is worth displaying. */
@@ -108,7 +119,7 @@ function segmentsToPlainText(segments: Segment[], verses: VerseResult[]): string
     if (seg.type === 'verse' && seg.uid) {
       const v = byUid[seg.uid]
       if (!v) return ''
-      const line = v.essence || v.english_translation || ''
+      const line = v.english_translation || v.simple_meaning || v.essence || ''
       const ref = `${humanize(v.scripture)} ${formatVerseRef(v.verse_id)}`.trim()
       return `"${line}"  — ${ref}`
     }
@@ -249,14 +260,14 @@ function PullQuote({
   animIndex: number
 }) {
   const [expanded, setExpanded] = useState(false)
-  const displayText = verse.essence || verse.english_translation
+  const displayText = verse.english_translation || verse.simple_meaning || verse.essence
   // Sanskrit is now always visible in the collapsed card, so it no longer
   // gates the expand toggle — only meaning/insight/tags do.
   const hasDetail =
     (verse.english_translation && verse.english_translation !== displayText) ||
     verse.simple_meaning ||
     verse.insight ||
-    verse.tags.length > 0
+    verse.tags.length > 0 || Boolean(verse.verse_sanskrit)
 
   return (
     <div
@@ -317,7 +328,8 @@ function PullQuote({
 
         {/* Body: essence line (prominent) + Devanagari (subtle). */}
         <p className="pull-quote__text">{displayText}</p>
-        {verse.verse_sanskrit && (
+        <span className="pull-quote__ref-num">{verse.english_translation ? 'Translation' : 'Editorial paraphrase'}</span>
+        {expanded && verse.verse_sanskrit && (
           <p
             className="pull-quote__devanagari pull-quote__devanagari--inline"
             lang="sa"
@@ -388,6 +400,14 @@ function AnswerBlock({
           </div>
         )
       })}
+      {verses.filter(verse => !segments.some(segment => segment.type === 'verse' && segment.uid === verse.uid)).map(verse => (
+        <details key={verse.uid} className="pull-quote">
+          <summary>Source · {humanize(verse.scripture)} {formatVerseRef(verse.verse_id)}</summary>
+          <p>{verse.english_translation || verse.simple_meaning}</p>
+          <small>{verse.english_translation ? 'Translation' : 'Editorial paraphrase'}</small>
+          {verse.verse_sanskrit && <p lang="sa">{verse.verse_sanskrit}</p>}
+        </details>
+      ))}
     </div>
   )
 }
@@ -755,15 +775,15 @@ export default function SearchPage() {
       const res  = await fetch(`${BACKEND}/api/v1/rag`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query, verses, mode: 'detailed' }),
+        body: JSON.stringify({ query, verses, mode: 'detailed', history: conversationHistory(messages.slice(0, messages.findIndex(message => message.id === id))) }),
       })
       if (!res.ok) throw new Error()
       const data = await res.json()
-      updateMsg(id, { detailPhase: 'done', detailedSegments: data.segments || [] })
+      updateMsg(id, { detailPhase: 'done', detailedSegments: data.segments || [], verses: data.source_verses || verses })
     } catch {
       updateMsg(id, { detailPhase: 'idle' })
     }
-  }, [updateMsg])
+  }, [updateMsg, messages])
 
   // Copy-to-clipboard with a bottom-center toast confirmation.
   const [copyToast, setCopyToast] = useState(false)
@@ -812,61 +832,20 @@ export default function SearchPage() {
       },
     ])
 
+    const history = conversationHistory(messages)
+    const previous = [...messages].reverse().find((message): message is AssistantMessage => message.role === 'assistant' && message.phase === 'done')
     try {
-      // 1 — validate + extract intents
-      const intentRes  = await fetch(`${BACKEND}/api/v1/intent`, {
+      // The backend chooses whether this turn needs sources before retrieving.
+      updateMsg(assistId, { phase: 'rag' })
+      const ragRes = await fetch(`${BACKEND}/api/v1/rag`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: q }),
-      })
-      if (!intentRes.ok) throw new Error(`Intent API: ${intentRes.status}`)
-      const intentData = await intentRes.json()
-
-      if (intentData.valid === false) {
-        updateMsg(assistId, {
-          phase: 'error',
-          error: intentData.reason || 'I can only help with questions about life, philosophy, and scripture.',
-        })
-        return
-      }
-
-      const intents: Intent[] = intentData.intents || []
-      updateMsg(assistId, { phase: 'search', intents })
-
-      // 2 — retrieve verses
-      //
-      // Forward the intents to /search as full objects. scripture_lock is
-      // the HARD filter that pins each intent's cosine retrieval to a
-      // specific scripture — dropping it here would make single-scripture
-      // and comparison queries silently return whatever cosine surfaces
-      // across the whole corpus (Dheesh Gita, Vishnu Gita, etc.).
-      const searchRes  = await fetch(`${BACKEND}/api/v1/search`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          intents: intents.map(i => ({
-            intent: i.intent,
-            description: i.description,
-            intent_type: i.intent_type || 'philosophical',
-            likely_scriptures: i.likely_scriptures || [],
-            scripture_lock: i.scripture_lock || [],
-          })),
-          top_k: 6,
-        }),
-      })
-      if (!searchRes.ok) throw new Error(`Search API: ${searchRes.status}`)
-      const verses: VerseResult[] = (await searchRes.json()).results || []
-      updateMsg(assistId, { phase: 'rag', verses })
-
-      // 3 — crisp synthesis
-      const ragRes  = await fetch(`${BACKEND}/api/v1/rag`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: q, verses, mode: 'crisp' }),
+        body: JSON.stringify({ query: q, mode: 'crisp', history, verses: previous?.verses || [], conversation_state: previous?.conversationState || {} }),
       })
       if (!ragRes.ok) throw new Error(`RAG API: ${ragRes.status}`)
-      const crispSegments: Segment[] = (await ragRes.json()).segments || []
-      updateMsg(assistId, { phase: 'done', crispSegments })
+      const ragData = await ragRes.json()
+      const crispSegments: Segment[] = ragData.segments || []
+      updateMsg(assistId, { phase: 'done', crispSegments, verses: ragData.source_verses || [], conversationState: ragData.conversation_state })
 
     } catch (err: any) {
       updateMsg(assistId, { phase: 'error', error: err?.message || 'Something went wrong.' })

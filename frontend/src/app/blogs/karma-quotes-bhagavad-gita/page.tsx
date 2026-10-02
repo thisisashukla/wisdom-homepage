@@ -1,3 +1,4 @@
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
@@ -312,6 +313,7 @@ export default function KarmaQuotesPage() {
           <a href="/gita/chapter/2/verse/48" data-mp-location="quote_full_2_48" style={{ color: 'var(--gold-light)' }}>Read the full verse page for 2.48 →</a>
         </p>
 
+        <GitaAppCTA variant="inline" placement="article_inline" />
         <h2 id="bg-2-50">3. Bhagavad Gita 2.50 — Yoga is Skill in Action</h2>
         <ShlokaCard
           verseRef="Bhagavad Gita 2.50"
@@ -466,6 +468,8 @@ export default function KarmaQuotesPage() {
           </p>
         </div>
       </div>
+
+
 
       <div className="related">
         <div className="related-title">Read next</div>

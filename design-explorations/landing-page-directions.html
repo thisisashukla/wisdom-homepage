@@ -1,0 +1,415 @@
+<!--
+  Landing page — four directions
+  Source: frontend/src/app/page.tsx (current homepage)
+  Generated: 2026-09-04
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wisdom landing — four directions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --brand-ink: #3d0c0c; --brand-ink-soft: #5c1a1a;
+      --brand-accent: #a86a12; --brand-accent-soft: #f2d78a;
+      --paper: #fbf5ea; --paper-2: #f4ecd9;
+      --line: rgba(61, 12, 12, 0.14); --line-soft: rgba(61, 12, 12, 0.06);
+      --ink-body: #2a0808; --ink-mute: rgba(61, 12, 12, 0.62); --ink-mute-2: rgba(61, 12, 12, 0.42);
+      --shadow-md: 0 6px 28px -12px rgba(61, 12, 12, 0.18), 0 2px 6px rgba(61, 12, 12, 0.05);
+    }
+    * { box-sizing: border-box; } html, body { margin: 0; padding: 0; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--paper); color: var(--ink-body); -webkit-font-smoothing: antialiased; line-height: 1.55; }
+    .page { max-width: 1320px; margin: 0 auto; padding: 72px 48px 160px; }
+    .doc-header { border-bottom: 1px solid var(--line); padding-bottom: 40px; margin-bottom: 72px; }
+    .doc-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand-accent); background: rgba(168, 106, 18, 0.10); padding: 6px 12px; border-radius: 999px; margin-bottom: 22px; }
+    .doc-eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 999px; background: var(--brand-accent); }
+    .doc-title { font-family: 'Playfair Display', Georgia, serif; font-size: 54px; line-height: 1.05; font-weight: 600; letter-spacing: -0.015em; margin: 0 0 16px; color: var(--brand-ink); }
+    .doc-title em { font-style: italic; color: var(--brand-ink-soft); }
+    .doc-subtitle { font-size: 19px; color: var(--ink-mute); max-width: 820px; margin: 0 0 32px; line-height: 1.5; }
+    .doc-meta { display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; color: var(--ink-mute-2); }
+    .doc-meta > div { display: flex; gap: 6px; } .doc-meta b { color: var(--brand-ink-soft); font-weight: 600; }
+    .variant { margin-bottom: 96px; }
+    .variant-head { display: grid; grid-template-columns: 64px 1fr; gap: 20px; align-items: start; margin-bottom: 28px; }
+    .variant-letter { width: 48px; height: 48px; border-radius: 999px; background: var(--brand-ink); color: var(--brand-accent-soft); font-family: 'Playfair Display', Georgia, serif; font-weight: 600; font-size: 22px; display: flex; align-items: center; justify-content: center; letter-spacing: -0.02em; }
+    .variant-meta h2 { margin: 4px 0 6px; font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 600; letter-spacing: -0.015em; color: var(--brand-ink); }
+    .variant-tradeoff { font-size: 15px; color: var(--ink-mute); margin: 0; max-width: 820px; }
+    .variant-tradeoff b { color: var(--brand-accent); font-weight: 700; }
+    .preview-frame { background: #ffffff; border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow-md); overflow: hidden; margin-left: 84px; position: relative; }
+    .preview-frame::before { content: ''; position: absolute; top: 14px; left: 16px; width: 10px; height: 10px; border-radius: 999px; background: #ead9b8; box-shadow: 18px 0 0 #ead9b8, 36px 0 0 #ead9b8; z-index: 2; }
+    .preview-frame-bar { background: #faf3e2; border-bottom: 1px solid var(--line-soft); padding: 14px 16px 14px 76px; font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase; color: var(--ink-mute-2); font-weight: 700; }
+    .preview { padding: 0; min-height: 200px; }
+    .variant-analysis { margin: 24px 0 0 84px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+    .analysis-block { padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: #fffdf7; }
+    .analysis-block h4 { margin: 0 0 6px; font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: var(--brand-accent); }
+    .analysis-block.is-risk h4 { color: #a03a1a; } .analysis-block.is-pick h4 { color: #4a6b2a; }
+    .analysis-block p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--ink-mute); }
+    .decision { margin-top: 80px; padding: 44px 48px; background: var(--brand-ink); color: var(--brand-accent-soft); border-radius: 22px; }
+    .decision h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 30px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 8px; color: var(--brand-accent-soft); }
+    .decision-sub { color: rgba(242, 215, 138, 0.65); font-size: 14px; margin: 0 0 28px; }
+    .decision-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .decision-cell b { display: block; font-size: 12px; letter-spacing: 0.10em; text-transform: uppercase; color: rgba(242, 215, 138, 0.85); margin-bottom: 6px; font-weight: 700; }
+    .decision-cell span { font-size: 15px; color: rgba(255, 250, 240, 0.85); line-height: 1.5; }
+    @media (max-width: 900px) { .page { padding: 40px 20px 80px; } .doc-title { font-size: 36px; } .variant-head { grid-template-columns: 48px 1fr; gap: 12px; } .preview-frame { margin-left: 0; } .variant-analysis { margin-left: 0; grid-template-columns: 1fr; } }
+
+    /* ============ VARIANT A — Verse-first ============ */
+    .va-root { background: #120505; color: #f5e8cc; padding: 56px 56px 48px; font-family: 'Inter', sans-serif; }
+    .va-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 44px; font-size: 13px; color: rgba(245,232,204,0.55); letter-spacing: 0.02em; }
+    .va-brand { font-family: 'Playfair Display', serif; font-size: 22px; color: #f5c96a; font-style: italic; }
+    .va-topnav a { color: rgba(245,232,204,0.7); margin-left: 22px; text-decoration: none; font-size: 13px; }
+    .va-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 56px; align-items: start; }
+    .va-eyebrow { font-size: 11px; letter-spacing: 0.20em; text-transform: uppercase; color: #f5c96a; opacity: 0.85; margin-bottom: 14px; }
+    .va-ref { font-family: 'Playfair Display', serif; font-style: italic; font-size: 15px; color: rgba(245,232,204,0.6); margin-bottom: 8px; }
+    .va-sanskrit { font-family: 'Noto Sans Devanagari', serif; font-size: 30px; line-height: 1.55; color: #f5e8cc; margin: 8px 0 20px; letter-spacing: 0.01em; }
+    .va-audio { display: flex; align-items: center; gap: 14px; padding: 14px 18px; background: rgba(245,201,106,0.06); border: 1px solid rgba(245,201,106,0.22); border-radius: 12px; margin-bottom: 26px; }
+    .va-play { width: 40px; height: 40px; border-radius: 999px; background: #f5c96a; color: #120505; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+    .va-wave { flex: 1; height: 22px; display: flex; align-items: center; gap: 2px; }
+    .va-wave span { display: block; width: 2px; background: rgba(245,201,106,0.5); border-radius: 2px; }
+    .va-time { font-size: 11px; color: rgba(245,232,204,0.55); font-variant-numeric: tabular-nums; letter-spacing: 0.04em; }
+    .va-trans { font-family: 'Playfair Display', serif; font-style: italic; font-size: 20px; line-height: 1.5; color: #f5e8cc; padding-left: 16px; border-left: 2px solid rgba(245,201,106,0.35); margin-bottom: 22px; }
+    .va-simple { font-size: 14.5px; color: rgba(245,232,204,0.7); line-height: 1.6; margin-bottom: 30px; max-width: 460px; }
+    .va-cta { display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; background: #c8881e; color: #120505; font-weight: 600; font-size: 15px; border-radius: 10px; text-decoration: none; }
+    .va-cta-ghost { display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border: 1px solid rgba(245,201,106,0.4); color: #f5c96a; font-size: 15px; border-radius: 10px; text-decoration: none; margin-left: 10px; }
+    .va-side-title { font-family: 'Playfair Display', serif; font-size: 15px; color: #f5c96a; margin-bottom: 14px; letter-spacing: 0.02em; }
+    .va-side-sub { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,232,204,0.5); margin-bottom: 20px; }
+    .va-ch-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .va-ch { padding: 10px 12px; border: 1px solid rgba(245,201,106,0.16); border-radius: 8px; font-size: 12.5px; color: rgba(245,232,204,0.85); }
+    .va-ch b { display: block; color: #f5c96a; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+    .va-strip { margin-top: 40px; padding-top: 26px; border-top: 1px solid rgba(245,201,106,0.15); display: flex; gap: 26px; font-size: 12.5px; color: rgba(245,232,204,0.55); flex-wrap: wrap; }
+    .va-strip b { color: #f5c96a; font-weight: 600; }
+
+    /* ============ VARIANT B — Path picker hero ============ */
+    .vb-root { background: #120505; color: #f5e8cc; padding: 60px 56px 52px; font-family: 'Inter', sans-serif; }
+    .vb-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 48px; }
+    .vb-brand { font-family: 'Playfair Display', serif; font-size: 22px; color: #f5c96a; font-style: italic; }
+    .vb-nav a { color: rgba(245,232,204,0.7); margin-left: 22px; text-decoration: none; font-size: 13px; }
+    .vb-question { text-align: center; margin-bottom: 36px; }
+    .vb-question .eb { font-size: 11px; letter-spacing: 0.20em; text-transform: uppercase; color: #f5c96a; opacity: 0.9; margin-bottom: 16px; }
+    .vb-question h1 { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 52px; line-height: 1.05; letter-spacing: -0.015em; color: #f5e8cc; margin: 0 0 18px; }
+    .vb-question h1 em { color: #f5c96a; }
+    .vb-question p { font-size: 16px; color: rgba(245,232,204,0.7); max-width: 560px; margin: 0 auto; }
+    .vb-paths { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 12px; }
+    .vb-path { position: relative; padding: 30px 26px 28px; border: 1px solid rgba(245,201,106,0.24); border-radius: 16px; background: linear-gradient(180deg, rgba(245,201,106,0.06), rgba(245,201,106,0.01)); display: flex; flex-direction: column; min-height: 300px; }
+    .vb-path:hover { border-color: rgba(245,201,106,0.5); }
+    .vb-path-devanagari { font-family: 'Noto Sans Devanagari', serif; font-size: 18px; color: #f5c96a; opacity: 0.9; margin-bottom: 10px; }
+    .vb-path-name { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 700; color: #f5c96a; margin-bottom: 12px; letter-spacing: -0.01em; }
+    .vb-path-gloss { font-family: 'Playfair Display', serif; font-style: italic; font-size: 16px; line-height: 1.5; color: rgba(245,232,204,0.85); margin-bottom: 14px; }
+    .vb-path-hook { font-size: 13px; color: rgba(245,232,204,0.6); line-height: 1.55; margin-bottom: 22px; }
+    .vb-path-cta { margin-top: auto; display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: #f5c96a; letter-spacing: 0.02em; padding-top: 14px; border-top: 1px solid rgba(245,201,106,0.15); }
+    .vb-path .num { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,232,204,0.45); position: absolute; top: 22px; right: 22px; }
+    .vb-below { margin-top: 40px; text-align: center; font-size: 13px; color: rgba(245,232,204,0.5); }
+    .vb-below a { color: #f5c96a; text-decoration: none; margin: 0 10px; }
+    .vb-strip { margin-top: 30px; padding-top: 22px; border-top: 1px solid rgba(245,201,106,0.14); display: flex; justify-content: center; gap: 30px; font-size: 12px; color: rgba(245,232,204,0.55); flex-wrap: wrap; }
+    .vb-strip b { color: #f5c96a; font-weight: 600; }
+
+    /* ============ VARIANT C — Ask the Gita ============ */
+    .vc-root { background: linear-gradient(180deg, #120505 0%, #1a0808 100%); color: #f5e8cc; padding: 64px 56px 52px; font-family: 'Inter', sans-serif; position: relative; overflow: hidden; }
+    .vc-root::before { content: 'श्रीभगवानुवाच'; position: absolute; right: -20px; top: 40px; font-family: 'Noto Sans Devanagari', serif; font-size: 140px; color: rgba(245,201,106,0.045); pointer-events: none; letter-spacing: 0.05em; font-weight: 600; }
+    .vc-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px; position: relative; z-index: 1; }
+    .vc-brand { font-family: 'Playfair Display', serif; font-size: 22px; color: #f5c96a; font-style: italic; }
+    .vc-nav a { color: rgba(245,232,204,0.7); margin-left: 22px; text-decoration: none; font-size: 13px; }
+    .vc-hero { text-align: center; max-width: 780px; margin: 0 auto; position: relative; z-index: 1; }
+    .vc-eb { font-size: 11px; letter-spacing: 0.20em; text-transform: uppercase; color: #f5c96a; opacity: 0.85; margin-bottom: 20px; }
+    .vc-eb::before { content: '✦ '; opacity: 0.7; }
+    .vc-h1 { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 50px; line-height: 1.06; letter-spacing: -0.018em; margin: 0 0 16px; color: #f5e8cc; }
+    .vc-h1 em { color: #f5c96a; }
+    .vc-sub { font-size: 17px; color: rgba(245,232,204,0.72); line-height: 1.55; margin: 0 0 34px; max-width: 620px; margin-left: auto; margin-right: auto; }
+    .vc-searchwrap { background: rgba(245,232,204,0.05); border: 1px solid rgba(245,201,106,0.28); border-radius: 16px; padding: 8px 8px 8px 22px; display: flex; align-items: center; gap: 12px; box-shadow: 0 8px 40px -8px rgba(0,0,0,0.5); }
+    .vc-searchwrap:focus-within { border-color: rgba(245,201,106,0.55); }
+    .vc-input { flex: 1; background: transparent; border: 0; outline: 0; color: #f5e8cc; font-family: 'Playfair Display', serif; font-style: italic; font-size: 20px; padding: 14px 0; }
+    .vc-input::placeholder { color: rgba(245,232,204,0.4); }
+    .vc-ask { padding: 14px 22px; background: #c8881e; color: #120505; font-weight: 600; font-size: 15px; border-radius: 10px; border: 0; cursor: pointer; }
+    .vc-chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 22px; }
+    .vc-chip { font-size: 13px; color: rgba(245,232,204,0.75); padding: 8px 14px; border: 1px solid rgba(245,201,106,0.22); border-radius: 999px; background: rgba(245,201,106,0.04); cursor: pointer; }
+    .vc-chip:hover { border-color: rgba(245,201,106,0.5); color: #f5c96a; }
+    .vc-note { margin-top: 26px; font-size: 12.5px; color: rgba(245,232,204,0.45); letter-spacing: 0.02em; }
+    .vc-preview-answer { max-width: 780px; margin: 42px auto 0; padding: 22px 26px; background: rgba(245,201,106,0.05); border: 1px dashed rgba(245,201,106,0.28); border-radius: 14px; position: relative; z-index: 1; }
+    .vc-preview-answer .lbl { font-size: 10.5px; letter-spacing: 0.20em; text-transform: uppercase; color: #f5c96a; opacity: 0.8; margin-bottom: 10px; }
+    .vc-preview-answer .san { font-family: 'Noto Sans Devanagari', serif; font-size: 18px; color: rgba(245,232,204,0.9); margin-bottom: 8px; line-height: 1.5; }
+    .vc-preview-answer .eng { font-family: 'Playfair Display', serif; font-style: italic; font-size: 15.5px; color: rgba(245,232,204,0.85); }
+    .vc-preview-answer .ref { font-size: 11.5px; letter-spacing: 0.10em; color: rgba(245,232,204,0.55); margin-top: 12px; text-transform: uppercase; }
+    .vc-strip { margin-top: 40px; padding-top: 22px; border-top: 1px solid rgba(245,201,106,0.14); display: flex; justify-content: center; gap: 30px; font-size: 12px; color: rgba(245,232,204,0.55); flex-wrap: wrap; position: relative; z-index: 1; }
+    .vc-strip b { color: #f5c96a; font-weight: 600; }
+
+    /* ============ VARIANT D — Editorial minimalist ============ */
+    .vd-root { background: #faf3e2; color: #1a0606; padding: 72px 72px 60px; font-family: 'Playfair Display', Georgia, serif; }
+    .vd-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 96px; font-family: 'Inter', sans-serif; }
+    .vd-brand { font-family: 'Playfair Display', serif; font-size: 20px; font-style: italic; color: #3d0c0c; }
+    .vd-nav { font-size: 12.5px; color: rgba(61,12,12,0.6); letter-spacing: 0.02em; }
+    .vd-nav a { color: rgba(61,12,12,0.72); text-decoration: none; margin-left: 22px; }
+    .vd-rule { height: 1px; background: rgba(61,12,12,0.16); max-width: 60px; margin: 0 0 40px; }
+    .vd-h1 { font-family: 'Playfair Display', serif; font-weight: 500; font-size: 84px; line-height: 0.98; letter-spacing: -0.025em; color: #3d0c0c; margin: 0 0 34px; max-width: 900px; }
+    .vd-h1 em { font-style: italic; color: #5c1a1a; }
+    .vd-lede { font-family: 'Playfair Display', serif; font-style: italic; font-size: 22px; line-height: 1.5; color: rgba(61,12,12,0.75); max-width: 620px; margin: 0 0 46px; }
+    .vd-actions { display: flex; align-items: center; gap: 28px; margin-bottom: 60px; font-family: 'Inter', sans-serif; }
+    .vd-cta { font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #3d0c0c; font-weight: 600; padding: 16px 26px; border: 1px solid #3d0c0c; text-decoration: none; }
+    .vd-cta:hover { background: #3d0c0c; color: #f5e8cc; }
+    .vd-cta-ghost { font-size: 13px; color: rgba(61,12,12,0.72); text-decoration: none; border-bottom: 1px solid rgba(61,12,12,0.3); padding-bottom: 3px; }
+    .vd-toc { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid rgba(61,12,12,0.16); padding-top: 26px; font-family: 'Inter', sans-serif; }
+    .vd-toc-col { padding-right: 20px; }
+    .vd-toc-col .lbl { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(61,12,12,0.45); margin-bottom: 10px; }
+    .vd-toc-col .val { font-family: 'Playfair Display', serif; font-size: 20px; color: #3d0c0c; line-height: 1.25; }
+    .vd-quote { margin-top: 60px; padding-top: 26px; border-top: 1px solid rgba(61,12,12,0.16); font-family: 'Playfair Display', serif; font-style: italic; font-size: 17px; color: rgba(61,12,12,0.68); max-width: 680px; }
+    .vd-quote small { display: block; font-family: 'Inter', sans-serif; font-style: normal; font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(61,12,12,0.5); margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="doc-header">
+      <div class="doc-eyebrow">Design exploration</div>
+      <h1 class="doc-title">Wisdom landing — <em>four directions</em></h1>
+      <p class="doc-subtitle">Four distinct strategic directions for the wisdomquotes.in home hero. Each holds the brand (dark maroon-and-gold reader) and differs on what the first screen prioritizes: scripture, path, question, or taste. Use the tradeoff row below each to pick.</p>
+      <div class="doc-meta">
+        <div><b>Surface</b> Homepage hero + first fold</div>
+        <div><b>Source</b> frontend/src/app/page.tsx</div>
+        <div><b>Generated</b> 2026-09-04</div>
+      </div>
+    </header>
+
+    <!-- ===== VARIANT A ===== -->
+    <section class="variant">
+      <div class="variant-head">
+        <div class="variant-letter">A</div>
+        <div class="variant-meta">
+          <h2>Verse-first — the scripture is the hero</h2>
+          <p class="variant-tradeoff"><b>Optimizes for</b> readers and search intent ("bhagavad gita 2.47") who arrived to READ, not be sold to. <b>Tradeoff</b> gives up the "your mind won't stop" emotional pull that hooks anxious first-time seekers.</p>
+        </div>
+      </div>
+      <div class="preview-frame">
+        <div class="preview-frame-bar">Variant A · Verse-first · hero + fold-1</div>
+        <div class="preview">
+          <div class="va-root">
+            <div class="va-topbar">
+              <div class="va-brand">Wisdom.</div>
+              <div class="va-topnav"><a>Gita</a><a>Themes</a><a>हिंदी</a><a>Blog</a><a>App</a></div>
+            </div>
+            <div class="va-grid">
+              <div>
+                <div class="va-eyebrow">Today's verse — rotates daily</div>
+                <div class="va-ref">Bhagavad Gita 2.47 · Karma Yoga · Krishna to Arjuna</div>
+                <p class="va-sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।<br/>मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥</p>
+                <div class="va-audio">
+                  <div class="va-play">▶</div>
+                  <div class="va-wave">
+                    <span style="height:6px"></span><span style="height:12px"></span><span style="height:18px"></span><span style="height:9px"></span><span style="height:20px"></span><span style="height:14px"></span><span style="height:8px"></span><span style="height:16px"></span><span style="height:11px"></span><span style="height:19px"></span><span style="height:7px"></span><span style="height:13px"></span><span style="height:17px"></span><span style="height:10px"></span><span style="height:15px"></span><span style="height:8px"></span><span style="height:12px"></span><span style="height:19px"></span><span style="height:9px"></span><span style="height:14px"></span><span style="height:6px"></span><span style="height:16px"></span><span style="height:11px"></span><span style="height:8px"></span><span style="height:13px"></span><span style="height:20px"></span><span style="height:10px"></span><span style="height:15px"></span><span style="height:7px"></span><span style="height:17px"></span><span style="height:12px"></span><span style="height:9px"></span><span style="height:14px"></span><span style="height:6px"></span><span style="height:18px"></span>
+                  </div>
+                  <div class="va-time">0:00 · 0:38</div>
+                </div>
+                <blockquote class="va-trans">"You have a right to action, never to its fruits. Neither let the fruits of action be your motive, nor let your attachment be to inaction."</blockquote>
+                <p class="va-simple">Krishna's answer to Arjuna's collapse — the line more quoted, tattooed, and misunderstood than any other in the Gita. Read it in full with the commentary, or read the whole chapter.</p>
+                <a class="va-cta" href="#">Read 2.47 with commentary →</a>
+                <a class="va-cta-ghost" href="#">All 700 verses →</a>
+              </div>
+              <div>
+                <div class="va-side-sub">Or start anywhere</div>
+                <div class="va-side-title">The 18 chapters, in order</div>
+                <div class="va-ch-list">
+                  <div class="va-ch"><b>Ch. 1</b>Arjuna's Despair</div>
+                  <div class="va-ch"><b>Ch. 2</b>Sankhya Yoga</div>
+                  <div class="va-ch"><b>Ch. 3</b>Karma Yoga</div>
+                  <div class="va-ch"><b>Ch. 4</b>Jnana Yoga</div>
+                  <div class="va-ch"><b>Ch. 6</b>Dhyana Yoga</div>
+                  <div class="va-ch"><b>Ch. 9</b>Raja Vidya</div>
+                  <div class="va-ch"><b>Ch. 11</b>Vishwarupa</div>
+                  <div class="va-ch"><b>Ch. 12</b>Bhakti Yoga</div>
+                  <div class="va-ch"><b>Ch. 15</b>Purushottama</div>
+                  <div class="va-ch"><b>Ch. 18</b>Moksha Yoga</div>
+                </div>
+              </div>
+            </div>
+            <div class="va-strip">
+              <div><b>18 chapters</b> · 700 verses</div>
+              <div><b>Sanskrit</b> · Hindi · English</div>
+              <div><b>One page per verse</b> with commentary</div>
+              <div><b>Free</b> · no login · no paywall</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="variant-analysis">
+        <div class="analysis-block"><h4>What works</h4><p>The scripture itself is the proof — a reader lands, hears a verse in Sanskrit, and understands what the product is in ten seconds. Signals real depth to search users who arrived for a specific verse and would bounce on marketing copy.</p></div>
+        <div class="analysis-block is-risk"><h4>What risks</h4><p>Loses the emotional entry for someone whose reason to read the Gita is anxiety, not scholarship. Cold-start users who don't know 2.47 from 6.35 may not know why they should care about this particular verse.</p></div>
+        <div class="analysis-block is-pick"><h4>Pick this if</h4><p>SEO traffic dominates and drop-off is highest on the emotional-copy fold. Ship this if Mixpanel shows "Today's verse" is the most-clicked section already — this variant just promotes it.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== VARIANT B ===== -->
+    <section class="variant">
+      <div class="variant-head">
+        <div class="variant-letter">B</div>
+        <div class="variant-meta">
+          <h2>Path picker — the choice IS the hero</h2>
+          <p class="variant-tradeoff"><b>Optimizes for</b> first-click depth: every visitor lands on a verse that matches their disposition (Karma / Jnana / Bhakti), not a generic 1.1. <b>Tradeoff</b> demotes the SEO H1 and asks a cold visitor to self-identify before reading.</p>
+        </div>
+      </div>
+      <div class="preview-frame">
+        <div class="preview-frame-bar">Variant B · Path-picker · hero</div>
+        <div class="preview">
+          <div class="vb-root">
+            <div class="vb-top">
+              <div class="vb-brand">Wisdom.</div>
+              <div class="vb-nav"><a>Gita</a><a>Themes</a><a>हिंदी</a><a>Blog</a><a>App</a></div>
+            </div>
+            <div class="vb-question">
+              <div class="eb">Krishna opened three doors</div>
+              <h1>Which path <em>is yours</em>?</h1>
+              <p>The Gita's teaching splits three ways. Pick the one that sounds like the mind you brought — Wisdom opens it to the verse that starts that path.</p>
+            </div>
+            <div class="vb-paths">
+              <div class="vb-path">
+                <div class="num">Path 01</div>
+                <div class="vb-path-devanagari">कर्म योग</div>
+                <div class="vb-path-name">Karma</div>
+                <div class="vb-path-gloss">"Act without attachment to the fruits."</div>
+                <div class="vb-path-hook">For the doer who cannot stop doing. The path of work that does not entangle.</div>
+                <div class="vb-path-cta">Open at BG 2.47 →</div>
+              </div>
+              <div class="vb-path">
+                <div class="num">Path 02</div>
+                <div class="vb-path-devanagari">ज्ञान योग</div>
+                <div class="vb-path-name">Jnana</div>
+                <div class="vb-path-gloss">"The self is beyond birth and death."</div>
+                <div class="vb-path-hook">For the thinker asking what is real. The path of discernment.</div>
+                <div class="vb-path-cta">Open at BG 2.20 →</div>
+              </div>
+              <div class="vb-path">
+                <div class="num">Path 03</div>
+                <div class="vb-path-devanagari">भक्ति योग</div>
+                <div class="vb-path-name">Bhakti</div>
+                <div class="vb-path-gloss">"Offer a leaf, a flower, water — I accept."</div>
+                <div class="vb-path-hook">For the devotee who leads with heart. The path of surrender.</div>
+                <div class="vb-path-cta">Open at BG 9.26 →</div>
+              </div>
+            </div>
+            <div class="vb-below">
+              Not sure? <a href="#">Read Chapter 1 first →</a> · <a href="#">Today's verse →</a> · <a href="#">हिंदी में</a>
+            </div>
+            <div class="vb-strip">
+              <div><b>18 chapters</b> · 700 verses</div>
+              <div><b>Sanskrit</b> · Hindi · English</div>
+              <div><b>Free</b> · no login · no paywall</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="variant-analysis">
+        <div class="analysis-block"><h4>What works</h4><p>Turns the hero into the highest-leverage decision on the site. Personalization on cold traffic without a login. The three-paths framing is authentically Gita, not a growth-hack quiz overlaid on scripture.</p></div>
+        <div class="analysis-block is-risk"><h4>What risks</h4><p>SEO cost: the H1 "Which path is yours?" doesn't rank for "bhagavad gita". Need to keep the schema-rich content lower or bury a hidden H2. Cold users may pick wrong and land on a verse that feels random.</p></div>
+        <div class="analysis-block is-pick"><h4>Pick this if</h4><p>The metric you care about is not landings but "verses per session" and return visits. Path Quiz already exists on the current page mid-scroll — this variant tests whether promoting it to the hero lifts engagement.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== VARIANT C ===== -->
+    <section class="variant">
+      <div class="variant-head">
+        <div class="variant-letter">C</div>
+        <div class="variant-meta">
+          <h2>Ask the Gita — search-led hero</h2>
+          <p class="variant-tradeoff"><b>Optimizes for</b> modern seekers who arrive with a question ("why can't I let go?") rather than a chapter number. Positions Wisdom as an oracle you consult, not a book you read. <b>Tradeoff</b> sets an expectation that requires the search backend to be genuinely good; a bad match burns trust harder than a bad landing page.</p>
+        </div>
+      </div>
+      <div class="preview-frame">
+        <div class="preview-frame-bar">Variant C · Ask-the-Gita · hero + example match</div>
+        <div class="preview">
+          <div class="vc-root">
+            <div class="vc-top">
+              <div class="vc-brand">Wisdom.</div>
+              <div class="vc-nav"><a>Gita</a><a>Themes</a><a>हिंदी</a><a>Blog</a><a>App</a></div>
+            </div>
+            <div class="vc-hero">
+              <div class="vc-eb">The Bhagavad Gita, in the shape of your question</div>
+              <h1 class="vc-h1">Bring one question. <em>The Gita has answered it before.</em></h1>
+              <p class="vc-sub">Type what's on your mind. Wisdom finds the verse — from all 700, in Sanskrit, Hindi and English — that speaks to it, and opens it with commentary.</p>
+              <div class="vc-searchwrap">
+                <input class="vc-input" placeholder="Why can't I stop overthinking?" />
+                <button class="vc-ask">Ask →</button>
+              </div>
+              <div class="vc-chips">
+                <div class="vc-chip">How do I let go of a result?</div>
+                <div class="vc-chip">What is dharma when duties conflict?</div>
+                <div class="vc-chip">Why am I anxious for no reason?</div>
+                <div class="vc-chip">Is devotion enough?</div>
+                <div class="vc-chip">Who am I, really?</div>
+              </div>
+              <p class="vc-note">Or — <a style="color:rgba(245,201,106,0.85); text-decoration: none; border-bottom: 1px solid rgba(245,201,106,0.35);">read the Gita chapter by chapter →</a></p>
+            </div>
+            <div class="vc-preview-answer">
+              <div class="lbl">Example answer · "Why can't I stop overthinking?"</div>
+              <div class="san">अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते…</div>
+              <div class="eng">"The mind is restless, difficult to control — but it can be tamed by practice and by dispassion."</div>
+              <div class="ref">Bhagavad Gita 6.35 · Krishna to Arjuna · Read with commentary →</div>
+            </div>
+            <div class="vc-strip">
+              <div><b>700 verses</b> indexed by meaning</div>
+              <div><b>Sanskrit</b> · Hindi · English</div>
+              <div><b>Free</b> · no login</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="variant-analysis">
+        <div class="analysis-block"><h4>What works</h4><p>Turns the whole product story into one input field. Native to how people search now (ChatGPT-shaped). Positions Wisdom as the Gita's answering surface — an angle no other scripture site owns.</p></div>
+        <div class="analysis-block is-risk"><h4>What risks</h4><p>The backend has to actually match well. First bad answer breaks the promise. Also invites theology arguments ("that's not what 6.35 means") — needs a human-curated seed of the top ~50 questions to bootstrap trust.</p></div>
+        <div class="analysis-block is-pick"><h4>Pick this if</h4><p>Scripture-AI is the direction anyway (the current page already has ScriptureAI waitlist CTAs). Ship this as a way to validate demand before building the full product — even the input alone captures intent + waitlist emails.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== VARIANT D ===== -->
+    <section class="variant">
+      <div class="variant-head">
+        <div class="variant-letter">D</div>
+        <div class="variant-meta">
+          <h2>Editorial minimalist — hushed and confident</h2>
+          <p class="variant-tradeoff"><b>Optimizes for</b> taste, gravitas, shareability. The kind of page a Kindle-highlighter screenshots and sends to a friend. <b>Tradeoff</b> gives up nearly all conversion machinery — no emoji, no proof bar, no path quiz above the fold — trusting the copy and the type to do the work.</p>
+        </div>
+      </div>
+      <div class="preview-frame">
+        <div class="preview-frame-bar">Variant D · Editorial minimalist · hero</div>
+        <div class="preview">
+          <div class="vd-root">
+            <div class="vd-top">
+              <div class="vd-brand">Wisdom.</div>
+              <div class="vd-nav"><a>The Gita</a><a>Themes</a><a>हिंदी</a><a>Essays</a><a>About</a></div>
+            </div>
+            <div class="vd-rule"></div>
+            <h1 class="vd-h1">The Bhagavad Gita.<br/><em>All 700 verses, on the internet.</em></h1>
+            <p class="vd-lede">Sanskrit, Hindi, English. One verse per page. No login, no paywall, no advertising. A reading, not a product.</p>
+            <div class="vd-actions">
+              <a class="vd-cta" href="#">Begin at 1.1</a>
+              <a class="vd-cta-ghost" href="#">Or open today's verse</a>
+            </div>
+            <div class="vd-toc">
+              <div class="vd-toc-col"><div class="lbl">Volume</div><div class="val">18 chapters, 700 verses</div></div>
+              <div class="vd-toc-col"><div class="lbl">Tongues</div><div class="val">Sanskrit · Hindi · English</div></div>
+              <div class="vd-toc-col"><div class="lbl">Method</div><div class="val">One verse per page, with commentary</div></div>
+              <div class="vd-toc-col"><div class="lbl">Price</div><div class="val">Free. Always.</div></div>
+            </div>
+            <div class="vd-quote">"Whenever dharma declines, I manifest myself."<small>Bhagavad Gita 4.7 — one of 700 verses, all here</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="variant-analysis">
+        <div class="analysis-block"><h4>What works</h4><p>Uniquely restrained in a category (spiritual sites) that is usually loud, gradient-heavy and overproduced. The confidence itself is a positioning statement: "we didn't need to convince you." Highly linkable, highly screenshottable.</p></div>
+        <div class="analysis-block is-risk"><h4>What risks</h4><p>Leaves the anxious first-time reader without a lifeline — they may not click "Begin at 1.1" cold. Loses the built-in cross-links (path quiz, themes, iconic verses) that the current page uses to catch users who don't know what they want.</p></div>
+        <div class="analysis-block is-pick"><h4>Pick this if</h4><p>The bet is on trust and word-of-mouth over per-visit conversion. Also the right hero if you want the site to grow through essays and screenshots on X rather than through search.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== Decision row ===== -->
+    <section class="decision">
+      <h3>How to pick a direction</h3>
+      <p class="decision-sub">Pick on the tradeoff, not the visual. Any of these will look good in the brand.</p>
+      <div class="decision-grid">
+        <div class="decision-cell"><b>If you want →</b><span>To reward SEO traffic that arrived to READ, promote depth over pitch → pick A (Verse-first)</span></div>
+        <div class="decision-cell"><b>If you want →</b><span>The first click to feel personal, and to grow "verses per session" → pick B (Path picker)</span></div>
+        <div class="decision-cell"><b>If you want →</b><span>To validate the Scripture-AI thesis on cold traffic with the input as the funnel → pick C (Ask the Gita)</span></div>
+        <div class="decision-cell"><b>If you want →</b><span>A page that reads as taste and trust, growing through essays and screenshots → pick D (Editorial)</span></div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

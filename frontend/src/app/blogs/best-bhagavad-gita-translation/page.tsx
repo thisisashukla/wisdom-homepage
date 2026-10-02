@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 
 export const metadata: Metadata = {
   title: "Which Bhagavad Gita Translation Should You Read? — Every Major English Version, Compared | Wisdom",
@@ -578,6 +578,7 @@ export default function BestGitaTranslationPage() {
             A translator has to pick one of these doors, or invent a diplomatic middle. There is no rendering of 18.66 that is innocent of interpretation. Keep that in mind as you read what follows.
         </p>
 
+        <GitaAppCTA variant="inline" placement="article_inline" />
         <h2>If You Are Starting from Zero</h2>
 
         <div className="pick">
@@ -750,12 +751,12 @@ export default function BestGitaTranslationPage() {
     </div>
 
     <div className="content">
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Best Bhagavad Gita Translation"} />
+
     </div>
 
     <footer>
         <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> &mdash; <a href="https://wisdomquotes.in/blogs">Blog</a> &mdash; <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p><a href="https://wisdomquotes.in">Home</a> &mdash; <a href="https://wisdomquotes.in/blogs">Blog</a> &mdash; <a href="/gita" data-mp-location="footer_read_gita">Read the Gita</a></p>
     </footer>
 
       <BlogTracker pageName="Best Bhagavad Gita Translation" />

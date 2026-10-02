@@ -68,9 +68,14 @@ class BgeReranker:
         self.model_source = model_source
         self._model = None
         self._load_failed = False
+        self._load_error: Exception | None = None
 
-    def _load(self) -> None:
-        if self._model is not None or self._load_failed:
+    def _load(self, *, strict: bool = False) -> None:
+        if self._model is not None:
+            return
+        if self._load_failed:
+            if strict:
+                raise RuntimeError(f"Reranker failed to load: {self._load_error}") from self._load_error
             return
         try:
             # Prefer FlagEmbedding (native BGE tooling); fall back to
@@ -93,6 +98,14 @@ class BgeReranker:
                 "Reranker unavailable — falling back to dense-only retrieval. Reason: %s", e
             )
             self._load_failed = True
+            self._load_error = e
+            if strict:
+                raise RuntimeError(f"Reranker failed to load from {self.model_source}: {e}") from e
+
+    def load(self) -> "BgeReranker":
+        """Load model weights now, raising if startup cannot make them ready."""
+        self._load(strict=True)
+        return self
 
     @property
     def available(self) -> bool:
@@ -153,11 +166,15 @@ def get_reranker() -> Optional[BgeReranker]:
     return _reranker
 
 
-def init_reranker(model_source: str = "BAAI/bge-reranker-v2-m3") -> BgeReranker:
+def init_reranker(
+    model_source: str = "BAAI/bge-reranker-v2-m3",
+    *,
+    eager: bool = True,
+) -> BgeReranker:
     """
-    Instantiate the reranker singleton. Does NOT eagerly load weights — first
-    scoring call triggers _load(). This keeps startup fast; the ~1–2s model
-    load hits the first search request instead of every uvicorn restart.
+    Instantiate the reranker singleton and load its weights before returning.
+    A configured reranker is part of readiness, so eager loading raises when
+    weights cannot be loaded instead of deferring the failure to a request.
 
     Pass an empty string to skip creation entirely (disable reranker at
     the config layer).
@@ -168,5 +185,8 @@ def init_reranker(model_source: str = "BAAI/bge-reranker-v2-m3") -> BgeReranker:
         logger.info("Reranker disabled by config")
         return None  # type: ignore[return-value]
     _reranker = BgeReranker(model_source=model_source)
-    logger.info("Reranker singleton created (lazy load): %s", model_source)
+    if eager:
+        logger.info("Loading configured reranker during startup: %s", model_source)
+        _reranker.load()
+    logger.info("Reranker ready: %s", model_source)
     return _reranker

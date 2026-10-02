@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 
 export const metadata: Metadata = {
   title: "20 Famous Sanskrit Shlokas with Meaning in Hindi and English | Wisdom",
@@ -805,12 +805,12 @@ export default function TwentyFamousSanskritShlokasPage() {
       </div>
 
       <div className="content" style={{ paddingTop: 0 }}>
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"20 Famous Sanskrit Shlokas"} />
+        <GitaAppCTA variant="chapter" locale="en" pageName={"20 Famous Sanskrit Shlokas"} />
       </div>
 
       <footer>
         <p>&copy; 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> &mdash; <a href="https://wisdomquotes.in/blogs">Blog</a> &mdash; <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p><a href="https://wisdomquotes.in">Home</a> &mdash; <a href="https://wisdomquotes.in/blogs">Blog</a> &mdash; <a href="/gita" data-mp-location="footer_read_gita">Read the Gita</a></p>
       </footer>
 
       <BlogTracker pageName="20 Famous Sanskrit Shlokas" />

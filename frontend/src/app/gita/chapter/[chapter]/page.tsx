@@ -1,3 +1,4 @@
+import { smartBanner } from '@/lib/funnel'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import {
@@ -10,9 +11,7 @@ import {
   chapterUrl,
   verseUrl,
 } from '@/lib/gita'
-// GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
-// for the Scripture AI waitlist while that product launches.
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 
@@ -31,6 +30,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return {
     title,
     description,
+    itunes: smartBanner(chapterUrl(ch.number)),
     alternates: {
       canonical: `https://wisdomquotes.in${chapterUrl(ch.number)}`,
       languages: {
@@ -214,7 +214,7 @@ export default async function ChapterPage({ params }: { params: Params }) {
         ))}
       </ul>
 
-      <ScriptureAIGitaCTA variant="chapter" locale="en" chapter={ch} pageName={`Gita Chapter ${ch.number}`} />
+      <GitaAppCTA variant="chapter" locale="en" chapter={ch} pageName={`Gita Chapter ${ch.number}`} />
 
 
       <div className="gita-pn">

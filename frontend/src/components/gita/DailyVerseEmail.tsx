@@ -98,8 +98,6 @@ export default function DailyVerseEmail({ page, locale = 'en' }: Props) {
         locale,
         source: 'daily_verse',
         mode: 'waitlist',
-        email: validation.email,
-        email_domain: validation.email.split('@')[1] || '',
       })
     } catch (err) {
       setStatus('error')

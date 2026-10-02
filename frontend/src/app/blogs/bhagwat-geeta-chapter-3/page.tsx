@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 3 Summary \u2013 Key Verses & Meaning (Karma Yoga)",
@@ -1266,7 +1266,7 @@ export default function ChapterThreePage() {
           </tbody>
         </table>
 
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 3"} />
+        <GitaAppCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 3"} />
 
 
         {/* CHAPTER NAV */}
@@ -1330,7 +1330,7 @@ export default function ChapterThreePage() {
       </p>
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  ·
-        <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer_app_store">App Store</a>  ·
+        <a href="/gita" data-mp-location="footer_read_gita">Read the Gita</a>  ·
         <a href="/privacy">Privacy</a>  ·
         <a href="/terms">Terms</a>  ·
         <a href="mailto:work.ankurshukla@gmail.com">Support</a>

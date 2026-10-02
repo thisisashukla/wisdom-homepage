@@ -1,3 +1,4 @@
+import { smartBanner } from '@/lib/funnel'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import {
@@ -8,21 +9,17 @@ import {
   chapterUrl,
   topicUrl,
 } from '@/lib/gita'
-// GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
-// for the Scripture AI waitlist while that product launches.
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import BlogTracker from '@/components/BlogTracker'
 import SanskritText from '@/components/gita/SanskritText'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
-// DailyVerseEmail source preserved at @/components/gita/DailyVerseEmail — usage
-// disabled for now; only the Scripture AI waitlist is shown on this page.
-// import DailyVerseEmail from '@/components/gita/DailyVerseEmail'
 import { getVerseAudio } from '@/lib/gita'
 
 // Re-render once an hour so the day rolls over cleanly without manual rebuilds.
 export const revalidate = 3600
 
 export const metadata: Metadata = {
+  itunes: smartBanner('/gita/today'),
   title: 'Bhagavad Gita — Verse of the Day (Hindu Verse of the Day) | Wisdom',
   description:
     'A new verse from the Bhagavad Gita every day. Sanskrit original, Hindi and English meaning, plus the story behind why this shloka fits today. Your daily Hindu spiritual practice.',
@@ -280,10 +277,6 @@ export default async function TodayPage() {
         </div>
       </article>
 
-      {/* ── DailyVerseEmail removed for now — Scripture AI waitlist below is
-             the only signup on this page. Component code preserved at
-             @/components/gita/DailyVerseEmail. */}
-
       {/* ── The backstory ── */}
       {context && (
         <div
@@ -305,7 +298,7 @@ export default async function TodayPage() {
         </div>
       )}
 
-      <ScriptureAIGitaCTA variant="verse" locale="en" verse={verse} pageName="Gita Today" />
+      <GitaAppCTA variant="verse" locale="en" verse={verse} pageName="Gita Today" />
     </main>
   )
 }

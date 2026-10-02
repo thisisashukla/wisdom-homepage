@@ -1,3 +1,6 @@
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
+import { SaveReadingPlace } from '@/components/gita/ReadingProgress'
+import { smartBanner } from '@/lib/funnel'
 import type { Metadata } from 'next'
 import type { CSSProperties } from 'react'
 import { notFound } from 'next/navigation'
@@ -83,6 +86,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return {
     title,
     description,
+    itunes: smartBanner(verseUrl(c, v, 'hi')),
     keywords: [
       `भगवद् गीता ${c}.${v}`,
       `गीता ${c}.${v}`,
@@ -321,6 +325,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
 
   return (
     <main className="gita-main">
+      <SaveReadingPlace chapter={c} verse={v} locale="hi" />
       <BlogTracker pageName={`gita_verse_hi_${c}_${v}`} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(quotationLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
@@ -654,6 +659,8 @@ export default async function VersePageHi({ params }: { params: Params }) {
       )}
 
       {/* ── सामान्य प्रश्न (matches FAQPage schema) ── */}
+      <GitaAppCTA variant="verse" locale="hi" verse={verse} />
+
       {faqs.length >= 2 && (
         <section className="gv-reveal" style={{ marginTop: '56px' }} aria-label="इस श्लोक के बारे में सामान्य प्रश्न">
           <div className="gv-sechead">

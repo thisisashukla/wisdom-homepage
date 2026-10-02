@@ -24,6 +24,24 @@ class Settings(BaseSettings):
     sarvam_api_key: str = ""
     sarvam_model: str = "sarvam-105b"
 
+    # ── Mobile reflection speech services ──────────────────────────────────
+    openai_api_key: str = ""
+    openai_transcribe_model: str = "gpt-4o-transcribe"
+    sarvam_tts_speaker: str = "shubh"
+    sarvam_tts_language: str = "en-IN"
+
+    # ── Sanskrit verse recitation (website audio endpoint) ─────────────────
+    vagdhenu_backend: str = "stub"
+    vagdhenu_hf_space_id: str = "prathoshap/vagdhenu-demo"
+    vagdhenu_hf_api_name: str = "/predict"
+    vagdhenu_http_url: str = ""
+    vagdhenu_http_auth: str = ""
+    vagdhenu_http_timeout: int = 120
+
+    # ── Mobile subscriptions ───────────────────────────────────────────────
+    revenuecat_secret_api_key: str = ""
+    revenuecat_webhook_authorization: str = ""
+
     # ── Data directory (self-contained; no sanscripts dependency) ────────────
     # Directory containing embeddings.npy and verses.json.
     data_dir: str = "./data"

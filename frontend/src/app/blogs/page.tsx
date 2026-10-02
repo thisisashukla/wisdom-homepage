@@ -1,3 +1,4 @@
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 
@@ -526,25 +527,7 @@ export default function BlogIndexPage() {
     </div>
 
     <div className="blog-wrap">
-      {/* APP BANNER */}
-      <div className="app-banner">
-        <div>
-          <h3>One verse a day. What it means right now.</h3>
-          <p>
-            The Wisdom app delivers one Bhagavad Gita verse each morning:
-            Devanagari, transliteration, English meaning, and a guided
-            reflection practice. Free on iPhone.
-          </p>
-        </div>
-        <a
-          href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
-          target="_blank"
-          rel="noopener"
-          className="app-banner-btn"
-          data-mp-location="app_banner"
-          >Download Free →</a
-        >
-      </div>
+      <GitaAppCTA variant="chapter" />
 
       {/* CHAPTER STUDIES */}
       <div className="section-head">

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 
 export const metadata: Metadata = {
   title: "The Rise and Failure of GitaGPT: What Went Wrong When India Tried to Put Krishna on a GPU | Wisdom",
@@ -905,12 +905,12 @@ export default function GitaGptRiseAndFailurePage() {
 
       {/* APP CTA */}
       <div className="content">
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Rise and Failure of GitaGPT"} />
+        <GitaAppCTA variant="chapter" locale="en" pageName={"Rise and Failure of GitaGPT"} />
       </div>
 
       <footer>
         <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> · <a href="https://wisdomquotes.in/blogs">Blog</a> · <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p><a href="https://wisdomquotes.in">Home</a> · <a href="https://wisdomquotes.in/blogs">Blog</a> · <a href="/gita" data-mp-location="footer_read_gita">Read the Gita</a></p>
       </footer>
 
       <BlogTracker pageName="Rise and Failure of GitaGPT" />

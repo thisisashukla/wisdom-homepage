@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 import { trackPageViewed, trackLinkClick, trackEvent } from '@/lib/mixpanel'
 
@@ -14,9 +14,12 @@ const SCROLL_MILESTONES = [25, 50, 75, 90] as const
 
 export function BlogTracker({ pageName }: BlogTrackerProps) {
   const pathname = usePathname()
+  const viewedPath = useRef<string | null>(null)
 
   // ── Page Viewed ────────────────────────────────────────────────────────────
   useEffect(() => {
+    if (viewedPath.current === pathname) return
+    viewedPath.current = pathname
     trackPageViewed(pageName, pathname)
   }, [pageName, pathname])
 

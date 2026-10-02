@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 
 export const metadata: Metadata = {
   title: 'Atman vs Soul: The Distinction the Bhagavad Gita Actually Draws | Wisdom',
@@ -711,7 +711,7 @@ export default function AtmanNotSoulPage() {
           </p>
         </div>
 
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Atman Not Soul Bhagavad Gita"} />
+        <GitaAppCTA variant="chapter" locale="en" pageName={"Atman Not Soul Bhagavad Gita"} />
 
         <h2>Why the Distinction Matters Practically</h2>
         <p>
@@ -886,9 +886,7 @@ export default function AtmanNotSoulPage() {
         <p>
           <a href="https://wisdomquotes.in">Home</a> —{' '}
           <a href="https://wisdomquotes.in/blogs">Blog</a> —{' '}
-          <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">
-            Download
-          </a>
+          <a href="/gita" data-mp-location="footer_read_gita">Read the Gita</a>
         </p>
       </footer>
 

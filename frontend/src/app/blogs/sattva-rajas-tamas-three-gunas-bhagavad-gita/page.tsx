@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 
 export const metadata: Metadata = {
   title: "Sattva, Rajas, Tamas — The Three Gunas Explained (and Which One Is Running You Right Now) | Wisdom",
@@ -826,12 +826,12 @@ export default function ThreeGunasPage() {
     </div>
 
     <div className="content">
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Three Gunas Sattva Rajas Tamas"} />
+      <GitaAppCTA variant="chapter" locale="en" pageName={"Three Gunas Sattva Rajas Tamas"} />
     </div>
 
     <footer>
       <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-      <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+      <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="/gita" data-mp-location="footer_read_gita">Read the Gita</a></p>
     </footer>
 
     <BlogTracker pageName="Three Gunas Sattva Rajas Tamas" />

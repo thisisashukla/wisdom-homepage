@@ -1,3 +1,4 @@
+import { smartBanner } from '@/lib/funnel'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import {
@@ -10,7 +11,6 @@ import {
 } from '@/lib/gita'
 import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import BlogTracker from '@/components/BlogTracker'
-import DailyVerseEmail from '@/components/gita/DailyVerseEmail'
 import SanskritText from '@/components/gita/SanskritText'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
 import { getVerseAudio } from '@/lib/gita'
@@ -18,6 +18,7 @@ import { getVerseAudio } from '@/lib/gita'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
+  itunes: smartBanner('/hi/gita/today'),
   title: 'भगवद् गीता — आज का श्लोक (Aaj Ka Shlok) | Wisdom',
   description: 'हर दिन भगवद् गीता का एक श्लोक — संस्कृत, हिन्दी और अंग्रेज़ी में। आज इस श्लोक की कहानी और आपके जीवन से जुड़ाव। आपकी रोज़ की आध्यात्मिक लय।',
   alternates: {
@@ -266,7 +267,6 @@ export default async function TodayPageHi() {
       </article>
 
       {/* ── Email capture — daily verse retention hook ── */}
-      <DailyVerseEmail page="gita_today_hi" locale="hi" />
 
       {/* ── The backstory ── */}
       {context && (

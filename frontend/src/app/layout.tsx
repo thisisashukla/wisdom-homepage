@@ -97,11 +97,6 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/assets/new-light-logo.webp" />
-        {/* Ties this site to the iOS app for App Store rich results & smart banner. */}
-        <meta
-          name="apple-itunes-app"
-          content="app-id=6747684125, app-argument=https://wisdomquotes.in"
-        />
       </head>
       <body>
         <AuthProvider>

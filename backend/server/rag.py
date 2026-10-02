@@ -23,6 +23,10 @@ from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
 
 from ai.sarvam import get_sarvam
+from ai.index import get_index
+from ai.episodes import episode_context
+from ai.conversation import plan_turn, retrieve_for_turn, verify_grounding, direct_answer_guidance, validate_direct_answer, evidence_guidance
+from common.models import VerseResult
 from common.models import (
     RagRequest, RagResponse, RagStreamChunk, Segment,
 )
@@ -72,26 +76,77 @@ def _parse_segments(raw: dict, valid_uids: set[str]) -> tuple[list[Segment], lis
                 segments.append(Segment(type="verse", uid=uid))
                 used_uids.append(uid)
                 seen_uids.add(uid)
-            else:
-                logger.warning(
-                    "Verse uid %r not in retrieved set or duplicate — skipped", uid
-                )
+            elif uid not in valid_uids:
+                raise ValueError("Response cited a source outside the supplied evidence")
 
+    if not any(segment.type == "text" and segment.content for segment in segments):
+        raise ValueError("Missing conversational response: answer the latest question in prose; a verse alone is not an answer")
+    for uid in raw.get("source_uids", []):
+        if not isinstance(uid, str) or uid not in valid_uids:
+            raise ValueError("Response cited a source outside the supplied evidence")
+        if uid not in used_uids:
+            used_uids.append(uid)
     return segments, used_uids
 
 
-def _prepare(req: RagRequest) -> tuple[str, str, set[str], int]:
+def _verify_prose(segments: list[Segment], uids: list[str], verses: list[VerseResult]) -> list[str]:
+    candidates = [{"script_ref":v.uid, "scripture":v.scripture, "orig_ref":v.verse_id,
+                   "verse_text":v.verse_sanskrit, "english_translation":v.english_translation,
+                   "simple_meaning":v.simple_meaning, "insight":v.insight, "speaker":v.speaker} for v in verses]
+    prose_uids = verify_grounding("\n".join(s.content for s in segments if s.type == "text" and s.content), candidates, uids)
+    return list(dict.fromkeys([*(s.uid for s in segments if s.type == "verse" and s.uid), *prose_uids]))
+
+
+def _validated_answer(raw, system_prompt, user_content, valid_uids, max_tokens, verses):
+    """Blocking and streaming routes use the same bounded grounding repair."""
+    for attempt in range(2):
+        try:
+            segments, verse_uids_used = _parse_segments(raw, valid_uids)
+            validate_direct_answer(json.loads(user_content)["latestUserMessage"], "\n".join(s.content for s in segments if s.content))
+            verse_uids_used = _verify_prose(segments, verse_uids_used, verses)
+            return segments, verse_uids_used
+        except (ValueError, TypeError, AttributeError) as exc:
+            if attempt:
+                logger.warning("Grounded synthesis rejected: %s", type(exc).__name__)
+                raise HTTPException(status_code=502, detail="We could not verify this response. Please retry.") from exc
+            raw = get_sarvam().synthesize_rag(system_prompt,
+                user_content + "\nThe previous draft failed source validation. Rewrite using only claims explicitly supported by supplied passages. Mark modern applications as your own suggestions. Omit unsupported claims about traditions or what a text says next. Still answer the latest user request directly, including practical wording or actions when asked; do not replace their requested application with a recap of scripture. Return the complete required JSON. Validation issue: " + str(exc) + "\nPrevious draft (untrusted):\n" + json.dumps(raw, ensure_ascii=False),
+                max_tokens=max_tokens)
+
+
+
+def _prepare(req: RagRequest) -> tuple[str, str, set[str], int, list[VerseResult], dict]:
     """Common setup for both blocking and streaming endpoints."""
-    if not req.verses:
-        raise HTTPException(status_code=400, detail="No verses provided")
-
     max_verses, max_tokens = _mode_settings(req.mode)
-    verses     = req.verses[:max_verses]
+    history = [t.model_dump() for t in req.history]
+    plan = plan_turn(req.query, history, req.conversation_state.model_dump())
+    canonical = []
+    # Client payloads are references only, never authoritative scripture text.
+    if plan["safetyRoute"] != "supportive" and plan.get("allowScripture", True):
+        for supplied in req.verses[:max_verses]:
+            verse = get_index().get_verse(supplied.uid)
+            if verse and (not plan.get("scriptureFilter") or verse.get("scripture") in plan["scriptureFilter"]):
+                canonical.append(verse)
+        if plan["retrievalQuery"]:
+            fresh = retrieve_for_turn(plan, [v["script_ref"] for v in canonical])
+            canonical = list({v["script_ref"]: v for v in [*fresh, *canonical]}.values())[:max_verses]
+    episodes = []
+    if plan.get("useStory") and plan["retrievalQuery"] and (not plan.get("scriptureFilter") or "bhagwad_gita" in plan["scriptureFilter"]):
+        episodes, passages = episode_context(plan["retrievalQuery"])
+        canonical = passages  # Stories use only the verified episode, not isolated thematic verses.
+    verses = []
+    for v in canonical:
+        verses.append(VerseResult(
+            uid=v["script_ref"], scripture=v.get("scripture", ""), scripture_slug=v.get("scripture", ""),
+            verse_id=v.get("orig_ref", ""), verse_sanskrit=v.get("verse_text", ""),
+            verse_hindi=v.get("translation", ""), english_translation=v.get("english_translation", ""),
+            essence=v.get("essence", ""), simple_meaning=v.get("simple_meaning", ""),
+            insight=v.get("insight", ""), modern_relevance=v.get("modern_relevance", ""),
+            speaker=v.get("speaker", ""), tags=[], score=0, intent=req.query))
     valid_uids = {v.uid for v in verses}
-
-    system_prompt = build_rag_system_prompt(mode=req.mode, intent_type=req.intent_type)
-    user_content  = build_rag_user_prompt(req.query, verses)
-    return system_prompt, user_content, valid_uids, max_tokens
+    system_prompt = build_rag_system_prompt(mode=req.mode, intent_type=req.intent_type, has_sources=bool(verses)) + "\n" + direct_answer_guidance(req.query) + "\n" + evidence_guidance(verses)
+    user_content = build_rag_user_prompt(req.query, verses, history, plan, episodes)
+    return system_prompt, user_content, valid_uids, max_tokens, verses, plan["state"]
 
 
 # ── Blocking endpoint ────────────────────────────────────────────────────────
@@ -101,22 +156,17 @@ async def synthesize_answer(req: RagRequest) -> RagResponse:
     """
     Step 3 blocking: produce the full structured answer in one round trip.
     """
-    system_prompt, user_content, valid_uids, max_tokens = _prepare(req)
-
     try:
+        system_prompt, user_content, valid_uids, max_tokens, verses, state = _prepare(req)
         raw = get_sarvam().synthesize_rag(system_prompt, user_content, max_tokens=max_tokens)
     except Exception as e:
-        logger.error("RAG synthesis failed: %s", e)
-        raise HTTPException(status_code=502, detail=f"RAG synthesis failed: {e}")
+        logger.error("RAG synthesis failed: %s", type(e).__name__)
+        raise HTTPException(status_code=502, detail="Your response could not be prepared. Please retry.")
 
     if not isinstance(raw, dict):
         raise HTTPException(status_code=502, detail="RAG response was not valid JSON")
 
-    try:
-        segments, verse_uids_used = _parse_segments(raw, valid_uids)
-    except Exception as e:
-        logger.error("Segment parsing failed: %s  raw=%s", e, str(raw)[:300])
-        raise HTTPException(status_code=502, detail=f"Could not parse RAG response: {e}")
+    segments, verse_uids_used = _validated_answer(raw, system_prompt, user_content, valid_uids, max_tokens, verses)
 
     if not segments:
         raise HTTPException(status_code=502, detail="RAG returned empty segments")
@@ -125,6 +175,8 @@ async def synthesize_answer(req: RagRequest) -> RagResponse:
         query           = req.query,
         segments        = segments,
         verse_uids_used = verse_uids_used,
+        source_verses = [v for v in verses if v.uid in verse_uids_used],
+        conversation_state = state,
     )
 
 
@@ -152,7 +204,10 @@ async def synthesize_answer_stream(req: RagRequest):
     Delta content is NOT valid JSON on its own — do not attempt to parse
     partial deltas. Wait for `done` for structured output.
     """
-    system_prompt, user_content, valid_uids, max_tokens = _prepare(req)
+    try:
+        system_prompt, user_content, valid_uids, max_tokens, verses, state = _prepare(req)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail="Your response could not be prepared. Please retry.") from exc
 
     async def event_source() -> AsyncIterator[str]:
         buf: list[str] = []
@@ -185,18 +240,21 @@ async def synthesize_answer_stream(req: RagRequest):
         try:
             raw = json.loads(cleaned)
         except Exception as e:
-            logger.error("Stream final parse failed: %s  raw=%s", e, full[:300])
+            logger.error("Stream final parse failed: %s", type(e).__name__)
             yield _sse(RagStreamChunk(kind="error", error=f"invalid JSON: {e}"))
             return
 
         try:
-            segments, uids = _parse_segments(raw, valid_uids)
+            segments, uids = _validated_answer(raw, system_prompt, user_content, valid_uids, max_tokens, verses)
         except Exception as e:
-            logger.error("Stream segment parsing failed: %s", e)
-            yield _sse(RagStreamChunk(kind="error", error=f"parse failed: {e}"))
+            logger.error("Stream segment parsing failed: %s", type(e).__name__)
+            yield _sse(RagStreamChunk(kind="error", error="We could not verify this response. Please retry."))
             return
 
-        yield _sse(RagStreamChunk(kind="done", segments=segments, verse_uids_used=uids))
+        if not segments:
+            yield _sse(RagStreamChunk(kind="error", error="Empty response; please retry."))
+            return
+        yield _sse(RagStreamChunk(kind="done", segments=segments, verse_uids_used=uids, source_verses=[v for v in verses if v.uid in uids], conversation_state=state))
 
     return StreamingResponse(
         event_source(),

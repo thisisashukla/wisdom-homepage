@@ -157,9 +157,26 @@ class Segment(BaseModel):
     uid: Optional[str] = None                 # verse segments
 
 
+class StateEvidence(BaseModel):
+    text: str = Field(max_length=500)
+    evidence: str = Field(max_length=1000)
+
+
+class ConversationState(BaseModel):
+    facts: List[StateEvidence] = Field(default_factory=list, max_length=4)
+    constraints: List[StateEvidence] = Field(default_factory=list, max_length=4)
+    tentativeTensions: List[StateEvidence] = Field(default_factory=list, max_length=4)
+    unknowns: List[StateEvidence] = Field(default_factory=list, max_length=4)
+    rejectedInterpretations: List[StateEvidence] = Field(default_factory=list, max_length=4)
+    adviceTried: List[StateEvidence] = Field(default_factory=list, max_length=4)
+    userPreferences: List[StateEvidence] = Field(default_factory=list, max_length=4)
+
+
 class RagRequest(BaseModel):
-    query: str
-    verses: List[VerseResult]
+    query: str = Field(min_length=1, max_length=12000)
+    conversation_state: ConversationState = Field(default_factory=ConversationState)
+    verses: List[VerseResult] = Field(default_factory=list, max_length=20)
+    history: List[Turn] = Field(default_factory=list, max_length=32)
     mode: Literal["crisp", "detailed"] = "crisp"
     intent_type: IntentType = "other"         # picks voice profile in prompts/rag.py
 
@@ -168,6 +185,8 @@ class RagResponse(BaseModel):
     query: str
     segments: List[Segment]
     verse_uids_used: List[str]
+    source_verses: List[VerseResult] = Field(default_factory=list)
+    conversation_state: ConversationState = Field(default_factory=ConversationState)
 
 
 # ── Streaming (SSE) ───────────────────────────────────────────────────────────
@@ -184,6 +203,8 @@ class RagStreamChunk(BaseModel):
     delta: Optional[str] = None
     segments: Optional[List[Segment]] = None
     verse_uids_used: Optional[List[str]] = None
+    source_verses: Optional[List[VerseResult]] = None
+    conversation_state: Optional[ConversationState] = None
     error: Optional[str] = None
 
 

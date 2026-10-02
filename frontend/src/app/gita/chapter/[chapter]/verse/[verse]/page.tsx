@@ -1,3 +1,6 @@
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
+import { SaveReadingPlace } from '@/components/gita/ReadingProgress'
+import { smartBanner } from '@/lib/funnel'
 import type { Metadata } from 'next'
 import type { CSSProperties } from 'react'
 import { notFound } from 'next/navigation'
@@ -98,6 +101,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return {
     title,
     description,
+    itunes: smartBanner(verseUrl(c, v, 'en')),
     keywords: [
       `bhagavad gita ${c}.${v}`,
       `bg ${c}.${v}`,
@@ -336,6 +340,7 @@ export default async function VersePage({ params }: { params: Params }) {
 
   return (
     <main className="gita-main">
+      <SaveReadingPlace chapter={c} verse={v} locale="en" />
       <BlogTracker pageName={`gita_verse_${c}_${v}`} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(quotationLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
@@ -592,6 +597,8 @@ export default async function VersePage({ params }: { params: Params }) {
           )}
         </section>
       )}
+
+      <GitaAppCTA variant="verse" locale="en" verse={verse} />
 
       {/* ── Common questions (rendered to match FAQPage schema above) ── */}
       {faqs.length >= 2 && (

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import GitaAppCTA from '@/components/gita/GitaAppCTA'
 
 export const metadata: Metadata = {
   title: "Karma in the Bhagavad Gita — The Real Meaning + 7 Key Verses (Chapter 3 Explained) | Wisdom",
@@ -739,12 +739,12 @@ export default function KarmaMeaningPage() {
         </div>
     </div>
 
-    <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Gita Karma Meaning"} />
+    <GitaAppCTA variant="chapter" locale="en" pageName={"Gita Karma Meaning"} />
 
 
     <footer>
         <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="/gita" data-mp-location="footer_read_gita">Read the Gita</a></p>
     </footer>
 
     {/* Schema Markup */}

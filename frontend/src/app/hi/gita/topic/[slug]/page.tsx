@@ -183,7 +183,6 @@ export default async function TopicPageHi({ params }: { params: Params }) {
            in particular) get one prominent app hand-off before any verse list so
            search landings that only skim the hero still see the offer. ── */}
       <div style={{ margin: '18px 0 28px' }}>
-        <GitaAppCTA variant="inline" locale="hi" />
       </div>
 
       {featured.length > 0 && (

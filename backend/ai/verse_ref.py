@@ -135,6 +135,20 @@ _PROSE_PAIR = re.compile(
 )
 
 
+def named_scriptures(text: str) -> list[str]:
+    """Resolve explicitly named texts without counting 'gita' inside another Gita."""
+    occupied: list[tuple[int, int]] = []
+    slugs = []
+    for alias, slug in _ALIASES:
+        for match in re.finditer(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", text, re.I):
+            if any(start <= match.start() < end for start, end in occupied):
+                continue
+            occupied.append(match.span())
+            if slug not in slugs:
+                slugs.append(slug)
+    return slugs
+
+
 def _find_alias(text: str) -> Optional[Tuple[str, int, int]]:
     """
     Return (canonical_slug, start_offset, end_offset) of the first matching
