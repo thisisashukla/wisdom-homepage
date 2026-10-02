@@ -4,4 +4,18 @@ node_modules
 .vercel
 tsconfig.tsbuildinfo
 .DS_Store
+backend/.env.supabase.local
 *.pyc
+
+# Python
+.venv/
+__pycache__/
+
+# Large data artifacts (embeddings + verse corpora)
+backend/data/*.npy
+backend/data/verse_meta.json
+backend/data/verses.json
+backend/data/bge_m3_enriched_uids.json
+
+# Local scratch
+_to_delete/
