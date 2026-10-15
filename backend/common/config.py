@@ -28,6 +28,43 @@ class Settings(BaseSettings):
     # Directory containing embeddings.npy and verses.json.
     data_dir: str = "./data"
 
+    # The curated verse + prasang library served by /recommend
+    # (sanscripts/wisdom_kb/taxonomy/wisdom_library.json, copied in by
+    # scripts/sync_wisdom_library.py). Point it at the sanscripts file locally if you like.
+    wisdom_library_path: str = "./data/taxonomy/wisdom_library.json"
+
+    # Plan endpoints (/recommend/hook, /preview, /plan).
+    # verse_roles.json is optional: written by scripts/label_verse_roles.py; heuristics otherwise.
+    verse_roles_path: str = "./data/taxonomy/verse_roles.json"
+    # Deadline for the LLM reading of the person. Onboarding waits 12 s in total, so keep
+    # this well under it; past the deadline the deterministic reading is used.
+    understand_timeout_s: float = 7.0
+    # A second, short LLM pass reorders the top hooks and picks the story (perspective, not
+    # just topic). Skipped when the request has used up its budget; embedding order stands.
+    rerank_timeout_s: float = 3.5
+    for_you_timeout_s: float = 9.0       # "What it says" + "For you" under each plan day (parallel calls per week)
+    # "Listen" on a plan day (server/narration.py): a storyteller narrator in English, and a devotional
+    # reciter for the verse in its own language (Devanagari read in Hindi script mode, a little slower).
+    tts_model: str = "bulbul:v4-flash"
+    # Chosen 15 Oct 2026 from the voice audition: "E", one devotional voice for the story and the verse.
+    # The other pick was "C": tts_speaker="sarang_en_narration", tts_shloka_speaker="ratan_hi_devotional".
+    tts_speaker: str = "girish_en_devotional"
+    tts_pace: float = 0.92
+    tts_shloka_speaker: str = "girish_hi_devotional"
+    tts_shloka_lang: str = "hi-IN"
+    tts_shloka_pace: float = 0.8
+    tts_sample_rate: int = 24000          # every part at one rate, so the joined MP3 plays as one
+    narration_script_timeout_s: float = 12.0
+    tts_timeout_s: float = 20.0
+    narration_max_chars: int = 3200
+    narration_cache_dir: str = "data/narration"
+    depth_timeout_s: float = 12.0        # "go deeper" on a plan day (ai/depth.py)
+    depth_cache_dir: str = "data/depth"
+    # The default week of a plan: days of see, steady, act and story (four digits adding up to 7).
+    # A request's `shape` overrides it. "2221" = hook, diagnose, steady ×2, act ×2, story.
+    plan_week_shape: str = "2221"
+    request_budget_s: float = 10.0
+
     # Local BGE-M3 model weights directory.
     # If empty or non-existent, loads from HuggingFace (cached after first download).
     model_dir: str = ""

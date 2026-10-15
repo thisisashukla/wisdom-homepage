@@ -15,8 +15,8 @@ v2 changes (retrieval overhaul):
 """
 from __future__ import annotations
 
-from typing import List, Literal, Optional
-from pydantic import BaseModel, Field
+from typing import Annotated, Any, Dict, List, Literal, Optional
+from pydantic import BaseModel, Field, StringConstraints
 
 
 # ── Shared enums ──────────────────────────────────────────────────────────────
@@ -204,3 +204,335 @@ class VerseOfDayResponse(BaseModel):
     story: str
 
     themes: List[str] = []
+
+
+# ── Recommend endpoint (onboarding verse picks) ───────────────────────────────
+
+AgeBand = Literal["u25", "25_34", "35_44", "45_54", "55p"]
+LifeStage = Literal["studying", "working", "own_thing", "raising_kids", "caring_parents", "retired", "between"]
+Feeling = Literal["quiet", "nerve", "replay", "stick", "faith", "gita"]   # Restless, Stuck, Uneasy, Determined, Searching, Curious
+
+
+class RecommendRequest(BaseModel):
+    feeling: Feeling
+    age: Optional[AgeBand] = None
+    stages: List[LifeStage] = Field(default_factory=list, max_length=7)
+    phone_hours: Optional[int] = Field(None, ge=1, le=12)        # 12 = 12 or more
+    note: Optional[str] = Field(None, max_length=1000)          # their own words; never stored or logged
+    note_source: Optional[Literal["voice", "text"]] = None
+    count: int = Field(5, ge=1, le=10)
+    exclude: List[str] = Field(default_factory=list, max_length=200)   # verse ids already shown
+
+
+class RecommendSituation(BaseModel):
+    id: str
+    label: str
+    weight: float
+    source: Literal["note", "profile"]
+
+
+class RecommendPrasang(BaseModel):
+    id: str
+    title: Optional[str] = None
+    summary: Optional[str] = None
+    story_hook: Optional[str] = None
+    lesson: Optional[str] = None
+
+
+class RecommendMatched(BaseModel):
+    id: str
+    label: str
+
+
+class RecommendedVerse(BaseModel):
+    id: str
+    ref: str
+    ref_iast: Optional[str] = None        # the same reference in IAST, for cards
+    family: Optional[str] = None
+    speaker: Optional[str] = None
+    listener: Optional[str] = None        # who the verse is said to
+    setting: Optional[str] = None
+    sanskrit: Optional[str] = None        # omitted where the library's Sanskrit isn't display-ready
+    line: str                             # our own short English: only what the verse says
+    translation: Optional[str] = None
+    why: Optional[str] = None             # the verse's reflection or its prasang's lesson
+    misuse: Optional[str] = None          # show with the verse when present
+    tone: Optional[str] = None
+    matched: List[RecommendMatched] = []  # the person's situations this verse speaks to
+    prasang: Optional[RecommendPrasang] = None
+    score: float
+
+
+class SafetyLine(BaseModel):
+    region: str
+    name: str
+    contact: str
+
+
+class RecommendSafety(BaseModel):
+    crisis: bool
+    message: str
+    lines: List[SafetyLine]
+
+
+class RecommendLibrary(BaseModel):
+    verses: int      # verses in the library
+    prasangs: int    # stories they belong to
+    texts: int       # text families (Gita, Upanishads, Ramayana, ...)
+
+
+class RecommendResponse(BaseModel):
+    verses: List[RecommendedVerse]
+    situations: List[RecommendSituation]
+    used_note: bool
+    matching: Literal["semantic", "keywords", "profile"]
+    safety: Optional[RecommendSafety] = None
+    library_version: str
+    library: Optional[RecommendLibrary] = None
+
+
+# ── Plan endpoints: /recommend/hook, /recommend/preview, /recommend/plan ─────
+# One reading of the person (Understanding) drives every week of the plan. A week runs
+#   see (hook, diagnose) → steady ×2 → act ×2 → story
+# at one level: week 1 their situation, week 2 the pattern underneath, week 3 who they are beyond it.
+
+Beat = Literal["hook", "diagnose", "steady", "act", "story"]
+Phase = Literal["see", "steady", "act", "story"]
+Level = Literal["situation", "pattern", "self"]
+Risk = Literal["none", "distress", "self_harm", "harm_from_others"]
+ChipId = Annotated[str, StringConstraints(pattern=r"^[a-z_]{1,40}$")]
+
+
+class JourneyIn(BaseModel):
+    """What the person has lived with Wisdom so far, sent by the app with every later request.
+    Ids and our own labels only: nothing they wrote. Used to rank (lean toward what helped) and to
+    write (the personal lines can build on what already landed)."""
+    week: Optional[int] = Field(None, ge=1, le=3)                   # the week they are in now
+    days_seen: int = Field(0, ge=0, le=400)                         # plan days opened so far
+    helped: List[Annotated[str, StringConstraints(max_length=80)]] = Field(default_factory=list, max_length=40)  # verse ids they marked "This helped"
+    past: List[Annotated[str, StringConstraints(max_length=80)]] = Field(default_factory=list, max_length=10)   # earlier situations' labels
+
+
+class PlanInput(BaseModel):
+    """What onboarding learned. Every field but `feeling` is optional, and the note may be noise."""
+    feeling: Feeling
+    age: Optional[AgeBand] = None
+    stages: List[LifeStage] = Field(default_factory=list, max_length=7)
+    phone_hours: Optional[int] = Field(None, ge=1, le=12)
+    topic: Optional[ChipId] = None        # problem chip, row 1 (e.g. "someone"), if the app asked
+    follow: Optional[ChipId] = None       # problem chip, row 2 (e.g. "parents")
+    note: Optional[str] = Field(None, max_length=1000)          # their own words; never stored or logged
+    note_source: Optional[Literal["voice", "text"]] = None
+    exclude: List[str] = Field(default_factory=list, max_length=200)
+    journey: Optional[JourneyIn] = None   # later requests only (Home): what they have lived so far
+
+
+class HookRequest(PlanInput):
+    alternates: int = Field(2, ge=0, le=4)   # extra hook candidates for "Another"
+
+
+class PreviewRequest(PlanInput):
+    # Send back the `understanding` from /hook to skip the reading step (no note needed,
+    # same reading as onboarding). Send `hook_id` to keep the verse they kept as the hook.
+    understanding: Optional[Dict[str, Any]] = None
+    hook_id: Optional[str] = Field(None, max_length=80)
+
+
+NotForMeReason = Literal["not_my_situation", "too_heavy", "too_religious", "heard_it"]
+
+
+class DayFeedback(BaseModel):
+    """One "Not for me": the verse they turned down and why. Later picks lean away from it."""
+    verse_id: str = Field(..., max_length=80)
+    reason: NotForMeReason
+
+
+class PlanRequest(PreviewRequest):
+    # The app asks for one week at a time: `week` 1, 2 or 3 (its level follows: situation, pattern,
+    # self) and sends every verse and story id already shown in `exclude`. Without `week`, `days`
+    # builds that many days from week 1 (older apps asked for 21).
+    week: Optional[int] = Field(None, ge=1, le=3)
+    level: Optional[Level] = None          # override the week's level (e.g. a premade plan)
+    # Days of see, steady, act and story in the week, adding up to 7 ("2221", "1231", "1222").
+    # Empty: the server's default (settings.plan_week_shape).
+    shape: Optional[Annotated[str, StringConstraints(pattern=r"^[0-7]{4}$")]] = None
+    days: int = Field(7, ge=1, le=28)
+    story_id: Optional[str] = Field(None, max_length=80)   # the preview's story, to keep it as week 1's Day 7
+    feedback: List[DayFeedback] = Field(default_factory=list, max_length=40)   # every "Not for me" so far
+
+
+class ReplaceRequest(PreviewRequest):
+    # "Not for me" on Day 1 of a week: another verse for that day. `exclude` holds every id already
+    # shown; `upcoming` every verse and story id still to come in their plan (never offered here).
+    week: int = Field(1, ge=1, le=3)
+    level: Optional[Level] = None
+    shape: Optional[Annotated[str, StringConstraints(pattern=r"^[0-7]{4}$")]] = None
+    verse_id: str = Field(..., max_length=80)              # the verse they turned down
+    reason: NotForMeReason
+    upcoming: List[str] = Field(default_factory=list, max_length=60)
+    feedback: List[DayFeedback] = Field(default_factory=list, max_length=40)
+
+
+class ReplaceResponse(BaseModel):
+    verse: Optional["BeatVerse"] = None
+    week: int
+    level: Level
+    beat: Beat
+    timings_ms: Dict[str, int] = {}
+
+
+class UnderstoodSituation(BaseModel):
+    id: str
+    label: str
+    weight: float
+    source: Literal["note", "chip", "profile"]
+
+
+class BeatQueries(BaseModel):
+    hook: str
+    diagnose: str
+    steady: str = ""          # empty only from readings made before steady existed
+    act: str
+    story: str
+
+
+class UnderstandingOut(BaseModel):
+    version: int
+    source: Literal["llm", "fallback", "client"]
+    note_quality: Literal["useful", "partial", "unusable", "none"]
+    risk: Risk
+    confidence: float
+    core_struggle: str                 # third person, for the app's own use (never shown verbatim as a diagnosis)
+    mirror: str                        # one gentle line for the loading screen ("It sounds like ...")
+    insight: str = ""                  # "What's really going on", under the revealed verse (second person)
+    mechanism: str                     # root cause id (ai/mechanisms.py)
+    mechanism_label: str
+    secondary_mechanism: Optional[str] = None
+    situations: List[UnderstoodSituation]
+    queries: BeatQueries               # the retrieval statements, after guardrails
+    query_sources: Dict[str, str]      # beat -> llm | template | safety | client
+    weeks: List[str]                   # three week titles: situation, pattern, self
+    # The person, paraphrased once (never the note), sent back by the app so every later step can
+    # write for their life and rank for their stage of it (ai/voice.py).
+    seat: str = ""                     # their place in the situation
+    life_context: str = ""             # their life right now, 1-2 sentences, third person
+    details: List[str] = []            # up to 4 concrete facts they gave, paraphrased
+    age: Optional[str] = None
+    stages: List[str] = []
+    flags: List[str] = []
+
+
+class BeatVerse(RecommendedVerse):
+    beat: Beat
+    role_fit: float                    # how well this verse does the beat's job, 0..1
+    meaning: Optional[str] = None      # plan days: "What it says", the verse told as a story, faithful to its translation
+    for_you: Optional[str] = None      # plan days: what this verse says to this person (ai/personalize.py); else show `why`
+
+
+class StoryCard(BaseModel):
+    beat: Literal["story"] = "story"
+    id: str
+    title: Optional[str] = None
+    kind: Optional[str] = None         # story | teaching
+    family: Optional[str] = None
+    characters: List[str] = []
+    story_hook: Optional[str] = None
+    summary: Optional[str] = None
+    lesson: Optional[str] = None
+    matched: List[RecommendMatched] = []
+    anchor: Optional[RecommendedVerse] = None   # a line from the story, when the library has one
+    score: float
+    why: Optional[str] = None          # unused since 14 Oct (kept for older apps)
+    hook_title: Optional[str] = None   # the story's named hook ("Rama came home from his pilgrimage and stopped laughing")
+    teaser: Optional[str] = None       # Day 7's line: hook_title, else the story's opening line, else its title
+    for_you: Optional[str] = None      # plan days: what this story shows this person (ai/personalize.py)
+
+
+class ArcBeats(BaseModel):
+    hook: Optional[BeatVerse] = None
+    diagnose: Optional[BeatVerse] = None
+    steady: Optional[BeatVerse] = None
+    act: Optional[BeatVerse] = None
+    story: Optional[StoryCard] = None
+
+
+class PlanDayOut(BaseModel):
+    day: int                           # across the whole plan: week 2 runs days 8-14
+    day_in_week: int                   # 1..7
+    week: int
+    level: Level
+    phase: Phase                       # see | steady | act | story
+    beat: Beat
+    verse: Optional[BeatVerse] = None
+    story: Optional[StoryCard] = None
+
+
+class PlanWeek(BaseModel):
+    week: int
+    title: str
+    level: Level = "situation"
+    level_label: str = "Your situation"
+    beats: List[Beat]                  # the beat of each day in the week
+
+
+class PlanSafety(BaseModel):
+    kind: Literal["self_harm", "harm_from_others"]
+    message: str
+    lines: List[SafetyLine]
+
+
+class HookResponse(BaseModel):
+    understanding: UnderstandingOut
+    hook: Optional[BeatVerse] = None
+    alternates: List[BeatVerse] = []
+    safety: Optional[PlanSafety] = None
+    matching: Literal["semantic", "keywords"]
+    library_version: str
+    library: Optional[RecommendLibrary] = None
+    timings_ms: Dict[str, int] = {}
+
+
+class PreviewResponse(BaseModel):
+    understanding: UnderstandingOut
+    beats: ArcBeats
+    weeks: List[PlanWeek]
+    safety: Optional[PlanSafety] = None
+    matching: Literal["semantic", "keywords"]
+    library_version: str
+    timings_ms: Dict[str, int] = {}
+
+
+class PlanResponse(BaseModel):
+    understanding: UnderstandingOut
+    days: List[PlanDayOut]
+    weeks: List[PlanWeek]
+    safety: Optional[PlanSafety] = None
+    matching: Literal["semantic", "keywords"]
+    library_version: str
+    timings_ms: Dict[str, int] = {}
+
+
+class DepthRequest(PreviewRequest):
+    # "Go deeper" on a plan day: the day's verse (or story), its beat and week, and the personal
+    # line already shown (so the depth doesn't repeat it).
+    verse_id: Optional[str] = Field(None, max_length=80)
+    story_id: Optional[str] = Field(None, max_length=80)
+    beat: Beat = "hook"
+    week: int = Field(1, ge=1, le=3)
+    for_you: Optional[str] = Field(None, max_length=400)
+
+
+class DepthOut(BaseModel):
+    life: Optional[str] = None         # "In your life"
+    points: Optional[str] = None       # "What it points at"
+    practice: Optional[str] = None     # "Try this today"
+    question: Optional[str] = None     # "A question to sit with"
+
+
+class DepthResponse(BaseModel):
+    depth: DepthOut
+    cached: bool = False
+    timings_ms: Dict[str, int] = {}
+
+
+ReplaceResponse.model_rebuild()

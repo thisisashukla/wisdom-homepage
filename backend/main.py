@@ -7,6 +7,16 @@ Pipeline:
     POST /api/v1/rag         → synthesise answer (Sarvam AI, blocking)
     POST /api/v1/rag/stream  → synthesise answer (Sarvam AI, SSE streaming)
 
+Recommendations (onboarding):
+    POST /api/v1/recommend             →  verses + prasangs for a person (age, stages,
+                                          phone hours, feeling, optional note) from the
+                                          curated v2 library (data/taxonomy/wisdom_library.json)
+
+Plans (one reading of the person → hook → diagnose → act → story):
+    POST /api/v1/recommend/hook        →  onboarding: the reading + the hook verse (+ alternates)
+    POST /api/v1/recommend/preview     →  the arc: hook, diagnose, act, story + week titles
+    POST /api/v1/recommend/plan        →  the multi-day plan (default 21 days)
+
 Verse of the Day:
     GET  /api/v1/verse-of-day          →  today's curated Gita verse (Supabase cache)
     POST /api/v1/verse-of-day/generate →  admin: pick + persist verse (called by cron)
@@ -39,10 +49,17 @@ from ai.embedder import init_embedder
 from ai.index import init_index
 from ai.reranker import init_reranker
 from ai.sarvam import init_sarvam
+from ai.recommender import init_recommender
+from ai.planner import init_planner
+from ai.understanding import init_understander
+from ai.sarvam import get_sarvam
 from server import intent as intent_router
 from server import search as search_router
 from server import rag as rag_router
 from server import verse_of_day as verse_of_day_router
+from server import recommend as recommend_router
+from server import plan as plan_router
+from server import narration as narration_router
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -76,6 +93,17 @@ async def lifespan(app: FastAPI):
     # 3. Scripture index (loads verses.json + embeddings.npy from data_dir)
     idx = init_index(data_dir=settings.data_dir)
     logger.info("Index ready: %d verses", idx.size)
+
+    # 3b. Recommender (curated v2 library). Verse + situation embeddings are
+    #     computed once in the background and cached in data_dir; until then
+    #     notes are matched by keywords, so the endpoint works from the start.
+    rec = init_recommender(library_path=settings.wisdom_library_path, cache_dir=settings.data_dir, embed=embedder.embed_batch)
+
+    # 3c. Plans: the reading of the person (LLM, with a deterministic fallback) and the
+    #     beat-aware planner (prasang + mechanism embeddings cached next to the verses').
+    init_understander(rec, llm=get_sarvam() if settings.sarvam_api_key else None,
+                      timeout_s=settings.understand_timeout_s)
+    init_planner(rec, roles_path=settings.verse_roles_path)
 
     # 4. Reranker (singleton; weights lazy-loaded on first search).
     # Set RERANKER_MODEL="" to disable — search then degrades to dense only.
@@ -118,6 +146,9 @@ app.include_router(intent_router.router,        prefix="/api/v1")
 app.include_router(search_router.router,        prefix="/api/v1")
 app.include_router(rag_router.router,           prefix="/api/v1")
 app.include_router(verse_of_day_router.router,  prefix="/api/v1")
+app.include_router(plan_router.router,          prefix="/api/v1")   # before /recommend: more specific paths
+app.include_router(narration_router.router,     prefix="/api/v1")
+app.include_router(recommend_router.router,     prefix="/api/v1")
 
 
 @app.get("/", tags=["health"])
@@ -130,8 +161,13 @@ async def health_check():
     from ai.index    import _index
     from ai.embedder import _embedder
     from ai.reranker import get_reranker
+    from ai.recommender import _recommender
+    from ai.planner import _planner
     rr = get_reranker()
     return {
+        "recommender_verses":    len(_recommender.verses) if _recommender else 0,
+        "recommender_semantic":  bool(_recommender and _recommender.semantic),
+        "planner_semantic":      bool(_planner and _planner.semantic),
         "status":           "ok",
         "embedder_loaded":  _embedder is not None and _embedder._model is not None,
         "index_size":       _index.size if _index else 0,

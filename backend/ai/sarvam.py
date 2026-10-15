@@ -196,6 +196,37 @@ class SarvamClient:
                 logger.warning("Malformed stream chunk skipped: %s", e)
                 continue
 
+    def chat_json(
+        self,
+        messages: list[dict],
+        *,
+        temperature: float = 0.2,
+        max_tokens: int = 1400,
+        timeout_s: int = 10,
+    ) -> dict:
+        """
+        One JSON-mode call with a full message list (system + few-shot turns + user),
+        a hard HTTP timeout and no retries: callers that sit on a user-facing path
+        (onboarding) own their own deadline and fallback.
+        """
+        resp = self._client.chat.completions(
+            model=self.model,
+            messages=messages,
+            temperature=temperature,
+            max_tokens=max_tokens,
+            request_options={
+                "timeout_in_seconds": int(timeout_s),
+                "max_retries": 0,
+                "additional_body_parameters": {"reasoning_effort": None, "response_format": {"type": "json_object"}},
+            },
+        )
+        choice = resp.choices[0]
+        text = (choice.message.content or "").strip()
+        logger.info("Sarvam chat_json | finish=%s content_len=%d tokens=%s", choice.finish_reason, len(text), resp.usage)
+        if not text:
+            raise ValueError(f"Empty content from Sarvam (finish_reason={choice.finish_reason!r})")
+        return _parse_json(text)
+
     def generate_json(self, system_prompt: str, user_content: str, max_tokens: int = 2048) -> dict:
         """
         Generic JSON generation — used for verse-of-day context (date_context,
