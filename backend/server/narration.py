@@ -35,6 +35,7 @@ import base64
 import hashlib
 import json
 import logging
+import os
 import re
 import time
 import unicodedata
@@ -42,7 +43,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Literal, Optional
 
 from fastapi import APIRouter, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, RedirectResponse
 from pydantic import BaseModel, Field
 
 from ai.depth import person_key
@@ -237,6 +238,45 @@ def mp3_seconds(b: bytes) -> float:
     return round(total, 2)
 
 
+# ── Shared store (Supabase Storage) ──────────────────────────────────────────
+# On Vercel each instance has its own /tmp, so the instance that serves the
+# .mp3 is often not the one that made it. When SUPABASE_URL and
+# SUPABASE_SERVICE_ROLE_KEY are set, finished audio goes to a public bucket
+# and the response carries that URL; the local dir stays a per-instance cache.
+_BUCKET = os.environ.get("NARRATION_BUCKET", "wisdom-homepage")
+
+
+def _remote_enabled() -> bool:
+    return bool(os.environ.get("SUPABASE_URL", "").strip() and os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "").strip())
+
+
+def _remote_url(key: str) -> str:
+    base = os.environ.get("SUPABASE_URL", "").strip().rstrip("/")
+    return f"{base}/storage/v1/object/public/{_BUCKET}/narration/{key}.mp3"
+
+
+def _remote_get(key: str) -> Optional[bytes]:
+    import httpx
+    try:
+        r = httpx.get(_remote_url(key), timeout=8)
+        return r.content if r.status_code == 200 and r.content else None
+    except Exception:
+        return None
+
+
+def _remote_put(key: str, audio: bytes) -> bool:
+    from common.supabase_client import get_supabase
+    try:
+        get_supabase().storage.from_(_BUCKET).upload(
+            path=f"narration/{key}.mp3", file=audio,
+            file_options={"content-type": "audio/mpeg",
+                          "cache-control": "public, max-age=31536000, immutable", "upsert": "true"})
+        return True
+    except Exception as e:
+        logger.warning("narration upload failed (%s): %s", key, e)
+        return False
+
+
 def _dir() -> Path:
     d = Path(settings.narration_cache_dir)
     d.mkdir(parents=True, exist_ok=True)
@@ -303,9 +343,21 @@ async def narrate(req: NarrationRequest) -> NarrationResponse:
     key = _key(script, req.lang)
     path = _dir() / f"{key}.mp3"
     url = f"/api/v1/narration/{key}.mp3"
+    remote = _remote_enabled()
+    if remote:
+        url = _remote_url(key)
     if path.exists() and path.stat().st_size > 0:
         return NarrationResponse(key=key, url=url, cached=True, script=script, segments=segments,
                                  duration=mp3_seconds(path.read_bytes()), flags=flags)
+    if remote:
+        stored = await asyncio.to_thread(_remote_get, key)
+        if stored:
+            try:
+                path.write_bytes(stored)
+            except OSError:
+                pass
+            return NarrationResponse(key=key, url=url, cached=True, script=script, segments=segments,
+                                     duration=mp3_seconds(stored), flags=flags)
     lock = _locks.setdefault(key, asyncio.Lock())
     async with lock:                       # two taps, one generation
         if not path.exists():
@@ -319,6 +371,8 @@ async def narrate(req: NarrationRequest) -> NarrationResponse:
             tmp = path.with_suffix(".part")
             tmp.write_bytes(audio)
             tmp.replace(path)
+            if remote and not await asyncio.to_thread(_remote_put, key, audio):
+                url = f"/api/v1/narration/{key}.mp3"
     _locks.pop(key, None)
     ms = int((time.perf_counter() - t0) * 1000)
     logger.info("narration: %s %s chars=%d parts=%d flags=%s %dms", "verse" if req.verse_id else "story", key, len(script),
@@ -333,5 +387,7 @@ async def narration_file(key: str):
         raise HTTPException(status_code=404, detail="Not found")
     path = _dir() / f"{key}.mp3"
     if not path.exists():
+        if _remote_enabled():
+            return RedirectResponse(_remote_url(key), status_code=307)
         raise HTTPException(status_code=404, detail="Not found")
     return FileResponse(path, media_type="audio/mpeg", headers={"Cache-Control": "public, max-age=31536000, immutable"})

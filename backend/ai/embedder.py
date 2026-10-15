@@ -85,6 +85,10 @@ class CloudflareBgeM3Embedder:
 
     def __init__(self, account_id: str, api_token: str,
                  model: str = "@cf/baai/bge-m3", timeout_s: float = 15.0):
+        account_id = (account_id or "").strip().strip("'\"")
+        api_token = (api_token or "").strip().strip("'\"")
+        if api_token.lower().startswith("bearer "):
+            api_token = api_token[7:].strip()
         if not account_id or not api_token:
             raise RuntimeError("EMBED_BACKEND=cloudflare needs CF_ACCOUNT_ID and CF_API_TOKEN")
         self.url = f"https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/{model}"
