@@ -87,6 +87,10 @@ async def lifespan(app: FastAPI):
     embedder = init_embedder(
         model_dir  = settings.model_dir,
         model_name = settings.embed_model,
+        backend    = settings.embed_backend,
+        cf_account_id = settings.cf_account_id,
+        cf_api_token  = settings.cf_api_token,
+        cf_model   = settings.cf_embed_model,
     )
     logger.info("Embedder ready (dim=%d)", embedder.dim)
 

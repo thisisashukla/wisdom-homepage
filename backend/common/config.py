@@ -72,6 +72,13 @@ class Settings(BaseSettings):
     # ── Embedding model name (used when model_dir is empty) ───────────────────
     embed_model: str = "BAAI/bge-m3"
 
+    # "local" = sentence-transformers (needs requirements-ml.txt),
+    # "cloudflare" = Workers AI REST (what Vercel uses; no torch).
+    embed_backend: str = "local"
+    cf_account_id: str = ""
+    cf_api_token: str = ""
+    cf_embed_model: str = "@cf/baai/bge-m3"
+
     # ── Reranker ─────────────────────────────────────────────────────────────
     # HF model id for the cross-encoder reranker. Empty string disables the
     # reranker entirely (search degrades gracefully to dense-only).

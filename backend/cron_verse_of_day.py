@@ -74,6 +74,10 @@ async def run(dates: list[date]) -> None:
     embedder = init_embedder(
         model_dir=os.environ.get("MODEL_DIR", ""),
         model_name=os.environ.get("EMBED_MODEL", "BAAI/bge-m3"),
+        backend=os.environ.get("EMBED_BACKEND", "local"),
+        cf_account_id=os.environ.get("CF_ACCOUNT_ID", ""),
+        cf_api_token=os.environ.get("CF_API_TOKEN", ""),
+        cf_model=os.environ.get("CF_EMBED_MODEL", "@cf/baai/bge-m3"),
     )
     logger.info("Embedder ready (dim=%d)", embedder.dim)
 

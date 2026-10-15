@@ -1,0 +1,7 @@
+# Local-only: on-device bge-m3 embedder + bge-reranker-v2-m3.
+# pip install -r requirements-ml.txt, then EMBED_BACKEND=local.
+# Vercel installs requirements.txt only.
+-r requirements.txt
+sentence-transformers==3.1.1
+tf-keras>=2.16.0
+torch>=2.3.0
