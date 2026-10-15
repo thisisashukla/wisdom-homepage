@@ -163,7 +163,7 @@ def init_reranker(model_source: str = "BAAI/bge-reranker-v2-m3") -> BgeReranker:
     the config layer).
     """
     global _reranker
-    if not model_source:
+    if not model_source or model_source.strip().lower() in {"none", "off", "disabled", "0", "false"}:
         _reranker = None
         logger.info("Reranker disabled by config")
         return None  # type: ignore[return-value]
