@@ -22,6 +22,7 @@ from __future__ import annotations
 import asyncio
 import logging
 import re
+import time
 from collections import Counter
 from typing import Dict, List, Optional
 
@@ -77,13 +78,13 @@ def _fit(s: str, hi: int) -> Optional[str]:
     return " ".join(out) if out else None
 
 
-def _why(text, lo: int, hi: int, risk: str, item: Optional[dict] = None) -> tuple[Optional[str], str]:
+def _why(text, lo: int, hi: int, risk: str, item: Optional[dict] = None, grounded: bool = False) -> tuple[Optional[str], str]:
     """Shared checks for a shown part → (clean text, "") or (None, reason): length (trimmed to whole
     sentences when long), no cliches, no diagnosis, no slang, no verdicts on them, safe for someone harmed,
     and (with the item) faithful to its source."""
     if not isinstance(text, str) or not text.strip():
         return None, "missing"
-    s = ui_line(text, source_names(item) if item else None)
+    s = ui_line(text, source_names(item) if item else None, grounded=grounded)
     n = len(_words(s))
     if n > hi:
         s = _fit(s, hi) or ""
@@ -113,11 +114,13 @@ def why_for_you(text, risk: str = "none", item: Optional[dict] = None) -> tuple[
         return None, "not_second_person"
     if s and OPENING_RE.match(s):
         return None, "opening"
+    if s and MUST_RE.search(s):
+        return None, "preachy"
     return s, why
 
 
 def why_meaning(text, item: dict, risk: str = "none") -> tuple[Optional[str], str]:
-    s, why = _why(text, 25, 95, risk, item)
+    s, why = _why(text, 25, 95, risk, item, grounded=True)
     if s and OPENING_RE.match(s):
         return None, "opening"
     if s and MUST_RE.search(s):
@@ -153,7 +156,7 @@ async def _call(llm, ctx: PersonContext, items: List[dict], timeout_s: float) ->
                               timeout_s=max(2, int(timeout_s))),
             timeout=timeout_s)
     except Exception as e:
-        logger.info("personal parts skipped for %d items: %s", len(items), type(e).__name__)
+        logger.warning("personal parts failed for %d items: %s %s", len(items), type(e).__name__, str(e)[:120])
         return {}
     if not isinstance(raw, dict):
         return {}
@@ -173,10 +176,20 @@ async def personal_parts(llm, ctx: PersonContext, items: List[dict], timeout_s: 
     """items (ai/voice.py item_from_card) → {id: {"meaning"?, "for_you"?}} for the parts that pass every check."""
     if llm is None or not items or timeout_s < 1.5:
         return {}
-    got = await asyncio.gather(*(_call(llm, ctx, part, timeout_s) for part in _chunks(items, chunk)))
+    t0 = time.perf_counter()
+    parts_in = _chunks(items, chunk)
+    got = await asyncio.gather(*(_call(llm, ctx, part, timeout_s) for part in parts_in))
     raw: Dict[str, dict] = {}
     for g in got:
         raw.update({k: v for k, v in g.items() if isinstance(v, dict)})
+    # A chunk that came back empty (a timeout, a rate limit, broken JSON) is asked once more if there is
+    # time: otherwise those days show the library's line instead of words written for them.
+    missing = [it for it in items if it["id"] not in raw]
+    left = timeout_s - (time.perf_counter() - t0)
+    if missing and left >= 3:
+        ctx.flags.append(f"retried:{len(missing)}")
+        for g in await asyncio.gather(*(_call(llm, ctx, part, left) for part in _chunks(missing, chunk))):
+            raw.update({k: v for k, v in g.items() if isinstance(v, dict)})
     out: Dict[str, Dict[str, str]] = {}
     dropped: Counter = Counter()
     for it in items:

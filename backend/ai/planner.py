@@ -114,7 +114,11 @@ BEAT_TONES = {
 # What each beat listens to. A hook must be about their topic (situations); a diagnosis and
 # an action must be about their root cause (mechanism), and can come from any topic.
 BEAT_WEIGHTS = {
-    "hook":     {"sem": 1.6, "sit": 0.8, "mech": 0.1, "job": 0.9},
+    # The hook's job (a lament, a confession) counts for less than it did: the Gita has only a dozen
+    # laments, and with job 0.9 + a 0.7 floor penalty the same few (6.34, 2.8, 1.29, 2.7) opened almost
+    # every plan whatever the person wrote. A verse that names their situation now beats one that only
+    # sounds like a lament (HOOK_RELEVANCE below).
+    "hook":     {"sem": 1.6, "sit": 0.8, "mech": 0.1, "job": 0.55},
     "diagnose": {"sem": 1.4, "sit": 0.3, "mech": 0.6, "job": 1.0},
     "steady":   {"sem": 1.4, "sit": 0.35, "mech": 0.55, "job": 1.0},
     "act":      {"sem": 1.4, "sit": 0.45, "mech": 0.5, "job": 1.0},
@@ -169,7 +173,12 @@ def life_misfit(age: Optional[str], stages: Sequence[str]) -> set:
 
 
 # A beat is a job: a verse that can't do it pays, however close its topic.
-JOB_FLOOR = {"hook": (0.4, 0.7), "diagnose": (0.35, 0.4), "steady": (0.35, 0.4), "act": (0.35, 0.4)}   # (floor, penalty)
+JOB_FLOOR = {"hook": (0.4, 0.25), "diagnose": (0.35, 0.4), "steady": (0.35, 0.4), "act": (0.35, 0.4)}   # (floor, penalty)
+# Day 1 comes from the Gita (DAY1_FAMILY): among Gita verses, one that is not in the top 15% by meaning
+# for this person's hook statement steps back, so priors (quotability, popular picks) and the lament job
+# can no longer carry an off-topic verse to Day 1.
+HOOK_RELEVANCE = (0.85, 1.0)
+STORY_LEAD = 0.35               # weeks 2-3: how much the level's generic story statement leads the person's own    # (quantile of meaning within the Gita pool, penalty below it)
 
 
 def level_for(week: int, risk: str, level: Optional[str] = None) -> str:
@@ -390,7 +399,10 @@ class Planner:
                 tv = self._tv(mm["self_act"])
             else:
                 tv = self._tv(lt["story"])
-            out[role] = _norm(lead * tv + (1 - lead) * base[role])
+            # The level's story statement is the same for everyone ("someone caught again and again..."), so
+            # leading with it gave every person the same week-2 story: their own story statement leads instead.
+            ld = min(lead, STORY_LEAD) if role == "story" else lead
+            out[role] = _norm(ld * tv + (1 - ld) * base[role])
         return out, list(q[len(QROLES):])
 
     # ── Scoring ──────────────────────────────────────────────────────────────
@@ -537,6 +549,11 @@ class Planner:
             s -= jm * pen * (self.role_mat[:, k] < floor)
             if feeling == "gita" and role == "hook":
                 s += self._gita_anchor * 0.5      # a Curious reader starts with the verses everyone quotes
+            elif role == "hook" and level == "situation":       # semantic or keyword meaning alike
+                pool = self._gita & ok
+                if pool.sum() > 20:
+                    q, pen = HOOK_RELEVANCE
+                    s -= pen * (sem < np.quantile(sem[pool], q))
             if adjust is not None:
                 s = s + adjust                    # what they told us with "Not for me" (feedback_adjust)
             if u.risk == "harm_from_others" and role in ("diagnose", "steady", "act"):
@@ -754,7 +771,20 @@ class Planner:
         return got
 
     def is_day1_ok(self, vid: Optional[str]) -> bool:
-        return bool(vid) and vid in self.idx and bool(self._gita[self.idx[vid]])
+        """A verse that may be Day 1: a Gita verse, or (settings.day1_other_texts) any verse that was offered
+        as the hook because no Gita verse spoke to their situation (server/plan.py _choose_hook)."""
+        if not vid or vid not in self.idx:
+            return False
+        from common.config import settings
+        return bool(self._gita[self.idx[vid]]) or bool(getattr(settings, "day1_other_texts", False))
+
+    def hook_candidates_open(self, u: Understanding, feeling: str, exclude: Sequence[str] = (), k: int = 4,
+                             helped: Sequence[str] = ()) -> List[int]:
+        """The best hooks from every text except the Gita, one per prasang: the fallback when the Gita has no
+        verse for their situation (a carer's guilt, a marriage gone quiet)."""
+        qvecs = self.query_vectors(u)[0] if self.semantic else None
+        scores = self.beat_scores(u, feeling, qvecs, set(exclude), adjust=self.helped_adjust(helped))
+        return self._pick(np.where(self._gita, -1e9, scores["hook"]), [], set(), Counter(), feeling, k=k, max_family=2)
 
     # ── Public: an arc (hook → diagnose → steady → act → story) ──────────────
     def arc(self, u: Understanding, feeling: str, exclude: Sequence[str] = (), pin_hook: Optional[str] = None,
@@ -910,6 +940,9 @@ def init_planner(rec: Optional[Recommender], roles_path: Optional[str] = None, b
         return None
     _planner = Planner(rec, Path(roles_path) if roles_path else None)
     if rec.embed is not None:
+        # Same rule as the recommender: cached vectors load at start-up, so no request runs on keywords.
+        if background and list(rec.cache_dir.glob(f"plan_emb_{rec.version}_*.npz")) and list(rec.cache_dir.glob("level_emb_*.npz")):
+            background = False
         if background:
             _planner.ensure_embeddings_in_background()
         else:

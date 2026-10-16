@@ -449,6 +449,11 @@ def init_recommender(
         return None
     _recommender = Recommender(path, Path(cache_dir), embed)
     if embed is not None:
+        # With the vectors already on disk, load them now (about a second). In a background thread on a
+        # serverless host (Vercel) the first requests of every cold instance ran on keyword matching, which
+        # ranks the same few generic verses for everyone. Only a missing cache is embedded in the background.
+        if background and (Path(cache_dir) / f"recommend_emb_{_recommender.version}.npz").exists():
+            background = False
         if background:
             _recommender.ensure_embeddings_in_background()
         else:

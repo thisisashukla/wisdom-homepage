@@ -228,25 +228,49 @@ def _words(s: str) -> List[str]:
     return s.split()
 
 
-def sanitize_text(s: str, allow_story_names: bool = False, names: Optional[set] = None) -> str:
+# Everyday proper nouns that identify no one: conditions, platforms, countries, festivals. Without them a
+# paraphrase loses its point ("his father has [Parkinson's]", "comparing himself on [LinkedIn]").
+COMMON_PROPER = {
+    "Parkinson", "Parkinsons", "Alzheimer", "Alzheimers", "Covid", "LinkedIn", "Instagram", "WhatsApp", "Facebook",
+    "YouTube", "TikTok", "India", "Indian", "Indians", "America", "American", "Americans", "Britain",
+    "British", "England", "Canada", "Canadian", "Australia", "Dubai", "Europe", "Diwali", "Holi", "Navratri", "Hindu",
+    "Hinduism", "Christmas", "English", "Hindi", "Sanskrit", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+    "Saturday", "Sunday", "January", "February", "March", "April", "June", "July", "August", "September", "October",
+    "November", "December", "Sunday", "God",
+}
+DANGLING_RE = re.compile(r"\s\b(?:in|at|from|to|with|of|has|have|had|named|called|near|for|on)\b"
+                         r"(?=\s+(?:and|but|or|so|while|because|he|she|they|i|we)\b|\s*[,.;:!?]|\s*$)", re.I)
+
+
+def sanitize_text(s: str, allow_story_names: bool = False, names: Optional[set] = None, grounded: bool = False) -> str:
     """`names`: extra proper names that may stay (a verse's own speaker, places and people, for lines told
-    from its source). Everything else capitalised mid-sentence is taken for a private name and dropped."""
+    from its source). Everything else capitalised mid-sentence is taken for a private name and dropped.
+    `grounded`: a line told from a verse's own source (its meaning, its scene): its numbers (a year, "a hundred
+    years") and the text's own words ("a panic attack") stay as they are."""
     names = names or set()
     s = re.sub(r"\s+", " ", (s or "").replace("\n", " ")).strip().strip('"').strip()
-    s = PII_RE.sub("", s)
-    for rx, rep in CLINICAL:
-        s = rx.sub(rep, s)
+    if grounded:
+        s = re.sub(r"(\S+@\S+|https?://\S+|www\.\S+|\+?\d[\d\s-]{6,}\d)", "", s)
+    else:
+        s = PII_RE.sub("", s)
+        for rx, rep in CLINICAL:
+            s = rx.sub(rep, s)
     # Drop proper names the texts don't know (the person's sister, their boss, their city).
     toks = s.split(" ")
     keep = []
     for i, t in enumerate(toks):
         bare = re.sub(r"['’]s$", "", re.sub(r"[^\w'’]", "", t))
         sentence_start = i == 0 or (keep and keep[-1].endswith((".", "!", "?", ";", ":")))
-        if bare and bare[0].isupper() and not sentence_start and bare not in ALLOWED_NAMES and bare not in names and not bare.isupper():
+        if (bare and bare[0].isupper() and not sentence_start and bare not in ALLOWED_NAMES and bare not in names
+                and bare not in COMMON_PROPER and not bare.isupper()):
             if not allow_story_names or bare not in ALLOWED_NAMES:
+                if keep and t[-1:] in ",.;:!?" and keep[-1][-1:] not in ",.;:!?":
+                    keep[-1] += t[-1]             # "...in Lucknow, and" keeps its comma
                 continue
         keep.append(t)
     s = " ".join(keep)
+    if len(keep) < len(toks):                     # a dropped name can leave "lost his mother in and ..."
+        s = DANGLING_RE.sub("", s)
     s = re.sub(r"\s+([,.;:!?])", r"\1", s)
     s = re.sub(r"\(\s*\)|\s{2,}", " ", s).strip(" ,;")
     return s
@@ -307,9 +331,9 @@ CLICHE_RE = re.compile(
     r"lean into|safe space|mindful(ness)?|growth mindset|on your path|the universe)\b", re.I)
 
 
-def ui_line(text: str, names: Optional[set] = None) -> str:
+def ui_line(text: str, names: Optional[set] = None, grounded: bool = False) -> str:
     """Clean a shown line: no em or en dashes (house style), single spaces, sentence end."""
-    s = sanitize_text(text, names=names)
+    s = sanitize_text(text, names=names, grounded=grounded)
     s = re.sub(r"\s*[—–]\s*", ", ", s)
     s = re.sub(r"\s*;\s*", ". ", s)
     s = re.sub(r"\.\s+([a-z])", lambda m: ". " + m.group(1).upper(), s)

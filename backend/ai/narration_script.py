@@ -49,7 +49,7 @@ You write the words a narrator speaks when one person taps "Listen" on today's v
 HOW THE PIECE IS BUILT
 The app inserts the verse itself between your parts: first the original Sanskrit (or Awadhi or Braj), then "In plain words:" and its English line. You never write the verse, never translate it again, never quote it. You write five parts around it:
 1. "open" (20 to 50 words): begin with them, not with scripture. Name what they are carrying, in their own situation and at their stage of life, so they feel heard in the first breath. Second person. No greeting, no "today we".
-2. "scene" (20 to 60 words): carry them into the moment the verse was spoken, told in the third person, from the source only. Who was there, what was happening, and, if the source tells it, what the listener said or asked ("Arjuna said to Krishna, I cannot do this."). Draw one honest line from their life to that moment ("Arjuna, too, had given everything and could not see the outcome."), but never cast them as the character and never put them on the battlefield. End by handing over to the speaker with a colon, for example "And Krishna replied:" or "Tulsidas puts it this way:". If the speaker is the one confessing (Arjuna says it himself), hand over to them ("Arjuna said:").
+2. "scene" (20 to 60 words): carry them into the moment the verse was spoken, told in the third person, from the source only: who was there, what was happening, and, if the source tells it, what the listener had said or asked. Use only the setting and story given for THIS verse; if they are thin, keep the scene short rather than borrowing a battlefield or a moment from elsewhere. You may draw one honest line between their life and that moment, in your own words, but never cast them as the character. End by handing over, with a colon, to the person who speaks this verse (the "said by" line): if Krishna speaks it, "And Krishna replied:"; if Arjuna speaks it, "Arjuna said:"; if a poet or teacher wrote it, "<name> puts it this way:". Never hand over to someone who does not speak it.
 3. "unpack" (35 to 80 words): what the verse proposes, the philosophy underneath it, plainly and faithfully. Be honest about how hard it is to live ("This is easier said than done, because..."). No new teachings.
 4. "for_you" (30 to 60 words): what it asks of their life today, through their details and the day's job. Concrete, small, kind.
 5. "close" (6 to 22 words): one line to leave with. A quiet question, or the verse's idea in a few words. Not a summary, not a blessing.
@@ -87,6 +87,9 @@ def _user(ctx: PersonContext, item: dict, shown: Dict[str, Optional[str]], has_s
 
 
 HANDOVER_RE = re.compile(r":\s*$")
+NAMED_SPEAKERS = ("Krishna", "Arjuna", "Rama", "Ram", "Sita", "Lakshmana", "Lakshman", "Hanuman", "Bharata", "Vidura", "Bhishma",
+                  "Yudhishthira", "Draupadi", "Kunti", "Vyasa", "Narada", "Vasishtha", "Ashtavakra", "Janaka", "Tulsidas",
+                  "Vivekananda", "Bhartrihari", "Kausalya", "Dasharatha", "Yama", "Nachiketa", "Sanjaya", "Uddhava")
 WORD_RE = re.compile(r"[a-z']+")
 
 
@@ -117,7 +120,7 @@ def check_parts(raw: dict, item: dict, risk: str) -> Tuple[Dict[str, str], Dict[
         return out, {"all": "not_json"}
     limits = STORY_LIMITS if item.get("kind") == "story" else LIMITS
     for k, (lo, hi) in limits.items():
-        s, reason = _why(raw.get(k), lo, hi, risk, item)
+        s, reason = _why(raw.get(k), lo, hi, risk, item, grounded=k in ("scene", "unpack"))
         if not s:
             why[k] = reason
             continue
@@ -192,12 +195,35 @@ def fallback_parts(item: dict, shown: Dict[str, Optional[str]]) -> Dict[str, str
     return out
 
 
+def fix_handover(scene: str, item: dict) -> str:
+    """The verse that follows is the speaker's own words, so the scene must hand over to the speaker. A
+    hand-over to anyone else ("And Krishna replied:" before Arjuna's own lament) is replaced."""
+    sp, _ = _who(item)
+    if not scene or item.get("kind") == "story":
+        return scene
+    if not HANDOVER_RE.search(scene):
+        return f"{scene.rstrip('.')}. {sp + ' said' if sp else 'The text says'}:"
+    if not sp:
+        return scene
+    sents = re.split(r"(?<=[.!?])\s+", scene.strip())
+    last = sents[-1]
+    first = sp.split()[-1] if sp.split()[0].lower() in ("swami", "sage", "king", "queen", "lord") else sp.split()[0]
+    speaks = r"[^.:!?]*\b(said|says|replied|replies|asked|asks|answered|answers|puts it|cried|cries|spoke|speaks|tells|told|continues|continued|went on)\b"
+    if re.search(rf"\b{re.escape(first)}\b{speaks}", last, re.I):
+        return scene
+    other = [n for n in NAMED_SPEAKERS if n.lower() != first.lower() and n not in sp and re.search(rf"\b{n}\b{speaks}", last)]
+    if not other:
+        return scene                       # "And he replied:" or a hand-over without a name: leave it
+    hand = f"And {sp} replied:" if _who(item)[1] else f"{sp} puts it this way:"
+    if sp.split()[0] in ("Arjuna", "Rama", "Ram", "Sita", "Draupadi", "Kausalya"):
+        hand = f"{sp} said:"
+    return " ".join(sents[:-1] + [hand]).strip()
+
+
 def assemble(item: dict, parts: Dict[str, str], sanskrit: Optional[str]) -> List[Tuple[str, str]]:
     """(kind, text) in spoken order. kind "sanskrit" is spoken by the devotional voice in Hindi script mode."""
     sp, _ = _who(item)
-    scene = parts.get("scene", "")
-    if scene and not HANDOVER_RE.search(scene) and item.get("kind") != "story":
-        scene = f"{scene.rstrip('.')}. {sp + ' said' if sp else 'The text says'}:"
+    scene = fix_handover(parts.get("scene", ""), item)
     seq: List[Tuple[str, str]] = []
     if parts.get("open"):
         seq.append(("open", parts["open"]))

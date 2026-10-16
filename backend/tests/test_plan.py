@@ -698,3 +698,75 @@ def test_told_lines_keep_the_sources_own_names():
     m = check_meaning("Hanuman has just set Lanka ablaze in fury, and now he is afraid for Sita's safety. He turns on his own anger "
                       "and says the great-hearted are those who put out rising anger the way water puts out fire.", item)
     assert m and "Lanka" in m and "Sita's" in m
+
+
+# ── "Update my plan" (/recommend/refine) ───────────────────────────────────────
+def _week1(app, rec, llm):
+    use_llm(rec, llm)
+    h = post(app, "hook", **BASE, follow="parents", note="they never support what I do")
+    plan = post(app, "plan", **BASE, understanding=h["understanding"], hook_id=h["hook"]["id"], week=1)
+    return h, plan
+
+
+@pytest.mark.parametrize("from_day", [2, 4, 6])
+def test_refine_rebuilds_the_rest_of_the_week_with_new_ids(app, rec, from_day):
+    h, plan = _week1(app, rec, FakeLLM(GOOD))
+    ids = _plan_ids(plan)
+    llm = FakeLLM(GOOD)
+    use_llm(rec, llm)
+    out = post(app, "refine", **BASE, understanding=h["understanding"], week=1, from_day=from_day, exclude=ids,
+               note="My sister just moved back home and now the fights are with her too.", note_source="voice")
+    assert [d["day_in_week"] for d in out["days"]] == list(range(from_day, 8))
+    assert [d["day"] for d in out["days"]] == list(range(from_day, 8))
+    assert not set(_plan_ids(out)) & set(ids)
+    assert out["days"][-1]["beat"] == "story" and out["days"][-1]["story"]
+    assert out["week"]["title"] == h["understanding"]["weeks"][0]          # the timeline keeps its titles
+    assert out["understanding"]["weeks"] == h["understanding"]["weeks"]
+    assert out["heard"] and "refined" in out["understanding"]["flags"]
+    assert "What I want to add now: My sister just moved back" in llm.last_user
+    assert "they never support what I do" not in llm.last_user              # the old note never travels again
+
+
+def test_refine_later_week_keeps_its_level(app, rec):
+    h, plan = _week1(app, rec, FakeLLM(GOOD))
+    w2 = post(app, "plan", **BASE, understanding=h["understanding"], week=2, exclude=_plan_ids(plan))
+    out = post(app, "refine", **BASE, understanding=h["understanding"], week=2, from_day=3,
+               exclude=_plan_ids(plan) + _plan_ids(w2), note="Work got harder this week, my manager doubts me too.")
+    assert [d["day"] for d in out["days"]] == list(range(10, 15))
+    assert all(d["level"] == "pattern" for d in out["days"])
+
+
+def test_refine_without_llm_keeps_the_reading(app, rec):
+    h, plan = _week1(app, rec, FakeLLM(GOOD))
+    use_llm(rec, None)
+    out = post(app, "refine", **BASE, understanding=h["understanding"], week=1, from_day=3, exclude=_plan_ids(plan),
+               note="I also can't sleep, I keep replaying every argument at night.")
+    u = out["understanding"]
+    assert u["mechanism"] == h["understanding"]["mechanism"] and "refine:no_llm" in u["flags"]
+    assert len(out["days"]) == 5 and not set(_plan_ids(out)) & set(_plan_ids(plan))
+
+
+def test_refine_never_lowers_the_risk(app, rec):
+    use_llm(rec, FakeLLM({**GOOD, "risk": "harm_from_others"}))
+    h = post(app, "hook", **BASE, note="he shouts and pushes me when he is angry")
+    assert h["understanding"]["risk"] == "harm_from_others"
+    use_llm(rec, FakeLLM(GOOD))
+    out = post(app, "refine", **BASE, understanding=h["understanding"], week=1, from_day=2, exclude=[h["hook"]["id"]],
+               note="things are a bit calmer now, mostly about work")
+    assert out["understanding"]["risk"] == "harm_from_others" and out["safety"]["kind"] == "harm_from_others"
+
+
+def test_refine_crisis_words_bring_the_helplines(app, rec):
+    h, plan = _week1(app, rec, FakeLLM(GOOD))
+    use_llm(rec, FakeLLM(GOOD))
+    out = post(app, "refine", **BASE, understanding=h["understanding"], week=1, from_day=2, exclude=_plan_ids(plan),
+               note="some nights I want to end my life")
+    assert out["understanding"]["risk"] == "self_harm" and out["safety"]["kind"] == "self_harm"
+
+
+@pytest.mark.parametrize("body", [dict(from_day=1), dict(from_day=7), dict(from_day=3, note="x"), dict(from_day=3, understanding=None)])
+def test_refine_rejects_day1_day7_and_bad_input(app, rec, body):
+    use_llm(rec, FakeLLM(GOOD))
+    h = post(app, "hook", **BASE, follow="parents")
+    req = {**BASE, "understanding": h["understanding"], "week": 1, "note": "my brother is involved now too", **body}
+    assert app.post("/api/v1/recommend/refine", json=req).status_code == 422

@@ -42,6 +42,12 @@ class Settings(BaseSettings):
     # A second, short LLM pass reorders the top hooks and picks the story (perspective, not
     # just topic). Skipped when the request has used up its budget; embedding order stands.
     rerank_timeout_s: float = 3.5
+    # Day 1 is a Gita verse. With this on, when no Gita candidate speaks to their situation (the rerank's best
+    # Gita score under day1_gita_floor) and a verse from another text clearly does (+day1_other_margin), that
+    # verse opens the plan instead. Off by default: "Bhagavad Gita tuned to your life" is the promise.
+    day1_other_texts: bool = False
+    day1_gita_floor: float = 0.55
+    day1_other_margin: float = 0.2
     for_you_timeout_s: float = 9.0       # "What it says" + "For you" under each plan day (parallel calls per week)
     # "Listen" on a plan day (server/narration.py): a storyteller narrator in English, and a devotional
     # reciter for the verse in its own language (Devanagari read in Hindi script mode, a little slower).
@@ -52,7 +58,7 @@ class Settings(BaseSettings):
     tts_pace: float = 0.92
     tts_shloka_speaker: str = "girish_hi_devotional"
     tts_shloka_lang: str = "hi-IN"
-    tts_shloka_pace: float = 0.8
+    tts_shloka_pace: float = 0.9
     tts_sample_rate: int = 24000          # every part at one rate, so the joined MP3 plays as one
     narration_script_timeout_s: float = 12.0
     tts_timeout_s: float = 20.0

@@ -24,10 +24,11 @@ HOOK_SYSTEM = """\
 You score candidate opening verses for one person's plan. The person must read the line and think "that's me".
 First decide the person's seat in their situation (for example: the adult child caring for an ill parent; the employee whose manager doubts them; the young person whose parents pressure them). Use their age band and stage of life: the same feeling sits differently at 22 and at 62.
 Then score every candidate from 0.0 to 1.0:
-  1.0  spoken from the same seat, naming what they feel (a lament, a confession, a vivid picture of the state), and true to someone of their age and stage of life
-  0.5  names the feeling but from a general or neutral place, or from a seat that only half fits their stage of life
-  0.1  lectures, gives advice, or speaks from the OTHER seat (the parent's feelings when the person is the child, the boss's view when they are the employee), or belongs to a life stage that is not theirs
-  0.0  could shame or blame them
+  1.0  about their actual situation (the people, the loss, the work, the choice they described), spoken from the same seat or naming what they feel, and true to someone of their age and stage of life
+  0.6  about their situation but from a neutral place, or naming their exact feeling in another setting
+  0.3  a general line about the mind, fear or confusion that would fit almost anyone: it does not name what they told us
+  0.1  lectures, speaks from the OTHER seat (the parent's feelings when the person is the child, the boss's view when they are the employee), belongs to a life stage that is not theirs, or only shares a word with their story (a verse about a god as a "friend" for someone whose marriage feels distant)
+  0.0  could shame or blame them, or would read as calling them at fault for what they are suffering
 Judge the verse as the scripture means it (its speaker, setting and plain sense), not as it could be bent to fit.
 Return ONLY JSON: {"seat": "...", "scores": {"<id>": 0.0, ...}} with every candidate id."""
 
@@ -70,18 +71,23 @@ async def _ask(llm, system: str, user: str, timeout_s: float) -> Optional[dict]:
 
 
 async def rerank_hooks(llm, core: str, cands: List[dict], timeout_s: float) -> Tuple[List[str], bool]:
+    ids, ok, _ = await rerank_hooks_scored(llm, core, cands, timeout_s)
+    return ids, ok
+
+
+async def rerank_hooks_scored(llm, core: str, cands: List[dict], timeout_s: float) -> Tuple[List[str], bool, dict]:
     """
     Candidate verse dicts (id, line, speaker, setting), in embedding order → ids best first, and whether
     the LLM took part. The LLM's perspective score is blended with the embedding rank, never trusted alone:
     a candidate it forgot to score keeps its place.
     """
     ids = [c["id"] for c in cands]
-    if llm is None or len(cands) < 2:
-        return ids, False
+    if llm is None or len(cands) < 1:
+        return ids, False, {}
     raw = await _ask(llm, HOOK_SYSTEM, _hook_user(core, cands), timeout_s)
     scores = (raw or {}).get("scores")
     if not isinstance(scores, dict):
-        return ids, False
+        return ids, False, {}
     def llm_score(i: str) -> float:
         try:
             return max(0.0, min(1.0, float(scores.get(i, 0.5))))
@@ -89,7 +95,7 @@ async def rerank_hooks(llm, core: str, cands: List[dict], timeout_s: float) -> T
             return 0.5
     n = len(ids)
     blended = {i: llm_score(i) + 0.4 * (1 - k / max(1, n - 1)) for k, i in enumerate(ids)}
-    return sorted(ids, key=lambda i: -blended[i]), True
+    return sorted(ids, key=lambda i: -blended[i]), True, {i: llm_score(i) for i in ids}
 
 
 async def rerank_story(llm, core: str, cands: List[dict], timeout_s: float) -> Tuple[Optional[str], Optional[str]]:

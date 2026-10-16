@@ -4,6 +4,7 @@ server/plan.py — the plan endpoints, built on one reading of the person.
     POST /api/v1/recommend/hook      onboarding: read the person, return the hook verse (+ alternates)
     POST /api/v1/recommend/preview   the arc: hook → diagnose → steady → act → story, plus the three week titles
     POST /api/v1/recommend/plan      one week of the plan (or `days` days from week 1)
+    POST /api/v1/recommend/refine    "Update my plan": their earlier reading + new words → the rest of the week again
 
 A plan week runs see → steady → act → story; its shape (days per phase, "2221" by default)
 is a parameter. Week 1 is their situation, week 2 the pattern underneath, week 3 who they
@@ -46,15 +47,16 @@ from ai.personalize import personal_parts
 from ai.voice import PersonContext, item_from_card, item_from_library, person_brief
 from common.config import settings
 
-from ai.llm_rerank import rerank_hooks, rerank_story
+from ai.llm_rerank import rerank_hooks_scored, rerank_story
 from ai.mechanisms import MECHANISMS
 from ai.mechanisms import LEVELS
 from ai.planner import get_planner, level_for, parse_shape, week_arc
 from ai.recommender import SAFETY, get_recommender
-from ai.understanding import Profile, Understanding, check_note, get_understander
+from ai.understanding import Profile, Understanding, check_note, get_understander, merge_situations
 from ai.story_titles import hook_title
 from common.models import (ArcBeats, BeatVerse, HookRequest, HookResponse, PlanDayOut, PlanInput, PlanRequest,
-                           PlanResponse, PlanWeek, PreviewRequest, PreviewResponse, ReplaceRequest, ReplaceResponse, StoryCard,
+                           PlanResponse, PlanWeek, PreviewRequest, PreviewResponse, RefineRequest, RefineResponse, ReplaceRequest,
+                           ReplaceResponse, StoryCard,
                            DepthRequest, DepthResponse)
 
 logger = logging.getLogger(__name__)
@@ -160,11 +162,24 @@ async def _choose_hook(rec, planner, und, u: Understanding, feeling: str, exclud
     budget = min(settings.rerank_timeout_s, _time_left(t0) - 1.0)
     if und.llm is None or budget < 1.5 or len(cands) < 2:
         return cands, qvecs, scores, False
-    order, ok = await rerank_hooks(und.llm, person or u.core_struggle, [
-        {"id": rec.verses[i]["id"], "line": rec.verses[i]["line"], "speaker": rec.verses[i].get("speaker"),
-         "listener": rec.verses[i].get("listener"), "setting": rec.verses[i].get("setting")} for i in cands], budget)
+    card = lambda i: {"id": rec.verses[i]["id"], "line": rec.verses[i]["line"], "speaker": rec.verses[i].get("speaker"),
+                      "listener": rec.verses[i].get("listener"), "setting": rec.verses[i].get("setting")}
+    order, ok, llm_s = await rerank_hooks_scored(und.llm, person or u.core_struggle, [card(i) for i in cands], budget)
     pos = {rec.verses[i]["id"]: i for i in cands}
-    return [pos[x] for x in order], qvecs, scores, ok
+    out = [pos[x] for x in order]
+    # No Gita verse speaks to their situation: look once in the other texts (settings.day1_other_texts).
+    best = max(llm_s.values()) if llm_s else 1.0
+    budget = min(settings.rerank_timeout_s, _time_left(t0) - 1.0)
+    if ok and settings.day1_other_texts and best < settings.day1_gita_floor and budget >= 1.5:
+        others = await asyncio.to_thread(planner.hook_candidates_open, u, feeling, exclude, 4, helped)
+        if others:
+            o_order, o_ok, o_s = await rerank_hooks_scored(und.llm, person or u.core_struggle, [card(i) for i in others], budget)
+            top = o_order[0] if o_ok else None
+            if top and o_s.get(top, 0) >= best + settings.day1_other_margin:
+                o_pos = {rec.verses[i]["id"]: i for i in others}
+                out = [o_pos[top]] + out
+                u.flags.append(f"day1_other_text:{rec.verses[o_pos[top]].get('family')}")
+    return out, qvecs, scores, ok
 
 
 async def _choose_story(rec, und, u: Understanding, stories: list, t0: float, person: str = ""):
@@ -386,6 +401,77 @@ async def replace(req: ReplaceRequest) -> ReplaceResponse:
            "timings_ms": {**u.timings_ms, "select": int((time.perf_counter() - t1) * 1000), "total": int((time.perf_counter() - t0) * 1000)}}
     _log("replace", req, u, t0, week=req.week, reason=req.reason, found=bool(verse))
     return ReplaceResponse(**out)
+
+
+RISK_RANK = {"none": 0, "distress": 1, "harm_from_others": 2, "self_harm": 3}
+
+
+def _context_note(prior: Understanding, context: str) -> str:
+    """What the reading knew (our own paraphrases, never their earlier note) and what they add now, as one
+    note for the reader. The new words lead the budget: they are why the plan is changing."""
+    before = " ".join(x.strip().rstrip(".") + "." for x in [prior.life_context, prior.core_struggle, *(prior.details or [])[:3]] if x and x.strip())
+    now = " ".join(context.split())[:600]
+    return f"What I told you before, in short: {before[:360]}\nWhat I want to add now: {now}"
+
+
+async def _refined(und, req: RefineRequest, prior: Understanding) -> Understanding:
+    """The reading after "Update my plan". The model reads the old reading and the new words together;
+    the week titles stay (the timeline doesn't rename itself mid-plan). Never less careful than before:
+    a reading with a higher risk is kept. Without the model, the old reading stays and only leans toward
+    the situations the new words matched."""
+    u, _ = await und.understand(_profile(req), _context_note(prior, req.note))
+    u = _with_profile(u, req)
+    if RISK_RANK.get(prior.risk, 0) > RISK_RANK.get(u.risk, 0):
+        prior.flags.append("refine:kept_safer_reading")
+        return prior
+    if u.source != "llm" and RISK_RANK.get(u.risk, 0) <= RISK_RANK.get(prior.risk, 0):
+        new = {s["id"]: s["weight"] for s in u.situations if s.get("source") == "note"}
+        if new:
+            prior.situations = merge_situations(
+                ("note", {s["id"]: s["weight"] for s in prior.situations}, 1.0), ("note", new, 0.8), valid=und.valid,
+            ) or prior.situations
+        prior.flags.extend(["refine:no_llm", *[f for f in u.flags if f.startswith(("llm_", "no_llm", "junk"))]])
+        return prior
+    u.weeks = list(prior.weeks) or u.weeks
+    u.flags.append("refined")
+    return u
+
+
+@router.post("/recommend/refine", response_model=RefineResponse, tags=["plan"])
+async def refine(req: RefineRequest) -> RefineResponse:
+    """"Update my plan" (Pro, once a week, Day 2 to Day 6; the app enforces both). The person adds context;
+    their reading is renewed with it and the week is chosen again from `from_day` to Day 7, never repeating an
+    id in `exclude`. The days before `from_day` are theirs already and stay. The new words are used for this
+    request only: never stored, never logged."""
+    rec, planner, und = _services()
+    shape = _shape(req)
+    t0 = time.perf_counter()
+    prior = und.from_client(dict(req.understanding)) if req.understanding else None
+    if prior is None:
+        raise HTTPException(status_code=422, detail="Send the plan's understanding")
+    prior = _with_profile(prior, req)
+    u = await _refined(und, req, prior)
+    t1 = time.perf_counter()
+    days = await asyncio.to_thread(planner.plan, u, req.feeling, 7, req.exclude, None, None, req.week, req.level, shape,
+                                   [f.model_dump() for f in req.feedback], _helped(req))
+    out_days = []
+    for d in days:
+        if d["day_in_week"] < req.from_day:
+            continue
+        base = {k: d[k] for k in ("day", "day_in_week", "week", "level", "phase", "beat")}
+        if d["beat"] == "story":
+            out_days.append({**base, "story": _story(rec, planner, d["story"], u)})
+        else:
+            out_days.append({**base, "verse": _verse(rec, planner, d["verse_index"], d["beat"], d["score"], u)})
+    lv = out_days[0]["level"] if out_days else level_for(req.week, u.risk, req.level)
+    await _personalize(und, u, out_days, _ctx(req, u, rec, planner, lv, req.week))
+    out = {
+        "understanding": _understanding_out(u, rec), "days": out_days, "week": _week(u, req.week, shape, req.level),
+        "heard": u.mirror, "safety": _safety(u),
+        "timings_ms": {**u.timings_ms, "select": int((time.perf_counter() - t1) * 1000), "total": int((time.perf_counter() - t0) * 1000)},
+    }
+    _log("refine", req, u, t0, week=req.week, from_day=req.from_day, days=len(out_days), source=u.source)
+    return RefineResponse(**out)
 
 
 @router.post("/recommend/depth", response_model=DepthResponse, tags=["plan"])

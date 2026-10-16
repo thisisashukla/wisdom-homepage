@@ -381,6 +381,25 @@ class ReplaceResponse(BaseModel):
     timings_ms: Dict[str, int] = {}
 
 
+class RefineRequest(PlanRequest):
+    # "Update my plan" (Pro, once a week, Day 2 to Day 6): the person adds context in their own words
+    # (`note`, voice or typed; never stored or logged). The earlier reading (`understanding`) and the
+    # new words are read together, and the week is chosen again from `from_day` (day in week) to Day 7.
+    # `exclude` holds every id in the plan so far, including the days being replaced, so all are new.
+    week: int = Field(1, ge=1, le=3)
+    from_day: int = Field(..., ge=2, le=6)
+    note: str = Field(..., min_length=3, max_length=1000)
+
+
+class RefineResponse(BaseModel):
+    understanding: "UnderstandingOut"
+    days: List["PlanDayOut"]               # from `from_day` to the end of the week, numbered across the plan
+    week: "PlanWeek"
+    heard: str                             # one gentle line of what the update took in (the new reading's mirror)
+    safety: Optional["PlanSafety"] = None
+    timings_ms: Dict[str, int] = {}
+
+
 class UnderstoodSituation(BaseModel):
     id: str
     label: str
@@ -536,3 +555,4 @@ class DepthResponse(BaseModel):
 
 
 ReplaceResponse.model_rebuild()
+RefineResponse.model_rebuild()
