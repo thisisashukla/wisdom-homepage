@@ -1,0 +1,532 @@
+{
+ "persona": {
+  "id": "us_millennial_mother_anger",
+  "market": "USA (Chicago)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "39, Indian-American, two kids, runs a dental practice with her husband, loses her temper with the kids and hates herself after.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "phone_hours": 3,
+   "topic": "mind",
+   "follow": "anxious"
+  },
+  "note": "I yelled at my 7 year old this morning for spilling milk and the look on his face. I am turning into my mother. I run a practice, I manage 12 people calmly, and then at home I just snap",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and frightened of becoming her mother",
+   "bridge": "The calm you show at work and the snap at home are not two different women. The texts call both the same mind, and they teach what to do with it.",
+   "week_thesis": "The split between your work self and your home self is not your failure. The week shows you where the mind is held, and how to give it a different release.",
+   "week_beats": {
+    "hook": "You recognise the snap and the fear of becoming your mother, named without shame.",
+    "diagnose": "You see that the anger is not the verdict. The verdict is the mind that has no other release.",
+    "steady": "You hold that the self who snapped is the same self who can choose the next time.",
+    "act": "You try one pause before the next moment with him, and one breath that belongs only to you.",
+    "story": "A mother who snapped and then sat with the fear shows you how to meet the child after the storm."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "A woman who leads calmly at work snaps at her child and is frightened she is becoming the mother she did not want to be.",
+   "mirror": "You hold it together all day with twelve people, and the moment you are alone with your child, you lose it.",
+   "insight": "It isn't that you are becoming your mother. It is that a mind that is held tight all day finds its only release at home, and then judges itself for the release.",
+   "mechanism": "anger_reactivity",
+   "mechanism_label": "Anger that takes over",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.828,
+     "source": "note"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.41,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.25,
+     "source": "chip"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.537,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.48,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The split between the calm leader at work and the woman who snaps at home, and the fear that the snap is a verdict on who she is becoming. I'm physically home but not present with my kids.",
+    "diagnose": "Anger rises from blocked wanting; when the mind is held tight all day, it finds its only release at home, and then turns on itself for the release.",
+    "steady": "Praise and blame, anger and shame, come and go; the self that holds them is the one that can choose how to hold them next time.",
+    "act": "Practise one small pause before you speak to him; let the breath come first, and let your next word be the one you want to be.",
+    "story": "A mother who snapped at her child and then, instead of turning away, sat with the fear and found a different way to be with him."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The held mind",
+    "The release and the verdict",
+    "More than the snap"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs a practice and manages people calmly"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "week_fit:34=0.6,62=0.6,23=0.6,11=0.6,12=0.6,2=0.6",
+    "redo:5",
+    "redo_fixed:2",
+    "dropped:gendered=1,repeat=4,soft_kept=4",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.7058,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna, on the battlefield, tells Krishna that the mind is restless, stormy, powerful and stubborn. He feels it is as hard to hold as the wind. Krishna does not tell him to simply calm down. He agrees the mind is difficult, but says practice and letting go can train it. The verse proposes that holding the mind is a skill learned through steady effort, not a single act of force.",
+     "for_you": "The snap at home and the calm at work come from the same mind. The fear of becoming your mother is the mind judging itself after it finds its only release. You do not need to become a different person."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 3.8832,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Krishna tells Arjuna that a person's mind is shaped by what it dwells upon. When you fix your attention on objects and outcomes, attachment forms. If that attachment is blocked, it hardens into anger. The verse traces this exact path from focus to frustration, showing that the mind is not the problem, but the direction of its gaze is. The steady person is the one who guards this attention, knowing that where the mind rests, the heart follows.",
+     "for_you": "You manage people calmly at work. That steadiness is real. The anger at home is not a verdict on your character. It is the result of a mind that has had no other release all day, and then turns on itself in the evening."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.23",
+     "ref": "Bhagavad Gita 5.23",
+     "ref_iast": "Bhagavad Gītā 5.23",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+     "sanskrit": "शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात् । कामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः ॥",
+     "line": "Whoever can ride out the surge of desire and anger, here and now, is steady and happy.",
+     "translation": "One who is able, here in this life, before leaving the body, to withstand the surge born of desire and anger, is disciplined; he is a happy person.",
+     "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.3",
+      "title": "The yoga of knowledge",
+      "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+      "story_hook": "",
+      "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+     },
+     "score": 3.3578,
+     "beat": "steady",
+     "role_fit": 0.575,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, describing the inner happiness of someone who sees clearly. He says that a person who can withstand the surge born of desire and anger, right here in this life, is truly disciplined and happy. This joy does not come from pleasures that start and end, but from finding a steady place within. The wise person sees that sense pleasures end in sorrow, and they are able to ride out these surges without being carried away.",
+     "for_you": "The same mind that snaps at your child is the one that can choose a different response. The texts say the self who gave in to anger is the same self who can decide to stand firm next time, right here in your own life."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "hans_gita.11",
+     "ref": "Hamsa Gita 11 (Mahabharata, Shanti 12.305.11 in our data)",
+     "ref_iast": "Haṃsa Gītā 11",
+     "family": "gitas",
+     "speaker": "Hamsa (the golden swan)",
+     "listener": "the Sadhyas",
+     "setting": "Bhishma tells Yudhishthira how a golden swan answered the Sadhyas' question about the best way to live.",
+     "sanskrit": "क्षेपाभिमानादभिषङ्गव्यलीकं निगृह्णाति ज्वलितं यश्च मन्युम् । अदुष्टचेता मुदितोऽनसूयुः स आदत्ते सुकृतं वै परेषाम् ॥",
+     "line": "Hold back the anger that flares at an insult; stay clean-hearted and cheerful.",
+     "translation": "One who holds back the blazing anger stirred by an insult or a wounding slight, who stays clean-hearted, cheerful and free of envy, takes the merit of others.",
+     "why": "When insulted, staying calm protects you more than hitting back.",
+     "misuse": "Holding back anger is not swallowing mistreatment; it is choosing how to respond.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "hans_gita.p.insults",
+      "title": "How the swan answers insults",
+      "summary": "The swan teaches that words are arrows, that answering insult with insult only inflames both sides, and that the person who stays calm and wishes no harm sleeps in peace while the insulter carries the damage.",
+      "story_hook": "",
+      "lesson": "When insulted, staying calm protects you more than hitting back."
+     },
+     "score": 3.2291,
+     "beat": "steady",
+     "role_fit": 0.495,
+     "meaning": "The golden swan taught the Sadhyas that when a wounding slight strikes, the blazing anger it stirs is a fire you can choose to hold back. To stay clean-hearted and cheerful in that moment is not weakness. It is a choice that protects your own peace and leaves you free of envy, while the one who threw the insult carries the damage.",
+     "for_you": "The snap at your child is the same mind that manages your practice calmly. It is not two women. The mind held tight all day seeks any release, and then judges itself for finding it at home."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.29.12",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 29.12",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "Draupadi",
+     "setting": "In exile, Draupadi urges Yudhishthira to answer injustice with force; he argues for forgiveness.",
+     "sanskrit": "आत्मानं च परांश्चैव त्रायते महतो भयात् / क्रुध्यन्तमप्रतिक्रुध्यन्दूयोरेष चिकित्सकः",
+     "line": "Don't answer anger with anger. The one who stays calm protects both people, and heals both.",
+     "translation": "One who does not get angry back at an angry person saves both himself and the other from great danger. He becomes the healer of both.",
+     "why": "Anger rarely heals anything; forgiveness has limits. Wisdom is knowing which a moment needs.",
+     "misuse": "Staying calm is not the same as staying in a situation where you are unsafe.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.kshama_or_tejas",
+      "title": "Forgiveness or force: Draupadi and Yudhishthira",
+      "summary": "In the forest, Draupadi asks why Yudhishthira does not answer injustice with anger, citing Prahlada's advice that neither force nor forgiveness is always right. Yudhishthira replies that anger destroys and forgiveness holds the world together.",
+      "story_hook": "Thirteen years into exile, Draupadi looked at her husband and asked why he was not angry.",
+      "lesson": "Anger rarely heals anything; forgiveness has limits. Wisdom is knowing which a moment needs."
+     },
+     "score": 3.2287,
+     "beat": "act",
+     "role_fit": 0.708,
+     "meaning": "In the forest, Draupadi asks why Yudhishthira does not answer injustice with anger, arguing that neither force nor forgiveness is always right. Yudhishthira replies that anger destroys, and that the one who does not get angry back at an angry person saves both himself and the other from great danger, becoming the healer of both. The verse proposes that anger rarely heals anything, and that wisdom lies in knowing which a moment needs.",
+     "for_you": "The snap with your child is not a separate woman. It is the same held-tight mind finding its only release. Before the next moment with them, let there be one pause. Take one breath that belongs only to you."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.2.22.2",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 22.2",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Just told he is exiled, Ram calms his furious brother Lakshman.",
+     "sanskrit": "निगृह्य रोष शोकं च धैर्यमाश्रित्य केवलम्। अवमानं निरस्यैनं गृहीत्वा हर्षमुत्तमम्॥ उपक्लुप्तं यदैतन्मे अभिषेकार्थमुत्तमम्। सर्वं निवर्तय क्षिप्रं कुरु कार्य निरव्ययम्॥",
+     "line": "Rein in anger and grief, lean on your steadiness, and set the insult aside.",
+     "translation": "Hold back your anger and grief, lean on steadiness alone, set this insult aside and take up real cheerfulness. Quickly undo the preparations made for my coronation and get on with what needs doing, without fuss.",
+     "why": "Anger at injustice is natural; decide what to do with it before it decides for you.",
+     "misuse": "Not a call to ignore injustice; it is about choosing your response.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.lakshman_anger_exile",
+      "title": "Lakshman's fury, Ram's calm",
+      "summary": "Lakshman is enraged by the injustice and wants to seize the throne by force. Ram calms him: set aside the insult, don't torment yourself, the setback may lead somewhere better. Lakshman answers that effort, not fate, decides; both views are given their due.",
+      "story_hook": "",
+      "lesson": "Anger at injustice is natural; decide what to do with it before it decides for you."
+     },
+     "score": 3.1199,
+     "beat": "act",
+     "role_fit": 0.474,
+     "meaning": "After hearing that he is exiled, Ram speaks to Lakshman. Lakshman is furious at the insult and wants to seize the throne by force. Ram tells him to hold back his anger and grief, lean on steadiness alone, set aside the insult, and take up real cheerfulness. He tells Lakshman to quickly undo the coronation preparations and get on with what needs doing. Ram is saying that anger at injustice is natural, but you could decide what to do with it before it decides for you.",
+     "for_you": "You run a practice and manage people calmly. That steadiness is a choice you make, and you can make it at home too. Before you answer your child, take one breath that belongs only to you. Let it be your steadiness, not your anger."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "present_parent",
+        "label": "I'm physically home but not present with my kids"
+       },
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "The child you lead at work and the one you snapped at after dinner are both just children asking for your presence. When the storm passes, let them see you, not the grand form of a parent, but the steady person who can sit with the mess and stay."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The held mind",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 203,
+   "llm": 5485,
+   "total": 16990,
+   "select": 11293
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying a quiet fear that you are becoming her. You are frightened by the snap, and ashamed of the gap between the calm you show at work and the sudden anger that reaches your child."
+  ],
+  [
+   "scene",
+   "On the battlefield, Arjuna tells Krishna that the mind is restless and powerful. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "The mind is not a wild horse to be tamed by force. It is a current that must be guided with steady practice. You cannot simply command it to stop. You train it by letting go, and by returning to the practice again and again. This is easier said than done, because the mind has been held tight all day at the practice. It does not release easily, and it judges itself for the release."
+  ],
+  [
+   "for_you",
+   "When you feel the tension rise after work, do not fight the anger. Step into the shower and let the water run until the heat leaves your shoulders. Let that be the letting go."
+  ],
+  [
+   "close",
+   "The calm at work and the snap at home are not two different women."
+  ]
+ ],
+ "depth": {
+  "life": "You are home but not present. Your mind is still at work, holding everything together. Then a small thing breaks the surface and the anger comes out, and you are frightened it is the same anger you saw in your mother.",
+  "points": "The mind is not two different people. It is one mind held tight all day, and then it snaps. The anger is not a sign that you are becoming her. It is a sign that the mind has no other way to let go.",
+  "practice": "Sit for two minutes and let your hands rest. Do not try to calm the mind. Just notice where the tightness is in your body and let it be there.",
+  "question": "Where in your body do you feel the mind is still at work?"
+ }
+}

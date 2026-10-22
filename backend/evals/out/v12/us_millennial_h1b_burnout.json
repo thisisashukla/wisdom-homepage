@@ -1,0 +1,538 @@
+{
+ "persona": {
+  "id": "us_millennial_h1b_burnout",
+  "market": "USA (Seattle)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "33, software engineer at a big tech company in Seattle, on H-1B, green card queue, wife on H4 can't work. Performance review season.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "if I get a bad rating I lose the visa and we have 60 days to leave. my wife gave up her career to be here. I check slack at 2am. I don't remember the last weekend I wasn't thinking about work",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "terrified and running on empty",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "From checking Slack at two in the morning to trusting that what is real in you cannot be lost, even if the rating is bad.",
+   "week_beats": {
+    "hook": "You recognise the terror and the two-in-the-morning checking, named without judgment.",
+    "diagnose": "You see that the fear is multiplying what has not happened and making the mind its own enemy.",
+    "steady": "You hold that what is real in you cannot be taken, even if the visa is lost.",
+    "act": "You try checking the facts once, then letting the night belong to rest, and one small thing for yourself before dawn.",
+    "story": "A man who lost everything he thought he had shows you that what is real in you was never theirs to take."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "partner"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "His visa depends on a work rating with a sixty-day deadline, his wife gave up her career for this, and his mind will not stop checking Slack at two in the morning.",
+   "mirror": "You check Slack at two in the morning, and you can't remember the last weekend you weren't thinking about work.",
+   "insight": "The visa can be lost in sixty days. The mind that won't rest is what is already costing you the one thing you cannot get back.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.717,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.48,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.02,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The terror of a deadline that can take everything you built, and the mind that will not stop checking for proof that it is still safe.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in you cannot be lost; worry multiplies what has not happened, and the mind becomes its own enemy.",
+    "steady": "What is real in you cannot be cut, burned, wet or dried; the rating is a moment, not the measure of who you are.",
+    "act": "When the mind runs to the worst, bring it back to what is here now; check the facts once, then let the night belong to rest.",
+    "story": "A man who stood at a crossroads with his family's future in his hands, learned to tell the difference between a real threat and the fear that was eating him from the inside."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The fear of loss",
+    "The mind that won't rest",
+    "More than the rating"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "visa depends on performance rating",
+    "has sixty days to leave if rating is bad",
+    "checks work messages at two in the morning"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "seat:missing",
+    "week_fit:34=0.3,98=0.0,5=0.6,9=0.6,62=1.0,26=1.0",
+    "week_fit:swapped=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 3.1105,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna stands in his chariot and sees his own kin arrayed against him. His limbs give way, his mouth is parched, his body trembles, and his hair stands on end. He is not a hero here. He is a man in the middle of a breakdown, and the Gita opens with that trembling, not with a command to be brave.",
+     "for_you": "You are checking messages at two in the morning because something in you is already bracing for the worst. The terror you feel is real, and it is not a failure of yours. It is simply the body telling the truth about what is at stake."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.11.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 11.6",
+     "family": "yv",
+     "speaker": "Janaka",
+     "listener": "his own mind",
+     "setting": "Janaka, having chosen to keep ruling, talks gently to his own restless mind at night.",
+     "sanskrit": "यथा यथा विकल्पौघान्संकल्पयसि हेलया । तथा तथैति स्फारत्वं संसारस्तव चिन्तया ॥",
+     "line": "The more scenarios you spin, the bigger your world of worry grows.",
+     "translation": "The more you casually spin up fancies and possibilities, the more your world of troubles swells, through your own worrying.",
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 3.3138,
+     "beat": "diagnose",
+     "role_fit": 0.526,
+     "meaning": "King Janaka sits on his palace roof at night, questioning the life he has lived. He has heard the sages speak of a self that cannot be lost. He knows his duties wait below, but his mind is spinning with what might go wrong. He speaks to his own restlessness, telling it that the more fancies it spins, the larger his world of trouble becomes. The verse asks him to do his day's work, not by leaving his life, but by doing it with a mind that no longer clutches.",
+     "for_you": "Your mind is spinning scenarios about a rating that has not arrived yet. It is making the work itself feel like an enemy. The verse shows you a different way to meet the day. You do not have to leave your job to find peace."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.7.9",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 7.9",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram.",
+     "sanskrit": "व्यसने वार्थकृच्छ्रे वा भये वा जीवितान्तगे। विमृशंश्च स्वया बुद्ध्या धृतिमान् नावसीदति॥",
+     "line": "In loss, money trouble or fear, the steady person thinks it through and does not go under.",
+     "translation": "In disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink.",
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 3.4776,
+     "beat": "steady",
+     "role_fit": 0.85,
+     "meaning": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram. Ram is broken by the news of Sita's abduction. Sugriva tells him that even in disaster, money trouble, or fear, the steady person thinks things through and does not go under. Two people in trouble can carry each other, and a friend is the greatest refuge.",
+     "for_you": "Your mind checks Slack at two in the morning because it thinks the rating is the only thing keeping you here. But the steady part of you, the part that knows your partner is still beside you, can think through the terror. Hold onto that steadiness, not the screen."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 3.4871,
+     "beat": "steady",
+     "role_fit": 0.795,
+     "meaning": "Lakshman speaks to Ram after Sita is taken. Ram is lost in grief and wants to destroy the world. Lakshman tells him to take heart. He asks which living being trouble does not touch. He says troubles strike like fire, king, and pass in a moment. A steady friend can stop grief from turning into destruction.",
+     "for_you": "The visa feels like a fire that will burn everything. But your mind is not the visa. It is the steady thing inside you that trouble cannot touch. That part of you cannot be lost."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.vairagya.62",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 62",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own mind",
+     "setting": "From 'Advice to the Mind'.",
+     "sanskrit": "परिभ्रमसि किं मुधा क्वचन चित्त विश्राम्यतां स्वयं भवति यद्यथा भवति तत्तथा नान्यथा । अतीतमननुस्मरन्नपि च भाव्यसंकल्पयन् नतर्कितसमागमाननुभवामि भोगानहम् ॥",
+     "line": "Why wander, mind? Rest. Not replaying the past, not scripting the future, I take what comes.",
+     "translation": "Why do you wander about in vain, mind? Rest somewhere. Whatever is to happen happens just as it will, and not otherwise. Not recalling the past, not planning the future, I enjoy the pleasures that come to me unlooked-for.",
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "Not an argument against planning; it is for the worry loop once you have done your part.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 3.7203,
+     "beat": "act",
+     "role_fit": 0.609,
+     "meaning": "Bhartrihari speaks to his own mind from a place of exhaustion. He asks why it wanders about in vain, why it replays the past and scripts the future. He says rest somewhere. Whatever is to happen will happen just as it will. He will not recall the past, will not plan the future, but will enjoy what comes unlooked-for. This is a voice that has already done its part and is now telling the mind to stop seeking approval and rehearsing outcomes. The calm is already inside.",
+     "for_you": "The rating will be what it is. You have already done what you can. Before dawn, turn the phone face down and let the night belong to rest."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.26",
+     "ref": "Bhagavad Gita 6.26",
+     "ref_iast": "Bhagavad Gītā 6.26",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् । ततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ॥",
+     "line": "Wherever the restless mind wanders, gently bring it back. Again and again.",
+     "translation": "Wherever the restless, unsteady mind wanders, from there one should draw it back and bring it under the control of the self.",
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 3.3985,
+     "beat": "act",
+     "role_fit": 0.489,
+     "meaning": "Krishna is teaching Arjuna how to settle the mind. He describes a mind that wanders like a flame in the wind. The instruction is to bring it back to the self, again and again. This is not about forcing the mind into a single shape, but about a gentle return, a quiet moderation that holds the wandering thoughts without fighting them.",
+     "for_you": "You check Slack at two in the morning, and the mind keeps wandering to the rating. Before you open the app again, try this. Gently bring your attention back to the room. Rest your eyes. Take one slow breath. Let the night belong to rest, not to the fear of what might happen."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sugriva_fear",
+     "title": "Sugriva's fear and Hanuman's first words",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sugriva",
+      "Hanuman",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+     "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+     "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.3.19",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+      "family": "vr",
+      "speaker": "Ram",
+      "listener": "Lakshman",
+      "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+      "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+      "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+      "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+      "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.sugriva_fear",
+       "title": "Sugriva's fear and Hanuman's first words",
+       "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+       "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+       "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Sugriva, a king in exile, saw two archers climbing his hill and feared the worst",
+     "teaser": "Sugriva, a king in exile, saw two archers climbing his hill and feared the worst",
+     "for_you": "You checked Slack at two in the morning because your mind saw danger where there was only work. That fear jumps ahead of the facts. The rating is not yet bad. The sixty days are not yet here. What is real in you, your effort and your care, is not theirs to take."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The fear of loss",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 147,
+   "llm": 4624,
+   "total": 10182,
+   "select": 5404
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are terrified and running on empty. The visa, the rating, the sixty days. You check messages at two in the morning because sleep feels like a risk you cannot afford to take right now."
+  ],
+  [
+   "scene",
+   "Arjuna stands in his chariot and sees his own kin arrayed against him. His limbs give way, his mouth is parched, his body trembles, and his hair stands on end. He is not a hero here. He is a man in the middle of a breakdown, and the Gita opens with that trembling, not with a command to be brave: And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "सीदन्ति मम गात्राणि मुखं च परिशुष्यति, वेपथुश्च शरीरे मे रोमहर्षश्च जायते. गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते, न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः."
+  ],
+  [
+   "line",
+   "In plain words: Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero."
+  ],
+  [
+   "unpack",
+   "This is what it means to be strong. The body does not lie. It shakes and dries and races when the mind has already decided the worst is coming. The texts do not ask you to ignore this. They start exactly here, in the shaking. The fear of what might happen is real, and it is not a flaw in you. It is the ground you are standing on right now."
+  ],
+  [
+   "for_you",
+   "When the phone lights up at two in the morning, let your hand move slowly. Let the message sit for a breath before you read it. Your body is already bracing for a loss it cannot control."
+  ],
+  [
+   "close",
+   "The tremor is not the end of you."
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": "The Gita begins with a waves of panic. Even the strongest freeze. The body is not failing. It is telling the truth about what is at stake. Fear of what might happen is real, and it is the ground the teaching starts from.",
+  "practice": "Notice one sensation in the body right now without trying to change it.",
+  "question": "What does your body know right now that your mind is trying to ignore?"
+ }
+}

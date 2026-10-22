@@ -1,0 +1,510 @@
+{
+ "persona": {
+  "id": "us_millennial_mother_anger",
+  "market": "USA (Chicago)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "39, Indian-American, two kids, runs a dental practice with her husband, loses her temper with the kids and hates herself after.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "phone_hours": 3,
+   "topic": "mind",
+   "follow": "anxious"
+  },
+  "note": "I yelled at my 7 year old this morning for spilling milk and the look on his face. I am turning into my mother. I run a practice, I manage 12 people calmly, and then at home I just snap",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and frightened by the snap",
+   "bridge": "What you are living with is what the texts call anger that takes over, and that is where this week begins.",
+   "week_thesis": "Seven days from the shame of the snap to the pause that follows it, and the care that makes the difference.",
+   "week_beats": {
+    "hook": "You recognise the snap and the fear it carries, named without judgement.",
+    "diagnose": "You see that the anger is the exhaustion finding its only outlet, and that the look on your son's face is what you are really fighting.",
+    "steady": "You hold that the same mind that is calm at work is the one that is exhausted at home, and your worth is not the snap.",
+    "act": "You try pausing before the next response, and letting care come after the anger, one breath at a time.",
+    "story": "A mother who was also a warrior shows you how the same mind that fights battles can learn to come home gently."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A mother and practice owner who is composed at work but snaps at home, and is frightened by the fear she is becoming her own mother.",
+   "mirror": "You run a practice and manage twelve people calmly, and then at home you snap at a spill of milk.",
+   "insight": "You are not turning into your mother. You are turning into the exhaustion that has no hour of its own, and it is using your son's face as the mirror.",
+   "mechanism": "anger_reactivity",
+   "mechanism_label": "Anger that takes over",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.73,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.08,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.888,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.628,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.537,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of snapping at the one person you love most, when you have been composed with everyone else all day, and the fear that you are becoming the mother you did not want to be.",
+    "diagnose": "Anger rises from blocked wanting; a mind pulled in every direction all day finds its only outlet in the one place it should be safest.",
+    "steady": "The same mind that is calm at work is the one that is exhausted at home; your worth is not measured by the snap, but by the care that follows it.",
+    "act": "Before the next moment, take one full breath; let the first response be a pause, not a word, and let the care come after the anger.",
+    "story": "A mother who was also a warrior, who learned that the same mind that fought battles could learn to come home gently, and who taught her children how to do it."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The snap and the pause",
+    "The exhaustion that has no hour",
+    "More than the mother you fear"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs a practice and manages people calmly",
+    "snaps at home despite being composed at work"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "seat:missing",
+    "week_fit:24=1.0,62=1.0,536=0.6,17=0.0,12=0.6,46=0.6",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.61,max=0.65",
+    "retried:1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.11.24",
+     "ref": "Bhagavad Gita 11.24",
+     "ref_iast": "Bhagavad Gītā 11.24",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, shown Krishna's cosmic form, is overwhelmed by its scale.",
+     "sanskrit": "नभःस्पृशं दीप्तमनेकवर्णंव्यात्ताननं दीप्तविशालनेत्रम् । दृष्ट्वा हि त्वां प्रव्यथितान्तरात्माधृतिं न विन्दामि शमं च विष्णो ॥",
+     "line": "Seeing something too big to take in, my heart trembles and I can't find steadiness or calm.",
+     "translation": "Seeing you touching the sky, blazing with many colours, mouths wide open, with huge fiery eyes, my inner self trembles, Vishnu, and I find neither courage nor peace.",
+     "why": "Facing something vast can shake you to the core, and that's human.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p11.4",
+      "title": "Arjuna sees the cosmic form and praises it",
+      "summary": "Arjuna sees all beings, gods and worlds in Krishna, and warriors rushing into his mouths like moths into flame. Terrified, he asks who Krishna really is.",
+      "story_hook": "Arjuna saw everything at once, and for the first time in his life he could not find his footing.",
+      "lesson": "Facing something vast can shake you to the core, and that's human."
+     },
+     "score": 2.082,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna has just seen Krishna's cosmic form, and the sight is too vast to hold. He tells Krishna that his heart trembles and he cannot find any steadiness or calm. The verse says that when a person faces something immense and all-consuming, it shakes them to the core. It is a human reaction, not a failure. Arjuna is overwhelmed by the scale of what he is seeing, and his body reacts before his mind can catch up.",
+     "for_you": "You are trembling after that snap, and the fear that follows is just the body reacting to something vast and unnamed. You are not broken. You are simply meeting the size of what is happening inside you right now."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 3.8103,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Krishna speaks to Arjuna while teaching him the shape of a steady mind. When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger. This is the path that leads from calm attention to ruin.",
+     "for_you": "You are composed at work because your attention is on the practice, on the people you manage. At home, nothing holds your attention the same way. The exhaustion has nowhere to go, so it finds your son."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.3898,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Ribhu is speaking to Nidagha, a student in the middle of a busy life, about how a person who is truly free moves through the world. The verse says to be busy on the outside and unhurried inside. It means you do the work that is in front of you, you speak, you move, but you do not let the doing turn into a storm inside. You act fully, yet you do not let the action agitate your mind. It is the art of doing without being done over by what you do.",
+     "for_you": "The same mind that holds your practice together is the one that is tired at home. The snap is not a verdict on your worth. It is the sound of a mind that has been running without a single hour that belongs only to it."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.29.12",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 29.12",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "Draupadi",
+     "setting": "In exile, Draupadi urges Yudhishthira to answer injustice with force; he argues for forgiveness.",
+     "sanskrit": "आत्मानं च परांश्चैव त्रायते महतो भयात् / क्रुध्यन्तमप्रतिक्रुध्यन्दूयोरेष चिकित्सकः",
+     "line": "Don't answer anger with anger. The one who stays calm protects both people, and heals both.",
+     "translation": "One who does not get angry back at an angry person saves both himself and the other from great danger. He becomes the healer of both.",
+     "why": "Anger rarely heals anything; forgiveness has limits. Wisdom is knowing which a moment needs.",
+     "misuse": "Staying calm is not the same as staying in a situation where you are unsafe.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.kshama_or_tejas",
+      "title": "Forgiveness or force: Draupadi and Yudhishthira",
+      "summary": "In the forest, Draupadi asks why Yudhishthira does not answer injustice with anger, citing Prahlada's advice that neither force nor forgiveness is always right. Yudhishthira replies that anger destroys and forgiveness holds the world together.",
+      "story_hook": "Thirteen years into exile, Draupadi looked at her husband and asked why he was not angry.",
+      "lesson": "Anger rarely heals anything; forgiveness has limits. Wisdom is knowing which a moment needs."
+     },
+     "score": 2.8197,
+     "beat": "steady",
+     "role_fit": 0.5,
+     "meaning": "In the forest, Draupadi asks Yudhishthira why he does not answer injustice with anger, and he replies that the one who does not get angry back at an angry person saves both himself and the other from great danger. He becomes the healer of both. The verse proposes that anger rarely heals anything. Forgiveness has limits. Wisdom is knowing which a moment needs.",
+     "for_you": "The same mind that is calm at work is the one that is exhausted at home. The snap does not erase your worth. It only shows where the weight has gathered."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.222.chaupai.2",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 222",
+     "family": "rcm",
+     "speaker": "A voice from the sky",
+     "listener": "Lakshman",
+     "setting": "Lakshman, convinced Bharat is coming to attack, grabs his bow; a heavenly voice stops him.",
+     "sanskrit": "अनुचित उचित काजु किछु होऊ। समुझि करिअ भल कह सबु कोऊ। सहसा करि पाछे पछिताहीं। कहहिं बेद बुध ते बुध नाहीं ॥",
+     "line": "Think before you act. Acting in haste and regretting later is not wisdom.",
+     "translation": "Whatever needs doing, right or wrong, think it through first, then act; everyone calls that good. Those who act in haste and regret afterward, the wise say, are not wise at all.",
+     "why": "Promise only what you have thought through; a rash vow can cost what you love most.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.dasharath_promise",
+      "title": "Dasharath's two promises",
+      "summary": "Dasharath finds Kaikeyi in the sulking chamber and, eager to please her, swears by Ram to grant anything. She asks for Bharat's coronation and fourteen years of exile for Ram. Bound by his word and his love, the king spends the night begging, raging and grieving, and by morning cannot speak.",
+      "story_hook": "He swore by the person he loved most before he knew what she would ask.",
+      "lesson": "Promise only what you have thought through; a rash vow can cost what you love most."
+     },
+     "score": 3.0499,
+     "beat": "act",
+     "role_fit": 0.539,
+     "meaning": "A voice from the sky speaks to Lakshman, who is holding his bow, convinced that Bharat is coming to attack. The voice tells him to think first, then act. It says that whoever acts in haste and regrets it later is not wise at all. It asks him to promise only what he has thought through, because a rash vow can cost what he loves most.",
+     "for_you": "Before you answer your parents or your children today, take one breath. Let that small pause be the thinking the voice asked for. It is not weakness. It is the only way to keep your own."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ram_gita.46",
+     "ref": "Ram Gita 46 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 46",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "विविक्त आसीन उपारतेन्द्रियो विनिर्जितात्मा विमलान्तराशयः । विभावयेदेकमनन्यसाधनो विज्ञानदृक्केवल आत्मसंस्थितः ॥",
+     "line": "Sit somewhere quiet, let the senses rest, and give your full attention to one thing.",
+     "translation": "Sitting in a quiet place, senses at rest, self-mastered, pure within, one should contemplate the One with undivided attention, resting in the Self.",
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 2.9047,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion. Rama tells him to sit somewhere quiet, let the senses rest, and give full attention to one thing. He says quiet sitting and steady faith carry you until understanding becomes natural, and until you see the divine everywhere, devotion keeps the heart alive.",
+     "for_you": "You sit at the table after the children are in bed, phone away, and do nothing for five minutes. Let one breath be enough to rest your senses."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "anxiety_general",
+        "label": "I feel anxious most of the time"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "You feel ashamed by the snap at home. But the same mind that holds your work together can hold your home gently. When the anger comes, let your children see the pause that follows it. That is where they learn what you are really like."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The snap and the pause",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 191,
+   "llm": 4947,
+   "total": 13415,
+   "select": 8269
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying the shock of that snap. It happened in the quiet of your home, and now you are frightened by what it means. You do not want to become her. You want to know why your body betrayed your calm."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. Krishna has just opened his cosmic form, and the sight is too vast to hold. Arjuna, the warrior, sees the sky filled with blazing colours and countless mouths. He sees all the warriors rushing into those mouths like moths into a flame. He is terrified, and he tells Krishna: And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "नभःस्पृशं दीप्तमनेकवर्णंव्यात्ताननं दीप्तविशालनेत्रम्, दृष्ट्वा हि त्वां प्रव्यथितान्तरात्माधृतिं न विन्दामि शमं च विष्णो."
+  ],
+  [
+   "line",
+   "In plain words: Seeing something too big to take in, my heart trembles and I can't find steadiness or calm."
+  ],
+  [
+   "unpack",
+   "Arjuna is not failing. His heart trembles because the sight is too big to take in. The texts say that facing something immense can shake you to the core. It is a human reaction, not a weakness. The body reacts before the mind can catch up, and that is exactly what is happening to you. This is easier said than done, because you have trained yourself to be composed at work, and now your body is showing you the cost."
+  ],
+  [
+   "for_you",
+   "When you feel that tremble, do not push it away. Let your body have the moment it needs. You do not have to fix it right now. Just let the feeling be there."
+  ],
+  [
+   "close",
+   "Your body is showing you the size of what you are carrying. It is not a verdict on who you are."
+  ]
+ ],
+ "depth": {
+  "life": "You sit at your desk after the snap, the phone screen glowing with the message you sent. The shame is hot, and the fear is colder: that you are becoming the very person you spent years trying not to be. Your children are in the other room, and your parents are waiting for your next call.",
+  "points": "Arjuna stood before a vision too vast to hold, and his body shook with the sheer scale of it. What you are trembling at is not the person you are becoming. It is the sudden, terrifying size of the anger that lives inside you, an anger that has no hour of its own.",
+  "practice": "Place your hand on your chest and notice the trembling. Do not try to stop it. Just let it be there for thirty seconds.",
+  "question": "What part of you is afraid of being seen by your own children?"
+ }
+}

@@ -1,0 +1,507 @@
+{
+ "persona": {
+  "id": "sg_genz_finance_imposter",
+  "market": "Singapore",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "25, Tamil-Singaporean analyst at a bank, first in family to go to university, got promoted early, feels she doesn't belong in the room.",
+  "profile": {
+   "feeling": "nerve",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4,
+   "topic": "enough",
+   "follow": "fraud"
+  },
+  "note": "got promoted ahead of people with MBAs. in every meeting I think they're going to find out I'm just the girl from the HDB whose dad drove a taxi. I over prepare for everything and still feel sick before presenting",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "sick with fear and over-preparing",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise the replaying and the sickness, named without judgement."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "Promoted ahead of more credentialed colleagues, she feels she is a fraud who will be exposed, and over-prepares yet still feels sick before presenting.",
+   "mirror": "You prepare for every meeting, and still your stomach turns before you speak.",
+   "insight": "The HDB and the taxi are not the problem. The problem is the verdict that says they disqualify you, which you rehearse as if it were the truth.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 2.2,
+     "source": "note"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.85,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.845,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.55,
+     "source": "note"
+    },
+    {
+     "id": "not_promoted",
+     "label": "I was passed over for promotion",
+     "weight": 0.549,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.492,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of a promotion you earned but do not believe you deserve, and the sickness of waiting for the moment you are found out. I feel like an imposter.",
+    "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth.",
+    "steady": "A failure is something that happened, not who you are; no one who tries to do good is ever lost.",
+    "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again.",
+    "story": "A woman who rose from the HDB to the front of the room, facing her own doubt, and found the courage to speak as herself."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The verdict you keep passing",
+    "What you are beyond the HDB",
+    "The one who speaks"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "promoted ahead of people",
+    "over-prepares for everything",
+    "feels sick before presenting"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "bridge:copied_example",
+    "week_thesis:missing",
+    "seat:missing",
+    "week_fit:34=0.6,58=0.0,85=0.6,25=0.6,34=0.3,5=0.3",
+    "week_fit:swapped=3",
+    "retried:1",
+    "redo:3",
+    "redo_fixed:3",
+    "dropped:repeat=3,soft_kept=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.0455,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless, turbulent, and stubborn. He says it is as hard to hold as the wind. Krishna agrees that the mind is difficult to control, but says that practice and letting go can train it.",
+     "for_you": "You feel sick with fear before you present, and you rehearse the verdict that says you are not good enough. That mind is hard to hold, but you can train it with practice and letting go."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.1.11",
+     "ref": "Ashtavakra Gita 1.11",
+     "ref_iast": "Aṣṭāvakra Gītā 1.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "मुक्ताभिमानी मुक्तो हि बद्धो बद्धाभिमान्यपि । किंवदन्तीह सत्येयं या मतिः सा गतिर्भवेत् ॥",
+     "line": "Believe you are free and you are. Believe you are bound and you are. As you think, so you become.",
+     "translation": "One who thinks 'I am free' is free, and one who thinks 'I am bound' stays bound. The saying here is true: as you think, so you become.",
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "This is about inner freedom; it does not deny real constraints or problems that need action.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 3.2843,
+     "beat": "diagnose",
+     "role_fit": 0.785,
+     "meaning": "King Janaka asks the young sage Ashtavakra how to become free. Ashtavakra replies that you are not your body or your roles but the awareness watching them. He tells the king that the mind's belief shapes your reality. If you think you are bound by your fears and roles, you stay bound. If you think you are free, you are. The verse proposes that your internal belief is what creates your experience of being trapped.",
+     "for_you": "The belief that you are a fraud is what makes you feel trapped. Today, notice the thought that says you are not enough and see it as just a thought. You are the awareness watching that thought, not the thought itself."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "not_promoted",
+       "label": "I was passed over for promotion"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2704,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari, the poet, is writing for anyone who has ever felt knocked down. He says a ball struck by a hand flies right back up. He means that for people who keep going on the right path, setbacks rarely last. The misfortunes of the steady do not stick. He is not saying suffering is always short, or that long pain means a person did wrong. He is simply saying that staying on the path is what makes the ball bounce back.",
+     "for_you": "The over-preparing and the fear before your presentations are the hand that keeps striking you down. But you are still on the path. Let the ball of this setback bounce back up today by trusting that your steady work is what matters, not the verdict you rehearse."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.135.25",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 135.25",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "पुत्र नात्मावमन्तव्यः पूर्वाभिरसमृद्धिभिः / अभूत्वा हि भवन्त्यर्था भूत्वा नश्यन्ति चापरे / अमर्षेणैव चाप्यर्था नारब्धव्याः सुबालिशैः",
+     "line": "Don't look down on yourself because of past failures. Fortunes come and go, and can come again.",
+     "translation": "Son, don't look down on yourself because of past failures. Fortunes that never were come to be, and fortunes that were are lost. But don't start things out of mere resentment, like a fool.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.1616,
+     "beat": "steady",
+     "role_fit": 0.865,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to look down on himself because of past failures. She says that fortunes which never were can come to be, and those which were are lost. She warns him not to start things out of mere resentment, like a fool.",
+     "for_you": "The morning of a presentation can feel like a lost kingdom. The fear you rehearse is not a verdict on your worth. You do not need to start this next step from resentment against the people who were promoted before you."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.210.59",
+     "ref": "Mahabharata · Vana Parva · Vyadha Gita",
+     "ref_iast": "Mahābhārata, Vana Parva 210.59",
+     "family": "mbh",
+     "speaker": "Dharmavyadha (the righteous meat-seller)",
+     "listener": "Kaushika, a Brahmin ascetic",
+     "setting": "In Mithila, a meat-seller famed for wisdom teaches a proud ascetic what goodness really is.",
+     "sanskrit": "पापं चेत्पुरुषः कृत्वा कल्याणमभिपद्यते / मुच्यते सर्वपापेभ्यो महाभ्रेणेव चन्द्रमाः",
+     "line": "Turn to doing good after a wrong, and you come out like the moon from behind a cloud.",
+     "translation": "If a person who has done wrong turns to doing good, he is freed from all his wrongs, like the moon coming out from behind a great cloud.",
+     "why": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vyadha_gita",
+      "title": "Vyadha Gita: the butcher who taught a sage",
+      "summary": "A proud ascetic, Kaushika, is sent to learn from a meat-seller in Mithila. The butcher teaches him plain goodness: don't return evil, repent and resolve, keep envy away, care for your parents, and don't spend your one life making enemies.",
+      "story_hook": "",
+      "lesson": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents."
+     },
+     "score": 3.1646,
+     "beat": "act",
+     "role_fit": 0.64,
+     "meaning": "In Mithila, a meat-seller named Dharmavyadha speaks to a proud ascetic named Kaushika. Kaushika is full of pride and has done wrong. The butcher tells him that if he turns to doing good after a wrong, he is freed from it all, like the moon coming out from behind a great cloud. The truth underneath is not about the past mistake itself, but about the choice to turn toward honest action now. You do not have to carry the dark cloud of what you fear you are.",
+     "for_you": "Before your next presentation, let the facts of what you prepared stand on their own. You are not the verdict you rehearse. Let your work do the talking for a moment."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.9881,
+     "beat": "act",
+     "role_fit": 0.431,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, telling them to act free of ego, like and dislike. He says that your own path, imperfectly walked, beats a borrowed one. It is better to die doing your own duty than to live by another's path, because following someone else's way is full of fear. The truth underneath is that your own nature and calling are the only safe ground.",
+     "for_you": "You are preparing for a presentation, but you are rehearsing someone else's idea of success. Today, do your own part. Write one sentence that is true to your own view, not the view you think they want to hear."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.jambavan_rouses",
+     "title": "Jambavan reminds Hanuman who he is",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Jambavan",
+      "Hanuman",
+      "Angada"
+     ],
+     "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+     "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+     "lesson": "Sometimes you need someone to remind you what you are capable of.",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.66.7",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 66.7",
+      "family": "vr",
+      "speaker": "Jambavan",
+      "listener": "Hanuman",
+      "setting": "On the southern shore no one can leap the ocean; old Jambavan turns to the silent Hanuman.",
+      "sanskrit": "बलं बुद्धिश्च तेजश्च सत्त्वं च हरिपुङ्गव। विशिष्टं सर्वभूतेषु किमात्मानं न सज्जसे।७।।",
+      "line": "You have the strength, the brains and the courage. Why are you holding yourself back?",
+      "translation": "Your strength, intelligence, energy and courage stand out among all beings, best of monkeys. Why do you not step up?",
+      "why": "Sometimes you need someone to remind you what you are capable of.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "imposter",
+        "label": "I feel like an imposter"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.jambavan_rouses",
+       "title": "Jambavan reminds Hanuman who he is",
+       "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+       "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+       "lesson": "Sometimes you need someone to remind you what you are capable of."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "teaser": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "for_you": "You have the strength to move past this. The voice that calls you an imposter is only a whisper, not the truth of what you have already done."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The verdict you keep passing",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 190,
+   "llm": 4612,
+   "total": 17928,
+   "select": 13119
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You feel sick with fear before you present. You rehearse the verdict that says you are not good enough until it feels like the truth. You over-prepare because you are afraid of being found out."
+  ],
+  [
+   "scene",
+   "Arjuna, the warrior, is on a battlefield. He has just asked Krishna, his guide, how someone can try to control the mind. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Arjuna says the mind is restless, stormy and stubborn. He says it is as hard to hold as the wind. Krishna agrees, but he does not say the mind is impossible to control. He says practice and letting go can train it. This means the mind is not your enemy, but it will not calm down by force alone. You cannot think your way out of the fear. You can only train it to settle."
+  ],
+  [
+   "for_you",
+   "Before your next presentation, try letting go of the rehearsal. Let the preparation be enough. Do not try to catch the wind."
+  ],
+  [
+   "close",
+   "What if you let go for just one minute before you begin?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit with your work phone in your hand for hours, rehearsing what you will say, trying to outrun the feeling that you are a fraud. You are not preparing for the presentation. You are preparing for the verdict you are certain will come.",
+  "points": "The mind is not a machine that can be fixed by working harder. It is a force that is restless by nature, and trying to command it with more control only exhausts you. The real work is to train it, not to beat it.",
+  "practice": "Put the phone down and close your eyes. Watch your thoughts like clouds passing. Do not argue with them or push them away.",
+  "question": "What would it feel like to let the verdict come and go without rehearsing a defense?"
+ }
+}

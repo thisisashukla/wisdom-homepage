@@ -1,0 +1,507 @@
+{
+ "persona": {
+  "id": "uk_boomer_grandmother_lonely",
+  "market": "UK (Birmingham)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "68, came from Jalandhar in 1976, worked in a factory then raised 3 children. Widowed. Children busy, grandchildren on phones. Reads Ramcharitmanas.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "lonely in a full house",
+   "bridge": "The Ramayan you read in the morning is what the Upanishads call a living company: the self that is not alone, and the search for what does not pass.",
+   "week_thesis": "The Ramayan you read in the morning is not just company, it is a door. Over seven days you will walk through it to the self that is not the mother and does not pass.",
+   "week_beats": {
+    "hook": "You recognise the search as a search, and the Ramayan as the first companion on it.",
+    "diagnose": "You see that the emptiness is not the Sunday, it is the forgetting of what does not pass.",
+    "steady": "You hold that the self you are is never alone, and it is the one thing that does not pass.",
+    "act": "You try reading with one question: what in me is not passing away?",
+    "story": "A queen who lost everything and found the self that was never the role of wife or queen shows you the way."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "rcm"
+   ],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A retired mother who raised her children alone is looking for something deeper, finding the Ramayan a companion in the mornings and feeling the Sunday visits are distant.",
+   "mirror": "You read the Ramayan in the morning and the children come on Sunday but stay on their phones.",
+   "insight": "You are not looking for a different kind of Sunday. You are looking for the part of you that was never the mother, and that the Ramayan is beginning to show.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.524,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.392,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The search for something deeper in the quiet morning, with the Ramayan as company and Sunday visits that leave the heart still searching. I feel lonely.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass, and the texts call that the self.",
+    "steady": "The self you are is not born and not dying; it is the one thing that does not pass, and it is never alone.",
+    "act": "Read with the question, not just the story: let each verse ask you what in you is not passing away.",
+    "story": "A queen who lost her husband and her kingdom, who walked the forest alone, and who found the self that was never the role of wife or queen."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The Ramayan as door",
+    "What does not pass",
+    "The self beyond the role"
+   ],
+   "seat": "a retired mother who raised her children alone and now feels alone on Sunday visits",
+   "life_context": "A retired woman in her sixties or older, raising her children alone after their father died; the Ramayan is her morning company, and on Sundays her children come but stay on their phones, leaving her to look for what is deeper.",
+   "details": [
+    "raised children alone after their father died",
+    "children visit on Sundays but are always on their phones",
+    "reads Ramayan in the morning",
+    "feels lonely despite family visits"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "llm_situations_invalid",
+    "stance:seeking_over_pain",
+    "hook:anchored_to_situation",
+    "week_fit:11=0.6,40=0.3,13=0.3,250=0.6,3=0.6,1=0.6",
+    "week_fit:swapped=2",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:repeat=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.11",
+     "ref": "Bhagavad Gita 10.11",
+     "ref_iast": "Bhagavad Gītā 10.11",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on devotees who find joy together and the light he gives them.",
+     "sanskrit": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः । नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥",
+     "line": "Out of compassion, I live in their hearts and clear the darkness with the lamp of understanding.",
+     "translation": "Out of compassion for them, dwelling in their hearts, I destroy the darkness born of ignorance with the shining lamp of knowledge.",
+     "why": "Good company and an inner lamp clear the dark.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.2",
+      "title": "The yoga of devotion and its fruit",
+      "summary": "Devotees talk of the divine with each other and find joy; out of compassion Krishna lights the lamp of knowledge in their hearts.",
+      "story_hook": "",
+      "lesson": "Good company and an inner lamp clear the dark."
+     },
+     "score": 2.6607,
+     "beat": "hook",
+     "role_fit": 0.33,
+     "meaning": "Krishna tells Arjuna that when people gather in devotion and share what they know of the divine, they find real joy. Out of compassion for them, he dwells inside and destroys the darkness of ignorance with a bright lamp of understanding.",
+     "for_you": "You sit in a full house and feel the quiet between the Sunday visits. The Ramayan you hold in the morning is not just a story. It is the first companion on a search for what does not pass. Let it be the lamp that clears the dark, not the noise of the room."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.28.17",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 28.17",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama on how everything changes.",
+     "sanskrit": "दिवसास्ते महान्तस्ते संपदस्ताः क्रियाश्च ताः । सर्वं स्मृतिपथं यातं यामो वयमपि क्षणात् ॥",
+     "line": "Those days, those people, that wealth, those deeds are memories now. We too will pass soon.",
+     "translation": "Those days, those great people, that wealth, those deeds: all have passed into memory. We too will go in a moment.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a call to despair; it wakes Rama up to what matters now.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 2.5765,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "Rama is speaking to the sage Vishvamitra. He has just returned from a long visit to his father's kingdom and is filled with a deep weariness. He tells him that the days of grand deeds and great people are already memories. The wealth and the powerful figures of his youth are gone. He says that he and all of them will also pass away in a moment. The verse asks him to look honestly at what feels empty and name it without looking away.",
+     "for_you": "The Sunday emptiness is not the children being on their phones. It is the forgetting of what does not pass. Your morning Ramayan is the lamp that clears that darkness. Let it show you the part of you that remains when the roles of mother and host fade."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.250",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 250)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the Lord",
+     "setting": "Surdas on the Lord's readiness.",
+     "sanskrit": "कबहूँ तुम नाहिन गहरु कियो | सदा सुभाव-सुलभ सुमिरन-बस, भक्तनि अमर दियौ ॥",
+     "line": "You never once delayed. You are easy to reach, and remembering you is enough to win you.",
+     "translation": "You have never once delayed. By nature easy to reach and won over by remembrance, you have always given your devotees what is undying.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9793,
+     "beat": "steady",
+     "role_fit": 0.4,
+     "meaning": "Surdas speaks to the Lord from a place of deep need, knowing that the world of people and wealth fades. He says that the Lord is always ready, never once delaying, and that remembering is enough to receive what does not pass away.",
+     "for_you": "The Sunday visits feel like they belong to the past, but the Ramayan is not a memory. It is a living company that is always ready and easy to reach. Let your morning reading be enough to hold you today."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_shwetashwetar.3.17",
+     "ref": "Shvetashvatara Upanishad 3.17",
+     "ref_iast": "Śvetāśvatara Upaniṣad 3.17",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seekers",
+     "setting": "Describing the one Lord who pervades all, the seer adds what he is to each of us.",
+     "sanskrit": "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम् । सर्वस्य प्रभुमीशानं सर्वस्य शरणं सुहृत् ॥",
+     "line": "The Lord of everything is also everyone's refuge and everyone's friend.",
+     "translation": "He shines through the powers of all the senses yet has no senses; he is the master and ruler of all, the refuge of all, the friend of all.",
+     "why": "Refuge in God comes at the end of honest questioning, not instead of it.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.shvet_inquiry_to_refuge",
+      "title": "Shvetashvatara: from 'what governs our lives?' to refuge",
+      "summary": "Seekers ask what causes the world and governs their joys and sorrows. Through meditation they come to see one Lord, Rudra-Shiva, hidden in every heart; the Upanishad moves from inquiry to recognition to a prayer of refuge (6.18) and ends on grace and love of God (6.21, 6.23).",
+      "story_hook": "",
+      "lesson": "Refuge in God comes at the end of honest questioning, not instead of it."
+     },
+     "score": 2.8753,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "A seer speaks to those who are asking why the world moves as it does, why joy and sorrow come and go. He says that the one who rules all things is the refuge of all and the friend of all. This means that the presence you seek is not far away. It is the very ground beneath your feet. The self that is not alone is the one thing that does not pass, and it is already where you are.",
+     "for_you": "The Sunday afternoons with your children feel empty, and the phone screens between you feel like a wall. This verse says that the one you read about in the morning is the friend of everyone. He is the refuge of everyone."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.5.46.chaupai.3",
+     "ref": "Ramcharitmanas, Sundar Kand 5.46 (chaupai 3)",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 5.46",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Vibhishan",
+     "setting": "Ram describes the devotee who lives in his heart.",
+     "sanskrit": "सब कै ममता ताग बटोरी। मम पद मनहि बाँध बरि डोरी॥ समदरसी इच्छा कछु नाहीं। हरष सोक भय नहिं मन माहीं ॥ अस सज्जन मम उर बस कैसें। लोभी हृदयँ बसइ धनु जैसें॥ तुम्ह सारिखे संत प्रिय मोरें। धरउँ देह नहिं आन निहोरें ॥",
+     "line": "Gather every thread of love into one cord, and tie your heart to me.",
+     "translation": "Gathering the threads of attachment to all of these, he twists them into one cord and ties his mind to my feet. Even-minded, wanting nothing, with no elation, grief or fear in his mind: such a good person lives in my heart as wealth lives in a miser's heart. Saints like you are dear to me; I take a body for no other reason.",
+     "why": "The turning itself is enough to be taken in; your past is not the deciding question.",
+     "misuse": "Not 'give up your family': it is gathering one's loves into a single devotion. Surrender here comes after effort and honest reflection; it is not a reason to stop acting or to stay in harm's way.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.bhakti.vibhishan_refuge",
+      "title": "Vibhishan crosses over: Ram's refuge speech",
+      "summary": "Kicked out of Lanka for telling his brother the truth, Vibhishan crosses the sea to Ram, dreaming of his feet. Sugriva wants him bound as a spy; Ram says his vow is to remove the fear of anyone who comes for refuge, and if the visitor were truly wicked he would not have come at all. Ram embraces him, asks how he kept his goodness among the cruel, describes the devotee who ties every thread of love to him, and crowns him king, shyly giving what Ravana got for ten heads.",
+      "story_hook": "Kicked out by his own brother, a man stood on the far shore and wondered whether the enemy he was walking toward would let him in.",
+      "lesson": "The turning itself is enough to be taken in; your past is not the deciding question."
+     },
+     "score": 2.7648,
+     "beat": "act",
+     "role_fit": 0.614,
+     "meaning": "Ram is speaking to Vibhishan, the brother of Ravana who was cast out of Lanka for choosing truth over family. Vibhishan crosses the ocean to Ram alone, and Ram embraces him. Ram tells him that the devotee who gathers every thread of love into one cord and ties his heart to Ram’s feet lives inside him as surely as a miser guards his gold. The turning itself is enough to be taken in. Your past is not the deciding question. This gathering is not giving up your family.",
+     "for_you": "Sit with your Ramcharitmanas this morning and ask what in you is not passing away. Write the answer on a slip of paper and keep it in your book. When your children sit on the sofa with their phones, let your hand rest on that paper."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.1.19.doha.1",
+     "ref": "Ramcharitmanas, Bal Kand 1.19 (doha 1)",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 1.19",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Tulsidas, praising the name of Ram before he begins the story.",
+     "sanskrit": "राम नाम मनिदीप धरु जीह देहरीं द्वार। तुलसी भीतर बाहेरहुँ जौं चाहसि उजिआर ॥",
+     "line": "Want light inside and out? Keep Ram's name like a lamp on the doorstep of your tongue.",
+     "translation": "Tulsi says: if you want light both inside and outside, place the name of Ram like a jewelled lamp on the threshold of your tongue.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.7823,
+     "beat": "act",
+     "role_fit": 0.848,
+     "meaning": "Tulsidas sits down to write, and he speaks to you. He says that if you want light inside and out, you could place the name of Ram like a jewelled lamp on the threshold of your tongue. He is not asking for a grand ritual. He is saying to let the name rest there, ready to be spoken, so it becomes a steady glow that does not flicker out.",
+     "for_you": "This morning, as you open the Ramcharitmanas, let the name of Ram rest on your tongue like a quiet lamp. Let it be the first word and the last word you speak to yourself today."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "You read the Ramayan to find a self beyond the mother, and today that story meets you. Bhasa and Vilasa, old friends who spent their lives chasing peace through effort, found only more spinning."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The Ramayan as door",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 138,
+   "llm": 4254,
+   "total": 12689,
+   "select": 8290
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You sit in a full house and feel the quiet between the Sunday visits. The Ramayan you hold in the morning is not just a story. It is the first companion on a search for what does not pass. Let it be the lamp that clears the dark, not the noise of the room."
+  ],
+  [
+   "scene",
+   "Devotees gather and share what they know of the divine. They find real joy in their company. Krishna sees this and out of compassion, he dwells inside them and destroys the darkness with a bright lamp of understanding, and he says:"
+  ],
+  [
+   "sanskrit",
+   "तेषामेवानुकम्पार्थमहमज्ञानजं तमः, नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता."
+  ],
+  [
+   "line",
+   "In plain words: Out of compassion, I live in their hearts and clear the darkness with the lamp of understanding."
+  ],
+  [
+   "unpack",
+   "This is easier said than done, because you cannot force the light to enter a closed room. The company you find is not the noise of the house, but the quiet attention you give to the text. The lamp is not a sudden burst. It is the steady reading of a word that makes the dark around it visible. You are not asking the lamp to burn the house down. You are asking it to show you the corners where the quiet lives."
+  ],
+  [
+   "for_you",
+   "Tomorrow morning, before the house wakes, read one verse slowly. Let it sit in the quiet of the room. Do not look for a message. Just let the words be the company you seek."
+  ],
+  [
+   "close",
+   "What does the quiet say when the room is still?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit among your family and feel the quiet between the Sunday visits. The Ramayan you hold in the morning is not just a story. It is the first companion on a search for what does not pass. Let it be the lamp that clears the dark, not the noise of the room.",
+  "points": "Good company and an inner lamp clear the dark. The darkness is not the room or the phones. It is the ignorance of who you are beyond the mother who raised them alone.",
+  "practice": "When you read the Ramayan in the morning, pause after the first verse. Let the words sit in your chest for a full breath.",
+  "question": "What does the silence between the Sunday visits ask of you?"
+ }
+}

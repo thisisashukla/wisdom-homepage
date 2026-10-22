@@ -77,7 +77,7 @@ class Settings(BaseSettings):
     # The default week of a plan: days of see, steady, act and story (four digits adding up to 7).
     # A request's `shape` overrides it. "2221" = hook, diagnose, steady ×2, act ×2, story.
     plan_week_shape: str = "2221"
-    request_budget_s: float = 10.0
+    request_budget_s: float = 16.0      # reading + planning + the week gate; the writers have their own 14 s. The app must allow 30 s.
 
     # Local BGE-M3 model weights directory.
     # If empty or non-existent, loads from HuggingFace (cached after first download).

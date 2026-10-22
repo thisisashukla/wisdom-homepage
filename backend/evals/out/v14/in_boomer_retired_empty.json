@@ -1,0 +1,515 @@
+{
+ "persona": {
+  "id": "in_boomer_retired_empty",
+  "market": "India (Lucknow)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "66, retired bank officer in Lucknow, wife passed 2 years ago, son in Toronto, daughter in Mumbai. Reads the Gita occasionally, wants to understand it properly.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 3,
+   "topic": "meaning",
+   "follow": "after_retiring"
+  },
+  "note": "after my wife left us the house is very quiet. children call on sunday. I have time now and I want to read Gita properly not just the shlokas everyone forwards on whatsapp",
+  "note_source": "voice",
+  "expect_stance": "seeking"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "quietly searching and missing her",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "The forwarded shlokas are not the Gita. Over seven days you will find the first verse that speaks to the quiet, and the first practice that makes it a doorway.",
+   "week_beats": {
+    "hook": "You recognise the hunger beneath the forwarded shlokas, and the quiet that makes it possible.",
+    "diagnose": "You see that the search is for what does not pass, not for what fills the empty hours.",
+    "steady": "You hold that what passes is not all that is, and the teaching is waiting under the noise.",
+    "act": "You try reading one verse slowly each morning, and reading it for the question it asks.",
+    "story": "A man who lost everything and had nothing left to do but sit and ask shows you that the search itself is the beginning."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "partner",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.5,
+   "core_struggle": "A retired widower whose house is quiet wants to read the Gita properly to find something deeper than the forwarded shlokas.",
+   "mirror": "You have the time now, and the house is quiet, and the forwarded shlokas are not enough.",
+   "insight": "The quiet is not emptiness, it is space. The shlokas everyone forwards are the surface. What you are reaching for is the teaching underneath, and it is there waiting for you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.965,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.581,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.838,
+     "source": "chip"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.59,
+     "source": "chip"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.575,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A quiet house after loss, with time on your hands and a hunger for something deeper than the words people forward.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What passes is not all that is; the teaching you are looking for is the one that does not pass.",
+    "act": "Read one verse each morning, slowly, and read it for the question it asks, not the answer it gives.",
+    "story": "A man who had lost everything he built, with a quiet house and a long road ahead, who sat with a teacher and asked what remains when all else is gone."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "What passes",
+    "What does not pass",
+    "The one who asks"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "wife left them",
+    "house is very quiet",
+    "children call on Sunday",
+    "has time now after retirement"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "week_fit:22=0.6,17=0.6,13=0.3,612=0.3,45=0.0,2=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.58,max=0.63",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:gendered=1,missing=1,not_second_person=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.9.22",
+     "ref": "Bhagavad Gita 9.22",
+     "ref_iast": "Bhagavad Gītā 9.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on worship for rewards and worship without desire.",
+     "sanskrit": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥",
+     "line": "Turn to me with your whole heart, and I will carry what you lack and guard what you have.",
+     "translation": "To those who think of me alone and worship me, ever devoted, I bring what they lack and preserve what they have.",
+     "why": "Trust eases the worry of getting and keeping.",
+     "misuse": "Not 'God will pay the bills, so don't plan'. Trust eases worry; it doesn't replace effort or prudence.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p09.5",
+      "title": "Worship with and without desire, and their fruits",
+      "summary": "Those who worship for heavenly rewards return when merit runs out; those who think of him alone are carried and protected.",
+      "story_hook": "",
+      "lesson": "Trust eases the worry of getting and keeping."
+     },
+     "score": 1.89,
+     "beat": "hook",
+     "role_fit": 0.285,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He is drawing a line between worship done for rewards and worship done without desire. He tells Arjuna that those who think of him alone, with whole devotion, will find their lacking met and their having preserved. The verse offers trust as a way to live, promising that the need to gather and defend will not press so hard on the heart.",
+     "for_you": "The quiet in your house is the space for this. When you sit down to read, let the lack you feel be met by the text itself. Trust that the words you find will carry what is missing and guard what remains, without you having to chase them."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.28.17",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 28.17",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama on how everything changes.",
+     "sanskrit": "दिवसास्ते महान्तस्ते संपदस्ताः क्रियाश्च ताः । सर्वं स्मृतिपथं यातं यामो वयमपि क्षणात् ॥",
+     "line": "Those days, those people, that wealth, those deeds are memories now. We too will pass soon.",
+     "translation": "Those days, those great people, that wealth, those deeds: all have passed into memory. We too will go in a moment.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a call to despair; it wakes Rama up to what matters now.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.2593,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "Rama tells the sages that the days, the great people, the wealth, and the deeds are now memories. Soon, they too will pass into memory. He is not saying this to despair, but to wake himself up to what matters right now. He sees that life drips away, the mind never fills, and time eats everything. This is his honest question about the point of it all, and it is the first step toward what does not pass.",
+     "for_you": "The house is quiet, and the children call on Sunday. You are not looking to fill these hours, but to see what does not pass. Let Rama’s question sit with you as you turn the page."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.7.46.chaupai.3",
+     "ref": "Ramcharitmanas, Uttar Kand 7.46 (chaupai 3)",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 7.46",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "the citizens of Ayodhya",
+     "setting": "Ram, now king, speaks to the people about the human life they have.",
+     "sanskrit": "फिरत सदा माया कर प्रेरा। काल कर्म सुभाव गुन घेरा॥ कबहुँक करि करुना नर देही। देत ईस बिनु हेतु सनेही ॥ नर तनु भव बारिधि कहुँ बेरो। सन्मुख मरुत अनुग्रह मेरो॥ करनधार सदगुर दृढ़ नावा। दुर्लभ साज सुलभ करि पावा ॥",
+     "line": "This life is the boat, my grace the wind behind it, a good teacher at the helm.",
+     "translation": "Driven always by illusion, surrounded by time, karma, nature and the qualities, the soul wanders; then sometimes, out of compassion, God, a friend without a reason, gives it a human body. The human body is a boat for the ocean of becoming, my grace is the favourable wind, a true teacher is the steady helmsman: you have been given, easily, what is hard to get.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": null,
+     "score": 2.7058,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "Ram, now king in Ayodhya, speaks to the people about the human life they have. He says that the soul wanders driven by illusion, surrounded by time and karma, until God gives it a human body. This life is a boat for the ocean of becoming, his grace is the favourable wind, and a true teacher is the steady helmsman. You have been given, easily, what is hard to get.",
+     "for_you": "The house is very quiet now. The children call on Sunday, and the days pass. You hold that what passes is not all that is, and the teaching is waiting under the noise."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": null,
+     "score": 2.0817,
+     "beat": "steady",
+     "role_fit": 0.614,
+     "meaning": "A teacher is telling a student about the self that lives in the heart. This self comes out at night when you sleep deeply. You do not know it is there, yet you wake up refreshed. The teacher says that all living beings pass this hidden treasure every single day without finding it. They walk right over it. They are carried away by untruth. The teaching is that what you are looking for is not somewhere else. It is inside you, and you pass it by every day without knowing.",
+     "for_you": "The quiet in the house is not a sign of emptiness. It is the space where the teaching waits. You pass your own treasure every day without knowing it. Let this silence be the ground where you stop walking past what is already yours."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.174.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.15",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "his father",
+     "setting": "A young man named Medhavin urges his father not to keep postponing what truly matters.",
+     "sanskrit": "श्वः कार्यमद्य कुर्वीत पूर्वाह्णे चापराह्णिकम् / नहि प्रतीक्षते मृत्युः कृतमस्य न वा कृतम्",
+     "line": "Do tomorrow's work today, and the afternoon's in the morning. Time doesn't wait for you to be ready.",
+     "translation": "Do tomorrow's work today, and the afternoon's work in the morning. Death does not wait to see whether your work is done or not.",
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "About not postponing what matters, not about working nonstop.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 2.8187,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "Medhavin tells his father to stop waiting. The father has laid out the long path of study and ritual, and the son says time is running out. Death comes while we are still getting ready, so do tomorrow's work today and the afternoon's in the morning. Life slips away while we stay busy. The teaching is about doing what matters now, before the quiet takes over completely.",
+     "for_you": "The morning is yours now. Before the house wakes, read one verse slowly and ask it what it needs from you today. Do not rush to finish it. Just let it sit with you for a few minutes."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.3404,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "The seer speaks to the reader after a long life of work, saying that you may wish to live a full hundred years. But the only way to live that long without being crushed by what you do is to let go of the weight. When you do your work in that spirit, the action does not cling to you. It stays with the doing, not with you. That is how you stay free.",
+     "for_you": "You have the morning hours now, and they are yours. Read this one line slowly. Then ask what work you can do today that does not cling to you, that leaves you free at the end of the day."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "ram_gita.p.lakshman_asks",
+     "title": "Lakshmana's private question",
+     "kind": "story",
+     "family": "gitas",
+     "characters": [
+      "Rama",
+      "Lakshmana"
+     ],
+     "story_hook": "Years after the war, Lakshmana found his brother sitting alone and finally asked the question he had carried all along.",
+     "summary": "After the war and his coronation, Rama is sitting alone when Lakshmana bows and asks how to cross the sea of confusion. Rama teaches him that knowledge, not ritual alone, frees a person, and that faith and a teacher make one steady as a mountain.",
+     "lesson": "Even the closest companion needs to ask; with faith and guidance, you can become steady.",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "anchor": {
+      "id": "ram_gita.24",
+      "ref": "Ram Gita 24 (Adhyatma Ramayana, Uttara Kanda 5)",
+      "ref_iast": "Rām Gītā 24",
+      "family": "gitas",
+      "speaker": "Rama",
+      "listener": "Lakshmana",
+      "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+      "sanskrit": "श्रद्धान्वितस्तत्त्वमसीति वाक्यतो गुरोः प्रसादादपि शुद्धमानसः । विज्ञाय चैकात्म्यमथात्मजीवयोः सुखी भवेन्मेरुरिवाप्रकम्पनः ॥",
+      "line": "With faith, a good teacher and a clear mind, you can become as unshakable as a mountain.",
+      "translation": "With faith, through the words 'You are That' and the grace of the teacher, a pure-minded person who knows the oneness of the Self and the individual becomes happy and unshakable like Mount Meru.",
+      "why": "Even the closest companion needs to ask; with faith and guidance, you can become steady.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "ram_gita.p.lakshman_asks",
+       "title": "Lakshmana's private question",
+       "summary": "After the war and his coronation, Rama is sitting alone when Lakshmana bows and asks how to cross the sea of confusion. Rama teaches him that knowledge, not ritual alone, frees a person, and that faith and a teacher make one steady as a mountain.",
+       "story_hook": "Years after the war, Lakshmana found his brother sitting alone and finally asked the question he had carried all along.",
+       "lesson": "Even the closest companion needs to ask; with faith and guidance, you can become steady."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Years after the war, Lakshmana found Rama alone and asked his question",
+     "teaser": "Years after the war, Lakshmana found Rama alone and asked his question",
+     "for_you": "Years after the war, Rama sat alone with the quiet behind him. Lakshmana saw that stillness and asked what frees a person. The question came only after the noise was gone. In your own quiet, the asking is already beginning."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What passes",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 250,
+   "llm": 4227,
+   "total": 13460,
+   "select": 8975
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting in the quiet of the house you built with your partner. The children call on Sunday. The rest of the week is wide open. You want to read the Gita and find out what it is really about."
+  ],
+  [
+   "scene",
+   "Arjuna is on the battlefield. He is afraid of fighting his own family. Krishna is showing him the difference between praying for rewards and praying with complete trust. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते, तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्."
+  ],
+  [
+   "line",
+   "In plain words: Turn to me with your whole heart, and I will carry what you lack and guard what you have."
+  ],
+  [
+   "unpack",
+   "This is a teaching about trust. When you turn your whole heart toward the teaching, you do not have to carry the weight of gathering and protecting everything yourself. It does not mean you stop planning or stop taking care of your life. It means the deep worry of always needing to get more and hold on tighter can loosen."
+  ],
+  [
+   "for_you",
+   "When you sit down to read, let the quiet be the room where the words arrive. Let the text carry what is missing without you chasing it."
+  ],
+  [
+   "close",
+   "Let the book meet the quiet."
+  ]
+ ],
+ "depth": {
+  "life": "Your partner has left and the house is very quiet. Your children call on Sunday and you have time now after retirement. You are quietly searching and missing her, turning the pages of a text that others only forward.",
+  "points": "Trust eases the worry of getting and keeping. You do not have to chase what is missing or guard what remains. The text itself meets the lack you feel and protects what is left.",
+  "practice": "Read one verse slowly and let the words carry what you lack without you having to chase them.",
+  "question": "What remains when you stop trying to fill the quiet?"
+ }
+}

@@ -1,0 +1,497 @@
+{
+ "persona": {
+  "id": "ca_millennial_new_immigrant",
+  "market": "Canada (Toronto)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "36, was a bank branch manager in Hyderabad, moved to Toronto 8 months ago on PR, now driving Uber while applying. Wife and 4-year-old. Winter.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 5,
+   "topic": "work",
+   "follow": "didnt_work_out"
+  },
+  "note": "I managed 40 people in Hyderabad. Here I drive Uber at night and my wife cries about the cold. Everyone says Canadian experience. I did this for my son's future but right now I feel like I've ruined our present",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and grieving the present",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "Seven days from being told your past does not count to remembering who you are, and what you gave, and what you still are.",
+   "week_beats": {
+    "hook": "You recognise being dismissed by those who should know your worth, and the grief of it, named without judgment.",
+    "steady": "You hold that the man who managed forty people is still the man who managed forty people.",
+    "act": "You try speaking the true thing about what you have given, and holding your ground on who you are.",
+    "story": "A man of standing who was diminished by those who could not see what he had built shows you how to stand in your own truth."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "partner",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A father who left a senior role to drive at night for his son's future feels he has lost the present and is being told his past does not count.",
+   "mirror": "You left a life to build a future, and now the present is cold and your past is being dismissed.",
+   "insight": "You did not ruin the present. The present is hard, and the past you left behind is not being seen for what it was. The dismissal is theirs, not your measure.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.581,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.562,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being told your past does not count by the people who ought to know what it took, and the grief of a present that feels smaller than the one you left.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; the man who managed forty people is still the man who managed forty people.",
+    "act": "Speak the true thing about what you have given, hold your ground on who you are, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A man of standing who was diminished by those who could not see what he had built, and who found his footing again in his own truth."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The past they dismiss",
+    "Who you are beyond the role",
+    "The father who gave the present"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "managed people in Hyderabad",
+    "now drives Uber at night in Canada",
+    "wife is cold and cries"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "seat:missing",
+    "week_fit:8=0.0,42=0.0,22=0.0,18=0.0,532=0.0,50=0.0",
+    "week_fit:swapped=6",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:blame=1,repeat=1,slang=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "diaspora_identity",
+       "label": "I don't feel fully at home anywhere"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.3516,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna is telling Arjuna that it is better to walk your own path, even if you stumble, than to walk someone else's perfectly. He is saying that the work that comes from your own nature, done honestly and offered up, is what matters. You are not wrong in doing it, even if it is not perfect.",
+     "for_you": "Your past work in Hyderabad was your own path, done honestly. The dismissal you feel now is a grief, not a measure of your worth. What you gave your family still counts, even if your partner does not see it."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.14.92.69",
+     "ref": "Mahabharata · Ashvamedhika Parva · Ashvamedhika",
+     "ref_iast": "Mahābhārata, Āśvamedhika Parva 92.69",
+     "family": "mbh",
+     "speaker": "Dharma (told by the mongoose)",
+     "listener": "The gleaner brahmin",
+     "setting": "A mongoose, half its body turned to gold, scoffs at Yudhishthira's grand sacrifice and tells of a poor family's gift.",
+     "sanskrit": "क्षुधा निर्णुदति प्रज्ञां धर्मबुद्धिं व्यपोहति / क्षुधापरिगतज्ञानो धृतिं त्यजति चैव ह",
+     "line": "Real need wears down judgement. Be gentle with yourself and others when money is tight.",
+     "translation": "Hunger drives out wisdom and pushes aside the sense of right; one overcome by hunger loses even his steadiness.",
+     "why": "A small gift, honestly earned and given from little, outweighs the grandest show.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "money_stress",
+       "label": "I'm stressed about money"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.mongoose",
+      "title": "The golden mongoose and the handful of flour",
+      "summary": "At the end of Yudhishthira's lavish horse sacrifice, a half-golden mongoose declares it worth less than a poor family's gift. In a famine, a gleaner, his wife, son and daughter-in-law each gave their last handful of flour to a hungry guest; rolling in the spilt flour turned half the mongoose to gold.",
+      "story_hook": "Half of the mongoose was gold, and it had come to see if the emperor's sacrifice could gild the other half.",
+      "lesson": "A small gift, honestly earned and given from little, outweighs the grandest show."
+     },
+     "score": 2.6951,
+     "beat": "diagnose",
+     "role_fit": 0.496,
+     "meaning": "A half-golden mongoose scoffs at Yudhishthira’s lavish horse sacrifice. It tells of a poor gleaner who, during a famine, gave his last handful of flour to a hungry guest. His family followed, giving their own last portions until they had nothing left. The mongoose rolled in their spilled flour and half its body turned to gold. The point is that real need wears down judgment. Be gentle with yourself and others when money is tight.",
+     "for_you": "Your hands are empty now, and that makes the mind sharp and unforgiving. The work you left behind is not the whole story. Be as gentle with your own past as you would be with that gleaner, who had nothing left to lose."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 2.8218,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Vidura tells the king that a wise person does not swell with praise or burn at a slight. This person stays deep and still, like a quiet river pool. They decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "for_you": "The man who managed forty people is still the man who managed forty people. The dismissal is theirs, not your measure."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.7",
+     "ref": "Bhagavad Gita 6.7",
+     "ref_iast": "Bhagavad Gītā 6.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः । शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥",
+     "line": "Self-mastered and calm, you stay centred in heat and cold, pleasure and pain, praise and insult.",
+     "translation": "For one who has conquered himself and is at peace, the higher self stays steady in cold and heat, pleasure and pain, honour and dishonour.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Staying steady under insult is not accepting mistreatment; you can stay calm and still speak up.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 2.8014,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": null,
+     "for_you": "The man who managed forty people in Hyderabad is still that man. Your past is not erased because your present is hard. Hold that truth in your chest when the night feels long."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 2.8313,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari wrote these verses for you, the reader, in a section about how to act when you want to help others. He says that the truly good are known by how they carry themselves. They cut off craving. They forgive. They give up arrogance and take no delight in wrong. They speak the truth. They follow the path of the good. They serve the wise, honour those worthy of honour, and win over even their enemies. They show courtesy, guard their good name, and are kind to those in pain.",
+     "for_you": "You have given a life to your children that you now question. Today, speak the true thing about what you have given, and hold your ground on who you are. Let the truth of your past stand, even if no one is listening."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.7773,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, telling him to keep his focus on the task itself rather than on what he will gain or lose. He says that a person has a right only to the action, never to its fruits, and that this should not become a reason to give up. The verse proposes that you do your work completely, but you do not own the result. It gently turns toward your life, where the work of driving through the night is yours alone.",
+     "for_you": "Your past in Hyderabad was the work, and your present in the car is the work. Both were done by you, in your own hands. Today, let the result of the ride belong to the night, and keep your hands on the wheel. The work is yours to do."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You do not have to leave the life you are living to change it. The work of the night and the weight of the morning are yours to do. Do them with a mind that does not clutch the past, or the present, or what others say it is worth."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The past they dismiss",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 175,
+   "llm": 5323,
+   "total": 21062,
+   "select": 15554
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying the weight of two cities right now. You managed people in Hyderabad. Now you drive through the night in Canada. Your wife is cold and she cries. You are grieving the present, and part of that grief is a heavy shame. You feel like you left a part of yourself behind."
+  ],
+  [
+   "scene",
+   "Arjuna is on the battlefield. He is in distress. He asks Krishna what is better, to fight or to give up everything. Krishna has been teaching him about duty. Now Krishna looks at Arjuna and says: And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna is telling Arjuna that it is better to walk your own path, even if you stumble, than to walk someone else's perfectly. The work that comes from your own nature, done honestly and offered up, is what matters. You are not wrong in doing it, even if it is not perfect. This is easier said than done, because you are comparing your night shift to the life you knew. The mind wants a perfect picture, but life is made of imperfect steps."
+  ],
+  [
+   "for_you",
+   "Your past work in Hyderabad was your own path, done honestly. The dismissal you feel now is a grief, not a measure of your worth. What you gave your family still counts, even if your partner does not see it. You are driving because you love them. That love is your nature."
+  ],
+  [
+   "close",
+   "The work you do tonight is yours. It is enough."
+  ]
+ ],
+ "depth": {
+  "life": "You are driving through the dark at night, and the silence in the car is heavy with the weight of what you left behind. You manage people in your mind, but here you are alone with the road and the grief of a past that feels invisible.",
+  "points": "The truth is that your own work, done honestly, is never wrong. Your past in Hyderabad was your own path, and it holds value even if it is not seen right now.",
+  "practice": "Name one thing you did well today in your own work, even if it was small, and let that be enough.",
+  "question": "What does your own work feel like when no one is watching?"
+ }
+}

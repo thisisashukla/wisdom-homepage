@@ -1,0 +1,515 @@
+{
+ "persona": {
+  "id": "in_genx_father_layoff",
+  "market": "India (Pune)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "49, IT services manager in Pune, 22 years in the same company, laid off last month. Daughter in 11th, home loan, aging mother.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "shocked and hiding it",
+   "bridge": "The ten-minute call that ended twenty-two years is what the Upanishads call the body that cannot be cut by a weapon: your worth was never in that call.",
+   "week_thesis": "Seven days from hiding the loss to naming it, with the footing to stand in what is yours beyond the role they took away.",
+   "week_beats": {
+    "hook": "You recognise being handed back ten minutes after twenty-two years, and the cost of hiding it.",
+    "act": "You try speaking the true thing to your mother, and holding your ground on what is yours.",
+    "story": "A woman of standing who was dismissed and stood in her truth shows you what rising again looks like."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "I lost my job",
+   "mirror": "You gave them twenty-two years, and they gave you back ten minutes.",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.92,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being let go after two decades and hiding the loss from the person you care for most, while your own body still believes the alarm. I lost my job.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing to your mother, gently and firmly; hold your ground on what is yours; do your own duty without shrinking to fit the picture they hold.",
+    "story": "A woman of standing, dismissed by the very place she served, who stood in her truth and found her footing again."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The ten minute call",
+    "Whose picture it is",
+    "More than the role they took"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "twenty two years in one company",
+    "was let go in a minute call",
+    "still wakes at every morning to go to the office"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "hook:anchored_to_situation",
+    "core_struggle_fallback",
+    "insight:template",
+    "week_fit:14=0.3,42=0.0,66=0.6,165=0.6,45=0.0,1=0.6",
+    "week_fit:swapped=3",
+    "redo:4",
+    "redo_fixed:3",
+    "dropped:cliche=1,not_second_person=1,repeat=1,soft_kept=1,verdict=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:open=not_second_person",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.0542,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna stands in his chariot between two armies and sees his own people. His limbs shake, his mouth dries, and his body trembles. He drops his bow and says he cannot fight. The Gita begins not with a warrior, but with a man undone by shock.",
+     "for_you": "You wake at the same hour. The body knows before the mind does. This trembling is not weakness. It is the honest weight of twenty-two years handed back in ten minutes."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.14.92.69",
+     "ref": "Mahabharata · Ashvamedhika Parva · Ashvamedhika",
+     "ref_iast": "Mahābhārata, Āśvamedhika Parva 92.69",
+     "family": "mbh",
+     "speaker": "Dharma (told by the mongoose)",
+     "listener": "The gleaner brahmin",
+     "setting": "A mongoose, half its body turned to gold, scoffs at Yudhishthira's grand sacrifice and tells of a poor family's gift.",
+     "sanskrit": "क्षुधा निर्णुदति प्रज्ञां धर्मबुद्धिं व्यपोहति / क्षुधापरिगतज्ञानो धृतिं त्यजति चैव ह",
+     "line": "Real need wears down judgement. Be gentle with yourself and others when money is tight.",
+     "translation": "Hunger drives out wisdom and pushes aside the sense of right; one overcome by hunger loses even his steadiness.",
+     "why": "A small gift, honestly earned and given from little, outweighs the grandest show.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "money_stress",
+       "label": "I'm stressed about money"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.mongoose",
+      "title": "The golden mongoose and the handful of flour",
+      "summary": "At the end of Yudhishthira's lavish horse sacrifice, a half-golden mongoose declares it worth less than a poor family's gift. In a famine, a gleaner, his wife, son and daughter-in-law each gave their last handful of flour to a hungry guest; rolling in the spilt flour turned half the mongoose to gold.",
+      "story_hook": "Half of the mongoose was gold, and it had come to see if the emperor's sacrifice could gild the other half.",
+      "lesson": "A small gift, honestly earned and given from little, outweighs the grandest show."
+     },
+     "score": 2.726,
+     "beat": "diagnose",
+     "role_fit": 0.496,
+     "meaning": "A golden mongoose, half its body turned to gold, scoffs at Yudhishthira's lavish horse sacrifice. It tells of a poor family, starving in a famine, who gave their last handful of flour to a hungry guest. The mongoose rolled in the spilt flour, and that honest, desperate act turned half its body to gold. The mongoose says real need wears down judgement. Hunger drives out wisdom and pushes aside the sense of right. One overcome by hunger loses even his steadiness.",
+     "for_you": "You are keeping this job loss from your family because you think it makes you look steady. But your body is already shaking with the fear of what comes next. Your need for security is not a weakness. It is the weight of the role you carried for twenty-two years."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.66",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 66",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on the good.",
+     "sanskrit": "सम्पत्सु महतां चित्तं भवत्युत्पलकोमलम् । आपत्सु च महाशैलशिलासङ्घातकर्कशम् ॥",
+     "line": "In good times be soft as a lotus. In hard times be firm as mountain rock.",
+     "translation": "In prosperity the heart of the great becomes soft as a lotus; in adversity, hard as a mass of mountain rock.",
+     "why": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.sujana",
+      "title": "Nitishatakam: On the good",
+      "summary": "Portraits of good people: steady in trouble, humble in success, giving in secret and speaking of others' kindness aloud. Company, the verses say, makes us what we are.",
+      "story_hook": "",
+      "lesson": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet."
+     },
+     "score": 2.9518,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Bhartrihari is looking at the reader, laying out what a good life looks like. In good times, the heart of the great becomes soft as a lotus. In hard times, it becomes hard as a mass of mountain rock. The point is to be soft when things are easy and firm when they are not. Let your good deeds stay quiet and steady, like a mountain that does not move when the wind blows.",
+     "for_you": "The morning routine is still there, even if the office is not. Let that small act of getting up be your mountain rock. Be firm with yourself today. You do not need to explain the call to anyone. Just let your own quiet strength hold the day."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.165",
+     "ref": "Maha Upanishad 4.17",
+     "ref_iast": "Mahā Upaniṣad 4.17",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on people of steady goodness.",
+     "sanskrit": "नापदि ग्लानिमायान्ति निशि हेमाम्बुजं यथा । नेहन्ते प्रकृतादन्यद्रमन्ते शिष्टवर्त्मनि ॥",
+     "line": "Good people do not wilt in hard times, like a golden lotus that stays open at night.",
+     "translation": "In adversity they do not wilt, as the golden lotus does not close at night. They want nothing beyond what is at hand and delight in the path of the good.",
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 2.869,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ribhu tells Nidagha that true goodness is not a mood that closes up when darkness comes. The golden lotus does not shut its petals in the night. It stays open in the dark. This does not mean a good person feels no loss. It means their worth is not something that can be cut by a weapon. The body is like that lotus. It cannot be harmed by the call that ended twenty-two years. The worth was never in the job.",
+     "for_you": "The morning routine you still follow is your mountain rock. You do not have to believe the call was fair to let the routine hold you. Let the work you do at home and the care you give be enough for today. Your worth is not in the title they took away."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.2246,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat, who is shattered by his father's death and Ram's exile, telling him to keep courage in his heart and do what this moment asks. Bharat listens, rises, and prepares to go to the forest to face his brother and admit his fault, choosing duty over the crown.",
+     "for_you": "You wake each morning and walk to the office. The building is empty. Let that be the place where you speak the true thing to your mother. Tell her what you are carrying. Hold your ground on what is yours beyond the role they took away."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.0175,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again. Vidula tells her son, Sanjaya, not to hold himself in contempt, and not to settle for little. She tells him to set his mind on what is truly good, and to stop fearing. She tells him to pull himself together. The point is that past failure does not define you. Results are uncertain, but those who never try never succeed.",
+     "for_you": "You have been hiding this loss for six days. Today, say the true thing to your mother. Then hold your ground on what is yours, beyond the title they took away."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.exile_order",
+     "title": "Ram hears he is to be exiled",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharath"
+     ],
+     "story_hook": "Ram walked in expecting a crown and walked out with a forest.",
+     "summary": "Ram is called to his father's room and finds him collapsed. Kaikeyi tells him the terms. Ram smiles: his brother gets the throne, he gets to meet sages in the forest, and he can keep his father's word. Kaikeyi reads his plain words as cunning, and Ram walks out feeling, the poet says, like an elephant freed from its post.",
+     "lesson": "A lost role can be met with grace; sometimes it even feels like freedom.",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.2.42.chaupai.1",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 42",
+      "family": "rcm",
+      "speaker": "Ram",
+      "listener": "Kaikeyi",
+      "setting": "Ram, told by Kaikeyi that Bharat will be crowned and he exiled, answers her calmly.",
+      "sanskrit": "भरतु प्रानप्रिय पावहिं राजू। बिधि सब बिधि मोहि सनमुख आजू॥ जौं न जाउँ बन ऐसेहु काजा। प्रथम गनिअ मोहि मूढ़ समाजा ॥",
+      "line": "My beloved brother gets the throne. Fate is favouring me in every way today.",
+      "translation": "...and Bharat, dear to me as life, will have the kingdom. Fate is favouring me in every way today. If I would not go to the forest even for such a cause, count me first among fools.",
+      "why": "A lost role can be met with grace; sometimes it even feels like freedom.",
+      "misuse": "Grace in loss is not pretending it doesn't hurt.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.exile_order",
+       "title": "Ram hears he is to be exiled",
+       "summary": "Ram is called to his father's room and finds him collapsed. Kaikeyi tells him the terms. Ram smiles: his brother gets the throne, he gets to meet sages in the forest, and he can keep his father's word. Kaikeyi reads his plain words as cunning, and Ram walks out feeling, the poet says, like an elephant freed from its post.",
+       "story_hook": "Ram walked in expecting a crown and walked out with a forest.",
+       "lesson": "A lost role can be met with grace; sometimes it even feels like freedom."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram walked in expecting a crown and walked out with a forest",
+     "teaser": "Ram walked in expecting a crown and walked out with a forest",
+     "for_you": "Ram walked in expecting a crown and walked out with a forest. That is the shape of your own room this morning, the one where the ten-minute call ended twenty-two years. A lost role can be met with grace. Sometimes it even feels like freedom."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The ten minute call",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 137,
+   "llm": 4643,
+   "total": 13145,
+   "select": 8356
+  }
+ },
+ "script": [
+  [
+   "scene",
+   "Arjuna stands in his chariot between two armies. He looks down the field and sees his own kin standing on the other side. His limbs give way. His mouth goes dry. His body trembles and his hair stands on end. He drops his bow and sits down in the chariot. He tells Krishna he cannot fight. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "सीदन्ति मम गात्राणि मुखं च परिशुष्यति, वेपथुश्च शरीरे मे रोमहर्षश्च जायते. गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते, न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः."
+  ],
+  [
+   "line",
+   "In plain words: Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero."
+  ],
+  [
+   "unpack",
+   "The strongest people freeze. The teaching does not start with a hero. It starts with a breakdown. Your worth was never in the call that ended twenty-two years. It was never in the title. It was in the morning you woke up and did the work. That part of you is still there, even if the desk is not. The fear is loud because the loss is new."
+  ],
+  [
+   "for_you",
+   "When you wake tomorrow and the alarm goes off, do not fight the empty feeling. Let the body sit with the truth that the work is gone. The morning is yours. The day is yours. You do not have to name it to anyone yet. Just let the trembling be. It is only the old structure coming down."
+  ],
+  [
+   "close",
+   "The bow was only wood. What is left in your hands is not."
+  ]
+ ],
+ "depth": {
+  "life": "You wake at the same hour, but the office is not waiting for you. The body knows before the mind does. This trembling is not weakness. It is the honest weight of twenty-two years handed back in ten minutes.",
+  "points": "Even the strongest people freeze. The Gita begins with a breakdown, not a hero. Your worth was never in that call or the title they took away. The teaching starts in the trembling.",
+  "practice": "Feel the dry mouth and the shaking limbs without pushing them away. Let the body finish its own story.",
+  "question": "What would it feel like to let the body finish its own story?"
+ }
+}

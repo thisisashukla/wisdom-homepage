@@ -1,0 +1,519 @@
+{
+ "persona": {
+  "id": "in_genx_father_layoff",
+  "market": "India (Pune)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "49, IT services manager in Pune, 22 years in the same company, laid off last month. Daughter in 11th, home loan, aging mother.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "shocked and hiding it",
+   "bridge": "The ten-minute call that ended twenty-two years is what the Gita calls a result that was never in your hands. The dignity they took is theirs, not yours.",
+   "week_thesis": "Seven days from being let go in a ten-minute call to finding the footing that was never in their hands and the truth you can tell your mother.",
+   "week_beats": {
+    "hook": "You recognise the shock and the hiding, named without judgement."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.85,
+   "core_struggle": "After twenty two years, was let go in a ten-minute call and is hiding it from his mother while his body still wakes for the office.",
+   "mirror": "You gave them twenty-two years and got a ten-minute call. Your body still wakes for the office, and your mother still believes you are going.",
+   "insight": "The job is gone, and the alarm still rings at six. The only thing that hasn't ended is the silence you are keeping from your mother.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.775,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being let go after two decades, the shock of it, and the quiet shame of hiding it from the one person you care for most. I lost my job.",
+    "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth.",
+    "steady": "A failure is something that happened, not who you are; no one who tries to do good is ever lost.",
+    "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again.",
+    "story": "A man who gave his prime to one company, was let go without warning, and had to rebuild from the ground up, facing his own family and his own doubt."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The verdict you keep passing",
+    "The ground beneath you",
+    "More than what you built"
+   ],
+   "seat": "a long-tenured employee who was dismissed without warning",
+   "life_context": "",
+   "details": [
+    "twenty two years at one company",
+    "was let go in a ten minute call",
+    "still wakes at six as if going to office"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "hook:anchored_to_situation",
+    "mirror:lenient",
+    "week_fit:5=0.3,46=0.3,165=0.6,85=0.6,7=1.0,16=1.0",
+    "week_fit:swapped=2",
+    "redo:4",
+    "redo_fixed:0",
+    "day1:third_try",
+    "dropped:invented=1,not_second_person=1,repeat=2,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.14",
+     "ref": "Bhagavad Gita 2.14",
+     "ref_iast": "Bhagavad Gītā 2.14",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥",
+     "line": "Heat and cold, pleasure and pain come and go. They don't last; learn to bear them.",
+     "translation": "Contact of the senses with their objects brings cold and heat, pleasure and pain. They come and go and do not last. Bear them patiently, Arjuna.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Bearing passing discomfort is not putting up with harm or abuse; those are not weather to wait out.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 1.8498,
+     "beat": "hook",
+     "role_fit": 0.26,
+     "meaning": "Krishna speaks to Arjuna after Arjuna has collapsed in grief on the battlefield, unable to lift his bow against his own kin. The moment is raw and heavy, with a whole army waiting and the future of a kingdom hanging on a single choice. Krishna does not rush past the tears. He looks at what is passing through Arjuna and names it for what it is. He says that contact with the senses brings cold and heat, pleasure and pain, and they come and go and do not last.",
+     "for_you": "The alarm at six is a wave of pain that has not yet passed. It is real, and it will pass. Your own life, the one that is still here, is the ground beneath the alarm. Let it hold you today."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_maitrayani.86",
+     "ref": "Maitri Upanishad 6.34",
+     "ref_iast": "Maitrī Upaniṣad 6.34",
+     "family": "up",
+     "speaker": "Shakayanya",
+     "listener": "King Brihadratha",
+     "setting": "Verses on the mind, concluded.",
+     "sanskrit": "मन एव मनुष्याणां कारणं बन्धमोक्षयोः । बन्धाय विषयासक्तं मुक्त्यै निर्विषयं स्मृतमिति ॥",
+     "line": "The mind alone binds or frees us: hooked on things, it binds; free of them, it liberates.",
+     "translation": "The mind alone is the cause of bondage and of liberation for human beings: attached to objects, it binds; free of objects, it liberates.",
+     "why": "Tend your mind; it decides whether you feel trapped or free.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maitrayani.mind",
+      "title": "The mind is your world",
+      "summary": "The sage's verses on the mind: it is the world we live in, we become what it dwells on, and it alone binds or frees us depending on what it clings to.",
+      "story_hook": "",
+      "lesson": "Tend your mind; it decides whether you feel trapped or free."
+     },
+     "score": 3.0567,
+     "beat": "diagnose",
+     "role_fit": 0.84,
+     "meaning": "Shakayanya speaks to King Brihadratha. The sage has finished speaking about the mind. The king listens. Shakayanya says the mind alone is the cause of bondage and of liberation for human beings. Attached to objects, it binds. Free of objects, it liberates. The mind is your world. It is the world we live in, we become what it dwells on, and it alone binds or frees us depending on what it clings to.",
+     "for_you": "Your mind is still holding the office chair. It binds you to the memory of those twenty-two years. Let your mind rest from the objects it clings to, and it can begin to liberate you."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.165",
+     "ref": "Maha Upanishad 4.17",
+     "ref_iast": "Mahā Upaniṣad 4.17",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on people of steady goodness.",
+     "sanskrit": "नापदि ग्लानिमायान्ति निशि हेमाम्बुजं यथा । नेहन्ते प्रकृतादन्यद्रमन्ते शिष्टवर्त्मनि ॥",
+     "line": "Good people do not wilt in hard times, like a golden lotus that stays open at night.",
+     "translation": "In adversity they do not wilt, as the golden lotus does not close at night. They want nothing beyond what is at hand and delight in the path of the good.",
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 3.6382,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": null,
+     "for_you": "The alarm at six is a habit of the mind that has not yet found its footing. Let this morning hold the quiet of a closed lotus. You do not need to fill the silence with worry about what comes next."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.5639,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari offers this to the reader as a quiet truth about how life moves. He speaks from a place of steady observation, noting that a ball knocked down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last. It is a statement about the nature of things, not a promise of quick relief. The idea is that a blow to the body or the fortune does not define the whole of a life.",
+     "for_you": "The morning still wakes you at six. That is a body used to a rhythm, not a sign that the loss is not real. Let the alarm ring and the body remember. The ten-minute call did its part. Now the day is here, and it does not ask you to be fixed."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.0819,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying on the ground, defeated and despairing after losing his kingdom. She tells him not to think less of himself or settle for little. She says to set his mind on what is truly good and to stop fearing. She pulls him together and asks him to rise and fight for his kingdom again. She means that past failure does not define who you are. Results are uncertain, but those who never try never succeed.",
+     "for_you": "The silence you keep from your mother is a kingdom you have lost. It is not your fault, and it does not define you. Set your mind on what is truly good for you now, and stop fearing what comes next. Rise and take one small, concrete step today."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.55.16",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 55.16",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on his bed of arrows begins teaching Yudhishthira how to lead.",
+     "sanskrit": "विपन्ने च समारम्भे सन्तापं मा स्म वै कृथाः / घटेतैवं सदाऽऽत्मानं राज्ञामेष परो नयः",
+     "line": "When something you started fails, don't torment yourself. Gather yourself and apply yourself again.",
+     "translation": "If an undertaking fails, do not torment yourself over it. Keep applying yourself again and again; this is the highest rule for those who lead.",
+     "why": null,
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": null,
+     "score": 2.7995,
+     "beat": "act",
+     "role_fit": 0.361,
+     "meaning": "Bhishma, lying on his bed of arrows, speaks to Yudhishthira about the weight of command. He tells the young king that when a project or plan fails, the first instinct is often to punish oneself with endless guilt. He says this is a mistake. The failure is not a verdict on their worth. The only true rule for a leader is to gather what remains of themselves and begin applying their effort again, without the self-inflicted torment.",
+     "for_you": "The twenty-two years are over, and the silence is heavy. Today, do one small thing to apply yourself again. Make the coffee in the morning without the rush of the office, and let the warmth of the cup be the first sign that you are still moving forward."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.ram_accepts_exile",
+     "title": "Ram accepts exile",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharatha",
+      "Lakshman"
+     ],
+     "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+     "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+     "lesson": "You cannot control the news; you can control the person who walks out of the room.",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.19.32",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.32",
+      "family": "vr",
+      "speaker": "Narrator",
+      "listener": "",
+      "setting": "Ram walks out of the palace, having lost the throne he was to receive that morning.",
+      "sanskrit": "न वनं गन्तुकामस्य त्यजतश्च वसुंधराम्। सर्वलोकातिगस्येव लक्ष्यते चित्तविक्रिया॥",
+      "line": "He had just lost the kingdom, and his mind showed no change at all.",
+      "translation": "As he set out for the forest and gave up the earth, no change could be seen in his mind, as if he stood beyond the world.",
+      "why": "You cannot control the news; you can control the person who walks out of the room.",
+      "misuse": "Calm in loss is not pretending it does not hurt; Ram grieves elsewhere in the story.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.ram_accepts_exile",
+       "title": "Ram accepts exile",
+       "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+       "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+       "lesson": "You cannot control the news; you can control the person who walks out of the room."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram went to be crowned and came out exiled for fourteen years",
+     "teaser": "Ram went to be crowned and came out exiled for fourteen years",
+     "for_you": "The job is gone, and the alarm still rings at six. The only thing that hasn't ended is the silence you are keeping from your mother. You can walk out of that ten-minute call with your mind still your own, not broken by the news, but steady enough to hold your family."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The verdict you keep passing",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 248,
+   "llm": 4242,
+   "total": 15505,
+   "select": 11007
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The alarm is ringing again, and your body is already moving toward a door that no longer opens. Twenty-two years of loyalty, and a ten-minute call took it all. You are hiding this, and the silence is a heavy room."
+  ],
+  [
+   "scene",
+   "Arjuna has laid down his bow, grief-stricken on the battlefield, surrounded by kin he cannot fight. Krishna looks at him, not with anger, but with steady truth, and says:"
+  ],
+  [
+   "sanskrit",
+   "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः, आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत."
+  ],
+  [
+   "line",
+   "In plain words: Heat and cold, pleasure and pain come and go. They don't last; learn to bear them."
+  ],
+  [
+   "unpack",
+   "Krishna is naming what is passing through Arjuna. The contact of the senses with the world brings heat and cold, pleasure and pain. They come and go, like weather. What you truly are is not these waves. This is hard to bear, because the alarm still rings, and the body does not know the loss is real. But the dignity they took is theirs, not yours."
+  ],
+  [
+   "for_you",
+   "Let the alarm ring. Let the body feel the loss. The work is gone, but you are not gone. Let your own life, the one that is still here, hold you for a moment before the day begins."
+  ],
+  [
+   "close",
+   "What is passing through you is not the whole of you."
+  ]
+ ],
+ "depth": {
+  "life": "Your body still wakes at six for a life that no longer exists. You hide the dismissal from your mother. The silence between you is heavy, and the morning feels like a betrayal of the ground you stand on.",
+  "points": "What you are experiencing is the contact of your senses with a loss that was never yours to control. The grief and the shock are real, but they are weather passing over the self that remains. That ground is your own, and it has not left you.",
+  "practice": "When the alarm rings, do not rise for the office. Sit with the feeling for two minutes. Let the body feel the cold of the room and the heat of the shock. Let them pass without moving.",
+  "question": "What would it feel like to let the alarm ring and not move?"
+ }
+}

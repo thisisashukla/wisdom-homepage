@@ -1,0 +1,519 @@
+{
+ "persona": {
+  "id": "au_genx_divorce",
+  "market": "Australia (Melbourne)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "44, dentist in Melbourne, from Chandigarh originally, separated 6 months ago, kids with ex 4 days a week. Parents in India don't know yet.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "quietly lonely and avoiding the silence",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "Seven days from filling the silence with noise to letting the grief have a place, and finding the footing to hold what is real.",
+   "week_beats": {
+    "hook": "You recognise the quiet house and the love that has nowhere to go, named without judgement.",
+    "steady": "You hold that what is real in you cannot be lost, and the love you feel is a truth, not a wound.",
+    "act": "You try giving the grief a place: one honest word spoken, or one quiet minute where the TV stays off."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "partner",
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A mother separated from her partner, who sees her children only three nights a week and fills the quiet house with noise to avoid the silence, while her parents remain unaware.",
+   "mirror": "You see your children three nights a week, and when they leave the house goes quiet and you turn the TV on.",
+   "insight": "It isn't the separation that keeps you awake. It's the love for what is gone that has nowhere to go, and the fear that your parents would see it as a failure.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.515,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.87,
+     "source": "note"
+    },
+    {
+     "id": "breakup",
+     "label": "I'm heartbroken after a breakup",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet of a house after the children leave, and the love for what is gone that has nowhere to go, and the fear of who will see it.",
+    "diagnose": "Grief is love with nowhere to go; when what is real is lost, the heart aches not for the absence but for the bond that was real.",
+    "steady": "What is real in us cannot be lost; the love you feel is not a wound but a truth that was real.",
+    "act": "Give the grief a place to go; speak the true thing to one person you trust, even if it is only the quiet, and let the love live where it belongs.",
+    "story": "A woman who lost what she loved most, and had to learn how to live with the love that remained."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The love that remains",
+    "Giving grief a place",
+    "Standing in what is real"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "separated six months ago",
+    "sees children three nights a week",
+    "has not told parents in Chandigarh",
+    "leaves the TV on to fill the quiet nights"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "seat:missing",
+    "week_fit:8=0.3,40=0.6,26=0.6,61=0.6,24=0.3,15=0.3",
+    "week_fit:swapped=3",
+    "retried:3",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:open=cliche",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.22",
+     "ref": "Bhagavad Gita 2.22",
+     "ref_iast": "Bhagavad Gītā 2.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "वासांसि जीर्णानि यथा विहायनवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥",
+     "line": "As we drop worn-out clothes and put on new ones, the self leaves a worn body for a new one.",
+     "translation": "Just as a person casts off worn-out clothes and puts on new ones, so the embodied self casts off worn-out bodies and enters others that are new.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a way to brush off someone else's grief with 'they've just changed clothes'.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 1.9918,
+     "beat": "hook",
+     "role_fit": 0.06,
+     "meaning": "Krishna is speaking to Arjuna, who is weeping on the battlefield, believing he is causing the death of his own kin. Krishna tells him that what is truly in us is never born and never dies. He says that just as a person casts off worn-out clothes and puts on new ones, so the embodied self casts off worn-out bodies and enters others that are new. The truth underneath is that what you truly are outlasts every loss and every passing pain.",
+     "for_you": "The house is quiet after the children leave. You turn on the television to fill that space."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.1585,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma tells King Janaka that as we drop worn-out clothes and put on new ones, the self leaves a worn body for a new one. This is not a dismissal of grief, but a way to steady the mind. Days do not come back, so we must grieve, then steady ourselves with the people still in front of us, holding to who we are at the core.",
+     "for_you": "You are in a new body of life, one that you did not choose. The children are still here, and so are you. Grieve what the television noise is covering up. Then steady your hands on the people who are present, and let the quiet have a place to sit with you."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 3.133,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": "Rahim speaks to the reader from a place of deep familiarity, saying that the one who has made a home inside your heart already knows your joys and sorrows. Nothing needs explaining. The verse proposes that the love you feel is a truth that already lives inside you. It asks you to trust that this love is not a wound to hide, but a steady presence you can hold onto while the pain is loud.",
+     "for_you": "The quiet house is full of noise because you are trying to explain a love that your parents cannot see yet. Let the television fill the room, but know that the love you feel is already known and safe inside you. You do not need to justify it to the silence."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.338.13",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.13",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "The sage Narada comforts the young Shuka with a teaching on grief and contentment.",
+     "sanskrit": "प्रज्ञया मानसं दुःखं हन्याच्छारीरमौषधैः / एतद्विज्ञानमसामर्थ्यं न बालैः समतामियात्",
+     "line": "Treat the body's pain with medicine and the mind's pain with understanding. Both deserve care.",
+     "translation": "Heal the pain of the mind with wisdom and the pain of the body with medicine. That is what knowledge can do; don't behave like a child about it.",
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "Understanding helps, but mental health care is medicine too; this is not advice to skip treatment.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 3.0159,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "The sage Narada visits the young Shuka, who is grieving. He tells him that just as you would give medicine to a body in pain, you could offer understanding to a mind that hurts. Shuka learns that sitting with sorrow and brooding only makes it grow. True care means treating the mind with wisdom, not ignoring it or letting it fester. This is the real knowledge for anyone who carries a heavy heart.",
+     "for_you": "The television fills the quiet house, but the noise does not reach the part of you that misses them. You are not a child for feeling this. Let the grief have a place in the silence, and treat your mind with the same care you would give your body."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.3.72.7",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 72.7",
+     "family": "vr",
+     "speaker": "Kabandha",
+     "listener": "Ram",
+     "setting": "Ram is lost and grieving; Kabandha tells him to seek Sugriva, who has also lost his wife and home.",
+     "sanskrit": "तदवश्यं त्वया कार्यः स सुहृत् सुहृदां वर। अकृत्वा नहि ते सिद्धिमहं पश्यामि चिन्तयन् ॥",
+     "line": "Find a friend who knows your kind of trouble. You won't get through this alone.",
+     "translation": "You must make him your friend, best of friends. Thinking it over, I see no success for you without it.",
+     "why": "When you are lost, look for someone who has been through the same thing.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kabandha",
+      "title": "Kabandha: find a friend who understands",
+      "summary": "Freed from a curse, the creature Kabandha tells the grieving brothers to seek out Sugriva, an exile who has also lost his wife and home. Only a friend in the same trouble, he says, can help them now.",
+      "story_hook": "Rising from his own funeral pyre, the strange creature gave the brothers one piece of advice.",
+      "lesson": "When you are lost, look for someone who has been through the same thing."
+     },
+     "score": 2.8063,
+     "beat": "act",
+     "role_fit": 0.435,
+     "meaning": "Ram is wandering through the forest, lost and grieving after his wife is taken. The creature Kabandha tells him to seek out Sugriva, a king who has also lost his wife and his home to exile. Kabandha says no one can succeed without making him a true friend. The verse proposes that when you are lost, you could look for someone who has been through the same kind of trouble. You do not have to carry this alone.",
+     "for_you": "The TV fills the room so you do not have to sit with the quiet. It is a way to keep the grief from touching the walls. Today, try turning it off for one minute when the children are asleep. Let the silence be there. Let the missing be real for a moment."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.39.51",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 39.51",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "कृतज्ञं धार्मिकं सत्यमक्षुद्रं दृढभक्तिकम् / जितेन्द्रियं स्थितं स्थित्यां मित्रमित्यभिवाञ्छति",
+     "line": "Everyone wants a friend who is grateful, honest, generous, loyal and steady. Be that friend.",
+     "translation": "Everyone wants as a friend someone grateful, principled, truthful, big-hearted, loyal, self-controlled and steady.",
+     "why": "Speak at the right time, weigh gain against cost, and repeat what is good until it becomes you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.39",
+      "title": "Vidura Niti: timing, gain and loss",
+      "summary": "Vidura teaches that good words land only at the right moment, that some gains are losses, that habits shape a person, and what people look for in a friend.",
+      "story_hook": "",
+      "lesson": "Speak at the right time, weigh gain against cost, and repeat what is good until it becomes you."
+     },
+     "score": 2.6188,
+     "beat": "act",
+     "role_fit": 0.636,
+     "meaning": "Vidura is speaking to King Dhritarashtra, who cannot sleep because his mind is tangled with worry for his sons. Vidura tells him that everyone wants a friend who is grateful, principled, truthful, big-hearted, loyal, self-controlled and steady. He is saying that you become the kind of friend you wish to have by speaking at the right time, weighing what you gain against what you lose, and repeating good words until they become who you are.",
+     "for_you": "You are trying to be the steady one for your children right now. Let one small word today be the truth you have been holding back. Speak it to your own reflection in the quiet, or write it down where no one else must see."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "Two old friends meet again and admit they never found peace. You are not the only one who has spent years running through tasks to keep the silence at bay. Your children are here three nights a week, and you are there. But the noise of the house is not the same as being present."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The love that remains",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 149,
+   "llm": 4753,
+   "total": 16273,
+   "select": 11364
+  }
+ },
+ "script": [
+  [
+   "scene",
+   "Arjuna is weeping on the battlefield. He is grieving the death of his kin and believes he is responsible for it. Krishna stands beside him. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "वासांसि जीर्णानि यथा विहायनवानि गृह्णाति नरोऽपराणि, तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही."
+  ],
+  [
+   "line",
+   "In plain words: As we drop worn-out clothes and put on new ones, the self leaves a worn body for a new one."
+  ],
+  [
+   "unpack",
+   "Krishna tells Arjuna that what is truly in us is never born and never dies. A person casts off worn-out clothes and puts on new ones. The embodied self casts off worn-out bodies and enters others that are new. What you truly are outlasts every loss and every passing pain. This is easier said than done, because the body you have known is the one you are grieving. The clothes are not just a covering. They are the life you shared."
+  ],
+  [
+   "for_you",
+   "When the television is on and the house is quiet, you are not just filling space. You are trying to keep the grief from touching you. Let the noise be there. But let the quiet be there too. You do not have to turn away from the loss to be safe."
+  ],
+  [
+   "close",
+   "The clothes are worn out. You are not."
+  ]
+ ],
+ "depth": {
+  "life": "You are home but the television is on. The children are with their father until tomorrow evening. You are not watching it. The sound keeps the room from becoming empty. You are sitting in the quiet with a grief that has nowhere to go.",
+  "points": "You are not the clothes you wear. The body and the life around it change, but the self that loves is never born and never dies. The love you feel for what is gone is real, and it is larger than the loss itself.",
+  "practice": "Turn the television off. Sit in the quiet for five minutes. Do not try to fill it.",
+  "question": "What would happen if you let the silence sit with you for just one minute?"
+ }
+}

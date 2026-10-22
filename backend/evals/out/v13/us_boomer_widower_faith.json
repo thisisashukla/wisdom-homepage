@@ -1,0 +1,536 @@
+{
+ "persona": {
+  "id": "us_boomer_widower_faith",
+  "market": "USA (California)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "71, retired engineer in Fremont, came to the US in 1979. Wife passed last year. Goes to the temple, volunteers. Grandkids don't speak much Hindi.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "someone_lost"
+  },
+  "note": "Lost my wife of 44 years in March. I do the temple seva, I keep busy. But the evenings. I want to understand what the Gita actually says about where she is now, not what people tell me to make me feel better.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and searching for meaning",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "The search for where she is now becomes, over seven days, a search for what is real in us that cannot be lost.",
+   "week_beats": {
+    "hook": "You recognise the search as a search for truth, not for comfort, and that is a different kind of reading.",
+    "diagnose": "You see that the question is not about her location but about what is real in us that cannot be lost.",
+    "steady": "You hold that the self is not born and does not die, and that is the ground beneath the search.",
+    "act": "You try reading the teaching on the eternal self as it is, without turning it into a story about where she went.",
+    "story": "A seeker who lost his beloved and was told by the sages that what is real in us was never born and will never die."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "family",
+    "partner"
+   ],
+   "confidence": 0.9,
+   "core_struggle": "A retired man grieving his wife of years, who keeps busy with seva but is searching the Gita for where she is now.",
+   "mirror": "You do the seva, and the temple is full, but the evenings are where you search.",
+   "insight": "You are not looking for comfort to be given to you. You are looking for a teaching that holds the truth of what you have lost, and that is a different kind of search.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 2.428,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.86,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.745,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 0.48,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "A search for where she is now, and what the Gita says about the one you lost, beyond the words people offer to make it easier.",
+    "diagnose": "The search is for what does not pass, for what is real in us that cannot be lost; meaning is missing when we forget what does not pass.",
+    "steady": "The self is not born and does not die; it is eternal, indestructible, and unborn.",
+    "act": "Read the teaching on the eternal self as it is, without turning it into a story about where she went.",
+    "story": "A seeker who lost his beloved and asked the sages where she was, and was told that what is real in us was never born and will never die."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Where she is now",
+    "What is real in us",
+    "The self that does not die"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "does temple seva and keeps busy",
+    "finds the evenings hardest"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:seeking_over_pain",
+    "seat:missing",
+    "week_fit:22=0.6,40=0.6,22=0.6,9=0.6,29=0.6,22=0.3",
+    "week_fit:swapped=1",
+    "retried:1",
+    "dropped:fallback_line=1,missing=2",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.22",
+     "ref": "Bhagavad Gita 2.22",
+     "ref_iast": "Bhagavad Gītā 2.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "वासांसि जीर्णानि यथा विहायनवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥",
+     "line": "As we drop worn-out clothes and put on new ones, the self leaves a worn body for a new one.",
+     "translation": "Just as a person casts off worn-out clothes and puts on new ones, so the embodied self casts off worn-out bodies and enters others that are new.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a way to brush off someone else's grief with 'they've just changed clothes'.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.527,
+     "beat": "hook",
+     "role_fit": 0.06,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, just after Arjuna has laid down his bow and declared he will not fight. He is grieving the men he must kill, and he is lost. Krishna tells him that what we truly are is never born, and it never dies. He says we cast off worn-out clothes and put on new ones, and in the same way, the self leaves a worn body and enters another. What we truly are outlasts every loss and every passing pain.",
+     "for_you": "You are searching for where she is now, and you are finding that this is a search for truth, not for comfort. You keep busy with seva, but the evenings are hardest because the mind is looking for what it cannot find in the world."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.1161,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": null,
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.1.2.22",
+     "ref": "Katha Upanishad 1.2.22",
+     "ref_iast": "Kaṭha Upaniṣad 1.2.22",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the self within changing bodies.",
+     "sanskrit": "अशरीरँ शरीरेष्वनवस्थेष्ववस्थितम् । महान्तं विभुमात्मानं मत्वा धीरो न शोचति ॥",
+     "line": "Knowing what stays steady inside all that changes, the wise do not grieve.",
+     "translation": "Knowing the self as bodiless within bodies, steady among the unsteady, great and all-pervading, the wise one does not grieve.",
+     "why": "What you most are cannot be lost, and a quiet, honest life is how you find it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.deathless_self",
+      "title": "Yama on what does not die",
+      "summary": "Death himself explains that the true self is never born and never dies, and is not killed when the body is. It is found not by cleverness or study but by a calm, honest life.",
+      "story_hook": "",
+      "lesson": "What you most are cannot be lost, and a quiet, honest life is how you find it."
+     },
+     "score": 2.8806,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Yama, the lord of death, speaks to Nachiketa. He tells him that the true self is not born and does not die. It is bodiless within bodies, steady among the unsteady, great and all-pervading. The wise one does not grieve, because what they most are cannot be lost. This is the ground beneath your search.",
+     "for_you": "In the evenings when the quiet is hardest, sit with the thought that what you most are cannot be lost, and let that be the steady ground you hold onto."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.9",
+     "ref": "Ashtavakra Gita 15.9",
+     "ref_iast": "Aṣṭāvakra Gītā 15.9",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "गुणैः संवेष्टितो देहस्तिष्ठत्यायाति याति च । आत्मा न गन्ता नागन्ता किमेनमनुशोचसि ॥",
+     "line": "The body comes and goes; what you truly are does not. Why grieve so?",
+     "translation": "The body, made of nature's qualities, comes, stays and goes. The Self neither comes nor goes. Why grieve for it?",
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "Grief is natural; this offers perspective, not a rule against mourning.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.7041,
+     "beat": "steady",
+     "role_fit": 0.494,
+     "meaning": "Ashtavakra speaks to Janaka. He points out that the body is born of nature, it appears, it stays for a time, and then it goes. The Self, the true awareness inside, does not come and it does not go. It is always there. Why then should you grieve for it? He is telling Janaka that he is not the changing body or the mind's passing thoughts, but the steady ocean in which all of life's waves rise and fall.",
+     "for_you": "When the evenings feel hardest, you can rest in the thought that the person you loved is not gone from the reality that holds all things. You do not have to stop missing them."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.29",
+     "ref": "Bhagavad Gita 6.29",
+     "ref_iast": "Bhagavad Gītā 6.29",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि । ईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः ॥",
+     "line": "See yourself in every being and every being in yourself, and you see the same everywhere.",
+     "translation": "One whose self is joined in yoga sees the self in all beings and all beings in the self; he sees the same everywhere.",
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 2.7073,
+     "beat": "act",
+     "role_fit": 0.904,
+     "meaning": "Krishna is telling Arjuna how to settle the mind. He says that a person who practices yoga sees their own self inside every other living being, and sees every other being inside themselves. They see the same single reality everywhere. This does not mean she went somewhere else. It means the true self, the awareness that was there, is the same in all of us and cannot be taken away or lost. It is already whole.",
+     "for_you": "As the evening comes and the quiet settles, try to see the same living presence in the temple lamp, in the faces of the people you serve, and in the stillness around you. Let her presence be the light that connects them, not a memory that isolates you."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.4.38",
+     "ref": "Bhagavad Gita 4.38",
+     "ref_iast": "Bhagavad Gītā 4.38",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+     "sanskrit": "न हि ज्ञानेन सदृशं पवित्रमिह विद्यते । तत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति ॥",
+     "line": "Nothing here cleanses like understanding, and with steady practice you find it within, in time.",
+     "translation": "There is nothing in this world as purifying as knowledge. One perfected in yoga finds it in oneself in due time.",
+     "why": "Learn humbly, trust the process, and cut through doubt to act.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.4",
+      "title": "The glory of knowledge",
+      "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+      "story_hook": "",
+      "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+     },
+     "score": 2.5382,
+     "beat": "act",
+     "role_fit": 0.564,
+     "meaning": "Krishna is telling Arjuna that there is no force in the world as clean as knowledge. A person who has steadied themselves through practice will find this understanding inside themselves in time. This is not about learning facts from outside. It is about cutting through confusion and guilt by trusting the process and learning with humility. What it offers is the quiet confidence to stand up and act once doubt is gone.",
+     "for_you": "The evening feels empty because you are waiting for a story about where she went. Instead of searching for her location, sit with the knowledge that what you loved in her is part of the same reality that lives in you. Let this be enough for tonight."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.shiva_grief_name",
+     "title": "Shiva's grief turns to Ram's name",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Shiva",
+      "Ram"
+     ],
+     "story_hook": "When Sati was gone, the great god of the mountains did not rage or hide; he walked, and he kept saying a name.",
+     "summary": "After Sati is gone, Shiva wanders, teaching and singing of Ram, repeating his name. Though beyond desire, he still grieves the loss of his devotee. Seeing his steady love, Ram appears, grateful and kind, praises Shiva's vow and asks him to marry Parvati.",
+     "lesson": "Grief and devotion can walk together; steady love in loss is seen.",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.72.chaupai.1",
+      "ref": "Ramcharitmanas, Bal Kand 72 (chaupai 1)",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 72",
+      "family": "rcm",
+      "speaker": "Narrator",
+      "listener": "Bharadvaja",
+      "setting": "Shiva wanders, teaching and singing of Ram, after Sati is gone.",
+      "sanskrit": "कतहुँ मुनिन्ह उपदेसहिं ग्याना। कतहुँ राम गुन करहिं बखाना॥ जदपि अकाम तदपि भगवाना। भगत बिरह दुख दुखित सुजाना ॥",
+      "line": "Though beyond all desire, the Lord still grieved at being parted from his devotee.",
+      "translation": "Somewhere he taught knowledge to sages, somewhere he told of Ram's virtues. Though free of all desire, the wise Lord was pained by separation from his devotee.",
+      "why": "Grief and devotion can walk together; steady love in loss is seen.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "grief_general",
+        "label": "I'm grieving someone I loved"
+       },
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.shiva_grief_name",
+       "title": "Shiva's grief turns to Ram's name",
+       "summary": "After Sati is gone, Shiva wanders, teaching and singing of Ram, repeating his name. Though beyond desire, he still grieves the loss of his devotee. Seeing his steady love, Ram appears, grateful and kind, praises Shiva's vow and asks him to marry Parvati.",
+       "story_hook": "When Sati was gone, the great god of the mountains did not rage or hide; he walked, and he kept saying a name.",
+       "lesson": "Grief and devotion can walk together; steady love in loss is seen."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "When Sati was gone, Shiva walked and kept saying one name",
+     "teaser": "When Sati was gone, Shiva walked and kept saying one name",
+     "for_you": "You walk with her loss every evening. That steady love is seen. Let it be enough that you carry her name forward, without needing to know where she is."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Where she is now",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 198,
+   "llm": 4097,
+   "total": 16584,
+   "select": 12282
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying a quiet house in the evenings. You keep busy with seva, but the silence asks a question you cannot answer with your hands. You are searching for where she is now."
+  ],
+  [
+   "scene",
+   "Arjuna has laid down his bow. He is on a battlefield, refusing to fight because he is grieving the men he must kill. Krishna looks at him and begins to teach him about the one thing inside us that never dies. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "वासांसि जीर्णानि यथा विहायनवानि गृह्णाति नरोऽपराणि, तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही."
+  ],
+  [
+   "line",
+   "In plain words: As we drop worn-out clothes and put on new ones, the self leaves a worn body for a new one."
+  ],
+  [
+   "unpack",
+   "What we truly are is never born, and it never dies. The body is like a garment. It wears out, and we leave it behind. This is true for everyone, including the ones we love. This is easier said than done, because the mind still wants to hold on to the shape of the person we miss. The truth underneath is that what we love does not vanish. It just changes form."
+  ],
+  [
+   "for_you",
+   "Today, let the search for where she is now be a search for what is real inside you. When the evening comes and the ache rises, sit with it. Do not try to fix it. Let it show you that the love you carry is not gone. It is simply not in the shape you are looking for."
+  ],
+  [
+   "close",
+   "What if the one you love is still here, just not in the form you miss?"
+  ]
+ ],
+ "depth": {
+  "life": "You keep busy with temple seva during the day, but the evenings are hardest. You are searching for where your partner is now, and this search is not for comfort. It is a search for truth. You are grieving someone you loved, and you want to reconnect with your roots. You are retired and feel lost.",
+  "points": "Grief is the pain of missing someone you love. The self is what you truly are, and it is never born and never dies. It outlasts every loss and every passing pain. What you are living with is what the texts call missing someone you love.",
+  "practice": "Sit in your chair and watch the evening light. Notice the feeling of missing without trying to fix it.",
+  "question": "What does it feel like to look for what is real in you that cannot be lost?"
+ }
+}

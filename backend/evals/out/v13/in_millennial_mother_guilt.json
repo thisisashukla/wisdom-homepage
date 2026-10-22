@@ -1,0 +1,490 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "torn and guilty",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "Seven days from being torn between two roles to finding the one duty that is truly yours in each moment.",
+   "week_beats": {
+    "hook": "You recognise the half-mother feeling and the guilt, named without blame.",
+    "diagnose": "You see that the guilt comes from expecting one duty to be everything, when two are in conflict.",
+    "steady": "You hold that what is truly yours to do in this moment is enough.",
+    "act": "You try one honest conversation with your daughter and one moment of full presence with her.",
+    "story": "A mother who was pulled between family and kingdom shows you how to find the duty that is truly yours."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A working mother of two who is back at work after her second child and feels she is failing at both, after her daughter asked why she doesn't come to school things like other moms.",
+   "mirror": "You give the day everything, then lie awake replaying the conversation with your daughter.",
+   "insight": "It isn't that you are failing. It is that two duties are pulling you in different directions, and the mind cannot settle until one is seen as truly yours.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "need_for_approval",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.64,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.575,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.363,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The mind that cannot settle, torn between the mother and the manager, and the guilt that follows when a child asks why you are not there.",
+    "diagnose": "When duties pull in different directions, the mind suffers; the guilt grows from expecting one duty to be everything to everyone.",
+    "steady": "Duty is not a fixed quantity; what is truly yours to do in this moment is enough, and the rest is not your burden to carry.",
+    "act": "Speak to your daughter about what is truly yours to do, let go of the rest, and give the moment before you your full presence.",
+    "story": "A mother and a queen, pulled between her family and her kingdom, who learned to see which duty was truly hers in the moment."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Torn between two",
+    "Which duty is truly yours",
+    "More than a role"
+   ],
+   "seat": "a working mother torn between her job and her child's expectations",
+   "life_context": "In her mid-thirties, working and raising two children; she is back at work after her second baby and her daughter asked why she doesn't come to school events like other mothers, which left her crying in the car.",
+   "details": [
+    "back at work after second child",
+    "daughter asked why she doesn't come like other moms",
+    "cried in the car",
+    "feels half a mother and half a PM"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:7=0.3,46=0.0,84=0.6,536=0.6,47=0.6,78=0.3",
+    "week_fit:swapped=3",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:scene=says_the_verse",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.357,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that his mind is restless, stormy, stubborn and strong. He says holding it is like trying to hold the wind. Krishna agrees that the mind is hard to hold. He says it can be trained through practice and by letting go of attachment to results.",
+     "for_you": "What you feel right now is the pull between the mother you are and the professional you are. That guilt is not a verdict. It is the mind caught between two duties, and it is not a failure."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.2.280.chaupai.4",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 280",
+     "family": "rcm",
+     "speaker": "Bharat",
+     "listener": "Janaka",
+     "setting": "Bharat, asked by Janaka what should be done, explains why he can't judge his own case.",
+     "sanskrit": "आगम निगम प्रसिद्ध पुराना। सेवाधरमु कठिन जगु जाना॥ स्वामि धरम स्वारथहि बिरोधू। बैरु अंध प्रेमहि न प्रबोधू ॥",
+     "line": "Duty and self-interest pull against each other. Hatred is blind, and love can't reason.",
+     "translation": "The Vedas, scriptures and Puranas say, and the world knows, that the duty of service is hard. Duty to one's master and self-interest pull against each other; hatred is blind, and love has no judgement.",
+     "why": "When you are too close to a decision, say so, and speak briefly and honestly.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.janaka_chitrakoot",
+      "title": "Janaka's family joins the council",
+      "summary": "Sita's parents arrive and the two families grieve together. Kausalya tells Sunayana that people, like gold, are proved by time. Janaka asks Bharat to decide, and Bharat declines: duty and self-interest pull apart, hatred is blind and love cannot reason, so he will follow Ram's wish. His few words leave the whole court in awe.",
+      "story_hook": "Sita's parents walked into the forest camp, and two grieving families sat down together.",
+      "lesson": "When you are too close to a decision, say so, and speak briefly and honestly."
+     },
+     "score": 2.8201,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "Bharat is standing before Janaka in the court at Ayodhya. Janaka asks him to judge a dispute between his own brothers. Bharat says he cannot do it. He says duty to the king and duty to his own family pull against each other. Hatred is blind, and love has no judgment. When you are too close to a choice, you could say so and speak briefly and honestly. This is what it means to be torn between two roles.",
+     "for_you": "You are trying to be the perfect mother and the perfect professional at the same time. The guilt comes from expecting one duty to be everything. Let yourself say out loud that these two roles pull against each other. You do not have to choose one."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.1018,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari is writing to anyone who reads these verses. He is talking about the kind of person who stays on their course no matter what happens. People will praise them or they will blame them. Money will flow in or it will dry up. Death might come today or it might wait for years. Through all of this, the steady person does not step off the path of what is right. They do not move a step from the right path.",
+     "for_you": "You are holding two duties right now and neither one feels light. When your daughter asked about the school events, that hurt because you want to be there. But your work is also real and it needs you. Let the praise or blame of the day come and go."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.9784,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Ribhu, a teacher of stillness, is speaking to Nidagha, a householder who still thinks freedom means leaving the world. Ribhu tells him that a free person does not stop working or talking to people. They simply do not let the noise inside. They let praise or blame come and go. They let money appear or vanish. They do the task in front of them with a clear mind, but they do not let the result pull them away. This is the steady path. The mind stays free even while the hands are busy.",
+     "for_you": "You are back at work, and your daughter's question still sits in your chest. You do not have to choose between being a mother and a professional today. You can do both and let the guilt come and go."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.1969,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, showing him how to act without being chained to what happens next. He tells him to do the work fully and with his whole attention, but to let go of clinging to the results. The work itself is what belongs to him. The outcome is not. This does not mean you stop caring or stop planning. It means you do not let the result own your mind. You give your action to the moment and keep your center steady, whether success comes or failure.",
+     "for_you": "Try one honest conversation with your daughter today. Then, when you are with her, let the work of being with her be the only thing. Do not let the result of her mood or her words own your mind. Act fully in the moment, and let the rest go."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 2.9565,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after he has lost his kingdom. She tells him not to hold himself in contempt, not to settle for so little, and not to be afraid. She says he must set his mind on what is truly good and pull himself together. She is not offering comfort, but a charge to rise above his despair.",
+     "for_you": "The cry in the car was your daughter asking for your full presence. Today, let her see it. Put your phone away during a single meal or walk, and let her feel that you are truly there with her."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.karunya_two_wings",
+     "title": "Karunya stops acting: knowledge and action as two wings",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Sutikshna",
+      "Agastya",
+      "Karunya",
+      "Agnivesha"
+     ],
+     "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+     "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+     "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+     "matched": [],
+     "anchor": {
+      "id": "yv.1.1.7",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 1.7",
+      "family": "yv",
+      "speaker": "Agastya",
+      "listener": "Sutikshna",
+      "setting": "The sage Agastya answers a student torn between action and knowledge.",
+      "sanskrit": "उभाभ्यामेव पक्षाभ्यां यथा खे पक्षिणां गतिः । तथैव ज्ञानकर्मभ्यां जायते परमं पदम् ॥",
+      "line": "A bird flies on two wings. You need both understanding and action to get anywhere that matters.",
+      "translation": "Just as birds fly through the sky on both their wings, the highest state is reached through both knowledge and action.",
+      "why": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.karunya_two_wings",
+       "title": "Karunya stops acting: knowledge and action as two wings",
+       "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+       "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+       "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "teaser": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "for_you": "Karunya learned that understanding and doing are two wings. You do not have to choose between being a good mother and a good professional. In the next school pickup, let your presence be enough. You can be the mother your daughter sees and still be the person you are at work."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Torn between two",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 179,
+   "llm": 4118,
+   "total": 12284,
+   "select": 7978
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are back at work after your second child and your daughter asked why you do not come to school events like other mothers. You cried in the car. You feel half a mother and half a professional. That tear is not a verdict. It is the mind caught between two duties."
+  ],
+  [
+   "scene",
+   "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers. Arjuna said to Krishna:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "The mind is hard to hold, but practice and letting go train it. This is easier said than done. You are trying to be fully at work and fully at home at the same time. The mind cannot settle until you see which duty belongs to this moment. You do not have to collapse the two roles into one person."
+  ],
+  [
+   "for_you",
+   "When you are with your daughter, let the professional part rest. When you are at work, let the mother part rest. You do not have to hold both at once."
+  ],
+  [
+   "close",
+   "What if you let the role you are in right now be the only one that exists?"
+  ]
+ ],
+ "depth": {
+  "life": "You are in the car, the engine off, and the tears are still warm. Your daughter asked a simple question, but it hit you like a wall. You feel like two people wearing the same skin, one at work and one at home, and neither is getting the full you.",
+  "points": "The mind is not a machine you can command. It is a force of its own, and it is torn between two places. That storm inside you is not a sign of failure. It is the natural friction of two real duties pulling at the same person.",
+  "practice": "Sit for one minute and let the image of the wind come to mind, without trying to catch it. Just watch it move.",
+  "question": "Which of your two roles is speaking louder right now?"
+ }
+}

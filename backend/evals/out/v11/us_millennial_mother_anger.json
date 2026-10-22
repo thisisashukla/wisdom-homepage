@@ -1,0 +1,531 @@
+{
+ "persona": {
+  "id": "us_millennial_mother_anger",
+  "market": "USA (Chicago)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "39, Indian-American, two kids, runs a dental practice with her husband, loses her temper with the kids and hates herself after.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "phone_hours": 3,
+   "topic": "mind",
+   "follow": "anxious"
+  },
+  "note": "I yelled at my 7 year old this morning for spilling milk and the look on his face. I am turning into my mother. I run a practice, I manage 12 people calmly, and then at home I just snap",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and terrified of becoming her mother",
+   "bridge": "What you are living with is what the texts call anger that takes over, and that is where this week begins.",
+   "week_thesis": "Seven days from being the mother who snapped to being the woman who claims one hour of herself, so the snap has less room to grow.",
+   "week_beats": {
+    "hook": "You recognise the look on your child's face and the fear of becoming your mother, named without judgement.",
+    "diagnose": "You see that the anger was already there before the milk, and that a mind without rest has no room for a spill.",
+    "steady": "You hold that praise and blame, heat and cold, come and go, and you do not have to let them stay.",
+    "act": "You try taking one hour for yourself before the day begins, and when anger rises, letting it pass instead of letting it become the sky.",
+    "story": "A mother who saw her own childhood in her son's eyes shows you that her own peace was the ground her children stood on."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A working mother and practice owner is horrified by her own outburst at her child and fears she is becoming her mother, while she is calm at work.",
+   "mirror": "You run a calm practice all day, and then at home you snap at the milk.",
+   "insight": "The anger arrives before you choose it. By the time you notice, it has already spoken for you.",
+   "mechanism": "anger_reactivity",
+   "mechanism_label": "Anger that takes over",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.708,
+     "source": "note"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.41,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.25,
+     "source": "chip"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.537,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The look on your child's face after you snapped, and the fear that you are becoming the mother you did not want to be.",
+    "diagnose": "Anger rises from blocked wanting; a mind that is already exhausted has no room for a spill, and what it says and does it later regrets.",
+    "steady": "Praise and blame, heat and cold, pleasure and pain, come and go; they cannot stay, and you do not have to let them stay.",
+    "act": "Take one hour for yourself before the day begins, and when anger rises, let it pass like a cloud instead of letting it become the sky.",
+    "story": "A mother who saw her own childhood in her son's eyes, who learned that her own peace was not a luxury but the ground her children stood on."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The hour you have not taken",
+    "The mind that runs on empty",
+    "The mother who is not her mother"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs a practice and manages twelve people calmly"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "week_fit:34=0.0,62=0.0,17=0.0,14=0.0,12=0.0,1=0.0",
+    "week_fit:swapped=6",
+    "redo:3",
+    "redo_fixed:0",
+    "dropped:invented=1,repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.6512,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna stands in his chariot on the field. He sees his own family, his teachers, his grand-uncles, and his cousins in the opposing army. His limbs begin to shake and his mouth goes dry. His body trembles and his hair stands on end. He is a warrior about to fight, but he freezes. What he is feeling is not weakness. It is the body responding when the mind is overwhelmed by grief and fear.",
+     "for_you": "You are a calm leader at your practice, but at home you feel the same shaking limbs. The fear of becoming your mother is not a sign of failure. It is the body speaking before the mind can catch up."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.63",
+     "ref": "Bhagavad Gita 2.63",
+     "ref_iast": "Bhagavad Gītā 2.63",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥",
+     "line": "Anger clouds judgement, clouded judgement loses memory, lost memory wrecks reason, and then you fall.",
+     "translation": "From anger comes delusion; from delusion, confusion of memory; from confusion of memory, the ruin of understanding; and with understanding ruined, a person is lost.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "Not 'never feel anger'. It warns about anger that takes over judgement, not about naming wrongs.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 3.7499,
+     "beat": "diagnose",
+     "role_fit": 0.75,
+     "meaning": "Krishna is answering Arjuna's question about what a steady mind looks like. Arjuna is shaken and confused on the battlefield, and Krishna is showing him how a person loses their footing. He traces a chain: anger clouds judgement, clouded judgement loses memory, lost memory wrecks reason, and then you fall. The idea is that steadiness is built by guarding your attention. Anger does not come out of nowhere. It starts with what you dwell on, and without rest, the mind has no room to catch a spill before it floods.",
+     "for_you": "At your practice, you hold the room with calm. That same mind is full of noise when you are home. The verse asks you to see that the anger was already there before the milk, and that a mind without rest has no room for a spill."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.2.22.2",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 22.2",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Just told he is exiled, Ram calms his furious brother Lakshman.",
+     "sanskrit": "निगृह्य रोष शोकं च धैर्यमाश्रित्य केवलम्। अवमानं निरस्यैनं गृहीत्वा हर्षमुत्तमम्॥ उपक्लुप्तं यदैतन्मे अभिषेकार्थमुत्तमम्। सर्वं निवर्तय क्षिप्रं कुरु कार्य निरव्ययम्॥",
+     "line": "Rein in anger and grief, lean on your steadiness, and set the insult aside.",
+     "translation": "Hold back your anger and grief, lean on steadiness alone, set this insult aside and take up real cheerfulness. Quickly undo the preparations made for my coronation and get on with what needs doing, without fuss.",
+     "why": "Anger at injustice is natural; decide what to do with it before it decides for you.",
+     "misuse": "Not a call to ignore injustice; it is about choosing your response.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.lakshman_anger_exile",
+      "title": "Lakshman's fury, Ram's calm",
+      "summary": "Lakshman is enraged by the injustice and wants to seize the throne by force. Ram calms him: set aside the insult, don't torment yourself, the setback may lead somewhere better. Lakshman answers that effort, not fate, decides; both views are given their due.",
+      "story_hook": "",
+      "lesson": "Anger at injustice is natural; decide what to do with it before it decides for you."
+     },
+     "score": 3.2773,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Ram has just been told he must leave for the forest for fourteen years. His brother Lakshman is burning with rage. He wants to seize the throne by force and punish those who did this. Ram speaks to him in the middle of this storm. He tells Lakshman to rein in the anger and grief. He asks him to lean on his steadiness alone. He tells him to set aside the insult and take up real cheerfulness. He says to quickly undo the coronation preparations and get on with what needs doing, without fuss.",
+     "for_you": "You keep your practice calm and steady with twelve people. That steadiness is real. Carry it into the house. When the heat rises with your child, you do not have to let it stay. You can set the insult aside and take up real cheerfulness again."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.15",
+     "ref": "Bhagavad Gita 2.15",
+     "ref_iast": "Bhagavad Gītā 2.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ । समदुःखसुखं धीरं सोऽमृतत्वाय कल्पते ॥",
+     "line": "The one who stays the same in pain and pleasure, undisturbed by either, is ready for real freedom.",
+     "translation": "The steady person whom these do not disturb, who stays the same in pain and pleasure, becomes fit for immortality.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Steadiness is not numbness or hiding what you feel.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.1488,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Krishna speaks to Arjuna, who is sitting in grief on the battlefield. He tells him that the true self never changes. It is never born and it never dies. Pleasure and pain, heat and cold, praise and blame, all pass over the surface of who you are. The one who remains undisturbed by these passing states, staying the same through them all, becomes ready for something far deeper than temporary comfort. The self underneath your anger is not touched by it. This steadiness is not numbness.",
+     "for_you": "At work you are steady with twelve people, but at home the anger takes over before you can choose. This steadiness is not hiding what you feel. It is the quiet knowing that the woman who snapped is not the whole of you, and she does not have to stay."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.37.51",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 37.51",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "सन्नियच्छति यो वेगमुत्थितं क्रोधहर्षयोः / स श्रियो भाजनं राजन्यश्चापत्सु न मुह्यति",
+     "line": "Rein in the rush of anger and of excitement alike, and keep your head in trouble.",
+     "translation": "Whoever reins in the rush of anger and of elation the moment they rise, and does not lose his head in trouble, is the one good fortune favours.",
+     "why": "Arrogance, anger and betrayal shorten a life. Rivals in a family often protect each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.37",
+      "title": "Vidura Niti: what cuts life short",
+      "summary": "Vidura lists Manu's seventeen kinds of fool and the six habits, from arrogance to betraying friends, that shorten a life more surely than death. He warns that the cousins need each other like a forest and its tigers.",
+      "story_hook": "",
+      "lesson": "Arrogance, anger and betrayal shorten a life. Rivals in a family often protect each other."
+     },
+     "score": 3.3628,
+     "beat": "act",
+     "role_fit": 0.419,
+     "meaning": null,
+     "for_you": "When the anger rises at home, let it pass through you like a storm cloud. You do not need to hold it or act on it. Let it move on."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.337.11",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 337.11",
+     "family": "mbh",
+     "speaker": "Sanatkumara (quoted by Narada)",
+     "listener": "Shuka",
+     "setting": "Narada passes on the sage Sanatkumara's teaching to the young Shuka, Vyasa's son.",
+     "sanskrit": "नित्यं क्रोधात्तपो रक्षेच्छ्रियं रक्षेच्च मत्सरात् / विद्यां मानावमानाभ्यामात्मानं तु प्रमादतः",
+     "line": "Guard your effort from anger, your success from envy, your learning from pride, and yourself from carelessness.",
+     "translation": "Always guard your discipline from anger and your good fortune from envy; guard your learning from both pride and insult, and guard yourself from carelessness.",
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 3.3397,
+     "beat": "act",
+     "role_fit": 0.819,
+     "meaning": "Narada tells the young Shuka that brooding does not heal pain, it grows it. The mind is healed by understanding, just as the body is healed by medicine. When you feel a wound, do not sit with it until it swells. If you can fix the cause, act. If you cannot, find a way to rest. True contentment is the only real wealth.",
+     "for_you": "Take one hour for yourself before the day begins, and when anger rises, let it pass instead of letting it become the sky. You are calm at work because you are fully there."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "present_parent",
+        "label": "I'm physically home but not present with my kids"
+       },
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "Kausalya saw the whole universe in her son, but she only wanted him to be a child. When your twelve people calm down because you are steady, you give your children that same safety. Your presence is the ground they stand on. The anger that takes over is not who you are."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The hour you have not taken",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 228,
+   "llm": 4498,
+   "total": 12788,
+   "select": 8054
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You run twelve people through your practice with a calm you can almost feel in your hands. At home, that same steadiness feels like a stranger. You are terrified that you are becoming your mother, and the shame of that is heavier than the outburst itself."
+  ],
+  [
+   "scene",
+   "Arjuna stands in his chariot on the field. He sees his own family, his teachers, his grand-uncles, and his cousins in the opposing army. His limbs begin to shake and his mouth goes dry. His body trembles and his hair stands on end. He is a warrior about to fight, but he freezes. And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "सीदन्ति मम गात्राणि मुखं च परिशुष्यति, वेपथुश्च शरीरे मे रोमहर्षश्च जायते. गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते, न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः."
+  ],
+  [
+   "line",
+   "In plain words: Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero."
+  ],
+  [
+   "unpack",
+   "This is the Gita opening, not with a hero, but with a body that has already betrayed the mind. The limbs give way before the mind can choose its next move. You feel this too, not as a character flaw, but as a physical fact. The shaking comes first, and the anger you regret arrives on the back of that same storm."
+  ],
+  [
+   "for_you",
+   "At home, try to notice the first tremor before the voice rises. Name the shaking to yourself, just as it is, without judging the mother you fear you are becoming."
+  ],
+  [
+   "close",
+   "What does the body say before the mind can catch up?"
+  ]
+ ],
+ "depth": {
+  "life": "At your practice you manage twelve people with calm. At home you are physically there but not present. You lost your temper and regret it. You are terrified of becoming your mother.",
+  "points": "Even the strongest people freeze. The Gita opens with a breakdown, not a hero. The body speaks before the mind can catch up.",
+  "practice": "Notice your body the next time you feel the heat rise. Name one physical feeling out loud to yourself.",
+  "question": "When did your body first know the anger was coming?"
+ }
+}

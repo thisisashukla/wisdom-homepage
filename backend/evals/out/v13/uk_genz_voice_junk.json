@@ -1,0 +1,513 @@
+{
+ "persona": {
+  "id": "uk_genz_voice_junk",
+  "market": "UK (Leeds)",
+  "generation": "Gen Z",
+  "gender": "man",
+  "who": "20, British-Indian student, tapped through onboarding quickly, voice note mostly noise.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 7
+  },
+  "note": "um yeah so like idk just stressed i guess the the uh yeah",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "stressed and scattered",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "Seven days from a mind that will not settle to one quiet minute of holding it, with the phone put down.",
+   "week_beats": {
+    "hook": "You recognise the restlessness and the phone as one thing, not two.",
+    "diagnose": "You see that the mind left to itself becomes its own enemy, and the phone is the wind that feeds it.",
+    "steady": "You hold that the mind is not the master, and the self is not the doer.",
+    "act": "You try giving the mind one quiet task and one quiet minute, and do not open the screen.",
+    "story": "A student whose mind was like the wind shows you that one quiet practice is enough to begin."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "teacher"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Mind will not settle, and the student is stressed, with very long daily phone use.",
+   "mirror": "You say your mind will not settle, and the phone is open in front of you.",
+   "insight": "It isn't the exams that keep you up. It's the mind running after results it cannot hold, and the phone is the wind that keeps it running.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.434,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.094,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.695,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.35,
+     "source": "profile"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.315,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The mind that will not settle, and the body that is tired of running after it.",
+    "diagnose": "The untrained mind runs like the wind, replaying and imagining; left to itself it becomes its own enemy.",
+    "steady": "Praise and blame, success and failure, come and go; the self is not the doer and the mind is not the master.",
+    "act": "Practise holding the mind back from what it runs to; give it one quiet task, one quiet minute, and do not open the screen.",
+    "story": "A student who could not focus, whose mind was like the wind, and who found a single practice that let him sit still."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The mind that runs",
+    "The wind and the screen",
+    "The one who sits still"
+   ],
+   "seat": "a student whose mind will not settle and whose phone holds most of their attention",
+   "life_context": "A student under twenty-five with a mind that will not settle and seven hours on the phone; they name stress but not what it is about, so the restlessness itself is what is known.",
+   "details": [
+    "mind will not settle",
+    "very long phone time"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_fit:33=0.9,22=0.9,5=0.8,33=0.9,26=0.8,58=0.9",
+    "redo:2",
+    "redo_fixed:0",
+    "dropped:not_second_person=1,repeat=1,soft_kept=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.33",
+     "ref": "Bhagavad Gita 6.33",
+     "ref_iast": "Bhagavad Gītā 6.33",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "अर्जुन उवाचयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन । एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम् ॥",
+     "line": "This calm you describe, Krishna, I can't see it lasting. My mind is too restless.",
+     "translation": "Arjuna said: This yoga of evenness that you have taught, Madhusudana, I do not see how it can last, because of restlessness.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.5238,
+     "beat": "hook",
+     "role_fit": 0.985,
+     "meaning": "Arjuna is looking at you, not at a battlefield but at the screen. They tell you the mind is too restless. They say this calm they have been told about will not last. They are right. The mind is hard to hold. It is like trying to catch the wind. But practice and letting go can train it. It will not happen in a day, but the training can begin now.",
+     "for_you": "Your mind will not settle and your phone is in your hand. Let this restlessness be the practice. Put the phone down for one minute today. Just one minute of not holding anything."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.16.22",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 16.22",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama describes his restless mind to the sages.",
+     "sanskrit": "चेतः पतति कार्येषु विहगः स्वामिषेष्विव । क्षणेन विरतिं याति बालः क्रीडनकादिव ॥",
+     "line": "The mind pounces on a task like a bird on food, then drops it like a bored child's toy.",
+     "translation": "The mind swoops onto tasks like a bird onto meat, and a moment later loses interest, like a child with a toy.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "phone_addiction",
+       "label": "I'm addicted to my phone"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.8874,
+     "beat": "diagnose",
+     "role_fit": 0.665,
+     "meaning": "Rama is sitting with the sages Vishvamitra and Vasishtha. He is young, but he has already seen too much of the world. He tells them that the mind jumps onto a task like a bird on a piece of meat, then loses all interest and drops it. He says the mind does this over and over, leaving a person exhausted and empty. He is not giving a solution yet. He is simply naming the restless pattern so they can see it clearly.",
+     "for_you": "Your mind is pouncing on the phone right now. It is not a failure. It is a pattern. See the bird and the meat. The phone is not the problem. It is just the meat your mind cannot stop chasing."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.1.3.5",
+     "ref": "Katha Upanishad 1.3.5-6",
+     "ref_iast": "Kaṭha Upaniṣad 1.3.5-6",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "The chariot image continued.",
+     "sanskrit": "यस्त्वविज्ञानवान्भवत्ययुक्तेन मनसा सदा । तस्येन्द्रियाण्यवश्यानि दुष्टाश्वा इव सारथेः ॥ यस्तु विज्ञानवान्भवति युक्तेन मनसा सदा । तस्येन्द्रियाणि वश्यानि सदश्वा इव सारथेः ॥",
+     "line": "Without understanding, the senses bolt like wild horses; with a steady mind, they run like trained ones.",
+     "translation": "For one who lacks understanding, whose mind is never held steady, the senses run out of control like a driver's wild horses. For one who has understanding, whose mind is always steady, the senses obey like good horses.",
+     "why": "Hold the reins of your mind, or your senses will drive for you.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "phone_addiction",
+       "label": "I'm addicted to my phone"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.chariot",
+      "title": "The chariot of the self",
+      "summary": "Yama pictures a person as a chariot: the self is the rider, the body the chariot, the intellect the driver, the mind the reins and the senses the horses. With a steady mind the horses obey; without it they bolt. He ends with the call to arise and wake.",
+      "story_hook": "",
+      "lesson": "Hold the reins of your mind, or your senses will drive for you."
+     },
+     "score": 3.5099,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Yama continues with the chariot, telling Nachiketa that the senses are the horses. He says that without understanding, the senses bolt like wild horses, driven by a mind that is never held steady. With understanding, the mind becomes steady and the senses obey like trained horses, following the driver. The mind holds the reins, and if it does not, the senses take the path for themselves.",
+     "for_you": "Your phone is a horse that has broken its reins. When your mind will not settle, it runs toward the screen. Today, hold the reins. Put the phone down for one minute and feel the quiet."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.9.33",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 9.33",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha tells Rama how to steer his own habits.",
+     "sanskrit": "समता सांत्वनेनाशु न द्रागिति शनेशनेः । पौरुषेणैव यत्नेन पालयेच्चित्तबालकम् ॥",
+     "line": "Raise your mind like a child: gently, patiently, little by little, never by force.",
+     "translation": "With evenness and gentle coaxing, not in a rush but little by little, by steady effort, look after the child that is your mind.",
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 3.3167,
+     "beat": "steady",
+     "role_fit": 0.505,
+     "meaning": "Vasishtha is speaking to Rama after the prince has been shown how the mind creates its own world. The teacher knows Rama is overwhelmed. He tells him to raise his mind like a child. This means you do not seize it or beat it into shape. You offer it steady effort and evenness, little by little, until it learns to trust the hand that feeds it.",
+     "for_you": "You have been trying to force your mind to study, and it only runs faster. Today, try sitting with your books for just five minutes, and when your hand reaches for the phone, pause and let the urge pass."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.26",
+     "ref": "Bhagavad Gita 6.26",
+     "ref_iast": "Bhagavad Gītā 6.26",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् । ततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ॥",
+     "line": "Wherever the restless mind wanders, gently bring it back. Again and again.",
+     "translation": "Wherever the restless, unsteady mind wanders, from there one should draw it back and bring it under the control of the self.",
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 3.8123,
+     "beat": "act",
+     "role_fit": 0.489,
+     "meaning": "Krishna is with Arjuna on the battlefield, and Arjuna is telling Krishna that his mind is a mess, it won't sit still, it keeps jumping everywhere. Krishna does not tell him to fight the mind with force or to hate the phone. He tells him to watch where the mind wanders, and then to gently bring it back. Not once, and not with anger, but again and again. This is how a mind learns to be quiet. It is not about stopping the thoughts, it is about the gentle return after every wander.",
+     "for_you": "The phone is the wind that keeps your mind running. Try putting it face down for just one minute today. When the thoughts jump, gently bring your attention back to the room around you. This quiet return is how the mind learns to rest."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.58",
+     "ref": "Bhagavad Gita 2.58",
+     "ref_iast": "Bhagavad Gītā 2.58",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः । इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥",
+     "line": "Like a tortoise pulling in its limbs, draw your senses back from what pulls at them.",
+     "translation": "When, like a tortoise drawing in its limbs on every side, a person withdraws the senses from their objects, his wisdom is firmly set.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "phone_addiction",
+       "label": "I'm addicted to my phone"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 3.4171,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Krishna is answering Arjuna's question about what a steady person looks like. He describes someone who is content within themselves and unshaken by sorrow. Then he says that wisdom becomes firm when a person withdraws their senses from the objects that pull at them, just as a tortoise pulls in its limbs from all sides. He explains that anger begins with what you dwell on, so guarding your attention is how you build steadiness.",
+     "for_you": "The restlessness you feel is not a failure. It is the mind asking to be given one quiet task and one quiet minute. Today, put the phone down and let your attention rest on something simple, without opening the screen."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.karunya_two_wings",
+     "title": "Karunya stops acting: knowledge and action as two wings",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Sutikshna",
+      "Agastya",
+      "Karunya",
+      "Agnivesha"
+     ],
+     "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+     "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+     "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+     "matched": [],
+     "anchor": {
+      "id": "yv.1.1.7",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 1.7",
+      "family": "yv",
+      "speaker": "Agastya",
+      "listener": "Sutikshna",
+      "setting": "The sage Agastya answers a student torn between action and knowledge.",
+      "sanskrit": "उभाभ्यामेव पक्षाभ्यां यथा खे पक्षिणां गतिः । तथैव ज्ञानकर्मभ्यां जायते परमं पदम् ॥",
+      "line": "A bird flies on two wings. You need both understanding and action to get anywhere that matters.",
+      "translation": "Just as birds fly through the sky on both their wings, the highest state is reached through both knowledge and action.",
+      "why": "Don't freeze while you wait to be sure. Understanding and action have to fly together.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.karunya_two_wings",
+       "title": "Karunya stops acting: knowledge and action as two wings",
+       "summary": "A student asks the sage Agastya whether freedom comes from action or from knowledge. Agastya answers with a story: young Karunya, confused by two scriptures, simply stopped doing anything, and his father had to show him that understanding and action work together.",
+       "story_hook": "Karunya came home from his studies so full of questions that he stopped doing anything at all.",
+       "lesson": "Don't freeze while you wait to be sure. Understanding and action have to fly together."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "teaser": "A bright student got so confused by everything he had studied that he stopped doing anything",
+     "for_you": "Karunya stopped all action while he waited to understand everything. Your mind is doing the same thing, scrolling through the phone to avoid the work that feels too heavy right now. The story shows that waiting for certainty is a trap."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The mind that runs",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 178,
+   "llm": 3823,
+   "total": 12615,
+   "select": 8608
+  }
+ },
+ "script": [
+  [
+   "open",
+   "Your mind will not settle. It is scattered, and you feel it in your chest. You are carrying this restlessness as you sit with your books and your phone."
+  ],
+  [
+   "scene",
+   "Arjuna is looking at Krishna, not at a battlefield but at you. He says his mind is too restless. He cannot hold this calm you have been taught. Krishna tells him the mind is hard to hold, like the wind. But practice and letting go can train it: And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "अर्जुन उवाचयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन, एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम्."
+  ],
+  [
+   "line",
+   "In plain words: This calm you describe, Krishna, I can't see it lasting. My mind is too restless."
+  ],
+  [
+   "unpack",
+   "This calm you describe, Krishna, I can't see it lasting. Your mind is too restless. The mind is hard to hold. It is like trying to catch the wind. But practice and letting go can train it. This is easier said than done, because the restlessness itself feeds on the very thing you are trying to escape."
+  ],
+  [
+   "for_you",
+   "Your mind will not settle and your phone is in your hand. Let this restlessness be the practice. Put the phone down for one minute today. Just one minute of not holding anything."
+  ],
+  [
+   "close",
+   "Can you hold the wind for one minute?"
+  ]
+ ],
+ "depth": {
+  "life": "You are sitting with your books and the screen is still warm in your hands. The mind is jumping from one thing to the next and the seven hours on the phone are just the measure of it. You are tired but you do not know where to put the tiredness.",
+  "points": "Arjuna looked at the mind and called it a force that cannot be caught, like the wind. The teaching is not that the mind becomes still by force. It becomes still by practice and by letting go of the grip. The restlessness is the real thing, not the exam or the notification.",
+  "practice": "Put the phone down and sit for one minute. Do not try to clear the mind. Just let it run.",
+  "question": "What is the mind running after right now?"
+ }
+}

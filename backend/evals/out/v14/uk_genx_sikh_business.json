@@ -1,0 +1,508 @@
+{
+ "persona": {
+  "id": "uk_genx_sikh_business",
+  "market": "UK (Leicester)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "47, runs the family cash-and-carry in Leicester, second generation, Punjabi background. Father (78) still comes in and overrules him in front of staff.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "I've run this business for 15 years and my dad still walks in and changes my decisions in front of the staff. I'm 47. He's 78. I can't say anything because it's his business in his head and he's my father",
+  "note_source": "voice",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "frustrated and trapped",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being over-ruled in the business you built to holding your ground with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being over-ruled in the place you built, and the silence that follows because he is your father, named without blame.",
+    "story": "A woman of standing who questioned her father in front of her staff shows you what holding your ground looks like."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "I keep fighting with my parents",
+   "mirror": "At, your dad still changes your business decisions in front of your staff.",
+   "insight": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 2.45,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 1.706,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.691,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.56,
+     "source": "chip"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I keep fighting with my parents. Being seen as less than you are by the people who ought to know you best, and the anger of watching the life you built get called a phase.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what he sees; your worth was never his to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly to him, hold your ground on what is yours, and do your own duty without shrinking to fit the picture he holds.",
+    "story": "A woman of standing who was dismissed by her own father, who questioned him openly and held her ground until he had no answer in front of her staff."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Over-ruled in the business",
+    "Whose picture it is",
+    "The one who built it is gone"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs a business for years"
+   ],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:hook_gives_advice",
+    "core_struggle_fallback",
+    "mirror:fallback",
+    "insight:template",
+    "seat:missing",
+    "mirror:rewritten",
+    "week_fit:29=0.0,16=0.0,86=0.6,11=0.6,19=1.0,7=1.0",
+    "week_same:86",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.53,max=0.59",
+    "redo:3",
+    "redo_fixed:1",
+    "dropped:accept=2,fallback_line=1,repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 1.809,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna stands in his chariot, and he sees his own people in the enemy camp. The man who is his teacher and his grand-uncle is there, and his cousins and his grand-uncle's sons are there. He looks at them, and he cannot move. His limbs shake, his mouth goes dry, and his skin burns. He drops his bow and his arrows, and he sits down. He tells Krishna that he does not want to win a kingdom by killing his own family.",
+     "for_you": "You run a business you built from nothing, and you still feel your father's voice overrule you. You are not weak for feeling this. You are feeling what it is to be trapped by a love that has become a cage."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.114.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 114.15",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on public slander, answering Yudhishthira's question about being insulted in an assembly.",
+     "sanskrit": "परिवादं ब्रुवाणो हि दुरात्मा वै महाजने / प्रकाशयति दोषान्स्वान्सर्पः फणमिवोन्नतम्",
+     "line": "Whoever runs others down in public only puts their own faults on display.",
+     "translation": "The person who speaks ill of others in front of a crowd only puts his own faults on display, the way a snake raises its hood.",
+     "why": "Careless critics show their own faults. Let their words pass like a crow's cawing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.bearing_slander",
+      "title": "Bhishma on bearing slander",
+      "summary": "Yudhishthira asks how to respond when a harsh fool abuses you in public. Bhishma: let it pass like a crow cawing; the slanderer only displays his own faults.",
+      "story_hook": "",
+      "lesson": "Careless critics show their own faults. Let their words pass like a crow's cawing."
+     },
+     "score": 2.9088,
+     "beat": "diagnose",
+     "role_fit": 0.351,
+     "meaning": "Bhishma, lying on his bed of arrows, tells Yudhishthira how to handle a fool's public slander. The fool who tears someone down in a crowd only lifts the hood of his own faults for everyone to see. Their words are not a verdict on you. They are a mirror they hold up to themselves.",
+     "for_you": "Your parents speak of the business you built as if it is only a hobby, and their words are meant to put you in your place. See the smallness in their speech, not in your work, and let their words pass without taking them as a verdict on who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.0411,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": "Draupadi speaks to Yudhishthira while they wait in the forest after losing their kingdom. She sees him sinking into despair and tells him that a person should never look down on himself. She says the one who despises himself never finds real prosperity. She is telling him that his worth is not tied to his current suffering. He must act, because nothing good grows from self-contempt.",
+     "for_you": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.11",
+     "ref": "Ashtavakra Gita 15.11",
+     "ref_iast": "Aṣṭāvakra Gītā 15.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "त्वय्यनन्तमहाम्भोधौ विश्ववीचिः स्वभावतः । उदेतु वास्तमायातु न ते वृद्धिर्न वा क्षतिः ॥",
+     "line": "Let the waves of the world rise or fall. You, the ocean, neither gain nor lose.",
+     "translation": "In you, the boundless ocean, let the waves of the world rise or fall by their own nature. You neither grow nor shrink.",
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.6824,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Ashtavakra speaks to Janaka after Janaka has sat with his doubts and grief. He tells him that he is the boundless ocean, not the waves of the world that rise and fall. The waves of the world may come and go, but the ocean neither gains nor loses anything. You are the ocean, not the waves. Let them rise and fall without losing yourself.",
+     "for_you": "You are not the fight with your parents. You are the awareness in which that frustration rises and falls. Let the waves move without shrinking the space you hold for yourself."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.4758,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Ram is watching Hanuman speak to his brother Sugriva for the first time, and he is struck by the quality of the voice. Hanuman has just arrived as a stranger and envoy, and his words are measured and steady. The voice is not too long, not vague, not rushed, and not strained. It comes from the chest and throat in an even, middle tone. The point is that fear often jumps ahead of facts, but calm, clear words build trust fast. Ram sees that a steady voice does not mean a weak one.",
+     "for_you": "When your parents raise their voices, your body shakes and your mind races. Let your next reply be the one that comes from that middle tone. Say the one true thing you could say, and let the volume fall to a level that holds its ground without breaking."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 2.8264,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": "The teacher is at the door of the student's new life, handing over the final tools. The instruction is simple and complete. Speak the truth. Do what is right. Keep learning. It is not a list of rules for a crowd, but a compass for the quiet moments when no one is watching. It asks the student to build a life where their words match their hands, and their hands keep moving toward knowledge. It is the seed of a whole life, planted in the soil of everyday choices.",
+     "for_you": "Your parents may want a child who obeys without question. You can speak the truth to them from the ground you have built. Tell them what is right for you, and keep learning what that means. You do not need their permission to live with integrity."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.katha.nachiketa_sent",
+     "title": "Nachiketa questions his father's gift",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Nachiketa",
+      "Vajashravasa (Auddalaki)"
+     ],
+     "story_hook": "Nachiketa watched his father give away cows too old to give milk, and could not keep quiet.",
+     "summary": "A father makes a show of giving away all he owns, but the cows are old and dry. His young son Nachiketa keeps asking who he will be given to, until the father snaps, 'To Death!' The boy goes, and tells his father to keep his word.",
+     "lesson": "A child's honest question can show up an adult's empty gesture.",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "anchor": {
+      "id": "up_kath.1.1.4",
+      "ref": "Katha Upanishad 1.1.4",
+      "ref_iast": "Kaṭha Upaniṣad 1.1.4",
+      "family": "up",
+      "speaker": "Nachiketa",
+      "listener": "His father Vajashravasa",
+      "setting": "A boy watches his father give away worn-out cows as a show of piety.",
+      "sanskrit": "स होवाच पितरं तत कस्मै मां दास्यसीति । द्वितीयं तृतीयं तं होवाच मृत्यवे त्वा ददामीति ॥",
+      "line": "A boy asks his father three times, 'To whom will you give me?' The angry answer: 'To Death.'",
+      "translation": "He said to his father, 'Father, to whom will you give me?' He asked a second time, and a third. His father said, 'To Death I give you.'",
+      "why": "A child's honest question can show up an adult's empty gesture.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "parent_conflict",
+        "label": "I keep fighting with my parents"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.katha.nachiketa_sent",
+       "title": "Nachiketa questions his father's gift",
+       "summary": "A father makes a show of giving away all he owns, but the cows are old and dry. His young son Nachiketa keeps asking who he will be given to, until the father snaps, 'To Death!' The boy goes, and tells his father to keep his word.",
+       "story_hook": "Nachiketa watched his father give away cows too old to give milk, and could not keep quiet.",
+       "lesson": "A child's honest question can show up an adult's empty gesture."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Young Nachiketa questioned his father's gift, and his angry father gave him to Death",
+     "teaser": "Young Nachiketa questioned his father's gift, and his angry father gave him to Death",
+     "for_you": "Nachiketa looked his father in the eye and asked the one question that mattered, even when it cost him everything. When your parents try to hand you a smaller life than the one you have built, you can do the same."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Over-ruled in the business",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 151,
+   "llm": 5670,
+   "total": 11708,
+   "select": 5575
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You run a business you built from nothing, and you still feel your father's voice overrule you. You are not weak for feeling this. You are feeling what it is to be trapped by a love that has become a cage."
+  ],
+  [
+   "scene",
+   "Arjuna stands in his chariot. He looks at the enemy camp, and he sees his own people there. His teacher is there, and his cousins are there. He looks at them, and he cannot move. His limbs shake, his mouth goes dry, and his skin burns. He drops his bow and his arrows, and he sits down in the chariot. And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "सीदन्ति मम गात्राणि मुखं च परिशुष्यति, वेपथुश्च शरीरे मे रोमहर्षश्च जायते. गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते, न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः."
+  ],
+  [
+   "line",
+   "In plain words: Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero."
+  ],
+  [
+   "unpack",
+   "This is not the picture of a hero. This is the picture of a man who is about to fight his own family, and his body simply stops. It is the truth that strength does not mean the absence of fear. It means the body still shakes, and the man still speaks. You are not weak for this. You are only human."
+  ],
+  [
+   "for_you",
+   "When your father speaks, let your body feel what it is feeling without arguing with it. Your body knows the truth. Let it know that you are still standing, even if your hands are shaking."
+  ],
+  [
+   "close",
+   "Your body knows the truth before your mind does."
+  ]
+ ],
+ "depth": {
+  "life": "You run a business you built from nothing, and you still feel your father's voice overrule you. You are not weak for feeling this. You are feeling what it is to be trapped by a love that has become a cage.",
+  "points": "Even the strongest people freeze. The Gita begins with a breakdown, not a hero. What you are feeling right now is not a failure of your strength. It is the body telling the truth about a love that has become a cage.",
+  "practice": "Notice where your body holds this feeling today. Let it be there without trying to fix it.",
+  "question": "What does your body know that your mind is still trying to deny?"
+ }
+}

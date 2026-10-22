@@ -1,0 +1,502 @@
+{
+ "persona": {
+  "id": "uk_boomer_grandmother_lonely",
+  "market": "UK (Birmingham)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "68, came from Jalandhar in 1976, worked in a factory then raised 3 children. Widowed. Children busy, grandchildren on phones. Reads Ramcharitmanas.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "lonely in a full house",
+   "bridge": "The company you find in the morning is what the Upanishads call the self that does not pass: the only company that does not leave.",
+   "week_thesis": "By the end of the week the morning company you already have becomes the answer to the loneliness you feel on Sunday.",
+   "week_beats": {
+    "hook": "You recognise the loneliness of a full house and the search for something deeper.",
+    "diagnose": "You see that the search is for what does not pass, not for more people in the room.",
+    "steady": "You hold that the self that does not pass is the only company that does not leave, and it is already yours.",
+    "act": "You try one morning of treating the reading as a living conversation, not a habit.",
+    "story": "A woman who raised a house alone finds the company that does not pass shows you what it means to be never alone."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "rcm"
+   ],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A widowed retired woman who raised her children alone finds her Sunday visits lonely because her children are always on their phones, and she is looking for something deeper.",
+   "mirror": "You raised them alone, and on Sunday they sit beside you on their phones.",
+   "insight": "It isn't the phones they hold that leave you lonely. It's the company that does not pass, which you are already finding in the morning before they arrive.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.244,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.392,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet of a house full of people, and the search for a company that does not leave.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "The self that does not pass is the only company that does not leave; it is here now, and it is yours.",
+    "act": "Sit with what does not pass; let the morning reading become a living conversation with what is always present.",
+    "story": "A woman who raised a house alone, and in her widowhood found the company that does not pass."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The company that does not pass",
+    "What does not pass",
+    "The one who is always present"
+   ],
+   "seat": "a widowed retired woman whose children visit but do not see her",
+   "life_context": "Retired and widowed, her children come on Sunday but are always on their phones, so she reads the Ramayan in the morning and calls it her only company.",
+   "details": [
+    "children visit on Sundays but are always on their phones",
+    "reads Ramayan in the morning",
+    "calls it her only company"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "stance:seeking_over_pain",
+    "retried:1",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:invented_name=1,repeat=2,soft_kept=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.15.15",
+     "ref": "Bhagavad Gita 15.15",
+     "ref_iast": "Bhagavad Gītā 15.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on his power sustaining the world and dwelling in every heart.",
+     "sanskrit": "सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च । वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम् ॥",
+     "line": "I am seated in every heart. Memory, knowledge and their fading come from me.",
+     "translation": "I am seated in the hearts of all. From me come memory, knowledge and their loss. I alone am what is to be known by all the Vedas; I am the author of Vedanta and the knower of the Vedas.",
+     "why": "The sacred is seated in every heart.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p15.3",
+      "title": "The Supreme Lord and his power",
+      "summary": "Krishna is the light of sun and moon, the nourishment of plants, the digestive fire, and is seated in every heart.",
+      "story_hook": "",
+      "lesson": "The sacred is seated in every heart."
+     },
+     "score": 1.4285,
+     "beat": "hook",
+     "role_fit": 0.105,
+     "meaning": "Krishna tells Arjuna that he sits inside every heart, and from that place memory and knowledge arise, and also their loss. He is the source of all the Vedas and the one they point to. The world runs on this presence, and the mind draws its knowing from it. The loneliness you feel when your children look away is the ache of this inner light being dimmed by distraction.",
+     "for_you": "When your children sit in the room but look at their screens, they are not truly there. The company you find in the morning, before they arrive, is the one that does not look away. It is already seated in your heart, waiting."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.5621,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "Ashma speaks to King Janaka, who has lost his family and wealth, about how to carry such grief. He tells him that pain comes from what we did not want and what we have lost, and that meetings always end. Ashma says that days do not come back. He asks Janaka to steady his mind by asking where he came from, where he is going, and who he is. This is not to dismiss the grief, but to hold it steady until it passes.",
+     "for_you": "The Ramayan is already doing this for you in the morning. It asks you where you come from and who you are. Let that be the steady company that Sunday cannot disturb."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.146.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 146",
+     "family": "rcm",
+     "speaker": "Sumantra",
+     "listener": "Dasharath",
+     "setting": "Sumantra returns alone to the grieving king Dasharath and steadies him.",
+     "sanskrit": "जनम मरन सब दुख सुख भोगा। हानि लाभु प्रिय मिलन बियोगा॥ काल करम बस होहिं गोसाईं। बरबस राति दिवस की नाईं ॥ सुख हरषहिं जड़ दुख बिलखाहीं। दोउ सम धीर धरहिं मन माहीं॥ धीरज धरहु बिबेकु बिचारी। छाड़िअ सोच सकल हितकारी ॥",
+     "line": "Gain and loss, meeting and parting come like day and night. The steady hold both alike.",
+     "translation": "Birth and death, joy and sorrow, loss and gain, meeting and parting with those we love: these come under the sway of time and action, as surely as night and day. The foolish rejoice in good times and wail in bad; the steady hold both alike in the mind. Hold on to your courage, think with discernment, and let go of worry, you who care for everyone.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.02,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Sumantra, the minister who drove Rama into the forest, returns to Dasharath, who is drowning in grief. He tells the old king that gain and loss, meeting and parting are as regular as night and day. The foolish mind swings between joy and sorrow, but the steady mind holds both the same. He asks the king to keep his courage, think clearly, and let go of worry.",
+     "for_you": "The Sunday you wait for is like the king's morning. Your children come, but the phones between you are a parting. You already hold the steady mind. Let the Ramayan be your courage, not a worry. Let it steady you while it hurts."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.127.doha.1",
+     "ref": "Ramcharitmanas, Ayodhya Kand 2.127 (doha 1)",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.127",
+     "family": "rcm",
+     "speaker": "Valmiki",
+     "listener": "Ram",
+     "setting": "Valmiki ends his list of the hearts Ram lives in.",
+     "sanskrit": "जाहि न चाहिअ कबहुँ कछु तुम्ह सन सहज सनेहु। बसहु निरंतर तासु मन सो राउर निज गेहु ॥",
+     "line": "The one who wants nothing from you and simply loves you: that heart is your own home.",
+     "translation": "One who never wants anything from you and simply loves you: live in that mind always; it is your own home.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.8757,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "Valmiki tells Ram that the one who wants nothing from you and simply loves you is your own home. This is the heart that does not change, no matter the passing of time or the turning of days.",
+     "for_you": "The Ramayan you read in the morning is this heart. It asks nothing from you. Let it be the home you return to when the room feels full but empty."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "sur.vp.250",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 250)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the Lord",
+     "setting": "Surdas on the Lord's readiness.",
+     "sanskrit": "कबहूँ तुम नाहिन गहरु कियो | सदा सुभाव-सुलभ सुमिरन-बस, भक्तनि अमर दियौ ॥",
+     "line": "You never once delayed. You are easy to reach, and remembering you is enough to win you.",
+     "translation": "You have never once delayed. By nature easy to reach and won over by remembrance, you have always given your devotees what is undying.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9356,
+     "beat": "act",
+     "role_fit": 0.435,
+     "meaning": "Surdas sings to the Lord, knowing that the divine is never late. The Lord is easy to reach, and a simple remembering is enough to win over. He has always given what does not pass away, and never once delayed. The idea is that the one who loves you without asking for anything in return is the true home you already carry inside you.",
+     "for_you": "when you open the Ramayan tomorrow morning, read it as if you are speaking directly to the one who loves you without asking for anything. Let the morning reading be the home that does not pass, so Sunday's loneliness loses its hold."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.104.28",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.28",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage to the ruined prince Kshemadarshi, who keeps longing for what he lost.",
+     "sanskrit": "अवाप्यान्कामयन्नर्थान्नानवाप्यान्कदाचन / प्रत्युत्पन्नाननुभवन्मा शुचस्त्वमनागतान्",
+     "line": "Want what is within reach. Enjoy what is here now. Don't grieve over what hasn't happened.",
+     "translation": "Wish for what can be had, never for what cannot. Enjoy what is in front of you now, and do not grieve over what has not yet come.",
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 2.64,
+     "beat": "act",
+     "role_fit": 0.679,
+     "meaning": "Kalakavrikshiya speaks to the ruined prince Kshemadarshi. The prince keeps looking back at what he lost, his kingdom and wealth. The sage tells him that grief cannot bring back what is gone. He says to wish for what is within reach, to enjoy what is in front of you now, and to stop grieving over what has not yet happened.",
+     "for_you": "This morning, as you read your verses, try to receive them as a meeting, not a habit. Let the words be the company that does not pass, and see if the Sunday silence feels any different by evening."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       },
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "Shabari waited for Ram with fruit she gathered every day. Your morning reading is your fruit. It is already here, and it is already enough."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The company that does not pass",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 1203,
+   "llm": 4198,
+   "total": 20157,
+   "select": 14748
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house fills on Sunday, but it feels empty. You are surrounded by your children and their voices, yet their eyes are on the small screens in their hands. You are carrying the quiet weight of being seen but not met in the room."
+  ],
+  [
+   "scene",
+   "Krishna is speaking to Arjuna on the battlefield. He is telling him about the power that sustains the world and the one who dwells in every heart. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च, वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम्."
+  ],
+  [
+   "line",
+   "In plain words: I am seated in every heart. Memory, knowledge and their fading come from me."
+  ],
+  [
+   "unpack",
+   "The sacred does not sit outside you. It sits inside every heart. From that inner place, memory and knowledge arise. It is the source of all that you know, and also the place where forgetting begins. This is the reality underneath what you feel on Sunday. The light that knows your life is already seated in you. When your children look away, it is not because you are empty. It is because the light inside them is dimmed by what they hold."
+  ],
+  [
+   "for_you",
+   "When they arrive on Sunday and their eyes go to the screens, do not try to pull them away. Instead, let your morning reading be the company you return to. That presence is already seated in your heart. It does not look away."
+  ],
+  [
+   "close",
+   "The company that does not pass is already waiting."
+  ]
+ ],
+ "depth": {
+  "life": "Your children sit in the room with you, but their eyes are on their screens. The Sunday silence is not empty. It is full of the morning you already know, the one you read before they arrive.",
+  "points": "The sacred is seated in every heart. The company that does not pass is already within you. It does not look away. It does not need a screen to be present with you.",
+  "practice": "Sit in the morning light and feel the presence that is already seated in your heart, before the day begins.",
+  "question": "What does this seated presence feel like in your chest?"
+ }
+}

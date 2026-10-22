@@ -1,0 +1,507 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "guilty and torn",
+   "bridge": "What you are living with is what the texts call needing their approval, and that is where this week begins.",
+   "week_thesis": "The split you feel between work and motherhood is not a failure of you. It is the need for approval that is not letting you rest. The week is about putting the need down.",
+   "week_beats": {
+    "hook": "You recognise the split between work and home, and the guilt that follows your daughter's question.",
+    "diagnose": "You see that the need for approval is what turns her question into a verdict on your worth.",
+    "steady": "You hold that your worth is not measured by one question or one school thing.",
+    "act": "You try being fully present with your daughter when you are with her, and letting your work be what it is when you are at work.",
+    "story": "A mother who wept at her child's question shows you that presence is the only gift that cannot be divided."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.6,
+   "core_struggle": "A working mother of two young children feels she is half a mother and half a PM, and her daughter's question about school things broke her in the car.",
+   "mirror": "You give the day everything at work, then lie awake replaying your daughter's question in the car.",
+   "insight": "The mother you are in that car and the PM you are at work are not two halves. The need for approval is what makes the split feel like a failure.",
+   "mechanism": "need_for_approval",
+   "mechanism_label": "Needing their approval",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.64,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 1.535,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.363,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The feeling of being split between two lives, and the guilt that rises when your daughter's question lands in the car after a long day.",
+    "diagnose": "When your worth depends on others' praise, every word of blame shakes you; the need for approval keeps the mind unsteady and turns a child's question into a verdict.",
+    "steady": "Praise and blame come and go; what you are is not measured by one question from one child, or by how many school things you attend.",
+    "act": "Do your work fully and let it go, and when you are with your daughter, be there with your whole attention; the two are not in competition.",
+    "story": "A mother who was pulled in two directions, wept at her child's question, and learned that being present is the only gift that matters."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The split and the need",
+    "Presence, not halves",
+    "More than one role"
+   ],
+   "seat": "",
+   "life_context": "In her thirties with two young children and a PM role; she is back at work, and the gap between the mother her daughter sees and the mother she wants to be is what keeps her up.",
+   "details": [
+    "back at work after second baby",
+    "feels she is half a mother and half a PM",
+    "daughter asked why she doesn't come to school like other moms",
+    "cried in the car after that"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "seat:missing",
+    "week_fit:67=0.6,61=0.6,19=0.3,17=0.3,536=0.6,47=0.3",
+    "week_fit:swapped=3",
+    "redo:4",
+    "redo_fixed:3",
+    "dropped:invented=1,repeat=3,soft_kept=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.67",
+     "ref": "Bhagavad Gita 2.67",
+     "ref_iast": "Bhagavad Gītā 2.67",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते । तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥",
+     "line": "When the mind chases a wandering sense, it is swept off like a boat in the wind.",
+     "translation": "When the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.3525,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Arjuna asks Krishna how a person of steady mind acts, and Krishna tells him. He describes someone who is calm, content, and in control. Then Krishna explains how a person loses that steadiness. When the mind chases after what the senses are drawn to, it is swept away like a boat caught in a strong wind on the water. The understanding is carried off. Steadiness is built by guarding where the mind goes. Anger and confusion begin with what you dwell on.",
+     "for_you": "You are caught between the PM who meets targets and the mother your daughter wants. That pull is not a failure of you. It is the mind chasing after approval, and it is sweeping your understanding away. See the split for what it is, and let the need for their approval rest for a moment."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.61",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 61",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own heart",
+     "setting": "Opening verse of 'Advice to the Mind'.",
+     "sanskrit": "परेषां चेतांसि प्रतिदिवसमाराध्य बहुधा प्रसादं किं नेतुं विशसि हृदय क्लेशकलितम् । प्रसन्ने त्वय्यन्तः स्वयमुदितचिन्तामणिगणो विविक्तः संकल्पः किमभिलषितं पुष्यति न ते ॥",
+     "line": "Why exhaust yourself daily winning others' approval? Settle inside, and your own clarity grants every wish.",
+     "translation": "O heart, why do you enter into weariness, day after day trying to please the minds of others in so many ways, to win their favour? When you are at peace within, your own clear resolve rises by itself like a cluster of wish-granting gems: what wish of yours would it not fulfil?",
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 3.0496,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "Bhartrihari asks his own heart why it exhausts itself trying to please the minds of others. When you are at peace within, your own clear resolve rises by itself, and there is no wish it would not fulfill.",
+     "for_you": "You are trying to win your daughter’s approval by being present in a way that is impossible for you. This need is what turns her question into a verdict on your worth. You do not have to earn her love by being the perfect mother."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.3058,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to you from the section on steadfastness. He says that the steady do not step off the right path. Let the worldly-wise blame or praise. Let fortune come or go as she pleases. Let death come today or ages hence. He says setbacks rarely last for those who keep going on the right path. He is asking you to set your own worth inside, so that nothing outside can shake your ground.",
+     "for_you": "Your daughter's question is just one sound in a loud room. Do not let it knock you off the path you are already walking. You are not half a mother. You are the mother she has, and that is enough."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.1499,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": null,
+     "for_you": "Your daughter's question in the car was a current that made you burn. You do not have to step off the right path because of one school thing. Let the praise and the blame of motherhood pass over you like water. Stay deep and still, and let your next move be calm."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.2131,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu tells Nidagha that a person can be fully active in the world while remaining calm within. The teaching is to act with the body and mind engaged, but to let the inner self remain free from agitation. The work happens on the outside, but the stillness stays inside. This is how a free person moves through life, doing what is needed without letting the results disturb their core.",
+     "for_you": "When you are with your daughter, let your work be at work and your presence be with her. The guilt comes from trying to be both at once. Let the PM rest at the office and let the mother be fully there when she is home."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.45",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.45",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "न चाभ्युदितसायी स्यात्प्रायश्चित्ती तथा भवेत् / मातापितरमुत्थाय पूर्वमेवाभिवादयेत् / आचार्यमथवाऽप्यन्तं तथाऽऽयुर्विदन्ते महत्",
+     "line": "Start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "translation": "Don't sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder; that is how a long life is won.",
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 2.99,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Bhishma is telling Yudhishthira what makes a life long and good. He says start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "for_you": "You are carrying the weight of being a mother and a PM. Your daughter sees the gap between them. This verse asks you to see your life as a series of small daily acts. What is one small act of presence you can offer your daughter this morning?"
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "present_parent",
+        "label": "I'm physically home but not present with my kids"
+       },
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "Your daughter does not need the whole universe. She needs the mother who will sit with her after school and listen, even if your mind is still on the PM role. That presence is the only gift that cannot be divided."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The split and the need",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 178,
+   "llm": 4513,
+   "total": 18317,
+   "select": 13617
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are in the car and the tears will not stop. Your daughter asked why you do not come to school like the other mothers. You feel torn between the PM who meets targets and the mother she wants. That split is heavy and it hurts."
+  ],
+  [
+   "scene",
+   "Arjuna asks Krishna how a person of steady mind looks when they sit, walk, and speak. Krishna tells him. He describes someone calm, content, and unshaken. Then Krishna explains how that steadiness is lost. Krishna said:"
+  ],
+  [
+   "sanskrit",
+   "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते, तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि."
+  ],
+  [
+   "line",
+   "In plain words: When the mind chases a wandering sense, it is swept off like a boat in the wind."
+  ],
+  [
+   "unpack",
+   "Steadiness is built by guarding where the mind goes. The mind chases what it is drawn to. That chase carries away your understanding. This is easier said than done, because the need for approval pulls the mind in many directions at once. It makes you feel like two people. But the split is not a failure of you. It is simply the mind chasing what it thinks it needs."
+  ],
+  [
+   "for_you",
+   "Right now, you are the PM and the mother at the same time. The approval you are chasing is what makes the split feel like a wound. Let the need to be the perfect mother rest for a moment. You do not have to prove your love by being physically present at every school event."
+  ],
+  [
+   "close",
+   "Who are you when you stop chasing their approval?"
+  ]
+ ],
+ "depth": {
+  "life": "You are in the car, the door closed, and the guilt is a heavy coat. The PM in you is still calculating, and the mother in you is mourning. You are home, but your attention is still on the workplace, and that is where your daughter feels the distance.",
+  "points": "The split is not real. The need for approval is what makes it feel like a failure. When you are present, you are whole. When you are not, you are simply tired, and the mind is chasing the approval it thinks it needs.",
+  "practice": "When you sit down to eat with your children, put your phone away and look at them. Let them see you, fully, for just a few minutes.",
+  "question": "What would it feel like to be fully present with your children, without the PM in your head?"
+ }
+}

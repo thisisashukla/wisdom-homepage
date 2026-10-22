@@ -98,7 +98,8 @@ USER_GENDERED_RE = re.compile(r"\bas a (mother|father|wife|husband|woman|man|gir
 
 
 GONE_RE = re.compile(r"\b(is gone|are gone|will (never|not) (come back|return)|never see (his|her|their) face again|has left this world|"
-                     r"passed (away|on)|no longer (here|with you))\b", re.I)
+                     r"passed (away|on)|no longer (here|with you)|griev(e|ing) (for )?(someone|the one|a person) (you )?(loved?|lost)|"
+                     r"(your|the) (loss|grief) of (him|her|them)|mourn(ing)?\b)\b", re.I)
 INVENTED_RE = re.compile(r"\b(l(ie|ying) awake|can'?t sleep|sleepless|anxious|anxiety|panic|the (fear|doubt) (is|has) (already )?(starting|begun|started)|"
                          r"(in|inside) (the|your) marriage|your marriage is)\b", re.I)
 
@@ -236,6 +237,8 @@ def _user(ctx: PersonContext, items: List[dict], redo: Optional[Dict[str, List[s
             row += f"\n  what this day must do for them: {ctx.week_beats[it['beat']]}"
         if it.get("prev_line"):
             row += f"\n  the day before gave them ({it.get('prev_ref') or 'a verse'}): {it['prev_line']}"
+        if it.get("earlier_lines"):
+            row += "\n  already said this week (do not restate; add the move this day's job asks for): " + " | ".join(it["earlier_lines"])
         rows.append(row + "\n" + grounding_block(it))
     head = f"THE PERSON\n{person_block(ctx)}\n\nDAYS\n" + "\n".join(rows)
     if redo:
@@ -298,6 +301,7 @@ async def personal_parts(llm, ctx: PersonContext, items: List[dict], timeout_s: 
         it.setdefault("day", k + 1)
         if k:
             it["prev_line"], it["prev_ref"] = items[k - 1].get("line"), items[k - 1].get("ref") or items[k - 1].get("title")
+            it["earlier_lines"] = [x.get("line") for x in items[:k] if x.get("line")][-4:]
     t0 = time.perf_counter()
     parts_in = [items[:1]] + _chunks(items[1:], chunk)      # each day alone (chunk=1): a pair loses its second day one time in four on Sarvam
     got = await asyncio.gather(*(_call(llm, ctx, part, timeout_s) for part in parts_in))
@@ -368,6 +372,7 @@ async def personal_parts(llm, ctx: PersonContext, items: List[dict], timeout_s: 
                     motif[w] += 1
             elif why:
                 bad.append(why)
+                logger.info("personal parts: dropped for_you (%s) %s: %s", why, it["id"], str(r.get("for_you"))[:140])
         if it.get("kind") != "story" and "meaning" not in parts:
             m, why = why_meaning(r.get("meaning"), it, ctx.risk, ctx.stance, bool(ctx.gender), known, True)
             if m and copied(m):                       # the insight put in a character's mouth: cut that sentence

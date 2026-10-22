@@ -13,7 +13,7 @@ except Exception: pass
 def run(name):
     files = sorted(Path(f"evals/out/{name}").glob("*.json")); files = [f for f in files if not f.name.startswith("_")]
     n = len(files); fy_t = fy_w = mn_t = mn_w = 0; d1_t = 0; d1_tmpl = 0; stance_ok = stance_n = 0
-    lat = []; day1 = []; nongita = 0; mirror_label = 0; insight_tmpl = 0; gender_ok = gender_n = 0; missing = 0; gendered = 0
+    lat = []; day1 = []; nongita = 0; mirror_label = 0; insight_tmpl = 0; gender_ok = gender_n = 0; missing = 0; gendered = 0; wsim = []; wmax_hi = 0; same_sw = 0
     for f in files:
         d = json.loads(f.read_text()); p = d["persona"]; plan = d["plan"]; u = plan["understanding"]
         lat.append(plan["timings_ms"]["total"])
@@ -36,12 +36,16 @@ def run(name):
         missing += sum(int(x) for x in re.findall(r"missing=(\d+)", fl)); gendered += sum(int(x) for x in re.findall(r"gendered=(\d+)", fl))
         g = u.get("gender")
         if g is not None: gender_n += 1; gender_ok += (g == p["gender"])
+        m = re.search(r"week_sim:mean=([\d.]+),max=([\d.]+)", fl)
+        if m: wsim.append(float(m.group(1))); wmax_hi += float(m.group(2)) > 0.85
+        same_sw += len(re.findall(r"week_same:", fl))
     uniq = len(set(day1))
     return {"run": name, "n": n, "for_you_written": f"{fy_w}/{fy_t} ({100*fy_w/max(1,fy_t):.0f}%)", "day1_template": f"{d1_tmpl}/{d1_t}",
             "meaning_written": f"{mn_w}/{mn_t} ({100*mn_w/max(1,mn_t):.0f}%)", "stance_correct": f"{stance_ok}/{stance_n}",
             "mirror_fallback": f"{mirror_label}/{n}", "insight_template": f"{insight_tmpl}/{n}", "day1_unique": f"{uniq}/{n}",
             "day1_non_gita": f"{nongita}/{n}", "gender_set_correct": f"{gender_ok}/{gender_n}", "chunk_misses": missing, "gendered_drops": gendered,
-            "latency_ms_median": int(statistics.median(lat)) if lat else 0}
+            "week_sim_mean": f"{statistics.mean(wsim):.3f}" if wsim else "-", "week_pair_over_0.85": f"{wmax_hi}/{len(wsim)}" if wsim else "-",
+            "week_same_swaps": same_sw, "latency_ms_median": int(statistics.median(lat)) if lat else 0}
 rows = [run(r) for r in sys.argv[1:]]
 keys = list(rows[0].keys())
 w = max(len(k) for k in keys)

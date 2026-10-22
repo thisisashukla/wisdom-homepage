@@ -1,0 +1,498 @@
+{
+ "persona": {
+  "id": "ca_millennial_new_immigrant",
+  "market": "Canada (Toronto)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "36, was a bank branch manager in Hyderabad, moved to Toronto 8 months ago on PR, now driving Uber while applying. Wife and 4-year-old. Winter.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 5,
+   "topic": "work",
+   "follow": "didnt_work_out"
+  },
+  "note": "I managed 40 people in Hyderabad. Here I drive Uber at night and my wife cries about the cold. Everyone says Canadian experience. I did this for my son's future but right now I feel like I've ruined our present",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and grieving",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "Seven days from being dismissed in a new country to standing in the life you chose, with the words to say so.",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "partner",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "A man who managed forty people is now driving at night in a new country, being dismissed for his lack of local experience, and feels he has ruined the present for his son's future.",
+   "mirror": "You managed forty people, and now you drive through the night while your wife cries about the cold.",
+   "insight": "Even among people, you've felt unseen. The distance is real, and so is the way back.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.581,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.562,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.52,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "Being seen as less than you are by a new country that cannot see your past, and the grief of feeling you traded the present for a future that may never arrive.",
+    "diagnose": "When others see only a role they can measure, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A man who left a senior post to build a life in a new land, dismissed by those who could not see his past, who stood in his truth and found his footing again."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Seen as less",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "managed people in Hyderabad",
+    "now drives Uber at night in Canada",
+    "wife cries about the cold"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "bridge:copied_example",
+    "insight:template",
+    "seat:missing",
+    "week_fit:8=1.0,42=0.0,6=0.6,22=0.6,532=0.6,7=0.0",
+    "week_fit:swapped=2",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:fallback_line=1,verdict=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.2622,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands on the battlefield and tells Krishna they see nothing that could drive away this sorrow, not even ruling over the gods. They admit they are confused and cannot tell which choice is better. They ask Krishna to teach them what is right. Admitting you do not know and asking for help is where clarity begins.",
+     "for_you": "You have managed people in Hyderabad, and now you drive at night in a new country. You feel dismissed and that you have ruined your son's future. You do not know what to do next. You can admit this confusion to yourself before you try to fix anything."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.18.16",
+     "ref": "Bhagavad Gita 18.16",
+     "ref_iast": "Bhagavad Gītā 18.16",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Right after naming the five causes of any action, Krishna warns about the person who ignores four of them.",
+     "sanskrit": "तत्रैवं सति कर्तारमात्मानं केवलं तु यः । पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः ॥",
+     "line": "If you think you alone made it happen, or alone made it fail, you're not seeing the whole picture.",
+     "translation": "That being so, whoever, through an untrained understanding, sees himself alone as the doer does not truly see.",
+     "why": "You are one cause among five; own your part, not the whole outcome.",
+     "misuse": "Not a way to dodge responsibility; you are still one of the five causes.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.2",
+      "title": "What makes an action happen",
+      "summary": "Every action has five causes: the setting, the doer, the instruments, the efforts, and providence. Seeing oneself as the only doer is a mistake.",
+      "story_hook": "",
+      "lesson": "You are one cause among five; own your part, not the whole outcome."
+     },
+     "score": 2.7326,
+     "beat": "diagnose",
+     "role_fit": 0.681,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, right after explaining that every action comes from five causes. Krishna warns that the person who thinks they are the only one acting does not truly understand. If you believe you alone made something happen, or that you alone caused it to fail, you are missing the rest of the picture. You are one cause among five. You own your part, but you do not own the whole outcome.",
+     "for_you": "You managed forty people in Hyderabad and now you drive through the night in Canada. That is a huge shift, and it is natural to feel you have failed. But you are one cause among many. Own your part, not the whole outcome."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.6.21.6",
+     "ref": "Valmiki Ramayana · Yuddha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 21.6",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram has lain on the shore for three days asking the ocean for a way across. No answer comes.",
+     "sanskrit": "अवलेपः समुद्रस्य न दर्शयति यः स्वयम्। प्रशमश्च क्षमा चैव आर्जवं प्रियवादिता॥ असामर्थ्यफला ह्येते निर्गुणेषु सतां गुणाः।",
+     "line": "Calm, patience, honesty and kind words: people who don't value them will read them as weakness.",
+     "translation": "See the ocean's arrogance: he does not even show himself. Calm, forbearance, straightforwardness and gentle speech, these virtues of the good, are taken by the unworthy as signs of weakness.",
+     "why": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+     "misuse": "Firmness only after real patience, and only toward someone who keeps ignoring you. When the ocean finally came, Ram listened and redirected the arrow.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ocean_humility_firmness",
+      "title": "Ram at the ocean: humble first, firm after",
+      "summary": "Ram lies on kusha grass by the shore for three days, asking the ocean for a way. Ignored, he tells Lakshman that patience is being taken for weakness and takes up his bow. The ocean rises, offers a way (Nala's bridge), and Ram releases the arrow elsewhere at its request.",
+      "story_hook": "For three days the prince lay on a bed of grass at the edge of the sea, asking politely.",
+      "lesson": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard."
+     },
+     "score": 2.7882,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ram lies on the shore for three days, asking the ocean for a way across. The ocean does not answer. Ram tells Lakshman that patience and gentle speech are being taken for weakness. He then takes up his bow. The ocean rises and offers a way. Ram listens and redirects his arrow. The point is to be humble first. If humility is taken for weakness, act firmly, and stop once you are heard.",
+     "for_you": "The quiet you keep at work is not weakness. It is the patience of a man who managed forty people. Let it hold you. If they dismiss you again for lacking local experience, stand firm. Say what you could say, then let it rest. You do not need to prove your worth to them."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 2.7091,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, where Arjuna is frozen by grief and doubt about fighting his own people. Krishna explains how the truly wise person moves through the world. This person is content with whatever comes unasked, free from the pull of envy, and steady through success and failure. Even while doing their work, they are not bound by it. They act, but the result does not chain them.",
+     "for_you": "The work you do now, driving through the night, is your field. The pay is what comes unasked, and the cold is the failure. Let the two sit side by side. Do not let the sting of dismissal make you bitter. You can drive this shift and still stay free."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.1988,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is telling Nidagha how a free person moves through the world. They do the work that is right in front of them, without chasing what they have lost or what they might gain. They treat friend and foe with the same eye, and they speak gently to everyone they meet. They try to understand what is truly going on inside the people around them. Because they are steady like this, they do not sink or drown in the world. They are busy and present, yet calm and free inside.",
+     "for_you": "You are driving your car through the dark streets of Canada. Let the work be just the driving. Speak gently to the person in the back seat. Notice what they need without judging them. Do this, and you will not sink."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 2.8313,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari is writing for the reader who has found some footing, after the fall. They are no longer drowning in the shock of being dismissed. They are living in a new country and trying to find a way through. The verse says that the good person does not grow proud when they succeed. They do not grow bitter when they fail. They cut away their cravings for praise, they give up their arrogance, they speak the truth, they help others, and they treat even those who hurt them with courtesy.",
+     "for_you": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.exile_order",
+     "title": "Ram hears he is to be exiled",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharath"
+     ],
+     "story_hook": "Ram walked in expecting a crown and walked out with a forest.",
+     "summary": "Ram is called to his father's room and finds him collapsed. Kaikeyi tells him the terms. Ram smiles: his brother gets the throne, he gets to meet sages in the forest, and he can keep his father's word. Kaikeyi reads his plain words as cunning, and Ram walks out feeling, the poet says, like an elephant freed from its post.",
+     "lesson": "A lost role can be met with grace; sometimes it even feels like freedom.",
+     "matched": [],
+     "anchor": {
+      "id": "rcm.2.42.chaupai.1",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 42",
+      "family": "rcm",
+      "speaker": "Ram",
+      "listener": "Kaikeyi",
+      "setting": "Ram, told by Kaikeyi that Bharat will be crowned and he exiled, answers her calmly.",
+      "sanskrit": "भरतु प्रानप्रिय पावहिं राजू। बिधि सब बिधि मोहि सनमुख आजू॥ जौं न जाउँ बन ऐसेहु काजा। प्रथम गनिअ मोहि मूढ़ समाजा ॥",
+      "line": "My beloved brother gets the throne. Fate is favouring me in every way today.",
+      "translation": "...and Bharat, dear to me as life, will have the kingdom. Fate is favouring me in every way today. If I would not go to the forest even for such a cause, count me first among fools.",
+      "why": "A lost role can be met with grace; sometimes it even feels like freedom.",
+      "misuse": "Grace in loss is not pretending it doesn't hurt.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "rcm.p.exile_order",
+       "title": "Ram hears he is to be exiled",
+       "summary": "Ram is called to his father's room and finds him collapsed. Kaikeyi tells him the terms. Ram smiles: his brother gets the throne, he gets to meet sages in the forest, and he can keep his father's word. Kaikeyi reads his plain words as cunning, and Ram walks out feeling, the poet says, like an elephant freed from its post.",
+       "story_hook": "Ram walked in expecting a crown and walked out with a forest.",
+       "lesson": "A lost role can be met with grace; sometimes it even feels like freedom."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram walked in expecting a crown and walked out with a forest",
+     "teaser": "Ram walked in expecting a crown and walked out with a forest",
+     "for_you": "You are driving through the cold night with the weight of your family on your shoulders. You can feel the shame of the dismissal. Yet you can also see the road ahead. Your new role is not a prison. It is a forest where you can walk freely and find a new kind of strength."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Seen as less",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 300,
+   "llm": 4774,
+   "total": 13804,
+   "select": 8723
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are driving at night in a new country. You managed forty people in Hyderabad. Now you feel dismissed. You carry a grief that no success could fix right now."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield and collapses. They tell Krishna they see no relief from their sorrow, not even if they ruled the earth or the gods. They admit they cannot tell what is right and ask Krishna to teach them. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "This is where clarity begins. When you admit you do not know the right path, you stop pretending. You are allowed to be confused. You do not have to have the answer yet. You only have to admit the weight of it."
+  ],
+  [
+   "for_you",
+   "Before you try to fix anything tonight, admit to yourself that you do not know what comes next. You do not have to solve it all at once. You only have to be honest about the weight you are carrying."
+  ],
+  [
+   "close",
+   "What if clarity begins with admitting you do not know?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit in the car at night after a shift, the cold outside, the voice of your partner still ringing. You managed people in Hyderabad, and now you drive. You feel dismissed, and you worry about your son's future.",
+  "points": "Arjuna, who is a warrior, says even a kingdom cannot touch this grief. The root is feeling cut off. You do not know what to do next, and that is where clarity begins.",
+  "practice": "Name one thing you do not know right now about your next step.",
+  "question": "What would it feel like to admit you do not know?"
+ }
+}

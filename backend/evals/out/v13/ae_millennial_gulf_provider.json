@@ -1,0 +1,524 @@
+{
+ "persona": {
+  "id": "ae_millennial_gulf_provider",
+  "market": "UAE (Dubai)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "35, works in logistics in Dubai for 11 years, sends money to parents and brother in Kerala, brother's wedding and father's surgery this year. Wife wants to move back.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "11 years in dubai sending money home. brothers wedding, fathers heart surgery, both this year. my wife wants to go back to india. everyone needs something from me and I don't know what I need",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "pulled in every direction and empty",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "Seven days from being pulled in every direction to finding the one duty that is truly yours, and the one hour that belongs only to you.",
+   "week_beats": {
+    "hook": "You recognise the mind that will not settle, named without blame.",
+    "diagnose": "You see that it is the conflict of duties, not the lack of you, that is exhausting you.",
+    "steady": "You hold that what is yours to do is yours, and the rest is not yours to carry.",
+    "act": "You try one hour that belongs only to you, and one thing you let go of that is not yours to carry.",
+    "story": "A son who was far from his father's bedside during a crisis shows you what choosing the one true duty looks like from the inside."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "sibling",
+    "family",
+    "parent",
+    "partner"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "In midlife and sending money home from abroad; the father's heart surgery and the brother's wedding both happened this year, his wife wants to return to India, and his mind will not settle from work.",
+   "mirror": "Eleven years in one place, and this year the two things that matter most happened to the people you are not there for.",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.875,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.77,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.517,
+     "source": "chip"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The mind that will not settle, pulled between a job abroad and a family at home, with no hour that is truly yours.",
+    "diagnose": "When duties pull in different directions and fear clouds which one is truly yours, the mind becomes its own enemy and will not rest.",
+    "steady": "Praise and blame, gain and loss, victory and defeat: these come and go; stay the same in them, and do not let the mind be shaken.",
+    "act": "Practise letting go of what is not in your hands, and give yourself one hour that belongs only to you.",
+    "story": "A son who was far from his father's bedside during a crisis, and had to choose which duty was truly his, and what it cost him."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The one duty that is yours",
+    "The hour that is yours",
+    "More than the roles you carry"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "years in Dubai sending money home",
+    "father had heart surgery this year",
+    "brother's wedding this year",
+    "wife wants to return to India"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "seat:missing",
+    "week_fit:34=0.9,34=0.8,84=0.6,20=0.6,47=0.7,2=0.6",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.7603,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna speaks to Krishna on the battlefield, admitting that the mind is turbulent and stubborn. He says holding it feels like trying to catch the wind. Krishna agrees with him. He says the mind is hard to hold, but practice and letting go can train it.",
+     "for_you": "The mind that will not settle is not yours to fix alone today. It is only showing you how many directions are pulling at once. Let it be stormy. You do not need to hold the wind."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 3.4726,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Two old friends, Bhasa and Vilasa, meet again after years of living alone in the forest. They talk about the life they have led. Vilasa admits they never found any real peace. He says the mind is always caught in a loop of past, present, and future tasks. It is carried on waves of doing and worrying, and it faints under the weight of endless lists. Years of hard effort without inner understanding leave a person exactly where they started, still exhausted.",
+     "for_you": "The exhaustion you feel is not because you are not enough. It is the conflict of duties, not the lack of you, that is draining you. Your mind is caught in the loop of what you have done, what you are doing now, and what you could do next."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.4566,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to the reader from a place of deep weariness, knowing that praise and blame are just noise. He says that whether fortune smiles or turns away, and whether death comes today or far in the future, the steadfast do not move a step from the path of what is right. The verse proposes that you do not need to chase after the shifting opinions of others or the changing tides of luck to know where to stand.",
+     "for_you": "You are holding the weight of what your family expects while your mind refuses to settle. This verse says your own sense of what is right is the only ground you could stand on. Let their voices and their needs be the weather, but you keep your feet on the path that is yours alone."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.20",
+     "ref": "Bhagavad Gita 5.20",
+     "ref_iast": "Bhagavad Gītā 5.20",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+     "sanskrit": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् । स्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः ॥",
+     "line": "Don't get carried away by good news or crushed by bad. Keep your understanding steady.",
+     "translation": "One should not rejoice on getting what is pleasant nor be troubled on getting what is unpleasant. Steady in understanding and undeluded, the knower of Brahman abides in Brahman.",
+     "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.3",
+      "title": "The yoga of knowledge",
+      "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+      "story_hook": "",
+      "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+     },
+     "score": 3.3124,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Krishna speaks to Arjuna on the inner happiness of one who sees clearly. The wise do not leap with joy when pleasant things arrive, nor do they collapse when unpleasant things come. They hold their understanding steady and undeluded, knowing that sense pleasures begin and end in sorrow. They abide in the deeper joy within, able to withstand desire and anger.",
+     "for_you": "That money sent from Dubai and the expectations at home are not yours to carry. What is truly yours is the steady work and the quiet hour that belongs only to you. Let the rest come and go, and keep your mind on what is right in front of you."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.728,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, telling him to focus entirely on the work itself and release his grip on the results. The idea is to act with full dedication while letting go of ownership over the outcome. It does not mean abandoning plans or ceasing to aim. It means working wholeheartedly and keeping your mind steady, whether the outcome is good or bad.",
+     "for_you": "Try setting aside one hour this evening that belongs only to you, without checking messages or thinking about money. Let go of the urge to solve everything for your family during that time. Just be present with the work you can control right now, and leave the rest for tomorrow."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 3.4349,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "The seer speaks to the reader after asking them to enjoy the world without grasping. The seer tells them to do their work and wish to live a full hundred years. The seer says there is no other way to live than this. If a person does their work in this spirit, their actions will not cling to them.",
+     "for_you": "Try to set aside one hour today that belongs only to you, and let go of one thing that is not yours to carry. You have been holding everything too tightly for too long, and this is how you begin to set it down."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.father_one_more_night",
+     "title": "One more night: Ram leaves his father",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Dasharatha",
+      "Ram"
+     ],
+     "story_hook": "His father asked for only one thing: one more night.",
+     "summary": "The broken king begs Ram to stay one more night so his parents can see him. Ram gently refuses, saying a promise made must be kept and he will return in fourteen years. Dasharatha embraces him and collapses.",
+     "lesson": "Goodbyes to ageing parents are hard; leave with love and a promise to return.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.34.28",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 34.28",
+      "family": "vr",
+      "speaker": "Dasharatha",
+      "listener": "Ram",
+      "setting": "The heartbroken king, bound by his promise, cannot stop Ram going but begs for one more night.",
+      "sanskrit": "मातरं मां च सम्पश्यन् वसेमामद्य शर्वरीम्। तर्पितः सर्वकामैस्त्वं श्वः काल्ये साधयिष्यसि ॥",
+      "line": "Stay tonight. Let your mother and me see you. You can leave in the morning.",
+      "translation": "Stay tonight, see your mother and me. Rest, have everything you want, and set out early tomorrow.",
+      "why": "Goodbyes to ageing parents are hard; leave with love and a promise to return.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.father_one_more_night",
+       "title": "One more night: Ram leaves his father",
+       "summary": "The broken king begs Ram to stay one more night so his parents can see him. Ram gently refuses, saying a promise made must be kept and he will return in fourteen years. Dasharatha embraces him and collapses.",
+       "story_hook": "His father asked for only one thing: one more night.",
+       "lesson": "Goodbyes to ageing parents are hard; leave with love and a promise to return."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Dasharatha begged Ram for just one more night",
+     "teaser": "King Dasharatha begged Ram for just one more night",
+     "for_you": "You are far from your father's bedside and your mind is pulled in every direction, but Ram's choice shows you that a promise kept is the truest duty. The love you carry for your parents does not vanish because you are not there."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The one duty that is yours",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 195,
+   "llm": 4396,
+   "total": 15162,
+   "select": 10561
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying a quiet exhaustion. It comes from years of sending money home from Dubai, and from this year alone, the heart surgery, the wedding, the waiting. Your mind feels like a room with too many doors and no walls."
+  ],
+  [
+   "scene",
+   "Arjuna is on the battlefield. He has asked Krishna about the path of action and the path of knowledge, and he is afraid. He tells Krishna that the mind is turbulent, powerful and stubborn. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Krishna does not tell Arjuna to fight his mind harder. He agrees that it is a force of nature. The mind is restless, stormy and stubborn. But it can be trained through practice and through letting go. This is not a battle to win. It is a thing to learn to hold differently, over time."
+  ],
+  [
+   "for_you",
+   "Tonight, when you close your eyes, do not fight the thoughts of the wedding or the surgery. Let them move through you like a wind. You do not need to catch it."
+  ],
+  [
+   "close",
+   "Can you let the wind move through you?"
+  ]
+ ],
+ "depth": {
+  "life": "You are in Dubai, sending money home for years. Your father had heart surgery this year. Your brother's wedding is this year. Your wife wants to return to India. You are on the phone four hours a day. Your mind will not settle. You feel pulled in every direction and empty.",
+  "points": "The mind is restless and strong. It is not a failure of yours. It is showing the weight of many duties pulling at once.",
+  "practice": "Sit for ten minutes without the phone. Just watch the thoughts move without holding them.",
+  "question": "What would it feel like to let the mind be stormy for one hour?"
+ }
+}

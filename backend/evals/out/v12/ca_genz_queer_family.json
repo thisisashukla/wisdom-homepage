@@ -1,0 +1,489 @@
+{
+ "persona": {
+  "id": "ca_genz_queer_family",
+  "market": "Canada (Vancouver)",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "22, Indo-Canadian, came out to her Punjabi parents last year, they went silent, now talk only about weather. She still goes home for Diwali.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "since I told my parents about my girlfriend they haven't said one real thing to me. we talk about the weather. I still go home for diwali and sit at the table and it's like I'm a guest",
+  "note_source": "text",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "lonely and unseen",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "From sitting at the table like a guest to sitting there as yourself, with the words to name what is happening.",
+   "week_beats": {
+    "hook": "You recognise being made smaller by the silence after your truth, and the loneliness of it, named without blame.",
+    "story": "A young person who brought home a truth their family could not hold shows you what it means to sit at the table anyway."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "partner",
+    "friend",
+    "teacher",
+    "work"
+   ],
+   "confidence": 0.85,
+   "core_struggle": "Has told their parents about their girlfriend and now is treated as a guest in their own home, especially at Diwali.",
+   "mirror": "You go home for Diwali and sit at the table like a guest in your own house.",
+   "insight": "You are not the problem. The silence is theirs, and the table is still yours. What hurts is not the quiet, but the feeling that you are no longer the child they raised.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 2.443,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.222,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.87,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being treated as a guest in your own home after telling the truth you were not allowed to speak, and sitting at the table that knows you.",
+    "diagnose": "When others cannot hold what you have said, they make the room small; the harm deepens only when you begin to believe the smallness is your size.",
+    "steady": "What you are cannot be made smaller by what they see; your truth was not the injury, their silence is, and your worth was never theirs to take back.",
+    "act": "Hold your ground on what is yours, speak the true thing when you can, and do not shrink to fit their picture of who you should be.",
+    "story": "A young person who brought home a truth their family could not hold, and who sat at the table anyway and was not erased by the silence."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The silence after the truth",
+    "Whose picture it is",
+    "More than their silence"
+   ],
+   "seat": "",
+   "life_context": "A student under twenty-five who is also working; after telling their parents about their girlfriend, the conversations have become about the weather, and at Diwali they sit at the table like a guest in their own house.",
+   "details": [
+    "told parents about their girlfriend",
+    "parents now only talk about the weather",
+    "still goes home for Diwali",
+    "sits at the table like a guest"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "flags": [
+    "seat:missing",
+    "week_fit:5=1.0,11=0.0,33=0.6,7=0.6,35=0.3,15=0.3",
+    "week_fit:swapped=3",
+    "retried:1",
+    "redo:4",
+    "redo_fixed:1",
+    "dropped:cliche=1,repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 1.2462,
+     "beat": "hook",
+     "role_fit": 0.14,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, telling him that no one else can lift him out of this state. You could raise yourself by your own self. The self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "for_you": "After telling your parents the truth, you are left alone with the silence. Do not become the enemy who pushes you down. You can be your own friend, steady and true, right there at the table."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.5.35.doha.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 35",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Ravana's ministers flatter him as Ram's army arrives; the poet comments.",
+     "sanskrit": "सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस राज धर्म तन तीनि कर होइ बेगिहीं नास ॥",
+     "line": "When advisers, doctors and teachers only say what pleases you, the ruin comes quickly.",
+     "translation": "When a minister, a doctor and a teacher speak only to please, out of fear or hope of reward, then the kingdom, the body and righteousness are soon destroyed.",
+     "why": "Beware a circle that only tells you what you want to hear.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.mandodari_first",
+      "title": "Mandodari pleads, the ministers flatter",
+      "summary": "Mandodari takes Ravana aside and begs him to return Sita before it is too late. He laughs at her fear and goes to court, where his ministers tell him only what pleases him. Tulsidas notes that when advisers, doctors and teachers speak only to please, ruin comes quickly.",
+      "story_hook": "Mandodari took her husband's hand and led him somewhere the ministers couldn't hear.",
+      "lesson": "Beware a circle that only tells you what you want to hear."
+     },
+     "score": 3.0915,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Tulsidas watches Ravana sit in his court as his ministers flatter him. They tell him only what he wants to hear, hiding the truth. The poet says this kind of circle is dangerous. It leads to quick ruin. The verse warns that when people around you speak only to please, you lose your footing. You stop seeing what is real.",
+     "for_you": "You sit at the table during Diwali and the conversation stays on the weather. This is your own court. The silence is not truth. It is the ruin Tulsidas speaks of, where you are being kept in a circle that only tells you what is easy. You can see through it."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.1.16",
+     "ref": "Ashtavakra Gita 1.16",
+     "ref_iast": "Aṣṭāvakra Gītā 1.16",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "त्वया व्याप्तमिदं विश्वं त्वयि प्रोतं यथार्थतः । शुद्धबुद्धस्वरूपस्त्वं मा गमः क्षुद्रचित्तताम् ॥",
+     "line": "You are pure awareness, wider than any worry. Don't let your mind shrink into pettiness.",
+     "translation": "This whole universe is pervaded by you and strung on you. By nature you are pure awareness; do not fall into smallness of mind.",
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 3.2575,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "King Janaka asks the young sage Ashtavakra how a person becomes free. Ashtavakra tells him that the whole universe is strung on him and that he is pure awareness. He urges the king not to shrink into smallness of mind, because freedom begins with knowing you are wider than any role or worry.",
+     "for_you": "The table at home is not smaller than you are. Let the quiet around you be there without shrinking into it. Your place at that table does not depend on their words."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.2285,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "King Dhritarashtra cannot sleep the night before the peace talks. Vidura comes to him. He tells the king that a wise person does not swell with praise or burn at a slight. They stay deep and still like a river pool. This is how a person finds true happiness.",
+     "for_you": "The silence at your table is their choice, not a measure of your worth. Let the Diwali quiet be the river pool. You do not have to shrink to fit it. Stay deep in what you know about yourself, and let the stillness hold you steady."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.6706,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": null,
+     "for_you": "Your parents have turned their back on you, but you still know the difference between what is right and what is wrong in your own life. Let that knowledge be your guide today."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.1827,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu tells Nidagha that a free person does not sink in the world. They take up the work that comes, treat everyone as kin, speak gently, and read what is in others' hearts. They let go of what is lost and do not crave what is not there. They simply live fully in the world while staying calm inside.",
+     "for_you": "The work in front of you is your own room and your own hands. Speak gently to them when they ask about the weather. Let their silence be theirs. Stay calm inside and do not sink in the world."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sarama",
+     "title": "Sarama, a friend in the enemy's house",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sarama",
+      "Sita"
+     ],
+     "story_hook": "Among all the guards, one of them wiped Sita's tears and told her the truth.",
+     "summary": "Ravana tries to break Sita with a fake head of Ram. Sarama, a kind rakshasi guard, comforts her, tells her the truth, and offers to find out what is being planned. Sita asks only to be told whatever is decided.",
+     "lesson": "One kind person can make an unbearable place bearable; knowing is easier than wondering.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "vr.6.34.11",
+      "ref": "Valmiki Ramayana · Yuddha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 34.11",
+      "family": "vr",
+      "speaker": "Sita",
+      "listener": "Sarama",
+      "setting": "A kind guard, Sarama, offers to spy for Sita; Sita asks only to know what is decided about her.",
+      "sanskrit": "यदि नाम कथा तस्य निश्चितं वापि यद्भवेत्। निवेदयेथाः सर्वं तद्वरो मे स्यादनुग्रहः॥",
+      "line": "Whatever has been decided, just tell me. Not knowing is the hardest part.",
+      "translation": "If there is any talk about him, or anything decided at all, tell me everything. That would be the greatest kindness to me.",
+      "why": "One kind person can make an unbearable place bearable; knowing is easier than wondering.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.sarama",
+       "title": "Sarama, a friend in the enemy's house",
+       "summary": "Ravana tries to break Sita with a fake head of Ram. Sarama, a kind rakshasi guard, comforts her, tells her the truth, and offers to find out what is being planned. Sita asks only to be told whatever is decided.",
+       "story_hook": "Among all the guards, one of them wiped Sita's tears and told her the truth.",
+       "lesson": "One kind person can make an unbearable place bearable; knowing is easier than wondering."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Among all of Sita's guards, one wiped her tears and told her the truth",
+     "teaser": "Among all of Sita's guards, one wiped her tears and told her the truth",
+     "for_you": "Sita did not need Ram's rescue to be herself. They did not need their parents to see them to be whole. You can sit at the table as a guest and still hold your own truth. The silence is theirs. The table is still yours."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The silence after the truth",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 143,
+   "llm": 4631,
+   "total": 19245,
+   "select": 14463
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The silence at the dinner table is loud. You are sitting with your parents at Diwali and feeling like a guest. You told them about your girlfriend, and now the conversations are about the weather. You feel unseen."
+  ],
+  [
+   "scene",
+   "Krishna is speaking to Arjuna on a battlefield. Arjuna is confused and afraid. He does not know how to act or what to do. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत्, आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः."
+  ],
+  [
+   "line",
+   "In plain words: Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend."
+  ],
+  [
+   "unpack",
+   "You are the only one who can truly lift you up. No one else can do it for you. If you wait for your parents to accept you, you will stay in the cold. You can be your own friend. You can support yourself and lift yourself up."
+  ],
+  [
+   "for_you",
+   "At the table tonight, do not push yourself down. Do not let the silence make you feel small. You are the one who gets to decide your worth. Be your own friend."
+  ],
+  [
+   "close",
+   "Who is on your side right now?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit at the Diwali table in the home you grew up in. The conversation stays on the weather. You are not the problem. The quiet is theirs. You are just a guest in your own life, and it hurts to be seen as less than who you are.",
+  "points": "You are your own best friend or your own worst enemy. No one else can lift you up. You must choose to be the friend who sees you clearly, even when the room goes quiet.",
+  "practice": "Stand in front of a mirror for one minute and say your own name out loud, looking at yourself.",
+  "question": "What would it feel like to sit at that table as your full self?"
+ }
+}

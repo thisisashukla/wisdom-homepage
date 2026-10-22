@@ -1,0 +1,506 @@
+{
+ "persona": {
+  "id": "in_boomer_mother_son_abroad",
+  "market": "India (Chennai)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "63, retired school principal in Chennai, husband alive, only son in Germany for 9 years with a German wife, visits every 2 years. Hindi is weak; English and Tamil.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "far_from_home"
+  },
+  "note": "my son has been in germany nine years. his wife is german, lovely girl. they will not come back I know this. I taught 2000 children and I cannot teach my own heart to stop waiting for him",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and quietly abandoned",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "Seven days from a heart that cannot stop waiting to a love that has somewhere to land.",
+   "week_beats": {
+    "hook": "You recognise the grief and the restlessness, named without blame.",
+    "diagnose": "You see that it is not the waiting but the nowhere-to-go of a real love that keeps it restless.",
+    "steady": "You hold that what is real in you cannot be taken away.",
+    "act": "You try giving your love a place to land, in one small act of teaching or tending.",
+    "story": "A mother who loved a son who would not return shows you what love that has nowhere to go can still become."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "partner",
+    "inlaws"
+   ],
+   "confidence": 0.6,
+   "core_struggle": "A retired teacher is grieving her son who has built a life abroad and will not return, while she taught thousands of children and cannot stop waiting for him.",
+   "mirror": "You taught two thousand children, and now your own heart will not be taught to stop waiting.",
+   "insight": "It isn't the waiting that is the problem. It's that your heart, which has given so much, has nowhere to go with its love.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.085,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The grief of a love that has nowhere to go, and the quiet of a home built for many now built for one.",
+    "diagnose": "When a bond is real and the person is far, the heart aches because the love is real and the meeting is not; grief is love with nowhere to go.",
+    "steady": "What is real in you cannot be taken away; the love you gave and the love you feel are yours, and they are not diminished by distance.",
+    "act": "Give your love a place to land today; teach what you can, tend what is near, and let the heart rest where it is.",
+    "story": "A mother who loved a son who would not return, and who found her footing in the love she could still give."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The nowhere-to-go of love",
+    "What is real cannot be taken",
+    "Love that has landed"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "son has been in Germany nine years",
+    "taught two thousand children"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "week_fit:8=0.6,40=0.3,39=0.6,1=0.6,1=0.6,1=0.6",
+    "week_fit:swapped=1",
+    "redo:5",
+    "redo_fixed:1",
+    "dropped:repeat=5,soft_kept=4",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:unpack=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.984,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna sits on the chariot, his body heavy and his voice caught in his throat. He has laid down his bow and says that even ruling over the gods or possessing every treasure on earth would not dry the grief that is drying up his senses. He admits he sees no way out, no argument that can lift this sorrow. He asks Krishna to teach him what is right. Admitting you do not know what to do, and asking for help, is where clarity begins.",
+     "for_you": "The waiting for your son is not the problem. The problem is that your love has no place to land today. You are grieving a future you cannot see. This is where the week begins."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 2.6815,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "Kausalya, Rama's mother, has just lashed out at her husband Dasharatha over their son's exile. When Dasharatha folds his hands and asks her forgiveness, she is horrified by her own words and explains what grief has done to her. She says grief wears away your steadiness and your judgement. There is no enemy like it. She is warning him that sorrow can make you wound the very people you love most.",
+     "for_you": "Your love for your son is real, and it has nowhere to land right now. That empty space makes your mind restless, and it is wearing down your own steadiness. You are not losing your mind, you are simply carrying a love with no place to rest."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.5.26.39",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 26.39",
+     "family": "vr",
+     "speaker": "Sita",
+     "listener": "herself",
+     "setting": "Alone in captivity, Sita fears Ram has forgotten her, then reassures herself.",
+     "sanskrit": "दृश्यमाने भवेत् प्रीतिः सौहृदं नास्त्यदृश्यतः। नाशयन्ति कृतघ्नास्तु न रामो नाशयिष्यति॥",
+     "line": "'Out of sight, out of mind' is true only of the ungrateful. Real love survives distance.",
+     "translation": "Love lasts while someone is in sight; out of sight, affection fades. But that is the way of the ungrateful. Ram will not let it fade.",
+     "why": "Hold on to love across distance; hope can arrive from unexpected people.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sita_captivity_hope",
+      "title": "Sita in captivity",
+      "summary": "Guards threaten Sita day and night. She fears Ram has forgotten her, then reminds herself that out of sight is out of mind only for the ungrateful. The guard Trijata dreams of Ram's victory, and good omens begin to appear.",
+      "story_hook": "She had been alone in the grove for ten months, surrounded by guards who mocked her every day.",
+      "lesson": "Hold on to love across distance; hope can arrive from unexpected people."
+     },
+     "score": 3.0897,
+     "beat": "steady",
+     "role_fit": 0.42,
+     "meaning": "Sita sits in the ashoka grove, alone and watched. She feels the distance from Ram like a wall. She tells herself that affection fades only for the ungrateful. For those who truly love, absence does not kill the bond. She holds to the truth that love survives the space between them.",
+     "for_you": "Your son is across the world, and the years have stretched into a silence. Your love for him is not fading because he is out of sight. It is the ungrateful who forget. Let your heart rest on the fact that what you share is not measured in miles."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.56.chaupai.1",
+     "ref": "Ramcharitmanas, Ayodhya Kand 56 (chaupai 1)",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 56",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Ram",
+     "setting": "Kausalya blesses Ram as he leaves for fourteen years in the forest.",
+     "sanskrit": "देव पितर सब तुम्हहि गोसाईं। राखहुँ पलक नयन की नाईं॥ अवधि अंबु प्रिय परिजन मीना। तुम्ह करुनाकर धरम धुरीना ॥",
+     "line": "May you be guarded the way eyelids guard the eyes.",
+     "translation": "May all the gods and ancestors guard you, my lord, the way eyelids guard the eyes. The term of your exile is the water, and your loved ones are the fish in it; you are kind and steadfast in what is right.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": null,
+     "score": 2.8265,
+     "beat": "steady",
+     "role_fit": 0.49,
+     "meaning": "Kausalya speaks to Ram as he leaves for the forest. She does not ask him to turn back. She asks the gods to guard him the way eyelids guard the eyes, always close and always open. She sees that love is not a thing that vanishes when distance grows. It is a steady presence. The exile is the water, and the loved ones are the fish within it, still alive and still moving. She tells him that kindness and a steady mind are what keep love alive across the years.",
+     "for_you": "You have spent your life guarding others with the same quiet care. That same instinct still lives in you, even now."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.1971,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat, who is broken by his father's death and Ram's exile. The ministers and Kausalya want Bharat to take the throne. Bharat agrees their advice is right, but his heart is not at peace. He decides to go to the forest, admit his fault to Ram, and trust that his brother will forgive him.",
+     "for_you": "Your heart knows your son is not wrong to live abroad. Today, take one small step to give your love a place to land. Teach one child something small. Let the lesson be for you, not him."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.55.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 55",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Ram",
+     "setting": "Kausalya, choosing not to hold her son back, sends him into exile with her blessing.",
+     "sanskrit": "यह बिचारि नहिं करउँ हठ झूठ सनेहु बढ़ाइ। मानि मातु कर नात बलि सुरति बिसरि जनि जाइ ॥",
+     "line": "I won't hold you back with false affection. Go, son. Just don't forget your mother.",
+     "translation": "Thinking this over, I will not insist out of false affection. I bless you, son; only keep the bond of a mother, and don't forget me.",
+     "why": "Letting a child go with your blessing is love at its hardest.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.ram_kausalya",
+      "title": "Kausalya lets her son go",
+      "summary": "Ram comes to his mother as she is preparing for his coronation. Torn between duty and love, she decides not to hold him back with 'false affection', blesses him and asks only that he not forget her. As he leaves she wonders aloud whether she will live to see his face again.",
+      "story_hook": "She had the sweets ready for his coronation when he came to say goodbye.",
+      "lesson": "Letting a child go with your blessing is love at its hardest."
+     },
+     "score": 3.0474,
+     "beat": "act",
+     "role_fit": 0.498,
+     "meaning": "Kausalya is standing in her room as Ram arrives for his coronation. She knows duty calls him to the forest. She chooses not to hold him back with false affection. She blesses him and asks only that he not forget her mother. She lets him go. The verse says that love at its hardest is letting a child go with your blessing. It asks that your love, which has nowhere to go, find a place to land in a small act of teaching or tending.",
+     "for_you": "You taught two thousand children. Today, let your love land on one of them. Send a short message to a former student and simply ask how they are doing."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "You have kept gathering for your son for nine years. The fruit is ready. Perhaps it is time to offer it and let your love depart in peace."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The nowhere-to-go of love",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 150,
+   "llm": 4100,
+   "total": 13508,
+   "select": 9251
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying a heaviness that has no name. You taught two thousand children, and now your own son has been in Germany for nine years. The house is quiet, and the waiting has become a grief that dries you up. This is hard to sit with."
+  ],
+  [
+   "scene",
+   "Arjuna sits on the chariot, his body heavy, his voice caught. He has laid down his bow. He tells Krishna that even ruling over the gods or possessing every treasure on earth could not dry the grief that is drying up his senses. He admits he sees no way out, no argument that can lift this sorrow. And he asks Krishna to teach him what is right: And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "Arjuna sits on the chariot, his body heavy and his voice caught in his throat. He has laid down his bow and says that even ruling over the gods or possessing every treasure on earth would not dry the grief that is drying up his senses. He admits he sees no way out, no argument that can lift this sorrow. He asks Krishna to teach him what is right. Admitting you do not know what to do, and asking for help, is where clarity begins."
+  ],
+  [
+   "for_you",
+   "Your love has no place to land today. It waits in an empty room. Let it be okay that you do not know what comes next. Let your heart say it out loud."
+  ],
+  [
+   "close",
+   "What if clarity is simply the courage to ask?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit with your phone for two hours. You are waiting for a message from your son in Germany. You taught two thousand children in your life, but right now you are just waiting for a boy who will not return.",
+  "points": "Arjuna stood on the battlefield and said he could not be cured by a kingdom. He admitted his senses were drying up. You are also standing in a quiet field, and the truth is you do not know what to do with your love anymore.",
+  "practice": "Sit with your phone turned off for one hour. Let your hands rest. Do not fill the silence with waiting.",
+  "question": "What does it feel like when you stop waiting for a moment?"
+ }
+}

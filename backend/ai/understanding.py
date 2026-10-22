@@ -273,6 +273,9 @@ def sanitize_text(s: str, allow_story_names: bool = False, names: Optional[set] 
     if grounded:
         s = re.sub(r"(\S+@\S+|https?://\S+|www\.\S+|\+?\d[\d\s-]{6,}\d)", "", s)
     else:
+        # an age or a count is dropped whole with its frame ("At 47, your dad" → "your dad"; "after 15 years" stays as "after years")
+        s = re.sub(r"\b(?:at|aged?|age of|turning|now)\s+\d{1,3}\s*,?\s*", "", s, flags=re.I)
+        s = re.sub(r"\b\d{1,3}\s*(?:years?|yrs?)\s+old\b,?\s*", "", s, flags=re.I)
         s = PII_RE.sub("", s)
         for rx, rep in CLINICAL:
             s = rx.sub(rep, s)
@@ -368,6 +371,11 @@ def ui_line(text: str, names: Optional[set] = None, grounded: bool = False) -> s
     s = re.sub(r"\s*;\s*", ". ", s)
     s = re.sub(r"\.\s+([a-z])", lambda m: ". " + m.group(1).upper(), s)
     return s
+
+
+KEEPS_GOING_RE = re.compile(r"\b(?:i |we )?(?:keep|kept|still|always) (?:going|trying|at it|showing up|building|working|pushing|grinding|shipping|applying)\b|"
+                            r"\b(?:don'?t|never|won'?t|can'?t) (?:stop|give up|quit)\b|\bfor years\b.{0,40}\b(?:tried|trying|building|failing)|"
+                            r"\b(?:tried|trying|failing) .{0,40}\bfor years\b|\b\d+ (?:applications|attempts|tries|interviews)\b", re.I)
 
 
 def fallback_mirror(emotion: str, details: List[str], label: str) -> str:
@@ -762,6 +770,15 @@ class Understander:
             why_fallback = "no_llm" if self.llm is None else "junk_note"
 
         u = self._from_llm(p, note, raw, note_sits) if isinstance(raw, dict) else None
+        if u is not None and "mirror:fallback" in u.flags and self.writer_llm is not None and note.text and note.signal != "junk":
+            # The mirror is the first thing they see. A library label there ("I keep fighting with my parents")
+            # reads as a form echo: one small dedicated call before any label.
+            m = await self._write_mirror(p, note, u)
+            if m:
+                u.mirror = m
+                u.flags.append("mirror:rewritten")
+            else:
+                u.mirror = self._mirror_last_resort(u)
         if u is None:
             u = self._fallback(p, note, note_sits)
             if why_fallback:
@@ -774,6 +791,34 @@ class Understander:
         return u, note
 
     # ── LLM path ─────────────────────────────────────────────────────────────
+    async def _write_mirror(self, p: Profile, note: NoteCheck, u: "Understanding") -> Optional[str]:
+        who = {"woman": "She is a woman: she/her is fine.", "man": "He is a man: he/him is fine."}.get(u.gender or "",
+               "They did not say their gender: never he, she, his, her, man, woman, mother, father, wife or husband.")
+        sys_msg = ("You write ONE sentence for the loading screen of a reflection app: the person's situation handed back in "
+                   "their own terms so they feel heard before anything else. 8 to 20 words. Second person (you, your), present "
+                   "tense, plain words. Use one concrete detail they gave. Name the feeling they named, if any. No advice, no "
+                   "lesson, no question, no verdict on them, no 'it sounds like', no 'you are feeling'. " + who +
+                   ' Return JSON: {"mirror": "..."}')
+        user = f"What they wrote: {note.text}\nTheir feeling, as tapped: {FEELING_STATE.get(p.feeling, p.feeling or 'not given')}\nWhere they stand: {u.stance}."
+        try:
+            raw = await asyncio.wait_for(asyncio.to_thread(self.writer_llm.chat_json, [{"role": "system", "content": sys_msg}, {"role": "user", "content": user}],
+                                                           temperature=0.4, max_tokens=80, timeout_s=4), timeout=4.5)
+        except Exception:
+            return None
+        s = check_mirror(raw.get("mirror")) if isinstance(raw, dict) else None
+        if s and not u.gender and re.search(r"\b(she|he|her|his|him|herself|himself)\b", s, re.I):
+            return None
+        return s
+
+    @staticmethod
+    def _mirror_last_resort(u: "Understanding") -> str:
+        """Never a library label in the first person: the mechanism's own second-person line, or the feeling."""
+        m = MECHANISMS.get(u.mechanism or "")
+        for cand in ((m or {}).get("self"), (m or {}).get("diagnose")):
+            if cand and re.search(r"\byou(r)?\b", cand, re.I) and len(cand.split()) <= 28:
+                return cand
+        return f"You are carrying {u.emotion}, and you came here to set it down for a moment." if u.emotion else u.mirror
+
     def _from_llm(self, p: Profile, note: NoteCheck, raw: dict, note_sits: Dict[str, float]) -> Optional[Understanding]:
         flags: List[str] = []
         quality = raw.get("note_quality") if raw.get("note_quality") in ("useful", "partial", "unusable", "none") else "partial"
@@ -870,6 +915,12 @@ class Understander:
         mech, sec, changed = constrain_mechanism(stance, mech, sec)
         if changed:
             flags.append(f"mechanism_off_stance:{raw.get('mechanism')}")
+        # "Stuck and not starting" is a reading for someone who waits. Someone who says they keep going and
+        # keep failing is the opposite case: its lines ("waiting to feel ready", "the days pass undone") call
+        # them lazy to their face.
+        if mech == "inertia_doubt" and KEEPS_GOING_RE.search(note.text or ""):
+            mech, sec = (sec if sec and sec != "inertia_doubt" else "self_blame"), None
+            flags.append("mechanism:inertia_for_a_keeper")
         if risk == "harm_from_others":
             mech, sec = "fear_of_loss", None      # courage and safety; never a cause located in them
         if quality == "unusable" or conf < 0.25:
@@ -905,12 +956,14 @@ class Understander:
         people = allowed_people(note.text, p.stages, (p.topic, p.follow))
         core = sanitize_text(str(raw.get("core_struggle") or ""))
         if invented_person(core, people):
+            logger.info("understanding: core brings in %s they never mentioned (%s): %s", invented_person(core, people), people, core[:160])
             flags.append("core:invented_person"); core = ""
         if not (4 <= len(_words(core)) <= 35):
             core = self.labels[situations[0]["id"]]
             flags.append("core_struggle_fallback")
         seat_txt = check_seat(raw.get("seat"))
         if invented_person(seat_txt, people):
+            logger.info("understanding: seat brings in %s they never mentioned: %s", invented_person(seat_txt, people), seat_txt[:160])
             flags.append("seat:invented_person"); seat_txt = ""
         life_txt = drop_invented_sentences(check_life_context(raw.get("life_context")), people)
         if life_txt != (check_life_context(raw.get("life_context")) or ""):

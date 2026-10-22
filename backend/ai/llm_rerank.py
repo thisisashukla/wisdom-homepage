@@ -33,7 +33,7 @@ Then score every candidate from 0.0 to 1.0:
 Judge the verse as the scripture means it (its speaker, setting and plain sense), not as it could be bent to fit.
 Where they stand changes the scoring ("Where they stand" in the person block):
   - an aspiration (a resolve, a beginning, inspired by others): 1.0 is a verse of rising, resolve, effort and one's own path; any verse of consolation, burden, fear, envy or comparison scores 0.0, however well it matches the words.
-  - wronged (treated as less than they are, dismissed, held to a role): 1.0 is a verse of standing in one's truth, courage, the self that cannot be cut, speaking the true word; any verse that names envy, contentment, desire, ego or expectation as the trouble, or asks for acceptance, patience, adjustment or keeping the peace, scores 0.0: it tells them the fault is theirs.
+  - wronged (treated as less than they are, dismissed, held to a role): 1.0 is a verse of standing in one's truth, courage, the self that cannot be cut, speaking the true word; any verse that names envy, contentment, desire, ego or expectation as the trouble, or asks for acceptance, patience, adjustment or keeping the peace, scores 0.0: it tells them the fault is theirs. A verse of fear, terror, trembling or awe (Arjuna before the cosmic form) also scores 0.0: they are angry, not afraid.
   - seeking: 1.0 is an invitation into the text, not a cure for a pain they did not describe.
 Return ONLY JSON: {"seat": "...", "scores": {"<id>": 0.0, ...}} with every candidate id."""
 
@@ -130,7 +130,10 @@ Score each 0.0 to 1.0:
        greedy man) when they are the one wronged or the one trying; consoles a death when no one has died; tells someone
        wronged or lonely to accept, adjust, detach or let their family go; a devotee's "turn to me" for a concrete worldly
        problem; or simply about something else
-Return ONLY JSON: {"scores": {"<id>": 0.0, ...}} with every id."""
+Then: the week must make four different moves (see what is happening, see what is underneath, find footing, try something),
+not one point seven times. List the ids of any verse that makes the SAME point as an earlier day in the week (same
+instruction, same image, same consolation: "Never look down on yourself" and "Don't think less of yourself" are one point) under "same_as_earlier". A verse that deepens or turns the earlier point is not the same.
+Return ONLY JSON: {"scores": {"<id>": 0.0, ...}, "same_as_earlier": ["<id>", ...]} with every id scored."""
 
 
 def _week_user(person: str, cards: List[dict]) -> str:
@@ -140,18 +143,22 @@ def _week_user(person: str, cards: List[dict]) -> str:
     return f"{_person(person)}\n\nThe week:\n{rows}"
 
 
-async def score_week(llm, person: str, cards: List[dict], timeout_s: float) -> dict:
-    """{id: score} for the verse days of a plan, or {} when the model is unavailable or out of time."""
+async def score_week(llm, person: str, cards: List[dict], timeout_s: float) -> tuple:
+    """({id: score}, [ids that repeat an earlier day]) for the verse days of a plan; ({}, []) when the model is
+    unavailable or out of time."""
     if llm is None or not cards:
-        return {}
+        return {}, []
     raw = await _ask(llm, WEEK_SYSTEM, _week_user(person, cards), timeout_s)
+    logger.info("week gate raw: %s", str(raw)[:400])
     scores = (raw or {}).get("scores")
     if not isinstance(scores, dict):
-        return {}
+        return {}, []
     out = {}
     for c in cards:
         try:
             out[c["id"]] = max(0.0, min(1.0, float(scores.get(c["id"], 0.6))))
         except (TypeError, ValueError):
             out[c["id"]] = 0.6
-    return out
+    ids = [c["id"] for c in cards]
+    same = [s for s in ((raw or {}).get("same_as_earlier") or []) if isinstance(s, str) and s in ids and s != ids[0]]
+    return out, same

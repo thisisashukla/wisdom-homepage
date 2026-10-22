@@ -1,0 +1,518 @@
+{
+ "persona": {
+  "id": "in_genz_founder_fire",
+  "market": "India (Mumbai)",
+  "generation": "Gen Z",
+  "gender": "man",
+  "who": "23, just quit a Zomato job to build a D2C brand with a friend. No funding yet. Parents think it's a phase but are supportive.",
+  "profile": {
+   "feeling": "stick",
+   "age": "u25",
+   "stages": [
+    "own_thing"
+   ],
+   "phone_hours": 7
+  },
+  "note": "quit my job last week to go all in on our brand. no money yet but honestly ive never felt more alive. i want to stay like this and not lose this fire when it gets hard",
+  "note_source": "text",
+  "expect_stance": "aspiration"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "alive and afraid of losing it",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "The fire that made you quit your job becomes, over seven days, something you know how to keep alive in the hard months.",
+   "week_beats": {
+    "hook": "You recognise the resolve as yours, and the fear that it might fade.",
+    "story": "A young founder who set out to build and met the first empty month shows you how resolve survives it."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work"
+   ],
+   "confidence": 0.9,
+   "core_struggle": "Has quit their job to go all in on a brand, feels more alive than ever, and is determined not to lose that fire when the work gets hard.",
+   "mirror": "You walked away from the job, and the first week has you more alive than the last year ever did.",
+   "insight": "You are not afraid of the hard months. You are afraid the feeling that makes the hard months worth it will leave you, and that is a different thing entirely.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.93,
+     "source": "note"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.663,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A fire lit by leaving the job behind; the resolve to keep building when the early months are hard and the money has not come.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A young founder who set out to build what was theirs, faced the first empty month, and kept the fire alive by working for its own sake."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The fire that quit",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "a young founder who just quit their job and is afraid the fire will fade",
+   "life_context": "A young person who just quit their job to build a brand; they have no money yet but feel more alive than ever, and they are determined to keep that fire when the hard months come.",
+   "details": [
+    "quit job last week to go all in",
+    "has no money yet",
+    "feels more alive than ever",
+    "wants to keep the fire when it gets hard"
+   ],
+   "age": "u25",
+   "stages": [
+    "own_thing"
+   ],
+   "flags": [
+    "bridge:copied_example",
+    "week_fit:40=0.6,22=0.0,84=0.6,18=0.6,16=0.6,14=0.6",
+    "week_same:84",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.61,max=0.67",
+    "retried:1",
+    "dropped:fallback_line=1,missing=2",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 1.9602,
+     "beat": "hook",
+     "role_fit": 0.19,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He tells him that no effort put into doing what is right is ever wasted. Even a small amount of this practice keeps a person safe from great fear.",
+     "for_you": "You quit your job last week because the work felt like the only thing that mattered. That fire is real, and it is yours to keep. Do the work fully, and let go of owning the result."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.247",
+     "ref": "Chhandogya Upanishad 3.14.1",
+     "ref_iast": "Chāndogya Upaniṣad 3.14.1",
+     "family": "up",
+     "speaker": "Shandilya",
+     "listener": "Reader",
+     "setting": "The teaching of Shandilya.",
+     "sanskrit": "सर्वं खल्विदं ब्रह्म तज्जलानिति शान्त उपासीत । अथ खलु क्रतुमयः पुरुषो यथाक्रतुरस्मिꣳल्लोके पुरुषो भवति तथेतः प्रेत्य भवति स क्रतुं कुर्वीत ॥",
+     "line": "A person is made of resolve. As you resolve in this life, so you become. So resolve well.",
+     "translation": "All this is Brahman; from it all arises, into it all dissolves, in it all breathes; so one should meditate on it calmly. A person is made of resolve. As one's resolve is in this world, so one becomes on departing. So let one form a resolve.",
+     "why": null,
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9741,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "Shandilya tells the seeker that a person is made of resolve. As you resolve in this life, so you become. So resolve well. This means the shape of your days is not given to you from the outside. It is carved by the decisions you make before the work begins. The future you are building is not a distant prize. It is the person you are becoming right now, through the choices you hold in your mind.",
+     "for_you": "The fire you feel is not a guest. It is the heat of your own resolve. When the hard months come, the work will not ask for a new feeling. It will ask for the same quiet decision you made when you quit your job."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.1.101",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 1.101",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "At Lake Pampa, Lakshman pulls Ram out of despair after Sita has been taken.",
+     "sanskrit": "उत्साहो बलवानार्य नास्त्युत्साहात् परं बलम्। सोत्साहस्य हि लोकेषु न किंचिदपि दुर्लभम्॥",
+     "line": "There is no strength greater than enthusiasm. For the one who has it, nothing is out of reach.",
+     "translation": "Noble brother, enthusiasm is powerful; there is no strength greater than enthusiasm. For the person who has it, nothing in the world is out of reach.",
+     "why": "Beauty can sharpen grief; a friend can remind you of your own strength.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.pampa_grief",
+      "title": "Grief in springtime at Pampa",
+      "summary": "At the beautiful lake of Pampa in spring, everything reminds Ram of Sita and his grief deepens. Lakshman tells him there is no strength greater than enthusiasm, and to rouse himself.",
+      "story_hook": "Spring had come to the lake, and every flower made Ram's grief worse.",
+      "lesson": "Beauty can sharpen grief; a friend can remind you of your own strength."
+     },
+     "score": 3.1743,
+     "beat": "steady",
+     "role_fit": 0.59,
+     "meaning": "Lakshman pulls Ram from grief at the lake of Pampa in spring. Ram is drowning in despair after Sita is taken, and the beauty around them only deepens the pain. Lakshman says there is no strength greater than enthusiasm. For the one who holds it, nothing in the world is out of reach.",
+     "for_you": "You have left your job and the fire is bright. But when the hard months come, that same feeling might look like exhaustion. Let the enthusiasm that brought you here be the strength you hold on to when the work is lonely."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.6.18",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 6.18",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "ऐहिकः प्राक्तनं हन्ति प्राक्तनोऽद्यतनं बलात् । सर्वदा पुरुषस्पन्दस्तत्रानुद्वेगवाञ्जयी ॥",
+     "line": "Today's effort and yesterday's keep wrestling. Whoever stays calm through it wins.",
+     "translation": "Present effort overcomes the past, and the past can overpower the present. It is always a contest of human striving, and the one who stays calm wins.",
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 3.1904,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Vasishtha speaks to the young Rama, who is sitting in a cave, heavy with the weight of his father’s death and the loss of his kingdom. The teacher tells him that what people call fate is only the fruit of past effort. Today’s effort can overcome yesterday’s limits. It is always a contest of human striving, and the one who stays calm through the struggle of old habits against new ones wins. The past effort shaped today. Today’s effort shapes tomorrow. Do not grieve what was never in your hands.",
+     "for_you": "You quit your job last week, and now the old habits of a steady paycheck are wrestling with the new habit of building your brand. The effort you are putting in today is already shaping your future. Stay calm through that quiet pull back to safety. Your resolve is becoming who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.38.16",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 38.16",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "करिष्यन्न प्रभाषेत कृतान्येव तु दर्शयेत् / धर्मकामार्थकार्याणि तथा मन्त्रो न भिद्यते",
+     "line": "Don't announce your plans; let people see your results.",
+     "translation": "Don't talk about what you are going to do; let people see only what you have done. That way your plans for duty, pleasure and gain are never exposed.",
+     "why": "Let results speak before announcements do.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.38",
+      "title": "Vidura Niti: trust, secrecy and quarrels",
+      "summary": "Vidura speaks of welcoming guests, keeping plans private until done, whom to trust, and how quarrels with the powerful end.",
+      "story_hook": "",
+      "lesson": "Let results speak before announcements do."
+     },
+     "score": 3.6578,
+     "beat": "act",
+     "role_fit": 0.694,
+     "meaning": null,
+     "for_you": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 3.2743,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "A seer is speaking to the reader after they have been told to enjoy the world by letting go. They say you could keep doing your work and wish to live a full hundred years. The way to do this is to act without clinging to the results. You do your part, and you do not hold on to what comes back to you. You keep moving, and you see yourself in everyone else.",
+     "for_you": "The work you started last week is yours to keep. Do your part today, and let the outcome be what it is. Do not hold on to how people react to your brand. Keep the work going."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.bhagiratha",
+     "title": "Bhagiratha brings the Ganga down",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sagara",
+      "Anshuman",
+      "Dilipa",
+      "Bhagiratha",
+      "Brahma"
+     ],
+     "story_hook": "Three kings in a row died trying to bring a river down from heaven; the fourth would not stop.",
+     "summary": "King Sagara's sixty thousand sons are burnt to ash; only the Ganga's water can free them. Sagara, his grandson Anshuman and Anshuman's son Dilipa each try and die without success. Bhagiratha finally persists until the river descends, and Brahma honours him for finishing what three generations began.",
+     "lesson": "Some goals take longer than one effort or one lifetime; keep going and others' work is not wasted.",
+     "matched": [
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "anchor": {
+      "id": "vr.1.44.10",
+      "ref": "Valmiki Ramayana · Bala Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 44.10",
+      "family": "vr",
+      "speaker": "Brahma",
+      "listener": "Bhagiratha",
+      "setting": "Bhagiratha has finished what his great-grandfather, grandfather and father each tried and failed to do.",
+      "sanskrit": "सा त्वया समतिक्रान्ता प्रतिज्ञा पुरुषर्षभ। प्राप्तोऽसि परमं लोके यशः परमसम्मतम्॥",
+      "line": "Three generations tried and failed. You finished it. Effort carried forward is not wasted.",
+      "translation": "You have carried through the vow they could not keep, best of men. You have earned the highest honour in the world.",
+      "why": "Some goals take longer than one effort or one lifetime; keep going and others' work is not wasted.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "side_project",
+        "label": "I can't tell if continuing is discipline or stubbornness"
+       },
+       {
+        "id": "discipline",
+        "label": "I can't stay consistent"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.bhagiratha",
+       "title": "Bhagiratha brings the Ganga down",
+       "summary": "King Sagara's sixty thousand sons are burnt to ash; only the Ganga's water can free them. Sagara, his grandson Anshuman and Anshuman's son Dilipa each try and die without success. Bhagiratha finally persists until the river descends, and Brahma honours him for finishing what three generations began.",
+       "story_hook": "Three kings in a row died trying to bring a river down from heaven; the fourth would not stop.",
+       "lesson": "Some goals take longer than one effort or one lifetime; keep going and others' work is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Three kings died trying to bring down the Ganga, and Bhagiratha kept going",
+     "teaser": "Three kings died trying to bring down the Ganga, and Bhagiratha kept going",
+     "for_you": "Your work began last week, and already the ground is shifting beneath you. Bhagiratha knew the water would not come in one day, or one life. Your effort is the first link in a chain. Keep laying it down."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The fire that quit",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 165,
+   "llm": 4446,
+   "total": 15704,
+   "select": 11085
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You just quit your job last week to go all in on this brand. You have no money yet. But you feel more alive than ever. You are terrified that this fire will fade when the hard months come."
+  ],
+  [
+   "scene",
+   "On the battlefield, Arjuna is frozen. He has laid down his bow. He is afraid. And Krishna speaks to him. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते, स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्."
+  ],
+  [
+   "line",
+   "In plain words: No sincere effort here is ever wasted. Even a little of it shields you from great fear."
+  ],
+  [
+   "unpack",
+   "Krishna says that no sincere effort here is ever wasted. Even a little of it shields you from great fear. This is the yoga of action. Do the work fully. Let go of owning the result. The fear you feel is not about the work. It is about needing the feeling to last forever. That is not how it works."
+  ],
+  [
+   "for_you",
+   "When you feel the fire fading, do the work fully anyway. Write the post. Send the message. Let go of owning the result. The doing itself is the shield."
+  ],
+  [
+   "close",
+   "The work is the shield."
+  ]
+ ],
+ "depth": {
+  "life": "You are staring at your phone after seven hours of work, wondering if this fire inside you is real or just a high from quitting. You feel alive, but you are also afraid that feeling will fade before you build anything.",
+  "points": "The texts say that when you start what is yours to build, you are not chained to the outcome. The work itself, done fully, becomes the shield. The fear is not of failure, but of losing the feeling that makes the work worth it.",
+  "practice": "Close your phone for ten minutes and write down one small task you will do tomorrow just to keep the work moving forward, without checking if it will make money.",
+  "question": "What is one small step you can take tomorrow just to keep the work moving forward?"
+ }
+}

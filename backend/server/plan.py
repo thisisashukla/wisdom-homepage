@@ -257,6 +257,7 @@ async def _personalize(und, u: Understanding, out_days: list, ctx: PersonContext
 JOB_WORDS = {"hook": "see: name what is happening to them", "diagnose": "see: show what is underneath it",
              "steady": "steady: footing to hold while it is hard", "act": "act: one practice for exactly this"}
 WEEK_FIT_FLOOR = 0.35
+WEEK_MAX_SWAPS = 2
 
 
 async def _fit_week(rec, planner, und, u, req, days, pin, story_pin, shape, person, t0):
@@ -273,12 +274,20 @@ async def _fit_week(rec, planner, und, u, req, days, pin, story_pin, shape, pers
         v = rec.verses[d["verse_index"]]
         cards.append({"id": v["id"], "day": d["day_in_week"], "job": JOB_WORDS.get(d["beat"], d["beat"]), "line": v.get("line"),
                       "speaker": v.get("speaker"), "listener": v.get("listener"), "setting": v.get("setting")})
-    scores = await score_week(und.rerank_llm, person, cards, budget)
+    scores, same = await score_week(und.rerank_llm, person, cards, budget)
     if not scores:
         return days, pin
-    kept_hook = getattr(req, "hook_id", None)
-    weak = [i for i, s in scores.items() if s < WEEK_FIT_FLOOR and i != kept_hook]
+    day1 = cards[0]["id"] if cards and cards[0]["day"] == 1 else None
+    protected = {getattr(req, "hook_id", None), day1}        # Day 1 has its own rerank; the gate never swaps it
     u.flags.append("week_fit:" + ",".join(f"{i.split('.')[-1]}={s:.1f}" for i, s in scores.items()))
+    # The gate's reader is noisy (it has scored "be on your own side" 0.0 for someone wronged): at most
+    # two swaps a week, worst first, so one bad read cannot rebuild the week.
+    weak = sorted((i for i, s in scores.items() if s < WEEK_FIT_FLOOR and i not in protected), key=lambda i: scores[i])[:WEEK_MAX_SWAPS]
+    # a verse that makes the same point as an earlier day is swapped too (the later one goes)
+    dup = [i for i in same if i not in weak and i not in protected][:max(0, WEEK_MAX_SWAPS - len(weak))]
+    if dup:
+        u.flags.append("week_same:" + ",".join(i.split(".")[-1] for i in dup))
+        weak += dup
     if not weak:
         return days, pin
     u.flags.append(f"week_fit:swapped={len(weak)}")
@@ -287,6 +296,13 @@ async def _fit_week(rec, planner, und, u, req, days, pin, story_pin, shape, pers
     days2 = await asyncio.to_thread(planner.plan, u, req.feeling, req.days, list(req.exclude) + weak, pin, story_pin,
                                     req.week, req.level, shape, [f.model_dump() for f in req.feedback], _helped(req))
     return (days2 or days), (pin or (rec.verses[days2[0]["verse_index"]]["id"] if days2 and days2[0].get("verse_index") is not None else pin))
+
+
+def _week_similarity_flag(planner, u, days) -> None:
+    taken = [d["verse_index"] for d in days if d.get("verse_index") is not None]
+    ws = planner.week_similarity(taken)
+    if ws:
+        u.flags.append(f"week_sim:mean={ws[0]:.2f},max={ws[1]:.2f}")
 
 
 def _shape(req) -> str:
@@ -398,6 +414,7 @@ async def plan(req: PlanRequest) -> PlanResponse:
     days = await asyncio.to_thread(planner.plan, u, req.feeling, req.days, req.exclude, pin, story_pin,
                                    req.week, req.level, shape, [f.model_dump() for f in req.feedback], _helped(req))
     days, pin = await _fit_week(rec, planner, und, u, req, days, pin, story_pin, shape, person, t0)
+    _week_similarity_flag(planner, u, days)
     if u.risk == "harm_from_others" and (req.days > 7 or (req.week or 1) > 1):
         u.flags.append("plan_kept_gentle_for_safety")
     out_days = []

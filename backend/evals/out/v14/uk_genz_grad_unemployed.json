@@ -1,0 +1,520 @@
+{
+ "persona": {
+  "id": "uk_genz_grad_unemployed",
+  "market": "UK (London)",
+  "generation": "Gen Z",
+  "gender": "man",
+  "who": "24, British-Indian, graduated in economics 18 months ago, 200+ applications, still working in a cafe. Friends have jobs at banks. Lives with parents in Harrow.",
+  "profile": {
+   "feeling": "nerve",
+   "age": "u25",
+   "stages": [
+    "between"
+   ],
+   "phone_hours": 6,
+   "topic": "compare",
+   "follow": "everyone_ahead"
+  },
+  "note": "200 applications. my mates are at Goldman and Deloitte and I'm making flat whites. mum tells aunties I'm 'exploring options'. I don't open linkedin anymore",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and behind",
+   "bridge": "What you are living with is what the texts call measuring yourself against others, and that is where this week begins.",
+   "week_thesis": "Seven days from comparing every name on a screen to seeing that your own path, walked imperfectly, is enough.",
+   "week_beats": {
+    "hook": "You recognise the shame and the replaying, named without judgement.",
+    "diagnose": "You see that it is the comparison, not the applications, that keeps you up.",
+    "steady": "You hold that your own path, walked imperfectly, is enough.",
+    "act": "You try letting go of the comparison for one hour, and doing the work you can do today.",
+    "story": "A young person who sent hundreds of applications and learned that their own worth was never in the reply."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "parent",
+    "family"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "Has sent hundreds of applications but is making coffee while friends are at top firms, and is ashamed to face the comparison.",
+   "mirror": "You give the day everything, then lie awake replaying every conversation and every name on a screen.",
+   "insight": "It is not the applications that keep you up. It is the comparison, and the story you tell yourself that everyone else is ahead and you are behind.",
+   "mechanism": "comparison_envy",
+   "mechanism_label": "Measuring yourself against others",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 2.1,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.17,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.775,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.445,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.429,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of being left behind while everyone else seems to have arrived, and the replaying of every rejection as if it were proof.",
+    "diagnose": "Comparison burns at another's success; measuring your life against theirs steals the contentment in your own, and the mind replays the past to prove the present is a loss.",
+    "steady": "Praise and blame, success and failure, come and go; what is yours to do is yours to do, and no one else's path can measure your worth.",
+    "act": "Let go of the comparison, even for one hour; do the work you can do today, and let the result go.",
+    "story": "A young person who sent hundreds of applications, saw others succeed, and learned that their own worth was never in the reply."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The comparison",
+    "What the mind replays",
+    "Enough as you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "has sent applications",
+    "sees friends at Goldman and Deloitte",
+    "is making flat whites",
+    "mother tells aunties they are exploring options"
+   ],
+   "age": "u25",
+   "stages": [
+    "between"
+   ],
+   "flags": [
+    "bridge:copied_example",
+    "seat:missing",
+    "week_fit:47=0.3,17=0.6,22=0.6,92=0.6,15=0.6,9=0.6",
+    "week_sim:mean=0.58,max=0.72",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:repeat=2,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      },
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.528,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna tells Arjuna that it is better to do your own duty, even with flaws, than to do another's duty perfectly. He means that when you act from your own nature, you cannot do wrong. This is not about staying in a role you were born into. It is about finding work that fits you, and doing it as an offering, knowing that every path has its cracks.",
+     "for_you": "You are measuring your own path against the polished screens of your friends. Let your work be your own, even if it is making flat whites today. Do it as an offering, and know that a path walked imperfectly is still your path."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.7.117.chaupai.17",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 117",
+     "family": "rcm",
+     "speaker": "Kakbhushundi",
+     "listener": "Garuda",
+     "setting": "Kakbhushundi continues listing the diseases of the mind.",
+     "sanskrit": "ममता दादु कंडु इरषाई। हरष बिषाद गरह बहुताई॥ पर सुख देखि जरनि सोइ छई। कुष्ट दुष्टता मन कुटिलई ॥",
+     "line": "Envy is an itch. Burning at another's happiness is a wasting disease of the mind.",
+     "translation": "Possessiveness is ringworm and envy is the itch; the swings of elation and dejection are throat ailments. The burning you feel at another's happiness is consumption, and malice and a crooked mind are leprosy.",
+     "why": "Know your mind's diseases by name: confusion, anger, greed, envy, ego.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.garuda_questions",
+      "title": "Garuda's seven questions",
+      "summary": "Garuda asks seven questions: the rarest body, the greatest sorrow and joy, the nature of good and wicked people, the highest virtue and the worst wrong, and the diseases of the mind. Kakbhushundi answers: no sorrow like want, no joy like meeting good people; non-harm is highest and slander worst; delusion is the root disease, with lust, greed, anger, envy and ego as its symptoms.",
+      "story_hook": "",
+      "lesson": "Know your mind's diseases by name: confusion, anger, greed, envy, ego."
+     },
+     "score": 3.8526,
+     "beat": "diagnose",
+     "role_fit": 0.705,
+     "meaning": "Kakbhushundi tells Garuda that the mind has its own sicknesses. Possessiveness is ringworm and envy is the itch. The swings between elation and dejection are throat ailments. The burning you feel at another's happiness is consumption, and malice and a crooked mind are leprosy. He is naming the illness that lives inside us, so we can know it for what it is instead of letting it rule us.",
+     "for_you": "You are making coffee and seeing your friends at firms you respect. That comparison is the itch Kakbhushundi names. The applications are not the disease. The burning at their success is. Notice the itch without scratching it today."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 3.9912,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna is telling Arjuna how the wise move through the world. They are not driven by wanting more or envying someone else's corner office. They accept what lands in their lap, they stay steady when they win or lose, and they keep working. This steadiness is not laziness. It is a deep freedom. They are not tied to the outcome because their peace is not borrowed from anyone else's success.",
+     "for_you": "You are making flat whites while your friends are in glass towers. That is your path right now. It is not perfect. It is not behind. It is simply the one you are walking, and that is enough to carry you through today."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.vairagya.92",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 92",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'The Way of the Free Ascetic'.",
+     "sanskrit": "ब्रह्माण्डं मण्डलीमात्रं किं लोभाय मनस्विनः । शफरीस्फुरितेनाब्धिः क्षुब्धो न खलु जायते ॥",
+     "line": "The ocean is not stirred by a small fish's flick. Petty things needn't shake you.",
+     "translation": "For the high-minded the whole universe is a mere ring; what is there in it to be greedy for? The ocean is not churned up by the flicker of a little fish.",
+     "why": "Let others' labels and small things pass; contentment makes you rich.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.avadhuta",
+      "title": "Vairagyashatakam: The way of the free ascetic",
+      "summary": "Portraits of the wandering sage: unbothered when people argue over his caste, sleeping under the sky like a king, and finally bidding farewell to the five elements.",
+      "story_hook": "",
+      "lesson": "Let others' labels and small things pass; contentment makes you rich."
+     },
+     "score": 2.8112,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Bhartrihari speaks to you from the path of the free ascetic. He has left behind the need for a fixed place and the noise of the world, and he asks you to look at the ocean. The ocean is vast, and a small fish flicking its tail does not stir it. In the same way, the labels and small victories of others, like a job at a top firm, need not churn your mind. Your own path, walked imperfectly, is enough.",
+     "for_you": "When you see your friends at those firms, let it be a small fish flicking its tail. Your own path, walked imperfectly, is enough. Hold that thought while you make the coffee."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.174.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.15",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "his father",
+     "setting": "A young man named Medhavin urges his father not to keep postponing what truly matters.",
+     "sanskrit": "श्वः कार्यमद्य कुर्वीत पूर्वाह्णे चापराह्णिकम् / नहि प्रतीक्षते मृत्युः कृतमस्य न वा कृतम्",
+     "line": "Do tomorrow's work today, and the afternoon's in the morning. Time doesn't wait for you to be ready.",
+     "translation": "Do tomorrow's work today, and the afternoon's work in the morning. Death does not wait to see whether your work is done or not.",
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "About not postponing what matters, not about working nonstop.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 3.0668,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "A young man named Medhavin speaks to his father. He tells him not to delay what matters. He says that days and nights fall like arrows. Death takes people in the middle of their tasks, so do tomorrow's work today. This is a plain warning. It says that time slips away while we wait to be ready. It asks us to do what we can now, with what we have, without waiting for the perfect moment.",
+     "for_you": "Set a timer for one hour and close the apps. In that hour, do only the one small task you can finish today, like polishing your resume or sending one email. Do not think about the hundreds you sent or the friends at their firms. Just do the work in front of you."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.5.21.9",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.9",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "After the story of two grieving brothers, Vasishtha on getting through crises.",
+     "sanskrit": "एकं विवेकं सुहृदमेकां प्रौढसखीं धियम् । आदाय विहरन्नेव संकटेषु न मुह्यति ॥",
+     "line": "Make good judgment your friend and wisdom your companion, and crises won't bewilder you.",
+     "translation": "Taking discernment as your one true friend and wisdom as your seasoned companion, you can move through life and not lose your way in crises.",
+     "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      },
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.punya_pavana",
+      "title": "Punya consoles his younger brother Pavana after their parents die",
+      "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+      "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+      "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+     },
+     "score": 2.5627,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha tells Rama that crises will not bewilder you if you make good judgment your friend and wisdom your companion. The setting follows two brothers mourning their parents. The elder brother consoles the younger by showing that grief and worry grow when we feed them with endless thought. The truth is that discernment, the ability to tell what matters from what does not, is the steady presence that keeps you from losing your way.",
+     "for_you": "You have sent hundreds of applications, and the silence they bring feels like a verdict. Let wisdom be the companion you sit with while you make flat whites. Do not let the next hour be a contest with friends at Goldman and Deloitte."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.prashna.year",
+     "title": "Six seekers wait a year",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Pippalada",
+      "Sukesha",
+      "Satyakama",
+      "Gargya",
+      "Kausalya",
+      "Bhargava",
+      "Kabandhi"
+     ],
+     "story_hook": "Six seekers arrived with fuel in their hands and questions on their lips, and were told to wait a year.",
+     "summary": "Six earnest seekers come to the sage Pippalada with questions. Instead of answering, he asks them to live with him for a year in discipline and faith, and only promises to answer what he actually knows.",
+     "lesson": "Readiness matters, and a good teacher only claims what he knows.",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "anchor": {
+      "id": "up_prashn.19",
+      "ref": "Prashna Upanishad 1.16",
+      "ref_iast": "Praśna Upaniṣad 1.16",
+      "family": "up",
+      "speaker": "Pippalada",
+      "listener": "Kabandhi",
+      "setting": "End of Pippalada's first answer.",
+      "sanskrit": "तेषामसौ विरजो ब्रह्मलोको न येषु जिह्ममनृतं न माया चेति ॥",
+      "line": "The pure world belongs to those with no crookedness, no lying and no trickery in them.",
+      "translation": "That stainless world of Brahman belongs to those in whom there is no crookedness, no falsehood and no deceit.",
+      "why": "Readiness matters, and a good teacher only claims what he knows.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "up.p.prashna.year",
+       "title": "Six seekers wait a year",
+       "summary": "Six earnest seekers come to the sage Pippalada with questions. Instead of answering, he asks them to live with him for a year in discipline and faith, and only promises to answer what he actually knows.",
+       "story_hook": "Six seekers arrived with fuel in their hands and questions on their lips, and were told to wait a year.",
+       "lesson": "Readiness matters, and a good teacher only claims what he knows."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Six seekers came to a sage with their biggest questions, and he made them wait a year",
+     "teaser": "Six seekers came to a sage with their biggest questions, and he made them wait a year",
+     "for_you": "You sent hundreds of applications and waited, but the replies do not tell you your worth. Your value is in the sending, not the result. Trust that your effort is already enough."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The comparison",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 507,
+   "llm": 4197,
+   "total": 19508,
+   "select": 14797
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You have sent out hundreds of applications. And now you are making flat whites while your friends are sitting in offices at Goldman and Deloitte. You feel ashamed when your mother tells the aunties that you are still exploring options. You feel like you are behind."
+  ],
+  [
+   "scene",
+   "Arjuna is on a battlefield. He is looking at the faces of his family and his teachers, and he is frozen. He cannot decide what his duty is. Krishna sees him. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna tells him that it is better to walk your own path, even if you stumble, than to walk someone else's path perfectly. When you do the work that fits your own nature, you do not do wrong. This is easier said than done, because your mind wants to measure your path against theirs. But every path has cracks. Your path is not wrong just because it looks different today."
+  ],
+  [
+   "for_you",
+   "Your work today is making flat whites. Let it be your work. Do it as an offering. Do not compare the coffee you are pouring to the screens you are scrolling through. Your path is yours alone."
+  ],
+  [
+   "close",
+   "A path walked imperfectly is still your path."
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": "The texts say the problem is not the work you are doing, but the measuring. You are trying to live inside their path instead of your own. The root cause is the story that their success is your failure. Your own duty, walked imperfectly, is the only thing that can actually hold you.",
+  "practice": "Put the phone face down after one application. Make the next flat white slowly. Feel the steam. Do not look at the screen until the cup is clean.",
+  "question": "What does it mean for your own path to be imperfect, and not a failure?"
+ }
+}

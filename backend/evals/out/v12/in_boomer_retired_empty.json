@@ -1,0 +1,513 @@
+{
+ "persona": {
+  "id": "in_boomer_retired_empty",
+  "market": "India (Lucknow)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "66, retired bank officer in Lucknow, wife passed 2 years ago, son in Toronto, daughter in Mumbai. Reads the Gita occasionally, wants to understand it properly.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 3,
+   "topic": "meaning",
+   "follow": "after_retiring"
+  },
+  "note": "after my wife left us the house is very quiet. children call on sunday. I have time now and I want to read Gita properly not just the shlokas everyone forwards on whatsapp",
+  "note_source": "voice",
+  "expect_stance": "seeking"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "quietly searching",
+   "bridge": "The quiet house and the forwarded verses are two signs of the same thing: what you are looking for is not more words, but the meaning behind them.",
+   "week_thesis": "Seven days from receiving forwarded verses to reading one verse with your own question, and finding the meaning that makes it live.",
+   "week_beats": {
+    "hook": "You recognise the search as a search, not a problem to fix.",
+    "diagnose": "You see that the quiet house is not emptiness, but space for a deeper reading.",
+    "steady": "You hold that what does not pass is the self that reads.",
+    "act": "You try reading one verse slowly with your own question and writing what it means to you."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "partner",
+    "child",
+    "family"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A retired man with a quiet house after his wife's passing, who wants to read the Gita deeply rather than just forwarded verses.",
+   "mirror": "You have the time now, and the house is quiet, and the verses on WhatsApp feel like they are missing something.",
+   "insight": "What you are looking for is not more verses, but the meaning behind them. The quiet house is where the real reading begins, not where it ends.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 2.061,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.605,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.838,
+     "source": "chip"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.59,
+     "source": "chip"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.575,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A quiet house, a life of work done, and the search for a deeper reading of the Gita than the verses everyone forwards.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What does not pass is the self that reads; the rest is a chapter closing, and the next one is yours to open.",
+    "act": "Read one verse slowly, with your own question, and write down what it means to you, not what anyone else says.",
+    "story": "An old man who lost his wife and left his work, who sat with the Gita and found not an answer but a way to live with the question."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet house and the forwarded verses",
+    "What does not pass",
+    "The reader, not the verse"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "wife has passed away",
+    "house is very quiet after retirement",
+    "children call on Sunday",
+    "wants to read the Gita properly, not just forwarded verses"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "seat:missing",
+    "week_fit:56=0.0,17=0.3,13=0.3,22=0.3,71=0.6,15=0.6",
+    "week_fit:swapped=4",
+    "redo:1",
+    "redo_fixed:0",
+    "day1:third_try",
+    "dropped:gendered=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.9",
+     "ref": "Bhagavad Gita 10.9",
+     "ref_iast": "Bhagavad Gītā 10.9",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on devotees who find joy together and the light he gives them.",
+     "sanskrit": "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम् । कथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च ॥",
+     "line": "Their minds on me, they talk of me with each other, and find joy and contentment in it.",
+     "translation": "With minds fixed on me and lives given to me, enlightening one another and always speaking of me, they are content and delighted.",
+     "why": "Good company and an inner lamp clear the dark.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.2",
+      "title": "The yoga of devotion and its fruit",
+      "summary": "Devotees talk of the divine with each other and find joy; out of compassion Krishna lights the lamp of knowledge in their hearts.",
+      "story_hook": "",
+      "lesson": "Good company and an inner lamp clear the dark."
+     },
+     "score": 2.6444,
+     "beat": "hook",
+     "role_fit": 0.12,
+     "meaning": "Krishna is telling Arjuna about the people who love him. They sit together and talk of him, and in that talk they find a deep joy and contentment. They are not just passing time. They are lighting each other up with their words and their shared focus on the divine. What is being proposed here is that the company we keep and the light we hold inside can clear away the darkness.",
+     "for_you": "The house is quiet now, and the verses arrive alone in that quiet. This verse speaks of people who find something together. It asks what happens when you bring a question to a verse instead of just reading it, and you sit with that question in the quiet."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0015,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "A teacher tells a student that every night we enter a hidden world in our hearts, the self, without knowing it. The teacher says we are like people who walk over buried gold every day and never find it, because they do not know where it is. In the same way, all living beings enter that deep world of Brahman daily, yet they miss it because they are caught in falsehood.",
+     "for_you": "Your quiet house is like that buried gold. You walk through it every day and feel its weight, but you do not yet know it holds a deeper world. The silence is not an empty room. It is the ground where you can finally see what you have been passing over."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.11",
+     "ref": "Ashtavakra Gita 18.11",
+     "ref_iast": "Aṣṭāvakra Gītā 18.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "स्वाराज्ये भैक्षवृत्तौ च लाभालाभे जने वने । निर्विकल्पस्वभावस्य न विशेषोऽस्ति योगिनः ॥",
+     "line": "Throne or begging bowl, gain or loss, crowd or solitude: a steady person stays the same.",
+     "translation": "For the yogi of steady nature there is no difference between ruling a kingdom and living on alms, gain and loss, the crowd and the forest.",
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 2.8551,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Ashtavakra speaks to Janaka in the final chapter on peace, describing the calm of the wise. He says a steady person sees no difference between ruling a kingdom and living on alms, between gain and loss, or between the crowd and the forest. The verse proposes that calm is not something to chase by changing places or seeking special conditions. It is how you hold ordinary life. The restless keep walking past their own treasure. The steady person lets the world stay as it is, and remains unchanged inside it.",
+     "for_you": "The house is quiet, and the children are busy with their own lives on Sunday. That is ordinary life now. The verse asks you to hold that stillness steady inside you. You do not need to change the silence to find what is steady."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.7.46.chaupai.3",
+     "ref": "Ramcharitmanas, Uttar Kand 7.46 (chaupai 3)",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 7.46",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "the citizens of Ayodhya",
+     "setting": "Ram, now king, speaks to the people about the human life they have.",
+     "sanskrit": "फिरत सदा माया कर प्रेरा। काल कर्म सुभाव गुन घेरा॥ कबहुँक करि करुना नर देही। देत ईस बिनु हेतु सनेही ॥ नर तनु भव बारिधि कहुँ बेरो। सन्मुख मरुत अनुग्रह मेरो॥ करनधार सदगुर दृढ़ नावा। दुर्लभ साज सुलभ करि पावा ॥",
+     "line": "This life is the boat, my grace the wind behind it, a good teacher at the helm.",
+     "translation": "Driven always by illusion, surrounded by time, karma, nature and the qualities, the soul wanders; then sometimes, out of compassion, God, a friend without a reason, gives it a human body. The human body is a boat for the ocean of becoming, my grace is the favourable wind, a true teacher is the steady helmsman: you have been given, easily, what is hard to get.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": null,
+     "score": 2.8324,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "Ram speaks to the people of Ayodhya after becoming king. They have lived through joy and sorrow, gain and loss. He tells them this human life is a boat crossing a vast ocean. The currents are illusion, time, and the forces of nature. But a true teacher stands at the helm, and God's grace is the wind behind the sails. You have been given this body and this life easily, yet it is what is hard to get.",
+     "for_you": "The quiet house is not a stop. It is the boat. You have been given this vessel to cross the ocean, and the wind is already there. Let the Sunday calls with your children be the wind, and let your own reading be the hand on the rudder."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.8",
+     "ref": "Bhagavad Gita 12.8",
+     "ref_iast": "Bhagavad Gītā 12.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna begins his ladder of practices with the simplest instruction.",
+     "sanskrit": "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय । निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः ॥",
+     "line": "Rest your mind in me, settle your thinking in me, and you will live in me.",
+     "translation": "Fix your mind on me alone, let your understanding settle in me; from then on you will dwell in me. Of this there is no doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 3.2431,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He is offering a path forward that begins not with a great ritual or a difficult feat, but with a quiet settling. He tells Arjuna to fix his mind on him alone and to let his understanding settle into that focus. From there, Krishna promises, Arjuna will live in him. It is an invitation to stop scattering the mind and instead rest it in one place.",
+     "for_you": "After the quiet of the house, take the Gita and read this verse slowly. Ask yourself what it means for your mind to rest in one place today, before you move to the next line."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.7.1",
+     "ref": "Bhagavad Gita 7.1",
+     "ref_iast": "Bhagavad Gītā 7.1",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna opens the teaching on knowing him fully.",
+     "sanskrit": "श्री भगवानुवाचमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः । असंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु ॥",
+     "line": "Keep your mind attached to me, lean on me, keep practising. You will come to know me fully.",
+     "translation": "Hear, Partha, how with your mind attached to me, practising yoga and taking refuge in me, you will know me fully, without doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9669,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna speaks to Arjuna on the battlefield as the teaching on knowing him fully begins. He says that if Arjuna keeps their mind attached to him, leans on him, and keeps practising, they will come to know him completely. The path is not about gathering more words, but about steadying the mind on one thing and staying with it. This is an invitation to stop searching for more verses and to trust the practice of returning to the source.",
+     "for_you": "After the children call on Sunday, sit with the Gita and choose one line. Ask it a question that belongs to your quiet house. Write the first sentence that comes. This is how the verse begins to live for you."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sampati",
+     "title": "Sampati, the bird who could not fly",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sampati",
+      "Angada",
+      "Hanuman",
+      "Nishakara"
+     ],
+     "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+     "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+     "lesson": "Even when you feel useless, your experience may be exactly what someone needs.",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.62.13",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 62.13",
+      "family": "vr",
+      "speaker": "Sage Nishakara",
+      "listener": "Sampati (recounted)",
+      "setting": "The old vulture Sampati, wings burnt and grounded for ages, is told why he should live on.",
+      "sanskrit": "उत्सहेयमहं कर्तुमद्यैव त्वां सपक्षकम्। इहस्थस्त्वं हि लोकानां हितं कार्यं करिष्यसि॥",
+      "line": "You are needed exactly where you are, as you are. Your use isn't over.",
+      "translation": "I could give you back your wings this very day. But by staying here as you are, you will do something for the good of the world.",
+      "why": "Even when you feel useless, your experience may be exactly what someone needs.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "retirement",
+        "label": "I've retired and feel lost"
+       },
+       {
+        "id": "no_meaning",
+        "label": "Nothing is wrong but nothing feels meaningful"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sampati",
+       "title": "Sampati, the bird who could not fly",
+       "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+       "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+       "lesson": "Even when you feel useless, your experience may be exactly what someone needs."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "An old bird with burnt wings had waited thousands of years for this moment",
+     "teaser": "An old bird with burnt wings had waited thousands of years for this moment",
+     "for_you": "The old bird on the mountain thought its life was over because it could no longer fly. But its long wait gave the young monkeys the exact direction they needed to find Sita. Your quiet house and your years of living are not an end."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet house and the forwarded verses",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 142,
+   "llm": 4084,
+   "total": 13809,
+   "select": 9576
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is very quiet now. The children call on Sunday, but the rest of the week is yours alone. You want to read the Gita properly. You want to understand what is behind the words, not just receive them."
+  ],
+  [
+   "scene",
+   "Arjuna is on the battlefield. He is confused about what to do. Krishna is beside him. Krishna is describing the people who love him. The wise ones sit together and talk of him. They find joy in their shared talk, and Krishna lights a lamp in their hearts. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम्, कथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च."
+  ],
+  [
+   "line",
+   "In plain words: Their minds on me, they talk of me with each other, and find joy and contentment in it."
+  ],
+  [
+   "unpack",
+   "This is about good company. It is about an inner lamp. When you sit with others and speak of what matters, you clear the dark. But what if the people you used to sit with are no longer here? The dark can return. This is harder than it sounds, because the quiet house can feel like a wall. Yet the verse says the light is not just in the group. It is in the shared focus. The lamp is lit in the heart, and it can burn for one person as well."
+  ],
+  [
+   "for_you",
+   "You have the quiet house and the text in front of you. You do not need to find a group. You only need to bring one question to the verse. Let the question sit with you in the quiet. See what rises."
+  ],
+  [
+   "close",
+   "What question will you bring to the quiet today?"
+  ]
+ ],
+ "depth": {
+  "life": "The house is quiet, and the verses arrive alone in that quiet. You want to read the Gita properly, not just forward what comes to you. A question can change how a verse lives when you sit with it in the stillness.",
+  "points": "The mind seeks company, and the heart needs light. When you ask a question of a verse and let it sit with you, you are finding your own company. The dark does not clear by itself. It clears when you speak of it with intent.",
+  "practice": "Choose one line from a verse you have read and ask it a question. Write the question down and let it sit with you for the rest of the day.",
+  "question": "What does this verse ask of you when you read it alone?"
+ }
+}

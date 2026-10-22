@@ -1,0 +1,525 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "guilty and split in two",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "From feeling half of everything to finding the one place you are fully present, in the moment you are actually in.",
+   "week_beats": {
+    "hook": "You recognise the split and the guilt, named without judgement.",
+    "diagnose": "You see that the guilt comes from believing you must be fully in both at once.",
+    "steady": "You hold that doing your duty in the moment is enough, and you are not less for being pulled.",
+    "act": "You try being fully present in the one place you are, for one hour, and letting the other go.",
+    "story": "A mother who served in two worlds at once shows you that being fully present in the moment is its own kind of presence."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "A working mother after her second baby feels she is failing both her daughter and her job, and the guilt of not being present enough is tearing her apart.",
+   "mirror": "Your daughter asked why you are not like other moms, and the question landed in the part of you that is already stretched thin.",
+   "insight": "The guilt is real, but it is not proof that you are failing. It is proof that you care about both, and that is the part of you that is not failing.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 1.295,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.363,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The feeling of being torn between two lives you love, and the guilt that follows when neither gets your full attention. I'm physically home but not present with my kids.",
+    "diagnose": "When duties pull in different directions and fear clouds which one is truly yours, the mind turns against itself and the guilt grows.",
+    "steady": "Praise and blame come and go like the seasons; the one who does their duty in each moment is not less, only human.",
+    "act": "Do your duty in the moment you are in, and let the other go; when you are with your daughter, be there, and when you are at work, be there.",
+    "story": "A mother who was called to serve in two worlds at once, who learned to be fully present in whichever one she was in, and found her peace there."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The split",
+    "What the guilt is really for",
+    "More than a mother or a PM"
+   ],
+   "seat": "a working mother who feels she is failing both roles",
+   "life_context": "In her mid-thirties and back at work after her second baby; her daughter asked why she is not like other moms, and she cried in the car, feeling she is half a mother and half a project manager.",
+   "details": [
+    "back at work after second baby",
+    "daughter asked why she does not come to school like other moms",
+    "cried in the car",
+    "feels half a mother and half a PM"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "week_fit:8=0.0,11=0.6,84=0.3,19=0.3,33=0.6,47=0.0",
+    "week_fit:swapped=4",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:repeat=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.67",
+     "ref": "Bhagavad Gita 2.67",
+     "ref_iast": "Bhagavad Gītā 2.67",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते । तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥",
+     "line": "When the mind chases a wandering sense, it is swept off like a boat in the wind.",
+     "translation": "When the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.1738,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Krishna answers Arjuna's question about the steady mind. He says that when the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water. The point is that steadiness is built by guarding attention, because anger and ruin start with what you dwell on.",
+     "for_you": "You feel half a mother and half a project manager. The guilt is heavy. But the mind that chases the roving senses is swept off like a boat in the wind. Your attention is the boat. When you are with your daughter, guard it. Let the work thoughts stay on the shore."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 2.8152,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama, after he has seen how wealth hardens people and how time eats everything, asks what the point of it all is. He tells his teachers, Vishvamitra and Vasishtha, that no one wounds us like we wound ourselves. The senses become our own enemies. Truth itself seems untrue. The self strikes the self, and the mind becomes its own enemy.",
+     "for_you": "The guilt you feel is not a verdict on your work or your care. It is the mind striking itself, caught between two places that both matter. The split you feel is the mind becoming its own enemy, not you failing at either role."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.7",
+     "ref": "Bhagavad Gita 6.7",
+     "ref_iast": "Bhagavad Gītā 6.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः । शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥",
+     "line": "Self-mastered and calm, you stay centred in heat and cold, pleasure and pain, praise and insult.",
+     "translation": "For one who has conquered himself and is at peace, the higher self stays steady in cold and heat, pleasure and pain, honour and dishonour.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Staying steady under insult is not accepting mistreatment; you can stay calm and still speak up.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.11,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Krishna is speaking to Arjuna as they stand on the field of war, telling them that the one who has mastered their own mind remains steady no matter what comes. Cold and heat, pleasure and pain, praise and insult pass over them like weather. The one who is at peace with themselves does not let the outer world shake their centre, because they know they are their own best friend or their own worst enemy. The choice is in how you meet each moment.",
+     "for_you": "In the car with your daughter, you were cold and hot with shame and love. You were praise and insult to yourself in the same breath. Today, let that steadiness be enough. You are not less for being pulled, and you do not have to prove you are fully one thing to be whole."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "hans_gita.21",
+     "ref": "Hamsa Gita 21 (Mahabharata, Shanti 12.305.21 in our data)",
+     "ref_iast": "Haṃsa Gītā 21",
+     "family": "gitas",
+     "speaker": "Hamsa (the golden swan)",
+     "listener": "the Sadhyas",
+     "setting": "Bhishma tells Yudhishthira how a golden swan answered the Sadhyas' question about the best way to live.",
+     "sanskrit": "विमुच्यमानः पापेभ्यो धनेभ्य इव चन्द्रमाः । विरजाः कालमाकाङ्क्षन् धीरो धैर्येण सिध्यति ॥",
+     "line": "Like the moon slipping out of clouds, the steady one waits for the right time and succeeds.",
+     "translation": "Freed from wrongs like the moon from dark clouds, spotless and steady, waiting for the right time, the wise one succeeds through patience.",
+     "why": "Self-control, calm under insult and truth are the best way to live.",
+     "misuse": "Waiting for the right time is active patience, not giving up.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "hans_gita.p.swan_and_sadhyas",
+      "title": "The golden swan and the Sadhyas",
+      "summary": "On his bed of arrows, Bhishma answers Yudhishthira's question about truth, self-control and forgiveness with an old story: the creator, in the form of a golden swan, met the Sadhya gods and taught them that self-control, calm under insult, truth and good company are the best way to live.",
+      "story_hook": "A golden swan landed among the gods, and they asked it the one question they could not answer: what is the best thing a person can do?",
+      "lesson": "Self-control, calm under insult and truth are the best way to live."
+     },
+     "score": 2.7903,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Bhishma tells Yudhishthira about the golden swan Hamsa, who taught the gods that self-control and truth are the best way to live. The swan said that like the moon slipping out of clouds, the steady one waits for the right time and succeeds. This is not about giving up. It is about staying calm and doing your duty in the moment, without being thrown off by heat or cold, praise or insult.",
+     "for_you": "The guilt you feel at work and at home is not a sign you are failing. It is the feeling of two honest duties pulling at you. Let the guilt be there, but do not let it decide that you are half of everything."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_aitareya.33",
+     "ref": "Aitareya Upanishad 2.1.3",
+     "ref_iast": "Aitareya Upaniṣad 2.1.3",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The second birth: raising a child.",
+     "sanskrit": "स यत्कुमारं जन्मनोऽग्रेऽधिभावयत्यात्मानमेव तद्भावयत्येषं लोकानां सन्तत्या । एवं सन्तता हीमे लोकास्तदस्य द्वितीयं जन्म ॥",
+     "line": "Caring for your child, you care for yourself. Through them you are born a second time.",
+     "translation": "When he cares for the child from birth onward, he is caring for himself, for the continuation of these worlds; that is how they continue. That is his second birth.",
+     "why": "Care for the one who carries and raises the child; raising children continues your life.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.aitareya.three_births",
+      "title": "The three births of a person",
+      "summary": "The Aitareya describes three births: conception and pregnancy, when the mother nourishes the child and must herself be nourished; birth and upbringing, when caring for the child is caring for oneself; and death, when the parent, duties done, departs and the child carries on.",
+      "story_hook": "",
+      "lesson": "Care for the one who carries and raises the child; raising children continues your life."
+     },
+     "score": 3.3759,
+     "beat": "act",
+     "role_fit": 0.45,
+     "meaning": "A seer speaks to a reader about the second birth. The child is born, and now the parent must raise them. The seer says that when a parent cares for the child from the very beginning, they are caring for themselves. The child is the continuation of the parent's life and the worlds. To raise a child is to be born again, carrying your own life forward through them.",
+     "for_you": "Your daughter's question about school is a second birth calling out. For one hour today, let her be your only world. Put your work aside and let her see the whole of you. That is how you care for yourself, by caring for her."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.95.46",
+     "ref": "Mahabharata · Udyoga Parva · Udyoga: Krishna's peace embassy",
+     "ref_iast": "Mahābhārata, Udyoga Parva 95.46",
+     "family": "mbh",
+     "speaker": "Krishna (speaking for the Pandavas)",
+     "listener": "Dhritarashtra",
+     "setting": "Krishna addresses the Kaurava court, asking Dhritarashtra to restrain his sons and make peace.",
+     "sanskrit": "वर्तामहे त्वयि च तां त्वं च वर्तस्व नस्तथा / पित्रा स्थापयितव्या हि वयमुत्पथमास्थिताः",
+     "line": "When children go astray, a parent's job is to set them back on the path, not look away.",
+     "translation": "We have treated you as a father; treat us the same way. When children go astray, it is the father's duty to set them back on the path.",
+     "why": "You can make the best case for peace and still be refused. Speak anyway.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.krishna_peace_embassy",
+      "title": "Krishna's peace embassy to the Kauravas",
+      "summary": "Krishna travels to Hastinapura to plead for peace between the cousins. Elders, sages and finally Gandhari urge Duryodhana to share the kingdom; he refuses, even plotting to seize Krishna, and war becomes certain.",
+      "story_hook": "Krishna, who could have ended the quarrel by force, chose to walk into his enemies' court with nothing but words.",
+      "lesson": "You can make the best case for peace and still be refused. Speak anyway."
+     },
+     "score": 2.916,
+     "beat": "act",
+     "role_fit": 0.626,
+     "meaning": "Krishna stands before Dhritarashtra's court in Hastinapura. He has come as a messenger of peace, asking the king to hold his sons back from war. He reminds the king that a parent's duty is to guide a child back when they stray, not to look away. The point is that you can make the best possible case, speak with full care, and still be refused. The burden of speaking does not rest on the outcome. It rests on the fact that you spoke.",
+     "for_you": "You are in your car, or at your desk, or at your daughter's school gate. Pick the one place you are right now. For the next hour, let the other role go. Be only the mother, or only the project manager, and let the rest wait."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "present_parent",
+        "label": "I'm physically home but not present with my kids"
+       },
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "Kausalya saw the whole cosmos in her son, yet she begged him to stay small. You do not have to be the perfect mother or the flawless manager. In the moment you are with your daughter, let yourself be small with her. That ordinary presence is its own kind of greatness."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The split",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 142,
+   "llm": 5257,
+   "total": 14238,
+   "select": 8831
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying a heavy split. You are half a mother and half a project manager, and neither role feels complete. Your daughter asked why you are not like the other moms, and the guilt of that question is tearing you apart."
+  ],
+  [
+   "scene",
+   "Arjuna has asked Krishna a simple question. He wants to know what a person of steady mind looks like. How do they sit, speak and walk. Krishna looks at him and answers. Krishna said:"
+  ],
+  [
+   "sanskrit",
+   "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते, तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि."
+  ],
+  [
+   "line",
+   "In plain words: When the mind chases a wandering sense, it is swept off like a boat in the wind."
+  ],
+  [
+   "unpack",
+   "This is about attention. Your mind is a boat. When it chases every thought and every worry, the wind of distraction sweeps it away. You are not failing because you are split. You are struggling because your mind is trying to be in two places at once. The steadiness you want comes from guarding where you place your attention. This is easier said than done, because you are a working mother with real demands on you. But the ruin starts in the mind, before it ever reaches your desk or your child."
+  ],
+  [
+   "for_you",
+   "The next time you sit with your daughter, let the work thoughts stay on the shore. Let her have the full boat. Let the guilt be there, but do not let it steer."
+  ],
+  [
+   "close",
+   "Where is your boat right now."
+  ]
+ ],
+ "depth": {
+  "life": "You are in the car after your daughter's question, feeling split in two. The guilt of being half a mother and half a project manager is heavy. You are physically home but not present with your kids, and you carry the weight of not being enough in either role.",
+  "points": "The mind that chases a wandering sense is swept off like a boat in the wind. Steadiness is built by guarding attention. Anger starts with what you dwell on. You are not failing. You are caught between duties, and your attention is the boat.",
+  "practice": "Sit with your daughter for five minutes and let the work thoughts stay on the shore.",
+  "question": "Where does your mind drift when you are with your daughter?"
+ }
+}

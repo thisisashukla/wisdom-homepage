@@ -1,0 +1,530 @@
+{
+ "persona": {
+  "id": "in_boomer_retired_empty",
+  "market": "India (Lucknow)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "66, retired bank officer in Lucknow, wife passed 2 years ago, son in Toronto, daughter in Mumbai. Reads the Gita occasionally, wants to understand it properly.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 3,
+   "topic": "meaning",
+   "follow": "after_retiring"
+  },
+  "note": "after my wife left us the house is very quiet. children call on sunday. I have time now and I want to read Gita properly not just the shlokas everyone forwards on whatsapp",
+  "note_source": "voice",
+  "expect_stance": "seeking"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "quietly searching",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "From forwarded quotes to the actual question, and from a quiet house to the first real reading.",
+   "week_beats": {
+    "hook": "You recognise the wish to read for yourself, not just the forwarded lines.",
+    "diagnose": "You see that the search is for what does not pass, not for another quote to share.",
+    "steady": "You hold that what is real in you cannot be lost, and the Gita is the conversation about it.",
+    "act": "You try reading one verse with a question, not a quote, and writing down what it asks.",
+    "story": "A seeker who came to a teacher with a quiet house shows you that the text is a conversation, not a collection of answers."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "partner",
+    "child",
+    "family"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A retired widower with quiet days wants to read the Gita properly for himself, not just forwarded quotes.",
+   "mirror": "The house is quiet, and on Sunday the children call.",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.79,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.125,
+     "source": "chip"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.861,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.838,
+     "source": "chip"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.575,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A quiet house and a wish to read the Gita for oneself, not just the lines everyone forwards.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; the search is for what does not pass and cannot be taken away.",
+    "steady": "The self cannot be cut, burned, wet, or dried; it is what is real in you, and it is never lost.",
+    "act": "Read the Gita with a question in mind, not a quote to post; write down what the verse asks of you, and sit with it.",
+    "story": "A seeker who sat with a teacher and learned that the text is not a collection of answers but a conversation about what is real."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "What's it all for",
+    "What does not pass",
+    "The meaning within"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "wife has passed away",
+    "house is very quiet",
+    "children call on Sundays",
+    "has time now after retirement"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "insight:template",
+    "week_fit:69=0.6,612=0.6,13=0.3,43=0.3,1=0.6,8=0.6",
+    "week_fit:swapped=2",
+    "retried:1",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:fallback_line=1,invented=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.69",
+     "ref": "Bhagavad Gita 2.69",
+     "ref_iast": "Bhagavad Gītā 2.69",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "या निशा सर्वभूतानां तस्यां जागर्ति संयमी । यस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः ॥",
+     "line": "What the crowd sleeps through, the wise stay awake to. What the crowd chases, the wise see past.",
+     "translation": "What is night for all beings, in that the self-controlled one is awake; and where all beings are awake, that is night for the seeing sage.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.5712,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Krishna is answering Arjuna about what a steady person looks like, and he is drawing a line between two kinds of night. One is the night when everyone else is asleep, and the wise are awake. The other is the night when everyone else is awake, and the wise are asleep to it. The point is that steadiness is not about the hour on the clock, but about where your attention goes. It is built by guarding what you look at and what you think about.",
+     "for_you": "You have the house to yourself now, and the silence is not empty, it is just quiet. You are looking for a way to read that is yours, not a forwarded line. This verse says the first step is to notice where your mind goes when there is no noise around it."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0507,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "In the Chhandogya Upanishad, a teacher explains that deep within the heart lies a hidden world we visit every night in sleep, yet we never recognize it. The teacher says that just as people walking daily over buried gold never see the treasure beneath their feet, we pass by our own true nature every day. We are carried away by untruth, never finding what is already ours.",
+     "for_you": "You have walked past your own quiet treasure for years. Today, look at the Sunday calls and the empty house not as losses, but as the buried gold you pass every day. Let them be the ground beneath you, not the noise above it."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.13",
+     "ref": "Bhagavad Gita 2.13",
+     "ref_iast": "Bhagavad Gītā 2.13",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥",
+     "line": "Childhood, youth, old age: the body keeps changing. The wise aren't thrown by the next change.",
+     "translation": "Just as the embodied self passes through childhood, youth and old age in this body, so it passes on to another body. The steady person is not bewildered by this.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.2693,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, telling him that the true self inside the body moves through childhood, youth, and old age just as it moves from one body to the next. The wise person does not let these changes shake them. What you truly are is never born and never dies, so you can hold onto it even when everything around you shifts.",
+     "for_you": "The quiet in your house is the body moving into a new stage. What is real in you has not changed. Rest in that steadiness while the days pass."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.46",
+     "ref": "Bhagavad Gita 18.46",
+     "ref_iast": "Bhagavad Gītā 18.46",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "यतः प्रवृत्तिर्भूतानां येन सर्वमिदं ततम् । स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानवः ॥",
+     "line": "Doing your own work well can be your worship of the source of all life.",
+     "translation": "By worshipping, through his own work, Him from whom all beings arise and by whom all this is pervaded, a person attains perfection.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Work as worship doesn't mean overwork or tolerating exploitation.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 3.0377,
+     "beat": "steady",
+     "role_fit": 0.194,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, guiding him toward a life of action that is rooted in offering rather than reward. He tells him that a person reaches perfection not by abandoning their work, but by worshipping through it. This means doing the work that naturally fits you, with all its flaws, and seeing it as an offering to the source of all life. The perfection lies in the attitude, not in the outcome.",
+     "for_you": "Turn inward, come to know the self, and let your work become service and offering; a life lived from there is full."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.032,
+     "beat": "act",
+     "role_fit": 0.5,
+     "meaning": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth. Ashma tells him that pain comes from what we lose, that meetings end, and that days do not return. He says to steady the mind by asking where you came from, where you are going, and who you are. The questions are meant to steady grief, not to dismiss it.",
+     "for_you": "The questions Ashma asks are not a distraction. They are a way to let the quiet of the house hold you. Sit with one of them, and let the answer come on its own."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ram_gita.46",
+     "ref": "Ram Gita 46 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 46",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "विविक्त आसीन उपारतेन्द्रियो विनिर्जितात्मा विमलान्तराशयः । विभावयेदेकमनन्यसाधनो विज्ञानदृक्केवल आत्मसंस्थितः ॥",
+     "line": "Sit somewhere quiet, let the senses rest, and give your full attention to one thing.",
+     "translation": "Sitting in a quiet place, senses at rest, self-mastered, pure within, one should contemplate the One with undivided attention, resting in the Self.",
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 2.7077,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion. Rama tells him to sit somewhere quiet, let the senses rest, and give his full attention to one thing. This is not about emptying the mind, but about resting the senses and focusing steadily until the mind becomes like a still ocean. Until that understanding comes, simple devotion keeps the heart alive in the silence.",
+     "for_you": "The house is quiet now. You can let the senses rest in that quiet. Give your full attention to one thing, just as Rama says. You might sit with your tea, or with the Gita in your hands, and let the rest of the day wait. This steady attention is what carries you forward."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "dheesh_gita.p.seers_find_peace",
+     "title": "Learned seers find no peace and go to Ganesha",
+     "kind": "story",
+     "family": "dheesh_gita",
+     "characters": [
+      "the seers",
+      "Dheesh (Ganesha)"
+     ],
+     "story_hook": "They knew every verse of every Veda, and still could not sleep.",
+     "summary": "Seers who had received all the Vedas still found no peace, so they went to Ganesha's world and took refuge in him. Ganesha tells them that though he has no form, loving devotees see him in the form they long for, and that knowing his highest form brings lasting peace.",
+     "lesson": "Learning alone may not settle the heart; turning to God can.",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "anchor": {
+      "id": "dheesh_gita.1.42",
+      "ref": "Dheesh Gita 1.42",
+      "ref_iast": "Dheesh Gītā 1.42",
+      "family": "gitas",
+      "speaker": "The seers",
+      "listener": "Dheesh (Ganesha)",
+      "setting": "Seers who had studied every Veda come to Ganesha's world because learning alone left them restless.",
+      "sanskrit": "अतो नेवाभवच्छान्तिरस्माकं चेतसि प्रभो!। वयं शरणमापन्ना भवल्लोकमुपस्थिताः ॥",
+      "line": "Lord, no peace came to our minds. So we have come to you for refuge.",
+      "translation": "So no peace came into our minds, Lord. We have come to your world and taken refuge in you.",
+      "why": "Learning alone may not settle the heart; turning to God can.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "no_meaning",
+        "label": "Nothing is wrong but nothing feels meaningful"
+       }
+      ],
+      "prasang": {
+       "id": "dheesh_gita.p.seers_find_peace",
+       "title": "Learned seers find no peace and go to Ganesha",
+       "summary": "Seers who had received all the Vedas still found no peace, so they went to Ganesha's world and took refuge in him. Ganesha tells them that though he has no form, loving devotees see him in the form they long for, and that knowing his highest form brings lasting peace.",
+       "story_hook": "They knew every verse of every Veda, and still could not sleep.",
+       "lesson": "Learning alone may not settle the heart; turning to God can."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "The seers knew every verse of every Veda, and still couldn't sleep",
+     "teaser": "The seers knew every verse of every Veda, and still couldn't sleep",
+     "for_you": "The quiet house and the Sunday calls are your Veda now. This is the moment to let the mind rest and give your full attention to one thing, as Ganesha asks. Let the searching slow down today and simply sit with the words."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What's it all for",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 191,
+   "llm": 4147,
+   "total": 13963,
+   "select": 9616
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is quiet now, and the Sundays are short. You are sitting with time that used to belong to work, and it feels like the floor has dropped away. That is not sadness."
+  ],
+  [
+   "scene",
+   "Arjuna is on a battlefield, and he has asked Krishna what a steady person looks like. He wants to know how someone stays calm when everything is falling apart. Krishna answers by talking about two kinds of night. The first is the night when everyone else is asleep, and the wise are awake to what matters. Krishna said:"
+  ],
+  [
+   "sanskrit",
+   "या निशा सर्वभूतानां तस्यां जागर्ति संयमी, यस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः."
+  ],
+  [
+   "line",
+   "In plain words: What the crowd sleeps through, the wise stay awake to. What the crowd chases, the wise see past."
+  ],
+  [
+   "unpack",
+   "Steadiness is not about being busy or being calm. It is about where your attention goes. When you guard what you look at, what you hear, and what you think about, you build a mind that does not break. But if you let your attention drift toward what you lack, what angers you, or what you fear, anger grows from there. This is easier said than done, because the mind wants to wander toward the noise. It takes work to keep it turned toward what is true."
+  ],
+  [
+   "for_you",
+   "You have the quiet now, and the silence is not empty. It is just quiet. You are looking for a way to read that is yours, not a forwarded line. This verse says the first step is to notice where your mind goes when there is no noise around it. Let your attention rest on what is real, and let the rest go."
+  ],
+  [
+   "close",
+   "Where does your mind go when the room is this quiet?"
+  ]
+ ],
+ "depth": {
+  "life": "The house is quiet now, and the hours on the phone fill the space. Your children call on Sundays, and that is where their voice meets the rest of the week. You are reading, but the lines feel like they belong to someone else's life.",
+  "points": "Steadiness is not a mood you fall into. It is built by what you choose to look at when the room is empty. The crowd is not out there. It is in what you feed your mind when there is no one else to distract you.",
+  "practice": "Put the phone away for one hour this evening. Sit with the book and read one page without looking for a meaning. Just let the words sit there.",
+  "question": "What do you reach for when the quiet first begins?"
+ }
+}

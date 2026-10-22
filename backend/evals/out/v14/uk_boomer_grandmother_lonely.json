@@ -1,0 +1,520 @@
+{
+ "persona": {
+  "id": "uk_boomer_grandmother_lonely",
+  "market": "UK (Birmingham)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "68, came from Jalandhar in 1976, worked in a factory then raised 3 children. Widowed. Children busy, grandchildren on phones. Reads Ramcharitmanas.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "lonely in a full house",
+   "bridge": "The Ramayan has been your company for years, and now you are looking for something deeper in the same text.",
+   "week_thesis": "The Ramayan that has been your company becomes, over seven days, a conversation with the self that does not end.",
+   "week_beats": {
+    "hook": "You recognise the Sunday quiet and the search for something deeper in the text that has been your only company.",
+    "diagnose": "You see that the search is not for a new text but for the self that is not the story.",
+    "steady": "You hold that what does not pass is never alone, and the Ramayan is a door to it, not a substitute for it.",
+    "act": "You try reading one verse as a conversation with the self that is not the story, and sitting with what does not end."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "rcm"
+   ],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A widow who raised her children alone and now reads the Ramayan alone on Sundays is looking for a deeper connection and meaning.",
+   "mirror": "You raised them alone, and on Sundays they are here but not really here, with the Ramayan as your only company.",
+   "insight": "Even among people, you've felt unseen. The distance is real, and so is the way back.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.76,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.29,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.244,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.392,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet of a Sunday morning when the house is full but the room is empty, and the search for something that holds more than the Ramayan alone. I feel lonely.",
+    "diagnose": "When the heart is searching for where it belongs, the texts say it is searching for the self that does not pass away.",
+    "steady": "The self that is not born and does not die is never alone; what you call loneliness is the heart reaching for what does not pass.",
+    "act": "Read the Ramayan as a conversation with the self that is not the story; let each verse be a place where you sit with what does not end.",
+    "story": "A woman who read the Ramayan for comfort and found in it the one who never leaves, showing that the text is a door to the self, not a replacement for it."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The Ramayan as a door",
+    "The self that does not pass",
+    "More than company"
+   ],
+   "seat": "a widow who raised her children alone and now reads the Ramayan alone on Sunday mornings",
+   "life_context": "In retirement, having raised her children alone after their father died; Sunday visits are filled with silence because everyone is on a phone, and the Ramayan in the morning is the only company she has.",
+   "details": [
+    "raised children alone after their father died",
+    "children visit on Sundays but are always on their phones",
+    "reads the Ramayan in the morning as her only company",
+    "is looking for something deeper"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "stance:seeking_over_pain",
+    "hook:anchored_to_situation",
+    "insight:template",
+    "week_fit:9=0.6,40=0.6,1=0.9,11=0.9,3=0.9,3=0.0",
+    "week_fit:swapped=1",
+    "week_sim:mean=0.58,max=0.64",
+    "redo:2",
+    "redo_fixed:0",
+    "day1:third_try",
+    "dropped:copied=1,repeat=1,soft_kept=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:close=cliche",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.9",
+     "ref": "Bhagavad Gita 10.9",
+     "ref_iast": "Bhagavad Gītā 10.9",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on devotees who find joy together and the light he gives them.",
+     "sanskrit": "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम् । कथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च ॥",
+     "line": "Their minds on me, they talk of me with each other, and find joy and contentment in it.",
+     "translation": "With minds fixed on me and lives given to me, enlightening one another and always speaking of me, they are content and delighted.",
+     "why": "Good company and an inner lamp clear the dark.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.2",
+      "title": "The yoga of devotion and its fruit",
+      "summary": "Devotees talk of the divine with each other and find joy; out of compassion Krishna lights the lamp of knowledge in their hearts.",
+      "story_hook": "",
+      "lesson": "Good company and an inner lamp clear the dark."
+     },
+     "score": 2.3829,
+     "beat": "hook",
+     "role_fit": 0.12,
+     "meaning": "Krishna tells Arjuna that those who fix their minds on the divine and give their lives to it find a particular kind of joy. They enlighten one another and speak of this presence with each other. In doing so, they become content and delighted. It is a picture of people finding light not in isolation, but in shared attention, where their talk turns into a source of deep contentment.",
+     "for_you": "You have sat with the Ramayan for years, and now you are looking for something deeper in it. The Sunday quiet is real, and so is the way back. The text can be a conversation with the self that does not end."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.6608,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma answers King Janaka, who has lost his family and wealth. Ashma says that pain comes from what we did not want and what we lost, that meetings end, and that days do not return. He tells Janaka to steady his mind by asking three questions: where did I come from, where am I going, and who am I, really? By turning inward to these questions, you find a footing that the loss of people and things cannot shake.",
+     "for_you": "Your Sunday mornings with the Ramayan are a quiet space where the same questions can steady you. You do not need to find a new story. You could sit with the self that reads it and ask where you came from and who you are, without the noise of the house around you."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.127.doha.1",
+     "ref": "Ramcharitmanas, Ayodhya Kand 2.127 (doha 1)",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.127",
+     "family": "rcm",
+     "speaker": "Valmiki",
+     "listener": "Ram",
+     "setting": "Valmiki ends his list of the hearts Ram lives in.",
+     "sanskrit": "जाहि न चाहिअ कबहुँ कछु तुम्ह सन सहज सनेहु। बसहु निरंतर तासु मन सो राउर निज गेहु ॥",
+     "line": "The one who wants nothing from you and simply loves you: that heart is your own home.",
+     "translation": "One who never wants anything from you and simply loves you: live in that mind always; it is your own home.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 3.3042,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "Valmiki finishes his list of the hearts Ram lives in. He tells Ram that the one who wants nothing from you and simply loves you is your own home. This is not a person to find in the world. It is a mind you can live in, a place that does not pass away.",
+     "for_you": "The Ramayan has been your company, but now you are looking for a deeper home within it. That home is the part of you that simply loves without wanting anything in return."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_shwetashwetar.6.11",
+     "ref": "Shvetashvatara Upanishad 6.11",
+     "ref_iast": "Śvetāśvatara Upaniṣad 6.11",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seekers",
+     "setting": "One of the best-known verses of the Upanishad, on the God within all.",
+     "sanskrit": "एको देवः सर्वभूतेषु गूढः सर्वव्यापी सर्वभूतान्तरात्मा। कर्माध्यक्षः सर्वभूताधिवासः साक्षी चेता केवलो निर्गुणश्च ॥",
+     "line": "One God is hidden in every being: the inner self of all, the quiet witness of all we do.",
+     "translation": "One God is hidden in all beings: all-pervading, the inner self of every being, overseer of all action, dwelling in all beings, the witness, pure awareness, alone, beyond all qualities.",
+     "why": "Refuge in God comes at the end of honest questioning, not instead of it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.shvet_inquiry_to_refuge",
+      "title": "Shvetashvatara: from 'what governs our lives?' to refuge",
+      "summary": "Seekers ask what causes the world and governs their joys and sorrows. Through meditation they come to see one Lord, Rudra-Shiva, hidden in every heart; the Upanishad moves from inquiry to recognition to a prayer of refuge (6.18) and ends on grace and love of God (6.21, 6.23).",
+      "story_hook": "",
+      "lesson": "Refuge in God comes at the end of honest questioning, not instead of it."
+     },
+     "score": 2.1179,
+     "beat": "steady",
+     "role_fit": 0.684,
+     "meaning": "A seer is speaking to seekers who have been asking what governs the world and their own joys and sorrows. He tells them that the answer is not far away. One presence is hidden inside every being. This inner self watches everything you do, yet it stays quiet and pure, beyond all qualities. The verse says that you can find your true home in this quiet witness, not in asking for things or running from pain.",
+     "for_you": "When the silence in your house feels heavy, let the Ramayan show you that the witness within is not alone. It is the same steady presence that watched you raise your children, and it remains now, without asking anything of you, simply as your own quiet home."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.7.126.chaupai.3",
+     "ref": "Ramcharitmanas, Uttar Kand 7.126 (chaupai 3)",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 7.126",
+     "family": "rcm",
+     "speaker": "Shiva / Tulsidas",
+     "listener": "Parvati / the reader",
+     "setting": "The Manas ends with its simplest teaching.",
+     "sanskrit": "एहिं कलिकाल न साधन दूजा। जोग जग्य जप तप ब्रत पूजा॥ रामहि सुमिरिअ गाइअ रामहि। संतत सुनिअ राम गुन ग्रामहि ॥",
+     "line": "Remember Ram, sing Ram, keep listening to what is good in him.",
+     "translation": "In this age of Kali there is no other means, no yoga, sacrifice, chanting, austerity, vow or ritual worship: remember Ram, sing Ram, and always listen to the qualities of Ram.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 3.1552,
+     "beat": "act",
+     "role_fit": 0.679,
+     "meaning": "Tulsidas speaks to the reader at the close of the Manas, after the great story is done. He tells them there is no other way in this age, no difficult yoga or sacrifice. The only means is to remember Ram, to sing Ram, and to keep listening to what is good in him. It is a quiet instruction to let the name and the story fill the space where other efforts fail.",
+     "for_you": "Today, read one verse not as a story but as a single sentence spoken back to you. Let the words rest in the silence after the children leave."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.6",
+     "ref": "Isha Upanishad 6",
+     "ref_iast": "Īśa Upaniṣad 6",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The Isha on seeing one life in all beings.",
+     "sanskrit": "यस्तु सर्वाणि भूतान्यात्मन्येवानुपश्यति । सर्वभूतेषु चात्मानं ततो न विजुगुप्सते ॥",
+     "line": "See yourself in everyone and everyone in yourself, and you stop recoiling from people.",
+     "translation": "One who sees all beings in the self, and the self in all beings, no longer shrinks away from anyone.",
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.211,
+     "beat": "act",
+     "role_fit": 0.655,
+     "meaning": "A seer speaks to a reader who is learning to look beyond the surface. She asks the reader to see the same self moving through every person. The verse says that when you see all beings inside yourself and yourself inside all beings, you will no longer shrink away from anyone. It is an invitation to hold your life lightly, to keep moving, and to recognize the quiet witness within others that is also within you.",
+     "for_you": "The silence in the Sunday room is heavy, but the same quiet witness you find in the Ramayan is sitting in the screens your children hold. See your own face in their distracted eyes, and let the distance soften for a moment."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       },
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "The waiting you have done, raising your children alone, was its own kind of gathering. Let the morning Ramayan be for you what Shabari's fruit was for her: a quiet preparation, not a proof of absence."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The Ramayan as a door",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 244,
+   "llm": 4283,
+   "total": 21035,
+   "select": 16501
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You sit in the Sunday quiet and watch your children look down at their screens. They are right there in the room, but you are on the other side of glass. The house is full, and yet the silence is what you feel."
+  ],
+  [
+   "scene",
+   "Krishna is looking at the people who follow him, not on a battlefield, but in a quiet space of trust. He sees them gathered, not alone, but together. They look at each other and speak of him, and their faces change. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम्, कथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च."
+  ],
+  [
+   "line",
+   "In plain words: Their minds on me, they talk of me with each other, and find joy and contentment in it."
+  ],
+  [
+   "unpack",
+   "He is saying that joy is not found in being alone with an idea. It is found when two people fix their minds on the same true thing and speak of it together. Their talk becomes a light, and that light clears the dark. This is easier said than done, because the mind wants to stay in its own small room. But the mind is not meant to stay in one room forever."
+  ],
+  [
+   "for_you",
+   "This morning, the Ramayan is not just a story on the page. Let it be a voice that meets yours in the quiet. Let the words be the company that stays, and let them speak to you until the room is full again."
+  ]
+ ],
+ "depth": {
+  "life": "The house is full of people on Sundays, yet you sit with the Ramayan. Your children are right there, but their eyes are on the screens. You read the words aloud and hear only the echo. You want to feel seen, and you are not sure where to look.",
+  "points": "The verse speaks of a gathering where people talk of one thing and find joy. The dark does not lift because they are alone, but because they are not speaking to each other. The light comes from shared attention, not from the crowd itself.",
+  "practice": "Read one verse aloud and pause, letting the silence hold you for a full minute before you turn the page.",
+  "question": "What would it feel like to speak the words to someone who is truly listening?"
+ }
+}

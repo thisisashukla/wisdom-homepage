@@ -1,0 +1,506 @@
+{
+ "persona": {
+  "id": "au_genx_divorce",
+  "market": "Australia (Melbourne)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "44, dentist in Melbourne, from Chandigarh originally, separated 6 months ago, kids with ex 4 days a week. Parents in India don't know yet.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely and carrying it alone",
+   "bridge": "The quiet they will not know about, and the life you are living alone, is what the texts call the mind running after results it cannot hold.",
+   "week_thesis": "From carrying a silence no one in the family knows about to holding the quiet house without the television, and the first word to someone.",
+   "week_beats": {
+    "hook": "You recognise the quiet house and the hidden life, named without judgement.",
+    "diagnose": "You see that the silence you keep from your parents is what makes the separation unbearable.",
+    "steady": "You hold that the life you are living alone is real, and no one else's story can replace it.",
+    "act": "You try leaving the house quiet for one evening, and you try speaking the true thing to one person.",
+    "story": "A woman who lived alone after leaving shows you what it means to be unseen and unheard, and how to find your voice again."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "partner",
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A separated mother who sees her children three nights a week and has hidden it from her parents, left alone in the quiet house.",
+   "mirror": "Six months of silence with your parents, and a quiet house that only the television answers.",
+   "insight": "It is not the separation that is unbearable. It is the silence you are keeping from your parents, and the house that is too quiet to hold alone.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.99,
+     "source": "note"
+    },
+    {
+     "id": "breakup",
+     "label": "I'm heartbroken after a breakup",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.675,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.48,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Living a separation no one in your family knows about, and the loneliness of a quiet house that only the television answers. I feel lonely.",
+    "diagnose": "When a loss is hidden, the mind carries it alone; the harm deepens not from what happened but from the silence you keep around it.",
+    "steady": "What is real in you cannot be lost, and no one else's story can replace the life you are living.",
+    "act": "Speak the true thing to one person, gently and firmly, and let the house be quiet without the television.",
+    "story": "A woman who left a marriage and lived alone for years, unseen and unheard, until she spoke and found her footing again."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Carrying the silence",
+    "The quiet you are keeping",
+    "The life you are living"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "separated six months ago",
+    "sees kids three nights a week",
+    "has not told parents in Chandigarh",
+    "the house is quiet on nights kids are not there"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "week_fit:8=0.3,126=0.0,61=0.6,10=0.3,114=0.0,51=0.3",
+    "week_fit:swapped=5",
+    "redo:3",
+    "redo_fixed:1",
+    "dropped:repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.67",
+     "ref": "Bhagavad Gita 2.67",
+     "ref_iast": "Bhagavad Gītā 2.67",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते । तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥",
+     "line": "When the mind chases a wandering sense, it is swept off like a boat in the wind.",
+     "translation": "When the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 1.8742,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Arjuna asks Krishna how a person of steady mind behaves, and Krishna tells him that the mind is like a boat. When the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water. This means that steadiness is built by guarding attention, because anger and ruin start with what you dwell on.",
+     "for_you": "The house is quiet on the nights the children are not there. That silence is the wind. The mind is running after the quiet, carrying your understanding away. Notice what you are dwelling on when the rooms are still."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.338.9",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.9",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada teaches Shuka how to stop grief from multiplying.",
+     "sanskrit": "मृतं वा यदि वा नष्टं योऽतीतमनुशोचति / दुःखेन लभते दुःखं द्वावनर्थौ प्रपद्यते",
+     "line": "Dwelling on what is lost adds a second sorrow to the first.",
+     "translation": "Whoever keeps grieving over the past, over what has died or been lost, gets sorrow on top of sorrow: two misfortunes instead of one.",
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "Mourning is natural; this is about endless replaying.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 2.6485,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "The sage Narada speaks to the young Shuka. Shuka is grieving and feels the weight of what is gone. Narada tells him that if he keeps dwelling on what has died or been lost, he will find sorrow on top of sorrow. The first pain is the separation from the children. The second sorrow is the quiet house and the silence kept from the parents. Brooding does not heal the first wound. It only adds a second misfortune to the first.",
+     "for_you": "The silence you keep in Chandigarh is the second sorrow. It is not just the children being away. It is the quiet house and the life you are living alone. When the mind runs after results it cannot hold, it becomes a boat without a rudder."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      }
+     ],
+     "prasang": null,
+     "score": 3.4878,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": "Rahim speaks to the one who has made a home in your heart, the one who already knows your joys and sorrows. He asks what joy or sorrow is left that needs telling. The verse rests on the truth that the deepest connection does not require explanation. It proposes that you let the silence stand, because the one you love already holds the whole of your life. This is the ground beneath your feet on nights when the house is too quiet.",
+     "for_you": "The quiet house is not empty of what matters. Your children and your parents already know the shape of your heart. You do not need to carry the whole story to them to be held. Let the silence sit with you without rushing to fill it."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.27.49",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.49",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "न ह्यहानि निवर्तन्ते न मासा न पुनः समाः / जातानां सर्वभूतानां न पुनर्वै समागमः",
+     "line": "Days don't come back, nor months, nor years. Be here for the ones in front of you.",
+     "translation": "Days do not come back, nor months, nor years. And beings, once parted, do not meet again in the same way.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.7111,
+     "beat": "steady",
+     "role_fit": 0.514,
+     "meaning": "King Janaka asks the sage Ashma how to bear the loss of family and wealth. Ashma tells him that nothing can be taken back. Days do not come back, nor months, nor years. Once people part, they do not meet again in the same way. The mind runs after what it cannot hold. Grieve what has passed, then steady yourself with the ones still in front of you.",
+     "for_you": "The life you are living alone is real, even if it is quiet. The children are still in front of you, and your parents are still in front of you. Do not let their expectations erase the truth of the house as it is now."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.30.18",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 30.18",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Hanuman has found Sita, terrified and alone; he works out how to speak without frightening her.",
+     "sanskrit": "अवश्यमेव वक्तव्यं मानुषं वाक्यमर्थवत्। मया सान्त्वयितुं शक्या नान्यथेयमनिन्दिता ॥",
+     "line": "To comfort someone, use their language, not the one that impresses.",
+     "translation": "I must speak to her in ordinary human words that carry meaning. There is no other way to comfort this blameless woman.",
+     "why": "Before a hard conversation, think about how the other person will hear you.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.hanuman_speaks_to_sita",
+      "title": "How Hanuman spoke to Sita",
+      "summary": "Hanuman has found Sita but she is terrified. He thinks carefully: speak in ordinary language, not court Sanskrit; don't gamble on a fight; start by gently praising Ram so she can trust him. He sings Ram's story softly from the tree, and she hears hope for the first time: joy comes to the one who stays alive.",
+      "story_hook": "He had found her at last, and now the problem was how to speak without making her scream.",
+      "lesson": "Before a hard conversation, think about how the other person will hear you."
+     },
+     "score": 2.9706,
+     "beat": "act",
+     "role_fit": 0.715,
+     "meaning": "Hanuman has found Sita, terrified and alone. He knows he must speak to her without frightening her further. He decides to use ordinary human words, not courtly Sanskrit. He wants to comfort this blameless woman, so he chooses language that carries meaning and reaches her. This is the only way to offer her any solace.",
+     "for_you": "The quiet house tonight is not for the television. It is for the true words you will speak to your partner, or to your parents, or to a friend. Find the language that carries meaning for them, not the one that impresses. Speak the true thing to one person."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.1.11.37",
+     "ref": "Yoga Vasishtha, Vairagya 11.37",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 11.37",
+     "family": "yv",
+     "speaker": "Vishvamitra",
+     "listener": "Rama",
+     "setting": "Vishvamitra gently invites the withdrawn Rama to speak.",
+     "sanskrit": "यथाभिमतमाशु त्वं ब्रूहि प्राप्स्यसि चानघ । सर्वमेव पुनर्येन भेत्स्यन्ते त्वां तु नाधयः ॥",
+     "line": "Say freely what is on your heart, blameless one. These sorrows need not keep wounding you.",
+     "translation": "Say quickly whatever you wish, blameless one, and you will have it, by which these sorrows will never pierce you again.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.8101,
+     "beat": "act",
+     "role_fit": 0.5,
+     "meaning": "Vishvamitra speaks to the young Rama, who has fallen into heavy silence. The sage sees the boy withdrawing and offers him a simple release. He tells Rama to speak whatever is truly on his mind without fear or shame. The words are meant to be spoken freely, as a relief, so that the hidden sorrows stop hurting him from the inside.",
+     "for_you": "After the children leave, let the house be quiet without turning on the television. Sit in that silence and say one true thing out loud. It could be to your parents, or to a friend. Just let the words come out as they are. You do not need to fix anything with them."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "Bhasa spent his whole life doing, yet still felt empty when he was finally alone with his thoughts. You are living in the quiet house that belongs only to you, and the silence is not empty, it is full of what you are not saying."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Carrying the silence",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 496,
+   "llm": 4402,
+   "total": 14632,
+   "select": 9727
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying a silence that no one in your family knows about. The quiet house on the nights the children are not there is a heavy thing to hold alone, and you are holding it."
+  ],
+  [
+   "scene",
+   "Arjuna asks Krishna how a person of steady mind speaks, sits and walks. And Krishna replies: And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते, तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि."
+  ],
+  [
+   "line",
+   "In plain words: When the mind chases a wandering sense, it is swept off like a boat in the wind."
+  ],
+  [
+   "unpack",
+   "Krishna says that when the mind runs after the roving senses, it carries your understanding away. This is easier said than done, because the quiet you are living in is not just empty air. It is full of the life you have hidden from your parents. The mind is a boat, and the silence is the wind. When you let your attention wander into what they do not know, your mind is swept off."
+  ],
+  [
+   "for_you",
+   "When the house is still, notice what the mind is running after. It is not the quiet itself. It is the silence you are keeping from your parents. Let your attention rest on the wall, not on the weight of what they do not know."
+  ],
+  [
+   "close",
+   "Can the mind rest on the wall instead?"
+  ]
+ ],
+ "depth": {
+  "life": "The house is quiet on the nights the children are not there. You are carrying a silence no one in the family knows about. Your mind is running after the quiet, carrying your understanding away.",
+  "points": "Steadiness is built by guarding attention. When the mind runs after what it cannot hold, it is swept off like a boat in the wind. The wind is the silence you are dwelling on.",
+  "practice": "Notice what you are dwelling on when the rooms are still. Name it once, without judging it, and let your hands rest.",
+  "question": "What does the quiet carry away when you let it run?"
+ }
+}

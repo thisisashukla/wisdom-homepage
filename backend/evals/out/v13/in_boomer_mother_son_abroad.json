@@ -1,0 +1,496 @@
+{
+ "persona": {
+  "id": "in_boomer_mother_son_abroad",
+  "market": "India (Chennai)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "63, retired school principal in Chennai, husband alive, only son in Germany for 9 years with a German wife, visits every 2 years. Hindi is weak; English and Tamil.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "far_from_home"
+  },
+  "note": "my son has been in germany nine years. his wife is german, lovely girl. they will not come back I know this. I taught 2000 children and I cannot teach my own heart to stop waiting for him",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "restlessly waiting and quietly grieving",
+   "bridge": "The waiting you cannot stop is what the Upanishads call the mind running after what it cannot hold, and the Gita calls it attachment: love with nowhere to go.",
+   "week_thesis": "Seven days from the waiting that has no end to the footing that holds without it.",
+   "week_beats": {
+    "hook": "You recognise the waiting as a love with nowhere to go, named without judgement.",
+    "diagnose": "You see that the waiting is not for him to return, but for you to stop being the mother who waits.",
+    "steady": "You hold that what you are cannot be made smaller by where they are or what they do."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "partner",
+    "inlaws"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A retired teacher whose son lives abroad with his wife cannot stop waiting for a return that will not come.",
+   "mirror": "You taught two thousand children, and now you cannot teach your own heart to stop waiting for one.",
+   "insight": "Even among people, you've felt unseen. The distance is real, and so is the way back.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.912,
+     "source": "note"
+    },
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being told by absence that the life you built is over, and the restless heart that cannot stop waiting for a return that will not come. I feel lonely.",
+    "diagnose": "When love has nowhere to go, it becomes waiting; the mind suffers not from the absence but from the hope that keeps the door open.",
+    "steady": "What you are cannot be made smaller by what they do or where they are; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly; hold your ground on what is yours; do your own duty without shrinking to fit the picture they hold. Let the waiting be what it is, and find the courage the moment asks for.",
+    "story": "A mother who sent her son to learn the world, and when he stayed, she questioned the assembly of her own grief and found her footing again."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The waiting",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "retired and taught children",
+    "son has been in Germany for nine years",
+    "knows they will not come back"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "week_fit:8=0.6,61=0.6,141=0.7,84=0.7,114=0.3,51=0.3",
+    "week_fit:swapped=2",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:cliche=1,repeat=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.5489,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands on the battlefield, his body trembling, his mind refusing to move. He tells Krishna that even a kingdom without end, a life of endless wealth and power, could not wash away the grief that is drying him up from the inside. He is saying that the loss is so deep it makes every possible success feel like nothing. The verse asks for help not because he is weak, but because he knows he cannot find the way through this sorrow on his own.",
+     "for_you": "The waiting for your son is not just an empty habit. It is a love with nowhere to go. You do not need to stop it today. You only need to see it as the grief it is, and let someone else hold the map for a while."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": null,
+     "score": 2.7465,
+     "beat": "diagnose",
+     "role_fit": 0.446,
+     "meaning": "Rahim speaks to the one who has made a home inside you. He says that this person already knows your joys and sorrows. Nothing you say will add to their understanding, because they are not a visitor who needs an update. They are the ground you stand on. The verse asks you to stop treating your own heart like a stranger who must be informed.",
+     "for_you": "The waiting is not for your son to return, but for you to stop being the mother who waits. Your heart already knows the distance. Let it hold that silence instead of asking for news."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.141",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 141)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the listener",
+     "setting": "Surdas on the shelter of the name.",
+     "sanskrit": "बड़ी है राम नाम की ओट | सरन गएँ प्रभु काढ़ि देत नहिं, करत कृपा के कोट ।",
+     "line": "The name is a great shelter. Whoever comes to him is never turned away; he builds walls of kindness.",
+     "translation": "Great is the shelter of the name. When you come for refuge, the Lord never turns you out; he builds you forts of kindness.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.6486,
+     "beat": "steady",
+     "role_fit": 0.54,
+     "meaning": "Surdas sings of the name as a great shelter. When you come to it, you are never turned away. The Lord builds you forts of kindness, walls that keep harm out and hold you in. The waiting you cannot stop is love with nowhere to go. This verse says that love does not need a door to open. It can rest inside the name, which is already a shelter. The name is not empty. It is a place where your love can stay, even if the person is far.",
+     "for_you": "The waiting in your chest is not a small thing. It is a large grief, and it deserves to be held in a space that does not ask you to shrink it or explain it away. Let your days rest inside the quiet fact that you are not turned away from your own life."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 2.6368,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "In the Niti Shatakam, Bhartrihari speaks to the reader about steadfastness. He says that it does not matter if the world praises or blames you, if money comes or goes, or if death arrives today or in ages. The steadfast person does not step off the right path. They keep walking on it, no matter what happens around them.",
+     "for_you": "You have taught children for years. That steady part of you, the one that knows right from wrong, is still there. Your son is in Germany. Let the waiting and the grief move around you. Let them come and go. But do not step off the path of who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 2.5763,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari speaks to the reader from a quiet place. He says that when money comes or goes, the steady do not step off the right path. He tells us to cut craving, forgive, drop arrogance, speak the truth, win over even enemies, and be kind to those suffering. He says real ornaments are listening, giving and helping. He is saying that the waiting you cannot stop comes from a mind running after what it cannot hold. The steady person does not let results shake their footing. They simply stay on the path of the good.",
+     "for_you": "Your son has been in Germany for nine years, and you know they will not come back. You feel homesick and you are grieving someone you loved. Today, speak one true thing you have been holding back."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 2.572,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "The sage Vasishtha speaks to Bharat, who is broken after his father's death and his brother's exile. The kingdom is waiting, but Bharat's heart is not at peace. Vasishtha tells him to hold courage and do what this moment asks. Bharat rises, stops his waiting, and prepares to go to the forest to find Ram. The verse says that when your mind will not settle, you could move. You could go to the one you feel you wronged, speak the truth, and let your hands do what your heart cannot yet decide.",
+     "for_you": "The mind wanted a son to return, but the heart must now choose what to do with the day ahead. There is a small thing that needs your attention, a single task that honors what has passed. Do that one thing today."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "Shabari gathered fruit not for a guest who might arrive, but because the promise itself was the work. Your waiting has been a form of preparing, a devotion to what you believed would return. Let it be enough that you kept it alive."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The waiting",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 161,
+   "llm": 4414,
+   "total": 13903,
+   "select": 9319
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are resting in a house that feels too quiet. The waiting for your son has become a part of the air you breathe. It is not just missing him. It is the quiet grief of knowing that this waiting has no end."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. His body is trembling. His mind is frozen. He tells Krishna that even a kingdom without end, a life of endless wealth and power, could not wash away the grief that is drying him up from the inside. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "This is the moment when Arjuna admits he is lost. He cannot see a path forward. He cannot tell which choice is right. He is saying that even total victory would not touch the loss inside him. Admitting you do not know where to turn is not weakness. It is the first step toward seeing clearly. The mind runs after what it cannot hold. That is the nature of attachment. It is love with nowhere to go."
+  ],
+  [
+   "for_you",
+   "Sit with your family today and let the waiting be what it is. Do not try to push it away. Let the grief sit with you. You do not have to carry the map. Let the waiting be seen as grief. That is enough for now."
+  ],
+  [
+   "close",
+   "What would it feel like to let someone else hold the map for a while?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit with the phone and the hours drift by. You wait for a message that will not come from a son who is not coming back. The room is full of silence and you feel cut off, even when your family is near.",
+  "points": "Arjuna felt this too. He stood on a field of war and saw that winning everything would not stop the grief drying him up. The mind runs after what it cannot hold, and love with nowhere to go becomes a waiting that never ends.",
+  "practice": "Sit by the window for ten minutes without the phone. Let the waiting be there and notice the grief underneath it without trying to fix it.",
+  "question": "What would it feel like to let the waiting be the grief it is?"
+ }
+}

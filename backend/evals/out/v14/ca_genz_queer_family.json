@@ -1,0 +1,490 @@
+{
+ "persona": {
+  "id": "ca_genz_queer_family",
+  "market": "Canada (Vancouver)",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "22, Indo-Canadian, came out to her Punjabi parents last year, they went silent, now talk only about weather. She still goes home for Diwali.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "since I told my parents about my girlfriend they haven't said one real thing to me. we talk about the weather. I still go home for diwali and sit at the table and it's like I'm a guest",
+  "note_source": "text",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "",
+   "bridge": "The silence they have chosen is what the texts call a withdrawal of recognition. Your home is still yours, even when they make you a guest in it.",
+   "week_thesis": "From being made a guest in your own home to standing in the life that is yours, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being made a guest in your own home, and the hurt of it, named without blame.",
+    "steady": "You hold that what you are cannot be made smaller by what they see or do not see.",
+    "act": "You try holding your ground on what is yours, and speaking the true thing if and when you choose, without shrinking to fit their silence."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "partner",
+    "friend",
+    "teacher",
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "An under- student and worker who told their parents about their girlfriend and is now being treated as a guest in their own home during Diwali.",
+   "mirror": "You sit at the table during Diwali and feel like a guest in your own home.",
+   "insight": "The silence is theirs, not your fault, and it is a form of being made smaller. The only thing that is not theirs to take is your place in your own life.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 2.443,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.222,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.63,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being treated as a guest in your own home by the people who raised you, and the quiet of a silence that says you do not belong.",
+    "diagnose": "When others withdraw their recognition, their picture is their smallness and not your measure; the harm deepens only when their silence begins to replace your own sense of home.",
+    "steady": "What you are cannot be made smaller by what they see or do not see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Hold your ground on what is yours, speak the true thing if and when you choose, and do not shrink to fit the silence they have chosen.",
+    "story": "A young person who was made a stranger in their own home by their parents, who held to their truth and found their footing without their recognition."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "A guest at their table",
+    "Whose silence it is",
+    "More than their recognition"
+   ],
+   "seat": "a student and worker whose parents have gone silent about the person they love",
+   "life_context": "Under twenty-five, juggling study and work; after telling their parents about their girlfriend, the parents have gone silent, and the person feels like a guest at the table during Diwali.",
+   "details": [
+    "told parents about their girlfriend",
+    "parents respond only about the weather",
+    "feels like a guest at the table during Diwali",
+    "has not received one real word from them since"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "flags": [
+    "emotion:missing",
+    "week_fit:5=0.0,40=0.6,17=0.3,92=0.3,532=0.3,49=0.3",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.61,max=0.66",
+    "redo:5",
+    "redo_fixed:2",
+    "dropped:blame=1,repeat=4,slang=1,soft_kept=4",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 1.7966,
+     "beat": "hook",
+     "role_fit": 0.14,
+     "meaning": "Krishna tells Arjuna that you alone are responsible for your own standing. You can lift yourself up with your own strength, or you can let yourself sink. The choice is yours, because your own mind is either your closest friend or your worst enemy. You do not have to wait for their word to know who you are.",
+     "for_you": "Your parents have gone silent, and that silence makes you feel like a guest. But your place in your own life is not theirs to give or take. You can be the one who sees you, even when they look away."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.40",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 40",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: how the world treats someone who has lost money.",
+     "sanskrit": "तानीन्द्रियाण्यविकलानि तदेव नाम सा बुद्धिरप्रतिहता वचनं तदेव । अर्थोष्मणा विरहितः पुरुषः क्षणेन सोऽप्यन्य एव भवतीति विचित्रमेतत् ॥",
+     "line": "Same person, same mind, same voice. Lose money, and people suddenly treat you as someone else.",
+     "translation": "The same faculties, unimpaired; the same name; the same unclouded mind; the same speech. Yet a man deprived of the warmth of wealth becomes, in a moment, someone else. How strange!",
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "The verse mocks how the world sees you; it does not measure your worth.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 2.9588,
+     "beat": "diagnose",
+     "role_fit": 0.51,
+     "meaning": "Bhartrihari speaks to the reader about money. A man loses his wealth, and suddenly everyone looks at him differently. His mind is still the same. His voice is the same. But people treat him like a stranger. He is still the same person underneath, yet the world has rewritten his worth in a single moment.",
+     "for_you": "Your parents have not lost money, but they have lost something else in their eyes. You are still the same person at the table. Their silence is about their own limits, not about who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_brihadaranyak.86",
+     "ref": "Brihadaranyaka Upanishad 1.4.14",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.14",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The creation story: last of all, dharma is made.",
+     "sanskrit": "स नैव व्यभवत् तच्छ्रेयो रूपमत्यसृजत धर्मम् । तदेतत्क्षत्रस्य क्षत्रं यद्धर्मस्तस्माद्धर्मात् परं नास्त्यथो अबलीयान् बलीयाꣳसमाशꣳसते धर्मेण यथा राज्ञैवम् । यो वै स धर्मः सत्यं वै तत् तस्मात्सत्यं वदन्तमाहुर्धर्मं वदतीति धर्मं वा वदन्तꣳ सत्यं वदतीत्येतद्ध्येवैतदुभयं भवति ॥",
+     "line": "Nothing is higher than what is right. With it the weak can face the strong. What is right is truth.",
+     "translation": "Still he did not flourish. So he created a higher form, dharma. Dharma is the power over power; nothing is higher than dharma. Through dharma even a weak man can stand up to a strong one, as with the help of a king. That dharma is truth. So people say of one who speaks truth, 'He speaks dharma,' and of one who speaks dharma, 'He speaks truth.' Both are the same.",
+     "why": "Fear and loneliness are human; truth gives even the weak a footing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.brihad.first_being",
+      "title": "The first being: fear, loneliness and dharma",
+      "summary": "In this creation story the first being, alone, feels fear, then realises there is no one else to fear. He feels no joy alone and longs for a companion, splitting into husband and wife. Finally dharma is created, the truth by which even the weak can stand up to the strong.",
+      "story_hook": "",
+      "lesson": "Fear and loneliness are human; truth gives even the weak a footing."
+     },
+     "score": 2.7896,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "In the oldest story of how the world began, the first being was alone. It felt fear and loneliness. Then it understood there was no one else to fear. It still felt no joy by itself and longed for a companion. So it split into two. After all this, dharma was made. Dharma means rightness. It is the highest power. Through it, a weak person can face a strong one. That dharma is truth. So when someone speaks the truth, people say they speak dharma. When someone speaks dharma, people say they speak truth.",
+     "for_you": "Your parents have made you a guest in your own home. But the truth is that your place in your own life cannot be taken. You are the same person you were before they went silent. Let that truth hold you up, even when they do not speak to you."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.11",
+     "ref": "Ashtavakra Gita 15.11",
+     "ref_iast": "Aṣṭāvakra Gītā 15.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "त्वय्यनन्तमहाम्भोधौ विश्ववीचिः स्वभावतः । उदेतु वास्तमायातु न ते वृद्धिर्न वा क्षतिः ॥",
+     "line": "Let the waves of the world rise or fall. You, the ocean, neither gain nor lose.",
+     "translation": "In you, the boundless ocean, let the waves of the world rise or fall by their own nature. You neither grow nor shrink.",
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.777,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Ashtavakra tells Janaka that he is the boundless ocean, not the surface waves. The world may rise and fall, but the depths of the ocean neither gain nor lose anything. Janaka is not the roles he plays or the events that happen to him. The teaching is to stop measuring yourself by the shifting surface and rest in the steady depth that nothing can change.",
+     "for_you": "Your parents' silence is a wave on the surface, not the depth of who you are. You are still the ocean. Let their coldness rise and fall without shrinking you. Your place at the table is not a guest spot. It is your own shore."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.3035,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna is telling Arjuna about the discipline of speech. He says it should be truthful, pleasant, and beneficial. It should not cause distress to anyone. This is the austerity of speech. It means we speak the truth, but we do it with kindness. We avoid words that are cruel or harmful. We also avoid empty show. We speak in a way that helps, not in a way that simply wins an argument.",
+     "for_you": "You are sitting there in the house, feeling like a guest at the table. You can use your voice to say the true thing about your life. Speak kindly, but do not shrink. Let them hear the truth without the cruelty."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.3001,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is speaking to Nidagha, who is trying to live in the world without being tied to it. Ribhu tells him to keep doing the work in front of him, to see friend and foe the same way, and to let go of wanting and not wanting. He says that if you speak gently, know what is in people's hearts, and say what is agreeable, you will not sink in the world. You can stay calm inside while life moves outside.",
+     "for_you": "Your parents have made you a guest in your own home, but your life is still yours. Do the work in front of you, speak gently to them, and read their silence. You will not sink. You are still the one who belongs."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.chhandogya.shvetaketu_return",
+     "title": "Shvetaketu comes home proud",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Uddalaka Aruni",
+      "Shvetaketu"
+     ],
+     "story_hook": "Shvetaketu came home at twenty-four with every text memorised and his nose in the air.",
+     "summary": "After twelve years of study, Shvetaketu returns home at twenty-four full of himself. His father gently asks whether he learned the one thing that makes everything else understood, and the son admits his teachers never taught it.",
+     "lesson": "Learning without humility misses the main thing.",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "anchor": {
+      "id": "up_chhandogya.455",
+      "ref": "Chhandogya Upanishad 6.1.2-3",
+      "ref_iast": "Chāndogya Upaniṣad 6.1.2-3",
+      "family": "up",
+      "speaker": "Uddalaka Aruni",
+      "listener": "His son Shvetaketu",
+      "setting": "A son returns from twelve years of study, full of himself.",
+      "sanskrit": "स ह द्वादशवर्ष उपेत्य चतुर्विꣳशतिवर्षः सर्वान्वेदानधीत्य महामना अनूचानमानी स्तब्ध एयाय तꣳह पितोवाच ॥ श्वेतकेतो यन्नु सोम्येदं महामना अनूचानमानी स्तब्धोऽस्युत तमादेशमप्राक्ष्यः येनाश्रुतꣳ श्रुतं भवत्यमतं मतमविज्ञातं विज्ञातमिति कथं नु भगवः स आदेशो भवतीति ॥",
+      "line": "Shvetaketu came home proud of his learning. His father asked: did you learn what makes everything else make sense?",
+      "translation": "He went at twelve and returned at twenty-four, having studied all the Vedas, conceited, proud of his learning, stiff. His father said: 'Shvetaketu, since you are so conceited, so proud of your learning, so stiff, did you ask for that teaching by which the unheard becomes heard, the unthought becomes thought, the unknown becomes known?' 'How could there be such a teaching, sir?'",
+      "why": "Learning without humility misses the main thing.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "parent_conflict",
+        "label": "I keep fighting with my parents"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.chhandogya.shvetaketu_return",
+       "title": "Shvetaketu comes home proud",
+       "summary": "After twelve years of study, Shvetaketu returns home at twenty-four full of himself. His father gently asks whether he learned the one thing that makes everything else understood, and the son admits his teachers never taught it.",
+       "story_hook": "Shvetaketu came home at twenty-four with every text memorised and his nose in the air.",
+       "lesson": "Learning without humility misses the main thing."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A son came home after twelve years of study, proud, and missing the one thing that mattered",
+     "teaser": "A son came home after twelve years of study, proud, and missing the one thing that mattered",
+     "for_you": "Shvetaketu came home thinking he had mastered everything. Your parents have gone quiet, and you are left with the feeling of a guest. This story shows that knowledge means little when it does not bring you home to yourself. Your place in your own life is not theirs to give or take away."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "A guest at their table",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 145,
+   "llm": 5252,
+   "total": 16344,
+   "select": 10939
+  }
+ },
+ "script": [
+  [
+   "open",
+   "They told you about your girlfriend, and they answered only about the weather. Now you are a guest at your own table during Diwali. That silence is heavy, and it is not your fault."
+  ],
+  [
+   "scene",
+   "Arjuna is on the chariot, surrounded by family and enemies, and he is losing his grip. Krishna tells him that no one else can save him. Not the gods, not the elders, not the crowd. You stand alone, and you must decide who will stand with you. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत्, आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः."
+  ],
+  [
+   "line",
+   "In plain words: Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend."
+  ],
+  [
+   "unpack",
+   "You are your own closest ally. The same mind that fears their silence can also choose to hold your worth steady. This is not about waiting for them to speak. It is about refusing to push yourself down when they look away."
+  ],
+  [
+   "for_you",
+   "Find one moment today, maybe while walking between study and work, where you look in the mirror and say exactly who you are. Let them be silent. You do not need their word to know your own."
+  ],
+  [
+   "close",
+   "Who stands with you when no one else does?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit at the table during Diwali and feel like a guest in your own home. Your parents speak only of the weather. The silence is heavy and it makes you feel small.",
+  "points": "Krishna is telling Arjuna that your own mind can be your greatest enemy or your truest ally. The silence your parents have chosen is a withdrawal of recognition. It is not a reflection of your worth.",
+  "practice": "When the silence feels loudest, look in the mirror and say your own name out loud. Let it be the one voice that does not look away.",
+  "question": "What would it feel like to be your own friend right now?"
+ }
+}

@@ -153,7 +153,9 @@ HARM_STORY_BLOCK = re.compile(r"forgiv|patien|gentle|keep(ing)? the peace|endur|
 WRONGED_LINE_BLOCK = re.compile(r"\b(insult\w*|bear (it|with)|endur\w*|patien\w*|forgiv\w*|tolerat\w*|the same (in|to|toward)|"
                                 r"unshaken|unmoved|don'?t react|stay calm|keep quiet|silent|obey\w*|submit\w*|content\w*|envy|envious|"
                                 r"jealous\w*|greed\w*|crav\w*|your own (doing|fault|making)|own enemy|fault|blame|deserve|humbl\w*|"
-                                r"adjust\w*|accept\w*|expect\w* (less|nothing|too much)|put up with|ego|pride|proud|arrogan\w*)\b", re.I)
+                                r"adjust\w*|accept\w*|expect\w* (less|nothing|too much)|put up with|ego|pride|proud|arrogan\w*|"
+                                r"advisers?|counsell?ors?|flatter\w*|only say what pleases|ruin comes|trembl\w*|terror|terrified|"
+                                r"too big to take in|my heart (trembles|shakes)|dog|beggar|corpse|sinner)\b", re.I)
 # The two stance mechanisms have no situation tags of their own in the library yet, so a verse's fit for them is
 # read off its themes, its situations and its own line. Replace with LLM labels (scripts/label_verse_roles.py) later.
 STANCE_MECH_SIGNALS = {
@@ -664,10 +666,10 @@ class Planner:
             if feeling != "gita" and families[v.get("family")] >= max_family:
                 continue
             words = set(_toks(v.get("line", "")))
-            if any(len(words & w) / max(1, len(words | w)) > 0.45 for w in taken_words):
+            if any(len(words & w) / max(1, len(words | w)) > 0.30 for w in taken_words):
                 continue
             if self.rec.verse_vecs is not None and taken:
-                if float(np.max(self.rec.verse_vecs[taken] @ self.rec.verse_vecs[i])) > 0.92:
+                if float(np.max(self.rec.verse_vecs[taken] @ self.rec.verse_vecs[i])) > self.DISTINCT_HI:
                     continue
             picked.append(i)
             taken_words.append(words)
@@ -679,6 +681,39 @@ class Planner:
         if anchor is None or self.rec.verse_vecs is None:
             return None
         return weight * np.clip((self.rec.verse_vecs @ self.rec.verse_vecs[anchor] - 0.4) / 0.4, 0, 1)
+
+    # A week is one argument in four moves (see, steady, act, story), not one point made seven times. The old
+    # chain bonus pulled each day toward the day before; this does the opposite: a candidate that makes the
+    # same point as any verse already in the week is pushed down (ramp from cosine 0.62 to 0.74: Draupadi's
+    # "never look down on yourself" and Vidula's "don't think less of yourself" sit at 0.72, the top 0.5% of all
+    # pairs), and above 0.74 it is out (see _pick).
+    DISTINCT_LO, DISTINCT_HI, DISTINCT_W = 0.62, 0.74, 0.9   # BGE-M3 on this library: median pair 0.54, 99th pct 0.69, 99.9th 0.76
+
+    def _distinct_penalty(self, taken: List[int]) -> Optional[np.ndarray]:
+        if not taken or self.rec.verse_vecs is None:
+            return None
+        sims = self.rec.verse_vecs @ self.rec.verse_vecs[taken].T          # (N, len(taken))
+        worst = np.max(sims, axis=1)
+        return -self.DISTINCT_W * np.clip((worst - self.DISTINCT_LO) / (self.DISTINCT_HI - self.DISTINCT_LO), 0, 1)
+
+    def week_similarity(self, taken: Sequence[int]) -> Optional[tuple[float, float]]:
+        """(mean, max) pairwise cosine of the week's verses: how many ideas the week really has."""
+        if len(taken) < 2 or self.rec.verse_vecs is None:
+            return None
+        m = self.rec.verse_vecs[list(taken)] @ self.rec.verse_vecs[list(taken)].T
+        iu = np.triu_indices(len(taken), 1)
+        return float(np.mean(m[iu])), float(np.max(m[iu]))
+
+    def _second_slot_vec(self, u: Understanding, role: str, qv: Optional[Dict[str, np.ndarray]]) -> Optional[np.ndarray]:
+        """The second day of a beat retrieves against a different sub-job: steady → the self that is not the
+        role or the result (mechanism "self"); act → acting from there (mechanism "self_act")."""
+        if qv is None or role not in ("steady", "act"):
+            return None
+        mm = MECHANISMS.get(u.mechanism) or {}
+        txt = mm.get("self" if role == "steady" else "self_act")
+        if not txt:
+            return None
+        return _norm(0.5 * qv[role] + 0.5 * self._tv(txt))
 
     def _pair_bonus(self, chosen: List[int], u: Understanding) -> np.ndarray:
         out = np.zeros(len(self.verses), dtype=np.float32)
@@ -961,6 +996,8 @@ class Planner:
             families: Counter = Counter()
             max_family = 3 if feeling == "gita" else LEVEL_CONF[lv]["max_family"]
             prev: Optional[int] = None
+            slot: Counter = Counter()              # how many days of this beat already placed this week
+            alt_scores: Dict[str, np.ndarray] = {}
             for d, beat in enumerate(arc):
                 day = (w - 1) * 7 + d + 1
                 if week is None and day > n_days:
@@ -988,13 +1025,25 @@ class Planner:
                         continue
                     i = got[0]
                 else:
-                    chain = self._chain_bonus(prev, 0.2 if beat != "hook" else 0.0)
+                    base = scores[beat]
+                    if slot[beat] >= 1:                         # second steady / act day: its own sub-job
+                        if beat not in alt_scores:
+                            av = self._second_slot_vec(u, beat, qv)
+                            if av is not None:
+                                sem_alt = self._relative(self.rec.verse_vecs @ av, base > -1e8)
+                                sem_old = self._relative(self.rec.verse_vecs @ qv[beat], base > -1e8)
+                                alt_scores[beat] = base + BEAT_WEIGHTS[beat]["sem"] * (sem_alt - sem_old)
+                            else:
+                                alt_scores[beat] = base
+                        base = alt_scores[beat]
+                    dist = self._distinct_penalty(taken)
                     pb = self._pair_bonus(taken, u)
-                    got = self._pick(scores[beat], taken, used_prasangs, families, feeling,
-                                     bonus=(chain if chain is not None else 0) + pb, max_family=max_family)
+                    got = self._pick(base, taken, used_prasangs, families, feeling,
+                                     bonus=(dist if dist is not None else 0) + pb, max_family=max_family)
                     if not got:
                         continue
                     i = got[0]
+                slot[beat] += 1
                 taken.append(i)
                 families[self.verses[i].get("family")] += 1
                 if self.verses[i].get("prasang_id"):

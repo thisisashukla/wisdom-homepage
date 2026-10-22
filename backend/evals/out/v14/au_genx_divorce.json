@@ -1,0 +1,520 @@
+{
+ "persona": {
+  "id": "au_genx_divorce",
+  "market": "Australia (Melbourne)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "44, dentist in Melbourne, from Chandigarh originally, separated 6 months ago, kids with ex 4 days a week. Parents in India don't know yet.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "From the quiet house and the hidden separation to a grief that is named and a loneliness that is held, not fled.",
+   "week_beats": {
+    "hook": "You recognise the quiet and the loneliness, named without blame.",
+    "diagnose": "You see that the grief for the life that was is what the quiet house is really about, and that it has nowhere to go.",
+    "steady": "You hold that the love in the house is not gone, only changed, and what is real in you cannot be lost.",
+    "act": "You try sitting with the quiet for one minute before the TV, and you name the true thing to one safe person.",
+    "story": "A woman who lost the marriage she built shows you how to live with the love that remained."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "partner",
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "Separated six months ago, sees her children three nights a week, and is hiding the separation from her parents in Chandigarh because she fears their judgement, leaving her alone in a quiet house.",
+   "mirror": "The house is so quiet on the nights they are not here that you leave the TV on, and something does not sit right.",
+   "insight": "It isn't the quiet that is the problem. It's the grief for the life that was, which you have no one to sit with in that house.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.35,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "breakup",
+     "label": "I'm heartbroken after a breakup",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.675,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet house after the children leave, and the loneliness of a separation you cannot name to the people who raised you.",
+    "diagnose": "Grief is love with nowhere to go; everything that comes together must part, and the heart aches because the bond was real.",
+    "steady": "What is real in you cannot be lost; the love that is in the house is not gone, it has only changed its shape.",
+    "act": "Let the grief have its time and place, speak the true thing to one safe person, and sit with the quiet for one minute before you turn the TV on.",
+    "story": "A woman who lost the marriage she had built, and who found her footing not by forgetting but by learning to live with the love that remained."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "template",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet house",
+    "Grief with nowhere to go",
+    "Love that changed shape"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "separated six months ago",
+    "sees kids three nights a week",
+    "hasn't told parents in Chandigarh",
+    "house is quiet when kids aren't there"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "emotion:missing",
+    "diagnose:diagnose_not_causal",
+    "mirror:fallback",
+    "mirror:rewritten",
+    "week_fit:8=0.3,29=0.0,61=0.0,15=0.0,15=0.0,45=0.0",
+    "week_fit:swapped=2",
+    "week_sim:mean=0.59,max=0.63",
+    "redo:5",
+    "redo_fixed:2",
+    "dropped:invented=1,repeat=4,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.4768,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna has just collapsed on the battlefield, his body trembling and his mind broken. He tells Krishna that even ruling the whole world would not ease the grief eating him alive. He admits he sees no way out of this sorrow on his own and asks Krishna to show him the right path.",
+     "for_you": "The house is quiet now because the children are not here. That quiet is not empty. It is the space where a life that was is being missed. You do not need to know how to fill it today."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_maha.260",
+     "ref": "Maha Upanishad 4.111",
+     "ref_iast": "Mahā Upaniṣad 4.111",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu's shortest verse.",
+     "sanskrit": "अनास्थैव हि निर्वाणं दुःखमास्थापरिग्रहः ॥",
+     "line": "Not clinging is freedom. Clinging is sorrow.",
+     "translation": "Non-clinging alone is freedom; clinging is sorrow.",
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "Not clinging is not the same as not caring.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 2.8379,
+     "beat": "diagnose",
+     "role_fit": 0.925,
+     "meaning": null,
+     "for_you": "The quiet house is where the grief lives. Let it be there. You do not need to run from it. Let the mind be still for a moment, and watch what happens."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.1.2.22",
+     "ref": "Katha Upanishad 1.2.22",
+     "ref_iast": "Kaṭha Upaniṣad 1.2.22",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the self within changing bodies.",
+     "sanskrit": "अशरीरँ शरीरेष्वनवस्थेष्ववस्थितम् । महान्तं विभुमात्मानं मत्वा धीरो न शोचति ॥",
+     "line": "Knowing what stays steady inside all that changes, the wise do not grieve.",
+     "translation": "Knowing the self as bodiless within bodies, steady among the unsteady, great and all-pervading, the wise one does not grieve.",
+     "why": "What you most are cannot be lost, and a quiet, honest life is how you find it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.deathless_self",
+      "title": "Yama on what does not die",
+      "summary": "Death himself explains that the true self is never born and never dies, and is not killed when the body is. It is found not by cleverness or study but by a calm, honest life.",
+      "story_hook": "",
+      "lesson": "What you most are cannot be lost, and a quiet, honest life is how you find it."
+     },
+     "score": 3.1449,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Yama speaks to Nachiketa about the self that lives inside every body. He tells him that this self is never born and never dies. It does not end when the body ends. Knowing this, the wise person does not grieve. The self is steady and all-pervading, beyond the changing forms we see. A quiet, honest life is how you find it.",
+     "for_you": "The love that shaped your life is not lost. It lives in you, steady and real, even when the house is quiet and the nights are long. Hold that truth when the grief rises."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.27.49",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.49",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "न ह्यहानि निवर्तन्ते न मासा न पुनः समाः / जातानां सर्वभूतानां न पुनर्वै समागमः",
+     "line": "Days don't come back, nor months, nor years. Be here for the ones in front of you.",
+     "translation": "Days do not come back, nor months, nor years. And beings, once parted, do not meet again in the same way.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.751,
+     "beat": "steady",
+     "role_fit": 0.514,
+     "meaning": "King Janaka sits with Ashma, asking how to bear the loss of family and wealth. Ashma tells him that days do not come back, nor months, nor years, and that beings once parted do not meet again in the same way. The point is clear: grief is real, but it cannot be reversed. The wise do not cling to what is gone. They steady the mind and turn their attention to the people still in front of them.",
+     "for_you": "The love in the house is not gone, only changed. The real part of you cannot be lost, even in this quiet house."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.338.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.15",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada to Shuka on troubles that affect many people at once.",
+     "sanskrit": "न जानपदिकं दुःखमेकः शोचितुमर्हति / अशोचन्प्रतिकुर्वीत यदि पश्येदुपक्रमम्",
+     "line": "Don't just grieve over a problem everyone faces. If you see a way to fix it, act.",
+     "translation": "No one should sit alone grieving over a trouble that has struck everyone. Instead of grieving, act to remedy it if you see a way.",
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 3.0938,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "Narada finds the young sage Shuka sitting alone, overcome by the grief of a world in ruin. He tells him that no one should sit alone brooding over a disaster that has touched everyone. Instead of letting the mind rot in sorrow, one should act to mend what can be mended, or turn to understanding, just as a body is healed by medicine.",
+     "for_you": "Before the television fills the room tonight, sit with the quiet house for one minute. Then send a text to one safe person naming the true thing: you are grieving the life that was. Let the message sit. Do not wait for a reply."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.314.114",
+     "ref": "Mahabharata · Vana Parva · Yaksha Prashna",
+     "ref_iast": "Mahābhārata, Vana Parva 314.114–115",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "the Yaksha (Dharma in disguise)",
+     "setting": "At a poisoned lake, a Yaksha quizzes Yudhishthira; his brothers' lives hang on the answers.",
+     "sanskrit": "प्रियवचनवादी किं लभते / विमृशितकार्यकरः किं लभते / बहुमित्रकरः किं लभते / धर्मे रतः किं लभते कथय ॥ प्रियवचनवादी प्रियो भवति / विमृशितकार्यकरोऽधिकं जयति / बहुमित्रकरः सुखं वसति / यश्च धर्मरतः स गतिं लभते",
+     "line": "Speak kindly and you'll be loved; think before acting and you'll win more; make friends and live happily.",
+     "translation": "Yaksha: 'What does one gain by speaking kindly? By acting after careful thought? By making many friends? By devotion to what is right?' Yudhishthira: 'One who speaks kindly is loved; one who acts after careful thought wins more; one with many friends lives happily; one devoted to what is right reaches the goal.'",
+     "why": "Answer life's questions with a steady mind, and let kindness outweigh advantage.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yaksha_prashna",
+      "title": "Yaksha Prashna: the questions at the lake",
+      "summary": "One by one, four Pandavas drink from a lake against a voice's warning and fall dead. Yudhishthira answers the Yaksha's riddles instead, and when offered one brother's life, chooses his stepmother's son Nakula, out of fairness.",
+      "story_hook": "Four brothers lay dead by a clear lake, and the voice that killed them was asking Yudhishthira riddles.",
+      "lesson": "Answer life's questions with a steady mind, and let kindness outweigh advantage."
+     },
+     "score": 2.7155,
+     "beat": "act",
+     "role_fit": 0.638,
+     "meaning": "Yudhishthira stands by a silent, poisoned lake. His four brothers lie dead nearby, and a voice asks him four riddles. The Yaksha, Dharma in disguise, wants to know what a person gains by speaking kindly, by thinking before they act, by making many friends, and by doing what is right. Yudhishthira answers that a person who speaks kindly is loved, one who thinks before they act wins more, one with many friends lives happily, and one who does what is right reaches the goal.",
+     "for_you": "The quiet house is real, but it is not the whole truth. You can speak kindly to one safe person today. Name the grief to them. Let someone else hold it for a moment."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "Bhasa and Vilasa carried on with their days without ever finding peace. You are in a quiet house, but the stillness is not the wound. It is the grief for the life that was, and the absence of someone to sit with it. Let the missing be what it is."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet house",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 702,
+   "llm": 4295,
+   "total": 18319,
+   "select": 12984
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is quiet when the children are not here. You are carrying the weight of a separation that has not been spoken aloud, and the silence is making you feel the absence of a life that was. You are grieving for someone you loved, and there is no one in this moment to sit with you in that quiet."
+  ],
+  [
+   "scene",
+   "Arjuna has collapsed on a field of war. His body is trembling and his mind is broken. He tells Krishna that even ruling the whole world would not ease the grief eating him alive. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "Arjuna is admitting he does not know what to do. He is asking for help because his own mind is caught and he cannot see a way forward. This is where clarity begins. It is not a failure to not know. It is the first step to finding a path. This is easier said than done, because you are trying to manage this grief alone while the house stays quiet and your parents do not know."
+  ],
+  [
+   "for_you",
+   "When the quiet comes tonight, do not try to fill it. Just let the absence be there. You do not need to know how to make the silence end today."
+  ],
+  [
+   "close",
+   "What would happen if you let the quiet be what it is?"
+  ]
+ ],
+ "depth": {
+  "life": "The house is quiet now that the children are away. You are holding the separation from your parents in Chandigarh. You sit in the stillness and feel the absence of the life that was. You are not sure how to be in this quiet.",
+  "points": "Arjuna stands on the battlefield and says that even a prosperous kingdom could not touch his grief. He admits he cannot find a way out by himself. This is the truth underneath your struggle: grief does not yield to force or success. It yields only to being seen, and to asking for help.",
+  "practice": "Name the grief out loud to yourself. Say one true sentence about what you are missing right now.",
+  "question": "What would it mean to let the grief be the first thing you meet in the quiet?"
+ }
+}
