@@ -1,0 +1,506 @@
+{
+ "persona": {
+  "id": "uk_millennial_nhs_nurse",
+  "market": "UK (Manchester)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "31, NHS nurse in Manchester, came from Kerala 5 years ago, sends money home, night shifts. Single. Family asking about marriage.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "shame"
+  },
+  "note": "12 hour night shifts, I send half my salary home, my parents are proud but every call ends with when are you getting married. I'm 31 and I feel like I'm failing at a test I never agreed to take",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": "man",
+   "emotion": "exhausted and quietly shamed",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "This week moves you from being handed a smaller life to standing in the one you are actually living, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being handed a smaller life and the exhaustion of it, named without blame.",
+    "diagnose": "You see that their picture is their smallness, and that the only harm is letting it replace your own.",
+    "steady": "You hold that what you are cannot be cut smaller by what they see.",
+    "act": "You try speaking the true thing to them, gently and firmly, and holding your ground on what is yours.",
+    "story": "A man who questioned his elders and stood in his truth shows you what it looks like to stop shrinking."
+   },
+   "confidence": 0.75,
+   "core_struggle": "A man working -hour night shifts and sending half his salary home is being asked to marry by his parents on every call, and feels he is failing a test he never agreed to take.",
+   "mirror": "You send your earnings home and work through the night, and every call ends with the same question.",
+   "insight": "You are not failing a test they invented. The test is theirs, not yours, and the only failure is letting their picture replace the life you are actually living.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.648,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.17,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.888,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "midlife",
+     "label": "Midlife and wondering if this is it",
+     "weight": 0.427,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being handed a smaller life by the people who raised you, and the exhaustion of living inside a role you never chose. My parents' expectations weigh on me.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A man of learning and standing, dismissed by his own elders for not living their dream, who questioned them openly and found his footing again."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The test they invented",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "a son who sends his earnings home and is being asked to marry",
+   "life_context": "A man in his early thirties working long night shifts to send money home; his parents are proud of his work but keep asking when he will marry, and he feels he is failing a test he never signed up for.",
+   "details": [
+    "works -hour night shifts",
+    "sends half his salary home",
+    "parents are proud but end every call with when are you getting married",
+    "feels he is failing a test he never agreed to take"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:preachy=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      },
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 3.9417,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna speaks to Arjuna while the armies stand ready, and he names the weight of doing what belongs to you. He says that your own duty, walked with all its flaws, is better than another's done perfectly. You do not fail by doing what fits you. You incur no wrong by living out your own nature. The work is the offering, and the path is yours alone.",
+     "for_you": "You are living out your own path, even if it is imperfect. The exhaustion you feel is the cost of your work, not a sign that you are failing. The test your parents keep setting is not yours, and you do not fail by walking the road you are on."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      },
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 2.9547,
+     "beat": "diagnose",
+     "role_fit": 0.76,
+     "meaning": "Draupadi speaks to Yudhishthira while they are in exile, and she argues against the quiet despair of waiting on fate. She says that a person should never look down on himself, because the one who despises himself never finds real prosperity. She tells him to do what is right for its own sake, then to work as if everything depends on him.",
+     "for_you": "Yesterday's verse named your path. Today you see that the smallness is in their picture, not in your life. The only harm is letting their version replace the work you are actually doing. You do not need to shrink to fit their view."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.1634,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": "Queen Vidula speaks to her son Sanjaya after he has lost his kingdom and lies defeated. She tells him not to hold himself in contempt or to settle for too little. She says to set his mind on what is truly good and to stop fearing. The past does not define him, and those who never try never succeed.",
+     "for_you": "You are being asked to settle for a smaller life, but what you are cannot be cut smaller by what they see. The past is just a story, and the future is not written yet. You are allowed to want more than a life that was handed to you."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      },
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.1455,
+     "beat": "steady",
+     "role_fit": 0.35,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, just before the great war begins. He is telling him that no one else can save him from his own despair. You are your own friend or your own enemy. You can lift yourself up by your own mind, or you can push yourself down into doubt and fear. The choice of who you become in this moment is yours alone.",
+     "for_you": "When your mother asks about marriage again tonight, hold the line. The life you are building in these long hours is real, and it is yours. Let their questions fall on you without letting them become the truth of who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.4418,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is telling his student Nidagha how a person who is truly free moves through the world. He does not let praise or blame shake him. He does his work, he speaks gently, and he reads the heart of the person in front of him. He does not sink because he is not fighting the water. He simply moves through it with care.",
+     "for_you": "Today, when you pick up the phone, do your work first. Ask about their health, listen to their news, and then let them know what you need. Speak gently, but let them feel the ground beneath their feet. You do not have to sink into their worry."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.3097,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna tells Arjuna that the discipline of speech means using words that do not wound, that are true, kind, and helpful. It is not about hiding the truth behind a mask of softness. It is about finding the exact words that carry the weight of reality without breaking the person listening. This is the work of a clear mind.",
+     "for_you": "Tonight, when the marriage talk comes, say the true thing. Tell them you hear their pride in your work, and you hear their wish, but you need time. Let your words be the bridge between their hope and your life. Speak it gently, and let them feel the truth in it."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "midlife",
+       "label": "Midlife and wondering if this is it"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "Janaka did not abandon his kingdom when he saw the truth. He stayed at his post and let his mind unclench. You are not failing by staying in your night shift and your own life. You are failing only if you let their picture of you replace the life you are actually living."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The test they invented",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 188,
+   "llm": 5118,
+   "total": 10879,
+   "select": 5565
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You send half your pay home. You work the night shift. And on every call, they ask when you will settle down. You feel like you are failing a test you never agreed to take."
+  ],
+  [
+   "scene",
+   "Krishna stands on the battlefield between the two armies. Arjuna is in despair. He does not want to fight. He sees his own side, his own family, and he cannot lift his bow. And Krishna says:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna tells him to do what belongs to his own nature. It is better to walk your own path with all its flaws than to wear another's coat perfectly. The work is the offering, and you incur no wrong by living it out."
+  ],
+  [
+   "for_you",
+   "The work you are doing right now is your own. The exhaustion is real, but it is the cost of your life, not a sign of failure. You do not fail by walking the road you are on."
+  ],
+  [
+   "close",
+   "Your path is yours. Walk it."
+  ]
+ ],
+ "depth": {
+  "life": "You are on the phone, the screen light on your face, and you hear the same question again. You send half your pay home and work nights, and they call you a good son but keep asking when you will marry. You feel exhausted, and quietly shamed, as if you are failing a test you never agreed to take.",
+  "points": "You are being measured by a standard that is not yours. Your own path, walked with your own nature, is the only one that counts. The perfection they ask for belongs to a life you are not living, and your effort is not wrong just because it is their version of success.",
+  "practice": "Name your own work to yourself, out loud or in your head, before you sleep tonight. Say exactly what you did today, the way it was, without adding their expectations.",
+  "question": "What part of your own work did you do today that belonged only to you?"
+ }
+}

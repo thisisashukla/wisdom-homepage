@@ -1,0 +1,525 @@
+{
+ "persona": {
+  "id": "in_genx_father_layoff",
+  "market": "India (Pune)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "49, IT services manager in Pune, 22 years in the same company, laid off last month. Daughter in 11th, home loan, aging mother.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "shocked and holding it together",
+   "bridge": "What they did in ten minutes cannot unmake the twenty-two years. The wound is real, and the only thing that can deepen it is letting their verdict become your own.",
+   "week_thesis": "From the shock of being let go and hiding it, to the one thing that cannot be taken: the twenty-two years and the truth that you are still here.",
+   "week_beats": {
+    "hook": "You recognise the shock and the silence, named without judgement.",
+    "diagnose": "You see that the call was their verdict, and the only thing that can deepen the wound is letting it become your own.",
+    "steady": "You hold that what you built over twenty-two years cannot be taken, and that your worth is yours to hold.",
+    "act": "You try one honest act of care for yourself, and one truth you can speak to your mother when you are ready.",
+    "story": "A man who served for decades and was dismissed shows you what standing in your own truth looks like after the call."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "I lost my job",
+   "mirror": "Your body still wakes at six, and the office is gone.",
+   "insight": "It isn't the call that has you waking at six. It's the verdict you are still carrying, which you are hiding from your mother and from yourself.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 1.035,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.442,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The shock of being let go after two decades, the silence you are keeping from your mother, and the body that still wakes for a job that no longer exists.",
+    "diagnose": "When a company's verdict is taken as your own, the harm deepens; the wound is real, but the story you tell about it can make it deeper.",
+    "steady": "What you built over twenty-two years cannot be taken by a ten-minute call; your worth was never theirs to grant, and it is yours to hold.",
+    "act": "Speak the true thing to your mother when you are ready, hold your ground on what you are, and do one honest act of care for yourself today.",
+    "story": "A man who served his king for decades, was dismissed without ceremony, and found that his own truth was the only ground he could stand on."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The verdict and the silence",
+    "What cannot be taken",
+    "The ground you stand on"
+   ],
+   "seat": "",
+   "life_context": "In midlife, working, raising children, and caring for aging parents.",
+   "details": [
+    "twenty-two years at one company",
+    "was let go in a ten-minute call",
+    "still wakes at six every morning as if going to the office"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "core_struggle_fallback",
+    "seat:missing",
+    "week_fit:14=0.6,63=0.3,85=0.6,81=0.6,1=0.8,45=0.0",
+    "week_fit:swapped=2",
+    "retried:1",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:missing=1,repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.14",
+     "ref": "Bhagavad Gita 2.14",
+     "ref_iast": "Bhagavad Gītā 2.14",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥",
+     "line": "Heat and cold, pleasure and pain come and go. They don't last; learn to bear them.",
+     "translation": "Contact of the senses with their objects brings cold and heat, pleasure and pain. They come and go and do not last. Bear them patiently, Arjuna.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Bearing passing discomfort is not putting up with harm or abuse; those are not weather to wait out.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.4012,
+     "beat": "hook",
+     "role_fit": 0.26,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, right after Arjuna has fallen apart. He tells Arjuna that the things that touch our senses, the cold and the heat, the pleasure and the pain, they arrive and then they leave. They do not last. He asks Arjuna to learn to bear them patiently, to hold them without letting them crush him. What is asked of Arjuna is to feel the full weight of the moment and still stand in it, knowing that what truly lives inside him is older than this loss and will outlast it.",
+     "for_you": "You are waking at six every morning and the house is quiet. The verdict of the call is heavy, but it is not the whole truth. The twenty-two years you gave are still yours. Let the shock be there, and let the morning light find you still standing."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 2.8172,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama has been speaking to Vishvamitra and Vasishtha about the world he sees. He lists how wealth hardens, how time eats everything, how the mind never fills. He asks what it all means. In the middle of this, he says that our own senses are the enemies. The self strikes the self. The mind becomes its own enemy. He is naming what feels empty. He is asking the question. The truth is that the mind can lift itself. The same mind that turns against you can also steady itself.",
+     "for_you": "The ten-minute call was a verdict from someone else. The twenty-two years are still yours. The mind is the only place that verdict can live. You are letting it live there right now, hiding from your mother and from yourself. The wound is real, but it does not have to deepen into your own verdict."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2339,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to the reader from a section on steadiness. He says let the wise praise or blame you, let money arrive or vanish, let death come today or in a thousand years, the steady person does not move a step from the path of what is right. In plain terms, a setback is a moment, not a life. The steady person holds to what is right even when fortune turns. What they did in ten minutes cannot erase the twenty-two years you have already lived.",
+     "for_you": "You still wake at six as if the office is waiting. The verdict from that call is not the truth of your life. You hold the twenty-two years, and that is yours to keep."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.81",
+     "ref": "Ashtavakra Gita 18.81",
+     "ref_iast": "Aṣṭāvakra Gītā 18.81",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "नैव प्रार्थयते लाभं नालाभेनानुशोचति । धीरस्य शीतलं चित्तममृतेनैव पूरितम् ॥",
+     "line": "Not begging for gain, not grieving loss: a steady mind stays cool and full.",
+     "translation": "He does not pray for gain, nor grieve over loss. The steady one's cool mind is filled as if with nectar.",
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 3.1408,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ashtavakra speaks to Janaka after a long teaching on peace. He describes the calm that comes not from chasing gain or running from loss, but from a steady mind. The wise do not beg for what they want, nor do they grieve when it is gone. Their mind simply stays cool and full, as if with nectar.",
+     "for_you": "The twenty-two years you built are still inside you. You do not need to earn them back or prove them to anyone. Hold that truth quietly today, even as the mornings feel empty."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.723,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "Vasishtha tells Bharat to keep courage in his heart and do what today asks. You are holding a heavy silence right now, but courage is not about fixing everything. It is about one small, true step you can take for yourself."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.174.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.15",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "his father",
+     "setting": "A young man named Medhavin urges his father not to keep postponing what truly matters.",
+     "sanskrit": "श्वः कार्यमद्य कुर्वीत पूर्वाह्णे चापराह्णिकम् / नहि प्रतीक्षते मृत्युः कृतमस्य न वा कृतम्",
+     "line": "Do tomorrow's work today, and the afternoon's in the morning. Time doesn't wait for you to be ready.",
+     "translation": "Do tomorrow's work today, and the afternoon's work in the morning. Death does not wait to see whether your work is done or not.",
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "About not postponing what matters, not about working nonstop.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 3.2252,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "A young man named Medhavin speaks to his father to stop him from waiting for a better time that may never come. The father had been delaying what truly matters in favor of routine duties. Medhavin tells him to do tomorrow's work today, and the afternoon's in the morning, because death does not wait to see whether your work is done or not. The point is that life slips away while we stay busy with preparations, and what matters must be done now.",
+     "for_you": "You have been waiting for a better time to face what happened to you. The morning is here now. Do one small thing today that belongs only to you, and let it be enough."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "quit_or_stay",
+       "label": "Should I quit my job or stay"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "King Janaka did not run away when his world shifted beneath him. He stayed and did his duties with a mind that no longer clung to what it had lost. You do not have to leave your life to change it."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The verdict and the silence",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 132,
+   "llm": 4870,
+   "total": 11454,
+   "select": 6443
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are waking at six and the house is quiet. The verdict of that call is heavy, but it is not the whole truth. The twenty-two years you gave are still yours."
+  ],
+  [
+   "scene",
+   "On the battlefield, Arjuna is broken. He has dropped his bow and refused to fight. Krishna, his charioteer and guide, stands beside him. He sees Arjuna drowning in grief over the men he must face. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः, आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत."
+  ],
+  [
+   "line",
+   "In plain words: Heat and cold, pleasure and pain come and go. They don't last; learn to bear them."
+  ],
+  [
+   "unpack",
+   "Krishna is speaking to a man who is falling apart. He is not asking Arjuna to ignore the pain or pretend it is not there. He is saying that the things that touch us, the cold and the heat, the pleasure and the pain, they arrive and then they leave. They do not last. What truly lives inside you is older than this loss and will outlast it. This is easier said than done, because the mind wants to make the pain permanent."
+  ],
+  [
+   "for_you",
+   "You are hiding the verdict from your mother. Let the shock be there. Let the morning light find you still standing."
+  ],
+  [
+   "close",
+   "The twenty-two years are still yours."
+  ]
+ ],
+ "depth": {
+  "life": "You are waking at six and the house is quiet. You are holding the ten-minute call in your chest while your parents sleep and your children are still small. The quiet is not peace. It is the space where the verdict you cannot name lives.",
+  "points": "Krishna is not telling you to accept the loss. He is telling you that the call is not the truth of you. The twenty-two years are not gone. What is real in you was never on that call and cannot be taken away.",
+  "practice": "Sit with your morning tea and name one thing from those twenty-two years that is still yours. Do not judge it. Just let it be.",
+  "question": "What would it feel like to let the morning light find you without the call?"
+ }
+}

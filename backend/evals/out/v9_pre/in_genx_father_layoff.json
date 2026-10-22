@@ -1,0 +1,516 @@
+{
+ "persona": {
+  "id": "in_genx_father_layoff",
+  "market": "India (Pune)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "49, IT services manager in Pune, 22 years in the same company, laid off last month. Daughter in 11th, home loan, aging mother.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "shaken and hiding it",
+   "bridge": "The ten-minute call that ended twenty-two years is what the Gita calls a result that was never yours to hold. Your worth was never in their hands to give or take.",
+   "week_thesis": "Seven days from the shock of the call to holding that the call was theirs, not yours, and finding the footing to face the morning without the old uniform.",
+   "week_beats": {
+    "hook": "You recognise the shock and the hiding, named without blame.",
+    "diagnose": "You see that the call was theirs to make and yours to receive, and that it does not measure the twenty-two years.",
+    "steady": "You hold that what is real in you cannot be cut smaller by what they decided.",
+    "act": "You try speaking the truth to yourself and to one person you trust, and you try one small step for what comes next.",
+    "story": "A warrior who served long and well shows you that the self he fought for was not the one they named in a single word."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.8,
+   "core_struggle": "An employee of twenty-two years was dismissed in a ten-minute call, is hiding it from their mother, and their body still wakes at six for a job that no longer exists.",
+   "mirror": "Twenty-two years, a ten-minute call, and a mother who still thinks you are going to work.",
+   "insight": "It is not the layoff that keeps you up. It is the story you are telling yourself about what the layoff means about you, which you have not yet had the chance to question.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.14,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.442,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The shock of a ten-minute call ending twenty-two years, and the quiet shame of hiding it from the mother who raised you. I lost my job.",
+    "diagnose": "When a result is taken from you, the mind turns it into a verdict on your worth; the harm is not the loss but the story you let it write about you.",
+    "steady": "What is real in you cannot be cut smaller by what they decided; your worth was never theirs to grant, and the person you were before the call is still there.",
+    "act": "Speak the true thing to yourself first, then to the one person you trust; do your own duty of finding what comes next without letting the silence become a verdict.",
+    "story": "A warrior who served long and well, was called back from the field in a single word, and found that the self he fought for was not the one they had named."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The call was theirs",
+    "What the call means",
+    "More than the name they gave you"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "twenty-two years in one company",
+    "let go in a ten-minute call",
+    "has not told their mother",
+    "still wakes at six as if going to work"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "stance:wronged_without_relation",
+    "hook:anchored_to_situation",
+    "retried:2",
+    "redo:3",
+    "redo_fixed:3",
+    "dropped:cliche=2,fallback_lesson=1,invented=1,missing=1,verdict=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.6",
+     "ref": "Bhagavad Gita 2.6",
+     "ref_iast": "Bhagavad Gītā 2.6",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयोयद्वा जयेम यदि वा नो जयेयुः । यानेव हत्वा न जिजीविषामस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥",
+     "line": "I can't tell which is better, or even what winning would look like.",
+     "translation": "Nor do we know which is better for us, to fight or not, or whether we will win or they will. The very people after whose death we would not wish to live stand facing us.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "quit_or_stay",
+       "label": "Should I quit my job or stay"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.3877,
+     "beat": "hook",
+     "role_fit": 0.845,
+     "meaning": "Arjuna is on the battlefield. He has collapsed in tears. He tells Krishna he cannot tell which is better, or what winning would even look like, or whether they will win or the other side will. The very people he would not wish to live after losing stand facing him. He admits he is confused and asks Krishna to teach him. He says clearly that he does not know what is right for him.",
+     "for_you": "The morning light comes at six again. You wake into a body that still expects the old uniform."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.9.46",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+     "family": "yv",
+     "speaker": "Janaka",
+     "listener": "himself",
+     "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+     "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+     "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+     "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 3.1064,
+     "beat": "diagnose",
+     "role_fit": 0.766,
+     "meaning": "King Janaka sits alone on the palace roof, having just heard wandering sages sing of the self. The world he ruled feels different. Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune. He decides not to run from the day ahead, but to meet it with a mind that no longer clutches.",
+     "for_you": "The ten-minute call was theirs to make, and yours to receive. It does not measure the twenty-two years. You can hold the morning without letting the call decide what you are worth."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.0779,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari writes from the section on steadfastness. A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last. The steady do not leave the right path whatever people say.",
+     "for_you": "What is real in you cannot be cut smaller by what they decided in that call. You can hold this truth steady while the hurt is still there."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.165",
+     "ref": "Maha Upanishad 4.17",
+     "ref_iast": "Mahā Upaniṣad 4.17",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on people of steady goodness.",
+     "sanskrit": "नापदि ग्लानिमायान्ति निशि हेमाम्बुजं यथा । नेहन्ते प्रकृतादन्यद्रमन्ते शिष्टवर्त्मनि ॥",
+     "line": "Good people do not wilt in hard times, like a golden lotus that stays open at night.",
+     "translation": "In adversity they do not wilt, as the golden lotus does not close at night. They want nothing beyond what is at hand and delight in the path of the good.",
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 3.0556,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": null,
+     "for_you": "The body still wakes at six, as if the job exists. That is the mind's restlessness. Let the mind itself lift the weight. You do not need to force the morning. You only need to let the mind rest, even for a moment."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 2.9873,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat, who is shattered by loss. He tells the young king to keep courage in his heart and do what the present moment asks of him. Bharat hears this, rises, and makes ready for his next step.",
+     "for_you": "Speak one small truth to yourself today. Then make ready for one small task that belongs to the next hour, not the old job. Let your hands find their footing."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 2.9166,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula speaks to her son Sanjaya after he has lost his kingdom and lies defeated on the ground. She tells him not to think less of himself or settle for a diminished life. She urges him to set his mind on what is truly good and to pull himself together. The past failure does not define him, and those who never try never succeed.",
+     "for_you": "You have carried this loss alone for a while now. Today, try to speak one true thing about it to yourself, and then share one small fact with one person you trust. After that, take one small step toward what comes next."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.ram_accepts_exile",
+     "title": "Ram accepts exile",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharatha",
+      "Lakshman"
+     ],
+     "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+     "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+     "lesson": "You cannot control the news; you can control the person who walks out of the room.",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.19.32",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.32",
+      "family": "vr",
+      "speaker": "Narrator",
+      "listener": "",
+      "setting": "Ram walks out of the palace, having lost the throne he was to receive that morning.",
+      "sanskrit": "न वनं गन्तुकामस्य त्यजतश्च वसुंधराम्। सर्वलोकातिगस्येव लक्ष्यते चित्तविक्रिया॥",
+      "line": "He had just lost the kingdom, and his mind showed no change at all.",
+      "translation": "As he set out for the forest and gave up the earth, no change could be seen in his mind, as if he stood beyond the world.",
+      "why": "You cannot control the news; you can control the person who walks out of the room.",
+      "misuse": "Calm in loss is not pretending it does not hurt; Ram grieves elsewhere in the story.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.ram_accepts_exile",
+       "title": "Ram accepts exile",
+       "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+       "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+       "lesson": "You cannot control the news; you can control the person who walks out of the room."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram went to be crowned and came out exiled for fourteen years",
+     "teaser": "Ram went to be crowned and came out exiled for fourteen years",
+     "for_you": "You cannot control the news; you can control the person who walks out of the room."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The call was theirs",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 191,
+   "llm": 5488,
+   "total": 12029,
+   "select": 6342
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are hiding something heavy. You tell yourself it is just a job, but your body knows it is a whole life. They let you go in ten minutes after twenty-two years. You have not told your mother. You still wake at six as if the alarm is real."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. His own family is in the other army. He drops his bow. He tells Krishna he is confused. He cannot tell which is better. He does not know if they will win or lose, or what winning even looks like. He says clearly he does not know what is right and asks for help: And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न चैतद्विद्मः कतरन्नो गरीयोयद्वा जयेम यदि वा नो जयेयुः, यानेव हत्वा न जिजीविषामस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः."
+  ],
+  [
+   "line",
+   "In plain words: I can't tell which is better, or even what winning would look like."
+  ],
+  [
+   "unpack",
+   "Arjuna admits he does not know. This is where clarity begins. He does not pretend to see the way forward. He does not guess which choice is safer or which will make him look good. He simply names that he is lost. This is hard because it feels like failure to admit you do not know what comes next."
+  ],
+  [
+   "for_you",
+   "Today, when the six o'clock wakefulness comes, let it be. Do not argue with the body. Let it rest. You do not need to know what is better for you today."
+  ],
+  [
+   "close",
+   "What would it be like to let this confusion belong to the morning?"
+  ]
+ ],
+ "depth": {
+  "life": "You wake at six into a body that still expects the old uniform. The ten-minute call is over. The phone lies silent. You are sitting in the kitchen with your tea, shaking, and you are hiding this from your mother.",
+  "points": "Arjuna stands on a battlefield and admits he cannot tell which choice is better. He does not know if fighting or retreating is right. He does not know if he will win. He only knows that he is confused and he asks for help. The Gita says clarity begins when you admit you do not know.",
+  "practice": "Sit with your tea and say aloud, I do not know what is better for me right now.",
+  "question": "What would it feel like to say that to someone you trust?"
+ }
+}

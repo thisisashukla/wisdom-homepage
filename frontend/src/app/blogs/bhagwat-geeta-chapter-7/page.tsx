@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 7 Summary – Key Verses & Meaning (Jnana Vijnana Yoga)",
@@ -1025,7 +1026,7 @@ export default function ChapterPage7() {
           </div>
         </div>
 
-          <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 7"} />
+          <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 7"} />
 
         </article>
       </div>
@@ -1035,12 +1036,12 @@ export default function ChapterPage7() {
         <p>
           Wisdom © 2026. Part of a{' '}
           <a
-            href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+            href={appStoreUrl('web_blog_footer')}
             target="_blank"
             rel="noopener"
             data-mp-location="footer"
           >free iPhone app</a>{' '}
-          that delivers daily Bhagavad Gita shlokas. Made with reverence.
+          that tunes the Bhagavad Gita to your life, one verse a day. Made with reverence.
         </p>
         <p style={{ marginTop: '8px' }}>
           <a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>

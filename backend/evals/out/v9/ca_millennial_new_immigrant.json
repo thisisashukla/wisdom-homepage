@@ -1,0 +1,510 @@
+{
+ "persona": {
+  "id": "ca_millennial_new_immigrant",
+  "market": "Canada (Toronto)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "36, was a bank branch manager in Hyderabad, moved to Toronto 8 months ago on PR, now driving Uber while applying. Wife and 4-year-old. Winter.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 5,
+   "topic": "work",
+   "follow": "didnt_work_out"
+  },
+  "note": "I managed 40 people in Hyderabad. Here I drive Uber at night and my wife cries about the cold. Everyone says Canadian experience. I did this for my son's future but right now I feel like I've ruined our present",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and grieving the present",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise being stripped of the life you built and the grief of watching your family pay for a future not yet here.",
+    "diagnose": "You see that the verdict of failure is theirs, not yours, and that only letting it replace your own measure is the real harm."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.75,
+   "core_struggle": "A father who left a senior role to drive at night for his son's future now feels he has ruined his family's present.",
+   "mirror": "You managed forty people, and now you drive at night while your wife cries about the cold.",
+   "insight": "Even among people, you've felt unseen. The distance is real, and so is the way back.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 1.08,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.581,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.562,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.52,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "Being stripped of the life you built and the role you held, and the grief of watching your family pay the price for a future you cannot yet see.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant; standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A man of standing who was cast down and stripped of his role, yet found his footing again by refusing to let their picture become his measure."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The life they see",
+    "Whose picture it is",
+    "The man who remains"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "managed people in Hyderabad",
+    "now drives Uber at night in Canada",
+    "wife is cold and cries about it"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "week_thesis:missing",
+    "insight:template",
+    "seat:missing",
+    "week_fit:6=0.6,42=0.3,47=0.6,22=0.3,532=0.6,7=0.0",
+    "week_fit:swapped=3",
+    "retried:1",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:gendered=3,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:unpack=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.6",
+     "ref": "Bhagavad Gita 2.6",
+     "ref_iast": "Bhagavad Gītā 2.6",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयोयद्वा जयेम यदि वा नो जयेयुः । यानेव हत्वा न जिजीविषामस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥",
+     "line": "I can't tell which is better, or even what winning would look like.",
+     "translation": "Nor do we know which is better for us, to fight or not, or whether we will win or they will. The very people after whose death we would not wish to live stand facing us.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.9623,
+     "beat": "hook",
+     "role_fit": 0.845,
+     "meaning": "Arjuna sits on the battlefield, his bow and arrows slipping from his hands. He looks at the faces of the elders and teachers gathered against him and tells Krishna that he cannot tell which is better, or even what winning would look like. He says he does not know if fighting is the right choice or if giving up is the better path, because the very people he would not wish to live without are standing before him. Admitting you do not know which choice is better and asking for help is where clarity begins.",
+     "for_you": "You stand at a crossroads where the life you built feels stripped away. You do not know which path is better, or if the future your family is paying for is even real. Let yourself admit that you do not know. That confusion is not a failure."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.14.92.69",
+     "ref": "Mahabharata · Ashvamedhika Parva · Ashvamedhika",
+     "ref_iast": "Mahābhārata, Āśvamedhika Parva 92.69",
+     "family": "mbh",
+     "speaker": "Dharma (told by the mongoose)",
+     "listener": "The gleaner brahmin",
+     "setting": "A mongoose, half its body turned to gold, scoffs at Yudhishthira's grand sacrifice and tells of a poor family's gift.",
+     "sanskrit": "क्षुधा निर्णुदति प्रज्ञां धर्मबुद्धिं व्यपोहति / क्षुधापरिगतज्ञानो धृतिं त्यजति चैव ह",
+     "line": "Real need wears down judgement. Be gentle with yourself and others when money is tight.",
+     "translation": "Hunger drives out wisdom and pushes aside the sense of right; one overcome by hunger loses even his steadiness.",
+     "why": "A small gift, honestly earned and given from little, outweighs the grandest show.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "money_stress",
+       "label": "I'm stressed about money"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.mongoose",
+      "title": "The golden mongoose and the handful of flour",
+      "summary": "At the end of Yudhishthira's lavish horse sacrifice, a half-golden mongoose declares it worth less than a poor family's gift. In a famine, a gleaner, his wife, son and daughter-in-law each gave their last handful of flour to a hungry guest; rolling in the spilt flour turned half the mongoose to gold.",
+      "story_hook": "Half of the mongoose was gold, and it had come to see if the emperor's sacrifice could gild the other half.",
+      "lesson": "A small gift, honestly earned and given from little, outweighs the grandest show."
+     },
+     "score": 2.6159,
+     "beat": "diagnose",
+     "role_fit": 0.496,
+     "meaning": "A golden mongoose, half its body bright, scoffs at Yudhishthira's vast horse sacrifice, calling it hollow. It tells of a starving family who gave away their last handful of flour to a guest. The spilled grains turned the mongoose half-gold. The mongoose says hunger strips away wisdom and fairness, pushing aside what is right. A small gift, honestly earned and given from little, outweighs the grandest show.",
+     "for_you": "The verdict that you have ruined everything is yours alone. It is not a fact written on the wall. Let it be a voice you hear, not a measure you could live by."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "diaspora_identity",
+       "label": "I don't feel fully at home anywhere"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.6904,
+     "beat": "steady",
+     "role_fit": 0.245,
+     "meaning": "Krishna tells Arjuna that doing the work born of your own nature, even with flaws, is better than performing another's duty perfectly. When you act according to your own truth, you incur no wrong. The work itself, done as an offering, holds the value, not the flawless finish.",
+     "for_you": "You are driving a cab at night, not running a team in Hyderabad. The work is different, but it is still your work. Let the shift be an offering, not a mark of failure."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 2.6677,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "In the Niti Shatakam, the poet Bhartrihari speaks to a reader who is surrounded by shifting opinions and uncertain fortune. He tells them to let the world praise or blame, to let money come or go, and to let death arrive when it will. The steadfast person does not move a step from the path of what is right. Setbacks are temporary for those who keep walking the right path, no matter what others say or how the world turns.",
+     "for_you": "The nights you drive the car and the days you managed people are not your whole life. Your part is the work in front of you, imperfectly walked. That is enough to hold on to while the hurt stays."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.1456,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is telling Nidagha how a person who is truly free moves through the world. Such a person does the work that is right in front of them. They see friend and foe with the same eye, without craving or resisting. They speak what is agreeable to everyone, and they speak gently when asked. They know the intent behind other people's hearts, and because of this, they do not sink in the world. The idea is to live fully in the world while staying unhurried inside.",
+     "for_you": "speak gently to the person at home and know the heart of the passenger in the back seat. Do the work in front of you, and stay unhurried inside. The distance is real, but the way back is in the small step you take now."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.8812,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, telling them to focus entirely on the action before them without letting the outcome weigh them down. The work is their part to do. The fruits belong to another. Care for the result, plan for it, but do not let it become the reason you stop or the master of your peace.",
+     "for_you": "The steering wheel is the work in front of you. Keep your hands steady on it, and let go of the weight of where the night might end. Do not let the fear of tomorrow empty your hands of tonight."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.jambavan_rouses",
+     "title": "Jambavan reminds Hanuman who he is",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Jambavan",
+      "Hanuman",
+      "Angada"
+     ],
+     "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+     "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+     "lesson": "Sometimes you need someone to remind you what you are capable of.",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.66.7",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 66.7",
+      "family": "vr",
+      "speaker": "Jambavan",
+      "listener": "Hanuman",
+      "setting": "On the southern shore no one can leap the ocean; old Jambavan turns to the silent Hanuman.",
+      "sanskrit": "बलं बुद्धिश्च तेजश्च सत्त्वं च हरिपुङ्गव। विशिष्टं सर्वभूतेषु किमात्मानं न सज्जसे।७।।",
+      "line": "You have the strength, the brains and the courage. Why are you holding yourself back?",
+      "translation": "Your strength, intelligence, energy and courage stand out among all beings, best of monkeys. Why do you not step up?",
+      "why": "Sometimes you need someone to remind you what you are capable of.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "fear_failure",
+        "label": "I'm afraid of failing"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.jambavan_rouses",
+       "title": "Jambavan reminds Hanuman who he is",
+       "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+       "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+       "lesson": "Sometimes you need someone to remind you what you are capable of."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "teaser": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "for_you": "You have carried this family across oceans and time. You have the strength and the mind for it. Stop sitting at the back of your own life. Step into the leap you are already capable of taking."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The life they see",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 189,
+   "llm": 4741,
+   "total": 11957,
+   "select": 7020
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting in a car in the dark, the engine off, and the shame feels heavy. You gave up the management role in Hyderabad for this, and now the distance from your wife is real. You do not know if the sacrifice was worth it, or if you ruined what was right in front of you."
+  ],
+  [
+   "scene",
+   "Arjuna sits on the battlefield, his bow and arrows slipping from his hands. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न चैतद्विद्मः कतरन्नो गरीयोयद्वा जयेम यदि वा नो जयेयुः, यानेव हत्वा न जिजीविषामस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः."
+  ],
+  [
+   "line",
+   "In plain words: I can't tell which is better, or even what winning would look like."
+  ],
+  [
+   "unpack",
+   "Arjuna sits on the battlefield, his bow and arrows slipping from his hands. He looks at the faces of the elders and teachers gathered against him and tells Krishna that he cannot tell which is better, or even what winning would look like. He says he does not know if fighting is the right choice or if giving up is the better path, because the very people he would not wish to live without are standing before him. Admitting you do not know which choice is better and asking for help is where clarity begins."
+  ],
+  [
+   "for_you",
+   "In the quiet of the car tonight, let yourself sit with the fact that you do not know if this was the right path. Do not try to fix the feeling or prove the sacrifice right. Just notice the confusion. It is not a failure of your character."
+  ],
+  [
+   "close",
+   "What if the first step back is simply saying you do not know?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit in the car after a shift, the city lights blurred, and wonder if the life you left behind is gone forever. The distance between you and your wife has never felt so wide, and the money you earn now does not close it. You do not know if this sacrifice was worth the coldness at home.",
+  "points": "Even when you have done everything right, you can still feel cut off from the people you love. That feeling of being unseen is not a verdict on your worth. It is simply the truth of where you are right now, and it is safe to admit you do not know the way forward.",
+  "practice": "Before you turn the key to start the engine, sit still for one minute. Say out loud, I do not know, without trying to fix it.",
+  "question": "What would it mean to you if you allowed yourself not to know?"
+ }
+}

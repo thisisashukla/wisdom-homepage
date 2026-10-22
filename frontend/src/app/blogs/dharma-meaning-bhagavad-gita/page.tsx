@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Dharma in the Bhagavad Gita: What It Means and Why It's Not What You Think | Wisdom",
+  title: "Dharma in the Bhagavad Gita: What It Means and Why It's Not What You Think",
   description: "Dharma doesn't mean duty or religion. In the Gita, it's closer to 'your own nature, acted on.' Svadharma, the dharma of the self, is Krishna's answer to Arjuna's paralysis. Here's what the Gita actually says.",
   keywords: "dharma meaning bhagavad gita, what is dharma in gita, svadharma meaning, dharma in hinduism gita, types of dharma bhagavad gita, dharma vs adharma gita, bhagavad gita 3.35 svadharma, bhagavad gita 4.7 dharma, bhagavad gita 18.47 svadharma, dharma definition hindi",
   openGraph: {
@@ -758,11 +759,11 @@ export default function DharmaMeaningPage() {
         </div>
       </div>
 
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Dharma Meaning Bhagavad Gita"} />
+      <VerseFunnelCTA variant="chapter" locale="en" pageName={"Dharma Meaning Bhagavad Gita"} />
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Dharma Meaning Bhagavad Gita" />

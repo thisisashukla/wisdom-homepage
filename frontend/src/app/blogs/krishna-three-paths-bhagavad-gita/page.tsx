@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Krishna's Three Paths, Karma, Jnana, Bhakti | Bhagavad Gita's Three Yogas Explained",
@@ -1220,7 +1221,7 @@ export default function KrishnaThreePathsPage() {
           You begin with the path that fits you. As you deepen, you can move between paths, because, as Krishna himself says in 7.17, the seeker who has gathered both wisdom and devotion is the one closest to him. The architecture of the app is not invented. It is the architecture of the Gita itself, made walkable.
         </p>
 
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Krishna Three Paths"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Krishna Three Paths"} />
 
         <h2>A Closing Thought</h2>
 
@@ -1319,8 +1320,8 @@ export default function KrishnaThreePathsPage() {
       </section>
 
       <footer>
-        <p>© 2026 Wisdom App. Three paths, one summit. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> · <a href="https://wisdomquotes.in/blogs">Blog</a> · <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Three paths, one summit. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> · <a href="https://wisdomquotes.in/blogs">Blog</a> · <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Krishna Three Paths" />

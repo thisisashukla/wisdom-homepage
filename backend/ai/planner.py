@@ -148,11 +148,55 @@ HARM_LINE_BLOCK = re.compile(r"\b(insult|bear (it|with)|endur|patien|forgiv|tole
                              r"fault|blame|deserve|karma|fruit of (your|our) (own )?action|abandon|flaws|stay|"
                              r"calm is|fall away|duty|serve|husband|wife|in-?law)", re.I)
 HARM_STORY_BLOCK = re.compile(r"forgiv|patien|gentle|keep(ing)? the peace|endur|tolerat|adjust|obey|silent|hid(e|es|ing)\b|doubt", re.I)
+# Someone being wronged (ai/stance.py; no physical danger) is never shown a line that reads as "put up with it"
+# or that names an inner fault as the trouble: equanimity in praise and insult, contentment, envy, blame.
+WRONGED_LINE_BLOCK = re.compile(r"\b(insult\w*|bear (it|with)|endur\w*|patien\w*|forgiv\w*|tolerat\w*|the same (in|to|toward)|"
+                                r"unshaken|unmoved|don'?t react|stay calm|keep quiet|silent|obey\w*|submit\w*|content\w*|envy|envious|"
+                                r"jealous\w*|greed\w*|crav\w*|your own (doing|fault|making)|own enemy|fault|blame|deserve|humbl\w*|"
+                                r"adjust\w*|accept\w*|expect\w* (less|nothing|too much)|put up with|ego|pride|proud|arrogan\w*)\b", re.I)
+# The two stance mechanisms have no situation tags of their own in the library yet, so a verse's fit for them is
+# read off its themes, its situations and its own line. Replace with LLM labels (scripts/label_verse_roles.py) later.
+STANCE_MECH_SIGNALS = {
+    "dignity_denied": {
+        "themes": {"courage": 0.5, "self_worth": 0.5, "truth": 0.4, "speech": 0.3, "boundaries": 0.4, "saying_no": 0.4},
+        "situations": {"criticism": 0.6, "credit_taken": 0.6, "inlaws": 0.5, "toxic_boss": 0.5, "boundaries_family": 0.5,
+                       "parents_expectations": 0.4, "self_worth": 0.4, "betrayal": 0.3, "hard_conversation": 0.3},
+        "line": re.compile(r"\b(stand up|stand (your|their) ground|smallness of heart|no weapon|cannot be cut|cuts it|"
+                           r"fearless\w*|own path|borrowed li(fe|ves)|speak (the )?truth|truthful\w*|who you are|isn't who you are|"
+                           r"your own side|lift yourself|shake it off|rise|disgrace|dishonou?r|worth)\b", re.I),
+    },
+    "resolve_begin": {
+        "themes": {"effort": 0.5, "courage": 0.4, "decision": 0.4, "duty": 0.3},
+        "situations": {"side_project": 0.6, "discipline": 0.5, "career_switch": 0.5, "change_life": 0.5, "procrastination": 0.4,
+                       "fear_failure": 0.3, "big_decision": 0.3, "outcome_anxiety": 0.2},
+        "line": re.compile(r"\b(rise|get up|stand up|begin|start\w*|effort|do (your|the) work|keep (doing|going|at it)|"
+                           r"never wasted|no effort|your part|own path|do what is yours|act\b|work that|undertaking)\b", re.I),
+    },
+}
 # Their stage of life, per level: how much the stage's usual situations lift a verse, and how much a
 # verse tagged only with situations their life doesn't hold is pushed down. Week 3 is about the self
 # beyond every role, so the stage counts for little there.
 LIFE_CONF = {"situation": (0.3, 0.45), "pattern": (0.18, 0.35), "self": (0.06, 0.2)}
 PARENT_SITS = {"present_parent", "new_parent", "raising_kids_values", "teen_conflict"}
+# A line about dying, the body as old clothes, the pyre, is for someone facing a death; served to a living loss (a
+# job, a child who moved away, a marriage) it reads as if someone died.
+BEREAVEMENT_SITS = {"grief_general", "grief_parent", "pet_loss", "fear_death"}
+# When the people in the note are the trouble, a verse that praises family as refuge or good company as the answer
+# tells them the wrong thing.
+REFUGE_THEMES = {"family", "friendship", "good_company"}
+# To someone lonely, grieving or missing a child, a line that lists how love is "ruined" or a child "spoiled" reads as a verdict
+# on their parenting; kept away from them whatever the beat.
+REPROACH_LINE = re.compile(r"\b(spoil\w*|wayward|neglect\w*|ruin\w*|careless\w*|little more than an animal|like an animal|fool\b|fools\b)", re.I)
+# "Turn to me", "lean on me": a devotee's verse. For someone who did not tap Searching it reads as "just trust God".
+DEVOTIONAL_LINE = re.compile(r"\b(turn to me|lean on me|surrender to me|take refuge in me|refuge in me|worship me|devoted to me|"
+                             r"think of me|fix your mind on me|rest your mind in me|come to me|love me|my devotee)\b", re.I)
+# "Turn to me", "lean on me": a devotee's verse. Welcome for a Searching reader with nothing concrete to carry; served to
+# someone whose note names a problem it reads as "just trust God", whatever chip they tapped.
+DEVOTIONAL_LINE = re.compile(r"\b(turn to me|lean on me|surrender to me|take refuge in me|refuge in me|worship me|devoted to me|"
+                             r"think of me|fix your mind on me|rest your mind in me|come to me|love me|my devotee)\b", re.I)
+LONELY_SITS = {"loneliness", "empty_nest", "homesick", "grief_general", "grief_parent", "far_from_home", "marriage_distance"}
+RELATION_SITS_PLANNER = {"inlaws", "criticism", "credit_taken", "toxic_boss", "boundaries_family", "parents_expectations",
+                         "parent_conflict", "marriage_conflict", "betrayal", "sibling_rift", "teen_conflict", "interfaith"}
 
 
 def life_misfit(age: Optional[str], stages: Sequence[str]) -> set:
@@ -229,6 +273,13 @@ class Planner:
             for k, m in enumerate(o):
                 if m in MECHANISMS:
                     d[m] = max(d.get(m, 0.0), 1.0 if k == 0 else 0.8)
+            for m, sig in STANCE_MECH_SIGNALS.items():       # stance mechanisms: themes + situations + the line itself
+                th = sum(sig["themes"].get(x, 0.0) for x in v.get("themes") or [])
+                si = max((sig["situations"].get(x, 0.0) for x in v.get("situations") or []), default=0.0)
+                ln = 0.25 if sig["line"].search(v.get("line") or "") else 0.0
+                fit = min(1.0, th + si + ln)
+                if fit >= 0.3:
+                    d[m] = max(d.get(m, 0.0), fit)
             self.verse_mechs.append(d)
         self.labelled = len(overrides)
         self._life_cache: Dict[tuple, np.ndarray] = {}
@@ -236,6 +287,12 @@ class Planner:
         self._harm_ok = np.array([bool(set(v.get("themes") or []) & HARM_NEED_THEMES) for v in self.verses])
         # Equanimity and endurance lines ("the same in praise and insult") read as "put up with it" to someone being hurt.
         self._harm_block = np.array([bool(HARM_LINE_BLOCK.search(v.get("line", ""))) for v in self.verses])
+        self._wronged_block = np.array([bool(WRONGED_LINE_BLOCK.search(v.get("line", ""))) for v in self.verses])
+        self._comforting = np.array([((v.get("jev") or {}).get("tone")) == "comforting" for v in self.verses])
+        self._refuge = np.array([bool(set(v.get("themes") or []) & REFUGE_THEMES) for v in self.verses])
+        self._devotional_line = np.array([bool(DEVOTIONAL_LINE.search(v.get("line", ""))) for v in self.verses])
+        self._devotional_line = np.array([bool(DEVOTIONAL_LINE.search(v.get("line", ""))) for v in self.verses])
+        self._reproach = np.array([bool(REPROACH_LINE.search(v.get("line", "") + " " + (v.get("translation") or ""))) for v in self.verses])
         self.role_mat = np.array([[self.roles[v["id"]][r] for r in ROLES] for v in self.verses], dtype=np.float32)
         self.levels = level_table(self.verses, overrides)
         self.level_mat = {k: np.array([self.levels[v["id"]][k] for v in self.verses], dtype=np.float32) for k in LEVEL_IDS}
@@ -425,9 +482,23 @@ class Planner:
         ok = np.ones(len(self.verses), dtype=bool)
         crisis = u.risk == "self_harm"
         harm = u.risk == "harm_from_others"
+        wronged = getattr(u, "stance", "struggle") == "wronged"
+        bereaved = u.risk == "self_harm" or any(s["id"] in BEREAVEMENT_SITS for s in u.situations[:3])
+        concrete = getattr(u, "note_quality", "none") in ("useful", "partial") and getattr(u, "stance", "struggle") != "seeking"
+        lonely = any(s["id"] in LONELY_SITS for s in u.situations[:2])
         for i, v in enumerate(self.verses):
             jev = v.get("jev") or {}
-            if v["id"] in exclude:
+            if v["id"] in exclude or not self.rec.has_original[i]:
+                ok[i] = False
+            elif wronged and self._wronged_block[i]:
+                ok[i] = False
+            elif self._death[i] and not bereaved:
+                ok[i] = False
+            elif self._devotional_line[i] and (concrete or feeling not in ("faith", "gita")):
+                ok[i] = False
+            elif feeling not in ("faith", "gita") and self._devotional_line[i]:
+                ok[i] = False
+            elif lonely and self._reproach[i]:
                 ok[i] = False
             elif feeling == "gita" and v.get("family") != "bg":
                 ok[i] = False
@@ -488,6 +559,8 @@ class Planner:
         out = np.zeros(len(self.verses), dtype=np.float32)
         picks_max = max(OBSERVED_PICKS.values())
         mech_themes = set(MECHANISMS[u.mechanism]["themes"])
+        named = set(getattr(u, "texts", None) or ())
+        antagonist = any(s["id"] in RELATION_SITS_PLANNER for s in u.situations[:2])
         for i, v in enumerate(self.verses):
             jev = v.get("jev") or {}
             s = 0.4 * min(1.0, max(0.0, (float(jev.get("quotability") or 0.0) - 0.6) / 0.25))
@@ -499,12 +572,16 @@ class Planner:
                 s += 0.15
             elif feeling != "faith" and v.get("bhakti"):
                 s -= 0.2
-            s += 0.12 * OBSERVED_PICKS.get(v["id"], 0) / picks_max
+            s += 0.05 * OBSERVED_PICKS.get(v["id"], 0) / picks_max   # was 0.12: it funnelled every reading onto five verses
             if feeling == "gita" and v["id"] in GITA_ANCHORS:
                 s += 0.3
             if jev.get("risk") == "needs_note" and not v.get("misuse"):
                 s -= 0.15
             s += 0.06 * min(2, len(mech_themes & set(v.get("themes") or [])))
+            if named and fam in named:
+                s += 0.22                          # a text they named themselves: let it carry several days
+            if antagonist and self._refuge[i]:
+                s -= 0.35                          # family or good company as the answer, when family is the trouble
             out[i] = s
         return out
 
@@ -554,6 +631,11 @@ class Planner:
                 if pool.sum() > 20:
                     q, pen = HOOK_RELEVANCE
                     s -= pen * (sem < np.quantile(sem[pool], q))
+            stance = getattr(u, "stance", "struggle")
+            if role == "hook" and stance == "aspiration":
+                s -= 0.45 * self._comforting     # a resolve is met with a verse of rising, not consolation
+            if role == "hook" and stance in ("aspiration", "wronged"):
+                s += 0.5 * mech                  # the hook is not a lament here: the stance mechanism carries it
             if adjust is not None:
                 s = s + adjust                    # what they told us with "Not for me" (feedback_adjust)
             if u.risk == "harm_from_others" and role in ("diagnose", "steady", "act"):
@@ -644,7 +726,7 @@ class Planner:
         for s, j in scored[:k]:
             p = self.prasangs[j]
             anchor = None
-            members = self.prasang_verses.get(p["id"]) or []
+            members = [i for i in self.prasang_verses.get(p["id"]) or [] if self.rec.has_original[i]]
             if members:
                 if qvec is not None and self.rec.verse_vecs is not None:
                     anchor = max(members, key=lambda i: float(self.rec.verse_vecs[i] @ qvec))
@@ -760,7 +842,11 @@ class Planner:
                   adjust: Optional[np.ndarray] = None) -> List[int]:
         """Day 1, hard-constrained to the Gita. The best Gita hooks within every gate; if none survive
         (all already shown), Gita hooks that were shown before, still within the safety gates."""
-        s = np.where(self._gita, hook_scores, -1e9)
+        from common.config import settings
+        if getattr(settings, "day1_other_texts", False) and feeling != "gita":
+            s = hook_scores + 0.3 * self._gita          # the Gita leads when it has the verse; it is not a wall
+        else:
+            s = np.where(self._gita, hook_scores, -1e9)
         got = self._pick(s, list(taken), set(), Counter(), feeling, k=k, max_family=k + 1)
         if len(got) < k:
             relaxed = self.beat_scores(u, feeling, qvecs, set(never), level, adjust=adjust)["hook"]
@@ -884,7 +970,7 @@ class Planner:
                     pinned = (next((p for p in self.prasangs if p["id"] == pin_story), None)
                               if first and pin_story and pin_story not in story_used else None)
                     if pinned is not None and pinned["id"] not in used_prasangs:
-                        members = self.prasang_verses.get(pinned["id"]) or []
+                        members = [i for i in self.prasang_verses.get(pinned["id"]) or [] if self.rec.has_original[i]]
                         st = [{"prasang": pinned, "score": 0.0, "anchor": members[0] if members else None}]
                     else:
                         st = self.pick_story(u, qv["story"] if qv else None, feeling, avoid=used_prasangs | story_used,

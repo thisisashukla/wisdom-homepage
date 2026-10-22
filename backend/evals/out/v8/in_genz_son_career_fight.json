@@ -1,0 +1,488 @@
+{
+ "persona": {
+  "id": "in_genz_son_career_fight",
+  "market": "India (Jaipur)",
+  "generation": "Gen Z",
+  "gender": "man",
+  "who": "22, wants to be a filmmaker, father is a government doctor who wants him to do MBBS or at least MBA. Fights every dinner.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "papa says films are for rich kids and I should do MBA. we fight every night. I love him and I also feel like he doesn't see me at all. mummy cries in the kitchen",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "torn and unseen",
+   "bridge": "The night you spend fighting your father for your own life is what the texts call the untrained mind running after praise it cannot hold.",
+   "week_thesis": "The week turns the nightly fight from a war over what to study into a search for how to be seen without losing yourself.",
+   "week_beats": {
+    "hook": "You recognise the fight and the love tangled together, and the person in the middle who is not being seen.",
+    "diagnose": "You see that the fight is not about films, but about the approval he cannot give you for who you are.",
+    "steady": "You hold that your worth is not their opinion, and that the work is yours.",
+    "act": "You try one honest conversation and one small thing that is yours alone, not for him.",
+    "story": "A young man who fought his father over his own path shows you how to walk it without burning the door shut."
+   },
+   "undisclosed": false,
+   "hinglish": true,
+   "texts": [],
+   "confidence": 0.55,
+   "core_struggle": "A student under twenty-five is fighting nightly with his father, who dismisses his love of films and wants an MBA instead, while his mother cries in the kitchen.",
+   "mirror": "Every night ends the same way: you both want something, and your mother cries in the kitchen while you stand in the middle.",
+   "insight": "It isn't the task that weighs on you. It's waiting for someone else to tell you it was enough.",
+   "mechanism": "need_for_approval",
+   "mechanism_label": "Needing their approval",
+   "secondary_mechanism": "expectation_of_others",
+   "situations": [
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 2.45,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 2.01,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.93,
+     "source": "note"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 0.573,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.4,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "I keep fighting with my parents. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "When your worth depends on their praise, every word of blame shakes you; craving their approval keeps the mind unsteady and the home at war.",
+    "steady": "Praise and blame come and go, but who you are does not change with their mood; the work is yours and the peace is yours to find.",
+    "act": "Speak your truth gently, listen for what he cannot say, and find one thing each day that is yours and not for him.",
+    "story": "A young man who loved his father and fought him over his own path, who found the courage to walk it and the grace to keep the door open."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The fight for being seen",
+    "What he cannot say",
+    "More than their approval"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "they fight every night",
+    "mother cries in the kitchen"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:hook_gives_advice",
+    "week_fit:29=0.3,41=0.0,84=0.3,19=0.3,12=0.0,15=0.0",
+    "week_fit:swapped=6",
+    "retried:3",
+    "dropped:blame=1,fallback_line=1,invented=1,missing=2",
+    "for_you:7/7",
+    "meaning:3/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.5398,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless, stormy and stubborn, and as hard to hold as the wind. Krishna agrees, saying this is the nature of the mind, but that it can be trained through practice and letting go.",
+     "for_you": "Every night you are trying to hold onto your own life while your father pushes a different future. That fight is the wind you are trying to hold. It is not a failure of yours. It is the mind running after a praise it cannot catch."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.61",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 61",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own heart",
+     "setting": "Opening verse of 'Advice to the Mind'.",
+     "sanskrit": "परेषां चेतांसि प्रतिदिवसमाराध्य बहुधा प्रसादं किं नेतुं विशसि हृदय क्लेशकलितम् । प्रसन्ने त्वय्यन्तः स्वयमुदितचिन्तामणिगणो विविक्तः संकल्पः किमभिलषितं पुष्यति न ते ॥",
+     "line": "Why exhaust yourself daily winning others' approval? Settle inside, and your own clarity grants every wish.",
+     "translation": "O heart, why do you enter into weariness, day after day trying to please the minds of others in so many ways, to win their favour? When you are at peace within, your own clear resolve rises by itself like a cluster of wish-granting gems: what wish of yours would it not fulfil?",
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 2.8859,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "Bhartrihari speaks to their own heart as the day begins. They ask why it wears itself out trying to please the minds of others, why it rehearses outcomes it cannot control. They say that when the heart settles inside itself, its own clear resolve rises on its own, like a cluster of gems that grants every wish. The verse asks you to stop seeking the approval you cannot hold, and to let your own clarity do the work.",
+     "for_you": "You are waiting for your father to say your love of films is enough. He will not give you that word. The calm you want is already inside you, not in his office or his MBA. Let your own resolve rise."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.2715,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": null,
+     "for_you": "The nightly fight with your father is a slight that burns. The praise you want from him is a tide that swells. Your worth is not their opinion. The work of being steady is yours alone, in the quiet moments when the house is still."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.7",
+     "ref": "Bhagavad Gita 6.7",
+     "ref_iast": "Bhagavad Gītā 6.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः । शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥",
+     "line": "Self-mastered and calm, you stay centred in heat and cold, pleasure and pain, praise and insult.",
+     "translation": "For one who has conquered himself and is at peace, the higher self stays steady in cold and heat, pleasure and pain, honour and dishonour.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Staying steady under insult is not accepting mistreatment; you can stay calm and still speak up.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.167,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": null,
+     "for_you": "Your father's words about an MBA are just noise. Your worth is not his opinion. The work of building your own life is yours alone to do. Stay deep and still, like a quiet pool, and let his words pass over you without pulling you under."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.103.34",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 103.34",
+     "family": "mbh",
+     "speaker": "Brihaspati (retold by Bhishma)",
+     "listener": "Indra",
+     "setting": "Brihaspati counsels Indra on how to hold authority among difficult people.",
+     "sanskrit": "मृदुमप्यवमन्यन्ते तीक्ष्णादुद्विजते जनः / मातीक्ष्णो मा मृदुर्भूस्त्वं तीक्ष्णो भव मृदुर्भव",
+     "line": "People walk over the soft and fear the harsh. Be firm when it's needed, gentle when it's needed.",
+     "translation": "People look down even on the gentle, and they shrink from the harsh. Do not be only harsh, do not be only soft: be firm when firmness is needed and gentle when gentleness is.",
+     "why": null,
+     "misuse": "Firmness here means clarity, not cruelty.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9199,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": null,
+     "for_you": "Stay the same in praise and blame; do what is right, speak truthfully and gently, and let your worth rest on your own conduct."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 2.9198,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to hold himself in contempt or settle for little. She says to set his mind on what is truly good, to stop fearing, and to pull himself together. The point is that past failure does not define a person. Results are uncertain, but those who never try never succeed.",
+     "for_you": "After the nightly fight, do one small thing that is only yours, not for him. Watch one film without explaining it. Let your own mind settle on something good."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.katha.nachiketa_sent",
+     "title": "Nachiketa questions his father's gift",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Nachiketa",
+      "Vajashravasa (Auddalaki)"
+     ],
+     "story_hook": "Nachiketa watched his father give away cows too old to give milk, and could not keep quiet.",
+     "summary": "A father makes a show of giving away all he owns, but the cows are old and dry. His young son Nachiketa keeps asking who he will be given to, until the father snaps, 'To Death!' The boy goes, and tells his father to keep his word.",
+     "lesson": "A child's honest question can show up an adult's empty gesture.",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "anchor": {
+      "id": "up_kath.1.1.4",
+      "ref": "Katha Upanishad 1.1.4",
+      "ref_iast": "Kaṭha Upaniṣad 1.1.4",
+      "family": "up",
+      "speaker": "Nachiketa",
+      "listener": "His father Vajashravasa",
+      "setting": "A boy watches his father give away worn-out cows as a show of piety.",
+      "sanskrit": "स होवाच पितरं तत कस्मै मां दास्यसीति । द्वितीयं तृतीयं तं होवाच मृत्यवे त्वा ददामीति ॥",
+      "line": "A boy asks his father three times, 'To whom will you give me?' The angry answer: 'To Death.'",
+      "translation": "He said to his father, 'Father, to whom will you give me?' He asked a second time, and a third. His father said, 'To Death I give you.'",
+      "why": "A child's honest question can show up an adult's empty gesture.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "parent_conflict",
+        "label": "I keep fighting with my parents"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.katha.nachiketa_sent",
+       "title": "Nachiketa questions his father's gift",
+       "summary": "A father makes a show of giving away all he owns, but the cows are old and dry. His young son Nachiketa keeps asking who he will be given to, until the father snaps, 'To Death!' The boy goes, and tells his father to keep his word.",
+       "story_hook": "Nachiketa watched his father give away cows too old to give milk, and could not keep quiet.",
+       "lesson": "A child's honest question can show up an adult's empty gesture."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Young Nachiketa questioned his father's gift, and his angry father gave him to Death",
+     "teaser": "Young Nachiketa questioned his father's gift, and his angry father gave him to Death",
+     "for_you": "Nachiketa stood his ground with his father and did not burn the door behind him. You can walk your own path without closing the door on the people you love."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The fight for being seen",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 157,
+   "llm": 4315,
+   "total": 20029,
+   "select": 15549
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You feel torn and unseen. You spend hours on the phone and still come home to the same fight. Your mother cries in the kitchen and your father wants an MBA, not your love for films. You are trying to hold onto your own life while someone else keeps pushing a different future."
+  ],
+  [
+   "scene",
+   "Arjuna says this to Krishna. He is on a battlefield, but he feels just as lost as you do right now. He has just admitted that he cannot steer his own mind. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Krishna agrees that the mind is restless, stormy, and stubborn. He says it is as hard to hold as the wind. But he also says the mind can be trained. Not by fighting it harder, but through practice and letting go. This is easier said than done. You cannot force your mind to stop caring about your father's approval."
+  ],
+  [
+   "for_you",
+   "When the fight starts tonight, notice the wind in your chest. Do not try to win the approval right now. Just let the feeling run its course. Let it go."
+  ],
+  [
+   "close",
+   "Can you let the wind move without chasing it?"
+  ]
+ ],
+ "depth": {
+  "life": "Every night you sit in the middle of a fight that feels like a war over who you are. Your father wants an MBA, but you want to make films. You are trying to hold your ground while your mother cries in the kitchen. You feel torn and unseen, like your own life is slipping through your fingers.",
+  "points": "The mind is restless, stormy and stubborn. It runs after praise it cannot hold. Your nightly fight is not really about films or degrees. It is the untrained mind chasing approval from a place that cannot give it, leaving you exhausted and unseen.",
+  "practice": "Watch the fight from the doorway for five minutes before you step in. Just breathe and notice the storm without trying to hold it.",
+  "question": "What if the approval you are chasing is a wind that will never stay?"
+ }
+}

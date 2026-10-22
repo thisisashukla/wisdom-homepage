@@ -1,0 +1,479 @@
+{
+ "persona": {
+  "id": "ca_millennial_new_immigrant",
+  "market": "Canada (Toronto)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "36, was a bank branch manager in Hyderabad, moved to Toronto 8 months ago on PR, now driving Uber while applying. Wife and 4-year-old. Winter.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 5,
+   "topic": "work",
+   "follow": "didnt_work_out"
+  },
+  "note": "I managed 40 people in Hyderabad. Here I drive Uber at night and my wife cries about the cold. Everyone says Canadian experience. I did this for my son's future but right now I feel like I've ruined our present",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "ashamed and grieving the present",
+   "bridge": "The life you handed your family is not the one they wanted, and the one they see is not the one you built. What you are cannot be made smaller by what Canada sees.",
+   "week_thesis": "",
+   "week_beats": {},
+   "confidence": 0.7,
+   "core_struggle": "A man who led people now drives at night abroad, and feels he has diminished his family and himself for a future that has not yet arrived.",
+   "mirror": "You led people, and now you drive at night while your wife cries about the cold.",
+   "insight": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.585,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.581,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.562,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.52,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "Being handed a smaller life than the one you built, and watching the present you sacrificed for your son's future begin to feel ruined.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing to your wife and to yourself, hold your ground on what is yours, and do your own duty without shrinking to fit the picture Canada holds.",
+    "story": "A king who was stripped of his kingdom and lived in disguise, yet kept his truth and was recognised when the time came."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Seen as less",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "managed people",
+    "now drives at night in Canada",
+    "wife cries about the cold"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "week_thesis:missing",
+    "insight:template",
+    "retried:2",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:cliche=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "diaspora_identity",
+       "label": "I don't feel fully at home anywhere"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 3.0297,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. Arjuna has laid down his weapons, overwhelmed by grief and confusion over his duty. Krishna tells him that it is better to walk one's own path, even if it is flawed and imperfect, than to perform another's role perfectly. Doing the work that fits your own nature, with all its flaws, means you incur no spiritual wrong. The work itself becomes an offering when it comes from your own true self.",
+     "for_you": "You are driving through the night in a country that does not know your name. That path is yours, imperfect as it feels right now. Do the work of this life, the driving and the building, as your own offering."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.18.16",
+     "ref": "Bhagavad Gita 18.16",
+     "ref_iast": "Bhagavad Gītā 18.16",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Right after naming the five causes of any action, Krishna warns about the person who ignores four of them.",
+     "sanskrit": "तत्रैवं सति कर्तारमात्मानं केवलं तु यः । पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः ॥",
+     "line": "If you think you alone made it happen, or alone made it fail, you're not seeing the whole picture.",
+     "translation": "That being so, whoever, through an untrained understanding, sees himself alone as the doer does not truly see.",
+     "why": "You are one cause among five; own your part, not the whole outcome.",
+     "misuse": "Not a way to dodge responsibility; you are still one of the five causes.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.2",
+      "title": "What makes an action happen",
+      "summary": "Every action has five causes: the setting, the doer, the instruments, the efforts, and providence. Seeing oneself as the only doer is a mistake.",
+      "story_hook": "",
+      "lesson": "You are one cause among five; own your part, not the whole outcome."
+     },
+     "score": 2.9582,
+     "beat": "diagnose",
+     "role_fit": 0.681,
+     "meaning": "Krishna continues his teaching to Arjuna, explaining the five causes behind any action. He warns that a person with an untrained mind sees themselves as the sole doer. If you think you alone made an outcome happen or fail, you are not seeing the whole picture. You are only one of the five causes. This does not let you off the hook, but it frees you from carrying the weight of everything alone.",
+     "for_you": "Yesterday's verse named the grip of the path. Today, let go of the idea that you alone built this failure or must carry it alone. You are one cause among many, and that leaves room to move."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.1799,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": "Queen Vidula speaks to her son Sanjaya, who lies defeated after losing his kingdom. She tells him not to hold himself in contempt or settle for too little. She urges him to set his mind on what is truly good and to stop fearing. The past failure does not define him, and those who never try never succeed. She rouses him to rise and fight for his kingdom again.",
+     "for_you": "Your project collapsed and the nights here are cold, but the man who managed people is still inside you. Stop letting this season shrink the picture you have of yourself. Choose one thing you still believe is good, and let that guide your next move."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.2074,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher is laying down the rules for a person who has stepped away from the world. They tell the student not to exhaust their body by chasing pleasure or running from pain. If someone praises them, they should not swell with pride. If someone blames them, they should not curse the other person in return. The idea is to keep the body steady and the mind even, no matter what comes.",
+     "for_you": "The road at night is long and the phone calls drain you. But the body you drive with is still yours, and the shame they place on you does not get to own it. Rest your hands on the wheel, and let the cold outside be just cold."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.435,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu tells Nidagha that a person who is truly free does not let praise swell their head or blame push them into anger. They do not chase pleasure or run from pain, wearing out their body in the process. Instead, they simply do the work that is right in front of them. They treat friend and foe with the same steady gaze, speaking gently and reading the true intent of others' hearts. By doing this, they remain unhurried inside while fully active in the world.",
+     "for_you": "The driving at night is not the real work. The real work is the one thing you can do right now, without needing to prove it to anyone. Do it quietly. Speak to your family with the same steady gaze you use for strangers on the road."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 3.2664,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": "A teacher gives a graduating student their final instructions as they leave to start a family. The teacher says to speak the truth, to do what is right, and to never stop learning. These words are not about school. They are about how to live a whole life. They include honouring mother, father, teacher and guest, and giving with grace. The teacher even tells the student to copy only the good conduct of those around them, and when in doubt, to act as thoughtful, gentle people would.",
+     "for_you": "The truth you speak is not about grand declarations. It is about doing the one small, right thing in front of you. Keep learning from the quiet moments, and let your actions show the steadiness you hold inside."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.chudala",
+     "title": "Queen Chudala teaches her husband what renunciation really is",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Chudala",
+      "Shikhidhvaja",
+      "Kumbha"
+     ],
+     "story_hook": "The queen had found peace, and the king, who loved her, could not believe it.",
+     "summary": "Queen Chudala finds inner peace, but her husband, King Shikhidhvaja, doesn't believe her. Restless, he leaves his kingdom for the forest. Chudala rules wisely in his absence and visits him disguised as a young sage, Kumbha, who shows him that giving up kingdom, home and body is not renunciation; letting go of the clinging mind is. Freed, he returns home and rules beside her.",
+     "lesson": "Running away doesn't free you; letting go inside does. Sometimes the teacher is the person beside you.",
+     "matched": [],
+     "anchor": {
+      "id": "yv.6a.93.29",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Nirvāṇa 93.29",
+      "family": "yv",
+      "speaker": "Kumbha (Queen Chudala in disguise)",
+      "listener": "King Shikhidhvaja",
+      "setting": "Queen Chudala, disguised as the young sage Kumbha, visits her husband who fled to the forest.",
+      "sanskrit": "साधो न देहत्यागेन न राज्यत्यजनेन च । न चोटजादिशोषेण सर्वत्यागो भवेन्नृप ॥",
+      "line": "Giving up your kingdom, your body, or living in a hut won't free you. Real letting go is inside.",
+      "translation": "Good man, true renunciation does not come from giving up the body, nor from giving up the kingdom, nor from wasting away in a hut, O king.",
+      "why": "Running away doesn't free you; letting go inside does. Sometimes the teacher is the person beside you.",
+      "misuse": "Not 'never change your life'. It says outer escape without inner change doesn't work.",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.chudala",
+       "title": "Queen Chudala teaches her husband what renunciation really is",
+       "summary": "Queen Chudala finds inner peace, but her husband, King Shikhidhvaja, doesn't believe her. Restless, he leaves his kingdom for the forest. Chudala rules wisely in his absence and visits him disguised as a young sage, Kumbha, who shows him that giving up kingdom, home and body is not renunciation; letting go of the clinging mind is. Freed, he returns home and rules beside her.",
+       "story_hook": "The queen had found peace, and the king, who loved her, could not believe it.",
+       "lesson": "Running away doesn't free you; letting go inside does. Sometimes the teacher is the person beside you."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Queen Chudala found peace, and her husband refused to believe her",
+     "teaser": "Queen Chudala found peace, and her husband refused to believe her",
+     "for_you": "You left your kingdom of management to drive in the dark, hoping the road would bring you peace. But the road is only a different room. The real letting go is inside. You are not your job title or your failure. You are the quiet steadiness you showed your family while they slept."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Seen as less",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 151,
+   "llm": 5160,
+   "total": 12371,
+   "select": 7054
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You have managed people before. Now you drive through the cold Canadian night, and you feel you have become smaller than who you are. You are grieving the present, and you are ashamed of the shape it has taken."
+  ],
+  [
+   "scene",
+   "On the battlefield, Arjuna has laid down his weapons. He is overwhelmed by grief and confusion over his duty. Krishna sees him and replies: And Krishna said:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna tells Arjuna to do the work born of his own nature, even if it is imperfect. The truth here is that every path has flaws. The wrong is not in the flaw, but in abandoning the work that fits you. When you do your own work, flaws and all, you do not incur spiritual wrong."
+  ],
+  [
+   "for_you",
+   "You are driving through a country that does not know your name. That path is yours, imperfect as it feels right now. Do the work of this life, the driving and the building, as your own offering. Let the cold be cold, and let the work be yours."
+  ],
+  [
+   "close",
+   "Your own work is your own offering."
+  ]
+ ],
+ "depth": {
+  "life": "You are driving through the dark in a country that does not know your name. The life you handed your family is not the one they wanted, and the one they see is not the one you built. You are physically home but not present, and your wife cries about the cold.",
+  "points": "What you are cannot be made smaller by what Canada sees. The root cause is being seen as less than you are, but the smallness is theirs, not yours. You are being handed a smaller picture of yourself than the one you live.",
+  "practice": "When you are driving, name one quality you used to manage people, and let it rest in the silence of the road without fixing anything.",
+  "question": "What does it feel like to be seen as less than you are?"
+ }
+}

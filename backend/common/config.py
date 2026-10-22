@@ -24,6 +24,14 @@ class Settings(BaseSettings):
     sarvam_api_key: str = ""
     sarvam_model: str = "sarvam-105b"
 
+    # ── Models per role (ai/llm_providers.py): "sarvam" (default), "openai:<model>", "gemini:<model>" ──
+    llm_reader: str = ""                 # the reading of the person
+    llm_writer: str = ""                 # plan lines, audio script, go deeper
+    llm_rerank: str = ""                 # hook / story / week checks
+    llm_reasoning: str = "minimal"       # reasoning effort for reasoning models on the user-facing path
+    openai_api_key: str = ""
+    openai_base_url: str = ""
+
     # ── Data directory (self-contained; no sanscripts dependency) ────────────
     # Directory containing embeddings.npy and verses.json.
     data_dir: str = "./data"
@@ -45,10 +53,10 @@ class Settings(BaseSettings):
     # Day 1 is a Gita verse. With this on, when no Gita candidate speaks to their situation (the rerank's best
     # Gita score under day1_gita_floor) and a verse from another text clearly does (+day1_other_margin), that
     # verse opens the plan instead. Off by default: "Bhagavad Gita tuned to your life" is the promise.
-    day1_other_texts: bool = False
-    day1_gita_floor: float = 0.55
-    day1_other_margin: float = 0.2
-    for_you_timeout_s: float = 9.0       # "What it says" + "For you" under each plan day (parallel calls per week)
+    day1_other_texts: bool = False       # tried on 21-22 Oct 2026: the other texts lack the Gita's curation and surfaced wounding Day 1 lines; off
+    day1_gita_floor: float = 0.6         # the Gita opens the plan unless its best hook scores under this on the fit rerank...
+    day1_other_margin: float = 0.25      # ...and a verse from another text beats it by this much
+    for_you_timeout_s: float = 14.0      # "What it says" + "For you" under each plan day (parallel calls per week, one rewrite round)
     # "Listen" on a plan day (server/narration.py): a storyteller narrator in English, and a devotional
     # reciter for the verse in its own language (Devanagari read in Hindi script mode, a little slower).
     tts_model: str = "bulbul:v4-flash"

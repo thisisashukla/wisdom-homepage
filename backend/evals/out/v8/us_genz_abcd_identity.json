@@ -1,0 +1,485 @@
+{
+ "persona": {
+  "id": "us_genz_abcd_identity",
+  "market": "USA (New Jersey)",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "21, Indian-American senior at Rutgers, born in NJ. Parents from Gujarat. Dating a white classmate; hasn't told parents. Feels neither fully Indian nor American.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "my parents keep asking when I'll 'settle down with a nice Gujarati boy' and I've been with my boyfriend for 2 years and he's not Indian. I feel like whichever way I go I lose a part of me",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "torn and shrinking",
+   "bridge": "The life they keep offering you is a borrowed one. The texts say a borrowed life is the most dangerous kind, because it is not yours to live.",
+   "week_thesis": "Seven days from being asked to choose to standing in the truth of the life you have already built.",
+   "week_beats": {
+    "hook": "You recognise being asked to choose and the anger of it, named without blame."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.5,
+   "core_struggle": "Her parents keep asking when she'll settle down with a Gujarati boy, and she feels she will lose a part of herself no matter what she chooses.",
+   "mirror": "Two years with the man you chose, and the question is still the one they expected you to already answer.",
+   "insight": "You are not being asked to choose. You are being asked to become smaller so they can feel at home in the life they imagined for you.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "expectation_of_others",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 2.094,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.114,
+     "source": "note"
+    },
+    {
+     "id": "interfaith",
+     "label": "Faith differences in my relationship",
+     "weight": 0.689,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.59,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being asked to choose between the life you built and the life they imagined for you, and the anger of having to shrink to fit either. My parents' expectations weigh on me.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A young woman of learning and standing, dismissed by her own people, who questioned them openly and stood in her truth until they had no answer."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Caught between two",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "llm_stance_missing",
+    "stance_inferred:str=0.45,asp=0.3,wro=0.2,see=0.05",
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "week_fit:47=0.3,11=0.6,6=0.6,84=0.6,7=0.3,532=0.3",
+    "week_fit:swapped=3",
+    "retried:1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 3.0093,
+     "beat": "hook",
+     "role_fit": 0.0,
+     "meaning": "Krishna speaks to Arjuna, who is standing in a chariot on a battlefield, trying to decide whether to fight his own family. Krishna tells him that it is better to live your own truth, even if you stumble, than to wear a perfect mask that belongs to someone else. A borrowed life is the most dangerous kind to live, because it is not yours to carry.",
+     "for_you": "You are being asked to choose between a life they imagined for you and the one you are building. The anger you feel is real. It is better to walk your own path, even if it is messy, than to step into a borrowed life that slowly makes you smaller."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 2.9094,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama, in the middle of his grief, asks where the real enemy lives. He says our own senses turn against us and truth feels untrue. The self strikes the self. The mind becomes its own enemy. This is a question, not an answer. It names the emptiness you feel. It shows that the hurt is real and personal. It asks you to see the pattern underneath the pain.",
+     "for_you": "You feel yourself shrinking. That shrinking is real. It is not a failure. It is the mind becoming its own enemy, turning your own voice into a threat. See it for what it is, not as a verdict on who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.6.21.6",
+     "ref": "Valmiki Ramayana · Yuddha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 21.6",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram has lain on the shore for three days asking the ocean for a way across. No answer comes.",
+     "sanskrit": "अवलेपः समुद्रस्य न दर्शयति यः स्वयम्। प्रशमश्च क्षमा चैव आर्जवं प्रियवादिता॥ असामर्थ्यफला ह्येते निर्गुणेषु सतां गुणाः।",
+     "line": "Calm, patience, honesty and kind words: people who don't value them will read them as weakness.",
+     "translation": "See the ocean's arrogance: he does not even show himself. Calm, forbearance, straightforwardness and gentle speech, these virtues of the good, are taken by the unworthy as signs of weakness.",
+     "why": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+     "misuse": "Firmness only after real patience, and only toward someone who keeps ignoring you. When the ocean finally came, Ram listened and redirected the arrow.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ocean_humility_firmness",
+      "title": "Ram at the ocean: humble first, firm after",
+      "summary": "Ram lies on kusha grass by the shore for three days, asking the ocean for a way. Ignored, he tells Lakshman that patience is being taken for weakness and takes up his bow. The ocean rises, offers a way (Nala's bridge), and Ram releases the arrow elsewhere at its request.",
+      "story_hook": "For three days the prince lay on a bed of grass at the edge of the sea, asking politely.",
+      "lesson": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard."
+     },
+     "score": 3.2539,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ram lies on the shore for three days, asking the ocean how to cross. The ocean does not answer. Ram tells Lakshman that calm and gentle speech, when ignored, are read as weakness by the unworthy. The point is to be humble first. If humility is mistaken for weakness, then act firmly, and stop once you have been heard.",
+     "for_you": "Your parents hear your calm and shrink it. Let them see it as weakness if they must, but do not let it become your truth. When they ask again, speak once, clearly. Then let the silence be yours."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2034,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to the reader about what it means to stay on the right path. People will praise you or blame you. Money will come or go. Death might arrive today or in ages. Through all of this, the steady person does not step off the path of what is right.",
+     "for_you": "Your parents want you to choose a life that fits their picture. The steady path is to keep walking the one you are already on, even when they ask you to shrink."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.2034,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna speaks to Arjuna about three kinds of austerity. The first is speech that causes no distress, that is true, pleasant and beneficial, and the regular study of sacred texts. This is called the austerity of speech. It is a discipline of words.",
+     "for_you": "choose one moment to speak your truth without cruelty. Let your words be true, kind and helpful. This is the discipline of speech."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.1059,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Ram has just watched Hanuman, a stranger, calm an exiled king with words that were clear and even. Hanuman did not rush or strain. His speech was steady and true, and it built trust in a moment. Ram sees that when fear jumps ahead, a calm and measured voice is what cuts through it. The verse says that kind of speech is its own discipline. It is not about hiding what you feel. It is about letting your words land with care so the truth inside them can be heard.",
+     "for_you": "When your parents ask about settling down, let your answer be clear and even. You do not need to shrink or rush to please them. Speak the truth of what you need, simply, so they can hear the person you are becoming."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.brihad.gargi",
+     "title": "Gargi questions Yajnavalkya at Janaka's court",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Yajnavalkya",
+      "Gargi Vachaknavi",
+      "Janaka",
+      "Kahola"
+     ],
+     "story_hook": "In a hall full of the most learned men in the land, one woman stood up twice.",
+     "summary": "King Janaka offers a thousand cows to the wisest scholar. Yajnavalkya claims them and is challenged by one learned man after another. Gargi, the only woman, rises twice like a warrior with two arrows, then graciously tells the hall none of them can beat him. Yajnavalkya closes by asking what root a person grows from when cut down by death.",
+     "lesson": "Ask your hard questions bravely, and give credit where it is due.",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "anchor": {
+      "id": "up_brihadaranyak.283",
+      "ref": "Brihadaranyaka Upanishad 3.5.1",
+      "ref_iast": "Bṛhadāraṇyaka Upaniṣad 3.5.1",
+      "family": "up",
+      "speaker": "Yajnavalkya",
+      "listener": "Kahola",
+      "setting": "At King Janaka's debate, Kahola asks about the self.",
+      "sanskrit": "या ह्येव पुत्रैषणा सा वित्तैषणा या वित्तैषणा सा लोकैषणोभे ह्येते एषणे एव भवतस्तस्माद्ब्राह्मणः पाण्डित्यं निर्विद्य बाल्येन तिष्ठासेत् । बाल्यं च पाण्डित्यं च निर्विद्याथ मुनिरमौनं च मौनं च निर्विद्याथ ब्राह्मणः ।",
+      "line": "Wanting children, wanting money, wanting status: it is one desire. Learn, then live with a child's simplicity.",
+      "translation": "The desire for sons is the desire for wealth, and the desire for wealth is the desire for worlds; both are just desires. So a wise man, having done with learning, should seek to live like a child. Having done with both childlike simplicity and learning, he becomes a sage; having done with both silence and its absence, he becomes a true knower.",
+      "why": "Ask your hard questions bravely, and give credit where it is due.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "up.p.brihad.gargi",
+       "title": "Gargi questions Yajnavalkya at Janaka's court",
+       "summary": "King Janaka offers a thousand cows to the wisest scholar. Yajnavalkya claims them and is challenged by one learned man after another. Gargi, the only woman, rises twice like a warrior with two arrows, then graciously tells the hall none of them can beat him. Yajnavalkya closes by asking what root a person grows from when cut down by death.",
+       "story_hook": "In a hall full of the most learned men in the land, one woman stood up twice.",
+       "lesson": "Ask your hard questions bravely, and give credit where it is due."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Gargi, the only woman in the hall, stood up twice to question the wisest man there",
+     "teaser": "Gargi, the only woman in the hall, stood up twice to question the wisest man there",
+     "for_you": "Gargi asked the hardest questions in a room of men and then gave them credit. You can ask your parents why they need you to be smaller, and you can still honor their love. You do not have to choose between them and the life you are building."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Caught between two",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 168,
+   "llm": 3539,
+   "total": 13113,
+   "select": 9399
+  }
+ },
+ "script": [
+  [
+   "open",
+   "Your phone is in your hand right now, and the weight of their questions is sitting in your chest. You are not choosing between two people. You are shrinking to make room for a life they imagined for you."
+  ],
+  [
+   "scene",
+   "Krishna speaks to Arjuna, who is standing in a chariot on a battlefield, trying to decide whether to fight his own family. Krishna tells him that it is better to live your own truth, even if you stumble, than to wear a perfect mask that belongs to someone else. A borrowed life is the most dangerous kind to live, because it is not yours to carry. Krishna said:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वधर्मे निधनं श्रेयः परधर्मो भयावहः."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous."
+  ],
+  [
+   "unpack",
+   "This is about the ego. When you copy another's path, your ego takes credit for it. But a borrowed life is dangerous because it does not fit your nature. You will stumble. The text says death in your own duty is better than living another's. It is not about running away. It is about being true to the life you are building, even when it is messy."
+  ],
+  [
+   "for_you",
+   "The next time they ask about settling down, do not argue. Just say you are focused on your own path right now. Let their question sit. You do not need to defend your choices today."
+  ],
+  [
+   "close",
+   "What part of you feels the smallest when they speak?"
+  ]
+ ],
+ "depth": {
+  "life": "Your parents are not asking you to choose. They are asking you to become smaller. You feel torn because every time you try to grow, they pull you back into the shape they imagined. You shrink to keep the peace, but the peace costs you a part of yourself.",
+  "points": "The text says a borrowed life is dangerous because it is not yours to live. It is a role you perform for others, and it slowly erases who you are. Your own path, even if it is messy and imperfect, is the only one that is truly yours.",
+  "practice": "Sit with your phone and notice when you shrink. Just name it to yourself. You do not have to fix it today.",
+  "question": "What would it feel like to take up one small inch of space today?"
+ }
+}

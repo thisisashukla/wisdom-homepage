@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { getAllTopics, getTopic, getTopicVerses, topicIntro, topicUrl, verseUrl } from '@/lib/gita'
 // GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
 // for the Scripture AI waitlist while that product launches.
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import BlogTracker from '@/components/BlogTracker'
 
 type Params = { slug: string }
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const aliasString = aliases && aliases.length > 1
     ? ` (also spelled ${aliases.filter(a => a.toLowerCase() !== topic.label.toLowerCase()).join(', ')})`
     : ''
-  const title = `${cap} in the Bhagavad Gita — ${topic.verseCount} Verses with Meaning | Wisdom`
+  const title = `${cap} in the Bhagavad Gita — ${topic.verseCount} Verses with Meaning`
   const description = `${topic.verseCount} Bhagavad Gita verses on ${topic.label}${aliasString}, in Sanskrit, Hindi and English. The Gita's teaching on ${topic.label}, drawn from across all chapters.`
   return {
     title,
@@ -171,7 +171,7 @@ export default async function TopicPage({ params }: { params: Params }) {
         ))}
       </ul>
 
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName="Gita Topic" />
+      <VerseFunnelCTA variant="chapter" locale="en" pageName="Gita Topic" />
     </main>
   )
 }

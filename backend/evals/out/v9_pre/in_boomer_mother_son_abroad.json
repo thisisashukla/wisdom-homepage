@@ -1,0 +1,500 @@
+{
+ "persona": {
+  "id": "in_boomer_mother_son_abroad",
+  "market": "India (Chennai)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "63, retired school principal in Chennai, husband alive, only son in Germany for 9 years with a German wife, visits every 2 years. Hindi is weak; English and Tamil.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "far_from_home"
+  },
+  "note": "my son has been in germany nine years. his wife is german, lovely girl. they will not come back I know this. I taught 2000 children and I cannot teach my own heart to stop waiting for him",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "restless and waiting",
+   "bridge": "The waiting your heart does for your son is what the Upanishads call love with nowhere to go, and they teach that what does not pass is not lost.",
+   "week_thesis": "The restlessness is not the waiting but the belief that love must be answered to be real. What the texts offer is a love that does not depend on a return.",
+   "week_beats": {
+    "hook": "You recognise the restlessness and the waiting, named without asking you to stop.",
+    "diagnose": "You see that grief is love with nowhere to go, and that the waiting is not the bond itself.",
+    "steady": "You hold that what is real in you cannot be lost, and the love that shaped you is still here.",
+    "act": "You try one act of turning your teaching toward your own heart, and one thing each day for the life that is here.",
+    "story": "A father who waited shows you that the love he gave had already shaped a life he could keep."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.75,
+   "core_struggle": "A retired teacher whose son has been in Germany for nine years; he knows he will not return, yet his heart cannot stop waiting.",
+   "mirror": "You taught two thousand children, and now your own heart will not settle.",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "raising_kids_values",
+     "label": "How do I pass on our values to my kids abroad",
+     "weight": 0.42,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The restlessness of a heart that knows it will not be answered yet cannot stop waiting; the ache of love with nowhere to go. My parents are getting older far away.",
+    "diagnose": "Grief is love with nowhere to go; the heart aches because what came together must part, and the bond was real, but the waiting is not the bond.",
+    "steady": "What is real in us cannot be lost; the love that shaped you is not gone because the one you loved is far away.",
+    "act": "Let the waiting be what it is, and turn your teaching toward the heart that still needs it; do one thing each day for the life that is here, not the one that is far.",
+    "story": "A father who waited for his son to return, and in the waiting found that the love he gave had already shaped a life that was his to keep."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Love with nowhere to go",
+    "What is real in you",
+    "The life you keep"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "retired and living alone",
+    "son has been in Germany for nine years"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "mechanism:grief_without_death",
+    "hook:anchored_to_situation",
+    "insight:template",
+    "week_fit:34=0.6,14=0.6,39=1.0,193=1.0,1=0.6,15=0.6",
+    "retried:2",
+    "redo:3",
+    "redo_fixed:1",
+    "dropped:fallback_line=1,invented_name=2,missing=1,repeat=1",
+    "for_you:6/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 1.7793,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna stands before Krishna and admits his mind will not settle. It is restless, turbulent, powerful and stubborn, as hard to hold as the wind. Krishna hears this and agrees. The mind is indeed difficult to restrain, he says, but through practice and letting go it can be trained. The truth is not that the mind must be conquered by force, but that it can be steadied by returning to the present, again and again.",
+     "for_you": "You sit in your home and feel the waiting rise like a storm you cannot stop. Your mind races ahead to what might never happen. This is not a failure in you. The mind is simply doing what it does, hard to hold. You do not need to force it still."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 2.9138,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "Kausalya has just spoken hard words to Dasharatha after he exiled Ram. Now she sees what grief did. She tells him that grief wears away your steadiness and your judgement. There is no enemy like it. It destroys everything. The verse asks you to see that your own restless waiting is grief with nowhere to go, and that the waiting is not the bond itself.",
+     "for_you": "Your heart waits for your son, but the waiting is not the love. The restlessness you feel is grief wearing away your steadiness. The bond you share is not in his reply. It is in the love that shaped you both and is still here."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.5.26.39",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 26.39",
+     "family": "vr",
+     "speaker": "Sita",
+     "listener": "herself",
+     "setting": "Alone in captivity, Sita fears Ram has forgotten her, then reassures herself.",
+     "sanskrit": "दृश्यमाने भवेत् प्रीतिः सौहृदं नास्त्यदृश्यतः। नाशयन्ति कृतघ्नास्तु न रामो नाशयिष्यति॥",
+     "line": "'Out of sight, out of mind' is true only of the ungrateful. Real love survives distance.",
+     "translation": "Love lasts while someone is in sight; out of sight, affection fades. But that is the way of the ungrateful. Ram will not let it fade.",
+     "why": "Hold on to love across distance; hope can arrive from unexpected people.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sita_captivity_hope",
+      "title": "Sita in captivity",
+      "summary": "Guards threaten Sita day and night. She fears Ram has forgotten her, then reminds herself that out of sight is out of mind only for the ungrateful. The guard Trijata dreams of Ram's victory, and good omens begin to appear.",
+      "story_hook": "She had been alone in the grove for ten months, surrounded by guards who mocked her every day.",
+      "lesson": "Hold on to love across distance; hope can arrive from unexpected people."
+     },
+     "score": 3.0897,
+     "beat": "steady",
+     "role_fit": 0.42,
+     "meaning": "Sita, held in captivity, fears that Ram has forgotten her. She speaks to herself, saying that 'out of sight, out of mind' is true only of the ungrateful. Real love survives distance, she says, and Ram will not let it fade. She reminds herself that hope can arrive from unexpected people, and she holds on to the love that crosses the miles.",
+     "for_you": "What is real in you cannot be lost. The love that shaped you is still here, even across nine years and the ocean. Hold on to that, and let it steady you while the waiting remains."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.193",
+     "ref": "Rahim doha 193",
+     "ref_iast": "Rahīm dohā 193",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on remembrance.",
+     "sanskrit": "रहिमन सुधि सबते भली, लगै जो बारम्बार। बिछुरे मानुष फिरि मिलैं, यहै जानि अवतार॥",
+     "line": "Remembering is a kind of nearness. People who were parted do meet again.",
+     "translation": "Rahim says: remembering is best of all, when it comes again and again. People who were separated meet again; know that this is why God takes birth.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "homesick",
+       "label": "I'm homesick"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9007,
+     "beat": "steady",
+     "role_fit": 0.495,
+     "meaning": "Rahim is writing to you from a quiet room, after years of living. They tell you that remembering is a kind of nearness. People who were parted do meet again, and this is why God takes birth. They say that when memory comes again and again, it is the best of all. They mean that the love which shaped you is not a thing that vanishes. It is a living presence that does not need a return address to stay real.",
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.2871,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "Today, turn one small part of your teaching toward your own heart, and do one thing for the life that is right here."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.174.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.15",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "his father",
+     "setting": "A young man named Medhavin urges his father not to keep postponing what truly matters.",
+     "sanskrit": "श्वः कार्यमद्य कुर्वीत पूर्वाह्णे चापराह्णिकम् / नहि प्रतीक्षते मृत्युः कृतमस्य न वा कृतम्",
+     "line": "Do tomorrow's work today, and the afternoon's in the morning. Time doesn't wait for you to be ready.",
+     "translation": "Do tomorrow's work today, and the afternoon's work in the morning. Death does not wait to see whether your work is done or not.",
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "About not postponing what matters, not about working nonstop.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 3.1238,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "Medhavin speaks to his father about the arrows of time. His father plans for a long life of study and ritual, but Medhavin says the days and nights fall like arrows and death takes people mid-task. He urges him to do tomorrow's work today and the afternoon's in the morning, because death does not wait for your work to be done. Life slips away while we stay busy. The truth is that what matters must be done now, not later.",
+     "for_you": "You taught others to act with purpose. Now turn that same teaching toward your own waiting. Do one small thing today that belongs to the life you are actually living, not the one you fear might come."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": null
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Love with nowhere to go",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 248,
+   "llm": 4345,
+   "total": 11045,
+   "select": 6445
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You sit in your home and the waiting rises. Your mind races ahead to what might never happen. This is not a failure in you. Your mind is simply doing what it does, hard to hold."
+  ],
+  [
+   "scene",
+   "Arjuna stands before Krishna and admits his mind will not settle. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "The mind is hard to hold, but practice and letting go train it. This is easier said than done, because your mind will keep running to the future. It will tell you he is not coming back and that you are alone. You do not need to conquer it by force. You only need to return to the present, again and again, and let the storm pass."
+  ],
+  [
+   "for_you",
+   "When the waiting rises today, do not fight it. Just notice where your feet are. Feel the chair under you and let the thought go. That is your practice."
+  ],
+  [
+   "close",
+   "Your love does not need an answer to be real."
+  ]
+ ],
+ "depth": {
+  "life": "You sit in your quiet home and feel the waiting rise like a storm you cannot stop. Your mind races ahead to what might never happen. This is not a failure in you. The mind is simply doing what it does, hard to hold.",
+  "points": "The mind is restless, turbulent and strong by nature. Holding it feels like trying to catch the wind. Practice and letting go are what train it, not force.",
+  "practice": "Sit without an agenda for five minutes and watch the thoughts come and go without grabbing them.",
+  "question": "What does the mind do when you stop trying to hold it?"
+ }
+}

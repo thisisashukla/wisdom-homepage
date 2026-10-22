@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita for Students — Key Verses on Focus, Exam Stress & Effort (Exam-Ready Summary) | Wisdom",
+  title: "Bhagavad Gita for Students — Key Verses on Focus, Exam Stress & Effort (Exam-Ready Summary)",
   description: "The Gita was taught to someone who froze under pressure right before the biggest test of his life. 9 key verses for students — focus, exam stress, results anxiety, effort, and the restless mind — with Sanskrit, meaning and application.",
   keywords: "bhagavad gita for students, bhagavad gita lessons for students, bhagavad gita on focus, bhagavad gita exam stress, bhagavad gita student life, bhagavad gita on effort and results, bhagavad gita study tips, bhagavad gita for youth, bhagavad gita on discipline",
   openGraph: {
@@ -786,12 +787,12 @@ export default function GitaForStudentsPage() {
     </div>
 
     <div className="content">
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagavad Gita For Students"} />
+      <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagavad Gita For Students"} />
     </div>
 
     <footer>
-      <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-      <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+      <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+      <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
     </footer>
 
     <BlogTracker pageName="Bhagavad Gita For Students" />

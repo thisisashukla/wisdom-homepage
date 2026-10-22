@@ -1,0 +1,483 @@
+{
+ "persona": {
+  "id": "au_genx_divorce",
+  "market": "Australia (Melbourne)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "44, dentist in Melbourne, from Chandigarh originally, separated 6 months ago, kids with ex 4 days a week. Parents in India don't know yet.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely and waiting for the noise to stop",
+   "bridge": "The quiet house and the TV you leave on to fill it is what the texts call the mind running after results it cannot hold: noise to keep the grief from arriving.",
+   "week_thesis": "This week moves you from hiding the separation to naming the quiet and the TV, and holding that your truth is not theirs to approve.",
+   "week_beats": {
+    "hook": "You recognise the quiet house and the TV you leave on to fill it, named without judgement.",
+    "diagnose": "You see that the harm is not the separation but the hiding, and that their picture of you is their smallness."
+   },
+   "confidence": 0.7,
+   "core_struggle": "A separated mother who sees her children three nights a week is hiding the separation from her parents and fills the quiet house with noise.",
+   "mirror": "You see your children three nights a week, and the house is so quiet on the other nights that you leave the TV on.",
+   "insight": "Your mind isn't broken. It was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.395,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.11,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "breakup",
+     "label": "I'm heartbroken after a breakup",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "I'm physically home but not present with my kids. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A woman who was left by her husband, with children to raise alone, who questioned her family and stood in her truth until they had no answer."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet house",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "separated six months ago",
+    "leaves the TV on in the quiet house"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "hook:hook_gives_advice",
+    "insight:template",
+    "retried:2",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:copied=1,fallback_line=2,missing=2",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:for_you=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.67",
+     "ref": "Bhagavad Gita 2.67",
+     "ref_iast": "Bhagavad Gītā 2.67",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते । तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥",
+     "line": "When the mind chases a wandering sense, it is swept off like a boat in the wind.",
+     "translation": "When the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.4915,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Arjuna asks Krishna what a steady person looks like. Krishna says they are content within, unshaken by sorrow, and master of their senses. Then he warns that when the mind chases after what the senses wander toward, it is swept away like a boat in the wind, carrying understanding with it.",
+     "for_you": "You are not the mind; thoughts come and go before the silent witness that watches them and is never disturbed."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.1172,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama asks where the true enemy lies, and answers that our own senses are our enemies. He says the self strikes the self, and the mind becomes the mind's own enemy. This is a lament, a question of despair, not a final verdict.",
+     "for_you": "Yesterday's verse named the grip. Today, see that the harm is not the separation, but the hiding. Your picture of yourself is their smallness. The noise is not the enemy. The silence you fear is what you are truly avoiding."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.6.21.6",
+     "ref": "Valmiki Ramayana · Yuddha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 21.6",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram has lain on the shore for three days asking the ocean for a way across. No answer comes.",
+     "sanskrit": "अवलेपः समुद्रस्य न दर्शयति यः स्वयम्। प्रशमश्च क्षमा चैव आर्जवं प्रियवादिता॥ असामर्थ्यफला ह्येते निर्गुणेषु सतां गुणाः।",
+     "line": "Calm, patience, honesty and kind words: people who don't value them will read them as weakness.",
+     "translation": "See the ocean's arrogance: he does not even show himself. Calm, forbearance, straightforwardness and gentle speech, these virtues of the good, are taken by the unworthy as signs of weakness.",
+     "why": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+     "misuse": "Firmness only after real patience, and only toward someone who keeps ignoring you. When the ocean finally came, Ram listened and redirected the arrow.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.ocean_humility_firmness",
+      "title": "Ram at the ocean: humble first, firm after",
+      "summary": "Ram lies on kusha grass by the shore for three days, asking the ocean for a way. Ignored, he tells Lakshman that patience is being taken for weakness and takes up his bow. The ocean rises, offers a way (Nala's bridge), and Ram releases the arrow elsewhere at its request.",
+      "story_hook": "For three days the prince lay on a bed of grass at the edge of the sea, asking politely.",
+      "lesson": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard."
+     },
+     "score": 3.2083,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Rama has lain on the shore for three days, asking the ocean for a way. He tells Lakshman that patience and gentle speech are taken by the unworthy as weakness. He then takes up his bow, and the ocean rises to offer a way.",
+     "for_you": "Be humble first. When your quiet is read as weakness, act firmly. Stop once you are heard. The truth is not theirs to approve. You have already named the quiet. Now name it again, and let the silence stand."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.1528,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher is laying out the rules for a person who has stepped away from ordinary life. The teacher says do not exhaust the body chasing pleasure or running from pain. If someone praises you, do not swell with pride. If they blame you, do not turn and curse them in return. The idea is to keep the body steady and the mind from swinging between extremes.",
+     "for_you": "The TV is the body running from the pain of the quiet. Let it stay on for now. When a thought about the separation comes, do not curse it or yourself. Just let the mind rest without fighting the noise or the silence."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.4593,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu tells Nidagha how a free person moves through the world. Ribhu says to let go of what is lost and take up what comes. Do the work in front of you and speak gently. See friend and foe alike without wanting or not wanting. Such a one does not grieve or crave. They know the intent of others' hearts and do not sink in the world. This is the way to live fully while staying unhurried inside.",
+     "for_you": "The TV is on in the quiet house because your mind is still chasing what it cannot hold. Let the work in front of you be your focus today. Sit with the children and do not try to outrun the quiet. Let your mind rest in the moment without needing to fill it."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.314.114",
+     "ref": "Mahabharata · Vana Parva · Yaksha Prashna",
+     "ref_iast": "Mahābhārata, Vana Parva 314.114–115",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "the Yaksha (Dharma in disguise)",
+     "setting": "At a poisoned lake, a Yaksha quizzes Yudhishthira; his brothers' lives hang on the answers.",
+     "sanskrit": "प्रियवचनवादी किं लभते / विमृशितकार्यकरः किं लभते / बहुमित्रकरः किं लभते / धर्मे रतः किं लभते कथय ॥ प्रियवचनवादी प्रियो भवति / विमृशितकार्यकरोऽधिकं जयति / बहुमित्रकरः सुखं वसति / यश्च धर्मरतः स गतिं लभते",
+     "line": "Speak kindly and you'll be loved; think before acting and you'll win more; make friends and live happily.",
+     "translation": "Yaksha: 'What does one gain by speaking kindly? By acting after careful thought? By making many friends? By devotion to what is right?' Yudhishthira: 'One who speaks kindly is loved; one who acts after careful thought wins more; one with many friends lives happily; one devoted to what is right reaches the goal.'",
+     "why": "Answer life's questions with a steady mind, and let kindness outweigh advantage.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yaksha_prashna",
+      "title": "Yaksha Prashna: the questions at the lake",
+      "summary": "One by one, four Pandavas drink from a lake against a voice's warning and fall dead. Yudhishthira answers the Yaksha's riddles instead, and when offered one brother's life, chooses his stepmother's son Nakula, out of fairness.",
+      "story_hook": "Four brothers lay dead by a clear lake, and the voice that killed them was asking Yudhishthira riddles.",
+      "lesson": "Answer life's questions with a steady mind, and let kindness outweigh advantage."
+     },
+     "score": 3.2442,
+     "beat": "act",
+     "role_fit": 0.638,
+     "meaning": null,
+     "for_you": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sita_left_in_forest",
+     "title": "Sita left in the forest",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Lakshman",
+      "Sita",
+      "Valmiki"
+     ],
+     "story_hook": "Lakshman stopped the chariot at the river and could not bring himself to say why.",
+     "summary": "Hearing that people gossip about Sita's time in Lanka, Ram orders Lakshman to leave her, pregnant, near Valmiki's hermitage. Lakshman obeys in anguish. Sita grieves that she is cut off from everyone and slandered though innocent. Valmiki finds her, says he knows she is blameless, and tells her to treat his home as her own.",
+     "lesson": "Injustice from those we love is real grief; a stranger's kindness can become home.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "vr.7.48.14",
+      "ref": "Valmiki Ramayana · Uttara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Uttara Kāṇḍa 48.14",
+      "family": "vr",
+      "speaker": "Sita",
+      "listener": "Lakshman (message for Ram)",
+      "setting": "Abandoned because of gossip, Sita sends a message back to Ram.",
+      "sanskrit": "अहं तु नानुशोचामि स्वशरीरं नरर्षभ॥ यथापवादः पौराणां तथैव रघुनन्दन।",
+      "line": "It isn't the hardship I mind most. It's what people are saying that wasn't true.",
+      "translation": "I do not grieve for myself, best of men, so much as for the slander the people are spreading.",
+      "why": "Injustice from those we love is real grief; a stranger's kindness can become home.",
+      "misuse": "Sita is the one wronged here; the verse names unjust gossip, not her fault.",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.sita_left_in_forest",
+       "title": "Sita left in the forest",
+       "summary": "Hearing that people gossip about Sita's time in Lanka, Ram orders Lakshman to leave her, pregnant, near Valmiki's hermitage. Lakshman obeys in anguish. Sita grieves that she is cut off from everyone and slandered though innocent. Valmiki finds her, says he knows she is blameless, and tells her to treat his home as her own.",
+       "story_hook": "Lakshman stopped the chariot at the river and could not bring himself to say why.",
+       "lesson": "Injustice from those we love is real grief; a stranger's kindness can become home."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Lakshman stopped the chariot at the river and couldn't tell Sita why",
+     "teaser": "Lakshman stopped the chariot at the river and couldn't tell Sita why",
+     "for_you": "You are not wrong to grieve the injustice of your separation. Let the quiet house be what it is, and let a stranger's kindness be the quiet that stays."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet house",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 282,
+   "llm": 4413,
+   "total": 14101,
+   "select": 9400
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting in a house that is too quiet. You have the television on, but it is not really company. It is a wall of sound to keep something else from getting in. You are waiting for the noise to stop, but the noise is not the problem."
+  ],
+  [
+   "scene",
+   "On the battlefield, Arjuna stands in a state of deep despair. They ask Krishna what a person of steady mind looks like, how they speak, sit, and walk. Krishna answers that this person is content within, unshaken by sorrow, and master of their senses. Then Krishna turns to a warning:"
+  ],
+  [
+   "sanskrit",
+   "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते, तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि."
+  ],
+  [
+   "line",
+   "In plain words: When the mind chases a wandering sense, it is swept off like a boat in the wind."
+  ],
+  [
+   "unpack",
+   "Krishna is not saying the senses are bad. The senses are just doing what senses do. The problem is the mind running after them. When your attention chases the next sound, the next distraction, it is not resting. It is being swept off. This is what happens when a mind is not taught to stop. It runs long after you have asked it to. This is easier said than done, because a mind that has been running for a long time does not know how to sit still."
+  ],
+  [
+   "for_you",
+   "For you, today. You are not the mind. Thoughts come and go before the silent witness that watches them and is never disturbed."
+  ],
+  [
+   "close",
+   "What if the quiet was not an enemy to be outrun?"
+  ]
+ ],
+ "depth": {
+  "life": "You are in the quiet house with the TV on, and the noise is keeping you company while your mind keeps running. You are waiting for the noise to stop, but the real noise might be the thoughts you are trying to outrun.",
+  "points": "The mind is not the boat. It is the boat in the wind. When it chases the roving senses, it is swept away. You are trying to hold the boat still, but the wind is your own attention, and it is running after results it cannot hold.",
+  "practice": "Sit in the quiet for one minute. Notice the thoughts that come, and let them pass without chasing them.",
+  "question": "What would it feel like to let the boat drift for a moment?"
+ }
+}

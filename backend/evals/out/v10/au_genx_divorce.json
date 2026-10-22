@@ -1,0 +1,522 @@
+{
+ "persona": {
+  "id": "au_genx_divorce",
+  "market": "Australia (Melbourne)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "44, dentist in Melbourne, from Chandigarh originally, separated 6 months ago, kids with ex 4 days a week. Parents in India don't know yet.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely and quietly ashamed",
+   "bridge": "The quiet house and the secret you keep from Chandigarh are what the Gita calls a borrowed life: not the one you chose, and not the one that can be taken from you.",
+   "week_thesis": "From the quiet house and the secret you keep to a place where the silence is not a verdict on you, but a space where what was real can be felt.",
+   "week_beats": {
+    "hook": "You recognise the quiet house and the secret from Chandigarh, named without judgement.",
+    "diagnose": "You see that the grief is for the life you were told you would have, and that the silence is where it used to be.",
+    "steady": "You hold that the love that built the family is still yours, and it is not diminished by the shape it now takes.",
+    "act": "You try sitting with the quiet for one night, letting it be what it is, and not filling it.",
+    "story": "A mother who lost her home and her standing shows you what it looks like to let the silence be what it is."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "friend",
+    "partner",
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A mother in a quiet house on the nights her children are not there, carrying the separation she has not told her parents about.",
+   "mirror": "You see your children three nights a week, and the other nights the house is so quiet you leave the television on.",
+   "insight": "It is not the separation that makes the house quiet. It is the life you were told you would have, which is no longer here, and the silence is where it used to be.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.99,
+     "source": "note"
+    },
+    {
+     "id": "breakup",
+     "label": "I'm heartbroken after a breakup",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.675,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet of a house on the nights your children are not there, and the secret you keep from the people who were supposed to know you best. I'm grieving someone I loved.",
+    "diagnose": "Grief is love with nowhere to go; when the life we were told we would have ends, the heart aches because the bond was real, and the silence is where it used to be.",
+    "steady": "What is real in us cannot be lost; the love that built the family you have is still yours, and it is not diminished by the shape it now takes.",
+    "act": "Let the silence be what it is for one night; sit with it, name what is missing, and do not reach for the television to fill a space that needs to be felt.",
+    "story": "A mother who lost her home and her standing, who carried her grief in a quiet house, and found the courage to let it be what it was."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet house",
+    "Grief with nowhere to go",
+    "What is real cannot be lost"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "separated six months",
+    "sees kids three nights a week",
+    "has not told parents in Chandigarh",
+    "house is quiet on nights kids are not there"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "hook:anchored_to_situation",
+    "week_fit:8=0.3,40=0.0,26=0.0,61=0.3,24=0.0,22=0.0",
+    "week_fit:swapped=6",
+    "retried:1",
+    "redo:3",
+    "redo_fixed:3",
+    "dropped:copied=1,invented=1,repeat=2,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:unpack=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.12.17",
+     "ref": "Bhagavad Gita 12.17",
+     "ref_iast": "Bhagavad Gītā 12.17",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna, describing the qualities of the person dear to God.",
+     "sanskrit": "यो न हृष्यति न द्वेष्टि न शोचति न काङ्क्षति । शुभाशुभपरित्यागी भक्तिमान्यः स मे प्रियः ॥",
+     "line": "Not swinging between thrill and hate, grief and craving, letting go of 'good' and 'bad' outcomes: dear to me.",
+     "translation": "One who neither rejoices nor hates, neither grieves nor craves, who has let go of both good and bad, and is full of devotion, is dear to me.",
+     "why": "Kindness without hatred, steadiness in praise and blame: that's what's loved.",
+     "misuse": "Not feeling grief is not the goal; the verse is about not being swept away by it.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p12.2",
+      "title": "The marks of one dear to God",
+      "summary": "Krishna lists the marks of one dear to him: no hatred, friendly and compassionate, forgiving, content, disturbing no one and disturbed by no one, the same in praise and blame.",
+      "story_hook": "",
+      "lesson": "Kindness without hatred, steadiness in praise and blame: that's what's loved."
+     },
+     "score": 2.0623,
+     "beat": "hook",
+     "role_fit": 0.165,
+     "meaning": "Krishna speaks to Arjuna about the one who is dear to God. The person does not swing between strong feelings, between loving something and hating it, between grieving and wanting. They let go of judging things as good or bad, and they stay steady. This is not about being empty. It is about not letting grief or craving pull them away from what is real.",
+     "for_you": "The quiet house and the secret you hold from Chandigarh are heavy. The verse asks you to stop judging your own life as good or bad right now. Let the silence be just silence. Do not let shame tell you what you could feel."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.104.16",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.16",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage Kalakavrikshiya consoles Prince Kshemadarshi, who has lost his kingdom and wealth.",
+     "sanskrit": "भूत्वा च न भवत्येतदभूत्वा च भविष्यति / शोके न ह्यस्ति सामर्थ्यं शोचेत स कथं नरः",
+     "line": "What was ends, and what wasn't begins. Grief has no power to change it.",
+     "translation": "What was, ceases to be; what was not, comes to be. Grief has no power to change this. Why then should anyone grieve?",
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "Feeling grief is human; the point is not to feed it endlessly.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 3.2072,
+     "beat": "diagnose",
+     "role_fit": 0.526,
+     "meaning": "Kalakavrikshiya speaks to Prince Kshemadarshi, who has lost his kingdom and wealth. The sage tells him that what was, ceases to be, and what was not, comes to be. Grief has no power to change this. Grief cannot restore what is gone. The wise person wants what is within reach and makes peace with others' success, rather than feeding endless sorrow.",
+     "for_you": "The quiet house and the secret you keep from Chandigarh are a borrowed life, not the one you chose. The silence is where the life you were told you would have used to be. Let the grief be human, but do not feed it endlessly."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.87",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 87",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "Closing verse of the section on steadfastness.",
+     "sanskrit": "छिन्नोऽपि रोहति तरुश्चन्द्रः क्षीणोऽपि वर्धते लोके । इति विमृशन्तः सन्तः सन्तप्यन्ते न लोकेऽस्मिन् ॥",
+     "line": "A cut tree grows back; the waning moon fills again. Remembering this, the wise do not despair.",
+     "translation": "A tree that is cut grows again; the waning moon waxes again in the world. Reflecting on this, the good are not tormented in this world.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2331,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari closes the section on steadfastness with a thought for the reader. A tree that is cut grows again, and the waning moon waxes again in the world. Reflecting on this, the good are not tormented in this world.",
+     "for_you": "The love that built the family is still yours, and it is not diminished by the shape it now takes. The waning moon fills again. Your steadiness is not a test to pass, but a quiet ground to stand on while the hurt is real."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.20",
+     "ref": "Bhagavad Gita 2.20",
+     "ref_iast": "Bhagavad Gītā 2.20",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणोन हन्यते हन्यमाने शरीरे ॥",
+     "line": "The self was never born and never dies. It is not killed when the body is.",
+     "translation": "It is never born and never dies; having been, it will not cease to be. Unborn, eternal, constant and ancient, it is not slain when the body is slain.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a reason to skip mourning or to take loss lightly; it is comfort about what remains.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.061,
+     "beat": "steady",
+     "role_fit": 0.474,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, seeing him broken by grief. He tells him that the core of who he is was never born and will never die. It cannot be cut by a sword or burned by fire. When the body falls, the self simply changes its form like an old garment. What truly lives inside you outlasts every loss and every passing pain, so the sorrow that feels endless is not the final word.",
+     "for_you": "The love that built your family is still yours, and it is not diminished by the shape it now takes. The quiet house on the nights your children are not there is not an empty space. It is a place where what was real can still be felt, without needing to be filled or fixed."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.1.11.37",
+     "ref": "Yoga Vasishtha, Vairagya 11.37",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 11.37",
+     "family": "yv",
+     "speaker": "Vishvamitra",
+     "listener": "Rama",
+     "setting": "Vishvamitra gently invites the withdrawn Rama to speak.",
+     "sanskrit": "यथाभिमतमाशु त्वं ब्रूहि प्राप्स्यसि चानघ । सर्वमेव पुनर्येन भेत्स्यन्ते त्वां तु नाधयः ॥",
+     "line": "Say freely what is on your heart, blameless one. These sorrows need not keep wounding you.",
+     "translation": "Say quickly whatever you wish, blameless one, and you will have it, by which these sorrows will never pierce you again.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.7195,
+     "beat": "act",
+     "role_fit": 0.5,
+     "meaning": "Vishvamitra speaks to Rama, who has just returned from a deep meditation and is silent and withdrawn. Vishvamitra sees that Rama is holding something inside, and he gently opens the door. He tells Rama that the words trapped in the heart are the real source of pain, and that if Rama speaks them, the wounds will finally stop reopening. It is an invitation to let the hidden thing out into the open air, where it can lose its power over him.",
+     "for_you": "The house is quiet, and you are holding the story of the separation inside it. Speak the words out loud to yourself tonight. Say the name of the life that is gone. Let the silence hold it, not your throat."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.39.51",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 39.51",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "कृतज्ञं धार्मिकं सत्यमक्षुद्रं दृढभक्तिकम् / जितेन्द्रियं स्थितं स्थित्यां मित्रमित्यभिवाञ्छति",
+     "line": "Everyone wants a friend who is grateful, honest, generous, loyal and steady. Be that friend.",
+     "translation": "Everyone wants as a friend someone grateful, principled, truthful, big-hearted, loyal, self-controlled and steady.",
+     "why": "Speak at the right time, weigh gain against cost, and repeat what is good until it becomes you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.39",
+      "title": "Vidura Niti: timing, gain and loss",
+      "summary": "Vidura teaches that good words land only at the right moment, that some gains are losses, that habits shape a person, and what people look for in a friend.",
+      "story_hook": "",
+      "lesson": "Speak at the right time, weigh gain against cost, and repeat what is good until it becomes you."
+     },
+     "score": 2.7156,
+     "beat": "act",
+     "role_fit": 0.636,
+     "meaning": null,
+     "for_you": "The quiet house on the nights the children are not there is not a verdict on you. Let it be what it is. You do not need to fill it. Sit with the silence for one night, and let it simply be there."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.ram_loses_sita",
+     "title": "Ram's grief and Lakshman's counsel",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "He came back to the hut calling her name, and no one answered.",
+     "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+     "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.65.4",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 65.4",
+      "family": "vr",
+      "speaker": "Lakshman",
+      "listener": "Ram",
+      "setting": "After Sita is taken, Ram in fury threatens to destroy the world; Lakshman steadies him.",
+      "sanskrit": "एकस्य नापराधेन लोकान् हन्तुं त्वमर्हसि। ननु जानामि कस्यायं भग्नः सांग्रामिको रथः॥",
+      "line": "Don't punish the whole world for one person's wrong.",
+      "translation": "You should not destroy the worlds for the wrong done by one. Surely we can find out whose broken war chariot this is.",
+      "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.ram_loses_sita",
+       "title": "Ram's grief and Lakshman's counsel",
+       "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+       "story_hook": "He came back to the hut calling her name, and no one answered.",
+       "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram came back to the hut calling Sita's name, and no one answered",
+     "teaser": "Ram came back to the hut calling Sita's name, and no one answered",
+     "for_you": "When Ram found the hut empty, he raged that he would destroy the world. Lakshman steadied him. You are not the one who broke the silence, and you do not need to punish anyone for it. Let the quiet be what it is."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet house",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 243,
+   "llm": 4609,
+   "total": 15070,
+   "select": 10211
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The nights your children are not there are heavy. You sit in a quiet house and carry a separation you have not told your parents. There is a silence in the rooms that feels like a judgment. You are lonely and quietly ashamed. That shame is not the truth of what is happening."
+  ],
+  [
+   "scene",
+   "Krishna is speaking to Arjuna on the field of battle. Arjuna is overwhelmed by grief and fear. He does not know how to act. He is caught between wanting to fight and wanting to run away. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "यो न हृष्यति न द्वेष्टि न शोचति न काङ्क्षति, शुभाशुभपरित्यागी भक्तिमान्यः स मे प्रियः."
+  ],
+  [
+   "line",
+   "In plain words: Not swinging between thrill and hate, grief and craving, letting go of 'good' and 'bad' outcomes: dear to me."
+  ],
+  [
+   "unpack",
+   "Krishna speaks to Arjuna about the one who is dear to God. The person does not swing between strong feelings, between loving something and hating it, between grieving and wanting. They let go of judging things as good or bad, and they stay steady. This is not about being empty. It is about not letting grief or craving pull them away from what is real."
+  ],
+  [
+   "for_you",
+   "When you sit in the quiet house tonight, let the silence be just silence. Do not let your mind tell you that you are failing because the house is empty. Let the grief be there without letting it judge your days."
+  ],
+  [
+   "close",
+   "What if the silence is just a room, and not a verdict?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit in the quiet house on nights the children are not there. The house holds the separation you have not told your parents in Chandigarh about. You are grieving someone you loved, and you feel lonely. You carry a secret that makes the silence feel like a verdict on you.",
+  "points": "The Gita speaks of a steadiness that is not the absence of feeling, but the refusal to be swept away by it. It is not about stopping grief, but about not letting it or craving turn into hatred or blame. The quiet is not a judgment on your worth.",
+  "practice": "Notice one sensation in your body right now, like the weight of your hands or the air on your face. Let it be there without deciding if it is good or bad.",
+  "question": "What would it mean to let the quiet be just a quiet space?"
+ }
+}

@@ -1,0 +1,511 @@
+{
+ "persona": {
+  "id": "ca_millennial_new_immigrant",
+  "market": "Canada (Toronto)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "36, was a bank branch manager in Hyderabad, moved to Toronto 8 months ago on PR, now driving Uber while applying. Wife and 4-year-old. Winter.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 5,
+   "topic": "work",
+   "follow": "didnt_work_out"
+  },
+  "note": "I managed 40 people in Hyderabad. Here I drive Uber at night and my wife cries about the cold. Everyone says Canadian experience. I did this for my son's future but right now I feel like I've ruined our present",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "ashamed and grieving the present",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being told you have ruined your present to standing in the man who gave up a senior role for his son, with the words to say so.",
+   "week_beats": {
+    "story": "A man of learning and standing, dismissed by those who should know him, who questioned them and stood in his truth until they had no answer."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "partner",
+    "child",
+    "family"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "My project or startup failed",
+   "mirror": "Everyone says Canadian experience, and the one person who matters most is crying because of it.",
+   "insight": "It isn't the Uber that has ruined your present. It is the silence around what you gave up, and the belief that what you did for your son has left your wife with nothing.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.63,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.581,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.562,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.52,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "Being reduced to a driver by the very sacrifice you made for your family, and the shame of watching the life you built turn cold. My project or startup failed.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A man of standing who was dismissed by his own people, who stood in his truth and was proven right: a father who gave everything and found his footing in the giving."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Seen as less",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "managed people in Hyderabad",
+    "now drives Uber at night in Canada",
+    "wife is cold and cries"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "core:invented_person",
+    "core_struggle_fallback",
+    "seat:missing",
+    "week_fit:16=0.3,1=0.3,7=0.6,17=0.0,532=0.6,10=0.6",
+    "week_fit:swapped=3",
+    "retried:1",
+    "redo:3",
+    "redo_fixed:1",
+    "dropped:gendered=1,repeat=2,slang=1,soft_kept=3",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:scene=invented_name",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "diaspora_identity",
+       "label": "I don't feel fully at home anywhere"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.7441,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. Arjuna is paralyzed by grief and confusion about what is right. Krishna tells him that it is better to follow your own nature and do the work that is yours, even if you do it imperfectly, than to take on the duty of another and do it perfectly. The work born from your own being, done without attachment, carries no blame. You are being asked to trust your own path, flaws and all.",
+     "for_you": "The failure of your project is not a mark against your worth. You are being seen as less than you are because of what was lost, not because you are less. Your own path, the one that led you to drive at night in Canada, is the one that fits you."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.114.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 114.15",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma on public slander, answering Yudhishthira's question about being insulted in an assembly.",
+     "sanskrit": "परिवादं ब्रुवाणो हि दुरात्मा वै महाजने / प्रकाशयति दोषान्स्वान्सर्पः फणमिवोन्नतम्",
+     "line": "Whoever runs others down in public only puts their own faults on display.",
+     "translation": "The person who speaks ill of others in front of a crowd only puts his own faults on display, the way a snake raises its hood.",
+     "why": "Careless critics show their own faults. Let their words pass like a crow's cawing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.bearing_slander",
+      "title": "Bhishma on bearing slander",
+      "summary": "Yudhishthira asks how to respond when a harsh fool abuses you in public. Bhishma: let it pass like a crow cawing; the slanderer only displays his own faults.",
+      "story_hook": "",
+      "lesson": "Careless critics show their own faults. Let their words pass like a crow's cawing."
+     },
+     "score": 2.7349,
+     "beat": "diagnose",
+     "role_fit": 0.351,
+     "meaning": "Yudhishthira asks Bhishma how to bear being insulted by a fool in a public assembly. Bhishma answers that the one who speaks ill of others only displays their own faults, like a snake raising its hood. He tells Yudhishthira to let such words pass like a crow cawing. The one who slanders reveals their own nature, not the worth of the person they target.",
+     "for_you": "Your work in Hyderabad and the silence that followed are not the same as being told you ruined your present. The ones who speak against your past project only raise their own hood. Let their cawing pass. Your worth is not the verdict they shout in the dark of a Canadian night."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.261,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated and despairing after losing his kingdom. She tells him not to hold himself in contempt or settle for little. She urges him to set his mind on what is truly good, stop fearing, and pull himself together. Her point is that past failure does not define a person. Those who never try never succeed, and results are uncertain for everyone.",
+     "for_you": "The defeat of your startup is a fact, but it is not the final word on your life. Vidula tells her son that a fallen kingdom can be fought for again. Your hands on the wheel at night can hold the same resolve."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.1251,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": "Draupadi is speaking to Yudhishthira while they are in exile. She tells him that waiting for things to get better on their own is not a plan. A person should never look down on themselves. The one who despises themselves never finds real prosperity. She says do right because it is right, then work as if everything depends on you.",
+     "for_you": "You managed people in Hyderabad and you gave up a senior role for your son. That work had weight, and it still does. The silence around it is loud, but it does not erase what you built. Your worth is not in the title you hold tonight."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.7307,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is teaching Nidagha how a free person moves through the world. He says always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world. He is saying live fully in the world while staying unhurried inside.",
+     "for_you": "The night drive is your work in front of you. Let the cold silence in the car stay outside. You do not need to fix the grief in the passenger seat tonight. Just do the work, keep your eyes on the road, and let the rest wait."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.5.10",
+     "ref": "Bhagavad Gita 5.10",
+     "ref_iast": "Bhagavad Gītā 5.10",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on working in the world without being stained by it.",
+     "sanskrit": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः । लिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥",
+     "line": "Like a lotus leaf in water, do your work without letting the mess soak in.",
+     "translation": "One who acts offering all actions to the Supreme, giving up attachment, is not touched by wrong, as a lotus leaf is not wet by water.",
+     "why": "Be in the mess without letting it soak in.",
+     "misuse": "Staying unstained isn't staying silent about wrongdoing at work; you can act and still keep your peace.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.2",
+      "title": "Marks of the knower and the doer",
+      "summary": "The disciplined person acts without attachment, like a lotus leaf untouched by water, and finds peace by letting go of the fruit.",
+      "story_hook": "",
+      "lesson": "Be in the mess without letting it soak in."
+     },
+     "score": 3.3617,
+     "beat": "act",
+     "role_fit": 0.494,
+     "meaning": "Krishna tells Arjuna to act as if everything is offered away, with no attachment to the results. Like a lotus leaf resting on water, they are not touched by the mess around them. They act, but the stain of the world does not soak in.",
+     "for_you": "You are in the middle of the mess right now, but the mess does not have to soak you. Do the work in front of you, speak gently, and read the room. You do not have to let the silence around your loss ruin your evening."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.vasishtha_cow",
+     "title": "The king who wanted the cow",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Vishvamitra",
+      "Vasishtha",
+      "Shabala"
+     ],
+     "story_hook": "A king who had everything saw one thing he could not buy, and it undid him.",
+     "summary": "King Vishvamitra is feasted by the sage Vasishtha and covets the wish-granting cow that made it possible. Vasishtha refuses every offer; the king takes her by force and is routed, then fails again with divine weapons. Humbled, he resolves to transform himself through inner discipline instead of force.",
+     "lesson": "Envy and force cannot take what someone will not give; real power is built inside.",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "anchor": {
+      "id": "vr.1.53.9",
+      "ref": "Valmiki Ramayana · Bala Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 53.9",
+      "family": "vr",
+      "speaker": "Vasishtha",
+      "listener": "King Vishvamitra",
+      "setting": "A powerful king offers a fortune for the sage's cow, the source of his whole way of life.",
+      "sanskrit": "नाहं शतसहस्रेण नापि कोटिशतैर्गवाम्॥ राजन् दास्यामि शबलां राशिभी रजतस्य वा। न परित्यागमयं मत्सकाशादरिंदम ॥",
+      "line": "Not for any price. Some things are not for sale, however powerful the buyer.",
+      "translation": "Not for a hundred thousand cows, not for a billion, not for heaps of silver, O king, will I give up Shabala. She stays with me.",
+      "why": "Envy and force cannot take what someone will not give; real power is built inside.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.vasishtha_cow",
+       "title": "The king who wanted the cow",
+       "summary": "King Vishvamitra is feasted by the sage Vasishtha and covets the wish-granting cow that made it possible. Vasishtha refuses every offer; the king takes her by force and is routed, then fails again with divine weapons. Humbled, he resolves to transform himself through inner discipline instead of force.",
+       "story_hook": "A king who had everything saw one thing he could not buy, and it undid him.",
+       "lesson": "Envy and force cannot take what someone will not give; real power is built inside."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Vishvamitra had everything, except the one thing he couldn't buy",
+     "teaser": "King Vishvamitra had everything, except the one thing he couldn't buy",
+     "for_you": "They are trying to strip away what you built, but your work for your son is not a thing to be bought or taken. It is a part of you that no force can unmake. Stand in that truth, and let their silence meet the weight of what you have already done."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Seen as less",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 164,
+   "llm": 4741,
+   "total": 11247,
+   "select": 6332
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying the weight of a ruined present. You managed people in Hyderabad. Now you drive at night in Canada. You gave up a senior role for your son. Your wife is cold and cries. You feel ashamed and grieving what is here now."
+  ],
+  [
+   "scene",
+   "Krishna on duties by nature and finding fulfilment in your own work. Krishna said to Arjuna:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna says it is better to follow your own nature. Do your own work, even if it is flawed. It is not right to take on another person's duty. Doing the work born of your own being carries no blame. This is harder than it sounds, because failure makes us want to hide. We want to be perfect for others. But your own path is the one that fits you."
+  ],
+  [
+   "for_you",
+   "Your project failed. That is a fact. But it is not a mark against your worth. The work you do now, the one that led you to this night drive, is the work born of your own nature."
+  ],
+  [
+   "close",
+   "Your own path, imperfectly walked, carries no blame."
+  ]
+ ],
+ "depth": {
+  "life": "You are driving through the dark in Canada, the engine a low hum under the shame. The silence in the car is not empty. It is full of the life you built and the life you left behind. Your wife’s coldness is a wall, and you feel it every time you pull up to a house you do not know.",
+  "points": "The work you do is not the measure of your worth, but the offering behind it. Your own path, with its cracks and its losses, is the only one that can hold the truth of who you are. You are not wrong for walking it.",
+  "practice": "When you start your shift tonight, name one small part of the drive that is only yours to do.",
+  "question": "What part of this night shift feels like it is truly yours?"
+ }
+}

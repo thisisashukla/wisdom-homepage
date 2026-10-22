@@ -1,0 +1,486 @@
+{
+ "persona": {
+  "id": "in_genx_father_layoff",
+  "market": "India (Pune)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "49, IT services manager in Pune, 22 years in the same company, laid off last month. Daughter in 11th, home loan, aging mother.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "confidence": 0.75,
+   "core_struggle": "Laid off after twenty-two years and hiding it from his mother; the body still wakes at six as if the office exists.",
+   "mirror": "You gave twenty-two years, and the morning still wakes you for a job that is gone.",
+   "insight": "It isn't the layoff that keeps you up. It's the life you built around it, and the silence you keep from the one person who knew it all.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.895,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The shock of a long career ending in a short call, and the quiet dread of facing the morning when the routine is gone.",
+    "diagnose": "Grief is love with nowhere to go; when a part of our life is taken, the mind replays what was and fears what is lost.",
+    "steady": "What is real in you cannot be taken; the work was yours, the skill is yours, and the morning is yours to meet again.",
+    "act": "Let the body rest, speak the true thing to one trusted person, and begin one small act of the day that is only yours.",
+    "story": "A man of long service who lost his place in a short call, facing a silent home and a morning that no longer knows his name."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The silence and the morning",
+    "What is real in you",
+    "The one who begins again"
+   ],
+   "seat": "a long-serving employee laid off in a short call, hiding it from his mother",
+   "life_context": "In midlife, working and raising a family while caring for his parents; a twenty-two-year career ended in a ten-minute call, and he wakes at six each morning still expecting to go to work.",
+   "details": [
+    "twenty two years in one company",
+    "let go in a ten minute call",
+    "has not told his mother",
+    "still wakes at six every morning as if going to the office"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.4515,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna is on the battlefield, looking at the men he knows and loves lined up against him. His body stops obeying him. His mouth goes dry, his hands shake, and his hair stands on end. He is not a hero in this moment. He is a man in a full-body panic attack, and his bow slips from his hands. The Gita opens with this breakdown, not with glory, because it wants to meet you exactly where you are.",
+     "for_you": "Your body is still waking at six in the morning because it does not know the office is gone. It is not weakness to feel this. It is the honest response of a life that has been built around a rhythm that is no longer there."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 3.0673,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "After a terrible argument with her husband over their son's exile, Kausalya sees what she has done and is horrified. She apologises, not because she is wrong to feel grief, but because grief has worn away her steadiness and her judgement. She tells Dasharatha that grief is a force that destroys everything, and there is no enemy like it. The teaching here is not to ban grief, but to see how it makes us wound those we love, and to offer an apology quickly, before the silence grows too wide.",
+     "for_you": "You are keeping this loss from your mother, and it is a heavy silence to carry alone. Grief can make us say or do things we do not mean, and it can make us hide. The steadiness you are trying to hold for her might be costing you your own peace."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.146.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 146",
+     "family": "rcm",
+     "speaker": "Sumantra",
+     "listener": "Dasharath",
+     "setting": "Sumantra returns alone to the grieving king Dasharath and steadies him.",
+     "sanskrit": "जनम मरन सब दुख सुख भोगा। हानि लाभु प्रिय मिलन बियोगा॥ काल करम बस होहिं गोसाईं। बरबस राति दिवस की नाईं ॥ सुख हरषहिं जड़ दुख बिलखाहीं। दोउ सम धीर धरहिं मन माहीं॥ धीरज धरहु बिबेकु बिचारी। छाड़िअ सोच सकल हितकारी ॥",
+     "line": "Gain and loss, meeting and parting come like day and night. The steady hold both alike.",
+     "translation": "Birth and death, joy and sorrow, loss and gain, meeting and parting with those we love: these come under the sway of time and action, as surely as night and day. The foolish rejoice in good times and wail in bad; the steady hold both alike in the mind. Hold on to your courage, think with discernment, and let go of worry, you who care for everyone.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": null,
+     "score": 3.5879,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Sumantra returns to the grieving Dasharath and steadies him with a simple truth. Birth and death, joy and sorrow, meeting and parting come like day and night. They are governed by time, not by our wishes. The foolish rejoice in good times and wail in bad. The steady hold both alike in the mind. The teaching is to hold on to your courage, to think with discernment, and to let go of worry, even when you care for everyone.",
+     "for_you": "You are caring for your children and your parents while your own world has shifted. The day will still turn, and the loss will not vanish. You do not have to solve it all at once. You only have to hold this one day, and the next, with the same quiet strength."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.25.31",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 25.31",
+     "family": "mbh",
+     "speaker": "Senajit (quoted by Vyasa)",
+     "listener": "Yudhishthira",
+     "setting": "Vyasa quotes the grieving King Senajit to Yudhishthira, who is broken by the war's losses.",
+     "sanskrit": "सुखं च दुःखं च भवाभवौ च / लाभालाभौ मरणं जीवितं च / पर्यायतः सर्वमवाप्तुवन्ति / तस्मान्न मुह्येन्न च संप्रहृष्येत्",
+     "line": "Gain and loss, joy and sorrow come to everyone in turn. Don't be crushed, and don't get carried away.",
+     "translation": "Happiness and sorrow, rise and fall, gain and loss, death and life: everyone receives all of these in turn. So do not be thrown off by them, and do not get carried away either.",
+     "why": "Guilt and grief are real, but they are not the end. The good you do next counts.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yudhishthira_grief",
+      "title": "After the war: Yudhishthira's grief and his family's counsel",
+      "summary": "Victorious but shattered by the deaths of kin, Yudhishthira wants to give up the throne for the forest. Arjuna, Bhima, Draupadi, Nakula, the sage Devasthana and Vyasa each argue with him, about duty, guilt, grief and the shortness of life, until he agrees to rule.",
+      "story_hook": "He had won the war, and all Yudhishthira wanted was to walk into the forest and never come back.",
+      "lesson": "Guilt and grief are real, but they are not the end. The good you do next counts."
+     },
+     "score": 3.3554,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "In the Shanti Parva, Vyasa tells the grieving Yudhishthira about King Senajit. Senajit had lost his son and was drowning in sorrow. He did not recover by denying his loss or by forcing himself to be happy. He recovered by accepting that gain and loss, joy and sorrow come to everyone in turn. The verse asks you not to be crushed by what has happened, and not to get carried away by despair. The good you do next counts, even when the ground has shifted beneath your feet.",
+     "for_you": "The body still wakes at six because it believes the life is still there. Today, let the body know the day is different. Sit with your coffee and let the morning be what it is without forcing it to be an office morning."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.45",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.45",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "न चाभ्युदितसायी स्यात्प्रायश्चित्ती तथा भवेत् / मातापितरमुत्थाय पूर्वमेवाभिवादयेत् / आचार्यमथवाऽप्यन्तं तथाऽऽयुर्विदन्ते महत्",
+     "line": "Start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "translation": "Don't sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder; that is how a long life is won.",
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 3.2458,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "In the Anushasana Parva, Bhishma is asked what makes a life long and good. He says it is everyday conduct. He tells Yudhishthira not to sleep past sunrise, and on rising, to first greet his mother and father, or his teacher or another elder. That small daily respect is what adds up to a good life. A cruel word lodges in the heart, but a kind one settles it.",
+     "for_you": "You have not told your mother. Today, you do not have to tell her everything. You only have to be present with her for a moment. Look at her and say hello. Let that small act be the start of something real."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.25",
+     "ref": "Bhagavad Gita 6.25",
+     "ref_iast": "Bhagavad Gītā 6.25",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया । आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत् ॥",
+     "line": "Little by little, with patience and steady resolve, settle the mind and let other thoughts go.",
+     "translation": "Little by little one should come to rest, with understanding held steady; fixing the mind on the self, one should think of nothing else.",
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 2.8994,
+     "beat": "act",
+     "role_fit": 0.704,
+     "meaning": "In the Bhagavad Gita, Krishna is teaching Arjuna about the settled mind. He says little by little, with patience and steady resolve, one should come to rest. You fix the mind on the self, and you let other thoughts go. It is not about forcing the mind to be empty. It is about gently returning, again and again, to what is steady.",
+     "for_you": "The overthinking is a habit of the mind that has not yet found a new rhythm. Today, when the mind wanders to the office or the silence with your mother, gently bring it back to your breath or to the sound in the room. Do this again and again. That is the practice."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "quit_or_stay",
+       "label": "Should I quit my job or stay"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "King Janaka stayed in his palace and did his duty after hearing the sages, but with a mind that no longer clutched. You are still in your home, still answering to your parents and your children. You do not need to leave this life."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The silence and the morning",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 294,
+   "llm": 4408,
+   "total": 10999,
+   "select": 6292
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You wake at six and your body moves as if the day has a destination. There is no office to walk to, but the muscles remember the drive. You are carrying the silence you keep from your mother and the life that still wakes before you do."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the field, and the enemy army turns out to be his own kin. His grandfather, his teachers, his cousins, his friends. He sees the faces of the people he loves arranged in ranks to kill him. The weight of this recognition breaks his posture. His limbs give way, his mouth goes dry, his body trembles, and his hair stands on end. And he says:"
+  ],
+  [
+   "sanskrit",
+   "सीदन्ति मम गात्राणि मुखं च परिशुष्यति, वेपथुश्च शरीरे मे रोमहर्षश्च जायते. गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते, न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः."
+  ],
+  [
+   "line",
+   "In plain words: Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero."
+  ],
+  [
+   "unpack",
+   "The Gita begins not with a hero, but with a man in the grip of a full-body panic attack. This is the honest starting point of the teaching. The verse says that even the strongest feel this freeze. It is not a failure of courage, but the body's true response to a world that has suddenly become unbearable. The teaching does not ask you to skip this part. It meets you right in the trembling."
+  ],
+  [
+   "for_you",
+   "Today, before the children wake, sit on the edge of the bed and let your hands rest flat on your knees. Feel the floor beneath your feet. You do not need to fix the silence yet. You only need to let your body know that you are still here with it, in this new morning."
+  ],
+  [
+   "close",
+   "What would it be like to let your body feel the floor, just for a moment, before the day begins?"
+  ]
+ ],
+ "depth": {
+  "life": "You wake at six and your body prepares for a world that no longer exists. Your limbs remember the office, but your mind is still hiding the call from your mother. You move through the day for your family, but you are not really there.",
+  "points": "The Gita begins with a breakdown, not a hero. Even the strongest people freeze. Your body is not failing you. It is responding to a truth that your mind has not yet caught up to.",
+  "practice": "When you wake tomorrow at six, do not fight it. Sit on the edge of the bed and feel your body tremble without asking it to stop.",
+  "question": "What would change if you let your body know the office is gone?"
+ }
+}

@@ -1,0 +1,513 @@
+{
+ "persona": {
+  "id": "us_millennial_mother_anger",
+  "market": "USA (Chicago)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "39, Indian-American, two kids, runs a dental practice with her husband, loses her temper with the kids and hates herself after.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "phone_hours": 3,
+   "topic": "mind",
+   "follow": "anxious"
+  },
+  "note": "I yelled at my 7 year old this morning for spilling milk and the look on his face. I am turning into my mother. I run a practice, I manage 12 people calmly, and then at home I just snap",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and afraid of becoming her mother",
+   "bridge": "What you are living with is what the texts call anger that takes over, and that is where this week begins.",
+   "week_thesis": "From the shame of the snap to the wall that built it, and the first breath that breaks it.",
+   "week_beats": {
+    "hook": "You recognise the snap and the fear without turning them into who you are.",
+    "diagnose": "You see the wall you built to survive the day, and how anger is what hits it.",
+    "steady": "You hold that one angry moment does not make you your mother.",
+    "act": "You try one breath before you speak when the wall rises, and one repair with your child.",
+    "story": "A mother who knew her own mother's anger shows you what it looks like to break the wall."
+   },
+   "confidence": 0.8,
+   "core_struggle": "Manages twelve people calmly at work, but snapped at her seven-year-old this morning and now fears she is becoming her own mother.",
+   "mirror": "You hold twelve people steady all day, and at home you lose it over a spilled glass.",
+   "insight": "The anger arrives before you choose it. By the time you notice, it has already spoken for you.",
+   "mechanism": "anger_reactivity",
+   "mechanism_label": "Anger that takes over",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.348,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.25,
+     "source": "chip"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.888,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.537,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of snapping at your child and the fear that you are becoming the mother you swore you would not be.",
+    "diagnose": "Anger rises from blocked wanting; a mind that has built a wall to survive the day, and anger is what comes when something hits it.",
+    "steady": "Praise and blame come to all, but the self is not the storm; what you are cannot be cut smaller by one angry moment.",
+    "act": "Let go of the moment, return to your child, and practise one breath before you speak when the wall rises again.",
+    "story": "A mother who has known her own mother's anger and feared becoming her, who faced her child and chose to break the wall instead."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The wall you built",
+    "The mother you feared",
+    "The breath that breaks it"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs a practice and manages people calmly",
+    "snaps at home but not at work"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "insight:template",
+    "seat:missing",
+    "retried:1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.4505,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless, stormy, and stubborn, and that holding it is as difficult as holding the wind. Krishna does not deny this. He agrees that the mind is hard to restrain, but he also says that with practice and by letting go, it can be trained. The verse proposes that the mind is not meant to be crushed, but gently held over time.",
+     "for_you": "This morning, the snap was the wind taking over. You are not your mother, but you are living inside the same restless mind she lived with. The shame is real. The fear is real. And right now, the only work is to see the wind for what it is, not to fight it."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 4.0419,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Krishna explains how a steady mind is made. He says that when a person dwells on something, attachment is born. From attachment comes desire, and from desire, when it is blocked, anger. The verse proposes that anger does not arrive from nowhere. It is the result of attention that has been allowed to settle on one thing and then be denied.",
+     "for_you": "Yesterday you named the wind. Today you see the wall. You build a calm at work so you can survive the day. But that calm is a wall. And when your seven-year-old needs you, the wanting that is blocked by that wall turns into a snap. The anger is not the problem."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": null,
+     "score": 3.7241,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher speaks to a renunciant about how to carry oneself. The teacher says that a person should not torment the body too much for the sake of pleasure or pain. When praised, one should not gloat, and when blamed, one should not curse others. The teacher is offering a steady rule for living. The point is that a person is not forced to chase every pleasure or flee every pain. A person can choose a steadier path, even when things go wrong.",
+     "for_you": "At work you manage twelve people with calm, but at home the snap came out. This verse says you do not have to torment yourself with the shame or the pain. You can choose steadiness instead of gloating over your own control or cursing yourself for the moment you lost it."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.2.22.2",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 22.2",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Just told he is exiled, Ram calms his furious brother Lakshman.",
+     "sanskrit": "निगृह्य रोष शोकं च धैर्यमाश्रित्य केवलम्। अवमानं निरस्यैनं गृहीत्वा हर्षमुत्तमम्॥ उपक्लुप्तं यदैतन्मे अभिषेकार्थमुत्तमम्। सर्वं निवर्तय क्षिप्रं कुरु कार्य निरव्ययम्॥",
+     "line": "Rein in anger and grief, lean on your steadiness, and set the insult aside.",
+     "translation": "Hold back your anger and grief, lean on steadiness alone, set this insult aside and take up real cheerfulness. Quickly undo the preparations made for my coronation and get on with what needs doing, without fuss.",
+     "why": "Anger at injustice is natural; decide what to do with it before it decides for you.",
+     "misuse": "Not a call to ignore injustice; it is about choosing your response.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.lakshman_anger_exile",
+      "title": "Lakshman's fury, Ram's calm",
+      "summary": "Lakshman is enraged by the injustice and wants to seize the throne by force. Ram calms him: set aside the insult, don't torment yourself, the setback may lead somewhere better. Lakshman answers that effort, not fate, decides; both views are given their due.",
+      "story_hook": "",
+      "lesson": "Anger at injustice is natural; decide what to do with it before it decides for you."
+     },
+     "score": 3.2832,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Ram speaks to Lakshman after being told he is exiled. Lakshman is furious and wants to seize the throne by force. Ram calms him, telling him to hold back his anger and grief, lean on steadiness alone, set the insult aside, and take up real cheerfulness. Ram is not telling Lakshman to ignore the injustice. He is telling him to decide what to do with his anger before it decides for him, and to get on with what needs doing without fuss.",
+     "for_you": "Yesterday you held that you do not have to torment yourself. Today you hold that one angry moment does not make you your mother. Ram tells Lakshman to lean on steadiness and set the insult aside."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.362,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat, who is broken by his father's death and Ram's exile. He tells the grieving prince to gather his courage and do what this very moment asks of him. Bharat hears these words and rises, ready to face the truth of what happened.",
+     "for_you": "The snap this morning is the moment asking something of you. Before you speak to your child again, take one steady breath and meet their eyes. Then do what the moment asks: say you are sorry for the wall, not just the words."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.185.chaupai.4",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 185",
+     "family": "rcm",
+     "speaker": "Guha",
+     "listener": "his men",
+     "setting": "Guha, ready to block Bharat's army at the river, listens to an elder who urges caution.",
+     "sanskrit": "सुनि गुह कहइ नीक कह बूढ़ा। सहसा करि पछिताहिं बिमूढ़ा॥ भरत सुभाउ सीलु बिनु बूझें। बड़ि हित हानि जानि बिनु जूझें ॥",
+     "line": "Fools act in haste and repent. Know someone's nature before you fight them.",
+     "translation": "Guha said, 'The old man speaks well. Fools act in haste and repent. To fight without knowing Bharat's character and nature would do great harm to our own good.'",
+     "why": "Find out someone's intent before you prepare for war with them.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.nishad_suspicion",
+      "title": "Guha nearly fights Bharat",
+      "summary": "Seeing Bharat's army approach the Ganga, Guha assumes he is coming to kill Ram and prepares his men to die fighting. An old man reads the omens and says Bharat comes to bring Ram back. Guha agrees that fools act in haste and repent, goes to meet Bharat with gifts, and the two embrace.",
+      "story_hook": "Guha saw an army on the riverbank and sank his boats.",
+      "lesson": "Find out someone's intent before you prepare for war with them."
+     },
+     "score": 3.2689,
+     "beat": "act",
+     "role_fit": 0.609,
+     "meaning": "Guha stands ready at the river, his men behind him, ready to fight. An elder steps forward and speaks of haste. Guha listens. He sees that to charge in without knowing the truth of Bharat's heart is to walk into a trap. The verse asks you to see the intent before you raise your weapon. It is a warning against the first hot impulse that makes you act before you know. It asks you to pause and look, to understand the other before you strike.",
+     "for_you": "You stand at the river of your own home, ready to snap at your child. Before you act, ask yourself what your child is truly asking for. Pause and look at their intent before you speak. This small check is how you stop the fight before it starts."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.tara_warns_vali",
+     "title": "Tara's warning",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Tara",
+      "Vali"
+     ],
+     "story_hook": "Vali was already at the door when Tara caught his arm.",
+     "summary": "Sugriva roars a second challenge and Vali storms out to fight. His wife Tara stops him: drop this anger, fight tomorrow if you must, make peace with your brother, who is your own family. Vali will not listen.",
+     "lesson": "Anger rushes; good counsel says wait until morning, and remember who family is.",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.15.22",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 15.22",
+      "family": "vr",
+      "speaker": "Tara",
+      "listener": "Vali",
+      "setting": "Tara urges Vali to make peace with his younger brother instead of fighting him.",
+      "sanskrit": "लालनीयो हि ते भ्राता यवीयानेष वानरः॥ तत्र वा सन्निहस्थो वा सर्वथा बन्धुरेव ते। नहि तेन समं बन्धुं भुवि पश्यामि कंचन ॥",
+      "line": "Near or far, your brother is still your family. No one else on earth can take his place.",
+      "translation": "Your younger brother deserves your care. Near you or far away, he is your own family. I see no relative on earth to equal him.",
+      "why": "Anger rushes; good counsel says wait until morning, and remember who family is.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.tara_warns_vali",
+       "title": "Tara's warning",
+       "summary": "Sugriva roars a second challenge and Vali storms out to fight. His wife Tara stops him: drop this anger, fight tomorrow if you must, make peace with your brother, who is your own family. Vali will not listen.",
+       "story_hook": "Vali was already at the door when Tara caught his arm.",
+       "lesson": "Anger rushes; good counsel says wait until morning, and remember who family is."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Vali was storming out to fight his brother when his wife caught his arm",
+     "teaser": "Vali was storming out to fight his brother when his wife caught his arm",
+     "for_you": "Vali's wife saw the anger coming and tried to hold it back. You felt the snap this morning. You see the wall now. The wall is not your children. It is the anger that took over before you could stop it. You can see it. That is the first breath that breaks it."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The wall you built",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 292,
+   "llm": 4196,
+   "total": 13317,
+   "select": 8823
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You snapped at your seven-year-old this morning. Now you are sitting with that sound, feeling ashamed and afraid of the woman you are becoming."
+  ],
+  [
+   "scene",
+   "Arjuna stood on the battlefield. He had asked Krishna to show him the path of yoga, the path of union. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Krishna does not deny this. He agrees the mind is hard to restrain. But he also says that with practice and by letting go, it can be trained. The mind is not meant to be crushed, but gently held over time."
+  ],
+  [
+   "for_you",
+   "This morning, the snap was the wind taking over. You are not your mother. But you are living inside the same restless mind she lived with. The shame is real. The fear is real. Right now, the only work is to see the wind for what it is. Not to fight it."
+  ],
+  [
+   "close",
+   "What if you let the wind pass before you answer?"
+  ]
+ ],
+ "depth": {
+  "life": "You run your practice with twelve people, calm and in control, but at home the air changes. This morning the wind moved through you and you snapped at your child. Now the shame sits heavy, and you are afraid you are becoming her.",
+  "points": "The mind is restless, turbulent, powerful and stubborn. It is not a flaw in you. It is a force that takes the wheel before you can reach the brake. The anger is not your choice, it is what happens when the mind is left to its own devices.",
+  "practice": "When the next wave rises, name it silently. Say to yourself, this is the wind, not me. Let the sound pass through without touching your hands.",
+  "question": "What would change if you saw the snap as the wind, not as you?"
+ }
+}

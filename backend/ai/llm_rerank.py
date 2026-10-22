@@ -28,13 +28,20 @@ Then score every candidate from 0.0 to 1.0:
   0.6  about their situation but from a neutral place, or naming their exact feeling in another setting
   0.3  a general line about the mind, fear or confusion that would fit almost anyone: it does not name what they told us
   0.1  lectures, speaks from the OTHER seat (the parent's feelings when the person is the child, the boss's view when they are the employee), belongs to a life stage that is not theirs, or only shares a word with their story (a verse about a god as a "friend" for someone whose marriage feels distant)
-  0.0  could shame or blame them, or would read as calling them at fault for what they are suffering
+  0.0  could shame or blame them, or would read as calling them at fault for what they are suffering; or its image would wound them
+       read on the first day (comparing them to a dog, a beggar, a corpse, a sinner), however humble its author meant it
 Judge the verse as the scripture means it (its speaker, setting and plain sense), not as it could be bent to fit.
+Where they stand changes the scoring ("Where they stand" in the person block):
+  - an aspiration (a resolve, a beginning, inspired by others): 1.0 is a verse of rising, resolve, effort and one's own path; any verse of consolation, burden, fear, envy or comparison scores 0.0, however well it matches the words.
+  - wronged (treated as less than they are, dismissed, held to a role): 1.0 is a verse of standing in one's truth, courage, the self that cannot be cut, speaking the true word; any verse that names envy, contentment, desire, ego or expectation as the trouble, or asks for acceptance, patience, adjustment or keeping the peace, scores 0.0: it tells them the fault is theirs.
+  - seeking: 1.0 is an invitation into the text, not a cure for a pain they did not describe.
 Return ONLY JSON: {"seat": "...", "scores": {"<id>": 0.0, ...}} with every candidate id."""
 
 STORY_SYSTEM = """\
 You pick one story (prasang) for a person's plan. The best story has a protagonist who stands where this person stands (same seat in the relationship, same kind of struggle, a similar stage of life: a student, a young adult finding their way, a parent, someone caring for the old, an elder letting go) and who finds a way through.
-Avoid stories told from the other side, stories whose lesson would blame the person, and, if the person is being harmed, any story about enduring, obeying or keeping the peace.
+Avoid stories told from the other side, stories whose lesson would blame the person, and, if the person is being harmed or wronged, any story about enduring, obeying, adjusting or keeping the peace. For an aspiration pick a protagonist who set out to do something and kept going, not one who was broken and healed.
+Never pick a story whose central bond is one the person is not in (two mothers for a man at odds with his father; a husband returning for a widow; a parent letting a child go for someone who is the child). Never pick a story whose moral would read as a verdict on their parenting, their marriage or their choice.
+Never pick a story in which someone the person loves (a spouse, a child, a parent) would be cast as the victim of the person's own choice, or that would read as a verdict on a decision they made together.
 Return ONLY JSON: {"pick": "<id>"}"""
 
 
@@ -107,3 +114,44 @@ async def rerank_story(llm, core: str, cands: List[dict], timeout_s: float) -> T
     if pick not in {p["id"] for p in cands}:
         return None, None
     return pick, None
+
+
+# ── The week as a whole ───────────────────────────────────────────────────────
+WEEK_SYSTEM = """\
+You check a 7-day verse plan for one person before anything is written for them. For each verse you are told the day's job
+(see: name what is happening to them / see: show what is underneath / steady: footing / act: a practice). Read each verse as
+its scripture means it (speaker, listener, setting, plain sense) and ask: standing where THIS person stands, does this verse do
+this day's job for them?
+Score each 0.0 to 1.0:
+  1.0  it speaks to their actual situation from their seat and does the day's job
+  0.6  right idea, neutral seat, a little general
+  0.3  a general line that would fit almost anyone
+  0.0  wrong for them: casts them as the one at fault or the one being warned (a king being flattered, a careless son, a
+       greedy man) when they are the one wronged or the one trying; consoles a death when no one has died; tells someone
+       wronged or lonely to accept, adjust, detach or let their family go; a devotee's "turn to me" for a concrete worldly
+       problem; or simply about something else
+Return ONLY JSON: {"scores": {"<id>": 0.0, ...}} with every id."""
+
+
+def _week_user(person: str, cards: List[dict]) -> str:
+    rows = "\n".join(f"- id: {c['id']}\n  day {c['day']} job: {c['job']}\n  speaker: {c.get('speaker') or '?'}"
+                     + (f" (to {c['listener']})" if c.get("listener") else "") + f"\n  setting: {c.get('setting') or ''}\n  line: {c['line']}"
+                     for c in cards)
+    return f"{_person(person)}\n\nThe week:\n{rows}"
+
+
+async def score_week(llm, person: str, cards: List[dict], timeout_s: float) -> dict:
+    """{id: score} for the verse days of a plan, or {} when the model is unavailable or out of time."""
+    if llm is None or not cards:
+        return {}
+    raw = await _ask(llm, WEEK_SYSTEM, _week_user(person, cards), timeout_s)
+    scores = (raw or {}).get("scores")
+    if not isinstance(scores, dict):
+        return {}
+    out = {}
+    for c in cards:
+        try:
+            out[c["id"]] = max(0.0, min(1.0, float(scores.get(c["id"], 0.6))))
+        except (TypeError, ValueError):
+            out[c["id"]] = 0.6
+    return out

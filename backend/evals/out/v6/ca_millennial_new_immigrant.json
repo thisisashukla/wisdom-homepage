@@ -1,0 +1,493 @@
+{
+ "persona": {
+  "id": "ca_millennial_new_immigrant",
+  "market": "Canada (Toronto)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "36, was a bank branch manager in Hyderabad, moved to Toronto 8 months ago on PR, now driving Uber while applying. Wife and 4-year-old. Winter.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 5,
+   "topic": "work",
+   "follow": "didnt_work_out"
+  },
+  "note": "I managed 40 people in Hyderabad. Here I drive Uber at night and my wife cries about the cold. Everyone says Canadian experience. I did this for my son's future but right now I feel like I've ruined our present",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and grieving the present",
+   "bridge": "What you are living with is what the texts call feeling cut off, and that is where this week begins.",
+   "week_thesis": "Seven days from being told your sacrifice is not enough to holding that what you paid for was real, and your worth is not measured by where you drive.",
+   "week_beats": {
+    "hook": "You recognise being handed a smaller life and the grief of the present you traded, named without judgement.",
+    "diagnose": "You see that the verdict you keep passing on yourself for it is the second wound, and it is theirs, not yours to carry.",
+    "act": "You try speaking the true thing to yourself and holding your ground on what is yours, without shrinking."
+   },
+   "undisclosed": false,
+   "texts": [],
+   "confidence": 0.75,
+   "core_struggle": "A father who traded a senior role for his son's future is now driving at night in the cold, grieving the present he sacrificed, and feels he has ruined the life he built.",
+   "mirror": "You managed forty people, and now you drive in the cold while your wife cries about it.",
+   "insight": "The cold and the crying are the present you sacrificed for a future that has not arrived. The real pain is the man you were who is not allowed to mourn it.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.581,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.562,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.52,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "Being handed a smaller life than the one you built, and the grief of the present you traded for a future that has not yet come.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing to yourself and your family, hold your ground on what is yours, and do your own duty without shrinking to fit the picture of a man who failed.",
+    "story": "A man of standing who lost everything, was dismissed by those who stayed, and found the courage to stand in his own truth while his family grieved with him."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The price you paid",
+    "Whose picture it is",
+    "More than where you drive"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "managed people",
+    "now drives at night in Canada",
+    "wife cries about the cold"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "bridge:copied_example",
+    "seat:missing",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:copied=1,fallback_line=2,gendered=1,preachy=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.9103,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna sits on the battlefield, his body heavy, his mind empty. He has laid down his bow. He turns to Krishna and says he sees no kingdom, no heaven, no victory that could wash away the grief eating him from the inside. He is telling the truth: he does not know what to do, and he is asking for a way through.",
+     "for_you": "You have traded a senior role for the cold and the dark of night driving, and now you sit with the weight of that choice. You feel the life you built slipping away, and you do not know how to move forward. Admitting that you are lost is not weakness."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.42",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 42",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: how good things are slowly lost.",
+     "sanskrit": "दौर्मन्त्र्यान्नृपतिर्विनश्यति यतिः सङ्गात् सुतो लालनाद् विप्रोऽनध्ययनात् कुलं कुतनयाच्छीलं खलोपासनात् । ह्रीर्मद्यादनवेक्षणादपि कृषिः स्नेहः प्रवासाश्र- यान्मैत्री चाप्रणयात् समृद्धिरनयात् त्यागः प्रमादाद्धनम् ॥",
+     "line": "Affection fades with distance, friendship without warmth, wealth with carelessness, a child with spoiling.",
+     "translation": "A king is ruined by bad counsel, an ascetic by attachment, a son by spoiling, a brahmin by neglecting study, a family by a wayward son, character by serving the wicked, modesty by drink, farming by neglect, affection by living far away, friendship by lack of warmth, prosperity by bad conduct, and wealth by careless spending.",
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "Distance strains affection; it does not doom it. The verse is a call to tend what you love.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 2.8548,
+     "beat": "diagnose",
+     "role_fit": 0.51,
+     "meaning": "Bhartrihari looks at how the world works. He lists how easily good things fall apart. Affection fades when people live far apart. Friendship dies without warmth. Wealth vanishes through careless hands. The point is not that you are ruined. It is that things change when they are left untended, and the world often values what you have more than who you are.",
+     "for_you": "The shame you feel is a second layer on top of the loss. You traded your place for your son's future, and now you drive through the cold. The world sees your reduced role. But that verdict is not the final word."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "diaspora_identity",
+       "label": "I don't feel fully at home anywhere"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.6904,
+     "beat": "steady",
+     "role_fit": 0.245,
+     "meaning": "Krishna is with Arjuna on the field, looking at the cost of this war. He tells Arjuna that his own path is the one he must walk, even if it is flawed and messy. The right way to live is to do the work that is born from your own nature. If you do your own work as an offering, you do not incur any wrong. You do not have to be perfect to be whole.",
+     "for_you": "You are driving through the cold night, and that is your work right now. It is not the senior role you held, but it is still your path. You do not have to do it perfectly to be doing it right. Let the work be an offering of what you have today."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 2.6564,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari is speaking to the reader about steadfastness. He says let people praise or blame, let money come or go, let death come today or ages hence. The steadfast do not step off the right path. The point is that those who keep going on the right path are rarely stopped by setbacks. The gods kept churning the ocean past jewels and poison until they found nectar.",
+     "for_you": "You belong more than you feel right now; the people and the practice that hold you are still within reach."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.1188,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is telling Nidagha how a person who has found freedom moves through the world. They do the work that is right in front of them. They see friends and foes as the same. They let go of wanting and not wanting. Such a person neither grieves nor craves. They speak what is agreeable to all. They speak gently when asked. They understand the intent in others' hearts. Because of this, they do not sink in the world. The teaching is to live fully in the world while staying unhurried inside.",
+     "for_you": "You are trying to hold your ground on what is yours, without shrinking. Today, when the cold feels like it is taking your worth, speak one true and gentle thing to yourself. Let it be enough that you are doing the work in front of you, even if it is driving through the dark."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.0554,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is telling Arjuna to act without being chained to results. Your right is only to the work itself, never to its fruits. Do not let the outcome be your motive, and do not cling to doing nothing. The teaching is to do the work fully, and to let go of owning the result. This is not about not caring. Care, plan and aim well. Just do not let the outcome own you. Keep a single steady purpose.",
+     "for_you": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.ram_despondency",
+     "title": "Rama comes home from his pilgrimage and loses interest in everything",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Rama",
+      "Dasharatha",
+      "Rama's attendants",
+      "Vishvamitra",
+      "Vasishtha"
+     ],
+     "story_hook": "The prince who had everything came back from his travels and stopped laughing.",
+     "summary": "Sixteen-year-old Rama returns from a long pilgrimage and quietly withdraws: he stops eating properly, stops laughing, ignores his duties and sits alone. His attendants tell the worried king. Vishvamitra and Vasishtha say this is not illness or weakness but the first stirring of real questions, and ask that Rama be brought to them.",
+     "lesson": "Losing interest in everything can be the start of asking better questions, if someone helps you through it.",
+     "matched": [],
+     "anchor": {
+      "id": "yv.1.10.9",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 10.9",
+      "family": "yv",
+      "speaker": "Rama's attendant",
+      "listener": "King Dasharatha",
+      "setting": "Rama's attendants tell King Dasharatha how the prince has changed since his pilgrimage.",
+      "sanskrit": "रामो राजीवपत्राक्षो यतःप्रभृति चागतः । सविप्रस्तीर्थयात्रायास्ततःप्रभृति दुर्मनाः ॥",
+      "line": "Ever since he came back from the trip, he hasn't been himself.",
+      "translation": "Ever since lotus-eyed Rama came back from his pilgrimage with the brahmins, he has been low in spirit.",
+      "why": "Losing interest in everything can be the start of asking better questions, if someone helps you through it.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.ram_despondency",
+       "title": "Rama comes home from his pilgrimage and loses interest in everything",
+       "summary": "Sixteen-year-old Rama returns from a long pilgrimage and quietly withdraws: he stops eating properly, stops laughing, ignores his duties and sits alone. His attendants tell the worried king. Vishvamitra and Vasishtha say this is not illness or weakness but the first stirring of real questions, and ask that Rama be brought to them.",
+       "story_hook": "The prince who had everything came back from his travels and stopped laughing.",
+       "lesson": "Losing interest in everything can be the start of asking better questions, if someone helps you through it."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Rama came home from his pilgrimage and stopped laughing",
+     "teaser": "Rama came home from his pilgrimage and stopped laughing",
+     "for_you": "The man who drove through the cold to build a future is now sitting alone, unable to laugh. This is not a failure of the life you built. It is a sign that a deeper question is waiting to be asked, if you let someone walk with you into it."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The price you paid",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 236,
+   "llm": 5201,
+   "total": 11762,
+   "select": 6317
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting in the cab of a truck in the dark, and the cold is seeping into your bones. Your wife is crying about the cold back at the house. You traded a senior role to build a future for your son, and now you are driving alone at night in Canada."
+  ],
+  [
+   "scene",
+   "Arjuna has laid down his bow on the battlefield. His body is heavy, his mind empty. He has collapsed in tears and refuses to fight. He turns to Krishna, his charioteer and friend, and admits that he sees no kingdom, no heaven, no victory that could wash away the grief eating him from the inside. He is telling the truth: he does not know what to do, and he is asking for a way through. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "Arjuna is admitting that he does not know the answer. He is asking for help. This is where clarity begins. It is easier said than done, because we are taught to have the answer, to be the one who fixes things. To stand in front of someone and say I do not know is to admit you are small. But it is also the only way to be seen."
+  ],
+  [
+   "for_you",
+   "Tonight, let the cold be what it is. You do not have to fix the life you built. You do not have to have the answer for your son. You do not have to have the answer for your wife. You only have to be the one who admits you are lost."
+  ],
+  [
+   "close",
+   "What would it look like to let the grief dry you up for a little while longer?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit behind the wheel in the dark, the cold pressing against the glass, and you feel the life you built slipping away. You are grieving the future you wanted and ashamed that it is not here yet.",
+  "points": "Arjuna felt that even a kingdom could not touch his grief. Your worth is not measured by the road you drive or the role you held. The pain is real, and it is not a sign that your sacrifice was worthless.",
+  "practice": "Name the grief aloud. Tell your wife or a child what you are missing tonight.",
+  "question": "What is the smallest part of the life you lost that you can still hold onto?"
+ }
+}

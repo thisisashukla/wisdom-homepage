@@ -1,0 +1,507 @@
+{
+ "persona": {
+  "id": "in_genx_father_layoff",
+  "market": "India (Pune)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "49, IT services manager in Pune, 22 years in the same company, laid off last month. Daughter in 11th, home loan, aging mother.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "shocked and silently carrying it",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "From being let go in ten minutes to remembering what twenty two years built in you, and the one thing you can do today to hold it.",
+   "week_beats": {
+    "hook": "You recognise the shock and the silence, named without judgement.",
+    "diagnose": "You see that the call was their smallness, and that the mind has taken it in as proof of your worth.",
+    "steady": "You hold that what is real in you cannot be taken by a call.",
+    "act": "You try speaking the true thing to yourself, and doing one small duty that is yours alone.",
+    "story": "A man of twenty two years who was dismissed in a moment shows you what they could not take."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.8,
+   "core_struggle": "After twenty two years, was let go in a ten minute call and is carrying the shock alone while his body still wakes as if he has to go to the office.",
+   "mirror": "You were let go in ten minutes, and every morning at six your body still shows up for a job that no longer exists.",
+   "insight": "The call was their smallness, not your measure. What you are is not what they let go. What you are is what they could not see in twenty two years.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.92,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.78,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being let go after twenty two years in a single call, and the shock of it that you are carrying alone while your body still wakes as if the job is there.",
+    "diagnose": "When someone else's smallness is taken in as proof, the harm deepens; the wound is theirs, but the mind makes it your measure.",
+    "steady": "What is real in you cannot be taken by a ten minute call; the dignity they did not see in twenty two years is still yours.",
+    "act": "Speak the true thing to yourself, hold your ground on what is yours, and do your own duty without letting their picture replace your own.",
+    "story": "A man who gave twenty two years to one place, was dismissed in a moment, and found that the only thing they could not take was what he already was."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The call that took twenty two years",
+    "What they could not see",
+    "The one thing you still are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "twenty two years in one company",
+    "was let go in a ten minute call"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "bridge:copied_example",
+    "seat:missing",
+    "week_fit:34=0.6,69=0.3,49=0.6,10=0.7,47=0.0,5=0.4",
+    "week_fit:swapped=2",
+    "redo:3",
+    "redo_fixed:3",
+    "dropped:blame=1,fallback_line=1,verdict=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 1.5718,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that after all the teaching, his mind still feels like the wind. He says it is restless, turbulent, stubborn and strong, and that holding it is as hard as catching the air. Krishna does not argue. He says this is the nature of the mind, but that through practice and letting go, it can be trained. The verse offers the truth that a restless mind is not a personal failure, but a condition that can be worked with.",
+     "for_you": "Your body still wakes to the office. That is the mind caught in the wind, still pulling at the old shape. Let it pull for a while. You do not have to hold it still. You only have to notice the pull, and let it pass."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.7162,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, answering what a steady person looks like. He explains that when someone dwells on objects, attachment grows. From that attachment comes wanting, and when that wanting is blocked, it turns into anger. Krishna is tracing the exact path that leads to ruin. The mind does not simply feel angry. It becomes angry because it has been dwelling on what it has lost and what it wants back.",
+     "for_you": "Your mind is dwelling on the ten-minute call, and it is turning that shock into anger at your own worth. That is not proof. That is just the mind following its old habit of clinging to what it thinks it needs."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.10",
+     "ref": "Ashtavakra Gita 15.10",
+     "ref_iast": "Aṣṭāvakra Gītā 15.10",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "देहस्तिष्ठतु कल्पान्तं गच्छत्वद्यैव वा पुनः । क्व वृद्धिः क्व च वा हानिस्तव चिन्मात्ररूपिणः ॥",
+     "line": "Whether the body lasts a hundred years or ends today, what you are neither gains nor loses.",
+     "translation": "Let the body last till the end of the age, or let it go today: what gain or loss is that to you, who are pure awareness?",
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 3.101,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ashtavakra speaks to Janaka, pressing home that the core of a person is not the body or the mind but pure awareness. He tells Janaka that whether the body lasts a hundred years or ends today, what he truly is gains nothing and loses nothing. The body and the mind are waves on the ocean, but the ocean itself remains untouched by their rising and falling.",
+     "for_you": "The call was a wave, and your body still wakes as if the tide is coming in. But what you are is the ocean. Let the wave of that smallness rise and fall without touching the depth you have built over twenty-two years."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.27.49",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.49",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "न ह्यहानि निवर्तन्ते न मासा न पुनः समाः / जातानां सर्वभूतानां न पुनर्वै समागमः",
+     "line": "Days don't come back, nor months, nor years. Be here for the ones in front of you.",
+     "translation": "Days do not come back, nor months, nor years. And beings, once parted, do not meet again in the same way.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.101,
+     "beat": "steady",
+     "role_fit": 0.514,
+     "meaning": "The sage Ashma speaks to King Janaka, who is grieving the loss of his family and wealth. Ashma tells him that time does not return. Days, months, and years are gone forever, and once beings part, they do not meet again in the same way. The point is that pain comes from what we lose and what we did not want. Since the past cannot be reclaimed, we must grieve and then steady the mind by being fully present for the people still standing before us.",
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.1965,
+     "beat": "act",
+     "role_fit": 0.541,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, not as a commander but as a guide. He has just explained that the mind is hard to control. Now he tells Arjuna that no one else can save him. You could be your own ally. You are the only one who can lift your spirit when it falls. The same self that can drag you down is the only one that can pull you back up.",
+     "for_you": "The shock is still sitting in your chest, but today you can speak the true thing to yourself. Do one small duty that is yours alone. Make the bed, or fold the clothes, or call the parent far away. Lift yourself by your own hand, and do not push yourself down."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.0819,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to hold himself in contempt or settle for little. She says to set his mind on what is truly good and stop fearing. She tells him to pull himself together. She says past failure does not define him. Results are uncertain, but those who never try never succeed.",
+     "for_you": "You have twenty two years behind you, not ten minutes. Do one small thing today that is yours alone, a duty that no one else can take from you."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.ram_accepts_exile",
+     "title": "Ram accepts exile",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharatha",
+      "Lakshman"
+     ],
+     "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+     "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+     "lesson": "You cannot control the news; you can control the person who walks out of the room.",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.19.32",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.32",
+      "family": "vr",
+      "speaker": "Narrator",
+      "listener": "",
+      "setting": "Ram walks out of the palace, having lost the throne he was to receive that morning.",
+      "sanskrit": "न वनं गन्तुकामस्य त्यजतश्च वसुंधराम्। सर्वलोकातिगस्येव लक्ष्यते चित्तविक्रिया॥",
+      "line": "He had just lost the kingdom, and his mind showed no change at all.",
+      "translation": "As he set out for the forest and gave up the earth, no change could be seen in his mind, as if he stood beyond the world.",
+      "why": "You cannot control the news; you can control the person who walks out of the room.",
+      "misuse": "Calm in loss is not pretending it does not hurt; Ram grieves elsewhere in the story.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.ram_accepts_exile",
+       "title": "Ram accepts exile",
+       "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+       "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+       "lesson": "You cannot control the news; you can control the person who walks out of the room."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram went to be crowned and came out exiled for fourteen years",
+     "teaser": "Ram went to be crowned and came out exiled for fourteen years",
+     "for_you": "Ram lost his kingdom in a moment, and his mind showed no change at all. You too can walk out of that room and choose who you will be. That is the only thing they cannot take."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The call that took twenty two years",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 140,
+   "llm": 4457,
+   "total": 15740,
+   "select": 11135
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying a shock that has no shape yet. Your body wakes and reaches for a routine that is no longer there. That is the first thing to know. You do not have to fix the wakefulness right now."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the field, his hands heavy and his breath short. He has heard the teaching, but his mind still spins like leaves in a storm. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Krishna does not tell Arjuna to force the mind still. He says the restlessness is the nature of the mind itself, not a mark of weakness. What is asked of you is not to conquer the shock, but to practice returning your attention to the ground beneath you. This is easier said than done, because the mind will keep reaching for the old shape. But each time you notice the pull and let it pass, the muscle of returning grows."
+  ],
+  [
+   "for_you",
+   "When you wake and your hand reaches for a door that is no longer there, place your palm flat against the wall. Feel the solid surface. Let the reach be there, and let the wall be there too. Do not fight the reach."
+  ],
+  [
+   "close",
+   "Let the wind move. You are the ground it moves across."
+  ]
+ ],
+ "depth": {
+  "life": "Your body still wakes as if the office is waiting. The shock sits heavy and silent. You are carrying the ten minute call alone while your mind pulls at the shape of the last twenty two years.",
+  "points": "The mind is restless and stubborn. It is not your failure that it is hard to hold. It is simply the nature of the mind to pull at what it knows, especially when that knowledge is suddenly gone.",
+  "practice": "Notice the pull toward the office when it comes. Let it be there without fighting it for one full minute.",
+  "question": "What does the mind pull at most when you first wake?"
+ }
+}

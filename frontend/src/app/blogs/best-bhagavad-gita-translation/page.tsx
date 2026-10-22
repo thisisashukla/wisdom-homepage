@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Which Bhagavad Gita Translation Should You Read? — Every Major English Version, Compared | Wisdom",
+  title: "Best Bhagavad Gita Translation in English (2026), Compared",
   description: "Which Bhagavad Gita translation is best for you? A side-by-side reader's guide to Eknath Easwaran, Winthrop Sargeant, Prabhupada's As It Is, Stephen Mitchell, Radhakrishnan, Bibek Debroy and more — with excerpts, honest criticisms, and who each version is actually written for.",
   keywords: "best bhagavad gita translation, which bhagavad gita to read, bhagavad gita as it is review, sadhak sanjivani english, eknath easwaran gita, gita press bhagavad gita, shankara gita bhashya english, bhagavad gita for beginners, gita rahasya tilak, jnaneshwari english, bibek debroy gita, bhagavad gita commentary comparison",
   openGraph: {
@@ -750,12 +751,12 @@ export default function BestGitaTranslationPage() {
     </div>
 
     <div className="content">
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Best Bhagavad Gita Translation"} />
+      <VerseFunnelCTA variant="chapter" locale="en" pageName={"Best Bhagavad Gita Translation"} />
     </div>
 
     <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> &mdash; <a href="https://wisdomquotes.in/blogs">Blog</a> &mdash; <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> &mdash; <a href="https://wisdomquotes.in/blogs">Blog</a> &mdash; <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
     </footer>
 
       <BlogTracker pageName="Best Bhagavad Gita Translation" />

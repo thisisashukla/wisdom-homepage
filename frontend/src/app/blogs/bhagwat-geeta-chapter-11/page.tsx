@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 11 — All 55 Verses, the Cosmic Form & Oppenheimer's Quote | Wisdom",
+  title: "Bhagavad Gita Chapter 11 — All 55 Verses, the Cosmic Form & Oppenheimer's Quote",
   description: "Vishwarupa Darshana Yoga: Arjuna asked to see Krishna's true form — and immediately begged him to stop. All 55 verses with Sanskrit, Hindi and English meaning, including 11.32, the verse Oppenheimer quoted at Trinity.",
   keywords: "bhagwat geeta chapter 11, bhagavad gita vishwarupa darshana yoga, bhagwat geeta adhyay 11, kaloasmi loka kshaya krit pravriddho, thousand suns gita, cosmic form bhagavad gita, I am time the destroyer of worlds, nimitta matram bhava, Vishwarupa Darshana Yoga meaning, Bhagavad Gita 11.12 thousand suns, Bhagavad Gita 11.32 kalo asmi loka kshaya krit, I am Time the destroyer of worlds meaning, Bhagavad Gita 11.33 nimitta matram bhava, Krishna cosmic form Bhagavad Gita, Oppenheimer Bhagavad Gita quote, Oppenheimer bhagavad gita verse, I am time the destroyer of worlds full context",
   openGraph: {
@@ -1053,7 +1054,7 @@ export default function ChapterPage11() {
           </div>
         </div>
 
-          <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 11"} />
+          <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 11"} />
 
         </article>
       </div>
@@ -1063,12 +1064,12 @@ export default function ChapterPage11() {
         <p>
           Wisdom © 2026. Part of a{' '}
           <a
-            href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+            href={appStoreUrl('web_blog_footer')}
             target="_blank"
             rel="noopener"
             data-mp-location="footer"
           >free iPhone app</a>{' '}
-          that delivers daily Bhagavad Gita shlokas. Made with reverence.
+          that tunes the Bhagavad Gita to your life, one verse a day. Made with reverence.
         </p>
         <p style={{ marginTop: '8px' }}>
           <a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>

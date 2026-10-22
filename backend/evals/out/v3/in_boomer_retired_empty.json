@@ -1,0 +1,491 @@
+{
+ "persona": {
+  "id": "in_boomer_retired_empty",
+  "market": "India (Lucknow)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "66, retired bank officer in Lucknow, wife passed 2 years ago, son in Toronto, daughter in Mumbai. Reads the Gita occasionally, wants to understand it properly.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 3,
+   "topic": "meaning",
+   "follow": "after_retiring"
+  },
+  "note": "after my wife left us the house is very quiet. children call on sunday. I have time now and I want to read Gita properly not just the shlokas everyone forwards on whatsapp",
+  "note_source": "voice",
+  "expect_stance": "seeking"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "quietly searching and open",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "This week turns the quiet house and the forwarded verses into a doorway, by letting the text speak to you first.",
+   "week_beats": {
+    "hook": "You recognise the wish to read for yourself, not for others, and the quiet that makes it possible.",
+    "diagnose": "You see that meaning is missing when we live only for what passes, and the forwarded verse is the proof of it.",
+    "steady": "You hold that you are more than the roles you filled, and the text is a doorway, not a proof.",
+    "act": "You try reading one verse slowly, letting it sit, and writing one line of what it says to you, without sharing it.",
+    "story": "An old man who had read the verses his whole life and, in retirement, sat with a teacher to hear what they truly meant."
+   },
+   "confidence": 0.7,
+   "core_struggle": "A widower with quiet days and a wish to read the Gita properly, not just forwarded verses.",
+   "mirror": "The house is very quiet, and the forwarded verses are not enough anymore.",
+   "insight": "The quiet is not the problem. It is the space where something deeper can begin, if you let the verses speak to you and not the other way around.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.941,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.125,
+     "source": "chip"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.055,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.838,
+     "source": "chip"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.59,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to read the Gita for what it says, not for what it proves, in the quiet that follows a life well lived.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "You are more than the roles you filled or the verses you forwarded; the text is not a proof but a doorway.",
+    "act": "Read one verse slowly, let it sit, and write one line of what it says to you, without sharing it.",
+    "story": "An old man who had read the verses his whole life and, in retirement, sat with a teacher to hear what they truly meant."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet house",
+    "What the verses say",
+    "The one who reads"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "wife has passed away",
+    "house is very quiet",
+    "children call on Sunday",
+    "wants to read the Gita properly"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "retried:1",
+    "redo:2",
+    "redo_fixed:0",
+    "dropped:copied=1,fallback_line=2,missing=1,not_second_person=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.56",
+     "ref": "Bhagavad Gita 18.56",
+     "ref_iast": "Bhagavad Gītā 18.56",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Near the end, Krishna tells Arjuna that a busy, working life is no barrier.",
+     "sanskrit": "सर्वकर्माण्यपि सदा कुर्वाणो मद्व्यपाश्रयः । मत्प्रसादादवाप्नोति शाश्वतं पदमव्ययम् ॥",
+     "line": "Doing all their work while leaning on me, they reach the lasting home, by my grace.",
+     "translation": "Even while always doing every kind of work, the one who leans on me reaches the eternal, imperishable home by my grace.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": null,
+     "score": 2.4124,
+     "beat": "hook",
+     "role_fit": 0.2,
+     "meaning": "Krishna tells Arjuna near the end of the Gita that a busy life is no barrier to the deepest truth. Even while always doing every kind of work, the one who leans on me reaches the eternal, imperishable home by my grace. The idea is simple. You do not have to stop your life to find what lasts. You only have to lean, to let the weight of your days rest on something larger than the noise of the world. This week begins with that permission.",
+     "for_you": "The quiet house is not empty. It is the place where you can finally set your own work down and lean. Let the Gita meet you here, in the stillness, without the need to forward anything to anyone else."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0113,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "Prajapati's teaching in the Chhandogya Upanishad says that we pass our own treasure every day without finding it. As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth. The verse points to a pattern.",
+     "for_you": "The forwarded verses are a sign of this pattern. They offer a glimpse of a hidden gold you walk over each day. Let the text speak to you first, before you pass it on."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.8",
+     "ref": "Ashtavakra Gita 15.8",
+     "ref_iast": "Aṣṭāvakra Gītā 15.8",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "श्रद्धस्व तात श्रद्धस्व नात्र मोऽहं कुरुष्व भोः । ज्ञानस्वरूपो भगवानात्मा त्वं प्रकृतेः परः ॥",
+     "line": "Have faith, my child, have faith. You are more than everything that happens to you.",
+     "translation": "Have faith, my son, have faith. Do not be confused about this. You are knowledge itself, the Lord, the Self beyond nature.",
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 3.0062,
+     "beat": "steady",
+     "role_fit": 0.775,
+     "meaning": "Ashtavakra presses his core teaching to Janaka. He tells him to have faith and not be confused. You are knowledge itself, the Lord, the Self beyond nature. The point is that you are the ocean, not the waves. Let the waves of life rise and fall without losing yourself. Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the awareness in which they all appear. He urges faith, an end to grief, and rest from endless deliberation.",
+     "for_you": "Yesterday's verse named the grip. Today, you can hold that you are more than the roles you filled. The text is a doorway, not a proof. You are the space in which the quiet and the search both live, and you are not lost in either."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.14.53",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 14.53",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on the second gatekeeper: inquiry (vichara).",
+     "sanskrit": "विचाराज्ज्ञायते तत्त्वं तत्त्वाद्विश्रान्तिरात्मनि । अतो मनसि शान्तत्वं सर्वदुःखपरिक्षयः ॥",
+     "line": "Inquiry leads to truth, truth to inner rest, rest to a calm mind, and a calm mind ends sorrow.",
+     "translation": "Through inquiry, truth is known; through truth, rest in oneself; from that comes a calm mind, and from that, the end of all sorrow.",
+     "why": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.four_gatekeepers",
+      "title": "The four gatekeepers: calm, inquiry, contentment, good company",
+      "summary": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others.",
+      "story_hook": "",
+      "lesson": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow."
+     },
+     "score": 2.7453,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Vasishtha is speaking to Rama, who is asking what truly frees a person from sorrow. Vasishtha tells him that four qualities stand at the door to freedom: a calm mind, the habit of inquiry, contentment, and the company of those who are clear. He says you do not have to open all four doors at once. If you choose just one, it will open the others on its own. Inquiry is the key that begins the turning.",
+     "for_you": "What passes cannot fill the heart; turning toward what lasts gives each day a quiet purpose."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.8",
+     "ref": "Bhagavad Gita 12.8",
+     "ref_iast": "Bhagavad Gītā 12.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna begins his ladder of practices with the simplest instruction.",
+     "sanskrit": "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय । निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः ॥",
+     "line": "Rest your mind in me, settle your thinking in me, and you will live in me.",
+     "translation": "Fix your mind on me alone, let your understanding settle in me; from then on you will dwell in me. Of this there is no doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 3.1802,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is speaking to Arjuna, who is anxious to know the easiest way to reach him. Krishna tells him to fix his mind on him alone and let his understanding settle there. When the mind stops scattering, it begins to rest in the one place it belongs. From that settled place, Arjuna will live in Krishna fully, and there will be no doubt about it.",
+     "for_you": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.7.1",
+     "ref": "Bhagavad Gita 7.1",
+     "ref_iast": "Bhagavad Gītā 7.1",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna opens the teaching on knowing him fully.",
+     "sanskrit": "श्री भगवानुवाचमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः । असंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु ॥",
+     "line": "Keep your mind attached to me, lean on me, keep practising. You will come to know me fully.",
+     "translation": "Hear, Partha, how with your mind attached to me, practising yoga and taking refuge in me, you will know me fully, without doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.7239,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "The act you tried yesterday is the ground for today. Read one more verse slowly, let it sit, and write one line of what it says to you, without sharing it."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "You have gathered your own offerings for decades, waiting for a truth you could not yet name. Today, see that this quiet house was never empty. It was the forest you were tending, and the guest you were preparing for has already arrived. What you have kept is not lost time."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet house",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 153,
+   "llm": 4441,
+   "total": 12583,
+   "select": 7984
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The quiet house is not just empty. It holds the space you have built over decades. You are not lost. You are simply listening to what remains when the noise of work and family has settled."
+  ],
+  [
+   "scene",
+   "Krishna speaks to Arjuna on the battlefield. Arjuna is paralyzed by grief and doubt about what to do next. Krishna has just explained that a person can reach the deepest truth even while performing every kind of duty. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "सर्वकर्माण्यपि सदा कुर्वाणो मद्व्यपाश्रयः, मत्प्रसादादवाप्नोति शाश्वतं पदमव्ययम्."
+  ],
+  [
+   "line",
+   "In plain words: Doing all their work while leaning on me, they reach the lasting home, by my grace."
+  ],
+  [
+   "unpack",
+   "This is not a rule to stop working. It is a truth about how work itself becomes a path. You do not have to retire from life to find what lasts. You only have to let the weight of your days rest on something larger than the world's noise. That is what leaning means. It is not passivity. It is an active trust in the midst of action."
+  ],
+  [
+   "for_you",
+   "Today, let the Gita meet you in the stillness of your own home. Read without the need to forward anything to anyone else. Let the quiet hold your attention, and let the text speak to you first."
+  ],
+  [
+   "close",
+   "What if your work right now is simply to be here?"
+  ]
+ ],
+ "depth": {
+  "life": "The quiet house is not empty. It is the place where you can finally set your own work down and lean. Let the Gita meet you here, in the stillness, without the need to forward anything to anyone else.",
+  "points": "The texts call this searching for what it's all for. You have spent a lifetime doing every kind of work, and now the work has stopped. The searching is not a problem to fix. It is the space where you can finally set your own work down and lean.",
+  "practice": "Sit with the verse for five minutes. Let it be about you, not about what you will send to anyone else.",
+  "question": "What would it mean to let the text speak to you first?"
+ }
+}

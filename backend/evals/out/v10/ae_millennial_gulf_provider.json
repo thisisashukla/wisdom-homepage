@@ -1,0 +1,512 @@
+{
+ "persona": {
+  "id": "ae_millennial_gulf_provider",
+  "market": "UAE (Dubai)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "35, works in logistics in Dubai for 11 years, sends money to parents and brother in Kerala, brother's wedding and father's surgery this year. Wife wants to move back.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "11 years in dubai sending money home. brothers wedding, fathers heart surgery, both this year. my wife wants to go back to india. everyone needs something from me and I don't know what I need",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "pulled apart and empty",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "From a mind pulled in every direction to a single duty chosen by him alone, and the rest let go.",
+   "week_beats": {
+    "hook": "You recognise the restlessness as being pulled in every direction, named without blame.",
+    "diagnose": "You see that the restless mind is the mind with no single duty chosen with care.",
+    "steady": "You hold that praise and blame, gain and loss come and go, and the mind can stay the same in all of them.",
+    "act": "You try giving the mind one hour a day on a single duty chosen by you alone, and let the rest go.",
+    "story": "A man who sent money home for eleven years shows you what it means to choose one duty and let the rest go."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "partner",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "After eleven years abroad and two family crises this year, he is being pulled in every direction and no longer knows what he needs.",
+   "mirror": "You send money, you attend, you plan, and at night you lie awake with no answer for yourself.",
+   "insight": "It is not the work you cannot switch off from. It is the fact that no one has asked what you need, and the mind that is never asked cannot settle.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.755,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.77,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.6,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A mind that will not settle, pulled in every direction by a family that needs him, with no hour of his own and no answer for what he needs.",
+    "diagnose": "When the mind is pulled in every direction and never given one thing to hold, it becomes its own enemy; the restless mind grows from a life with no single duty chosen with care.",
+    "steady": "Praise and blame, gain and loss, victory and defeat come and go; stay the same in them all, and do not let them turn the mind against itself.",
+    "act": "Let the mind rest for one hour a day on a single duty chosen by you alone; let the rest go, and let the mind be still.",
+    "story": "A man who sent money home for eleven years, faced his father's illness and his brother's wedding, and found that the only way to settle was to choose one duty and let the rest go."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The mind pulled apart",
+    "The duty you choose",
+    "The one who rests"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "eleven years in Dubai sending money home",
+    "father had heart surgery this year",
+    "wife wants to return to India"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "life:invented_person",
+    "life_context:missing",
+    "seat:missing",
+    "week_fit:34=0.6,34=0.6,17=0.0,20=0.6,536=1.0,26=1.0",
+    "week_fit:swapped=1",
+    "retried:2",
+    "redo:4",
+    "redo_fixed:2",
+    "dropped:fallback_line=1,gendered=1,invented_name=1,repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.4706,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless and hard to hold. He says it is like trying to catch the wind. Krishna agrees. He says the mind is stubborn and strong, but it can be trained through practice and by letting go of what pulls it apart.",
+     "for_you": "You are pulled in every direction. The mind that is never asked what it needs will not settle. This restlessness is not a failure. It is the mind asking for the space to be still."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 3.7283,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Two old friends meet again after years apart, one admitting he never found peace. The mind carries along on endless waves of tasks. It says, this I have done, this I am doing, this I will do. Caught in this net of reckonings, the bird of the mind faints. Years of hard effort without inner understanding leave you exactly where you started, spinning through lists that never end.",
+     "for_you": "You are on eleven years of sending money and now a father's surgery. The mind keeps running the list: what is done, what is doing, what must be done. Let the list be there, but notice the bird of the mind is tangled in it. The rest is just the net, not the sky."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.20",
+     "ref": "Bhagavad Gita 5.20",
+     "ref_iast": "Bhagavad Gītā 5.20",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+     "sanskrit": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् । स्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः ॥",
+     "line": "Don't get carried away by good news or crushed by bad. Keep your understanding steady.",
+     "translation": "One should not rejoice on getting what is pleasant nor be troubled on getting what is unpleasant. Steady in understanding and undeluded, the knower of Brahman abides in Brahman.",
+     "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p05.3",
+      "title": "The yoga of knowledge",
+      "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+      "story_hook": "",
+      "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+     },
+     "score": 3.6579,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He is telling him that the one who truly knows the self does not get carried away by good news or crushed by bad. They see pleasure and pain as things that come and go. They do not let these passing events shake their understanding. They stay steady and find their happiness within. This is the way to abide in what is real.",
+     "for_you": "Your mind is pulled by the eleven years of money sent, the father's surgery, and the wife's wish to return. You do not have to let each of these events crush you. You can hold them all without letting any one of them break your steady understanding."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.146.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 146",
+     "family": "rcm",
+     "speaker": "Sumantra",
+     "listener": "Dasharath",
+     "setting": "Sumantra returns alone to the grieving king Dasharath and steadies him.",
+     "sanskrit": "जनम मरन सब दुख सुख भोगा। हानि लाभु प्रिय मिलन बियोगा॥ काल करम बस होहिं गोसाईं। बरबस राति दिवस की नाईं ॥ सुख हरषहिं जड़ दुख बिलखाहीं। दोउ सम धीर धरहिं मन माहीं॥ धीरज धरहु बिबेकु बिचारी। छाड़िअ सोच सकल हितकारी ॥",
+     "line": "Gain and loss, meeting and parting come like day and night. The steady hold both alike.",
+     "translation": "Birth and death, joy and sorrow, loss and gain, meeting and parting with those we love: these come under the sway of time and action, as surely as night and day. The foolish rejoice in good times and wail in bad; the steady hold both alike in the mind. Hold on to your courage, think with discernment, and let go of worry, you who care for everyone.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": null,
+     "score": 3.1929,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": null,
+     "for_you": "You are not the mind; thoughts come and go before the silent witness that watches them and is never disturbed."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.3872,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu speaks to Nidagha, showing him how a free person lives in the world. A free person is busy on the outside and unhurried inside. They act fully, taking up what comes and letting go of what is lost. They do the work at hand, speak gently, and treat the whole world as family, without letting any of it agitate their inner stillness.",
+     "for_you": "You can be busy on the outside and unhurried inside. Try giving your mind one hour a day on a single duty chosen by you alone, and let the rest go. Act fully, but let the rest of the world wait."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.26",
+     "ref": "Bhagavad Gita 6.26",
+     "ref_iast": "Bhagavad Gītā 6.26",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् । ततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ॥",
+     "line": "Wherever the restless mind wanders, gently bring it back. Again and again.",
+     "translation": "Wherever the restless, unsteady mind wanders, from there one should draw it back and bring it under the control of the self.",
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 3.2851,
+     "beat": "act",
+     "role_fit": 0.489,
+     "meaning": "Krishna is teaching Arjuna how to sit with the mind. He tells him that the mind will wander, and it will wander again. The only work is to notice where it has gone and to bring it back, gently and again. This is not a battle. It is a quiet return, over and over, until the mind rests in one place.",
+     "for_you": "You have been abroad for eleven years and the pull is constant. Tonight, when the work calls and the worry rises, give the mind one hour on a single duty you choose. Let the rest of the evening go. Do not hold it all at once."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.ram_despondency",
+     "title": "Rama comes home from his pilgrimage and loses interest in everything",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Rama",
+      "Dasharatha",
+      "Rama's attendants",
+      "Vishvamitra",
+      "Vasishtha"
+     ],
+     "story_hook": "The prince who had everything came back from his travels and stopped laughing.",
+     "summary": "Sixteen-year-old Rama returns from a long pilgrimage and quietly withdraws: he stops eating properly, stops laughing, ignores his duties and sits alone. His attendants tell the worried king. Vishvamitra and Vasishtha say this is not illness or weakness but the first stirring of real questions, and ask that Rama be brought to them.",
+     "lesson": "Losing interest in everything can be the start of asking better questions, if someone helps you through it.",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "anchor": {
+      "id": "yv.1.10.9",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 10.9",
+      "family": "yv",
+      "speaker": "Rama's attendant",
+      "listener": "King Dasharatha",
+      "setting": "Rama's attendants tell King Dasharatha how the prince has changed since his pilgrimage.",
+      "sanskrit": "रामो राजीवपत्राक्षो यतःप्रभृति चागतः । सविप्रस्तीर्थयात्रायास्ततःप्रभृति दुर्मनाः ॥",
+      "line": "Ever since he came back from the trip, he hasn't been himself.",
+      "translation": "Ever since lotus-eyed Rama came back from his pilgrimage with the brahmins, he has been low in spirit.",
+      "why": "Losing interest in everything can be the start of asking better questions, if someone helps you through it.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "burnout",
+        "label": "I'm burned out and running on empty"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.ram_despondency",
+       "title": "Rama comes home from his pilgrimage and loses interest in everything",
+       "summary": "Sixteen-year-old Rama returns from a long pilgrimage and quietly withdraws: he stops eating properly, stops laughing, ignores his duties and sits alone. His attendants tell the worried king. Vishvamitra and Vasishtha say this is not illness or weakness but the first stirring of real questions, and ask that Rama be brought to them.",
+       "story_hook": "The prince who had everything came back from his travels and stopped laughing.",
+       "lesson": "Losing interest in everything can be the start of asking better questions, if someone helps you through it."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Rama came home from his pilgrimage and stopped laughing",
+     "teaser": "Rama came home from his pilgrimage and stopped laughing",
+     "for_you": "Rama chose one duty and let the rest go. You can choose one duty and let the rest go. You are not required to carry the weight of eleven years of money sent, the father's surgery, and the wife's wish to return all at once. You can choose one duty and let the rest go."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The mind pulled apart",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 135,
+   "llm": 5682,
+   "total": 15279,
+   "select": 9455
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are pulled in every direction. You are running on empty, and the weight of it is heavy right now. You have given so much of your life to work and to your parents. It is natural to feel hollowed out when you are giving and there is nothing left to receive."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. He has just heard Krishna explain how to steady the mind. But Arjuna is overwhelmed. He looks at his family across the field and feels the pull of duty and grief. He turns to Krishna and admits his limits. And Krishna listens. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Krishna does not deny what Arjuna feels. He agrees the mind is restless and strong. He does not promise it will be easy. He says it can be trained, but only through steady practice and by letting go of what pulls it apart. This is not about forcing the mind to be quiet. It is about choosing one thing to hold and allowing the rest to fall away."
+  ],
+  [
+   "for_you",
+   "Right now, your mind is holding the work, the money, the return to India, and the health of your parents. That is too much. Pick one small duty for this evening that belongs only to you. Let the rest rest for a little while."
+  ],
+  [
+   "close",
+   "The mind asks for space. Will you give it that?"
+  ]
+ ],
+ "depth": {
+  "life": "You are on the phone for four hours. Your mind is full of the call with your parents and the call with your partner. You are pulled in every direction. You do not know what you need. The mind that is never asked what it needs will not settle.",
+  "points": "The mind is restless, stormy, stubborn and strong. It is as hard to hold as the wind. This is not a failure. It is the nature of the mind. Practice and letting go are what train it.",
+  "practice": "Sit for five minutes without a phone. Let the thoughts come. Do not try to hold them.",
+  "question": "What would it feel like to let the mind be stormy for a few minutes?"
+ }
+}

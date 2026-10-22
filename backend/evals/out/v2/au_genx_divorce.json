@@ -1,0 +1,509 @@
+{
+ "persona": {
+  "id": "au_genx_divorce",
+  "market": "Australia (Melbourne)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "44, dentist in Melbourne, from Chandigarh originally, separated 6 months ago, kids with ex 4 days a week. Parents in India don't know yet.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "lonely in a full house",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "This week turns the quiet you are running from into the space where your love for your children can settle without the television.",
+   "week_beats": {
+    "hook": "You recognise the quiet and the loneliness, named without blame.",
+    "diagnose": "You see that it is the love for your children with nowhere to go that is hurting you, not the silence itself.",
+    "steady": "You hold that what is real in you cannot be taken away, and that your love is not diminished by the quiet.",
+    "act": "You try letting the love have somewhere to go before the television comes on, even for a few minutes.",
+    "story": "A mother who lost her husband and had to leave the home she knew shows you how love can settle without becoming the whole of you."
+   },
+   "confidence": 0.75,
+   "core_struggle": "A separated mother who sees her children three nights a week, has not told her parents, and fills the quiet house with the television.",
+   "mirror": "You give your children three nights a week, and the rest of the time you fill the house with the television.",
+   "insight": "It isn't the silence that hurts. It's the love for your children with nowhere to go, and the fear of what your parents will say if they knew.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "need_for_approval",
+   "situations": [
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.155,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.99,
+     "source": "note"
+    },
+    {
+     "id": "breakup",
+     "label": "I'm heartbroken after a breakup",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet of a house where the children are not, and the love that has nowhere to go; the loneliness of a life that is still happening but feels like it has ended. I'm grieving someone I loved.",
+    "diagnose": "Grief is love with nowhere to go; the heart aches because the bond was real, and the quiet only makes the absence louder.",
+    "steady": "What is real in us cannot be taken away; the love you have for your children is still yours, and it is not diminished by the quiet.",
+    "act": "Let the love have somewhere to go; speak it, write it, or simply sit with it for a few minutes before the television comes on.",
+    "story": "A mother who lost her husband and had to leave the home she knew, who found her children again and learned to hold her grief without letting it become the whole of her."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet you are running from",
+    "Love with nowhere to go",
+    "More than the house you left"
+   ],
+   "seat": "a separated mother who fills the quiet nights with the television",
+   "life_context": "A mother in her mid-thirties or early forties, working and raising children; separated for six months, she sees her children three nights a week, has not told her parents, and fills the quiet house with the television.",
+   "details": [
+    "separated six months",
+    "sees children three nights a week",
+    "has not told parents",
+    "fills the quiet house with the television"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "day1_other_text:mbh",
+    "retried:6",
+    "dropped:fallback_line=3,missing=6",
+    "for_you:7/7",
+    "meaning:3/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "mbh.12.144.12",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Apaddharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 144.12",
+     "family": "mbh",
+     "speaker": "The male pigeon (retold by Bhishma)",
+     "listener": "Himself",
+     "setting": "A male pigeon, not knowing a fowler has caught his mate, waits for her through a storm.",
+     "sanskrit": "वृक्षमूलेऽपि दयिता यस्य तिष्ठति तद्गृहम् / प्रासादोपि तया हीनः कान्तार इति निश्चितम्",
+     "line": "Wherever the one you love is, even under a tree, is home. Without them, a palace is a wilderness.",
+     "translation": "Where one's beloved is, even the foot of a tree is home. Without her, even a palace is a wilderness.",
+     "why": "Kindness can shame cruelty. Wherever the one you love is, that is home.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.pigeon_fowler",
+      "title": "The pigeons and the fowler",
+      "summary": "A storm-soaked fowler shelters under a tree after trapping a female pigeon. Her mate, grieving, still honours the fowler as a guest, lights a fire for him and, having nothing else, offers himself as food. The shaken fowler gives up hunting.",
+      "story_hook": "The hunter who had caught his wife was shivering under his tree, and the pigeon brought him fire.",
+      "lesson": "Kindness can shame cruelty. Wherever the one you love is, that is home."
+     },
+     "score": 3.6392,
+     "beat": "hook",
+     "role_fit": 0.41,
+     "meaning": "A male pigeon waits through a storm, not knowing a fowler has caught his mate. He offers the man his own body as food, and the fowler, shamed, stops hunting. The verse says wherever the one you love is, even under a tree, is home. Without them, a palace is a wilderness. The quiet house you are in is a palace, and the silence feels like a wilderness because the one you love is not in it. Your love is not diminished by the television's noise.",
+     "for_you": "The television fills the room where your children should be. Let it be the background to your love for them, not a wall between you and the quiet they leave behind."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.211,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma tells King Janaka that pain comes from what we lost, and days do not return. He asks where we came from, where we go, and who we are. These questions are not to dismiss grief, but to steady the mind when it is overwhelmed. The pain is real, but it does not have to be the only thing you hold.",
+     "for_you": "The grief for your family is real and it is yours. Let the questions about who you are steady you while you hold that love for your children without the noise."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.26",
+     "ref": "Bhagavad Gita 2.26",
+     "ref_iast": "Bhagavad Gītā 2.26",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम् । तथापि त्वं महाबाहो नैवं शोचितुमर्हसि ॥",
+     "line": "Even if you believe life simply begins and ends, there's still no need to be crushed by grief.",
+     "translation": "And even if you think of it as constantly being born and constantly dying, still, mighty-armed one, you should not grieve like this.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Grief is human; this asks you not to be destroyed by it, not to stop feeling it.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.2645,
+     "beat": "steady",
+     "role_fit": 0.755,
+     "meaning": "Krishna tells Arjuna that even if he sees life as a constant cycle of birth and death, he should not be crushed by grief. What is real in you outlasts every loss and every passing pain. The quiet in the house is a passing pain, but the love you carry for your children is what is real and cannot be taken away.",
+     "for_you": "The quiet in the house is a passing pain. Your love for your children is what is real and it cannot be taken away, even when the television is off."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0848,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": null,
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.314.114",
+     "ref": "Mahabharata · Vana Parva · Yaksha Prashna",
+     "ref_iast": "Mahābhārata, Vana Parva 314.114–115",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "the Yaksha (Dharma in disguise)",
+     "setting": "At a poisoned lake, a Yaksha quizzes Yudhishthira; his brothers' lives hang on the answers.",
+     "sanskrit": "प्रियवचनवादी किं लभते / विमृशितकार्यकरः किं लभते / बहुमित्रकरः किं लभते / धर्मे रतः किं लभते कथय ॥ प्रियवचनवादी प्रियो भवति / विमृशितकार्यकरोऽधिकं जयति / बहुमित्रकरः सुखं वसति / यश्च धर्मरतः स गतिं लभते",
+     "line": "Speak kindly and you'll be loved; think before acting and you'll win more; make friends and live happily.",
+     "translation": "Yaksha: 'What does one gain by speaking kindly? By acting after careful thought? By making many friends? By devotion to what is right?' Yudhishthira: 'One who speaks kindly is loved; one who acts after careful thought wins more; one with many friends lives happily; one devoted to what is right reaches the goal.'",
+     "why": "Answer life's questions with a steady mind, and let kindness outweigh advantage.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yaksha_prashna",
+      "title": "Yaksha Prashna: the questions at the lake",
+      "summary": "One by one, four Pandavas drink from a lake against a voice's warning and fall dead. Yudhishthira answers the Yaksha's riddles instead, and when offered one brother's life, chooses his stepmother's son Nakula, out of fairness.",
+      "story_hook": "Four brothers lay dead by a clear lake, and the voice that killed them was asking Yudhishthira riddles.",
+      "lesson": "Answer life's questions with a steady mind, and let kindness outweigh advantage."
+     },
+     "score": 3.1897,
+     "beat": "act",
+     "role_fit": 0.638,
+     "meaning": null,
+     "for_you": "Let yourself grieve, honour them by living well, and remember that the self they loved in you, and in them, does not perish."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.30.18",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 30.18",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Hanuman has found Sita, terrified and alone; he works out how to speak without frightening her.",
+     "sanskrit": "अवश्यमेव वक्तव्यं मानुषं वाक्यमर्थवत्। मया सान्त्वयितुं शक्या नान्यथेयमनिन्दिता ॥",
+     "line": "To comfort someone, use their language, not the one that impresses.",
+     "translation": "I must speak to her in ordinary human words that carry meaning. There is no other way to comfort this blameless woman.",
+     "why": "Before a hard conversation, think about how the other person will hear you.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.hanuman_speaks_to_sita",
+      "title": "How Hanuman spoke to Sita",
+      "summary": "Hanuman has found Sita but she is terrified. He thinks carefully: speak in ordinary language, not court Sanskrit; don't gamble on a fight; start by gently praising Ram so she can trust him. He sings Ram's story softly from the tree, and she hears hope for the first time: joy comes to the one who stays alive.",
+      "story_hook": "He had found her at last, and now the problem was how to speak without making her scream.",
+      "lesson": "Before a hard conversation, think about how the other person will hear you."
+     },
+     "score": 2.916,
+     "beat": "act",
+     "role_fit": 0.715,
+     "meaning": null,
+     "for_you": "Let yourself grieve, honour them by living well, and remember that the self they loved in you, and in them, does not perish."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.pingala",
+     "title": "Pingala's song: the night she stopped waiting",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Pingala",
+      "Bhishma (narrator)"
+     ],
+     "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+     "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+     "lesson": "Letting go of an expectation can bring the sleep that waiting never will.",
+     "matched": [
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "anchor": {
+      "id": "mbh.12.173.64",
+      "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+      "ref_iast": "Mahābhārata, Śānti Parva 173.64",
+      "family": "mbh",
+      "speaker": "Pingala (quoted by Bhishma)",
+      "listener": "(herself)",
+      "setting": "Pingala, left waiting all night by a lover who never came, finally lets go and finds peace.",
+      "sanskrit": "सुखं निराशः स्वपिति नैराश्यं परमं सुखम् / आशामनाशां कृत्वा हि सुखं स्वपिति पिङ्गला",
+      "line": "Pingala let go of her expectation and slept peacefully. Letting go of expectation is the greatest ease.",
+      "translation": "The one free of expectation sleeps in peace; freedom from expectation is the highest happiness. Turning hope into no-hope, Pingala sleeps peacefully.",
+      "why": "Letting go of an expectation can bring the sleep that waiting never will.",
+      "misuse": "This is about clinging to an outcome, not about giving up hope in life.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "breakup",
+        "label": "I'm heartbroken after a breakup"
+       }
+      ],
+      "prasang": {
+       "id": "mbh.p.pingala",
+       "title": "Pingala's song: the night she stopped waiting",
+       "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+       "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+       "lesson": "Letting go of an expectation can bring the sleep that waiting never will."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Pingala waited all night for a man who never came",
+     "teaser": "Pingala waited all night for a man who never came",
+     "for_you": "Pingala sat awake listening for footsteps that never came. You fill the quiet nights with the television because you are waiting for your love to find a home. What if you let the expectation go? You can let your love for your children settle into the silence without needing it to be full."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet you are running from",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 134,
+   "llm": 4979,
+   "total": 16644,
+   "select": 11524
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are in a full house, and it is quiet. You are filling the silence with the television because the children are not here, and your parents do not know. You are carrying the weight of that secret, and the house feels larger than it should."
+  ],
+  [
+   "scene",
+   "A male pigeon waits in a storm for his mate. He does not know a fowler has caught her. He sees a man shivering under a tree and treats him as a guest, lighting a fire and offering himself as food. And the man, the fowler, is moved by this kindness and gives up hunting. And the male pigeon says:"
+  ],
+  [
+   "sanskrit",
+   "वृक्षमूलेऽपि दयिता यस्य तिष्ठति तद्गृहम् / प्रासादोपि तया हीनः कान्तार इति निश्चितम्."
+  ],
+  [
+   "line",
+   "In plain words: Wherever the one you love is, even under a tree, is home. Without them, a palace is a wilderness."
+  ],
+  [
+   "unpack",
+   "He is saying that wherever the one you love is, even the foot of a tree, is home. Without her, even a palace is a wilderness. This is the truth of missing someone you love. A house with people in it can feel like a wilderness if the one you love is not there. And a tree can feel like home if they are there. The television cannot change that. It only covers the silence."
+  ],
+  [
+   "for_you",
+   "When the children leave, let the television be the background to your love for them, not a wall between you and the quiet they leave behind. Let the quiet be a place where your love settles instead of a place you run from."
+  ],
+  [
+   "close",
+   "Where is your love settling tonight?"
+  ]
+ ],
+ "depth": {
+  "life": "The television is on again. You are in the same room as your children, but you are on a different frequency, waiting for them to be gone so the noise can stop. You are missing your children even while they are still here.",
+  "points": "The texts say the place you love is home. The problem is not the quiet. It is that your love has no place to land, so it bounces back and fills the room with noise.",
+  "practice": "Turn the television off for the first ten minutes after your children leave. Let the quiet sit there.",
+  "question": "What would it feel like to let the silence stay for ten minutes?"
+ }
+}

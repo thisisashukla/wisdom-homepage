@@ -1,0 +1,537 @@
+{
+ "persona": {
+  "id": "us_millennial_h1b_burnout",
+  "market": "USA (Seattle)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "33, software engineer at a big tech company in Seattle, on H-1B, green card queue, wife on H4 can't work. Performance review season.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "if I get a bad rating I lose the visa and we have 60 days to leave. my wife gave up her career to be here. I check slack at 2am. I don't remember the last weekend I wasn't thinking about work",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "terrified and wired",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "The fear that one rating ends everything is named, and the part of you that cannot be taken by it is given room to breathe.",
+   "week_beats": {
+    "hook": "You recognise the terror of the rating and the 2am checking, named without judgement.",
+    "diagnose": "You see that the fear of losing everything is multiplying a future that has not arrived, while the mind runs on what it cannot hold.",
+    "steady": "You hold that what is real in you cannot be lost, and your effort is yours alone.",
+    "act": "You try closing the screen at a set time each night and letting the rating be what it will be.",
+    "story": "A man who stood before those who held his fate shows you what it means to be unshaken by a verdict."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "partner"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "I'm anxious about how things will turn out",
+   "mirror": "I'm anxious about how things will turn out",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.717,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 1.14,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.12,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The terror that one rating can take away your visa, your home, and everything your wife gave up, and the mind that will not let you sleep through it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in you cannot be lost; worry multiplies what has not happened yet.",
+    "steady": "What is real in you cannot be lost by a rating; your effort is yours, and no one can take the work you have already done.",
+    "act": "Practise letting go of the result each night; do what you can during the day, then close the screen and rest the mind that carries your family.",
+    "story": "A man who had everything to lose stood before an assembly that could take it all, and learned that what is real in him cannot be cut by any rating."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The rating is not you",
+    "What is real cannot be lost",
+    "Rest the mind that carries them"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "bad rating means losing visa and leaving in days",
+    "checks work messages at 2am",
+    "cannot remember a weekend without thinking about work"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "core:invented_person",
+    "core_struggle_fallback",
+    "mirror:fallback",
+    "insight:template",
+    "week_fit:24=0.9,5=0.8,47=0.7,81=0.5,12=0.6,62=0.8",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:repeat=2,soft_kept=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:open=not_second_person",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.11.24",
+     "ref": "Bhagavad Gita 11.24",
+     "ref_iast": "Bhagavad Gītā 11.24",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, shown Krishna's cosmic form, is overwhelmed by its scale.",
+     "sanskrit": "नभःस्पृशं दीप्तमनेकवर्णंव्यात्ताननं दीप्तविशालनेत्रम् । दृष्ट्वा हि त्वां प्रव्यथितान्तरात्माधृतिं न विन्दामि शमं च विष्णो ॥",
+     "line": "Seeing something too big to take in, my heart trembles and I can't find steadiness or calm.",
+     "translation": "Seeing you touching the sky, blazing with many colours, mouths wide open, with huge fiery eyes, my inner self trembles, Vishnu, and I find neither courage nor peace.",
+     "why": "Facing something vast can shake you to the core, and that's human.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p11.4",
+      "title": "Arjuna sees the cosmic form and praises it",
+      "summary": "Arjuna sees all beings, gods and worlds in Krishna, and warriors rushing into his mouths like moths into flame. Terrified, he asks who Krishna really is.",
+      "story_hook": "Arjuna saw everything at once, and for the first time in his life he could not find his footing.",
+      "lesson": "Facing something vast can shake you to the core, and that's human."
+     },
+     "score": 2.0449,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands before Krishna and sees a form that fills the sky with fire and endless mouths. The sight is too vast for him to hold. His heart trembles and he loses his ground. The verse says that when something is too big to take in, the body and mind can shake to the core, and that is simply part of being human.",
+     "for_you": "The rating and the 2am checks are a kind of vastness that fills your room right now. Your heart trembles because the scale of it feels like it could swallow everything. You do not have to steady the whole sky today. Just let the trembling be there and notice it without trying to fix it."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.11.5",
+     "ref": "Ashtavakra Gita 11.5",
+     "ref_iast": "Aṣṭāvakra Gītā 11.5",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra lists the certainties that make the wise calm.",
+     "sanskrit": "चिन्तया जायते दुःखं नान्यथेहेति निश्चयी । तया हीनः सुखी शान्तः सर्वत्र गलितस्पृहः ॥",
+     "line": "Suffering is born of worry, nothing else. Free of worry, you are happy and at peace.",
+     "translation": "One who knows for certain that suffering here is born of worry and nothing else is free of it, happy, at peace, and unattached everywhere.",
+     "why": "Most suffering is made of worry; knowing what you can't control loosens it.",
+     "misuse": "Real problems still need attention; this is about the extra pain rumination adds.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.wisdom",
+      "title": "The certainties of the calm",
+      "summary": "Ashtavakra lists convictions that make a person calm: things arise and pass by nature, fortune and misfortune come in their time, and suffering is born of worry alone.",
+      "story_hook": "",
+      "lesson": "Most suffering is made of worry; knowing what you can't control loosens it."
+     },
+     "score": 3.3954,
+     "beat": "diagnose",
+     "role_fit": 0.831,
+     "meaning": "Ashtavakra is telling Janaka that suffering is born of worry, and nothing else. He says that if you know this for certain, you are free of it, happy, at peace, and unattached. This is a calm conviction, a list of certainties that make the wise steady. The verse proposes that most of your pain is made of worry. It suggests that knowing what you cannot control loosens the grip of your fear.",
+     "for_you": "Your mind is running a future that has not arrived, and it is exhausting. The work message at 2am is a signal that worry is feeding itself. Try to let the phone rest for one hour before you sleep. Give your mind a single thing to hold onto that is not the rating."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.5916,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, teaching him how to act without being chained to results. He says your right is to the work alone, never to its fruits. He tells Arjuna not to let the result be his motive, and not to cling to doing nothing. The verse proposes that you do the work fully, and then let go of owning the result.",
+     "for_you": "You cannot hold the rating in your hands, but you can hold your effort. Let your work be your part, and let the rest be what it is. When the mind races, tell it that the outcome is not yours to carry."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.81",
+     "ref": "Ashtavakra Gita 18.81",
+     "ref_iast": "Aṣṭāvakra Gītā 18.81",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "नैव प्रार्थयते लाभं नालाभेनानुशोचति । धीरस्य शीतलं चित्तममृतेनैव पूरितम् ॥",
+     "line": "Not begging for gain, not grieving loss: a steady mind stays cool and full.",
+     "translation": "He does not pray for gain, nor grieve over loss. The steady one's cool mind is filled as if with nectar.",
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 3.2034,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ashtavakra speaks to Janaka, who sits with his mind full of the world and its outcomes. He says that the one who is steady does not beg for gain, nor grieve over loss. Their cool mind stays full, as if filled with nectar. Calm is not found by running from one place to another or chasing after what you want. It is simply how you hold the ordinary moments of your day.",
+     "for_you": "You are holding the rating in your body right now. You do not have to beg the work for mercy, and you do not have to let it take your sleep. The part of you that is steady can hold both the fear and the morning. Let that be enough for now."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.12",
+     "ref": "Bhagavad Gita 12.12",
+     "ref_iast": "Bhagavad Gītā 12.12",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks which devotee is best; Krishna offers a ladder of practices.",
+     "sanskrit": "श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते । ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम् ॥",
+     "line": "Practice is good, understanding better, meditation better still. But letting go of results brings peace at once.",
+     "translation": "Knowledge is better than mere practice; meditation is better than knowledge; giving up the fruit of action is better than meditation. From that renunciation, peace follows immediately.",
+     "why": "If the ideal is too hard, take the next step down, and keep going.",
+     "misuse": "Not 'stop caring how things turn out'. Peace comes from releasing the grip, not from indifference.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p12.1",
+      "title": "Form or formless: which devotee is best, and the ways to reach him",
+      "summary": "Krishna says devotion to a personal form is easier, then offers a ladder: fix your mind; if not, practise; if not, work for me; if not, let go of results. Letting go brings peace at once.",
+      "story_hook": "",
+      "lesson": "If the ideal is too hard, take the next step down, and keep going."
+     },
+     "score": 3.3693,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna speaks to Arjuna, who stands on the field of battle, asking for a path. Krishna offers a ladder of steps. He says knowledge is better than practice, meditation is better than knowledge, and letting go of results is better than meditation. From that release, peace comes immediately. If the highest step feels too far, take the next one down and keep walking.",
+     "for_you": "You cannot control the rating, and you cannot control the next hour. You can control one small thing. Set a time tonight when you will close the screen. Let the work wait until then. That is your part, and that is enough."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.vairagya.62",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 62",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own mind",
+     "setting": "From 'Advice to the Mind'.",
+     "sanskrit": "परिभ्रमसि किं मुधा क्वचन चित्त विश्राम्यतां स्वयं भवति यद्यथा भवति तत्तथा नान्यथा । अतीतमननुस्मरन्नपि च भाव्यसंकल्पयन् नतर्कितसमागमाननुभवामि भोगानहम् ॥",
+     "line": "Why wander, mind? Rest. Not replaying the past, not scripting the future, I take what comes.",
+     "translation": "Why do you wander about in vain, mind? Rest somewhere. Whatever is to happen happens just as it will, and not otherwise. Not recalling the past, not planning the future, I enjoy the pleasures that come to me unlooked-for.",
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "Not an argument against planning; it is for the worry loop once you have done your part.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 3.0791,
+     "beat": "act",
+     "role_fit": 0.609,
+     "meaning": "Bhartrihari speaks to his own mind, tired of its endless motion. He asks why it wanders about in vain, why it exhausts itself pleasing others. He tells the mind to rest somewhere, to stop recalling the past and scripting the future. Whatever is to happen happens just as it will, and not otherwise. He says he enjoys the pleasures that come unlooked-for, taking what comes without grasping.",
+     "for_you": "You have checked the messages again at two in the morning. The rating is not in your hands yet. For now, the phone stays down. The work you have done is the work you have done. Let the rest wait for morning."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "King Janaka stood before those who held his fate and did not run away. He did his duties, but with a mind that no longer clutched. You do not have to leave your work to change it. Do the day's work with a mind that does not clutch."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The rating is not you",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 176,
+   "llm": 4531,
+   "total": 11148,
+   "select": 6437
+  }
+ },
+ "script": [
+  [
+   "scene",
+   "Arjuna is on a battlefield. He has asked Krishna to show him his true form. Krishna expands into a cosmic being that touches the sky, blazing with colors and mouths and fiery eyes. Arjuna sees all the warriors rushing into those mouths like moths into flame. The scale is too much. And Arjuna says:"
+  ],
+  [
+   "sanskrit",
+   "नभःस्पृशं दीप्तमनेकवर्णंव्यात्ताननं दीप्तविशालनेत्रम्, दृष्ट्वा हि त्वां प्रव्यथितान्तरात्माधृतिं न विन्दामि शमं च विष्णो."
+  ],
+  [
+   "line",
+   "In plain words: Seeing something too big to take in, my heart trembles and I can't find steadiness or calm."
+  ],
+  [
+   "unpack",
+   "When a person sees something too vast to hold, the heart naturally trembles. It is not a failure. It is simply the human body responding to a sight that is bigger than it can take in. The trembling is not weakness. It is the truth of being small in the face of something immense."
+  ],
+  [
+   "for_you",
+   "The rating and the late night checks are a vastness that fills your room right now. Your heart trembles because the scale of it feels like it could swallow everything. You do not have to steady the whole sky today. Just let the trembling be there. Notice it without trying to fix it."
+  ],
+  [
+   "close",
+   "The trembling is not a sign to stop."
+  ]
+ ],
+ "depth": {
+  "life": "Your phone is a screen of open mouths and burning eyes. The rating is a sky you cannot hold. You check messages at 2am because the vastness of losing everything feels ready to rush in. Let the trembling be there. It is only your body seeing how big this fear is.",
+  "points": "What is vast cannot be held by the small mind. The trembling is the mind meeting its own size. The rating is not the sky. The fear of what might happen is the vastness. Your inner self is untouched by it. It only trembles because it is alive.",
+  "practice": "Put the phone face down for one minute before sleep. Feel your hands on the table. Do not fix anything. Just let the trembling be.",
+  "question": "Can you let the trembling be, without needing it to end?"
+ }
+}

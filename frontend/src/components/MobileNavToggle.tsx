@@ -1,11 +1,14 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { appStoreUrl, detectPlatform } from '@/lib/app'
 
 const links = [
+  { href: '/start?ref=menu', label: 'Create my 7-day Gita plan' },
   { href: '/gita', label: 'Read the Gita' },
   { href: '/hi/gita', label: 'हिंदी गीता' },
-  { href: '/gita/today', label: "Today's Verse" },
+  { href: '/gita/today', label: 'Verse of the Day' },
+  { href: '/gita-for', label: 'Gita for Life' },
   { href: '/blogs', label: 'Blog' },
 ]
 
@@ -15,6 +18,8 @@ const APP_LANDING_URL = '/app'
 
 export function MobileNavToggle() {
   const [open, setOpen] = useState(false)
+  const [ios, setIos] = useState(false)
+  useEffect(() => setIos(detectPlatform() === 'ios'), [])
 
   useEffect(() => {
     if (!open) return
@@ -49,7 +54,12 @@ export function MobileNavToggle() {
         <ul>
           {links.map((l) => (
             <li key={l.href}>
-              <a href={l.href} onClick={() => setOpen(false)}>
+              <a
+                href={ios && l.href.startsWith('/start') ? appStoreUrl('web_menu') : l.href}
+                target={ios && l.href.startsWith('/start') ? '_blank' : undefined}
+                rel={ios && l.href.startsWith('/start') ? 'noopener' : undefined}
+                onClick={() => setOpen(false)}
+              >
                 {l.label}
               </a>
             </li>
@@ -68,7 +78,7 @@ export function MobileNavToggle() {
                 borderBottom: 0,
               }}
             >
-              Get the App →
+              Wisdom for iPhone →
             </a>
           </li>
         </ul>

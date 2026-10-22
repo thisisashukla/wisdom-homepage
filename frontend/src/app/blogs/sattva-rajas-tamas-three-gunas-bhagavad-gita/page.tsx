@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Sattva, Rajas, Tamas — The Three Gunas Explained (and Which One Is Running You Right Now) | Wisdom",
+  title: "Sattva, Rajas, Tamas — The Three Gunas Explained (and Which One Is Running You Right Now)",
   description: "Sattva (clarity), rajas (drive), tamas (inertia) — the three gunas of the Bhagavad Gita explained in plain English. What each one feels like, how they show up in your food, work and moods, which one is dominant in you right now, and how Chapter 14 says to move beyond them.",
   keywords: "sattva rajas tamas meaning, three gunas bhagavad gita, sattva rajas tamas explained, what are the three gunas, gunatraya bhagavad gita, sattva guna meaning, rajas guna meaning, tamas guna meaning, gunatita state, bhagavad gita chapter 14, three gunas in daily life",
   openGraph: {
@@ -826,12 +827,12 @@ export default function ThreeGunasPage() {
     </div>
 
     <div className="content">
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Three Gunas Sattva Rajas Tamas"} />
+      <VerseFunnelCTA variant="chapter" locale="en" pageName={"Three Gunas Sattva Rajas Tamas"} />
     </div>
 
     <footer>
-      <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-      <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+      <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+      <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
     </footer>
 
     <BlogTracker pageName="Three Gunas Sattva Rajas Tamas" />

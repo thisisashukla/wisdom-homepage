@@ -1,0 +1,482 @@
+{
+ "persona": {
+  "id": "in_tier2_wife_inlaws",
+  "market": "India (Indore)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "29, chartered accountant in Indore, married 1 year, lives with in-laws who expect her to give up the practice after a baby. Husband avoids the topic.",
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 2,
+   "topic": "someone",
+   "follow": "in_laws"
+  },
+  "note": "my mother in law keeps saying once the baby comes you will anyway leave all this CA work. I built my practice from zero. my husband just changes the subject. I feel like I am slowly being erased",
+  "note_source": "text",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "confidence": 0.8,
+   "core_struggle": "A woman who built a CA practice from zero is being told by her mother-in-law to leave it after the baby, while her husband changes the subject.",
+   "mirror": "You built this practice from zero, and in your own home you are being told to walk away from it.",
+   "insight": "You are the same person who built this practice from nothing as the woman they are trying to erase. Their picture of you is their smallness, and his silence is his, not your size.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.505,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being told to leave the life you built, in the room where you live, by the people who are supposed to see you. Tension with my in-laws.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A learned woman of standing, dismissed by her husband's family, who questioned them openly and stood in her truth until they had no answer."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Seen as less",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "a woman who built a CA practice from nothing and is being told to leave it",
+   "life_context": "A professional in her late twenties or early thirties with a practice she built from nothing; her mother-in-law keeps saying she will leave it all once the baby comes, and her husband says nothing.",
+   "details": [
+    "mother-in-law says she will leave her CA practice once the baby comes",
+    "she built her practice from zero",
+    "husband changes the subject when she is spoken to",
+    "feels she is being slowly erased"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:accept=1,preachy=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.4604,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna speaks to Arjuna on the field of battle, reminding him that a duty born of one's own nature is the only true path. He says that walking your own road, even with its flaws and stumbles, is better than playing a role that fits someone else perfectly. The work that flows from your own being, done with honesty, is the only work that leaves no stain on the soul. It is an invitation to stop measuring yourself against the family script and to trust the practice you built.",
+     "for_you": "You built this practice from nothing. It is your nature. Let them say you will leave it. You are walking your own road, and it is better than any script they have for you."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.18.16",
+     "ref": "Bhagavad Gita 18.16",
+     "ref_iast": "Bhagavad Gītā 18.16",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Right after naming the five causes of any action, Krishna warns about the person who ignores four of them.",
+     "sanskrit": "तत्रैवं सति कर्तारमात्मानं केवलं तु यः । पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः ॥",
+     "line": "If you think you alone made it happen, or alone made it fail, you're not seeing the whole picture.",
+     "translation": "That being so, whoever, through an untrained understanding, sees himself alone as the doer does not truly see.",
+     "why": "You are one cause among five; own your part, not the whole outcome.",
+     "misuse": "Not a way to dodge responsibility; you are still one of the five causes.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.2",
+      "title": "What makes an action happen",
+      "summary": "Every action has five causes: the setting, the doer, the instruments, the efforts, and providence. Seeing oneself as the only doer is a mistake.",
+      "story_hook": "",
+      "lesson": "You are one cause among five; own your part, not the whole outcome."
+     },
+     "score": 2.8168,
+     "beat": "diagnose",
+     "role_fit": 0.681,
+     "meaning": "Krishna explains to Arjuna that no action happens by one person alone. Every deed is born of five causes: the setting, the doer, the instruments, the effort, and providence. He warns that the person who thinks they alone are the maker of success or the sole author of failure is looking through a cracked lens. The truth is that you are one cause among five, and the rest belong to the world around you.",
+     "for_you": "Your mother-in-law speaks of leaving. Your husband stays silent. These are not your failures to prevent. They are the other four causes at work, and you are only one of the five."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.3721,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": null,
+     "for_you": "Do not let them turn your practice into a story of waiting. You stand for what is right. Now you work, as if the future of your own life depends on it."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.2972,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to hold himself in contempt or settle for little. She says to set his mind on what is truly good and to stop fearing. The idea is that past failure does not define who he is. The results of his effort are uncertain, but those who never try never succeed, so he must pull himself together.",
+     "for_you": "You built this practice from nothing. The people around you are trying to shrink that. Do not hold yourself in contempt or settle for their small picture. Set your mind on the work itself. Stop fearing their words and pull yourself together."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.5457,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu tells Nidagha how a free person moves through the world. They do the work that comes, see friend and foe alike, and let go of wanting and not-wanting. They speak gently, know the intent of others' hearts, and do not sink in theworld.",
+     "for_you": "Today, do the work in front of you. Speak gently but truly. Read the room, know their intent, and let go of what is lost. Do your part and do not sink."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.4788,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna tells Arjuna that speech should cause no distress, be truthful, pleasant, and beneficial. This is the discipline of speech. The point is to say things kindly and truly, without cruelty. It is not about avoiding hard truths, but about saying them without wounding.",
+     "for_you": "When you speak to them today, choose your words. Say what is true and kind. Do not wound to win. Let your speech be clear and without cruelty."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.brihad.gargi",
+     "title": "Gargi questions Yajnavalkya at Janaka's court",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Yajnavalkya",
+      "Gargi Vachaknavi",
+      "Janaka",
+      "Kahola"
+     ],
+     "story_hook": "In a hall full of the most learned men in the land, one woman stood up twice.",
+     "summary": "King Janaka offers a thousand cows to the wisest scholar. Yajnavalkya claims them and is challenged by one learned man after another. Gargi, the only woman, rises twice like a warrior with two arrows, then graciously tells the hall none of them can beat him. Yajnavalkya closes by asking what root a person grows from when cut down by death.",
+     "lesson": "Ask your hard questions bravely, and give credit where it is due.",
+     "matched": [],
+     "anchor": {
+      "id": "up_brihadaranyak.283",
+      "ref": "Brihadaranyaka Upanishad 3.5.1",
+      "ref_iast": "Bṛhadāraṇyaka Upaniṣad 3.5.1",
+      "family": "up",
+      "speaker": "Yajnavalkya",
+      "listener": "Kahola",
+      "setting": "At King Janaka's debate, Kahola asks about the self.",
+      "sanskrit": "या ह्येव पुत्रैषणा सा वित्तैषणा या वित्तैषणा सा लोकैषणोभे ह्येते एषणे एव भवतस्तस्माद्ब्राह्मणः पाण्डित्यं निर्विद्य बाल्येन तिष्ठासेत् । बाल्यं च पाण्डित्यं च निर्विद्याथ मुनिरमौनं च मौनं च निर्विद्याथ ब्राह्मणः ।",
+      "line": "Wanting children, wanting money, wanting status: it is one desire. Learn, then live with a child's simplicity.",
+      "translation": "The desire for sons is the desire for wealth, and the desire for wealth is the desire for worlds; both are just desires. So a wise man, having done with learning, should seek to live like a child. Having done with both childlike simplicity and learning, he becomes a sage; having done with both silence and its absence, he becomes a true knower.",
+      "why": "Ask your hard questions bravely, and give credit where it is due.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "up.p.brihad.gargi",
+       "title": "Gargi questions Yajnavalkya at Janaka's court",
+       "summary": "King Janaka offers a thousand cows to the wisest scholar. Yajnavalkya claims them and is challenged by one learned man after another. Gargi, the only woman, rises twice like a warrior with two arrows, then graciously tells the hall none of them can beat him. Yajnavalkya closes by asking what root a person grows from when cut down by death.",
+       "story_hook": "In a hall full of the most learned men in the land, one woman stood up twice.",
+       "lesson": "Ask your hard questions bravely, and give credit where it is due."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Gargi, the only woman in the hall, stood up twice to question the wisest man there",
+     "teaser": "Gargi, the only woman in the hall, stood up twice to question the wisest man there",
+     "for_you": "Gargi stood up in a hall full of men and asked her hard questions. She did not wait for permission. She gave credit to the one who earned it. You built this practice from nothing. You have the right to ask the hard questions. You have the right to name what is happening."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Seen as less",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 194,
+   "llm": 3475,
+   "total": 9884,
+   "select": 6209
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You built this practice from nothing, and now they are trying to erase it. Your mother-in-law speaks of your future as if it belongs to her, and your husband changes the subject. You are being told to leave a life you worked hard to build."
+  ],
+  [
+   "scene",
+   "Arjuna is on the battlefield, his mind heavy with doubt, asking Krishna if he should abandon his duty and flee. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna tells Arjuna to do the work born of his own nature. This is not about staying in a role forced upon you. It is about finding the honest fit between who you are and what you do. Walking your own path, even with its flaws, is better than playing a part perfectly that was never meant for you. The work that flows from your own being, done with honesty, leaves no stain on the soul."
+  ],
+  [
+   "for_you",
+   "They can say you will leave it, but you know what you built. Let them speak their smallness, and you keep walking your own road."
+  ],
+  [
+   "close",
+   "Walk your own road, even if it stumbles."
+  ]
+ ],
+ "depth": {
+  "life": "You built this CA practice from nothing, and now your mother-in-law says you will leave it once the baby comes. Your husband changes the subject when you are spoken to. You feel yourself being slowly erased, as if your work means nothing to them.",
+  "points": "The work that fits your own nature, done with its flaws, is better than another's perfect performance of a role that was never yours to begin with. Your practice is born of your own nature. Their picture of you is their smallness, and his silence is his, not your size.",
+  "practice": "Write down one specific thing you did well in your practice today, and read it aloud to yourself before you sleep.",
+  "question": "What does your own work ask of you right now, beyond what anyone else wants?"
+ }
+}

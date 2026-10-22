@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita for Beginners \u2014 Where to Start and What to Read First | Wisdom",
+  title: "Bhagavad Gita for Beginners \u2014 Where to Start and What to Read First",
   description: "The Bhagavad Gita is 700 verses across 18 chapters. Where do you start? Which translation? What does it actually cover? A no-nonsense guide for complete beginners.",
   keywords: "bhagavad gita for beginners, how to read bhagavad gita, bhagavad gita start reading, which bhagavad gita translation to read, bhagavad gita summary, bhagavad gita guide beginners, how to understand bhagavad gita, bhagavad gita in english",
   openGraph: {
@@ -600,7 +601,7 @@ export default function ForBeginnersPage() {
             The Living Bhagavad Gita: A Comprehensive Presentation for Modern Times, by Sri Swami Satchidananda, takes an ecumenical approach and relates the teachings to modern life. It is accessible and thoughtful.
         </p>
         <p className="pull-quote">
-            Alternatively, read one verse a day on the Wisdom app. You get the Sanskrit, the transliteration, the meaning, and the context, all in under a minute. This slower approach, spread over a year, allows each verse to do its work on you.
+            Alternatively, let the Wisdom app pick one verse a day for what you are going through, with the Sanskrit, the meaning and what it says for your life. This slower approach lets each verse do its work on you.
         </p>
 
         <h2>Five Landmark Verses to Read Today</h2>
@@ -702,12 +703,12 @@ export default function ForBeginnersPage() {
         </div>
     </div>
 
-    <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Gita For Beginners"} />
+    <VerseFunnelCTA variant="chapter" locale="en" pageName={"Gita For Beginners"} />
 
 
     <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
     </footer>
 
     {/* Schema Markup */}

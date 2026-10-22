@@ -105,8 +105,13 @@ async def lifespan(app: FastAPI):
 
     # 3c. Plans: the reading of the person (LLM, with a deterministic fallback) and the
     #     beat-aware planner (prasang + mechanism embeddings cached next to the verses').
-    init_understander(rec, llm=get_sarvam() if settings.sarvam_api_key else None,
-                      timeout_s=settings.understand_timeout_s)
+    from ai.llm_providers import make_client
+    sarvam = get_sarvam() if settings.sarvam_api_key else None
+    roles = {r: make_client(getattr(settings, f"llm_{r}"), sarvam=sarvam, openai_key=settings.openai_api_key,
+                            openai_base_url=settings.openai_base_url, reasoning=settings.llm_reasoning) for r in ("reader", "writer", "rerank")}
+    init_understander(rec, llm=roles["reader"], timeout_s=settings.understand_timeout_s,
+                      writer_llm=roles["writer"], rerank_llm=roles["rerank"])
+    logger.info("LLM roles: reader=%s writer=%s rerank=%s", *(getattr(c, "model", "none") for c in roles.values()))
     init_planner(rec, roles_path=settings.verse_roles_path)
 
     # 4. Reranker (singleton; weights lazy-loaded on first search).

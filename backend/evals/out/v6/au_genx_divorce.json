@@ -1,0 +1,485 @@
+{
+ "persona": {
+  "id": "au_genx_divorce",
+  "market": "Australia (Melbourne)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "44, dentist in Melbourne, from Chandigarh originally, separated 6 months ago, kids with ex 4 days a week. Parents in India don't know yet.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely in a quiet house",
+   "bridge": "The quiet you are trying to fill with the television is what the texts call the absence of the beloved. It is grief, and it has a name.",
+   "week_thesis": "Seven days from filling the quiet house with the television to speaking the true thing to someone who can hold it.",
+   "week_beats": {
+    "hook": "You recognise the separation you cannot tell, and the silence you are trying to fill, named without judgment.",
+    "diagnose": "You see that the quiet is grief, and that keeping the truth from your parents is what makes it heavier.",
+    "steady": "You hold that what is real in you cannot be lost, and that your worth is not theirs to grant.",
+    "story": "A woman separated from her husband who kept the truth from her parents for a time shows you what speaking it looks like."
+   },
+   "undisclosed": true,
+   "texts": [],
+   "confidence": 0.6,
+   "core_struggle": "A separated mother who cannot tell her parents, and whose quiet house on the nights the children are away is filled with the television to keep the silence at bay.",
+   "mirror": "You leave the television on because the quiet of the house on the nights they are not here is too much to bear.",
+   "insight": "Even among people, you've felt unseen. The distance is real, and so is the way back.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.99,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "breakup",
+     "label": "I'm heartbroken after a breakup",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.675,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Living a separation you cannot tell your parents, and the silence of the house on the nights the children are away, filled with the television to keep the quiet at bay. I feel lonely.",
+    "diagnose": "When a truth is kept from the people who raised us, we carry it alone; the quiet of the house is grief, and grief is love with nowhere to go.",
+    "steady": "What is real in us cannot be lost, and no silence can erase the love that was real; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing to one person you trust, gently and firmly; hold your ground on what is yours; do your own duty without shrinking to fit the picture they hold.",
+    "story": "A woman who was separated from her husband, kept the truth from her parents for a time, and found her footing when she finally spoke the true thing to someone who could hold it."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet you are filling",
+    "The truth you are keeping",
+    "The self that remains"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "separated from partner six months ago",
+    "sees children three nights a week",
+    "has not told parents",
+    "the house is quiet on the nights children are not there"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "hook:anchored_to_situation",
+    "insight:template",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:blame=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:unpack=cliche",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.6717,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna is on the battlefield. He has laid down his bow and refuses to fight. He tells Krishna that even if he were to win an unrivalled kingdom or rule over the gods, it would not touch the grief that is drying him up inside. He admits he sees no way to drive away this sorrow, and he asks Krishna to teach him what is right, because he is confused.",
+     "for_you": "The quiet house and the television are Arjuna's bow. You are laying down the fight and admitting you do not know how to fill the silence. That is the first step toward clarity, not a failure."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.6201,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma speaks to King Janaka, who is grieving the loss of family and wealth. Ashma asks him to steady his mind by asking three questions: where was I before, where will I go, and who am I, really? He tells the king to ask why he should grieve, and to find his footing in the people still in front of him. Days do not come back, but the ones we have can still steady us.",
+     "for_you": "The quiet is grief, and the silence you keep from your parents makes it heavier. Ask yourself where you came from and who you are now. Let that steadiness be the first thing you offer your children when they return."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      }
+     ],
+     "prasang": null,
+     "score": 2.5798,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": "Rahim speaks to you from a love so close it needs no news. They say that to the one who has made a home in your heart, what joy or sorrow is left that needs telling. The truth is already there. You do not need to prove your pain to the one who holds you. What you feel is real, even if no one else has seen it.",
+     "for_you": "The quiet house is not empty of truth. The television fills the space, but it does not change what you are feeling. Let the quiet hold the real thing for a moment. You do not need to explain your loneliness to anyone, not even to yourself, right now."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.7",
+     "ref": "Bhagavad Gita 6.7",
+     "ref_iast": "Bhagavad Gītā 6.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः । शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥",
+     "line": "Self-mastered and calm, you stay centred in heat and cold, pleasure and pain, praise and insult.",
+     "translation": "For one who has conquered himself and is at peace, the higher self stays steady in cold and heat, pleasure and pain, honour and dishonour.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Staying steady under insult is not accepting mistreatment; you can stay calm and still speak up.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 2.5414,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": null,
+     "for_you": "The house is quiet, and the television is loud. You can let the noise push you around, or you can be the steady one. Your worth is not in the hands of the person who left. You are your own friend here. Stay true to that."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.9593,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu tells Nidagha how a free person walks among others. They do not cling to what is lost or chase what is gone. They meet friend and foe with the same open eye. They do the work that is in front of them, speak gently, and read the hearts of those around them. Because they are free of wanting and not-wanting, they neither grieve nor crave, and they do not sink in the world.",
+     "for_you": "The work in front of you is the quiet house. Let the television stay off for one hour. Let the silence sit with you. Do not fill it with noise. Feel the stillness without rushing to fix it."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "tulsi_dv.96",
+     "ref": "Dohavali 96",
+     "ref_iast": "Dohāvalī 96",
+     "family": "tulsi",
+     "speaker": "Tulsidas",
+     "listener": "his own mind",
+     "setting": "Tulsidas's advice to himself when weighed down.",
+     "sanskrit": "तुलसी राम कृपालु सों कहि सुनाउ गुन दोष। होय दूबरी दीनता परम पीन संतोष॥",
+     "line": "Tell the kind one everything, good and bad. The heaviness thins; peace grows.",
+     "translation": "Tulsi, tell the kind Ram all of it, your good points and your faults. Your misery will grow thin and your contentment will grow full.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9097,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Tulsidas turns inward and speaks to their own mind. They tell the kind Ram everything, both the good and the bad. They lay their faults and their grief bare. The weight of what is hidden grows light, and a full contentment begins to fill the space where the heaviness was.",
+     "for_you": "You are carrying a secret that is heavier than the television. Choose one safe person and speak the true thing to them. Let the words come out. Let the heaviness thin. Let the peace grow."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.pingala",
+     "title": "Pingala's song: the night she stopped waiting",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Pingala",
+      "Bhishma (narrator)"
+     ],
+     "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+     "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+     "lesson": "Letting go of an expectation can bring the sleep that waiting never will.",
+     "matched": [
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "anchor": {
+      "id": "mbh.12.173.64",
+      "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+      "ref_iast": "Mahābhārata, Śānti Parva 173.64",
+      "family": "mbh",
+      "speaker": "Pingala (quoted by Bhishma)",
+      "listener": "(herself)",
+      "setting": "Pingala, left waiting all night by a lover who never came, finally lets go and finds peace.",
+      "sanskrit": "सुखं निराशः स्वपिति नैराश्यं परमं सुखम् / आशामनाशां कृत्वा हि सुखं स्वपिति पिङ्गला",
+      "line": "Pingala let go of her expectation and slept peacefully. Letting go of expectation is the greatest ease.",
+      "translation": "The one free of expectation sleeps in peace; freedom from expectation is the highest happiness. Turning hope into no-hope, Pingala sleeps peacefully.",
+      "why": "Letting go of an expectation can bring the sleep that waiting never will.",
+      "misuse": "This is about clinging to an outcome, not about giving up hope in life.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "breakup",
+        "label": "I'm heartbroken after a breakup"
+       }
+      ],
+      "prasang": {
+       "id": "mbh.p.pingala",
+       "title": "Pingala's song: the night she stopped waiting",
+       "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+       "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+       "lesson": "Letting go of an expectation can bring the sleep that waiting never will."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Pingala waited all night for a man who never came",
+     "teaser": "Pingala waited all night for a man who never came",
+     "for_you": "Pingala waited all night for a lover who never came. She realized her peace was tied to someone else's arrival, and letting go of that expectation finally let her sleep. You are filling your quiet house with the television to wait for a feeling to leave."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet you are filling",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 250,
+   "llm": 5812,
+   "total": 15472,
+   "select": 9403
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is quiet tonight. You are sitting in it with the television on, and the noise is keeping the silence away. It is six months since you and your partner separated, and the children are with you three nights a week. On the other nights, the quiet is the loudest thing in the room."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. He has laid down his bow and arrow and refuses to fight. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "Arjuna is on the battlefield. He has laid down his bow and refuses to fight. He tells Krishna that even if he were to win an unrivalled kingdom or rule over the gods, it would not touch the grief that is drying him up inside. He admits he sees no way to drive away this sorrow, and he asks Krishna to teach him what is right, because he is confused."
+  ],
+  [
+   "for_you",
+   "The television is a shield, but it is also a silence you are not allowed to feel. Let the quiet be there for five minutes tonight. Do not try to fill it. Just sit with it and see what happens."
+  ],
+  [
+   "close",
+   "What if the quiet is not an enemy, but a door?"
+  ]
+ ],
+ "depth": {
+  "life": "You are in a quiet house on the nights the children are not there. You turn the television on to fill the silence. You are separated from your partner now, and you have not told your parents yet. You feel lonely even when the house is full of noise.",
+  "points": "Arjuna says even winning everything would not touch his grief. He admits his senses are drying up. The truth is that the silence you are trying to fill is the absence of the person you love. The grief is real, and it has a name.",
+  "practice": "Turn off the television for five minutes before you sleep. Sit with the quiet and name the feeling that comes up. Do not turn it back on until the feeling has passed.",
+  "question": "What is the first thing you would say to someone who could hold this grief for you?"
+ }
+}

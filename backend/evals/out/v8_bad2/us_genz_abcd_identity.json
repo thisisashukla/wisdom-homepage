@@ -1,0 +1,488 @@
+{
+ "persona": {
+  "id": "us_genz_abcd_identity",
+  "market": "USA (New Jersey)",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "21, Indian-American senior at Rutgers, born in NJ. Parents from Gujarat. Dating a white classmate; hasn't told parents. Feels neither fully Indian nor American.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "my parents keep asking when I'll 'settle down with a nice Gujarati boy' and I've been with my boyfriend for 2 years and he's not Indian. I feel like whichever way I go I lose a part of me",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "torn and losing a part of herself",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being asked to shrink to standing in the life you have already built.",
+   "week_beats": {
+    "hook": "You recognise being asked to become smaller than you are, and the fear of losing a part of yourself, named without blame."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.8,
+   "core_struggle": "An Indian young woman is being asked by her parents to marry a Gujarati man, and she feels that whichever way she goes she will lose a part of herself.",
+   "mirror": "It sounds like you're torn and losing a part of herself right now.",
+   "insight": "The life they keep describing is theirs to imagine, not yours to live. The only thing that would cost you a part of yourself is letting their picture replace your own.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 2.198,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.249,
+     "source": "note"
+    },
+    {
+     "id": "interfaith",
+     "label": "Faith differences in my relationship",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "My parents' expectations weigh on me. Being seen as less than you are by the people who ought to know you best, and the anger of watching the life you built get called a phase.",
+    "diagnose": "When others see only a role or a community, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A woman of learning and standing, dismissed by her family, who questioned them openly and stood in her truth until they had no answer."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Seen as less",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:hook_gives_advice",
+    "bridge:copied_example",
+    "mirror:fallback",
+    "day1_other_text:mbh",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:accept=1,cliche=1,fallback_line=1,gendered=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:for_you=cliche",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 2.9505,
+     "beat": "hook",
+     "role_fit": 0.805,
+     "meaning": "Vidula, the queen, finds her son Sanjaya lying on the ground after he has lost his kingdom. He is defeated and wants to give up. She tells him not to think less of himself or settle for little. She says to set his mind on something good and to stop being afraid. She wants him to pull himself together because a past failure does not define who he is. The truth is that results are uncertain, but those who never try never succeed.",
+     "for_you": "Your parents want you to become smaller than you are. The fear of losing a part of yourself is real. You do not have to settle for a life that asks you to shrink. You have already built something real with your studies and your own choices."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 3.1868,
+     "beat": "diagnose",
+     "role_fit": 0.16,
+     "meaning": "Krishna is speaking to Arjuna on the field of war, right before the battle begins. Arjuna is frozen, caught between what he was born to do and what his family expects of him. Krishna tells him to act from his own nature, not from fear or imitation. Your own path, walked imperfectly, is safer than a borrowed one, because a life lived for someone else is full of hidden danger.",
+     "for_you": "Your parents see a Gujarati man as the perfect fit on paper. But that is their picture, not your own. Following it means wearing a borrowed life. Your own path, even with its mess and doubt, is the only one that lets you breathe."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.1.16",
+     "ref": "Ashtavakra Gita 1.16",
+     "ref_iast": "Aṣṭāvakra Gītā 1.16",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "त्वया व्याप्तमिदं विश्वं त्वयि प्रोतं यथार्थतः । शुद्धबुद्धस्वरूपस्त्वं मा गमः क्षुद्रचित्तताम् ॥",
+     "line": "You are pure awareness, wider than any worry. Don't let your mind shrink into pettiness.",
+     "translation": "This whole universe is pervaded by you and strung on you. By nature you are pure awareness; do not fall into smallness of mind.",
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 3.1289,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "Ashtavakra, a young sage with a crooked body, is speaking to King Janaka, the ruler of Mithila. Janaka has asked how a person becomes truly free. Ashtavakra answers at once, telling him that he is not his roles, his kingdom, or his worries. He is the wide awareness that holds all of it. Freedom begins when you stop letting your mind shrink into pettiness.",
+     "for_you": "When your parents tell you who to marry, their picture of you is trying to shrink your mind. You are the wide awareness watching that pressure. Hold onto that. You are not the fight, and you are not their expectation. You are the space where it all happens."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.vairagya.92",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 92",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'The Way of the Free Ascetic'.",
+     "sanskrit": "ब्रह्माण्डं मण्डलीमात्रं किं लोभाय मनस्विनः । शफरीस्फुरितेनाब्धिः क्षुब्धो न खलु जायते ॥",
+     "line": "The ocean is not stirred by a small fish's flick. Petty things needn't shake you.",
+     "translation": "For the high-minded the whole universe is a mere ring; what is there in it to be greedy for? The ocean is not churned up by the flicker of a little fish.",
+     "why": "Let others' labels and small things pass; contentment makes you rich.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.avadhuta",
+      "title": "Vairagyashatakam: The way of the free ascetic",
+      "summary": "Portraits of the wandering sage: unbothered when people argue over his caste, sleeping under the sky like a king, and finally bidding farewell to the five elements.",
+      "story_hook": "",
+      "lesson": "Let others' labels and small things pass; contentment makes you rich."
+     },
+     "score": 2.9934,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Bhartrihari speaks of a mind so vast it treats the whole world as a small ring. A single flicker from a small fish cannot stir the ocean. The point is to let petty labels and small demands pass. When you hold a wide view, tiny pressures lose their grip, and you find a quiet richness in what is already here.",
+     "for_you": "The pressure to marry is a small fish flicking at the ocean of who you are. You have built a life of study, friendships, and your own faith. Hold onto that wide self. Do not let their expectations shrink your mind into pettiness."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.3668,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna speaks to Arjuna about the discipline of speech. He says that speech which causes no distress, which is true, pleasant, and beneficial, is austerity of speech. He means that you could speak kindly and truly, give without strings, and drop the show. Kind speech does not mean avoiding hard truths. It means saying them without cruelty.",
+     "for_you": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.1793,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is teaching Nidagha what it looks like to be free. He says to take up the work that is right in front of you, to treat friend and foe the same, and to let go of wanting and not wanting. A person who does this does not grieve or crave. They speak what is agreeable to everyone, and when they are asked to speak, they do so gently. They read the heart of others, and because of this, they do not sink in the world.",
+     "for_you": "Your parents are asking you to shrink into a life that is not yours, and that is a heavy thing. Today, let your next step be small. Speak gently about what you need, and keep doing the work you have already started."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.parvati_tapas",
+     "title": "Parvati holds to her choice",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Parvati",
+      "Narada",
+      "the Seven Sages",
+      "Mena",
+      "Himavan"
+     ],
+     "story_hook": "The sages came to talk Parvati out of it, and they listed every flaw in the man she had chosen.",
+     "summary": "Reborn as Parvati, Sati resolves to marry Shiva and spends years in austerity. The seven sages come to test her, mocking Shiva as a homeless ascetic and offering her a better match. She answers that gold keeps its nature even in fire, and that the heart wants the one it has chosen.",
+     "lesson": "Persistence is choosing the same thing again each day, even when others call it foolish.",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.76.chaupai.3",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 76",
+      "family": "rcm",
+      "speaker": "Parvati",
+      "listener": "the seven sages",
+      "setting": "Parvati answers the sages who mock her resolve to win Shiva through years of austerity.",
+      "sanskrit": "सत्य कहेहु गिरिभव तनु एहा। हठ न छूट छूटै बरु देहा॥ कनकउ पुनि पषान तें होई। जारेहुँ सहजु न परिहर सोई ॥",
+      "line": "Gold comes from stone, and even in fire it stays gold. Hold to what you are.",
+      "translation": "You speak truly: this body was born of a mountain, so its resolve will not break, even if the body does. Gold too is born of stone, and even in fire it does not give up its nature.",
+      "why": "Persistence is choosing the same thing again each day, even when others call it foolish.",
+      "misuse": "Steadiness is not stubbornness; keep checking that the goal is still worth it.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "fear_failure",
+        "label": "I'm afraid of failing"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.parvati_tapas",
+       "title": "Parvati holds to her choice",
+       "summary": "Reborn as Parvati, Sati resolves to marry Shiva and spends years in austerity. The seven sages come to test her, mocking Shiva as a homeless ascetic and offering her a better match. She answers that gold keeps its nature even in fire, and that the heart wants the one it has chosen.",
+       "story_hook": "The sages came to talk Parvati out of it, and they listed every flaw in the man she had chosen.",
+       "lesson": "Persistence is choosing the same thing again each day, even when others call it foolish."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "The sages listed every flaw in the man Parvati had chosen",
+     "teaser": "The sages listed every flaw in the man Parvati had chosen",
+     "for_you": "Parvati held to her choice even when the sages called it foolish and offered her something easier. Gold stays gold even in fire. You have already built a life that is yours. Hold to it, day by day, and let your parents see who you are."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Seen as less",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 186,
+   "llm": 4721,
+   "total": 12392,
+   "select": 7479
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are caught between two pictures of your life, and it feels like you are losing a piece of yourself either way. It is exhausting to fight with your parents every single day. They want you to marry a Gujarati man, and you feel like they are asking you to become smaller than you already are."
+  ],
+  [
+   "scene",
+   "Queen Vidula finds her son Sanjaya lying on the ground. He has lost his kingdom to his enemies. He is tired, defeated, and he wants to give up completely. But Vidula refuses to let him stay there. She tells him not to think less of himself. Vidula said:"
+  ],
+  [
+   "sanskrit",
+   "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर."
+  ],
+  [
+   "line",
+   "In plain words: Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing."
+  ],
+  [
+   "unpack",
+   "This is about seeing yourself clearly, not through the eyes of someone else's fear. It is easy to let a past loss, or a parent's disappointment, make you feel like you are worth less. But that is not true. Your life does not end because your parents want a different road. The real loss would be letting their picture of you replace the one you have built with your own studies and your own choices. This is easier said than done, because family pressure feels heavy. But letting yourself shrink is a choice."
+  ],
+  [
+   "for_you",
+   "For you, today. Your parents want you to become smaller than you are. The fear of losing a part of yourself is real. You do not have to settle for a life that asks you to shrink. You have already built something real with your studies and your own choices."
+  ],
+  [
+   "close",
+   "Who are you when no one is asking you to be smaller?"
+  ]
+ ],
+ "depth": {
+  "life": "Your phone is in your hands, and your parents' voices are in your ear, asking you to marry a man you do not know. You are studying, you are trying to build a life, but they are pulling you toward a future that does not fit. You feel yourself splitting in two, as if one choice will erase the person you are becoming.",
+  "points": "The texts say that failure or pressure does not make you small. You are not your parents' fear or their lost dreams. You are a young person with your own mind, and that mind is already building something real. Do not let their picture of you replace your own.",
+  "practice": "Put the phone down. Look at the book or notes in front of you and read one paragraph with full attention.",
+  "question": "What is one thing about yourself that they do not see?"
+ }
+}

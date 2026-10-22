@@ -41,17 +41,18 @@ from collections import Counter
 from typing import Optional
 
 from fastapi import APIRouter, HTTPException
+from pydantic import BaseModel, Field
 
 from ai.depth import DepthCache, cache_key, person_key, write_depth
 from ai.personalize import personal_parts
 from ai.voice import PersonContext, item_from_card, item_from_library, person_brief
 from common.config import settings
 
-from ai.llm_rerank import rerank_hooks_scored, rerank_story
+from ai.llm_rerank import rerank_hooks_scored, rerank_story, score_week
 from ai.mechanisms import MECHANISMS
 from ai.mechanisms import LEVELS
-from ai.planner import get_planner, level_for, parse_shape, week_arc
-from ai.recommender import SAFETY, get_recommender
+from ai.planner import BEREAVEMENT_SITS, get_planner, level_for, parse_shape, week_arc
+from ai.recommender import SAFETY, display_sanskrit, get_recommender
 from ai.understanding import Profile, Understanding, check_note, get_understander, merge_situations
 from ai.story_titles import hook_title
 from common.models import (ArcBeats, BeatVerse, HookRequest, HookResponse, PlanDayOut, PlanInput, PlanRequest,
@@ -129,7 +130,11 @@ def _ctx(req: PlanInput, u: Understanding, rec, planner, level: str = "situation
         age=u.age, stages=list(u.stages or []), phone_hours=req.phone_hours, seat=u.seat, life_context=u.life_context,
         details=list(u.details or []), core=u.core_struggle, insight=u.insight, root=MECHANISMS[u.mechanism]["label"],
         situations=[rec.situations[s["id"]]["label"] for s in u.situations[:3] if s["id"] in rec.situations],
-        risk=u.risk, level=level, week=week, days_seen=(j.days_seen if j else 0), helped=helped,
+        risk=u.risk, note_quality=u.note_quality, stance=u.stance, gender=u.gender, emotion=u.emotion, bridge=u.bridge, mechanism=u.mechanism,
+        week_thesis=u.week_thesis, week_beats=dict(u.week_beats or {}), undisclosed=u.undisclosed, hinglish=u.hinglish,
+        bereaved=any(s["id"] in BEREAVEMENT_SITS for s in u.situations[:3]),
+        people=list(u.people) if (u.source != "client" or u.people) else None,
+        level=level, week=week, days_seen=(j.days_seen if j else 0), helped=helped,
         past=[x.strip() for x in (j.past if j else []) if x and x.strip()][:3],
     )
 
@@ -160,11 +165,11 @@ async def _choose_hook(rec, planner, und, u: Understanding, feeling: str, exclud
     hook scores, reranked)."""
     cands, qvecs, scores = await asyncio.to_thread(planner.hook_candidates, u, feeling, exclude, k, helped)
     budget = min(settings.rerank_timeout_s, _time_left(t0) - 1.0)
-    if und.llm is None or budget < 1.5 or len(cands) < 2:
+    if und.rerank_llm is None or budget < 1.5 or len(cands) < 2:
         return cands, qvecs, scores, False
     card = lambda i: {"id": rec.verses[i]["id"], "line": rec.verses[i]["line"], "speaker": rec.verses[i].get("speaker"),
                       "listener": rec.verses[i].get("listener"), "setting": rec.verses[i].get("setting")}
-    order, ok, llm_s = await rerank_hooks_scored(und.llm, person or u.core_struggle, [card(i) for i in cands], budget)
+    order, ok, llm_s = await rerank_hooks_scored(und.rerank_llm, person or u.core_struggle, [card(i) for i in cands], budget)
     pos = {rec.verses[i]["id"]: i for i in cands}
     out = [pos[x] for x in order]
     # No Gita verse speaks to their situation: look once in the other texts (settings.day1_other_texts).
@@ -173,7 +178,7 @@ async def _choose_hook(rec, planner, und, u: Understanding, feeling: str, exclud
     if ok and settings.day1_other_texts and best < settings.day1_gita_floor and budget >= 1.5:
         others = await asyncio.to_thread(planner.hook_candidates_open, u, feeling, exclude, 4, helped)
         if others:
-            o_order, o_ok, o_s = await rerank_hooks_scored(und.llm, person or u.core_struggle, [card(i) for i in others], budget)
+            o_order, o_ok, o_s = await rerank_hooks_scored(und.rerank_llm, person or u.core_struggle, [card(i) for i in others], budget)
             top = o_order[0] if o_ok else None
             if top and o_s.get(top, 0) >= best + settings.day1_other_margin:
                 o_pos = {rec.verses[i]["id"]: i for i in others}
@@ -188,9 +193,9 @@ async def _choose_story(rec, und, u: Understanding, stories: list, t0: float, pe
     if not stories:
         return None, None
     budget = min(settings.rerank_timeout_s, _time_left(t0) - 0.5)
-    if und.llm is None or budget < 1.5 or len(stories) < 2:
+    if und.rerank_llm is None or budget < 1.5 or len(stories) < 2:
         return stories[0], None
-    pick, why = await rerank_story(und.llm, person or u.core_struggle, [s["prasang"] for s in stories], budget)
+    pick, why = await rerank_story(und.rerank_llm, person or u.core_struggle, [s["prasang"] for s in stories], budget)
     chosen = next((s for s in stories if s["prasang"]["id"] == pick), stories[0])
     return chosen, why
 
@@ -235,7 +240,7 @@ async def _personalize(und, u: Understanding, out_days: list, ctx: PersonContext
         card = d.get("verse") or d.get("story")
         if card:
             items.append(item_from_card(card, d["beat"]))
-    parts = await personal_parts(und.llm, ctx, items, settings.for_you_timeout_s)
+    parts = await personal_parts(und.writer_llm, ctx, items, settings.for_you_timeout_s)
     u.flags.extend(ctx.flags)
     for d in out_days:
         card = d.get("verse") or d.get("story")
@@ -247,6 +252,41 @@ async def _personalize(und, u: Understanding, out_days: list, ctx: PersonContext
         verses = sum(1 for it in items if it.get("kind") != "story")
         if verses:
             u.flags.append(f"meaning:{sum(1 for p in parts.values() if p.get('meaning'))}/{verses}")
+
+
+JOB_WORDS = {"hook": "see: name what is happening to them", "diagnose": "see: show what is underneath it",
+             "steady": "steady: footing to hold while it is hard", "act": "act: one practice for exactly this"}
+WEEK_FIT_FLOOR = 0.35
+
+
+async def _fit_week(rec, planner, und, u, req, days, pin, story_pin, shape, person, t0):
+    """One bounded LLM read of the chosen week: a verse that does not do its day's job for this person is swapped
+    (the plan is built again with it excluded) before any words are written. The hook they already kept is never
+    swapped. Returns (days, pin)."""
+    budget = min(settings.rerank_timeout_s, _time_left(t0) - 1.0)
+    if und.rerank_llm is None or budget < 1.5 or not days:
+        return days, pin
+    cards = []
+    for d in days:
+        if d["beat"] == "story" or d.get("verse_index") is None:
+            continue
+        v = rec.verses[d["verse_index"]]
+        cards.append({"id": v["id"], "day": d["day_in_week"], "job": JOB_WORDS.get(d["beat"], d["beat"]), "line": v.get("line"),
+                      "speaker": v.get("speaker"), "listener": v.get("listener"), "setting": v.get("setting")})
+    scores = await score_week(und.rerank_llm, person, cards, budget)
+    if not scores:
+        return days, pin
+    kept_hook = getattr(req, "hook_id", None)
+    weak = [i for i, s in scores.items() if s < WEEK_FIT_FLOOR and i != kept_hook]
+    u.flags.append("week_fit:" + ",".join(f"{i.split('.')[-1]}={s:.1f}" for i, s in scores.items()))
+    if not weak:
+        return days, pin
+    u.flags.append(f"week_fit:swapped={len(weak)}")
+    if pin in weak:
+        pin = None
+    days2 = await asyncio.to_thread(planner.plan, u, req.feeling, req.days, list(req.exclude) + weak, pin, story_pin,
+                                    req.week, req.level, shape, [f.model_dump() for f in req.feedback], _helped(req))
+    return (days2 or days), (pin or (rec.verses[days2[0]["verse_index"]]["id"] if days2 and days2[0].get("verse_index") is not None else pin))
 
 
 def _shape(req) -> str:
@@ -271,9 +311,9 @@ def _weeks(u: Understanding, days: int, shape: str) -> list:
 
 def _log(kind: str, req: PlanInput, u: Understanding, t0: float, **extra):
     logger.info(
-        "%s: feeling=%s age=%s stages=%d chips=%s note=%s source=%s quality=%s risk=%s mech=%s conf=%.2f q=%s flags=%s %s %.0fms",
+        "%s: feeling=%s age=%s stages=%d chips=%s note=%s source=%s quality=%s risk=%s stance=%s mech=%s conf=%.2f q=%s flags=%s %s %.0fms",
         kind, req.feeling, req.age, len(req.stages), bool(req.topic or req.follow), "yes" if req.note else "no",
-        u.source, u.note_quality, u.risk, u.mechanism, u.confidence,
+        u.source, u.note_quality, u.risk, u.stance, u.mechanism, u.confidence,
         ",".join(f"{k[0]}:{v[0]}" for k, v in u.query_sources.items()), ",".join(u.flags) or "-",
         " ".join(f"{k}={v}" for k, v in extra.items()), (time.perf_counter() - t0) * 1000,
     )
@@ -357,6 +397,7 @@ async def plan(req: PlanRequest) -> PlanResponse:
             story_pin = st["prasang"]["id"] if st else None
     days = await asyncio.to_thread(planner.plan, u, req.feeling, req.days, req.exclude, pin, story_pin,
                                    req.week, req.level, shape, [f.model_dump() for f in req.feedback], _helped(req))
+    days, pin = await _fit_week(rec, planner, und, u, req, days, pin, story_pin, shape, person, t0)
     if u.risk == "harm_from_others" and (req.days > 7 or (req.week or 1) > 1):
         u.flags.append("plan_kept_gentle_for_safety")
     out_days = []
@@ -503,8 +544,30 @@ async def depth(req: DepthRequest) -> DepthResponse:
     got = cache.get(key)
     cached = got is not None
     if not cached:
-        got = await write_depth(und.llm, ctx, item, req.for_you, settings.depth_timeout_s)
+        got = await write_depth(und.writer_llm, ctx, item, req.for_you, settings.depth_timeout_s)
         if len(got) >= 3:                 # keep only a good set; a thin one is asked again next time
             cache.put(key, got)
     _log("depth", req, u, t0, parts=len(got), cached=cached)
     return DepthResponse(depth=got, cached=cached, timings_ms={"total": int((time.perf_counter() - t0) * 1000)})
+
+
+# ── Originals: the Sanskrit for verses already on a phone ──────────────────────
+# Plans built before a verse's original was cleared for display carry no Sanskrit. The app asks
+# for the ids it holds without one, and lays what comes back over its stored days.
+class OriginalsRequest(BaseModel):
+    ids: list[str] = Field(default_factory=list, max_length=200)
+
+
+class OriginalsResponse(BaseModel):
+    originals: dict[str, Optional[str]]
+
+
+@router.post("/recommend/originals", response_model=OriginalsResponse, tags=["plan"])
+async def originals(req: OriginalsRequest) -> OriginalsResponse:
+    rec = get_recommender()
+    want = {i for i in req.ids if isinstance(i, str) and 0 < len(i) <= 80}
+    out: dict[str, Optional[str]] = {i: None for i in want}
+    for v in rec.verses:
+        if v["id"] in want:
+            out[v["id"]] = display_sanskrit(v)
+    return OriginalsResponse(originals=out)

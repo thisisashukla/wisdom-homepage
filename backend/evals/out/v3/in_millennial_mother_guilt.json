@@ -1,0 +1,478 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "torn and quietly grieving",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "This week moves you from feeling split to standing whole in both roles, without the guilt.",
+   "week_beats": {
+    "hook": "You recognise the split and the guilt, named without judgement.",
+    "diagnose": "You see that the guilt is the tax on choosing either one, and that you are not failing at both.",
+    "steady": "You hold that you can be loyal to both without being split.",
+    "act": "You try giving your full attention to one duty and letting the other rest without guilt.",
+    "story": "A mother who had to choose between her child and her people shows you how to stand in both."
+   },
+   "confidence": 0.7,
+   "core_struggle": "Back at work after her second baby, she feels she is splitting herself between being a mother and being a PM, and her daughter's question left her weeping in the car.",
+   "mirror": "You gave the day to your team, and at the school gate your daughter asked why you were not there.",
+   "insight": "It isn't that you are half in each place. It's that you are holding two duties that both belong to you, and the guilt is the tax on choosing either one.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.76,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.575,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.363,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The ache of being pulled between two loves, and the guilt that comes with choosing either one. I'm physically home but not present with my kids.",
+    "diagnose": "When duties pull in different directions, confusion comes and fear clouds which one is truly yours; the mind suffers when it believes it must be fully one or fully the other.",
+    "steady": "You can be loyal to both without being split; no one who serves two duties is ever failing at both.",
+    "act": "Give your full attention to whichever duty is before you, and let the other rest without guilt; your love is not divided, it is simply present.",
+    "story": "A mother who had to choose between a duty to her child and a duty to her people, who stood in both and found she was not torn."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The split between two loves",
+    "The guilt of choosing",
+    "Whole in both places"
+   ],
+   "seat": "a working mother who feels she is splitting herself between her job and her children",
+   "life_context": "In her mid-thirties, working and raising children; she has returned to work after her second birth, and the question of her daughter about school events has left her weeping in the car, feeling half a mother and half a professional.",
+   "details": [
+    "back at work after second baby",
+    "feels she is half a mother and half a PM",
+    "daughter asked why she is not at school things",
+    "cried in the car after the question"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:copied=1,preachy=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:open=verdict",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.7",
+     "ref": "Bhagavad Gita 2.7",
+     "ref_iast": "Bhagavad Gītā 2.7",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+     "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+     "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.1715,
+     "beat": "hook",
+     "role_fit": 0.94,
+     "meaning": "Arjuna has laid down his weapons on the battlefield. He is weeping and trembling, unable to tell right from wrong. He tells Krishna that his nature is overcome by weakness and his mind is spinning. He asks Krishna to tell him plainly what is best, because he is ready to learn. He says he is Krishna's student and has come to him to be taught.",
+     "for_you": "In the car, after your daughter asked why you were not there, you felt the same confusion. You are not failing at your job or at being her mother. You are simply admitting that you do not know how to hold both, and that is the first honest step toward standing whole in both."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.12",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.12",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to stay steady when people and wealth come and go.",
+     "sanskrit": "मानसानां पुनर्योनिर्दुःखानां चित्तविभ्रमः / अनिष्टोपनिपातो वा तृतीयं नोपपद्यते",
+     "line": "Mental pain comes from two places: something you didn't want happened, or your mind is spinning. No third.",
+     "translation": "Sorrow of the mind has only two sources: a confused, wandering mind, or something unwanted happening to you. There is no third.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.8475,
+     "beat": "diagnose",
+     "role_fit": 0.816,
+     "meaning": "The sage Ashma tells King Janaka that the mind's pain comes from only two sources: something unwanted has happened, or the mind itself is wandering in confusion. There is no third cause. The verse says that when a day is gone, we grieve what we lost, but then we steady ourselves with the people still standing before us.",
+     "for_you": "Your daughter asking why you were not at her school event is something unwanted happening. That grief is real. But the second source, the spinning mind, is where the guilt lives. Let the grief pass through you, then turn your attention back to the people still here."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.81",
+     "ref": "Ashtavakra Gita 18.81",
+     "ref_iast": "Aṣṭāvakra Gītā 18.81",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "नैव प्रार्थयते लाभं नालाभेनानुशोचति । धीरस्य शीतलं चित्तममृतेनैव पूरितम् ॥",
+     "line": "Not begging for gain, not grieving loss: a steady mind stays cool and full.",
+     "translation": "He does not pray for gain, nor grieve over loss. The steady one's cool mind is filled as if with nectar.",
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 3.0456,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "In the closing chapter on peace, the sage Ashtavakra describes the mind of the steady one. He does not beg for gain, nor does he grieve over loss. The cool mind of the wise is filled as if with nectar. Calm is not found by chasing it or changing places. It is how you hold ordinary life.",
+     "for_you": "You can be loyal to both your work and your children without being split. Your mind can hold both. You do not have to beg for presence or grieve over absence. You are allowed to hold both duties and remain full inside."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 2.8912,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna is telling Arjuna how the wise move through the world. He says they are content with what arrives unasked, free from envy, and steady whether they win or lose. Because they are not attached to gain or afraid of loss, they are not bound by their work, even when they are doing it with full force.",
+     "for_you": "You are holding the guilt of choosing. The texts say you can be fully present in your role, whether that is the office or the kitchen, without being split. Let the other part rest for now."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.9992,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu is showing Nidagha how a free person lives in the world. He says to be busy on the outside and unhurried inside. Do the work at hand, but let your mind stay clear and calm. Let go of what is lost, take up what comes, and treat the whole world as family, all while keeping your inner stillness.",
+     "for_you": "When your daughter asks why you missed her school play, give her your full attention in that moment. Let the work emails wait. Let the other duty rest without guilt, and keep your mind unhurried."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.8777,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is teaching Arjuna the art of action. He says your right is only to the work itself, never to its fruits. Do not let the outcome be your motive, and do not cling to doing nothing. Work with your whole being, but release your hold on the result.",
+     "for_you": "Send the project report with your full effort, and then let it go. Your duty is the doing, not the result. The same is true at home. Your duty is the showing up, not the perfect outcome."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "Janaka stayed on the palace roof, but then he walked down the stairs into the day's duties. You do not have to leave your office to be a mother, or leave your child to be a professional. Let the two roles be the ground you walk on, not the weight that breaks your back."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The split between two loves",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 129,
+   "llm": 4876,
+   "total": 11044,
+   "select": 6033
+  }
+ },
+ "script": [
+  [
+   "scene",
+   "Arjuna stands on the battlefield. He has laid down his bow and arrow. He is weeping and trembling. He tells Krishna that his mind is spinning, that he cannot tell right from wrong, and that he is confused about what to do next. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः, यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्."
+  ],
+  [
+   "line",
+   "In plain words: I'm confused about what's right. Tell me plainly what's best; I'm ready to learn."
+  ],
+  [
+   "unpack",
+   "Arjuna admits he does not know the right thing to do. He asks Krishna to teach him clearly. This is where clarity begins. You do not have to have the answer right now. You only have to admit that you are torn, and ask for help."
+  ],
+  [
+   "for_you",
+   "In the car, your daughter asked a simple question, and you felt the same confusion. You are not failing at your job or at being her mother. You are simply admitting that you do not know how to hold both, and that is the first honest step toward standing whole in both."
+  ],
+  [
+   "close",
+   "What would it feel like to let someone teach you the way forward?"
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": null,
+  "practice": "Find one quiet minute before you go to bed tonight and simply say out loud, I do not know how to hold both of these. Let the sentence sit there without fixing it.",
+  "question": "What would it feel like to let go of the need to choose, just for a moment?"
+ }
+}

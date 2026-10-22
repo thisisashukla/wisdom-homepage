@@ -1,0 +1,516 @@
+{
+ "persona": {
+  "id": "us_genx_mother_empty_nest",
+  "market": "USA (Texas)",
+  "generation": "Gen X",
+  "gender": "woman",
+  "who": "52, physician in Houston, came from Chennai at 26. Younger son just left for college. Marriage is fine but quiet. Mother in Chennai has early dementia.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "parent_health"
+  },
+  "note": "dropped my younger one at college last week and drove home 4 hours in silence. my amma in Chennai doesn't always recognise me on video calls now. I'm between two people who don't need me the way they did",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and unmoored",
+   "bridge": "The silence of the car and your mother's fading face are two losses that ask you to stand in your own truth, not in the role of someone who is needed.",
+   "week_thesis": "Seven days from feeling between two people who no longer need you to standing in the truth that what you are is not measured by what they need.",
+   "week_beats": {
+    "hook": "You recognise the grief of being between two losses, and the anger of being unseen, named without blame.",
+    "diagnose": "You see that the roles they no longer need are their loss, not your size.",
+    "steady": "You hold that what is real in you cannot be lost, and the love that was real is still real.",
+    "act": "You try speaking the true thing to yourself, and holding your ground on what is yours.",
+    "story": "A woman whose mother no longer knew her shows you how to stand when the roles you knew are taken away."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.65,
+   "core_struggle": "My parents are getting older far away",
+   "mirror": "You gave them a life, and now you are driving home to a silence that has no one in it.",
+   "insight": "You are not losing them because you failed. You are losing the roles that defined you, and that is a grief that has no one to receive it.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 2.06,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.485,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.032,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.44,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "My parents are getting older far away. Inside, my mind won't settle, and I don't know how to carry it.",
+    "diagnose": "When the roles that once defined us are taken away by time, the grief has no one to receive it; the harm deepens only when we begin to believe the emptiness is our own size.",
+    "steady": "What is real in you cannot be lost; the love that was real is still real, even when the face that held it changes.",
+    "act": "Speak the true thing to yourself and to those you love, hold your ground on what is yours, and find the courage the moment asks for.",
+    "story": "A woman whose mother no longer knew her, who stood in her truth and found her footing when the roles she had known were taken from her."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Between two losses",
+    "Whose roles are they",
+    "More than what they need"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "dropped younger child at college last week"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "hook:hook_gives_advice",
+    "core_struggle_fallback",
+    "seat:missing",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:cliche=1,invented=1,repeat=1",
+    "for_you:6/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.966,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands in the middle of the battlefield and tells Krishna that even a kingdom or the rule of the gods could not dry up this grief that is consuming him. He admits he cannot see any way out of this sorrow, and he asks Krishna to teach him what is right. He is saying that he is lost and needs a guide.",
+     "for_you": "The silence in the car after dropping your child and the distance to your parents are two losses that have left you unmoored. You are grieving a role that is slipping away. This is the moment to admit you do not know the way forward and to ask for the clarity you need."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 3.2817,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "Kausalya speaks to Dasharatha after she lashes out at him. In the heavy silence after her own anger, she explains what grief did to her. She says grief wears away your steadiness and your judgement. There is no enemy like it. She is not saying sorrow is wrong. She is saying grief can make us wound those we love, and a quick apology heals more than being right. The truth underneath is that sorrow is a powerful force. It can loosen the grip we have on ourselves and the people closest to us.",
+     "for_you": "The roles you no longer need are a real loss. Let them go without shrinking your own size. You did not fail them. You simply outgrew a shape that once held you both."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.27",
+     "ref": "Bhagavad Gita 2.27",
+     "ref_iast": "Bhagavad Gītā 2.27",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च । तस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि ॥",
+     "line": "Whatever is born will die, and what dies is born again. Don't torment yourself over the unavoidable.",
+     "translation": "Death is certain for the one who is born, and birth is certain for the one who dies. So you should not grieve over what cannot be avoided.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a reason to stop caring for the sick or to rush someone's mourning.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.2345,
+     "beat": "steady",
+     "role_fit": 0.355,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. Arjuna is broken by what he must lose. Krishna reminds him that whatever is born will die, and what dies is born again. He tells Arjuna not to torment himself over the unavoidable. The truth underneath is that what you truly are outlasts every loss and every passing pain. The body and its ties are temporary, but the core of you remains untouched.",
+     "for_you": "The love you felt for them is not gone. It is real, and it stays real even as the roles change. What is true inside you cannot be taken away."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.165",
+     "ref": "Maha Upanishad 4.17",
+     "ref_iast": "Mahā Upaniṣad 4.17",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on people of steady goodness.",
+     "sanskrit": "नापदि ग्लानिमायान्ति निशि हेमाम्बुजं यथा । नेहन्ते प्रकृतादन्यद्रमन्ते शिष्टवर्त्मनि ॥",
+     "line": "Good people do not wilt in hard times, like a golden lotus that stays open at night.",
+     "translation": "In adversity they do not wilt, as the golden lotus does not close at night. They want nothing beyond what is at hand and delight in the path of the good.",
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 3.2053,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ribhu is speaking to Nidagha about people of steady goodness. Ribhu says that in adversity, such people do not wilt. He uses the image of a golden lotus that does not close at night. They want nothing beyond what is at hand and delight in the path of the good. This means that when hard times come, a calm person does not fold up. They rest in what is true, without needing to grab for more. The rest of life follows from this calm.",
+     "for_you": "The car is silent now, and your mother's face is fading, but the love that was real is still real. You do not have to wilt in this grief. Hold on to the truth that your worth is not measured by how much they need you."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.2721,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "speak the true thing to yourself. You did not fail your parents by letting them grow old. You are not losing them because you were not enough. Hold your ground on what is yours: the truth of your love and the reality of your grief."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.0819,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after he has lost his kingdom. She does not let him drown in his despair. She tells him that his past loss does not own him, and that living too small is a worse fate than trying and failing. She asks him to set his mind on what is truly good, and to stop fearing what might come next.",
+     "for_you": "The silence of the car is not a sign that you are failing. It is the space where you stop being the one who is needed, and start being the one who is. Set your mind on what is truly good for you today, and stop fearing the quiet."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.janaka_vidai",
+     "title": "Janaka says goodbye to his daughter",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Janaka",
+      "Sunayana",
+      "Sita",
+      "Ram"
+     ],
+     "story_hook": "He was the most detached king in the world, and his daughter was leaving.",
+     "summary": "After the wedding the time comes for Sita to leave Mithila. The palace, even the pet parrots, are in tears. Janaka, known everywhere for his detachment, holds his daughter and loses all composure; his ministers have to remind him it is time.",
+     "lesson": "Even the wisest parent breaks a little when a child leaves home; that is love.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.318.chaupai.3",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 318",
+      "family": "rcm",
+      "speaker": "Narrator",
+      "listener": "the reader",
+      "setting": "King Janaka, famous for his detachment, as his daughter Sita leaves home after her wedding.",
+      "sanskrit": "सीय बिलोकि धीरता भागी। रहे कहावत परम बिरागी॥ लीन्हि रायँ उर लाइ जानकी। मिटी महामरजाद ग्यान की ॥",
+      "line": "Known for his calm, he held his daughter close as she left, and all his wisdom gave way.",
+      "translation": "He was known as supremely detached, yet on seeing Sita his composure fled. The king held Janaki to his heart, and the great banks of his wisdom gave way.",
+      "why": "Even the wisest parent breaks a little when a child leaves home; that is love.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       },
+       {
+        "id": "empty_nest",
+        "label": "My kids have left home"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.janaka_vidai",
+       "title": "Janaka says goodbye to his daughter",
+       "summary": "After the wedding the time comes for Sita to leave Mithila. The palace, even the pet parrots, are in tears. Janaka, known everywhere for his detachment, holds his daughter and loses all composure; his ministers have to remind him it is time.",
+       "story_hook": "He was the most detached king in the world, and his daughter was leaving.",
+       "lesson": "Even the wisest parent breaks a little when a child leaves home; that is love."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Janaka was the most detached king in the world, until his daughter Sita left home",
+     "teaser": "Janaka was the most detached king in the world, until his daughter Sita left home",
+     "for_you": null
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Between two losses",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 222,
+   "llm": 5284,
+   "total": 11689,
+   "select": 6171
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The silence in the car is not empty. It is the sound of a role you have played for years finally falling away. You are grieving, and the grief sits in your chest like a stone you are not allowed to drop."
+  ],
+  [
+   "scene",
+   "Arjuna stands in the middle of a battlefield, his body trembling, his mind refusing to move. He tells Krishna that even a kingdom, even power over the gods, could not stop this grief that is drying him up. He admits he cannot see the way forward. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "Arjuna is not asking for a strategy. He is admitting he does not know. He is saying the sorrow is too large for any prize. Clarity does not begin with answers. It begins with the courage to stand in your own confusion and ask for a guide."
+  ],
+  [
+   "for_you",
+   "Let the silence in the car be the place where you admit you do not know the way forward. Ask for the clarity you need, without trying to fix the distance or the grief right now."
+  ],
+  [
+   "close",
+   "What would it feel like to ask for help before you know what to ask for?"
+  ]
+ ],
+ "depth": {
+  "life": "You are in the car after a long drive, the silence where your child used to sit, and the phone in your hand feels heavy. Your parents are far away, and you are grieving a role that is slipping away. You feel unmoored, unsure of what to do next.",
+  "points": "The grief you feel is not about failing. It is about the roles that defined you, like being a parent and a child, fading. You do not know how to be without them. Admitting you do not know is the first step to finding clarity.",
+  "practice": "Sit with the silence in the car for a few minutes, and ask yourself what you need right now.",
+  "question": "What would it feel like to ask for help without needing to have the answer?"
+ }
+}

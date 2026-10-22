@@ -1,0 +1,517 @@
+{
+ "persona": {
+  "id": "ae_millennial_gulf_provider",
+  "market": "UAE (Dubai)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "35, works in logistics in Dubai for 11 years, sends money to parents and brother in Kerala, brother's wedding and father's surgery this year. Wife wants to move back.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "11 years in dubai sending money home. brothers wedding, fathers heart surgery, both this year. my wife wants to go back to india. everyone needs something from me and I don't know what I need",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "man",
+   "emotion": "pulled apart and empty",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "This week moves him from being the one who provides for all to being the one who can name what is his own.",
+   "week_beats": {
+    "hook": "He recognises the weight of everyone's need and the quiet question of what he needs.",
+    "diagnose": "He sees that the mind will not settle because the duties are real and his own is still unnamed.",
+    "steady": "He holds that his own duty to himself is real and not a betrayal.",
+    "act": "He tries naming one thing he needs for himself and holding it as his own duty.",
+    "story": "A son who carried his family through crisis shows him what it looks like to stand in his own duty."
+   },
+   "confidence": 0.65,
+   "core_struggle": "An eleven-year-old provider abroad, caught between a brother's wedding, a father's surgery, and a wife who wants to go home, cannot name what he himself needs.",
+   "mirror": "My parents are getting older far away",
+   "insight": "It isn't the work that won't let you rest. It's that everyone's need is real and so is his, and he has not yet named what is his own.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.755,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.05,
+     "source": "chip"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.517,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of everyone's need on you, and the quiet question of what you need when no one has asked. My parents are getting older far away.",
+    "diagnose": "When duties pull in different directions and fear clouds which one is truly yours, the mind becomes its own enemy and will not settle.",
+    "steady": "You are not a machine for others' needs; your own duty to yourself is real, and it is not a betrayal of the ones you love.",
+    "act": "Name one thing you need for yourself this week, however small, and hold it as your own duty.",
+    "story": "A son and brother who carried the family through crisis, faced with a choice that was his alone, and found his footing in it."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Carrying everyone",
+    "Whose duty is it",
+    "The one who needs"
+   ],
+   "seat": "",
+   "life_context": "A man in his thirties working in Dubai for eleven years; this year he paid for his brother's wedding and his father's heart surgery, his wife wants to go back to India, and everyone still needs something from him, so his mind will not settle.",
+   "details": [
+    "eleven years in Dubai sending money home",
+    "brother's wedding this year",
+    "father's heart surgery this year",
+    "wife wants to return to India"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "retried:2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.2241,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands on the battlefield and tells Krishna he sees no way to lift the grief that is drying him up inside. He says that even an unrivalled kingdom on earth or rule over the gods would not touch this sorrow. He is asking what is right, because his own mind is lost. Admitting you do not know and asking for help is where clarity begins. It is the first step toward seeing what is truly his own.",
+     "for_you": "You are paying for a brother's wedding and a father's surgery, and your wife wants to go home, yet your mind will not settle. This is because every need is real, and your own has not yet been named. Today, let the quiet question of what you need exist without rushing to answer it."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 3.3131,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Two old friends meet again after decades. Bhasa admits to Vilasa that he never found peace. He tells him that the mind is carried along on endless great waves of tasks. It is always thinking, 'This done, this doing, this do.' Caught in a net of reckonings, the bird of the mind faints. Years of hard effort without inner understanding can leave you exactly where you started, still spinning.",
+     "for_you": "Yesterday you saw the net. Today you see the bird that is you, fainting in it. Your mind is not broken. It is simply carrying the weight of real duties that have no end. Let it rest in the truth that you are not failing, you are just caught in the current of everyone's need."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": null,
+     "score": 3.2402,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher gives rules of conduct to a renunciant. He tells him not to torment the body too much for the sake of pleasure or pain. If he is praised, he should not gloat. If he is blamed, he should not curse others. The point is to find a steady center that is not thrown off by outer praise or blame, or by the body's own demands.",
+     "for_you": "The duties are real, but your body is not a machine to be worn out for them. When the phone rings, you can answer without letting the praise or the blame throw you off your own center. Your own well-being is a real duty, not a betrayal of the others."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_taittiriya.50",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address continues.",
+     "sanskrit": "आचार्याय प्रियं धनमाहृत्य प्रजातन्तुं मा व्यवच्छेत्सीः । सत्यान्न प्रमदितव्यम् । धर्मान्न प्रमदितव्यम् । कुशलान्न प्रमदितव्यम् । भूत्यै न प्रमदितव्यम् । स्वाध्यायप्रवचनाभ्यां न प्रमदितव्यम् ॥",
+     "line": "Do not drift from truth or duty. Do not neglect your wellbeing, your prosperity, or your learning.",
+     "translation": "Having brought your teacher the gift he values, do not cut off the line of your family. Do not drift from truth. Do not drift from what is right. Do not neglect your wellbeing. Do not neglect your prosperity. Do not neglect study and teaching.",
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "money_stress",
+       "label": "I'm stressed about money"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 3.0128,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": "A teacher speaks to a graduating student as he leaves to build his own life. The teacher tells him not to sever the line of his family, to hold to truth, and to never neglect his own wellbeing, his prosperity, or his learning. The idea is that a life of duty to others must be held together with a duty to oneself. The teacher is saying that your part in the world is not only to give, but also to remain whole.",
+     "for_you": "You have spent eleven years sending money home and paying for your father's surgery. That is a heavy part. But the text says your own wellbeing is a duty too. Hold that as your own. It is not a betrayal of your family to keep a part of yourself intact."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.119",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.119",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "वृद्धो ज्ञातिस्तथा मित्रमनाथा च स्वसा गुरुः / कुलीनः पण्डित इति रक्ष्या निःस्वः स्वशक्तितः / गृहे वासयितव्यास्ते धन्यमायुष्यमेव च",
+     "line": "An aging relative, a friend in need, a sister with no support: make room for them as you can.",
+     "translation": "An aged relative, a friend, a sister with no one to support her, a teacher, a person of good family or learning who has fallen poor: protect them as you are able, and give them a place in your home.",
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "money_stress",
+       "label": "I'm stressed about money"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 3.4265,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Bhishma tells Yudhishthira that a good life is built from daily conduct. He speaks of making room for an aged relative, a friend, or a sister with no support. The point is that a good life is built from small, concrete acts of protection and respect. It is not about grand gestures, but about the daily choice to give others a place.",
+     "for_you": "Yesterday you named your own wellbeing as a duty. Today, that means giving yourself a place in your own home. It is not about grand gestures. It is about making room for your own rest, your own thoughts, your own life, just as you would for a friend in need."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.162,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna tells Arjuna that his right is to the work alone, never to its fruits. He must do the work fully, but not let the outcome own him. The idea is that you can act with full care and attention, but you do not have to carry the weight of the result. The work is yours. The result is not.",
+     "for_you": "You are working, you are providing, you are paying. Do the work. But the result is not yours to hold. Let go of the weight of the outcome. Your duty is to the work, not to the result. That is your freedom."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "Sumitra, a mother who also lost her son, did not try to fix Kausalya's grief. She simply sat with her and said he would return. You have spent so long being the one who fixes things for others. Today, you do not need to solve your family's next need."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Carrying everyone",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 199,
+   "llm": 4492,
+   "total": 11266,
+   "select": 6569
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You have been sending money home for eleven years. You paid for your brother's wedding and your father's heart surgery this year. Now your wife wants to return to India. Everyone still needs something from you. You are pulled apart and empty."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. He is in tears and he refuses to fight. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "He is admitting he does not know. He is asking for help. This is where clarity begins. It is hard to stand in front of a need and say you do not see the way forward. But that admission is the first step toward seeing what is truly his own."
+  ],
+  [
+   "for_you",
+   "You have carried every need for a long time. Today, let the quiet question of what you need exist without rushing to answer it. Let it sit with you for a moment."
+  ],
+  [
+   "close",
+   "What is yours to name today?"
+  ]
+ ],
+ "depth": {
+  "life": "You are in Dubai, paying for your brother's wedding and your father's heart surgery, while your wife wants to return to India. Everyone's need is real, and your own has not yet been named.",
+  "points": "Admitting you do not know and asking for help is where clarity begins. The truth is, your own need is as real as the others, and it is drying you up because it has not been named.",
+  "practice": "Sit quietly for ten minutes today and simply ask yourself what you need, without judging the answer.",
+  "question": "What do you need right now, before you think of anyone else?"
+ }
+}

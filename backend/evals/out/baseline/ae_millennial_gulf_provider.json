@@ -1,0 +1,492 @@
+{
+ "persona": {
+  "id": "ae_millennial_gulf_provider",
+  "market": "UAE (Dubai)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "35, works in logistics in Dubai for 11 years, sends money to parents and brother in Kerala, brother's wedding and father's surgery this year. Wife wants to move back.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "11 years in dubai sending money home. brothers wedding, fathers heart surgery, both this year. my wife wants to go back to india. everyone needs something from me and I don't know what I need",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "confidence": 0.65,
+   "core_struggle": "After eleven years sending money home and two family crises this year, he feels pulled by everyone and does not know what he needs.",
+   "mirror": "You give the day to everyone else, and at night the phone is the only thing that doesn't ask anything of you.",
+   "insight": "It isn't the work that won't let you rest. It's the part of you that has learned to answer every call and has forgotten how to be the one who asks.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.875,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.05,
+     "source": "chip"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.78,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.77,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "The mind that won't settle after years of being needed by everyone, and the quiet fear that if you stopped for a moment you would disappear.",
+    "diagnose": "When the mind is trained only to answer others, it learns to run in place; it cannot settle because it has forgotten what it is to be still.",
+    "steady": "Praise and blame, duty and desire, come and go; the self that serves is never the whole self.",
+    "act": "Practise being still for ten minutes; let the phone lie, and ask yourself what you need before anyone else does.",
+    "story": "A man who spent his life giving to others and finally found that the one he had to reach first was the one he had left behind."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The one who gives",
+    "What you need",
+    "The self behind the service"
+   ],
+   "seat": "",
+   "life_context": "In his forties, working abroad and caring for aging parents; two family crises this year and a wife who wants to return home have left him feeling he exists only for others and cannot settle his own mind.",
+   "details": [
+    "eleven years in dubai sending money home",
+    "father had heart surgery this year",
+    "brother's wedding was this year",
+    "wife wants to return to india"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "seat:missing",
+    "retried:2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.8371,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that his mind is restless and stubborn, as hard to hold as the wind. Krishna does not argue or promise a quick fix. He simply agrees that the mind is powerful and hard to control, and says that practice and letting go are what train it. The idea is not to force the mind still, but to steady it through a steady hand. The wind does not stop because you shout at it.",
+     "for_you": "You are holding a mind that has been answering calls for eleven years. It is exhausted, and it will not settle because it has not been asked what it needs. Let the phone wait for one evening and give the mind a single task it chooses, so it remembers what it is to be held."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.16.22",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 16.22",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama describes his restless mind to the sages.",
+     "sanskrit": "चेतः पतति कार्येषु विहगः स्वामिषेष्विव । क्षणेन विरतिं याति बालः क्रीडनकादिव ॥",
+     "line": "The mind pounces on a task like a bird on food, then drops it like a bored child's toy.",
+     "translation": "The mind swoops onto tasks like a bird onto meat, and a moment later loses interest, like a child with a toy.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "phone_addiction",
+       "label": "I'm addicted to my phone"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.6407,
+     "beat": "diagnose",
+     "role_fit": 0.665,
+     "meaning": "Rama, sitting among the sages, tells them about his own restless mind. He says it seizes a task like a bird pouncing on meat, then abandons it a moment later like a bored child dropping a toy. The verse proposes that naming this emptiness honestly is the first step. It is a question, not an answer, asking what is the point of this constant grabbing and dropping.",
+     "for_you": "You are on the phone for hours, answering calls, and your mind is doing the same thing. It seizes each task, then drops it. You are not failing. You are simply naming what is empty inside you, and that is enough for now."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": null,
+     "score": 3.549,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher tells a renunciant how to conduct himself. He says the renunciant should not torment his body by chasing pleasure or fleeing pain. If he is praised, he should not gloat. If he is blamed, he should not curse others. The verse proposes that a steady mind rests in the middle, not pushed around by praise or blame.",
+     "for_you": "You are tired and anxious, and your body feels the weight of it. You do not have to chase pleasure or run from pain today. Just let your body rest. If someone praises you, do not gloat. If they blame you, do not curse back."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.14",
+     "ref": "Bhagavad Gita 2.14",
+     "ref_iast": "Bhagavad Gītā 2.14",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥",
+     "line": "Heat and cold, pleasure and pain come and go. They don't last; learn to bear them.",
+     "translation": "Contact of the senses with their objects brings cold and heat, pleasure and pain. They come and go and do not last. Bear them patiently, Arjuna.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Bearing passing discomfort is not putting up with harm or abuse; those are not weather to wait out.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.3925,
+     "beat": "steady",
+     "role_fit": 0.615,
+     "meaning": "Krishna speaks to Arjuna after the battle, when grief is raw and the world feels like it has ended. He reminds him that the true Self within never dies and never changes. He says that contact between the senses and the world brings cold and heat, pleasure and pain, but these things only come and go. They do not last. The instruction is to bear these passing states patiently, because what you truly are outlasts every loss and every passing pain.",
+     "for_you": "The calls from home, the worry about your parents, the weight of the money you send, these come and go. They do not last. Let them pass through you without settling in your mind. Bear them, and return to the part of you that remains steady."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.23",
+     "ref": "Bhagavad Gita 6.23",
+     "ref_iast": "Bhagavad Gītā 6.23",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "तं विद्याद् दुःखसंयोगवियोगं योगसंज्ञितम् । स निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा ॥",
+     "line": "Yoga is unhooking from sorrow. Practise it with resolve and a heart that doesn't lose hope.",
+     "translation": "Know that to be yoga: the breaking of contact with sorrow. This yoga should be practised with determination and with an undespairing mind.",
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 3.3547,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Krishna is teaching Arjuna the nature of a settled mind. He says that yoga is the breaking of contact with sorrow. It should be practised with determination and with a mind that does not despair. The point is that moderation and gentle return, again and again, settle the mind. You do not need to force the mind still all at once. You simply need to break its contact with sorrow and bring it back, again and again.",
+     "for_you": "When the phone rings and the line is heavy, take one slow breath before you answer. Let that breath be the breaking of contact with sorrow, and bring your mind back to the present moment. That is enough for today."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.2626,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu speaks to Nidagha about the nature of a free person living in the world. He says that a free person can be outwardly busy and inwardly free of agitation. They can be a doer on the outside and a non-doer within. They move through the world with a clear mind, letting go of what is lost, taking up what comes, and doing the work at hand without letting it agitate them.",
+     "for_you": "You can be the one who sends the money, who makes the calls, and who cares for your parents, and still be inwardly free. Do the work at hand, but do not let it agitate you. Move through your day with a clear mind."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "burnout",
+        "label": "I'm burned out and running on empty"
+       },
+       {
+        "id": "sleep_mind",
+        "label": "I can't sleep, my mind is racing"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "You have spent eleven years answering every call from home. This story shows that endless doing, even for those we love, can leave the mind exactly where it began. Your part today is not to add one more task, but to notice the part of you that has forgotten how to stop."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The one who gives",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 210,
+   "llm": 4559,
+   "total": 14847,
+   "select": 10073
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying a life that has been answering calls for eleven years. You are abroad, sending money home, and caring for aging parents, and your mind feels like it is being pulled in every direction at once. You are burned out and running on empty, and you have forgotten how to ask what you need."
+  ],
+  [
+   "scene",
+   "Arjuna is on a battlefield, facing the people he loves. He is overwhelmed and asks Krishna for guidance. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Arjuna admits that his mind is powerful and hard to control. The mind is not something you can force into stillness. It is easier said than done, because you cannot simply tell yourself to stop worrying or to relax. The mind is trained through practice and through letting go. You steady it by steadying your hand, not by shouting at the wind."
+  ],
+  [
+   "for_you",
+   "Your mind is exhausted because it has only ever been told what to do. It has not been asked what it needs. Let the phone wait for one evening. Give your mind a single task that you choose, so it remembers what it is to be held."
+  ],
+  [
+   "close",
+   "What would happen if you let the wind blow for one evening?"
+  ]
+ ],
+ "depth": {
+  "life": "You are holding a mind that answers every call and has forgotten how to ask for anything. The phone is always in your hand, and the weight of two family crises this year has left you feeling empty, always running on what others need.",
+  "points": "The mind is restless, stubborn and strong. It is not a failure that it will not settle. It is simply exhausted from being commanded. The problem is not the wind, but that it has only been told where to blow.",
+  "practice": "Put the phone face down on the table for ten minutes and watch the room around you without picking it up again.",
+  "question": "What would your mind choose to do if no one asked anything of it for one hour?"
+ }
+}

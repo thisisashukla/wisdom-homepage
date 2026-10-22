@@ -3,7 +3,7 @@ import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 
 export const metadata: Metadata = {
-  title: 'Terms of Use | Wisdom',
+  title: 'Terms of Use',
   description: 'Terms of use for the Wisdom app and wisdomquotes.in.',
   alternates: { canonical: 'https://wisdomquotes.in/terms' },
   robots: { index: true, follow: true },

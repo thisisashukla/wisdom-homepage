@@ -10,7 +10,7 @@ import {
 } from '@/lib/gita'
 // GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
 // for the Scripture AI waitlist while that product launches.
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import BlogTracker from '@/components/BlogTracker'
 import SanskritText from '@/components/gita/SanskritText'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
@@ -23,7 +23,7 @@ import { getVerseAudio } from '@/lib/gita'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'Bhagavad Gita — Verse of the Day (Hindu Verse of the Day) | Wisdom',
+  title: 'Gita Verse of the Day: Today\'s Shlok & Meaning',
   description:
     'A new verse from the Bhagavad Gita every day. Sanskrit original, Hindi and English meaning, plus the story behind why this shloka fits today. Your daily Hindu spiritual practice.',
   alternates: {
@@ -197,7 +197,7 @@ export default async function TodayPage() {
           <span style={{ opacity: 0.7 }}> · {context.day_name_hi} ({context.deity})</span>
         )}
       </div>
-      <h1 className="gita-h1">Bhagavad Gita {verse.chapter}.{verse.verse}</h1>
+      <h1 className="gita-h1">Gita verse of the day: Bhagavad Gita {verse.chapter}.{verse.verse}</h1>
       {verse.essence && (
         <p className="gita-lede" style={{ fontStyle: 'italic', color: 'var(--gold-pale)', maxWidth: 640 }}>
           "{verse.essence}"
@@ -305,7 +305,7 @@ export default async function TodayPage() {
         </div>
       )}
 
-      <ScriptureAIGitaCTA variant="verse" locale="en" verse={verse} pageName="Gita Today" />
+      <VerseFunnelCTA variant="verse" locale="en" verse={verse} pageName="Gita Today" />
     </main>
   )
 }

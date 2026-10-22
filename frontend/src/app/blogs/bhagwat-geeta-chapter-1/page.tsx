@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 1 Summary \u2013 Key Verses & Meaning (Arjuna Vishada Yoga)",
@@ -1363,21 +1364,19 @@ export default function ChapterOnePage() {
         <div className="wisdom-entity-label">About the Wisdom App</div>
         <h3>What is the Wisdom app?</h3>
         <p>
-          <strong>Wisdom</strong> is a free iOS app for daily Bhagavad Gita
-          shlokas. Each day, the app delivers one verse from the Bhagavad Gita
-          or other Hindu scriptures, with the original Sanskrit text in
-          Devanagari, IAST transliteration, English meaning, a deeper
-          explanation, modern relevance, and a private journal to reflect on it.
-          The app also includes home screen and lock screen widgets with
-          Sanskrit shlokas and deity chants.
+          <strong>Wisdom</strong> is an iPhone app that tunes the Bhagavad Gita
+          to your life. You say how you feel and what is going on, and it picks
+          the verse that speaks to it, with the original Sanskrit, a plain
+          English meaning and what it says for you. Then it builds a 7-day plan
+          around your situation, read aloud, drawing on the Gita, the Ramayana
+          and the Mahabharata. Today&apos;s shloka also sits on your Home Screen
+          and Lock Screen.
         </p>
         <p>
-          Wisdom is designed for the intellectually curious, people who want to
-          engage with ancient Indian philosophy as a living practice, not a
-          museum artefact. It supports the Bhagavad Gita, Upanishads, and other
-          Hindu scriptures. Free to download on the
+          Wisdom is for people who want the Gita&apos;s answer to the week they
+          are actually having, not a poster quote. Week 1 is free on the
           <a
-            href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+            href={appStoreUrl('web_blog_footer')}
             target="_blank"
             rel="noopener"
             data-mp-location="about_app"
@@ -1530,7 +1529,7 @@ export default function ChapterOnePage() {
         </div>
       </div>
 
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 1"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 1"} />
 
 
       {/* ── CHAPTER NAV ── */}
@@ -1612,7 +1611,7 @@ export default function ChapterOnePage() {
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  · 
         <a
-          href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+          href={appStoreUrl('web_blog_footer')}
           target="_blank"
           rel="noopener"
           data-mp-location="footer_app_store"

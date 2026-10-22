@@ -1,0 +1,488 @@
+{
+ "persona": {
+  "id": "au_genx_divorce",
+  "market": "Australia (Melbourne)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "44, dentist in Melbourne, from Chandigarh originally, separated 6 months ago, kids with ex 4 days a week. Parents in India don't know yet.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "quietly lonely and afraid of being known",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "Seven days from hiding the separation in the quiet house to naming it, even in secret, and finding that the silence can hold something true.",
+   "week_beats": {
+    "hook": "You recognise the hiding and the quiet, named without blame.",
+    "diagnose": "You see that the unspoken life is what makes the quiet unbearable, and that the TV is not the answer.",
+    "steady": "You hold that what is real in you cannot be taken away, and that your love and your life are still yours.",
+    "act": "You try saying the truth to one person, or writing it down, and let one grief move through you today.",
+    "story": "A woman who was left and had to hide it shows you what it costs, and what it takes to begin again."
+   },
+   "confidence": 0.75,
+   "core_struggle": "A separated mother in midlife, visiting her children three nights a week, hiding the truth from her parents while the quiet house becomes unbearable.",
+   "mirror": "You see your children three nights a week, and on the other nights the house is so quiet you leave the TV on.",
+   "insight": "It isn't the quiet that hurts. It's the life you are not allowed to name, which the quiet makes louder every night.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "dignity_denied",
+   "situations": [
+    {
+     "id": "breakup",
+     "label": "I'm heartbroken after a breakup",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.87,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.675,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being left, and then having to hide the leaving from the people who raised you, while the house grows too quiet to bear.",
+    "diagnose": "Grief is love with nowhere to go, and the more you fill the silence, the more the unspoken life grows; the harm deepens when you cannot name what is true.",
+    "steady": "What is real in you cannot be taken away; the love you have for your children and the life you have lived are still yours, and they will not leave you.",
+    "act": "Speak the true thing to one person you trust, or write it down where you can see it; let the quiet come, and let one grief move through you today.",
+    "story": "A woman who was left and had to hide it from her own, who found that speaking the truth, even in secret, was the first step back to herself."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The unspoken life",
+    "What the quiet costs",
+    "The self that remains"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "separated six months",
+    "sees kids three nights a week",
+    "has not told parents",
+    "house is quiet on nights kids are not there"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "bridge:copied_example",
+    "seat:missing",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 1.6373,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna stands on the battlefield and tells Krishna that the mind is restless and hard to hold, like trying to catch the wind. He is overwhelmed and cannot steady himself. Krishna agrees that the mind is strong and turbulent, but offers a path forward. The mind can be trained through practice and through letting go, rather than by force.",
+     "for_you": "The quiet house is not empty. It is full of the life you are not naming. Let the mind be what it is tonight, and try not to fight the storm."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.0048,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma speaks to King Janaka, who has lost his family and wealth and asks how to endure such grief. Ashma tells him to ask where he came from, where he is going, and who he really is. These questions do not erase the pain, but they steady the mind by placing it in a larger frame of time and identity.",
+     "for_you": "Ask yourself where you came from and where you are going. The quiet is not a void. It is a space where the unspoken life grows louder, and you can steady yourself by holding a larger truth."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.26",
+     "ref": "Bhagavad Gita 2.26",
+     "ref_iast": "Bhagavad Gītā 2.26",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम् । तथापि त्वं महाबाहो नैवं शोचितुमर्हसि ॥",
+     "line": "Even if you believe life simply begins and ends, there's still no need to be crushed by grief.",
+     "translation": "And even if you think of it as constantly being born and constantly dying, still, mighty-armed one, you should not grieve like this.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Grief is human; this asks you not to be destroyed by it, not to stop feeling it.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.2002,
+     "beat": "steady",
+     "role_fit": 0.755,
+     "meaning": "Krishna is speaking to Arjuna in the field of battle, watching him collapse under grief for his own people. He tells him that even if you believe life simply begins and ends, there is still no need to be crushed by grief. What is truly real in you was never born and will never die, so the passing of this or that should not destroy you.",
+     "for_you": "The house is quiet and the separation feels like an end. But what you are, the love you carry, is not ending. That is still yours to hold, even on these nights."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.87",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 87",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "Closing verse of the section on steadfastness.",
+     "sanskrit": "छिन्नोऽपि रोहति तरुश्चन्द्रः क्षीणोऽपि वर्धते लोके । इति विमृशन्तः सन्तः सन्तप्यन्ते न लोकेऽस्मिन् ॥",
+     "line": "A cut tree grows back; the waning moon fills again. Remembering this, the wise do not despair.",
+     "translation": "A tree that is cut grows again; the waning moon waxes again in the world. Reflecting on this, the good are not tormented in this world.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 2.8491,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari closes his section on steadfastness by reminding the reader that a cut tree grows back and the waning moon fills again. Remembering this, the wise do not despair. Setbacks rarely last for those who keep going on the right path, so the good are not tormented by them.",
+     "for_you": "Yesterday’s verse named the deathless part of you. Today, let the quiet house remind you of the waning moon. It will fill again. You are still growing back."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.338.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.15",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada to Shuka on troubles that affect many people at once.",
+     "sanskrit": "न जानपदिकं दुःखमेकः शोचितुमर्हति / अशोचन्प्रतिकुर्वीत यदि पश्येदुपक्रमम्",
+     "line": "Don't just grieve over a problem everyone faces. If you see a way to fix it, act.",
+     "translation": "No one should sit alone grieving over a trouble that has struck everyone. Instead of grieving, act to remedy it if you see a way.",
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 3.0938,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "Narada, the wandering sage, meets Shuka, a young man who has left his home and sits grieving in the forest. Shuka feels his loss is unique and unbearable. Narada tells him that sorrow is a common human condition. He says that sitting alone and brooding over a problem shared by many only doubles the pain. Instead of grief, one should act to remedy what is wrong if a path is visible. The mind, like the body, needs medicine and movement rather than stillness.",
+     "for_you": "The quiet house tonight is not a place to sit alone with the loss. You can act by writing down the truth of the separation on a piece of paper, just for yourself. Let one grief move through you while you do this, and then place the paper in a drawer."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.9321,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu guides Nidagha, his student, on how a free person lives in the world. Ribhu says to always do the work that comes, to treat friend and foe alike, and to let go of wanting and not-wanting. Such a person neither grieves nor craves. They speak gently, read the intent in others' hearts, and stay calm inside while busy outside. This is how one does not sink in the world.",
+     "for_you": "Today, let your mind stay calm while your hands do the work. When the children arrive tonight, do the work in front of you. Speak gently to them. Read their hearts. Let your outside be busy and your inside be unhurried. You do not need to sink in the quiet anymore."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.pingala",
+     "title": "Pingala's song: the night she stopped waiting",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Pingala",
+      "Bhishma (narrator)"
+     ],
+     "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+     "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+     "lesson": "Letting go of an expectation can bring the sleep that waiting never will.",
+     "matched": [
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "anchor": {
+      "id": "mbh.12.173.64",
+      "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+      "ref_iast": "Mahābhārata, Śānti Parva 173.64",
+      "family": "mbh",
+      "speaker": "Pingala (quoted by Bhishma)",
+      "listener": "(herself)",
+      "setting": "Pingala, left waiting all night by a lover who never came, finally lets go and finds peace.",
+      "sanskrit": "सुखं निराशः स्वपिति नैराश्यं परमं सुखम् / आशामनाशां कृत्वा हि सुखं स्वपिति पिङ्गला",
+      "line": "Pingala let go of her expectation and slept peacefully. Letting go of expectation is the greatest ease.",
+      "translation": "The one free of expectation sleeps in peace; freedom from expectation is the highest happiness. Turning hope into no-hope, Pingala sleeps peacefully.",
+      "why": "Letting go of an expectation can bring the sleep that waiting never will.",
+      "misuse": "This is about clinging to an outcome, not about giving up hope in life.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "breakup",
+        "label": "I'm heartbroken after a breakup"
+       }
+      ],
+      "prasang": {
+       "id": "mbh.p.pingala",
+       "title": "Pingala's song: the night she stopped waiting",
+       "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+       "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+       "lesson": "Letting go of an expectation can bring the sleep that waiting never will."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Pingala waited all night for a man who never came",
+     "teaser": "Pingala waited all night for a man who never came",
+     "for_you": "Pingala spent a night listening for footsteps that never came. You are doing the same in your quiet house, waiting for a life that feels hidden to show itself. You can stop waiting for the silence to fix itself."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The unspoken life",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 166,
+   "llm": 4245,
+   "total": 8316,
+   "select": 3897
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are in the quiet house again, and the quiet is doing its work. It is not just the empty rooms that are hard. It is the weight of the life you are not allowed to name, which the silence makes louder every night."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. He is overwhelmed and tells Krishna that his mind is restless and turbulent. Krishna listens and agrees that the mind is indeed powerful and hard to hold, like trying to catch the wind. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Krishna does not tell Arjuna to force the mind into stillness. He says the mind is strong and turbulent, and that trying to wrestle it only exhausts you. The way forward is not force. It is practice, and it is letting go. You do not have to catch the wind. You just have to stop fighting it."
+  ],
+  [
+   "for_you",
+   "When the quiet feels too loud tonight, try not to fight it. Let the mind be what it is, and do not demand that it settle. You do not have to name the whole story right now. Just let the wind blow through."
+  ],
+  [
+   "close",
+   "The mind is not your enemy."
+  ]
+ ],
+ "depth": {
+  "life": "The house is quiet when the children are not there. You are in the rooms but not fully in them. A loneliness sits in the silence, and there is a fear of what would happen if anyone knew the truth. You carry this alone in the quiet.",
+  "points": "The mind is restless and stubborn, like the wind. It is not your fault that it storms. The truth is that trying to hold it still only exhausts you. The way through is not to force the wind, but to practice letting it blow.",
+  "practice": "Place a hand on your chest and notice the breath for one minute. Let the mind move without trying to steer it.",
+  "question": "What does the silence ask of you when you stop fighting it?"
+ }
+}

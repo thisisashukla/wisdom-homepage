@@ -12,7 +12,7 @@ import {
 } from '@/lib/gita'
 // GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
 // for the Scripture AI waitlist while that product launches.
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const num = Number(params.chapter)
   const ch = getChapter(num)
   if (!ch) return { title: 'Chapter not found' }
-  const title = `Bhagavad Gita Chapter ${ch.number} — ${ch.enName} (${ch.enTitle}) | Wisdom`
+  const title = `Bhagavad Gita Chapter ${ch.number} — ${ch.enName} (${ch.enTitle})`
   const description = `Bhagavad Gita Chapter ${ch.number}, ${ch.enName} — all ${ch.totalVerses} verses with Sanskrit, Hindi and English translation. ${ch.enTitle}.`
   return {
     title,
@@ -214,7 +214,7 @@ export default async function ChapterPage({ params }: { params: Params }) {
         ))}
       </ul>
 
-      <ScriptureAIGitaCTA variant="chapter" locale="en" chapter={ch} pageName={`Gita Chapter ${ch.number}`} />
+      <VerseFunnelCTA variant="chapter" locale="en" chapter={ch} pageName={`Gita Chapter ${ch.number}`} />
 
 
       <div className="gita-pn">

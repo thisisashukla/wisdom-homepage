@@ -1,0 +1,497 @@
+{
+ "persona": {
+  "id": "in_boomer_retired_empty",
+  "market": "India (Lucknow)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "66, retired bank officer in Lucknow, wife passed 2 years ago, son in Toronto, daughter in Mumbai. Reads the Gita occasionally, wants to understand it properly.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 3,
+   "topic": "meaning",
+   "follow": "after_retiring"
+  },
+  "note": "after my wife left us the house is very quiet. children call on sunday. I have time now and I want to read Gita properly not just the shlokas everyone forwards on whatsapp",
+  "note_source": "voice",
+  "expect_stance": "seeking"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "seeking",
+   "confidence": 0.8,
+   "core_struggle": "A widower in retirement who has time and wants to read the Gita properly to understand what is deeper.",
+   "mirror": "You have the time now, and you want to read the Gita properly, not just the shlokas everyone forwards.",
+   "insight": "It isn't the quiet that unsettles you. It is the sense that what you have been doing with your time is not enough, and you want to meet something that does not pass away.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 2.325,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.07,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.861,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.838,
+     "source": "chip"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.575,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet after loss and the search for something that does not pass away, beyond the shlokas that are forwarded and forgotten.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What does not pass is the self that knows; the texts point to it, and reading them is how you come to know it.",
+    "act": "Read the Gita as a whole, not as scattered verses; let each chapter stand on its own and sit with what it says before moving on.",
+    "story": "An elder who lost his companion, whose days had lost their shape, who sat with a teacher and began to read the Gita as a single, living whole."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet and the search",
+    "What does not pass",
+    "The one who reads"
+   ],
+   "seat": "a widower in retirement whose days have lost their shape",
+   "life_context": "In retirement after his wife's passing, his house is very quiet beyond Sunday calls from his children; he has the time now and wants to read the Gita properly rather than just forwarded shlokas.",
+   "details": [
+    "wife passed away",
+    "house is very quiet",
+    "children call on Sunday",
+    "wants to read the Gita properly, not just forwarded shlokas"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.5458,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "On the battlefield, Arjuna has dropped his bow and is weeping. He tells Krishna that even if he won every kingdom on earth, it would not touch this grief that is drying him up inside. He says he sees no way to drive away this sorrow. What he is offering is not weakness. It is the honest admission that he does not know what to do, and that he cannot see the path forward on his own. This is the exact moment where clarity begins.",
+     "for_you": "You are in a quiet house, and the silence has become so loud that you cannot tell what you want. This verse asks you to name that honestly. You do not have to have the right words."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.28.17",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 28.17",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama on how everything changes.",
+     "sanskrit": "दिवसास्ते महान्तस्ते संपदस्ताः क्रियाश्च ताः । सर्वं स्मृतिपथं यातं यामो वयमपि क्षणात् ॥",
+     "line": "Those days, those people, that wealth, those deeds are memories now. We too will pass soon.",
+     "translation": "Those days, those great people, that wealth, those deeds: all have passed into memory. We too will go in a moment.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a call to despair; it wakes Rama up to what matters now.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.0631,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "Rama speaks to his teachers about the world he has known. He tells them that all those days, people, wealth, and deeds have passed into memory. He says that we too will go in a moment. He is not giving up. He is naming what feels empty so that he can see what remains. This lament is a question, not an answer. It wakes him up to what matters now.",
+     "for_you": "You are looking at the life you built, the routines, the roles, and feeling their edges soften into memory. This verse asks you to name that without rushing to fix it. The quiet is not a problem to solve."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_brihadaranyak.488",
+     "ref": "Brihadaranyaka Upanishad 4.4.14",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 4.4.14",
+     "family": "up",
+     "speaker": "Yajnavalkya",
+     "listener": "King Janaka",
+     "setting": "Verses on knowing the self, continued.",
+     "sanskrit": "इहैव सन्तोऽथ विद्मस्तद्वयं न चेदवेदिर्महती विनष्टिः । ये तद्विदुरमृतास्ते भवन्त्यथेतरे दुःखमेवापियन्ति ॥",
+     "line": "While we are still here, let us know it. Not knowing it is the great loss.",
+     "translation": "While we are still here, we may know it. If we do not, great is the loss. Those who know it become immortal; the rest go only to sorrow.",
+     "why": "You become what you desire and do; know what matters while you are here.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.brihad.desire",
+      "title": "Yajnavalkya on desire and death",
+      "summary": "Yajnavalkya explains what happens at death with images of a caterpillar and a goldsmith. A person becomes what they desire, will and do; one who knows the self has nothing left to fret about. Know it while you are here, he says, don't brood over many words, and live calm and collected.",
+      "story_hook": "",
+      "lesson": "You become what you desire and do; know what matters while you are here."
+     },
+     "score": 2.9617,
+     "beat": "steady",
+     "role_fit": 0.874,
+     "meaning": "Yajnavalkya speaks to King Janaka about what happens when a person dies. He says that a person becomes what they desire, will, and do. Those who know the self become immortal in a sense, while the rest go only to sorrow. He urges them to know it while they are still here. Not knowing it is the great loss. The point is that you become what you desire and do, so know what matters while you are here.",
+     "for_you": "You have time now, and you are asking what to do with it. This verse asks you to turn your attention inward and ask what you truly desire, not what the old days demanded of you."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.14.53",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 14.53",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on the second gatekeeper: inquiry (vichara).",
+     "sanskrit": "विचाराज्ज्ञायते तत्त्वं तत्त्वाद्विश्रान्तिरात्मनि । अतो मनसि शान्तत्वं सर्वदुःखपरिक्षयः ॥",
+     "line": "Inquiry leads to truth, truth to inner rest, rest to a calm mind, and a calm mind ends sorrow.",
+     "translation": "Through inquiry, truth is known; through truth, rest in oneself; from that comes a calm mind, and from that, the end of all sorrow.",
+     "why": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.four_gatekeepers",
+      "title": "The four gatekeepers: calm, inquiry, contentment, good company",
+      "summary": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others.",
+      "story_hook": "",
+      "lesson": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow."
+     },
+     "score": 2.8691,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He says you only need to start with one, because each one strengthens the others. The gatekeeper of inquiry works like this. You ask what is true, and that knowing brings you to rest inside yourself. From that rest comes a calm mind, and a calm mind ends sorrow.",
+     "for_you": "You have the quiet now to ask one true question about what you are living. Choose calm thinking, and give it your attention today. Let the house be still while you sit with one clear thought, and watch your mind settle."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.7.1",
+     "ref": "Bhagavad Gita 7.1",
+     "ref_iast": "Bhagavad Gītā 7.1",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna opens the teaching on knowing him fully.",
+     "sanskrit": "श्री भगवानुवाचमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः । असंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु ॥",
+     "line": "Keep your mind attached to me, lean on me, keep practising. You will come to know me fully.",
+     "translation": "Hear, Partha, how with your mind attached to me, practising yoga and taking refuge in me, you will know me fully, without doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 3.2194,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna opens his teaching on knowing him fully, and he tells Arjuna that if he keeps his mind attached to Krishna, practices yoga, and takes refuge in him, he will come to know Krishna fully, without any doubt.",
+     "for_you": "This is your practice. When you pick up the Gita today, let your mind rest on the words and trust the process. You do not need to understand everything at once. Just let your attention stay with the text, and the knowing will come."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.8",
+     "ref": "Bhagavad Gita 12.8",
+     "ref_iast": "Bhagavad Gītā 12.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna begins his ladder of practices with the simplest instruction.",
+     "sanskrit": "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय । निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः ॥",
+     "line": "Rest your mind in me, settle your thinking in me, and you will live in me.",
+     "translation": "Fix your mind on me alone, let your understanding settle in me; from then on you will dwell in me. Of this there is no doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.7169,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna begins his ladder of practices with the simplest instruction. He tells Arjuna to fix his mind on him alone, let his understanding settle in him, and then he will dwell in him. Of this there is no doubt.",
+     "for_you": "Fix your mind on one line of the Gita today. Let that be your refuge, and let the rest follow. You do not have to do more than this."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sampati",
+     "title": "Sampati, the bird who could not fly",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sampati",
+      "Angada",
+      "Hanuman",
+      "Nishakara"
+     ],
+     "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+     "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+     "lesson": "Even when you feel useless, your experience may be exactly what someone needs.",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.62.13",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 62.13",
+      "family": "vr",
+      "speaker": "Sage Nishakara",
+      "listener": "Sampati (recounted)",
+      "setting": "The old vulture Sampati, wings burnt and grounded for ages, is told why he should live on.",
+      "sanskrit": "उत्सहेयमहं कर्तुमद्यैव त्वां सपक्षकम्। इहस्थस्त्वं हि लोकानां हितं कार्यं करिष्यसि॥",
+      "line": "You are needed exactly where you are, as you are. Your use isn't over.",
+      "translation": "I could give you back your wings this very day. But by staying here as you are, you will do something for the good of the world.",
+      "why": "Even when you feel useless, your experience may be exactly what someone needs.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "retirement",
+        "label": "I've retired and feel lost"
+       },
+       {
+        "id": "no_meaning",
+        "label": "Nothing is wrong but nothing feels meaningful"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sampati",
+       "title": "Sampati, the bird who could not fly",
+       "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+       "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+       "lesson": "Even when you feel useless, your experience may be exactly what someone needs."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "An old bird with burnt wings had waited thousands of years for this moment",
+     "teaser": "An old bird with burnt wings had waited thousands of years for this moment",
+     "for_you": "Your long years of quiet observation are not empty. They hold a knowledge that others, rushing through their days, do not. Let your stillness be the map they need."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet and the search",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 158,
+   "llm": 2969,
+   "total": 8082,
+   "select": 4951
+  }
+ },
+ "script": [
+  [
+   "open",
+   "Your days have lost their shape, and the house is very quiet. You have the time now, and you want to understand what is deeper than just passing the hours."
+  ],
+  [
+   "scene",
+   "On the battlefield, Arjuna has dropped his bow and is weeping. He tells Krishna that even if he won every kingdom on earth, it would not touch this grief that is drying him up inside. He says he sees no way to drive away this sorrow. Krishna is listening. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "This is the moment clarity begins. Arjuna is not weak. He is honest about not knowing what to do. He admits he cannot see the path forward on his own. He is asking for help. This is easier said than done, because it asks you to stop pretending you have all the answers. It asks you to admit you are confused, and to let that be enough to start."
+  ],
+  [
+   "for_you",
+   "Sit in your quiet house and name what is happening. You do not have to have the right words. Just say that you do not know what to do with this time, and let that be the beginning of your reading."
+  ],
+  [
+   "close",
+   "What if the quiet is not asking you to fill it, but to sit with it?"
+  ]
+ ],
+ "depth": {
+  "life": "You are in a quiet house, and the silence has become so loud that you cannot tell what you want. You look at these pages and wonder if the words will fill the space where she used to be.",
+  "points": "Arjuna admits that even a kingdom cannot touch his grief. He is not asking for a solution yet. He is naming the limits of what he has known, and in that naming, he opens the door to something he does not yet understand.",
+  "practice": "Set the book down. Sit in the quiet. Name one thing you cannot fix with your own effort today, and let it be enough for now.",
+  "question": "What is the one thing you cannot fix with your own effort today?"
+ }
+}

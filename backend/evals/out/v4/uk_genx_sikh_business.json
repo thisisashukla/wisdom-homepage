@@ -1,0 +1,480 @@
+{
+ "persona": {
+  "id": "uk_genx_sikh_business",
+  "market": "UK (Leicester)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "47, runs the family cash-and-carry in Leicester, second generation, Punjabi background. Father (78) still comes in and overrules him in front of staff.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "I've run this business for 15 years and my dad still walks in and changes my decisions in front of the staff. I'm 47. He's 78. I can't say anything because it's his business in his head and he's my father",
+  "note_source": "voice",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "resentful and trapped",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "This week moves you from seeing the business as your father's to standing in it as your own, with the words to do so.",
+   "week_beats": {
+    "hook": "You recognise being undermined by your father, and the silence that comes from seeing the business as his, not yours."
+   },
+   "confidence": 0.8,
+   "core_struggle": "My parents' expectations weigh on me",
+   "mirror": "You run it every day, but in your head it is still his, so you let him walk in and change your decisions.",
+   "insight": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.64,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.25,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 1.106,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.691,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being undermined by the person who raised you in the one place you built, and the silence that comes from seeing it as theirs, not yours. My parents' expectations weigh on me.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A son who was expected to stay in his father's shadow, who questioned that expectation and stood in his own light."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "His picture, not yours",
+    "The business is yours",
+    "Standing in your own light"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs the business for years",
+    "father walks in and changes decisions in front of staff"
+   ],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "core_struggle_fallback",
+    "insight:template",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 3.2975,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna is speaking to Arjuna on the field. Arjuna is frozen, unable to choose. Krishna points to the work that lives in a person's own nature. The work you are born to do, the work that is truly yours, is better for you than the work of another, even if yours is imperfect. You will not incur any wrong by doing it. This is not about a fixed role you were born into. It is about the honest fit between your own nature and your actions.",
+     "for_you": "The business you run is your own. When your father steps in, you feel the ground shift. This week, you can begin to see the business as yours again. Do your own work, imperfectly walked, and let it be your own offering."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.5.35.doha.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 35",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Ravana's ministers flatter him as Ram's army arrives; the poet comments.",
+     "sanskrit": "सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस राज धर्म तन तीनि कर होइ बेगिहीं नास ॥",
+     "line": "When advisers, doctors and teachers only say what pleases you, the ruin comes quickly.",
+     "translation": "When a minister, a doctor and a teacher speak only to please, out of fear or hope of reward, then the kingdom, the body and righteousness are soon destroyed.",
+     "why": "Beware a circle that only tells you what you want to hear.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.mandodari_first",
+      "title": "Mandodari pleads, the ministers flatter",
+      "summary": "Mandodari takes Ravana aside and begs him to return Sita before it is too late. He laughs at her fear and goes to court, where his ministers tell him only what pleases him. Tulsidas notes that when advisers, doctors and teachers speak only to please, ruin comes quickly.",
+      "story_hook": "Mandodari took her husband's hand and led him somewhere the ministers couldn't hear.",
+      "lesson": "Beware a circle that only tells you what you want to hear."
+     },
+     "score": 2.9712,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Tulsidas is writing in the Sundar Kand of the Ramcharitmanas. Ravana is in his court, surrounded by ministers who tell him only what he wants to hear. Tulsidas warns that when advisers speak only to please, out of fear or hope of reward, ruin comes quickly. This is a warning about the circle you keep. The silence you keep is often because you are surrounded by voices that flatter the person in charge rather than the truth of the room. The ruin comes when no one tells you what you actually need to hear.",
+     "for_you": "Yesterday's verse named the grip of the business as your father's. Today, look at the circle around you. Are the voices in your life telling you the truth, or are they pleasing someone else? The ruin comes when the truth is silenced in the room."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.16",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 16",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Kings who slight scholars",
+     "setting": "From the section praising learning, addressed to proud rulers.",
+     "sanskrit": "हर्तुर्याति न गोचरं किमपि शं पुष्णाति यत् सर्वदा- ऽप्यर्थिभ्यः प्रतिपाद्यमानमनिशं प्राप्नोति वृद्धिं पराम् । कल्पान्तेष्वपि न प्रयाति निधनं विद्याख्यमन्तर्धनं येषां तान् प्रति मानमुज्झत नृपाः कस्तैः सह स्पर्धते ॥",
+     "line": "Learning is wealth no thief can see. It grows when you give it away and never perishes.",
+     "translation": "It never comes within a thief's sight; it always nourishes some deep good; given to those who ask, it grows greater; even at the end of an age it does not perish. Kings, drop your pride before those who own this inner wealth called learning. Who can compete with them?",
+     "why": "What you learn and how you speak are the wealth no one can take from you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.vidvat",
+      "title": "Nitishatakam: In praise of learning and the learned",
+      "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+      "story_hook": "",
+      "lesson": "What you learn and how you speak are the wealth no one can take from you."
+     },
+     "score": 3.0948,
+     "beat": "steady",
+     "role_fit": 0.544,
+     "meaning": "Bhartrihari is speaking to proud kings who slight scholars. He tells them that learning is a wealth no thief can see. It grows when you give it away and it never perishes. This is the wealth of knowing how to speak and what to say. It is an inner wealth that no one can take from you. Kings, drop your pride before those who own this wealth. Who can compete with them?",
+     "for_you": "While the hurt of being undermined is fresh, you can hold onto the wealth of your own knowing. The words you have learned, the understanding you have built, are yours alone. No one can take them, and they will grow as you use them."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.0086,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher instructs a renunciant on the rules of conduct for a life of withdrawal. Do not torment the body by chasing pleasure or fleeing pain. When praised, do not gloat. When blamed, do not curse others. The verse proposes that a person should stop exhausting themselves in the push and pull of feeling good and feeling bad. It asks for a steadiness that does not depend on praise or blame. It offers a way to hold on to something solid while the hurt is still there.",
+     "for_you": "You are carrying the weight of your father's voice in your own office. You do not have to carry it in your body too. When he speaks, let the words land without you having to fight them or shrink from them. You can hold the business steady without letting his presence wear you out."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.4128,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu speaks to Nidagha about how a free person moves through the world. Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world. The verse proposes living fully in the world while staying unhurried inside. It suggests doing the work at hand with a calm center, treating the whole world as family while keeping your own footing.",
+     "for_you": "Yesterday's verse named the grip. Today, the work is to step back into the room. Do the one task that is yours alone, the one your father did not touch. Speak gently to the staff, not because he is there, but because it is your way."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.3636,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Ram speaks to Lakshman after Hanuman, a stranger and envoy, has just spoken to them. His words were not long-winded, not ambiguous, not rushed, not strained. They came from the chest and throat in an even, middle tone. The verse proposes that fear jumps ahead of facts, and that calm, clear words build trust fast. It shows that an even voice, steady and unhurried, can change a room before any action is taken.",
+     "for_you": "You know the exact words you want to say when your father walks in. Say them in an even tone. Do not let the old fear rush ahead of the fact that you are the one who built this. Your calm voice is the first thing you reclaim today."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.letting_ram_go",
+     "title": "Dasharatha lets his son go",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Dasharatha",
+      "Vishvamitra",
+      "Vasishtha",
+      "Ram"
+     ],
+     "story_hook": "The old king had waited sixty thousand years for a son, and now a stranger wanted to take him away.",
+     "summary": "The sage Vishvamitra asks the king for his teenage son Ram to protect a ritual. Dasharatha, who waited years for a child, refuses and offers himself and his army instead. His guru reminds him of his word and that the sage asks for Ram's own growth, and the king lets him go.",
+     "lesson": "Letting a child go out into the world can be the most loving thing a parent does.",
+     "matched": [],
+     "anchor": {
+      "id": "vr.1.21.21",
+      "ref": "Valmiki Ramayana · Bala Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 21.21",
+      "family": "vr",
+      "speaker": "Vasishtha",
+      "listener": "Dasharatha",
+      "setting": "Dasharatha refuses to let teenage Ram leave with the sage Vishvamitra; his guru Vasishtha reasons with him.",
+      "sanskrit": "तेषां निग्रहणे शक्तः स्वयं च कुशिकात्मजः। तव पुत्रहितार्थाय त्वामुपेत्याभियाचते॥",
+      "line": "Sometimes the person asking you to let your child go is asking for your child's sake.",
+      "translation": "Vishvamitra could subdue those demons himself. He has come to ask for your son for your son's own good.",
+      "why": "Letting a child go out into the world can be the most loving thing a parent does.",
+      "misuse": "Letting a child grow is not handing them to anyone who asks; Dasharatha trusts a proven teacher.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.letting_ram_go",
+       "title": "Dasharatha lets his son go",
+       "summary": "The sage Vishvamitra asks the king for his teenage son Ram to protect a ritual. Dasharatha, who waited years for a child, refuses and offers himself and his army instead. His guru reminds him of his word and that the sage asks for Ram's own growth, and the king lets him go.",
+       "story_hook": "The old king had waited sixty thousand years for a son, and now a stranger wanted to take him away.",
+       "lesson": "Letting a child go out into the world can be the most loving thing a parent does."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Dasharatha had waited years for a son, and a sage came to take him",
+     "teaser": "King Dasharatha had waited years for a son, and a sage came to take him",
+     "for_you": "Your father sees you as an extension of himself, not as your own person. Today, you can step into the business as your own. You do not need his permission to claim the space you have already built."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "His picture, not yours",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 229,
+   "llm": 5318,
+   "total": 10672,
+   "select": 5115
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying the weight of a business that is not being treated as your own. Your father walks in and changes decisions in front of the staff. You feel resentful. You feel trapped. This is a hard place to be."
+  ],
+  [
+   "scene",
+   "Arjuna is on the battlefield. He is frozen. He cannot choose. Krishna sees him standing there, unable to act, and he replies: And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna asks Arjuna to look at the work that lives in his own nature. The work that is truly yours is better for you than the work of another, even if yours is imperfect. Doing the work born of your own nature, you incur no wrong. This is easier said than done, because the people around you keep telling you that you are doing it wrong. But the truth underneath is that your nature knows what to do. You do not need their permission to do work that fits you."
+  ],
+  [
+   "for_you",
+   "The business you run is your own. When your father steps in, you feel the ground shift. This week, you can begin to see the business as yours again. Do your own work, imperfectly walked, and let it be your own offering."
+  ],
+  [
+   "close",
+   "Can you let your own work stand, even when it is imperfect?"
+  ]
+ ],
+ "depth": {
+  "life": "You run the business, but your father walks in and changes things in front of everyone. You feel resentful and trapped, as if your own work is not really yours to shape.",
+  "points": "The truth here is that you are doing the work born of your own nature, and that is where your worth lives. Another person's version of the path is not the one you are meant to walk.",
+  "practice": "At the start of your day, name one decision that belongs only to you, and make it without asking for approval.",
+  "question": "What does the business look like when you see it as your own offering?"
+ }
+}

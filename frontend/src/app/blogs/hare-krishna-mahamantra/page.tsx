@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Hare Krishna Mahamantra — Meaning, History, and the Practice of Kirtan | Wisdom",
+  title: "Hare Krishna Mahamantra — Meaning, History, and the Practice of Kirtan",
   description: "The Hare Krishna Mahamantra is a 16-word Sanskrit chant from the Kali Santarana Upanishad, popularized by Chaitanya Mahaprabhu in 16th-century Bengal and by ISKCON worldwide. Meaning, history, japa, and kirtan practice.",
   keywords: "hare krishna mahamantra, hare krishna mantra meaning, hare krishna hare rama, mahamantra, iskcon mantra, hare krishna mantra in sanskrit, hare krishna mantra benefits, kirtan meaning, chaitanya mahaprabhu, 16 word mantra",
   openGraph: {
@@ -595,12 +596,12 @@ export default function HareKrishnaMahamantraPage() {
       </div>
 
       <div className="content" style={{ paddingTop: 0 }}>
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Hare Krishna Mahamantra"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Hare Krishna Mahamantra"} />
       </div>
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Hare Krishna Mahamantra" />

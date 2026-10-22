@@ -1,0 +1,499 @@
+{
+ "persona": {
+  "id": "uk_genx_sikh_business",
+  "market": "UK (Leicester)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "47, runs the family cash-and-carry in Leicester, second generation, Punjabi background. Father (78) still comes in and overrules him in front of staff.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "I've run this business for 15 years and my dad still walks in and changes my decisions in front of the staff. I'm 47. He's 78. I can't say anything because it's his business in his head and he's my father",
+  "note_source": "voice",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "confidence": 0.85,
+   "core_struggle": "My parents' expectations weigh on me",
+   "mirror": "You run the place, and in front of your staff your father still makes the call.",
+   "insight": "The business is yours in fact, even if it is his in memory. The silence you keep is not respect. It is the cost of his picture being bigger than your own.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 1.36,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.25,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.691,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.506,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being treated as if you are still the child in the room, while your staff watch and your own authority gets handed back to someone else. My parents' expectations weigh on me.",
+    "diagnose": "When a parent sees only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what he sees; your worth was never his to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture he holds.",
+    "story": "A daughter who built her own house and was still asked to fetch water by her father; she stood in her own truth and found her footing."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The father's picture",
+    "Whose business it is",
+    "Standing in your own truth"
+   ],
+   "seat": "",
+   "life_context": "In her late forties and running a business she built over years; her elderly father still walks in and changes her decisions in front of her staff, and she feels she cannot say anything because he is her father.",
+   "details": [
+    "has run the business for years",
+    "her elderly father still walks in and changes decisions in front of staff",
+    "she is"
+   ],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "core_struggle_fallback",
+    "seat:missing",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:preachy=2",
+    "for_you:6/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      },
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.9974,
+     "beat": "hook",
+     "role_fit": 0.0,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He sees Arjuna paralyzed by doubt, trying to live a role that does not fit. Krishna says that it is better to follow your own path, even with its flaws, than to copy someone else perfectly. A borrowed life creates fear. The truth is that your own duty, walked imperfectly, holds more life than another's duty done well.",
+     "for_you": "You are standing in a business that you built, yet you are playing a role your father still owns in his mind. Choose to walk your own path today, even if your father does not understand. Your own imperfect truth is better than his perfect control."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.42",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 42",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: how good things are slowly lost.",
+     "sanskrit": "दौर्मन्त्र्यान्नृपतिर्विनश्यति यतिः सङ्गात् सुतो लालनाद् विप्रोऽनध्ययनात् कुलं कुतनयाच्छीलं खलोपासनात् । ह्रीर्मद्यादनवेक्षणादपि कृषिः स्नेहः प्रवासाश्र- यान्मैत्री चाप्रणयात् समृद्धिरनयात् त्यागः प्रमादाद्धनम् ॥",
+     "line": "Affection fades with distance, friendship without warmth, wealth with carelessness, a child with spoiling.",
+     "translation": "A king is ruined by bad counsel, an ascetic by attachment, a son by spoiling, a brahmin by neglecting study, a family by a wayward son, character by serving the wicked, modesty by drink, farming by neglect, affection by living far away, friendship by lack of warmth, prosperity by bad conduct, and wealth by careless spending.",
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "Distance strains affection; it does not doom it. The verse is a call to tend what you love.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 2.8242,
+     "beat": "diagnose",
+     "role_fit": 0.51,
+     "meaning": "Bhartrihari speaks to the reader from his collection on wealth. He lists how good things fade: affection with distance, friendship without warmth, and wealth with carelessness. He shows that what we value is fragile. The point is that what we hold dear requires our active attention, or it will slip away.",
+     "for_you": null
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.16",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 16",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Kings who slight scholars",
+     "setting": "From the section praising learning, addressed to proud rulers.",
+     "sanskrit": "हर्तुर्याति न गोचरं किमपि शं पुष्णाति यत् सर्वदा- ऽप्यर्थिभ्यः प्रतिपाद्यमानमनिशं प्राप्नोति वृद्धिं पराम् । कल्पान्तेष्वपि न प्रयाति निधनं विद्याख्यमन्तर्धनं येषां तान् प्रति मानमुज्झत नृपाः कस्तैः सह स्पर्धते ॥",
+     "line": "Learning is wealth no thief can see. It grows when you give it away and never perishes.",
+     "translation": "It never comes within a thief's sight; it always nourishes some deep good; given to those who ask, it grows greater; even at the end of an age it does not perish. Kings, drop your pride before those who own this inner wealth called learning. Who can compete with them?",
+     "why": "What you learn and how you speak are the wealth no one can take from you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.vidvat",
+      "title": "Nitishatakam: In praise of learning and the learned",
+      "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+      "story_hook": "",
+      "lesson": "What you learn and how you speak are the wealth no one can take from you."
+     },
+     "score": 3.0623,
+     "beat": "steady",
+     "role_fit": 0.544,
+     "meaning": "Bhartrihari speaks to proud kings who think they own everything. He says that learning is a wealth no thief can steal. It grows when you share it and it never perishes. He tells the rulers to drop their pride before those who possess this inner wealth. It is the one thing that cannot be taken by force or time.",
+     "for_you": "Your business is your learning, your skill, your voice. Your father cannot take that from you. Hold onto it. Let your work and your decisions speak with the quiet authority of what you know is true."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_brihadaranyak.86",
+     "ref": "Brihadaranyaka Upanishad 1.4.14",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.14",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The creation story: last of all, dharma is made.",
+     "sanskrit": "स नैव व्यभवत् तच्छ्रेयो रूपमत्यसृजत धर्मम् । तदेतत्क्षत्रस्य क्षत्रं यद्धर्मस्तस्माद्धर्मात् परं नास्त्यथो अबलीयान् बलीयाꣳसमाशꣳसते धर्मेण यथा राज्ञैवम् । यो वै स धर्मः सत्यं वै तत् तस्मात्सत्यं वदन्तमाहुर्धर्मं वदतीति धर्मं वा वदन्तꣳ सत्यं वदतीत्येतद्ध्येवैतदुभयं भवति ॥",
+     "line": "Nothing is higher than what is right. With it the weak can face the strong. What is right is truth.",
+     "translation": "Still he did not flourish. So he created a higher form, dharma. Dharma is the power over power; nothing is higher than dharma. Through dharma even a weak man can stand up to a strong one, as with the help of a king. That dharma is truth. So people say of one who speaks truth, 'He speaks dharma,' and of one who speaks dharma, 'He speaks truth.' Both are the same.",
+     "why": "Fear and loneliness are human; truth gives even the weak a footing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.brihad.first_being",
+      "title": "The first being: fear, loneliness and dharma",
+      "summary": "In this creation story the first being, alone, feels fear, then realises there is no one else to fear. He feels no joy alone and longs for a companion, splitting into husband and wife. Finally dharma is created, the truth by which even the weak can stand up to the strong.",
+      "story_hook": "",
+      "lesson": "Fear and loneliness are human; truth gives even the weak a footing."
+     },
+     "score": 3.0254,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "In the beginning of things, the first being felt afraid and alone, and then he longed for a companion. After that came dharma, the highest power of all. It is the truth that lets the weak stand against the strong. When you speak the truth, you are speaking dharma, and both names mean the same thing. This truth gives a footing to anyone who feels small and alone.",
+     "for_you": "The business is yours in fact, even if it is his in memory. The silence you keep is not respect. It is the cost of his picture being bigger than your own. Let dharma be the truth that lets you stand in your own space, even when he is there."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.3361,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "When Hanuman first spoke to Ram and Lakshman, his words were clear and calm. They were not rushed or strained, but came out in a steady, even voice. This clear speech moved Ram and built trust right away. It shows that fear often jumps ahead of facts, and that a calm, clear voice can win over even the wary.",
+     "for_you": "Your father may expect you to shrink, but you can speak with the same calm clarity. Choose one moment today to state your decision in a steady voice. You do not need to shout, just be clear."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.103.34",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 103.34",
+     "family": "mbh",
+     "speaker": "Brihaspati (retold by Bhishma)",
+     "listener": "Indra",
+     "setting": "Brihaspati counsels Indra on how to hold authority among difficult people.",
+     "sanskrit": "मृदुमप्यवमन्यन्ते तीक्ष्णादुद्विजते जनः / मातीक्ष्णो मा मृदुर्भूस्त्वं तीक्ष्णो भव मृदुर्भव",
+     "line": "People walk over the soft and fear the harsh. Be firm when it's needed, gentle when it's needed.",
+     "translation": "People look down even on the gentle, and they shrink from the harsh. Do not be only harsh, do not be only soft: be firm when firmness is needed and gentle when gentleness is.",
+     "why": null,
+     "misuse": "Firmness here means clarity, not cruelty.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": null,
+     "score": 3.3349,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "Brihaspati tells Indra that people will walk over the soft and fear the harsh. So do not be only harsh, and do not be only soft. Be firm when firmness is needed, and be gentle when gentleness is needed. The right response depends on the moment, not on a fixed rule.",
+     "for_you": "Tomorrow, when he changes a decision in front of your staff, let your voice be steady. You do not need to shout, but you do not need to vanish either. State the fact of your role. Let the room hear your boundary."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ocean",
+     "title": "Three days at the ocean: humble first, firm after",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Vibhishan",
+      "Lakshman",
+      "the Ocean"
+     ],
+     "story_hook": "Ram sat on the shore and asked the ocean, politely, to move.",
+     "summary": "On Vibhishan's advice, Ram first asks the ocean politely to let his army cross, and waits three days. When nothing changes, he takes up his bow, observing that counsel to the unwilling is like seed on barren soil. The ocean appears, apologises, and shows him how to build a bridge.",
+     "lesson": "Always ask humbly first. But don't let humility be taken for weakness.",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      },
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.5.48.chaupai.4",
+      "ref": "Ramcharitmanas · Sundar Kand",
+      "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 48",
+      "family": "rcm",
+      "speaker": "Vibhishan",
+      "listener": "Ram",
+      "setting": "At the shore, Ram asks how to cross the ocean, and Vibhishan advises.",
+      "sanskrit": "कह लंकेस सुनहु रघुनायक। कोटि सिंधु सोषक तव सायक॥ जद्यपि तदपि नीति असि गाई। बिनय करिअ सागर सन जाई ॥",
+      "line": "Even when you have the power to force it, ask politely first.",
+      "translation": "Raghunath, though a single arrow of yours could dry up countless oceans, good policy says: first go and ask the ocean politely.",
+      "why": "Always ask humbly first. But don't let humility be taken for weakness.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "boundaries_family",
+        "label": "I need to set boundaries with family"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ocean",
+       "title": "Three days at the ocean: humble first, firm after",
+       "summary": "On Vibhishan's advice, Ram first asks the ocean politely to let his army cross, and waits three days. When nothing changes, he takes up his bow, observing that counsel to the unwilling is like seed on barren soil. The ocean appears, apologises, and shows him how to build a bridge.",
+       "story_hook": "Ram sat on the shore and asked the ocean, politely, to move.",
+       "lesson": "Always ask humbly first. But don't let humility be taken for weakness."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram asked the ocean, politely, to move, and waited three days",
+     "teaser": "Ram asked the ocean, politely, to move, and waited three days",
+     "for_you": "Your father walks in and changes your decisions in front of your staff, and you stay silent because he is your father. The story of Ram at the ocean shows you what to do."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The father's picture",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 255,
+   "llm": 3804,
+   "total": 11686,
+   "select": 7621
+  }
+ },
+ "script": [
+  [
+   "open",
+   "He walks into your office and overrules you. Your father changes your decisions in front of your staff, and you stay quiet. The silence you keep is not respect. It is the cost of his picture being bigger than your own."
+  ],
+  [
+   "scene",
+   "Krishna sees Arjuna paralyzed on the battlefield. Arjuna is trying to live a role that does not fit his nature. He is paralyzed by doubt. Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वधर्मे निधनं श्रेयः परधर्मो भयावहः."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous."
+  ],
+  [
+   "unpack",
+   "This is not about staying in a role your family assigned you. It is about being true to your own nature and calling. Your own path, walked imperfectly, holds more life than another's duty done well. A borrowed life creates fear."
+  ],
+  [
+   "for_you",
+   "Today, step out from behind his memory of you. Make one decision in your business that is yours alone, without asking his permission first."
+  ],
+  [
+   "close",
+   "What is your own imperfect truth today?"
+  ]
+ ],
+ "depth": {
+  "life": "Your father walks into your office and rewrites your decisions in front of your staff. You stand there and let it happen. You have built this business over decades, but in that room, you shrink back into the daughter he remembers. You swallow the words because he is your father.",
+  "points": "The Gita says that following your own duty, even imperfectly, is better than perfectly performing someone else's. The fear you feel is not from doing your own work poorly. It is the danger of living a borrowed life, where your father's memory of you is the role you are forced to play.",
+  "practice": "Stand up and state one business decision as your own, without asking his permission or waiting for his approval.",
+  "question": "What would it cost you to let your father be wrong about who runs this business?"
+ }
+}

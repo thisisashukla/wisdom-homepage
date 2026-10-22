@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Gayatri Mantra — Meaning, Word-by-Word Translation & How to Chant | Wisdom",
+  title: "Gayatri Mantra — Meaning, Word-by-Word Translation & How to Chant",
   description: "The Gayatri Mantra is the most-recited Sanskrit mantra on earth. Here is what it actually says — in Sanskrit, Hindi, and English, with a word-by-word breakdown, history, and how to chant it.",
   keywords: "gayatri mantra, gayatri mantra meaning, gayatri mantra in sanskrit, gayatri mantra word by word meaning, gayatri mantra in hindi, gayatri mantra benefits, gayatri mantra history, gayatri mantra english translation, how to chant gayatri mantra, gayatri mantra 108 times",
   openGraph: {
@@ -583,12 +584,12 @@ export default function GayatriMantraPage() {
       </div>
 
       <div className="content" style={{ paddingTop: 0 }}>
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Gayatri Mantra Meaning"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Gayatri Mantra Meaning"} />
       </div>
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Gayatri Mantra Meaning" />

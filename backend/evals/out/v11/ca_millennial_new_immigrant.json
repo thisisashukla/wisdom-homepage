@@ -1,0 +1,525 @@
+{
+ "persona": {
+  "id": "ca_millennial_new_immigrant",
+  "market": "Canada (Toronto)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "36, was a bank branch manager in Hyderabad, moved to Toronto 8 months ago on PR, now driving Uber while applying. Wife and 4-year-old. Winter.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 5,
+   "topic": "work",
+   "follow": "didnt_work_out"
+  },
+  "note": "I managed 40 people in Hyderabad. Here I drive Uber at night and my wife cries about the cold. Everyone says Canadian experience. I did this for my son's future but right now I feel like I've ruined our present",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and grieving the present",
+   "bridge": "The future you built for your son has a price, and the present you live now is what you are grieving. The Gita calls this grief love with nowhere to go.",
+   "week_thesis": "Seven days from grieving the trade as a failure to seeing the love that made it, and the first step toward a present that is not just a sacrifice.",
+   "week_beats": {
+    "hook": "You recognise the grief for the life you lost, and the shame of feeling you failed at the cost.",
+    "diagnose": "You see that the grief is love with nowhere to go, and that the verdict of failure is what you are adding to it.",
+    "steady": "You hold that what you did was love, and love does not vanish because the form changed.",
+    "act": "You try letting the grief move through you and speaking to your wife about what she feels, not what she should feel.",
+    "story": "A father who left his rank for his child's future shows you how love survives the cost."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "partner",
+    "child",
+    "family"
+   ],
+   "confidence": 0.5,
+   "core_struggle": "He traded a senior role for a night shift to build a future for his son, and now feels he has ruined the present for his wife and family.",
+   "mirror": "You managed people once, and now you drive at night while your wife cries about the cold.",
+   "insight": "It isn't the cold or the night shift that keeps you up. It is the grief for the life you lost, which you are carrying as a failure instead of as love.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.581,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.562,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of a future you built at the cost of the present, and the grief of watching the life you once had disappear into the night shift. I lost my job.",
+    "diagnose": "Grief is love with nowhere to go; everything that comes together must part, and the heart aches because the bond was real. The mind turns that ache into a verdict of failure.",
+    "steady": "What you did was love, and love does not vanish because the form changed; the bond you built with your family is not lost, only changed.",
+    "act": "Let the grief move through you instead of becoming a verdict; speak to your wife about the cold she feels, and name the love that brought you here.",
+    "story": "A father who left his home and rank for his child's future, grieving what he lost, and learning that love does not end with the sacrifice."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The cost of love",
+    "Grief or verdict",
+    "A present that is not a sacrifice"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "managed people in Hyderabad",
+    "now drives Uber at night",
+    "wife cries about the cold"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "week_fit:8=1.0,16=1.0,87=0.3,3=0.6,15=0.3,40=0.6",
+    "week_fit:swapped=2",
+    "retried:2",
+    "redo:6",
+    "redo_fixed:2",
+    "day1:third_try",
+    "dropped:fallback_line=1,gendered=5,invented_name=1,soft_kept=3",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.517,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands on the battlefield, refusing to lift his bow. He tells Krishna that even ruling the gods would not ease the sorrow crushing him. He admits he sees no way to lift this grief himself.",
+     "for_you": "The shame you carry is the grief for the life you traded. You do not need to fix it right now. Just let it be what it is. The grief is not a sign you failed. It is love with nowhere to go."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.104.16",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.16",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage Kalakavrikshiya consoles Prince Kshemadarshi, who has lost his kingdom and wealth.",
+     "sanskrit": "भूत्वा च न भवत्येतदभूत्वा च भविष्यति / शोके न ह्यस्ति सामर्थ्यं शोचेत स कथं नरः",
+     "line": "What was ends, and what wasn't begins. Grief has no power to change it.",
+     "translation": "What was, ceases to be; what was not, comes to be. Grief has no power to change this. Why then should anyone grieve?",
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "Feeling grief is human; the point is not to feed it endlessly.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 3.3149,
+     "beat": "diagnose",
+     "role_fit": 0.526,
+     "meaning": "The sage Kalakavrikshiya sits with the fallen Prince Kshemadarshi, who has lost his kingdom and wealth. He tells him that what was, ceases to be, and what was not, comes to be. Grief has no power to change this. The sage asks why anyone should grieve, urging him to want what is within reach, and to let others' success be.",
+     "for_you": "The life you managed in Hyderabad is not coming back. The grief you carry for it is real, but it cannot bring your old role back. Let the loss be what it is without adding the verdict of failure on top of it."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.146.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 146",
+     "family": "rcm",
+     "speaker": "Sumantra",
+     "listener": "Dasharath",
+     "setting": "Sumantra returns alone to the grieving king Dasharath and steadies him.",
+     "sanskrit": "जनम मरन सब दुख सुख भोगा। हानि लाभु प्रिय मिलन बियोगा॥ काल करम बस होहिं गोसाईं। बरबस राति दिवस की नाईं ॥ सुख हरषहिं जड़ दुख बिलखाहीं। दोउ सम धीर धरहिं मन माहीं॥ धीरज धरहु बिबेकु बिचारी। छाड़िअ सोच सकल हितकारी ॥",
+     "line": "Gain and loss, meeting and parting come like day and night. The steady hold both alike.",
+     "translation": "Birth and death, joy and sorrow, loss and gain, meeting and parting with those we love: these come under the sway of time and action, as surely as night and day. The foolish rejoice in good times and wail in bad; the steady hold both alike in the mind. Hold on to your courage, think with discernment, and let go of worry, you who care for everyone.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": null,
+     "score": 3.2932,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Sumantra has returned alone to Dasharath. The king is grieving the departure of his son. Sumantra does not tell him to stop crying or pretend the loss is small. He simply reminds the king that life is made of these moments. Birth and death, joy and sorrow, loss and gain, meeting and parting with those we love: these come under the sway of time and action, as surely as night and day. The foolish rejoice in good times and wail in bad. The steady hold both alike in the mind.",
+     "for_you": "The life you traded for your son is not gone. It is simply changed, like day giving way to night. What you feel is not a mistake. It is the steady love you gave, now without its old shape. Hold that truth gently through the night."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.25.31",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 25.31",
+     "family": "mbh",
+     "speaker": "Senajit (quoted by Vyasa)",
+     "listener": "Yudhishthira",
+     "setting": "Vyasa quotes the grieving King Senajit to Yudhishthira, who is broken by the war's losses.",
+     "sanskrit": "सुखं च दुःखं च भवाभवौ च / लाभालाभौ मरणं जीवितं च / पर्यायतः सर्वमवाप्तुवन्ति / तस्मान्न मुह्येन्न च संप्रहृष्येत्",
+     "line": "Gain and loss, joy and sorrow come to everyone in turn. Don't be crushed, and don't get carried away.",
+     "translation": "Happiness and sorrow, rise and fall, gain and loss, death and life: everyone receives all of these in turn. So do not be thrown off by them, and do not get carried away either.",
+     "why": "Guilt and grief are real, but they are not the end. The good you do next counts.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yudhishthira_grief",
+      "title": "After the war: Yudhishthira's grief and his family's counsel",
+      "summary": "Victorious but shattered by the deaths of kin, Yudhishthira wants to give up the throne for the forest. Arjuna, Bhima, Draupadi, Nakula, the sage Devasthana and Vyasa each argue with him, about duty, guilt, grief and the shortness of life, until he agrees to rule.",
+      "story_hook": "He had won the war, and all Yudhishthira wanted was to walk into the forest and never come back.",
+      "lesson": "Guilt and grief are real, but they are not the end. The good you do next counts."
+     },
+     "score": 3.1585,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Vyasa tells the grieving Yudhishthira about King Senajit, who was also crushed by loss but learned to stand. The king saw that gain and loss, joy and sorrow, rise and fall like day and night, and they come to everyone in turn. Senajit held both alike, and so he survived. The verse says the good you do next counts, even when your heart is broken.",
+     "for_you": "You are grieving the life you traded for your son. That grief is real, but it is not the end. The steady work you are doing now is your next good. It counts."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.9617,
+     "beat": "act",
+     "role_fit": 0.5,
+     "meaning": "The sage Ashma speaks to King Janaka after Janaka asks how to bear the loss of family and wealth. Ashma says that pain comes from what we didn't want or what we lost, that meetings end and days do not return. He then tells Janaka to ask himself where he came from, where he is going, who he is, and why he is here. Ask these questions, Ashma says, and steady the mind.",
+     "for_you": "The grief for the life you traded is real, and it will not vanish. But the night is here now. Let the questions settle in your mind, and then let your attention land on your partner and your children, who are still here with you."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.7.10",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 7.10",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram.",
+     "sanskrit": "बालिशस्तु नरो नित्यं वैक्लव्यं योऽनुवर्तते। स मज्जत्यवशः शोके भाराक्रान्तेव नौर्जले॥",
+     "line": "Keep giving in to despair and you sink, like an overloaded boat.",
+     "translation": "But the foolish person who keeps giving in to despair sinks helplessly in grief, like an overloaded boat in water.",
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 2.8907,
+     "beat": "act",
+     "role_fit": 0.428,
+     "meaning": "Sugriva speaks to Ram after Ram has broken down, having lost Sita and his kingdom. Ram is overwhelmed, and Sugriva holds him. He tells Ram that if he keeps giving in to despair, he will sink helplessly, like a boat overloaded and pulled under the water. The verse proposes that two people in trouble can carry each other. The steady one thinks it through, and a friend is the greatest refuge. It is an invitation to let the other person hold you up when you cannot hold yourself.",
+     "for_you": "Let yourself grieve, honour them by living well, and remember that the self they loved in you, and in them, does not perish."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.exile_order",
+     "title": "Ram hears he is to be exiled",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharath"
+     ],
+     "story_hook": "Ram walked in expecting a crown and walked out with a forest.",
+     "summary": "Ram is called to his father's room and finds him collapsed. Kaikeyi tells him the terms. Ram smiles: his brother gets the throne, he gets to meet sages in the forest, and he can keep his father's word. Kaikeyi reads his plain words as cunning, and Ram walks out feeling, the poet says, like an elephant freed from its post.",
+     "lesson": "A lost role can be met with grace; sometimes it even feels like freedom.",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.2.42.chaupai.1",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 42",
+      "family": "rcm",
+      "speaker": "Ram",
+      "listener": "Kaikeyi",
+      "setting": "Ram, told by Kaikeyi that Bharat will be crowned and he exiled, answers her calmly.",
+      "sanskrit": "भरतु प्रानप्रिय पावहिं राजू। बिधि सब बिधि मोहि सनमुख आजू॥ जौं न जाउँ बन ऐसेहु काजा। प्रथम गनिअ मोहि मूढ़ समाजा ॥",
+      "line": "My beloved brother gets the throne. Fate is favouring me in every way today.",
+      "translation": "...and Bharat, dear to me as life, will have the kingdom. Fate is favouring me in every way today. If I would not go to the forest even for such a cause, count me first among fools.",
+      "why": "A lost role can be met with grace; sometimes it even feels like freedom.",
+      "misuse": "Grace in loss is not pretending it doesn't hurt.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.exile_order",
+       "title": "Ram hears he is to be exiled",
+       "summary": "Ram is called to his father's room and finds him collapsed. Kaikeyi tells him the terms. Ram smiles: his brother gets the throne, he gets to meet sages in the forest, and he can keep his father's word. Kaikeyi reads his plain words as cunning, and Ram walks out feeling, the poet says, like an elephant freed from its post.",
+       "story_hook": "Ram walked in expecting a crown and walked out with a forest.",
+       "lesson": "A lost role can be met with grace; sometimes it even feels like freedom."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram walked in expecting a crown and walked out with a forest",
+     "teaser": "Ram walked in expecting a crown and walked out with a forest",
+     "for_you": "The night shift you took and the cold you now feel are not only a loss. They are the price of a love that wanted to secure a future for your child. See the sacrifice not as a failure, but as a choice made with care."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The cost of love",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 255,
+   "llm": 3923,
+   "total": 18719,
+   "select": 14533
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting in the car, feeling the weight of what you gave up. You traded a senior role for a night shift to build a future for your son, and now your wife cries about the cold. You feel ashamed and grieving the present, as if you ruined everything for them."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield, refusing to lift his bow. He tells Krishna that even ruling the gods would not ease the sorrow crushing him. He admits he sees no way to lift this grief himself: And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "Arjuna admits he has no idea how to lift this sorrow. He sees no path forward, no solution in sight. This is the moment clarity begins. It is only when you stop pretending to know the answer that you can finally ask for help and see what is true."
+  ],
+  [
+   "for_you",
+   "When you sit in the car tonight, do not try to fix the grief. Let it be what it is. The grief is not a sign you failed. It is love with nowhere to go."
+  ],
+  [
+   "close",
+   "What if the grief is the price of love, not the proof of failure?"
+  ]
+ ],
+ "depth": {
+  "life": "You are driving through the night, and your wife is crying in the cold. You traded a life of managing people for this. The silence in the car is heavy. You feel the shame of it, the weight of what you gave up for your son. You do not know how to be here anymore.",
+  "points": "Arjuna stood on the battlefield and saw no victory could stop his grief. He admitted he did not know what to do. This is where clarity begins. Your grief is not a failure of your plan. It is the love you have for your family, with nowhere to go.",
+  "practice": "Let your hands rest on the wheel for one full minute. Say to yourself, I do not know how to fix this right now, and let that be enough.",
+  "question": "What would it feel like to let this grief be what it is, without trying to fix it?"
+ }
+}

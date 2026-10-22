@@ -1,0 +1,505 @@
+{
+ "persona": {
+  "id": "sg_genz_finance_imposter",
+  "market": "Singapore",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "25, Tamil-Singaporean analyst at a bank, first in family to go to university, got promoted early, feels she doesn't belong in the room.",
+  "profile": {
+   "feeling": "nerve",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4,
+   "topic": "enough",
+   "follow": "fraud"
+  },
+  "note": "got promoted ahead of people with MBAs. in every meeting I think they're going to find out I'm just the girl from the HDB whose dad drove a taxi. I over prepare for everything and still feel sick before presenting",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "anxious and ashamed",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "story": "A woman who rose from a taxi driver's daughter shows you what standing in the room looks like from the inside."
+   },
+   "confidence": 0.8,
+   "core_struggle": "Promoted ahead of colleagues, she feels like a fraud from the HDB and over-prepares to hide it, yet still feels sick before presenting.",
+   "mirror": "You over-prepare for every meeting, and still feel sick before you speak.",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "comparison_envy",
+   "situations": [
+    {
+     "id": "imposter",
+     "label": "I feel like an imposter",
+     "weight": 1.984,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.04,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.617,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.492,
+     "source": "chip"
+    },
+    {
+     "id": "not_promoted",
+     "label": "I was passed over for promotion",
+     "weight": 0.422,
+     "source": "note"
+    },
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 0.415,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The dread of being found out, no matter how much you prepare, and the shame of where you come from. I feel like an imposter.",
+    "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth.",
+    "steady": "A promotion is something that happened, not who you are; no one who tries to do good is ever lost.",
+    "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again.",
+    "story": "A woman who rose from a taxi driver's daughter to a position of trust, facing her own doubt and the room's expectation, and finding the courage to stand in it."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The verdict you keep passing",
+    "More than the promotion",
+    "The one who stands"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "promoted ahead of people",
+    "over-prepares for everything",
+    "feels sick before presenting"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "llm_stance_missing",
+    "stance_inferred:str=0.55,asp=0.1,wro=0.1,see=0.0",
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "bridge:copied_example",
+    "week_thesis:missing",
+    "insight:template",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.0825,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna tells Arjuna that it is better to walk your own path with all its flaws than to perform someone else's duty perfectly. You will not incur any fault by doing the work that comes naturally to you. The idea is to offer your own work, with its imperfections, rather than trying to measure up to an external standard of perfection.",
+     "for_you": "You are preparing so much to prove you belong in this new role. That effort is yours, and it is enough. Offer the presentation you can give today, with all its nerves, instead of trying to perform a version of yourself that feels safer."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.3376,
+     "beat": "diagnose",
+     "role_fit": 0.76,
+     "meaning": "Draupadi tells Yudhishthira that a person should never look down on themselves. The one who despises themselves never finds real prosperity. The point is to do what is right for its own sake, and then work as if everything depends entirely on your own effort.",
+     "for_you": "Yesterday's verse named the grip. Today, let it go. You are not failing because you feel like a fraud. You are simply doing right by showing up, and your effort is what matters, not the approval you are waiting for."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "not_promoted",
+       "label": "I was passed over for promotion"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2495,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari says that a ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last. The point is that setbacks rarely last for those who keep going on the right path.",
+     "for_you": "The shame you feel before a presentation is a setback, not a verdict on who you are. You have kept going, and this feeling will pass. Hold onto that, and let the next moment be just another step forward."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.57",
+     "ref": "Bhagavad Gita 2.57",
+     "ref_iast": "Bhagavad Gītā 2.57",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम् । नाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता ॥",
+     "line": "Good news doesn't inflate them, bad news doesn't embitter them. That's steady wisdom.",
+     "translation": "One who is without attachment anywhere, who neither rejoices on meeting good nor hates on meeting bad, has wisdom that is firmly set.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "not_promoted",
+       "label": "I was passed over for promotion"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 3.1725,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Arjuna asks Krishna what a steady mind looks like, and Krishna answers by describing someone untouched by fortune. This person does not swell with joy at good news, nor do they sour at bad. Their wisdom is firm because they guard where they place their attention. Dwelling on what they lack is what stirs the fire of shame and fear inside them.",
+     "for_you": "The next presentation is coming, and the old dread is already settling in your stomach. Hold onto the fact that your worth is not decided by how this goes today."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.953,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son collapsed in despair after losing his kingdom. She tells him not to hold himself in contempt and not to settle for a diminished life. She urges him to set his mind on what is truly good and to stop fearing. The past defeat does not have to be his final word.",
+     "for_you": "You lost a sense of belonging when you moved up, and it feels like you are living in borrowed space. Do not let that past loss define the room you are in now. Set your mind on the work itself, and let that be enough for today."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.4.34",
+     "ref": "Bhagavad Gita 4.34",
+     "ref_iast": "Bhagavad Gītā 4.34",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+     "sanskrit": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया । उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥",
+     "line": "Learn from those who have seen the truth: approach with humility, ask real questions, and serve.",
+     "translation": "Learn it by bowing down, by questioning, and by service. Those who are wise and have seen the truth will teach you that knowledge.",
+     "why": "Learn humbly, trust the process, and cut through doubt to act.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.4",
+      "title": "The glory of knowledge",
+      "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+      "story_hook": "",
+      "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+     },
+     "score": 3.6853,
+     "beat": "act",
+     "role_fit": 0.694,
+     "meaning": "Krishna tells Arjuna to learn by approaching with humility, by asking real questions, and by service. He says that those who have seen the truth will teach this knowledge. Faith and self-control carry a person across, but doubt destroys them. The way out of confusion is to ask, to listen, and to act.",
+     "for_you": "The doubt about being good enough is loud right now. Ask one real question about the work you are doing, and trust the answer you get. Let someone else's clarity show you the next small step, and do not try to carry the whole weight alone."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.jambavan_rouses",
+     "title": "Jambavan reminds Hanuman who he is",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Jambavan",
+      "Hanuman",
+      "Angada"
+     ],
+     "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+     "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+     "lesson": "Sometimes you need someone to remind you what you are capable of.",
+     "matched": [
+      {
+       "id": "imposter",
+       "label": "I feel like an imposter"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.66.7",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 66.7",
+      "family": "vr",
+      "speaker": "Jambavan",
+      "listener": "Hanuman",
+      "setting": "On the southern shore no one can leap the ocean; old Jambavan turns to the silent Hanuman.",
+      "sanskrit": "बलं बुद्धिश्च तेजश्च सत्त्वं च हरिपुङ्गव। विशिष्टं सर्वभूतेषु किमात्मानं न सज्जसे।७।।",
+      "line": "You have the strength, the brains and the courage. Why are you holding yourself back?",
+      "translation": "Your strength, intelligence, energy and courage stand out among all beings, best of monkeys. Why do you not step up?",
+      "why": "Sometimes you need someone to remind you what you are capable of.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "imposter",
+        "label": "I feel like an imposter"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.jambavan_rouses",
+       "title": "Jambavan reminds Hanuman who he is",
+       "summary": "At the ocean's edge, each monkey says how far he can leap; none can cross. Old Jambavan turns to Hanuman, who has sat silent, and reminds him of his birth and power: why are you holding back? This is your time. Hanuman grows and prepares to leap.",
+       "story_hook": "Everyone had named a number, and the one who could actually do it was sitting quietly at the back.",
+       "lesson": "Sometimes you need someone to remind you what you are capable of."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "teaser": "Everyone said how far they could leap, and Hanuman sat silent at the back",
+     "for_you": "Hanuman had the power all along but sat in silence while others named their limits. When someone reminds you of your own strength, you do not have to shrink. Stand in the room as the person who belongs there. You are not holding back because you lack the skill."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The verdict you keep passing",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 219,
+   "llm": 4374,
+   "total": 9017,
+   "select": 4417
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You feel sick to your stomach before this presentation. You prepared for hours, but the voice in your head still says you do not belong here, that you are a fraud. You are carrying a heavy shame, and you are exhausted by the effort of hiding it."
+  ],
+  [
+   "scene",
+   "Arjuna is on the battlefield. He is surrounded by his own family and teachers, and he is paralyzed by grief and confusion. He has asked Krishna to tell him what he must do. Krishna looks at him and speaks about the nature of duty and action. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna says that your own duty, even if it is flawed, is better than another person's duty done perfectly. You will not make a mistake by doing the work that fits your own nature. The problem is that you are trying to live up to an image of perfection that belongs to someone else. You are performing a role instead of offering your own effort. This is easier said than done, because you have built your self-worth on being perfect. But the truth is that your natural effort is already enough."
+  ],
+  [
+   "for_you",
+   "You are over-preparing to prove you belong in this new role. That effort is yours, and it is enough. Offer the presentation you can give today, with all its nerves, instead of trying to perform a version of yourself that feels safer."
+  ],
+  [
+   "close",
+   "What would change if you offered your work as it is?"
+  ]
+ ],
+ "depth": {
+  "life": "You are preparing so much to prove you belong in this new role. That effort is yours, and it is enough. Offer the presentation you can give today, with all its nerves, instead of trying to perform a version of yourself that feels safer.",
+  "points": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day. The root cause is not feeling good enough. You are trying to be someone you are not, and that costs you.",
+  "practice": "Before your next meeting, name one thing you did well in your preparation. Let that be your offering.",
+  "question": "What would you say to a friend who felt exactly like you do right now?"
+ }
+}

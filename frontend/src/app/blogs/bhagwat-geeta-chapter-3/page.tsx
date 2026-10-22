@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 3 Summary \u2013 Key Verses & Meaning (Karma Yoga)",
@@ -863,7 +864,7 @@ export default function ChapterThreePage() {
         />
 
         <p>
-          This is where the Wisdom app becomes relevant to understanding this teaching. Every day, the app sends a shloka, a verse from the Gita, not for the user to profit from or compete over, but to deepen their understanding of what freedom truly means. The same text, received as knowledge rather than as information. The shift from self-serving to service-oriented is everything.
+          This is where the Wisdom app becomes relevant to understanding this teaching. Every day, the app picks a shloka for what the user is going through, not for them to profit from or compete over, but to deepen their understanding of what freedom truly means. The same text, received as knowledge rather than as information. The shift from self-serving to service-oriented is everything.
         </p>
 
         {/* DIVIDER */}
@@ -1266,7 +1267,7 @@ export default function ChapterThreePage() {
           </tbody>
         </table>
 
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 3"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 3"} />
 
 
         {/* CHAPTER NAV */}
@@ -1326,11 +1327,11 @@ export default function ChapterThreePage() {
     {/* ── FOOTER ── */}
     <footer>
       <p>
-        Wisdom App · Bhagavad Gita learning for the modern mind · Free on iPhone
+        Wisdom · Bhagavad Gita, tuned to your life · Week 1 free on iPhone
       </p>
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  ·
-        <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer_app_store">App Store</a>  ·
+        <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer_app_store">App Store</a>  ·
         <a href="/privacy">Privacy</a>  ·
         <a href="/terms">Terms</a>  ·
         <a href="mailto:work.ankurshukla@gmail.com">Support</a>

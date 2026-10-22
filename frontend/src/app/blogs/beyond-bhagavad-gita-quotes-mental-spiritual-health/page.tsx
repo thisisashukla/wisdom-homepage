@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Beyond the Bhagavad Gita: Best Quotes on Mental & Spiritual Health from 7 Lesser-Known Gitas | Wisdom",
+  title: "Beyond the Bhagavad Gita: Best Quotes on Mental & Spiritual Health from 7 Lesser-Known Gitas",
   description: "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each carry profound wisdom for mental and spiritual health that most people have never encountered.",
   keywords: "ashtavakra gita quotes, avadhuta gita mental health, ram gita teachings, hans gita philosophy, shakti gita quotes, shambhu gita wisdom, vishnu gita quotes, lesser known gitas, gitas besides bhagavad gita, other gitas mental peace, spiritual health gita quotes",
   openGraph: {
@@ -780,7 +781,7 @@ export default function BeyondBhagavadGitaPage() {
             These texts are not meant to be read once and understood. They are meant to be lived with. One verse a day, read slowly, sat with, carried through an ordinary day, allows the teachings to work on you in the way they were designed to. Not as intellectual content but as a lens through which experience gradually looks different.
           </p>
           <p>
-            The Wisdom app delivers one verse from the Bhagavad Gita each morning: Sanskrit, transliteration, meaning, and modern relevance. It&apos;s a beginning. These other Gitas are waiting for you.
+            The Wisdom app picks one Bhagavad Gita verse a day for what you are going through, with the Sanskrit and what it means for your life. It&apos;s a beginning. These other Gitas are waiting for you.
           </p>
         </div>
       </div>
@@ -824,12 +825,12 @@ export default function BeyondBhagavadGitaPage() {
 
       {/* APP CTA */}
       <div className="content">
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Beyond Bhagavad Gita Quotes"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Beyond Bhagavad Gita Quotes"} />
       </div>
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Beyond Bhagavad Gita Quotes" />

@@ -1,0 +1,480 @@
+{
+ "persona": {
+  "id": "us_millennial_mother_anger",
+  "market": "USA (Chicago)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "39, Indian-American, two kids, runs a dental practice with her husband, loses her temper with the kids and hates herself after.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "phone_hours": 3,
+   "topic": "mind",
+   "follow": "anxious"
+  },
+  "note": "I yelled at my 7 year old this morning for spilling milk and the look on his face. I am turning into my mother. I run a practice, I manage 12 people calmly, and then at home I just snap",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "confidence": 0.6,
+   "core_struggle": "She runs a practice and leads calmly at work, but at home she snaps at her child and is terrified she is becoming her own mother.",
+   "mirror": "You are steady with twelve people at work, and at home you become someone else.",
+   "insight": "It isn't the spilled milk that breaks you. It's the verdict you pass on yourself after, which you replay as if you are your mother's daughter.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "anger_reactivity",
+   "situations": [
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.25,
+     "source": "chip"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.888,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.628,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.537,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The look on a child's face after you snap, and the dread of becoming the mother you swore you would never be.",
+    "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth, and it turns honest effort into shame.",
+    "steady": "A moment of anger is not the story of your life; your worth was never theirs to grant and it was never theirs to take away.",
+    "act": "Lift yourself up instead of pushing yourself down; learn what this moment taught you, make amends where you can, and begin again with your child.",
+    "story": "A woman who ruled her office with calm, lost her temper at home, and had to find her footing again before her own child's eyes."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The look on his face",
+    "The verdict you pass on yourself",
+    "More than that moment"
+   ],
+   "seat": "a working mother who runs a practice and snaps at home",
+   "life_context": "A mother in her thirties or early forties, building a practice and raising a young child; at work she is steady with twelve people, but at home a spilled glass of milk sends her into a rage she cannot explain or forgive.",
+   "details": [
+    "yelled at her young for spilling milk",
+    "is terrified she is becoming her own mother",
+    "runs a practice and manages people calmly",
+    "snaps at home where she cannot control the same way"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "flags": [
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 3.0174,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Krishna finds Arjuna on the battlefield, and the prince is shaking, his mouth dry, his body trembling. He is not standing tall. He is collapsing. In that moment, Krishna sees the truth: even the strongest people freeze. The teaching does not begin with a hero. It begins with a breakdown, and the wisdom starts right there in the shaking.",
+     "for_you": "Right now, your body is still carrying the shake of that morning. The milk is gone, but the tremor remains, and it is asking for rest rather than a verdict."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.63",
+     "ref": "Bhagavad Gita 2.63",
+     "ref_iast": "Bhagavad Gītā 2.63",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥",
+     "line": "Anger clouds judgement, clouded judgement loses memory, lost memory wrecks reason, and then you fall.",
+     "translation": "From anger comes delusion; from delusion, confusion of memory; from confusion of memory, the ruin of understanding; and with understanding ruined, a person is lost.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "Not 'never feel anger'. It warns about anger that takes over judgement, not about naming wrongs.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 3.4396,
+     "beat": "diagnose",
+     "role_fit": 0.75,
+     "meaning": "Krishna explains how a person falls. It starts with anger, which clouds judgment. That clouded judgment loses memory, which ruins understanding, and then the person is lost. The teaching is about how attention works. What you dwell on becomes the seed of ruin. Steadiness is built by guarding your attention before anger takes hold.",
+     "for_you": "The milk is not the anger. The anger is the result of something you are dwelling on, a memory of being judged that is now clouding your judgment in the present."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": null,
+     "score": 3.3434,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher gives a rule to a renunciant. Let him not torment his body by chasing pleasure or fleeing pain. If he is praised, let him not gloat. If he is blamed, let him not curse others. The body is not to be punished for a feeling, and the mind is not to be given away to the opinion of others.",
+     "for_you": "Your body is not a place to be punished for a feeling. When the blame comes, even from yourself, let it land without cursing the one who spilled the milk."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.135.25",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 135.25",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "पुत्र नात्मावमन्तव्यः पूर्वाभिरसमृद्धिभिः / अभूत्वा हि भवन्त्यर्था भूत्वा नश्यन्ति चापरे / अमर्षेणैव चाप्यर्था नारब्धव्याः सुबालिशैः",
+     "line": "Don't look down on yourself because of past failures. Fortunes come and go, and can come again.",
+     "translation": "Son, don't look down on yourself because of past failures. Fortunes that never were come to be, and fortunes that were are lost. But don't start things out of mere resentment, like a fool.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.0826,
+     "beat": "steady",
+     "role_fit": 0.865,
+     "meaning": "Queen Vidula finds her son Sanjaya defeated after losing his kingdom. She tells him not to despise himself for what he has lost, because fortunes rise and fall like tides. What is gone can return, but a man who acts only from bitter anger destroys himself. The lesson is that a past defeat is not the final word on who you are, and the only way back is to rise again without letting shame or fury lead the way.",
+     "for_you": "At work, you steady twelve people without a tremor. But at home, the spilled milk becomes a verdict on your whole life, and you hear your mother's voice in your own. This verse says that losing your temper does not make you her daughter."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.2361,
+     "beat": "act",
+     "role_fit": 0.541,
+     "meaning": "Krishna tells Arjuna that you are your own best friend or your own worst enemy. You can lift yourself up, or you can push yourself down. The self that stays steady in honour and insult is the self that refuses to abandon itself, and that is the only loyalty that truly matters.",
+     "for_you": "When you snap at your child, you become your own enemy in that instant. But the same mind that runs your practice with twelve people can be the friend that says, I am not my mother, and I am not this one angry moment. Choose that friend today."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.0534,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha tells the grieving Bharat to keep courage in his heart and do what today asks of him. Bharat, shattered by his father's death and his brother's exile, rises and prepares to go to the forest and face Ram. The verse says that when your mind is full of doubt and your heart is heavy, the only way forward is to do the one thing that is in front of you.",
+     "for_you": "After you lose your temper, the house feels broken. The verse does not tell you to fix the milk or the mood. It tells you to do the one small thing that is in front of you. Walk to your child and say you are sorry. That is today's work."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.tara_calms_lakshman",
+     "title": "Tara calms Lakshman",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Tara",
+      "Lakshman",
+      "Sugriva"
+     ],
+     "story_hook": "Lakshman came through the gates ready to fight, and found a woman standing in his way.",
+     "summary": "Lakshman storms into Kishkindha, bow twanging. Tara meets him with reason and courtesy: strong people think before anger takes over; bear the slip of someone on your side. Sugriva apologises and Lakshman asks forgiveness for his own harsh words.",
+     "lesson": "A calm voice can turn a confrontation into an apology on both sides.",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.33.39",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 33.39",
+      "family": "vr",
+      "speaker": "Tara",
+      "listener": "Lakshman",
+      "setting": "Lakshman storms into Kishkindha, furious at Sugriva's delay; Sugriva's queen Tara meets him calmly.",
+      "sanskrit": "न कोपकालः क्षितिपालपुत्र न चापि कोपः स्वजने विधेयः। त्वदर्थकामस्य जनस्य तस्य प्रमादमप्यर्हसि वीर सोढुम्॥",
+      "line": "This is no time for anger. Bear the slip of someone who is on your side.",
+      "translation": "Prince, this is no time for anger, and anger should not be turned on your own people. Hero, you should bear even the lapse of someone who wants your good.",
+      "why": "A calm voice can turn a confrontation into an apology on both sides.",
+      "misuse": "About lapses by people who mean well, not about repeated mistreatment.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "anger_outburst",
+        "label": "I lost my temper and regret it"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.tara_calms_lakshman",
+       "title": "Tara calms Lakshman",
+       "summary": "Lakshman storms into Kishkindha, bow twanging. Tara meets him with reason and courtesy: strong people think before anger takes over; bear the slip of someone on your side. Sugriva apologises and Lakshman asks forgiveness for his own harsh words.",
+       "story_hook": "Lakshman came through the gates ready to fight, and found a woman standing in his way.",
+       "lesson": "A calm voice can turn a confrontation into an apology on both sides."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Lakshman stormed the gates ready to fight, and a queen stood calmly in his way",
+     "teaser": "Lakshman stormed the gates ready to fight, and a queen stood calmly in his way",
+     "for_you": "You know how to hold a room at work, and you can hold your child too. When the milk spills, you do not need to shout. You can stand still and speak calmly. That is the strength you already know."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The look on his face",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 153,
+   "llm": 4857,
+   "total": 11171,
+   "select": 6157
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting in the kitchen right now, and the milk is already wiped up. But the shaking is still in your hands, and the thought that you are becoming your mother is louder than the silence. You cannot forgive the snap, and you cannot forgive the fear that it is who you really are."
+  ],
+  [
+   "scene",
+   "On a battlefield, Arjuna stands in his chariot, and he sees his own family standing in the enemy lines. He is a warrior, but at the sight of his kin, his limbs give way, his mouth goes dry, and his body trembles. His famous bow slips from his hand. And Arjuna says:"
+  ],
+  [
+   "sanskrit",
+   "सीदन्ति मम गात्राणि मुखं च परिशुष्यति, वेपथुश्च शरीरे मे रोमहर्षश्च जायते. गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते, न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः."
+  ],
+  [
+   "line",
+   "In plain words: Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero."
+  ],
+  [
+   "unpack",
+   "The Gita does not open with a hero. It opens with a man who is strong, and then he freezes. His body betrays him because his mind is overwhelmed. This is the truth underneath: a breakdown is not a moral failure. It is a body and mind that have reached their limit. The teaching starts there, in the shaking, because that is where most of us live."
+  ],
+  [
+   "for_you",
+   "At work, you manage twelve people with a steady hand. At home, the same mind has no door to close. Let the shaking be the truth of the morning, not a sentence on your character. Give your hands a minute to stop trembling before you speak again."
+  ],
+  [
+   "close",
+   "Who are you, if not the verdict you pass on the shaking?"
+  ]
+ ],
+ "depth": {
+  "life": "Your hands are steady in the office, but at home they are shaking. The spilled milk is just the signal. The real tremor is the verdict you pass on yourself after, replaying your mother's voice in your own head.",
+  "points": "Even the strongest people freeze. The Gita begins with a breakdown, not a hero. Your body is showing you what your mind is trying to hide.",
+  "practice": "Place one hand on your chest and feel the rise and fall of your breath for sixty seconds before you enter the room.",
+  "question": "What if the tremor is not a failure, but a signal to stop and rest?"
+ }
+}

@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "What Does the Bhagavad Gita Say About Anxiety and Fear? | Wisdom",
+  title: "What Does the Bhagavad Gita Say About Anxiety and Fear?",
   description: "The Gita opens with Arjuna mid-panic attack: hands shaking, bow dropped, unable to breathe. Chapter 2 through 6 build a specific answer to anxiety, dread, and mental restlessness, verse by verse.",
   keywords: "bhagavad gita anxiety, bhagavad gita mental peace, gita quotes for stress, bhagavad gita depression, what does gita say about worry, gita mental health, bhagavad gita peace of mind, bhagavad gita on stress, bhagavad gita on fear, bhagavad gita mental health, bhagavad gita 6.5 meaning, gita on overthinking",
   openGraph: {
@@ -679,12 +680,12 @@ export default function AnxietyMentalPeacePage() {
         </div>
     </div>
 
-    <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Gita Anxiety Mental Peace"} />
+    <VerseFunnelCTA variant="chapter" locale="en" pageName={"Gita Anxiety Mental Peace"} />
 
 
     <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
     </footer>
 
     {/* Schema Markup */}

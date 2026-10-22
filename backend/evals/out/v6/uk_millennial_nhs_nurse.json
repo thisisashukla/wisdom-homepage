@@ -1,0 +1,489 @@
+{
+ "persona": {
+  "id": "uk_millennial_nhs_nurse",
+  "market": "UK (Manchester)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "31, NHS nurse in Manchester, came from Kerala 5 years ago, sends money home, night shifts. Single. Family asking about marriage.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "shame"
+  },
+  "note": "12 hour night shifts, I send half my salary home, my parents are proud but every call ends with when are you getting married. I'm 31 and I feel like I'm failing at a test I never agreed to take",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and restless",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise the restless mind after a long shift and the verdict you carry from the calls.",
+    "diagnose": "You see that the test they set has become the one you fail in your own head.",
+    "steady": "You hold that what is yours is the work you do, not the timeline they hold.",
+    "act": "You try lifting yourself up and naming the verdict as theirs when it comes.",
+    "story": "A woman who works through the night and sends money home shows you what standing in your own time looks like."
+   },
+   "undisclosed": false,
+   "texts": [],
+   "confidence": 0.5,
+   "core_struggle": "A woman working -hour night shifts and sending half her salary home feels she is failing at a marriage test she never agreed to take.",
+   "mirror": "You send half your salary home, and every call ends with the same question you never asked.",
+   "insight": "You are not failing at a test you never agreed to take. You are being measured by a clock that was set to a different time zone than yours.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "expectation_of_others",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.648,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.78,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The restless mind that cannot settle after a -hour night shift, carrying the weight of a verdict that was never yours to carry. My parents' expectations weigh on me.",
+    "diagnose": "When the mind is already tired from the work, the verdict from others turns into self-blame; the test they set becomes the one you fail in your own head.",
+    "steady": "Praise and blame come and go; what is yours is the work you do and the life you are building, not the timeline they hold.",
+    "act": "Lift yourself up instead of pushing yourself down; when the verdict comes, name it as theirs and return to the work that is yours.",
+    "story": "A woman who works through the night and sends money home, who feels she is failing at a test she never agreed to take, and who finds the courage to stand in her own time."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The test you never agreed to",
+    "The verdict you keep passing",
+    "More than the timeline"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "works -hour night shifts",
+    "parents are proud but end every call with when are you getting married"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "bridge:copied_example",
+    "week_thesis:missing",
+    "seat:missing",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:copied=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      },
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.9514,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna speaks to Arjuna on the battlefield. Arjuna is frozen by grief and confusion, unable to see past the rules of family and status. Krishna points to the nature of duty itself, saying that every path has flaws. The work that is truly yours, done with honest effort, is better than another's path done perfectly but without your own truth in it. It is about finding your fit and doing it as an offering, flaws and all.",
+     "for_you": "After a long night shift, your mind replays the call. Your own path is the work you do and the money you send home, not the marriage clock they hang up on you."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.1373,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "In the Yoga Vasishtha, Rama is in deep despair after returning from his exile. He laments that life is empty, that wealth hardens the heart, and that time eats everything. He speaks the truth of his pain, naming how the mind turns against itself. It is a moment of raw honesty, a question that shows where the real struggle lives inside him.",
+     "for_you": "The test they set has become the one you fail in your own head. The restless mind is your own, and it is the one thing you can see clearly right now."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.3035,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari is speaking to the reader about what it means to stay steady. He says let people praise you or blame you. Let money come or go. Let death arrive today or many years from now. The person who is steady does not step off the right path. They keep going even when things are hard.",
+     "for_you": "They keep asking about marriage at the end of every call. You feel the weight of that question. But your steadiness is in the work you do, not in the timeline they hold."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.12.19",
+     "ref": "Bhagavad Gita 12.19",
+     "ref_iast": "Bhagavad Gītā 12.19",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna, describing the qualities of the person dear to God.",
+     "sanskrit": "तुल्यनिन्दास्तुतिर्मौनी सन्तुष्टो येनकेनचित् । अनिकेतः स्थिरमतिर्भक्तिमान्मे प्रियो नरः ॥",
+     "line": "Praise and blame weigh the same. Quiet, content with what comes, rooted in steadiness, not status.",
+     "translation": "to whom blame and praise are equal, who is silent, content with whatever comes, without a fixed home, steady in mind and full of devotion, that person is dear to me.",
+     "why": "Kindness without hatred, steadiness in praise and blame: that's what's loved.",
+     "misuse": "Not 'never ask for credit'. You can advocate for yourself without letting praise or blame define you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p12.2",
+      "title": "The marks of one dear to God",
+      "summary": "Krishna lists the marks of one dear to him: no hatred, friendly and compassionate, forgiving, content, disturbing no one and disturbed by no one, the same in praise and blame.",
+      "story_hook": "",
+      "lesson": "Kindness without hatred, steadiness in praise and blame: that's what's loved."
+     },
+     "score": 3.1598,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Krishna is describing the person who is dear to him. He says that person treats praise and blame as the same. They are quiet, content with what comes, and steady in mind. They do not let status or opinion move them.",
+     "for_you": "The questions about marriage feel like blame. The pride they show feels like praise. Let both sit on the same scale. Your quiet focus on the work is enough."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.4724,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after he has lost his kingdom. She sees him giving up and tells him not to hold himself in contempt. She says he should not settle for so little, and he must set his mind on what is truly good. She tells him to stop fearing and to pull himself together.",
+     "for_you": "When your parents ask about marriage, you do not have to lower the price of your life to match their question. Choose one small thing today that says your life has its own value."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.3868,
+     "beat": "act",
+     "role_fit": 0.541,
+     "meaning": "Krishna tells Arjuna to raise himself by his own self and not let himself sink. He says the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "for_you": "During your next shift, be on your own side. Lift yourself up when the old voice starts, and do not push yourself down."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.pingala",
+     "title": "Pingala's song: the night she stopped waiting",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Pingala",
+      "Bhishma (narrator)"
+     ],
+     "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+     "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+     "lesson": "Letting go of an expectation can bring the sleep that waiting never will.",
+     "matched": [],
+     "anchor": {
+      "id": "mbh.12.173.64",
+      "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+      "ref_iast": "Mahābhārata, Śānti Parva 173.64",
+      "family": "mbh",
+      "speaker": "Pingala (quoted by Bhishma)",
+      "listener": "(herself)",
+      "setting": "Pingala, left waiting all night by a lover who never came, finally lets go and finds peace.",
+      "sanskrit": "सुखं निराशः स्वपिति नैराश्यं परमं सुखम् / आशामनाशां कृत्वा हि सुखं स्वपिति पिङ्गला",
+      "line": "Pingala let go of her expectation and slept peacefully. Letting go of expectation is the greatest ease.",
+      "translation": "The one free of expectation sleeps in peace; freedom from expectation is the highest happiness. Turning hope into no-hope, Pingala sleeps peacefully.",
+      "why": "Letting go of an expectation can bring the sleep that waiting never will.",
+      "misuse": "This is about clinging to an outcome, not about giving up hope in life.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "mbh.p.pingala",
+       "title": "Pingala's song: the night she stopped waiting",
+       "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+       "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+       "lesson": "Letting go of an expectation can bring the sleep that waiting never will."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Pingala waited all night for a man who never came",
+     "teaser": "Pingala waited all night for a man who never came",
+     "for_you": "You send money home and work the night shift, but you are waiting for a marriage that will never arrive on your schedule. Let go of the expectation that your worth is tied to a wedding date. The peace you are chasing is in releasing that hold, not in the footsteps that never come."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The test you never agreed to",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 182,
+   "llm": 6650,
+   "total": 14658,
+   "select": 7818
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are working a night shift and your mind will not stop. You feel ashamed of who you are and restless in your own skin. You are trying to rest but the phone call is playing over and over."
+  ],
+  [
+   "scene",
+   "Arjuna stands in the middle of the battlefield. He is frozen. He cannot lift his bow because he is trapped in the rules of family and status. Krishna sees him and speaks. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna tells Arjuna that every path has flaws. Doing your own work, even if it is imperfect, is better than doing someone else's perfectly. It is about finding an honest fit with your own nature. This is easier said than done because your mind wants to compare your path to a marriage clock it never agreed to follow. But the work that is truly yours, done with honest effort, is better than another's path done perfectly but without your own truth in it."
+  ],
+  [
+   "for_you",
+   "After a long night shift, your mind replays the call. Your own path is the work you do and the money you send home, not the marriage clock they hang up on you."
+  ],
+  [
+   "close",
+   "What if your own path was already enough?"
+  ]
+ ],
+ "depth": {
+  "life": "After a long night shift, your mind replays the call. Your own path is the work you do and the money you send home, not the marriage clock they hang up on you. You feel ashamed of who you are, as if your parents' pride is a debt you can never repay.",
+  "points": "The voice in your head that says you are failing is not your own. It is the echo of a test you never agreed to take. You are not born to fill a role written for someone else. You are born to your own nature, which is working the night shift and caring for your family.",
+  "practice": "Name one thing you did today that belongs to your own nature and not to anyone else's script.",
+  "question": "What if the test is not yours to pass?"
+ }
+}

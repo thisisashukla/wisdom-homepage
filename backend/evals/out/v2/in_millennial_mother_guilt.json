@@ -1,0 +1,502 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "guilty and torn",
+   "bridge": "The verdict you keep passing on yourself for being pulled in two directions is what the texts call the mind turned into its own enemy.",
+   "week_thesis": "This week moves you from the verdict you keep passing on yourself to the truth that both parts of you are whole.",
+   "week_beats": {
+    "hook": "You recognise the guilt and the split, named without judgement.",
+    "diagnose": "You see that it is the verdict, not the hours, that breaks you in the car.",
+    "steady": "You hold that a mother and a professional are both whole, and the love does not shrink because the hands are busy.",
+    "act": "You try being fully present with your daughter in the moments you have, and letting the office be fully yours when you are there."
+   },
+   "confidence": 0.75,
+   "core_struggle": "A working mother of two who is back at work and feels she is half a mother and half a professional after her daughter asked why she is not like other moms.",
+   "mirror": "You give the day everything to both places, and in the car you feel you have given each one the leftovers.",
+   "insight": "It isn't the hours that split you. It's the verdict you keep passing on yourself, as if a mother and a professional could not both be fully you.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "expectation_of_others",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.575,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The guilt of being pulled in two directions and feeling you have given each one the leftovers, with a child's question that broke you in the car.",
+    "diagnose": "When the mind turns against itself, self-blame grows from believing a divided life is a failed life; the guilt is the verdict, not the hours.",
+    "steady": "A mother's love and a professional's skill are not two halves of you; they are both whole, and the love does not shrink because the hands are busy.",
+    "act": "Lift yourself up instead of pushing yourself down; be present with your daughter in the moments you have, and let the office be fully yours when you are there.",
+    "story": "A mother who was pulled between a child's need and a duty she could not leave, who found that her love was not less because her hands were full."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The verdict you keep passing",
+    "More than half",
+    "The love that does not shrink"
+   ],
+   "seat": "",
+   "life_context": "A woman in her mid-thirties with two young children, back at work as a project manager; every day she feels split between the office and home, and her daughter's question about school events broke her in the car.",
+   "details": [
+    "back at work after second baby",
+    "feels half a mother and half a project manager",
+    "daughter asked why she doesn't come to school like other moms",
+    "cried in the car after the question"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "seat:missing",
+    "retried:2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.006,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless, turbulent, powerful and stubborn. He says it feels as hard to hold as the wind. Krishna does not deny this. He simply says that practice and letting go can train it.",
+     "for_you": "You are holding the wind right now. The guilt and the split are not failures. They are the mind in its natural storm. Let them be there without trying to pin them down."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.1487,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama is in the middle of a long lament about how everything in life falls apart, and Vasishtha lets him speak. Rama says the real enemy is not out there. It is inside. Your own senses turn against you. Truth itself begins to feel false. You end up striking yourself. The mind becomes its own enemy. The text says this is a step of honesty. Naming the emptiness is the first move. It is a question, not a final answer.",
+     "for_you": "Yesterday's verse named the grip. Today, look at the verdict you are passing on yourself in the car. The split is not in your hours. It is in the story you tell about them."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.0304,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari is talking about what it means to stay steady. He says a ball knocked down by a hand flies right back up. As a rule, the misfortunes of people who keep going on the right path do not last. He is talking about the steady person who does not leave the path no matter what people say. The setbacks are temporary. The steady person returns to the path.",
+     "for_you": "Hold this as you move through your day. Your daughter's question was a strike. Now you are the ball. The love you have for her is not less because your hands are busy. It is just in motion, and it will return."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.7.73.chaupai.4",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 73",
+     "family": "rcm",
+     "speaker": "Kakbhushundi",
+     "listener": "Garuda",
+     "setting": "Kakbhushundi, on why being humbled can be a kindness.",
+     "sanskrit": "ताते करहिं कृपानिधि दूरी। सेवक पर ममता अति भूरी॥ जिमि सिसु तन ब्रन होई गोसाईं। मातु चिराव कठिन की नाईं ॥ जदपि प्रथम दुख पावइ रोवइ बाल अधीर। ब्याधि नास हित जननी गनति न सो सिसु पीर॥ 74 क॥",
+     "line": "A mother has the boil lanced though the child cries. Some humbling is like that.",
+     "translation": "So the merciful one removes it, for he loves his servant deeply. When a boil forms on a child's body, the mother has it lanced as if she were hard-hearted. Though the child suffers at first and cries out, the mother, to cure the illness, pays no heed to that pain.",
+     "why": "Pride is taken from us painfully, for our good; what remains is what matters.",
+     "misuse": "Not every pain is for your good; don't use this to excuse harm done to anyone.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.kakbhushundi_pride",
+      "title": "Kakbhushundi and the child Ram",
+      "summary": "Kakbhushundi used to visit Ayodhya to watch Ram as a child. Once he doubted that a toddler chasing a crow could be God; Ram reached for him across every world, and he saw universes inside the child's mouth. Humbled, he was offered every power and chose devotion, since comforts without it are a feast without salt. Ram explains that pride is lanced from those he loves, as a mother lances a child's boil.",
+      "story_hook": "The crow kept stealing scraps from a toddler in a palace courtyard, until the toddler reached for him.",
+      "lesson": "Pride is taken from us painfully, for our good; what remains is what matters."
+     },
+     "score": 2.9709,
+     "beat": "steady",
+     "role_fit": 0.455,
+     "meaning": "Kakbhushundi, the devoted crow-sage, once watched the child Ram in Ayodhya. He doubted that a toddler chasing a crow could be God, and Ram reached for him across every world, showing him universes inside a child's mouth. Humbled, he was offered every power and chose devotion alone. In that moment, Ram explained that he lances the boils of pride from those he loves, just as a mother lances a painful boil on her child. She pays no heed to the crying because she is curing the illness.",
+     "for_you": "Your daughter's question opened a sore you already knew was there. You do not have to choose between being her mother and being a manager. In the moments you have with her, be fully there. At work, let the project be fully yours. The love you give does not shrink when your hands are busy."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.4569,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula found her son Sanjaya lying defeated after losing his kingdom. He had given up and accepted a small, quiet life. She shamed him, then reasoned, then encouraged him until he rose to fight again. She told him not to hold himself in contempt or settle for little. Set his mind on what is truly good and stop fearing. Past failure does not define you. Results are uncertain, but those who never try never succeed. You can hold that you are not half a mother or half a manager.",
+     "for_you": "Yesterday you named the pain. Today, set your mind on one small thing you can do. When you are with your daughter, let the office be fully yours when you are there. Be fully present with her in the moments you have."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.1905,
+     "beat": "act",
+     "role_fit": 0.541,
+     "meaning": "Krishna tells Arjuna that you can be your own best friend or your own worst enemy. He says to raise yourself by your own self and not let yourself sink. The self alone is the friend of the self, and the self alone is the enemy of the self. This is not about being alone or never asking for help. It is about not abandoning yourself when you are in pain. You can choose to be your own friend. You can choose to lift yourself up instead of pushing yourself down.",
+     "for_you": "The verdict you keep passing on yourself is the enemy. Be your own friend. When you are with your daughter, let her see your full self. When you are at work, let your full self be there. You are not half. You are whole, and you can choose to be your own friend."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "present_parent",
+        "label": "I'm physically home but not present with my kids"
+       },
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "When you are with your children, let your mind stay there. The grandest thing about them is the ordinary, dusty hours of play. You do not need to be the perfect mother or the flawless manager in that exact moment. Just be with them, and let that ordinary presence be enough."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The verdict you keep passing",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 162,
+   "llm": 5025,
+   "total": 15165,
+   "select": 9971
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting in the car after a hard question from your daughter, and the guilt is heavy. You feel torn between the office and the children, and the verdict you pass on yourself is loud."
+  ],
+  [
+   "scene",
+   "Arjuna is on a battlefield, speaking to his friend and guide, Krishna. He is overwhelmed by grief and the weight of his choices. He tells Krishna that the mind is restless, turbulent, powerful and stubborn. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "The mind is hard to hold, and practice and letting go can train it. This is easier said than done because you are trying to pin down a storm. The mind is not your enemy when it is restless. It becomes the enemy only when you pass a verdict on yourself for feeling pulled in two directions."
+  ],
+  [
+   "for_you",
+   "Let the guilt and the split be there without trying to pin them down. You do not have to hold the wind still."
+  ],
+  [
+   "close",
+   "Can you let the wind blow and still stand your ground?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit at your desk, the phone in your hand, and feel the two halves of your life pulling in different directions. Your daughter's question echoes in the car, and the guilt settles deep. You are trying to be both a mother and a project manager, but you feel like neither is fully you.",
+  "points": "The mind is naturally stormy and hard to hold. The guilt and the split are not failures. They are the mind in its natural storm. The verdict you keep passing on yourself is what makes the storm feel like a disaster.",
+  "practice": "Sit for five minutes and let the thoughts of work and home be there without judging them.",
+  "question": "What would it feel like to let the storm be there without trying to hold it?"
+ }
+}

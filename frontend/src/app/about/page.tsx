@@ -412,7 +412,7 @@ export default function AboutPage() {
         <p>
           <a href="/">Wisdom</a> &middot; <a href="/blogs">Blog</a> &middot;{' '}
           <a href="/about">About</a> &middot;{' '}
-          <a href="https://apps.apple.com/us/app/wisdom-eternal-quotes/id6747684125" target="_blank" rel="noopener">App Store</a>
+          <a href="https://apps.apple.com/app/id6747684125" target="_blank" rel="noopener">App Store</a>
         </p>
         <p style={{ marginTop: 10 }}>
           <span>&copy;</span> 2026 Wisdom. Written by Ankur Shukla.

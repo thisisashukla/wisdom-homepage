@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Karma in the Bhagavad Gita — The Real Meaning + 7 Key Verses (Chapter 3 Explained) | Wisdom",
+  title: "Karma in the Bhagavad Gita — The Real Meaning + 7 Key Verses (Chapter 3 Explained)",
   description: "Karma is not cosmic payback. Chapter 3 of the Bhagavad Gita defines it precisely: act without attachment to results. The real meaning of karma, plus 7 shlokas on karma from the Gita with Sanskrit and English meaning.",
   keywords: "karma meaning in bhagavad gita, what is karma, karma definition, bhagavad gita karma yoga, what does karma mean in hinduism, karma in gita, karma meaning hindi, karma actual meaning, nishkama karma, karma yoga chapter 3, karma phala meaning, bhagavad gita 2.47 meaning",
   openGraph: {
@@ -739,12 +740,12 @@ export default function KarmaMeaningPage() {
         </div>
     </div>
 
-    <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Gita Karma Meaning"} />
+    <VerseFunnelCTA variant="chapter" locale="en" pageName={"Gita Karma Meaning"} />
 
 
     <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
     </footer>
 
     {/* Schema Markup */}

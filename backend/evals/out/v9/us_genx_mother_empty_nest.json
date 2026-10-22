@@ -1,0 +1,523 @@
+{
+ "persona": {
+  "id": "us_genx_mother_empty_nest",
+  "market": "USA (Texas)",
+  "generation": "Gen X",
+  "gender": "woman",
+  "who": "52, physician in Houston, came from Chennai at 26. Younger son just left for college. Marriage is fine but quiet. Mother in Chennai has early dementia.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "parent_health"
+  },
+  "note": "dropped my younger one at college last week and drove home 4 hours in silence. my amma in Chennai doesn't always recognise me on video calls now. I'm between two people who don't need me the way they did",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and untethered",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "Seven days from a mind that has no shape to one that can hold the grief without letting it become the whole of you.",
+   "week_beats": {
+    "hook": "You recognise the grief and the quiet, named without telling you to be strong.",
+    "diagnose": "You see that it is the bond itself, now changed, that is aching, and the mind has no shape for a day without it.",
+    "steady": "You hold that what came together must part, and the love was real, so the grief is real too.",
+    "act": "You try speaking to the one you lost, or writing what you feel, and find one small way to let the love rest.",
+    "story": "A son who left his own father to care for his mother shows you that grief is the last act of love."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.75,
+   "core_struggle": "Their child has left for college and their mother in Chennai no longer recognises them on video; they feel needed less by both and the silence of the drive home will not settle.",
+   "mirror": "You gave the day to two people, and now the car is quiet and your mother's eyes pass over you.",
+   "insight": "The ache is this big because your love was this real. Grief is love that has nowhere left to go.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 2.06,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.365,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.44,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet of a drive home after a goodbye, and the grief of a mother who no longer recognises you, leaving the mind with no shape to settle into.",
+    "diagnose": "Grief is love with nowhere to go; when what we love changes or leaves, the heart aches because the bond was real, and the mind has no shape for a day without it.",
+    "steady": "What comes together must part; the bond was real and so is the grief, and neither can be taken away from you.",
+    "act": "Let the grief move through you; speak to the one you lost, write what you feel, and find one small way to let the love go somewhere it can rest.",
+    "story": "A son who left his own father to care for his mother, and who learned that grief is the last act of love, not the end of it."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The bond and the letting go",
+    "The shape of a day without them",
+    "More than the roles you held"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "dropped younger child at college",
+    "drove home four hours in silence",
+    "mother in Chennai no longer fully recognises them on video",
+    "feels needed less by both"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "insight:template",
+    "seat:missing",
+    "week_fit:8=0.3,40=0.6,27=0.6,193=0.6,15=0.0,1=0.6",
+    "week_fit:swapped=2",
+    "retried:1",
+    "redo:3",
+    "redo_fixed:0",
+    "dropped:repeat=3,soft_kept=3",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:unpack=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.27",
+     "ref": "Bhagavad Gita 2.27",
+     "ref_iast": "Bhagavad Gītā 2.27",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च । तस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि ॥",
+     "line": "Whatever is born will die, and what dies is born again. Don't torment yourself over the unavoidable.",
+     "translation": "Death is certain for the one who is born, and birth is certain for the one who dies. So you should not grieve over what cannot be avoided.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a reason to stop caring for the sick or to rush someone's mourning.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.082,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna speaks to Arjuna after the great war, when grief has stopped him from moving. He reminds him that every body is born and must pass away, and that what truly lives inside us never begins and never ends. The grief is real, but it belongs to the changing body, not to the part of us that endures. The sorrow is heavy because the love was real, yet the one who is loved does not vanish. The ache is this big because your love was this real.",
+     "for_you": "The silence on that drive home is the sound of a love that has run out of place. Let that silence sit with you. It is the space where your love still lives, even when it has nowhere left to go."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.9675,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "King Janaka, grieving the loss of his family and wealth, asks the sage Ashma how to bear such pain. Ashma tells him that sorrow comes from what we lose and what we did not want. Meetings end, and days do not return. Yet in the middle of this, he asks you to turn inward and steady your mind by asking where you came from, where you are going, and who you are, so that your grief does not break you.",
+     "for_you": "The silence on the drive home and the mother who no longer sees you on the screen are both real losses. The bond itself has changed shape, and your mind has no shape for a day without that presence."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.193",
+     "ref": "Rahim doha 193",
+     "ref_iast": "Rahīm dohā 193",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on remembrance.",
+     "sanskrit": "रहिमन सुधि सबते भली, लगै जो बारम्बार। बिछुरे मानुष फिरि मिलैं, यहै जानि अवतार॥",
+     "line": "Remembering is a kind of nearness. People who were parted do meet again.",
+     "translation": "Rahim says: remembering is best of all, when it comes again and again. People who were separated meet again; know that this is why God takes birth.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": null,
+     "score": 3.2714,
+     "beat": "steady",
+     "role_fit": 0.495,
+     "meaning": "Rahim, the poet, sits with you and speaks of a quiet truth. He says that when people are separated by distance or death, they do not truly vanish. Remembrance is a kind of nearness. It is a bridge built of memory that brings you back to them again and again. He believes this is why God takes birth, to close the gap between those who were parted. The love you hold for your child and your mother is not gone. It lives in the remembering, and in that remembering, you meet them once more.",
+     "for_you": "On that silent drive home, let your mind hold the image of your child at college, not the silence that follows. Let your mother's face on the screen be met with the memory of her smile, not the loss of recognition. Let the remembering be your nearness today."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.26.29",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 26.29",
+     "family": "mbh",
+     "speaker": "Vyasa",
+     "listener": "Yudhishthira",
+     "setting": "The sage Vyasa consoles Yudhishthira, who wants to starve himself to death in grief.",
+     "sanskrit": "संयोगा विप्रयोगाश्च जातानां प्राणिनां ध्रुवम् / बुद्धुदा इव तोयेषु भवन्ति न भवन्ति च",
+     "line": "Meeting and parting come to everyone. Like bubbles on water, they rise and they vanish.",
+     "translation": "For every living being, meeting and parting are certain. Like bubbles on water, they appear and are gone.",
+     "why": "Guilt and grief are real, but they are not the end. The good you do next counts.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yudhishthira_grief",
+      "title": "After the war: Yudhishthira's grief and his family's counsel",
+      "summary": "Victorious but shattered by the deaths of kin, Yudhishthira wants to give up the throne for the forest. Arjuna, Bhima, Draupadi, Nakula, the sage Devasthana and Vyasa each argue with him, about duty, guilt, grief and the shortness of life, until he agrees to rule.",
+      "story_hook": "He had won the war, and all Yudhishthira wanted was to walk into the forest and never come back.",
+      "lesson": "Guilt and grief are real, but they are not the end. The good you do next counts."
+     },
+     "score": 3.1987,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "After the great war, Yudhishthira is shattered. He wants to leave the throne and die of grief. His family and the sage Vyasa gather around him. Vyasa speaks to him of the way of things. He tells him that meeting and parting come to everyone. Like bubbles on water, they appear and are gone. He does not tell him to stop feeling. He tells him that grief is real, but it is not the end of the road. The love that was shared was real, and so the pain is real too.",
+     "for_you": "The four hours of silence in the car were not empty. They were full of the love that has no place left to go. That love was real, and so the ache is real too. Today, let the car ride be what it is. You do not have to fix the silence."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.55.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 55",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Ram",
+     "setting": "Kausalya, choosing not to hold her son back, sends him into exile with her blessing.",
+     "sanskrit": "यह बिचारि नहिं करउँ हठ झूठ सनेहु बढ़ाइ। मानि मातु कर नात बलि सुरति बिसरि जनि जाइ ॥",
+     "line": "I won't hold you back with false affection. Go, son. Just don't forget your mother.",
+     "translation": "Thinking this over, I will not insist out of false affection. I bless you, son; only keep the bond of a mother, and don't forget me.",
+     "why": "Letting a child go with your blessing is love at its hardest.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.ram_kausalya",
+      "title": "Kausalya lets her son go",
+      "summary": "Ram comes to his mother as she is preparing for his coronation. Torn between duty and love, she decides not to hold him back with 'false affection', blesses him and asks only that he not forget her. As he leaves she wonders aloud whether she will live to see his face again.",
+      "story_hook": "She had the sweets ready for his coronation when he came to say goodbye.",
+      "lesson": "Letting a child go with your blessing is love at its hardest."
+     },
+     "score": 3.2035,
+     "beat": "act",
+     "role_fit": 0.498,
+     "meaning": "In the Ramcharitmanas, Kausalya faces the hardest moment of her life. Her son Ram comes to her, ready to leave for the forest. She could hold him back with false affection. She could make him stay. But she chooses love at its hardest. She tells him to go, but to keep the bond of a mother. She asks only that he not forget her. She lets him go with her blessing.",
+     "for_you": "You have already let your child go to college. Now you are facing the next letting go, with your mother in Chennai. Today, find one small way to let the love rest. You could write a letter to your mother, or speak to your child, and tell them you are thinking of them."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.119",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.119",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "वृद्धो ज्ञातिस्तथा मित्रमनाथा च स्वसा गुरुः / कुलीनः पण्डित इति रक्ष्या निःस्वः स्वशक्तितः / गृहे वासयितव्यास्ते धन्यमायुष्यमेव च",
+     "line": "An aging relative, a friend in need, a sister with no support: make room for them as you can.",
+     "translation": "An aged relative, a friend, a sister with no one to support her, a teacher, a person of good family or learning who has fallen poor: protect them as you are able, and give them a place in your home.",
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 2.8114,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Bhishma is teaching Yudhishthira how to live well. He says that a good life is built from small, daily choices. You protect the people who need you. You give them a place in your home. You speak kindly and never mock anyone. A cruel word stays in the heart. You make room for those who have no one else.",
+     "for_you": "You made room for your child and your mother. Now the rooms are quiet. Make room today for the love that is still here, even if it looks different. Let it rest in the silence of that drive home."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.janaka_vidai",
+     "title": "Janaka says goodbye to his daughter",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Janaka",
+      "Sunayana",
+      "Sita",
+      "Ram"
+     ],
+     "story_hook": "He was the most detached king in the world, and his daughter was leaving.",
+     "summary": "After the wedding the time comes for Sita to leave Mithila. The palace, even the pet parrots, are in tears. Janaka, known everywhere for his detachment, holds his daughter and loses all composure; his ministers have to remind him it is time.",
+     "lesson": "Even the wisest parent breaks a little when a child leaves home; that is love.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.318.chaupai.3",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 318",
+      "family": "rcm",
+      "speaker": "Narrator",
+      "listener": "the reader",
+      "setting": "King Janaka, famous for his detachment, as his daughter Sita leaves home after her wedding.",
+      "sanskrit": "सीय बिलोकि धीरता भागी। रहे कहावत परम बिरागी॥ लीन्हि रायँ उर लाइ जानकी। मिटी महामरजाद ग्यान की ॥",
+      "line": "Known for his calm, he held his daughter close as she left, and all his wisdom gave way.",
+      "translation": "He was known as supremely detached, yet on seeing Sita his composure fled. The king held Janaki to his heart, and the great banks of his wisdom gave way.",
+      "why": "Even the wisest parent breaks a little when a child leaves home; that is love.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       },
+       {
+        "id": "empty_nest",
+        "label": "My kids have left home"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.janaka_vidai",
+       "title": "Janaka says goodbye to his daughter",
+       "summary": "After the wedding the time comes for Sita to leave Mithila. The palace, even the pet parrots, are in tears. Janaka, known everywhere for his detachment, holds his daughter and loses all composure; his ministers have to remind him it is time.",
+       "story_hook": "He was the most detached king in the world, and his daughter was leaving.",
+       "lesson": "Even the wisest parent breaks a little when a child leaves home; that is love."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Janaka was the most detached king in the world, until his daughter Sita left home",
+     "teaser": "Janaka was the most detached king in the world, until his daughter Sita left home",
+     "for_you": "Janaka let go of his daughter. His wisdom fell away because his love was true. You can do the same. Let the grief show, and let it be the last act of love you give them."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The bond and the letting go",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 194,
+   "llm": 4906,
+   "total": 12889,
+   "select": 7778
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The four hour drive home was silent. You dropped your younger child at college and then drove back alone. You feel needed less by both, and that emptiness is sitting with you right now. The grief is real."
+  ],
+  [
+   "scene",
+   "Krishna speaks to Arjuna on a battlefield, where the great war has stopped Arjuna from moving forward because of overwhelming grief. Arjuna is grieving for those he loves who are about to die. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च, तस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि."
+  ],
+  [
+   "line",
+   "In plain words: Whatever is born will die, and what dies is born again. Don't torment yourself over the unavoidable."
+  ],
+  [
+   "unpack",
+   "Krishna speaks to Arjuna after the great war, when grief has stopped him from moving. He reminds him that every body is born and must pass away, and that what truly lives inside us never begins and never ends. The grief is real, but it belongs to the changing body, not to the part of us that endures. The sorrow is heavy because the love was real, yet the one who is loved does not vanish. The ache is this big because your love was this real."
+  ],
+  [
+   "for_you",
+   "Your mother in Chennai no longer recognises you on video, and your child is gone to college. That is a real loss. The silence in the car is the sound of a love that has run out of place. Let that silence sit with you. It is the space where your love still lives, even when it has nowhere left to go."
+  ],
+  [
+   "close",
+   "The love is still there. The self that loves is not lost."
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": "The body you drove home is not the permanent you. The recognition that fades in your mother and the distance that grows with your child belong to forms that pass, like clothes. The grief is real because the love was real, but the love itself does not end with the form.",
+  "practice": "Sit in the car after the next drop, or after the next call, and let the silence hold the grief without trying to fill it with a plan or a phone call.",
+  "question": "If the love you gave is not tied to being recognised, what does it mean to love without a return?"
+ }
+}

@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita 2.47: Karmanye Vadhikaraste Meaning Explained | Wisdom",
+  title: "Bhagavad Gita 2.47: Karmanye Vadhikaraste Meaning Explained",
   description: "BG 2.47 is the Gita's most famous verse. Four instructions in one line: act, don't own the fruit, don't act for the fruit, don't use this to justify inaction. Full Sanskrit, transliteration, and meaning.",
   keywords: "karmanye vadhikaraste meaning, bhagavad gita 2.47 meaning in english, bhagavad gita 2.47 meaning in hindi, karmanyevadhikaraste te ma phaleshu kadachana, bhagavad gita verse on action, karma yoga 2.47, action without attachment gita, bhagavad gita most famous verse",
   openGraph: {
@@ -773,12 +774,12 @@ export default function BG247Page() {
       </div>
 
       <div className="content">
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"BG 2.47 Karmanye Vadhikaraste"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"BG 2.47 Karmanye Vadhikaraste"} />
       </div>
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="BG 2.47 Karmanye Vadhikaraste" />

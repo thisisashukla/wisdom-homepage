@@ -1,0 +1,507 @@
+{
+ "persona": {
+  "id": "uk_genx_sikh_business",
+  "market": "UK (Leicester)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "47, runs the family cash-and-carry in Leicester, second generation, Punjabi background. Father (78) still comes in and overrules him in front of staff.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "I've run this business for 15 years and my dad still walks in and changes my decisions in front of the staff. I'm 47. He's 78. I can't say anything because it's his business in his head and he's my father",
+  "note_source": "voice",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "angry and trapped",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being overruled by your father in front of your staff to holding your ground with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being seen as a child in your own business, and the anger of it, named without blame.",
+    "story": "A son who was expected to obey his father's every word shows you what standing in your own dharma looks like."
+   },
+   "confidence": 0.8,
+   "core_struggle": "A -year-old who has run a business for years is being overruled and dismissed by her -year-old father in front of her staff, and feels unable to speak up.",
+   "mirror": "You run the business all day, and then your father walks in and changes what you decided in front of everyone.",
+   "insight": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 1.6,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.25,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.691,
+     "source": "note"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.56,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "I need to set boundaries with family. Being seen as less than you are by the people who ought to know you best, and the anger of watching the life you built get called a phase.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what he sees; your worth was never his to take back, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing to him, gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture he holds.",
+    "story": "A son who was expected to obey his father's every word, yet who stood in his own dharma and found his footing when the time came."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The picture he holds",
+    "Whose business it is",
+    "More than his shadow"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs a business for years",
+    "father walks in and overrides decisions in front of staff"
+   ],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "flags": [
+    "hook:hook_gives_advice",
+    "insight:template",
+    "day1_other_text:mbh",
+    "retried:3",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:accept=1,preachy=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "mbh.12.80.36",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 80.36",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma tells Yudhishthira that relatives are difficult, and still indispensable.",
+     "sanskrit": "निकृतस्य नरैरन्यैर्ज्ञातिरेव परायणम् / नान्यो निकारं सहते ज्ञातिर्ज्ञातेः कदाचन",
+     "line": "When the world wrongs you, family is the refuge. Nobody feels your hurt like they do.",
+     "translation": "When others wrong you, your own people are your refuge. No one else will stand up against your humiliation the way family does.",
+     "why": "A true friend isn't stung by your success. Family is difficult, and still your refuge.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.friends_kin",
+      "title": "Bhishma on friends and kinsmen",
+      "summary": "Bhishma explains the kinds of friends, how to recognise the best friend, and the double nature of relatives: they can be rivals, yet when outsiders wrong you, family is your refuge.",
+      "story_hook": "",
+      "lesson": "A true friend isn't stung by your success. Family is difficult, and still your refuge."
+     },
+     "score": 2.9986,
+     "beat": "hook",
+     "role_fit": 0.39,
+     "meaning": "Bhishma is speaking to Yudhishthira, who is newly crowned and already grieving. Bhishma tells him that relatives are difficult to be with, and they can wound you. Still, when the world outside wrongs you, family is your refuge. No one else will feel your humiliation the way they do.",
+     "for_you": "Yesterday's verse named the grip. Today, you feel the full weight of being seen as a child in your own business. That anger is the truth of what is happening to you right now."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      },
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.9677,
+     "beat": "diagnose",
+     "role_fit": 0.16,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, where Arjuna is frozen by doubt. Krishna tells him to act according to his own nature rather than imitating others. To be true to yourself, even with flaws, is safer than living a borrowed life. Borrowed roles carry fear, while your own path, however imperfect, brings a steadier footing.",
+     "for_you": "Your father has lived his life, and now he is trying to live yours. That borrowed role is not yours to fill. Your own path, the one you have built at work and at home, is the only one that belongs to you. Let that truth stand."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.16",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 16",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Kings who slight scholars",
+     "setting": "From the section praising learning, addressed to proud rulers.",
+     "sanskrit": "हर्तुर्याति न गोचरं किमपि शं पुष्णाति यत् सर्वदा- ऽप्यर्थिभ्यः प्रतिपाद्यमानमनिशं प्राप्नोति वृद्धिं पराम् । कल्पान्तेष्वपि न प्रयाति निधनं विद्याख्यमन्तर्धनं येषां तान् प्रति मानमुज्झत नृपाः कस्तैः सह स्पर्धते ॥",
+     "line": "Learning is wealth no thief can see. It grows when you give it away and never perishes.",
+     "translation": "It never comes within a thief's sight; it always nourishes some deep good; given to those who ask, it grows greater; even at the end of an age it does not perish. Kings, drop your pride before those who own this inner wealth called learning. Who can compete with them?",
+     "why": "What you learn and how you speak are the wealth no one can take from you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.vidvat",
+      "title": "Nitishatakam: In praise of learning and the learned",
+      "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+      "story_hook": "",
+      "lesson": "What you learn and how you speak are the wealth no one can take from you."
+     },
+     "score": 3.216,
+     "beat": "steady",
+     "role_fit": 0.544,
+     "meaning": "Bhartrihari speaks to proud kings who slight scholars. He tells them that learning is a wealth no thief can steal, that it grows when given away, and that it never perishes. He asks the kings to drop their pride before those who own this inner wealth and its speech, for no one can compete with them.",
+     "for_you": "Your years of running the business are that wealth. It is the knowledge you built, the decisions you made, the life you built while raising your children. Your father cannot see it and cannot take it. This is what you hold onto when he walks in and speaks over you in front of your staff."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.106",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 106",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on action.",
+     "sanskrit": "कदर्थितस्यापि हि धैर्यवृत्तेर्न शक्यते धैर्यगुणः प्रमार्ष्टुम् । अधोमुखस्यापि कृतस्य वह्नेर्नाधः शिखा याति कदाचिदेव ॥",
+     "line": "Turn a torch upside down and its flame still rises. Steadiness survives humiliation.",
+     "translation": "Even when harassed, the steadfast cannot be robbed of their steadiness. Hold a torch upside down: its flame never points downward.",
+     "why": "Your actions are the one thing fate itself must answer to.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      },
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.karma",
+      "title": "Nitishatakam: On action",
+      "summary": "The answer to the fate section: even fate only delivers the fruit of actions, so bow to action itself. Weigh outcomes before rash deeds, keep steady under humiliation, and speak kindly. The closing verses are miscellaneous maxims in some editions.",
+      "story_hook": "",
+      "lesson": "Your actions are the one thing fate itself must answer to."
+     },
+     "score": 3.2275,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Bhartrihari speaks to the reader about the steadfast nature of action. He says that even when someone is harassed, the steady person cannot be robbed of their inner steadiness. He uses the image of a torch held upside down. Its flame still rises, never pointing downward. What comes next is the idea that your actions are the one thing fate itself must answer to.",
+     "for_you": "Your father's words are a wind, but your steady flame is your daily work. When he steps in and overrides a decision in front of your staff, let your next action be the one that shows who is in charge. Let your steady hand on the work be your answer."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.4582,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Vidula speaks to her son Sanjaya, who lies defeated after losing his kingdom. She tells him not to hold himself in contempt or settle for little. She urges him to set his mind on what is truly good and to stop fearing. Past loss does not define him, and only those who act can find a way forward.",
+     "for_you": "You have run this business for years. That is not little. The humiliation you felt today does not erase your track record. Set your mind on what is truly good for the company, and stop letting the fear of his reaction silence you."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.103.34",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 103.34",
+     "family": "mbh",
+     "speaker": "Brihaspati (retold by Bhishma)",
+     "listener": "Indra",
+     "setting": "Brihaspati counsels Indra on how to hold authority among difficult people.",
+     "sanskrit": "मृदुमप्यवमन्यन्ते तीक्ष्णादुद्विजते जनः / मातीक्ष्णो मा मृदुर्भूस्त्वं तीक्ष्णो भव मृदुर्भव",
+     "line": "People walk over the soft and fear the harsh. Be firm when it's needed, gentle when it's needed.",
+     "translation": "People look down even on the gentle, and they shrink from the harsh. Do not be only harsh, do not be only soft: be firm when firmness is needed and gentle when gentleness is.",
+     "why": null,
+     "misuse": "Firmness here means clarity, not cruelty.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": null,
+     "score": 3.2345,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "Brihaspati speaks to Indra after the gods have lost their power over the demons. He tells him that softness invites contempt while harshness invites fear. The counsel is not to swing between two extremes. It is to match your response to the moment. When the situation demands it, stand like a rock. When it calls for it, speak with care. This is the way a leader keeps their ground without losing their humanity.",
+     "for_you": "Your father's words in front of your staff were a moment that needed firmness. You did not give it. Tomorrow, when you speak to him, match the moment. Stand clear and calm. Let your words be the rock, not your anger."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_bharat_resolution",
+     "title": "Ram and Bharat settle it",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Bharat",
+      "Vasishtha",
+      "Janaka"
+     ],
+     "story_hook": "Both brothers wanted the other to be king.",
+     "summary": "Ram tells Bharat that keeping their father's word is the duty of both brothers, and that the leader must be like the mouth, taking in only to nourish the whole body. He asks him to rule in his place, knowing it is the harder task. Bharat accepts, asking only for Ram's sandals to keep him going.",
+     "lesson": "A good resolution gives each person a role and something to hold on to.",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.2.292.chaupai.4",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 292",
+      "family": "rcm",
+      "speaker": "Ram",
+      "listener": "Bharat",
+      "setting": "Ram asks Bharat to rule in his place for fourteen years.",
+      "sanskrit": "जानि तुम्हहि मृदु कहउँ कठोरा। कुसमयँ तात न अनुचित मोरा॥ होहिं कुठायँ सुबंधु सहाए। ओड़िअहिं हाथ असनिहु के धाए ॥",
+      "line": "In bad times, good siblings are the hands that rise to block the blow.",
+      "translation": "Knowing you are gentle, I still say something hard; in hard times, brother, it isn't wrong of me. In bad times it is good brothers who help; it is the hands that rise to block a thunderbolt.",
+      "why": "A good resolution gives each person a role and something to hold on to.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "rcm.p.ram_bharat_resolution",
+       "title": "Ram and Bharat settle it",
+       "summary": "Ram tells Bharat that keeping their father's word is the duty of both brothers, and that the leader must be like the mouth, taking in only to nourish the whole body. He asks him to rule in his place, knowing it is the harder task. Bharat accepts, asking only for Ram's sandals to keep him going.",
+       "story_hook": "Both brothers wanted the other to be king.",
+       "lesson": "A good resolution gives each person a role and something to hold on to."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram and Bharat each wanted the other to be king",
+     "teaser": "Ram and Bharat each wanted the other to be king",
+     "for_you": "Bharat chose the harder path of ruling in his brother's name. Your father has handed you a role that feels small. You get to choose your own role, and you get to keep your sandals. You do not need his approval to be whole."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The picture he holds",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 133,
+   "llm": 4454,
+   "total": 13411,
+   "select": 8815
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying a quiet rage. It is the anger of being seen as smaller than you are. You have built something with your hands, and it is being dismantled in front of people who should know better."
+  ],
+  [
+   "scene",
+   "Bhishma is speaking to Yudhishthira, who has just taken the throne and is already grieving. Bhishma tells him that relatives are difficult to be with, and they can wound you. Still, when the world outside wrongs you, family is your refuge. No one else will feel your humiliation the way they do. Bhishma said:"
+  ],
+  [
+   "sanskrit",
+   "निकृतस्य नरैरन्यैर्ज्ञातिरेव परायणम् / नान्यो निकारं सहते ज्ञातिर्ज्ञातेः कदाचन."
+  ],
+  [
+   "line",
+   "In plain words: When the world wrongs you, family is the refuge. Nobody feels your hurt like they do."
+  ],
+  [
+   "unpack",
+   "This is a hard truth. The people who know you best can also hurt you the most. But when the outside world treats you as less than you are, they are the ones who will see the injustice. They will stand up for your worth, not because they always do, but because they know you."
+  ],
+  [
+   "for_you",
+   "Let that anger tell you where your worth is being denied. Your family is the refuge that will see your humiliation and stand with you."
+  ],
+  [
+   "close",
+   "Who in your family sees you as the adult you are?"
+  ]
+ ],
+ "depth": {
+  "life": "Your father walks into your business and overrides your decisions in front of your staff. You feel angry and trapped. You want to speak up but cannot. You are carrying the weight of being dismissed in the very place you have built.",
+  "points": "Family is difficult and can wound you deeply. Yet when the world wrongs you, your own people are your refuge. No one else will stand against your humiliation the way family does. This is the truth underneath what is happening to you.",
+  "practice": "Sit with your father in silence for one minute before you speak to him. Notice the anger and the fear. Then say exactly one thing you need him to stop doing in front of others.",
+  "question": "What would it mean to be your own refuge first?"
+ }
+}

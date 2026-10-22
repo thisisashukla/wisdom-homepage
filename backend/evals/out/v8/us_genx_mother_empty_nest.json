@@ -1,0 +1,501 @@
+{
+ "persona": {
+  "id": "us_genx_mother_empty_nest",
+  "market": "USA (Texas)",
+  "generation": "Gen X",
+  "gender": "woman",
+  "who": "52, physician in Houston, came from Chennai at 26. Younger son just left for college. Marriage is fine but quiet. Mother in Chennai has early dementia.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "parent_health"
+  },
+  "note": "dropped my younger one at college last week and drove home 4 hours in silence. my amma in Chennai doesn't always recognise me on video calls now. I'm between two people who don't need me the way they did",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lost and grieving",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "Seven days from feeling unnecessary to remembering that what is real in you cannot be taken by the changing of roles.",
+   "week_beats": {
+    "hook": "You recognise the leaving and the silence, named without blame.",
+    "diagnose": "You see that the grief is love with nowhere to go, and that the belief of being unnecessary is the real wound.",
+    "steady": "You hold that what is real in you cannot be taken by the changing of roles.",
+    "act": "You try speaking the true thing to yourself and finding one thing you do for you, not for either of them.",
+    "story": "A daughter and a mother, both learning that love does not end when the role does, shows you what remains."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.65,
+   "core_struggle": "My parents are getting older far away",
+   "mirror": "You drove four hours in silence and realised both of them have moved on without you.",
+   "insight": "It isn't the silence that hurts. It's the belief that you are only needed, and that when the need ends, you end.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.7,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.485,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.44,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being left behind by the child you raised and the mother you care for, and the quiet that says you are no longer needed by either.",
+    "diagnose": "When a bond is real, its ending is real, and the grief is love with nowhere to go; the mind suffers when it believes its worth is only in what it does for others.",
+    "steady": "What is real in you cannot be taken by the changing of roles; your worth was never theirs to grant, and it does not end when the need does.",
+    "act": "Speak the true thing to yourself, gently and firmly; hold your ground on what is yours, and find one thing you do for you, not for either of them.",
+    "story": "A daughter who cared for her mother in her final years, and a mother who let her child go, shows you that love does not end when the role does."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "No longer needed",
+    "The love that remains",
+    "Not just a role"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "dropped younger child at college last week",
+    "drove home in silence for four hours"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "bridge:copied_example",
+    "core_struggle_fallback",
+    "seat:missing",
+    "retried:2",
+    "dropped:fallback_line=1,missing=2",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bh.vairagya.48",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 48",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'On the Greatness of Time'.",
+     "sanskrit": "वयं येभ्यो जाताश्चिरपरिचिता एव खलु ते समं यैः संवृद्धाः स्मृतिविषयतां तेऽपि गमिताः । इदानीमेते स्मः प्रतिदिवसमासन्नपतना गतास्तुल्यावस्थां सिकतिलनदीतीरतरुभिः ॥",
+     "line": "Our parents are memories, our childhood friends too. Now we stand like trees on a crumbling riverbank.",
+     "translation": "Those who gave us birth are long gone into memory; those with whom we grew up have also passed into memory; and now we, nearer to falling each day, have come to the state of trees on a sandy riverbank.",
+     "why": "Time is passing while you're busy; notice it before it's gone.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.kala",
+      "title": "Vairagyashatakam: On the greatness of Time",
+      "summary": "Time empties cities, houses and courts; the busy never notice it passing; parents and childhood friends become memories. The section ends with life as a play and death as the curtain.",
+      "story_hook": "",
+      "lesson": "Time is passing while you're busy; notice it before it's gone."
+     },
+     "score": 3.2483,
+     "beat": "hook",
+     "role_fit": 0.48,
+     "meaning": "Bhartrihari sits down to write this in the quiet, knowing the reader is listening. They speak of a life already lived, of parents who have become memories, of childhood friends who are gone. The verse says that we stand like trees on a crumbling riverbank, each day nearer to falling. The point is that time is passing while we are busy with our duties, and we must notice it before it is gone. The silence on the drive home is the first sign that the bank is giving way.",
+     "for_you": "The four hours of silence after dropping your younger child at college is the riverbank crumbling under your feet. You feel the ground give way because the need you once had is ending, and you are left standing where the ground used to be."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 2.8409,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "Kausalya speaks to Dasharatha after her grief has passed. She tells him that sorrow wears away a person's steadiness and their ability to judge. In plain terms, the verse says that grief destroys everything, and there is no enemy like it. It proposes that when grief makes us speak harshly to those we love, a quick apology heals more than being right.",
+     "for_you": "The four hours of silence on the drive home were not empty. They were the space where grief wore away your steadiness. Today, see that the belief of being unnecessary is the real wound."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.10",
+     "ref": "Ashtavakra Gita 15.10",
+     "ref_iast": "Aṣṭāvakra Gītā 15.10",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "देहस्तिष्ठतु कल्पान्तं गच्छत्वद्यैव वा पुनः । क्व वृद्धिः क्व च वा हानिस्तव चिन्मात्ररूपिणः ॥",
+     "line": "Whether the body lasts a hundred years or ends today, what you are neither gains nor loses.",
+     "translation": "Let the body last till the end of the age, or let it go today: what gain or loss is that to you, who are pure awareness?",
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 3.1255,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ashtavakra tells Janaka that whether the body lasts a hundred years or ends today, what you are neither gains nor loses. The verse proposes that you are pure awareness, not the roles you play or the body you inhabit. It asks you to rest from endless deliberation and let the waves of life rise and fall without losing yourself.",
+     "for_you": "Hold onto the idea that what is real in you cannot be taken by the changing of roles. Your parents are aging far away, and your children have left home, but the awareness that holds this sorrow is not diminished by any of it. Rest in that."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.27.49",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.49",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "न ह्यहानि निवर्तन्ते न मासा न पुनः समाः / जातानां सर्वभूतानां न पुनर्वै समागमः",
+     "line": "Days don't come back, nor months, nor years. Be here for the ones in front of you.",
+     "translation": "Days do not come back, nor months, nor years. And beings, once parted, do not meet again in the same way.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.0149,
+     "beat": "steady",
+     "role_fit": 0.514,
+     "meaning": "King Janaka asks the sage Ashma how to bear the loss of family and wealth. Ashma answers that pain comes from what we did not want. Meetings end, and days do not return. Grieve for what is gone, then steady the mind by turning inward to who you are. What you are cannot gain or lose anything. Your part is to be present for those still in front of you, not to turn back what has passed.",
+     "for_you": "The four hours of silence on the drive home were real. Let yourself feel that emptiness. Then let your attention settle on your parents, on the life you still hold in your hands. Your part is not to bring the past back, but to meet what is here now."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.1308,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna tells Arjuna on the battlefield that their right is only to the work itself, never to its fruits. Do the work fully, give it everything, but do not let the outcome own you. What comes back is not yours to hold. This is the yoga of action, the steady path through success and failure.",
+     "for_you": "You drove four hours in silence after your child left for college. That silence asked a question. Today, speak the true thing to yourself. Name one small thing you do for you, not for your parents, not for your child. Just for you."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.0819,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": null,
+     "for_you": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "Kausalya wept because her son was gone. Sumitra, whose own son had gone too, sat with her. She did not offer advice. She offered her own ache as a mirror. She said you will see him again, and let go of this grief. Today, let a friend who shares your ache help more than advice."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "No longer needed",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 245,
+   "llm": 5122,
+   "total": 11800,
+   "select": 6421
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The four hours of silence on the drive home are heavy. You are grieving the shift in your own life, the quiet that has opened up now that your younger child is at college. This is a real loss, and it hurts to feel the old ground disappear beneath you."
+  ],
+  [
+   "scene",
+   "Bhartrihari sits down to write this in the quiet, knowing the reader is listening. They speak of a life already lived, of parents who have become memories, of childhood friends who are gone. Bhartrihari said:"
+  ],
+  [
+   "sanskrit",
+   "वयं येभ्यो जाताश्चिरपरिचिता एव खलु ते समं यैः संवृद्धाः स्मृतिविषयतां तेऽपि गमिताः, इदानीमेते स्मः प्रतिदिवसमासन्नपतना गतास्तुल्यावस्थां सिकतिलनदीतीरतरुभिः."
+  ],
+  [
+   "line",
+   "In plain words: Our parents are memories, our childhood friends too. Now we stand like trees on a crumbling riverbank."
+  ],
+  [
+   "unpack",
+   "The verse asks you to notice that time is passing while you are busy with your duties. It is not asking you to stop caring for your parents or your children. It simply asks you to see that roles change, and that your presence is not only in the work you do. The silence is the sound of the bank giving way. This is harder than it sounds, because we are taught to measure our worth by the need we fulfill."
+  ],
+  [
+   "for_you",
+   "When you sit with your parents today, let yourself be there without fixing anything. You do not have to earn your place in the room. Your presence is enough, even when no one is asking for anything."
+  ],
+  [
+   "close",
+   "What remains when the need is gone?"
+  ]
+ ],
+ "depth": {
+  "life": "You are driving home after leaving your younger child at college. The road is empty, the four hours of silence are heavy. You feel the ground give way because the roles you held are ending.",
+  "points": "Time is passing while you are busy. Your parents are memories, your childhood friends too. You stand like trees on a crumbling riverbank, nearer to falling each day.",
+  "practice": "Drive with the windows down. Listen to the air move past your ears instead of filling the car with noise.",
+  "question": "What do you hear when the silence is not filled by a task?"
+ }
+}

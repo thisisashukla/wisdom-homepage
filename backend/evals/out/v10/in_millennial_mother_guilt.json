@@ -1,0 +1,503 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "guilty and split in two",
+   "bridge": "The approval your daughter's question asks for is what the Gita calls praise and blame: they come and go, and they do not touch the self.",
+   "week_thesis": "From being split in two and guilty for it to seeing that your daughter's question is not the measure of your motherhood.",
+   "week_beats": {
+    "hook": "You recognise the split and the guilt, named without judgement.",
+    "diagnose": "You see that it is the need for approval, not the work, that is breaking you.",
+    "steady": "You hold that praise and blame come and go, and they do not touch the self.",
+    "act": "You try letting go of the need to be the mother she compares you to, and be the mother you are in the moments you have.",
+    "story": "A mother who felt she was failing her child shows you what being enough looks like from the inside."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.6,
+   "core_struggle": "A working mother feels she is half a mother and half a PM, and her daughter's question has left her crying in the car.",
+   "mirror": "You give the day everything at work, and at the school gate your daughter asks why you aren't like the other mothers.",
+   "insight": "It isn't the work that makes you half a mother. It is the belief that a good mother is one who is always present, and that belief is what is breaking you.",
+   "mechanism": "need_for_approval",
+   "mechanism_label": "Needing their approval",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.78,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.575,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The feeling of being split in two, and the guilt of not being the mother your daughter sees in other women.",
+    "diagnose": "When your worth depends on your daughter's approval, every question about her day becomes a verdict on your whole life.",
+    "steady": "Praise and blame come and go, but the self they touch is already whole and cannot be divided.",
+    "act": "Let go of the need to be the mother she compares you to; be the mother you are, in the moments you have, and let the rest go.",
+    "story": "A mother who felt she was failing her child, who asked herself what a mother really is, and found that being present in her own way was enough."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The split",
+    "The approval you need",
+    "More than a mother"
+   ],
+   "seat": "a working mother pulled between her job and her daughter's expectations",
+   "life_context": "In her mid-thirties, back at work after her second child; every day she feels pulled in two directions, and her daughter's question about school events left her crying in the car.",
+   "details": [
+    "back at work after second baby",
+    "feels half a mother and half a project manager",
+    "daughter asked why she doesn't come to school events",
+    "cried in the car"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_fit:8=0.0,43=0.3,19=0.0,84=0.0,7=0.3,45=0.0",
+    "week_fit:swapped=6",
+    "retried:1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:for_you=verdict,unpack=blame",
+    "script:written:3/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.0937,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna, standing on the battlefield, tells Krishna that the mind is restless and stubborn, as hard to hold as the wind. Krishna does not tell him to fight harder. He tells him that the mind is difficult, but that steady practice and letting go are what train it. The mind will not stay still by force. It settles when you stop gripping it.",
+     "for_you": "Your mind is storming right now, pulled between the office and your daughter. You do not need to force it into stillness. Let it be restless for a moment, and trust that your steady presence is already the practice that will train it."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.11.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 11.6",
+     "family": "yv",
+     "speaker": "Janaka",
+     "listener": "his own mind",
+     "setting": "Janaka, having chosen to keep ruling, talks gently to his own restless mind at night.",
+     "sanskrit": "यथा यथा विकल्पौघान्संकल्पयसि हेलया । तथा तथैति स्फारत्वं संसारस्तव चिन्तया ॥",
+     "line": "The more scenarios you spin, the bigger your world of worry grows.",
+     "translation": "The more you casually spin up fancies and possibilities, the more your world of troubles swells, through your own worrying.",
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 2.9167,
+     "beat": "diagnose",
+     "role_fit": 0.526,
+     "meaning": "King Janaka, after hearing the sages in his garden, questions everything he has built. His mind spins with fear and doubt, but he does not flee his throne. He decides to rule, to do the work of the day, with a mind that no longer clutches. The verse says that the more you spin up fancies and possibilities, the more your world of troubles swells through your own worrying. You do not have to leave your life to change it. You can do the day's work with a mind that does not clutch.",
+     "for_you": "You do not have to leave your desk to find a different self. The more you spin up fancies about what your daughter thinks, the more your world of worry swells. You can do your work with a mind that does not clutch."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.7",
+     "ref": "Bhagavad Gita 6.7",
+     "ref_iast": "Bhagavad Gītā 6.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः । शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥",
+     "line": "Self-mastered and calm, you stay centred in heat and cold, pleasure and pain, praise and insult.",
+     "translation": "For one who has conquered himself and is at peace, the higher self stays steady in cold and heat, pleasure and pain, honour and dishonour.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Staying steady under insult is not accepting mistreatment; you can stay calm and still speak up.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.2201,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Krishna is telling Arjuna that once you have found your own center, the world cannot shake you. Praise and blame, honour and insult, heat and cold, pleasure and pain, they come and go like weather. They touch the surface, but they do not reach the self. You can stand in the middle of it and remain still.",
+     "for_you": "Your daughter's question is a gust of wind, not the whole sky. You can stand in the car and let the guilt pass without letting it become the truth of who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_adhyatma.54",
+     "ref": "Adhyatma Upanishad 47",
+     "ref_iast": "Adhyātma Upaniṣad 47",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seeker",
+     "setting": "One of a series of marks of a person free while living.",
+     "sanskrit": "साधुभिः पूज्यमानेऽस्मिन्पीड्यमानेऽपि दुर्जनैः । समभावो भवेद्यस्य स जीवन्मुक्त इष्यते ॥",
+     "line": "Praised by the good or harassed by the cruel, the free person stays the same.",
+     "translation": "Whether honoured by the good or harassed by the wicked, one who stays the same is called free while living.",
+     "why": null,
+     "misuse": "Staying even does not mean staying in a harmful situation.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.0996,
+     "beat": "steady",
+     "role_fit": 0.595,
+     "meaning": "A Seer tells a Seeker what it looks like to be free while still alive. He says that whether the good praise you or the cruel harass you, you remain the same. The one who does not waver is truly free. The point is that praise and blame are just sounds that come and go. They do not change who you are inside. They pass through you like weather, and you stay steady.",
+     "for_you": "The guilt you feel is not the real weight. It is the echo of your daughter's words. Hold on to the fact that those words pass, but you remain. You do not have to become the mother she imagines to be whole."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.53",
+     "ref": "Taittiriya Upanishad 1.11.2",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.2",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The teacher's surprising humility.",
+     "sanskrit": "यान्यनवद्यानि कर्माणि । तानि सेवितव्यानि । नो इतराणि । यान्यस्माकꣳसुचरितानि । तानि त्वयोपास्यानि ॥",
+     "line": "Do only what is blameless. Follow what is good in us, your teachers, and not the rest.",
+     "translation": "Whatever actions are blameless, those you should do, and not others. Whatever good conduct is ours, that you should follow.",
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 2.8992,
+     "beat": "act",
+     "role_fit": 0.554,
+     "meaning": "A Teacher speaks to a graduating student who is leaving to build a family. He tells him to do only what is blameless. Follow the good conduct you have seen in your teachers, and leave the rest. The point is that a whole life can be guided by this one choice. Do what is right and good, and let the rest fall away.",
+     "for_you": "let go of the need to be the perfect mother she compares you to. In the moments you have, do what is blameless and good for your children. That is enough."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 2.8236,
+     "beat": "act",
+     "role_fit": 0.554,
+     "meaning": "A teacher speaks to a student who is leaving the world behind, laying out the rules for how to live once the noise of society is gone. He tells him not to exhaust his body chasing pleasure or running from pain. He adds that when people praise him, he should not swell with pride, and when they blame him, he should not curse them in return.",
+     "for_you": "You do not have to earn your daughter's approval by being the mother she imagines. You are already enough in the small, real hours you have. Let her question go, and trust the mother you are today."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "present_parent",
+        "label": "I'm physically home but not present with my kids"
+       },
+       {
+        "id": "parents_expectations",
+        "label": "My parents' expectations weigh on me"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "Kausalya saw the whole universe in her child, yet she only wanted him to be small and ordinary with her. Your daughter does not need a perfect presence. She needs the real, dusty, laughing moments you already give her."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The split",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 183,
+   "llm": 4204,
+   "total": 11657,
+   "select": 7263
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are in the car, crying, and the question is still ringing in your ears. You are back at work, and your daughter asked why you are not at her school events. You feel pulled in two. You are half a mother and half a project manager, and right now, the guilt is crushing you."
+  ],
+  [
+   "scene",
+   "On the battlefield, Arjuna stands before Krishna, his mind racing, his hands shaking. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Arjuna, standing on the battlefield, tells Krishna that the mind is restless and stubborn, as hard to hold as the wind. Krishna does not tell him to fight harder. He tells him that the mind is difficult, but that steady practice and letting go are what train it. The mind will not stay still by force. It settles when you stop gripping it."
+  ],
+  [
+   "for_you",
+   "For you, today. Your mind is storming right now, pulled between the office and your daughter. You do not need to force it into stillness. Let it be restless for a moment, and trust that your steady presence is already the practice that will train it."
+  ],
+  [
+   "close",
+   "Let the mind be the wind. Let it go."
+  ]
+ ],
+ "depth": {
+  "life": "You are in the car, still crying, the steering wheel cold under your hands. Your daughter's question is looping in your head while your phone buzzes with work. You are trying to be both a mother and a manager, and neither role feels fully yours right now.",
+  "points": "The mind is not a problem to be fixed. It is a force, like the wind, that moves between your daughter and your job. The belief that you must hold both perfectly is what is breaking you. Your daughter's question is not the cause. It is a gust that reveals the storm already inside you.",
+  "practice": "Sit with the restlessness for five minutes. Do not try to calm it. Just watch it move between your daughter and your work, and let it be.",
+  "question": "What if your daughter's question is not a test, but just the wind passing through?"
+ }
+}

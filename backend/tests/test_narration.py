@@ -77,7 +77,7 @@ def test_narration_is_written_for_the_person(client, monkeypatch):
     llm = StoryLLM()
     und = und_mod.init_understander(rec, llm=None)
     u, _ = __import__("asyncio").run(und.understand(und_mod.Profile(feeling="quiet", age="25_34", stages=["working"]), None))
-    und.llm = llm
+    und.llm = und.writer_llm = und.rerank_llm = llm
     body = {"verse_id": "bg.6.34", "for_you": MINE, "beat": "hook", "understanding": u.as_dict(), "age": "25_34", "stages": ["working"]}
     j = client.post("/api/v1/narration", json=body).json()
     kinds = [x["kind"] for x in j["segments"]]

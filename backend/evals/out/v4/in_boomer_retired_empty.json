@@ -1,0 +1,499 @@
+{
+ "persona": {
+  "id": "in_boomer_retired_empty",
+  "market": "India (Lucknow)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "66, retired bank officer in Lucknow, wife passed 2 years ago, son in Toronto, daughter in Mumbai. Reads the Gita occasionally, wants to understand it properly.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 3,
+   "topic": "meaning",
+   "follow": "after_retiring"
+  },
+  "note": "after my wife left us the house is very quiet. children call on sunday. I have time now and I want to read Gita properly not just the shlokas everyone forwards on whatsapp",
+  "note_source": "voice",
+  "expect_stance": "seeking"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "quietly searching for what comes next",
+   "bridge": "The quiet house and the Sunday calls are what the Gita calls a life lived only for what passes. What you are looking for is what does not pass.",
+   "week_thesis": "This week turns the quiet house and the forwarded verses into the first real reading, and the first taste of what the Gita calls that which does not pass.",
+   "week_beats": {
+    "hook": "You recognise the wish to read the Gita properly, not just forwarded verses.",
+    "diagnose": "You see that the search is for what does not pass, and not for a cure to the quiet.",
+    "steady": "You hold that what is real in us cannot be taken away, and that is where meaning lives.",
+    "act": "You try reading one verse slowly, in full, and sitting with it before you turn the page.",
+    "story": "A man who lost everything and sat with a teacher shows you what the search is for."
+   },
+   "confidence": 0.75,
+   "core_struggle": "A widower in retirement with a quiet house and Sunday calls from his children wants to read the Gita properly, not just forwarded verses.",
+   "mirror": "You have the time now, but the house is quiet and the calls come only on Sunday.",
+   "insight": "You are not looking for a cure to the quiet. You are looking for what the Gita calls that which does not pass, and that is what these verses are for.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.941,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.31,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.125,
+     "source": "chip"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.055,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.838,
+     "source": "chip"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.437,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The wish to read the Gita properly, not just the verses that are forwarded, and to find what is deeper in a life that now has time.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "The self is not born and does not die; what is real in us cannot be taken away, and that is where meaning lives.",
+    "act": "Read one verse slowly, in full, and sit with what it names before you turn the page.",
+    "story": "A man who had everything and lost it, who sat with a teacher and learned what does not pass, shows you what the search is for."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet house",
+    "What does not pass",
+    "The one who is not born"
+   ],
+   "seat": "a widower in retirement whose days have lost their shape",
+   "life_context": "",
+   "details": [
+    "wife passed away",
+    "house is very quiet",
+    "children call on Sunday",
+    "wants to read the Gita properly, not just forwarded verses"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "retried:2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.9.26",
+     "ref": "Bhagavad Gita 9.26",
+     "ref_iast": "Bhagavad Gītā 9.26",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on simple, wholehearted devotion.",
+     "sanskrit": "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति । तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥",
+     "line": "A leaf, a flower, a fruit, a little water: whatever is offered with love, I accept.",
+     "translation": "Whoever offers me with devotion a leaf, a flower, a fruit or water, that offering of love from the pure-hearted I accept.",
+     "why": "Small offerings given with love matter; no one is beyond turning around.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p09.6",
+      "title": "The glory of selfless devotion",
+      "summary": "A leaf, flower, fruit or water offered with love is accepted. Offer everything you do; the divine hates no one, and even a wrongdoer who turns wholeheartedly is counted good.",
+      "story_hook": "",
+      "lesson": "Small offerings given with love matter; no one is beyond turning around."
+     },
+     "score": 2.5112,
+     "beat": "hook",
+     "role_fit": 0.19,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield just before dawn. The armies are drawn up, ready for war. Krishna tells Arjuna that the divine does not need grand rituals or wealth. A leaf, a flower, a fruit, a little water offered with love is accepted. The idea is that devotion matters more than the offering, and no one is too far gone to be met with acceptance.",
+     "for_you": "The house is quiet and the Sunday calls are brief. This verse says the quiet itself can be an offering. You do not need to fill the space with noise or prove anything to anyone. Simply let the day be what it is, and offer it without demand."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0969,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "This teaching comes from Prajapati, the creator, in the Chhandogya Upanishad. He speaks to a seeker who has been searching for the self. Prajapati says that we walk over our own deepest treasure every single day without knowing it. Like people who pass over buried gold and never find it, we miss what is right here because we are caught in what is false.",
+     "for_you": "Yesterday's verse named the quiet as an offering. Today you see the pattern underneath. The search is not for a cure to the emptiness. It is for the one thing that does not pass, the treasure you are already standing on."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.13",
+     "ref": "Bhagavad Gita 2.13",
+     "ref_iast": "Bhagavad Gītā 2.13",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥",
+     "line": "Childhood, youth, old age: the body keeps changing. The wise aren't thrown by the next change.",
+     "translation": "Just as the embodied self passes through childhood, youth and old age in this body, so it passes on to another body. The steady person is not bewildered by this.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.1087,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": "Krishna speaks to Arjuna again, who is still grieving the loss of his kin. Krishna says that just as the body moves through childhood, youth, and old age, so it moves from one body to another. The wise are not bewildered by this change. What is real in us cannot be taken away or destroyed.",
+     "for_you": "The body has changed. The wife is gone, the children have their own lives, and the days have lost their shape. But what is real in you outlasts every loss. Hold onto that. That is where the meaning lives, not in what passes."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.62.13",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 62.13",
+     "family": "vr",
+     "speaker": "Sage Nishakara",
+     "listener": "Sampati (recounted)",
+     "setting": "The old vulture Sampati, wings burnt and grounded for ages, is told why he should live on.",
+     "sanskrit": "उत्सहेयमहं कर्तुमद्यैव त्वां सपक्षकम्। इहस्थस्त्वं हि लोकानां हितं कार्यं करिष्यसि॥",
+     "line": "You are needed exactly where you are, as you are. Your use isn't over.",
+     "translation": "I could give you back your wings this very day. But by staying here as you are, you will do something for the good of the world.",
+     "why": "Even when you feel useless, your experience may be exactly what someone needs.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sampati",
+      "title": "Sampati, the bird who could not fly",
+      "summary": "The despairing monkeys meet Sampati, Jatayu's old brother, whose wings burnt long ago. A sage once told him to live on, because one day his knowledge would be needed. Now he tells them Sita is in Lanka, and his wings grow back.",
+      "story_hook": "For thousands of years the old bird had sat on a mountain with no wings, waiting for a reason.",
+      "lesson": "Even when you feel useless, your experience may be exactly what someone needs."
+     },
+     "score": 2.9164,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "The old vulture Sampati sits on the mountain, his wings burned to nothing, wondering why he should still draw breath. A sage once told him that even without flight, his presence serves a purpose. The verse says that even when you feel useless, your experience may be exactly what someone needs, and by staying exactly where you are, you do something for the good of the world. The quiet house is not a sign that your use is over.",
+     "for_you": "The Sunday calls and the empty rooms are not a verdict on your worth. They are the place where your life can be of use, not by doing more, but by being exactly who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.7.1",
+     "ref": "Bhagavad Gita 7.1",
+     "ref_iast": "Bhagavad Gītā 7.1",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna opens the teaching on knowing him fully.",
+     "sanskrit": "श्री भगवानुवाचमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः । असंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु ॥",
+     "line": "Keep your mind attached to me, lean on me, keep practising. You will come to know me fully.",
+     "translation": "Hear, Partha, how with your mind attached to me, practising yoga and taking refuge in me, you will know me fully, without doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 3.216,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is speaking to Arjuna on the field of battle, opening the deepest part of his teaching. He is asking Arjuna to fix his mind entirely on him and to practice devotion steadily. Krishna promises that if Arjuna does this, he will know Krishna fully and without any doubt. The verse proposes that steady practice and focus lead to complete knowing.",
+     "for_you": "The quiet house is the place for this practice. Before the Sunday call, sit with one verse in full, letting the words settle before you turn the page."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.1.19.doha.1",
+     "ref": "Ramcharitmanas, Bal Kand 1.19 (doha 1)",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 1.19",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Tulsidas, praising the name of Ram before he begins the story.",
+     "sanskrit": "राम नाम मनिदीप धरु जीह देहरीं द्वार। तुलसी भीतर बाहेरहुँ जौं चाहसि उजिआर ॥",
+     "line": "Want light inside and out? Keep Ram's name like a lamp on the doorstep of your tongue.",
+     "translation": "Tulsi says: if you want light both inside and outside, place the name of Ram like a jewelled lamp on the threshold of your tongue.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.8507,
+     "beat": "act",
+     "role_fit": 0.848,
+     "meaning": "Tulsidas is praising the name of Ram before he begins his great story. He is asking the reader if they want light both inside and outside. He proposes that if they place the name of Ram like a jewelled lamp on the threshold of their tongue, that light will shine everywhere.",
+     "for_you": "Let the name of Ram rest on your tongue as you sit with your tea. Let it be the small lamp that stays lit while the house is quiet."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 2.5542
+     },
+     "score": 2.5542,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "The quiet house is not empty. It is the forest you have been tending. The Sunday calls are the fruit you have gathered. Keep gathering. The search is already prepared."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet house",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 181,
+   "llm": 4669,
+   "total": 10930,
+   "select": 6075
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is very quiet now. Sunday calls come and go. You are searching for what comes next, and you want to read the Gita properly. You are looking for what does not pass."
+  ],
+  [
+   "scene",
+   "On the battlefield, the armies are drawn up and ready for war. Arjuna is afraid. Krishna is telling him that the divine does not need grand rituals or wealth. And Krishna replies: and he says:"
+  ],
+  [
+   "sanskrit",
+   "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति, तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः."
+  ],
+  [
+   "line",
+   "In plain words: A leaf, a flower, a fruit, a little water: whatever is offered with love, I accept."
+  ],
+  [
+   "unpack",
+   "What matters is not the size of the offering. It is the love behind it. A leaf, a flower, a fruit, a little water. Whatever is given with a pure heart is accepted. No one is beyond turning around. This is easier said than done, because we are used to measuring worth by what we do. But the Gita says love is enough."
+  ],
+  [
+   "for_you",
+   "Your quiet house is not empty. It is an offering. You do not need to fill it with noise or prove anything to anyone. Simply let the day be what it is, and offer it without demand."
+  ],
+  [
+   "close",
+   "What is the quiet offering you can give today?"
+  ]
+ ],
+ "depth": {
+  "life": "The house is quiet after your wife passed, and the Sunday calls are brief. You are sitting with this silence, wondering if the days you have left hold any shape or meaning.",
+  "points": "The Gita says that what you offer with love matters, not the size of the gift. A leaf or a flower is enough. The value is in the offering, not the thing given.",
+  "practice": "Today, offer the quiet morning to the day you are living. Let the silence be the offering.",
+  "question": "What small thing today can you offer without needing it to be noticed?"
+ }
+}

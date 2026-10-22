@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita on Anxiety — 9 Verses That Directly Address Fear, Worry & Overthinking | Wisdom",
+  title: "Bhagavad Gita on Anxiety — 9 Verses That Directly Address Fear, Worry & Overthinking",
   description: "The Gita opens with a panic attack: Arjuna shakes, his bow drops, his vision blurs. 9 verses that directly address anxiety, fear, worry and the restless mind — Sanskrit, English meaning, and what Krishna actually tells him to do.",
   keywords: "bhagavad gita on anxiety, what does bhagavad gita say about anxiety, bhagavad gita verses for anxiety, bhagavad gita stress, bhagavad gita on fear, bhagavad gita mental health, bhagavad gita on worry, bhagavad gita restless mind, bhagavad gita depression",
   openGraph: {
@@ -832,12 +833,12 @@ export default function GitaOnAnxietyPage() {
       </div>
 
       <div className="content" style={{ paddingTop: 0 }}>
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagavad Gita On Anxiety"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagavad Gita On Anxiety"} />
       </div>
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Bhagavad Gita On Anxiety" />

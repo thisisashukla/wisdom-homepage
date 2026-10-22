@@ -1,0 +1,529 @@
+{
+ "persona": {
+  "id": "uk_genz_grad_unemployed",
+  "market": "UK (London)",
+  "generation": "Gen Z",
+  "gender": "man",
+  "who": "24, British-Indian, graduated in economics 18 months ago, 200+ applications, still working in a cafe. Friends have jobs at banks. Lives with parents in Harrow.",
+  "profile": {
+   "feeling": "nerve",
+   "age": "u25",
+   "stages": [
+    "between"
+   ],
+   "phone_hours": 6,
+   "topic": "compare",
+   "follow": "everyone_ahead"
+  },
+  "note": "200 applications. my mates are at Goldman and Deloitte and I'm making flat whites. mum tells aunties I'm 'exploring options'. I don't open linkedin anymore",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and frozen",
+   "bridge": "The friends at Goldman and Deloitte are not your measure. The only thing that can be lost is the time you are spending measuring yourself against them.",
+   "week_thesis": "The gap between where you are and where your friends are is not a verdict. Over seven days it becomes a place you can stand in and move from.",
+   "week_beats": {
+    "hook": "You recognise the freeze, the comparison, and the shame, named without judgement.",
+    "diagnose": "You see that it is the comparison that turns every update into proof of failure, and that proof is what keeps you stuck.",
+    "steady": "You hold that your own path, walked imperfectly, is enough, and that no honest effort is ever lost.",
+    "act": "You try closing the feed that feeds the comparison, and doing one honest thing for yourself each day.",
+    "story": "A young man who felt the gap between where he was and where others were shows you how to find his footing in the work itself."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "I keep comparing myself to others",
+   "mirror": "LinkedIn stays closed because every update from your mates is a mirror you do not want to look into.",
+   "insight": "It isn't the flat white that keeps you stuck. It's the comparison that turns every update from your friends into proof that you have failed, and that proof is what you cannot bear.",
+   "mechanism": "comparison_envy",
+   "mechanism_label": "Measuring yourself against others",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "comparison",
+     "label": "I keep comparing myself to others",
+     "weight": 2.1,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.445,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.429,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of two hundred applications sent, and the shame of being told you are exploring options while your friends are already ahead.",
+    "diagnose": "Comparison and envy burn at another's success; measuring your life against theirs steals the contentment in your own, and the mind stays stuck in the gap.",
+    "steady": "Your own path walked imperfectly is enough; no honest effort is ever lost, and your worth is not theirs to grant or withhold.",
+    "act": "Walk your own path, even imperfectly, rather than someone else's well; be grateful for what is yours and rejoice in others' good.",
+    "story": "A young man who sent out two hundred applications and felt the gap between where he was and where others were, yet found his footing in the work itself."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "template",
+    "story": "llm"
+   },
+   "weeks": [
+    "Measuring yourself",
+    "Your own path",
+    "No smaller, no larger"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "applications sent",
+    "working as a barista making flat whites"
+   ],
+   "age": "u25",
+   "stages": [
+    "between"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "act:act_not_actionable",
+    "core:invented_person",
+    "core_struggle_fallback",
+    "life:invented_person",
+    "life_context:missing",
+    "week_fit:47=0.3,17=0.3,22=0.6,453=0.6,43=0.6,33=0.6",
+    "week_fit:swapped=2",
+    "redo:4",
+    "redo_fixed:3",
+    "dropped:cliche=1,fallback_lesson=1,fallback_line=1,invented=3",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      },
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.8311,
+     "beat": "hook",
+     "role_fit": 0.0,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, knowing Arjuna is frozen by shame and the weight of his own family. Krishna tells him that it is better to walk your own path, even if you stumble, than to wear another's armor perfectly. A life lived in imitation of others carries a hidden fear, because it is not your own. The verse asks you to trust your own nature, even when it feels rough around the edges.",
+     "for_you": "You are making flat whites while your mind measures your worth against friends at Goldman and Deloitte. The shame you feel is not about the milk. It is about the borrowed life you are trying to fit into. Your own path is the counter you stand behind."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.1.8.chaupai.7",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 8",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Tulsidas, introducing his work, on how rarely people rejoice at someone else's rise.",
+     "sanskrit": "जग बहु नर सर सरि सम भाई। जे निज बाढ़ि बढ़हि जल पाई॥ सज्जन सकृत सिंधु सम कोई। देखि पूर बिधु बाढ़इ जोई ॥",
+     "line": "Most of us swell only at our own rise. Rare is the one who surges at another's.",
+     "translation": "Brother, most people in the world are like ponds and rivers: they swell only when their own waters rise. Rare is the good soul who, like the ocean, surges with joy on seeing another's moon grow full.",
+     "why": "Notice whether you can be glad at someone else's good work, not only your own.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.tulsi_humility",
+      "title": "Tulsidas on loving our own work",
+      "summary": "Tulsidas calls his own poetry plain and asks readers to forgive it. Along the way he notes that everyone loves their own work, that few are glad at another's success, and that most people swell only with their own rising waters.",
+      "story_hook": "",
+      "lesson": "Notice whether you can be glad at someone else's good work, not only your own."
+     },
+     "score": 3.416,
+     "beat": "diagnose",
+     "role_fit": 0.5,
+     "meaning": "Tulsidas speaks to the reader about how we watch others. He says most people are like ponds and rivers. They swell only when their own waters rise. It is rare to find a good soul, like the ocean, who surges with joy when seeing another's moon grow full. He is asking you to notice if you can be glad at someone else's good work, not only your own.",
+     "for_you": "Every update from your family feels like a proof that you have failed, because your own waters are still. You cannot make the pond swell for another's moon yet. Today, just notice the pattern. See that the comparison is turning their good news into a verdict on you. You do not have to fix it."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 3.7624,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna speaks to Arjuna about the wise person. He says the wise are content with what comes unasked. They are beyond envy. They stay steady in success and failure. Even while working, they remain free and are not bound.",
+     "for_you": "Your own path, walked imperfectly, is enough. No honest effort is ever lost. You can hold onto that while the updates from others still sting. It is enough to just stay steady."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.453",
+     "ref": "Maha Upanishad 5.171",
+     "ref_iast": "Mahā Upaniṣad 5.171",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on the mark of the wise.",
+     "sanskrit": "अनागतानां भोगानामवाञ्छनमकृत्रिमम् । आगतानां च संभोग इति पण्डितलक्षणम् ॥",
+     "line": "Not pining for pleasures still to come, and enjoying the ones already here: that is wisdom.",
+     "translation": "Not longing for pleasures yet to come, and enjoying those that have come: this, unforced, is the mark of the wise.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.0297,
+     "beat": "steady",
+     "role_fit": 0.715,
+     "meaning": "Ribhu is telling Nidagha what a free person looks like. Ribhu says a free person does not waste energy on what is gone or what has not yet arrived. They take what is here, right now, and they are at peace with it. This is not about giving up or settling. It is about stopping the inner argument between what is and what should be. When you stop fighting the present, you can do the work at hand without being pulled apart by longing.",
+     "for_you": "You are working the espresso machine and sending out applications, but your mind keeps scrolling through updates from others. The flat white in your hand is real. Let the machine hum and the milk steam."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.213.43",
+     "ref": "Mahabharata · Vana Parva · Vyadha Gita",
+     "ref_iast": "Mahābhārata, Vana Parva 213.43",
+     "family": "mbh",
+     "speaker": "Dharmavyadha (the righteous meat-seller)",
+     "listener": "Kaushika",
+     "setting": "In Mithila, a meat-seller famed for wisdom teaches a proud ascetic what goodness really is.",
+     "sanskrit": "अनसूयुः कृतज्ञश्च कल्याणान्येव सेवते / सुखानि धर्ममर्थं च स्वर्गं च लभते नरः",
+     "line": "Let go of envy and stay grateful, and good things keep finding their way to you.",
+     "translation": "The person who is free of envy and grateful keeps to what is good, and finds happiness, right living, prosperity and heaven.",
+     "why": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vyadha_gita",
+      "title": "Vyadha Gita: the butcher who taught a sage",
+      "summary": "A proud ascetic, Kaushika, is sent to learn from a meat-seller in Mithila. The butcher teaches him plain goodness: don't return evil, repent and resolve, keep envy away, care for your parents, and don't spend your one life making enemies.",
+      "story_hook": "",
+      "lesson": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents."
+     },
+     "score": 3.5703,
+     "beat": "act",
+     "role_fit": 0.614,
+     "meaning": "Dharmavyadha is speaking to Kaushika, a proud ascetic who thought he knew what goodness was. The butcher says a person free of envy and full of gratitude naturally finds right living and peace. He tells Kaushika to care for his parents and stop making enemies. The lesson is simple. Goodness is not in grand gestures or special status. It is in doing ordinary work with an honest heart and a quiet mind.",
+     "for_you": "Close the feed that feeds the comparison. Then do one small thing for yourself, something only you will know about. Send one more application, or make the flat white a little better. Do it without needing to post it or prove it to anyone else."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.104.33",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.33",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage warns the deposed prince against resenting others' success.",
+     "sanskrit": "सहस्व श्रियमन्येषां यद्यपि त्वयि नास्ति सा / अन्यत्रापि सतीं लक्ष्मीं कुशला भुञ्जते नराः / अभिनिष्यन्दते देही श्रीभूतश्च द्विषज्जनात्",
+     "line": "Make peace with other people's success, even when you lack it. The wise can enjoy good fortune that isn't theirs.",
+     "translation": "Bear the good fortune of others, even though it is not with you. Wise people know how to enjoy good fortune even when it belongs to someone else; good fortune drains away from the one who resents.",
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "comparison",
+       "label": "I keep comparing myself to others"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 3.3891,
+     "beat": "act",
+     "role_fit": 0.539,
+     "meaning": "The sage Kalakavrikshiya speaks to the fallen prince Kshemadarshi, who has lost his kingdom and wealth. The sage tells him that grief cannot bring back what is gone. Wanting what you can reach is the only path forward. The wise person can enjoy good fortune even when it belongs to someone else. Resenting another person's success drains your own strength, while accepting it keeps you whole.",
+     "for_you": "Walk your own path, even imperfectly, rather than someone else's well; be grateful for what is yours and rejoice in others' good."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Measuring yourself",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 1285,
+   "llm": 4228,
+   "total": 11457,
+   "select": 5937
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are frozen right now, and that shame is heavy. You have sent out applications, and you are standing behind the counter making flat whites. Your mind keeps running through what everyone else is doing."
+  ],
+  [
+   "scene",
+   "Arjuna is on the battlefield, frozen by shame and the weight of his family. He cannot lift his bow. Krishna sees him and speaks to him about duty and fear. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वधर्मे निधनं श्रेयः परधर्मो भयावहः."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous."
+  ],
+  [
+   "unpack",
+   "This is about the difference between living your own life and borrowing someone else's. When you try to be exactly like your friends at Goldman or Deloitte, you invite a hidden fear. A borrowed life is dangerous because it is not yours, and you will always feel like an imposter. Your own path might be messy, but it is safe. It is your armor. The fear comes when you try to fit a life that was never made for you."
+  ],
+  [
+   "for_you",
+   "Today, let the counter be enough. You do not have to match their updates or their salaries. Your own path is right here, in the steam and the milk. Trust that."
+  ],
+  [
+   "close",
+   "What if your own path was already the right one?"
+  ]
+ ],
+ "depth": {
+  "life": "You stand behind the counter making flat whites and watch your phone for six hours. You see updates from friends at Goldman and Deloitte and feel frozen. The shame is not about the milk. It is about the borrowed life you are trying to fit into while your own path waits.",
+  "points": "The gap between where you are and where your friends are is not a verdict. The only thing you can truly lose is the time you spend measuring yourself against them.",
+  "practice": "Put your phone face down for thirty minutes while you finish your last drink. Let your hands do the work without looking at their lives.",
+  "question": "What does your own path look like when no one else is watching?"
+ }
+}

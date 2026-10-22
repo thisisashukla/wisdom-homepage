@@ -1,0 +1,515 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "torn and guilty",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "Seven days from a verdict you keep passing on yourself to a steadiness that lets you be present without the verdict.",
+   "week_beats": {
+    "hook": "You recognise the guilt and the half-mother feeling, named without blame.",
+    "steady": "You hold that your worth is not a sum of hours given and hours missed.",
+    "story": "A mother who wept in the car and found her way back to herself shows you what rising again looks like."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.65,
+   "core_struggle": "A working mother of two young children feels she is failing at both her job and her presence at home, and her daughter's question has made the guilt unbearable.",
+   "mirror": "You gave the day everything, and then your daughter asked a question that made you feel you gave her the leftovers.",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 1.415,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The guilt of feeling you are half a mother and half a worker, and the ache of a child's question that made you cry in the car.",
+    "diagnose": "When a mother is pulled in two directions, the mind turns against itself; self-blame grows from believing you must be everything to everyone at once.",
+    "steady": "A mother's presence is not measured in hours alone; love and attention given with a full heart are never less than a full day.",
+    "act": "Lift yourself up instead of pushing yourself down; give your daughter your full attention for the time you have, and let the rest go without a verdict.",
+    "story": "A mother who felt she was failing at both, who wept in the car, and who learned to hold her own worth above the verdict of the day."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The verdict you keep passing",
+    "More than the hours",
+    "The mother who is enough"
+   ],
+   "seat": "",
+   "life_context": "In her thirties, working as a product manager and raising two young children; her daughter's question about school events left her crying in the car, and now she feels she is half a mother and half a professional.",
+   "details": [
+    "second baby, back at work as a PM",
+    "daughter asked why she does not come to school like other moms",
+    "cried in the car after the question",
+    "feels half a mother and half a PM"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "insight:template",
+    "seat:missing",
+    "retried:1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "mbh.12.7.13",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 7.13-14",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "Arjuna",
+     "setting": "After the war, Yudhishthira, crushed by grief and guilt over the dead, wants to renounce the throne.",
+     "sanskrit": "बहुकल्याणमिच्छन्त ईहन्ते पितरः सुतान् / तपसा ब्रह्मचर्येण वन्दनेन तितिक्षया उपवासैस्तथेज्याभिर्व्रतकौतुकमङ्गलैः / लभन्ते मातरो गर्भांस्तान्मासान्दश बिभ्रति",
+     "line": "Parents give years of patience, prayer and sacrifice, hoping only for their children's good.",
+     "translation": "Fathers long for every good thing for their children, and strive for them with discipline, prayer and patience. Mothers, through fasts and vows, conceive them and carry them for ten months.",
+     "why": "Guilt and grief are real, but they are not the end. The good you do next counts.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yudhishthira_grief",
+      "title": "After the war: Yudhishthira's grief and his family's counsel",
+      "summary": "Victorious but shattered by the deaths of kin, Yudhishthira wants to give up the throne for the forest. Arjuna, Bhima, Draupadi, Nakula, the sage Devasthana and Vyasa each argue with him, about duty, guilt, grief and the shortness of life, until he agrees to rule.",
+      "story_hook": "He had won the war, and all Yudhishthira wanted was to walk into the forest and never come back.",
+      "lesson": "Guilt and grief are real, but they are not the end. The good you do next counts."
+     },
+     "score": 3.0515,
+     "beat": "hook",
+     "role_fit": 0.64,
+     "meaning": "After the great war, Yudhishthira sits crushed by grief, wanting to walk away from everything he won. Arjuna stands beside him, speaking not of glory but of the quiet work that makes a life. He tells Yudhishthira that parents give years of patience, prayer and sacrifice, hoping only for their children's good. Fathers long for every good thing for their children, and strive for them with discipline, prayer and patience. Mothers, through fasts and vows, conceive them and carry them for ten months.",
+     "for_you": "You are in the car, still holding the weight of your daughter's question, feeling split between the job and the home. The guilt is loud, but the care you give your children is already there, in the quiet moments you do not see. You are not starting from nothing."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.1487,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama, at the end of his long lament, speaks to the sages about the source of his pain. He says that our own senses are our enemies, and that truth itself has turned untrue. The self strikes the self, and the mind becomes its own enemy. He is not giving a command. He is naming the pattern he sees, the way the mind turns against itself and makes us feel empty. This is the first step, to see the pattern clearly.",
+     "for_you": "Your mind is the one that says you are half a mother and half a professional. That voice is not the truth about who you are. It is the mind striking the self. You can hold that this verdict is just a pattern, not a fact."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "shakti_gita.1.47",
+     "ref": "Shakti Gita 1.47-48",
+     "ref_iast": "Śakti Gītā 1.47-48",
+     "family": "gitas",
+     "speaker": "The gods",
+     "listener": "Devi",
+     "setting": "The gods' hymn on the reach of the Mother's grace.",
+     "sanskrit": "नास्यम्ब ! सीमा तव सत्कृपायाः शक्ता न ये भक्तगणास्त्वदीयाः। तत्त्वप्रबोधस्य प्रपूर्त्यभावाद्रष्टुं हि ते भावमयस्वरूपम् ॥ स्वाभाविकैरेव कृपाकटाक्षैः समीहमाना ह्यनुकम्पितुं तान्। गुणाश्रयायच्छसि दर्शनं स्वं मुक्तिञ्च तेभ्योऽभ्युदयं ददासि ॥",
+     "line": "Your grace has no limit, Mother. Even those who can't understand you, you look on with kindness.",
+     "translation": "Mother, there is no limit to your true grace. Your devotees who cannot see your form of feeling, for lack of complete understanding, you wish to favour with your natural glances of grace; you show yourself to them and give them both freedom and well-being.",
+     "why": "Grace is not earned by praise; even the clumsy prayer is held.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "shakti_gita.p.gods_praise_mother",
+      "title": "The victorious gods praise the Mother's grace",
+      "summary": "After their victory over the demons, the gods praise the Mother, admit their words cannot reach her, and ask forgiveness, adding that even forgiveness comes from her grace. They describe her taking form for devotees' sake and never letting go of those who love her feet.",
+      "story_hook": "",
+      "lesson": "Grace is not earned by praise; even the clumsy prayer is held."
+     },
+     "score": 2.9957,
+     "beat": "steady",
+     "role_fit": 0.535,
+     "meaning": "The gods, after their victory, sing to the Mother about the reach of her grace. They say there is no limit to her grace. Even those who cannot understand her form of feeling, they say, she looks on with kindness. They admit their words cannot reach her, and that even their forgiveness comes from her grace. The point is that grace is not earned. Even the clumsy prayer is held.",
+     "for_you": "You do not have to earn your worth by being a perfect mother or a perfect manager. Your worth is not a sum of hours given and hours missed. You are held, even when you feel you have failed."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.27.49",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.49",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "न ह्यहानि निवर्तन्ते न मासा न पुनः समाः / जातानां सर्वभूतानां न पुनर्वै समागमः",
+     "line": "Days don't come back, nor months, nor years. Be here for the ones in front of you.",
+     "translation": "Days do not come back, nor months, nor years. And beings, once parted, do not meet again in the same way.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.8366,
+     "beat": "steady",
+     "role_fit": 0.514,
+     "meaning": "The sage Ashma speaks to King Janaka, who is grieving the loss of his family and wealth. Ashma tells him that pain comes from what we did not want or what we have lost. He reminds the king that days do not come back, nor months, nor years, and that once people part, they do not meet again in the same way. The verse proposes that we should grieve what is gone, then steady the mind with the people still standing in front of us.",
+     "for_you": "You are holding the grief of the hours you missed, and the question from your daughter cut right to it. The days you spent at work do not come back, and the time you were not there does not come back either. But your daughter is still in front of you."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.4569,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to hold himself in contempt or settle for little. She says to set his mind on what is truly good and to stop fearing. The verse proposes that past failure does not define you. Results are uncertain, but those who never try never succeed. She tells him to pull himself together and rise again.",
+     "for_you": "The guilt you feel is not a verdict on your worth, it is a measure of how much you care. You do not have to settle for the idea that you are half a mother or half a professional."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_aitareya.33",
+     "ref": "Aitareya Upanishad 2.1.3",
+     "ref_iast": "Aitareya Upaniṣad 2.1.3",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The second birth: raising a child.",
+     "sanskrit": "स यत्कुमारं जन्मनोऽग्रेऽधिभावयत्यात्मानमेव तद्भावयत्येषं लोकानां सन्तत्या । एवं सन्तता हीमे लोकास्तदस्य द्वितीयं जन्म ॥",
+     "line": "Caring for your child, you care for yourself. Through them you are born a second time.",
+     "translation": "When he cares for the child from birth onward, he is caring for himself, for the continuation of these worlds; that is how they continue. That is his second birth.",
+     "why": "Care for the one who carries and raises the child; raising children continues your life.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.aitareya.three_births",
+      "title": "The three births of a person",
+      "summary": "The Aitareya describes three births: conception and pregnancy, when the mother nourishes the child and must herself be nourished; birth and upbringing, when caring for the child is caring for oneself; and death, when the parent, duties done, departs and the child carries on.",
+      "story_hook": "",
+      "lesson": "Care for the one who carries and raises the child; raising children continues your life."
+     },
+     "score": 3.1677,
+     "beat": "act",
+     "role_fit": 0.45,
+     "meaning": "A seer speaks to a reader about the second birth. The text says that when a father cares for his child from birth onward, he is caring for himself. This is how the worlds continue. The idea is that raising a child is not a separate task you perform for someone else. It is the very act that continues your own life. The care you give your daughter returns to you as your own continuation.",
+     "for_you": "You are trying to be two different people in one day. The verse asks you to set your mind on the ordinary care you already give. You do not need to be a perfect mother or a perfect manager. You could care for your daughter as the continuation of yourself, and let that be enough."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "present_parent",
+        "label": "I'm physically home but not present with my kids"
+       },
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "You wept in your car and now you wonder if you are enough for your daughter. Kausalya showed Ram the whole universe, yet she only wanted him to be a small boy with curd on his face. The grandest thing about a child is the ordinary hours of childhood."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The verdict you keep passing",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 140,
+   "llm": 5409,
+   "total": 16802,
+   "select": 11246
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are holding your daughter's question in the car, and the guilt is heavy. You feel split between the work that needs your mind and the home that needs your presence. It is a lot to carry."
+  ],
+  [
+   "scene",
+   "After the great war, Yudhishthira sits crushed by grief, wanting to walk away from everything he won. Arjuna stands beside him, speaking not of glory but of the quiet work that makes a life. And Yudhishthira replied:"
+  ],
+  [
+   "sanskrit",
+   "बहुकल्याणमिच्छन्त ईहन्ते पितरः सुतान् / तपसा ब्रह्मचर्येण वन्दनेन तितिक्षया उपवासैस्तथेज्याभिर्व्रतकौतुकमङ्गलैः / लभन्ते मातरो गर्भांस्तान्मासान्दश बिभ्रति."
+  ],
+  [
+   "line",
+   "In plain words: Parents give years of patience, prayer and sacrifice, hoping only for their children's good."
+  ],
+  [
+   "unpack",
+   "Arjuna reminds Yudhishthira that parents give years of patience, prayer and sacrifice, hoping only for their children's good. Fathers long for every good thing for their children, and strive for them with discipline, prayer and patience. Mothers, through fasts and vows, conceive them and carry them for ten months. This is easier said than done, because grief and guilt are real. But they are not the end. The good you do next counts."
+  ],
+  [
+   "for_you",
+   "When your daughter asks why you are not there, remember the care you give her in the quiet moments you do not see. That care is already there, and it is enough."
+  ],
+  [
+   "close",
+   "You are not starting from nothing."
+  ]
+ ],
+ "depth": {
+  "life": "You are still in the car, holding the weight of your daughter's question. The guilt is loud, and you feel you are only ever half a mother to your children and half a manager at work.",
+  "points": "Parents give years of patience, prayer and sacrifice, hoping only for their children's good. The care you give your children is already there in the quiet moments you do not see. The good you do next counts.",
+  "practice": "Let your daughter's question sit with you without answering it right now. Just notice it and let it be.",
+  "question": "What does it feel like to be the person who is already giving all this care?"
+ }
+}

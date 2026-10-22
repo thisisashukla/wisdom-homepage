@@ -1,0 +1,517 @@
+{
+ "persona": {
+  "id": "in_boomer_retired_empty",
+  "market": "India (Lucknow)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "66, retired bank officer in Lucknow, wife passed 2 years ago, son in Toronto, daughter in Mumbai. Reads the Gita occasionally, wants to understand it properly.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 3,
+   "topic": "meaning",
+   "follow": "after_retiring"
+  },
+  "note": "after my wife left us the house is very quiet. children call on sunday. I have time now and I want to read Gita properly not just the shlokas everyone forwards on whatsapp",
+  "note_source": "voice",
+  "expect_stance": "seeking"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": null,
+   "emotion": "quiet and searching",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "Seven days from a quiet house and forwarded shlokas to a Gita that speaks to the silence, not around it.",
+   "week_beats": {
+    "hook": "You recognise the quiet and the wish to read the Gita properly, not just the forwards.",
+    "diagnose": "You see that the forwarded verses are what the Gita calls living only for what passes.",
+    "steady": "You hold that the Gita is a conversation about what does not pass, not a collection of verses.",
+    "act": "You try reading one chapter slowly, for the question it asks you, not for a verse to forward.",
+    "story": "A man who lost his wife and his work, and found in the Gita not an answer but a way to ask the right questions."
+   },
+   "confidence": 0.65,
+   "core_struggle": "A retired widower with a quiet house who wants to read the Gita deeply, not just the forwarded shlokas.",
+   "mirror": "You have the time the house is quiet, and you want to read the Gita for what it actually says, not the forwards.",
+   "insight": "It is the quiet that is asking, not the shlokas. What you want is not more verses but the thread that holds them, so the house does not feel like an ending.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.725,
+     "source": "note"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 1.43,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.861,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.838,
+     "source": "chip"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.575,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A quiet house and a wish to read the Gita for what it actually teaches, not just the verses people forward.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What is real in us cannot be lost, and the Gita is not a collection of verses but a conversation about what does not pass.",
+    "act": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself.",
+    "story": "A man who lost his wife and his work, and found in the Gita not an answer but a way to ask the right questions."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "template",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet and the forwards",
+    "What does not pass",
+    "The one who asks the question"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "wife passed away",
+    "house is very quiet",
+    "children call on Sunday",
+    "wants to read Gita properly, not forwarded shlokas"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "act:act_not_actionable",
+    "seat:missing",
+    "retried:3",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:fallback_line=1,preachy=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.5.11",
+     "ref": "Bhagavad Gita 5.11",
+     "ref_iast": "Bhagavad Gītā 5.11",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on working in the world without being stained by it.",
+     "sanskrit": "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि । योगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वाऽऽत्मशुद्धये ॥",
+     "line": "Wise people work with body, mind and heart, not for gain, but to become clearer within.",
+     "translation": "With body, mind, intellect and even the senses alone, the yogis act without attachment, for the purification of the self.",
+     "why": "Be in the mess without letting it soak in.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.2",
+      "title": "Marks of the knower and the doer",
+      "summary": "The disciplined person acts without attachment, like a lotus leaf untouched by water, and finds peace by letting go of the fruit.",
+      "story_hook": "",
+      "lesson": "Be in the mess without letting it soak in."
+     },
+     "score": 2.0774,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, telling him that wise people use their body, mind, intellect and senses to act in the world, but they do not let their work stain them. They do this not to get results, but to clear their own hearts.",
+     "for_you": "Your days are quiet now, and you are reading the Gita to find what holds it all together. The work of understanding is not about filling the silence, but about letting your mind grow clear inside it."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": null,
+     "score": 3.145,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "A teacher tells a student about a hidden treasure of gold buried in the ground. People walk over it every day and never notice. In the same way, we pass into the world of Brahman each night in deep sleep and do not recognize it. We are carried away by untruth, so we do not find what is already ours.",
+     "for_you": "You have been walking past your own inner quiet every day without recognizing it. The Gita calls this living only for what passes. The treasure is not out there. It is the stillness you already enter each night and leave behind each morning."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.3.35.chaupai.3",
+     "ref": "Ramcharitmanas, Aranya Kand 3.35 (chaupai 3)",
+     "ref_iast": "Rāmcaritmānas, Araṇya Kāṇḍ 3.35",
+     "family": "rcm",
+     "speaker": "Shiva",
+     "listener": "Parvati",
+     "setting": "Shiva tells Parvati what he himself has found.",
+     "sanskrit": "उमा कहउँ मैं अनुभव अपना। सत हरि भजनु जगत सब सपना॥ पुनि प्रभु गए सरोबर तीरा। पंपा नाम सुभग गंभीरा ॥",
+     "line": "I tell you from my own experience: love for God is real; the rest passes like a dream.",
+     "translation": "Uma, I tell you my own experience: worship of Hari is real, and the whole world is a dream.",
+     "why": null,
+     "misuse": "Not 'nothing in your life matters'; Shiva is naming what lasts.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": null,
+     "score": 3.1858,
+     "beat": "steady",
+     "role_fit": 0.494,
+     "meaning": "Shiva sits with Parvati and speaks from his own finding. He says that love for God is real, and everything else passes like a dream. He is not saying your life did not matter. He is naming what lasts when all else fades. The rest is a dream. This is the one thing you can hold when the house grows quiet.",
+     "for_you": "Turn inward, come to know the self, and let your work become service and offering; a life lived from there is full."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.13",
+     "ref": "Bhagavad Gita 2.13",
+     "ref_iast": "Bhagavad Gītā 2.13",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥",
+     "line": "Childhood, youth, old age: the body keeps changing. The wise aren't thrown by the next change.",
+     "translation": "Just as the embodied self passes through childhood, youth and old age in this body, so it passes on to another body. The steady person is not bewildered by this.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.8416,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": "Krishna speaks to Arjuna, who is grieving the coming war. He tells him that just as a person moves through childhood, youth and old age in one body, so the self moves into another body. The steady person is not bewildered by this change. What is truly in us is never born and never dies, so grief for what must pass should not overwhelm us.",
+     "for_you": "You have lost what you walked through every day, and the quiet house holds that loss. But what you truly are outlasts every loss and every passing pain. The Gita is not a collection of verses to fix the silence. It is a conversation about what does not pass, the part of you that remains."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 3.3237,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "A seer speaks to a reader. The verses before this called the world divine property and said to enjoy it by letting go. Now the seer says to do your work and wish to live a full hundred years. This means you do not have to stop, but you hold what you do lightly. You keep working, and you see yourself in everyone you meet. It is a way to live without being bound.",
+     "for_you": "The house is quiet, and the children are busy. You can read one chapter of the Gita today, but only to find the question it asks. Let the chapter ask you something, and do not look for a verse to send to anyone."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.5.12.26",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 12.26",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha, after Janaka's story, praises clear understanding (prajna).",
+     "sanskrit": "य एव यत्नः क्रियते बाह्यार्थोपार्जने जनैः । स एव यत्नः कर्तव्यः पूर्वं प्रज्ञाविवर्धने ॥",
+     "line": "Put the effort you spend earning money into growing wiser first.",
+     "translation": "The very effort people put into earning outer wealth should first be put into growing wisdom.",
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 3.1757,
+     "beat": "act",
+     "role_fit": 0.865,
+     "meaning": "King Janaka, after hearing the sages sing of the self, questions everything. He climbs to his palace roof, shaken. When his doorkeeper calls him to his duties, he does not run. He gets up and does his work, but with a mind that no longer clutches. The effort people put into earning outer wealth should first be put into growing wisdom. You do not have to leave your life to change it. Do the day's work with a mind that does not clutch.",
+     "for_you": "Tomorrow you will sit with the Gita. Before you open it, let your mind rest. Do not reach for a verse to forward. Let the quiet be your first work today."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.maitrayani.brihadratha",
+     "title": "King Brihadratha's despair",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "King Brihadratha",
+      "Shakayanya"
+     ],
+     "story_hook": "King Brihadratha had everything a king could want, and walked away from all of it.",
+     "summary": "A king hands his throne to his son and goes to the forest, overwhelmed by how everything decays. When a sage offers him a wish, he says he feels like a frog in a dark well and asks to be shown the way out.",
+     "lesson": "Even success can leave you feeling stuck; asking for help is the first step out.",
+     "matched": [
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "anchor": {
+      "id": "up_maitrayani.13",
+      "ref": "Maitri Upanishad 1.7",
+      "ref_iast": "Maitrī Upaniṣad 1.7",
+      "family": "up",
+      "speaker": "King Brihadratha",
+      "listener": "The sage Shakayanya",
+      "setting": "The king's plea after listing everything that passes.",
+      "sanskrit": "सोऽहमित्येतद्विधेऽस्मिन्संसारे किं कामोपभोगैर्यैरेवाश्रितस्यासकृदिहावर्तनं दृश्यत इत्युद्धर्तुमर्हसीत्यन्धोदपानस्थो भेक इवाहमस्मिन्संसारे भगवंस्त्वं नो गतिस्त्वं नो गतिः ॥",
+      "line": "Like a frog in a dark well, I am stuck in this life. Show me the way out.",
+      "translation": "In such a world, what use is the enjoyment of desires, when one who feeds on them is seen to return here again and again? Please lift me out. In this world I am like a frog in a dark well. Sir, you are my way, you are my way.",
+      "why": "Even success can leave you feeling stuck; asking for help is the first step out.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "retirement",
+        "label": "I've retired and feel lost"
+       },
+       {
+        "id": "no_meaning",
+        "label": "Nothing is wrong but nothing feels meaningful"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.maitrayani.brihadratha",
+       "title": "King Brihadratha's despair",
+       "summary": "A king hands his throne to his son and goes to the forest, overwhelmed by how everything decays. When a sage offers him a wish, he says he feels like a frog in a dark well and asks to be shown the way out.",
+       "story_hook": "King Brihadratha had everything a king could want, and walked away from all of it.",
+       "lesson": "Even success can leave you feeling stuck; asking for help is the first step out."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A king who had everything still felt like a frog in a dark well",
+     "teaser": "A king who had everything still felt like a frog in a dark well",
+     "for_you": "The quiet house asks the same thing Brihadratha asked: how to see the way out of a life that feels like a dark well. Your search for the Gita is not about finding answers to fill the silence."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet and the forwards",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 256,
+   "llm": 4673,
+   "total": 10433,
+   "select": 5499
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is quiet. You sit with that quiet, and it asks questions. You want to read the Gita properly now. You want to know what holds it all together."
+  ],
+  [
+   "scene",
+   "Krishna looks at Arjuna on the battlefield. Arjuna is broken by grief and confusion about what he must do. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि, योगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वाऽऽत्मशुद्धये."
+  ],
+  [
+   "line",
+   "In plain words: Wise people work with body, mind and heart, not for gain, but to become clearer within."
+  ],
+  [
+   "unpack",
+   "Krishna says that the wise person acts with their whole self. They use their body, their mind, their intellect, and their senses. But they do not act to gain something. They act so they can become clearer within. This is easier said than done, because the world always asks for a result. But the work itself can be the purification."
+  ],
+  [
+   "for_you",
+   "Let your reading of the Gita be your work today. You do not need to fill the quiet. You only need to let your mind grow clear inside it."
+  ],
+  [
+   "close",
+   "What if the quiet is the classroom?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit in the quiet house. The silence is not empty. It is asking what you are doing here. You read the Gita to find the thread that holds everything together, so the quiet does not feel like an ending.",
+  "points": "The texts say that doing things is not about getting something. It is about letting the mind become clear. The quiet is not a problem to solve. It is the space where you can see what is real.",
+  "practice": "Sit in the quiet for five minutes. Do not read anything. Just notice the silence without trying to fill it or push it away.",
+  "question": "What is the quiet asking you to see?"
+ }
+}

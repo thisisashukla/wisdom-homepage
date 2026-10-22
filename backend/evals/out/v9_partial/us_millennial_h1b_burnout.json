@@ -1,0 +1,522 @@
+{
+ "persona": {
+  "id": "us_millennial_h1b_burnout",
+  "market": "USA (Seattle)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "33, software engineer at a big tech company in Seattle, on H-1B, green card queue, wife on H4 can't work. Performance review season.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "if I get a bad rating I lose the visa and we have 60 days to leave. my wife gave up her career to be here. I check slack at 2am. I don't remember the last weekend I wasn't thinking about work",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "terrified and wired",
+   "bridge": "The sixty-day clock you carry is what the Gita calls fear: the mind multiplying what has not happened, and forgetting that what is real in you cannot be lost.",
+   "week_thesis": "From a mind that is held by the sixty-day clock to one that can rest for one hour, and to the truth that what is real in you cannot be taken.",
+   "week_beats": {
+    "hook": "You recognise the fear and the two in the morning messages, named without judgement.",
+    "diagnose": "You see that the mind is multiplying what has not happened, and that the only thing that can be lost is the job, not the self.",
+    "steady": "You hold that what is real in you cannot be cut by a rating or taken by a deadline.",
+    "act": "You try letting the mind rest for one hour before sleep, and you speak one true thing to your wife about what you are carrying.",
+    "story": "A man whose family depends on his job, who faces the loss of everything, shows you what it means to stand in what cannot be taken."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.75,
+   "core_struggle": "A man on a work visa lives in fear that a bad rating could force them to leave within sixty days, and cannot switch off from the job that is his family's only security.",
+   "mirror": "You lie awake at two in the morning checking messages, and the next morning you check again before you have even opened your eyes.",
+   "insight": "It is not the rating that keeps you up. It is the mind multiplying what has not happened, while the one thing that is real in you cannot be taken by any rating.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.717,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 1.02,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The mind that will not settle, replaying the worst rating and the sixty-day clock, while the body lies awake at two in the morning still on call.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened, and the mind runs with it.",
+    "steady": "What is real in you cannot be cut by a rating or taken by a deadline; the mind that imagines the loss is not the thing that can be lost.",
+    "act": "Practise letting the mind rest for one hour before sleep; speak one true thing to your wife about what you are carrying; do the work fully in the day and give the night to sleep.",
+    "story": "A man whose family depends on his job, who faces the loss of everything and must learn to stand in what cannot be taken."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The sixty-day clock",
+    "What can and cannot be lost",
+    "More than the job"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "a bad rating could trigger visa loss in sixty days",
+    "checks work messages at two in the morning",
+    "cannot remember the last weekend without thinking about work"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "seat:missing",
+    "day1_other_text:gitas",
+    "retried:1",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:cliche=1,fallback_line=1,gendered=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:scene=cliche",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "ashtavakra.18.61",
+     "ref": "Ashtavakra Gita 18.61",
+     "ref_iast": "Aṣṭāvakra Gītā 18.61",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "निवृत्तिरपि मूढस्य प्रवृत्ति रुपजायते । प्रवृत्तिरपि धीरस्य निवृत्तिफलभागिनी ॥",
+     "line": "A restless mind turns even rest into busyness. A still mind finds rest even in work.",
+     "translation": "Even a fool's retreat from action turns into activity; even a wise person's activity bears the fruit of stillness.",
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "phone_addiction",
+       "label": "I'm addicted to my phone"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 2.8307,
+     "beat": "hook",
+     "role_fit": 0.26,
+     "meaning": "At the end of the long chapter on peace, Ashtavakra sits with Janaka and says that a restless mind turns even rest into busyness. A still mind finds rest even in work. The restless chase peace and never find it. The wise find it inside ordinary life. This is what happens when the mind cannot stop multiplying what has not happened.",
+     "for_you": "The two in the morning messages are the mind turning rest into busyness. The rating is not the real thing keeping you awake. The clock is not the danger. The danger is that the mind has forgotten this."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 3.2471,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Years later, two old friends meet again, and one admits he never found peace. He says that carried along on endless waves of tasks, the mind never rests. Its depths dance with worry. He says, 'This I have done, this I am doing, this I will do,' and so the bird of the mind faints, tangled in a net of reckonings. The point is that years of hard effort without inner understanding can leave you exactly where you started.",
+     "for_you": "You are caught in that same net. The visa, the rating, the midnight messages, the sixty days, all of it is what the mind says must be done. It is exhausting. But the work is not the whole of you. The rating can touch the job, not the life inside you."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.7.9",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 7.9",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram.",
+     "sanskrit": "व्यसने वार्थकृच्छ्रे वा भये वा जीवितान्तगे। विमृशंश्च स्वया बुद्ध्या धृतिमान् नावसीदति॥",
+     "line": "In loss, money trouble or fear, the steady person thinks it through and does not go under.",
+     "translation": "In disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink.",
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 3.5638,
+     "beat": "steady",
+     "role_fit": 0.85,
+     "meaning": "Ram is grieving, and Sugriva steadies him. Sugriva says that in disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink. The point is that two people in trouble can carry each other.",
+     "for_you": "The sixty-day clock is loud. Let it be loud for a moment. Then ask yourself what is real in you that no rating can cut. That steadiness is not a feeling. It is the fact that you are still here, still thinking, still able to choose where to put your attention."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.20",
+     "ref": "Bhagavad Gita 5.20",
+     "ref_iast": "Bhagavad Gītā 5.20",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+     "sanskrit": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् । स्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः ॥",
+     "line": "Don't get carried away by good news or crushed by bad. Keep your understanding steady.",
+     "translation": "One should not rejoice on getting what is pleasant nor be troubled on getting what is unpleasant. Steady in understanding and undeluded, the knower of Brahman abides in Brahman.",
+     "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.3",
+      "title": "The yoga of knowledge",
+      "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+      "story_hook": "",
+      "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+     },
+     "score": 3.2581,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Krishna is speaking to Arjuna about a person who sees clearly. Such a person does not leap for joy at good news or sink when bad news arrives. Their understanding stays steady and they are not fooled by passing events. They find their happiness within, knowing that sense pleasures always end in sorrow. They can withstand desire and anger because they know what is real in them cannot be lost.",
+     "for_you": "You are not crushed by a bad rating and you are not carried away by a good one. You can let the sixty-day clock pass without letting it own your mind. You hold what is real in you, and no deadline can cut it."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.184,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna tells Arjuna that his right is only to the work itself, never to its fruits. He is in the middle of a great war, and Arjuna is paralyzed by what will happen if he fights. Krishna says do not let the fear of results make you stop. The work is yours to do. The result is not yours to hold. This does not mean you could stop caring or stop planning. It means you do the work fully, and you let go of owning the outcome.",
+     "for_you": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.12",
+     "ref": "Bhagavad Gita 12.12",
+     "ref_iast": "Bhagavad Gītā 12.12",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks which devotee is best; Krishna offers a ladder of practices.",
+     "sanskrit": "श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते । ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम् ॥",
+     "line": "Practice is good, understanding better, meditation better still. But letting go of results brings peace at once.",
+     "translation": "Knowledge is better than mere practice; meditation is better than knowledge; giving up the fruit of action is better than meditation. From that renunciation, peace follows immediately.",
+     "why": "If the ideal is too hard, take the next step down, and keep going.",
+     "misuse": "Not 'stop caring how things turn out'. Peace comes from releasing the grip, not from indifference.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p12.1",
+      "title": "Form or formless: which devotee is best, and the ways to reach him",
+      "summary": "Krishna says devotion to a personal form is easier, then offers a ladder: fix your mind; if not, practise; if not, work for me; if not, let go of results. Letting go brings peace at once.",
+      "story_hook": "",
+      "lesson": "If the ideal is too hard, take the next step down, and keep going."
+     },
+     "score": 3.0938,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Arjuna wants to know who is the best devotee, and Krishna offers a ladder of practices. First comes devotion to a form. Then fixing the mind. Then practice. Then working for me. But Krishna says that letting go of results brings peace at once. If the higher steps feel too hard, take the step just below you and keep going. Peace does not wait for perfection.",
+     "for_you": "You have tried to meditate and you have tried to work without attachment, and both have felt impossible. Take the next rung: let your mind rest for one hour before sleep, without checking the rating. Let that be enough for today."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.search_despair",
+     "title": "Hanuman's search and near despair",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman"
+     ],
+     "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+     "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+     "lesson": "When you have looked everywhere, look again; giving up costs too much.",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "anchor": {
+      "id": "vr.5.12.10",
+      "ref": "Valmiki Ramayana · Sundara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 12.10",
+      "family": "vr",
+      "speaker": "Hanuman",
+      "listener": "himself",
+      "setting": "Having searched all of Lanka without finding Sita, Hanuman fights off despair.",
+      "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम्। भूयस्तत्र विचेष्यामि न यत्र विचयः कृतः॥",
+      "line": "Refusing to lose heart is the root of success. Look again where you have not yet looked.",
+      "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. I will search again, in the places I have not yet searched.",
+      "why": "When you have looked everywhere, look again; giving up costs too much.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.search_despair",
+       "title": "Hanuman's search and near despair",
+       "summary": "Hanuman searches Lanka all night without finding Sita. He is close to despair, weighing what failure will mean for everyone, then tells himself that refusing to lose heart is the root of success, and searches again.",
+       "story_hook": "Hanuman had searched every palace in Lanka by moonlight, and she was nowhere.",
+       "lesson": "When you have looked everywhere, look again; giving up costs too much."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "teaser": "Hanuman searched every palace in Lanka by moonlight, and Sita was nowhere",
+     "for_you": "Hanuman searched every palace in Lanka and found nothing. He was close to despair, weighing what failure would mean for everyone. But he refused to lose heart. He searched again. You have already searched everywhere in your mind."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The sixty-day clock",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 167,
+   "llm": 4729,
+   "total": 13032,
+   "select": 8128
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are terrified and wired. Your body is holding the weight of an unknown future. You are watching the clock. You are afraid that a single number could end everything. That fear is loud right now."
+  ],
+  [
+   "scene",
+   "In the long closing chapter on peace, Ashtavakra paints the calm of the wise. Ashtavakra said to Janaka:"
+  ],
+  [
+   "sanskrit",
+   "निवृत्तिरपि मूढस्य प्रवृत्ति रुपजायते, प्रवृत्तिरपि धीरस्य निवृत्तिफलभागिनी."
+  ],
+  [
+   "line",
+   "In plain words: A restless mind turns even rest into busyness. A still mind finds rest even in work."
+  ],
+  [
+   "unpack",
+   "Ashtavakra says that a restless mind turns even rest into busyness. A still mind finds rest even in work. This is the core of the teaching. The mind is a powerful force. It can take a quiet room and turn it into a busy office. It can take a safe moment and turn it into a threat. This is easier said than done, because the mind has been trained to scan for danger. It is looking for the next disaster. But the truth is that peace is not a place you go."
+  ],
+  [
+   "for_you",
+   "Right now, your mind is turning the night into an office. The two in the morning messages are not the real danger. They are the mind turning rest into busyness. The rating is not the real thing keeping you awake. The clock is not the danger. The danger is that the mind has forgotten this."
+  ],
+  [
+   "close",
+   "What if the rest you need is not in a new place, but in the next breath?"
+  ]
+ ],
+ "depth": {
+  "life": "You are checking messages at two in the morning again. The phone is your whole world right now. The visa hangs by a thread. You are terrified, and your body is wired. This is your life, and it feels like it is happening too fast to stop.",
+  "points": "The Gita says a restless mind turns even rest into busyness. The danger is not the rating. The danger is that your mind has forgotten it is not the rating that makes you. The mind multiplies what has not happened.",
+  "practice": "Put the phone face down and set a timer for ten minutes. Sit without looking at it.",
+  "question": "What would it feel like to let the phone be quiet for just one hour?"
+ }
+}

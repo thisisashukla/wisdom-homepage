@@ -91,38 +91,49 @@ export default function HomeAnimations() {
       navObserver.observe(heroEl)
     }
 
-    // ── Cursor glow (desktop only) ────────────────────────────────────
-    const glow = document.createElement('div')
-    glow.className = 'cursor-glow'
-    document.body.appendChild(glow)
-
-    let glowVisible = false
-    const onMouseMove = (e: MouseEvent) => {
-      if (!glowVisible) {
-        glow.style.opacity = '1'
-        glowVisible = true
-      }
-      glow.style.transform = `translate(${e.clientX - 160}px, ${e.clientY - 160}px)`
-    }
-    const onMouseLeave = () => {
-      glow.style.opacity = '0'
-      glowVisible = false
-    }
-
-    // Only on non-touch devices
-    if (window.matchMedia('(hover: hover)').matches) {
-      document.addEventListener('mousemove', onMouseMove)
-      document.addEventListener('mouseleave', onMouseLeave)
-    }
+    // ── Scroll reveals (.rv) ───────────────────────────────────────────
+    // Premium/calm personality: one entrance pattern, stagger capped so a
+    // group never takes longer than ~420ms to arrive. Content stays visible
+    // if this never runs, because hiding only applies under html.motion.
+    const root = document.documentElement
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    root.classList.add('motion')
+    document.querySelectorAll<HTMLElement>('[data-stagger]').forEach((group) => {
+      const step = Number(group.dataset.stagger || 60)
+      const kids = Array.from(group.querySelectorAll<HTMLElement>(':scope > .rv, :scope > * > .rv'))
+      const cap = 420
+      kids.forEach((k, i) => k.style.setProperty('--d', `${reduce ? 0 : Math.min(i * step, cap)}ms`))
+    })
+    const rvObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return
+          entry.target.classList.add('in')
+          rvObserver.unobserve(entry.target)
+        })
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    )
+    document.querySelectorAll('.rv').forEach((el) => rvObserver.observe(el))
+    const weekObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return
+          entry.target.classList.add('drawn')
+          weekObserver.unobserve(entry.target)
+        })
+      },
+      { threshold: 0.4 }
+    )
+    document.querySelectorAll('.week').forEach((el) => weekObserver.observe(el))
 
     return () => {
       revealObserver.disconnect()
       countObserver.disconnect()
       navObserver?.disconnect()
       faqHandlers.forEach(({ btn, fn }) => btn.removeEventListener('click', fn))
-      document.removeEventListener('mousemove', onMouseMove)
-      document.removeEventListener('mouseleave', onMouseLeave)
-      if (document.body.contains(glow)) document.body.removeChild(glow)
+      rvObserver.disconnect()
+      weekObserver.disconnect()
     }
   }, [])
 

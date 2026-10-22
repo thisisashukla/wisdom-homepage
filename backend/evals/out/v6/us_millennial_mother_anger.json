@@ -1,0 +1,512 @@
+{
+ "persona": {
+  "id": "us_millennial_mother_anger",
+  "market": "USA (Chicago)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "39, Indian-American, two kids, runs a dental practice with her husband, loses her temper with the kids and hates herself after.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "phone_hours": 3,
+   "topic": "mind",
+   "follow": "anxious"
+  },
+  "note": "I yelled at my 7 year old this morning for spilling milk and the look on his face. I am turning into my mother. I run a practice, I manage 12 people calmly, and then at home I just snap",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and frightened of herself",
+   "bridge": "What you are living with is what the texts call anger that takes over, and that is where this week begins.",
+   "week_thesis": "From being shaken by the snap to holding the moment before it, and giving the one hour of your own that will change the home.",
+   "week_beats": {
+    "hook": "You recognise the snap and the shame, and the fear of becoming the mother you do not want to be.",
+    "diagnose": "You see that the anger comes from a part of you that has not been held, and that it breaks on the one you love most.",
+    "steady": "You hold that the effort to see the moment before the snap is itself the work, and that you can begin again in every moment.",
+    "act": "You try one practice: when the heat rises, breathe and name the feeling, then speak to your child what you see in him."
+   },
+   "undisclosed": false,
+   "texts": [],
+   "confidence": 0.7,
+   "core_struggle": "A working mother who manages twelve people calmly at work snaps at her child at home, and is terrified she is becoming the mother she does not want to be.",
+   "mirror": "You manage twelve people without a raised voice, and then at home you snap at the one person you would never hurt on purpose.",
+   "insight": "It is not the milk that set you off. It is the part of you that has not been held, and when it finally breaks, it breaks on the one you love most.",
+   "mechanism": "anger_reactivity",
+   "mechanism_label": "Anger that takes over",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.588,
+     "source": "note"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.41,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.25,
+     "source": "chip"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.008,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.537,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of a snap that was not you, and the fear of becoming the mother you spent your life running from. I'm physically home but not present with my kids.",
+    "diagnose": "Blocked wanting turns into anger, and anger clouds judgement; the mind says and does what it later regrets.",
+    "steady": "Praise and blame come and go; what is yours is the effort to see the moment before the snap, and to begin again in it.",
+    "act": "Practise seeing the moment before the snap; when you feel the heat, breathe and name the feeling; then speak to your child what you see in him.",
+    "story": "A mother who lost her temper and saw the look on her child's face, who then learned to hold herself in the moment before the anger took her."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The snap and the look",
+    "The part that has not been held",
+    "The hour that is yours"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "manages people calmly at work"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "retried:2",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:blame=1,copied=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.9.22",
+     "ref": "Bhagavad Gita 9.22",
+     "ref_iast": "Bhagavad Gītā 9.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on worship for rewards and worship without desire.",
+     "sanskrit": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥",
+     "line": "Turn to me with your whole heart, and I will carry what you lack and guard what you have.",
+     "translation": "To those who think of me alone and worship me, ever devoted, I bring what they lack and preserve what they have.",
+     "why": "Trust eases the worry of getting and keeping.",
+     "misuse": "Not 'God will pay the bills, so don't plan'. Trust eases worry; it doesn't replace effort or prudence.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p09.5",
+      "title": "Worship with and without desire, and their fruits",
+      "summary": "Those who worship for heavenly rewards return when merit runs out; those who think of him alone are carried and protected.",
+      "story_hook": "",
+      "lesson": "Trust eases the worry of getting and keeping."
+     },
+     "score": 2.1432,
+     "beat": "hook",
+     "role_fit": 0.285,
+     "meaning": "Krishna is speaking to Arjuna about two kinds of worship. One group worships with a list of demands. They want heaven, wealth, or safety, and they keep track of what they are owed. When the rewards run out, they have to come back. The other group worships with no list. They think of Krishna alone, and they give everything they have. Krishna says to this second group: I will carry what you lack and guard what you have. The idea is that trust takes the weight off the mind.",
+     "for_you": "You are home with your children right now, but you are not truly there. You are holding the shame of the snap and the fear of becoming someone you do not want to be."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 4.0387,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Krishna is telling Arjuna what holds a steady mind together. He says that when you dwell on something, you become attached to it. That attachment turns into wanting, and when wanting is blocked, it turns into anger. The work of steadiness is in where you let your mind rest.",
+     "for_you": "At work you manage twelve people with calm. At home, the milk spills and something else breaks. The anger was already there, waiting in the quiet. Today, notice what you are dwelling on when the house is still. Is it the work that follows you home, or the feeling that you are not quite enough?"
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": null,
+     "score": 3.5326,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher is laying down rules for someone who has left the world behind. The teacher says the body should not be worn out chasing pleasure or running from pain. If someone praises you, do not swell with pride. If someone blames you, do not curse them back. The idea is to stop wearing yourself down with the swings of feeling good and feeling bad. It asks for a steady mind that does not get carried away by either side.",
+     "for_you": "You carry the weight of both the office and the home. When you snap, it is not because the child deserved it. It is because you have been running from your own tiredness without letting it rest. The effort to see the moment before the snap is the real work."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.7",
+     "ref": "Bhagavad Gita 6.7",
+     "ref_iast": "Bhagavad Gītā 6.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः । शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥",
+     "line": "Self-mastered and calm, you stay centred in heat and cold, pleasure and pain, praise and insult.",
+     "translation": "For one who has conquered himself and is at peace, the higher self stays steady in cold and heat, pleasure and pain, honour and dishonour.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Staying steady under insult is not accepting mistreatment; you can stay calm and still speak up.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.356,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": null,
+     "for_you": "The effort to see the moment before the snap is the work itself, and you can begin again in every moment. Hold that you are your own friend. In the quiet of your own hour, choose the friend."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.3448,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat after his father's death and Ram's exile. Bharat's heart is heavy with grief and duty, yet his mind knows what must come next. The sage tells him to keep courage in his heart and do what this moment asks of him. It is a call to move from sorrow into right action, to trust the present step even when the path is unclear.",
+     "for_you": "You know the shape of the moment now. When you feel the heat rise at home, take one breath and name the feeling. Then tell your child what you see in them. That is what this moment asks of you."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.29.12",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 29.12",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "Draupadi",
+     "setting": "In exile, Draupadi urges Yudhishthira to answer injustice with force; he argues for forgiveness.",
+     "sanskrit": "आत्मानं च परांश्चैव त्रायते महतो भयात् / क्रुध्यन्तमप्रतिक्रुध्यन्दूयोरेष चिकित्सकः",
+     "line": "Don't answer anger with anger. The one who stays calm protects both people, and heals both.",
+     "translation": "One who does not get angry back at an angry person saves both himself and the other from great danger. He becomes the healer of both.",
+     "why": "Anger rarely heals anything; forgiveness has limits. Wisdom is knowing which a moment needs.",
+     "misuse": "Staying calm is not the same as staying in a situation where you are unsafe.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.kshama_or_tejas",
+      "title": "Forgiveness or force: Draupadi and Yudhishthira",
+      "summary": "In the forest, Draupadi asks why Yudhishthira does not answer injustice with anger, citing Prahlada's advice that neither force nor forgiveness is always right. Yudhishthira replies that anger destroys and forgiveness holds the world together.",
+      "story_hook": "Thirteen years into exile, Draupadi looked at her husband and asked why he was not angry.",
+      "lesson": "Anger rarely heals anything; forgiveness has limits. Wisdom is knowing which a moment needs."
+     },
+     "score": 3.2017,
+     "beat": "act",
+     "role_fit": 0.708,
+     "meaning": "Yudhishthira speaks to Draupadi in the forest. She wants him to meet injustice with force, but he says anger only destroys. He tells her that one who does not answer anger with anger saves both people from great danger. He becomes the healer. The verse asks which response a moment truly needs.",
+     "for_you": "You are the healer here. When the heat rises, breathe and name the feeling. Then speak to your child what you see in them. This is how you save both of you from the danger of the snap."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.tara_calms_lakshman",
+     "title": "Tara calms Lakshman",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Tara",
+      "Lakshman",
+      "Sugriva"
+     ],
+     "story_hook": "Lakshman came through the gates ready to fight, and found a woman standing in his way.",
+     "summary": "Lakshman storms into Kishkindha, bow twanging. Tara meets him with reason and courtesy: strong people think before anger takes over; bear the slip of someone on your side. Sugriva apologises and Lakshman asks forgiveness for his own harsh words.",
+     "lesson": "A calm voice can turn a confrontation into an apology on both sides.",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.33.39",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 33.39",
+      "family": "vr",
+      "speaker": "Tara",
+      "listener": "Lakshman",
+      "setting": "Lakshman storms into Kishkindha, furious at Sugriva's delay; Sugriva's queen Tara meets him calmly.",
+      "sanskrit": "न कोपकालः क्षितिपालपुत्र न चापि कोपः स्वजने विधेयः। त्वदर्थकामस्य जनस्य तस्य प्रमादमप्यर्हसि वीर सोढुम्॥",
+      "line": "This is no time for anger. Bear the slip of someone who is on your side.",
+      "translation": "Prince, this is no time for anger, and anger should not be turned on your own people. Hero, you should bear even the lapse of someone who wants your good.",
+      "why": "A calm voice can turn a confrontation into an apology on both sides.",
+      "misuse": "About lapses by people who mean well, not about repeated mistreatment.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "anger_outburst",
+        "label": "I lost my temper and regret it"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.tara_calms_lakshman",
+       "title": "Tara calms Lakshman",
+       "summary": "Lakshman storms into Kishkindha, bow twanging. Tara meets him with reason and courtesy: strong people think before anger takes over; bear the slip of someone on your side. Sugriva apologises and Lakshman asks forgiveness for his own harsh words.",
+       "story_hook": "Lakshman came through the gates ready to fight, and found a woman standing in his way.",
+       "lesson": "A calm voice can turn a confrontation into an apology on both sides."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Lakshman stormed the gates ready to fight, and a queen stood calmly in his way",
+     "teaser": "Lakshman stormed the gates ready to fight, and a queen stood calmly in his way",
+     "for_you": "At home, the milk can wait, but your child cannot. When you feel that familiar heat rise, let it land on the floor instead of on them. You did not become that mother. You are simply tired. This time, choose the quiet that holds you both."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The snap and the look",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 544,
+   "llm": 4663,
+   "total": 12823,
+   "select": 7610
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You manage twelve people calmly at work, but at home you snap at your child and then freeze with fear. You are terrified you are becoming the mother you do not want to be. The shame is heavy, and you are holding it alone."
+  ],
+  [
+   "scene",
+   "In a field before a great war, Arjuna asks Krishna about the difference between worship that seeks rewards and worship that gives everything away. Krishna speaks to him about two paths. One path is a list of demands. The other path is a whole heart with no conditions. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते, तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्."
+  ],
+  [
+   "line",
+   "In plain words: Turn to me with your whole heart, and I will carry what you lack and guard what you have."
+  ],
+  [
+   "unpack",
+   "This is easier said than done, because your mind is already managing so much. The idea is not to add another task. It is to shift where your trust sits. When you worship with a list, you are always checking your balance. When you turn with a whole heart, you let go of the need to control the outcome. Trust eases the worry of getting and keeping. It does not erase the work. It just removes the weight of having to secure everything yourself."
+  ],
+  [
+   "for_you",
+   "For one hour today, let the work wait. Put your phone away and sit with your child. Let them see you fully, without the manager in your head. That is your whole heart showing up."
+  ],
+  [
+   "close",
+   "What would it feel like to put the list down for just one hour?"
+  ]
+ ],
+ "depth": {
+  "life": "You manage twelve people calmly, and then you are home with your child, and something inside you snaps. You are terrified you are becoming the mother you do not want to be.",
+  "points": "Trust is not a plan. It is the quiet knowledge that you are held even when you are not in control. The anger that takes over is the body asking for a place to land.",
+  "practice": "When you feel the tension begin, take one slow breath and let your shoulders drop before you speak.",
+  "question": "What would it feel like to let the work anger stay at the office?"
+ }
+}

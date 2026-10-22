@@ -1,0 +1,478 @@
+{
+ "persona": {
+  "id": "uk_millennial_nhs_nurse",
+  "market": "UK (Manchester)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "31, NHS nurse in Manchester, came from Kerala 5 years ago, sends money home, night shifts. Single. Family asking about marriage.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "shame"
+  },
+  "note": "12 hour night shifts, I send half my salary home, my parents are proud but every call ends with when are you getting married. I'm 31 and I feel like I'm failing at a test I never agreed to take",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "restless and ashamed",
+   "bridge": "What you are living with is what the texts call needing their approval, and that is where this week begins.",
+   "week_thesis": "From restless and ashamed to seeing that their approval is not the measure of your worth, and learning to rest in the work you do.",
+   "week_beats": {
+    "hook": "You recognise the restlessness and the shame, named without judgement.",
+    "diagnose": "You see that it is the need for their approval that keeps the mind restless, not the question itself.",
+    "steady": "You hold that praise and blame come and go, and that your worth is not theirs to grant.",
+    "act": "You try letting their worry go, and resting in the work you do, one night at a time.",
+    "story": "A woman who worked through the night to support her family shows you what it means to rest in your own worth."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.7,
+   "core_struggle": "A woman sending home her earnings from night shifts feels she is failing a test she never agreed to take, while her parents' pride is mixed with marriage pressure.",
+   "mirror": "You send half your salary home, and every call ends with the same question, leaving you restless and ashamed.",
+   "insight": "It is not the marriage that keeps you restless. It is the part of you that needs their pride to feel like enough, and that is what makes the mind run.",
+   "mechanism": "need_for_approval",
+   "mechanism_label": "Needing their approval",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.648,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.29,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "midlife",
+     "label": "Midlife and wondering if this is it",
+     "weight": 0.427,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The restless mind of a woman who sends her earnings home, proud parents, and a question about marriage that follows her through the night.",
+    "diagnose": "When your worth depends on their praise, every word of blame or worry shakes you; craving their approval keeps the mind restless and unable to settle.",
+    "steady": "Praise and blame come and go; what is truly yours is the work you do and the life you build, not the verdict of another.",
+    "act": "Do your work fully and let their praise or worry go; speak your truth gently and firmly, and rest in the fact that your worth is not theirs to grant.",
+    "story": "A woman who worked through the night to support her family, and who learned that her worth was not measured by the question that followed her home."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The restless mind",
+    "Praise and blame",
+    "Your own worth"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "works hour night shifts"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "seat:missing",
+    "week_fit:34=0.0,61=0.0,19=0.0,84=0.0,532=0.0,7=0.0",
+    "week_fit:swapped=6",
+    "retried:1",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:fallback_line=1,invented=1,not_second_person=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 3.1763,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless, stormy, and stubborn. He says it is as hard to hold as the wind. Krishna agrees that the mind is difficult to control, but he says it can be trained through practice and letting go. The mind runs on its own until you learn to steady it.",
+     "for_you": "You work the night shifts and then sit with your mind running. It is not your fault that it will not slow down. The mind is like the wind, and you cannot hold it by force. It needs practice, not pressure."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.16.3",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 16.3",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama describes his restless mind to the sages.",
+     "sanskrit": "न प्राप्नोति क्वचित्किंचित्प्राप्तैरपि महाधनैः । नान्तः संपूर्णतामेति करण्डक इवाम्बुभिः ॥",
+     "line": "The mind is a wicker basket in water: pour in riches, and it still never fills.",
+     "translation": "The mind never really gets anything anywhere; even when great riches come, it never fills up inside, like a wicker basket dipped in water.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.0932,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "Rama, the prince, tells the sages Vishvamitra and about his own mind. He says it is stormy and hard to hold. Then he offers a picture of it. He says the mind is like a wicker basket in water. Even if you pour in great riches, it never fills. It just stays empty, soaking up whatever you give it.",
+     "for_you": "You work the night shift and send home your earnings. You feel this should be enough, yet the mind stays empty. The approval you want from your parents is the water in that basket. It will never fill you, no matter how much you pour in."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.2689,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": null,
+     "for_you": "Your parents' pride is loud in your mind right now, but it is only a passing sound. Their approval comes and goes, and it cannot fill the quiet space inside you. Your worth is not a prize they give, and your night shift work holds its own value."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.2776,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher is laying down the rules for a person who has left the world behind, telling them not to exhaust the body chasing pleasure or running from pain. He says that if they are praised, they should not swell with pride, and if they are blamed, they should not curse the one who blames them.",
+     "for_you": "The praise your parents offer and the pressure they put on you are both passing. You do not need to carry either one as the proof of who you are. Let the night shift end, and let the feeling of being judged end with it."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.0693,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is speaking to Arjuna on a battlefield, telling him that his right is only to the work itself, never to the fruits of that work. He tells Arjuna to act wholeheartedly without letting the outcome be the motive, and not to fall into inaction out of fear of the result.",
+     "for_you": "Stay the same in praise and blame; do what is right, speak truthfully and gently, and let your worth rest on your own conduct."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.0541,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu is speaking to Nidagha. Ribhu asks Nidagha to imagine a person who has lost everything. All that was lost was outside, in the world of things. The self was never touched. Ribhu says to live like that. Act in the world, do the work at hand, but do not let the doing agitate you. The outside can be busy, and the inside can be free of agitation. Move through the day with a clear mind. Let the world happen, and let your mind stay calm.",
+     "for_you": "Your night shifts are your work, and they are real. But the restlessness about what your parents think is not your work to hold. Do the shift, and let the rest go."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "midlife",
+       "label": "Midlife and wondering if this is it"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "King Janaka did not leave his throne to find peace. He stayed, he ruled, and he did what the day asked. You can stay in your life and still let go. The work is yours to do, and your worth is not the test you are trying to pass for them."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The restless mind",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 138,
+   "llm": 4447,
+   "total": 18612,
+   "select": 14019
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are working the night shifts and then sitting with your mind running. It is not your fault that it will not slow down. You feel restless and ashamed, and the shame is heavy right now."
+  ],
+  [
+   "scene",
+   "Arjuna says to Krishna that the mind is restless, turbulent, powerful and stubborn. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "This is easier said than done, because the mind has its own momentum. It runs on old fears and old needs, and you cannot force it still. The only way to train it is through practice, through letting go, and through steady attention. It does not mean you fight the wind. It means you learn to stand in it differently."
+  ],
+  [
+   "for_you",
+   "After your shift, do not try to force the thoughts about your parents to stop. Give yourself ten minutes to just sit with the quiet, and let the mind do its running. That is your practice. Not pressure."
+  ],
+  [
+   "close",
+   "The mind is like the wind. You cannot hold it. You can only learn to stand in it."
+  ]
+ ],
+ "depth": {
+  "life": "You sit with your phone in hand after the night shift, the silence heavy. The marriage pressure is there, but the restless mind is louder right now. You feel ashamed of who you are, and you keep checking if your parents would approve, as if their pride could finally make you enough.",
+  "points": "The mind is not your enemy. It is a force of nature, turbulent and strong. The root of your restlessness is not the shift or the marriage pressure. It is the deep need for your parents' approval to feel like you have value. Their pride is not the standard you must meet.",
+  "practice": "Sit with your phone turned off for five minutes. Let the thoughts about your parents' pride come and go without answering them.",
+  "question": "What would it feel like to rest in your own work for just one night?"
+ }
+}

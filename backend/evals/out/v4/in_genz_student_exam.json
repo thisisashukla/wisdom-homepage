@@ -1,0 +1,495 @@
+{
+ "persona": {
+  "id": "in_genz_student_exam",
+  "market": "India (Delhi)",
+  "generation": "Gen Z",
+  "gender": "man",
+  "who": "19, second-year engineering student in Delhi, lives in a hostel, parents in Kanpur paid a lot for coaching. Scrolls Instagram 6h a day. Speaks Hinglish.",
+  "profile": {
+   "feeling": "nerve",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 6,
+   "topic": "mind",
+   "follow": "overthinking"
+  },
+  "note": "sem exams in 3 weeks and i cant focus for even 20 min, keep opening insta, and then at night i think papa paid 2 lakh for coaching and im wasting it",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "panicked and ashamed",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "steady": "You hold that what is real in you cannot be lost, and that the work you do now is yours.",
+    "act": "You try one hour of phone-free study and one honest chapter, then let the result go.",
+    "story": "A student who feared he had wasted his father's money shows you how one honest hour of work is more than a night of worry."
+   },
+   "confidence": 0.65,
+   "core_struggle": "Facing exams in three weeks with a mind that will not settle, and a guilt that the money spent on coaching is being wasted.",
+   "mirror": "You lie awake with the money your father spent, and the phone opens itself while the book stays shut.",
+   "insight": "It is not the two lakh that keeps you from the book. It is the fear that you have already wasted it, which makes every minute of study feel like proof.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 2.45,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.85,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.69,
+     "source": "note"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.407,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.398,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.3,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The panic of an exam that will not leave you alone, and the guilt that every minute you are not studying is a minute of the money you are wasting.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in you cannot be lost; worry multiplies what has not happened.",
+    "steady": "What is real in you cannot be taken; the effort you put in now is yours and cannot be lost, no matter what the result is.",
+    "act": "Put the book in front of you and study for one chapter, then put the phone away for one hour; let the result go and trust the work.",
+    "story": "A student who could not focus before a great exam, who feared he had wasted his father's money, and who learned that one honest hour of work is more than a night of worry."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The money and the mind",
+    "What fear does to study",
+    "More than the result"
+   ],
+   "seat": "a student under twenty-five who cannot focus and is replaying the money spent on coaching",
+   "life_context": "A student under twenty-five with three weeks to exams; the mind will not settle for even twenty minutes, the phone keeps pulling them away, and at night the two lakh spent on coaching becomes a weight they cannot lift.",
+   "details": [
+    "sem exams in three weeks",
+    "cannot focus for even twenty minutes",
+    "keeps opening Instagram",
+    "lies awake at night thinking about the two lakh spent on coaching"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "week_thesis:missing",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:cliche=1,fallback_line=1,missing=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 3.0734,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless and strong. He says it is as hard to hold as the wind. Krishna agrees that the mind is turbulent and powerful. But he says that through practice and letting go, you can train it.",
+     "for_you": "Your mind feels like the wind right now. Every time you try to study, it pulls you toward the phone and back to the two lakh. This verse says the mind is meant to be restless. You do not have to force it to stop."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.21.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.6",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "After the story of two grieving brothers, Vasishtha tells Rama how worry feeds itself.",
+     "sanskrit": "चिन्तनेनैधते चिन्ता त्विन्धनेनेव पावकः । नश्यत्यचिन्ततेनैव विनेन्धनमिवानलः ॥",
+     "line": "Worry grows when you feed it thought, like fire with fuel. Starve it, and it dies down.",
+     "translation": "Worry grows by thinking, as fire grows with fuel; and it dies by not being thought, as fire dies without fuel.",
+     "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.punya_pavana",
+      "title": "Punya consoles his younger brother Pavana after their parents die",
+      "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+      "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+      "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+     },
+     "score": 3.2731,
+     "beat": "diagnose",
+     "role_fit": 0.751,
+     "meaning": "Vasishtha tells Rama that worry grows when you feed it thought, just as fire grows with fuel. And it dies when you stop feeding it, just as fire dies without fuel. He says that endless rumination is something we can learn to stop.",
+     "for_you": "Yesterday we saw that the mind is like the wind. Today we see what feeds that wind. Each time you open Instagram and think about the money, you are throwing fuel on the fire. The next time the panic rises, do not try to argue with it."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.7.9",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 7.9",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram.",
+     "sanskrit": "व्यसने वार्थकृच्छ्रे वा भये वा जीवितान्तगे। विमृशंश्च स्वया बुद्ध्या धृतिमान् नावसीदति॥",
+     "line": "In loss, money trouble or fear, the steady person thinks it through and does not go under.",
+     "translation": "In disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink.",
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "money_stress",
+       "label": "I'm stressed about money"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 3.2735,
+     "beat": "steady",
+     "role_fit": 0.85,
+     "meaning": "Sugriva tells Ram that in disaster, money trouble, or fear, the steady person thinks it through and does not sink. He says that when life itself is at stake, a mind that thinks clearly is the greatest refuge. And that two people in trouble can carry each other.",
+     "for_you": "The money feels like a disaster right now. But the only thing you can control is your next thought. You have three weeks. That is a real span of time, and it belongs to you. You do not have to carry this alone."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 2.9772,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna is telling Arjuna how the wise move through the world. He says that a steady person is content with what comes, free from envy, and the same in success and failure. Even while working, they are not bound by what they do. The idea is that contentment and freedom from envy let you work without being chained. It suggests that what is real in you cannot be lost by the results of your work.",
+     "for_you": "The two lakh is gone and the exam is close, but the mind that studies is still yours. When the phone pulls and the guilt rises, let the work itself be the only thing you hold. Your part is to turn the page and read the line."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.212,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna tells Arjuna that your right is to the work alone, never to its fruits. He says do not let the fruit be your motive, and do not cling to doing nothing. The point is to do the work fully and let go of owning the result. It does not mean you do not care or plan. It means you care and plan, but you do not let the outcome own you.",
+     "for_you": "Yesterday you learned that your mind is still yours. Today, try one hour with the phone away and one honest chapter. After that hour, let the result go. The work is yours. The mark is not. Do the work and then let your hands rest."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.1187,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": null,
+     "for_you": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You are sitting with your books right now, but your mind is still on the phone. Janaka did not abandon his duties when his mind was shaken. You can sit with your notes for one honest hour. Let the coaching fee go."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The money and the mind",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 558,
+   "llm": 4552,
+   "total": 14737,
+   "select": 9617
+  }
+ },
+ "script": [
+  [
+   "open",
+   "Your mind will not sit still, and that shame is heavy. You are trying to study, but the phone keeps pulling you away and the money you spent sits there like a weight."
+  ],
+  [
+   "scene",
+   "Arjuna is on the battlefield, looking at his family and his teachers. He is overwhelmed and confused. He tells Krishna that his mind is restless, stormy, and stubborn. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "The mind is naturally restless and powerful, and it will not simply obey you. Trying to force it to stop often only makes it push back harder. What helps is steady practice and letting go, giving up the need to control every thought."
+  ],
+  [
+   "for_you",
+   "When you open Instagram, do not fight the whole habit. Just close it for the next five minutes. That small pause is your practice. It is not about stopping the mind. It is about giving it a little space to settle."
+  ],
+  [
+   "close",
+   "What if the two lakh was not a test you are failing, but a quiet place to begin?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit at your desk and the book is open but your hands are on your phone. Three weeks left and the two lakh feels like a stone in your chest. You tell yourself you will study for twenty minutes but you end up scrolling for an hour, then the guilt starts again.",
+  "points": "Krishna tells Arjuna that the mind is naturally restless and strong. The problem is not that it wanders. The problem is that you are fighting the wind and blaming yourself for the storm.",
+  "practice": "Set a timer for five minutes. When the timer rings, put the phone away and read one paragraph. That is the whole practice.",
+  "question": "What would change if you let the mind be restless for just five minutes?"
+ }
+}

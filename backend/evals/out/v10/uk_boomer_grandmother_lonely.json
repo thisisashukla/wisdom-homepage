@@ -1,0 +1,505 @@
+{
+ "persona": {
+  "id": "uk_boomer_grandmother_lonely",
+  "market": "UK (Birmingham)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "68, came from Jalandhar in 1976, worked in a factory then raised 3 children. Widowed. Children busy, grandchildren on phones. Reads Ramcharitmanas.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "lonely but not bitter",
+   "bridge": "The Ramayan you read each morning is not just company. It is the first step toward the deeper thing you are looking for, and it already holds it.",
+   "week_thesis": "The Ramayan you read each morning is not just company. It is the first step toward the deeper thing you are looking for, and it already holds it.",
+   "week_beats": {
+    "hook": "You recognise the quiet mornings and the search, named without pity.",
+    "diagnose": "You see that the emptiness is not from the children, but from a life lived only for what passes.",
+    "steady": "You hold that what does not pass is not gone, and the same truth you read is the one that will carry you.",
+    "act": "You try reading one verse as a conversation, letting it speak to you before you move on.",
+    "story": "A woman who raised her children alone and found in the Ramayan not just company but the meaning she was searching for."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "rcm"
+   ],
+   "people": [
+    "child",
+    "family",
+    "parent",
+    "work"
+   ],
+   "confidence": 0.6,
+   "core_struggle": "A widowed mother who raised her children alone is seeking something deeper, finding her only company in the Ramayan on quiet mornings.",
+   "mirror": "You raised them alone, and now the only company you have is a book you read in the morning.",
+   "insight": "You are not missing the life you had. You are looking for the life that remains after duty is done, and the Ramayan is already pointing the way.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.76,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.244,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.392,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A life of duty now quiet, a book that has been your only company, and a search for something deeper than the morning pages. I feel lonely.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What does not pass is not gone. The same truth you read in the morning is the one that will carry you through the rest of your days.",
+    "act": "Read the text as a conversation, not a lesson; speak to it, and let it speak back, one verse at a time.",
+    "story": "A woman who lost her husband and raised her children alone, who found in the Ramayan not just company but the very meaning she was searching for."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The morning pages",
+    "What does not pass",
+    "The one who reads alone"
+   ],
+   "seat": "a widowed mother who raised her children alone and now has only the Ramayan for company",
+   "life_context": "Retired and widowed, she raised her children alone; on Sundays they visit but are always on their phones, and in the mornings the Ramayan is her only company as she looks for something deeper.",
+   "details": [
+    "children visit on Sundays but are always on their phones",
+    "reads the Ramayan in the morning as her only company",
+    "is looking for something deeper"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "stance:seeking_over_pain",
+    "hook:anchored_to_situation",
+    "week_fit:11=0.3,6=0.3,3=0.6,250=0.6,96=0.8,3=0.3",
+    "week_fit:swapped=3",
+    "retried:2",
+    "redo:4",
+    "redo_fixed:0",
+    "dropped:cliche=1,copied=1,repeat=2,soft_kept=4",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.15.15",
+     "ref": "Bhagavad Gita 15.15",
+     "ref_iast": "Bhagavad Gītā 15.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on his power sustaining the world and dwelling in every heart.",
+     "sanskrit": "सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च । वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम् ॥",
+     "line": "I am seated in every heart. Memory, knowledge and their fading come from me.",
+     "translation": "I am seated in the hearts of all. From me come memory, knowledge and their loss. I alone am what is to be known by all the Vedas; I am the author of Vedanta and the knower of the Vedas.",
+     "why": "The sacred is seated in every heart.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p15.3",
+      "title": "The Supreme Lord and his power",
+      "summary": "Krishna is the light of sun and moon, the nourishment of plants, the digestive fire, and is seated in every heart.",
+      "story_hook": "",
+      "lesson": "The sacred is seated in every heart."
+     },
+     "score": 2.1029,
+     "beat": "hook",
+     "role_fit": 0.105,
+     "meaning": "Krishna tells Arjuna that the divine presence rests in every heart. From this presence come memory and knowledge, and from it they also fade away. He alone is the truth the Vedas seek to reveal. The one who is looking for something deeper is not searching in the wrong place, because the source of all understanding is already seated within.",
+     "for_you": "Your morning with the Ramayan is not just passing the time. The quiet you seek is already inside you. Let the morning reading show you that the deeper life you want is not out there, but right here in the stillness you already have."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.45",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 45",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: how need changes what we value.",
+     "sanskrit": "परिक्षीणः कश्चित्स्पृहयति यवानां प्रसृतये स पश्चात् सम्पूर्णः कलयति धरित्रीं तृणसमाम् । अतश्चानैकान्त्याद्गुरुलघुतयाऽर्थेषु धनिना- मवस्था वस्तूनि प्रथयति च सङ्कोचयति च ॥",
+     "line": "Starving, a handful of grain is everything. Full, the whole earth looks like straw.",
+     "translation": "A man who has lost everything longs for a handful of barley; later, when full, he counts the whole earth as straw. Because nothing is fixed, a person's condition makes things look great or small.",
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 2.535,
+     "beat": "diagnose",
+     "role_fit": 0.596,
+     "meaning": "Bhartrihari is speaking to you from the section on wealth, and he looks at how need changes what we value. He tells you to picture a man who has lost everything and now longs for a handful of grain to survive. Then he asks you to see that same man later, when he is full, counting the whole earth as straw. Because nothing is fixed, a person's condition makes things look great or small. The emptiness you feel is not from the children, but from a life lived only for what passes.",
+     "for_you": "The emptiness you feel is not from the children. It is from a life lived only for what passes. The Ramayan you read each morning already holds what you are looking for, not just to fill the quiet."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.146.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 146",
+     "family": "rcm",
+     "speaker": "Sumantra",
+     "listener": "Dasharath",
+     "setting": "Sumantra returns alone to the grieving king Dasharath and steadies him.",
+     "sanskrit": "जनम मरन सब दुख सुख भोगा। हानि लाभु प्रिय मिलन बियोगा॥ काल करम बस होहिं गोसाईं। बरबस राति दिवस की नाईं ॥ सुख हरषहिं जड़ दुख बिलखाहीं। दोउ सम धीर धरहिं मन माहीं॥ धीरज धरहु बिबेकु बिचारी। छाड़िअ सोच सकल हितकारी ॥",
+     "line": "Gain and loss, meeting and parting come like day and night. The steady hold both alike.",
+     "translation": "Birth and death, joy and sorrow, loss and gain, meeting and parting with those we love: these come under the sway of time and action, as surely as night and day. The foolish rejoice in good times and wail in bad; the steady hold both alike in the mind. Hold on to your courage, think with discernment, and let go of worry, you who care for everyone.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.0577,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Sumantra comes back to the grieving Dasharath. The king has just lost his son Rama to exile, and his world has fallen apart. Sumantra does not try to fix the pain or argue with the loss. He simply names the rhythm of life. He tells the king that birth and death, joy and sorrow, gain and loss, meeting and parting, come like day and night. They are governed by time and action. The foolish person swings wildly between celebration and despair, but the steady mind holds both with equal grace.",
+     "for_you": "The Ramayan is not just a story you read. It is the steady ground beneath your feet when the morning feels empty. Hold on to this truth that what does not pass is not gone. The same text that keeps you company already holds the deeper thing you are looking for."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.250",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 250)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the Lord",
+     "setting": "Surdas on the Lord's readiness.",
+     "sanskrit": "कबहूँ तुम नाहिन गहरु कियो | सदा सुभाव-सुलभ सुमिरन-बस, भक्तनि अमर दियौ ॥",
+     "line": "You never once delayed. You are easy to reach, and remembering you is enough to win you.",
+     "translation": "You have never once delayed. By nature easy to reach and won over by remembrance, you have always given your devotees what is undying.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9897,
+     "beat": "steady",
+     "role_fit": 0.4,
+     "meaning": "Surdas speaks to the Lord, saying that is always ready and never once delayed. The Lord is easy to reach, and simply remembering is enough to win over. The verse proposes that remembering the Lord is itself enough to gain what does not pass away, and that this remembrance is a steady hold through gain and loss, meeting and parting.",
+     "for_you": "You hold that what does not pass is not gone, and the same truth you read is the one that will carry you."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "tulsi_dv.96",
+     "ref": "Dohavali 96",
+     "ref_iast": "Dohāvalī 96",
+     "family": "tulsi",
+     "speaker": "Tulsidas",
+     "listener": "his own mind",
+     "setting": "Tulsidas's advice to himself when weighed down.",
+     "sanskrit": "तुलसी राम कृपालु सों कहि सुनाउ गुन दोष। होय दूबरी दीनता परम पीन संतोष॥",
+     "line": "Tell the kind one everything, good and bad. The heaviness thins; peace grows.",
+     "translation": "Tulsi, tell the kind Ram all of it, your good points and your faults. Your misery will grow thin and your contentment will grow full.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0961,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Tulsidas is weighed down by his own mind. He is heavy with worry and the burden of his own faults. He speaks to himself with a direct command. He tells his mind to lay everything before the kind Ram. Tell him your good points and your faults. Tulsidas says that when you do this, your misery will grow thin and your contentment will grow full. The verse proposes that the heaviness of the heart thins when it is spoken aloud, and peace grows in its place.",
+     "for_you": "read one verse from the Ramayan as a conversation. Tell it what you feel before you move on. Let it speak to you and let the heaviness thin. You are already holding the truth you seek."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.172.20",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Apaddharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 172.20",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Bhishma closes the story of Gautama, who killed the kind crane that had sheltered and enriched him.",
+     "sanskrit": "कृतज्ञमनसा भाव्यं मित्रभावेन चानघ / मित्रात्प्रभवते सर्वं मित्रं धन्यतरं स्मृतम्",
+     "line": "Keep a grateful heart. Everything good grows out of friendship.",
+     "translation": "Keep a grateful heart and a friendly spirit. Everything grows out of friendship; a friend is the greatest blessing.",
+     "why": "Gratitude is the root of every friendship. Betraying a benefactor poisons everything after.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.gautama_ungrateful",
+      "title": "Gautama the ungrateful",
+      "summary": "A destitute brahmin, Gautama, is fed and sheltered by a kind crane, Rajadharma, and made rich by the crane's friend. On the way home he kills his sleeping benefactor for food. Bhishma ends: there is atonement for many wrongs, none for ingratitude.",
+      "story_hook": "The crane gave Gautama food, shelter and a fortune, and Gautama repaid him while he slept.",
+      "lesson": "Gratitude is the root of every friendship. Betraying a benefactor poisons everything after."
+     },
+     "score": 2.72,
+     "beat": "act",
+     "role_fit": 0.554,
+     "meaning": "Bhishma is finishing the story of Gautama, a brahmin who was fed and sheltered by a kind crane that had been his true friend. Gautama then kills the sleeping bird for food. Bhishma tells Yudhishthira that while there is atonement for many wrongs, there is none for ingratitude. He says to keep a grateful heart and a friendly spirit, because everything good grows out of friendship. A friend is the greatest blessing.",
+     "for_you": "This morning, before you open the Ramayan, sit with the quiet. Let the silence speak to you about the life you have lived. Do not ask it to give you anything new. Let it simply be the friend who is already here."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       },
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "Shabari gathered fruit for years, waiting for a guest who never came. Her waiting was not empty. It was a kind of preparing. The Ramayan you read each morning is not just company. It is the first step toward the deeper thing you are looking for, and it already holds it."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The morning pages",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 1169,
+   "llm": 4272,
+   "total": 16025,
+   "select": 10577
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The Sunday visits feel a little hollow now. You sit with your children and they are somewhere else, their faces lit by screens. The house is quiet again, and the Ramayan is your companion in the morning. You are not bitter, but the silence is heavy, and you are looking for a deeper way to be in it."
+  ],
+  [
+   "scene",
+   "Krishna is speaking to Arjuna on a battlefield, but his words are for any heart that is still. He tells Arjuna that the divine light is not far away. It is seated right here, in the middle of the chest, in the center of every being. From this one seat comes memory, comes knowledge, and from it they also fade. And Krishna says:"
+  ],
+  [
+   "sanskrit",
+   "सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च, वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम्."
+  ],
+  [
+   "line",
+   "In plain words: I am seated in every heart. Memory, knowledge and their fading come from me."
+  ],
+  [
+   "unpack",
+   "The sacred is not out there waiting to be found. It is already here, in the middle of your chest. All the memory you have, all the knowledge you have gathered, comes from this place. It also fades from this place. This means the source of everything you are looking for is already inside you. It is not something you lost and must recover. It is already present, holding your memories, holding your quiet mornings, holding the Ramayan itself. This is easier said than done, because the mind is trained to look outward for answers."
+  ],
+  [
+   "for_you",
+   "When you sit with the Ramayan in the morning, let the quiet of the room remind you that the same stillness is inside your own chest. You do not need to search for a deeper life somewhere else. The depth you seek is already here, in the space between your thoughts, in the same breath that reads the page."
+  ],
+  [
+   "close",
+   "The source of memory and knowledge is already seated in you. Can you let the morning quiet be enough?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit with the Ramayan in the quiet morning, and you look for something deeper, but the Sunday visits leave you feeling cut off. Your children are there, but they are on their phones, and you are left with the sense that the life you knew is gone.",
+  "points": "The sacred is seated in every heart. Memory and knowledge come from there. What you are looking for is not a new thing to find. It is already inside you. The loneliness you feel is the gap between your outer life and this inner stillness.",
+  "practice": "Before you open the Ramayan, sit still for one minute and feel the quiet in your chest. Let the morning reading be a way to meet what is already there.",
+  "question": "What would it feel like to let the morning reading be enough for now?"
+ }
+}

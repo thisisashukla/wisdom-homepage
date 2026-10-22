@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Maya Meaning — Illusion in the Bhagavad Gita | Wisdom",
+  title: "Maya Meaning — Illusion in the Bhagavad Gita",
   description:
     "Maya doesn't mean the world is fake. In the Gita, it is the power that makes the real appear as something other than it is. BG 7.14 calls it divine and 'hard to cross.' Here's what that actually means.",
   keywords:
@@ -632,14 +633,14 @@ export default function MayaMeaningPage() {
         </div>
       </div>
 
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Maya Meaning Bhagavad Gita"} />
+      <VerseFunnelCTA variant="chapter" locale="en" pageName={"Maya Meaning Bhagavad Gita"} />
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
         <p>
           <a href="https://wisdomquotes.in">Home</a> —{' '}
           <a href="https://wisdomquotes.in/blogs">Blog</a> —{' '}
-          <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">
+          <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">
             Download
           </a>
         </p>

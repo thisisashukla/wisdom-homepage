@@ -1,0 +1,495 @@
+{
+ "persona": {
+  "id": "ca_millennial_new_immigrant",
+  "market": "Canada (Toronto)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "36, was a bank branch manager in Hyderabad, moved to Toronto 8 months ago on PR, now driving Uber while applying. Wife and 4-year-old. Winter.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 5,
+   "topic": "work",
+   "follow": "didnt_work_out"
+  },
+  "note": "I managed 40 people in Hyderabad. Here I drive Uber at night and my wife cries about the cold. Everyone says Canadian experience. I did this for my son's future but right now I feel like I've ruined our present",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": "man",
+   "emotion": "ashamed and grieving",
+   "bridge": "The smaller life they see you living is what the Gita calls living someone else's dharma. Your worth was never theirs to cut down.",
+   "week_thesis": "This week moves you from being seen as a fall to being seen as a father who chose a harder road, and finds the words to hold that truth.",
+   "week_beats": {
+    "hook": "You recognise being seen as less than you are, and the grief of the present you cannot give back.",
+    "diagnose": "You see that their picture is their smallness, and that the only harm is letting it replace your own measure.",
+    "steady": "You hold that what you are cannot be cut smaller by what they see.",
+    "act": "You try speaking the true thing about what you gave up, and holding your ground on what you are.",
+    "story": "A man who left a kingdom for his son's future shows you what standing in your truth looks like when the world calls it a fall."
+   },
+   "confidence": 0.65,
+   "core_struggle": "A father who left a leadership role for his son's future now drives at night and feels he has ruined their present, while his wife suffers the cold.",
+   "mirror": "You gave up a room of forty people for a room where your wife cries in the cold.",
+   "insight": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 0.87,
+     "source": "note"
+    },
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "money_stress",
+     "label": "I'm stressed about money",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.581,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.562,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being seen as less than you are after a sacrifice that no one else can see, and the grief of the present you cannot give back.",
+    "diagnose": "When others see only a role or a country, their picture is their smallness; the harm deepens only when their picture begins to replace your own measure of yourself.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing about what you gave up, hold your ground on what you are, and find the courage the moment asks for, even in the cold.",
+    "story": "A man who left a kingdom behind for his son's future, stood in his truth when others called it a fall, and found that the hardest road was also the most honest."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The man they see",
+    "The father's choice",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "In his mid-thirties or early forties, working and raising children; he once led forty people and now drives at night in Canada, for a future he cannot yet see, while his wife cries in the cold.",
+   "details": [
+    "managed people",
+    "now drives at night in Canada",
+    "wife is cold and cries",
+    "did it for son's future"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "insight:template",
+    "seat:missing",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:opening=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.16",
+     "ref": "Bhagavad Gita 18.16",
+     "ref_iast": "Bhagavad Gītā 18.16",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Right after naming the five causes of any action, Krishna warns about the person who ignores four of them.",
+     "sanskrit": "तत्रैवं सति कर्तारमात्मानं केवलं तु यः । पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः ॥",
+     "line": "If you think you alone made it happen, or alone made it fail, you're not seeing the whole picture.",
+     "translation": "That being so, whoever, through an untrained understanding, sees himself alone as the doer does not truly see.",
+     "why": "You are one cause among five; own your part, not the whole outcome.",
+     "misuse": "Not a way to dodge responsibility; you are still one of the five causes.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.2",
+      "title": "What makes an action happen",
+      "summary": "Every action has five causes: the setting, the doer, the instruments, the efforts, and providence. Seeing oneself as the only doer is a mistake.",
+      "story_hook": "",
+      "lesson": "You are one cause among five; own your part, not the whole outcome."
+     },
+     "score": 1.9807,
+     "beat": "hook",
+     "role_fit": 0.19,
+     "meaning": null,
+     "for_you": "You are one cause among five. Your worth was never theirs to cut down, and the grief you feel for the present you cannot give back is real, but it is not the whole story."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.5.35.doha.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 35",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Ravana's ministers flatter him as Ram's army arrives; the poet comments.",
+     "sanskrit": "सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस राज धर्म तन तीनि कर होइ बेगिहीं नास ॥",
+     "line": "When advisers, doctors and teachers only say what pleases you, the ruin comes quickly.",
+     "translation": "When a minister, a doctor and a teacher speak only to please, out of fear or hope of reward, then the kingdom, the body and righteousness are soon destroyed.",
+     "why": "Beware a circle that only tells you what you want to hear.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.mandodari_first",
+      "title": "Mandodari pleads, the ministers flatter",
+      "summary": "Mandodari takes Ravana aside and begs him to return Sita before it is too late. He laughs at her fear and goes to court, where his ministers tell him only what pleases him. Tulsidas notes that when advisers, doctors and teachers speak only to please, ruin comes quickly.",
+      "story_hook": "Mandodari took her husband's hand and led him somewhere the ministers couldn't hear.",
+      "lesson": "Beware a circle that only tells you what you want to hear."
+     },
+     "score": 3.0356,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Tulsidas writes this from the Sundar Kand of the Ramcharitmanas. He speaks to the reader as Ravana's ministers flatter their king, telling him only what he wants to hear. When advisers, doctors, and teachers speak only to please, out of fear or hope of reward, ruin comes quickly. The kingdom, the body, and righteousness are soon destroyed.",
+     "for_you": "Yesterday's verse named the grip. Today, you see that the picture they hold of you is their smallness, and the only harm is letting it replace your own measure."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.16",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 16",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Kings who slight scholars",
+     "setting": "From the section praising learning, addressed to proud rulers.",
+     "sanskrit": "हर्तुर्याति न गोचरं किमपि शं पुष्णाति यत् सर्वदा- ऽप्यर्थिभ्यः प्रतिपाद्यमानमनिशं प्राप्नोति वृद्धिं पराम् । कल्पान्तेष्वपि न प्रयाति निधनं विद्याख्यमन्तर्धनं येषां तान् प्रति मानमुज्झत नृपाः कस्तैः सह स्पर्धते ॥",
+     "line": "Learning is wealth no thief can see. It grows when you give it away and never perishes.",
+     "translation": "It never comes within a thief's sight; it always nourishes some deep good; given to those who ask, it grows greater; even at the end of an age it does not perish. Kings, drop your pride before those who own this inner wealth called learning. Who can compete with them?",
+     "why": "What you learn and how you speak are the wealth no one can take from you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.vidvat",
+      "title": "Nitishatakam: In praise of learning and the learned",
+      "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+      "story_hook": "",
+      "lesson": "What you learn and how you speak are the wealth no one can take from you."
+     },
+     "score": 3.1298,
+     "beat": "steady",
+     "role_fit": 0.544,
+     "meaning": "Bhartrihari says this to proud kings who slight scholars. Learning is wealth no thief can see. It grows when you give it away and never perishes. He tells the kings to drop their pride before those who own this inner wealth. Who can compete with them? What you learn and how you speak are the wealth no one can take from you.",
+     "for_you": "You hold that what you are cannot be cut smaller by what they see. Your voice, shaped by the years you led, is a wealth no thief can take."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.1251,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": "Draupadi is arguing with Yudhishthira in the forest. She tells him that waiting on fate is no plan. A person should never look down on himself. The one who despises himself never finds real prosperity. Do right for its own sake, then work as if it all depends on you.",
+     "for_you": "You are doing right for its own sake. The man who despises himself never finds real prosperity. Your worth was never theirs to cut down."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.4445,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is teaching Nidagha how a free person moves through the world. Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "for_you": "You do the work that is in front of you. You speak gently to the people who diminish you. You let go of what is lost and take up what comes. You do not sink."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.3641,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula rouses her son Sanjaya, who lies defeated after losing his kingdom. She tells him not to hold himself in contempt, and not to keep it going on too little. Set your mind on what is truly good. Do not be afraid. Pull yourself together.",
+     "for_you": "You are not defeated. You are a father who chose a harder road. Set your mind on what is truly good. Stop fearing what they see. Pull yourself together."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sita_left_in_forest",
+     "title": "Sita left in the forest",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Lakshman",
+      "Sita",
+      "Valmiki"
+     ],
+     "story_hook": "Lakshman stopped the chariot at the river and could not bring himself to say why.",
+     "summary": "Hearing that people gossip about Sita's time in Lanka, Ram orders Lakshman to leave her, pregnant, near Valmiki's hermitage. Lakshman obeys in anguish. Sita grieves that she is cut off from everyone and slandered though innocent. Valmiki finds her, says he knows she is blameless, and tells her to treat his home as her own.",
+     "lesson": "Injustice from those we love is real grief; a stranger's kindness can become home.",
+     "matched": [
+      {
+       "id": "homesick",
+       "label": "I'm homesick"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "vr.7.48.14",
+      "ref": "Valmiki Ramayana · Uttara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Uttara Kāṇḍa 48.14",
+      "family": "vr",
+      "speaker": "Sita",
+      "listener": "Lakshman (message for Ram)",
+      "setting": "Abandoned because of gossip, Sita sends a message back to Ram.",
+      "sanskrit": "अहं तु नानुशोचामि स्वशरीरं नरर्षभ॥ यथापवादः पौराणां तथैव रघुनन्दन।",
+      "line": "It isn't the hardship I mind most. It's what people are saying that wasn't true.",
+      "translation": "I do not grieve for myself, best of men, so much as for the slander the people are spreading.",
+      "why": "Injustice from those we love is real grief; a stranger's kindness can become home.",
+      "misuse": "Sita is the one wronged here; the verse names unjust gossip, not her fault.",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.sita_left_in_forest",
+       "title": "Sita left in the forest",
+       "summary": "Hearing that people gossip about Sita's time in Lanka, Ram orders Lakshman to leave her, pregnant, near Valmiki's hermitage. Lakshman obeys in anguish. Sita grieves that she is cut off from everyone and slandered though innocent. Valmiki finds her, says he knows she is blameless, and tells her to treat his home as her own.",
+       "story_hook": "Lakshman stopped the chariot at the river and could not bring himself to say why.",
+       "lesson": "Injustice from those we love is real grief; a stranger's kindness can become home."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Lakshman stopped the chariot at the river and couldn't tell Sita why",
+     "teaser": "Lakshman stopped the chariot at the river and couldn't tell Sita why",
+     "for_you": "Your wife's tears in the cold are not your failure. They are the cost of a road you chose together. Let her suffering be seen for what it is, a weight you share, not a verdict on your worth as a father and a man."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The man they see",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 323,
+   "llm": 5180,
+   "total": 15530,
+   "select": 10024
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are driving through the dark, and the silence in the cab feels heavier than the steering wheel. You are carrying a grief that has no name yet, a shame that sits in your chest like a stone. You left a life of weight for a future you thought was yours and your son's."
+  ],
+  [
+   "scene",
+   "The field of is still. The chariots wait. Krishna looks at Arjuna, who is trembling, convinced that his own hands are the only ones that will bring about ruin or glory. Krishna said:"
+  ],
+  [
+   "sanskrit",
+   "तत्रैवं सति कर्तारमात्मानं केवलं तु यः, पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः."
+  ],
+  [
+   "line",
+   "In plain words: If you think you alone made it happen, or alone made it fail, you're not seeing the whole picture."
+  ],
+  [
+   "unpack",
+   "An action is never born from a single will. There is the moment, the tools, the people around you, the effort, and what is beyond your reach. To believe you are the only cause of what happened is to shrink the world to the size of your own fear."
+  ],
+  [
+   "for_you",
+   "You are one cause among five. Your worth was never theirs to cut down. The cold your wife feels is real, but it is not the whole story."
+  ],
+  [
+   "close",
+   "You are not the only cause. You are not the only story."
+  ]
+ ],
+ "depth": {
+  "life": "You sit in the cold cab of the truck, the dark road ahead of you, and you replay the moment you gave up your leadership for your son. You carry the weight of your wife's tears and the silence in your house, feeling that your choice was the single cause of this hard life.",
+  "points": "The Gita says every action has five causes. Your choice was one. The others were the son's future, the circumstances, the tools you had, and what was beyond your control. You are not the sole author of this story.",
+  "practice": "Name the other four causes of this hard season out loud to yourself tonight, one by one, as you drive.",
+  "question": "What if your choice was a part of the story, not the whole of it?"
+ }
+}

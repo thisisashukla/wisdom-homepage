@@ -1,0 +1,495 @@
+{
+ "persona": {
+  "id": "uk_boomer_grandmother_lonely",
+  "market": "UK (Birmingham)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "68, came from Jalandhar in 1976, worked in a factory then raised 3 children. Widowed. Children busy, grandchildren on phones. Reads Ramcharitmanas.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely in a full house",
+   "bridge": "The in your morning is what the texts call seeking. The deeper thing you are looking for is the company you already, waiting to be seen.",
+   "week_thesis": "The search for something deeper ends not in a new text but in seeing the one you already hold, and the people who are in the room with you, with fresh eyes.",
+   "week_beats": {
+    "hook": "You recognise the loneliness of a house full of people who are not really there.",
+    "diagnose": "You see that the search is not for a new text but for a way to be present with the one you already hold.",
+    "steady": "You hold that the company you seek is already in your hands and in your heart.",
+    "act": "You try reading one verse with the question 'What is this for?' and let one line settle before you close the book.",
+    "story": "A queen who was alone after her husband's death shows you how to find footing not in a new kingdom but in the truth that remains."
+   },
+   "undisclosed": false,
+   "texts": [
+    "rcm"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A retired widow who raised her children alone is seeking something deeper, especially on when her children visit but are always on their phones.",
+   "mirror": "They come on Sunday and their eyes stay on the screen while your eyes stay on the page.",
+   "insight": "Even among people, you've felt unseen. The distance is real, and so is the way back.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.244,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.392,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A house full on Sunday and a heart that feels alone, even when the people you raised are right there.",
+    "diagnose": "Loneliness grows from feeling separate from people and purpose; the heart searches for where it belongs, and the is already showing it the way.",
+    "steady": "The company you seek is not far; it is in the text you already hold, and in the truth that you are not separate from what you read.",
+    "act": "Read the with the question in mind, 'What is this?', and let one verse settle before you close the book.",
+    "story": "A queen who was alone after her husband's death, who found her footing not in a new kingdom but in the truth that remained: the self that cannot be lost."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The company you hold",
+    "What the text is for",
+    "The self that cannot be lost"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "children come on Sunday but are always on their phones",
+    "raised them alone after their husband died",
+    "reads the in the morning",
+    "looks for something deeper"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:seeking_over_pain",
+    "insight:template",
+    "retried:1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.11",
+     "ref": "Bhagavad Gita 10.11",
+     "ref_iast": "Bhagavad Gītā 10.11",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on devotees who find joy together and the light he gives them.",
+     "sanskrit": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः । नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥",
+     "line": "Out of compassion, I live in their hearts and clear the darkness with the lamp of understanding.",
+     "translation": "Out of compassion for them, dwelling in their hearts, I destroy the darkness born of ignorance with the shining lamp of knowledge.",
+     "why": "Good company and an inner lamp clear the dark.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.2",
+      "title": "The yoga of devotion and its fruit",
+      "summary": "Devotees talk of the divine with each other and find joy; out of compassion Krishna lights the lamp of knowledge in their hearts.",
+      "story_hook": "",
+      "lesson": "Good company and an inner lamp clear the dark."
+     },
+     "score": 2.4361,
+     "beat": "hook",
+     "role_fit": 0.33,
+     "meaning": "Krishna tells Arjuna that when people gather to talk of the divine, they find joy. Out of compassion, he lives in their hearts and clears the darkness with the lamp of knowledge.",
+     "for_you": "Your morning reading is a lamp. It lights the room where your children sit, even if they are looking down. Let it light you first, so you can see them as they are, and see the space between you."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.42",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 42",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: how good things are slowly lost.",
+     "sanskrit": "दौर्मन्त्र्यान्नृपतिर्विनश्यति यतिः सङ्गात् सुतो लालनाद् विप्रोऽनध्ययनात् कुलं कुतनयाच्छीलं खलोपासनात् । ह्रीर्मद्यादनवेक्षणादपि कृषिः स्नेहः प्रवासाश्र- यान्मैत्री चाप्रणयात् समृद्धिरनयात् त्यागः प्रमादाद्धनम् ॥",
+     "line": "Affection fades with distance, friendship without warmth, wealth with carelessness, a child with spoiling.",
+     "translation": "A king is ruined by bad counsel, an ascetic by attachment, a son by spoiling, a brahmin by neglecting study, a family by a wayward son, character by serving the wicked, modesty by drink, farming by neglect, affection by living far away, friendship by lack of warmth, prosperity by bad conduct, and wealth by careless spending.",
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "Distance strains affection; it does not doom it. The verse is a call to tend what you love.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 2.6728,
+     "beat": "diagnose",
+     "role_fit": 0.51,
+     "meaning": "Bhartrihari lists how things are lost: a son by spoiling, wealth by careless spending. The verse says affection fades with distance. It is a call to tend what you love before neglect takes it.",
+     "for_you": "The distance in your house is real, but it is not empty. You are not a text to be replaced. You are the one who reads, the one who raised them, the one who is still here. Let the lamp in your morning reading remind you that you are the source, not the loss."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.1.29.22",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 29.22",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, ending his lament, says where he still sees hope.",
+     "sanskrit": "विद्यन्त एवेह न ते महात्मन् दुराधयो न क्षयमाप्नुवन्ति । ये सङ्गमेनोत्तममानसानां निशातमांसीव निशाकरेण ॥",
+     "line": "There is no trouble that good people's company can't ease, as moonlight eases the night.",
+     "translation": "Great sage, there are no troubles in the world that do not fade through the company of noble-minded people, as the darkness of night fades before the moon.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.1035,
+     "beat": "steady",
+     "role_fit": 0.465,
+     "meaning": "Rama has just finished telling them how the mind never fills, how time eats everything, and how ego and craving run us. He asks what the point of it all is. When he is asked to speak of what gives him hope, he says this. He names the trouble exactly. Then he says that the company of noble-minded people eases every trouble, just as moonlight eases the night. The verse proposes that honest naming of what feels empty is the first step toward what remains.",
+     "for_you": "You read the morning and name the empty space. The company you seek is already in your hands. It is in the quiet room before the children arrive on Sunday."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.250",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 250)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the Lord",
+     "setting": "Surdas on the Lord's readiness.",
+     "sanskrit": "कबहूँ तुम नाहिन गहरु कियो | सदा सुभाव-सुलभ सुमिरन-बस, भक्तनि अमर दियौ ॥",
+     "line": "You never once delayed. You are easy to reach, and remembering you is enough to win you.",
+     "translation": "You have never once delayed. By nature easy to reach and won over by remembrance, you have always given your devotees what is undying.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9679,
+     "beat": "steady",
+     "role_fit": 0.4,
+     "meaning": "Surdas speaks to the Lord, saying that the Lord never delays a moment in responding. The Lord is naturally easy to reach, and even simple remembrance is enough to win the Lord over. Because of this, the Lord has always given devotees what lasts forever.",
+     "for_you": "Your morning reading is already the company you seek. Hold this steady. The deeper connection you want is found in the act of remembering what is already true, right where you are."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.7.1",
+     "ref": "Bhagavad Gita 7.1",
+     "ref_iast": "Bhagavad Gītā 7.1",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna opens the teaching on knowing him fully.",
+     "sanskrit": "श्री भगवानुवाचमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः । असंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु ॥",
+     "line": "Keep your mind attached to me, lean on me, keep practising. You will come to know me fully.",
+     "translation": "Hear, Partha, how with your mind attached to me, practising yoga and taking refuge in me, you will know me fully, without doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.8345,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is telling Arjuna that knowing him fully is a matter of steady practice and attachment. He says that by keeping the mind fixed on him, by doing yoga, and by taking refuge in him, Arjuna will know him completely, without any doubt. The path is not about a single leap but about keeping the mind attached and practising, which opens the door to full understanding.",
+     "for_you": "When you sit with your morning reading, ask what this is for. Let one line settle before you close the book. Let the practice of returning to the words be your way of keeping the mind attached, not to escape the room, but to find what is waiting to be seen."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.8",
+     "ref": "Bhagavad Gita 12.8",
+     "ref_iast": "Bhagavad Gītā 12.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna begins his ladder of practices with the simplest instruction.",
+     "sanskrit": "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय । निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः ॥",
+     "line": "Rest your mind in me, settle your thinking in me, and you will live in me.",
+     "translation": "Fix your mind on me alone, let your understanding settle in me; from then on you will dwell in me. Of this there is no doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.7939,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna offers the simplest step on the ladder of knowing: rest the mind in him, settle the thinking in him, and live in him. He tells Arjuna that by fixing the mind on him alone and letting understanding settle, one will dwell in him. This is presented as a direct and certain path, without doubt.",
+     "for_you": "Today, as you read, let one line settle before you close the book. Ask what this is for, and let the answer be the rest of the page. Let your thinking settle in the words, and let that settled mind be your way of dwelling with what is already here."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.chudala",
+     "title": "Queen Chudala teaches her husband what renunciation really is",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Chudala",
+      "Shikhidhvaja",
+      "Kumbha"
+     ],
+     "story_hook": "The queen had found peace, and the king, who loved her, could not believe it.",
+     "summary": "Queen Chudala finds inner peace, but her husband, King Shikhidhvaja, doesn't believe her. Restless, he leaves his kingdom for the forest. Chudala rules wisely in his absence and visits him disguised as a young sage, Kumbha, who shows him that giving up kingdom, home and body is not renunciation; letting go of the clinging mind is. Freed, he returns home and rules beside her.",
+     "lesson": "Running away doesn't free you; letting go inside does. Sometimes the teacher is the person beside you.",
+     "matched": [],
+     "anchor": {
+      "id": "yv.6a.93.29",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Nirvāṇa 93.29",
+      "family": "yv",
+      "speaker": "Kumbha (Queen Chudala in disguise)",
+      "listener": "King Shikhidhvaja",
+      "setting": "Queen Chudala, disguised as the young sage Kumbha, visits her husband who fled to the forest.",
+      "sanskrit": "साधो न देहत्यागेन न राज्यत्यजनेन च । न चोटजादिशोषेण सर्वत्यागो भवेन्नृप ॥",
+      "line": "Giving up your kingdom, your body, or living in a hut won't free you. Real letting go is inside.",
+      "translation": "Good man, true renunciation does not come from giving up the body, nor from giving up the kingdom, nor from wasting away in a hut, O king.",
+      "why": "Running away doesn't free you; letting go inside does. Sometimes the teacher is the person beside you.",
+      "misuse": "Not 'never change your life'. It says outer escape without inner change doesn't work.",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.chudala",
+       "title": "Queen Chudala teaches her husband what renunciation really is",
+       "summary": "Queen Chudala finds inner peace, but her husband, King Shikhidhvaja, doesn't believe her. Restless, he leaves his kingdom for the forest. Chudala rules wisely in his absence and visits him disguised as a young sage, Kumbha, who shows him that giving up kingdom, home and body is not renunciation; letting go of the clinging mind is. Freed, he returns home and rules beside her.",
+       "story_hook": "The queen had found peace, and the king, who loved her, could not believe it.",
+       "lesson": "Running away doesn't free you; letting go inside does. Sometimes the teacher is the person beside you."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Queen Chudala found peace, and her husband refused to believe her",
+     "teaser": "Queen Chudala found peace, and her husband refused to believe her",
+     "for_you": "Queen Chudala stayed in the kingdom and found her footing inside. You do not need to leave the house to find the deeper thing. The truth you are looking for is already in the room where your children sit, waiting to be seen with fresh eyes."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The company you hold",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 193,
+   "llm": 5306,
+   "total": 12667,
+   "select": 7160
+  }
+ },
+ "script": [
+  [
+   "open",
+   "Sunday has come. The house is full. The children are here. But they are on their phones. You are in the same room and you are alone."
+  ],
+  [
+   "scene",
+   "Krishna is speaking to Arjuna on a battlefield. Arjuna has asked Krishna to describe his divine form. Krishna tells him about the people who remember him and talk of the divine with each other. They find joy in each other's company. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "तेषामेवानुकम्पार्थमहमज्ञानजं तमः, नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता."
+  ],
+  [
+   "line",
+   "In plain words: Out of compassion, I live in their hearts and clear the darkness with the lamp of understanding."
+  ],
+  [
+   "unpack",
+   "Krishna says he lives in the heart of those who gather in this way. He brings a lamp of knowledge to clear the darkness. This is not about finding new people or new books. It is about the light that already lives inside you. When you read your morning text, you are not just filling time. You are gathering your own light. This light does not need the children to look up to see it. It simply clears the dark between you."
+  ],
+  [
+   "for_you",
+   "Today, sit with your morning text as you always do. Feel the lamp you are holding. It is already in your own room. Let it light your own heart first. Then look at the space around your children. They are here. The light is here. The distance is real, but the lamp is already burning."
+  ],
+  [
+   "close",
+   "What does the lamp see when you look at the room?"
+  ]
+ ],
+ "depth": {
+  "life": "The house is full, but their eyes stay down. You raised them alone, and now they fill the silence with screens. You read each morning, looking for what lives beneath the surface of their faces.",
+  "points": "The distance you feel is not just in their hands. It is a darkness born of ignorance, a veil that makes you unseen even when you are sitting right there. The light you seek is already in your own heart.",
+  "practice": "Let the lamp of your morning reading burn a little longer today. Let it warm your own chest before you look at them.",
+  "question": "What does it feel like to hold the light before you turn it toward them?"
+ }
+}

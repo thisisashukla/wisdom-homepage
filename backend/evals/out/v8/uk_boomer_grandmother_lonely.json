@@ -1,0 +1,495 @@
+{
+ "persona": {
+  "id": "uk_boomer_grandmother_lonely",
+  "market": "UK (Birmingham)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "68, came from Jalandhar in 1976, worked in a factory then raised 3 children. Widowed. Children busy, grandchildren on phones. Reads Ramcharitmanas.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "lonely in a full house",
+   "bridge": "The Ramayana in your morning is what you have. What you are searching for is the one who reads it, not the book itself.",
+   "week_thesis": "Seven days from the Ramayana as company to the Ramayana as a door, and the one who reads it becoming the one who is read.",
+   "week_beats": {
+    "hook": "You recognise the routine of Sundays and mornings, and the hunger for something that is not a story.",
+    "diagnose": "You see that the story is not the problem. The one who reads it is the one who is searching.",
+    "steady": "You hold that what is read is a mirror, and the one who reads is the one who is being searched for.",
+    "act": "You try reading one verse as a question to the one who reads, and sitting with the answer.",
+    "story": "A widow who raised her children alone and found her way back to herself through the Ramayana shows you what reading can become."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "rcm"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A widow who raised her children alone now finds her only company in the Ramayana she reads each morning, and is looking for something deeper.",
+   "mirror": "You raise your children alone, and now the only company you have is the story you read each morning.",
+   "insight": "The Ramayana is not the problem. It is the one who reads it that you are searching for. The story has company, but you are looking for the one who is reading.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.484,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.392,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A life built alone, now held in the routine of Sunday visits and morning reading, and the quiet hunger for something that is not a story. I feel lonely.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "What is read in the morning is a mirror, not a companion; the one who reads is the one who is searching, and that is where the search begins.",
+    "act": "Sit with the Ramayana not as a story but as a question; read one verse and ask what it asks of the one who reads, then sit with the answer.",
+    "story": "A woman who lost her husband and raised her children alone, who found her way back to herself through the stories she read, and became the one who could read them again."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The story and the one who reads",
+    "What the reading asks",
+    "More than a morning"
+   ],
+   "seat": "",
+   "life_context": "In retirement, alone after raising her children since their father died; Sundays bring her children but they are on their phones, and her only company each morning is the Ramayana.",
+   "details": [
+    "children visit on Sundays but are on their phones",
+    "raised them alone after their husband died",
+    "reads the Ramayana in the morning",
+    "the morning reading is her only company"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "stance:seeking_over_pain",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "retried:1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "up_brihadaranyak.63",
+     "ref": "Brihadaranyaka Upanishad 1.4.3",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.3",
+     "family": "up",
+     "speaker": "Seer (quoting Yajnavalkya)",
+     "listener": "Reader",
+     "setting": "The first being, alone, longs for another.",
+     "sanskrit": "स वै नैव रेमे तस्मादेकाकी न रमते । स द्वितीयमैच्छत् स हैतावानास यथा स्त्रीपुमाꣳसौ सम्परिष्वक्तौ । स इममेवाऽऽत्मानं द्वेधाऽपातयत् । ततः पतिश्च पत्नी चाभवताम् । तस्मादिदमर्धबृगलमिव स्व इति ह स्माऽऽह याज्ञवल्क्यस्तस्मादयमाकाशः स्त्रिया पूर्यत एव । ताꣳ समभवत् ततो मनुष्या अजायन्त ॥",
+     "line": "Alone, he found no joy and longed for another. So, said Yajnavalkya, each of us is like a half.",
+     "translation": "He found no delight; that is why one who is alone finds no delight. He longed for a second. He became as large as a man and woman embracing, and split himself in two; from that came husband and wife. So, said Yajnavalkya, each of us is like a half. That is why this space is filled by a wife.",
+     "why": "Fear and loneliness are human; truth gives even the weak a footing.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.brihad.first_being",
+      "title": "The first being: fear, loneliness and dharma",
+      "summary": "In this creation story the first being, alone, feels fear, then realises there is no one else to fear. He feels no joy alone and longs for a companion, splitting into husband and wife. Finally dharma is created, the truth by which even the weak can stand up to the strong.",
+      "story_hook": "",
+      "lesson": "Fear and loneliness are human; truth gives even the weak a footing."
+     },
+     "score": 3.1285,
+     "beat": "hook",
+     "role_fit": 0.655,
+     "meaning": "The seer Yajnavalkya speaks to the reader about the very first being. Alone in the beginning, this being felt no joy. It longed for a companion and split itself in two, becoming a husband and a wife. Each of us, says Yajnavalkya, is like a half. This is why even this space is filled by a wife.",
+     "for_you": "Your mornings with the Ramayana are full, but the hunger you feel is not for another story. It is for the one who reads. You are looking for the companion, not the book."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.45",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 45",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: how need changes what we value.",
+     "sanskrit": "परिक्षीणः कश्चित्स्पृहयति यवानां प्रसृतये स पश्चात् सम्पूर्णः कलयति धरित्रीं तृणसमाम् । अतश्चानैकान्त्याद्गुरुलघुतयाऽर्थेषु धनिना- मवस्था वस्तूनि प्रथयति च सङ्कोचयति च ॥",
+     "line": "Starving, a handful of grain is everything. Full, the whole earth looks like straw.",
+     "translation": "A man who has lost everything longs for a handful of barley; later, when full, he counts the whole earth as straw. Because nothing is fixed, a person's condition makes things look great or small.",
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 2.4667,
+     "beat": "diagnose",
+     "role_fit": 0.596,
+     "meaning": "Bhartrihari speaks to the reader from the section on wealth. He says that when a man is starving, a handful of grain is everything to him. Later, when he is full, he counts the whole earth as straw. He means that nothing is fixed, and a person's condition makes things look great or small. Your morning reading is filling a space that once held a partner and a busy home.",
+     "for_you": "You have spent years filling your home with your children and your work. Now the mornings are quiet, and the words you read are what is left. The story is not the problem."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.2",
+     "ref": "Sursagar vinay pada",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the reader",
+     "setting": "Surdas on whose side God stands.",
+     "sanskrit": "नाथ अनाथनि ही के संगी। दीनदयाल, परम करुनामय, जन-हित हरि बहु-रंगी ॥",
+     "line": "The Lord is the companion of exactly those who have no one.",
+     "translation": "The Lord is the companion of exactly those who have no one: kind to the lowly, supremely compassionate, Hari who takes many forms for the good of his people.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0431,
+     "beat": "steady",
+     "role_fit": 0.63,
+     "meaning": "Surdas speaks to the reader from a place of absolute certainty about whose side God is on. He says the Lord is the companion of exactly those who have no one. This is not a general promise of help. It is a specific statement about the condition of being alone. When a person has no one else, the Lord becomes that one. The text does not say the Lord replaces people. It says the Lord is the companion of the one who is alone. The reading does not end the loneliness. It meets it.",
+     "for_you": "The Ramayana is there, but the one who reads it is looking elsewhere. Let the book be your companion today, not your escape. Sit with it knowing that the search for company is a search for yourself."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_shwetashwetar.3.17",
+     "ref": "Shvetashvatara Upanishad 3.17",
+     "ref_iast": "Śvetāśvatara Upaniṣad 3.17",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seekers",
+     "setting": "Describing the one Lord who pervades all, the seer adds what he is to each of us.",
+     "sanskrit": "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम् । सर्वस्य प्रभुमीशानं सर्वस्य शरणं सुहृत् ॥",
+     "line": "The Lord of everything is also everyone's refuge and everyone's friend.",
+     "translation": "He shines through the powers of all the senses yet has no senses; he is the master and ruler of all, the refuge of all, the friend of all.",
+     "why": "Refuge in God comes at the end of honest questioning, not instead of it.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.shvet_inquiry_to_refuge",
+      "title": "Shvetashvatara: from 'what governs our lives?' to refuge",
+      "summary": "Seekers ask what causes the world and governs their joys and sorrows. Through meditation they come to see one Lord, Rudra-Shiva, hidden in every heart; the Upanishad moves from inquiry to recognition to a prayer of refuge (6.18) and ends on grace and love of God (6.21, 6.23).",
+      "story_hook": "",
+      "lesson": "Refuge in God comes at the end of honest questioning, not instead of it."
+     },
+     "score": 2.9174,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "In the Shvetashvatara Upanishad, a seer who has searched for what governs the world speaks to those still seeking. He says that the one Lord who rules everything is also the refuge and friend of every single person. The verse means that this refuge is not something you are given before you have looked honestly at your own confusion. It comes after you have asked what is real, not before. The truth underneath is that the one who reads the Ramayana each morning is the one being searched for.",
+     "for_you": "Your morning reading is the companion that stays when the house is full but the people are elsewhere. Hold onto the idea that the one who reads is the one who is being searched for. The Ramayana is not the end of the search. It is the mirror that shows you who is holding it."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.4.8.chaupai.2",
+     "ref": "Ramcharitmanas · Kishkindha Kand",
+     "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 8",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Sugriva",
+     "setting": "Ram to Sugriva on what a friend actually does.",
+     "sanskrit": "जिन्ह कें असि मति सहज न आई। ते सठ कत हठि करत मिताई॥ कुपथ निवारि सुपंथ चलावा। गुन प्रगटै अवगुनन्हि दुरावा ॥",
+     "line": "A friend steers you off the wrong path, speaks of your strengths, and keeps your faults private.",
+     "translation": "Why do those who lack this natural feeling force themselves into friendships? A friend turns you back from the wrong path and sets you on the right one, makes your good qualities known and keeps your faults to himself.",
+     "why": "A friend treats your trouble as bigger than their own.",
+     "misuse": "Keeping faults private means discretion, not covering up harm.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.friendship_pact",
+      "title": "Ram and Sugriva become friends",
+      "summary": "Hanuman, sent to check whether the two strangers are Bali's spies, recognises Ram and brings him to Sugriva, who has been driven out by his brother. Before a fire as witness they become friends, and Ram describes what friendship asks: your friend's small trouble is a mountain, your own is dust; steer him right, hide his faults, love him more in hard times.",
+      "story_hook": "",
+      "lesson": "A friend treats your trouble as bigger than their own."
+     },
+     "score": 3.0566,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "In the Ramcharitmanas, Ram speaks to Sugriva about what friendship truly means. He says that a true friend steers you away from the wrong path, speaks of your strengths, and keeps your faults private. The point is that a friend treats your trouble as bigger than their own. This does not mean covering up harm. It means that when you are in pain, the friend feels it as a mountain and acts on it.",
+     "for_you": "The Ramayana is a friend, but it is also a question. Read one verse today as if it is asking you something, and sit with the answer. Let it steer you back to what you need, not what you think you could want."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.4.34",
+     "ref": "Bhagavad Gita 4.34",
+     "ref_iast": "Bhagavad Gītā 4.34",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the power of understanding to end confusion and guilt.",
+     "sanskrit": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया । उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥",
+     "line": "Learn from those who have seen the truth: approach with humility, ask real questions, and serve.",
+     "translation": "Learn it by bowing down, by questioning, and by service. Those who are wise and have seen the truth will teach you that knowledge.",
+     "why": "Learn humbly, trust the process, and cut through doubt to act.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p04.4",
+      "title": "The glory of knowledge",
+      "summary": "Krishna praises knowledge: learn it humbly from those who know, it carries even the worst wrongdoer across, faith and self-control bring it, and doubt destroys. He ends: cut your doubt and stand up.",
+      "story_hook": "",
+      "lesson": "Learn humbly, trust the process, and cut through doubt to act."
+     },
+     "score": 2.9968,
+     "beat": "act",
+     "role_fit": 0.694,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. Arjuna is caught in guilt and confusion about his duty. Krishna tells him to learn from those who have seen the truth. Approach them with humility. Ask real questions. Serve them. This knowledge will carry even the worst wrongdoer across. The path is not for the proud or the doubter. It is for the one who is ready to be taught.",
+     "for_you": "Ask the Ramayana what it needs from you today. Sit with one question. Let the morning reading become a conversation instead of a habit."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "Bhasa and Vilasa spent their lives chasing tasks and found only more exhaustion. You have read the Ramayana for years without asking it to change you. Let the story you hold become the mirror you look into. Let the text read the one who reads it, and see what appears."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The story and the one who reads",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 213,
+   "llm": 6734,
+   "total": 14347,
+   "select": 7394
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are in a full house, but the silence is loud. Your children are right there on Sundays, yet they are somewhere else on their screens. You have raised them alone, and now the house is quiet, and the morning reading is the only thing that stays with you."
+  ],
+  [
+   "scene",
+   "Yajnavalkya, the great seer, tells the reader about the very first being. He was alone in the beginning, and he felt no joy. Seer (quoting Yajnavalkya) said:"
+  ],
+  [
+   "sanskrit",
+   "स वै नैव रेमे तस्मादेकाकी न रमते, स द्वितीयमैच्छत् स हैतावानास यथा स्त्रीपुमाꣳसौ सम्परिष्वक्तौ, स इममेवाऽऽत्मानं द्वेधाऽपातयत्, ततः पतिश्च पत्नी चाभवताम्, तस्मादिदमर्धबृगलमिव स्व इति ह स्माऽऽह याज्ञवल्क्यस्तस्मादयमाकाशः स्त्रिया पूर्यत एव, ताꣳ समभवत् ततो मनुष्या अजायन्त."
+  ],
+  [
+   "line",
+   "In plain words: Alone, he found no joy and longed for another. So, said Yajnavalkya, each of us is like a half."
+  ],
+  [
+   "unpack",
+   "This is the truth of it. To be alone is to feel a lack. The first being did not hide this fear. He simply noticed it and reached for another. Each of us is like a half, looking for the other. This is not a failure. It is the shape of life. You feel this lack in your own body, and that is only human."
+  ],
+  [
+   "for_you",
+   "Notice the morning reading without needing it to fix the quiet. Let the story be there, but do not let it become a screen between you and the room. Sit with the half that is left, and feel it as real as the rest."
+  ],
+  [
+   "close",
+   "What if the one who reads is the one who is being read?"
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": "The first being felt no joy alone and longed for a second. The Upanishad says this longing is the root of all companionship. You are not incomplete because you are a widow. You are whole, and the emptiness you feel is the space where a second self begins.",
+  "practice": "Read one verse aloud to the empty room. Let the words fill the space where your husband once sat.",
+  "question": "What would it mean to read to someone else instead of alone?"
+ }
+}

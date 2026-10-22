@@ -1,0 +1,513 @@
+{
+ "persona": {
+  "id": "us_millennial_mother_anger",
+  "market": "USA (Chicago)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "39, Indian-American, two kids, runs a dental practice with her husband, loses her temper with the kids and hates herself after.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "phone_hours": 3,
+   "topic": "mind",
+   "follow": "anxious"
+  },
+  "note": "I yelled at my 7 year old this morning for spilling milk and the look on his face. I am turning into my mother. I run a practice, I manage 12 people calmly, and then at home I just snap",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and frightened of becoming her mother",
+   "bridge": "The snap at home is what the Gita calls anger rising from blocked wanting, and it is the same fire you manage calmly at work.",
+   "week_thesis": "From the shame of the snap to the calm of the room, by understanding what the fire is and how to let it pass.",
+   "week_beats": {
+    "hook": "You recognise the snap and the fear, named without judgement.",
+    "steady": "You hold that praise and blame, success and failure, heat and calm come and go, and the one who stays steady is the one who wins.",
+    "act": "You try taking one breath at the moment you feel the heat, and letting the feeling pass without the voice.",
+    "story": "A queen who ruled with calm and once lost her temper shows you how to come back to yourself after the fire."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.7,
+   "core_struggle": "She runs a practice and manages twelve people calmly, yet at home she snaps at her children and is terrified she is becoming her own mother.",
+   "mirror": "You manage twelve people without raising your voice all day, and at home a spill of milk undoes you.",
+   "insight": "It isn't the milk that broke you. It's the gap between the mother you are at work and the mother you are at home, and the fear that one is becoming the other.",
+   "mechanism": "anger_reactivity",
+   "mechanism_label": "Anger that takes over",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.53,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.25,
+     "source": "chip"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.228,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.537,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.48,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of snapping at your child and the fear that you are becoming the parent you once watched snap.",
+    "diagnose": "Anger rises from blocked wanting; when a need is blocked, the mind turns hot and the voice rises before the hand can stop it.",
+    "steady": "Praise and blame, success and failure, heat and calm come and go; the one who stays steady in the storm is the one who wins.",
+    "act": "Practise seeing the moment before the snap; take one breath, name what you want, and let the feeling pass without the voice.",
+    "story": "A woman who managed a household with calm and a kingdom with patience, who lost her temper once and spent a lifetime learning how to come back to herself."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The fire at home",
+    "What blocks the wanting",
+    "The one who stays steady"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs a practice and manages twelve people calmly"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "seat:missing",
+    "retried:1",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:gendered=1,invented=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "tulsi_dv.101",
+     "ref": "Dohavali 101",
+     "ref_iast": "Dohāvalī 101",
+     "family": "tulsi",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Tulsidas on being protected without knowing it.",
+     "sanskrit": "खेलत बालक ब्याल सँग मेलत पावक हाथ। तुलसी सिसु पितु मातु ज्यो राखत सिय रघुनाथ॥",
+     "line": "As parents pull a child back from the fire, you are kept safe more often than you know.",
+     "translation": "A child plays with a snake and reaches for the fire; as a father and mother keep that child safe, Tulsi says, so Sita and Ram keep us.",
+     "why": null,
+     "misuse": "Not a promise that nothing bad happens; a reminder of care.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "prasang": null,
+     "score": 3.1062,
+     "beat": "hook",
+     "role_fit": 0.43,
+     "meaning": "Tulsidas speaks to the reader about a child who reaches for the fire and the snake. The parents pull the child back. Tulsidas says Sita and Ram keep us safe in the same way, often without us knowing.",
+     "for_you": "You manage twelve people with a calm that feels like a gift, yet at home you fear you are the one who burns. Let the steadiness at work be proof that you are not the fire you dread. You are held, even in the snap."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 3.9305,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Krishna is answering Arjuna's question about the steady person. He traces a quiet path from thought to feeling. A person dwells on something, and attachment is born. From that attachment comes wanting. When that wanting is blocked, it turns into anger. This is how the mind moves from a simple thought to the fire of rage. The verse shows that anger is not the first thing. It is the last step in a chain that starts with where you place your attention.",
+     "for_you": "The anger you feel at home is not the beginning. It is the end of a chain that starts with where your mind dwells. Notice what you are holding onto just before the snap. The shift from calm at work to sharp at home begins with a thought you did not guard."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.23",
+     "ref": "Bhagavad Gita 5.23",
+     "ref_iast": "Bhagavad Gītā 5.23",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+     "sanskrit": "शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात् । कामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः ॥",
+     "line": "Whoever can ride out the surge of desire and anger, here and now, is steady and happy.",
+     "translation": "One who is able, here in this life, before leaving the body, to withstand the surge born of desire and anger, is disciplined; he is a happy person.",
+     "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.3",
+      "title": "The yoga of knowledge",
+      "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+      "story_hook": "",
+      "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+     },
+     "score": 3.4193,
+     "beat": "steady",
+     "role_fit": 0.575,
+     "meaning": "Krishna continues his teaching on the steady person. He describes the one who can ride out the surge of desire and anger in this very life. This person does not wait for death to find peace. They withstand the rush of feeling while it is still alive in them. They are disciplined because they do not let the wave of emotion carry them away. Their happiness is not borrowed from the world, but found within.",
+     "for_you": "You are already steady in one place, at work. Hold onto that steadiness. When the surge of anger rises at home, you can ride it out. You do not have to become it. You can stay present with your children while the feeling passes."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.37.51",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 37.51",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "सन्नियच्छति यो वेगमुत्थितं क्रोधहर्षयोः / स श्रियो भाजनं राजन्यश्चापत्सु न मुह्यति",
+     "line": "Rein in the rush of anger and of excitement alike, and keep your head in trouble.",
+     "translation": "Whoever reins in the rush of anger and of elation the moment they rise, and does not lose his head in trouble, is the one good fortune favours.",
+     "why": "Arrogance, anger and betrayal shorten a life. Rivals in a family often protect each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.37",
+      "title": "Vidura Niti: what cuts life short",
+      "summary": "Vidura lists Manu's seventeen kinds of fool and the six habits, from arrogance to betraying friends, that shorten a life more surely than death. He warns that the cousins need each other like a forest and its tigers.",
+      "story_hook": "",
+      "lesson": "Arrogance, anger and betrayal shorten a life. Rivals in a family often protect each other."
+     },
+     "score": 3.4023,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": null,
+     "for_you": "You manage twelve people calmly at work and you know how to hold the room. The same steadiness is in you at home. When the heat rises with your children, you do not have to snap. You can keep your head in the trouble, and let the one who stays steady win."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.23",
+     "ref": "Bhagavad Gita 6.23",
+     "ref_iast": "Bhagavad Gītā 6.23",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "तं विद्याद् दुःखसंयोगवियोगं योगसंज्ञितम् । स निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा ॥",
+     "line": "Yoga is unhooking from sorrow. Practise it with resolve and a heart that doesn't lose hope.",
+     "translation": "Know that to be yoga: the breaking of contact with sorrow. This yoga should be practised with determination and with an undespairing mind.",
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 3.348,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Krishna is teaching Arjuna how to meditate and what a settled mind is like. He says that yoga is unhooking from sorrow. It is the breaking of contact with sorrow. This yoga should be practised with determination and with an undespairing mind.",
+     "for_you": "When you feel the heat rising and the voice coming, take one breath at that moment. Let the feeling pass without the voice. You are breaking contact with the sorrow, and you are practising with a heart that does not lose hope."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.2.22.2",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 22.2",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Just told he is exiled, Ram calms his furious brother Lakshman.",
+     "sanskrit": "निगृह्य रोष शोकं च धैर्यमाश्रित्य केवलम्। अवमानं निरस्यैनं गृहीत्वा हर्षमुत्तमम्॥ उपक्लुप्तं यदैतन्मे अभिषेकार्थमुत्तमम्। सर्वं निवर्तय क्षिप्रं कुरु कार्य निरव्ययम्॥",
+     "line": "Rein in anger and grief, lean on your steadiness, and set the insult aside.",
+     "translation": "Hold back your anger and grief, lean on steadiness alone, set this insult aside and take up real cheerfulness. Quickly undo the preparations made for my coronation and get on with what needs doing, without fuss.",
+     "why": "Anger at injustice is natural; decide what to do with it before it decides for you.",
+     "misuse": "Not a call to ignore injustice; it is about choosing your response.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "resentment",
+       "label": "I can't let go of resentment"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.lakshman_anger_exile",
+      "title": "Lakshman's fury, Ram's calm",
+      "summary": "Lakshman is enraged by the injustice and wants to seize the throne by force. Ram calms him: set aside the insult, don't torment yourself, the setback may lead somewhere better. Lakshman answers that effort, not fate, decides; both views are given their due.",
+      "story_hook": "",
+      "lesson": "Anger at injustice is natural; decide what to do with it before it decides for you."
+     },
+     "score": 3.2367,
+     "beat": "act",
+     "role_fit": 0.474,
+     "meaning": "Ram is in the forest. He has just heard he is to be exiled. Lakshman is furious. He wants to fight. Ram tells him to hold back his anger and grief. He asks Lakshman to lean on steadiness alone. Ram says to set aside the insult and take up cheerfulness. He tells Lakshman to undo the coronation preparations and get on with what needs doing, without fuss. The verse proposes that anger at injustice is natural, but you could decide what to do with it before it decides for you.",
+     "for_you": "You manage twelve people without this fire taking over. At home, the same heat rises and you snap. Try taking one breath when the heat comes, and let the feeling pass without letting it become your voice. You do not have to give it a shape right now."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.tara_calms_lakshman",
+     "title": "Tara calms Lakshman",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Tara",
+      "Lakshman",
+      "Sugriva"
+     ],
+     "story_hook": "Lakshman came through the gates ready to fight, and found a woman standing in his way.",
+     "summary": "Lakshman storms into Kishkindha, bow twanging. Tara meets him with reason and courtesy: strong people think before anger takes over; bear the slip of someone on your side. Sugriva apologises and Lakshman asks forgiveness for his own harsh words.",
+     "lesson": "A calm voice can turn a confrontation into an apology on both sides.",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "anchor": {
+      "id": "vr.4.33.39",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 33.39",
+      "family": "vr",
+      "speaker": "Tara",
+      "listener": "Lakshman",
+      "setting": "Lakshman storms into Kishkindha, furious at Sugriva's delay; Sugriva's queen Tara meets him calmly.",
+      "sanskrit": "न कोपकालः क्षितिपालपुत्र न चापि कोपः स्वजने विधेयः। त्वदर्थकामस्य जनस्य तस्य प्रमादमप्यर्हसि वीर सोढुम्॥",
+      "line": "This is no time for anger. Bear the slip of someone who is on your side.",
+      "translation": "Prince, this is no time for anger, and anger should not be turned on your own people. Hero, you should bear even the lapse of someone who wants your good.",
+      "why": "A calm voice can turn a confrontation into an apology on both sides.",
+      "misuse": "About lapses by people who mean well, not about repeated mistreatment.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "anger_outburst",
+        "label": "I lost my temper and regret it"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.tara_calms_lakshman",
+       "title": "Tara calms Lakshman",
+       "summary": "Lakshman storms into Kishkindha, bow twanging. Tara meets him with reason and courtesy: strong people think before anger takes over; bear the slip of someone on your side. Sugriva apologises and Lakshman asks forgiveness for his own harsh words.",
+       "story_hook": "Lakshman came through the gates ready to fight, and found a woman standing in his way.",
+       "lesson": "A calm voice can turn a confrontation into an apology on both sides."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Lakshman stormed the gates ready to fight, and a queen stood calmly in his way",
+     "teaser": "Lakshman stormed the gates ready to fight, and a queen stood calmly in his way",
+     "for_you": "The woman in the story did not win by fighting back. She won by being steady enough to let the storm pass through her. At home, you can do this too. You do not need to snap to be heard, and you do not need to become her to keep your house in order."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The fire at home",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 139,
+   "llm": 4368,
+   "total": 15578,
+   "select": 11064
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You manage twelve people with a calm that feels like a gift. Yet at home you fear you are the one who burns. You snapped and you regret it. You are ashamed and frightened that you are becoming her."
+  ],
+  [
+   "scene",
+   "Tulsidas speaks to the reader about a child who reaches for the fire and the snake. The parents pull the child back. Tulsidas said:"
+  ],
+  [
+   "sanskrit",
+   "खेलत बालक ब्याल सँग मेलत पावक हाथ, तुलसी सिसु पितु मातु ज्यो राखत सिय रघुनाथ."
+  ],
+  [
+   "line",
+   "In plain words: As parents pull a child back from the fire, you are kept safe more often than you know."
+  ],
+  [
+   "unpack",
+   "The verse proposes that care surrounds you even when you cannot feel it. You are not the first person to snap at the people you love. The gap between the mother you are at work and the mother you are at home is where the fear lives. You are kept safe more often than you know. This is easier said than done, because the shame makes the moment at home feel like proof that you are becoming her."
+  ],
+  [
+   "for_you",
+   "When you feel the snap rising, let it be a sign that you are present, not absent. The care you give at work is the care you give at home. You are held, even in the snap."
+  ],
+  [
+   "close",
+   "You are held, even in the snap."
+  ]
+ ],
+ "depth": {
+  "life": "You run a practice with twelve people and carry that calm like a steady hand. Then you walk into the room and the snap comes out. You feel frightened that the mother you are at home is becoming the one you remember, and the shame sits heavy after.",
+  "points": "The snap is not the real you. It is anger that rises when wanting is blocked, the same fire you calmly manage at work. It passes through you. You are not the fire. You are the one held safely on the other side of it.",
+  "practice": "When the snap rises, stop and name the blocked wanting out loud to yourself. Say what you want that you are not getting.",
+  "question": "What do you want in that moment that you are not getting?"
+ }
+}

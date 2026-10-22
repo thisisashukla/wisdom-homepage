@@ -74,7 +74,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const aliasString = aliases && aliases.length > 0
     ? ` (${aliases.slice(0, 3).join(', ')})`
     : ''
-  const title = `भगवद् गीता में ${cap}${aliasString} — ${topic.verseCount} श्लोक | Wisdom`
+  const title = `भगवद् गीता में ${cap}${aliasString} — ${topic.verseCount} श्लोक`
   const description = `भगवद् गीता के ${topic.verseCount} श्लोक जो ${topic.label}${aliasString} पर हैं — संस्कृत, हिन्दी और अंग्रेज़ी अनुवाद सहित। सभी 18 अध्यायों से चुने गए।`
   return {
     title,

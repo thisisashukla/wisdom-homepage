@@ -1,0 +1,507 @@
+{
+ "persona": {
+  "id": "ca_millennial_new_immigrant",
+  "market": "Canada (Toronto)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "36, was a bank branch manager in Hyderabad, moved to Toronto 8 months ago on PR, now driving Uber while applying. Wife and 4-year-old. Winter.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 5,
+   "topic": "work",
+   "follow": "didnt_work_out"
+  },
+  "note": "I managed 40 people in Hyderabad. Here I drive Uber at night and my wife cries about the cold. Everyone says Canadian experience. I did this for my son's future but right now I feel like I've ruined our present",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "guilty and grieving the present",
+   "bridge": "The grief you feel for the life you left behind is what the Gita calls attachment: love with nowhere to go, and it is the heaviest burden of all.",
+   "week_thesis": "Seven days from feeling the present is ruined to finding one thing in it that is yours, without betraying the future.",
+   "week_beats": {
+    "hook": "You recognise the grief for Hyderabad and the guilt about the present, named without judgement.",
+    "diagnose": "You see that it is the love with nowhere to go, not the move itself, that is making the present feel ruined.",
+    "steady": "You hold that the love for what was is real, and it does not have to destroy what is here.",
+    "act": "You try one small act of being present with your wife in the cold, and one small thing you claim as yours in the night.",
+    "story": "A man who left everything behind to give his son a future shows you how to hold both grief and hope without letting either win."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.8,
+   "core_struggle": "A father who moved his family to Canada for his son's future feels he has sacrificed their present, and his wife is struggling with the cold.",
+   "mirror": "You gave your son a future, and right now you and your wife are paying for it in the cold.",
+   "insight": "It isn't the move that is wrong. It is the love for the life you left that has nowhere to go, and that grief is what is making the present feel ruined.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 0.99,
+     "source": "note"
+    },
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.581,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.562,
+     "source": "note"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.52,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "The grief of a life left behind, and the guilt of feeling that the present you sacrificed for is being wasted on a future that has not yet arrived.",
+    "diagnose": "Grief is love with nowhere to go; everything that comes together must part, and the heart aches because the bond was real.",
+    "steady": "Everything that comes together must part; the love for what was is real, and it does not have to destroy what is here.",
+    "act": "Let your wife know her grief is real, and let yourself feel the cold without calling it a ruin; find one small thing in the present that is yours, and hold it.",
+    "story": "A man who left his home and his rank to build a future for his child, grieving the life he gave up, who learns to hold both without letting either destroy the other."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "template",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The present you sacrificed",
+    "Love with nowhere to go",
+    "More than a future"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "managed people in Hyderabad",
+    "now drives Uber at night in Canada",
+    "wife cries about the cold"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "diagnose:diagnose_not_causal",
+    "seat:missing",
+    "retried:3",
+    "dropped:fallback_lesson=1,fallback_line=4,gendered=4,missing=2",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:open=not_second_person",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.9109,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna is on the battlefield, surrounded by family and teachers he loves, yet he has dropped his bow and arrow. He tells Krishna that even if he won every kingdom on earth, even if the gods themselves gave him their rule, nothing could touch this sorrow that is drying him out from the inside. He admits he does not see a way through his own confusion. He asks Krishna to teach him what is right.",
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.104.16",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.16",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage Kalakavrikshiya consoles Prince Kshemadarshi, who has lost his kingdom and wealth.",
+     "sanskrit": "भूत्वा च न भवत्येतदभूत्वा च भविष्यति / शोके न ह्यस्ति सामर्थ्यं शोचेत स कथं नरः",
+     "line": "What was ends, and what wasn't begins. Grief has no power to change it.",
+     "translation": "What was, ceases to be; what was not, comes to be. Grief has no power to change this. Why then should anyone grieve?",
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "Feeling grief is human; the point is not to feed it endlessly.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 3.0965,
+     "beat": "diagnose",
+     "role_fit": 0.526,
+     "meaning": "The sage Kalakavrikshiya speaks to Prince Kshemadarshi, who has lost his kingdom and wealth. He tells the prince that what has already ended stays ended, and what has not yet begun is simply beginning. Grief cannot turn back the clock and bring back what was. The sage asks why anyone should grieve when the past is fixed. The verse proposes that wanting back what is gone is a dead end, and that a steadier mind looks for what is actually in front of it and makes peace with what others have.",
+     "for_you": "The life you built in Hyderabad is finished, and this new one in Canada is just beginning. The grief for what ended is not useless, but it cannot rebuild the past. The present you are in right now is not ruined by the move itself."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.25.31",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 25.31",
+     "family": "mbh",
+     "speaker": "Senajit (quoted by Vyasa)",
+     "listener": "Yudhishthira",
+     "setting": "Vyasa quotes the grieving King Senajit to Yudhishthira, who is broken by the war's losses.",
+     "sanskrit": "सुखं च दुःखं च भवाभवौ च / लाभालाभौ मरणं जीवितं च / पर्यायतः सर्वमवाप्तुवन्ति / तस्मान्न मुह्येन्न च संप्रहृष्येत्",
+     "line": "Gain and loss, joy and sorrow come to everyone in turn. Don't be crushed, and don't get carried away.",
+     "translation": "Happiness and sorrow, rise and fall, gain and loss, death and life: everyone receives all of these in turn. So do not be thrown off by them, and do not get carried away either.",
+     "why": "Guilt and grief are real, but they are not the end. The good you do next counts.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yudhishthira_grief",
+      "title": "After the war: Yudhishthira's grief and his family's counsel",
+      "summary": "Victorious but shattered by the deaths of kin, Yudhishthira wants to give up the throne for the forest. Arjuna, Bhima, Draupadi, Nakula, the sage Devasthana and Vyasa each argue with him, about duty, guilt, grief and the shortness of life, until he agrees to rule.",
+      "story_hook": "He had won the war, and all Yudhishthira wanted was to walk into the forest and never come back.",
+      "lesson": "Guilt and grief are real, but they are not the end. The good you do next counts."
+     },
+     "score": 3.3565,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": null,
+     "for_you": "The self in the one you love and the self in you were never born and never pass away; love was a meeting of what lasts."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.87",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 87",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "Closing verse of the section on steadfastness.",
+     "sanskrit": "छिन्नोऽपि रोहति तरुश्चन्द्रः क्षीणोऽपि वर्धते लोके । इति विमृशन्तः सन्तः सन्तप्यन्ते न लोकेऽस्मिन् ॥",
+     "line": "A cut tree grows back; the waning moon fills again. Remembering this, the wise do not despair.",
+     "translation": "A tree that is cut grows again; the waning moon waxes again in the world. Reflecting on this, the good are not tormented in this world.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.296,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari speaks to the reader at the close of his thoughts on steadfastness. He tells them to look at a tree that has been cut down and a moon that is fading. Both return. The tree grows back and the moon fills again. He says that when the wise remember this, they do not let despair take them over. The point is that setbacks are rarely permanent for those who stay on the right path.",
+     "for_you": "The love you have for Hyderabad and the life you built there is not a failure. It is a real thing. It does not have to burn down the life you are building now. You can let it be what it is without letting it ruin the next moment."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.338.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.15",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada to Shuka on troubles that affect many people at once.",
+     "sanskrit": "न जानपदिकं दुःखमेकः शोचितुमर्हति / अशोचन्प्रतिकुर्वीत यदि पश्येदुपक्रमम्",
+     "line": "Don't just grieve over a problem everyone faces. If you see a way to fix it, act.",
+     "translation": "No one should sit alone grieving over a trouble that has struck everyone. Instead of grieving, act to remedy it if you see a way.",
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 2.8106,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "The sage Narada speaks to the young Shuka, who is sitting alone with his sorrow. Narada tells him that no one should sit alone grieving over a trouble that affects everyone. He says that brooding only doubles the pain. If there is a way to fix something, you could act. He teaches that the mind is healed by understanding just as the body is healed by medicine. The point is that brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "for_you": "Let yourself grieve, honour them by living well, and remember that the self they loved in you, and in them, does not perish."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.22.23",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 22.23",
+     "family": "vr",
+     "speaker": "Vali",
+     "listener": "Angada",
+     "setting": "Dying, Vali advises his young son Angada how to conduct himself at his uncle Sugriva's court.",
+     "sanskrit": "न चातिप्रणयः कार्यः कर्तव्योऽप्रणयश्च ते। उभयं हि महादोषं तस्मादन्तरदृग्भव॥",
+     "line": "Don't be too familiar, and don't be cold. Both are mistakes; find the middle.",
+     "translation": "Do not be too familiar, and do not be distant either; both are serious mistakes. So keep a sense of the middle.",
+     "why": "Rivalry seems huge until the end; then only the relationship matters.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.vali_last_words",
+      "title": "Vali's last words",
+      "summary": "Struck down by Ram's arrow during the duel, Vali rebukes Ram, then makes his peace. To Sugriva he says: don't hold my faults against me; we could not have both brotherhood and kingdom. He entrusts his son to his brother and tells Angada how to live.",
+      "story_hook": "Lying on the ground, the brother who had driven him out asked him for forgiveness.",
+      "lesson": "Rivalry seems huge until the end; then only the relationship matters."
+     },
+     "score": 2.6005,
+     "beat": "act",
+     "role_fit": 0.889,
+     "meaning": "Vali lies dying, his life spilling out on the ground. He speaks to his son Angada, not about revenge, but about how to live well inside the court of his uncle Sugriva, the man who killed him. He tells the boy that anger and distance are both traps. If you are too familiar, you lose your dignity and your safety. If you are too cold, you lose your heart and your place. The only way through is the middle. He is not talking about politics.",
+     "for_you": "Honour them by living well and fully; see what is lasting in them and in you, and let love keep acting through you."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.lakshman_sumitra",
+     "title": "Sumitra sends Lakshman with Ram",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Lakshman",
+      "Ram",
+      "Sumitra"
+     ],
+     "story_hook": "Lakshman went to his mother expecting to be told to stay.",
+     "summary": "Ram asks Lakshman to stay and care for their old father and grieving mothers; Lakshman cannot imagine life apart from him. He goes to his mother Sumitra, afraid she will stop him. Instead she tells him that home is wherever Ram is, as day is wherever the sun shines, and gives him one piece of advice for the road.",
+     "lesson": "Home is where your people are; a good send-off gives values, not just tears.",
+     "matched": [
+      {
+       "id": "diaspora_identity",
+       "label": "I don't feel fully at home anywhere"
+      },
+      {
+       "id": "homesick",
+       "label": "I'm homesick"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.2.73.chaupai.2",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 73",
+      "family": "rcm",
+      "speaker": "Sumitra",
+      "listener": "Lakshman",
+      "setting": "Sumitra tells her son Lakshman to follow Ram into exile.",
+      "sanskrit": "अवध तहाँ जहँ राम निवासू। तहँइँ दिवसु जहँ भानु प्रकासू॥ जौं पै सीय रामु बन जाहीं। अवध तुम्हार काजु कछु नाहीं ॥",
+      "line": "Home is wherever your people are, as day is wherever the sun shines.",
+      "translation": "Ayodhya is wherever Ram lives; day is wherever the sun shines. If Sita and Ram really go to the forest, you have nothing to do in Ayodhya.",
+      "why": "Home is where your people are; a good send-off gives values, not just tears.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "diaspora_identity",
+        "label": "I don't feel fully at home anywhere"
+       },
+       {
+        "id": "homesick",
+        "label": "I'm homesick"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.lakshman_sumitra",
+       "title": "Sumitra sends Lakshman with Ram",
+       "summary": "Ram asks Lakshman to stay and care for their old father and grieving mothers; Lakshman cannot imagine life apart from him. He goes to his mother Sumitra, afraid she will stop him. Instead she tells him that home is wherever Ram is, as day is wherever the sun shines, and gives him one piece of advice for the road.",
+       "story_hook": "Lakshman went to his mother expecting to be told to stay.",
+       "lesson": "Home is where your people are; a good send-off gives values, not just tears."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Lakshman went to his mother Sumitra expecting to be told to stay",
+     "teaser": "Lakshman went to his mother Sumitra expecting to be told to stay",
+     "for_you": "Home is where your people are; a good send-off gives values, not just tears."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The present you sacrificed",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 313,
+   "llm": 5632,
+   "total": 21916,
+   "select": 15964
+  }
+ },
+ "script": [
+  [
+   "scene",
+   "Arjuna is on the battlefield, surrounded by family and teachers he loves. He has dropped his bow. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "This is the moment a man admits he cannot see his own way out. He names his grief exactly for what it is. He says that even total victory would not change the sorrow that is drying him out. This is where clarity begins. The grief is not about the future, it is about the love that has nowhere to go. It is attachment, as the texts call it, love with no place to land. This is easier said than done, because love does not stop being love when the place changes."
+  ],
+  [
+   "for_you",
+   "When the night is long and the cold is in the car, sit with the grief without trying to fix it. You do not have to earn the right to miss Hyderabad. You can carry the love for that life and still be here, in the cab, with your wife, with your son."
+  ],
+  [
+   "close",
+   "What is the one thing in this life that is yours to hold, even as the grief stays?"
+  ]
+ ],
+ "depth": {
+  "life": "You are driving through the cold Canadian night, and the silence in the car feels heavier than the steering wheel. Your wife cries about the cold, and you feel the distance between the life you managed in Hyderabad and the one you are building here. You are grieving the present because it feels like a loss of the future you promised them.",
+  "points": "Arjuna tells Krishna that even an unrivalled kingdom cannot touch the grief that is drying him up. This points to a truth beneath your exhaustion. The heaviest burden is not the work or the move. It is the love for the life you left that has nowhere to go.",
+  "practice": "Listen to one song from your time in Hyderabad while you drive tonight. Let the memories come without pushing them away or trying to fix them.",
+  "question": "What part of the life you left behind feels most impossible to carry with you right now?"
+ }
+}

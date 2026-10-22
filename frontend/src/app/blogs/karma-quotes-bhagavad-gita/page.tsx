@@ -4,7 +4,7 @@ import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
 export const metadata: Metadata = {
-  title: "Karma Quotes from the Bhagavad Gita — 10 Shlokas on Karma with Sanskrit & English Meaning | Wisdom",
+  title: "Karma Quotes from the Bhagavad Gita — 10 Shlokas on Karma with Sanskrit & English Meaning",
   description:
     "The Bhagavad Gita's most important shlokas on karma, in one page. Sanskrit original, IAST transliteration, English meaning and the one-line essence for each verse. From 2.47 (karmanye vadhikaraste) to 4.37 (knowledge burns karma).",
   keywords:

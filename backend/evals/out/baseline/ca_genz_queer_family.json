@@ -1,0 +1,467 @@
+{
+ "persona": {
+  "id": "ca_genz_queer_family",
+  "market": "Canada (Vancouver)",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "22, Indo-Canadian, came out to her Punjabi parents last year, they went silent, now talk only about weather. She still goes home for Diwali.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "since I told my parents about my girlfriend they haven't said one real thing to me. we talk about the weather. I still go home for diwali and sit at the table and it's like I'm a guest",
+  "note_source": "text",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "confidence": 0.75,
+   "core_struggle": "After telling his parents about his girlfriend, they have gone quiet and he now feels like a guest at his own home.",
+   "mirror": "You walk into the house you grew up in, and they speak around you like you are a guest.",
+   "insight": "You did not become a guest when you told them. The silence that followed is theirs, and it does not change who you are in that room.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 2.203,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.822,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.63,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being met with silence by the people who raised you, and the ache of sitting at your own table as if you are a visitor. My parents' expectations weigh on me.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A young man who spoke his truth to his elders and was met with cold silence, who found his footing not by changing, but by staying true to himself."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The silence is theirs",
+    "Who you are, not what they say",
+    "Standing in your own truth"
+   ],
+   "seat": "a young man whose parents have gone quiet after he shared something true about his life",
+   "life_context": "A young man under twenty-five who studies and works; after sharing news of his girlfriend, his parents speak only of the weather, and every Diwali he sits at the table feeling like a stranger.",
+   "details": [
+    "told parents about his girlfriend",
+    "they talk about the weather and nothing real",
+    "goes home for Diwali and sits like a guest at his own table"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:preachy=1,slang=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 1.4505,
+     "beat": "hook",
+     "role_fit": 0.14,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He tells him that a person must be their own friend. If they lose themselves to despair or weakness, they are their own worst enemy. But if they lift themselves by their own will, they become their own truest support. It is about holding your own ground when the world turns silent and cold, because no one else can do that inner work for you.",
+     "for_you": "You did not become a guest when you told your parents about your girlfriend. That silence is theirs, not yours. In that room, you are the one who remains whole. Stand on that truth and let it carry you through the meal."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 3.1398,
+     "beat": "diagnose",
+     "role_fit": 0.16,
+     "meaning": "Krishna speaks to Arjuna about the danger of living by another person's script. He says it is better to walk your own path, even with mistakes, than to perfectly perform a role that was never yours. Borrowed lives are full of fear because they are built on comparison and hiding. Your own duty, walked imperfectly, is still your own.",
+     "for_you": "Your parents have a script for you, but it is not yours to perform. You do not need to fit their silence or their weather talk. Keep walking your own path, even if it feels small or imperfect right now."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.1251,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": "Draupadi speaks to Yudhishthira during their exile in the forest. She tells him that a person must never look down on themselves. The one who despises their own worth will never find real prosperity. It is a call to act with self-respect, to do what is right without waiting for the world to approve, because effort itself has value.",
+     "for_you": "When you sit at the Diwali table and the silence hangs between you and your parents, do not let their quiet make you a guest in your own life. The person you are becoming is not a mistake that needs fixing."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 2.997,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after he has lost his kingdom. She speaks to him sharply, telling him not to hold himself in contempt or settle for little. She tells him to set his mind on what is truly good and to stop fearing. She says pull yourself together. The idea is that past failure does not define you, and those who never try never succeed.",
+     "for_you": "The silence your parents left after you told them about your girlfriend is their doing, not yours. You did not become a guest in your own life when you spoke the truth. Today, hold onto the fact that you are still who you are in that room."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.3893,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": null,
+     "for_you": "When you are home for Diwali and sit at the table feeling like a stranger, do the work in front of you. Read the silence for what it is. Speak gently to your parents about the weather, and keep your mind on your own work and your own life."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.314,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna speaks to Arjuna about the discipline of speech. He says that speech should cause no distress, be truthful, pleasant and beneficial. This is the austerity of speech. The point is to speak kindly and truly, and to drop the show.",
+     "for_you": "You do not need to perform for your parents or fix their silence. Speak only what is true and kind in your own life, and let the rest of the noise go."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.chhandogya.satyakama",
+     "title": "Satyakama Jabala, the honest boy",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Satyakama",
+      "Jabala",
+      "Haridrumata Gautama"
+     ],
+     "story_hook": "Satyakama wanted to study, but first he had to ask his mother a question she could not answer.",
+     "summary": "A boy who wants to study asks his mother about his father's lineage. She tells him frankly she does not know, and he repeats this word for word to the teacher. The teacher accepts him for his honesty, sends him off with 400 weak cows, and the boy returns years later with a thousand, having learned from nature along the way, yet still asks his teacher to teach him.",
+     "lesson": "Honesty about who you are is the best credential you can bring.",
+     "matched": [],
+     "anchor": {
+      "id": "up_chhandogya.304",
+      "ref": "Chhandogya Upanishad 4.4.2",
+      "ref_iast": "Chāndogya Upaniṣad 4.4.2",
+      "family": "up",
+      "speaker": "Jabala",
+      "listener": "Her son Satyakama",
+      "setting": "A boy asks his mother his lineage before seeking a teacher.",
+      "sanskrit": "सा हैनमुवाच नाहमेतद्वेद तात यद्गोत्रस्त्वमसि बह्वहं चरन्ती परिचारिणी यौवने त्वामलभे साहमेतन्न वेद यद्गोत्रस्त्वमसि जबाला तु नामाहमस्मि सत्यकामो नाम त्वमसि स सत्यकाम एव जाबालो ब्रवीथा इति ॥",
+      "line": "His mother said, 'I don't know your father's line. I am Jabala, you are Satyakama. Say exactly that.'",
+      "translation": "She said to him: 'I do not know your lineage, my child. In my youth I moved about a great deal as a serving woman, and then I had you. So I do not know your lineage. My name is Jabala and your name is Satyakama. Just say you are Satyakama Jabala.'",
+      "why": "Honesty about who you are is the best credential you can bring.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "up.p.chhandogya.satyakama",
+       "title": "Satyakama Jabala, the honest boy",
+       "summary": "A boy who wants to study asks his mother about his father's lineage. She tells him frankly she does not know, and he repeats this word for word to the teacher. The teacher accepts him for his honesty, sends him off with 400 weak cows, and the boy returns years later with a thousand, having learned from nature along the way, yet still asks his teacher to teach him.",
+       "story_hook": "Satyakama wanted to study, but first he had to ask his mother a question she could not answer.",
+       "lesson": "Honesty about who you are is the best credential you can bring."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A boy didn't know who his father was, and told his teacher the truth anyway",
+     "teaser": "A boy didn't know who his father was, and told his teacher the truth anyway",
+     "for_you": "You told them the truth about your girlfriend. You did not become a guest in your own life. The silence that followed is theirs. Your truth remains your own, and it is not a crime."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The silence is theirs",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 313,
+   "llm": 3664,
+   "total": 11743,
+   "select": 7761
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting at your own table at Diwali and the food is passing by without ever reaching you. Your parents speak of the weather and the price of sugar, and you feel the weight of being a guest in the room where you grew up."
+  ],
+  [
+   "scene",
+   "Arjuna stands in a field of war, his mind broken by the faces of the men he is meant to fight. He asks Krishna how a person can find peace when the heart is torn between duty and love. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत्, आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः."
+  ],
+  [
+   "line",
+   "In plain words: Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend."
+  ],
+  [
+   "unpack",
+   "You are the one who must lift your own heart. No one else can pull you out of the silence they have chosen. This is easier said than done, because you are still waiting for a word from them. But the truth is, if you push yourself down into shame, you become your own worst enemy. If you stand by your own truth, you become your own friend."
+  ],
+  [
+   "for_you",
+   "When you sit down for that meal, do not leave the room with them. Keep your feet on the floor and your own name in your mind. You did not become a guest when you told them the truth."
+  ],
+  [
+   "close",
+   "You are the one who remains whole."
+  ]
+ ],
+ "depth": {
+  "life": "You sit at the Diwali table feeling like a guest in your own home because your parents went quiet after you shared the truth. The weather talk is a wall, and you are left holding your plate, wondering why you are the one who feels foreign.",
+  "points": "The verse says you are your own best friend or your own worst enemy. The silence is their doing, but your inner state is your choice. You can either let their quietness make you feel small, or you can stand on your own side and refuse to abandon yourself.",
+  "practice": "Sit with your own breath for one minute before you enter the room today. Remind yourself that your truth is not a mistake.",
+  "question": "What would it look like to be your own friend in that room?"
+ }
+}

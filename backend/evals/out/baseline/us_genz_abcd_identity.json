@@ -1,0 +1,487 @@
+{
+ "persona": {
+  "id": "us_genz_abcd_identity",
+  "market": "USA (New Jersey)",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "21, Indian-American senior at Rutgers, born in NJ. Parents from Gujarat. Dating a white classmate; hasn't told parents. Feels neither fully Indian nor American.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "my parents keep asking when I'll 'settle down with a nice Gujarati boy' and I've been with my boyfriend for 2 years and he's not Indian. I feel like whichever way I go I lose a part of me",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "confidence": 0.8,
+   "core_struggle": "Her parents dismiss her non-Indian partner and pressure her to choose a boy, making her feel she must lose a part of herself whichever way she goes.",
+   "mirror": "You have been with him for two years, and your parents keep asking when you will settle down with a boy.",
+   "insight": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 2.094,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.114,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 1.089,
+     "source": "note"
+    },
+    {
+     "id": "interfaith",
+     "label": "Faith differences in my relationship",
+     "weight": 0.492,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "My parents' expectations weigh on me. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "When others see only a role for you, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A young woman whose family held her to an old role, who questioned them openly and stood in her truth until they had no answer."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Caught between two",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "a young woman torn between her parents' expectations and her own choice of partner",
+   "life_context": "A young woman under twenty-five who has been with her boyfriend for two years; her parents keep asking when she will settle down with a nice boy, and she feels caught between her family and her own life.",
+   "details": [
+    "parents keep asking when she'll settle down with a nice boy",
+    "has been with her non-Indian boyfriend for two years",
+    "feels she will lose a part of herself whichever way she goes",
+    "her boyfriend is not Indian"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "llm_stance_missing",
+    "stance_inferred:str=0.45,asp=0.3,wro=0.27,see=0.05",
+    "hook:hook_gives_advice",
+    "insight:template",
+    "redo:3",
+    "redo_fixed:3",
+    "dropped:preachy=3",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:unpack=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 3.0952,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, where Arjuna is frozen by doubt. Krishna tells him to take up the work that is his by nature. He says it is better to walk your own path, even if you stumble, than to walk someone else's perfectly. You incur no wrong by doing the work that fits you, flaws and all. It is an offering of your own truth.",
+     "for_you": "Right now, you are trying to walk your parents' path perfectly while hiding your own. This verse asks you to stop. Take one small step today that belongs to you. Let your own path, even if it feels imperfect to them, be your offering."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 2.7691,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "Rama speaks to Vasishtha after a long lament about the suffering of the world. He says that our own senses are the enemies, that truth has turned untrue, and that the mind becomes its own enemy. This points to the honest truth that your mind might be your biggest obstacle right now.",
+     "for_you": "You feel you will lose a part of yourself no matter what you do. That feeling is the mind striking itself, caught between two stories. The verse shows you the trap you are in. Naming it is the first step toward loosening it."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.6.21.6",
+     "ref": "Valmiki Ramayana · Yuddha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 21.6",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram has lain on the shore for three days asking the ocean for a way across. No answer comes.",
+     "sanskrit": "अवलेपः समुद्रस्य न दर्शयति यः स्वयम्। प्रशमश्च क्षमा चैव आर्जवं प्रियवादिता॥ असामर्थ्यफला ह्येते निर्गुणेषु सतां गुणाः।",
+     "line": "Calm, patience, honesty and kind words: people who don't value them will read them as weakness.",
+     "translation": "See the ocean's arrogance: he does not even show himself. Calm, forbearance, straightforwardness and gentle speech, these virtues of the good, are taken by the unworthy as signs of weakness.",
+     "why": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+     "misuse": "Firmness only after real patience, and only toward someone who keeps ignoring you. When the ocean finally came, Ram listened and redirected the arrow.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ocean_humility_firmness",
+      "title": "Ram at the ocean: humble first, firm after",
+      "summary": "Ram lies on kusha grass by the shore for three days, asking the ocean for a way. Ignored, he tells Lakshman that patience is being taken for weakness and takes up his bow. The ocean rises, offers a way (Nala's bridge), and Ram releases the arrow elsewhere at its request.",
+      "story_hook": "For three days the prince lay on a bed of grass at the edge of the sea, asking politely.",
+      "lesson": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard."
+     },
+     "score": 3.2374,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Rama is speaking to Lakshman by the shore of the ocean. He has been ignored for three days while he waits and asks politely. He tells Lakshman that calm and kind speech are often read as weakness by those who do not value them. He says to be humble first, and if that is taken for weakness, to act with firm resolve. He stops once he is heard.",
+     "for_you": "Your parents might read your honest, gentle words as a sign that you will eventually give in. This verse asks you to be humble first, but to hold your ground firmly when you are not heard."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.1929,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to you from a place of hard-won calm. He tells you to let people praise or blame, let money come or go, let death come today or ages hence. The steady do not step off the right path. He is saying that the noise of the world, the shifting opinions of others, cannot move you if you stay rooted in what you know is right for your own life. This steadiness is not stubbornness. It is the quiet knowledge that your path is your own, and nothing external can unmake it.",
+     "for_you": "When your parents ask about a nice boy, let their words pass without fighting back. Their praise or blame cannot move you a step from your own truth today."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.5289,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to hold himself in contempt and not to keep settling for too little. Set your mind on what is truly good, she says, and stop fearing. She is telling him that past failure does not define him. Results are uncertain, but those who never try never succeed. He must pull himself together and rise again.",
+     "for_you": "When your parents dismiss your partner, do not let their words make you feel small or defeated. Set your mind on the good of your own life and speak your truth to them today."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.2561,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna tells Arjuna that true discipline of speech is using words that cause no distress, that are true, pleasant and beneficial. He is not telling you to be nice for the sake of it. He is saying that the highest form of speech is truthful and kind at the same time. It is the art of saying what is real without wounding the one who hears it.",
+     "for_you": "When you talk to your parents about your life, choose your words with care today. Speak your truth in a way that is clear and kind, so you do not wound them and they can hear you."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.parvati_tapas",
+     "title": "Parvati holds to her choice",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Parvati",
+      "Narada",
+      "the Seven Sages",
+      "Mena",
+      "Himavan"
+     ],
+     "story_hook": "The sages came to talk Parvati out of it, and they listed every flaw in the man she had chosen.",
+     "summary": "Reborn as Parvati, Sati resolves to marry Shiva and spends years in austerity. The seven sages come to test her, mocking Shiva as a homeless ascetic and offering her a better match. She answers that gold keeps its nature even in fire, and that the heart wants the one it has chosen.",
+     "lesson": "Persistence is choosing the same thing again each day, even when others call it foolish.",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.76.chaupai.3",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 76",
+      "family": "rcm",
+      "speaker": "Parvati",
+      "listener": "the seven sages",
+      "setting": "Parvati answers the sages who mock her resolve to win Shiva through years of austerity.",
+      "sanskrit": "सत्य कहेहु गिरिभव तनु एहा। हठ न छूट छूटै बरु देहा॥ कनकउ पुनि पषान तें होई। जारेहुँ सहजु न परिहर सोई ॥",
+      "line": "Gold comes from stone, and even in fire it stays gold. Hold to what you are.",
+      "translation": "You speak truly: this body was born of a mountain, so its resolve will not break, even if the body does. Gold too is born of stone, and even in fire it does not give up its nature.",
+      "why": "Persistence is choosing the same thing again each day, even when others call it foolish.",
+      "misuse": "Steadiness is not stubbornness; keep checking that the goal is still worth it.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "fear_failure",
+        "label": "I'm afraid of failing"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.parvati_tapas",
+       "title": "Parvati holds to her choice",
+       "summary": "Reborn as Parvati, Sati resolves to marry Shiva and spends years in austerity. The seven sages come to test her, mocking Shiva as a homeless ascetic and offering her a better match. She answers that gold keeps its nature even in fire, and that the heart wants the one it has chosen.",
+       "story_hook": "The sages came to talk Parvati out of it, and they listed every flaw in the man she had chosen.",
+       "lesson": "Persistence is choosing the same thing again each day, even when others call it foolish."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "The sages listed every flaw in the man Parvati had chosen",
+     "teaser": "The sages listed every flaw in the man Parvati had chosen",
+     "for_you": "Parvati held her ground when everyone called her choice foolish. She showed that choosing someone is not a single act, but a daily return to the same truth. Your two years with your boyfriend are not a mistake to be defended. They are a quiet, daily choice to stay with what you know is real."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Caught between two",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 263,
+   "llm": 3142,
+   "total": 10790,
+   "select": 7381
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are caught between two pictures of who you should be. One is the one your parents hold up, and the other is the one you live. You are trying to make both fit, and it is tearing you apart."
+  ],
+  [
+   "scene",
+   "Krishna is looking at Arjuna, who has laid down his bow and refuses to fight. Arjuna is paralyzed by a doubt that feels bigger than the enemy. Arjuna has just said he would rather die than kill his own people. Krishna looks at him and replies:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna is speaking to Arjuna on the battlefield, where Arjuna is frozen by doubt. Krishna tells him to take up the work that is his by nature. He says it is better to walk your own path, even if you stumble, than to walk someone else's perfectly. You incur no wrong by doing the work that fits you, flaws and all. It is an offering of your own truth."
+  ],
+  [
+   "for_you",
+   "Today, stop trying to walk your parents' path perfectly. Let your own path, even if it feels imperfect to them, be your offering. You do not have to choose between them and yourself. You just have to choose yourself, quietly and honestly."
+  ],
+  [
+   "close",
+   "What is the one small step that belongs only to you?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit between your parents' words and your own quiet truth. You try to walk their path perfectly, but it costs you. You feel the weight of two years of love and two decades of expectation in one small room.",
+  "points": "The source says your own path, though imperfect, is better than another's well performed. Your nature is to be with him. Your parents' nature is to worry. The wrong is not in your choice, but in denying your own nature.",
+  "practice": "Name one small thing today that belongs only to your own nature and do it without apology.",
+  "question": "What would your own path look like if you stopped walking your parents' for one evening?"
+ }
+}

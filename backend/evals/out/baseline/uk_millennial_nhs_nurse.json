@@ -1,0 +1,488 @@
+{
+ "persona": {
+  "id": "uk_millennial_nhs_nurse",
+  "market": "UK (Manchester)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "31, NHS nurse in Manchester, came from Kerala 5 years ago, sends money home, night shifts. Single. Family asking about marriage.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "shame"
+  },
+  "note": "12 hour night shifts, I send half my salary home, my parents are proud but every call ends with when are you getting married. I'm 31 and I feel like I'm failing at a test I never agreed to take",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "confidence": 0.75,
+   "core_struggle": "A -year-old working woman who sends half her salary home is being pressed by her parents to marry, while she feels like she is failing a test she never agreed to take.",
+   "mirror": "You send half your salary home and still, every call ends with a question you never asked.",
+   "insight": "You are not failing at a test you never agreed to take. The test is theirs, and the one who set it is not the one who has to pass it.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.648,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.768,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "My parents' expectations weigh on me. Being seen as less than you are by the people who ought to know you best, and the anger of watching the life you built get called a phase.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A woman of substance and standing, dismissed by her own parents for not fitting their timeline, who stood in her truth and found her own measure."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The test you never agreed to",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "a working woman sending money home who is being pressed to marry",
+   "life_context": "In her early thirties and working demanding night shifts; she sends half her salary home, her parents are proud of her work but every call ends with when are you getting married, and she feels like she is failing a test she never agreed to take.",
+   "details": [
+    "works -hour night shifts",
+    "sends half her salary home",
+    "parents are proud but every call ends with when are you getting married",
+    "feels like she is failing a test she never agreed to take"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "hook:hook_blames_wronged",
+    "retried:2",
+    "dropped:preachy=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      },
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 2.0176,
+     "beat": "hook",
+     "role_fit": 0.14,
+     "meaning": null,
+     "for_you": "On the walk home from your night shift, you carry the silence of the hospital and the weight of their expectations. You do not need to answer their call tonight. Let your own presence be enough. You are not failing them, you are choosing yourself."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      },
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 3.1362,
+     "beat": "diagnose",
+     "role_fit": 0.16,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He is explaining that a person should act according to their own nature and duty, without being driven by ego or the desire to imitate others. He says that it is better to follow your own path, even if you do it imperfectly, than to take on the role or duty of someone else and do it perfectly. Borrowed lives are dangerous because they are not rooted in who you truly are.",
+     "for_you": "You are sending half your salary home and working night shifts. This is your path, imperfect as it may feel. You are not failing a test you never agreed to take. You are living a borrowed life only if you let your parents' expectations become your duty."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      },
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.5313,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": "Draupadi is speaking to Yudhishthira during their exile in the forest. She is arguing that waiting on fate is no plan and that people must act. She says that a person should never look down on themselves. The one who despises themselves never finds real prosperity. She is telling him to do right for its own sake, then work as if it all depends on you.",
+     "for_you": "You are sending half your salary home and working night shifts. This is your path, imperfect as it may feel. You are not failing a test you never agreed to take. You are living a borrowed life only if you let your parents' expectations become your duty."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.26,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher is laying down the rules for someone who has stepped away from ordinary life. He says the body is not a tool to be beaten for the sake of chasing pleasure or running from pain. If people praise you, do not swell with pride. If they blame you, do not waste your energy cursing them. The body and the mind both need a steady rhythm, not a constant reaction to what comes your way.",
+     "for_you": "On your night shifts, the calls about marriage are a kind of pain you cannot outrun. Do not let the praise of your parents make you gloat, and do not let their pressure make you curse them. Keep your body steady and your mind on the work in front of you."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.7682,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula is speaking to her son Sanjaya, who has lost his kingdom and lies in despair. She tells him not to hold himself in contempt or settle for a small, defeated life. She urges him to set his mind on what is truly good and to stop fearing. The point is that a past failure does not define him. Results are never certain, but those who never try never succeed. She is calling him to rise again and fight for his place.",
+     "for_you": "You are not defeated, and you are not settling for little. The question of marriage is not a verdict on your worth. Set your mind on what is truly good for you, and let that fear of failing a test you never agreed to take lose its grip."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.4418,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is describing how a free person moves through the world. He says to always do the work that comes, to see friend and foe alike, and to be free of wanting and not-wanting. Such a person neither grieves nor craves. Say what is agreeable to all, speak gently when asked, and know the intent of others' hearts. Such a one does not sink in the world. The idea is to live fully while staying unhurried inside.",
+     "for_you": "When your parents call and ask about marriage, speak gently. Know their intent is pride, not malice. Do the work in front of you, let their questions pass, and keep your mind unhurried and free."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.parvati_tapas",
+     "title": "Parvati holds to her choice",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Parvati",
+      "Narada",
+      "the Seven Sages",
+      "Mena",
+      "Himavan"
+     ],
+     "story_hook": "The sages came to talk Parvati out of it, and they listed every flaw in the man she had chosen.",
+     "summary": "Reborn as Parvati, Sati resolves to marry Shiva and spends years in austerity. The seven sages come to test her, mocking Shiva as a homeless ascetic and offering her a better match. She answers that gold keeps its nature even in fire, and that the heart wants the one it has chosen.",
+     "lesson": "Persistence is choosing the same thing again each day, even when others call it foolish.",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.76.chaupai.3",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 76",
+      "family": "rcm",
+      "speaker": "Parvati",
+      "listener": "the seven sages",
+      "setting": "Parvati answers the sages who mock her resolve to win Shiva through years of austerity.",
+      "sanskrit": "सत्य कहेहु गिरिभव तनु एहा। हठ न छूट छूटै बरु देहा॥ कनकउ पुनि पषान तें होई। जारेहुँ सहजु न परिहर सोई ॥",
+      "line": "Gold comes from stone, and even in fire it stays gold. Hold to what you are.",
+      "translation": "You speak truly: this body was born of a mountain, so its resolve will not break, even if the body does. Gold too is born of stone, and even in fire it does not give up its nature.",
+      "why": "Persistence is choosing the same thing again each day, even when others call it foolish.",
+      "misuse": "Steadiness is not stubbornness; keep checking that the goal is still worth it.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "rcm.p.parvati_tapas",
+       "title": "Parvati holds to her choice",
+       "summary": "Reborn as Parvati, Sati resolves to marry Shiva and spends years in austerity. The seven sages come to test her, mocking Shiva as a homeless ascetic and offering her a better match. She answers that gold keeps its nature even in fire, and that the heart wants the one it has chosen.",
+       "story_hook": "The sages came to talk Parvati out of it, and they listed every flaw in the man she had chosen.",
+       "lesson": "Persistence is choosing the same thing again each day, even when others call it foolish."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "The sages listed every flaw in the man Parvati had chosen",
+     "teaser": "The sages listed every flaw in the man Parvati had chosen",
+     "for_you": "They are testing your resolve, but you already know what you want. Hold to your choice each morning before the calls begin."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The test you never agreed to",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 165,
+   "llm": 3855,
+   "total": 13146,
+   "select": 9122
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying the weight of their expectations home with you after your night shift. You send half your salary to your parents, and the pride in their voices slowly turns into a question you cannot answer. You feel like you are failing a test you never agreed to take, and that feeling is heavy."
+  ],
+  [
+   "scene",
+   "Arjuna is on the battlefield, feeling crushed by the weight of his choices and the expectations of those around him. He feels he is his own greatest enemy, ready to push himself down into despair. Krishna looks at him and says: And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत्, आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः."
+  ],
+  [
+   "line",
+   "In plain words: Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend."
+  ],
+  [
+   "unpack",
+   "The self alone is the friend of the self, and the self alone is the enemy of the self. You are not failing because of the pressure they put on you. The test they set is not your burden to carry. You can choose to be your own friend by refusing to let their words push you down into shame."
+  ],
+  [
+   "for_you",
+   "On your walk home, let the silence hold you. You do not need to answer their call tonight. Let your own presence be enough. You are not failing them, you are choosing yourself."
+  ],
+  [
+   "close",
+   "Who will you choose to be today?"
+  ]
+ ],
+ "depth": {
+  "life": "You are sending half your salary home and working through the night. Your parents praise your work, but every call ends with the same question. You feel like you are failing a test you never agreed to take, and you carry that shame with you after your shift.",
+  "points": "You are your own friend and your own enemy. The test they set is theirs, not yours. You do not have to pass it to be whole. You can lift yourself up by your own presence, or you can sink under the weight of their expectation.",
+  "practice": "Before you answer their next call, take one slow breath and remember: you are not taking a test. You are choosing to be on your own side.",
+  "question": "What would it feel like to let their test be their own?"
+ }
+}

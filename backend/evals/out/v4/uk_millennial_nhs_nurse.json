@@ -1,0 +1,522 @@
+{
+ "persona": {
+  "id": "uk_millennial_nhs_nurse",
+  "market": "UK (Manchester)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "31, NHS nurse in Manchester, came from Kerala 5 years ago, sends money home, night shifts. Single. Family asking about marriage.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "shame"
+  },
+  "note": "12 hour night shifts, I send half my salary home, my parents are proud but every call ends with when are you getting married. I'm 31 and I feel like I'm failing at a test I never agreed to take",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "tired and quietly shamed",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "steady": "You hold that a test you never agreed to take is not your failing."
+   },
+   "confidence": 0.75,
+   "core_struggle": "A woman working night shifts to send money home feels she is failing a marriage test she never agreed to take, and the shame of it.",
+   "mirror": "I feel ashamed of who I am",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "expectation_of_others",
+   "situations": [
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 1.76,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.648,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 1.008,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "midlife",
+     "label": "Midlife and wondering if this is it",
+     "weight": 0.427,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of a test you never agreed to take, replayed in the silence after every call, and the shame of feeling you are failing it.",
+    "diagnose": "When the mind takes on a standard it did not choose, it turns against itself; self-blame grows from believing the test is yours and the failure is real.",
+    "steady": "A test you never agreed to take is not your failing; no one is ever lost for not answering a question they were never asked.",
+    "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again.",
+    "story": "A woman who gave everything to her family and was called a failure by the one she served most, yet found the courage to stand in her own truth."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The test she never agreed to",
+    "The verdict she keeps passing",
+    "More than a test"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "works hour night shifts",
+    "sends half salary home",
+    "parents are proud but every call ends with when are you getting married"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "week_thesis:missing",
+    "insight:template",
+    "seat:missing",
+    "day1_other_text:rcm",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:preachy=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "rcm.1.141.chaupai.3",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 141",
+     "family": "rcm",
+     "speaker": "Manu",
+     "listener": "Vishnu",
+     "setting": "Manu, offered any boon after years of austerity, hesitates to ask for what he truly wants.",
+     "sanskrit": "जथा दरिद्र बिबुधतरु पाई। बहु संपति मागत सकुचाई॥ तासु प्रभाउ जान नहिं सोई। तथा हृदयँ मम संसय होई ॥",
+     "line": "Like a poor man before the wishing tree, we hesitate to ask for what we really want.",
+     "translation": "Like a poor man who finds the wish-fulfilling tree and still hesitates to ask for much, not knowing its power, so doubt rises in my heart.",
+     "why": "It is not too late to turn towards what matters, but it takes courage to ask for it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.manu_shatarupa",
+      "title": "Manu and Shatarupa ask late in life",
+      "summary": "King Manu and Queen Shatarupa realise in old age that a whole life has passed without what mattered most to them. They hand over the kingdom, go to the forest and practise austerity for years. When Vishnu offers a boon, Manu hesitates like a poor man before the wishing tree, then asks for a son like God himself.",
+      "story_hook": "The king had ruled well for a lifetime, and one morning he realised he had missed the point.",
+      "lesson": "It is not too late to turn towards what matters, but it takes courage to ask for it."
+     },
+     "score": 3.1917,
+     "beat": "hook",
+     "role_fit": 0.62,
+     "meaning": "Years of austerity have brought King Manu to the presence of Lord Vishnu, who offers any boon. Manu hesitates, standing before the wish-fulfilling tree but afraid to ask for what he truly wants. He says he doubts his own worthiness and fears the power of the gift. The verse says that when we do not know our own value, doubt rises in the heart and we hold back. It is never too late to turn toward what matters, but it takes courage to ask for it.",
+     "for_you": "On the phone with your parents, the silence after their question about marriage is heavy. The verse shows you hesitating before your own wish. You have worked hard and sent money home, yet you do not ask for the respect you deserve."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.1.11",
+     "ref": "Ashtavakra Gita 1.11",
+     "ref_iast": "Aṣṭāvakra Gītā 1.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "मुक्ताभिमानी मुक्तो हि बद्धो बद्धाभिमान्यपि । किंवदन्तीह सत्येयं या मतिः सा गतिर्भवेत् ॥",
+     "line": "Believe you are free and you are. Believe you are bound and you are. As you think, so you become.",
+     "translation": "One who thinks 'I am free' is free, and one who thinks 'I am bound' stays bound. The saying here is true: as you think, so you become.",
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "This is about inner freedom; it does not deny real constraints or problems that need action.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      },
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 3.5054,
+     "beat": "diagnose",
+     "role_fit": 0.785,
+     "meaning": "King Janaka asks the young sage Ashtavakra how to find freedom. The sage says that a person who thinks 'I am bound' stays bound, and one who thinks 'I am free' is free. He says the truth is this: as you think, so you become. The verse proposes that your sense of freedom starts with how you see yourself, not with your roles or your worries.",
+     "for_you": "Yesterday you saw the hesitation. Today you see the pattern. You think you are failing a test you never agreed to take, so you feel bound. The verse says this thought is what keeps you bound. You are not just the worker sending money home. You are the awareness that watches this life."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      },
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.5845,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": null,
+     "for_you": "The shame you feel is self-contempt, and it stops you from finding real prosperity in your own eyes. You do not need to wait for permission or a partner to prove your worth. You do right by showing up for your shifts and sending money home."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.0397,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari speaks to the reader from a section on steady resolve. He compares a life of right action to a ball struck by a hand. The ball does not stay down. It flies right back up. In the same way, misfortune rarely lasts for someone who keeps walking the right path. The verse offers a quiet truth about recovery. It suggests that a single setback is not the whole story, and that what is knocked down can rise again.",
+     "for_you": "Last night's verse named the grip of self-contempt. Today, hold onto the idea that the shame you feel is a moment, not a life sentence. The ball knocked down by exhaustion bounces back, and your night shifts do not define your worth."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.8051,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula speaks to her son Sanjaya. He lies defeated after losing his kingdom and has given up. She tells him not to hold himself in contempt or settle for too little. She urges him to set his mind on what is truly good and to stop fearing. The verse proposes that past failure does not have to be the final word. If you choose to act again, the door to success remains open, even if the outcome is not certain.",
+     "for_you": "Yesterday's verse named the grip of self-contempt. Today, set your mind on what is truly good for you. Choose one small, concrete thing to do for yourself, like taking a full hour of rest without checking work messages. Stop fearing the quiet."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      },
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.7242,
+     "beat": "act",
+     "role_fit": 0.541,
+     "meaning": "Krishna speaks to Arjuna on the field of battle, telling him to be his own friend. He says to raise yourself by your own self and not let yourself sink. The self alone is the friend of the self, and the self alone is the enemy of the self. The verse proposes that you have the power to choose your own support. You can lift yourself up, or you can push yourself down. The choice is yours.",
+     "for_you": "Yesterday's verse named the grip of self-contempt. Today, be on your own side. When the phone rings and the call ends with the same question, lift yourself up by your own self. You do not need to sink into the shame of a test you never agreed to take."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.chhandogya.satyakama",
+     "title": "Satyakama Jabala, the honest boy",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Satyakama",
+      "Jabala",
+      "Haridrumata Gautama"
+     ],
+     "story_hook": "Satyakama wanted to study, but first he had to ask his mother a question she could not answer.",
+     "summary": "A boy who wants to study asks his mother about his father's lineage. She tells him frankly she does not know, and he repeats this word for word to the teacher. The teacher accepts him for his honesty, sends him off with 400 weak cows, and the boy returns years later with a thousand, having learned from nature along the way, yet still asks his teacher to teach him.",
+     "lesson": "Honesty about who you are is the best credential you can bring.",
+     "matched": [
+      {
+       "id": "shame",
+       "label": "I feel ashamed of who I am"
+      },
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "anchor": {
+      "id": "up_chhandogya.304",
+      "ref": "Chhandogya Upanishad 4.4.2",
+      "ref_iast": "Chāndogya Upaniṣad 4.4.2",
+      "family": "up",
+      "speaker": "Jabala",
+      "listener": "Her son Satyakama",
+      "setting": "A boy asks his mother his lineage before seeking a teacher.",
+      "sanskrit": "सा हैनमुवाच नाहमेतद्वेद तात यद्गोत्रस्त्वमसि बह्वहं चरन्ती परिचारिणी यौवने त्वामलभे साहमेतन्न वेद यद्गोत्रस्त्वमसि जबाला तु नामाहमस्मि सत्यकामो नाम त्वमसि स सत्यकाम एव जाबालो ब्रवीथा इति ॥",
+      "line": "His mother said, 'I don't know your father's line. I am Jabala, you are Satyakama. Say exactly that.'",
+      "translation": "She said to him: 'I do not know your lineage, my child. In my youth I moved about a great deal as a serving woman, and then I had you. So I do not know your lineage. My name is Jabala and your name is Satyakama. Just say you are Satyakama Jabala.'",
+      "why": "Honesty about who you are is the best credential you can bring.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "shame",
+        "label": "I feel ashamed of who I am"
+       },
+       {
+        "id": "self_worth",
+        "label": "I don't feel worthy"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.chhandogya.satyakama",
+       "title": "Satyakama Jabala, the honest boy",
+       "summary": "A boy who wants to study asks his mother about his father's lineage. She tells him frankly she does not know, and he repeats this word for word to the teacher. The teacher accepts him for his honesty, sends him off with 400 weak cows, and the boy returns years later with a thousand, having learned from nature along the way, yet still asks his teacher to teach him.",
+       "story_hook": "Satyakama wanted to study, but first he had to ask his mother a question she could not answer.",
+       "lesson": "Honesty about who you are is the best credential you can bring."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A boy didn't know who his father was, and told his teacher the truth anyway",
+     "teaser": "A boy didn't know who his father was, and told his teacher the truth anyway",
+     "for_you": "The people you work for and the money you send home are real. But the test you never agreed to take is only in your mind. Your honesty about where you come from is enough. It is the only credential that matters."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The test she never agreed to",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 162,
+   "llm": 5153,
+   "total": 14427,
+   "select": 9106
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are working a night shift and you are tired. But it is the quiet shame that is heavier. You send half your salary home and your parents are proud. Yet every call ends with the same question. You feel you are failing a test you never agreed to take."
+  ],
+  [
+   "scene",
+   "King Manu has spent years in the forest. He has given up his kingdom. Lord Vishnu stands before him and offers any boon. But Manu hesitates. Manu said:"
+  ],
+  [
+   "sanskrit",
+   "जथा दरिद्र बिबुधतरु पाई, बहु संपति मागत सकुचाई. तासु प्रभाउ जान नहिं सोई, तथा हृदयँ मम संसय होई."
+  ],
+  [
+   "line",
+   "In plain words: Like a poor man before the wishing tree, we hesitate to ask for what we really want."
+  ],
+  [
+   "unpack",
+   "The verse says we hesitate when we do not know our own value. We stand before what we need and we hold back because we doubt ourselves. This is easier said than done. You have worked hard. You have given your money and your time. But if you do not feel worthy, you will never ask for the respect you deserve. It is never too late to turn toward what matters. But it takes courage to ask for it."
+  ],
+  [
+   "for_you",
+   "On the phone with your parents, the silence after their question is heavy. You have worked hard and sent money home. Yet you do not ask for the respect you deserve. You hesitate before your own wish because you do not know your own value."
+  ],
+  [
+   "close",
+   "What would you ask for if you knew you were worthy?"
+  ]
+ ],
+ "depth": {
+  "life": "You are on the phone with your parents and they ask about marriage again. You feel tired and quietly shamed, as if you are failing a test you never agreed to take.",
+  "points": "The verse says you hesitate to ask for what you really want, even when it is right in front of you. You feel you do not deserve the respect you have earned.",
+  "practice": "Ask yourself what you want today, and write it down without judging the answer.",
+  "question": "What is one thing you want that you have not asked for yet?"
+ }
+}

@@ -1,0 +1,535 @@
+{
+ "persona": {
+  "id": "us_millennial_h1b_burnout",
+  "market": "USA (Seattle)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "33, software engineer at a big tech company in Seattle, on H-1B, green card queue, wife on H4 can't work. Performance review season.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "if I get a bad rating I lose the visa and we have 60 days to leave. my wife gave up her career to be here. I check slack at 2am. I don't remember the last weekend I wasn't thinking about work",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "terrified and wired",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise the terror and the 2am replaying as something that is real and that is not the whole truth.",
+    "diagnose": "You see that fear grows from imagining a future you cannot control, and that the mind is running ahead of the rating.",
+    "steady": "You hold that what is real in you cannot be lost, and that the rating is real but not the whole truth.",
+    "act": "You try one practice to bring the mind back from what it cannot control, and one small act to claim the night.",
+    "story": "A man who could not sleep for fear of losing everything shows you what rest looks like when the work is still there."
+   },
+   "confidence": 0.75,
+   "core_struggle": "Lives with the terror that a bad work rating could cost his visa and his family's future, and cannot switch off from work even at 2am.",
+   "mirror": "You carry the visa in your head, and your wife's sacrifice, and the work never stops asking for more.",
+   "insight": "It isn't the visa that keeps you up at two in the morning. It's the mind running ahead to a future it cannot control, replaying what could go wrong.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.717,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.36,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The terror of a rating that could cost your visa, and the mind that will not let you rest even when the body is still.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "What is real in you cannot be lost; the rating is real, but the terror is not the whole truth.",
+    "act": "When the mind runs ahead to what you cannot control, bring it back to what you can do today, and let the night go.",
+    "story": "A man who held his family's safety in his hands, who could not sleep for fear, and who learned to rest even while the work remained."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The terror of the rating",
+    "The mind that runs ahead",
+    "Rest while the work remains"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "checks work messages at 2am"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "week_thesis:missing",
+    "seat:missing",
+    "day1_other_text:yv",
+    "redo:4",
+    "redo_fixed:4",
+    "dropped:cliche=1,copied=2,not_second_person=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:for_you=not_second_person",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 4.0612,
+     "beat": "hook",
+     "role_fit": 0.69,
+     "meaning": "Two old friends meet again after many years. Bhasa asks Vilasa if he has found peace. Vilasa admits he has not. He says the mind is caught on endless waves of tasks. It never rests. It dances with worry. The bird of the mind is tangled in a net of reckonings. It faints saying, this I have done, this I am doing, this I will do. Years of hard effort without inner understanding can leave you exactly where you started.",
+     "for_you": "Your mind is caught in that net right now. It is replaying the rating, the visa, and the family's future at two in the morning. The terror is real, but the mind faints from its own endless lists."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "ashtavakra.11.5",
+     "ref": "Ashtavakra Gita 11.5",
+     "ref_iast": "Aṣṭāvakra Gītā 11.5",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra lists the certainties that make the wise calm.",
+     "sanskrit": "चिन्तया जायते दुःखं नान्यथेहेति निश्चयी । तया हीनः सुखी शान्तः सर्वत्र गलितस्पृहः ॥",
+     "line": "Suffering is born of worry, nothing else. Free of worry, you are happy and at peace.",
+     "translation": "One who knows for certain that suffering here is born of worry and nothing else is free of it, happy, at peace, and unattached everywhere.",
+     "why": "Most suffering is made of worry; knowing what you can't control loosens it.",
+     "misuse": "Real problems still need attention; this is about the extra pain rumination adds.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.wisdom",
+      "title": "The certainties of the calm",
+      "summary": "Ashtavakra lists convictions that make a person calm: things arise and pass by nature, fortune and misfortune come in their time, and suffering is born of worry alone.",
+      "story_hook": "",
+      "lesson": "Most suffering is made of worry; knowing what you can't control loosens it."
+     },
+     "score": 3.4992,
+     "beat": "diagnose",
+     "role_fit": 0.831,
+     "meaning": "Ashtavakra tells Janaka that suffering is born of worry and nothing else. One who knows this for certain is free of it. They are happy, at peace, and unattached. Worry is the root of the pain. Knowing that you cannot control the future loosens its grip.",
+     "for_you": "Yesterday you named the endless lists. Today, see that the extra pain comes from worry about a future you cannot control. The rating is real, but the terror rumination adds is a separate weight."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 3.4398,
+     "beat": "steady",
+     "role_fit": 0.795,
+     "meaning": "After Sita is taken, Ram is lost in grief. He rages that he will destroy the world. Lakshman calms him. He says trouble touches everyone. It flares up like fire and passes. A steady friend can stop grief from turning into destruction.",
+     "for_you": "Yesterday you saw the root of the worry. Today you need something steady to hold. The rating is the fire that flares. But what is real in you cannot be lost. The rating is real, but it is not the whole truth of who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.7.9",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 7.9",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram.",
+     "sanskrit": "व्यसने वार्थकृच्छ्रे वा भये वा जीवितान्तगे। विमृशंश्च स्वया बुद्ध्या धृतिमान् नावसीदति॥",
+     "line": "In loss, money trouble or fear, the steady person thinks it through and does not go under.",
+     "translation": "In disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink.",
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 3.2948,
+     "beat": "steady",
+     "role_fit": 0.85,
+     "meaning": "After Sita's jewels are found, Ram breaks down, and Sugriva holds him. Sugriva says that even in disaster or fear, the steady person thinks it through and does not sink. A friend can be the greatest refuge in trouble. The steady mind does not go under.",
+     "for_you": "Hold on to your own mind as you think through this. The rating is real, but it is not the whole truth. What is steady in you cannot be lost, even when the future feels at stake."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.vairagya.62",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 62",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own mind",
+     "setting": "From 'Advice to the Mind'.",
+     "sanskrit": "परिभ्रमसि किं मुधा क्वचन चित्त विश्राम्यतां स्वयं भवति यद्यथा भवति तत्तथा नान्यथा । अतीतमननुस्मरन्नपि च भाव्यसंकल्पयन् नतर्कितसमागमाननुभवामि भोगानहम् ॥",
+     "line": "Why wander, mind? Rest. Not replaying the past, not scripting the future, I take what comes.",
+     "translation": "Why do you wander about in vain, mind? Rest somewhere. Whatever is to happen happens just as it will, and not otherwise. Not recalling the past, not planning the future, I enjoy the pleasures that come to me unlooked-for.",
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "Not an argument against planning; it is for the worry loop once you have done your part.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 3.7203,
+     "beat": "act",
+     "role_fit": 0.609,
+     "meaning": "Bhartrihari speaks to his own mind. He asks why it wanders in vain. Whatever is to happen happens just as it will. He rests, not recalling the past or scripting the future, taking what comes unlooked-for.",
+     "for_you": "At two in the morning, your mind is scripting a future it cannot control. Try putting the phone down for ten minutes and let your body rest without rehearsing tomorrow."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.4644,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna tells Arjuna that their right is to the work alone, never to its fruits. Do not let the outcome be your motive, and do not cling to doing nothing. Do the work fully, then let go of owning the result.",
+     "for_you": "You have done your part. Now let the work be yours alone, and let the rating be what it is. Claim the night for yourself instead of chasing what you cannot hold."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "The work is still there, and so is the visa worry. But tonight, let the doorkeeper's call be your cue to sit down and do the next thing. Do not try to solve the whole future. Just do the one task in front of you, and let the rest go."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The terror of the rating",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 175,
+   "llm": 4414,
+   "total": 12172,
+   "select": 7577
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are wide awake at two in the morning and your chest is tight. The work rating is not the only thing sitting on your chest. It is the mind running ahead to a future it cannot control, replaying every way it might collapse."
+  ],
+  [
+   "scene",
+   "Two old friends meet again as old men after years apart. Bhasa asks Vilasa if he has found any peace. Vilasa admits he has not. He says his mind is caught on endless waves of tasks. It never rests. It dances with worry. Bhasa said:"
+  ],
+  [
+   "sanskrit",
+   "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु, क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम्. इदं कृतं करोमीदं करिष्यामीदमित्यलम्, कलनाजालवलिता मूर्च्छिता मतिपक्षिणी."
+  ],
+  [
+   "line",
+   "In plain words: 'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest."
+  ],
+  [
+   "unpack",
+   "The mind is caught on endless waves of tasks. It never rests. It dances with worry. The bird of the mind is tangled in a net of reckonings. It faints. This is the net you are in. The mind says done this, doing this, must do that. Years of hard effort without inner understanding can leave you exactly where you started. This is easier said than done, because the mind believes it is protecting you by running ahead. But it is only exhausting you."
+  ],
+  [
+   "for_you",
+   "For you, today. Your mind is caught in that net right now. It is replaying the rating, the visa, and the family's future at two in the morning. The terror is real, but the mind faints from its own endless lists."
+  ],
+  [
+   "close",
+   "Can the mind rest before the future arrives?"
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": "The mind is caught in a net of reckonings, replaying the past and projecting the future. This endless motion is what exhausts it, not the work itself. The terror is real, but the mind faints from its own spinning.",
+  "practice": "Name the next three tasks for tomorrow, then put the phone away and let the body rest without adding a fourth.",
+  "question": "What would happen if you let the mind rest for one hour?"
+ }
+}

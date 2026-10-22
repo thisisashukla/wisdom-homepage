@@ -1,0 +1,497 @@
+{
+ "persona": {
+  "id": "uk_boomer_grandmother_lonely",
+  "market": "UK (Birmingham)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "68, came from Jalandhar in 1976, worked in a factory then raised 3 children. Widowed. Children busy, grandchildren on phones. Reads Ramcharitmanas.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "quietly lonely and searching",
+   "bridge": "What you are living with is what the texts call searching for what it's all for, and that is where this week begins.",
+   "week_thesis": "The Ramayana that keeps you company becomes, over seven days, the mirror for the self that is not the role, not the memory, and not the phone in their hands.",
+   "week_beats": {
+    "hook": "You recognise the loneliness and the search, named without trying to fix them.",
+    "diagnose": "You see that the search is for the self that is not the role, and that the Ramayana is not a substitute.",
+    "steady": "You hold that the self that reads is not the one who is waited for.",
+    "act": "You try reading with the question of who is reading, and let the text become the company that is not a substitute.",
+    "story": "A woman who raised her children alone and read the scriptures shows you what it means to find a company that is not a substitute."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "rcm"
+   ],
+   "confidence": 0.6,
+   "core_struggle": "A widow in her later years, who reads the Ramayana for company, is searching for something deeper while her children visit but remain on their phones.",
+   "mirror": "You raised them alone, and on Sunday they are here but not here.",
+   "insight": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.52,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.004,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.392,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A morning with the Ramayana and a house that fills and empties; the search for something deeper than the role and the memory. I feel lonely.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "The self that reads and remembers is not the same as the one who is waited for or the one who waits; it is the one that is always present.",
+    "act": "Read with the question of who is reading, and let the text become the company that is not a substitute.",
+    "story": "A woman who raised her children alone, read the scriptures, and found in them a company that was not a substitute for the one she missed."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The self that reads",
+    "The company that is not a substitute",
+    "The one who is always present"
+   ],
+   "seat": "a widow in her later years, visited by children who are not really present",
+   "life_context": "In her later years and retired, a widow who raised her children alone; her children come on Sundays but are always on their phones, and the Ramayana in the morning is her only company.",
+   "details": [
+    "children visit on Sundays but are always on their phones",
+    "raised them alone after their husband died",
+    "reads the Ramayana in the morning",
+    "calls the Ramayana her only company"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "stance:seeking_over_pain",
+    "hook:anchored_to_situation",
+    "insight:template",
+    "retried:2",
+    "redo:4",
+    "redo_fixed:1",
+    "dropped:fallback_line=5,invented_name=4,missing=2",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:for_you=invented_name,open=invented_name",
+    "script:written:3/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.9.18",
+     "ref": "Bhagavad Gita 9.18",
+     "ref_iast": "Bhagavad Gītā 9.18",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna tells Arjuna who he is to every being.",
+     "sanskrit": "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत् । प्रभवः प्रलयः स्थानं निधानं बीजमव्ययम् ॥",
+     "line": "I am your goal, your support, your witness, your home, your shelter and your friend.",
+     "translation": "I am the goal, the sustainer, the master, the witness, the home, the refuge and the friend; the origin and the dissolution, the ground, the treasure-house and the undying seed.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 1.9963,
+     "beat": "hook",
+     "role_fit": 0.12,
+     "meaning": "Krishna tells Arjuna that he is the final destination, the steady support, the silent witness, the home, the refuge and the friend. He is also the origin and the end, the foundation and the storehouse. He says this to Arjuna on the battlefield of when Arjuna is shattered by doubt. The truth underneath is that the deepest loneliness is not the absence of people, but the absence of the one constant who is not a role or a memory, but the very ground beneath everything.",
+     "for_you": "Turn inward, come to know the self, and let your work become service and offering; a life lived from there is full."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9251,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "Prajapati asks the student to consider the self in the heart. We pass it every night in deep sleep and wake without knowing it. He says we are like people who walk daily over buried gold. We pass our own treasure and never find it. We are carried away by untruth. The teaching asks you to see what you have been walking over all along.",
+     "for_you": "Turn toward what lasts: serve, study, reflect daily, and offer your work to something beyond yourself."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.146.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 146",
+     "family": "rcm",
+     "speaker": "Sumantra",
+     "listener": "Dasharath",
+     "setting": "Sumantra returns alone to the grieving king Dasharath and steadies him.",
+     "sanskrit": "जनम मरन सब दुख सुख भोगा। हानि लाभु प्रिय मिलन बियोगा॥ काल करम बस होहिं गोसाईं। बरबस राति दिवस की नाईं ॥ सुख हरषहिं जड़ दुख बिलखाहीं। दोउ सम धीर धरहिं मन माहीं॥ धीरज धरहु बिबेकु बिचारी। छाड़िअ सोच सकल हितकारी ॥",
+     "line": "Gain and loss, meeting and parting come like day and night. The steady hold both alike.",
+     "translation": "Birth and death, joy and sorrow, loss and gain, meeting and parting with those we love: these come under the sway of time and action, as surely as night and day. The foolish rejoice in good times and wail in bad; the steady hold both alike in the mind. Hold on to your courage, think with discernment, and let go of worry, you who care for everyone.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.1117,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Sumantra returns to the grieving Dasharath and tells him that gain and loss, meeting and parting arrive as surely as night and day. The foolish are tossed by these tides, but the steady mind holds both without breaking. This is the truth of a life lived in time: every joy carries its shadow, and every absence leaves its mark. The steady hold is not indifference. It is the quiet recognition that sorrow is part of the same rhythm as love, and that to hold both is the only way to keep walking.",
+     "for_you": "The Sunday your children visit is one of these tides. They are here, and they are not. To hold that presence and that absence together, without forcing either to change, is the steady hold. It does not ask you to be happy."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.13",
+     "ref": "Bhagavad Gita 2.13",
+     "ref_iast": "Bhagavad Gītā 2.13",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥",
+     "line": "Childhood, youth, old age: the body keeps changing. The wise aren't thrown by the next change.",
+     "translation": "Just as the embodied self passes through childhood, youth and old age in this body, so it passes on to another body. The steady person is not bewildered by this.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.009,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": null,
+     "for_you": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 3.0543,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "The seer tells you to do your work and wish to live a full hundred years. This is done in a spirit of letting go. When you work this way, action does not cling to you. The Isha Upanishad says you may enjoy the world because it already belongs to the divine. So you can keep working and living without grasping, and see yourself in everyone around you.",
+     "for_you": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.72",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 72",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: true ornaments.",
+     "sanskrit": "श्रोत्रं श्रुतेनैव न कुण्डलेन दानेन पाणिर्न तु कङ्कणेन । विभाति कायः करुणापराणां परोपकारैर्न तु चन्दनेन ॥",
+     "line": "Ears shine by listening, hands by giving, the body by helping others, not by ornaments.",
+     "translation": "The ear is beautiful through learning, not earrings; the hand through giving, not bracelets; the body of the compassionate shines through helping others, not through sandal paste.",
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 2.8674,
+     "beat": "act",
+     "role_fit": 0.505,
+     "meaning": "Bhartrihari says the ear shines by listening, not by earrings. The hand shines by giving, not by bracelets. The body of the compassionate shines through helping others, not through ornaments. True beauty is not worn on the outside. It is found in the acts of learning, giving, and serving. When you help others, you show your true self.",
+     "for_you": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       },
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "You have read the Ramayana for company through the years. Shabari waited for Ram without knowing when he would arrive. Your waiting was not empty. It was a gathering, a quiet preparation that made room for something real to enter. Trust that your mornings have been building a space, not just passing time."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The self that reads",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 173,
+   "llm": 4494,
+   "total": 12208,
+   "select": 7534
+  }
+ },
+ "script": [
+  [
+   "scene",
+   "On the field, Arjuna stands broken by grief. He does not know who he is or why he must fight. Krishna looks at him and speaks. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत्, प्रभवः प्रलयः स्थानं निधानं बीजमव्ययम्."
+  ],
+  [
+   "line",
+   "In plain words: I am your goal, your support, your witness, your home, your shelter and your friend."
+  ],
+  [
+   "unpack",
+   "Krishna tells Arjuna that he is the goal, the support, the witness, the home, the shelter and the friend. He is the origin and the end. This is the truth underneath your solitude. The deepest loneliness is not the absence of people. It is the absence of the one constant who is not a role or a memory, but the very ground beneath everything."
+  ],
+  [
+   "for_you",
+   "For you, today. Turn inward, come to know the self, and let your work become service and offering. A life lived from there is full."
+  ],
+  [
+   "close",
+   "Who are you when no one is calling for you?"
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": null,
+  "practice": "When you finish the morning reading, sit for one minute and let your eyes rest on the room. Do not look for anything. Just let the silence hold you.",
+  "question": "Who is the one that is still here even when the phone is in their hands?"
+ }
+}

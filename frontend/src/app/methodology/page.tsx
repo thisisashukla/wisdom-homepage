@@ -3,7 +3,7 @@ import Nav from '@/components/Nav'
 import BlogTracker from '@/components/BlogTracker'
 
 export const metadata: Metadata = {
-  title: 'How Wisdom Content Is Made — Methodology & Disclosure | Wisdom',
+  title: 'How Wisdom Content Is Made — Methodology & Disclosure',
   description:
     'How the verse translations and commentary on wisdomquotes.in are produced, what role AI plays, and what checks run before anything is published.',
   alternates: { canonical: 'https://wisdomquotes.in/methodology' },

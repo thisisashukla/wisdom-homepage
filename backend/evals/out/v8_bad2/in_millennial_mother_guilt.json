@@ -1,0 +1,503 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "torn and grieving the split",
+   "bridge": "The split you feel is what the Gita calls duty pulling in two directions. The grief is real, but it is the price of love, not the proof of failure.",
+   "week_thesis": "Seven days from feeling split and guilty to holding the truth that a mother who works is still a mother, and that her love is not divided.",
+   "week_beats": {
+    "hook": "You recognise the split and the grief, named without blame.",
+    "diagnose": "You see that the grief is the price of loving both, not the proof of failing either.",
+    "steady": "You hold that a mother who works is still a mother, and her worth is not split by the hours.",
+    "act": "You try one true moment with your daughter each day, and let the rest be what it is.",
+    "story": "A queen who had to choose between ruling and mothering shows you that the grief is real, and the love is not divided."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.75,
+   "core_struggle": "A working mother of two who is back at her job and grieving the split between the mother and the PM, made raw by her daughter's question.",
+   "mirror": "It sounds like you're torn and grieving the split right now.",
+   "insight": "You are not half a mother. You are a mother who is also a professional, and the split is the cost of being both, not the proof that you are not enough.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.58,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.575,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The grief of a split self, where every choice to be present for one role feels like absence from the other, and the guilt that follows you home. I'm physically home but not present with my kids.",
+    "diagnose": "When love is real, its absence is felt as grief; the more you love both roles, the more the split between them hurts.",
+    "steady": "What is yours cannot be divided by time; a mother who works is still a mother, and a mother who works is still a mother.",
+    "act": "Give yourself one true moment with your daughter each day, however small, and let the rest be what it is without adding guilt.",
+    "story": "A queen who had to leave her child to rule the kingdom, and the grief of that choice, and the wisdom that came from it."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The split",
+    "Love's price",
+    "The mother who works"
+   ],
+   "seat": "",
+   "life_context": "In her thirties, working and raising two young children; back at her job after the second birth, she moves through the day feeling she is half a mother and half a professional, and her daughter's question about school events broke her in the car.",
+   "details": [
+    "back at work after second baby",
+    "feels half a mother and half a PM",
+    "daughter asked why she does not come to school events",
+    "cried in the car after the question"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "mirror:fallback",
+    "seat:missing",
+    "retried:2",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:cliche=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bh.vairagya.47",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 47",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'On the Greatness of Time': a middle-aged reckoning.",
+     "sanskrit": "विद्या नाधिगता कलङ्करहिता वित्तं च नोपार्जितं शुश्रूषापि समाहितेन मनसा पित्रोर्न सम्पादिता । आलोलायतलोचनाः प्रियतमाः स्वप्नेऽपि नालिङ्गिताः कालोऽयं परपिण्डलोलुपतया काकैरिव प्रेर्यते ॥",
+     "line": "I neither learned, nor earned, nor truly cared for my parents. Time slipped away chasing scraps.",
+     "translation": "I did not gain spotless learning, nor earn wealth; I did not even serve my parents with an attentive mind; I did not hold wide-eyed beloveds even in dreams. Time is driven on, like a crow greedy for others' scraps.",
+     "why": "Time is passing while you're busy; notice it before it's gone.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.kala",
+      "title": "Vairagyashatakam: On the greatness of Time",
+      "summary": "Time empties cities, houses and courts; the busy never notice it passing; parents and childhood friends become memories. The section ends with life as a play and death as the curtain.",
+      "story_hook": "",
+      "lesson": "Time is passing while you're busy; notice it before it's gone."
+     },
+     "score": 3.0587,
+     "beat": "hook",
+     "role_fit": 0.595,
+     "meaning": "Bhartrihari speaks from the middle of his life, looking back with a heavy heart. He says he did not gain true learning, he did not earn wealth, and he did not serve his parents with an attentive mind. He did not even hold his beloveds in his dreams. Time is driven on, like a crow greedy for scraps. He is telling us that time is slipping away while we are busy chasing things that do not matter. He is asking us to notice time before it is gone.",
+     "for_you": "You are back at work, moving through your day, and you feel the weight of what is passing. Your daughter asks a question that breaks you, and you cry in the car. That grief is real, and it is the price of loving them both."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.338.9",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.9",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada teaches Shuka how to stop grief from multiplying.",
+     "sanskrit": "मृतं वा यदि वा नष्टं योऽतीतमनुशोचति / दुःखेन लभते दुःखं द्वावनर्थौ प्रपद्यते",
+     "line": "Dwelling on what is lost adds a second sorrow to the first.",
+     "translation": "Whoever keeps grieving over the past, over what has died or been lost, gets sorrow on top of sorrow: two misfortunes instead of one.",
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "Mourning is natural; this is about endless replaying.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 2.8101,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "Narada finds the young sage Shuka in grief. Shuka is mourning the loss of his father, Narada tells him that dwelling on what is gone does not bring it back. It only adds a second sorrow to the first loss. He says that brooding does not heal pain. It grows it. The mind needs the same care as the body, through understanding and medicine. If something can be fixed, act on it. If not, let the mind rest in contentment.",
+     "for_you": "You are grieving the split between your work and your children, and that grief is real. But when you replay your daughter's question in the car, you are adding a second sorrow to the first. You are already paying the price of love by being both a mother and a professional."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.27.49",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.49",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "न ह्यहानि निवर्तन्ते न मासा न पुनः समाः / जातानां सर्वभूतानां न पुनर्वै समागमः",
+     "line": "Days don't come back, nor months, nor years. Be here for the ones in front of you.",
+     "translation": "Days do not come back, nor months, nor years. And beings, once parted, do not meet again in the same way.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.2161,
+     "beat": "steady",
+     "role_fit": 0.514,
+     "meaning": "The sage Ashma speaks to King Janaka, who asks how to bear the loss of family and wealth. Ashma says that pain comes from what we lose, but meetings end and days do not return. He tells the king to steady his mind and be present for the people still in front of him, rather than dwelling on what is gone.",
+     "for_you": "The days you spend at the office and the evenings you spend with your children do not come back. Grieve the split, but steady yourself with the daughter who asked the question and the work that carries you. Your worth is not split by the hours."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.272.29",
+     "ref": "Mahabharata · Shanti Parva · Bhishma: Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 272.29",
+     "family": "mbh",
+     "speaker": "Chirakari",
+     "listener": "Himself",
+     "setting": "Ordered to kill his mother, Chirakari slowly weighs what a mother is.",
+     "sanskrit": "समर्थं वाऽसमर्थं वा कृशं वाप्यकृशं तथा / रक्षत्येव सुतं माता नान्यः पोष्टा विधानतः",
+     "line": "Strong or weak, thriving or struggling, a mother protects her child. No one nurtures like that.",
+     "translation": "Capable or not, thin or well-fed, a mother protects her child. No one else nurtures like that.",
+     "why": "In anger, and when loved ones seem to have wronged you, slow down.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.chirakari",
+      "title": "Chirakari, the one who acts slowly",
+      "summary": "In a jealous rage, the sage Gautama orders his son Chirakari to kill his mother and storms off. Chirakari, famous for slowness, weighs a father's word against a mother's worth for so long that Gautama returns, regretful, and finds them both alive.",
+      "story_hook": "Ordered by his furious father to kill his mother, Chirakari did what he always did: he thought about it.",
+      "lesson": "In anger, and when loved ones seem to have wronged you, slow down."
+     },
+     "score": 3.0629,
+     "beat": "steady",
+     "role_fit": 0.424,
+     "meaning": "Chirakari, the man who acts slowly, is ordered to kill his mother in a jealous rage. He does not rush. He sits with the thought of what a mother is. He finds that whether she is strong or weak, thriving or struggling, a mother protects her child. No one else nurtures like that. The verse asks you to slow down when you are angry, or when the ones you love seem to have wronged you. It tells you to see the one thing that cannot be taken away, even when everything else is pulling apart.",
+     "for_you": "Your daughter's question felt like a wound. But the love you carry for her does not split in two. You are still the one who protects her, even from a distance. Let that truth hold you steady today."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_aitareya.33",
+     "ref": "Aitareya Upanishad 2.1.3",
+     "ref_iast": "Aitareya Upaniṣad 2.1.3",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The second birth: raising a child.",
+     "sanskrit": "स यत्कुमारं जन्मनोऽग्रेऽधिभावयत्यात्मानमेव तद्भावयत्येषं लोकानां सन्तत्या । एवं सन्तता हीमे लोकास्तदस्य द्वितीयं जन्म ॥",
+     "line": "Caring for your child, you care for yourself. Through them you are born a second time.",
+     "translation": "When he cares for the child from birth onward, he is caring for himself, for the continuation of these worlds; that is how they continue. That is his second birth.",
+     "why": "Care for the one who carries and raises the child; raising children continues your life.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.aitareya.three_births",
+      "title": "The three births of a person",
+      "summary": "The Aitareya describes three births: conception and pregnancy, when the mother nourishes the child and must herself be nourished; birth and upbringing, when caring for the child is caring for oneself; and death, when the parent, duties done, departs and the child carries on.",
+      "story_hook": "",
+      "lesson": "Care for the one who carries and raises the child; raising children continues your life."
+     },
+     "score": 3.2362,
+     "beat": "act",
+     "role_fit": 0.45,
+     "meaning": "In the second birth of a person, the one who raises the child is also being raised. When you care for the child from birth onward, you care for yourself. Through them, your life continues. The verse says that raising a child is not a loss of self. It is a continuation of your own life, carried forward in another person.",
+     "for_you": "You are not half a mother. Try one true moment with your daughter today. Let the rest be what it is."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 3.0213,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari is speaking to a reader who wants to know what makes a good person. He says the truly good cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, and follow the path of the good. They serve the wise and honour those worthy of honour. Real ornaments are listening, giving and helping. He says this is how the good behave.",
+     "for_you": "You do not need to be perfect to be good. Today, try one small moment of listening with your daughter. Let the rest be what it is. That is enough."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "Queen Sumitra, whose son also went to the forest, sat with Kausalya and did not offer empty hope. She simply said you will see him again."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The split",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 150,
+   "llm": 4658,
+   "total": 12929,
+   "select": 8113
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are back at work, moving through your day, and you feel the weight of what is passing. Your daughter asks a question that breaks you, and you cry in the car. That grief is real, and it is the price of loving them both."
+  ],
+  [
+   "scene",
+   "Bhartrihari is in the middle of his life, looking back with a heavy heart. Bhartrihari said:"
+  ],
+  [
+   "sanskrit",
+   "विद्या नाधिगता कलङ्करहिता वित्तं च नोपार्जितं शुश्रूषापि समाहितेन मनसा पित्रोर्न सम्पादिता, आलोलायतलोचनाः प्रियतमाः स्वप्नेऽपि नालिङ्गिताः कालोऽयं परपिण्डलोलुपतया काकैरिव प्रेर्यते."
+  ],
+  [
+   "line",
+   "In plain words: I neither learned, nor earned, nor truly cared for my parents. Time slipped away chasing scraps."
+  ],
+  [
+   "unpack",
+   "Time is passing while you are busy chasing things that do not matter. This is easier said than done, because your mind is pulled between the demands of your job and the needs of your children. The grief you feel is the price of love, not the proof that you are failing at either role. You are not half a mother. You are a mother who is also a professional, and the split is the cost of being both."
+  ],
+  [
+   "for_you",
+   "Notice the moments when your attention is divided. You do not need to drop one role to be whole. You can be present with your daughter even when your mind is on work, and you can be focused at your job even when your heart is at home. The two do not cancel each other out."
+  ],
+  [
+   "close",
+   "Can you feel the difference between being split and being both?"
+  ]
+ ],
+ "depth": {
+  "life": "You are back at work, moving through your day, and you feel the weight of what is passing. Your daughter asks a question that breaks you, and you cry in the car. That grief is real, and it is the price of loving them both.",
+  "points": "Time is not your enemy. It is a current you are swimming in. The split you feel is not proof of failure. It is the actual shape of a life that is full, not empty.",
+  "practice": "Sit in the car for two minutes after you park, and let the grief be there without fixing it.",
+  "question": "What does the grief want you to see about your daughter's question?"
+ }
+}

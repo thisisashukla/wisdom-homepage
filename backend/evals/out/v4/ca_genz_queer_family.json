@@ -1,0 +1,487 @@
+{
+ "persona": {
+  "id": "ca_genz_queer_family",
+  "market": "Canada (Vancouver)",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "22, Indo-Canadian, came out to her Punjabi parents last year, they went silent, now talk only about weather. She still goes home for Diwali.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "since I told my parents about my girlfriend they haven't said one real thing to me. we talk about the weather. I still go home for diwali and sit at the table and it's like I'm a guest",
+  "note_source": "text",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely and dismissed",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise the cold silence and the feeling of being a stranger in your own home."
+   },
+   "confidence": 0.8,
+   "core_struggle": "A young man who told his parents about his girlfriend is now treated like a guest in his own home, and the silence is a cold exile.",
+   "mirror": "You still go home for Diwali, and now you sit at the table like a guest in the house where you grew up.",
+   "insight": "The silence is their answer, not your worth. The only harm is letting their coldness become your truth about yourself.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.999,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.095,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.99,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.642,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.465,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being treated as a stranger in the home you grew up in, and the cold of being seen as less than you are by the people who ought to know you.",
+    "diagnose": "When others see only a role they approve of, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A young man who was sent away by his own family for choosing his own path, who stood in his truth and found his footing elsewhere."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "A guest at home",
+    "Whose picture it is",
+    "The one who stands"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "they now talk only about the weather",
+    "still goes home for Diwali",
+    "sits at the table like a guest"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "flags": [
+    "llm_stance_missing",
+    "stance_inferred:str=0.45,asp=0.3,wro=0.31,see=0.05",
+    "bridge:copied_example",
+    "week_thesis:missing",
+    "retried:2",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:preachy=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.7",
+     "ref": "Bhagavad Gita 2.7",
+     "ref_iast": "Bhagavad Gītā 2.7",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+     "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+     "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.4633,
+     "beat": "hook",
+     "role_fit": 0.94,
+     "meaning": "Arjuna stands on the battlefield, his body shaking, his mind a fog of grief. He tells Krishna that his nature is struck by weakness and he cannot tell what is right. He asks Krishna plainly to teach him. He is ready to learn.",
+     "for_you": "The silence at home is a fog. You do not need to know the right words yet. Just sit with the confusion and let yourself be the student of your own life."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      },
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 3.2957,
+     "beat": "diagnose",
+     "role_fit": 0.16,
+     "meaning": "Krishna tells Arjuna that it is better to walk your own path, even if you stumble, than to wear a borrowed mask with perfect grace. A life lived for another's approval is a life lived in fear.",
+     "for_you": "You are living in the borrowed role of the obedient son. Step back from the table and find your own path, even if it is messy and imperfect."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.6.21.6",
+     "ref": "Valmiki Ramayana · Yuddha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 21.6",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram has lain on the shore for three days asking the ocean for a way across. No answer comes.",
+     "sanskrit": "अवलेपः समुद्रस्य न दर्शयति यः स्वयम्। प्रशमश्च क्षमा चैव आर्जवं प्रियवादिता॥ असामर्थ्यफला ह्येते निर्गुणेषु सतां गुणाः।",
+     "line": "Calm, patience, honesty and kind words: people who don't value them will read them as weakness.",
+     "translation": "See the ocean's arrogance: he does not even show himself. Calm, forbearance, straightforwardness and gentle speech, these virtues of the good, are taken by the unworthy as signs of weakness.",
+     "why": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+     "misuse": "Firmness only after real patience, and only toward someone who keeps ignoring you. When the ocean finally came, Ram listened and redirected the arrow.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ocean_humility_firmness",
+      "title": "Ram at the ocean: humble first, firm after",
+      "summary": "Ram lies on kusha grass by the shore for three days, asking the ocean for a way. Ignored, he tells Lakshman that patience is being taken for weakness and takes up his bow. The ocean rises, offers a way (Nala's bridge), and Ram releases the arrow elsewhere at its request.",
+      "story_hook": "For three days the prince lay on a bed of grass at the edge of the sea, asking politely.",
+      "lesson": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard."
+     },
+     "score": 3.3396,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Rama lies on the shore for three days, asking the ocean for a way. The ocean ignores him. Rama tells Lakshmana that his patience is being read as weakness. He then takes up his bow and acts firmly.",
+     "for_you": "Your calm at the dinner table is being read as weakness. You do not need to raise your voice. You just need to stop asking for permission to exist."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2036,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to the reader from a quiet place. He says that people will praise you or blame you, money will come and go, and death will arrive when it arrives. None of this should move you from what is right. The steady person keeps walking on the right path even when the world turns against them.",
+     "for_you": "When your parents speak about you as if you are a guest, let their words be like passing weather. Keep your own footing on what is true. You do not step off the path because they have gone silent."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.3893,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is speaking to Nidagha about how a free person moves through the world. He says that a person who always does the work that comes, sees friend and foe alike, and is free of wanting and not wanting, neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, and knowing the intent of others' hearts, such a one does not sink in the world. This means living fully in the world while staying unhurried inside.",
+     "for_you": "You are doing the work in front of you. When you sit at the table and speak about the weather, you are speaking gently. You are letting their silence be their silence. You are not sinking. You are just living fully in the world while staying unhurried inside."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.4092,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula is speaking to her son Sanjaya, who lies defeated after losing his kingdom. She tells him not to hold himself in contempt or settle for little. She says to set his mind on what is truly good and not be afraid. She urges him to pull himself together. This means past failure does not define you. Results are uncertain, but those who never try never succeed.",
+     "for_you": "You are not defeated. Your parents' silence is their silence, not your defeat. You are setting your mind on what is truly good. You are not afraid of their coldness. You are pulling yourself together. You are rising."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.vibhishan_counsel",
+     "title": "Vibhishan speaks up and is kicked",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Vibhishan",
+      "Ravana",
+      "Malyavan"
+     ],
+     "story_hook": "He told his brother the truth in front of the whole court, and his brother kicked him.",
+     "summary": "Vibhishan, bowing to his brother, advises him to return Sita: good sense and bad sense live in every heart, and Ravana is feeding the wrong one. Ravana kicks him. Vibhishan still says Ravana is like a father to him, and then he leaves, telling him not to blame him.",
+     "lesson": "Say the hard thing with respect; if you are struck for it, you may go.",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.5.36.chaupai.4",
+      "ref": "Ramcharitmanas · Sundar Kand",
+      "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 36",
+      "family": "rcm",
+      "speaker": "Vibhishan",
+      "listener": "Ravana",
+      "setting": "Vibhishan, Ravana's younger brother, advises him in open court.",
+      "sanskrit": "चौदह भुवन एक पति होई। भूत द्रोह तिष्टइ नहिं सोई॥ गुन सागर नागर नर जोऊ। अलप लोभ भल कहइ न कोऊ ॥",
+      "line": "You may be gifted and clever, but even a little greed and people stop calling you good.",
+      "translation": "Even a sole master of the fourteen worlds cannot last if he makes enemies of living beings. A person may be an ocean of virtues and clever too, but if he has even a little greed, no one calls him good.",
+      "why": "Say the hard thing with respect; if you are struck for it, you may go.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [],
+      "prasang": {
+       "id": "rcm.p.vibhishan_counsel",
+       "title": "Vibhishan speaks up and is kicked",
+       "summary": "Vibhishan, bowing to his brother, advises him to return Sita: good sense and bad sense live in every heart, and Ravana is feeding the wrong one. Ravana kicks him. Vibhishan still says Ravana is like a father to him, and then he leaves, telling him not to blame him.",
+       "story_hook": "He told his brother the truth in front of the whole court, and his brother kicked him.",
+       "lesson": "Say the hard thing with respect; if you are struck for it, you may go."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Vibhishan told Ravana the truth in front of the court, and Ravana kicked him",
+     "teaser": "Vibhishan told Ravana the truth in front of the court, and Ravana kicked him",
+     "for_you": "You have been speaking only about the weather, and you sit at the table like a guest. Yesterday's verse named the grip. Today, it asks you to set your mind on something good and stop fearing. You do not have to carry their silence as your own truth. You are not less than you are."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "A guest at home",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 165,
+   "llm": 3978,
+   "total": 11633,
+   "select": 7483
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You sit at the table and the conversation stops. They look right through you. You are carrying the weight of a silence that feels like a cold exile. It is lonely and it is heavy, and it is hard to breathe in it."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. His body is shaking. His mind is a fog of grief. He tells Krishna that his nature is struck by weakness and he cannot tell what is right. He asks Krishna to teach him. And Arjuna says:"
+  ],
+  [
+   "sanskrit",
+   "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः, यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्."
+  ],
+  [
+   "line",
+   "In plain words: I'm confused about what's right. Tell me plainly what's best; I'm ready to learn."
+  ],
+  [
+   "unpack",
+   "This is where clarity begins. Admitting that you do not know is not a failure. It is the beginning of learning. The only harm is letting their coldness become your truth about yourself. The silence is their answer, not your worth."
+  ],
+  [
+   "for_you",
+   "You do not need to know the right words yet. Just sit with the confusion. Let yourself be the student of your own life. Let the fog be there without fighting it."
+  ],
+  [
+   "close",
+   "What is the first thing you want to understand about yourself?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit at the table and feel like a guest. The silence from your parents is heavy. You talk about the weather because it is safer than the truth.",
+  "points": "Arjuna stood on the battlefield and saw only sorrow. He did not know what was right. He asked Krishna to teach him. You do not need to have the right words right now. Admitting that you are confused is the first step toward clarity.",
+  "practice": "Name one thing you are unsure about today, and say it out loud to yourself.",
+  "question": "What is the smallest truth you could speak at home today?"
+ }
+}

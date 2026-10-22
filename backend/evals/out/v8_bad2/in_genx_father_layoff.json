@@ -1,0 +1,513 @@
+{
+ "persona": {
+  "id": "in_genx_father_layoff",
+  "market": "India (Pune)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "49, IT services manager in Pune, 22 years in the same company, laid off last month. Daughter in 11th, home loan, aging mother.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "shocked and carrying a secret",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "Seven days from the ten-minute call to the morning you tell your mother, and the ground you stand on after it.",
+   "week_beats": {
+    "hook": "You recognise the shock and the secret, named without judgement.",
+    "steady": "You hold that no one who gave their best for twenty-two years is ever lost.",
+    "act": "You try telling one person the true thing, and one thing you can learn from it.",
+    "story": "A man who lost his badge after twenty-two years shows you how to stand again without it."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.8,
+   "core_struggle": "A man with twenty-two years at one company was let go in ten minutes, and he is hiding it from his mother.",
+   "mirror": "You still wake at six, and you have not told your mother.",
+   "insight": "The company took the job, not the man. The only thing that has actually changed is the story they told in ten minutes, and you are still the same person.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.14,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.07,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being let go after two decades, and the quiet shame of hiding it from the one person who matters most. I lost my job.",
+    "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth.",
+    "steady": "Your worth was never theirs to take; no one who gave their best for twenty-two years is ever lost.",
+    "act": "Speak the true thing to one person you trust, lift yourself up instead of pushing yourself down, and learn what this taught you.",
+    "story": "A man who gave his best for twenty-two years, was dismissed in ten minutes, and had to find his footing again without the badge he had worn for two decades."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The ten-minute call",
+    "The verdict you carry",
+    "More than the job"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "twenty two years in one company",
+    "was let go in a ten minute call",
+    "still wakes at six as if going to office"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "day1_other_text:vr",
+    "week_fit:6=0.6,46=0.6,165=0.3,81=0.3,1=0.6,5=0.3",
+    "week_fit:swapped=3",
+    "retried:1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "vr.2.19.6",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.6",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Kaikeyi",
+     "setting": "Ram has just accepted fourteen years of exile; one thing still hurts him.",
+     "sanskrit": "अलीकं मानसं त्वेकं हृदयं दहते मम। स्वयं यन्नाह मां राजा भरतस्याभिषेचनम्॥",
+     "line": "What hurt most was not the news, but that he didn't tell me himself.",
+     "translation": "Only one sorrow burns my heart: that the king did not tell me himself about Bharata's coronation.",
+     "why": "You cannot control the news; you can control the person who walks out of the room.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_accepts_exile",
+      "title": "Ram accepts exile",
+      "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+      "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+      "lesson": "You cannot control the news; you can control the person who walks out of the room."
+     },
+     "score": 3.5396,
+     "beat": "hook",
+     "role_fit": 0.84,
+     "meaning": "Ram has agreed to leave Ayodhya for fourteen years, but one thing still burns his heart. His father, the king, sent Kaikeyi to deliver the news of the coronation and the exile. He accepts the exile without anger, yet the deepest sorrow is that the king did not tell him himself. The verse says you cannot control the message that arrives, but you can choose the person who walks out of the room. Ram walks out already thinking of those he must comfort, carrying the weight of the news but keeping his own heart steady.",
+     "for_you": "You wake at six and still move through the day as if the office is waiting. The ten-minute call changed the story, but not the person. You still choose who walks out of your room in the morning. Let that choice be yours, not the company's."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.9.46",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+     "family": "yv",
+     "speaker": "Janaka",
+     "listener": "himself",
+     "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+     "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+     "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+     "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 3.2299,
+     "beat": "diagnose",
+     "role_fit": 0.766,
+     "meaning": "King Janaka is alone on his palace roof. He has just heard wandering sages singing about a self that is not bound to the body or the world. This shakes him. He has ruled a kingdom, held wealth, and managed a life, and now he questions what any of it means. He is not running away. He decides to get up and do his duties. The verse says that when the mind clutches good fortune, it turns into great calamity. But when the mind accepts trouble, it turns into a kind of fortune.",
+     "for_you": "The ten-minute call took the job, not you. The story changed, but you did not. You can take the next step of your day without clutching the fear of what comes next."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2943,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari speaks to you from the section on steadfastness. He tells you that a ball struck down by a hand flies right back up. As a rule, the misfortunes of those who live rightly do not last. The idea is simple: setbacks rarely last for those who keep going on the right path. The gods kept churning the ocean past jewels and poison until they found nectar. The steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+     "for_you": "You wake at six as if going to the office. Let that body go through the motions. The ball knocked down bounces back up. You are not lost. The ground beneath your feet is still yours, even when the air feels thin."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.25.31",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 25.31",
+     "family": "mbh",
+     "speaker": "Senajit (quoted by Vyasa)",
+     "listener": "Yudhishthira",
+     "setting": "Vyasa quotes the grieving King Senajit to Yudhishthira, who is broken by the war's losses.",
+     "sanskrit": "सुखं च दुःखं च भवाभवौ च / लाभालाभौ मरणं जीवितं च / पर्यायतः सर्वमवाप्तुवन्ति / तस्मान्न मुह्येन्न च संप्रहृष्येत्",
+     "line": "Gain and loss, joy and sorrow come to everyone in turn. Don't be crushed, and don't get carried away.",
+     "translation": "Happiness and sorrow, rise and fall, gain and loss, death and life: everyone receives all of these in turn. So do not be thrown off by them, and do not get carried away either.",
+     "why": "Guilt and grief are real, but they are not the end. The good you do next counts.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yudhishthira_grief",
+      "title": "After the war: Yudhishthira's grief and his family's counsel",
+      "summary": "Victorious but shattered by the deaths of kin, Yudhishthira wants to give up the throne for the forest. Arjuna, Bhima, Draupadi, Nakula, the sage Devasthana and Vyasa each argue with him, about duty, guilt, grief and the shortness of life, until he agrees to rule.",
+      "story_hook": "He had won the war, and all Yudhishthira wanted was to walk into the forest and never come back.",
+      "lesson": "Guilt and grief are real, but they are not the end. The good you do next counts."
+     },
+     "score": 3.0732,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Vyasa tells Yudhishthira, who wants to abandon the throne after the war, about a king named Senajit. Senajit had lost everything and was ready to die. But a wise man showed him that gain and loss, joy and sorrow, come to everyone in turn. No one stays on top or bottom forever. This is not meant to dismiss grief. It is to say that the ground will return beneath your feet. The good you do next is what remains.",
+     "for_you": "The ten-minute call took the job, not your life. You are still the person who walked in twenty-two years ago. Let that truth hold you, even when the mornings feel empty."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.2374,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "The sage Vasishtha speaks to Bharat, who is shattered by his father's death and his brother's exile. Bharat's heart is heavy and he wants to give up. Vasishtha tells him to keep courage in his heart and do what today asks of him. Bharat rises and makes ready to go to the forest. The point is that when your head and heart are in conflict, you could still act. You go and face the person you feel you wronged.",
+     "for_you": "write one true sentence about what happened and put it in a drawer. Then, ask one small question about what you can learn from this, without needing the answer yet."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.0819,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Vidula finds her son Sanjaya lying defeated, having lost his kingdom and all hope. She does not let him rest in his despair. She tells him not to hold himself in contempt or settle for a life of little. She asks him to set his mind on what is truly good and to stop fearing. The past failure is not the end of him. Results are uncertain, but those who never try never succeed. She rouses him to rise and fight again.",
+     "for_you": "The ten minute call changed the story, not you. Today, set your mind on one good thing you can do with the life you still have. Stop letting the fear of what might happen shrink your days."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.vishvamitra_menaka",
+     "title": "Ten years gone: Vishvamitra and Menaka",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Vishvamitra",
+      "Menaka",
+      "Brahma"
+     ],
+     "story_hook": "He looked up one morning and realised ten years had gone by.",
+     "summary": "Deep into his effort to transform himself, Vishvamitra falls for the nymph Menaka and ten years pass like a day. When he wakes up to it, he is ashamed, lets her go kindly rather than blaming her, and starts again. Brahma tells him he is not there yet: he must first master his senses.",
+     "lesson": "Lost years are not the end; notice, stop blaming, and begin again.",
+     "matched": [],
+     "anchor": {
+      "id": "vr.1.63.9",
+      "ref": "Valmiki Ramayana · Bala Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 63.9",
+      "family": "vr",
+      "speaker": "Vishvamitra",
+      "listener": "himself",
+      "setting": "After ten years with the celestial Menaka, Vishvamitra wakes up to how far he drifted from his goal.",
+      "sanskrit": "अहोरात्रापदेशेन गताः संवत्सरा दश ॥ काममोहाभिभूतस्य विघ्नोऽयं प्रत्युपस्थितः।",
+      "line": "Ten years passed like a single day. Distraction rarely feels like lost time while it is happening.",
+      "translation": "Ten years went by as if they were a single day and night. Lost in desire, this obstacle came and I did not see it.",
+      "why": "Lost years are not the end; notice, stop blaming, and begin again.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.vishvamitra_menaka",
+       "title": "Ten years gone: Vishvamitra and Menaka",
+       "summary": "Deep into his effort to transform himself, Vishvamitra falls for the nymph Menaka and ten years pass like a day. When he wakes up to it, he is ashamed, lets her go kindly rather than blaming her, and starts again. Brahma tells him he is not there yet: he must first master his senses.",
+       "story_hook": "He looked up one morning and realised ten years had gone by.",
+       "lesson": "Lost years are not the end; notice, stop blaming, and begin again."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Vishvamitra looked up one morning and ten years had gone",
+     "teaser": "Vishvamitra looked up one morning and ten years had gone",
+     "for_you": "Vishvamitra lost ten years to distraction, then woke up and began again without blaming anyone. You can stand again without the badge of the company. Notice where you are, let the shame go, and start your next chapter today."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The ten-minute call",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 255,
+   "llm": 4245,
+   "total": 11364,
+   "select": 6856
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You woke at six this morning and the day felt wrong before it began. A ten minute call took the job, and you are still carrying it alone. The company changed, but you did not."
+  ],
+  [
+   "scene",
+   "Ram has just agreed to leave Ayodhya for fourteen years, but one thing still burns his heart. His father, the king, sent Kaikeyi to deliver the news of the coronation and the exile. Ram said:"
+  ],
+  [
+   "sanskrit",
+   "अलीकं मानसं त्वेकं हृदयं दहते मम, स्वयं यन्नाह मां राजा भरतस्याभिषेचनम्."
+  ],
+  [
+   "line",
+   "In plain words: What hurt most was not the news, but that he didn't tell me himself."
+  ],
+  [
+   "unpack",
+   "You cannot control the news that arrives. You can only choose the person who walks out of the room. The exile is real, but the distance between the king and his son is what hurts most. This is harder than it sounds, because we want to control the other person's choice. But the only thing we truly hold is our own step forward."
+  ],
+  [
+   "for_you",
+   "When you move through the morning, notice who is walking beside you. The company took the job, not the person you are. Let that be your first step today."
+  ],
+  [
+   "close",
+   "Who walks out of your room in the morning?"
+  ]
+ ],
+ "depth": {
+  "life": "You are carrying the news of the ten-minute call. Your body still wakes at six and moves through the day as if the office is waiting. The company took the job, not you. The only thing that changed is the story they told. You are still the person who chooses who walks out of your room in the morning.",
+  "points": "The hurt is not the news itself, but that the person you trusted did not walk out of the room and tell you themselves. You cannot control the news that arrives. You can only control the person who leaves the room and the one who stays behind to face it.",
+  "practice": "Before you wake tomorrow, name one thing in your room that is still yours, not theirs.",
+  "question": "What would it mean to let the person who left the room stay gone?"
+ }
+}

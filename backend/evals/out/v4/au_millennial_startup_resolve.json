@@ -1,0 +1,507 @@
+{
+ "persona": {
+  "id": "au_millennial_startup_resolve",
+  "market": "Australia (Sydney)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "38, left a law firm to start a legal-tech company in Sydney, first customer signed yesterday, husband supportive, no kids by choice.",
+  "profile": {
+   "feeling": "stick",
+   "age": "35_44",
+   "stages": [
+    "own_thing"
+   ],
+   "phone_hours": 4
+  },
+  "note": "signed our first paying customer yesterday after 14 months. I know the hard part starts now. I want something that keeps me grounded through the next year instead of riding highs and lows",
+  "note_source": "text",
+  "expect_stance": "aspiration"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "grounded and resolved",
+   "bridge": "What you are living with is what the texts call starting what is yours to build, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "confidence": 0.8,
+   "core_struggle": "A builder who has just landed their first paying customer and wants to stay grounded through the year ahead instead of riding highs and lows.",
+   "mirror": "You signed the first customer yesterday, and you know the hard part starts now.",
+   "insight": "Nothing is wrong with you, and nothing needs fixing. The resolve is real and it is your own now. What will test it is the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 1.284,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 1.133,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.492,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.465,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The first customer signed, the fire lit, and the resolve to stay grounded through the year ahead without riding the highs and lows.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and let the result go, one day at a time, and keep at it when no one is watching.",
+    "story": "A builder who set out to win what was theirs to win, faced the first setback, and kept their resolve through it."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Your turn to begin",
+    "What tests a resolve",
+    "The one who acts"
+   ],
+   "seat": "",
+   "life_context": "In their mid-thirties and building something of their own; after fourteen months they signed their first paying customer yesterday, and they know the hard part starts now.",
+   "details": [
+    "signed first paying customer after months",
+    "knows hard part starts now",
+    "wants to stay grounded through next year",
+    "does not want to ride highs and lows"
+   ],
+   "age": "35_44",
+   "stages": [
+    "own_thing"
+   ],
+   "flags": [
+    "llm_stance_missing",
+    "stance_inferred:str=0.35,asp=0.79,wro=0.0,see=0.0",
+    "bridge:copied_example",
+    "week_thesis:missing",
+    "insight:template",
+    "seat:missing",
+    "retried:3",
+    "dropped:fallback_line=4,missing=6,not_second_person=1,opening=1",
+    "for_you:7/7",
+    "meaning:2/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.48",
+     "ref": "Bhagavad Gita 18.48",
+     "ref_iast": "Bhagavad Gītā 18.48",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत् । सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः ॥",
+     "line": "Don't abandon work that suits you just because it has flaws. Every undertaking has some, like fire has smoke.",
+     "translation": "One should not give up the work suited to one's nature, Kaunteya, even if it has faults; for all undertakings are clouded by faults, as fire is by smoke.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'never change jobs'. It answers perfectionism, not a reason to stay where you're harmed.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 3.2835,
+     "beat": "hook",
+     "role_fit": 0.19,
+     "meaning": null,
+     "for_you": "You signed your first paying customer yesterday. The smoke of this work is already rising around you. Let the flaws stay, and do the next piece of it as your own offering."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.5.12",
+     "ref": "Bhagavad Gita 5.12",
+     "ref_iast": "Bhagavad Gītā 5.12",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on working in the world without being stained by it.",
+     "sanskrit": "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम् । अयुक्तः कामकारेण फले सक्तो निबध्यते ॥",
+     "line": "Let go of the payoff and you find lasting peace. Chase it and it chains you.",
+     "translation": "The disciplined person, giving up the fruit of action, attains lasting peace. The undisciplined, attached to the fruit and driven by desire, is bound.",
+     "why": "Be in the mess without letting it soak in.",
+     "misuse": "Letting go of the payoff isn't refusing fair pay or recognition; it's not being chained to it.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.2",
+      "title": "Marks of the knower and the doer",
+      "summary": "The disciplined person acts without attachment, like a lotus leaf untouched by water, and finds peace by letting go of the fruit.",
+      "story_hook": "",
+      "lesson": "Be in the mess without letting it soak in."
+     },
+     "score": 3.2536,
+     "beat": "diagnose",
+     "role_fit": 0.761,
+     "meaning": "Krishna tells Arjuna that the disciplined person, giving up the fruit of action, attains lasting peace. The undisciplined person, attached to the fruit and driven by desire, is bound. The point is to be in the mess without letting it soak in. You are building your own thing, and the highs and lows will come. Let them pass through you like water off a lotus leaf.",
+     "for_you": "When the morning feels flat and the work is just work, let go of the payoff. Do the next small thing without needing the high to hold you."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.6073,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari says to the reader: let the worldly-wise blame or praise. Let fortune come or go. Let death come today or ages hence. The steadfast do not move a step from the path of what is right. The point is that setbacks rarely last for those who keep going on the right path. The gods kept churning the ocean past jewels and poison until they found nectar. A struck ball bounces back.",
+     "for_you": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.50",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.50",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "कुर्वतो नार्थसिद्धिर्मे भवतीति ह भारत / निर्वेदो नात्र गन्तव्यो द्वावन्तौ यस्य कर्मणः",
+     "line": "Don't despair because effort hasn't paid off yet. Every attempt can go either way.",
+     "translation": "'I keep working and still don't succeed' is no reason to despair. Every effort can end two ways, in success or not; only by not acting is the outcome certain.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.4848,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": null,
+     "for_you": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.33.31",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.31",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "निश्चित्य यः प्रक्रमते नान्तर्वसति कर्मणः / अवन्ध्यकालो वश्यात्मा स वै पण्डित उच्यते",
+     "line": "Decide, then begin. Don't stall halfway, don't waste time, and keep yourself steady.",
+     "translation": "One who begins only after deciding, does not stop halfway through the work, does not waste time and keeps himself in hand, is called wise.",
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 4.1076,
+     "beat": "act",
+     "role_fit": 0.916,
+     "meaning": null,
+     "for_you": "Nothing is wrong with you, and nothing needs fixing. The resolve is real and it is your own now. What will test it is the morning the work stops being exciting."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.9514,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "Nothing is wrong with you, and nothing needs fixing. The resolve is real and it is your own now. What will test it is the morning the work stops being exciting."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.bridge",
+     "title": "Building the bridge",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "the Ocean",
+      "Nala",
+      "the monkey army"
+     ],
+     "story_hook": "The army stood on the shore with no boats, until a quiet monkey said he knew how to build a bridge.",
+     "summary": "Ram waits three days for the ocean to let him pass, then loses patience. The ocean reveals that Nala can build a bridge; Nala admits his skill and the whole army hauls trees and rocks for five days until the bridge reaches Lanka.",
+     "lesson": "Big things get built by many hands, once someone admits they know how.",
+     "matched": [
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "anchor": {
+      "id": "vr.6.22.42",
+      "ref": "Valmiki Ramayana · Yuddha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 22.42",
+      "family": "vr",
+      "speaker": "Nala",
+      "listener": "Ram",
+      "setting": "The army is stuck at the ocean; Nala reveals he can build a bridge, which he had not mentioned.",
+      "sanskrit": "समर्थश्चाप्यहं सेतुं कर्तुं वै वरुणालये। तस्मादद्यैव बध्नन्तु सेतुं वानरपुङ्गवाः॥",
+      "line": "I can build this. Let's start today.",
+      "translation": "I too am able to build a bridge across the ocean. So let the best of the monkeys start building it this very day.",
+      "why": "Big things get built by many hands, once someone admits they know how.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "side_project",
+        "label": "I can't tell if continuing is discipline or stubbornness"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.bridge",
+       "title": "Building the bridge",
+       "summary": "Ram waits three days for the ocean to let him pass, then loses patience. The ocean reveals that Nala can build a bridge; Nala admits his skill and the whole army hauls trees and rocks for five days until the bridge reaches Lanka.",
+       "story_hook": "The army stood on the shore with no boats, until a quiet monkey said he knew how to build a bridge.",
+       "lesson": "Big things get built by many hands, once someone admits they know how."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram's army stood on the shore with no boats, until a quiet monkey spoke up",
+     "teaser": "Ram's army stood on the shore with no boats, until a quiet monkey spoke up",
+     "for_you": "Yesterday's verse named the grip. Today, see that your resolve is the first stone. You do not need to carry the whole bridge alone. Let the quiet skill in you admit itself, and let the work of building begin, one tree and one rock at a time, without waiting for the water to recede."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Your turn to begin",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 197,
+   "llm": 3717,
+   "total": 14995,
+   "select": 11076
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You signed your first paying customer yesterday. That is your footing, and it is real. You are standing in the middle of building something that is yours, and you want to stay grounded through the year ahead."
+  ],
+  [
+   "scene",
+   "Krishna and Arjuna stand on the edge of a battlefield. The armies are waiting. Arjuna has laid down his bow because he cannot bear the cost of the war. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत्, सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः."
+  ],
+  [
+   "line",
+   "In plain words: Don't abandon work that suits you just because it has flaws. Every undertaking has some, like fire has smoke."
+  ],
+  [
+   "unpack",
+   "This is about the smoke, not the fire. Every undertaking has flaws, just as fire has smoke. The work you chose carries weight because it is yours. You will not feel excited every morning. That is the smoke. The offering is not the high, but the next piece of the work itself."
+  ],
+  [
+   "for_you",
+   "Tomorrow morning, when the excitement is gone, do not look for a new reason. Do the next piece of the work. Let the flaws be there, and do it as your own offering."
+  ],
+  [
+   "close",
+   "The smoke is not the fire. What is your next piece?"
+  ]
+ ],
+ "depth": {
+  "life": "You signed your first paying customer yesterday. The smoke of this work is already rising around you. The flaws are part of the fire you chose. You know the hard part starts now, and the morning the work stops being exciting will test you. You cannot stay consistent, and you are anxious about how things will turn out.",
+  "points": "What you are living with is starting what is yours to build. Every undertaking has faults, like fire has smoke. Do not abandon the work suited to your nature just because it has flaws. The path is imperfect, and that is the point.",
+  "practice": "Pick one small task for the work today that feels flawed and do it as your own offering.",
+  "question": "When the work stops being exciting, what will you offer it?"
+ }
+}

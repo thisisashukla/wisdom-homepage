@@ -1,0 +1,490 @@
+{
+ "persona": {
+  "id": "us_genz_abcd_identity",
+  "market": "USA (New Jersey)",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "21, Indian-American senior at Rutgers, born in NJ. Parents from Gujarat. Dating a white classmate; hasn't told parents. Feels neither fully Indian nor American.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "my parents keep asking when I'll 'settle down with a nice Gujarati boy' and I've been with my boyfriend for 2 years and he's not Indian. I feel like whichever way I go I lose a part of me",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "caught and losing herself",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being asked to become someone else to standing in the life you are already living, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being asked to become someone else's idea of a good daughter, and the anger of it, named without blame."
+   },
+   "undisclosed": false,
+   "texts": [],
+   "confidence": 0.75,
+   "core_struggle": "An Indian student in a two-year relationship is being pressed by her parents to marry a man, and feels she will lose a part of herself whichever way she goes.",
+   "mirror": "You've been with him for two years, and at the dinner table the question is still which boy you'll settle down.",
+   "insight": "The part you feel you will lose is not you. It is the version of you they approve of, and that is their picture, not your size.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.799,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.114,
+     "source": "note"
+    },
+    {
+     "id": "interfaith",
+     "label": "Faith differences in my relationship",
+     "weight": 0.787,
+     "source": "note"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 0.463,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being asked to become someone else's idea of a good daughter, while the life you are already living is not enough for them.",
+    "diagnose": "When others see only a role they approve of, their picture is their smallness and not your measure; the harm deepens only when their picture starts to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A young woman of learning and standing, dismissed by her own family, who questioned them openly and held her ground until they had no answer."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Seen as less",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "llm_stance_missing",
+    "stance_inferred:str=0.45,asp=0.3,wro=0.19,see=0.05",
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "seat:missing",
+    "retried:1",
+    "redo:2",
+    "redo_fixed:3",
+    "dropped:fallback_line=1,missing=2,preachy=3",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 3.416,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Arjuna is frozen on the battlefield, and Krishna is telling him to stop measuring his worth against some impossible standard. The idea is that your own work, done honestly in your own nature, is enough. It is an offering. You do not need to perform perfection for them. The work that fits your own nature, with all its flaws, is the only work that truly belongs to you.",
+     "for_you": "You are being asked to become a version of yourself that fits their picture, not your size. The anger you feel is the right response. Stay with the work that is actually yours, the studying and the living that is already in your hands."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.5.35.doha.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 35",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Ravana's ministers flatter him as Ram's army arrives; the poet comments.",
+     "sanskrit": "सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस राज धर्म तन तीनि कर होइ बेगिहीं नास ॥",
+     "line": "When advisers, doctors and teachers only say what pleases you, the ruin comes quickly.",
+     "translation": "When a minister, a doctor and a teacher speak only to please, out of fear or hope of reward, then the kingdom, the body and righteousness are soon destroyed.",
+     "why": "Beware a circle that only tells you what you want to hear.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.mandodari_first",
+      "title": "Mandodari pleads, the ministers flatter",
+      "summary": "Mandodari takes Ravana aside and begs him to return Sita before it is too late. He laughs at her fear and goes to court, where his ministers tell him only what pleases him. Tulsidas notes that when advisers, doctors and teachers speak only to please, ruin comes quickly.",
+      "story_hook": "Mandodari took her husband's hand and led him somewhere the ministers couldn't hear.",
+      "lesson": "Beware a circle that only tells you what you want to hear."
+     },
+     "score": 2.8971,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "In the Ramcharitmanas, Ravana sits in his court while his ministers tell him only what he wants to hear. Tulsidas points out that when the people around you only say what pleases you, ruin comes quickly. The truth is hidden in the room. The problem is not the truth itself, but the circle that keeps you from it.",
+     "for_you": "You are in a room where the only sound is what they want to hear. The fight you are in is the sound of truth trying to get in. Notice who is in that room with you."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.6.21.6",
+     "ref": "Valmiki Ramayana · Yuddha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 21.6",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram has lain on the shore for three days asking the ocean for a way across. No answer comes.",
+     "sanskrit": "अवलेपः समुद्रस्य न दर्शयति यः स्वयम्। प्रशमश्च क्षमा चैव आर्जवं प्रियवादिता॥ असामर्थ्यफला ह्येते निर्गुणेषु सतां गुणाः।",
+     "line": "Calm, patience, honesty and kind words: people who don't value them will read them as weakness.",
+     "translation": "See the ocean's arrogance: he does not even show himself. Calm, forbearance, straightforwardness and gentle speech, these virtues of the good, are taken by the unworthy as signs of weakness.",
+     "why": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+     "misuse": "Firmness only after real patience, and only toward someone who keeps ignoring you. When the ocean finally came, Ram listened and redirected the arrow.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.ocean_humility_firmness",
+      "title": "Ram at the ocean: humble first, firm after",
+      "summary": "Ram lies on kusha grass by the shore for three days, asking the ocean for a way. Ignored, he tells Lakshman that patience is being taken for weakness and takes up his bow. The ocean rises, offers a way (Nala's bridge), and Ram releases the arrow elsewhere at its request.",
+      "story_hook": "For three days the prince lay on a bed of grass at the edge of the sea, asking politely.",
+      "lesson": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard."
+     },
+     "score": 3.2699,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ram lies on the shore for three days, asking the ocean for a path across. The ocean stays silent. He tells Lakshman that patience and gentle speech are being read as weakness. He takes up his bow. The ocean rises and offers a way. Ram lets the arrow fly elsewhere, as the ocean asks, and the path is made.",
+     "for_you": "Your parents see your quiet and think you will bend. You are not weak. You are simply waiting for them to hear you. When they do, you will speak with the same firmness Ram showed, and you will not lower yourself to prove a point."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.2442,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": null,
+     "for_you": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "marriage_conflict",
+       "label": "My partner and I keep fighting"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.3846,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna speaks of speech that causes no distress, that is true and kind. He speaks of giving without strings, and of effort that is real, not for show. The point is to speak the truth without cruelty, to give without keeping score, and to let the performance go.",
+     "for_you": "When you speak with your parents about the marriage, speak the truth without wounding. You do not have to be cruel to be clear. You do not have to perform the version of yourself they want. Speak what is true to you, kindly, and let the words stand on their own."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.1793,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is telling Nidagha how a free person moves through the world. They do the work that comes to them. They see friend and foe the same way. They do not grieve or crave. They speak gently when asked. They read the intent in other people's hearts. They do not sink in the world. They live fully, but they stay unhurried inside.",
+     "for_you": "Do the work in front of you right now. When your parents press you about marriage, speak gently but do not let their urgency pull you under. Read their intent, but keep your own center. You do not have to sink into their worry."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.chhandogya.jaivali",
+     "title": "Shvetaketu humbled at the king's court",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Shvetaketu",
+      "Pravahana Jaivali",
+      "Uddalaka Aruni"
+     ],
+     "story_hook": "Shvetaketu walked into the king's assembly sure he knew everything.",
+     "summary": "Shvetaketu boasts that his father has taught him everything, then cannot answer a single one of a king's five questions. He runs home and blames his father, who honestly admits he does not know either, and goes to the king himself, refusing wealth and asking only to learn.",
+     "lesson": "A good parent admits what they don't know and goes on learning.",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "anchor": {
+      "id": "up_chhandogya.391",
+      "ref": "Chhandogya Upanishad 5.3.5",
+      "ref_iast": "Chāndogya Upaniṣad 5.3.5",
+      "family": "up",
+      "speaker": "Uddalaka Aruni",
+      "listener": "His son Shvetaketu",
+      "setting": "Shvetaketu returns humiliated by a king's questions and blames his father.",
+      "sanskrit": "पञ्च मा राजन्यबन्धुः प्रश्नानप्राक्षीत्तेषां नैकंचनाशकं विवक्तुमिति स होवाच यथा मा त्वं तदैतानवदो यथाहमेषां नैकंचन वेद यद्यहमिमानवेदिष्यं कथं ते नावक्ष्यमिति ॥",
+      "line": "The father admitted, 'I don't know one of these answers. If I knew, wouldn't I have taught you?'",
+      "translation": "'That fellow of the warrior class asked me five questions, and I could not answer even one.' The father said, 'As you have put them to me, I do not know a single one of them. If I had known them, how could I not have told you?'",
+      "why": "A good parent admits what they don't know and goes on learning.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "parent_conflict",
+        "label": "I keep fighting with my parents"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.chhandogya.jaivali",
+       "title": "Shvetaketu humbled at the king's court",
+       "summary": "Shvetaketu boasts that his father has taught him everything, then cannot answer a single one of a king's five questions. He runs home and blames his father, who honestly admits he does not know either, and goes to the king himself, refusing wealth and asking only to learn.",
+       "story_hook": "Shvetaketu walked into the king's assembly sure he knew everything.",
+       "lesson": "A good parent admits what they don't know and goes on learning."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A young scholar walked into the king's court sure he knew everything",
+     "teaser": "A young scholar walked into the king's court sure he knew everything",
+     "for_you": "Your parents are trying to fit you into a picture they drew. You do not have to shrink to fit it. You already stand in the life you are living. The next step is to stand there more fully, and to find the words to say so."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Seen as less",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 132,
+   "llm": 5495,
+   "total": 15357,
+   "select": 9723
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are caught. Every day feels like a battle where you have to fight for the right to be yourself. You are studying, you are in a relationship, and now your parents are pressing you toward a marriage that does not fit. You feel you will lose a part of yourself whichever way you go."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the field. He is frozen. He is measuring his worth against a standard he cannot reach. Krishna looks at him. He sees the weight of the moment. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna says that your own path, even if it is imperfect, is better than someone else's done perfectly. He is talking about the work that fits your own nature. It is an offering. You do not have to perform perfection for anyone else. The work that is actually yours, with all its flaws, is the only work that truly belongs to you."
+  ],
+  [
+   "for_you",
+   "Your parents want a version of you that fits their picture. But that picture is not your size. Your anger is the right response. Stay with the work that is already in your hands. The studying, the living, the relationship. That is your own path."
+  ],
+  [
+   "close",
+   "What is the work that is already in your hands?"
+  ]
+ ],
+ "depth": {
+  "life": "You are studying, your phone is in your hand, and your parents want you to marry someone else. You feel caught between their picture of you and the life you are actually living. You are fighting with them, and you feel you will lose yourself no matter what you choose.",
+  "points": "The part you feel you will lose is not you. It is the version of you they approve of, and that is their picture, not your size. Your own work, even if it feels imperfect, is where your truth lives.",
+  "practice": "Put the phone down for five minutes. Look at one page of your notes. Read only that page, nothing else.",
+  "question": "What is the work that is actually yours to do right now?"
+ }
+}

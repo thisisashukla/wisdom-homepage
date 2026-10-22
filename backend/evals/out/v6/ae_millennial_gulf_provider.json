@@ -1,0 +1,523 @@
+{
+ "persona": {
+  "id": "ae_millennial_gulf_provider",
+  "market": "UAE (Dubai)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "35, works in logistics in Dubai for 11 years, sends money to parents and brother in Kerala, brother's wedding and father's surgery this year. Wife wants to move back.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "11 years in dubai sending money home. brothers wedding, fathers heart surgery, both this year. my wife wants to go back to india. everyone needs something from me and I don't know what I need",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "torn and empty",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "By the end of the week the mind that will not settle has a name, and the man who is not the load has the floor.",
+   "week_beats": {
+    "hook": "You recognise the restlessness and the exhaustion of being the steady hand, named without judgement.",
+    "diagnose": "You see that the mind is running after duties it cannot all be, and that is why it will not settle.",
+    "steady": "You hold that the duty is real, but so is the self that must not be lost to it.",
+    "act": "You try giving yourself one hour that is not for anyone else, and letting the mind rest there.",
+    "story": "A man who carried his family on his back shows you what setting the load down looks like from the inside."
+   },
+   "undisclosed": true,
+   "texts": [],
+   "confidence": 0.75,
+   "core_struggle": "He is the steady hand for everyone after eleven years abroad, but his wife wants to return to India and his mind will not settle.",
+   "mirror": "You lie awake after the last call, and the next one is already waiting.",
+   "insight": "It isn't the calls that keep you up. It's the feeling that if you stop moving, everything you hold will fall.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.875,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.41,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.05,
+     "source": "chip"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.517,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "The mind that will not settle after years of being the steady hand, and the exhaustion of not knowing what you yourself need. My parents are getting older far away.",
+    "diagnose": "When the mind runs after every call and every need, it becomes its own enemy; a mind pulled in every direction finds no single place to rest.",
+    "steady": "The duty is real, but so is the self that must not be lost to it; a mind that serves everyone must still have one hour that is its own.",
+    "act": "Practise giving yourself one hour each day that is not for anyone else; let the mind rest in that hour and return to the duties with steadier hands.",
+    "story": "A man who spent his life carrying his family on his back, and one day had to set the load down to find himself again."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The load",
+    "The self the load hides",
+    "The hour that is yours"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "years in Dubai sending money home",
+    "father's heart surgery this year",
+    "brother's wedding this year",
+    "wife wants to return to India"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "day1_other_text:yv",
+    "retried:1",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:copied=1,fallback_line=1,gendered=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 3.6649,
+     "beat": "hook",
+     "role_fit": 0.69,
+     "meaning": "Years later, two old friends, Bhasa and Vilasa, meet again in a forest hermitage. Bhasa admits he has never known peace. He tells Vilasa that the mind is carried along on endless waves of tasks. It is always caught in the net of reckonings. It faints under the weight of thinking, 'This I have done, this I am doing, this I must do.' verse proposes that years of hard effort without inner understanding can leave you exactly where you started.",
+     "for_you": "You are the steady hand after eleven years abroad. But your mind is caught in its own net. It faints under the endless lists. Let the truth be seen. The effort itself has not brought rest."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_maha.109",
+     "ref": "Maha Upanishad 3.18",
+     "ref_iast": "Mahā Upaniṣad 3.18",
+     "family": "up",
+     "speaker": "Nidagha",
+     "listener": "Ribhu",
+     "setting": "Nidagha on his wandering mind.",
+     "sanskrit": "इतश्चेतश्च सुव्यग्रं व्यर्थमेवाभिधावति । मनो दूरतरं याति ग्रामे कौलेयको यथा ॥",
+     "line": "The mind runs here and there for nothing, wandering far like a stray village dog.",
+     "translation": "The mind runs here and there, restless and pointless; it wanders far away, like a dog in a village.",
+     "why": "Naming how restless your mind is, is where peace begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.nidagha",
+      "title": "Nidagha's lament",
+      "summary": "Young Nidagha returns from pilgrimage disillusioned and pours out his heart to his teacher Ribhu: life is fleeting, the mind runs like a stray dog, craving gnaws every good quality, and mastering the mind is harder than drinking the ocean.",
+      "story_hook": "",
+      "lesson": "Naming how restless your mind is, is where peace begins."
+     },
+     "score": 3.5836,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "Nidagha comes back from a pilgrimage feeling empty. He sits with his teacher Ribhu and says his mind is running after things it cannot have. It chases shadows and wastes its breath. Ribhu tells him that naming this restlessness is the first step toward quiet. The mind runs here and there, restless and pointless. It wanders far away, like a dog in a village.",
+     "for_you": "You are not the mind; thoughts come and go before the silent witness that watches them and is never disturbed."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.3703,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Ribhu tells Nidagha that a person who is truly free moves through the world with a clear mind. They let go of what is lost and take up what comes, doing the work at hand and speaking gently. They treat the whole world as family, busy on the outside and unhurried inside, a doer on the outside and a non-doer within.",
+     "for_you": "You are busy on the outside, sending money and caring for your parents, but you can be unhurried inside. Let the work at hand be enough. Do not let the calls and the money agitate your mind."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.18.61",
+     "ref": "Ashtavakra Gita 18.61",
+     "ref_iast": "Aṣṭāvakra Gītā 18.61",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "निवृत्तिरपि मूढस्य प्रवृत्ति रुपजायते । प्रवृत्तिरपि धीरस्य निवृत्तिफलभागिनी ॥",
+     "line": "A restless mind turns even rest into busyness. A still mind finds rest even in work.",
+     "translation": "Even a fool's retreat from action turns into activity; even a wise person's activity bears the fruit of stillness.",
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 3.2977,
+     "beat": "steady",
+     "role_fit": 0.615,
+     "meaning": "Ashtavakra tells Janaka that a restless mind turns even rest into busyness, while a still mind finds rest even in work. A fool's retreat from action turns into activity, but a wise person's activity bears the fruit of stillness.",
+     "for_you": "You can hold the duty of being the steady hand for everyone, but that duty does not have to become the whole of you. Find the part of you that is not the load, and let that part rest even while the work goes on."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.25",
+     "ref": "Bhagavad Gita 6.25",
+     "ref_iast": "Bhagavad Gītā 6.25",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया । आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत् ॥",
+     "line": "Little by little, with patience and steady resolve, settle the mind and let other thoughts go.",
+     "translation": "Little by little one should come to rest, with understanding held steady; fixing the mind on the self, one should think of nothing else.",
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 3.5353,
+     "beat": "act",
+     "role_fit": 0.704,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, where Arjuna is paralyzed by grief and confusion. Krishna tells him that one should come to rest little by little, with steady understanding, fixing the mind on the self and thinking of nothing else. This is the path out of the restless storm.",
+     "for_you": "After eleven years sending money from Dubai, your mind is still on the next call, the next surgery, the next wedding. The verse says to come to rest little by little. Today, you do not fix everything. You sit in one chair for ten minutes and let the phone stay out of reach."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.9.33",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 9.33",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha tells Rama how to steer his own habits.",
+     "sanskrit": "समता सांत्वनेनाशु न द्रागिति शनेशनेः । पौरुषेणैव यत्नेन पालयेच्चित्तबालकम् ॥",
+     "line": "Raise your mind like a child: gently, patiently, little by little, never by force.",
+     "translation": "With evenness and gentle coaxing, not in a rush but little by little, by steady effort, look after the child that is your mind.",
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 3.2718,
+     "beat": "act",
+     "role_fit": 0.494,
+     "meaning": "In the forest, the sage Vasishtha speaks to the young Rama, who is overwhelmed by sorrow and the weight of the world. Vasishtha tells him to look after the child that is his mind with gentle coaxing, not in a rush but little by little. He is teaching that the past shaped today, but today's effort shapes tomorrow. You do not beat a child into good behavior, and you do not beat your mind into stillness.",
+     "for_you": "You have spent years building the life that holds everyone together. That effort is real, and it shaped what is here now. But the mind you have carried for so long is not the load itself."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.kausalya_consents",
+     "title": "Kausalya lets Ram go",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Kausalya",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+     "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+     "lesson": "Love sometimes means staying behind to care for someone else.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.24.20",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 24.20",
+      "family": "vr",
+      "speaker": "Ram",
+      "listener": "Kausalya",
+      "setting": "Ram's mother wants to follow him into exile; he asks her instead to stay and look after his grieving father.",
+      "sanskrit": "यथा मयि तु निष्क्रान्ते पुत्रशोकेन पार्थिवः॥ श्रमं नावाप्नुयात् किंचिदप्रमत्ता तथा कुरु। दारुणश्चाप्ययं शोको यथैनं न विनाशयेत्॥ राज्ञो वृद्धस्य सततं हितं चर समाहिता।",
+      "line": "When I'm gone, look after him. Don't let his grief wear him down.",
+      "translation": "Take care that when I am gone the king does not wear himself out with grief for his son, that this terrible sorrow does not destroy him. Look after the old king's welfare always.",
+      "why": "Love sometimes means staying behind to care for someone else.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.kausalya_consents",
+       "title": "Kausalya lets Ram go",
+       "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+       "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+       "lesson": "Love sometimes means staying behind to care for someone else."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "teaser": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "for_you": "You are carrying the weight of your family's future on a phone call from another continent. You are not the load itself. Setting the load down is not leaving your post. It is finding the steadiness to choose what you hold, and what you release."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The load",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 161,
+   "llm": 5283,
+   "total": 12658,
+   "select": 7207
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are holding everything together. You have been sending money home to your parents for eleven years. Your father had his heart surgery this year, and your brother got married this year. But you are feeling torn and empty inside."
+  ],
+  [
+   "scene",
+   "Two old friends, Bhasa and Vilasa, meet again in a forest hermitage after many years apart. Bhasa admits he has never known peace. He tells Vilasa that the mind is carried along on endless waves of tasks. It is always caught in the net of reckonings. It faints under the weight of thinking, 'This I have done, this I am doing, this I must do.' Bhasa says:"
+  ],
+  [
+   "sanskrit",
+   "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु, क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम्. इदं कृतं करोमीदं करिष्यामीदमित्यलम्, कलनाजालवलिता मूर्च्छिता मतिपक्षिणी."
+  ],
+  [
+   "line",
+   "In plain words: 'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest."
+  ],
+  [
+   "unpack",
+   "This is what happens when years of hard effort happen without inner understanding. You are working, caring, and sending, but the mind is not resting. It is caught in a net of its own making. It is always checking the list, and the checking itself is exhausting. The mind never gets a moment's rest because it is trying to control everything at once."
+  ],
+  [
+   "for_you",
+   "Tonight, when the calls are done, do not try to solve the future. Just let your mind stop making lists for one hour. Notice that the effort itself has not brought rest."
+  ],
+  [
+   "close",
+   "What if you let the net go for a moment?"
+  ]
+ ],
+ "depth": {
+  "life": "You are holding your family together from Dubai, sending money home, watching your father recover from surgery, and planning your brother's wedding. Your wife wants to return to India, and your mind will not settle. You are burned out, running on empty, and the calls do not bring peace.",
+  "points": "Your mind is caught in a net of reckonings. You are carried along by waves of tasks, always thinking of what you have done, what you are doing, and what you must do. The effort itself has not brought rest, because you are still caught in the endless list.",
+  "practice": "When the phone rings next, take one full breath before you answer. Let the list of tasks wait for a moment. Feel the weight of your hand on the table.",
+  "question": "What would happen if you let the list wait for one breath?"
+ }
+}

@@ -1,0 +1,513 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "torn and quietly grieving",
+   "bridge": "What you are living with is what the texts call not feeling good enough, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise the pull and the grief, named without judgement.",
+    "diagnose": "You see that the guilt is not the truth of your motherhood, but a verdict the mind has passed on itself.",
+    "steady": "You hold that what you give is real, even when it is not enough."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "child",
+    "family",
+    "parent"
+   ],
+   "confidence": 0.65,
+   "core_struggle": "A mother of two who is back at work and feels she is half a mother and half a PM, grieving the school things she misses.",
+   "mirror": "You give the day to work, and the evening to the children, and the night to the guilt.",
+   "insight": "You hold yourself to a standard you'd never put on someone you love, and you pay for it every day.",
+   "mechanism": "self_blame",
+   "mechanism_label": "Not feeling good enough",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.76,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.17,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.575,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.363,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The feeling of being pulled in two directions with no hour of your own, and the grief of a daughter's question you cannot answer without crying.",
+    "diagnose": "When a mother is pulled between duty and presence, the mind turns against itself; self-blame grows from believing you must be whole in both places at once.",
+    "steady": "A mother's love is not measured by the hours she keeps; what you are giving is real, even when it is not enough.",
+    "act": "Lift yourself up instead of pushing yourself down; speak the true thing to your daughter, and let the guilt be what it is without letting it become who you are.",
+    "story": "A mother who was torn between her children and her duty, who questioned whether she was enough, and who found that love is not measured by the hours she keeps."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Half a mother and half a PM",
+    "The verdict you keep passing",
+    "More than the hours you keep"
+   ],
+   "seat": "",
+   "life_context": "In her mid-thirties and raising two children; back at work after her second baby, she feels she is failing both her children and her job, and she cries in the car after her daughter asks why she cannot come to school things like other moms.",
+   "details": [
+    "back at work after second baby",
+    "feels half a mother and half a PM",
+    "daughter asked why she does not come to school things like other moms",
+    "cried in the car"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "week_thesis:missing",
+    "insight:template",
+    "seat:missing",
+    "week_fit:8=0.0,11=0.0,47=0.0,4=0.0,7=0.0,5=0.0",
+    "week_fit:swapped=6",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:fallback_line=1,verdict=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.577,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is restless and stormy, as hard to hold as the wind. Krishna agrees that this is the nature of the mind, but he does not leave it there. He says that practice and letting go can train it. The idea is that the mind will not sit still on its own, but it can be shaped by what you do with it, not by what you demand of it.",
+     "for_you": "You are in the car, the engine off, and your mind is running through everything you did not do. You are trying to hold it still, to force it into the shape of a perfect mother and a perfect worker, and it is only making the storm worse."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.6259,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Krishna is describing the mind of a steady person to Arjuna. He says that when a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger. A person who is steady does not dwell on things in that way. They guard their attention. The mind stays calm because it is not caught in a loop of wanting and then wanting what it cannot have.",
+     "for_you": "A mistake is something you did, not who you are; no one who tries to do good is ever lost."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "diaspora_identity",
+       "label": "I don't feel fully at home anywhere"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.6548,
+     "beat": "steady",
+     "role_fit": 0.245,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He has been explaining that every action carries risk, and that no one is free from fault. In this moment, he tells Arjuna to stop measuring himself against the perfect performance of others. He says it is better to walk your own path, even if you stumble, than to walk someone else's path with perfect steps. The work that comes from your own nature is your offering, and doing it, even with its flaws, brings no real wrong.",
+     "for_you": "The car ride after school is where you feel the weight of a standard you have set for yourself that you would never place on your children. Your work is your own path, and your presence with your kids is your own path."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.197.chaupai.4",
+     "ref": "Ramcharitmanas, Ayodhya Kand 2.197 (chaupai 4)",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.197",
+     "family": "rcm",
+     "speaker": "Triveni (a voice from the rivers)",
+     "listener": "Bharat",
+     "setting": "Bharat is consumed by shame over the exile; the holy rivers answer him.",
+     "sanskrit": "तात भरत तुम्ह सब बिधि साधू। राम चरन अनुराग अगाधू॥ बादि गलानि करहु मन माहीं। तुम्ह सम रामहि कोउ प्रिय नाहीं ॥",
+     "line": "You torment yourself with guilt for nothing. No one is dearer to Ram than you.",
+     "translation": "Child Bharat, you are good in every way; your love for Ram's feet is boundless. You torment yourself with guilt for nothing; no one is dearer to Ram than you.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": null,
+     "score": 2.6781,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": "Triveni speaks to Bharat, who is drowning in shame for what he believes he has caused. She tells him his love for Ram is boundless and his goodness is complete. She asks him to stop the self-torment, because no one is dearer to Ram than he is. The truth she offers is that his guilt is empty. It does not change the exile, and it does not make him less loved. He is being asked to set down the weight of a guilt that has no basis.",
+     "for_you": "You are not a bad mother. You are a good one who is hurting because the day is too short. The guilt you carry in the car is empty. It does not make you half a mother. It only makes the hours heavier."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.210.59",
+     "ref": "Mahabharata · Vana Parva · Vyadha Gita",
+     "ref_iast": "Mahābhārata, Vana Parva 210.59",
+     "family": "mbh",
+     "speaker": "Dharmavyadha (the righteous meat-seller)",
+     "listener": "Kaushika, a Brahmin ascetic",
+     "setting": "In Mithila, a meat-seller famed for wisdom teaches a proud ascetic what goodness really is.",
+     "sanskrit": "पापं चेत्पुरुषः कृत्वा कल्याणमभिपद्यते / मुच्यते सर्वपापेभ्यो महाभ्रेणेव चन्द्रमाः",
+     "line": "Turn to doing good after a wrong, and you come out like the moon from behind a cloud.",
+     "translation": "If a person who has done wrong turns to doing good, he is freed from all his wrongs, like the moon coming out from behind a great cloud.",
+     "why": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vyadha_gita",
+      "title": "Vyadha Gita: the butcher who taught a sage",
+      "summary": "A proud ascetic, Kaushika, is sent to learn from a meat-seller in Mithila. The butcher teaches him plain goodness: don't return evil, repent and resolve, keep envy away, care for your parents, and don't spend your one life making enemies.",
+      "story_hook": "",
+      "lesson": "Wisdom lives in ordinary people doing ordinary work honestly. Care for your parents."
+     },
+     "score": 3.1597,
+     "beat": "act",
+     "role_fit": 0.64,
+     "meaning": "In Mithila, a meat-seller named Dharmavyadha speaks to a proud ascetic named Kaushika, who has come to judge him. The butcher tells him that a person who has done wrong can free themselves from it simply by turning to good deeds, like the moon emerging from behind a heavy cloud. The point is that wisdom is found in ordinary work done with honesty, and the first step is to care for your parents.",
+     "for_you": "You carry a guilt that feels like a cloud over your own moon. The butcher shows that the remedy is not to dwell in the shadow but to turn toward what is good. Today, set aside the feeling that you are half a mother and half a manager."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 3.1013,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari is speaking to you about how the good behave. He says cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering. He is saying real success is not a crown you wear. It is the quiet work of listening, giving and helping. It is the choice to be kind to those who are in pain, even when you are tired. He is telling you what is at stake: the good name you guard, and the respect you earn by how you treat people who are suffering.",
+     "for_you": "You are back at work and at home, and your mind is pulled in two directions. You are feeling torn and quietly grieving. The verse asks you to cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.lakshman_sumitra",
+     "title": "Sumitra sends Lakshman with Ram",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Lakshman",
+      "Ram",
+      "Sumitra"
+     ],
+     "story_hook": "Lakshman went to his mother expecting to be told to stay.",
+     "summary": "Ram asks Lakshman to stay and care for their old father and grieving mothers; Lakshman cannot imagine life apart from him. He goes to his mother Sumitra, afraid she will stop him. Instead she tells him that home is wherever Ram is, as day is wherever the sun shines, and gives him one piece of advice for the road.",
+     "lesson": "Home is where your people are; a good send-off gives values, not just tears.",
+     "matched": [
+      {
+       "id": "diaspora_identity",
+       "label": "I don't feel fully at home anywhere"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.2.73.chaupai.2",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 73",
+      "family": "rcm",
+      "speaker": "Sumitra",
+      "listener": "Lakshman",
+      "setting": "Sumitra tells her son Lakshman to follow Ram into exile.",
+      "sanskrit": "अवध तहाँ जहँ राम निवासू। तहँइँ दिवसु जहँ भानु प्रकासू॥ जौं पै सीय रामु बन जाहीं। अवध तुम्हार काजु कछु नाहीं ॥",
+      "line": "Home is wherever your people are, as day is wherever the sun shines.",
+      "translation": "Ayodhya is wherever Ram lives; day is wherever the sun shines. If Sita and Ram really go to the forest, you have nothing to do in Ayodhya.",
+      "why": "Home is where your people are; a good send-off gives values, not just tears.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "diaspora_identity",
+        "label": "I don't feel fully at home anywhere"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.lakshman_sumitra",
+       "title": "Sumitra sends Lakshman with Ram",
+       "summary": "Ram asks Lakshman to stay and care for their old father and grieving mothers; Lakshman cannot imagine life apart from him. He goes to his mother Sumitra, afraid she will stop him. Instead she tells him that home is wherever Ram is, as day is wherever the sun shines, and gives him one piece of advice for the road.",
+       "story_hook": "Lakshman went to his mother expecting to be told to stay.",
+       "lesson": "Home is where your people are; a good send-off gives values, not just tears."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Lakshman went to his mother Sumitra expecting to be told to stay",
+     "teaser": "Lakshman went to his mother Sumitra expecting to be told to stay",
+     "for_you": "You think you could be in the same room to be a mother. But your daughter sees you in the way you show up, not the hours you keep. Let her see the love you carry, even when you are away."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Half a mother and half a PM",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 185,
+   "llm": 4381,
+   "total": 12963,
+   "select": 8389
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are back at work after your second baby and you feel like half a mother and half a PM. Your daughter asked why you cannot come to school things like other moms. You cried in the car."
+  ],
+  [
+   "scene",
+   "Arjuna is standing on the battlefield, looking at the two armies. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Krishna agrees with Arjuna that the mind is restless and stubborn. It will not sit still just because you want it to. This is easier said than done because you are trying to force your mind into the shape of a perfect mother and a perfect worker, and it is only making the storm worse."
+  ],
+  [
+   "for_you",
+   "You are in the car, the engine off, and your mind is running through everything you did not do. You are trying to hold it still. Let it be restless for a moment. You do not need to train it right now."
+  ],
+  [
+   "close",
+   "What if you let the wind move through you?"
+  ]
+ ],
+ "depth": {
+  "life": "You are back at work and holding a phone to your ear, but your mind is still in the car, replaying your daughter's question about school events. You are trying to be a perfect mother and a perfect project manager, and the two halves are pulling you apart.",
+  "points": "The mind is not a machine to be fixed. It is a force that needs to be guided, not controlled. Your restlessness comes from trying to force a single mind to do two impossible jobs at once.",
+  "practice": "When you feel the guilt rising, name it once and then shift your attention to one small physical task, like feeling the steering wheel or the phone in your hand.",
+  "question": "What would happen if you let the two halves of your day rest against each other instead of fighting?"
+ }
+}

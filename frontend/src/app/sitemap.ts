@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import fs from 'node:fs'
 import path from 'node:path'
 import { getAllChapters, getAllTopics, getAllVerseRefs, chapterUrl, verseUrl, topicUrl } from '@/lib/gita'
+import { GITA_FOR } from '@/lib/gitaFor'
 
 const BASE = 'https://wisdomquotes.in'
 
@@ -86,7 +87,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
       alternates: langAlts('/', '/hi/gita'),
     },
-    { url: `${BASE}/app`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/app`, lastModified: new Date('2026-10-19'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/gita-for`, lastModified: new Date('2026-10-19'), changeFrequency: 'monthly', priority: 0.85 },
+    ...GITA_FOR.map((p) => ({ url: `${BASE}/gita-for/${p.slug}`, lastModified: new Date('2026-10-19'), changeFrequency: 'monthly' as const, priority: 0.8 })),
     { url: `${BASE}/blogs`, lastModified: CORPUS_UPDATED, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${BASE}/about`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/methodology`, lastModified: CORPUS_UPDATED, changeFrequency: 'monthly', priority: 0.5 },

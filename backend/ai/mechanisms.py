@@ -176,6 +176,28 @@ MECHANISMS: Dict[str, dict] = {
         "self_act": "Turn inward, come to know the self, and let your work become service and offering; a life lived from there is full.",
         "themes": ["wisdom", "impermanence", "duty", "gratitude"],
     },
+    # ── Not a struggle: an aspiration. The "diagnose" line is what tests a resolve, not a cause of pain. ──
+    "resolve_begin": {
+        "label": "Starting what is yours to build",
+        "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+        "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+        "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+        "pattern": "Every time I begin something that is mine, the first weeks are fire, and then the mind starts counting results and watching others.",
+        "self": "The one who acts is not the result of the work; success and failure pass through, and the self that chose to begin stays whole.",
+        "self_act": "Act as an offering, with full effort and no claim on the fruit, and stay the same whether the work is praised or ignored.",
+        "themes": ["effort", "courage", "duty", "decision"],
+    },
+    # ── Not a struggle: being wronged. The cause is in the other person; the texts give footing and courage. ──
+    "dignity_denied": {
+        "label": "Being seen as less than you are",
+        "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+        "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+        "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+        "pattern": "In more than one room of my life, people have handed me a smaller role than the one I live, and expected me to fit it.",
+        "self": "The self cannot be cut, burned or made less; what they see is a role, and you were never only a role.",
+        "self_act": "Stand in your own truth and do your own duty from it; let their picture stay theirs, and let your conduct speak.",
+        "themes": ["courage", "truth", "self_worth", "duty", "speech"],
+    },
 }
 
 # Every library situation → its mechanisms (first = primary).
@@ -255,7 +277,7 @@ FEELING_STATE = {
     "quiet": "my mind won't settle",
     "nerve": "I keep going over it again and again",
     "replay": "something doesn't sit right and I can't name it",
-    "stick": "I want to stick with it this time",
+    "stick": "I have decided, and I am ready to begin",
     "faith": "I'm looking for something deeper to lean on",
     "gita": "I want to understand what the Gita teaches",
 }
@@ -280,6 +302,8 @@ INSIGHTS = {
     "disconnection": "Even among people, you've felt unseen. The distance is real, and so is the way back.",
     "duty_conflict": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
     "no_meaning": "Nothing is exactly wrong, and that's the hard part. You've outgrown the reasons that used to carry you.",
+    "resolve_begin": "Nothing is wrong with you, and nothing needs fixing. The resolve is real and it is your own now. What will test it is the morning the work stops being exciting.",
+    "dignity_denied": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
 }
 
 # The three levels a plan goes through, one per week (see ai/planner.py).
@@ -322,4 +346,6 @@ WEEK_TITLES = {
     "disconnection": ["Feeling alone", "Why you feel apart", "Never truly separate"],
     "duty_conflict": ["Torn both ways", "Which duty is yours", "Acting as yourself"],
     "no_meaning": ["What's it all for", "What does not pass", "The meaning within"],
+    "resolve_begin": ["Your turn to begin", "What tests a resolve", "The one who acts"],
+    "dignity_denied": ["Seen as less", "Whose picture it is", "No smaller than you are"],
 }

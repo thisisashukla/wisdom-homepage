@@ -106,8 +106,39 @@ GITA_ANCHORS = {"bg.2.47", "bg.2.48", "bg.2.14", "bg.2.20", "bg.2.62", "bg.2.63"
 NEVER_ALONE = {"rcm.2.165.doha.1", "yv.1.12.15", "yv.5.22.34", "yv.1.10.19", "yv.1.12.22", "yv.2.6.1", "yv.2.4.17"}
 # Families whose text still needs a rights check against a public-domain print edition.
 HELD_FAMILIES = {"kabir", "meera"}
-# Bhartrihari's Sanskrit needs re-keying from Telang (1874); show the English only.
-HIDE_SANSKRIT_FAMILIES = {"bh"}
+# Families whose Sanskrit is kept off the cards. Empty: every verse is shown with its original
+# (Bhartrihari's text is checked against GRETIL and Kosambi 1948 in the library).
+HIDE_SANSKRIT_FAMILIES: set = set()
+# Any Indic script: Devanagari through Sinhala (Sanskrit, Awadhi, Braj, Hindi, and room for others).
+INDIC_RE = re.compile(r"[\u0900-\u0DFF]")
+VISARGA_RE = re.compile(r"(?<=[\u0900-\u097F]):")
+
+
+def display_sanskrit(v: dict) -> Optional[str]:
+    """The verse in its own language, as the cards show it, or None if we have no clean copy."""
+    t = (v.get("sanskrit_display") or "").strip()
+    if not t or not INDIC_RE.search(t) or v.get("sanskrit_display_ok") is False or v.get("family") in HIDE_SANSKRIT_FAMILIES:
+        return None
+    t = VISARGA_RE.sub("ः", t)              # some sources key the visarga as an ASCII colon
+    if v.get("family") == "mbh":
+        t = re.sub(r"[`']", "", t)          # the data's interpolation marks
+    return " ".join(t.split())
+
+
+def apply_sanskrit_fixes(verses: List[dict], fixes_path: Path) -> int:
+    """Corrected display Sanskrit (taxonomy/sanskrit_fixes.json), laid over the library after it is
+    hashed, so a text fix never changes the library version or invalidates the embedding caches."""
+    if not fixes_path.exists():
+        return 0
+    fixes = (json.loads(fixes_path.read_text(encoding="utf-8")) or {}).get("fixes") or {}
+    n = 0
+    for v in verses:
+        t = fixes.get(v["id"])
+        if t:
+            v["sanskrit_display"] = t
+            v["sanskrit_display_ok"] = True
+            n += 1
+    return n
 DEVOTIONAL_FAMILIES = {"tulsi", "sur", "rcm", "vr"}
 
 # ── Safety ────────────────────────────────────────────────────────────────────
@@ -153,6 +184,7 @@ class Recommender:
         raw = library_path.read_bytes()
         self.version = hashlib.sha1(raw).hexdigest()[:12]
         lib = json.loads(raw)
+        fixed = apply_sanskrit_fixes(lib["verses"], library_path.with_name("sanskrit_fixes.json"))
         self.situations = {s["id"]: s for s in lib["situations"]}
         self.pairs = lib.get("pairs") or []
         self._embed_lock = threading.Lock()
@@ -164,6 +196,9 @@ class Recommender:
             "texts": len({v.get("family") for v in lib["verses"]}),
         }
         self.ids = [v["id"] for v in self.verses]
+        # Only verses we can show in their own language are ever picked (cards, plans, stories).
+        # They stay in self.verses so the ids, and the embedding caches keyed on them, don't move.
+        self.has_original = np.array([display_sanskrit(v) is not None for v in self.verses], dtype=bool)
         self.cache_dir = cache_dir
         self.embed = embed
         self.sit_ids: List[str] = list(self.situations)
@@ -174,8 +209,8 @@ class Recommender:
         n = len(self._sit_tokens)
         self._idf = {t: math.log(1 + n / c) for t, c in df.items()}   # rare words say more about a situation
         self._verse_sit = [set(v.get("situations") or []) for v in self.verses]
-        logger.info("Recommender: %d servable verses of %d, %d prasangs, %d situations (library %s)",
-                    len(self.verses), len(lib["verses"]), len(self.prasangs), len(self.situations), self.version)
+        logger.info("Recommender: %d servable verses of %d (%d with their original, %d Sanskrit fixes), %d prasangs, %d situations (library %s)",
+                    len(self.verses), len(lib["verses"]), int(self.has_original.sum()), fixed, len(self.prasangs), len(self.situations), self.version)
 
     # Which verses may be shown at all.
     @staticmethod
@@ -323,7 +358,7 @@ class Recommender:
         seen = set(exclude)
         scored = []
         for i, v in enumerate(self.verses):
-            if v["id"] in seen:
+            if v["id"] in seen or not self.has_original[i]:
                 continue
             fam = v.get("family", "")
             if feeling == "gita" and fam != "bg":
@@ -402,7 +437,6 @@ class Recommender:
         jev = v.get("jev") or {}
         matched = sorted((s for s in v.get("situations") or [] if weights.get(s)), key=lambda s: -weights[s])
         p = self.prasangs.get(v.get("prasang_id") or "")
-        show_sanskrit = v.get("sanskrit_display_ok") is not False and v.get("family") not in HIDE_SANSKRIT_FAMILIES
         why = v.get("reflection") or (p or {}).get("lesson")
         return {
             "id": v["id"],
@@ -412,7 +446,7 @@ class Recommender:
             "speaker": v.get("speaker"),
             "listener": v.get("listener"),
             "setting": v.get("setting"),
-            "sanskrit": v.get("sanskrit_display") if show_sanskrit else None,
+            "sanskrit": display_sanskrit(v),
             "line": v.get("line"),
             "translation": v.get("translation"),
             "why": why,

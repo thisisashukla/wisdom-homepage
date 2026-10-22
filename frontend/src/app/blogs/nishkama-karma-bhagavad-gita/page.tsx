@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Nishkama Karma Meaning — Krishna's Definition of Selfless Action in the Bhagavad Gita | Wisdom",
+  title: "Nishkama Karma Meaning — Krishna's Definition of Selfless Action in the Bhagavad Gita",
   description: "Nishkama karma (निष्काम कर्म) means action without attachment to results — Krishna's central teaching in Chapters 2 and 3 of the Bhagavad Gita. What it is, why it's not passivity, and 7 verses that show how to actually do it.",
   keywords: "nishkama karma meaning, nishkama karma bhagavad gita, nishkama karma in daily life, nishkama karma yoga, action without attachment gita, detached action bhagavad gita, karma yoga without desire, nishkama karma explained, yajna karma gita",
   openGraph: {
@@ -783,12 +784,12 @@ export default function NishkamaKarmaPage() {
       </div>
 
       <div className="content" style={{ paddingTop: 0 }}>
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Nishkama Karma Guide"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Nishkama Karma Guide"} />
       </div>
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Nishkama Karma Guide" />

@@ -1,0 +1,493 @@
+{
+ "persona": {
+  "id": "au_genx_divorce",
+  "market": "Australia (Melbourne)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "44, dentist in Melbourne, from Chandigarh originally, separated 6 months ago, kids with ex 4 days a week. Parents in India don't know yet.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "confidence": 0.6,
+   "core_struggle": "Six months after separating, she sees her children on three nights a week and carries the quiet house alone, unable to tell her parents.",
+   "mirror": "You give the children three nights a week, and the rest of the house is so quiet you leave the television on.",
+   "insight": "It isn't the separation that keeps the house loud. It's the silence that follows, and the fear that if your parents knew, they would see the ending before they saw the mother.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.275,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "breakup",
+     "label": "I'm heartbroken after a breakup",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet house after the children have gone, and the loneliness that comes with not being able to share the truth of it.",
+    "diagnose": "Grief is love with nowhere to go; the mind replays the ending and the quiet grows until the silence itself becomes the ache.",
+    "steady": "What is real in you cannot be lost; the love you feel for your children and for the life that was is still yours, and it does not make you less.",
+    "act": "Let the silence sit with you for a few minutes; light a lamp or sit by a window and let the feeling come, then let it go.",
+    "story": "A woman separated from her husband, carrying the grief alone in a quiet house, who found the courage to speak her truth to the one person who could still hold it with her."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet house",
+    "The truth you carry",
+    "The love that does not leave"
+   ],
+   "seat": "a separated parent of young children who carries the separation alone",
+   "life_context": "In her mid-thirties, working and raising children; the separation is six months old, the house is quiet without the children, and she has not told her parents, leaving the television on to fill the silence.",
+   "details": [
+    "separated six months ago",
+    "sees children three nights a week",
+    "has not told parents",
+    "house is quiet on nights without children"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:cliche=1,preachy=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.5912,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands on the battlefield, his body trembling, his bow slipping from his hand. He tells Krishna that even a kingdom of gold, even rule over the gods, could not wash away this grief that is drying him up from the inside. He admits he sees no way to lift this sorrow. He is asking for help, and that is where clarity begins.",
+     "for_you": "The quiet house is not the only thing that empties you. You are grieving a love that ended and a future that changed. You do not need to fix the silence tonight. You only need to let yourself see that the grief is real and that you do not have to carry it alone."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.2348,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma speaks to King Janaka, who is drowning in the loss of family and wealth. He tells him to ask where he came from and where he is going, who he really is and why he is here. He asks why he should grieve, and for what. These questions are not to dismiss the pain but to steady the mind once the tears have passed.",
+     "for_you": "You are not the same person who walked into this marriage. You are not the same person who will walk out of it. The days with your children are short, and they will not come back. Ask yourself who you are now, and let that question hold you steady through the evening."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.26",
+     "ref": "Bhagavad Gita 2.26",
+     "ref_iast": "Bhagavad Gītā 2.26",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम् । तथापि त्वं महाबाहो नैवं शोचितुमर्हसि ॥",
+     "line": "Even if you believe life simply begins and ends, there's still no need to be crushed by grief.",
+     "translation": "And even if you think of it as constantly being born and constantly dying, still, mighty-armed one, you should not grieve like this.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Grief is human; this asks you not to be destroyed by it, not to stop feeling it.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.5267,
+     "beat": "steady",
+     "role_fit": 0.755,
+     "meaning": null,
+     "for_you": "The quiet house is heavy, and the grief is real. But the love you carry for your children and for the person you lost does not end with the separation. Let the silence remind you that your care for them still exists, unchanged by the walls between you."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0063,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": "Rahim speaks to the one who has made a home inside your chest. He asks what joy or sorrow could possibly remain that needs to be explained. The one who lives in your heart already knows your every feeling. Nothing needs explaining.",
+     "for_you": "When the house is quiet and the television fills the silence, remember the one who is truly in your heart already knows. You do not need to explain the ache of the empty rooms to anyone, least of all yourself."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "avadhuta.8.7",
+     "ref": "Avadhuta Gita 8.7",
+     "ref_iast": "Avadhūta Gītā 8.7",
+     "family": "gitas",
+     "speaker": "Dattatreya",
+     "listener": "his own mind / the seeker",
+     "setting": "Dattatreya explains each syllable of the word 'Avadhuta' as a mark of the free person.",
+     "sanskrit": "वासना वर्जिता येन वक्तव्यं च निरामयम् । वर्तमानेषु वर्तेत वकारं तस्य लक्षणम् ॥",
+     "line": "Let go of old cravings, speak only what heals, and live in the present.",
+     "translation": "One who has given up old cravings, whose speech is wholesome, and who lives in the present: that is the meaning of 'va'.",
+     "why": "A free person seeks no honour, gives it freely, and lives in the present.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "avadhuta.p.marks_of_avadhuta",
+      "title": "The marks of a free person",
+      "summary": "The last chapter portrays the free sage as gentle, moderate, humble yet respectful to others, kind and truthful. Dattatreya then reads each syllable of 'A-va-dhu-ta' as a mark: free of expectation, living in the present, free of ego.",
+      "story_hook": "",
+      "lesson": "A free person seeks no honour, gives it freely, and lives in the present."
+     },
+     "score": 2.9602,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "Dattatreya is teaching what it means to be free. He says a free person has let go of old cravings. Their speech is wholesome, and they live in the present. They seek no honour and give it freely.",
+     "for_you": "Today, let go of the craving to be seen as a perfect mother by your parents. Speak only what heals your own heart. Give yourself the honour of living in this quiet moment."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.25",
+     "ref": "Bhagavad Gita 6.25",
+     "ref_iast": "Bhagavad Gītā 6.25",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया । आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत् ॥",
+     "line": "Little by little, with patience and steady resolve, settle the mind and let other thoughts go.",
+     "translation": "Little by little one should come to rest, with understanding held steady; fixing the mind on the self, one should think of nothing else.",
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 2.892,
+     "beat": "act",
+     "role_fit": 0.704,
+     "meaning": "Krishna tells Arjuna to settle his mind little by little. With patience and steady resolve, he should fix his attention on the self and let other thoughts go. The mind is like a lamp in a windless place.",
+     "for_you": "When the quiet house feels too loud, settle your mind little by little. Bring your attention back to the room around you, and let the thoughts of the past drift away."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.kausalya_dasharatha",
+     "title": "Kausalya's reproach and apology",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Kausalya",
+      "Dasharatha"
+     ],
+     "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+     "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+     "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.62.14",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+      "family": "vr",
+      "speaker": "Kausalya",
+      "listener": "Dasharatha",
+      "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+      "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+      "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+      "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+      "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+      "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "grief_general",
+        "label": "I'm grieving someone I loved"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.kausalya_dasharatha",
+       "title": "Kausalya's reproach and apology",
+       "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+       "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+       "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya lashed out at the king, and then he folded his hands to her",
+     "teaser": "Kausalya lashed out at the king, and then he folded his hands to her",
+     "for_you": "You are carrying the quiet house and the grief alone. Notice when the silence sharpens and you lash out at yourself or the world around you. See that grief is the true cause, not a flaw in you."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet house",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 167,
+   "llm": 4730,
+   "total": 11962,
+   "select": 7060
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is quiet now. You are home, but the silence feels heavy. You are holding the end of something and the beginning of everything else, and that is a lot to carry alone."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield, his body trembling, his bow slipping from his hand. He tells Krishna that even a kingdom of gold, even rule over the gods, could not wash away this grief that is drying him up from the inside. He admits he sees no way to lift this sorrow. He is asking for help, and that is where clarity begins. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "This is not about fighting a war. It is about admitting that you do not know how to move forward. Arjuna is saying that all the success in the world means nothing when the grief is this deep. He is not asking for a solution. He is asking to be seen. That is the hard part. Admitting you are lost is the first step toward finding your way."
+  ],
+  [
+   "for_you",
+   "Tonight, let the silence be there. You do not have to fill it with noise. You do not have to pretend you are fine for your children or your parents. You only have to let yourself feel what you are feeling."
+  ],
+  [
+   "close",
+   "You do not have to carry this alone."
+  ]
+ ],
+ "depth": {
+  "life": "You are sitting in the quiet house after the children leave. You have kept the television on because the silence feels too heavy. You have not told your parents about the separation, and the house feels empty in a way that has nothing to do with the divorce itself.",
+  "points": "Arjuna admits that even a kingdom and the gods cannot dry up his grief. The truth is that some losses are too large to be fixed by any achievement or distraction. The grief is real, and it is not your failure that you cannot outrun it.",
+  "practice": "Turn off the television tonight. Sit with the quiet for five minutes. Let the silence be there without trying to fill it.",
+  "question": "What would it feel like to let the grief be exactly as it is, without trying to fix it?"
+ }
+}

@@ -113,14 +113,14 @@ def strip_verse(scene: str, item: dict) -> str:
     return out if out != scene.strip() else scene     # a cut ending "...and says:" is already a hand-over
 
 
-def check_parts(raw: dict, item: dict, risk: str) -> Tuple[Dict[str, str], Dict[str, str]]:
+def check_parts(raw: dict, item: dict, risk: str, people=None) -> Tuple[Dict[str, str], Dict[str, str]]:
     """→ (parts that pass, {part: reason} for the ones that didn't)."""
     out, why = {}, {}
     if not isinstance(raw, dict):
         return out, {"all": "not_json"}
     limits = STORY_LIMITS if item.get("kind") == "story" else LIMITS
     for k, (lo, hi) in limits.items():
-        s, reason = _why(raw.get(k), lo, hi, risk, item, grounded=k in ("scene", "unpack"))
+        s, reason = _why(raw.get(k), lo, hi, risk, item, grounded=k in ("scene", "unpack"), people=people)
         if not s:
             why[k] = reason
             continue
@@ -257,7 +257,7 @@ async def write_script(llm, ctx: Optional[PersonContext], item: dict, shown: Dic
         logger.info("narration script skipped: %s", type(e).__name__)
         flags.append(f"script:error:{type(e).__name__}")
         return assemble(item, base, sanskrit), flags
-    good, bad = check_parts(raw, item, ctx.risk)
+    good, bad = check_parts(raw, item, ctx.risk, ctx.people)
     if bad:
         flags.append("script:dropped:" + ",".join(f"{k}={v}" for k, v in sorted(bad.items())))
     # the story needs its scene; without the written scene and open, the composed pair keeps it whole

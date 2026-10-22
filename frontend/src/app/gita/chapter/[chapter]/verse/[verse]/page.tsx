@@ -79,9 +79,10 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   //    "bg 18.78" etc.). Devanagari opening still fingerprints the verse. ──
   const devaOpen = firstDevaPada(verse.sanskrit)
   const englishHook = verse.essence || trimToLength(verse.englishTranslation, 60)
-  const title = devaOpen
-    ? `Bhagavad Gita ${c}.${v} (BG ${c}.${v}) — ${devaOpen} | Sanskrit, Meaning & Translation`
-    : `Bhagavad Gita ${c}.${v} (BG ${c}.${v}) Meaning – ${englishHook}${ch ? ` (${ch.enName})` : ''}`
+  // Short enough not to be cut off in results (~55 chars before " | Wisdom");
+  // the Devanagari opening moves to the front of the description instead.
+  const title = `Bhagavad Gita ${c}.${v} Meaning in Hindi & English (BG ${c}.${v})`
+  void englishHook
 
   // ── Description: 150-160 chars; lead with simpleMeaning if we have it,
   //    fall back to englishTranslation. Include chapter for context. ──
@@ -90,7 +91,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     verse.detailedMeaning ||
     verse.englishTranslation
   const description = trimToLength(
-    `BG ${c}.${v} — Bhagavad Gita Chapter ${c}, Verse ${v}${ch ? ` (${ch.enName})` : ''}: ${descLead}`,
+    `${devaOpen ? `${devaOpen} · ` : ''}BG ${c}.${v} (Chapter ${c}, Verse ${v}${ch ? `, ${ch.enName}` : ''}): ${descLead}`,
     158,
   )
 

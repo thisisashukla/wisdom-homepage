@@ -1,0 +1,504 @@
+{
+ "persona": {
+  "id": "in_genx_father_layoff",
+  "market": "India (Pune)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "49, IT services manager in Pune, 22 years in the same company, laid off last month. Daughter in 11th, home loan, aging mother.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": "man",
+   "emotion": "shocked and carrying it alone",
+   "bridge": "The ten minute call that ended twenty two years is what the Gita calls the mind turned into its own enemy. The only thing they could touch was your role, not what you are.",
+   "week_thesis": "This week moves you from the verdict you keep passing on yourself for the call to the part of you that can begin again, with the ending still real.",
+   "week_beats": {
+    "hook": "You recognise the shock and the loneliness, named without judgement.",
+    "diagnose": "You see that it is the verdict, not the call, that keeps you up.",
+    "steady": "You hold that a failure is something that happened, not who you are, and what is real in you cannot be taken.",
+    "act": "You try one act of being on your own side, and one amend you can actually make.",
+    "story": "A man who lost everything he built shows you what rising again looks like from the inside."
+   },
+   "confidence": 0.8,
+   "core_struggle": "After twenty two years at one company, was let go in a ten minute call, and is carrying the shock alone without telling his mother.",
+   "mirror": "You still wake at six for the office you no longer have, and you carry it alone.",
+   "insight": "It isn't the call that keeps you up. It's the verdict you've passed on yourself for it, which you replay as if it were proof of your worth.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.19,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The shock of being let go in a ten minute call after twenty two years, and the loneliness of carrying it without telling the person who raised you. I lost my job.",
+    "diagnose": "When a result goes wrong, the mind turns against itself; self-blame grows from believing the outcome alone measures our worth.",
+    "steady": "A failure is something that happened, not who you are; no one who tries to do good is ever lost, and what is real in you cannot be taken.",
+    "act": "Lift yourself up instead of pushing yourself down; learn what this taught you, make amends where you can, and begin again.",
+    "story": "A man who gave twenty two years to one place, was let go in a call, and faced his family and his own regret, yet found the courage to rise again."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Carrying the ending",
+    "The verdict you keep passing",
+    "More than what you built"
+   ],
+   "seat": "",
+   "life_context": "In midlife and working, raising children and caring for his parents; the company he gave two decades to let him go in a ten minute call, and he wakes each morning at six for an office that no longer exists.",
+   "details": [
+    "twenty two years in one company",
+    "was let go in a ten minute call",
+    "has not told his mother",
+    "still wakes at six to go to the office he no longer has"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 1.8281,
+     "beat": "hook",
+     "role_fit": 0.14,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, telling him that a person can be their own greatest friend or their own worst enemy. He says to raise yourself by yourself, and do not let yourself sink. The self alone is the friend of the self, and the self alone is the enemy of the self. He is asking Arjuna to stop pushing himself down and to stand on his own side.",
+     "for_you": "The shock of the call is heavy enough without you adding a verdict against yourself. Today, let your own hand be the one that lifts you up from the floor of the office that no longer exists. Trust the part of you that has already survived twenty two years."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.40",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 40",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: how the world treats someone who has lost money.",
+     "sanskrit": "तानीन्द्रियाण्यविकलानि तदेव नाम सा बुद्धिरप्रतिहता वचनं तदेव । अर्थोष्मणा विरहितः पुरुषः क्षणेन सोऽप्यन्य एव भवतीति विचित्रमेतत् ॥",
+     "line": "Same person, same mind, same voice. Lose money, and people suddenly treat you as someone else.",
+     "translation": "The same faculties, unimpaired; the same name; the same unclouded mind; the same speech. Yet a man deprived of the warmth of wealth becomes, in a moment, someone else. How strange!",
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "The verse mocks how the world sees you; it does not measure your worth.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 3.0605,
+     "beat": "diagnose",
+     "role_fit": 0.51,
+     "meaning": "Bhartrihari is writing to the reader about the strange way the world treats money. He says the same person, with the same mind and the same voice, can be treated as someone else the moment wealth is gone. He notes that a man deprived of money's warmth becomes someone else in a moment, and calls it strange.",
+     "for_you": "Yesterday's verse named the grip. Today, you see that the ten minute call only touched your role at the company. The verdict you keep passing on yourself is not the same as the call. Hold the fact that your mind and your voice are still the same."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.66",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 66",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on the good.",
+     "sanskrit": "सम्पत्सु महतां चित्तं भवत्युत्पलकोमलम् । आपत्सु च महाशैलशिलासङ्घातकर्कशम् ॥",
+     "line": "In good times be soft as a lotus. In hard times be firm as mountain rock.",
+     "translation": "In prosperity the heart of the great becomes soft as a lotus; in adversity, hard as a mass of mountain rock.",
+     "why": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.sujana",
+      "title": "Nitishatakam: On the good",
+      "summary": "Portraits of good people: steady in trouble, humble in success, giving in secret and speaking of others' kindness aloud. Company, the verses say, makes us what we are.",
+      "story_hook": "",
+      "lesson": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet."
+     },
+     "score": 3.5009,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Bhartrihari is describing the good person. He says that in prosperity, the heart of the great becomes soft as a lotus, and in adversity, it becomes hard as a mass of mountain rock. He advises letting your good deeds stay quiet and steady through both states.",
+     "for_you": "The ending is real, and the hurt is real. Let it be real without becoming the whole story. Let your good deeds stay quiet. The part of you that is firm as mountain rock is still there, even when the ground beneath your feet has shifted."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.165",
+     "ref": "Maha Upanishad 4.17",
+     "ref_iast": "Mahā Upaniṣad 4.17",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on people of steady goodness.",
+     "sanskrit": "नापदि ग्लानिमायान्ति निशि हेमाम्बुजं यथा । नेहन्ते प्रकृतादन्यद्रमन्ते शिष्टवर्त्मनि ॥",
+     "line": "Good people do not wilt in hard times, like a golden lotus that stays open at night.",
+     "translation": "In adversity they do not wilt, as the golden lotus does not close at night. They want nothing beyond what is at hand and delight in the path of the good.",
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 3.5282,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": "Ribhu tells Nidagha that a person of steady goodness does not wilt in hard times. He compares them to a golden lotus that stays open through the night. They want nothing more than what is at hand and find their delight in the path of the good. The lotus does not close because it is gold. It stays open because it is itself. The good person holds their shape not by force but by their own nature, and this steadiness is what carries them through the dark.",
+     "for_you": "The company took your role. They did not touch the man who woke at six and stayed twenty-two years. Your steadiness is still there, in the quiet before the day begins, when no one is watching."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.4318,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to hold himself in contempt or settle for too little. She urges him to set his mind on what is truly good and to stop fearing. She reminds him that those who never try never succeed, and that he must pull himself together. The past failure does not define him. His choice to rise again does.",
+     "for_you": "You have been lying defeated in the quiet of your own mind. Today, choose one small thing that is truly yours. Let it be a single step forward, not a grand return, but a sign that you are on your own side again."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 3.045,
+     "beat": "act",
+     "role_fit": 0.431,
+     "meaning": "Krishna tells Arjuna that it is better to follow your own path, even if you do it imperfectly, than to take on the duty of another perfectly. The duty of another is full of fear. He speaks of acting free from ego and imitation, of doing what is yours in your own way. The danger is not in the imperfect steps of your own road. The danger is in walking someone else's path as if it were your own.",
+     "for_you": "The role they gave you was not your own. Your own path is the one you walk now, however uncertain the next step. Do one thing today that belongs only to you, not to the job that is gone."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.ram_accepts_exile",
+     "title": "Ram accepts exile",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharatha",
+      "Lakshman"
+     ],
+     "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+     "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+     "lesson": "You cannot control the news; you can control the person who walks out of the room.",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.19.32",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.32",
+      "family": "vr",
+      "speaker": "Narrator",
+      "listener": "",
+      "setting": "Ram walks out of the palace, having lost the throne he was to receive that morning.",
+      "sanskrit": "न वनं गन्तुकामस्य त्यजतश्च वसुंधराम्। सर्वलोकातिगस्येव लक्ष्यते चित्तविक्रिया॥",
+      "line": "He had just lost the kingdom, and his mind showed no change at all.",
+      "translation": "As he set out for the forest and gave up the earth, no change could be seen in his mind, as if he stood beyond the world.",
+      "why": "You cannot control the news; you can control the person who walks out of the room.",
+      "misuse": "Calm in loss is not pretending it does not hurt; Ram grieves elsewhere in the story.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.ram_accepts_exile",
+       "title": "Ram accepts exile",
+       "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+       "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+       "lesson": "You cannot control the news; you can control the person who walks out of the room."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram went to be crowned and came out exiled for fourteen years",
+     "teaser": "Ram went to be crowned and came out exiled for fourteen years",
+     "for_you": "Ram walked out of the palace with the kingdom gone and his mind unchanged. You too can leave the office that no longer exists and still carry yourself whole. Let the verdict of the call drop behind you as you step into the day."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Carrying the ending",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 180,
+   "llm": 6342,
+   "total": 11531,
+   "select": 5002
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You wake at six in the morning and the habit is so deep your body moves before your mind catches up. You get up to go to an office that no longer exists. The shock of the call is heavy enough, but you are carrying a second weight. It is the verdict you keep passing on yourself for it."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. He is confused, his limbs heavy, his mind in turmoil. He has asked Krishna for guidance, and Krishna looks at him, not with anger, but with clarity. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत्, आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः."
+  ],
+  [
+   "line",
+   "In plain words: Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend."
+  ],
+  [
+   "unpack",
+   "Krishna says that the self alone is the friend of the self, and the self alone is the enemy of the self. This means the mind can turn into its own worst enemy. It can take a moment of loss and build a whole story around it. The call took away your role, but it did not take away who you are. Choosing to be your own friend means you stop pushing yourself down with that story. This is easier said than done because the mind wants to replay the hurt."
+  ],
+  [
+   "for_you",
+   "Today, let your own hand be the one that lifts you up from the floor of the office that no longer exists. Trust the part of you that has already survived twenty two years. That part is still there, even when the world around you changes."
+  ],
+  [
+   "close",
+   "You can be your own best friend, or your own worst enemy. Choose friend."
+  ]
+ ],
+ "depth": {
+  "life": "You wake at six for a building that is gone, and you carry the shock of that ten-minute call alone. The verdict you keep passing on yourself for the ending is heavier than the loss itself. You have been your own enemy in the quiet hours before dawn.",
+  "points": "The self is both friend and enemy, not because of the call, but because of the verdict you keep passing on yourself. The call took a role, not what you are. Your own mind has turned into its own enemy, replaying the loss as proof of your worth.",
+  "practice": "Sit with your coffee at six and name one true thing about yourself that has nothing to do with your role, your years, or their call.",
+  "question": "What is the one thing you know about yourself that no call can take away?"
+ }
+}

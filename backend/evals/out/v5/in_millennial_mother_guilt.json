@@ -1,0 +1,490 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "guilty and pulled apart",
+   "bridge": "What you are living with is what the texts call needing their approval, and that is where this week begins.",
+   "week_thesis": "Seven days from being torn between two roles and seeking your daughter's approval to finding one moment of full presence that steadies you.",
+   "week_beats": {
+    "hook": "You recognise the guilt and the split, named without judgement.",
+    "diagnose": "You see that it is the need for her approval, not the job, that keeps you up.",
+    "steady": "You hold that your presence is not measured by your attendance.",
+    "act": "You try giving one full moment of attention to your daughter today and letting the rest go.",
+    "story": "A mother torn between two duties shows you that one moment of full presence is worth more than a thousand divided days."
+   },
+   "confidence": 0.65,
+   "core_struggle": "A working mother of two feels she is half a mother and half a project manager, and her daughter's question about missing school events has left her crying in the car.",
+   "mirror": "You give the day everything, then lie awake replaying every conversation and every missed school event.",
+   "insight": "It isn't the task that weighs on you. It's waiting for someone else to tell you it was enough.",
+   "mechanism": "need_for_approval",
+   "mechanism_label": "Needing their approval",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.64,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.575,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.363,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The guilt of being half a mother and half a project manager, and the ache of a child's question that lands like a verdict.",
+    "diagnose": "When your worth depends on your child's praise, every word of blame shakes you; craving approval keeps the mind unsteady and the heart exhausted.",
+    "steady": "Praise and blame from those you love come and go like the wind; what is yours to give is your own steady presence, not their verdict.",
+    "act": "Give your full attention to one moment with your daughter today, and let the rest go; your presence is not measured by your attendance.",
+    "story": "A mother torn between a kingdom and her child, who learns that a single moment of full presence is worth more than a thousand divided days."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The split",
+    "What steadies a mother",
+    "More than attendance"
+   ],
+   "seat": "a working mother of two young children who feels she is failing at both",
+   "life_context": "In her mid-thirties, working and raising a young child; every day she feels split between her job and her daughter, and one question from the child left her crying in the car on the way home.",
+   "details": [
+    "back at work after second baby",
+    "daughter asked why she misses school events",
+    "cried in the car after that",
+    "feels she is half a mother and half a project manager"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "bridge:copied_example",
+    "insight:template",
+    "retried:2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:unpack=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "diaspora_identity",
+       "label": "I don't feel fully at home anywhere"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 1.7517,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna is telling Arjuna that a person should stay in their own work, even if it is messy or flawed. He says that doing your own duty, however imperfectly, is better than taking on someone else's path and doing it perfectly. It is about finding your own honest fit with the world, not about following a script written by others. When you do the work that is truly yours, you do not carry the weight of someone else's expectations.",
+     "for_you": "You are trying to be a perfect mother and a perfect manager at the same time. The guilt comes from holding a standard that belongs to no one but you. Your work is your own, and your care for your daughter is your own."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.61",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 61",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own heart",
+     "setting": "Opening verse of 'Advice to the Mind'.",
+     "sanskrit": "परेषां चेतांसि प्रतिदिवसमाराध्य बहुधा प्रसादं किं नेतुं विशसि हृदय क्लेशकलितम् । प्रसन्ने त्वय्यन्तः स्वयमुदितचिन्तामणिगणो विविक्तः संकल्पः किमभिलषितं पुष्यति न ते ॥",
+     "line": "Why exhaust yourself daily winning others' approval? Settle inside, and your own clarity grants every wish.",
+     "translation": "O heart, why do you enter into weariness, day after day trying to please the minds of others in so many ways, to win their favour? When you are at peace within, your own clear resolve rises by itself like a cluster of wish-granting gems: what wish of yours would it not fulfil?",
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 3.1023,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "Bhartrihari speaks to his own heart, asking why it exhausts itself daily trying to please others and win their favour. He says that when you settle inside and find your own peace, your mind becomes clear. That inner clarity naturally grants every wish, because it is no longer scattered by the need for outside approval.",
+     "for_you": "Yesterday you named the split between your two roles. Today you can see that the real weight is not the work itself. It is the waiting for your daughter to tell you that you did enough. Your own clarity is already there, waiting for you to notice it."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.468,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari is telling the reader that the steady person does not step off the right path. He says let them praise or blame, let money come or go. The steadfast do not move a step from what is right. The idea is that setbacks are temporary. The steady person keeps going on the right path no matter what people say.",
+     "for_you": "Your daughter's question and your own guilt are just noise. Your presence is not measured by your attendance. You can be a good mother and a good manager. The right path is your own. Hold to it, and the noise will not move you a step."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.12.19",
+     "ref": "Bhagavad Gita 12.19",
+     "ref_iast": "Bhagavad Gītā 12.19",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna, describing the qualities of the person dear to God.",
+     "sanskrit": "तुल्यनिन्दास्तुतिर्मौनी सन्तुष्टो येनकेनचित् । अनिकेतः स्थिरमतिर्भक्तिमान्मे प्रियो नरः ॥",
+     "line": "Praise and blame weigh the same. Quiet, content with what comes, rooted in steadiness, not status.",
+     "translation": "to whom blame and praise are equal, who is silent, content with whatever comes, without a fixed home, steady in mind and full of devotion, that person is dear to me.",
+     "why": "Kindness without hatred, steadiness in praise and blame: that's what's loved.",
+     "misuse": "Not 'never ask for credit'. You can advocate for yourself without letting praise or blame define you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p12.2",
+      "title": "The marks of one dear to God",
+      "summary": "Krishna lists the marks of one dear to him: no hatred, friendly and compassionate, forgiving, content, disturbing no one and disturbed by no one, the same in praise and blame.",
+      "story_hook": "",
+      "lesson": "Kindness without hatred, steadiness in praise and blame: that's what's loved."
+     },
+     "score": 3.4087,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, describing the one who is dear to God. He says that for this person, praise and blame weigh exactly the same. They remain quiet and content with whatever comes. They do not cling to a fixed home or status, but stay steady in mind and full of devotion.",
+     "for_you": "Your daughter's question lands like blame, but your worth as a mother is not a project to be approved. Hold your presence as enough, just as it is, without needing her praise to balance the scales."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.45",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.45",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "न चाभ्युदितसायी स्यात्प्रायश्चित्ती तथा भवेत् / मातापितरमुत्थाय पूर्वमेवाभिवादयेत् / आचार्यमथवाऽप्यन्तं तथाऽऽयुर्विदन्ते महत्",
+     "line": "Start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "translation": "Don't sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder; that is how a long life is won.",
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 3.0358,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Bhishma is answering Yudhishthira. He has been asked how a person lives well for a long time. Bhishma says it is not one great act. It is small daily conduct. On rising, first greet your mother and father. Greet a teacher or an elder. That is how a long life is won. It is a life built from daily respect and kind words. A good morning is the foundation of a good day.",
+     "for_you": "When you wake tomorrow, before you reach for your phone, look at your daughter. Let her see your eyes fully. Give her that first moment. Let the rest of the day wait."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "avadhuta.8.7",
+     "ref": "Avadhuta Gita 8.7",
+     "ref_iast": "Avadhūta Gītā 8.7",
+     "family": "gitas",
+     "speaker": "Dattatreya",
+     "listener": "his own mind / the seeker",
+     "setting": "Dattatreya explains each syllable of the word 'Avadhuta' as a mark of the free person.",
+     "sanskrit": "वासना वर्जिता येन वक्तव्यं च निरामयम् । वर्तमानेषु वर्तेत वकारं तस्य लक्षणम् ॥",
+     "line": "Let go of old cravings, speak only what heals, and live in the present.",
+     "translation": "One who has given up old cravings, whose speech is wholesome, and who lives in the present: that is the meaning of 'va'.",
+     "why": "A free person seeks no honour, gives it freely, and lives in the present.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "avadhuta.p.marks_of_avadhuta",
+      "title": "The marks of a free person",
+      "summary": "The last chapter portrays the free sage as gentle, moderate, humble yet respectful to others, kind and truthful. Dattatreya then reads each syllable of 'A-va-dhu-ta' as a mark: free of expectation, living in the present, free of ego.",
+      "story_hook": "",
+      "lesson": "A free person seeks no honour, gives it freely, and lives in the present."
+     },
+     "score": 2.8734,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "Dattatreya speaks to the seeker, explaining the syllable 'va' in the word Avadhuta. He says it means one who has given up old cravings. Their speech is wholesome, and they live entirely in the present moment.",
+     "for_you": "Let go of the craving for her approval and speak only what heals. Give her one full moment of your attention today and let the rest of the day go."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "Yesterday asked you to let go of old cravings and live in the present. Today you see that presence is not a place you go, but a way you meet your daughter when she asks about her day. In that one moment, you are not a project manager and not a half-mother."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The split",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 221,
+   "llm": 4063,
+   "total": 11162,
+   "select": 6872
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying the weight of two different lives, and you feel you are failing at both. You are physically home, but you know your mind is somewhere else. You feel guilty about something you did, and you cannot stop overthinking it."
+  ],
+  [
+   "scene",
+   "Arjuna is standing on a battlefield, surrounded by his teachers and his relatives. He has laid down his bow and his arrows, and he is telling Krishna that he will not fight. Krishna replies to him: And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna is telling Arjuna that a person should stay in their own work, even if it is messy or flawed. He says that doing your own duty, however imperfectly, is better than taking on someone else's path and doing it perfectly. It is about finding your own honest fit with the world, not about following a script written by others. When you do the work that is truly yours, you do not carry the weight of someone else's expectations."
+  ],
+  [
+   "for_you",
+   "This week, when you are with your daughter, try to notice one small thing about her that is not about your guilt. Just watch her for a moment, without trying to fix anything. Your presence is enough, even if it is not perfect."
+  ],
+  [
+   "close",
+   "What would change if you let yourself be enough, right here?"
+  ]
+ ],
+ "depth": {
+  "life": "You are home but your mind is still at work. Your daughter's question sits in the car with you, and you are trying to be a perfect mother and a perfect manager at the same time. The guilt comes from holding a standard that belongs to no one but you.",
+  "points": "Krishna is telling Arjuna that your own duty, done imperfectly, is better than someone else's done perfectly. The work that fits your nature, flaws and all, is its own offering. You do not incur wrong by doing what is yours, even if it is not perfect.",
+  "practice": "When you are with your daughter tonight, let your work thoughts stay in the car. Give her your full attention for one small thing.",
+  "question": "What would change if you let your own imperfect work be enough?"
+ }
+}

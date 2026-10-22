@@ -1,0 +1,489 @@
+{
+ "persona": {
+  "id": "ca_genz_queer_family",
+  "market": "Canada (Vancouver)",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "22, Indo-Canadian, came out to her Punjabi parents last year, they went silent, now talk only about weather. She still goes home for Diwali.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "since I told my parents about my girlfriend they haven't said one real thing to me. we talk about the weather. I still go home for diwali and sit at the table and it's like I'm a guest",
+  "note_source": "text",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "hurt and invisible",
+   "bridge": "The silence your parents keep is not your fault, and it is not your burden to fix. What you are cannot be made smaller by what they cannot yet see.",
+   "week_thesis": "Seven days from being a guest at your own table to standing in your own truth, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being seen as a guest in your own home, and the hurt of it, named without blame.",
+    "act": "You try standing in your own truth at the table, and finding the words to say it."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.8,
+   "core_struggle": "A young adult is being treated as a guest in their own home after telling their parents about their girlfriend, and the silence is the dismissal.",
+   "mirror": "You go home for Diwali and sit at the table like a guest in your own house.",
+   "insight": "You are not the one who broke the house. The coldness they keep is their picture of you, and it is theirs, not your size.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.963,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.822,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.75,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being treated as a guest in the home you grew up in, and the hurt of watching your own people turn away without a word.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Hold your ground on who you are, speak the true thing when it is asked of you, and find the courage the moment asks for.",
+    "story": "A young man who was told he was no longer one of them, who stood in his truth and was proven right, or found his footing in the silence."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "A guest at your own table",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "a young adult who is being treated as a guest in their own home",
+   "life_context": "A student working and under twenty-five; after telling their parents about their girlfriend, the warmth is gone and the house is quiet, so they sit at the table like a visitor.",
+   "details": [
+    "told parents about a girlfriend",
+    "parents now talk only about the weather",
+    "still goes home for Diwali",
+    "sits at the table like a guest"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "flags": [
+    "week_fit:6=0.3,35=0.3,17=0.0,58=1.0,7=1.0,5=1.0",
+    "week_fit:swapped=3",
+    "retried:1",
+    "dropped:fallback_line=1,missing=2",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.6343,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna tells Arjuna that it is better to walk your own path imperfectly than to perform another's duties perfectly. The work that comes naturally to you, done with care and without attachment to the results, is the right offering. You cannot be at fault for simply doing what fits who you are.",
+     "for_you": "The quiet at your table is their doing, not a verdict on your worth. Your place is not as a guest. Stay in your own truth, and let your own life be the offering."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.5.35.doha.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 35",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Ravana's ministers flatter him as Ram's army arrives; the poet comments.",
+     "sanskrit": "सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस राज धर्म तन तीनि कर होइ बेगिहीं नास ॥",
+     "line": "When advisers, doctors and teachers only say what pleases you, the ruin comes quickly.",
+     "translation": "When a minister, a doctor and a teacher speak only to please, out of fear or hope of reward, then the kingdom, the body and righteousness are soon destroyed.",
+     "why": "Beware a circle that only tells you what you want to hear.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.mandodari_first",
+      "title": "Mandodari pleads, the ministers flatter",
+      "summary": "Mandodari takes Ravana aside and begs him to return Sita before it is too late. He laughs at her fear and goes to court, where his ministers tell him only what pleases him. Tulsidas notes that when advisers, doctors and teachers speak only to please, ruin comes quickly.",
+      "story_hook": "Mandodari took her husband's hand and led him somewhere the ministers couldn't hear.",
+      "lesson": "Beware a circle that only tells you what you want to hear."
+     },
+     "score": 2.976,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Tulsidas wrote this while Ravana sat in his court. His ministers were telling him only what he wanted to hear, flattering him as Ram's army waited outside. The poet saw that when people only say pleasing things to keep their place, the whole house falls. The ruin comes not from the truth, but from the silence around it.",
+     "for_you": "The quiet in your house is their choice to please themselves, not your failure. You do not have to fill it or fix it. Let the silence stand as a wall, and let it show you the shape of their fear without asking you to shrink."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.1164,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Vidura spoke to Dhritarashtra in the middle of the night, when the king could not sleep. He told him not to swell with praise or burn at a slight. The wise person stays deep and still like a river pool, letting the mud settle on its own. That stillness is not weakness. It is the ground from which clear action grows.",
+     "for_you": "You can hold your own ground in that quiet room without needing to win the silence. Let your own thoughts move slowly, like water in a deep pool. This steadiness is not about waiting for them to speak. It is about keeping your own shape whole while you sit there."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.1.16",
+     "ref": "Ashtavakra Gita 1.16",
+     "ref_iast": "Aṣṭāvakra Gītā 1.16",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "त्वया व्याप्तमिदं विश्वं त्वयि प्रोतं यथार्थतः । शुद्धबुद्धस्वरूपस्त्वं मा गमः क्षुद्रचित्तताम् ॥",
+     "line": "You are pure awareness, wider than any worry. Don't let your mind shrink into pettiness.",
+     "translation": "This whole universe is pervaded by you and strung on you. By nature you are pure awareness; do not fall into smallness of mind.",
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 3.1217,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "King Janaka asks the young sage Ashtavakra how to be free. Ashtavakra tells him this whole universe is strung on you, and by nature you are pure awareness. Do not fall into smallness of mind. You are the awareness that watches your roles and your worries, and freedom is available in this very moment.",
+     "for_you": "They made the house quiet, but that silence is their picture of you, not your size. You do not have to shrink to fit their coldness. Sit at the table and let the silence be theirs."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.6862,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": null,
+     "for_you": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.2361,
+     "beat": "act",
+     "role_fit": 0.541,
+     "meaning": "Krishna tells Arjuna that no one else can lift him up or drag him down like his own mind can. The self is its own best friend, or its own worst enemy, and the choice is always in his hands. He can lift himself by his own strength, or he can let himself sink. This is the truth of being your own master, in honour or insult.",
+     "for_you": "The silence at your table is heavy, but it does not have to be your weight. You can be your own friend right now by refusing to shrink. You are not a guest in your own life. You are the one who decides your size, not the quiet they keep."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.jambavant",
+     "title": "Jambavant reminds Hanuman of his strength",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Jambavant",
+      "Hanuman",
+      "Angad"
+     ],
+     "story_hook": "Everyone said how far they could jump, and Hanuman said nothing at all.",
+     "summary": "Nobody can leap the ocean. Old Jambavant admits honestly that he is no longer young. Then he turns to the silent Hanuman and asks why he sits quiet: what task in the world is too hard for him? Hanuman grows to the size of a mountain.",
+     "lesson": "Sometimes we need someone else to remind us what we can do; and the old can be that someone.",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.4.31.chaupai.3",
+      "ref": "Ramcharitmanas · Kishkindha Kand",
+      "ref_iast": "Rāmcaritmānas, Kiṣkindhā Kāṇḍ 31",
+      "family": "rcm",
+      "speaker": "Jambavant",
+      "listener": "Hanuman",
+      "setting": "The old bear Jambavant to Hanuman, who sits silent while others say the ocean is too wide.",
+      "sanskrit": "कवन सो काज कठिन जग माहीं। जो नहिं होइ तात तुम्ह पाहीं॥ राम काज लगि तव अवतारा। सुनतहिं भयउ पर्बताकारा ॥",
+      "line": "What task in the world is too hard for you? You were made for this.",
+      "translation": "\"What task in the world is too hard for you, my son? You were born for Ram's work.\" Hearing this, Hanuman grew to the size of a mountain.",
+      "why": "Sometimes we need someone else to remind us what we can do; and the old can be that someone.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "fear_failure",
+        "label": "I'm afraid of failing"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.jambavant",
+       "title": "Jambavant reminds Hanuman of his strength",
+       "summary": "Nobody can leap the ocean. Old Jambavant admits honestly that he is no longer young. Then he turns to the silent Hanuman and asks why he sits quiet: what task in the world is too hard for him? Hanuman grows to the size of a mountain.",
+       "story_hook": "Everyone said how far they could jump, and Hanuman said nothing at all.",
+       "lesson": "Sometimes we need someone else to remind us what we can do; and the old can be that someone."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Everyone said how far they could jump, and Hanuman said nothing at all",
+     "teaser": "Everyone said how far they could jump, and Hanuman said nothing at all",
+     "for_you": "Jambavant saw the mountain inside the silent Hanuman and asked what task was too hard for him. You are not a guest. You are the one who holds your own strength. The silence they keep is their own blindness, not your size. You do not need to shrink to fit their quiet."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "A guest at your own table",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 598,
+   "llm": 5147,
+   "total": 18522,
+   "select": 12771
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is quiet now. You sit at the table and feel the distance. You told them about her, and the warmth left. You are a visitor in your own home, and it hurts to be made invisible."
+  ],
+  [
+   "scene",
+   "In a field of armies, Arjuna stands trembling, refusing to lift his bow. He wants to leave. He asks Krishna why he should fight. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna is speaking to someone who is paralyzed by wanting to do everything right. He says your own work, your own truth, is enough even if it is messy. The fault is not in you for walking your own way. The coldness they keep is their choice. It is not your burden to fix."
+  ],
+  [
+   "for_you",
+   "You do not need to shrink to fit their silence. Your life is your work. Let it be the offering today."
+  ],
+  [
+   "close",
+   "Your path is yours. Walk it anyway."
+  ]
+ ],
+ "depth": {
+  "life": "You sit at the table like a visitor. The silence after you told your parents about your girlfriend is a wall. They talk only about the weather. You are not the one who broke the house.",
+  "points": "You are not the one who broke the house. The coldness they keep is their picture of you, and it is theirs, not your size. You are being seen as less than you are, and that is not your fault.",
+  "practice": "Place your hand on the table where you sit. Feel its surface. You belong there.",
+  "question": "What would it feel like to take up space at that table without asking?"
+ }
+}

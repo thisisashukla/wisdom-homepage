@@ -1,0 +1,504 @@
+{
+ "persona": {
+  "id": "in_boomer_mother_son_abroad",
+  "market": "India (Chennai)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "63, retired school principal in Chennai, husband alive, only son in Germany for 9 years with a German wife, visits every 2 years. Hindi is weak; English and Tamil.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "far_from_home"
+  },
+  "note": "my son has been in germany nine years. his wife is german, lovely girl. they will not come back I know this. I taught 2000 children and I cannot teach my own heart to stop waiting for him",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "quietly grieving and waiting",
+   "bridge": "The waiting you cannot stop is what the Upanishads call love with nowhere to go: grief that has no place to land.",
+   "week_thesis": "From a house that still waits, to a heart that has found a place for a love that has no place to land.",
+   "week_beats": {
+    "hook": "You recognise the restlessness and the waiting, named without asking you to stop it.",
+    "diagnose": "You see that the waiting is not the wound, but the love with nowhere to go.",
+    "steady": "You hold that what is real in you cannot be lost, and that your love is not smaller because one heart is far.",
+    "act": "You try giving the waiting a form, and naming the love for what it is.",
+    "story": "A father who waited for a son who would not return shows you how to carry the love without the waiting."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.8,
+   "core_struggle": "A retired teacher whose son has lived abroad for nine years knows he will not return, yet cannot stop waiting and grieving the life that will not happen.",
+   "mirror": "You taught two thousand children, and now you cannot teach your own heart to stop waiting for the one who is gone.",
+   "insight": "The waiting is not the problem, and it will not stop. The problem is that your heart has nowhere to put a love that has no place to land.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.08,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.845,
+     "source": "note"
+    },
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet of a house that holds a love with nowhere to go, and the restlessness of a heart that still believes it is only waiting. My parents are getting older far away.",
+    "diagnose": "Grief is love with nowhere to go; everything that comes together must part, and the heart aches because the bond was real.",
+    "steady": "What is real in us cannot be lost; the love that taught two thousand children is not smaller because one heart is far.",
+    "act": "Let the waiting be, and give it a form: speak to him, write to him, or sit with the love and name it for what it is.",
+    "story": "A father who waited years for a son who would not return, and who learned to carry the love without the waiting."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The waiting has no place",
+    "Love with nowhere to go",
+    "The one who taught two thousand"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "retired and taught children",
+    "son has been in Germany nine years",
+    "knows the family will not come back"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "hook:anchored_to_situation",
+    "week_fit:9=0.3,29=0.3,26=0.0,49=0.0,1=0.6,15=0.0",
+    "week_fit:swapped=5",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:open=cliche",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bh.vairagya.73",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 73",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'Weighing the Lasting and the Passing': a portrait of old age.",
+     "sanskrit": "गात्रं संकुचितं गतिर्विगलिता भ्रष्टा च दन्तावलिः- दृष्टिर्नश्यति वर्धते बधिरता वक्त्रं च लालायते । वाक्यं नाद्रियते च बान्धवजनो भार्या न शुश्रूषते हा कष्टं पुरुषस्य जीर्णवयसः पुत्रोऽप्यमित्रायते ॥",
+     "line": "In old age, family stops listening and even a son turns cold. Alas for the aged.",
+     "translation": "The body shrinks, the gait falters, the teeth fall out, sight fades, deafness grows, the mouth drools; relatives pay no heed to his words, his wife no longer looks after him; alas, the misery of an old man: even his son turns hostile.",
+     "why": "Do what matters most while you still can.",
+     "misuse": "A lament, not a prediction; read it as a call to keep listening to the old.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.nitya",
+      "title": "Vairagyashatakam: Weighing the lasting and the passing",
+      "summary": "Weighing what lasts: religion without inner peace is trading; old age can bring neglect; act while healthy, not when the house is on fire. The poet admits not knowing how to spend a short life.",
+      "story_hook": "",
+      "lesson": "Do what matters most while you still can."
+     },
+     "score": 3.7264,
+     "beat": "hook",
+     "role_fit": 0.69,
+     "meaning": "Bhartrihari speaks from the edge of old age, looking back at a body that is failing and a world that is turning away. The teeth are gone, the eyes are dim, and the people who once knew you are no longer listening. Even a son can turn cold. The poet does not say this to frighten you, but to name the loneliness that comes when the body fails and the family has moved on.",
+     "for_you": "You have spent a lifetime teaching children, and now the house is quiet. Your son is far away, and you know the waiting will not bring him back. This verse sees that exact stillness."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 2.923,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "After lashing out at her husband over their son's exile, Kausalya apologises. She explains that grief wore away her steadiness and her judgement. She says there is no enemy like grief. She means that sorrow can make us wound those we love, and that apologising quickly heals more than being right. Her words turn gently toward the one who has been waiting.",
+     "for_you": "The waiting is not the wound. It is the love with nowhere to land. You see that your heart has no place to put what you feel. That emptiness is what hurts, not the years passing."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.5.26.39",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 26.39",
+     "family": "vr",
+     "speaker": "Sita",
+     "listener": "herself",
+     "setting": "Alone in captivity, Sita fears Ram has forgotten her, then reassures herself.",
+     "sanskrit": "दृश्यमाने भवेत् प्रीतिः सौहृदं नास्त्यदृश्यतः। नाशयन्ति कृतघ्नास्तु न रामो नाशयिष्यति॥",
+     "line": "'Out of sight, out of mind' is true only of the ungrateful. Real love survives distance.",
+     "translation": "Love lasts while someone is in sight; out of sight, affection fades. But that is the way of the ungrateful. Ram will not let it fade.",
+     "why": "Hold on to love across distance; hope can arrive from unexpected people.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sita_captivity_hope",
+      "title": "Sita in captivity",
+      "summary": "Guards threaten Sita day and night. She fears Ram has forgotten her, then reminds herself that out of sight is out of mind only for the ungrateful. The guard Trijata dreams of Ram's victory, and good omens begin to appear.",
+      "story_hook": "She had been alone in the grove for ten months, surrounded by guards who mocked her every day.",
+      "lesson": "Hold on to love across distance; hope can arrive from unexpected people."
+     },
+     "score": 2.8417,
+     "beat": "steady",
+     "role_fit": 0.42,
+     "meaning": "Alone in captivity, Sita fears Ram has forgotten her. She reminds herself that out of sight is out of mind only for the ungrateful. Real love survives distance. She holds that Ram will not let her affection fade. She tells herself to hold on to this truth.",
+     "for_you": "You hold that what is real in you cannot be lost. Your love is not smaller because one heart is far. You keep your steadiness, even when the waiting hurts."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.13.162.15",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 162.15",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Yudhishthira asks Bhishma how an eldest brother should treat his younger brothers, and they him.",
+     "sanskrit": "दशाचार्यानुपाध्याय उपाध्यायान्पिता दश / दश चैव पितॄन्माता सर्वां वा पृथिवीमपि / गौरवेणाभिभवति नास्ति मातृसमो गुरुः",
+     "line": "There is no teacher like a mother.",
+     "translation": "A teacher outweighs ten instructors, a father ten teachers, and a mother ten fathers, even the whole earth. There is no teacher equal to a mother.",
+     "why": "Overlook small faults, correct gently, share fairly, and don't let outsiders divide you.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.brothers",
+      "title": "Bhishma on elder and younger siblings",
+      "summary": "Yudhishthira asks how the eldest brother should treat the younger ones. Bhishma: overlook small faults and correct gently, beware outsiders who sow division, divide property equally, and honour the mother above all.",
+      "story_hook": "",
+      "lesson": "Overlook small faults, correct gently, share fairly, and don't let outsiders divide you."
+     },
+     "score": 2.8073,
+     "beat": "steady",
+     "role_fit": 0.35,
+     "meaning": "Yudhishthira asks Bhishma how an eldest brother should treat his younger brothers, and Bhishma answers from his bed of arrows. He tells him that a mother outweighs ten teachers, a father outweighs ten mothers, and even the whole earth is less than a mother. He says a mother is the truest teacher because she overlooks small faults, corrects gently, shares fairly, and does not let outsiders divide the family. The idea is that love that has nowhere to go can still rest in the one who gives it freely.",
+     "for_you": "You taught children for years, and you know that love outlasts distance. Your son is far away, but your care for him has not become smaller. Let your heart rest in that truth today, in the quiet of your home."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.55.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 55",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Ram",
+     "setting": "Kausalya, choosing not to hold her son back, sends him into exile with her blessing.",
+     "sanskrit": "यह बिचारि नहिं करउँ हठ झूठ सनेहु बढ़ाइ। मानि मातु कर नात बलि सुरति बिसरि जनि जाइ ॥",
+     "line": "I won't hold you back with false affection. Go, son. Just don't forget your mother.",
+     "translation": "Thinking this over, I will not insist out of false affection. I bless you, son; only keep the bond of a mother, and don't forget me.",
+     "why": "Letting a child go with your blessing is love at its hardest.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.ram_kausalya",
+      "title": "Kausalya lets her son go",
+      "summary": "Ram comes to his mother as she is preparing for his coronation. Torn between duty and love, she decides not to hold him back with 'false affection', blesses him and asks only that he not forget her. As he leaves she wonders aloud whether she will live to see his face again.",
+      "story_hook": "She had the sweets ready for his coronation when he came to say goodbye.",
+      "lesson": "Letting a child go with your blessing is love at its hardest."
+     },
+     "score": 3.1292,
+     "beat": "act",
+     "role_fit": 0.498,
+     "meaning": "Kausalya knows that holding Ram back would be false affection. She tells him to go, and she blesses him. She asks only that he not forget her. This is love letting go, and it is the hardest kind of love. It gives the waiting a shape, and it names the bond for what it is.",
+     "for_you": "try writing your son a letter. You do not need to send it. Just give your waiting a form on the page, and name the love for what it is: a bond that distance cannot break."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.1.11.37",
+     "ref": "Yoga Vasishtha, Vairagya 11.37",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 11.37",
+     "family": "yv",
+     "speaker": "Vishvamitra",
+     "listener": "Rama",
+     "setting": "Vishvamitra gently invites the withdrawn Rama to speak.",
+     "sanskrit": "यथाभिमतमाशु त्वं ब्रूहि प्राप्स्यसि चानघ । सर्वमेव पुनर्येन भेत्स्यन्ते त्वां तु नाधयः ॥",
+     "line": "Say freely what is on your heart, blameless one. These sorrows need not keep wounding you.",
+     "translation": "Say quickly whatever you wish, blameless one, and you will have it, by which these sorrows will never pierce you again.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9255,
+     "beat": "act",
+     "role_fit": 0.5,
+     "meaning": "Vishvamitra sees the withdrawn Rama and speaks to him gently. He tells him to say freely whatever is on his heart. By speaking it out, Rama can have it, and these sorrows will no longer pierce him. The idea is that grief kept inside wounds, while naming it aloud can set it down.",
+     "for_you": "The waiting will not stop. But your heart needs a place to put the love that has no one to land on. Find one quiet moment today to speak the love you feel, without expecting an answer. Let the words rest there."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "Shabari's waiting was a kind of preparing. Your gathering of love over these nine years is not wasted. You can carry this love without the waiting, letting it rest where it is, seen and held."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The waiting has no place",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 185,
+   "llm": 4716,
+   "total": 13541,
+   "select": 8633
+  }
+ },
+ "script": [
+  [
+   "scene",
+   "Bhartrihari, a poet who looked closely at the body and the world, writes from the edge of old age. The body shrinks, the teeth fall, the sight fades, and the gait falters. The people who once knew him are no longer listening. Even a son can grow cold. And Bhartrihari turns to the reader and says:"
+  ],
+  [
+   "sanskrit",
+   "गात्रं संकुचितं गतिर्विगलिता भ्रष्टा च दन्तावलिः- दृष्टिर्नश्यति वर्धते बधिरता वक्त्रं च लालायते, वाक्यं नाद्रियते च बान्धवजनो भार्या न शुश्रूषते हा कष्टं पुरुषस्य जीर्णवयसः पुत्रोऽप्यमित्रायते."
+  ],
+  [
+   "line",
+   "In plain words: In old age, family stops listening and even a son turns cold. Alas for the aged."
+  ],
+  [
+   "unpack",
+   "This is a portrait of old age, but it is not a prediction. It is a call to notice what is passing and what is lasting. The body fails, and the people around us change. The poet does not want you to fear this. He wants you to see that the clock is short. When the teeth are gone and the world turns away, there is no time left for what does not matter."
+  ],
+  [
+   "for_you",
+   "You have already done the work of a lifetime. Now the body asks for rest, and the heart asks for a new home. What matters most to you, in this quiet, is not the son who is gone, but the life that still waits in your hands. Find one small thing that is yours alone, and give it your full attention today."
+  ],
+  [
+   "close",
+   "What will you do with the time that is still yours?"
+  ]
+ ],
+ "depth": {
+  "life": "The house is quiet, and you have spent a lifetime teaching. Your son is far away in Germany, and you know the waiting will not bring him back. You are grieving a life that will not happen, and the quiet feels heavy.",
+  "points": "The verse says that in old age, the body fails and even a son turns cold. It is a call to act while you still can. Your waiting is not the problem. The problem is that your heart has nowhere to put a love that has no place to land.",
+  "practice": "Sit with a cup of tea and name one thing you still want to do or say, and let it be enough for today.",
+  "question": "What would it feel like to let the waiting be, just for this moment?"
+ }
+}

@@ -11,7 +11,7 @@ import BlogTracker from '@/components/BlogTracker'
 import SavedVersesPanel from '@/components/gita/SavedVersesPanel'
 
 export const metadata: Metadata = {
-  title: 'Bhagavad Gita — All 18 Chapters, Sanskrit Verses with Hindi & English Translation | Wisdom',
+  title: 'Bhagavad Gita — All 18 Chapters, Sanskrit Verses with Hindi & English Translation',
   description:
     'Read the Bhagavad Gita online — all 700 verses across 18 chapters with Sanskrit, Hindi and English translations, organised by chapter and theme. Free, ad-free, beautifully presented.',
   alternates: {

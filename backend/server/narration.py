@@ -49,7 +49,7 @@ from pydantic import BaseModel, Field
 from ai.depth import person_key
 from ai.narration_script import spoken_sanskrit, write_script
 from ai.personalize import check_for_you, check_meaning
-from ai.recommender import HIDE_SANSKRIT_FAMILIES, get_recommender
+from ai.recommender import display_sanskrit, get_recommender
 from ai.voice import item_from_library
 from common.config import settings
 from common.models import AgeBand, JourneyIn, LifeStage
@@ -135,20 +135,19 @@ def _item(req: NarrationRequest, rec) -> tuple[dict, Optional[str]]:
         if v is None:
             raise HTTPException(status_code=404, detail="Unknown verse")
         item = item_from_library(v, rec.prasangs.get(v.get("prasang_id") or ""), req.beat if req.beat != "story" else "hook")
-        show = v.get("sanskrit_display_ok") is not False and v.get("family") not in HIDE_SANSKRIT_FAMILIES
-        return item, spoken_sanskrit(v.get("sanskrit_display")) if show else None
+        return item, spoken_sanskrit(display_sanskrit(v))
     if req.story_id:
         p = rec.prasangs.get(req.story_id)
         if p is None:
             raise HTTPException(status_code=404, detail="Unknown story")
         item = item_from_library(None, p, "story")
-        anchor = next((v for v in rec.verses if v.get("prasang_id") == p["id"]), None)
+        anchor = next((v for v in rec.verses if v.get("prasang_id") == p["id"] and display_sanskrit(v)), None) \
+            or next((v for v in rec.verses if v.get("prasang_id") == p["id"]), None)
         deva = None
         if anchor is not None:
             item["line"] = anchor.get("line")
             item["ref"] = anchor.get("display_ref") or anchor.get("ref_label")
-            if anchor.get("sanskrit_display_ok") is not False and anchor.get("family") not in HIDE_SANSKRIT_FAMILIES:
-                deva = spoken_sanskrit(anchor.get("sanskrit_display"))
+            deva = spoken_sanskrit(display_sanskrit(anchor))
         return item, deva
     raise HTTPException(status_code=400, detail="Send verse_id or story_id")
 
@@ -171,7 +170,7 @@ async def compose(req: NarrationRequest) -> tuple[List[tuple[str, str]], List[st
     if ctx is not None:
         try:
             from ai.understanding import get_understander
-            llm = get_understander().llm
+            llm = get_understander().writer_llm
         except RuntimeError:
             llm = None
     who = "" if ctx is None else f"{person_key(ctx)}|{u.core_struggle}|{u.mechanism}|{ctx.level}"

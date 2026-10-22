@@ -1,0 +1,504 @@
+{
+ "persona": {
+  "id": "uk_boomer_grandmother_lonely",
+  "market": "UK (Birmingham)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "68, came from Jalandhar in 1976, worked in a factory then raised 3 children. Widowed. Children busy, grandchildren on phones. Reads Ramcharitmanas.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "seeking",
+   "gender": "woman",
+   "emotion": "quietly alone and holding on",
+   "bridge": "What you call your only company is what the Upanishads call the self that is never alone. The text you hold is not a substitute, it is a door.",
+   "week_thesis": "This week turns the Ramayana from your only company into the door to the company that is never alone.",
+   "week_beats": {
+    "hook": "You recognise the loneliness and the text that holds it.",
+    "diagnose": "You see that the text is not a substitute, but a door to the company that is never alone.",
+    "steady": "You hold that what does not pass is what you are.",
+    "act": "You try reading one verse not for comfort but for the company it is.",
+    "story": "A queen who lost everything and found her only company in the text shows you what it means to be never alone."
+   },
+   "confidence": 0.8,
+   "core_struggle": "A widow who raised her children alone misses her husband and her children, and finds her only company in the Ramayana.",
+   "mirror": "You hold the Ramayana each morning and the Sunday calls end with everyone on their phones.",
+   "insight": "Even among people, you've felt unseen. The distance is real, and so is the way back.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.124,
+     "source": "note"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A heart that keeps company with a text because the people it loves are elsewhere, and the search for something that holds more than a screen.",
+    "diagnose": "When the heart is searching for where it belongs, it looks for company in what it can hold; the text is not a substitute, it is a door to the company that is never alone.",
+    "steady": "What does not pass is what you are; the one you read by is never far from the one who reads.",
+    "act": "Read one verse not for comfort but for the company it is; let the text hold you as you hold it.",
+    "story": "A queen who lost her husband and kingdom, who found her only company in the forest and in the text that carried her through, shows you what it means to be never alone."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The company that is never alone",
+    "What the text is really for",
+    "The one who reads"
+   ],
+   "seat": "a widow who raised her children alone and now reads the Ramayana as her only company",
+   "life_context": "In her sixties or older, retired and living alone; her children come on Sunday but are always on their phones, and the Ramayana is what she reads each morning.",
+   "details": [
+    "children visit on Sunday but are always on their phones",
+    "raised them alone after their husband died",
+    "reads the Ramayana in the morning",
+    "calls the text her only company"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "insight:template",
+    "retried:2",
+    "redo:5",
+    "redo_fixed:1",
+    "dropped:cliche=2,fallback_line=3,invented_name=1,not_second_person=1,preachy=1",
+    "for_you:6/7",
+    "meaning:6/6",
+    "script:dropped:for_you=invented_name,open=invented_name",
+    "script:written:3/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.11",
+     "ref": "Bhagavad Gita 10.11",
+     "ref_iast": "Bhagavad Gītā 10.11",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on devotees who find joy together and the light he gives them.",
+     "sanskrit": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः । नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥",
+     "line": "Out of compassion, I live in their hearts and clear the darkness with the lamp of understanding.",
+     "translation": "Out of compassion for them, dwelling in their hearts, I destroy the darkness born of ignorance with the shining lamp of knowledge.",
+     "why": "Good company and an inner lamp clear the dark.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.2",
+      "title": "The yoga of devotion and its fruit",
+      "summary": "Devotees talk of the divine with each other and find joy; out of compassion Krishna lights the lamp of knowledge in their hearts.",
+      "story_hook": "",
+      "lesson": "Good company and an inner lamp clear the dark."
+     },
+     "score": 2.271,
+     "beat": "hook",
+     "role_fit": 0.33,
+     "meaning": "Krishna tells Arjuna that for those who come together with joy, he dwells in their hearts out of compassion. He clears the darkness born of ignorance using the shining lamp of knowledge. The verse proposes that true companionship is not just being together, but having an inner light that removes confusion.",
+     "for_you": "You belong more than you feel right now; the people and the practice that hold you are still within reach."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.1.3.chaupai.4",
+     "ref": "Ramcharitmanas · Bal Kand",
+     "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 3",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Tulsidas, opening the Manas, on why the company we keep matters.",
+     "sanskrit": "बिनु सतसंग बिबेक न होई। राम कृपा बिनु सुलभ न सोई॥ सतसंगत मुद मंगल मूला। सोई फल सिधि सब साधन फूला ॥",
+     "line": "Without good company, there is no clear judgement.",
+     "translation": "Without good company there is no clear judgement, and by Ram's grace alone such company comes easily. Good company is the root of joy and well-being; finding it is the fruit, and every other practice is only the flower.",
+     "why": "The people around you shape your judgement; choose them, and take the good from everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.sant_asant",
+      "title": "Tulsidas on good company and difficult people",
+      "summary": "Before the story begins, Tulsidas bows to good people and, with gentle irony, to troublesome ones too. He describes how each acts, why company shapes us, and how the wise take the good and leave the rest, like the swan taking milk from water.",
+      "story_hook": "",
+      "lesson": "The people around you shape your judgement; choose them, and take the good from everyone."
+     },
+     "score": 2.9589,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "Tulsidas opens the Ramcharitmanas for the reader. He says that without good company, there is no clear judgement. By Ram's grace, such company comes easily. Good company is the root of joy and well-being. Finding it is the fruit, and every other practice is only the flower.",
+     "for_you": "Yesterday you held the text as your only company. Today, see it as the door. The text is the good company that clears your judgement, even when the people in your room are looking at screens."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.22",
+     "ref": "Bhagavad Gita 4.22",
+     "ref_iast": "Bhagavad Gītā 4.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥",
+     "line": "Content with what comes, beyond envy, steady in success and failure, you stay free even while working.",
+     "translation": "Content with whatever comes unasked, beyond the pairs of opposites, free from envy, the same in success and failure, even when acting he is not bound.",
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 2.8882,
+     "beat": "steady",
+     "role_fit": 0.925,
+     "meaning": "Krishna tells Arjuna that the wise are content with what comes unasked, beyond the pairs of opposites, and free from envy. The verse proposes that you can remain steady and unbound even while working, because your peace does not depend on success or failure.",
+     "for_you": "You have spent a lifetime working without rest. Today, let the lamp of the text burn in the quiet. What does not pass, what remains steady, is who you are, even when the children leave."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.250",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 250)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the Lord",
+     "setting": "Surdas on the Lord's readiness.",
+     "sanskrit": "कबहूँ तुम नाहिन गहरु कियो | सदा सुभाव-सुलभ सुमिरन-बस, भक्तनि अमर दियौ ॥",
+     "line": "You never once delayed. You are easy to reach, and remembering you is enough to win you.",
+     "translation": "You have never once delayed. By nature easy to reach and won over by remembrance, you have always given your devotees what is undying.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.8766,
+     "beat": "steady",
+     "role_fit": 0.4,
+     "meaning": "Surdas speaks to the Lord about nature. He says the Lord never once delayed for anyone. By nature is easy to reach, and is won over simply by being remembered. He always gives devotees what does not pass away. The verse proposes that the one you seek is already present, reached not by waiting but by the simple act of remembering.",
+     "for_you": "You belong more than you feel right now; the people and the practice that hold you are still within reach."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.16.8",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 16.8",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on the fourth gatekeeper: good company (satsanga).",
+     "sanskrit": "अपि कष्टतरां प्राप्तैर्दशां विवशतां गतैः । मनागपि न संत्याज्या मानवैः साधुसंगतिः ॥",
+     "line": "Even at your lowest and most helpless, don't let go of good company.",
+     "translation": "Even when people fall into the hardest straits and feel helpless, they should not let go of good company, not even a little.",
+     "why": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.four_gatekeepers",
+      "title": "The four gatekeepers: calm, inquiry, contentment, good company",
+      "summary": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others.",
+      "story_hook": "",
+      "lesson": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow."
+     },
+     "score": 2.9542,
+     "beat": "act",
+     "role_fit": 0.634,
+     "meaning": "Vasishtha is speaking to Rama on the fourth gatekeeper, which is good company. He has just described the first three, calm, inquiry and contentment, and he is explaining how they work together to guard the door to freedom. He tells Rama that even when people fall into the hardest straits and feel helpless, they should not let go of good company, not even a little.",
+     "for_you": "Your morning with the Ramayana is not a substitute for company, it is the door to the only company that is never alone. Let the text be your satsanga today, not a comfort to hold onto, but a clear presence to sit with."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "tulsi_dv.96",
+     "ref": "Dohavali 96",
+     "ref_iast": "Dohāvalī 96",
+     "family": "tulsi",
+     "speaker": "Tulsidas",
+     "listener": "his own mind",
+     "setting": "Tulsidas's advice to himself when weighed down.",
+     "sanskrit": "तुलसी राम कृपालु सों कहि सुनाउ गुन दोष। होय दूबरी दीनता परम पीन संतोष॥",
+     "line": "Tell the kind one everything, good and bad. The heaviness thins; peace grows.",
+     "translation": "Tulsi, tell the kind Ram all of it, your good points and your faults. Your misery will grow thin and your contentment will grow full.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.7685,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Tulsidas is speaking to his own mind when he is weighed down by the burden of his life. He is telling himself to tell the kind Ram everything, his good points and his faults. He says that by doing this, his misery will grow thin and his contentment will grow full.",
+     "for_you": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       },
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": null
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The company that is never alone",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 161,
+   "llm": 3938,
+   "total": 13451,
+   "select": 9346
+  }
+ },
+ "script": [
+  [
+   "scene",
+   "Krishna is speaking to Arjuna. They are together in the chariot, on the edge of the battlefield. Arjuna has just asked Krishna to tell him the marks of those who are united with the divine. Krishna has been describing how devotees gather and speak of the divine, and how that good company brings them joy. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "तेषामेवानुकम्पार्थमहमज्ञानजं तमः, नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता."
+  ],
+  [
+   "line",
+   "In plain words: Out of compassion, I live in their hearts and clear the darkness with the lamp of understanding."
+  ],
+  [
+   "unpack",
+   "Krishna says he dwells in their hearts out of compassion. He lights a lamp of knowledge inside them to clear the darkness born of ignorance. This is not about being alone or not being alone. It is about where the light comes from. When you read the text, you are not filling a room with another person. You are lighting a lamp. The text is not a substitute for company. It is a door to the company that is never alone. You carry the light yourself."
+  ],
+  [
+   "for_you",
+   "For you, today. You belong more than you feel right now. The people and the practice that hold you are still within reach."
+  ],
+  [
+   "close",
+   "What if the text is not your only company, but the lamp that shows you the way?"
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": "The text you read is not just a story. It is the lamp that clears the darkness born of ignorance. Krishna dwells in the heart of those who seek, and the darkness is the belief that you are alone.",
+  "practice": "Read one verse from the Gita this morning and notice if the words feel like a light entering the quiet.",
+  "question": "Where does the lamp of understanding feel most needed today?"
+ }
+}

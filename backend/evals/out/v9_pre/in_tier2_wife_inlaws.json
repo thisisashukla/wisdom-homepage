@@ -1,0 +1,476 @@
+{
+ "persona": {
+  "id": "in_tier2_wife_inlaws",
+  "market": "India (Indore)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "29, chartered accountant in Indore, married 1 year, lives with in-laws who expect her to give up the practice after a baby. Husband avoids the topic.",
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 2,
+   "topic": "someone",
+   "follow": "in_laws"
+  },
+  "note": "my mother in law keeps saying once the baby comes you will anyway leave all this CA work. I built my practice from zero. my husband just changes the subject. I feel like I am slowly being erased",
+  "note_source": "text",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "erased and unheard",
+   "bridge": "The life she built from zero is what the Gita calls your own dharma: a duty that is yours, not a role that can be handed back to you.",
+   "week_thesis": "Seven days from being erased by a picture they hold to standing in the life she built, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being told your work is a phase, and the anger of it, named without blame."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.85,
+   "core_struggle": "A woman who built her CA practice from zero is being told by her mother-in-law that she will leave it after the baby, while her husband changes the subject.",
+   "mirror": "You built this practice from nothing, and now the room is deciding what you will do with it.",
+   "insight": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.505,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Tension with my in-laws. Being seen as less than you are by the people who ought to know you best, and the anger of watching the life you built get called a phase.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A woman of learning and standing, dismissed by her husband's family, who questioned them openly and stood in her truth until they had no answer."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Seen as less",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:hook_gives_advice",
+    "insight:template",
+    "week_fit:5=0.6,35=0.0,58=0.3,7=0.3,532=0.0,15=0.0",
+    "week_fit:swapped=5",
+    "retried:3",
+    "redo:4",
+    "redo_fixed:3",
+    "dropped:fallback_line=2,gendered=4,missing=2",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:unpack=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 1.8298,
+     "beat": "hook",
+     "role_fit": 0.14,
+     "meaning": "Krishna tells Arjuna that the self can be its own worst enemy or its own truest friend. The moment is one of deep self-reliance. The verse says you can raise yourself, or you can push yourself down. It does not mean you could do it alone. It means you could stop being the one who speaks against yourself.",
+     "for_you": "You are being told your career is a temporary phase, and that is a smallness that belongs to them, not to you. Your CA practice is your own dharma, and you can be your own friend right now by holding that truth steady."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.18.16",
+     "ref": "Bhagavad Gita 18.16",
+     "ref_iast": "Bhagavad Gītā 18.16",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Right after naming the five causes of any action, Krishna warns about the person who ignores four of them.",
+     "sanskrit": "तत्रैवं सति कर्तारमात्मानं केवलं तु यः । पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः ॥",
+     "line": "If you think you alone made it happen, or alone made it fail, you're not seeing the whole picture.",
+     "translation": "That being so, whoever, through an untrained understanding, sees himself alone as the doer does not truly see.",
+     "why": "You are one cause among five; own your part, not the whole outcome.",
+     "misuse": "Not a way to dodge responsibility; you are still one of the five causes.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.2",
+      "title": "What makes an action happen",
+      "summary": "Every action has five causes: the setting, the doer, the instruments, the efforts, and providence. Seeing oneself as the only doer is a mistake.",
+      "story_hook": "",
+      "lesson": "You are one cause among five; own your part, not the whole outcome."
+     },
+     "score": 2.8366,
+     "beat": "diagnose",
+     "role_fit": 0.681,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield after listing the five causes behind any action: the setting, the doer, the instruments, the effort, and providence. Arjuna is about to act alone, believing the entire burden rests on his shoulders. Krishna stops him. He says that whoever looks at their own life through an untrained mind, thinking they alone made it succeed or fail, is not truly seeing. You are one cause among five. You own your part. The rest belongs to the whole.",
+     "for_you": "The picture your mother-in-law holds is not the whole story. You are one cause of this tension, not the whole cause. See the other forces at work so you are not crushed by a single, false verdict."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.2365,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher speaks to a renunciant about the rules of their life. The teacher tells them not to wear out their body chasing pleasure or fleeing pain. When praised, they should not gloat. When blamed, they should not curse others. This means they should keep their body steady and their mind even. They do not have to shrink from blame or swell with praise. They simply do their work without letting the world knock them off balance.",
+     "for_you": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 3.0989,
+     "beat": "steady",
+     "role_fit": 0.245,
+     "meaning": "Krishna tells Arjuna that it is better to walk your own path imperfectly than to perform another's duty perfectly. You do the work that fits your own nature, flaws and all, and you incur no wrong in doing so. It is an offering of your own skill and effort, not a role borrowed from someone else.",
+     "for_you": "The CA practice you built from zero is your own work. It may not be perfect, but it is born from your own nature. You do no wrong by staying in it. You do not need to shrink to make room for a picture of you that someone else holds."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.2083,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Ram tells Lakshman that Hanuman spoke without rushing, without straining, and without using a high or trembling voice. The words came from the chest in an even, middle tone. Calm, clear speech builds trust because it is not afraid of what it says.",
+     "for_you": "You do not need to shout or beg to be heard. Take the next time your mother-in-law speaks and answer with one sentence, in your own steady voice. Say exactly what you mean, and let the silence after it do the rest."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.103.34",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 103.34",
+     "family": "mbh",
+     "speaker": "Brihaspati (retold by Bhishma)",
+     "listener": "Indra",
+     "setting": "Brihaspati counsels Indra on how to hold authority among difficult people.",
+     "sanskrit": "मृदुमप्यवमन्यन्ते तीक्ष्णादुद्विजते जनः / मातीक्ष्णो मा मृदुर्भूस्त्वं तीक्ष्णो भव मृदुर्भव",
+     "line": "People walk over the soft and fear the harsh. Be firm when it's needed, gentle when it's needed.",
+     "translation": "People look down even on the gentle, and they shrink from the harsh. Do not be only harsh, do not be only soft: be firm when firmness is needed and gentle when gentleness is.",
+     "why": null,
+     "misuse": "Firmness here means clarity, not cruelty.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "prasang": null,
+     "score": 3.155,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": null,
+     "for_you": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.brihad.gargi",
+     "title": "Gargi questions Yajnavalkya at Janaka's court",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Yajnavalkya",
+      "Gargi Vachaknavi",
+      "Janaka",
+      "Kahola"
+     ],
+     "story_hook": "In a hall full of the most learned men in the land, one woman stood up twice.",
+     "summary": "King Janaka offers a thousand cows to the wisest scholar. Yajnavalkya claims them and is challenged by one learned man after another. Gargi, the only woman, rises twice like a warrior with two arrows, then graciously tells the hall none of them can beat him. Yajnavalkya closes by asking what root a person grows from when cut down by death.",
+     "lesson": "Ask your hard questions bravely, and give credit where it is due.",
+     "matched": [],
+     "anchor": {
+      "id": "up_brihadaranyak.283",
+      "ref": "Brihadaranyaka Upanishad 3.5.1",
+      "ref_iast": "Bṛhadāraṇyaka Upaniṣad 3.5.1",
+      "family": "up",
+      "speaker": "Yajnavalkya",
+      "listener": "Kahola",
+      "setting": "At King Janaka's debate, Kahola asks about the self.",
+      "sanskrit": "या ह्येव पुत्रैषणा सा वित्तैषणा या वित्तैषणा सा लोकैषणोभे ह्येते एषणे एव भवतस्तस्माद्ब्राह्मणः पाण्डित्यं निर्विद्य बाल्येन तिष्ठासेत् । बाल्यं च पाण्डित्यं च निर्विद्याथ मुनिरमौनं च मौनं च निर्विद्याथ ब्राह्मणः ।",
+      "line": "Wanting children, wanting money, wanting status: it is one desire. Learn, then live with a child's simplicity.",
+      "translation": "The desire for sons is the desire for wealth, and the desire for wealth is the desire for worlds; both are just desires. So a wise man, having done with learning, should seek to live like a child. Having done with both childlike simplicity and learning, he becomes a sage; having done with both silence and its absence, he becomes a true knower.",
+      "why": "Ask your hard questions bravely, and give credit where it is due.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "up.p.brihad.gargi",
+       "title": "Gargi questions Yajnavalkya at Janaka's court",
+       "summary": "King Janaka offers a thousand cows to the wisest scholar. Yajnavalkya claims them and is challenged by one learned man after another. Gargi, the only woman, rises twice like a warrior with two arrows, then graciously tells the hall none of them can beat him. Yajnavalkya closes by asking what root a person grows from when cut down by death.",
+       "story_hook": "In a hall full of the most learned men in the land, one woman stood up twice.",
+       "lesson": "Ask your hard questions bravely, and give credit where it is due."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Gargi, the only woman in the hall, stood up twice to question the wisest man there",
+     "teaser": "Gargi, the only woman in the hall, stood up twice to question the wisest man there",
+     "for_you": "Gargi stood in a room full of men and asked the hardest questions without asking for permission. You built this CA practice from nothing, and you do not need to ask for the space to keep it."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Seen as less",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 217,
+   "llm": 4376,
+   "total": 15983,
+   "select": 11382
+  }
+ },
+ "script": [
+  [
+   "open",
+   "They are telling you that your CA practice ends when the baby comes. Your husband changes the subject. You feel erased, as if the work you built from nothing is a joke to them. They are trying to shrink you down to a smaller picture. It is not the right picture."
+  ],
+  [
+   "scene",
+   "Arjuna is in the middle of a battlefield. He is confused and heavy, asking Krishna what is right. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत्, आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः."
+  ],
+  [
+   "line",
+   "In plain words: Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend."
+  ],
+  [
+   "unpack",
+   "Krishna tells Arjuna that the self can be its own worst enemy or its own truest friend. The moment is one of deep self-reliance. The verse says you can raise yourself, or you can push yourself down. It does not mean you could do it alone. It means you could stop being the one who speaks against yourself."
+  ],
+  [
+   "for_you",
+   "When your mother-in-law speaks, let her voice be theirs. Do not let it become your own. Hold your own worth steady. You are not the problem here."
+  ],
+  [
+   "close",
+   "Who is speaking against you right now?"
+  ]
+ ],
+ "depth": {
+  "life": "Your mother-in-law is drawing a smaller picture of you than the one you live, and your husband is looking away. You are being erased in real time, and no one is stepping in to say you exist.",
+  "points": "You are not your mother-in-law's picture of you, and you are not your husband's silence. The self you have built is the only one that can hold your life steady, because it is the only one that cannot be taken from you.",
+  "practice": "Say your own name out loud, and tell yourself that the CA practice you built is real.",
+  "question": "What does your own voice sound like when you say it is real?"
+ }
+}

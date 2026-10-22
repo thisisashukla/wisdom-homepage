@@ -1,0 +1,257 @@
+/* "Your verse, right now" — the funnel widget. Palette is the site's own
+   (maroon night, diya gold); scoped so it works on any page. */
+.yv {
+  --yv-gold: #c8881e;
+  --yv-gold-light: #f5c96a;
+  --yv-text: #f5e8cc;
+  --yv-dim: rgba(245, 232, 204, 0.72);
+  --yv-dimmer: rgba(245, 232, 204, 0.45);
+  --yv-border: rgba(200, 136, 30, 0.32);
+  --yv-card: rgba(18, 5, 5, 0.78);
+  color: var(--yv-text);
+  scroll-margin-top: 80px;
+  max-width: 600px;
+}
+.yv-step {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--yv-gold-light);
+  margin-bottom: 10px;
+}
+.yv-step span { font-weight: 400; letter-spacing: 0.04em; text-transform: none; color: var(--yv-dimmer); }
+.yv-step-2 { margin-top: 18px; }
+.yv-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.yv-chip {
+  font: inherit;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--yv-text);
+  background: rgba(10, 3, 3, 0.62);
+  border: 1px solid var(--yv-border);
+  border-radius: 999px;
+  padding: 9px 16px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: border-color 160ms cubic-bezier(0.2, 0, 0, 1), background 160ms cubic-bezier(0.2, 0, 0, 1), color 160ms cubic-bezier(0.2, 0, 0, 1), transform 120ms cubic-bezier(0.2, 0, 0, 1);
+}
+.yv-chip:active { transform: scale(0.97); }
+.yv-chip:hover { border-color: var(--yv-gold-light); }
+.yv-chip:focus-visible, .yv-google:focus-visible, .yv-link:focus-visible, .yv-go:focus-visible {
+  outline: 2px solid var(--yv-gold-light);
+  outline-offset: 2px;
+}
+.yv-chip.is-on {
+  background: rgba(200, 136, 30, 0.22);
+  border-color: var(--yv-gold-light);
+  color: #fff;
+}
+.yv-chip-sm { font-size: 13px; padding: 7px 13px; }
+.yv-chip-more { color: var(--yv-dimmer); }
+.yv-go {
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+  font: inherit;
+  font-weight: 700;
+}
+.yv-go[disabled] { opacity: 0.55; cursor: default; }
+.yv-gate {
+  margin-top: 20px;
+  padding: 18px 18px 14px;
+  background: var(--yv-card);
+  border: 1px solid var(--yv-border);
+  border-radius: 14px;
+}
+.yv-gate-head { font-family: "Playfair Display", Georgia, serif; font-size: 20px; color: var(--yv-gold-light); margin-bottom: 4px; }
+.yv-gate-sub { font-size: 14px; color: var(--yv-dim); margin-bottom: 14px; line-height: 1.55; }
+.yv-google {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  color: #1f1f1f;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font: inherit;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+.yv-fine { font-size: 12.5px; color: var(--yv-dimmer); margin-top: 10px; line-height: 1.5; }
+.yv-fine a { color: var(--yv-gold-light); text-decoration: underline; text-underline-offset: 2px; }
+.yv-error { margin-top: 12px; font-size: 14px; color: #f3a6a0; }
+
+.yv-card {
+  background: var(--yv-card);
+  border: 1px solid var(--yv-border);
+  border-radius: 18px;
+  padding: 22px 22px 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+.yv-mirror { font-size: 14px; color: var(--yv-dim); font-style: italic; margin-bottom: 12px; }
+.yv-card-ref {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--yv-gold-light);
+  margin-bottom: 10px;
+}
+.yv-sanskrit {
+  font-family: var(--font-noto-devanagari), "Noto Sans Devanagari", serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--yv-gold-light);
+  margin-bottom: 12px;
+}
+.yv-line {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(19px, 2.4vw, 23px);
+  line-height: 1.35;
+  color: #fff;
+  margin: 0 0 12px;
+}
+.yv-insight { font-size: 15px; color: var(--yv-dim); line-height: 1.6; margin-bottom: 8px; }
+.yv-card-actions { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; padding-top: 12px; border-top: 1px solid rgba(200, 136, 30, 0.18); }
+.yv-link {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 13.5px;
+  color: var(--yv-gold-light);
+  cursor: pointer;
+  text-decoration: none;
+}
+.yv-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.yv-next, .yv-note { margin-top: 18px; }
+.yv-next-head { display: block; font-family: "Playfair Display", Georgia, serif; font-size: 21px; color: var(--yv-gold-light); margin-bottom: 6px; }
+.yv-next-sub { font-size: 14.5px; color: var(--yv-dim); line-height: 1.6; margin-bottom: 4px; }
+.yv-note textarea {
+  width: 100%;
+  margin-top: 10px;
+  background: rgba(10, 3, 3, 0.72);
+  border: 1px solid var(--yv-border);
+  border-radius: 12px;
+  color: var(--yv-text);
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.55;
+  padding: 12px 14px;
+  resize: vertical;
+}
+.yv-note textarea:focus { outline: none; border-color: var(--yv-gold-light); }
+.yv-safety {
+  background: rgba(120, 20, 20, 0.35);
+  border: 1px solid rgba(243, 166, 160, 0.5);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+.yv-safety ul { margin: 8px 0 0 18px; }
+
+.yv-plan { margin-top: 24px; }
+.yv-plan-head h3 { font-family: "Playfair Display", Georgia, serif; font-size: 24px; color: #fff; margin-bottom: 6px; }
+.yv-days { list-style: none; display: grid; gap: 8px; margin-top: 14px; padding: 0; }
+.yv-days details { background: var(--yv-card); border: 1px solid var(--yv-border); border-radius: 12px; }
+.yv-days summary {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 10px;
+  align-items: baseline;
+  padding: 12px 14px;
+  cursor: pointer;
+  list-style: none;
+}
+.yv-days summary::-webkit-details-marker { display: none; }
+.yv-day-n { font-weight: 700; color: var(--yv-gold-light); font-size: 13px; white-space: nowrap; }
+.yv-day-phase { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--yv-dimmer); white-space: nowrap; }
+.yv-day-title { font-size: 14px; color: var(--yv-text); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.yv-day-body { padding: 4px 16px 16px; font-size: 14.5px; line-height: 1.65; color: var(--yv-dim); }
+.yv-day-body p { margin-bottom: 8px; }
+.yv-foryou strong { color: var(--yv-gold-light); font-weight: 600; }
+
+@media (max-width: 720px) {
+  .yv { max-width: 100%; }
+  .yv-chip { font-size: 14px; padding: 8px 14px; }
+  .yv-go { width: 100%; }
+  .yv-card { padding: 18px 16px 14px; }
+  .yv-sanskrit { font-size: 16.5px; }
+}
+
+
+/* ── Motion (calm/premium: one curve, no overshoot) ── */
+.yv { --yv-ease: cubic-bezier(0.4, 0, 0.2, 1); }
+@keyframes yv-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes yv-card { from { opacity: 0; transform: translateY(20px) scale(0.98); } to { opacity: 1; transform: none; } }
+@keyframes yv-rule { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes yv-dot { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+
+/* Situation chips arrive as a micro-cascade once a feeling is picked (≤300ms). */
+.yv-pick .yv-q, .yv-pick .yv-chip { animation: yv-rise 360ms var(--yv-ease) both; }
+.yv-pick .yv-chip { animation-delay: calc(60ms + var(--i, 0) * 25ms); }
+
+/* Gate, next step and note panels enter like a light modal. */
+.yv-gate, .yv-next, .yv-note, .yv-plan { animation: yv-rise 420ms var(--yv-ease) both; }
+.yv-next { animation-delay: 520ms; }
+
+/* The reveal: card lands (primary), lines follow through (secondary),
+   a gold rule draws across the top (ambient accent). */
+.yv-card { position: relative; animation: yv-card 600ms var(--yv-ease) both; }
+.yv-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 22px; right: 22px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(245, 201, 106, 0), rgba(245, 201, 106, 0.9), rgba(245, 201, 106, 0));
+  transform-origin: center;
+  animation: yv-rule 900ms var(--yv-ease) 200ms both;
+}
+.yv-card > * { animation: yv-rise 420ms var(--yv-ease) both; }
+.yv-card > :nth-child(1) { animation-delay: 140ms; }
+.yv-card > :nth-child(2) { animation-delay: 200ms; }
+.yv-card > :nth-child(3) { animation-delay: 270ms; }
+.yv-card > :nth-child(4) { animation-delay: 340ms; }
+.yv-card > :nth-child(5) { animation-delay: 400ms; }
+.yv-card > :nth-child(n + 6) { animation-delay: 440ms; }
+
+/* Loading: three dots breathe (looping ambient, sine). */
+.yv-loading { display: inline-flex; align-items: baseline; gap: 2px; }
+.yv-dots { display: inline-flex; gap: 3px; margin-left: 4px; }
+.yv-dots i { width: 4px; height: 4px; border-radius: 50%; background: currentColor; animation: yv-dot 900ms ease-in-out infinite; }
+.yv-dots i:nth-child(2) { animation-delay: 150ms; }
+.yv-dots i:nth-child(3) { animation-delay: 300ms; }
+
+/* Plan days open with a short fade. */
+.yv-days details[open] .yv-day-body { animation: yv-rise 300ms var(--yv-ease) both; }
+.yv-days summary { transition: background 160ms cubic-bezier(0.2, 0, 0, 1); }
+.yv-days summary:hover { background: rgba(245, 201, 106, 0.05); }
+
+@media (prefers-reduced-motion: reduce) {
+  .yv *, .yv *::before { animation-duration: 1ms !important; animation-delay: 0ms !important; transition-duration: 1ms !important; }
+  .yv-dots i { animation: none; opacity: 0.7; }
+}
+
+/* Intro + question */
+.yv-intro { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+.yv-cta { margin-top: 0; padding: 16px 34px; font-size: 16px; min-width: 240px; }
+.yv-intro-fine { margin-top: 10px; }
+.yv-q { font-family: "Playfair Display", Georgia, serif; font-size: clamp(22px, 2.6vw, 28px); color: #fff; margin-bottom: 14px; }
+.yv-pick .yv-chips { gap: 10px; }
+.yv-chip-else { color: var(--yv-dim); border-style: dashed; }
+.yv-status { font-size: 16px; color: var(--yv-gold-light); display: inline-flex; align-items: baseline; gap: 2px; padding: 14px 0; }
+@media (max-width: 720px) {
+  .yv-intro { align-items: stretch; }
+  .yv-cta { width: 100%; }
+  .yv-intro-fine { text-align: center; }
+}

@@ -1,0 +1,509 @@
+{
+ "persona": {
+  "id": "in_genz_son_career_fight",
+  "market": "India (Jaipur)",
+  "generation": "Gen Z",
+  "gender": "man",
+  "who": "22, wants to be a filmmaker, father is a government doctor who wants him to do MBBS or at least MBA. Fights every dinner.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "papa says films are for rich kids and I should do MBA. we fight every night. I love him and I also feel like he doesn't see me at all. mummy cries in the kitchen",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "torn between love and being unseen",
+   "bridge": "The love and the fight are what the Gita calls a mind pulled two ways. The root is that your worth has become his approval.",
+   "week_thesis": "Seven days from needing your father's approval to standing in your own worth, with the fight still there but no longer your whole world.",
+   "week_beats": {
+    "hook": "You recognise the love and the fight, and the need to be seen by him, without blame on either side.",
+    "diagnose": "You see that the fight is fed by your need for his approval, which turns every word into a test.",
+    "steady": "You hold that your worth is not his to give or take, and that the fight can be there without being your whole world.",
+    "act": "You try doing your own work, letting his approval go, and speaking the true thing to him once.",
+    "story": "A son who fought for his own path and found that his worth was never his father's to give or take."
+   },
+   "undisclosed": false,
+   "texts": [],
+   "confidence": 0.7,
+   "core_struggle": "A student under twenty-five who loves his father but feels unseen by him, fighting every night over film versus MBA while his mother cries in the kitchen.",
+   "mirror": "You love him, and every night you fight, and your mother cries in the kitchen.",
+   "insight": "It isn't the task that weighs on you. It's waiting for someone else to tell you it was enough.",
+   "mechanism": "need_for_approval",
+   "mechanism_label": "Needing their approval",
+   "secondary_mechanism": "expectation_of_others",
+   "situations": [
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 2.001,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.794,
+     "source": "note"
+    },
+    {
+     "id": "criticism",
+     "label": "I take criticism very personally",
+     "weight": 0.689,
+     "source": "note"
+    },
+    {
+     "id": "marriage_conflict",
+     "label": "My partner and I keep fighting",
+     "weight": 0.452,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The love for a father who does not see you, and the nightly fight that comes from needing his approval to feel real.",
+    "diagnose": "When your worth depends on his praise, every word of blame shakes you; craving his approval keeps the mind unsteady and the fight alive.",
+    "steady": "Praise and blame come and go; what is yours cannot be taken by his opinion or his silence.",
+    "act": "Do your own duty as you see it, let his approval go, and speak the true thing to him once, gently and firmly.",
+    "story": "A son who loves his father, fights for his own path, and finds that his worth was never his father's to give or take."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Needing his approval",
+    "The fight and the love",
+    "Standing in your own worth"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "they fight every night",
+    "father dismisses films as for rich kids",
+    "mother cries in the kitchen"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "insight:template",
+    "seat:missing",
+    "retried:1",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:cliche=1,fallback_line=1,missing=2",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 0.5787,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Arjuna is still on the battlefield, unsure of what to do. Krishna tells him that it is better to follow your own path, even if you stumble, than to walk someone else's perfectly. The work that comes from your own nature, done honestly, carries no fault. It is an offering of who you are, flaws and all.",
+     "for_you": "You love your father, and that love makes every argument feel like a test. But your worth does not have to wait for his approval to be real. Your own path, even in the middle of the fighting, is enough."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.41",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 41",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: a satire on how money buys reputation.",
+     "sanskrit": "यस्यास्ति वित्तं स नरः कुलीनः स पण्डितः स श्रुतवान् गुणज्ञः । स एव वक्ता स च दर्शनीयः सर्वे गुणाः काञ्चनमाश्रयन्ति ॥",
+     "line": "Have money and suddenly you are wise, well-born and charming. All virtues seem to lodge in gold.",
+     "translation": "Whoever has wealth is well-born, learned, well-read and a judge of merit; he is the eloquent one, the handsome one. All virtues take shelter in gold.",
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "Satire on the world's flattery, not advice to chase money.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 3.093,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Bhartrihari writes that gold makes people look wise, well-born, and charming. All virtues seem to live inside money. It is a satire on how the world changes its tune when wealth appears, not a lesson on how to be rich.",
+     "for_you": "Your father sees the MBA as a stamp of success. But the world flatters money, not the person. The fight is about what he thinks is valuable, not what you actually are. You do not have to earn your worth in his eyes."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.5607,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari is writing to you about what happens when praise or blame, or money, comes and goes. He says the steady person does not step off the right path. The world will praise you or blame you, and fortune will come and go, but you keep going. This is what steadfastness is. It is not about never feeling bad. It is about the path staying under your feet even when people are shouting at you. The idea is that setbacks rarely last for those who keep going on the right path.",
+     "for_you": "The kitchen cries and the living room fights are loud. But your path is your own. Let them praise or blame. You do not step off it. Your worth is not in their verdict."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "criticism",
+       "label": "I take criticism very personally"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.4484,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Vidura is speaking to King Dhritarashtra, who cannot sleep because he is worried about the coming war. Vidura tells him not to swell with praise or burn at a slight. He says a wise person stays unruffled like a deep pool of the Ganga. They do not get carried away by good words or bad words. They stay deep and still, and from that stillness they know what real happiness is made of.",
+     "for_you": "Your father dismisses your films and your mother cries in the kitchen. Let their words come and go. You do not have to burn at their slight or swell at their praise. You stay deep and still like a river pool, and you keep going."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.0085,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula finds her son Sanjaya lying on the ground after losing his kingdom. She speaks to him sharply. She tells him not to despise himself or shrink to nothing. She asks him to set his mind on what is truly good and to stop fearing. She says that those who never try never succeed, and that past failure does not bind him. She wants him to see that his worth is not the result he lost.",
+     "for_you": "You do not have to carry the weight of his dismissal. Set your mind on your own work today, the films you love. Let his approval go, even for one evening. Do your own work, and let the rest be his to carry."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.29.12",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 29.12",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "Draupadi",
+     "setting": "In exile, Draupadi urges Yudhishthira to answer injustice with force; he argues for forgiveness.",
+     "sanskrit": "आत्मानं च परांश्चैव त्रायते महतो भयात् / क्रुध्यन्तमप्रतिक्रुध्यन्दूयोरेष चिकित्सकः",
+     "line": "Don't answer anger with anger. The one who stays calm protects both people, and heals both.",
+     "translation": "One who does not get angry back at an angry person saves both himself and the other from great danger. He becomes the healer of both.",
+     "why": "Anger rarely heals anything; forgiveness has limits. Wisdom is knowing which a moment needs.",
+     "misuse": "Staying calm is not the same as staying in a situation where you are unsafe.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      },
+      {
+       "id": "marriage_conflict",
+       "label": "My partner and I keep fighting"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.kshama_or_tejas",
+      "title": "Forgiveness or force: Draupadi and Yudhishthira",
+      "summary": "In the forest, Draupadi asks why Yudhishthira does not answer injustice with anger, citing Prahlada's advice that neither force nor forgiveness is always right. Yudhishthira replies that anger destroys and forgiveness holds the world together.",
+      "story_hook": "Thirteen years into exile, Draupadi looked at her husband and asked why he was not angry.",
+      "lesson": "Anger rarely heals anything; forgiveness has limits. Wisdom is knowing which a moment needs."
+     },
+     "score": 2.9213,
+     "beat": "act",
+     "role_fit": 0.708,
+     "meaning": null,
+     "for_you": "Stay the same in praise and blame; do what is right, speak truthfully and gently, and let your worth rest on your own conduct."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.katha.nachiketa_sent",
+     "title": "Nachiketa questions his father's gift",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Nachiketa",
+      "Vajashravasa (Auddalaki)"
+     ],
+     "story_hook": "Nachiketa watched his father give away cows too old to give milk, and could not keep quiet.",
+     "summary": "A father makes a show of giving away all he owns, but the cows are old and dry. His young son Nachiketa keeps asking who he will be given to, until the father snaps, 'To Death!' The boy goes, and tells his father to keep his word.",
+     "lesson": "A child's honest question can show up an adult's empty gesture.",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "anchor": {
+      "id": "up_kath.1.1.4",
+      "ref": "Katha Upanishad 1.1.4",
+      "ref_iast": "Kaṭha Upaniṣad 1.1.4",
+      "family": "up",
+      "speaker": "Nachiketa",
+      "listener": "His father Vajashravasa",
+      "setting": "A boy watches his father give away worn-out cows as a show of piety.",
+      "sanskrit": "स होवाच पितरं तत कस्मै मां दास्यसीति । द्वितीयं तृतीयं तं होवाच मृत्यवे त्वा ददामीति ॥",
+      "line": "A boy asks his father three times, 'To whom will you give me?' The angry answer: 'To Death.'",
+      "translation": "He said to his father, 'Father, to whom will you give me?' He asked a second time, and a third. His father said, 'To Death I give you.'",
+      "why": "A child's honest question can show up an adult's empty gesture.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "parent_conflict",
+        "label": "I keep fighting with my parents"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.katha.nachiketa_sent",
+       "title": "Nachiketa questions his father's gift",
+       "summary": "A father makes a show of giving away all he owns, but the cows are old and dry. His young son Nachiketa keeps asking who he will be given to, until the father snaps, 'To Death!' The boy goes, and tells his father to keep his word.",
+       "story_hook": "Nachiketa watched his father give away cows too old to give milk, and could not keep quiet.",
+       "lesson": "A child's honest question can show up an adult's empty gesture."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Young Nachiketa questioned his father's gift, and his angry father gave him to Death",
+     "teaser": "Young Nachiketa questioned his father's gift, and his angry father gave him to Death",
+     "for_you": "Nachiketa asked his father three times who he would be given, and the father snapped in anger, 'To father dismisses your films, and your mother cries, but the love is still there. You do not have to earn his approval by giving up what matters to you. Your worth is already yours."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Needing his approval",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 132,
+   "llm": 4355,
+   "total": 10424,
+   "select": 5930
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting in a room that smells like old paper and stress, and you are waiting for a man who will not see you. Every night the same fight, every morning the same silence. You love your father, and that love is why the knife hurts so much."
+  ],
+  [
+   "scene",
+   "Arjuna is still on the battlefield, unable to move. Krishna speaks to him, knowing he is torn between duty and despair. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "The work that comes from your own nature, done honestly, carries no fault. It is easier said than done, because you are waiting for his nod to feel real. But your part is not to be perfect. It is to be honest. Your own path, even when you stumble, is enough."
+  ],
+  [
+   "for_you",
+   "Tonight, when the shouting starts, let your part be the truth of what you feel, not the need for him to understand. That is your offering."
+  ],
+  [
+   "close",
+   "What is your own path telling you to do today?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit with your phone for five hours, scrolling through films while your father calls them rich kids' toys. You love him, and that love makes every night's fight feel like a test of your worth. Your mother cries in the kitchen, and you feel torn between the love you hold for them and the deep ache of being unseen.",
+  "points": "Your worth has become his approval. You are waiting for him to tell you your path was enough. The Gita says your own duty, imperfectly walked, is better than another's done perfectly. The love and the fight are what the Gita calls a mind pulled two ways. The root is that your worth has become his approval.",
+  "practice": "Watch one film tonight and name one scene that feels true to you. Write the title down. Do not show it to anyone.",
+  "question": "What would it feel like to watch a film without waiting for his verdict?"
+ }
+}

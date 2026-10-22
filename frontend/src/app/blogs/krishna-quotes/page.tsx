@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Krishna Quotes — 50 Teachings from the Bhagavad Gita with Verse References | Wisdom",
+  title: "Krishna Quotes — 50 Teachings from the Bhagavad Gita with Verse References",
   description: "Krishna quotes stripped of context lose their meaning. Here are 50 sayings of Lord Krishna from the Bhagavad Gita — with Sanskrit verse references, honest translations, and the situation each was spoken in.",
   keywords: "krishna quotes, krishna quotes bhagavad gita, krishna sayings, lord krishna quotes, krishna quotes in sanskrit, krishna quotes on life, krishna quotes on love, krishna quotes on karma, krishna motivational quotes, krishna powerful quotes, bhagavad gita quotes, krishna teachings",
   openGraph: {
@@ -839,12 +840,12 @@ export default function KrishnaQuotesPage() {
       </div>
 
       <div className="content" style={{ paddingTop: 0 }}>
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Krishna Quotes 50 Teachings"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Krishna Quotes 50 Teachings"} />
       </div>
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Krishna Quotes 50 Teachings" />

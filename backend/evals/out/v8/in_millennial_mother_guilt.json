@@ -1,0 +1,511 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "torn and quietly ashamed",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "From the guilt of being pulled in two directions to the steadiness of knowing that a divided self can still be a whole mother.",
+   "week_beats": {
+    "hook": "You recognise the ache of being pulled in two directions and the shame of not being enough.",
+    "diagnose": "You see that the guilt is not the truth of your motherhood, but a belief that you must be fully in one place or the other.",
+    "steady": "You hold that you can serve both without being fully in either, and still be enough.",
+    "act": "You try choosing one moment today to be fully present with your daughter, and let the other duties wait.",
+    "story": "A mother who was torn between the palace and her child shows you what a whole presence looks like, even in a divided day."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.6,
+   "core_struggle": "A working mother of two who feels she is failing at both her job and her children, after her daughter asked why she does not come to school events.",
+   "mirror": "You give the day to both, and at night the car becomes the only place to cry.",
+   "insight": "The guilt is not the truth of your motherhood. It is the sign of a mind that has been taught to believe a woman cannot serve two duties at once.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.66,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.575,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The ache of being pulled in two directions, and the shame of feeling you are not enough for the people you love most. I'm physically home but not present with my kids.",
+    "diagnose": "When duties pull in different directions and fear clouds which one is truly yours, the mind turns against itself and calls it guilt.",
+    "steady": "Duty is not a zero-sum game; you can serve both without being fully in either, and still be enough.",
+    "act": "Choose one moment today to be fully present with your daughter, and let the other duties wait; she will feel your presence more than your time.",
+    "story": "A mother who was torn between the palace and her child, and the child who taught her that love is not measured in hours but in the quality of the moment given."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The guilt of two duties",
+    "What a divided self can still be",
+    "More than enough"
+   ],
+   "seat": "",
+   "life_context": "In her mid-thirties, working and raising two young children; she is back at work after her second baby and every day feels she is splitting herself in two, a feeling sharpened by her daughter's question and the guilt that follows.",
+   "details": [
+    "back at work after second baby",
+    "daughter asked why she does not come to school events",
+    "cried in the car",
+    "feels she is half a mother and half a PM"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "bridge:copied_example",
+    "seat:missing",
+    "week_fit:3=0.9,4=0.6,536=0.9,84=0.6,8=0.7,15=0.3",
+    "week_fit:swapped=1",
+    "retried:2",
+    "redo:3",
+    "redo_fixed:3",
+    "dropped:cliche=1,fallback_line=1,invented_name=1,missing=2,slang=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:scene=cliche",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "rcm.2.159.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 159",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Bharat",
+     "setting": "Kausalya comforts Bharat, who has come home to find his father dead and his brother exiled.",
+     "sanskrit": "अजहुँ बच्छ बलि धीरज धरहू। कुसमउ समुझि सोक परिहरहू॥ जनि मानहु हियँ हानि गलानी। काल करम गति अघटित जानी ॥",
+     "line": "Hold on, child. The times turned against us. Don't carry this loss as your shame.",
+     "translation": "My child, bless you, hold on to courage even now. Seeing that the times are bad, set aside your grief. Knowing that the course of time and karma cannot be turned, don't take this loss as your shame.",
+     "why": "When someone is drowning in guilt for what others did, an embrace helps more than blame.",
+     "misuse": "Easing shame is not denying responsibility where it is real.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.bharat_return",
+      "title": "Bharat comes home to grief",
+      "summary": "Bharat returns from his uncle's home to a silent city. His mother tells him proudly what she arranged; he learns his father is dead and his brother exiled because of him. Overwhelmed with shame he goes to Kausalya, expecting blame, and she embraces him as if Ram had come back, telling him not to carry the loss as his shame.",
+      "story_hook": "Bharat came home and no one in the city would look him in the eye.",
+      "lesson": "When someone is drowning in guilt for what others did, an embrace helps more than blame."
+     },
+     "score": 2.757,
+     "beat": "hook",
+     "role_fit": 0.675,
+     "meaning": "Kausalya finds Bharat at the edge of collapse. He has just returned to Ayodhya to learn his father is dead and his brother exiled, and he is certain the fault is his. He expects blame, but his mother draws him close and tells him to hold on to courage. She says the times turned against them, and because the course of time cannot be turned, he must set aside his grief and not carry this loss as his shame.",
+     "for_you": "You are in the car, crying, and your daughter's question is still ringing. The shame you feel is not yours to keep. It is the weight of a world that believes a mother must be one thing or the other, and it is okay to feel the ache of being pulled apart."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.2.280.chaupai.4",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 280",
+     "family": "rcm",
+     "speaker": "Bharat",
+     "listener": "Janaka",
+     "setting": "Bharat, asked by Janaka what should be done, explains why he can't judge his own case.",
+     "sanskrit": "आगम निगम प्रसिद्ध पुराना। सेवाधरमु कठिन जगु जाना॥ स्वामि धरम स्वारथहि बिरोधू। बैरु अंध प्रेमहि न प्रबोधू ॥",
+     "line": "Duty and self-interest pull against each other. Hatred is blind, and love can't reason.",
+     "translation": "The Vedas, scriptures and Puranas say, and the world knows, that the duty of service is hard. Duty to one's master and self-interest pull against each other; hatred is blind, and love has no judgement.",
+     "why": "When you are too close to a decision, say so, and speak briefly and honestly.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.janaka_chitrakoot",
+      "title": "Janaka's family joins the council",
+      "summary": "Sita's parents arrive and the two families grieve together. Kausalya tells Sunayana that people, like gold, are proved by time. Janaka asks Bharat to decide, and Bharat declines: duty and self-interest pull apart, hatred is blind and love cannot reason, so he will follow Ram's wish. His few words leave the whole court in awe.",
+      "story_hook": "Sita's parents walked into the forest camp, and two grieving families sat down together.",
+      "lesson": "When you are too close to a decision, say so, and speak briefly and honestly."
+     },
+     "score": 2.8201,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "Bharat speaks to his grandfather Janaka in the court of Ayodhya. Janaka asks him to judge a difficult dispute, but Bharat steps back. He tells the king that duty to a master and self-interest pull in different directions. Hatred is blind, and love has no judgement. He says he cannot be fair because his heart is already taken. He chooses to follow Ram's wish instead.",
+     "for_you": "Your daughter's question pulls at you because you are caught between your duty to her and your duty to your work. You do not have to be fully in one place or the other to be a whole mother. Your divided attention is not a failure of love."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.053,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Ribhu teaches his student Nidagha about inner stillness. He says a free person is busy on the outside but unhurried inside. They act fully in the world yet remain calm within. They let go of what is lost, take up what comes, and move through life with a clear mind.",
+     "for_you": "You can be busy on the outside and unhurried inside. You can do the work at hand without letting it agitate you. Your mind can stay clear even when you are pulled in two directions."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 2.9638,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to the reader from his section on steadfastness. He knows the reader will face people who praise and blame, who will offer wealth or take it away, and who will not care about the reader's inner state. He says the steady person does not step off the right path. This means setbacks rarely last for those who keep going on the right path. The steady mind holds its ground when everything else is in motion.",
+     "for_you": "You can hold both your work and your children without letting the noise of either pull you off your path. You do not need to be fully present in both at the same time to be enough for both."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.8",
+     "ref": "Bhagavad Gita 3.8",
+     "ref_iast": "Bhagavad Gītā 3.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna, who asks why he must act at all if understanding is higher.",
+     "sanskrit": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः । शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः ॥",
+     "line": "Do the work that's yours. Doing something beats doing nothing; even living needs action.",
+     "translation": "Do your allotted work, for action is better than inaction. Even the maintenance of your body would not be possible without action.",
+     "why": "Not acting is still a choice; do the work that is yours.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p03.1",
+      "title": "Why doing your duty without attachment is better",
+      "summary": "Arjuna is confused and asks for one clear answer. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction.",
+      "story_hook": "",
+      "lesson": "Not acting is still a choice; do the work that is yours."
+     },
+     "score": 3.1111,
+     "beat": "act",
+     "role_fit": 0.851,
+     "meaning": null,
+     "for_you": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.0886,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat after his father’s death. Bharat is shattered, believing he failed his father. Vasishtha tells him to hold his courage and answer what this moment asks. Bharat rises, ready to leave for the forest to face Ram, even though his heart says the throne is his. The verse says when your mind and your heart are at war, you could still move toward the person you think you wronged, and trust that the next step is the right one.",
+     "for_you": "You feel you are half a mother and half a project manager, but today you can choose one moment with your daughter and let the inbox wait. Let your presence be enough, even if the rest of the day is torn."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "present_parent",
+        "label": "I'm physically home but not present with my kids"
+       },
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "Kausalya saw the cosmos in her son but asked him to be only a child. She wanted the messy, simple hours, not the grand vision. You are not half a mother. You are a mother who is learning to see the whole of your children inside your divided day."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The guilt of two duties",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 184,
+   "llm": 5356,
+   "total": 19445,
+   "select": 13897
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are trying to hold two lives at once, and the space between them is where you are losing your footing. You feel like half a mother and half a project manager, and you are quietly ashamed of that split."
+  ],
+  [
+   "scene",
+   "Kausalya comforts Bharat, who has come home to find his father dead and his brother exiled. Kausalya said to Bharat:"
+  ],
+  [
+   "sanskrit",
+   "अजहुँ बच्छ बलि धीरज धरहू, कुसमउ समुझि सोक परिहरहू. जनि मानहु हियँ हानि गलानी, काल करम गति अघटित जानी."
+  ],
+  [
+   "line",
+   "In plain words: Hold on, child. The times turned against us. Don't carry this loss as your shame."
+  ],
+  [
+   "unpack",
+   "The truth beneath is that a divided self can still be a whole mother. The guilt you feel is not the truth of your motherhood. It is the sign of a mind that has been taught to believe a woman cannot serve two duties at once. This is easier said than done, because the world keeps asking you to choose."
+  ],
+  [
+   "for_you",
+   "When your daughter asks why you are not at her events, you do not need to explain the mechanics of your day. You just need to let her see that she is the reason you are trying so hard. You are carrying her, even when you are not in the room."
+  ],
+  [
+   "close",
+   "The times are turned against you. Do not carry that loss as your shame."
+  ]
+ ],
+ "depth": {
+  "life": "You are back at work after your second baby, and the guilt sits in your chest. You are in the car, crying, and your daughter's question is still ringing.",
+  "points": "You are torn between duties. The shame you feel is not yours to keep. It is the weight of a world that believes a mother must be one thing or the other.",
+  "practice": "Place your hand on your heart and breathe slowly for one minute before you start your work or home tasks.",
+  "question": "What would it feel like to set this loss down without carrying it as your shame?"
+ }
+}

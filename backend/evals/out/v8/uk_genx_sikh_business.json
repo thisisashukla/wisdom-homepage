@@ -1,0 +1,492 @@
+{
+ "persona": {
+  "id": "uk_genx_sikh_business",
+  "market": "UK (Leicester)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "47, runs the family cash-and-carry in Leicester, second generation, Punjabi background. Father (78) still comes in and overrules him in front of staff.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "I've run this business for 15 years and my dad still walks in and changes my decisions in front of the staff. I'm 47. He's 78. I can't say anything because it's his business in his head and he's my father",
+  "note_source": "voice",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call expecting them to be different, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.55,
+   "core_struggle": "I keep fighting with my parents",
+   "mirror": "I keep fighting with my parents",
+   "insight": "What hurts isn't only what they did. It's the picture you hold of how they were meant to be, and it keeps breaking.",
+   "mechanism": "expectation_of_others",
+   "mechanism_label": "Expecting them to be different",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 2.7,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.902,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 1.424,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.199,
+     "source": "note"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 1.195,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 1.0,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I keep fighting with my parents. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Hurt grows from expecting others to act as we want; no one else can give us sorrow unless we hand them the reins of our peace.",
+    "steady": "Each person acts from their own nature; what they do is theirs to carry, and how you respond is yours.",
+    "act": "Do your own duty toward them with patience and respect, accept what is theirs to choose, and keep your peace in your own hands.",
+    "story": "A story of a son or daughter and their parents, facing expecting them to be different."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When they don't see you",
+    "What's yours, what's theirs",
+    "The same self in them"
+   ],
+   "seat": "",
+   "life_context": "Building something of their own and caring for their parents and raising kids. Feels uneasy; closest to \"I keep fighting with my parents\" and \"My parents are getting older far away\".",
+   "details": [],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.22,wro=0.38,see=0.05",
+    "llm_timeout",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:cliche=1,invented=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.7",
+     "ref": "Bhagavad Gita 2.7",
+     "ref_iast": "Bhagavad Gītā 2.7",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+     "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+     "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.7883,
+     "beat": "hook",
+     "role_fit": 0.94,
+     "meaning": "Arjuna stands on the field, his body trembling, his resolve gone. He looks at his teachers, his kin, and the weight of the coming war crushes him. He tells Krishna that his mind is clouded, his heart shaken. He asks plainly what he ought to do. He offers himself as a student, ready to hear the truth.",
+     "for_you": "You are standing in the middle of your life, caring for your parents and your work, and you feel that something is deeply wrong but you cannot name it. This verse says that admitting you are lost is not a defeat. It is the moment clarity can finally begin."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.578,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Krishna is answering Arjuna's question about what a steady person looks like. He says that when someone keeps dwelling on something, attachment grows. That attachment turns into wanting, and when that wanting is blocked, it turns into anger. This is how a mind that seems steady can actually be ruined from the inside. The steady mind is one that guards where it puts its attention.",
+     "for_you": "The unease you feel is not just about your parents. Today, notice what you are dwelling on. That picture of them, that expectation, is what is turning into anger."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.179",
+     "ref": "Maha Upanishad 4.30",
+     "ref_iast": "Mahā Upaniṣad 4.30",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on calm, continued.",
+     "sanskrit": "मातरीव परं यान्ति विषमाणि मृदूनि च । विश्वासमिह भूतानि सर्वाणि शमशालिनि ॥",
+     "line": "Everyone, gentle or fierce, comes to trust a calm person, the way we trust a mother.",
+     "translation": "All beings, the harsh and the gentle alike, come to trust the person who is calm, as they would trust a mother.",
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 3.3444,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Ribhu is speaking to Nidagha. He tells him that all beings, whether they are harsh or gentle, will come to trust a calm person. They will trust that person the way they trust a mother. Ribhu means that calm is the first gatekeeper. When you start with calm, the rest of the path opens. The mind is naturally restless, and only your own mind can lift you out of that restlessness.",
+     "for_you": "Your mind is restless because you are trying to control a picture that will not hold. Today, try to find one small thing that is calm, even if it is just for a moment. Let that calm be your mother, the one you can trust."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.146.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 146",
+     "family": "rcm",
+     "speaker": "Sumantra",
+     "listener": "Dasharath",
+     "setting": "Sumantra returns alone to the grieving king Dasharath and steadies him.",
+     "sanskrit": "जनम मरन सब दुख सुख भोगा। हानि लाभु प्रिय मिलन बियोगा॥ काल करम बस होहिं गोसाईं। बरबस राति दिवस की नाईं ॥ सुख हरषहिं जड़ दुख बिलखाहीं। दोउ सम धीर धरहिं मन माहीं॥ धीरज धरहु बिबेकु बिचारी। छाड़िअ सोच सकल हितकारी ॥",
+     "line": "Gain and loss, meeting and parting come like day and night. The steady hold both alike.",
+     "translation": "Birth and death, joy and sorrow, loss and gain, meeting and parting with those we love: these come under the sway of time and action, as surely as night and day. The foolish rejoice in good times and wail in bad; the steady hold both alike in the mind. Hold on to your courage, think with discernment, and let go of worry, you who care for everyone.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": null,
+     "score": 2.6616,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Sumantra returns alone to the grieving king Dasharath in Ayodhya Kand and steadies him. He tells the king that birth and death, joy and sorrow, loss and gain, meeting and parting with those we love come under the sway of time and action, as surely as night and day. The foolish rejoice in good times and wail in bad. The steady hold both alike in the mind. Sumantra asks the king to hold on to his courage, think with discernment, and let go of worry.",
+     "for_you": "You are holding the weight of your parents' aging and your children's growing away. Let the day and night come and go without holding them to a different shape than they are. What can you hold steady in your mind today?"
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 3.2063,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari speaks to the reader from the section on helping others, describing how the good behave. He says to cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, and be kind to those in pain. He notes that success should make you bow lower. Real ornaments are listening, giving, and helping.",
+     "for_you": "When you speak with your parents today, let your words be the only thing you control. Offer one small courtesy without expecting the fight to end, and see what shifts in the air between you."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.1184,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "The sage Vasishtha is speaking to Bharat. Bharat is shattered by his father's death and his brother's exile. Vasishtha tells him to keep courage in his heart and to do what this moment asks of him. Hearing this, Bharat rises and makes everything ready. Vasishtha means that when your head and your heart disagree, you could go and face the person you think you wronged.",
+     "for_you": "There is a moment today that asks for your courage, not your argument. It is the step you take toward your parents before your mind fills the space with old pictures. You do not need to fix the past. You only need to show up and do what is in front of you."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.kausalya_consents",
+     "title": "Kausalya lets Ram go",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Kausalya",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+     "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+     "lesson": "Love sometimes means staying behind to care for someone else.",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      },
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.24.20",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 24.20",
+      "family": "vr",
+      "speaker": "Ram",
+      "listener": "Kausalya",
+      "setting": "Ram's mother wants to follow him into exile; he asks her instead to stay and look after his grieving father.",
+      "sanskrit": "यथा मयि तु निष्क्रान्ते पुत्रशोकेन पार्थिवः॥ श्रमं नावाप्नुयात् किंचिदप्रमत्ता तथा कुरु। दारुणश्चाप्ययं शोको यथैनं न विनाशयेत्॥ राज्ञो वृद्धस्य सततं हितं चर समाहिता।",
+      "line": "When I'm gone, look after him. Don't let his grief wear him down.",
+      "translation": "Take care that when I am gone the king does not wear himself out with grief for his son, that this terrible sorrow does not destroy him. Look after the old king's welfare always.",
+      "why": "Love sometimes means staying behind to care for someone else.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.kausalya_consents",
+       "title": "Kausalya lets Ram go",
+       "summary": "Ram's mother faints at the news and begs to come with him. Ram gently refuses, asks her to look after his grieving father, and wins her blessing for the journey.",
+       "story_hook": "His mother had waited seventeen years for this day, and it was taken from her in a morning.",
+       "lesson": "Love sometimes means staying behind to care for someone else."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "teaser": "Kausalya waited years for Ram's crowning, and lost him in a morning",
+     "for_you": "Kausalya stays behind to hold the house together. You are also being asked to hold something steady for someone else, even when it costs you. Let your love show in the steadiness of your presence, not in the picture you hold of how they should be."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When they don't see you",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 236,
+   "llm": 7017,
+   "total": 18590,
+   "select": 11335
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying the weight of two generations, and the strain is showing. The work you are building demands everything, and now your parents are needing you more as they grow older. The space between you is filling with words you wish you could take back."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the field, his body trembling, his resolve gone. He looks at his teachers, his kin, and the weight of the coming war crushes him. He tells Krishna that his mind is clouded, his heart shaken. He asks plainly what he ought to do. He offers himself as a student, ready to hear the truth. And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः, यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्."
+  ],
+  [
+   "line",
+   "In plain words: I'm confused about what's right. Tell me plainly what's best; I'm ready to learn."
+  ],
+  [
+   "unpack",
+   "This is where clarity begins, not at the moment you have all the answers, but at the moment you admit you do not. It is one thing to feel confused about what is right, and another to refuse to fight until you know the truth. You are not asked to have the picture in your head be perfect before you can act. You are asked to lay down the demand that they must be different, and to see what is right in front of you."
+  ],
+  [
+   "for_you",
+   "Today, when you feel the old argument rising in your chest, pause and let your body tell you that you are confused. Do not try to solve the picture in your head. Just sit with the fact that you do not know what is right, and let that be enough for this one moment."
+  ],
+  [
+   "close",
+   "What if the fight ends not when they change, but when you stop needing them to?"
+  ]
+ ],
+ "depth": {
+  "life": "You are carrying your parents and your children and your own work, and you keep fighting with your parents. The picture of how they should be keeps breaking, and you feel the strain of it in your body. You are in the middle of a life that is asking a lot of you.",
+  "points": "What you feel right now is the weight of expecting your parents to be different from who they are. The truth underneath is that your confusion is not a failure. It is the honest admission that your old picture of them no longer fits the life you are living.",
+  "practice": "Sit quietly for a few minutes and name one thing you expect from your parents that they cannot give. Let that expectation sit without trying to fix it.",
+  "question": "What would change if you stopped asking them to be different?"
+ }
+}

@@ -1,0 +1,497 @@
+{
+ "persona": {
+  "id": "au_genx_divorce",
+  "market": "Australia (Melbourne)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "44, dentist in Melbourne, from Chandigarh originally, separated 6 months ago, kids with ex 4 days a week. Parents in India don't know yet.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "quietly lonely and hiding",
+   "bridge": "The quiet you fill with the television is what the Upanishads call the heart searching for where it belongs: not in noise, but in what is real.",
+   "week_thesis": "From filling the quiet with noise to meeting the silence as the place where the truth you are hiding can finally be held.",
+   "week_beats": {
+    "hook": "You recognise the loneliness of the quiet house and the fear of telling your parents.",
+    "diagnose": "You see that the TV is filling a silence that is really a truth you are not yet ready to speak.",
+    "steady": "You hold that the quiet is not emptiness, and the love that was real is not gone.",
+    "act": "You try sitting with the quiet for one minute, and writing one true sentence you have not yet spoken.",
+    "story": "A mother in a quiet house shows you how the silence itself can become the beginning of speaking the truth."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.5,
+   "core_struggle": "A separated mother who sees her children three nights a week hides the truth from her parents in Chandigarh and fills the quiet house with noise.",
+   "mirror": "You leave the TV on to fight the quiet, and you haven't told your parents because you know what they'll say.",
+   "insight": "Even among people, you've felt unseen. The distance is real, and so is the way back.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.11,
+     "source": "note"
+    },
+    {
+     "id": "breakup",
+     "label": "I'm heartbroken after a breakup",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.687,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.675,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 0.648,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "I feel lonely. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "When the heart feels separate from people and purpose, the mind fills the silence with noise; disconnection grows from a truth that is not spoken.",
+    "steady": "The one who feels separate is not separate; the quiet is not emptiness, and the love that was real is not gone.",
+    "act": "Sit with the quiet for one minute without turning anything on; write one true sentence you have not yet spoken; let one small thing be as it is.",
+    "story": "A mother separated from her partner, raising her children in a quiet house, who found that the silence itself was the place to begin again."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet you fill",
+    "The truth you carry",
+    "The heart that is not alone"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "separated six months ago",
+    "sees children three nights a week",
+    "has not told parents in Chandigarh",
+    "the house is quiet on nights children are not there"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:hook_gives_advice",
+    "insight:template",
+    "week_fit:8=0.6,126=0.3,61=0.6,19=0.6,536=0.6,20=0.6",
+    "week_fit:swapped=1",
+    "redo:4",
+    "redo_fixed:3",
+    "dropped:fallback_line=2,not_second_person=1,repeat=2,verdict=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.051,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna has dropped his bow and sits on the battlefield, his mind empty. He tells Krishna that even if he were given every kingdom and the power of the gods, it would not touch this grief that is drying him up inside. He does not know what to do and asks Krishna to show him the way.",
+     "for_you": "The house is quiet on the nights the children are not there. The television fills the room, but the silence is still there, waiting. Let it be. You do not need to know what to do next. You only need to say, out loud, that you are lost."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 3.0326,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Arjuna asks Krishna how a steady person should speak, sit, and walk. Krishna answers that a person of wisdom is content within, unshaken by sorrow, and master of the senses. He explains that when you dwell on objects, attachment is born. From attachment comes desire, and when desire is blocked, it turns into anger. The steady person guards their attention, because anger begins with what you allow yourself to dwell on.",
+     "for_you": "You belong more than you feel right now; the people and the practice that hold you are still within reach."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.61",
+     "ref": "Rahim doha 61",
+     "ref_iast": "Rahīm dohā 61",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on a love so close it needs no news.",
+     "sanskrit": "जेहिं रहीम तन-मन दियो, कियो हिए बिच भौन। तासों दुख-सुख कहन की, रही बात अब कौन॥",
+     "line": "The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "translation": "Rahim says: to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling?",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      }
+     ],
+     "prasang": null,
+     "score": 3.3837,
+     "beat": "steady",
+     "role_fit": 0.675,
+     "meaning": "Rahim says that to the one who has been given body and mind, who has made a home in the heart, what joy or sorrow is left that needs telling? The one who lives in your heart already knows your joys and sorrows. Nothing needs explaining.",
+     "for_you": "The television is trying to explain the sorrow you feel. But the love that was real is not gone. The quiet is not emptiness, and the one who knows your heart is closer now than any noise can be."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.15.19",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 15.19",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on the third gatekeeper: contentment (santosha).",
+     "sanskrit": "समतासुन्दरं वक्रं पुरुषस्यावलोकयन् । तोषमेति यथा लोको न तथा धनसंचयैः ॥",
+     "line": "A calm, contented face gives people more joy than a pile of money.",
+     "translation": "People feel more joy looking at a face made beautiful by equanimity than from piles of wealth.",
+     "why": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "marriage_distance",
+       "label": "My marriage feels distant"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.four_gatekeepers",
+      "title": "The four gatekeepers: calm, inquiry, contentment, good company",
+      "summary": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others.",
+      "story_hook": "",
+      "lesson": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow."
+     },
+     "score": 3.1731,
+     "beat": "steady",
+     "role_fit": 0.505,
+     "meaning": "Vasishtha tells Rama that four gatekeepers stand at the door to freedom: calm, inquiry, contentment, and good company. He says you only need to start with one, because each one strengthens the others. A calm, contented face gives people more joy than a pile of money. This means that if you choose to grow one of these, like contentment, the others will follow naturally.",
+     "for_you": "The one self lives in every heart; seen truly, you were never separate from others or from the divine."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.796,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu tells Nidagha that a free person lives fully in the world but stays unhurried inside. They are busy on the outside and calm on the inside. They let go of what is lost, take up what comes, and do the work at hand. This means you can move through your life, with all its noise and demands, while keeping your mind clear and steady.",
+     "for_you": "When the house is quiet and the screen is off, let the silence sit with you for one minute. You do not have to fill it. You only have to let it be there."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ashtavakra.18.20",
+     "ref": "Ashtavakra Gita 18.20",
+     "ref_iast": "Aṣṭāvakra Gītā 18.20",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "In the long closing chapter on peace, Ashtavakra paints the calm of the wise.",
+     "sanskrit": "प्रवृत्तौ वा निवृत्तौ वा नैव धीरस्य दुर्ग्रहः । यदा यत्कर्तुमायाति तत्कृत्वा तिष्ठतः सुखम् ॥",
+     "line": "Don't cling to doing or to not doing. Do what's in front of you and stay at ease.",
+     "translation": "The steady person has no stubborn attachment to doing or to not doing. Doing whatever comes to be done, he stays at ease.",
+     "why": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.peace",
+      "title": "The calm of the wise",
+      "summary": "In a hundred verses Ashtavakra paints the inner peace of the wise: calm while busy, unmoved by gain or loss, praise or blame, at ease whether in the city or the forest. The restless, by contrast, chase peace and never find it.",
+      "story_hook": "",
+      "lesson": "Calm isn't found by chasing it or changing places; it is how you hold ordinary life."
+     },
+     "score": 2.6187,
+     "beat": "act",
+     "role_fit": 0.809,
+     "meaning": "Ashtavakra speaks to Janaka about the mind of the steady. Janaka sits as a king with duties and decisions before him. Ashtavakra says that the calm person has no stubborn attachment to doing or to not doing. Doing whatever comes to be done, he stays at ease. This means peace is not found by chasing it or changing places. It is how you hold ordinary life.",
+     "for_you": "let the quiet be your companion for one minute. Then write one true sentence on paper that you have not yet spoken aloud."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bhasa_vilasa",
+     "title": "Two old friends meet again and admit they never found peace",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bhasa",
+      "Vilasa"
+     ],
+     "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+     "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+     "lesson": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.66.34",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+      "family": "yv",
+      "speaker": "Bhasa",
+      "listener": "Vilasa",
+      "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+      "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+      "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+      "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+      "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.bhasa_vilasa",
+       "title": "Two old friends meet again and admit they never found peace",
+       "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+       "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+       "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Two childhood friends met again as old men, and neither had found peace",
+     "teaser": "Two childhood friends met again as old men, and neither had found peace",
+     "for_you": "Bhasa and Vilasa spent their lives running from quiet, filling it with endless tasks. You fill your quiet with noise. Let the silence sit with you. In that stillness, you can hear your own voice, the one that knows the truth you are hiding."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet you fill",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 186,
+   "llm": 5193,
+   "total": 13896,
+   "select": 8510
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is quiet on the nights the children are not there. You fill the rooms with noise so the silence does not notice you. But you feel unseen even in a full room. This grief is drying you up inside."
+  ],
+  [
+   "scene",
+   "Arjuna has dropped his bow and sits on the battlefield, his mind empty. He tells Krishna that even if he were given every kingdom and the power of the gods, it would not touch this grief that is drying him up inside. He does not know what to do and asks Krishna to show him the way. And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "Arjuna is saying he cannot buy his way out of this. No amount of victory or power can touch this sorrow. Admitting he does not know what to do is where clarity begins. It is not weakness to say you are lost. It is the first honest step toward seeing the path."
+  ],
+  [
+   "for_you",
+   "Let the television stay off for a few minutes. Say out loud, I am lost. You do not need to know the next move. You only need to admit that the quiet is real."
+  ],
+  [
+   "close",
+   "The silence is waiting. Let it hold you."
+  ]
+ ],
+ "depth": {
+  "life": "You are in the quiet of the house, filling the space with noise so the silence does not find you. You are separated, and the nights the children are not there, you hide the truth from your parents in Chandigarh. You feel unseen even among people.",
+  "points": "Arjuna, facing a great battle, admitted he saw no way to drive away his sorrow, not even a prosperous kingdom. He did not know what was right or what to do. He asked for help. Admitting you do not know where to turn is the first step toward seeing clearly.",
+  "practice": "Sit in the quiet room for two minutes and name, out loud, that you are lost. Let the words fill the space instead of the television.",
+  "question": "What would it feel like to say out loud, even to yourself, that you do not know what to do next?"
+ }
+}

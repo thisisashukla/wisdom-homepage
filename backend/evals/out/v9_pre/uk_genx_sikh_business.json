@@ -1,0 +1,511 @@
+{
+ "persona": {
+  "id": "uk_genx_sikh_business",
+  "market": "UK (Leicester)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "47, runs the family cash-and-carry in Leicester, second generation, Punjabi background. Father (78) still comes in and overrules him in front of staff.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "I've run this business for 15 years and my dad still walks in and changes my decisions in front of the staff. I'm 47. He's 78. I can't say anything because it's his business in his head and he's my father",
+  "note_source": "voice",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "angry and trapped",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being overruled in your own business to holding your ground in the room where it happens.",
+   "week_beats": {
+    "hook": "You recognise being overruled by your father, and the anger and helplessness of it, named without blame.",
+    "act": "You try speaking the true thing to him, gently and firmly, the next time he walks in.",
+    "story": "A son who built what his father gave him, and then had to stand before him and say the business was his now."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.85,
+   "core_struggle": "A man in his late forties running a -year business is being overruled in front of his staff by his -year-old father, who still sees it as his own.",
+   "mirror": "What you told us: runs the business for years.",
+   "insight": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.25,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.691,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.56,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "Being overruled in the business you have run for fifteen years by the man who raised you, and the anger of being unable to speak up in front of your own people. I keep fighting with my parents.",
+    "diagnose": "When someone sees only a role instead of a person, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what he sees; your authority was never his to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing, gently and firmly, on the day he next walks in; hold your ground on what is yours in that room, and find the courage the moment asks for.",
+    "story": "A son who built what his father gave him, and then had to stand before him and say the business was his now."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The man who cannot let go",
+    "Whose picture it is",
+    "The one who holds the room"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs the business for years"
+   ],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "bridge:copied_example",
+    "mirror:fallback",
+    "seat:missing",
+    "week_fit:3=0.3,40=0.6,58=1.0,106=0.6,7=1.0,1=0.6",
+    "week_fit:swapped=1",
+    "retried:2",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:accept=1,cliche=1,fallback_lesson=1,fallback_line=3,missing=3,repeat=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:unpack=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.7",
+     "ref": "Bhagavad Gita 2.7",
+     "ref_iast": "Bhagavad Gītā 2.7",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+     "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+     "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.4163,
+     "beat": "hook",
+     "role_fit": 0.94,
+     "meaning": "Arjuna stands on the battlefield, his body trembling, his mind a fog. He has refused to fight and has collapsed in tears. He looks at Krishna and says he is stricken by weakness, his mind confused about what is right. He asks Krishna to tell him plainly what is best, offering himself as a student ready to learn.",
+     "for_you": "You are standing in the middle of your own business, your father's words cutting through the room, and your mind is a fog. You feel the anger rise, but you do not know which way is best. Let that confusion be real. You are not failing."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.niti.40",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 40",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on wealth: how the world treats someone who has lost money.",
+     "sanskrit": "तानीन्द्रियाण्यविकलानि तदेव नाम सा बुद्धिरप्रतिहता वचनं तदेव । अर्थोष्मणा विरहितः पुरुषः क्षणेन सोऽप्यन्य एव भवतीति विचित्रमेतत् ॥",
+     "line": "Same person, same mind, same voice. Lose money, and people suddenly treat you as someone else.",
+     "translation": "The same faculties, unimpaired; the same name; the same unclouded mind; the same speech. Yet a man deprived of the warmth of wealth becomes, in a moment, someone else. How strange!",
+     "why": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it.",
+     "misuse": "The verse mocks how the world sees you; it does not measure your worth.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.artha",
+      "title": "Nitishatakam: On wealth",
+      "summary": "A wry look at money: how the world flatters the rich and forgets the broke, wealth's three destinies, and how distance and neglect ruin what we value. It closes with advice to the chataka bird not to plead before every cloud.",
+      "story_hook": "",
+      "lesson": "Money changes how others see you, not who you are. Give it, enjoy it, or lose it."
+     },
+     "score": 3.0529,
+     "beat": "diagnose",
+     "role_fit": 0.51,
+     "meaning": "Bhartrihari speaks to the reader about the strange way the world shifts its gaze. The same mind, the same voice, the same unclouded faculties remain, yet a man who loses his wealth becomes someone else to those around him. The verse observes this change without saying it is just, and it points to the fact that the worth is in the person, not the purse.",
+     "for_you": "Your father sees a different person today than the one who runs the business. The worth you carry is not the one he is handing back. The room he enters is not the room that holds your full name."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.1302,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": null,
+     "for_you": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.106",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 106",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on action.",
+     "sanskrit": "कदर्थितस्यापि हि धैर्यवृत्तेर्न शक्यते धैर्यगुणः प्रमार्ष्टुम् । अधोमुखस्यापि कृतस्य वह्नेर्नाधः शिखा याति कदाचिदेव ॥",
+     "line": "Turn a torch upside down and its flame still rises. Steadiness survives humiliation.",
+     "translation": "Even when harassed, the steadfast cannot be robbed of their steadiness. Hold a torch upside down: its flame never points downward.",
+     "why": "Your actions are the one thing fate itself must answer to.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.karma",
+      "title": "Nitishatakam: On action",
+      "summary": "The answer to the fate section: even fate only delivers the fruit of actions, so bow to action itself. Weigh outcomes before rash deeds, keep steady under humiliation, and speak kindly. The closing verses are miscellaneous maxims in some editions.",
+      "story_hook": "",
+      "lesson": "Your actions are the one thing fate itself must answer to."
+     },
+     "score": 3.1044,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Bhartrihari speaks to the reader from his section on action. He says that even when someone is harassed, the steadfast cannot be robbed of their steadiness. He tells them to hold a torch upside down. Its flame never points downward. The verse proposes that your actions are the one thing fate itself must answer to. Your steadiness survives the humiliation, because the only thing that matters is the action you set in motion.",
+     "for_you": "You are holding the business steady while your father walks in and overrules you. The humiliation is real, but your actions are the one thing that cannot be taken. You are still standing, even when the room makes you feel small."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.42,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": "Queen Vidula speaks to her son Sanjaya after he has lost his kingdom and lies defeated. She tells him not to hold himself in contempt, and not to keep it going on too little. She says set your mind on what is truly good and don't be afraid. The verse proposes that past failure does not define you. Results are uncertain, but those who never try never succeed.",
+     "for_you": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.2411,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Bharat is shattered by his father's death and Ram's exile, and he refuses to take the throne. The sage Vasishtha tells him to keep courage in his heart and do what today asks of him. Bharat hears this and rises to act on what his conscience requires.",
+     "for_you": "Stand in your own truth and do your own duty from it; let their picture stay theirs, and let your conduct speak."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.prahasta_mandodari",
+     "title": "Mandodari and Prahasta warn Ravana again",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Mandodari",
+      "Ravana",
+      "Prahasta"
+     ],
+     "story_hook": "The bridge was built, the army was across, and the king of Lanka was still laughing.",
+     "summary": "Mandodari, hearing the bridge is built, again begs Ravana to pick fights only where he can win, and to step back. Ravana boasts. His son Prahasta tells the court that flatterers are many and honest advisers few, and suggests first sending an envoy. Ravana insults him, and Prahasta leaves saying good advice cannot reach one set on ruin.",
+     "lesson": "Some people cannot hear good advice; give it, then stop beating yourself up.",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.6.12.chaupai.3",
+      "ref": "Ramcharitmanas · Lanka Kand",
+      "ref_iast": "Rāmcaritmānas, Laṅkā Kāṇḍ 12",
+      "family": "rcm",
+      "speaker": "Prahasta",
+      "listener": "Ravana",
+      "setting": "Prahasta, Ravana's son, leaves after his father rejects his advice and insults him.",
+      "sanskrit": "हित मत तोहि न लागत कैसें। काल बिबस कहुँ भेषज जैसें॥ संध्या समय जानि दससीसा। भवन चलेउ निरखत भुज बीसा ॥",
+      "line": "Good advice won't take on someone set on ruin, like medicine on the dying.",
+      "translation": "How is it that sound advice doesn't take with you? Like medicine on one in death's grip. Seeing it was evening, Ravana went to his palace, admiring his twenty arms.",
+      "why": "Some people cannot hear good advice; give it, then stop beating yourself up.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "parent_conflict",
+        "label": "I keep fighting with my parents"
+       },
+       {
+        "id": "hard_conversation",
+        "label": "I have to give someone bad news"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.prahasta_mandodari",
+       "title": "Mandodari and Prahasta warn Ravana again",
+       "summary": "Mandodari, hearing the bridge is built, again begs Ravana to pick fights only where he can win, and to step back. Ravana boasts. His son Prahasta tells the court that flatterers are many and honest advisers few, and suggests first sending an envoy. Ravana insults him, and Prahasta leaves saying good advice cannot reach one set on ruin.",
+       "story_hook": "The bridge was built, the army was across, and the king of Lanka was still laughing.",
+       "lesson": "Some people cannot hear good advice; give it, then stop beating yourself up."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "The bridge was built and the army had crossed, and Ravana was still laughing",
+     "teaser": "The bridge was built and the army had crossed, and Ravana was still laughing",
+     "for_you": "Some people cannot hear good advice; give it, then stop beating yourself up."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The man who cannot let go",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 120,
+   "llm": 4705,
+   "total": 15965,
+   "select": 11132
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are standing in the middle of your own business, your father's words cutting through the room, and your mind is a fog. You feel the anger rise, but you do not know which way is best. Let that confusion be real. You are not failing."
+  ],
+  [
+   "scene",
+   "Arjuna stands on a battlefield. His body is trembling. His mind is a fog. He has refused to fight. He has collapsed in tears. He looks at Krishna and says he is stricken by weakness. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः, यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्."
+  ],
+  [
+   "line",
+   "In plain words: I'm confused about what's right. Tell me plainly what's best; I'm ready to learn."
+  ],
+  [
+   "unpack",
+   "Arjuna stands on the battlefield, his body trembling, his mind a fog. He has refused to fight and has collapsed in tears. He looks at Krishna and says he is stricken by weakness, his mind confused about what is right. He asks Krishna to tell him plainly what is best, offering himself as a student ready to learn."
+  ],
+  [
+   "for_you",
+   "When your father speaks over you, you do not have to have the perfect answer in that second. You only have to be honest about the confusion. Let the anger sit. Let the fog sit. You do not need to fix the room right now. You only need to name what is happening. That is your part."
+  ],
+  [
+   "close",
+   "What is best for you right now is simply this. The truth underneath your confusion."
+  ]
+ ],
+ "depth": {
+  "life": "Your father is speaking to your staff, and you are standing there. You feel the anger, but you are also unsure of what to do. The confusion is as real as the disrespect.",
+  "points": "The texts say that clarity begins when you stop pretending you know the answer and admit you are confused. You are not weak for not knowing what to do next.",
+  "practice": "Step into a private space and say out loud that you do not know what to do. Let the words sit there.",
+  "question": "What would it feel like to let the confusion be true for a moment?"
+ }
+}

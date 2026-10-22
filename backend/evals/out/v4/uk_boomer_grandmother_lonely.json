@@ -1,0 +1,500 @@
+{
+ "persona": {
+  "id": "uk_boomer_grandmother_lonely",
+  "market": "UK (Birmingham)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "68, came from Jalandhar in 1976, worked in a factory then raised 3 children. Widowed. Children busy, grandchildren on phones. Reads Ramcharitmanas.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely and quietly proud",
+   "bridge": "What you call the only company in your morning is what the texts call a door: the Ramayana is where the search begins, and the search is where the company becomes a meeting.",
+   "week_thesis": "This week turns the Ramayana from the only company you have into the first place you meet what you are searching for.",
+   "week_beats": {
+    "hook": "You recognise the search for something deeper in your morning with the Ramayana.",
+    "diagnose": "You see that the search itself is the meeting it was looking for.",
+    "steady": "You hold that the presence you seek is not a person or a memory, but the truth that was already here.",
+    "act": "You try reading one verse and sitting with it, letting it be the company it already is.",
+    "story": "A woman who lost her husband and raised her children alone shows you that the company you need is already in your hands."
+   },
+   "confidence": 0.8,
+   "core_struggle": "A widow who raised her children alone and now reads the Ramayana in the mornings is searching for something deeper in her own company.",
+   "mirror": "You gave your children everything, and now the morning is yours alone with the Ramayana.",
+   "insight": "Even among people, you've felt unseen. The distance is real, and so is the way back.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.64,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.17,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.884,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.392,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A life of giving, a quiet house, and a search that has already begun in the morning pages of an old story. I feel lonely.",
+    "diagnose": "When the heart searches for what is real and does not pass, the search itself becomes the meeting it was looking for.",
+    "steady": "The presence you seek is not in the next person or the next page, but in the truth that was always here.",
+    "act": "Read one verse and sit with it, letting it be the company it already is.",
+    "story": "A woman who lost her husband and raised her children alone, who found her footing not in a new person but in the truth that was already in her hands."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The only company",
+    "The search itself",
+    "What was already there"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "children visit but are on their phones",
+    "reads Ramayana in the morning"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:seeking_over_pain",
+    "hook:anchored_to_situation",
+    "insight:template",
+    "day1_other_text:tulsi",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:fallback_line=1,invented_name=3",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:open=invented_name",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "tulsi_kv.7.57",
+     "ref": "Kavitavali",
+     "ref_iast": "Kavitāvalī, Uttar Kāṇḍ 57",
+     "family": "tulsi",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Tulsidas on his own childhood: abandoned at birth, he grew up begging.",
+     "sanskrit": "मातु-पिताँ जग जाइ तज्यो बिधिहूँ न लिखी कछु भाल भलाई। नीच, निरादरभाजन, कादर, कूकर-टूकन लागि ललाई॥ रामु-सुभाउ सुन्यो तुलसीं प्रभुसों कह्यो बारक पेटु खलाई। स्वारथको परमारथको रघुनाथु सो साहेबु, खोरि न लाई॥",
+     "line": "Abandoned as a child, he poured out his hunger just once, and was held.",
+     "translation": "My mother and father brought me into the world and left me; fate wrote nothing good on my forehead. Lowly, scorned, timid, I hungered like a dog for scraps. Then Tulsi heard of Ram's nature and, just once, showed the Lord his empty stomach. Such a master is Raghunath that he held nothing back, in this world or the next.",
+     "why": "It is never too late.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0293,
+     "beat": "hook",
+     "role_fit": 0.815,
+     "meaning": "Tulsidas speaks from his own early years, when he was left alone and grew up begging for scraps. He says that his parents brought him into the world and then left him, and fate wrote nothing good on his forehead. He describes himself as lowly, scorned, timid, and hungry. Then he tells of a single moment when he showed his empty stomach to the Lord. In return, Raghunath held nothing back and gave him everything in this world and the next. The verse proposes that it is never too late to be held.",
+     "for_you": "You belong more than you feel right now; the people and the practice that hold you are still within reach."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.26.29",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 26.29",
+     "family": "mbh",
+     "speaker": "Vyasa",
+     "listener": "Yudhishthira",
+     "setting": "The sage Vyasa consoles Yudhishthira, who wants to starve himself to death in grief.",
+     "sanskrit": "संयोगा विप्रयोगाश्च जातानां प्राणिनां ध्रुवम् / बुद्धुदा इव तोयेषु भवन्ति न भवन्ति च",
+     "line": "Meeting and parting come to everyone. Like bubbles on water, they rise and they vanish.",
+     "translation": "For every living being, meeting and parting are certain. Like bubbles on water, they appear and are gone.",
+     "why": "Guilt and grief are real, but they are not the end. The good you do next counts.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yudhishthira_grief",
+      "title": "After the war: Yudhishthira's grief and his family's counsel",
+      "summary": "Victorious but shattered by the deaths of kin, Yudhishthira wants to give up the throne for the forest. Arjuna, Bhima, Draupadi, Nakula, the sage Devasthana and Vyasa each argue with him, about duty, guilt, grief and the shortness of life, until he agrees to rule.",
+      "story_hook": "He had won the war, and all Yudhishthira wanted was to walk into the forest and never come back.",
+      "lesson": "Guilt and grief are real, but they are not the end. The good you do next counts."
+     },
+     "score": 2.5692,
+     "beat": "diagnose",
+     "role_fit": 0.51,
+     "meaning": "Vyasa speaks to Yudhishthira after the great war, when Yudhishthira wants to starve himself to death in grief. Vyasa says that for every living being, meeting and parting are certain. He compares them to bubbles on water, which appear and vanish. The verse proposes that guilt and grief are real, but they are not the end. The good you do next counts.",
+     "for_you": "Yesterday's verse named the grip of your loneliness. Today, you see the pattern underneath it. The distance in your home is real, but it is not the end of your story. The good you do next, in your own company, is what will carry you forward."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.250",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 250)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the Lord",
+     "setting": "Surdas on the Lord's readiness.",
+     "sanskrit": "कबहूँ तुम नाहिन गहरु कियो | सदा सुभाव-सुलभ सुमिरन-बस, भक्तनि अमर दियौ ॥",
+     "line": "You never once delayed. You are easy to reach, and remembering you is enough to win you.",
+     "translation": "You have never once delayed. By nature easy to reach and won over by remembrance, you have always given your devotees what is undying.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0252,
+     "beat": "steady",
+     "role_fit": 0.4,
+     "meaning": "Surdas speaks to the Lord about readiness to be found. He says that the Lord has never once delayed. He is easy to reach by nature, and remembering is enough to win. The verse proposes that the presence you seek is not a person or a memory, but the truth that was already here.",
+     "for_you": "The presence you seek is not a person or a memory. It is the truth that was already here, easy to reach and waiting for your remembrance."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_shwetashwetar.3.17",
+     "ref": "Shvetashvatara Upanishad 3.17",
+     "ref_iast": "Śvetāśvatara Upaniṣad 3.17",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Seekers",
+     "setting": "Describing the one Lord who pervades all, the seer adds what he is to each of us.",
+     "sanskrit": "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम् । सर्वस्य प्रभुमीशानं सर्वस्य शरणं सुहृत् ॥",
+     "line": "The Lord of everything is also everyone's refuge and everyone's friend.",
+     "translation": "He shines through the powers of all the senses yet has no senses; he is the master and ruler of all, the refuge of all, the friend of all.",
+     "why": "Refuge in God comes at the end of honest questioning, not instead of it.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.shvet_inquiry_to_refuge",
+      "title": "Shvetashvatara: from 'what governs our lives?' to refuge",
+      "summary": "Seekers ask what causes the world and governs their joys and sorrows. Through meditation they come to see one Lord, Rudra-Shiva, hidden in every heart; the Upanishad moves from inquiry to recognition to a prayer of refuge (6.18) and ends on grace and love of God (6.21, 6.23).",
+      "story_hook": "",
+      "lesson": "Refuge in God comes at the end of honest questioning, not instead of it."
+     },
+     "score": 2.9681,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "In the Shvetashvatara Upanishad, a seeker who has questioned what governs the world finally sees one Lord, hidden in every heart. The seer says this Lord shines through all our senses yet has no senses of his own. He is the master of all, the refuge of all, and the friend of all. The verse says that when honest questioning ends, what remains is not an answer to follow, but a presence to rest. The search itself becomes the meeting.",
+     "for_you": "Your search is not for a new companion. It is for the truth that every sense already carries, the friend of all who is also your own refuge."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.2.16.8",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 16.8",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha on the fourth gatekeeper: good company (satsanga).",
+     "sanskrit": "अपि कष्टतरां प्राप्तैर्दशां विवशतां गतैः । मनागपि न संत्याज्या मानवैः साधुसंगतिः ॥",
+     "line": "Even at your lowest and most helpless, don't let go of good company.",
+     "translation": "Even when people fall into the hardest straits and feel helpless, they should not let go of good company, not even a little.",
+     "why": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.four_gatekeepers",
+      "title": "The four gatekeepers: calm, inquiry, contentment, good company",
+      "summary": "Vasishtha tells Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment and good company. He gives a chapter to each, then says you only need to start with one, because each one strengthens the others.",
+      "story_hook": "",
+      "lesson": "Pick one of calm, clear thinking, contentment or good company. Grow it, and the others follow."
+     },
+     "score": 2.9542,
+     "beat": "act",
+     "role_fit": 0.634,
+     "meaning": "In the Yoga Vasishtha, the sage Vasishtha tells the young Rama that four gatekeepers guard the door to freedom: calm, inquiry, contentment, and good company. He says that even when people are at their lowest and most helpless, they should not let go of good company. The point is that you do not need to master all four at once. If you choose one, such as good company, and hold it gently, the others will grow around it.",
+     "for_you": "Yesterday you found a friend in the text. Today, try reading just one verse and sitting with it without moving. Let that single line be your good company, and let it stay with you for a little while."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.8",
+     "ref": "Bhagavad Gita 12.8",
+     "ref_iast": "Bhagavad Gītā 12.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna begins his ladder of practices with the simplest instruction.",
+     "sanskrit": "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय । निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः ॥",
+     "line": "Rest your mind in me, settle your thinking in me, and you will live in me.",
+     "translation": "Fix your mind on me alone, let your understanding settle in me; from then on you will dwell in me. Of this there is no doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.8986,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "In the Bhagavad Gita, Krishna speaks to Arjuna on the battlefield. He begins his ladder of practices with the simplest instruction. He says to fix the mind on him alone and let the understanding settle there. From then on, the seeker will dwell in him. The verse says that this is not a demand, but an invitation to rest the mind where it belongs.",
+     "for_you": "Fix your mind on the line you read yesterday. Let it settle there while you sit in your morning light. You do not need to do more than let it rest."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       },
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "The morning reading you do is not just company. It is gathering. The search is already in your hands, and the meeting begins when you let the text meet you."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The only company",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 204,
+   "llm": 4713,
+   "total": 12743,
+   "select": 7819
+  }
+ },
+ "script": [
+  [
+   "scene",
+   "Tulsidas remembers his own childhood. He was left alone at birth and grew up on the street. He remembers how he begged for scraps, always hungry. He describes himself as lowly and afraid. Then, just once, he showed his empty stomach to the Lord. And Raghunath held nothing back. Tulsidas said:"
+  ],
+  [
+   "sanskrit",
+   "मातु-पिताँ जग जाइ तज्यो बिधिहूँ न लिखी कछु भाल भलाई, नीच, निरादरभाजन, कादर, कूकर-टूकन लागि ललाई. रामु-सुभाउ सुन्यो तुलसीं प्रभुसों कह्यो बारक पेटु खलाई, स्वारथको परमारथको रघुनाथु सो साहेबु, खोरि न लाई."
+  ],
+  [
+   "line",
+   "In plain words: Abandoned as a child, he poured out his hunger just once, and was held."
+  ],
+  [
+   "unpack",
+   "This is about the moment you stop waiting to be seen. Tulsidas did not earn his place with good deeds. He simply showed what was true, and he was met. It is easier said than done, because pride and shame make us hide. But the door is open even now."
+  ],
+  [
+   "for_you",
+   "When you read in the morning, let the text hold you. It is not just a habit. It is the place where the search becomes a meeting, and the loneliness begins to change."
+  ],
+  [
+   "close",
+   "What if the text is the first place you are truly seen?"
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": "The texts say the search itself is the meeting. When you read, you are not just filling time. You are opening a door. The loneliness you feel is the hunger that leads you to what can truly hold you.",
+  "practice": "Read one verse slowly, then sit with your hands resting, feeling the stillness before you turn the page.",
+  "question": "What if the company you seek is already in the room with you?"
+ }
+}

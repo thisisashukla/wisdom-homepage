@@ -1,0 +1,495 @@
+{
+ "persona": {
+  "id": "uk_genx_sikh_business",
+  "market": "UK (Leicester)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "47, runs the family cash-and-carry in Leicester, second generation, Punjabi background. Father (78) still comes in and overrules him in front of staff.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "I've run this business for 15 years and my dad still walks in and changes my decisions in front of the staff. I'm 47. He's 78. I can't say anything because it's his business in his head and he's my father",
+  "note_source": "voice",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "resentful and trapped",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being treated like a boy in the business he built to standing in the authority he has already earned.",
+   "week_beats": {
+    "hook": "You recognise being treated as less than you are, and the resentment of it, named without blame.",
+    "story": "A son who stood before his father and the staff, claimed what was his, and found the bond still there."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work",
+    "child"
+   ],
+   "confidence": 0.85,
+   "core_struggle": "A -year-old man who has run a business for years is still treated as a boy by his -year-old father who changes decisions in front of staff.",
+   "mirror": "I keep fighting with my parents",
+   "insight": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 2.45,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.691,
+     "source": "note"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.56,
+     "source": "chip"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.506,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "I keep fighting with my parents. Being seen as less than you are by the people who ought to know you best, and the anger of watching the life you built get called a phase.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture starts to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A son who built something of his own, stood before his father and the assembly, and claimed what was his without breaking the bond."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Seen as a boy",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs the business for years",
+    "father still enters and changes decisions in front of staff"
+   ],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:hook_gives_advice",
+    "mirror:fallback",
+    "seat:missing",
+    "week_fit:47=0.0,16=0.0,25=0.3,58=0.3,15=0.3,532=0.0",
+    "week_fit:swapped=6",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:accept=1,fallback_lesson=1,invented=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.7",
+     "ref": "Bhagavad Gita 2.7",
+     "ref_iast": "Bhagavad Gītā 2.7",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+     "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+     "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.5435,
+     "beat": "hook",
+     "role_fit": 0.94,
+     "meaning": "Arjuna sits in the mud, his body shaking, his mind torn. He tells Krishna he is stricken by weakness and cannot see what is right. He says he is ready to learn, asking his teacher to tell him plainly what is best. The verse says that clarity does not come from pretending to know. It comes from admitting you are lost and asking for help.",
+     "for_you": "You have asked for help, and that is where your clarity begins. You do not have to carry the weight of being seen as a boy any longer. You can ask for the truth about your own authority, just as Arjuna did."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.5.35.doha.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 35",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Ravana's ministers flatter him as Ram's army arrives; the poet comments.",
+     "sanskrit": "सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस राज धर्म तन तीनि कर होइ बेगिहीं नास ॥",
+     "line": "When advisers, doctors and teachers only say what pleases you, the ruin comes quickly.",
+     "translation": "When a minister, a doctor and a teacher speak only to please, out of fear or hope of reward, then the kingdom, the body and righteousness are soon destroyed.",
+     "why": "Beware a circle that only tells you what you want to hear.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.mandodari_first",
+      "title": "Mandodari pleads, the ministers flatter",
+      "summary": "Mandodari takes Ravana aside and begs him to return Sita before it is too late. He laughs at her fear and goes to court, where his ministers tell him only what pleases him. Tulsidas notes that when advisers, doctors and teachers speak only to please, ruin comes quickly.",
+      "story_hook": "Mandodari took her husband's hand and led him somewhere the ministers couldn't hear.",
+      "lesson": "Beware a circle that only tells you what you want to hear."
+     },
+     "score": 2.8382,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Tulsidas is watching Ravana's court. Mandodari, the queen, has taken her husband aside and begged him to send Sita back before the armies of Ram arrive. But Ravana only laughs at her fear. He walks into the court, and his ministers are waiting. They tell him only what pleases him. Tulsidas warns the reader that when a circle of advisers, doctors or teachers speaks only to flatter, the kingdom, the body and righteousness are soon destroyed.",
+     "for_you": "Your father enters the business and changes decisions in front of staff. He is telling you only what pleases his own mind, and the result is a quiet ruin of your authority. The ruin is his, not yours."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 2.9981,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": "Vidula finds her son Sanjaya lying down after losing his kingdom. She tells him not to think less of himself or settle for little. She says to set his mind on something good and stop fearing. The point is that past failure does not define a person. Results are uncertain, but those who never try never succeed.",
+     "for_you": "Your father has been treating you like a boy for years. That is his small view, not yours. You have already earned the authority to run your business. Hold to that truth today."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 2.8983,
+     "beat": "steady",
+     "role_fit": 0.35,
+     "meaning": "Krishna is telling Arjuna that the only way to cross this is from within. The self is the only friend who can pull you up, and the only enemy who can drag you down. It is not about standing alone. It is about refusing to let the voice inside you that doubts your years and your work take the lead. You have the strength to choose which voice sits at the table.",
+     "for_you": "When your father enters the room and changes a decision in front of the staff, you can feel the old boy being put back in place. This verse asks you to hold the picture of yourself as the one who has run this business for years."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.2048,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "After Hanuman speaks, Ram tells Lakshman how the words landed. They were not too long, not vague, not rushed, not strained. They came from the chest and throat in an even, middle tone. Ram is noting that the envoy's speech was clear and steady. He is saying that when someone speaks with a calm, even voice, it builds trust fast. It shows that fear can jump ahead of facts, but calm, clear words are what build a bridge.",
+     "for_you": "When your father walks in and changes a decision in front of the staff, you feel the old fear jump ahead of the facts. Let your next words to them be short and even. State the decision that stands and let it rest there."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 3.1235,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": "A teacher is speaking to a student who is about to leave and start a family. The teacher gives a short, clear instruction. He tells the student to speak the truth, to do what is right, and to keep learning. This is not a grand speech. It is a simple, steady guide for how to live. The teacher wants the student to carry these three things with them as they step into their new life.",
+     "for_you": "The words you use at work today carry your truth. Say what you know is right in the moment your father changes a decision. Let your voice stay even and clear. You do not need to shout. You only need to speak what you see, and do what you know is right."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.bharata_refuses",
+     "title": "Bharata refuses the throne",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Bharata",
+      "Vasishtha",
+      "the ministers"
+     ],
+     "story_hook": "Everyone expected him to take the crown; he called for his chariot instead.",
+     "summary": "The court offers Bharata the kingdom his mother won for him. He refuses before the whole assembly, says it belongs to his brother, and sets out with the army and the city to bring Ram back.",
+     "lesson": "Not every gain is worth taking; integrity sometimes means refusing what you are handed.",
+     "matched": [],
+     "anchor": {
+      "id": "vr.2.82.11",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 82.11",
+      "family": "vr",
+      "speaker": "Bharata",
+      "listener": "the assembly",
+      "setting": "The court offers Bharata the throne his mother schemed for; he refuses before everyone.",
+      "sanskrit": "कथं दशरथाज्जातो भवेद् राज्यापहारकः। राज्यं चाहं च रामस्य धर्मं वक्तुमिहार्हसि ॥",
+      "line": "How could I take what belongs to my brother? Some gains I won't accept.",
+      "translation": "How could a son of Dasharatha steal a kingdom? The kingdom and I both belong to Ram. Speak what is right here.",
+      "why": "Not every gain is worth taking; integrity sometimes means refusing what you are handed.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.bharata_refuses",
+       "title": "Bharata refuses the throne",
+       "summary": "The court offers Bharata the kingdom his mother won for him. He refuses before the whole assembly, says it belongs to his brother, and sets out with the army and the city to bring Ram back.",
+       "story_hook": "Everyone expected him to take the crown; he called for his chariot instead.",
+       "lesson": "Not every gain is worth taking; integrity sometimes means refusing what you are handed."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Bharata was handed the crown, and called for his chariot instead",
+     "teaser": "Bharata was handed the crown, and called for his chariot instead",
+     "for_you": "Not every gain is worth taking; integrity sometimes means refusing what you are handed."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Seen as a boy",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 192,
+   "llm": 4504,
+   "total": 17910,
+   "select": 13204
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You have been carrying this for years. Your father walks into the business you built and changes decisions in front of everyone. You are not a boy. You are a person who runs a business and has been doing it for years."
+  ],
+  [
+   "scene",
+   "Arjuna sits in the mud on the battlefield. His body shakes and his mind is torn. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः, यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्."
+  ],
+  [
+   "line",
+   "In plain words: I'm confused about what's right. Tell me plainly what's best; I'm ready to learn."
+  ],
+  [
+   "unpack",
+   "The verse says clarity does not come from pretending to know everything. It comes from admitting you are lost and asking for help. This is easier said than done, because you have spent years proving your strength. Admitting confusion feels like a failure, but it is actually the only place where real direction begins."
+  ],
+  [
+   "for_you",
+   "Today, you can stop pretending the small picture your father gives you is the full one. You can look at the authority you have already earned and simply name it. You do not have to carry the weight of being treated as less than you are."
+  ],
+  [
+   "close",
+   "What is the truth about your own standing?"
+  ]
+ ],
+ "depth": {
+  "life": "Your father still enters the business and changes your decisions in front of your staff. You have run this place for years. The resentment builds because you are treated as a boy who does not know his own mind. You keep fighting with your parents while the work and the family both demand your time.",
+  "points": "Arjuna, a warrior on a battlefield, collapses into tears and admits he does not know what is right. He asks Krishna to teach him plainly. Admitting confusion is not defeat. It is the moment the mind stops spinning and begins to see what is actually in front of it.",
+  "practice": "Sit with your father for ten minutes and ask one question about the business instead of stating your own plan.",
+  "question": "What would change if you asked for help instead of fighting for control?"
+ }
+}

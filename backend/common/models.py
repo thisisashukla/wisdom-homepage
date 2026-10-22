@@ -420,6 +420,16 @@ class UnderstandingOut(BaseModel):
     source: Literal["llm", "fallback", "client"]
     note_quality: Literal["useful", "partial", "unusable", "none"]
     risk: Risk
+    stance: Literal["struggle", "aspiration", "wronged", "seeking"] = "struggle"   # where they stand (ai/stance.py)
+    gender: Optional[Literal["woman", "man"]] = None   # only what they said of themselves
+    emotion: str = ""                  # what they feel right now, in a few words
+    bridge: str = ""                   # their problem in the texts' terms: the week's one idea (show it under the verse)
+    week_thesis: str = ""              # the thread of week 1
+    week_beats: Dict[str, str] = {}    # beat -> what that day does for them
+    undisclosed: bool = False          # they are keeping something from the people in their note
+    hinglish: bool = False             # they wrote in Hindi or Hinglish
+    texts: List[str] = []              # text families they named (rcm, bg, up, kabir, meera, sur)
+    people: List[str] = []             # relations they mentioned or their stage implies; writers may name no others
     confidence: float
     core_struggle: str                 # third person, for the app's own use (never shown verbatim as a diagnosis)
     mirror: str                        # one gentle line for the loading screen ("It sounds like ...")

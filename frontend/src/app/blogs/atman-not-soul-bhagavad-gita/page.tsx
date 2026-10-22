@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: 'Atman vs Soul: The Distinction the Bhagavad Gita Actually Draws | Wisdom',
+  title: 'Atman vs Soul: The Distinction the Bhagavad Gita Actually Draws',
   description:
     "Every English translation of the Gita calls ātman 'soul.' That's a 200-year-old mistranslation. Soul is created, individual, judged by belief, given one life. Atman is uncreated, not the doer, decided by karma, cycled across lifetimes. Verses from BG, Katha Upanishad, and the Bible compared directly.",
   keywords:
@@ -711,7 +712,7 @@ export default function AtmanNotSoulPage() {
           </p>
         </div>
 
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Atman Not Soul Bhagavad Gita"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Atman Not Soul Bhagavad Gita"} />
 
         <h2>Why the Distinction Matters Practically</h2>
         <p>
@@ -882,11 +883,11 @@ export default function AtmanNotSoulPage() {
       </div>
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
         <p>
           <a href="https://wisdomquotes.in">Home</a> —{' '}
           <a href="https://wisdomquotes.in/blogs">Blog</a> —{' '}
-          <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">
+          <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">
             Download
           </a>
         </p>

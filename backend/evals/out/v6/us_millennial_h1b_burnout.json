@@ -1,0 +1,510 @@
+{
+ "persona": {
+  "id": "us_millennial_h1b_burnout",
+  "market": "USA (Seattle)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "33, software engineer at a big tech company in Seattle, on H-1B, green card queue, wife on H4 can't work. Performance review season.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "if I get a bad rating I lose the visa and we have 60 days to leave. my wife gave up her career to be here. I check slack at 2am. I don't remember the last weekend I wasn't thinking about work",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "terrified and running on empty",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "The terror of the rating is met with the truth that the life you built cannot be taken by a number, and the first hour of the day is yours to take back.",
+   "week_beats": {
+    "hook": "You recognise the terror and the sleepless checking, named without blame.",
+    "diagnose": "You see that fear of loss is what multiplies the worry and what makes the mind check all night.",
+    "steady": "You hold that what is real in you cannot be lost, and the rating is only a number.",
+    "act": "You try one hour of the day that belongs only to you, and you close the phone in it."
+   },
+   "undisclosed": false,
+   "texts": [],
+   "confidence": 0.5,
+   "core_struggle": "A man on a visa that could be revoked in sixty days, with his wife's sacrificed career on the line, cannot switch off from work even at 2am.",
+   "mirror": "You check the messages at 2am because you believe one bad rating will end everything you built.",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.717,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.29,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 1.26,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The terror of a result that could end everything, and the mind that will not let you sleep because it thinks it can prevent it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened, and the mind checks to prove it can stop it.",
+    "steady": "What is real in you cannot be lost; the rating is a number, and the life you built with your wife is not a number.",
+    "act": "Practise one hour of the day that belongs only to you; close the phone, let the rating be what it is, and trust that the effort you have already given is real.",
+    "story": "A man who had everything to lose, whose mind ran ahead to the worst, found that the only thing he could control was how he spent his one hour, and in that hour he found his footing."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The terror of the number",
+    "What you cannot lose",
+    "The hour that is yours"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "bad rating means losing visa in days",
+    "wife gave up career to move",
+    "checks work messages at 2am",
+    "cannot remember a weekend free of work thoughts"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "insight:template",
+    "retried:2",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:gendered=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 3.1038,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna is on the battlefield, and they have just admitted that their mind is running wild at two in the morning, checking work messages again and again. They tell Krishna that trying to control the mind feels like trying to catch the wind. Krishna does not deny how strong the mind is. He says that practice and letting go are what train it. The mind does not need to be crushed. It needs to be held steady, again and again, until it learns to rest.",
+     "for_you": "The phone at two in the morning is the wind. You cannot stop the thoughts, but you can stop answering them right now. Let the check wait until morning. That is how the mind begins to learn it is safe."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vishnu_gita.1.98",
+     "ref": "Vishnu Gita 1.98",
+     "ref_iast": "Viṣṇu Gītā 1.98",
+     "family": "gitas",
+     "speaker": "Vishnu",
+     "listener": "the gods",
+     "setting": "Vishnu explains to the frightened gods where fear comes from.",
+     "sanskrit": "दीनताजं भयं माने गुणे खलभयं खलु । भयं निन्दकजं शक्तौ विद्यायां वादिनं भयम् ॥",
+     "line": "Honour fears disgrace, virtue fears the wicked, power fears critics, learning fears debate. Every gain brings a fear.",
+     "translation": "In honour lies the fear of being brought low; in virtue, the fear of the wicked; in power, the fear of critics; in learning, the fear of rival debaters.",
+     "why": "Every gain brings its own fear; holding things lightly is the way out.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "vishnu_gita.p.roots_of_fear",
+      "title": "Vishnu on where fear comes from",
+      "summary": "The frightened gods ask Vishnu how to become fearless. He explains that every possession carries its own fear (the body fears age, wealth fears thieves, power fears critics) and that only dispassion is free of fear; then he restates Bhagavad Gita 2.14-15 on enduring pleasure and pain.",
+      "story_hook": "",
+      "lesson": "Every gain brings its own fear; holding things lightly is the way out."
+     },
+     "score": 3.3628,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "The gods ask Vishnu how to be free from fear. Vishnu looks at what they value. He says that honour carries the fear of disgrace, power carries the fear of critics, and learning carries the fear of debate. Every gain they have built carries its own shadow of fear. The fear of losing the visa is not separate from the career they have built. It is the price of that gain. The only way out is to hold what they have lightly, without letting it own them.",
+     "for_you": "The terror of the rating is the price of the career you built. You do not have to pretend the rating does not matter. But you can notice that your fear is tied to the value of the thing you stand to lose. Holding that value lightly does not make you careless."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.7.9",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 7.9",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram.",
+     "sanskrit": "व्यसने वार्थकृच्छ्रे वा भये वा जीवितान्तगे। विमृशंश्च स्वया बुद्ध्या धृतिमान् नावसीदति॥",
+     "line": "In loss, money trouble or fear, the steady person thinks it through and does not go under.",
+     "translation": "In disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink.",
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 3.5779,
+     "beat": "steady",
+     "role_fit": 0.85,
+     "meaning": "Sugriva, who has lost his wife and kingdom, steadies a grieving Ram. Ram has just seen the jewels Sita dropped, and he is broken by loss. Sugriva reminds him that even in disaster, money trouble, or fear, when life itself is at stake, the steady person thinks it through and does not sink. The verse proposes that two people in trouble can carry each other, and that a steady mind is a refuge.",
+     "for_you": "You check your phone at two in the morning because your mind is trying to solve a problem that has not happened. The rating is only a number."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.85",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 85",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "पातितोऽपि कराघातैरुत्पतत्येव कन्दुकः । प्रायेण साधुवृत्तनामस्थायिन्यो विपत्तयः ॥",
+     "line": "A ball knocked down bounces back up. For good people, setbacks rarely last.",
+     "translation": "A ball struck down by the hand flies right back up. As a rule, the misfortunes of those who live rightly do not last.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "Not a promise that suffering is always short, or that people who suffer long did something wrong.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.1674,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari is writing to someone who reads these verses, and he is talking about what it means to stay steady. He says a ball that is knocked down by a hand will fly right back up. He means that when good people face a setback, it does not last. The hit does not end the game. This is not a promise that pain is always short, or that anyone who suffers long did something wrong. It is simply the truth about a life that keeps moving.",
+     "for_you": "The bad rating is a hit, but it does not end your game. Your part is to keep going on the path you are on. The rating is a number, and it cannot take the life you built. Hold on to that truth while the hurt is here."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.853,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is telling Arjuna that they are not fighting this war for a prize. The right they have is simply to do the work, to stand in the chariot and aim the bow. The outcome, the victory or the loss, is not theirs to hold. It belongs to the larger order. The point is to let go of clinging to what comes next, because that clinging is what chains them to misery.",
+     "for_you": "You cannot control the rating that decides your visa. But you can control the next hour. Take one hour today, maybe the first one, and do only what is in front of you. Close the phone and let the result belong to the day, not to your fear."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.6",
+     "ref": "Bhagavad Gita 12.6",
+     "ref_iast": "Bhagavad Gītā 12.6",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna describes those whom he lifts out of the sea of mortality (12.7).",
+     "sanskrit": "ये तु सर्वाणि कर्माणि मयि संन्यस्य मत्पराः । अनन्येनैव योगेन मां ध्यायन्त उपासते ॥ तेषामहं समुद्धर्ता मृत्युसंसारसागरात् । भवामि नचिरात्पार्थ मय्यावेशितचेतसाम् ॥",
+     "line": "Lay your work in me and keep your mind on me; I soon lift you out of the drowning sea.",
+     "translation": "But those who lay all their actions in me, intent on me, and worship me meditating with single-minded yoga — for them, whose minds are set on me, I soon become the one who lifts them out of the ocean of death and rebirth, Partha.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": null,
+     "score": 3.2923,
+     "beat": "act",
+     "role_fit": 0.66,
+     "meaning": "Krishna is speaking to Arjuna, who is standing in a chariot on a battlefield, and he is offering him a way out of the drowning sea. He says those who lay all their actions in him, with their minds set on him, are soon lifted out of the ocean of death and rebirth. The promise is not that the sea disappears, but that they will not drown in it alone.",
+     "for_you": "The phone is your sea right now. Try one hour today where you lay your work in something steady and close the phone. Let that hour be your small lift out of the drowning, just for now."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You do not need to flee your life to find a free mind. When the rating call comes, or the work message at two in the morning, you can take it up without letting it grip your whole being. The day is still yours to live. Do your part, and let the rest go."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The terror of the number",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 196,
+   "llm": 4050,
+   "total": 11621,
+   "select": 7368
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are running on empty. The visa could be revoked in sixty days. Your wife gave up her career for this. You check work messages at two in the morning. You cannot remember a single weekend without work thoughts. You are terrified."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. He has just admitted that his mind is restless and running wild. He tells Krishna that trying to control the mind feels like trying to catch the wind. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Krishna does not deny how strong the mind is. He says that practice and letting go are what train it. The mind does not need to be crushed. It needs to be held steady, again and again, until it learns to rest. This is easier said than done, because the mind is designed to imagine every possible disaster. But holding it steady is not about force. It is about choosing not to act on every impulse."
+  ],
+  [
+   "for_you",
+   "The phone at two in the morning is the wind. You cannot stop the thoughts, but you can stop answering them right now. Let the check wait until morning. That is how the mind begins to learn it is safe."
+  ],
+  [
+   "close",
+   "What if you let the message wait until the sun is up?"
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": "The mind is restless and stubborn. It is not a machine to be fixed. It is a force that needs practice, not force.",
+  "practice": "Leave the phone in another room before sleep. Let the check wait until morning.",
+  "question": "What would it feel like to let the phone rest?"
+ }
+}

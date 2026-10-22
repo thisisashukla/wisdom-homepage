@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "30 Most Famous Bhagavad Gita Quotes in Sanskrit — with English Meaning & Transliteration | Wisdom",
+  title: "30 Most Famous Bhagavad Gita Quotes in Sanskrit — with English Meaning & Transliteration",
   description: "The 30 most famous Bhagavad Gita quotes in original Sanskrit (Devanagari), each with IAST transliteration you can read aloud, plain English meaning, and short context. Karma, atman, bhakti, surrender — the verses every seeker returns to.",
   keywords: "bhagavad gita quotes in sanskrit, bhagwat geeta shlok in sanskrit, gita shlok sanskrit, bhagavad gita verses in sanskrit, gita quotes sanskrit with meaning, geeta shloka in sanskrit with hindi meaning, one line gita quotes sanskrit, bhagavad gita famous verses, karmanye vadhikaraste, sarva dharman parityajya",
   openGraph: {
@@ -1008,12 +1009,12 @@ export default function BhagavadGitaQuotesSanskritPage() {
       </div>
 
       <div className="content" style={{ paddingTop: 0 }}>
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagavad Gita Quotes in Sanskrit"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagavad Gita Quotes in Sanskrit"} />
       </div>
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Bhagavad Gita Quotes in Sanskrit" />

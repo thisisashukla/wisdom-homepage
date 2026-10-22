@@ -1,0 +1,522 @@
+{
+ "persona": {
+  "id": "ae_millennial_gulf_provider",
+  "market": "UAE (Dubai)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "35, works in logistics in Dubai for 11 years, sends money to parents and brother in Kerala, brother's wedding and father's surgery this year. Wife wants to move back.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "11 years in dubai sending money home. brothers wedding, fathers heart surgery, both this year. my wife wants to go back to india. everyone needs something from me and I don't know what I need",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "pulled apart and empty",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise the exhaustion of being pulled in every direction with no hour of your own.",
+    "steady": "You hold that you are not your duty to others. You are the one who chooses how to give, and that choice is yours alone.",
+    "act": "You try naming one thing you need this week, however small, and protecting one hour of it as if it were a duty.",
+    "story": "A son who returned home for a crisis shows you how to stand between his father's need and his own."
+   },
+   "confidence": 0.8,
+   "core_struggle": "After years abroad, he is caught between his wife's wish to return and his family's urgent demands, with no sense of what he himself needs.",
+   "mirror": "You send money home and show up for every crisis, and still you don't know what you need.",
+   "insight": "You're pulled between two things that both feel right, and you've been carrying the choice alone.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.875,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.12,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.05,
+     "source": "chip"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.517,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of being needed by everyone and the quiet panic that you have nothing left to give, with no clear path forward. My parents are getting older far away.",
+    "diagnose": "When duties pull in different directions and fear clouds which one is truly yours, the mind cannot settle; it keeps replaying each demand until it has exhausted itself.",
+    "steady": "You are not your duty to others; you are the one who chooses how to give, and that choice is yours alone.",
+    "act": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear.",
+    "story": "A son who built a life abroad, returned home for a crisis, and found his footing between his father's need and his own."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "template",
+    "story": "llm"
+   },
+   "weeks": [
+    "Torn between duties",
+    "The one who chooses",
+    "More than what you give"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "years in Dubai sending money home",
+    "brother's wedding and father's heart surgery this year",
+    "wife wants to return to India"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "act:act_not_actionable",
+    "week_thesis:missing",
+    "insight:template",
+    "seat:missing",
+    "retried:2",
+    "dropped:fallback_line=5,gendered=3,missing=4",
+    "for_you:7/7",
+    "meaning:4/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.2686,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna is on the battlefield, and everything is falling apart. They have collapsed in tears, and they are refusing to fight. Krishna asks why they are so shaken, and Arjuna tells them they see nothing that can drive away this sorrow. They say that even winning everything, even ruling over the gods, would not touch this grief that is drying them up inside. The verse proposes that admitting you do not know and asking for help is where clarity begins.",
+     "for_you": "Your own duty, done imperfectly, is better than another's; when the mind clears, the right step becomes plain."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 3.5218,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": null,
+     "for_you": "The self is not the roles you play; when you act from who you are, your duty is not a burden but your own nature."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.19",
+     "ref": "Ashtavakra Gita 15.19",
+     "ref_iast": "Aṣṭāvakra Gītā 15.19",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "मा सङ्कल्पविकल्पाभ्यां चित्तं क्षोभय चिन्मय । उपशाम्य सुखं तिष्ठ स्वात्मन्यानन्दविग्रहे ॥",
+     "line": "Don't churn your mind with plans and second thoughts. Be still and rest in yourself.",
+     "translation": "Do not stir your mind with yes and no, with plans and doubts. Be still, and rest happily in your own joyful Self.",
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "Not a reason to avoid decisions; decide, then stop churning.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 3.2403,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": null,
+     "for_you": "Do your own duty as an offering, from the self rather than from fear or pressure, and leave the rest to the divine."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.083,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, right before the great war begins. Arjuna is frozen with grief and confusion about fighting his own kin. Krishna tells him to focus on the act of fighting itself, on doing what is right in front of him, and to let go of the outcome. The idea is to give your full effort to the work, but to stop holding the results in your hands. Let the work be enough.",
+     "for_you": "Ask what is right, not what is easy; choose your own duty with a clear mind and carry it out without fear."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.2183,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is speaking to Nidagha, a disciple who has learned to see the truth but still lives in the world. Ribhu tells him to keep doing the work that comes, to speak gently, and to understand what is in other people's hearts. A free person does not sink in the world because they are not tossed around by wanting and not wanting. They act, but they are not dragged down by it.",
+     "for_you": "You're pulled between two things that both feel right, and you've been carrying the choice alone."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.3.8",
+     "ref": "Bhagavad Gita 3.8",
+     "ref_iast": "Bhagavad Gītā 3.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna, who asks why he must act at all if understanding is higher.",
+     "sanskrit": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः । शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः ॥",
+     "line": "Do the work that's yours. Doing something beats doing nothing; even living needs action.",
+     "translation": "Do your allotted work, for action is better than inaction. Even the maintenance of your body would not be possible without action.",
+     "why": "Not acting is still a choice; do the work that is yours.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.1",
+      "title": "Why doing your duty without attachment is better",
+      "summary": "Arjuna is confused and asks for one clear answer. Krishna says no one can stop acting, that repressing the body while the mind indulges is self-deception, and that action beats inaction.",
+      "story_hook": "",
+      "lesson": "Not acting is still a choice; do the work that is yours."
+     },
+     "score": 3.0581,
+     "beat": "act",
+     "role_fit": 0.851,
+     "meaning": "Arjuna is still asking questions, wondering if it is better to simply understand things and do nothing. Krishna tells him that doing nothing is not an option. Even keeping the body alive requires action. He says to do your allotted work, because action is always better than inaction.",
+     "for_you": "You do not have to wait for the perfect plan to return home. Action is the answer. Choose one small thing this week that you need for yourself, and protect that time as if it were a duty. Do the work that is yours to do."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.homecoming_haste",
+     "title": "Ram hurries home",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Vibhishan"
+     ],
+     "story_hook": "The war was won, the palace was his, and all Ram wanted was to go home.",
+     "summary": "After the war, Vibhishan begs Ram to stay a while, bathe and rest in Lanka's palaces. Ram says all of it is his as much as Vibhishan's, but thinking of Bharat waiting at home, each moment feels like an age; if he is late, he may not find his brother alive.",
+     "lesson": "When someone at home is waiting, no comfort elsewhere can hold you.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.6.110.doha.1",
+      "ref": "Ramcharitmanas · Lanka Kand",
+      "ref_iast": "Rāmcaritmānas, Laṅkā Kāṇḍ 110",
+      "family": "rcm",
+      "speaker": "Ram",
+      "listener": "Vibhishan",
+      "setting": "After the war Vibhishan begs Ram to rest in Lanka; Ram wants to hurry home.",
+      "sanskrit": "तोर कोस गृह मोर सब सत्य बचन सुनु भ्रात। भरत दसा सुमिरत मोहि निमिष कल्प सम जात ॥",
+      "line": "All you offer is mine too. But thinking of my brother back home, each moment feels like an age.",
+      "translation": "Listen, brother: your treasury and home are truly mine. But remembering Bharat's state, each moment feels like an age to me.",
+      "why": "When someone at home is waiting, no comfort elsewhere can hold you.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.homecoming_haste",
+       "title": "Ram hurries home",
+       "summary": "After the war, Vibhishan begs Ram to stay a while, bathe and rest in Lanka's palaces. Ram says all of it is his as much as Vibhishan's, but thinking of Bharat waiting at home, each moment feels like an age; if he is late, he may not find his brother alive.",
+       "story_hook": "The war was won, the palace was his, and all Ram wanted was to go home.",
+       "lesson": "When someone at home is waiting, no comfort elsewhere can hold you."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "The war was won and Lanka's palaces were his, and Ram only wanted to go home",
+     "teaser": "The war was won and Lanka's palaces were his, and Ram only wanted to go home",
+     "for_you": "Your brother is waiting, and the comfort of a life abroad means nothing against that. Let the urgency of home guide your next step."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Torn between duties",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 207,
+   "llm": 4553,
+   "total": 13477,
+   "select": 8710
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are pulled apart and empty. You have been carrying the weight of parents far from home, the memory of your brother's wedding, and the worry of your father's surgery all at once. And now your wife wants to return, and you do not know what you want. You are caught between two right paths, and that alone is exhausting."
+  ],
+  [
+   "scene",
+   "Arjuna stood on the battlefield, his body shaking, his famous bow slipping from his hand. He had collapsed in tears, refusing to fight the very people he was meant to lead. Krishna, his charioteer and friend, asked why he was so shaken. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "Arjuna is admitting that his grief is too big for any external victory to fix. He does not know what to do, and he says so plainly. This is where clarity begins. When you are exhausted from overthinking every duty, the first step is not to choose the right path. It is to admit that you do not know, and to ask for help. That honesty is what makes the next step possible."
+  ],
+  [
+   "for_you",
+   "You do not have to figure out the rest of your life right now. You only have to admit that you are torn. Let your wife know that you are struggling to see clearly. Let your family know that you are empty and need a moment to breathe. You do not need to make a final choice today."
+  ],
+  [
+   "close",
+   "What would change if you let someone else hold the choice for a little while?"
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": "Arjuna admits that even absolute victory would not heal the grief drying him up. This is the root cause. When you feel pulled apart, it is because you are trying to be the one who fixes everything. Clarity does not come from finding the perfect answer. It comes from stopping and admitting you do not know.",
+  "practice": "Find one quiet minute today and simply say aloud, I do not know what to do next. Let that be enough.",
+  "question": "What would it be like to let the choice rest for just one hour?"
+ }
+}

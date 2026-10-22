@@ -1,0 +1,463 @@
+{
+ "persona": {
+  "id": "uk_boomer_grandmother_lonely",
+  "market": "UK (Birmingham)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "68, came from Jalandhar in 1976, worked in a factory then raised 3 children. Widowed. Children busy, grandchildren on phones. Reads Ramcharitmanas.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "seeking",
+   "confidence": 0.6,
+   "core_struggle": "A retired grandmother who reads the Ramayana each morning, feeling a search for something deeper while her children's Sunday visits are spent on their phones.",
+   "mirror": "You give the day everything, then lie awake replaying every conversation.",
+   "insight": "You are not short on company. The Ramayana is your faithful companion, and the search for something deeper is the heart's own way of calling you home to what does not pass.",
+   "mechanism": "no_meaning",
+   "mechanism_label": "Searching for what it's all for",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.52,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.004,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.392,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "A search for something deeper, a morning companion in scripture, and a home where the people you love are near but not yet present with you.",
+    "diagnose": "When life is lived only for what passes, the heart feels empty; meaning is missing when we forget what does not pass.",
+    "steady": "The texts are not an escape from the day. They are a door to what is real and will not leave you, and you are never alone with what is true.",
+    "act": "Read one verse in the morning and sit with it for a few minutes, letting it become your company before the day begins.",
+    "story": "A queen who lost her husband and kingdom, who walked into the forest with only her brother, and found in that exile the truth of who she was all along."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The morning companion",
+    "What does not pass",
+    "The self that remains"
+   ],
+   "seat": "a grandmother whose children are good but distant, and who fills her mornings with scripture",
+   "life_context": "Retired and in her fifties or older; she raised her children alone after their father died, and now her only company in the mornings is the Ramayana, while her children's Sunday visits are marked by their phones.",
+   "details": [
+    "children visit on Sunday but are always on their phones",
+    "raised them alone after their father died",
+    "reads Ramayana in the morning as her only company",
+    "feels a search for something deeper"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "redo:3",
+    "redo_fixed:3",
+    "dropped:cliche=2,invented_name=2",
+    "for_you:6/7",
+    "meaning:6/6",
+    "script:dropped:close=invented_name,for_you=invented_name,open=invented_name",
+    "script:written:2/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.9",
+     "ref": "Bhagavad Gita 10.9",
+     "ref_iast": "Bhagavad Gītā 10.9",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on devotees who find joy together and the light he gives them.",
+     "sanskrit": "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम् । कथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च ॥",
+     "line": "Their minds on me, they talk of me with each other, and find joy and contentment in it.",
+     "translation": "With minds fixed on me and lives given to me, enlightening one another and always speaking of me, they are content and delighted.",
+     "why": "Good company and an inner lamp clear the dark.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.2",
+      "title": "The yoga of devotion and its fruit",
+      "summary": "Devotees talk of the divine with each other and find joy; out of compassion Krishna lights the lamp of knowledge in their hearts.",
+      "story_hook": "",
+      "lesson": "Good company and an inner lamp clear the dark."
+     },
+     "score": 2.398,
+     "beat": "hook",
+     "role_fit": 0.12,
+     "meaning": "Krishna tells Arjuna that those whose minds are fixed on the divine and who live for it find joy in each other's company. They enlighten one another, always speaking of the divine, and find true contentment and delight. The point is that good company and an inner lamp clear the dark.",
+     "for_you": null
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.612",
+     "ref": "Chhandogya Upanishad 8.3.2",
+     "ref_iast": "Chāndogya Upaniṣad 8.3.2",
+     "family": "up",
+     "speaker": "Prajapati's teaching (narrator)",
+     "listener": "Reader",
+     "setting": "On the self in the heart that we visit nightly in deep sleep without knowing it.",
+     "sanskrit": "अनृतापिधानास्तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुरेवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः ॥",
+     "line": "Like people walking daily over buried gold, we pass our own treasure every day and never find it.",
+     "translation": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth.",
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9251,
+     "beat": "diagnose",
+     "role_fit": 0.41,
+     "meaning": "As people who do not know the spot walk again and again over a hidden treasure of gold buried in the ground and do not find it, so all these creatures go day after day into that world of Brahman and do not find it, for they are carried away by untruth. We pass our own treasure every day and never find it.",
+     "for_you": "You walk over your own treasure every morning without knowing it. The search you feel is the ground beneath your feet, not a place to reach."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.vairagya.12",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 12",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'The Mockery of Giving Up Pleasures'.",
+     "sanskrit": "अवश्यं यातारश्चिरतरमुषित्वापि विषया वियोगे को भेदस्त्यजति न जनो यत्स्वयममून् । व्रजन्तः स्वातन्त्र्यादतुलपरितापाय मनसः स्वयं त्यक्ता ह्येते शमसुखमनन्तं विदधति ॥",
+     "line": "Every pleasure leaves someday. Released freely, it brings peace; torn away, it brings torment.",
+     "translation": "Pleasures will certainly leave, however long they stay with us. Then what difference is there in parting? Only that people do not let them go themselves. Leaving of their own accord, they bring the mind unequalled torment; given up by oneself, they bring endless peace.",
+     "why": "Let go before you are forced to, and stop calling relief happiness.",
+     "misuse": "About things and pleasures; not advice to leave people before they leave you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.vishaya",
+      "title": "Vairagyashatakam: The mockery of giving up pleasures",
+      "summary": "Pleasures will leave us anyway; letting them go freely brings peace, being dragged from them brings torment. We are worse than the moth, because we know the flame burns.",
+      "story_hook": "",
+      "lesson": "Let go before you are forced to, and stop calling relief happiness."
+     },
+     "score": 3.0836,
+     "beat": "steady",
+     "role_fit": 0.405,
+     "meaning": "Pleasures will certainly leave, however long they stay with us. Then what difference is there in parting? Only that people do not let them go themselves. Leaving of their own accord, they bring the mind unequalled torment. Given up by oneself, they bring endless peace. Let go before you are forced to, and stop calling relief happiness.",
+     "for_you": "Your children will leave in their own time, as all things do. You can meet their distance now with the peace of letting go, not the torment of being torn from them."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.141",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 141)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the listener",
+     "setting": "Surdas on the shelter of the name.",
+     "sanskrit": "बड़ी है राम नाम की ओट | सरन गएँ प्रभु काढ़ि देत नहिं, करत कृपा के कोट ।",
+     "line": "The name is a great shelter. Whoever comes to him is never turned away; he builds walls of kindness.",
+     "translation": "Great is the shelter of the name. When you come for refuge, the Lord never turns you out; he builds you forts of kindness.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0905,
+     "beat": "steady",
+     "role_fit": 0.54,
+     "meaning": "Surdas speaks to the listener from within the shelter of the name. He tells them that this shelter is great, and that whoever comes to it is never turned away. The Lord builds walls of kindness for the one who seeks refuge.",
+     "for_you": "Let the name be your shelter today. When the Sunday visits feel distant, let its sound be the wall that holds you, so you do not have to build it yourself."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.8",
+     "ref": "Bhagavad Gita 12.8",
+     "ref_iast": "Bhagavad Gītā 12.8",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna begins his ladder of practices with the simplest instruction.",
+     "sanskrit": "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय । निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः ॥",
+     "line": "Rest your mind in me, settle your thinking in me, and you will live in me.",
+     "translation": "Fix your mind on me alone, let your understanding settle in me; from then on you will dwell in me. Of this there is no doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0906,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, offering the simplest practice on his ladder of teachings. He tells Arjuna to fix his mind on him alone and let his understanding settle there, promising that he will then dwell in him without doubt.",
+     "for_you": "When the Sunday phones glow, let your mind rest on the page before you. Let the story settle, and you will dwell in it."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.7.1",
+     "ref": "Bhagavad Gita 7.1",
+     "ref_iast": "Bhagavad Gītā 7.1",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna opens the teaching on knowing him fully.",
+     "sanskrit": "श्री भगवानुवाचमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः । असंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु ॥",
+     "line": "Keep your mind attached to me, lean on me, keep practising. You will come to know me fully.",
+     "translation": "Hear, Partha, how with your mind attached to me, practising yoga and taking refuge in me, you will know me fully, without doubt.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.954,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna opens his teaching on knowing him fully. He tells Arjuna to keep his mind attached to him, to lean on him, and to keep practising, saying that in this way Arjuna will come to know him fully without doubt.",
+     "for_you": "Let your morning reading be the practice. Keep your mind attached to the text, and the knowing will come on its own."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "Your children are not your only company today. Let the Ramayana sit with you as Sumitra sat with Kausalya, and let its voice be the friend who shares your ache and reminds you that you will see them again."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The morning companion",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 307,
+   "llm": 3678,
+   "total": 11749,
+   "select": 7761
+  }
+ },
+ "script": [
+  [
+   "scene",
+   "Krishna is speaking to Arjuna on the battlefield. He has been describing his divine manifestations. Now he turns to those who follow him with devotion. He tells Arjuna that those whose minds rest on the divine, and who live their lives in that light, find joy simply by talking with one another about what they love. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम्, कथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च."
+  ],
+  [
+   "line",
+   "In plain words: Their minds on me, they talk of me with each other, and find joy and contentment in it."
+  ],
+  [
+   "unpack",
+   "This is not about gathering a crowd. It is about the quality of the mind. When the mind is fixed on what is lasting, conversation becomes a kind of light. People do not need to perform or impress. They simply share what is true for them, and in that sharing, they find contentment. This is easier said than done, because the mind naturally drifts to what is missing, to the silence of an empty house."
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": null,
+  "practice": "Spend five minutes today reading a single verse aloud and letting it sit in the quiet before you move on.",
+  "question": "Where do you find your mind fixed when the house is quiet?"
+ }
+}

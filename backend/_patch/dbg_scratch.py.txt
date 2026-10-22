@@ -1,0 +1,9 @@
+import sys; sys.path.insert(0, "tests")
+from test_plan import *
+def test_dbg(app, rec):
+    llm = FakeLLM(GOOD); llm.bad_personal = True; use_llm(rec, llm)
+    out = post(app, "plan", **BASE, follow="parents", note="they never support what I do", days=7)
+    for d in out["days"]:
+        c = d["verse"] or d["story"]; print(d["beat"], "|", (c.get("for_you") or "-")[:90])
+    print(out["understanding"]["flags"])
+    assert False

@@ -1,0 +1,502 @@
+{
+ "persona": {
+  "id": "us_genx_mother_empty_nest",
+  "market": "USA (Texas)",
+  "generation": "Gen X",
+  "gender": "woman",
+  "who": "52, physician in Houston, came from Chennai at 26. Younger son just left for college. Marriage is fine but quiet. Mother in Chennai has early dementia.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "parent_health"
+  },
+  "note": "dropped my younger one at college last week and drove home 4 hours in silence. my amma in Chennai doesn't always recognise me on video calls now. I'm between two people who don't need me the way they did",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "unmoored and quietly grieving",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "This week moves you from the restless mind that has no shape to a footing that holds both losses without letting either erase you.",
+   "week_beats": {
+    "hook": "You recognise the restlessness and the silence as grief, named without fixing it.",
+    "diagnose": "You see that the grief is real love with nowhere to go, and that is what unsettles the mind.",
+    "steady": "You hold that what is real in you cannot be lost, even as the forms around you change.",
+    "act": "You try letting the grief have its place, and giving your mind one small task to hold each day.",
+    "story": "A son who lost his mother's recognition and his child's presence shows you how to be present with both without losing yourself."
+   },
+   "confidence": 0.7,
+   "core_struggle": "His mind will not settle after dropping his younger child at college and watching his mother in slowly lose recognition of him.",
+   "mirror": "You dropped your child at college and drove home in silence. Your mother no longer always knows you on video.",
+   "insight": "The ache is this big because your love was this real. Grief is love that has nowhere left to go.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 2.06,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.485,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.29,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.44,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The restless mind after a bond changes and the silence that follows, when the child is gone and the mother no longer knows you.",
+    "diagnose": "Grief is love with nowhere to go; everything that comes together must part, and the mind is restless because what is real in us cannot be held still.",
+    "steady": "What is real in you cannot be lost; the love that was real is not gone, it has only changed its form.",
+    "act": "Let the grief have its place, tend to one person fully in the moment, and give your mind one small task to hold each day.",
+    "story": "A son who watched his mother fade and his child leave, carrying both losses, and found a way to be present with each without losing himself."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The love that is changing",
+    "What is real cannot be lost",
+    "The one who holds both"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "dropped younger child at college",
+    "mother in no longer always recognises them on video",
+    "feels between two people who no longer need them the same way",
+    "mind will not settle after the silence"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "insight:template",
+    "retried:2",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:copied=1,fallback_line=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.5524,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna has laid down his bow on the field of battle. He tells Krishna that the mind is restless and turbulent, as hard to hold as the wind. He is confessing his own unrest. Krishna does not argue. He agrees that the mind is stubborn and strong, and says that only practice and letting go can train it. The truth here is that the mind cannot be caught by force. It must be shaped by returning to what steadies it.",
+     "for_you": "The silence after dropping your younger child at college is exactly the kind of stillness where the mind races. You are not failing at focus. You are feeling two losses at once, and that is a heavy load for any mind to carry."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 3.0429,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "Kausalya speaks to Dasharatha after she lashes out at him over Ram's exile. She apologises, saying grief made her wound the one she loves most. She explains that grief wears away your steadiness and your judgement. There is no enemy like it. It makes us say things we do not mean and do harm to those closest to us. The verse proposes that apologising quickly heals more than being right.",
+     "for_you": "Yesterday you saw that the grief is real love with nowhere to go. Today you see that grief wears away your steadiness and your judgement. It made you unmoored. Let that be known. The steadiness you lost was not the truth. It was grief at work."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.146.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 146",
+     "family": "rcm",
+     "speaker": "Sumantra",
+     "listener": "Dasharath",
+     "setting": "Sumantra returns alone to the grieving king Dasharath and steadies him.",
+     "sanskrit": "जनम मरन सब दुख सुख भोगा। हानि लाभु प्रिय मिलन बियोगा॥ काल करम बस होहिं गोसाईं। बरबस राति दिवस की नाईं ॥ सुख हरषहिं जड़ दुख बिलखाहीं। दोउ सम धीर धरहिं मन माहीं॥ धीरज धरहु बिबेकु बिचारी। छाड़िअ सोच सकल हितकारी ॥",
+     "line": "Gain and loss, meeting and parting come like day and night. The steady hold both alike.",
+     "translation": "Birth and death, joy and sorrow, loss and gain, meeting and parting with those we love: these come under the sway of time and action, as surely as night and day. The foolish rejoice in good times and wail in bad; the steady hold both alike in the mind. Hold on to your courage, think with discernment, and let go of worry, you who care for everyone.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.1996,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Sumantra returns to the grieving king Dasharath and steadies him. He tells him that birth and death, joy and sorrow, loss and gain, meeting and parting come like day and night. The foolish rejoice in good times and wail in bad. The steady hold both alike in the mind. The verse proposes that you hold on to your courage, think with discernment, and let go of worry.",
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "sur.vp.107",
+     "ref": "Sursagar vinay pada",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "Hari",
+     "setting": "Surdas, looking back on hard times, almost misses them for how close God felt.",
+     "sanskrit": "अब वे बिपदा हू न रहीं। मनसा करि सुमिरत हे जब-जब, मिलते तब-तबहीं ॥ अपने दीन दास के हित लगि, फिरते सँग-सँगहीं । लेते राखि पलक गोलक ज्यों, संतत तिन सबहीं ॥",
+     "line": "In the hardest days he walked beside me and kept me as the eyelid keeps the eye.",
+     "translation": "Now even those troubles are gone. Back then, whenever I remembered you in my heart, you met me right then. For the good of your poor servant you walked along beside me, and kept me through all of it as the eyelid keeps the eye.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": null,
+     "score": 3.1345,
+     "beat": "steady",
+     "role_fit": 0.63,
+     "meaning": "Surdas is looking back on the hardest years, the ones where God felt so close he almost missed the pain. He remembers how, whenever he held the Lord in his heart, he was met right there. For the sake of his poor servant, God walked beside him, and kept him through it all exactly as the eyelid keeps the eye. The verse says that the one who truly holds you does not leave when the world changes. The form may shift, but the presence that guards you remains.",
+     "for_you": "Your mother may not know your face on the screen anymore, and your younger child is building a life without you at the center. But the part of you that loves, that stays awake through the silence, is still held. Let that steadiness be your footing today."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.338.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.15",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada to Shuka on troubles that affect many people at once.",
+     "sanskrit": "न जानपदिकं दुःखमेकः शोचितुमर्हति / अशोचन्प्रतिकुर्वीत यदि पश्येदुपक्रमम्",
+     "line": "Don't just grieve over a problem everyone faces. If you see a way to fix it, act.",
+     "translation": "No one should sit alone grieving over a trouble that has struck everyone. Instead of grieving, act to remedy it if you see a way.",
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 3.4998,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "Narada is speaking to Shuka, who has retreated into sorrow. Narada tells him not to sit alone and let grief consume him over a trouble that touches everyone. Instead, he should act to remedy what he can. The point is that brooding only feeds pain. The mind, like the body, is healed by doing, by moving, by tending to what is before you rather than drowning in what is behind.",
+     "for_you": "The silence after the goodbye is heavy, and your mind is restless. Pick one small thing to tend to today, a single task to hold. Let your hands do what your mind cannot settle, and give the grief its place without letting it take the whole day."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.119",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.119",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "वृद्धो ज्ञातिस्तथा मित्रमनाथा च स्वसा गुरुः / कुलीनः पण्डित इति रक्ष्या निःस्वः स्वशक्तितः / गृहे वासयितव्यास्ते धन्यमायुष्यमेव च",
+     "line": "An aging relative, a friend in need, a sister with no support: make room for them as you can.",
+     "translation": "An aged relative, a friend, a sister with no one to support her, a teacher, a person of good family or learning who has fallen poor: protect them as you are able, and give them a place in your home.",
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 3.4059,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Bhishma is answering Yudhishthira, describing how a person lives a long and good life. He says to protect those who have no one else, an aged relative, a friend in need, a sister with no support. Give them room, give them place. A good life is built from these small, daily acts of shelter, from kind words and respect, from making space for those who are falling.",
+     "for_you": "You are caught between two people who no longer need you in the same way. Today, make room for yourself in the same way you would make room for them. Offer your own aging self the shelter you offer others, and let that small act of holding your own life steady."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.punya_pavana",
+     "title": "Punya consoles his younger brother Pavana after their parents die",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Punya",
+      "Pavana",
+      "Dirghatapas"
+     ],
+     "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+     "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+     "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.21.6",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.6",
+      "family": "yv",
+      "speaker": "Vasishtha",
+      "listener": "Rama",
+      "setting": "After the story of two grieving brothers, Vasishtha tells Rama how worry feeds itself.",
+      "sanskrit": "चिन्तनेनैधते चिन्ता त्विन्धनेनेव पावकः । नश्यत्यचिन्ततेनैव विनेन्धनमिवानलः ॥",
+      "line": "Worry grows when you feed it thought, like fire with fuel. Starve it, and it dies down.",
+      "translation": "Worry grows by thinking, as fire grows with fuel; and it dies by not being thought, as fire dies without fuel.",
+      "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "overthinking",
+        "label": "I can't stop overthinking"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.punya_pavana",
+       "title": "Punya consoles his younger brother Pavana after their parents die",
+       "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+       "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+       "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Their parents died, and one brother lit the pyres while the other ran weeping into the forest",
+     "teaser": "Their parents died, and one brother lit the pyres while the other ran weeping into the forest",
+     "for_you": "Punya stayed with his brother in the forest without losing his own center. You can sit with the silence of your mother's fading memory and the quiet of your empty nest without letting either one erase you. Let your mind be full of love, but do not feed the endless loop of what is lost."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The love that is changing",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 241,
+   "llm": 4156,
+   "total": 14120,
+   "select": 9716
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying a quiet grief that does not have a name yet. You dropped your younger child at college and now you sit with a silence that your mind refuses to settle. You are watching your mother slowly lose memory of you on video calls."
+  ],
+  [
+   "scene",
+   "On the field, Arjuna has laid down his bow. He is looking at Krishna, his charioteer, and he is confessing his own unrest. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "The mind is not a thing you can catch by force. You cannot simply tell it to be still and expect it to listen. It is restless, stormy, stubborn and strong. The only way to hold it is to return to what steadies it, again and again. This is not about winning against your thoughts. It is about letting go and practicing the return. This is easier said than done, because your mind is grieving two real losses at once and it will not be rushed."
+  ],
+  [
+   "for_you",
+   "After you hang up from your mother, do not try to force your mind to focus. Instead, let it be. Sit with the silence for a few minutes and let your mind move through the grief. Then, gently bring your attention back to one small thing, like the weight of your feet on the floor."
+  ],
+  [
+   "close",
+   "Can you let the wind move through you today?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit with your phone after a call with your mother, and the silence feels wrong. Your younger child is at college now, and your parents are far away. You feel unmoored, caught between two people who no longer need you the same way. Your mind will not settle.",
+  "points": "The mind is restless because it is holding two losses at once. It is not a failure. It is a mind that loves deeply and has nowhere left to put its weight right now.",
+  "practice": "Rest your eyes on one fixed point for two minutes. Let the thoughts of your child and your mother pass through without moving your gaze.",
+  "question": "What is the one thing your mind wants to hold onto right now?"
+ }
+}

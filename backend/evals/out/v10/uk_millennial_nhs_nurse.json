@@ -1,0 +1,498 @@
+{
+ "persona": {
+  "id": "uk_millennial_nhs_nurse",
+  "market": "UK (Manchester)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "31, NHS nurse in Manchester, came from Kerala 5 years ago, sends money home, night shifts. Single. Family asking about marriage.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "shame"
+  },
+  "note": "12 hour night shifts, I send half my salary home, my parents are proud but every call ends with when are you getting married. I'm 31 and I feel like I'm failing at a test I never agreed to take",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "tired of being needed and quietly ashamed",
+   "bridge": "The pride they show you and the question they end every call with are two different things, and the Gita asks which one is actually yours.",
+   "week_thesis": "Seven days from feeling like a failure at their test to seeing that their own duty is the only proof that matters.",
+   "week_beats": {
+    "hook": "You recognise the pride and the question, and the shame that has settled in, without blame.",
+    "diagnose": "You see that it is the craving for their approval, not the question, that keeps the mind from settling.",
+    "steady": "You hold that praise and blame come and go, and the work you do is yours alone.",
+    "act": "You try turning your mind back to what is yours to do, and let their question come and go.",
+    "story": "A person who worked and sent their wages home shows you that their own duty was the only approval they ever needed."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "At and sending half their salary home from hour shifts, feels like a failure for not marrying, a test they never agreed to take.",
+   "mirror": "You send them half your salary and they are proud, and still the call ends with the same question.",
+   "insight": "It is not the question they ask that hurts. It is the shame that has settled in you, as if their approval is the only proof that you have done enough.",
+   "mechanism": "need_for_approval",
+   "mechanism_label": "Needing their approval",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.648,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 1.64,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "midlife",
+     "label": "Midlife and wondering if this is it",
+     "weight": 0.427,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The pride and the question, the half salary sent home, and the shame of feeling like a failure at a test you never agreed to take.",
+    "diagnose": "When your worth depends on their praise, every word of blame or pressure shakes you; craving their approval keeps the mind unsteady even when you are doing your duty.",
+    "steady": "Praise and blame, success and failure, come and go like the wind; the work you do and the duty you hold are yours, and no one else can give you sorrow unless you hand them the reins of your peace.",
+    "act": "Do your duty without shrinking to fit their picture; let their praise and their question come and go, and turn your mind back to what is yours to do today.",
+    "story": "A person who worked and sent their wages home, faced the same question every evening, and found that their own duty was the only approval they needed."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The test you never agreed to",
+    "Whose approval it is",
+    "The work that is yours"
+   ],
+   "seat": "",
+   "life_context": "A worker in their early thirties on night shifts, sending half their pay home to parents who are proud but end every call with the same marriage question, leaving them feeling like a failure at a test they never signed up for.",
+   "details": [
+    "works hour night shifts",
+    "sends half salary home",
+    "parents are proud but call ends with marriage questions",
+    "is and feels like failing a test they never agreed to"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "seat:missing",
+    "week_fit:7=0.3,61=0.6,19=0.3,7=0.6,532=0.6,17=0.3",
+    "week_fit:swapped=3",
+    "retried:2",
+    "redo:3",
+    "redo_fixed:1",
+    "dropped:blame=1,invented=1,repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      },
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.607,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna is telling Arjuna that it is better to do your own work, even if you do it imperfectly, than to do someone else's work perfectly. You could do the work that comes from your own nature. When you do your own work, you do not do wrong, even if you make mistakes.",
+     "for_you": "Your parents are proud of your night shifts and your half salary, yet the marriage question at the end of every call leaves a mark. You feel like a failure at a test you never agreed to take. The Gita says your own path, imperfectly walked, is better than another's done perfectly."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bh.vairagya.61",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 61",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own heart",
+     "setting": "Opening verse of 'Advice to the Mind'.",
+     "sanskrit": "परेषां चेतांसि प्रतिदिवसमाराध्य बहुधा प्रसादं किं नेतुं विशसि हृदय क्लेशकलितम् । प्रसन्ने त्वय्यन्तः स्वयमुदितचिन्तामणिगणो विविक्तः संकल्पः किमभिलषितं पुष्यति न ते ॥",
+     "line": "Why exhaust yourself daily winning others' approval? Settle inside, and your own clarity grants every wish.",
+     "translation": "O heart, why do you enter into weariness, day after day trying to please the minds of others in so many ways, to win their favour? When you are at peace within, your own clear resolve rises by itself like a cluster of wish-granting gems: what wish of yours would it not fulfil?",
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 3.1484,
+     "beat": "diagnose",
+     "role_fit": 0.386,
+     "meaning": "Bhartrihari speaks to his own heart. He asks why it wears itself out every day trying to win the favor of others. The verse asks you to stop rehearsing how they will judge you. It says that when you settle inside, your own clear resolve rises up on its own, like a cluster of gems that grant every wish. It turns gently toward your life.",
+     "for_you": "You sit with your parents at the end of each call and hear the same question. The shame you feel is not the question itself. It is the craving for their approval that keeps your mind restless. Settle inside, and let your own clarity show you the way."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.33.33",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.33",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "न हृष्यत्यात्मसंमाने नावमानेन तप्यते / गाङ्गो ह्रद इवाक्षोभ्यो यः स पण्डित उच्यते",
+     "line": "Don't swell with praise or burn at a slight; stay deep and still like a river pool.",
+     "translation": "One who is not elated when honoured, nor pained when slighted, and who stays unruffled like a deep pool of the Ganga, is called wise.",
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 3.364,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": null,
+     "for_you": "Praise and blame come and go. The work you do on your night shifts is yours alone. Hold onto that, and let it steady you while it hurts."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.7",
+     "ref": "Bhagavad Gita 6.7",
+     "ref_iast": "Bhagavad Gītā 6.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः । शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥",
+     "line": "Self-mastered and calm, you stay centred in heat and cold, pleasure and pain, praise and insult.",
+     "translation": "For one who has conquered himself and is at peace, the higher self stays steady in cold and heat, pleasure and pain, honour and dishonour.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Staying steady under insult is not accepting mistreatment; you can stay calm and still speak up.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.3545,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Krishna tells Arjuna that one who has conquered themselves and is at peace stays steady in heat and cold, pleasure and pain, honour and dishonour. The verse asks you to be your own best friend in this way. You can choose to stand firm in your own truth, calm and centred, no matter what comes toward you from the outside.",
+     "for_you": "When the phone call ends and the marriage question hangs in the air, let it pass through you. The pride in their voice and the question in their mouth are not the same thing, and neither of them is the proof of your worth. Your half salary and your steady work are yours alone."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.1457,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu tells Nidagha about a person who moves freely through the world. They do the work in front of them without clinging to what they want or don't want. They treat everyone the same and speak gently. They know what is in people's hearts. Because they live like this, they do not sink into sorrow or endless wanting.",
+     "for_you": "When your parents call and ask about marriage again, let the question come and go. Do your work, send the money, and let their pride be theirs. Your part is the only proof that matters today."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 2.9721,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is telling Arjuna this on the battlefield. The armies are waiting, and Arjuna is frozen by the fear of what will happen. Krishna looks at him and says that his right is only to the action in front of him, to the fighting and the duty of his place. The victory, the kingdom, the death of his own kin, the future that follows, none of that is his to hold. It belongs to the larger order.",
+     "for_you": "When the phone rings and your parents ask about marriage, let the question pass through you like a sound you hear from another room. You are not failing. You are doing the work you have, sending what you can, and that is your part."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "midlife",
+       "label": "Midlife and wondering if this is it"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "King Janaka did not run away from his duties when he heard the truth. He stayed and ruled with a free mind. You do not have to leave your life to change it. Do your night shift, send the money, and let your own duty be the only approval you need."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The test you never agreed to",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 137,
+   "llm": 4452,
+   "total": 11482,
+   "select": 6884
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying a quiet shame. You work the night shift, you send half your pay home, and your parents are proud. But the call always ends the same way. You feel like you are failing a test you never agreed to take."
+  ],
+  [
+   "scene",
+   "Arjuna is on a battlefield, and he is trying to hand his duty back to someone else. He is looking at the other side and wondering if their path is better. Krishna hears him and asks him to look at his own hands. And Krishna said:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "Krishna is saying that your own work, done with your own nature, is worth more than another person's done perfectly. You could try to play the part they want, but it would be a borrowed life. Your night shifts and your half salary are your own work. They come from your nature. You could do them imperfectly and still be right."
+  ],
+  [
+   "for_you",
+   "When your parents ask about marriage, you do not have to carry the proof that you are enough. Your own work is the proof. Let their pride and their question be two different things. Your own path is your offering."
+  ],
+  [
+   "close",
+   "Which path is actually yours?"
+  ]
+ ],
+ "depth": {
+  "life": "You are sending half your pay home from hour shifts. Your parents are proud, yet every call ends with the same marriage question. You feel like a failure at a test you never agreed to take.",
+  "points": "The pride they feel and the question they ask are not the same thing. The Gita points to the root cause: your own nature and your own duty. You are looking for proof of your worth from them, but your own work is the only proof that matters.",
+  "practice": "When the next call ends with their question, pause for a breath. Let their words land without answering. Then notice the work you did today, and let that be your proof.",
+  "question": "What would it feel like if their pride was enough?"
+ }
+}

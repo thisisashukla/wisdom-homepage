@@ -1,0 +1,517 @@
+{
+ "persona": {
+  "id": "in_genx_father_layoff",
+  "market": "India (Pune)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "49, IT services manager in Pune, 22 years in the same company, laid off last month. Daughter in 11th, home loan, aging mother.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and frozen",
+   "bridge": "The ten-minute call that ended twenty-two years is what the Gita calls a result you cannot control. The only thing left to do is what is yours to do now.",
+   "week_thesis": "Seven days from being let go in ten minutes to standing in the one thing no one can take: the self that was there before the job and will be there after.",
+   "week_beats": {
+    "hook": "You recognise being let go and the shame of it, named without judgement.",
+    "diagnose": "You see that their decision is not your measure, and that the verdict you keep replaying is the one that hurts most.",
+    "story": "A man of long service who was dismissed shows you what standing in your own truth looks like after the door has closed."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.8,
+   "core_struggle": "After twenty-two years, was let go in a ten-minute call, and is now living in a body that still wakes at six for an office that no longer exists.",
+   "mirror": "You gave them twenty-two years, and they gave you ten minutes back. The morning alarm still runs on their clock.",
+   "insight": "The company let you go, but the only thing that has not let you go is the story that you were not good enough. That story is the one you are still living.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.83,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being let go after two decades in a call that lasted ten minutes, and the shame of not being able to tell the one person who still sees you as the son who never failed. I lost my job.",
+    "diagnose": "When a result is taken from you, the mind can turn it into a verdict on who you are; the harm deepens only when their decision begins to replace your own measure of yourself.",
+    "steady": "What you are cannot be cut smaller by what they decided; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing to yourself, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they left you with.",
+    "story": "A man of long service, dismissed by his own, who stood in his truth and found that the ground he stood on was his own, not theirs to take away."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The verdict they left",
+    "Whose measure it is",
+    "More than the job you held"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "twenty two years in one company",
+    "let go in a ten minute call",
+    "still wakes at six every morning to go to the office that is no longer there"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "day1_other_text:vr",
+    "retried:2",
+    "dropped:missing=1",
+    "for_you:6/7",
+    "meaning:6/6",
+    "script:dropped:for_you=preachy,scene=invented_name",
+    "script:written:3/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "vr.2.19.6",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.6",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Kaikeyi",
+     "setting": "Ram has just accepted fourteen years of exile; one thing still hurts him.",
+     "sanskrit": "अलीकं मानसं त्वेकं हृदयं दहते मम। स्वयं यन्नाह मां राजा भरतस्याभिषेचनम्॥",
+     "line": "What hurt most was not the news, but that he didn't tell me himself.",
+     "translation": "Only one sorrow burns my heart: that the king did not tell me himself about Bharata's coronation.",
+     "why": "You cannot control the news; you can control the person who walks out of the room.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_accepts_exile",
+      "title": "Ram accepts exile",
+      "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+      "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+      "lesson": "You cannot control the news; you can control the person who walks out of the room."
+     },
+     "score": 3.4794,
+     "beat": "hook",
+     "role_fit": 0.84,
+     "meaning": "Ram has just agreed to fourteen years in the forest. The king did not deliver the news himself. The only wound Ram names is that his father could not tell him directly, even though the exile itself he accepts without anger.",
+     "for_you": "The company let you go, but the shame is that no one walked into the room to say it to your face. That ten-minute call is the wound. What is yours to do is to walk out of that room and into the next morning, without waiting for an apology."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.9.46",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+     "family": "yv",
+     "speaker": "Janaka",
+     "listener": "himself",
+     "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+     "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+     "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+     "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 3.0127,
+     "beat": "diagnose",
+     "role_fit": 0.766,
+     "meaning": "King Janaka sits alone on his palace roof, shaken by the words of wandering sages about the self. He has ruled a kingdom, but now he questions everything. The sages sing that the mind can turn fortune into calamity and calamity into fortune. Janaka decides not to run away. He will get up and do his duties, but with a mind that no longer clings to the outcome of the day.",
+     "for_you": "The ten-minute call was their decision, not your worth. The verdict you replay in your mind is the one that keeps the shame alive. The office is gone, but you do not have to let the story of your worth go with it."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2345,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to you from the section on steadfastness. He is describing a person who has found a footing that no one can shake. Let the wise praise or blame. Let money come or go. Let death arrive today or in many years. The steadfast do not move a step from the path of what is right.",
+     "for_you": "The praise and blame from the ten-minute call cannot move you from the path that twenty-two years built. Let the office come or go. You do not step off the right path."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.16",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 16",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Kings who slight scholars",
+     "setting": "From the section praising learning, addressed to proud rulers.",
+     "sanskrit": "हर्तुर्याति न गोचरं किमपि शं पुष्णाति यत् सर्वदा- ऽप्यर्थिभ्यः प्रतिपाद्यमानमनिशं प्राप्नोति वृद्धिं पराम् । कल्पान्तेष्वपि न प्रयाति निधनं विद्याख्यमन्तर्धनं येषां तान् प्रति मानमुज्झत नृपाः कस्तैः सह स्पर्धते ॥",
+     "line": "Learning is wealth no thief can see. It grows when you give it away and never perishes.",
+     "translation": "It never comes within a thief's sight; it always nourishes some deep good; given to those who ask, it grows greater; even at the end of an age it does not perish. Kings, drop your pride before those who own this inner wealth called learning. Who can compete with them?",
+     "why": "What you learn and how you speak are the wealth no one can take from you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.vidvat",
+      "title": "Nitishatakam: In praise of learning and the learned",
+      "summary": "Bhartrihari praises learning as wealth no thief can take and speech as the one lasting ornament, then turns to good company and the three kinds of people who face obstacles. It ends with the 'sword's-edge vow' of the good.",
+      "story_hook": "",
+      "lesson": "What you learn and how you speak are the wealth no one can take from you."
+     },
+     "score": 3.0324,
+     "beat": "steady",
+     "role_fit": 0.544,
+     "meaning": "Bhartrihari speaks to kings who think power is everything. He tells them to drop their pride before scholars. Learning, he says, is wealth no thief can see. It nourishes a deep good inside you. When you share it with those who ask, it only grows greater. It never perishes, even when ages end. This is the wealth that stays with you when everything else is gone.",
+     "for_you": "The office is empty, but the knowledge you gathered over twenty-two years is still yours. It is the one thing no ten-minute call can touch."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.195,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat after his father dies and his brother leaves. Bharat is shattered and refuses the throne. Vasishtha tells him to keep courage in his heart and do what the moment asks today. Hearing this, Bharat rises and prepares to go to the forest to face Ram. The point is that when your mind and heart are at war, you could go and face the truth you are avoiding.",
+     "for_you": "The morning ritual of waking at six is a ghost now. Take one small step today. Go to the place where you used to work and walk through the doors one last time to close the chapter."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.1531,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He is telling him to do what is right without being attached to what comes out of it. He says your right is only to the work, never to the results. Do the work fully and let go of owning the outcome. This is not about not caring or not planning. Care, plan, and aim well, but do not let the outcome own you.",
+     "for_you": "You are still waking at six for an office that is no longer there. Let that body rest. Today, do one small thing for yourself. Make a cup of tea and drink it without checking your phone."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.exile_order",
+     "title": "Ram hears he is to be exiled",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharath"
+     ],
+     "story_hook": "Ram walked in expecting a crown and walked out with a forest.",
+     "summary": "Ram is called to his father's room and finds him collapsed. Kaikeyi tells him the terms. Ram smiles: his brother gets the throne, he gets to meet sages in the forest, and he can keep his father's word. Kaikeyi reads his plain words as cunning, and Ram walks out feeling, the poet says, like an elephant freed from its post.",
+     "lesson": "A lost role can be met with grace; sometimes it even feels like freedom.",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.2.42.chaupai.1",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 42",
+      "family": "rcm",
+      "speaker": "Ram",
+      "listener": "Kaikeyi",
+      "setting": "Ram, told by Kaikeyi that Bharat will be crowned and he exiled, answers her calmly.",
+      "sanskrit": "भरतु प्रानप्रिय पावहिं राजू। बिधि सब बिधि मोहि सनमुख आजू॥ जौं न जाउँ बन ऐसेहु काजा। प्रथम गनिअ मोहि मूढ़ समाजा ॥",
+      "line": "My beloved brother gets the throne. Fate is favouring me in every way today.",
+      "translation": "...and Bharat, dear to me as life, will have the kingdom. Fate is favouring me in every way today. If I would not go to the forest even for such a cause, count me first among fools.",
+      "why": "A lost role can be met with grace; sometimes it even feels like freedom.",
+      "misuse": "Grace in loss is not pretending it doesn't hurt.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.exile_order",
+       "title": "Ram hears he is to be exiled",
+       "summary": "Ram is called to his father's room and finds him collapsed. Kaikeyi tells him the terms. Ram smiles: his brother gets the throne, he gets to meet sages in the forest, and he can keep his father's word. Kaikeyi reads his plain words as cunning, and Ram walks out feeling, the poet says, like an elephant freed from its post.",
+       "story_hook": "Ram walked in expecting a crown and walked out with a forest.",
+       "lesson": "A lost role can be met with grace; sometimes it even feels like freedom."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram walked in expecting a crown and walked out with a forest",
+     "teaser": "Ram walked in expecting a crown and walked out with a forest",
+     "for_you": null
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The verdict they left",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 150,
+   "llm": 4604,
+   "total": 14286,
+   "select": 9525
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying the weight of a room you cannot leave. Twenty-two years of your life have been erased in ten minutes, and now your body wakes at six in an empty silence. You feel frozen, as if the floor beneath you has turned to glass and you are afraid to step."
+  ],
+  [
+   "scene",
+   "Ram has just accepted fourteen years of exile; one thing still hurts him. Ram said to Kaikeyi:"
+  ],
+  [
+   "sanskrit",
+   "अलीकं मानसं त्वेकं हृदयं दहते मम, स्वयं यन्नाह मां राजा भरतस्याभिषेचनम्."
+  ],
+  [
+   "line",
+   "In plain words: What hurt most was not the news, but that he didn't tell me himself."
+  ],
+  [
+   "unpack",
+   "The exile itself is a result you cannot control. It is done. But the hurt is not the exile. The hurt is the person who delivered it, or rather, the person who did not. You cannot control the news. You can only control the person who walks out of the room. This is the only part of the story that belongs to you now."
+  ],
+  [
+   "for_you",
+   "For you, today. The company let you go, but the shame is that no one walked into the room to say it to your face. That ten-minute call is the wound. What is yours to do is to walk out of that room and into the next morning, without waiting for an apology."
+  ],
+  [
+   "close",
+   "Who is left to comfort when no one walks in?"
+  ]
+ ],
+ "depth": {
+  "life": "You wake at six and your body moves toward an office that no longer exists. The silence in the house is full of the ten minutes that ended twenty-two years. You carry a shame that has no face to look at.",
+  "points": "The news itself was not the wound. The wound is the person who walked out of the room without looking at you. You are living inside the absence of their voice, waiting for a face that will not appear.",
+  "practice": "Stand at your door at six and let your body feel the empty space where the office used to be. Breathe once and name the one thing you can do today that does not need that room.",
+  "question": "What would it feel like to walk out of that room and not wait for an apology?"
+ }
+}

@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagwat Geeta Saar — The Essence of the Bhagavad Gita in 18 Verses | Wisdom",
+  title: "Bhagwat Geeta Saar — The Essence of the Bhagavad Gita in 18 Verses",
   description: "Geeta Saar (गीता सार) is the essence of the Bhagavad Gita. The famous viral quote isn't in the Gita. Here's what Krishna actually taught — one core verse per chapter, in Sanskrit, Hindi, and English.",
   keywords: "geeta saar, bhagwat geeta saar, bhagavad gita saar, gita saar in hindi, geeta saar in english, bhagwat geeta ka saar, gita saar shloka, complete essence of bhagavad gita, geeta saar 18 chapters, krishna geeta saar, bhagavad gita summary, geeta ka saar",
   openGraph: {
@@ -694,12 +695,12 @@ export default function BhagwatGeetaSaarPage() {
       </div>
 
       <div className="content" style={{ paddingTop: 0 }}>
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Saar"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Saar"} />
       </div>
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Bhagwat Geeta Saar" />

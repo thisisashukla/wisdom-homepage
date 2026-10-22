@@ -1,0 +1,515 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "torn and grieving",
+   "bridge": "The mother you feel you have lost is love with nowhere to go. What you are grieving is the bond, not the hours you kept.",
+   "week_thesis": "From grieving the mother you feel you have become, to seeing that the love is still there and the hours can be rearranged.",
+   "week_beats": {
+    "hook": "You recognise the grief and the guilt, named without judgement.",
+    "diagnose": "You see that it is the bond, not the hours, that is grieving, and the guilt is the mind turning that grief into a debt.",
+    "steady": "You hold that the love you have for your children is never lost, only waiting for a place to rest.",
+    "act": "You try giving yourself one hour that is only yours, and letting the love rest where it already is.",
+    "story": "A mother who left her children to work and returned to find them changed shows you that love is not measured in hours."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.7,
+   "core_struggle": "A working mother of two who feels she is failing at both roles, and is grieving the mother she believes she has become.",
+   "mirror": "You give the day to two different lives, and at night you cry in the car for the mother you feel you are not.",
+   "insight": "The mother you feel you have lost is not gone. She is the love you have for your children, and she is still there, even when the hours are not.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 1.76,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.05,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.575,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.363,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The grief of feeling you have become a mother who is only half there, and the guilt that follows you home in the car. I'm physically home but not present with my kids.",
+    "diagnose": "Grief is love with nowhere to go; the bond you feel you are not tending to becomes a debt you can never repay, and the mind never settles.",
+    "steady": "What you are feeling is love, and love is never lost; it is only waiting for a place to rest.",
+    "act": "Let the love you have for your children rest where it is, and give yourself the one thing you are missing: a single hour that is only yours.",
+    "story": "A mother of two who left her children to work and returned to find them changed, who had to learn that love is not measured in hours but in the truth she held for them."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The grief of the bond",
+    "The guilt that follows",
+    "Love is not measured in hours"
+   ],
+   "seat": "a working mother of two who is grieving the mother she feels she has become",
+   "life_context": "In her mid-thirties and back at work after her second child; every day she feels she is only half a mother and half a professional, and her daughter's question in the car left her crying.",
+   "details": [
+    "back at work after second baby",
+    "feels half a mother and half a PM",
+    "daughter asked why she is not there like other moms",
+    "cried in the car after the question"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "mechanism:grief_without_death",
+    "hook:anchored_to_situation",
+    "week_fit:67=0.0,34=0.0,12=0.3,64=0.3,46=0.6,7=0.3",
+    "week_fit:swapped=5",
+    "redo:5",
+    "redo_fixed:1",
+    "dropped:repeat=4,soft_kept=4,verdict=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 2.2477,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna is on the battlefield, and he tells Krishna his mind is restless, turbulent, and stubborn. He says it feels as hard to hold as the wind. Krishna agrees with him. He says the mind is hard to hold, but practice and letting go can train it.",
+     "for_you": "Your mind feels like the wind today, pulled between the office and the school run. The guilt you feel when you are not fully present with your daughter is real, but it is not a failure. It is the love you have for her, restless and looking for a place to land."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.492",
+     "ref": "Chhandogya Upanishad 6.8.2",
+     "ref_iast": "Chāndogya Upaniṣad 6.8.2",
+     "family": "up",
+     "speaker": "Uddalaka Aruni",
+     "listener": "Shvetaketu",
+     "setting": "Uddalaka explains sleep to his son.",
+     "sanskrit": "स यथा शकुनिः सूत्रेण प्रबद्धो दिशं दिशं पतित्वान्यत्रायतनमलब्ध्वा बन्धनमेवोपश्रयत एवमेव खलु सोम्य तन्मनो दिशं दिशं पतित्वान्यत्रायतनमलब्ध्वा प्राणमेवोपश्रयते प्राणबन्धनꣳ हि सोम्य मन इति ॥",
+     "line": "Like a bird on a string, the mind flies everywhere, finds no rest, and returns to the breath.",
+     "translation": "As a bird tied by a string flies in every direction and, finding no resting place anywhere else, settles down at the very place it is tied, so, dear one, the mind flies in every direction and, finding no resting place anywhere else, settles down on the breath; for the mind is tied to the breath.",
+     "why": "What is most real in you is unseen, everywhere, and the same in all.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.chhandogya.uddalaka_lessons",
+      "title": "Uddalaka's lessons: tat tvam asi",
+      "summary": "Uddalaka teaches his son through everyday experiments: a fast that dims the mind, a bird on a string, rivers merging in the sea, a banyan seed with nothing visible inside, salt dissolved in water, a blindfolded man finding his way home. Each lesson ends: 'That subtle essence is the self of all. You are that, Shvetaketu.'",
+      "story_hook": "",
+      "lesson": "What is most real in you is unseen, everywhere, and the same in all."
+     },
+     "score": 3.0789,
+     "beat": "diagnose",
+     "role_fit": 0.611,
+     "meaning": "Uddalaka is teaching his son Shvetaketu about sleep. He says the mind is like a bird tied to a string. It flies in every direction, searching for a place to land. But finding nowhere else to rest, it comes back to the breath. The mind is tied to the breath, and that is where it settles.",
+     "for_you": "Your mind is the bird, flying from the inbox to the lunchbox to the guilt of not being there. It is not broken. It is looking for a place to land. Let it come back to your breath, just for a moment, before you answer the next message."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.14",
+     "ref": "Bhagavad Gita 2.14",
+     "ref_iast": "Bhagavad Gītā 2.14",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥",
+     "line": "Heat and cold, pleasure and pain come and go. They don't last; learn to bear them.",
+     "translation": "Contact of the senses with their objects brings cold and heat, pleasure and pain. They come and go and do not last. Bear them patiently, Arjuna.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Bearing passing discomfort is not putting up with harm or abuse; those are not weather to wait out.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.1186,
+     "beat": "steady",
+     "role_fit": 0.615,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield. He tells him that heat and cold, pleasure and pain, come and go. They do not last. What is real in you is never born and never dies. So learn to bear the passing moments without being broken by them.",
+     "for_you": "You are holding the grief of the hours you cannot give. But the love you have for your children is not born and will not die. It is the part of you that outlasts every passing pain. Let that be the ground you stand on, even when the mind is restless."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.5.64.33",
+     "ref": "Yoga Vasishtha, Upashama 64.33",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 64.33",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha tells Rama where a tired person can rest.",
+     "sanskrit": "स्निग्धशीतवचःपत्रे सच्छाये स्मितपुष्पके । क्षणाद्विश्रम्यते राम भृशं सुजनचम्पके ॥",
+     "line": "A kind person is a shady tree: cool words for leaves, smiles for flowers. Rest there a while.",
+     "translation": "Under the champak tree of a good person, whose leaves are tender, cooling words, with good shade and smiles for flowers, one rests at once, Rama, and deeply.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": null,
+     "score": 3.0946,
+     "beat": "steady",
+     "role_fit": 0.535,
+     "meaning": "Vasishtha tells Rama where a tired person can rest. He says a kind person is a shady tree. Their tender leaves are cooling words, their shade is good, and their smiles are the flowers. Under that tree, you rest at once, and you rest deeply. The verse is saying that the love and care of others can create a space where your mind stops its restless wandering and finds peace.",
+     "for_you": "The love you have for your children is not lost. It is the shade of the tree, waiting for you. Let it rest in the small moments you already have, without needing the hours to be different."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ram_gita.46",
+     "ref": "Ram Gita 46 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 46",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "विविक्त आसीन उपारतेन्द्रियो विनिर्जितात्मा विमलान्तराशयः । विभावयेदेकमनन्यसाधनो विज्ञानदृक्केवल आत्मसंस्थितः ॥",
+     "line": "Sit somewhere quiet, let the senses rest, and give your full attention to one thing.",
+     "translation": "Sitting in a quiet place, senses at rest, self-mastered, pure within, one should contemplate the One with undivided attention, resting in the Self.",
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 3.2335,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "Rama tells Lakshmana how to cross the sea of confusion. He says to sit in a quiet place, let the senses rest, and give your full attention to one thing. Keep faith until understanding becomes natural. The verse is saying that you do not need to solve the confusion right now. You just need to sit quietly and let your mind become still, like a calm ocean.",
+     "for_you": "Give yourself one hour today that is only yours. Let your mind rest from the split between mother and professional, and let your love rest where it already is."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.25",
+     "ref": "Bhagavad Gita 6.25",
+     "ref_iast": "Bhagavad Gītā 6.25",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna teaches Arjuna how to meditate and what a settled mind is like.",
+     "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया । आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत् ॥",
+     "line": "Little by little, with patience and steady resolve, settle the mind and let other thoughts go.",
+     "translation": "Little by little one should come to rest, with understanding held steady; fixing the mind on the self, one should think of nothing else.",
+     "why": "Moderation and gentle return, again and again, settle the mind.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.3",
+      "title": "Meditation in detail",
+      "summary": "Krishna describes meditation: moderation in food and sleep, the mind like a lamp in a windless place, bringing the wandering mind back, and feeling others' joy and pain as one's own.",
+      "story_hook": "",
+      "lesson": "Moderation and gentle return, again and again, settle the mind."
+     },
+     "score": 2.9382,
+     "beat": "act",
+     "role_fit": 0.704,
+     "meaning": "Krishna tells Arjuna that a mind at war with itself cannot be tamed in a single moment. He says that one must gently and patiently bring the wandering attention back to the self again and again. It is not a battle of force, but a steady return, letting other thoughts fall away little by little. This is the way a mind finds its footing.",
+     "for_you": "You are back at work, and the hours pull you in two directions. Let the love you feel for your children rest exactly where it is right now. Give it your full attention for one small moment, and let the rest go."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "present_parent",
+        "label": "I'm physically home but not present with my kids"
+       },
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "Kausalya once asked the cosmic Ram to put away his grand form and simply be a little child with her. She knew that the deepest truth of a child is not the vastness of what they might become, but the ordinary, dusty hours of being small. Your love for your children is not gone."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The grief of the bond",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 156,
+   "llm": 4509,
+   "total": 10710,
+   "select": 6037
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are back at work, but your mind is still in the car with your daughter. You feel like you are only half a mother, and that half is not enough. The crying you did was not just sadness. It was the grief of a mother you feel you have lost."
+  ],
+  [
+   "scene",
+   "On the battlefield, Arjuna tells Krishna that his mind is restless, turbulent, and stubborn. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Krishna does not tell Arjuna to force the mind down. He says the mind is naturally restless. You cannot grab the wind and hold it still. But you can train it by practicing presence and letting go of the fight. The mind is not your enemy. It is a powerful force that needs a different kind of attention. It is easier said than done, because you are trying to hold two worlds at once."
+  ],
+  [
+   "for_you",
+   "When you are with your children, let your mind rest in that love without judging the hours. When you are at work, let your mind rest in the tasks without guilt. The practice is not to stop the wind, but to give your mind one place to land at a time."
+  ],
+  [
+   "close",
+   "What if the love you feel is the home your mind is looking for?"
+  ]
+ ],
+ "depth": {
+  "life": "You are in the car after your daughter asked why you are not there like the other moms. You feel torn between the PM you are at work and the mother you want to be at home. The hours are not enough, and you are grieving the mother you feel you have become.",
+  "points": "Krishna does not promise to stop the wind. He says the mind is stubborn and strong. The restlessness you feel is not proof that you are failing. It is the love you carry for your children, looking for a place to land.",
+  "practice": "Sit in the car for two minutes after you park. Let your hands rest on the wheel. Do not try to fix anything. Just notice where your mind goes.",
+  "question": "What if the mother you are grieving is actually the love you have for your children?"
+ }
+}

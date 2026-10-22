@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita Chapter 18 — The Longest Chapter (78 Verses), 'Abandon All Duties' & the Final Teaching | Wisdom",
+  title: "Bhagavad Gita Chapter 18 — The Longest Chapter (78 Verses), 'Abandon All Duties' & the Final Teaching",
   description: "Chapter 18 is the longest chapter of the Bhagavad Gita — 78 verses of Moksha Sannyasa Yoga, the final teaching. All verses with Sanskrit, Hindi and English meaning, including 18.66 'Abandon all duties, take refuge in me alone' and 18.47 on swadharma.",
   keywords: "bhagwat geeta chapter 18, bhagavad gita moksha sannyasa yoga, bhagwat geeta adhyay 18, sarva dharman parityajya, man mana bhava mad bhakto, swadharma gita, five causes of action, charama shloka gita, Moksha Sannyasa Yoga meaning, Bhagavad Gita 18.66 sarva dharman parityajya, Bhagavad Gita 18.65 man mana bhava mad bhakto, Bhagavad Gita 18.47 sva dharma, five causes of action Bhagavad Gita, charama shloka Bhagavad Gita, Bhagavad Gita conclusion summary",
   openGraph: {
@@ -1257,7 +1258,7 @@ export default function ChapterPage18() {
           </div>
         </div>
 
-          <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 18"} />
+          <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 18"} />
 
         </article>
       </div>
@@ -1267,12 +1268,12 @@ export default function ChapterPage18() {
         <p>
           Wisdom © 2026. Part of a{' '}
           <a
-            href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+            href={appStoreUrl('web_blog_footer')}
             target="_blank"
             rel="noopener"
             data-mp-location="footer"
           >free iPhone app</a>{' '}
-          that delivers daily Bhagavad Gita shlokas. Made with reverence.
+          that tunes the Bhagavad Gita to your life, one verse a day. Made with reverence.
         </p>
         <p style={{ marginTop: '8px' }}>
           <a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>

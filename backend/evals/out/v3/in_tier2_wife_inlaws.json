@@ -1,0 +1,498 @@
+{
+ "persona": {
+  "id": "in_tier2_wife_inlaws",
+  "market": "India (Indore)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "29, chartered accountant in Indore, married 1 year, lives with in-laws who expect her to give up the practice after a baby. Husband avoids the topic.",
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 2,
+   "topic": "someone",
+   "follow": "in_laws"
+  },
+  "note": "my mother in law keeps saying once the baby comes you will anyway leave all this CA work. I built my practice from zero. my husband just changes the subject. I feel like I am slowly being erased",
+  "note_source": "text",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "erased and unheard",
+   "bridge": "The erasure your mother-in-law keeps describing is what the Gita calls living someone else's dharma: a borrowed life, and it warns that borrowed lives are dangerous.",
+   "week_thesis": "This week moves you from being erased to standing in the one who built the practice, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being erased and the disbelief of it, named without blame.",
+    "diagnose": "You see that their picture is their smallness, and that the only harm is letting it replace your own.",
+    "steady": "You hold that what you are cannot be cut smaller by what they see.",
+    "act": "You try saying the true thing to them, gently and firmly, and holding your ground on what is yours.",
+    "story": "A woman of learning who questioned an assembly of men shows you what standing in your truth looks like."
+   },
+   "confidence": 0.8,
+   "core_struggle": "A whose mother-in-law expects her to leave her practice after the baby, while her husband will not stand with her, leaving her feeling erased.",
+   "mirror": "You built your practice from zero, and in that room you are being told to leave it all behind.",
+   "insight": "You are the same person in that living room as in the office that trusts you with clients. The role they keep describing is their picture, and his silence is his, not your size.",
+   "mechanism": "expectation_of_others",
+   "mechanism_label": "Expecting them to be different",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.4,
+     "source": "chip"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.376,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.35,
+     "source": "profile"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.315,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being erased by the people who ought to stand with you, and the disbelief of watching the life you built get called a phase. Tension with my in-laws.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A woman of learning and standing, dismissed by her husband's family, who questioned them openly and stood in her truth until they had no answer."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "When they don't see you",
+    "What's yours, what's theirs",
+    "The same self in them"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "llm_stance_missing",
+    "stance_inferred:str=0.45,asp=0.1,wro=0.42,see=0.0",
+    "gender:ignored_guess",
+    "llm_situations_invalid",
+    "llm_mechanism_invalid",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "redo:2",
+    "redo_fixed:1",
+    "dropped:copied=1,fallback_line=1,gendered=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.11.24",
+     "ref": "Bhagavad Gita 11.24",
+     "ref_iast": "Bhagavad Gītā 11.24",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, shown Krishna's cosmic form, is overwhelmed by its scale.",
+     "sanskrit": "नभःस्पृशं दीप्तमनेकवर्णंव्यात्ताननं दीप्तविशालनेत्रम् । दृष्ट्वा हि त्वां प्रव्यथितान्तरात्माधृतिं न विन्दामि शमं च विष्णो ॥",
+     "line": "Seeing something too big to take in, my heart trembles and I can't find steadiness or calm.",
+     "translation": "Seeing you touching the sky, blazing with many colours, mouths wide open, with huge fiery eyes, my inner self trembles, Vishnu, and I find neither courage nor peace.",
+     "why": "Facing something vast can shake you to the core, and that's human.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "change_life",
+       "label": "Everything in my life is changing at once"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p11.4",
+      "title": "Arjuna sees the cosmic form and praises it",
+      "summary": "Arjuna sees all beings, gods and worlds in Krishna, and warriors rushing into his mouths like moths into flame. Terrified, he asks who Krishna really is.",
+      "story_hook": "Arjuna saw everything at once, and for the first time in his life he could not find his footing.",
+      "lesson": "Facing something vast can shake you to the core, and that's human."
+     },
+     "score": 2.1994,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna is looking at Krishna's cosmic form, and the scale of it is too much. The sky is full of blazing colours, and Arjuna sees countless mouths and fiery eyes. Their heart is trembling so hard they cannot find any steadiness or calm. The verse says that facing something vast can shake you to the core, and that is simply human.",
+     "for_you": "You are feeling erased right now, and that disbelief is real. The picture your mother-in-law holds of you is not your whole size. Your own steadiness is still there, waiting for you to notice it again."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.5.35.doha.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 35",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Ravana's ministers flatter him as Ram's army arrives; the poet comments.",
+     "sanskrit": "सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस राज धर्म तन तीनि कर होइ बेगिहीं नास ॥",
+     "line": "When advisers, doctors and teachers only say what pleases you, the ruin comes quickly.",
+     "translation": "When a minister, a doctor and a teacher speak only to please, out of fear or hope of reward, then the kingdom, the body and righteousness are soon destroyed.",
+     "why": "Beware a circle that only tells you what you want to hear.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.mandodari_first",
+      "title": "Mandodari pleads, the ministers flatter",
+      "summary": "Mandodari takes Ravana aside and begs him to return Sita before it is too late. He laughs at her fear and goes to court, where his ministers tell him only what pleases him. Tulsidas notes that when advisers, doctors and teachers speak only to please, ruin comes quickly.",
+      "story_hook": "Mandodari took her husband's hand and led him somewhere the ministers couldn't hear.",
+      "lesson": "Beware a circle that only tells you what you want to hear."
+     },
+     "score": 2.7005,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Tulsidas is watching Ravana's court, where the ministers only say what pleases the king out of fear or hope for reward. The poet warns that when advisers, doctors, and teachers speak only to please, the kingdom, the body, and righteousness are soon destroyed. The verse says to beware a circle that only tells you what you want to hear.",
+     "for_you": "Yesterday's verse named the grip. Today, you see the pattern. The small picture they keep describing is their own smallness. The only harm is letting that borrowed picture replace your own."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.6.21.6",
+     "ref": "Valmiki Ramayana · Yuddha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 21.6",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram has lain on the shore for three days asking the ocean for a way across. No answer comes.",
+     "sanskrit": "अवलेपः समुद्रस्य न दर्शयति यः स्वयम्। प्रशमश्च क्षमा चैव आर्जवं प्रियवादिता॥ असामर्थ्यफला ह्येते निर्गुणेषु सतां गुणाः।",
+     "line": "Calm, patience, honesty and kind words: people who don't value them will read them as weakness.",
+     "translation": "See the ocean's arrogance: he does not even show himself. Calm, forbearance, straightforwardness and gentle speech, these virtues of the good, are taken by the unworthy as signs of weakness.",
+     "why": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+     "misuse": "Firmness only after real patience, and only toward someone who keeps ignoring you. When the ocean finally came, Ram listened and redirected the arrow.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ocean_humility_firmness",
+      "title": "Ram at the ocean: humble first, firm after",
+      "summary": "Ram lies on kusha grass by the shore for three days, asking the ocean for a way. Ignored, he tells Lakshman that patience is being taken for weakness and takes up his bow. The ocean rises, offers a way (Nala's bridge), and Ram releases the arrow elsewhere at its request.",
+      "story_hook": "For three days the prince lay on a bed of grass at the edge of the sea, asking politely.",
+      "lesson": "Be humble first. When humility is taken for weakness, act firmly, and stop once you're heard."
+     },
+     "score": 3.1563,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Ram is lying on the shore, asking the ocean for a way across. The ocean does not answer, and Ram tells Lakshman that patience is being taken for weakness. The verse says to be humble first. When humility is taken for weakness, act firmly, and stop once you're heard.",
+     "for_you": "Hold this: what you are cannot be cut smaller by what they see. You can be humble with your truth, but if they keep ignoring you, you can act firmly and then stop. You do not owe them more patience."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.9",
+     "ref": "Bhagavad Gita 6.9",
+     "ref_iast": "Bhagavad Gītā 6.9",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु । साधुष्वपि च पापेषु समबुद्धिर्विशिष्यते ॥",
+     "line": "Friend, enemy, stranger, relative, saint or wrongdoer: the one who sees all with an even mind stands highest.",
+     "translation": "One who is even-minded towards well-wishers, friends, enemies, the indifferent, the neutral, the hateful, relatives, the good and the wicked, excels.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Even-minded is not naive; you can treat someone fairly and still keep a boundary.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "inlaws",
+       "label": "Tension with my in-laws"
+      },
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 2.9481,
+     "beat": "steady",
+     "role_fit": 0.595,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, where everything is uncertain and every bond is tested. He is telling Arjuna that the highest state belongs to the one who keeps an even mind toward everyone, whether they are a friend, a relative, or a wrongdoer. The idea is that you can be your own greatest ally or your own worst enemy, and the choice to stand steady inside yourself is what matters most when the world is pulling you apart.",
+     "for_you": "The voice in your head that shrinks when your mother-in-law speaks is your own. You are the same person who built the practice. Let that steady mind hold the phone calls and the silences, and do not let their picture of you become your size."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.1319,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is teaching Nidagha about the way a free person moves through the world. He says to do the work that is in front of you, speak gently, and read the hearts of others. If you let go of wanting and not-wanting, you will not sink into grief or craving. The point is to live fully in the world while staying unhurried and calm inside.",
+     "for_you": "Today, when the phone rings, do the work in front of you. Speak the true thing about your practice gently but firmly, and let their reaction be theirs. You do not have to argue or prove your worth. Just hold your ground on what is yours."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.niti.78",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 78",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on helping others: how the good behave.",
+     "sanskrit": "तृष्णां छिन्धि भज क्षमां जहि मदं पापे रतिं मा कृथाः सत्यं ब्रूह्यनुयाहि साधुपदवीं सेवस्व विद्वज्जनम् । मान्यान् मानय विद्विषोऽप्यनुनय प्रख्यापय प्रश्रयं कीर्तिं पालय दुःखिते कुरु दयामेतत् सतां चेष्टितम् ॥",
+     "line": "Cut craving, forgive, drop arrogance, speak truth, win over even enemies, be kind to those suffering.",
+     "translation": "Cut off craving, practise forbearance, give up arrogance, take no delight in wrong, speak the truth, follow the path of the good, serve the wise, honour those worthy of honour, win over even your enemies, show courtesy, guard your good name, be kind to those in pain: this is how the good behave.",
+     "why": "Success should make you bow lower; real ornaments are listening, giving and helping.",
+     "misuse": "Winning over an enemy is not the same as tolerating harm.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.paropakara",
+      "title": "Nitishatakam: On helping others",
+      "summary": "Verses on generosity and friendship: trees bow with fruit, the hand shines by giving, a true friend keeps you from wrong and stays in trouble. Four kinds of people, from the selfless to those who harm for nothing.",
+      "story_hook": "",
+      "lesson": "Success should make you bow lower; real ornaments are listening, giving and helping."
+     },
+     "score": 2.9863,
+     "beat": "act",
+     "role_fit": 0.696,
+     "meaning": "Bhartrihari is telling the reader how the good behave in the world. He says to cut craving, forgive, drop arrogance, and speak the truth. He also says to win over even enemies and be kind to those in pain. The point is that real success makes you bow lower, and your good name is kept by how you treat people, not by how you control them.",
+     "for_you": "Do your own duty toward them with patience and respect, accept what is theirs to choose, and keep your peace in your own hands."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.janaka_chitrakoot",
+     "title": "Janaka's family joins the council",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Janaka",
+      "Sunayana",
+      "Kausalya",
+      "Bharat",
+      "Sita"
+     ],
+     "story_hook": "Sita's parents walked into the forest camp, and two grieving families sat down together.",
+     "summary": "Sita's parents arrive and the two families grieve together. Kausalya tells Sunayana that people, like gold, are proved by time. Janaka asks Bharat to decide, and Bharat declines: duty and self-interest pull apart, hatred is blind and love cannot reason, so he will follow Ram's wish. His few words leave the whole court in awe.",
+     "lesson": "When you are too close to a decision, say so, and speak briefly and honestly.",
+     "matched": [
+      {
+       "id": "inlaws",
+       "label": "Tension with my in-laws"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.2.271.chaupai.3",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 271",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "Sunayana",
+      "setting": "Kausalya, to Sita's mother at Chitrakoot, on Bharat's character.",
+      "sanskrit": "जानउँ सदा भरत कुलदीपा। बार बार मोहि कहेउ महीपा॥ कसें कनकु मनि पारिखि पाएँ। पुरुष परिखिअहिं समयँ सुभाएँ ॥",
+      "line": "Gold is proved on the touchstone. People are proved by time.",
+      "translation": "I have always known Bharat to be the lamp of our family; the king told me so again and again. Gold is known on the touchstone and a gem when a jeweller comes; a person is tested by time and shows his nature.",
+      "why": "When you are too close to a decision, say so, and speak briefly and honestly.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "rcm.p.janaka_chitrakoot",
+       "title": "Janaka's family joins the council",
+       "summary": "Sita's parents arrive and the two families grieve together. Kausalya tells Sunayana that people, like gold, are proved by time. Janaka asks Bharat to decide, and Bharat declines: duty and self-interest pull apart, hatred is blind and love cannot reason, so he will follow Ram's wish. His few words leave the whole court in awe.",
+       "story_hook": "Sita's parents walked into the forest camp, and two grieving families sat down together.",
+       "lesson": "When you are too close to a decision, say so, and speak briefly and honestly."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Sita's parents walked into the forest camp, and two grieving families sat down together",
+     "teaser": "Sita's parents walked into the forest camp, and two grieving families sat down together",
+     "for_you": "Janaka speaks one brief, honest line in the court when the moment demands it, and the whole room listens. You can do the same. When the next expectation is laid on you, name your truth plainly. You do not need to win the argument. You only need to stand in the room as yourself."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When they don't see you",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 135,
+   "llm": 3898,
+   "total": 10078,
+   "select": 6038
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You feel erased right now. The picture your mother-in-law holds of you is not your whole size. You are the same person in that living room as in the office that trusts you with clients."
+  ],
+  [
+   "scene",
+   "Arjuna is on the battlefield. Krishna has shown him his cosmic form. The sky is full of blazing colours. Arjuna sees countless mouths and fiery eyes. The scale of it is too much. And Arjuna says:"
+  ],
+  [
+   "sanskrit",
+   "नभःस्पृशं दीप्तमनेकवर्णंव्यात्ताननं दीप्तविशालनेत्रम्, दृष्ट्वा हि त्वां प्रव्यथितान्तरात्माधृतिं न विन्दामि शमं च विष्णो."
+  ],
+  [
+   "line",
+   "In plain words: Seeing something too big to take in, my heart trembles and I can't find steadiness or calm."
+  ],
+  [
+   "unpack",
+   "Seeing something too big to take in, my heart trembles and I cannot find steadiness or calm. This is easier said than done, because the body knows its limits before the mind does. When the vastness is too much, the heart simply trembles. That is not weakness. It is the truth of being human."
+  ],
+  [
+   "for_you",
+   "You do not need to carry the weight of the whole picture right now. You only need to notice where your own steadiness still lives. That is enough for today."
+  ],
+  [
+   "close",
+   "Where is your steadiness right now?"
+  ]
+ ],
+ "depth": {
+  "life": "You are standing in the living room while your mother-in-law speaks, and the words hit you like a wall. You feel erased, your entire life narrowed to one room, one demand, one person's vision. The phone in your hand feels like a lifeline, but it also holds the weight of their expectations.",
+  "points": "The Gita shows Arjuna trembling before the vastness of the divine. Your heart is trembling before the vastness of this new life they are trying to hand you. It is not weakness. It is the natural human response to a reality that is too large to hold. You are not small. You are simply facing something immense.",
+  "practice": "Sit with your phone turned off for ten minutes today. Let the silence hold you without the need to check for their messages or their approval.",
+  "question": "What part of you remains steady when the room around you is shaking?"
+ }
+}

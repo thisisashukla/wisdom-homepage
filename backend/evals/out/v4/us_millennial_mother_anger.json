@@ -1,0 +1,509 @@
+{
+ "persona": {
+  "id": "us_millennial_mother_anger",
+  "market": "USA (Chicago)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "39, Indian-American, two kids, runs a dental practice with her husband, loses her temper with the kids and hates herself after.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "phone_hours": 3,
+   "topic": "mind",
+   "follow": "anxious"
+  },
+  "note": "I yelled at my 7 year old this morning for spilling milk and the look on his face. I am turning into my mother. I run a practice, I manage 12 people calmly, and then at home I just snap",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and frightened of herself",
+   "bridge": "The calm that leaves you the moment you cross your own door is what the Gita calls anger: blocked wanting that clouds the mind and makes it say what it later regrets.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise the split between the calm at work and the storm at home, named without blame.",
+    "diagnose": "You see that the temper is blocked wanting, not the child, and that the mind clouds itself the moment the day offers nothing back.",
+    "steady": "You hold that a moment of heat does not measure your worth, and that the child is not the source of your storm.",
+    "act": "You try one breath before speaking and naming what is blocked, so the wanting has its say without taking the wheel.",
+    "story": "A mother who saw herself in her mother's face and found a way to meet her child's eyes with steadiness shows you what is possible."
+   },
+   "confidence": 0.8,
+   "core_struggle": "A working mother who is calm with twelve people all day loses her temper at her child and is terrified she is becoming her own mother.",
+   "mirror": "You move through your day with twelve people and a calm that vanishes the moment you walk through your own door.",
+   "insight": "It isn't the spilled milk that broke you. It was the blocked wanting that had nowhere to go, and the mind that turned on itself the moment the day ended.",
+   "mechanism": "anger_reactivity",
+   "mechanism_label": "Anger that takes over",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.468,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.25,
+     "source": "chip"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.648,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.537,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of a temper that vanishes the moment you cross your own door, and the terror of becoming the person you swore you would not be.",
+    "diagnose": "Anger rises from blocked wanting; it clouds the mind, and a clouded mind says and does what it later regrets, especially when the day has given nothing back to you.",
+    "steady": "Praise and blame come and go like the seasons; what is yours cannot be taken by a moment of heat, and your worth is not the temperature of your temper.",
+    "act": "Before you speak, take one breath and name what is blocked; let the wanting have its say without letting it take the wheel.",
+    "story": "A mother who saw herself in her own mother's face, and who found a way to meet her child's eyes with something other than the temper she had inherited."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The calm that leaves",
+    "Blocked wanting at home",
+    "The mother you are becoming"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs a practice and manages people calmly"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "week_thesis:missing",
+    "retried:2",
+    "dropped:copied=1,fallback_line=2,preachy=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.3366,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Arjuna asks what a steady person looks like. Krishna begins by tracing the mind backward from anger to its root. A person dwells on an object. That dwelling breeds attachment. Attachment becomes wanting. When that wanting is blocked, it turns to anger. The storm at home is not the child. It is the mind dwelling on what it does not have, until the door closes and the wanting has nowhere left to go.",
+     "for_you": "Anger is a passing fire in the mind; you can watch it rise and fall without letting it speak for you."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.3.37",
+     "ref": "Bhagavad Gita 3.37",
+     "ref_iast": "Bhagavad Gītā 3.37",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks what drives people to do wrong against their will; Krishna answers.",
+     "sanskrit": "श्री भगवानुवाचकाम एष क्रोध एष रजोगुणसमुद्भवः । महाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ॥",
+     "line": "It's desire, which turns into anger when blocked. Never satisfied, it is the real enemy here.",
+     "translation": "The Blessed Lord said: It is desire, it is anger, born of the quality of passion; all-devouring and greatly harmful. Know this to be the enemy here.",
+     "why": "Desire unmet becomes anger; see it clearly and you can master it.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.5",
+      "title": "Restraining desire",
+      "summary": "Arjuna asks why we do wrong as if forced. Krishna names desire, which turns into anger, as the enemy that clouds wisdom like smoke over fire, and tells him to master it.",
+      "story_hook": "",
+      "lesson": "Desire unmet becomes anger; see it clearly and you can master it."
+     },
+     "score": 3.7049,
+     "beat": "diagnose",
+     "role_fit": 0.97,
+     "meaning": "Krishna tells Arjuna that desire is the root. When it is blocked, it turns into anger. This anger is the real enemy, all-devouring and harmful. It clouds the mind and makes a person say things they later regret. It is the force that drives a person to act against their own will.",
+     "for_you": "Today, see that the temper is blocked wanting, not the child. The mind clouds itself the moment the day offers nothing back. You can name the wanting and let it pass. You do not have to let it become anger. The wanting is the enemy, not the person in front of you."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": null,
+     "score": 3.7578,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher gives rules for a life of quiet discipline. One rule is about how to treat the body and the mind. Do not wear out the body chasing pleasure or fleeing pain. If praised, do not gloat. If blamed, do not curse others.",
+     "for_you": "You hold that a moment of heat does not measure your worth, and that the child is not the source of your storm. The wanting is blocked, and the anger is the blocked wanting. You can name it and let it go. You do not have to let it become a curse."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.7",
+     "ref": "Bhagavad Gita 6.7",
+     "ref_iast": "Bhagavad Gītā 6.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः । शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥",
+     "line": "Self-mastered and calm, you stay centred in heat and cold, pleasure and pain, praise and insult.",
+     "translation": "For one who has conquered himself and is at peace, the higher self stays steady in cold and heat, pleasure and pain, honour and dishonour.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Staying steady under insult is not accepting mistreatment; you can stay calm and still speak up.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.356,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Krishna speaks to Arjuna about being your own friend in a time when honour and insult are both at stake. He says that the self-mastered and calm person stays steady in heat and cold, pleasure and pain, praise and blame. This steadiness is not about accepting mistreatment. It is about not letting the moment of heat decide your worth. The one who has conquered themselves keeps their centre even when the world is pulling them apart.",
+     "for_you": "The twelve people at your practice do not see the storm after you walk through the door. You can hold the same centre with your child. The spilled milk is not the enemy. The blocked wanting is. Let the heat pass without letting it name you."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.222.chaupai.2",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 222",
+     "family": "rcm",
+     "speaker": "A voice from the sky",
+     "listener": "Lakshman",
+     "setting": "Lakshman, convinced Bharat is coming to attack, grabs his bow; a heavenly voice stops him.",
+     "sanskrit": "अनुचित उचित काजु किछु होऊ। समुझि करिअ भल कह सबु कोऊ। सहसा करि पाछे पछिताहीं। कहहिं बेद बुध ते बुध नाहीं ॥",
+     "line": "Think before you act. Acting in haste and regretting later is not wisdom.",
+     "translation": "Whatever needs doing, right or wrong, think it through first, then act; everyone calls that good. Those who act in haste and regret afterward, the wise say, are not wise at all.",
+     "why": "Promise only what you have thought through; a rash vow can cost what you love most.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.dasharath_promise",
+      "title": "Dasharath's two promises",
+      "summary": "Dasharath finds Kaikeyi in the sulking chamber and, eager to please her, swears by Ram to grant anything. She asks for Bharat's coronation and fourteen years of exile for Ram. Bound by his word and his love, the king spends the night begging, raging and grieving, and by morning cannot speak.",
+      "story_hook": "He swore by the person he loved most before he knew what she would ask.",
+      "lesson": "Promise only what you have thought through; a rash vow can cost what you love most."
+     },
+     "score": 3.3178,
+     "beat": "act",
+     "role_fit": 0.539,
+     "meaning": "A voice from the sky speaks to Lakshman, who is about to grab his bow in haste. The voice tells him that whatever needs doing, right or wrong, to think it through first, then act. Those who act in haste and regret afterward, the wise say, are not wise at all. A rash vow can cost what you love most.",
+     "for_you": "Yesterday you named the storm. Today, let the wanting have its say before it takes the wheel. Try one breath before you speak. Name the blocked thing out loud to yourself. Then let your child hear the calm you choose."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.2.22.2",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 22.2",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Just told he is exiled, Ram calms his furious brother Lakshman.",
+     "sanskrit": "निगृह्य रोष शोकं च धैर्यमाश्रित्य केवलम्। अवमानं निरस्यैनं गृहीत्वा हर्षमुत्तमम्॥ उपक्लुप्तं यदैतन्मे अभिषेकार्थमुत्तमम्। सर्वं निवर्तय क्षिप्रं कुरु कार्य निरव्ययम्॥",
+     "line": "Rein in anger and grief, lean on your steadiness, and set the insult aside.",
+     "translation": "Hold back your anger and grief, lean on steadiness alone, set this insult aside and take up real cheerfulness. Quickly undo the preparations made for my coronation and get on with what needs doing, without fuss.",
+     "why": "Anger at injustice is natural; decide what to do with it before it decides for you.",
+     "misuse": "Not a call to ignore injustice; it is about choosing your response.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.lakshman_anger_exile",
+      "title": "Lakshman's fury, Ram's calm",
+      "summary": "Lakshman is enraged by the injustice and wants to seize the throne by force. Ram calms him: set aside the insult, don't torment yourself, the setback may lead somewhere better. Lakshman answers that effort, not fate, decides; both views are given their due.",
+      "story_hook": "",
+      "lesson": "Anger at injustice is natural; decide what to do with it before it decides for you."
+     },
+     "score": 3.1779,
+     "beat": "act",
+     "role_fit": 0.474,
+     "meaning": "Ram speaks to Lakshman, who is furious at the injustice of the exile. Ram tells him to hold back his anger and grief, lean on steadiness alone, and set the insult aside. He asks Lakshman to take up real cheerfulness and get on with what needs doing, without fuss. The anger at injustice is natural, but Ram asks Lakshman to decide what to do with it before it decides for him.",
+     "for_you": "Pause before you speak, hold back the harsh word, and answer anger with calm; forgive so the fire does not keep burning in you."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.ram_childhood",
+     "title": "Kausalya and the child who ran from dinner",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Kausalya",
+      "Dasharath",
+      "the child Ram"
+     ],
+     "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+     "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+     "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.180.chhand.4",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 180",
+      "family": "rcm",
+      "speaker": "Kausalya",
+      "listener": "her newborn son",
+      "setting": "Kausalya, shown her newborn's cosmic form, asks him to be simply her baby.",
+      "sanskrit": "माता पुनि बोली सो मति डोली तजहु तात यह रूपा। कीजै सिसुलीला अति प्रियसीला यह सुख परम अनूपा॥ सुनि बचन सुजाना रोदन ठाना होइ बालक सुरभूपा। यह चरित जे गावहिं हरिपद पावहिं ते न परहिं भवकूपा ॥",
+      "line": "Put away the grand form, child. Just be little with me; there is no joy like it.",
+      "translation": "Then the mother spoke, her mind unsettled: 'Child, put away this form. Play as a little child, so dear to the heart; that joy is beyond compare.' Hearing her, the wise Lord began to cry and became a baby. Those who sing this story reach Hari's feet and do not fall into the well of worldly life.",
+      "why": "The grandest thing about a child may be the ordinary hours of childhood itself.",
+      "misuse": "",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "present_parent",
+        "label": "I'm physically home but not present with my kids"
+       },
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.ram_childhood",
+       "title": "Kausalya and the child who ran from dinner",
+       "summary": "At his birth Ram shows Kausalya his cosmic form, and she asks him instead to be simply a baby. Later scenes are pure childhood: the boy runs off mid-meal, curd on his face, dusty from play, while his father laughs and his mother chases him. When she once glimpses the whole universe in him again, she asks only to be spared that and keep her child.",
+       "story_hook": "Kausalya was shown the whole universe in her newborn, and all she wanted was for him to cry like a baby.",
+       "lesson": "The grandest thing about a child may be the ordinary hours of childhood itself."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "teaser": "Kausalya saw the whole universe in her newborn, and asked him to just cry like a baby",
+     "for_you": "Yesterday's verse named the grip. Today, Kausalya's plea shows you what is possible. When your child runs from dinner, you can meet their eyes with steadiness instead of the storm you carry home. The grandest thing about them is the ordinary hours. Just be little with them, and let yourself be little too."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The calm that leaves",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 279,
+   "llm": 5090,
+   "total": 14593,
+   "select": 9218
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You manage twelve people all day with a calm that seems endless. But the moment you walk through your own door, the calm vanishes, and you are left staring at yourself, ashamed and frightened."
+  ],
+  [
+   "scene",
+   "Arjuna asks Krishna what a person of steady mind looks like. Krishna does not begin with the anger itself. He begins with the door. A person dwells on something. That dwelling becomes attachment. Then wanting. And when that wanting is blocked, it turns to anger. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते, सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते."
+  ],
+  [
+   "line",
+   "In plain words: Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger."
+  ],
+  [
+   "unpack",
+   "Anger does not arrive out of nowhere. It is the last stop on a train that began with your attention. When you dwell on what you do not have, or what you cannot control, the mind begins to tighten. This is easier said than done, because you cannot stop wanting. But you can watch where your attention goes before it hardens into a storm."
+  ],
+  [
+   "for_you",
+   "When the house is quiet tonight, notice the first thought about tomorrow. Do not push it away. Just watch it. Let the wanting be there without letting it turn into the anger you fear."
+  ],
+  [
+   "close",
+   "What is the first thought you will let go of tonight?"
+  ]
+ ],
+ "depth": {
+  "life": "You are calm with twelve people all day. Then you cross your own door. And the calm leaves. You lose your temper at your child and you are frightened of yourself. You think you are becoming your mother. You are ashamed of the words that came out of your own mouth.",
+  "points": "The calm leaves because of what happened inside your mind while you were at work. You dwelled on things. You wanted something and it was blocked. That blocked wanting turned into anger. The spilled milk was not the cause. The cause was the wanting that had nowhere to go.",
+  "practice": "Before you enter the house, stop at the door. Breathe once. Ask yourself what you are dwelling on from the day. Name it. Then walk in.",
+  "question": "What are you dwelling on right now?"
+ }
+}

@@ -1,0 +1,519 @@
+{
+ "persona": {
+  "id": "us_boomer_widower_faith",
+  "market": "USA (California)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "71, retired engineer in Fremont, came to the US in 1979. Wife passed last year. Goes to the temple, volunteers. Grandkids don't speak much Hindi.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "someone_lost"
+  },
+  "note": "Lost my wife of 44 years in March. I do the temple seva, I keep busy. But the evenings. I want to understand what the Gita actually says about where she is now, not what people tell me to make me feel better.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and searching",
+   "bridge": "What you lost in March is what the texts call the body: a garment the self wears and leaves. What you want to know is where the one who wore it has gone.",
+   "week_thesis": "Over seven days the question of where she is now is met with the texts' own answer, and the evening begins to hold a different kind of presence.",
+   "week_beats": {
+    "hook": "You recognise that you are searching for a text that will answer your question, not a person who will comfort you.",
+    "steady": "You hold that the self is not the body, and what was real in her is still real.",
+    "act": "You try reading the verses on the self that is not the body, and sit with the question without demanding an answer.",
+    "story": "A king who lost his wife and his kingdom learns from a sage that what is real is never lost, and that is where she is."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "people": [
+    "family",
+    "partner"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A widower who lost his wife of years wants the Gita to say where she is now, not what people tell him to feel better.",
+   "mirror": "The temple and the day keep you moving, but the evening is when the question opens.",
+   "insight": "You are not looking for comfort, and the texts will not offer it. They will offer a different way of seeing what was lost, and where what was real goes.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 2.188,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.26,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.745,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 0.48,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "A man who has lost the one he lived with for years, and who wants the texts to answer where she is now, not what people tell him to feel better.",
+    "diagnose": "Grief is love with nowhere to go; everything that comes together must part, and the heart aches because the bond was real.",
+    "steady": "What is real in us cannot be cut by fire, wet by water, or dried by wind; it was never born and will never die.",
+    "act": "Read the verses on the self that is not the body, and sit with the question without demanding an answer from anyone.",
+    "story": "A king who lost his wife and his kingdom, and who was taught by a sage that what is real is never lost."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "template",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Where the dead are",
+    "What is real",
+    "The self that is not the body"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "does temple seva and keeps busy",
+    "struggles with the evenings"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:seeking_over_pain",
+    "diagnose:diagnose_not_causal",
+    "seat:missing",
+    "week_fit:8=0.0,40=0.0,26=0.0,9=0.0,46=0.0,62=0.0",
+    "week_fit:swapped=6",
+    "retried:2",
+    "redo:2",
+    "redo_fixed:0",
+    "dropped:copied=1,repeat=1,soft_kept=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.12.7",
+     "ref": "Bhagavad Gita 12.7",
+     "ref_iast": "Bhagavad Gītā 12.7",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks which way of devotion is best; Krishna promises what he does for those who turn to him.",
+     "sanskrit": "तेषामहं समुद्धर्ता मृत्युसंसारसागरात् । भवामि नचिरात्पार्थ मय्यावेशितचेतसाम् ॥",
+     "line": "Whoever rests their heart in me, I lift out of the drowning sea, and soon.",
+     "translation": "For those whose minds are absorbed in me, O Partha, I very soon become the one who lifts them out of the ocean of death and endless change.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": null,
+     "score": 2.1622,
+     "beat": "hook",
+     "role_fit": 0.33,
+     "meaning": "Arjuna asks Krishna which path of devotion is the highest. Krishna answers that those who fix their minds entirely on him, without wavering, are the ones he personally carries across the ocean of endless change and loss. The promise is not a reward for effort, but a direct response to where the heart has settled.",
+     "for_you": "You are looking for a text that will tell you where she is. This verse says that the only way across the ocean of what was lost is to rest your heart where you can, even if that place is just the question itself."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.62.14",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 62.14",
+     "family": "vr",
+     "speaker": "Kausalya",
+     "listener": "Dasharatha",
+     "setting": "After lashing out at Dasharatha over Ram's exile, Kausalya apologises and explains what grief did to her.",
+     "sanskrit": "शोको नाशयते धैर्यं शोको नाशयते श्रुतम्। शोको नाशयते सर्वं नास्ति शोकसमो रिपुः॥",
+     "line": "Grief wears away your steadiness and your judgement. There is no enemy like it.",
+     "translation": "Grief destroys steadiness, grief destroys learning, grief destroys everything. There is no enemy like grief.",
+     "why": "Grief makes us wound those we love; apologising quickly heals more than being right.",
+     "misuse": "Not a ban on grieving; a warning not to let sorrow make your decisions.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.kausalya_dasharatha",
+      "title": "Kausalya's reproach and apology",
+      "summary": "In her grief Kausalya lashes out at her husband for exiling their son. When he folds his hands and asks her forgiveness, she is horrified, apologises, and explains that grief made her speak.",
+      "story_hook": "She said the words; then she saw her husband fold his hands to her.",
+      "lesson": "Grief makes us wound those we love; apologising quickly heals more than being right."
+     },
+     "score": 3.3007,
+     "beat": "diagnose",
+     "role_fit": 0.69,
+     "meaning": "Kausalya has just finished speaking sharply to her husband Dasharatha. She sees his folded hands and hears his quiet plea. She tells him that grief is the enemy that stole her steadiness and her judgement, that it made her wound the one she loves. She apologises, saying grief destroys everything, and that being right is not worth the harm it does. She offers him her regret, hoping it heals what sorrow broke.",
+     "for_you": "The evenings you struggle with are not just quiet. They are when the grief that took your steadiness last March returns, and you might find yourself speaking sharply to your family or to the silence. You do not need to be right then."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.22",
+     "ref": "Bhagavad Gita 2.22",
+     "ref_iast": "Bhagavad Gītā 2.22",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "वासांसि जीर्णानि यथा विहायनवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥",
+     "line": "As we drop worn-out clothes and put on new ones, the self leaves a worn body for a new one.",
+     "translation": "Just as a person casts off worn-out clothes and puts on new ones, so the embodied self casts off worn-out bodies and enters others that are new.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a way to brush off someone else's grief with 'they've just changed clothes'.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.4121,
+     "beat": "steady",
+     "role_fit": 0.474,
+     "meaning": "Krishna speaks to Arjuna after the battle has stopped, when the dust has settled and the grief has begun. He tells him that the self is not the body, but what is eternal. He says that just as a person leaves behind worn-out clothes and puts on new ones, the self leaves a worn body and enters a new one.",
+     "for_you": "You hold that the self is not the body, and what was real in her is still real. When the evening comes and the temple seva is done, let your mind rest on the fact that what she was is not gone."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.27.52",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.52",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "नायमत्यन्तसंवासो लभ्यते जातु केनचित् / अपि स्वेन शरीरेण किमुतान्येन केनचित्",
+     "line": "No one gets to stay with anyone forever, not even with their own body.",
+     "translation": "No one ever gets to live together with anyone forever, not even with one's own body, let alone with anyone else.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.9366,
+     "beat": "steady",
+     "role_fit": 0.444,
+     "meaning": "King Janaka sits with the sage Ashma, asking how to bear the loss of his family and wealth. Ashma tells him that no one stays with anyone forever, not even with their own body. The sage says that days don't come back, so we must grieve what we lost and then steady the mind with the people still in front of us.",
+     "for_you": "You are holding the temple seva and the days, but the evening still asks for her. You can steady yourself by knowing that what was real in her is not gone, and you can meet the people still in front of you."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.1.11.37",
+     "ref": "Yoga Vasishtha, Vairagya 11.37",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 11.37",
+     "family": "yv",
+     "speaker": "Vishvamitra",
+     "listener": "Rama",
+     "setting": "Vishvamitra gently invites the withdrawn Rama to speak.",
+     "sanskrit": "यथाभिमतमाशु त्वं ब्रूहि प्राप्स्यसि चानघ । सर्वमेव पुनर्येन भेत्स्यन्ते त्वां तु नाधयः ॥",
+     "line": "Say freely what is on your heart, blameless one. These sorrows need not keep wounding you.",
+     "translation": "Say quickly whatever you wish, blameless one, and you will have it, by which these sorrows will never pierce you again.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": null,
+     "score": 2.4391,
+     "beat": "act",
+     "role_fit": 0.5,
+     "meaning": "Vishvamitra speaks to Rama, who is withdrawn and silent. The sage gently invites him to speak freely what is on his heart, saying that by doing so, these sorrows will never pierce him again.",
+     "for_you": "You can sit with the question of where she is now, without demanding an answer today. Say freely what is on your heart, and let the evening hold a different kind of presence."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.1.26.39",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.39",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, names who is truly happy.",
+     "sanskrit": "परोपकारकारिण्या परार्तिपरितप्तया । बुद्ध एव सुखी मन्ये स्वात्मशीतलया धिया ॥",
+     "line": "The happy ones stay cool inside, help others, and feel others' pain as their own.",
+     "translation": "I think only the awakened person is happy: one whose mind is cool within, who works for others' good and is moved by their pain.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 2.2494,
+     "beat": "act",
+     "role_fit": 0.544,
+     "meaning": "Rama, after years of war and rule, sits with his elders and names the one who is truly happy. He says the awakened person keeps a cool mind within, works for the good of others, and feels their pain as their own. This is not a command to become that person. It is a statement about where the self rests when it is not tossed by its own grief. The verse offers a place where the mind can stay steady, even while the body and the world around it change.",
+     "for_you": "In the quiet of the evening, when the absence of your partner grows loud, you do not have to fill it with noise. You can sit with the question of where she is, and let the question rest. You can feel the loneliness without letting it become a wound."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.lila",
+     "title": "Queen Lila fears losing her husband",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Lila",
+      "King Padma",
+      "Sarasvati",
+      "the brahmins"
+     ],
+     "story_hook": "Queen Lila was so happy with her husband that one night she was seized by the thought of losing him.",
+     "summary": "Queen Lila loves her husband so much that she cannot bear the thought of his death. The wise tell her that nothing wins immortality, so she prays to the goddess Sarasvati instead. When the king dies, Sarasvati begins to show her that life and death are not what they seem.",
+     "lesson": "Love brings the fear of loss; trying to control death only deepens the fear.",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "anchor": {
+      "id": "yv.3.16.24",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Utpatti 16.24",
+      "family": "yv",
+      "speaker": "The brahmins",
+      "listener": "Queen Lila",
+      "setting": "Queen Lila, terrified of losing her husband, asks wise brahmins how to make him immortal.",
+      "sanskrit": "तपोजपयमैर्देवि समस्ताः सिद्धसिद्धयः । संप्राप्यन्तेऽमरत्वं तु न कदाचन लभ्यते ॥",
+      "line": "Discipline and prayer can achieve almost anything, but no one can win freedom from death.",
+      "translation": "O queen, by austerity, prayer and discipline every kind of attainment can be reached; but immortality is never gained.",
+      "why": "Love brings the fear of loss; trying to control death only deepens the fear.",
+      "misuse": "Not fatalism about care: look after the sick fully. This is about the fear itself.",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.lila",
+       "title": "Queen Lila fears losing her husband",
+       "summary": "Queen Lila loves her husband so much that she cannot bear the thought of his death. The wise tell her that nothing wins immortality, so she prays to the goddess Sarasvati instead. When the king dies, Sarasvati begins to show her that life and death are not what they seem.",
+       "story_hook": "Queen Lila was so happy with her husband that one night she was seized by the thought of losing him.",
+       "lesson": "Love brings the fear of loss; trying to control death only deepens the fear."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Queen Lila was so happy that she became terrified of losing her husband",
+     "teaser": "Queen Lila was so happy that she became terrified of losing her husband",
+     "for_you": "A king who lost his wife and his kingdom learns from a sage that what is real is never lost, and that is where she is. You are not looking for comfort, and the texts will not offer it."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Where the dead are",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 154,
+   "llm": 4553,
+   "total": 12934,
+   "select": 8218
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting in the quiet of the evening, and the silence is heavy with her absence. You have carried this loss since March, and you want the Gita to give you a location for her, a place where she is now. You do not want comfort. You want the truth of where she has gone."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the field, asking Krishna which path of devotion is the highest. Krishna answers him, speaking of those who fix their minds entirely on him, without wavering. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "तेषामहं समुद्धर्ता मृत्युसंसारसागरात्, भवामि नचिरात्पार्थ मय्यावेशितचेतसाम्."
+  ],
+  [
+   "line",
+   "In plain words: Whoever rests their heart in me, I lift out of the drowning sea, and soon."
+  ],
+  [
+   "unpack",
+   "This is a promise of rescue, not a rule to follow. Krishna says he personally lifts the one who rests their heart in him, out of the drowning sea of endless change. What you lost in March is the body, a garment the self wears and then leaves. Where the one who wore it has gone is not a place you can see, but a reality you can rest your heart upon. This is easier said than done, because your mind is searching for a map, and the Gita offers a hand instead."
+  ],
+  [
+   "for_you",
+   "Tonight, let the question itself be the place you rest your heart. You do not need to know where she is. You only need to know that what was real has not drowned. Let that be enough to hold the evening."
+  ],
+  [
+   "close",
+   "Where do you rest your heart tonight?"
+  ]
+ ],
+ "depth": {
+  "life": "You keep the temple seva busy. But the evenings arrive and the house closes around you. You reach for the Gita because you want to know where she is now. The phone calls do not fill the silence she left behind.",
+  "points": "What you lost is the body, a garment the self wears. The texts do not say where she is. They say that what carries her is not a place. It is the one who remains when the garment is put aside.",
+  "practice": "Sit in the evening silence and ask the question aloud. Where is she now? Then rest your attention on the sound of the question itself and let it be enough.",
+  "question": "What if the one who left is not in a place, but in the space where the question lives?"
+ }
+}

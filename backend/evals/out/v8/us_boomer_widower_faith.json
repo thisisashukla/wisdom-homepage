@@ -1,0 +1,533 @@
+{
+ "persona": {
+  "id": "us_boomer_widower_faith",
+  "market": "USA (California)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "71, retired engineer in Fremont, came to the US in 1979. Wife passed last year. Goes to the temple, volunteers. Grandkids don't speak much Hindi.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "someone_lost"
+  },
+  "note": "Lost my wife of 44 years in March. I do the temple seva, I keep busy. But the evenings. I want to understand what the Gita actually says about where she is now, not what people tell me to make me feel better.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and searching",
+   "bridge": "The evenings you cannot fill are what the Gita calls love with nowhere to go. The question is not where she is, but what the self that does not pass can hold.",
+   "week_thesis": "Seven days from the evenings that ache with love to the self that does not pass, which the Gita says is not lost and cannot be parted from.",
+   "week_beats": {
+    "hook": "You recognise the grief in the evenings and the search for truth, not comfort.",
+    "diagnose": "You see that it is the love with nowhere to go, not the question of where she is, that is the ache.",
+    "steady": "You hold that what is real in us cannot be lost, and the self that does not pass is not touched by parting.",
+    "act": "You try sitting with one verse about the self that does not pass, and letting the love have its place without needing an answer.",
+    "story": "A man who lost his beloved and sat with the sages shows you what the self that does not pass looks like when you meet it."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "confidence": 0.7,
+   "core_struggle": "A man who lost his wife of years is searching for what the Gita says about where she is, not for consolation.",
+   "mirror": "You keep the temple busy, but the evenings are where the years come back to you.",
+   "insight": "The ache is this big because your love was this real. Grief is love that has nowhere left to go.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "disconnection",
+   "situations": [
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 2.428,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.745,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 0.48,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "The love that has no place to go in the evenings, and the search for what the texts say about the one who is no longer here. I'm grieving someone I loved.",
+    "diagnose": "Grief is love with nowhere to go; everything that comes together must part, and the heart aches because the bond was real, and the mind searches for where it went.",
+    "steady": "What is real in us cannot be lost; the self that does not pass is not touched by parting, and the love that was real remains real.",
+    "act": "Let the love have its place in the evening; read one verse about the self that does not pass, and sit with it without needing an answer.",
+    "story": "A man who lost his beloved, who sat with the sages and asked where she was, and was shown the self that does not pass and is never lost."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Love with nowhere to go",
+    "What the self does not pass",
+    "The one who is never lost"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "does temple seva and stays busy",
+    "the evenings are the hardest"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "retried:1",
+    "redo:3",
+    "redo_fixed:3",
+    "dropped:archaic=1,copied=1,fallback_line=1,short=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:for_you=not_second_person",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "vr.1.2.36",
+     "ref": "Valmiki Ramayana · Bala Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 2.36",
+     "family": "vr",
+     "speaker": "Narrator",
+     "listener": "",
+     "setting": "Valmiki has watched a hunter kill one of a pair of cranes; his cry of grief came out as verse.",
+     "sanskrit": "समाक्षरैश्चतुर्भिर्यः पादैर्गीतो महर्षिणा। सोऽनुव्याहरणाद् भूयः शोकः श्लोकत्वमागतः॥",
+     "line": "His grief, said over and over, turned into a poem. Sorrow can become something you make.",
+     "translation": "Sung by the sage in four equal lines and repeated again and again, his grief became a shloka, a poem.",
+     "why": "Grief can be turned into something that helps others; even a sage regrets words spoken in pain.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.krauncha",
+      "title": "Grief becomes the first verse",
+      "summary": "Valmiki sees a hunter shoot one of a pair of mating cranes and hears the survivor cry. His grief bursts out as a curse that falls into rhythm; he regrets the words but realises they are a new kind of verse. Brahma tells him to use it to tell Ram's story.",
+      "story_hook": "On the bank of the Tamasa, a poet watched a bird fall, and the sound that came out of him changed literature.",
+      "lesson": "Grief can be turned into something that helps others; even a sage regrets words spoken in pain."
+     },
+     "score": 3.3864,
+     "beat": "hook",
+     "role_fit": 0.725,
+     "meaning": "Valmiki is watching a hunter shoot one of a pair of mating cranes. The surviving bird cries out, and Valmiki hears its pain. His own grief bursts out as a curse, and he is surprised to see it fall into a steady rhythm. He regrets the words, but then realises that the sorrow has become a new kind of verse. He can turn this raw ache into a poem that will outlast the moment.",
+     "for_you": "You are not lost. The self that loves her is still here, and it cannot be parted from."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.4642,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma speaks to King Janaka after he has lost family and wealth. Ashma says pain comes from what we did not want or what we lost, and that meetings end and days do not return. He tells the king to steady the mind by asking where he came from, where he is going, and who he is, so the grief can settle into something clear.",
+     "for_you": "Love does not end when a life does; grieve fully, and let the bond keep living in how you live."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.26",
+     "ref": "Bhagavad Gita 2.26",
+     "ref_iast": "Bhagavad Gītā 2.26",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम् । तथापि त्वं महाबाहो नैवं शोचितुमर्हसि ॥",
+     "line": "Even if you believe life simply begins and ends, there's still no need to be crushed by grief.",
+     "translation": "And even if you think of it as constantly being born and constantly dying, still, mighty-armed one, you should not grieve like this.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Grief is human; this asks you not to be destroyed by it, not to stop feeling it.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.6004,
+     "beat": "steady",
+     "role_fit": 0.755,
+     "meaning": "Krishna is speaking to Arjuna on a battlefield, just after Arjuna has laid down his weapons and wept for the teachers and elders he must kill. Krishna tells him that even if the body is only a beginning and an end, there is no reason to collapse under the weight of it. The point is that what is real in us outlasts every loss and every passing pain.",
+     "for_you": "The evenings that ache are not the end of what you hold. There is a part of you that does not pass, and it is not touched by her leaving."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.1.2.22",
+     "ref": "Katha Upanishad 1.2.22",
+     "ref_iast": "Kaṭha Upaniṣad 1.2.22",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the self within changing bodies.",
+     "sanskrit": "अशरीरँ शरीरेष्वनवस्थेष्ववस्थितम् । महान्तं विभुमात्मानं मत्वा धीरो न शोचति ॥",
+     "line": "Knowing what stays steady inside all that changes, the wise do not grieve.",
+     "translation": "Knowing the self as bodiless within bodies, steady among the unsteady, great and all-pervading, the wise one does not grieve.",
+     "why": "What you most are cannot be lost, and a quiet, honest life is how you find it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.deathless_self",
+      "title": "Yama on what does not die",
+      "summary": "Death himself explains that the true self is never born and never dies, and is not killed when the body is. It is found not by cleverness or study but by a calm, honest life.",
+      "story_hook": "",
+      "lesson": "What you most are cannot be lost, and a quiet, honest life is how you find it."
+     },
+     "score": 3.1126,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Yama, the god of death, speaks to Nachiketa about the self that lives inside the body but is not the body itself. Even as the body changes and dies, this self remains. It is not born, and it does not die. It is steady and all-pervading. The wise person knows this and does not grieve, for what is real within them cannot be lost.",
+     "for_you": "The evenings you face now are heavy with a love that has nowhere to go. This verse tells you that the core of who you are is not touched by parting. What feels lost is not you, and you cannot be lost."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.18.62",
+     "ref": "Bhagavad Gita 18.62",
+     "ref_iast": "Bhagavad Gītā 18.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna's final counsel: act with devotion, reflect, choose, and take refuge.",
+     "sanskrit": "तमेव शरणं गच्छ सर्वभावेन भारत । तत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम् ॥",
+     "line": "Take refuge in the divine with all your being. By that grace you'll find supreme peace.",
+     "translation": "Take refuge in Him alone with your whole being, Bharata. By His grace you will attain supreme peace and the eternal abode.",
+     "why": "Reflect fully, choose freely, and set down the fear.",
+     "misuse": "Surrender is trust, not giving up your judgement or your effort.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.6",
+      "title": "Action with devotion: surrender",
+      "summary": "Krishna urges Arjuna to offer all action, warns that ego will only trip him, tells him to reflect fully and then choose, and finally to take refuge in him alone and not grieve.",
+      "story_hook": "",
+      "lesson": "Reflect fully, choose freely, and set down the fear."
+     },
+     "score": 2.8352,
+     "beat": "act",
+     "role_fit": 0.725,
+     "meaning": "Krishna finishes his counsel to Arjuna. He tells him to take refuge in the divine with his whole being. By grace, Arjuna will find supreme peace and the eternal abode. This is not giving up your mind, but offering your full attention and choosing trust after you have reflected.",
+     "for_you": "sit with one verse about the self that does not pass. Let your love have its place in the evening without needing an answer. You do not have to solve the ache right now. You only have to let the self that does not pass hold it."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.27.24",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 27.24",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "Stuck waiting out the rains, Ram cannot sleep for grief over Sita; Lakshman speaks to him.",
+     "sanskrit": "अलं वीर व्यथां गत्वा न त्वं शोचितुमर्हसि। शोचते ह्यवसीदन्ति सर्वार्था विदितं हिते॥",
+     "line": "Those who keep grieving lose every purpose they had. Don't let sorrow take all of you.",
+     "translation": "Enough, brother. Do not sink into this pain. You know that those who keep grieving lose every purpose they had.",
+     "why": "Some seasons are for waiting; wait well, without letting grief take you.",
+     "misuse": "Not a rule that grief must be cut short; a friend's nudge back towards living.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.monsoon_wait",
+      "title": "Waiting out the monsoon",
+      "summary": "The rains come and Ram must wait four months on a mountain before any search can begin. He cannot sleep for grief. Lakshman reminds him that endless grieving drains every purpose, and that this is a season for waiting. Ram resolves to wait and to give Sugriva time.",
+      "story_hook": "The rains came, and with them four months in which nothing at all could be done.",
+      "lesson": "Some seasons are for waiting; wait well, without letting grief take you."
+     },
+     "score": 2.8144,
+     "beat": "act",
+     "role_fit": 0.621,
+     "meaning": "Ram sits awake on the mountain, unable to sleep for grief over Sita. Lakshman finds him there and speaks gently. He reminds Ram that endless grieving drains every purpose a person has. Waiting out the rains is necessary, but the waiting must not swallow the whole man. Some seasons are for holding still, yet that stillness must leave room for life to continue.",
+     "for_you": "The temple seva and the busy days carry you, but the evenings ask for a different kind of holding. Let the love for her have its place in the quiet tonight, without needing to know where she is. Just sit with the ache as a friend would, and let it be."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.shiva_grief_name",
+     "title": "Shiva's grief turns to Ram's name",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Shiva",
+      "Ram"
+     ],
+     "story_hook": "When Sati was gone, the great god of the mountains did not rage or hide; he walked, and he kept saying a name.",
+     "summary": "After Sati is gone, Shiva wanders, teaching and singing of Ram, repeating his name. Though beyond desire, he still grieves the loss of his devotee. Seeing his steady love, Ram appears, grateful and kind, praises Shiva's vow and asks him to marry Parvati.",
+     "lesson": "Grief and devotion can walk together; steady love in loss is seen.",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.72.chaupai.1",
+      "ref": "Ramcharitmanas, Bal Kand 72 (chaupai 1)",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 72",
+      "family": "rcm",
+      "speaker": "Narrator",
+      "listener": "Bharadvaja",
+      "setting": "Shiva wanders, teaching and singing of Ram, after Sati is gone.",
+      "sanskrit": "कतहुँ मुनिन्ह उपदेसहिं ग्याना। कतहुँ राम गुन करहिं बखाना॥ जदपि अकाम तदपि भगवाना। भगत बिरह दुख दुखित सुजाना ॥",
+      "line": "Though beyond all desire, the Lord still grieved at being parted from his devotee.",
+      "translation": "Somewhere he taught knowledge to sages, somewhere he told of Ram's virtues. Though free of all desire, the wise Lord was pained by separation from his devotee.",
+      "why": "Grief and devotion can walk together; steady love in loss is seen.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "grief_general",
+        "label": "I'm grieving someone I loved"
+       },
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.shiva_grief_name",
+       "title": "Shiva's grief turns to Ram's name",
+       "summary": "After Sati is gone, Shiva wanders, teaching and singing of Ram, repeating his name. Though beyond desire, he still grieves the loss of his devotee. Seeing his steady love, Ram appears, grateful and kind, praises Shiva's vow and asks him to marry Parvati.",
+       "story_hook": "When Sati was gone, the great god of the mountains did not rage or hide; he walked, and he kept saying a name.",
+       "lesson": "Grief and devotion can walk together; steady love in loss is seen."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "When Sati was gone, Shiva walked and kept saying one name",
+     "teaser": "When Sati was gone, Shiva walked and kept saying one name",
+     "for_you": "Shiva walked and kept saying a name, and in that steady love, Ram appeared. Your grief is not a wall. It is a path. Let the name you hold be your own step forward, and see what waits at the end of the walk."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Love with nowhere to go",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 157,
+   "llm": 4442,
+   "total": 13002,
+   "select": 8395
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The evenings are the hardest. You sit with the temple seva behind you, but the quiet that follows is too wide. You are searching for where she is, but the real question is what this love is becoming."
+  ],
+  [
+   "scene",
+   "Valmiki has been walking in the forest. A hunter kills one of a pair of mating cranes. The surviving bird cries out, and Valmiki hears its pain. His own grief bursts out as a curse, and he is surprised to see it fall into a steady rhythm. And Valmiki cries out:"
+  ],
+  [
+   "sanskrit",
+   "समाक्षरैश्चतुर्भिर्यः पादैर्गीतो महर्षिणा, सोऽनुव्याहरणाद् भूयः शोकः श्लोकत्वमागतः."
+  ],
+  [
+   "line",
+   "In plain words: His grief, said over and over, turned into a poem. Sorrow can become something you make."
+  ],
+  [
+   "unpack",
+   "Grief is love that has nowhere left to go. When that love finds a shape, it becomes something you can hold. The raw ache turns into a poem that outlasts the moment. You do not have to fix this sorrow. You only have to let it become what it will become."
+  ],
+  [
+   "for_you",
+   "For you, today. You are not lost. The self that loves her is still here, and it cannot be parted from."
+  ],
+  [
+   "close",
+   "What if the evening is the poem itself?"
+  ]
+ ],
+ "depth": {
+  "life": "The evenings are long now. You do temple seva and stay busy, but the ache returns. You are looking for where she is, not for comfort. You want the Gita to tell you where your love has gone.",
+  "points": "Valmiki watched a hunter kill one of a pair of cranes. The survivor cried out in grief. That cry became the first verse. His sorrow found a shape. What you are feeling is not lost. It is finding its shape in the question you are asking.",
+  "practice": "Sit with the evening stillness. Let the question of where she is sit with you without needing an answer.",
+  "question": "What would it mean if your love was the poem, not the loss?"
+ }
+}

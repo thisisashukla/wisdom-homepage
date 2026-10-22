@@ -1,0 +1,522 @@
+{
+ "persona": {
+  "id": "us_millennial_mother_anger",
+  "market": "USA (Chicago)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "39, Indian-American, two kids, runs a dental practice with her husband, loses her temper with the kids and hates herself after.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "phone_hours": 3,
+   "topic": "mind",
+   "follow": "anxious"
+  },
+  "note": "I yelled at my 7 year old this morning for spilling milk and the look on his face. I am turning into my mother. I run a practice, I manage 12 people calmly, and then at home I just snap",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "ashamed and afraid of what they're becoming",
+   "bridge": "The calm you hold at work is the same self that is being blocked at home. The anger is not the problem, it is the signal that something is blocked.",
+   "week_thesis": "The snap is not who you are. It is what happens when something gets blocked, and you can learn to let it pass without speaking.",
+   "week_beats": {
+    "hook": "You recognise the snap and the shame, named without judgement.",
+    "diagnose": "You see that the anger is a signal of something blocked, not the truth of who you are.",
+    "steady": "You hold that the same steady self you lead with at work is the one that can choose at home.",
+    "act": "You try pausing before you speak, one time, and letting the child's face guide the choice.",
+    "story": "A mother who snapped and was haunted by it shows you that choosing differently once is how the pattern breaks."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.7,
+   "core_struggle": "A working parent who manages a team calmly is snapping at home and is ashamed of becoming their own mother.",
+   "mirror": "You manage twelve people with patience, and at home a spilled glass undoes it all.",
+   "insight": "It isn't the spilled milk that made you snap. It's the blocked wanting from earlier in the day that turned into anger, and the fear that you are becoming your mother.",
+   "mechanism": "anger_reactivity",
+   "mechanism_label": "Anger that takes over",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.65,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.25,
+     "source": "chip"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.108,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.537,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    },
+    {
+     "id": "resentment",
+     "label": "I can't let go of resentment",
+     "weight": 0.48,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The shame of snapping at your child and the fear that you are becoming the parent you swore you would not be.",
+    "diagnose": "Anger rises from blocked wanting; it clouds judgement, and a clouded mind says and does what it later regrets, especially with those it loves most.",
+    "steady": "The self that manages twelve people with patience is the same self that can choose not to let anger speak at home.",
+    "act": "When you feel the heat rising, stop and breathe before you speak; let the child's face be the reason you choose differently.",
+    "story": "A mother who lost her temper and was haunted by it, who learned to pause and chose differently the next time, and the peace that followed."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The blocked wanting",
+    "The self that chooses",
+    "More than a parent"
+   ],
+   "seat": "a working parent who manages others calmly but snaps at home",
+   "life_context": "",
+   "details": [
+    "yelled at a young for spilling milk",
+    "is afraid of becoming their own mother",
+    "manages people calmly at work",
+    "feels they snap at home"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "flags": [
+    "week_fit:29=0.3,62=0.6,9=0.6,2=0.6,12=0.6,1=0.0",
+    "week_fit:swapped=2",
+    "retried:1",
+    "redo:3",
+    "redo_fixed:1",
+    "dropped:repeat=3,soft_kept=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:close=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.7",
+     "ref": "Bhagavad Gita 2.7",
+     "ref_iast": "Bhagavad Gītā 2.7",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+     "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+     "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.184,
+     "beat": "hook",
+     "role_fit": 0.94,
+     "meaning": "Arjuna has collapsed on the battlefield, his body shaking with grief and confusion. He cannot see a clear path forward through the horror before him, and he tells Krishna that his mind is clouded and his strength has failed him. He stops trying to decide what is right on his own and asks Krishna to teach him plainly what he should do. The verse shows that clarity does not come from pushing through alone, but from admitting when your own mind cannot see the way.",
+     "for_you": "You manage your team at work with a calm that looks like control. At home, that same self gets blocked, and the anger comes out. The shame you feel is not a sign that you are failing."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 3.9305,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Arjuna asks Krishna how a steady mind looks. Krishna tells him that when a person dwells on objects, attachment is born. From attachment comes desire, and from blocked desire, anger. The anger is not the real enemy. It is the result of a wanting that was allowed to take root by where the mind was placed.",
+     "for_you": "The snap at the spilled milk is not the truth of who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.35.9",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 35.9",
+     "family": "vr",
+     "speaker": "Tara",
+     "listener": "Lakshman",
+     "setting": "Lakshman storms into Kishkindha, furious at Sugriva's delay; Sugriva's queen Tara meets him calmly.",
+     "sanskrit": "सत्त्वयुक्ता हि पुरुषास्त्वद्विधाः पुरुषर्षभ। अविमृश्य न रोषश्य सहसा यान्ति वश्यताम् ॥",
+     "line": "Strong people don't let anger take over before they have thought things through.",
+     "translation": "Best of men, people of real character, like you, do not suddenly fall under the control of anger without first thinking things over.",
+     "why": "A calm voice can turn a confrontation into an apology on both sides.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.tara_calms_lakshman",
+      "title": "Tara calms Lakshman",
+      "summary": "Lakshman storms into Kishkindha, bow twanging. Tara meets him with reason and courtesy: strong people think before anger takes over; bear the slip of someone on your side. Sugriva apologises and Lakshman asks forgiveness for his own harsh words.",
+      "story_hook": "Lakshman came through the gates ready to fight, and found a woman standing in his way.",
+      "lesson": "A calm voice can turn a confrontation into an apology on both sides."
+     },
+     "score": 3.6324,
+     "beat": "steady",
+     "role_fit": 0.805,
+     "meaning": "Lakshman storms into Kishkindha, furious at Sugriva's delay. Tara meets him calmly. She tells him that people of real character do not let anger take over before they have thought things through. Her steady voice turns a confrontation into an apology on both sides.",
+     "for_you": "The steady self you lead with at work is the one that can choose at home. You do not have to let anger take over before you think. You can meet the moment with the same calm you offer your team, and let the anger pass without speaking."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.2.22.2",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 22.2",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Just told he is exiled, Ram calms his furious brother Lakshman.",
+     "sanskrit": "निगृह्य रोष शोकं च धैर्यमाश्रित्य केवलम्। अवमानं निरस्यैनं गृहीत्वा हर्षमुत्तमम्॥ उपक्लुप्तं यदैतन्मे अभिषेकार्थमुत्तमम्। सर्वं निवर्तय क्षिप्रं कुरु कार्य निरव्ययम्॥",
+     "line": "Rein in anger and grief, lean on your steadiness, and set the insult aside.",
+     "translation": "Hold back your anger and grief, lean on steadiness alone, set this insult aside and take up real cheerfulness. Quickly undo the preparations made for my coronation and get on with what needs doing, without fuss.",
+     "why": "Anger at injustice is natural; decide what to do with it before it decides for you.",
+     "misuse": "Not a call to ignore injustice; it is about choosing your response.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "resentment",
+       "label": "I can't let go of resentment"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.lakshman_anger_exile",
+      "title": "Lakshman's fury, Ram's calm",
+      "summary": "Lakshman is enraged by the injustice and wants to seize the throne by force. Ram calms him: set aside the insult, don't torment yourself, the setback may lead somewhere better. Lakshman answers that effort, not fate, decides; both views are given their due.",
+      "story_hook": "",
+      "lesson": "Anger at injustice is natural; decide what to do with it before it decides for you."
+     },
+     "score": 3.3968,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Ram speaks to Lakshman after the exile. Lakshman is furious, ready to seize the throne by force. Ram tells him to hold back his anger and grief, lean on his steadiness alone, and set this insult aside. He asks him to undo the coronation preparations and get on with what needs doing, without fuss. The verse proposes that anger at injustice is natural, but you could decide what to do with it before it decides for you.",
+     "for_you": "The same steadiness you use to guide your team through a crisis is the self that can hold the line at home. When the milk spills and the heat rises, you can choose to let it pass without speaking. That is not weakness. That is you, steady."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.3.29.12",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 29.12",
+     "family": "mbh",
+     "speaker": "Yudhishthira",
+     "listener": "Draupadi",
+     "setting": "In exile, Draupadi urges Yudhishthira to answer injustice with force; he argues for forgiveness.",
+     "sanskrit": "आत्मानं च परांश्चैव त्रायते महतो भयात् / क्रुध्यन्तमप्रतिक्रुध्यन्दूयोरेष चिकित्सकः",
+     "line": "Don't answer anger with anger. The one who stays calm protects both people, and heals both.",
+     "translation": "One who does not get angry back at an angry person saves both himself and the other from great danger. He becomes the healer of both.",
+     "why": "Anger rarely heals anything; forgiveness has limits. Wisdom is knowing which a moment needs.",
+     "misuse": "Staying calm is not the same as staying in a situation where you are unsafe.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.kshama_or_tejas",
+      "title": "Forgiveness or force: Draupadi and Yudhishthira",
+      "summary": "In the forest, Draupadi asks why Yudhishthira does not answer injustice with anger, citing Prahlada's advice that neither force nor forgiveness is always right. Yudhishthira replies that anger destroys and forgiveness holds the world together.",
+      "story_hook": "Thirteen years into exile, Draupadi looked at her husband and asked why he was not angry.",
+      "lesson": "Anger rarely heals anything; forgiveness has limits. Wisdom is knowing which a moment needs."
+     },
+     "score": 3.5841,
+     "beat": "act",
+     "role_fit": 0.708,
+     "meaning": "Yudhishthira speaks to Draupadi in the forest. She is urging him to answer injustice with force, citing that neither force nor forgiveness is always right. Yudhishthira replies that one who does not get angry back at an angry person saves both himself and the other from great danger. He becomes the healer of both. The verse proposes that anger rarely heals anything, and wisdom is knowing which a moment needs.",
+     "for_you": "try pausing before you speak. When your child looks up at you, let their face guide your choice. You do not need to answer the spill with force. You can let it pass and heal the room."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.55.3",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 55.3",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "After setting Lanka ablaze in fury, Hanuman fears he has harmed Sita and turns on his own anger.",
+     "sanskrit": "धन्याः खलु महात्मानो ये बुद्ध्या कोपमुत्थितम्। निरुन्धन्ति महात्मानो दीप्तमग्निमिवाम्भसा॥",
+     "line": "Blessed are those who use good sense to put out rising anger, the way water puts out fire.",
+     "translation": "Blessed indeed are the great-hearted who, with good sense, check anger the moment it rises, as water puts out a blazing fire.",
+     "why": "Anger can win a small fight and ruin the real goal.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.lanka_burning",
+      "title": "Hanuman's anger and the burning of Lanka",
+      "summary": "Hanuman decides to test the enemy, smashes a grove, is captured and has his tail set on fire. He burns the city in fury, then is horrified that Sita might have died in the fire: in anger, he says, he nearly wrecked the very thing he came to do.",
+      "story_hook": "The city was burning behind him, and then a terrible thought stopped him cold.",
+      "lesson": "Anger can win a small fight and ruin the real goal."
+     },
+     "score": 3.3699,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Hanuman has just burned Lanka. He wanted to hurt the enemy, but in his rage he nearly killed Sita, the very reason he came. He turns on himself, terrified. Then he sees that anger, like a fire, burns the one who lights it. The verse says the wise are those who use water to put out a blaze, the moment it starts. They do not let anger win a small fight and ruin the real goal.",
+     "for_you": "When the milk spills and the heat rises, pause and let the child’s face guide you. You do not need to answer with your own fire. You can let the moment cool."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.vishvamitra_anger",
+     "title": "Vishvamitra loses his temper, and begins again",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Vishvamitra",
+      "Rambha",
+      "Vasishtha",
+      "Brahma"
+     ],
+     "story_hook": "He had already started over once; then his temper threw it all away again.",
+     "summary": "Tested again, Vishvamitra explodes and curses the nymph Rambha, losing the fruit of his long effort. He vows not to give way to anger or speak in it, keeps a thousand-year silence, and this time obstacles shake him but anger cannot get in. He reaches his goal, and his old rival Vasishtha embraces him as a friend.",
+     "lesson": "Relapses happen; a clear vow and steady practice can make anger lose its grip, and rivals can become friends.",
+     "matched": [
+      {
+       "id": "anger_outburst",
+       "label": "I lost my temper and regret it"
+      },
+      {
+       "id": "resentment",
+       "label": "I can't let go of resentment"
+      }
+     ],
+     "anchor": {
+      "id": "vr.1.64.15",
+      "ref": "Valmiki Ramayana · Bala Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Bāla Kāṇḍa 64.15",
+      "family": "vr",
+      "speaker": "Narrator (Shatananda)",
+      "listener": "Ram",
+      "setting": "Vishvamitra has just cursed a nymph in a fit of temper and lost the merit of years of effort.",
+      "sanskrit": "कोपेन च महातेजास्तपोऽपहरणे कृते। इन्द्रियैरजितै राम न लेभे शान्तिमात्मनः॥ बभूवास्य मनश्चिन्ता तपोऽपहरणे कृते। नैवं क्रोधं गमिष्यामि न च वक्ष्ये कथंचन ॥",
+      "line": "Temper cost him years of work. He resolved: I won't give way to anger again, or speak from it.",
+      "translation": "In his anger he lost what his effort had earned, and with his senses unmastered he found no peace. Then he resolved: 'I will not give way to anger like this again, and I will not speak in it.'",
+      "why": "Relapses happen; a clear vow and steady practice can make anger lose its grip, and rivals can become friends.",
+      "misuse": "A vow of restraint, not a vow to swallow every hurt in silence.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "anger_outburst",
+        "label": "I lost my temper and regret it"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.vishvamitra_anger",
+       "title": "Vishvamitra loses his temper, and begins again",
+       "summary": "Tested again, Vishvamitra explodes and curses the nymph Rambha, losing the fruit of his long effort. He vows not to give way to anger or speak in it, keeps a thousand-year silence, and this time obstacles shake him but anger cannot get in. He reaches his goal, and his old rival Vasishtha embraces him as a friend.",
+       "story_hook": "He had already started over once; then his temper threw it all away again.",
+       "lesson": "Relapses happen; a clear vow and steady practice can make anger lose its grip, and rivals can become friends."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Vishvamitra lost his temper, and years of effort went with it",
+     "teaser": "Vishvamitra lost his temper, and years of effort went with it",
+     "for_you": "Rambha’s curse was the price of a single outburst. You can choose the vow instead. The milk spilled, but the anger that followed is the real thing you can still refuse to feed. Let that refusal be enough for this evening."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The blocked wanting",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 155,
+   "llm": 5047,
+   "total": 12206,
+   "select": 6997
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You have spent the day holding a team together with a calm that looks like control. Then you come home and snap. You are ashamed of the anger and afraid of what it means, of becoming the person you swore you would never be. That fear is heavy, and it is real."
+  ],
+  [
+   "scene",
+   "Arjuna stands on a battlefield, his body trembling, his mind refusing to see a clear path. He has collapsed into grief and confusion, unable to tell what is right from wrong, and he tells Krishna that his strength has failed him. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः, यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्."
+  ],
+  [
+   "line",
+   "In plain words: I'm confused about what's right. Tell me plainly what's best; I'm ready to learn."
+  ],
+  [
+   "unpack",
+   "Arjuna admits his own mind cannot see the way. He asks for plain teaching instead of pretending he knows the answer. This is where clarity begins, because it takes courage to stand still and say I do not know. It is easier said than done, because admitting you are confused feels like losing control, yet that is exactly what opens the door."
+  ],
+  [
+   "for_you",
+   "At home, your mind is blocked by the day, and the anger comes out. The shame you feel is not a sign that you are failing. You do not need to fix it with more control. You just need to let the confusion be there long enough to see what is behind it."
+  ]
+ ],
+ "depth": {
+  "life": "You manage people calmly at work. At home, you snap at your kids. You are afraid of becoming your own mother, and the shame is heavy.",
+  "points": "The anger is not the problem. It is the signal that something is blocked. You do not have to know the answer alone. Asking for help is where clarity begins.",
+  "practice": "Sit with your child for five minutes today and let them speak without fixing or correcting anything.",
+  "question": "What would it feel like to let the anger pass without speaking?"
+ }
+}

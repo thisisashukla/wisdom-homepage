@@ -1,0 +1,514 @@
+{
+ "persona": {
+  "id": "au_millennial_startup_resolve",
+  "market": "Australia (Sydney)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "38, left a law firm to start a legal-tech company in Sydney, first customer signed yesterday, husband supportive, no kids by choice.",
+  "profile": {
+   "feeling": "stick",
+   "age": "35_44",
+   "stages": [
+    "own_thing"
+   ],
+   "phone_hours": 4
+  },
+  "note": "signed our first paying customer yesterday after 14 months. I know the hard part starts now. I want something that keeps me grounded through the next year instead of riding highs and lows",
+  "note_source": "text",
+  "expect_stance": "aspiration"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "aspiration",
+   "gender": null,
+   "emotion": "determined and grounded",
+   "bridge": "The high of the first win is what the Gita calls attachment to results: it will come, and it will pass, and your footing is not in it.",
+   "week_thesis": "Seven days from the high of the first win to a practice that keeps you steady through the next year.",
+   "week_beats": {
+    "hook": "You recognise the resolve and the wish to stay grounded.",
+    "story": "A founder who landed their first customer and faced the fear that came with it shows you how to keep your footing."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.9,
+   "core_struggle": "A founder who just landed their first paying customer after fourteen months and has resolved to stay grounded through the next year of building.",
+   "mirror": "Fourteen months and one paying customer, and you're already looking at the year ahead.",
+   "insight": "Nothing is wrong with you, and nothing needs fixing. The resolve is real and it is your own now. What will test it is the morning the work stops being exciting.",
+   "mechanism": "resolve_begin",
+   "mechanism_label": "Starting what is yours to build",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 1.583,
+     "source": "note"
+    },
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 0.48,
+     "source": "note"
+    },
+    {
+     "id": "morning_calm",
+     "label": "I want a calm start to my day",
+     "weight": 0.427,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "A resolve lit by the first win, and the clear-eyed wish to stay grounded through the year of building that follows.",
+    "diagnose": "Resolve fades when the mind runs ahead to the prize or looks sideways at others; it holds when the work itself is the reward.",
+    "steady": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward.",
+    "act": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching.",
+    "story": "A founder who set out to build something from nothing, faced the first win and the fear that came with it, and kept their footing by doing the work itself."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The high and the next year",
+    "What tests a resolve",
+    "The work itself is the reward"
+   ],
+   "seat": "a founder who just landed their first customer and is preparing for the year ahead",
+   "life_context": "In their mid-thirties and building something of their own; the first paying customer landed after fourteen months, and the founder is already thinking about the year ahead, wanting to stay steady through the inevitable swings.",
+   "details": [
+    "signed first paying customer after months",
+    "knows the hard part starts now",
+    "wants to stay grounded through the next year",
+    "wants to avoid riding highs and lows"
+   ],
+   "age": "35_44",
+   "stages": [
+    "own_thing"
+   ],
+   "flags": [
+    "insight:template",
+    "retried:1",
+    "redo:3",
+    "redo_fixed:2",
+    "dropped:fallback_line=3,invented=1,repeat=3",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:for_you=cliche",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.44",
+     "ref": "Bhagavad Gita 6.44",
+     "ref_iast": "Bhagavad Gītā 6.44",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks what becomes of someone who tries and fails; Krishna reassures him.",
+     "sanskrit": "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः । जिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते ॥",
+     "line": "Past practice carries you forward, even when you don't feel like it.",
+     "translation": "By that former practice he is carried on, even against his will. Even one who merely wishes to know yoga goes beyond the ritual word.",
+     "why": "No sincere effort is wasted; you pick up where you left off.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.5",
+      "title": "What becomes of one who falls from yoga",
+      "summary": "Arjuna fears that one who falls short is lost like a torn cloud. Krishna promises that no one who does good comes to ruin; past effort carries forward and they strive again.",
+      "story_hook": "",
+      "lesson": "No sincere effort is wasted; you pick up where you left off."
+     },
+     "score": 3.4931,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Arjuna asks what becomes of a person who tries and then falls short. Krishna tells him that even if someone drifts away, the practice they have already done carries them forward. The effort is never lost. The wish to return is itself a sign that the path is already inside them, and they will pick up where they left off. The first win is not the whole story. It is only the first step on a longer road.",
+     "for_you": "You have already done the hard part of starting. That first customer is proof. When the work gets harder later, trust that the discipline you have built will carry you through, even on the days you do not feel like it."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.5.12",
+     "ref": "Bhagavad Gita 5.12",
+     "ref_iast": "Bhagavad Gītā 5.12",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on working in the world without being stained by it.",
+     "sanskrit": "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम् । अयुक्तः कामकारेण फले सक्तो निबध्यते ॥",
+     "line": "Let go of the payoff and you find lasting peace. Chase it and it chains you.",
+     "translation": "The disciplined person, giving up the fruit of action, attains lasting peace. The undisciplined, attached to the fruit and driven by desire, is bound.",
+     "why": "Be in the mess without letting it soak in.",
+     "misuse": "Letting go of the payoff isn't refusing fair pay or recognition; it's not being chained to it.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.2",
+      "title": "Marks of the knower and the doer",
+      "summary": "The disciplined person acts without attachment, like a lotus leaf untouched by water, and finds peace by letting go of the fruit.",
+      "story_hook": "",
+      "lesson": "Be in the mess without letting it soak in."
+     },
+     "score": 3.2095,
+     "beat": "diagnose",
+     "role_fit": 0.761,
+     "meaning": "Krishna speaks to Arjuna about working in the world without being stained by it. He says the disciplined person gives up the fruit of action and finds lasting peace. The undisciplined person, attached to the payoff and driven by desire, is bound. This is how you act in the mess without letting it soak in.",
+     "for_you": "Your first customer is a real win. The footing you want is not in that high. It is in letting the result go and returning to the work itself, without letting it chain you."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.6149,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari tells the reader about steadfastness. He says let the worldly-wise blame or praise, let money come or go, let death come today or ages hence. The steady do not move a step from the path of what is right. Setbacks rarely last for those who keep going on the right path.",
+     "for_you": "When the next quiet week hits, or a deal falls through, let them praise or blame. Let money come or go. Do not step off the path you have set. The steady do not move a step."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.4335,
+     "beat": "steady",
+     "role_fit": 0.285,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, where the war has not yet begun and Arjuna is paralyzed by doubt. Krishna tells him that anyone who takes up this path of action, even imperfectly, will never be lost. A little bit of this steady practice is enough to protect a person from great fear. The verse proposes that you give your work fully and let go of owning what comes after. The high of the first win will pass, and your footing is not in it.",
+     "for_you": "No honest effort on the right path is ever wasted; even a little of it protects you and carries you forward."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.33.31",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 33.31",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "निश्चित्य यः प्रक्रमते नान्तर्वसति कर्मणः / अवन्ध्यकालो वश्यात्मा स वै पण्डित उच्यते",
+     "line": "Decide, then begin. Don't stall halfway, don't waste time, and keep yourself steady.",
+     "translation": "One who begins only after deciding, does not stop halfway through the work, does not waste time and keeps himself in hand, is called wise.",
+     "why": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.33",
+      "title": "Vidura Niti: the wise and the fool",
+      "summary": "Sleepless before the peace talks, King Dhritarashtra calls his half-brother Vidura for counsel. Vidura describes the marks of the wise and the fool, the faults that block progress, and the six joys of life.",
+      "story_hook": "",
+      "lesson": "Decide calmly, act steadily, forgive freely, and know what real happiness is made of."
+     },
+     "score": 4.0597,
+     "beat": "act",
+     "role_fit": 0.916,
+     "meaning": null,
+     "for_you": "Rise and act; do your work fully and well each day, let the result go, and keep at it when no one is watching."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.174.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.15",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "his father",
+     "setting": "A young man named Medhavin urges his father not to keep postponing what truly matters.",
+     "sanskrit": "श्वः कार्यमद्य कुर्वीत पूर्वाह्णे चापराह्णिकम् / नहि प्रतीक्षते मृत्युः कृतमस्य न वा कृतम्",
+     "line": "Do tomorrow's work today, and the afternoon's in the morning. Time doesn't wait for you to be ready.",
+     "translation": "Do tomorrow's work today, and the afternoon's work in the morning. Death does not wait to see whether your work is done or not.",
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "About not postponing what matters, not about working nonstop.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      },
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 3.7994,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "A young man named Medhavin urges his father not to keep postponing what truly matters. He tells him to do tomorrow's work today and the afternoon's in the morning. Life slips away while we stay busy. Do what matters now, before time runs out.",
+     "for_you": "Nothing is wrong with you, and nothing needs fixing. The resolve is real and it is your own now. What will test it is the morning the work stops being exciting."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.hanuman_leap",
+     "title": "Hanuman's leap",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Hanuman",
+      "Mainaka",
+      "Surasa",
+      "Simhika"
+     ],
+     "story_hook": "Halfway across the ocean, a golden mountain rose out of the water and offered him a place to rest.",
+     "summary": "Hanuman leaps across the ocean. A mountain rises to repay an old kindness by offering rest; he thanks it but keeps his promise not to stop. He outwits Surasa by shrinking small and defeats Simhika, and the watching beings praise his steadiness, sight, judgement and skill.",
+     "lesson": "Gratitude and focus can go together; know when to be big and when to be small.",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "anchor": {
+      "id": "vr.5.1.146",
+      "ref": "Valmiki Ramayana · Sundara Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 1.146",
+      "family": "vr",
+      "speaker": "Beings of the sky",
+      "listener": "Hanuman",
+      "setting": "Having outwitted two monsters mid-flight, Hanuman is praised by those watching from the sky.",
+      "sanskrit": "यस्य त्वेतानि चत्वारि वानरेन्द्र यथा तव। धृतिर्दृष्टिर्मतिर्दाक्ष्य स कर्मसु न सीदति ॥",
+      "line": "Steadiness, clear sight, good judgement and skill. With these four, you won't sink at work.",
+      "translation": "Whoever has these four, as you do, chief of monkeys, never sinks in his work: steadiness, clear sight, judgement and skill.",
+      "why": "Gratitude and focus can go together; know when to be big and when to be small.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.hanuman_leap",
+       "title": "Hanuman's leap",
+       "summary": "Hanuman leaps across the ocean. A mountain rises to repay an old kindness by offering rest; he thanks it but keeps his promise not to stop. He outwits Surasa by shrinking small and defeats Simhika, and the watching beings praise his steadiness, sight, judgement and skill.",
+       "story_hook": "Halfway across the ocean, a golden mountain rose out of the water and offered him a place to rest.",
+       "lesson": "Gratitude and focus can go together; know when to be big and when to be small."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Halfway across the ocean, a mountain rose up and offered Hanuman a rest",
+     "teaser": "Halfway across the ocean, a mountain rose up and offered Hanuman a rest",
+     "for_you": "Hanuman crossed the ocean to deliver a message and did not let a golden mountain or a hungry demon stop him. He was grateful, but his focus was on the other side. You have crossed the first ocean."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The high and the next year",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 145,
+   "llm": 4035,
+   "total": 11308,
+   "select": 7121
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You have been in this for fourteen months. The first paying customer is now signed. You feel determined and grounded, and you know the hard part starts now."
+  ],
+  [
+   "scene",
+   "Arjuna asks Krishna what happens to someone who tries to walk the path and then falls short. He fears such a person is lost, like a torn cloud in the sky. Krishna tells him that no sincere effort is wasted. The practice already done carries the person forward, even against their will. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः, जिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते."
+  ],
+  [
+   "line",
+   "In plain words: Past practice carries you forward, even when you don't feel like it."
+  ],
+  [
+   "unpack",
+   "This means your effort is never lost. The discipline you have built does not vanish when the work gets harder. The wish to return to your practice is proof that the path is already inside you. You will pick up exactly where you left off."
+  ],
+  [
+   "for_you",
+   "For you, today. You have already done the hard part of starting. That first customer is proof. When the work gets harder later, trust that the discipline you have built will carry you through, even on the days you do not feel like it."
+  ],
+  [
+   "close",
+   "The effort is never lost."
+  ]
+ ],
+ "depth": {
+  "life": "You have just landed that first paying customer after fourteen months, and you are standing in the high of it. The phone is in your hand, and you know this is the start of something real.",
+  "points": "Krishna is telling Arjuna that no sincere effort is ever lost. The work you did before this win is still moving inside you, even when you cannot see it or feel it.",
+  "practice": "Write down one thing you did in the last month that was not the win itself, and save it where you will see it tomorrow morning.",
+  "question": "What is the one small action you took before this win that you can trust right now?"
+ }
+}

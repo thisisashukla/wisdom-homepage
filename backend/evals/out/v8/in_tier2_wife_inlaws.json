@@ -1,0 +1,475 @@
+{
+ "persona": {
+  "id": "in_tier2_wife_inlaws",
+  "market": "India (Indore)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "29, chartered accountant in Indore, married 1 year, lives with in-laws who expect her to give up the practice after a baby. Husband avoids the topic.",
+  "profile": {
+   "feeling": "replay",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 2,
+   "topic": "someone",
+   "follow": "in_laws"
+  },
+  "note": "my mother in law keeps saying once the baby comes you will anyway leave all this CA work. I built my practice from zero. my husband just changes the subject. I feel like I am slowly being erased",
+  "note_source": "text",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "angry and being erased",
+   "bridge": "The life they say will end with the baby is what the Gita calls your own dharma: the one that is yours to do, and it is not theirs to cancel.",
+   "week_thesis": "Seven days from being erased to standing in the life you built, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being told your work will end, and the erasure of it, named without blame."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.5,
+   "core_struggle": "A woman who built her CA practice from zero is being told by her mother-in-law that it will end with the baby, while her husband stays silent.",
+   "mirror": "You built this practice from nothing, and now it is being erased in the same breath as the baby.",
+   "insight": "The baby will come, and the work you built will still be yours. The question is whether you let their picture of you become the only one you live in.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.4,
+     "source": "chip"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.376,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.35,
+     "source": "profile"
+    },
+    {
+     "id": "change_life",
+     "label": "Everything in my life is changing at once",
+     "weight": 0.315,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being told the life you built from nothing will end with the baby, and the slow erasure of it in a silence that is not yours. Tension with my in-laws.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold.",
+    "story": "A woman of learning and standing, dismissed by her husband's family, who questioned them openly and stood in her truth until they had no answer."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Being erased",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "husband changes the subject when it is said"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "llm_situations_invalid",
+    "llm_mechanism_invalid",
+    "mechanism_off_stance:None",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "week_fit:47=0.6,1=1.0,58=0.6,17=0.3,7=1.0,532=0.3",
+    "week_fit:swapped=2",
+    "retried:2",
+    "redo:3",
+    "redo_fixed:1",
+    "dropped:fallback_line=3,gendered=3,missing=3",
+    "for_you:6/7",
+    "meaning:5/6",
+    "script:dropped:for_you=cliche",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 2.5496,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, reminding him that the work he was born to do is his alone to carry. He says that doing your own work, even if it is not done perfectly, is better than doing someone else's work perfectly. The imperfections belong to the path, not to the person walking it, so the one who acts according to their own nature does no wrong.",
+     "for_you": "Your CA practice is the work born of your own nature. It is not theirs to cancel. The imperfections of building it from zero do not make it less yours, and you incur no wrong by doing it."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.5.35.doha.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 35",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Ravana's ministers flatter him as Ram's army arrives; the poet comments.",
+     "sanskrit": "सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस राज धर्म तन तीनि कर होइ बेगिहीं नास ॥",
+     "line": "When advisers, doctors and teachers only say what pleases you, the ruin comes quickly.",
+     "translation": "When a minister, a doctor and a teacher speak only to please, out of fear or hope of reward, then the kingdom, the body and righteousness are soon destroyed.",
+     "why": "Beware a circle that only tells you what you want to hear.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.mandodari_first",
+      "title": "Mandodari pleads, the ministers flatter",
+      "summary": "Mandodari takes Ravana aside and begs him to return Sita before it is too late. He laughs at her fear and goes to court, where his ministers tell him only what pleases him. Tulsidas notes that when advisers, doctors and teachers speak only to please, ruin comes quickly.",
+      "story_hook": "Mandodari took her husband's hand and led him somewhere the ministers couldn't hear.",
+      "lesson": "Beware a circle that only tells you what you want to hear."
+     },
+     "score": 2.8788,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Tulsidas sees Ravana on the eve of war. His ministers have gathered around him, flattering his every word, telling him what he wants to hear. Tulsidas warns that when a king's circle only pleases him, the kingdom falls. The verse asks you to look at the voices around you and ask who is truly speaking the truth.",
+     "for_you": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.2752,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": null,
+     "for_you": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.1062,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to hold himself in contempt or settle for too little. She says to set his mind on what is truly good and stop fearing. The idea is that past failure does not define who he is. Results are uncertain, but those who never try never succeed.",
+     "for_you": "The work you built from zero is still yours when the baby comes. Do not let their words make you feel small. Stand in the truth of what you have done."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.3098,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna tells Arjuna that speech which causes no distress, is truthful, pleasant and helpful, and the regular study of sacred texts, is called the austerity of speech. The point is to speak kindly and truly, give without strings, and drop the show. It does not mean avoiding hard truths, but saying them without cruelty.",
+     "for_you": "When your mother-in-law says your work will end, speak words that do not wound, that are true and helpful. You can say the work is yours and the baby will come, without cruelty. This is your discipline of speech today."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.103.34",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 103.34",
+     "family": "mbh",
+     "speaker": "Brihaspati (retold by Bhishma)",
+     "listener": "Indra",
+     "setting": "Brihaspati counsels Indra on how to hold authority among difficult people.",
+     "sanskrit": "मृदुमप्यवमन्यन्ते तीक्ष्णादुद्विजते जनः / मातीक्ष्णो मा मृदुर्भूस्त्वं तीक्ष्णो भव मृदुर्भव",
+     "line": "People walk over the soft and fear the harsh. Be firm when it's needed, gentle when it's needed.",
+     "translation": "People look down even on the gentle, and they shrink from the harsh. Do not be only harsh, do not be only soft: be firm when firmness is needed and gentle when gentleness is.",
+     "why": null,
+     "misuse": "Firmness here means clarity, not cruelty.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": null,
+     "score": 3.2243,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "Brihaspati is advising Indra on how to rule. He tells him that people will disrespect a ruler who is too soft, and they will fear one who is too harsh. The wise ruler is not soft all the time, nor are they harsh all the time. They are firm when firmness is needed, and gentle when gentleness is needed. This is the discipline of holding authority without losing compassion.",
+     "for_you": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.tara_warns_vali",
+     "title": "Tara's warning",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Tara",
+      "Vali"
+     ],
+     "story_hook": "Vali was already at the door when Tara caught his arm.",
+     "summary": "Sugriva roars a second challenge and Vali storms out to fight. His wife Tara stops him: drop this anger, fight tomorrow if you must, make peace with your brother, who is your own family. Vali will not listen.",
+     "lesson": "Anger rushes; good counsel says wait until morning, and remember who family is.",
+     "matched": [],
+     "anchor": {
+      "id": "vr.4.15.22",
+      "ref": "Valmiki Ramayana · Kishkindha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 15.22",
+      "family": "vr",
+      "speaker": "Tara",
+      "listener": "Vali",
+      "setting": "Tara urges Vali to make peace with his younger brother instead of fighting him.",
+      "sanskrit": "लालनीयो हि ते भ्राता यवीयानेष वानरः॥ तत्र वा सन्निहस्थो वा सर्वथा बन्धुरेव ते। नहि तेन समं बन्धुं भुवि पश्यामि कंचन ॥",
+      "line": "Near or far, your brother is still your family. No one else on earth can take his place.",
+      "translation": "Your younger brother deserves your care. Near you or far away, he is your own family. I see no relative on earth to equal him.",
+      "why": "Anger rushes; good counsel says wait until morning, and remember who family is.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "vr.p.tara_warns_vali",
+       "title": "Tara's warning",
+       "summary": "Sugriva roars a second challenge and Vali storms out to fight. His wife Tara stops him: drop this anger, fight tomorrow if you must, make peace with your brother, who is your own family. Vali will not listen.",
+       "story_hook": "Vali was already at the door when Tara caught his arm.",
+       "lesson": "Anger rushes; good counsel says wait until morning, and remember who family is."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Vali was storming out to fight his brother when his wife caught his arm",
+     "teaser": "Vali was storming out to fight his brother when his wife caught his arm",
+     "for_you": null
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Being erased",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 157,
+   "llm": 3281,
+   "total": 14491,
+   "select": 11046
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying anger, and the feeling of being erased. It is happening right now at the dinner table when the baby comes up and your mother-in-law speaks over you. Your husband looks away. You built your CA practice from nothing. And now they are telling you it will end."
+  ],
+  [
+   "scene",
+   "Arjuna stood on the field, afraid to lift his bow. He had been told by everyone around him that his duty was to walk away, to let others rule. And Krishna answered him, speaking of the work that is born of your own nature. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "This is the idea. Your own path, done imperfectly, is better than someone else's done perfectly. The work you built is yours because it fits you. It will have flaws. Building a practice from zero is messy. But the flaws are on the path, not on you. You do no wrong by doing what is yours to do. You do not need their permission to walk it."
+  ],
+  [
+   "for_you",
+   "For you, today. Your CA practice is the work born of your own nature. It is not theirs to cancel. The imperfections of building it from zero do not make it less yours, and you incur no wrong by doing it."
+  ],
+  [
+   "close",
+   "Whose path are you walking today?"
+  ]
+ ],
+ "depth": {
+  "life": "Your mother-in-law is writing your ending before you have written it. Your husband changes the subject, and the silence feels like a second erasure. You are angry because they are trying to unmake the life you built, and the baby is being used as the reason.",
+  "points": "The life you built is your own duty. It fits your nature. It is not theirs to cancel. Their picture of you is not your reality. You incur no wrong by doing the work that is yours.",
+  "practice": "Write down one thing you built in your practice today. Say its name out loud before you sleep.",
+  "question": "What would it mean to live inside your own picture of you?"
+ }
+}

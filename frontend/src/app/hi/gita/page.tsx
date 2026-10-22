@@ -11,7 +11,7 @@ import BlogTracker from '@/components/BlogTracker'
 import SavedVersesPanel from '@/components/gita/SavedVersesPanel'
 
 export const metadata: Metadata = {
-  title: 'भगवद् गीता — 700 श्लोक हिन्दी अर्थ सहित | सभी 18 अध्याय | Wisdom',
+  title: 'भगवद गीता के 700 श्लोक हिंदी में — अर्थ सहित, 18 अध्याय',
   description:
     'सम्पूर्ण भगवद् गीता हिन्दी में पढ़ें — संस्कृत श्लोक, शब्द-अर्थ और भावार्थ सहित। 18 अध्याय, 700 से अधिक श्लोक, सरल हिन्दी में। PDF डाउनलोड की ज़रूरत नहीं — सीधे ऑनलाइन, निःशुल्क।',
   alternates: {
@@ -83,7 +83,7 @@ export default function GitaIndexPageHi() {
       <section className="gita-hero">
         <div>
           <div className="gita-eyebrow">श्रीमद्भगवद्गीता</div>
-          <h1 className="gita-h1">भगवान का गीत — सम्पूर्ण।</h1>
+          <h1 className="gita-h1">भगवद् गीता के 700 श्लोक हिंदी में</h1>
           <p className="gita-lede">
             कुरुक्षेत्र की भूमि पर श्रीकृष्ण और अर्जुन का संवाद। 18 अध्याय, 700 श्लोक — कर्म, धर्म, भक्ति और
             आत्म-ज्ञान का वह गीत जो सहस्राब्दियों से प्रकाश दे रहा है। यहाँ हर श्लोक संस्कृत, हिन्दी और

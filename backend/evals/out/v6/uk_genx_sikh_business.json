@@ -1,0 +1,517 @@
+{
+ "persona": {
+  "id": "uk_genx_sikh_business",
+  "market": "UK (Leicester)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "47, runs the family cash-and-carry in Leicester, second generation, Punjabi background. Father (78) still comes in and overrules him in front of staff.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "I've run this business for 15 years and my dad still walks in and changes my decisions in front of the staff. I'm 47. He's 78. I can't say anything because it's his business in his head and he's my father",
+  "note_source": "voice",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "tight and powerless",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "From being silently overruled in front of your staff to holding your ground with words that carry your own authority.",
+   "week_beats": {
+    "hook": "You recognise being publicly overruled and the powerlessness of it, named without blame.",
+    "act": "You try one act of speaking the true thing, gently and firmly, on your own ground, without shrinking to fit his picture.",
+    "story": "A daughter who built her own house in her father's shadow shows you what standing in your own truth looks like."
+   },
+   "undisclosed": false,
+   "texts": [],
+   "confidence": 0.8,
+   "core_struggle": "A -year-old business owner is being publicly overruled by her -year-old father, who claims the business as his own and silences her.",
+   "mirror": "He walks in and changes a decision she has already made, in front of the people who report to her.",
+   "insight": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.891,
+     "source": "note"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 1.706,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.25,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 1.0,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.56,
+     "source": "chip"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.5,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being publicly overruled by the man who raised you, in front of the people who work for you, while he claims the work as his own. My parents are getting older far away.",
+    "diagnose": "When others see only a role instead of a person, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what he sees; your authority was never his to revoke, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing, gently and firmly, on your own ground; hold your ground on what is yours; do your own duty without shrinking to fit his picture.",
+    "story": "A daughter who had to build her own house in her father's shadow, who finally spoke and claimed the ground as her own."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The man who walks in",
+    "Whose picture it is",
+    "More than his daughter"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "runs the business for years",
+    "father still walks in and changes decisions in front of staff",
+    "is, father is"
+   ],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "insight:template",
+    "retried:2",
+    "redo:2",
+    "redo_fixed:2",
+    "dropped:accept=1,cliche=1",
+    "for_you:6/7",
+    "meaning:6/6",
+    "script:dropped:unpack=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      },
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.6484,
+     "beat": "hook",
+     "role_fit": 0.0,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, telling him to act according to his own nature rather than imitate another's. He says that following your own path, even if done imperfectly, is better than performing the duty of another perfectly. Borrowing a life that is not yours brings only fear, while death in your own duty is noble. The idea is that living out your own truth is safer and more authentic than wearing a mask that fits someone else.",
+     "for_you": "You run the business, but your father walks in and changes decisions in front of your staff. That is not your duty. This verse says that living out your own calling, even when it is messy, is better than performing a role that is not yours."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "rcm.5.35.doha.1",
+     "ref": "Ramcharitmanas · Sundar Kand",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 35",
+     "family": "rcm",
+     "speaker": "Tulsidas",
+     "listener": "the reader",
+     "setting": "Ravana's ministers flatter him as Ram's army arrives; the poet comments.",
+     "sanskrit": "सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस राज धर्म तन तीनि कर होइ बेगिहीं नास ॥",
+     "line": "When advisers, doctors and teachers only say what pleases you, the ruin comes quickly.",
+     "translation": "When a minister, a doctor and a teacher speak only to please, out of fear or hope of reward, then the kingdom, the body and righteousness are soon destroyed.",
+     "why": "Beware a circle that only tells you what you want to hear.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.mandodari_first",
+      "title": "Mandodari pleads, the ministers flatter",
+      "summary": "Mandodari takes Ravana aside and begs him to return Sita before it is too late. He laughs at her fear and goes to court, where his ministers tell him only what pleases him. Tulsidas notes that when advisers, doctors and teachers speak only to please, ruin comes quickly.",
+      "story_hook": "Mandodari took her husband's hand and led him somewhere the ministers couldn't hear.",
+      "lesson": "Beware a circle that only tells you what you want to hear."
+     },
+     "score": 3.1058,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "In the Sundar Kand, Tulsidas watches Ravana sit in his court. His ministers flatter him, speaking only to please their king. Tulsidas notes that when advisers, doctors and teachers speak only to please, out of fear or hope of reward, then the kingdom, the body and righteousness are soon destroyed. He is warning us about the danger of a circle that only tells us what we want to hear, how it rots the truth from the inside.",
+     "for_you": "Your father is not hearing the truth. He is living inside a circle that only tells him what he wants. You are the one who must hold the real picture of the business, even if he refuses to see it."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_brihadaranyak.86",
+     "ref": "Brihadaranyaka Upanishad 1.4.14",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.14",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The creation story: last of all, dharma is made.",
+     "sanskrit": "स नैव व्यभवत् तच्छ्रेयो रूपमत्यसृजत धर्मम् । तदेतत्क्षत्रस्य क्षत्रं यद्धर्मस्तस्माद्धर्मात् परं नास्त्यथो अबलीयान् बलीयाꣳसमाशꣳसते धर्मेण यथा राज्ञैवम् । यो वै स धर्मः सत्यं वै तत् तस्मात्सत्यं वदन्तमाहुर्धर्मं वदतीति धर्मं वा वदन्तꣳ सत्यं वदतीत्येतद्ध्येवैतदुभयं भवति ॥",
+     "line": "Nothing is higher than what is right. With it the weak can face the strong. What is right is truth.",
+     "translation": "Still he did not flourish. So he created a higher form, dharma. Dharma is the power over power; nothing is higher than dharma. Through dharma even a weak man can stand up to a strong one, as with the help of a king. That dharma is truth. So people say of one who speaks truth, 'He speaks dharma,' and of one who speaks dharma, 'He speaks truth.' Both are the same.",
+     "why": "Fear and loneliness are human; truth gives even the weak a footing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.brihad.first_being",
+      "title": "The first being: fear, loneliness and dharma",
+      "summary": "In this creation story the first being, alone, feels fear, then realises there is no one else to fear. He feels no joy alone and longs for a companion, splitting into husband and wife. Finally dharma is created, the truth by which even the weak can stand up to the strong.",
+      "story_hook": "",
+      "lesson": "Fear and loneliness are human; truth gives even the weak a footing."
+     },
+     "score": 3.253,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "In the story of creation, the first being felt fear and loneliness, then realised there was no one else to fear. Still, there was no joy in being alone. So he split into two, husband and wife, and finally dharma was made. Dharma is the power over power. Nothing is higher than dharma. Through dharma even a weak man can stand up to a strong one, as with the help of a king. That dharma is truth.",
+     "for_you": "Your father's voice in the office is not the final word on your worth. Your truth is the footing you already have, and it is enough to stand on today."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.10",
+     "ref": "Bhagavad Gita 5.10",
+     "ref_iast": "Bhagavad Gītā 5.10",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on working in the world without being stained by it.",
+     "sanskrit": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः । लिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥",
+     "line": "Like a lotus leaf in water, do your work without letting the mess soak in.",
+     "translation": "One who acts offering all actions to the Supreme, giving up attachment, is not touched by wrong, as a lotus leaf is not wet by water.",
+     "why": "Be in the mess without letting it soak in.",
+     "misuse": "Staying unstained isn't staying silent about wrongdoing at work; you can act and still keep your peace.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.2",
+      "title": "Marks of the knower and the doer",
+      "summary": "The disciplined person acts without attachment, like a lotus leaf untouched by water, and finds peace by letting go of the fruit.",
+      "story_hook": "",
+      "lesson": "Be in the mess without letting it soak in."
+     },
+     "score": 3.1348,
+     "beat": "steady",
+     "role_fit": 0.385,
+     "meaning": "Krishna tells Arjuna that one who acts offering all actions to the Supreme, giving up attachment, is not touched by wrong, as a lotus leaf is not wet by water. He is showing Arjuna how to work in the world without letting the mess soak in. The disciplined person acts without attachment and finds peace by letting go of the fruit.",
+     "for_you": "You are in the mess of your father's daily visits. You can do your work and hold your ground without letting his words soak into your sense of who you are. You can act and still keep your peace."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.5853,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them. Ram watches Hanuman calm Sugriva and speak with such care that trust is built in an instant. Ram notes that Hanuman’s words were not long-winded, not ambiguous, not rushed, not strained. They came from the chest and throat in an even, middle tone. This is how to speak when fear is running the room. Calm, clear words build trust fast because they let the other person breathe.",
+     "for_you": "When your father walks in and changes the decisions in front of your staff, your body tightens. Let your words be the even voice Ram saw in Hanuman. You do not need to shout or explain everything."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.4916,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Ribhu is describing how a free person moves through the world. Ribhu tells Nidagha that a free person does the work in front of them, speaks gently, reads people's hearts, and does not sink in the world. This is not about stepping back from life. It is about doing the work at hand while staying unhurried inside. The truth underneath is that you can live fully in the world while staying calm inside, treating the whole world as family.",
+     "for_you": "You are running the business and caring for your parents at the same time. Let your work be the work in front of you. When you speak to your father today, keep your tone gentle but firm. You do not need to sink into the mess of his demands."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": null
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The man who walks in",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 158,
+   "llm": 5587,
+   "total": 17826,
+   "select": 12075
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying something heavy right now. You run a business that you have built over years. And yet your father still walks in and changes decisions in front of your staff. You feel tight and powerless, as if your own ground is being taken from under you."
+  ],
+  [
+   "scene",
+   "On the battlefield, Krishna is speaking to Arjuna. Arjuna is overwhelmed, unsure of his path and his duty. And Krishna replies: And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वधर्मे निधनं श्रेयः परधर्मो भयावहः."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous."
+  ],
+  [
+   "unpack",
+   "Krishna speaks to Arjuna on the battlefield, telling him to act according to his own nature rather than imitate another's. He says that following your own path, even if done imperfectly, is better than performing the duty of another perfectly. Borrowing a life that is not yours brings only fear, while death in your own duty is noble. The idea is that living out your own truth is safer and more authentic than wearing a mask that fits someone else."
+  ],
+  [
+   "for_you",
+   "Today, when your father walks in and speaks over you, try to hold your ground with words that carry your own authority. You do not need to match his tone or match his claims. You only need to speak your own truth in that moment, and let the staff see who is actually running the business."
+  ],
+  [
+   "close",
+   "What would it look like to let your father's voice pass through you without letting it change your path?"
+  ]
+ ],
+ "depth": {
+  "life": "Your father walks into the business and changes your decisions in front of your staff. You feel tight and powerless. You run the business, but he claims it as his own and silences you. You are being handed a smaller picture of yourself than the one you live.",
+  "points": "The truth is that your own path, walked imperfectly, is better than a borrowed one done perfectly. Your father is living a role that is not his. The fear and danger are in that borrowed life, not in your own.",
+  "practice": "Name one decision today that belongs to your own role, not his, and state it once without apology.",
+  "question": "What is one decision today that belongs only to your role?"
+ }
+}

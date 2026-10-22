@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "20 Famous Sanskrit Shlokas with Meaning in Hindi and English | Wisdom",
+  title: "20 Famous Sanskrit Shlokas with Meaning in Hindi and English",
   description: "The 20 most famous Sanskrit shlokas every educated person should know. From Vakratunda Mahakaya to Om Purnamadah, with accurate Devanagari, IAST, English and Hindi meaning, and context.",
   keywords: "sanskrit shlokas, famous sanskrit shlokas, sanskrit shlokas with meaning, sanskrit shloka, shloka in sanskrit, famous shlokas, sanskrit shlokas with hindi meaning, easy sanskrit shlokas, sanskrit shlokas for students, popular sanskrit shlokas",
   openGraph: {
@@ -805,12 +806,12 @@ export default function TwentyFamousSanskritShlokasPage() {
       </div>
 
       <div className="content" style={{ paddingTop: 0 }}>
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"20 Famous Sanskrit Shlokas"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"20 Famous Sanskrit Shlokas"} />
       </div>
 
       <footer>
-        <p>&copy; 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> &mdash; <a href="https://wisdomquotes.in/blogs">Blog</a> &mdash; <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>&copy; 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> &mdash; <a href="https://wisdomquotes.in/blogs">Blog</a> &mdash; <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="20 Famous Sanskrit Shlokas" />

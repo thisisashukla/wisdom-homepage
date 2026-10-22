@@ -1,0 +1,506 @@
+{
+ "persona": {
+  "id": "in_boomer_mother_son_abroad",
+  "market": "India (Chennai)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "63, retired school principal in Chennai, husband alive, only son in Germany for 9 years with a German wife, visits every 2 years. Hindi is weak; English and Tamil.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "far_from_home"
+  },
+  "note": "my son has been in germany nine years. his wife is german, lovely girl. they will not come back I know this. I taught 2000 children and I cannot teach my own heart to stop waiting for him",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "restless and waiting",
+   "bridge": "The waiting you cannot teach your heart to stop is what the Upanishads call the heart that has not yet learned it is not the one who is lost.",
+   "week_thesis": "This week moves you from the waiting you cannot stop to a love that does not exhaust you, with the rest your mind has lost.",
+   "week_beats": {
+    "hook": "You recognise the waiting as real and the exhaustion as real, named without blame.",
+    "steady": "You hold that what is real in you cannot be lost, and that the bond can be real without the waiting.",
+    "act": "You try letting the waiting be, and finding one small thing each day that is yours alone.",
+    "story": "A mother who waited for a return that did not come shows you how to love without holding on."
+   },
+   "confidence": 0.7,
+   "core_struggle": "Her son has been in for nine years and may never return, and her heart will not stop waiting despite all she has taught.",
+   "mirror": "You taught two thousand children, and you cannot teach your own heart to stop waiting for one who is abroad.",
+   "insight": "The ache is this big because your love was this real. Grief is love that has nowhere left to go.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 1.4,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.08,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "raising_kids_values",
+     "label": "How do I pass on our values to my kids abroad",
+     "weight": 0.42,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The restlessness of a heart that will not stop waiting for a son who is abroad and may never return, despite all you have given him.",
+    "diagnose": "When we hold on to someone as if they were ours to keep, the waiting becomes its own weight; the heart suffers because it has not yet learned it is not the one who is lost.",
+    "steady": "What is real in us cannot be lost by distance or time; the bond was real, and the love can be real without the waiting.",
+    "act": "Let the waiting be, and let your heart be with him in a way that does not exhaust you; find one small thing each day that is yours alone.",
+    "story": "A mother who sent her only son away and waited for his return, learning to love him without holding him, and finding her own life again."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The waiting you cannot stop",
+    "What the heart must learn",
+    "A love that does not exhaust"
+   ],
+   "seat": "",
+   "life_context": "In retirement with a life shaped by teaching two thousand children; her son is abroad with a wife and she waits for a return she knows will not come, so her days have lost their shape.",
+   "details": [
+    "son has been in for nine years",
+    "daughter-in-law is",
+    "believes they will not come back",
+    "taught children and cannot teach her own heart to stop waiting"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "insight:template",
+    "seat:missing",
+    "retried:2",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:preachy=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.9668,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna sits on the battlefield, his body trembling, his famous bow slipping from his hand. He looks at his own family across the field and feels his chest tighten. He tells Krishna that even ruling the whole world would not wash away this grief that is drying him up from the inside. He admits he cannot see a way through this sorrow himself. He asks Krishna to teach him what to do. The verse proposes that admitting you do not know and asking for help is where clarity begins.",
+     "for_you": "You taught two thousand children. You know the shape of a lesson. Today, the waiting has no shape. It is a lesson your mind cannot teach itself to stop. You do not know the way out. You do not need to know it. You only need to admit you do not know."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.62",
+     "ref": "Bhagavad Gita 2.62",
+     "ref_iast": "Bhagavad Gītā 2.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते ॥",
+     "line": "Dwell on something and you get attached; attachment becomes wanting, and blocked wanting turns into anger.",
+     "translation": "When a person dwells on objects, attachment to them is born. From attachment comes desire, and from desire, anger.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 3.064,
+     "beat": "diagnose",
+     "role_fit": 0.991,
+     "meaning": "Krishna looks at Arjuna and explains how the mind works. He says that when a person dwells on objects, attachment is born. From that attachment comes desire, and when desire is blocked, it turns into anger. Krishna is describing how a steady mind is built by guarding your attention. He traces the path from what you focus on to the ruin that follows when you lose control. The verse proposes that steadiness is built by guarding attention, because anger starts with what you dwell on.",
+     "for_you": "Yesterday you named the grief that is drying you up. Today you can see how your mind keeps returning to the same empty space where your son used to be. That constant dwelling is exhausting."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rahim.193",
+     "ref": "Rahim doha 193",
+     "ref_iast": "Rahīm dohā 193",
+     "family": "rahim",
+     "speaker": "Rahim",
+     "listener": "the reader",
+     "setting": "Rahim on remembrance.",
+     "sanskrit": "रहिमन सुधि सबते भली, लगै जो बारम्बार। बिछुरे मानुष फिरि मिलैं, यहै जानि अवतार॥",
+     "line": "Remembering is a kind of nearness. People who were parted do meet again.",
+     "translation": "Rahim says: remembering is best of all, when it comes again and again. People who were separated meet again; know that this is why God takes birth.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "homesick",
+       "label": "I'm homesick"
+      },
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": null,
+     "score": 3.0764,
+     "beat": "steady",
+     "role_fit": 0.495,
+     "meaning": "Rahim writes to anyone who has lost someone they love. He says that remembering is a kind of nearness. People who were separated meet again, and he tells us that this is why God takes birth. He offers the idea that the bond between people is not broken by distance or time. The verse proposes that the bond can be real and present without the waiting, because remembering is a kind of nearness.",
+     "for_you": "You have spent nine years holding the image of your son in your mind. That memory is not just a ghost of the past. It is a living nearness. You can let that memory be your companion without letting it exhaust you."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.27.49",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.49",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "न ह्यहानि निवर्तन्ते न मासा न पुनः समाः / जातानां सर्वभूतानां न पुनर्वै समागमः",
+     "line": "Days don't come back, nor months, nor years. Be here for the ones in front of you.",
+     "translation": "Days do not come back, nor months, nor years. And beings, once parted, do not meet again in the same way.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 2.9072,
+     "beat": "steady",
+     "role_fit": 0.514,
+     "meaning": "King Janaka asks the sage Ashma how to bear the loss of family and wealth. Ashma tells him that days do not return, nor months, nor years. Beings once parted do not meet again in the same way. The pain you feel is for what you have lost, but the days are gone. Ask yourself who you are and steady your mind with the people still here.",
+     "for_you": "Your son's absence is a space that will not fill. Let the waiting be what it is. Turn your attention to the person in front of you today. Let them be enough."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.55.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 55",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Ram",
+     "setting": "Kausalya, choosing not to hold her son back, sends him into exile with her blessing.",
+     "sanskrit": "यह बिचारि नहिं करउँ हठ झूठ सनेहु बढ़ाइ। मानि मातु कर नात बलि सुरति बिसरि जनि जाइ ॥",
+     "line": "I won't hold you back with false affection. Go, son. Just don't forget your mother.",
+     "translation": "Thinking this over, I will not insist out of false affection. I bless you, son; only keep the bond of a mother, and don't forget me.",
+     "why": "Letting a child go with your blessing is love at its hardest.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "homesick",
+       "label": "I'm homesick"
+      },
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.ram_kausalya",
+      "title": "Kausalya lets her son go",
+      "summary": "Ram comes to his mother as she is preparing for his coronation. Torn between duty and love, she decides not to hold him back with 'false affection', blesses him and asks only that he not forget her. As he leaves she wonders aloud whether she will live to see his face again.",
+      "story_hook": "She had the sweets ready for his coronation when he came to say goodbye.",
+      "lesson": "Letting a child go with your blessing is love at its hardest."
+     },
+     "score": 2.9127,
+     "beat": "act",
+     "role_fit": 0.498,
+     "meaning": "Kausalya is preparing for Ram's coronation when he comes to her. She is torn between her love for him and the duty of a kingdom. She decides not to hold him back with 'false affection'. She blesses him and asks only that he not forget her. She lets him go with her blessing, knowing it is love at its hardest.",
+     "for_you": "Your love has always been real and strong. Today, let that waiting be without fighting it. Find one small thing that belongs only to you, a quiet moment that is not about waiting."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.104.28",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Rajadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 104.28",
+     "family": "mbh",
+     "speaker": "Kalakavrikshiya",
+     "listener": "Kshemadarshi",
+     "setting": "The sage to the ruined prince Kshemadarshi, who keeps longing for what he lost.",
+     "sanskrit": "अवाप्यान्कामयन्नर्थान्नानवाप्यान्कदाचन / प्रत्युत्पन्नाननुभवन्मा शुचस्त्वमनागतान्",
+     "line": "Want what is within reach. Enjoy what is here now. Don't grieve over what hasn't happened.",
+     "translation": "Wish for what can be had, never for what cannot. Enjoy what is in front of you now, and do not grieve over what has not yet come.",
+     "why": "Grief can't restore what's gone. Want what's within reach, and let others' success be.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.kshemadarshi",
+      "title": "Kalakavrikshiya consoles the fallen prince",
+      "summary": "Prince Kshemadarshi has lost his kingdom and wealth. The sage Kalakavrikshiya tells him grief has no power to restore what is gone, to want what is within reach, and to make peace with others' good fortune.",
+      "story_hook": "",
+      "lesson": "Grief can't restore what's gone. Want what's within reach, and let others' success be."
+     },
+     "score": 2.8929,
+     "beat": "act",
+     "role_fit": 0.679,
+     "meaning": "The sage Kalakavrikshiya speaks to the ruined prince Kshemadarshi, who is lost in longing for his lost kingdom. The sage tells him that grief has no power to bring back what is gone. He advises the prince to wish for what can be had now, to enjoy what is in front of him, and to stop grieving over what has not yet come.",
+     "for_you": "Yesterday you let the waiting be. Today, wish for what is within your reach. Enjoy the quiet of your own home, the life you have built, instead of what has not yet come."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "homesick",
+       "label": "I'm homesick"
+      },
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "homesick",
+        "label": "I'm homesick"
+       },
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "Sumitra sat with Kausalya and did not try to fix the waiting. She shared the ache and named the path forward. You have spent your life teaching others how to find their way."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The waiting you cannot stop",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 275,
+   "llm": 6290,
+   "total": 14783,
+   "select": 8212
+  }
+ },
+ "script": [
+  [
+   "open",
+   "Your days have lost their shape. You taught two thousand children and you know exactly what a lesson looks like. But this waiting has no shape. It is a lesson your mind cannot teach itself to stop."
+  ],
+  [
+   "scene",
+   "Arjuna sits on the battlefield. His famous bow slips from his hand and his body trembles. He looks across the field at his own family and feels his chest tighten. He tells Krishna that even ruling the whole world would not wash away this grief that is drying him up from the inside. He admits he cannot see a way through this sorrow himself. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "Arjuna admits he does not know and asks for help. This is where clarity begins. He does not pretend he has the answer. He lets himself be confused and he lets himself be seen. This is easier said than done, because your mind has spent years teaching itself to wait. But the truth underneath is that you do not need to know the way out. You only need to admit you do not know."
+  ],
+  [
+   "for_you",
+   "You taught two thousand children. You know the shape of a lesson. Today, the waiting has no shape. You do not know the way out. You do not need to know it. You only need to admit you do not know."
+  ],
+  [
+   "close",
+   "Admit you do not know. Let the waiting be there without trying to teach it away."
+  ]
+ ],
+ "depth": {
+  "life": "You taught two thousand children. You know the shape of a lesson. Today, the waiting has no shape. It is a lesson your mind cannot teach itself to stop. You do not know the way out.",
+  "points": "The grief that dries up your senses is not a problem to be solved with a better lesson. It is a truth that your mind cannot teach itself out of. Clarity begins only when you admit you do not know the way.",
+  "practice": "Sit with your waiting for five minutes without trying to shape it into anything. Let it be a truth you do not know the answer to.",
+  "question": "What would it feel like to let your mind rest in not knowing for just a moment?"
+ }
+}

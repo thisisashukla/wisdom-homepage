@@ -1,0 +1,506 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": "woman",
+   "emotion": "guilty and pulled in two directions",
+   "bridge": "What you are living with is what the texts call torn between duties, and that is where this week begins.",
+   "week_thesis": "Seven days from being torn in two to finding that the work itself can be one kind of mothering, and the guilt a sign of love, not failure.",
+   "week_beats": {
+    "hook": "You recognise the guilt and the tears, named without judgement.",
+    "diagnose": "You see that the guilt is not about the hours, but about the gap between the mother you imagined and the one you are.",
+    "steady": "You hold that your duty is to do what is in front of you, fully, and let the rest go.",
+    "act": "You try giving one hour of your evening to your daughter without the phone, and one hour of your day at work without the guilt.",
+    "story": "A mother who was pulled between her child and her kingdom shows you what it means to be fully present where you are."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.7,
+   "core_struggle": "Back at work after her second baby, she feels she is only half a mother, and her daughter's question made her cry.",
+   "mirror": "You gave the day everything, then lie awake feeling you gave your family the leftovers.",
+   "insight": "The mother you are is not the one you imagined. The guilt is not about the hours, it's about the gap between who you thought you would be and who you are now.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "need_for_approval",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 0.935,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    },
+    {
+     "id": "diaspora_identity",
+     "label": "I don't feel fully at home anywhere",
+     "weight": 0.363,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The guilt of being two places at once, and the tears that come when you are not the mother you imagined you would be. I'm physically home but not present with my kids.",
+    "diagnose": "When two duties pull in different directions, the mind suffers; the guilt is the mind's way of trying to be everywhere at once.",
+    "steady": "Praise and blame, gain and loss, victory and defeat, come and go; do not let them disturb your inner peace.",
+    "act": "Do your duty to your work fully, and your duty to your child fully, in the time you have; do not let either half be stolen by the guilt of the other.",
+    "story": "A queen who was pulled between her kingdom and her child, and who learned that no one can be two places at once without the heart breaking a little."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The mother you imagined",
+    "The guilt of two places",
+    "Where you are now"
+   ],
+   "seat": "",
+   "life_context": "A working mother in her thirties or early forties, back at her job after the second child; her daughter asked why she is not at school events like other mothers, and she wept in the car afterward.",
+   "details": [
+    "returned to work after second baby",
+    "daughter asked why she misses school events",
+    "cried in the car",
+    "feels she is only half a mother and half a PM"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "hook:anchored_to_situation",
+    "bridge:copied_example",
+    "seat:missing",
+    "week_fit:67=0.6,34=0.6,84=0.6,20=0.6,47=0.6,33=0.6",
+    "retried:1",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:fallback_lesson=1,repeat=1",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.67",
+     "ref": "Bhagavad Gita 2.67",
+     "ref_iast": "Bhagavad Gītā 2.67",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते । तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥",
+     "line": "When the mind chases a wandering sense, it is swept off like a boat in the wind.",
+     "translation": "When the mind runs after the roving senses, it carries away one's understanding, as the wind carries a boat away on the water.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 1.9813,
+     "beat": "hook",
+     "role_fit": 0.015,
+     "meaning": "Krishna is answering Arjuna's question. He asks what a person of steady mind looks like. Krishna says that when the mind chases a wandering sense, it is swept off like a boat in the wind. He means that a steady mind is built by guarding your attention. When you let your mind drift toward things that disturb you, it carries your understanding away. That drifting is where anger and regret begin.",
+     "for_you": "You are trying to be two people at once. Your mind drifts toward the school event your daughter asked about. Let it drift. Notice it without pulling yourself out of the present hour. Your attention is the rudder right now."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 2.9724,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Bhasa meets Vilasa, his childhood friend, after many years apart. Vilasa asks if he has found peace. Bhasa says no. He explains that his mind is caught in an endless loop of tasks. It is always thinking about what has been done, what is being done, and what must be done next. He says this constant spinning through lists and worries is like a bird tangled in a net, fainting from the effort. Years of hard work have not brought rest because the understanding of why he works is missing.",
+     "for_you": "You are caught in that same endless list. Your daughter saw you at a school event and your mind filled with all you have done and all you could do. The guilt is not about the hours at the office."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.2054,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari writes that a steady person does not move from the path of what is right. He says let others praise or blame. Let money come or go. Let death come today or ages hence. The steadfast person does not step off the path. Setbacks rarely last for those who keep going on the right path. He compares this to the gods who kept churning the ocean. They did not stop when they found jewels or poison. They kept going until they found nectar. A struck ball bounces back. A cut tree grows again.",
+     "for_you": "You are at the office, and your mind is at home. Your daughter asked why you were not at her school event. You feel you are failing at both. But your duty right now is to do what is in front of you, fully."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.20",
+     "ref": "Bhagavad Gita 5.20",
+     "ref_iast": "Bhagavad Gītā 5.20",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+     "sanskrit": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् । स्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः ॥",
+     "line": "Don't get carried away by good news or crushed by bad. Keep your understanding steady.",
+     "translation": "One should not rejoice on getting what is pleasant nor be troubled on getting what is unpleasant. Steady in understanding and undeluded, the knower of Brahman abides in Brahman.",
+     "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p05.3",
+      "title": "The yoga of knowledge",
+      "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+      "story_hook": "",
+      "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+     },
+     "score": 3.1866,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, trying to steady his mind. He tells him that a person who truly knows what is real does not leap for joy when good things happen, nor does they sink when bad things arrive. Their understanding stays level and clear. The joy that comes from outside always ends, but the joy that is already inside does not. The verse asks you to rest in that inner steadiness, to let the rising and falling of praise and blame pass through you without carrying you away.",
+     "for_you": "When your daughter's words land hard, or a work task goes well, let your heart feel the moment without letting it tip you over. You can hold your own steady ground while the day shifts around you."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.3798,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna speaks again to Arjuna, this time about how to move through the world without being chained. He tells him that your right is only to the work in front of you, never to the fruits that grow from it. Do not let the results become your motive, and do not let the fear of them make you stop doing anything. Do the action fully, then let the outcome go. The teaching is to give yourself completely to the doing, and to release your grip on what comes after.",
+     "for_you": "Give your work its full hour today without carrying the guilt of the evening ahead. Then give your daughter one hour of your evening without the phone in your hand, and let that moment be the only result you need."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_aitareya.33",
+     "ref": "Aitareya Upanishad 2.1.3",
+     "ref_iast": "Aitareya Upaniṣad 2.1.3",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The second birth: raising a child.",
+     "sanskrit": "स यत्कुमारं जन्मनोऽग्रेऽधिभावयत्यात्मानमेव तद्भावयत्येषं लोकानां सन्तत्या । एवं सन्तता हीमे लोकास्तदस्य द्वितीयं जन्म ॥",
+     "line": "Caring for your child, you care for yourself. Through them you are born a second time.",
+     "translation": "When he cares for the child from birth onward, he is caring for himself, for the continuation of these worlds; that is how they continue. That is his second birth.",
+     "why": "Care for the one who carries and raises the child; raising children continues your life.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.aitareya.three_births",
+      "title": "The three births of a person",
+      "summary": "The Aitareya describes three births: conception and pregnancy, when the mother nourishes the child and must herself be nourished; birth and upbringing, when caring for the child is caring for oneself; and death, when the parent, duties done, departs and the child carries on.",
+      "story_hook": "",
+      "lesson": "Care for the one who carries and raises the child; raising children continues your life."
+     },
+     "score": 3.1905,
+     "beat": "act",
+     "role_fit": 0.45,
+     "meaning": "In the Aitareya Upanishad, a seer speaks to the reader about the second birth. A child is born, and now the parent is born again. When the father cares for the child from the very beginning, he is not serving another. He is caring for himself, for the continuation of the world. The child is the continuation of his own life. The parent and the child share one thread.",
+     "for_you": "Your daughter asked why you were not at her school. That question cut because you feel you are only half a mother and half a project manager. But the care you give at work is still care. The child you raise is the continuation of your own life."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The mother you imagined",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 146,
+   "llm": 4375,
+   "total": 14014,
+   "select": 9485
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are back at your job and your daughter asked why you are not at school events. You cried in the car. You feel you are only half a mother and half a project manager. That guilt is heavy."
+  ],
+  [
+   "scene",
+   "Arjuna sits with Krishna on the battlefield. He has asked what a person of steady mind looks like. Krishna said:"
+  ],
+  [
+   "sanskrit",
+   "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते, तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि."
+  ],
+  [
+   "line",
+   "In plain words: When the mind chases a wandering sense, it is swept off like a boat in the wind."
+  ],
+  [
+   "unpack",
+   "A steady mind is not built by forcing thoughts away. It is built by guarding where your attention goes. When your mind drifts toward the school event, or the work email, or the voice of guilt, it drags your whole understanding out to sea. This is easier said than done, because the mind wants to wander. But the ruin starts not in the hours you work, but in the thoughts you let take the wheel."
+  ],
+  [
+   "for_you",
+   "Your daughter asked a question and your mind drifted. Let it drift. Notice the pull without letting it sweep you away. Your attention is the rudder right now. It is not the hours at work that make you a mother. It is the attention you bring to the hours you have."
+  ],
+  [
+   "close",
+   "Where is your attention drifting right now?"
+  ]
+ ],
+ "depth": {
+  "life": "You are sitting in the car, still crying, and the guilt is heavy. You keep replaying your daughter's question. You feel the pull between the office and the home, and you are not sure which way to turn.",
+  "points": "Your mind is chasing a wandering sense. It is the thought of the school event, the guilt, the memory of her question. This thought carries your understanding away. It is not the hours at work that are the problem. It is the thought that pulls you off course.",
+  "practice": "Notice where your attention drifts next. Name it silently as a thought about the event, then let it pass and return your attention to the steering wheel.",
+  "question": "When your mind drifts, what is it carrying away from you?"
+ }
+}

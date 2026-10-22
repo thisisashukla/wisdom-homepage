@@ -1,0 +1,519 @@
+{
+ "persona": {
+  "id": "us_millennial_h1b_burnout",
+  "market": "USA (Seattle)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "33, software engineer at a big tech company in Seattle, on H-1B, green card queue, wife on H4 can't work. Performance review season.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "if I get a bad rating I lose the visa and we have 60 days to leave. my wife gave up her career to be here. I check slack at 2am. I don't remember the last weekend I wasn't thinking about work",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "terrified and exhausted",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "Seven days from being held by the terror of one rating to finding one thing you can do today without letting it hold your mind.",
+   "week_beats": {
+    "hook": "You recognise the terror and the 2am check as something that has you, not something you chose.",
+    "diagnose": "You see that the mind is taking the whole burden and running with it, and that is why it will not settle.",
+    "steady": "You hold that the mind that believes the worst is yet to come is the one that is exhausted, not the one that is careful.",
+    "act": "You try doing one thing you can control today and letting the result go, and naming the 2am check instead of answering it."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.75,
+   "core_struggle": "Terrified of a bad rating that would end their visa and force them to leave in days, while their mind will not settle and they cannot switch off from work.",
+   "mirror": "What you told us: bad rating means losing a visa and days to leave.",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "attachment_to_results",
+   "situations": [
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.935,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.717,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The terror of a single rating that could end everything, and a mind that will not settle even in the small hours. I'm burned out and running on empty.",
+    "diagnose": "When fear of loss is left alone, the mind makes the worst outcome certain; then the mind cannot rest because it believes the future is being held in one number.",
+    "steady": "What is real in you cannot be taken by a rating; the mind that believes the worst is yet to come is the one that is exhausted, not the one that is careful.",
+    "act": "Practise the one thing you can control today, let the result go, and when the mind runs to 2am, name it and turn back to your breath.",
+    "story": "A man who stood at the edge of losing everything, yet found that the mind he could not settle was the very thing that was costing him the peace to think clearly."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The rating and the mind",
+    "What the mind does when it is afraid",
+    "The one thing you can do"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "bad rating means losing a visa and days to leave",
+    "checks work messages at 2am",
+    "has not had a weekend without thinking about work"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "bridge:copied_example",
+    "mirror:fallback",
+    "insight:template",
+    "week_fit:29=0.8,12=0.3,49=0.3,9=0.6,536=0.9,2=0.8",
+    "week_fit:swapped=2",
+    "redo:1",
+    "redo_fixed:2",
+    "dropped:invented=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:open=not_second_person",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.9981,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna stands in the chariot, the armies facing each other. He sees his own people in the enemy lines. He drops his bow, his limbs give way, his mouth goes dry, and his body trembles. This is not a hero charging forward. It is a man breaking down in the face of what he fears he must do.",
+     "for_you": "At 2am you are checking work messages. Your body knows what your mind is trying to outrun. This trembling is not weakness. It is the truth of your body before a battle you have not yet fought."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 3.1984,
+     "beat": "diagnose",
+     "role_fit": 0.58,
+     "meaning": "Bhasa and Vilasa meet again as old men, and Bhasa admits he never found peace. He says the mind is carried on endless waves of tasks, never resting. It keeps tallying what is done, what is happening, and what must come next. This bird of the mind, tangled in its own net of reckonings, faints from the strain.",
+     "for_you": "The mind is carrying the whole weight of a rating that has not happened yet, running through the same lists at 2am. This is the net. You do not have to solve the future to survive the night."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.3376,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": "You have a right to perform your prescribed duty, but you are not entitled to the fruits of action. Never consider yourself the cause of the results, and never be attached to inaction. Do your work with a balanced mind, abandoning all attachment to success or failure.",
+     "for_you": "The rating is the fruit of your action, and you are not entitled to it. You have a right to do your work, to check the messages, but you are not entitled to the result. Let the rating be what it is, and let your mind be free from the need to control it."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.20",
+     "ref": "Bhagavad Gita 5.20",
+     "ref_iast": "Bhagavad Gītā 5.20",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+     "sanskrit": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् । स्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः ॥",
+     "line": "Don't get carried away by good news or crushed by bad. Keep your understanding steady.",
+     "translation": "One should not rejoice on getting what is pleasant nor be troubled on getting what is unpleasant. Steady in understanding and undeluded, the knower of Brahman abides in Brahman.",
+     "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.3",
+      "title": "The yoga of knowledge",
+      "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+      "story_hook": "",
+      "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+     },
+     "score": 3.3012,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Krishna is speaking to Arjuna, who is on the battlefield, urging him to keep his understanding steady. The mind that rejoices at good news or breaks under bad news is caught in the waves of the world. The one who knows the deeper truth does not let the ending of a pleasant moment crush them, nor the arrival of an unpleasant one carry them away. They hold to an inner stillness that does not depend on what comes next.",
+     "for_you": "Your mind is living the worst rating before it arrives. The exhaustion you feel is not from the work itself, but from this constant ride of what might be. You are not careless. You are simply caught in the tide of a future that has not happened yet."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.9587,
+     "beat": "act",
+     "role_fit": 0.669,
+     "meaning": "Ribhu speaks to Nidagha about the nature of a free person moving through the world. The wise one is busy on the outside and unhurried inside. They act fully, doing the work at hand, yet they do not let the doing agitate their core. They take up what comes, speak gently, and let go of what is lost, moving through life with a clear mind that is not shaken by the outcome.",
+     "for_you": "Let the work be busy on the outside. Let your mind be unhurried inside. When the phone lights up at two in the morning, you do not have to answer it. That is the one small thing you can control today. You can let the message be there without letting it move you."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_isha.2",
+     "ref": "Isha Upanishad 2",
+     "ref_iast": "Īśa Upaniṣad 2",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "Follows the call to enjoy by letting go: how to live and work.",
+     "sanskrit": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः । एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥",
+     "line": "Do your work and wish to live a full hundred years. Done in this spirit, action does not cling.",
+     "translation": "Doing your work here, you may wish to live a hundred years. For you there is no other way than this: done in this spirit, action does not cling to a person.",
+     "why": "Hold what you have lightly, keep working, and see yourself in everyone.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.isha.whole",
+      "title": "The Isha: enjoy by letting go",
+      "summary": "Eighteen verses that open by saying everything belongs to the divine, so we should enjoy it without grasping. They go on to say we should work a full life without being bound, and see ourselves in all beings.",
+      "story_hook": "",
+      "lesson": "Hold what you have lightly, keep working, and see yourself in everyone."
+     },
+     "score": 2.9945,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "A voice from an old text speaks to someone who is working hard. They say you may live a full life, but you could do your work in a certain way. If you do, your actions will not stick to you. They will not own you or pull you under. The work is yours, but the result is not. You act fully, but you do not let the outcome grab you.",
+     "for_you": "You have a hundred years ahead. Today, do the work you could. When you check that message at two in the morning, answer only what is truly urgent. Let the rest wait. The rating you fear is not your whole life."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.bali",
+     "title": "Bali tires of endless days and asks his father's riddle",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Bali",
+      "Virochana",
+      "Shukra"
+     ],
+     "story_hook": "Bali had conquered everything there was to conquer, and one evening he realised he was bored.",
+     "summary": "The demon king Bali has ruled the three worlds for ages. One day at his window he realises he is doing the same things day after day, night after night, and asks what any of it adds up to. He remembers a riddle his father Virochana once told him: a vast realm ruled by a silent king and an all-powerful minister. The minister is the mind; win it over, by practice, and everything is won.",
+     "lesson": "When life feels like a loop, the work is not more of it but mastering the mind that runs it.",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.24.19",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 24.19",
+      "family": "yv",
+      "speaker": "Virochana",
+      "listener": "Bali",
+      "setting": "Bali's father Virochana tells him the secret of mastering the mind.",
+      "sanskrit": "एषा ह्यत्यन्तदुष्प्रापा सुप्रापा च महामते । अनभ्यस्तातिदुष्प्रापा स्वभ्यस्ता प्राप्यते सुखम् ॥",
+      "line": "Unpractised, it feels impossible. Well practised, it comes easily.",
+      "translation": "This is extremely hard to attain and also easy, great-minded one: unpractised, it is very hard to reach; well practised, it comes easily.",
+      "why": "When life feels like a loop, the work is not more of it but mastering the mind that runs it.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "restless_mind",
+        "label": "I can't focus, my mind is restless"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.bali",
+       "title": "Bali tires of endless days and asks his father's riddle",
+       "summary": "The demon king Bali has ruled the three worlds for ages. One day at his window he realises he is doing the same things day after day, night after night, and asks what any of it adds up to. He remembers a riddle his father Virochana once told him: a vast realm ruled by a silent king and an all-powerful minister. The minister is the mind; win it over, by practice, and everything is won.",
+       "story_hook": "Bali had conquered everything there was to conquer, and one evening he realised he was bored.",
+       "lesson": "When life feels like a loop, the work is not more of it but mastering the mind that runs it."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "A demon king who had conquered everything realised one evening that he was bored",
+     "teaser": "A demon king who had conquered everything realised one evening that he was bored",
+     "for_you": "Bali ruled the world but grew tired of the loop. You are tired too. The mind that keeps you awake is the minister. Today, let it rest. Do one thing you can control, and let the result go. The terror is just a story your mind tells. You do not have to believe it."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The rating and the mind",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 223,
+   "llm": 5335,
+   "total": 17131,
+   "select": 11565
+  }
+ },
+ "script": [
+  [
+   "scene",
+   "Arjuna stands in the chariot. The two armies face each other. He looks across the field. He sees his own family in the enemy lines. He drops his bow. His limbs give way. His mouth goes dry. His body trembles. He sits down in the chariot. And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "सीदन्ति मम गात्राणि मुखं च परिशुष्यति, वेपथुश्च शरीरे मे रोमहर्षश्च जायते. गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते, न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः."
+  ],
+  [
+   "line",
+   "In plain words: Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero."
+  ],
+  [
+   "unpack",
+   "The Gita opens with a panic attack. Not a hero. Even the strongest people freeze. Your body is not betraying you. It is telling the truth of what you are facing. This trembling is real. The teaching does not start by telling you to push through. It starts by naming the terror exactly as it is."
+  ],
+  [
+   "for_you",
+   "Right now, your mind is living the future they are terrified of. It is rehearsing a battle that has not happened. Your body knows this. It is holding the weight of a rating that is not yet bad. You do not have to fight that rating tonight. You only have to let your body feel what it feels without adding the story that it means you are lost."
+  ],
+  [
+   "close",
+   "What if your body is simply telling you the truth?"
+  ]
+ ],
+ "depth": {
+  "life": "You are terrified that a single rating will end your visa and force you to leave in days, and you are exhausted from checking work messages at 2am. Your mind will not let you rest, and you have not had a weekend without thinking about work.",
+  "points": "What you are feeling is not weakness. It is the body's truth when it faces a battle that has not yet happened. The Gita shows that even the strongest people freeze before the fear of what might happen.",
+  "practice": "When the panic rises, place your hand on your chest and feel your heartbeat without trying to change it for thirty seconds.",
+  "question": "What would happen if you let your body finish trembling before you checked your phone again?"
+ }
+}

@@ -1,0 +1,511 @@
+{
+ "persona": {
+  "id": "uk_boomer_grandmother_lonely",
+  "market": "UK (Birmingham)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "68, came from Jalandhar in 1976, worked in a factory then raised 3 children. Widowed. Children busy, grandchildren on phones. Reads Ramcharitmanas.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "lonely"
+  },
+  "note": "children are good they come on sunday but they are always on their phones. I raised them alone after their father died. I read Ramayan in the morning it is my only company",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely in a full house",
+   "bridge": "The Ramayana you read each morning is what the texts call the company of the self: a conversation that does not end when the phone does.",
+   "week_thesis": "Seven days from Sunday loneliness to a morning practice that holds you in the company you have found.",
+   "week_beats": {
+    "hook": "You recognise the Sunday distance and the quiet that follows, named without blame.",
+    "diagnose": "You see that the disconnection is not the phones but the absence of the presence you raised them to be.",
+    "steady": "You hold that the self that reads each morning is a presence no phone can replace.",
+    "act": "You try reading with the intention of finding your own company in the verses, one page at a time."
+   },
+   "confidence": 0.9,
+   "core_struggle": "A widow who raised her children alone is reading the Ramayana each morning and is seeking a deeper connection beyond the Sunday visits.",
+   "mirror": "You give them your, and in the quiet you turn to the Ramayana, which is your only company.",
+   "insight": "You are not missing the phone in their hands. You are missing the presence of the people you raised, and the Ramayana you read is the company you have found in that absence.",
+   "mechanism": "disconnection",
+   "mechanism_label": "Feeling cut off",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.52,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.41,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.524,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.392,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet of a house that once held your family, and the search for a deeper company beyond the Sunday visits. I feel lonely.",
+    "diagnose": "Disconnection is the feeling that comes when the heart is searching for where it belongs and the world has gone quiet; it is not the absence of people but the absence of presence.",
+    "steady": "What is real in the heart cannot be taken away, and the self that reads the Ramayana each morning is a presence that no phone can replace.",
+    "act": "Read with the intention of finding your own company in the verses; let the text speak to you as a companion, not a task.",
+    "story": "A mother who raised her children alone after loss, and who found her footing not in the house but in the verses she read each morning."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The Sunday quiet",
+    "The company of the self",
+    "What remains"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "children visit",
+    "grandchildren are always on their phones",
+    "raised them alone after their husband died",
+    "reads the in the morning"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:seeking_over_pain",
+    "hook:anchored_to_situation",
+    "redo:4",
+    "redo_fixed:3",
+    "dropped:fallback_line=1,invented_name=4",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:for_you=invented_name",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.10.11",
+     "ref": "Bhagavad Gita 10.11",
+     "ref_iast": "Bhagavad Gītā 10.11",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on devotees who find joy together and the light he gives them.",
+     "sanskrit": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः । नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥",
+     "line": "Out of compassion, I live in their hearts and clear the darkness with the lamp of understanding.",
+     "translation": "Out of compassion for them, dwelling in their hearts, I destroy the darkness born of ignorance with the shining lamp of knowledge.",
+     "why": "Good company and an inner lamp clear the dark.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p10.2",
+      "title": "The yoga of devotion and its fruit",
+      "summary": "Devotees talk of the divine with each other and find joy; out of compassion Krishna lights the lamp of knowledge in their hearts.",
+      "story_hook": "",
+      "lesson": "Good company and an inner lamp clear the dark."
+     },
+     "score": 2.5357,
+     "beat": "hook",
+     "role_fit": 0.33,
+     "meaning": "Krishna speaks to Arjuna about the joy found in shared devotion. He explains that when people gather to speak of the divine, lives in their hearts. Out of compassion, lights the lamp of knowledge within them, clearing away the darkness of ignorance.",
+     "for_you": "The Sunday visits end, and the house fills with a quiet that is not empty. The lamp you light in the morning is the company that does not leave when the others do."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_kaushitaki.126",
+     "ref": "Kaushitaki Upanishad 3.7",
+     "ref_iast": "Kauṣītaki Upaniṣad 3.7",
+     "family": "up",
+     "speaker": "Indra",
+     "listener": "Pratardana",
+     "setting": "Indra on attention behind every sense.",
+     "sanskrit": "न हि प्रज्ञापेता वाङ्नाम किंचन प्रज्ञपयेदन्यत्र मे मनोऽभूदित्याह नाहमेतन्नाम प्राज्ञासिषमिति न हि प्रज्ञापेतः प्राणो गन्धं कंचन प्रज्ञपयेदन्यत्र मे मनोऽभूदित्याह नाहमेतं गन्धं प्राज्ञासिषमिति नहि",
+     "line": "Without attention, nothing reaches us. We say, 'Sorry, my mind was elsewhere; I didn't catch that.'",
+     "translation": "Without attention, speech conveys no word at all. A person says, 'My mind was elsewhere; I did not catch that word.' Without attention, breath conveys no smell. A person says, 'My mind was elsewhere; I did not notice that smell.'",
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9075,
+     "beat": "diagnose",
+     "role_fit": 0.62,
+     "meaning": "Indra speaks to Pratardana about the nature of attention. He explains that without attention, nothing reaches us. A person speaks but the words are lost. A person smells but the scent is missed, because the mind was elsewhere. Attention is the bridge between the outer world and the self.",
+     "for_you": "The grandchildren are here but their eyes are elsewhere, and the distance between you is not the phones in their hands but the attention that is missing. The lamp you light is for you, to see what is truly there."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.127.doha.1",
+     "ref": "Ramcharitmanas, Ayodhya Kand 2.127 (doha 1)",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 2.127",
+     "family": "rcm",
+     "speaker": "Valmiki",
+     "listener": "Ram",
+     "setting": "Valmiki ends his list of the hearts Ram lives in.",
+     "sanskrit": "जाहि न चाहिअ कबहुँ कछु तुम्ह सन सहज सनेहु। बसहु निरंतर तासु मन सो राउर निज गेहु ॥",
+     "line": "The one who wants nothing from you and simply loves you: that heart is your own home.",
+     "translation": "One who never wants anything from you and simply loves you: live in that mind always; it is your own home.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 3.5532,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "Valmiki has been telling Ram where he lives, and he ends by saying the one place Ram truly lives is inside his own heart. It is the heart that asks for nothing and simply loves. That is the only home that never empties. When the house is full of people who are not there, that heart is the room where you remain.",
+     "for_you": "When the house is full but the silence is heavy, let your morning reading be that home. Let the verses fill the space the phones leave empty, so your own company is enough."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.1.29.22",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 29.22",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, ending his lament, says where he still sees hope.",
+     "sanskrit": "विद्यन्त एवेह न ते महात्मन् दुराधयो न क्षयमाप्नुवन्ति । ये सङ्गमेनोत्तममानसानां निशातमांसीव निशाकरेण ॥",
+     "line": "There is no trouble that good people's company can't ease, as moonlight eases the night.",
+     "translation": "Great sage, there are no troubles in the world that do not fade through the company of noble-minded people, as the darkness of night fades before the moon.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.1269,
+     "beat": "steady",
+     "role_fit": 0.465,
+     "meaning": "Rama has been speaking to the sages about how everything falls apart, and he asks what the point of it all is. Then he says that the darkness of the night does not stand a chance against the moon. The trouble is real, but the company of good people fades it. The moon does not fight the night. It simply appears, and the night is less dark.",
+     "for_you": "The emptiness you feel is real, but the morning reading is the moon you have found. It is a light that does not fight the loneliness. It simply shows you where to look."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.5.46.chaupai.3",
+     "ref": "Ramcharitmanas, Sundar Kand 5.46 (chaupai 3)",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 5.46",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Vibhishan",
+     "setting": "Ram describes the devotee who lives in his heart.",
+     "sanskrit": "सब कै ममता ताग बटोरी। मम पद मनहि बाँध बरि डोरी॥ समदरसी इच्छा कछु नाहीं। हरष सोक भय नहिं मन माहीं ॥ अस सज्जन मम उर बस कैसें। लोभी हृदयँ बसइ धनु जैसें॥ तुम्ह सारिखे संत प्रिय मोरें। धरउँ देह नहिं आन निहोरें ॥",
+     "line": "Gather every thread of love into one cord, and tie your heart to me.",
+     "translation": "Gathering the threads of attachment to all of these, he twists them into one cord and ties his mind to my feet. Even-minded, wanting nothing, with no elation, grief or fear in his mind: such a good person lives in my heart as wealth lives in a miser's heart. Saints like you are dear to me; I take a body for no other reason.",
+     "why": "The turning itself is enough to be taken in; your past is not the deciding question.",
+     "misuse": "Not 'give up your family': it is gathering one's loves into a single devotion. Surrender here comes after effort and honest reflection; it is not a reason to stop acting or to stay in harm's way.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.bhakti.vibhishan_refuge",
+      "title": "Vibhishan crosses over: Ram's refuge speech",
+      "summary": "Kicked out of Lanka for telling his brother the truth, Vibhishan crosses the sea to Ram, dreaming of his feet. Sugriva wants him bound as a spy; Ram says his vow is to remove the fear of anyone who comes for refuge, and if the visitor were truly wicked he would not have come at all. Ram embraces him, asks how he kept his goodness among the cruel, describes the devotee who ties every thread of love to him, and crowns him king, shyly giving what Ravana got for ten heads.",
+      "story_hook": "Kicked out by his own brother, a man stood on the far shore and wondered whether the enemy he was walking toward would let him in.",
+      "lesson": "The turning itself is enough to be taken in; your past is not the deciding question."
+     },
+     "score": 2.9213,
+     "beat": "act",
+     "role_fit": 0.614,
+     "meaning": "Ram speaks to Vibhishan, who has just crossed the sea to seek refuge. Vibhishan was cast out of Lanka for speaking truth to his brother, and Ram welcomes him without hesitation. Ram describes the devotee who gathers every thread of attachment and love into one single cord, tying the mind to his feet. This person is even-minded, free from elation and grief, and lives in Ram's heart as a miser lives with his wealth. Ram says this turning of the heart is enough to be taken in, and the past is not the deciding question.",
+     "for_you": "Reach out to the people and the practice that hold you; seek good company, and remember you are never truly alone."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "sur.vp.250",
+     "ref": "Sursagar vinay pada (Sur Vinay Patrika 250)",
+     "ref_iast": "Sūrsāgar vinay pada",
+     "family": "sur",
+     "speaker": "Surdas",
+     "listener": "the Lord",
+     "setting": "Surdas on the Lord's readiness.",
+     "sanskrit": "कबहूँ तुम नाहिन गहरु कियो | सदा सुभाव-सुलभ सुमिरन-बस, भक्तनि अमर दियौ ॥",
+     "line": "You never once delayed. You are easy to reach, and remembering you is enough to win you.",
+     "translation": "You have never once delayed. By nature easy to reach and won over by remembrance, you have always given your devotees what is undying.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": null,
+     "score": 2.9313,
+     "beat": "act",
+     "role_fit": 0.435,
+     "meaning": "Surdas speaks of the Lord's readiness. The devotee who remembers the Lord with love finds that the Lord has never once delayed. The Lord is easy to reach by nature, and remembrance itself is what wins him over, always giving what is undying. The verse proposes that the Lord is always ready to be reached, and remembering him is enough to win his grace.",
+     "for_you": "The Lord you call to in your morning reading is already there, never delayed. When the grandchildren are busy with their screens, turn your attention to the page you hold. Let your remembrance of the verse be the presence that stays with you today."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "loneliness",
+        "label": "I feel lonely"
+       },
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "Shabari waited for Ram without knowing when he would arrive. Your morning reading is the same kind of waiting. It is not empty time. It is you gathering what you need for the life you are still living."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The Sunday quiet",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 178,
+   "llm": 4470,
+   "total": 12338,
+   "select": 7684
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is full, and yet you are alone. The grandchildren are here, but their eyes stay on their screens. You have spent decades holding this home together. Now the Sunday visits are over, and the quiet that follows is heavy."
+  ],
+  [
+   "scene",
+   "Krishna is speaking to Arjuna on the battlefield. They have been talking about the joy of gathering to speak of the divine. Krishna looks at Arjuna and tells him that when people meet in devotion, the divine lives in their hearts. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "तेषामेवानुकम्पार्थमहमज्ञानजं तमः, नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता."
+  ],
+  [
+   "line",
+   "In plain words: Out of compassion, I live in their hearts and clear the darkness with the lamp of understanding."
+  ],
+  [
+   "unpack",
+   "This is about the light that comes from company and from within. When people gather with a shared heart, the darkness of isolation lifts. But the verse also speaks of an inner lamp. The darkness is not just outside. It is the confusion and the loneliness that settle in the mind when the people we love are no longer near. The light of understanding is what clears that confusion. It is not a quick fix. It is a steady flame that you tend."
+  ],
+  [
+   "for_you",
+   "For you, today. The Sunday visits end, and the house fills with a quiet that is not empty. The lamp you light in the morning is the company that does not leave when the others do."
+  ],
+  [
+   "close",
+   "The light is already in your hands."
+  ]
+ ],
+ "depth": {
+  "life": null,
+  "points": "Krishna speaks of good company as a shared joy that lights a lamp inside. The darkness you feel is the quiet that settles when the family leaves. But the lamp of understanding is not a thing you find outside. It is the conversation that stays with you after the room empties.",
+  "practice": "Sit with your morning reading and let the text answer you. Turn the page and ask one question to the characters. Let the conversation continue for a few minutes.",
+  "question": "What does the text say to you when the house is at its quietest?"
+ }
+}

@@ -1,0 +1,495 @@
+{
+ "persona": {
+  "id": "us_genx_mother_empty_nest",
+  "market": "USA (Texas)",
+  "generation": "Gen X",
+  "gender": "woman",
+  "who": "52, physician in Houston, came from Chennai at 26. Younger son just left for college. Marriage is fine but quiet. Mother in Chennai has early dementia.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "parent_health"
+  },
+  "note": "dropped my younger one at college last week and drove home 4 hours in silence. my amma in Chennai doesn't always recognise me on video calls now. I'm between two people who don't need me the way they did",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "quietly adrift and grieving",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "From the silence of a changed life to a mind that can hold both what has left and what remains.",
+   "week_beats": {
+    "hook": "You recognise the silence and the grief, named without judgement.",
+    "diagnose": "You see that the mind won't settle because love has nowhere to go and the heart is searching for where it belongs.",
+    "steady": "You hold that what is real in you cannot be lost, only changed, and that the bond was real even as it changes shape.",
+    "act": "You try letting love go where it needs to go, and giving the silence a place to land instead of a place to run.",
+    "story": "A woman who lost her son to the world and her mother to forgetting shows you how to hold both losses without letting either destroy you."
+   },
+   "undisclosed": false,
+   "texts": [],
+   "confidence": 0.6,
+   "core_struggle": "Her younger child has left for college and her mother is slipping away, and she feels adrift between two people who no longer need her the way they once did.",
+   "mirror": "Four hours of silence, and a mother who doesn't recognise you on the screen.",
+   "insight": "It isn't the empty house that keeps you awake. It's the love that has nowhere to go now that the roles have shifted, and the mind that runs after it is what won't settle.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 1.82,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.485,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.96,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.44,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The silence after a child leaves and a mother who no longer recognises you, leaving a mind that cannot find its ground.",
+    "diagnose": "Grief is love with nowhere to go; when what is real in us is being lost, the mind runs after it and becomes its own restless enemy.",
+    "steady": "Everything that comes together must part, and the bond was real; what is real in you cannot be lost, only changed.",
+    "act": "Let love go where it needs to go; speak to your mother with the patience of today, and give the silence a place to land, not a place to run.",
+    "story": "A woman whose son left home and whose mother grew distant, who learned to hold both losses without letting either destroy her."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The silence after",
+    "Love with nowhere to go",
+    "The self that remains"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "dropped younger child at college",
+    "drove four hours in silence"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "day1_other_text:vr",
+    "redo:3",
+    "redo_fixed:3",
+    "dropped:cliche=1,copied=1,invented_name=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "vr.2.44.9",
+     "ref": "Valmiki Ramayana, Ayodhya 44.9",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.9",
+     "family": "vr",
+     "speaker": "Sumitra",
+     "listener": "Kausalya",
+     "setting": "Ram has just left for the forest; Sumitra comforts his mother, who cannot stop weeping.",
+     "sanskrit": "शयानमनघं रात्रौ पितेवाभिपरिष्वजन्। धर्मघ्नः संस्पृशञ्छीतश्चन्द्रमा ह्लादयिष्यति॥",
+     "line": "Where you can't reach him tonight, the cool moonlight will hold him the way a father would.",
+     "translation": "When the blameless one lies down at night, the cool moon, which takes away the day's heat, will touch him and embrace him like a father, and gladden his heart.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": null,
+     "score": 4.1886,
+     "beat": "hook",
+     "role_fit": 0.465,
+     "meaning": "Sumitra speaks to the weeping Kausalya. Ram has just left for the forest and the mother cannot stop crying. Sumitra tells her that when the blameless one lies down tonight, the cool moon will touch him and gladden his heart the way a father would.",
+     "for_you": "The four hours of silence after dropping your child at college hold this same space. Your mother is slipping away, and your child is gone. The love that used to flow in a circle now has nowhere to go, and that is why the quiet feels so heavy."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.0771,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma tells King Janaka how to bear the loss of family and wealth. He asks him to steady his mind by asking where he came from, where he is going, and who he really is. Grieving is natural because meetings end and days do not come back. Ask these questions to steady yourself with the people still in front of you.",
+     "for_you": "Your mind is running after the roles that have shifted. The love is still there, but the shape of it has changed. Let the questions about who you are beneath the mother and the daughter settle the searching. The people still in front of you are where the love now lives."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.2.146.chaupai.3",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 146",
+     "family": "rcm",
+     "speaker": "Sumantra",
+     "listener": "Dasharath",
+     "setting": "Sumantra returns alone to the grieving king Dasharath and steadies him.",
+     "sanskrit": "जनम मरन सब दुख सुख भोगा। हानि लाभु प्रिय मिलन बियोगा॥ काल करम बस होहिं गोसाईं। बरबस राति दिवस की नाईं ॥ सुख हरषहिं जड़ दुख बिलखाहीं। दोउ सम धीर धरहिं मन माहीं॥ धीरज धरहु बिबेकु बिचारी। छाड़िअ सोच सकल हितकारी ॥",
+     "line": "Gain and loss, meeting and parting come like day and night. The steady hold both alike.",
+     "translation": "Birth and death, joy and sorrow, loss and gain, meeting and parting with those we love: these come under the sway of time and action, as surely as night and day. The foolish rejoice in good times and wail in bad; the steady hold both alike in the mind. Hold on to your courage, think with discernment, and let go of worry, you who care for everyone.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": null,
+     "score": 3.4523,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": null,
+     "for_you": "The four hours of silence on that drive were not empty. They were the shape of a bond that has not vanished but only changed. You can hold the love that now has nowhere to go, and let it settle without chasing it."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.26.29",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 26.29",
+     "family": "mbh",
+     "speaker": "Vyasa",
+     "listener": "Yudhishthira",
+     "setting": "The sage Vyasa consoles Yudhishthira, who wants to starve himself to death in grief.",
+     "sanskrit": "संयोगा विप्रयोगाश्च जातानां प्राणिनां ध्रुवम् / बुद्धुदा इव तोयेषु भवन्ति न भवन्ति च",
+     "line": "Meeting and parting come to everyone. Like bubbles on water, they rise and they vanish.",
+     "translation": "For every living being, meeting and parting are certain. Like bubbles on water, they appear and are gone.",
+     "why": "Guilt and grief are real, but they are not the end. The good you do next counts.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yudhishthira_grief",
+      "title": "After the war: Yudhishthira's grief and his family's counsel",
+      "summary": "Victorious but shattered by the deaths of kin, Yudhishthira wants to give up the throne for the forest. Arjuna, Bhima, Draupadi, Nakula, the sage Devasthana and Vyasa each argue with him, about duty, guilt, grief and the shortness of life, until he agrees to rule.",
+      "story_hook": "He had won the war, and all Yudhishthira wanted was to walk into the forest and never come back.",
+      "lesson": "Guilt and grief are real, but they are not the end. The good you do next counts."
+     },
+     "score": 3.2562,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "Vyasa speaks to Yudhishthira. The war is over but Yudhishthira is shattered by grief and guilt. He wants to abandon the throne and die in the forest. Vyasa reminds him that for every living being, meeting and parting are certain. Like bubbles on water, they appear and are gone. Vyasa tells him that guilt and grief are real, but they are not the end. The good he does next counts.",
+     "for_you": "The roles have shifted, but the love was real. You can hold both the child who left and the mother who is slipping, without needing to choose between them."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.55.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 55",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Ram",
+     "setting": "Kausalya, choosing not to hold her son back, sends him into exile with her blessing.",
+     "sanskrit": "यह बिचारि नहिं करउँ हठ झूठ सनेहु बढ़ाइ। मानि मातु कर नात बलि सुरति बिसरि जनि जाइ ॥",
+     "line": "I won't hold you back with false affection. Go, son. Just don't forget your mother.",
+     "translation": "Thinking this over, I will not insist out of false affection. I bless you, son; only keep the bond of a mother, and don't forget me.",
+     "why": "Letting a child go with your blessing is love at its hardest.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.ram_kausalya",
+      "title": "Kausalya lets her son go",
+      "summary": "Ram comes to his mother as she is preparing for his coronation. Torn between duty and love, she decides not to hold him back with 'false affection', blesses him and asks only that he not forget her. As he leaves she wonders aloud whether she will live to see his face again.",
+      "story_hook": "She had the sweets ready for his coronation when he came to say goodbye.",
+      "lesson": "Letting a child go with your blessing is love at its hardest."
+     },
+     "score": 3.5883,
+     "beat": "act",
+     "role_fit": 0.498,
+     "meaning": "Kausalya is alone in her quarters, preparing to let Ram go into exile. She knows that clinging to him with false affection would only wound them both. She chooses to bless his path instead. The verse asks you to do the same. It says that meeting and parting are as natural as bubbles rising and vanishing on water, and that love must sometimes step aside so it can truly stay. This is the truth beneath the empty house and the quiet mind.",
+     "for_you": "When you are alone in the house after the drive, let the silence settle in your hands. Place your attention on one small thing, and let the rest of the day hold itself."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.45",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.45",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "न चाभ्युदितसायी स्यात्प्रायश्चित्ती तथा भवेत् / मातापितरमुत्थाय पूर्वमेवाभिवादयेत् / आचार्यमथवाऽप्यन्तं तथाऽऽयुर्विदन्ते महत्",
+     "line": "Start the day by greeting your mother and father. Small daily respect adds up to a good life.",
+     "translation": "Don't sleep past sunrise. On rising, first greet your mother and father, and your teacher or another elder; that is how a long life is won.",
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 3.1605,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "Bhishma lies on a bed of arrows, and Yudhishthira asks him what makes a life long and good. Bhishma answers that it is built from small, daily acts of respect. He tells Yudhishthira to rise before sunrise and greet his parents with kind words. This simple act is not mere ritual. It is a way of keeping the heart open and honest, of building a life that is not scattered by anger or mockery. It is a quiet foundation for whatever comes next.",
+     "for_you": "Tomorrow morning, before you reach for your phone, take one minute to greet your mother with your full attention, even if she cannot answer. Let that small act be the first stone of your day."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "Kausalya's grief did not vanish because Sumitra offered a cure. It eased because someone who knew the shape of the ache sat beside her. You are in the silence of the drive home. Let it be a place where your own missing is witnessed, not fixed. You do not need to carry both losses alone."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The silence after",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 175,
+   "llm": 5658,
+   "total": 11887,
+   "select": 6043
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You drove four hours in silence today, and the house is empty now that your child is at college. Your mother is slipping away. You feel adrift between two people who no longer need you, and that quiet is heavy."
+  ],
+  [
+   "scene",
+   "Sumitra sits beside Kausalya. Ram has just left for the forest, and Kausalya cannot stop weeping. Sumitra speaks to the weeping queen. And Sumitra replied:"
+  ],
+  [
+   "sanskrit",
+   "शयानमनघं रात्रौ पितेवाभिपरिष्वजन्, धर्मघ्नः संस्पृशञ्छीतश्चन्द्रमा ह्लादयिष्यति."
+  ],
+  [
+   "line",
+   "In plain words: Where you can't reach him tonight, the cool moonlight will hold him the way a father would."
+  ],
+  [
+   "unpack",
+   "The verse says that where you cannot reach him tonight, the cool moon will hold him like a father. It is a promise that love does not vanish into absence. It finds another shape, another touch, to carry the one who is gone. This is easier said than done, because the mind wants to hold the person close. It wants the old circle to remain, and it will not settle until it finds a new way to let love rest."
+  ],
+  [
+   "for_you",
+   "Tonight, sit in the quiet of the empty house. Let the love that has nowhere to go simply rest in the stillness. Do not rush to fill the silence with tasks or calls. Let it hold you for a little while."
+  ],
+  [
+   "close",
+   "What if the quiet is not empty, but only waiting for a new shape?"
+  ]
+ ],
+ "depth": {
+  "life": "You drove four hours in silence after dropping your younger child at college. Your mother is slipping away, and the love you have for her and your child has nowhere to go now. The house feels quiet, and you feel adrift between two people who no longer need you the way they once did.",
+  "points": "The love you hold for your child and your mother is real, but it has lost its place to land. The mind keeps running after what is gone, and that running is what keeps you from settling. The pain is not the empty house, but the love that has no circle to flow in anymore.",
+  "practice": "Sit with your mother or call her today and hold her hand without trying to fill the silence.",
+  "question": "Where does your love go when it cannot reach them?"
+ }
+}

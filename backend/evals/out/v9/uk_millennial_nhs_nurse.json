@@ -1,0 +1,495 @@
+{
+ "persona": {
+  "id": "uk_millennial_nhs_nurse",
+  "market": "UK (Manchester)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "31, NHS nurse in Manchester, came from Kerala 5 years ago, sends money home, night shifts. Single. Family asking about marriage.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "shame"
+  },
+  "note": "12 hour night shifts, I send half my salary home, my parents are proud but every call ends with when are you getting married. I'm 31 and I feel like I'm failing at a test I never agreed to take",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "",
+   "bridge": "The test you never agreed to take is what the Gita calls a conflict of duties: two right things pulling in different directions.",
+   "week_thesis": "Seven days from the test you never agreed to take to the one duty you can actually do today, without shame.",
+   "week_beats": {
+    "hook": "You recognise the restless mind and the weight of the duty that also wounds.",
+    "diagnose": "You see that the test is not real, and the real cause is the conflict between two duties you both honour.",
+    "steady": "You hold that doing what you can with full attention is enough, and you are not failing.",
+    "act": "You try one act for your own peace, and one honest word about your time and energy.",
+    "story": "A woman who served two masters shows you how to hold both without the mind racing."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.72,
+   "core_struggle": "She sends half her salary home from -hour night shifts, and every call ends with marriage questions that make her feel like she is failing a test she never agreed to take.",
+   "mirror": "You send half your salary home, and every call ends with the same question that makes your mind race.",
+   "insight": "It isn't the marriage question that keeps you up. It is the belief that you are failing a test you never agreed to take, which turns your duty into a source of shame.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.648,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 1.29,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.26,
+     "source": "note"
+    },
+    {
+     "id": "shame",
+     "label": "I feel ashamed of who I am",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "career_switch",
+     "label": "I want to change careers but I'm scared",
+     "weight": 0.525,
+     "source": "note"
+    },
+    {
+     "id": "midlife",
+     "label": "Midlife and wondering if this is it",
+     "weight": 0.427,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of a duty that is also a wound; the mind that won't settle because two right things are pulling in different directions. My parents' expectations weigh on me.",
+    "diagnose": "When duties pull in different directions and fear clouds which one is truly yours, the mind races and the heart feels like it is failing.",
+    "steady": "You are doing what you can do right now, and that is enough; the one who acts with full attention on the duty before them is never failing.",
+    "act": "Do one thing for your own peace each day, and speak the truth about your time and energy to your parents gently and firmly.",
+    "story": "A woman who served two masters, her family and her own life, and learned to hold both without breaking."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The test you never agreed to",
+    "The conflict of two duties",
+    "The one duty you can do today"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "works -hour night shifts",
+    "parents are proud but end every call with marriage questions"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "emotion:missing",
+    "hook:anchored_to_situation",
+    "seat:missing",
+    "week_fit:34=0.3,98=0.0,47=0.0,22=0.0,1=0.0,7=0.0",
+    "week_fit:swapped=6",
+    "retried:1",
+    "redo:2",
+    "redo_fixed:0",
+    "dropped:repeat=2,soft_kept=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      },
+      {
+       "id": "career_switch",
+       "label": "I want to change careers but I'm scared"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.8098,
+     "beat": "hook",
+     "role_fit": 0.0,
+     "meaning": "Krishna tells Arjuna that doing your own duty, even if you stumble, is better than copying someone else perfectly. The path you choose must come from inside you. When you try to live a borrowed life, you are always afraid of being found out. Your own work may have flaws, but it is yours. The borrowed one will always feel like a test you never agreed to take.",
+     "for_you": "The marriage questions are a borrowed test. Your night shifts and your salary are your own duty. They may feel imperfect, but they are yours. Let that be enough for today."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.2.63",
+     "ref": "Bhagavad Gita 2.63",
+     "ref_iast": "Bhagavad Gītā 2.63",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna answers Arjuna's question: what does a person of steady mind look like?",
+     "sanskrit": "क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥",
+     "line": "Anger clouds judgement, clouded judgement loses memory, lost memory wrecks reason, and then you fall.",
+     "translation": "From anger comes delusion; from delusion, confusion of memory; from confusion of memory, the ruin of understanding; and with understanding ruined, a person is lost.",
+     "why": "Steadiness is built by guarding attention; anger starts with what you dwell on.",
+     "misuse": "Not 'never feel anger'. It warns about anger that takes over judgement, not about naming wrongs.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.5",
+      "title": "The person of steady wisdom",
+      "summary": "Arjuna asks how a steady person speaks, sits and walks. Krishna describes someone content within, unshaken by sorrow, master of the senses, and traces how dwelling on things leads to anger and ruin.",
+      "story_hook": "",
+      "lesson": "Steadiness is built by guarding attention; anger starts with what you dwell on."
+     },
+     "score": 2.8613,
+     "beat": "diagnose",
+     "role_fit": 0.75,
+     "meaning": "Krishna is answering Arjuna. Arjuna wants to know what a steady mind looks like in the middle of a crisis. Krishna tells him it is not the absence of trouble. It is a mind that does not let one thing pull it apart. When you let anger take root, it clouds what you know. Then you forget the truth of the situation. Then your reason breaks down, and you fall. The path to steadiness is guarding your attention. It is choosing what you give your energy to, because that is where the trouble begins.",
+     "for_you": "The test is not real. The test is the conflict between two duties you both honour. The shift pays the bills, and the calls ask for a life you do not have yet. That is not a failure. It is a pull. See it as two right things, not a wrong choice."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.536",
+     "ref": "Maha Upanishad 6.68",
+     "ref_iast": "Mahā Upaniṣad 6.68",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on inner stillness in an active life.",
+     "sanskrit": "बहिःकृत्रिमसंरंभो हृदि संरम्भवर्जितः । कर्ता बहिरकर्तान्तर्लोके विहर शुद्धधीः ॥",
+     "line": "Be busy on the outside and unhurried inside. Act fully, but don't let it agitate you.",
+     "translation": "Outwardly busy, inwardly free of agitation; a doer on the outside, a non-doer within: move through the world with a clear mind.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 2.9728,
+     "beat": "steady",
+     "role_fit": 0.635,
+     "meaning": "Ribhu speaks to Nidagha, who lives a full life in the world. Ribhu says a free person is outwardly busy and inwardly unhurried. They act fully but do not let the work agitate them. They take up what comes and let go of what is lost. They speak gently and move through the world with a clear mind, treating the whole world as family.",
+     "for_you": "You are busy on the outside and unhurried inside. The shift is the work at hand. The calls are what comes. Do the shift with full attention, but do not let the questions agitate the part of you that knows you are enough."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.4.21",
+     "ref": "Bhagavad Gita 4.21",
+     "ref_iast": "Bhagavad Gītā 4.21",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how the wise live and work.",
+     "sanskrit": "निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः । शारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Expecting nothing, mind steady, letting go of possessiveness, you can work without being stained.",
+     "translation": "Without hope, with mind and self controlled, giving up all possessiveness, doing only bodily action, he incurs no fault.",
+     "why": "Contentment and freedom from envy let you work without being bound.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p04.2",
+      "title": "How the great yogis live",
+      "summary": "The wise act without selfish motive, content and dependent on nothing, free from envy, steady in success and failure.",
+      "story_hook": "",
+      "lesson": "Contentment and freedom from envy let you work without being bound."
+     },
+     "score": 2.8625,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Krishna tells Arjuna that a wise person can do their work without being stained by it. They do this by letting go of possessiveness and expecting nothing in return. This steadiness of mind comes from being content and free from envy. The work itself is done fully, but the person is not bound by the results.",
+     "for_you": "At the end of your night shift, you can wash off the day's labor without letting your parents' expectations stick to you. You are doing your part, and that is enough for today."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.40.12",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 40.12",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "इदं च त्वां सर्वपरं ब्रवीमि / पुण्यं पदं तात महाविशिष्टम् / न जातु कामान्न भयान्न लोभा- / द्धर्मं जह्याज्जीविस्यापि हेतोः",
+     "line": "Never give up what is right, not for desire, not from fear, not for money.",
+     "translation": "Here is the highest thing I can tell you, the purest and most valuable: never abandon what is right, not out of desire, not out of fear, not out of greed, not even to save your life.",
+     "why": "Don't trade what's right for desire, fear or money. Only your deeds stay with you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.40",
+      "title": "Vidura Niti: never abandon what is right",
+      "summary": "Vidura closes with the heart of his counsel: never give up what is right for desire, fear or greed; only our deeds go with us; ask the wise when unsure.",
+      "story_hook": "",
+      "lesson": "Don't trade what's right for desire, fear or money. Only your deeds stay with you."
+     },
+     "score": 2.9054,
+     "beat": "act",
+     "role_fit": 0.851,
+     "meaning": "Vidura tells King Dhritarashtra that the highest and most valuable thing is to never abandon what is right, not for desire, not for fear, and not for money. Only our deeds stay with us after everything else is gone. This is the pure standard by which to measure our actions.",
+     "for_you": "When your parents ask about marriage, you can say one honest word about your time and energy. You are choosing to protect your own peace, and that is a right you will not trade."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_taittiriya.49",
+     "ref": "Taittiriya Upanishad 1.11.1",
+     "ref_iast": "Taittirīya Upaniṣad 1.11.1",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Graduating student",
+     "setting": "The graduation address as a student leaves to start family life.",
+     "sanskrit": "वेदमनूच्याचार्योन्तेवासिनमनुशास्ति । सत्यं वद । धर्मं चर । स्वाध्यायान्मा प्रमदः ।",
+     "line": "Speak the truth. Do what is right. Never stop learning.",
+     "translation": "Having taught the Veda, the teacher instructs the student: Speak the truth. Practise what is right. Do not neglect your study.",
+     "why": "Truth, right action, gratitude and graceful giving: a whole life in one speech.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.taittiriya.convocation",
+      "title": "The graduation address",
+      "summary": "As a student finishes his studies and leaves to start family life, the teacher gives him parting instructions: speak truth, do right, keep learning, honour mother, father, teacher and guest, give with grace. He even tells the student to copy only the teachers' good conduct, and when in doubt to act as thoughtful, gentle people would.",
+      "story_hook": "",
+      "lesson": "Truth, right action, gratitude and graceful giving: a whole life in one speech."
+     },
+     "score": 2.9041,
+     "beat": "act",
+     "role_fit": 0.821,
+     "meaning": "A teacher at a student's graduation says to speak the truth, practise what is right, and do not neglect study. The teacher is not telling the student to choose between the world and knowledge. The student can carry all three. The teacher means that right action is not a single path but a way of moving through life with honesty and steady attention. It is a gift of trust passed from one person to another.",
+     "for_you": "Your night shifts are your study, and your parents' questions are just one voice. Speak the truth to them about your time. Do what is right for your own mind today."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "midlife",
+       "label": "Midlife and wondering if this is it"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "You are doing the work of the night shift and sending the money home, and the marriage talk is still there. You do not need to leave your life to change how it feels. You could do the work with a mind that does not clutch."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The test you never agreed to",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 229,
+   "llm": 5052,
+   "total": 12724,
+   "select": 7436
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting in the quiet after a long night shift, the phone heavy in your hand. You just hung up on another call that ended the same way it always does. You feel the weight of it and the shame of not knowing how to answer. You are not failing."
+  ],
+  [
+   "scene",
+   "Arjuna stands in the middle of the battlefield, overwhelmed and unsure if he should fight. He looks at the faces of his own people and asks Krishna what he should do. Krishna looks at him and says:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वधर्मे निधनं श्रेयः परधर्मो भयावहः."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous."
+  ],
+  [
+   "unpack",
+   "Krishna is telling Arjuna that following your own nature is the only way to move forward. You do not have to be perfect to be right. You just have to be true to what you are meant to do. Borrowing a life from someone else will always feel like a performance. You will always be waiting for the moment someone points out that you do not belong there."
+  ],
+  [
+   "for_you",
+   "The marriage questions are a borrowed test. Your night shifts and your salary are your own duty. They may feel imperfect, but they are yours. Let that be enough for today."
+  ],
+  [
+   "close",
+   "What if your own path was the only one that could hold you?"
+  ]
+ ],
+ "depth": {
+  "life": "Your phone lights up with their voice. You are on the night shift, your body tired. They ask about marriage. You feel the weight of your own salary, the hours you work, the path you chose. It feels like a test you never signed up for.",
+  "points": "You are caught between two duties. Your parents' expectations are one path. Your own work, your own life, is another. The Gita says you are failing only if you try to live someone else's duty. Your own path, even with its flaws, is the only one that can be truly yours.",
+  "practice": "When they ask about marriage, pause. Let the question sit for a moment. Then answer only about your own work, your own day. Keep your own path in the conversation.",
+  "question": "What does your own duty feel like, right now?"
+ }
+}

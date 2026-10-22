@@ -1,0 +1,524 @@
+{
+ "persona": {
+  "id": "us_millennial_h1b_burnout",
+  "market": "USA (Seattle)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "33, software engineer at a big tech company in Seattle, on H-1B, green card queue, wife on H4 can't work. Performance review season.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "if I get a bad rating I lose the visa and we have 60 days to leave. my wife gave up her career to be here. I check slack at 2am. I don't remember the last weekend I wasn't thinking about work",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "terrified and wired",
+   "bridge": "What you are living with is what the texts call a mind that won't settle, and that is where this week begins.",
+   "week_thesis": "Seven days from the two in the morning check to a mind that can rest without letting go of the duty.",
+   "week_beats": {
+    "hook": "You recognise the replaying and the wired mind, named without judgement.",
+    "diagnose": "You see that it is not the rating but the mind that has made the rating its only proof.",
+    "steady": "You hold that your effort is yours and the result is not.",
+    "act": "You try closing the Slack at a set time and doing one thing that is only for you before sleep.",
+    "story": "A man who has left his home and built a life abroad shows you how to let the mind rest without letting go of the duty."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.7,
+   "core_struggle": "A man on a visa with a day clock cannot stop checking work at 2am because the rating is his family's only anchor, and his mind will not settle.",
+   "mirror": "You gave up the weekend, and at two in the morning the rating is still running through your head.",
+   "insight": "Your mind isn't broken. It was never taught to rest, so it keeps running long after you've asked it to stop.",
+   "mechanism": "restless_mind",
+   "mechanism_label": "A mind that won't settle",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 1.815,
+     "source": "note"
+    },
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.597,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.26,
+     "source": "note"
+    },
+    {
+     "id": "phone_addiction",
+     "label": "I'm addicted to my phone",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The mind will not settle when the rating is the only thing standing between your family and the life they gave up everything to reach. I'm burned out and running on empty.",
+    "diagnose": "When the mind makes one result its only proof, it runs after it like the wind; the more it chases, the more it needs to chase, and the body never rests.",
+    "steady": "Praise and blame, success and failure, come and go; what is yours is your effort, and what is not yours is the result.",
+    "act": "Let the Slack close at a set time and practise one thing that is only for you before sleep; the rating will not be won or lost in the middle of the night.",
+    "story": "A man who has left his home and built a life abroad, carrying the fear of losing it, who learns to let the mind rest without letting go of the duty."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The mind will not settle",
+    "What the mind is really guarding",
+    "More than the visa clock"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "on a visa with a day clock",
+    "checks slack at 2am"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "bridge:copied_example",
+    "seat:missing",
+    "retried:2",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:fallback_line=1,missing=2,slang=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "yv.5.66.34",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 66.34-35",
+     "family": "yv",
+     "speaker": "Bhasa",
+     "listener": "Vilasa",
+     "setting": "Two childhood friends meet again in old age; one admits he never found peace.",
+     "sanskrit": "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु । क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम् ॥ इदं कृतं करोमीदं करिष्यामीदमित्यलम् । कलनाजालवलिता मूर्च्छिता मतिपक्षिणी ॥",
+     "line": "'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest.",
+     "translation": "Carried along on endless great waves of tasks, the mind never gets a moment's rest; its depths dance with worry. 'This I've done, this I'm doing, this I'll do': so the bird of the mind, tangled in a net of reckonings, faints.",
+     "why": "Years of hard effort without inner understanding can leave you exactly where you started.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.bhasa_vilasa",
+      "title": "Two old friends meet again and admit they never found peace",
+      "summary": "Bhasa and Vilasa grow up inseparable in a forest hermitage. After their fathers die they drift apart and spend long lonely years in hard austerities. When they meet again as old men, one asks if the other is well; he answers honestly that there is no wellness while the mind keeps spinning through endless tasks and worries.",
+      "story_hook": "They had been inseparable as boys, and when they met again they were old men with nothing to show.",
+      "lesson": "Years of hard effort without inner understanding can leave you exactly where you started."
+     },
+     "score": 3.8897,
+     "beat": "hook",
+     "role_fit": 0.69,
+     "meaning": "In the Yoga Vasishtha, the wise man Bhasa meets his childhood friend Vilasa in old age. Vilasa admits he has never found peace. He describes how the mind is carried along on endless waves of tasks, never resting. It is caught in the loop of what is done, what is being done, and what must be done next. The mind faints, tangled in a net of constant reckoning.",
+     "for_you": "At two in the morning, you are caught in that same net. The visa is real, but the loop is a habit. Let the mind rest for a moment. It does not mean the work is forgotten."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.492",
+     "ref": "Chhandogya Upanishad 6.8.2",
+     "ref_iast": "Chāndogya Upaniṣad 6.8.2",
+     "family": "up",
+     "speaker": "Uddalaka Aruni",
+     "listener": "Shvetaketu",
+     "setting": "Uddalaka explains sleep to his son.",
+     "sanskrit": "स यथा शकुनिः सूत्रेण प्रबद्धो दिशं दिशं पतित्वान्यत्रायतनमलब्ध्वा बन्धनमेवोपश्रयत एवमेव खलु सोम्य तन्मनो दिशं दिशं पतित्वान्यत्रायतनमलब्ध्वा प्राणमेवोपश्रयते प्राणबन्धनꣳ हि सोम्य मन इति ॥",
+     "line": "Like a bird on a string, the mind flies everywhere, finds no rest, and returns to the breath.",
+     "translation": "As a bird tied by a string flies in every direction and, finding no resting place anywhere else, settles down at the very place it is tied, so, dear one, the mind flies in every direction and, finding no resting place anywhere else, settles down on the breath; for the mind is tied to the breath.",
+     "why": "What is most real in you is unseen, everywhere, and the same in all.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      },
+      {
+       "id": "sleep_mind",
+       "label": "I can't sleep, my mind is racing"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.chhandogya.uddalaka_lessons",
+      "title": "Uddalaka's lessons: tat tvam asi",
+      "summary": "Uddalaka teaches his son through everyday experiments: a fast that dims the mind, a bird on a string, rivers merging in the sea, a banyan seed with nothing visible inside, salt dissolved in water, a blindfolded man finding his way home. Each lesson ends: 'That subtle essence is the self of all. You are that, Shvetaketu.'",
+      "story_hook": "",
+      "lesson": "What is most real in you is unseen, everywhere, and the same in all."
+     },
+     "score": 3.5165,
+     "beat": "diagnose",
+     "role_fit": 0.611,
+     "meaning": "Uddalaka asks Shvetaketu how a person knows they are asleep. The son says they do not know anything. The father says the same self is there, resting. The mind flies everywhere at night and finds no resting place. It comes back to the breath. The mind is tied to the breath.",
+     "for_you": "The 2am check is not the real problem. It is the mind that has made the rating its only proof. You see the pattern now: the mind flies, finds no rest, and returns to the breath. Let your breath be the string tonight."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.5.20",
+     "ref": "Bhagavad Gita 5.20",
+     "ref_iast": "Bhagavad Gītā 5.20",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on the inner happiness of one who sees clearly.",
+     "sanskrit": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् । स्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः ॥",
+     "line": "Don't get carried away by good news or crushed by bad. Keep your understanding steady.",
+     "translation": "One should not rejoice on getting what is pleasant nor be troubled on getting what is unpleasant. Steady in understanding and undeluded, the knower of Brahman abides in Brahman.",
+     "why": "Pleasures that start and end can't hold your happiness; find the joy within.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p05.3",
+      "title": "The yoga of knowledge",
+      "summary": "Krishna describes the wise: equal-eyed towards all beings, not elated or crushed, finding joy within, seeing that sense pleasures end in sorrow, and able to withstand desire and anger.",
+      "story_hook": "",
+      "lesson": "Pleasures that start and end can't hold your happiness; find the joy within."
+     },
+     "score": 3.5905,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Krishna speaks to Arjuna about a person who sees clearly, one who is not tossed about by what happens. The world brings pleasant things and unpleasant things, and both arrive and leave. The one who knows what is real does not get carried away by joy when things go well, nor does the mind break when things go badly. They keep their understanding steady and clear, and in that steadiness they find a place of rest that nothing outside can disturb.",
+     "for_you": "At 2am the phone lights up with another alert, and the mind wants to fly toward it. Today, let the rating be what it is. Your part was the work you did. The result belongs to something else. Keep your understanding steady, and let the night hold you."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_katharudra.17",
+     "ref": "Katharudra Upanishad 8",
+     "ref_iast": "Kaṭharudra Upaniṣad 8",
+     "family": "up",
+     "speaker": "Teacher",
+     "listener": "Renunciant",
+     "setting": "Rules of conduct for a renunciant.",
+     "sanskrit": "नात्यर्थं सुखदुःखाभ्यां शरीरमुपतायेत् । स्तूयमानो न तुषेत निन्दितो न शपेत्परान् ॥",
+     "line": "Don't wear out your body chasing pleasure or fleeing pain. Praised, don't gloat; blamed, don't curse others.",
+     "translation": "Let him not torment the body too much for the sake of pleasure or pain. Praised, let him not gloat; blamed, let him not curse others.",
+     "why": null,
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": null,
+     "score": 3.5672,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "A teacher is laying down conduct rules for a renunciant. The teacher says do not torment the body for pleasure or pain. When praised, do not gloat. When blamed, do not curse others. The teacher is saying your effort is yours alone. The outcome belongs to the larger flow, not your shoulders. The body is not a machine to be pushed past its limits just to chase a result or flee a fear. Your part is to act with steadiness. The rest is not yours to carry.",
+     "for_you": "The 2am check is your mind trying to control a result that is already out of your hands. Your part was the work you did before midnight. The rating is not your body to be worn out for. Let your part be the effort, and let the rest go."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.vairagya.62",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 62",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own mind",
+     "setting": "From 'Advice to the Mind'.",
+     "sanskrit": "परिभ्रमसि किं मुधा क्वचन चित्त विश्राम्यतां स्वयं भवति यद्यथा भवति तत्तथा नान्यथा । अतीतमननुस्मरन्नपि च भाव्यसंकल्पयन् नतर्कितसमागमाननुभवामि भोगानहम् ॥",
+     "line": "Why wander, mind? Rest. Not replaying the past, not scripting the future, I take what comes.",
+     "translation": "Why do you wander about in vain, mind? Rest somewhere. Whatever is to happen happens just as it will, and not otherwise. Not recalling the past, not planning the future, I enjoy the pleasures that come to me unlooked-for.",
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "Not an argument against planning; it is for the worry loop once you have done your part.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 3.5207,
+     "beat": "act",
+     "role_fit": 0.609,
+     "meaning": null,
+     "for_you": "Bring the mind back each time it wanders, with practice and letting go; make the mind your friend through steady practice."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      },
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.4878,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, where Arjuna is frozen by grief and confusion. Krishna tells him to do his duty completely, but to let go of the outcome. The work belongs to him, not the results. Care about the work, but do not let the result own your mind.",
+     "for_you": "You can set the Slack to close at a set time, and before you sleep, do one thing that is only for you. The rating is not yours to hold."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.janaka",
+     "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Janaka",
+      "the hidden sages (siddhas)",
+      "Janaka's doorkeeper",
+      "Vasishtha",
+      "Rama"
+     ],
+     "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+     "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+     "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "matched": [
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "anchor": {
+      "id": "yv.5.9.46",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Upaśama 9.46-47",
+      "family": "yv",
+      "speaker": "Janaka",
+      "listener": "himself",
+      "setting": "King Janaka, alone on his palace roof after overhearing wandering sages, rethinks his life.",
+      "sanskrit": "संपदश्च विचित्रा यास्ताश्चेच्चित्तेन संमताः । तत्ता अपि महारम्भा हन्त मन्ये महापदः ॥ आपदोऽपि विचित्रा यास्ताश्चेन्मनसि संमताः । तत्ता अपि महारम्भा मन्ये मनसि संपदः ॥",
+      "line": "Good fortune the mind clutches becomes trouble. Trouble the mind accepts becomes a kind of fortune.",
+      "translation": "All those dazzling fortunes, if the mind clings to them, are really great calamities in grand disguise. And all those varied misfortunes, if the mind accepts them, are really fortunes.",
+      "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+      "misuse": "Accepting a hardship doesn't mean not fixing what can be fixed.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "yv.p.janaka",
+       "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+       "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+       "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+       "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "teaser": "King Janaka overheard a song in his garden that he couldn't stop thinking about",
+     "for_you": "Janaka did not run from his duties to find peace. He stayed, he ruled, but his mind stopped clutching. You can close the Slack and still hold your family's anchor. The work is yours. The mind can rest."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The mind will not settle",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 496,
+   "llm": 5223,
+   "total": 15061,
+   "select": 9334
+  }
+ },
+ "script": [
+  [
+   "open",
+   "Your body is still, but something else is running hard. The clock reads two in the morning and your eyes are on the screen again, checking the numbers that hold your family's future. The terror is real, but so is the loop your mind has fallen into."
+  ],
+  [
+   "scene",
+   "Bhasa and Vilasa meet again as old men in a forest hermitage, after decades of separation. Bhasa asks if his childhood friend is well, and Vilasa admits he has never found peace. He describes how the mind is carried along on endless waves of tasks, never resting, caught in the loop of what is done, what is being done, and what must be done next. And Bhasa replies:"
+  ],
+  [
+   "sanskrit",
+   "उह्यमानमनन्तेषु चेतः कार्यमहोर्मिषु, क्षणमेति न विश्रान्तिं चिन्ताताण्डविताशयम्. इदं कृतं करोमीदं करिष्यामीदमित्यलम्, कलनाजालवलिता मूर्च्छिता मतिपक्षिणी."
+  ],
+  [
+   "line",
+   "In plain words: 'Done this, doing this, must do that.' Caught in endless lists, the mind never gets a moment's rest."
+  ],
+  [
+   "unpack",
+   "This is the mind's default setting. It keeps tallying past deeds and future duties, and it never receives the signal to stop. The effort is real, the visa is real, but the mind faints from the weight of its own constant reckoning."
+  ],
+  [
+   "for_you",
+   "Tonight, when you open the app at two, notice the loop. The work will still be there in the morning, and the rating will still be there. Let the screen go dark for one minute. That is not neglect. It is a single breath where the mind is allowed to simply rest."
+  ],
+  [
+   "close",
+   "Can you let the screen go dark for one minute?"
+  ]
+ ],
+ "depth": {
+  "life": "At two in the morning, you are caught in that same net. The visa is real, but the loop is a habit. Let the mind rest for a moment. It does not mean the work is forgotten.",
+  "points": "Years of effort without inner understanding leaves you exactly where you started. Your mind is a bird tangled in a net of reckonings, fainting from its own motion.",
+  "practice": "Name one task you have finished today and let it sit.",
+  "question": "What would it feel like to let this one thought pass?"
+ }
+}

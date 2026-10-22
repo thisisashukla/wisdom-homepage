@@ -1,0 +1,488 @@
+{
+ "persona": {
+  "id": "uk_genx_sikh_business",
+  "market": "UK (Leicester)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "47, runs the family cash-and-carry in Leicester, second generation, Punjabi background. Father (78) still comes in and overrules him in front of staff.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "I've run this business for 15 years and my dad still walks in and changes my decisions in front of the staff. I'm 47. He's 78. I can't say anything because it's his business in his head and he's my father",
+  "note_source": "voice",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "frustrated and trapped",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "Seven days from being overruled in your own business to standing in your own truth, with the words to say so.",
+   "week_beats": {
+    "hook": "You recognise being overruled by your father, and the anger of it, named without blame.",
+    "story": "A son who stood before his father and the assembly and held his own ground shows you what it looks like."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.8,
+   "core_struggle": "A man running his own business for fifteen years is being overruled by his father in front of his staff, and cannot speak up because it would disrespect the man who raised him.",
+   "mirror": "What you told us: runs his own business for fifteen years.",
+   "insight": "You are not asking for too much. You are being handed a smaller picture of yourself than the one you live, and the smallness is theirs.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "duty_conflict",
+   "situations": [
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 2.21,
+     "source": "note"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 1.24,
+     "source": "note"
+    },
+    {
+     "id": "inlaws",
+     "label": "Tension with my in-laws",
+     "weight": 1.08,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.691,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.56,
+     "source": "chip"
+    },
+    {
+     "id": "toxic_boss",
+     "label": "My boss makes my work life miserable",
+     "weight": 0.506,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being overruled in the business you built, by the man who raised you, and the anger of knowing you cannot speak up without breaking a bond that matters. I keep fighting with my parents.",
+    "diagnose": "When a parent still sees a child as a child, the picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what he still sees; your worth was never his to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture he holds.",
+    "story": "A son who was still a boy in his father's eyes, who stood in his own truth before an assembly and was proven right, and found his footing."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The father's picture",
+    "Whose business it is",
+    "Standing in your own truth"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "father walks in and changes decisions in front of staff"
+   ],
+   "age": "45_54",
+   "stages": [
+    "own_thing",
+    "caring_parents",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "hook:anchored_to_situation",
+    "mirror:fallback",
+    "week_fit:47=0.0,12=0.0,86=0.0,58=0.3,7=0.3,532=0.0",
+    "week_fit:swapped=6",
+    "redo:1",
+    "redo_fixed:0",
+    "dropped:blame=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:close=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.7",
+     "ref": "Bhagavad Gita 2.7",
+     "ref_iast": "Bhagavad Gītā 2.7",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+     "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+     "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.4751,
+     "beat": "hook",
+     "role_fit": 0.94,
+     "meaning": "Arjuna has dropped his bow on the battlefield. He tells Krishna that his mind is confused, his nature is weak, and he cannot tell what is right. He asks Krishna to teach him plainly what is best, calling himself a student. This is the moment clarity begins. Admitting you do not know and asking for help is where true direction starts.",
+     "for_you": "Your father walks in and changes the decisions in front of your staff. You feel trapped because you cannot speak up without disrespecting the man who raised you. Today, name the confusion and the anger. Admitting that you do not know how to hold this without breaking is where your next step begins."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "vr.2.63.7",
+     "ref": "Valmiki Ramayana · Ayodhya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 63.7",
+     "family": "vr",
+     "speaker": "Dasharatha",
+     "listener": "Kausalya",
+     "setting": "Dying of grief, Dasharatha recalls the rash act from his youth that brought him to this.",
+     "sanskrit": "गुरुलाघवमर्थानामारम्भे कर्मणां फलम्। दोषं वा यो न जानाति स बाल इति होच्यते।७।।",
+     "line": "Before you start, weigh what is at stake, where it leads and what could go wrong.",
+     "translation": "Whoever, at the start of an undertaking, does not weigh how serious or slight it is, what it will lead to, and what could go wrong, is called a child.",
+     "why": "Carelessness can wound for decades; owning it honestly is the only way to carry it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.shravana",
+      "title": "The boy at the river: Dasharatha's old guilt",
+      "summary": "Dying of grief, Dasharatha confesses to Kausalya that as a young prince he shot at a sound in the dark and killed a boy filling water for his blind, aged parents. He took the water to them and told them the truth himself. The father cursed him to lose a son as they had, and now, longing for Ram, the king dies at midnight.",
+      "story_hook": "Years ago, a young prince heard a sound by the river at night and let fly an arrow.",
+      "lesson": "Carelessness can wound for decades; owning it honestly is the only way to carry it."
+     },
+     "score": 2.4919,
+     "beat": "diagnose",
+     "role_fit": 0.596,
+     "meaning": "Dasharatha lies dying, and he tells Kausalya about a boy he killed by a river long ago. He shot an arrow at a sound in the dark and struck a boy filling water for his blind parents. He carried that water to the grieving old men and confessed. He says that whoever starts something without weighing the weight of it, where it leads, and what could go wrong is a child. Carelessness can wound for decades, and owning it honestly is the only way to carry it.",
+     "for_you": "Your father walks into your office and changes a decision in front of your staff. You carry the weight of that smallness. The texts say a child does not weigh what is at stake. You are not a child."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.6.9",
+     "ref": "Bhagavad Gita 6.9",
+     "ref_iast": "Bhagavad Gītā 6.9",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु । साधुष्वपि च पापेषु समबुद्धिर्विशिष्यते ॥",
+     "line": "Friend, enemy, stranger, relative, saint or wrongdoer: the one who sees all with an even mind stands highest.",
+     "translation": "One who is even-minded towards well-wishers, friends, enemies, the indifferent, the neutral, the hateful, relatives, the good and the wicked, excels.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Even-minded is not naive; you can treat someone fairly and still keep a boundary.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      },
+      {
+       "id": "inlaws",
+       "label": "Tension with my in-laws"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 2.9752,
+     "beat": "steady",
+     "role_fit": 0.595,
+     "meaning": null,
+     "for_you": "You are being overruled in your own business by the man who raised you. That pain is real and it hurts. But you can be your own best friend. You see the man who raised you and the person who runs a business for fifteen years. Both are true."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.106",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 106",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on action.",
+     "sanskrit": "कदर्थितस्यापि हि धैर्यवृत्तेर्न शक्यते धैर्यगुणः प्रमार्ष्टुम् । अधोमुखस्यापि कृतस्य वह्नेर्नाधः शिखा याति कदाचिदेव ॥",
+     "line": "Turn a torch upside down and its flame still rises. Steadiness survives humiliation.",
+     "translation": "Even when harassed, the steadfast cannot be robbed of their steadiness. Hold a torch upside down: its flame never points downward.",
+     "why": "Your actions are the one thing fate itself must answer to.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.karma",
+      "title": "Nitishatakam: On action",
+      "summary": "The answer to the fate section: even fate only delivers the fruit of actions, so bow to action itself. Weigh outcomes before rash deeds, keep steady under humiliation, and speak kindly. The closing verses are miscellaneous maxims in some editions.",
+      "story_hook": "",
+      "lesson": "Your actions are the one thing fate itself must answer to."
+     },
+     "score": 2.9348,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "The poet Bhartrihari tells you, the reader, a truth from the section on action. He says that even when you are harassed, your steadiness cannot be taken from you. Hold a torch upside down, and its flame still rises. Your actions are the one thing fate itself must answer to.",
+     "for_you": "You have run this business for fifteen years. The steadiness you built is still there, even when your father walks in and changes a decision in front of your staff. You do not need to let his moment steal the work you have done."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "toxic_boss",
+       "label": "My boss makes my work life miserable"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.308,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "The exiled king Sugriva sees two armed strangers and panics, certain his brother has sent assassins. The stranger Hanuman speaks to him. His words are not long-winded, not ambiguous, not rushed, not strained. They come from the chest and throat in an even, middle tone. Fear jumps ahead of facts, but calm, clear words build trust fast.",
+     "for_you": "When your father speaks over you, your voice is the middle tone. Speak one clear sentence to him about what you need, without rushing or straining. Let your words be the steady flame he cannot blow out."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.218,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna is explaining the three kinds of speech. He says the best kind causes no distress, is truthful, pleasant and helpful, and is spoken in a steady voice. This is not about hiding your thoughts. It is about saying what is true without adding a wound to the truth. You do not need to shout to be heard. You only need to drop the show and speak from what is real.",
+     "for_you": "When your father changes the decision in front of the staff, you can say the hard thing without cruelty. You can name the truth of what happened, and say it in a voice that does not tremble. That is enough to stand in your own truth."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.vibhishan_counsel",
+     "title": "Vibhishan speaks up and is kicked",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Vibhishan",
+      "Ravana",
+      "Malyavan"
+     ],
+     "story_hook": "He told his brother the truth in front of the whole court, and his brother kicked him.",
+     "summary": "Vibhishan, bowing to his brother, advises him to return Sita: good sense and bad sense live in every heart, and Ravana is feeding the wrong one. Ravana kicks him. Vibhishan still says Ravana is like a father to him, and then he leaves, telling him not to blame him.",
+     "lesson": "Say the hard thing with respect; if you are struck for it, you may go.",
+     "matched": [
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.5.36.chaupai.4",
+      "ref": "Ramcharitmanas · Sundar Kand",
+      "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 36",
+      "family": "rcm",
+      "speaker": "Vibhishan",
+      "listener": "Ravana",
+      "setting": "Vibhishan, Ravana's younger brother, advises him in open court.",
+      "sanskrit": "चौदह भुवन एक पति होई। भूत द्रोह तिष्टइ नहिं सोई॥ गुन सागर नागर नर जोऊ। अलप लोभ भल कहइ न कोऊ ॥",
+      "line": "You may be gifted and clever, but even a little greed and people stop calling you good.",
+      "translation": "Even a sole master of the fourteen worlds cannot last if he makes enemies of living beings. A person may be an ocean of virtues and clever too, but if he has even a little greed, no one calls him good.",
+      "why": "Say the hard thing with respect; if you are struck for it, you may go.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [],
+      "prasang": {
+       "id": "rcm.p.vibhishan_counsel",
+       "title": "Vibhishan speaks up and is kicked",
+       "summary": "Vibhishan, bowing to his brother, advises him to return Sita: good sense and bad sense live in every heart, and Ravana is feeding the wrong one. Ravana kicks him. Vibhishan still says Ravana is like a father to him, and then he leaves, telling him not to blame him.",
+       "story_hook": "He told his brother the truth in front of the whole court, and his brother kicked him.",
+       "lesson": "Say the hard thing with respect; if you are struck for it, you may go."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Vibhishan told Ravana the truth in front of the court, and Ravana kicked him",
+     "teaser": "Vibhishan told Ravana the truth in front of the court, and Ravana kicked him",
+     "for_you": "Vibhishan stood in the court and told his brother the truth, even when he was kicked. He did not curse his brother, but he did not stay silent either. You do not have to stay in the room where your father undoes your work. You can say what is true, and then you can leave."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The father's picture",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 234,
+   "llm": 4586,
+   "total": 10721,
+   "select": 5893
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying the weight of a room full of people, and your father is rewriting your decisions in front of them. You feel trapped, because the man who raised you is treating you like you are less than you are, and you cannot speak up without breaking the bond that shaped you. You are not asking for too much."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield, and his hands drop his great bow. He has collapsed into tears. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः, यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्."
+  ],
+  [
+   "line",
+   "In plain words: I'm confused about what's right. Tell me plainly what's best; I'm ready to learn."
+  ],
+  [
+   "unpack",
+   "Arjuna does not pretend to have the answer. He admits he is confused and he is weak, and he asks for help. This is where clarity begins, not because the answer is easy, but because he stopped trying to carry it alone. To admit that you do not know how to hold this without breaking is a strength, not a failure. It is the first honest step toward finding a way to stand in your own truth."
+  ],
+  [
+   "for_you",
+   "Today, sit with the anger and the confusion. Let yourself feel that you do not know how to hold this without breaking. You do not need to fix it right now. You only need to name the truth of what you are feeling."
+  ]
+ ],
+ "depth": {
+  "life": "Your father walks in and changes decisions in front of your staff. You feel trapped between the man who raised you and the business you built. The frustration is not just about the orders. It is the feeling of being seen as a child in a room where you are supposed to be the leader.",
+  "points": "The texts say clarity begins when you admit you do not know what to do. This is not weakness. It is the honest moment before you can name what is right for you. You are allowed to not have the answer yet.",
+  "practice": "Write down one sentence that captures what you feel in that room right now. Do not show it to anyone.",
+  "question": "What is the truth of that moment that you have not yet said out loud?"
+ }
+}

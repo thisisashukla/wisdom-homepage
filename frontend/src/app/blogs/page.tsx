@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
+import { appStoreUrl } from '@/lib/app'
 
 
 export const metadata: Metadata = {
-  title: "Blog \u2014 Bhagavad Gita, Sanskrit Shlokas &amp; Hindu Philosophy | Wisdom",
+  title: "Blog \u2014 Bhagavad Gita, Sanskrit Shlokas &amp; Hindu Philosophy",
   description: "Deep readings of the Bhagavad Gita \u2014 chapter by chapter, shloka by shloka. Sanskrit text, IAST, meaning, and modern relevance. Written for the intellectually curious.",
   keywords: "",
   openGraph: {
@@ -537,7 +538,7 @@ export default function BlogIndexPage() {
           </p>
         </div>
         <a
-          href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125"
+          href={appStoreUrl('web_blog_footer')}
           target="_blank"
           rel="noopener"
           className="app-banner-btn"

@@ -1,5 +1,5 @@
 import MobileNavToggle from './MobileNavToggle'
-import { ScriptureAIWaitlistButton } from './ScriptureAIWaitlist'
+import GetAppButton from './funnel/GetAppButton'
 import './nav.css'
 
 interface NavProps {
@@ -7,11 +7,7 @@ interface NavProps {
   extraLink?: { href: string; label: string; hrefLang?: string }
   /** When true, the nav renders transparent (no solid bg) so it sits over a hero backdrop. */
   overlayHero?: boolean
-  /**
-   * Page identifier passed through to the Scripture AI waitlist button for
-   * Mixpanel attribution. Every page that renders <Nav> should pass this so
-   * we can tell which page a nav-driven waitlist signup came from.
-   */
+  /** Page identifier for Mixpanel attribution of the nav CTA. */
   pageName?: string
 }
 
@@ -25,13 +21,13 @@ export default function Nav({ extraLink, overlayHero, pageName = 'unknown' }: Na
           </div>
           Wisdom
         </a>
+        <a href="/gita" className="nav-read-mobile">Read the Gita</a>
         <MobileNavToggle />
         <ul className="nav-links">
           <li><a href="/gita" className="nav-page-link">Read the Gita</a></li>
           <li><a href="/hi/gita" hrefLang="hi" className="nav-page-link">हिंदी गीता</a></li>
-          <li><a href="/gita/today" className="nav-page-link">Today&apos;s Verse</a></li>
-          <li><a href="/search" className="nav-page-link">Ask</a></li>
-          <li><a href="/blogs" className="nav-page-link">Blog</a></li>
+          <li><a href="/gita/today" className="nav-page-link">Verse of the Day</a></li>
+          <li><a href="/gita-for" className="nav-page-link">Gita for Life</a></li>
           <li><a href="/app" className="nav-page-link">App</a></li>
           {extraLink && (
             <li>
@@ -41,11 +37,7 @@ export default function Nav({ extraLink, overlayHero, pageName = 'unknown' }: Na
             </li>
           )}
           <li>
-            <ScriptureAIWaitlistButton
-              variant="nav"
-              mpLocation="nav_scripture_ai_cta"
-              pageName={pageName}
-            />
+            <GetAppButton pageName={pageName} />
           </li>
         </ul>
       </div>

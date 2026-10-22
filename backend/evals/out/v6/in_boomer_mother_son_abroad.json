@@ -1,0 +1,502 @@
+{
+ "persona": {
+  "id": "in_boomer_mother_son_abroad",
+  "market": "India (Chennai)",
+  "generation": "Boomer",
+  "gender": "woman",
+  "who": "63, retired school principal in Chennai, husband alive, only son in Germany for 9 years with a German wife, visits every 2 years. Hindi is weak; English and Tamil.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "far_from_home"
+  },
+  "note": "my son has been in germany nine years. his wife is german, lovely girl. they will not come back I know this. I taught 2000 children and I cannot teach my own heart to stop waiting for him",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely and waiting",
+   "bridge": "The waiting you cannot stop is what the texts call grief: love with nowhere to go, and it can be given a place to rest.",
+   "week_thesis": "From a heart that will not stop waiting to a love that has found a place to rest, without losing the one it was born for.",
+   "week_beats": {
+    "hook": "You recognise the waiting and the restlessness as a real ache, not a failing.",
+    "diagnose": "You see that the waiting is the mind keeping the bond alive, not a sign that he will return.",
+    "steady": "You hold that what is real in you cannot be taken away, and the bond was real.",
+    "act": "You try giving the waiting a place to rest, and letting the day have a shape again.",
+    "story": "A father who lost his son to distance shows you how love with nowhere to go can be offered to the world without being lost."
+   },
+   "undisclosed": false,
+   "texts": [],
+   "confidence": 0.75,
+   "core_struggle": "His son has lived in for nine years and will not return, and his heart will not stop waiting despite everything he knows.",
+   "mirror": "You taught children, and your own heart will not learn that he will not come back.",
+   "insight": "It is not the distance that keeps you waiting. It is that love with nowhere to go keeps turning back to the one who is gone, even when you know he will not return.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 1.44,
+     "source": "note"
+    },
+    {
+     "id": "homesick",
+     "label": "I'm homesick",
+     "weight": 1.28,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.965,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "raising_kids_values",
+     "label": "How do I pass on our values to my kids abroad",
+     "weight": 0.42,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The ache of waiting for someone you love who will not come back, and the restlessness that comes when the day has no shape to hold it.",
+    "diagnose": "Grief is love with nowhere to go; it keeps turning back to what is gone, and the waiting is the mind's way of keeping the bond alive.",
+    "steady": "Everything that comes together must part, and the heart aches because the bond was real; what is real in you cannot be taken away.",
+    "act": "Give the love that is waiting a place to rest: speak the true thing to someone you trust, or write it down, and let the waiting have its moment without letting it own the day.",
+    "story": "A father who lost his son to distance, who learned that love with nowhere to go can be offered to something else without being lost."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Love with nowhere to go",
+    "The waiting and the day",
+    "More than the waiting"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "son has been in nine years",
+    "son's wife is and they will not come back",
+    "taught children"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "day1_other_text:vr",
+    "retried:2",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:blame=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:scene=invented_name",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "vr.5.38.32",
+     "ref": "Valmiki Ramayana, Sundara 38.32",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 38.32",
+     "family": "vr",
+     "speaker": "Sita (message to Ram)",
+     "listener": "Ram",
+     "setting": "Sita's message to Ram, sent through Hanuman after months held captive in Lanka.",
+     "sanskrit": "स कुरुष्व महोत्साहां कृपां मयि नरर्षभ। त्वया नाथवती नाथ अनाथा इव दृश्यते॥",
+     "line": "I have someone who is mine, and still I feel like a person with no one at all.",
+     "translation": "Show me your great-hearted kindness, best of men. I have you, my protector, and yet I look like someone who has no one.",
+     "why": null,
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      },
+      {
+       "id": "homesick",
+       "label": "I'm homesick"
+      }
+     ],
+     "prasang": null,
+     "score": 3.4588,
+     "beat": "hook",
+     "role_fit": 0.63,
+     "meaning": "Sita, held in Lanka, sends this message to Ram through Hanuman. She says she has him, her protector, and yet she looks like someone with no one at all. She is not denying he exists or that she loves him. She is naming a real ache: being with someone in spirit and feeling utterly alone. The verse proposes that love can be real and present, and still leave a person feeling abandoned. It holds the truth of your waiting without calling it wrong.",
+     "for_you": "You have lived with this waiting for nine years. The verse shows that love can exist and still leave you feeling alone. Your heart knows the truth of this. The waiting is real, and it is not a failing."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.107,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma speaks to King Janaka, who has lost family and wealth. Ashma says to ask where you came from, where you are going, and who you are in the midst of this loss. He is not asking you to forget the grief. He is asking you to steady the mind with questions about what remains true. The idea is that loss is part of the path, but it does not define the whole of you.",
+     "for_you": "Your mind is keeping the bond alive by waiting. The verse suggests asking who you are beyond this waiting. The bond is real, but you are also the one who remains. Let the waiting rest in the larger truth of who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.vairagya.12",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 12",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'The Mockery of Giving Up Pleasures'.",
+     "sanskrit": "अवश्यं यातारश्चिरतरमुषित्वापि विषया वियोगे को भेदस्त्यजति न जनो यत्स्वयममून् । व्रजन्तः स्वातन्त्र्यादतुलपरितापाय मनसः स्वयं त्यक्ता ह्येते शमसुखमनन्तं विदधति ॥",
+     "line": "Every pleasure leaves someday. Released freely, it brings peace; torn away, it brings torment.",
+     "translation": "Pleasures will certainly leave, however long they stay with us. Then what difference is there in parting? Only that people do not let them go themselves. Leaving of their own accord, they bring the mind unequalled torment; given up by oneself, they bring endless peace.",
+     "why": "Let go before you are forced to, and stop calling relief happiness.",
+     "misuse": "About things and pleasures; not advice to leave people before they leave you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.vishaya",
+      "title": "Vairagyashatakam: The mockery of giving up pleasures",
+      "summary": "Pleasures will leave us anyway; letting them go freely brings peace, being dragged from them brings torment. We are worse than the moth, because we know the flame burns.",
+      "story_hook": "",
+      "lesson": "Let go before you are forced to, and stop calling relief happiness."
+     },
+     "score": 3.3115,
+     "beat": "steady",
+     "role_fit": 0.405,
+     "meaning": null,
+     "for_you": "The bond with your son was real, and it is not erased by his absence. You hold the truth of that love, and no distance can take that from you."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.12.26.29",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 26.29",
+     "family": "mbh",
+     "speaker": "Vyasa",
+     "listener": "Yudhishthira",
+     "setting": "The sage Vyasa consoles Yudhishthira, who wants to starve himself to death in grief.",
+     "sanskrit": "संयोगा विप्रयोगाश्च जातानां प्राणिनां ध्रुवम् / बुद्धुदा इव तोयेषु भवन्ति न भवन्ति च",
+     "line": "Meeting and parting come to everyone. Like bubbles on water, they rise and they vanish.",
+     "translation": "For every living being, meeting and parting are certain. Like bubbles on water, they appear and are gone.",
+     "why": "Guilt and grief are real, but they are not the end. The good you do next counts.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.yudhishthira_grief",
+      "title": "After the war: Yudhishthira's grief and his family's counsel",
+      "summary": "Victorious but shattered by the deaths of kin, Yudhishthira wants to give up the throne for the forest. Arjuna, Bhima, Draupadi, Nakula, the sage Devasthana and Vyasa each argue with him, about duty, guilt, grief and the shortness of life, until he agrees to rule.",
+      "story_hook": "He had won the war, and all Yudhishthira wanted was to walk into the forest and never come back.",
+      "lesson": "Guilt and grief are real, but they are not the end. The good you do next counts."
+     },
+     "score": 3.1404,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "After the great war, Yudhishthira is shattered. He wants to give up the throne and starve himself to death in grief over his family. The sage Vyasa finds him and says that meeting and parting are certain for every living being. Like bubbles on water, they appear and are gone. The pain of this loss is real, but it is not the end of the story. What matters now is the good you do next, the duty you take up after the storm.",
+     "for_you": "You have taught children and lived a full life. That work and the love in it are yours, and no distance can erase them. Hold onto what is real in you, and let that be your steady ground while the waiting hurts."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.55.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 55",
+     "family": "rcm",
+     "speaker": "Kausalya",
+     "listener": "Ram",
+     "setting": "Kausalya, choosing not to hold her son back, sends him into exile with her blessing.",
+     "sanskrit": "यह बिचारि नहिं करउँ हठ झूठ सनेहु बढ़ाइ। मानि मातु कर नात बलि सुरति बिसरि जनि जाइ ॥",
+     "line": "I won't hold you back with false affection. Go, son. Just don't forget your mother.",
+     "translation": "Thinking this over, I will not insist out of false affection. I bless you, son; only keep the bond of a mother, and don't forget me.",
+     "why": "Letting a child go with your blessing is love at its hardest.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "homesick",
+       "label": "I'm homesick"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.ram_kausalya",
+      "title": "Kausalya lets her son go",
+      "summary": "Ram comes to his mother as she is preparing for his coronation. Torn between duty and love, she decides not to hold him back with 'false affection', blesses him and asks only that he not forget her. As he leaves she wonders aloud whether she will live to see his face again.",
+      "story_hook": "She had the sweets ready for his coronation when he came to say goodbye.",
+      "lesson": "Letting a child go with your blessing is love at its hardest."
+     },
+     "score": 3.119,
+     "beat": "act",
+     "role_fit": 0.498,
+     "meaning": "Kausalya knows the truth. Ram must go. She chooses not to hold him with false affection, and she blesses his path. She asks only that he not forget the mother who waits. Her love does not vanish with distance. It changes shape, becoming a quiet blessing rather than a chain.",
+     "for_you": "Your waiting is a form of love too. Let it change shape today. When the loneliness rises, say the blessing you would give your son, and let the day take its own shape."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.338.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 338.15",
+     "family": "mbh",
+     "speaker": "Narada",
+     "listener": "Shuka",
+     "setting": "Narada to Shuka on troubles that affect many people at once.",
+     "sanskrit": "न जानपदिकं दुःखमेकः शोचितुमर्हति / अशोचन्प्रतिकुर्वीत यदि पश्येदुपक्रमम्",
+     "line": "Don't just grieve over a problem everyone faces. If you see a way to fix it, act.",
+     "translation": "No one should sit alone grieving over a trouble that has struck everyone. Instead of grieving, act to remedy it if you see a way.",
+     "why": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.narada_shuka",
+      "title": "Narada consoles Shuka",
+      "summary": "The sage Narada visits the young Shuka and teaches him how to meet sorrow: brooding doubles pain, the mind is healed by understanding as the body by medicine, act if you can fix it, and contentment is the real wealth.",
+      "story_hook": "",
+      "lesson": "Brooding doesn't heal pain, it grows it. Care for the mind as you would the body."
+     },
+     "score": 2.9947,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "Narada tells Shuka that sorrow is shared, but sitting alone with it only makes it heavier. If there is a way to mend what is broken, the mind needs action, not just brooding. Care for the spirit as you would the body, and find the remedy in doing what is right.",
+     "for_you": "Your son will not return, but your own spirit can be mended. Let the day have a shape. Do one small thing today that is just for you, and let the mind rest in that doing."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sumitra_consoles",
+     "title": "Sumitra sits with Kausalya",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sumitra",
+      "Kausalya"
+     ],
+     "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+     "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+     "lesson": "When a child leaves, a friend who shares the ache helps more than advice.",
+     "matched": [
+      {
+       "id": "homesick",
+       "label": "I'm homesick"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.44.17",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 44.17",
+      "family": "vr",
+      "speaker": "Sumitra",
+      "listener": "Kausalya",
+      "setting": "Ram has left for fourteen years; his mother cannot stop weeping, and her co-queen sits with her.",
+      "sanskrit": "निवृत्तवनवासं तं द्रष्टासि पुनरागतम्। जहि शोकं च मोहं च देवि सत्यं ब्रवीमि ते॥",
+      "line": "You will see him again. Let go of this grief.",
+      "translation": "You will see him again, back from the forest. Let go of grief and confusion, my queen. I tell you the truth.",
+      "why": "When a child leaves, a friend who shares the ache helps more than advice.",
+      "misuse": "Comfort for a long separation, not a promise that every loss will be undone.",
+      "tone": "comforting",
+      "matched": [
+       {
+        "id": "homesick",
+        "label": "I'm homesick"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sumitra_consoles",
+       "title": "Sumitra sits with Kausalya",
+       "summary": "Kausalya weeps for her son gone to the forest. Her co-queen Sumitra, whose own son has gone too, comforts her: he went for a good reason, he is not alone, and you will see him again.",
+       "story_hook": "Two mothers, two sons gone to the same forest, and one of them found the strength to comfort the other.",
+       "lesson": "When a child leaves, a friend who shares the ache helps more than advice."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "teaser": "Both their sons were gone, and Sumitra found the strength to comfort Kausalya",
+     "for_you": "Sumitra, whose son also left, did not offer empty words. She sat with Kausalya and shared the ache, then gently reminded her that love can find a way to meet again. You do not have to carry this waiting alone."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Love with nowhere to go",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 719,
+   "llm": 4229,
+   "total": 15438,
+   "select": 10483
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You have been waiting for nine years. The house is quiet now, and the days stretch out. You taught children, and they left. Now you sit with the phone in your hand, waiting for a voice that will not come. This waiting has become the room you live in."
+  ],
+  [
+   "scene",
+   "Sita's message to Ram, sent through Hanuman after months held captive in Lanka. Sita (message to Ram) said to Ram:"
+  ],
+  [
+   "sanskrit",
+   "स कुरुष्व महोत्साहां कृपां मयि नरर्षभ, त्वया नाथवती नाथ अनाथा इव दृश्यते."
+  ],
+  [
+   "line",
+   "In plain words: I have someone who is mine, and still I feel like a person with no one at all."
+  ],
+  [
+   "unpack",
+   "She says she has him, her protector, and yet she looks like someone with no one. She is not saying Ram does not exist or that she doubts him. She is naming a real ache. You can love someone deeply and still feel abandoned. Love can be real and present, and still leave you feeling utterly alone. This is not a failing of your heart. This is simply what long waiting does. It hollows out the present even when the past is full of love."
+  ],
+  [
+   "for_you",
+   "Your son is gone, and his wife is gone. You know this for certain. But the love you carry for him has nowhere to go, and so it turns back on you, filling the empty room. You do not have to stop waiting to stop hurting. You only have to give this love a place to rest, right here in your own life."
+  ],
+  [
+   "close",
+   "What if you let the love stay, and let the waiting go?"
+  ]
+ ],
+ "depth": {
+  "life": "You have spent nine years holding on to the hope of your son's return. Your hands are busy, but your heart is still at the door, waiting. The waiting has become its own quiet life, one you did not choose.",
+  "points": "The verse says that having someone in your life does not always mean you feel protected. It points to a deeper truth. The feeling of being alone comes not from the absence, but from a love that has no place to land. It is love turned inward, waiting for a response that will not come.",
+  "practice": "Set a small object on a table. When you feel the waiting begin, place your hand on it and name one thing in the room that is here right now.",
+  "question": "What would it feel like to let the love rest in the room with you?"
+ }
+}

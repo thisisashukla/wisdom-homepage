@@ -1,0 +1,539 @@
+{
+ "persona": {
+  "id": "us_millennial_h1b_burnout",
+  "market": "USA (Seattle)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "33, software engineer at a big tech company in Seattle, on H-1B, green card queue, wife on H4 can't work. Performance review season.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "cant_switch_off"
+  },
+  "note": "if I get a bad rating I lose the visa and we have 60 days to leave. my wife gave up her career to be here. I check slack at 2am. I don't remember the last weekend I wasn't thinking about work",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "terrified and wired",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "The visa is real, but the 2am replaying is not the only thing you can do. This week the mind learns to rest even while the result is still unknown.",
+   "week_beats": {
+    "hook": "You recognise the terror and the replaying, named without judgement.",
+    "steady": "You hold that what is real in you and in your marriage cannot be lost, and that the result is not yours to hold.",
+    "act": "You try one night of letting go of the result, doing what is yours to do, and letting the mind rest.",
+    "story": "A man who built a life in a new country shows you that the mind can rest even when the visa is still unknown."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "partner"
+   ],
+   "confidence": 0.55,
+   "core_struggle": "Living under a visa deadline and unable to stop thinking about work, even at night.",
+   "mirror": "You check the messages at 2am because the visa is real, and so is the weekend that never comes.",
+   "insight": "The visa is real. The weekend you can't remember is also real. What is not real is the belief that the mind can control the outcome by staying awake.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "outcome_anxiety",
+     "label": "I'm anxious about how things will turn out",
+     "weight": 1.717,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 1.48,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 1.14,
+     "source": "note"
+    },
+    {
+     "id": "burnout",
+     "label": "I'm burned out and running on empty",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "sleep_mind",
+     "label": "I can't sleep, my mind is racing",
+     "weight": 0.67,
+     "source": "chip"
+    },
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 0.45,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The terror of a visa deadline and the mind that will not let the body rest, replaying every message at 2am.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "You cannot be lost, and neither can the life you have built with your wife; the result is not yours to hold, only the effort.",
+    "act": "Practise letting go of the result each night; do what is yours to do, then let the mind rest, and trust that what is real in you cannot be taken.",
+    "story": "A man who built a life in a new country, faced the fear of losing it, and learned to rest his mind even while the visa hung over him."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The visa is real",
+    "The mind's enemy",
+    "What you hold and what you don't"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "a bad rating could trigger a -day visa deadline",
+    "checks work messages at 2am",
+    "has not had a weekend free from work thoughts"
+   ],
+   "age": "25_34",
+   "stages": [
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "life:invented_person",
+    "life_context:missing",
+    "week_fit:34=0.6,5=0.3,47=0.8,9=0.6,12=0.8,62=0.9",
+    "week_fit:swapped=1",
+    "dropped:repeat=5,soft_kept=5",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:dropped:scene=says_the_verse",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 3.8334,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna stands before Krishna and admits that the mind is restless, stormy, powerful, and stubborn. He says it feels as hard to hold as the wind. Krishna agrees. He tells Arjuna that practice and letting go will train it. The mind is not meant to be caged, but to be steadied through repeated, gentle effort.",
+     "for_you": "You are at two in the morning, replaying the same messages. The visa is real, and the fear is real. But the mind at this hour is not solving the problem. It is only exhausting you. Let the replaying rest."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.11.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 11.6",
+     "family": "yv",
+     "speaker": "Janaka",
+     "listener": "his own mind",
+     "setting": "Janaka, having chosen to keep ruling, talks gently to his own restless mind at night.",
+     "sanskrit": "यथा यथा विकल्पौघान्संकल्पयसि हेलया । तथा तथैति स्फारत्वं संसारस्तव चिन्तया ॥",
+     "line": "The more scenarios you spin, the bigger your world of worry grows.",
+     "translation": "The more you casually spin up fancies and possibilities, the more your world of troubles swells, through your own worrying.",
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 3.4751,
+     "beat": "diagnose",
+     "role_fit": 0.526,
+     "meaning": "King Janaka stands on his palace roof at night, having just heard sages sing that his whole life was a dream. His mind is spinning with questions about duty and truth. He does not leave his kingdom to find the answer. He goes down and rules again, but with a mind that no longer clutches. He tells his own mind that the more it spins up fancies and possibilities, the more its world of troubles swells through its own worrying.",
+     "for_you": "The visa and the work messages are real, but the 2am replay is a story your mind is telling itself. Let the mind spin for a moment, then set it down. The work will be there in the morning."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.7.9",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 7.9",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram.",
+     "sanskrit": "व्यसने वार्थकृच्छ्रे वा भये वा जीवितान्तगे। विमृशंश्च स्वया बुद्ध्या धृतिमान् नावसीदति॥",
+     "line": "In loss, money trouble or fear, the steady person thinks it through and does not go under.",
+     "translation": "In disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink.",
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 3.4785,
+     "beat": "steady",
+     "role_fit": 0.85,
+     "meaning": "Ram is weeping over Sita. Sugriva, who has lost his wife and kingdom, steps in. He tells Ram that even when everything is falling apart, even when life is on the line, the person who stays steady and thinks clearly will not drown. The verse says that two people in trouble can carry each other, and a friend is the greatest refuge.",
+     "for_you": "You are carrying a real visa deadline. You are also carrying a mind that checks messages at 2am. This verse says you do not have to sink. You can think it through while you rest."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.47",
+     "ref": "Bhagavad Gita 2.47",
+     "ref_iast": "Bhagavad Gītā 2.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+     "line": "Your work is yours to do; the results are not yours to hold. Don't let that make you stop.",
+     "translation": "Your right is to the work alone, never to its fruits. Do not let the fruit be your motive, and do not cling to doing nothing.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "This is not 'don't care about results' or 'don't plan'. Care, plan and aim well; just don't let the outcome own you.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "burnout",
+       "label": "I'm burned out and running on empty"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.4926,
+     "beat": "steady",
+     "role_fit": 0.425,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, right before the war begins. The moment is heavy with duty and doubt, and Arjuna is frozen by what the fight might cost. Krishna tells him to claim his work alone, and to step back from owning what comes after. The verse asks for full effort without the weight of the outcome. It does not ask Arjuna to stop fighting, but to keep his mind steady while the future is still unknown.",
+     "for_you": "The work you are doing for the visa is real. The result is not. You can hold the effort without holding the fear. Let the checking stop, even for a little while, and let the work stand on its own."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.12.12",
+     "ref": "Bhagavad Gita 12.12",
+     "ref_iast": "Bhagavad Gītā 12.12",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Arjuna asks which devotee is best; Krishna offers a ladder of practices.",
+     "sanskrit": "श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते । ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम् ॥",
+     "line": "Practice is good, understanding better, meditation better still. But letting go of results brings peace at once.",
+     "translation": "Knowledge is better than mere practice; meditation is better than knowledge; giving up the fruit of action is better than meditation. From that renunciation, peace follows immediately.",
+     "why": "If the ideal is too hard, take the next step down, and keep going.",
+     "misuse": "Not 'stop caring how things turn out'. Peace comes from releasing the grip, not from indifference.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p12.1",
+      "title": "Form or formless: which devotee is best, and the ways to reach him",
+      "summary": "Krishna says devotion to a personal form is easier, then offers a ladder: fix your mind; if not, practise; if not, work for me; if not, let go of results. Letting go brings peace at once.",
+      "story_hook": "",
+      "lesson": "If the ideal is too hard, take the next step down, and keep going."
+     },
+     "score": 3.526,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna is telling Arjuna that there is a way down the ladder if the top steps feel too steep. If fixing the mind on the divine form is beyond reach, then simply practise. If even that feels heavy, then work for me. And if even that is too much, then take the next step down and let go of the fruit of your actions. That single act of release brings peace immediately, without waiting for the result.",
+     "for_you": "You have tried to hold the visa outcome with your thoughts, and it has cost you your sleep. Today, you let the rating go for one night. You do what is yours to do, and you let the mind rest, knowing peace follows the release."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bh.vairagya.62",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 62",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "His own mind",
+     "setting": "From 'Advice to the Mind'.",
+     "sanskrit": "परिभ्रमसि किं मुधा क्वचन चित्त विश्राम्यतां स्वयं भवति यद्यथा भवति तत्तथा नान्यथा । अतीतमननुस्मरन्नपि च भाव्यसंकल्पयन् नतर्कितसमागमाननुभवामि भोगानहम् ॥",
+     "line": "Why wander, mind? Rest. Not replaying the past, not scripting the future, I take what comes.",
+     "translation": "Why do you wander about in vain, mind? Rest somewhere. Whatever is to happen happens just as it will, and not otherwise. Not recalling the past, not planning the future, I enjoy the pleasures that come to me unlooked-for.",
+     "why": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside.",
+     "misuse": "Not an argument against planning; it is for the worry loop once you have done your part.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.vairagya.manas",
+      "title": "Vairagyashatakam: Advice to the mind",
+      "summary": "The poet talks to his own mind: why exhaust yourself pleasing others, why replay the past and script the future, why roam everywhere but within. 'So what?' asks what all our gains amount to.",
+      "story_hook": "",
+      "lesson": "Stop seeking approval and rehearsing outcomes; the calm you want is already inside."
+     },
+     "score": 3.3541,
+     "beat": "act",
+     "role_fit": 0.609,
+     "meaning": "Bhartrihari speaks to his own mind. He asks why it wanders in vain. He tells it to rest. He says whatever must happen will happen exactly as it will, and not otherwise. He chooses not to recall the past or script the future. He takes what comes to him unlooked-for. The verse proposes that you stop rehearsing outcomes. The calm you want is already inside you, waiting for you to let go.",
+     "for_you": "You have done your part for the visa. Tonight, try not to check the messages. Let the mind rest in the room with you instead of in the future."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.sarama",
+     "title": "Sarama, a friend in the enemy's house",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Sarama",
+      "Sita"
+     ],
+     "story_hook": "Among all the guards, one of them wiped Sita's tears and told her the truth.",
+     "summary": "Ravana tries to break Sita with a fake head of Ram. Sarama, a kind rakshasi guard, comforts her, tells her the truth, and offers to find out what is being planned. Sita asks only to be told whatever is decided.",
+     "lesson": "One kind person can make an unbearable place bearable; knowing is easier than wondering.",
+     "matched": [
+      {
+       "id": "outcome_anxiety",
+       "label": "I'm anxious about how things will turn out"
+      }
+     ],
+     "anchor": {
+      "id": "vr.6.34.11",
+      "ref": "Valmiki Ramayana · Yuddha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 34.11",
+      "family": "vr",
+      "speaker": "Sita",
+      "listener": "Sarama",
+      "setting": "A kind guard, Sarama, offers to spy for Sita; Sita asks only to know what is decided about her.",
+      "sanskrit": "यदि नाम कथा तस्य निश्चितं वापि यद्भवेत्। निवेदयेथाः सर्वं तद्वरो मे स्यादनुग्रहः॥",
+      "line": "Whatever has been decided, just tell me. Not knowing is the hardest part.",
+      "translation": "If there is any talk about him, or anything decided at all, tell me everything. That would be the greatest kindness to me.",
+      "why": "One kind person can make an unbearable place bearable; knowing is easier than wondering.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "outcome_anxiety",
+        "label": "I'm anxious about how things will turn out"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.sarama",
+       "title": "Sarama, a friend in the enemy's house",
+       "summary": "Ravana tries to break Sita with a fake head of Ram. Sarama, a kind rakshasi guard, comforts her, tells her the truth, and offers to find out what is being planned. Sita asks only to be told whatever is decided.",
+       "story_hook": "Among all the guards, one of them wiped Sita's tears and told her the truth.",
+       "lesson": "One kind person can make an unbearable place bearable; knowing is easier than wondering."
+      },
+      "score": 2.8717
+     },
+     "score": 2.8717,
+     "why": null,
+     "hook_title": "Among all of Sita's guards, one wiped her tears and told her the truth",
+     "teaser": "Among all of Sita's guards, one wiped her tears and told her the truth",
+     "for_you": "You have a real visa deadline, but you are also in an grove of your own making, replaying the night at two in the morning. You are asking the mind to find the truth, but you are also asking it to script the future."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The visa is real",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 138,
+   "llm": 4448,
+   "total": 18635,
+   "select": 14041
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are terrified and wired, staring at the screen at two in the morning. The visa deadline is real, and the fear is real. But the messages you are replaying right now are not solving anything. They are only wearing you down."
+  ],
+  [
+   "scene",
+   "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers. Arjuna said to Krishna:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "Krishna does not deny that the mind is hard to hold. He simply names it and points to a different way. The mind is not meant to be caged, but to be steadied through repeated, gentle effort. This is easier said than done, because you cannot force the thoughts to stop. But you can train the mind to rest, even when the outcome is still unknown."
+  ],
+  [
+   "for_you",
+   "Right now, the mind is trying to control the visa by staying awake. That is not working. Let the replaying rest. You do not need to solve it at two in the morning. Just let the thoughts pass like the wind."
+  ],
+  [
+   "close",
+   "Can you let the wind blow for just a little while?"
+  ]
+ ],
+ "depth": {
+  "life": "You are wired and terrified at two in the morning. You are checking the messages again. The visa deadline is real and the fear is real, but the replaying is not moving the work forward. It is only wearing you down.",
+  "points": "The mind is not a machine you can command. It is restless and stormy, and it will not stay still by force. The belief that staying awake and replaying will control the outcome is the trap. The mind must be trained, not fought.",
+  "practice": "Place your phone face down and turn away from the screen for one minute. Do not think about the messages.",
+  "question": "What would it feel like if you let the mind rest for just one minute?"
+ }
+}

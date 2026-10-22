@@ -1,0 +1,524 @@
+{
+ "persona": {
+  "id": "in_genx_father_layoff",
+  "market": "India (Pune)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "49, IT services manager in Pune, 22 years in the same company, laid off last month. Daughter in 11th, home loan, aging mother.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "shocked and carrying it alone",
+   "bridge": "The ten-minute call that took your job is what the Gita calls an action you cannot control: the result is theirs, the effort was yours, and your worth was never in their hands.",
+   "week_thesis": "Seven days from the ten-minute call to standing in the truth of who you are, not what they did, with the words to say it to yourself.",
+   "week_beats": {
+    "hook": "You recognise the shock and the silence, named without judgement, and the mornings that still belong to the company.",
+    "diagnose": "You see that the harm is not the call but the verdict you are carrying for it, which you have not yet named.",
+    "story": "A man of long service dismissed without ceremony shows you how to stand in your own truth when the world has already moved on."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "work",
+    "parent",
+    "family",
+    "child"
+   ],
+   "confidence": 0.9,
+   "core_struggle": "A man with twenty-two years at one company was let go in a ten-minute call, and he is carrying the news alone from his mother.",
+   "mirror": "You have not told your mother, and every morning the alarm goes off before you remember what happened.",
+   "insight": "The alarm at six is not about the job anymore. It is about the gap between who you were and who you are now, and you are carrying it alone.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 0.9,
+     "source": "note"
+    },
+    {
+     "id": "uncertainty",
+     "label": "I can't handle not knowing what comes next",
+     "weight": 0.83,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "Being let go in a call that lasted ten minutes, and the quiet shock of waking every morning as if the job still exists.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture starts to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they did; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing to yourself, gently and firmly; hold your ground on what is yours; do your own duty without shrinking to fit their picture; find the courage the moment asks for.",
+    "story": "A man of long service dismissed without ceremony, who faced his own people and found his footing again through his own truth."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Carrying the call",
+    "The verdict you carry",
+    "More than what they did"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "twenty two years in one company",
+    "let go in a ten minute call",
+    "still wakes at six as if going to the office"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:wronged_without_relation",
+    "week_fit:14=0.6,42=0.3,84=0.6,66=0.7,1=0.4,7=0.3",
+    "week_fit:swapped=2",
+    "retried:1",
+    "redo:2",
+    "redo_fixed:0",
+    "dropped:cliche=1,repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.14",
+     "ref": "Bhagavad Gita 2.14",
+     "ref_iast": "Bhagavad Gītā 2.14",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥",
+     "line": "Heat and cold, pleasure and pain come and go. They don't last; learn to bear them.",
+     "translation": "Contact of the senses with their objects brings cold and heat, pleasure and pain. They come and go and do not last. Bear them patiently, Arjuna.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Bearing passing discomfort is not putting up with harm or abuse; those are not weather to wait out.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 2.3546,
+     "beat": "hook",
+     "role_fit": 0.26,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, seeing the man paralyzed by grief and confusion. He tells him that the feelings touching the body are like weather, coming and going without staying. What is truly you does not enter this weather at all. The call that took your job is a contact of the senses with its object, a cold that arrives and must pass. Your worth is not the temperature of this room.",
+     "for_you": "You still wake at six as if the alarm belongs to the company. That is the body remembering a door that is now closed. Feel the shock of the ten-minute call without judging the silence you keep. The mornings are not yours anymore."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.14.92.69",
+     "ref": "Mahabharata · Ashvamedhika Parva · Ashvamedhika",
+     "ref_iast": "Mahābhārata, Āśvamedhika Parva 92.69",
+     "family": "mbh",
+     "speaker": "Dharma (told by the mongoose)",
+     "listener": "The gleaner brahmin",
+     "setting": "A mongoose, half its body turned to gold, scoffs at Yudhishthira's grand sacrifice and tells of a poor family's gift.",
+     "sanskrit": "क्षुधा निर्णुदति प्रज्ञां धर्मबुद्धिं व्यपोहति / क्षुधापरिगतज्ञानो धृतिं त्यजति चैव ह",
+     "line": "Real need wears down judgement. Be gentle with yourself and others when money is tight.",
+     "translation": "Hunger drives out wisdom and pushes aside the sense of right; one overcome by hunger loses even his steadiness.",
+     "why": "A small gift, honestly earned and given from little, outweighs the grandest show.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.mongoose",
+      "title": "The golden mongoose and the handful of flour",
+      "summary": "At the end of Yudhishthira's lavish horse sacrifice, a half-golden mongoose declares it worth less than a poor family's gift. In a famine, a gleaner, his wife, son and daughter-in-law each gave their last handful of flour to a hungry guest; rolling in the spilt flour turned half the mongoose to gold.",
+      "story_hook": "Half of the mongoose was gold, and it had come to see if the emperor's sacrifice could gild the other half.",
+      "lesson": "A small gift, honestly earned and given from little, outweighs the grandest show."
+     },
+     "score": 2.5417,
+     "beat": "diagnose",
+     "role_fit": 0.496,
+     "meaning": "In the Ashvamedhika Parva, a mongoose with half its body turned to gold appears before Yudhishthira. It tells of a poor brahmin family who, during a famine, each gave their last handful of flour to a hungry guest. The mongoose says that hunger drives out wisdom and pushes aside the sense of right, and that one overcome by hunger loses even his steadiness. The point is that real need wears down judgement. Be gentle with yourself and others when money is tight.",
+     "for_you": "The verdict you are carrying for yourself is born from fear of what comes next. Hunger for security makes the mind lose its steadiness. Be gentle with the part of you that is still waking at six and checking for a job that no longer exists."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.84",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 84",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on steadfastness.",
+     "sanskrit": "निन्दन्तु नीतिनिपुणा यदि वा स्तुवन्तु लक्ष्मीः समाविशतु गच्छतु वा यथेष्टम् । अद्यैव वा मरणमस्तु युगान्तरे वा न्याय्यात्पथः प्रविचलन्ति पदं न धीराः ॥",
+     "line": "Let them praise or blame, let money come or go: the steady don't step off the right path.",
+     "translation": "Let the worldly-wise blame or praise; let fortune come or go as she pleases; let death come today or ages hence: the steadfast do not move a step from the path of what is right.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 2.9908,
+     "beat": "steady",
+     "role_fit": 0.895,
+     "meaning": "Bhartrihari speaks to the reader about what happens when the world turns its back on you. He tells them to let others praise or blame, to let fortune come or go, and even to accept death today or ages from now. The steadfast person does not move a step from the path of what is right. This is not about ignoring the pain of losing a job in ten minutes. It is about knowing that the worth of the twenty-two years you gave stays with you.",
+     "for_you": "The alarm at six is a habit that outlasted the job. Let it ring as a sign that you are still the person who built a life, not the result of a ten-minute call. Hold to the path you walked for twenty-two years."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.66",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 66",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on the good.",
+     "sanskrit": "सम्पत्सु महतां चित्तं भवत्युत्पलकोमलम् । आपत्सु च महाशैलशिलासङ्घातकर्कशम् ॥",
+     "line": "In good times be soft as a lotus. In hard times be firm as mountain rock.",
+     "translation": "In prosperity the heart of the great becomes soft as a lotus; in adversity, hard as a mass of mountain rock.",
+     "why": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.sujana",
+      "title": "Nitishatakam: On the good",
+      "summary": "Portraits of good people: steady in trouble, humble in success, giving in secret and speaking of others' kindness aloud. Company, the verses say, makes us what we are.",
+      "story_hook": "",
+      "lesson": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet."
+     },
+     "score": 2.9599,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Bhartrihari speaks to the reader from a quiet place of reflection. They have seen enough of life to know that fortunes turn and fortunes fade. The verse says that in good times, the heart of a great person becomes soft as a lotus, open and yielding. In hard times, that same heart becomes hard as a mass of mountain rock, unmoving and steady. The point is to let your good deeds stay quiet while you hold to the right path, no matter what the world does or says.",
+     "for_you": "The ten-minute call was hard times. The alarm at six is the mountain rock of your own steady heart, not the job. Let the lotus and the rock live in you now: soft enough to feel the shock, firm enough to know your worth is not in their hands."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "uncertainty",
+       "label": "I can't handle not knowing what comes next"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.4498,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "You have prepared for the office since six in the morning. Today, let that same preparation serve you at home. Make the breakfast your family eats. Let that be the one thing this moment asks of you."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.6.5",
+     "ref": "Bhagavad Gita 6.5",
+     "ref_iast": "Bhagavad Gītā 6.5",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on being your own friend and staying steady in honour and insult.",
+     "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥",
+     "line": "Be on your own side. Lift yourself up, don't push yourself down. You can be your own friend.",
+     "translation": "Raise yourself by your own self; do not let yourself sink. For the self alone is the friend of the self, and the self alone is the enemy of the self.",
+     "why": "You can be your own best friend or worst enemy; choose friend.",
+     "misuse": "Not 'you're alone, so don't ask for help'. Arjuna himself asks for help; this is about not abandoning yourself.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.2",
+      "title": "Lift yourself by yourself; marks of the realised",
+      "summary": "Raise yourself by yourself; you are your own friend or enemy. The self-mastered person stays calm in heat and cold, praise and blame, and sees friend and foe alike.",
+      "story_hook": "",
+      "lesson": "You can be your own best friend or worst enemy; choose friend."
+     },
+     "score": 3.0457,
+     "beat": "act",
+     "role_fit": 0.541,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, telling them that they are the sole architect of their own state. They have the power to raise themselves or to let themselves fall. The only true companion in this struggle is the self, which can act as either a loyal friend or a harsh enemy.",
+     "for_you": "The silence you keep is not respect. Speak one true sentence to yourself today about the twenty-two years that shaped you, and let it be your own steady word."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.ram_accepts_exile",
+     "title": "Ram accepts exile",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharatha",
+      "Lakshman"
+     ],
+     "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+     "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+     "lesson": "You cannot control the news; you can control the person who walks out of the room.",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "hard_conversation",
+       "label": "I have to give someone bad news"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.19.32",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 19.32",
+      "family": "vr",
+      "speaker": "Narrator",
+      "listener": "",
+      "setting": "Ram walks out of the palace, having lost the throne he was to receive that morning.",
+      "sanskrit": "न वनं गन्तुकामस्य त्यजतश्च वसुंधराम्। सर्वलोकातिगस्येव लक्ष्यते चित्तविक्रिया॥",
+      "line": "He had just lost the kingdom, and his mind showed no change at all.",
+      "translation": "As he set out for the forest and gave up the earth, no change could be seen in his mind, as if he stood beyond the world.",
+      "why": "You cannot control the news; you can control the person who walks out of the room.",
+      "misuse": "Calm in loss is not pretending it does not hurt; Ram grieves elsewhere in the story.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.ram_accepts_exile",
+       "title": "Ram accepts exile",
+       "summary": "On the morning of his coronation, Ram is summoned and told by Kaikeyi that he must go into the forest for fourteen years. He agrees without anger, and is hurt only that his father could not tell him himself. He walks out showing no change of mind, already thinking of those he must comfort.",
+       "story_hook": "He went to the palace to be crowned and came out with fourteen years in the forest.",
+       "lesson": "You cannot control the news; you can control the person who walks out of the room."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram went to be crowned and came out exiled for fourteen years",
+     "teaser": "Ram went to be crowned and came out exiled for fourteen years",
+     "for_you": "You cannot control the ten-minute call, but you can choose who walks out of the room. Let your own mind remain steady, even if the world has already moved on."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Carrying the call",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 223,
+   "llm": 4614,
+   "total": 12972,
+   "select": 8126
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying something that feels impossible to carry alone. Twenty two years in one company, and a ten minute call took it away. You wake at six and the body still expects the office, but the office is not there. The shock is real, and the silence you keep around it is heavy."
+  ],
+  [
+   "scene",
+   "Krishna speaks to Arjuna on a battlefield, seeing a man paralyzed by grief and confusion. Arjuna has just seen his family arrayed against him, and he is frozen. Krishna tells him that the feelings touching the body are like weather, coming and going without staying. And what is truly you does not enter this weather at all: And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः, आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत."
+  ],
+  [
+   "line",
+   "In plain words: Heat and cold, pleasure and pain come and go. They don't last; learn to bear them."
+  ],
+  [
+   "unpack",
+   "The self is eternal, while the body changes like clothes. Contact with the world brings cold and heat, pleasure and pain. They come and go. This is easier said than done, because the mind wants to hold on to the cold, to live inside the shock of the ten minute call. But your worth is not the temperature of this room. It is what remains when every loss and every passing pain have gone."
+  ],
+  [
+   "for_you",
+   "The alarm at six is not about the job anymore. It is about the gap between who you were and who you are now. Feel the shock of the ten minute call without judging the silence you keep. The mornings are not yours anymore. Let the cold come and go. Your worth is not in their hands."
+  ],
+  [
+   "close",
+   "What is truly you does not enter this weather at all."
+  ]
+ ],
+ "depth": {
+  "life": "The body still thinks it is Monday. You wake at six and reach for the alarm, then freeze. The ten-minute call is over. The silence you keep is not strength. It is a room with no one else in it.",
+  "points": "What you feel is not the whole of you. These sensations are contact between your senses and the world. They pass like weather. Your core self remains untouched by the loss.",
+  "practice": "Place your hand on your chest and breathe slowly for two minutes. Acknowledge the cold of the morning air without trying to change it.",
+  "question": "What would it feel like if this pain were simply weather passing through?"
+ }
+}

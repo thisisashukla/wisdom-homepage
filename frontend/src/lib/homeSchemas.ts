@@ -6,10 +6,10 @@ const schemas = [
     '@graph': [
       {
         '@type': 'WebSite',
-        name: 'Wisdom — Bhagavad Gita Online',
+        name: 'Wisdom: Bhagavad Gita, 700 Verses in Sanskrit with Meaning',
         url: 'https://wisdomquotes.in',
         description:
-          'Read the complete Bhagavad Gita online — all 18 chapters, 700 verses in Sanskrit, Hindi and English. Free. No login. One verse per page with simple meaning and detailed commentary.',
+          'All 700 verses of the Bhagavad Gita in Sanskrit with meaning: 18 chapters in Sanskrit, Hindi and English, free, with no login. One verse per page with simple meaning and detailed commentary, and a new verse every day.',
         publisher: {
           '@type': 'Organization',
           name: 'Wisdom',
@@ -33,7 +33,7 @@ const schemas = [
         isAccessibleForFree: true,
         url: 'https://wisdomquotes.in/gita',
         description:
-          'The Bhagavad Gita — 18 chapters, 700 verses spoken by Krishna to Arjuna on the battlefield of Kurukshetra. Available here in Sanskrit Devanagari, Hindi anuvad, and English translation with detailed commentary. Free to read online.',
+          'The Bhagavad Gita: 18 chapters, 700 verses spoken by Krishna to Arjuna on the battlefield of Kurukshetra. Available here in Sanskrit Devanagari, Hindi anuvad, and English translation with detailed commentary. Free to read online.',
       },
       {
         '@type': 'Organization',
@@ -41,9 +41,10 @@ const schemas = [
         url: 'https://wisdomquotes.in',
         logo: 'https://wisdomquotes.in/assets/new-light-logo.webp',
         description:
-          'Wisdom is a free online Bhagavad Gita reader — every verse in Sanskrit, Hindi and English with simple meaning and detailed commentary. An accompanying iOS app offers a daily practice.',
+          'Wisdom tunes the Bhagavad Gita to your life. The website has every verse in Sanskrit, Hindi and English with meaning and commentary, and picks a verse for how you feel today. The iPhone app builds a 7-day audio plan around your situation.',
         sameAs: [
-          'https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125',
+          'https://apps.apple.com/app/id6747684125',
+          'https://www.instagram.com/wisdomquoteapp/',
           'https://wisdomquotes.in',
         ],
       },
@@ -52,43 +53,38 @@ const schemas = [
         mainEntity: [
           {
             '@type': 'Question',
-            name: 'Where can I read the complete Bhagavad Gita online for free?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'You can read every verse of the Bhagavad Gita free at wisdomquotes.in/gita. All 18 chapters and 700 verses are available in Sanskrit Devanagari, Hindi and English. No login. No paywall. One verse per page with a simple meaning and detailed commentary.',
-            },
+            name: "Can I read all 700 verses of the Bhagavad Gita free?",
+            acceptedAnswer: { '@type': 'Answer', text: "Yes. All 18 chapters and 700 verses are free on wisdomquotes.in, each with the Sanskrit shloka, Hindi anuvad, an English translation and commentary. No login and no ads. To read the whole text, begin at 1.1: Arjuna's despair in chapter 1 is where Krishna's teaching starts." },
           },
           {
             '@type': 'Question',
-            name: 'Does the Wisdom Gita reader include Sanskrit and Hindi?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Yes. Every verse includes the original Sanskrit in Devanagari, a Hindi anuvad, and an English translation. Hindi readers can start at wisdomquotes.in/hi/gita for the Hindi-first layout.',
-            },
+            name: "Which Bhagavad Gita translation should I read? Is this ISKCON?",
+            acceptedAnswer: { '@type': 'Answer', text: "No, it isn't ISKCON. Read one that shows you the Sanskrit and doesn't tie you to a single sect. Wisdom's English is its own, checked against Shankara, Ramanuja and modern acharyas. For a side-by-side look at Gita Press, Prabhupada, Easwaran and others, see wisdomquotes.in/blogs/best-bhagavad-gita-translation." },
           },
           {
             '@type': 'Question',
-            name: 'Is a login or download required to read the Gita on Wisdom?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'No. The Bhagavad Gita reader is a free website. No sign-up, no download, no paywall. If you want a daily practice on your phone, there is an optional iOS app at wisdomquotes.in/app.',
-            },
+            name: "Is there a Bhagavad Gita verse for today?",
+            acceptedAnswer: { '@type': 'Answer', text: "Yes. A new verse goes up every morning on wisdomquotes.in, with the Sanskrit, its meaning and audio. On iPhone, the Wisdom app can put it on your Lock Screen." },
           },
           {
             '@type': 'Question',
-            name: 'How is the Wisdom Gita translation done?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Sanskrit and Hindi text are drawn from traditional sources. English translations are Wisdom editorial. Detailed commentary is AI-drafted from traditional commentaries (Shankara, Ramanuja, modern acharyas) and human-reviewed. Every verse links to a methodology page.',
-            },
+            name: "How does the Wisdom 7-day plan work?",
+            acceptedAnswer: { '@type': 'Answer', text: "Answer a few questions about you and what's going on. Wisdom picks seven verses for it, one a day, starting with the Gita and drawing on the Upanishads, Ramayana and Mahabharata. Each comes with the Sanskrit and what it means for you. Day 1 is free. On iPhone the rest of week 1 is free in the app; on Android and computers it is ₹89 a week, after you sign in with Google." },
           },
           {
             '@type': 'Question',
-            name: 'Which verse of the Bhagavad Gita should I read first?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Most readers start with BG 2.47 — Karmanye vadhikaraste — the most quoted verse in the Gita on doing your duty without attachment to results. Chapter 2 (Sankhya Yoga) is where Krishna begins the teaching in earnest. Chapter 1 is the setup.',
-            },
+            name: "Is the Bhagavad Gita available in Hindi?",
+            acceptedAnswer: { '@type': 'Answer', text: "Yes. Every verse has a Hindi-first page at wisdomquotes.in/hi/gita with the shloka, Hindi anuvad and vistrit arth." },
+          },
+          {
+            '@type': 'Question',
+            name: "What does Wisdom cost?",
+            acceptedAnswer: { '@type': 'Answer', text: "Reading is free. On iPhone, week 1 of a plan is free and Pro opens weeks 2 and 3. On the web, a plan is ₹89 a week. Your bank sends a notice before each charge and you can cancel from your plan." },
+          },
+          {
+            '@type': 'Question',
+            name: "Is this a substitute for therapy?",
+            acceptedAnswer: { '@type': 'Answer', text: "No. Many people read the Gita alongside therapy. If you're thinking about harming yourself, please call Tele-MANAS on 14416 (India, free, 24×7) or your local emergency number." },
           },
         ],
       },

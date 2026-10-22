@@ -1,0 +1,430 @@
+'use client'
+
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { getRedirectResult } from 'firebase/auth'
+import { auth } from '@/lib/firebase'
+import { useAuth } from '@/context/AuthContext'
+import { trackEvent } from '@/lib/mixpanel'
+import { api, ApiError, identify, signInWithGoogle, startWeeklyPlanCheckout, takePending } from '@/lib/funnelClient'
+import { WEB_PLAN_PRICE_INR, situationById } from '@/lib/app'
+import {
+  AGES, AGE_ART, FEELING_ART, LOGO_2X, NEEDS, SITUATION_FEELING, STAGE_ART, stagesFor,
+  type AgeId, type NeedId, type StageId,
+} from '@/lib/onboarding/profile'
+import { springVars, reducedMotion } from './motion'
+import { BackButton } from './parts'
+import SplashScreen from './SplashScreen'
+import ChoiceScreen from './ChoiceScreen'
+import PhoneScreen from './PhoneScreen'
+import NoteScreen from './NoteScreen'
+import SignInScreen from './SignInScreen'
+import FindingScreen, { type FindChip } from './FindingScreen'
+import VerseScreen, { type HookVerse } from './VerseScreen'
+import WeekScreen, { type PreviewDay } from './WeekScreen'
+import PaywallScreen from './PaywallScreen'
+import PlanScreen, { type FullDay } from './PlanScreen'
+
+/**
+ * The Wisdom app's onboarding, on the web (for Android and computers; iPhone
+ * visitors are sent to the App Store). Same screens, copy, icons and motion as
+ * wisdom/app/screens/onboarding on branch v3, in the same order, with two web
+ * changes: Google sign-up comes once the questions are done (before the verse
+ * is chosen, since it's chosen for this account), and the paywall sells the
+ * ₹89 week instead of an App Store trial. The logo is drawn once by this
+ * shell and never moves; each screen's words fade out and the next rise in.
+ */
+type Step = 'splash' | 'age' | 'stage' | 'phone' | 'feeling' | 'note' | 'signin' | 'finding' | 'verse' | 'week' | 'paywall' | 'plan'
+type Answers = { age?: AgeId; stages: StageId[]; phoneHours?: number; need?: NeedId; note?: string; noteSource?: 'voice' | 'text'; topic?: string; follow?: string }
+type Results = {
+  understanding?: Record<string, unknown> & { mirror?: string; insight?: string; weeks?: string[] }
+  hook?: HookVerse | null
+  safety?: { message?: string; lines?: { region: string; name: string; contact: string }[]; kind?: string } | null
+  preview?: PreviewDay[] | null
+  weeks?: string[]
+  sealed?: string
+  days?: FullDay[] | null
+  paid?: boolean
+}
+type Saved = { v: 1; step: Step; answers: Answers; results: Results; at: number }
+
+const KEY = 'wisdom_start_v1'
+const BACK: Partial<Record<Step, Step>> = { age: 'splash', stage: 'age', phone: 'stage', feeling: 'phone', note: 'feeling', signin: 'note', finding: 'note', verse: 'note', week: 'verse', paywall: 'week' }
+const load = (): Saved | null => {
+  try {
+    const s = JSON.parse(localStorage.getItem(KEY) || 'null') as Saved | null
+    return s?.v === 1 && Date.now() - s.at < 30 * 24 * 3600 * 1000 ? s : null
+  } catch {
+    return null
+  }
+}
+
+export default function StartFlow() {
+  const { user } = useAuth()
+  const [step, setStep] = useState<Step>('splash')
+  const [answers, setAnswers] = useState<Answers>({ stages: [] })
+  const [results, setResults] = useState<Results>({})
+  const [leaving, setLeaving] = useState(false)
+  const [logoUp, setLogoUp] = useState(false)
+  const [logoShift, setLogoShift] = useState(0)
+  const [busy, setBusy] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [safetyOpen, setSafetyOpen] = useState(false)
+  const [hookReq, setHookReq] = useState<Promise<{ ok: boolean; mirror?: string | null; library?: { verses?: number; prasangs?: number } | null }> | null>(null)
+  const weekReq = useRef<Promise<void> | null>(null)
+  const logo = useRef<HTMLDivElement>(null)
+  const [vars, setVars] = useState<Record<string, string>>({})
+  useEffect(() => setVars(springVars()), [])
+  const answersRef = useRef(answers)
+  answersRef.current = answers
+  const resultsRef = useRef(results)
+  resultsRef.current = results
+
+  // Resume: a returning visitor lands where they were (a fresh start begins at the splash).
+  useEffect(() => {
+    const s = load()
+    const q = new URLSearchParams(window.location.search)
+    const sit = q.get('s')
+    const preset: Partial<Answers> = {}
+    const situation = situationById(sit)
+    if (situation) {
+      preset.topic = situation.topic
+      preset.follow = situation.follow
+      preset.need = SITUATION_FEELING[situation.id]
+    }
+    if (s && ['verse', 'week', 'paywall', 'plan'].includes(s.step) && s.results.hook) {
+      setAnswers(s.answers)
+      setResults(s.results)
+      setStep(s.results.paid ? 'plan' : s.step === 'plan' ? 'plan' : s.step)
+      setLogoUp(true)
+    } else if (s && s.step !== 'splash') {
+      setAnswers({ ...s.answers, ...preset })
+      setStep(s.step === 'finding' || s.step === 'signin' ? 'note' : s.step)
+      setLogoUp(true)
+    } else {
+      setAnswers((a) => ({ ...a, ...preset }))
+    }
+    trackEvent('Onboarding Viewed', { page: 'Start', source: q.get('ref') ?? q.get('src') ?? 'direct', situation: sit ?? null, resumed: !!s })
+  }, [])
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(KEY, JSON.stringify({ v: 1, step, answers, results, at: Date.now() } satisfies Saved))
+    } catch {}
+  }, [step, answers, results])
+
+  const go = useCallback((next: Step, props?: Record<string, unknown>) => {
+    trackEvent('Onboarding Step Completed', { page: 'Start', step, next, ...props })
+    if (reducedMotion()) { setStep(next); setError(null); return }
+    setLeaving(true)
+    setTimeout(() => {
+      setStep(next)
+      setLogoShift(0)
+      setLeaving(false)
+      setError(null)
+      document.querySelector('.ob-screen')?.scrollTo?.(0, 0)
+    }, 180)
+  }, [step])
+
+  // ── The backend ──────────────────────────────────────────────────────────
+  const profile = () => {
+    const a = answersRef.current
+    return { feeling: a.need ?? 'quiet', age: a.age ?? null, stages: a.stages, phoneHours: a.phoneHours ?? null, topic: a.topic ?? null, follow: a.follow ?? null }
+  }
+  const loadWeek = useCallback(() => {
+    const r = resultsRef.current
+    if (!r.understanding || !r.hook) return Promise.resolve()
+    weekReq.current = api<{ weeks: string[]; preview: PreviewDay[]; sealed: string }>('/api/start/week', {
+      body: { profile: profile(), understanding: r.understanding, hookId: r.hook.id },
+    })
+      .then((w) => setResults((p) => ({ ...p, weeks: w.weeks, preview: w.preview, sealed: w.sealed })))
+      .catch(() => {})
+    return weekReq.current
+  }, [])
+  const findVerse = useCallback(() => {
+    const a = answersRef.current
+    const p = api<{ understanding: Results['understanding']; hook: HookVerse | null; safety: Results['safety']; library: { verses?: number; prasangs?: number } | null }>(
+      '/api/start/hook',
+      { body: { profile: profile(), note: a.note || undefined, noteSource: a.noteSource } },
+    ).then((r) => {
+      setResults({ understanding: r.understanding ?? undefined, hook: r.hook, safety: r.safety })
+      resultsRef.current = { understanding: r.understanding ?? undefined, hook: r.hook, safety: r.safety }
+      trackEvent('Verses Generated', { page: 'Start', ok: !!r.hook, has_note: !!a.note, crisis: !!(r.safety as { crisis?: boolean } | null)?.crisis })
+      if (r.safety?.message) setSafetyOpen(true)
+      if (r.hook) void loadWeek()
+      return { ok: !!r.hook, mirror: r.understanding?.mirror ?? null, library: r.library }
+    }).catch((e) => {
+      trackEvent('Verses Generated', { page: 'Start', ok: false, error: e instanceof ApiError ? e.code : 'network' })
+      return { ok: false }
+    })
+    setHookReq(p)
+  }, [loadWeek])
+
+  // Arriving at "Finding" without a request (a resume, a redirect): start it, or sign in first.
+  useEffect(() => {
+    if (step !== 'finding' || hookReq) return
+    if (user) findVerse()
+    else setStep('signin')
+  }, [step, hookReq, user, findVerse])
+
+  // ── Sign-in ───────────────────────────────────────────────────────────────
+  const afterSignIn = useCallback(() => {
+    findVerse()
+    go('finding', { signed_in: true })
+  }, [findVerse, go])
+
+  useEffect(() => {
+    getRedirectResult(auth)
+      .then((cred) => {
+        if (!cred?.user) return
+        identify(cred.user)
+        const p = takePending()
+        if (p?.source === 'start') {
+          trackEvent('Onboarding Signin Completed', { page: 'Start', method: 'redirect' })
+          if (p.next === 'age') go('age')
+          else afterSignIn()
+        }
+      })
+      .catch(() => {})
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const signIn = async (next: 'finding' | 'age') => {
+    setError(null)
+    setBusy(true)
+    try {
+      trackEvent('Onboarding Signin Started', { page: 'Start', at: next })
+      const u = await signInWithGoogle({ source: 'start', next })
+      if (!u) return
+      trackEvent('Onboarding Signin Completed', { page: 'Start', method: 'popup' })
+      if (next === 'age') go('age')
+      else afterSignIn()
+    } catch {
+      setError('Google sign-in did not go through. Please try again.')
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  // ── Payment ───────────────────────────────────────────────────────────────
+  const unseal = async () => {
+    const r = resultsRef.current
+    if (!r.sealed) await (weekReq.current ?? loadWeek())
+    const sealed = resultsRef.current.sealed
+    if (!sealed) throw new Error('no_plan')
+    const plan = await api<{ days: FullDay[]; weeks: string[] }>('/api/start/unseal', { body: { sealed } })
+    setResults((p) => ({ ...p, days: plan.days, weeks: plan.weeks, paid: true }))
+  }
+  const pay = async () => {
+    setError(null)
+    setBusy(true)
+    try {
+      try {
+        await unseal() // already subscribed: straight in
+        go('plan', { paid: true, via: 'existing' })
+        return
+      } catch (e) {
+        if (!(e instanceof ApiError && e.status === 402)) throw e
+      }
+      const ok = await startWeeklyPlanCheckout('start')
+      if (!ok) return
+      await unseal()
+      go('plan', { paid: true, via: 'checkout' })
+    } catch (e) {
+      setError(
+        e instanceof ApiError && e.code === 'payments_unavailable'
+          ? 'Payments are not switched on yet. Please try again soon.'
+          : e instanceof ApiError && e.status === 410
+            ? 'This plan has expired. Start again and we will build a fresh one.'
+            : 'Something went wrong. You have not been charged twice; please try again.',
+      )
+    } finally {
+      setBusy(false)
+    }
+  }
+  const cancel = async () => {
+    if (!window.confirm('Cancel your ₹89 weekly plan? It stays open until the end of the week you paid for.')) return
+    try {
+      await api('/api/pay/cancel', { body: {} })
+      window.alert('Cancelled. You will not be charged again.')
+    } catch {
+      window.alert('We could not cancel just now. Please try again, or write to us from the contact page.')
+    }
+  }
+
+  // ── The answers flying into "Finding your verse" ───────────────────────────
+  const chips = useMemo<FindChip[]>(() => {
+    const a = answers
+    const out: FindChip[] = []
+    const ageLabel = AGES.find((x) => x.id === a.age)?.label
+    if (a.age) AGE_ART[a.age].forEach((src, i) => out.push({ key: `age${i}`, src, label: i === 0 ? `Age ${ageLabel ?? ''}` : '' }))
+    a.stages.forEach((id) => {
+      const src = STAGE_ART[id]
+      if (src) out.push({ key: `st-${id}`, src, label: stagesFor(a.age).find((x) => x.id === id)?.label ?? id })
+    })
+    if (a.need) out.push({ key: 'feel', src: FEELING_ART[a.need], label: NEEDS.find((n) => n.id === a.need)?.label ?? '' })
+    if (a.phoneHours) out.push({ key: 'phone', text: `${a.phoneHours}h`, label: `${a.phoneHours} hours a day on the phone` })
+    if (a.note?.trim()) out.push({ key: 'note', icon: 'quote', label: 'Your own words' })
+    return out.slice(0, 10)
+  }, [answers])
+
+  const back = BACK[step]
+  const weekTitle = (results.understanding?.weeks?.[0] || results.weeks?.[0] || '').trim() || null
+
+  let screen: React.ReactNode = null
+  switch (step) {
+    case 'splash':
+      screen = (
+        <SplashScreen
+          logoTarget={() => logo.current?.getBoundingClientRect() ?? null}
+          onLanded={() => setLogoUp(true)}
+          onBegin={() => go('age')}
+          onHaveAccount={() => (user ? go('age') : signIn('age'))}
+        />
+      )
+      break
+    case 'age':
+      screen = (
+        <ChoiceScreen<AgeId>
+          title="How old" accent="are you?" sub="Every age has its own light."
+          options={AGES} art={AGE_ART}
+          initial={answers.age ? [answers.age] : []}
+          onToggle={(id) => setAnswers((a) => ({ ...a, age: id }))}
+          onDone={([id]) => { setAnswers((a) => ({ ...a, age: id, stages: a.stages.filter((s) => stagesFor(id).some((o) => o.id === s)) })); go('stage', { age_range: id }) }}
+        />
+      )
+      break
+    case 'stage': {
+      const options = stagesFor(answers.age)
+      screen = (
+        <ChoiceScreen<StageId>
+          title="Where are you" accent="in life?" sub="Pick all that fit."
+          options={options} art={STAGE_ART} multi
+          initial={answers.stages.filter((id) => options.some((o) => o.id === id))}
+          onDone={(ids) => { setAnswers((a) => ({ ...a, stages: ids })); go('phone', { life_stage: ids }) }}
+        />
+      )
+      break
+    }
+    case 'phone':
+      screen = <PhoneScreen initial={answers.phoneHours} onDone={(h, moved) => { setAnswers((a) => ({ ...a, phoneHours: h })); go('feeling', { phone_hours: h, moved_slider: moved }) }} />
+      break
+    case 'feeling':
+      screen = (
+        <ChoiceScreen<NeedId>
+          title="How are you feeling" accent="today?" sub="Choose the one that feels truest right now."
+          options={NEEDS} art={FEELING_ART}
+          initial={answers.need ? [answers.need] : []}
+          onDone={([id]) => { setAnswers((a) => ({ ...a, need: id })); go('note', { feeling: id }) }}
+        />
+      )
+      break
+    case 'note':
+      screen = (
+        <NoteScreen
+          need={answers.need} age={answers.age} stages={answers.stages}
+          initial={answers.note} initialSource={answers.noteSource}
+          onDone={(note, source) => {
+            setAnswers((a) => ({ ...a, note: note || undefined, noteSource: note ? source : undefined }))
+            answersRef.current = { ...answersRef.current, note: note || undefined, noteSource: note ? source : undefined }
+            const props = { has_note: !!note, note_source: note ? source : 'skipped', note_chars: note.length }
+            if (user) { findVerse(); go('finding', props) } else go('signin', props)
+          }}
+        />
+      )
+      break
+    case 'signin':
+      screen = <SignInScreen busy={busy} error={error} onSignIn={() => signIn('finding')} />
+      break
+    case 'finding':
+      screen = hookReq ? (
+        <FindingScreen chips={chips} hasNote={!!answers.note} request={hookReq} onRetry={findVerse} onDone={() => go('verse')} />
+      ) : null
+      break
+    case 'verse':
+      screen = (
+        <VerseScreen
+          hook={results.hook ?? null}
+          insight={results.understanding?.insight ?? null}
+          stages={answers.stages} need={answers.need} usedNote={!!answers.note?.trim()}
+          onDone={() => { if (!resultsRef.current.preview) void loadWeek(); go('week') }}
+        />
+      )
+      break
+    case 'week':
+      screen = (
+        <WeekScreen
+          preview={results.preview ?? null}
+          hookLine={results.hook?.line ?? null}
+          hookRef={results.hook?.ref ?? null}
+          weekTitle={weekTitle}
+          cta="Get all seven days"
+          onDone={() => go('paywall')}
+        />
+      )
+      break
+    case 'paywall':
+      screen = (
+        <PaywallScreen
+          price={WEB_PLAN_PRICE_INR}
+          weekTitle={weekTitle}
+          day1={results.hook ? { line: results.hook.line, ref: results.hook.ref } : null}
+          busy={busy}
+          error={error}
+          onPay={pay}
+          onSkip={() => { trackEvent('Onboarding Completed', { page: 'Start', outcome: 'day_1_only' }); go('plan', { paid: false }) }}
+        />
+      )
+      break
+    case 'plan':
+      screen = (
+        <PlanScreen
+          days={results.days ?? null}
+          preview={results.preview ?? null}
+          hook={results.hook ? { sanskrit: results.hook.sanskrit, line: results.hook.line, ref: results.hook.ref } : null}
+          weekTitle={weekTitle}
+          paid={!!results.paid}
+          onUnlock={() => go('paywall')}
+          onCancel={cancel}
+        />
+      )
+      break
+  }
+
+  const safety = results.safety
+  return (
+    <div className="ob" style={vars as React.CSSProperties}>
+      <div className="ob-glow" aria-hidden="true" />
+      <div
+        className="ob-phone"
+        onScrollCapture={(e) => {
+          const t = e.target as HTMLElement
+          if (t.classList?.contains('ob-scroll')) setLogoShift(Math.min(140, t.scrollTop))
+        }}
+      >
+        <div ref={logo} className={`ob-logo${logoUp ? ' is-up' : ''}`} style={logoShift ? { transform: `translateY(${-logoShift}px)`, opacity: Math.max(0, 1 - logoShift / 80) } : undefined} aria-hidden="true">
+          <span className="ob-logo-halo" />
+          <img src={LOGO_2X} alt="" width={48} height={48} />
+        </div>
+        {back && step !== 'finding' && step !== 'plan' && <BackButton onClick={() => go(back, { back: true })} />}
+        <main key={step} className={`ob-screen ob-s-${step}${leaving ? ' is-leaving' : ''}`} aria-live="polite">
+          {screen}
+        </main>
+      </div>
+      {safetyOpen && safety?.message && (
+        <div className="ob-sheet-veil" onClick={() => setSafetyOpen(false)}>
+          <div className="ob-sheet" role="alertdialog" aria-modal="true" aria-label="Support" onClick={(e) => e.stopPropagation()}>
+            <h2 className="ob-sheet-title">{safety.kind === 'harm_from_others' ? 'You deserve to be safe' : "You don't have to carry this alone"}</h2>
+            <p className="ob-sheet-body">{safety.message}</p>
+            <ul className="ob-sheet-lines">
+              {(safety.lines ?? []).map((l) => <li key={l.name}><b>{l.region}:</b> {l.name}, {l.contact}</li>)}
+            </ul>
+            <button type="button" className="ob-cta" onClick={() => setSafetyOpen(false)}>
+              <span className="ob-cta-live" aria-hidden="true" />
+              <span className="ob-cta-label">OK</span>
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}

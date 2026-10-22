@@ -28,6 +28,9 @@ import re
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Sequence
 
+from ai.people import PEOPLE
+from ai.stance import STANCE_CORE_LABEL, STANCE_NOTE
+
 # ── Who they are ──────────────────────────────────────────────────────────────
 AGE_PHRASE = {"u25": "under 25", "25_34": "25 to 34", "35_44": "35 to 44", "45_54": "45 to 54", "55p": "55 or older"}
 STAGE_PHRASE = {"studying": "studying", "working": "working", "own_thing": "running their own thing",
@@ -72,12 +75,30 @@ class PersonContext:
     root: str = ""                       # mechanism label
     situations: Sequence[str] = ()       # situation labels
     risk: str = "none"
+    note_quality: str = "none"           # useful | partial | unusable | none: how much of their life we actually know
+    stance: str = "struggle"             # struggle | aspiration | wronged | seeking (ai/stance.py)
+    gender: Optional[str] = None         # "woman" | "man" | None (then: they/them, no gendered nouns)
+    emotion: str = ""                    # what they feel right now
+    bridge: str = ""                     # their problem in the texts' terms: the week's one idea
+    mechanism: str = ""                  # mechanism id (ai/mechanisms.py), for fallbacks
+    week_thesis: str = ""
+    week_beats: Dict[str, str] = field(default_factory=dict)
+    undisclosed: bool = False            # never advise telling, never assume the others know
+    hinglish: bool = False               # they wrote in Hindi or Hinglish
+    bereaved: bool = False               # a death in the note: only then may a line speak of someone being gone
+    people: Optional[Sequence[str]] = None   # relations they mentioned (ai/people.py); None = unknown, no check
     level: str = "situation"
     week: int = 1
     days_seen: int = 0                   # days of the plan they have already opened
     helped: Sequence[str] = ()           # lines of verses they said helped
     past: Sequence[str] = ()             # labels of earlier situations they worked through
     flags: List[str] = field(default_factory=list)
+
+
+PEOPLE_WORDS = {"partner": "their partner", "inlaws": "their in-laws", "parent": "their parents", "child": "their children",
+                "sibling": "a sibling", "grand": "a grandparent or grandchild", "friend": "friends", "work": "people at work",
+                "teacher": "a teacher or mentor", "ex": "an ex", "doctor": "a doctor or therapist", "family": "their family"}
+PEOPLE_WORDS["work"] = "their work (no boss or colleague unless they named one)"
 
 
 def person_block(c: PersonContext) -> str:
@@ -90,20 +111,39 @@ def person_block(c: PersonContext) -> str:
         lines.append(f"Stage of life: {', '.join(stages)}")
     if c.phone_hours:
         lines.append(f"Time on the phone each day: about {c.phone_hours} hours")
+    lines.append("Refer to them as: " + {"woman": "she / her", "man": "he / him"}.get(c.gender or "",
+                 "they / them (they did not say; never call them he, she, mother, father, wife, husband, son, daughter, man or woman). This is about the person only: characters in the texts keep their own gender (Gargi is she, Arjuna is he)"))
+    if c.emotion:
+        lines.append(f"What they feel right now: {c.emotion}")
+    if c.people is not None:
+        named = ", ".join(PEOPLE_WORDS.get(k, k) for k in c.people) or "no one"
+        lines.append(f"People in their story: {named}. No one else exists in it. Do not bring in a partner, a boss, children, parents or friends they did not mention, and never say what someone they did not mention does or feels.")
+    lines.append("Note quality: " + {"useful": "they told us their situation in their own words", "partial": "they gave a little; treat details as thin",
+                                      "unusable": "their note was noise; you know only the profile and the feeling", "none": "no note; you know only the profile and the feeling"}.get(c.note_quality, "unknown"))
     if c.seat:
         lines.append(f"Their place in it: {c.seat}")
     if c.life_context:
         lines.append(f"Their life right now: {c.life_context}")
     if c.details:
-        lines.append("What they told us: " + "; ".join(c.details))
+        lines.append("What they told us (the only facts of their life you may use; who did what stays exactly as told, and numbers keep their tense): " + "; ".join(c.details))
+    if c.hinglish:
+        lines.append("They wrote in Hinglish: in spoken parts (an opening or a closing line) one short, natural Hinglish phrase is welcome; never in a verse's meaning.")
+    if c.undisclosed:
+        lines.append("They are keeping this from the people in it: never suggest telling them, never assume those people know, never write as if a conversation with them has happened.")
     if c.core:
-        lines.append(f"What they are struggling with: {c.core}")
+        lines.append(f"{STANCE_CORE_LABEL.get(c.stance, STANCE_CORE_LABEL['struggle'])}: {c.core}")
+    lines.append(f"Where they stand: {STANCE_NOTE.get(c.stance, STANCE_NOTE['struggle'])}")
     if c.insight:
         lines.append(f"What is really going on: {c.insight}")
     if c.root:
-        lines.append(f"Root cause underneath: {c.root}")
+        lines.append({"aspiration": f"What will test them: {c.root}", "wronged": f"What the texts offer against it: {c.root}",
+                      "seeking": f"What they are drawn to: {c.root}"}.get(c.stance, f"Root cause underneath: {c.root}"))
     if c.situations:
         lines.append(f"Their situations: {', '.join(c.situations)}")
+    if c.bridge:
+        lines.append(f"The bridge, their problem in the texts' own terms (this idea runs through every day; carry it in fresh words, never copy it): {c.bridge}")
+    if c.week_thesis:
+        lines.append(f"This week's thread: {c.week_thesis}")
     if c.risk == "distress":
         lines.append("They are in acute pain right now: be especially gentle and keep everything small.")
     if c.age in AGE_LENS:
@@ -128,6 +168,11 @@ def person_brief(c: PersonContext) -> str:
         bits.append(", ".join(stages))
     head = "; ".join(bits)
     lines = [f"The person: {c.core}" + (f" ({head})" if head else "")]
+    lines.append(f"Where they stand: {STANCE_NOTE.get(c.stance, STANCE_NOTE['struggle'])}")
+    if c.emotion:
+        lines.append(f"What they feel right now: {c.emotion}")
+    if c.gender:
+        lines.append(f"They are a {c.gender}.")
     if c.seat:
         lines.append(f"Their place in it: {c.seat}")
     if c.life_context:
@@ -145,7 +190,18 @@ You are a friend who has lived with these texts for many years, sitting with som
 - Never preach, lecture, warn, diagnose or promise an outcome. No "you should", "you must", "everything happens for a reason", "the universe".
 - Do not hand out verdicts on them, kind or harsh ("you did nothing wrong", "you are a good son"). Show them what the verse shows and let them see it for themselves.
 - Never make them the one at fault for what they are suffering. If the verse is a confession or a warning (someone admitting carelessness, greed or anger), apply it to them only if they named that in themselves; otherwise draw from it what helps, not what accuses.
+- Meet them where they stand ("Where they stand" below). A resolve is not a wound: do not console, soften or warn someone who is ready; believe them and name what will test them. Someone being wronged is never asked to accept, adjust, be patient, be content, forgive, lower expectations, keep the peace or understand the other's nature, and the cause is never placed in them; give them footing, courage and the true word.
 - Sound like a person, not a template. Do not open with "You are carrying", "Today," or "This verse"; do not end every part on a question; vary the rhythm from one part and one day to the next.
+- Never order them about. Do not open a part with an imperative (Stop, Don't, Tell, Try, Let); at most one gentle imperative sentence in a part, after you have shown them something. Never pass a verdict on their conduct ("the silence you keep is not respect", "you are turning into your mother"): show, and let them see it.
+- Name what they feel before anything else, in their words ("What they feel right now"); an angry person who is met with calm advice feels unheard.
+- When you name a character or a place from a story, say in three or four words who they are the first time (Janaka, Sita's father; Vidura, the king's wise brother). Assume they have never read the text.
+- Only an act day may ask them to do something today. On every other day, show; do not assign. Never end a part with "Today, do X" unless it is an act day.
+- The people they named are real to them: a parent, a partner, a child, a father's money. Each should return by the middle of the week; none disappears after Day 1. Never erase a person they named (a widow is not "alone" if her husband is in the note; a man with a wife at home does not sit in "an empty room").
+- Never tell someone who is lonely or grieving to let go of their family, to detach, or that their own company is enough. Never tell a person who is being pressured by others that their mind is the obstacle, that they "let" it happen, or that they are their own enemy.
+- Do not lean on one word. No key word (steady, path, lamp, grip, picture) more than twice in a part, and vary it across the week.
+- Never say their age band back to them ("in your sixties or older", "as someone 25 to 34"); speak from it, don't name it.
+- Never suggest doing anything while driving, working a shift or minding a child; never take away something they told you they lean on (the television left on, the morning reading, the temple seva): build on it instead.
+- Register by generation. Under 25: short lines, present tense, the way a friend texts but in full words; no proverbs, no farm or animal similes (mangoes, horses, pots, rivers) unless the verse itself uses one, and then at most once. 25 to 44: a peer, direct, concrete about work, partner, children, parents. 45 and over: unhurried, respectful of what they have carried; never explain life, parenting or loss to them; never tell them what they are "not".
 - No cliches: journey, inner peace, peace begins, true peace, embrace, healing, unlock, navigate, resonate, self-care, mindfulness, holding space.
 - Avoid Sanskrit words. If one is truly needed (dharma, karma), explain it in the same sentence. Karma is never fate; dharma is never religion."""
 
@@ -236,8 +292,8 @@ NAMED = {
 }
 QUOTE_RE = re.compile(r"[\"“”]([^\"“”]{12,})[\"“”]")
 SLANG_RE = re.compile(
-    r"\b(gonna|wanna|gotta|kinda|sorta|lol|omg|bro|dude|vibes?|literally|awesome|crush(ing)? it|grind(ing)?|hustle|"
-    r"hacks?|no cap|low[- ]?key|high[- ]?key|fam|legit|totally|super (hard|easy|important|tough)|game[- ]changer|"
+    r"\b(gonna|wanna|gotta|kinda|sorta|lol|omg|bro|dude|vibes?|crush(ing)? it|hustle|"
+    r"hacks?|no cap|low[- ]?key|high[- ]?key|fam|legit|super (hard|easy|important|tough)|game[- ]changer|"
     r"level up|mindset shift|let'?s go|you got this|boss (up|babe))\b", re.I)
 OPENING_RE = re.compile(r"^(this|the) (verse|shloka|line)\b|^in this (verse|shloka)\b|^(krishna|the gita) (says|tells us)\b", re.I)
 TOK_RE = re.compile(r"[a-z']+")
@@ -256,12 +312,13 @@ def source_names(it: dict) -> set:
     return {re.sub(r"['’]s$", "", m) for m in NAME_RE.findall(source_text(it))}
 
 
-def check_fidelity(text: str, it: dict) -> tuple[bool, str]:
-    """(ok, reason). A line fails if it names a character or text the source doesn't, quotes words the
-    source doesn't contain, or slips into slang."""
+def check_fidelity(text: str, it: dict, person_text: str = "") -> tuple[bool, str]:
+    """(ok, reason). A line fails if it names a character or text the source doesn't (and the person didn't), quotes words
+    the source doesn't contain, or slips into slang. `person_text`: the person's own paraphrased words; a text or name they
+    brought up themselves (the Ramayana they read every morning) may be spoken of."""
     if SLANG_RE.search(text):
         return False, "slang"
-    src = source_text(it)
+    src = source_text(it) + " " + (person_text or "")
     src_low = src.lower()
     for name in NAMED:
         if re.search(rf"\b{name}\b", text):
@@ -273,3 +330,8 @@ def check_fidelity(text: str, it: dict) -> tuple[bool, str]:
         if len(qt) >= 3 and len(qt & _toks(src)) / len(qt) < 0.7:
             return False, "invented_quote"
     return True, ""
+
+
+def person_text(c: "PersonContext") -> str:
+    """Everything the person themselves said, paraphrased, so a writer may refer to it."""
+    return " ".join([c.seat, c.life_context, c.core, c.emotion, *c.details, *(c.past or [])])

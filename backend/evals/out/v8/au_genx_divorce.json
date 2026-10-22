@@ -1,0 +1,504 @@
+{
+ "persona": {
+  "id": "au_genx_divorce",
+  "market": "Australia (Melbourne)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "44, dentist in Melbourne, from Chandigarh originally, separated 6 months ago, kids with ex 4 days a week. Parents in India don't know yet.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 4,
+   "topic": "someone",
+   "follow": "someone_left"
+  },
+  "note": "separated six months. I see my kids 3 nights a week. I haven't told my parents in Chandigarh because I know what they'll say. the house is so quiet on the nights they're not here that I leave the tv on",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "lonely in a full house",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "The quiet house has a name, and the loneliness has a place. By the end of the week the separation is spoken, even if only to one person.",
+   "week_beats": {
+    "hook": "You recognise the quiet house and the loneliness, named without judgment.",
+    "diagnose": "You see that the grief is the love that has nowhere to go, and the TV is the heart's own voice.",
+    "steady": "You hold that what is real in you cannot be lost, and the love you have is not gone, only changed."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.7,
+   "core_struggle": "Separated and parenting on split nights, she carries the separation from her parents in Chandigarh and fills the quiet house with the TV.",
+   "mirror": "You see your children three nights a week, and on the other four the house is so quiet you leave the TV on.",
+   "insight": "The TV is not the problem. The quiet it fills is the problem, and the quiet is the part of the separation you are still holding alone.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "fear_of_loss",
+   "situations": [
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 0.927,
+     "source": "note"
+    },
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "breakup",
+     "label": "I'm heartbroken after a breakup",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.75,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.675,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.523,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The quiet house on the nights the children are away, and the loneliness of a life that has not yet been spoken to the people who made it.",
+    "diagnose": "Grief is love with nowhere to go; when a bond that was real is broken, the heart aches, and the quiet house is where the ache lives.",
+    "steady": "What is real in us cannot be lost; the love you have for your children and the love you once had are not gone, they have changed shape.",
+    "act": "Let the love you have for your children have somewhere to go; speak the true thing to one person, even if it is only to say you are still here.",
+    "story": "A mother who lost her partner and was left with a quiet house, who learned that love with nowhere to go is the heaviest burden, and that naming it is the first step to letting it breathe."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet house",
+    "Love with nowhere to go",
+    "The love that changed shape"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "separated six months ago",
+    "sees children three nights a week",
+    "has not told parents in Chandigarh",
+    "the house is quiet on nights children are not there"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "retried:1",
+    "redo:1",
+    "redo_fixed:1",
+    "dropped:missing=1,verdict=1",
+    "for_you:6/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "up_brihadaranyak.63",
+     "ref": "Brihadaranyaka Upanishad 1.4.3",
+     "ref_iast": "Bṛhadāraṇyaka Upaniṣad 1.4.3",
+     "family": "up",
+     "speaker": "Seer (quoting Yajnavalkya)",
+     "listener": "Reader",
+     "setting": "The first being, alone, longs for another.",
+     "sanskrit": "स वै नैव रेमे तस्मादेकाकी न रमते । स द्वितीयमैच्छत् स हैतावानास यथा स्त्रीपुमाꣳसौ सम्परिष्वक्तौ । स इममेवाऽऽत्मानं द्वेधाऽपातयत् । ततः पतिश्च पत्नी चाभवताम् । तस्मादिदमर्धबृगलमिव स्व इति ह स्माऽऽह याज्ञवल्क्यस्तस्मादयमाकाशः स्त्रिया पूर्यत एव । ताꣳ समभवत् ततो मनुष्या अजायन्त ॥",
+     "line": "Alone, he found no joy and longed for another. So, said Yajnavalkya, each of us is like a half.",
+     "translation": "He found no delight; that is why one who is alone finds no delight. He longed for a second. He became as large as a man and woman embracing, and split himself in two; from that came husband and wife. So, said Yajnavalkya, each of us is like a half. That is why this space is filled by a wife.",
+     "why": "Fear and loneliness are human; truth gives even the weak a footing.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      },
+      {
+       "id": "loneliness",
+       "label": "I feel lonely"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.brihad.first_being",
+      "title": "The first being: fear, loneliness and dharma",
+      "summary": "In this creation story the first being, alone, feels fear, then realises there is no one else to fear. He feels no joy alone and longs for a companion, splitting into husband and wife. Finally dharma is created, the truth by which even the weak can stand up to the strong.",
+      "story_hook": "",
+      "lesson": "Fear and loneliness are human; truth gives even the weak a footing."
+     },
+     "score": 3.2292,
+     "beat": "hook",
+     "role_fit": 0.655,
+     "meaning": "In the Brihadaranyaka Upanishad, the seer Yajnavalkya tells the Reader about the first being, alone in the beginning. That being found no joy and longed for another. Yajnavalkya says we are each like a half, and this space is filled by another. The verse proposes that fear and loneliness are human, and that truth gives even the weak a footing.",
+     "for_you": "The house is quiet on nights the children are not there, and you fill it with the TV. The verse says the first being felt no joy alone and longed for another."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.1048,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma speaks to King Janaka, who is asking how he should bear the loss of his family and wealth. Ashma tells him that pain comes from what we lose, that meetings end and days do not return. In that grief, he says to ask yourself where you came from, where you are going, who you are, and why you are here. Ask these questions, he says, and steady the mind. The truth is that what has passed is gone, and what remains is what you can hold now.",
+     "for_you": "The quiet house you fill with the TV is the love you have for the person you miss, and the grief has nowhere else to go. Ask yourself where you came from and who you are, not to push the loneliness away, but to steady your feet in the room."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.13",
+     "ref": "Bhagavad Gita 2.13",
+     "ref_iast": "Bhagavad Gītā 2.13",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥",
+     "line": "Childhood, youth, old age: the body keeps changing. The wise aren't thrown by the next change.",
+     "translation": "Just as the embodied self passes through childhood, youth and old age in this body, so it passes on to another body. The steady person is not bewildered by this.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.1695,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": "Krishna speaks to the grieving Arjuna on the battlefield. He tells him that the self inside the body is never born and never dies, and that just as a person passes through childhood, youth, and old age, so the self passes on to another body. The person who understands this is not thrown off by change.",
+     "for_you": "What is real in you cannot be lost, and the love you carry is not gone, only changed. Hold onto that as you sit in the quiet of the house."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.87",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 87",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "Closing verse of the section on steadfastness.",
+     "sanskrit": "छिन्नोऽपि रोहति तरुश्चन्द्रः क्षीणोऽपि वर्धते लोके । इति विमृशन्तः सन्तः सन्तप्यन्ते न लोकेऽस्मिन् ॥",
+     "line": "A cut tree grows back; the waning moon fills again. Remembering this, the wise do not despair.",
+     "translation": "A tree that is cut grows again; the waning moon waxes again in the world. Reflecting on this, the good are not tormented in this world.",
+     "why": "Setbacks rarely last for those who keep going on the right path.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.dhairya",
+      "title": "Nitishatakam: On steadfastness",
+      "summary": "Steadfastness: the gods kept churning the ocean past jewels and poison until they found nectar; the steady do not leave the right path whatever people say. A struck ball bounces back and a cut tree grows again.",
+      "story_hook": "",
+      "lesson": "Setbacks rarely last for those who keep going on the right path."
+     },
+     "score": 3.1223,
+     "beat": "steady",
+     "role_fit": 0.705,
+     "meaning": "Bhartrihari speaks to the reader after a long section on staying the course. He says a tree that is cut down will grow again, and the waning moon will wax full once more. The good do not let this world break them. He means that a loss, even a deep one, is rarely the end. The shape of things changes, but what is real in you cannot be destroyed. The love you carry is not gone, only changed.",
+     "for_you": "The quiet in the house tonight is not a sign that something inside you is finished. It is a space where a different shape of love can grow. The part of you that holds your children and your work is still there, steady and whole."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 2.8605,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Vasishtha speaks to Bharat, who is shattered by his father's death and Ram's exile. The sage tells him to keep courage and do what the moment asks. Bharat rises and prepares to leave for the forest to admit his fault to Ram. The verse proposes that when your mind and heart are at war, you could act on the heart's truth and face the person you feel you wronged, even when it is hard.",
+     "for_you": "The quiet in your house is telling you to act. Pick up the phone and call your parents in Chandigarh. Say the words that you have been holding alone."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "avadhuta.8.7",
+     "ref": "Avadhuta Gita 8.7",
+     "ref_iast": "Avadhūta Gītā 8.7",
+     "family": "gitas",
+     "speaker": "Dattatreya",
+     "listener": "his own mind / the seeker",
+     "setting": "Dattatreya explains each syllable of the word 'Avadhuta' as a mark of the free person.",
+     "sanskrit": "वासना वर्जिता येन वक्तव्यं च निरामयम् । वर्तमानेषु वर्तेत वकारं तस्य लक्षणम् ॥",
+     "line": "Let go of old cravings, speak only what heals, and live in the present.",
+     "translation": "One who has given up old cravings, whose speech is wholesome, and who lives in the present: that is the meaning of 'va'.",
+     "why": "A free person seeks no honour, gives it freely, and lives in the present.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      }
+     ],
+     "prasang": {
+      "id": "avadhuta.p.marks_of_avadhuta",
+      "title": "The marks of a free person",
+      "summary": "The last chapter portrays the free sage as gentle, moderate, humble yet respectful to others, kind and truthful. Dattatreya then reads each syllable of 'A-va-dhu-ta' as a mark: free of expectation, living in the present, free of ego.",
+      "story_hook": "",
+      "lesson": "A free person seeks no honour, gives it freely, and lives in the present."
+     },
+     "score": 2.7958,
+     "beat": "act",
+     "role_fit": 0.909,
+     "meaning": "Dattatreya is explaining the word Avadhuta to his own mind. He speaks of the free person as one who has given up old cravings, whose speech is wholesome, and who lives in the present. This means the free person does not seek honour or reward. They simply give it freely and do not live in the past or future. They are gentle, moderate, and truthful, and they live fully in the moment before them.",
+     "for_you": "The quiet house asks for your old cravings to be set aside. Let the wholesome speech you have not used with your parents in Chandigarh be the sound that fills the silence. Speak one true word about the separation today, and let it heal."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "mbh.p.pingala",
+     "title": "Pingala's song: the night she stopped waiting",
+     "kind": "story",
+     "family": "mbh",
+     "characters": [
+      "Pingala",
+      "Bhishma (narrator)"
+     ],
+     "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+     "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+     "lesson": "Letting go of an expectation can bring the sleep that waiting never will.",
+     "matched": [
+      {
+       "id": "breakup",
+       "label": "I'm heartbroken after a breakup"
+      }
+     ],
+     "anchor": {
+      "id": "mbh.12.173.64",
+      "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+      "ref_iast": "Mahābhārata, Śānti Parva 173.64",
+      "family": "mbh",
+      "speaker": "Pingala (quoted by Bhishma)",
+      "listener": "(herself)",
+      "setting": "Pingala, left waiting all night by a lover who never came, finally lets go and finds peace.",
+      "sanskrit": "सुखं निराशः स्वपिति नैराश्यं परमं सुखम् / आशामनाशां कृत्वा हि सुखं स्वपिति पिङ्गला",
+      "line": "Pingala let go of her expectation and slept peacefully. Letting go of expectation is the greatest ease.",
+      "translation": "The one free of expectation sleeps in peace; freedom from expectation is the highest happiness. Turning hope into no-hope, Pingala sleeps peacefully.",
+      "why": "Letting go of an expectation can bring the sleep that waiting never will.",
+      "misuse": "This is about clinging to an outcome, not about giving up hope in life.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "breakup",
+        "label": "I'm heartbroken after a breakup"
+       }
+      ],
+      "prasang": {
+       "id": "mbh.p.pingala",
+       "title": "Pingala's song: the night she stopped waiting",
+       "summary": "Pingala waited all night for a lover who never came. At last she saw that her peace depended on someone else's arrival, let the expectation go, and slept peacefully.",
+       "story_hook": "Pingala sat awake listening for footsteps that never came, until she stopped listening.",
+       "lesson": "Letting go of an expectation can bring the sleep that waiting never will."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Pingala waited all night for a man who never came",
+     "teaser": "Pingala waited all night for a man who never came",
+     "for_you": null
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet house",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 199,
+   "llm": 5692,
+   "total": 11832,
+   "select": 5934
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is quiet on the nights the children are not there, and the television fills that silence. You carry this separation alone, and the weight of it sits on your shoulders."
+  ],
+  [
+   "scene",
+   "In the beginning, the first being was alone. He felt fear, and he felt no joy. He longed for another. Seer (quoting Yajnavalkya) said:"
+  ],
+  [
+   "sanskrit",
+   "स वै नैव रेमे तस्मादेकाकी न रमते, स द्वितीयमैच्छत् स हैतावानास यथा स्त्रीपुमाꣳसौ सम्परिष्वक्तौ, स इममेवाऽऽत्मानं द्वेधाऽपातयत्, ततः पतिश्च पत्नी चाभवताम्, तस्मादिदमर्धबृगलमिव स्व इति ह स्माऽऽह याज्ञवल्क्यस्तस्मादयमाकाशः स्त्रिया पूर्यत एव, ताꣳ समभवत् ततो मनुष्या अजायन्त."
+  ],
+  [
+   "line",
+   "In plain words: Alone, he found no joy and longed for another. So, said Yajnavalkya, each of us is like a half."
+  ],
+  [
+   "unpack",
+   "Yajnavalkya says each of us is like a half. This is not a flaw. It is the truth of how we are made. To feel no joy alone is not weakness. It is human. The truth is not that you are broken. The truth is that you are meant for connection."
+  ],
+  [
+   "for_you",
+   "Tonight, let the television rest for a few minutes. Let the quiet sit with you. You do not need to fill it. You only need to be in it."
+  ],
+  [
+   "close",
+   "What if the quiet is not empty, but waiting?"
+  ]
+ ],
+ "depth": {
+  "life": "The house is quiet when the children are not there. You fill the silence with the television. The separation has been six months, but the quiet is still new and sharp.",
+  "points": "The first being felt no joy alone. Loneliness is not a personal failing, but a signal that you are built for connection. The quiet house is simply the space where that signal is loudest.",
+  "practice": "Sit in the quiet for five minutes without the television. Let the silence be there.",
+  "question": "What does the silence ask of you?"
+ }
+}

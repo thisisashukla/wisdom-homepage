@@ -3,7 +3,7 @@ import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Wisdom',
+  title: 'Privacy Policy',
   description: 'Privacy policy for the Wisdom app and wisdomquotes.in. We do not sell your data.',
   alternates: { canonical: 'https://wisdomquotes.in/privacy' },
   robots: { index: true, follow: true },

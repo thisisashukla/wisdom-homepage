@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "What the Bhagavad Gita Says About Death — The Soul Is Never Born, Never Dies (BG 2.19-2.25) | Wisdom",
+  title: "What the Bhagavad Gita Says About Death — The Soul Is Never Born, Never Dies (BG 2.19-2.25)",
   description: "What does the Bhagavad Gita say about death? Krishna's answer to a grieving Arjuna: the soul (atman) is never born and never dies. Weapons cannot cut it, fire cannot burn it, water cannot wet it. BG 2.19-2.25 in Sanskrit, English, and plain modern words.",
   keywords: "bhagavad gita on death, bhagavad gita atman after death, atman bhagavad gita, nainam chindanti shastrani meaning, what does gita say about death, bhagavad gita death is not real, bhagavad gita 2.20 meaning, bhagavad gita atman eternal, bhagavad gita reincarnation, dehi meaning gita",
   openGraph: {
@@ -745,11 +746,11 @@ export default function DeathAndSoulPage() {
         </div>
       </div>
 
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagavad Gita On Death and Atman"} />
+      <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagavad Gita On Death and Atman"} />
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Bhagavad Gita On Death and Atman" />

@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Actually Share | Wisdom",
+  title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Actually Share",
   description: "Marcus Aurelius and Krishna never met, yet reached strikingly similar conclusions on action, equanimity and duty. 9 side-by-side teachings — where Stoicism and the Gita agree, and the one place they part ways.",
   keywords: "bhagavad gita vs stoicism, bhagavad gita stoicism comparison, stoicism and hinduism, marcus aurelius bhagavad gita, gita and stoic philosophy, stoicism karma yoga, epictetus bhagavad gita, meditations marcus aurelius gita, stoicism detachment results",
   openGraph: {
@@ -1001,12 +1002,12 @@ export default function GitaVsStoicismPage() {
     </div>
 
     <div className="content">
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Bhagavad Gita vs Stoicism"} />
+      <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagavad Gita vs Stoicism"} />
     </div>
 
     <footer>
-      <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-      <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+      <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+      <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
     </footer>
 
     <BlogTracker pageName="Bhagavad Gita vs Stoicism" />

@@ -1,0 +1,484 @@
+{
+ "persona": {
+  "id": "in_millennial_mother_guilt",
+  "market": "India (Bengaluru)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "34, product manager at a startup in Bengaluru, two kids (6 and 2), husband also works, in-laws live with them. Back from maternity leave 8 months ago.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "phone_hours": 3,
+   "topic": "enough",
+   "follow": "guilt"
+  },
+  "note": "I'm back at work after my second baby and every day I feel I'm half a mother and half a PM. My daughter asked why I don't come to her school things like other moms. I cried in the car.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "confidence": 0.8,
+   "core_struggle": "A working mother of two who feels she is half a mother and half a PM, and cried in the car after her daughter asked why she does not come to school like other moms.",
+   "mirror": "I'm physically home but not present with my kids",
+   "insight": "You are not failing both. You are trying to be two people at once, and the guilt comes from the impossible split, not from what you did wrong.",
+   "mechanism": "duty_conflict",
+   "mechanism_label": "Torn between duties",
+   "secondary_mechanism": "self_blame",
+   "situations": [
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.829,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 1.295,
+     "source": "note"
+    },
+    {
+     "id": "self_worth",
+     "label": "I don't feel worthy",
+     "weight": 0.888,
+     "source": "note"
+    },
+    {
+     "id": "guilt",
+     "label": "I feel guilty about something I did",
+     "weight": 0.8,
+     "source": "chip"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The ache of being in two places at once, and the guilt that follows when the child you love most asks why you are not there like the others.",
+    "diagnose": "When duties pull in different directions and fear clouds which one is truly yours, the mind becomes its own enemy and the heart cannot rest.",
+    "steady": "Your love is not divided; it is stretched across two roles that both matter, and no one who cares for two worlds is ever a half-parent or a half-professional.",
+    "act": "Give each role your full attention when you are in it, let the other go for that hour, and when guilt comes, name it as the cost of caring for two worlds.",
+    "story": "A mother who returned to her duties after a birth, torn between the office and the child, who learned that no hour given to duty is a theft from love."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The impossible split",
+    "What guilt really is",
+    "More than either role"
+   ],
+   "seat": "a working mother of two who feels she is failing both roles",
+   "life_context": "In her thirties and thirties, working and raising two young children; she has returned to work after her second birth, and the question her daughter asked in the car left her crying and unable to settle.",
+   "details": [
+    "back at work after second baby",
+    "feels she is half a mother and half a PM",
+    "daughter asked why she does not come like other moms",
+    "cried in the car after the question"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids"
+   ],
+   "flags": [
+    "retried:2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.18.47",
+     "ref": "Bhagavad Gita 18.47",
+     "ref_iast": "Bhagavad Gītā 18.47",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on duties by nature and finding fulfilment in your own work.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥",
+     "line": "Better your own path, imperfectly walked, than someone else's done perfectly.",
+     "translation": "Better is one's own duty, though imperfect, than the duty of another well performed. Doing the work born of one's own nature, one incurs no wrong.",
+     "why": "Do the work that fits you, flaws and all, as an offering.",
+     "misuse": "Not 'stick to the role you were born into'. It's about honest fit with your own nature, not caste or family script.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.4",
+      "title": "Duties by nature, and their fruit",
+      "summary": "After listing duties by varna, Krishna says one reaches perfection through one's own work done as worship, and that one's own path, though imperfect, beats another's, since every undertaking has flaws.",
+      "story_hook": "",
+      "lesson": "Do the work that fits you, flaws and all, as an offering."
+     },
+     "score": 1.5666,
+     "beat": "hook",
+     "role_fit": 0.155,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, where Arjuna is paralyzed by grief and duty. He tells him to do his own work, however flawed, rather than another's. The path fits the person. This is not about your caste or family script, but about an honest fit with your own nature. Krishna says doing the work born of your own nature incurs no wrong.",
+     "for_you": "You are trying to be two people at once. Your daughter sees the split. Do the work that fits you, flaws and all, as an offering today. Your part is not to be a perfect mother and a perfect PM. It is to be you, doing what is yours."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.1.26.11",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Vairāgya 26.11",
+     "family": "yv",
+     "speaker": "Rama",
+     "listener": "Vishvamitra and Vasishtha",
+     "setting": "Rama, near the end of his lament, says where the real enemy lives.",
+     "sanskrit": "शत्रवश्चेन्द्रियाण्येव सत्यं यातमसत्यताम् । प्रहरत्यात्मनैवात्मा मनसैव मनो रिपुः ॥",
+     "line": "No one hurts us like we hurt ourselves. The mind becomes the mind's own enemy.",
+     "translation": "Our own senses are the enemies; truth itself has turned untrue; the self strikes the self, and the mind is the mind's own enemy.",
+     "why": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer.",
+     "misuse": "Not a reason to blame yourself. Vasishtha's answer is that the same mind can lift itself.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "self_worth",
+       "label": "I don't feel worthy"
+      },
+      {
+       "id": "guilt",
+       "label": "I feel guilty about something I did"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.ram_lament",
+      "title": "Rama's lament: what is the point of all this?",
+      "summary": "Asked to speak, Rama pours out what he has seen: wealth hardens people, life drips away like water off a leaf, ego and craving run us, the mind never fills, childhood, youth and old age each bring their own suffering, and time eats everything. He ends by saying only the company of good people gives him hope.",
+      "story_hook": "In front of the whole court, the young prince stood up and said what everyone feels and nobody says.",
+      "lesson": "Naming honestly what feels empty is the first step; Rama's lament is a question, not the answer."
+     },
+     "score": 3.0087,
+     "beat": "diagnose",
+     "role_fit": 0.745,
+     "meaning": "In the Yoga Vasishtha, Rama speaks to the sages after seeing the world's futility. He says our own senses are the enemies. The mind strikes the self, and the mind becomes its own enemy. This is a lament, a question, not an answer. The mind can lift itself, but first it must name what feels empty.",
+     "for_you": "The guilt is a voice in your head. It is not the truth. Name the feeling today. You are not failing. You are stretched thin. The mind is the mind's own enemy, and it is lying to you."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "rcm.7.86.chaupai.1",
+     "ref": "Ramcharitmanas · Uttar Kand",
+     "ref_iast": "Rāmcaritmānas, Uttar Kāṇḍ 86",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Kakbhushundi",
+     "setting": "Ram explains to Kakbhushundi how he loves all beings, using a father's love as the picture.",
+     "sanskrit": "एक पिता के बिपुल कुमारा। होहिं पृथक गुन सील अचारा॥ कोउ पंडित कोउ तापस ग्याता। कोउ धनवंत सूर कोउ दाता ॥ कोउ सर्बग्य धर्मरत कोई। सब पर पितहि प्रीति सम होई॥ कोउ पितु भगत बचन मन कर्मा। सपनेहुँ जान न दूसर धर्मा ॥",
+     "line": "One parent, many children, each different in gifts and nature, and the love for all is the same.",
+     "translation": "One father has many sons, each different in gifts, nature and conduct: one a scholar, one an ascetic, one wise, one rich, one brave, one generous; one all-knowing, one devoted to duty. The father's love is the same for all; but if one is devoted to the father in mind, word and deed, knowing no other duty even in dreams...",
+     "why": "Pride is taken from us painfully, for our good; what remains is what matters.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "rcm.p.kakbhushundi_pride",
+      "title": "Kakbhushundi and the child Ram",
+      "summary": "Kakbhushundi used to visit Ayodhya to watch Ram as a child. Once he doubted that a toddler chasing a crow could be God; Ram reached for him across every world, and he saw universes inside the child's mouth. Humbled, he was offered every power and chose devotion, since comforts without it are a feast without salt. Ram explains that pride is lanced from those he loves, as a mother lances a child's boil.",
+      "story_hook": "The crow kept stealing scraps from a toddler in a palace courtyard, until the toddler reached for him.",
+      "lesson": "Pride is taken from us painfully, for our good; what remains is what matters."
+     },
+     "score": 2.7923,
+     "beat": "steady",
+     "role_fit": 0.665,
+     "meaning": "Ram speaks to Kakbhushundi, explaining how he loves all beings. He uses a father with many sons, each different in gifts and nature. The father's love is the same for all. Pride is lanced from those he loves, as a mother lances a child's boil. What remains is what matters.",
+     "for_you": "Your love for your children is whole, even when you feel split. The pride you feel in your career is lanced for your good. Hold the love. It is enough."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.15.11",
+     "ref": "Ashtavakra Gita 15.11",
+     "ref_iast": "Aṣṭāvakra Gītā 15.11",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "Ashtavakra presses home his core teaching to Janaka: you are awareness, not the roles you play.",
+     "sanskrit": "त्वय्यनन्तमहाम्भोधौ विश्ववीचिः स्वभावतः । उदेतु वास्तमायातु न ते वृद्धिर्न वा क्षतिः ॥",
+     "line": "Let the waves of the world rise or fall. You, the ocean, neither gain nor lose.",
+     "translation": "In you, the boundless ocean, let the waves of the world rise or fall by their own nature. You neither grow nor shrink.",
+     "why": "You are the ocean, not the waves; let them rise and fall without losing yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.self_knowledge",
+      "title": "You are not your mind",
+      "summary": "Ashtavakra drives home that Janaka is not the body, the doer, or the mind's likes and dislikes, but the ocean in which the waves of life rise and fall. He urges faith, an end to grief, and rest from endless deliberation.",
+      "story_hook": "",
+      "lesson": "You are the ocean, not the waves; let them rise and fall without losing yourself."
+     },
+     "score": 2.6693,
+     "beat": "steady",
+     "role_fit": 0.685,
+     "meaning": "Ashtavakra speaks to Janaka, who is caught in the weight of his duties and his guilt. He tells him that he is the boundless ocean, and the world is only the waves. The waves may rise or fall, but the ocean itself neither grows nor shrinks. This means the roles you play, the guilt you carry, the pressure of being a mother and a manager, none of that changes who you truly are underneath.",
+     "for_you": "In the car today, when your daughter asked why you were not there, you felt the waves rise and crash over you. You are not the wave of her disappointment, nor the wave of your own guilt. You are the ocean that holds them both."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_aitareya.33",
+     "ref": "Aitareya Upanishad 2.1.3",
+     "ref_iast": "Aitareya Upaniṣad 2.1.3",
+     "family": "up",
+     "speaker": "Seer",
+     "listener": "Reader",
+     "setting": "The second birth: raising a child.",
+     "sanskrit": "स यत्कुमारं जन्मनोऽग्रेऽधिभावयत्यात्मानमेव तद्भावयत्येषं लोकानां सन्तत्या । एवं सन्तता हीमे लोकास्तदस्य द्वितीयं जन्म ॥",
+     "line": "Caring for your child, you care for yourself. Through them you are born a second time.",
+     "translation": "When he cares for the child from birth onward, he is caring for himself, for the continuation of these worlds; that is how they continue. That is his second birth.",
+     "why": "Care for the one who carries and raises the child; raising children continues your life.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "present_parent",
+       "label": "I'm physically home but not present with my kids"
+      },
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.aitareya.three_births",
+      "title": "The three births of a person",
+      "summary": "The Aitareya describes three births: conception and pregnancy, when the mother nourishes the child and must herself be nourished; birth and upbringing, when caring for the child is caring for oneself; and death, when the parent, duties done, departs and the child carries on.",
+      "story_hook": "",
+      "lesson": "Care for the one who carries and raises the child; raising children continues your life."
+     },
+     "score": 3.3227,
+     "beat": "act",
+     "role_fit": 0.45,
+     "meaning": "A child is born a second time not only from the body, but from the care given to them. The one who feeds, protects, and raises the child is also feeding, protecting, and raising themselves, for the world continues only through this care. To tend to the child is to tend to your own continuation. The one who carries and raises the child is also carried and raised by the child.",
+     "for_you": "You are not two separate halves. When you hold your daughter, you are also holding yourself. Let her presence remind you that you are not failing, but continuing."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.38",
+     "ref": "Bhagavad Gita 2.38",
+     "ref_iast": "Bhagavad Gītā 2.38",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna reminds Arjuna of his duty as a warrior and what retreat would cost him.",
+     "sanskrit": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥",
+     "line": "Hold pleasure and pain, gain and loss, win and defeat as equal. Then step in and act.",
+     "translation": "Treating pleasure and pain, gain and loss, victory and defeat alike, then engage in the fight. Done this way, you will incur no wrong.",
+     "why": "Decide from steadiness, not from fear of winning or losing.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.3",
+      "title": "Why a warrior must fight: duty",
+      "summary": "Krishna appeals to Arjuna's sense of duty and honour, then tells him to treat victory and defeat alike before he acts.",
+      "story_hook": "",
+      "lesson": "Decide from steadiness, not from fear of winning or losing."
+     },
+     "score": 3.082,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Before you step into any task, see the result as equal to the effort. See pleasure and pain, success and failure, as the same. Then act. When you act from this steadiness, you do not fall into wrong.",
+     "for_you": "Your daughter's question brings pain, and work brings gain. See them as equal. Then do one small thing for her, and one small thing for your work. Act from steadiness, not from guilt."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.janaka_vidai",
+     "title": "Janaka says goodbye to his daughter",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Janaka",
+      "Sunayana",
+      "Sita",
+      "Ram"
+     ],
+     "story_hook": "He was the most detached king in the world, and his daughter was leaving.",
+     "summary": "After the wedding the time comes for Sita to leave Mithila. The palace, even the pet parrots, are in tears. Janaka, known everywhere for his detachment, holds his daughter and loses all composure; his ministers have to remind him it is time.",
+     "lesson": "Even the wisest parent breaks a little when a child leaves home; that is love.",
+     "matched": [
+      {
+       "id": "new_parent",
+       "label": "I'm overwhelmed as a new parent"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.318.chaupai.3",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 318",
+      "family": "rcm",
+      "speaker": "Narrator",
+      "listener": "the reader",
+      "setting": "King Janaka, famous for his detachment, as his daughter Sita leaves home after her wedding.",
+      "sanskrit": "सीय बिलोकि धीरता भागी। रहे कहावत परम बिरागी॥ लीन्हि रायँ उर लाइ जानकी। मिटी महामरजाद ग्यान की ॥",
+      "line": "Known for his calm, he held his daughter close as she left, and all his wisdom gave way.",
+      "translation": "He was known as supremely detached, yet on seeing Sita his composure fled. The king held Janaki to his heart, and the great banks of his wisdom gave way.",
+      "why": "Even the wisest parent breaks a little when a child leaves home; that is love.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "new_parent",
+        "label": "I'm overwhelmed as a new parent"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.janaka_vidai",
+       "title": "Janaka says goodbye to his daughter",
+       "summary": "After the wedding the time comes for Sita to leave Mithila. The palace, even the pet parrots, are in tears. Janaka, known everywhere for his detachment, holds his daughter and loses all composure; his ministers have to remind him it is time.",
+       "story_hook": "He was the most detached king in the world, and his daughter was leaving.",
+       "lesson": "Even the wisest parent breaks a little when a child leaves home; that is love."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Janaka was the most detached king in the world, until his daughter Sita left home",
+     "teaser": "Janaka was the most detached king in the world, until his daughter Sita left home",
+     "for_you": "Janaka was known as the wisest king, yet he broke when his daughter left. Your daughter's question cut deep because your love is real, not because you are failing. The split you feel is the cost of caring deeply for two worlds. You are not half a mother."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The impossible split",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 184,
+   "llm": 3826,
+   "total": 10135,
+   "select": 6122
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are back at work, and your daughter asked why you do not come to school like the other moms. That question caught in your throat and left you crying in the car. You feel like you are only half a mother and half a PM, and you are carrying that split with you everywhere."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield, paralyzed by grief and duty. Krishna said:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path, imperfectly walked, than someone else's done perfectly."
+  ],
+  [
+   "unpack",
+   "This means that your own path, though imperfect, is better than someone else's perfectly. You are torn between two duties that do not fit together. The guilt you feel is not because you are failing, but because you are trying to be two people at once. Doing the work that fits you, flaws and all, incurs no wrong."
+  ],
+  [
+   "for_you",
+   "Today, let the split exist without trying to fix it. You do not have to be a perfect mother and a perfect PM. You only have to be you, doing what is yours, however imperfectly it looks."
+  ],
+  [
+   "close",
+   "What is yours to do today."
+  ]
+ ],
+ "depth": {
+  "life": "You are in the car, the engine off, and your daughter's question hangs in the air. You are back at work, and now you are trying to be two people at once, a mother and a project manager, and you feel the split in your own body.",
+  "points": "Krishna tells Arjuna that doing your own work, with all its flaws, is better than doing another's perfectly. The guilt you feel comes from trying to fit into a role that is not yours, not from any failure in you.",
+  "practice": "Sit with your daughter and tell her, in your own words, what you are doing today. Let her see your real self, not a perfect version.",
+  "question": "What would it feel like to do your own work, imperfectly, and offer it as enough?"
+ }
+}

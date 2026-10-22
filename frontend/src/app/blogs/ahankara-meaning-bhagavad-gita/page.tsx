@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: 'Ahankara Meaning — The Bhagavad Gita\'s Word for Ego | Wisdom',
+  title: 'Ahankara Meaning — The Bhagavad Gita\'s Word for Ego',
   description:
     "Ahankara is not 'ego' in the Western sense. It is the 'I-maker' — the mechanism that causes the infinite self to mistake itself for a finite, named person. Here's what the Gita actually says.",
   keywords:
@@ -667,14 +668,14 @@ export default function AhankaraMeaningPage() {
         </div>
       </div>
 
-      <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Ahankara Meaning Bhagavad Gita"} />
+      <VerseFunnelCTA variant="chapter" locale="en" pageName={"Ahankara Meaning Bhagavad Gita"} />
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
         <p>
           <a href="https://wisdomquotes.in">Home</a> —{' '}
           <a href="https://wisdomquotes.in/blogs">Blog</a> —{' '}
-          <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">
+          <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">
             Download
           </a>
         </p>

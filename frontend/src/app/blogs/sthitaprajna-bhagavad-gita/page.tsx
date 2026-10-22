@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Sthitaprajna: The Bhagavad Gita's 18-Verse Portrait of an Unshakeable Mind | Wisdom",
+  title: "Sthitaprajna: The Bhagavad Gita's 18-Verse Portrait of an Unshakeable Mind",
   description: "Sthitaprajna is the Gita's word for a person whose wisdom is steady. BG 2.55-2.72 lists the exact qualities. Not calm at all costs. Steady at the root. Here's what that actually looks like.",
   keywords: "sthitaprajna meaning, sthitaprajna bhagavad gita, sthitaprajna lakshana, sthita prajna definition, steady minded person bhagavad gita, bhagavad gita 2.55 meaning, bhagavad gita equanimity, wise person gita qualities, sthita dhi",
   openGraph: {
@@ -922,12 +923,12 @@ export default function SthitaprajnaPage() {
       </div>
 
       <div className="content">
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Sthitaprajna Bhagavad Gita"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Sthitaprajna Bhagavad Gita"} />
       </div>
 
       <footer>
-        <p>© 2026 Wisdom App. A daily verse to quiet the mind.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
+        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 
       <BlogTracker pageName="Sthitaprajna Bhagavad Gita" />

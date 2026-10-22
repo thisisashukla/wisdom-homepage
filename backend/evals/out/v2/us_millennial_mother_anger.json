@@ -1,0 +1,493 @@
+{
+ "persona": {
+  "id": "us_millennial_mother_anger",
+  "market": "USA (Chicago)",
+  "generation": "Millennial",
+  "gender": "woman",
+  "who": "39, Indian-American, two kids, runs a dental practice with her husband, loses her temper with the kids and hates herself after.",
+  "profile": {
+   "feeling": "replay",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "phone_hours": 3,
+   "topic": "mind",
+   "follow": "anxious"
+  },
+  "note": "I yelled at my 7 year old this morning for spilling milk and the look on his face. I am turning into my mother. I run a practice, I manage 12 people calmly, and then at home I just snap",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "fallback",
+   "note_quality": "partial",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "something doesn't sit right and I can't name it",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "confidence": 0.55,
+   "core_struggle": "I feel anxious most of the time",
+   "mirror": "I feel anxious most of the time",
+   "insight": "Most of what you fear hasn't happened. Your mind keeps living it in advance, again and again.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 2.1,
+     "source": "chip"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 1.793,
+     "source": "note"
+    },
+    {
+     "id": "new_parent",
+     "label": "I'm overwhelmed as a new parent",
+     "weight": 1.622,
+     "source": "note"
+    },
+    {
+     "id": "anger_outburst",
+     "label": "I lost my temper and regret it",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "teen_conflict",
+     "label": "My teenager won't listen to me",
+     "weight": 1.432,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 1.254,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "I feel anxious most of the time. Inside, something doesn't sit right and I can't name it, and I don't know how to carry it.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage.",
+    "act": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst.",
+    "story": "A story of a seeker whose mind will not settle, facing fear of what might happen."
+   },
+   "query_sources": {
+    "hook": "template",
+    "diagnose": "template",
+    "steady": "template",
+    "act": "template",
+    "story": "template"
+   },
+   "weeks": [
+    "When you're afraid",
+    "How fear grows",
+    "What can't be lost"
+   ],
+   "seat": "",
+   "life_context": "Working and raising kids and building something of their own. Feels uneasy; closest to \"I feel anxious most of the time\" and \"I'm physically home but not present with my kids\".",
+   "details": [],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "raising_kids",
+    "own_thing"
+   ],
+   "flags": [
+    "stance_inferred:str=0.45,asp=0.25,wro=0.25,see=0.0",
+    "llm_timeout",
+    "retried:2",
+    "dropped:cliche=1,fallback_line=1,preachy=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.6.34",
+     "ref": "Bhagavad Gita 6.34",
+     "ref_iast": "Bhagavad Gītā 6.34",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna confesses the mind is as hard to hold as the wind; Krishna answers.",
+     "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥",
+     "line": "The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind.",
+     "translation": "For the mind is restless, Krishna, turbulent, powerful and stubborn. I think it is as hard to hold as the wind.",
+     "why": "The mind is hard to hold, but practice and letting go train it.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p06.4",
+      "title": "Mastering the mind",
+      "summary": "Arjuna says the mind is restless, stormy and stubborn. Krishna agrees, and says practice and letting go can train it.",
+      "story_hook": "",
+      "lesson": "The mind is hard to hold, but practice and letting go train it."
+     },
+     "score": 3.0957,
+     "beat": "hook",
+     "role_fit": 0.73,
+     "meaning": "Arjuna tells Krishna that the mind is as hard to control as the wind. It is turbulent and stubborn, and he feels he cannot hold it steady. Krishna agrees that the mind is restless, but he says that through practice and letting go, it can be trained. The mind is not meant to be forced into stillness. It is meant to be guided, again and again, until it learns where to settle.",
+     "for_you": "Your mind is racing through what might go wrong before the day even begins. You cannot force it to stop, but you can begin to let it settle on one thing at a time. Today, just notice where your thoughts are, without trying to push them away."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.21.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.6",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "After the story of two grieving brothers, Vasishtha tells Rama how worry feeds itself.",
+     "sanskrit": "चिन्तनेनैधते चिन्ता त्विन्धनेनेव पावकः । नश्यत्यचिन्ततेनैव विनेन्धनमिवानलः ॥",
+     "line": "Worry grows when you feed it thought, like fire with fuel. Starve it, and it dies down.",
+     "translation": "Worry grows by thinking, as fire grows with fuel; and it dies by not being thought, as fire dies without fuel.",
+     "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.punya_pavana",
+      "title": "Punya consoles his younger brother Pavana after their parents die",
+      "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+      "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+      "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+     },
+     "score": 3.3811,
+     "beat": "diagnose",
+     "role_fit": 0.751,
+     "meaning": "Vasishtha is speaking to Rama after the story of two brothers who lost their parents. The elder brother, Punya, saw that the younger, Pavana, was drowning in grief. Vasishtha tells Rama that worry grows by thinking, just as a fire grows with fuel, and it dies when you stop feeding it. The mind is not a solid thing. It is a habit of returning to the same thoughts. You can stop adding wood to the fire.",
+     "for_you": "Your mind is adding wood to a fire that has not happened. Today, when you catch yourself rehearsing a fear, do not argue with it. Simply stop adding the next thought. Let the flame use up what is already there and go out."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "tulsi_vp.250",
+     "ref": "Vinay Patrika",
+     "ref_iast": "Vinaya Patrikā, pada 250",
+     "family": "tulsi",
+     "speaker": "Tulsidas",
+     "listener": "Ram",
+     "setting": "Frightened by hard times, Tulsidas asks Ram to say the words he needs to hear.",
+     "sanskrit": "रीति सुनि रावरी प्रतीति-प्रीति रावरे सों, डरत हौं देखि कलिकालको कहरु। कहेही बनैगी कै कहाये, बलि जाउँ, राम, “तुलसी ! तू मेरो, हारि हिये न हहरु'॥",
+     "line": "\"You are mine. Do not lose heart, do not tremble.\"",
+     "translation": "Having heard your ways, my trust and love are in you, yet I am afraid, seeing the cruelty of these times. It will only be well if you say it, or have it said, Ram: \"Tulsi, you are mine. Do not lose heart, do not tremble.\"",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": null,
+     "score": 3.3974,
+     "beat": "steady",
+     "role_fit": 0.56,
+     "meaning": "Tulsidas is speaking to Ram, frightened by the cruelty of the times and the weight of his own fear. He asks Ram to say the words he needs to hear. Ram replies, 'Tulsi, you are mine. Do not lose heart, do not tremble.' It is a declaration of belonging that cuts through the noise of the world and the mind.",
+     "for_you": "Most fears never come true; what is truly yours cannot be taken, and today asks only for today's courage."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 3.28,
+     "beat": "steady",
+     "role_fit": 0.795,
+     "meaning": "Lakshman speaks to Ram in the forest after Sita has been taken. Ram is shattered, raging that he will burn the world down. Lakshman tells him to take heart, that no living being is untouched by trouble. It strikes like fire and then passes. A steady voice in a broken room can stop grief from consuming everything. The idea is that loss is universal, and its heat, though fierce, is not permanent.",
+     "for_you": "Yesterday's verse named the grip. Today, sit with the heat of your own anxiety. Notice that it flares up, and that it will also pass. You do not need to solve the whole day right now."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.8133,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": null,
+     "for_you": "Your mind is at war with the quiet of your home. Do what today asks of you, which is to step back into the room with your children. You do not need to be perfectly present. Just be there, and let the small, ordinary act of showing up be enough for now."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.2.40",
+     "ref": "Bhagavad Gita 2.40",
+     "ref_iast": "Bhagavad Gītā 2.40",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on how to act without being chained to results.",
+     "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥",
+     "line": "No sincere effort here is ever wasted. Even a little of it shields you from great fear.",
+     "translation": "On this path no effort is lost and no harm results. Even a little of this practice protects one from great fear.",
+     "why": "Do the work fully; let go of owning the result.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.4",
+      "title": "The yoga of action",
+      "summary": "Krishna teaches the yoga of action: work wholeheartedly, give up clinging to outcomes, stay even in success and failure, and keep a single steady purpose.",
+      "story_hook": "",
+      "lesson": "Do the work fully; let go of owning the result."
+     },
+     "score": 3.3118,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Krishna speaks to Arjuna on the field of battle, teaching him how to act without being chained to results. He says that no sincere effort is ever wasted. Even a little of this practice protects one from great fear. The point is to work fully and then release ownership of what comes next.",
+     "for_you": "You are working and raising children, and you are building something of your own. Do what is in front of you today, and then let go of the need to control the outcome. Your only task is the next right action, not the final result."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.prashna.year",
+     "title": "Six seekers wait a year",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Pippalada",
+      "Sukesha",
+      "Satyakama",
+      "Gargya",
+      "Kausalya",
+      "Bhargava",
+      "Kabandhi"
+     ],
+     "story_hook": "Six seekers arrived with fuel in their hands and questions on their lips, and were told to wait a year.",
+     "summary": "Six earnest seekers come to the sage Pippalada with questions. Instead of answering, he asks them to live with him for a year in discipline and faith, and only promises to answer what he actually knows.",
+     "lesson": "Readiness matters, and a good teacher only claims what he knows.",
+     "matched": [
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "anchor": {
+      "id": "up_prashn.19",
+      "ref": "Prashna Upanishad 1.16",
+      "ref_iast": "Praśna Upaniṣad 1.16",
+      "family": "up",
+      "speaker": "Pippalada",
+      "listener": "Kabandhi",
+      "setting": "End of Pippalada's first answer.",
+      "sanskrit": "तेषामसौ विरजो ब्रह्मलोको न येषु जिह्ममनृतं न माया चेति ॥",
+      "line": "The pure world belongs to those with no crookedness, no lying and no trickery in them.",
+      "translation": "That stainless world of Brahman belongs to those in whom there is no crookedness, no falsehood and no deceit.",
+      "why": "Readiness matters, and a good teacher only claims what he knows.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "up.p.prashna.year",
+       "title": "Six seekers wait a year",
+       "summary": "Six earnest seekers come to the sage Pippalada with questions. Instead of answering, he asks them to live with him for a year in discipline and faith, and only promises to answer what he actually knows.",
+       "story_hook": "Six seekers arrived with fuel in their hands and questions on their lips, and were told to wait a year.",
+       "lesson": "Readiness matters, and a good teacher only claims what he knows."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Six seekers came to a sage with their biggest questions, and he made them wait a year",
+     "teaser": "Six seekers came to a sage with their biggest questions, and he made them wait a year",
+     "for_you": "Your mind is carrying questions it has not yet earned the answer to. Let the year pass in steady work with your hands and presence with your children, and trust that what you need will meet you when you are ready."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "When you're afraid",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 143,
+   "llm": 7011,
+   "total": 16713,
+   "select": 9558
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are pulled in every direction, and your mind is racing through what might go wrong before the day even begins."
+  ],
+  [
+   "scene",
+   "Arjuna tells Krishna that the mind is as hard to control as the wind. It is turbulent and stubborn, and he feels he cannot hold it steady. Krishna agrees that the mind is restless, but he says that through practice and letting go, it can be trained. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्, तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्."
+  ],
+  [
+   "line",
+   "In plain words: The mind is restless, stormy, stubborn and strong. Holding it feels like holding the wind."
+  ],
+  [
+   "unpack",
+   "The mind is not meant to be forced into stillness. It is meant to be guided, again and again, until it learns where to settle. This is easier said than done, because the mind is strong and it resists. You cannot command it to stop by force. You train it by returning its attention, gently, every time it wanders. This is what practice means here. It is the letting go that trains it. Each time you stop fighting the thought and simply notice it, you are teaching the mind a new place to rest."
+  ],
+  [
+   "for_you",
+   "When you are with your children, your thoughts are already miles away. You do not have to empty your mind. You only need to set it down for one minute. Notice the thought, and then let your attention rest on the sound of their voice. That is the practice. That is the letting go."
+  ],
+  [
+   "close",
+   "Where is your mind resting right now?"
+  ]
+ ],
+ "depth": {
+  "life": "You are at the kitchen table after the kids have gone to bed. The house is quiet but your mind is not. It is running through the next day, what the clients might say, what the children might need. You are trying to rest, but your body is here and your thoughts are far away.",
+  "points": "Arjuna tells Krishna that the mind is restless and strong, like the wind. It does not want to be controlled by force. The mind is not your enemy, but it does not listen to commands. It moves on its own, carrying your fears with it.",
+  "practice": "Sit for five minutes and watch your thoughts come and go. Do not try to catch them or push them away.",
+  "question": "What happens if you let the thoughts move without grabbing them?"
+ }
+}

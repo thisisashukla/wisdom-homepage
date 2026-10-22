@@ -1,0 +1,492 @@
+{
+ "persona": {
+  "id": "ca_genz_queer_family",
+  "market": "Canada (Vancouver)",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "22, Indo-Canadian, came out to her Punjabi parents last year, they went silent, now talk only about weather. She still goes home for Diwali.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "since I told my parents about my girlfriend they haven't said one real thing to me. we talk about the weather. I still go home for diwali and sit at the table and it's like I'm a guest",
+  "note_source": "text",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "hurt and excluded",
+   "bridge": "What you are living with is what the texts call being seen as less than you are, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {},
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "partner",
+    "friend",
+    "teacher",
+    "work"
+   ],
+   "confidence": 0.8,
+   "core_struggle": "An under- student and worker whose parents have gone silent since he told them about his girlfriend, and who sits at the Diwali table like a guest in his own home.",
+   "mirror": "You go home for Diwali and sit at the table, and the air has gone thin.",
+   "insight": "You are not the problem they are not speaking to. The silence is their choice, and the only thing you are guilty of is loving someone they did not expect you to love.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 2.083,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.822,
+     "source": "note"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.63,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "Being treated as a guest in your own home, and the hurt of parents who have gone silent because you told them the truth about who you love.",
+    "diagnose": "When others see only their own picture of you, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty.",
+    "act": "Speak the true thing gently and firmly when the moment asks; hold your ground on what is yours, and do not shrink to fit the silence they have chosen.",
+    "story": "A young man who loved and told the truth, was met with coldness at his own table, and found the courage to stand in his own worth and speak it."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "Seen as less",
+    "Whose picture it is",
+    "No smaller than you are"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "talks to them only about the weather",
+    "still goes home for Diwali",
+    "sits at the table like a guest"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "week_thesis:missing",
+    "week_fit:7=1.0,35=1.0,7=0.6,58=0.6,15=0.6,532=0.0",
+    "week_fit:swapped=1",
+    "retried:1",
+    "dropped:accept=1,fallback_line=2,missing=2,repeat=1,soft_kept=1",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:dropped:close=preachy",
+    "script:written:4/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.7",
+     "ref": "Bhagavad Gita 2.7",
+     "ref_iast": "Bhagavad Gītā 2.7",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+     "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+     "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.6955,
+     "beat": "hook",
+     "role_fit": 0.94,
+     "meaning": "Arjuna has collapsed in tears on the battlefield and refuses to fight. He tells Krishna that his nature is stricken by weakness and his mind is confused about what is right. He asks Krishna to tell him for certain what is best, saying he has come as a student to learn.",
+     "for_you": "At your table during Diwali, the silence around you is heavy. You did not choose to be confused here. You are allowed to name that you do not know what is right, and to ask for a clear path forward. That is not weakness. That is where clarity begins."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 3.12,
+     "beat": "diagnose",
+     "role_fit": 0.16,
+     "meaning": "Krishna is speaking to Arjuna, who is standing on the battlefield, unsure of his duty and terrified of the cost. Arjuna has asked for clear direction. Krishna tells him that it is better to walk your own path, even if you stumble along the way, than to perfectly copy the path of someone else. Following a borrowed life brings only fear. The idea is that your own nature and calling, followed honestly, is stronger than any performance of another's life.",
+     "for_you": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.2727,
+     "beat": "steady",
+     "role_fit": 0.7,
+     "meaning": "Queen Vidula finds her son Sanjaya lying defeated after losing his kingdom. She tells him not to hold himself in contempt, to stop settling for so little, and to set his mind on what is truly good. She says he must stop being afraid and pull himself together. The past failure does not define him. The results are uncertain, but he will never succeed if he does not try.",
+     "for_you": "You are not less because your parents went silent. Their choice is not your worth. Set your mind on what is good for you today, and stop letting their quiet define you."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "mbh.3.32.58",
+     "ref": "Mahabharata · Vana Parva · Vana: Draupadi and Yudhishthira",
+     "ref_iast": "Mahābhārata, Vana Parva 32.58",
+     "family": "mbh",
+     "speaker": "Draupadi",
+     "listener": "Yudhishthira",
+     "setting": "Draupadi argues that waiting on fate is no plan: people must act.",
+     "sanskrit": "न त्वेवात्माऽवमन्तव्यः पुरुषेण कदाचन / न ह्यात्मपरिभूतस् भूतिर्भवति शोभना",
+     "line": "Never look down on yourself. Nothing good grows from self-contempt.",
+     "translation": "A person should never look down on himself. The one who despises himself never finds real prosperity.",
+     "why": "Do right for its own sake, then work as if it all depends on you.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.dharma_and_effort",
+      "title": "Do right without reward, and keep working",
+      "summary": "Draupadi questions a world where the good suffer; Yudhishthira answers that he does right because it is right, not for reward. Draupadi replies that effort still matters: fate rewards no one who waits.",
+      "story_hook": "",
+      "lesson": "Do right for its own sake, then work as if it all depends on you."
+     },
+     "score": 3.1251,
+     "beat": "steady",
+     "role_fit": 0.655,
+     "meaning": null,
+     "for_you": "What you are cannot be cut smaller by what they see; your worth was never theirs to grant, and standing in your own truth is itself the duty."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.17.15",
+     "ref": "Bhagavad Gita 17.15",
+     "ref_iast": "Bhagavad Gītā 17.15",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna on three kinds of food, effort, speech and giving.",
+     "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥",
+     "line": "Speak words that don't wound, that are true, kind and helpful. That is discipline of speech.",
+     "translation": "Speech that causes no distress, that is truthful, pleasant and beneficial, and the regular study of sacred texts: this is called austerity of speech.",
+     "why": "Speak kindly and truly, give without strings, and drop the show.",
+     "misuse": "Kind speech doesn't mean avoiding hard truths; it means saying them without cruelty.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p17.2",
+      "title": "Three kinds of food, offering, austerity and giving",
+      "summary": "Food, offering, austerity and giving each come in three kinds. Speech should be true, kind and helpful; giving should expect nothing back; effort for show doesn't last.",
+      "story_hook": "",
+      "lesson": "Speak kindly and truly, give without strings, and drop the show."
+     },
+     "score": 3.4512,
+     "beat": "act",
+     "role_fit": 0.699,
+     "meaning": "Krishna is explaining to Arjuna the nature of true discipline, and he places speech at the center. He says that true austerity of speech is to use words that cause no distress, that are true, pleasant and beneficial. It is not about hiding the truth behind a wall of niceness, but about saying what needs to be said without adding cruelty. The idea is to strip away the performance of communication, so that what remains is a clear, kind exchange between people.",
+     "for_you": "You are sitting at the table and feeling like a guest in your own home. Let your words to your parents today be true without being sharp. Speak the simple truth about your day without adding the weight of their silence, and let that be enough."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.4.3.19",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 3.19",
+     "family": "vr",
+     "speaker": "Ram",
+     "listener": "Lakshman",
+     "setting": "Ram is struck by how Hanuman, a stranger and envoy, has just spoken to them.",
+     "sanskrit": "अविस्तरमसंदिग्धमविलम्बितमव्यथम्। उरःस्थं कण्ठगं वाक्यं वर्तते मध्यमस्वरम्॥",
+     "line": "Not too long, not vague, not rushed, not strained, in an even voice: that is how to speak.",
+     "translation": "His words were not long-winded, not ambiguous, not rushed, not strained; they came from the chest and throat in an even, middle tone.",
+     "why": "Fear jumps ahead of facts; calm, clear words build trust fast.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.sugriva_fear",
+      "title": "Sugriva's fear and Hanuman's first words",
+      "summary": "The exiled Sugriva sees two armed strangers and panics, sure his brother has sent assassins. Hanuman calms him and goes in disguise to find out. His speech to the brothers is so clear and gentle that Ram is moved and trusts him at once.",
+      "story_hook": "Sugriva saw two archers walking towards his hill and was sure they had come to kill him.",
+      "lesson": "Fear jumps ahead of facts; calm, clear words build trust fast."
+     },
+     "score": 3.0918,
+     "beat": "act",
+     "role_fit": 0.754,
+     "meaning": "Ram tells Lakshman that Hanuman spoke to them with perfect balance. His words were not long-winded, not ambiguous, not rushed, not strained. They came from the chest and throat in an even, middle tone. Hanuman had just met the exiled king Sugriva, who panicked and thought Ram and Lakshman were assassins sent by his brother. Hanuman did not match that fear. He spoke calmly and clearly so Ram would trust him. The verse proposes that fear jumps ahead of facts, but calm, clear words build trust fast.",
+     "for_you": "The silence at the table is heavy, and it is easy to let that heaviness rush your words when you speak to your family. Today, try to keep your voice even. Say what you could say in a calm, middle tone. You do not need to be long. You only need to be clear."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "up.p.katha.nachiketa_sent",
+     "title": "Nachiketa questions his father's gift",
+     "kind": "story",
+     "family": "up",
+     "characters": [
+      "Nachiketa",
+      "Vajashravasa (Auddalaki)"
+     ],
+     "story_hook": "Nachiketa watched his father give away cows too old to give milk, and could not keep quiet.",
+     "summary": "A father makes a show of giving away all he owns, but the cows are old and dry. His young son Nachiketa keeps asking who he will be given to, until the father snaps, 'To Death!' The boy goes, and tells his father to keep his word.",
+     "lesson": "A child's honest question can show up an adult's empty gesture.",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "anchor": {
+      "id": "up_kath.1.1.4",
+      "ref": "Katha Upanishad 1.1.4",
+      "ref_iast": "Kaṭha Upaniṣad 1.1.4",
+      "family": "up",
+      "speaker": "Nachiketa",
+      "listener": "His father Vajashravasa",
+      "setting": "A boy watches his father give away worn-out cows as a show of piety.",
+      "sanskrit": "स होवाच पितरं तत कस्मै मां दास्यसीति । द्वितीयं तृतीयं तं होवाच मृत्यवे त्वा ददामीति ॥",
+      "line": "A boy asks his father three times, 'To whom will you give me?' The angry answer: 'To Death.'",
+      "translation": "He said to his father, 'Father, to whom will you give me?' He asked a second time, and a third. His father said, 'To Death I give you.'",
+      "why": "A child's honest question can show up an adult's empty gesture.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "parent_conflict",
+        "label": "I keep fighting with my parents"
+       }
+      ],
+      "prasang": {
+       "id": "up.p.katha.nachiketa_sent",
+       "title": "Nachiketa questions his father's gift",
+       "summary": "A father makes a show of giving away all he owns, but the cows are old and dry. His young son Nachiketa keeps asking who he will be given to, until the father snaps, 'To Death!' The boy goes, and tells his father to keep his word.",
+       "story_hook": "Nachiketa watched his father give away cows too old to give milk, and could not keep quiet.",
+       "lesson": "A child's honest question can show up an adult's empty gesture."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Young Nachiketa questioned his father's gift, and his angry father gave him to Death",
+     "teaser": "Young Nachiketa questioned his father's gift, and his angry father gave him to Death",
+     "for_you": "Nachiketa did not pretend the gift made sense. They asked what was real, even when it cost them. When your parents turn you into a guest at your own table, you do not have to smile and eat. You can ask who you are to them now, and wait for the real answer."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Seen as less",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 171,
+   "llm": 4464,
+   "total": 18535,
+   "select": 13895
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting at your own Diwali table, and the silence around you is heavy. You did not choose this exclusion. You feel hurt, and you have every right to feel that way."
+  ],
+  [
+   "scene",
+   "On a battlefield, Arjuna has collapsed in tears. He refuses to fight. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः, यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्."
+  ],
+  [
+   "line",
+   "In plain words: I'm confused about what's right. Tell me plainly what's best; I'm ready to learn."
+  ],
+  [
+   "unpack",
+   "Admitting you do not know and asking for help is where clarity begins. This is easier said than done, because when you are hurting, your mind wants answers. It wants to know who is right. But clarity does not start with knowing the answer. It starts with the courage to say I am confused and I need help."
+  ],
+  [
+   "for_you",
+   "You do not need to fix this silence today. You only need to admit to yourself that you are confused about what is right. You are allowed to ask for a clear path forward. That is not weakness. That is the first step."
+  ]
+ ],
+ "depth": {
+  "life": "At the Diwali table, you sit like a guest in your own home. The silence from your parents is a wall. You did not choose this. You are hurt, and you are confused about what is right.",
+  "points": "The texts say clarity begins when you admit you do not know what is right. You do not have to pretend. You can name your confusion and ask for a clear path. That is the start of understanding.",
+  "practice": "Sit with your confusion for five minutes today. Write down what you do not know about your parents' silence.",
+  "question": "What would it mean to ask your parents one clear question?"
+ }
+}

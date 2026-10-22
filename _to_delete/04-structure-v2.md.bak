@@ -1,0 +1,40 @@
+# 04 · Structure v2 (homepage), 20 Oct 2026
+
+Inputs: 01-icp.md, 02-brand-voice.md, 03b-search-data.md, GATE-1-v2.md. Supersedes 04-structure.md.
+
+## Who arrives, and in what state
+| Arrival | Share of homepage visitors | State | What they need first |
+|---|---|---|---|
+| Direct (bookmarks, app users, reels and Reddit with the referrer stripped) | 59% | Mixed. Includes the ICP arriving from reels. | The promise and one button |
+| Google and Bing: "700 verses", "today's verse", "verses in Sanskrit" | 18% | Product-aware about the Gita; wants to read | A visible way to read, and today's verse |
+| Internal (from verse, blog and Hindi pages) | 14% | Already reading | The plan, since they already trust the text |
+| ChatGPT | 10% | Asked an AI where to read the Gita, or which version to read | A plain, factual answer they can confirm |
+
+Behaviour constraint: only 13% scroll past a quarter of the page. The hero carries the offer and the reader path. Section 2 is the strongest engagement we have (audio, 19% of search landers play it).
+
+## Sections
+| # | id | Purpose (one) | SB7 beat | Pain / objection answered | Keyword | Proof | CTA | Max words | Visual |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | hero | Make the promise; give the ICP one action and readers one link | Character + direct CTA | "Which verse is for my situation?" | 700 verses in Sanskrit with meaning (reader link) | — | Create my 7-day Gita plan + reader text link | 45 | Existing Krishna art |
+| 2 | today | Give everyone the product in miniature: one verse, read aloud | Guide: authority (show) + transitional CTA | "a little bit of the Gita every day"; "hard to understand" | today's Bhagavad Gita verse | Real verse, real audio | Listen · Read this verse in full · iPhone: Lock Screen | 25 + verse | Today's verse card with play button (existing player, moved up) |
+| 3 | plan-preview | Show "tuned": pick a situation, see the real week | Plan: process | AI slop; "what is a plan?" | — | Four real week-1 plans as returned | Create my 7-day Gita plan | 40 + data | Tabbed plan card (unchanged) |
+| 4 | which-gita | Answer the best-converting question and the trust objections in one place | Guide: empathy + authority | ISKCON or translation bias; preachy; "AI mangles our shastra" | which bhagavad gita to read / best translation | Commentators named; review; link to the comparison essay | Create my 7-day Gita plan | 130 | None |
+| 5 | devices | Price and where you read it, for this device | Plan: agreement | Autopay trap; "do I need the app?"; privacy | bhagavad gita app | Real price; real screens | App Store / Create my 7-day Gita plan | 70 | Unchanged |
+| 6 | gita-for | Route problem-aware visitors to the problem pages (the demand we expect to build) | Problem (named) | Pains 1–5 by name | bhagavad gita on overthinking, etc. | Verse counts | Links | 30 + 14 tiles | None |
+| 7 | library | Serve readers and hold the primary keyword | Transitional CTA | Language; "where do I start" | **700 verses in Sanskrit with meaning**; 700 श्लोक | 18 chapters | Start at 1.1 · हिंदी callout | 60 | Chapter tiles (existing) |
+| 8 | faq | Close what's left; give ChatGPT and People Also Ask a clean answer | Plan: agreement | Free? Which translation? Today's verse? Cost? Therapy? | 7 questions | — | No | 280 | None |
+| 9 | final | One more chance to act | Success vs failure + direct CTA | Pain 1 | — | — | Create my 7-day Gita plan | 25 | None |
+
+## What changed from v1, and the deletion test
+- **Hero reader link: back.** Data: 261 clicks, the top homepage element. Kept to one text link so the hero still has one button (Revision 1's "the user is confused" rule).
+- **today: moved from 6th to 2nd.** It ranks (position 8.5 for "today's bhagavad gita verse"); "Verse of the day" was the second-most-clicked hero link (54); audio is the highest-engagement action on the homepage. It also shows "one verse a day", half of the product line, before we ask for anything.
+- **sources → which-gita.** Same three trust points, re-asked as the question people actually search. Delete it and the ISKCON and AI objections go unanswered again, and the homepage loses its best-converting query. **Kept, renamed.**
+- **plan-preview, devices, gita-for, faq, final:** each passes the deletion test as in v1. gita-for has almost no search demand today (8 impressions on anxiety). It stays because it is cheap, it is where reel and Reddit traffic deep-links, and it is the SEO bet; it moves below which-gita and devices.
+- **library:** now carries the primary keyword in its H2 and the Hindi callout uses the top Hindi query's wording.
+
+Total body: about 650 words plus FAQ answers (v1: about 860).
+
+## Tracking to add (so the next gate has real conversions)
+- `hero_read_gita_cta` keeps its name, for comparison with the 261 baseline.
+- New location names: `home_today_play`, `home_which_gita_cta`, `home_which_gita_essay`.
+- App Store button: record `$os` on click (already sent) and stop showing it to Android (fixes the 23 dead clicks).

@@ -1,0 +1,518 @@
+{
+ "persona": {
+  "id": "in_boomer_retired_empty",
+  "market": "India (Lucknow)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "66, retired bank officer in Lucknow, wife passed 2 years ago, son in Toronto, daughter in Mumbai. Reads the Gita occasionally, wants to understand it properly.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 3,
+   "topic": "meaning",
+   "follow": "after_retiring"
+  },
+  "note": "after my wife left us the house is very quiet. children call on sunday. I have time now and I want to read Gita properly not just the shlokas everyone forwards on whatsapp",
+  "note_source": "voice",
+  "expect_stance": "seeking"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "quietly grieving and searching",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "From the forwarded verse to the living word, and from the quiet house to the one that holds what does not pass.",
+   "week_beats": {
+    "hook": "You recognise the quiet house and the search for something deeper, named without pity.",
+    "diagnose": "You see that the grief is love with nowhere to go, and the search is for a practice that can hold it.",
+    "steady": "You hold that what is real in you cannot be lost, and that the self remains when everything else parts.",
+    "act": "You try reading one chapter with care, letting the words hold the love that has nowhere else to go.",
+    "story": "A man who lost his wife and sat in her silence shows you how the search becomes the practice."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "A retired man whose wife left and whose house is quiet, searching for a deeper practice beyond the forwarded verses he sees on his phone.",
+   "mirror": "The house is quiet now, and the Sunday call is the one thread that still holds the day together.",
+   "insight": "The ache is this big because your love was this real. Grief is love that has nowhere left to go.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": "no_meaning",
+   "situations": [
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.581,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.535,
+     "source": "note"
+    },
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 1.2,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 1.125,
+     "source": "chip"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.838,
+     "source": "chip"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.59,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "A quiet house after the one you built it with is gone, and the search for a practice that can hold what is left.",
+    "diagnose": "Grief is love with nowhere to go; when everything that comes together must part, the heart aches because the bond was real.",
+    "steady": "What is real in us cannot be lost; the one who remains is not the role, not the result, but the self that was never born and will never die.",
+    "act": "Read one chapter with care, not for a lesson but for the voice; let the words hold the love that has nowhere else to go.",
+    "story": "A man who lost his wife and sat in the silence she left, who found in that silence the one conversation he had been waiting to hear all his life."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The quiet house",
+    "Love with nowhere to go",
+    "What does not pass"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "wife left them, the house is very quiet",
+    "children call on Sundays",
+    "has time now after retiring",
+    "wants to read the Gita properly, not just forwarded verses"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:seeking_over_pain",
+    "insight:template",
+    "week_fit:22=0.3,40=0.6,22=0.6,9=0.6,1=0.0,1=0.0",
+    "week_fit:swapped=3",
+    "retried:1",
+    "redo:2",
+    "redo_fixed:0",
+    "dropped:repeat=2,soft_kept=2",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.9.18",
+     "ref": "Bhagavad Gita 9.18",
+     "ref_iast": "Bhagavad Gītā 9.18",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna tells Arjuna who he is to every being.",
+     "sanskrit": "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत् । प्रभवः प्रलयः स्थानं निधानं बीजमव्ययम् ॥",
+     "line": "I am your goal, your support, your witness, your home, your shelter and your friend.",
+     "translation": "I am the goal, the sustainer, the master, the witness, the home, the refuge and the friend; the origin and the dissolution, the ground, the treasure-house and the undying seed.",
+     "why": null,
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": null,
+     "score": 1.8062,
+     "beat": "hook",
+     "role_fit": 0.12,
+     "meaning": "Krishna tells Arjuna that he is the one who receives every offering, the ground beneath every foot, the shelter for every being. He is the witness to every act and the final home to which every soul returns. This is not a promise of ease, but the truth that nothing is left without its resting place. The verse asks that you see the quiet house not as an end, but as a space that is held.",
+     "for_you": "The house is very quiet now, and the children call on Sundays. Let this verse tell you that the quiet is not empty. It is a shelter, a witness, and a home for the love you still hold. Rest in that truth today."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.4551,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "King Janaka asks the sage Ashma how to bear the loss of family and wealth. Ashma answers that pain comes from what we lose and that meetings end. He asks Janaka to steady his mind with three questions: where was I before, where will I go, and who am I really. This is not to dismiss grief, but to hold it steady by knowing the self that remains when everything else passes.",
+     "for_you": "The house is quiet now, and the absence is loud. Let the grief be what it is. Then ask yourself where this quiet comes from and where it goes. Let the self that asks these questions be your steady ground in the silence."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.13",
+     "ref": "Bhagavad Gita 2.13",
+     "ref_iast": "Bhagavad Gītā 2.13",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥",
+     "line": "Childhood, youth, old age: the body keeps changing. The wise aren't thrown by the next change.",
+     "translation": "Just as the embodied self passes through childhood, youth and old age in this body, so it passes on to another body. The steady person is not bewildered by this.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      },
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.4162,
+     "beat": "steady",
+     "role_fit": 0.525,
+     "meaning": "Krishna speaks to Arjuna on the battlefield, who is trembling with grief over the faces he must face. Krishna tells him that the soul inside the body is eternal, passing through childhood, youth, and old age like stages of a single life, and then moving into another body. The wise person sees this constant change and is not thrown off balance by the next shift. The self within you does not die when the body does, and it cannot be taken from you.",
+     "for_you": "The quiet in your house is a change in the body, not in you. When the grief rises, sit with it and know that the part of you that loved so fully is the same part that remains. You cannot lose who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.1.2.22",
+     "ref": "Katha Upanishad 1.2.22",
+     "ref_iast": "Kaṭha Upaniṣad 1.2.22",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the self within changing bodies.",
+     "sanskrit": "अशरीरँ शरीरेष्वनवस्थेष्ववस्थितम् । महान्तं विभुमात्मानं मत्वा धीरो न शोचति ॥",
+     "line": "Knowing what stays steady inside all that changes, the wise do not grieve.",
+     "translation": "Knowing the self as bodiless within bodies, steady among the unsteady, great and all-pervading, the wise one does not grieve.",
+     "why": "What you most are cannot be lost, and a quiet, honest life is how you find it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.deathless_self",
+      "title": "Yama on what does not die",
+      "summary": "Death himself explains that the true self is never born and never dies, and is not killed when the body is. It is found not by cleverness or study but by a calm, honest life.",
+      "story_hook": "",
+      "lesson": "What you most are cannot be lost, and a quiet, honest life is how you find it."
+     },
+     "score": 2.94,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Yama speaks to Nachiketa, who has asked what happens after death. Yama says the self is bodiless within bodies, steady among the unsteady, great and all-pervading. The wise one does not grieve. What you most are cannot be lost, and a quiet, honest life is how you find it. The house is very quiet, but the one who loved and was loved is not gone, only the form has changed.",
+     "for_you": "The silence in the house is loud. But the love you shared is not gone. It is the steady part of you that remains. Let that be enough today."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.5.46.chaupai.3",
+     "ref": "Ramcharitmanas, Sundar Kand 5.46 (chaupai 3)",
+     "ref_iast": "Rāmcaritmānas, Sundar Kāṇḍ 5.46",
+     "family": "rcm",
+     "speaker": "Ram",
+     "listener": "Vibhishan",
+     "setting": "Ram describes the devotee who lives in his heart.",
+     "sanskrit": "सब कै ममता ताग बटोरी। मम पद मनहि बाँध बरि डोरी॥ समदरसी इच्छा कछु नाहीं। हरष सोक भय नहिं मन माहीं ॥ अस सज्जन मम उर बस कैसें। लोभी हृदयँ बसइ धनु जैसें॥ तुम्ह सारिखे संत प्रिय मोरें। धरउँ देह नहिं आन निहोरें ॥",
+     "line": "Gather every thread of love into one cord, and tie your heart to me.",
+     "translation": "Gathering the threads of attachment to all of these, he twists them into one cord and ties his mind to my feet. Even-minded, wanting nothing, with no elation, grief or fear in his mind: such a good person lives in my heart as wealth lives in a miser's heart. Saints like you are dear to me; I take a body for no other reason.",
+     "why": "The turning itself is enough to be taken in; your past is not the deciding question.",
+     "misuse": "Not 'give up your family': it is gathering one's loves into a single devotion. Surrender here comes after effort and honest reflection; it is not a reason to stop acting or to stay in harm's way.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.bhakti.vibhishan_refuge",
+      "title": "Vibhishan crosses over: Ram's refuge speech",
+      "summary": "Kicked out of Lanka for telling his brother the truth, Vibhishan crosses the sea to Ram, dreaming of his feet. Sugriva wants him bound as a spy; Ram says his vow is to remove the fear of anyone who comes for refuge, and if the visitor were truly wicked he would not have come at all. Ram embraces him, asks how he kept his goodness among the cruel, describes the devotee who ties every thread of love to him, and crowns him king, shyly giving what Ravana got for ten heads.",
+      "story_hook": "Kicked out by his own brother, a man stood on the far shore and wondered whether the enemy he was walking toward would let him in.",
+      "lesson": "The turning itself is enough to be taken in; your past is not the deciding question."
+     },
+     "score": 2.8326,
+     "beat": "act",
+     "role_fit": 0.614,
+     "meaning": "Ram speaks to Vibhishan, who has crossed the sea alone. Ram says the devotee gathers every thread of love into one cord and ties their mind to his feet. Even-minded, wanting nothing, with no elation, grief or fear in his mind: such a person lives in his heart as wealth lives in a miser's heart. The turning itself is enough to be taken in. Your past is not the deciding question.",
+     "for_you": "Your grief is a love that has nowhere left to go. Gather it into one cord and let it rest. Read one chapter of the Gita today, letting the words hold what your heart cannot."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "vr.5.30.18",
+     "ref": "Valmiki Ramayana · Sundara Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Sundara Kāṇḍa 30.18",
+     "family": "vr",
+     "speaker": "Hanuman",
+     "listener": "himself",
+     "setting": "Hanuman has found Sita, terrified and alone; he works out how to speak without frightening her.",
+     "sanskrit": "अवश्यमेव वक्तव्यं मानुषं वाक्यमर्थवत्। मया सान्त्वयितुं शक्या नान्यथेयमनिन्दिता ॥",
+     "line": "To comfort someone, use their language, not the one that impresses.",
+     "translation": "I must speak to her in ordinary human words that carry meaning. There is no other way to comfort this blameless woman.",
+     "why": "Before a hard conversation, think about how the other person will hear you.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [],
+     "prasang": {
+      "id": "vr.p.hanuman_speaks_to_sita",
+      "title": "How Hanuman spoke to Sita",
+      "summary": "Hanuman has found Sita but she is terrified. He thinks carefully: speak in ordinary language, not court Sanskrit; don't gamble on a fight; start by gently praising Ram so she can trust him. He sings Ram's story softly from the tree, and she hears hope for the first time: joy comes to the one who stays alive.",
+      "story_hook": "He had found her at last, and now the problem was how to speak without making her scream.",
+      "lesson": "Before a hard conversation, think about how the other person will hear you."
+     },
+     "score": 2.8473,
+     "beat": "act",
+     "role_fit": 0.715,
+     "meaning": "Hanuman has found Sita, terrified and alone, and he thinks carefully about how to reach her. He decides to speak in ordinary human words that carry meaning. He will not use the courtly Sanskrit that might impress, but the simple language she can hear and trust. He begins by gently praising Ram so she can feel safe. He sings Ram's story softly from the tree, and she hears hope for the first time, the joy that comes to the one who stays alive.",
+     "for_you": "You want to read the Gita properly, not just forwarded verses. Start with one chapter, and let its plain words hold the love that has nowhere else to go. Let the reading itself be the comfort, not a performance of understanding."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.shabari",
+     "title": "Shabari's long wait",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Shabari",
+      "Ram",
+      "Lakshman"
+     ],
+     "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+     "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+     "lesson": "Faithful waiting, unseen by the world, is not wasted.",
+     "matched": [
+      {
+       "id": "reconnect_faith",
+       "label": "I want to reconnect with my roots"
+      },
+      {
+       "id": "retirement",
+       "label": "I've retired and feel lost"
+      }
+     ],
+     "anchor": {
+      "id": "vr.3.74.12",
+      "ref": "Valmiki Ramayana · Aranya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 74.12",
+      "family": "vr",
+      "speaker": "Shabari",
+      "listener": "Ram",
+      "setting": "The old ascetic woman Shabari has waited years at Pampa for Ram, as her teachers foretold.",
+      "sanskrit": "एवमुक्ता महाभागैस्तदाहं पुरुषर्षभ। मया तु संचितं वन्यं विविधं पुरुषर्षभ॥ तवार्थे पुरुषव्याघ्र पम्पायास्तीरसम्भवम्।",
+      "line": "I was told you would come, so I kept gathering for you. Waiting was a kind of preparing.",
+      "translation": "So the great ones told me, best of men, and for you I have gathered every kind of forest food from the banks of the Pampa.",
+      "why": "Faithful waiting, unseen by the world, is not wasted.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "reconnect_faith",
+        "label": "I want to reconnect with my roots"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.shabari",
+       "title": "Shabari's long wait",
+       "summary": "The old ascetic woman Shabari has lived for years at Pampa after her teachers died, told that Ram would one day come. She has kept gathering forest food for him. When he arrives, she welcomes him, shows him her teachers' forest, and departs in peace.",
+       "story_hook": "Her teachers had all gone, and still she gathered fruit every day for a guest who had never come.",
+       "lesson": "Faithful waiting, unseen by the world, is not wasted."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "teaser": "Shabari, an old woman in the forest, gathered fruit every day for a guest who never came",
+     "for_you": "Shabari waited for Ram with fruit she had gathered every day, though he had never come. Her teachers had gone, and the world did not see her. But her waiting was a kind of preparing, and when he arrived, she could welcome him with everything she had kept. Your search is not wasted."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The quiet house",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 130,
+   "llm": 4367,
+   "total": 19112,
+   "select": 14608
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The house is very quiet now, and the silence holds more than you expected. You are searching for a deeper place to rest your thoughts, not just forwarded lines on a screen. You want to read the Gita properly and find what remains when the noise of the day has finally stopped."
+  ],
+  [
+   "scene",
+   "Krishna is speaking to Arjuna on the battlefield, where the ground is soaked and the future is uncertain. Arjuna has laid down his bow, overwhelmed by grief for his family. And Krishna replies:"
+  ],
+  [
+   "sanskrit",
+   "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत्, प्रभवः प्रलयः स्थानं निधानं बीजमव्ययम्."
+  ],
+  [
+   "line",
+   "In plain words: I am your goal, your support, your witness, your home, your shelter and your friend."
+  ],
+  [
+   "unpack",
+   "This verse proposes that the one who is missed is not gone, but is the very ground and shelter of what remains. It is easier said than done, because the mind wants to fix the quiet or fill the hours. But the truth underneath is that the love you hold has not vanished. It is the witness to every moment of your life, the home that does not pass."
+  ],
+  [
+   "for_you",
+   "When the house settles into its quiet, let the silence be a shelter rather than a wound. The love you carry is not an echo. It is the steady ground beneath your feet, the friend who stays in the stillness."
+  ],
+  [
+   "close",
+   "What if the quiet is not empty, but held?"
+  ]
+ ],
+ "depth": {
+  "life": "The house is very quiet now. The children call on Sundays. You want to read the Gita properly, not just forwarded verses. You are quietly grieving and searching.",
+  "points": "Krishna tells Arjuna that the divine is the ground, the refuge, and the friend. Your love was this real. The texts call this missing someone you love. That is where this week begins.",
+  "practice": "Sit in the quiet of the house for ten minutes today. Let the silence be a witness to your love.",
+  "question": "What does the quiet of the house hold for you right now?"
+ }
+}

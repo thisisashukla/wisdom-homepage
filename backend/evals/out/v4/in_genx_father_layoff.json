@@ -1,0 +1,516 @@
+{
+ "persona": {
+  "id": "in_genx_father_layoff",
+  "market": "India (Pune)",
+  "generation": "Gen X",
+  "gender": "man",
+  "who": "49, IT services manager in Pune, 22 years in the same company, laid off last month. Daughter in 11th, home loan, aging mother.",
+  "profile": {
+   "feeling": "replay",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 4,
+   "topic": "work",
+   "follow": "might_lose_job"
+  },
+  "note": "twenty two years in one company and they let me go in a 10 minute call. I have not told my mother. Every morning I still wake up at 6 like I have to go to office.",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "shocked and ashamed",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "",
+   "week_beats": {
+    "hook": "You recognise the shock and the silence, named without judgement.",
+    "diagnose": "You see that the fear is about the future, not the past, and that what is real in you cannot be lost.",
+    "steady": "You hold that no one who has given twenty-two years to honest work is ever without worth.",
+    "act": "You try letting the morning be what it is, speaking to one person, and doing one small thing today that belongs to you.",
+    "story": "A man who lost his post and his name shows you what it looks like to find the self that was never owned by the post."
+   },
+   "confidence": 0.65,
+   "core_struggle": "Laid off after twenty-two years in one company and hiding it from their mother, while the body still wakes at six for a job that no longer exists.",
+   "mirror": "You wake at six for a job that no longer exists, and you have not yet told your mother.",
+   "insight": "It is not the layoff that keeps you awake. It is the fear that what is real in you cannot survive this, and the body keeps living in a morning that has ended.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "layoff",
+     "label": "I lost my job",
+     "weight": 2.0,
+     "source": "note"
+    },
+    {
+     "id": "overthinking",
+     "label": "I can't stop overthinking",
+     "weight": 0.72,
+     "source": "note"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.655,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "quit_or_stay",
+     "label": "Should I quit my job or stay",
+     "weight": 0.45,
+     "source": "note"
+    },
+    {
+     "id": "hard_conversation",
+     "label": "I have to give someone bad news",
+     "weight": 0.449,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The shock of a loss you cannot speak aloud, and the morning body that still wakes for a job that no longer exists.",
+    "diagnose": "Fear grows from imagining the future and from forgetting that what is real in us cannot be lost; worry multiplies what has not happened.",
+    "steady": "What is real in you cannot be lost; no one who has given twenty-two years to honest work is ever without worth.",
+    "act": "Let the morning be what it is; speak to one person you trust, and do one small thing today that belongs to you, not to the job.",
+    "story": "A man who lost his post and his name, hiding from his family, who found that the self he feared losing was the one thing he had never truly owned."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The shock you cannot speak",
+    "What is real in you",
+    "The morning that has ended"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "twenty two years at one company",
+    "let go in a ten minute call",
+    "has not told their mother",
+    "still wakes at six every morning as if going to the office"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "bridge:copied_example",
+    "week_thesis:missing",
+    "seat:missing",
+    "retried:2",
+    "dropped:fallback_line=2,missing=4",
+    "for_you:7/7",
+    "meaning:4/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.1.29",
+     "ref": "Bhagavad Gita 1.29–30",
+     "ref_iast": "Bhagavad Gītā 1.29–30",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Arjuna, seeing his own family in the enemy ranks, collapses in grief before the battle.",
+     "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते । न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥",
+     "line": "Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero.",
+     "translation": "My limbs give way, my mouth is parched, my body trembles and my hair stands on end.",
+     "why": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero.",
+     "misuse": "Not a dismissal of anxiety; it shows that even the strong feel it, and the teaching starts there.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p01.4",
+      "title": "Overcome by delusion, Arjuna speaks in fear, love and grief",
+      "summary": "Seeing his kin ready to die, Arjuna trembles, his bow slips, and he argues that no victory is worth killing family. He sits down in the chariot and refuses to fight.",
+      "story_hook": "The greatest archer of his age stood between two armies, and his hands began to shake.",
+      "lesson": "Even the strongest people freeze; the Gita begins with a breakdown, not a hero."
+     },
+     "score": 2.6548,
+     "beat": "hook",
+     "role_fit": 0.8,
+     "meaning": "Arjuna stands in the chariot between two armies, and sees his own teachers, uncles, and cousins arrayed against him. He does not become a hero. His limbs shake, his mouth goes dry, and his body trembles. The teaching begins here, in this complete collapse. It says that even the strongest person can freeze when the ground gives way. What is real in you is not lost because your body is in shock.",
+     "for_you": "You wake at six and your body still reaches for a job that is gone. That is not weakness. It is the shock of a world turned upside down. What is real in you has not been taken away."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "yv.5.21.6",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 21.6",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "After the story of two grieving brothers, Vasishtha tells Rama how worry feeds itself.",
+     "sanskrit": "चिन्तनेनैधते चिन्ता त्विन्धनेनेव पावकः । नश्यत्यचिन्ततेनैव विनेन्धनमिवानलः ॥",
+     "line": "Worry grows when you feed it thought, like fire with fuel. Starve it, and it dies down.",
+     "translation": "Worry grows by thinking, as fire grows with fuel; and it dies by not being thought, as fire dies without fuel.",
+     "why": "Grief is love; endless rumination is the part we can learn to stop feeding.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      },
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.punya_pavana",
+      "title": "Punya consoles his younger brother Pavana after their parents die",
+      "summary": "Two brothers live with their parents by the Ganga. When their father and mother die, the elder, Punya, performs the rites calmly while the younger, Pavana, wanders the forest weeping. Punya gently helps him see that the bonds of 'mine' and 'not mine' are made in the mind. Vasishtha draws the lesson: worry grows when fed, and a full mind finds the world full.",
+      "story_hook": "When their parents died, one brother quietly lit the funeral fires and the other ran weeping into the forest.",
+      "lesson": "Grief is love; endless rumination is the part we can learn to stop feeding."
+     },
+     "score": 3.2853,
+     "beat": "diagnose",
+     "role_fit": 0.751,
+     "meaning": null,
+     "for_you": "What is real in you cannot be taken or lost; only what changes can be taken, and you are more than what changes."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_maha.165",
+     "ref": "Maha Upanishad 4.17",
+     "ref_iast": "Mahā Upaniṣad 4.17",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on people of steady goodness.",
+     "sanskrit": "नापदि ग्लानिमायान्ति निशि हेमाम्बुजं यथा । नेहन्ते प्रकृतादन्यद्रमन्ते शिष्टवर्त्मनि ॥",
+     "line": "Good people do not wilt in hard times, like a golden lotus that stays open at night.",
+     "translation": "In adversity they do not wilt, as the golden lotus does not close at night. They want nothing beyond what is at hand and delight in the path of the good.",
+     "why": "Start with calm or contentment, and the rest follows.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.maha.ribhu_calm",
+      "title": "Ribhu on calm and contentment",
+      "summary": "Ribhu answers Nidagha: freedom has four gatekeepers (calm, inquiry, contentment and good company), and winning one brings the rest. In a calm mind sorrow and anxiety vanish; restlessness is simply the mind's nature, and only your own mind can lift you out.",
+      "story_hook": "",
+      "lesson": "Start with calm or contentment, and the rest follows."
+     },
+     "score": 3.4382,
+     "beat": "steady",
+     "role_fit": 0.735,
+     "meaning": null,
+     "for_you": "Do what you can today, take refuge in what does not change, and meet each moment with courage instead of rehearsing the worst."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.4.7.9",
+     "ref": "Valmiki Ramayana · Kishkindha Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 7.9",
+     "family": "vr",
+     "speaker": "Sugriva",
+     "listener": "Ram",
+     "setting": "Sugriva, who has lost his own wife and kingdom, steadies a grieving Ram.",
+     "sanskrit": "व्यसने वार्थकृच्छ्रे वा भये वा जीवितान्तगे। विमृशंश्च स्वया बुद्ध्या धृतिमान् नावसीदति॥",
+     "line": "In loss, money trouble or fear, the steady person thinks it through and does not go under.",
+     "translation": "In disaster, in money trouble, in fear, even when life itself is at stake, the steady person who thinks things through with their own mind does not sink.",
+     "why": "Two people in trouble can carry each other.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      },
+      {
+       "id": "overthinking",
+       "label": "I can't stop overthinking"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.friendship_pact",
+      "title": "Ram and Sugriva's friendship",
+      "summary": "Ram and Sugriva swear friendship before a fire. Sugriva shows Ram the jewels Sita dropped; Ram breaks down, and Sugriva comforts him: in trouble the steady person thinks it through, and a friend is the greatest refuge.",
+      "story_hook": "Two exiles, each robbed of his wife and home, swore friendship over a fire.",
+      "lesson": "Two people in trouble can carry each other."
+     },
+     "score": 3.3058,
+     "beat": "steady",
+     "role_fit": 0.85,
+     "meaning": "Ram is broken. He has lost his wife and his kingdom, and he is weeping in front of Sugriva, who has lost his wife and his kingdom too. Sugriva steadies him. In trouble, the steady person thinks it through and does not go under. They do not pretend the loss is small. They simply use their own mind to look at it, and they do not sink. A friend is the greatest refuge, and two people in trouble can carry each other.",
+     "for_you": "Your mother does not know yet. You are alone with this. But you do not have to think it through alone. You can carry it with someone, even if it is just to sit in the same room and let the silence be what it is."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "rcm.2.163.doha.1",
+     "ref": "Ramcharitmanas · Ayodhya Kand",
+     "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 163",
+     "family": "rcm",
+     "speaker": "Vasishtha",
+     "listener": "Bharat",
+     "setting": "The sage Vasishtha to Bharat, shattered by his father's death and Ram's exile.",
+     "sanskrit": "तात हृदयँ धीरजु धरहु करहु जो अवसर आजु। उठे भरत गुर बचन सुनि करन कहेउ सबु साजु ॥",
+     "line": "Keep courage in your heart, and do what today asks of you.",
+     "translation": "\"Child, keep courage in your heart, and do what this moment asks of you today.\" Hearing his teacher, Bharat rose and had everything made ready.",
+     "why": "When head and heart disagree, go and face the person you think you wronged.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "anxiety_general",
+       "label": "I feel anxious most of the time"
+      }
+     ],
+     "prasang": {
+      "id": "rcm.p.vasishtha_bharat",
+      "title": "Bharat refuses the throne",
+      "summary": "After the funeral, Vasishtha, the ministers and Kausalya all urge Bharat to rule, as his father wished. Bharat says the advice is right and his heart still isn't at peace; the crown means nothing without Ram. He decides to go to the forest, admit his fault, and trust his brother to forgive.",
+      "story_hook": "Everyone agreed the throne was his, and Bharat could not bring himself to sit on it.",
+      "lesson": "When head and heart disagree, go and face the person you think you wronged."
+     },
+     "score": 3.44,
+     "beat": "act",
+     "role_fit": 0.834,
+     "meaning": "Bharat is shattered. His father is dead, and his brother is in exile. The ministers and his mother want him to take the throne, but his heart will not agree. Vasishtha tells him to keep courage in his heart and do what this moment asks of him. Bharat rises, has everything made ready, and decides to go to the forest to face the person he thinks he wronged. When head and heart disagree, he goes and faces the person instead of waiting.",
+     "for_you": "The morning still wakes you at six. Let it be what it is. Do not fight the hour. Speak to one person today, even if it is just to ask how they are. Then do one small thing that belongs to you, not to the old job."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.174.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.15",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "his father",
+     "setting": "A young man named Medhavin urges his father not to keep postponing what truly matters.",
+     "sanskrit": "श्वः कार्यमद्य कुर्वीत पूर्वाह्णे चापराह्णिकम् / नहि प्रतीक्षते मृत्युः कृतमस्य न वा कृतम्",
+     "line": "Do tomorrow's work today, and the afternoon's in the morning. Time doesn't wait for you to be ready.",
+     "translation": "Do tomorrow's work today, and the afternoon's work in the morning. Death does not wait to see whether your work is done or not.",
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "About not postponing what matters, not about working nonstop.",
+     "tone": "challenging",
+     "matched": [],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 3.251,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "A young man named Medhavin wakes his father. The father wants to wait until tomorrow to do what matters. Medhavin tells him to do tomorrow's work today, and the afternoon's in the morning. Death does not wait to see whether your work is done or not. Time slips away while we stay busy, so do what matters now. It is not about working nonstop. It is about doing what truly matters before the day is gone.",
+     "for_you": "You are home but not present. Do not wait for the old rhythm to return. Do one small thing today that belongs to you, not to the company. Let the morning be what it is, and then do one thing for yourself."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.exile_order",
+     "title": "Ram hears he is to be exiled",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Ram",
+      "Kaikeyi",
+      "Dasharath"
+     ],
+     "story_hook": "Ram walked in expecting a crown and walked out with a forest.",
+     "summary": "Ram is called to his father's room and finds him collapsed. Kaikeyi tells him the terms. Ram smiles: his brother gets the throne, he gets to meet sages in the forest, and he can keep his father's word. Kaikeyi reads his plain words as cunning, and Ram walks out feeling, the poet says, like an elephant freed from its post.",
+     "lesson": "A lost role can be met with grace; sometimes it even feels like freedom.",
+     "matched": [
+      {
+       "id": "layoff",
+       "label": "I lost my job"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.2.42.chaupai.1",
+      "ref": "Ramcharitmanas · Ayodhya Kand",
+      "ref_iast": "Rāmcaritmānas, Ayodhyā Kāṇḍ 42",
+      "family": "rcm",
+      "speaker": "Ram",
+      "listener": "Kaikeyi",
+      "setting": "Ram, told by Kaikeyi that Bharat will be crowned and he exiled, answers her calmly.",
+      "sanskrit": "भरतु प्रानप्रिय पावहिं राजू। बिधि सब बिधि मोहि सनमुख आजू॥ जौं न जाउँ बन ऐसेहु काजा। प्रथम गनिअ मोहि मूढ़ समाजा ॥",
+      "line": "My beloved brother gets the throne. Fate is favouring me in every way today.",
+      "translation": "...and Bharat, dear to me as life, will have the kingdom. Fate is favouring me in every way today. If I would not go to the forest even for such a cause, count me first among fools.",
+      "why": "A lost role can be met with grace; sometimes it even feels like freedom.",
+      "misuse": "Grace in loss is not pretending it doesn't hurt.",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "layoff",
+        "label": "I lost my job"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.exile_order",
+       "title": "Ram hears he is to be exiled",
+       "summary": "Ram is called to his father's room and finds him collapsed. Kaikeyi tells him the terms. Ram smiles: his brother gets the throne, he gets to meet sages in the forest, and he can keep his father's word. Kaikeyi reads his plain words as cunning, and Ram walks out feeling, the poet says, like an elephant freed from its post.",
+       "story_hook": "Ram walked in expecting a crown and walked out with a forest.",
+       "lesson": "A lost role can be met with grace; sometimes it even feels like freedom."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram walked in expecting a crown and walked out with a forest",
+     "teaser": "Ram walked in expecting a crown and walked out with a forest",
+     "for_you": "Your body still wakes at six for a post that is gone, carrying a habit of service that does not know how to stop. Let the morning belong to you now, not to a memory of the office."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The shock you cannot speak",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 191,
+   "llm": 4405,
+   "total": 12386,
+   "select": 7782
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You wake at six and your body still reaches for a job that is gone. That is not weakness. It is the shock of a world turned upside down. What is real in you has not been taken away."
+  ],
+  [
+   "scene",
+   "Arjuna stands in the chariot between two armies, and sees his own teachers, uncles, and cousins arrayed against him. He does not become a hero. His limbs shake, his mouth goes dry, and his body trembles. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "सीदन्ति मम गात्राणि मुखं च परिशुष्यति, वेपथुश्च शरीरे मे रोमहर्षश्च जायते. गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते, न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः."
+  ],
+  [
+   "line",
+   "In plain words: Shaking limbs, a dry mouth, a racing body: the Gita opens with a panic attack, not a hero."
+  ],
+  [
+   "unpack",
+   "This is easier said than done, because the body keeps living in a morning that has ended. The Gita does not begin with a hero. It begins with a breakdown. Even the strongest people freeze. What is real in you is not lost because your body is in shock."
+  ],
+  [
+   "for_you",
+   "Your body wakes at six because it is still loyal. It is not failing you. It is carrying the shock of a world turned upside down. What is real in you has not been taken away."
+  ],
+  [
+   "close",
+   "What is real in you has not been taken away."
+  ]
+ ],
+ "depth": {
+  "life": "You wake at six and your body reaches for a job that is gone. You are physically home but your mind is still in a ten-minute call that ended your life. The shame of hiding this from your mother sits with you in the morning quiet, while your children move through the house and you are not really there.",
+  "points": "The Gita opens with a breakdown, not a hero. Your limbs shake and your mouth goes dry because you are facing a world turned upside down. This is not a sign that you are weak. It is the body and mind waking up to a new and frightening reality, and the teaching begins right there in the trembling.",
+  "practice": "Sit by a window for five minutes and watch one thing move outside, like a leaf or a bird, and let your body feel the difference between that movement and the stillness of your chair.",
+  "question": "What would it feel like to let your body know that the morning has already changed?"
+ }
+}

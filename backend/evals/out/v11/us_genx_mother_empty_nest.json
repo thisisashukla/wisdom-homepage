@@ -1,0 +1,527 @@
+{
+ "persona": {
+  "id": "us_genx_mother_empty_nest",
+  "market": "USA (Texas)",
+  "generation": "Gen X",
+  "gender": "woman",
+  "who": "52, physician in Houston, came from Chennai at 26. Younger son just left for college. Marriage is fine but quiet. Mother in Chennai has early dementia.",
+  "profile": {
+   "feeling": "quiet",
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "parent_health"
+  },
+  "note": "dropped my younger one at college last week and drove home 4 hours in silence. my amma in Chennai doesn't always recognise me on video calls now. I'm between two people who don't need me the way they did",
+  "note_source": "voice",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and untethered",
+   "bridge": "What you are living with is what the texts call fear of what might happen, and that is where this week begins.",
+   "week_thesis": "Seven days from the silence and the confusion to a place where grief can be held and the mind can settle, even while the bonds keep changing.",
+   "week_beats": {
+    "hook": "You recognise the grief for both bonds and the restless mind, named without trying to fix it.",
+    "diagnose": "You see that grief is love with nowhere to go, and that the mind runs when it has no place to land.",
+    "steady": "You hold that the bond was real and the love is real, and that what is real in you cannot be lost.",
+    "act": "You try one act of letting the grief be held, and one of letting the mind rest, even for a moment.",
+    "story": "A son who sat with his father's fading and his children's leaving shows you that love does not end when recognition does."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "work"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "My parents are getting older far away",
+   "mirror": "You drove home in silence after dropping them off, and now your own mother does not know your face.",
+   "insight": "The silence after the drop-off is not emptiness. It is the shape of a bond that has changed, and your mind is still trying to hold both ends of it.",
+   "mechanism": "fear_of_loss",
+   "mechanism_label": "Fear of what might happen",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "parents_aging",
+     "label": "My parents are getting older far away",
+     "weight": 2.06,
+     "source": "note"
+    },
+    {
+     "id": "empty_nest",
+     "label": "My kids have left home",
+     "weight": 1.365,
+     "source": "note"
+    },
+    {
+     "id": "illness_family",
+     "label": "Someone I love is seriously ill",
+     "weight": 0.975,
+     "source": "chip"
+    },
+    {
+     "id": "loneliness",
+     "label": "I feel lonely",
+     "weight": 0.84,
+     "source": "note"
+    },
+    {
+     "id": "restless_mind",
+     "label": "I can't focus, my mind is restless",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "present_parent",
+     "label": "I'm physically home but not present with my kids",
+     "weight": 0.44,
+     "source": "note"
+    }
+   ],
+   "queries": {
+    "hook": "The grief of a bond that was real and is now changing, and a mind that has nowhere to land after two people no longer need you the way they did. My parents are getting older far away.",
+    "diagnose": "Grief is love with nowhere to go, and when two bonds change at once the mind runs like the wind, replaying what was and fearing what is to come.",
+    "steady": "Everything that comes together must part, and the bond you had was real; your worth is not in being needed, and what is real in you cannot be lost.",
+    "act": "Give your grief a place to go; speak the true thing to someone who will listen, and let your mind rest in the truth that what is real in you cannot be taken.",
+    "story": "A son who watched his father fade and his own children leave, who sat with the silence and learned that love does not end when recognition does."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The silence and the confusion",
+    "Love with nowhere to go",
+    "What is real cannot be lost"
+   ],
+   "seat": "",
+   "life_context": "",
+   "details": [
+    "drove home four hours in silence",
+    "mother in Chennai no longer recognises them on video calls",
+    "feels between two people who no longer need them"
+   ],
+   "age": "45_54",
+   "stages": [
+    "working",
+    "caring_parents"
+   ],
+   "flags": [
+    "mechanism:grief_without_death",
+    "hook:anchored_to_situation",
+    "core:invented_person",
+    "core_struggle_fallback",
+    "seat:invented_person",
+    "seat:missing",
+    "week_fit:8=0.6,14=0.3,66=0.6,49=0.3,15=0.0,18=0.0",
+    "week_fit:swapped=4",
+    "redo:3",
+    "redo_fixed:0",
+    "dropped:copied=1,repeat=2,soft_kept=3",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 1.9977,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands on the battlefield and looks at the faces of those he must fight. He tells Krishna that even if he wins the entire earth and rules over the gods, it will not touch the grief that is drying him up. He admits he sees no way to drive away this sorrow, and he asks Krishna to teach him what is right.",
+     "for_you": "You drove home in silence and felt untethered between the two bonds that still hold you. Right now, there is no answer that will dry up this grief. Let that be the first thing you hold: you do not need to know what comes next. You only need to name what is happening to you."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "up_chhandogya.492",
+     "ref": "Chhandogya Upanishad 6.8.2",
+     "ref_iast": "Chāndogya Upaniṣad 6.8.2",
+     "family": "up",
+     "speaker": "Uddalaka Aruni",
+     "listener": "Shvetaketu",
+     "setting": "Uddalaka explains sleep to his son.",
+     "sanskrit": "स यथा शकुनिः सूत्रेण प्रबद्धो दिशं दिशं पतित्वान्यत्रायतनमलब्ध्वा बन्धनमेवोपश्रयत एवमेव खलु सोम्य तन्मनो दिशं दिशं पतित्वान्यत्रायतनमलब्ध्वा प्राणमेवोपश्रयते प्राणबन्धनꣳ हि सोम्य मन इति ॥",
+     "line": "Like a bird on a string, the mind flies everywhere, finds no rest, and returns to the breath.",
+     "translation": "As a bird tied by a string flies in every direction and, finding no resting place anywhere else, settles down at the very place it is tied, so, dear one, the mind flies in every direction and, finding no resting place anywhere else, settles down on the breath; for the mind is tied to the breath.",
+     "why": "What is most real in you is unseen, everywhere, and the same in all.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.chhandogya.uddalaka_lessons",
+      "title": "Uddalaka's lessons: tat tvam asi",
+      "summary": "Uddalaka teaches his son through everyday experiments: a fast that dims the mind, a bird on a string, rivers merging in the sea, a banyan seed with nothing visible inside, salt dissolved in water, a blindfolded man finding his way home. Each lesson ends: 'That subtle essence is the self of all. You are that, Shvetaketu.'",
+      "story_hook": "",
+      "lesson": "What is most real in you is unseen, everywhere, and the same in all."
+     },
+     "score": 2.893,
+     "beat": "diagnose",
+     "role_fit": 0.611,
+     "meaning": "Uddalaka Aruni is sitting with his son Shvetaketu, trying to explain the mystery of sleep. He points to a bird tied by a string. The bird flies in every direction, searching for a place to land. It finds no rest anywhere else, so it finally settles back at the very place it is tied. Uddalaka says the mind is just like that bird. It flies everywhere, looking for comfort or answers, and when it finds nowhere to rest, it comes back to the breath. The breath is the string that holds it.",
+     "for_you": "The mind is flying right now, looking for a place to rest after the long drive and the silent calls. It cannot find a place to land because the bond with your parents has changed. Let it settle on the breath. That is the only string left to hold you."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.niti.66",
+     "ref": "Bhartrihari · Niti Shatakam",
+     "ref_iast": "Bhartṛhari, Nītiśatakam 66",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From the section on the good.",
+     "sanskrit": "सम्पत्सु महतां चित्तं भवत्युत्पलकोमलम् । आपत्सु च महाशैलशिलासङ्घातकर्कशम् ॥",
+     "line": "In good times be soft as a lotus. In hard times be firm as mountain rock.",
+     "translation": "In prosperity the heart of the great becomes soft as a lotus; in adversity, hard as a mass of mountain rock.",
+     "why": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "bh.p.niti.sujana",
+      "title": "Nitishatakam: On the good",
+      "summary": "Portraits of good people: steady in trouble, humble in success, giving in secret and speaking of others' kindness aloud. Company, the verses say, makes us what we are.",
+      "story_hook": "",
+      "lesson": "Be soft in good times and firm in bad ones, and let your good deeds stay quiet."
+     },
+     "score": 3.1457,
+     "beat": "steady",
+     "role_fit": 0.855,
+     "meaning": "Bhartrihari speaks to you from the section on the good. They are describing the quality of a steady person. In good times, the heart of such a person is soft as a lotus. In hard times, they become hard as a mass of mountain rock. The verse proposes that you meet success with softness and trouble with firmness, and let your good deeds stay quiet.",
+     "for_you": "The video calls where your mother no longer recognises you are a hard time. The silence on the four-hour drive home is a hard time. Be the mountain rock here. Hold the shape of your love firmly, without needing the screen to soften it back."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "vr.3.66.5",
+     "ref": "Valmiki Ramayana · Aranya Kanda",
+     "ref_iast": "Vālmīki Rāmāyaṇa, Araṇya Kāṇḍa 66.5",
+     "family": "vr",
+     "speaker": "Lakshman",
+     "listener": "Ram",
+     "setting": "After Sita is taken, Lakshman comforts Ram, who is lost in grief.",
+     "sanskrit": "आश्वसिही नरश्रेष्ठ प्राणिनः कस्य नापदः। संस्पृशन्त्यग्निवद् राजन् क्षणेन व्यपयान्ति च॥",
+     "line": "Take heart. Trouble touches everyone; it flares up like fire and passes.",
+     "translation": "Take heart, best of men. Which living being does trouble not touch? Troubles strike like fire, king, and pass in a moment.",
+     "why": "In devastating loss, a steady friend can stop grief from turning into destruction.",
+     "misuse": "",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "illness_family",
+       "label": "Someone I love is seriously ill"
+      }
+     ],
+     "prasang": {
+      "id": "vr.p.ram_loses_sita",
+      "title": "Ram's grief and Lakshman's counsel",
+      "summary": "Ram returns to an empty hut. He searches, questions trees and animals, breaks down and finally rages that he will destroy the world. Lakshman calms him: don't punish the whole world for one person's crime; trouble comes to everyone and passes.",
+      "story_hook": "He came back to the hut calling her name, and no one answered.",
+      "lesson": "In devastating loss, a steady friend can stop grief from turning into destruction."
+     },
+     "score": 2.9817,
+     "beat": "steady",
+     "role_fit": 0.795,
+     "meaning": "Lakshman finds Ram in a hut after Sita is taken, lost in grief and ready to rage. Lakshman speaks to him directly. He tells him to take heart because trouble touches every living being. It flares up like fire and then passes away in a moment. A steady friend can keep grief from turning into destruction by reminding the one in pain that loss is part of life, not a reason to burn everything down.",
+     "for_you": "The silence after the video call is not emptiness. It is the shape of a bond that has changed. The love you carry for your parents is real, and what is real in you cannot be lost. Hold that steady while the mind settles."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "ram_gita.46",
+     "ref": "Ram Gita 46 (Adhyatma Ramayana, Uttara Kanda 5)",
+     "ref_iast": "Rām Gītā 46",
+     "family": "gitas",
+     "speaker": "Rama",
+     "listener": "Lakshmana",
+     "setting": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion.",
+     "sanskrit": "विविक्त आसीन उपारतेन्द्रियो विनिर्जितात्मा विमलान्तराशयः । विभावयेदेकमनन्यसाधनो विज्ञानदृक्केवल आत्मसंस्थितः ॥",
+     "line": "Sit somewhere quiet, let the senses rest, and give your full attention to one thing.",
+     "translation": "Sitting in a quiet place, senses at rest, self-mastered, pure within, one should contemplate the One with undivided attention, resting in the Self.",
+     "why": "Quiet sitting and steady faith carry you until understanding becomes natural.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "restless_mind",
+       "label": "I can't focus, my mind is restless"
+      }
+     ],
+     "prasang": {
+      "id": "ram_gita.p.meditation_and_devotion",
+      "title": "Sit quietly, keep faith",
+      "summary": "Rama describes sitting in a quiet place with the senses at rest until the mind becomes like a still ocean, and tells Lakshmana that until he sees the divine everywhere, devotion keeps it alive in the heart.",
+      "story_hook": "",
+      "lesson": "Quiet sitting and steady faith carry you until understanding becomes natural."
+     },
+     "score": 2.8123,
+     "beat": "act",
+     "role_fit": 0.749,
+     "meaning": "After the war, Lakshmana finds Rama alone and asks how to cross the sea of confusion. Rama tells him to sit somewhere quiet, let the senses rest, and give full attention to one thing. He says to keep faith until understanding becomes natural, letting the mind become like a still ocean. The idea is that quiet sitting and steady faith carry you until clarity comes on its own.",
+     "for_you": "The drive home is four hours of silence. Let the mind rest in that quiet. Give your full attention to the road or the steering wheel, and let the grief sit beside you without needing to be fixed today."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.13.161.119",
+     "ref": "Mahabharata · Anushasana Parva · Anushasana",
+     "ref_iast": "Mahābhārata, Anuśāsana Parva 161.119",
+     "family": "mbh",
+     "speaker": "Bhishma",
+     "listener": "Yudhishthira",
+     "setting": "Asked how a person lives long and well, Bhishma describes everyday good conduct.",
+     "sanskrit": "वृद्धो ज्ञातिस्तथा मित्रमनाथा च स्वसा गुरुः / कुलीनः पण्डित इति रक्ष्या निःस्वः स्वशक्तितः / गृहे वासयितव्यास्ते धन्यमायुष्यमेव च",
+     "line": "An aging relative, a friend in need, a sister with no support: make room for them as you can.",
+     "translation": "An aged relative, a friend, a sister with no one to support her, a teacher, a person of good family or learning who has fallen poor: protect them as you are able, and give them a place in your home.",
+     "why": "A good life is built from daily conduct: kind words, respect for elders, no mockery.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.achara",
+      "title": "Bhishma on everyday conduct",
+      "summary": "Asked what makes a life long and good, Bhishma answers: conduct. Be slow to anger and honest, greet your parents each morning, never mock anyone, and remember that a cruel word lodges in the heart.",
+      "story_hook": "",
+      "lesson": "A good life is built from daily conduct: kind words, respect for elders, no mockery."
+     },
+     "score": 2.7972,
+     "beat": "act",
+     "role_fit": 0.629,
+     "meaning": "Bhishma is speaking to Yudhishthira in the quiet of his bed of arrows. He is asked what makes a life long and good, and he answers that it is conduct. He tells Yudhishthira to make room for an aging relative, a friend in need, a sister with no support, a teacher, or a person of good family who has fallen poor. He says to protect them as you are able, and to give them a place in your home. This is not about grand gestures.",
+     "for_you": "The silence after the video call is not nothing. It is the space where a bond still lives, even if it looks different. Today, let the grief sit beside you in that room. Give it a place. Let the silence be the room, and let the grief be the guest."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "rcm.p.janaka_vidai",
+     "title": "Janaka says goodbye to his daughter",
+     "kind": "story",
+     "family": "rcm",
+     "characters": [
+      "Janaka",
+      "Sunayana",
+      "Sita",
+      "Ram"
+     ],
+     "story_hook": "He was the most detached king in the world, and his daughter was leaving.",
+     "summary": "After the wedding the time comes for Sita to leave Mithila. The palace, even the pet parrots, are in tears. Janaka, known everywhere for his detachment, holds his daughter and loses all composure; his ministers have to remind him it is time.",
+     "lesson": "Even the wisest parent breaks a little when a child leaves home; that is love.",
+     "matched": [
+      {
+       "id": "parents_aging",
+       "label": "My parents are getting older far away"
+      },
+      {
+       "id": "empty_nest",
+       "label": "My kids have left home"
+      }
+     ],
+     "anchor": {
+      "id": "rcm.1.318.chaupai.3",
+      "ref": "Ramcharitmanas · Bal Kand",
+      "ref_iast": "Rāmcaritmānas, Bāl Kāṇḍ 318",
+      "family": "rcm",
+      "speaker": "Narrator",
+      "listener": "the reader",
+      "setting": "King Janaka, famous for his detachment, as his daughter Sita leaves home after her wedding.",
+      "sanskrit": "सीय बिलोकि धीरता भागी। रहे कहावत परम बिरागी॥ लीन्हि रायँ उर लाइ जानकी। मिटी महामरजाद ग्यान की ॥",
+      "line": "Known for his calm, he held his daughter close as she left, and all his wisdom gave way.",
+      "translation": "He was known as supremely detached, yet on seeing Sita his composure fled. The king held Janaki to his heart, and the great banks of his wisdom gave way.",
+      "why": "Even the wisest parent breaks a little when a child leaves home; that is love.",
+      "misuse": "",
+      "tone": "reflective",
+      "matched": [
+       {
+        "id": "parents_aging",
+        "label": "My parents are getting older far away"
+       },
+       {
+        "id": "empty_nest",
+        "label": "My kids have left home"
+       }
+      ],
+      "prasang": {
+       "id": "rcm.p.janaka_vidai",
+       "title": "Janaka says goodbye to his daughter",
+       "summary": "After the wedding the time comes for Sita to leave Mithila. The palace, even the pet parrots, are in tears. Janaka, known everywhere for his detachment, holds his daughter and loses all composure; his ministers have to remind him it is time.",
+       "story_hook": "He was the most detached king in the world, and his daughter was leaving.",
+       "lesson": "Even the wisest parent breaks a little when a child leaves home; that is love."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Janaka was the most detached king in the world, until his daughter Sita left home",
+     "teaser": "Janaka was the most detached king in the world, until his daughter Sita left home",
+     "for_you": "Your mother no longer knows you on video calls. The silence after the drop-off is not emptiness. It is the shape of a bond that has changed, and your mind is still trying to hold both ends of it."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The silence and the confusion",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 140,
+   "llm": 4555,
+   "total": 14342,
+   "select": 9639
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You drove four hours in silence and came back to a quiet that feels more like a loss. You feel untethered between the two people who still hold you. Right now, you are grieving the distance and the slow fading of the connection. That is exactly where you are."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield and looks at the faces of those he must fight. He tells Krishna that even if he wins the entire earth and rules over the gods, it will not touch the grief that is drying him up. He admits he sees no way to drive away this sorrow, and he asks Krishna to teach him what is right. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "Arjuna is looking at a victory that would change everything and he knows it will not save him. He admits he is dry, empty, and has no answer. This is where clarity begins. Admitting you do not know and asking for help is the first step out of the fog. This is easier said than done, because the mind wants to find a fix, a strategy, anything to stop the ache."
+  ],
+  [
+   "for_you",
+   "Right now, there is no answer that will dry up this grief. Let that be the first thing you hold. You do not need to know what comes next. You only need to name what is happening to you."
+  ],
+  [
+   "close",
+   "What if you let the untethered feeling simply be there?"
+  ]
+ ],
+ "depth": {
+  "life": "You are in the car after a long drive, the silence where your child used to sit, and the phone in your hand feels heavy. Your parents are far away, and you are grieving a role that is slipping away. You feel unmoored, unsure of what to do next.",
+  "points": "The grief you feel is not about failing. It is about the roles that defined you, like being a parent and a child, fading. You do not know how to be without them. Admitting you do not know is the first step to finding clarity.",
+  "practice": "Sit with the silence in the car for a few minutes, and ask yourself what you need right now.",
+  "question": "What would it feel like to ask for help without needing to have the answer?"
+ }
+}

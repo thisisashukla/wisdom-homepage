@@ -1,0 +1,532 @@
+{
+ "persona": {
+  "id": "in_millennial_builder_years_failing",
+  "market": "India (Gurgaon)",
+  "generation": "Millennial",
+  "gender": "man",
+  "who": "Ankur's own live test on 21 Oct 23:59: 35-44, working, running his own thing, raising kids, caring for parents. Tapped Searching. Day 1 on the old backend was Gita 9.22 (did not land); Day 2 Vidula (bang on).",
+  "profile": {
+   "feeling": "faith",
+   "age": "35_44",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "phone_hours": 3
+  },
+  "note": "I have been trying to build apps on the side for years now and none of them have really worked. I keep going but I don't know what I am doing wrong anymore. I have a job, kids, my parents to look after, and this thing I keep failing at.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "tired and quietly searching",
+   "bridge": "What you are living with is what the texts call stuck and not starting, and that is where this week begins.",
+   "week_thesis": "By the end of the week the question of what you are doing wrong has a name, and the one small step you can take today is clear.",
+   "week_beats": {
+    "hook": "You recognise the years of trying and the question of what you are doing wrong, named without judgment.",
+    "diagnose": "You see that waiting to feel ready is what keeps you stuck, and the unacted-on decision weighs more than the work.",
+    "steady": "You hold that the work is yours and the result is not, and that a small, steady effort is never lost.",
+    "act": "You try one small, clear task for today, done without waiting to feel ready.",
+    "story": "A person who has been trying to build for years shows you that taking one small step is how the years stop being wasted."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "confidence": 0.5,
+   "core_struggle": "Has been trying to build apps on the side for years without success, and now wonders what they are doing wrong while carrying a job, children, and caregiving.",
+   "mirror": "You keep going, but the years keep passing and nothing has worked, so the question is what you are doing wrong.",
+   "insight": "It isn't that you are doing something wrong. It's that the mind is caught between too many directions, and the side work has no clear path to begin with.",
+   "mechanism": "inertia_doubt",
+   "mechanism_label": "Stuck and not starting",
+   "secondary_mechanism": "restless_mind",
+   "situations": [
+    {
+     "id": "side_project",
+     "label": "I can't tell if continuing is discipline or stubbornness",
+     "weight": 1.76,
+     "source": "note"
+    },
+    {
+     "id": "procrastination",
+     "label": "I keep procrastinating",
+     "weight": 0.767,
+     "source": "note"
+    },
+    {
+     "id": "failure_project",
+     "label": "My project or startup failed",
+     "weight": 0.625,
+     "source": "note"
+    },
+    {
+     "id": "discipline",
+     "label": "I can't stay consistent",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.4,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The weight of years of trying on the side, with no success, and the question of what is being done wrong while everything else demands you.",
+    "diagnose": "When doubt and delay feed each other, waiting to feel ready keeps you stuck, and the unacted-on decision weighs more than the work.",
+    "steady": "The work is yours to do, and the result is not; even a small, steady effort is never lost, and the mind grows still when it has one clear path.",
+    "act": "Break the side work into one small, clear task for today; do it without waiting to feel ready; and let the result go.",
+    "story": "A person who has been trying to build something for years, caught between duty and desire, who finds one small step and takes it, and in taking it, begins again."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "llm",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "What is being done wrong",
+    "One small step",
+    "The effort that is yours"
+   ],
+   "seat": "a working parent caring for elders who keeps trying to build something on the side",
+   "life_context": "In midlife and building something of their own; they are a working parent with aging parents, and they have been trying to build apps on the side for years with no success, which now leaves them wondering what they are doing wrong.",
+   "details": [
+    "has tried building apps on the side for years",
+    "none have worked",
+    "keeps going despite the failures",
+    "has a job, children, and aging parents to care for"
+   ],
+   "age": "35_44",
+   "stages": [
+    "working",
+    "own_thing",
+    "raising_kids",
+    "caring_parents"
+   ],
+   "flags": [
+    "week_fit:7=0.6,26=0.6,50=0.3,31=0.3,8=0.3,6=0.3",
+    "week_fit:swapped=4",
+    "retried:2",
+    "redo:3",
+    "redo_fixed:0",
+    "dropped:fallback_line=3,repeat=3",
+    "for_you:7/7",
+    "meaning:6/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.7",
+     "ref": "Bhagavad Gita 2.7",
+     "ref_iast": "Bhagavad Gītā 2.7",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥",
+     "line": "I'm confused about what's right. Tell me plainly what's best; I'm ready to learn.",
+     "translation": "My nature is stricken by weakness and my mind is confused about what is right. I ask you: tell me for certain what is best for me. I am your student; I have come to you, teach me.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.929,
+     "beat": "hook",
+     "role_fit": 0.94,
+     "meaning": "Arjuna is on the field and has stopped. They are in tears and cannot move. They look at Krishna and say they are confused about what is right. They ask to be told plainly what is best and say they are ready to learn. The verse proposes that admitting you do not know and asking for help is where clarity begins.",
+     "for_you": "You have been trying for years and now you wonder what you are doing wrong. You do not know the next step. You are ready to ask. That readiness is the first step forward."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.5.135.26",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 135.26-27",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "Her son Sanjaya",
+     "setting": "Queen Vidula rouses her son Sanjaya, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "सर्वेषां कर्मणां तात फले नित्यमनित्यता / अनित्यमिति जानन्तो न भवन्ति भवन्ति च अथ ये नैव कुर्वन्ति नैव जातु भवन्ति ते / ऐकगुण्यमनीहायामभावः कर्मणां फलम्",
+     "line": "Every result is uncertain. Some who try succeed and some don't. Those who never try never do.",
+     "translation": "The result of every action is uncertain. Knowing this, some people act and succeed, some do not. But those who never act never succeed at all.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.4672,
+     "beat": "diagnose",
+     "role_fit": 0.85,
+     "meaning": "Queen Vidula finds her son Sanjaya lying on the ground, defeated and unwilling to fight after losing his kingdom. She tells him that the result of every action is uncertain, and some who try succeed while others fail. But those who never try never succeed at all. She wants him to see that waiting to feel ready is what keeps him stuck, and the unacted-on decision weighs more than the work.",
+     "for_you": "The years of trying and the failures have left you waiting to feel ready again. But the unacted-on decision weighs more than the work itself. A small, steady effort is never lost, and the result is not in your hands."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "yv.2.6.18",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Mumukṣu 6.18",
+     "family": "yv",
+     "speaker": "Vasishtha",
+     "listener": "Rama",
+     "setting": "Vasishtha teaches the disheartened young Rama that effort, not fate, shapes his life.",
+     "sanskrit": "ऐहिकः प्राक्तनं हन्ति प्राक्तनोऽद्यतनं बलात् । सर्वदा पुरुषस्पन्दस्तत्रानुद्वेगवाञ्जयी ॥",
+     "line": "Today's effort and yesterday's keep wrestling. Whoever stays calm through it wins.",
+     "translation": "Present effort overcomes the past, and the past can overpower the present. It is always a contest of human striving, and the one who stays calm wins.",
+     "why": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.paurusha",
+      "title": "Vasishtha on self-effort: fate is only your past effort",
+      "summary": "Vasishtha's first teaching to Rama is a long case for self-effort. What people call fate is simply the fruit of their own past effort, and present effort can overcome it, as the stronger of two rams wins. He also says not to torment yourself over what was beyond your power, and to steer your habits gently, like raising a child.",
+      "story_hook": "",
+      "lesson": "Your past effort shaped today; today's effort shapes tomorrow. Don't grieve what was never in your hands."
+     },
+     "score": 3.2104,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "Vasishtha teaches the young Rama that present effort overcomes the past, and the past can overpower the present. It is always a contest of human striving, and the one who stays calm wins. He tells Rama not to grieve what was never in his hands, and to steer his habits gently.",
+     "for_you": "The past has shaped today, but today's effort shapes tomorrow. You hold the work, and the result is not yours. A small, steady effort is never lost, and the one who stays calm through it wins."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "hans_gita.21",
+     "ref": "Hamsa Gita 21 (Mahabharata, Shanti 12.305.21 in our data)",
+     "ref_iast": "Haṃsa Gītā 21",
+     "family": "gitas",
+     "speaker": "Hamsa (the golden swan)",
+     "listener": "the Sadhyas",
+     "setting": "Bhishma tells Yudhishthira how a golden swan answered the Sadhyas' question about the best way to live.",
+     "sanskrit": "विमुच्यमानः पापेभ्यो धनेभ्य इव चन्द्रमाः । विरजाः कालमाकाङ्क्षन् धीरो धैर्येण सिध्यति ॥",
+     "line": "Like the moon slipping out of clouds, the steady one waits for the right time and succeeds.",
+     "translation": "Freed from wrongs like the moon from dark clouds, spotless and steady, waiting for the right time, the wise one succeeds through patience.",
+     "why": "Self-control, calm under insult and truth are the best way to live.",
+     "misuse": "Waiting for the right time is active patience, not giving up.",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      },
+      {
+       "id": "failure_project",
+       "label": "My project or startup failed"
+      }
+     ],
+     "prasang": {
+      "id": "hans_gita.p.swan_and_sadhyas",
+      "title": "The golden swan and the Sadhyas",
+      "summary": "On his bed of arrows, Bhishma answers Yudhishthira's question about truth, self-control and forgiveness with an old story: the creator, in the form of a golden swan, met the Sadhya gods and taught them that self-control, calm under insult, truth and good company are the best way to live.",
+      "story_hook": "A golden swan landed among the gods, and they asked it the one question they could not answer: what is the best thing a person can do?",
+      "lesson": "Self-control, calm under insult and truth are the best way to live."
+     },
+     "score": 3.2287,
+     "beat": "steady",
+     "role_fit": 0.785,
+     "meaning": "In the Mahabharata, Bhishma tells Yudhishthira a story about a golden swan and the gods called the Sadhyas. The swan teaches them that the best way to live is with self-control, truth, and calm under insult. The card line says that like the moon slipping out of clouds, the steady one waits for the right time and succeeds. This means that when you are free from inner turmoil, you wait with patience and clarity, and that steady waiting is not giving up. It is a quiet strength that lets the right moment come to you.",
+     "for_you": "No effort on the right path is ever wasted; even a little of it protects you and carries you forward."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.12.174.15",
+     "ref": "Mahabharata · Shanti Parva · Bhishma, Mokshadharma",
+     "ref_iast": "Mahābhārata, Śānti Parva 174.15",
+     "family": "mbh",
+     "speaker": "Medhavin",
+     "listener": "his father",
+     "setting": "A young man named Medhavin urges his father not to keep postponing what truly matters.",
+     "sanskrit": "श्वः कार्यमद्य कुर्वीत पूर्वाह्णे चापराह्णिकम् / नहि प्रतीक्षते मृत्युः कृतमस्य न वा कृतम्",
+     "line": "Do tomorrow's work today, and the afternoon's in the morning. Time doesn't wait for you to be ready.",
+     "translation": "Do tomorrow's work today, and the afternoon's work in the morning. Death does not wait to see whether your work is done or not.",
+     "why": "Life slips away while we stay busy. Do what matters now.",
+     "misuse": "About not postponing what matters, not about working nonstop.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.medhavin",
+      "title": "Medhavin: the son who woke his father",
+      "summary": "A father lays out the conventional path of study, family and ritual. His son Medhavin replies that days and nights fall like arrows and death takes people mid-task, so do tomorrow's work today and live truthfully now.",
+      "story_hook": "",
+      "lesson": "Life slips away while we stay busy. Do what matters now."
+     },
+     "score": 3.9349,
+     "beat": "act",
+     "role_fit": 0.831,
+     "meaning": "In the Mahabharata, a young man named Medhavin speaks to his father about how life slips away. The card line says do tomorrow's work today, and the afternoon's work in the morning. Death does not wait for you to be ready. This means that life is short and time does not pause for our excuses. The truth is that we must act on what matters now, while we still can.",
+     "for_you": "The self is never stuck; it is the mind that hesitates, while what you truly are is already free and able."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "yv.5.10.9",
+     "ref": "Yoga Vasishtha",
+     "ref_iast": "Yoga Vāsiṣṭha, Upaśama 10.9",
+     "family": "yv",
+     "speaker": "Janaka's doorkeeper",
+     "listener": "Janaka",
+     "setting": "As Janaka sits lost in thought, his doorkeeper reminds him the day's work is waiting.",
+     "sanskrit": "शीघ्रमुत्तिष्ठ भद्रं ते नियतं कार्यमाचर । न कालमतिवर्तन्ते महान्तः स्वेषु कर्मसु ॥",
+     "line": "Get up and do today's work. Great people don't let the hour slip by.",
+     "translation": "Rise quickly, bless you, and do your appointed work. The great do not let the time slip by in their own duties.",
+     "why": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "procrastination",
+       "label": "I keep procrastinating"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "prasang": {
+      "id": "yv.p.janaka",
+      "title": "King Janaka overhears the sages and keeps ruling, with a free mind",
+      "summary": "Walking in his spring garden, King Janaka overhears hidden sages singing about the self. Shaken, he climbs to his palace roof and questions everything he has lived for. When his doorkeeper calls him to the day's work, he decides not to run away: he gets up and does his duties, but with a mind that no longer clutches.",
+      "story_hook": "One spring morning, a king out for a walk overheard a song that he could not stop thinking about.",
+      "lesson": "You don't have to leave your life to change it. Do the day's work with a mind that doesn't clutch."
+     },
+     "score": 3.4227,
+     "beat": "act",
+     "role_fit": 0.766,
+     "meaning": "King Janaka sits on his palace roof, having heard sages sing of the self and lost his footing in the world he knew. The doorkeeper calls out, and Janaka gets up. The verse tells him to rise and do his appointed work. The great do not let the hour slip by. It does not ask him to leave his life to change it. It asks him to do the day's work with a mind that does not clutch.",
+     "for_you": "You're not lazy. Doubt is quietly spending the energy you would use to begin."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.bridge",
+     "title": "Building the bridge",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Ram",
+      "the Ocean",
+      "Nala",
+      "the monkey army"
+     ],
+     "story_hook": "The army stood on the shore with no boats, until a quiet monkey said he knew how to build a bridge.",
+     "summary": "Ram waits three days for the ocean to let him pass, then loses patience. The ocean reveals that Nala can build a bridge; Nala admits his skill and the whole army hauls trees and rocks for five days until the bridge reaches Lanka.",
+     "lesson": "Big things get built by many hands, once someone admits they know how.",
+     "matched": [
+      {
+       "id": "side_project",
+       "label": "I can't tell if continuing is discipline or stubbornness"
+      },
+      {
+       "id": "discipline",
+       "label": "I can't stay consistent"
+      }
+     ],
+     "anchor": {
+      "id": "vr.6.22.42",
+      "ref": "Valmiki Ramayana · Yuddha Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Yuddha Kāṇḍa 22.42",
+      "family": "vr",
+      "speaker": "Nala",
+      "listener": "Ram",
+      "setting": "The army is stuck at the ocean; Nala reveals he can build a bridge, which he had not mentioned.",
+      "sanskrit": "समर्थश्चाप्यहं सेतुं कर्तुं वै वरुणालये। तस्मादद्यैव बध्नन्तु सेतुं वानरपुङ्गवाः॥",
+      "line": "I can build this. Let's start today.",
+      "translation": "I too am able to build a bridge across the ocean. So let the best of the monkeys start building it this very day.",
+      "why": "Big things get built by many hands, once someone admits they know how.",
+      "misuse": "",
+      "tone": "challenging",
+      "matched": [
+       {
+        "id": "side_project",
+        "label": "I can't tell if continuing is discipline or stubbornness"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.bridge",
+       "title": "Building the bridge",
+       "summary": "Ram waits three days for the ocean to let him pass, then loses patience. The ocean reveals that Nala can build a bridge; Nala admits his skill and the whole army hauls trees and rocks for five days until the bridge reaches Lanka.",
+       "story_hook": "The army stood on the shore with no boats, until a quiet monkey said he knew how to build a bridge.",
+       "lesson": "Big things get built by many hands, once someone admits they know how."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Ram's army stood on the shore with no boats, until a quiet monkey spoke up",
+     "teaser": "Ram's army stood on the shore with no boats, until a quiet monkey spoke up",
+     "for_you": "The monkey Nala knew he could build the bridge. He said so, and the army moved. You have been waiting for the ocean to part. Admit you know how to build your app. Say the words, and start today. One small step is how the years stop being wasted."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What is being done wrong",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 125,
+   "llm": 4689,
+   "total": 12804,
+   "select": 7982
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are carrying years of side projects that never took off. You are working, raising children, and caring for your parents, and you are quietly wondering what you are doing wrong with your own time."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. He has dropped his bow. He is in tears and cannot move. Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "कार्पण्यदोषोपहतस्वभावःपृच्छामि त्वां धर्मसंमूढचेताः, यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मेशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्."
+  ],
+  [
+   "line",
+   "In plain words: I'm confused about what's right. Tell me plainly what's best; I'm ready to learn."
+  ],
+  [
+   "unpack",
+   "Arjuna admits his mind is confused and his nature is stricken by weakness. He tells Krishna he cannot tell what is right. He asks to be taught plainly what is best. This is easier said than done, because we usually think admitting confusion is a failure. But here it is the beginning of clarity. Not knowing and asking for help is where real direction starts."
+  ],
+  [
+   "for_you",
+   "You do not have to figure out the whole path of your apps today. You only have to stop and admit you are stuck. That admission is not failure. It is the beginning of a clearer plan."
+  ],
+  [
+   "close",
+   "What if you stopped trying to fix it and simply asked for help?"
+  ]
+ ],
+ "depth": {
+  "life": "You are trying to build something on the side while your job and your family take all your time. You have tried for years and the failures have left you wondering what is wrong with you. You are tired and you do not know where to put your energy next.",
+  "points": "Arjuna stands on the battlefield and admits he is confused about what is right. He stops trying to decide and asks for teaching. The texts show that clarity does not come from pushing harder. It comes from admitting you do not know and asking for help.",
+  "practice": "Pick one small part of your app and write down one question about it. Do not solve it today. Just ask it.",
+  "question": "What would it look like to ask for help instead of trying to fix it alone?"
+ }
+}

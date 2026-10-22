@@ -1,0 +1,503 @@
+{
+ "persona": {
+  "id": "ca_genz_queer_family",
+  "market": "Canada (Vancouver)",
+  "generation": "Gen Z",
+  "gender": "woman",
+  "who": "22, Indo-Canadian, came out to her Punjabi parents last year, they went silent, now talk only about weather. She still goes home for Diwali.",
+  "profile": {
+   "feeling": "replay",
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "phone_hours": 5,
+   "topic": "someone",
+   "follow": "parents"
+  },
+  "note": "since I told my parents about my girlfriend they haven't said one real thing to me. we talk about the weather. I still go home for diwali and sit at the table and it's like I'm a guest",
+  "note_source": "text",
+  "expect_stance": "wronged"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "none",
+   "stance": "wronged",
+   "gender": null,
+   "emotion": "hurt and excluded",
+   "bridge": "The silence and the weather talk are what the Upanishads call the world of names: a performance that covers a truth they will not speak, and you are being asked to live inside it.",
+   "week_thesis": "Seven days from being a guest at your own table to holding your own truth in the room, with the words to do it.",
+   "week_beats": {
+    "hook": "You recognise being treated as a guest in your own home, and the hurt of it, named without blame.",
+    "story": "A young person who was told they could not belong shows you what standing in your truth at the family table looks like."
+   },
+   "undisclosed": true,
+   "hinglish": false,
+   "texts": [],
+   "people": [
+    "parent",
+    "family",
+    "partner",
+    "friend",
+    "teacher",
+    "work"
+   ],
+   "confidence": 0.75,
+   "core_struggle": "An under-twenty-five who has come out to their parents and is now being treated like a guest in their own home.",
+   "mirror": "You still go home for Diwali, and at the table you are a guest in your own house.",
+   "insight": "It isn't the weather they talk about. It's the silence they keep, and the table where you are a guest is the price they are asking you to pay for their comfort.",
+   "mechanism": "dignity_denied",
+   "mechanism_label": "Being seen as less than you are",
+   "secondary_mechanism": "grief_attachment",
+   "situations": [
+    {
+     "id": "parents_expectations",
+     "label": "My parents' expectations weigh on me",
+     "weight": 1.603,
+     "source": "note"
+    },
+    {
+     "id": "parent_conflict",
+     "label": "I keep fighting with my parents",
+     "weight": 1.582,
+     "source": "note"
+    },
+    {
+     "id": "marriage_distance",
+     "label": "My marriage feels distant",
+     "weight": 0.6,
+     "source": "note"
+    },
+    {
+     "id": "anxiety_general",
+     "label": "I feel anxious most of the time",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "fear_failure",
+     "label": "I'm afraid of failing",
+     "weight": 0.45,
+     "source": "profile"
+    },
+    {
+     "id": "boundaries_family",
+     "label": "I need to set boundaries with family",
+     "weight": 0.4,
+     "source": "chip"
+    }
+   ],
+   "queries": {
+    "hook": "Being treated as a guest in your own home by the people who raised you, and the hurt of sitting at the table with them while the real thing goes unspoken.",
+    "diagnose": "When others see only a role, their picture is their smallness and not your measure; the harm deepens only when their picture begins to replace your own.",
+    "steady": "What you are cannot be cut smaller by what they see; your truth was never theirs to grant or to take away.",
+    "act": "Speak the true thing gently and firmly, hold your ground on who you are, and find the courage to sit at that table without shrinking to fit their silence.",
+    "story": "A young person who was told they could not belong, who stood in their truth at the family table and was proven right by the one who loved them most."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "template",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "The guest at home",
+    "Whose silence it is",
+    "More than a guest"
+   ],
+   "seat": "a student who is being treated like a guest in their own home",
+   "life_context": "Under twenty-five, studying and working; after telling their parents about their girlfriend, the conversations became about the weather, and at Diwali they sat at the table as if they were a guest in their own home.",
+   "details": [
+    "talk about weather instead of real things",
+    "still goes home for Diwali",
+    "sits at the table like a guest"
+   ],
+   "age": "u25",
+   "stages": [
+    "studying",
+    "working"
+   ],
+   "flags": [
+    "diagnose:diagnose_asks_wronged_to_accept",
+    "week_fit:47=0.3,1=0.0,92=0.6,17=0.3,7=0.6,15=0.3",
+    "week_fit:swapped=4",
+    "retried:1",
+    "redo:5",
+    "redo_fixed:3",
+    "dropped:accept=1,copied=1,fallback_line=1,missing=2,opening=1,repeat=2,slang=1,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.3.35",
+     "ref": "Bhagavad Gita 3.35",
+     "ref_iast": "Bhagavad Gītā 3.35",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to Arjuna on acting free of ego, like and dislike, in your own way.",
+     "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥",
+     "line": "Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous.",
+     "translation": "Better is one's own duty, even done imperfectly, than the duty of another well done. Better is death in one's own duty; the duty of another is full of fear.",
+     "why": "Your own path, imperfectly walked, beats a borrowed one.",
+     "misuse": "Not 'stay in the role your family or birth assigned you'. It's about being true to your own nature and calling.",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "parents_expectations",
+       "label": "My parents' expectations weigh on me"
+      },
+      {
+       "id": "boundaries_family",
+       "label": "I need to set boundaries with family"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p03.4",
+      "title": "The ignorant and the wise; act free of like and dislike",
+      "summary": "Krishna contrasts the attached and the wise, warns that ego claims credit for what nature does, and says to follow your own path rather than imitate another's.",
+      "story_hook": "",
+      "lesson": "Your own path, imperfectly walked, beats a borrowed one."
+     },
+     "score": 2.2944,
+     "beat": "hook",
+     "role_fit": 0.0,
+     "meaning": "Krishna is speaking to Arjuna on the battlefield, telling them to act without being trapped by what others think. They say that living someone else's life, even if it looks perfect from the outside, brings only fear. It is better to follow your own path, even if you stumble along the way. The truth underneath is that borrowed lives are dangerous. You are not meant to perform a role that does not fit you.",
+     "for_you": "You sit at your own table during Diwali and the talk turns to the weather. That silence asks you to perform a role that is not yours. Let them talk about the sky while you hold the truth of who you are."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "bg.18.16",
+     "ref": "Bhagavad Gita 18.16",
+     "ref_iast": "Bhagavad Gītā 18.16",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Right after naming the five causes of any action, Krishna warns about the person who ignores four of them.",
+     "sanskrit": "तत्रैवं सति कर्तारमात्मानं केवलं तु यः । पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः ॥",
+     "line": "If you think you alone made it happen, or alone made it fail, you're not seeing the whole picture.",
+     "translation": "That being so, whoever, through an untrained understanding, sees himself alone as the doer does not truly see.",
+     "why": "You are one cause among five; own your part, not the whole outcome.",
+     "misuse": "Not a way to dodge responsibility; you are still one of the five causes.",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bg.p18.2",
+      "title": "What makes an action happen",
+      "summary": "Every action has five causes: the setting, the doer, the instruments, the efforts, and providence. Seeing oneself as the only doer is a mistake.",
+      "story_hook": "",
+      "lesson": "You are one cause among five; own your part, not the whole outcome."
+     },
+     "score": 2.7173,
+     "beat": "diagnose",
+     "role_fit": 0.681,
+     "meaning": "Krishna speaks to Arjuna after listing the five causes of any action. He says that if you believe you alone make things happen or alone make them fail, you are not seeing the whole picture. You are one cause among five, so you cannot own the entire outcome. The idea is to hold your own part without claiming the whole burden.",
+     "for_you": "The silence at your table is not only your parents' doing. They are one cause among five. You are another. You can see the whole picture without taking the whole weight of their comfort onto your own shoulders."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bh.vairagya.92",
+     "ref": "Bhartrihari · Vairagya Shatakam",
+     "ref_iast": "Bhartṛhari, Vairāgyaśatakam 92",
+     "family": "bh",
+     "speaker": "Bhartrihari",
+     "listener": "Reader",
+     "setting": "From 'The Way of the Free Ascetic'.",
+     "sanskrit": "ब्रह्माण्डं मण्डलीमात्रं किं लोभाय मनस्विनः । शफरीस्फुरितेनाब्धिः क्षुब्धो न खलु जायते ॥",
+     "line": "The ocean is not stirred by a small fish's flick. Petty things needn't shake you.",
+     "translation": "For the high-minded the whole universe is a mere ring; what is there in it to be greedy for? The ocean is not churned up by the flicker of a little fish.",
+     "why": "Let others' labels and small things pass; contentment makes you rich.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "bh.p.vairagya.avadhuta",
+      "title": "Vairagyashatakam: The way of the free ascetic",
+      "summary": "Portraits of the wandering sage: unbothered when people argue over his caste, sleeping under the sky like a king, and finally bidding farewell to the five elements.",
+      "story_hook": "",
+      "lesson": "Let others' labels and small things pass; contentment makes you rich."
+     },
+     "score": 3.1663,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Bhartrihari writes that for the high-minded, the whole universe is a mere ring. The ocean is not churned up by the flicker of a little fish. Small things and petty labels do not need to shake you. You can let them pass and remain steady.",
+     "for_you": "The weather talk is a flicker. You do not need to be shaken by it. You can hold your own truth and let their small performance pass."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "ashtavakra.1.16",
+     "ref": "Ashtavakra Gita 1.16",
+     "ref_iast": "Aṣṭāvakra Gītā 1.16",
+     "family": "gitas",
+     "speaker": "Ashtavakra",
+     "listener": "Janaka",
+     "setting": "King Janaka asks the young sage Ashtavakra how a person becomes free.",
+     "sanskrit": "त्वया व्याप्तमिदं विश्वं त्वयि प्रोतं यथार्थतः । शुद्धबुद्धस्वरूपस्त्वं मा गमः क्षुद्रचित्तताम् ॥",
+     "line": "You are pure awareness, wider than any worry. Don't let your mind shrink into pettiness.",
+     "translation": "This whole universe is pervaded by you and strung on you. By nature you are pure awareness; do not fall into smallness of mind.",
+     "why": "You are more than your roles and worries; freedom starts with how you see yourself.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "ashtavakra.p.frame",
+      "title": "Janaka asks the boy-sage how to be free",
+      "summary": "King Janaka, ruler of Mithila, asks the young sage Ashtavakra three questions: how to gain wisdom, freedom and dispassion. Ashtavakra answers at once: you are not the body or your roles but the awareness that watches them, and freedom is available now.",
+      "story_hook": "A powerful king bowed before a boy whose body was bent in eight places, and asked him how to be free.",
+      "lesson": "You are more than your roles and worries; freedom starts with how you see yourself."
+     },
+     "score": 3.0938,
+     "beat": "steady",
+     "role_fit": 0.565,
+     "meaning": "King Janaka sits before the young sage Ashtavakra, asking how a person becomes truly free. Ashtavakra tells him that this whole world is strung on his being, and by nature he is pure awareness. He warns him not to let his mind shrink into smallness. The point is that you are not your roles or your worries, and freedom begins with how you see yourself.",
+     "for_you": "The silence at your own table is not a small thing. It is a performance that covers a truth they will not speak, and you are being asked to live inside it. But you are the awareness that watches this happen. You are wider than the weather they talk about. Hold onto that."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.133.7",
+     "ref": "Mahabharata · Udyoga Parva · Vidula's counsel",
+     "ref_iast": "Mahābhārata, Udyoga Parva 133.7",
+     "family": "mbh",
+     "speaker": "Vidula",
+     "listener": "her son Sanjaya",
+     "setting": "Queen Vidula rouses her son, who lies defeated and despairing after losing his kingdom.",
+     "sanskrit": "माऽऽत्मानमवमन्यस्व मैनमल्पेन बीभरः / मनः कृत्वा सुकल्याणं मा भैस्त्वं प्रतिसंहर",
+     "line": "Don't think less of yourself or settle for little. Set your mind on something good, and stop fearing.",
+     "translation": "Do not hold yourself in contempt, and do not keep it going on too little. Set your mind on what is truly good; don't be afraid. Pull yourself together.",
+     "why": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "fear_failure",
+       "label": "I'm afraid of failing"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidula",
+      "title": "Vidula rouses her defeated son",
+      "summary": "Kunti sends Yudhishthira the old story of Queen Vidula, who finds her son lying defeated after losing his kingdom. She shames, then reasons, then encourages him until he rises and fights for it again.",
+      "story_hook": "A prince lay in bed after losing everything, until his mother walked in and refused to let him stay there.",
+      "lesson": "Past failure doesn't define you. Results are uncertain, but those who never try never succeed."
+     },
+     "score": 3.6151,
+     "beat": "act",
+     "role_fit": 0.901,
+     "meaning": null,
+     "for_you": "Speak the true thing gently and firmly, hold your ground on what is yours, and do your own duty without shrinking to fit the picture they hold."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "up_maha.532",
+     "ref": "Maha Upanishad 6.64-65",
+     "ref_iast": "Mahā Upaniṣad 6.64-65",
+     "family": "up",
+     "speaker": "Ribhu",
+     "listener": "Nidagha",
+     "setting": "Ribhu on how a free person moves through the world.",
+     "sanskrit": "प्राप्तकर्मकरो नित्यं शत्रुमित्रसमानदृक् । ईहितानीहितैर्मुक्तो न शोचति न काङ्क्षति ॥ सर्वस्याभिमतं वक्ता चोदितः पेशलोक्तिमान् । आशयज्ञश्च भूतानां संसारे नावसीदति ॥",
+     "line": "Do the work in front of you, speak gently, read people's hearts, and you won't sink in the world.",
+     "translation": "Always doing the work that comes, seeing friend and foe alike, free of wanting and not-wanting, such a one neither grieves nor craves. Saying what is agreeable to all, speaking gently when asked, knowing the intent of others' hearts, such a one does not sink in the world.",
+     "why": "Live fully in the world while staying unhurried inside.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [],
+     "prasang": {
+      "id": "up.p.maha.ribhu_living",
+      "title": "How a free person lives",
+      "summary": "Ribhu describes how a free person lives among others: letting go of what is lost, taking up what comes, doing the work at hand, speaking gently, busy outside and calm inside, and treating the whole world as family.",
+      "story_hook": "",
+      "lesson": "Live fully in the world while staying unhurried inside."
+     },
+     "score": 3.3445,
+     "beat": "act",
+     "role_fit": 0.839,
+     "meaning": "In a quiet conversation about how a free person moves through the world, Ribhu tells Nidagha to do the work in front of you, speak gently, and read the intent of others' hearts. A free person does not sink because they let go of wanting and not-wanting, taking up what comes and doing the work at hand. They speak what is agreeable, act without craving, and remain calm inside the noise.",
+     "for_you": "At your own table, do the work in front of you. Speak gently with your parents about the weather. But read their hearts. They are not ready to meet you. Do not sink into their silence. Stay calm inside while you are there. You do not need to fight them today."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "vr.p.bharata_blamed",
+     "title": "Bharata wrongly blamed",
+     "kind": "story",
+     "family": "vr",
+     "characters": [
+      "Bharata",
+      "Kaikeyi",
+      "Kausalya"
+     ],
+     "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+     "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+     "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+     "matched": [
+      {
+       "id": "parent_conflict",
+       "label": "I keep fighting with my parents"
+      }
+     ],
+     "anchor": {
+      "id": "vr.2.75.15",
+      "ref": "Valmiki Ramayana · Ayodhya Kanda",
+      "ref_iast": "Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa 75.15",
+      "family": "vr",
+      "speaker": "Bharata",
+      "listener": "Kausalya",
+      "setting": "Grieving Kausalya accuses Bharata of plotting Ram's exile; he knew nothing of it.",
+      "sanskrit": "आर्ये कस्मादजानन्तं गर्हसे मामकल्मषम्। विपुलां च मम प्रीतिं स्थितां जानासि राघवे॥",
+      "line": "Why blame me, who knew nothing? You know what I feel for him.",
+      "translation": "Noble lady, why do you blame me, who knew nothing and did nothing wrong? You know how deep my love for Ram is.",
+      "why": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known.",
+      "misuse": "",
+      "tone": "steadying",
+      "matched": [
+       {
+        "id": "parent_conflict",
+        "label": "I keep fighting with my parents"
+       }
+      ],
+      "prasang": {
+       "id": "vr.p.bharata_blamed",
+       "title": "Bharata wrongly blamed",
+       "summary": "Bharata turns on his mother in fury. Then Ram's grieving mother assumes he plotted it all, and her words cut him like a needle in a wound. He falls at her feet and swears his innocence until she believes him.",
+       "story_hook": "He had done nothing, and the one person whose good opinion he needed was sure he had done it all.",
+       "lesson": "Being blamed for what you did not do hurts most from those you love; stay and make your truth known."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Bharata had done nothing, and Kausalya was sure he had done it all",
+     "teaser": "Bharata had done nothing, and Kausalya was sure he had done it all",
+     "for_you": "Bharata was blamed by the one person he loved most. He did not do the wrong thing, but he was still treated like a guest. He stayed in the room and made his truth known. You are at your own table, but they are asking you to pay for their comfort."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "The guest at home",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 147,
+   "llm": 4243,
+   "total": 17097,
+   "select": 12698
+  }
+ },
+ "script": [
+  [
+   "open",
+   "You are sitting at your own table for Diwali and the talk turns to the weather. It is a small thing, but it sits heavy. You are being treated like a guest in your own home, and that hurt is real."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield. He is confused. He wants to walk away from the fight. Krishna steps forward and speaks to him. And Krishna replied:"
+  ],
+  [
+   "sanskrit",
+   "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्, स्वधर्मे निधनं श्रेयः परधर्मो भयावहः."
+  ],
+  [
+   "line",
+   "In plain words: Better your own path done imperfectly than someone else's done perfectly. Borrowed lives are dangerous."
+  ],
+  [
+   "unpack",
+   "Krishna says that it is better to walk your own path, even if you stumble. A borrowed life, even one done perfectly, is full of fear. Living for someone else's approval means you are always afraid of being found out."
+  ],
+  [
+   "for_you",
+   "Let them talk about the weather. That silence is a performance, and you do not have to play along. Hold your own truth right there at the table."
+  ],
+  [
+   "close",
+   "You do not have to perform a borrowed life."
+  ]
+ ],
+ "depth": {
+  "life": "You sit at your own table during Diwali and the talk turns to the weather. That silence asks you to perform a role that is not yours. Let them talk about the sky while you hold the truth of who you are.",
+  "points": "The world of names demands you play a part. But the truth is that your own path, walked imperfectly, is the only one that keeps you from drowning in borrowed fear.",
+  "practice": "Sit with your truth for one minute before you enter the room. Let it be the quiet you carry.",
+  "question": "What is the one truth you hold about yourself that they refuse to speak?"
+ }
+}

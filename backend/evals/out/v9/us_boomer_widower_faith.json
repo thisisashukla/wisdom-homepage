@@ -1,0 +1,524 @@
+{
+ "persona": {
+  "id": "us_boomer_widower_faith",
+  "market": "USA (California)",
+  "generation": "Boomer",
+  "gender": "man",
+  "who": "71, retired engineer in Fremont, came to the US in 1979. Wife passed last year. Goes to the temple, volunteers. Grandkids don't speak much Hindi.",
+  "profile": {
+   "feeling": "faith",
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "phone_hours": 2,
+   "topic": "missing",
+   "follow": "someone_lost"
+  },
+  "note": "Lost my wife of 44 years in March. I do the temple seva, I keep busy. But the evenings. I want to understand what the Gita actually says about where she is now, not what people tell me to make me feel better.",
+  "note_source": "text",
+  "expect_stance": "struggle"
+ },
+ "plan": {
+  "understanding": {
+   "version": 1,
+   "source": "llm",
+   "note_quality": "useful",
+   "risk": "distress",
+   "stance": "struggle",
+   "gender": null,
+   "emotion": "grieving and searching",
+   "bridge": "What you are living with is what the texts call missing someone you love, and that is where this week begins.",
+   "week_thesis": "Seven days from the evenings of loss to the Gita's own words on what cannot be born and what cannot be held.",
+   "week_beats": {
+    "hook": "You recognise the evenings and the search for the Gita's own words, not comfort.",
+    "diagnose": "You see that the Gita does not say the bond ends, it says what cannot be born cannot die.",
+    "steady": "You hold that what is real in you cannot be lost.",
+    "act": "You try sitting with the Gita's own words in the evening instead of filling the room.",
+    "story": "A king who lost everyone he loved and asked where they had gone shows you what the Gita says about what cannot die."
+   },
+   "undisclosed": false,
+   "hinglish": false,
+   "texts": [
+    "bg"
+   ],
+   "confidence": 0.6,
+   "core_struggle": "A widower who keeps busy with temple seva but is alone in the evenings, and wants to understand what the Gita says about his wife's place now.",
+   "mirror": "What you told us: lost his wife of years in March.",
+   "insight": "The ache is this big because your love was this real. Grief is love that has nowhere left to go.",
+   "mechanism": "grief_attachment",
+   "mechanism_label": "Missing someone you love",
+   "secondary_mechanism": null,
+   "situations": [
+    {
+     "id": "grief_general",
+     "label": "I'm grieving someone I loved",
+     "weight": 2.428,
+     "source": "note"
+    },
+    {
+     "id": "reconnect_faith",
+     "label": "I want to reconnect with my roots",
+     "weight": 1.5,
+     "source": "note"
+    },
+    {
+     "id": "retirement",
+     "label": "I've retired and feel lost",
+     "weight": 0.745,
+     "source": "note"
+    },
+    {
+     "id": "purpose_search",
+     "label": "I don't know my purpose",
+     "weight": 0.55,
+     "source": "profile"
+    },
+    {
+     "id": "grief_parent",
+     "label": "I lost a parent",
+     "weight": 0.48,
+     "source": "chip"
+    },
+    {
+     "id": "no_meaning",
+     "label": "Nothing is wrong but nothing feels meaningful",
+     "weight": 0.35,
+     "source": "profile"
+    }
+   ],
+   "queries": {
+    "hook": "The evenings are where the loss lives, and the search for what the Gita says about her now, not what people say to make it easier.",
+    "diagnose": "Grief is love with nowhere to go; everything that comes together must part, and the heart aches because the bond was real.",
+    "steady": "What is real in you cannot be lost; the love you had is not a thing that passes, and it does not end with the body.",
+    "act": "Read the verses on the self that cannot be cut, burned, wet or dried; sit with them in the evening instead of filling the room, and let the Gita's own words stand in place of what others say.",
+    "story": "A king who lost everything he loved, who asked the Gita where his people had gone, and was told what cannot die cannot be held."
+   },
+   "query_sources": {
+    "hook": "llm",
+    "diagnose": "template",
+    "steady": "llm",
+    "act": "llm",
+    "story": "llm"
+   },
+   "weeks": [
+    "What the Gita says",
+    "What cannot die",
+    "What you are beyond the loss"
+   ],
+   "seat": "a widower who has kept busy with seva but is alone in the evenings",
+   "life_context": "",
+   "details": [
+    "does temple seva and keeps busy",
+    "struggles with the evenings"
+   ],
+   "age": "55p",
+   "stages": [
+    "retired"
+   ],
+   "flags": [
+    "gender:ignored_guess",
+    "stance:seeking_over_pain",
+    "diagnose:diagnose_not_causal",
+    "mirror:fallback",
+    "week_fit:8=1.0,40=1.0,26=0.3,30=0.0,62=1.0,24=0.0",
+    "week_fit:swapped=3",
+    "redo:3",
+    "redo_fixed:2",
+    "day1:third_try",
+    "dropped:gendered=1,invented=1,repeat=2,soft_kept=3",
+    "for_you:7/7",
+    "meaning:5/6",
+    "script:written:5/5"
+   ]
+  },
+  "days": [
+   {
+    "day": 1,
+    "day_in_week": 1,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "hook",
+    "verse": {
+     "id": "bg.2.8",
+     "ref": "Bhagavad Gita 2.8",
+     "ref_iast": "Bhagavad Gītā 2.8",
+     "family": "bg",
+     "speaker": "Arjuna",
+     "listener": "Krishna",
+     "setting": "Krishna to Arjuna, who has collapsed in tears on the battlefield and refuses to fight.",
+     "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम् ॥",
+     "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
+     "translation": "I see nothing that could drive away this sorrow that is drying up my senses, not even an unrivalled, prosperous kingdom on earth or rule over the gods.",
+     "why": "Admitting you don't know and asking for help is where clarity begins.",
+     "misuse": "",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "no_meaning",
+       "label": "Nothing is wrong but nothing feels meaningful"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.1",
+      "title": "Krishna and Arjuna on Arjuna's faint-heartedness",
+      "summary": "Krishna challenges Arjuna's despair. Arjuna admits he is confused about what is right, cannot tell which choice is better, and asks Krishna to teach him.",
+      "story_hook": "",
+      "lesson": "Admitting you don't know and asking for help is where clarity begins."
+     },
+     "score": 2.7172,
+     "beat": "hook",
+     "role_fit": 0.915,
+     "meaning": "Arjuna stands on the battlefield, his body trembling, his mind refusing to move. He tells Krishna that even ruling the heavens or owning all the earth would not heal the grief that is drying him up inside. He admits he sees no way out, and he asks Krishna to teach him what to do. The verse proposes that the moment you admit you do not know and ask for help is the moment clarity begins.",
+     "for_you": "The same emptiness arrives in your quiet evenings. The texts say this is the beginning of understanding, not the end of it."
+    },
+    "story": null
+   },
+   {
+    "day": 2,
+    "day_in_week": 2,
+    "week": 1,
+    "level": "situation",
+    "phase": "see",
+    "beat": "diagnose",
+    "verse": {
+     "id": "mbh.12.27.40",
+     "ref": "Mahabharata · Shanti Parva · Shanti: Consolation of Yudhishthira",
+     "ref_iast": "Mahābhārata, Śānti Parva 27.40",
+     "family": "mbh",
+     "speaker": "Ashma (quoted by Vyasa)",
+     "listener": "King Janaka",
+     "setting": "The sage Ashma answers King Janaka, who asks how to bear the loss of family and wealth.",
+     "sanskrit": "क्वासे क्व च गमिष्यामि कोऽन्वहं किमिहास्थितः / कस्मात्किमनुशोचेयमित्येवं स्थापयेन्मनः",
+     "line": "In grief, ask: where did I come from, where am I going, who am I? Let that steady you.",
+     "translation": "'Where was I before? Where will I go? Who am I, really, and why am I here? Why should I grieve, and for what?' Ask these, and steady the mind.",
+     "why": "Days don't come back. Grieve, then steady yourself with the people still in front of you.",
+     "misuse": "These questions are for steadying grief, not for dismissing it; mourning is natural.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "purpose_search",
+       "label": "I don't know my purpose"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.ashma_gita",
+      "title": "Ashma Gita: the sage on bearing loss",
+      "summary": "Vyasa tells the grieving Yudhishthira how the sage Ashma consoled King Janaka: pain comes from what we didn't want or what we lost; meetings end; days don't return; ask who you are and steady the mind.",
+      "story_hook": "",
+      "lesson": "Days don't come back. Grieve, then steady yourself with the people still in front of you."
+     },
+     "score": 3.3686,
+     "beat": "diagnose",
+     "role_fit": 0.7,
+     "meaning": "The sage Ashma speaks to King Janaka, who asks how to bear the loss of family and wealth. Ashma says that pain comes from what we did not want or what we lost, and that meetings end. He tells the king to ask where he came from, where he is going, who he is, and why he grieves. He says to ask these questions and steady the mind.",
+     "for_you": "You have kept busy with seva during the day, and now the evenings hold the silence. You are not wrong to feel this ache. Let the questions settle into the quiet. Ask where you came from and where you are going. Let the answers steady your mind tonight."
+    },
+    "story": null
+   },
+   {
+    "day": 3,
+    "day_in_week": 3,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "bg.2.20",
+     "ref": "Bhagavad Gita 2.20",
+     "ref_iast": "Bhagavad Gītā 2.20",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna to the grieving Arjuna, on what in us is never born and never dies.",
+     "sanskrit": "न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणोन हन्यते हन्यमाने शरीरे ॥",
+     "line": "The self was never born and never dies. It is not killed when the body is.",
+     "translation": "It is never born and never dies; having been, it will not cease to be. Unborn, eternal, constant and ancient, it is not slain when the body is slain.",
+     "why": "What you truly are outlasts every loss and every passing pain.",
+     "misuse": "Not a reason to skip mourning or to take loss lightly; it is comfort about what remains.",
+     "tone": "reflective",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      },
+      {
+       "id": "grief_parent",
+       "label": "I lost a parent"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p02.2",
+      "title": "The teaching of the deathless Self (Sankhya)",
+      "summary": "Krishna begins his teaching: the self is eternal, bodies change like clothes, and pleasure and pain come and go. Grief for what must pass should not overwhelm us.",
+      "story_hook": "",
+      "lesson": "What you truly are outlasts every loss and every passing pain."
+     },
+     "score": 3.4041,
+     "beat": "steady",
+     "role_fit": 0.474,
+     "meaning": "Krishna speaks to the grieving Arjuna, telling him that the self was never born and never dies. He says it is not slain when the body is slain. What you truly are outlasts every loss and every passing pain.",
+     "for_you": "You are sitting in the quiet of the evening, and the grief is real. But the part of you that loved her, the part that is still here, cannot be taken away. Hold to that. It is the one thing that remains."
+    },
+    "story": null
+   },
+   {
+    "day": 4,
+    "day_in_week": 4,
+    "week": 1,
+    "level": "situation",
+    "phase": "steady",
+    "beat": "steady",
+    "verse": {
+     "id": "up_kath.1.2.22",
+     "ref": "Katha Upanishad 1.2.22",
+     "ref_iast": "Kaṭha Upaniṣad 1.2.22",
+     "family": "up",
+     "speaker": "Yama",
+     "listener": "Nachiketa",
+     "setting": "Yama on the self within changing bodies.",
+     "sanskrit": "अशरीरँ शरीरेष्वनवस्थेष्ववस्थितम् । महान्तं विभुमात्मानं मत्वा धीरो न शोचति ॥",
+     "line": "Knowing what stays steady inside all that changes, the wise do not grieve.",
+     "translation": "Knowing the self as bodiless within bodies, steady among the unsteady, great and all-pervading, the wise one does not grieve.",
+     "why": "What you most are cannot be lost, and a quiet, honest life is how you find it.",
+     "misuse": "",
+     "tone": "steadying",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "up.p.katha.deathless_self",
+      "title": "Yama on what does not die",
+      "summary": "Death himself explains that the true self is never born and never dies, and is not killed when the body is. It is found not by cleverness or study but by a calm, honest life.",
+      "story_hook": "",
+      "lesson": "What you most are cannot be lost, and a quiet, honest life is how you find it."
+     },
+     "score": 3.1059,
+     "beat": "steady",
+     "role_fit": 0.825,
+     "meaning": "Yama tells the young seeker Nachiketa that the true self is bodiless within the body. It remains steady and great even when the body changes and falls away. The wise understand this and do not grieve, because what they most are cannot be lost.",
+     "for_you": "The evenings are empty because the room is quiet, not because the love was small. The ache is large because the love was real. What stays steady inside you cannot be taken away."
+    },
+    "story": null
+   },
+   {
+    "day": 5,
+    "day_in_week": 5,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "bg.18.62",
+     "ref": "Bhagavad Gita 18.62",
+     "ref_iast": "Bhagavad Gītā 18.62",
+     "family": "bg",
+     "speaker": "Krishna",
+     "listener": "Arjuna",
+     "setting": "Krishna's final counsel: act with devotion, reflect, choose, and take refuge.",
+     "sanskrit": "तमेव शरणं गच्छ सर्वभावेन भारत । तत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम् ॥",
+     "line": "Take refuge in the divine with all your being. By that grace you'll find supreme peace.",
+     "translation": "Take refuge in Him alone with your whole being, Bharata. By His grace you will attain supreme peace and the eternal abode.",
+     "why": "Reflect fully, choose freely, and set down the fear.",
+     "misuse": "Surrender is trust, not giving up your judgement or your effort.",
+     "tone": "comforting",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "bg.p18.6",
+      "title": "Action with devotion: surrender",
+      "summary": "Krishna urges Arjuna to offer all action, warns that ego will only trip him, tells him to reflect fully and then choose, and finally to take refuge in him alone and not grieve.",
+      "story_hook": "",
+      "lesson": "Reflect fully, choose freely, and set down the fear."
+     },
+     "score": 2.8379,
+     "beat": "act",
+     "role_fit": 0.725,
+     "meaning": "Krishna tells Arjuna to offer all action to the divine with his whole being and take refuge. This is not a blank check or a loss of judgment. It is a choice to set down fear after full reflection, trusting that this grace leads to peace.",
+     "for_you": "This evening, sit with the Gita instead of filling the room. Let the words rest there. You do not need to push the grief away. Just sit with what is true, and let the book hold some of the weight."
+    },
+    "story": null
+   },
+   {
+    "day": 6,
+    "day_in_week": 6,
+    "week": 1,
+    "level": "situation",
+    "phase": "act",
+    "beat": "act",
+    "verse": {
+     "id": "mbh.5.36.44",
+     "ref": "Mahabharata · Udyoga Parva · Vidura Niti",
+     "ref_iast": "Mahābhārata, Udyoga Parva 36.44–45",
+     "family": "mbh",
+     "speaker": "Vidura",
+     "listener": "Dhritarashtra",
+     "setting": "Vidura counsels the sleepless King Dhritarashtra the night before the peace talks.",
+     "sanskrit": "सन्तापाद्भ्रश्यते रूपं सन्तापाद्भ्रश्यते बलम् / सन्तापाद्भ्रश्यते ज्ञानं सन्तापाद्व्याधिमृच्छति अनवाप्यं च शोकेन शरीरं चोपतप्यते / अमित्राश्च प्रहृष्यन्ति मा स्म शोके मनः कृथाः",
+     "line": "Brooding drains your looks, strength and judgement, makes you ill, and changes nothing. Don't give your mind to it.",
+     "translation": "Brooding destroys beauty, brooding destroys strength, brooding destroys understanding, brooding brings on illness. Grief does not get you what you want; it only wears out the body and gladdens your enemies. Do not give your mind to grief.",
+     "why": "When insulted, don't insult back. Swallow anger, and stand with your own people.",
+     "misuse": "",
+     "tone": "challenging",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "prasang": {
+      "id": "mbh.p.vidura_niti.36",
+      "title": "Vidura Niti: Atreya and the Sadhyas, on insult and anger",
+      "summary": "Vidura retells the sage Atreya's answer to the gods: don't insult back, hold your tongue, choose your company. He adds that anger is a bitter drink and that kin who stand together survive storms.",
+      "story_hook": "",
+      "lesson": "When insulted, don't insult back. Swallow anger, and stand with your own people."
+     },
+     "score": 2.55,
+     "beat": "act",
+     "role_fit": 0.356,
+     "meaning": null,
+     "for_you": "You have filled the day with seva to keep the evenings at bay. Tonight, let the room be empty for a little while. Let the quiet sit with you. Do not fight it. Just stay with it for a few minutes before you move to the next thing."
+    },
+    "story": null
+   },
+   {
+    "day": 7,
+    "day_in_week": 7,
+    "week": 1,
+    "level": "situation",
+    "phase": "story",
+    "beat": "story",
+    "verse": null,
+    "story": {
+     "beat": "story",
+     "id": "yv.p.lila",
+     "title": "Queen Lila fears losing her husband",
+     "kind": "story",
+     "family": "yv",
+     "characters": [
+      "Lila",
+      "King Padma",
+      "Sarasvati",
+      "the brahmins"
+     ],
+     "story_hook": "Queen Lila was so happy with her husband that one night she was seized by the thought of losing him.",
+     "summary": "Queen Lila loves her husband so much that she cannot bear the thought of his death. The wise tell her that nothing wins immortality, so she prays to the goddess Sarasvati instead. When the king dies, Sarasvati begins to show her that life and death are not what they seem.",
+     "lesson": "Love brings the fear of loss; trying to control death only deepens the fear.",
+     "matched": [
+      {
+       "id": "grief_general",
+       "label": "I'm grieving someone I loved"
+      }
+     ],
+     "anchor": {
+      "id": "yv.3.16.24",
+      "ref": "Yoga Vasishtha",
+      "ref_iast": "Yoga Vāsiṣṭha, Utpatti 16.24",
+      "family": "yv",
+      "speaker": "The brahmins",
+      "listener": "Queen Lila",
+      "setting": "Queen Lila, terrified of losing her husband, asks wise brahmins how to make him immortal.",
+      "sanskrit": "तपोजपयमैर्देवि समस्ताः सिद्धसिद्धयः । संप्राप्यन्तेऽमरत्वं तु न कदाचन लभ्यते ॥",
+      "line": "Discipline and prayer can achieve almost anything, but no one can win freedom from death.",
+      "translation": "O queen, by austerity, prayer and discipline every kind of attainment can be reached; but immortality is never gained.",
+      "why": "Love brings the fear of loss; trying to control death only deepens the fear.",
+      "misuse": "Not fatalism about care: look after the sick fully. This is about the fear itself.",
+      "tone": "reflective",
+      "matched": [],
+      "prasang": {
+       "id": "yv.p.lila",
+       "title": "Queen Lila fears losing her husband",
+       "summary": "Queen Lila loves her husband so much that she cannot bear the thought of his death. The wise tell her that nothing wins immortality, so she prays to the goddess Sarasvati instead. When the king dies, Sarasvati begins to show her that life and death are not what they seem.",
+       "story_hook": "Queen Lila was so happy with her husband that one night she was seized by the thought of losing him.",
+       "lesson": "Love brings the fear of loss; trying to control death only deepens the fear."
+      },
+      "score": 0.0
+     },
+     "score": 0.0,
+     "why": null,
+     "hook_title": "Queen Lila was so happy that she became terrified of losing her husband",
+     "teaser": "Queen Lila was so happy that she became terrified of losing her husband",
+     "for_you": "King Padma lost everyone he loved and asked where they had gone. The answer is that nothing born can be lost. Your love was real, and it was never just for this life. It is a bond that the Gita says cannot be broken by time or death."
+    }
+   }
+  ],
+  "weeks": [
+   {
+    "week": 1,
+    "title": "What the Gita says",
+    "level": "situation",
+    "level_label": "Your situation",
+    "beats": [
+     "hook",
+     "diagnose",
+     "steady",
+     "steady",
+     "act",
+     "act",
+     "story"
+    ]
+   }
+  ],
+  "safety": null,
+  "matching": "semantic",
+  "library_version": "6076c68d3d84",
+  "timings_ms": {
+   "note_match": 147,
+   "llm": 4235,
+   "total": 20596,
+   "select": 16206
+  }
+ },
+ "script": [
+  [
+   "open",
+   "The evenings are where the room grows quiet and the absence settles in. You have spent your life in service, and now the days have slowed. That quiet is not empty. It is the space where love is still doing its work."
+  ],
+  [
+   "scene",
+   "Arjuna stands on the battlefield, his body trembling, his mind refusing to move. He tells Krishna that even ruling the heavens or owning all the earth would not heal the grief that is drying him up inside. He admits he sees no way out, and he asks Krishna to teach him what to do: And Arjuna said:"
+  ],
+  [
+   "sanskrit",
+   "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्, अवाप्य भूमावसपत्नमृद्धम्राज्यं सुराणामपि चाधिपत्यम्."
+  ],
+  [
+   "line",
+   "In plain words: Even winning everything wouldn't touch this grief that's drying me up inside."
+  ],
+  [
+   "unpack",
+   "Arjuna admits he is confused and asks for help. This is where clarity begins. It is easier said than done, because you have carried this alone for a long time. Admitting you do not know is the first step toward understanding. The grief is real. It is not a failure. It is the weight of a love that was true."
+  ],
+  [
+   "for_you",
+   "When the evening arrives and the quiet deepens, let the room hold that absence. You do not need to fix it. You only need to let it be here, as you are. The question can wait. You can wait with it."
+  ],
+  [
+   "close",
+   "What if the quiet is not an ending, but a door?"
+  ]
+ ],
+ "depth": {
+  "life": "You sit in the quiet of your evenings. The temple seva is done, and the house holds only you. You are missing the one who was there with you, and the silence feels like a weight.",
+  "points": "The texts say grief is a sign of love that was real. It is not a failure. It is the heart recognizing what it has lost, and that recognition is where understanding begins.",
+  "practice": "Sit with the memory of one ordinary moment you shared. Let it be there without trying to fix it.",
+  "question": "What would you say to her about this ache if she were sitting across from you?"
+ }
+}

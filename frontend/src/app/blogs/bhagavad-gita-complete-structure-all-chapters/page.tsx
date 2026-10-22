@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
-import { ScriptureAIGitaCTA } from '@/components/ScriptureAIWaitlist'
+import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
+import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "How the Bhagavad Gita Is Structured: All 18 Chapters Explained | Wisdom",
+  title: "How the Bhagavad Gita Is Structured: All 18 Chapters Explained",
   description: "The Gita is a single argument in 18 chapters: ethics, then cosmology, then devotion, then the final surrender of 18.66. Here is a summary of every chapter and how they connect into one arc.",
   keywords: "bhagavad gita structure, bhagavad gita all chapters summary, bhagavad gita 18 chapters, how is bhagavad gita organised, bhagavad gita complete guide, bhagavad gita story arc, bhagavad gita vishwarupa, bhagavad gita chapter summary, gita 18.66 meaning, bhagavad gita arc, bhagavad gita 18 chapters summary, bhagavad gita storyline, bhagavad gita 18.66 meaning, bhagavad gita plot, bhagavad gita overview",
   openGraph: {
@@ -751,7 +752,7 @@ export default function CompleteStructurePage() {
           </ul>
         </div>
 
-        <ScriptureAIGitaCTA variant="chapter" locale="en" pageName={"Gita Complete Structure"} />
+        <VerseFunnelCTA variant="chapter" locale="en" pageName={"Gita Complete Structure"} />
 
 
         {/* FAQ */}
@@ -833,7 +834,7 @@ export default function CompleteStructurePage() {
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  · 
         <a href="/blogs">Blog</a>  · 
-        <a href="https://apps.apple.com/us/app/wisdom-app-quotes-widget/id6747684125" target="_blank" rel="noopener" data-mp-location="footer">Download Free</a>
+        <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download Free</a>
       </p>
     </footer>
 

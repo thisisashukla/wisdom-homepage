@@ -73,6 +73,10 @@ class FakeLLM:
                 days[ids[-1]] = {"for_you": "You should embrace the journey.",      # fails the guardrails: must be dropped
                                  "meaning": "Hanuman leaps across the ocean here and the verse literally says you got this, so keep going no matter what happens next."}
             return {"days": days}
+        if system.startswith("You check a 7-day verse plan"):
+            self.week_checks = getattr(self, "week_checks", 0) + 1
+            ids = re.findall(r"- id: (\S+)", messages[-1]["content"])
+            return {"scores": {i: 0.8 for i in ids}}
         if system.startswith(("You score candidate opening", "You pick one story")):
             self.reranks += 1
             ids = re.findall(r"- id: (\S+)", messages[-1]["content"])
@@ -474,7 +478,9 @@ DAY1_CASES = [
 
 
 @pytest.mark.parametrize("reply,body", DAY1_CASES)
-def test_day1_is_always_a_gita_verse(app, rec, reply, body):
+def test_day1_is_always_a_gita_verse(app, rec, reply, body, monkeypatch):
+    from common.config import settings
+    monkeypatch.setattr(settings, "day1_other_texts", False)      # the Gita-only Day 1, when that promise is on
     use_llm(rec, FakeLLM(reply) if reply else None)
     h = post(app, "hook", **body, alternates=3)
     assert h["hook"]["family"] == "bg"
@@ -485,7 +491,9 @@ def test_day1_is_always_a_gita_verse(app, rec, reply, body):
     assert out["days"][0]["day"] == 1 and out["days"][0]["verse"]["family"] == "bg"
 
 
-def test_a_non_gita_pin_never_becomes_day1(app, rec):
+def test_a_non_gita_pin_never_becomes_day1(app, rec, monkeypatch):
+    from common.config import settings
+    monkeypatch.setattr(settings, "day1_other_texts", False)      # the Gita-only promise, when it is on
     use_llm(rec, FakeLLM(GOOD))
     other = next(v["id"] for v in rec.verses if v.get("family") != "bg")
     out = post(app, "plan", **BASE, follow="parents", note="they never support what I do", hook_id=other, week=1)
@@ -502,8 +510,11 @@ def test_plan_days_get_a_personal_line(app, rec):
     out = post(app, "plan", **BASE, follow="parents", note="they never support what I do", days=7)
     cards = [d["verse"] or d["story"] for d in out["days"]]
     personal = [c for c in cards if c.get("for_you")]
-    assert 1 <= getattr(llm, "personal", 0) <= 3                # a few small calls in parallel
-    assert len(personal) == len(cards) - 1                      # the cliche line was refused
+    assert 1 <= getattr(llm, "personal", 0) <= 15               # one small call per day in parallel, plus one round of rewrites
+    assert len(personal) >= len(cards) - 1                      # the cliche line was refused and asked again; a story day may stay with its lesson
+    flags = out["understanding"]["flags"]
+    assert any(f.startswith("redo:") for f in flags) and any(f.startswith("dropped:") for f in flags)
+    assert len({c["for_you"] for c in personal}) == len(personal)   # no two days say the same thing
     assert all("you" in c["for_you"].lower() and "—" not in c["for_you"] for c in personal)
     assert any(f.startswith("for_you:") for f in out["understanding"]["flags"])
 
@@ -538,7 +549,9 @@ def _plan_ids(out):
 
 
 @pytest.mark.parametrize("reason", ["not_my_situation", "too_heavy"])
-def test_replace_day1_never_repeats_or_takes_a_coming_verse(app, rec, reason):
+def test_replace_day1_never_repeats_or_takes_a_coming_verse(app, rec, reason, monkeypatch):
+    from common.config import settings
+    monkeypatch.setattr(settings, "day1_other_texts", False)
     use_llm(rec, FakeLLM(GOOD))
     h = post(app, "hook", **BASE, follow="parents", note="they never support what I do")
     plan = post(app, "plan", **BASE, understanding=h["understanding"], hook_id=h["hook"]["id"], week=1)
@@ -770,3 +783,51 @@ def test_refine_rejects_day1_day7_and_bad_input(app, rec, body):
     h = post(app, "hook", **BASE, follow="parents")
     req = {**BASE, "understanding": h["understanding"], "week": 1, "note": "my brother is involved now too", **body}
     assert app.post("/api/v1/recommend/refine", json=req).status_code == 422
+
+
+# ── Every verse shows its original ────────────────────────────────────────────
+INDIC = re.compile(r"[ऀ-෿]")
+
+
+def _verses_of(out):
+    for d in out["days"]:
+        if d.get("verse"):
+            yield d["verse"]
+        if d.get("story") and d["story"].get("anchor"):
+            yield d["story"]["anchor"]
+
+
+@pytest.mark.parametrize("feeling,follow", [("replay", "parents"), ("quiet", None), ("nerve", None), ("stick", None), ("faith", None), ("gita", None)])
+def test_every_plan_verse_carries_its_original(app, rec, feeling, follow):
+    use_llm(rec, None)
+    body = dict(BASE, feeling=feeling)
+    if follow:
+        body["follow"] = follow
+    out = post(app, "plan", **body, days=21)
+    shown = list(_verses_of(out))
+    assert shown
+    for v in shown:
+        assert v["sanskrit"] and INDIC.search(v["sanskrit"]), v["id"]
+    h = post(app, "hook", **body)
+    for v in [h["hook"], *h["alternates"]]:
+        assert v["sanskrit"] and INDIC.search(v["sanskrit"]), v["id"]
+
+
+def test_only_verses_with_an_original_are_pickable(rec):
+    for v, ok in zip(rec.verses, rec.has_original):
+        if ok:
+            assert INDIC.search(rec_mod.display_sanskrit(v))
+    held = {v["id"] for v, ok in zip(rec.verses, rec.has_original) if not ok}
+    assert all(i.startswith("viv.") or i in {"surya_gita.7.54", "mbh.3.314.121"} for i in held), sorted(held)[:10]
+
+
+def test_bhartrihari_and_fixed_verses_show_their_sanskrit(rec):
+    by = {v["id"]: v for v in rec.verses}
+    assert "रात्रिः सैव पुनः" in rec_mod.display_sanskrit(by["bh.vairagya.44"])
+    assert "लोभं हित्वा" in rec_mod.display_sanskrit(by["mbh.3.314.79"])
+    assert rec_mod.display_sanskrit(by["bg.2.14"])
+
+
+def test_originals_lookup_for_stored_plans(app, rec):
+    out = post(app, "originals", ids=["bh.vairagya.44", "bg.2.47", "nope.1"])["originals"]
+    assert "रात्रिः" in out["bh.vairagya.44"] and out["bg.2.47"] and out["nope.1"] is None
