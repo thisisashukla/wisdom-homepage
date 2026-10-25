@@ -45,6 +45,7 @@ from pydantic import BaseModel, Field
 
 from ai.ask import answer as answer_question, support_candidates
 from ai.depth import DepthCache, cache_key, person_key, write_depth
+from ai import hook_cache
 from ai.scene import scene_for
 from ai.personalize import personal_parts
 from ai.voice import PersonContext, item_from_card, item_from_library, person_brief
@@ -56,7 +57,7 @@ from ai.mechanisms import LEVELS
 from ai.planner import BEREAVEMENT_SITS, get_planner, level_for, parse_shape, week_arc
 from ai.recommender import SAFETY, display_sanskrit, get_recommender
 from ai.understanding import (Profile, Understanding, check_note, fallback_bridge, get_understander, insight_for,
-                              merge_situations, template_queries)
+                              merge_situations, template_queries, UNDERSTANDING_VERSION)
 from ai.stance import STANCE_BANNED_SITUATIONS, constrain_mechanism
 from ai.story_titles import hook_title
 from common.models import (ArcBeats, BeatVerse, HookRequest, HookResponse, PlanDayOut, PlanInput, PlanRequest,
@@ -392,6 +393,19 @@ async def hook(req: HookRequest) -> HookResponse:
     """Onboarding: read the person and return the one verse that says "this is you"."""
     rec, planner, und = _services()
     t0 = time.perf_counter()
+    # The same answers get the same reading and Day 1 verse (ai/hook_cache.py): back, then the CTA again,
+    # or a reopened onboarding, must not draw a new mechanism and a new verse.
+    ckey = hook_cache.request_key(req, rec.version, UNDERSTANDING_VERSION)
+    hit = await asyncio.to_thread(hook_cache.get, ckey)
+    if hit:
+        try:
+            hit["understanding"]["flags"] = [*hit["understanding"].get("flags", []), "hook_cache:hit"]
+            hit["timings_ms"] = {"cache": int((time.perf_counter() - t0) * 1000), "total": int((time.perf_counter() - t0) * 1000)}
+            resp = HookResponse(**hit)
+            logger.info("hook: cache hit %s hook=%s %.0fms", ckey[:12], (hit.get("hook") or {}).get("id"), (time.perf_counter() - t0) * 1000)
+            return resp
+        except Exception as e:      # a row from an older shape: answer afresh and overwrite it
+            logger.info("hook cache row unusable (%s): %s", ckey[:12], type(e).__name__)
     u = await _read(req, und)
     t1 = time.perf_counter()
     person = person_brief(_ctx(req, u, rec, planner))
@@ -410,8 +424,12 @@ async def hook(req: HookRequest) -> HookResponse:
     }
     if reranked:
         u.flags.append("hook_reranked")
-    _log("hook", req, u, t0, hook=bool(out["hook"]), alts=len(out["alternates"]), reranked=reranked)
-    return HookResponse(**out)
+    resp = HookResponse(**out)
+    stored = hook_cache.cacheable(resp.model_dump(mode="json"), reranked)
+    if stored:
+        await asyncio.to_thread(hook_cache.put, ckey, resp.model_dump(mode="json"), rec.version)
+    _log("hook", req, u, t0, hook=bool(out["hook"]), alts=len(out["alternates"]), reranked=reranked, cached=stored)
+    return resp
 
 
 @router.post("/recommend/preview", response_model=PreviewResponse, tags=["plan"])

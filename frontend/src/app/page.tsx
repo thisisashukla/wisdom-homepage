@@ -114,7 +114,7 @@ export default async function HomePage() {
 
         <section className="hero hero-immersive hero-v3">
           <img
-            src="/assets/chapter11.webp"
+            src="/assets/hero.webp"
             alt="Krishna revealing his universal form to Arjuna on the battlefield of Kurukshetra"
             fetchPriority="high"
             className="hero-bg"

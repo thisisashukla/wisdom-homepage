@@ -78,6 +78,11 @@ class Settings(BaseSettings):
     # A request's `shape` overrides it. "2221" = hook, diagnose, steady ×2, act ×2, story.
     plan_week_shape: str = "2221"
     request_budget_s: float = 16.0      # reading + planning + the week gate; the writers have their own 14 s. The app must allow 30 s.
+    # /recommend/hook answers kept in Supabase (ai/hook_cache.py): the same onboarding answers get the
+    # same reading and Day 1 verse. Only good answers are kept (LLM reading, reranked, no risk).
+    hook_cache_enabled: bool = True
+    hook_cache_ttl_days: int = 7
+    hook_cache_timeout_s: float = 1.5
 
     # Local BGE-M3 model weights directory.
     # If empty or non-existent, loads from HuggingFace (cached after first download).
