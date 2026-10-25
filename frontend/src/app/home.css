@@ -2184,7 +2184,8 @@
         object-fit: cover;
         /* Keep Krishna's face in view — image is tall/portrait, container is
            wide, so we anchor toward the top of the artwork. */
-        object-position: 62% 18%;
+        object-position: 70% 0%;
+        transform-origin: center top;
         display: block;
         z-index: 0;
         transform: scale(1.02);
@@ -2330,7 +2331,7 @@
       /* Tablet / small desktop */
       @media (max-width: 1024px) {
         .hero.hero-immersive .hero-bg {
-          object-position: 60% 18%;
+          object-position: 70% 0%;
         }
         .hero.hero-immersive .hero-inner {
           padding: 112px 24px 80px;
@@ -2348,7 +2349,7 @@
         .hero.hero-immersive .hero-bg {
           /* On mobile the copy lives at the bottom, so anchor to the top of
              the artwork — Krishna's face fills the upper viewport. */
-          object-position: 55% 12%;
+          object-position: 80% 0%;
         }
         .hero.hero-immersive .hero-scrim {
           /* Keep the top of the artwork visible (Krishna's face + halo)
