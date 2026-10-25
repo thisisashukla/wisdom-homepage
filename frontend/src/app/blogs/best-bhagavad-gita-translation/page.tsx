@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Best Bhagavad Gita Translation: Which One to Read (2026)",
   description: "Short answer: start with Eknath Easwaran for a clear first read, or Gita Press with Hindi tika. Then compare Prabhupada, Sargeant, Mitchell, Debroy and more.",
@@ -756,10 +756,7 @@ export default function BestGitaTranslationPage() {
       <VerseFunnelCTA variant="chapter" locale="en" pageName={"Best Bhagavad Gita Translation"} />
     </div>
 
-    <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> &mdash; <a href="https://wisdomquotes.in/blogs">Blog</a> &mdash; <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-    </footer>
+    <SiteFooter />
 
       <BlogTracker pageName="Best Bhagavad Gita Translation" />
     </>

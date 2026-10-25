@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import type { CSSProperties } from 'react'
 import { notFound } from 'next/navigation'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
+import VerseNavReveal from '@/components/gita/VerseNavReveal'
 import {
   getAllChapters,
   getChapter,
@@ -16,6 +17,7 @@ import {
   hasTopic,
   topicUrl,
   findTopicForConcept,
+  topicLabel,
 } from '@/lib/gita'
 import type { IndexEntry } from '@/lib/gita'
 import { getBlogLinksForVerse } from '@/lib/blogVerseLinks'
@@ -373,7 +375,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
           </span>
         </h1>
         <div className="gv-hero-badges gv-rise" style={{ '--d': '0.18s' } as CSSProperties}>
-          <span className="gv-hero-pill">{ch?.hiName ?? `अध्याय ${c}`} · श्लोक {v}</span>
+          <span className="gv-hero-pill">{ch?.hiName ?? `अध्याय ${c}`}</span>
         </div>
         {heroNote && (
           <p className="gv-hero-note gv-rise" style={{ '--d': '0.21s' } as CSSProperties}>{heroNote}</p>
@@ -384,8 +386,8 @@ export default async function VersePageHi({ params }: { params: Params }) {
           </p>
         )}
         <p className="gv-hero-byline gv-rise" style={{ '--d': '0.3s' } as CSSProperties}>
-          Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026.{' '}
-          <a href="/methodology">Methodology →</a>
+          Wisdom अनुवाद, संपादन: अंकुर शुक्ला। टिप्पणी AI से तैयार, फिर व्यक्ति द्वारा जाँची गई (जून 2026)।{' '}
+          <a href="/methodology">कैसे बनता है →</a>
         </p>
       </header>
 
@@ -393,7 +395,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
         <span className="gv-card-chip">श्लोक</span>
         <div className="gv-diamonds" aria-hidden="true"><i /><i /><i /></div>
         {audio ? (
-          <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={verse.sanskrit} chapter={c} verse={v} />
+          <VerseAudioPlayer audioSrc={audio.audio} timestamps={audio.timestamps} text={verse.sanskrit} chapter={c} verse={v} locale="hi" />
         ) : (
           <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
         )}
@@ -407,7 +409,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
         <div className="gv-card-attrib">भगवद् गीता · {c}.{v}</div>
 
         <div className="gita-translation">
-          <div className="gita-translation-label">English</div>
+          <div className="gita-translation-label">अंग्रेज़ी अनुवाद</div>
           <div className="gita-translation-text" lang="en">
             {verse.englishTranslation}
           </div>
@@ -423,7 +425,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
                 className="gita-tag"
                 data-mp-location={`verse_hi_${c}_${v}_tag_${t}`}
               >
-                {t}
+                {topicLabel(t)}
               </a>
             ))}
             <VerseBookmark chapter={c} verse={v} locale="hi" />
@@ -444,7 +446,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
           className="gv-reveal"
           style={{
             display: 'grid',
-            gridTemplateColumns: prev && next ? 'auto 1fr' : '1fr',
+            gridTemplateColumns: prev && next ? 'auto minmax(0, 1fr)' : 'minmax(0, 1fr)',
             gap: '10px',
             margin: '18px 0 8px',
           }}
@@ -454,6 +456,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
               href={verseUrl(prev.chapter, prev.verse, 'hi')}
               data-mp-location={`verse_hi_${c}_${v}_hero_prev`}
               data-mp-event="Hindi Verse Hero Prev Clicked"
+              aria-label={`पिछला श्लोक ${prev.chapter}.${prev.verse}`}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -466,10 +469,11 @@ export default async function VersePageHi({ params }: { params: Params }) {
                 color: 'var(--text-dim, rgba(245,232,204,0.65))',
                 fontSize: '13.5px',
                 fontWeight: 600,
+                whiteSpace: 'nowrap',
               }}
             >
               <span aria-hidden="true">←</span>
-              <span>पिछला · BG {prev.chapter}.{prev.verse}</span>
+              <span>{prev.chapter}.{prev.verse}</span>
             </a>
           )}
           {next && (
@@ -488,6 +492,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
                 textDecoration: 'none',
                 color: '#120505',
                 boxShadow: '0 4px 18px rgba(200,136,30,0.28)',
+                minWidth: 0,
               }}
             >
               <div style={{ minWidth: 0 }}>
@@ -511,7 +516,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
             <span className="gv-sechead-label">शब्द-दर-शब्द</span>
           </div>
           <p className="gv-sechead-sub">
-            श्लोक क्रम में — हर संस्कृत शब्द और नीचे उसका अर्थ। किसी शब्द पर जाकर उसे देखें।
+            श्लोक क्रम में — हर संस्कृत शब्द और नीचे उसका अर्थ। किसी शब्द पर टैप करके उसे देखें।
           </p>
           <div className="gv-wbw-flow">
             {wordByWord.map((w, i) => (
@@ -572,9 +577,9 @@ export default async function VersePageHi({ params }: { params: Params }) {
             return (
               <div key={n} className="gv-cmnt gv-reveal">
                 <span className="gv-cmnt-ghost" aria-hidden="true">{n}</span>
-                <div className="gv-cmnt-kicker">{kicker}</div>
+                <div className="gv-cmnt-kicker">{kicker} · अंग्रेज़ी में</div>
                 <h2 className="gv-cmnt-h">{label}</h2>
-                <p className="gv-cmnt-p">{text}</p>
+                <p className="gv-cmnt-p" lang="en">{text}</p>
               </div>
             )
           })}
@@ -754,7 +759,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, transparent 60%, rgba(10,5,20,0.55))' }} />
                 </div>
                 <div style={{ padding: '16px 18px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '6px', flex: 1 }}>
-                  <div style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dimmer)' }}>
+                  <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dimmer)' }}>
                     Essay
                   </div>
                   <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--gold-light, #e8c070)', lineHeight: 1.4 }}>
@@ -797,6 +802,7 @@ export default async function VersePageHi({ params }: { params: Params }) {
         </div>
       </section>
 
+      <VerseNavReveal />
       <nav className="gv-versenav" aria-label="श्लोक नेविगेशन">
         {prev ? (
           <a href={verseUrl(prev.chapter, prev.verse, 'hi')} className="gv-versenav-btn" data-mp-location={`verse_hi_${c}_${v}_float_prev`} aria-label={`पिछला श्लोक ${prev.chapter}.${prev.verse}`}>

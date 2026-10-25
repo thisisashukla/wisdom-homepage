@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Nishkama Karma Meaning: Krishna's Teaching on Selfless Action in the Bhagavad Gita",
   description: "Nishkama karma (निष्काम कर्म) means action without attachment to results, a central teaching of Bhagavad Gita Chapters 2 and 3. What it is, how it differs from passivity, and 5 verses that show how to practise it.",
@@ -788,10 +788,7 @@ export default function NishkamaKarmaPage() {
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Nishkama Karma Guide"} />
       </div>
 
-      <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Nishkama Karma Guide" />
     </>

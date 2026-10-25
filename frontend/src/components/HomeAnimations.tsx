@@ -14,7 +14,7 @@ export default function HomeAnimations() {
           }
         })
       },
-      { threshold: 0.08, rootMargin: '0px 0px -48px 0px' }
+      { threshold: 0, rootMargin: '0px 0px -24px 0px' }
     )
     document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el))
 
@@ -112,7 +112,9 @@ export default function HomeAnimations() {
           rvObserver.unobserve(entry.target)
         })
       },
-      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+      // threshold 0: tall blocks (plan card, chapter grid) must start revealing as soon
+      // their top edge enters, or the bottom of the screen sits blank.
+      { threshold: 0, rootMargin: '0px 0px -24px 0px' }
     )
     document.querySelectorAll('.rv').forEach((el) => rvObserver.observe(el))
     const weekObserver = new IntersectionObserver(

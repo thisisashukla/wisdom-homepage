@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Dharma in the Bhagavad Gita: Meaning, Svadharma and Key Verses",
   description: "Dharma comes from dhṛ, to hold. In the Gita it is closer to 'your own nature, acted on' than to duty. Svadharma is Krishna's answer to Arjuna's paralysis, in 3.35, 4.7, 18.47 and 18.66.",
@@ -759,10 +759,7 @@ export default function DharmaMeaningPage() {
 
       <VerseFunnelCTA variant="chapter" locale="en" pageName={"Dharma Meaning Bhagavad Gita"} />
 
-      <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Dharma Meaning Bhagavad Gita" />
     </>

@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "The Rise and Failure of GitaGPT: What Went Wrong When India Tried to Put Krishna on a GPU",
   description: "Between January and March 2023, at least five GitaGPTs launched in India. Several told users it was acceptable to kill someone if it was their dharma. A product breakdown of what those bots got wrong, and what an actual working Bhagavad Gita AI needs.",
@@ -909,10 +909,7 @@ export default function GitaGptRiseAndFailurePage() {
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Rise and Failure of GitaGPT"} />
       </div>
 
-      <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> · <a href="https://wisdomquotes.in/blogs">Blog</a> · <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Rise and Failure of GitaGPT" />
     </>

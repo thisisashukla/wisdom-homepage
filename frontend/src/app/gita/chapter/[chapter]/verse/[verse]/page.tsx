@@ -15,6 +15,7 @@ import {
   hasTopic,
   topicUrl,
   findTopicForConcept,
+  topicLabel,
 } from '@/lib/gita'
 import type { IndexEntry } from '@/lib/gita'
 import { getBlogLinksForVerse } from '@/lib/blogVerseLinks'
@@ -23,6 +24,7 @@ import FeedbackWidget from '@/components/FeedbackWidget'
 import ShareButtons from '@/components/gita/ShareButtons'
 import VerseBookmark from '@/components/gita/VerseBookmark'
 import VerseAudioPlayer from '@/components/gita/VerseAudioPlayer'
+import VerseNavReveal from '@/components/gita/VerseNavReveal'
 import SanskritText from '@/components/gita/SanskritText'
 import MantraCards from '@/components/gita/MantraCards'
 
@@ -373,7 +375,7 @@ export default async function VersePage({ params }: { params: Params }) {
           </span>
         </h1>
         <div className="gv-hero-badges gv-rise" style={{ '--d': '0.18s' } as CSSProperties}>
-          <span className="gv-hero-pill">{ch?.enName ?? `Chapter ${c}`} · Verse {v}</span>
+          <span className="gv-hero-pill">{ch?.enName ?? `Chapter ${c}`}</span>
         </div>
         {heroNote && (
           <p className="gv-hero-note gv-rise" style={{ '--d': '0.21s' } as CSSProperties}>{heroNote}</p>
@@ -423,7 +425,7 @@ export default async function VersePage({ params }: { params: Params }) {
                 className="gita-tag"
                 data-mp-location={`verse_${c}_${v}_tag_${t}`}
               >
-                {t}
+                {topicLabel(t)}
               </a>
             ))}
             <VerseBookmark chapter={c} verse={v} locale="en" />
@@ -438,7 +440,7 @@ export default async function VersePage({ params }: { params: Params }) {
             <span className="gv-sechead-label">Word by word</span>
           </div>
           <p className="gv-sechead-sub">
-            The verse in reading order — each Sanskrit word with its meaning beneath. Hover a word to focus on it.
+            The verse in reading order — each Sanskrit word with its meaning beneath. Tap a word to focus on it.
           </p>
           <div className="gv-wbw-flow">
             {wordByWord.map((w, i) => (
@@ -683,7 +685,7 @@ export default async function VersePage({ params }: { params: Params }) {
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, transparent 60%, rgba(10,5,20,0.55))' }} />
                 </div>
                 <div style={{ padding: '16px 18px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '6px', flex: 1 }}>
-                  <div style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dimmer)' }}>
+                  <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dimmer)' }}>
                     Essay
                   </div>
                   <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--gold-light, #e8c070)', lineHeight: 1.4 }}>
@@ -728,6 +730,7 @@ export default async function VersePage({ params }: { params: Params }) {
       </section>
 
       {/* ── Floating verse navigator ── */}
+      <VerseNavReveal />
       <nav className="gv-versenav" aria-label="Verse navigation">
         {prev ? (
           <a href={verseUrl(prev.chapter, prev.verse)} className="gv-versenav-btn" data-mp-location={`verse_${c}_${v}_float_prev`} aria-label={`Previous verse ${prev.chapter}.${prev.verse}`}>

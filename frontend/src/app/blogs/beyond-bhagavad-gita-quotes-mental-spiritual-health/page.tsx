@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Beyond the Bhagavad Gita: Best Quotes on Mental & Spiritual Health from 7 Lesser-Known Gitas",
   description: "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each have verses on fear, anger, grief and the restless mind. Sanskrit, translation and a plain reading of each.",
@@ -821,10 +821,7 @@ export default function BeyondBhagavadGitaPage() {
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Beyond Bhagavad Gita Quotes"} />
       </div>
 
-      <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Beyond Bhagavad Gita Quotes" />
     </>

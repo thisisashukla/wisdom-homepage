@@ -9,6 +9,7 @@ import { appStoreUrl } from '@/lib/app'
 import '../home.css'
 import '../home-v3.css'
 
+import SiteFooter from '@/components/SiteFooter'
 const TITLE = 'Bhagavad Gita App for iPhone: Daily Verse & Audio | Wisdom'
 const DESCRIPTION =
   'A Bhagavad Gita verse picked for how you feel today, with Sanskrit, meaning and audio, plus a 7-day listening plan for your situation. Week 1 free on iPhone.'
@@ -58,7 +59,7 @@ export default function AppLandingPage() {
       <Nav pageName="App Landing" />
 
       {/* ── HERO ── */}
-      <section className="section" style={{ paddingTop: 64, paddingBottom: 40, borderBottom: '1px solid var(--border)' }}>
+      <section className="section app-hero" style={{ paddingTop: 64, paddingBottom: 40, borderBottom: '1px solid var(--border)' }}>
         <div className="wrap t-center">
           <div className="eyebrow">Wisdom for iPhone</div>
           <h1 className="heading" style={{ maxWidth: 760, margin: '0 auto 18px' }}>
@@ -205,25 +206,7 @@ export default function AppLandingPage() {
         </div>
       </section>
 
-      <footer>
-        <div className="footer-inner">
-          <div className="footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '9px' }}>
-            <img src="/assets/new-light-logo.webp" alt="Wisdom" loading="lazy" style={{ width: '30px', height: '30px', borderRadius: '50%', objectFit: 'cover', border: '1px solid rgba(200, 136, 30, 0.35)' }} />
-            Wisdom
-          </div>
-          <p className="footer-copy">© 2026 Wisdom · Ankur Shukla</p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
-            <ul className="footer-links">
-              <li><a href="/">Home</a></li>
-              <li><a href="/gita">Read the Gita</a></li>
-              <li><a href="/gita-for">Gita for life</a></li>
-              <li><a href="/privacy">Privacy</a></li>
-              <li><a href="/terms">Terms</a></li>
-              <li><a href="mailto:work.ankurshukla@gmail.com">Support</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="App Landing" />
       <HomeAnimations />

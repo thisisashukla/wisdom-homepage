@@ -11,6 +11,7 @@ import '../../home.css'
 import '../../home-v3.css'
 import '../gita-for.css'
 
+import SiteFooter from '@/components/SiteFooter'
 export const dynamicParams = false
 
 export function generateStaticParams() {
@@ -128,7 +129,7 @@ export default async function GitaForPage({ params }: { params: { slug: string }
             <p className="gf-app">
               On iPhone, Wisdom turns this into a 7-day plan, read aloud.{' '}
               <a href={appStoreUrl(`web_gita_for_${page.slug.replace(/-/g, '_')}`)} target="_blank" rel="noopener" data-mp-location={`gita_for_${page.slug}_app`}>
-                Get the app, week 1 free →
+                Get the app →
               </a>
             </p>
           </div>
@@ -149,6 +150,7 @@ export default async function GitaForPage({ params }: { params: { slug: string }
         </section>
       </article>
 
+      <SiteFooter />
       <BlogTracker pageName={pageName} />
       <HomeAnimations />
     </>

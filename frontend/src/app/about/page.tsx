@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: 'About Ankur Shukla, Founder of Wisdom & Dadly | iOS Apps for Everyday Practice',
   description:
@@ -74,7 +75,7 @@ const pageCSS = `
     position: relative; z-index: 2;
   }
   .about-hero-label {
-    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
     color: var(--gold-light); font-weight: 600; margin-bottom: 16px;
   }
   .about-hero h1 {
@@ -128,7 +129,7 @@ const pageCSS = `
     transform: translateY(-2px);
   }
   .app-card-label {
-    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
     color: var(--gold-light); font-weight: 600; margin-bottom: 10px;
   }
   .app-card h3 {
@@ -164,7 +165,8 @@ const pageCSS = `
     color: var(--text-dimmer); font-weight: 600;
     display: inline-block; min-width: 80px;
   }
-  .connect-list .handle { color: var(--gold-light); font-weight: 600; }
+  .connect-list .handle { color: var(--gold-light); font-weight: 600; min-width: 0; overflow-wrap: anywhere; }
+  .connect-list a { min-height: 44px; }
 
   /* FOOTER */
   footer {
@@ -181,6 +183,8 @@ const pageCSS = `
   @media (max-width: 700px) {
     .about-hero { padding: 48px 20px 40px; }
     .about-wrap { padding: 40px 20px 60px; }
+    .connect-block { padding: 20px; }
+    .connect-list a { flex-direction: column; align-items: flex-start; gap: 2px; }
   }
 `
 
@@ -399,16 +403,7 @@ export default function AboutPage() {
         </div>
       </main>
 
-      <footer>
-        <p>
-          <a href="/">Wisdom</a> &middot; <a href="/blogs">Blog</a> &middot;{' '}
-          <a href="/about">About</a> &middot;{' '}
-          <a href="https://apps.apple.com/app/id6747684125" target="_blank" rel="noopener">App Store</a>
-        </p>
-        <p style={{ marginTop: 10 }}>
-          <span>&copy;</span> 2026 Wisdom. Written by Ankur Shukla.
-        </p>
-      </footer>
+      <SiteFooter />
     </>
   )
 }

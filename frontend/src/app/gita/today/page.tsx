@@ -8,6 +8,7 @@ import {
   chapterUrl,
   hasTopic,
   topicUrl,
+  topicLabel,
 } from '@/lib/gita'
 // GitaAppCTA source preserved at @/components/gita/GitaAppCTA — currently swapped out
 // for the Scripture AI waitlist while that product launches.
@@ -263,7 +264,7 @@ export default async function TodayPage() {
             <span>Themes:</span>
             {verse.tags.filter(hasTopic).map((t) => (
               <a key={t} href={topicUrl(t)} className="gita-tag" data-mp-location="today_tag">
-                {t}
+                {topicLabel(t)}
               </a>
             ))}
           </div>

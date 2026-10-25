@@ -8,6 +8,7 @@ import '../home.css'
 import '../home-v3.css'
 import './gita-for.css'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: { absolute: 'Bhagavad Gita for Life’s Problems: Verses by Situation | Wisdom' },
   description:
@@ -44,6 +45,7 @@ export default function GitaForIndex() {
           <div id="your-verse"><HeroPlanCTA campaign="web_gita_for_index" location="gita_for_index_create_plan" pageName="Gita For Index" /></div>
         </div>
       </section>
+      <SiteFooter />
       <BlogTracker pageName="Gita For Index" />
       <HomeAnimations />
     </>

@@ -1,5 +1,6 @@
 import '../../gita/gita.css'
 import GitaNav from '@/components/gita/GitaNav'
+import SiteFooter from '@/components/SiteFooter'
 
 export const metadata = {
   alternates: {
@@ -15,6 +16,7 @@ export default function HiGitaLayout({ children }: { children: React.ReactNode }
     <div className="gita-shell" lang="hi">
       <GitaNav locale="hi" />
       {children}
+      <SiteFooter locale="hi" />
     </div>
   )
 }

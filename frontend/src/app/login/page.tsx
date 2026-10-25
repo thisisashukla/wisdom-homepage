@@ -67,7 +67,7 @@ export default function LoginPage() {
           {isLoading ? 'Signing in…' : 'Continue with Google'}
         </button>
 
-        <p className="login-note">No subscription. No payment. No account setup.</p>
+        <p className="login-note">Free to read. No subscription, no payment.</p>
       </div>
     </div>
   )

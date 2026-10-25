@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import BlogTracker from '@/components/BlogTracker'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: 'How Wisdom Content Is Made — Methodology & Disclosure',
   description:
@@ -73,7 +74,7 @@ const pageCSS = `
   .page-hero-inner { max-width: var(--max); margin: 0 auto; }
 
   .hero-label {
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--gold-light);
@@ -499,21 +500,7 @@ export default function MethodologyPage() {
         </a>
       </div>
 
-      <footer>
-        <p>
-          Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed.{' '}
-          <a href="/methodology">Methodology</a>
-        </p>
-        <p style={{ marginTop: 8 }}>
-          <a href="/">wisdomquotes.in</a> &nbsp;·&nbsp;
-          <a href="/blogs">Blog</a> &nbsp;·&nbsp;
-          <a href="/gita">Bhagavad Gita</a> &nbsp;·&nbsp;
-          <a href="/privacy">Privacy</a> &nbsp;·&nbsp;
-          <a href="/terms">Terms</a> &nbsp;·&nbsp;
-          <a href="mailto:work.ankurshukla@gmail.com">Support</a>
-        </p>
-        <p style={{ marginTop: 6 }}>© 2026 Wisdom · Ankur Shukla</p>
-      </footer>
+      <SiteFooter />
     </>
   )
 }

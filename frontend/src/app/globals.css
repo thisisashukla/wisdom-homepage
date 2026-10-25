@@ -37,14 +37,18 @@ a {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 26px;
-  height: 20px;
+  /* 26x20 bars inside a 44x44 hit area. */
+  width: 44px;
+  height: 44px;
   margin-left: auto;
-  margin-right: 14px;
-  padding: 0;
+  margin-right: 0;
+  padding: 12px 9px;
+  box-sizing: border-box;
   background: transparent;
   border: 0;
   cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .mobile-nav-toggle span {
   display: block;
@@ -71,11 +75,14 @@ a {
   top: 100%;
   left: 0;
   right: 0;
-  background: rgba(18, 5, 5, 0.96);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(200, 136, 30, 0.2);
-  padding: 8px 20px 16px;
+  /* Opaque and full-height so the page never shows through or stays tappable. */
+  height: calc(100vh - 60px);
+  height: calc(100dvh - 60px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: #120505;
+  border-top: 1px solid rgba(200, 136, 30, 0.2);
+  padding: 8px 20px calc(24px + env(safe-area-inset-bottom));
   z-index: 199;
 }
 .mobile-nav-drawer[data-open] {
@@ -290,7 +297,7 @@ a {
   gap: 20px;
 }
 .shloka-col-label {
-  font-size: 9.5px;
+  font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 700;
@@ -462,4 +469,69 @@ a {
 @media (max-width: 640px) {
   .verse-audio-words { font-size: 19px; }
   .verse-audio-btn { width: 46px; height: 46px; }
+}
+
+/* iOS Safari zooms the page when a focused field's text is under 16px. */
+@media (max-width: 960px) {
+  input:not([type=checkbox]):not([type=radio]):not([type=range]),
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* Touch: grow the hit area of small inline links to ~44px tall without
+   changing the layout (padding is cancelled by an equal negative margin). */
+@media (max-width: 960px) {
+  .breadcrumb a,
+  .gita-crumb a,
+  .gf-crumbs a,
+  .gf-ref a,
+  .gf-more,
+  .pp-meta a,
+  footer a,
+  .legal-footer a,
+  .verse-audio-label {
+    display: inline-block;
+    padding-block: 12px;
+    margin-block: -12px;
+  }
+  .gita-tag { min-height: 36px; display: inline-flex; align-items: center; }
+}
+
+/* Headings: no one-word last lines ("life.", "it."). */
+h1, h2, h3 { text-wrap: balance; }
+
+/* One page-title size on phones. Hero (home) and article (blog post) titles
+   keep their own scale; every other page H1 is 30px. */
+@media (max-width: 600px) {
+  h1.heading,
+  .legal-h1,
+  .page-hero-inner > h1,
+  .blog-index-h1 {
+    font-size: 30px !important;
+    line-height: 1.15;
+  }
+  .app-hero .wrap { text-align: left; }
+  .app-hero .heading,
+  .app-hero .subtext { margin-left: 0 !important; margin-right: 0 !important; }
+  .app-hero .hero-actions { justify-content: flex-start !important; }
+}
+
+/* Giant watermark words behind hero copy read as smudges on a phone. */
+@media (max-width: 700px) {
+  .blog-hero::before,
+  .about-hero::before,
+  .article-hero::before {
+    content: none !important;
+  }
+}
+
+/* Long CTA labels must wrap inside the screen, never push the page wider. */
+@media (max-width: 600px) {
+  .btn-read-gita {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
 }

@@ -143,6 +143,15 @@ const topicSlugSet = new Set(topicSummaries.map((t) => t.slug))
 /** True when a /gita/topic/<slug> hub page exists for this tag. */
 export const hasTopic = (slug: string): boolean => topicSlugSet.has(slug)
 
+const topicLabelMap = new Map(topicSummaries.map((t) => [t.slug, t.label]))
+
+/** Display name for a tag slug ("karma-yoga" → "Karma Yoga"). */
+export const topicLabel = (slug: string): string =>
+  (topicLabelMap.get(slug) ?? slug.replace(/-/g, ' '))
+    .split(' ')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ')
+
 // Retired topic URLs (tags without a hub) are 308-redirected by
 // src/middleware.ts using src/content/gita/topic-redirects.json, which
 // scripts/build-topic-redirects.mjs generates at prebuild.

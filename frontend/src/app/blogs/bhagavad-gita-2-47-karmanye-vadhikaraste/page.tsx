@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Karmanye Vadhikaraste Meaning: Bhagavad Gita 2.47 Explained",
   description: "Karmanye vadhikaraste ma phaleshu kadachana: you have a right to your actions, never to their fruits. Gita 2.47 word by word, and its 4 instructions.",
@@ -773,10 +773,7 @@ export default function BG247Page() {
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"BG 2.47 Karmanye Vadhikaraste"} />
       </div>
 
-      <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="BG 2.47 Karmanye Vadhikaraste" />
     </>

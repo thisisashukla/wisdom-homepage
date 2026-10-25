@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Bhagavad Gita on Anxiety — 9 Verses That Directly Address Fear, Worry & Overthinking",
   description: "In chapter 1 Arjuna trembles, his mouth goes dry and his bow slips. Verses on fear, worry and the restless mind, with Sanskrit, English meaning and what Krishna tells him to do.",
@@ -836,10 +836,7 @@ export default function GitaOnAnxietyPage() {
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagavad Gita On Anxiety"} />
       </div>
 
-      <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Bhagavad Gita On Anxiety" />
     </>

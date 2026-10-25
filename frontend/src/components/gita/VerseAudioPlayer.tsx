@@ -12,9 +12,12 @@ interface Props {
   text: string
   chapter?: number
   verse?: number
+  /** UI language for the caption and button labels. */
+  locale?: 'en' | 'hi'
 }
 
-export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, verse }: Props) {
+export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, verse, locale = 'en' }: Props) {
+  const hi = locale === 'hi'
   const audioRef = useRef<HTMLAudioElement>(null)
   const rafRef = useRef<number>(0)
   const hasTracked = useRef(false)
@@ -127,9 +130,9 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
         <button
           className="verse-audio-btn"
           onClick={toggle}
-          aria-label={playing ? 'Pause recitation' : 'Play Sanskrit recitation'}
+          aria-label={hi ? (playing ? 'पाठ रोकें' : 'संस्कृत पाठ सुनें') : (playing ? 'Pause recitation' : 'Play Sanskrit recitation')}
           disabled={loadError}
-          title={loadError ? 'Audio unavailable' : undefined}
+          title={loadError ? (hi ? 'ऑडियो उपलब्ध नहीं' : 'Audio unavailable') : undefined}
         >
           {playing ? (
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -143,7 +146,7 @@ export default function VerseAudioPlayer({ audioSrc, timestamps, text, chapter, 
         </button>
         <div className="verse-audio-caption">
           <a href="/tts" className="verse-audio-label" data-mp-location="verse_audio_credit">
-            Sanskrit recitation
+            {hi ? 'संस्कृत पाठ' : 'Sanskrit recitation'}
           </a>
           <span className="verse-audio-time">
             {fmt(currentTime)}{duration ? ` / ${fmt(duration)}` : ''}

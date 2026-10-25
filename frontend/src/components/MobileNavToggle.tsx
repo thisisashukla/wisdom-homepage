@@ -3,18 +3,19 @@
 import { useEffect, useState } from 'react'
 import { appStoreUrl, detectPlatform } from '@/lib/app'
 
+const PLAN_HREF = '/start?ref=menu'
+const PLAN_LABEL = 'Create my 7-day Gita plan'
+
 const links = [
-  { href: '/start?ref=menu', label: 'Create my 7-day Gita plan · Week 1 free' },
   { href: '/gita', label: 'Read the Gita' },
   { href: '/hi/gita', label: 'हिंदी गीता' },
   { href: '/gita/today', label: 'Verse of the Day' },
   { href: '/gita-for', label: 'Gita for Life' },
   { href: '/blogs', label: 'Blog' },
+  { href: '/app', label: 'The Wisdom app' },
+  { href: '/about', label: 'About' },
 ]
 
-// Mobile drawer's app CTA now routes to /app (on-site landing), not the
-// App Store directly.
-const APP_LANDING_URL = '/app'
 
 export function MobileNavToggle() {
   const [open, setOpen] = useState(false)
@@ -27,7 +28,13 @@ export function MobileNavToggle() {
       if (e.key === 'Escape') setOpen(false)
     }
     document.addEventListener('keydown', onKey)
-    return () => document.removeEventListener('keydown', onKey)
+    // Lock the page behind the open drawer so it can't scroll or be tapped.
+    const prevOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.body.style.overflow = prevOverflow
+    }
   }, [open])
 
   return (
@@ -54,22 +61,20 @@ export function MobileNavToggle() {
         <ul>
           <li>
             <a
-              href={APP_LANDING_URL}
+              href={ios ? appStoreUrl('web_menu') : PLAN_HREF}
+              target={ios ? '_blank' : undefined}
+              rel={ios ? 'noopener' : undefined}
               className="mobile-nav-app"
               data-mp-location="mobile_nav_drawer_app"
               onClick={() => setOpen(false)}
             >
-              Get the Wisdom app for iPhone →
+              {PLAN_LABEL}
+              <span className="mobile-nav-app-sub">Week 1 free</span>
             </a>
           </li>
           {links.map((l) => (
             <li key={l.href}>
-              <a
-                href={ios && l.href.startsWith('/start') ? appStoreUrl('web_menu') : l.href}
-                target={ios && l.href.startsWith('/start') ? '_blank' : undefined}
-                rel={ios && l.href.startsWith('/start') ? 'noopener' : undefined}
-                onClick={() => setOpen(false)}
-              >
+              <a href={l.href} onClick={() => setOpen(false)}>
                 {l.label}
               </a>
             </li>

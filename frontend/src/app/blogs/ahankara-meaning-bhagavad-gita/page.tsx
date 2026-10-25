@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: 'Ahankara Meaning: The Bhagavad Gita\'s Word for Ego',
   description:
@@ -167,7 +167,7 @@ const pageCSS = `
     padding: 1.5rem 1.75rem; margin: 2rem 0;
   }
   .definition-box .def-label {
-    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
     color: var(--gold); font-weight: 700; margin-bottom: 10px;
   }
   .definition-box .def-word {
@@ -269,7 +269,7 @@ const pageCSS = `
     transition: background 0.15s;
   }
   .topic-cta:hover { background: rgba(200,136,30,0.12); }
-  .topic-cta-label { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 5px; }
+  .topic-cta-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 5px; }
   .topic-cta-title { font-size: 15px; font-weight: 600; color: var(--gold-light); line-height: 1.4; }
   .topic-cta-sub { font-size: 12.5px; color: var(--text-dimmer); margin-top: 4px; }
 
@@ -671,16 +671,7 @@ export default function AhankaraMeaningPage() {
 
       <VerseFunnelCTA variant="chapter" locale="en" pageName={"Ahankara Meaning Bhagavad Gita"} />
 
-      <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p>
-          <a href="https://wisdomquotes.in">Home</a> —{' '}
-          <a href="https://wisdomquotes.in/blogs">Blog</a> —{' '}
-          <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">
-            Download
-          </a>
-        </p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Ahankara Meaning Bhagavad Gita" />
     </>

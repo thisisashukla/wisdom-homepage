@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Share",
   description: "Marcus Aurelius and Krishna never met, yet reached strikingly similar conclusions on action, equanimity and duty. 9 side-by-side teachings — where Stoicism and the Gita agree, and where they part ways.",
@@ -310,7 +310,7 @@ const pageCSS = `
         }
 
         .comparison-cell .cell-label {
-            font-size: 10px;
+            font-size: 11px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -1004,10 +1004,7 @@ export default function GitaVsStoicismPage() {
       <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagavad Gita vs Stoicism"} />
     </div>
 
-    <footer>
-      <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-      <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-    </footer>
+    <SiteFooter />
 
     <BlogTracker pageName="Bhagavad Gita vs Stoicism" />
     </>

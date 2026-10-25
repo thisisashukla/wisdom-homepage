@@ -1,0 +1,58 @@
+/* Selectors are footer.site-footer… so older page-level `footer {}` rules
+   (blog posts, About) can't restyle it. */
+footer.site-footer {
+  background: #0e0404;
+  border-top: 1px solid rgba(200, 136, 30, 0.2);
+  padding: 40px 0 calc(40px + env(safe-area-inset-bottom, 0px));
+  margin: 0;
+  text-align: left;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 12.5px;
+  letter-spacing: normal;
+  color: rgba(245, 232, 204, 0.45);
+}
+footer.site-footer .site-footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer.site-footer p { margin: 0; font-size: 12.5px; line-height: 1.6; color: rgba(245, 232, 204, 0.45); }
+footer.site-footer span { color: inherit; }
+footer.site-footer a { color: rgba(245, 232, 204, 0.55); text-decoration: none; transition: color 0.18s; }
+footer.site-footer a:hover { color: #f5c96a; }
+footer.site-footer .site-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #f5c96a;
+}
+footer.site-footer .site-footer-logo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(200, 136, 30, 0.35);
+}
+footer.site-footer .site-footer-note { font-size: 12px; }
+footer.site-footer .site-footer-links {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+footer.site-footer .site-footer-links a {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 13px;
+}

@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "50 Krishna Quotes from the Bhagavad Gita, with Verse Numbers",
   description: "50 one-line Krishna quotes in English from the Bhagavad Gita, like \"You have a right to action, never to its fruits\" (2.47). Each with verse number and context.",
@@ -111,11 +111,11 @@ const pageCSS = `
         .highlight-box p { color: var(--text); margin-bottom: 0.75rem; }
 
         .hindi-block { background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--gold); padding: 1.25rem 1.5rem; margin: 1.5rem 0 2rem; border-radius: 6px; }
-        .hindi-block .hindi-label { font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); font-weight: 600; margin-bottom: 8px; }
+        .hindi-block .hindi-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); font-weight: 600; margin-bottom: 8px; }
         .hindi-block .hindi-text { font-family: "Noto Sans Devanagari", serif; font-size: 1.05rem; color: var(--text); line-height: 1.8; }
 
         .quote-inline { background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--gold); padding: 16px 20px; margin: 14px 0; border-radius: 6px; }
-        .quote-ref { font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); font-weight: 700; margin-bottom: 8px; }
+        .quote-ref { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); font-weight: 700; margin-bottom: 8px; }
         .quote-text { font-family: "Playfair Display", Georgia, serif; font-size: 1.05rem; color: var(--text); line-height: 1.65; font-style: italic; margin-bottom: 8px; }
         .quote-context { font-size: 13px; color: var(--text-dimmer); line-height: 1.55; }
 
@@ -844,10 +844,7 @@ export default function KrishnaQuotesPage() {
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Krishna Quotes 50 Teachings"} />
       </div>
 
-      <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Krishna Quotes 50 Teachings" />
     </>

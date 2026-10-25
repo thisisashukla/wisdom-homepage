@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Bhagavad Gita for Beginners \u2014 Where to Start and What to Read First",
   description: "The Bhagavad Gita is 700 verses across 18 chapters. Where do you start, which translation should you pick, and what does it cover? A plain guide for complete beginners.",
@@ -702,10 +702,7 @@ export default function ForBeginnersPage() {
     <VerseFunnelCTA variant="chapter" locale="en" pageName={"Gita For Beginners"} />
 
 
-    <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-    </footer>
+    <SiteFooter />
 
     {/* Schema Markup */}
     

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: 'Sanskrit Recitation Credits — Powered by Vāgdhenu',
   description:
@@ -56,7 +57,7 @@ const pageCSS = `
   .page-hero-inner { max-width: var(--max); margin: 0 auto; }
 
   .hero-label {
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--gold-light);
@@ -303,23 +304,7 @@ export default function TtsCreditsPage() {
         </div>
       </div>
 
-      <footer>
-        <p>
-          Sanskrit recitation audio generated with{' '}
-          <a href="https://huggingface.co/prathoshap/vagdhenu" target="_blank" rel="noopener">
-            Vāgdhenu
-          </a>
-          , by <a href="https://x.com/prathoshap" target="_blank" rel="noopener">@prathoshap</a>
-        </p>
-        <p style={{ marginTop: 8 }}>
-          <a href="/">wisdomquotes.in</a> &nbsp;·&nbsp;
-          <a href="/gita">Bhagavad Gita</a> &nbsp;·&nbsp;
-          <a href="/blogs">Blog</a> &nbsp;·&nbsp;
-          <a href="/about">About</a> &nbsp;·&nbsp;
-          <a href="/methodology">Methodology</a>
-        </p>
-        <p style={{ marginTop: 6 }}>&copy; 2026 Wisdom</p>
-      </footer>
+      <SiteFooter />
     </>
   )
 }

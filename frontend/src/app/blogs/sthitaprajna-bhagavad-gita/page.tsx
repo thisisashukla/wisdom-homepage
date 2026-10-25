@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Sthitaprajna: The Bhagavad Gita's 18-Verse Portrait of an Unshakeable Mind",
   description: "Sthitaprajna is the Gita's word for a person whose wisdom is steady. BG 2.55-2.72 lists the qualities, from the tortoise image (2.58) to the ocean that rivers fill without moving it (2.70).",
@@ -926,10 +926,7 @@ export default function SthitaprajnaPage() {
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Sthitaprajna Bhagavad Gita"} />
       </div>
 
-      <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Sthitaprajna Bhagavad Gita" />
     </>

@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Maya Meaning: Illusion in the Bhagavad Gita",
   description:
@@ -150,7 +150,7 @@ const pageCSS = `
     padding: 1.5rem 1.75rem; margin: 2rem 0;
   }
   .definition-box .def-label {
-    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
     color: var(--gold); font-weight: 700; margin-bottom: 10px;
   }
   .definition-box .def-word {
@@ -201,7 +201,7 @@ const pageCSS = `
     border-radius: 10px; padding: 1.25rem;
   }
   .comparison-cell .cell-label {
-    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
     color: var(--gold); font-weight: 700; margin-bottom: 8px;
   }
   .comparison-cell p { font-size: 14px; color: var(--text-dim); margin-bottom: 0; line-height: 1.6; }
@@ -632,16 +632,7 @@ export default function MayaMeaningPage() {
 
       <VerseFunnelCTA variant="chapter" locale="en" pageName={"Maya Meaning Bhagavad Gita"} />
 
-      <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p>
-          <a href="https://wisdomquotes.in">Home</a> —{' '}
-          <a href="https://wisdomquotes.in/blogs">Blog</a> —{' '}
-          <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">
-            Download
-          </a>
-        </p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Maya Meaning Bhagavad Gita" />
     </>

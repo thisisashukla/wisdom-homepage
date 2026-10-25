@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 10 Summary – Key Verses & Meaning (Vibhuti Yoga)",
   description: "Bhagavad Gita Chapter 10 (Vibhuti Yoga), 42 verses on divine manifestations, sparks of the Divine, and the universe held in a single fragment ('ekamshena sthito jagat').",
@@ -137,12 +137,12 @@ const pageCSS = `
       .toc { background: var(--bg-card); border: 1px solid var(--border);
         border-left: 3px solid var(--gold); border-radius: 0 12px 12px 0;
         padding: 20px 24px; margin: 36px 0 40px; }
-      .toc-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase;
+      .toc-label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
         font-weight: 700; color: var(--gold); margin-bottom: 12px; }
       .toc-list { list-style: none; display: flex; flex-direction: column; gap: 7px; counter-reset: toc-counter; }
       .toc-list li { counter-increment: toc-counter; display: flex; align-items: baseline; gap: 10px; }
       .toc-list li::before { content: counter(toc-counter); font-family: "Inter", sans-serif;
-        font-size: 10px; font-variant-numeric: tabular-nums; color: var(--text-dimmer); min-width: 14px; }
+        font-size: 11px; font-variant-numeric: tabular-nums; color: var(--text-dimmer); min-width: 14px; }
       .toc-list a { font-size: 13.5px; color: var(--text-dim); line-height: 1.4; transition: color 0.15s; }
       .toc-list a:hover { color: var(--gold-light); }
 
@@ -155,7 +155,7 @@ const pageCSS = `
 
       .section-divider { display: flex; align-items: center; gap: 16px; margin: 56px 0 40px; }
       .section-divider-line { flex: 1; height: 1px; background: var(--border); }
-      .section-divider-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+      .section-divider-label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
         color: var(--text-dimmer); white-space: nowrap; font-weight: 600; }
 
       .highlight-box { background: rgba(200, 136, 30, 0.05); border: 1px solid var(--border);
@@ -167,7 +167,7 @@ const pageCSS = `
       .verse-table { width: 100%; border-collapse: collapse; font-size: 13.5px;
         margin: 28px 0 40px; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
       .verse-table thead tr { background: rgba(200, 136, 30, 0.08); }
-      .verse-table thead th { text-align: left; padding: 12px 16px; font-size: 9.5px;
+      .verse-table thead th { text-align: left; padding: 12px 16px; font-size: 11px;
         letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
       .verse-table tbody td { padding: 10px 16px; border-bottom: 1px solid var(--border);
         vertical-align: top; line-height: 1.55; color: var(--text-dim); }
@@ -178,7 +178,7 @@ const pageCSS = `
       .faq-section { background: var(--bg-card); border: 1px solid var(--border);
         border-top: 2px solid var(--gold); border-radius: 14px; overflow: hidden; margin: 48px 0; }
       .faq-header { padding: 28px 32px 20px; border-bottom: 1px solid var(--border); }
-      .faq-header-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+      .faq-header-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
         color: var(--gold); font-weight: 700; margin-bottom: 6px; }
       .faq-header h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
         color: var(--gold-light); line-height: 1.3; margin: 0; }
@@ -190,7 +190,7 @@ const pageCSS = `
       .related-reading { background: var(--bg-card); border: 1px solid var(--border);
         border-top: 2px solid var(--gold); border-radius: 14px; padding: 28px 32px;
         margin: 48px 0; }
-      .related-reading-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+      .related-reading-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
         color: var(--gold); font-weight: 700; margin-bottom: 6px; }
       .related-reading h2 { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700;
         color: var(--gold-light); line-height: 1.3; margin: 0 0 18px; }
@@ -198,7 +198,7 @@ const pageCSS = `
       .related-card { display: block; background: var(--bg); border: 1px solid var(--border);
         border-radius: 10px; padding: 14px 18px; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
       .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
-      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+      .related-card-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
         color: var(--text-dimmer); font-weight: 600; margin-bottom: 4px; }
       .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
 
@@ -914,21 +914,7 @@ export default function ChapterPage10() {
       </div>
 
       {/* FOOTER */}
-      <footer>
-        <p>
-          Wisdom © 2026. Part of a{' '}
-          <a
-            href={appStoreUrl('web_blog_footer')}
-            target="_blank"
-            rel="noopener"
-            data-mp-location="footer"
-          >free iPhone app</a>{' '}
-          that tunes the Bhagavad Gita to your life, one verse a day. Made with reverence.
-        </p>
-        <p style={{ marginTop: '8px' }}>
-          <a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>
-        </p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Bhagwat Geeta Chapter 10" />
     </>

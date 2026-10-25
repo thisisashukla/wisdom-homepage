@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Sattva, Rajas, Tamas: The Three Gunas of the Bhagavad Gita Explained",
   description: "Sattva (clarity), rajas (drive), tamas (inertia) — the three gunas of the Bhagavad Gita explained in plain English. What each one feels like, how they show up in your food, work and moods, which one is dominant in you right now, and how Chapter 14 says to move beyond them.",
@@ -829,10 +829,7 @@ export default function ThreeGunasPage() {
       <VerseFunnelCTA variant="chapter" locale="en" pageName={"Three Gunas Sattva Rajas Tamas"} />
     </div>
 
-    <footer>
-      <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-      <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-    </footer>
+    <SiteFooter />
 
     <BlogTracker pageName="Three Gunas Sattva Rajas Tamas" />
     </>

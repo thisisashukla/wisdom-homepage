@@ -226,6 +226,18 @@
   background: var(--bg-warm);
 }
 .gita-card-art-body { padding: 20px 22px 22px; }
+@media (max-width: 600px) {
+  .gita-card-art { flex-direction: row; align-items: stretch; }
+  .gita-card-art-img {
+    width: 104px;
+    aspect-ratio: auto;
+    min-height: 104px;
+    flex-shrink: 0;
+    border-bottom: 0;
+    border-right: 1px solid var(--border);
+  }
+  .gita-card-art-body { padding: 14px 16px; min-width: 0; }
+}
 
 /* ── Chapter page hero ── */
 .gita-chapter-hero {
@@ -251,8 +263,9 @@
     gap: 32px;
     padding: 28px 0 12px;
   }
-  .gita-stat-row { gap: 20px; }
+  .gita-stat-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
   .gita-stat-num { font-size: 24px; }
+  .gita-stat-label { font-size: 11px; letter-spacing: 0.06em; }
 }
 
 /* ── App-Store CTAs (inline + block variants) ── */
@@ -777,7 +790,7 @@
 }
 .gita-verse-ref-ch {
   margin-top: 5px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -818,7 +831,7 @@
   margin-top: 4px;
 }
 .gita-verse-depth {
-  font-size: 9.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -871,7 +884,7 @@
   .gita-verse-list a { padding: 14px 14px; }
   .gita-verse-ref { width: 46px; padding-right: 12px; margin-right: 13px; }
   .gita-verse-ref-num { font-size: 16px; }
-  .gita-verse-ref-ch { font-size: 9px; margin-top: 4px; }
+  .gita-verse-ref-ch { font-size: 11px; margin-top: 4px; }
   .gita-verse-essence { font-size: 14.5px; }
   .gita-verse-insight { font-size: 12.5px; }
 }
@@ -991,7 +1004,7 @@
 .gv-type-chip {
   display: inline-block;
   margin-left: 10px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1027,7 +1040,7 @@
 .gv-depth i.on { background: rgba(245, 201, 106, 0.7); }
 .gv-depth em {
   margin-left: 5px;
-  font-size: 10px;
+  font-size: 11px;
   font-style: normal;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1071,7 +1084,7 @@ a.gv-key:hover {
   transform: translateY(-1px);
 }
 .gv-key-count {
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   color: rgba(245, 201, 106, 0.55);
   background: rgba(245, 201, 106, 0.1);
@@ -1122,7 +1135,7 @@ a.gv-key:hover {
   display: flex;
   align-items: center;
   gap: 9px;
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1345,7 +1358,7 @@ a.gv-key:hover {
   border: 1px solid rgba(200, 136, 30, 0.4);
   background: var(--bg);
   color: var(--gold-light);
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1463,7 +1476,7 @@ a.gv-key:hover {
   display: flex;
   align-items: center;
   gap: 9px;
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1545,7 +1558,7 @@ a.gv-key:hover {
 .gv-literal b {
   font-weight: 600;
   color: rgba(245, 201, 106, 0.75);
-  font-size: 10.5px;
+  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   margin-right: 8px;
@@ -1570,7 +1583,7 @@ a.gv-key:hover {
 /* Ghost numeral floating in the corner */
 .gv-cmnt-ghost {
   position: absolute;
-  top: -14px;
+  top: 4px;
   right: 6px;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 84px;
@@ -1581,7 +1594,7 @@ a.gv-key:hover {
   user-select: none;
 }
 .gv-cmnt-kicker {
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -1627,7 +1640,7 @@ a.gv-key:hover {
   margin-bottom: 14px;
 }
 .gv-takeaway-kicker {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -1717,7 +1730,7 @@ a.gv-key:hover {
 }
 .gv-pn-body.right { text-align: right; align-items: flex-end; }
 .gv-pn-kicker {
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1752,6 +1765,12 @@ a.gv-key:hover {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 12px 34px -10px rgba(0, 0, 0, 0.75);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+.gv-versenav[data-hidden] {
+  opacity: 0;
+  transform: translate(-50%, 16px);
+  pointer-events: none;
 }
 .gv-versenav-btn {
   display: inline-flex;
@@ -1823,7 +1842,7 @@ a.gv-key:hover {
   color: var(--gold);
 }
 .gv-rel-tag {
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: lowercase;
@@ -1857,7 +1876,7 @@ a.gv-key:hover {
 @media (max-width: 640px) {
   /* Hero */
   .gv-hero-head { margin-bottom: 4px; }
-  .gv-hero-eyebrow { font-size: 10px; letter-spacing: 0.22em; }
+  .gv-hero-eyebrow { font-size: 11px; letter-spacing: 0.22em; }
   .gv-hero-h1 { margin-bottom: 12px; }
   .gv-hero-badges { gap: 6px; margin-bottom: 14px; }
   .gv-hero-pill { padding: 5px 13px; font-size: 12px; }
@@ -1866,7 +1885,7 @@ a.gv-key:hover {
 
   /* Verse card */
   .gv-hero-card { margin-top: 28px; border-radius: 16px; }
-  .gv-card-chip { left: 18px; font-size: 10px; padding: 4px 12px; }
+  .gv-card-chip { left: 18px; font-size: 11px; padding: 4px 12px; }
   .gv-diamonds { margin: 8px 0 14px; }
   .gv-en-quote { font-size: 16.5px; margin-top: 18px; }
   .gv-orn-divider { max-width: 260px; margin-top: 20px; }
@@ -1878,7 +1897,7 @@ a.gv-key:hover {
   .gv-wbw-flow { padding: 14px 8px 12px; gap: 4px 0; border-radius: 14px; }
   .gv-word { padding: 7px 8px 6px; border-radius: 10px; }
   .gv-word-sa { font-size: 16.5px; }
-  .gv-word-en { font-size: 10.5px; max-width: 96px; }
+  .gv-word-en { font-size: 11px; max-width: 96px; }
   /* No hover on touch — keep all words full opacity */
   .gv-wbw-flow:hover .gv-word:not(:hover) { opacity: 1; }
   .gv-literal { font-size: 12.5px; padding: 11px 14px; }
@@ -1893,7 +1912,7 @@ a.gv-key:hover {
 
   /* Commentary */
   .gv-cmnt { padding: 18px 18px 20px; border-radius: 0 14px 14px 0; margin-bottom: 10px; }
-  .gv-cmnt-ghost { font-size: 58px; top: -10px; }
+  .gv-cmnt-ghost { font-size: 58px; top: 6px; }
   .gv-cmnt-h { font-size: 18px; }
   .gv-cmnt-p { font-size: 14.5px; line-height: 1.75; }
 
@@ -1918,7 +1937,9 @@ a.gv-key:hover {
     bottom: calc(12px + env(safe-area-inset-bottom, 0px));
     max-width: calc(100vw - 24px);
   }
-  .gv-versenav-btn { padding: 0 12px; font-size: 12.5px; }
+  .gv-versenav-btn { padding: 0 12px; font-size: 12.5px; height: 40px; }
+  /* Room under the last block so the pill never covers the footer links. */
+  body:has(.gv-versenav) { padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
   .gv-versenav-now { padding: 0 12px; font-size: 13px; }
 
   /* Related quote cards stack */

@@ -163,7 +163,7 @@ nav.site-nav.site-nav--scrolled .nav-page-link {
 /* Mobile: one plain link to the reader beside the menu (not a button). */
 .nav-read-mobile { display: none; }
 @media (max-width: 960px) {
-  .nav-read-mobile { display: inline; margin-left: auto; margin-right: 18px; font-size: 13.5px; font-weight: 600; color: rgba(245, 232, 204, 0.75); }
+  .nav-read-mobile { display: inline; margin-left: auto; margin-right: 18px; font-size: 13.5px; font-weight: 600; color: rgba(245, 232, 204, 0.75); white-space: nowrap; }
   .nav-read-mobile + .mobile-nav-toggle { margin-left: 0; }
 }
 /* On the homepage the hero owns the CTA; the nav CTA appears once the hero is gone. */
@@ -213,13 +213,20 @@ a.nav-app-link:focus-visible {
   }
   .nav-read-mobile { margin-right: 14px; }
 }
-/* Narrow phones: keep logo + App + menu on one line; "Read the Gita" is in the drawer. */
-@media (max-width: 400px) {
+/* Phones (incl. Pro Max at 430px): keep logo + App + menu on one line; "Read the Gita" is in the drawer. */
+@media (max-width: 520px) {
   .nav-read-mobile { display: none; }
   .nav-app-link--mobile { margin-left: auto; }
 }
 
 /* Drawer: the app is the first, filled row. */
+.mobile-nav-drawer a.mobile-nav-app .mobile-nav-app-sub {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.72;
+}
 .mobile-nav-drawer a.mobile-nav-app {
   display: block;
   margin: 4px 0 10px;

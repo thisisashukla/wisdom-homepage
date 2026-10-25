@@ -90,7 +90,7 @@ export default function DevicePlans({ pageName = 'Home' }: { pageName?: string }
               data-mp-location="home_devices_app_store"
               onClick={() => trackLinkClick(pageName, 'home_devices_app_store', appHref)}
             >
-              Download on the App Store
+              Get it on the App Store
             </a>
           )}
         </div>

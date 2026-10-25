@@ -3,6 +3,7 @@ import BlogTracker from '@/components/BlogTracker'
 import { appStoreUrl } from '@/lib/app'
 
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Blog \u2014 Bhagavad Gita, Sanskrit Shlokas &amp; Hindu Philosophy",
   description: "Deep readings of the Bhagavad Gita \u2014 chapter by chapter, shloka by shloka. Sanskrit text, IAST, meaning, and modern relevance. Written for the intellectually curious.",
@@ -86,7 +87,7 @@ const pageCSS = `
         z-index: 2;
       }
       .blog-hero-label {
-        font-size: 10px;
+        font-size: 11px;
         letter-spacing: 0.22em;
         text-transform: uppercase;
         color: var(--gold-light);
@@ -292,8 +293,8 @@ const pageCSS = `
       }
 
       .card-chapter-badge {
-        font-size: 9px;
-        letter-spacing: 0.18em;
+        font-size: 11px;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
         font-weight: 600;
         color: var(--gold-light);
@@ -354,7 +355,7 @@ const pageCSS = `
         margin-bottom: 14px;
       }
       .tag {
-        font-size: 10.5px;
+        font-size: 11px;
         font-weight: 500;
         padding: 3px 9px;
         border-radius: 4px;
@@ -398,7 +399,7 @@ const pageCSS = `
         padding: 18px 20px;
       }
       .coming-label {
-        font-size: 9px;
+        font-size: 11px;
         letter-spacing: 0.18em;
         text-transform: uppercase;
         color: var(--text-dimmer);
@@ -414,7 +415,7 @@ const pageCSS = `
       .coming-soon-badge {
         display: inline-block;
         margin-top: 8px;
-        font-size: 9px;
+        font-size: 11px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
         background: rgba(200, 136, 30, 0.1);
@@ -517,7 +518,7 @@ export default function BlogIndexPage() {
     <div className="blog-hero">
       <div className="blog-hero-inner">
         <div className="blog-hero-label">Wisdom · Reading the Bhagavad Gita</div>
-        <h1>The Bhagavad Gita,<br /><em>read closely</em></h1>
+        <h1 className="blog-index-h1">The Bhagavad Gita,<br /><em>read closely</em></h1>
         <p>
           All 18 chapters. Chapter by chapter, shloka by shloka. Sanskrit, IAST,
           Hindi, and what each verse says, including the parts most summaries
@@ -1598,25 +1599,7 @@ export default function BlogIndexPage() {
       </div>
     </div>
 
-    <footer>
-      <p>
-        Wisdom App ·
-        <span>One Gita verse a day for 7 days, read aloud</span>
-        · Week 1 free on iPhone
-      </p>
-      <p style={{marginTop: '8px'}}>
-        <a href="/">wisdomquotes.in</a>  ·
-        <a href="/blogs">Blog</a>  ·
-        <a href="/gita">Bhagavad Gita</a>  ·
-        <a href="/privacy">Privacy</a>  ·
-        <a href="/terms">Terms</a>  ·
-        <a href="/methodology">Methodology</a>  ·
-        <a href="mailto:work.ankurshukla@gmail.com">Support</a>
-      </p>
-      <p style={{marginTop: '6px', fontSize: '11px', opacity: 0.7}}>
-        Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. <a href="/methodology">Methodology →</a>
-      </p>
-    </footer>
+    <SiteFooter />
 
     
 

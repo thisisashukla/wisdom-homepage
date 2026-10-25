@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "What Does the Bhagavad Gita Say About Anxiety and Fear?",
   description: "In chapter 1 Arjuna's limbs give way and his bow slips from his hand. Verses from chapters 2 and 5 on fear, worry and a restless mind, with Sanskrit and plain meaning.",
@@ -677,10 +677,7 @@ export default function AnxietyMentalPeacePage() {
     <VerseFunnelCTA variant="chapter" locale="en" pageName={"Gita Anxiety Mental Peace"} />
 
 
-    <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-    </footer>
+    <SiteFooter />
 
     {/* Schema Markup */}
     

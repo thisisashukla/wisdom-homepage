@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "20 Famous Sanskrit Shlokas with Meaning in Hindi and English",
   description: "Twenty well-known Sanskrit shlokas worth knowing by heart. From Vakratunda Mahakaya to Om Purnamadah, with accurate Devanagari, IAST, English and Hindi meaning, and context.",
@@ -111,13 +111,13 @@ const pageCSS = `
         .highlight-box p { color: var(--text); margin-bottom: 0.75rem; }
 
         .hindi-block { background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--gold); padding: 1.25rem 1.5rem; margin: 1.5rem 0 2rem; border-radius: 6px; }
-        .hindi-block .hindi-label { font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); font-weight: 600; margin-bottom: 8px; }
+        .hindi-block .hindi-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); font-weight: 600; margin-bottom: 8px; }
         .hindi-block .hindi-text { font-family: "Noto Sans Devanagari", serif; font-size: 1.05rem; color: var(--text); line-height: 1.8; }
 
         .chapter-essence-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 2rem 0 2.5rem; }
         .chapter-essence-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; display: grid; grid-template-columns: 68px 1fr; gap: 18px; align-items: baseline; }
         .chapter-essence-num { font-family: "Playfair Display", serif; font-size: 28px; color: var(--gold); font-weight: 700; line-height: 1; }
-        .chapter-essence-num small { display: block; font-size: 9.5px; letter-spacing: 0.14em; color: var(--text-dimmer); font-family: 'Inter', sans-serif; font-weight: 600; margin-top: 4px; text-transform: uppercase; }
+        .chapter-essence-num small { display: block; font-size: 11px; letter-spacing: 0.14em; color: var(--text-dimmer); font-family: 'Inter', sans-serif; font-weight: 600; margin-top: 4px; text-transform: uppercase; }
         .chapter-essence-title { font-family: "Playfair Display", serif; font-size: 15px; color: var(--gold-light); font-weight: 600; margin-bottom: 6px; }
         .chapter-essence-title em { font-style: italic; color: var(--text); font-weight: 500; }
         .chapter-essence-body { font-size: 14px; color: var(--text-dim); line-height: 1.65; }
@@ -808,10 +808,7 @@ export default function TwentyFamousSanskritShlokasPage() {
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"20 Famous Sanskrit Shlokas"} />
       </div>
 
-      <footer>
-        <p>&copy; 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> &mdash; <a href="https://wisdomquotes.in/blogs">Blog</a> &mdash; <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="20 Famous Sanskrit Shlokas" />
     </>

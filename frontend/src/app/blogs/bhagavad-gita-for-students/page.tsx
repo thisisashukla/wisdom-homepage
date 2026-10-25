@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Bhagavad Gita for Students — Key Verses on Focus, Exam Stress & Effort (Exam-Ready Summary)",
   description: "The Gita was taught to a trained archer who froze before the battle he had prepared for. 9 verses for students on focus, exam stress, effort and the restless mind, with Sanskrit, meaning and application.",
@@ -788,10 +788,7 @@ export default function GitaForStudentsPage() {
       <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagavad Gita For Students"} />
     </div>
 
-    <footer>
-      <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-      <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-    </footer>
+    <SiteFooter />
 
     <BlogTracker pageName="Bhagavad Gita For Students" />
     </>

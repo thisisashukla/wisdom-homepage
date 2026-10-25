@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Karma in the Bhagavad Gita: Meaning and 7 Key Verses (Chapters 2 to 4)",
   description: "Karma means action. Chapters 2 to 4 of the Bhagavad Gita teach acting without attachment to results. The meaning of karma, plus 7 shlokas on karma with Sanskrit and English meaning.",
@@ -744,10 +744,7 @@ export default function KarmaMeaningPage() {
     <VerseFunnelCTA variant="chapter" locale="en" pageName={"Gita Karma Meaning"} />
 
 
-    <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> — <a href="https://wisdomquotes.in/blogs">Blog</a> — <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-    </footer>
+    <SiteFooter />
 
     {/* Schema Markup */}
     

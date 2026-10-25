@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import BlogTracker from '@/components/BlogTracker'
 import Nav from '@/components/Nav'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'Privacy policy for the Wisdom app and wisdomquotes.in. We do not sell your data.',
@@ -141,16 +142,7 @@ export default function PrivacyPage() {
         </div>
       </main>
 
-      <footer className="legal-footer">
-        <div className="legal-footer-inner">
-          <span>© 2026 Wisdom · Ankur Shukla</span>
-          <div className="legal-footer-links">
-            <a href="/privacy">Privacy</a>
-            <a href="/terms">Terms</a>
-            <a href={`mailto:${SUPPORT_EMAIL}`}>Support</a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   )
 }

@@ -16,6 +16,7 @@ import PlatformOnly from '@/components/funnel/PlatformOnly'
 import './home.css'
 import './home-v3.css'
 
+import SiteFooter from '@/components/SiteFooter'
 // Revalidate hourly so the daily verse rolls over without a manual rebuild
 export const revalidate = 3600
 
@@ -394,33 +395,7 @@ export default async function HomePage() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer>
-        <div className="footer-inner">
-          <div className="footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '9px' }}>
-            <img src="/assets/new-light-logo.webp" alt="Wisdom" loading="lazy" style={{ width: '30px', height: '30px', borderRadius: '50%', objectFit: 'cover', border: '1px solid rgba(200, 136, 30, 0.35)' }} />
-            Wisdom
-          </div>
-          <p className="footer-copy">© 2026 Wisdom · Ankur Shukla · Bhagavad Gita, tuned to your life.</p>
-          <p className="footer-crisis">In crisis? Call Tele-MANAS on 14416 (India, free, 24×7) or your local emergency number.</p>
-          <p style={{ fontSize: '11px', color: 'var(--text-dimmer)', marginTop: '4px' }}>
-            Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. <a href="/methodology" style={{ color: 'var(--text-dimmer)' }}>Methodology →</a>
-          </p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
-            <a href="https://x.com/sansearchapp" target="_blank" rel="noopener noreferrer" aria-label="Wisdom on X (Twitter)" style={{ color: 'var(--text-dimmer)', fontSize: '13px' }} data-mp-location="footer_twitter">𝕏</a>
-            <a href="https://www.instagram.com/wisdomquoteapp/" target="_blank" rel="noopener noreferrer" aria-label="Wisdom on Instagram" style={{ color: 'var(--text-dimmer)', fontSize: '13px' }} data-mp-location="footer_instagram">Instagram</a>
-            <ul className="footer-links">
-              <li><a href="/gita">Read the Gita</a></li>
-              <li><a href="/hi/gita" hrefLang="hi">हिंदी गीता</a></li>
-              <li><a href="/gita-for">Gita for life</a></li>
-              <li><a href="/app">iPhone app</a></li>
-              <li><a href="/blogs">Blog</a></li>
-              <li><a href="/privacy">Privacy</a></li>
-              <li><a href="/terms">Terms</a></li>
-              <li><a href="mailto:work.ankurshukla@gmail.com">Support</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Home" />
       <HomeAnimations />

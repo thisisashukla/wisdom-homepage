@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Karma, Jnana & Bhakti Yoga: Krishna's Three Paths in the Gita",
   description: "Karma Yoga (2.47), Jnana Yoga (4.34), Bhakti Yoga (9.22): what each of Krishna's three paths asks of you, and which one suits your temperament.",
@@ -1302,10 +1302,7 @@ export default function KrishnaThreePathsPage() {
         </div>
       </section>
 
-      <footer>
-        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
-        <p><a href="https://wisdomquotes.in">Home</a> · <a href="https://wisdomquotes.in/blogs">Blog</a> · <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
-      </footer>
+      <SiteFooter />
 
       <BlogTracker pageName="Krishna Three Paths" />
     </>

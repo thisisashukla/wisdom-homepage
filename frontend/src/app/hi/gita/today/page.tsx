@@ -8,6 +8,7 @@ import {
   chapterUrl,
   hasTopic,
   topicUrl,
+  topicLabel,
 } from '@/lib/gita'
 import GitaAppCTA from '@/components/gita/GitaAppCTA'
 import BlogTracker from '@/components/BlogTracker'
@@ -226,6 +227,7 @@ export default async function TodayPageHi() {
             text={verse.sanskrit}
             chapter={chapter}
             verse={verseNum}
+            locale="hi"
           />
         ) : (
           <SanskritText text={verse.sanskrit} className="gita-sanskrit" />
@@ -237,7 +239,7 @@ export default async function TodayPageHi() {
           </div>
         </div>
         <div className="gita-translation">
-          <div className="gita-translation-label">English</div>
+          <div className="gita-translation-label">अंग्रेज़ी अनुवाद</div>
           <div className="gita-translation-text" lang="en">
             {verse.englishTranslation}
           </div>
@@ -248,7 +250,7 @@ export default async function TodayPageHi() {
             <span>विषय:</span>
             {verse.tags.filter(hasTopic).map((t) => (
               <a key={t} href={topicUrl(t, 'hi')} className="gita-tag" data-mp-location="today_tag">
-                {t}
+                {topicLabel(t)}
               </a>
             ))}
           </div>

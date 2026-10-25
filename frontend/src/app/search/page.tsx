@@ -591,7 +591,7 @@ const COMING_SOON_CSS = `
   }
   .coming-soon__label {
     display: inline-block;
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: #f5c96a;

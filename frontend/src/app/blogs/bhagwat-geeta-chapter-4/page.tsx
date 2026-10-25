@@ -3,8 +3,8 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
-import { appStoreUrl } from '@/lib/app'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 4 Summary \u2013 Key Verses & Meaning (Jnana Karma Yoga)",
   description: "Bhagavad Gita Chapter 4 (Jnana Karma Sanyasa Yoga) \u2014 42 verses on 'yada yada hi dharmasya,' divine incarnation, the yoga of knowledge, and how wisdom burns karma.",
@@ -228,7 +228,7 @@ const pageCSS = `
         margin: 36px 0 40px;
       }
       .toc-label {
-        font-size: 9.5px;
+        font-size: 11px;
         letter-spacing: 0.18em;
         text-transform: uppercase;
         font-weight: 700;
@@ -240,7 +240,7 @@ const pageCSS = `
       .toc-list li::before {
         content: counter(toc-counter);
         font-family: "Inter", sans-serif;
-        font-size: 10px;
+        font-size: 11px;
         font-variant-numeric: tabular-nums;
         color: var(--text-dimmer);
         min-width: 14px;
@@ -271,7 +271,7 @@ const pageCSS = `
       /* ── SECTION DIVIDER ── */
       .section-divider { display: flex; align-items: center; gap: 16px; margin: 56px 0 40px; }
       .section-divider-line { flex: 1; height: 1px; background: var(--border); }
-      .section-divider-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dimmer); white-space: nowrap; font-weight: 600; }
+      .section-divider-label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dimmer); white-space: nowrap; font-weight: 600; }
 
       /* ── HIGHLIGHT BOX ── */
       .highlight-box {
@@ -294,7 +294,7 @@ const pageCSS = `
         padding: 28px 32px;
         margin: 48px 0;
       }
-      .insights-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--gold); margin-bottom: 16px; }
+      .insights-label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--gold); margin-bottom: 16px; }
                   .insights-list { list-style: none; display: flex; flex-direction: column; gap: 0; counter-reset: insight-counter; }
       .insights-list li {
         counter-increment: insight-counter;
@@ -340,7 +340,7 @@ const pageCSS = `
       .verse-table thead th {
         text-align: left;
         padding: 12px 16px;
-        font-size: 9.5px;
+        font-size: 11px;
         letter-spacing: 0.15em;
         text-transform: uppercase;
         color: var(--gold);
@@ -367,7 +367,7 @@ const pageCSS = `
         margin: 48px 0;
       }
       .faq-header { padding: 28px 32px 20px; border-bottom: 1px solid var(--border); }
-      .faq-header-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+      .faq-header-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 6px; }
       .faq-header h2 {
         font-family: "Playfair Display", serif;
         font-size: 22px;
@@ -390,7 +390,7 @@ const pageCSS = `
         padding: 28px 32px;
         margin: 48px 0;
       }
-      .wisdom-entity-label { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--gold); margin-bottom: 10px; }
+      .wisdom-entity-label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--gold); margin-bottom: 10px; }
       .wisdom-entity h3 { font-family: "Playfair Display", serif; font-size: 18px; font-weight: 700; color: var(--gold-light); margin-bottom: 10px; }
       .wisdom-entity p { font-size: 14px; line-height: 1.7; color: var(--text-dim); margin-bottom: 10px; }
       .wisdom-entity p:last-child { margin-bottom: 0; }
@@ -516,7 +516,7 @@ const pageCSS = `
         transition: border-color 0.15s, background 0.15s, transform 0.15s;
       }
       .related-card:hover { border-color: var(--gold); background: var(--bg-card-hover); transform: translateY(-2px); }
-      .related-card-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-dimmer); font-weight: 600; margin-bottom: 6px; }
+      .related-card-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-dimmer); font-weight: 600; margin-bottom: 6px; }
       .related-card-title { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.4; }
 
       /* ── FOOTER ── */
@@ -1263,18 +1263,7 @@ export default function ChapterFourPage() {
     </div>
 
     {/* FOOTER */}
-    <footer>
-      <p>
-        Wisdom © 2026. Part of a
-        <a href={appStoreUrl('web_blog_footer')}
-          target="_blank"
-          rel="noopener"
-          data-mp-location="footer"
-          >free iPhone app</a
-        >
-        that tunes the Bhagavad Gita to your life, one verse a day.</p><p style={{ marginTop: '8px' }}><a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>
-      </p>
-    </footer>
+    <SiteFooter />
   
     
 

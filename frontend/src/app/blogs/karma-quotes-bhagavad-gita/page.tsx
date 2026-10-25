@@ -3,6 +3,7 @@ import BlogTracker from '@/components/BlogTracker'
 import FeedbackWidget from '@/components/FeedbackWidget'
 import ShlokaCard from '@/components/gita/ShlokaCard'
 
+import SiteFooter from '@/components/SiteFooter'
 export const metadata: Metadata = {
   title: "Karma Quotes in Sanskrit: 10 Gita Shlokas with Meaning",
   description: "10 Sanskrit quotes on karma from the Bhagavad Gita, starting with 2.47 (karmanye vadhikaraste), each with transliteration, English meaning and essence.",
@@ -472,6 +473,7 @@ export default function KarmaQuotesPage() {
         <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" data-mp-location="read_next_2_47_blog">Bhagavad Gita 2.47 — Karmanye Vadhikaraste, Explained →</a>
         <a href="/gita/topic/karma-phala" data-mp-location="read_next_karma_phala_topic">Topic: Karma Phala (Fruit of Action) →</a>
       </div>
+      <SiteFooter />
     </>
   )
 }

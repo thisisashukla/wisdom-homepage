@@ -83,8 +83,9 @@ export default function GitaIndexPage() {
               <div className="gita-stat-label">Chapters</div>
             </div>
             <div className="gita-stat">
-              <div className="gita-stat-num">{totalProcessed}</div>
-              <div className="gita-stat-label">Verses live</div>
+              {/* 700 is the count used everywhere else on the site (701 includes 13.1, which some editions omit). */}
+              <div className="gita-stat-num">{totalProcessed >= 700 ? 700 : totalProcessed}</div>
+              <div className="gita-stat-label">Verses</div>
             </div>
             <div className="gita-stat">
               <div className="gita-stat-num">{topics.length}</div>
