@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: URL,
     type: 'article',
     siteName: 'Wisdom',
-    images: [{ url: 'https://wisdomquotes.in/og/gita-jayanti-which-chapter.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://wisdomquotes.in/og/gita-jayanti-which-chapter.webp', width: 1200, height: 630 }],
   },
 }
 
@@ -127,7 +127,7 @@ export default async function WhichChapterPage() {
         inLanguage: 'en',
         datePublished: '2026-10-25',
         dateModified: '2026-10-25',
-        image: 'https://wisdomquotes.in/og/gita-jayanti-which-chapter.jpg',
+        image: 'https://wisdomquotes.in/og/gita-jayanti-which-chapter.webp',
         author: { '@type': 'Person', name: 'Ankur Shukla', url: 'https://wisdomquotes.in/about' },
         publisher: { '@type': 'Organization', name: 'Wisdom', logo: 'https://wisdomquotes.in/assets/new-light-logo.webp' },
         mainEntityOfPage: URL,
