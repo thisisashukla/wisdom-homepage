@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: "bhagwat geeta chapter 14, bhagavad gita gunatraya vibhaga yoga, bhagwat geeta adhyay 14, three gunas explained, sattva rajas tamas, gunatita state, transcending gunas gita, psychology of mood gita, three gunas Bhagavad Gita explained, sattva rajas tamas meaning, Gunatraya Vibhaga Yoga summary, Bhagavad Gita 14.5 sattvam rajas tama, Bhagavad Gita 14.26 transcending gunas, what is gunatita state",
   openGraph: {
     title: "Bhagavad Gita Chapter 14 Summary – Key Verses & Meaning (Three Gunas Yoga)",
-    description: "Bhagavad Gita Chapter 14, the three forces of inner weather. Sattva, rajas, tamas. And the state beyond all three.",
+    description: "Bhagavad Gita Chapter 14, the three gunas, sattva, rajas and tamas, and the state beyond all three.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14",
     siteName: 'Wisdom',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 14 Summary – Key Verses & Meaning (Three Gunas Yoga)",
-    description: "Bhagavad Gita Chapter 14, the three forces of inner weather. Sattva, rajas, tamas. And the state beyond all three.",
+    description: "Bhagavad Gita Chapter 14, the three gunas, sattva, rajas and tamas, and the state beyond all three.",
     images: ["https://wisdomquotes.in/assets/chapter14.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14' } },
@@ -362,7 +362,7 @@ const schemas = [
         "name": "What is Bhagavad Gita Chapter 14 about?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Chapter 14, called Gunatraya Vibhaga Yoga (the Yoga of the Three Gunas), is the Gita's psychology of mood and inner state. Krishna explains that all of nature is composed of three forces — sattva (clarity), rajas (passion), and tamas (dullness) — and that each of these binds the inner self through identification. The chapter gives the diagnostic markers for each, describes the person who has gone beyond all three (guṇātīta), and names unwavering devotion as the way through."
+          "text": "Chapter 14, called Gunatraya Vibhaga Yoga (the Yoga of the Three Gunas), is the Gita's account of mood and inner state. Krishna explains that all of nature is composed of three forces — sattva (clarity), rajas (passion), and tamas (dullness) — and that each of these binds the inner self through identification. The chapter gives the signs of each, describes the person who has gone beyond all three (guṇātīta), and names unwavering devotion as the way through."
         }
       },
       {
@@ -370,7 +370,7 @@ const schemas = [
         "name": "What are sattva, rajas, and tamas in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The three gunas are the three forces of nature that compose all inner experience. Sattva is clarity, lightness, understanding — it binds through attachment to happiness and knowledge. Rajas is passion, craving, restlessness — it binds through attachment to action. Tamas is dullness, ignorance, inertia — it binds through heedlessness, laziness, and sleep. Each is a force, not a moral category. Even sattva binds when grasped."
+          "text": "The three gunas are the three forces of nature that compose all inner experience. Sattva is clarity, lightness, understanding — it binds through attachment to happiness and knowledge. Rajas is passion, craving, restlessness — it binds through attachment to action. Tamas is dullness, ignorance, inertia — it binds through heedlessness, laziness, and sleep. Sattva ranks highest of the three (14.6, 14.17–18), but even sattva binds when grasped, and the goal is to go beyond all three."
         }
       },
       {
@@ -378,7 +378,7 @@ const schemas = [
         "name": "How can I tell which guna is active in me?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verses 14.11-13 give the diagnostic markers. Sattva: clarity in all the senses, lightness, ease of understanding. Rajas: restlessness, many projects, much wanting, no settling. Tamas: fog, drowsiness, the inability to start. Verse 14.17 condenses the diagnostic — sattva produces knowledge; rajas produces greed; tamas produces negligence and delusion. You can read your day backwards from the outputs."
+          "text": "Verses 14.11-13 give the signs. Sattva: clarity in every sense, lightness, ease of understanding. Rajas: restlessness, many projects, much wanting, no settling. Tamas: fog, drowsiness, the inability to start. Verse 14.17 sums them up: sattva produces knowledge; rajas produces greed; tamas produces negligence and delusion. You can read your day backwards from the outputs."
         }
       },
       {
@@ -386,7 +386,7 @@ const schemas = [
         "name": "What is gunatita in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Guṇātīta means 'beyond the gunas.' Verses 14.22-25 describe this state. The person beyond the gunas does not hate light, activity, or confusion when they arise; does not long for them when they pass. They remain equal in pleasure and pain, in praise and blame, in gain and loss. The gunas still appear in their experience. What has dropped is the reactive identification with them. Freedom is the dropped grip, not the dropped weather."
+          "text": "Guṇātīta means 'beyond the gunas.' Verses 14.22-25 describe this state. The person beyond the gunas does not hate light, activity, or confusion when they arise; does not long for them when they pass. They remain equal in pleasure and pain, in praise and blame, in gain and loss. The gunas still appear in their experience. What has dropped is the reactive identification with them."
         }
       },
       {
@@ -394,7 +394,7 @@ const schemas = [
         "name": "Why does Krishna say even sattva binds?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 14.6 makes the chapter's most subtle point. Sattva, being pure and luminous, binds through attachment to happiness and to knowledge. This is the trap of the spiritually advancing person — you become clearer, you start to crave the clarity, the craving is itself binding. The Gita's freedom is not the state of always being in sattva. It is the freedom from being captured by any state, including the highest one."
+          "text": "Verse 14.6 makes a point that is easy to miss. Sattva, being pure and luminous, binds through attachment to happiness and to knowledge. This is the trap of the spiritually advancing person — you become clearer, you start to crave the clarity, the craving is itself binding. Sattva is the highest of the three, but the goal the Gita sets is freedom from capture by any state, sattva included."
         }
       },
       {
@@ -402,7 +402,7 @@ const schemas = [
         "name": "How does one go beyond the three gunas?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In verse 14.26, Krishna says: 'The one who serves me with unwavering devotion goes beyond these gunas and becomes fit for union with Brahman.' The bridge is bhakti-yoga — unwavering devotion. Why devotion and not analysis? Because devotion gives the mind a centre outside the field of the gunas. When attention rests there, the gunas continue to come and go, but the centre of identification has shifted. The states still arise; the capture by them has dropped."
+          "text": "In verse 14.26, Krishna says: 'The one who serves me with unwavering devotion goes beyond these gunas and becomes fit for union with Brahman.' The bridge is bhakti-yoga — unwavering devotion. Devotion, rather than analysis, gives the mind a centre outside the field of the gunas. When attention rests there, the gunas continue to come and go, but the centre of identification has shifted. The states still arise; the capture by them has dropped."
         }
       }
     ]
@@ -438,7 +438,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Quotation",
     "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.11",
-    "text": "When light and clear understanding arise in all the gates of this body, know that sattva has grown strong.",
+    "text": "When light and clear understanding arise in every gate of this body, know that sattva has grown strong.",
     "spokenByCharacter": {
       "@type": "Person",
       "name": "Krishna"
@@ -519,7 +519,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Quotation",
     "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-14#verse-14.24",
-    "text": "Equal in pleasure and pain, self-settled, equal to a clod of earth, a stone, and gold; equal in liked and disliked; steady; equal in blame and self-praise.",
+    "text": "Equal in pleasure and pain, self-settled, equal to a clod of earth, a stone, and gold; equal in liked and disliked; steady; equal in blame and in praise of himself.",
     "spokenByCharacter": {
       "@type": "Person",
       "name": "Krishna"
@@ -603,7 +603,7 @@ export default function ChapterPage14() {
             <em>Gunatraya Vibhaga Yoga</em>
           </h1>
           <p className="article-subtitle">
-            Why some days are clear, some days are restless, and some days you cannot get off the couch. The Gita's psychology of mood, decoded into three forces, and the steadiness that recognises all three without becoming any of them.
+            Why some days are clear, some restless, and some you cannot get off the couch. Krishna names three forces, sattva, rajas and tamas, and describes a steadiness that sees all three without being ruled by any.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -614,7 +614,7 @@ export default function ChapterPage14() {
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 14 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -633,11 +633,11 @@ export default function ChapterPage14() {
           </figure>
 
         <p className="lead">
-          Chapter 14 is, in a sense, the Gita's psychology textbook. After Chapter 13 separated the knower from the field, Chapter 14 turns to the field itself and asks the next question: what is the field made of? Krishna's answer is one of the most enduring frameworks in Indian thought: the doctrine of the three <em>guṇas</em>. <em>Sattva</em>: clarity, lightness, the felt sense of inner brightness. <em>Rajas</em>: passion, restlessness, the engine of wanting and doing. <em>Tamas</em>: dullness, inertia, the heaviness that pulls you under.
+          After Chapter 13 separated the knower from the field, Chapter 14 turns to the field itself and asks the next question: what is the field made of? Krishna&apos;s answer is the doctrine of the three <em>guṇas</em>, which runs through Sankhya, Yoga and Ayurveda as well. <em>Sattva</em>: clarity, lightness, the felt sense of inner brightness. <em>Rajas</em>: passion, restlessness, the engine of wanting and doing. <em>Tamas</em>: dullness, inertia, the heaviness that pulls you under.
         </p>
 
         <p>
-          What makes the doctrine useful is that it is not moralistic. The three gunas are not good and bad. Each is a force, each has a function, each is binding in its own way. The chapter's project is to name them clearly enough that you can recognize which one is operating in you, in any given moment, without confusing the force with yourself. And then, at the chapter's quiet climax, Krishna names the state called <em>guṇātīta</em>, beyond the gunas. That state is not a different kind of feeling. It is the freedom of no longer being captured by whichever feeling happens to be present.
+          The doctrine is useful partly because all three bind. Sattva ranks highest, but each force has a function and each holds you in its own way. The chapter's project is to name them clearly enough that you can recognize which one is operating in you, in any given moment, without confusing the force with yourself. Near the end, Krishna describes the state called <em>guṇātīta</em>, beyond the gunas: the person in it still has feelings, and is no longer captured by whichever one is present.
         </p>
 
         <nav className="toc" aria-label="Table of contents">
@@ -660,7 +660,7 @@ export default function ChapterPage14() {
         <div className="section-divider">
           <div className="section-divider-line"></div>
           <div className="section-divider-label">
-            Verses 14.5 · The Three Forces
+            Verse 14.5 · The Three Forces
           </div>
           <div className="section-divider-line"></div>
         </div>
@@ -668,11 +668,11 @@ export default function ChapterPage14() {
         <h2 id="three-forces">Sattva, Rajas, Tamas, the Three Forces of Inner Life</h2>
 
         <p>
-          Verse 14.5 introduces the framework. Sattva, rajas, and tamas (three qualities arising from <em>prakṛti</em>, nature) bind the imperishable inner self to the body. Each is a different way the field captures the knower. The capture is not violent; it works by identification. You feel clear, you identify as the clarity. You feel driven, you identify as the drive. You feel heavy, you identify as the heaviness. In each case, the knower forgets it is the knower and merges with the quality. The chapter is the patient training in not doing this.
+          Verse 14.5 introduces the framework. Sattva, rajas, and tamas (three qualities arising from <em>prakṛti</em>, nature) bind the imperishable inner self to the body. Each is a different way the field holds the knower, and each works by identification: you feel clear and take yourself to be the clarity; you feel driven and take yourself to be the drive. The chapter trains you out of that habit.
         </p>
 
         <p>
-          What is unusual about the Gita's framing here is that it gives no preference. Most spiritual traditions tell you to prefer light over dark, clarity over dullness, virtue over vice. The Gita acknowledges that sattva is closer to liberation than the other two, but warns immediately that even sattva binds. The goal is not to live always in the highest force. The goal is to be free of capture by any force, including the most pleasant one.
+          The Gita does rank the three. Sattva is the highest: it is pure and luminous (14.6), its fruit is knowledge (14.17), and those established in it rise (14.18). But Krishna warns in the same breath that sattva binds too, and the chapter&apos;s goal is to go beyond all three, including the most pleasant one.
         </p>
 
                 <ShlokaCard
@@ -680,7 +680,7 @@ export default function ChapterPage14() {
           speaker="Krishna"
           sanskrit="सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः । निबध्नन्ति महाबाहो देहे देहिनमव्ययम् ॥"
           iast="sattvaṃ rajas tama iti guṇāḥ prakṛti-sambhavāḥ | nibadhnanti mahā-bāho dehe dehinam avyayam ||"
-          essence="Nature's three forces keep the changeless one identified with the body."
+          essence="Sattva, rajas and tamas, born of nature, bind the imperishable embodied self to the body."
         />
 
         {/* DIVIDER */}
@@ -692,14 +692,14 @@ export default function ChapterPage14() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="sattva-binds">Even Clarity Binds, the Subtlest Trap</h2>
+        <h2 id="sattva-binds">Even Clarity Binds</h2>
 
         <p>
-          Verse 14.6 is the chapter's most subtle and most easily missed teaching. Krishna says sattva, clarity, binds through attachment to happiness and to knowledge. The verse is a warning specifically directed at the spiritually advancing person. You meditate. You become clearer. You feel lighter. And you start to crave that clarity. The craving is rajas dressed up as sattva. The bondage looks like progress.
+          Verse 14.6 is easy to miss. Krishna says sattva, clarity, binds through attachment to happiness and to knowledge. The warning is aimed at someone making progress: you meditate, become clearer, feel lighter, and then start to crave that clarity. The craving is rajas dressed up as sattva.
         </p>
 
         <p>
-          Anyone who has had a particularly good week of practice knows this trap. The state was pleasant. You started planning your life around producing more of it. The producing became its own anxiety. The Gita is saying, the state was real, but your relationship to it has now made it sticky. The freedom is not in having more sattva. It is in having sattva without grasping it. The same warning applies to spiritual knowledge. You learn something true; you start defining yourself by knowing it. The knowing becomes another rung of the same ladder, only now the ladder is invisible because the rung looks like the destination.
+          A pleasant state can turn into a project: you plan your days around producing more of it, and the producing becomes its own worry. The state was real; the grasping is what binds. The same applies to knowledge. You learn something true and start defining yourself by knowing it.
         </p>
 
                 <ShlokaCard
@@ -707,7 +707,7 @@ export default function ChapterPage14() {
           speaker="Krishna"
           sanskrit="तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् । सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ॥"
           iast="tatra sattvaṃ nirmalatvāt prakāśakam anāmayam | sukha-saṅgena badhnāti jñāna-saṅgena cānagha ||"
-          essence="Even clarity becomes bondage when you cling to its pleasure."
+          essence="Sattva, pure and luminous, binds through attachment to happiness and to knowledge."
         />
 
         <div className="pull-quote">
@@ -729,11 +729,11 @@ export default function ChapterPage14() {
         <h2 id="rajas-binds">How Restlessness Chains You</h2>
 
         <p>
-          Verse 14.7 names rajas with precision: born of craving and attachment, it binds through attachment to action. This is the dominant guna of most modern adult life. The next email. The next task. The next achievement. The next message reply. Rajas is the force that keeps you in motion and never lets you ask, in any given moment, whether the motion is what you actually want.
+          Verse 14.7 names rajas with precision: born of craving and attachment, it binds through attachment to action. Much of modern working life runs on rajas: it keeps you moving and rarely lets you ask whether the motion is what you want.
         </p>
 
         <p>
-          What is hard about rajas is that it looks productive. Sattva looks calm; tamas looks lazy; rajas looks like getting things done. From the outside, the rajasic life appears to be a successful life. The Gita's diagnosis is that the productivity is its own kind of capture. You are not driving the action; the craving is driving you. The verse is asking you to notice that the engine has become the driver. Stopping is not the answer (the Gita is not anti-action). Recognizing that the action is not yours, even while you do it, is the answer.
+          What is hard about rajas is that it looks productive. Sattva looks calm; tamas looks lazy; rajas looks like getting things done. From outside, a rajasic life can look like a successful one. The Gita&apos;s point is that the craving is doing the driving. Stopping is not its answer, since the Gita is for action; its answer is to act while seeing that the gunas are the ones moving (14.19).
         </p>
 
                 <ShlokaCard
@@ -741,7 +741,7 @@ export default function ChapterPage14() {
           speaker="Krishna"
           sanskrit="रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् । तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ॥"
           iast="rajo rāgātmakaṃ viddhi tṛṣṇā-saṅga-samudbhavam | tan nibadhnāti kaunteya karma-saṅgena dehinam ||"
-          essence="Craving turns action into a chain."
+          essence="Rajas, born of craving and attachment, binds the embodied self through attachment to action."
         />
 
         {/* DIVIDER */}
@@ -753,14 +753,14 @@ export default function ChapterPage14() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="tamas-binds">The Pull of Heaviness, Why It Wins Quietly</h2>
+        <h2 id="tamas-binds">The Pull of Heaviness</h2>
 
         <p>
-          Verse 14.8 names tamas with equal precision: born of ignorance, it deludes all embodied beings, binding them through heedlessness, laziness, and sleep. <em>Pramāda. Ālasya. Nidrā</em>. The three forms in which tamas captures a life are not dramatic. They are gentle. Heedlessness: the slow drift of not paying attention. Laziness: the comfortable refusal to make the necessary move. Sleep: both literal and the metaphorical sleep of going through life without questioning it.
+          Verse 14.8 names tamas with equal precision: born of ignorance, it deludes all embodied beings, binding them through heedlessness, laziness, and sleep. The three forms, <em>pramāda</em>, <em>ālasya</em> and <em>nidrā</em>, are gentle rather than dramatic. Heedlessness: the slow drift of not paying attention. Laziness: the comfortable refusal to make the necessary move. Sleep: both literal and the metaphorical sleep of going through life without questioning it.
         </p>
 
         <p>
-          What makes tamas dangerous is that it does not announce itself. It feels like rest. It feels like deserved easing. It feels like "I'll start tomorrow." The verse is a careful warning. The thing pulling you down is not pulling violently. It is pulling so softly that you participate in it. Every time you choose comfort over the right action, every time you postpone the necessary conversation, every time you scroll for thirty more minutes when you could have slept, that is tamas, doing its quiet work. Naming it is the first step in stopping it.
+          Tamas does not announce itself. It feels like rest, or like &quot;I&apos;ll start tomorrow.&quot; It pulls so softly that you go along with it. Each time you postpone a necessary conversation in favour of comfort, that is tamas at work, and naming it is the first step in stopping it.
         </p>
 
                 <ShlokaCard
@@ -769,14 +769,14 @@ export default function ChapterPage14() {
           sanskrit="तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ॥"
           iast="tamas tv ajñāna-jaṃ viddhi mohanaṃ sarva-dehinām | pramādālasya-nidrābhis tan nibadhnāti bhārata ||"
           meaning="Know tamas as born of ignorance, deluding all embodied beings. It binds them through heedlessness, laziness, and sleep, Arjuna."
-          insightLabel="The three softest traps"
-          insight="Heedlessness. Laziness. Sleep. None of them feel like a fall. Each one feels like a small kindness to yourself. The Gita's clarity is that the small kindnesses, accumulated, are how a life quietly gets lost. Tamas does not need to win in a dramatic moment. It wins in the unwatched ten minutes."
-          essence="Confusion binds most through laziness, not force."
+          insightLabel="Three gentle traps"
+          insight="Heedlessness, laziness and sleep each feel like a small kindness to yourself rather than a fall. Added up over years, they are how a life drifts."
+          essence="Tamas, born of ignorance, deludes embodied beings and binds through heedlessness, laziness and sleep."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>A working diagnostic from Chapter 14:</strong> Three times today, ask: what is operating in me right now? If everything looks clear and I am grasping it: sattva, going sticky. If I am driven, restless, never enough: rajas. If I am drifting, postponing, sleepy without being tired: tamas. The naming itself is half the work. You cannot dissolve what you have not first identified.
+            <strong>A working diagnostic from Chapter 14:</strong> Three times today, ask: what is operating in me right now? If everything looks clear and I am grasping it, that is sattva turning sticky. If I am driven and restless, rajas. If I am drifting, postponing, sleepy without being tired, tamas. Naming it is half the work.
           </p>
         </div>
 
@@ -792,11 +792,11 @@ export default function ChapterPage14() {
         <h2 id="signs">How to Tell Which Guna Is Operating</h2>
 
         <p>
-          Verses 14.11 through 14.17 give the diagnostic markers for each guna. Sattva shows up as inner light, clarity in all the senses, openness, understanding. Rajas shows up as restless activity, many projects, much wanting, no settling. Tamas shows up as fog, confusion, drowsiness, the inability to start. The list is practical, not poetic. The Gita wants you to be able to identify, in any given hour, which force is the dominant one.
+          Verses 14.11 through 14.17 give the signs of each guna. Sattva shows up as inner light, clarity in every sense, openness, understanding. Rajas shows up as restless activity, many projects, much wanting, no settling. Tamas shows up as fog, confusion, drowsiness, the inability to start. The list is practical: it lets you tell, in a given hour, which force is strongest.
         </p>
 
         <p>
-          Verse 14.17 condenses the diagnostic: from sattva comes knowledge; from rajas, greed; from tamas, negligence and delusion. Each force produces its characteristic outputs. Once you know the outputs, you can read backwards from your day. A day full of clear seeing, sattva was strong. A day full of wanting and rushing, rajas dominated. A day where nothing got done and nothing felt important, tamas had the floor. The Gita is teaching a kind of inner meteorology. You start to read your own weather.
+          Verse 14.17 sums up the signs: from sattva comes knowledge; from rajas, greed; from tamas, negligence and delusion. Each force produces its characteristic outputs. Once you know the outputs, you can read backwards from your day. A day of clear seeing points to sattva; a day of wanting and rushing, to rajas; a day where nothing got done and nothing felt important, to tamas.
         </p>
 
                 <ShlokaCard
@@ -804,10 +804,10 @@ export default function ChapterPage14() {
           speaker="Krishna"
           sanskrit="सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते । ज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत ॥"
           iast="sarva-dvāreṣu dehe'smin prakāśa upajāyate | jñānaṃ yadā tadā vidyād vivṛddhaṃ sattvam ity uta ||"
-          meaning="When light and clear understanding arise in all the gates of this body, know that sattva has grown strong."
-          insightLabel="What sattva actually feels like"
-          insight="Not the spiritual high you imagine, but a kind of clear-eyed availability. The day looks crisp. Decisions are easier. The same situations that would have triggered you yesterday simply land and pass. The Gita is saying: when you notice this, recognise it as a state, not as an achievement. The state will pass too. Enjoying it without gripping it is the practice."
-          essence="Inner brightness is the sign that clarity is taking over."
+          meaning="When light and clear understanding arise in every gate of this body, know that sattva has grown strong."
+          insightLabel="What sattva feels like"
+          insight="Sattva feels like clear-eyed availability more than a spiritual high. Decisions come easier, and things that would have upset you yesterday land and pass. When you notice it, treat it as a passing state, and enjoy it without gripping it."
+          essence="When light and understanding shine through every gate of the body, sattva has grown strong."
         />
 
                 <ShlokaCard
@@ -817,8 +817,8 @@ export default function ChapterPage14() {
           iast="sattvāt sañjāyate jñānaṃ rajaso lobha eva ca | pramāda-mohau tamaso bhavato'jñānam eva ca ||"
           meaning="From sattva comes knowledge; from rajas, greed; from tamas, heedlessness, delusion, and ignorance."
           insightLabel="Read your day backwards"
-          insight="If today produced clarity, sattva was strong. If today produced grasping and overwork, rajas led. If today produced fog and avoidance, tamas held the floor. The verse is a calibration tool. You do not need to guess the inner state. You can read it from the outputs."
-          essence="Your mental weather has causes: clarity, craving, and confusion each grow from different qualities."
+          insight="If today produced clarity, sattva was strong. If today produced grasping and overwork, rajas led. If today produced fog and avoidance, tamas held the floor. You can read the inner state from what the day produced."
+          essence="From sattva comes knowledge, from rajas greed, from tamas heedlessness, delusion and ignorance."
         />
 
         {/* DIVIDER */}
@@ -830,14 +830,14 @@ export default function ChapterPage14() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="beyond">Going Beyond the Three, What Gunatita Actually Looks Like</h2>
+        <h2 id="beyond">Going Beyond the Three: What Gunatita Looks Like</h2>
 
         <p>
-          Arjuna, naturally, asks the obvious question. What does the person look like who has gone beyond the three gunas? How do they behave? Krishna's answer in verses 14.22 through 14.25 is one of the most precise portraits in the Gita. The <em>guṇātīta</em> (the one beyond the gunas) does not hate light, activity, or confusion when they appear. Does not crave them when they disappear. Sits as if at the side of everything, unmoved, knowing that the gunas are doing what gunas do.
+          In 14.21 Arjuna asks the obvious question: what marks the person who has gone beyond the three gunas, and how do they behave? Krishna answers in verses 14.22 through 14.25. The <em>guṇātīta</em> (the one beyond the gunas) does not hate light, activity or confusion when they appear, and does not crave them when they go. Such a person sits as if indifferent, unmoved, knowing that only the gunas are moving (14.23).
         </p>
 
         <p>
-          Notice what the portrait does not say. It does not say the gunas stop appearing. It does not say the person no longer experiences clarity, restlessness, or dullness. It says the person no longer reacts to the appearing and disappearing of these states. The states still arise. The reactivity has dropped. The freedom is not from the weather. It is from being captured by the weather. You can have a tamasic afternoon and not be defeated by it. You can have a sattvic morning and not chase it. The same is true of every other state. Freedom is the dropped grip, not the dropped weather.
+          The portrait never says the gunas stop appearing. The person still has clear, restless and dull hours; what has dropped is the reaction to their coming and going. You can have a tamasic afternoon without being defeated by it, and a sattvic morning without chasing it.
         </p>
 
                 <ShlokaCard
@@ -847,8 +847,8 @@ export default function ChapterPage14() {
           iast="śrī bhagavān uvāca | prakāśaṃ ca pravṛttiṃ ca moham eva ca pāṇḍava | na dveṣṭi sampravṛttāni na nivṛttāni kāṅkṣati ||"
           meaning="The Blessed One said: light, activity, and confusion, when they arise, the one beyond the gunas does not hate them; when they pass, does not long for them."
           insightLabel="The two halves of the portrait"
-          insight="Na dveṣṭi … na kāṅkṣati: does not hate, does not long for. The portrait is built on these two negations. The states arise; you do not push them away. The states pass; you do not chase them. The same posture toward all three. That is what &quot;beyond&quot; means here. Not above. Not absent. Just no longer captured."
-          essence="Freedom begins when changing states stop controlling your response."
+          insight="Na dveṣṭi … na kāṅkṣati: does not hate, does not long for. The portrait is built on these two negations: the states arise and you do not push them away; they pass and you do not chase them. Beyond, here, means no longer captured by any of the three."
+          essence="Such a person does not hate light, activity or delusion when present, nor long for them when gone."
         />
 
                 <ShlokaCard
@@ -856,10 +856,10 @@ export default function ChapterPage14() {
           speaker="Krishna"
           sanskrit="समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः । तुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः ॥"
           iast="sama-duḥkha-sukhaḥ svasthaḥ sama-loṣṭāśma-kāñcanaḥ | tulya-priyāpriyo dhīras tulya-nindātma-saṃstutiḥ ||"
-          meaning="Equal in pleasure and pain, self-settled, equal to a clod of earth, a stone, and gold; equal in liked and disliked; steady; equal in blame and self-praise."
-          insightLabel="The behaviourist test"
-          insight="The Gita gives you an external check. Watch how a person reacts to praise and to blame. Watch how they handle gain and loss. If their inner state is equally steady across both, they have moved beyond reactive attachment to the gunas. The test is not about beliefs. It is about behaviour under fluctuation. By that test, very few people are guṇātīta. But the direction is recognisable."
-          essence="Steadiness means nothing external gets to decide your centre."
+          meaning="Equal in pleasure and pain, self-settled, equal to a clod of earth, a stone, and gold; equal in liked and disliked; steady; equal in blame and in praise of himself."
+          insightLabel="An outward test"
+          insight="The Gita gives you an external check. Watch how a person reacts to praise and to blame. Watch how they handle gain and loss. If they stay equally steady across both, they have moved beyond reactive attachment to the gunas. The test looks at behaviour, not beliefs. Few people pass it, but the direction is recognisable."
+          essence="Even in pain and pleasure, self-settled, clod, stone and gold alike, steady in blame and praise."
         />
 
         {/* DIVIDER */}
@@ -871,14 +871,14 @@ export default function ChapterPage14() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="devotion-transcends">How You Actually Cross, Unwavering Devotion</h2>
+        <h2 id="devotion-transcends">How You Cross: Unwavering Devotion</h2>
 
         <p>
-          Verse 14.26 names the bridge. Asked how one goes beyond the three gunas, Krishna answers, by serving me with unwavering devotion. The one who does this, he says, transcends the gunas and becomes fit for union with the supreme reality.
+          Verse 14.26 answers the last part of Arjuna&apos;s question, how one goes beyond the three gunas. Krishna answers: by serving me with unwavering devotion. The one who does this, he says, transcends the gunas and becomes fit for union with the supreme reality.
         </p>
 
         <p>
-          Why devotion? Because devotion gives the mind something to rest on that is outside the gunas. The gunas operate on what is inside the field, clarity, restlessness, dullness, but devotion is directed toward what is outside the field altogether. When attention is genuinely placed on the Divine, the gunas continue to come and go in their familiar patterns, but the centre of identification has shifted. You are no longer being moved by the weather, because your inner centre has moved to higher ground. The chapter is saying that this is the practical way through, not analysis of the gunas (which the chapter has just given), but devotion that rests beyond them.
+          Why devotion? Because devotion gives the mind something to rest on that is outside the gunas. The gunas operate on what is inside the field, clarity, restlessness, dullness, but devotion is directed toward what is outside the field altogether. When attention rests on the Divine, the gunas keep coming and going, but you no longer identify with them. The chapter has just analysed the gunas at length, and still names devotion as the way through.
         </p>
 
                 <ShlokaCard
@@ -888,8 +888,8 @@ export default function ChapterPage14() {
           iast="māṃ ca yo'vyabhicāreṇa bhakti-yogena sevate | sa guṇān samatītyaitān brahma-bhūyāya kalpate ||"
           meaning="The one who serves me with unwavering devotion goes beyond these gunas and becomes fit for union with Brahman."
           insightLabel="Why analysis is not enough"
-          insight="You can study the gunas for years and still be captured by them. Diagnosis is not the same as freedom. The verse names the actual mechanism of release, devotion that does not waver. The unwavering part matters. Intermittent devotion does not lift you out, because between the spikes you fall back into capture. The continuity of attention is what does the work."
-          essence="Steady devotion can carry you beyond the forces that shape ordinary life."
+          insight="You can study the gunas for years and still be captured by them. The verse names devotion that does not waver (avyabhicāreṇa) as the way out, and the word for unwavering carries weight: it is steady attention that does the work."
+          essence="Whoever serves me with unwavering devotion goes beyond the gunas and is fit to become Brahman."
         />
 
         <div className="pull-quote">
@@ -915,33 +915,33 @@ export default function ChapterPage14() {
             <tr><th>Verse</th><th>Speaker</th><th>Teaching Essence</th></tr>
           </thead>
           <tbody>
-            <tr><td>14.1</td><td>Krishna</td><td>Some knowledge does not inform you; it completes you</td></tr>
-            <tr><td>14.2</td><td>Krishna</td><td>True understanding makes beginning and ending stop ruling you</td></tr>
-            <tr><td>14.3</td><td>Krishna</td><td>All birth comes from a source beyond personal control</td></tr>
-            <tr><td>14.4</td><td>Krishna</td><td>All forms arise from one source, and the divine gives them life</td></tr>
-            <tr><td>14.5</td><td>Krishna</td><td>Nature's three forces keep the changeless one identified with the body</td></tr>
-            <tr><td>14.6</td><td>Krishna</td><td>Even clarity becomes bondage when you cling to its pleasure</td></tr>
-            <tr><td>14.7</td><td>Krishna</td><td>Craving turns action into a chain</td></tr>
-            <tr><td>14.8</td><td>Krishna</td><td>Confusion binds most through laziness, not force</td></tr>
-            <tr><td>14.9</td><td>Krishna</td><td>Each force traps you in a different way: comfort, activity, or blindness</td></tr>
-            <tr><td>14.10</td><td>Krishna</td><td>What dominates the mind is temporary, not who you are</td></tr>
-            <tr><td>14.11</td><td>Krishna</td><td>Inner brightness is the sign that clarity is taking over</td></tr>
-            <tr><td>14.12</td><td>Krishna</td><td>Restless wanting multiplies action, but never settles the mind</td></tr>
-            <tr><td>14.13</td><td>Krishna</td><td>Darkness does not stay still; it breeds neglect and confusion</td></tr>
-            <tr><td>14.14</td><td>Krishna</td><td>A clear state carries consciousness toward a clearer destination</td></tr>
-            <tr><td>14.15</td><td>Krishna</td><td>Your strongest tendency decides the shape of your next beginning</td></tr>
-            <tr><td>14.16</td><td>Krishna</td><td>Action carries its own flavor of result</td></tr>
-            <tr><td>14.17</td><td>Krishna</td><td>Your mental weather has causes: clarity, craving, and confusion grow from different qualities</td></tr>
-            <tr><td>14.18</td><td>Krishna</td><td>Your inner quality decides the direction of your life</td></tr>
-            <tr><td>14.19</td><td>Krishna</td><td>Freedom begins when you stop mistaking qualities for a personal doer</td></tr>
-            <tr><td>14.20</td><td>Krishna</td><td>Freedom begins when the three qualities no longer define you</td></tr>
-            <tr><td>14.21</td><td>Arjuna</td><td>Real freedom must be visible, livable, and learnable</td></tr>
-            <tr><td>14.22</td><td>Krishna</td><td>Freedom begins when changing states stop controlling your response</td></tr>
-            <tr><td>14.23</td><td>Krishna</td><td>Freedom begins when movement happens, but identity does not</td></tr>
-            <tr><td>14.24</td><td>Krishna</td><td>Steadiness means nothing external gets to decide your centre</td></tr>
-            <tr><td>14.25</td><td>Krishna</td><td>Freedom begins when praise, blame, and personal impulse lose their power over you</td></tr>
-            <tr><td>14.26</td><td>Krishna</td><td>Steady devotion can carry you beyond the forces that shape ordinary life</td></tr>
-            <tr><td>14.27</td><td>Krishna</td><td>All ultimate freedom rests in Krishna, not apart from him</td></tr>
+            <tr><td>14.1</td><td>Krishna</td><td>I will teach again the highest knowledge, by which the sages reached perfection</td></tr>
+            <tr><td>14.2</td><td>Krishna</td><td>Those who take refuge in it share my nature; they are not born at creation or shaken at dissolution</td></tr>
+            <tr><td>14.3</td><td>Krishna</td><td>Great Brahman is my womb; I place the seed in it, and from it all beings are born</td></tr>
+            <tr><td>14.4</td><td>Krishna</td><td>Whatever forms are born in any womb, Brahman is their great womb and I the father who gives the seed</td></tr>
+            <tr><td>14.5</td><td>Krishna</td><td>Sattva, rajas and tamas, born of nature, bind the imperishable embodied self to the body</td></tr>
+            <tr><td>14.6</td><td>Krishna</td><td>Sattva, pure and luminous, binds through attachment to happiness and to knowledge</td></tr>
+            <tr><td>14.7</td><td>Krishna</td><td>Rajas, born of craving and attachment, binds the embodied self through attachment to action</td></tr>
+            <tr><td>14.8</td><td>Krishna</td><td>Tamas, born of ignorance, deludes embodied beings and binds through heedlessness, laziness and sleep</td></tr>
+            <tr><td>14.9</td><td>Krishna</td><td>Sattva attaches you to happiness, rajas to action; tamas veils knowledge and attaches you to heedlessness</td></tr>
+            <tr><td>14.10</td><td>Krishna</td><td>Each guna rises by overpowering the other two: sattva over rajas and tamas, and so on</td></tr>
+            <tr><td>14.11</td><td>Krishna</td><td>When light and understanding shine through every gate of the body, sattva has grown strong</td></tr>
+            <tr><td>14.12</td><td>Krishna</td><td>Greed, busyness, new undertakings, restlessness and craving arise when rajas grows strong</td></tr>
+            <tr><td>14.13</td><td>Krishna</td><td>Darkness, inertia, heedlessness and delusion arise when tamas grows strong</td></tr>
+            <tr><td>14.14</td><td>Krishna</td><td>Dying when sattva prevails, one goes to the pure worlds of those who know the highest</td></tr>
+            <tr><td>14.15</td><td>Krishna</td><td>Dying in rajas, one is born among those attached to action; dying in tamas, among the deluded</td></tr>
+            <tr><td>14.16</td><td>Krishna</td><td>The fruit of good action is pure and sattvic; the fruit of rajas is pain, of tamas ignorance</td></tr>
+            <tr><td>14.17</td><td>Krishna</td><td>From sattva comes knowledge, from rajas greed, from tamas heedlessness, delusion and ignorance</td></tr>
+            <tr><td>14.18</td><td>Krishna</td><td>Those in sattva rise, those in rajas stay in the middle, those in tamas sink</td></tr>
+            <tr><td>14.19</td><td>Krishna</td><td>When the seer sees no doer but the gunas and knows what is beyond them, he reaches my being</td></tr>
+            <tr><td>14.20</td><td>Krishna</td><td>Going beyond the three gunas, the embodied one is freed from birth, death, old age and sorrow</td></tr>
+            <tr><td>14.21</td><td>Arjuna</td><td>What marks the one beyond the three gunas, how do they live, and how do they go beyond them?</td></tr>
+            <tr><td>14.22</td><td>Krishna</td><td>Such a person does not hate light, activity or delusion when present, nor long for them when gone</td></tr>
+            <tr><td>14.23</td><td>Krishna</td><td>Sitting as if indifferent, unshaken by the gunas, knowing that only the gunas move, they stay steady</td></tr>
+            <tr><td>14.24</td><td>Krishna</td><td>Even in pain and pleasure, self-settled, clod, stone and gold alike, steady in blame and praise</td></tr>
+            <tr><td>14.25</td><td>Krishna</td><td>Alike in honour and dishonour, to friend and foe, dropping self-started projects: beyond the gunas</td></tr>
+            <tr><td>14.26</td><td>Krishna</td><td>Whoever serves me with unwavering devotion goes beyond the gunas and is fit to become Brahman</td></tr>
+            <tr><td>14.27</td><td>Krishna</td><td>For I am the ground of Brahman, of the undying, of eternal dharma and of absolute happiness</td></tr>
           </tbody>
         </table>
 
@@ -968,6 +968,8 @@ export default function ChapterPage14() {
         </div>
 
 
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the claim that the Gita ranks no guna above another (it ranks sattva highest, 14.6 and 14.17–18, while asking you to go beyond all three) and the translation of 14.24 (praise of oneself, not self-praise); copy edited.</p>
+
         <div className="faq-section" id="faq">
           <div className="faq-header">
             <div className="faq-header-label">Common questions</div>
@@ -976,37 +978,37 @@ export default function ChapterPage14() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 14 about?</div>
             <div className="faq-a">
-              Chapter 14, called Gunatraya Vibhaga Yoga (the Yoga of the Three Gunas), is the Gita's psychology of mood and inner state. Krishna explains that all of nature is composed of three forces (<em>sattva</em>, clarity; <em>rajas</em>, passion; <em>tamas</em>, dullness) and that each of these binds the inner self through identification. The chapter gives the diagnostic markers for each, describes the person who has gone beyond all three (<em>guṇātīta</em>), and names unwavering devotion as the way through.
+              Chapter 14, called Gunatraya Vibhaga Yoga (the Yoga of the Three Gunas), is the Gita's account of mood and inner state. Krishna explains that all of nature is composed of three forces (<em>sattva</em>, clarity; <em>rajas</em>, passion; <em>tamas</em>, dullness) and that each of these binds the inner self through identification. The chapter gives the signs of each, describes the person who has gone beyond all three (<em>guṇātīta</em>), and names unwavering devotion as the way through.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What are sattva, rajas, and tamas in the Bhagavad Gita?</div>
             <div className="faq-a">
-              The three gunas are the three forces of nature that compose all inner experience. <em>Sattva</em> is clarity, lightness, understanding: it binds through attachment to happiness and knowledge. <em>Rajas</em> is passion, craving, restlessness: it binds through attachment to action. <em>Tamas</em> is dullness, ignorance, inertia: it binds through heedlessness, laziness, and sleep. Each is a force, not a moral category. Even sattva binds when grasped.
+              The three gunas are the three forces of nature that compose all inner experience. <em>Sattva</em> is clarity, lightness, understanding: it binds through attachment to happiness and knowledge. <em>Rajas</em> is passion, craving, restlessness: it binds through attachment to action. <em>Tamas</em> is dullness, ignorance, inertia: it binds through heedlessness, laziness, and sleep. Sattva ranks highest of the three (14.6, 14.17–18), but even sattva binds when grasped, and the goal is to go beyond all three.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">How can I tell which guna is active in me?</div>
             <div className="faq-a">
-              Verses 14.11-13 give the diagnostic markers. Sattva: clarity in all the senses, lightness, ease of understanding. Rajas: restlessness, many projects, much wanting, no settling. Tamas: fog, drowsiness, the inability to start. Verse 14.17 condenses the diagnostic, sattva produces knowledge; rajas produces greed; tamas produces negligence and delusion. You can read your day backwards from the outputs.
+              Verses 14.11-13 give the signs. Sattva: clarity in every sense, lightness, ease of understanding. Rajas: restlessness, many projects, much wanting, no settling. Tamas: fog, drowsiness, the inability to start. Verse 14.17 sums them up: sattva produces knowledge; rajas produces greed; tamas produces negligence and delusion. You can read your day backwards from the outputs.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is gunatita in the Bhagavad Gita?</div>
             <div className="faq-a">
-              <em>Guṇātīta</em> means 'beyond the gunas.' Verses 14.22-25 describe this state. The person beyond the gunas does not hate light, activity, or confusion when they arise; does not long for them when they pass. They remain equal in pleasure and pain, in praise and blame, in gain and loss. The gunas still appear in their experience. What has dropped is the reactive identification with them. Freedom is the dropped grip, not the dropped weather.
+              <em>Guṇātīta</em> means 'beyond the gunas.' Verses 14.22-25 describe this state. The person beyond the gunas does not hate light, activity, or confusion when they arise; does not long for them when they pass. They remain equal in pleasure and pain, in praise and blame, in gain and loss. The gunas still appear in their experience. What has dropped is the reactive identification with them.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Why does Krishna say even sattva binds?</div>
             <div className="faq-a">
-              Verse 14.6 makes the chapter's most subtle point. Sattva, being pure and luminous, binds through attachment to happiness and to knowledge. This is the trap of the spiritually advancing person, you become clearer, you start to crave the clarity, the craving is itself binding. The Gita's freedom is not the state of always being in sattva. It is the freedom from being captured by any state, including the highest one.
+              Verse 14.6 makes a point that is easy to miss. Sattva, being pure and luminous, binds through attachment to happiness and to knowledge. This is the trap of the spiritually advancing person, you become clearer, you start to crave the clarity, the craving is itself binding. Sattva is the highest of the three, but the goal the Gita sets is freedom from capture by any state, sattva included.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">How does one go beyond the three gunas?</div>
             <div className="faq-a">
-              In verse 14.26, Krishna says: 'The one who serves me with unwavering devotion goes beyond these gunas and becomes fit for union with Brahman.' The bridge is bhakti-yoga, unwavering devotion. Why devotion and not analysis? Because devotion gives the mind a centre outside the field of the gunas. When attention rests there, the gunas continue to come and go, but the centre of identification has shifted. The states still arise; the capture by them has dropped.
+              In verse 14.26, Krishna says: 'The one who serves me with unwavering devotion goes beyond these gunas and becomes fit for union with Brahman.' The bridge is bhakti-yoga, unwavering devotion. Devotion, rather than analysis, gives the mind a centre outside the field of the gunas. When attention rests there, the gunas continue to come and go, but the centre of identification has shifted. The states still arise; the capture by them has dropped.
             </div>
           </div>
         </div>

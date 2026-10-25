@@ -6,12 +6,12 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Actually Share",
-  description: "Marcus Aurelius and Krishna never met, yet reached strikingly similar conclusions on action, equanimity and duty. 9 side-by-side teachings — where Stoicism and the Gita agree, and the one place they part ways.",
+  title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Share",
+  description: "Marcus Aurelius and Krishna never met, yet reached strikingly similar conclusions on action, equanimity and duty. 9 side-by-side teachings — where Stoicism and the Gita agree, and where they part ways.",
   keywords: "bhagavad gita vs stoicism, bhagavad gita stoicism comparison, stoicism and hinduism, marcus aurelius bhagavad gita, gita and stoic philosophy, stoicism karma yoga, epictetus bhagavad gita, meditations marcus aurelius gita, stoicism detachment results",
   openGraph: {
-    title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Actually Share",
-    description: "Marcus Aurelius and Krishna never met — yet they reached strikingly similar conclusions on action, equanimity, and duty. 9 side-by-side teachings, and the one place Stoicism and the Gita part ways.",
+    title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Share",
+    description: "Marcus Aurelius and Krishna never met — yet they reached strikingly similar conclusions on action, equanimity, and duty. 9 side-by-side teachings, and where Stoicism and the Gita part ways.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism",
     siteName: 'Wisdom',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sansearchapp',
     creator: '@thisisashukla',
-    title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Actually Share",
-    description: "Marcus Aurelius and Krishna never met — yet they reached strikingly similar conclusions on action, equanimity, and duty. 9 side-by-side teachings, and the one place Stoicism and the Gita part ways.",
+    title: "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Share",
+    description: "Marcus Aurelius and Krishna never met — yet they reached strikingly similar conclusions on action, equanimity, and duty. 9 side-by-side teachings, and where Stoicism and the Gita part ways.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -480,7 +480,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Bhagavad Gita vs Stoicism: 9 Teachings That Are Surprisingly Similar | Wisdom",
-    "description": "Marcus Aurelius and Krishna never met. But they reached remarkably similar conclusions about action, equanimity, duty, and the self. 9 parallel teachings and where they differ.",
+    "description": "Marcus Aurelius and Krishna never met. But they reached similar conclusions about action, equanimity, duty, and the self. 9 parallel teachings and where they differ.",
     "datePublished": "2026-06-12",
     "dateModified": "2026-08-01",
     "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
@@ -507,7 +507,7 @@ const schemas = [
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
       { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
-      { "@type": "ListItem", "position": 3, "name": "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Actually Share", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism" }
+      { "@type": "ListItem", "position": 3, "name": "Bhagavad Gita vs Stoicism — Detachment, Duty & What Marcus Aurelius and Krishna Share", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-vs-stoicism" }
     ]
   },
   {
@@ -519,7 +519,7 @@ const schemas = [
         "name": "Is Stoicism similar to the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Remarkably, yes, in several core areas. Both teach that you should focus on what you can control and release what you cannot. Both emphasize virtue over external reward. Both call for equanimity in success and failure. Both argue for the importance of doing one's duty regardless of outcome. The similarities are independent: neither tradition influenced the other. They are separated by 500 years and 5,000 miles."
+          "text": "Yes, in several core areas. Both teach that you should focus on what you can control and release what you cannot. Both emphasize virtue over external reward. Both call for equanimity in success and failure. Both argue for the importance of doing one's duty regardless of outcome. The similarities are most likely independent: there is no evidence either tradition influenced the other, and they grew up thousands of miles apart."
         }
       },
       {
@@ -535,7 +535,7 @@ const schemas = [
         "name": "Did the Stoics influence the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Almost certainly not. The Bhagavad Gita is generally dated by mainstream scholarship to somewhere between the 5th century BCE and the 2nd century CE — though this refers to the text as compiled and preserved. Recent researchers like Nilesh Oak (When Did the Mahabharata War Happen?, 2011) use astronomical observations embedded in the Mahabharata to argue the underlying events and oral tradition are far older, potentially dating to around 5561 BCE. This remains an active area of inquiry rather than settled consensus. Stoicism was founded by Zeno of Citium around 300 BCE in Athens. While there was some contact between Greek and Indian philosophical traditions (especially after Alexander), no direct line of influence connects Stoicism to the Gita. The similarities are most likely independent convergence: different people asking the same questions about human flourishing and reaching similar answers."
+          "text": "Almost certainly not. The Bhagavad Gita is generally dated by mainstream scholarship to somewhere between the 5th century BCE and the 2nd century CE — though this refers to the text as compiled and preserved. Recent researchers like Nilesh Oak (When Did the Mahabharata War Happen?, 2011) use astronomical observations embedded in the Mahabharata to argue the underlying events and oral tradition are far older, potentially dating to around 5561 BCE. Most historians do not accept this dating. Stoicism was founded by Zeno of Citium around 300 BCE in Athens. While there was some contact between Greek and Indian philosophical traditions (especially after Alexander), no direct line of influence connects Stoicism to the Gita. The similarities are most likely independent convergence: different people asking the same questions about human flourishing and reaching similar answers."
         }
       },
       {
@@ -551,7 +551,7 @@ const schemas = [
         "name": "What did Marcus Aurelius say that is similar to the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Marcus Aurelius wrote in his Meditations: 'You have power over your mind, not outside events. Realize this, and you will find strength.' This maps directly to BG 2.47's teaching on acting without attachment to results. He also wrote extensively about performing one's role with full effort regardless of recognition, which echoes svadharma and nishkama karma. His observation that you can always retreat into the self as an inner citadel parallels the Gita's teaching on the atman as the unchanging witness."
+          "text": "Marcus Aurelius wrote in his Meditations: 'If thou art pained by any external thing, it is not this thing that disturbs thee, but thy own judgement about it. And it is in thy power to wipe out this judgement now.' (Meditations 8.47, tr. George Long) It sits close to BG 2.14, where Krishna tells Arjuna to bear the sensations that come and go. He also wrote extensively about performing one's role with full effort regardless of recognition, which echoes svadharma and nishkama karma. His observation that you can always retreat into the self as an inner citadel parallels the Gita's teaching on the atman as the unchanging witness."
         }
       }
     ]
@@ -588,7 +588,7 @@ export default function GitaVsStoicismPage() {
           <em>The Two Philosophies That Keep Finding Each Other</em>
         </h1>
         <p className="article-subtitle">
-          Separated by 500 years and 5,000 miles. Remarkably similar about what to do with a restless mind, an uncertain outcome, and a role you did not choose.
+          Written thousands of miles apart, both have a lot to say about a restless mind, an uncertain outcome, and a role you did not choose.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -597,7 +597,7 @@ export default function GitaVsStoicismPage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">~8 min read</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Gita references use Wisdom translation, edited by Ankur Shukla. Stoic quotes from public domain translations. AI-drafted, human-reviewed. June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Gita references use Wisdom translation, edited by Ankur Shukla. Stoic quotes from public domain translations. AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -660,7 +660,7 @@ export default function GitaVsStoicismPage() {
             </tr>
             <tr>
               <td style={{ padding: '10px 10px 10px 0', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top', color: 'var(--text)', fontWeight: 600 }}>What is the self?</td>
-              <td style={{ padding: '10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>Rational faculty (<em>hēgemonikon</em>) — dispersed at death.</td>
+              <td style={{ padding: '10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}>Rational faculty (<em>hēgemonikon</em>) — physical, and dispersed at or after death.</td>
               <td style={{ padding: '10px 0 10px 10px', borderBottom: '1px solid rgba(200,136,30,0.12)', verticalAlign: 'top' }}><em>Atman</em> — unborn, undying, witness (BG 2.20).</td>
             </tr>
             <tr>
@@ -715,15 +715,15 @@ export default function GitaVsStoicismPage() {
       </figure>
 
       <p className="lead">
-        The Stoics and the Gita were written in different languages, different centuries, different continents. Marcus Aurelius never heard of Krishna. And yet, if you place the Meditations next to the Bhagavad Gita, you keep encountering the same sentence in slightly different clothes. This is not coincidence. It suggests something about the questions themselves: that certain problems of human life, how to act under pressure, how to handle what you cannot control, how to do your duty without being destroyed by it, produce similar answers regardless of where you ask them.
+        Marcus Aurelius almost certainly never heard of Krishna. Yet if you put the Meditations next to the Bhagavad Gita, you keep finding the same advice in different words: how to act under pressure, how to handle what you cannot control, and how to do your duty without being destroyed by it.
       </p>
 
       <h2>Brief Background</h2>
       <p>
-        <a href="https://plato.stanford.edu/entries/stoicism/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Stoicism</a> began with Zeno of Citium, who founded a school in Athens around 300 BCE. It was developed by Cleanthes, Chrysippus, and later popularized in Rome by <a href="https://plato.stanford.edu/entries/epictetus/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus</a> (a former slave) and Marcus Aurelius (an emperor). Stoicism teaches that the good life consists in living according to reason and nature, focusing on what is within your control — what Epictetus called <em>ta eph&apos; hēmin</em> (things up to us) — and accepting with equanimity everything that is not.
+        <a href="https://plato.stanford.edu/entries/stoicism/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Stoicism</a> began with Zeno of Citium, who founded a school in Athens around 300 BCE. It was developed by Cleanthes, Chrysippus, and later popularized in Rome by <a href="https://plato.stanford.edu/entries/epictetus/" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus</a> (a former slave) and Marcus Aurelius (an emperor). Stoicism teaches that the good life consists in living according to reason and nature, focusing on what is within your control — what Epictetus called <em>ta eph&apos; hēmin</em> (things up to us) — and accepting everything else with equanimity.
       </p>
       <p>
-        The Bhagavad Gita is set within the Mahabharata. Its date is actively debated. Mainstream scholarship places the text&apos;s composition or final compilation between 400 BCE and 200 CE. However, recent researchers using astronomical methods have proposed significantly earlier dates for the underlying events. Nilesh Oak, in <em>When Did the Mahabharata War Happen?</em> (2011), cross-references the sky descriptions and planetary positions within the Mahabharata against historical astronomy, arriving at a date of around 5561 BCE for the war itself — suggesting the oral tradition that became the Gita is far older than the compiled text. This line of research is not yet part of the academic mainstream, but it represents a serious and growing body of inquiry. It records a conversation between the warrior Arjuna and his charioteer Krishna (an avatar of Vishnu) on the eve of a war. The core of Krishna&apos;s teaching is about the nature of action, duty, self, and liberation. It is one of the most widely read philosophical texts in human history.
+        The Bhagavad Gita is set within the Mahabharata. Its date is actively debated. Mainstream scholarship places the text&apos;s composition or final compilation between 400 BCE and 200 CE. Nilesh Oak&apos;s <em>When Did the Mahabharata War Happen?</em> (2011) dates the war to about 5561 BCE from astronomical references in the epic; most historians reject this. It records a conversation between the warrior Arjuna and his charioteer Krishna (an avatar of Vishnu) on the eve of a war. The core of Krishna&apos;s teaching is about the nature of action, duty, self, and liberation. 
       </p>
       <p>
         The two traditions almost certainly did not influence each other. What they share, they arrived at independently.
@@ -733,11 +733,11 @@ export default function GitaVsStoicismPage() {
       <div className="similarity-label">Similarity 1 of 9</div>
 
       <p>
-        Epictetus opens the Enchiridion with what he calls the fundamental distinction in philosophy: some things are in our power, and some are not. He builds the entire Stoic practice on this distinction.
+        Epictetus opens the Enchiridion with a distinction: some things are in our power, and some are not. His whole practice is built on it.
       </p>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Some things are in our control and others not. Things in our control are opinion, pursuit, desire, aversion, and, in a word, whatever are our own actions. Things not in our control are body, reputation, command, and, in one word, whatever are not our own actions.&rdquo;</div>
+        <div className="quote-text">&ldquo;Some things are in our control and others not. Things in our control are opinion, pursuit, desire, aversion, and, in a word, whatever are our own actions. Things not in our control are body, property, reputation, command, and, in one word, whatever are not our own actions.&rdquo;</div>
         <div className="quote-source"><a href="https://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus, Enchiridion, I</a> (tr. Carter)</div>
       </div>
 
@@ -746,9 +746,9 @@ export default function GitaVsStoicismPage() {
         sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।"
         iast="karmaṇyevādhikāraste mā phaleṣu kadācana"
         meaningLabel="Translation"
-        meaning="You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions."
+        meaning="You have a right to perform your prescribed duties, but never to the fruits of your actions."
         insightLabel="The Parallel"
-        insight="The Gita maps almost exactly onto Epictetus's dichotomy. The Sanskrit is precise: karmanyi (in action), eva (only), adhikarah (your rightful domain) — ma phaleSu kadacana (never in the fruits, not once). Action (karma) is yours. The fruit (phala) is not. And crucially, the verse adds a third instruction that is often missed: ma te sango'stvakarmayi — do not become attached to inaction either. Epictetus draws a line between internals and externals. The Gita draws the same line and then warns you not to use it as an excuse to stop acting altogether. Both traditions arrive at the same practical instruction: full effort, released grip."
+        insight="The Gita lines up closely with Epictetus's dichotomy. The Sanskrit reads karmaṇy evādhikāras te mā phaleṣu kadācana: karmaṇi (in action), eva (only), adhikāraḥ (your right), mā phaleṣu kadācana (never in the fruits). Action (karma) is yours and the fruit (phala) is out of your hands. The second half of the verse adds mā te saṅgo &apos;stv akarmaṇi: do not become attached to inaction either. Epictetus draws a line between internals and externals; the Gita draws the same line and then warns you against using it as an excuse to stop acting. Both end with the same instruction: put in full effort and let go of the result."
         mpLocation="stoic_blog_shloka_read_2_47"
       />
 
@@ -756,7 +756,7 @@ export default function GitaVsStoicismPage() {
       <div className="similarity-label">Similarity 2 of 9</div>
 
       <p>
-        Stoicism holds that external goods, wealth, reputation, health, success, are &quot;preferred indifferents.&quot; They are not bad. But they are not the good. The only true good is virtue: wisdom, justice, courage, moderation.
+        Stoicism holds that external goods, wealth, reputation, health, success, are &quot;preferred indifferents&quot;: worth choosing when available, but outside the good. For the Stoics the only good is virtue: wisdom, justice, courage, moderation.
       </p>
 
       <div className="stoic-quote">
@@ -765,7 +765,7 @@ export default function GitaVsStoicismPage() {
       </div>
 
       <p>
-        The Gita&apos;s <a href="https://www.wisdomlib.org/concept/nishkama-karma" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>nishkama karma</a>, action without desire for the fruit, makes the same structural claim. You do not act in order to acquire something external. You act because the action is the right thing to do, because it is your dharma. The quality of the action is what matters. The external reward is incidental.
+        The Gita&apos;s <a href="https://www.wisdomlib.org/concept/nishkama-karma" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>nishkama karma</a>, action without desire for the fruit, makes the same structural claim. You act because the action is right and is your dharma, and the external reward is incidental.
       </p>
 
       <div className="comparison-row">
@@ -787,12 +787,12 @@ export default function GitaVsStoicismPage() {
       </p>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Wipe out the imagination. Stop pulling the strings. Confine yourself to the present.&rdquo;</div>
-        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VII.29</a> (tr. Hays)</div>
+        <div className="quote-text">&ldquo;Wipe out the imagination. Stop the pulling of the strings. Confine thyself to the present.&rdquo;</div>
+        <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VII.29</a> (tr. Long)</div>
       </div>
 
       <p>
-        The Gita&apos;s teaching on karma yoga makes the same point structurally. Act now. Fully. Without dwelling on past results or anticipating future ones. BG 2.47 in practice means: this moment is the only place action can happen. The fruit belongs to the future. The past karma is gone. What you have is the present action.
+        The Gita&apos;s karma yoga makes a similar point: act fully now, without dwelling on past results or anticipating future ones. In practice, BG 2.47 puts your attention on the present action, since the fruit belongs to the future.
       </p>
 
       <h2>Similarity 4: The Role You Are Given</h2>
@@ -803,7 +803,7 @@ export default function GitaVsStoicismPage() {
       </p>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Remember that you are an actor in a drama, the character of which is determined by the author: if short, a short one; if long, a long one. If he wishes you to act the part of a poor man, see that you act it naturally; if the part of a lame man, or a magistrate, or a private person, do the same. For this is your duty, to act well the part that is given to you.&rdquo;</div>
+        <div className="quote-text">&ldquo;Remember that you are an actor in a drama, of such a kind as the author pleases to make it. If short, of a short one; if long, of a long one. If it is his pleasure you should act a poor man, a cripple, a governor, or a private person, see that you act it naturally. For this is your business, to act well the character assigned you; to choose it is another&apos;s.&rdquo;</div>
         <div className="quote-source"><a href="https://classics.mit.edu/Epictetus/epicench.html" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Epictetus, Enchiridion, XVII</a> (tr. Carter)</div>
       </div>
 
@@ -815,14 +815,14 @@ export default function GitaVsStoicismPage() {
         meaningLabel="Translation (BG 3.35)"
         meaning="Better is one's own dharma, though imperfectly performed, than the dharma of another well performed."
         insightLabel="The Parallel"
-        insight="Svadharma — your own duty in your own circumstances — maps closely to Epictetus's act the part given to you. The Gita states this twice, in slightly different registers. BG 3.35 says your own imperfect duty is better than another's well-executed one — and adds that svadharme nidhanam sreyah: dying in your own duty is preferable to following another's path. BG 18.47 repeats the first line but adds svabhava-niyatam karma: action fixed by your own nature. The Gita's point is not merely social role but alignment between action and nature. Epictetus, born a slave, performed his role with such completeness that he became one of the most admired philosophers of his century. Both traditions say: you may not have chosen this role. Do it with your whole nature. That is what you have."
+        insight="Svadharma — your own duty in your own circumstances — maps closely to Epictetus's act the part given to you. The Gita states this twice, in slightly different registers. BG 3.35 says your own imperfect duty is better than another's well-executed one — and adds that svadharme nidhanam sreyah: dying in your own duty is preferable to following another's path. BG 18.47 repeats the first line but adds svabhava-niyatam karma: action fixed by your own nature. So the Gita ties duty to a person's nature as well as their social role. Both traditions say that you may not have chosen the role, and your task is to do it well."
       />
 
       <h2>Similarity 5: Equanimity in Success and Failure</h2>
       <div className="similarity-label">Similarity 5 of 9</div>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Just that you do the right thing. The rest doesn&apos;t matter. Cold or warm. Tired or well-rested. Despised or honored. Dying — or busy with other assignments.&rdquo;</div>
+        <div className="quote-text">&ldquo;Just that you do the right thing. The rest doesn&apos;t matter.&rdquo;</div>
         <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VI.2</a> (tr. Hays)</div>
       </div>
 
@@ -834,8 +834,8 @@ export default function GitaVsStoicismPage() {
         meaningLabel="Translation"
         meaning="Be equal in pleasure and pain, in gain and loss, in victory and defeat. Then enter the battle. You will not incur papa."
         insightLabel="The Parallel"
-        insight="Both Marcus and Krishna are asking for the same inner posture: steadiness regardless of outcome. The Sanskrit lists the pairs explicitly — sukha-duhkhe (pleasure and pain), labhalabhau (gain and loss), jayajayau (victory and defeat) — and asks you to hold them same (same krtva). Not equally good. Not indifferent. Same. The Stoic equivalent is Marcus's word eudaimonia — flourishing — which the Stoics held does not come in degrees and cannot be added to or subtracted from by external events. Neither tradition is asking you to stop caring. Both are asking you to locate caring in the action rather than in what the action produces."
-        essence="Same quality of mind in all circumstances."
+        insight="Both Marcus and Krishna ask for steadiness regardless of outcome. The Sanskrit lists the pairs — sukha-duḥkhe (pleasure and pain), lābhālābhau (gain and loss), jayājayau (victory and defeat) — and asks you to treat each pair alike (same kṛtvā). The nearest Stoic idea is apatheia, freedom from the passions that disturb judgment, which the Stoic sage keeps whether fortune is good or bad. Neither tradition asks you to stop caring. Both ask you to put your care into the action rather than into what it produces."
+        essence="Treat pleasure and pain, gain and loss, victory and defeat alike, then fight."
       />
 
       <h2>Similarity 6: The Inner Citadel</h2>
@@ -846,12 +846,12 @@ export default function GitaVsStoicismPage() {
       </p>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;Nowhere can man find a quieter or more untroubled retreat than in his own atman.&rdquo;</div>
+        <div className="quote-text">&ldquo;Nowhere can man find a quieter or more untroubled retreat than in his own soul.&rdquo;</div>
         <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, IV.3</a> (tr. Farquharson)</div>
       </div>
 
       <p>
-        The Gita&apos;s teaching on the atman is the metaphysical version of the same insight. The atman is the unchanging witness self, the part of you that watches the gunas rise and fall, that is not destroyed by circumstances, that cannot be cut by weapons or burned by fire (BG 2.23). This is the &quot;retreating into yourself&quot; that Marcus describes, but grounded in a full theory of consciousness rather than merely as a psychological practice.
+        The Gita&apos;s teaching on the atman is the metaphysical version of the same insight. The atman is the unchanging witness self, the part of you that watches the gunas rise and fall, that is not destroyed by circumstances, that cannot be cut by weapons or burned by fire (BG 2.23). This is close to the &quot;retreating into yourself&quot; that Marcus describes, with a theory of the self underneath it.
       </p>
 
       <h2>Similarity 7: Memento Mori and the Eternal Self</h2>
@@ -874,30 +874,30 @@ export default function GitaVsStoicismPage() {
         meaningLabel="Translation"
         meaning="Those who think the atman kills or is killed are mistaken. The atman neither kills nor is killed."
         insightLabel="The Parallel and the Difference"
-        insight="Both traditions arrive at the same practical outcome: the fear of death should not dominate your choices. But the routes are very different. The Gita grounds this in a precise metaphysics of the atman. BG 2.20 piles up five Sanskrit terms for this: aja (unborn), nitya (eternal), sasvata (everlasting), purana (ancient, beginningless), and avyaya (without decay). The self is not merely persistent; it is constitutively outside the categories of birth and death. Stoicism reaches the same practical destination by a different road: death is not an evil because evil requires harm to the rational faculty, and death ends the rational faculty rather than harming it. Marcus's memento mori is a cognitive discipline for the living. The Gita's teaching is a metaphysical claim about what the self actually is. They agree on the behavioral prescription; they disagree, fundamentally, on why."
+        insight="Both traditions conclude that the fear of death should not drive your choices, by different routes. The Gita grounds this in the atman. BG 2.20 uses four terms for it: aja (unborn), nitya (eternal), śāśvata (everlasting) and purāṇa (ancient), and 2.21 adds avyaya (imperishable). Stoicism treats death as an indifferent, neither good nor evil, since only vice is evil. Marcus&apos;s memento mori is a discipline for the living; the Gita&apos;s teaching is a claim about what the self is. They agree on what to do and disagree on why."
       />
 
       <h2>Similarity 8: Service, Duty, and the Common Good</h2>
       <div className="similarity-label">Similarity 8 of 9</div>
 
       <p>
-        Stoicism teaches cosmopolitanism: you are a citizen of the world, not just your city or country. Marcus wrote about this frequently as a Roman emperor who could have defined his obligations very narrowly but chose to frame them in terms of humanity.
+        Stoicism teaches cosmopolitanism: you are a citizen of the world as well as of your city or country. Marcus wrote about this frequently as a Roman emperor who could have defined his obligations very narrowly but chose to frame them in terms of humanity.
       </p>
 
       <div className="stoic-quote">
-        <div className="quote-text">&ldquo;That which is not good for the bee-hive cannot be good for the bee.&rdquo;</div>
+        <div className="quote-text">&ldquo;That which is not good for the swarm, neither is it good for the bee.&rdquo;</div>
         <div className="quote-source"><a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener" style={{color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)'}}>Marcus Aurelius, Meditations, VI.54</a> (tr. Long)</div>
       </div>
 
       <p>
-        The Gita&apos;s karma yoga frames selfless action as yajna, an offering to all. In BG 3.9, Krishna says actions performed as offerings are liberating; actions performed only for personal gain create bondage. The frame is different: the Gita&apos;s is explicitly religious, the Stoic&apos;s is cosmopolitan and rational. But both arrive at the same ethical instruction: act for the good of the whole, not only for personal benefit.
+        The Gita&apos;s karma yoga frames selfless action as yajna, an offering. In BG 3.9, Krishna says actions performed as offerings are liberating; actions performed only for personal gain create bondage. The frame is different: the Gita&apos;s is explicitly religious, the Stoic&apos;s is cosmopolitan and rational. But both arrive at the same ethical instruction: act for the good of the whole, not only for personal benefit.
       </p>
 
       <h2>Similarity 9: The Examined Life</h2>
       <div className="similarity-label">Similarity 9 of 9</div>
 
       <p>
-        Stoicism and the Gita both treat unexamined emotion and unreflective action as the source of most human suffering. Marcus Aurelius kept a private journal (the Meditations) to examine his own motives, reactions, and failures with clinical honesty. He was an emperor writing to himself about how he was falling short.
+        Stoicism and the Gita both treat unexamined emotion and unreflective action as the source of most human suffering. Marcus Aurelius kept a private journal (the Meditations) to examine his own motives, reactions, and failures with unsparing honesty. He was an emperor writing to himself about how he was falling short.
       </p>
 
       <div className="stoic-quote">
@@ -906,40 +906,40 @@ export default function GitaVsStoicismPage() {
       </div>
 
       <p>
-        The Gita requires the same self-examination. Krishna spends eighteen chapters asking Arjuna to look at his own motives: is he refusing to fight from genuine moral scruple, or from attachment and fear? The diagnosis of delusion (moha) requires the same willingness to look honestly at what is actually driving you. Both traditions distrust the story you tell yourself about your own goodness.
+        The Gita requires the same self-examination. Krishna repeatedly asks Arjuna to look at his own motives: is he refusing to fight from moral scruple, or from attachment and fear? Diagnosing delusion (moha) takes the same willingness to look honestly at what is driving you. Both traditions distrust the story you tell yourself about your own goodness.
       </p>
 
-      <h2>Where They Genuinely Differ</h2>
+      <h2>Where They Differ</h2>
       <p>
-        The comparisons above are real. The differences are also real and should not be flattened.
+        The differences are as real as the parallels.
       </p>
 
       <div className="highlight-box">
-        <h3>Genuine Differences</h3>
+        <h3>Differences</h3>
         <p>
-          The Gita has bhakti. Stoicism does not. The Gita&apos;s final teaching in Chapter 18 is surrender to Krishna through devotion. There is Bhagavan, a personal relationship, and kripa that descends to the devotee. Stoicism&apos;s Logos is impersonal. You align with it through reason. There is no divine relationship, no surrender, no grace.
+          The Gita has bhakti and Stoicism has none. Krishna&apos;s last instruction, in 18.66, is surrender to him. There is Bhagavan, a personal relationship, and kripa that descends to the devotee. Stoicism&apos;s Logos is impersonal. You align with it through reason. There is no divine relationship, no surrender, no grace.
         </p>
         <p>
-          The Gita has a full metaphysics of atman and Brahman: the individual self and the cosmic self are ultimately identical. Stoicism has no equivalent. The Stoics believed the atman dispersed at death. They had no concept of moksha, liberation from the cycle of birth and death.
+          The Gita has a full metaphysics of atman and Brahman: the individual self and the cosmic self are ultimately identical. Stoicism has nothing like it. For the Stoics the soul was physical, and at most it lasted until it was reabsorbed into the cosmos. They had no concept of moksha, liberation from the cycle of birth and death.
         </p>
         <p>
-          The Gita offers multiple paths, karma yoga, jnana yoga, bhakti yoga, raja yoga, for different types of practitioners. Stoicism is essentially one path: reason applied consistently to the dichotomy of control. This makes Stoicism simpler and in some ways more portable. The Gita is more expansive.
+          The Gita offers multiple paths, karma yoga, jnana yoga, bhakti yoga, dhyana yoga, for different types of practitioners. Stoicism is essentially one path: reason applied consistently to the dichotomy of control. This makes Stoicism simpler and in some ways more portable. The Gita is more expansive.
         </p>
         <p>
           The Gita is more relational and more cosmic. The relationship between Arjuna and Krishna, a human and the divine, is at the center of the text. Stoicism is more solitary: Marcus writing alone in his tent, Epictetus reasoning through his circumstances alone.
         </p>
       </div>
 
-      <h2>Why This Comparison Matters</h2>
+      <h2>What the Comparison Shows</h2>
       <p>
-        The point of placing these two traditions next to each other is not to flatten them into one. They are not the same. The Gita is richer in metaphysics and in devotion. Stoicism is more austere and more purely philosophical. Both are worth reading on their own terms.
+        Side by side, the two traditions keep their differences. The Gita is richer in metaphysics and in devotion. Stoicism is more austere and more purely philosophical. Both are worth reading on their own terms.
       </p>
       <p>
-        The comparison matters because it reveals something about the questions. When very different civilizations, separated by centuries and geography, ask &quot;how should a person act when the outcome is uncertain and the stakes are high?&quot; they reach similar answers. That convergence is interesting. It suggests that some features of a good answer are not culturally specific but are genuinely responses to the structure of human experience.
+        When two cultures far apart ask &quot;how should a person act when the outcome is uncertain and the stakes are high?&quot; and reach similar answers, some parts of those answers may hold beyond either culture.
       </p>
 
       <p className="pull-quote">
-        Both Krishna and Marcus are saying: what you control is how you show up. That is also what you are responsible for. Start there.
+        Both Krishna and Marcus place your responsibility in the action you take and leave the outcome to forces outside you.
       </p>
 
       <p>
@@ -958,9 +958,8 @@ export default function GitaVsStoicismPage() {
           <strong>Note on translations:</strong> Stoic quotes in this article draw on three English translations: George Long (1862, public domain), A.S.L. Farquharson (Oxford, 1944), and Gregory Hays (Modern Library, 2002). Where the translation used differs from the Project Gutenberg (Long) text, it is noted inline. The Gita translations follow the Sanskrit closely; <em>karma</em> (action), <em>phala</em> (fruit/result), <em>dharma</em> (duty/cosmic order), and <em>svadharma</em> (one&apos;s own duty) are used in their original sense throughout.
         </p>
       </div>
+    <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: removed a misattributed Marcus Aurelius quote and an atman reference in his translation; corrected the Gita dating, the account of the Stoic soul, the Nilesh Oak dating claim, and the distance between the traditions; corrected the IAST of 2.47 and 2.38, the Stoic parallel to samatva (apatheia, not eudaimonia), the terms in 2.20, the Enchiridion I and XVII and Meditations VI.54 and VII.29 quotations, and raja yoga (dhyana yoga); copy edited.</p>
     </div>
-
-
       <FeedbackWidget pageType="blog" />
     <div className="faq-section">
       <h2>Frequently Asked Questions</h2>
@@ -968,7 +967,7 @@ export default function GitaVsStoicismPage() {
       <div className="faq-item">
         <strong>Is Stoicism similar to the Bhagavad Gita?</strong>
         <p>
-          In several core areas, yes. Both teach focusing on what you can control and releasing what you cannot. Both emphasize virtue over external reward. Both call for equanimity in success and failure. Both argue for performing your duty regardless of outcome. The similarities are independent: neither tradition influenced the other, separated as they were by 500 years and 5,000 miles.
+          In several core areas, yes. Both teach focusing on what you can control and releasing what you cannot. Both emphasize virtue over external reward. Both call for equanimity in success and failure. Both argue for performing your duty regardless of outcome. The similarities are most likely independent: there is no evidence either tradition influenced the other, and they grew up thousands of miles apart.
         </p>
       </div>
 
@@ -982,14 +981,14 @@ export default function GitaVsStoicismPage() {
       <div className="faq-item">
         <strong>Did the Stoics influence the Bhagavad Gita?</strong>
         <p>
-          Almost certainly not. Mainstream scholarship places the Gita&apos;s compilation between roughly 400 BCE and 200 CE, though researchers like Nilesh Oak argue the astronomical evidence within the Mahabharata points to the war — and thus the oral tradition behind the Gita — dating as far back as 5561 BCE. Stoicism began in Athens around 300 BCE. While some contact existed between Greek and Indian thought after Alexander, no direct line connects these two traditions. The similarities are most likely independent convergence: different people asking the same questions about human action and reaching similar answers.
+          Almost certainly not. Mainstream scholarship places the Gita&apos;s compilation between roughly 400 BCE and 200 CE. Stoicism began in Athens around 300 BCE. While some contact existed between Greek and Indian thought after Alexander, no direct line connects these two traditions. The similarities are most likely independent convergence: different people asking the same questions about human action and reaching similar answers.
         </p>
       </div>
 
       <div className="faq-item">
         <strong>What did Marcus Aurelius say that is similar to the Bhagavad Gita?</strong>
         <p>
-          Marcus wrote: &quot;You have power over your mind, not outside events.&quot; This maps directly to BG 2.47&apos;s teaching on acting without attachment to results. He also wrote extensively on performing one&apos;s role with full effort regardless of recognition, which echoes svadharma and nishkama karma. His concept of retreating to the &ldquo;inner citadel&rdquo; parallels the Gita&apos;s teaching on the atman as the unchanging witness self.
+          Marcus wrote: &quot;If thou art pained by any external thing, it is not this thing that disturbs thee, but thy own judgement about it&quot; (Meditations 8.47, tr. George Long). It sits close to BG 2.14, where Krishna tells Arjuna to bear the sensations that come and go. He also wrote extensively on performing one&apos;s role with full effort regardless of recognition, which echoes svadharma and nishkama karma. His concept of retreating to the &ldquo;inner citadel&rdquo; parallels the Gita&apos;s teaching on the atman as the unchanging witness self.
         </p>
       </div>
 

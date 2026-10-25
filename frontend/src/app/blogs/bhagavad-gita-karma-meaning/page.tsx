@@ -6,12 +6,12 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Karma in the Bhagavad Gita — The Real Meaning + 7 Key Verses (Chapter 3 Explained)",
-  description: "Karma is not cosmic payback. Chapter 3 of the Bhagavad Gita defines it precisely: act without attachment to results. The real meaning of karma, plus 7 shlokas on karma from the Gita with Sanskrit and English meaning.",
+  title: "Karma in the Bhagavad Gita: Meaning and 7 Key Verses (Chapters 2 to 4)",
+  description: "Karma means action. Chapters 2 to 4 of the Bhagavad Gita teach acting without attachment to results. The meaning of karma, plus 7 shlokas on karma with Sanskrit and English meaning.",
   keywords: "karma meaning in bhagavad gita, what is karma, karma definition, bhagavad gita karma yoga, what does karma mean in hinduism, karma in gita, karma meaning hindi, karma actual meaning, nishkama karma, karma yoga chapter 3, karma phala meaning, bhagavad gita 2.47 meaning",
   openGraph: {
-    title: "Karma in the Bhagavad Gita — The Real Meaning + 7 Key Verses (Chapter 3 Explained)",
-    description: "Karma is not cosmic payback. Chapter 3 of the Bhagavad Gita defines it precisely — act without attachment to results. Real meaning plus 7 karma shlokas from the Gita with Sanskrit and English.",
+    title: "Karma in the Bhagavad Gita: Meaning and 7 Key Verses (Chapters 2 to 4)",
+    description: "Karma means action. Chapters 2 to 4 of the Bhagavad Gita teach acting without attachment to results. The meaning plus 7 karma shlokas with Sanskrit and English.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning",
     siteName: 'Wisdom',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sansearchapp',
     creator: '@thisisashukla',
-    title: "Karma in the Bhagavad Gita — The Real Meaning + 7 Key Verses (Chapter 3 Explained)",
-    description: "Karma is not cosmic payback. Chapter 3 of the Bhagavad Gita defines it precisely — act without attachment to results. Real meaning plus 7 karma shlokas from the Gita with Sanskrit and English.",
+    title: "Karma in the Bhagavad Gita: Meaning and 7 Key Verses (Chapters 2 to 4)",
+    description: "Karma means action. Chapters 2 to 4 of the Bhagavad Gita teach acting without attachment to results. The meaning plus 7 karma shlokas with Sanskrit and English.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -406,8 +406,8 @@ const schemas = [
   {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Karma — What It Actually Means in the Bhagavad Gita | Wisdom",
-  "description": "Karma doesn't mean what goes around comes around. Here's what the Bhagavad Gita actually teaches about karma.",
+  "headline": "Karma in the Bhagavad Gita: Meaning and Key Verses | Wisdom",
+  "description": "Karma means action. What the Bhagavad Gita teaches about karma in 2.47, 3.9 and 4.37.",
   "datePublished": "2026-05-05",
   "dateModified": "2026-08-01",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning" },
@@ -433,7 +433,7 @@ const schemas = [
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
     { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
-    { "@type": "ListItem", "position": 3, "name": "Karma in the Bhagavad Gita — The Real Meaning", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning" }
+    { "@type": "ListItem", "position": 3, "name": "Karma in the Bhagavad Gita: Meaning", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-karma-meaning" }
   ]
 },
   {
@@ -442,10 +442,10 @@ const schemas = [
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What does karma actually mean?",
+      "name": "What does karma mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Karma literally means action in Sanskrit. In the Bhagavad Gita, it refers to any action you perform and the consequences that flow from those actions. The Gita's teaching is about the quality of consciousness you bring to action, not cosmic justice."
+        "text": "Karma literally means action in Sanskrit. In the Bhagavad Gita, it refers to any action you perform and the consequences that flow from those actions. The Gita's teaching is mostly about the attitude you bring to action, and says little about cosmic justice."
       }
     },
     {
@@ -453,7 +453,7 @@ const schemas = [
       "name": "What does the Bhagavad Gita say about karma?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Gita's most important karma teaching is in verse 2.47: You have a right to perform your duties, but not to the fruits of your actions. This is the foundation of karma yoga — performing action without attachment to outcomes."
+        "text": "The best-known karma teaching is verse 2.47: You have a right to perform your duties, but not to the fruits of your actions. This is the basis of karma yoga: performing action without attachment to outcomes."
       }
     },
     {
@@ -461,7 +461,7 @@ const schemas = [
       "name": "Does karma mean what goes around comes around?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not in the Bhagavad Gita. The Gita's concept of karma is about the state of consciousness behind your actions, not a cosmic ledger. Actions do have consequences, but wisdom can dissolve accumulated karma — you are not locked into your past."
+        "text": "Only loosely. The Gita's karma teaching centres on the state of mind behind your actions. Actions do have consequences, but BG 4.37 says the fire of knowledge burns up all karma, so you are not locked into your past."
       }
     }
   ]
@@ -495,11 +495,11 @@ export default function KarmaMeaningPage() {
           <div className="chapter-badge-dot"></div>
         </div>
         <h1 className="article-title">
-          Karma Doesn&apos;t Mean<br />
-          <em>What You Think It Means</em>
+          Karma in the Bhagavad Gita<br />
+          <em>Action, Its Fruits, and Knowledge</em>
         </h1>
         <p className="article-subtitle">
-          Karma isn&apos;t a cosmic ledger. It&apos;s not &ldquo;what goes around comes around.&rdquo; Here&apos;s what the Bhagavad Gita actually teaches: harder, more honest, and more useful than the greeting-card version.
+          In popular use, karma means &ldquo;what goes around comes around.&rdquo; The Bhagavad Gita uses the word for action, and teaches how to act without being bound by it.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -510,7 +510,7 @@ export default function KarmaMeaningPage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapters 2, 3 & 4</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -519,7 +519,7 @@ export default function KarmaMeaningPage() {
                 <figure className="chapter-image">
           <img
             src="/assets/chapter3.webp"
-            alt="Krishna guiding Arjuna toward selfless action — the true meaning of karma"
+            alt="Krishna guiding Arjuna toward selfless action, the karma yoga of Chapter 3"
             width="1200"
             height="675"
             loading="eager"
@@ -529,22 +529,22 @@ export default function KarmaMeaningPage() {
         </figure>
 
         <p className="lead">
-            &ldquo;Karma will get them.&rdquo; &ldquo;Good vibes only, the universe is watching.&rdquo; &ldquo;What goes around comes around.&rdquo; These have become the modern meaning of karma. They describe a cosmic justice system: you put in goodness, the universe deposits goodness back. You do wrong, cosmic punishment arrives. But this is not what the Bhagavad Gita teaches. The word karma appears hundreds of times in the Gita, and almost never means cosmic ledger-keeping. It means action. Specifically, it means the action you perform and the consciousness you bring to it. The distinction matters. It changes everything about how you live.
+            &ldquo;Karma will get them.&rdquo; &ldquo;Good vibes only, the universe is watching.&rdquo; &ldquo;What goes around comes around.&rdquo; These have become the modern meaning of karma. They describe a cosmic justice system: you put in goodness, the universe deposits goodness back. You do wrong, cosmic punishment arrives. The Bhagavad Gita uses karma differently. In the Gita, karma means action: what you do, and the attitude you do it with.
         </p>
         <h2>The Literal Meaning: Karma Is Action</h2>
         <p>
-            The word karma comes from the Sanskrit root kri, which means "to do." Karma is simply action: any action you perform with your body, your speech, or your mind. Walking is karma. Breathing is karma. Thinking a thought is karma. It is not inherently moral or immoral. It just is.
+            The word karma comes from the Sanskrit root kri, which means "to do." Karma is any action you perform with your body, your speech or your mind. Walking, breathing and thinking all count, and none of them is moral or immoral in itself.
         </p>
         <p>
-            The Gita's teaching on karma is not about actions coming back to haunt you from the cosmic ether. It is about understanding the actual relationship between the quality of your consciousness and the quality of your action, and how that relationship shapes your inner state and your life over time.
+            The Gita spends little time on actions coming back to haunt you. Its interest is in how the state of your mind shapes your action, and how both shape your inner life over time.
         </p>
         <p>
-            This is both simpler and harder than the greeting card version. Simpler because there is no invisible accountant tracking your deeds. Harder because it means the responsibility is entirely yours. You cannot blame the universe for your circumstances. You can only look at what you have done, the consciousness with which you did it, and what that has created.
+            That puts the responsibility on you. You look at what you have done, the attitude you did it with, and what came of it.
         </p>
 
         <h2>The Central Teaching: You Have a Right to Action, Not to Its Fruits</h2>
         <p>
-            The Gita's most important statement about karma comes in Chapter 2, verse 47. This is the foundation of the entire Karma Yoga section. Read this verse slowly.
+            The Gita's best-known statement about karma is Chapter 2, verse 47. The karma yoga teaching of Chapter 3 builds on it.
         </p>
 
                 <ShlokaCard
@@ -554,30 +554,30 @@ export default function KarmaMeaningPage() {
           meaningLabel="Translation"
           meaning="You have a right to perform your prescribed duties, but you are not entitled to the fruits. Never consider yourself the cause of the results, and never be attached to not doing your duty."
           insightLabel="What This Teaches"
-          insight="This single verse contains four instructions. First: act. You have not just permission but duty to perform action. Second: don't claim the fruits. The result is not yours to own. Third: don't let the anticipated fruit be your motive. If you're doing something only for the reward, you're building dependence on an outcome you don't fully control. Fourth: don't use this teaching to justify inaction. Detachment from results is not the same as don't bother. All four pieces together describe the actual practice."
-          essence="Do your duty. Let go of the outcome. Both halves matter."
+          insight="The verse has four instructions. First: act; the work is your right and your duty. Second: don't claim the fruits. Third: don't let the expected fruit be your motive, because then you depend on an outcome you don't control. Fourth: don't use this teaching to justify inaction. Together they describe the practice."
+          essence="Your right is to the work, never to its results."
         />
 
         <p>
-            This teaching is radical because it inverts how most people think about action. Most people think: "I will do X in order to get Y." The motive is the fruit. If the fruit arrives, they feel successful. If it doesn't, they feel cheated, angry, or empty. And their entire sense of self-worth becomes dependent on whether the outcome materialized.
+            This inverts how most people think about action: "I will do X in order to get Y." The motive is the fruit. If the fruit arrives, they feel successful. If it doesn't, they feel cheated, angry or empty, and their self-worth rides on the outcome.
         </p>
         <p>
-            The Gita says: perform the action fully, with complete care and attention and integrity. But do not let "getting the fruit" be the reason you are doing it. This is not complacency. It is the opposite. It is saying: act with total commitment, but measure your success by the quality of your action, not by whether things worked out the way you wanted.
+            Krishna&apos;s advice is to do the work fully, with care and integrity, and don't make "getting the fruit" the reason. Measure yourself by the quality of the action rather than by whether things worked out.
         </p>
 
         <div className="highlight-box">
             <h3>Why Attachment to Results is the Problem</h3>
             <p>
-                When the fruit becomes the motive, several psychological chains begin. First, you become willing to act differently depending on who is watching: your integrity shifts based on reward and punishment. Second, people can manipulate you through the things you want. Third, your inner peace depends on outcomes you cannot fully control. Fourth, when the outcome doesn't arrive, you don't just experience disappointment; you experience a sense of personal failure.
+                When the fruit becomes the motive, several things follow. First, you act differently depending on who is watching, and your integrity shifts with reward and punishment. Second, people can manipulate you through the things you want. Third, your inner peace depends on outcomes you cannot fully control. Fourth, when the outcome doesn't arrive, disappointment turns into a sense of personal failure.
             </p>
             <p>
-                The Gita's teaching interrupts all of this by shifting where you place your attention and your measure of success. Not "did I get what I wanted," but "did I act with integrity."
+                Krishna interrupts this by moving the measure of success from "did I get what I wanted" to "did I act with integrity."
             </p>
         </div>
 
-        <h2>Karma Yoga: Acting as Service, Not Transaction</h2>
+        <h2>Karma Yoga: Action as Offering</h2>
         <p>
-            Chapter 3 of the Gita is entirely devoted to Karma Yoga, the yoga of action. It offers a radically different framing of why we act.
+            Chapter 3 of the Gita is titled Karma Yoga, the yoga of action. It asks why we act.
         </p>
 
                 <ShlokaCard
@@ -587,24 +587,24 @@ export default function KarmaMeaningPage() {
           meaningLabel="Translation"
           meaning="Action done for any reason other than as a sacred offering (yajna) creates bondage in this world. Therefore, perform your duties as an offering, free from attachment, O Arjuna."
           insightLabel="What This Teaches"
-          insight="The Gita's transformation of karma is not about what you do. It's about why. The exact same action (cooking a meal, writing code, teaching a class, caring for someone) binds you if done with ego-craving and frees you if done as an offering. What changes is the consciousness you bring to it. Yajna (usually translated as sacrifice or sacred offering) is the key. You're performing the action not for personal gain but as service to something larger."
-          essence="Freedom comes from acting for a higher purpose, not personal gain."
+          insight="Here the Gita shifts attention from what you do to why you do it. The same action, cooking a meal or teaching a class, binds you if done from craving and frees you if done as an offering. Yajña, usually translated as sacrifice or sacred offering, is the key word. You do the work as service to something larger than personal gain."
+          essence="Work not done as yajña binds; do your work as an offering, free of attachment."
         />
 
         <p>
-            This is the practical meaning of karma yoga. You are not renouncing the world. You are renouncing your demand to own the fruits. You do the action because it is your duty, because you see it as service, because it is the right thing to do. The quality of your life shifts not because circumstances change, but because you have shifted why you are acting.
+            That is karma yoga in practice. You keep your work and your family and give up the demand to own the fruits. You do the action because it is your duty and because you see it as service. Your circumstances may stay the same while your reason for acting changes.
         </p>
 
         <p className="pull-quote">
-            The same action, performed with attachment to results, creates bondage. Performed as an offering, it creates freedom. The Gita is very clear: the difference is internal, not external.
+            The same action binds when done with attachment to results and frees when done as an offering. The difference lies inside the person acting.
         </p>
 
-        <h2>Past Karma Isn't Fate</h2>
+        <h2>Past Karma and the Fire of Knowledge</h2>
         <p>
-            The Gita does acknowledge that actions have consequences. Past actions have created present circumstances. You are not born into a blank slate. The Gita has a concept of karma phalas, the fruits of past actions that work themselves out through your life.
+            The Gita does say actions have consequences. Past actions shape present circumstances, and in 18.12 Krishna says the fruits of action follow those who have not renounced them, even after death.
         </p>
         <p>
-            But here is the critical sentence: wisdom burns all karma. Not gradually. Not carefully. Completely.
+            Chapter 4 adds that knowledge burns all karma.
         </p>
 
                 <ShlokaCard
@@ -614,43 +614,42 @@ export default function KarmaMeaningPage() {
           meaningLabel="Translation"
           meaning="As a blazing fire reduces wood to ashes, the fire of knowledge reduces all karma to ashes, O Arjuna."
           insightLabel="What This Teaches"
-          insight="This is the Gita's most important statement about past karma. It is not permanent. It is not fate. Understanding (genuine understanding of the nature of action and consciousness) burns it. The image is not of gradual dissolution but of fire consuming wood completely. This means: you are not locked into your past. Change of consciousness can alter the trajectory of your life."
-          essence="Knowledge is the fire that burns away all karma."
+          insight="Krishna compares knowledge to a blazing fire and past karma to firewood. Understanding the nature of action and the self burns that karma to ash. So past karma is not fixed fate, and you are not locked into your past."
+          essence="As fire turns wood to ash, the fire of knowledge turns all karma to ash."
         />
 
         <p>
-            This is why the Gita, written for a warrior in a moment of paralysis, is radically hopeful. Arjuna cannot undo the past. He cannot change the fact that he is on a battlefield about to fight his own family. But he can change his consciousness about what he is doing. And that change of consciousness is not just therapeutic. It is transformative. It alters what happens next.
+            That is why the Gita, spoken to a warrior frozen on a battlefield, is hopeful. Arjuna cannot undo the past or the fact that he faces his own kin in battle. He can change how he understands what he is doing, and that changes what happens next.
         </p>
 
-        <h2>So Karma Isn't About Punishment?</h2>
+        <h2>Is Karma About Punishment?</h2>
         <p>
-            No. The Gita does not use karma as a cosmic punishment mechanism. It uses it as a description of the chain between intention, action, and consequence.
+            The Gita uses karma mainly to describe the chain between intention, action and consequence. It does not dwell on cosmic punishment.
         </p>
         <p>
-            When you act with attachment to a specific result, you create internal patterns that shape how you perceive the world. When you act with ego-craving, you become dependent on things you cannot control. When you perform an action with integrity, you build a quality of character that you can trust. These are not cosmic rewards. They are natural consequences of how consciousness works.
+            When you act with attachment to a specific result, you create internal patterns that shape how you perceive the world. When you act with ego-craving, you become dependent on things you cannot control. When you act with integrity, you build a character you can trust. These consequences follow from how the mind works.
         </p>
         <p>
-            The chain can be interrupted. The interruption point is not external. It is not "wait for the universe to fix this." It is your inner state. It is the consciousness you bring to action. It is the meaning you assign to what you are doing. Change that, and the entire trajectory shifts.
+            The chain can be interrupted, and the place to interrupt it is your own state of mind: the attitude you bring to action and the meaning you give it.
         </p>
 
         <div className="highlight-box">
             <h3>The Practical Meaning</h3>
             <p>
-                If you're carrying regret about past actions, the Gita's teaching is: the wisdom you have now can transform that. Not erase it. Transform it. You learn something. You change how you act. That change doesn't just affect the future; it alters how you relate to the past.
+                If you carry regret about past actions, the Gita&apos;s teaching is that the understanding you have now can change your relationship to them. You learn something and act differently, and that also changes how you relate to the past.
             </p>
             <p>
-                If you're anxious about whether your efforts will pay off, the Gita's teaching is: act fully, but release the demand to own the outcome. Your job is the quality of your action. The fruits are not your business.
-            </p>
+                If you worry about whether your efforts will pay off, the teaching is: act fully and let go of the demand to own the outcome. Your job is the quality of the action.</p>
         </div>
 
         {/* ── Quick reference: karma quotes / shlokas — targets "karma quotes" query cluster ── */}
         <h2 id="karma-quotes">7 Karma Quotes from the Bhagavad Gita</h2>
         <p>
-            The seven verses below are the Gita&apos;s core teaching on karma, compressed. Read them as a quick reference; for full context and meaning, follow the link on each. If you want a longer, quote-only companion piece, see our{' '}
+            The seven verses below cover the Gita&apos;s main teaching on karma. Read them as a quick reference; for full context, follow the link on each. If you want a longer, quote-only companion piece, see our{' '}
             <a href="/blogs/karma-quotes-bhagavad-gita" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }} data-mp-location="internal_link_karma_quotes">
                 Karma Quotes from the Bhagavad Gita
             </a>{' '}
-            page — a curated list of 10 shlokas on karma with Sanskrit, transliteration and English meaning.
+            page, a list of 10 shlokas on karma with Sanskrit, transliteration and English meaning.
         </p>
 
         <ol className="karma-quotes-list" style={{ paddingLeft: 20, margin: '18px 0 32px' }}>
@@ -663,7 +662,7 @@ export default function KarmaMeaningPage() {
             <li style={{ marginBottom: 18 }}>
                 <strong>Bhagavad Gita 2.48</strong> · <em>yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya</em>
                 <br />
-                &ldquo;Established in yoga, do your work — abandoning attachment, remaining even in success and failure. Evenness of mind is called yoga.&rdquo;{' '}
+                &ldquo;Established in yoga, do your work, abandoning attachment, even in success and failure. Evenness of mind is called yoga.&rdquo;{' '}
                 <a href="/gita/chapter/2/verse/48" data-mp-location="karma_quote_2_48" style={{ color: 'var(--gold-light)' }}>Read →</a>
             </li>
             <li style={{ marginBottom: 18 }}>
@@ -681,13 +680,13 @@ export default function KarmaMeaningPage() {
             <li style={{ marginBottom: 18 }}>
                 <strong>Bhagavad Gita 3.35</strong> · <em>śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt</em>
                 <br />
-                &ldquo;Better to do your own duty imperfectly than another&apos;s perfectly. Doing your own dharma, even if flawed, is safer.&rdquo;{' '}
+                &ldquo;Better your own dharma, imperfectly done, than another&apos;s done well. Another&apos;s dharma is fraught with fear.&rdquo;{' '}
                 <a href="/gita/chapter/3/verse/35" data-mp-location="karma_quote_3_35" style={{ color: 'var(--gold-light)' }}>Read →</a>
             </li>
             <li style={{ marginBottom: 18 }}>
                 <strong>Bhagavad Gita 4.18</strong> · <em>karmaṇyakarma yaḥ paśyedakarmaṇi ca karma yaḥ</em>
                 <br />
-                &ldquo;The one who sees inaction in action, and action in inaction — that one is wise among people.&rdquo;{' '}
+                &ldquo;The one who sees inaction in action, and action in inaction, is wise among people.&rdquo;{' '}
                 <a href="/gita/chapter/4/verse/18" data-mp-location="karma_quote_4_18" style={{ color: 'var(--gold-light)' }}>Read →</a>
             </li>
             <li style={{ marginBottom: 18 }}>
@@ -697,6 +696,8 @@ export default function KarmaMeaningPage() {
                 <a href="/gita/chapter/4/verse/37" data-mp-location="karma_quote_4_37" style={{ color: 'var(--gold-light)' }}>Read →</a>
             </li>
         </ol>
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: removed an unverified count of the word karma; aligned 3.35 with the site&apos;s translation; corrected the meta description, which credited Chapter 3 with 2.47; copy edited.
+            </p>
     </div>
 
 
@@ -705,37 +706,37 @@ export default function KarmaMeaningPage() {
         <h2>Frequently Asked Questions</h2>
 
         <div className="faq-item">
-            <strong>What does karma actually mean?</strong>
+            <strong>What does karma mean?</strong>
             <p>
-                Karma literally means "action" in Sanskrit. In the Bhagavad Gita, it refers to any action you perform (physical, verbal, or mental) and the consequences that flow from those actions. The Gita's teaching is not about cosmic justice or punishment, but about the quality of consciousness you bring to action and how that shapes your inner state over time.
+                Karma literally means "action" in Sanskrit. In the Bhagavad Gita, it refers to any action you perform (physical, verbal, or mental) and the consequences that flow from those actions. The Gita&apos;s teaching centres on the attitude you bring to action and how that shapes your inner state over time.
             </p>
         </div>
 
         <div className="faq-item">
             <strong>What does the Bhagavad Gita say about karma?</strong>
             <p>
-                The Gita's most important karma teaching is in verse 2.47: "You have a right to perform your prescribed duties, but not to the fruits of your actions." This is the foundation of karma yoga, not a cosmic ledger-keeping system, but a practice of acting without attachment to outcomes. The Gita says act fully, but don't let the anticipated fruit be your motive.
+                The best-known karma teaching is verse 2.47: "You have a right to perform your prescribed duties, but not to the fruits of your actions." This is the basis of karma yoga, the practice of acting without attachment to outcomes. Act fully, and don't let the expected fruit be your motive.
             </p>
         </div>
 
         <div className="faq-item">
             <strong>Does karma mean what goes around comes around?</strong>
             <p>
-                Not in the Bhagavad Gita. That phrase describes rough cosmic justice, you get back what you give. The Gita's concept of karma is more internal: it's about the state of consciousness behind your actions, not a universe keeping score. The Gita does say actions have consequences, but it also says wisdom (jnana) can dissolve accumulated karma. You are not locked into your past.
+                Only loosely. That phrase describes rough cosmic justice: you get back what you give. The Gita&apos;s karma teaching is more inward and centres on the state of mind behind your actions. It does say actions have consequences, and it also says knowledge (jnana) burns up accumulated karma (4.37), so you are not locked into your past.
             </p>
         </div>
 
         <div className="faq-item">
             <strong>What is karma yoga?</strong>
             <p>
-                Karma yoga is the yoga of action, specifically, performing action as a form of service or sacred offering, without attachment to the results. It is not renouncing the world. It is renouncing your demand to own the fruits of your labor. You act fully, with integrity and care, but you release the need for a specific outcome. This practice is described in Chapter 3 as appropriate for people who are active in the world.
+                Karma yoga is the yoga of action: performing action as service or sacred offering, without attachment to the results. You keep working and give up the demand to own the fruits of your labor. You act fully, with integrity and care, and release the need for a specific outcome. In 3.3 Krishna names it as the path of the yogis, people who live by action.
             </p>
         </div>
 
         <div className="faq-item">
             <strong>Can karma be changed or burned?</strong>
             <p>
-                Yes. The Gita teaches in verse 4.37 that knowledge (jnana) burns all karma. Your past actions have consequences, but understanding (genuine understanding of the nature of action and consciousness) is said to dissolve even accumulated karma. This doesn't mean you erase the past; it means you transform your relationship to it and alter your trajectory moving forward.
+                Yes. The Gita teaches in verse 4.37 that knowledge (jnana) burns all karma. Your past actions have consequences, and understanding the nature of action and the self is said to burn up even accumulated karma. The past stays; your relationship to it, and your direction from here, can change.
             </p>
         </div>
     </div>

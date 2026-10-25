@@ -88,12 +88,12 @@ export default function FindingScreen({
 
   const failed = status[2] === 'failed'
   const steps = [
-    { title: 'Analysing your situation', detail: status[0] === 'done' && mirror ? mirror : hasNote ? 'Your answers and your own words' : 'Everything you told us' },
-    { title: 'Sifting 5,000 years of wisdom', detail: status[1] === 'waiting' ? 'Gita, Upanishads, Ramayana and more' : `${fmt(count)} verses  ·  ${fmt(lib.prasangs)} stories` },
+    { title: 'Reading what you told us', detail: status[0] === 'done' && mirror ? mirror : hasNote ? 'Your answers and your own words' : 'Everything you told us' },
+    { title: 'Searching the library', detail: status[1] === 'waiting' ? 'Gita, Upanishads, Ramayana and more' : `${fmt(count)} verses  ·  ${fmt(lib.prasangs)} stories` },
     {
-      title: 'Curating your plan',
+      title: 'Choosing your week',
       detail: failed ? "We couldn't reach the library. Check your connection and try again."
-        : status[2] === 'done' ? 'Seven mornings, built around you'
+        : status[2] === 'done' ? 'Ready: one verse for each morning'
         : status[2] === 'active' ? 'A verse for each day of your week'
         : 'Seven days, one verse each morning',
     },
@@ -101,7 +101,7 @@ export default function FindingScreen({
 
   return (
     <>
-      <Hero title="Curating" accent="your plan." sub="Everything you shared is shaping this." />
+      <Hero title="Choosing" accent="your week." sub="This takes a few seconds." />
       <div className="ob-steps" aria-live="polite">
         {steps.map((s, i) => {
           const st = status[i]

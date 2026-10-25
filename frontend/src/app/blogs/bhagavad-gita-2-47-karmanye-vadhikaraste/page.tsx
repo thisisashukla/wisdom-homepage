@@ -442,7 +442,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Bhagavad Gita 2.47: Karmanye Vadhikaraste Meaning Explained | Wisdom",
-    "description": "BG 2.47 is the Gita's most famous verse. Four instructions in one line: act, don't own the fruit, don't act for the fruit, don't use this to justify inaction.",
+    "description": "BG 2.47 gives four instructions in two lines: act, don't own the fruit, don't act for the fruit, and don't use this to justify inaction.",
     "datePublished": "2026-06-12",
     "dateModified": "2026-08-01",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" },
@@ -496,7 +496,7 @@ const schemas = [
         "name": "Is BG 2.47 saying to do nothing or be passive?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No, the opposite. The fourth clause of the verse explicitly forbids using detachment as a reason for inaction. The verse says act, do not be attached to fruits, do not make fruits your motive, and do not use any of this to justify not acting. It is a teaching about quality of action, not a license for passivity."
+          "text": "The verse asks for action. Its fourth clause rules out using detachment as a reason for inaction. In full it says: act, claim no fruit, do not make the fruit your motive, and do not use any of this to justify not acting."
         }
       },
       {
@@ -509,10 +509,10 @@ const schemas = [
       },
       {
         "@type": "Question",
-        "name": "Why is Bhagavad Gita 2.47 considered the most famous verse?",
+        "name": "Why is Bhagavad Gita 2.47 quoted so often?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BG 2.47 is often called the most famous verse because it captures the Gita's central teaching in two lines: act fully, release the outcome. It applies to work, relationships, creative effort, and any situation involving uncertainty about results. Its directness and completeness make it quotable and memorable across cultures."
+          "text": "BG 2.47 puts a central teaching of the Gita into two lines: act fully, and let go of the outcome. It applies to work, relationships, creative effort, and any situation where results are uncertain, and it is short enough to remember."
         }
       }
     ]
@@ -545,11 +545,11 @@ export default function BG247Page() {
             <div className="chapter-badge-dot"></div>
           </div>
           <h1 className="article-title">
-            The Most Famous Line in the Gita<br />
-            <em>and the Most Misread</em>
+            BG 2.47, Karmanye Vadhikaraste:<br />
+            <em>Meaning, Word by Word</em>
           </h1>
           <p className="article-subtitle">
-            Karmanye vadhikaraste is 32 syllables. Most people quote the first half. The second half is where the real instruction lives. This verse contains four separate commands, and ignoring any one of them changes what the verse actually means.
+            BG 2.47 is 32 syllables. Most people quote the first half, and the second half holds two of its four commands. Dropping any one of the four changes what the verse means.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -558,7 +558,7 @@ export default function BG247Page() {
             <span className="meta-sep">·</span>
             <span className="meta-item">~6 min read</span>
             <span className="meta-sep">·</span>
-            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Published June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -577,12 +577,12 @@ export default function BG247Page() {
         </figure>
 
         <p className="lead">
-          Thirty-two syllables. Two lines. Four instructions. BG 2.47 is the most quoted verse in the Bhagavad Gita, possibly the most quoted verse in all of Sanskrit literature. You have seen the first half on motivational posters, in graduation speeches, stitched into gym bags. &ldquo;You have the right to action, not to its fruits.&rdquo; Most people stop there. But the verse has a second line, and the second line is what makes the first line mean something other than a pretty platitude about letting go.
+          BG 2.47 is 32 syllables in two lines, and it gives four separate instructions. You have seen the first half on motivational posters and in graduation speeches: &ldquo;You have the right to action, not to its fruits.&rdquo; Most people stop there. The second line keeps the first from turning into a platitude about letting go.
         </p>
 
         <h2>The Sanskrit, Word by Word</h2>
         <p>
-          Before interpreting, the text itself. Read this slowly once.
+          Here is the text itself. Read it slowly once.
         </p>
 
                 <ShlokaCard
@@ -590,22 +590,22 @@ export default function BG247Page() {
           sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
           iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
           meaningLabel="Translation"
-          meaning="You have the right to do your actions, but not to control the results. Do not be attached to the fruits of your actions, and do not fall into inaction."
+          meaning="Your right is to the action alone, never to its fruits. Do not let the fruit be your motive, and do not be attached to inaction."
           insightLabel="What This Contains"
-          insight="This verse builds viveka (discernment) and steadiness. It lays out the practice of detached effort, nishkama karma, in four specific instructions: act, do not own results, do not let results be the motive, do not use this as cover for not acting. Each clause corrects a different failure mode."
-          essence="Focus on right action, let go of attachment to results."
+          insight="The verse lays out nishkama karma, action without craving for its fruit, in four instructions: act, claim no result, do not let the result be your motive, and do not use any of this as cover for not acting. Each clause corrects a different mistake."
+          essence="Your right is to the work, never to its results."
         />
 
         <p>
-          The verse is spoken by Krishna to Arjuna in the middle of a battlefield. Arjuna has collapsed. He will not fight. He says the cost is too high, the grief too great, the outcome too uncertain. Krishna&apos;s answer, across 700 verses, begins here, with this one.
+          Krishna speaks the verse to Arjuna on the battlefield. Arjuna has sat down in his chariot and refused to fight (2.9). He has said the cost is too high, the grief too great, and that he cannot tell whether winning or losing would be better (2.6). Krishna has been answering since 2.11, and here he turns from the nature of the self to the question of action.
         </p>
         <p>
-          It is worth pausing on that context. This verse is not addressed to someone sitting peacefully in meditation. It is addressed to someone in the middle of the hardest situation of his life, who is using uncertainty about outcomes as a reason to stop. Krishna&apos;s response is not &ldquo;relax.&rdquo; It is: here is how action actually works, and here is why your relationship to results is the problem.
+          That context matters. The listener is a man in the hardest situation of his life, using uncertainty about outcomes as a reason to stop. Krishna tells him how action works and why his relationship to results is the problem.
         </p>
 
         <h2>Four Instructions in One Line</h2>
         <p>
-          The verse breaks into four distinct clauses. Each is worth holding separately, because collapsing them into one vague idea of &ldquo;detachment&rdquo; loses most of what the verse actually says.
+          The verse breaks into four clauses. Each is worth holding separately, because folding them into one vague idea of &ldquo;detachment&rdquo; loses most of what the verse says.
         </p>
 
         <div className="clause-grid">
@@ -613,62 +613,60 @@ export default function BG247Page() {
             <div className="clause-label">Instruction 1</div>
             <div className="clause-sanskrit">कर्मण्येवाधिकारस्ते</div>
             <div className="clause-roman">karmaṇyeva adhikāraste</div>
-            <p>Your authority is in action. Not &ldquo;you may act if you feel like it.&rdquo; Your domain, your jurisdiction, your proper territory is the act itself. This is an affirmation of agency, not a suggestion. Act. That is what you are here for.</p>
+            <p>Your authority is in action. The particle eva, &ldquo;only&rdquo;, makes the act itself your domain and your proper territory. Krishna is affirming Arjuna&apos;s agency and telling him to use it.</p>
           </div>
           <div className="clause-item">
             <div className="clause-label">Instruction 2</div>
             <div className="clause-sanskrit">मा फलेषु कदाचन</div>
             <div className="clause-roman">mā phaleṣu kadācana</div>
-            <p>Never in the fruits. The word kadachana means &ldquo;at any time, ever, under any circumstances.&rdquo; This is not a soft suggestion. Your authority does not extend into the result. The result is not your territory. It never was.</p>
+            <p>Never in the fruits. The word kadachana, joined to mā, means &ldquo;never, at any time.&rdquo; Your authority stops at the act and does not reach into the result.</p>
           </div>
           <div className="clause-item">
             <div className="clause-label">Instruction 3</div>
             <div className="clause-sanskrit">मा कर्मफलहेतुर्भूः</div>
             <div className="clause-roman">mā karmaphalaheturbhūḥ</div>
-            <p>Do not let the fruit be your motive for acting. This is the clause people miss. It is not only about releasing results after the fact. It is about what drives you before the act. If the anticipated reward is why you are doing it, the quality of your action changes. You will cut corners when no one is watching. You will stop when the reward seems unlikely. You will do different things for different audiences.</p>
+            <p>Do not let the fruit be your motive for acting. People often miss this clause. It concerns what drives you before the act as well as how you take the result afterwards. If the anticipated reward is why you are doing it, the quality of your action changes. You will cut corners when no one is watching. You will stop when the reward seems unlikely. You will do different things for different audiences.</p>
           </div>
           <div className="clause-item">
             <div className="clause-label">Instruction 4</div>
             <div className="clause-sanskrit">मा ते सङ्गोऽस्त्वकर्मणि</div>
             <div className="clause-roman">mā te saṅgo&apos;stvakarmaṇi</div>
-            <p>Do not be attached to inaction. This is the clause that stops the verse from becoming a philosophy of passivity. It closes the exit. You cannot use &ldquo;detachment from results&rdquo; as a reason not to act. The verse forbids that interpretation directly.</p>
+            <p>Have no attachment to inaction. This clause keeps the verse from becoming a philosophy of passivity: &ldquo;detachment from results&rdquo; cannot serve as a reason not to act.</p>
           </div>
         </div>
 
         <p>
-          All four together describe the actual practice. Remove any one of them and you have a partial reading. The most common partial reading is to keep instructions one and two and quietly drop three and four. What you are left with is something like: act, and accept whatever happens. That is not nothing. But it is missing the most demanding parts.
+          All four together describe the practice, and removing any one leaves a partial reading. A common one keeps instructions one and two and drops three and four, leaving something like &ldquo;act, and accept whatever happens.&rdquo; That reading keeps something useful and loses the two hardest parts.
         </p>
 
-        <h2>What &ldquo;Don&apos;t Claim the Fruit&rdquo; Actually Means</h2>
+        <h2>What &ldquo;Don&apos;t Claim the Fruit&rdquo; Means</h2>
         <p>
-          Instruction two is the one that requires the most unpacking, because it is easy to interpret it as indifference to outcomes. It is not.
+          Instruction two needs the most unpacking, because it is easy to read as indifference to outcomes.
         </p>
         <p>
-          The Gita does not say the fruit does not matter. It does not say results are irrelevant or that you should not care whether your work is good. It says your right does not extend to the fruit. There is a difference between caring about the quality of your work and claiming ownership of the outcome.
+          The verse says your right does not extend to the fruit. You can still care whether your work is good. Caring about the quality of your work is different from claiming ownership of the outcome.
         </p>
         <p>
-          Here is the practical distinction. A surgeon cares deeply about whether the patient recovers. They prepare thoroughly, execute carefully, make adjustments in real time. But they cannot control every variable. The patient&apos;s underlying health, the rare complication, the unforeseen bleeding: these are not in the surgeon&apos;s domain. What is in their domain is the quality of their attention and their skill. That is where their authority lies.
+          Take a surgeon, who cares a great deal about whether the patient recovers. They prepare thoroughly, execute carefully, make adjustments in real time. But they cannot control every variable. The patient&apos;s underlying health, the rare complication, the unforeseen bleeding: these are not in the surgeon&apos;s domain. What is in their domain is the quality of their attention and their skill. That is where their authority lies.
         </p>
         <p>
-          If the surgeon measures their professional worth by whether the patient survived, they have placed their identity inside territory they do not control. The Gita is not saying the outcome doesn&apos;t matter. It is saying where you place your measure of success changes everything about how you function.
+          If the surgeon measures their professional worth by whether the patient survived, they have placed their identity inside territory they do not control. The outcome still matters; where the surgeon places the measure of success changes how they work.
         </p>
 
-        <div className="pull-quote">
-          The verse is not a teaching about indifference. It is a teaching about where you locate your standard of excellence. You measure yourself by the act. Not by whether the act produced the result you wanted.
-        </div>
+        <div className="pull-quote"> The verse teaches where to locate your standard: you measure yourself by the act, whatever result it produced. </div>
 
         <h2>Why the Fourth Instruction Is Usually Ignored</h2>
         <p>
-          The fourth clause, ma te sango&apos;stvakarmaṇi, is the least quoted part of the verse. It is also the part that makes the verse coherent.
+          The fourth clause, ma te sango&apos;stvakarmaṇi, is rarely quoted, and it holds the verse together.
         </p>
         <p>
-          Without it, &ldquo;detachment from results&rdquo; becomes an alibi. Someone who avoids effort, avoids commitment, avoids showing up for difficult things can dress all of that in the language of the Gita. &ldquo;I&apos;m not attached to outcomes. I am just being present. I am practicing nishkama karma.&rdquo; The verse explicitly forbids this reading. It says: and furthermore, do not be attached to not acting.
+          Without it, &ldquo;detachment from results&rdquo; becomes an alibi. Someone who avoids effort, avoids commitment, avoids showing up for difficult things can dress all of that in the language of the Gita. &ldquo;I&apos;m not attached to outcomes. I am just being present. I am practicing nishkama karma.&rdquo; The verse rules this reading out with its last words, mā te saṅgo&apos;stv akarmaṇi.
         </p>
         <p>
-          The Sanskrit word sanga means attachment or clinging. The verse is saying that inaction can itself be a form of attachment. You can cling to the comfortable position of doing nothing. That clinging is also forbidden. You are supposed to act. Fully. Without attachment to results. Without making results the motive. And without using any of this as a reason to stop.
+          The Sanskrit word sanga means attachment or clinging. The verse treats inaction as a form of attachment too: you can cling to the comfortable position of doing nothing. Krishna asks for full action, free of attachment to results, without results as the motive, and without any of this becoming a reason to stop.
         </p>
         <p>
-          This is what makes the verse genuinely demanding, rather than consoling. It does not let you off the hook in either direction.
+          That makes the verse demanding. It lets you off the hook in neither direction.
         </p>
 
         <div className="highlight-box">
@@ -681,21 +679,21 @@ export default function BG247Page() {
 
         <h2>How This Changes Work, Anxiety, and Failure</h2>
         <p>
-          The reason this verse has lasted 2,000 years is that the psychological pattern it describes shows up everywhere. Anxiety about outcomes is not a recent invention. People have always worried about whether their work will land, whether their effort will be recognized, whether the thing they built will succeed. The Gita&apos;s teaching is not that you should stop caring. It is that you have confused two things that are actually separate: the quality of your effort and the fate of the result.
+          The pattern this verse describes shows up everywhere. People have long worried about whether their work will land, whether their effort will be recognised, and whether what they built will succeed. Krishna&apos;s point is that two separate things have been confused: the quality of your effort and the fate of the result.
         </p>
         <p>
-          In a work context, the practical effect of this teaching is measurable. When you decouple your identity from the outcome, you make better decisions. You are willing to try things that might fail, because failure does not define you. You are willing to give honest feedback, because your relationship with someone does not depend on whether they approve of what you say. You are willing to do the unglamorous parts of a job, because you are not performing for an audience. You are doing what the work actually requires.
+          At work, separating your identity from the outcome can make some decisions easier. You can try things that might fail, because failure does not define you. You are willing to give honest feedback, because your relationship with someone does not depend on whether they approve of what you say. You can do the unglamorous parts of a job, because you are doing what the work requires and not performing for an audience.
         </p>
         <p>
-          In a failure context, the teaching reframes what failure is. If you measure yourself by results, failure is evidence that you are insufficient. If you measure yourself by the quality of your action, failure becomes information. You did the work. The outcome did not materialize. Now you have data. What does it tell you? What do you do differently? The quality of your analysis is better when you are not also defending your ego.
+          After a failure, the teaching changes what the failure means. If you measure yourself by results, failure is evidence that you are insufficient. If you measure yourself by the quality of your action, failure becomes information. You did the work, the outcome failed to arrive, and now you have data about what to do differently. It is easier to read that data when you are not also defending your ego.
         </p>
         <p>
-          The verse also has something to say about anxiety specifically. Much of what people call anxiety about the future is really anxiety about whether a future outcome will confirm or deny their worth. The Gita&apos;s position is that your worth is not located in future outcomes. Your worth is in the quality of your present action. That is the only thing you actually control.
+          Much worry about the future is worry about whether an outcome will confirm or deny a person&apos;s worth. Read through 2.47, that worth sits in the quality of present action, the part you control.
         </p>
 
         <h2>The Verses That Build on This</h2>
         <p>
-          BG 2.47 does not stand alone. The Gita returns to this teaching repeatedly, each time from a slightly different angle. Two verses that extend the same idea:
+          The Gita returns to this teaching several times, each time from a slightly different angle. Two verses that extend the same idea:
         </p>
 
                 <ShlokaCard
@@ -705,8 +703,8 @@ export default function BG247Page() {
           meaningLabel="Translation"
           meaning="Therefore, always perform your required duties without attachment. By performing duty without attachment, a person attains the highest."
           insightLabel="What This Adds"
-          insight="Chapter 3 picks up where 2.47 leaves off. Here Krishna makes the instruction continuous: not just in hard moments but always, as a steady practice. The word satatam means perpetually, constantly. This is not a situational tactic for when things get difficult. It is a way of working."
-          essence="Detached action, practiced continuously, leads to the highest."
+          insight="Chapter 3 picks up where 2.47 leaves off and makes the instruction continuous. The word satatam means always, constantly, so detached action becomes a way of working in every season."
+          essence="Always do the work that must be done, without attachment, and reach the highest."
         />
 
                 <ShlokaCard
@@ -716,20 +714,18 @@ export default function BG247Page() {
           meaningLabel="Translation"
           meaning="Having abandoned attachment to the fruits of actions, always content and self-sufficient, even while engaged in action, such a person does nothing at all."
           insightLabel="What This Adds"
-          insight="This verse describes the paradox of karma yoga at its fullest expression. The person is fully active, engaged in the work, but because they have let go of attachment to results so completely, they are in a deep sense not the doer. They are not accumulating karma in the way that binds. Chapter 4 takes the principle in 2.47 to its logical conclusion: action without the psychological weight of ownership."
-          essence="Act fully and cling to nothing. That is the highest freedom."
+          insight="This verse states the paradox of karma yoga. The person is fully engaged in the work, but having let go of attachment to results, they do nothing in the sense that binds. Chapter 4 carries the principle of 2.47 through: action without the weight of ownership."
+          essence="Free of attachment to fruit and always content, the busy person does nothing."
         />
 
         <p>
-          The arc across these three verses is worth noting. 2.47 gives the instruction. 3.19 says practice it always, not just when under pressure. 4.20 describes what it looks like when the practice is complete: full engagement in work, with none of the ego-weight of ownership attached to it.
+          The three verses form an arc. 2.47 gives the instruction. 3.19 says to practise it always, under pressure or not. 4.20 describes what it looks like when the practice is complete: full engagement in work, with none of the ego-weight of ownership attached to it.
         </p>
 
         <div className="highlight-box">
           <h3>A Note on Translation</h3>
           <p>
-            The word adhikara in the first clause is sometimes translated as &ldquo;right,&rdquo; as in &ldquo;you have a right to action.&rdquo; But adhikara more precisely means authority, domain, or proper sphere of competence. It is closer to saying: action is your proper jurisdiction. It is where you actually have power. Results are outside your jurisdiction. That is not a comfort. It is a clarification of what you can actually control.
-          </p>
-        </div>
+            The word adhikara in the first clause is often translated as &ldquo;right,&rdquo; as in &ldquo;you have a right to action.&rdquo; It also means authority, domain, or proper sphere. Read that way, action is where you have power, and results lie outside it.</p> </div> <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the syllable count wording, the translation of 2.47, where Krishna&apos;s answer begins (2.11, not 2.47), and removed the Gita&apos;s age in years and an unsupported claim about measurable work effects; copy edited.</p>
       </div>
 
 
@@ -747,14 +743,14 @@ export default function BG247Page() {
         <div className="faq-item">
           <strong>What is the full verse of BG 2.47?</strong>
           <p>
-            The full verse in transliteration is: karmaṇyevādhikāraste mā phaleṣu kadācana / mā karmaphalaheturbhūrmā te saṅgo&apos;stvakarmaṇi. It means: you have the right to perform your actions, but not to their fruits. Do not let the fruit be your motive for acting, and do not be attached to inaction. All four clauses together are the complete teaching, and all four matter.
+            The full verse in transliteration is: karmaṇyevādhikāraste mā phaleṣu kadācana / mā karmaphalaheturbhūrmā te saṅgo&apos;stvakarmaṇi. It means: you have the right to perform your actions, but not to their fruits. Do not let the fruit be your motive for acting, and do not be attached to inaction. 
           </p>
         </div>
 
         <div className="faq-item">
           <strong>Is BG 2.47 saying to do nothing or be passive?</strong>
           <p>
-            No. The verse says the opposite. The fourth clause explicitly forbids using detachment from results as a justification for inaction. The full instruction is: act, do not own results, do not make results your motive, and do not use any of this as a reason not to act. It is a teaching about the quality of action, not a license to disengage.
+            The verse asks for action. Its fourth clause rules out using detachment from results as a reason for inaction. The full instruction is: act, claim no result, do not make results your motive, and do not use any of this as a reason not to act.
           </p>
         </div>
 
@@ -766,9 +762,9 @@ export default function BG247Page() {
         </div>
 
         <div className="faq-item">
-          <strong>Why is Bhagavad Gita 2.47 considered the most famous verse?</strong>
+          <strong>Why is Bhagavad Gita 2.47 quoted so often?</strong>
           <p>
-            BG 2.47 is often cited as the Gita&apos;s most famous verse because it states the central teaching of karma yoga with unusual precision and completeness. Its principle applies across almost every domain of life: work, creative effort, relationships, competition, anything where you are putting in effort toward an outcome you cannot fully control. The directness of the statement, and its completeness across four clauses, makes it both memorable and practically useful in a way that more philosophical verses are not.
+            BG 2.47 states the central teaching of karma yoga in two lines. Its principle applies to work, creative effort, relationships and competition: anywhere you put effort toward an outcome you cannot fully control. It is short, direct and practical, which makes it easy to remember.
           </p>
         </div>
       </div>

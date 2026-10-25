@@ -7,11 +7,11 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Sthitaprajna: The Bhagavad Gita's 18-Verse Portrait of an Unshakeable Mind",
-  description: "Sthitaprajna is the Gita's word for a person whose wisdom is steady. BG 2.55-2.72 lists the exact qualities. Not calm at all costs. Steady at the root. Here's what that actually looks like.",
+  description: "Sthitaprajna is the Gita's word for a person whose wisdom is steady. BG 2.55-2.72 lists the qualities, from the tortoise image (2.58) to the ocean that rivers fill without moving it (2.70).",
   keywords: "sthitaprajna meaning, sthitaprajna bhagavad gita, sthitaprajna lakshana, sthita prajna definition, steady minded person bhagavad gita, bhagavad gita 2.55 meaning, bhagavad gita equanimity, wise person gita qualities, sthita dhi",
   openGraph: {
     title: "Sthitaprajna: The Bhagavad Gita's 18-Verse Portrait of an Unshakeable Mind | Wisdom",
-    description: "Sthitaprajna is the Gita's word for a person whose wisdom is steady. BG 2.55-2.72 lists the exact qualities. Not calm at all costs. Steady at the root.",
+    description: "Sthitaprajna is the Gita's word for a person whose wisdom is steady. BG 2.55-2.72 lists the qualities, from the tortoise image (2.58) to the ocean that rivers fill without moving it (2.70).",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/sthitaprajna-bhagavad-gita",
     siteName: 'Wisdom',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     site: '@sansearchapp',
     creator: '@thisisashukla',
     title: "Sthitaprajna: The Bhagavad Gita's 18-Verse Portrait of an Unshakeable Mind | Wisdom",
-    description: "Sthitaprajna is the Gita's word for a person whose wisdom is steady. BG 2.55-2.72 lists the exact qualities. Not calm at all costs. Steady at the root.",
+    description: "Sthitaprajna is the Gita's word for a person whose wisdom is steady. BG 2.55-2.72 lists the qualities, from the tortoise image (2.58) to the ocean that rivers fill without moving it (2.70).",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -474,7 +474,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Sthitaprajna: The Bhagavad Gita's 18-Verse Portrait of an Unshakeable Mind | Wisdom",
-    "description": "Sthitaprajna is the Gita's word for a person whose wisdom is steady. BG 2.55-2.72 lists the exact qualities. Not calm at all costs. Steady at the root.",
+    "description": "Sthitaprajna is the Gita's word for a person whose wisdom is steady. BG 2.55-2.72 lists the qualities, from the tortoise image (2.58) to the ocean that rivers fill without moving it (2.70).",
     "datePublished": "2026-06-12",
     "author": {
       "@type": "Person",
@@ -509,7 +509,7 @@ const schemas = [
         "name": "What does sthitaprajna mean?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sthitaprajna is a Sanskrit compound: sthita means steady or established, prajna means wisdom or discernment. Together it means one whose wisdom is steady, or a person of steady intellect. The Bhagavad Gita uses this word for someone whose inner stability does not depend on external conditions."
+          "text": "Sthitaprajna is a Sanskrit compound: sthita means steady or established, prajna means wisdom or discernment. Together it means one whose wisdom is steady, or a person of steady intellect. "
         }
       },
       {
@@ -517,7 +517,7 @@ const schemas = [
         "name": "Which verses describe sthitaprajna in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The sthitaprajna description spans BG 2.55 to 2.72, eighteen consecutive verses in Chapter 2. It begins after Arjuna's question in verse 2.54, where he asks Krishna to describe the marks of a person of steady wisdom. Krishna's answer is the most sustained character description in the chapter."
+          "text": "The sthitaprajna description spans BG 2.55 to 2.72, eighteen consecutive verses in Chapter 2. It begins after Arjuna's question in verse 2.54, where he asks Krishna to describe the marks of a person of steady wisdom."
         }
       },
       {
@@ -525,7 +525,7 @@ const schemas = [
         "name": "What are the sthitaprajna lakshana, the marks of steady wisdom?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The key marks include: abandoning all desires from the mind and being content within oneself (2.55), not being disturbed by sorrow or excited by pleasure (2.56), remaining unattached in all situations (2.57), withdrawing the senses from objects when needed like a turtle withdrawing its limbs (2.58), staying steady even when sense objects are present (2.59-2.61), and being like an ocean that receives all rivers without overflowing (2.70)."
+          "text": "The key marks include: abandoning all desires from the mind and being content within oneself (2.55), not being disturbed by sorrow or excited by pleasure (2.56), remaining unattached everywhere (2.57), withdrawing the senses from objects when needed like a tortoise withdrawing its limbs (2.58), staying steady even when sense objects are present (2.59-2.61), and being like an ocean that receives all rivers without overflowing (2.70)."
         }
       },
       {
@@ -533,7 +533,7 @@ const schemas = [
         "name": "Is sthitaprajna the same as being emotionless?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. The Gita's description is not of someone who feels nothing. BG 2.56 says the sthitaprajna is not disturbed by sorrow and does not crave pleasure, which means they encounter both. The quality being described is steadiness at the root, not the absence of experience. BG 2.65 describes the outcome as prasada, a quality of serenity and clarity, which is an inner positive state, not blankness."
+          "text": "No. BG 2.56 says the sthitaprajna is not shaken by sorrow and does not crave pleasure, which assumes they meet both. BG 2.65 describes the outcome as prasada, a state of serenity and clarity."
         }
       },
       {
@@ -541,7 +541,7 @@ const schemas = [
         "name": "What is the significance of the tortoise image in BG 2.58?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BG 2.58 compares the withdrawal of senses to a turtle pulling in its limbs. The image captures something specific: the turtle does not permanently retract its limbs, it can extend them again when the environment is safe. The sthitaprajna similarly has the capacity to withdraw from sense objects when necessary, not a permanent shutting-down but a voluntary, on-demand retraction. This is pratyahara, the ability to disengage attention at will."
+          "text": "BG 2.58 compares withdrawing the senses to a tortoise (kūrma) pulling in its limbs. A tortoise puts its limbs out again when it is safe, so the image describes a withdrawal the person controls. The yoga tradition calls this pratyahara, the ability to disengage attention at will."
         }
       }
     ]
@@ -578,7 +578,7 @@ export default function SthitaprajnaPage() {
             <em>an Unshakeable Mind</em>
           </h1>
           <p className="article-subtitle">
-            In Chapter 2 verse 54, Arjuna asks a question that changes the direction of the entire Gita. &ldquo;What are the marks of a person of steady wisdom?&rdquo; Krishna answers across 18 consecutive verses, more than any other single topic in the chapter. Here is what those verses actually say.
+            In Chapter 2 verse 54, Arjuna asks Krishna: &ldquo;What are the marks of a person of steady wisdom?&rdquo; Krishna answers across 18 consecutive verses, 2.55 to 2.72. This guide goes through what those verses say.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -587,7 +587,7 @@ export default function SthitaprajnaPage() {
             <span className="meta-sep">·</span>
             <span className="meta-item">~8 min read</span>
             <span className="meta-sep">·</span>
-            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Published June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -602,11 +602,11 @@ export default function SthitaprajnaPage() {
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>BG 2.55 to 2.72: the Gita&apos;s most detailed portrait of an unshakeable mind</figcaption>
+          <figcaption>BG 2.55 to 2.72: Krishna&apos;s portrait of a steady mind</figcaption>
         </figure>
 
         <p className="lead">
-          The word <em>sthitaprajna</em> appears for the first time in BG 2.54, when Arjuna pauses and asks what might be the most practically useful question in the whole conversation: how do you recognize a person of steady wisdom? How do they speak, how do they sit, how do they move? Krishna&apos;s response is eighteen consecutive verses, verse 2.55 through verse 2.72. That is more verses devoted to a single question than almost anywhere else in Chapter 2. He is not being brief. He wants Arjuna to understand exactly what this looks like in practice.
+          The word <em>sthitaprajna</em> appears for the first time in BG 2.54, when Arjuna asks how to recognize a person of steady wisdom. How do they speak, how do they sit, how do they move? Krishna&apos;s response is eighteen consecutive verses, verse 2.55 through verse 2.72. 
         </p>
 
         <h2>Arjuna&apos;s Question</h2>
@@ -614,18 +614,18 @@ export default function SthitaprajnaPage() {
           The question in verse 2.54 is worth quoting before anything else: sthitaprajnasya ka bhasha samadhisthasya kesava. &ldquo;O Krishna, what is the description of one who has steady wisdom, who is established in samadhi? How does such a person speak? How do they sit? How do they walk?&rdquo;
         </p>
         <p>
-          The question is concrete and behavioral. Arjuna is not asking for a philosophical definition. He is asking: if I stood next to this person, what would I see? If they spoke, what would I hear? It is a question about recognizable external signs of an internal state.
+          The question is concrete. Arjuna wants to know what he would see if he stood next to this person, and what he would hear if they spoke: the outward signs of an inner state.
         </p>
         <p>
           Krishna&apos;s answer works on two levels at once. It describes what the sthitaprajna is like from the outside, and it also serves as a guide for the person who wants to cultivate that state. Each quality is both a description and an instruction.
         </p>
         <p>
-          The compound word itself: sthita means established, rooted, steady. Prajna means wisdom, discernment, the faculty that sees clearly. Sthitaprajna is the person whose discernment is rooted, whose clarity does not come and go with circumstances. Not somebody who is calm when things are calm. Somebody who is steady at the root, so that what happens on the surface does not upend the ground beneath.
+          The compound word itself: sthita means established, rooted, steady. Prajna means wisdom, discernment, the faculty that sees clearly. Sthitaprajna is the person whose discernment is rooted, whose clarity does not come and go with circumstances. 
         </p>
 
         <h2>The First Mark: Abandoned Desires</h2>
         <p>
-          Krishna begins at the starting point, which is internal. The first characteristic is not behavioral at all. It is about what is absent.
+          Krishna starts with something inward: what the person has let go of.
         </p>
 
                 <ShlokaCard
@@ -635,20 +635,20 @@ export default function SthitaprajnaPage() {
           meaningLabel="Translation"
           meaning="When a person gives up all desires that come from the mind, and is satisfied within themselves by their own self, that person is called one of steady wisdom."
           insightLabel="What This Means"
-          insight="This builds the inner skill of viveka, discernment, helping us recognize which desires arise out of habit and which are truly aligned with our deeper self. It encourages mental clarity and points toward contentment through self-sufficiency, not through accumulation."
-          essence="True contentment is found by letting go of endless desires and resting in the fullness of your own atman."
+          insight="Krishna names two marks: the desires that arise in the mind are given up, and the person is content in the self, by the self."
+          essence="When you let go of every desire in the mind and are content in yourself, by yourself, you are steady (2.55)."
         />
 
         <p>
-          The phrase manogatan is worth noting. These are desires that live in the mind, not just desires for external things. The sthitaprajna has not abandoned wanting because the world stopped offering things to want. They have abandoned the pattern of the mind that generates wanting as a default state. The distinction matters because it explains why this is not a state that depends on circumstances. External conditions can change, but the pattern of the mind is something the person controls.
+          The word manogatān means &ldquo;residing in the mind&rdquo;. The verse locates desire in the mind, and the world keeps offering things to want. What the sthitaprajna has given up is the mind&apos;s habit of producing wants by default, which is why the state does not depend on circumstances.
         </p>
         <p>
-          The second half of the verse, atmanye va atmana tushtah, means satisfied within the self by the self. This is not a description of someone who is isolated or who has given up on life. It is a description of someone whose sense of completeness does not require an external input to remain intact. They are not waiting for something to feel okay. They already feel okay. That makes them genuinely free to engage with the world without desperation.
+          The second half of the verse, ātmany evātmanā tuṣṭaḥ, means satisfied in the self, by the self. The person&apos;s sense of being complete needs no outside input, so they can engage with the world without desperation.
         </p>
 
-        <h2>The Kachhua Principle</h2>
+        <h2>The Tortoise (Kachhua) Verse</h2>
         <p>
-          Several verses after the opening, Krishna gives the section&apos;s most vivid image. It describes a specific capacity, not a permanent state.
+          Three verses later, in 2.58, Krishna compares the steady person to a tortoise (kūrma).
         </p>
 
                 <ShlokaCard
@@ -656,26 +656,26 @@ export default function SthitaprajnaPage() {
           sanskrit="यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः । इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥"
           iast="yadā saṃharate cāyaṃ kūrmo'ṅgānīva sarvaśaḥ | indriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā ||"
           meaningLabel="Translation"
-          meaning="When you pull your senses away from outside attractions, like a turtle pulls in its limbs from the world, your understanding becomes steady and calm."
+          meaning="When you pull your senses away from outside attractions, like a tortoise pulls in its limbs, your understanding becomes steady and calm."
           insightLabel="What This Means"
-          insight="Building the skill of withdrawing from distractions strengthens self-control and helps steady the mind. The turtle does not keep its limbs retracted forever. It can extend them again when the environment is safe. The point is voluntary, on-demand retraction, not permanent withdrawal."
-          essence="Steadiness comes from withdrawing your senses from distractions, just as the kachhua does."
+          insight="Steady understanding belongs to the one who can draw the senses back from their objects, as a tortoise draws in its limbs."
+          essence="Like a tortoise drawing in its limbs, the steady person draws the senses back from their objects."
         />
 
         <p>
-          The turtle image is specific in a way that is easy to miss. A turtle does not permanently retract its limbs. It has the capacity to retract them when the environment is threatening, and to extend them again when it is safe. This is pratyahara, the ability to disengage attention from sense objects at will. It is a skill, not a permanent condition.
+          A tortoise pulls its limbs in when threatened and puts them out again when it is safe. The verse applies that ability to the senses. The yoga tradition calls it pratyāhāra: disengaging attention from sense objects at will.
         </p>
         <p>
-          In practical terms, this is the capacity to stop being hooked by stimuli. Someone says something provocative and you feel the pull to react immediately. The kachhua capacity is being able to not follow that pull: to observe it, let it pass, and choose your response. It does not mean you never respond. It means the response is chosen, not reflexive.
+          In practice: someone says something provocative and you feel the pull to react at once. The tortoise skill is noticing that pull, letting it pass, and then choosing whether and how to respond.
         </p>
 
         <div className="pull-quote">
-          The turtle&apos;s limbs are not gone. They are under its control. That is the difference between the sthitaprajna and someone who is simply numbed or disconnected.
+          The tortoise keeps its limbs and puts them out when it chooses. That separates the sthitaprajna from someone who is numb or disconnected.
         </div>
 
         <h2>The Cascade</h2>
         <p>
-          After describing the positive qualities of steady wisdom, verses 2.62 and 2.63 describe the opposite: what happens when you do not exercise this withdrawal. Krishna lays out a sequence with unusual precision. Each step follows from the previous one, and the speed of the sequence is the point.
+          After describing the positive qualities of steady wisdom, verses 2.62 and 2.63 describe the opposite: what happens when you do not exercise this withdrawal. Krishna lays out a sequence in which each step follows from the one before.
         </p>
 
                 <ShlokaCard
@@ -685,8 +685,8 @@ export default function SthitaprajnaPage() {
           meaningLabel="Translation"
           meaning="When you constantly think about objects and pleasures, you become attached to them. This attachment creates desire, which leads to anger if unfulfilled."
           insightLabel="What This Teaches"
-          insight="This verse teaches the importance of mindful awareness. By observing and guiding our thoughts, we can prevent unnecessary attachments and the cycle of frustration. It is a lesson in self-control, emotional intelligence, and building inner peace."
-          essence="Guard your mind's focus, for your thoughts shape your destiny."
+          insight="The chain starts with dwelling on objects. Dwelling breeds attachment, attachment breeds desire, and thwarted desire turns into anger."
+          essence="Dwelling on objects breeds attachment, attachment breeds desire, and desire breeds anger."
         />
 
                 <ShlokaCard
@@ -696,8 +696,8 @@ export default function SthitaprajnaPage() {
           meaningLabel="Translation"
           meaning="Anger leads to confusion, then loss of memory and understanding, and finally a person falls from their true path."
           insightLabel="What This Teaches"
-          insight="Uncontrolled desires and anger scatter the mind and bring confusion. This verse describes not a sudden collapse but a gradual sequence. Each step is both a symptom and a cause of the next one. Self-mastery preserves wisdom."
-          essence="Uncontrolled desires and anger scatter the mind and bring confusion; self-mastery preserves wisdom."
+          insight="The chain continues: anger brings delusion, delusion confuses memory, lost memory destroys discernment, and without discernment a person is ruined."
+          essence="From anger comes delusion, then confused memory, lost discernment, and ruin."
         />
 
         <p>
@@ -723,18 +723,18 @@ export default function SthitaprajnaPage() {
         </div>
 
         <p>
-          The sequence starts at step one, with something that seems harmless: thinking about things. Not doing anything. Just turning something over in your mind. The Gita is saying that this is where it begins. The cascade does not start with desire or anger. It starts with where you place your attention.
+          The sequence starts with something that seems harmless: turning an object over in your mind, without doing anything about it. In the Gita&apos;s account, desire and anger come later. The chain begins with where you place your attention.
         </p>
         <p>
-          This is why the kachhua verse immediately precedes this one. The capacity to withdraw attention from certain objects is not a trivial skill. It is the intervention point at step one that prevents steps two through eight. By the time you are at anger, much of the cascade has already happened. The time to act is much earlier, at the level of where you are placing your mind.
+          This connects back to the tortoise verse (2.58). Withdrawing attention from an object is an intervention at step one, before steps two through eight can start. By the time you are at anger, much of the cascade has already happened. The time to act is much earlier, at the level of where you are placing your mind.
         </p>
 
         <h2>What Sthitaprajna Is Not</h2>
         <p>
-          The qualities described across 2.55 to 2.72 are easy to misread as a portrait of someone emotionally flat, someone who has achieved stability by cutting off their emotional range. This is not what the verses describe.
+          The qualities described across 2.55 to 2.72 are easy to misread as a portrait of someone emotionally flat, someone who has achieved stability by cutting off their emotional range. The verses do not support that reading.
         </p>
         <p>
-          BG 2.56 says the sthitaprajna is not disturbed by sorrow and does not crave pleasure. This implies they encounter both. The teaching is not that sorrow does not reach them. It is that sorrow does not destabilize them at the root. There is a difference between feeling pain and being destroyed by it.
+          BG 2.56 says the sthitaprajna is not shaken by sorrow and does not crave pleasure, which assumes they meet both. Sorrow reaches them; it does not knock them off their footing.
         </p>
         <p>
           BG 2.65 gives the clearest counter to the numbness interpretation:
@@ -745,19 +745,19 @@ export default function SthitaprajnaPage() {
           sanskrit="प्रसादे सर्वदुःखानां हानिरस्योपजायते । प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते ॥"
           iast="prasāde sarvaduḥkhānāṃ hānirasyopajāyate | prasannacetaso hyāśu buddhiḥ paryavatiṣṭhate ||"
           meaningLabel="Translation"
-          meaning="When the mind and heart are pure and steady, all sorrow disappears, and your intelligence naturally settles in the highest reality."
+          meaning="When the mind and heart are pure and steady, all sorrow disappears, and your intelligence quickly becomes steady."
           insightLabel="What This Means"
-          insight="Purifying the chitta through self-restraint and balance brings emotional resilience and sharpness of insight. This verse encourages developing inner steadiness as a skill, and describes its outcome not as blankness but as prasada, a positive quality of serenity and clarity."
-          essence="Clarity within dissolves sorrow and brings lasting wisdom."
+          insight="Once the mind is clear and settled (prasāda), sorrows end, and the intellect soon becomes steady."
+          essence="When the mind settles into clarity, sorrow ends and understanding quickly steadies."
         />
 
         <p>
-          Prasada is the word in this verse. It is often translated as serenity or grace. But prasada has a quality of brightness, warmth, clarity. It is not the absence of feeling. It is a particular kind of radiant stillness. The verse says that when this prasada is established, all sorrow falls away, and the intellect naturally settles. This is the outcome of sthitaprajna, and it is the opposite of numbness.
+          The key word in this verse is prasāda, often translated as serenity or grace, with a sense of brightness and clarity. The verse says that once prasāda is established, all sorrow falls away and the intellect settles. That is the outcome of steady wisdom, and it is the opposite of numbness.
         </p>
 
         <h2>The Tortoise and the Ocean</h2>
         <p>
-          Near the end of the sthitaprajna section, Krishna gives a second extended image. If the turtle verse describes a capacity (voluntary withdrawal of attention), the ocean verse describes a quality (what that capacity makes possible over time).
+          Near the end of the sthitaprajna section, Krishna gives a second extended image. If the tortoise verse describes a capacity (voluntary withdrawal of attention), the ocean verse describes a quality (what that capacity makes possible over time).
         </p>
 
                 <ShlokaCard
@@ -767,120 +767,120 @@ export default function SthitaprajnaPage() {
           meaningLabel="Translation"
           meaning="Just as the ocean stays steady and is not disturbed even when many rivers flow into it, a person who stays balanced and calm amidst all desires and pleasures attains real shanti. The person who constantly chases desires does not find true peace."
           insightLabel="What This Means"
-          insight="This verse teaches the internal skill of vairagya, disciplined detachment, the ability to welcome life's experiences without being swayed or agitated by them. The ocean does not refuse the rivers. It receives them and remains unchanged. That is the quality being described."
-          essence="Stay steady like the ocean. Let desires come and go, but hold on to inner shanti."
+          insight="Desires enter the steady person the way rivers enter the ocean, which stays full and unmoved. That person finds peace; the one who chases desires does not."
+          essence="Desires flow in like rivers into the ocean, and the steady person stays unmoved and at peace."
         />
 
         <p>
-          The ocean does not block the rivers. It does not refuse them. They come in, they are received, the ocean does not change. This is a very different image from the turtle, which withdraws. Here the sthitaprajna is fully open to experience. Sense objects arrive. Desires arise. The world comes in. And nothing moves the ground.
+          The ocean takes in every river and its level stays the same. Where the tortoise withdraws, the ocean receives: here the sthitaprajna is open to experience, desires arrive, and the person stays steady.
         </p>
         <p>
-          Together, the two images give a more complete picture. The turtle is about active management of where attention goes: a skill you practice, a choice you make. The ocean is about what that practice builds over time: a settled quality of being that is not disturbed even when you are fully open and engaged.
+          Together, the two images give a more complete picture. The tortoise is about active management of where attention goes: a skill you practice, a choice you make. The ocean is about what that practice builds over time: a settled quality of being that is not disturbed even when you are fully open and engaged.
         </p>
 
-        <h2>Why This Still Matters</h2>
+        <h2>Steadiness in Ordinary Life</h2>
         <p>
-          The word sthitaprajna does not come up in most modern conversations. But the problem the concept addresses is everywhere. People are generally not short of things they want to do or experiences they want to have. They are short of the inner stability that would let them pursue those things without being constantly thrown off by outcomes, by other people&apos;s reactions, by uncertainty about whether it will work out.
+          Most people have plenty they want to do. What they often lack is the stability to pursue it without being thrown by outcomes, by other people&apos;s reactions, or by not knowing whether it will work out.
         </p>
         <p>
-          When something does not go as expected, there is a habitual question: what does this mean about me? If the result is bad, maybe I am not good enough. If I am not recognized, maybe my effort was worthless. These questions drag you into the cascade that 2.62 and 2.63 describe. The result is not just disappointment. It is a loss of clarity, a loss of the ability to think straight about what to do next.
+          When something does not go as expected, there is a habitual question: what does this mean about me? If the result is bad, maybe I am not good enough. If I am not recognized, maybe my effort was worthless. These questions pull you into the chain that 2.62 and 2.63 describe, and the cost is clarity: you lose the ability to think straight about what to do next.
         </p>
         <p>
-          Sthitaprajna is, in practical terms, the quality of being able to receive that information without collapsing under it. The ocean receives the river. You receive the feedback, the setback, the failure. Your stability does not depend on whether the news is good. That stability is what makes you useful to yourself and to other people. It is what makes it possible to act well when the situation is hard, which is precisely when it matters most.
+          In practical terms, sthitaprajna is the ability to take in a setback or bad feedback without collapsing under it, the way the ocean takes in a river. That steadiness lets you act well when the situation is hard.
         </p>
 
         <h2>All 18 Qualities: Quick Reference</h2>
         <p>
-          BG 2.55 through 2.72 covers more ground than any single summary can hold. Here is the essence of each verse in the sthitaprajna sequence:
+          Here is a one-line summary of each verse in the sequence, 2.55 to 2.72:
         </p>
 
         <div className="verse-reference-list">
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.55</span>
-            <span className="verse-ref-essence">True contentment is found by letting go of endless desires and resting in the fullness of your own atman.</span>
+            <span className="verse-ref-essence">When you let go of every desire in the mind and are content in yourself, by yourself, you are steady (2.55).</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.56</span>
-            <span className="verse-ref-essence">True steadiness comes when the mind is not attached to pleasure or shaken by pain.</span>
+            <span className="verse-ref-essence">Unshaken in sorrow, free of craving in pleasure, free of attachment, fear and anger: that is the sage of steady mind.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.57</span>
-            <span className="verse-ref-essence">Steadiness of mind arises from being unattached amidst all outcomes.</span>
+            <span className="verse-ref-essence">Unattached everywhere, neither delighting in good fortune nor hating bad, their wisdom is steady.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.58</span>
-            <span className="verse-ref-essence">Steadiness comes from withdrawing your senses from distractions, just as the kachhua does.</span>
+            <span className="verse-ref-essence">Like a tortoise drawing in its limbs, the steady person draws the senses back from their objects.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.59</span>
-            <span className="verse-ref-essence">Inner freedom comes from real self-experience, not just from resisting desire.</span>
+            <span className="verse-ref-essence">Fasting turns the senses from their objects, but the taste for them stays until the Supreme is seen.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.60</span>
-            <span className="verse-ref-essence">The pull of the senses is powerful, and constant watchfulness is the path of the sadhaka.</span>
+            <span className="verse-ref-essence">The turbulent senses can carry off the mind even of a wise person who is striving.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.61</span>
-            <span className="verse-ref-essence">Self-mastery over the senses leads to a steady and wise mind.</span>
+            <span className="verse-ref-essence">Restrain the senses and sit absorbed in Krishna; whoever controls the senses has steady wisdom.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.62</span>
-            <span className="verse-ref-essence">Guard your mind&apos;s focus, for your thoughts shape your destiny.</span>
+            <span className="verse-ref-essence">Dwelling on objects breeds attachment, attachment breeds desire, and desire breeds anger.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.63</span>
-            <span className="verse-ref-essence">Uncontrolled desires and anger scatter the mind and bring confusion; self-mastery preserves wisdom.</span>
+            <span className="verse-ref-essence">From anger comes delusion, then confused memory, lost discernment, and ruin.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.64</span>
-            <span className="verse-ref-essence">Clear your inner state by freeing yourself from likes and dislikes; prasada will follow.</span>
+            <span className="verse-ref-essence">Moving among objects free of attraction and aversion, with the senses controlled, one reaches prasāda.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.65</span>
-            <span className="verse-ref-essence">Clarity within dissolves sorrow and brings lasting wisdom.</span>
+            <span className="verse-ref-essence">When the mind settles into clarity, sorrow ends and understanding quickly steadies.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.66</span>
-            <span className="verse-ref-essence">Sukha (true happiness) is born from a peaceful and disciplined inner world.</span>
+            <span className="verse-ref-essence">The undisciplined have no wisdom and no peace, and without peace there is no happiness.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.67</span>
-            <span className="verse-ref-essence">When the mind follows restless senses, wisdom gets lost; handle your senses with attention.</span>
+            <span className="verse-ref-essence">A mind that follows the roaming senses loses its wisdom, like a boat carried off by wind on water.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.68</span>
-            <span className="verse-ref-essence">Mastery over your senses brings steadiness to your mind.</span>
+            <span className="verse-ref-essence">Whoever holds the senses back from their objects on every side has steady wisdom.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.69</span>
-            <span className="verse-ref-essence">Walk your path of awareness, even if the world sleeps.</span>
+            <span className="verse-ref-essence">What is night for all beings, the self-controlled are awake to; where beings are awake is night for the sage.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.70</span>
-            <span className="verse-ref-essence">Stay steady like the ocean. Let desires come and go, but hold on to inner shanti.</span>
+            <span className="verse-ref-essence">Desires flow in like rivers into the ocean, and the steady person stays unmoved and at peace.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.71</span>
-            <span className="verse-ref-essence">Shanti arises when we release desires, attachment, and ahamkara.</span>
+            <span className="verse-ref-essence">Whoever gives up all desires and lives without craving, possessiveness or ego attains peace.</span>
           </div>
           <div className="verse-ref-item">
             <span className="verse-ref-num">BG 2.72</span>
-            <span className="verse-ref-essence">Root yourself in steadiness of chitta, and confusion will never sway you.</span>
+            <span className="verse-ref-essence">This is the brahmī sthiti; reaching it one is no longer deluded, and holding it even at death one attains brahma-nirvāṇa.</span>
           </div>
         </div>
 
         <p>
-          The sequence has a shape. It begins with the internal condition (let go of desire, be content within), moves to the specific skills of sense management (the turtle, the cascade, the watchfulness), describes the outcome of those skills (prasada, serenity, clarity), and closes with the final image: the ocean, and the irreversible brahmi sthiti of verse 2.72. The eighteen verses are not a list. They are an argument, from inner condition to daily practice to the quality of life that practice makes possible.
+          The sequence has a shape. It begins with the internal condition (let go of desire, be content within), moves to the skills of sense management (the tortoise, the chain from dwelling to ruin, the watchfulness), describes the outcome (prasāda), and closes with the ocean (2.70) and the brahmī sthiti of verse 2.72.
         </p>
 
         <div className="highlight-box">
           <h3>A Note on the Word &ldquo;Steady&rdquo;</h3>
           <p>
-            Prajna is sometimes translated as wisdom, sometimes as intellect, sometimes as discernment. The Sanskrit carries all three: it is the faculty that sees clearly, that distinguishes real from apparent, lasting from temporary. When the Gita calls the sthitaprajna someone whose prajna is established (sthita), it means this faculty of clear seeing is no longer a temporary visitor. It is the stable ground of the person&apos;s functioning. That is what makes it remarkable. Most people have clear moments. The sthitaprajna has clarity as a baseline.
+            Prajna is sometimes translated as wisdom, sometimes as intellect, sometimes as discernment. The Sanskrit carries all three: it is the faculty that sees clearly, that distinguishes real from apparent, lasting from temporary. When the Gita calls the sthitaprajna someone whose prajna is established (sthita), it means this faculty of clear seeing is no longer a temporary visitor. It is the stable ground of the person&apos;s functioning. Most people have moments of clarity; for the sthitaprajna, clarity is the baseline.
           </p>
         </div>
+      <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the one-line verse summaries to match what each verse says (including 2.55, which no longer adds atman), the order of the tortoise verse (2.58) relative to 2.62, the transliteration of 2.55, and the 2.65 translation; copy edited.</p>
       </div>
-
 
       <FeedbackWidget pageType="blog" />
       <div className="faq-section">
@@ -889,35 +889,35 @@ export default function SthitaprajnaPage() {
         <div className="faq-item">
           <strong>What does sthitaprajna mean?</strong>
           <p>
-            Sthitaprajna is a Sanskrit compound: sthita means steady or established, prajna means wisdom or discernment. Together it describes a person whose wisdom is steady, whose inner clarity does not come and go with circumstances. The Bhagavad Gita uses this term for someone whose stability does not depend on what is happening externally.
+            Sthitaprajna is a Sanskrit compound: sthita means steady or established, prajna means wisdom or discernment. Together it describes a person whose wisdom is steady and whose clarity does not come and go with circumstances.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>Which verses describe sthitaprajna in the Bhagavad Gita?</strong>
           <p>
-            The full sthitaprajna description spans BG 2.55 to 2.72, eighteen consecutive verses in Chapter 2. It begins after Arjuna&apos;s question in verse 2.54, where he asks Krishna to describe the marks of a person of steady wisdom. Krishna&apos;s answer is the most sustained character description in the chapter.
+            The full sthitaprajna description spans BG 2.55 to 2.72, eighteen consecutive verses in Chapter 2. It begins after Arjuna&apos;s question in verse 2.54, where he asks Krishna to describe the marks of a person of steady wisdom.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What are the sthitaprajna lakshana, the marks of steady wisdom?</strong>
           <p>
-            The key marks described across BG 2.55 to 2.72 include: abandoning desires from the mind and being content within oneself (2.55), not being disturbed by sorrow or excited by pleasure (2.56), remaining unattached across all situations (2.57), being able to withdraw senses from objects like a turtle withdraws its limbs (2.58), the positive quality of prasada, serenity (2.65), and being like an ocean that receives all rivers without overflowing (2.70).
+            The key marks described across BG 2.55 to 2.72 include: abandoning desires from the mind and being content within oneself (2.55), not being disturbed by sorrow or excited by pleasure (2.56), remaining unattached across all situations (2.57), being able to withdraw senses from objects like a tortoise withdraws its limbs (2.58), the positive quality of prasada, serenity (2.65), and being like an ocean that receives all rivers without overflowing (2.70).
           </p>
         </div>
 
         <div className="faq-item">
           <strong>Is sthitaprajna the same as being emotionless?</strong>
           <p>
-            No. The Gita&apos;s description is of someone who encounters both sorrow and pleasure but is not destabilized by either. BG 2.65 describes the outcome as prasada, a quality of serenity and radiant clarity, which is a positive inner state. Numbness would be a different thing. The sthitaprajna is fully present to experience. What is steady is the ground, not the absence of feeling.
+            No. BG 2.56 describes someone who meets both sorrow and pleasure without being shaken by either. BG 2.65 describes the outcome as prasada, a state of serenity and clarity.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What is the significance of the tortoise image in BG 2.58?</strong>
           <p>
-            BG 2.58 compares withdrawing the senses to a turtle pulling in its limbs. The image captures something specific: the turtle does not permanently retract its limbs. It has the capacity to retract them when the environment is threatening, and to extend them again when safe. The sthitaprajna similarly has the capacity to withdraw attention from sense objects when necessary. This is pratyahara, the ability to disengage attention at will. It is a skill, not a permanent shutdown.
+            BG 2.58 compares withdrawing the senses to a tortoise (kūrma) pulling in its limbs. A tortoise puts its limbs out again when it is safe, so the image describes a withdrawal the person controls. The yoga tradition calls this pratyahara, the ability to disengage attention at will.
           </p>
         </div>
       </div>

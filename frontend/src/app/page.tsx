@@ -62,7 +62,7 @@ const ICONIC_VERSES = [
 const BLOGS = [
   { slug: 'best-bhagavad-gita-translation', title: 'The best Bhagavad Gita translation in English, compared', dek: 'Easwaran, Prabhupada, Gandhi, Sargeant and more: which one to read first.' },
   { slug: 'krishna-quotes', title: '50 Krishna quotes from the Bhagavad Gita', dek: 'His best-known lines, with the Sanskrit and what each one means.' },
-  { slug: 'karma-quotes-bhagavad-gita', title: 'Karma quotes from the Bhagavad Gita', dek: 'What the Gita actually says about action and its results.' },
+  { slug: 'karma-quotes-bhagavad-gita', title: 'Karma quotes from the Bhagavad Gita', dek: 'What the Gita says about action and its results.' },
 ]
 
 const FAQ = [
@@ -72,7 +72,7 @@ const FAQ = [
   },
   {
     q: 'Which Bhagavad Gita translation should I read? Is this ISKCON?',
-    a: "No, it isn't ISKCON. Read one that shows you the Sanskrit and doesn't tie you to a single sect. Our English is our own, checked against Shankara, Ramanuja and modern acharyas. For a side-by-side look at Gita Press, Prabhupada, Easwaran and others, see our comparison.",
+    a: "No, it isn't ISKCON. The English here is the Wisdom translation, edited from public-domain sources and read against Shankara, Ramanuja and modern acharyas. For a side-by-side look at Gita Press, Prabhupada, Easwaran and others, see our comparison.",
   },
   {
     q: 'Is there a Bhagavad Gita verse for today?',
@@ -80,7 +80,7 @@ const FAQ = [
   },
   {
     q: 'How does the 7-day plan work?',
-    a: `Answer a few questions about you and what's going on. Wisdom picks seven verses for it, one a day, starting with the Gita and drawing on the Upanishads, Ramayana and Mahabharata. Each comes with the Sanskrit and what it means for you. Week 1 is free: on iPhone in the app, and on Android and computers right here, after you sign in with Google.`,
+    a: `Answer a few questions about you and what's going on. Wisdom builds a week for it, a verse a day and a story on Day 7, starting with the Gita and drawing on the Upanishads, Ramayana and Mahabharata. Each comes with the Sanskrit and what it means for you. Week 1 is free: on iPhone in the app, and on Android and computers right here, after you sign in with Google.`,
   },
   {
     q: 'Is the Gita available in Hindi?',
@@ -92,7 +92,7 @@ const FAQ = [
   },
   {
     q: 'Is this a substitute for therapy?',
-    a: "No. Many people read the Gita alongside therapy. If you're thinking about harming yourself, please call Tele-MANAS on 14416 (India, free, 24×7) or your local emergency number.",
+    a: "No. It can sit alongside therapy, but it doesn't replace it. If you're thinking about harming yourself, please call Tele-MANAS on 14416 (India, free, 24×7) or your local emergency number.",
   },
 ]
 
@@ -114,7 +114,7 @@ export default async function HomePage() {
 
         <section className="hero hero-immersive hero-v3">
           <img
-            src="/assets/hero.webp"
+            src="/assets/hero-krishna-v5.webp"
             alt="Krishna revealing his universal form to Arjuna on the battlefield of Kurukshetra"
             fetchPriority="high"
             className="hero-bg"
@@ -129,7 +129,7 @@ export default async function HomePage() {
                 The Bhagavad Gita, <em>tuned to your life.</em>
               </h1>
               <p className="hero-sub">
-                Seven verses picked for your situation, starting with the Gita. Each one explained for your life.
+                Say what&apos;s going on. You get one verse a day for seven days, starting with the Gita, with what each means for you.
               </p>
 
               <HeroPlanCTA />
@@ -218,23 +218,23 @@ export default async function HomePage() {
             <div className="eyebrow">Before you start</div>
             <h2 className="heading">Which Bhagavad Gita <em>should you read?</em></h2>
             <p className="subtext">
-              The one that keeps the Sanskrit in front of you, reads it through more than one teacher, and never rewrites
-              a line. Here is how this one does that.
+              Pick one that shows you the Sanskrit and reads it through more than one tradition. Here is how this site
+              handles it.
             </p>
           </div>
           <div className="sources-grid" data-stagger="90">
             <div className="rv">
               <h3>The Sanskrit, every time</h3>
               <p>
-                Every verse is shown with its original Sanskrit, from the Ramayana and Mahabharata too. We never trim a line
-                to make it sound like a quote.
+                Every verse is shown in its original language, including the Ramayana and Mahabharata verses in the
+                plans. Lines aren&apos;t trimmed to make them sound like quotes.
               </p>
             </div>
             <div className="rv">
               <h3>Shankara and Ramanuja, side by side</h3>
               <p>
-                Meanings follow the traditional commentaries and modern acharyas, not one sampradaya&apos;s translation. You
-                don&apos;t need a guru&apos;s permission to open it.
+                Meanings are read against Shankara, Ramanuja and modern acharyas, so no single sampradaya&apos;s reading
+                decides what a verse says.
               </p>
             </div>
             <div className="rv">
@@ -256,13 +256,9 @@ export default async function HomePage() {
               &ldquo;I&apos;m not a very religious or spiritual person myself, but the impact of the Shlokas at various
               points during a stressful day has had a very positive influence.&rdquo;
             </blockquote>
-            <figcaption>AbhimanyuDasgupta, App Store review</figcaption>
+            <figcaption>Abhimanyu Dasgupta, App Store review</figcaption>
           </figure>
-          <div className="t-center rv" style={{ marginTop: 28 }}>
-            <CreatePlanLink className="btn-read-gita btn-read-gita-primary" campaign="web_home_which_gita" location="home_which_gita_cta">
-              Create my 7-day Gita plan · Week 1 free
-            </CreatePlanLink>
-          </div>
+          
         </div>
       </section>
 
@@ -270,8 +266,8 @@ export default async function HomePage() {
       <section className="section" id="app" data-mp-section="home_devices">
         <div className="wrap">
           <div className="sec-head rv">
-            <div className="eyebrow">Where you read it</div>
-            <h2 className="heading">On iPhone, in the app. <em>Everywhere else, right here.</em></h2>
+            <div className="eyebrow">Where you get it</div>
+            <h2 className="heading">Get your week on any <em>phone or computer.</em></h2>
           </div>
           <div className="rv">
             <DevicePlans />
@@ -389,9 +385,9 @@ export default async function HomePage() {
           <div className="final-band-scrim" aria-hidden="true" />
           <div className="final-band-inner">
           <h2>Start with <em>Week 1, free.</em></h2>
-          <p>A few questions, about two minutes. Your first seven days are free.</p>
+          <p>A few questions, about two minutes.</p>
           <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <CreatePlanLink className="btn-read-gita btn-read-gita-primary" campaign="web_final_band" location="final_cta_create_plan">Create my 7-day Gita plan · Week 1 free</CreatePlanLink>
+            <CreatePlanLink className="btn-read-gita btn-read-gita-primary" campaign="web_final_band" location="final_cta_create_plan">Create my 7-day Gita plan</CreatePlanLink>
           </div>
           </div>
         </div>
@@ -407,7 +403,7 @@ export default async function HomePage() {
           <p className="footer-copy">© 2026 Wisdom · Ankur Shukla · Bhagavad Gita, tuned to your life.</p>
           <p className="footer-crisis">In crisis? Call Tele-MANAS on 14416 (India, free, 24×7) or your local emergency number.</p>
           <p style={{ fontSize: '11px', color: 'var(--text-dimmer)', marginTop: '4px' }}>
-            Wisdom editorial translations. Commentary AI-drafted, human-reviewed. <a href="/methodology" style={{ color: 'var(--text-dimmer)' }}>Methodology →</a>
+            Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. <a href="/methodology" style={{ color: 'var(--text-dimmer)' }}>Methodology →</a>
           </p>
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
             <a href="https://x.com/sansearchapp" target="_blank" rel="noopener noreferrer" aria-label="Wisdom on X (Twitter)" style={{ color: 'var(--text-dimmer)', fontSize: '13px' }} data-mp-location="footer_twitter">𝕏</a>

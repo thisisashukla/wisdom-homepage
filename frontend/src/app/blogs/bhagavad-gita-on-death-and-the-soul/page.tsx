@@ -406,7 +406,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "What the Bhagavad Gita Says About Death, the Atman, and What Comes After | Wisdom",
-    "description": "The Gita's teaching on death is not comfort. It's a structural claim: the atman cannot be destroyed. Weapons don't cut it, fire doesn't burn it, water doesn't wet it.",
+    "description": "Krishna tells a grieving Arjuna that the atman cannot be destroyed: weapons cannot cut it, fire cannot burn it, water cannot wet it (BG 2.23).",
     "datePublished": "2026-06-12",
     "dateModified": "2026-08-01",
     "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
@@ -433,7 +433,7 @@ const schemas = [
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in" },
       { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs" },
-      { "@type": "ListItem", "position": 3, "name": "Bhagavad Gita on Death — 'The Atman Cannot Be Cut, Burned or Wet' (BG 2.19-2.25 Explained)", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul" }
+      { "@type": "ListItem", "position": 3, "name": "Bhagavad Gita on Death: The Atman Cannot Be Cut, Burned or Wet (BG 2.19-2.25)", "item": "https://wisdomquotes.in/blogs/bhagavad-gita-on-death-and-the-soul" }
     ]
   },
   {
@@ -445,7 +445,7 @@ const schemas = [
         "name": "What does the Bhagavad Gita say happens after death?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Gita teaches that the atman does not die when the body dies. The dehi (the one who inhabits the body) moves on to another body, the way a person changes worn-out clothes. The atman itself is described as aja (unborn) and nitya (eternal), having no beginning and no end. The specific circumstances of the next life are shaped by karma accumulated in this one."
+          "text": "The Gita teaches that the atman survives the death of the body. The dehi, the embodied self, which is the atman in a body, moves on to another body the way a person changes worn-out clothes (2.22). BG 2.20 calls it aja (unborn) and nitya (eternal). BG 8.6 says the state of mind a person holds at death shapes where they go next."
         }
       },
       {
@@ -453,7 +453,7 @@ const schemas = [
         "name": "What is the atman in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The atman is the self that cannot be destroyed. The Gita distinguishes it from the sharira (body) and even from the dehi (the embodied self). The atman is avyakta (unmanifest), achintya (beyond thought), and avikaryam (without modification). BG 2.20 calls it aja (unborn), nitya (eternal), shashvata (changeless), and purana (beginningless)."
+          "text": "The atman is the self that cannot be destroyed. The Gita distinguishes it from the sharira (body); when it speaks of the dehi, the embodied one, it means the atman as it lives in a body. BG 2.25 calls it avyakta (unmanifest), achintya (beyond thought) and avikarya (unchanging). BG 2.20 calls it aja (unborn), nitya (eternal), shashvata (everlasting) and purana (ancient)."
         }
       },
       {
@@ -461,7 +461,7 @@ const schemas = [
         "name": "Does the Bhagavad Gita believe in reincarnation?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. The Gita treats the continuity of the dehi across bodies as a basic fact, not a metaphor. BG 2.13 compares it to the body passing through childhood, youth, and old age in one lifetime. BG 15.7 says every living being is an eternal part of Paramātma, drawn into the world and attached to the senses."
+          "text": "Yes. The Gita treats the passage of the dehi from body to body as a plain fact. BG 2.13 compares it to the body passing through childhood, youth, and old age in one lifetime. BG 15.7 says every living being is an eternal part of Krishna that draws the mind and senses to itself."
         }
       },
       {
@@ -469,7 +469,7 @@ const schemas = [
         "name": "What is the full meaning of nainam chindanti shastrani?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Nainam chindanti shastrani is BG 2.23: 'Weapons cannot cut the atman, fire cannot burn it, water cannot wet it, wind cannot dry it.' The verse is making four specific negations about the four classical elements and their effects. The atman is beyond all physical harm, not because it is strong but because it is of a different order of reality than material things."
+          "text": "Nainam chindanti shastrani is BG 2.23: 'Weapons cannot cut the atman, fire cannot burn it, water cannot wet it, wind cannot dry it.' The verse names weapons, fire, water and wind, and says none of them can act on the atman, because it is of a different order from the things they act on."
         }
       },
       {
@@ -477,7 +477,7 @@ const schemas = [
         "name": "Is the Gita's teaching about death the same as Buddhist teaching?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. The Gita and Buddhism reach opposite conclusions about the self after death. Buddhism teaches anatta (no-self): there is no permanent, unchanging entity that persists. The Gita teaches the opposite: the atman is precisely the permanent, unchanging entity that persists across bodies. Both traditions use impermanence as a starting point but arrive at different conclusions about what is permanent."
+          "text": "No. The Gita and Buddhism reach opposite conclusions about the self after death. Buddhism teaches anatta (no-self): there is no permanent, unchanging entity that persists. The Gita teaches the opposite: the atman is the permanent, unchanging entity that persists across bodies. Both traditions use impermanence as a starting point but arrive at different conclusions about what is permanent."
         }
       }
     ]
@@ -511,10 +511,10 @@ export default function DeathAndSoulPage() {
           </div>
           <h1 className="article-title">
             The Bhagavad Gita on Death:<br />
-            <em>What Actually Cannot Be Destroyed</em>
+            <em>What Cannot Be Destroyed</em>
           </h1>
           <p className="article-subtitle">
-            This is not reassurance. It is a philosophical claim about the structure of reality. The atman is not protected from death. It is outside the category of things that can die.
+            In chapter 2 Krishna tells a grieving Arjuna that the atman is never born and never dies, and that weapons, fire, water and wind cannot touch it (2.20–24).
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -525,7 +525,7 @@ export default function DeathAndSoulPage() {
             <span className="meta-sep">·</span>
             <span className="meta-item">BG 2.13 through 2.25</span>
             <span className="meta-sep">·</span>
-            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -544,18 +544,18 @@ export default function DeathAndSoulPage() {
         </figure>
 
         <p className="lead">
-          Krishna&apos;s first move in the Gita is not a pep talk. He does not tell Arjuna to be brave, or that things will work out, or that the battle is worth it for the right reasons. He makes a claim: the people you think you are killing cannot actually be killed. This is not comfort. It is a philosophical position, and it is the foundation on which the rest of the text stands. If you miss it, you miss the Gita.
+          Krishna&apos;s first words to the weeping Arjuna are a rebuke: give up this weakness of heart and stand up (2.2–3). When Arjuna still refuses to fight, Krishna begins his teaching in 2.11 with a claim: the people Arjuna is grieving for cannot be killed. Much of what follows in the Gita builds on it.
         </p>
 
         <h2>What Is the Atman?</h2>
         <p>
-          The Gita uses three terms in close proximity in Chapter 2, and they are not interchangeable. The sharira is the body, the physical form that is born, ages, and dies. The dehi is the one who inhabits the body, sometimes translated as &ldquo;the embodied one.&rdquo; And the atman is the self itself, the real presence behind both.
+          Chapter 2 uses three words close together. The sharira (also deha) is the body, which is born, ages and dies. The dehi is &ldquo;the embodied one&rdquo;, the one who lives in the body. The atman is the self. In these verses the dehi and the atman are the same thing seen from two sides: dehi names the self as it lives in a body, atman names it as it is.
         </p>
         <p>
-          The critical move Krishna makes is to separate the atman from everything that can be harmed. The sharira can be cut, burned, and destroyed. The dehi moves from body to body. But the atman is in a different category entirely. It does not move. It does not change. It does not begin or end. It simply is.
+          Krishna separates the self from everything that can be harmed. The body can be cut, burned and destroyed. The self passes from body to body (2.13, 2.22) and is itself unborn, unchanging and without end (2.20, 2.24).
         </p>
         <p>
-          BG 2.13 introduces this logic with the gentlest possible example: the body itself already passes through radical change, and we don&apos;t say the person dies each time.
+          BG 2.13 starts with an everyday example: the body already passes through great change, and nobody says the person died along the way.
         </p>
 
                 <ShlokaCard
@@ -563,19 +563,19 @@ export default function DeathAndSoulPage() {
           sanskrit="देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥"
           iast="dehino'sminyathā dehe kaumāraṃ yauvanaṃ jarā | tathā dehāntaraprāptirdhīrastatra na muhyati ||"
           meaningLabel="Translation"
-          meaning="Just as the body goes through childhood, youth, and old age, in the same way the ātman moves from one body to another. The wise do not get confused or disturbed by this."
+          meaning="Just as the embodied self passes through childhood, youth and old age in this body, so it passes into another body. The wise are not confused by this."
           insightLabel="What This Teaches"
-          insight="The argument is an analogy. You were once a child. That child's body no longer exists. But no one says you died between childhood and adulthood. The dehi passed through those forms. Death, Krishna is suggesting, is the same kind of transition, just more complete. The wise person sees this and is not thrown by it."
-          essence="You are the changeless ātman; let go of fear when facing change."
+          insight="The argument is an analogy. The child&apos;s body you once had is gone, yet no one says you died between childhood and adulthood. The dehi passed through those forms. Krishna treats death as the same kind of passage, only more complete, and says the wise are not thrown by it."
+          essence="As the self passes through childhood, youth and age, so it passes to another body."
         />
 
         <p>
-          This is where the Gita&apos;s argument about death begins. Not with a promise about heaven, not with a comfort about reunion. With a structural claim: you have already survived enormous change. What you are has persisted through all of it. The death of the body is a change in degree, not in kind.
+          The Gita&apos;s argument about death begins here, with no promise about heaven or reunion. You have already lived through great change, and what you are has persisted through it. Krishna puts the death of the body in the same class of change.
         </p>
 
         <h2>The Four Negatives: BG 2.23</h2>
         <p>
-          The most famous verse on this subject is 2.23. It is often quoted as a standalone comfort, but it only works as the conclusion of an argument already in progress. Krishna has been laying out the nature of the atman for six verses. Then he states it in the form of four absolute negations.
+          Verse 2.23 is the one people quote on this subject. It is often quoted on its own, but it comes in the middle of an argument Krishna has been building since 2.16. Here he puts it as four negations.
         </p>
 
                 <ShlokaCard
@@ -583,23 +583,21 @@ export default function DeathAndSoulPage() {
           sanskrit="नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः । न चैनं क्लेदयन्त्यापो न शोषयति मारुतः ॥"
           iast="nainaṃ chindanti śastrāṇi nainaṃ dahati pāvakaḥ | na cainaṃ kledayantyāpo na śoṣayati mārutaḥ ||"
           meaningLabel="Translation"
-          meaning="Weapons cannot cut it. Fire cannot burn it. Water cannot wet it. Wind cannot dry it."
+          meaning="Weapons cannot cut it, fire cannot burn it, water cannot wet it, and wind cannot dry it."
           insightLabel="What This Teaches"
-          insight="The four elements in classical Indian cosmology are earth, fire, water, and air. Their characteristic actions are: earth displaces, fire burns, water wets, wind dries. Krishna is saying the atman is invulnerable to all four of these actions. This is not because the atman is very tough or well-protected. It is because the atman is not of the same order of reality as anything these elements can affect. You cannot cut what is not material. You cannot burn what has no substance to combust."
-          essence="Your ātman cannot be harmed by anything outside. You are forever whole within."
+          insight="The verse runs through four agents: weapons cut, fire burns, water wets, wind dries. Krishna says none of them can act on the atman. His reason, given in 2.24–25, is that the atman is unmanifest and beyond thought, of a different order from anything a weapon or an element can reach."
+          essence="Weapons cannot cut it, fire cannot burn it, water cannot wet it, wind cannot dry it."
         />
 
         <p>
-          The verse that follows, 2.24, continues the description. The atman is acchedya (cannot be cut), adahya (cannot be burned), akledya (cannot be wet), and ashoshya (cannot be dried). It is nitya (perpetual), sarvagatah (all-pervading), sthanuh (stable), achala (unmoving), and sanatana (beginningless). These are not poetic intensifiers. Each term is doing conceptual work. Together they describe something that is not located anywhere in particular, does not move, does not begin, does not end, and cannot be acted upon by any physical force.
+          The verse that follows, 2.24, continues the description. The atman is acchedya (cannot be cut), adahya (cannot be burned), akledya (cannot be wet), and ashoshya (cannot be dried). It is nitya (perpetual), sarvagatah (all-pervading), sthanuh (stable), achala (unmoving) and sanatana (eternal). Each word adds something. Together they describe something that is everywhere, stays still, has no end, and lies beyond the reach of any physical force.
         </p>
 
-        <div className="pull-quote">
-          The atman is not strong enough to survive death. It is not the kind of thing that death applies to.
-        </div>
+        
 
         <h2>The Eternal, the Unchanging: BG 2.20</h2>
         <p>
-          BG 2.20 is the direct statement. It comes before 2.23 and establishes the terms that 2.23 then applies. The verse is dense. Every noun carries weight.
+          BG 2.20 states the point directly. It comes before 2.23 and sets out the terms that 2.23 then applies.
         </p>
 
                 <ShlokaCard
@@ -607,19 +605,19 @@ export default function DeathAndSoulPage() {
           sanskrit="न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"
           iast="na jāyate mriyate vā kadācinnāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||"
           meaningLabel="Translation"
-          meaning="The atman never takes birth and never dies. It does not come into being nor ceases to exist. It is birthless (aja), eternal (nitya), changeless (shashvata), and beginningless (purana). Even if the sharira is destroyed, the atman is not harmed."
+          meaning="The atman never takes birth and never dies. It has not come into being and will not come to be again. It is unborn (aja), eternal (nitya), everlasting (shashvata) and ancient (purana). It is not slain when the body is slain."
           insightLabel="What This Teaches"
-          insight="The last line is the pivot: na hanyate hanyamane sharire. Even when the body is being slain, the atman is not slain. This is spoken to a man on a battlefield. It is not abstract comfort. It is a claim about what is actually happening when a body dies, stated in the plainest possible terms. The sharira ends. The atman does not."
+          insight="That last line, na hanyate hanyamane sharire, turns the verse. Krishna says this to a man on a battlefield who is about to kill and be killed, as a claim about what happens when a body dies."
           essence="The atman is birthless, eternal, and untouched by destruction."
         />
 
         <p>
-          The four Sanskrit adjectives here are worth sitting with separately. Aja means without birth, literally &ldquo;not born.&rdquo; Nitya means eternal, always existing. Shashvata means changeless, the same across all time. Purana means beginningless, without a starting point. Together they describe something that was never created and can never be destroyed, because creation and destruction are only possible for things that enter and exit existence. The atman never entered. It is not going anywhere.
+          The four adjectives are worth taking one at a time. Aja means unborn. Nitya means eternal, always existing. Shashvata means everlasting. Purana means ancient, or primeval. Together they describe something that was never created and cannot be destroyed, since creation and destruction apply to things that come into existence and leave it.
         </p>
 
         <h2>The Old Clothes Analogy: BG 2.22</h2>
         <p>
-          The most accessible image the Gita offers for the continuity of the dehi is the clothes analogy in 2.22. It is the verse that gets quoted most often in conversations about reincarnation, and for good reason. It does not require any metaphysical background to understand.
+          The plainest image the Gita gives for the dehi moving on is the clothes analogy in 2.22. People often quote it when talking about rebirth, and it needs no background in philosophy.
         </p>
 
                 <ShlokaCard
@@ -629,43 +627,43 @@ export default function DeathAndSoulPage() {
           meaningLabel="Translation"
           meaning="Just as a person discards worn-out clothes and puts on new ones, the dehi leaves behind old, worn-out bodies and moves into new ones."
           insightLabel="What This Teaches"
-          insight="The analogy is deliberately mundane. Changing clothes is not a crisis. The person doing the changing is not diminished by it. What changes is the outer layer. What continues is the one wearing it. The Gita is saying that the relationship between the dehi and the sharira is exactly this. The body is a garment. It wears out. The dehi takes another. What the analogy does not address is memory, personality, or the specifics of what continues. The Gita is making a structural point, not a personal one."
-          essence="You are not the sharira; you are the ever-renewing dehi."
+          insight="The analogy is ordinary on purpose. Changing clothes is no crisis, and the person changing is no smaller for it. The outer layer changes; the one wearing it continues. Krishna says the dehi and the body stand in the same relation: the body wears out, and the dehi takes another. The verse says nothing about memory or personality."
+          essence="As a person puts on new clothes, the embodied self takes on new bodies."
         />
 
         <p>
-          The limit of the analogy is worth acknowledging. We know what we mean when we say &ldquo;the same person in different clothes.&rdquo; We mean the face, the voice, the memories, the relationships. The Gita&apos;s claim is more minimal. What continues is the dehi, the one who inhabits the body. The memories, the personality, the relational ties: these are built up in each life from the sharira and the senses, and they are left behind with the body. What continues is deeper than that, and harder to point at.
+          The analogy has a limit. &ldquo;The same person in different clothes&rdquo; usually means the same face, voice and memories. The Gita claims less: what continues is the dehi. In 15.8 the self carries the mind and senses to a new body as the wind carries scent, and the verse does not say whether personal memory goes along.
         </p>
 
-        <h2>What This Is Not Saying</h2>
+        <h2>What Krishna Says About Grief</h2>
         <p>
-          The Gita is not dismissing grief. Krishna does not tell Arjuna &ldquo;stop feeling sad, death is an illusion.&rdquo; The word he uses at the opening of this teaching is shoka, sorrow. He is not telling Arjuna to stop having it. He is trying to give Arjuna a more accurate picture of what is actually happening so that the sorrow is not based on a false premise.
+          Krishna does tell Arjuna to stop grieving. He opens in 2.11 with &ldquo;you grieve for those who should not be grieved for&rdquo;, and he repeats &ldquo;you should not grieve&rdquo; in 2.25, 2.27 and 2.30. His method is argument: he gives Arjuna a different picture of what is happening, so that the grief has no false premise to rest on.
         </p>
 
         <div className="highlight-box">
-          <h3>The Teaching Is Metaphysical, Not Psychological</h3>
+          <h3>A Claim About the Self</h3>
           <p>
-            There is a real difference between the claim &ldquo;grief is valid&rdquo; and the claim &ldquo;the atman is eternal.&rdquo; The Gita is making the second claim. It is not making the first claim or its opposite. The fact that the atman is eternal does not make the loss of a specific body, a specific face, a specific person you loved, easy to bear. The Gita is not promising ease. It is promising structural truth.
+            The Gita&apos;s claim is that the atman is eternal. For someone grieving today, that claim does not make the loss of a particular face, a particular person you loved, easy to bear, and the Gita never promises that it will.
           </p>
           <p>
-            This is harder to receive than the greeting-card version. The greeting-card version says &ldquo;they are at peace now.&rdquo; The Gita says &ldquo;what they actually were was never in danger.&rdquo; These are very different claims, and the second one does not fit neatly into the space we are trying to fill when someone we love dies.
+            A condolence card says &ldquo;they are at peace now.&rdquo; Krishna says that what they were was never in danger. The second statement is harder to hear when someone you love has died.
           </p>
         </div>
 
         <h2>Impermanence and What Changes: BG 2.14</h2>
         <p>
-          BG 2.14 comes before the atman verses and establishes the other side of the picture. The body and the world of experience are impermanent. Contact with the external world produces heat and cold, pleasure and pain. These come and go. The instruction is to bear them without being defined by them.
+          BG 2.14 comes just before the main atman verses and gives the other side of the picture. The body and the world of experience are impermanent. Contact with the external world produces heat and cold, pleasure and pain. These come and go. The instruction is to bear them without being defined by them.
         </p>
         <p>
-          This matters for understanding the Gita&apos;s full position on death. It is not saying that loss is not real. The verse acknowledges that things come and go, that experience is transient. What it is doing is pointing to what does not come and go. There is the layer of experience that is constantly changing, and there is what is experiencing it. The second is not the first. They are in different categories.
+          The verse accepts that loss is real and that experience comes and goes. Two verses later, 2.16 says that what is unreal has no being and what is real never ceases to be. The changing layer of experience is one thing; the one who experiences it is another.
         </p>
         <p>
-          The body belongs to the impermanent layer. The atman does not. This is the distinction the Gita is drawing. Not &ldquo;nothing matters&rdquo; but &ldquo;not everything you think is you is actually you.&rdquo;
+          The body belongs to the changing layer, and the atman to the other. The Gita draws that line without saying that nothing matters.
         </p>
 
         <h2>What Happens After Death: BG 15.7</h2>
         <p>
-          The Gita returns to the question of what continues in Chapter 15. BG 15.7 says that every living being in this world is an eternal portion of the Paramātma, but becomes identified with the mind and the five senses, taking them to be its real self.
+          The Gita returns to the question of what continues in Chapter 15. BG 15.7 says that every living being in this world is an eternal portion of Krishna, which draws to itself the mind and the five senses.
         </p>
 
                 <ShlokaCard
@@ -673,36 +671,34 @@ export default function DeathAndSoulPage() {
           sanskrit="ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥"
           iast="mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ | manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati ||"
           meaningLabel="Translation"
-          meaning="Every living being in this world is an eternal part of Paramātma, but becomes attached to the mind and five senses, mistaking them to be its true self."
+          meaning="An eternal part of me becomes the living being in the realm of the living, and draws to itself the mind and the five senses, which rest in prakriti."
           insightLabel="What This Teaches"
-          insight="The jiva (individual atman) is described as an eternal amsha, a portion of the divine. It is sanātana, without beginning or end. But it becomes entangled in the mind and senses, forgetting its origin. After death, this entanglement continues into the next life. The karma accumulated through the attachment to the senses draws the jiva into a new body suited to that karma. This is the Gita's brief account of what continues and why."
-          essence="You are always a part of Paramātma, greater than your mind or senses."
+          insight="The jiva, the individual self, is called an eternal amsha, a portion of Krishna. It is sanātana, eternal. It pulls the mind and senses to itself, and the next verse, 15.8, says that when it leaves a body it carries them along to the next, as the wind carries scent from flowers."
+          essence="An eternal part of me becomes the living being and draws in mind and senses."
         />
 
         <p>
-          The mechanics of what determines the next birth are addressed more fully in Chapter 8, where Krishna describes the state of consciousness at the moment of death as particularly significant. The Gita does not offer a detailed map of the afterlife. What it does offer is a direction of travel: the dehi continues, shaped by what it has been attached to. The goal is to weaken that attachment, so the continuity becomes less about the senses and more about the atman itself.
+          Chapter 8 says more about what shapes the next birth: whatever state a person remembers at the end, to that state they go (8.6). The Gita gives no detailed map of the afterlife. It gives a direction: the dehi continues, shaped by what it has been attached to, and the aim is to loosen that attachment.
         </p>
 
-        <h2>The Practical Teaching: How This Should Change How You Live</h2>
+        <h2>How This Bears on How You Live</h2>
         <p>
-          The question the Gita is actually asking is not &ldquo;is there life after death?&rdquo; The question is: once you understand that the atman is eternal, how do you live?
+          The Gita spends little time on whether there is life after death. Its question is how to live once you accept that the atman is eternal.
         </p>
         <p>
-          If the body is not what you are, then clinging to its comfort and avoiding its discomfort becomes a less complete account of what is worth doing. If the atman is what you actually are, then the question becomes: what nourishes the atman, and what merely nourishes the sharira? What do you build your life around? What do you spend your attention on?
+          If you are the atman, then comfort for the body is only part of what is worth working for, and you can ask what serves the self as well as what serves the body.
         </p>
         <p>
-          The Gita is not telling you to ignore the body or treat it carelessly. It is saying that the level of reality you invest your deepest identification in matters. If you identify only with the sharira, you are building your entire sense of self on something that will end. If you can hold the sharira lightly, as the dehi&apos;s present garment, something shifts in how you relate to loss, to aging, to the dying of things around you.
+          The Gita still expects you to look after the body. Its question is where you place your sense of who you are. A sense of self built only on the body rests on something that will end. Holding the body as the dehi&apos;s present garment changes how a person meets loss and aging.
         </p>
 
         <div className="highlight-box">
-          <h3>What the Gita Actually Asks of You</h3>
+          <h3>Why the Rest of the Gita Needs This</h3>
           <p>
-            The teaching on the atman is not a philosophical curiosity. It is the ground of every other teaching in the Gita. Karma yoga makes no sense if you think you are only the body: why would you act without attachment to results if your body&apos;s comfort and survival are the only things at stake? Bhakti makes no sense if the divine is just an external being you are trying to impress. The atman teaching is the foundation.
+            Much of the Gita&apos;s later teaching assumes this one. Karma yoga asks you to act without attachment to results, which is hard to justify if the body&apos;s comfort and survival are all that is at stake. Bhakti, in 15.7, rests on the self being a part of Krishna.
           </p>
           <p>
-            Once you have sat with the claim that what you actually are cannot be destroyed, it changes the frame for everything. Fear of death is still there. Grief is still there. But they are not the final word. There is something in you that neither sword nor fire can reach.
-          </p>
-        </div>
+            Fear of death and grief stay with a person who accepts this teaching. Krishna adds that they are not the last word on what has happened.</p> </div> <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the account of dehi and atman (in 2.13–2.22 the dehi is the atman, embodied), the glosses of sanātana (eternal), purāṇa (ancient) and śāśvata (everlasting), the translations of 2.13 and 15.7, the elements in 2.23, and the claim that Krishna does not tell Arjuna to stop grieving (see 2.11, 2.25); copy edited.</p>
       </div>
 
 
@@ -713,35 +709,35 @@ export default function DeathAndSoulPage() {
         <div className="faq-item">
           <strong>What does the Bhagavad Gita say happens after death?</strong>
           <p>
-            The Gita teaches that the atman does not die when the body dies. The dehi (the one who inhabits the body) moves on to another body, the way a person changes worn-out clothes. The atman itself is described as aja (unborn) and nitya (eternal), having no beginning and no end. The specific circumstances of the next life are shaped by karma accumulated in this one.
+            The Gita teaches that the atman survives the death of the body. The dehi, the embodied self, which is the atman in a body, moves on to another body the way a person changes worn-out clothes (2.22). BG 2.20 calls it aja (unborn) and nitya (eternal). BG 8.6 says the state of mind a person holds at death shapes where they go next.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What is the atman in the Bhagavad Gita?</strong>
           <p>
-            The atman is the self that cannot be destroyed. The Gita distinguishes it from the sharira (body) and even from the dehi (the embodied self). The atman is avyakta (unmanifest), achintya (beyond thought), and avikaryam (without modification). BG 2.20 calls it aja (unborn), nitya (eternal), shashvata (changeless), and purana (beginningless). It is not a atman in the Christian sense, a discrete personal entity that either goes to heaven or hell. It is closer to pure consciousness, the witness that is present in every experience.
+            The atman is the self that cannot be destroyed. The Gita distinguishes it from the sharira (body); when it speaks of the dehi, the embodied one, it means the atman as it lives in a body. BG 2.25 calls it avyakta (unmanifest), achintya (beyond thought) and avikarya (unchanging). BG 2.20 calls it aja (unborn), nitya (eternal), shashvata (everlasting) and purana (ancient). Readers often compare it to the soul, but in the Gita it is closer to pure consciousness, the witness present in every experience, and it moves on by rebirth.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>Does the Bhagavad Gita believe in reincarnation?</strong>
           <p>
-            Yes. The Gita treats the continuity of the dehi across bodies as a basic fact, not a metaphor. BG 2.13 compares it to the body passing through childhood, youth, and old age in one lifetime. BG 2.22 uses the clothes analogy. BG 15.7 says every living being is an eternal part of Paramātma, drawn into the world and attached to the senses. The Gita does not go into extensive detail about how reincarnation works. It states it as the starting premise.
+            Yes. The Gita treats the passage of the dehi from body to body as a plain fact. BG 2.13 compares it to the body passing through childhood, youth, and old age in one lifetime. BG 2.22 uses the clothes analogy. BG 15.7 says every living being is an eternal part of Paramātma, drawn into the world and attached to the senses. The Gita gives few details about how rebirth works and takes it as a starting premise.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What is the full meaning of nainam chindanti shastrani?</strong>
           <p>
-            Nainam chindanti shastrani is BG 2.23: &ldquo;Weapons cannot cut the atman, fire cannot burn it, water cannot wet it, wind cannot dry it.&rdquo; The verse is making four specific negations about the four classical elements and their effects. The atman is beyond all physical harm, not because it is strong but because it is of a different order of reality than material things. You cannot cut what has no material substance. The verse continues in 2.24 with more adjectives: acchedya (uncuttable), adahya (unburnable), nityah (eternal), sarvagatah (all-pervading), sthanuh (stable), achala (unmoving), sanātana (beginningless).
+            Nainam chindanti shastrani is BG 2.23: &ldquo;Weapons cannot cut the atman, fire cannot burn it, water cannot wet it, wind cannot dry it.&rdquo; The verse names weapons, fire, water and wind, and says none of them can act on the atman, because it is of a different order from the things they act on. The verse continues in 2.24 with more adjectives: acchedya (uncuttable), adahya (unburnable), nityah (eternal), sarvagatah (all-pervading), sthanuh (stable), achala (unmoving), sanātana (eternal).
           </p>
         </div>
 
         <div className="faq-item">
           <strong>Is the Gita&apos;s teaching about death the same as Buddhist teaching?</strong>
           <p>
-            No. The Gita and Buddhism reach opposite conclusions about the self after death. Buddhism teaches anatta (no-self): there is no permanent, unchanging entity that persists. The continuity across lives, in Buddhist thought, is more like the continuity of a flame passed from candle to candle. The Gita teaches the opposite: the atman is precisely the permanent, unchanging entity that persists across bodies. Both traditions use impermanence as a starting point but arrive at different conclusions about what, if anything, is permanent.
+            No. The Gita and Buddhism reach opposite conclusions about the self after death. Buddhism teaches anatta (no-self): there is no permanent, unchanging entity that persists. The continuity across lives, in Buddhist thought, is more like the continuity of a flame passed from candle to candle. The Gita teaches the opposite: the atman is the permanent, unchanging entity that persists across bodies. Both traditions use impermanence as a starting point but arrive at different conclusions about what, if anything, is permanent.
           </p>
         </div>
       </div>

@@ -159,7 +159,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Krishna Quotes — 50 Teachings from the Bhagavad Gita with Verse References",
-    "description": "50 sayings of Lord Krishna from the Bhagavad Gita, each restored to its verse reference and the situation in which Krishna actually spoke it.",
+    "description": "50 sayings of Lord Krishna from the Bhagavad Gita, each restored to its verse reference and the situation in which Krishna spoke it.",
     "datePublished": "2026-07-05",
     "dateModified": "2026-08-01",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/krishna-quotes" },
@@ -197,7 +197,7 @@ const schemas = [
         "name": "What is the most famous Krishna quote from the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The most famous Krishna quote is BG 2.47: karmaṇyevādhikāraste mā phaleṣu kadācana — 'You have the right to your action, but never to its fruits.' It is Krishna's core instruction on karma yoga: act fully, release the outcome, do not use non-attachment as an excuse for inaction. Two other verses are almost as widely quoted: BG 2.20 (the imperishable Self) and BG 18.66 (surrender)."
+          "text": "The most famous Krishna quote is BG 2.47: karmaṇyevādhikāraste mā phaleṣu kadācana: 'You have the right to your action, but never to its fruits.' It is Krishna's core instruction on karma yoga: act fully, release the outcome, do not use non-attachment as an excuse for inaction. Two other verses are almost as widely quoted: BG 2.20 (the imperishable self) and BG 18.66 (surrender)."
         }
       },
       {
@@ -213,7 +213,7 @@ const schemas = [
         "name": "What did Krishna say about love?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Bhagavad Gita does not use the modern romantic sense of love. Krishna's teaching on love is prema and bhakti — a devotional love that unites the individual with the divine. BG 9.29 says Krishna is equal to all beings, but those who worship him with love, he is in them and they in him. BG 12.13-19 lists the qualities of the devotee who is 'dear' to Krishna: free from ill-will, compassionate, equal-minded, steady."
+          "text": "The Bhagavad Gita has little to say about romantic love. Krishna's word for love is bhakti, a devotion that joins the individual to the divine. BG 9.29 says Krishna is equal to all beings, but those who worship him with love, he is in them and they in him. BG 12.13-19 lists the qualities of the devotee who is 'dear' to Krishna: free from ill-will, compassionate, equal-minded, steady."
         }
       },
       {
@@ -221,15 +221,15 @@ const schemas = [
         "name": "What is Krishna's quote about karma?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Krishna's foundational teaching on karma is BG 2.47: act without attachment to fruit. He extends this in BG 3.19 ('perform action without attachment; that way one attains the highest'), BG 4.20 ('having abandoned attachment to fruits, ever content, dependent on nothing, he does nothing at all even while acting'), and BG 18.11 ('one who has renounced the fruit of action is called a true renunciate'). Karma yoga is not the absence of action. It is action performed without craving."
+          "text": "Krishna's foundational teaching on karma is BG 2.47: act without attachment to fruit. He extends this in BG 3.19 ('perform action without attachment; that way one attains the highest'), BG 4.20 ('having abandoned attachment to fruits, ever content, dependent on nothing, he does nothing at all even while acting'), and BG 18.11 ('one who has renounced the fruit of action is called a true renunciate'). Karma yoga is action performed without craving for its fruit."
         }
       },
       {
         "@type": "Question",
-        "name": "Which Krishna quote is the most powerful?",
+        "name": "Which Krishna quote is the most important?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BG 18.66 — sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja — is traditionally called the charama shloka, the ultimate verse. It is Krishna's final instruction: abandon every framework, take refuge in me alone, I will free you from all sins, do not grieve. Vaishnava traditions consider this the most powerful line in the Gita, because it comes at the end of 700 verses of preparation and offers the complete release."
+          "text": "BG 18.66 (sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja) is called the charama shloka, the ultimate verse, in the Śrī Vaiṣṇava tradition. It is Krishna's last instruction: abandon all dharmas, take refuge in me alone, I will free you from all sins, do not grieve. Others give that place to 2.47; there is no single agreed answer."
         }
       },
       {
@@ -237,7 +237,7 @@ const schemas = [
         "name": "How should I use Krishna quotes in daily life?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Read one verse in the morning with its Sanskrit, translation, and short commentary. Sit with it before starting your day. Do not try to apply many verses at once. The Gita is not a productivity system; it is a slow reshaping of how you meet action, fear, and loss. Return to the same verse for a week if it pulls at you. Memorize BG 2.47 and BG 18.66. Any other verse is a bonus."
+          "text": "Read one verse in the morning with its Sanskrit, translation, and short commentary. Sit with it before starting your day. Apply one verse at a time. The Gita works slowly, on how you meet action, fear and loss. Return to the same verse for a week if it pulls at you. Memorize BG 2.47 and BG 18.66. Any other verse is a bonus."
         }
       }
     ]
@@ -274,7 +274,7 @@ export default function KrishnaQuotesPage() {
             <em>50 Teachings from the Gita</em>
           </h1>
           <p className="article-subtitle">
-            Most Krishna quotes online are stripped of the moment they were spoken. Here are fifty sayings of Lord Krishna from the Bhagavad Gita &mdash; each with its verse reference, an honest translation, and the situation Arjuna was in when Krishna said it.
+            Most Krishna quotes online come without the moment they were spoken in. Here are fifty sayings of Lord Krishna from the Bhagavad Gita, each with its verse reference, a translation, and the situation Arjuna was in when Krishna said it.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -283,7 +283,7 @@ export default function KrishnaQuotesPage() {
             <span className="meta-sep">·</span>
             <span className="meta-item">~18 min read</span>
             <span className="meta-sep">·</span>
-            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Published July 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -298,34 +298,34 @@ export default function KrishnaQuotesPage() {
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>Krishna as Arjuna&apos;s charioteer &mdash; every quote in this article was spoken between the two armies at Kurukshetra</figcaption>
+          <figcaption>Krishna as Arjuna&apos;s charioteer. Every quote in this article was spoken between the two armies at Kurukshetra</figcaption>
         </figure>
 
         <p className="lead">
-          A Krishna quote on Instagram usually comes without a chapter number. It floats in a nice serif over a sunset, and it may not be from Krishna at all. Many of them are paraphrases, some are from later devotional literature, and a few are simply invented. The Bhagavad Gita, where Krishna actually speaks, is a very specific text: 700 Sanskrit verses delivered to a paralyzed warrior on a battlefield. Every real Krishna quote has a number attached to it, and every number sits inside a scene.
+          A Krishna quote on Instagram usually comes without a chapter number. It floats in a nice serif over a sunset, and it may not be from Krishna at all. Many of them are paraphrases, some are from later devotional literature, and a few are simply invented. The Bhagavad Gita, where Krishna speaks, is a specific text: 700 Sanskrit verses delivered to a paralyzed warrior on a battlefield. Every real Krishna quote has a number attached to it, and every number sits inside a scene.
         </p>
         <p>
-          This piece restores those numbers. Fifty sayings of Lord Krishna, organized into ten themes, each traceable to a chapter and verse. For the most weight-bearing verses, you will see the Sanskrit, the transliteration, an English meaning, and a short note on why it matters. For the rest, a shorter format: the reference, the line, and the situation in which Krishna said it. The point is not to worship the verses. The point is to hear Krishna clearly enough that you can carry him into a decision.
+          This piece restores those numbers. Fifty sayings of Lord Krishna, organized into ten themes, each traceable to a chapter and verse. For the most weight-bearing verses, you will see the Sanskrit, the transliteration, an English meaning, and a short note on its context. For the rest, a shorter format: the reference, the line, and the situation in which Krishna said it. The aim is to hear Krishna clearly enough to carry a verse into a decision.
         </p>
 
         <div className="highlight-box">
           <h3>How this list is organized</h3>
           <p>
-            Ten themes, five quotes each. Action and duty. The eternal Self. Detachment and peace. Devotion. Meditation. Wisdom. Fear and grief. Character. Surrender. The divine everywhere. At the end, a short note on the one Krishna quote that is arguably his most important, and yet almost never appears on Instagram.
+            Ten themes, five quotes each: action and duty, the eternal self, detachment and peace, devotion, meditation, wisdom, fear and grief, character, surrender, and the divine everywhere. At the end, a short note on 18.66, Krishna&apos;s last instruction.
           </p>
         </div>
 
         <h2>How to Read a Krishna Quote Properly</h2>
         <p>
-          Before the list, a small orientation. The Bhagavad Gita is written as a dialogue. Krishna is not lecturing to a crowd; he is answering one specific man &mdash; Arjuna &mdash; who has just refused to fight the war he came for. Every verse Krishna speaks is either a correction, a promise, a metaphysical clarification, or a reassurance. Reading a Krishna quote out of context is a bit like reading one line from a therapy session and treating it as universal wisdom. Sometimes it is. Sometimes it is a very particular thing said to a very particular fear.
+          Before the list, a small orientation. The Bhagavad Gita is written as a dialogue. Krishna is not lecturing to a crowd; he is answering one man, Arjuna, who has just refused to fight the war he came for. Every verse Krishna speaks is either a correction, a promise, a metaphysical clarification, or a reassurance. Reading a Krishna quote out of context is like reading one line of a letter written to someone else. Sometimes the line holds for everyone, and sometimes it was said to one man&apos;s particular fear.
         </p>
         <p>
-          The verse reference matters because it lets you check. &ldquo;BG 2.47&rdquo; means chapter 2, verse 47. If someone shares a Krishna quote and cannot produce that reference, you are almost certainly looking at a paraphrase or an invention. Every quote below carries its number. If any pull at you, open the Gita and read the ten verses around them. The context adds a layer no quote card can capture.
+          The verse reference matters because it lets you check. &ldquo;BG 2.47&rdquo; means chapter 2, verse 47. If someone shares a Krishna quote and cannot produce that reference, you are almost certainly looking at a paraphrase or an invention. Every quote below carries its number. If any pull at you, open the Gita and read the ten verses around them. 
         </p>
 
         <h2>On Action and Duty</h2>
         <p>
-          The Gita begins as a manual for someone who has stopped being able to act. Arjuna cannot lift his bow. Krishna&apos;s first extended teaching is not about Bhagavan or the atman &mdash; it is about work. What action is, why it cannot be avoided, and how to perform it without being destroyed by the outcome. This is karma yoga, and BG 2.47 is its most concentrated line.
+          The Gita begins as a manual for someone who has stopped being able to act. Arjuna cannot lift his bow. Krishna&apos;s first teaching is about the atman (2.11–30). Then comes Arjuna&apos;s duty as a warrior (2.31–38), and from 2.39, how to act. What action is, why it cannot be avoided, and how to perform it without being destroyed by the outcome. This is karma yoga, and BG 2.47 is its best-known line.
         </p>
 
         <ShlokaCard
@@ -335,14 +335,14 @@ export default function KrishnaQuotesPage() {
           meaningLabel="Translation"
           meaning="You have the right to your action, but never to its fruits. Do not let the fruit be your motive. And do not become attached to inaction either."
           insightLabel="Context"
-          insight="Krishna to Arjuna, chapter 2. Arjuna has just argued at length that fighting the war is wrong because the outcome will be terrible. Krishna's answer is to reframe the whole question. You do not control outcomes. You only control the act. Do the act well; release the fruit. And the fourth line is Krishna anticipating the misreading — 'if I should not care about results, why work?' He closes that door before Arjuna can open it."
-          essence="Act fully. Release the outcome. Do not disengage."
+          insight="Chapter 2. Arjuna has just argued at length that fighting the war is wrong because the outcome will be terrible. Krishna reframes the question: Arjuna controls the act and has no claim on the outcome. The fourth line answers the obvious objection, 'if I should not care about results, why work?', before Arjuna can raise it."
+          essence="Your right is to the work, never to its results; do not turn to inaction."
         />
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 3.19</div>
           <div className="quote-text">&ldquo;Therefore, perform your work without attachment. That is how one attains the highest.&rdquo;</div>
-          <div className="quote-context">Chapter 3, on why karma yoga is not renunciation. Detachment is not withdrawal &mdash; it is the shape of correct action.</div>
+          <div className="quote-context">Chapter 3, on karma yoga. Krishna asks for work done without attachment, and keeps Arjuna working.</div>
         </div>
 
         <ShlokaCard
@@ -352,25 +352,25 @@ export default function KrishnaQuotesPage() {
           meaningLabel="Translation"
           meaning="Your own duty, done imperfectly, is better than another&apos;s duty done well. Better to die in your own dharma; another&apos;s dharma is fraught with fear."
           insightLabel="Context"
-          insight="Krishna is answering Arjuna's temptation to abandon his role and become a wandering ascetic instead of fighting. The verse cuts against the fantasy that a different life would have been the right one. Your assigned work, even done badly, is the door. Someone else's work, even done brilliantly, is not."
-          essence="Your own imperfect life is your path. Do not envy another&apos;s."
+          insight="Krishna is answering Arjuna's temptation to abandon his role and become a wandering ascetic instead of fighting. In 2.5 Arjuna said it would be better to live by begging than to kill his teachers. Krishna&apos;s reply here is that a warrior&apos;s own duty, done imperfectly, is better than another&apos;s done well."
+          essence="Better your own dharma, imperfectly done, than another&apos;s done well."
         />
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 4.20</div>
-          <div className="quote-text">&ldquo;Having abandoned attachment to the fruit of action, ever content, dependent on nothing &mdash; he does nothing at all, even while acting.&rdquo;</div>
-          <div className="quote-context">Chapter 4, describing the karma yogi. The paradox: full engagement with work, zero karmic bondage.</div>
+          <div className="quote-text">&ldquo;Having abandoned attachment to the fruit of action, ever content, dependent on nothing, he does nothing at all, even while acting.&rdquo;</div>
+          <div className="quote-context">Chapter 4, describing the karma yogi, who works fully and is not bound by the work.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 18.11</div>
           <div className="quote-text">&ldquo;It is not possible for an embodied being to give up action entirely. But one who gives up the fruit of action is truly called a renunciate.&rdquo;</div>
-          <div className="quote-context">Chapter 18, Krishna&apos;s closing argument. True renunciation is not leaving the world; it is releasing the grip on outcomes while remaining in it.</div>
+          <div className="quote-context">Chapter 18, Krishna&apos;s closing argument. The renunciate, on this definition, keeps working and gives up the fruit.</div>
         </div>
 
         <h2>On the Eternal Self</h2>
         <p>
-          Arjuna&apos;s grief is grief for people who are about to die. Krishna&apos;s first correction is metaphysical: what you fundamentally are cannot be killed. This is the Gita&apos;s deepest claim, and it is repeated more times than any other. The five verses below are the clearest statements of the imperishable Self.
+          Arjuna&apos;s grief is grief for people who are about to die. Krishna&apos;s first correction is about the self: the atman cannot be killed. The five verses below are his plainest statements of it.
         </p>
 
         <ShlokaCard
@@ -378,16 +378,16 @@ export default function KrishnaQuotesPage() {
           sanskrit="न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"
           iast="na jāyate mriyate vā kadācin nāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||"
           meaningLabel="Translation"
-          meaning="It is never born, and it never dies. It did not come into being, nor will it ever cease to be. Unborn, eternal, everlasting, ancient &mdash; it is not killed when the body is killed."
+          meaning="It is never born, and it never dies. It did not come into being, nor will it ever cease to be. Unborn, eternal, everlasting, ancient: it is not killed when the body is killed."
           insightLabel="Context"
-          insight="Chapter 2, Krishna directly correcting Arjuna's fear of causing death. The verse is a repudiation of every version of grief that is grief for lost being. Something in you was not born and cannot end. What can end &mdash; the body, the personality, the story — is not what you fundamentally are."
-          essence="The Self is unborn, undying, imperishable."
+          insight="Chapter 2, Krishna correcting Arjuna&apos;s fear of causing death. The body, the personality and the life story can end; the verse says the self was never born and cannot end."
+          essence="The self is never born and never dies; it is not killed when the body is killed."
         />
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 2.23</div>
-          <div className="quote-text">&ldquo;Weapons cannot cut it. Fire cannot burn it. Water cannot wet it. Wind cannot dry it.&rdquo;</div>
-          <div className="quote-context">Chapter 2. Krishna listing the four elements and denying each one power over the Self. A verse memorized by children in traditional Vedanta households.</div>
+          <div className="quote-text">&ldquo;Weapons cannot cut it, fire cannot burn it, water cannot wet it, and wind cannot dry it.&rdquo;</div>
+          <div className="quote-context">Chapter 2. Krishna names weapons, fire, water and wind, and denies each one power over the self.</div>
         </div>
 
         <div className="quote-inline">
@@ -399,7 +399,7 @@ export default function KrishnaQuotesPage() {
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 2.27</div>
           <div className="quote-text">&ldquo;For one who is born, death is certain. For one who is dead, birth is certain. Therefore, do not grieve over what is unavoidable.&rdquo;</div>
-          <div className="quote-context">Chapter 2, offered as a practical consolation. Even without metaphysics, the cycle itself makes grief a category error.</div>
+          <div className="quote-context">Chapter 2, offered as a practical consolation that works even for someone who doubts the eternal self: death is certain for the born, so grieving it is misplaced.</div>
         </div>
 
         <ShlokaCard
@@ -407,15 +407,15 @@ export default function KrishnaQuotesPage() {
           sanskrit="ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥"
           iast="mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ | manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati ||"
           meaningLabel="Translation"
-          meaning="An eternal fragment of my own being becomes the individual self in the world of the living, drawing to itself the mind and the five senses that abide in nature."
+          meaning="An eternal fragment of my own being becomes the individual self in the realm of the living, drawing to itself the mind and the five senses that abide in nature."
           insightLabel="Context"
-          insight="Chapter 15, called the beeja shloka — the seed verse. Krishna finally names what the individual atman is. Not identical with Bhagavan. Not separate from Bhagavan. An eternal fragment. Every other teaching in the Gita rests on this claim about identity."
-          essence="You are an eternal fragment of the divine, temporarily embodied."
+          insight="Chapter 15. Krishna names the individual atman mamaivāṃśaḥ sanātanaḥ, an eternal part of himself. Commentators differ on how to read &apos;part&apos;: Advaita takes the separateness as only apparent, while Vaishnava schools take it as real."
+          essence="An eternal part of Krishna becomes the living self and draws to itself the mind and senses."
         />
 
         <h2>On Detachment and Peace</h2>
         <p>
-          The Gita&apos;s portrait of the wise person is not stoic and joyless. It is deeply steady. Krishna calls this figure the <em>sthitaprajna</em> &mdash; the one of settled wisdom &mdash; and describes them at length in chapter 2. Peace, in the Gita, is not the absence of activity. It is the absence of turbulence about outcomes.
+          The Gita&apos;s wise person is steady. Krishna calls this figure the <em>sthitaprajna</em>, the one of settled wisdom, and describes them at length in 2.55&ndash;72. Peace, in these verses, is compatible with activity; it comes from being undisturbed by outcomes.
         </p>
 
         <ShlokaCard
@@ -425,8 +425,8 @@ export default function KrishnaQuotesPage() {
           meaningLabel="Translation"
           meaning="Dwelling on objects of the senses breeds attachment. From attachment arises desire. From desire, anger is born."
           insightLabel="Context"
-          insight="Chapter 2. Krishna's diagnosis of how a mind loses its peace: not by big events, but by small repeated dwellings. Attention shapes attachment; attachment shapes craving; craving, thwarted, becomes anger. The chain begins in what you keep looking at."
-          essence="Watch your attention. It becomes attachment, which becomes suffering."
+          insight="Chapter 2. Krishna&apos;s account of how a mind loses its peace begins with small, repeated dwelling. Attention breeds attachment, attachment breeds craving, and craving, thwarted, becomes anger. Verse 2.63 continues the chain down to ruin."
+          essence="Dwelling on sense objects breeds attachment; attachment breeds desire, and desire, anger."
         />
 
         <div className="quote-inline">
@@ -443,19 +443,19 @@ export default function KrishnaQuotesPage() {
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 4.22</div>
-          <div className="quote-text">&ldquo;Content with whatever comes unsought, beyond the pairs of opposites, free from envy, equal in success and failure &mdash; even acting, he is not bound.&rdquo;</div>
-          <div className="quote-context">Chapter 4. Krishna&apos;s working definition of freedom in action. Not detachment from the world, but freedom from being tossed by the world.</div>
+          <div className="quote-text">&ldquo;Content with whatever comes unsought, beyond the pairs of opposites, free from envy, equal in success and failure, even acting, he is not bound.&rdquo;</div>
+          <div className="quote-context">Chapter 4. Krishna&apos;s working definition of freedom in action: content with what comes, and not tossed about by success or failure.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 6.7</div>
-          <div className="quote-text">&ldquo;For the one who has mastered themselves and is at peace, the Supreme Self is directly present &mdash; in cold and heat, joy and sorrow, honor and dishonor.&rdquo;</div>
+          <div className="quote-text">&ldquo;For the one who has mastered themselves and is at peace, the Supreme Self is directly present, in cold and heat, joy and sorrow, honor and dishonor.&rdquo;</div>
           <div className="quote-context">Chapter 6, on meditation. The steady person does not lose the divine when circumstances change.</div>
         </div>
 
         <h2>On Devotion</h2>
         <p>
-          Chapters 7 through 12 are the emotional heart of the Gita. Krishna moves from metaphysics into relationship. Devotion &mdash; <em>bhakti</em> &mdash; is the direct path, and it does not require complicated ritual or philosophical sophistication. What it requires is a whole turning of the heart.
+          In chapters 7 through 12 Krishna speaks more of relationship than of metaphysics. Devotion, <em>bhakti</em>, asks for no complicated ritual or learning. It asks for the whole heart.
         </p>
 
         <ShlokaCard
@@ -465,8 +465,8 @@ export default function KrishnaQuotesPage() {
           meaningLabel="Translation"
           meaning="For those who worship me with undivided mind, thinking of nothing else, ever united with me, I carry what they need and preserve what they have."
           insightLabel="Context"
-          insight="Chapter 9. Krishna's most personal promise. Yoga-kshema means both acquisition and preservation. For the devotee who has truly turned toward him, Krishna assumes responsibility for the maintenance of their life. This is the verse that makes the Gita feel like a covenant, not a philosophy."
-          essence="Turn fully toward me. I carry the weight of your becoming."
+          insight="Chapter 9. Yoga-kṣema means acquiring and keeping. For those who worship him with undivided minds, Krishna says, he brings what they lack and protects what they have (yoga-kṣemaṃ vahāmy aham)."
+          essence="For those always devoted to me, I carry what they lack and preserve what they have."
         />
 
         <ShlokaCard
@@ -474,16 +474,16 @@ export default function KrishnaQuotesPage() {
           sanskrit="पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति । तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥"
           iast="patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati | tadahaṃ bhaktyupahṛtamaśnāmi prayatātmanaḥ ||"
           meaningLabel="Translation"
-          meaning="A leaf, a flower, a fruit, water &mdash; whoever offers me these with devotion, offered from a pure heart, I accept."
+          meaning="A leaf, a flower, a fruit, water: whoever offers me these with devotion, offered from a pure heart, I accept."
           insightLabel="Context"
-          insight="Chapter 9, on the accessibility of bhakti. Krishna is dismantling the idea that only elaborate ritual reaches him. What he receives is not the offering — it is the love in the offering. A leaf given with devotion is fully enough."
-          essence="Devotion does not need scale. It needs sincerity."
+          insight="Chapter 9, on the accessibility of bhakti. Krishna answers the idea that only elaborate ritual reaches him. He says he accepts a leaf, a flower, a fruit or water, when it is offered with devotion."
+          essence="A leaf, a flower, a fruit or water offered with devotion, Krishna accepts."
         />
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 9.31</div>
           <div className="quote-text">&ldquo;My devotee never perishes. Know this for certain, Arjuna: proclaim it aloud.&rdquo;</div>
-          <div className="quote-context">Chapter 9, spoken as an oath. One of the strongest promises Krishna makes in the entire Gita.</div>
+          <div className="quote-context">Chapter 9. Krishna tells Arjuna to declare it boldly (pratijānīhi).</div>
         </div>
 
         <ShlokaCard
@@ -493,19 +493,19 @@ export default function KrishnaQuotesPage() {
           meaningLabel="Translation"
           meaning="One who bears no ill-will to any being, who is friendly and compassionate, free from &lsquo;mine&rsquo; and &lsquo;I,&rsquo; equal in pain and pleasure, forgiving."
           insightLabel="Context"
-          insight="Chapter 12, the first verse of Krishna's portrait of the devotee he calls dear. The list is startlingly ethical rather than mystical. It is about how the person treats others, how they hold gain and loss, whether they carry enmity. Devotion, in the Gita, is measured by character."
-          essence="The devotee&apos;s mark is not intensity of belief. It is character."
+          insight="Chapter 12, the first verse of Krishna's portrait of the devotee he calls dear. The list is about how the person treats others, how they hold gain and loss, and whether they carry enmity. In this chapter, devotion shows in character."
+          essence="The devotee dear to Krishna bears no ill-will, is kind, and is free of &lsquo;mine&rsquo; and &lsquo;I&rsquo;."
         />
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 12.15</div>
-          <div className="quote-text">&ldquo;One who does not disturb the world and is not disturbed by it, free from elation, envy, fear, and anxiety &mdash; that one is dear to me.&rdquo;</div>
-          <div className="quote-context">Chapter 12, continuing the portrait. The devotee is a person the world can rest against and who does not need to disturb others.</div>
+          <div className="quote-text">&ldquo;One who does not disturb the world and is not disturbed by it, free from elation, envy, fear, and anxiety, that one is dear to me.&rdquo;</div>
+          <div className="quote-context">Chapter 12, continuing the portrait of the devotee Krishna calls dear.</div>
         </div>
 
         <h2>On Meditation and the Mind</h2>
         <p>
-          Chapter 6 is the Gita&apos;s meditation manual. Krishna teaches posture, breath, and the practical technique &mdash; and then Arjuna raises the objection anyone who has tried to meditate raises. &ldquo;The mind is restless. Restraining it is like trying to hold the wind.&rdquo; Krishna&apos;s answer is one of the most quoted lines in the whole book.
+          Chapter 6 is the Gita&apos;s meditation manual. Krishna teaches the seat, the posture and the technique, and then Arjuna raises the objection anyone who has tried to meditate raises (6.34). &ldquo;The mind is restless. Restraining it is like trying to hold the wind.&rdquo; Krishna&apos;s answer is 6.35.
         </p>
 
         <ShlokaCard
@@ -515,8 +515,8 @@ export default function KrishnaQuotesPage() {
           meaningLabel="Translation"
           meaning="Lift yourself by your own Self. Do not sink into despair. You alone are your friend, and you alone are your enemy."
           insightLabel="Context"
-          insight="Chapter 6. One of the clearest personal-responsibility verses in the Gita. Krishna is saying: no one else is coming to raise you out of this. The same mind that pulls you down is the mind that can lift you. Which one it becomes depends on whether you befriend or abandon yourself."
-          essence="Nobody else can lift you. Be your own friend."
+          insight="Chapter 6. The same self that pulls you down can lift you, and the next verse (6.6) says it is a friend to the one who has mastered it and an enemy to the one who has not."
+          essence="Lift yourself by yourself; you are your own friend and your own enemy."
         />
 
         <ShlokaCard
@@ -526,31 +526,31 @@ export default function KrishnaQuotesPage() {
           meaningLabel="Translation"
           meaning="Undoubtedly, the mind is restless and hard to control. But by consistent practice and by dispassion, it can be held."
           insightLabel="Context"
-          insight="Chapter 6, Krishna's response to Arjuna's honest complaint that meditation is impossible. Krishna does not deny the difficulty. He offers two tools: abhyasa (steady practice) and vairagya (letting go of what agitates the mind). Not talent, not intensity. Consistency plus release."
-          essence="Practice, and letting go. Every day. The mind eventually settles."
+          insight="Chapter 6, Krishna's response to Arjuna's honest complaint that meditation is impossible. Krishna agrees it is difficult, and offers two tools: abhyāsa (steady practice) and vairāgya (dispassion)."
+          essence="The mind is restless and hard to hold, but practice and dispassion can hold it."
         />
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 6.19</div>
-          <div className="quote-text">&ldquo;As a lamp in a windless place does not flicker &mdash; that is the image of the yogi whose mind is controlled and rests in the Self.&rdquo;</div>
-          <div className="quote-context">Chapter 6, one of the Gita&apos;s most beautiful images of meditative stillness.</div>
+          <div className="quote-text">&ldquo;As a lamp in a windless place does not flicker, that is the image of the yogi whose mind is controlled and rests in the Self.&rdquo;</div>
+          <div className="quote-context">Chapter 6, an image of the meditating mind held still.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 6.26</div>
           <div className="quote-text">&ldquo;Wherever the restless, unsteady mind wanders, from there let one bring it back and place it in the Self.&rdquo;</div>
-          <div className="quote-context">Chapter 6. The whole meditation instruction in one sentence. Notice the wandering. Bring the mind back. Again.</div>
+          <div className="quote-context">Chapter 6. The meditation instruction in one sentence: each time the mind wanders, bring it back.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 6.30</div>
-          <div className="quote-text">&ldquo;One who sees me everywhere and sees everything in me &mdash; I am never lost to them, and they are never lost to me.&rdquo;</div>
-          <div className="quote-context">Chapter 6. Meditation, in the Gita, is not withdrawal. Its fruit is seeing the divine woven through the world.</div>
+          <div className="quote-text">&ldquo;One who sees me everywhere and sees everything in me, I am never lost to them, and they are never lost to me.&rdquo;</div>
+          <div className="quote-context">Chapter 6. The fruit of meditation here is seeing Krishna in everything.</div>
         </div>
 
         <h2>On Wisdom and Knowledge</h2>
         <p>
-          Krishna calls himself a teacher of an ancient lineage. The wisdom he offers is not new; it is being restored. Chapter 4 places the whole teaching in a genealogy that runs back to the beginning of time. The verses below trace how Krishna talks about knowledge itself.
+          Krishna presents himself as the source of an old teaching that he is now restoring. Chapter 4 traces it back through a line of kings to Vivasvān, the sun (4.1&ndash;2). The verses below trace how Krishna talks about knowledge itself.
         </p>
 
         <ShlokaCard
@@ -560,8 +560,8 @@ export default function KrishnaQuotesPage() {
           meaningLabel="Translation"
           meaning="Whenever dharma declines and adharma rises, Arjuna, I bring myself forth."
           insightLabel="Context"
-          insight="Chapter 4. Krishna's most famous statement of the avatar doctrine. It is not a claim that Bhagavan intervenes casually. It is a claim that dharma is not left to collapse. When the balance is broken badly enough, something shows up to restore it."
-          essence="Dharma is not abandoned. When it falls, the divine returns to raise it."
+          insight="Chapter 4. Krishna&apos;s best-known statement of the avatar doctrine: when dharma declines badly enough, he takes birth to restore it."
+          essence="Whenever dharma declines and adharma rises, Krishna brings himself forth."
         />
 
         <ShlokaCard
@@ -569,22 +569,22 @@ export default function KrishnaQuotesPage() {
           sanskrit="परित्राणाय साधूनां विनाशाय च दुष्कृताम् । धर्मसंस्थापनार्थाय सम्भवामि युगे युगे ॥"
           iast="paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām | dharmasaṃsthāpanārthāya sambhavāmi yuge yuge ||"
           meaningLabel="Translation"
-          meaning="To protect the good, to destroy the wicked, to re-establish dharma &mdash; I come into being, age after age."
+          meaning="To protect the good, to destroy the wicked, to re-establish dharma, I come into being, age after age."
           insightLabel="Context"
-          insight="Chapter 4, immediately following BG 4.7. This is Krishna's stated purpose across every avatar. Not to save souls in a Christian sense, but to hold the world's dharma steady. Yuge yuge — age after age — makes the intervention cyclical, not one-time."
-          essence="The divine returns, age after age, to hold dharma steady."
+          insight="Chapter 4, immediately following BG 4.7. Krishna gives three purposes: protect the good, destroy the wicked, and re-establish dharma. Yuge yuge, age after age, makes his coming recurrent."
+          essence="To protect the good, destroy the wicked and restore dharma, Krishna comes age after age."
         />
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 4.37</div>
           <div className="quote-text">&ldquo;As a blazing fire reduces wood to ash, the fire of knowledge reduces all karmas to ash.&rdquo;</div>
-          <div className="quote-context">Chapter 4. Genuine self-knowledge, when it arrives, dissolves the karmic residue of countless past actions. Not because they never happened &mdash; because the actor is now differently understood.</div>
+          <div className="quote-context">Chapter 4. Self-knowledge, once it comes, burns up the karma of past actions.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 4.38</div>
           <div className="quote-text">&ldquo;Nothing in this world purifies like knowledge. One who is perfected in yoga finds it within, in due course, by their own effort.&rdquo;</div>
-          <div className="quote-context">Chapter 4. Wisdom is not deposited from outside. It ripens inside a life that has been arranged for its arrival.</div>
+          <div className="quote-context">Chapter 4. The verse says the one perfected in yoga finds this knowledge in themselves, in time.</div>
         </div>
 
         <ShlokaCard
@@ -594,25 +594,25 @@ export default function KrishnaQuotesPage() {
           meaningLabel="Translation"
           meaning="There is nothing higher than me, Arjuna. All this is strung on me like pearls on a thread."
           insightLabel="Context"
-          insight="Chapter 7. Krishna moves from teaching about knowledge to being it. The image is precise: not that things are him, but that they are held together by him. The thread is invisible, but without it there is no necklace."
-          essence="The world is not separate from the divine. It is strung on it."
+          insight="Chapter 7. The image is of a thread holding pearls: things are strung on Krishna and held together by him. The thread is unseen, and without it the pearls fall apart."
+          essence="Nothing is higher than Krishna; all this is strung on him like pearls on a thread."
         />
 
         <h2>On Fear and Grief</h2>
         <p>
-          Arjuna&apos;s original problem is fear disguised as compassion. Much of the first two chapters is Krishna dismantling the disguise. The verses below are Krishna&apos;s clearest lines about fear and grief &mdash; and the strange fact that his own solution is not always to argue you out of them, but to invite you into something larger.
+          Arjuna&apos;s original problem is fear disguised as compassion. Much of the first two chapters is Krishna dismantling the disguise. The verses below are Krishna&apos;s plainest lines about fear and grief. Some argue Arjuna out of them; others offer him refuge instead.
         </p>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 2.14</div>
           <div className="quote-text">&ldquo;The contact of the senses with objects gives cold and heat, pleasure and pain. They come and go; they are impermanent. Learn to bear them, Arjuna.&rdquo;</div>
-          <div className="quote-context">Chapter 2. Not a promise that pain will end &mdash; a teaching that pain is weather, and that endurance is possible when you know it is weather.</div>
+          <div className="quote-context">Chapter 2. Krishna says sensations of heat and cold, pleasure and pain, come and go, and asks Arjuna to bear them.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 2.38</div>
           <div className="quote-text">&ldquo;Treating pleasure and pain, gain and loss, victory and defeat as equal, engage in battle. This way you will not incur sin.&rdquo;</div>
-          <div className="quote-context">Chapter 2, one of Krishna&apos;s most direct instructions on equanimity. The battle is the specific one on Kurukshetra; the principle is universal.</div>
+          <div className="quote-context">Chapter 2, a direct instruction on equanimity. The battle is the specific one on Kurukshetra; the principle is universal.</div>
         </div>
 
         <ShlokaCard
@@ -620,68 +620,68 @@ export default function KrishnaQuotesPage() {
           sanskrit="मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः । निर्वैरः सर्वभूतेषु यः स मामेति पाण्डव ॥"
           iast="matkarmakṛn matparamo madbhaktaḥ saṅgavarjitaḥ | nirvairaḥ sarvabhūteṣu yaḥ sa mām eti pāṇḍava ||"
           meaningLabel="Translation"
-          meaning="One who works for me, holds me as the highest, is devoted to me, free of attachment and without enmity toward any being &mdash; that one comes to me, Arjuna."
+          meaning="One who works for me, holds me as the highest, is devoted to me, free of attachment and without enmity toward any being, that one comes to me, Arjuna."
           insightLabel="Context"
-          insight="Chapter 11, the last verse after the cosmic vision. Arjuna has just seen Krishna's terrible universal form. This verse is Krishna offering the way back: after seeing the divine as time itself, this is how you keep walking toward it. Traditional commentators call it the summary of the whole Gita in one line."
-          essence="Work for me. Hold me as highest. No attachment. No enmity. Come."
+          insight="Chapter 11, the last verse after the cosmic vision. Arjuna has just seen Krishna's terrible universal form. Here Krishna gives the way back to him after the vision of himself as time. Śaṅkara&apos;s commentary treats this verse as the essence of the whole Gita."
+          essence="Whoever works for me, devoted, unattached and without enmity toward any being, comes to me."
         />
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 18.58</div>
-          <div className="quote-text">&ldquo;Fix your mind on me, and by my grace you will cross every difficulty. If, through egoism, you refuse to listen &mdash; you will be lost.&rdquo;</div>
-          <div className="quote-context">Chapter 18. Krishna is nearly finished. He is warning Arjuna that the offer has a shape: it requires taking it.</div>
+          <div className="quote-text">&ldquo;Fix your mind on me, and by my grace you will cross every difficulty. If, through egoism, you refuse to listen, you will be lost.&rdquo;</div>
+          <div className="quote-context">Chapter 18. Near the end, Krishna warns Arjuna that the offer has to be taken up.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 18.66</div>
           <div className="quote-text">&ldquo;Abandon every duty, take refuge in me alone. I will free you from all sins. Do not grieve.&rdquo;</div>
-          <div className="quote-context">Chapter 18, Krishna&apos;s final instruction. See the closing section of this article for why this is the quote Krishna nobody actually quotes.</div>
+          <div className="quote-context">Chapter 18, Krishna&apos;s last instruction. The closing section of this article looks at it more closely.</div>
         </div>
 
         <h2>On Character</h2>
         <p>
-          Chapter 16 divides human tendencies into two: the divine and the demonic. It is one of the Gita&apos;s most direct portraits of what a good person looks like. Chapter 12 does the same in the devotional key. The five below are Krishna&apos;s specifications for character.
+          Chapter 16 divides human tendencies into two: the divine and the demonic. It lists, quality by quality, what a good person looks like. Chapter 12 does the same in the devotional key. The five below are Krishna&apos;s specifications for character.
         </p>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 16.1</div>
           <div className="quote-text">&ldquo;Fearlessness, purity of heart, steadiness in knowledge and yoga, generosity, self-control, sacrifice, study, austerity, straightforwardness&hellip;&rdquo;</div>
-          <div className="quote-context">Chapter 16, the opening of Krishna&apos;s divine qualities list. Notice fearlessness is first. Everything else rests on it.</div>
+          <div className="quote-context">Chapter 16, the opening of Krishna&apos;s list of divine qualities, which begins with fearlessness.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 16.2</div>
           <div className="quote-text">&ldquo;Non-violence, truthfulness, freedom from anger, renunciation, tranquility, absence of slander, compassion for all beings, freedom from greed, gentleness, modesty, steadiness&hellip;&rdquo;</div>
-          <div className="quote-context">Chapter 16, continuing the list. Compassion and gentleness sit next to steadiness &mdash; character is not fierce or soft alone. It is both.</div>
+          <div className="quote-context">Chapter 16, continuing the list. Compassion and gentleness sit next to steadiness on the same list.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 16.3</div>
-          <div className="quote-text">&ldquo;Vigor, forgiveness, fortitude, cleanliness, freedom from malice, freedom from pride &mdash; these are the qualities of one born to the divine state.&rdquo;</div>
-          <div className="quote-context">Chapter 16, closing the divine qualities list. Notice that both forgiveness and vigor appear. Character in the Gita is not one-sided.</div>
+          <div className="quote-text">&ldquo;Vigor, forgiveness, fortitude, cleanliness, freedom from malice, freedom from pride, these are the qualities of one born to the divine state.&rdquo;</div>
+          <div className="quote-context">Chapter 16, closing the divine qualities list. Forgiveness and vigour appear side by side.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 12.14</div>
-          <div className="quote-text">&ldquo;Ever content, steady in meditation, self-controlled, firm in conviction, with mind and intellect surrendered to me &mdash; my devotee is dear to me.&rdquo;</div>
-          <div className="quote-context">Chapter 12. Contentment is placed first. Krishna is saying: it starts there.</div>
+          <div className="quote-text">&ldquo;Ever content, steady in meditation, self-controlled, firm in conviction, with mind and intellect surrendered to me, my devotee is dear to me.&rdquo;</div>
+          <div className="quote-context">Chapter 12. Contentment comes first in this verse.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 12.17</div>
-          <div className="quote-text">&ldquo;One who neither rejoices nor hates, neither mourns nor desires, who has given up both good and bad, filled with devotion &mdash; that one is dear to me.&rdquo;</div>
-          <div className="quote-context">Chapter 12. The most demanding line in the devotee portrait. Krishna is asking for a whole releasing of the emotional grip, not just moderation.</div>
+          <div className="quote-text">&ldquo;One who neither rejoices nor hates, neither mourns nor desires, who has given up both good and bad, filled with devotion, that one is dear to me.&rdquo;</div>
+          <div className="quote-context">Chapter 12. A demanding line in the devotee portrait: no rejoicing, hating, mourning or desiring.</div>
         </div>
 
         <h2>On Surrender</h2>
         <p>
-          Surrender in the Gita is not defeat. It is a specific act, called <em>sharanagati</em>, in which the devotee stops trying to secure themselves through their own efforts and takes refuge in the divine. Every one of the five verses below asks for the same movement: give up the grip, trust the ground.
+          Surrender in the Gita is a specific act, later called <em>sharanagati</em> in the Vaishnava traditions, in which the devotee stops trying to secure themselves through their own efforts and takes refuge in the divine. Each of the five verses below asks for refuge in Krishna.
         </p>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 18.66</div>
           <div className="quote-text">&ldquo;Abandon every duty, take refuge in me alone. I will free you from all sins. Do not grieve.&rdquo;</div>
-          <div className="quote-context">Chapter 18. The <em>charama shloka</em>, the ultimate verse of the Gita. Krishna&apos;s last word. See the closing section for why this quote deserves to be central and rarely is.</div>
+          <div className="quote-context">Chapter 18. The Śrī Vaiṣṇava tradition calls it the <em>charama shloka</em>, the ultimate verse. It is Krishna&apos;s last instruction, though not the last verse of the Gita, which is 18.78.</div>
         </div>
 
         <div className="quote-inline">
@@ -693,35 +693,35 @@ export default function KrishnaQuotesPage() {
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 9.34</div>
           <div className="quote-text">&ldquo;Fix your mind on me, be devoted to me, sacrifice to me, bow to me. Uniting yourself thus, you will come to me.&rdquo;</div>
-          <div className="quote-context">Chapter 9, the closing verse of the &ldquo;royal knowledge&rdquo; chapter. Four verbs, one direction. Simple, complete, hard.</div>
+          <div className="quote-context">Chapter 9, the closing verse of the &ldquo;royal knowledge&rdquo; chapter. Krishna repeats its first line almost exactly in 18.65.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 7.14</div>
           <div className="quote-text">&ldquo;My divine maya, made of the three gunas, is difficult to cross. But those who take refuge in me alone cross beyond it.&rdquo;</div>
-          <div className="quote-context">Chapter 7. Maya &mdash; the illusion that binds &mdash; is not overcome by effort against it. It is dissolved by refuge in what is beyond it.</div>
+          <div className="quote-context">Chapter 7. Māyā, the illusion that binds, is crossed by taking refuge in Krishna.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 8.7</div>
           <div className="quote-text">&ldquo;Therefore at all times remember me and fight. With mind and intellect fixed on me, you will surely come to me.&rdquo;</div>
-          <div className="quote-context">Chapter 8. Krishna&apos;s remarkable synthesis: surrender is not incompatible with battle. Remember me, and act. Both, at once.</div>
+          <div className="quote-context">Chapter 8. Krishna asks Arjuna to remember him and fight at the same time.</div>
         </div>
 
         <h2>On the Divine Everywhere</h2>
         <p>
-          Krishna&apos;s theology is not distant. In chapters 7 and 10 he describes himself as woven into the world &mdash; the taste of water, the light of the sun, the intelligence of the intelligent. These verses are the Gita&apos;s answer to the question, &ldquo;Where is Bhagavan?&rdquo; The answer is: look at what you are already looking at, but see it correctly.
+          In chapters 7 and 10 Krishna describes himself as woven into the world: the taste of water, the light of the sun, the intelligence of the intelligent. These verses are the Gita&apos;s answer to the question, &ldquo;Where is Bhagavan?&rdquo; The answer is: look at what you are already looking at, but see it correctly.
         </p>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 7.8</div>
-          <div className="quote-text">&ldquo;I am the taste in water, Arjuna. I am the light in the sun and the moon. I am the sacred syllable Om in all the Vedas, the sound in ether, the courage in men.&rdquo;</div>
-          <div className="quote-context">Chapter 7, one of the most beloved passages in the Gita. Krishna does not point to a distant heaven. He points to the taste in your glass of water.</div>
+          <div className="quote-text">&ldquo;I am the taste in water, Arjuna. I am the light in the sun and the moon. I am the sacred syllable Om in every Veda, the sound in ether, the courage in men.&rdquo;</div>
+          <div className="quote-context">Chapter 7, a much-loved passage. Krishna points to the taste in your glass of water.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 7.9</div>
-          <div className="quote-text">&ldquo;I am the pure fragrance of the earth and the brilliance in fire. I am the life in all beings and the austerity in ascetics.&rdquo;</div>
+          <div className="quote-text">&ldquo;I am the pure fragrance of the earth and the brilliance in fire. I am the life of every being and the austerity in ascetics.&rdquo;</div>
           <div className="quote-context">Chapter 7, continuing the vibhuti sequence. The divine as the specific excellence of each thing.</div>
         </div>
 
@@ -734,30 +734,30 @@ export default function KrishnaQuotesPage() {
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 10.20</div>
           <div className="quote-text">&ldquo;I am the Self, Arjuna, seated in the heart of every being. I am the beginning, the middle, and also the end of all beings.&rdquo;</div>
-          <div className="quote-context">Chapter 10. The most intimate location Krishna gives himself &mdash; not everywhere in the abstract, but seated in the heart.</div>
+          <div className="quote-context">Chapter 10. Krishna places himself in the heart of every being.</div>
         </div>
 
         <div className="quote-inline">
           <div className="quote-ref">Bhagavad Gita 10.41</div>
-          <div className="quote-text">&ldquo;Whatever is glorious, whatever is beautiful, whatever is mighty &mdash; know that as arising from a spark of my splendor.&rdquo;</div>
-          <div className="quote-context">Chapter 10, closing the vibhuti list. Not that every excellent thing is Bhagavan, but that every excellent thing points toward the source of excellence.</div>
+          <div className="quote-text">&ldquo;Whatever is glorious, whatever is beautiful, whatever is mighty, know that as arising from a spark of my splendor.&rdquo;</div>
+          <div className="quote-context">Chapter 10, closing the vibhuti list. Krishna says everything rests in him (7.7); every excellence is a spark of him (10.41).</div>
         </div>
 
         <div className="pull-quote">
-          Fifty quotes, and Krishna keeps circling four things: what you fundamentally are, how to act inside a life you did not fully choose, how to hold fear and loss, and how to rest in something larger than yourself. Everything else is elaboration.
+          One verse appears twice in this list, under fear and grief and again under surrender: 18.66.
         </div>
 
-        <h2>The Quote Nobody Quotes</h2>
+        <h2>The Last Instruction</h2>
         <p>
-          Something odd about Krishna&apos;s quotes on the internet: BG 2.47 is everywhere, BG 2.20 is everywhere, and BG 18.66 &mdash; his actual final teaching, the one traditional commentators call the ultimate verse &mdash; is almost nowhere. It is not Instagram-friendly. It does not fit on a graphic. And it asks something the other verses do not.
+          BG 2.47 and BG 2.20 turn up on quote cards everywhere. BG 18.66, Krishna&apos;s last instruction, is just as widely quoted in devotional settings, but it rarely appears as a motivational graphic, because it asks for something the other verses do not.
         </p>
 
         <p>
-          BG 18.66: <em>sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja | ahaṃ tvā sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ</em>. &ldquo;Abandon every duty and take refuge in me alone. I will free you from all sins. Do not grieve.&rdquo; After seventeen chapters of specifying what you should do &mdash; act, meditate, worship, cultivate character, hold steady, know the Self &mdash; Krishna&apos;s parting sentence is: release all of that. Take refuge. That is the whole thing.
+          BG 18.66: <em>sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja | ahaṃ tvā sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ</em>. &ldquo;Abandon every duty and take refuge in me alone. I will free you from all sins. Do not grieve.&rdquo; After chapters on what to do (act, meditate, worship, cultivate character, know the self), Krishna asks Arjuna to give up every dharma and rely on him alone. Commentators have long argued over what &ldquo;all dharmas&rdquo; covers.
         </p>
 
         <p>
-          This is why it is not shared. It does not translate into a productivity tip. It does not fit the &ldquo;Krishna motivational quotes&rdquo; genre. It is not empowering in the modern sense. It is quieter and stranger. It asks the devotee to trust rather than to try harder. Karma yoga can be borrowed by anyone; sharanagati has to be lived. If you only ever memorize one Krishna quote, memorize this one, and let the others do their work in its light.
+          The verse asks the devotee for trust in place of more effort, which makes a poor productivity tip. It ends with <em>mā śucaḥ</em>, do not grieve, which answers the grief Arjuna showed in Chapter 1.
         </p>
 
         <div className="hindi-block">
@@ -767,31 +767,32 @@ export default function KrishnaQuotesPage() {
           </div>
         </div>
 
-        <h2>How to Actually Use These</h2>
+        <h2>How to Use These</h2>
         <p>
-          Fifty quotes is more than any person can carry at once. The Gita is not a productivity playbook. Here is a practical way to let these verses actually shape you, rather than scroll past you.
+          Fifty quotes is more than anyone can carry at once. A practical way to let a few of them stay with you:
         </p>
 
         <ul className="practice-list">
           <li>
-            <span><strong>Memorize BG 2.47 and BG 18.66.</strong> The instruction verse and the surrender verse. Every other quote in this list is an elaboration of one of these two. If you know them cold, you have the shape of the Gita in your body.</span>
+            <span><strong>Memorize BG 2.47 and BG 18.66.</strong> One verse on how to act, one on refuge.</span>
           </li>
           <li>
-            <span><strong>One verse a morning, for ten days.</strong> Choose one theme from the ten in this article. Sit with one verse each morning for ten days. Do not race. The Gita is designed for slow return, not rapid consumption.</span>
+            <span><strong>One verse a morning, for ten days.</strong> Choose one theme from the ten in this article. Sit with one verse each morning for ten days. Do not race.</span>
           </li>
           <li>
-            <span><strong>Match the verse to the moment.</strong> Anxious about outcomes? Return to BG 2.47. Grieving a loss? BG 2.20 or 2.27. Overwhelmed by too many frameworks? BG 18.66. Feeling far from the divine? BG 7.8 &mdash; look at the taste of the water in your hand.</span>
+            <span><strong>Match the verse to the moment.</strong> If you are anxious about outcomes, return to BG 2.47; if you are grieving a loss, BG 2.20 or 2.27; if you are worn down by too many obligations, BG 18.66; if you feel far from the divine, BG 7.8, and notice the taste of the water in your glass.</span>
           </li>
           <li>
-            <span><strong>Do not stop at the quote.</strong> Every verse here has ten verses around it that give it context. If a line pulls at you, read the twenty verses on either side of it. The quote is a doorway, not the room.</span>
+            <span><strong>Do not stop at the quote.</strong> Every verse here has ten verses around it that give it context. If a line pulls at you, read the twenty verses on either side of it. </span>
           </li>
           <li>
-            <span><strong>Keep one verse on your phone.</strong> Not fifty. One. Let it be the one you return to when your mind slips. If it stops being useful, replace it. The Gita is meant to accompany you, not compete for attention.</span>
+            <span><strong>Keep one verse where you will see it.</strong> Let it be the one you return to when your mind slips, and replace it when it stops helping.</span>
           </li>
         </ul>
       </div>
 
 
+      <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the order of Krishna&apos;s first teaching (the atman comes first, in 2.11&ndash;30), the 9.22 tagline, the description of 18.66 (Krishna&apos;s last instruction; the last verse is 18.78) and the 10.41 note; removed the unsourced &ldquo;seed verse&rdquo; label for 15.7 and the claim that 18.66 is rarely quoted; copy edited.</p>
       <FeedbackWidget pageType="blog" />
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
@@ -799,7 +800,7 @@ export default function KrishnaQuotesPage() {
         <div className="faq-item">
           <strong>What is the most famous Krishna quote from the Bhagavad Gita?</strong>
           <p>
-            The most famous Krishna quote is BG 2.47: <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em> &mdash; &ldquo;You have the right to your action, but never to its fruits.&rdquo; It is Krishna&apos;s core instruction on karma yoga: act fully, release the outcome, do not use non-attachment as an excuse for inaction. Two other verses are almost as widely quoted: BG 2.20 (the imperishable Self) and BG 18.66 (surrender).
+            The most famous Krishna quote is BG 2.47: <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em>: &ldquo;You have the right to your action, but never to its fruits.&rdquo; It is Krishna&apos;s core instruction on karma yoga: act fully, release the outcome, do not use non-attachment as an excuse for inaction. Two other verses are almost as widely quoted: BG 2.20 (the imperishable self) and BG 18.66 (surrender).
           </p>
         </div>
 
@@ -813,28 +814,28 @@ export default function KrishnaQuotesPage() {
         <div className="faq-item">
           <strong>What did Krishna say about love?</strong>
           <p>
-            The Bhagavad Gita does not use the modern romantic sense of love. Krishna&apos;s teaching on love is <em>prema</em> and <em>bhakti</em> &mdash; a devotional love that unites the individual with the divine. BG 9.29 says Krishna is equal to all beings, but those who worship him with love, he is in them and they in him. BG 12.13&ndash;19 lists the qualities of the devotee who is &ldquo;dear&rdquo; to Krishna: free from ill-will, compassionate, equal-minded, steady.
+            The Bhagavad Gita has little to say about romantic love. Krishna&apos;s word for love is <em>bhakti</em>, a devotion that joins the individual to the divine. BG 9.29 says Krishna is equal to all beings, but those who worship him with love, he is in them and they in him. BG 12.13&ndash;19 lists the qualities of the devotee who is &ldquo;dear&rdquo; to Krishna: free from ill-will, compassionate, equal-minded, steady.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What is Krishna&apos;s quote about karma?</strong>
           <p>
-            Krishna&apos;s foundational teaching on karma is BG 2.47: act without attachment to fruit. He extends this in BG 3.19 (&ldquo;perform action without attachment; that way one attains the highest&rdquo;), BG 4.20 (&ldquo;having abandoned attachment to fruits, ever content, dependent on nothing, he does nothing at all even while acting&rdquo;), and BG 18.11 (&ldquo;one who has renounced the fruit of action is called a true renunciate&rdquo;). Karma yoga is not the absence of action. It is action performed without craving.
+            Krishna&apos;s foundational teaching on karma is BG 2.47: act without attachment to fruit. He extends this in BG 3.19 (&ldquo;perform action without attachment; that way one attains the highest&rdquo;), BG 4.20 (&ldquo;having abandoned attachment to fruits, ever content, dependent on nothing, he does nothing at all even while acting&rdquo;), and BG 18.11 (&ldquo;one who has renounced the fruit of action is called a true renunciate&rdquo;). Karma yoga is action performed without craving for its fruit.
           </p>
         </div>
 
         <div className="faq-item">
-          <strong>Which Krishna quote is the most powerful?</strong>
+          <strong>Which Krishna quote is the most important?</strong>
           <p>
-            BG 18.66 &mdash; <em>sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja</em> &mdash; is traditionally called the <em>charama shloka</em>, the ultimate verse. It is Krishna&apos;s final instruction: abandon every framework, take refuge in me alone, I will free you from all sins, do not grieve. Vaishnava traditions consider this the most powerful line in the Gita, because it comes at the end of 700 verses of preparation and offers the complete release.
+            BG 18.66 (<em>sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja</em>) is called the <em>charama shloka</em>, the ultimate verse, in the Śrī Vaiṣṇava tradition. It is Krishna&apos;s last instruction: abandon all dharmas, take refuge in me alone, I will free you from all sins, do not grieve. Others give that place to 2.47; there is no single agreed answer.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>How should I use Krishna quotes in daily life?</strong>
           <p>
-            Read one verse in the morning with its Sanskrit, translation, and short commentary. Sit with it before starting your day. Do not try to apply many verses at once. The Gita is not a productivity system; it is a slow reshaping of how you meet action, fear, and loss. Return to the same verse for a week if it pulls at you. Memorize BG 2.47 and BG 18.66. Any other verse is a bonus.
+            Read one verse in the morning with its Sanskrit, translation, and short commentary. Sit with it before starting your day. Apply one verse at a time. The Gita works slowly, on how you meet action, fear and loss. Return to the same verse for a week if it pulls at you. Memorize BG 2.47 and BG 18.66. Any other verse is a bonus.
           </p>
         </div>
       </div>

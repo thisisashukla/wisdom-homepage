@@ -470,9 +470,9 @@ const schemas = [
     "mainEntity": [
       { "@type": "Question", "name": "Which Bhagavad Gita translation is best for beginners?", "acceptedAnswer": { "@type": "Answer", "text": "Eknath Easwaran's translation (Nilgiri Press) is the most widely recommended first Gita in English. It reads cleanly, the chapter introductions do real teaching, and it carries no sectarian weight. In Hindi, the Gita Press pocket edition with Hindi tika is the standard starting point." } },
       { "@type": "Question", "name": "Which translation is closest to the original Sanskrit?", "acceptedAnswer": { "@type": "Answer", "text": "For a plain literal rendering, Bibek Debroy's translation (Penguin) adds no commentary at all. For word-by-word study, Winthrop Sargeant's interlinear edition (SUNY Press) shows every Sanskrit word with its grammar and meaning, so you can see each translation decision being made." } },
-      { "@type": "Question", "name": "Is Bhagavad-gita As It Is a good first Gita?", "acceptedAnswer": { "@type": "Answer", "text": "It is the most widely distributed Gita in history and includes the full Sanskrit apparatus. Its purports follow the Gaudiya Vaishnava lineage reading, which Hindu reviewers and academics have noted is a specific theological interpretation rather than a neutral one. If you want the devotional reading, it delivers it fully. If you want a lens-free first read, start with a plain translation and come back to it." } },
+      { "@type": "Question", "name": "Is Bhagavad-gita As It Is a good first Gita?", "acceptedAnswer": { "@type": "Answer", "text": "Its publisher counts over 23 million copies, and it includes the full Sanskrit apparatus. Its commentaries follow the Gaudiya Vaishnava lineage reading, which Hindu reviewers and academics have noted is a specific theological interpretation rather than a neutral one. If you want the devotional reading, it delivers it fully. If you want a lens-free first read, start with a plain translation and come back to it." } },
       { "@type": "Question", "name": "Which Gita commentary is best in Hindi?", "acceptedAnswer": { "@type": "Answer", "text": "Swami Ramsukhdas's Sadhak Sanjivani (Gita Press) is widely regarded as the most complete practice-oriented Hindi commentary, running over 2,000 pages verse by verse. Jayadayal Goyandka's Tattvavivechani is the shorter, more doctrinal option from the same publisher." } },
-      { "@type": "Question", "name": "Do I need a commentary at all?", "acceptedAnswer": { "@type": "Answer", "text": "Not to start. A plain translation read in two sittings gives you the shape of the text. Commentaries earn their place on the second reading, when you start asking what a verse means for practice, and that is where the traditions genuinely differ." } },
+      { "@type": "Question", "name": "Do I need a commentary at all?", "acceptedAnswer": { "@type": "Answer", "text": "You can start without one. A plain translation read in two sittings gives you the shape of the text. Commentaries earn their place on the second reading, when you start asking what a verse means for practice, and that is where the traditions genuinely differ." } },
       { "@type": "Question", "name": "How many translations of the Bhagavad Gita exist?", "acceptedAnswer": { "@type": "Answer", "text": "Scholars Callewaert and Hemraj catalogued nearly 300 English translations by 1982, and the count across roughly 75 languages ran to almost 2,000 versions. The number has only grown since." } }
     ]
   }
@@ -508,7 +508,7 @@ export default function BestGitaTranslationPage() {
           <em>Which One Should You Read?</em>
         </h1>
         <p className="article-subtitle">
-          Every translation of the Gita is also an interpretation. That is not a flaw to work around. It is a 1,200-year-old feature of the tradition, and once you understand it, choosing your Gita gets much easier.
+          Every translation of the Gita is also an interpretation. Commentators have disagreed about the Gita for some 1,200 years, and once you see where they part ways, choosing your Gita gets much easier.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -517,7 +517,7 @@ export default function BestGitaTranslationPage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">~13 min read</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Research AI-assisted, human-reviewed. Every criticism cited to a named source. Reviewed July 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology &rarr;</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Research AI-assisted, human-reviewed. Every criticism cited to a named source. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology &rarr;</a></span>
         </div>
       </div>
     </div>
@@ -536,11 +536,11 @@ export default function BestGitaTranslationPage() {
         </figure>
 
         <p className="lead">
-            By 1982, two scholars named Callewaert and Hemraj had catalogued nearly 300 English translations of the Bhagavad Gita, out of almost 2,000 versions across some 75 languages. The count has only grown since. So the practical problem facing a modern reader is not access. It is choice. And most advice on this question fails in a predictable way: someone recommends the version their own tradition reads, without mentioning that it is a tradition&apos;s version at all.
+            By 1982, two scholars named Callewaert and Hemraj had catalogued nearly 300 English translations of the Bhagavad Gita, out of almost 2,000 versions across some 75 languages. The count has only grown since. So a modern reader's problem is choosing among them. And most advice on this question fails in a predictable way: someone recommends the version their own tradition reads, without mentioning that it is a tradition&apos;s version at all.
         </p>
 
         <p>
-            This guide takes a different approach. It sorts the major translations and commentaries by the reader they were actually written for. Along the way it is honest about the trade-offs of each, because they all have trade-offs. Where a work has attracted documented criticism, that criticism is cited to the people who made it, alongside the tradition&apos;s own response. None of the judgments here are ours.
+            This guide takes a different approach. It sorts the major translations and commentaries by the reader they were written for. Along the way it is honest about the trade-offs of each, because they all have trade-offs. Where a work has attracted documented criticism, that criticism is cited to the people who made it, alongside the tradition&apos;s own response. None of the judgments here are ours.
         </p>
 
         <div className="method-note">
@@ -585,7 +585,7 @@ export default function BestGitaTranslationPage() {
           <h3>Eknath Easwaran, The Bhagavad Gita</h3>
           <div className="pick-author">Nilgiri Press, 1985 · English</div>
           <p>
-            Across a decade of &ldquo;which Gita should I read first?&rdquo; threads on Reddit and Quora, one answer repeats more than any other. Easwaran grew up with the Gita in Kerala, taught English literature at the University of Nagpur, and later taught what is credited as the first accredited meditation course at a major American university, at Berkeley in 1968. His translation is clean modern English, and his chapter introductions quietly do the work a live teacher would.
+            Across a decade of &ldquo;which Gita should I read first?&rdquo; threads on Reddit and Quora, one answer repeats more than any other. Easwaran grew up with the Gita in Kerala, taught English literature at the University of Nagpur, and later taught what is credited as the first accredited meditation course at a major American university, at Berkeley in 1968. His translation is clean modern English, and his chapter introductions do the work a live teacher would.
           </p>
           <p>
             <span className="kb">Worth knowing</span> It is not a literal translation, and it prints no Sanskrit. Reviewers have also pushed back on passages where Easwaran suggests the Gita anticipates modern physics. If you outgrow it, that is by design; it is a first Gita, and a very good one.
@@ -593,7 +593,7 @@ export default function BestGitaTranslationPage() {
         </div>
 
         <p>
-            If you want something even gentler, Vinoba Bhave&apos;s <em>Talks on the Gita</em> is eighteen short talks, one per chapter, delivered to fellow prisoners in Dhule jail in 1932 and since translated into more than twenty languages. It is not a complete commentary, but generations of Indian readers met the Gita through it. New to the text itself? Our <a href="/blogs/bhagavad-gita-for-beginners">beginner&apos;s guide</a> covers the Gita&apos;s structure before you commit to any edition.
+            If you want something even gentler, Vinoba Bhave&apos;s <em>Talks on the Gita</em> is eighteen short talks, one per chapter, delivered to fellow prisoners in Dhule jail in 1932 and since translated into more than twenty languages. It is a set of talks rather than a full commentary, and generations of Indian readers met the Gita through it. New to the text itself? Our <a href="/blogs/bhagavad-gita-for-beginners">beginner&apos;s guide</a> covers the Gita&apos;s structure before you commit to any edition.
         </p>
 
         <h2>If You Want the Text, Nothing Added</h2>
@@ -616,7 +616,7 @@ export default function BestGitaTranslationPage() {
             Sargeant was a New Yorker music critic who learned Sanskrit out of love for this text, and his edition gives every verse in Devanagari with each word&apos;s grammar and meaning laid out beneath it. You can watch every translation decision being made. Sanskrit self-learners and yoga teacher trainings have used it as the standard reference for four decades.
           </p>
           <p>
-            <span className="kb">Worth knowing</span> It is a study tool, not a reading Gita. The running translation at the foot of each page is serviceable, nothing more.
+            <span className="kb">Worth knowing</span> It is a study tool more than a reading Gita, and the running translation at the foot of each page is serviceable.
           </p>
         </div>
 
@@ -643,15 +643,15 @@ export default function BestGitaTranslationPage() {
           <h3>A.C. Bhaktivedanta Swami Prabhupada, Bhagavad-gita As It Is</h3>
           <div className="pick-author">Bhaktivedanta Book Trust, 1972 · English, full Sanskrit apparatus</div>
           <p>
-            The most widely distributed Gita in history; the publisher counts over 23 million copies in more than 50 languages. Every verse carries Devanagari, transliteration, word-for-word glosses, translation, and a purport following the Gaudiya Vaishnava acharyas Vishvanatha Chakravarti and Baladeva Vidyabhushana. As a devotional Gita with a complete Sanskrit apparatus at a giveaway price, nothing else comes close.
+            The publisher counts over 23 million copies in more than 50 languages. Every verse carries Devanagari, transliteration, word-for-word glosses, translation, and a commentary following the Gaudiya Vaishnava acharyas Vishvanatha Chakravarti and Baladeva Vidyabhushana. It is a devotional Gita with a complete Sanskrit apparatus, sold at a giveaway price.
           </p>
           <p>
-            <span className="kb">Worth knowing</span> The purports are the debated part. Hindu reviewers on forums like IndiaDivine, along with academic observers, have argued that they read specifically Gaudiya conclusions, including polemics against Advaita, into verses whose plain sense is broader. ISKCON&apos;s answer is direct: the purports transmit a real, centuries-old lineage faithfully, which is exactly what a traditional commentary is supposed to do. Both things can be true. Read the translation and word-glosses freely; read the purports knowing whose lineage voice they carry, which is how the tradition itself would want them read.
+            <span className="kb">Worth knowing</span> The commentaries are the debated part. Hindu reviewers on forums like IndiaDivine, along with academic observers, have argued that they read specifically Gaudiya conclusions, including polemics against Advaita, into verses whose plain sense is broader. ISKCON&apos;s answer is direct: the commentaries transmit a real, centuries-old lineage faithfully, which is exactly what a traditional commentary is supposed to do. Both things can be true. Read the translation and word-glosses freely; read the commentaries knowing whose lineage voice they carry, which is how the tradition itself would want them read.
           </p>
         </div>
 
         <p>
-            The classical root of the devotional reading is Ramanuja&apos;s 11th-century Gita Bhashya, available in a complete English edition by Swami Adidevananda (Sri Ramakrishna Math). Many scholars consider Ramanuja&apos;s reading closer to the Gita&apos;s plain devotional sense than any other classical commentary. For a modern scholarly take on the same current, Graham Schweig&apos;s <em>The Beloved Lord&apos;s Secret Love Song</em> translates the Gita as precisely that.
+            The classical root of the devotional reading is Ramanuja&apos;s 11th-century Gita Bhashya, available in a complete English edition by Swami Adidevananda (Sri Ramakrishna Math). Many scholars consider Ramanuja&apos;s reading closer to the Gita&apos;s plain devotional sense than any other classical commentary. For a modern scholarly take on the same current, Graham Schweig&apos;s <em>The Beloved Lord&apos;s Secret Love Song</em> translates the Gita as exactly that.
         </p>
 
         <h2>If You Want the Knowledge Reading</h2>
@@ -660,7 +660,7 @@ export default function BestGitaTranslationPage() {
           <h3>Swami Gambhirananda, Bhagavad Gita with the Commentary of Shankaracharya</h3>
           <div className="pick-author">Advaita Ashrama, 1984 · English</div>
           <p>
-            The standard English access to the oldest surviving Gita commentary, translated by the 11th President of the Ramakrishna Order. Shankara&apos;s bhashya is where the entire commentarial tradition begins; every later school answers him. Reading it is a course in how Vedanta actually argues.
+            The standard English access to the oldest surviving Gita commentary, translated by the 11th President of the Ramakrishna Order. Shankara&apos;s bhashya is where the entire commentarial tradition begins; every later school answers him. Reading it is a course in how Vedanta argues.
           </p>
           <p>
             <span className="kb">Worth knowing</span> It is dense and assumes motivation. Scholars have also long debated whether Shankara&apos;s knowledge-alone reading subordinates the Gita&apos;s action teaching; Tilak built an entire book on that objection, and traditional Advaitins have answered him in turn. For the same teaching unfolded gently over thousands of pages, Swami Dayananda Saraswati&apos;s nine-volume Home Study Course is the modern teaching edition; Swami Chinmayananda&apos;s <em>The Holy Geeta</em> is the energetic applied version.
@@ -697,7 +697,7 @@ export default function BestGitaTranslationPage() {
           <h3>Sant Jnaneshwar, Jnaneshwari</h3>
           <div className="pick-author">Composed 1290 CE · Marathi ovi verse; English by R.K. Bhagwat or Swami Kripananda</div>
           <p>
-            The oldest and still the most beloved vernacular Gita: roughly 9,000 Marathi verses unfolding the Gita&apos;s 700, composed, the tradition holds, when Jnaneshwar was about fifteen. It is sacred scripture to millions in the Warkari tradition and world literature by any standard. Where the Sanskrit commentaries argue, the Jnaneshwari sings; it ends not with a doctrine but with the Pasayadan, a prayer for the well-being of every creature.
+            An early and much-loved vernacular Gita, from 13th-century Maharashtra: roughly 9,000 Marathi verses unfolding the Gita&apos;s 700, composed, the tradition holds, when Jnaneshwar was about fifteen. It is sacred scripture to millions in the Warkari tradition and world literature by any standard. Where the Sanskrit commentaries argue, the Jnaneshwari sings; it ends with the Pasayadan, a prayer for the well-being of every creature.
           </p>
           <p>
             <span className="kb">Worth knowing</span> English cannot carry the ovi music, and the poem expands far beyond the Sanskrit text, so it will not tell you what a given verse literally says. That was never its job.
@@ -709,13 +709,15 @@ export default function BestGitaTranslationPage() {
             After all of this, the practical advice compresses to one principle. Translation and commentary do different work, and most disappointment comes from using one where you needed the other. A literal text (Debroy, Sargeant) shows you what the Sanskrit says. A lineage commentary (Sadhak Sanjivani, Gambhirananda, Prabhupada) shows you what a living tradition has made of it. A literary rendering (Miller, the Jnaneshwari) shows you what the poem can do to a reader.
         </p>
         <p>
-            So own three: a text, a teacher, and a poem. Read the text first, straight through, in two or three sittings. Pick the teacher whose door matches your temperament, and let the criticisms above tell you what you are choosing, not what to avoid. The commentaries disagree because the Gita is deep enough to sustain the disagreement. Twelve centuries of India&apos;s best minds arguing over 700 verses is not a problem to be solved. It is the strongest endorsement a book has ever received.
+            So own three: a text, a teacher, and a poem. Read the text first, straight through, in two or three sittings. Pick the teacher whose door matches your temperament, and let the criticisms above tell you what you are choosing, not what to avoid. The commentaries disagree because the Gita is deep enough to sustain the disagreement. 
         </p>
+
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: removed two unsupported superlatives (on Bhagavad-gita As It Is and the Jnaneshwari); copy edited.</p>
 
         <div className="highlight-box">
           <h3>One Verse Per Day</h3>
           <p>
-            The Wisdom app delivers one verse from the Bhagavad Gita each morning &mdash; Sanskrit, transliteration, meaning, and modern relevance. Home screen widget. Free.
+            Tell the Wisdom app what is going on and it gives you one Gita verse a day for seven days, read aloud, with the Sanskrit. Week 1 is free on iPhone.
           </p>
         </div>
     </div>
@@ -734,7 +736,7 @@ export default function BestGitaTranslationPage() {
         </div>
         <div className="faq-item">
           <strong>Is Bhagavad-gita As It Is a good first Gita?</strong>
-          <p>It is the most widely distributed Gita ever printed and includes the complete Sanskrit apparatus. Its purports present the Gaudiya Vaishnava reading, a genuine centuries-old lineage interpretation rather than a neutral gloss. Wonderful if that is the door you want; if you want a lens-free first read, begin with a plain translation and return to it.</p>
+          <p>Its publisher counts over 23 million copies, and it includes the complete Sanskrit apparatus. Its commentaries present the Gaudiya Vaishnava reading, a genuine centuries-old lineage interpretation rather than a neutral gloss. Wonderful if that is the door you want; if you want a lens-free first read, begin with a plain translation and return to it.</p>
         </div>
         <div className="faq-item">
           <strong>Which Gita commentary is best in Hindi?</strong>

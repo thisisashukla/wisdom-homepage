@@ -26,7 +26,7 @@ export const revalidate = 3600
 export const metadata: Metadata = {
   title: 'Gita Verse of the Day: Today\'s Shlok & Meaning',
   description:
-    'A new verse from the Bhagavad Gita every day. Sanskrit original, Hindi and English meaning, plus the story behind why this shloka fits today. Your daily Hindu spiritual practice.',
+    'A new verse from the Bhagavad Gita every day. Sanskrit original, Hindi and English meaning, plus the story behind why this shloka fits today.',
   alternates: {
     canonical: 'https://wisdomquotes.in/gita/today',
     languages: {

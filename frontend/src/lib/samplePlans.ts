@@ -3,6 +3,8 @@
  * situation, no note (exactly what a visitor gets after one tap). Lines are as
  * returned; "forYou" is the first sentence of Day 1's for_you. Day 1 Sanskrit is
  * the first half of the shloka, speaker label removed.
+ * 25 Oct 2026: three lines edited by hand for the copy review (relationship and
+ * grief forYou, the Valmiki story line); the page says "lightly edited".
  * Regenerate with lp/scripts/sample_plans.py when the library changes.
  */
 export type SampleDay = {
@@ -174,7 +176,7 @@ export const SAMPLE_PLANS: SamplePlan[] = [
         "href": "/gita/chapter/2/verse/6",
         "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयो यद्वा जयेम यदि वा नो जयेयुः",
         "line": "I can't tell which is better, or even what winning would look like.",
-        "forYou": "Right now, the unease in your relationship is not a puzzle to solve but a sign that you are out of touch with what you need."
+        "forYou": "Like Arjuna, you may not know yet what you want from this, and that is a fair place to start."
       },
       {
         "day": 2,
@@ -245,7 +247,7 @@ export const SAMPLE_PLANS: SamplePlan[] = [
         "href": "/gita/chapter/2/verse/8",
         "sanskrit": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्",
         "line": "Even winning everything wouldn't touch this grief that's drying me up inside.",
-        "forYou": "You are standing in a place where nothing you have or might get feels like it can fill the space that loss left behind."
+        "forYou": "Arjuna says nothing he could win would ease his grief (2.8), and Krishna's answer begins from there."
       },
       {
         "day": 2,
@@ -298,7 +300,7 @@ export const SAMPLE_PLANS: SamplePlan[] = [
         "source": "Ramayana · Bala Kanda",
         "href": null,
         "sanskrit": null,
-        "line": "On the bank of the Tamasa, a poet watched a bird fall, and the sound that came out of him changed literature.",
+        "line": "On the bank of the Tamasa, a poet watched a hunter shoot a bird, and his grief came out as the first shloka.",
         "forYou": null
       }
     ]

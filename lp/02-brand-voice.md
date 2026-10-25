@@ -29,3 +29,20 @@
 
 ## Banned words
 unlock, journey, elevate, holistic, transform(ative), seeker, purport, manifest, divine guidance, ancient wisdom, timeless, 5,000 years, profound, delve, embark, empower, curated, seamless, AI-powered, wellness, mindful, "whatever you're carrying", "not just X", "more than just". Also: exclamation marks, and emoji in copy.
+
+## Banned patterns (added 25 Oct 2026, from the copy review)
+Measured by `tools/copy-audit/audit.py`; see `tools/copy-audit/RUBRIC.md`.
+- Reveal constructions: "X is not A. It is B.", "not A but B", "doesn't X. He Y." Say the B part directly. At most 3 per long post.
+- Fragment drama: "Not gradually. Not carefully. Completely.", "Three paths. One summit."
+- Superlatives about scripture: "the most X verse", "no other scripture", "in any tradition", "changes everything".
+- Pseudo-clinical framing: panic attack, clinical, nervous system, neural, rumination, therapeutic, hold space.
+- Intensifiers as filler: actually, quietly, deeply, truly, precisely, remarkable, devastating, surgical.
+- The Gita's age in years ("5,000 years", "2,500-year-old"). If needed: "composed between roughly 400 BCE and 200 CE, by most scholarly estimates".
+- App plugs inside scripture commentary.
+- Greeting-card verse taglines ("True peace comes from…"). A tagline says what the verse says.
+- Repeated phone/inbox/2am vignettes. One modern example per section at most, and vary the setting.
+
+## House facts (keep consistent)
+- Disclosure line: "Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed."
+- 18.66 ends "mā śucaḥ": "Do not grieve." Krishna introduces it in 18.64; the last verse of the Gita is 18.78.
+- The plans' library has 1,743 verses; a language model picks from it and writes the line about your situation.

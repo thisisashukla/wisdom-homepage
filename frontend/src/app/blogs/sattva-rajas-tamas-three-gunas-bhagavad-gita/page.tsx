@@ -6,11 +6,11 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Sattva, Rajas, Tamas — The Three Gunas Explained (and Which One Is Running You Right Now)",
+  title: "Sattva, Rajas, Tamas: The Three Gunas of the Bhagavad Gita Explained",
   description: "Sattva (clarity), rajas (drive), tamas (inertia) — the three gunas of the Bhagavad Gita explained in plain English. What each one feels like, how they show up in your food, work and moods, which one is dominant in you right now, and how Chapter 14 says to move beyond them.",
   keywords: "sattva rajas tamas meaning, three gunas bhagavad gita, sattva rajas tamas explained, what are the three gunas, gunatraya bhagavad gita, sattva guna meaning, rajas guna meaning, tamas guna meaning, gunatita state, bhagavad gita chapter 14, three gunas in daily life",
   openGraph: {
-    title: "Sattva, Rajas, Tamas — The Three Gunas Explained (and Which One Is Running You Right Now)",
+    title: "Sattva, Rajas, Tamas: The Three Gunas of the Bhagavad Gita Explained",
     description: "Sattva (clarity), rajas (drive) and tamas (inertia) — the three gunas of the Gita explained simply, with Chapter 14 verses and how to read your own state right now.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/sattva-rajas-tamas-three-gunas-bhagavad-gita",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Sattva, Rajas, Tamas — The Three Gunas Explained (and Which One Is Running You Right Now)",
+    title: "Sattva, Rajas, Tamas: The Three Gunas of the Bhagavad Gita Explained",
     description: "Sattva (clarity), rajas (drive) and tamas (inertia) — the three gunas of the Gita, and how to read your own state right now.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
@@ -457,7 +457,7 @@ const schemas = [
         "name": "What are sattva rajas and tamas?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sattva, rajas, and tamas are the three gunas, qualities or forces that the Bhagavad Gita says make up all of prakriti (nature). Sattva is the quality of clarity, lightness, and knowledge. Rajas is the quality of activity, desire, and restlessness. Tamas is the quality of inertia, heaviness, and delusion. They are present in all things and in all people in varying combinations."
+          "text": "Sattva, rajas, and tamas are the three gunas, qualities or forces that the Bhagavad Gita says make up all of prakriti (nature). Sattva is the quality of clarity, lightness, and knowledge. Rajas is the quality of activity, desire, and restlessness. Tamas is the quality of inertia, heaviness, and delusion. They are present in everything and everyone in varying combinations."
         }
       },
       {
@@ -465,7 +465,7 @@ const schemas = [
         "name": "What is sattva guna?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sattva guna is the quality of clarity, purity, and knowledge. In the Bhagavad Gita (BG 14.6), sattva is described as pure and illuminating — free of impurity. When sattva is strong, you feel clear, calm, alert, and interested in learning without craving or aversion. The Gita warns that even sattva binds through attachment to happiness and knowledge — it is the best guna to cultivate but not the final goal."
+          "text": "Sattva guna is the quality of clarity, purity, and knowledge. In the Bhagavad Gita (BG 14.6), sattva is described as pure and illuminating — free of impurity. When sattva is strong, you feel clear, calm, alert, and interested in learning without craving or aversion. The Gita warns that even sattva binds through attachment to happiness and knowledge — it is the guna to cultivate, but not the final goal."
         }
       },
       {
@@ -473,7 +473,7 @@ const schemas = [
         "name": "What is rajas guna?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rajas guna is the quality of activity, desire, and restlessness. In BG 14.7, rajas is described as the source of craving and attachment — it binds the atman through the compulsion to act. When rajas dominates you feel driven, ambitious, agitated, and unable to sit still. Rajas is the engine of the world's work but also the source of most stress when it is unregulated."
+          "text": "Rajas guna is the quality of activity, desire, and restlessness. In BG 14.7, rajas is described as the source of craving and attachment — it binds the atman through the compulsion to act. When rajas dominates you feel driven, ambitious, agitated, and unable to sit still. Rajas drives the world's work, and BG 14.12 links it to greed, restless activity and craving."
         }
       },
       {
@@ -481,7 +481,7 @@ const schemas = [
         "name": "What is tamas guna?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tamas guna is the quality of inertia, heaviness, and delusion. In BG 14.8, tamas is described as born of ignorance — it binds the atman through negligence, laziness, and sleep. When tamas dominates you feel heavy, unmotivated, confused, or emotionally shut down. Tamas is not moral evil; it is a natural condition that can be shifted through better food, rest, activity, and consciousness."
+          "text": "Tamas guna is the quality of inertia, heaviness, and delusion. In BG 14.8, tamas is described as born of ignorance — it binds the atman through negligence, laziness, and sleep. When tamas dominates you feel heavy, unmotivated, confused, or emotionally shut down. Like the other gunas, tamas shifts with food, rest and activity."
         }
       },
       {
@@ -505,7 +505,7 @@ const schemas = [
         "name": "Can you change your guna?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. The Gita says the gunas are not fixed personality types. They shift based on conditions. Food, sleep, what you read, how you spend your time, your company, and your practices all affect which guna predominates at any given time. The Gita describes specific foods, worship styles, and types of action associated with each guna in Chapters 17 and 18."
+          "text": "Yes. In BG 14.10 the gunas compete, with one overpowering the others for a time, so the balance can shift. Food, sleep, what you read, how you spend your time, your company, and your practices all affect which guna predominates at any given time. The Gita describes specific foods, worship styles, and types of action associated with each guna in Chapters 17 and 18."
         }
       },
       {
@@ -513,7 +513,7 @@ const schemas = [
         "name": "What is the gunatita state?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Gunatita means beyond the gunas. In BG 14.20, Krishna describes someone who has transcended all three gunas as free from the pains of birth, aging, and death. This is the Gita's actual goal: not to achieve perfect sattva, but to go beyond the entire guna framework. BG 14.26 says undivided devotion (avyabhicharina bhakti) is the path to this state."
+          "text": "Gunatita means beyond the gunas. In BG 14.20, Krishna describes someone who has transcended all three gunas as free from the pains of birth, aging, and death. The Gita treats this state, rather than perfect sattva, as the goal. BG 14.26 says undivided devotion (avyabhicharina bhakti) is the path to this state."
         }
       },
       {
@@ -521,7 +521,7 @@ const schemas = [
         "name": "What guna should I aim for according to the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Gita recommends cultivating sattva as a working condition, because it supports clarity and the capacity for knowledge. But it explicitly warns against becoming attached even to sattva (BG 14.6). The trap of sattva is pride in one's own goodness or addiction to peace. The Gita's final direction is not 'achieve sattva' but 'go beyond all three,' to the gunatita state."
+          "text": "The Gita recommends cultivating sattva as a working condition, because it supports clarity and the capacity for knowledge. But it explicitly warns against becoming attached even to sattva (BG 14.6). The Gita's final direction is to go beyond all three, to the gunatita state (BG 14.20, 14.25)."
         }
       }
     ]
@@ -558,7 +558,7 @@ export default function ThreeGunasPage() {
           <em>The Three Qualities of Everything</em>
         </h1>
         <p className="article-subtitle">
-          The Gita says these three gunas make up all of prakriti, including your personality, your food, your worship, and your current mood. They are not metaphors. They are a working map.
+          The Gita says these three gunas make up all of prakriti, including your personality, your food, your worship, and your current mood. 
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -567,7 +567,7 @@ export default function ThreeGunasPage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">~6 min read</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -586,15 +586,15 @@ export default function ThreeGunasPage() {
       </figure>
 
       <p className="lead">
-        <strong>Sattva, rajas and tamas</strong> are the three gunas — the three fundamental qualities — that the Bhagavad Gita says make up all of nature, including your personality, your food, your work, and your current mood. <strong>Sattva</strong> is clarity and knowledge. <strong>Rajas</strong> is activity and desire. <strong>Tamas</strong> is inertia and confusion. Chapter 14 lays out the full framework in 27 verses, and it changes how you read your own inner states once you see it. Some mornings you wake up clear, focused, ready to think — that is sattva rising. Other mornings you wake up irritable, scattered, restless — that is rajas. Some days you cannot move at all — that is tamas. The Gita&apos;s account is precise and practical.
+        <strong>Sattva, rajas and tamas</strong> are the three gunas — the three fundamental qualities — that the Bhagavad Gita says make up all of nature, including your personality, your food, your work, and your current mood. <strong>Sattva</strong> is clarity and knowledge. <strong>Rajas</strong> is activity and desire. <strong>Tamas</strong> is inertia and confusion. Chapter 14 lays out the framework in 27 verses. Some mornings you wake up clear, focused, ready to think — that is sattva rising. Other mornings you wake up irritable, scattered, restless — that is rajas. Some days you cannot move at all — that is tamas.
       </p>
 
       <h2>Why the Gunas Matter</h2>
       <p>
-        Chapter 14 of the Gita opens a section that many readers skip because it sounds theoretical: the classification of everything in nature into three qualities. But the payoff is practical. Once you understand the guna framework, you start reading your own inner states more accurately. You stop blaming yourself for every low period and stop becoming overconfident in every high period. You see both as conditions, not as your permanent identity.
+        Chapter 14 can sound theoretical: it sorts everything in nature into three qualities. The practical use is that you start reading your own states more accurately, and you can treat a low period or a high one as a condition that will change.
       </p>
       <p>
-        The Gita begins Chapter 14 by identifying the gunas as the fundamental mechanism by which prakriti (nature) operates. They bind the atman (the unchanging inner self) to the body and mind.
+        From verse 14.5, Chapter 14 describes the gunas as the way prakriti (nature) binds the atman (the unchanging inner self) to the body.
       </p>
 
             <ShlokaCard
@@ -604,16 +604,16 @@ export default function ThreeGunasPage() {
         meaningLabel="Translation"
         meaning="The qualities of nature, sattva (clarity), rajas (activity), and tamas (inertia), tie the unchanging atman (inner self) to the body."
         insightLabel="What This Teaches"
-        insight="The atman is described as avyayam, unchanging, imperishable. The gunas don't change it. They bind it, meaning they create the experience of being caught up in a particular state. The teaching here builds self-awareness by distinguishing what you are (the witness) from what you're currently experiencing (the guna-state). You observe the state instead of being consumed by it."
-        essence="You are not your moods or qualities; you are the unchanging atman."
+        insight="The embodied self (dehin) is called avyaya, imperishable. The gunas leave it unchanged and bind it to the body, so it experiences itself as caught in whatever state predominates."
+        essence="Sattva, rajas and tamas, born of nature, bind the imperishable embodied self to the body."
       />
 
-      <h2>What &quot;Guna&quot; Actually Means</h2>
+      <h2>What &quot;Guna&quot; Means</h2>
       <p>
-        The word guna literally means &quot;strand&quot; or &quot;quality.&quot; Think of a rope made of three twisted strands. The three gunas are not three separate personalities you cycle through. They are three strands present in everything at all times, in constantly shifting proportions. When one strand tightens, the others slacken. All three are always there.
+        The word guna literally means &quot;strand&quot; or &quot;quality.&quot; Think of a rope made of three twisted strands. The three gunas are like three strands present in everything at all times, in shifting proportions.
       </p>
       <p>
-        This is a different model from the Western personality type tradition. The Gita does not say you are a sattva person or a rajas person. It says right now, in this moment, one quality is predominating. That can change by tomorrow morning, sometimes by the next hour.
+        Chapter 14 describes one guna predominating at a time by overpowering the others (14.10), so the balance can shift within a day. Chapters 17 and 18 also describe a person&apos;s faith, action and character by their dominant guna.
       </p>
 
       <h2>Sattva: Clarity, Knowledge, Balance</h2>
@@ -628,17 +628,17 @@ export default function ThreeGunasPage() {
         meaningLabel="Translation"
         meaning="Sattva is the pure and clear quality within us that brings light, peace, and knowledge, but even these good things can create attachment and keep us tied to the world."
         insightLabel="What This Teaches"
-        insight="This is the part that surprises people. Sattva binds you too. The mechanism is attachment to the good feeling: clinging to your calm, pride in your clarity, addiction to feeling wise. The Gita doesn't say sattva is bad. It says don't get attached to it. Pursue it as a working condition, not as a destination. The moment you start defending your peacefulness or feeling superior because of your clarity, you've lost the thread."
-        essence="Even purity can bind if we cling to it."
+        insight="Sattva is stainless (nirmala), illuminating and free of affliction, yet it binds too: through attachment to happiness and to knowledge. Treat it as a working condition and watch for attachment to your own calm or clarity."
+        essence="Sattva is clear and illuminating, yet it binds through attachment to happiness and knowledge."
       />
 
       <p>
-        In daily life, a sattvic day might look like this: waking before sunrise without an alarm, eating lightly, doing focused work without compulsive checking of the phone, feeling genuine interest in what you&apos;re doing. You don&apos;t manufacture this state. You create conditions that make it more likely: sleep, food, what you consume mentally, who you spend time with.
+        In daily life, a sattvic day might look like this: eating moderately, doing focused work without checking your phone every few minutes, and taking real interest in what you&apos;re doing. You don&apos;t manufacture this state. You create conditions that make it more likely: sleep, food, what you consume mentally, who you spend time with.
       </p>
 
       <h2>Rajas: Activity, Desire, Restlessness</h2>
       <p>
-        Rajas is the quality of activity, drive, and craving. It is not evil. Without rajas nothing gets done. Every goal pursued, every project launched, every competition entered runs on rajas. The problem is the attachment it creates: the need for the outcome, the agitation when things don&apos;t move, the constant planning and wanting.
+        Rajas is the quality of activity, drive, and craving. Without rajas nothing gets done; goals, projects and competitions all run on it. The problem is the attachment it creates: the need for the outcome, the agitation when things don&apos;t move, the constant planning and wanting.
       </p>
 
             <ShlokaCard
@@ -648,12 +648,12 @@ export default function ThreeGunasPage() {
         meaningLabel="Translation"
         meaning="Rajas, born of desire and attachment, ties the embodied self to action through constant craving and clinging to what it does."
         insightLabel="What This Teaches"
-        insight="Rajas binds through two mechanisms: trishna (thirst, craving) and sanga (attachment to the action itself). You get caught not just in wanting the result but in the activity. Work addiction is a rajas trap. So is the inability to stop checking your phone: there's no clear desire, just a restless pull toward stimulation. The antidote is not stopping all action but developing discernment about which actions you're attached to and why."
-        essence="Attachment to actions comes from desires; freedom begins with self-awareness."
+        insight="Rajas is rāga, passion. It grows from tṛṣṇā (craving) and saṅga (attachment), and it binds through attachment to action: you get caught in the activity as well as the result."
+        essence="Rajas is passion born of craving and attachment, and binds the embodied self through attachment to action."
       />
 
       <p>
-        A heavily rajasic day has a particular texture: you feel busy, slightly agitated, productive in bursts, but with a background hum of anxiety. You get things done but the satisfaction doesn&apos;t quite arrive. You finish one thing and immediately move to the next. The doing is compulsive, not chosen.
+        A heavily rajasic day has a particular texture: you feel busy, slightly agitated, productive in bursts, but with a background hum of anxiety. You get things done but the satisfaction doesn&apos;t quite arrive. You finish one thing and immediately move to the next.
       </p>
 
       <h2>Tamas: Inertia, Delusion, Heaviness</h2>
@@ -666,19 +666,19 @@ export default function ThreeGunasPage() {
         sanskrit="तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ॥"
         iast="tamastvajñānajaṃ viddhi mohanaṃ sarvadehinām | pramādālasyanidrābhistannibadhnāti bhārata ||"
         meaningLabel="Translation"
-        meaning="Tamas comes from ignorance and causes confusion in all living beings. It binds through carelessness, laziness, and excessive sleep."
+        meaning="Tamas comes from ignorance and deludes every living being. It binds through carelessness, laziness, and excessive sleep."
         insightLabel="What This Teaches"
-        insight="The word mohanam means that which deludes. Tamas doesn't feel dramatic. It feels like nothing much is wrong, you just don't feel like doing anything. Procrastination, excessive sleep, numbing through distraction: these are tamasic patterns. The Gita also notes that tamas covers knowledge, pramada means negligence or carelessness, a specific kind of not-looking. The self-deception of tamas is that it often feels like rest."
-        essence="Tamas keeps us bound through ignorance, laziness, and carelessness."
+        insight="Mohanam means that which deludes. Tamas binds through pramāda (carelessness), ālasya (laziness) and nidrā (sleep). In 14.9 Krishna adds that tamas covers knowledge."
+        essence="Tamas, born of ignorance, deludes all beings and binds through carelessness, laziness and sleep."
       />
 
       <p>
-        It&apos;s worth noting that rest itself is not tamasic. Sleep after genuine exertion is sattvic. Rest taken as recovery is appropriate. Tamas is the heavy sleep that comes from avoidance, the couch that becomes a hiding place, the hour of video content consumed without choosing it. The quality is not in the activity but in what produces and what follows it.
+        The verse names sleep, and 6.16–17 shows what the Gita objects to: yoga fails for one who sleeps too much or too little, and works for one who is moderate in sleep and waking.
       </p>
 
       <h2>How They Interact</h2>
       <p>
-        The gunas don&apos;t sit in separate compartments. They compete. At any moment one predominates, but the other two are present and shifting. When sattva rises, it suppresses rajas and tamas. When rajas surges, it overtakes sattva&apos;s calm and tamas&apos;s inertia. This is why you can go from clarity to agitation within the same afternoon.
+        The gunas compete. At any moment one predominates, but the other two are present and shifting. When sattva rises, it suppresses rajas and tamas. When rajas surges, it overtakes sattva&apos;s calm and tamas&apos;s inertia. This is why you can go from clarity to agitation within the same afternoon.
       </p>
 
             <ShlokaCard
@@ -688,46 +688,46 @@ export default function ThreeGunasPage() {
         meaningLabel="Translation"
         meaning="At any time, one quality, clarity (sattva), activity (rajas), or inertia (tamas), becomes stronger by overcoming the others. These forces in us are always shifting."
         insightLabel="What This Teaches"
-        insight="The Gita's model here is dynamic, not static. You are not stuck in a guna state. One quality overtakes the others by overcoming their pull. This is why the Gita recommends specific practices: they are designed to build conditions where sattva gains ground over rajas and tamas. Diet, sleep, activity, study, company, all of it shifts the balance."
-        essence="Your inner state is always changing; self-awareness lets you move towards balance."
+        insight="Sattva rises by overpowering rajas and tamas, rajas by overpowering sattva and tamas, and tamas by overpowering sattva and rajas."
+        essence="Each guna rises by overpowering the other two, so the balance between them keeps shifting."
       />
 
       <h2>How to Read Your Own Gunas Right Now</h2>
       <p>
-        The point of this framework is not classification. It&apos;s diagnosis. Here is a simple self-check:
+        Here is a simple self-check, based on the signs Krishna lists in 14.11–13:
       </p>
 
       <div className="highlight-box">
         <h3>A Guna Self-Diagnostic</h3>
         <p>
-          Sattva is present when: you feel clear without effort, you can sit quietly without reaching for your phone, you feel genuine interest in something, you feel neither heavy nor agitated.
+          Sattva is present when: you feel clear without effort, you can sit quietly, you feel genuine interest in something, you feel neither heavy nor agitated.
         </p>
         <p>
-          Rajas is present when: you feel driven but slightly anxious, you keep refreshing something, you feel productive but not at peace, satisfaction arrives briefly after completing something and then the craving for the next thing begins immediately.
+          Rajas is present when: you feel driven but slightly anxious,  you feel productive but not at peace, satisfaction arrives briefly after completing something and then the craving for the next thing begins immediately.
         </p>
         <p>
-          Tamas is present when: you feel heavy, unmotivated, slightly confused about what you actually want, drawn to more sleep or more passive distraction, unable to start things you know you need to do.
+          Tamas is present when: you feel heavy, unmotivated, slightly confused about what you want, drawn to more sleep or more passive distraction, unable to start things you know you need to do.
         </p>
         <p>
-          What you&apos;re trying to do is not judge the state but see it accurately. Once seen, you can ask: what conditions produced this? What would shift it?
+          The aim is to see the state accurately. Once seen, you can ask: what conditions produced this? What would shift it?
         </p>
       </div>
 
       <h2>Food, Worship, and Action</h2>
       <p>
-        The Gita extends the guna framework far beyond personality. Chapter 17 classifies food by guna. Sattvic food is fresh, light, and nourishing. Rajasic food is spicy, hot, and stimulating. Tamasic food is stale, fermented, or overcooked. The claim is not just symbolic: the food you eat affects the quality of your mind.
+        The Gita extends the guna framework far beyond personality. Chapter 17 classifies food by guna. Sattvic food is juicy, nourishing, and promotes life, strength and health (17.8). Rajasic food is too bitter, sour, salty, hot or pungent, and brings pain and illness (17.9). Tamasic food is stale, tasteless, putrid or left over (17.10).
       </p>
       <p>
-        The same classification applies to worship: sattvic worship is offered without expectation of reward; rajasic worship is performed for status or results; tamasic worship is careless and done from superstition. Even charity is classified: sattvic charity is given at the right time, to the right person, without expecting anything back.
+        The same classification applies to sacrifice (yajña): sattvic sacrifice is offered without desire for reward (17.11); rajasic sacrifice is done for results or for show (17.12); tamasic sacrifice ignores the rules and is done without faith (17.13). Charity is classified too: sattvic charity is given at the right time and place, to a worthy person, without expecting anything back (17.20).
       </p>
 
       <p className="pull-quote">
-        The Gita is saying that the guna of an action is not determined by what the action is, but by the quality of consciousness behind it.
+        In Chapter 17 the same act, a sacrifice or a gift, can be sattvic, rajasic or tamasic depending on the motive and manner behind it.
       </p>
 
       <h2>Gunatita: Beyond All Three</h2>
       <p>
-        Here is the part the wellness world tends to miss. The Gita&apos;s goal is not to maximize sattva. It is to go beyond all three gunas entirely. This state is called gunatita. Verse 14.20 describes it directly.
+        The Gita&apos;s goal goes past sattva: the aim is to go beyond all three gunas. Someone in that state is called guṇātīta (14.25). Verse 14.20 describes the result.
       </p>
 
             <ShlokaCard
@@ -737,12 +737,12 @@ export default function ThreeGunasPage() {
         meaningLabel="Translation"
         meaning="When a person rises above the three qualities that create the body, they become free from the pains of birth, aging, and death, and experience a state that is undying."
         insightLabel="What This Teaches"
-        insight="The goal is transcendence of the entire guna framework, not optimization within it. This matters because it tells you what you are actually working toward. Cultivating sattva is useful as a working condition, a platform from which clarity can develop. But the platform is not the destination. The destination is the state where you are no longer caught by any of the three: not compelled by rajas, not darkened by tamas, and not attached to sattva either."
-        essence="Transcend the hold of nature's three qualities to discover true freedom and undying bliss."
+        insight="The goal is to go beyond all three gunas. Sattva is useful as a working condition, and the aim past it is a state where you are not compelled by rajas, not darkened by tamas, and not attached to sattva either."
+        essence="Going beyond the three gunas, the embodied self is freed from birth, death, old age and sorrow and attains the immortal."
       />
 
       <p>
-        How does one reach this state? Verse 14.26 gives the most direct answer in the chapter:
+        How does one reach this state? Verse 14.26 answers:
       </p>
 
             <ShlokaCard
@@ -752,12 +752,11 @@ export default function ThreeGunasPage() {
         meaningLabel="Translation"
         meaning="Anyone who serves the Supreme with single-minded, undivided devotion can rise above all the natural qualities and become fit for union with the Supreme Truth."
         insightLabel="What This Teaches"
-        insight="The word avyabhicharena means without wavering, undivided, consistent. The path offered is not intellectual analysis of the gunas but devotion that doesn't split its attention. The Gita here is saying that the way out of the guna trap is not to manage the gunas better from within, but to orient yourself toward something beyond them entirely. The gunas pull you in various directions. Undivided devotion pulls in one direction only."
-        essence="Pure, continuous bhakti lifts you above all limitations and connects you to the ultimate reality."
+        insight="Avyabhicāreṇa means without wavering. The means Krishna gives here is devotion that does not divide its attention. The gunas pull in several directions; this devotion pulls in one."
+        essence="Whoever serves Krishna with unwavering devotion goes beyond the gunas and becomes fit for Brahman."
       />
+    <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the Chapter 17 food descriptions (17.8–10), the worship examples (17.11–13 classify sacrifice), where Chapter 14 introduces the gunas, and the verse summary lines; removed the claim that sleep after exertion is sattvic; copy edited.</p>
     </div>
-
-
       <FeedbackWidget pageType="blog" />
     <div className="faq-section">
       <h2>Frequently Asked Questions</h2>
@@ -765,28 +764,28 @@ export default function ThreeGunasPage() {
       <div className="faq-item">
         <strong>What are sattva, rajas, and tamas?</strong>
         <p>
-          Sattva, rajas, and tamas are the three gunas, the three fundamental qualities that the Bhagavad Gita says make up all of prakriti (nature). Sattva is clarity, lightness, and knowledge. Rajas is activity, desire, and restlessness. Tamas is inertia, heaviness, and delusion. They are not personality types. They are forces present in everything and everyone in varying combinations.
+          Sattva, rajas, and tamas are the three gunas, the three fundamental qualities that the Bhagavad Gita says make up all of prakriti (nature). Sattva is clarity, lightness, and knowledge. Rajas is activity, desire, and restlessness. Tamas is inertia, heaviness, and delusion. They are present in everything and everyone in varying combinations.
         </p>
       </div>
 
       <div className="faq-item">
         <strong>What is sattva guna?</strong>
         <p>
-          Sattva guna is the quality of clarity, purity, and knowledge. In BG 14.6 sattva is described as pure and illuminating — free of impurity. When sattva is strong, you feel clear, calm, alert, and interested in learning without craving or aversion. The Gita warns that even sattva binds through attachment to happiness and knowledge — it is the best guna to cultivate but not the final goal.
+          Sattva guna is the quality of clarity, purity, and knowledge. In BG 14.6 sattva is described as pure and illuminating — free of impurity. When sattva is strong, you feel clear, calm, alert, and interested in learning without craving or aversion. The Gita warns that even sattva binds through attachment to happiness and knowledge — it is the guna to cultivate, but not the final goal.
         </p>
       </div>
 
       <div className="faq-item">
         <strong>What is rajas guna?</strong>
         <p>
-          Rajas guna is the quality of activity, desire, and restlessness. In BG 14.7 rajas is described as the source of craving and attachment — it binds the atman through the compulsion to act. When rajas dominates you feel driven, ambitious, agitated, and unable to sit still. Rajas is the engine of the world&apos;s work but also the source of most stress when it is unregulated.
+          Rajas guna is the quality of activity, desire, and restlessness. In BG 14.7 rajas is described as the source of craving and attachment — it binds the atman through the compulsion to act. When rajas dominates you feel driven, ambitious, agitated, and unable to sit still. Rajas drives the world&apos;s work, and BG 14.12 links it to greed, restless activity and craving.
         </p>
       </div>
 
       <div className="faq-item">
         <strong>What is tamas guna?</strong>
         <p>
-          Tamas guna is the quality of inertia, heaviness, and delusion. In BG 14.8 tamas is described as born of ignorance — it binds through negligence, laziness, and sleep. When tamas dominates you feel heavy, unmotivated, confused, or emotionally shut down. Tamas is not moral evil; it is a natural condition that can be shifted through better food, rest, activity, and consciousness.
+          Tamas guna is the quality of inertia, heaviness, and delusion. In BG 14.8 tamas is described as born of ignorance — it binds through negligence, laziness, and sleep. When tamas dominates you feel heavy, unmotivated, confused, or emotionally shut down. Like the other gunas, tamas shifts with food, rest and activity.
         </p>
       </div>
 
@@ -800,28 +799,28 @@ export default function ThreeGunasPage() {
       <div className="faq-item">
         <strong>How do the gunas affect daily life?</strong>
         <p>
-          The gunas shape your mental states from moment to moment. When sattva is strong, you feel clear and focused. When rajas dominates, you feel driven but anxious. When tamas is high, you feel heavy, unmotivated, or confused. Diet, sleep, company, media consumption, and physical activity all influence which guna is currently predominating. The Gita treats this as practical information, not abstract philosophy.
+          The gunas shape your mental states from moment to moment. When sattva is strong, you feel clear and focused. When rajas dominates, you feel driven but anxious. When tamas is high, you feel heavy, unmotivated, or confused. Diet, sleep, company, media consumption, and physical activity all influence which guna is currently predominating. 
         </p>
       </div>
 
       <div className="faq-item">
         <strong>Can you change your guna?</strong>
         <p>
-          Yes. The gunas are not fixed. They shift based on conditions. The Gita describes specific foods, activities, and modes of worship associated with each guna in Chapters 17 and 18. Eating fresh, light food supports sattva. Working with excessive attachment feeds rajas. Excessive sleep and neglect increases tamas. The conditions you create shift the balance over time.
+          Yes. In BG 14.10 the gunas compete, with one overpowering the others for a time, so the balance can shift. The Gita describes specific foods, activities, and modes of worship associated with each guna in Chapters 17 and 18. Wholesome, nourishing food supports sattva (17.8). Working with excessive attachment feeds rajas. Excessive sleep and neglect increases tamas. The conditions you create shift the balance over time.
         </p>
       </div>
 
       <div className="faq-item">
         <strong>What is the gunatita state?</strong>
         <p>
-          Gunatita means beyond the gunas. BG 14.20 describes this state as freedom from birth, aging, and death. It is not the perfection of sattva but the transcendence of the entire guna framework. BG 14.26 points to undivided devotion as the means. In practical terms, gunatita is described as equanimity: the ability to remain steady whether sattva, rajas, or tamas is arising, without being moved or controlled by any of them.
+          Gunatita means beyond the gunas. BG 14.20 describes this state as freedom from birth, aging, and death. It goes beyond sattva as well as rajas and tamas. BG 14.26 points to undivided devotion as the means. In practical terms, gunatita is described as equanimity: the ability to remain steady whether sattva, rajas, or tamas is arising, without being moved or controlled by any of them.
         </p>
       </div>
 
       <div className="faq-item">
         <strong>What guna should I aim for according to the Bhagavad Gita?</strong>
         <p>
-          The Gita recommends cultivating sattva as a working condition. It supports clarity and makes spiritual practice possible. But the Gita explicitly warns against becoming attached even to sattva: BG 14.6 says sattva binds through attachment to happiness and knowledge. The final direction is not &quot;achieve sattva&quot; but &quot;go beyond all three.&quot; Sattva is the platform, not the destination.
+          The Gita recommends cultivating sattva as a working condition. It supports clarity and makes spiritual practice possible. But the Gita explicitly warns against becoming attached even to sattva: BG 14.6 says sattva binds through attachment to happiness and knowledge. The final direction is to go beyond all three (14.20).
         </p>
       </div>
     </div>

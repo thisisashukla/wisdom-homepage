@@ -7,11 +7,11 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "20 Famous Sanskrit Shlokas with Meaning in Hindi and English",
-  description: "The 20 most famous Sanskrit shlokas every educated person should know. From Vakratunda Mahakaya to Om Purnamadah, with accurate Devanagari, IAST, English and Hindi meaning, and context.",
+  description: "Twenty well-known Sanskrit shlokas worth knowing by heart. From Vakratunda Mahakaya to Om Purnamadah, with accurate Devanagari, IAST, English and Hindi meaning, and context.",
   keywords: "sanskrit shlokas, famous sanskrit shlokas, sanskrit shlokas with meaning, sanskrit shloka, shloka in sanskrit, famous shlokas, sanskrit shlokas with hindi meaning, easy sanskrit shlokas, sanskrit shlokas for students, popular sanskrit shlokas",
   openGraph: {
     title: "20 Famous Sanskrit Shlokas — with Meaning in Hindi and English | Wisdom",
-    description: "The twenty Sanskrit shlokas every educated Indian should know by heart. Devanagari, IAST, English, and Hindi meaning for each.",
+    description: "Twenty well-known Sanskrit shlokas worth knowing by heart. Devanagari, IAST, English, and Hindi meaning for each.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/20-famous-sanskrit-shlokas",
     siteName: 'Wisdom',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     site: '@sansearchapp',
     creator: '@thisisashukla',
     title: "20 Famous Sanskrit Shlokas — with Meaning in Hindi and English | Wisdom",
-    description: "The twenty Sanskrit shlokas every educated Indian should know by heart. Devanagari, IAST, English, and Hindi meaning for each.",
+    description: "Twenty well-known Sanskrit shlokas worth knowing by heart. Devanagari, IAST, English, and Hindi meaning for each.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -163,7 +163,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "20 Famous Sanskrit Shlokas — with Meaning in Hindi and English",
-    "description": "The twenty Sanskrit shlokas every educated Indian should know by heart — from Vakratunda Mahakaya to Om Purnamadah — with accurate Devanagari, IAST, English, and Hindi meaning.",
+    "description": "Twenty well-known Sanskrit shlokas worth knowing by heart — from Vakratunda Mahakaya to Om Purnamadah — with accurate Devanagari, IAST, English, and Hindi meaning.",
     "datePublished": "2026-07-05",
     "dateModified": "2026-08-01",
     "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
@@ -202,7 +202,7 @@ const schemas = [
         "name": "What is a shloka in Sanskrit?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A shloka (श्लोक) is the standard verse form of classical Sanskrit poetry. Its most common meter is the anushtubh: 32 syllables arranged in four quarters (padas) of eight syllables each. The Bhagavad Gita, the Ramayana, and much of the Mahabharata are composed in this meter. The shloka is designed for oral memorization — the rhythm makes it possible to carry the text in the body across a lifetime."
+          "text": "A shloka (श्लोक) is the standard verse form of classical Sanskrit poetry. Its most common meter is the anushtubh: 32 syllables arranged in four quarters (padas) of eight syllables each. The Bhagavad Gita, the Ramayana, and much of the Mahabharata are composed in this meter. The shloka is designed for oral memorization — the rhythm makes it possible to keep the text in memory across a lifetime."
         }
       },
       {
@@ -234,7 +234,7 @@ const schemas = [
         "name": "Which is the most powerful Sanskrit shloka?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "'Powerful' is tradition-dependent. The Gayatri Mantra is the most universally revered — it is the mantra given at the sacred thread ceremony and considered the mother of the Vedas. The Mrityunjaya mantra (Om Tryambakam Yajamahe) is invoked for healing and long life. From the Gita, BG 18.66 (sarva-dharman parityajya) is called the charama shloka — the ultimate verse. Ultimately, the shloka you actually recite daily becomes the powerful one for you."
+          "text": "'Powerful' is tradition-dependent. The Gayatri Mantra is widely revered — it is the mantra given at the sacred thread ceremony and considered the mother of the Vedas. The Mrityunjaya mantra (Om Tryambakam Yajamahe) is invoked for healing and long life. From the Gita, BG 18.66 (sarva-dharman parityajya) is called the charama shloka — the ultimate verse. In practice, the shloka you recite daily is the one you will come to rely on."
         }
       },
       {
@@ -288,7 +288,7 @@ export default function TwentyFamousSanskritShlokasPage() {
             <span className="meta-sep">&middot;</span>
             <span className="meta-item">~18 min read</span>
             <span className="meta-sep">&middot;</span>
-            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Published July 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology &rarr;</a></span>
+            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology &rarr;</a></span>
           </div>
         </div>
       </div>
@@ -303,7 +303,7 @@ export default function TwentyFamousSanskritShlokasPage() {
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>Twenty shlokas, five themes: what an educated Indian should carry by heart</figcaption>
+          <figcaption>Twenty shlokas, five themes: twenty verses worth knowing by heart</figcaption>
         </figure>
 
         <p className="lead">
@@ -316,7 +316,7 @@ export default function TwentyFamousSanskritShlokasPage() {
         <div className="highlight-box">
           <h3>How to read this article</h3>
           <p>
-            You do not have to memorise all twenty at once. Pick one shloka per week, chant it aloud twice a day, and by the end of five months you will carry all twenty in your body. The verse you recite becomes the verse that arrives when you actually need it &mdash; before a difficult meeting, at the bedside of a sick parent, on the morning of an exam, or in the small hours when the mind will not settle.
+            You do not have to memorise all twenty at once. Pick one shloka per week, chant it aloud twice a day, and by the end of five months you will know all twenty by heart. The verse you recite is the one that comes back when you need it &mdash; before a difficult meeting, at the bedside of a sick parent, on the morning of an exam, or in the small hours when the mind will not settle.
           </p>
         </div>
 
@@ -325,20 +325,20 @@ export default function TwentyFamousSanskritShlokasPage() {
           The word <em>shloka</em> (श्लोक) originally meant &ldquo;fame&rdquo; or &ldquo;praise&rdquo; in Vedic Sanskrit. In classical usage it came to mean the standard verse form of Sanskrit epic and philosophical poetry. Its most common metre is the <em>anushtubh</em>: thirty-two syllables arranged in four quarters (called <em>padas</em>) of eight syllables each. The Ramayana, the Mahabharata, and the Bhagavad Gita are almost entirely composed in this metre.
         </p>
         <p>
-          The anushtubh has rules about where long and short syllables can fall, but the rules are flexible enough that ordinary speech can be shaped into it. That flexibility is why the metre became the workhorse of Sanskrit literature. It carries philosophy, story, prayer, satire, and law with equal grace. Not every famous Sanskrit verse is a shloka in the strict metrical sense &mdash; some of the Vedic verses in this article are in the older Gayatri metre or the Trishtubh, and the Upanishadic <em>Om Purnamadah</em> is prose &mdash; but in ordinary speech people call any short Sanskrit verse a shloka, and that is the sense used here.
+          The anushtubh has rules about where long and short syllables can fall, but the rules are flexible enough that ordinary speech can be shaped into it. That flexibility is why the metre became the workhorse of Sanskrit literature. It carries philosophy, story, prayer, satire, and law with equal grace. Not every famous Sanskrit verse is a shloka in the strict metrical sense &mdash; some of the Vedic verses in this article are in the older Gayatri metre or the Trishtubh &mdash; but in ordinary speech people call any short Sanskrit verse a shloka, and that is the sense used here.
         </p>
         <p>
-          What matters practically is that these verses were designed for oral transmission. The rhythm makes them easy to memorise, and the memorisation is not incidental to their power. A shloka you have carried in the body for years arrives on its own when the situation calls for it. This is why the tradition insists on chanting, not just reading.
+          What matters practically is that these verses were designed for oral transmission. The rhythm makes them easy to memorise, and the memorisation is not incidental to their power. A shloka you have chanted for years comes back on its own when the situation calls for it, which is why the tradition asks you to chant aloud as well as read.
         </p>
 
-        <h2>The 20 Shlokas Every Educated Person Should Know</h2>
+        <h2>The 20 Shlokas</h2>
         <p>
           The verses are grouped in five thematic sections. Within each group the arrangement moves roughly from the most universally known to the more specialised. Read one, chant it out loud, sit with its meaning, then move to the next.
         </p>
 
         <h3>Part I: Opening Prayers (Mangalacharan)</h3>
         <p>
-          Every new beginning in the Sanskrit tradition &mdash; a book, a class, a ritual, a journey &mdash; opens with a <em>mangalacharan</em>, an auspicious invocation. These four are the ones you will hear most often in ordinary Hindu life.
+          Every new beginning in the Sanskrit tradition &mdash; a book, a class, a ritual, a trip &mdash; opens with a <em>mangalacharan</em>, an auspicious invocation. These four are the ones you will hear most often in ordinary Hindu life.
         </p>
 
         <ShlokaCard
@@ -366,7 +366,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaningLabel="Translation"
           meaning="Om. May we be protected together. May we be nourished together. May we work together with great vigour. May our study be radiant and effective. May we never quarrel. Om, peace, peace, peace."
           insightLabel="Context & Use"
-          insight="The classical prayer chanted by teacher and student together before a lesson. It asks not for individual excellence but for shared protection, shared nourishment, and the absence of enmity between the two who study. It is a definition, in prayer form, of what teaching actually is."
+          insight="The classical prayer chanted by teacher and student together before a lesson. It asks for shared protection, shared nourishment, shared effort, and no enmity between the two who study."
           essence="Let us study together, without rivalry, and prosper together."
         />
 
@@ -415,7 +415,7 @@ export default function TwentyFamousSanskritShlokasPage() {
 
         <h3>Part II: From the Bhagavad Gita</h3>
         <p>
-          The Bhagavad Gita contributes more famous shlokas to daily Indian speech than any other text. These five are the ones most often quoted, chanted, and printed on the back of trucks.
+          The Bhagavad Gita supplies many of the shlokas heard in daily Indian life. These five are the ones most often quoted, chanted, and printed on the back of trucks.
         </p>
 
         <ShlokaCard
@@ -425,8 +425,8 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaningLabel="Translation"
           meaning="You have the right to action alone, never to its fruits. Do not let the fruit of action be your motive. And do not become attached to inaction."
           insightLabel="Context & Use"
-          insight="The signature verse of the Bhagavad Gita and, arguably, the most quoted line in all Indian philosophy. It compresses the entire teaching of karma yoga into a single shloka. Note the fourth line: Krishna anticipates the misreading that says 'if I should not want results, why act?' and blocks it in advance."
-          essence="Perform your action. Release the fruit. Do not disengage."
+          insight="Probably the Gita's best-known verse, it puts the core of karma yoga into one shloka. Note the fourth line: Krishna anticipates the misreading that says 'if I should not want results, why act?' and blocks it in advance."
+          essence="Your right is to the work, never to its results; do not cling to inaction."
         />
 
         <div className="hindi-block">
@@ -461,7 +461,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaningLabel="Translation"
           meaning="For the protection of the good, for the destruction of evildoers, for the firm establishment of dharma, I take birth age after age."
           insightLabel="Context & Use"
-          insight="The immediate continuation of 4.7 and often chanted together with it. Note the three infinitives: protection, destruction, establishment. The avatara is not only a saviour of the good but an active restorer of the order that has been broken. This is the verse that gave Indian devotional life its endlessly renewable hope."
+          insight="The immediate continuation of 4.7 and often chanted together with it. Note the three infinitives: protection, destruction, establishment. The avatara protects the good and also restores the order that has been broken."
           essence="I return, age after age, to protect the good and restore dharma."
         />
 
@@ -479,8 +479,8 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaningLabel="Translation"
           meaning="I am seated in the hearts of all beings. From me come memory, knowledge, and their loss. I alone am to be known through all the Vedas. I am the author of Vedanta, and I am also the knower of the Vedas."
           insightLabel="Context & Use"
-          insight="One of Krishna's most explicit statements of his indwelling nature. It is chanted before meals in many households as part of the Vaishnava tradition — a reminder that the giver, the food, and the eater are all held within the same divine presence. Also central to the Upanishadic teaching that Bhagavan is not distant but seated in the heart."
-          essence="The divine is seated in every heart, and every scripture points there."
+          insight="Krishna says plainly that he is seated in every heart. Chapter 15, which contains this verse, is chanted before meals in many households, and the verse echoes the Upanishadic teaching that the divine dwells in the heart."
+          essence="Krishna is seated in every heart and is the one to be known through the Vedas."
         />
 
         <div className="hindi-block">
@@ -510,7 +510,7 @@ export default function TwentyFamousSanskritShlokasPage() {
 
         <h3>Part III: On Wisdom and Truth</h3>
         <p>
-          These four are the great Upanishadic and Vedic statements &mdash; the sentences that Indian philosophy has been unpacking for three thousand years. Some are quoted daily by politicians and journalists without any awareness of their source; all four repay a lifetime of contemplation.
+          These four are the great Upanishadic and Vedic statements &mdash; the sentences Indian philosophy has kept coming back to. Some are quoted by politicians and journalists who may not know the source.
         </p>
 
         <ShlokaCard
@@ -520,7 +520,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaningLabel="Translation"
           meaning="Truth alone triumphs, not untruth. By truth is laid out the path of the gods, along which the sages, their desires fulfilled, ascend to where the supreme treasure of truth is placed."
           insightLabel="Context & Use"
-          insight="The first three words, satyameva jayate, are the national motto of the Republic of India, inscribed at the base of the Ashoka emblem. Note that the full verse makes truth not only a moral principle but a road — the path along which the rishis themselves have travelled to the highest reality."
+          insight="The first three words, satyameva jayate, are the national motto of the Republic of India, inscribed at the base of the Ashoka emblem. The full verse also makes truth a road: the path the rishis travel to the highest reality."
           essence="Truth alone triumphs. It is also the road."
         />
 
@@ -538,7 +538,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaningLabel="Translation"
           meaning="&lsquo;This one is mine, that one is a stranger&rsquo; &mdash; such calculation belongs to the small-minded. For those of noble character, the whole earth is one family."
           insightLabel="Context & Use"
-          insight="Inscribed in the Parliament House of India and quoted by every Prime Minister at some point. Notice the moral architecture: it is not simply a sentimental claim about universal brotherhood. It is a distinction between two kinds of character — the small mind that classifies, and the udara (noble, expansive) mind that includes."
+          insight="Inscribed in the Parliament House of India and often quoted by Indian leaders. The full verse draws a line between two kinds of character: the small mind that sorts people into mine and a stranger's, and the udara (noble, expansive) mind that includes everyone."
           essence="The whole earth is one family — for those large enough to feel it."
         />
 
@@ -556,7 +556,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaningLabel="Translation"
           meaning="Truth is one; the wise speak of it by many names. They call it Agni, Yama, Matarishvan."
           insightLabel="Context & Use"
-          insight="The oldest statement of religious pluralism in world literature, sitting inside the Rig Veda itself. Vivekananda quoted this line at the 1893 Parliament of Religions in Chicago, and it has been the intellectual foundation of Hindu tolerance of many paths ever since. The reality is one — the vocabularies are many."
+          insight="An early statement of religious pluralism, from the Rig Veda itself. It is often cited as the basis of the Hindu acceptance of many paths."
           essence="Truth is one. The wise call it by many names."
         />
 
@@ -587,7 +587,7 @@ export default function TwentyFamousSanskritShlokasPage() {
 
         <h3>Part IV: On Devotion and the Guru</h3>
         <p>
-          Three of the most tender verses in the tradition, addressed to the teacher, the divine as parent, and the daily blessing on the working hands.
+          Three verses addressed to the teacher, the divine as parent, and the daily blessing on the working hands.
         </p>
 
         <ShlokaCard
@@ -597,7 +597,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaningLabel="Translation"
           meaning="The guru is Brahma. The guru is Vishnu. The guru is the Lord Maheshwara. The guru is verily the supreme Brahman. To that revered guru, I bow."
           insightLabel="Context & Use"
-          insight="Chanted daily at the start of any traditional class in music, dance, Sanskrit, or philosophy. Its logic is bold: the teacher is not merely a representative of the divine but, in the moment of teaching, the divine itself. Also chanted on Guru Purnima, the summer full moon dedicated to the teacher."
+          insight="Chanted at the start of many traditional classes in music, dance, Sanskrit and philosophy. It identifies the teacher with Brahma, Vishnu and Maheshvara, and with the supreme Brahman itself. Also chanted on Guru Purnima, the summer full moon dedicated to the teacher."
           essence="The one who removes your ignorance is, at that moment, the divine itself."
         />
 
@@ -656,7 +656,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaningLabel="Translation"
           meaning="May all beings be happy. May all be free from illness. May all see what is auspicious. May no one suffer."
           insightLabel="Context & Use"
-          insight="Perhaps the most beloved shanti mantra in modern Hindu practice. Chanted at the close of every yoga class in the world and at the end of most Sanskrit gatherings. Notice its structure: four universal wishes, ending with the negative form — that no one, anywhere, be assigned a share of suffering."
+          insight="A widely loved shanti mantra, chanted at the close of many yoga classes and Sanskrit gatherings. Notice its structure: four universal wishes, ending with the negative form — that no one, anywhere, be assigned a share of suffering."
           essence="Let everyone, everywhere, be well."
         />
 
@@ -692,7 +692,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaningLabel="Translation"
           meaning="Om. That is whole. This is whole. From the whole, the whole emerges. When the whole is taken from the whole, the whole alone remains. Om, peace, peace, peace."
           insightLabel="Context & Use"
-          insight="The shanti mantra of the Isha, Brihadaranyaka, and several other Upanishads. It is a mathematical impossibility rendered as a philosophical statement: an infinity from which an infinity is subtracted still equals infinity. The Upanishad is defining what wholeness (purnam) actually means &mdash; that which is not diminished by anything given or removed."
+          insight="The shanti mantra of the Isha, Brihadaranyaka, and several other Upanishads. It reads like a statement about infinity: take the whole from the whole, and the whole remains. Purnam here is a wholeness that nothing given or removed can diminish."
           essence="The whole gives rise to the whole. When the whole is subtracted from the whole, wholeness remains."
         />
 
@@ -711,7 +711,7 @@ export default function TwentyFamousSanskritShlokasPage() {
           meaning="Om. Peace, peace, peace."
           insightLabel="Context & Use"
           insight="The invariant closing of every Vedic recitation and every Upanishadic peace mantra. Traditional commentators explain the threefold repetition as a prayer for peace on three planes: adhidaivika (from divine or cosmic forces beyond our control), adhibhautika (from other beings and the material world), and adhyatmika (from within our own body and mind)."
-          essence="Peace from the cosmos. Peace from other beings. Peace within."
+          essence="Peace from forces beyond us, from other beings, and within."
         />
 
         <div className="hindi-block">
@@ -721,13 +721,11 @@ export default function TwentyFamousSanskritShlokasPage() {
           </div>
         </div>
 
-        <div className="pull-quote">
-          Twenty verses. Four invocations, five from the Gita, four on truth, three on the guru, four for peace. If you carried only these into a lifetime of Sanskrit, you would be carrying most of what the tradition considers indispensable.
-        </div>
+        
 
         <h2>How to Memorize Sanskrit Shlokas</h2>
         <p>
-          Sanskrit shlokas were designed to be carried in the body, not stored on a page. The traditional method of memorisation has almost nothing in common with the way most modern students try to learn them. Here is what actually works.
+          Shlokas were composed to be memorised and chanted aloud. The traditional method differs from the way most modern students try to learn them, and it works like this.
         </p>
 
         <ul className="practice-list">
@@ -735,7 +733,7 @@ export default function TwentyFamousSanskritShlokasPage() {
             <span><strong>Chant aloud, do not read silently.</strong> Sanskrit is a phonetic language. The shloka is not fully in you until your mouth knows it. Chant each new shloka out loud, at half your normal speaking pace, twice in the morning and twice at night for a week.</span>
           </li>
           <li>
-            <span><strong>Learn the meter, not just the words.</strong> Notice where the eight-syllable padas break. Feel the rhythm before you worry about the meaning. Almost every anushtubh has the same underlying pulse, and once your body feels it, new shlokas take far less effort to acquire.</span>
+            <span><strong>Learn the meter as well as the words.</strong> Notice where the eight-syllable padas break. Feel the rhythm before you worry about the meaning. Almost every anushtubh has the same underlying pulse, and once you can feel it, new shlokas take far less effort to acquire.</span>
           </li>
           <li>
             <span><strong>Read the IAST alongside the Devanagari.</strong> The romanised transliteration with diacritics tells you exactly where the long vowels and retroflex consonants fall. If you only learn from an ordinary English spelling, you will chant the shloka wrong for the rest of your life.</span>
@@ -750,11 +748,12 @@ export default function TwentyFamousSanskritShlokasPage() {
 
         <h2>One Shloka a Day</h2>
         <p>
-          If you want a simple, phone-based way to do the practice above, the Wisdom app was built for exactly this. Each morning it delivers one Sanskrit shloka &mdash; from the Gita, the Upanishads, or the great stotras &mdash; with the Devanagari, the IAST transliteration, the English meaning, a short commentary on how the verse applies to modern life, and a home screen widget so the verse waits for you every time you unlock your phone.
+          If you want help keeping up the practice above, the Wisdom app can put today&apos;s shloka on your Lock Screen, and it can give you seven verses for what you are going through, one a day, read aloud with the Sanskrit.
         </p>
         <p>
-          Start with the twenty in this article. Then let the app deliver the next one tomorrow, and the one after that, and by the end of a year you will have carried several hundred shlokas across the year with you.
+          Start with the twenty in this article, one a day.
         </p>
+      <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the description of Om Purnamadah&apos;s form and the meal-time use of Gita 15.15 (chapter 15 is chanted before meals), and removed overclaims about where and by whom these verses are quoted; copy edited.</p>
       </div>
 
 
@@ -765,7 +764,7 @@ export default function TwentyFamousSanskritShlokasPage() {
         <div className="faq-item">
           <strong>What is a shloka in Sanskrit?</strong>
           <p>
-            A shloka (श्लोक) is the standard verse form of classical Sanskrit poetry. Its most common metre is the <em>anushtubh</em>: 32 syllables arranged in four quarters (padas) of eight syllables each. The Bhagavad Gita, the Ramayana, and much of the Mahabharata are composed in this metre. The shloka is designed for oral memorisation &mdash; the rhythm makes it possible to carry the text in the body across a lifetime.
+            A shloka (श्लोक) is the standard verse form of classical Sanskrit poetry. Its most common metre is the <em>anushtubh</em>: 32 syllables arranged in four quarters (padas) of eight syllables each. The Bhagavad Gita, the Ramayana, and much of the Mahabharata are composed in this metre. The shloka is designed for oral memorisation &mdash; the rhythm makes it possible to keep the text in memory across a lifetime.
           </p>
         </div>
 
@@ -793,7 +792,7 @@ export default function TwentyFamousSanskritShlokasPage() {
         <div className="faq-item">
           <strong>Which is the most powerful Sanskrit shloka?</strong>
           <p>
-            &ldquo;Powerful&rdquo; is tradition-dependent. The Gayatri Mantra is the most universally revered &mdash; it is the mantra given at the sacred thread ceremony and considered the mother of the Vedas. The Mrityunjaya mantra (<em>Om Tryambakam Yajamahe</em>) is invoked for healing and long life. From the Gita, BG 18.66 (<em>sarva-dharman parityajya</em>) is called the charama shloka &mdash; the ultimate verse. Ultimately, the shloka you actually recite daily becomes the powerful one for you.
+            &ldquo;Powerful&rdquo; is tradition-dependent. The Gayatri Mantra is widely revered &mdash; it is the mantra given at the sacred thread ceremony and considered the mother of the Vedas. The Mrityunjaya mantra (<em>Om Tryambakam Yajamahe</em>) is invoked for healing and long life. From the Gita, BG 18.66 (<em>sarva-dharman parityajya</em>) is called the charama shloka &mdash; the ultimate verse. In practice, the shloka you recite daily is the one you will come to rely on.
           </p>
         </div>
 

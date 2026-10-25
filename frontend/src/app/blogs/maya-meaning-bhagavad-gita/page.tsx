@@ -6,15 +6,15 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Maya Meaning — Illusion in the Bhagavad Gita",
+  title: "Maya Meaning: Illusion in the Bhagavad Gita",
   description:
-    "Maya doesn't mean the world is fake. In the Gita, it is the power that makes the real appear as something other than it is. BG 7.14 calls it divine and 'hard to cross.' Here's what that actually means.",
+    "In the Gita, maya is the power that makes the real appear as something other than it is. BG 7.14 calls it divine, made of the three gunas, and hard to cross. A verse-by-verse reading.",
   keywords:
     'maya meaning, maya illusion bhagavad gita, what is maya in hinduism, maya meaning in hindi, maya definition sanskrit, maya vedanta, maya vs brahman, bhagavad gita 7.14 maya, daivi maya meaning',
   openGraph: {
-    title: "Maya Meaning — Illusion in the Bhagavad Gita | Wisdom",
+    title: "Maya Meaning: Illusion in the Bhagavad Gita | Wisdom",
     description:
-      "Maya is not that the world is a dream. It is the power that makes the real appear as something other than it is. The Gita says it is divine, woven of the three gunas, and almost impossible to cross except by surrender.",
+      "Maya is the power that makes the real appear as something other than it is. The Gita says it is divine, woven of the three gunas, and crossed by taking refuge in Krishna (7.14).",
     type: 'article',
     url: 'https://wisdomquotes.in/blogs/maya-meaning-bhagavad-gita',
     siteName: 'Wisdom',
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sansearchapp',
     creator: '@thisisashukla',
-    title: "Maya Meaning — Illusion in the Bhagavad Gita | Wisdom",
-    description: "Maya doesn't mean the world is fake. In the Gita, it is the power that makes the real appear as something other than it is. BG 7.14 calls it divine and 'hard to cross.'",
+    title: "Maya Meaning: Illusion in the Bhagavad Gita | Wisdom",
+    description: "In the Gita, maya is the power that makes the real appear as something other than it is. BG 7.14 calls it divine and hard to cross.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -279,9 +279,9 @@ const schemas = [
   {
     '@context': 'https://schema.org',
     '@type': ['Article', 'LearningResource'],
-    headline: 'Maya Meaning — Illusion in the Bhagavad Gita',
+    headline: 'Maya Meaning: Illusion in the Bhagavad Gita',
     description:
-      "Maya doesn't mean the world is fake. In the Gita, it is the power that makes the real appear as something other than it is — divine, woven of the gunas, and hard to cross.",
+      "In the Gita, maya is the power that makes the real appear as something other than it is. It is divine, woven of the gunas, and hard to cross.",
     datePublished: '2026-07-17',
     dateModified: '2026-08-01',
     author: {
@@ -313,7 +313,7 @@ const schemas = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Wisdom', item: 'https://wisdomquotes.in/' },
       { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://wisdomquotes.in/blogs/' },
-      { '@type': 'ListItem', position: 3, name: 'Maya Meaning — Illusion in the Bhagavad Gita', item: 'https://wisdomquotes.in/blogs/maya-meaning-bhagavad-gita' },
+      { '@type': 'ListItem', position: 3, name: 'Maya Meaning: Illusion in the Bhagavad Gita', item: 'https://wisdomquotes.in/blogs/maya-meaning-bhagavad-gita' },
     ],
   },
   {
@@ -325,7 +325,7 @@ const schemas = [
         name: 'What does maya mean in the Bhagavad Gita?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Maya (Sanskrit: माया) in the Bhagavad Gita refers to the divine power by which the real appears as something other than it is. The Gita's main statement is in BG 7.14: 'daivī hyeṣā guṇamayī mama māyā duratyayā' — 'This divine maya of mine, composed of the three gunas, is extremely difficult to cross. Only those who take refuge in me cross beyond it.' Maya is not a claim that the world doesn't exist. It is the power that causes the infinite, undivided reality (Brahman/Krishna) to appear as a multiplicity of separate things.",
+          text: "Maya (Sanskrit: माया) in the Bhagavad Gita refers to the divine power by which the real appears as something other than it is. The Gita's main statement is in BG 7.14: 'daivī hyeṣā guṇamayī mama māyā duratyayā' — 'This divine maya of mine, composed of the three gunas, is extremely difficult to cross. Only those who take refuge in me cross beyond it.' The word makes no claim that the world doesn't exist. Maya is the power that causes the undivided reality (Brahman, Krishna) to appear as many separate things.",
         },
       },
       {
@@ -333,7 +333,7 @@ const schemas = [
         name: 'Does maya mean the world is an illusion?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Not in the sense of 'not real.' The Gita does not teach nihilism or that sensory experience is fabricated. Maya is better understood as misperception of what is real — seeing the world as independent and self-sustaining when it is, in the Gita's view, grounded in and sustained by the divine. The confusion is not 'the world does not exist' but 'the world as it appears conceals what it ultimately is.' An analogy: a rope mistaken for a snake in dim light is real as a rope; it is not real as a snake. The error is not in the perception of something, but in what that something is taken to be.",
+          text: "Nowhere does the Gita teach that the world is unreal or that sensory experience is fabricated. Maya is better understood as misperception of what is real: seeing the world as independent and self-sustaining when, in the Gita's view, it rests on the divine. Vedanta's analogy is a rope mistaken for a snake in dim light. The rope is real; the error lies in what it is taken to be.",
         },
       },
       {
@@ -341,7 +341,7 @@ const schemas = [
         name: 'What are the three gunas and how do they relate to maya?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The three gunas — sattva (clarity, lightness), rajas (activity, passion), and tamas (inertia, darkness) — are the forces that constitute all of manifest nature (prakriti). BG 7.14 describes maya as guṇamayī: made of the gunas. This means that maya operates through the three modes of nature. When rajas is dominant, the mind is restless and fixated on acquiring. When tamas is dominant, the mind is dull and unaware. Even sattva — clear, luminous — can reinforce the sense of being a separate, pure self rather than dissolving that sense. All three gunas, even the clearest, are part of the maya-structure. Transcending maya means transcending the gunas — becoming guṇātīta, as described in BG 14.',
+          text: 'The three gunas, sattva (clarity, lightness), rajas (activity, passion) and tamas (inertia, darkness), make up all of manifest nature (prakriti). BG 7.14 describes maya as guṇamayī, made of the gunas, so maya works through them. When rajas dominates, the mind is restless and set on acquiring. When tamas dominates, the mind is dull. BG 14.6 says even sattva binds, through attachment to happiness and knowledge. Crossing maya means going beyond all three gunas, which Chapter 14 calls guṇātīta.',
         },
       },
       {
@@ -349,7 +349,7 @@ const schemas = [
         name: 'How do you cross maya according to the Gita?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "BG 7.14 ends with the answer: 'māmeva ye prapadyante māyāmetāṃ taranti te' — 'Those who take refuge in me alone cross this maya.' The Gita does not present maya as something you intellectually argue your way through. The prescribed crossing is surrender (prapatti) and devotion (bhakti) — specifically, orienting consciousness toward what is beyond the gunas. BG 14.26 says those who serve with unwavering bhakti yoga transcend the gunas and become Brahman. The movement is not conceptual analysis but a shift in where consciousness is rooted.",
+          text: "BG 7.14 ends with the answer: 'māmeva ye prapadyante māyāmetāṃ taranti te' — 'Those who take refuge in me alone cross this maya.' The Gita gives no argument for getting past maya. The crossing it names is surrender (prapatti) and devotion (bhakti). BG 14.26 says those who serve Krishna with unwavering bhakti yoga go beyond the gunas and become fit to become Brahman.",
         },
       },
       {
@@ -357,7 +357,7 @@ const schemas = [
         name: 'What is the difference between maya and avidya?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Maya and avidya (ignorance) are related but not identical. Maya is the cosmic power that projects the apparent diversity — it operates at the level of Ishvara (the cosmic divine). Avidya is the individual-level ignorance that misidentifies the self with the body-mind complex — it operates at the level of the jiva (individual atman). Avidya is, you could say, maya seen from the inside of the individual experience. When the Upanishads and Vedanta speak of removing maya, they usually mean removing avidya: not cancelling the appearance of the world, but correcting the misidentification of what you are within it.",
+          text: "The two are related. In later Advaita Vedanta, maya is the cosmic power that projects apparent diversity and belongs to Ishvara (the Lord). Avidya is the individual's ignorance that identifies the self with body and mind, and belongs to the jiva. When Advaita teachers speak of removing maya, they usually mean removing avidya: the world keeps appearing, and the mistake about what you are within it is corrected. The Gita itself uses the word maya and draws no such distinction.",
         },
       },
     ],
@@ -395,10 +395,10 @@ export default function MayaMeaningPage() {
           </div>
           <h1 className="article-title">
             Maya: Illusion in the Bhagavad Gita<br />
-            <em>(And What It Actually Means)</em>
+            <em>What Maya Means in Chapters 7, 14 and 18</em>
           </h1>
           <p className="article-subtitle">
-            The most common explanation of māyā is that the world is an illusion. The Gita says something more precise: the world is real, but seen through maya it appears as something other than what it is. The difference matters.
+            The common explanation of māyā is that the world is an illusion. The Gita says the world is real, and that seen through maya it appears as something other than what it is.
           </p>
           <div className="article-meta">
             <span className="meta-item">
@@ -433,13 +433,13 @@ export default function MayaMeaningPage() {
         <figure className="chapter-image">
           <img
             src="/assets/chapter7.webp"
-            alt="Krishna revealing knowledge and the nature of reality — the chapter where maya is named most precisely"
+            alt="Krishna revealing knowledge and the nature of reality, from Chapter 7 where maya is named"
             width="1200"
             height="675"
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>Chapter 7 — where Krishna names maya and tells Arjuna how to cross it</figcaption>
+          <figcaption>Chapter 7, where Krishna names maya and tells Arjuna how to cross it</figcaption>
         </figure>
 
         <div className="definition-box">
@@ -447,29 +447,28 @@ export default function MayaMeaningPage() {
           <div className="def-word">माया</div>
           <div className="def-iast">māyā · noun · feminine</div>
           <div className="def-meaning">
-            Derived from the root <em>mā</em> (to measure, to create, or &ldquo;not&rdquo; depending on interpretation).
-            The power that creates appearances; the force by which the infinite presents itself as finite multiplicity.
+            Usually derived from the root <em>mā</em> (to measure, to form).
+            The power that creates appearances, by which the one presents itself as many.
             In the Gita: the divine creative power (daivī māyā) composed of the three guṇas, through which the world
-            appears distinct from its ground. Not illusion in the sense of non-existence, but appearance in the sense
-            of not-what-it-seems.
+            appears distinct from its ground. The world it shows exists; it is not what it seems.
           </div>
         </div>
 
         <p className="lead">
-          When people say the world is maya, they usually mean something like: the world is fake, a dream, not real. That is not what the Bhagavad Gita says. The Gita&apos;s treatment of maya is more precise — and more interesting — than that popular summary. It names maya as divine. It says maya is composed of the three gunas. And it says crossing maya requires not argument, but surrender.
+          When people say the world is maya, they usually mean the world is fake, a dream. The Bhagavad Gita says three other things. It names maya as divine. It says maya is composed of the three gunas. And it says the way across maya is to take refuge in Krishna (7.14).
         </p>
 
-        <h2>What Maya Actually Means</h2>
+        <h2>The Word and Its Uses</h2>
         <p>
-          The Sanskrit etymology is contested. One reading derives maya from the root <em>mā</em> meaning &ldquo;to measure&rdquo; or &ldquo;to create&rdquo; — maya as the measuring-out of the world into its apparent forms and distinctions. Another takes <em>ma</em> as negation and <em>ya</em> as &ldquo;this,&rdquo; giving &ldquo;not this&rdquo; — that which is not ultimately what it appears. Both point to the same underlying idea: maya is the power that creates the appearance of distinction where the underlying reality is undivided.
+          The etymology is debated. The usual derivation is from the root <em>mā</em>, &ldquo;to measure&rdquo; or &ldquo;to form&rdquo;: maya as the measuring-out of the world into separate forms. A traditional folk etymology reads <em>mā yā</em>, &ldquo;that which is not.&rdquo; Both readings point to a power that makes the undivided look divided.
         </p>
         <p>
-          The Gita uses maya in several registers. Sometimes it means Krishna&apos;s own creative power — the yogamaya by which he conceals his true nature (BG 7.25: &ldquo;veiled by my yogamaya, I am not known to all&rdquo;). Sometimes it means the force that binds — the divine maya composed of the three gunas that makes crossing to the truth &ldquo;extremely difficult&rdquo; (BG 7.14). And in BG 18.61, it appears as the location of all beings: they wander on the machine of the body, mounted as if on a device, by the maya of the divine.
+          In the Gita, maya has several senses. Sometimes it means Krishna&apos;s own power, the yogamaya that veils him (BG 7.25: &ldquo;veiled by my yogamaya, I am not known to all&rdquo;). Sometimes it means the force that binds, the divine maya of the three gunas that is &ldquo;hard to cross&rdquo; (BG 7.14). In BG 18.61 it is the means by which the Lord in the heart makes all beings revolve, as if mounted on a machine.
         </p>
 
         <h2>The Classic Misunderstanding: Maya ≠ Nothing</h2>
         <p>
-          The &ldquo;world is an illusion&rdquo; reading comes partly from a popular misreading of Advaita Vedanta (particularly Shankara&apos;s formulation) and partly from a looseness in translation. It implies that your body, the table in front of you, the people you love, the events of your life — none of these are real.
+          The &ldquo;world is an illusion&rdquo; reading comes partly from a popular simplification of Shankara&apos;s Advaita Vedanta and partly from loose translation. It implies that your body, the table in front of you and the people you love are unreal.
         </p>
 
         <div className="comparison-grid">
@@ -478,21 +477,21 @@ export default function MayaMeaningPage() {
             <p>The world does not exist. Your experience is fabricated. Nothing is real. The material world is worthless or evil. What you see is a hallucination.</p>
           </div>
           <div className="comparison-cell">
-            <div className="cell-label">What Maya Actually Means (Gita)</div>
-            <p>The world appears as independently self-sustaining, when it is not. The many appear as separate from each other and from the divine ground, when they are not. The relative is mistaken for the ultimate.</p>
+            <div className="cell-label">What Maya Means in the Gita</div>
+            <p>The world appears to sustain itself independently. The many appear separate from each other and from the divine ground. The relative is mistaken for the ultimate.</p>
           </div>
         </div>
 
         <p>
-          The classic Vedantic analogy: in dim light, you mistake a rope for a snake. The snake causes real fear — your reaction is genuine. But the snake is not there. When light reveals the rope, the snake-appearance vanishes without the rope vanishing. The rope was always there. What changed is not the object but the perception. Maya is the dim light. Jnana (knowledge) or bhakti (devotion) is the lamp.
+          The classic Vedantic analogy: in dim light, you mistake a rope for a snake. The fear is real, though no snake is there. When light falls on the rope, the snake vanishes and the rope stays. Only the perception changed. Maya is the dim light, and jnana (knowledge) or bhakti (devotion) is the lamp.
         </p>
         <p>
-          The world in this analogy is the rope, not the snake. It is real. What is unreal is the snake — the interpretation of the world as independent, self-sustaining, fully described by its appearances, disconnected from its divine ground.
+          In this analogy the world is the rope, and it is real. The snake is the reading of the world as independent, fully described by its appearances, and cut off from its divine ground.
         </p>
 
-        <h2>BG 7.14 — The Central Statement</h2>
+        <h2>BG 7.14: The Central Statement</h2>
         <p>
-          Chapter 7 is where Krishna makes the Gita&apos;s clearest statement about maya. The context matters: Krishna has been describing how rare it is for someone to truly know him. Most people are in various stages of seeking, turned toward him for different reasons. Now he explains why:
+          Chapter 7 holds the Gita&apos;s main statement about maya. In 7.13 Krishna says the whole world is deluded by states made of the three gunas and fails to recognise him as beyond them. The next verse explains why:
         </p>
 
         <ShlokaCard
@@ -502,23 +501,23 @@ export default function MayaMeaningPage() {
           meaningLabel="Translation"
           meaning="Indeed, this divine maya of mine, composed of the three gunas, is extremely difficult to cross. Those who take refuge in me alone cross beyond this maya."
           insightLabel="What This Teaches"
-          insight="Three things in this verse deserve attention. First: daivī — divine. Maya is not opposed to the divine or external to it. It is the divine's own creative power. This is why maya cannot be defeated by arguing against the world. Second: guṇamayī — made of the gunas. Maya operates through the three modes: sattva, rajas, and tamas. These are not external forces attacking from outside. They are the very fabric of how experience presents itself. Even the clearest mental state (sattvic) is part of the maya-structure. Third: māmeva ye prapadyante — those who take refuge in me alone. The crossing is not intellectual. It is prapatti — complete surrender, orientation of consciousness toward what is beyond the gunas. This is the Gita's answer to maya: not philosophy, but bhakti."
-          essence="Maya is divine, pervasive, and woven of the gunas. The way through is not argument but surrender."
+          insight="Three words carry the verse. Daivī, divine: maya is Krishna's own power, so arguing against the world will not defeat it. Guṇamayī, made of the gunas: maya works through sattva, rajas and tamas, the stuff experience is made of, and even a sattvic state belongs to it. Māmeva ye prapadyante, those who take refuge in me alone: the crossing Krishna names is prapatti, surrender to him."
+          essence="My divine maya of the gunas is hard to cross; those who take refuge in me cross it."
         />
 
         <div className="pull-quote">
-          Maya is not the prison. It is the light through which the prison appears, produced by the same source that is the liberation.
+          The maya that binds and the refuge that frees come from the same source, Krishna, in the same verse.
         </div>
 
         <h2>Maya, Prakriti, and the Three Gunas</h2>
         <p>
-          Understanding maya requires understanding its relationship to two other key Gita terms: prakriti and the gunas.
+          Maya is tied to two other Gita terms: prakriti and the gunas.
         </p>
         <p>
-          Prakriti is the totality of manifest nature — everything that arises, changes, and passes. The gunas are the three forces that constitute prakriti: sattva (clarity, lightness, illumination), rajas (activity, passion, restlessness), and tamas (inertia, heaviness, obscuration). Everything in manifest existence is some combination of these three.
+          Prakriti is the whole of manifest nature, everything that arises, changes and passes. The gunas are the three forces that constitute prakriti: sattva (clarity, lightness, illumination), rajas (activity, passion, restlessness), and tamas (inertia, heaviness, obscuration). Everything in manifest existence is some combination of these three.
         </p>
         <p>
-          Maya is the power through which this prakriti-show appears as real, complete, and self-sufficient. It is what makes the gunas&apos; play feel like the whole story. When rajas is dominant, the experience of desire and acquisition feels like the only meaningful thing in the world. When tamas is dominant, the fog of unconsciousness feels like ground. Even sattva, which produces clarity and goodness, can reinforce the sense of being a separate, pure self — rather than dissolving that sense into recognition of the ground.
+          Maya makes this play of prakriti look complete and self-sufficient, as if the gunas were the whole story. When rajas dominates, desire and acquisition feel like all that matters. When tamas dominates, dullness feels like solid ground. BG 14.6 says even sattva binds, through attachment to happiness and to knowledge.
         </p>
 
         <ShlokaCard
@@ -526,18 +525,18 @@ export default function MayaMeaningPage() {
           sanskrit="नान्यं गुणेभ्यः कर्तारं यदा द्रष्टानुपश्यति । गुणेभ्यश्च परं वेत्ति मद्भावं सोऽधिगच्छति ॥"
           iast="nānyaṃ guṇebhyaḥ kartāraṃ yadā draṣṭānupaśyati | guṇebhyaśca paraṃ vetti madbhāvaṃ so'dhigacchati ||"
           meaningLabel="Translation"
-          meaning="When the seer perceives no doer other than the gunas, and knows what is beyond the gunas — they attain my state of being."
+          meaning="When the seer perceives no doer other than the gunas, and knows what is beyond the gunas, they attain my state of being."
           insightLabel="What This Teaches"
-          insight="This verse from Chapter 14 describes what crossing maya actually looks like from the inside. The seer (drashtri) — the witnessing awareness — stops finding any doer other than the gunas. The actions arise, but there is no I-as-ultimate-author of them. And simultaneously, that seer knows 'what is beyond the gunas' — the witness itself, which is not guna-born. This recognition — I am not the gunas, I am what watches them — is the moment of seeing through maya. Not the disappearance of the world, but the correction of what the world is seen as."
-          essence="Seeing the gunas clearly — and what is beyond them — is what crossing maya looks like from inside experience."
+          insight="This verse describes crossing maya from the inside. The seer (draṣṭā), the witnessing awareness, finds no doer other than the gunas. Actions still arise, and no I claims to be their author. The same seer knows what is beyond the gunas, the witness that the gunas did not produce. The world stays; what changes is how it is seen."
+          essence="Who sees the gunas as the only doers, and knows what lies beyond them, reaches me."
         />
 
         <h2>The Devotional Path Through Maya</h2>
         <p>
-          The Gita offers multiple paths through maya — knowledge (jnana), meditation (dhyana), action (karma yoga). But its own stated preference is bhakti: devotion. And the mechanism is not complicated.
+          The Gita describes several paths through maya: knowledge (jnana), meditation (dhyana) and action (karma yoga). In 7.14, 18.62 and 18.66, the answer Krishna gives is refuge in him.
         </p>
         <p>
-          When consciousness is oriented entirely toward the self — its preservation, enhancement, and validation — the maya-structure is reinforced with every thought. When consciousness is oriented toward something beyond the self, that self-referential loop begins to lose its grip. The gunas still operate. The world still appears. But the identification with the guna-play as the ultimate truth weakens.
+          A mind turned entirely toward its own preservation and standing strengthens maya with every thought. A mind turned toward something beyond itself loosens that loop. The gunas keep working and the world keeps appearing, while the belief that their play is the final truth weakens.
         </p>
 
         <ShlokaCard
@@ -545,15 +544,15 @@ export default function MayaMeaningPage() {
           sanskrit="न मां दुष्कृतिनो मूढाः प्रपद्यन्ते नराधमाः । माययापहृतज्ञाना आसुरं भावमाश्रिताः ॥"
           iast="na māṃ duṣkṛtino mūḍhāḥ prapadyante narādhamāḥ | māyayāpahṛtajñānā āsuraṃ bhāvamāśritāḥ ||"
           meaningLabel="Translation"
-          meaning="The wrongdoers, the deluded, the lowest of men — those whose knowledge has been stolen by maya, those who rest in a demoniac orientation — do not take refuge in me."
+          meaning="The wrongdoers, the deluded, the lowest of men, those whose knowledge has been stolen by maya and who rest in a demoniac nature, do not take refuge in me."
           insightLabel="What This Teaches"
-          insight="This verse, paired immediately with BG 7.14, completes the picture. BG 7.14 says: take refuge in me and cross maya. BG 7.15 says: those who don't take refuge are those whose knowledge has been stolen (apahrita-jnana) by maya. The theft of knowledge is not academic ignorance. It is the operation of maya at the level of how someone organizes their life: around the self and its extensions, rather than toward the divine. The 'demoniac orientation' here is not supernatural evil — it is the ordinary human condition of complete self-enclosure."
-          essence="Maya steals knowledge not by making people stupid, but by making the self-referential loop feel complete."
+          insight="BG 7.14 says: take refuge in me and cross maya. BG 7.15 names those who refuse that refuge: people whose knowledge has been stolen (apahṛta-jñāna) by maya. The theft shows in how they order their lives, around the self and its extensions. Chapter 16 describes the demoniac nature in detail, as pride, greed and self-enclosure."
+          essence="Those whose knowledge maya has stolen do not take refuge in me."
         />
 
         <h2>How to Cross It (BG 18.61–62)</h2>
         <p>
-          Near the Gita&apos;s end, Krishna returns to maya one last time — and the language is perhaps the most striking in the entire text.
+          Near the end of the Gita, Krishna returns to maya once more, with the image of a machine.
         </p>
 
         <ShlokaCard
@@ -563,33 +562,31 @@ export default function MayaMeaningPage() {
           meaningLabel="Translation"
           meaning="The Lord dwells in the heart of all beings, O Arjuna, causing all beings to wander, mounted as if on a machine, by maya."
           insightLabel="What This Teaches"
-          insight="'Yantrā-rūdhāni māyayā' — mounted on a device by maya. The image is of beings placed on a mechanism that moves them, while they experience themselves as self-directed. This is not the Gita being cruel or fatalistic. It is a description of what life looks like from the perspective of what is seeing clearly: the divine at the heart, and beings moving through their lives driven by the gunas they take to be themselves. The very next verse (18.62) gives the resolution: take refuge in the one who dwells in the heart. The machine is still running. What changes is where you stand in relation to it."
-          essence="All beings are moved by maya's device. The one who knows this is already beginning to be free of it."
+          insight="Yantrārūḍhāni māyayā: mounted on a machine, by maya. Beings ride a mechanism that moves them while they feel self-directed. The Lord sits in the heart, and beings move through life driven by the gunas they take to be themselves. The next verse (18.62) gives the way out: take refuge in the one who dwells in the heart, and by his grace reach peace."
+          essence="The Lord in every heart turns all beings by maya, as if mounted on a machine."
         />
 
         <div className="highlight-box">
-          <h3>The Three Levels at Which Maya Operates</h3>
+          <h3>Where the Gita Uses the Word Maya</h3>
           <p>
-            <strong>Cosmic maya</strong> (daivī māyā): The divine creative power that projects the world of multiplicity from undivided Brahman. At this level, maya is not a problem but a function — the universe needs it to exist as a universe.
+            <strong>BG 4.6</strong> (ātmamāyayā): Krishna says he is unborn, yet takes birth by his own maya, resting on his own nature.
           </p>
           <p>
-            <strong>Collective maya</strong> (the gunas as shared reality): The three modes constitute the world most people share and agree upon — their values, their sense of what matters, their orientation toward pleasure and pain. This is harder to pierce because it is confirmed by every interaction.
+            <strong>BG 7.14–15 and 7.25</strong>: the divine maya of the gunas that is hard to cross, the people whose knowledge it has stolen, and the yogamaya that veils Krishna from those who do not know him.
           </p>
           <p>
-            <strong>Individual avidya</strong> (personal ignorance): The specific misidentification — I am this body, this name, this history of gains and losses. This is where the path of practice engages most directly. Clear this layer, and the other two, while still present, are seen through.
+            <strong>BG 18.61</strong>: the Lord in the heart turns all beings by maya, as if mounted on a machine.
           </p>
         </div>
 
-        <h2>Maya and the Gita&apos;s Final Teaching</h2>
+        <h2>Maya and Krishna&apos;s Last Instruction</h2>
         <p>
-          The Gita does not end with a theory of maya. It ends with an instruction: &ldquo;Take refuge in me alone. I will free you from all papa. Do not grieve&rdquo; (BG 18.66). The word for refuge is <em>śaraṇam</em> — complete shelter, the giving over of self-management.
+          The Gita gives no theory of maya. Krishna&apos;s last instruction is: &ldquo;Abandon all dharmas and take refuge in me alone. I will free you from all sins. Do not grieve&rdquo; (BG 18.66). Its word for refuge is <em>śaraṇam</em>, shelter.
         </p>
         <p>
-          This is the Gita&apos;s answer to maya: not the accumulation of correct ideas about it, but the reorientation of consciousness from the bounded self (which is maya&apos;s construction) to what is beyond it. The world doesn&apos;t disappear. The gunas don&apos;t stop operating. But the center of gravity shifts. And from that shifted center, the world is seen differently — not as a trap, not as a dream, but as the play of the divine, which is always pointing toward its source.
+          So the Gita&apos;s answer to maya is to turn from the bounded self, which maya builds, toward Krishna. The world stays and the gunas keep working. From the new center, the world is seen as the play of the divine.
         </p>
-        <p>
-          That is what piercing maya means in the Gita&apos;s framework. Not seeing through the world, but seeing the world through what it actually is.
-        </p>
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the reading of 18.61, the context of 7.14, 18.66 as Krishna&apos;s last instruction (the Gita&apos;s last verse is 18.78), and replaced an invented three-level scheme with the Gita&apos;s own uses of maya; copy edited.</p>
       </div>
 
 
@@ -600,35 +597,35 @@ export default function MayaMeaningPage() {
         <div className="faq-item">
           <strong>What does maya mean in the Bhagavad Gita?</strong>
           <p>
-            Maya (माया) in the Gita is the divine creative power by which the real appears as something other than it is. The Gita&apos;s key statement is BG 7.14: &ldquo;This divine maya of mine, composed of the three gunas, is extremely difficult to cross. Those who take refuge in me alone cross beyond it.&rdquo; Maya is not the claim that the world doesn&apos;t exist — it is the force that makes the world appear as independently self-sustaining and separate from its divine ground, when it is not.
+            Maya (माया) in the Gita is the divine creative power by which the real appears as something other than it is. The key statement is BG 7.14: &ldquo;This divine maya of mine, composed of the three gunas, is extremely difficult to cross. Those who take refuge in me alone cross beyond it.&rdquo; Maya makes the world appear self-sustaining and separate from its divine ground.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>Does maya mean the world is an illusion?</strong>
           <p>
-            Not in the sense of non-existent. The Gita doesn&apos;t teach that the material world is fabricated or that your experience is a hallucination. The rope-snake analogy from Vedanta captures it better: in dim light, you mistake a rope for a snake. The fear is real, the rope is real, but the snake is not. Maya is the dim light — it doesn&apos;t make the world disappear, but it makes the world appear as something other than what it ultimately is (the divine appearing as separate multiplicity).
+            Nowhere does the Gita teach that the material world is fabricated or that your experience is a hallucination. The rope-snake analogy from Vedanta fits better: in dim light, you mistake a rope for a snake. The fear is real and the rope is real; the snake is absent. Maya is the dim light. The world stays, and appears as something other than what it is: the one divine appearing as many separate things.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What are the three gunas and how do they relate to maya?</strong>
           <p>
-            The three gunas — sattva (clarity), rajas (activity), and tamas (inertia) — are the forces constituting all manifest nature. BG 7.14 calls maya &ldquo;guṇamayī&rdquo;: made of the gunas. Maya operates through these three modes. When rajas dominates, desire and acquisition feel like the whole story. When tamas dominates, dullness and ignorance obscure. Even sattva, the clearest mode, can reinforce the sense of being a separate, pure self rather than dissolving into the recognition of the ground. Transcending maya means transcending all three gunas — becoming guṇātīta, as Chapter 14 describes.
+            The three gunas, sattva (clarity), rajas (activity) and tamas (inertia), make up all manifest nature. BG 7.14 calls maya &ldquo;guṇamayī&rdquo;, made of the gunas. When rajas dominates, desire and acquisition feel like the whole story. When tamas dominates, dullness hides things. BG 14.6 says even sattva binds, through attachment to happiness and knowledge. Crossing maya means going beyond all three gunas, which Chapter 14 calls guṇātīta.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>How do you cross maya according to the Gita?</strong>
           <p>
-            BG 7.14 gives the direct answer: &ldquo;Those who take refuge in me alone cross beyond this maya.&rdquo; The Gita presents several supporting paths — knowledge (jnana), meditation, selfless action — but its own preferred answer is bhakti (devotion) as prapatti (complete surrender). The mechanism: when consciousness is oriented entirely around the bounded self, the maya-structure is reinforced. When it orients toward what is beyond the gunas and the self-construction, the identification loosens. The world doesn&apos;t disappear; the center of gravity shifts.
+            BG 7.14 gives the direct answer: &ldquo;Those who take refuge in me alone cross beyond this maya.&rdquo; The Gita also describes knowledge (jnana), meditation and selfless action, but in 7.14 and 18.66 Krishna&apos;s answer is surrender (prapatti) to him. A mind organised around the bounded self strengthens maya; a mind turned toward what is beyond the gunas loosens it. The world stays where it is.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What is the difference between maya and avidya?</strong>
           <p>
-            Maya is the cosmic power that projects apparent diversity from undivided reality — operating at the level of the universal divine (Ishvara). Avidya is the individual-level ignorance that misidentifies the self with the body-mind complex — operating at the level of the individual atman (jiva). Avidya is, you could say, maya experienced from inside an individual life. The Vedantic and Gita path aims at dissolving avidya — not by cancelling the world&apos;s appearance, but by correcting the misidentification of what you are within it.
+            In later Advaita Vedanta, maya is the cosmic power that projects apparent diversity and belongs to Ishvara (the Lord). Avidya is the individual&apos;s ignorance that identifies the self with body and mind, and belongs to the jiva. Advaita aims at removing avidya: the world keeps appearing, and the mistake about what you are within it is corrected. The Gita uses the word maya and draws no such distinction.
           </p>
         </div>
       </div>

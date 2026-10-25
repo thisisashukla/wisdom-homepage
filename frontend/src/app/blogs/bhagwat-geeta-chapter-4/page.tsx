@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: "bhagwat geeta chapter 4, bhagavad gita jnana yoga, yada yada hi dharmasya meaning, gita 4.7 meaning, bhagavad gita knowledge yoga, jnana yajna meaning, bhagwat geeta adhyay 4, divine incarnation gita, jnana agni gita, how to learn from a teacher gita, Jnana Karma Sanyasa Yoga summary, Bhagavad Gita 4.7 meaning, Bhagavad Gita 4.34 tadviddhi pranipatena, knowledge as offering Bhagavad Gita",
   openGraph: {
     title: "Bhagavad Gita Chapter 4 Summary \u2013 Key Verses & Meaning (Jnana Karma Yoga)",
-    description: "All 42 verses of Bhagavad Gita Chapter 4 \u2014 yada yada hi dharmasya, knowledge as the highest offering, and how wisdom burns away all karma.",
+    description: "All 42 verses of Bhagavad Gita Chapter 4: yada yada hi dharmasya, knowledge as the greatest offering, and how knowledge burns away karma.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4",
     siteName: 'Wisdom',
@@ -549,7 +549,7 @@ const schemas = [
   {
     "@context": "https://schema.org",
     "@type": ["Article", "LearningResource"],
-    "headline": "Bhagavad Gita Chapter 4 — Jnana Karma Sanyasa Yoga: The Fire That Burns Karma",
+    "headline": "Bhagavad Gita Chapter 4: Jnana Karma Sanyasa Yoga",
     "description": "Bhagavad Gita Chapter 4 — Jnana Karma Sanyasa Yoga. All 42 verses with Sanskrit, transliteration, meaning. Yada yada hi dharmasya, the yoga of knowledge, and how wisdom burns karma.",
     "alternativeHeadline": "Bhagavad Gita Chapter 4 (Jnana Karma Sanyasa Yoga) — Summary & Verses",
     "author": {
@@ -603,7 +603,7 @@ const schemas = [
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Bhagavad Gita Chapter 4 — Jnana Yoga",
+      "name": "Bhagavad Gita Chapter 4 — Jnana Karma Sanyasa Yoga",
       "item": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-4"
     }
   ]
@@ -617,7 +617,7 @@ const schemas = [
       "name": "What is Bhagavad Gita Chapter 4 about?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 4, called Jnana Karma Sanyasa Yoga, covers three major themes: the divine promise of periodic re-incarnation to restore dharma (the famous 4.7–4.8 verses), the yoga of knowledge as the highest path of action, and the transformative power of wisdom — described as a fire that burns away all karma. The chapter also contains one of the Gita's most important teachings on how to approach a teacher with humility."
+        "text": "Chapter 4, called Jnana Karma Sanyasa Yoga, covers three major themes: Krishna's promise to return in every age to restore dharma (4.7–4.8), action without attachment, and knowledge — described as a fire that burns away all karma. It also says how to approach a teacher: with humility, questions and service (4.34)."
       }
     },
     {
@@ -625,7 +625,7 @@ const schemas = [
       "name": "What is the meaning of 'yada yada hi dharmasya'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "This is the opening of verse 4.7. The full verse: 'Whenever there is a decline in dharma (righteousness) and an increase in adharma (unrighteousness), O Arjuna, I manifest myself.' It is one of the most quoted verses in all of Hindu scripture and is often paired with 4.8: 'To protect the righteous, destroy the wicked, and re-establish dharma, I am born age after age.' Together, they articulate the Hindu understanding of history as cyclical — and of goodness as having an ultimate protector."
+        "text": "This is the opening of verse 4.7. The full verse: 'Whenever there is a decline in dharma (righteousness) and an increase in adharma (unrighteousness), O Arjuna, I manifest myself.' It is widely quoted and usually paired with 4.8: 'To protect the righteous, destroy the wicked, and re-establish dharma, I am born age after age.' Together they say that Krishna returns, age after age (yuge yuge), whenever dharma needs restoring."
       }
     },
     {
@@ -633,7 +633,7 @@ const schemas = [
       "name": "What does the Bhagavad Gita say about how to learn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Verse 4.34 is the Gita's clearest teaching on learning. It says: approach those who have truly seen truth with humility (prostrating, not arrogance), sincere questioning (not debate or challenge), and service. Three requirements. The teachers won't share their deepest wisdom with someone who comes with ego or agenda. The gate is humility."
+        "text": "Verse 4.34 says to learn from those who have seen the truth by bowing to them, asking questions, and serving them. Those teachers, Krishna says, will then pass on the knowledge."
       }
     },
     {
@@ -641,7 +641,7 @@ const schemas = [
       "name": "What is 'jnana yajna' in the Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jnana yajna means the sacrifice (offering) of knowledge or wisdom. In verse 4.33, Krishna says it is superior to material sacrifices because all actions find their completion in wisdom. The idea is that the ultimate 'offering' you can make is understanding — burning away confusion and operating from clear sight."
+        "text": "Jnana yajna means the sacrifice (offering) of knowledge or wisdom. In verse 4.33, Krishna says it is superior to material sacrifices because all actions find their completion in wisdom. So the best offering a person can make is understanding."
       }
     },
     {
@@ -686,10 +686,10 @@ export default function ChapterFourPage() {
         </div>
         <h1 className="article-title">
           Bhagavad Gita Chapter 4 (Adhyay 4):<br />
-          <em>Jnana Yoga</em>
+          <em>Jnana Karma Sanyasa Yoga</em>
         </h1>
         <p className="article-subtitle">
-          The fire of knowledge that burns away all karma. Divine incarnation, the yoga of wisdom, and the three requirements for real learning.
+          Krishna on why he takes birth (4.7–8), on action and inaction, on the many kinds of sacrifice, and on knowledge as a fire that burns karma (4.37).
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -700,7 +700,7 @@ export default function ChapterFourPage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapter 4 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -719,11 +719,11 @@ export default function ChapterFourPage() {
         </figure>
 
         <p className="lead">
-          Chapter 4 opens with one of the most quoted passages in Hindu scripture, Krishna's promise that whenever dharma declines, the Divine appears to restore it. The verses are powerful, and they have shaped how people think about history, justice, and divine intervention for five thousand years. But the chapter itself is about something more intimate and immediate. It's about knowledge as the fire that burns karma. It's about how wisdom transforms action. And it's about the relationship between teacher and student, established with such precision that it has become the model for all real learning in the tradition.
+          Chapter 4 opens with the lineage of this yoga: Krishna taught it to Vivasvan, who taught Manu (4.1). A few verses later comes a widely quoted passage, Krishna&apos;s promise that whenever dharma declines, he appears to restore it (4.7–8). Most of the chapter, though, is about action: how to act without being bound, the many kinds of sacrifice, knowledge as the fire that burns karma (4.37), and how to learn from a teacher (4.34).
         </p>
 
         <p>
-          By Chapter 4, Krishna has been teaching Arjuna philosophy. Now he opens his teaching about his own nature, and in doing so, reveals that understanding what the Divine really is constitutes liberation itself. Not as a reward at the end of practice, but as a direct consequence of that understanding.
+          This is also the first chapter where Krishna speaks openly about his own nature. In 4.9 he says that whoever understands his birth and action is not born again.
         </p>
 
         {/* TABLE OF CONTENTS */}
@@ -731,25 +731,22 @@ export default function ChapterFourPage() {
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
             <li>
-              <a href="#divine-promise">The divine promise, 4.7 and 4.8</a>
+              <a href="#divine-promise">The divine promise: 4.7 and 4.8</a>
             </li>
             <li>
-              <a href="#divine-action">The nature of divine action, 4.9 to 4.14</a>
+              <a href="#divine-action">The nature of divine action: 4.9 to 4.14</a>
             </li>
             <li>
-              <a href="#yajna">Types of yajna, 4.25 to 4.32</a>
+              <a href="#knowledge-highest">Knowledge as the greatest yajna: 4.33</a>
             </li>
             <li>
-              <a href="#knowledge-highest">Knowledge is the highest yajna, 4.33</a>
+              <a href="#approach-teacher">How to approach a teacher: 4.34</a>
             </li>
             <li>
-              <a href="#approach-teacher">How to approach a teacher, 4.34</a>
+              <a href="#fire-wisdom">The fire of knowledge: 4.37 to 4.38</a>
             </li>
             <li>
-              <a href="#fire-wisdom">The fire of wisdom, 4.37 to 4.38</a>
-            </li>
-            <li>
-              <a href="#arise">Arise, the chapter's final word</a>
+              <a href="#arise">Arise: the chapter&apos;s last instruction</a>
             </li>
             <li><a href="#all-verses">All 42 shlokas at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
@@ -768,7 +765,7 @@ export default function ChapterFourPage() {
         <h2 id="divine-promise">The Divine Promise: Goodness Will Be Protected</h2>
 
         <p>
-          The verses that open Chapter 4 are almost impossibly famous. They have been cited to justify everything from military interventions to spiritual renewal movements. But their meaning is worth sitting with carefully. Krishna is not promising that goodness will win by force. He is promising that goodness has a guardian.
+          These two verses are among the best known in the chapter, and they have been quoted in support of all kinds of causes. Read closely, they promise that dharma has a protector who comes back when it is in decline.
         </p>
 
         {/* SHLOKA 4.7 */}
@@ -777,7 +774,7 @@ export default function ChapterFourPage() {
           speaker="Krishna"
           sanskrit="यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम् ॥"
           iast="yadā yadā hi dharmasya glānirbhavati bhārata | abhyutthānamadharmasya tadā''tmānaṃ sṛjāmyaham ||"
-          essence="Divine support arrives whenever goodness is threatened, trust in restoration."
+          essence="Whenever dharma declines and adharma rises, Krishna manifests himself."
         />
 
         {/* SHLOKA 4.8 */}
@@ -788,12 +785,12 @@ export default function ChapterFourPage() {
           iast="paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām | dharmasaṃsthāpanārthāya saṃbhavāmi yuge yuge ||"
           meaning="To protect the righteous, to destroy the wicked, and to re-establish dharma, I am born age after age."
           insightLabel="The deeper dimension"
-          insight="The pairing with 4.7 is important. The divine doesn't just appear for the protection of the good, it also appears for the destruction of the harmful and the restoration of the moral order. These three purposes are inseparable. The verse tells you what divine protection actually looks like: it requires the end of corruption."
-          essence="Goodness will always be supported; righteousness never goes unprotected."
+          insight="This verse gives the three reasons Krishna takes birth: to protect the good, to destroy wrongdoers, and to re-establish dharma. In the Gita, protecting the good includes ending the harm done to them."
+          essence="He is born age after age to protect the good, destroy the wicked and restore dharma."
         />
 
         <p>
-          What makes these verses so powerful is their matter-of-factness. Krishna doesn't claim special status for the moment Arjuna is living through. He's saying: this is how the cosmos is organized. When the moral order declines, correction inevitably follows. The Wisdom app brings this teaching to the foreground in your daily practice, these verses appear regularly because they speak to something we need to remember when historical darkness feels permanent.
+          Krishna says this plainly. He doesn't treat Arjuna's moment as special; he describes how things go: when dharma declines, he comes back to set it right (4.7–8).
         </p>
 
         {/* DIVIDER */}
@@ -808,7 +805,7 @@ export default function ChapterFourPage() {
         <h2 id="divine-action">What Does It Mean to Know the Divine?</h2>
 
         <p>
-          Verses 9 through 14 shift focus. Krishna isn't talking about distant historical cycles anymore. He's talking about what happens when you understand him, not as a belief, but as a realized knowledge.
+          In verses 9 to 14 Krishna moves from history to the listener: what happens to someone who understands him.
         </p>
 
         {/* SHLOKA 4.9 */}
@@ -819,13 +816,13 @@ export default function ChapterFourPage() {
           iast="janma karma ca me divyamevaṃ yo vetti tattvataḥ | tyaktvā dehaṃ punarjanma naiti māmeti so'rjuna ||"
           meaning="One who truly knows the divine nature of my birth and activities does not take birth again after leaving this body but comes to me, O Arjuna."
           insightLabel="The core teaching"
-          insight="Understanding the divine nature of action, not just what is done, but the consciousness behind it, is itself liberating. Knowledge here is not intellectual. It is recognition. It's seeing that the distinction between divine and human action dissolves when you understand consciousness itself."
-          essence="Knowing the divine nature of true wisdom and action brings ultimate freedom."
+          insight="The verse says that knowing (vetti tattvataḥ) Krishna&apos;s birth and action as divine is enough to end rebirth. The knowing it describes is a direct understanding of who Krishna is."
+          essence="One who knows his divine birth and action escapes rebirth and comes to him."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>A structural note:</strong> Notice the pattern. Verses 7-8 promise divine protection. Verse 9 says: understanding this protection, understanding how it works, is itself liberation. The Gita doesn't offer salvation as a distant goal, it offers understanding as the path and the destination simultaneously.
+            <strong>A structural note:</strong> Verses 7–8 say why Krishna takes birth. Verse 9 says that understanding this is itself freeing, and 4.10 adds that many have already reached his state this way.
           </p>
         </div>
 
@@ -833,15 +830,15 @@ export default function ChapterFourPage() {
         <div className="section-divider">
           <div className="section-divider-line"></div>
           <div className="section-divider-label">
-            Verses 4.33 · Knowledge as the Highest Offering
+            Verse 4.33 · Knowledge as Offering
           </div>
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="knowledge-highest">Knowledge is the Highest Yajna</h2>
+        <h2 id="knowledge-highest">Knowledge as the Greatest Yajna</h2>
 
         <p>
-          Chapter 4 contains extensive teachings on different types of yajna, ritual offerings, material sacrifices, breath control, and knowledge itself. Then comes verse 33, which settles the question: which offering is actually the highest?
+          Verses 4.25–32 list many kinds of yajna: offerings to the gods, restraint of the senses, gifts of wealth, breath control, study. Verse 33 ranks them.
         </p>
 
         {/* SHLOKA 4.33 */}
@@ -851,9 +848,9 @@ export default function ChapterFourPage() {
           sanskrit="श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप । सर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते ॥"
           iast="śreyāndravyamayādyajñājjñānayajñaḥ parantapa | sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate ||"
           meaning="O destroyer of enemies, the sacrifice of knowledge is superior to the sacrifice of material things. All action in its entirety finds its culmination in wisdom, O Arjuna."
-          insightLabel="Why this matters"
-          insight="Every action, if pursued far enough and deeply enough, eventually asks: but why? The chain of &quot;why&quot; always leads to questions about meaning, identity, and ultimate value. The Gita calls this endpoint jnana, wisdom. Action without wisdom is activity without direction. Wisdom is what completes it."
-          essence="Wisdom is the highest offering, it transforms and completes all actions."
+          insightLabel="What it adds"
+          insight="All the offerings listed before this verse are actions. Krishna says every action reaches its end (parisamāpyate) in jnana, knowledge, so knowledge ranks above the rest."
+          essence="The sacrifice of knowledge is greater than that of things; all action ends in knowledge."
         />
 
         <div className="pull-quote">
@@ -872,10 +869,10 @@ export default function ChapterFourPage() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="approach-teacher">The Three Gates to Real Learning</h2>
+        <h2 id="approach-teacher">How to Learn From a Teacher</h2>
 
         <p>
-          If knowledge is the highest offering, how does one attain it? Chapter 4, verse 34 is perhaps the tradition's clearest teaching on the conditions necessary for real learning. It's not about intelligence or effort alone. It's about something more subtle: the orientation you bring.
+          If knowledge is the greatest offering, how does one get it? Verse 4.34 answers with three things the student does.
         </p>
 
         {/* SHLOKA 4.34 */}
@@ -886,12 +883,12 @@ export default function ChapterFourPage() {
           iast="tadviddhi praṇipātena paripraśnena sevayā | upadekṣyanti te jñānaṃ jñāninastattvadarśinaḥ ||"
           meaning="Know that wisdom by prostrating yourself (humility), by sincere questioning, and by service. The wise seers of truth will impart knowledge to you."
           insightLabel="The framework"
-          insight="Three requirements for real learning: prostrating (genuine humility, no arrogance), sincere questioning (not challenges or debate tactics, but authentic inquiry), and service (being present, contributing, not just consuming). This is the Gita's model for education. The teacher doesn't distribute wisdom to anyone who asks. They share it with those who arrive with empty hands and open hearts."
-          essence="True knowledge unfolds in the presence of humility, service, and honest inquiry."
+          insight="Three things: praṇipāta (bowing, humility), paripraśna (asking questions to understand, as opposed to scoring points), and sevā (service). The teachers named here are those who have seen the truth (tattva-darśinaḥ)."
+          essence="Learn it by bowing, questioning and serving; those who have seen the truth will teach you."
         />
 
         <p>
-          This verse has shaped education in the Hindu tradition for millennia. It's why the guru-disciple relationship is structured as it is. The teacher is looking for three things: evidence that you're willing to let go of your ego, evidence that you're genuinely curious rather than argumentative, and evidence that you're willing to contribute to the teaching community, not just extract from it.
+          The verse is often cited as a model for the guru-disciple relationship. A teacher, on this reading, looks for a student who sets ego aside, asks to understand rather than to argue, and contributes to the place where they learn.
         </p>
 
         {/* DIVIDER */}
@@ -906,7 +903,7 @@ export default function ChapterFourPage() {
         <h2 id="fire-wisdom">Knowledge Is a Fire That Burns Karma</h2>
 
         <p>
-          Chapter 4's most striking image comes in verses 37 and 38. Knowledge is not described as a light that reveals. It is described as fire that consumes.
+          In verses 37 and 38 Krishna describes knowledge as a fire that burns.
         </p>
 
         {/* SHLOKA 4.37 */}
@@ -916,9 +913,9 @@ export default function ChapterFourPage() {
           sanskrit="यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन । ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥"
           iast="yathaidhāṃsi samiddho'gnirbhasmasātkurute'rjuna | jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā ||"
           meaning="As a blazing fire reduces wood to ashes, O Arjuna, so the fire of knowledge reduces all karma to ashes."
-          insightLabel="The radical claim"
-          insight="This is one of the Gita's most striking metaphors. The fire of wisdom doesn't gradually neutralize karma, it burns it entirely. The implication: understanding something fully, at its root, dissolves its hold on you. You don't heal your past through effort. You dissolve it through understanding."
-          essence="Knowledge is the purifier, it burns away all past karma."
+          insightLabel="The claim"
+          insight="The verse says all karma (sarva-karmāṇi) is burnt to ash, which goes further than reducing it. Most commentators read this as the stored karma from past actions losing its hold once the self is known."
+          essence="As fire turns wood to ash, the fire of knowledge turns all karma to ash."
         />
 
         {/* SHLOKA 4.38 */}
@@ -929,8 +926,8 @@ export default function ChapterFourPage() {
           iast="na hi jñānena sadṛśaṃ pavitramiha vidyate | tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati ||"
           meaning="Nothing in this world is as purifying as wisdom. One who is perfected in yoga finds this wisdom within the self, in the course of time."
           insightLabel="The patience required"
-          insight="The word kālena, &quot;in the course of time&quot;, is significant. Wisdom is not a download. It ripens. You cannot force it. What you can do is practice, sincerely and consistently, and trust the process. The Gita is telling you: don't expect overnight transformation. But do expect transformation."
-          essence="Nothing purifies the mind and soul like the sincere pursuit of wisdom."
+          insight="The word kālena, &quot;in the course of time&quot;, matters. Knowledge comes to the person practising yoga over time; the verse doesn&apos;t promise it overnight."
+          essence="Nothing here purifies like knowledge; one perfected in yoga finds it within in time."
         />
 
         {/* DIVIDER */}
@@ -945,7 +942,7 @@ export default function ChapterFourPage() {
         <h2 id="arise">Arise: From Understanding to Action</h2>
 
         <p>
-          Chapter 4 ends with a single word that will echo through the rest of the Gita. After all the teaching on knowledge, wisdom, and divine protection, Krishna's final instruction is this:
+          Chapter 4 ends with an instruction to act:
         </p>
 
         {/* SHLOKA 4.42 */}
@@ -956,12 +953,12 @@ export default function ChapterFourPage() {
           iast="tasmādajñānasaṃbhūtaṃ hṛtsthaṃ jñānāsinā''tmanaḥ | chittvainaṃ saṃśayaṃ yogamātiṣṭhottiṣṭha bhārata ||"
           meaning="Therefore, with the sword of knowledge, cut asunder the doubt born of ignorance that has lodged in your heart. Take refuge in yoga, arise, O Arjuna."
           insightLabel="The pivot"
-          insight="&quot;Arise&quot;, uttiṣṭha, is the last word of Chapter 4. It echoes through to the end of the Gita. Knowledge without action is incomplete. Once you understand, you must stand up. The instruction is physical as much as philosophical. The Gita doesn't end with enlightenment. It ends with standing."
-          essence="Use knowledge to overcome doubt, then act with steadiness."
+          insight="&quot;Arise&quot;, uttiṣṭha, is Krishna&apos;s last instruction in Chapter 4. It repeats his first one in 2.3. After the teaching on knowledge, he tells Arjuna to stand up and act."
+          essence="Cut the doubt in your heart with the sword of knowledge, hold to yoga, and stand up."
         />
 
         <p>
-          That single command, uttiṣṭha, reframes everything that comes before it. All the teaching about divine incarnation, knowledge as fire, the three gates to learning, it all culminates in action. Not action driven by attachment or ego. But action grounded in understanding. Action taken from a place of clarity. The Wisdom app reminds you of these teachings through daily practice precisely so that you can live them out, not as abstract philosophy, but as lived clarity that guides your decisions and actions.
+          In the last verse (4.42) Krishna tells Arjuna to cut through his doubt with knowledge, hold to yoga, and stand up: uttiṣṭha.
         </p>
 
         {/* DIVIDER */}
@@ -987,216 +984,216 @@ export default function ChapterFourPage() {
             <tr>
               <td>4.1</td>
               <td>Krishna</td>
-              <td>True spiritual wisdom is eternal, continually passed on</td>
+              <td>Krishna taught this lasting yoga to Vivasvan, who taught Manu, who taught Ikshvaku</td>
             </tr>
             <tr>
               <td>4.2</td>
               <td>Krishna</td>
-              <td>Wisdom survives only when actively preserved and passed on</td>
+              <td>Handed down from king to king, this yoga was lost over a long time</td>
             </tr>
             <tr>
               <td>4.3</td>
               <td>Krishna</td>
-              <td>Divine wisdom flows where there is love, trust, and sincerity</td>
+              <td>Krishna teaches this old secret to Arjuna because he is his devotee and friend</td>
             </tr>
             <tr>
               <td>4.4</td>
               <td>Arjuna</td>
-              <td>Deep questions open the door to deeper truths</td>
+              <td>Arjuna asks how Krishna, born recently, could have taught Vivasvan long ago</td>
             </tr>
             <tr>
               <td>4.5</td>
               <td>Krishna</td>
-              <td>Even when we forget the soul's greater story, the Divine remembers</td>
+              <td>Both have had many births; Krishna remembers them all and Arjuna does not</td>
             </tr>
             <tr>
               <td>4.6</td>
               <td>Krishna</td>
-              <td>The Divine is beyond form, yet can take any form to guide</td>
+              <td>Though unborn and lord of all beings, Krishna takes birth through his own maya</td>
             </tr>
             <tr>
               <td>4.7</td>
               <td>Krishna</td>
-              <td>Divine support arrives whenever goodness is threatened</td>
+              <td>Whenever dharma declines and adharma rises, Krishna manifests himself</td>
             </tr>
             <tr>
               <td>4.8</td>
               <td>Krishna</td>
-              <td>Goodness will always be supported; righteousness never goes unprotected</td>
+              <td>He is born age after age to protect the good, destroy the wicked and restore dharma</td>
             </tr>
             <tr>
               <td>4.9</td>
               <td>Krishna</td>
-              <td>Knowing the divine nature of action brings ultimate freedom</td>
+              <td>One who knows his divine birth and action escapes rebirth and comes to him</td>
             </tr>
             <tr>
               <td>4.10</td>
               <td>Krishna</td>
-              <td>Purity and liberation arise when we let go of attachment, fear, and anger</td>
+              <td>Many, freed of attachment, fear and anger and purified by knowledge, reached his state</td>
             </tr>
             <tr>
               <td>4.11</td>
               <td>Krishna</td>
-              <td>The Divine responds to your sincerity, every path is honored</td>
+              <td>As people approach Krishna, so he receives them; all follow his path</td>
             </tr>
             <tr>
               <td>4.12</td>
               <td>Krishna</td>
-              <td>In human life, action brings tangible results; our efforts matter</td>
+              <td>Wanting results, people worship the gods, since action brings results quickly here</td>
             </tr>
             <tr>
               <td>4.13</td>
               <td>Krishna</td>
-              <td>Play your part, but your true self is beyond all roles and outcomes</td>
+              <td>Krishna created the four varnas by guna and karma, yet he is not the doer</td>
             </tr>
             <tr>
               <td>4.14</td>
               <td>Krishna</td>
-              <td>Act with full attention; let go of craving for results</td>
+              <td>Actions do not stain Krishna and he wants no results; one who knows this is not bound</td>
             </tr>
             <tr>
               <td>4.15</td>
               <td>Krishna</td>
-              <td>Perform duties with understanding, walk in the footsteps of the wise</td>
+              <td>Knowing this, people of old who wanted liberation acted; so act as they did</td>
             </tr>
             <tr>
               <td>4.16</td>
               <td>Krishna</td>
-              <td>True understanding of action leads to liberation from suffering</td>
+              <td>Even the wise are confused about what action and inaction are</td>
             </tr>
             <tr>
               <td>4.17</td>
               <td>Krishna</td>
-              <td>True wisdom lies in understanding the nature of your actions</td>
+              <td>Action, wrong action and inaction must all be understood; the way of action is hard to know</td>
             </tr>
             <tr>
               <td>4.18</td>
               <td>Krishna</td>
-              <td>See beyond external actions, true wisdom lies in understanding intention</td>
+              <td>Whoever sees inaction in action and action in inaction is wise</td>
             </tr>
             <tr>
               <td>4.19</td>
               <td>Krishna</td>
-              <td>Burn away desire with knowledge, act selflessly and be truly wise</td>
+              <td>One whose undertakings are free of desire, actions burnt in knowledge, is called wise</td>
             </tr>
             <tr>
               <td>4.20</td>
               <td>Krishna</td>
-              <td>Act wholeheartedly; let go of attachment to results</td>
+              <td>Unattached to results and always content, he does nothing even while acting</td>
             </tr>
             <tr>
               <td>4.21</td>
               <td>Krishna</td>
-              <td>Attachment breeds suffering; detached action purifies the heart</td>
+              <td>Without craving or possessiveness, doing only bodily action, one incurs no sin</td>
             </tr>
             <tr>
               <td>4.22</td>
               <td>Krishna</td>
-              <td>Be steady and content, success or failure cannot bind you</td>
+              <td>Content with what comes, beyond pairs of opposites and envy, even in success and failure, he is not bound</td>
             </tr>
             <tr>
               <td>4.23</td>
               <td>Krishna</td>
-              <td>Liberation is found in selfless action, not in clinging to results</td>
+              <td>For the free and unattached, mind set in knowledge, action done as sacrifice dissolves</td>
             </tr>
             <tr>
               <td>4.24</td>
               <td>Krishna</td>
-              <td>See every action, intention, and outcome as part of the Divine whole</td>
+              <td>The offering, the ladle, the fire and the one who offers are all Brahman</td>
             </tr>
             <tr>
               <td>4.25</td>
               <td>Krishna</td>
-              <td>True spiritual progress comes from both external and inner transformation</td>
+              <td>Some yogis offer sacrifice to the gods; others offer the self into the fire of Brahman</td>
             </tr>
             <tr>
               <td>4.26</td>
               <td>Krishna</td>
-              <td>Mastery over the senses is the gateway to clarity and peace</td>
+              <td>Some offer the senses into the fire of restraint; others offer sense objects into the senses</td>
             </tr>
             <tr>
               <td>4.27</td>
               <td>Krishna</td>
-              <td>With wisdom, even breath becomes an offering on the path to self-mastery</td>
+              <td>Some offer all actions of the senses and breath into the fire of self-control</td>
             </tr>
             <tr>
               <td>4.28</td>
               <td>Krishna</td>
-              <td>Sincerity in all spiritual efforts leads to inner growth</td>
+              <td>Others offer wealth, austerity, yoga practice, or study and knowledge, under strict vows</td>
             </tr>
             <tr>
               <td>4.29</td>
               <td>Krishna</td>
-              <td>Breath control is a sacred tool for self-transformation</td>
+              <td>Some offer in-breath into out-breath and out-breath into in-breath, practising pranayama</td>
             </tr>
             <tr>
               <td>4.30</td>
               <td>Krishna</td>
-              <td>Self-discipline and offering one's actions purifies the mind</td>
+              <td>Others, regulating food, offer breaths into breaths; all of these know sacrifice</td>
             </tr>
             <tr>
               <td>4.31</td>
               <td>Krishna</td>
-              <td>Selfless giving is the pathway to enduring joy and union</td>
+              <td>Those who eat what remains of sacrifice reach Brahman; without sacrifice even this world is lost</td>
             </tr>
             <tr>
               <td>4.32</td>
               <td>Krishna</td>
-              <td>Sacred intention behind every action leads to true freedom</td>
+              <td>Many kinds of sacrifice are set out in the Vedas; know that all are born of action</td>
             </tr>
             <tr>
               <td>4.33</td>
               <td>Krishna</td>
-              <td>Wisdom is the highest offering, it transforms all actions</td>
+              <td>The sacrifice of knowledge is greater than that of things; all action ends in knowledge</td>
             </tr>
             <tr>
               <td>4.34</td>
               <td>Krishna</td>
-              <td>True knowledge unfolds in humility, service, and honest inquiry</td>
+              <td>Learn it by bowing, questioning and serving; those who have seen the truth will teach you</td>
             </tr>
             <tr>
               <td>4.35</td>
               <td>Krishna</td>
-              <td>True knowledge erases confusion, reveals the unity of all</td>
+              <td>Knowing it, you will not be deluded again and will see all beings in yourself and in Krishna</td>
             </tr>
             <tr>
               <td>4.36</td>
               <td>Krishna</td>
-              <td>True understanding can carry anyone beyond their past mistakes</td>
+              <td>Even the worst sinner crosses all sin on the raft of knowledge</td>
             </tr>
             <tr>
               <td>4.37</td>
               <td>Krishna</td>
-              <td>Knowledge is the fire that burns away all past karma</td>
+              <td>As fire turns wood to ash, the fire of knowledge turns all karma to ash</td>
             </tr>
             <tr>
               <td>4.38</td>
               <td>Krishna</td>
-              <td>Nothing purifies like the sincere pursuit of wisdom</td>
+              <td>Nothing here purifies like knowledge; one perfected in yoga finds it within in time</td>
             </tr>
             <tr>
               <td>4.39</td>
               <td>Krishna</td>
-              <td>Faith and discipline are the keys to wisdom and true peace</td>
+              <td>One with faith, intent on it, senses controlled, gains knowledge and soon finds peace</td>
             </tr>
             <tr>
               <td>4.40</td>
               <td>Krishna</td>
-              <td>Doubt weakens the mind; faith brings peace and fulfillment</td>
+              <td>The ignorant, faithless doubter is lost; he has neither this world nor the next</td>
             </tr>
             <tr>
               <td>4.41</td>
               <td>Krishna</td>
-              <td>Be steady and clear within, then your actions cannot bind you</td>
+              <td>Actions do not bind one who renounces action through yoga and cuts doubt with knowledge</td>
             </tr>
             <tr>
               <td>4.42</td>
               <td>Krishna</td>
-              <td>Use knowledge to overcome doubt, then arise and act</td>
+              <td>Cut the doubt in your heart with the sword of knowledge, hold to yoga, and stand up</td>
             </tr>
           </tbody>
         </table>
-
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the chapter name in the title, the opening of the chapter (it begins with the lineage in 4.1), the last word of 4.42, the summaries of 4.7–8 and 4.34, the removed app plugs, and the verse summaries in the table; copy edited.</p>
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 4"} />
 
 
@@ -1221,25 +1218,25 @@ export default function ChapterFourPage() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 4 about?</div>
             <div className="faq-a">
-              Chapter 4, called Jnana Karma Sanyasa Yoga, covers three major themes: the divine promise of periodic re-incarnation to restore dharma (the famous 4.7–4.8 verses), the yoga of knowledge as the highest path of action, and the transformative power of wisdom, described as a fire that burns away all karma. The chapter also contains one of the Gita's most important teachings on how to approach a teacher with humility.
+              Chapter 4, called Jnana Karma Sanyasa Yoga, covers three major themes: Krishna's promise to return in every age to restore dharma (4.7–4.8), action without attachment, and knowledge, described as a fire that burns away all karma. It also says how to approach a teacher: with humility, questions and service (4.34).
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the meaning of "yada yada hi dharmasya"?</div>
             <div className="faq-a">
-              This is the opening of verse 4.7. The full verse: "Whenever there is a decline in dharma (righteousness) and an increase in adharma (unrighteousness), O Arjuna, I manifest myself." It is one of the most quoted verses in all of Hindu scripture and is often paired with 4.8: "To protect the righteous, destroy the wicked, and re-establish dharma, I am born age after age." Together, they articulate the Hindu understanding of history as cyclical, and of goodness as having an ultimate protector.
+              This is the opening of verse 4.7. The full verse: "Whenever there is a decline in dharma (righteousness) and an increase in adharma (unrighteousness), O Arjuna, I manifest myself." It is widely quoted and usually paired with 4.8: &quot;To protect the righteous, destroy the wicked, and re-establish dharma, I am born age after age.&quot; Together they say that Krishna returns, age after age (yuge yuge), whenever dharma needs restoring.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does the Bhagavad Gita say about how to learn?</div>
             <div className="faq-a">
-              Verse 4.34 is the Gita's clearest teaching on learning. It says: approach those who have truly seen truth with humility (prostrating, not arrogance), sincere questioning (not debate or challenge), and service. Three requirements. The teachers won't share their deepest wisdom with someone who comes with ego or agenda. The gate is humility.
+              Verse 4.34 says to learn from those who have seen the truth by bowing to them, asking questions, and serving them. Those teachers, Krishna says, will then pass on the knowledge.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is "jnana yajna" in the Gita?</div>
             <div className="faq-a">
-              Jnana yajna means the sacrifice (offering) of knowledge or wisdom. In verse 4.33, Krishna says it is superior to material sacrifices because all actions find their completion in wisdom. The idea is that the ultimate "offering" you can make is understanding, burning away confusion and operating from clear sight.
+              Jnana yajna means the sacrifice (offering) of knowledge or wisdom. In verse 4.33, Krishna says it is superior to material sacrifices because all actions find their completion in wisdom. So the best offering a person can make is understanding.
             </div>
           </div>
           <div className="faq-item">
@@ -1275,7 +1272,7 @@ export default function ChapterFourPage() {
           data-mp-location="footer"
           >free iPhone app</a
         >
-        that tunes the Bhagavad Gita to your life, one verse a day. Made with reverence.</p><p style={{ marginTop: '8px' }}><a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>
+        that tunes the Bhagavad Gita to your life, one verse a day.</p><p style={{ marginTop: '8px' }}><a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>
       </p>
     </footer>
   

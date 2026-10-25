@@ -40,7 +40,7 @@ export default function GitaForIndex() {
       <section className="section section-alt">
         <div className="wrap gf-widget">
           <div className="eyebrow">Not on the list?</div>
-          <h2 className="heading">Seven verses, picked for <em>your</em> situation.</h2>
+          <h2 className="heading">A week of verses, picked for <em>your</em> situation.</h2>
           <div id="your-verse"><HeroPlanCTA campaign="web_gita_for_index" location="gita_for_index_create_plan" pageName="Gita For Index" /></div>
         </div>
       </section>

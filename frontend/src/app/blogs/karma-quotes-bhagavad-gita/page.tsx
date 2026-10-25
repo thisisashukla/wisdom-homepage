@@ -172,7 +172,7 @@ const schemas = [
         "name": "What are the most famous karma quotes in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The single most famous karma quote is Bhagavad Gita 2.47 — karmaṇyevādhikāraste mā phaleṣu kadācana — 'You have a right to action, never to its fruits.' Other essential karma shlokas include 2.48 (evenness of mind is called yoga), 3.9 (action as yajna), 3.19 (always act unattached), 4.18 (see inaction in action), 4.37 (knowledge burns all karma) and 18.47 (do your own duty)."
+          "text": "The best-known karma quote is Bhagavad Gita 2.47 — karmaṇyevādhikāraste mā phaleṣu kadācana — 'You have a right to action, never to its fruits.' Other essential karma shlokas include 2.48 (evenness of mind is called yoga), 3.9 (action as yajna), 3.19 (always act unattached), 4.18 (see inaction in action), 4.37 (knowledge burns all karma) and 3.35, repeated in 18.47 (do your own duty)."
         }
       },
       {
@@ -196,7 +196,7 @@ const schemas = [
         "name": "Does the Bhagavad Gita say karma is fate?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. BG 4.37 explicitly says knowledge (jñāna) burns all karma to ashes — the past is not permanent, understanding transforms it. Karma in the Gita describes the chain between intention, action and consequence; it is not a cosmic sentencing system."
+          "text": "No. BG 4.37 explicitly says knowledge (jñāna) burns all karma to ashes — the past need not bind you, because understanding burns it away. Karma in the Gita describes the chain between intention, action and consequence; it is not a cosmic sentencing system."
         }
       }
     ]
@@ -234,7 +234,7 @@ export default function KarmaQuotesPage() {
             <em>Sanskrit, Meaning, and the One-Line Essence</em>
           </h1>
           <p className="article-subtitle">
-            The Gita&apos;s teaching on karma is not a moral scoreboard. It&apos;s a set of instructions on how to act. These ten shlokas are the core.
+            The Gita treats karma less as a moral scoreboard and more as instructions on how to act. These ten shlokas are the core.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -244,7 +244,7 @@ export default function KarmaQuotesPage() {
             <span className="meta-item">~6 min read</span>
             <span className="meta-sep">·</span>
             <span className="meta-item" style={{ fontStyle: 'italic' }}>
-              Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed August 2026.{' '}
+              Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026.{' '}
               <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a>
             </span>
           </div>
@@ -302,7 +302,7 @@ export default function KarmaQuotesPage() {
           meaningLabel="Translation"
           meaning="Established in yoga, O Arjuna, do your work — abandoning attachment, remaining even in success and failure. This evenness of mind is what is called yoga."
           insightLabel="Essence"
-          insight="This is the Gita's working definition of yoga: samatvam — evenness of mind. Not indifference. Not detachment from the work. Detachment from the swing between elation and despair that outcomes usually trigger."
+          insight="This is the Gita's working definition of yoga: samatvam, evenness of mind. It means staying steady through the swing between elation and despair that success and failure bring, while still caring about the work."
           essence="Yoga is doing the work without letting outcomes swing you."
         />
         <p>
@@ -317,7 +317,7 @@ export default function KarmaQuotesPage() {
           meaningLabel="Translation"
           meaning="One with the yoga of wisdom rises above both good and bad actions here in this life. Therefore, strive for yoga — yoga is skill in action."
           insightLabel="Essence"
-          insight="Yogaḥ karmasu kauśalam — one of the most quoted phrases in the Gita. Skill here does not mean technical competence. It means the internal skill of acting without being bound by the action's karmic residue."
+          insight="Yogaḥ karmasu kauśalam, yoga is skill in action, is often quoted. The skill here is the inner one of acting without being bound by the action's karmic residue."
           essence="Yoga is not withdrawing from action — it is skill in how you act."
         />
         <p>
@@ -347,7 +347,7 @@ export default function KarmaQuotesPage() {
           meaningLabel="Translation"
           meaning="Therefore, always perform your duty efficiently, without attachment. Acting unattached, a person reaches the highest."
           insightLabel="Essence"
-          insight="Note the word satataṃ — always. Not sometimes, when it is convenient, when the stakes are low. Always. The Gita is describing a continuous internal posture, not a technique reserved for hard decisions."
+          insight="Note the word satataṃ, always. Krishna describes a steady way of working at all times, including when the stakes are low, more than a technique saved for hard decisions."
           essence="The person who acts without attachment reaches the highest."
         />
         <p>
@@ -360,10 +360,10 @@ export default function KarmaQuotesPage() {
           sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥"
           iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ||"
           meaningLabel="Translation"
-          meaning="Better one's own dharma imperfectly performed than another's dharma perfectly executed. Even death in one's own dharma is preferable; another's dharma is fraught with danger."
+          meaning="Better your own dharma, imperfectly done, than another's done well. Even death in your own dharma is preferable; another's dharma is fraught with danger."
           insightLabel="Essence"
-          insight="Svadharma — one's own duty — is not a moralistic command. It is a psychological point: acting from what is genuinely yours is sustainable; acting from what looks impressive but is not yours produces internal collapse over time."
-          essence="Your own duty, even if flawed, is safer than someone else's perfectly done."
+          insight="Svadharma is your own duty, the work that fits your nature and station. Krishna says even failing at it beats succeeding at someone else's, and he repeats the first line almost word for word in 18.47."
+          essence="Better your own dharma, imperfectly done, than another's done well."
         />
         <p>
           <a href="/gita/chapter/3/verse/35" data-mp-location="quote_full_3_35" style={{ color: 'var(--gold-light)' }}>Read the full verse page for 3.35 →</a>
@@ -377,7 +377,7 @@ export default function KarmaQuotesPage() {
           meaningLabel="Translation"
           meaning="One who sees inaction in action, and action in inaction — that one is wise among people, established in yoga, and has done all that needed to be done."
           insightLabel="Essence"
-          insight="This paradox points at a real distinction. External busyness can be internal inaction (if the doer is absent). External stillness can be intense internal action. Karma is not measured by motion but by the state of the actor."
+          insight="This paradox points at a real distinction. External busyness can be internal inaction (if the doer is absent). External stillness can be intense internal action. Karma is measured by the state of the actor more than by motion."
           essence="Wisdom is seeing that action and inaction are inner states, not outer motions."
         />
         <p>
@@ -392,7 +392,7 @@ export default function KarmaQuotesPage() {
           meaningLabel="Translation"
           meaning="Having given up attachment to the fruits of action, always content and independent, even while performing action he does nothing at all."
           insightLabel="Essence"
-          insight="Nityatripta means always content — not content once the good outcome arrives. The contentment precedes the result because it is not conditional on the result. That is the internal signature of nishkama karma when it is working."
+          insight="Nityatripta means always content, before any outcome arrives as well as after. The contentment comes first because it does not depend on the result, and that is how nishkama karma looks when it is working."
           essence="Contentment without conditions. Action without doer-ship."
         />
         <p>
@@ -407,7 +407,7 @@ export default function KarmaQuotesPage() {
           meaningLabel="Translation"
           meaning="As a blazing fire reduces wood to ashes, O Arjuna, the fire of knowledge reduces all karma to ashes."
           insightLabel="Essence"
-          insight="The Gita's most hopeful line about past karma. Not gradual dissolution — fire consuming wood completely. Genuine understanding of the nature of action and consciousness dissolves accumulated karmic residue. The past is not permanent."
+          insight="A hopeful line about past karma. Krishna's image is a blazing fire that turns firewood to ash, and in the same way knowledge burns up the karma you have accumulated."
           essence="Knowledge is the fire that burns all karma."
         />
         <p>
@@ -422,12 +422,13 @@ export default function KarmaQuotesPage() {
           meaningLabel="Translation"
           meaning="One who performs actions, offering them to Brahman and abandoning attachment, is not touched by karmic residue — as a lotus leaf is not wet by water."
           insightLabel="Essence"
-          insight="The image is precise: the lotus leaf sits in water but is never wet. Not because it avoids water but because of the structure of the leaf. Similarly the karma-yogi sits in action but is not covered by its residue — because of the internal orientation toward offering, not because they avoid action."
+          insight="The image is precise: the lotus leaf sits in water but is never wet. The leaf stays dry because of what it is, while sitting in the water. In the same way the karma yogi, who offers every action to Brahman and gives up attachment, sits in action without being stained by sin."
           essence="Act like a lotus leaf — in the water, but never wet by it."
         />
         <p>
           <a href="/gita/chapter/5/verse/10" data-mp-location="quote_full_5_10" style={{ color: 'var(--gold-light)' }}>Read the full verse page for 5.10 →</a>
         </p>
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: noted that 3.35 is repeated in 18.47 and aligned the 3.35 wording with the rest of the site; copy edited.</p>
       </div>
 
 
@@ -438,7 +439,7 @@ export default function KarmaQuotesPage() {
         <div className="faq-item">
           <strong>What are the most famous karma quotes in the Bhagavad Gita?</strong>
           <p>
-            The single most famous karma quote is Bhagavad Gita 2.47 — <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em> — &ldquo;You have a right to action, never to its fruits.&rdquo; Other essential karma shlokas include 2.48 (evenness of mind is called yoga), 3.9 (action as yajna), 3.19 (always act unattached), 4.18 (see inaction in action), 4.37 (knowledge burns all karma) and 18.47 (do your own duty).
+            The best-known karma quote is Bhagavad Gita 2.47 — <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em> — &ldquo;You have a right to action, never to its fruits.&rdquo; Other essential karma shlokas include 2.48 (evenness of mind is called yoga), 3.9 (action as yajna), 3.19 (always act unattached), 4.18 (see inaction in action), 4.37 (knowledge burns all karma) and 3.35, repeated in 18.47 (do your own duty).
           </p>
         </div>
 
@@ -459,7 +460,7 @@ export default function KarmaQuotesPage() {
         <div className="faq-item">
           <strong>Does the Bhagavad Gita say karma is fate?</strong>
           <p>
-            No. BG 4.37 explicitly says knowledge (<em>jñāna</em>) burns all karma to ashes — the past is not permanent, understanding transforms it. Karma in the Gita describes the chain between intention, action and consequence; it is not a cosmic sentencing system.
+            No. BG 4.37 explicitly says knowledge (<em>jñāna</em>) burns all karma to ashes — the past need not bind you, because understanding burns it away. Karma in the Gita describes the chain between intention, action and consequence; it is not a cosmic sentencing system.
           </p>
         </div>
       </div>

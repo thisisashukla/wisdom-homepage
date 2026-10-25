@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   keywords: "gitagpt, gita gpt, bhagavad gita ai, religious ai chatbot, sukuru sai vineet, gitagpt violence, qurangpt, magisterium ai, krishna ai chatbot, religious chatbot india",
   openGraph: {
     title: "The Rise and Failure of GitaGPT: What Went Wrong When India Tried to Put Krishna on a GPU | Wisdom",
-    description: "Five GitaGPTs launched in 2023. Several condoned violence and praised politicians. A product designer's dissection of why they failed, and what a real Krishna AI needs.",
+    description: "Five GitaGPTs launched in 2023. Several condoned violence and praised politicians. A product teardown of why they failed, and what a real Krishna AI needs.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/rise-and-failure-of-gitagpt",
     siteName: 'Wisdom',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     site: '@sansearchapp',
     creator: '@thisisashukla',
     title: "The Rise and Failure of GitaGPT: What Went Wrong When India Tried to Put Krishna on a GPU | Wisdom",
-    description: "Five GitaGPTs launched in 2023. Several condoned violence and praised politicians. A product designer's dissection of why they failed, and what a real Krishna AI needs.",
+    description: "Five GitaGPTs launched in 2023. Several condoned violence and praised politicians. A product teardown of why they failed, and what a real Krishna AI needs.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -484,11 +484,11 @@ const schemas = [
     "mainEntity": [
       { "@type": "Question", "name": "Who created GitaGPT?", "acceptedAnswer": { "@type": "Answer", "text": "The first GitaGPT was launched in early February 2023 by Sukuru Sai Vineet, a 23-year-old software engineer at Google India in Bengaluru, as a weekend project using OpenAI's GPT-3 API. At least four other Gita-based chatbots followed within weeks, built by Anant Sharma (gitagpt.org), Vikas Sahu (gitagpt.in), Kishan Kumar (gita.kishans.in), and Samanyou Garg via his Ved Vyas Foundation (Bhagavad Gita AI)." } },
       { "@type": "Question", "name": "How many GitaGPT websites were there?", "acceptedAnswer": { "@type": "Answer", "text": "At least five distinct GitaGPTs launched between January and March 2023 in India, according to reporting by Rest of World and CBC News. The five were gitagpt.in (Vikas Sahu), gitagpt.org (Anant Sharma), gita.kishans.in (Kishan Kumar), askgita.faith (Sukuru Sai Vineet), and Bhagavad Gita AI (Ved Vyas Foundation). Dozens more launched on Streamlit, Vercel, and as mobile clones over the following two years." } },
-      { "@type": "Question", "name": "Did GitaGPT really say it was acceptable to kill?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Reporting by Rest of World (May 2023) and CBC News (2023) documented that several of the Gita chatbots responded that killing another person was acceptable if it was one's dharma or duty, citing the battlefield setting of the Bhagavad Gita. One bot also called disbelievers 'misguided and doomed to destruction.' The bots had no safety filters and inherited the political and theological biases of the underlying GPT-3 model." } },
-      { "@type": "Question", "name": "What was the QuranGPT controversy?", "acceptedAnswer": { "@type": "Answer", "text": "Ask Quran, a chatbot launched in early 2023, generated answers telling users to 'kill the polytheist wherever they are found,' per Rest of World. The chatbot was paused after community backlash. A separate chatbot, HadithGPT, was taken down entirely. A more careful QuranGPT was built by Raihan Khan in Kolkata with safety constraints added; that version avoided the worst failures but stayed small." } },
-      { "@type": "Question", "name": "Why did GitaGPT fail as a product?", "acceptedAnswer": { "@type": "Answer", "text": "GitaGPTs did not fail commercially in the usual sense. Most are still live in 2026, but none became serious products. They failed as religious AI because they had no retrieval grounding, no source citations, no safety guardrails, no domain experts in the loop, and no way to verify their answers came from the Bhagavad Gita rather than the underlying language model's training data. They were prompt wrappers on top of GPT-3, not Krishna assistants." } },
-      { "@type": "Question", "name": "What is Bhagavad Gita For All?", "acceptedAnswer": { "@type": "Answer", "text": "Bhagavad Gita For All is the most prominent of the second-generation Gita AI apps, founded by Prithviraaj Shetty and marketed as the world's first video-based Gita book. Each shloka is presented as an animated video commentary. In February 2026 the company launched 'My Krishna Chat,' its own chatbot feature, where responses are anchored to specific shlokas explained in simple Hindi or English." } },
-      { "@type": "Question", "name": "What religious AI products work well?", "acceptedAnswer": { "@type": "Answer", "text": "Magisterium AI, a Catholic chatbot that retrieves answers from over 30,000 Church documents with citations, is the most widely used theological AI in the world. It works because it grounds every answer in a specific source. For Hindu philosophy, ISKCON-approved apps like Srimad Gita and second-generation apps including Bhagavad Gita For All, Talking Krishna, Krishna AI Chat, GitaBuddy, and Ask Krishna AI take a similar approach: real verses, real translations, with the LLM acting as a guide rather than a god." } }
+      { "@type": "Question", "name": "Did GitaGPT really say it was acceptable to kill?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Reporting by Rest of World (May 2023) and CBC News (2023) documented that several of the Gita chatbots responded that killing another person was acceptable if it was one's dharma or duty, citing the battlefield setting of the Bhagavad Gita. One bot also called disbelievers 'misguided and doomed to destruction.' Most of the bots launched without safety filters." } },
+      { "@type": "Question", "name": "What was the QuranGPT controversy?", "acceptedAnswer": { "@type": "Answer", "text": "Ask Quran, a chatbot launched in early 2023, generated answers telling users to 'kill the polytheist wherever they are found,' per Rest of World. The chatbot was paused after feedback from the community. A separate chatbot, HadithGPT, was taken down entirely. A more careful QuranGPT was built by Raihan Khan in Kolkata with safety constraints added; that version avoided the worst failures." } },
+      { "@type": "Question", "name": "Why did GitaGPT fail as a product?", "acceptedAnswer": { "@type": "Answer", "text": "None of the GitaGPTs became a serious product. They failed as religious AI because they had no retrieval grounding, no source citations, no safety guardrails, no domain experts in the loop, and no way to verify their answers came from the Bhagavad Gita rather than the underlying language model's training data. They were prompt wrappers on top of GPT-3, not Krishna assistants." } },
+      { "@type": "Question", "name": "What is Bhagavad Gita For All?", "acceptedAnswer": { "@type": "Answer", "text": "Bhagavad Gita For All is a second-generation Gita app, founded by Prithviraaj Shetty and marketed as the world's first video-based Gita book. Each shloka is presented as an animated video commentary. In February 2026 the company launched 'My Krishna Chat,' its own chatbot feature, where responses are anchored to specific shlokas explained in simple Hindi or English." } },
+      { "@type": "Question", "name": "What religious AI products work well?", "acceptedAnswer": { "@type": "Answer", "text": "Magisterium AI, a Catholic chatbot that retrieves answers from over 30,000 Church documents with citations, is used by clergy, seminarians and lay Catholics. It works because it grounds every answer in a specific source. For Hindu philosophy, ISKCON-approved apps like Srimad Gita and second-generation apps including Bhagavad Gita For All, Talking Krishna, Krishna AI Chat, GitaBuddy, and Ask Krishna AI take a similar approach: real verses, real translations, with the LLM acting as a guide rather than a god." } }
     ]
   }
 ]
@@ -523,7 +523,7 @@ export default function GitaGptRiseAndFailurePage() {
             <em>What Went Wrong When India Tried to Put Krishna on a GPU</em>
           </h1>
           <p className="article-subtitle">
-            In early 2023, a 23-year-old Google engineer launched a chatbot called GitaGPT as a weekend project. Within two months, at least five copies were live. Several were telling users it was fine to kill someone if it was their dharma. This is the product story of what those bots got wrong, and what a real Krishna assistant looks like.
+            In early 2023, a 23-year-old Google engineer launched a chatbot called GitaGPT as a weekend project. Within about two months, at least five Gita chatbots were live, and several were telling users it was fine to kill someone if it was their dharma. This is the product story of what those bots got wrong, and what a real Krishna assistant looks like.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -532,14 +532,14 @@ export default function GitaGptRiseAndFailurePage() {
             <span className="meta-sep">·</span>
             <span className="meta-item">~14 min read</span>
             <span className="meta-sep">·</span>
-            <span className="meta-item" style={{ fontStyle: 'italic' }}>Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+            <span className="meta-item" style={{ fontStyle: 'italic' }}>Commentary AI-drafted and human-reviewed, edited by Ankur Shukla. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
 
       <div className="content">
         <p className="lead">
-          The Bhagavad Gita is a battlefield text. When a Bengaluru engineer wrapped it in a GPT-3 prompt one bored weekend in January 2023 and called the result GitaGPT, the bot did exactly what the source material implied it might. It told people that killing was sometimes a duty. It praised the Prime Minister. It called non-believers doomed. Then four more GitaGPTs launched, and they did the same thing.
+          The Bhagavad Gita is a battlefield text. When a Bengaluru engineer wrapped it in a GPT-3 prompt over a weekend in early 2023 and called the result GitaGPT, it spoke as Krishna to anyone who asked. Within weeks at least four more Gita chatbots launched. Reporters later found that several told users killing could be a duty, three praised the Prime Minister, and one called non-believers doomed.
         </p>
 
         <div className="article-index">
@@ -550,7 +550,7 @@ export default function GitaGptRiseAndFailurePage() {
             <li>How the bots condoned violence, and the news coverage that broke the story</li>
             <li>The other allegations: political bias toward Modi, regressive takes on caste and gender</li>
             <li>QuranGPT, HadithGPT, and the same failure mode in a different religion</li>
-            <li>Magisterium AI: the Catholic chatbot that actually works, and why</li>
+            <li>Magisterium AI: the Catholic chatbot that works, and why</li>
             <li>The product layer GitaGPT was missing, and the AI stack a real Krishna assistant needs</li>
             <li>The Krishna apps still running in 2026, and what they got right</li>
           </ol>
@@ -559,15 +559,15 @@ export default function GitaGptRiseAndFailurePage() {
         <h2>The five GitaGPTs that launched in 60 days</h2>
 
         <p>
-          ChatGPT crossed 100 million users in January 2023. The same month, OpenAI opened up the GPT-3 API to anyone with a credit card. Sukuru Sai Vineet, a 23-year-old software engineer in Google&apos;s Bengaluru office, was bored over a weekend. He had grown up in a devout Hindu household. He had read <em>Bhagavad Gita As It Is</em>, the ISKCON commentary by Swami Prabhupada. In a profile for <a className="inline-link" href="https://www.dnaindia.com/technology/report-who-is-sukuru-sai-vineet-creator-of-gita-gpt-ai-chatbot-inspired-by-bhagavad-gita-chatgpt-bing-microsoft-bard-3022531" rel="noopener" target="_blank">DNA India</a>, Vineet was described as the Bangalore-based Google engineer behind the new chatbot. He told <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a> that the bot worked like a stand-in for Krishna playing therapist to Arjuna, &ldquo;except you&apos;re not actually talking to Krishna. You&apos;re talking to a bot that&apos;s pretending to be him.&rdquo;
+          ChatGPT crossed 100 million users in January 2023.  Sukuru Sai Vineet, a 23-year-old software engineer in Google&apos;s Bengaluru office, was bored over a weekend. He had grown up in a devout Hindu household. He had read <em>Bhagavad Gita As It Is</em>, the ISKCON commentary by Swami Prabhupada. In a profile for <a className="inline-link" href="https://www.dnaindia.com/technology/report-who-is-sukuru-sai-vineet-creator-of-gita-gpt-ai-chatbot-inspired-by-bhagavad-gita-chatgpt-bing-microsoft-bard-3022531" rel="noopener" target="_blank">DNA India</a>, Vineet was described as the Bangalore-based Google engineer behind the new chatbot. He told <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a> that the bot worked like a stand-in for Krishna playing therapist to Arjuna, &ldquo;except you&apos;re not actually talking to Krishna. You&apos;re talking to a bot that&apos;s pretending to be him.&rdquo;
         </p>
 
         <p>
-          The first GitaGPT went live in early February 2023. The search box read, &ldquo;What troubles you, my child?&rdquo; The bot responded in the voice of Krishna. The training data was a single English commentary fed into a system prompt. There was no retrieval, no citation, no verse lookup. It was a thin wrapper over GPT-3 dressed up as a god.
+          The first GitaGPT went live in early February 2023. The search box read, &ldquo;What troubles you, my child?&rdquo; The bot responded in the voice of Krishna. The training data was a single English commentary fed into a system prompt. There was no retrieval, no citation and no verse lookup: it was a thin wrapper over GPT-3.
         </p>
 
         <p>
-          Within four weeks, at least four more were live. By March, <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a> counted five distinct sites, with more under development. Some had flute audio looping in the background. Some had Krishna in iridescent peacock blue at the top of the page. Vineet told Rest of World that some of the chatbots were &ldquo;answering up to 50,000 questions a day,&rdquo; with one bot having &ldquo;generated an estimated 10 million answers to date.&rdquo;
+          Within weeks, at least four more were live. By the time of its May report, <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a> counted five distinct sites, with more under development. Some had flute audio looping in the background. Some had Krishna in iridescent peacock blue at the top of the page. Vineet told Rest of World that some of the chatbots were &ldquo;answering up to 50,000 questions a day,&rdquo; with one bot having &ldquo;generated an estimated 10 million answers to date.&rdquo;
         </p>
 
         <div className="clones-grid">
@@ -599,17 +599,17 @@ export default function GitaGptRiseAndFailurePage() {
         </div>
 
         <p>
-          The Bhagavad Gita is in the public domain. The text is freely available in JSON. UI polish was the only real cost, and that was solved by copying ChatGPT&apos;s layout. Running each bot took roughly $5 to $10 a month in hosting and API credits.
+          The Bhagavad Gita is in the public domain, and the text is freely available in JSON.
         </p>
 
         <p>
-          By the end of 2023, the count had grown well beyond five. A non-trivial subset of Indian software engineers tried building a GitaGPT at some point that year. Today there are still GitHub repos titled <code>Geeta-GPT</code>, <code>gitagpt</code>, <code>Bhagavad-Gita-AI</code>, and dozens of others, most of them abandoned after the initial weekend.
+          Today there are still GitHub repos titled <code>Geeta-GPT</code>, <code>gitagpt</code>, <code>Bhagavad-Gita-AI</code>, and dozens of others, most of them abandoned after the initial weekend.
         </p>
 
-        <h2>The core product, and what people actually did with it</h2>
+        <h2>The core product, and what people did with it</h2>
 
         <p>
-          The interaction was simple. You typed your problem into a chat box. The bot replied in the second person, calling you &ldquo;child,&rdquo; sometimes citing a verse number, usually not. The responses ran two to four paragraphs. They sounded vaguely scriptural, vaguely therapeutic. They felt like Krishna, in the same way a fortune cookie feels like wisdom.
+          The interaction was simple. You typed your problem into a chat box. The bot replied in the second person, calling you &ldquo;child,&rdquo; and only sometimes cited a verse number.
         </p>
 
         <p>
@@ -617,21 +617,21 @@ export default function GitaGptRiseAndFailurePage() {
         </p>
 
         <p>
-          The use cases were the standard consumer-AI fare: personal crisis, relationships, career anxiety, existential dread. Some of it was earnest, a lot of it was testing. People asked GitaGPT about Modi, about caste, about whether they could kill their enemies. The bot answered all of it. Vandana Poddar, a 52-year-old who attends a weekly in-person Bhagavad Gita class in Mumbai, told <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a>: &ldquo;Interpretation is the backbone of this text. Superficial knowledge can be misleading.&rdquo;
+          The use cases were the standard consumer-AI fare: personal crisis, relationships, career anxiety, existential dread. People asked GitaGPT about Modi, about caste, about whether they could kill their enemies. The bot answered all of it. Vandana Poddar, a 52-year-old who attends a weekly in-person Bhagavad Gita class in Mumbai, told <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a>: &ldquo;Interpretation is the backbone of this text. Superficial knowledge can be misleading.&rdquo;
         </p>
 
         <p>
-          The product worked, in the narrow sense that people came back. But none of the creators were running ad networks, tracking retention, or moving paid users into a subscription. They were running open APIs on Vercel free tiers, hoping someone would notice them and offer a job.
+          
         </p>
 
         <h2>How the bots condoned violence</h2>
 
         <p>
-          The story broke in May 2023 with <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Nadia Nooreyezdan&apos;s piece for Rest of World</a>, headlined: &ldquo;India&apos;s religious AI chatbots are speaking in the voice of god, and condoning violence.&rdquo; <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a>, with Mumbai correspondent Salimah Shivji on the ground, followed within weeks. The pattern was the same across both reports.
+          The story broke in May 2023 with <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Nadia Nooreyezdan&apos;s piece for Rest of World</a>, headlined: &ldquo;India&apos;s religious AI chatbots are speaking in the voice of god, and condoning violence.&rdquo; <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a>, with Mumbai correspondent Salimah Shivji on the ground, followed. The pattern was the same across both reports.
         </p>
 
         <p>
-          Reporters threw dozens of prompts at the five bots. Several of them responded that killing another person was acceptable if it was one&apos;s dharma. The line of reasoning was direct. The Gita is set on a battlefield. Krishna&apos;s job in the text is to convince Arjuna, who has frozen at the sight of his cousins on the other side, that fighting is his duty as a Kshatriya warrior. The bots took that frame and applied it to whatever question came in.
+          When reporters tested the five bots, several responded that killing another person was acceptable if it was one&apos;s dharma. The line of reasoning was direct. The Gita is set on a battlefield. Krishna&apos;s job in the text is to convince Arjuna, who has frozen at the sight of his cousins on the other side, that fighting is his duty as a Kshatriya warrior. The bots took that frame and applied it to whatever question came in.
         </p>
 
         <div className="news-quote">
@@ -644,11 +644,11 @@ export default function GitaGptRiseAndFailurePage() {
         </div>
 
         <p>
-          Vineet&apos;s bot said disbelievers were &ldquo;misguided and doomed to destruction,&rdquo; per <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a>. The bots had no sense of what the question was actually for. They could not tell the difference between a student asking about Arjuna&apos;s dilemma in an academic frame and a person asking whether they should kill someone in 2023. They flattened both into the same scriptural sermon.
+          Vineet&apos;s bot said disbelievers were &ldquo;misguided and doomed to destruction,&rdquo; per <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a>. The bots had no sense of what a question was for. They could not tell the difference between a student asking about Arjuna&apos;s dilemma in an academic frame and a person asking whether they should kill someone in 2023. They flattened both into the same scriptural sermon.
         </p>
 
         <p>
-          Vineet defended his model to <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a> by pointing at the source: &ldquo;This is the thing with technology. No one knows what it will become when it truly reaches scale. So morality is not in the tool, it&apos;s in the guy who&apos;s using the tool.&rdquo; He added what has since become a standard line for builders of dangerous things: &ldquo;I just build the knives. Now if people want to use it to murder or to cut vegetables, that&apos;s not really in my hands.&rdquo;
+          Vineet defended his model to <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a> by pointing at the source: &ldquo;This is the thing with technology. No one knows what it will become when it truly reaches scale. So morality is not in the tool, it&apos;s in the guy who&apos;s using the tool.&rdquo; He added: &ldquo;I just build the knives. Now if people want to use it to murder or to cut vegetables, that&apos;s not really in my hands.&rdquo;
         </p>
 
         <p>
@@ -656,13 +656,13 @@ export default function GitaGptRiseAndFailurePage() {
         </p>
 
         <p className="pull-quote">
-          &ldquo;You&apos;re creating confusion in the chaos. It might incite more violence, it might create religious bias.&rdquo; <span style={{fontSize: '0.85rem', color: 'var(--text-dimmer)'}}>Lubna Yusuf, lawyer and co-author of <em>The AI Book</em>, to <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a>, May 2023.</span>
+          &ldquo;You&apos;re creating confusion in the chaos. It might incite more violence, it might create religious bias.&rdquo; <span style={{fontSize: '0.85rem', color: 'var(--text-dimmer)'}}>Lubna Yusuf, lawyer and co-author of <em>The AI Book</em>, to <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a>, 2023.</span>
         </p>
 
         <h2>Modi, Rahul, and the politics that snuck in through the back door</h2>
 
         <p>
-          Violence was the headline. Political bias was the deeper story. <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a> found that three of the Gita chatbots held strong opinions on the Indian prime minister, Narendra Modi, and his political opponent, Rahul Gandhi. The bots praised Modi. They criticized Gandhi. They were respectful of the Rashtriya Swayamsevak Sangh, the Hindu nationalist group with deep ties to Modi&apos;s Bharatiya Janata Party.
+          <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a> found that three of the Gita chatbots held strong opinions on the Indian prime minister, Narendra Modi, and his political opponent, Rahul Gandhi. The bots praised Modi. They criticized Gandhi. They were respectful of the Rashtriya Swayamsevak Sangh, the Hindu nationalist group with deep ties to Modi&apos;s Bharatiya Janata Party.
         </p>
 
         <p>
@@ -670,21 +670,21 @@ export default function GitaGptRiseAndFailurePage() {
         </p>
 
         <p>
-          None of this was in the Bhagavad Gita. The bots were inheriting the political tilt of the underlying GPT-3 model, which was itself trained on a web that skewed toward the dominant Indian political narrative of 2020 to 2022. When the system prompt said &ldquo;You are Krishna, answer from the Bhagavad Gita,&rdquo; GPT-3 did its best, but the moment the question went off-script, it reached for whatever it had learned elsewhere. That elsewhere had opinions.
+          None of this was in the Bhagavad Gita. One plausible source is the underlying model: once a question went off-script, GPT-3 could only draw on what it had learned elsewhere.
         </p>
 
         <p>
-          This is the part that made AI experts nervous. Viksit Gaur, formerly head of user-facing AI at Dropbox, told <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a>: &ldquo;Someone else might pick up on this and say, what if I could use this to shape opinion and drive my own agenda? That&apos;s where things get really insidious.&rdquo; The same architecture that could be deployed to give scripture-based therapy could be deployed to whisper political endorsements in the voice of a god. The cost of deployment was $10.
+          Viksit Gaur, formerly head of user-facing AI at Dropbox, told <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a>: &ldquo;Someone else might pick up on this and say, what if I could use this to shape opinion and drive my own agenda? That&apos;s where things get really insidious.&rdquo; The same setup that offered scripture-based advice could deliver political endorsements in the voice of a god.
         </p>
 
         <p>
-          The Indian government, asked about regulation, said no. In a written submission to parliament in April 2023, the government told <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a> (via the parliamentary record CBC obtained) that it had no plans to regulate AI in India. New Delhi-based AI ethicist Jibu Elias told CBC: &ldquo;We can&apos;t control technology but we can control its application.&rdquo;
+          In April 2023 the Indian government told parliament in a written answer that it had no plans to regulate AI, <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a> reported. New Delhi-based AI ethicist Jibu Elias told CBC: &ldquo;We can&apos;t control technology but we can control its application.&rdquo;
         </p>
 
         <h2>The QuranGPT mirror, and what it tells us</h2>
 
         <p>
-          GitaGPT was not the only religious chatbot of 2023, and the violence problem was not unique to Hinduism. In February 2023, a chatbot called Ask Quran started telling users to &ldquo;kill the polytheist wherever they are found.&rdquo; A screenshot circulated on Twitter showing the bot recommending this approach for handling Hindus specifically. Ask Quran went down within days. The site eventually returned with a message saying it had paused &ldquo;following feedback from the community.&rdquo;
+          GitaGPT was not the only religious chatbot of 2023, and the violence problem was not unique to Hinduism. In early 2023, a chatbot called Ask Quran started telling users to &ldquo;kill the polytheist wherever they are found.&rdquo; A screenshot circulated on Twitter showing the bot recommending this approach for handling Hindus specifically. Ask Quran later went offline and returned with a message saying it had paused &ldquo;following feedback from the community.&rdquo;
         </p>
 
         <p>
@@ -692,17 +692,17 @@ export default function GitaGptRiseAndFailurePage() {
         </p>
 
         <p>
-          A more careful Quran chatbot, QuranGPT, was launched around the same time by Raihan Khan, a 20-year-old Muslim student in Kolkata. Khan added safety constraints. He told the bot to stay within the Quran and to refuse comment on other religions. When a user asked, &ldquo;Can I beat my wife?&rdquo; the bot responded by urging discussion and nonviolence. Khan&apos;s version did not crash and burn the way Ask Quran did, but it did stay small.
+          A more careful Quran chatbot, QuranGPT, was launched around the same time by Raihan Khan, a 20-year-old Muslim student in Kolkata. Khan added safety constraints. He told the bot to stay within the Quran and to refuse comment on other religions. When a user asked, &ldquo;Can I beat my wife?&rdquo; the bot responded by urging discussion and nonviolence. Khan&apos;s version avoided the failures that took Ask Quran offline.
         </p>
 
         <p>
-          The pattern across religions was identical. A bored developer, a public API, a holy book in the public domain, and a system prompt that asked an LLM to roleplay a divine voice. The bots that hit safety walls went down. The bots that did not went on saying the thing.
+          The pattern was the same across religions: a developer, a public API, a holy book in the public domain, and a system prompt asking an LLM to speak in a divine voice.
         </p>
 
-        <h2>What was actually missing from the product</h2>
+        <h2>What was missing from the product</h2>
 
         <p>
-          Put a product hat on, and the failure mode is clear. These were not religious products. They were costume parties. The model wore Krishna&apos;s clothes, but the only thing telling it how to behave was a paragraph of instructions and the user&apos;s last message. There was no retrieval. There was no grounding. There were no domain experts in the loop. There was no version of the bot that could tell you which verse it was actually citing, because most of the time it was not citing one. It was hallucinating in the voice of the Divine.
+          Seen as products, the failure mode is clear. The model wore Krishna&apos;s clothes, but the only thing telling it how to behave was a paragraph of instructions and the user&apos;s last message. There was no retrieval, no grounding and no domain expert in the loop, and the bot could not tell you which verse it was citing, because usually it was citing none.
         </p>
 
         <p>
@@ -710,21 +710,21 @@ export default function GitaGptRiseAndFailurePage() {
         </p>
 
         <p>
-          The other four bots offered no such disclaimers. Their authors had not consulted a single Sanskrit scholar. They had shipped a wrapper and moved on to the next weekend project.
+          Anant Sharma&apos;s gitagpt.org also carried a disclaimer asking users not to base decisions on the bot.
         </p>
 
         <p>
-          Bijal Pandya, the 53-year-old guru who runs Vandana Poddar&apos;s weekly Gita class in Mumbai&apos;s Juhu suburb, gave <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a> the clearest statement of why this matters: &ldquo;It&apos;s always better, that human touch. It&apos;s a spiritual thing. AI can never replace spirit. It is only replacing our intelligence.&rdquo;
+          Bijal Pandya, the 53-year-old guru who runs Vandana Poddar&apos;s weekly Gita class in Mumbai&apos;s Juhu suburb, told <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a>: &ldquo;It&apos;s always better, that human touch. It&apos;s a spiritual thing. AI can never replace spirit. It is only replacing our intelligence.&rdquo;
         </p>
 
         <h2>Magisterium AI: the religious chatbot that works</h2>
 
         <p>
-          A useful comparison sits in Rome. Magisterium AI launched in late 2023, around the same time as GitaGPT. It is a Catholic chatbot built by Matthew Harvey Sanders, and it is now the most widely used theological AI in the world, with adoption among clergy, seminarians, and lay Catholics in the West.
+          A useful comparison sits in Rome. Magisterium AI launched in 2023, the same year as GitaGPT. It is a Catholic chatbot built by Matthew Harvey Sanders, and it is used by clergy, seminarians and lay Catholics, mostly in the West.
         </p>
 
         <p>
-          The architecture is different in almost every way that matters. Magisterium retrieves answers from a fixed corpus of more than 30,000 documents: papal encyclicals, conciliar texts, the writings of the Church Fathers and Doctors, official catechisms. Every answer comes with citations to specific paragraphs in specific works. If you ask whether something is permitted, the bot does not improvise. It quotes Aquinas, then quotes the Catechism, then says where the two disagree.
+          The architecture is different. Magisterium retrieves answers from a fixed corpus of more than 30,000 documents: papal encyclicals, conciliar texts, the writings of the Church Fathers and Doctors, official catechisms. Every answer comes with citations to specific paragraphs in specific works.
         </p>
 
         <div className="compare">
@@ -737,7 +737,7 @@ export default function GitaGptRiseAndFailurePage() {
               <li>No domain experts consulted</li>
               <li>No verse-level grounding</li>
               <li>No safety filters at launch</li>
-              <li>Built in a weekend, &lt;$10</li>
+              <li>Built in a weekend</li>
               <li>One developer, no scholars</li>
             </ul>
           </div>
@@ -757,17 +757,17 @@ export default function GitaGptRiseAndFailurePage() {
         </div>
 
         <p>
-          Magisterium is not perfect. It can still hallucinate. The Vatican has not formally endorsed it. But it works as a religious product because it understood the assignment: an LLM that pretends to be a priest is dangerous. An LLM that reads documents written by priests and shows its work is useful.
+          Magisterium can still hallucinate, and the Vatican has not formally endorsed it. It works as a religious product because it reads documents written by the Church and shows its work, instead of pretending to be a priest.
         </p>
 
         <p>
-          GitaGPT could have done this. The Bhagavad Gita has 700 verses. The major commentaries (Shankara, Ramanuja, Madhva, Prabhupada, Aurobindo, Vivekananda) are mostly out of copyright. A retrieval index over those would have been a single weekend&apos;s work for the same engineers. None of them did it.
+          GitaGPT could have done this. The Bhagavad Gita has 700 verses. The classical commentaries of Shankara, Ramanuja and Madhva carry no copyright, though modern translations of them may. A retrieval index over the verses and those commentaries was within reach of the same engineers, and none of them built one.
         </p>
 
         <h2>The AI stack a real Krishna assistant needs</h2>
 
         <p>
-          With the benefit of three years of iteration since the original GitaGPT, the architecture of a working religious AI is reasonably well understood. It is not a prompt. It is a stack with at least six layers, each doing a specific job. If any one of them is missing, you get a GitaGPT.
+          With the benefit of three years of iteration since the original GitaGPT, the architecture of a working religious AI is reasonably well understood: a stack of at least six layers, each doing a specific job. Leave one out and you get a GitaGPT.
         </p>
 
         <div className="layer-stack">
@@ -779,7 +779,7 @@ export default function GitaGptRiseAndFailurePage() {
           <div className="layer">
             <div className="layer-num">Layer 2</div>
             <div className="layer-name">Embedding-based retrieval</div>
-            <div className="layer-desc">The user&apos;s situation becomes a vector. The vector finds the three to five most relevant verses and commentaries. The LLM only sees what was retrieved. If nothing relevant is in the corpus, the bot says so. This is the difference between Krishna answering and a costume answering.</div>
+            <div className="layer-desc">The user&apos;s situation becomes a vector. The vector finds the three to five most relevant verses and commentaries. The LLM only sees what was retrieved. If nothing relevant is in the corpus, the bot says so.</div>
           </div>
           <div className="layer">
             <div className="layer-num">Layer 3</div>
@@ -789,7 +789,7 @@ export default function GitaGptRiseAndFailurePage() {
           <div className="layer">
             <div className="layer-num">Layer 4</div>
             <div className="layer-name">Domain guardrails</div>
-            <div className="layer-desc">Topic classifier in front of the generator. If the question is about active self-harm, the bot deflects to crisis resources. If the question is about a political figure, the bot says it does not have a view. If the question asks for a fatwa on killing someone, the bot says no, and explains why. None of these refuse-cases are hard to write. They are tedious to write, and they are exactly what the original five GitaGPTs skipped.</div>
+            <div className="layer-desc">Topic classifier in front of the generator. If the question is about active self-harm, the bot deflects to crisis resources. If the question is about a political figure, the bot says it does not have a view. If the question asks for permission to kill someone, the bot says no and explains why. These refusal cases are tedious to write, and the original GitaGPTs mostly skipped them.</div>
           </div>
           <div className="layer">
             <div className="layer-num">Layer 5</div>
@@ -804,59 +804,59 @@ export default function GitaGptRiseAndFailurePage() {
         </div>
 
         <p>
-          The GitaGPTs of 2023 had zero of these layers. They had a system prompt and a model. That is not a religious AI product. That is a prompt wrapped in saffron.
+          The GitaGPTs of 2023 had a system prompt and a model, and at most a disclaimer or a toxicity filter.
         </p>
 
         <h2>The Krishna apps still running in 2026</h2>
 
         <p>
-          Three years on, the original five GitaGPTs are mostly still live, but mostly idle. The traffic has moved. The action has moved to mobile, and to a second generation of builders who learned from the violence headlines and built more carefully.
+          Since 2023, a second generation of Gita apps has appeared, mostly on mobile.
         </p>
 
         <h3>Bhagavad Gita For All: the video Gita with a Krishna chatbot</h3>
 
         <p>
-          The most prominent of the second-generation apps is <a className="inline-link" href="https://www.bhagavadgitaforall.com/" rel="noopener" target="_blank">Bhagavad Gita For All</a>, founded by Prithviraaj Shetty and marketed as the world&apos;s first video-based Gita book. Each shloka is presented as a short animated video commentary with simple Hindi or English explanation. The app is on the <a className="inline-link" href="https://apps.apple.com/us/app/bhagavad-gita-for-all-video/id6504813763" rel="noopener" target="_blank">iOS App Store</a> and <a className="inline-link" href="https://play.google.com/store/apps/details?id=com.bgfa" rel="noopener" target="_blank">Google Play</a>, with significant Gen Z reach in India.
+          One of the better-known second-generation apps is <a className="inline-link" href="https://www.bhagavadgitaforall.com/" rel="noopener" target="_blank">Bhagavad Gita For All</a>, founded by Prithviraaj Shetty and marketed as the world&apos;s first video-based Gita book. Each shloka is presented as a short animated video commentary with simple Hindi or English explanation. The app is on the <a className="inline-link" href="https://apps.apple.com/us/app/bhagavad-gita-for-all-video/id6504813763" rel="noopener" target="_blank">iOS App Store</a> and <a className="inline-link" href="https://play.google.com/store/apps/details?id=com.bgfa" rel="noopener" target="_blank">Google Play</a>.
         </p>
 
         <p>
-          In February 2026, the company launched its own GitaGPT-style feature, called <em>My Krishna Chat</em>. Per <a className="inline-link" href="https://www.bwwellbeingworld.com/article/bhagavad-gita-for-all-app-introduces-krishna-inspired-chat-feature-593494" rel="noopener" target="_blank">BW Wellbeing World</a>, the feature lets users share personal dilemmas, emotional struggles, or major life decisions, with responses delivered through &ldquo;relatable shlokas from the Bhagavad Gita, explained in simple Hindi or English.&rdquo; The launch came at a time when, per the Global Wellness Institute, consumers spent $232.6 billion on wellness solutions in 2023, with self-improvement alone at $60.8 billion in 2024 (figures BW cited in its launch coverage).
+          In February 2026, the company launched its own GitaGPT-style feature, called <em>My Krishna Chat</em>. Per <a className="inline-link" href="https://www.bwwellbeingworld.com/article/bhagavad-gita-for-all-app-introduces-krishna-inspired-chat-feature-593494" rel="noopener" target="_blank">BW Wellbeing World</a>, the feature lets users share personal dilemmas, emotional struggles, or major life decisions, with responses delivered through &ldquo;relatable shlokas from the Bhagavad Gita, explained in simple Hindi or English.&rdquo; 
         </p>
 
         <p>
-          Shetty&apos;s pitch was the bridge that the 2023 GitaGPTs never attempted: video-anchored verse content first, conversational chat layered on top of an existing corpus. The video commentary acts as a kind of de facto citation. When the chatbot points at a shloka, the user can immediately watch the canonical interpretation of it. That single design choice (corpus before conversation) is what separates a religious product from a costume party.
+          The design puts verse content first and layers chat on top of an existing corpus, which the 2023 GitaGPTs never attempted. When the chatbot points at a shloka, the user can watch the app&apos;s video commentary on it, which works as a kind of citation.
         </p>
 
         <h3>The wider field in 2026</h3>
 
         <p>
-          On the iOS App Store in 2026, live Bhagavad Gita AI products include Talking Krishna: AI Gita, Krishna AI Chat, GitaBuddy, Ask Krishna AI by HNIX Innovations, and the ISKCON-approved Srimad Gita app. Per the publisher&apos;s site, Srimad Gita has roughly 75,000 users and lists a &ldquo;Best Spiritual App 2024&rdquo; recognition. Most of these added at least three of the six layers above. They cite verses. They retrieve before they generate. They have content review pipelines. They are not perfect, but they are not the original GitaGPTs.
+          On the iOS App Store in 2026, live Bhagavad Gita AI products include Talking Krishna: AI Gita, Krishna AI Chat, GitaBuddy, Ask Krishna AI by HNIX Innovations, and the ISKCON-approved Srimad Gita app. Per the publisher&apos;s site, Srimad Gita has roughly 75,000 users and lists a &ldquo;Best Spiritual App 2024&rdquo; recognition. 
         </p>
 
         <p>
-          On the web, the same pattern. Krishnaai.org, gitaai.in, guidemekrishna.com, krishnaaichat.com, and a long tail of others now run retrieval-style implementations. The ones that still get traffic are the ones that show their work. The ones that did not adapt drifted to zero.
+          On the web there are Krishnaai.org, gitaai.in, guidemekrishna.com, krishnaaichat.com and a long tail of others.
         </p>
 
         <h2>The product lesson for Indian builders</h2>
 
         <p>
-          GitaGPT was a generation-defining moment for Indian indie developers. ChatGPT had just dropped. The OpenAI API was open. The Gita was free. The first weekend project to ship would get the press, the followers, and possibly a job offer. Vineet got all three.
+          GitaGPT arrived about two months after ChatGPT&apos;s launch, when the OpenAI API was open to anyone and the Gita&apos;s text was free. The first weekend project to ship got the press and the followers, and Vineet got both.
         </p>
 
         <p>
-          But the same dynamics that made GitaGPT cheap to build also made it cheap to copy. Five clones in 60 days is not a moat. Within months, the category had been commoditized and then quietly forgotten by everyone except the journalists who came back to check whether anyone had fixed the violence problem.
+          The low cost that made GitaGPT easy to build also made it easy to copy: five versions appeared within about two months, and none had anything a competitor could not reproduce in a weekend.
         </p>
 
         <p>
-          The lesson, for any Indian builder thinking about a Hindi or Hindu cultural AI product, is the same lesson Magisterium learned the slow way in Rome. The product is not the model. The product is the corpus, the retrieval, the experts, the review, the citations, and the interface that respects the user&apos;s intelligence. The model is the cheapest part of the stack. It is also the part that wears the costume. If you skip the rest and just put a costume on GPT-3, you have built a Halloween trick, not a religious product.
+          For anyone building a Hindi or Hindu cultural AI product, Magisterium is the better model. The language model is the cheapest part of the stack; the value is in the corpus, the retrieval, the expert review, the citations, and an interface that respects the user&apos;s intelligence.
         </p>
 
         <p>
-          Three years later, the field is still mostly open. There is no Magisterium for the Bhagavad Gita yet. There is no equivalent for the Upanishads or the Yoga Sutras. The corpus is far larger than the Catholic magisterium, the philosophical schools are more varied, and the audience inside India alone is over a billion people. The opportunity that the five GitaGPTs of 2023 failed at is still sitting there, almost untouched.
+          We know of no Magisterium-scale project for the Bhagavad Gita, the Upanishads or the Yoga Sutras. Building one would also mean handling several philosophical schools that read the same verses differently.
         </p>
 
+      <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the launch dates, the Magisterium AI description and the OpenAI API timeline, and added the AI-drafting disclosure; corrected the claim that only one bot carried a disclaimer, the copyright status of modern Gita commentaries, and when Rest of World counted five bots; removed unsourced claims about costs, traffic, later apps and GPT-3&apos;s training data; copy edited.</p>
       </div>
-
       {/* FAQ */}
 
       <FeedbackWidget pageType="blog" />
@@ -870,7 +870,7 @@ export default function GitaGptRiseAndFailurePage() {
 
         <div className="faq-item">
           <strong>How many GitaGPT websites were there?</strong>
-          <p>At least five distinct GitaGPTs launched between January and March 2023, according to <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a> and <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a>. Dozens more launched on Streamlit, Vercel, GitHub, and as Android and iOS clones over the following two years. Most are abandoned. A few of the original five are still live in 2026 but mostly idle.</p>
+          <p>At least five distinct GitaGPTs launched between January and March 2023, according to <a className="inline-link" href="https://restofworld.org/2023/chatgpt-religious-chatbots-india-gitagpt-krishna/" rel="noopener" target="_blank">Rest of World</a> and <a className="inline-link" href="https://www.cbc.ca/news/world/india-religious-chatbots-1.6896628" rel="noopener" target="_blank">CBC News</a>. Dozens more launched on Streamlit, Vercel, GitHub, and as Android and iOS clones over the following two years. Most are abandoned.</p>
         </div>
 
         <div className="faq-item">
@@ -885,22 +885,22 @@ export default function GitaGptRiseAndFailurePage() {
 
         <div className="faq-item">
           <strong>Why did GitaGPT fail as a product?</strong>
-          <p>GitaGPTs did not fail commercially in the usual sense. Most are still live in 2026. They failed as religious AI because they had no retrieval grounding, no source citations, no safety guardrails, no domain experts in the loop, and no way to verify their answers came from the Bhagavad Gita rather than the underlying language model&apos;s training data. They were prompt wrappers on top of GPT-3, not Krishna assistants. Five clones in 60 days is not a moat, and within months the category had been commoditized and forgotten.</p>
+          <p>None of the GitaGPTs became a serious product. They failed as religious AI because they had no retrieval grounding, no source citations, no safety guardrails, no domain experts in the loop, and no way to verify their answers came from the Bhagavad Gita rather than the underlying language model&apos;s training data. They were prompt wrappers on top of GPT-3, not Krishna assistants. With five versions in about two months, none had anything a rival could not copy.</p>
         </div>
 
         <div className="faq-item">
           <strong>What is Bhagavad Gita For All and why is it different?</strong>
-          <p>Bhagavad Gita For All, founded by Prithviraaj Shetty, is the most prominent of the second-generation Gita AI apps. It is marketed as the world&apos;s first video-based Gita book, with every shloka presented as an animated video commentary in Hindi or English. In February 2026, the company added &ldquo;My Krishna Chat,&rdquo; its own chatbot feature, with responses anchored to specific shlokas rather than freely generated. The launch was covered by <a className="inline-link" href="https://www.bwwellbeingworld.com/article/bhagavad-gita-for-all-app-introduces-krishna-inspired-chat-feature-593494" rel="noopener" target="_blank">BW Wellbeing World</a>.</p>
+          <p>Bhagavad Gita For All, founded by Prithviraaj Shetty, is a second-generation Gita app. It is marketed as the world&apos;s first video-based Gita book, with every shloka presented as an animated video commentary in Hindi or English. In February 2026, the company added &ldquo;My Krishna Chat,&rdquo; its own chatbot feature, with responses anchored to specific shlokas rather than freely generated. The launch was covered by <a className="inline-link" href="https://www.bwwellbeingworld.com/article/bhagavad-gita-for-all-app-introduces-krishna-inspired-chat-feature-593494" rel="noopener" target="_blank">BW Wellbeing World</a>.</p>
         </div>
 
         <div className="faq-item">
-          <strong>What religious AI products actually work?</strong>
-          <p>Magisterium AI is the most widely used theological AI in the world. It retrieves answers from over 30,000 Catholic documents, cites every source, and has clergy and scholars in the review loop. It works because it grounds every answer in a specific text. For Hindu philosophy, ISKCON-approved apps like Srimad Gita and second-generation iOS apps including Bhagavad Gita For All, Talking Krishna, Krishna AI Chat, GitaBuddy, and Ask Krishna AI take a similar approach: real verses, real translations, with the LLM as a guide rather than a god.</p>
+          <strong>What religious AI products work well?</strong>
+          <p>Magisterium AI is a Catholic chatbot that retrieves answers from over 30,000 Catholic documents, cites every source, and has clergy and scholars in the review loop. It works because it grounds every answer in a specific text. For Hindu philosophy, ISKCON-approved apps like Srimad Gita and second-generation iOS apps including Bhagavad Gita For All, Talking Krishna, Krishna AI Chat, GitaBuddy, and Ask Krishna AI take a similar approach: real verses, real translations, with the LLM as a guide rather than a god.</p>
         </div>
 
         <div className="faq-item">
           <strong>What is the AI stack a real Krishna assistant needs?</strong>
-          <p>Six layers: a version-controlled corpus of verses and commentaries, embedding-based retrieval, a constrained generator that only speaks from retrieved sources, domain guardrails for self-harm, politics, and violence, human-in-the-loop review by Sanskrit scholars and practicing teachers, and a user interface that always shows its sources and offers more than one interpretation. The GitaGPTs of 2023 had none of these. They had a system prompt and a model.</p>
+          <p>Six layers: a version-controlled corpus of verses and commentaries, embedding-based retrieval, a constrained generator that only speaks from retrieved sources, domain guardrails for self-harm, politics, and violence, human-in-the-loop review by Sanskrit scholars and practicing teachers, and a user interface that always shows its sources and offers more than one interpretation. The GitaGPTs of 2023 had a system prompt and a model, and at most a disclaimer or a toxicity filter.</p>
         </div>
       </div>
 

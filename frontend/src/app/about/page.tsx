@@ -5,7 +5,7 @@ import Nav from '@/components/Nav'
 export const metadata: Metadata = {
   title: 'About Ankur Shukla, Founder of Wisdom & Dadly | iOS Apps for Everyday Practice',
   description:
-    'I’m Ankur Shukla, an iOS app developer and lifelong student of the Bhagavad Gita. I build Wisdom (daily shloka app) and Dadly (AI companion for new dads). Here is who I am and how I write.',
+    'I’m Ankur Shukla, an iOS app developer and long-time reader of the Bhagavad Gita. I build Wisdom (Bhagavad Gita app) and Dadly (AI companion for new dads), and edit the essays on this site.',
   keywords:
     'Ankur Shukla, Wisdom app founder, Dadly app founder, Bhagavad Gita writer, iOS app developer, indie iOS developer, Sanskrit shloka app, dadlyapp.com',
   openGraph: {
@@ -191,7 +191,7 @@ const personSchema = {
   url: 'https://wisdomquotes.in/about',
   jobTitle: 'iOS App Developer & Writer',
   description:
-    'Indie iOS developer and writer. Builder of Wisdom (Bhagavad Gita daily shloka app) and Dadly (AI companion for expecting and new dads). Long-time student of the Bhagavad Gita.',
+    'Indie iOS developer and writer. Builder of Wisdom (Bhagavad Gita daily shloka app) and Dadly (AI companion for expecting and new dads). Long-time reader of the Bhagavad Gita.',
   sameAs: [
     'https://www.linkedin.com/in/thisisashukla/',
     'https://x.com/thisisashukla',
@@ -262,12 +262,12 @@ export default function AboutPage() {
           <div className="about-hero-label">About</div>
           <h1>
             I build iOS apps<br />
-            <em>for the kind of things you can&rsquo;t outsource.</em>
+            <em>and edit this site.</em>
           </h1>
           <p className="about-hero-sub">
-            I&rsquo;m Ankur Shukla. I write the essays on this site and I build the
-            Wisdom app. Below is who I am, how I work, and why I started writing
-            about the Bhagavad Gita in the first place.
+            I&rsquo;m Ankur Shukla. I build the Wisdom app and edit the essays and
+            verse pages on this site. Below is who I am, how the writing here is
+            made, and why it&rsquo;s about the Bhagavad Gita.
           </p>
         </div>
       </div>
@@ -275,59 +275,50 @@ export default function AboutPage() {
       <main className="about-wrap">
         <h2>Who I am</h2>
         <p>
-          I&rsquo;m an iOS app developer and a long-time, slow-paced student of the
-          Bhagavad Gita. I read it the way most people read it. Not as a
-          scholar, not in an ashram, but in pieces, over years, in the gaps
-          between work and life. The essays on this blog are a record of that
-          reading: chapter by chapter, verse by verse, with Sanskrit text,
-          translation, and what each section has meant to me in practice.
+          I&rsquo;m an iOS app developer. I&rsquo;ve read the Bhagavad Gita for
+          years, a few verses at a time, in the gaps between work and family.
+          The essays go through the Gita chapter by chapter, with the Sanskrit,
+          a translation, and commentary that I edit.
         </p>
         <p>
-          I&rsquo;m not a Sanskritist. I&rsquo;m not a swami. What I bring is the
-          patience of someone who keeps returning to the text, the discipline of
-          a builder who has to ship things that work, and a deep affection for
-          the Gita as a piece of writing about how to live without certainty.
+          I&rsquo;m not a Sanskritist or a swami. I check readings against the
+          commentaries and published translations, and when a passage is
+          beyond me, I say so.
         </p>
 
         <h2>Why I write about the Gita</h2>
         <p>
-          The Gita is the most psychologically honest text I&rsquo;ve found. Most
-          spiritual literature begins with answers; the Gita begins with a
-          breakdown. A great warrior, on the morning of the war he&rsquo;s trained
-          his whole life for, puts down his weapon and refuses to fight. The
-          first chapter is just him explaining why. Everything that follows is
-          Krishna talking him back into action. Not by suppressing the
-          doubt, but by reframing what action even means.
+          The Gita starts with someone falling apart. On the morning of the
+          war he has trained for, Arjuna puts down his bow and refuses to
+          fight. Chapter 1 is him explaining why. The other seventeen chapters
+          are Krishna answering him, and the answer changes what Arjuna thinks
+          acting means.
         </p>
         <p>
-          That arc, from collapse to inquiry to a different kind of
-          action, is the one I keep meeting in my own life, in my work,
-          and in the people around me. So I write about it, slowly, one chapter
-          at a time. Each article on this site is grounded in the primary
-          Sanskrit text and traditional commentary, but written from the
-          perspective of someone trying to actually use it on a Tuesday morning
-          in 2026.
+          I&rsquo;ve watched that pattern, stopping, asking, then acting
+          differently, in my own work and in people close to me. So the essays
+          start from the Sanskrit and the traditional commentaries, and then ask
+          what a verse looks like on an ordinary working day.
         </p>
 
-        <h2>How I write</h2>
+        <h2>How the writing is made</h2>
         <p>
-          Every article on this blog is written by me. I don&rsquo;t outsource
-          the writing, and I don&rsquo;t generate it. I work from the original
-          Sanskrit (with help from established translations and commentaries),
-          re-read each verse multiple times, and then write only what I actually
-          believe holds up. When I&rsquo;m not sure about a reading, I say so.
+          The English translations are the Wisdom edition, which I edit. The
+          commentary, on the verse pages and in the essays, is drafted with a
+          language model and then checked and edited by me before it goes up.
+          Each verse page and essay says so in its byline, and the{' '}
+          <a href="/methodology">methodology page</a> sets out each step.
         </p>
         <p>
           I cite the source text directly. Sanskrit shlokas appear in Devanagari,
           with transliteration where useful, and English/Hindi translations
-          alongside. Where I&rsquo;m offering an interpretation rather than a
-          direct translation, I try to be explicit about that.
+          alongside. Where a line is an interpretation rather than a translation, the page
+          says so.
         </p>
 
         <h2>Apps I build</h2>
         <p>
-          I build small, focused iOS apps for the parts of life that don&rsquo;t
-          fit into anyone else&rsquo;s app. Two are live right now:
+          Two apps are live right now:
         </p>
 
         <div className="apps-grid">
@@ -339,8 +330,8 @@ export default function AboutPage() {
             <div className="app-card-label">Wisdom · iOS</div>
             <h3>Wisdom: Daily Bhagavad Gita</h3>
             <p>
-              One Sanskrit shloka a day with English meaning, deeper context,
-              modern relevance, journaling and home screen widgets. Free on
+              Tell it what&rsquo;s going on and it gives you one verse a day for
+              seven days, read aloud, with the Sanskrit. Week 1 is free on
               iPhone.
             </p>
             <span className="app-card-link">wisdomquotes.in &rarr;</span>

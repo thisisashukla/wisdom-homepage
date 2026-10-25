@@ -31,15 +31,15 @@ export const metadata: Metadata = {
 
 const STEPS = [
   { h: 'Say what is going on', p: 'Pick how you feel and what it is about, or say it in your own words. Overthinking, a hard boss, far from home, someone you lost.' },
-  { h: 'Get your verse', p: 'Wisdom picks the verse that speaks to it, with the original Sanskrit, what it says, and what it means for your life.' },
-  { h: 'Walk seven days', p: 'Your plan runs see it, steady it, act on it, then a story. One verse a day, read aloud, about two minutes.' },
+  { h: 'Get your verse', p: 'Wisdom picks the verse that speaks to it, with the original Sanskrit, what it says, and what it means for you.' },
+  { h: 'Walk seven days', p: 'One verse a day, read aloud, about two minutes. The week moves from naming the problem, to steadying yourself, to acting on it, and ends with a story.' },
   { h: 'Go deeper', p: 'Week 2 looks at the pattern underneath your situation. Week 3 at who you are beyond it.' },
 ]
 
 const SCREENS = [1, 2, 3, 4, 5, 6, 7].map((n) => `/assets/app-v3/store-${n}.webp`)
 
 const FAQ = [
-  { q: 'What does Wisdom do?', a: 'It tunes the Bhagavad Gita to your life. You tell it what is going on and it picks one verse a day for it, with the Sanskrit, the meaning and what it says for you, read aloud, for seven days.' },
+  { q: 'What does Wisdom do?', a: 'You tell it what is going on and it picks one verse a day for it, with the Sanskrit, the meaning and what it says for you, read aloud, for seven days.' },
   { q: 'Is it only the Gita?', a: 'The Gita leads. When a story says it better, Wisdom also draws on the Ramayana, the Mahabharata and the Upanishads. Every verse comes with its original Sanskrit or Indian-language line.' },
   { q: 'How much does it cost?', a: 'Week 1 of your plan is free. Wisdom Pro opens weeks 2 and 3, monthly or yearly, with a free trial.' },
   { q: 'Is it on Android?', a: `Not yet. On Android or a computer, get your verse on wisdomquotes.in and build a 7-day plan on the web. Week 1 is free there too.` },
@@ -104,7 +104,7 @@ export default function AppLandingPage() {
           <div className="t-center">
             <div className="eyebrow">How it works</div>
             <h2 className="heading" style={{ maxWidth: 640, margin: '0 auto 40px' }}>
-              From the battlefield <em>to your daily life.</em>
+              What happens <em>after you open it.</em>
             </h2>
           </div>
           <ol className="app-steps">
@@ -124,9 +124,9 @@ export default function AppLandingPage() {
         <div className="wrap">
           <div className="app-v3-grid">
             {[
-              { img: '/assets/app-v3/store-4.webp', h: 'Audio stories, tuned to you', p: 'Each day is told as a story with the shloka woven in. Gita, Ramayana and Mahabharata.' },
-              { img: '/assets/app-v3/store-3.webp', h: 'Shlokas on your screens', p: 'Home Screen and Lock Screen widgets with today’s verse, in every size.' },
-              { img: '/assets/app-v3/store-6.webp', h: 'A plan for every problem', p: 'Overthinking, can’t sleep, my boss, my in-laws, far from home, guilt, midlife, money.' },
+              { img: '/assets/app-v3/store-4.webp', h: 'Listen while you get ready', p: 'Each day is a short story, read aloud, with the shloka in it. From the Gita, Ramayana and Mahabharata.' },
+              { img: '/assets/app-v3/store-3.webp', h: 'Today’s verse where you’ll see it', p: 'On your Lock Screen or Home Screen, in any widget size.' },
+              { img: '/assets/app-v3/store-6.webp', h: 'Start from what’s on your mind', p: 'Overthinking, can’t sleep, my boss, my in-laws, far from home, guilt, midlife, money.' },
             ].map((c) => (
               <div key={c.h} className="app-v3-card">
                 <img src={c.img} alt={`Wisdom app: ${c.h}`} loading="lazy" width={640} height={1391} />
@@ -191,8 +191,8 @@ export default function AppLandingPage() {
       <div className="divider" />
       <section className="final-cta">
         <div className="wrap">
-          <h2>Arjuna&apos;s battle.<br /><em>Your Monday.</em></h2>
-          <p>Your first week is free.</p>
+          <h2>Start with <em>Week 1, free.</em></h2>
+          <p>A few questions, then your first verse.</p>
           <a href={finalUrl} target="_blank" rel="noopener" className="btn-read-gita btn-read-gita-primary" data-mp-location="app_final_download">
             Get Wisdom on the App Store →
           </a>

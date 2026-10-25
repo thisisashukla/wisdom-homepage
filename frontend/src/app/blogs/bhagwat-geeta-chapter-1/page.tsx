@@ -7,11 +7,11 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 1 Summary \u2013 Key Verses & Meaning (Arjuna Vishada Yoga)",
-  description: "Bhagavad Gita Chapter 1 (Arjuna Vishada Yoga) \u2014 47 verses on the despair of Arjuna at Kurukshetra, when the greatest archer in history put down his bow.",
+  description: "Bhagavad Gita Chapter 1 (Arjuna Vishada Yoga) \u2014 47 verses on the despair of Arjuna at Kurukshetra, the moment the Pandavas' great archer put down his bow.",
   keywords: "bhagwat geeta chapter 1, bhagwat geeta adhyay 1, arjuna vishada yoga, bhagavad gita chapter 1 shlok, bhagwat geeta chapter 1 in hindi, arjuna grief bhagavad gita, kurukshetra battlefield, dhritarashtra uvacha, arjuna refuses to fight, gita chapter 1 summary, Arjuna Vishada Yoga meaning, Bhagavad Gita 1.1 dharmakshetre kurukshetre, why Arjuna put down his bow, moral crisis Bhagavad Gita",
   openGraph: {
     title: "Bhagavad Gita Chapter 1 Summary \u2013 Key Verses & Meaning (Arjuna Vishada Yoga)",
-    description: "All 47 verses of Bhagavad Gita Chapter 1 \u2014 a great warrior paralysed not by cowardice, but by conscience. The most psychologically honest chapter in the Gita.",
+    description: "All 47 verses of Bhagavad Gita Chapter 1 \u2014 a great warrior stopped by grief and conscience before the battle begins.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-1",
     siteName: 'Wisdom',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 1 Summary \u2013 Key Verses & Meaning (Arjuna Vishada Yoga)",
-    description: "All 47 verses of Bhagavad Gita Chapter 1 \u2014 a great warrior paralysed not by cowardice, but by conscience.",
+    description: "All 47 verses of Bhagavad Gita Chapter 1 \u2014 a great warrior stopped by grief and conscience before the battle begins.",
     images: ["https://wisdomquotes.in/assets/chapter1.webp"],
   },
   alternates: {
@@ -550,7 +550,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": ["Article", "LearningResource"],
     "headline": "Bhagavad Gita Chapter 1 — Arjuna Vishada Yoga: When the Warrior Sat Down",
-    "description": "Bhagavad Gita Chapter 1 — Arjuna Vishada Yoga. All 47 verses with Sanskrit, transliteration, meaning, and the moment the greatest archer in history put down his bow.",
+    "description": "Bhagavad Gita Chapter 1 — Arjuna Vishada Yoga. All 47 verses with Sanskrit, transliteration, meaning, and the moment Arjuna put down his bow.",
     "alternativeHeadline": "Bhagavad Gita Chapter 1 (Arjuna Vishada Yoga) — Summary & Verses",
     "author": {
       "@type": "Person",
@@ -617,7 +617,7 @@ const schemas = [
       "name": "What is Bhagavad Gita Chapter 1 about?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bhagavad Gita Chapter 1, called Arjuna Vishada Yoga, describes the scene on the battlefield of Kurukshetra just before the great war begins. Arjuna, the greatest archer of his age, sees his relatives and teachers arrayed on both sides, is overcome with grief and moral doubt, and ultimately sets down his bow and refuses to fight. The chapter establishes the profound ethical crisis that makes Krishna's teachings in the chapters that follow both necessary and meaningful."
+        "text": "Bhagavad Gita Chapter 1, called Arjuna Vishada Yoga, describes the scene on the battlefield of Kurukshetra just before the great war begins. Arjuna sees his relatives and teachers arrayed on both sides, is overcome with grief and moral doubt, and ultimately sets down his bow and refuses to fight. The chapter sets up the ethical crisis that makes Krishna's teachings in the chapters that follow both necessary and meaningful."
       }
     },
     {
@@ -625,7 +625,7 @@ const schemas = [
       "name": "What is Arjuna Vishada Yoga?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Arjuna Vishada Yoga means 'the yoga of Arjuna's grief' or 'the yoga of Arjuna's despondency.' In Sanskrit, vishada means deep sorrow, distress, or despondency. The word 'yoga' here doesn't mean exercise — it means a path or a discipline. The implication is that Arjuna's grief itself becomes a doorway: his collapse is what opens the space for Krishna's teaching."
+        "text": "Arjuna Vishada Yoga means 'the yoga of Arjuna's grief' or 'the yoga of Arjuna's despondency.' In Sanskrit, vishada means deep sorrow, distress, or despondency. The word 'yoga' here means a path or a discipline. The implication is that Arjuna's grief itself becomes a doorway: his collapse is what opens the space for Krishna's teaching."
       }
     },
     {
@@ -633,7 +633,7 @@ const schemas = [
       "name": "How many verses are in Chapter 1 of the Bhagavad Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bhagavad Gita Chapter 1 has 47 verses (shlokas). It is the shortest chapter in terms of philosophy — none of Krishna's teachings appear yet — but among the most important in setting up the psychological and ethical context for everything that follows."
+        "text": "Bhagavad Gita Chapter 1 has 47 verses (shlokas). None of Krishna's teaching appears yet, but the chapter sets up the situation that the remaining 17 chapters answer."
       }
     },
     {
@@ -641,7 +641,7 @@ const schemas = [
       "name": "Why does Arjuna refuse to fight in Chapter 1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Arjuna refuses to fight because he sees his own relatives — grandfathers, teachers, uncles, brothers, friends — arrayed on both sides of the battlefield. He argues that victory is meaningless if it requires killing the people he loves, that destroying families unravels the ethical fabric of society, and that dying unarmed would be preferable to this. His arguments are ethically sophisticated, not cowardly — but they are rooted in attachment to his roles as a son, student, and friend rather than to his deeper duty as a warrior and a atman."
+        "text": "Arjuna refuses to fight because he sees his own relatives — grandfathers, teachers, uncles, brothers, friends — arrayed on both sides of the battlefield. He argues that victory is meaningless if it requires killing the people he loves, that destroying families unravels the ethical fabric of society, and that dying unarmed would be preferable to this. His arguments are serious ones, though they are rooted in attachment to his roles as a son, student, and friend rather than to his duty as a warrior."
       }
     },
     {
@@ -649,7 +649,7 @@ const schemas = [
       "name": "What are the physical symptoms Arjuna describes in Chapter 1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In verses 29–30 (1.29–1.30), Arjuna describes his limbs going weak, his mouth drying up, his body trembling, his hair standing on end, his skin burning, his famous bow Gandiva slipping from his hands, and his mind reeling in confusion. These are precise descriptions of an acute stress response — what we now recognize as the physiological signature of grief, anxiety, and moral distress."
+        "text": "In verses 29–30 (1.29–1.30), Arjuna describes his limbs going weak, his mouth drying up, his body trembling, his hair standing on end, his skin burning, his famous bow Gandiva slipping from his hands, and his mind reeling in confusion. He says the cause is pity for his own people (1.28)."
       }
     },
     {
@@ -657,7 +657,7 @@ const schemas = [
       "name": "Who speaks first in the Bhagavad Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The very first words of the Bhagavad Gita are spoken by King Dhritarashtra, the blind father of the Kauravas. He asks his advisor Sanjaya: 'O Sanjaya, what did my sons and the sons of Pandu do after assembling on the holy field of Kurukshetra?' The Gita's opening is not a teaching — it is a question loaded with a blind king's attachment to his own children."
+        "text": "The very first words of the Bhagavad Gita are spoken by King Dhritarashtra, the blind father of the Kauravas. He asks his advisor Sanjaya: 'O Sanjaya, what did my sons and the sons of Pandu do after assembling on the holy field of Kurukshetra?' The Gita opens with a question, and the question already shows a blind king's attachment to his own sons."
       }
     },
     {
@@ -665,7 +665,7 @@ const schemas = [
       "name": "What does 'dharma-kshetra kuru-kshetra' mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The opening line of the Bhagavad Gita describes Kurukshetra as 'dharma-kshetra' — the field of dharma, or the field of righteousness. The battlefield is not just a physical location; it is presented as a place where the question of what is right must be confronted directly. This framing immediately establishes that what follows is not just a war story, but a philosophical reckoning with duty, conscience, and action."
+        "text": "The opening line of the Bhagavad Gita describes Kurukshetra as 'dharma-kshetra' — the field of dharma, or the field of righteousness. Calling the battlefield a field of dharma frames what follows as an argument about duty, conscience and action as well as a war story."
       }
     },
     {
@@ -673,7 +673,7 @@ const schemas = [
       "name": "Is Chapter 1 the most important in the Bhagavad Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 2 is typically considered the philosophical heart of the Gita, and later chapters go deeper into yoga, devotion, and metaphysics. But Chapter 1 may be the most humanly important — because it establishes the crisis that makes all wisdom necessary. A teaching without a felt question is just information. Arjuna's collapse in Chapter 1 is what makes Krishna's answers in the following chapters land with any weight."
+        "text": "Chapter 2 is typically considered the philosophical heart of the Gita, and later chapters go deeper into yoga, devotion, and metaphysics. Chapter 1 sets up the crisis the teaching answers, and Krishna's replies in later chapters respond to the specific doubts Arjuna raises here."
       }
     },
     {
@@ -681,7 +681,7 @@ const schemas = [
       "name": "What is the main teaching of Bhagavad Gita Chapter 1?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 1 does not contain any explicit teaching from Krishna. Its teaching is structural: it shows what happens when a person's identity is built entirely on their roles and relationships. When those roles come into conflict with each other, the person collapses. Chapter 1 is the Gita's argument that wisdom only becomes real when you've been brought to your knees by its absence."
+        "text": "Chapter 1 does not contain any explicit teaching from Krishna. It shows what happens when a person's sense of self rests on roles and relationships that come into conflict: Arjuna, grandson of Bhishma and student of Drona, collapses."
       }
     },
     {
@@ -689,7 +689,7 @@ const schemas = [
       "name": "What does the Bhagavad Gita say about grief and emotional crisis?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Bhagavad Gita takes grief seriously — it opens with it. Arjuna's despondency in Chapter 1 is treated not as weakness to be dismissed but as the necessary starting point for transformation. The Sanskrit word vishada (grief/despondency) appears in the title of Chapter 1 itself. The Gita's approach is that genuine understanding can only begin after you have honestly confronted your own confusion and pain."
+        "text": "The Bhagavad Gita takes grief seriously — it opens with it. Arjuna's despondency in Chapter 1 is the starting point of the whole dialogue. The Sanskrit word vishada (grief/despondency) appears in the title of Chapter 1 itself, and Krishna's first teaching, in 2.11, answers that grief directly."
       }
     }
   ]
@@ -729,9 +729,7 @@ export default function ChapterOnePage() {
           <em>Arjuna Vishada Yoga</em>
         </h1>
         <p className="article-subtitle">
-          The most psychologically honest chapter in the Gita begins not with
-          wisdom, but with collapse. Forty-seven verses of a great archer who
-          can't lift his bow.
+          The Gita begins with a collapse, before any teaching. Forty-seven verses on a great archer who cannot raise his bow.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -742,7 +740,7 @@ export default function ChapterOnePage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapter 1 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -761,24 +759,15 @@ export default function ChapterOnePage() {
         </figure>
 
         <p className="lead">
-          Most teachers rush past Chapter 1. It gets treated as backstory, the
-          setup before the philosophy begins in Chapter 2. This is a mistake.
-          Chapter 1 is the most humanly honest chapter in the Gita. Possibly in
-          all of Sanskrit literature. Because it begins not with answers, but
-          with collapse.
+          Chapter 1 often gets treated as backstory, the setup before the philosophy begins in Chapter 2. It deserves a slower reading, because it records a collapse in detail before any answer is given.
         </p>
 
         <p>
-          Not with noble courage to act, but with the terrifying uncertainty
-          about whether acting is right at all.
+          Arjuna is unsure whether fighting is right at all.
         </p>
 
         <p>
-          The setting: the battlefield of Kurukshetra. Two armies face each
-          other, representing the largest military gathering the subcontinent
-          has known. At the center of it stands Arjuna, the greatest archer of
-          his age, trained since boyhood for exactly this moment, armed with the
-          divine bow Gandiva and the blessings of the gods. And he can't move.
+          The setting is the battlefield of Kurukshetra, with two armies drawn up against each other. Between them stands Arjuna, trained since boyhood for this kind of moment and armed with the bow Gandiva. He finds he cannot fight.
         </p>
 
         <p>
@@ -836,10 +825,7 @@ export default function ChapterOnePage() {
         <h2 id="blind-king">The Blind King Asks First</h2>
 
         <p>
-          The very first words of the Bhagavad Gita don't belong to Krishna.
-          They don't belong to Arjuna. They belong to Dhritarashtra, a blind
-          king, sitting far from the battlefield, asking his advisor Sanjaya for
-          a report.
+          The first words of the Bhagavad Gita belong to Dhritarashtra, the blind king, who sits far from the battlefield and asks his minister Sanjaya for a report.
         </p>
 
         <p>Listen carefully to how he asks it.</p>
@@ -852,24 +838,17 @@ export default function ChapterOnePage() {
           iast="dhṛtarāṣṭra uvāca dharmakṣetre kurukṣetre samavetā yuyutsavaḥ | māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya ||"
           meaning="Dhritarashtra said: O Sanjaya, after assembling on the holy field of Kurukshetra, eager to fight, what did mine and Pandu's sons do?"
           insightLabel="What it reveals"
-          insight="The Gita's first sentence already contains the war's root cause. &quot;Mine&quot; (māmakāḥ). Not &quot;the armies.&quot; Not &quot;the warriors.&quot; Mine and theirs. The blind king has already sorted the world into us and them before anything has happened."
-          essence="Our perspective is shaped by our attachments and fears."
+          insight="The first verse already holds the war's root cause. Dhritarashtra says māmakāḥ, mine, and sets his sons against Pandu&apos;s. The blind king has sorted the world into us and them before anything has happened."
+          essence="Dhritarashtra asks what his sons and Pandu&apos;s sons did at Kurukshetra."
         />
 
         <p>
-          The word <em>māmakāḥ</em> is important. Dhritarashtra doesn't call
-          them "my sons" or even "the Kauravas." He calls them "mine", a
-          possessive that has no real translation in English that captures its
-          full weight. This is a man who has always confused ownership with
-          love. His blindness, the Gita suggests, is not just physical.
+          The word <em>māmakāḥ</em> matters. Dhritarashtra calls his sons simply "mine", a possessive English cannot carry with the same weight. In the Mahabharata he is a man who confuses ownership with love, and many readers take his blindness as more than physical.
         </p>
 
         <p>
           The Gita also places this scene in <em>dharma-kshetra</em>, the field
-          of righteousness. Kurukshetra was already considered a sacred site.
-          The battlefield is not just a geographical location; it's being framed
-          as a place where the fundamental question of what is right must be
-          confronted. Every word in this opening line is doing work.
+          of righteousness. Kurukshetra was already a sacred site, and naming it the field of dharma frames the battle as a place where the question of what is right will be faced.
         </p>
 
         {/* DIVIDER */}
@@ -893,23 +872,13 @@ export default function ChapterOnePage() {
         </p>
 
         <p>
-          These verses aren't filler. They accomplish something crucial: they
-          establish the weight of what's at stake. When Arjuna's crisis hits, we
-          understand its scale because we've been shown what's arrayed on both
-          sides, not abstractions, but named people. Bhishma, who trained half
-          these warriors. Dronacharya, who taught both armies. Karna, who Arjuna
-          knows is secretly his own brother. Every name is a relationship. Every
+          These verses set out what is at stake. When Arjuna's crisis comes, we understand its scale because we have been shown named people on both sides. Bhishma, grandsire to both sides. Dronacharya, who taught both armies. Karna, who, unknown to Arjuna, is his own elder brother. Every name is a relationship. Every
           warrior is someone's son, someone's teacher, someone's friend.
         </p>
 
         <div className="highlight-box">
           <p>
-            <strong>A note on Duryodhana's psychology:</strong> In verses 3–11,
-            Duryodhana's report to Dronacharya reveals a man performing
-            confidence he doesn't feel. He lists the Pandava warriors almost
-            obsessively, then declares his own side "unlimited" in strength, but the words betray anxiety. He's convincing himself, not his
-            teacher. The Gita is psychologically precise from its opening
-            verses.
+            <strong>A note on Duryodhana:</strong> In verses 3–11, Duryodhana lists the Pandava warriors at length before naming his own. In 1.10 he calls his army aparyāptam, which some translators read as unlimited and others as insufficient. Read the second way, he is reassuring himself as much as his teacher.
           </p>
         </div>
 
@@ -925,9 +894,7 @@ export default function ChapterOnePage() {
         <h2 id="precipice">The Pause at the Precipice</h2>
 
         <p>
-          Then comes verse 20. The armies are ready. The conches have been
-          blown. The arrows are nocked. And Arjuna, whose chariot bears the
-          flag of Hanuman, a symbol of devotion and strength, raises his bow.
+          In verse 20, with the conches blown and weapons about to clash, Arjuna, whose chariot flies the banner of Hanuman, raises his bow.
         </p>
 
                 <ShlokaCard
@@ -936,14 +903,12 @@ export default function ChapterOnePage() {
           iast="atha vyavasthitān dṛṣṭvā dhārtarāṣṭrānkapidhvajaḥ | pravṛtte śastrasaṃpāte dhanurudyamya pāṇḍavaḥ ||"
           meaning="Seeing the sons of Dhritarashtra arranged and ready for battle, as the weapons were about to clash, Arjuna, the son of Pandu, whose chariot bore the monkey banner, lifted his bow."
           insightLabel="The pivot"
-          insight="This is the last moment before everything changes. The bow is lifted, but what follows in verses 21–23 is Arjuna asking Krishna to stop the chariot so he can look. This is not weakness. It is, in fact, his most warrior-like act: pausing before the irrevocable."
-          essence="Pause and ready yourself before facing life's great challenges."
+          insight="The bow is up, and in verses 21–23 Arjuna asks Krishna to halt the chariot between the armies so he can see whom he must fight. A careful warrior looks before he commits."
+          essence="Arjuna sees the Kauravas in battle order and raises his bow."
         />
 
         <p>
-          In verses 21–23, Arjuna asks Krishna to position their chariot between
-          the two armies so he can see who he'll be fighting against. Krishna
-          complies. And what Arjuna sees destroys him.
+          Krishna drives the chariot between the two armies (1.24–25) and tells Arjuna to look at the assembled Kurus. What Arjuna sees there undoes him.
         </p>
 
         {/* DIVIDER */}
@@ -957,7 +922,7 @@ export default function ChapterOnePage() {
 
         <h2 id="faces">When You See <em>Their Faces</em></h2>
 
-        <p>Arjuna doesn't see an army. He sees people.</p>
+        <p>He looks, and sees people he knows.</p>
 
                 <ShlokaCard
           verseRef="Bhagavad Gita 1.26–1.27"
@@ -965,16 +930,12 @@ export default function ChapterOnePage() {
           iast="tatrāpaśyatsthitānpārthaḥ pitṛ̈natha pitāmahān | ācāryānmātulānbhrātṛ̈nputrānpautrānsakhīṃstathā || śvaśurānsuhṛdaścaiva senayorubhayorapi | tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān ||"
           meaning="There Arjuna saw, standing in both armies: fathers, grandfathers, teachers, maternal uncles, brothers, sons, grandsons, friends, fathers-in-law, and well-wishers. Seeing all these relatives arrayed on both sides, the son of Kunti was overwhelmed with great compassion."
           insightLabel="The human moment"
-          insight="The list is precise and personal. Not &quot;the enemy&quot;, fathers, grandfathers, teachers. The Gita is describing what it looks like when abstract conflict becomes concrete and personal. This is not cowardice. This is recognition."
-          essence="Recognize the humanity in every conflict; behind every role is a relationship."
+          insight="The list is personal: fathers, grandfathers, teachers, uncles, brothers, sons, grandsons, friends. An abstract enemy has turned into family, and Arjuna is overcome with pity (kṛpā)."
+          essence="Arjuna sees family and teachers in both armies, and pity overwhelms him."
         />
 
         <p>
-          What collapses Arjuna is not fear of dying. He has faced death before.
-          It's something more disorienting: he can no longer tell which side he
-          is on. The people he loves are on both sides. His grandfathers, his
-          teachers, his brothers-in-law, distributed across two armies that are
-          about to kill each other.
+          Arjuna has faced death in battle before, so fear of dying is not what stops him. He can no longer tell which side he is on, because the people he loves stand in both armies: grandfathers, teachers and in-laws, about to kill each other.
         </p>
 
         <p>
@@ -985,8 +946,7 @@ export default function ChapterOnePage() {
 
         <div className="pull-quote">
           <blockquote>
-            "Recognize the humanity in every conflict; behind every role is a
-            relationship."
+            "Seeing all these relatives arrayed on both sides, the son of Kunti was overwhelmed with great compassion."
           </blockquote>
           <cite>Bhagavad Gita 1.26–27</cite>
         </div>
@@ -1002,7 +962,7 @@ export default function ChapterOnePage() {
 
         <h2 id="body">A Body That Doesn't Lie</h2>
 
-        <p>Arjuna doesn't philosophize first. His body responds first.</p>
+        <p>Before he argues, his body gives way.</p>
 
                 <ShlokaCard
           verseRef="Bhagavad Gita 1.29"
@@ -1010,9 +970,9 @@ export default function ChapterOnePage() {
           sanskrit="सीदन्ति मम गात्राणि मुखं च परिशुष्यति । वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥"
           iast="sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati | vepathuśca śarīre me romaharṣaśca jāyate ||"
           meaning="My limbs give way and fail. My mouth is drying up. My body trembles. My hair stands on end."
-          insightLabel="Clinical precision"
-          insight="What the Gita describes here is physiologically accurate: vasoconstriction causes skin-crawling sensations, adrenaline causes trembling, saliva production drops. This is an acute stress response, documented with precision 5,000 years before we named it."
-          essence="Even the strongest can feel afraid, acknowledge your emotions with honesty."
+          insightLabel="What he lists"
+          insight="Arjuna lists what is happening to his body: his limbs give way, his mouth goes dry, he trembles, his hair stands on end, his skin burns, and the bow slips from his hand (1.29–30). He says it comes from pity for his own people (1.28)."
+          essence="Arjuna&apos;s limbs fail, his mouth dries, he trembles and his hair stands on end."
         />
 
                 <ShlokaCard
@@ -1022,23 +982,14 @@ export default function ChapterOnePage() {
           iast="gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate | na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ ||"
           meaning="The Gandiva slips from my hand. My skin burns all over. I cannot stand. My mind reels and spins."
           insightLabel="Significance"
-          insight="Gandiva is not just a bow. It's a divine weapon given by Agni, a symbol of Arjuna's identity as the supreme warrior. When it slips, something more than a weapon is falling. It's the self he has always known."
-          essence="In moments of deep confusion and overwhelm, expressing your vulnerability is a sign of true strength."
+          insight="Gandiva was Agni's gift to Arjuna, and it stands for his identity as a warrior. When it slips from his hand, that identity is slipping too."
+          essence="Gandiva slips from his hand, his skin burns, and he cannot stand."
         />
 
-        <p>
-          Two thousand years before the term existed, the Gita is describing a
-          panic attack with exact clinical accuracy: vasoconstriction causing
-          burning skin, loss of grip strength, inability to stand, mental
-          disorientation. The ancient text didn't need the vocabulary, it had
-          the observation.
-        </p>
+        
 
         <p>
-          And crucially, Arjuna is not ashamed of this. He describes it to
-          Krishna plainly. He doesn't suppress it, doesn't try to push through.
-          The Gita treats this honesty as important, the necessary first step
-          before anything else can be addressed.
+          Arjuna describes all this to Krishna plainly, without trying to push through it.
         </p>
 
         {/* DIVIDER */}
@@ -1053,9 +1004,7 @@ export default function ChapterOnePage() {
         <h2 id="argument">The Argument Against Victory</h2>
 
         <p>
-          Here is where Chapter 1 gets underappreciated. Arjuna's arguments from
-          verse 31 onward are not the rationalizations of a coward. They are a
-          coherent ethical case, and a surprisingly sophisticated one.
+          From verse 31 onward Arjuna makes a coherent ethical case against fighting, and it deserves to be read as one.
         </p>
 
                 <ShlokaCard
@@ -1065,8 +1014,8 @@ export default function ChapterOnePage() {
           iast="na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca | kiṃ no rājyena govinda kiṃ bhogairjīvitena vā ||"
           meaning="I do not want victory, Krishna. I do not want a kingdom or pleasures. Of what use is a kingdom to us, Govinda? Of what use are enjoyments or even life itself?"
           insightLabel="The inversion"
-          insight="This is Arjuna dismantling the entire framework of why they came to fight. Victory, kingdom, enjoyment, the three things warriors fight for. He is renouncing all three in one verse. This is not fear. It is a rejection of the premise."
-          essence="True fulfillment comes from living with purpose, not from external success."
+          insight="Arjuna gives up victory, kingdom and pleasure, the three things warriors fight for, in a single verse. He is rejecting the reason they came to fight."
+          essence="Arjuna wants neither victory nor kingdom nor pleasure at this price."
         />
 
                 <ShlokaCard
@@ -1076,8 +1025,8 @@ export default function ChapterOnePage() {
           iast="yeṣāmarthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca | ta ime'vasthitā yuddhe prāṇāṃstyaktvā dhanāni ca ||"
           meaning="Those for whose sake we desire kingdoms, pleasures, and happiness, they themselves stand here on this battlefield, having given up their desire for life and wealth."
           insightLabel="The logic"
-          insight="A crisp consequentialist argument: the beneficiaries of victory are the very people who will die in the pursuit of it. This isn't irrational. This is the observation that the means have devoured the ends, a collapse in the logic of the entire enterprise."
-          essence="Meaning lies not in possessions, but in understanding and valuing the people and sacrifices behind them."
+          insight="The argument is about consequences: the people a victory would benefit are the ones who will die winning it. The means would consume the ends."
+          essence="The people they want the kingdom for are the ones standing ready to die."
         />
 
                 <ShlokaCard
@@ -1087,29 +1036,19 @@ export default function ChapterOnePage() {
           iast="yadyapyete na paśyanti lobhopahatacetasaḥ | kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam || kathaṃ na jñeyamasmābhiḥ pāpādasmānnivartitum | kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana ||"
           meaning="Even if those whose minds are blinded by greed cannot see the papa in destroying families and betraying friends, how can we, who clearly see the consequences, fail to turn away from this papa, O Janardana?"
           insightLabel="The ethics"
-          insight="Arjuna is making a deontological case: if you can see the harm and others cannot, you bear a greater responsibility to act on that knowledge. This is not rationalization. This is conscience. The problem is not that the argument is wrong, it's that Arjuna's 'I' is still attached to the wrong thing."
-          essence="Awareness of consequences brings the responsibility to act wisely."
+          insight="Arjuna argues from duty: if you can see the harm and others cannot, you carry more responsibility for acting on what you see. The argument has force. Krishna's reply in Chapter 2 is about who Arjuna takes himself to be."
+          essence="Those who see the wrong in destroying a family should turn away from it."
         />
 
         <p>
-          This is not a small point. Arjuna isn't wrong that destroying families
-          has generational consequences. He isn't wrong that those who see harm
-          more clearly bear greater responsibility. He isn't wrong that victory
-          built on killing people you love feels hollow.
+          Arjuna is right that destroying families has consequences for generations, that those who see harm more clearly bear more responsibility, and that a victory built on killing people you love would feel hollow.
         </p>
 
         <p>
-          His arguments fail not because they're incorrect, but because they're
-          incomplete. They're rooted in what Krishna will later call
-          <em>ahamkara</em>: the ego-self constructed around roles,
-          relationships, and outcomes. The "I" that doesn't want to fight is not
-          the deepest "I." That's what the next 17 chapters are about.
+          Krishna's answer is that the arguments are incomplete. They rest on what the Gita later calls <em>ahamkara</em>, the ego-self built around roles, relationships and outcomes, and the next 17 chapters are about the self beneath it.
         </p>
 
-        <p>
-          But before you can understand what the self truly is, you have to see
-          clearly where the confusion lies. And Chapter 1 is that seeing.
-        </p>
+        
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -1130,9 +1069,9 @@ export default function ChapterOnePage() {
           sanskrit="यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः । धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत् ॥"
           iast="yadi māmapratīkāramaśastraṃ śastrapāṇayaḥ | dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet ||"
           meaning="If the armed sons of Dhritarashtra were to kill me in battle, unresisting, unarmed, even that would be better for me."
-          insightLabel="Not cowardice"
-          insight="Arjuna is not afraid of death. He's making a principled stand: he would rather be killed than violate his own conscience. This is, in its own way, a warrior's ethic, choosing death over an action that feels wrong. The problem isn't the courage. It's the source of the conviction."
-          essence="Strength is found not just in fighting, but in choosing peace over retaliation."
+          insightLabel="Choosing to die unarmed"
+          insight="Arjuna would rather be killed unarmed and unresisting than fight his own family. It is a principled position, and Krishna spends the following chapters arguing that it comes from confusion."
+          essence="Arjuna says he would rather die unarmed than fight his kinsmen."
         />
 
                 <ShlokaCard
@@ -1141,16 +1080,15 @@ export default function ChapterOnePage() {
           iast="sañjaya uvāca evamuktvā'rjunaḥ saṃkhye rathopastha upāviśat | visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ ||"
           meaning="Sanjaya said: Having spoken thus on the battlefield, Arjuna sat down upon the seat of his chariot, casting aside both bow and arrows, his mind overwhelmed with grief."
           insightLabel="The end of Chapter 1"
-          insight="Sanjaya narrates this to the blind king with journalistic calm. The greatest teacher in Sanskrit literature sits next to the greatest student. The student has his face in his hands. This is where Chapter 1 ends, not with resolution, but with the question fully formed and held."
-          essence="Even our heroes face moments of deep inner struggle; pausing and accepting our feelings is a vital part of the journey."
+          insight="Sanjaya reports this to the blind king. Chapter 1 ends with Arjuna sitting down in the chariot, his bow and arrows set aside (1.47)."
+          essence="Arjuna sits down in the chariot, drops bow and arrows, and gives way to grief."
         />
 
         <p>
           Sanjaya's narration ends here. Chapter 1's last image is Arjuna,
           seated, bow and arrows set aside, mind overwhelmed with grief, <em>śokasaṃvignamānasaḥ</em>. The compound word is worth sitting with:
           <em>shoka</em> (grief) + <em>samvigna</em> (agitated, disturbed) +
-          <em>manasah</em> (of the mind). A mind disturbed by grief. Not
-          defeated. Not wrong. Simply, brought to a stop.
+          <em>manasah</em> (of the mind): a mind shaken by grief.
         </p>
 
         {/* DIVIDER */}
@@ -1165,39 +1103,21 @@ export default function ChapterOnePage() {
         <h2 id="why">Why Vyasa Spent 47 Verses on the Crisis</h2>
 
         <p>
-          The Gita could have begun at Chapter 2. Krishna could have started
-          teaching the moment Arjuna felt uncertain. Vyasa chose differently. He
-          spent an entire chapter, 47 verses, documenting the collapse in full
-          before a single word of teaching appears.
+          The Gita could have begun at Chapter 2, with Krishna teaching from the first sign of doubt. Vyasa spends 47 verses on the collapse before any teaching appears.
+        </p>
+
+        
+
+        <p>
+          An answer that comes before the question has weight tends not to land. By the time Krishna begins, Arjuna is fully in his confusion, in body, mind, ethics and grief.
         </p>
 
         <p>
-          This is not literary inefficiency. It's the most important structural
-          choice in the text.
+          Many readers find the same with their own questions. You can read about the self, detachment, duty and the atman and follow it all in your head, and it starts to matter when your sense of who you are has been shaken.
         </p>
 
         <p>
-          Because wisdom that arrives before the question has weight doesn't
-          land. It bounces off. Arjuna needed to be fully in his confusion, body, mind, ethics, grief, all of it, before he could receive what
-          Krishna was about to say.
-        </p>
-
-        <p>
-          The same is true of every genuine inquiry. You can read about the
-          nature of the self, detachment, duty, and the atman. You can
-          understand it intellectually. But it becomes real only when you've
-          been brought to the edge of something, when your identity has been
-          challenged, when the person you thought you were can no longer give
-          you direction.
-        </p>
-
-        <p>
-          Arjuna's mistake in Chapter 1 is not that he feels grief. It's that he
-          has confused his roles with his essence. He is a son, a student, a
-          friend, a warrior, and when those roles collide, there is no deeper
-          "I" to navigate from. The grief of Chapter 1 is the grief of a self
-          built entirely on circumstances, confronting circumstances it cannot
-          handle.
+          In Krishna's reading, Arjuna's mistake is to confuse his roles with his self. He is a grandson, a student, a friend and a warrior, and when those roles collide he has nothing deeper to steer by. His grief belongs to a self built on circumstances, facing circumstances it cannot handle.
         </p>
 
         <p>
@@ -1205,18 +1125,13 @@ export default function ChapterOnePage() {
           that is not built on circumstances at all.
         </p>
 
-        <p>
-          But that teaching requires this, the complete, honest, unsparing
-          account of what collapse looks like. That's what Chapter 1 gives us.
-        </p>
+        
 
         <div className="pull-quote">
           <blockquote>
-            "Wisdom only becomes real when you've been brought to your knees by
-            its absence. Arjuna's collapse in Chapter 1 is what makes Krishna's
-            answers in the chapters that follow carry any weight at all."
+            "My nature is overcome by pity and weakness, and my mind is confused about dharma. Tell me for certain what is better. I am your student; I take refuge in you. Teach me."
           </blockquote>
-          <cite>On Bhagavad Gita, Chapter 1</cite>
+          <cite>Arjuna, Bhagavad Gita 2.7</cite>
         </div>
 
         {/* ── KEY INSIGHTS ── */}
@@ -1233,37 +1148,28 @@ export default function ChapterOnePage() {
             </li>
             <li>
               <strong
-                >Grief is not the opposite of wisdom, it is its
-                precondition.</strong
+                >In the Gita, grief comes before wisdom.</strong
               >
-              Arjuna's vishada (despondency) is the titled subject of the
-              chapter. The Gita treats his breakdown as the necessary starting
-              point, not a failure to overcome.
+              Arjuna's vishada (despondency) names the chapter, and his breakdown is where the teaching starts.
             </li>
             <li>
               <strong
                 >The body registers moral crisis before the mind does.</strong
               >
               In 1.29–1.30, Arjuna describes trembling, dry mouth, burning skin,
-              and a bow slipping from his hand, a physiological stress response
-              documented with clinical precision thousands of years before
-              modern neuroscience.
+              and a bow slipping from his hand, all before he makes a single argument.
             </li>
             <li>
               <strong
                 >A coherent ethical argument can still be rooted in the wrong
                 identity.</strong
               >
-              Arjuna's case against fighting is not irrational, but it is built
-              on attachment to roles (son, student, friend) rather than on a
+              Arjuna's case against fighting is reasoned, and it is built on attachment to roles (son, student, friend) rather than on a
               deeper understanding of the self. That is what Krishna addresses
               in Chapter 2.
             </li>
             <li>
-              <strong>The question matters as much as the answer.</strong> Vyasa
-              spent an entire chapter, 47 verses, establishing the crisis
-              before Krishna speaks a single word of teaching. The weight of the
-              answer depends entirely on the depth of the question.
+              <strong>The question matters as much as the answer.</strong> Vyasa spends 47 verses on the crisis before Krishna teaches anything.
             </li>
           </ol>
         </div>
@@ -1356,6 +1262,8 @@ export default function ChapterOnePage() {
             </tr>
           </tbody>
         </table>
+
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected Karna&apos;s relation to Arjuna (Arjuna does not know Karna is his brother), replaced a pseudo-medical reading of 1.29–30 with what the verses say, removed superlatives about Arjuna and the chapter, fixed verse taglines that did not match their verses (including 1.46), and updated the Chapter 2 link; copy edited.</p>
       </article>
 
       {/* ── FAQ ── */}
@@ -1373,8 +1281,7 @@ export default function ChapterOnePage() {
           and Lock Screen.
         </p>
         <p>
-          Wisdom is for people who want the Gita&apos;s answer to the week they
-          are actually having, not a poster quote. Week 1 is free on the
+          Wisdom is for people who want the Gita&apos;s answer to the week they are having. Week 1 is free on the
           <a
             href={appStoreUrl('web_blog_footer')}
             target="_blank"
@@ -1397,10 +1304,9 @@ export default function ChapterOnePage() {
           <div className="faq-a">
             Bhagavad Gita Chapter 1, called Arjuna Vishada Yoga, describes the
             scene on the battlefield of Kurukshetra just before the great war
-            begins. Arjuna, the greatest archer of his age, sees his relatives
+            begins. Arjuna sees his relatives
             and teachers arrayed on both sides, is overcome with grief and moral
-            doubt, and ultimately sets down his bow and refuses to fight. The
-            chapter establishes the profound ethical crisis that makes Krishna's
+            doubt, and ultimately sets down his bow and refuses to fight. The chapter sets up the ethical crisis that makes Krishna's
             teachings in the chapters that follow both necessary and meaningful.
           </div>
         </div>
@@ -1410,10 +1316,8 @@ export default function ChapterOnePage() {
           <div className="faq-a">
             Arjuna Vishada Yoga means the yoga of Arjuna's grief, or the yoga of
             Arjuna's despondency. In Sanskrit, vishada means deep sorrow or
-            distress, and yoga here means a path or discipline, not exercise.
-            The title implies that Arjuna's grief itself is a doorway: his
-            collapse is what opens the space for Krishna's teaching. Without the
-            depth of the question, the answers would have no ground to land on.
+            distress, and yoga here means a path or discipline.
+            The title implies that Arjuna's grief itself is a doorway: his collapse is what opens the space for Krishna's teaching.
           </div>
         </div>
 
@@ -1422,11 +1326,7 @@ export default function ChapterOnePage() {
             How many verses are in Chapter 1 of the Bhagavad Gita?
           </div>
           <div className="faq-a">
-            Bhagavad Gita Chapter 1 has 47 verses (shlokas). It is the shortest
-            chapter philosophically, none of Krishna's direct teachings appear
-            yet, but among the most important for establishing the
-            psychological and ethical context for everything that follows in the
-            remaining 17 chapters.
+            Bhagavad Gita Chapter 1 has 47 verses (shlokas). None of Krishna's teaching appears yet, but the chapter sets up the situation that the remaining 17 chapters answer.
           </div>
         </div>
 
@@ -1437,10 +1337,7 @@ export default function ChapterOnePage() {
             sides of the battlefield. He argues that victory is meaningless if
             it requires killing the people he loves, that destroying families
             unravels the ethical fabric of society, and that dying unarmed would
-            be preferable to this. His arguments are ethically sophisticated
-            rather than cowardly, but they are rooted in attachment to his
-            roles as a son, student, and friend rather than to his deeper
-            identity beyond those roles.
+            be preferable to this. His arguments are serious ones, though they are rooted in attachment to his roles as a son, student, and friend rather than to his duty as a warrior.
           </div>
         </div>
 
@@ -1452,11 +1349,7 @@ export default function ChapterOnePage() {
             In verses 1.29–1.30, Arjuna describes his limbs going weak, his
             mouth drying up, his body trembling, his hair standing on end, his
             skin burning all over, his famous bow Gandiva slipping from his
-            hands, and his mind reeling in confusion. These are precise
-            descriptions of an acute stress response, the physiological
-            signature of grief, anxiety, and moral distress, documented with
-            clinical accuracy thousands of years before modern psychology named
-            them.
+            hands, and his mind reeling in confusion. He says the cause is pity for his own people (1.28).
           </div>
         </div>
 
@@ -1466,10 +1359,7 @@ export default function ChapterOnePage() {
             The very first words of the Bhagavad Gita are spoken by King
             Dhritarashtra, the blind father of the Kauravas. He asks his advisor
             Sanjaya what happened after both armies assembled on the battlefield
-            of Kurukshetra. The Gita's opening is not a teaching, it is a
-            question already loaded with a father's blind attachment to his own
-            children, introducing the text's central theme of attachment before
-            philosophy even begins.
+            of Kurukshetra. The Gita opens with a question, and the question already shows a father's attachment to his own sons.
           </div>
         </div>
 
@@ -1478,38 +1368,25 @@ export default function ChapterOnePage() {
           <div className="faq-a">
             The opening line of the Bhagavad Gita describes Kurukshetra as
             dharma-kshetra, the field of dharma, or the field of righteousness.
-            The battlefield is not just a physical location; it is presented as
-            a place where the fundamental question of right action must be
-            confronted directly. This framing immediately establishes that what
-            follows is not merely a war story, but a philosophical reckoning
-            with duty, conscience, and what it means to act rightly.
+            Calling the battlefield a field of dharma frames what follows as an argument about duty, conscience and action as well as a war story.
           </div>
         </div>
 
         <div className="faq-item">
           <div className="faq-q">
-            Is Bhagavad Gita Chapter 1 the most important chapter?
+            How important is Bhagavad Gita Chapter 1?
           </div>
           <div className="faq-a">
             Chapter 2 is typically considered the philosophical heart of the
             Gita, and later chapters go deeper into yoga, devotion, and
-            metaphysics. But Chapter 1 may be the most humanly important, because it establishes the crisis that makes all wisdom necessary. A
-            teaching without a felt question is just information. Arjuna's
-            collapse in Chapter 1 is what gives Krishna's answers in the
-            chapters that follow their actual weight.
+            metaphysics. Chapter 1 sets up the crisis the teaching answers, and Krishna's replies in later chapters respond to the specific doubts Arjuna raises here.
           </div>
         </div>
 
         <div className="faq-item">
           <div className="faq-q">What does the Bhagavad Gita say about grief?</div>
           <div className="faq-a">
-            The Bhagavad Gita takes grief seriously, it opens with it. Arjuna's
-            despondency in Chapter 1 is treated not as weakness to be dismissed,
-            but as the necessary starting point for transformation. The Sanskrit
-            word vishada (grief or despondency) appears in the title of Chapter
-            1 itself. The Gita's approach is that genuine understanding can only
-            begin after you have honestly confronted your own confusion and
-            pain, without suppression or avoidance.
+            The Bhagavad Gita takes grief seriously, it opens with it. Arjuna's despondency in Chapter 1 is the starting point of the whole dialogue. The Sanskrit word vishada (grief or despondency) appears in the title of Chapter 1 itself, and Krishna's first teaching, in 2.11, answers that grief directly.
           </div>
         </div>
 
@@ -1518,13 +1395,9 @@ export default function ChapterOnePage() {
             What is the most famous shloka in Bhagavad Gita Chapter 1?
           </div>
           <div className="faq-a">
-            While Chapter 2 contains the Gita's most frequently cited verses
-            (such as 2.47, the karma yoga verse), Chapter 1's most quoted
-            shlokas include 1.1 (the opening question), 1.29–1.30 (Arjuna's
+            Chapter 2 holds the verses people cite most often, such as 2.47. From Chapter 1, commonly quoted shlokas include 1.1 (the opening question), 1.29–1.30 (Arjuna's
             physical symptoms), and 1.32, "I do not desire victory, nor
-            kingdom, nor pleasures." Verse 1.47, the chapter's closing image of
-            Arjuna setting down his bow, is also widely cited as one of the most
-            emotionally resonant moments in Sanskrit literature.
+            kingdom, nor pleasures." Verse 1.47, where Arjuna sets down his bow, closes the chapter and is often quoted too.
           </div>
         </div>
       </div>
@@ -1545,14 +1418,7 @@ export default function ChapterOnePage() {
         </div>
         <div style={{textAlign: 'right'}}>
           <div className="ch-nav-label">Next →</div>
-          <span
-            className="ch-nav-title"
-            style={{fontSize: '14px', color: 'var(--muted-2)'}}
-            >Chapter 2, Sankhya Yoga
-            <span style={{fontSize: '11px', fontWeight: '400'}}
-              >(coming soon)</span
-            ></span
-          >
+          <div className="ch-nav-title"><a href="/blogs/bhagwat-geeta-chapter-2">Chapter 2, Sankhya Yoga</a></div>
         </div>
       </div>
 
@@ -1560,34 +1426,13 @@ export default function ChapterOnePage() {
       <div className="related-section">
         <h3>More from the Bhagavad Gita</h3>
         <div className="related-grid">
-          <a href="/blogs" className="related-card">
-            <div className="related-card-label">Shloka Collection</div>
-            <div className="related-card-title">
-              Bhagwat Geeta Shlokas in Sanskrit, 20 Key Verses
-              <span
-                style={{color: 'var(--muted-2)', fontSize: '11px', fontWeight: '400', display: 'block', marginTop: '4px'}}
-                >Coming soon</span
-              >
+          <a href="/blogs/20-famous-sanskrit-shlokas" className="related-card"> <div className="related-card-label">Shloka Collection</div> <div className="related-card-title"> Bhagwat Geeta Shlokas in Sanskrit, 20 Key Verses
             </div>
           </a>
-          <a href="/blogs" className="related-card">
-            <div className="related-card-label">Teaching</div>
-            <div className="related-card-title">
-              Karma Quotes from the Bhagavad Gita, What Krishna Actually Said
-              <span
-                style={{color: 'var(--muted-2)', fontSize: '11px', fontWeight: '400', display: 'block', marginTop: '4px'}}
-                >Coming soon</span
-              >
+          <a href="/blogs/karma-quotes-bhagavad-gita" className="related-card"> <div className="related-card-label">Teaching</div> <div className="related-card-title"> Karma Quotes from the Bhagavad Gita, What Krishna Said
             </div>
           </a>
-          <a href="/blogs" className="related-card">
-            <div className="related-card-label">Guide</div>
-            <div className="related-card-title">
-              Bhagwat Geeta Saar, The Complete Essence in Plain Language
-              <span
-                style={{color: 'var(--muted-2)', fontSize: '11px', fontWeight: '400', display: 'block', marginTop: '4px'}}
-                >Coming soon</span
-              >
+          <a href="/blogs/bhagwat-geeta-saar" className="related-card"> <div className="related-card-label">Guide</div> <div className="related-card-title"> Bhagwat Geeta Saar, The Complete Essence in Plain Language
             </div>
           </a>
           <a href="/blogs" className="related-card">
@@ -1605,8 +1450,8 @@ export default function ChapterOnePage() {
     <footer>
       <p>
         Wisdom App ·
-        <span>Daily shlokas from the Bhagavad Gita & Hindu scriptures</span>
-        · Free on iPhone
+        <span>One Gita verse a day for 7 days, read aloud</span>
+        · Week 1 free on iPhone
       </p>
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  · 

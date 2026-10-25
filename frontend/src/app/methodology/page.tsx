@@ -303,29 +303,20 @@ export default function MethodologyPage() {
 
       <div className="article-wrap">
         <p className="lead">
-          This page exists because the question is legitimate. When a site
-          publishes commentary on Sanskrit scripture, readers have every right to
-          know who wrote it, what they read, and where a machine was in the loop.
+          If you read commentary on scripture, you should know who wrote it and
+          where a language model was involved. In short:
         </p>
-
-        <p>
-          The short answer: the translations on this site are the Wisdom edition,
-          edited by Ankur Shukla, drawn from public-domain English sources.
-          Commentary is drafted with a language model and reviewed by a human
-          before publishing. Every verse citation is checked. Every named
-          commentator's position is verified against a sourced edition before it
-          goes up.
-        </p>
-
-        <p>
-          The longer answer is the rest of this page.
-        </p>
+        <ul>
+          <li>The Sanskrit comes from standard published editions.</li>
+          <li>The English translations are the Wisdom edition, edited by Ankur Shukla from public-domain English sources.</li>
+          <li>The commentary is drafted by a language model and edited by Ankur before it goes up.</li>
+          <li>In the 7-day plans, a language model picks verses from a library of 1,743 that Ankur has chosen and writes the line about your situation. It never changes the verse.</li>
+        </ul>
 
         <h2>The five-step pipeline</h2>
 
         <p>
-          Every verse explanation on this site passes through the same sequence.
-          Nothing is published that hasn't been through all five steps.
+          Every verse page and essay goes through these five steps.
         </p>
 
         <div className="pipeline-steps">
@@ -347,7 +338,7 @@ export default function MethodologyPage() {
             <div className="step-num">2</div>
             <div className="step-body">
               <div className="step-label">Translation</div>
-              <div className="step-title">Wisdom editorial translations, edited by Ankur Shukla</div>
+              <div className="step-title">The Wisdom translation, edited by Ankur Shukla</div>
               <p className="step-desc">
                 The English translations are the Wisdom edition, drawn from
                 public-domain English sources. Where a specific source is
@@ -365,8 +356,8 @@ export default function MethodologyPage() {
               <div className="step-title">Editorial: which verses ship, and how</div>
               <p className="step-desc">
                 Which verses are published, which are held back, and how they are
-                organized is Ankur's editorial call. The model does not select
-                content.
+                organised is Ankur's call. The library the 7-day plans draw from is
+                chosen the same way; the model only picks from inside it.
               </p>
             </div>
           </div>
@@ -379,10 +370,9 @@ export default function MethodologyPage() {
               <p className="step-desc">
                 A language model drafts the commentary (simpleMeaning,
                 detailedMeaning, modernRelevance) from the human translation and
-                editorial context. The model is given the translation, not the
-                Sanskrit. It is not asked to translate; it is asked to explain.
-                The prompt it works from is constrained to reduce the specific
-                failure modes listed below.
+                editorial context. The model gets the translation, not the Sanskrit, and is asked to
+                explain it. Its instructions are written against the mistakes
+                listed below.
               </p>
             </div>
           </div>
@@ -404,22 +394,21 @@ export default function MethodologyPage() {
         <h2>What the AI layer does not do</h2>
 
         <p>
-          These are hard rules. If any of them are violated, the content is not
-          published.
+          If a draft breaks any of these, it is fixed or dropped before it goes up.
         </p>
 
         <div className="rules-list">
           <div className="rule-item">
             <span className="rule-num">1.</span>
-            <span>The AI does not translate the primary Sanskrit text. Every verse has a human translator. The model can paraphrase the human translation in commentary, but the canonical translation on the verse page is always the human one, attributed.</span>
+            <span>The AI does not translate the primary Sanskrit text. The translation on each verse page is the edited Wisdom translation. Commentary may paraphrase it.</span>
           </div>
           <div className="rule-item">
             <span className="rule-num">2.</span>
-            <span>The AI does not invent verses or citations. If commentary refers to another scripture, that reference must exist and be verified before publishing. Models confabulate cross-references with surprising fluency.</span>
+            <span>The AI does not invent verses or citations. Any reference to another scripture is looked up before publishing, because models often invent cross-references.</span>
           </div>
           <div className="rule-item">
             <span className="rule-num">3.</span>
-            <span>The AI does not attribute a position to a named commentator (Shankara, Ramanuja, Madhva, Aurobindo) without that position being verified in a sourced commentary edition. Doctrinal flattening, where the model averages across traditions and produces a smoothed reading that no actual school holds, is the highest-risk failure mode on this site.</span>
+            <span>The AI does not attribute a position to a named commentator (Shankara, Ramanuja, Madhva, Aurobindo) without that position being verified in a sourced commentary edition. The biggest risk here is a model blending several schools into one reading that none of them holds.</span>
           </div>
           <div className="rule-item">
             <span className="rule-num">4.</span>
@@ -432,25 +421,17 @@ export default function MethodologyPage() {
         <h2>The hallucination problem</h2>
 
         <p>
-          Language models can fabricate confidently. They can invent verses,
-          misattribute commentaries, and smooth over real disagreements between
-          traditions in a way that sounds authoritative. This is the failure mode
-          we work hardest against.
-        </p>
-
-        <p>
-          Every verse citation, every named commentator's view, every
-          cross-reference is checked by a human against a sourced edition before
-          it ships. The model is not trusted to get these right on its own. The
-          review step exists precisely because it doesn't.
+          Language models make up verses, misattribute commentaries, and gloss
+          over disagreements between traditions, all in a confident tone. So
+          verse citations, named commentators&apos; views and cross-references are
+          checked by hand against a sourced edition. Some mistakes still get
+          through.
         </p>
 
         <div className="callout">
           <p>
-            <strong>The practical implication:</strong> if you find something on
-            this site that misattributes a position, invents a verse, or
-            flattens a real sectarian disagreement, that is a failure of the
-            review step and we want to know about it. Write to{' '}
+            If you find a misattributed position, an invented verse, or a reading
+            that skips over a real disagreement between schools, please tell us. Write to{' '}
             <a href="mailto:work.ankurshukla@gmail.com">
               work.ankurshukla@gmail.com
             </a>
@@ -464,33 +445,21 @@ export default function MethodologyPage() {
         <h2>Why we disclose this, and how</h2>
 
         <p>
-          The disclosure is on every page of this site, in three places.
+          The disclosure appears in three places.
         </p>
 
         <p>
-          A single line in the footer of every page: <em>Wisdom editorial
-          translations. Commentary AI-drafted, human-reviewed.</em> A per-post
+          A single line in the footer of every page: <em>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed.</em> A per-post
           byline on each blog and verse page naming the editor, the AI-drafted
           commentary, and the last review date. And this page, reachable from
           every byline.
         </p>
 
         <p>
-          The decision to disclose is not complicated. When AI touches scripture,
-          the risk is not only stylistic. A model can produce something that
-          sounds like authentic commentary while quietly inverting the
-          philosophical claim, or attributing a verse to the wrong source. Readers
-          are right to want to know what was sourced, what was translated by a
-          human, and what was drafted with a model in the loop. Hiding that
-          pipeline is what causes problems. Showing it is what fixes them.
-        </p>
-
-        <p>
-          The framing the disclosure leads with is what is human, not what is
-          machine. This is not spin. The five steps above are genuinely what
-          happens. The AI drafts commentary from a human translation the editor
-          chose, and the editor reviews what the model produces before it goes up.
-          That is the accurate description of the workflow.
+          A model can write commentary that reads well and still reverses what a
+          verse says, or credits it to the wrong text. Knowing a model was
+          involved tells you to read with that in mind, and to check anything
+          that matters to you against the Sanskrit.
         </p>
 
         <hr className="divider" />
@@ -499,16 +468,12 @@ export default function MethodologyPage() {
 
         <div className="errata-note">
           <p>
-            Every page on this site carries a <strong>last reviewed</strong> date.
+            Verse pages and essays carry a <strong>last reviewed</strong> date.
             When a substantive error is found and corrected, the date is updated
             and a brief note is added at the bottom of the page describing what
             changed.
           </p>
-          <p>
-            This is standard practice in scholarly digital editions. A visible
-            errata record is more trustworthy than content that appears to have
-            never been wrong.
-          </p>
+          
           <p>
             If you find an error, please write to{' '}
             <a href="mailto:work.ankurshukla@gmail.com">
@@ -524,17 +489,9 @@ export default function MethodologyPage() {
         <h2>About the project</h2>
 
         <p>
-          Wisdom is a solo project. The app, the website, the data pipeline, and
-          the editorial work are all Ankur Shukla. The site is not a publishing
-          house with a fact-checking department. It is one person trying to do
-          this carefully.
-        </p>
-
-        <p>
-          The disclosure on this page is part of that attempt. The goal is not to
-          appear trustworthy. The goal is to be trustworthy, which means being
-          honest about what the process actually is, including the parts that
-          involve a language model.
+          Wisdom is one person. Ankur Shukla builds the app, the website and the
+          data pipeline, and does the editing. There is no separate fact-checking
+          team, so reader corrections matter.
         </p>
 
         <a href="mailto:work.ankurshukla@gmail.com" className="contact-link">
@@ -544,7 +501,7 @@ export default function MethodologyPage() {
 
       <footer>
         <p>
-          Wisdom editorial translations. Commentary AI-drafted, human-reviewed.{' '}
+          Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed.{' '}
           <a href="/methodology">Methodology</a>
         </p>
         <p style={{ marginTop: 8 }}>

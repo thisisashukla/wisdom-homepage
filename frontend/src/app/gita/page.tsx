@@ -13,7 +13,7 @@ import SavedVersesPanel from '@/components/gita/SavedVersesPanel'
 export const metadata: Metadata = {
   title: 'Bhagavad Gita — All 18 Chapters, Sanskrit Verses with Hindi & English Translation',
   description:
-    'Read the Bhagavad Gita online — all 700 verses across 18 chapters with Sanskrit, Hindi and English translations, organised by chapter and theme. Free, ad-free, beautifully presented.',
+    'Read the Bhagavad Gita online — all 700 verses across 18 chapters with Sanskrit, Hindi and English translations, organised by chapter and theme. Free, with no ads.',
   alternates: {
     canonical: 'https://wisdomquotes.in/gita',
     languages: {
@@ -74,9 +74,8 @@ export default function GitaIndexPage() {
           <div className="gita-eyebrow">Bhagavad Gita · श्रीमद्भगवद्गीता</div>
           <h1 className="gita-h1">The Song of Bhagavan, in full.</h1>
           <p className="gita-lede">
-            Krishna speaks. Arjuna listens. 700 verses, 18 chapters, one conversation that changed how millions
-            understand duty, action, devotion and the self. Read every verse here in Sanskrit, Hindi and English —
-            with the essence in a single line.
+            Arjuna puts down his bow, and Krishna answers him over 700 verses in 18 chapters. Every verse is here in
+            Sanskrit, Hindi and English, with a one-line summary.
           </p>
           <div className="gita-stat-row">
             <div className="gita-stat">
@@ -132,8 +131,7 @@ export default function GitaIndexPage() {
       {/* CHAPTERS */}
       <h2 className="gita-h2">All 18 chapters</h2>
       <p className="gita-lede" style={{ marginBottom: 24 }}>
-        From Arjuna's despair to the final teaching of liberation. Each chapter is a yoga — a path. Tap any to read
-        every verse.
+        From Arjuna's despair in Chapter 1 to the last teaching in Chapter 18. Tap a chapter to read every verse in it.
       </p>
       <div className="gita-grid">
         {chapters.map((ch) => {

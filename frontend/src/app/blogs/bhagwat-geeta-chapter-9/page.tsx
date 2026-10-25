@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: "bhagwat geeta chapter 9, bhagavad gita raja vidya raja guhya yoga, bhagwat geeta adhyay 9, patram pushpam phalam toyam, my devotee never perishes, 9.22 yogakshemam vahamyaham, sudurachara gita, easy bhakti gita, Raja Vidya Raja Guhya Yoga meaning, patram pushpam phalam toyam meaning, Bhagavad Gita 9.22 yoga kshema vahamy aham, Bhagavad Gita 9.30 sudurachara meaning, my devotee never perishes Bhagavad Gita, sarva dharman parityajya mam ekam",
   openGraph: {
     title: "Bhagavad Gita Chapter 9 Summary – Key Verses & Meaning (Raja Vidya Yoga)",
-    description: "Bhagavad Gita Chapter 9, the royal secret. Leaf, flower, fruit, water. And 'my devotee never perishes' (9.31).",
+    description: "Bhagavad Gita Chapter 9: the royal secret, the offering of a leaf, flower, fruit or water, and 'my devotee never perishes' (9.31).",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9",
     siteName: 'Wisdom',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 9 Summary – Key Verses & Meaning (Raja Vidya Yoga)",
-    description: "Bhagavad Gita Chapter 9, the royal secret. Leaf, flower, fruit, water. And 'my devotee never perishes' (9.31).",
+    description: "Bhagavad Gita Chapter 9: the royal secret, the offering of a leaf, flower, fruit or water, and 'my devotee never perishes' (9.31).",
     images: ["https://wisdomquotes.in/assets/chapter9.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9' } },
@@ -370,7 +370,7 @@ const schemas = [
         "name": "What is the meaning of patram pushpam phalam toyam (Gita 9.26)?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 9.26 says, 'Whoever offers me a leaf, a flower, a fruit, or water with devotion, I accept that devoted offering from one whose heart is pure.' The verse is one of the most democratising teachings in any religious text. The object of the offering — leaf, flower, fruit, water — is humble on purpose. What matters is not the cost, but the love. A person of any economic state, in any place, can fulfil the entire condition. The Gita is rejecting any model where access to the Divine requires wealth or ritual complexity."
+          "text": "Verse 9.26 says, 'Whoever offers me a leaf, a flower, a fruit, or water with devotion, I accept that devoted offering from one whose heart is pure.' The objects — leaf, flower, fruit, water — are humble on purpose. The love counts; the cost does not. A person of any economic state, in any place, can fulfil the entire condition. The Gita is rejecting any model where access to the Divine requires wealth or ritual complexity."
         }
       },
       {
@@ -378,7 +378,7 @@ const schemas = [
         "name": "What does 'my devotee never perishes' mean?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In verse 9.31, Krishna tells Arjuna to declare publicly — na me bhaktaḥ praṇaśyati — my devotee never perishes. The promise is that one who has wholeheartedly turned toward the Divine cannot be finally destroyed by their past, their circumstances, or their fear. The verse is preceded by 9.30, which says even a person of very poor conduct who turns with undivided devotion is to be considered righteous. The two verses together form the Gita's most generous statement on spiritual access."
+          "text": "In verse 9.31, Krishna tells Arjuna to declare publicly — na me bhaktaḥ praṇaśyati — my devotee never perishes. The promise is that one who has wholeheartedly turned toward the Divine cannot be finally destroyed by their past, their circumstances, or their fear. The verse is preceded by 9.30, which says even a person of very poor conduct who turns with undivided devotion is to be considered righteous. Together the two verses say nobody is shut out by their past."
         }
       },
       {
@@ -386,7 +386,7 @@ const schemas = [
         "name": "What is yoga-kshema in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In verse 9.22, Krishna says, 'For those whose minds are wholly on me, I carry their yoga-kshema.' Yoga here means acquisition — bringing what is not yet present. Kshema means preservation — protecting what already is. Together they cover the whole of material concern. The verse is saying that the mind that is undivided is met with a kind of providential support — what is needed is brought, what is held is preserved."
+          "text": "In verse 9.22, Krishna says, 'For those whose minds are wholly on me, I carry their yoga-kshema.' Yoga here means acquisition — bringing what is not yet present. Kshema means preservation — protecting what already is. Together they cover the whole of material concern. The verse says the undivided mind is supported — what is needed is brought, what is held is preserved."
         }
       },
       {
@@ -394,7 +394,7 @@ const schemas = [
         "name": "Why does Chapter 9 say the highest knowledge is 'easy to practice'?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 9.2 calls this teaching su-sukhaṃ kartum — supremely easy to practice — alongside calling it the king of knowledge and the king of secrets. The Gita is making a structural claim: the highest truth is not difficult because it is hidden. It is difficult because the noise has to be turned down enough to hear it. Once the orientation shifts, the practice becomes natural rather than effortful. Chapter 9 is the chapter where this becomes most explicit."
+          "text": "Verse 9.2 calls this teaching su-sukhaṃ kartum — supremely easy to practice — alongside calling it the king of knowledge and the king of secrets. The chapter answers that the practice asks for love and attention rather than wealth, learning or elaborate ritual: a leaf or water offered with devotion is accepted (9.26), and any act can be an offering (9.27)."
         }
       },
       {
@@ -402,7 +402,7 @@ const schemas = [
         "name": "What does the four-imperative verse (9.34) mean?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 9.34 — man-manā bhava mad-bhakto mad-yājī māṃ namaskuru — gives four imperatives that cover thought, feeling, action, and posture. Fix the mind on me. Be devoted to me. Worship me. Bow to me. The Gita repeats this verse, nearly word-for-word, at 18.65, making it the book's signature closing instruction. The teaching is about total orientation — when attention, love, action, and respect all point one way, the path is already being walked."
+          "text": "Verse 9.34 — man-manā bhava mad-bhakto mad-yājī māṃ namaskuru — gives four imperatives covering thought, feeling, action and posture: fix the mind on me, be devoted to me, worship me, bow to me. The Gita repeats this verse, nearly word-for-word, at 18.65, making it the book's signature closing instruction. It asks that attention, love, action and respect all point one way."
         }
       }
     ]
@@ -519,7 +519,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Quotation",
     "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-9#verse-9.31",
-    "text": "Such a person quickly becomes an atman of dharma and attains lasting peace. Arjuna, declare it openly — my devotee never perishes.",
+    "text": "Such a person quickly becomes righteous and attains lasting peace. Arjuna, declare it openly — my devotee never perishes.",
     "spokenByCharacter": {
       "@type": "Person",
       "name": "Krishna"
@@ -603,7 +603,7 @@ export default function ChapterPage9() {
             <em>Raja Vidya Raja Guhya Yoga</em>
           </h1>
           <p className="article-subtitle">
-            The chapter where Krishna pulls the curtain back. The king of knowledge, the king of secrets. Pure, livable, immediate. The leaf, the flower, the fruit, the water. And the most generous claim in the Gita: my devotee never perishes.
+            Krishna calls this teaching the king of knowledge and the king of secrets, then says it is easy to practise. The leaf, the flower, the fruit and the water of 9.26, and the promise of 9.31: my devotee never perishes.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -614,7 +614,7 @@ export default function ChapterPage9() {
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 9 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -633,11 +633,11 @@ export default function ChapterPage9() {
           </figure>
 
         <p className="lead">
-          Chapter 9 is the chapter where the Bhagavad Gita pulls the curtain back. After eight chapters of philosophical preparation, duty, renunciation, action, meditation, the metaphysics of the two natures, the imperishable Brahman, Krishna now turns to Arjuna and says, in effect: now I will tell you the royal secret. <em>Rāja-vidyā, rāja-guhya</em>. The king of all knowledge, the king of all secrets. And then he describes that secret in a way that surprises everyone who has been bracing for difficulty. The royal secret is not complicated. It is not reserved for the highly trained. It is, in his exact words, <em>su-sukhaṃ kartum</em>, supremely easy to practice.
+          Chapter 9 is the chapter where the Bhagavad Gita pulls the curtain back. After eight chapters of philosophical preparation, duty, renunciation, action, meditation, the metaphysics of the two natures, the imperishable Brahman, Krishna now turns to Arjuna and says, in effect: now I will tell you the royal secret. <em>Rāja-vidyā, rāja-guhya</em>. The king of all knowledge, the king of all secrets. Then he describes that secret in a way that surprises anyone bracing for difficulty: it is, in his words, <em>su-sukhaṃ kartum</em>, easy to practise.
         </p>
 
         <p>
-          This is the structural pivot of the Gita. Chapter 8 ended with a quiet redirection away from transactional spiritual merit. Chapter 9 follows immediately with the simplest practice in the entire book, bring me a leaf, a flower, a fruit, water, offered with love, and I will accept it. Across thirty-four verses, Krishna will say things that have shaped Hindu devotional life for two thousand years. That he holds everything but is held by nothing. That undivided devotion is met by unwavering protection. That even a flawed person who turns wholeheartedly toward the Divine is to be considered righteous. And finally, the line that has consoled more sufferers than possibly any other in the book: <em>my devotee never perishes</em>.
+          Chapter 8 ended (8.28) by saying the yogi goes beyond the merit of Vedic study, sacrifice, austerity and charity. Chapter 9 follows with a plain practice: bring me a leaf, a flower, a fruit or water, offered with love, and I will accept it. Across thirty-four verses Krishna says that he holds everything but is not held by it (9.4), that he carries what single-minded devotees need (9.22), that even a person of bad conduct who turns to him wholeheartedly is to be counted righteous (9.30), and that his devotee never perishes (9.31).
         </p>
 
         <nav className="toc" aria-label="Table of contents">
@@ -669,11 +669,11 @@ export default function ChapterPage9() {
         <h2 id="royal-secret">The Highest Knowledge Is Also the Easiest to Live</h2>
 
         <p>
-          Chapter 9 begins with a promise that quietly upends a lot of received spiritual culture. Krishna calls this teaching the king of all knowledge, and then he describes it with words that no other tradition typically uses for highest truth. He says it is <em>pavitram</em>, pure. <em>Pratyakṣa-avagamam</em>, directly knowable, immediately experienceable. <em>Dharmyam</em>, aligned with right living. <em>Su-sukhaṃ kartum</em>, supremely easy to practice. And <em>avyayam</em>, imperishable.
+          Krishna calls this teaching the king of all knowledge, and then describes it with plain adjectives. He says it is <em>pavitram</em>, pure. <em>Pratyakṣa-avagamam</em>, directly knowable, immediately experienceable. <em>Dharmyam</em>, aligned with right living. <em>Su-sukhaṃ kartum</em>, supremely easy to practice. And <em>avyayam</em>, imperishable.
         </p>
 
         <p>
-          Notice what Krishna is doing with this list. He is dismantling, in advance, every argument for why the deepest truth must be hard, hidden, reserved for the long-disciplined. The Gita's most exalted teaching is announced as the most accessible. This is not anti-discipline, the previous chapter spent twenty-eight verses on training the mind. It is a statement that the destination of the discipline, once reached, turns out to have been close to home all along.
+          With this list Krishna answers in advance the idea that the highest truth must be hard and reserved for the long-trained. Discipline still matters; Chapter 6 spends many verses on training the mind. But the teaching he calls royal, he also calls easy.
         </p>
 
                 <ShlokaCard
@@ -682,9 +682,9 @@ export default function ChapterPage9() {
           sanskrit="राजविद्या राजगुह्यं पवित्रमिदमुत्तमम् । प्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम् ॥"
           iast="rāja-vidyā rāja-guhyaṃ pavitram idam uttamam | pratyakṣāvagamaṃ dharmyaṃ susukhaṃ kartum avyayam ||"
           meaning="This is the king of knowledge, the king of secrets, supremely pure. It is directly knowable, in accord with dharma, supremely easy to practice, and imperishable."
-          insightLabel="Five qualities that change the conversation"
-          insight="Three of the five adjectives are the surprise. Pratyakṣa-avagamam, you can verify this in your own experience. Dharmyam, it does not contradict your duties. Su-sukhaṃ kartum, it is easy to practice. The Gita's highest teaching is not a hidden esoteric. It is what becomes available once the noise has been turned down enough to hear it."
-          essence="The highest truth is both profound and simple to live."
+          insightLabel="Five adjectives"
+          insight="Three of the five adjectives are the surprise. Pratyakṣa-avagamam, you can verify this in your own experience. Dharmyam, it does not contradict your duties. Su-sukhaṃ kartum, it is easy to practise. A teaching called a secret is also called something you can check for yourself."
+          essence="This is the royal knowledge and royal secret: pure, directly known, and easy to practise."
         />
 
         <div className="pull-quote">
@@ -706,11 +706,11 @@ export default function ChapterPage9() {
         <h2 id="holds-not-held">I Hold the Universe, But the Universe Doesn't Hold Me</h2>
 
         <p>
-          Verse 9.4 contains a metaphysical claim that takes most readers two or three rereadings to understand. Krishna says: all this universe is pervaded by my unmanifest form. All beings dwell in me. <em>But I do not dwell in them.</em> The grammar is the surprise. The verse asserts immanence, beings are in the Divine, and immediately denies the reverse. The Divine is not contained in beings, even though they are contained in the Divine.
+          Verse 9.4 usually takes a second reading. Krishna says: all this universe is pervaded by my unmanifest form. All beings dwell in me. <em>But I do not dwell in them.</em> The verse says beings are in the Divine and in the same breath denies the reverse. The next verse, 9.5, goes further: &ldquo;and yet beings do not dwell in me.&rdquo;
         </p>
 
         <p>
-          Western theological categories struggle with this. It is not pantheism (Bhagavan = everything). It is not classical theism (Bhagavan is separate from everything). It is what the Vaishnava tradition would later call <em>achintya-bheda-abheda</em>, inconceivable simultaneous difference and non-difference. The image is asymmetric. The container is in you, but you are not in the container. Practically, this lets the Gita say two things that other traditions have to choose between: everything is sacred, and the sacred is not exhausted by everything.
+          Pantheism (Bhagavan is everything) and classical theism (Bhagavan is separate from everything) both miss it. The Gaudiya Vaishnavas, following Chaitanya, later named a position like this <em>achintya-bheda-abheda</em>, inconceivable difference and non-difference at once. In practice it lets the Gita say both that everything is held by the Divine and that the Divine is not used up by everything.
         </p>
 
                 <ShlokaCard
@@ -720,8 +720,8 @@ export default function ChapterPage9() {
           iast="mayā tatam idaṃ sarvaṃ jagad avyakta-mūrtinā | mat-sthāni sarva-bhūtāni na cāhaṃ teṣv avasthitaḥ ||"
           meaning="All this world is pervaded by my unmanifest form. All beings dwell in me. But I am not contained in them."
           insightLabel="What the asymmetry buys us"
-          insight="If Bhagavan were exhausted by the world, the world's suffering would be Bhagavan's defeat. If Bhagavan were entirely separate from the world, the world's suffering would not be Bhagavan's concern. The Gita's asymmetric position lets the Divine be intimate with all suffering without being defeated by it. Every being is held. Nothing held diminishes the holder."
-          essence="The supreme reality holds everything without being held by anything."
+          insight="If Bhagavan were exhausted by the world, the world's suffering would be Bhagavan's defeat. If Bhagavan were entirely separate from the world, the world's suffering would not be Bhagavan's concern. On the Gita's position the Divine is close to all suffering without being defeated by it."
+          essence="My unmanifest form pervades the world; all beings rest in me, but I do not rest in them."
         />
 
         {/* DIVIDER */}
@@ -736,11 +736,11 @@ export default function ChapterPage9() {
         <h2 id="plain-form">Why People Miss the Supreme: Because the Supreme Looks Ordinary</h2>
 
         <p>
-          Verse 9.11 is one of the Gita's most psychologically realistic moments. Krishna says, with a kind of resigned honesty: fools dismiss me when I take a human form, not knowing my higher nature. The verse is not just about Krishna's particular incarnation. It is a general observation about how perception works. We dismiss the ordinary because it is ordinary. We expect the sacred to be unmistakable, accompanied by signs, framed by formality, evidently special. When the sacred shows up looking like a slightly tired man in a chariot, we miss it.
+          In 9.11 Krishna says, with a kind of resigned honesty: fools dismiss me when I take a human form, not knowing my higher nature. Read beyond Krishna's own incarnation, it says something about how people look. We dismiss the ordinary because it is ordinary. We expect the sacred to be unmistakable, accompanied by signs, framed by formality, evidently special. When the sacred shows up looking like a slightly tired man in a chariot, we miss it.
         </p>
 
         <p>
-          This is the Gita's reply to the persistent human appetite for spiritual spectacle. The Divine is not failing to appear. It is appearing in forms our perception has trained itself to ignore. The teacher in the next room. The grieving parent in the elevator. The slightly worn-out friend who keeps showing up. Verse 9.11 is asking you, with some patience, to look again at the ordinary, because the ordinary is where the Divine has chosen to live.
+          This is the Gita&apos;s reply to the appetite for spiritual spectacle: the Divine appears in forms we have learned to ignore. Verse 9.11 asks you to look again at the ordinary.
         </p>
 
                 <ShlokaCard
@@ -749,14 +749,14 @@ export default function ChapterPage9() {
           sanskrit="अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम् । परं भावमजानन्तो मम भूतमहेश्वरम् ॥"
           iast="avajānanti māṃ mūḍhā mānuṣīṃ tanum āśritam | paraṃ bhāvam ajānanto mama bhūta-maheśvaram ||"
           meaning="Fools dismiss me when I am clothed in human form, not knowing my higher nature as the great Lord of all beings."
-          insightLabel="The verse is about you, not about Krishna"
-          insight="The accusation in this verse is not at people two thousand years ago who missed Krishna in person. It is at every reader who is currently mistaking the ordinary surface of their life for the whole of it. The Divine is not hiding. We are looking at it without recognising it."
-          essence="Ordinary appearance can hide the highest reality."
+          insightLabel="Who the verse addresses"
+          insight="Krishna is speaking of those who met him and missed him. A reader can apply it to anyone who takes the ordinary surface of life for the whole of it."
+          essence="Fools disregard me in human form, not knowing my higher nature as Lord of all beings."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>What this looks like in practice:</strong> You decide a person isn't worth your full attention because they look unremarkable. You decide a task isn't worth your full presence because it isn't important enough. You decide a moment isn't worth your full awareness because it's just a Wednesday afternoon. The Gita says each of these decisions is a small loss. The Wednesday afternoon is what you were given. The unremarkable person is who showed up.
+            <strong>What this looks like in practice:</strong> You decide a person isn&apos;t worth your full attention because they look unremarkable. Read with 9.11, that decision is a small loss: the unremarkable person is who showed up.
           </p>
         </div>
 
@@ -769,14 +769,14 @@ export default function ChapterPage9() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="yoga-kshema">Yoga-kshema: The Most Tender Promise in the Gita</h2>
+        <h2 id="yoga-kshema">Yoga-kshema: What Krishna Carries</h2>
 
         <p>
-          Verse 9.22 is, depending on the reader, either the most consoling or the most distrusted verse in the Gita. Krishna says: those who think of me alone, who worship with unwavering focus, for them, I carry both <em>yoga</em> (what they don't have) and <em>kṣema</em> (what they already have). I bring them what they need; I preserve what they hold.
+          Readers tend either to lean on verse 9.22 or to distrust it. Krishna says: those who think of me alone, who worship with unwavering focus, for them, I carry both <em>yoga</em> (what they don't have) and <em>kṣema</em> (what they already have). I bring them what they need; I preserve what they hold.
         </p>
 
         <p>
-          Modern readers often hesitate at this verse. It can sound like a transactional promise, believe hard enough, and the universe will provide. That is not the verse's structure. The condition is not belief. The condition is undivided attention. <em>Ananyāś cintayanto</em>, those who think of me without thinking of anything else. This is rare. Most prayer is hedged with backup plans. The verse is describing the unhedged state, and saying that, in that state, the providing happens. Whether it is a metaphysical promise or a psychological observation, the verse names something real: the mind that is not splitting itself between Bhagavan and Plan B is met differently than the one that is.
+          Modern readers often hesitate at this verse. It can sound like a transactional promise: believe hard enough and the universe will provide. The condition the verse names is undivided attention. <em>Ananyāś cintayanto</em>, those who think of me without thinking of anything else. Most prayer is hedged with backup plans. The verse describes the unhedged state and says that, in it, Krishna does the carrying.
         </p>
 
                 <ShlokaCard
@@ -786,8 +786,8 @@ export default function ChapterPage9() {
           iast="ananyāś cintayanto māṃ ye janāḥ paryupāsate | teṣāṃ nityābhiyuktānāṃ yoga-kṣemaṃ vahāmy aham ||"
           meaning="For those whose minds are wholly on me, who worship me always, those who are constantly united with me, I bear their yoga and kshema. I bring them what they lack; I preserve what they have."
           insightLabel="The two words that carry the verse"
-          insight="Yoga here means acquisition, bringing what is not yet present. Kṣema means protection, preserving what already is. Together they cover the whole of material concern. The verse is saying: when the mind is undivided, the part of you that was anxiously managing acquisition and preservation can rest. Something else takes over the carrying."
-          essence="Unwavering devotion is met by unwavering support."
+          insight="Yoga here means acquisition, bringing what is not yet present. Kṣema means protection, preserving what already is. Together they cover the whole of material concern. When the mind is undivided, the verse says, Krishna carries both."
+          essence="For those who worship me single-mindedly, I bring what they lack and keep what they have."
         />
 
         <div className="pull-quote">
@@ -806,14 +806,14 @@ export default function ChapterPage9() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="simple-offering">Leaf, Flower, Fruit, Water, The Cheapest Offering Wins</h2>
+        <h2 id="simple-offering">Leaf, Flower, Fruit, Water</h2>
 
         <p>
-          Verse 9.26 has shaped two thousand years of Hindu devotional life. Krishna says: whoever offers me a leaf, a flower, a fruit, or water, with devotion, I accept it from the pure-hearted. The list is deliberately humble. Leaf. Flower. Fruit. Water. Things any person, anywhere, in any economic state, can find. The Gita is making an inclusivity claim long before anyone called it that. Devotion is not a luxury good.
+          Krishna says in 9.26: whoever offers me a leaf, a flower, a fruit, or water, with devotion, I accept it from the pure-hearted. The list is humble on purpose: things any person, anywhere, rich or poor, can find.
         </p>
 
         <p>
-          Notice the structure of the verse. The object offered is almost irrelevant. The qualifier is everything. <em>Bhaktyā prayacchati</em>, offered with devotion. <em>Prayatātmanaḥ</em>, from a sincere heart. The cost is measured in love, not in the value of the item. A glass of water given with full presence is more complete, in this scheme, than an elaborate ritual performed mechanically. The verse is a permanent rebuke to spiritual showmanship.
+          Notice the structure of the verse. The qualifier carries the weight: <em>bhaktyā prayacchati</em>, offered with devotion. <em>Prayatātmanaḥ</em>, from a sincere heart. The cost is measured in love, not in the value of the item. In this scheme a glass of water given with attention counts for more than an elaborate ritual done mechanically.
         </p>
 
                 <ShlokaCard
@@ -822,9 +822,9 @@ export default function ChapterPage9() {
           sanskrit="पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति । तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥"
           iast="patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati | tad ahaṃ bhakty-upahṛtam aśnāmi prayatātmanaḥ ||"
           meaning="Whoever offers me a leaf, a flower, a fruit, or water with devotion, I accept that devoted offering from one whose heart is pure."
-          insightLabel="Why this verse democratised Indian spirituality"
-          insight="Before this verse, complex Vedic rituals were the prevailing model of religious access. After this verse, the model widens. The widow in a small village offering a flower is engaged in the same act, with the same standing, as the priest performing the elaborate sacrifice. The cost is leveled. The Divine is reachable through what is at hand."
-          essence="A small offering becomes complete when devotion fills it."
+          insightLabel="Who can make this offering"
+          insight="Earlier in the chapter (9.20–21) Krishna describes Vedic ritualists who reach heaven by merit and fall back when it runs out. Here the offering needs no priest and no expense. A widow offering a flower in a village makes the offering the verse describes."
+          essence="A leaf, a flower, a fruit or water offered with devotion, I accept from the pure-hearted."
         />
 
         {/* DIVIDER */}
@@ -839,11 +839,11 @@ export default function ChapterPage9() {
         <h2 id="everything-offering">Whatever You Do, Offer It</h2>
 
         <p>
-          If verse 9.26 widens the door, verse 9.27 widens it further. Krishna says: whatever you do, whatever you eat, whatever you offer, whatever you give, whatever austerity you perform, offer all of it to me. The verse closes any remaining gap between sacred action and ordinary action. There is no longer a category of activity outside the field of offering. Everything goes in.
+          If verse 9.26 widens the door, verse 9.27 widens it further. Krishna says: whatever you do, whatever you eat, whatever you offer, whatever you give, whatever austerity you perform, offer all of it to me. The verse closes the gap between sacred action and ordinary action: no activity is left outside the offering.
         </p>
 
         <p>
-          Read literally, this is a transformation of how a life can feel. The work email is an offering. The meal is an offering. The difficult conversation is an offering. None of these become magically pleasant by being offered. But they stop being yours alone. The weight changes. You are no longer carrying the day to extract benefit from it; you are passing it through your hands toward something larger. This is the practical content of <em>karma yoga</em>, and Chapter 9 is where the practice gets named most directly.
+          Read literally, this changes how a day can feel. A difficult conversation does not become pleasant by being offered, but it stops being yours alone. You are no longer working the day for what it will give you; you are passing it through your hands to Krishna. The next verse, 9.28, says this frees you from the bonds of karma, good and bad.
         </p>
 
                 <ShlokaCard
@@ -853,13 +853,13 @@ export default function ChapterPage9() {
           iast="yat karoṣi yad aśnāsi yaj juhoṣi dadāsi yat | yat tapasyasi kaunteya tat kuruṣva mad-arpaṇam ||"
           meaning="Whatever you do, whatever you eat, whatever you offer, whatever you give, whatever discipline you practice, Arjuna, do it as an offering to me."
           insightLabel="The shift from doing to offering"
-          insight="Mad-arpaṇam, &quot;offered to me.&quot; The verse does not change the activity. It changes the direction. Same email, same meal, same conversation, but the question is no longer just what will it get me. The question is also who is this for. A life directed outside itself stops feeling like a chase and starts feeling like a service."
-          essence="Every action becomes complete when it is offered."
+          insight="Mad-arpaṇam, &quot;offered to me.&quot; The activity stays the same; its direction changes. Same meal, same conversation, but alongside &quot;what will it get me&quot; there is now &quot;who is this for.&quot;"
+          essence="Whatever you do, eat, offer, give or practise as austerity, do it as an offering to me."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>A working practice from 9.27:</strong> Before the next task, take three seconds to mentally say, I do this as an offering. Then do it as you would have done it anyway. After a week, the practice becomes unnecessary because the orientation has shifted. The doing has quietly become offering. The day starts being lighter.
+            <strong>A working practice from 9.27:</strong> Before the next task, take three seconds to mentally say, I do this as an offering. Then do it as you would have done it anyway.
           </p>
         </div>
 
@@ -875,11 +875,11 @@ export default function ChapterPage9() {
         <h2 id="devotee-never-perishes">Even the Person of Bad Conduct, If They Turn</h2>
 
         <p>
-          Verses 9.30 and 9.31 are some of the most generous in the entire Gita, and they are sometimes the most controversial. Krishna says: even a person of very bad conduct, if they worship me with undivided devotion, is to be considered righteous, because their resolve is rightly made. They quickly become a person of dharma, and they attain lasting peace. And then comes the line: <em>na me bhaktaḥ praṇaśyati</em>, my devotee never perishes.
+          Verses 9.30 and 9.31 are generous, and they have been argued over. Krishna says: even a person of very bad conduct, if they worship me with undivided devotion, is to be considered righteous, because their resolve is rightly made. They quickly become a person of dharma, and they attain lasting peace. And then comes the line: <em>na me bhaktaḥ praṇaśyati</em>, my devotee never perishes.
         </p>
 
         <p>
-          Read carelessly, this can sound like a cheap absolution. Read carefully, it is one of the most morally serious claims in the book. The verse is not saying past conduct doesn't matter. It is saying the direction of the atman matters more than its history. A clean turning, not a cleaner past, is what is required. The verse is the Gita's most explicit rejection of the idea that anyone is too far gone to begin. The door is open from where you are now.
+          Read carelessly, this can sound like cheap absolution. Read carefully, it says that the direction a person faces now counts for more than their record. What it asks for is a clean turning. Nobody, on this verse, is too far gone to begin.
         </p>
 
                 <ShlokaCard
@@ -889,8 +889,8 @@ export default function ChapterPage9() {
           iast="api cet sudurācāro bhajate mām ananya-bhāk | sādhur eva sa mantavyaḥ samyag vyavasito hi saḥ ||"
           meaning="Even if a person of very poor conduct turns to me with undivided devotion, they are to be regarded as righteous, for their resolve is rightly placed."
           insightLabel="What the verse is and isn't saying"
-          insight="The verse is not saying conduct doesn't matter. It is saying that a wholehearted turn outranks accumulated wrong. The condition is ananya-bhāk, undivided, not partial, not strategic. The verse rewards orientation, not history. This is good news for anyone who has ever wondered if they are too late."
-          essence="Undivided devotion can outweigh even a deeply flawed life."
+          insight="Conduct still matters; a wholehearted turn outranks accumulated wrong. The condition is ananya-bhāk, undivided devotion, with nothing held back as strategy."
+          essence="Even a person of very bad conduct who worships me single-mindedly should be counted righteous."
         />
 
                 <ShlokaCard
@@ -898,10 +898,10 @@ export default function ChapterPage9() {
           speaker="Krishna"
           sanskrit="क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति । कौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति ॥"
           iast="kṣipraṃ bhavati dharmātmā śaśvac-chāntiṃ nigacchati | kaunteya pratijānīhi na me bhaktaḥ praṇaśyati ||"
-          meaning="Such a person quickly becomes an atman of dharma and attains lasting peace. Arjuna, declare it openly, my devotee never perishes."
+          meaning="Such a person quickly becomes righteous and attains lasting peace. Arjuna, declare it openly, my devotee never perishes."
           insightLabel="The line that carries the chapter"
-          insight="Na me bhaktaḥ praṇaśyati. My devotee never perishes. The verb is in the present tense. It is a structural claim about how the universe is set up. The one who has turned wholeheartedly toward the Divine cannot be finally destroyed, by their past, by their circumstances, by their fear. The Gita asks Arjuna to declare this, to take it seriously enough to say out loud."
-          essence="Devotion quickly changes a person and protects them from ruin."
+          insight="Na me bhaktaḥ praṇaśyati. My devotee never perishes. The verb is in the present tense. The one who has turned wholeheartedly toward the Divine cannot be finally destroyed, by their past, by their circumstances, by their fear. The Gita asks Arjuna to declare this, to take it seriously enough to say out loud."
+          essence="Such a person soon becomes righteous and finds lasting peace; my devotee never perishes."
         />
 
         <div className="pull-quote">
@@ -923,11 +923,11 @@ export default function ChapterPage9() {
         <h2 id="man-mana">Fix the Mind, Be Devoted, Worship, Bow, The Total Orientation</h2>
 
         <p>
-          Chapter 9 ends with the verse that becomes the Gita's signature closing instruction. It will be repeated, almost word for word, at the very end of the book in 18.65. <em>Man-manā bhava mad-bhakto mad-yājī māṃ namaskuru</em>. Fix the mind on me. Be devoted to me. Worship me. Bow to me. Four imperatives, all pointing in one direction. The verse asks for total orientation, attention, feeling, action, posture, all aligned.
+          Chapter 9 ends with the verse that becomes the Gita's signature closing instruction. It will be repeated, almost word for word, at the very end of the book in 18.65. <em>Man-manā bhava mad-bhakto mad-yājī māṃ namaskuru</em>. Fix the mind on me, be devoted to me, worship me, bow to me: four imperatives pointing one way, covering attention, feeling, action and posture.
         </p>
 
         <p>
-          Why does this become the closing of so many of the Gita's chapters? Because it is the Gita's compressed practice. Strip away the philosophy, the metaphysics, the long debates about action and renunciation, and what remains is this. Where is your attention going? Where is your love going? Where are your actions going? Where is your respect going? If all four are pointing one way, the rest follows. The royal secret of Chapter 9 is, finally, this orientation.
+          Krishna returns to it in 18.65 because it is the Gita&apos;s practice in compressed form. Strip away the debates about action and renunciation and four questions remain: where your attention goes, where your love goes, where your actions go, and whom you bow to.
         </p>
 
                 <ShlokaCard
@@ -937,8 +937,8 @@ export default function ChapterPage9() {
           iast="man-manā bhava mad-bhakto mad-yājī māṃ namaskuru | mām evaiṣyasi yuktvaivam ātmānaṃ mat-parāyaṇaḥ ||"
           meaning="Fix your mind on me, be devoted to me, worship me, bow to me. United with me in this way, fully oriented toward me, you will come to me."
           insightLabel="Four imperatives, one direction"
-          insight="Most spiritual instructions are about specific techniques. This verse is about direction. The four verbs cover thought (manā), feeling (bhakta), action (yājī), and posture (namaskuru). If all four are aligned, the path is already being walked. The Gita is condensing eighteen chapters into one verse, and it does so by pointing at orientation, not at technique."
-          essence="Total orientation toward the divine becomes the way to reach the divine."
+          insight="The verse gives a direction rather than a technique. The four words cover thought (manā), feeling (bhakta), action (yājī), and posture (namaskuru)."
+          essence="Fix your mind on me, be devoted to me, worship me, bow to me, and you will come to me."
         />
 
         {/* DIVIDER */}
@@ -957,40 +957,40 @@ export default function ChapterPage9() {
             <tr><th>Verse</th><th>Speaker</th><th>Teaching Essence</th></tr>
           </thead>
           <tbody>
-            <tr><td>9.1</td><td>Krishna</td><td>The deepest truth frees only a heart that does not resist it</td></tr>
-            <tr><td>9.2</td><td>Krishna</td><td>The highest truth is both profound and simple to live</td></tr>
-            <tr><td>9.3</td><td>Krishna</td><td>Without trust, the highest teaching cannot carry you beyond repetition</td></tr>
-            <tr><td>9.4</td><td>Krishna</td><td>The supreme reality holds everything without being held by anything</td></tr>
-            <tr><td>9.5</td><td>Krishna</td><td>The supreme reality sustains all beings without being contained by them</td></tr>
-            <tr><td>9.6</td><td>Krishna</td><td>What moves everywhere still rests in the divine</td></tr>
-            <tr><td>9.7</td><td>Krishna</td><td>What seems like ending is only a return before another beginning</td></tr>
-            <tr><td>9.8</td><td>Krishna</td><td>Life unfolds through a power larger than individual will</td></tr>
-            <tr><td>9.9</td><td>Krishna</td><td>Action can continue without leaving a chain behind</td></tr>
-            <tr><td>9.10</td><td>Krishna</td><td>Change is not chaotic; it unfolds within a higher order</td></tr>
-            <tr><td>9.11</td><td>Krishna</td><td>Ordinary appearance can hide the highest reality</td></tr>
-            <tr><td>9.12</td><td>Krishna</td><td>A confused mind turns even hope, effort, and learning into waste</td></tr>
-            <tr><td>9.13</td><td>Krishna</td><td>True devotion begins when the mind recognises the imperishable source</td></tr>
-            <tr><td>9.14</td><td>Krishna</td><td>Steady devotion becomes a life of continual remembrance</td></tr>
-            <tr><td>9.15</td><td>Krishna</td><td>The same reality can be approached as one, many, or all-encompassing</td></tr>
-            <tr><td>9.16</td><td>Krishna</td><td>All sacred action is already filled with the divine presence</td></tr>
-            <tr><td>9.17</td><td>Krishna</td><td>All sources of life and meaning are gathered in Krishna</td></tr>
-            <tr><td>9.18</td><td>Krishna</td><td>Everything rests in one imperishable source</td></tr>
-            <tr><td>9.19</td><td>Krishna</td><td>Opposites do not stand outside the divine; they flow from it</td></tr>
-            <tr><td>9.20</td><td>Krishna</td><td>Rewarded devotion still keeps you bound to return</td></tr>
-            <tr><td>9.21</td><td>Krishna</td><td>What is won by wanting is lost by time</td></tr>
-            <tr><td>9.22</td><td>Krishna</td><td>Unwavering devotion is met by unwavering support</td></tr>
-            <tr><td>9.23</td><td>Krishna</td><td>All sincere worship reaches the one reality, even when the form is confused</td></tr>
-            <tr><td>9.24</td><td>Krishna</td><td>Every offering matters only when you know who receives it</td></tr>
-            <tr><td>9.25</td><td>Krishna</td><td>Devotion does not stay abstract; it carries you to its chosen end</td></tr>
-            <tr><td>9.26</td><td>Krishna</td><td>A small offering becomes complete when devotion fills it</td></tr>
-            <tr><td>9.27</td><td>Krishna</td><td>Every action becomes complete when it is offered</td></tr>
-            <tr><td>9.28</td><td>Krishna</td><td>Freedom begins when even the result is no longer yours to carry</td></tr>
-            <tr><td>9.29</td><td>Krishna</td><td>Equality is universal; intimacy is born through devotion</td></tr>
-            <tr><td>9.30</td><td>Krishna</td><td>Undivided devotion can outweigh even a deeply flawed life</td></tr>
-            <tr><td>9.31</td><td>Krishna</td><td>Devotion quickly changes a person and protects them from ruin</td></tr>
-            <tr><td>9.32</td><td>Krishna</td><td>No birth or status can block one who takes refuge</td></tr>
-            <tr><td>9.33</td><td>Krishna</td><td>What does not last cannot finally satisfy; turn your life toward the divine</td></tr>
-            <tr><td>9.34</td><td>Krishna</td><td>Total orientation toward the divine becomes the way to reach the divine</td></tr>
+            <tr><td>9.1</td><td>Krishna</td><td>To you, who do not find fault, I will teach the secret knowledge that frees you from harm</td></tr>
+            <tr><td>9.2</td><td>Krishna</td><td>This is the royal knowledge and royal secret: pure, directly known, and easy to practise</td></tr>
+            <tr><td>9.3</td><td>Krishna</td><td>People without faith in this teaching do not reach me and return to the round of death</td></tr>
+            <tr><td>9.4</td><td>Krishna</td><td>My unmanifest form pervades the world; all beings rest in me, but I do not rest in them</td></tr>
+            <tr><td>9.5</td><td>Krishna</td><td>And yet beings do not rest in me; see my power, which sustains them without being in them</td></tr>
+            <tr><td>9.6</td><td>Krishna</td><td>As the wind moves everywhere yet stays within space, all beings stay within me</td></tr>
+            <tr><td>9.7</td><td>Krishna</td><td>At the end of a cycle all beings return into my nature; at its start I send them forth</td></tr>
+            <tr><td>9.8</td><td>Krishna</td><td>Through my own nature I send forth this whole host of beings again and again</td></tr>
+            <tr><td>9.9</td><td>Krishna</td><td>These acts do not bind me; I sit as if indifferent, unattached to them</td></tr>
+            <tr><td>9.10</td><td>Krishna</td><td>Under my watch, nature produces all that moves and does not move, and so the world turns</td></tr>
+            <tr><td>9.11</td><td>Krishna</td><td>Fools disregard me in human form, not knowing my higher nature as Lord of all beings</td></tr>
+            <tr><td>9.12</td><td>Krishna</td><td>Their hopes, actions and learning come to nothing; they are caught in a deluding nature</td></tr>
+            <tr><td>9.13</td><td>Krishna</td><td>The great-souled, sheltered in divine nature, worship me single-mindedly as the imperishable source</td></tr>
+            <tr><td>9.14</td><td>Krishna</td><td>Always singing my praise, firm in their vows, bowing to me, they worship me in devotion</td></tr>
+            <tr><td>9.15</td><td>Krishna</td><td>Others worship me through the offering of knowledge, as one, as separate, as facing every way</td></tr>
+            <tr><td>9.16</td><td>Krishna</td><td>I am the ritual, the sacrifice, the offering to ancestors, the herb, the mantra, the ghee, the fire</td></tr>
+            <tr><td>9.17</td><td>Krishna</td><td>I am this world's father, mother, sustainer and grandsire; I am Om and the three Vedas</td></tr>
+            <tr><td>9.18</td><td>Krishna</td><td>I am the goal, support, lord, witness, home, refuge, friend, origin, end and imperishable seed</td></tr>
+            <tr><td>9.19</td><td>Krishna</td><td>I give heat, hold back and send the rain; I am deathlessness and death, being and non-being</td></tr>
+            <tr><td>9.20</td><td>Krishna</td><td>Followers of Vedic ritual pray for heaven, reach it by their merit, and enjoy the gods' pleasures there</td></tr>
+            <tr><td>9.21</td><td>Krishna</td><td>When their merit runs out they return to the mortal world, coming and going for pleasures</td></tr>
+            <tr><td>9.22</td><td>Krishna</td><td>For those who worship me single-mindedly, I bring what they lack and keep what they have</td></tr>
+            <tr><td>9.23</td><td>Krishna</td><td>Those who worship other gods with faith also worship me, though not in the prescribed way</td></tr>
+            <tr><td>9.24</td><td>Krishna</td><td>I am the enjoyer and lord of all sacrifices; not knowing me as I am, they fall back</td></tr>
+            <tr><td>9.25</td><td>Krishna</td><td>Worshippers of gods go to the gods, of ancestors to the ancestors, and mine come to me</td></tr>
+            <tr><td>9.26</td><td>Krishna</td><td>A leaf, a flower, a fruit or water offered with devotion, I accept from the pure-hearted</td></tr>
+            <tr><td>9.27</td><td>Krishna</td><td>Whatever you do, eat, offer, give or practise as austerity, do it as an offering to me</td></tr>
+            <tr><td>9.28</td><td>Krishna</td><td>So you will be freed from the bonds of karma, good and bad, and will come to me</td></tr>
+            <tr><td>9.29</td><td>Krishna</td><td>I am the same to all beings; those who worship me with devotion are in me, and I in them</td></tr>
+            <tr><td>9.30</td><td>Krishna</td><td>Even a person of very bad conduct who worships me single-mindedly should be counted righteous</td></tr>
+            <tr><td>9.31</td><td>Krishna</td><td>Such a person soon becomes righteous and finds lasting peace; my devotee never perishes</td></tr>
+            <tr><td>9.32</td><td>Krishna</td><td>Whoever takes refuge in me, whatever their birth, women, vaishyas and shudras too, reaches the highest goal</td></tr>
+            <tr><td>9.33</td><td>Krishna</td><td>How much more so pure brahmins and royal sages; in this passing, joyless world, worship me</td></tr>
+            <tr><td>9.34</td><td>Krishna</td><td>Fix your mind on me, be devoted to me, worship me, bow to me, and you will come to me</td></tr>
           </tbody>
         </table>
 
@@ -1017,6 +1017,8 @@ export default function ChapterPage9() {
         </div>
 
 
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the chapter that trains the mind (Chapter 6, not 8), the claim that 9.34 closes many chapters (it recurs once, at 18.65), the unsupported history of Vedic ritual in the 9.26 note, and the 9.31 translation (dharmātmā: righteous); copy edited.</p>
+
         <div className="faq-section" id="faq">
           <div className="faq-header">
             <div className="faq-header-label">Common questions</div>
@@ -1031,31 +1033,31 @@ export default function ChapterPage9() {
           <div className="faq-item">
             <div className="faq-q">What is the meaning of patram pushpam phalam toyam (Gita 9.26)?</div>
             <div className="faq-a">
-              Verse 9.26 says, 'Whoever offers me a leaf, a flower, a fruit, or water with devotion, I accept that devoted offering from one whose heart is pure.' The verse is one of the most democratising teachings in any religious text. The object of the offering, leaf, flower, fruit, water, is humble on purpose. What matters is not the cost, but the love. A person of any economic state, in any place, can fulfil the entire condition. The Gita is rejecting any model where access to the Divine requires wealth or ritual complexity.
+              Verse 9.26 says, 'Whoever offers me a leaf, a flower, a fruit, or water with devotion, I accept that devoted offering from one whose heart is pure.' The objects, leaf, flower, fruit, water, are humble on purpose. The love counts; the cost does not. A person of any economic state, in any place, can fulfil the entire condition. The Gita is rejecting any model where access to the Divine requires wealth or ritual complexity.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does 'my devotee never perishes' mean?</div>
             <div className="faq-a">
-              In verse 9.31, Krishna tells Arjuna to declare publicly, <em>na me bhaktaḥ praṇaśyati</em>, my devotee never perishes. The promise is that one who has wholeheartedly turned toward the Divine cannot be finally destroyed by their past, their circumstances, or their fear. The verse is preceded by 9.30, which says even a person of very poor conduct who turns with undivided devotion is to be considered righteous. The two verses together form the Gita's most generous statement on spiritual access.
+              In verse 9.31, Krishna tells Arjuna to declare publicly, <em>na me bhaktaḥ praṇaśyati</em>, my devotee never perishes. The promise is that one who has wholeheartedly turned toward the Divine cannot be finally destroyed by their past, their circumstances, or their fear. The verse is preceded by 9.30, which says even a person of very poor conduct who turns with undivided devotion is to be considered righteous. Together the two verses say nobody is shut out by their past.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is yoga-kshema in the Bhagavad Gita?</div>
             <div className="faq-a">
-              In verse 9.22, Krishna says, 'For those whose minds are wholly on me, I carry their yoga-kshema.' <em>Yoga</em> here means acquisition, bringing what is not yet present. <em>Kshema</em> means preservation, protecting what already is. Together they cover the whole of material concern. The verse is saying that the mind that is undivided is met with a kind of providential support, what is needed is brought, what is held is preserved.
+              In verse 9.22, Krishna says, 'For those whose minds are wholly on me, I carry their yoga-kshema.' <em>Yoga</em> here means acquisition, bringing what is not yet present. <em>Kshema</em> means preservation, protecting what already is. Together they cover the whole of material concern. The verse says the undivided mind is supported, what is needed is brought, what is held is preserved.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Why does Chapter 9 say the highest knowledge is 'easy to practice'?</div>
             <div className="faq-a">
-              Verse 9.2 calls this teaching <em>su-sukhaṃ kartum</em>, supremely easy to practice, alongside calling it the king of knowledge and the king of secrets. The Gita is making a structural claim: the highest truth is not difficult because it is hidden. It is difficult because the noise has to be turned down enough to hear it. Once the orientation shifts, the practice becomes natural rather than effortful. Chapter 9 is the chapter where this becomes most explicit.
+              Verse 9.2 calls this teaching <em>su-sukhaṃ kartum</em>, supremely easy to practice, alongside calling it the king of knowledge and the king of secrets. The chapter answers that the practice asks for love and attention rather than wealth, learning or elaborate ritual: a leaf or water offered with devotion is accepted (9.26), and any act can be an offering (9.27).
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does the four-imperative verse (9.34) mean?</div>
             <div className="faq-a">
-              Verse 9.34, <em>man-manā bhava mad-bhakto mad-yājī māṃ namaskuru</em>, gives four imperatives that cover thought, feeling, action, and posture. Fix the mind on me. Be devoted to me. Worship me. Bow to me. The Gita repeats this verse, nearly word-for-word, at 18.65, making it the book's signature closing instruction. The teaching is about total orientation, when attention, love, action, and respect all point one way, the path is already being walked.
+              Verse 9.34, <em>man-manā bhava mad-bhakto mad-yājī māṃ namaskuru</em>, gives four imperatives covering thought, feeling, action and posture: fix the mind on me, be devoted to me, worship me, bow to me. The Gita repeats this verse, nearly word-for-word, at 18.65, making it the book's signature closing instruction. It asks that attention, love, action and respect all point one way.
             </div>
           </div>
         </div>

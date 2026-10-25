@@ -6,12 +6,12 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Nishkama Karma Meaning — Krishna's Definition of Selfless Action in the Bhagavad Gita",
-  description: "Nishkama karma (निष्काम कर्म) means action without attachment to results — Krishna's central teaching in Chapters 2 and 3 of the Bhagavad Gita. What it is, why it's not passivity, and 7 verses that show how to actually do it.",
+  title: "Nishkama Karma Meaning: Krishna's Teaching on Selfless Action in the Bhagavad Gita",
+  description: "Nishkama karma (निष्काम कर्म) means action without attachment to results, a central teaching of Bhagavad Gita Chapters 2 and 3. What it is, how it differs from passivity, and 5 verses that show how to practise it.",
   keywords: "nishkama karma meaning, nishkama karma bhagavad gita, nishkama karma in daily life, nishkama karma yoga, action without attachment gita, detached action bhagavad gita, karma yoga without desire, nishkama karma explained, yajna karma gita",
   openGraph: {
-    title: "Nishkama Karma Meaning — Krishna's Definition of Selfless Action in the Bhagavad Gita",
-    description: "Nishkama karma (निष्काम कर्म) — action without attachment to results. Krishna's central teaching, what it actually means, and 7 verses that show how to do it.",
+    title: "Nishkama Karma Meaning: Krishna's Teaching on Selfless Action in the Bhagavad Gita",
+    description: "Nishkama karma (निष्काम कर्म): action without attachment to results. What it means in the Gita, and 5 verses that show how to practise it.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/nishkama-karma-bhagavad-gita",
     siteName: 'Wisdom',
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Nishkama Karma — Krishna's Definition of Selfless Action in the Bhagavad Gita",
-    description: "Nishkama karma (निष्काम कर्म) — action without attachment to results. What it means, and 7 verses that show how to do it.",
+    title: "Nishkama Karma: Krishna's Teaching on Selfless Action in the Bhagavad Gita",
+    description: "Nishkama karma (निष्काम कर्म): action without attachment to results. What it means, and 5 verses that show how to practise it.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -429,8 +429,8 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": ["Article", "LearningResource"],
     "headline": "Nishkama Karma: Acting Without Attachment (Bhagavad Gita)",
-    "description": "Nishkama karma means action without desire for results. Not passive. The Gita calls it the highest form of work.",
-    "alternativeHeadline": "Nishkama Karma — Krishna's Definition of Selfless Action",
+    "description": "Nishkama karma means action without craving for results, taught in Bhagavad Gita 2.47, 3.9, 3.19, 4.20 and 18.11.",
+    "alternativeHeadline": "Nishkama Karma: Krishna's Teaching on Selfless Action",
     "datePublished": "2026-06-12",
     "dateModified": "2026-06-12",
     "author": {
@@ -469,7 +469,7 @@ const schemas = [
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Wisdom", "item": "https://wisdomquotes.in/" },
       { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wisdomquotes.in/blogs/" },
-      { "@type": "ListItem", "position": 3, "name": "Nishkama Karma — Selfless Action in the Bhagavad Gita", "item": "https://wisdomquotes.in/blogs/nishkama-karma-bhagavad-gita" }
+      { "@type": "ListItem", "position": 3, "name": "Nishkama Karma: Selfless Action in the Bhagavad Gita", "item": "https://wisdomquotes.in/blogs/nishkama-karma-bhagavad-gita" }
     ]
   },
   {
@@ -481,15 +481,15 @@ const schemas = [
         "name": "What is nishkama karma?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Nishkama karma is action performed without craving for the results. The word breaks down as nish (without) and kama (desire or craving). In the Bhagavad Gita, it is the practice described in verse 2.47: perform your duty fully, but do not let the anticipated fruit be the reason you act. It does not mean passive or half-hearted effort. It means complete effort with no internal demand on the outcome."
+          "text": "Nishkama karma is action performed without craving for the results. The word breaks down as nish (without) and kama (desire or craving). In the Bhagavad Gita, it is the practice described in verse 2.47: perform your duty fully, but do not let the anticipated fruit be the reason you act. The verse also forbids inaction, so the effort stays complete while the inner demand on the outcome goes."
         }
       },
       {
         "@type": "Question",
-        "name": "Is nishkama karma actually possible?",
+        "name": "Is nishkama karma possible?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Gita treats it as a practice, not a switch you flip. Krishna describes it across many verses and chapters because it takes time to develop. The starting point is becoming aware of when anxiety about results is driving your decisions. BG 6.35 confirms that the mind is genuinely hard to control, but can be trained through consistent practice and gradually loosening attachment to outcomes."
+          "text": "The Gita treats it as a practice that takes time, and Krishna returns to it across several chapters. Start by noticing when anxiety about results is driving your decisions. BG 6.35 grants that the mind is hard to control and says it can be trained through practice (abhyāsa) and detachment (vairāgya)."
         }
       },
       {
@@ -505,7 +505,7 @@ const schemas = [
         "name": "What are examples of nishkama karma in daily life?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Preparing well for a presentation without tying your self-worth to whether it lands. Caring for someone without expecting gratitude. Working at full intensity on a project while being genuinely willing to let the result be what it is. The external action stays the same. What changes is the internal relationship to whether things work out."
+          "text": "Preparing well for a presentation without tying your self-worth to whether it lands. Caring for someone without expecting gratitude. Working at full intensity on a project while being willing to let the result be what it is. The external action stays the same. What changes is the internal relationship to whether things work out."
         }
       },
       {
@@ -513,7 +513,7 @@ const schemas = [
         "name": "Did the Bhagavad Gita invent nishkama karma?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The term nishkama karma as a compound is used in later commentarial literature to summarize what the Gita teaches. The concept itself is clearly present in the Gita, especially in 2.47, 3.9, 3.19, 4.20, and 18.11. The Gita did not coin the phrase but it is the text that developed the idea most fully and systematically."
+          "text": "The term nishkama karma as a compound is used in later commentarial literature to summarize what the Gita teaches. The idea is in the Gita, especially in 2.47, 3.9, 3.19, 4.20, and 18.11, though the Gita does not use the compound itself."
         }
       }
     ]
@@ -547,10 +547,10 @@ export default function NishkamaKarmaPage() {
           </div>
           <h1 className="article-title">
             Nishkama Karma:<br />
-            <em>The Gita&apos;s Hardest Instruction</em>
+            <em>Acting Without Craving the Result</em>
           </h1>
           <p className="article-subtitle">
-            The Gita doesn&apos;t say don&apos;t care about your work. It says don&apos;t make the outcome the reason you&apos;re working.
+            Care about your work, says the Gita, and don&apos;t make the outcome the reason you&apos;re working.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -559,7 +559,7 @@ export default function NishkamaKarmaPage() {
             <span className="meta-sep">·</span>
             <span className="meta-item">~7 min read</span>
             <span className="meta-sep">·</span>
-            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -578,10 +578,10 @@ export default function NishkamaKarmaPage() {
         </figure>
 
         <p className="lead">
-          Most people hear &ldquo;don&apos;t desire results&rdquo; and conclude the Gita is telling them to be passive. To lower expectations. To stop trying hard. That reading is wrong, and the Gita corrects it in the very verse that introduces the teaching. In BG 2.47, Krishna says: you have a right to act, do not cling to fruits, do not make the fruit your motive, and do not use any of this as an excuse to not act. Four instructions in one verse. The last one is specifically there to prevent the misreading.
+          Many people hear &ldquo;don&apos;t desire results&rdquo; and conclude the Gita wants them to be passive, lower their expectations and stop trying hard. The Gita corrects that in the verse that introduces the teaching. In BG 2.47, Krishna says: you have a right to act, do not cling to fruits, do not make the fruit your motive, and do not use any of this as an excuse to stop acting. The last of the four instructions is there to prevent the misreading.
         </p>
         <p>
-          Nishkama karma is not disengagement. It is a different quality of engagement. The distinction is internal. The action looks the same from outside. What changes is the pressure inside: whether you are doing your work because you care about the work, or whether you are doing it as an instrument for an outcome you are desperately hoping to produce. That difference, the Gita argues, determines whether you are free or in bondage while acting.
+          Nishkama karma keeps you engaged and changes how. The action looks the same from outside. What changes is the pressure inside: whether you are doing your work because you care about the work, or whether you are doing it as an instrument for an outcome you are desperately hoping to produce. That difference, the Gita argues, determines whether you are free or in bondage while acting.
         </p>
 
         <h2>What Nishkama Means Literally</h2>
@@ -589,10 +589,10 @@ export default function NishkamaKarmaPage() {
           The compound breaks into two Sanskrit roots. Nish means without, or free from. Kama means desire, craving, or wanting. So nishkama is literally &ldquo;without craving.&rdquo; Karma means action. Nishkama karma is action performed without craving for its fruits.
         </p>
         <p>
-          The key word is craving, not desire. The Gita is not saying arrive at work with no preferences about how things turn out. It is saying do not let the craving for a specific result be the motivating force behind your action. There is a difference between preferring success and being owned by the need for it. Nishkama karma asks you to give up the second, not the first.
+          The key word is craving. You can arrive at work with preferences about how things turn out; the Gita asks that craving for a specific result not be what drives the action. Preferring success is one thing and being owned by the need for it is another. Nishkama karma asks you to give up the second.
         </p>
         <p>
-          This matters because the popular version of the teaching collapses both into one prohibition, then people find the teaching absurd because it seems to require a kind of robotic indifference. But the Gita is describing something more specific. When the anticipated reward is what drives you, several things follow: you become vulnerable to anyone who can withhold or offer that reward, your integrity shifts depending on who is watching, your sense of self depends on whether the outcome arrives. Nishkama karma is the practice of cutting those particular chains.
+          The popular version collapses both into one prohibition, and then the teaching sounds absurd because it seems to require robotic indifference. The Gita is describing something narrower. When the anticipated reward is what drives you, several things follow: you become vulnerable to anyone who can withhold or offer that reward, your integrity shifts depending on who is watching, your sense of self depends on whether the outcome arrives. Nishkama karma is the practice of cutting those chains.
         </p>
 
         <h2>The Foundation Verse</h2>
@@ -607,17 +607,17 @@ export default function NishkamaKarmaPage() {
           meaningLabel="Translation"
           meaning="You have the right to do your actions, but not to control the results. Do not be attached to the fruits of your actions, and do not fall into inaction."
           insightLabel="What This Teaches"
-          insight="This verse builds viveka (discernment) and steadiness. It helps us practice detached effort, reducing anxiety, and empowering us to keep acting even in uncertainty. Notice the four distinct instructions packed here: act, do not claim the fruit, do not let the fruit be your motive, and crucially, do not use this teaching to justify inaction. All four are required together."
-          essence="Focus on right action, let go of attachment to results."
+          insight="The verse packs four instructions: act, do not claim the fruit, do not let the fruit be your motive, and do not use this teaching to justify inaction. They work together. Drop the last one and the teaching turns into an excuse for passivity."
+          essence="Your right is to the work, never to its results."
         />
 
         <p>
-          The fourth instruction deserves attention. Krishna explicitly addresses the escape hatch: &ldquo;well, if I shouldn&apos;t care about results, why do anything at all?&rdquo; The Gita closes that door directly. Inaction is not an option. You are embodied, you have duties, you are in relationship with others and with the world. The question is not whether to act, but the internal quality you bring to acting.
+          Look at the fourth instruction. Krishna anticipates the escape hatch: &ldquo;if I shouldn&apos;t care about results, why do anything at all?&rdquo; and closes it. You are embodied, you have duties, and you live among others, so you will act. What you can choose is the attitude you bring to acting.
         </p>
 
         <h2>Action as Yajna</h2>
         <p>
-          Chapter 3 shifts the frame. Instead of talking about what you should not want, it talks about what the action can be for. The reframe is around yajna, which is usually translated as sacrifice or ritual offering.
+          Chapter 3 shifts the frame from what you should stop wanting to what the action can be for. The key word is yajna, usually translated as sacrifice or ritual offering.
         </p>
 
                 <ShlokaCard
@@ -627,21 +627,21 @@ export default function NishkamaKarmaPage() {
           meaningLabel="Translation"
           meaning="When you do your duties only for yourself, you get trapped by their results. But if you do your duties for Yajna, with selflessness and for the larger order, you stay free. So, do what is right without being attached."
           insightLabel="What This Teaches"
-          insight="This verse nurtures the mental freedom that comes from selfless action. It encourages cultivating detachment and aligning your work with something beyond personal benefit, which is a tool for resilience and inner calm. The action itself does not change. What changes is what the action is for. When it is for you and your craving, it binds. When it is offered outward, it frees."
-          essence="Selfless action, done as an offering, brings true freedom."
+          insight="The action itself stays the same; what changes is what it is for. Done for yourself and your craving, it binds. Done as yajña, an offering to something beyond personal benefit, it does not."
+          essence="Work not done as yajña binds; do your work as an offering, free of attachment."
         />
 
         <p>
-          The yajna framing does something useful. It does not ask you to stop caring. It redirects what you care about. Instead of asking &ldquo;what will I get?&rdquo;, you ask &ldquo;what does this serve?&rdquo; The quality of your effort does not drop. In fact, many people find their work improves when the anxiety about personal outcome stops driving it. You are no longer managing the work through the filter of &ldquo;how does this look for me.&rdquo; You are just doing the work.
+          The yajna framing redirects what you care about. Instead of asking &ldquo;what will I get?&rdquo;, you ask &ldquo;what does this serve?&rdquo; The effort stays the same, and the work often improves once anxiety about personal outcome stops driving it, because you stop filtering it through &ldquo;how does this look for me.&rdquo;
         </p>
 
         <div className="pull-quote">
-          The same action, performed with craving, creates bondage. Performed as an offering, it creates freedom. The difference is internal, not external.
+          The same action binds when done with craving and frees when done as an offering. The difference lies inside the person acting.
         </div>
 
         <h2>The Freedom This Creates</h2>
         <p>
-          Two verses from Chapter 3 and 4 describe what the internal state of nishkama karma actually feels like when it is working.
+          Two verses, from Chapters 3 and 4, describe the inner state of nishkama karma when it is working.
         </p>
 
                 <ShlokaCard
@@ -649,10 +649,10 @@ export default function NishkamaKarmaPage() {
           sanskrit="तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥"
           iast="tasmādasaktaḥ satataṃ kāryaṃ karma samācara | asakto hyācarankarma paramāpnoti pūruṣaḥ ||"
           meaningLabel="Translation"
-          meaning="Do your duties faithfully, but do not cling to their results. Acting without selfish attachment helps you connect with your true, highest Self."
+          meaning="Therefore, always do the work that must be done, without attachment. Acting without attachment, a person reaches the highest."
           insightLabel="What This Teaches"
-          insight="Practicing detachment from results creates equanimity. It trains you to stay balanced, direct your energy toward purposeful action, and avoid stress caused by obsessing over things beyond control. The verse does not promise you will get what you want. It promises something the Gita considers more valuable: you become free while acting."
-          essence="Detached action leads to inner freedom and the ultimate realization."
+          insight="The verse makes no promise that you will get what you want. It promises the highest (param), reached by working without attachment, and the word satatam, always, makes this a daily discipline."
+          essence="Always do your work without attachment; acting so, a person reaches the highest."
         />
 
                 <ShlokaCard
@@ -662,8 +662,8 @@ export default function NishkamaKarmaPage() {
           meaningLabel="Translation"
           meaning="When a person lets go of attachment to results, feels content always, and does not depend on anything, then even while acting, they are not truly 'doing' anything."
           insightLabel="What This Teaches"
-          insight="This verse trains your discerning intellect to focus on the process, not just the results, cultivating inner contentment and resilience. Nityatripta means always content, not content after the good outcome arrives. The contentment precedes the result because it is not conditional on the result."
-          essence="Freedom comes when you act without clinging to success or failure."
+          insight="Nityatṛpta means always content, including before any good outcome arrives. Nirāśraya means depending on nothing. Such a person can be busy with action and, in the Gita's sense, does nothing that binds."
+          essence="Free of attachment to results, always content, they act and yet do nothing that binds."
         />
 
         <h2>What About Ambition? Is This Just Giving Up?</h2>
@@ -671,16 +671,16 @@ export default function NishkamaKarmaPage() {
           This is the objection most people have, and it deserves a real answer rather than a dismissal. The concern is that nishkama karma sounds like a sophisticated way to rationalize low effort. If you don&apos;t want the result, why push hard?
         </p>
         <p>
-          The Gita&apos;s answer is that nishkama karma changes your internal relationship to the outcome, not the intensity of your effort. Consider two people doing identical work: one is working because they want to be seen as capable, to get the promotion, to prove something. The other is working because the work matters, because it is their duty to do it well, because it serves others. From the outside the effort looks the same or the second person works harder because anxiety is not consuming resources. From the inside they are completely different states.
+          The Gita&apos;s answer is that nishkama karma changes your relationship to the outcome and leaves the intensity of your effort alone. Consider two people doing identical work: one is working because they want to be seen as capable, to get the promotion, to prove something. The other is working because the work matters, because it is their duty to do it well, because it serves others. From the outside the effort looks the same, or the second person works harder because anxiety is using up less of them. Inside, the two states differ.
         </p>
         <p>
-          Ambition is compatible with nishkama karma. Wanting to build something significant, wanting to serve well, wanting to grow in skill, all of these can be genuine motivations that are not craving in the Gita&apos;s sense. What the Gita asks you to notice is whether your sense of self, your peace, your integrity, is dependent on the outcome arriving. If losing produces a collapse of identity rather than a recalibration, that dependency is what nishkama karma is asking you to examine.
+          Ambition is compatible with nishkama karma. Wanting to build something significant, to serve well or to grow in skill can all be motives that fall short of craving in the Gita&apos;s sense. What the Gita asks you to notice is whether your sense of self, your peace, your integrity, is dependent on the outcome arriving. If losing produces a collapse of identity rather than a recalibration, that dependency is what nishkama karma is asking you to examine.
         </p>
 
         <div className="highlight-box">
           <h3>The Distinction That Matters</h3>
           <p>
-            Attachment to results means: if the outcome does not arrive, your sense of self is damaged. You feel that you are a failure, not that you have experienced a failure.
+            Attachment to results means: if the outcome does not arrive, your sense of self is damaged. You feel that you are a failure, instead of feeling that something you did failed.
           </p>
           <p>
             Nishkama karma means: you work with full care and full effort, but your sense of self does not depend on the result arriving. You can lose and recalibrate without collapse. You can win without becoming dependent on winning again to feel okay.
@@ -689,18 +689,18 @@ export default function NishkamaKarmaPage() {
 
         <h2>The Modern Problem It Addresses</h2>
         <p>
-          A large fraction of contemporary anxiety traces to outcome-dependence. You work on something and the entire time your mind is running a parallel thread: will this work? What if it doesn&apos;t? What will people think? What does it say about me if it fails? That thread consumes attention, degrades the quality of the work, and delivers suffering regardless of whether the outcome arrives, because the anxiety is present before the result is known.
+          Much of the anxiety people describe at work comes from outcome-dependence. You work on something and the whole time your mind runs a parallel thread: will this work? What if it doesn&apos;t? What will people think? What does it say about me if it fails? That thread consumes attention, degrades the quality of the work, and delivers suffering regardless of whether the outcome arrives, because the anxiety is present before the result is known.
         </p>
         <p>
-          BG 2.47&apos;s insight on this is precise: &ldquo;This teaching reminds us to give our best without letting anxiety about success or failure distract us from enjoying the present moment and learning from our journey.&rdquo; The modern framing around burnout usually identifies overwork as the cause. But many people who burn out are not overworked in hours. They are overworked by the cognitive and emotional load of outcome-craving. The actual labor was sustainable. The constant monitoring of whether the labor was going to produce the desired result was not.
+          BG 2.47 separates the work from its result: the work is yours, the result is not.
         </p>
         <p>
-          BG 3.9 addresses the same problem from the other direction: &ldquo;Today, it&apos;s easy to become stressed or anxious when we focus too much on personal gains or outcomes. This verse teaches us to align our actions with a higher purpose or shared good, and let go of constant worrying about results.&rdquo;
+          BG 3.9 comes at it from the other side. Krishna says that work done as yajña, as an offering, does not bind; work done for any other purpose binds.
         </p>
 
         <h2>Offering the Action: BG 18.11</h2>
         <p>
-          By Chapter 18, the Gita is completing its argument. Krishna makes a clarification that is easy to miss: you cannot actually stop acting. Renouncing action entirely is not an option for an embodied person.
+          By Chapter 18, the Gita is completing its argument. Krishna makes a point that is easy to miss: an embodied person cannot give up action entirely.
         </p>
 
                 <ShlokaCard
@@ -710,17 +710,17 @@ export default function NishkamaKarmaPage() {
           meaningLabel="Translation"
           meaning="A person living in a body cannot completely stop doing actions. Only giving up the desire for rewards from those actions makes someone a true tyagi (renunciate)."
           insightLabel="What This Teaches"
-          insight="This verse helps you develop detachment from outcomes and become more present and less burdened by expectations. The Gita is closing the renunciation escape hatch again. Real renunciation is not leaving your responsibilities. It is doing your responsibilities while releasing the craving for what you hope they will produce. The tyagi, the one who has given up, has given up outcome-craving, not action."
-          essence="Letting go of the desire for results brings real freedom and peace."
+          insight="The Gita closes the renunciation escape hatch again. Renunciation here means doing your responsibilities while releasing the craving for what you hope they will produce. The tyāgī, the one who has given up, has given up the fruits of action and kept the action."
+          essence="No embodied person can drop all action; who gives up the fruits is the true renouncer."
         />
 
         <p>
-          This verse makes nishkama karma accessible to people who live ordinary lives. You do not have to be a monk. You do not have to withdraw from your work, your family, your responsibilities. You engage fully. The practice is in the quality of inner relationship to what you are doing, whether you are clinging to a specific result or whether you are genuinely willing to let the outcome be what it is.
+          This verse opens nishkama karma to people who live ordinary lives. You can keep your work, your family and your responsibilities and engage fully. The practice lies in whether you cling to a specific result or are willing to let the outcome be what it is.
         </p>
 
-        <h2>How to Actually Practice This</h2>
+        <h2>How to Practise It</h2>
         <p>
-          The Gita describes nishkama karma across many chapters because it is a practice that develops gradually. Here are specific behavioral shifts that create the conditions for it.
+          The Gita returns to nishkama karma across several chapters because the practice develops slowly. These habits help.
         </p>
 
         <ul className="practice-list">
@@ -728,18 +728,19 @@ export default function NishkamaKarmaPage() {
             <span><strong>Define success before the outcome arrives.</strong> Before starting a piece of work, decide what a full-effort version looks like. Make that the measure. When you know you did the work well, that becomes your metric, and whether it landed the way you hoped becomes secondary data rather than the verdict on your worth.</span>
           </li>
           <li>
-            <span><strong>Notice when outcome-anxiety is degrading the work.</strong> The parallel thread running &ldquo;but will this work?&rdquo; during execution is a signal. The Gita&apos;s teaching is not to suppress it, but to observe it and redirect attention back to the action itself. This is a skill that develops with repetition.</span>
+            <span><strong>Notice when outcome-anxiety is degrading the work.</strong> The parallel thread running &ldquo;but will this work?&rdquo; during execution is a signal. Observe it and bring your attention back to the action. The skill grows with repetition.</span>
           </li>
           <li>
             <span><strong>Separate the setback from the self.</strong> &ldquo;This did not work&rdquo; is different from &ldquo;I am a failure.&rdquo; The Gita&apos;s nishkama frame allows the first statement while refusing the second. Outcomes give you information. They do not determine identity.</span>
           </li>
           <li>
-            <span><strong>Ask what the action serves beyond personal gain.</strong> The yajna frame from BG 3.9 is practical: before starting, ask who this is actually for. Work that serves something beyond your own advancement tends to pull out more genuine effort and creates less of the brittle dependency on outcome that produces burnout.</span>
+            <span><strong>Ask what the action serves beyond personal gain.</strong> The yajna frame from BG 3.9 is practical: before starting, ask who this is for. Work that serves something beyond your own advancement tends to pull out more genuine effort and creates less of the brittle dependency on outcome that produces burnout.</span>
           </li>
           <li>
-            <span><strong>Let the response to outcomes be proportionate.</strong> The goal is not to stop caring. It is to care in proportion. Wanting a project to succeed is appropriate. If the loss of a single project produces a weeks-long crisis of identity, that is a signal that outcome-attachment has grown outsized. The practice is calibrating the response over time.</span>
+            <span><strong>Let the response to outcomes be proportionate.</strong> Keep caring, in proportion. Wanting a project to succeed is appropriate. If the loss of a single project produces a weeks-long crisis of identity, that is a signal that outcome-attachment has grown outsized. The practice is calibrating the response over time.</span>
           </li>
         </ul>
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: removed app commentary that had been quoted as if it were the Gita; corrected the verse count in the description (5, not 7) and the 3.19 translation; removed the unsupported claim that the Gita calls this the highest form of work; copy edited.</p>
       </div>
 
 
@@ -750,14 +751,14 @@ export default function NishkamaKarmaPage() {
         <div className="faq-item">
           <strong>What is nishkama karma?</strong>
           <p>
-            Nishkama karma is action performed without craving for the results. The word breaks down as nish (without) and kama (desire or craving). In the Bhagavad Gita, it is the practice described in verse 2.47: perform your duty fully, but do not let the anticipated fruit be the reason you act. It does not mean passive or half-hearted effort. It means complete effort with no internal demand on the outcome.
+            Nishkama karma is action performed without craving for the results. The word breaks down as nish (without) and kama (desire or craving). In the Bhagavad Gita, it is the practice described in verse 2.47: perform your duty fully, but do not let the anticipated fruit be the reason you act. The same verse forbids inaction, so the effort stays complete while the inner demand on the outcome goes.
           </p>
         </div>
 
         <div className="faq-item">
-          <strong>Is nishkama karma actually possible?</strong>
+          <strong>Is nishkama karma possible?</strong>
           <p>
-            The Gita treats it as a practice, not a switch you flip. Krishna describes it across many verses and chapters because it takes time to develop. The starting point is becoming aware of when anxiety about results is driving your decisions. BG 6.35 confirms that the mind is genuinely hard to control, but can be trained through consistent practice and gradually loosening attachment to outcomes.
+            The Gita treats it as a practice that takes time, and Krishna returns to it across several chapters. Start by noticing when anxiety about results is driving your decisions. BG 6.35 grants that the mind is hard to control and says it can be trained through practice (abhyāsa) and detachment (vairāgya).
           </p>
         </div>
 
@@ -771,14 +772,14 @@ export default function NishkamaKarmaPage() {
         <div className="faq-item">
           <strong>What are examples of nishkama karma in daily life?</strong>
           <p>
-            Preparing well for a presentation without tying your self-worth to whether it lands. Caring for someone without expecting gratitude. Working at full intensity on a project while being genuinely willing to let the result be what it is. The external action stays the same. What changes is the internal relationship to whether things work out.
+            Preparing well for a presentation without tying your self-worth to whether it lands. Caring for someone without expecting gratitude. Working at full intensity on a project while being willing to let the result be what it is. The external action stays the same. What changes is the internal relationship to whether things work out.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>Did the Bhagavad Gita invent nishkama karma?</strong>
           <p>
-            The term nishkama karma as a compound appears in later commentarial literature to summarize what the Gita teaches. The concept itself is clearly present in the Gita, especially in 2.47, 3.9, 3.19, 4.20, and 18.11. The Gita did not coin the phrase but it is the text that developed the idea most fully and systematically.
+            The term nishkama karma as a compound appears in later commentarial literature to summarize what the Gita teaches. The idea is in the Gita, especially in 2.47, 3.9, 3.19, 4.20, and 18.11, though the Gita does not use the compound itself.
           </p>
         </div>
       </div>

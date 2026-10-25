@@ -502,7 +502,7 @@ const schemas = [
     "@id": "https://wisdomquotes.in/blogs/krishna-three-paths-bhagavad-gita#article",
     "headline": "Krishna's Three Paths — Karma, Jnana, Bhakti and Why the Gita Offers Three Roads to the Same Reality",
     "alternativeHeadline": "The Three Yogas of the Bhagavad Gita — Action, Knowledge, Devotion",
-    "description": "In the Bhagavad Gita, Krishna lays out three paths — Karma Yoga (action), Jnana Yoga (knowledge), and Bhakti Yoga (devotion). Each is shaped for a different temperament. All three converge on the same supreme reality. A deep reading grounded in the verses, with parallels from Tulsidas's Ramcharitmanas and modern psychology.",
+    "description": "In the Bhagavad Gita, Krishna lays out three paths — Karma Yoga (action), Jnana Yoga (knowledge), and Bhakti Yoga (devotion). Each is shaped for a different temperament. All three converge on the same supreme reality. With parallels from Tulsidas's Ramcharitmanas.",
     "image": {
       "@type": "ImageObject",
       "url": "https://wisdomquotes.in/assets/3paths.webp",
@@ -567,7 +567,7 @@ const schemas = [
     "isAccessibleForFree": true,
     "learningResourceType": "Article",
     "educationalLevel": "General",
-    "audience": { "@type": "Audience", "audienceType": "Seekers, students of Hindu philosophy, mental-health-aware readers" },
+    "audience": { "@type": "Audience", "audienceType": "Readers of the Gita, students of Hindu philosophy" },
     "speakable": {
       "@type": "SpeakableSpecification",
       "cssSelector": [".lead", ".shloka-card .meaning-text", ".shloka-card .essence", ".tulsidas-card .gloss", ".highlight-box p", "h2", "h3"]
@@ -587,12 +587,12 @@ const schemas = [
     "@type": "FAQPage",
     "mainEntity": [
       { "@type": "Question", "name": "What are the three paths Krishna teaches in the Bhagavad Gita?", "acceptedAnswer": { "@type": "Answer", "text": "Krishna teaches three converging paths: Karma Yoga — the path of selfless action; Jnana Yoga — the path of knowledge and self-inquiry; and Bhakti Yoga — the path of devotion and surrender. All three lead to the same supreme reality, but each is shaped for a different temperament." } },
-      { "@type": "Question", "name": "Why does Krishna give three paths instead of one?", "acceptedAnswer": { "@type": "Answer", "text": "Because human beings differ. Some are restless doers, some are restless thinkers, and some are restless feelers. Krishna meets each personality where it is. In 4.11 he says — 'In whatever way people approach me, in that way I respond to them.' The truth is one; the doors are many." } },
-      { "@type": "Question", "name": "Which of the three paths is the highest?", "acceptedAnswer": { "@type": "Answer", "text": "Krishna does not establish a flat hierarchy. In 12.12 he names a sequence: practice, then knowledge, then meditation, then renunciation of the fruit of action — and from that renunciation, peace follows immediately. In 7.17 he calls the jnani-bhakta — the wise lover — dearest. In 18.66 he calls surrender the final teaching. The paths complete each other; they do not compete." } },
-      { "@type": "Question", "name": "How does Tulsidas's 'karm pradhan' verse relate to the Gita's Karma Yoga?", "acceptedAnswer": { "@type": "Answer", "text": "Tulsidas writes: 'karam pradhan bisva kari rakha, jo jas karai so tas phalu chakha' — 'the world is governed by action; whatever you do, that is the fruit you taste.' This is the law of karma in Awadhi: the same teaching Krishna gives in 2.47, that action belongs to you and shapes you, even when the fruit does not." } },
-      { "@type": "Question", "name": "What does 'hoihi soi jo Rama rachi rakha' mean and how does it connect to surrender in the Gita?", "acceptedAnswer": { "@type": "Answer", "text": "Tulsidas writes: 'hoihi soi jo rama rachi rakha, ko kari tarka badhavai sakha' — 'only that will happen which Rama has scripted; who can extend the branches of argument?' This is the Ramcharitmanas form of Krishna's teaching in 11.33 — 'they have already been killed by me; become only the instrument' — and in 18.66, 'take refuge in me alone.'" } },
-      { "@type": "Question", "name": "How do the three paths connect to modern mental health?", "acceptedAnswer": { "@type": "Answer", "text": "Karma Yoga maps onto value-driven action over outcome-anxiety — closely related to ACT therapy. Jnana Yoga is the witness-perspective that breaks rumination, the foundation of metacognitive therapy and Buddhist mindfulness. Bhakti Yoga is surrender as a secure base — the experience of being held, which attachment science now confirms regulates the nervous system." } },
-      { "@type": "Question", "name": "How do I know which path is mine?", "acceptedAnswer": { "@type": "Answer", "text": "Notice what your restlessness wants. If you cannot sit still and need to do — your path likely begins with action. If you cannot stop questioning and need to understand — your path begins with knowledge. If you feel deeply and need to be in relationship — your path begins with devotion. The path you naturally walk is the one that will carry you furthest." } }
+      { "@type": "Question", "name": "Why does Krishna give three paths instead of one?", "acceptedAnswer": { "@type": "Answer", "text": "Because human beings differ. Some are restless doers, some are restless thinkers, and some are restless feelers. Krishna meets each person where they are. In 4.11 he says: 'In whatever way people approach me, in that way I respond to them.'" } },
+      { "@type": "Question", "name": "Which of the three paths is the highest?", "acceptedAnswer": { "@type": "Answer", "text": "Krishna does not establish a flat hierarchy. In 12.12 he names a sequence: practice, then knowledge, then meditation, then renunciation of the fruit of action — and from that renunciation, peace follows immediately. In 7.17 he calls the jnani-bhakta — the wise lover — dearest. In 18.64–66 he calls this teaching sarva-guhyatamam, the most hidden of all. The paths complement each other." } },
+      { "@type": "Question", "name": "How does Tulsidas's 'karm pradhan' verse relate to the Gita's Karma Yoga?", "acceptedAnswer": { "@type": "Answer", "text": "Tulsidas writes: 'karam pradhan bisva kari rakha, jo jas karai so tas phalu chakha' — 'the world is governed by action; whatever you do, that is the fruit you taste.' This is the law of karma in Awadhi. Krishna builds on the same law in 2.47: the action is yours to do, and the fruit is not yours to claim." } },
+      { "@type": "Question", "name": "What does 'hoihi soi jo Rama rachi rakha' mean and how does it connect to surrender in the Gita?", "acceptedAnswer": { "@type": "Answer", "text": "Tulsidas writes: 'hoihi soi jo rama rachi rakha, ko kari tarka badhavai sakha' — 'only that will happen which Rama has scripted; who can extend the branches of argument?' Shiva says it after failing to persuade Sati, and then turns to Hari's name. Readers often compare it with 11.33, 'they have already been killed by me; become only the instrument', and 18.66, 'take refuge in me alone.'" } },
+      { "@type": "Question", "name": "How do the three paths connect to modern mental health?", "acceptedAnswer": { "@type": "Answer", "text": "Loosely. Karma Yoga's split between effort and outcome resembles the values-over-goals idea in Acceptance and Commitment Therapy. Jnana Yoga's watcher resembles the practice of noticing a thought as a thought. Bhakti offers the experience of being held. These are resemblances; the Gita's own aim is liberation (moksha)." } },
+      { "@type": "Question", "name": "How do I know which path is mine?", "acceptedAnswer": { "@type": "Answer", "text": "Notice what your restlessness wants. If you cannot sit still and need to do — your path likely begins with action. If you cannot stop questioning and need to understand — your path begins with knowledge. If you feel deeply and need to be in relationship — your path begins with devotion." } }
     ]
   },
   {
@@ -707,7 +707,7 @@ const schemas = [
     "text": "Only that will happen which Rama has already scripted; who can extend the branches of argument?",
     "spokenByCharacter": { "@type": "Person", "name": "Shiva" },
     "creator": { "@type": "Person", "name": "Tulsidas" },
-    "isPartOf": { "@type": "Book", "name": "Ramcharitmanas, Bal Kand, Doha 190" },
+    "isPartOf": { "@type": "Book", "name": "Ramcharitmanas, Bal Kand, chaupai before Doha 52" },
     "inLanguage": ["awa", "en"],
     "alternateName": [
       "होइहि सोइ जो राम रचि राखा। को करि तर्क बढ़ावै साखा॥",
@@ -748,7 +748,7 @@ export default function KrishnaThreePathsPage() {
             <em>Karma, Jnana, Bhakti and Why the Gita Offers Three Roads to the Same Reality</em>
           </h1>
           <p className="article-subtitle">
-            Krishna does not say there is one way. He lays out three (Action, Wisdom, Devotion) and tells Arjuna each one will carry him home. A deep reading, grounded in the verses, with parallels from Tulsidas&apos;s Ramcharitmanas and what modern psychology has begun to confirm.
+            Krishna lays out three ways to live (Action, Wisdom, Devotion) and treats each as a road to him. This guide goes through the verses for each path, with parallels from Tulsidas&apos;s Ramcharitmanas.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -758,7 +758,7 @@ export default function KrishnaThreePathsPage() {
             <span className="meta-item">~18 min read</span>
           </div>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
 
@@ -772,15 +772,15 @@ export default function KrishnaThreePathsPage() {
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>Three paths. One summit. The seeker chooses the road; the destination is already chosen.</figcaption>
+          <figcaption>Karma, jnana and bhakti, drawn as three roads up one mountain.</figcaption>
         </figure>
 
         <p className="lead">
-          Somewhere on a battlefield in Kurukshetra, a man asks the oldest question in human spiritual life: <em>What am I supposed to do with myself?</em> Arjuna is not asking only about the war. He is asking what the rest of us also ask, in our own way, in our own decades: how does a person actually live? What is the right relationship between thinking, doing, and feeling? Krishna&apos;s answer is the Bhagavad Gita. And his answer is not one path. It is three.
+          On the field of Kurukshetra, Arjuna asks Krishna to tell him plainly what he should do (2.7). The question is about the war, and it is also the question of how a person should live: how thinking, doing and feeling fit together. Krishna&apos;s answer takes eighteen chapters and lays out three paths.
         </p>
 
         <p>
-          This is the part of the Gita most people miss. The Gita does not say: <em>here is the one true method; everyone, do this</em>. It says: <em>here are three doors into the same room; walk through the one that fits your nature, and the others will open from inside</em>. The three doors have names. Krishna calls them <strong>Karma Yoga</strong> (the path of action, the focus of <a href="/blogs/bhagwat-geeta-chapter-3" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Chapter 3</a>); <strong>Jnana Yoga</strong> (the path of knowledge, the focus of <a href="/blogs/bhagwat-geeta-chapter-4" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Chapter 4</a>); and <strong>Bhakti Yoga</strong> (the path of devotion, given its most compressed expression in <a href="/blogs/bhagwat-geeta-chapter-12" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Chapter 12</a>). In chapter 13, verse 24, Krishna himself lays out the spectrum: <em>some realize the Self through meditation, some through Sankhya yoga, and some through karma yoga</em> (BG 13.24).
+          The Gita presents these paths as different doors into the same room, and a reader starts with the one that fits their nature. Krishna calls them <strong>Karma Yoga</strong> (the path of action, the focus of <a href="/blogs/bhagwat-geeta-chapter-3" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Chapter 3</a>); <strong>Jnana Yoga</strong> (the path of knowledge, the focus of <a href="/blogs/bhagwat-geeta-chapter-4" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Chapter 4</a>); and <strong>Bhakti Yoga</strong> (the path of devotion, given its most compressed expression in <a href="/blogs/bhagwat-geeta-chapter-12" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Chapter 12</a>). Chapter 13 has a related but different list: <em>some see the Self through meditation, some through Sankhya yoga, and some through karma yoga</em> (13.25 in our numbering, 13.24 in most editions). Bhakti is missing from that list; it gets chapter 12 to itself.
         </p>
 
         <div className="paths-grid">
@@ -794,7 +794,7 @@ export default function KrishnaThreePathsPage() {
             <div className="glyph">ज्ञान</div>
             <div className="name">Jnana Yoga</div>
             <div className="sub">The Path of Knowledge</div>
-            <div className="body">For those who cannot stop asking. Look long enough at what you are not, and what you are becomes obvious.</div>
+            <div className="body">For those who cannot stop asking. Set aside everything you can observe, and what remains is the self.</div>
           </div>
           <div className="path-card">
             <div className="glyph">भक्ति</div>
@@ -805,17 +805,17 @@ export default function KrishnaThreePathsPage() {
         </div>
 
         <p>
-          The premise underneath all three is the same. The names are different (Krishna, Brahman, Atman, the Supreme) but the destination is one. What changes is the road, because the people walking are different. The Gita is psychologically honest in a way most spiritual texts are not: it admits that human beings are not uniform. Some of us live in our hands. Some live in our minds. Some live in our hearts. Krishna does not ask any of us to leave the place we live. He asks us to use that place as a door.
+          The premise underneath all three is the same. The names are different (Krishna, Brahman, Atman, the Supreme) but the destination is one. What changes is the road, because the people walking are different. The Gita accepts that people differ: some lean toward work, some toward questions, some toward love. Krishna asks each of them to start from where they already are.
         </p>
 
         <div className="gita-index">
           <h3>What this article covers</h3>
           <ol>
             <li><strong>Karma Yoga</strong>: action without attachment, and the surprising relief of not owning the result</li>
-            <li><strong>Jnana Yoga</strong>: the knowledge that ends seeking, and why it cuts rumination at the root</li>
-            <li><strong>Bhakti Yoga</strong>: devotion as the easiest path, and the science of surrender</li>
-            <li><strong>Where they meet</strong>: the four kinds of seekers, the summit verse, and Tulsidas&apos;s same teaching in different words</li>
-            <li><strong>Which path is yours</strong>: and how the Wisdom app places you on it</li>
+            <li><strong>Jnana Yoga</strong>: knowledge of the field and its knower, from chapters 4 and 13</li>
+            <li><strong>Bhakti Yoga</strong>: devotion, and why chapter 12 treats it as the easier road</li>
+            <li><strong>Where they meet</strong>: the four kinds of devotees (7.16), 4.11 and 12.12</li>
+            <li><strong>Which path is yours</strong>: a rough guide by temperament</li>
           </ol>
         </div>
 
@@ -826,7 +826,7 @@ export default function KrishnaThreePathsPage() {
         </div>
 
         <p>
-          The Gita&apos;s most quoted verse belongs to this path. It is the answer Krishna gives in chapter 2 when Arjuna&apos;s collapse has reached its lowest point, when the warrior has put down his bow and is ready to leave the field. Krishna does not console him. He does not say <em>you do not have to fight</em>. He gives him a different relationship with the act of fighting:
+          The best-known verse of this path comes in chapter 2. Arjuna has dropped his bow (1.47) and told Krishna he refuses to fight (2.9). Krishna keeps him in the fight and changes how he is to hold it:
         </p>
 
                 <ShlokaCard
@@ -835,13 +835,13 @@ export default function KrishnaThreePathsPage() {
           iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalahetur bhūr mā te saṅgo'stvakarmaṇi ||"
           meaningLabel="Translation"
           meaning="You have a right to action alone, never to its fruits. Do not become the cause of the result, and do not cling to inaction."
-          insightLabel="What this actually says"
-          insight="Most people read this as a teaching about renunciation. It is not. It is a teaching about ownership. Krishna is not saying do not want anything. He is saying you have authority over one thing (the act) and you do not have authority over the second thing (the fruit). The fruit is shaped by a thousand causes, of which your effort is one. When you try to control what was never yours to control, you suffer. When you do your work fully and release the fruit, you finally do the work well."
-          essence="Action belongs to you. The result does not."
+          insightLabel="What the verse says"
+          insight="Krishna gives Arjuna authority over one thing, the act, and none over a second thing, the fruit. The fruit depends on many causes, and your effort is only one of them. The second line closes the other exit: do not make the fruit your motive, and do not fall back on doing nothing."
+          essence="Your right is to the work, never to its results."
         />
 
         <p>
-          The reason this teaching survives across three millennia is that it solves a very specific psychological problem. We are wired to act for outcomes. We pour effort in and we expect proportional return. When the return does not come, or when it comes late, or in the wrong currency, we collapse, we blame, we burn out. Krishna&apos;s teaching is not <em>care less</em>. It is <em>care fully, but separate the caring from the demanding</em>. He repeats it a chapter later, more directly:
+          Most of us work for outcomes and expect a return in proportion to the effort. When the return comes late, comes small or never comes, we blame ourselves or others and lose heart. Krishna asks for full care about the work and no claim on the result. He repeats the point in chapter 3:
         </p>
 
                 <ShlokaCard
@@ -850,13 +850,13 @@ export default function KrishnaThreePathsPage() {
           iast="tasmādasaktaḥ satataṃ kāryaṃ karma samācara | asakto hyācarankarma paramāpnoti pūruṣaḥ ||"
           meaningLabel="Translation"
           meaning="Therefore, always perform your duty without attachment; by acting without attachment, a person reaches the supreme."
-          insightLabel="Why this is the path, not just a tactic"
-          insight="Krishna's claim is large. He says unattached action is not just a healthier way to work: it is itself the road to the supreme. Action becomes spiritual when it stops being transactional. The craftsman who shapes the stone without demanding to see the temple completed is, at that moment, doing the same inner work as the contemplative who has renounced the world."
-          essence="Action done without grasping is itself the path."
+          insightLabel="Unattached action as the path itself"
+          insight="Krishna says that a person who acts without attachment reaches the supreme (param apnoti). Unattached action is a road to the goal in its own right. A mason who shapes a temple stone without needing to see the temple finished is doing the same inner work as the renunciant."
+          essence="Do the work that is yours without attachment, and you reach the highest."
         />
 
         <p>
-          And then, in chapter 3, Krishna gives the verse that turns Karma Yoga from a personal discipline into something cosmic, an offering:
+          Eleven verses later, Krishna asks Arjuna to offer every action to him:
         </p>
 
                 <ShlokaCard
@@ -866,14 +866,14 @@ export default function KrishnaThreePathsPage() {
           meaningLabel="Translation"
           meaning="Surrender all actions to me with the disciplined mind. Free from desire, possessiveness, and sorrow, fight."
           insightLabel="Vigata-jvara: the fever has left"
-          insight="The last word, vigatajvarah, is precise. Jvara is fever. Krishna is naming the experience of acting from anxiety: that low-grade feverishness most modern lives are conducted in. He says the cure is not less action; it is offered action. When you give the act to something larger than your private ledger of wins and losses, the fever lifts. You can still fight. You just no longer need the fight to define you."
-          essence="When the act is offered, the fever leaves."
+          insight="The last word, vigatajvarah, means with the fever gone. Jvara is fever, and Krishna uses it for the anxious heat of acting for yourself. His remedy is to keep acting and to offer the act to him. Arjuna still fights, without hope of gain, without the sense of mine, and without that heat."
+          essence="Offer every action to Krishna and fight, free of craving, ownership and fever."
         />
 
-        <h3>Tulsidas, eight hundred years later, in different words</h3>
+        <h3>Tulsidas, centuries later, in Awadhi</h3>
 
         <p>
-          Krishna&apos;s Karma Yoga did not stay sealed in Sanskrit. It walked out into the bhakti era and into common languages. Tulsidas, writing the Ramcharitmanas in Awadhi in the sixteenth century, delivered the same teaching in a chaupai that is still recited across northern India. (We have a separate piece on <a href="/blogs/bhagavad-gita-karma-meaning" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>what karma actually means in the Gita</a>. The cliché version most people carry is wrong in instructive ways.)
+          The same idea reached Hindi-speaking India through Tulsidas, who wrote the Ramcharitmanas in Awadhi in the sixteenth century. One of his chaupais, still recited across northern India, states it this way. (We have a separate piece on <a href="/blogs/bhagavad-gita-karma-meaning" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>what karma actually means in the Gita</a>. It covers the popular misreadings.)
         </p>
 
         <div className="tulsidas-card" id="tulsidas-karm-pradhan">
@@ -881,24 +881,24 @@ export default function KrishnaThreePathsPage() {
           <div className="awadhi">करम प्रधान बिस्व करि राखा।{'\n'}जो जस करइ सो तस फलु चाखा॥</div>
           <div className="roman">karam pradhāna bisva kari rākhā,{'\n'}jo jasa karai so tasa phalu chākhā.</div>
           <div className="gloss">
-            <strong>The world is governed by action; whoever does whatever, tastes the fruit accordingly.</strong> Tulsidas, in the voice of his own narration, gives the law of karma in twenty syllables. It is the same teaching Krishna gives in 2.47: that action is the lever, that you cannot opt out of it, that the universe is responsive to what you actually do. The Sanskrit pandit&apos;s argument and the village reciter&apos;s couplet are saying the same thing.
+            <strong>The world is governed by action; whoever does whatever, tastes the fruit accordingly.</strong> The line states the law of karma: what you do comes back to you as fruit. Krishna builds on the same law in 2.47. Since the action is yours to do, do it well, and leave the fruit alone.
           </div>
         </div>
 
         <p>
-          The Gita does not say karma is mechanical fate. It says karma is real cause. Your actions shape what comes back, not always in the form you expect, not always on the schedule you wanted, but they do. Karma Yoga&apos;s teaching is what you do with that fact: you take it seriously enough to act well, and you take it gently enough not to obsess over the receipt.
+          In the Gita, karma is cause and effect, and it leaves room for choice. Your actions shape what comes back, though the form and the timing may surprise you. Karma Yoga&apos;s teaching is what you do with that fact: you take it seriously enough to act well, and you take it gently enough not to obsess over the receipt.
         </p>
 
         <h3>Modern parallel, the value-driven life</h3>
 
         <p>
-          Contemporary psychology has, in the last twenty years, arrived at something remarkably close to Karma Yoga from a completely different direction. Acceptance and Commitment Therapy (ACT) distinguishes between <em>outcome-driven</em> living (I will be happy when X happens) and <em>value-driven</em> living (I will act in line with what matters to me, regardless of whether X happens). The first is fragile; it requires the world to comply. The second is portable; it works on a Tuesday morning when nothing in the world has cooperated. Krishna is teaching value-driven action, three thousand years earlier, in Sanskrit verse. The clinical research is now catching up to the chaupai.
+          Acceptance and Commitment Therapy (ACT), a form of psychotherapy developed from the late 1980s, makes a similar split between <em>goals</em>, which can be reached and ticked off, and <em>values</em>, which guide action whether a goal is met or missed. The resemblance to 2.47 is close, though the Gita&apos;s aim is liberation (moksha), and ACT&apos;s is a livable life.
         </p>
 
         <div className="highlight-box">
           <h3>Karma Yoga in one sentence</h3>
           <p>
-            Do the work fully. Hand the result over. The fever leaves, and the action, done from this place, becomes the thing that finally carries you somewhere.
+            Do the work fully, offer it to Krishna, and leave the result alone (2.47, 3.19, 3.30).
           </p>
         </div>
 
@@ -909,7 +909,7 @@ export default function KrishnaThreePathsPage() {
         </div>
 
         <p>
-          The second path is for a different kind of restlessness. The Karma Yogi cannot sit still; the Jnana Yogi cannot stop asking. For this seeker, the relief comes not from doing the right thing but from seeing the right thing clearly, finally, without the haze that ordinary thought leaves behind. Krishna&apos;s claim in chapter 4 is unusually large:
+          The second path suits a different temperament. The karma yogi wants to act; the jnana yogi wants to understand. For this person, relief comes from seeing clearly what is real. Krishna makes a large claim for this knowledge in chapter 4:
         </p>
 
                 <ShlokaCard
@@ -918,13 +918,13 @@ export default function KrishnaThreePathsPage() {
           iast="na hi jñānena sadṛśaṃ pavitramiha vidyate | tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati ||"
           meaningLabel="Translation"
           meaning="No purifier compares to knowledge in this world. The one perfected in yoga finds that knowledge within the self, in time."
-          insightLabel="Knowledge that purifies, not knowledge that informs"
-          insight="Krishna is not talking about facts. He is talking about jnana: direct understanding of what is real and what is appearance. The knowledge of who you are, beneath the conditioning. When this kind of knowing happens, it does not just add information; it removes confusion. That is what pavitra means here: purifier. Wrong-seeing leaves the system the way clean water removes silt."
-          essence="Nothing purifies like knowledge. Wrong-seeing is the only real dirt."
+          insightLabel="Knowledge as a purifier"
+          insight="Jnana here means direct understanding of what is real and what is appearance, including who you are beneath your conditioning. It removes confusion more than it adds information. That is why Krishna calls it pavitra, a purifier, and says the one perfected in yoga finds it within, in time."
+          essence="Nothing purifies like knowledge, and the yogi finds it within, in time."
         />
 
         <p>
-          But this knowledge is not bought cheaply. The Gita has very specific instructions for how it is approached:
+          Four verses earlier, Krishna says how this knowledge is to be sought:
         </p>
 
                 <ShlokaCard
@@ -933,13 +933,13 @@ export default function KrishnaThreePathsPage() {
           iast="tadviddhi praṇipātena paripraśnena sevayā | upadekṣyanti te jñānaṃ jñāninastattvadarśinaḥ ||"
           meaningLabel="Translation"
           meaning="Know that by prostration, by sincere questioning, and by service. The wise who see reality will teach you that knowledge."
-          insightLabel="Three movements, in this exact order"
-          insight="Bowing first, asking second, serving third. The order matters. Most modern learners start with the question and skip the humility. As a result, the question itself comes out distorted by the ego asking it. Krishna's sequence assumes the learner has first put down the need to be right. Only then does the real question become possible. And only then does the answer have a place to land."
-          essence="Bow, then ask, then serve. Knowledge enters in that order."
+          insightLabel="Bowing, questioning, serving"
+          insight="The verse names three things a student brings to a teacher: pranipata (bowing), pariprashna (sincere, repeated questioning) and seva (service). Humility comes before the question. A student who still needs to be right tends to ask the wrong question, and the answer has nowhere to land."
+          essence="Learn from those who have seen the truth, through humility, questions and service."
         />
 
         <p>
-          The content of this knowledge (what the Jnani actually comes to see) is laid out across the middle chapters of the Gita, and most cleanly in chapter 13. Here Krishna draws the central distinction of the entire tradition: between <em>kshetra</em> (the field: the body, the mind, the emotions, all observable experience) and <em>kshetrajna</em> (the knower of the field: pure awareness, watching). Almost everything we suffer about is in the field. The knower has never been wounded.
+          What the jnani comes to see is set out most fully in chapter 13. There Krishna distinguishes between <em>kshetra</em> (the field: the body, the mind, the emotions, all observable experience) and <em>kshetrajna</em> (the knower of the field: the awareness that watches). Most of what we suffer over belongs to the field.
         </p>
 
                 <ShlokaCard
@@ -949,34 +949,34 @@ export default function KrishnaThreePathsPage() {
           meaningLabel="Translation"
           meaning="Whoever thus knows the purusha and prakriti together with the qualities is not born again, even while living and acting in every way."
           insightLabel="Liberation that doesn&apos;t require renunciation"
-          insight="The crucial phrase is sarvatha vartamano'pi: even while living and acting in every way. Krishna is not asking the Jnani to leave the world. He is saying: once you have seen the difference between the field and the knower, you can do anything in the field (work a job, raise children, fight a war) and not be bound by it. Liberation is a shift in identity, not a change of address."
-          essence="Clear seeing frees you while life still continues."
+          insight="The key phrase is sarvatha vartamano'pi: even while living and acting in every way. Krishna does not ask the jnani to leave the world. Once you have seen the difference between the field and the knower, you can work, raise children or fight a war and still not be born again."
+          essence="Whoever knows purusha and prakriti is not born again, however they live."
         />
 
         <h3>The Upanishadic root, neti, neti</h3>
 
         <p>
-          Jnana Yoga did not begin with Krishna. He inherited it from the Upanishads, whose central method, <em>neti, neti</em> (&ldquo;not this, not this&rdquo;), is the original Jnana practice. The sage Yajnavalkya in the Brihadaranyaka Upanishad teaches that the self cannot be grasped as an object, because it is what is doing the grasping. You proceed by eliminating: you are not the body, because you can observe the body. You are not the mind, because you can observe the mind. What remains, when everything you can observe has been set aside, is what you have been all along. The <a href="/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ashtavakra Gita, the Avadhuta Gita, and other lesser-known Gitas</a> carry this method to its furthest expression. Krishna&apos;s gift in chapter 13 was to compress it into a structure ordinary people could actually use.
+          Krishna inherited this path from the Upanishads, whose method of <em>neti, neti</em> (&ldquo;not this, not this&rdquo;) is the classic jnana practice. The sage Yajnavalkya in the Brihadaranyaka Upanishad teaches that the self cannot be grasped as an object, because it is what is doing the grasping. You proceed by eliminating: you are not the body, because you can observe the body. You are not the mind, because you can observe the mind. What remains, when everything you can observe has been set aside, is what you have been all along. The <a href="/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ashtavakra Gita, the Avadhuta Gita, and other lesser-known Gitas</a> carry the method further. Chapter 13 compresses it into the field and its knower, a scheme a householder can use.
         </p>
 
         <h3>Modern parallel, metacognition and the witness</h3>
 
         <p>
-          Cognitive science has, in the last thirty years, identified rumination (the repetitive recycling of negative thought) as one of the strongest predictors of depression and chronic anxiety. The most successful interventions for rumination are not techniques to think better thoughts. They are techniques to <em>watch</em> thoughts, to develop what psychologists call &ldquo;metacognitive awareness,&rdquo; the capacity to notice that you are thinking, without being identical to the thought. This is, almost word for word, the Jnana practice of distinguishing kshetra from kshetrajna. The witness is therapeutic precisely because it is true.
+          Several modern therapies train people to <em>watch</em> a thought as an event in the mind, instead of taking it as a fact about the world. That resembles the split between kshetra and kshetrajna, though the Gita goes further and says the watcher is your real self.
         </p>
 
         <p className="pull-quote">
-          The thought arises in you, but you are not the thought. Notice this once, and the day softens. Notice it consistently, and the architecture of suffering begins to come apart.
+          A thought arises in you, and you can watch it arise. In chapter 13&apos;s terms, the thought belongs to the field and you are its knower.
         </p>
 
         {/* ── BHAKTI YOGA ── */}
         <div className="path-header">
           <span className="path-badge">Path 3 of 3</span>
-          <h2 className="path-title" id="bhakti-yoga">Bhakti Yoga, Devotion as the Easiest, and the Hardest, Path</h2>
+          <h2 className="path-title" id="bhakti-yoga">Bhakti Yoga, Devotion as the Easier Road</h2>
         </div>
 
         <p>
-          The third path begins where the second ends. Jnana Yoga asks you to see clearly, but Krishna, with disarming honesty, admits in chapter 12 that this is hard:
+          The third path begins where the second ends. Jnana Yoga asks you to see clearly, and Krishna admits in chapter 12 that this is hard:
         </p>
 
                 <ShlokaCard
@@ -986,12 +986,12 @@ export default function KrishnaThreePathsPage() {
           meaningLabel="Translation"
           meaning="For those whose minds cling to the unmanifest, the struggle is greater. The unmanifest path is hard to reach for embodied beings."
           insightLabel="Krishna&apos;s honesty about the abstract"
-          insight="Pure Jnana, meditation on the formless, unmanifest reality, is not impossible. It is just brutally hard for human beings, because human beings are bodies, and bodies live in relationship to forms. Krishna does not shame anyone for finding the abstract path difficult. He offers an alternative that meets us where we actually live: in feeling, in form, in relationship."
-          essence="The subtlest path is hardest for a body-bound mind. There is another way."
+          insight="Meditation on the formless, unmanifest reality is possible, but Krishna calls it harder for anyone who lives in a body, because bodies relate to forms. He blames no one for finding the abstract path difficult, and he offers a path through feeling, form and relationship."
+          essence="The path to the unmanifest is harder for those who live in a body."
         />
 
         <p>
-          That alternative is Bhakti. Where Jnana asks <em>what is real?</em>, Bhakti asks <em>whom do I love?</em>. The answer is the same (the Supreme) but the route is utterly different. Bhakti uses what is already in the human heart: the capacity for attachment, longing, surrender. It does not eliminate emotion; it reorients it. The same energy that gets spent on a hundred small attachments is gathered up and turned toward the one source from which all attachment seemed to come in the first place.
+          That alternative is Bhakti. Jnana asks <em>what is real?</em>; Bhakti asks <em>whom do I love?</em> Both arrive at the Supreme by different routes. Bhakti works with what is already in the heart, the capacity for attachment, longing and surrender, and turns it toward one object instead of a hundred small ones.
         </p>
 
                 <ShlokaCard
@@ -1000,13 +1000,13 @@ export default function KrishnaThreePathsPage() {
           iast="mayyeva mana ādhatsva mayi buddhiṃ niveśaya | nivasiṣyasi mayyeva ata ūrdhvaṃ na saṃśayaḥ ||"
           meaningLabel="Translation"
           meaning="Fix your mind on me alone. Place your discerning mind in me, and you will live in me, beyond doubt."
-          insightLabel="A divided mind is the disease"
-          insight="Most psychological suffering is the suffering of fragmentation. Part of you wants this, part of you wants that, part of you is criticizing both parts. Krishna's instruction is not think more carefully. It is gather both your thought and your feeling into one focus. The mind, when finally pointed at one thing it loves, stops splitting itself. The peace is not the reward; the gathering is the peace."
-          essence="A divided mind settles when both thought and feeling rest in one place."
+          insightLabel="Mind and intellect in one place"
+          insight="Krishna asks for two things: fix the mind (manas) on him, and settle the buddhi, the discerning intellect, in him. Feeling and judgement both go to one place. The promise follows at once: you will live in me, without doubt."
+          essence="Fix your mind and intellect on Krishna, and you will live in him."
         />
 
         <p>
-          And then, in chapter 9, Krishna gives the verse that has comforted more sufferers than possibly any other line in the book, the promise underneath the entire path:
+          In chapter 9 Krishna makes the promise that sits under the whole path:
         </p>
 
                 <ShlokaCard
@@ -1016,12 +1016,12 @@ export default function KrishnaThreePathsPage() {
           meaningLabel="Translation"
           meaning="Those who think of me alone and worship me with unwavering focus, I carry their welfare and security."
           insightLabel="Yoga-kshema: getting and keeping"
-          insight="The compound word yoga-kshema is precise. Yoga is acquiring what you do not yet have. Kshema is preserving what you already have. Krishna takes both burdens. The devotee's job is not to engineer outcomes; it is to remain devoted. Read this verse on a hard morning. It does not promise that life will be easy. It promises that the load is not yours alone."
-          essence="Unwavering devotion is met by unwavering support."
+          insight="Yoga-kshema has two halves. Yoga is getting what you do not yet have; kshema is keeping what you have. Krishna takes on both for those who worship him with undivided attention. The verse promises a shared load, which is different from an easy life."
+          essence="For those devoted to him alone, Krishna provides what they lack and keeps what they have."
         />
 
         <p>
-          The most beautiful thing about Bhakti is the smallness of the offering it requires. There is no minimum donation. There is no spiritual qualification. Krishna says this directly:
+          Bhakti asks for a small offering and no qualification. Krishna says so directly:
         </p>
 
                 <ShlokaCard
@@ -1031,22 +1031,22 @@ export default function KrishnaThreePathsPage() {
           meaningLabel="Translation"
           meaning="Whoever offers me a leaf, a flower, a fruit, or water with devotion, I accept that devoted offering from the pure-hearted."
           insightLabel="It is the devotion, not the object"
-          insight="A leaf. A flower. A fruit. Water. The cheapest things on earth. Krishna chose the items deliberately, to make it clear that Bhakti is not about wealth or ritual or scholarship. It is about what fills the offering. A glass of water given from the heart contains more than an elaborate ceremony given from obligation. This is the great democratization of the spiritual life."
-          essence="A small offering becomes complete when devotion fills it."
+          insight="A leaf, a flower, a fruit, water: things anyone can find. The list makes clear that bhakti needs no wealth, ritual or learning. Krishna accepts the devotion in the offering, so a glass of water given with love counts for more than a large ceremony done from duty."
+          essence="Krishna accepts a leaf, flower, fruit or water offered with devotion."
         />
 
         <h3>Tulsidas, surrender in Awadhi verse</h3>
 
         <p>
-          If Krishna&apos;s Karma teaching reached Tulsidas as <em>karam pradhan bisva kari rakha</em>, his Bhakti teaching reached Tulsidas as a different chaupai entirely, spoken by Shiva in the Bal Kand after Sati&apos;s collapse, when nothing more can be argued:
+          Tulsidas has a second line that readers often set beside the Gita&apos;s teaching on surrender. Shiva says it in the Bal Kand, after Sati ignores his advice and goes to test Rama:
         </p>
 
         <div className="tulsidas-card" id="tulsidas-hoihi-soi">
-          <div className="source-label">Ramcharitmanas · Bal Kand · 1.190</div>
+          <div className="source-label">Ramcharitmanas · Bal Kand · before Doha 52</div>
           <div className="awadhi">होइहि सोइ जो राम रचि राखा।{'\n'}को करि तर्क बढ़ावै साखा॥</div>
           <div className="roman">hoihi soi jo rāma rachi rākhā,{'\n'}ko kari tarka ba.dhāvai sākhā.</div>
           <div className="gloss">
-            <strong>Only that will happen which Rama has already scripted; who can extend the branches of argument?</strong> This is the Ramcharitmanas form of Krishna&apos;s teaching in 11.33 (<em>they have already been killed by me; you become only the instrument</em>) and in 18.66, his final word: <em>take refuge in me alone</em>. The argument is exhausted; the surrender begins. Tulsidas places this line precisely at the moment when intellect has run out of room. Bhakti starts where logic stops.
+            <strong>Only that will happen which Rama has already scripted; who can extend the branches of argument?</strong> Shiva has argued with Sati and failed, so he stops arguing and begins repeating Hari&apos;s name. Readers often compare the line with 11.33 (<em>they have already been killed by me; you become only the instrument</em>) and with 18.66, Krishna&apos;s last instruction: <em>take refuge in me alone</em>.
           </div>
         </div>
 
@@ -1057,35 +1057,31 @@ export default function KrishnaThreePathsPage() {
           meaningLabel="Translation"
           meaning="Therefore rise and win fame. They have already been slain by me; become only the instrument, Arjuna."
           insightLabel="Karma Yoga and Bhakti Yoga, fused in one verse"
-          insight="This verse is the seam where the paths meet. Krishna does not tell Arjuna not to act. He tells him to act fully (uttishtha, rise). But he also relieves him of the metaphysical burden of being the doer. Nimitta-matra: only the instrument. You bring the bow. The larger movement of things has already decided where the arrow lands. This is the same instruction Tulsidas distilled into hoihi soi jo rama rachi rakha."
-          essence="Act fully. Let the larger order carry the result."
+          insight="Here action and devotion meet. Krishna tells Arjuna to rise (uttishtha) and fight, and at the same time lifts from him the burden of being the doer. Nimitta-matra means only the instrument: Arjuna brings the bow, and Krishna, speaking as time in 11.32, has already decided the outcome. Readers often hear the same note in Tulsidas's hoihi soi jo rama rachi rakha."
+          essence="Rise and fight; the outcome is already decided, and you are the instrument."
         />
 
         <p>
-          And then, the verse that closes the entire Gita, the line Krishna calls the most secret teaching of all:
+          Krishna prefaces 18.66 in 18.64 by calling it <em>sarva-guhyatamam</em>, the most secret of all:
         </p>
 
                 <ShlokaCard
-          verseRef="Bhagavad Gita 18.66: the final teaching"
+          verseRef="Bhagavad Gita 18.66: the last instruction"
           sanskrit="सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥"
           iast="sarvadharmān parityajya mām ekaṃ śaraṇaṃ vraja | ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ ||"
           meaningLabel="Translation"
           meaning="Abandon all duties and take refuge in me alone. I will free you from all wrongdoing; do not grieve."
           insightLabel="Ma shuchah: do not grieve"
-          insight="After seventeen chapters of teaching (every framework, every distinction, every yoga) Krishna ends with the simplest possible instruction. Drop the burden of getting it right. Hand the load to me. The last two words, ma shuchah, are tender: do not grieve. The Gita that began with Arjuna's grief ends with Krishna's promise that the grief has nowhere left to live."
-          essence="Total refuge ends the burden of fear."
+          insight="After the frameworks and yogas of the earlier chapters, Krishna's last instruction is short: give up every other support and take refuge in him alone. The last two words, ma shuchah, mean do not grieve. Krishna's teaching opened in 2.11 by telling Arjuna he grieves for those who should not be grieved for, and its last instruction closes on the same word."
+          essence="Take refuge in Krishna alone, and do not grieve."
         />
 
-        <h3>Modern parallel, surrender as a regulated nervous system</h3>
-
-        <p>
-          What does Bhakti actually do, physiologically? Modern attachment science has begun to answer this. A secure attachment relationship (the felt sense of being held by something larger and reliable) is what regulates the human nervous system. Infants who experience this consistently develop the capacity to self-soothe. Adults who experience this in relationships are measurably calmer, more flexible, more resilient. Bhakti is the spiritual version of this experience: the felt sense that you are held by something that does not let go. It works on the same neural machinery. The devotee who can genuinely place the day in Krishna&apos;s hands is doing what attachment researchers call <em>co-regulation</em>, and it works precisely as it works in a healthy human bond.
-        </p>
+        
 
         <div className="highlight-box">
-          <h3>Why Krishna calls Bhakti the easiest path</h3>
+          <h3>Why Bhakti is the easier road</h3>
           <p>
-            Because it does not require you to renounce anything you already have. It does not require silence. It does not require scholarship. It does not require you to fix yourself first. It asks only that you turn, and turn again, toward what you most love. The leaf, the flower, the fruit, the water. The same psyche that was scattered across a hundred small attachments becomes whole when finally pointed at one large one.
+            In 12.5 Krishna says the path to the unmanifest is harder for embodied beings, and in 8.14 he says he is easy to reach for one who remembers him constantly. Bhakti asks for no renunciation, silence or scholarship first. It asks you to keep turning toward what you love, and 9.26 sets the price of entry at a leaf, a flower, a fruit or some water.
           </p>
         </div>
 
@@ -1093,11 +1089,11 @@ export default function KrishnaThreePathsPage() {
         <h2 id="where-three-paths-meet">Where the Three Paths Meet</h2>
 
         <p>
-          Once you see all three paths in front of you, the obvious question becomes: are they really separate? Or are they three faces of one thing? Krishna&apos;s answer, across the Gita, is both. They are different enough that a person should not try to walk all three at once. Start with the one that fits your nature. And they are united enough that the deeper you go, the more they begin to flow into each other.
+          Are the three paths separate, or three sides of one thing? The Gita treats them as both. A person starts with the one that fits their nature, and the further they go, the more the other two show up in their practice.
         </p>
 
         <p>
-          The clearest single statement of this is in chapter 7, where Krishna describes the four kinds of people who turn toward him:
+          Chapter 7 shows this when Krishna describes the four kinds of people who turn toward him:
         </p>
 
                 <ShlokaCard
@@ -1107,12 +1103,12 @@ export default function KrishnaThreePathsPage() {
           meaningLabel="Translation"
           meaning="Four kinds of virtuous people worship me, Arjuna: the distressed, the seeker of knowledge, the one who wants material good, and the wise one, best of the Bharatas."
           insightLabel="All four count"
-          insight="Krishna does not say only the wise should approach him. He names the suffering person who comes because the suffering has nowhere else to go. The curious one who comes because the question will not let them rest. The person who wants something concrete and comes asking for it. And the one who has already understood, and comes simply because that is what understanding does. All four are called sukritina: virtuous. The door, Krishna is saying, has many handles, and any of them will open it."
-          essence="Different needs lead to one real turning."
+          insight="Krishna names four kinds of people who come to him: the one in distress (arta), the one who wants to know (jijnasu), the one who wants some gain (artharthi), and the wise one (jnani). All four are called sukritinah, people of good deeds, and he turns none of them away."
+          essence="Four kinds of good people turn to Krishna: the distressed, the curious, the wanting and the wise."
         />
 
         <p>
-          And immediately after, Krishna admits something tender: that of these four, one is dearer than the others. Not because the others are unworthy, but because in this one the paths have already fused:
+          In 7.18 Krishna adds that all four are noble. In 7.17 he names the dearest of them, the wise one who is also a devotee:
         </p>
 
                 <ShlokaCard
@@ -1122,12 +1118,12 @@ export default function KrishnaThreePathsPage() {
           meaningLabel="Translation"
           meaning="Among these four, the wise devotee, ever united, one-pointed, is distinguished. For I am exceedingly dear to the wise one, and the wise one is dear to me."
           insightLabel="Jnani-bhakta: the wise lover"
-          insight="The phrase jnani-bhakta is doing enormous work. It is the seeker in whom Jnana and Bhakti have stopped being separate paths and become one disposition: clear seeing combined with devoted love. Krishna does not name this as a fourth path. He names it as what happens at the end of the other two. Wisdom turns into love; love refines into wisdom. The summit looks the same whether you arrived from the north face or the south."
+          insight="The verse joins jnani (the wise one) with ekabhakti (devoted to one). In this person, knowledge and devotion have become a single disposition. Krishna presents it as the place where knowledge and devotion lead, rather than as a fourth path."
           essence="Deep knowing and devoted love become a mutual bond."
         />
 
         <p>
-          And in chapter 4, one of the most pluralistic verses Krishna ever delivers, a single line that has carried more spiritual generosity than perhaps any other:
+          In chapter 4 Krishna says he meets people on whatever road they take:
         </p>
 
                 <ShlokaCard
@@ -1136,13 +1132,13 @@ export default function KrishnaThreePathsPage() {
           iast="ye yathā māṃ prapadyante tāṃstathaiva bhajāmyaham | mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ ||"
           meaningLabel="Translation"
           meaning="As people approach me, so I respond to them. All people, in every way, follow my path."
-          insightLabel="The path adapts to the seeker"
-          insight="Krishna is saying: the destination does not change, but the door does. Approach with intellect, and you will be answered with insight. Approach with love, and you will be answered with presence. Approach with work, and the work itself will become your teacher. There is no wrong way in. There is only the way you actually arrive."
-          essence="The path you walk is the one that walks back to meet you."
+          insightLabel="The path adapts to the person"
+          insight="Krishna answers each person in the way they approach him. Someone who comes through thought meets him as insight; someone who comes through love meets him as presence; someone who comes through work finds the work teaching them. The second line adds that all people follow his path, in every way."
+          essence="As people approach Krishna, so he receives them."
         />
 
         <p>
-          And finally, in chapter 12, the great verse that some have read as a ranking and others as a sequence, but is best read as a description of where each path naturally settles:
+          And in chapter 12, a verse that some read as a ranking and others as a sequence:
         </p>
 
                 <ShlokaCard
@@ -1152,46 +1148,46 @@ export default function KrishnaThreePathsPage() {
           meaningLabel="Translation"
           meaning="Knowledge is better than mere practice; meditation is better than knowledge. Better than meditation is renouncing the fruits of action. From that renunciation, peace follows at once."
           insightLabel="All three paths in one verse"
-          insight="Notice what Krishna does. He moves from abhyasa (practice: Karma Yoga's discipline), to jnana (knowledge: the Jnani's insight), to dhyana (meditation: the inner one-pointedness all three paths develop), to karma-phala-tyaga (renouncing the fruit of action, which is itself the highest form of Karma Yoga, ripened by both Jnana and Bhakti). And the result is not progress; it is shanti anantaram — peace, immediately. The paths are not really competing. They are completing each other."
-          essence="Peace begins when you stop clinging to what your action produces. All three paths help you get there."
+          insight="Krishna moves from abhyasa (practice) to jnana (knowledge) to dhyana (meditation) to karma-phala-tyaga, giving up the fruit of action. The last step is karma yoga in its ripest form, and from it comes shanti anantaram: peace, at once."
+          essence="Giving up the fruit of action ranks above meditation, and peace follows at once."
         />
 
         <p className="pull-quote">
-          The path you can actually walk is more important than the path that sounds most impressive. Krishna&apos;s genius is to have laid out three real roads, and to have said, in his own voice, that he is at the end of every one.
+          A path you can walk is worth more than one that only sounds impressive. Krishna lays out three, and in 4.11 he says each one leads to him.
         </p>
 
         {/* ── MODERN MENTAL HEALTH ── */}
-        <h2 id="modern-mental-health">Three Paths, Three Modern Wounds</h2>
+        <h2 id="modern-mental-health">Three Paths, Three Kinds of Trouble</h2>
 
         <p>
-          The reason Krishna&apos;s three-path structure has survived three millennia is that it is psychologically accurate. Human beings are not uniform, and the things that go wrong inside us are also not uniform. Each of the three paths is a precise response to a recognizable form of modern suffering.
+          People differ, so what goes wrong in them differs too. Each path answers one kind of trouble.
         </p>
 
         <p>
-          <strong>Karma Yoga is the antidote to outcome-anxiety</strong>: the chronic, low-grade fever of needing the next thing to go well before you can breathe. This is the texture of most contemporary professional life. Krishna&apos;s prescription is not to care less; it is to care without holding the result hostage. ACT therapy calls this <em>values clarification</em> and <em>defusion from outcomes</em>. The Gita called it <em>nishkama karma</em> (desireless action) and asked you to fight, but without the fever.
+          <strong>Karma Yoga answers worry about outcomes</strong>: the low-grade fever of needing the next thing to go well. Krishna asks you to care about the work and leave the result to him. Later commentators call this <em>nishkama karma</em>, action without desire for its fruit, and 3.30 asks Arjuna to fight without the fever.
         </p>
 
         <p>
-          <strong>Jnana Yoga is the antidote to rumination</strong>: the looping, self-attacking thought that has become the signature wound of the over-educated, over-introspective modern psyche. The Jnana practice is to step out of the loop by recognizing the watcher. You are not the thought. The thought is something you notice. This is the foundation of metacognitive therapy, the foundation of mindfulness-based cognitive therapy, the foundation of every modern approach that has shown durable results in chronic depression. Krishna gave it the name <em>kshetrajna</em> (the knower of the field) and said clearly that this knowing frees you while life continues.
+          <strong>Jnana Yoga answers the looping mind</strong>: the habit of going over the same thoughts and attacking yourself with them. The jnana practice is to recognise the one who watches the thoughts. Krishna calls that watcher the <em>kshetrajna</em> (the knower of the field), and in 13.24 he says this knowing frees you while life goes on.
         </p>
 
         <p>
-          <strong>Bhakti Yoga is the antidote to disconnection</strong>: the loneliness epidemic, the sense of being unheld in the universe, the orphan-feeling of a culture that no longer has a shared sacred. Bhakti is the felt experience of being held. Attachment science now confirms what bhakti traditions always knew: that nervous systems regulate themselves in the presence of secure connection, and that this regulation is not optional. It is a biological requirement for sustained well-being. Krishna&apos;s offer of <em>yogakshema vahami aham</em> (&ldquo;I carry your welfare and security&rdquo;) is not poetry. It is, for those who can receive it, a form of co-regulation that the body responds to. (For a focused reading on what the Gita says about <a href="/blogs/bhagavad-gita-anxiety-mental-peace" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>anxiety and mental peace</a>, we have a separate piece.)
+          <strong>Bhakti Yoga answers loneliness</strong>: the sense of being on your own in the universe. Bhakti is the experience of being held. In 9.22 Krishna offers <em>yogakshema vahami aham</em> (&ldquo;I carry their welfare and security&rdquo;) to those who worship him with undivided attention. (For a focused reading on what the Gita says about <a href="/blogs/bhagavad-gita-anxiety-mental-peace" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>anxiety and mental peace</a>, we have a separate piece.)
         </p>
 
         <p>
-          The Gita does not say one of these wounds is more important. It says they are different wounds, in different people, and that the medicine has to fit. The mistake most spiritual seekers make, and most therapists make, and most teachers make, is to assume one answer for everyone. Krishna&apos;s answer is more honest: three answers, depending on who is asking.
+          The Gita does not rank these troubles. A common mistake, in religion and outside it, is to give everyone the same answer, and Krishna gives three, depending on who is asking.
         </p>
 
         {/* ── WHICH PATH IS YOURS ── */}
         <h2 id="which-path-is-yours">Which Path Is Yours?</h2>
 
         <p>
-          A useful diagnostic, drawn from how the Gita itself describes the temperaments: notice what your restlessness wants.
+          A rough guide: notice what your restlessness wants.
         </p>
 
         <p>
-          If your restlessness wants to <em>do</em>, if sitting still is the hardest thing, if your relief comes from solving something, building something, finishing something, your path likely begins with <strong>Karma Yoga</strong>. The discipline is not to do less. It is to keep doing, fully, while progressively letting go of the part of you that demands a particular result. The verse to live with is 2.47.
+          If your restlessness wants to <em>do</em>, if sitting still is the hardest thing, if your relief comes from solving something, building something, finishing something, your path likely begins with <strong>Karma Yoga</strong>. The discipline is to keep doing, fully, while letting go of the part of you that demands a particular result. The verse to live with is 2.47.
         </p>
 
         <p>
@@ -1199,26 +1195,11 @@ export default function KrishnaThreePathsPage() {
         </p>
 
         <p>
-          If your restlessness wants to <em>belong</em>, if you feel deeply, if connection is what makes you feel real, if you are most yourself when you are in love with something or someone, your path likely begins with <strong>Bhakti Yoga</strong>. The discipline is to refine that love until it lands on something that can actually hold it. The verse to live with is 9.22.
+          If your restlessness wants to <em>belong</em>, if you feel deeply, if connection is what makes you feel real, if you are most yourself when you are in love with something or someone, your path likely begins with <strong>Bhakti Yoga</strong>. The discipline is to refine that love until it rests on something that can hold it. The verse to live with is 9.22.
         </p>
 
         <p>
-          And then, as Krishna promises in 4.11, the path you walk will start to walk back to meet you. The Karma Yogi will, in time, find that their work has become contemplative. The Jnani will find that their clarity has become tender. The Bhakta will find that their love has become wise. The three paths converge, not because you forced them to, but because at the summit, the view from any side is the same.
-        </p>
-
-        {/* ── WISDOM APP CONNECTION ── */}
-        <h2 id="wisdom-app-three-paths">The Three Paths, Rebuilt for a Modern Practice</h2>
-
-        <p>
-          Everything above is theory until you do something with it. The Wisdom app exists because Krishna&apos;s three paths are too important to leave in the abstract, and because the modern reader rarely has a guru to ask which path is theirs.
-        </p>
-
-        <p>
-          Inside Wisdom, the three paths are not just an idea. They are the structure of the app. When you begin, you are placed on the path that fits your temperament: the Path of Action, the Path of Wisdom, or the Path of Devotion. Each path is a sequence of nodes: Stillness, Witness and Gyan Mastery on the Path of Wisdom; Trust, Devotion and Bhakti Mastery on the Path of Devotion; the corresponding discipline nodes on the Path of Action. Each node is a short daily practice, a verse from the Bhagavad Gita or a related scripture paired with a two-minute reflection, that moves you a little further along the road Krishna laid out.
-        </p>
-
-        <p>
-          You begin with the path that fits you. As you deepen, you can move between paths, because, as Krishna himself says in 7.17, the seeker who has gathered both wisdom and devotion is the one closest to him. The architecture of the app is not invented. It is the architecture of the Gita itself, made walkable.
+          Teachers in this tradition say the paths meet with time: work becomes contemplative, clarity becomes tender, and love becomes wise. The wise devotee of 7.17 is one picture of that meeting.
         </p>
 
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Krishna Three Paths"} />
@@ -1226,12 +1207,14 @@ export default function KrishnaThreePathsPage() {
         <h2>A Closing Thought</h2>
 
         <p>
-          The Gita does not end with chapter 18 because Krishna ran out of things to say. It ends because at some point, the seeker has to put the book down and walk. The three paths are not a menu to study; they are roads to walk. The road you choose matters less than the walking itself. Krishna&apos;s assurance, and the assurance of Tulsidas eight centuries later and of every teacher in this tradition, is the same: the destination is real, the paths to it are many, and the one who walks any of them with sincerity does not arrive alone.
+          The three paths are meant to be practised, and the Gita&apos;s promise for each is the same: Krishna receives the one who walks it (4.11) and carries what they cannot (9.22).
         </p>
 
         <p>
-          <em>Hoihi soi jo Rama rachi rakha.</em> Whatever will happen, has already been scripted. Your job is only to walk, and to choose the road on which the walking feels most like yourself.
+          Tulsidas gives the devotee&apos;s side of it in Shiva&apos;s words, <em>hoihi soi jo Rama rachi rakha</em>: what Rama has ordained will happen. The Gita pairs surrender with a full duty to act (3.19, 11.33).
         </p>
+
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected Tulsidas&apos;s date relative to the Gita, the description of 18.66 as Krishna&apos;s last instruction (introduced in 18.64), the chapter 13 citation (13.25, which lists meditation, Sankhya and karma yoga), the setting of Shiva&apos;s line in the Bal Kand, and removed unsupported claims about neuroscience and therapy; copy edited.</p>
 
         <h2 id="related-reading">Related Reading on the Three Paths</h2>
         <p>If you want to go deeper into any one of the three paths individually, the long-form chapter studies and topic guides below pick up where this overview leaves off.</p>
@@ -1246,11 +1229,11 @@ export default function KrishnaThreePathsPage() {
           </li>
           <li style={{ padding: '0.7rem 0', borderBottom: '1px solid var(--border)' }}>
             <a href="/blogs/bhagwat-geeta-chapter-12" style={{ color: 'var(--gold-light)', fontWeight: 600 }}>Bhagavad Gita Chapter 12, Bhakti Yoga, &ldquo;How a Devotee Actually Lives&rdquo;</a>
-            <span style={{ color: 'var(--text-dim)', fontSize: '0.92rem', display: 'block', marginTop: '0.25rem' }}>The shortest chapter, and one of the most practical. The four-step ladder for when meditation is too hard.</span>
+            <span style={{ color: 'var(--text-dim)', fontSize: '0.92rem', display: 'block', marginTop: '0.25rem' }}>A short, practical chapter. The four-step ladder for when meditation is too hard.</span>
           </li>
           <li style={{ padding: '0.7rem 0', borderBottom: '1px solid var(--border)' }}>
             <a href="/blogs/bhagwat-geeta-chapter-18" style={{ color: 'var(--gold-light)', fontWeight: 600 }}>Bhagavad Gita Chapter 18, Moksha Sannyasa Yoga</a>
-            <span style={{ color: 'var(--text-dim)', fontSize: '0.92rem', display: 'block', marginTop: '0.25rem' }}>The closing chapter, including 18.66, the Gita&apos;s final teaching on surrender.</span>
+            <span style={{ color: 'var(--text-dim)', fontSize: '0.92rem', display: 'block', marginTop: '0.25rem' }}>The closing chapter, including 18.66, Krishna&apos;s last instruction on surrender.</span>
           </li>
           <li style={{ padding: '0.7rem 0', borderBottom: '1px solid var(--border)' }}>
             <a href="/blogs/bhagavad-gita-karma-meaning" style={{ color: 'var(--gold-light)', fontWeight: 600 }}>What Karma Actually Means in the Bhagavad Gita</a>
@@ -1258,7 +1241,7 @@ export default function KrishnaThreePathsPage() {
           </li>
           <li style={{ padding: '0.7rem 0', borderBottom: '1px solid var(--border)' }}>
             <a href="/blogs/bhagavad-gita-anxiety-mental-peace" style={{ color: 'var(--gold-light)', fontWeight: 600 }}>What the Gita Says About Anxiety &amp; Mental Peace</a>
-            <span style={{ color: 'var(--text-dim)', fontSize: '0.92rem', display: 'block', marginTop: '0.25rem' }}>A focused reading for those approaching the Gita through the door of psychological suffering.</span>
+            <span style={{ color: 'var(--text-dim)', fontSize: '0.92rem', display: 'block', marginTop: '0.25rem' }}>A focused reading for those approaching the Gita through the door of anxiety and worry.</span>
           </li>
           <li style={{ padding: '0.7rem 0', borderBottom: '1px solid var(--border)' }}>
             <a href="/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health" style={{ color: 'var(--gold-light)', fontWeight: 600 }}>Beyond the Bhagavad Gita, 7 Lesser-Known Gitas on Inner Peace</a>
@@ -1285,42 +1268,42 @@ export default function KrishnaThreePathsPage() {
 
         <div className="faq-item">
           <strong>What are the three paths Krishna teaches in the Bhagavad Gita?</strong>
-          <p>Krishna lays out three converging paths: <em>Karma Yoga</em> (the path of selfless action); <em>Jnana Yoga</em> (the path of knowledge and self-inquiry); and <em>Bhakti Yoga</em> (the path of devotion and surrender). All three lead to the same supreme reality, but each is shaped for a different temperament. The doer, the thinker, and the lover each have their own road home.</p>
+          <p>Krishna lays out three converging paths: <em>Karma Yoga</em> (the path of selfless action); <em>Jnana Yoga</em> (the path of knowledge and self-inquiry); and <em>Bhakti Yoga</em> (the path of devotion and surrender). All three lead to the same supreme reality, but each is shaped for a different temperament. </p>
         </div>
 
         <div className="faq-item">
           <strong>Why does Krishna give three paths instead of one?</strong>
-          <p>Because human beings differ. Some are restless doers, some restless thinkers, some restless feelers. Krishna meets each personality where it is. In 4.11 he says directly: <em>in whatever way people approach me, in that way I respond to them</em>. The truth is one; the doors are many.</p>
+          <p>Because human beings differ. Some are restless doers, some restless thinkers, some restless feelers. Krishna meets each person where they are. In 4.11 he says: <em>in whatever way people approach me, in that way I respond to them</em>.</p>
         </div>
 
         <div className="faq-item">
           <strong>Which of the three paths is the highest?</strong>
-          <p>Krishna does not establish a flat hierarchy. In 12.12 he names a sequence (practice, knowledge, meditation, renunciation of fruit) and says peace follows immediately from that renunciation. In 7.17 he calls the <em>jnani-bhakta</em>, the wise lover, dearest. In 18.66 he calls surrender the final teaching. The paths complete each other; they do not compete.</p>
+          <p>Krishna does not establish a flat hierarchy. In 12.12 he names a sequence (practice, knowledge, meditation, renunciation of fruit) and says peace follows immediately from that renunciation. In 7.17 he calls the <em>jnani-bhakta</em>, the wise lover, dearest. In 18.64–66 he calls this teaching sarva-guhyatamam, the most hidden of all. The paths complement each other.</p>
         </div>
 
         <div className="faq-item">
           <strong>How does Tulsidas&apos;s &ldquo;karm pradhan&rdquo; verse relate to the Gita&apos;s Karma Yoga?</strong>
-          <p>Tulsidas writes <em>karam pradhan bisva kari rakha, jo jas karai so tas phalu chakha</em>: the world is governed by action; whoever does what, tastes the fruit accordingly. This is the law of karma in Awadhi. It is the same teaching Krishna gives in 2.47: action belongs to you and shapes you, even when the fruit does not. Tulsidas&apos;s couplet and Krishna&apos;s sutra are saying the same thing in different languages, eight centuries apart.</p>
+          <p>Tulsidas writes <em>karam pradhan bisva kari rakha, jo jas karai so tas phalu chakha</em>: the world is governed by action; whoever does what, tastes the fruit accordingly. This is the law of karma in Awadhi. Krishna builds on the same law in 2.47: the action is yours to do, and the fruit is not yours to claim.</p>
         </div>
 
         <div className="faq-item">
           <strong>What does &ldquo;hoihi soi jo Rama rachi rakha&rdquo; mean and how does it connect to surrender in the Gita?</strong>
-          <p>Tulsidas writes <em>hoihi soi jo rama rachi rakha, ko kari tarka badhavai sakha</em>: only that will happen which Rama has scripted; who can extend the branches of argument? This is the Ramcharitmanas form of Krishna&apos;s teaching in 11.33 (<em>they have already been killed by me; become only the instrument</em>) and in 18.66, <em>take refuge in me alone</em>. Argument ends; surrender begins. The same teaching, in two scriptures.</p>
+          <p>Tulsidas writes <em>hoihi soi jo rama rachi rakha, ko kari tarka badhavai sakha</em>: only that will happen which Rama has scripted; who can extend the branches of argument? Shiva says it after failing to persuade Sati, and then turns to Hari&apos;s name. Readers often compare it with 11.33 (<em>they have already been killed by me; become only the instrument</em>) and 18.66, <em>take refuge in me alone</em>.</p>
         </div>
 
         <div className="faq-item">
           <strong>How do the three paths connect to modern mental health?</strong>
-          <p>Karma Yoga maps onto value-driven action over outcome-anxiety, the central insight of Acceptance and Commitment Therapy. Jnana Yoga is the witness-perspective that breaks rumination, the foundation of metacognitive therapy and Buddhist mindfulness. Bhakti Yoga is surrender as a secure base, the experience of being held, which modern attachment science now confirms regulates the nervous system. Each path addresses a different modern wound.</p>
+          <p>Loosely. Karma Yoga&apos;s split between effort and outcome resembles the values-over-goals idea in Acceptance and Commitment Therapy. Jnana Yoga&apos;s watcher resembles the practice of noticing a thought as a thought. Bhakti offers the experience of being held. These are resemblances; the Gita&apos;s own aim is liberation (moksha).</p>
         </div>
 
         <div className="faq-item">
           <strong>How do I know which path is mine?</strong>
-          <p>Notice what your restlessness wants. If you cannot sit still and need to <em>do</em>, your path likely begins with action. If you cannot stop questioning and need to <em>understand</em>, your path begins with knowledge. If you feel deeply and need to be in <em>relationship</em>, your path begins with devotion. The path you naturally walk is the one that will carry you furthest. And, as Krishna says, the deeper you go, the more the other two will open from inside.</p>
+          <p>Notice what your restlessness wants. If you cannot sit still and need to <em>do</em>, your path likely begins with action. If you cannot stop questioning and need to <em>understand</em>, your path begins with knowledge. If you feel deeply and need to be in <em>relationship</em>, your path begins with devotion. As you go further, the other two tend to open up as well.</p>
         </div>
       </section>
 
       <footer>
-        <p>© 2026 Wisdom App. Three paths, one summit. Bhagavad Gita, tuned to your life.</p>
+        <p>© 2026 Wisdom App. Bhagavad Gita, tuned to your life.</p>
         <p><a href="https://wisdomquotes.in">Home</a> · <a href="https://wisdomquotes.in/blogs">Blog</a> · <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download</a></p>
       </footer>
 

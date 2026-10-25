@@ -365,7 +365,7 @@ export default async function VersePage({ params }: { params: Params }) {
       </nav>
 
       <header className="gv-hero-head">
-        <div className="gv-hero-eyebrow gv-rise" style={{ '--d': '0.06s' } as CSSProperties}>Sacred verse</div>
+        <div className="gv-hero-eyebrow gv-rise" style={{ '--d': '0.06s' } as CSSProperties}>The verse</div>
         <h1 className="gita-h1 gv-hero-h1 gv-rise" style={{ '--d': '0.12s' } as CSSProperties}>
           Bhagavad Gita {c}.{v}
           <span className="gv-hero-h1-sub" style={{ display: 'block', fontSize: '0.65em', fontWeight: 500, opacity: 0.75, marginTop: '0.35em' }}>
@@ -494,7 +494,7 @@ export default async function VersePage({ params }: { params: Params }) {
           {[
             verse.simpleMeaning   && { n: '01', label: 'What this verse means',       kicker: 'In plain words',   text: verse.simpleMeaning },
             verse.detailedMeaning && { n: '02', label: 'Context & commentary',         kicker: 'On the battlefield', text: verse.detailedMeaning },
-            verse.modernRelevance && { n: '03', label: 'Why this verse still matters', kicker: 'In your life',      text: verse.modernRelevance },
+            verse.modernRelevance && { n: '03', label: 'What it looks like today', kicker: 'In your life',      text: verse.modernRelevance },
           ].filter(Boolean).map((item) => {
             const { n, label, kicker, text } = item as { n: string; label: string; kicker: string; text: string }
             return (

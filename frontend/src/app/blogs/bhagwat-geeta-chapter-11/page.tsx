@@ -7,21 +7,21 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita 11.32 (Oppenheimer) & Chapter 11: Cosmic Form",
-  description: "11.32, \"I am Time, the destroyer of worlds\", is the verse Oppenheimer recalled at Trinity. Read it and all 55 verses of Chapter 11 in Hindi and English.",
+  description: "11.32, \"I am Time, the destroyer of worlds\", is the line Oppenheimer said came to mind at the Trinity test. Read it and all 55 verses of Chapter 11 in Hindi and English.",
   keywords: "bhagwat geeta chapter 11, bhagavad gita vishwarupa darshana yoga, bhagwat geeta adhyay 11, kaloasmi loka kshaya krit pravriddho, thousand suns gita, cosmic form bhagavad gita, I am time the destroyer of worlds, nimitta matram bhava, Vishwarupa Darshana Yoga meaning, Bhagavad Gita 11.12 thousand suns, Bhagavad Gita 11.32 kalo asmi loka kshaya krit, I am Time the destroyer of worlds meaning, Bhagavad Gita 11.33 nimitta matram bhava, Krishna cosmic form Bhagavad Gita, Oppenheimer Bhagavad Gita quote, Oppenheimer bhagavad gita verse, I am time the destroyer of worlds full context",
   openGraph: {
     title: "Bhagavad Gita 11.32 (Oppenheimer) & Chapter 11: Cosmic Form",
-    description: "11.32, \"I am Time, the destroyer of worlds\", is the verse Oppenheimer recalled at Trinity. Read it and all 55 verses of Chapter 11 in Hindi and English.",
+    description: "11.32, \"I am Time, the destroyer of worlds\", is the line Oppenheimer said came to mind at the Trinity test. Read it and all 55 verses of Chapter 11 in Hindi and English.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-11",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter11.webp", width: 1200, height: 675, alt: "The cosmic form revealed, a vast, blinding vision that exceeds the human eye. Chapter 11 of the Bhagavad Gita, Vishwarupa Darshana Yoga, contains the most famous theophany in any scripture." }],
+    images: [{ url: "https://wisdomquotes.in/assets/chapter11.webp", width: 1200, height: 675, alt: "The cosmic form revealed, a vast, blinding vision that exceeds the human eye. Chapter 11 of the Bhagavad Gita, Vishwarupa Darshana Yoga, shows Krishna's cosmic form." }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita 11.32 (Oppenheimer) & Chapter 11: Cosmic Form",
-    description: "11.32, \"I am Time, the destroyer of worlds\", is the verse Oppenheimer recalled at Trinity. Read it and all 55 verses of Chapter 11 in Hindi and English.",
+    description: "11.32, \"I am Time, the destroyer of worlds\", is the line Oppenheimer said came to mind at the Trinity test. Read it and all 55 verses of Chapter 11 in Hindi and English.",
     images: ["https://wisdomquotes.in/assets/chapter11.webp"],
   },
   alternates: {
@@ -369,7 +369,7 @@ const schemas = [
         "name": "What is Bhagavad Gita Chapter 11 about?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Chapter 11, called Vishwarupa Darshana Yoga (the Yoga of the Vision of the Cosmic Form), is the dramatic climax of the Bhagavad Gita. Arjuna asks to see Krishna's universal form. Krishna grants him divine sight and shows him the cosmic body — a vision of infinite arms, infinite mouths, beings being consumed by time. The chapter contains the famous 'thousand suns' verse (11.12), the line 'I am Time, the destroyer of worlds' (11.32), and the closing teaching that only undivided devotion can reach this vision (11.53-55)."
+          "text": "Chapter 11, called Vishwarupa Darshana Yoga (the Yoga of the Vision of the Cosmic Form), is the dramatic high point of the Bhagavad Gita. Arjuna asks to see Krishna's universal form. Krishna grants him divine sight and shows him the cosmic body — a vision of infinite arms, infinite mouths, beings being consumed by time. The chapter contains the famous 'thousand suns' verse (11.12), the line 'I am Time, the destroyer of worlds' (11.32), and the closing teaching that only undivided devotion can reach this vision (11.53-55)."
         }
       },
       {
@@ -377,7 +377,7 @@ const schemas = [
         "name": "What is the meaning of Bhagavad Gita 11.32?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 11.32 — kālo'smi loka-kṣaya-kṛt pravṛddhaḥ — translates as 'I am Time, grown mighty, the destroyer of worlds.' Krishna identifies himself as Time itself, the most absolute reaping force. The verse goes on to say that even without Arjuna, the warriors arrayed against him will not survive. The teaching, beyond the war context, is that whatever you fear losing is already loosening from your grip, not because of failure, but because Time is what Time is."
+          "text": "Verse 11.32 — kālo'smi loka-kṣaya-kṛt pravṛddhaḥ — translates as 'I am Time, grown mighty, the destroyer of worlds.' Krishna identifies himself as Time itself. The verse goes on to say that even without Arjuna, the warriors arrayed against him will not survive. Beyond the war, the verse says that whatever you fear losing is already loosening, because everything in time ends. Oppenheimer said in 1965 that this line came to him at the Trinity test."
         }
       },
       {
@@ -385,7 +385,7 @@ const schemas = [
         "name": "What is the 'thousand suns' verse in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 11.12 says, 'If a thousand suns were to rise at once in the sky, their light might begin to compare with the radiance of that Great Self.' The verse is Arjuna's attempt to describe the cosmic form and his admission that even the maximum comparison ordinary imagination can produce does not reach. The verse is famously known outside the tradition because Robert Oppenheimer reached for it when describing the first atomic bomb detonation."
+          "text": "Verse 11.12 says, 'If a thousand suns were to rise at once in the sky, their light might begin to compare with the radiance of that Great Self.' Sanjaya speaks it, describing the cosmic form, and admits that even this comparison might only begin to match it. According to Robert Jungk's book Brighter than a Thousand Suns, Oppenheimer thought of this verse at the Trinity test in 1945."
         }
       },
       {
@@ -393,7 +393,7 @@ const schemas = [
         "name": "What does 'nimitta matram bhava' mean?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In verse 11.33, Krishna tells Arjuna, 'nimitta-mātraṃ bhava savya-sācin' — 'become only the instrument, Arjuna.' The teaching is that Arjuna is not the originator of what is going to unfold on the battlefield. The war is already decided by a larger order. His task is to be a clean instrument (present, accountable, attentive) through which the unfolding moves. The verse extends beyond the war context to every difficult action: the work is yours; the outcome was never yours to own."
+          "text": "In verse 11.33, Krishna tells Arjuna, 'nimitta-mātraṃ bhava savya-sācin' — 'become only the instrument, Arjuna.' What unfolds on the battlefield was set in motion before Arjuna acts. Krishna says the warriors are already slain by him. Arjuna's task is to be a clean instrument: present, accountable, attentive. Read beyond the war: do the work, and leave the outcome to the larger order."
         }
       },
       {
@@ -401,7 +401,7 @@ const schemas = [
         "name": "What is the universal form (Vishwarupa) in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The vishwarupa or universal form is Krishna's cosmic body: the form in which the entire universe is contained. Arjuna sees it in Chapter 11 after asking for direct vision. The form has infinite arms, infinite eyes, mouths like blazing fire, and contains all beings within it. It is the Gita's most overwhelming theophany. The form cannot be perceived with ordinary eyes. Krishna gives Arjuna divine sight specifically to behold it."
+          "text": "The vishwarupa or universal form is Krishna's cosmic body: the form in which the entire universe is contained. Arjuna sees it in Chapter 11 after asking for direct vision. The form has infinite arms, infinite eyes, mouths like blazing fire, and contains all beings within it. It cannot be seen with ordinary eyes, so Krishna gives Arjuna divine sight (11.8)."
         }
       },
       {
@@ -409,7 +409,7 @@ const schemas = [
         "name": "Why did Arjuna apologise to Krishna in Chapter 11?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "After the cosmic vision, in verses 11.41-44, Arjuna apologises for having treated Krishna with casual familiarity — calling him by name, joking with him, eating with him — without realising who he truly was. He asks Krishna to forgive him as a father forgives a son, as a friend forgives a friend, as a lover forgives a beloved. The teaching is that real reverence does not destroy relationship; the friendship was always real, and the cosmic vision only enlarged what it had been holding all along."
+          "text": "After the cosmic vision, in verses 11.41-44, Arjuna apologises for having treated Krishna with casual familiarity — calling him by name, joking with him, eating with him — without realising who he truly was. He asks Krishna to forgive him as a father forgives a son, as a friend forgives a friend, as a lover forgives a beloved. The friendship survives the reverence: Krishna returns to his human form (11.51) and the two go on as before."
         }
       }
     ]
@@ -421,11 +421,11 @@ const schemas = [
     "text": "If a thousand suns were to rise at once in the sky, their light might begin to compare with the radiance of that Great Self.",
     "spokenByCharacter": {
       "@type": "Person",
-      "name": "Arjuna"
+      "name": "Sanjaya"
     },
     "creator": {
       "@type": "Person",
-      "name": "Arjuna"
+      "name": "Sanjaya"
     },
     "isPartOf": {
       "@type": "Book",
@@ -583,7 +583,7 @@ export default function ChapterPage11() {
             <em>Vishwarupa Darshana Yoga</em>
           </h1>
           <p className="article-subtitle">
-            Arjuna asks to see. He gets what he asked for. A thousand suns. Mouths like fire. Time, the destroyer of worlds. And the chapter's hardest teaching: the truly devastating thing is not what is ending, it is that you were never holding it in the first place.
+            Arjuna asks to see Krishna&apos;s cosmic form and gets what he asked for: a light like a thousand suns, mouths like fire, and Krishna saying &ldquo;I am Time, destroyer of worlds.&rdquo; Then he asks for the familiar friend back.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -594,7 +594,7 @@ export default function ChapterPage11() {
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 11 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -605,7 +605,7 @@ export default function ChapterPage11() {
           <figure className="chapter-image">
             <img
               src="/assets/chapter11.webp"
-              alt="The cosmic form revealed — a vast, blinding vision that exceeds the human eye. Chapter 11 of the Bhagavad Gita, Vishwarupa Darshana Yoga, contains the most famous theophany in any scripture."
+              alt="The cosmic form revealed — a vast, blinding vision that exceeds the human eye. Chapter 11 of the Bhagavad Gita, Vishwarupa Darshana Yoga, shows Krishna's cosmic form."
               width="1200"
               height="675"
               loading="eager"
@@ -613,11 +613,11 @@ export default function ChapterPage11() {
           </figure>
 
         <p className="lead">
-          Chapter 11 is the climax of the Gita. After ten chapters of teaching, after the catalogue of manifestations in Chapter 10 (among rivers I am the Ganga, among letters I am A): Arjuna does what readers across two thousand years have wanted to do. He asks to see. Not as analogy. Not as inference. As direct vision. He says: I believe everything you have said, but show me. <em>Draṣṭum icchāmi te rūpam aiśvaram</em>: I want to see your sovereign form.
+          Chapter 11 is the climax of the Gita. After ten chapters of teaching, after the catalogue of manifestations in Chapter 10 (among rivers I am the Ganga, among letters I am A): Arjuna does what many readers have wanted to do: he asks to see it with his own eyes. He says: I believe everything you have said, but show me. <em>Draṣṭum icchāmi te rūpam aiśvaram</em>: I want to see your sovereign form.
         </p>
 
         <p>
-          Krishna agrees, gives Arjuna a divine eye (because ordinary eyes are not equipped for this), and then the chapter delivers what is probably the most overwhelming passage in any scripture. A thousand suns blazing at once. Infinite mouths. Bodies of beings rushing into those mouths and being destroyed. The narrator, Sanjaya, has to break in to describe it. Arjuna himself has lost the capacity to speak. And then, at the centre of the vision, comes a line that has echoed beyond the chapter, beyond the book, into the conscience of the twentieth century: <em>kālo'smi loka-kṣaya-kṛt pravṛddhaḥ</em>. I am Time. The great destroyer of worlds.
+          Krishna agrees and gives Arjuna a divine eye, since ordinary eyes cannot take this in (11.8). Sanjaya, the narrator, describes the form first (11.9–14): a light like a thousand suns, a universe gathered in one body. Then Arjuna describes it himself, and what he sees includes the warriors of both armies rushing into blazing mouths. At the centre of the vision Krishna says <em>kālo'smi loka-kṣaya-kṛt pravṛddhaḥ</em>: I am Time, grown mighty, the destroyer of worlds (11.32).
         </p>
 
         <nav className="toc" aria-label="Table of contents">
@@ -648,11 +648,11 @@ export default function ChapterPage11() {
         <h2 id="ask-to-see">Arjuna Asks to See, And What It Means to Ask</h2>
 
         <p>
-          Chapter 11 begins with one of the most psychologically honest moments in the Gita. Arjuna says: I believe everything you have told me. Every word is true. <em>And yet I want to see</em>. There is no contradiction in this. It is exactly how belief in something enormous actually works: you can hold the proposition and still need a direct encounter to make it real for you. The Gita does not treat Arjuna's request as a failure of faith. It treats it as the natural next step of faith.
+          Chapter 11 opens with an honest request. Arjuna says: it is as you have described yourself. <em>And yet I want to see</em> (11.3). Belief in something enormous often works this way: you hold the proposition and still want to meet it directly. Krishna does not treat the request as a failure of faith; he grants it.
         </p>
 
         <p>
-          What is also remarkable: Arjuna asks softly. <em>If you think I am capable of seeing it, then show me.</em> The asker is not demanding. He recognizes that the seeing may not be in his control, that the asking itself is a kind of surrender. This is what makes the request work. The Gita does not give cosmic vision to anyone who insists. It gives it to one who has acknowledged that the seeing is a gift, not an entitlement.
+          Arjuna also asks softly: <em>if you think I am capable of seeing it, then show me</em> (11.4). He leaves the decision with Krishna, and Krishna later says the vision came by his grace (11.47).
         </p>
 
                 <ShlokaCard
@@ -660,7 +660,7 @@ export default function ChapterPage11() {
           speaker="Arjuna"
           sanskrit="एवमेतद्यथात्थ त्वमात्मानं परमेश्वर । द्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम ॥"
           iast="evam etad yathāttha tvam ātmānaṃ parameśvara | draṣṭum icchāmi te rūpam aiśvaraṃ puruṣottama ||"
-          essence="Belief becomes complete only when it wants to see."
+          essence="It is as you say, Supreme Lord; still, I want to see your sovereign form."
         />
 
         {/* DIVIDER */}
@@ -675,22 +675,22 @@ export default function ChapterPage11() {
         <h2 id="thousand-suns">If a Thousand Suns Rose at Once</h2>
 
         <p>
-          Krishna gives Arjuna the divine eye and reveals the cosmic form. Arjuna immediately reaches for a comparison, and the comparison breaks. He says: if a thousand suns rose in the sky at the same moment, their light might begin to approach the radiance of this Great Being. The point of the verse is not the number. The point is the failure of measurement itself. Even the maximum the imagination can stretch to does not reach. The vision has exceeded scale.
+          Krishna gives Arjuna the divine eye and reveals the cosmic form. Sanjaya, narrating for the blind king Dhritarashtra, reaches for a comparison: if a thousand suns rose in the sky at the same moment, their light might begin to approach the radiance of this Great Being. The number matters less than the admission: even this comparison only &ldquo;might&rdquo; match it.
         </p>
 
         <p>
-          This is one of the most cited verses in the Gita, partly because Robert Oppenheimer reached for it when he watched the first atomic bomb detonate. The instinct was correct. When ordinary language fails, when the event you are witnessing has overflowed every comparison, Sanskrit's reach for a thousand suns has a precision that ordinary English does not. The verse names the experience of confronting something so large that the act of seeing it changes you. Not just intellectually. Existentially.
+          The verse is widely quoted in English partly because of Robert Oppenheimer. According to Robert Jungk&apos;s book <em>Brighter than a Thousand Suns</em>, this verse came to Oppenheimer&apos;s mind at the Trinity test in July 1945. The other line he is known for, &ldquo;Now I am become Death, the destroyer of worlds,&rdquo; is from 11.32, discussed below.
         </p>
 
                 <ShlokaCard
           verseRef="Bhagavad Gita 11.12"
-          speaker="Arjuna"
+          speaker="Sanjaya"
           sanskrit="दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता । यदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः ॥"
           iast="divi sūrya-sahasrasya bhaved yugapad-utthitā | yadi bhāḥ sadṛśī sā syād bhāsas tasya mahātmanaḥ ||"
           meaning="If a thousand suns were to rise at once in the sky, their light might begin to compare with the radiance of that Great Self."
-          insightLabel="Why this verse keeps being quoted"
-          insight="Comparison fails. The verse names that failure with the most generous comparison ordinary imagination can produce, and admits even that does not reach. The Gita is teaching, through Arjuna's mouth, what to do when language runs out. You name the failure. The naming itself is a kind of accuracy."
-          essence="Even the brightest familiar light cannot measure the cosmic form's radiance."
+          insightLabel="A comparison that falls short"
+          insight="Sanjaya reaches for the biggest light he can imagine and still only says it might compare. When language runs out, the verse names the shortfall instead of hiding it."
+          essence="If a thousand suns rose at once in the sky, that might match the Great Self's radiance."
         />
 
         <div className="pull-quote">
@@ -712,11 +712,11 @@ export default function ChapterPage11() {
         <h2 id="overwhelmed">When the Vision Exceeds the One Who Asked For It</h2>
 
         <p>
-          What follows is sustained overwhelm. Arjuna sees infinite arms, infinite mouths, the gods themselves bowing in awe, the cosmos itself trembling. By verse 11.19, Arjuna is no longer describing what he sees as a calm observer. He is being undone by it. He says: I see you scorching this world with your own radiance. By 11.24, he confesses, I cannot find composure. I have no peace. The vision he asked for has obliterated the asker.
+          What follows is overwhelming. Arjuna sees countless arms and mouths, gods bowing in fear, the three worlds trembling (11.20). By verse 11.19 he is no longer a calm observer. He says: I see you scorching this world with your own radiance. By 11.24, he confesses, I cannot find composure. I have no peace. The vision he asked for has knocked him off his feet.
         </p>
 
         <p>
-          This is the Gita's honesty about religious experience. The encounter with the absolute is not pleasant. It is not the soft comfort that contemporary spirituality often promises. It is the meeting of finite consciousness with infinite reality, and finite consciousness does not survive the meeting intact. Arjuna does not collapse into bliss. He collapses into terror, then into reverence. The chapter is teaching that the highest experience is not the most pleasant one, and that the difference matters.
+          The Gita is honest here about religious experience. Arjuna&apos;s encounter is frightening, far from the soft comfort contemporary spirituality often promises. He moves from wonder (11.14) to terror (11.24–25) to reverence (11.36–40).
         </p>
 
                 <ShlokaCard
@@ -725,14 +725,14 @@ export default function ChapterPage11() {
           sanskrit="अनादिमध्यान्तमनन्तवीर्यमनन्तबाहुं शशिसूर्यनेत्रम् । पश्यामि त्वां दीप्तहुताशवक्त्रंस्वतेजसा विश्वमिदं तपन्तम् ॥"
           iast="anādi-madhyāntam ananta-vīryam ananta-bāhuṃ śaśi-sūrya-netram | paśyāmi tvāṃ dīpta-hutāśa-vaktraṃ sva-tejasā viśvam idaṃ tapantam ||"
           meaning="I see you, without beginning, middle, or end, of infinite power, with infinite arms, eyes like sun and moon, mouths like blazing fire, scorching this entire world with your own radiance."
-          insightLabel="The vision exceeds the seer"
-          insight="The verse uses negations to describe what positive language cannot, no beginning, no middle, no end. Each negation widens what cannot be held. By the end of the verse, the seer is being scorched by what he is seeing. The vision is not gentle. The vision is the truth, and the truth is more than a human eye was meant to hold all at once."
-          essence="What overwhelms the mind can also dissolve its resistance."
+          insightLabel="Without beginning, middle or end"
+          insight="The verse uses negations, no beginning, no middle, no end, where positive description fails. By its end the world is being scorched by the radiance Arjuna is looking at."
+          essence="Without beginning, middle or end, sun and moon your eyes, you scorch the world with your radiance."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>Why the chapter does not feel comforting:</strong> Because comfort was never the point. Chapter 11 is not selling tranquility. It is showing Arjuna (and through Arjuna, every reader who has wanted direct contact with the absolute) what direct contact actually feels like. It is not bliss first. It is dismantling first. The bliss comes later, on the other side of the dismantling, if you survive it.
+            <strong>Why the chapter does not feel comforting:</strong> Chapter 11 shows Arjuna, and any reader who has wanted direct contact with the absolute, what that contact felt like for him. The calm comes later, when Krishna takes his gentle form again (11.50–51).
           </p>
         </div>
 
@@ -745,14 +745,14 @@ export default function ChapterPage11() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="time">I Am Time, the Sentence That Has Outlived Its Chapter</h2>
+        <h2 id="time">I Am Time, the Destroyer of Worlds</h2>
 
         <p>
-          Then comes the line. Arjuna asks who this overwhelming form is, and Krishna's reply is one of the most quoted sentences in any sacred text. <em>Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ</em>. I am Time, grown great, the destroyer of worlds. The verse continues: even without you, all these warriors arranged in hostile ranks will not survive. The war is already decided. The destroying force is not Krishna in any local sense. It is Time: the most patient and most absolute reaper there is.
+          Arjuna asks who this terrible form is (11.31), and Krishna answers. <em>Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ</em>. I am Time, grown great, the destroyer of worlds. The verse continues: even without you, all these warriors arranged in hostile ranks will not survive. The war is already decided, and the destroyer Krishna names is Time. In a 1965 television documentary, Oppenheimer said this line came to his mind at the Trinity test, in the form &ldquo;Now I am become Death, the destroyer of worlds.&rdquo;
         </p>
 
         <p>
-          Read the verse outside of the war context, and it widens. The relationship is already changing. The job is already ending. The body is already aging. Whatever you are gripping is already loosening, not because you are doing anything wrong but because Time is what Time is. The verse is unsparing. But it is also, paradoxically, freeing. The thing you fear losing is not yours to keep. Knowing this is not despair. It is accuracy, and accuracy is the precondition for clean action.
+          Read outside the war, the verse widens: whatever you are gripping is already loosening, because everything that begins in time ends in it. The verse is unsparing. Some readers also find it freeing, because what you fear losing was never yours to keep, and seeing that clearly makes it easier to act.
         </p>
 
                 <ShlokaCard
@@ -761,9 +761,9 @@ export default function ChapterPage11() {
           sanskrit="श्रीभगवानुवाच कालोऽस्मि लोकक्षयकृत्प्रवृद्धोलोकान्समाहर्तुमिह प्रवृत्तः । ऋतेऽपि त्वां न भविष्यन्ति सर्वेयेऽवस्थिताः प्रत्यनीकेषु योधाः ॥"
           iast="śrī bhagavān uvāca | kālo'smi loka-kṣaya-kṛt pravṛddho lokān samāhartum iha pravṛttaḥ | ṛte'pi tvāṃ na bhaviṣyanti sarve ye'vasthitāḥ pratyanīkeṣu yodhāḥ ||"
           meaning="The Blessed One said: I am Time, grown mighty, destroyer of worlds, here to consume beings. Even without you, none of these warriors arrayed against you will survive."
-          insightLabel="Why this verse will not let go of readers"
-          insight="The truthfulness is the reason. Time is the one fact every human being eventually meets, and no metaphysics can be honest without naming it. The Gita names it here, in the loudest possible way, and uses the naming to do something therapeutic, to remove the illusion that any of us are holding the world together by gripping it."
-          essence="What is ending was never in your hands to preserve."
+          insightLabel="Naming Time"
+          insight="Every person meets time eventually. Krishna names it here, at full volume, and uses it to tell Arjuna that the outcome of the battle does not rest on his grip."
+          essence="I am Time, grown mighty, destroyer of worlds; even without you, these warriors will not survive."
         />
 
         <div className="pull-quote">
@@ -785,11 +785,11 @@ export default function ChapterPage11() {
         <h2 id="instrument">Nimitta-matram Bhava, Become the Instrument</h2>
 
         <p>
-          If 11.32 is the chapter's hardest verse, 11.33 is its most practical. Krishna says: therefore, rise. Win fame. Conquer your enemies. Enjoy a flourishing kingdom. <em>They have already been slain by me. Become only the instrument, Arjuna.</em> The Sanskrit is <em>nimitta-mātraṃ bhava savya-sācin</em>: be only the instrument.
+          Verse 11.33 turns the vision into an instruction. Krishna says: therefore rise, win fame, conquer your enemies and enjoy a flourishing kingdom. <em>They have already been slain by me. Become only the instrument, Arjuna.</em> The Sanskrit is <em>nimitta-mātraṃ bhava savya-sācin</em>: be only the instrument.
         </p>
 
         <p>
-          Read this verse outside the immediate war context, and it becomes a working principle for every difficult act. You are not the originator of what is going to happen. You are not the final cause. You are the instrument, present, accountable, attentive, through which a larger pattern moves. This is one of the Gita's most freeing teachings, because it dissolves the most exhausting illusion in adult life: the illusion that you are personally responsible for outcomes you do not control. The work is still yours to do. The outcome was never yours to own.
+          Read this verse outside the immediate war context, and it becomes a working principle for every difficult act. You are the instrument, present, accountable, attentive, through which a larger pattern moves. The verse lifts a heavy assumption: that you are personally responsible for outcomes you do not control. The work is still yours to do.
         </p>
 
                 <ShlokaCard
@@ -798,9 +798,9 @@ export default function ChapterPage11() {
           sanskrit="तस्मात्त्वमुत्तिष्ठ यशो लभस्वजित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम् । मयैवैते निहताः पूर्वमेवनिमित्तमात्रं भव सव्यसाचिन् ॥"
           iast="tasmāt tvam uttiṣṭha yaśo labhasva jitvā śatrūn bhuṅkṣva rājyaṃ samṛddham | mayaivaite nihatāḥ pūrvam eva nimitta-mātraṃ bhava savya-sācin ||"
           meaning="Therefore, rise. Win fame. Conquer the foes and enjoy a flourishing kingdom. They have already been slain by me. Become only the instrument, Arjuna."
-          insightLabel="The most freeing sentence in the chapter"
-          insight="Nimitta-mātraṃ bhava: be only the instrument. This is not a small responsibility. It is, properly understood, almost all the responsibility you can actually carry. The work (done cleanly, attentively, accountably) is yours. The outcome belongs to the larger pattern. Holding both ends of that distinction, at the same time, is the whole spiritual life condensed."
-          essence="Act fully, but let the larger order carry the result."
+          insightLabel="Be only the instrument"
+          insight="Nimitta-mātraṃ bhava: be only the instrument. That still leaves Arjuna real responsibility: the work, done cleanly and attentively, is his. The outcome belongs to the larger pattern, and he has to hold both at once."
+          essence="So rise and win glory; they are already slain by me; be only the instrument, Arjuna."
         />
 
         {/* DIVIDER */}
@@ -819,7 +819,7 @@ export default function ChapterPage11() {
         </p>
 
         <p>
-          The honesty here is unusual in spiritual literature. Most religious texts establish the supremacy of the Divine and stop there. The Gita lets Arjuna feel embarrassed about the prior familiarity. Then it does something even more important, it makes clear that the familiarity was not wrong. Krishna will, by the end of the chapter, take back his cosmic form and reappear as the human friend. The vision does not replace the friendship. It enlarges what the friendship has always contained.
+          The Gita lets Arjuna feel embarrassed about the old familiarity, and then restores it. Krishna will, by the end of the chapter, take back his cosmic form and reappear as the human friend. The vision enlarges the friendship rather than replacing it.
         </p>
 
                 <ShlokaCard
@@ -828,14 +828,14 @@ export default function ChapterPage11() {
           sanskrit="तस्मात्प्रणम्य प्रणिधाय कायंप्रसादये त्वामहमीशमीड्यम् । पितेव पुत्रस्य सखेव सख्युःप्रियः प्रियायार्हसि देव सोढुम् ॥"
           iast="tasmāt praṇamya praṇidhāya kāyaṃ prasādaye tvām aham īśam īḍyam | piteva putrasya sakheva sakhyuḥ priyaḥ priyāyārhasi deva soḍhum ||"
           meaning="Therefore, bowing my body down, I seek to please you, the worthy Lord. As a father forgives a son, as a friend forgives a friend, as a lover the beloved, Lord, forgive me."
-          insightLabel="Real reverence does not erase relationship"
-          insight="The three analogies Arjuna reaches for (father, friend, lover) are all intimate. The verse does not say now that I have seen who you really are, I will treat you with distance. It says, please forgive me as someone close to me would forgive me. The cosmic vision does not destroy the closeness. The closeness was always real."
-          essence="True reverence asks forgiveness without excuses."
+          insightLabel="Three close relationships"
+          insight="The three analogies Arjuna reaches for (father, friend, lover) are all intimate. Having seen who Krishna is, Arjuna asks to be forgiven the way someone close would forgive him."
+          essence="Bowing low, I ask your grace: bear with me as a father with a son, friend with friend, lover with beloved."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>What the apology models for any reader:</strong> When you have done something that, in hindsight, looks worse than it felt at the time, the move is the same. Bow. Acknowledge. Ask forgiveness without manufacturing reasons. The Gita rewards this exact posture with restoration. Krishna does not punish Arjuna's prior familiarity. He returns to it.
+            <strong>What the apology models for any reader:</strong> When something you did looks worse in hindsight than it felt at the time, the move is the same: acknowledge it and ask forgiveness without inventing reasons. In the chapter, that leads to restoration. Krishna returns to the old familiarity instead of punishing it.
           </p>
         </div>
 
@@ -848,14 +848,14 @@ export default function ChapterPage11() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="devotion">The Final, Gentler Reveal: Only Devotion Sees This</h2>
+        <h2 id="devotion">The Close: Only Devotion Sees This</h2>
 
         <p>
-          The chapter ends with a quieter, almost confessional teaching. Krishna says: this form, what you have just seen, cannot be reached by study of the Vedas, by austerity, by charity, or by ritual. It can be reached only by undivided devotion. The verse is, in some ways, a deflation of every transactional path the tradition had offered before. Knowledge alone does not earn this. Discipline alone does not earn this. Generosity alone does not earn this. Only love, undivided, makes the seeing possible.
+          The chapter ends on a gentler note. Krishna says: this form, what you have just seen, cannot be reached by study of the Vedas, by austerity, by charity, or by ritual. It can be reached only by undivided devotion. Study, discipline and generosity, the paths that earn merit, do not earn this vision; only undivided love does (11.54).
         </p>
 
         <p>
-          And then comes the verse that ends the chapter, and ends, in some sense, the central teaching of the entire Gita. <em>The one who works for me, takes me as the supreme, is devoted to me, free from attachment, without hatred for any being: that one comes to me.</em> That is the formula. Work, oriented toward the Divine. Devotion. Non-attachment to outcomes. Non-hatred toward beings. Four ingredients, simple to list, hard to hold together, but together they are the complete recipe. Everything the Gita has been teaching, finally, reduces to this verse.
+          The chapter ends with 11.55. <em>The one who works for me, takes me as the supreme, is devoted to me, free from attachment, without hatred for any being: that one comes to me.</em> That makes five: work done for Krishna, holding him as the highest, devotion, no attachment, and no hostility toward any being.
         </p>
 
                 <ShlokaCard
@@ -864,9 +864,9 @@ export default function ChapterPage11() {
           sanskrit="नाहं वेदैर्न तपसा न दानेन न चेज्यया । शक्य एवंविधो द्रष्टुं दृष्टवानसि मां यथा ॥"
           iast="nāhaṃ vedair na tapasā na dānena na cejyayā | śakya evaṃ-vidho draṣṭuṃ dṛṣṭavān asi māṃ yathā ||"
           meaning="Not by the Vedas, not by austerity, not by charity, not by ritual sacrifice can I be seen in this form as you have just seen me."
-          insightLabel="The Gita retires the merit economy"
-          insight="Every accumulative path, study, austerity, charity, ritual, is here explicitly named and explicitly insufficient. This is not the Gita rejecting those practices. It is the Gita placing them in their proper rank. They prepare the ground. They do not, by themselves, produce the vision. Only one thing produces the vision, and Krishna names it in the next verse."
-          essence="The deepest vision comes through devotion, not mere accomplishment."
+          insightLabel="Merit has limits"
+          insight="Study, austerity, charity and ritual are each named and each called insufficient for this vision. The Gita does not reject them elsewhere; here it ranks them below devotion, which Krishna names in the next verse."
+          essence="Not by Vedas, austerity, charity or sacrifice can I be seen as you have seen me."
         />
 
                 <ShlokaCard
@@ -875,14 +875,14 @@ export default function ChapterPage11() {
           sanskrit="मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः । निर्वैरः सर्वभूतेषु यः स मामेति पाण्डव ॥"
           iast="mat-karma-kṛn mat-paramo mad-bhaktaḥ saṅga-varjitaḥ | nirvairaḥ sarva-bhūteṣu yaḥ sa mām eti pāṇḍava ||"
           meaning="The one who works for me, takes me as the supreme, is devoted to me, is free from attachment, and bears no hostility toward any being, that one comes to me, Pandava."
-          insightLabel="The five-part formula"
-          insight="Work for the Divine. Hold the Divine as supreme. Be devoted. Drop attachment. Hold no enmity. The five elements form a complete spiritual program. Notice that they are not exotic, they are five orientations of an ordinary working life. The Gita's most radical claim, at the end of its most overwhelming chapter, is that the path is not complicated. It is just rare."
-          essence="Devotion matures into freedom when attachment and hostility are gone."
+          insightLabel="Five conditions"
+          insight="Work for the Divine, hold the Divine as highest, be devoted, drop attachment, and bear no enmity toward any being. None of the five is exotic; each can be lived inside an ordinary working life."
+          essence="Whoever works for me, holds me highest, loves me, without attachment or enmity, comes to me."
         />
 
         <div className="pull-quote">
           <blockquote>
-            "Work for me. Take me as supreme. Be devoted. Drop attachment. Hold no enmity. That one comes to me."
+            "Whoever works for me, holds me as supreme, is devoted, free of attachment and of enmity toward all beings, comes to me."
           </blockquote>
           <cite>Bhagavad Gita 11.55</cite>
         </div>
@@ -903,61 +903,61 @@ export default function ChapterPage11() {
             <tr><th>Verse</th><th>Speaker</th><th>Teaching Essence</th></tr>
           </thead>
           <tbody>
-            <tr><td>11.1</td><td>Arjuna</td><td>Clarity arrives when hidden teaching is finally heard as personal grace</td></tr>
-            <tr><td>11.2</td><td>Arjuna</td><td>All change is clear only beside what does not change</td></tr>
-            <tr><td>11.3</td><td>Arjuna</td><td>Belief becomes complete only when it wants to see</td></tr>
-            <tr><td>11.4</td><td>Arjuna</td><td>Real vision begins when control gives way to asking</td></tr>
-            <tr><td>11.5</td><td>Krishna</td><td>The divine cannot be contained in one shape</td></tr>
-            <tr><td>11.6</td><td>Krishna</td><td>The familiar universe is only a small part of what Krishna reveals</td></tr>
-            <tr><td>11.7</td><td>Krishna</td><td>Everything you seek is already gathered in the divine form</td></tr>
-            <tr><td>11.8</td><td>Krishna</td><td>Ordinary sight cannot hold the infinite; grace must widen the eye</td></tr>
-            <tr><td>11.9</td><td>Sanjaya</td><td>The answer is not a theory; it arrives as a vision</td></tr>
-            <tr><td>11.10</td><td>Sanjaya</td><td>The divine form cannot be held inside one human image</td></tr>
-            <tr><td>11.11</td><td>Arjuna</td><td>The divine presence is beautiful, boundless, and impossible to face from one side</td></tr>
-            <tr><td>11.12</td><td>Arjuna</td><td>Even the brightest familiar light cannot measure the cosmic form's radiance</td></tr>
-            <tr><td>11.13</td><td>Arjuna</td><td>One form can contain the whole universe</td></tr>
-            <tr><td>11.14</td><td>Arjuna</td><td>A glimpse of the vast can turn shock into surrender</td></tr>
-            <tr><td>11.15</td><td>Arjuna</td><td>The many forms of existence appear within one vast body</td></tr>
-            <tr><td>11.16</td><td>Arjuna</td><td>The largest reality has no edge the mind can grasp</td></tr>
-            <tr><td>11.17</td><td>Arjuna</td><td>What is most real cannot be fully held by sight</td></tr>
-            <tr><td>11.18</td><td>Arjuna</td><td>What appears overwhelming is actually the world's deepest support</td></tr>
-            <tr><td>11.19</td><td>Arjuna</td><td>What overwhelms the mind can also dissolve its resistance</td></tr>
-            <tr><td>11.20</td><td>Arjuna</td><td>One vision can overwhelm every boundary you thought was real</td></tr>
-            <tr><td>11.21</td><td>Arjuna</td><td>Even the highest beings bow when the vast form appears</td></tr>
-            <tr><td>11.22</td><td>Arjuna</td><td>Even the highest beings stand astonished before Krishna's vastness</td></tr>
-            <tr><td>11.23</td><td>Arjuna</td><td>A vision of total vastness can shake every observer at once</td></tr>
-            <tr><td>11.24</td><td>Arjuna</td><td>A true vision can shatter the mind before it can steady it</td></tr>
-            <tr><td>11.25</td><td>Arjuna</td><td>True awe ends control and turns the heart toward surrender</td></tr>
-            <tr><td>11.26</td><td>Arjuna</td><td>Even the greatest warriors are swallowed by what exceeds them</td></tr>
-            <tr><td>11.27</td><td>Arjuna</td><td>All fighters are already being consumed by time</td></tr>
-            <tr><td>11.28</td><td>Arjuna</td><td>All motion is already rushing toward its end</td></tr>
-            <tr><td>11.29</td><td>Arjuna</td><td>Blind desire runs straight into its own ruin</td></tr>
-            <tr><td>11.30</td><td>Arjuna</td><td>Total power leaves no room for control</td></tr>
-            <tr><td>11.31</td><td>Arjuna</td><td>Fear bows first, then asks to know what stands before it</td></tr>
-            <tr><td>11.32</td><td>Krishna</td><td>What is ending was never in your hands to preserve</td></tr>
-            <tr><td>11.33</td><td>Krishna</td><td>Act fully, but let the larger order carry the result</td></tr>
-            <tr><td>11.34</td><td>Krishna</td><td>The battle is already decided; your task is only to act</td></tr>
-            <tr><td>11.35</td><td>Sanjaya</td><td>Awe can break speech before it becomes prayer</td></tr>
-            <tr><td>11.36</td><td>Arjuna</td><td>The divine name can turn fear into devotion and disorder into reverence</td></tr>
-            <tr><td>11.37</td><td>Arjuna</td><td>What exceeds all categories naturally draws surrender</td></tr>
-            <tr><td>11.38</td><td>Arjuna</td><td>The one you seek is the ground that already holds everything</td></tr>
-            <tr><td>11.39</td><td>Arjuna</td><td>All powers and forces bow inside the one you face</td></tr>
-            <tr><td>11.40</td><td>Arjuna</td><td>Total awe ends the illusion of separation</td></tr>
-            <tr><td>11.41</td><td>Arjuna</td><td>Familiarity without recognition becomes disrespect; awe restores right relation</td></tr>
-            <tr><td>11.42</td><td>Arjuna</td><td>Familiarity can hide greatness until awe breaks through</td></tr>
-            <tr><td>11.43</td><td>Arjuna</td><td>Recognition of the highest power dissolves all comparison</td></tr>
-            <tr><td>11.44</td><td>Arjuna</td><td>True reverence asks forgiveness without excuses</td></tr>
-            <tr><td>11.45</td><td>Arjuna</td><td>A vision can awaken joy and fear at once</td></tr>
-            <tr><td>11.46</td><td>Arjuna</td><td>The infinite can overwhelm; devotion asks for a form the heart can bear</td></tr>
-            <tr><td>11.47</td><td>Krishna</td><td>What is most sacred is seen only by grace</td></tr>
-            <tr><td>11.48</td><td>Krishna</td><td>The highest vision cannot be forced; it arrives only through grace</td></tr>
-            <tr><td>11.49</td><td>Krishna</td><td>Fear must drop before the deeper vision can be seen</td></tr>
-            <tr><td>11.50</td><td>Sanjaya</td><td>A vision can shake you; compassion brings you back</td></tr>
-            <tr><td>11.51</td><td>Arjuna</td><td>Gentleness restores the mind after overwhelming awe</td></tr>
-            <tr><td>11.52</td><td>Krishna</td><td>The vision Arjuna saw is beyond ordinary access, even for radiant beings</td></tr>
-            <tr><td>11.53</td><td>Krishna</td><td>The deepest vision comes through devotion, not mere accomplishment</td></tr>
-            <tr><td>11.54</td><td>Krishna</td><td>Undivided devotion reaches what effort cannot</td></tr>
-            <tr><td>11.55</td><td>Krishna</td><td>Devotion matures into freedom when attachment and hostility are gone</td></tr>
+            <tr><td>11.1</td><td>Arjuna</td><td>Out of grace you told me the secret about the Self, and my confusion is gone</td></tr>
+            <tr><td>11.2</td><td>Arjuna</td><td>I have heard from you in detail how beings arise and end, and of your lasting greatness</td></tr>
+            <tr><td>11.3</td><td>Arjuna</td><td>It is as you say, Supreme Lord; still, I want to see your sovereign form</td></tr>
+            <tr><td>11.4</td><td>Arjuna</td><td>If you think I am able to see it, Lord of yoga, show me your imperishable Self</td></tr>
+            <tr><td>11.5</td><td>Krishna</td><td>See my forms, Arjuna, by hundreds and thousands, divine, of many colours and shapes</td></tr>
+            <tr><td>11.6</td><td>Krishna</td><td>See the Adityas, Vasus, Rudras, Ashvins and Maruts, and many wonders never seen before</td></tr>
+            <tr><td>11.7</td><td>Krishna</td><td>See the whole universe, moving and unmoving, gathered here in my body, and whatever else you wish</td></tr>
+            <tr><td>11.8</td><td>Krishna</td><td>You cannot see me with your own eyes; I give you divine sight. See my sovereign power</td></tr>
+            <tr><td>11.9</td><td>Sanjaya</td><td>Saying this, Hari, the great Lord of yoga, showed Arjuna his supreme sovereign form</td></tr>
+            <tr><td>11.10</td><td>Sanjaya</td><td>It had many mouths and eyes, many wondrous sights, divine ornaments and raised divine weapons</td></tr>
+            <tr><td>11.11</td><td>Sanjaya</td><td>It wore divine garlands and robes and divine scents, endless, wondrous, facing every way</td></tr>
+            <tr><td>11.12</td><td>Sanjaya</td><td>If a thousand suns rose at once in the sky, that might match the Great Self's radiance</td></tr>
+            <tr><td>11.13</td><td>Sanjaya</td><td>Arjuna saw the universe, with its many divisions, gathered in Krishna's one body</td></tr>
+            <tr><td>11.14</td><td>Sanjaya</td><td>Overcome with wonder, hair on end, Arjuna bowed his head and spoke with joined palms</td></tr>
+            <tr><td>11.15</td><td>Arjuna</td><td>In your body I see all the gods, hosts of beings, Brahma on his lotus, sages and serpents</td></tr>
+            <tr><td>11.16</td><td>Arjuna</td><td>I see you everywhere, with countless arms, bellies, mouths and eyes, without end, middle or beginning</td></tr>
+            <tr><td>11.17</td><td>Arjuna</td><td>I see you with crown, mace and discus, a mass of light, blazing like fire and sun, hard to look at</td></tr>
+            <tr><td>11.18</td><td>Arjuna</td><td>You are the imperishable, the highest to be known, the universe's resting place, guardian of dharma</td></tr>
+            <tr><td>11.19</td><td>Arjuna</td><td>Without beginning, middle or end, sun and moon your eyes, you scorch the world with your radiance</td></tr>
+            <tr><td>11.20</td><td>Arjuna</td><td>You alone fill the space between heaven and earth; the three worlds tremble at your form</td></tr>
+            <tr><td>11.21</td><td>Arjuna</td><td>Hosts of gods enter you; some, afraid, praise you with joined palms; sages sing your hymns</td></tr>
+            <tr><td>11.22</td><td>Arjuna</td><td>Rudras, Adityas, Vasus, Sadhyas and the other hosts of beings all gaze at you in amazement</td></tr>
+            <tr><td>11.23</td><td>Arjuna</td><td>Seeing your vast form with its many mouths, eyes and terrible teeth, the worlds tremble, and so do I</td></tr>
+            <tr><td>11.24</td><td>Arjuna</td><td>Seeing you touch the sky, blazing, mouths open wide, I tremble and find no steadiness or peace</td></tr>
+            <tr><td>11.25</td><td>Arjuna</td><td>Seeing your mouths with tusks like the fire at the end of time, I lose my bearings; have mercy</td></tr>
+            <tr><td>11.26</td><td>Arjuna</td><td>All of Dhritarashtra's sons, with Bhishma, Drona, Karna and our own chief warriors too</td></tr>
+            <tr><td>11.27</td><td>Arjuna</td><td>rush into your fearsome mouths; some hang between your teeth with crushed heads</td></tr>
+            <tr><td>11.28</td><td>Arjuna</td><td>As rivers rush toward the sea, these heroes of the world pour into your flaming mouths</td></tr>
+            <tr><td>11.29</td><td>Arjuna</td><td>As moths rush into a blazing fire to die, these people rush into your mouths to their end</td></tr>
+            <tr><td>11.30</td><td>Arjuna</td><td>You lick up the worlds on every side with flaming mouths; your fierce rays fill the universe</td></tr>
+            <tr><td>11.31</td><td>Arjuna</td><td>Tell me who you are, in this terrible form; I bow to you, and I do not understand what you do</td></tr>
+            <tr><td>11.32</td><td>Krishna</td><td>I am Time, grown mighty, destroyer of worlds; even without you, these warriors will not survive</td></tr>
+            <tr><td>11.33</td><td>Krishna</td><td>So rise and win glory; they are already slain by me; be only the instrument, Arjuna</td></tr>
+            <tr><td>11.34</td><td>Krishna</td><td>Kill Drona, Bhishma, Jayadratha, Karna and the rest, already slain by me; fight, and you will win</td></tr>
+            <tr><td>11.35</td><td>Sanjaya</td><td>Hearing this, Arjuna, trembling, joined his palms, bowed, and spoke to Krishna in a choked voice</td></tr>
+            <tr><td>11.36</td><td>Arjuna</td><td>Rightly the world rejoices in your praise; demons flee in fear and the perfected ones bow to you</td></tr>
+            <tr><td>11.37</td><td>Arjuna</td><td>Why would they not bow to you, greater than Brahma himself, being and non-being and beyond both</td></tr>
+            <tr><td>11.38</td><td>Arjuna</td><td>You are the first god, the ancient Purusha, the universe's resting place, the knower and the known</td></tr>
+            <tr><td>11.39</td><td>Arjuna</td><td>You are Vayu, Yama, Agni, Varuna, the moon and the lord of creatures; I bow to you again and again</td></tr>
+            <tr><td>11.40</td><td>Arjuna</td><td>I bow to you in front, behind and on every side; you pervade all, so you are all</td></tr>
+            <tr><td>11.41</td><td>Arjuna</td><td>Thinking you a friend, I rashly called you Krishna, Yadava, friend, not knowing your greatness</td></tr>
+            <tr><td>11.42</td><td>Arjuna</td><td>Whatever disrespect I showed you in jest, at play, at rest or at meals, alone or with others, forgive it</td></tr>
+            <tr><td>11.43</td><td>Arjuna</td><td>You are the father of the world and its most honoured teacher; nothing in the three worlds equals you</td></tr>
+            <tr><td>11.44</td><td>Arjuna</td><td>Bowing low, I ask your grace: bear with me as a father with a son, friend with friend, lover with beloved</td></tr>
+            <tr><td>11.45</td><td>Arjuna</td><td>I rejoice at what was never seen before, yet my mind shakes with fear; show me your other form</td></tr>
+            <tr><td>11.46</td><td>Arjuna</td><td>I want to see you as before, with crown, mace and discus; take your four-armed form</td></tr>
+            <tr><td>11.47</td><td>Krishna</td><td>By my grace I showed you this supreme form, which no one but you has seen before</td></tr>
+            <tr><td>11.48</td><td>Krishna</td><td>Not by Vedas, sacrifice, study, gifts, rituals or austerities can anyone but you see me in this form</td></tr>
+            <tr><td>11.49</td><td>Krishna</td><td>Do not be afraid or bewildered at this terrible form; free of fear and glad at heart, see my other form</td></tr>
+            <tr><td>11.50</td><td>Sanjaya</td><td>Saying this, Krishna showed his own form again and, gentle once more, consoled the frightened Arjuna</td></tr>
+            <tr><td>11.51</td><td>Arjuna</td><td>Seeing your gentle human form, Janardana, I am composed and myself again</td></tr>
+            <tr><td>11.52</td><td>Krishna</td><td>This form you have seen is very hard to see; even the gods always long to see it</td></tr>
+            <tr><td>11.53</td><td>Krishna</td><td>Not by Vedas, austerity, charity or sacrifice can I be seen as you have seen me</td></tr>
+            <tr><td>11.54</td><td>Krishna</td><td>Only by undivided devotion can I be known, seen and entered in this way</td></tr>
+            <tr><td>11.55</td><td>Krishna</td><td>Whoever works for me, holds me highest, loves me, without attachment or enmity, comes to me</td></tr>
           </tbody>
         </table>
 
@@ -984,6 +984,8 @@ export default function ChapterPage11() {
         </div>
 
 
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the count of conditions in 11.55 (five), the speaker of 11.11–14 (Sanjaya, not Arjuna), the claim that Arjuna falls silent during the vision, and which Oppenheimer quotation comes from which verse (11.12 and 11.32); copy edited.</p>
+
         <div className="faq-section" id="faq">
           <div className="faq-header">
             <div className="faq-header-label">Common questions</div>
@@ -992,37 +994,37 @@ export default function ChapterPage11() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 11 about?</div>
             <div className="faq-a">
-              Chapter 11, called Vishwarupa Darshana Yoga (the Yoga of the Vision of the Cosmic Form), is the dramatic climax of the Bhagavad Gita. Arjuna asks to see Krishna's universal form. Krishna grants him divine sight and shows him the cosmic body, a vision of infinite arms, infinite mouths, beings being consumed by time. The chapter contains the famous 'thousand suns' verse (11.12), the line 'I am Time, the destroyer of worlds' (11.32), and the closing teaching that only undivided devotion can reach this vision (11.53-55).
+              Chapter 11, called Vishwarupa Darshana Yoga (the Yoga of the Vision of the Cosmic Form), is the dramatic high point of the Bhagavad Gita. Arjuna asks to see Krishna's universal form. Krishna grants him divine sight and shows him the cosmic body, a vision of infinite arms, infinite mouths, beings being consumed by time. The chapter contains the famous 'thousand suns' verse (11.12), the line 'I am Time, the destroyer of worlds' (11.32), and the closing teaching that only undivided devotion can reach this vision (11.53-55).
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the meaning of Bhagavad Gita 11.32?</div>
             <div className="faq-a">
-              Verse 11.32 (<em>kālo'smi loka-kṣaya-kṛt pravṛddhaḥ</em>), which translates as 'I am Time, grown mighty, the destroyer of worlds.' Krishna identifies himself as Time itself, the most absolute reaping force. The verse goes on to say that even without Arjuna, the warriors arrayed against him will not survive. The teaching, beyond the war context, is that whatever you fear losing is already loosening from your grip, not because of failure, but because Time is what Time is.
+              Verse 11.32 (<em>kālo'smi loka-kṣaya-kṛt pravṛddhaḥ</em>), which translates as 'I am Time, grown mighty, the destroyer of worlds.' Krishna identifies himself as Time itself. The verse goes on to say that even without Arjuna, the warriors arrayed against him will not survive. Beyond the war, the verse says that whatever you fear losing is already loosening, because everything in time ends. Oppenheimer said in 1965 that this line came to him at the Trinity test.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the 'thousand suns' verse in the Bhagavad Gita?</div>
             <div className="faq-a">
-              Verse 11.12 says, 'If a thousand suns were to rise at once in the sky, their light might begin to compare with the radiance of that Great Self.' The verse is Arjuna's attempt to describe the cosmic form and his admission that even the maximum comparison ordinary imagination can produce does not reach. The verse is famously known outside the tradition because Robert Oppenheimer reached for it when describing the first atomic bomb detonation.
+              Verse 11.12 says, 'If a thousand suns were to rise at once in the sky, their light might begin to compare with the radiance of that Great Self.' Sanjaya speaks it, describing the cosmic form, and admits that even this comparison might only begin to match it. According to Robert Jungk's book Brighter than a Thousand Suns, Oppenheimer thought of this verse at the Trinity test in 1945.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does 'nimitta matram bhava' mean?</div>
             <div className="faq-a">
-              In verse 11.33, Krishna tells Arjuna, '<em>nimitta-mātraṃ bhava savya-sācin</em>' ('become only the instrument, Arjuna'). The teaching is that Arjuna is not the originator of what is going to unfold on the battlefield. The war is already decided by a larger order. His task is to be a clean instrument (present, accountable, attentive) through which the unfolding moves. The verse extends beyond the war context to every difficult action: the work is yours; the outcome was never yours to own.
+              In verse 11.33, Krishna tells Arjuna, '<em>nimitta-mātraṃ bhava savya-sācin</em>' ('become only the instrument, Arjuna'). What unfolds on the battlefield was set in motion before Arjuna acts. Krishna says the warriors are already slain by him. Arjuna's task is to be a clean instrument: present, accountable, attentive. Read beyond the war: do the work, and leave the outcome to the larger order.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the universal form (Vishwarupa) in the Bhagavad Gita?</div>
             <div className="faq-a">
-              The <em>vishwarupa</em> or universal form is Krishna's cosmic body: the form in which the entire universe is contained. Arjuna sees it in Chapter 11 after asking for direct vision. The form has infinite arms, infinite eyes, mouths like blazing fire, and contains all beings within it. It is the Gita's most overwhelming theophany. The form cannot be perceived with ordinary eyes. Krishna gives Arjuna divine sight specifically to behold it.
+              The <em>vishwarupa</em> or universal form is Krishna's cosmic body: the form in which the entire universe is contained. Arjuna sees it in Chapter 11 after asking for direct vision. The form has infinite arms, infinite eyes, mouths like blazing fire, and contains all beings within it. It cannot be seen with ordinary eyes, so Krishna gives Arjuna divine sight (11.8).
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Why did Arjuna apologise to Krishna in Chapter 11?</div>
             <div className="faq-a">
-              After the cosmic vision, in verses 11.41-44, Arjuna apologises for having treated Krishna with casual familiarity, calling him by name, joking with him, eating with him, without realising who he truly was. He asks Krishna to forgive him as a father forgives a son, as a friend forgives a friend, as a lover forgives a beloved. The teaching is that real reverence does not destroy relationship; the friendship was always real, and the cosmic vision only enlarged what it had been holding all along.
+              After the cosmic vision, in verses 11.41-44, Arjuna apologises for having treated Krishna with casual familiarity, calling him by name, joking with him, eating with him, without realising who he truly was. He asks Krishna to forgive him as a father forgives a son, as a friend forgives a friend, as a lover forgives a beloved. The friendship survives the reverence: Krishna returns to his human form (11.51) and the two go on as before.
             </div>
           </div>
         </div>

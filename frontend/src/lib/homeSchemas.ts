@@ -33,7 +33,7 @@ const schemas = [
         isAccessibleForFree: true,
         url: 'https://wisdomquotes.in/gita',
         description:
-          'The Bhagavad Gita: 18 chapters, 700 verses spoken by Krishna to Arjuna on the battlefield of Kurukshetra. Available here in Sanskrit Devanagari, Hindi anuvad, and English translation with detailed commentary. Free to read online.',
+          'The Bhagavad Gita: 18 chapters and 700 verses, the conversation between Krishna and Arjuna at Kurukshetra as Sanjaya reports it. Available here in Sanskrit Devanagari, Hindi anuvad, and English translation with detailed commentary. Free to read online.',
       },
       {
         '@type': 'Organization',
@@ -59,7 +59,7 @@ const schemas = [
           {
             '@type': 'Question',
             name: "Which Bhagavad Gita translation should I read? Is this ISKCON?",
-            acceptedAnswer: { '@type': 'Answer', text: "No, it isn't ISKCON. Read one that shows you the Sanskrit and doesn't tie you to a single sect. Wisdom's English is its own, checked against Shankara, Ramanuja and modern acharyas. For a side-by-side look at Gita Press, Prabhupada, Easwaran and others, see wisdomquotes.in/blogs/best-bhagavad-gita-translation." },
+            acceptedAnswer: { '@type': 'Answer', text: "No, it isn't ISKCON. The English on wisdomquotes.in is the Wisdom translation, edited from public-domain sources and read against Shankara, Ramanuja and modern acharyas. For a side-by-side look at Gita Press, Prabhupada, Easwaran and others, see wisdomquotes.in/blogs/best-bhagavad-gita-translation." },
           },
           {
             '@type': 'Question',
@@ -69,7 +69,7 @@ const schemas = [
           {
             '@type': 'Question',
             name: "How does the Wisdom 7-day plan work?",
-            acceptedAnswer: { '@type': 'Answer', text: "Answer a few questions about you and what's going on. Wisdom picks seven verses for it, one a day, starting with the Gita and drawing on the Upanishads, Ramayana and Mahabharata. Each comes with the Sanskrit and what it means for you. Week 1 is free: on iPhone in the app, and on Android and computers right here, after you sign in with Google." },
+            acceptedAnswer: { '@type': 'Answer', text: "Answer a few questions about you and what's going on. Wisdom builds a week for it, a verse a day and a story on Day 7, starting with the Gita and drawing on the Upanishads, Ramayana and Mahabharata. Each comes with the Sanskrit and what it means for you. Week 1 is free: on iPhone in the app, and on Android and computers right here, after you sign in with Google." },
           },
           {
             '@type': 'Question',
@@ -84,7 +84,7 @@ const schemas = [
           {
             '@type': 'Question',
             name: "Is this a substitute for therapy?",
-            acceptedAnswer: { '@type': 'Answer', text: "No. Many people read the Gita alongside therapy. If you're thinking about harming yourself, please call Tele-MANAS on 14416 (India, free, 24×7) or your local emergency number." },
+            acceptedAnswer: { '@type': 'Answer', text: "No. It can sit alongside therapy, but it doesn't replace it. If you're thinking about harming yourself, please call Tele-MANAS on 14416 (India, free, 24×7) or your local emergency number." },
           },
         ],
       },

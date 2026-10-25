@@ -7,11 +7,11 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita for Students — Key Verses on Focus, Exam Stress & Effort (Exam-Ready Summary)",
-  description: "The Gita was taught to someone who froze under pressure right before the biggest test of his life. 9 key verses for students — focus, exam stress, results anxiety, effort, and the restless mind — with Sanskrit, meaning and application.",
+  description: "The Gita was taught to a trained archer who froze before the battle he had prepared for. 9 verses for students on focus, exam stress, effort and the restless mind, with Sanskrit, meaning and application.",
   keywords: "bhagavad gita for students, bhagavad gita lessons for students, bhagavad gita on focus, bhagavad gita exam stress, bhagavad gita student life, bhagavad gita on effort and results, bhagavad gita study tips, bhagavad gita for youth, bhagavad gita on discipline",
   openGraph: {
     title: "Bhagavad Gita for Students — Key Verses on Focus, Exam Stress & Effort",
-    description: "The Gita was taught to someone who froze under pressure right before the biggest test of his life. 9 key verses for students on focus, exam stress, effort, failure, and the mind.",
+    description: "The Gita was taught to a trained archer who froze before the battle he had prepared for. 9 verses for students on focus, exam stress, effort, failure and the mind.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-for-students",
     siteName: 'Wisdom',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     site: '@sansearchapp',
     creator: '@thisisashukla',
     title: "Bhagavad Gita for Students — Key Verses on Focus, Exam Stress & Effort",
-    description: "The Gita was taught to someone who froze under pressure right before the biggest test of his life. 9 key verses for students on focus, exam stress, effort, failure, and the mind.",
+    description: "The Gita was taught to a trained archer who froze before the battle he had prepared for. 9 verses for students on focus, exam stress, effort, failure and the mind.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -421,7 +421,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Bhagavad Gita for Students: 9 Lessons on Focus, Failure, and Effort | Wisdom",
-    "description": "The Gita was taught to someone who froze under pressure right before the biggest test of his life. Here are 9 lessons specifically relevant to students.",
+    "description": "The Gita was taught to a trained archer who froze before the battle he had prepared for. Here are 9 lessons for students.",
     "datePublished": "2026-06-12",
     "dateModified": "2026-08-01",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/bhagavad-gita-for-students" },
@@ -459,7 +459,7 @@ const schemas = [
         "name": "Does the Bhagavad Gita help students?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Gita's core teaching, do your work fully without attachment to the result, is directly applicable to students facing exam pressure. Arjuna's situation, capable but paralyzed before a high-stakes moment, mirrors the experience of many students. The Gita addresses focus, self-mastery, dealing with failure, and the relationship between effort and outcome."
+          "text": "The Gita's core teaching, do your work fully without attachment to the result, is directly applicable to students facing exam pressure. Arjuna, capable but unable to act before a high-stakes moment, is in a position many students know. The Gita covers focus, self-mastery, failure, and the relationship between effort and outcome."
         }
       },
       {
@@ -467,7 +467,7 @@ const schemas = [
         "name": "What does the Gita say about hard work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BG 3.8 says perform your prescribed duty, because action is better than inaction. The Gita is clear: doing nothing is not a solution. It pairs this with the teaching of nishkama karma from BG 2.47: work fully, but release attachment to the outcome. This combination, full effort without results-anxiety, is the Gita's practical answer to the work question."
+          "text": "BG 3.8 says to do your prescribed work, because action is better than inaction. The Gita pairs this with the teaching of nishkama karma in BG 2.47: work fully, and let go of attachment to the outcome."
         }
       },
       {
@@ -475,7 +475,7 @@ const schemas = [
         "name": "What does the Bhagavad Gita say about exam stress?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Gita's most relevant teaching for exam stress is BG 2.47: you have the right to perform your duty, but not to the fruits. Anxiety before exams comes from conflating your effort with the outcome. The Gita separates them: your job is to prepare and act with full attention. The result follows from many factors, not all under your control. Focusing on what you control, the preparation, the work, reduces the anxiety connected to what you cannot control."
+          "text": "Start with BG 2.47: your right is to the action, never to its fruits. Worry before exams often comes from tying your effort to the outcome. The Gita separates them. Your job is to prepare and to act with full attention, and the result depends on many factors, some outside your control."
         }
       },
       {
@@ -483,7 +483,7 @@ const schemas = [
         "name": "What does the Bhagavad Gita say about concentration and focus?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BG 6.35 acknowledges that the mind is restless and hard to control, but says it can be restrained through abhyasa (consistent practice) and vairagya (dispassion toward distractions). The Gita also points to self-mastery in BG 6.5 and 6.6: you are your own friend when you train your mind, and your own enemy when you let it run unchecked. Concentration is not a talent. It is a skill built through practice."
+          "text": "BG 6.35 acknowledges that the mind is restless and hard to control, but says it can be restrained through abhyasa (consistent practice) and vairagya (dispassion toward distractions). The Gita also points to self-mastery in BG 6.5 and 6.6: you are your own friend when you train your mind, and your own enemy when you let it run unchecked. In the Gita, concentration is built through practice."
         }
       },
       {
@@ -491,7 +491,7 @@ const schemas = [
         "name": "Should students read the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Bhagavad Gita addresses questions that are directly relevant to students: how to act under pressure, how to deal with fear of failure, how to stay focused, how to relate to authority and duty, and what to do after a bad outcome. It was taught to someone experiencing the most high-stakes version of all of these at once. Reading it with these specific questions in mind, rather than as a religious text, gives it immediate practical value."
+          "text": "The Bhagavad Gita addresses questions that are directly relevant to students: how to act under pressure, how to deal with fear of failure, how to stay focused, how to relate to authority and duty, and what to do after a bad outcome. It was taught to someone facing all of these at once, with lives at stake. Reading it with these questions in mind makes it practical."
         }
       }
     ]
@@ -525,10 +525,10 @@ export default function GitaForStudentsPage() {
         </div>
         <h1 className="article-title">
           The Gita Was Taught to Someone<br />
-          <em>Who Froze Before His Biggest Test</em>
+          <em>Who Froze Before the Battle</em>
         </h1>
         <p className="article-subtitle">
-          Arjuna was prepared, trained, capable. He still could not perform when it mattered. Here is what helped him, and what can help any student facing the same wall.
+          Arjuna was trained and capable, and he still could not act when it mattered. Here are nine verses from what Krishna told him, read for students.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -537,7 +537,7 @@ export default function GitaForStudentsPage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">~7 min read</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -556,17 +556,17 @@ export default function GitaForStudentsPage() {
       </figure>
 
       <p className="lead">
-        Arjuna is a student&apos;s worst-case scenario. Years of preparation. Perfect skill. The right teacher. And then, when the moment arrived, his hands shook, his bow slipped from his grip, and he sat down on the floor of his chariot and said he could not do this. The Bhagavad Gita is the teaching he received in that moment. Every student who has blanked on an exam, or choked during a presentation they had practiced thirty times, knows some version of this.
+        Arjuna had years of training, great skill and the best teachers of his time. When the moment came, his limbs shook, his bow slipped from his grip (1.29–30), and he sat down in his chariot and refused to fight (1.47). The Bhagavad Gita is the teaching he received then. A student who has blanked in an exam, or frozen during a presentation they had practised many times, knows some version of this.
       </p>
       <p>
-        The Gita does not tell Arjuna that everything will be fine. It tells him to understand what is actually happening, and then to act from that understanding. That instruction holds for anyone in a moment of pressure.
+        Krishna never tells Arjuna that everything will be fine. He tells him to understand what is happening and then act from that understanding, which works for anyone under pressure.
       </p>
 
       <h2>Lesson 1: Focus on Action, Not Results</h2>
       <div className="lesson-label">Lesson 1 · BG 2.47</div>
 
       <p>
-        This is the verse most quoted when someone asks what the Gita says about anxiety. It is quoted so often that it can start to feel like a platitude. Read it carefully.
+        People quote this verse so often that it can start to sound like a slogan. It has four parts.
       </p>
 
             <ShlokaCard
@@ -574,21 +574,21 @@ export default function GitaForStudentsPage() {
         sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
         iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
         meaningLabel="Translation"
-        meaning="You have the right to do your actions, but not to control the results. Do not be attached to the fruits of your actions, and do not fall into inaction."
+        meaning="Your right is to the action alone, never to its fruits. Do not let the fruit be your motive, and do not be attached to inaction."
         insightLabel="For Students"
-        insight="The verse has four parts. Act. Don't claim the result. Don't let the anticipated result be your only reason for acting. And don't use any of this as an excuse not to try. Exam anxiety is almost always about the fourth item leaking into the second: you become so focused on the outcome that the action (the study, the practice, the work) gets contaminated by the fear of the result. The verse is saying: those are two separate things. Keep them separate."
-        essence="Focus on right action, let go of attachment to results."
+        insight="The four parts: your right is to the action; you have no claim on the result; the expected result should not be your motive; and none of this is an excuse to stop trying. Exam stress usually comes from the third part going wrong. When the marks become the reason you study, fear of the marks gets into the studying itself, and Krishna asks you to keep the two apart."
+        essence="Your right is to the work, never to its results."
       />
 
       <p>
-        This is not fatalism. It is not &quot;don&apos;t care about your marks.&quot; It is a much sharper instruction: put your full attention into the preparation and the execution. That is what you control. The result follows from many factors, some under your control and some not. Your anxiety about the factors you cannot control is not helping the factors you can.
+        You can still care about your marks. The instruction is to put your full attention into preparing and into the exam itself, which you control. The result depends on many factors, and worry about the ones you cannot control does nothing for the ones you can.
       </p>
 
       <h2>Lesson 2: Do the Work</h2>
       <div className="lesson-label">Lesson 2 · BG 3.8</div>
 
       <p>
-        There is a version of &quot;detachment from results&quot; that some students use to justify not trying. The Gita anticipates this and addresses it directly.
+        Some students use &quot;detachment from results&quot; as a reason not to try. The Gita closes that door in 3.8.
       </p>
 
             <ShlokaCard
@@ -598,15 +598,15 @@ export default function GitaForStudentsPage() {
         meaningLabel="Translation"
         meaning="Do your duties as prescribed by dharma. Acting is better than not acting, because even keeping your body going is not possible without action."
         insightLabel="For Students"
-        insight="Niyatam karma means &quot;prescribed duty.&quot; For a student, that is clear: study, attend class, do the practice problems, write the drafts. The Gita is not asking you to be inspired. It's saying: action, even uninspired action, beats non-action. You don't wait for motivation to arrive before you open the book. You open the book and the motivation sometimes follows. Sometimes it doesn't, and you do the work anyway."
-        essence="Choose karma over inaction; your path requires your effort."
+        insight="Niyatam karma means &quot;prescribed work&quot;. For a student that means studying, attending class, doing the practice problems and writing the drafts. Krishna asks for action whether or not you feel inspired. You open the book first, and sometimes the motivation follows."
+        essence="Do your prescribed work; action is better than inaction."
       />
 
       <h2>Lesson 3: You Are Your Own Friend and Enemy</h2>
       <div className="lesson-label">Lesson 3 · BG 6.5</div>
 
       <p>
-        Chapter 6 deals with self-mastery and the practice of yoga. It contains two verses that are among the most direct in the entire Gita about personal responsibility for your own inner state.
+        Chapter 6 deals with self-mastery and meditation. Verses 6.5 and 6.6 put responsibility for your inner state on you.
       </p>
 
             <ShlokaCard
@@ -614,10 +614,10 @@ export default function GitaForStudentsPage() {
         sanskrit="उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥"
         iast="uddharedātmanā''tmānaṃ nātmānamavasādayet | ātmaiva hyātmano bandhurātmaiva ripurātmanaḥ ||"
         meaningLabel="Translation"
-        meaning="Uplift yourself through your own actions and thoughts. Do not let yourself fall, because you alone are your own friend and also your own enemy."
+        meaning="Lift yourself by your own effort and keep yourself from sinking, for you alone are your own friend and your own enemy."
         insightLabel="For Students"
-        insight="The Gita is not asking you to be your own cheerleader. It is asking you to recognize that the self-talk you maintain, the narratives you carry about your own capability, whether you study tonight or scroll for three hours instead, are all choices that either lift or sink you. No teacher, no parent, no exam system is as powerful in this regard as the choices you make about your own mind."
-        essence="You are your greatest ally and your own worst obstacle. Choose upliftment."
+        insight="Krishna says you can lift yourself or let yourself sink. The way you talk to yourself, the story you tell about your own ability, and how you spend tonight all push one way or the other. Teachers and parents can help, but the verse puts the deciding choices with you."
+        essence="Lift yourself by yourself; you are your own friend and your own enemy."
       />
 
       <h2>Lesson 4: Master the Mind or It Masters You</h2>
@@ -630,15 +630,15 @@ export default function GitaForStudentsPage() {
         meaningLabel="Translation"
         meaning="If you have learned to guide your own mind, you become your own friend. If you have not, your own mind acts like your enemy."
         insightLabel="For Students"
-        insight="This verse follows directly from 6.5. The mind that argues you out of studying, that tells you to check your phone one more time, that says you're not smart enough so why bother, that is the unmastered mind acting as an enemy. The mastered mind is a tool you can use. It focuses when you ask it to. It rests when you need it to. It doesn't catastrophize about the future during the exam. Self-mastery is not a personality trait. It's a skill."
-        essence="Mastery of self turns your inner nature into your greatest ally."
+        insight="This verse follows from 6.5. The mind that talks you out of studying, or tells you that you are not clever enough so why bother, is the unmastered mind acting as an enemy. A trained mind focuses when you ask it to and rests when you need it to, and in the Gita that training is learned."
+        essence="The self is a friend to one who has mastered it, an enemy to one who has not."
       />
 
       <h2>Lesson 5: Fearlessness and Self-Study as the Starting Point</h2>
       <div className="lesson-label">Lesson 5 · BG 16.1</div>
 
       <p>
-        Chapter 16 describes the qualities of those oriented toward the divine versus those oriented toward the demonic. The divine qualities are listed first, and two of them are especially relevant to students.
+        Chapter 16 contrasts the divine nature with the demonic one. The divine qualities come first, and two of them matter to students.
       </p>
 
             <ShlokaCard
@@ -646,17 +646,17 @@ export default function GitaForStudentsPage() {
         sanskrit="अभयं सत्त्वसंशुद्धिः ज्ञानयोगव्यवस्थितिः । दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम् ॥"
         iast="abhayaṃ sattvasaṃśuddhiḥ jñānayogavyavasthitiḥ | dānaṃ damaśca yajñaśca svādhyāyastapa ārjavam ||"
         meaningLabel="Translation"
-        meaning="Fearlessness, purity of heart, firmness in the path of knowledge, generosity, control over the senses, self-study, discipline, and simplicity in body, speech, and mind."
+        meaning="Fearlessness, purity of heart, steadiness in knowledge and yoga, generosity, self-control, sacrifice, study of scripture, austerity and straightforwardness."
         insightLabel="For Students"
-        insight="Two words stand out: abhayam (fearlessness) and svadhyaya (self-study). They are listed side by side. Fearlessness here doesn't mean never feeling fear. It means not letting fear drive your decisions. And svadhyaya, which literally means self-study or study of the self, points to learning as a genuine orientation, not just a means to an end. A student with both qualities learns because they want to understand, and they act in spite of fear."
-        essence="Fearlessness, purity, discipline, and self-study lead to clarity and inner harmony."
+        insight="Two words stand out: abhayam (fearlessness), which opens the list, and svadhyaya, usually explained as study and recitation of scripture. Fearlessness here means fear does not make your decisions for you. Svadhyaya is regular, self-directed study. A student with both studies steadily and acts in spite of fear."
+        essence="Fearlessness, purity, generosity, self-control and study mark the divine nature."
       />
 
       <h2>Lesson 6: Mental Discipline Is Its Own Practice</h2>
       <div className="lesson-label">Lesson 6 · BG 17.16</div>
 
       <p>
-        Chapter 17 classifies tapas, discipline, into three kinds: physical, verbal, and mental. The mental form is the most relevant to any student.
+        Chapter 17 sorts tapas, discipline, into three kinds: of the body, of speech and of the mind (17.14–16). The third is the one a student uses every day.
       </p>
 
             <ShlokaCard
@@ -664,17 +664,17 @@ export default function GitaForStudentsPage() {
         sanskrit="मनःप्रसादः सौम्यत्वं मौनमात्मविनिग्रहः । भावसंशुद्धिरित्येतत्तपो मानसमुच्यते ॥"
         iast="manaḥprasādaḥ saumyatvaṃ maunamātmavinigrahaḥ | bhāvasaṃśuddhirityetattapo mānasamucyate ||"
         meaningLabel="Translation"
-        meaning="Mental happiness, gentleness, silence, self-control, and purifying your intentions: this is what is called the discipline of the mind."
+        meaning="Serenity of mind, gentleness, silence, self-control and purity of feeling: this is called discipline of the mind."
         insightLabel="For Students"
-        insight="Mauna, silence, is listed here as a form of mental tapas. For a student, this is the discipline of sustained attention: the ability to work for an extended period without interruption, without checking, without the noise of social media or background chatter. Atma-vinigraha, self-restraint, is the practice of not following every impulse the mind produces. Bhava-samshuddhi, purifying your intentions, means studying because you want to understand, not just to perform or to be seen to be studying."
-        essence="True discipline starts by mastering and purifying your mind."
+        insight="Mauna, silence, is listed as a form of mental tapas. For a student it can mean long stretches of work without interruption or background chatter. Atma-vinigraha, self-restraint, means declining to follow every impulse the mind produces. Bhava-samshuddhi, purity of feeling, can mean studying to understand as well as to score."
+        essence="Serenity, gentleness, silence, self-control and purity of feeling make up discipline of the mind."
       />
 
       <h2>Lesson 7: Practice and Dispassion Are the Path to a Focused Mind</h2>
       <div className="lesson-label">Lesson 7 · BG 6.35</div>
 
       <p>
-        Arjuna complains to Krishna in Chapter 6 that the mind is restless, turbulent, and hard to control. He says trying to discipline the mind feels as difficult as trying to control the wind. Krishna&apos;s answer is specific.
+        In 6.34 Arjuna complains that the mind is restless, turbulent and hard to control, as hard to hold as the wind. Krishna&apos;s answer is specific.
       </p>
 
       <div className="highlight-box">
@@ -683,10 +683,10 @@ export default function GitaForStudentsPage() {
           Krishna says: &quot;Undoubtedly, the mind is restless and difficult to control. But through practice (abhyasa) and dispassion (vairagya), it can be restrained.&quot;
         </p>
         <p>
-          Abhyasa means consistent, repeated practice. Vairagya means indifference to distractions, specifically the quality of seeing a distraction clearly as a distraction and choosing not to follow it. Neither of these are innate. Both are developed.
+          Abhyasa means consistent, repeated practice. Vairagya means dispassion: seeing a distraction for what it is and choosing not to follow it. Both are developed over time.
         </p>
         <p>
-          For a student: the practice is showing up to study at the same time each day, whether or not you feel like it. The dispassion is recognizing the pull of your phone or your anxiety and not acting on it immediately. Concentration is not a gift. It is the residue of these two things practiced over time.
+          For a student, the practice is sitting down to study at the same time each day, whether or not you feel like it. The dispassion is noticing the pull of a distraction or a worry and letting it go by. Concentration grows out of these two, practised over months.
         </p>
       </div>
 
@@ -697,22 +697,22 @@ export default function GitaForStudentsPage() {
         Arjuna asks Krishna what happens to someone who starts practicing yoga (self-discipline, good conduct, effort) but fails before reaching the goal. What if you fall short? Does all the effort get wasted?
       </p>
       <p>
-        Krishna&apos;s answer in BG 6.40 is one of the most reassuring passages in the Gita: a person who has done good, who has made genuine effort, is never destroyed. Such a person does not come to misfortune.
+        Krishna answers in BG 6.40: such a person meets no destruction, in this world or the next, because no one who does good comes to a bad end.
       </p>
 
       <p className="pull-quote">
-        The Gita&apos;s position is that effort in the right direction is never lost. You may not get the grade you wanted. You may fail the exam this time. But the capacity you built, the discipline you developed, the understanding you gained, none of that disappears. It stays. It compounds.
+        In the Gita, effort in the right direction is never lost. You may not get the grade you wanted, or you may fail this time, and the discipline and understanding you built are still yours.
       </p>
 
       <p>
-        This is the Gita&apos;s answer to failure. Not &quot;it doesn&apos;t matter&quot; but &quot;what was genuine in your effort is not erased by the result.&quot; The bad result is the result. The practice is something else.
+        That is the Gita&apos;s answer to failure. The result still matters, and a bad result does not erase what was real in the effort.
       </p>
 
       <h2>Lesson 9: Align With What Is Right, Then Act</h2>
       <div className="lesson-label">Lesson 9 · BG 18.78</div>
 
       <p>
-        The Gita closes not with Arjuna, but with Sanjaya, the narrator who has been watching everything. His final statement is this:
+        The Gita&apos;s last verse belongs to Sanjaya, the narrator who has been reporting the dialogue to the blind king Dhritarashtra:
       </p>
 
             <ShlokaCard
@@ -722,13 +722,13 @@ export default function GitaForStudentsPage() {
         meaningLabel="Translation"
         meaning="Where there is Krishna, the master of yoga, and Arjuna, who holds the bow, there you will find prosperity, victory, strength, and firm ethics. This is my belief."
         insightLabel="For Students"
-        insight="The verse is symbolic but precise. Krishna represents guidance, clarity, values, the wisdom that orients action. Arjuna represents skill, effort, and the willingness to act. When both are present, victory follows. For a student: align with what is right (study honestly, prepare with integrity, don't cheat, don't take shortcuts that compromise your actual understanding) and then act with full effort. That combination, wisdom and skill together, is what produces lasting results."
-        essence="Fortune, victory, and lasting achievement come when you unite clarity with skillful action."
+        insight="Sanjaya pairs Krishna, the master of yoga, with Arjuna the archer. Many readers take Krishna as guidance and Arjuna as skill and effort. For a student, that means studying honestly, skipping the shortcuts that leave you without real understanding, and then working with full effort."
+        essence="Where Krishna and Arjuna stand together, there is fortune, victory and sound conduct."
       />
 
       <h2>The One Verse to Keep Near an Exam</h2>
       <p>
-        If you only memorize one verse before an exam, make it BG 2.47. Not as a mantra. As a practical instruction.
+        If you memorise one verse before an exam, make it BG 2.47, and read it as a practical instruction.
       </p>
 
       <div className="highlight-box">
@@ -737,12 +737,10 @@ export default function GitaForStudentsPage() {
           Your preparation is done. You have a right to this action: to sit down and demonstrate what you know. You do not have control over every question that appears. You do not have control over how the evaluator grades it.
         </p>
         <p>
-          Do not let anxiety about the result take over the action. The action, right now, is to read the question carefully, think clearly, and write your best answer. That is the only thing in front of you.
+          Keep worry about the result out of the action. The action, right now, is to read the question carefully, think clearly, and write your best answer. That is the only thing in front of you.
         </p>
         <p>
-          The result follows from the action, not from your worry about the result. Focus on the action.
-        </p>
-      </div>
+          The result follows from the action, and worrying about it adds nothing.</p> </div> <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the reading of 2.47 (exam stress comes from the result as motive, the third part), the translations of 16.1 and 17.16, the gloss of svadhyaya, and where Arjuna sits in 1.47; copy edited.</p>
     </div>
 
 
@@ -753,35 +751,35 @@ export default function GitaForStudentsPage() {
       <div className="faq-item">
         <strong>Does the Bhagavad Gita help students?</strong>
         <p>
-          The Gita&apos;s core teaching, do your work fully without attachment to the result, is directly applicable to students facing exam pressure. Arjuna&apos;s situation, capable but paralyzed before a high-stakes moment, mirrors the experience of many students. The Gita addresses focus, self-mastery, dealing with failure, and the relationship between effort and outcome. It is more practical than it appears.
+          The Gita&apos;s core teaching, do your work fully without attachment to the result, applies directly to exam pressure. Arjuna, capable but unable to act before a high-stakes moment, is in a position many students know. The Gita covers focus, self-mastery, failure, and the relationship between effort and outcome.
         </p>
       </div>
 
       <div className="faq-item">
         <strong>What does the Gita say about hard work?</strong>
         <p>
-          BG 3.8 says perform your prescribed duty, because action is better than inaction. The Gita is clear: not doing the work is not a solution. It pairs this with the teaching of nishkama karma from BG 2.47: work fully, but release attachment to the outcome. Full effort without results-anxiety is the Gita&apos;s practical instruction on work.
+          BG 3.8 says to do your prescribed work, because action is better than inaction. The Gita pairs this with the teaching of nishkama karma in BG 2.47: work fully, and let go of attachment to the outcome.
         </p>
       </div>
 
       <div className="faq-item">
         <strong>What does the Bhagavad Gita say about exam stress?</strong>
         <p>
-          BG 2.47 is the most relevant verse: you have the right to perform your duty, but not to the fruits. Anxiety before exams usually comes from conflating effort with outcome. The Gita separates them. Your job is to prepare and act with full attention. The result depends on many factors, not all under your control. Focusing on what you can control reduces the anxiety produced by what you cannot.
+          Start with BG 2.47: your right is to the action, never to its fruits. Worry before exams often comes from tying your effort to the outcome. The Gita separates them. Your job is to prepare and to act with full attention, and the result depends on many factors, some outside your control.
         </p>
       </div>
 
       <div className="faq-item">
         <strong>What does the Bhagavad Gita say about concentration and focus?</strong>
         <p>
-          BG 6.35 acknowledges directly that the mind is restless, and says it can be restrained through abhyasa (consistent practice) and vairagya (dispassion toward distractions). BG 17.16 identifies silence and self-restraint as forms of mental discipline. The Gita treats focus as a developed skill, not a natural gift.
+          BG 6.35 acknowledges directly that the mind is restless, and says it can be restrained through abhyasa (consistent practice) and vairagya (dispassion toward distractions). BG 17.16 identifies silence and self-restraint as forms of mental discipline. The Gita treats focus as something you develop.
         </p>
       </div>
 
       <div className="faq-item">
         <strong>Should students read the Bhagavad Gita?</strong>
         <p>
-          The Gita addresses questions that are directly relevant to students: how to act under pressure, how to deal with fear of failure, how to stay focused, and what to do after a bad outcome. It was taught to someone experiencing the most high-stakes version of all of these at once. Reading it with these specific questions in mind, rather than as a religious text, gives it immediate practical value.
+          The Gita addresses questions that are directly relevant to students: how to act under pressure, how to deal with fear of failure, how to stay focused, and what to do after a bad outcome. It was taught to someone facing all of these at once, with lives at stake. Reading it with these questions in mind makes it practical.
         </p>
       </div>
     </div>

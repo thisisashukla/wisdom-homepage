@@ -6,15 +6,15 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: 'Atman vs Soul: The Distinction the Bhagavad Gita Actually Draws',
+  title: 'Atman vs Soul: The Distinction the Bhagavad Gita Draws',
   description:
-    "Every English translation of the Gita calls ātman 'soul.' That's a 200-year-old mistranslation. Soul is created, individual, judged by belief, given one life. Atman is uncreated, not the doer, decided by karma, cycled across lifetimes. Verses from BG, Katha Upanishad, and the Bible compared directly.",
+    "Most English translations render ātman as 'soul'. Soul is created, individual, judged by belief, given one life. Atman is uncreated, not the doer, decided by karma, cycled across lifetimes. Verses from BG, Katha Upanishad, and the Bible compared directly.",
   keywords:
-    'atman vs soul, atman meaning bhagavad gita, difference between atman and soul in hinduism, atman not soul, what is atman, jivatman paramatman, soul in hinduism, bhagavad gita 2.20 atman, karma vs belief, eternal hell vs svarga narka',
+    'atman vs soul, atman meaning bhagavad gita, difference between atman and soul in hinduism, atman not soul, what is atman, jivatman paramatman, soul in hinduism, bhagavad gita 2.20 atman, karma vs belief, eternal hell vs svarga naraka',
   openGraph: {
-    title: 'Atman vs Soul: The Distinction the Bhagavad Gita Actually Draws | Wisdom',
+    title: 'Atman vs Soul: The Distinction the Bhagavad Gita Draws | Wisdom',
     description:
-      "Every English translation of the Gita calls ātman 'soul.' That's a 200-year-old mistranslation. Soul is created, individual, judged by belief, given one life. Atman is uncreated, not the doer, decided by karma, cycled across lifetimes. Verses from BG, Katha Upanishad, and the Bible compared directly.",
+      "Most English translations render ātman as 'soul'. Soul is created, individual, judged by belief, given one life. Atman is uncreated, not the doer, decided by karma, cycled across lifetimes. Verses from BG, Katha Upanishad, and the Bible compared directly.",
     type: 'article',
     url: 'https://wisdomquotes.in/blogs/atman-not-soul-bhagavad-gita',
     siteName: 'Wisdom',
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sansearchapp',
     creator: '@thisisashukla',
-    title: 'Atman vs Soul: The Distinction the Bhagavad Gita Actually Draws | Wisdom',
-    description: "Every English translation of the Gita calls ātman 'soul.' That's a 200-year-old mistranslation. Soul is created, individual, judged by belief, given one life. Atman is uncreated, not the doer, decided by karma, cycled across lifetimes.",
+    title: 'Atman vs Soul: The Distinction the Bhagavad Gita Draws | Wisdom',
+    description: "Most English translations render ātman as 'soul'. Soul is created, individual, judged by belief, given one life. Atman is uncreated, not the doer, decided by karma, cycled across lifetimes.",
     images: ['https://wisdomquotes.in/assets/atmavssoul.webp'],
   },
   alternates: {
@@ -327,9 +327,9 @@ const schemas = [
   {
     '@context': 'https://schema.org',
     '@type': ['Article', 'LearningResource'],
-    headline: 'Atman vs Soul: The Distinction the Bhagavad Gita Actually Draws',
+    headline: 'Atman vs Soul: The Distinction the Bhagavad Gita Draws',
     description:
-      "Translating atman as 'soul' is the most common philosophical error in Indian spirituality. The two words carry different metaphysical premises. Here is the distinction the Gita actually draws.",
+      "Most English translations render ātman as 'soul', but the two words carry different premises about whether the self was created, what it is, and how it relates to the divine.",
     datePublished: '2026-08-03',
     dateModified: '2026-08-04',
     author: {
@@ -361,7 +361,7 @@ const schemas = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Wisdom', item: 'https://wisdomquotes.in/' },
       { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://wisdomquotes.in/blogs/' },
-      { '@type': 'ListItem', position: 3, name: 'Atman vs Soul: The Distinction the Bhagavad Gita Actually Draws', item: 'https://wisdomquotes.in/blogs/atman-not-soul-bhagavad-gita' },
+      { '@type': 'ListItem', position: 3, name: 'Atman vs Soul: The Distinction the Bhagavad Gita Draws', item: 'https://wisdomquotes.in/blogs/atman-not-soul-bhagavad-gita' },
     ],
   },
   {
@@ -373,7 +373,7 @@ const schemas = [
         name: 'Is atman the same as the soul?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "No, not in any precise sense. The English word 'soul' typically refers to an individual entity: created, morally accountable, capable of salvation or damnation, and carrying personal identity across death. Atman in the Bhagavad Gita is the unchanging witnessing awareness that is present in every being. The Gita's atman is unborn (aja), eternal (nitya), ancient (sanatana), and not-slain when the body is slain. More importantly, the tradition's full view, developed across the Upanishads, is that atman is ultimately identical to Brahman (the ground of all reality), not a separate created entity within it. These are structurally different concepts.",
+          text: "Only loosely. The English word 'soul' usually refers to an individual entity that is created, morally accountable, capable of salvation or damnation, and carries personal identity across death. Atman in the Bhagavad Gita is the unchanging witnessing awareness present in every being: unborn (aja), eternal (nitya), ancient (purāṇa), and not slain when the body is slain (BG 2.20). The Advaita reading of the Upanishads goes further and holds that atman is identical to Brahman, the ground of all reality.",
         },
       },
       {
@@ -381,7 +381,7 @@ const schemas = [
         name: 'What does atman mean in the Bhagavad Gita?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "In the Bhagavad Gita, atman (Sanskrit: आत्मन्) refers to the indestructible, witnessing self, what remains when everything changeable is stripped away. BG 2.20 is the most cited statement: 'It is never born and never dies at any time. It has not come into being, does not come into being, and will not come into being. It is unborn, eternal, ever-existing, and primeval.' The Gita uses atman in multiple registers, sometimes as the individual self, sometimes as the universal self, but the core claim is consistent: atman is beyond the reach of change, and what appears to die is the body (deha), not the atman.",
+          text: "In the Bhagavad Gita, atman (Sanskrit: आत्मन्) refers to the indestructible, witnessing self, what remains when everything changeable is stripped away. BG 2.20 says: 'It is never born and never dies at any time. It has not come into being, does not come into being, and will not come into being. It is unborn, eternal, ever-existing, and primeval.' The Gita uses atman for both the individual self and the universal self, and in both senses it is beyond change: what dies is the body (deha).",
         },
       },
       {
@@ -397,7 +397,7 @@ const schemas = [
         name: 'Why does the Bhagavad Gita say the atman cannot be killed?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "BG 2.19-20 contain the Gita's foundational claim: both 'this slays' and 'this is slain' are conceptual errors. Weapons cannot cut the atman. Fire cannot burn it. Water cannot wet it. Wind cannot dry it. The reasoning is that killing requires destroying something that can end. Atman, by definition, is not something that began. It is ajam (unborn), nityam (eternal), sanatana (ever-existing), and purana (ancient). These are not poetic claims. They are a precise metaphysical argument: because the atman has no origin, it can have no end. What ends at death is the body (sharira) and the temporary personality assembled by prakriti. The atman was never a part of that assembly.",
+          text: "BG 2.19 says that whoever thinks the atman kills, or is killed, has misunderstood. BG 2.20 gives the reason: it is aja (unborn), nitya (eternal), śāśvata (ever-existing) and purāṇa (ancient), and what has no origin has no end. BG 2.23 adds that weapons do not cut it, fire does not burn it, water does not wet it and wind does not dry it. What ends at death is the body (sharira).",
         },
       },
       {
@@ -405,7 +405,7 @@ const schemas = [
         name: 'What does tat tvam asi mean in relation to atman?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "'Tat tvam asi' (That thou art) is one of the four mahavakyas, great sentences, from the Upanishads. It appears in the Chandogya Upanishad and teaches that the individual atman (tvam, 'thou') is identical to Brahman (tat, 'that'). This is why translating atman as 'soul' creates problems. In most Western theological frameworks, the soul is not God. It is a created entity in relationship with God, always fundamentally distinct. But tat tvam asi says the deepest self is the ground of all reality. The Gita's Chapter 13 teaching on the kshetra (field) and kshetrajna (knower of the field) points in this direction: the knower in each being is the one universal Witness.",
+          text: "'Tat tvam asi' (That thou art) is one of the four mahavakyas, great sentences, from the Upanishads. It appears in the Chandogya Upanishad and teaches that the individual atman (tvam, 'thou') is identical to Brahman (tat, 'that'). This is why translating atman as 'soul' creates problems: in mainstream Christian theology the soul is a created entity in relationship with God and always distinct from God. But tat tvam asi says the deepest self is the ground of all reality. The Gita's Chapter 13 teaching on the kshetra (field) and kshetrajna (knower of the field) points in this direction: the knower in each being is the one universal Witness.",
         },
       },
     ],
@@ -442,11 +442,11 @@ export default function AtmanNotSoulPage() {
             <div className="chapter-badge-dot"></div>
           </div>
           <h1 className="article-title">
-            Soul Is Not Atman<br />
-            <em>(And the Difference Matters)</em>
+            Atman and Soul<br />
+            <em>Two Different Ideas of the Self</em>
           </h1>
           <p className="article-subtitle">
-            Translating ātman as &ldquo;soul&rdquo; is the most common philosophical error in English-language Indian spirituality. The two words carry different metaphysical premises: different answers to whether the self was created, what it is made of, and how it relates to the divine.
+            Most English translations render ātman as &ldquo;soul&rdquo;, but the two words carry different premises: different answers to whether the self was created, what it is made of, and how it relates to the divine.
           </p>
           <div className="article-meta">
             <span className="meta-item">
@@ -487,7 +487,7 @@ export default function AtmanNotSoulPage() {
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>Soul and ātman are not synonyms: they describe different ontologies, different destinies, and different relationships to time</figcaption>
+          <figcaption>Soul and ātman describe different ontologies, destinies and relationships to time</figcaption>
         </figure>
 
         <div className="definition-box" data-mp-section="definition_box">
@@ -503,7 +503,7 @@ export default function AtmanNotSoulPage() {
         </div>
 
         <p className="lead">
-          Open almost any English translation of the Bhagavad Gita and you will find &ldquo;soul&rdquo; used to render ātman. It seems harmless. But the word carries freight. &ldquo;Soul&rdquo; implies an individual, created entity with moral continuity: something that can be saved or lost, rewarded or condemned, distinct from God in the way a created thing is distinct from its creator. Atman in the Gita&apos;s framework is none of those things. Getting this wrong changes what the entire second chapter is actually saying.
+          Open almost any English translation of the Bhagavad Gita and you will find &ldquo;soul&rdquo; used to render ātman. It seems harmless. But the word carries freight. &ldquo;Soul&rdquo; implies an individual, created entity with moral continuity: something that can be saved or lost, rewarded or condemned, distinct from God in the way a created thing is distinct from its creator. Atman in the Gita&apos;s framework is none of those things, and the choice of word changes how you read Chapter 2.
         </p>
 
         <a
@@ -521,15 +521,15 @@ export default function AtmanNotSoulPage() {
           </svg>
         </a>
 
-        <h2>What &ldquo;Soul&rdquo; Actually Carries</h2>
+        <h2>What &ldquo;Soul&rdquo; Carries</h2>
         <p>
           The English word &ldquo;soul&rdquo; descends from the Old English <em>sāwol</em>, and through centuries of Christian theological development it has come to mean something specific: an individual, immortal entity created by God, the seat of moral agency, the thing that stands before divine judgment. It has a beginning. The Creator-creature distinction is non-negotiable in Abrahamic theology, so the soul is always fundamentally other than God. And its identity, who you are with your name and history, persists into the afterlife.
         </p>
         <p>
-          That is what the word carries when an English-speaking reader encounters it. When Swami Prabhupada translated BG 2.20 as &ldquo;The soul is never born nor dies at any time,&rdquo; readers from a Christian background heard one thing. Readers from a secular background heard another. Almost none of them heard what the Sanskrit is actually saying, because the word &ldquo;soul&rdquo; filtered everything through a framework the Gita does not share.
+          That is what the word carries when an English-speaking reader encounters it. When A.C. Bhaktivedanta Swami Prabhupada translated BG 2.20 as &ldquo;For the soul there is neither birth nor death at any time,&rdquo; readers from a Christian background heard one thing. Readers from a secular background heard another. Few of them heard what the Sanskrit says, because the word &ldquo;soul&rdquo; filtered it through a framework the Gita does not share.
         </p>
 
-        <h2>What the Bible Actually Says About the Soul</h2>
+        <h2>What the Bible Says About the Soul</h2>
         <p>
           Rather than inferring the &ldquo;soul&rdquo; concept from second-hand summaries, it helps to read the texts directly. The Bible&apos;s account of the soul across the Hebrew scriptures and the Christian writings is consistent on several points. All of them diverge from what the Gita says about ātman.
         </p>
@@ -584,17 +584,17 @@ export default function AtmanNotSoulPage() {
           </div>
         </div>
 
-        <h2>What Atman Actually Is</h2>
+        <h2>What Atman Is</h2>
         <p>
           The Sanskrit root of <em>ātman</em> is contested, one reading connects it to <em>an</em>, to breathe; another to <em>at</em>, to move constantly. Whatever the etymology, the concept is precise. Atman is the witnessing awareness that underlies all experience without being constituted by any of it. Strip away the personality, the emotions, and the intellect, and what remains is the awareness itself, in which all of them appeared.
         </p>
         <p>
-          The Gita&apos;s Chapter 2 makes four specific claims about atman that directly contradict what &ldquo;soul&rdquo; implies: it is unborn (<em>aja</em>), eternal (<em>nitya</em>), ancient beyond measure (<em>purāṇa</em> and <em>sanātana</em>), and not the kind of thing that could be killed even if the body it inhabits is destroyed. This last claim is the one most translations soften.
+          The Gita&apos;s Chapter 2 makes four specific claims about atman that directly contradict what &ldquo;soul&rdquo; implies: it is unborn (<em>aja</em>), eternal (<em>nitya</em>), ancient beyond measure (<em>purāṇa</em> and <em>sanātana</em>), and not killed when the body it inhabits is destroyed.
         </p>
 
         <h2>BG 2.19–20: The Core Statement</h2>
         <p data-mp-section="bg_2_19_20">
-          The sequence of two verses in Chapter 2 where Krishna introduces this teaching is one of the most quoted passages in all of Sanskrit literature. The first verse corrects the premise of the question. The second defines what atman actually is.
+          Krishna introduces this teaching in two verses. The first corrects the premise of Arjuna&apos;s grief, and the second says what atman is. Both closely parallel Katha Upanishad 1.2.18–19.
         </p>
 
         <ShlokaCard
@@ -602,32 +602,32 @@ export default function AtmanNotSoulPage() {
           sanskrit="य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् । उभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥"
           iast="ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam | ubhau tau na vijānīto nāyaṃ hanti na hanyate ||"
           meaningLabel="Translation"
-          meaning="He who thinks this one kills and he who thinks this one is killed: both of these do not know. This one neither kills nor is killed."
+          meaning="He who thinks this one kills and he who thinks this one is killed: neither of them understands, for this one neither kills nor is killed."
           insightLabel="What This Teaches"
-          insight="The verse does not say killing is wrong, or that warfare is spiritually dangerous. It says the premise of both 'this kills' and 'this is killed' is false. To kill something, there must be something there to end. To be killed, there must be something there to end. Atman, by the definition Krishna is about to give, is not the kind of thing that can end. Arjuna's grief, that he will kill his teachers, his relatives, his friends, is based on a confusion about what those people actually are at their deepest level. That confusion is what Chapter 2 spends 72 verses correcting."
-          essence="The concepts of killing and being killed do not apply to atman. Both sides of that equation misidentify what a person fundamentally is."
+          insight="The verse makes no judgment on killing or warfare. It says that both 'this kills' and 'this is killed' rest on a false premise, because the atman cannot end. Arjuna's grief at killing his teachers, relatives and friends comes from a confusion about what those people are at their deepest level, and Krishna's teaching from 2.11 onward sets out to correct it."
+          essence="Whoever thinks the atman kills, or is killed, has misunderstood: it neither kills nor is killed."
         />
 
         <ShlokaCard
           verseRef="Bhagavad Gita 2.20"
           sanskrit="न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"
-          iast="na jāyate mriyate vā kadācin nāyaṃ bhūtvā bhavatā vā na bhūyaḥ | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||"
+          iast="na jāyate mriyate vā kadācin nāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||"
           meaningLabel="Translation"
-          meaning="It is never born and never dies at any time. It has not come into being, does not come into being, and will not come into being. It is unborn, eternal, ever-existing, and ancient. It is not slain when the body is slain."
+          meaning="It is never born and never dies at any time; having been, it will not cease to be. Unborn, eternal, ever-existing and ancient, it is not slain when the body is slain."
           insightLabel="What This Teaches"
-          insight="Count the negations: never born, never dies, has not come into being, does not come into being, will not come into being, not slain. Krishna is not offering comfort. He is making a structural argument. If atman never originated, if it is aja (unborn), then the question of its ending does not arise. What has no beginning cannot have an end, because ending presupposes that there was a point of origination to measure from. The word sanatana (ever-existing, primordial) is the same word used for 'sanatan dharma': the eternal order. Atman belongs to the same category as that order: not created, not destroyable, simply what is."
-          essence="Atman's indestructibility is not a property it has. It follows directly from the fact that it was never born."
+          insight="Count the negations: never born, never dies, not slain. Krishna is making an argument here: if atman is aja (unborn), the question of its ending never comes up. The four adjectives are aja (unborn), nitya (eternal), śāśvata (ever-existing) and purāṇa (ancient)."
+          essence="The atman is unborn, eternal and ancient, so it is not slain when the body is slain."
         />
 
-        <h2>The Clothes Analogy, and What It Actually Claims</h2>
+        <h2>The Clothes Analogy, and What It Claims</h2>
         <p>
-          BG 2.22 offers the Gita&apos;s most familiar image for atman and the body: a person discards worn-out clothes and puts on new ones. The atman discards worn-out bodies and takes on new ones. This analogy is usually cited to explain rebirth, and it does explain rebirth. But it also does something more pointed.
+          BG 2.22 offers the Gita&apos;s most familiar image for atman and the body: a person discards worn-out clothes and puts on new ones. The atman discards worn-out bodies and takes on new ones. The analogy is usually cited to explain rebirth, and it also says something about identity.
         </p>
         <p>
-          Clothes do not define the person who wears them. You are not your shirt. When you change your shirt, you do not change. The personality, the accumulated karma, the bundle of tendencies and memories that constitutes what people mean by &ldquo;you&rdquo;: in the Gita&apos;s framework, all of that is the clothes, not the person wearing them. It is part of prakriti, the field of the changeable. The atman is the unchanging wearer.
+          When you change your shirt, you stay the same person. In the Gita&apos;s framework the body is the shirt, part of prakriti, the field of the changeable, and the atman is the unchanging wearer.
         </p>
         <p>
-          This is where &ldquo;soul&rdquo; breaks as a translation. When Christians or secular Westerners read &ldquo;the soul is reborn in a new body,&rdquo; they imagine the personality, the &ldquo;you&rdquo; with your memories and preferences, somehow carrying across. That is the soul concept. But BG 2.22 does not say the personality is reborn. It says the atman takes a new body. The personality is part of the old body. It is the clothes being discarded.
+          This is where &ldquo;soul&rdquo; strains as a translation. When Christians or secular Westerners read &ldquo;the soul is reborn in a new body,&rdquo; they imagine the &ldquo;you&rdquo; with your memories and preferences carrying across. BG 2.22 says the embodied self takes a new body and says nothing about your name and memories going with it. What carries over, in 15.8 and 6.43, is the mind and senses and the understanding already built up, more like a tendency than a remembered life.
         </p>
 
         <div className="comparison-grid" data-mp-section="comparison_section">
@@ -637,12 +637,12 @@ export default function AtmanNotSoulPage() {
           </div>
           <div className="comparison-cell">
             <div className="cell-label">Atman (Bhagavad Gita)</div>
-            <p>Unborn, uncreated, eternal. Not personal in the sense of carrying individual identity: the personality belongs to prakriti. Not separate from Brahman in any ultimate sense. Beyond virtue and sin (BG 2.19). Not saved, because it never needed saving. It was never in danger.</p>
+            <p>Unborn, uncreated, eternal. Not personal in the sense of carrying individual identity: the personality belongs to prakriti. Not separate from Brahman in any ultimate sense. Neither acts nor is stained by action (BG 13.31), so it needs no saving.</p>
           </div>
         </div>
 
         <div className="pull-quote">
-          The soul concept says: God made you, and what God made can be loved or lost. The atman concept says: you were never made, and because you were never made, you cannot be unmade.
+          In Genesis 2:7 God forms a living being; in BG 2.20 the atman is unborn. Most of the differences on this page follow from that.
         </div>
 
         <h2>BG 2.24: Four Properties That Rule Out &ldquo;Soul&rdquo;</h2>
@@ -655,15 +655,15 @@ export default function AtmanNotSoulPage() {
           sanskrit="अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च । नित्यः सर्वगतः स्थाणुरचलोऽयं सनातनः ॥"
           iast="acchedyo'yam adāhyo'yam akledyo'śoṣya eva ca | nityaḥ sarvagataḥ sthāṇur acalo'yaṃ sanātanaḥ ||"
           meaningLabel="Translation"
-          meaning="This cannot be cut. This cannot be burned. This cannot be wetted. This cannot be dried. It is eternal, all-pervading, stable, immovable, and primordial."
+          meaning="It cannot be cut, burned, wetted or dried. It is eternal, all-pervading, stable, immovable and primordial."
           insightLabel="What This Teaches"
-          insight="The four negations (uncut, unburned, unwetted, undried) correspond to the four classical elements: earth/metal (cut), fire (burned), water (wetted), air (dried). Atman is immune to destruction by every element in the manifest world because it is not made of those elements. It does not belong to prakriti at all. The word sarvagata (all-pervading) is important: the soul in Western frameworks is individuated and local, it is my soul, located in me. Atman is sarvagata: it pervades everywhere. An all-pervading witness has no fixed location and no boundary; that profile differs fundamentally from an individual soul."
-          essence="Atman is not a thing in the world that happens to be indestructible. It sits outside the order of things entirely. Nothing in that order can touch it."
+          insight="The four negations repeat 2.23: weapons do not cut it, fire does not burn it, water does not wet it, wind does not dry it. The word sarvagata (all-pervading) matters for the comparison. The soul in Western frameworks is individual and local, my soul, located in me. An all-pervading witness has no fixed location and no boundary."
+          essence="Nothing can cut, burn, wet or dry the atman; it is eternal, everywhere, and unmoving."
         />
 
         <h2>The Jiva Problem: If Atman Is Universal, Why Does It Seem Individual?</h2>
         <p data-mp-section="bg_15_7">
-          Here is the question the atman teaching always generates: if atman is universal, all-pervading, and not personal, why does it feel so specific? Why does the person reading this feel like a particular person with a particular history, not a fragment of universal awareness?
+          The atman teaching raises a question: if atman is universal, all-pervading and impersonal, why does each of us feel like a particular person with a particular history?
         </p>
         <p>
           The Gita addresses this directly in Chapter 15, and the answer introduces a second term: <em>jīvātman</em> (the living atman, the individual self).
@@ -674,15 +674,15 @@ export default function AtmanNotSoulPage() {
           sanskrit="ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥"
           iast="mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ | manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati ||"
           meaningLabel="Translation"
-          meaning="An eternal fragment of me in the world of the living becomes the individual self (jivatman). It draws to itself the senses, including mind as the sixth, which abide in prakriti."
+          meaning="An eternal fragment of me becomes the individual self (jivatman) among living beings. It draws to itself the senses, including mind as the sixth, which abide in prakriti."
           insightLabel="What This Teaches"
-          insight="The word amsha means fragment, portion, or part. But the Gita does not mean a fragment in the sense that a chip broken from a rock is a fragment: smaller, separate, less than the original. It means the same light appearing through a particular aperture. The jivatman is the universal atman as it appears individuated, associated with a particular body, particular senses, a particular manas (mind). What creates that appearance of individuation is the drawing-in of the senses, which belong to prakriti. The senses are the mechanism of limitation. The atman itself remains unlimited. This is why the universal feels personal: not because atman changed, but because it is seen through the aperture of a particular sensory and mental apparatus."
-          essence="The jivatman is the universal atman seen through the lens of a particular body and mind. The lens creates the appearance of individuation. The atman itself does not individuate."
+          insight="The word aṃśa means fragment, portion or part. Advaita commentators read it as the same light appearing through a particular aperture, while Ramanuja and Madhva read it as a real part distinct from the whole. On the Advaita reading, the jivatman is the universal atman associated with a particular body, senses and manas (mind), and the senses, which belong to prakriti, create the appearance of a separate person."
+          essence="An eternal part of Krishna becomes the individual self and draws to itself the mind and the five senses."
         />
 
         <h2>The Knower of the Field (BG 13.31)</h2>
         <p data-mp-section="bg_13_31">
-          Chapter 13 is the most systematically philosophical chapter in the Gita. It introduces the distinction between <em>kshetra</em> (the field: body, mind, senses, personality) and <em>kshetrajna</em> (the knower of the field, the witnessing awareness). The knower of the field is atman. In BG 13.31, Krishna makes a claim that separates atman definitively from any &ldquo;soul&rdquo; concept.
+          Chapter 13 introduces the distinction between <em>kshetra</em> (the field: body, mind, senses, personality) and <em>kshetrajna</em> (the knower of the field, the witnessing awareness). The knower of the field is atman. In BG 13.31, Krishna says something about it that no &ldquo;soul&rdquo; concept would say.
         </p>
 
         <ShlokaCard
@@ -692,8 +692,8 @@ export default function AtmanNotSoulPage() {
           meaningLabel="Translation"
           meaning="Because of being without beginning and without qualities, this imperishable supreme Self, even dwelling in the body, neither acts nor is stained."
           insightLabel="What This Teaches"
-          insight="Atman carries two defining properties here: anāditva (without beginning) and nirguṇatva (without the three gunas, meaning without qualities). The first means what BG 2.20 established: if atman has no starting point, it has no ending point. The second means that the three gunas (sattva, rajas, tamas), which constitute the entirety of prakriti, have no claim on atman. Everything in the manifest world is some mixture of them; atman is nirguṇa, made of none of them. This is what makes it a witness rather than a participant. It dwells in the body but does not act and is not stained. The 'soul' concept, by contrast, is very much a moral entity: it is stained by sin, cleansed by virtue, capable of guilt and grace. Atman in the Gita is explicitly beyond that entire framework."
-          essence="Atman acts in no action and takes no stain from any of them. It is not made of the substance from which actions and stains are made."
+          insight="Atman carries two defining properties here: anāditva (without beginning) and nirguṇatva (without the three gunas, meaning without qualities). The first means what BG 2.20 established: if atman has no starting point, it has no ending point. The second means that the three gunas (sattva, rajas, tamas), which constitute the entirety of prakriti, have no claim on atman. Everything in the manifest world is some mixture of them, and atman is made of none of them, so it witnesses action without taking part. The 'soul', by contrast, is a moral entity, stained by sin and cleansed by grace."
+          essence="Without beginning and without qualities, the supreme Self dwells in the body yet neither acts nor is stained."
         />
 
         <div className="highlight-box" data-mp-section="key_differences">
@@ -702,10 +702,10 @@ export default function AtmanNotSoulPage() {
             <strong>On creation:</strong> In Abrahamic theology, the soul is created: it had a beginning when God made it. Atman is aja: unborn, without beginning. Something uncreated is categorically different from something created, regardless of how long it lasts afterward.
           </p>
           <p>
-            <strong>On individuality:</strong> The soul is personal, your soul, with your moral history. BG 13.31 says atman is nirguṇa (without qualities) and BG 2.24 says sarvagata (all-pervading). An all-pervading witness without personal qualities is not an individual. The individuation is in the aperture, not in the awareness itself.
+            <strong>On individuality:</strong> The soul is personal, your soul, with your moral history. BG 13.31 says atman is nirguṇa (without qualities) and BG 2.24 says sarvagata (all-pervading). An all-pervading witness without personal qualities cannot be an individual in the soul&apos;s sense.
           </p>
           <p>
-            <strong>On moral accountability:</strong> The soul can sin; grace must rescue it. Atman na karoti, na lipyate: neither acts nor is stained. It sits outside the moral framework entirely. Karma accrues to the jivatman, to the person-in-prakriti. Not to atman as witness.
+            <strong>On moral accountability:</strong> The soul can sin; grace must rescue it. Atman na karoti, na lipyate: neither acts nor is stained. Karma accrues to the jivatman, the person within prakriti, and leaves atman as witness untouched.
           </p>
           <p>
             <strong>On relationship to the divine:</strong> The soul is distinct from God, always a creature before the Creator. Atman&apos;s relationship to Brahman in the full Vedantic analysis is expressed in the Chandogya Upanishad&apos;s mahavakya: <em>tat tvam asi</em>, that thou art. The mahavakya declares identity: &ldquo;you are that.&rdquo;
@@ -716,30 +716,30 @@ export default function AtmanNotSoulPage() {
 
         <h2>Why the Distinction Matters Practically</h2>
         <p>
-          The difference between atman and soul changes what Arjuna&apos;s problem actually is, and what the solution to it is.
+          The difference between atman and soul changes what Arjuna&apos;s problem is, and what solves it.
         </p>
         <p>
           If Arjuna has a soul (a created, individual, morally accountable entity), then his grief on the battlefield is about the fate of other souls. Will Bhishma&apos;s soul survive? Will Drona&apos;s? And his own soul: will he incur karma, punishment, damnation for what he is about to do?
         </p>
         <p>
-          But if the people Arjuna is looking at are, at their deepest level, atman, unborn, eternal, neither killing nor being killed, then Arjuna&apos;s grief is based on a case of mistaken identity. He is mourning the death of something that cannot die. And his fear of spiritual consequence is based on the same error: imagining that the atman-in-him can accumulate stain, when BG 13.31 explicitly says it cannot.
+          If the people Arjuna is looking at are, at their deepest level, atman, unborn, eternal, neither killing nor being killed, then his grief rests on mistaken identity. He is mourning the death of something that cannot die. And his fear of spiritual consequence is based on the same error: imagining that the atman-in-him can accumulate stain, when BG 13.31 explicitly says it cannot.
         </p>
         <p>
           The Gita&apos;s answer is clarification. The atman in each person who harms or is harmed stands outside that event entirely. The harm is real, in the field of prakriti. The witness in each being is beyond that field.
         </p>
 
         <div className="pull-quote">
-          Atman is not something the Gita tells you to protect. It is something the Gita tells you to recognize. What you are cannot be touched.
+          The Gita asks Arjuna to recognize the atman in himself and in others; it never asks him to protect it.
         </div>
 
         <h2 data-mp-section="afterlife_comparison">The Soul&apos;s One Life vs the Atman&apos;s Endless Cycle</h2>
         <p>
-          When the question shifts from what soul and atman <em>are</em> to what happens after death, the frameworks become genuinely irreconcilable. Ask how many lives the self gets, what determines where it ends up, and whether that outcome is permanent: the two traditions give opposite answers to every question.
+          When the question shifts from what soul and atman <em>are</em> to what happens after death, the frameworks diverge further. Ask how many lives the self gets, what decides where it ends up, and whether that outcome is permanent, and the two traditions answer differently each time.
         </p>
 
         <h3>The Christian Map: One Life, One Verdict</h3>
         <p>
-          The author of Hebrews uses a specific Greek word to establish the soul&apos;s temporal framework: <em>hapax</em>. Once, once-for-all. The same word Paul uses in Romans 6:10 for Christ&apos;s death: a single event of permanent effect. The parallel is deliberate. As Christ died once and that death settled the question of sin for all time, each person dies once and that death settles their eternal state.
+          The author of Hebrews uses a specific Greek word to establish the soul&apos;s temporal framework: <em>hapax</em>. Once, once-for-all. The writer uses the same word in the next verse, 9:28, for Christ&apos;s offering of himself: as each person dies once and then faces judgment, Christ was offered once.
         </p>
 
         <div className="bible-card">
@@ -753,10 +753,10 @@ export default function AtmanNotSoulPage() {
         </div>
 
         <p>
-          What determines the verdict at that one judgment is not accumulated action across many lives but a response made within the single one. The primary text is John 3:16: whoever believes in the Son has eternal life. The inverse follows from John 3:18: whoever does not believe is &ldquo;condemned already.&rdquo; Augustine in <em>Confessions</em> I.1.1 locates the soul&apos;s entire orientation in this framework: &ldquo;Thou madest us for Thyself, and our heart is restless, until it repose in Thee.&rdquo; The restlessness is not samsara. It is the ache of a created being pointed toward a specific, personal God. One life to orient toward or away from that. One death to fix the direction permanently.
+          The verdict at that judgment depends on a response made within the single life. The primary text is John 3:16: whoever believes in the Son has eternal life. The inverse follows from John 3:18: whoever does not believe is &ldquo;condemned already.&rdquo; Augustine in <em>Confessions</em> I.1.1 locates the soul&apos;s entire orientation in this framework: &ldquo;Thou madest us for Thyself, and our heart is restless, until it repose in Thee.&rdquo; The restlessness he describes is that of a created being pointed toward a personal God, with one life to turn toward or away from God and one death to fix the direction.
         </p>
         <p>
-          The outcome is then eternal. Matthew 25:46 uses the same Greek adjective, <em>aionios</em>, for both possibilities in the same sentence. Augustine&apos;s argument in <em>City of God</em> Book XXI is grammatical as much as theological: you cannot give &ldquo;eternal life&rdquo; and &ldquo;eternal punishment&rdquo; different durations when they share the same modifier. If one has no end, the other has no end. Heaven and hell in this framework are final destinations. There is no return mechanism.
+          The outcome is then eternal. Matthew 25:46 uses the same Greek adjective, <em>aionios</em>, for both possibilities in the same sentence. Augustine&apos;s argument in <em>City of God</em> Book XXI is grammatical as much as theological: you cannot give &ldquo;eternal life&rdquo; and &ldquo;eternal punishment&rdquo; different durations when they share the same modifier. If one has no end, the other has no end. Heaven and hell in this framework are final destinations.
         </p>
 
         <div className="bible-card">
@@ -765,20 +765,20 @@ export default function AtmanNotSoulPage() {
             &ldquo;And these will go away into eternal punishment, but the righteous into eternal life.&rdquo;
           </div>
           <div className="bible-contrast">
-            <strong>Against ātman:</strong> Aionios: the same adjective, the same sentence, two permanent outcomes. In the Hindu framework, swarg and nark are real but temporary, proportional to karmic balance, lasting only as long as the accumulated merit or demerit behind them. When that balance is exhausted, the jivatman returns to mrityu-lok. There is no permanent address in the material world. Not even the heavenly ones.
+            <strong>Against ātman:</strong> Aionios: the same adjective, the same sentence, two permanent outcomes. In the Gita&apos;s framework, svarga and naraka are real but temporary, lasting only as long as the merit or demerit behind them. When that is exhausted, the jivatman returns to mrityu-lok (BG 9.21).
           </div>
         </div>
 
         <p>
-          C.S. Lewis gave the permanence of Christian hell its most precise modern formulation in <em>The Problem of Pain</em>: &ldquo;The doors of hell are locked on the inside.&rdquo; Hell is not a place God throws people. It is the state of a will that has fixed itself permanently against God. The soul that has consistently chosen self over God in its one life simply continues in the direction it was already going. That direction, when time runs out, becomes damnation. It does not recycle. It does not dissolve. It persists as the permanent shape of that soul&apos;s freely chosen orientation.
+          C.S. Lewis described the permanence of Christian hell in <em>The Problem of Pain</em>: &ldquo;The doors of hell are locked on the inside.&rdquo; On this view hell is the state of a will that has fixed itself against God. The soul that has chosen self over God in its one life continues in that direction, and when time runs out, the direction becomes permanent.
         </p>
 
         <h3>The Vedantic Map: Cyclic Return and Karmic Balance</h3>
         <p>
-          The jivatman does not pass through once and stop. It cycles. Samsara, the flow of birth, death, and rebirth within prakriti, is the jivatman&apos;s default condition. Swarg (the celestial worlds) and nark (the worlds of suffering) are real in this framework, but they are not destinations. They are proportional and temporary. Reach swarg through virtuous karma, and you experience it as long as the merit that earned it holds. When that merit runs out, you fall back to mrityu-lok. What decides where the jivatman goes is not belief but karma, the accumulated weight of action and its consequences, measured precisely, carried with mathematical impartiality.
+          The jivatman cycles. Samsara, the flow of birth, death, and rebirth within prakriti, is the jivatman&apos;s default condition. Svarga (the celestial worlds) and naraka (the worlds of suffering) are real in this framework, and both are temporary. Reach svarga through virtuous karma, and you stay as long as the merit that earned it holds; when it runs out, you fall back to mrityu-lok. Karma, the accumulated weight of action and its consequences, decides where the jivatman goes.
         </p>
         <p>
-          BG 9.21 names the condition of a soul cycling through heavens and back with a two-word Sanskrit phrase: <em>gatāgataṃ</em>. Going and returning. The phrase carries no comfort. It describes the loop that even pious action, on its own, cannot break.
+          BG 9.21 names the condition of a jivatman cycling through heaven and back with one compound: <em>gatāgataṃ</em>, going and returning. It describes the loop that pious action aimed at heavenly pleasure cannot break.
         </p>
 
         <ShlokaCard
@@ -788,16 +788,16 @@ export default function AtmanNotSoulPage() {
           meaningLabel="Translation"
           meaning="After enjoying the vast heaven-world, they return to the mortal world when their merit is exhausted. Thus, those who follow the ritual path of the three Vedas and seek pleasures gain only going and returning."
           insightLabel="What This Teaches"
-          insight="The key phrase is kṣīṇe puṇye: 'when the merit is exhausted.' The heavenly experience in this framework is not a permanent home but a proportional reward that runs out. That is not pessimism about virtue. It is a precise statement about what karma-based reward can and cannot do. It can buy time in swarg. It cannot end the mechanism that keeps the jivatman cycling. The word gatāgataṃ, going and returning, describes what even the pious gain if their goal is pleasure in heaven rather than release from samsara itself. They get what they aimed for: temporary, magnificent, and finite."
-          essence="What is won by wanting is lost by time. Even vast heavens have an expiry."
+          insight="The key phrase is kṣīṇe puṇye: 'when the merit is exhausted.' Heaven in this framework is a reward that runs out. Merit can buy time in svarga; it cannot end the cycle. The word gatāgataṃ, going and returning, describes what even the pious gain if their goal is pleasure in heaven rather than release from samsara itself. They get what they aimed for, and it ends."
+          essence="When their merit runs out, those who enjoyed heaven return to the mortal world: going and returning."
         />
 
         <p>
-          The Katha Upanishad, which predates the Gita and is the source text for much of Chapter 2&apos;s teaching on atman, observes that the foolish &ldquo;chase after outward pleasures, falling into the wide net of death.&rdquo; The wise, by contrast, &ldquo;having known what is beyond death, do not pray for the unstable among things that are stable.&rdquo; <em>Dhruva</em>, the stable, the permanent, is what the Vedantic path points toward. And finding it requires recognizing that both swarg and nark, however different in experience, belong to the same unstable category.
+          The Katha Upanishad, which most scholars date before the Gita and which BG 2.19–20 closely echo, observes that the foolish &ldquo;chase after outward pleasures, falling into the wide net of death.&rdquo; The wise, by contrast, &ldquo;knowing immortality, do not seek the stable among things that are unstable&rdquo; (Katha 2.1.2). <em>Dhruva</em>, the stable, the permanent, is what the Vedantic path points toward. Finding it means recognizing that svarga and naraka, however different in experience, are both unstable.
         </p>
 
         <p>
-          Unlike the Christian soul, which enters each life carrying only what was built in that one existence, the jivatman carries karmic residue across every lifetime. Not as memory (the personality is prakriti, discarded at death) but as <em>vasanas</em> (deep-grooved tendencies) and <em>sanskaras</em> (impressions that shape aptitude and inclination from the first breath of the new birth). BG 6.43 provides the most concrete illustration of what this means in practice.
+          Unlike the Christian soul, which enters each life carrying only what was built in that one existence, the jivatman carries karmic residue across every lifetime. It carries this as <em>vasanas</em> (deep-grooved tendencies) and <em>sanskaras</em> (impressions that shape aptitude and inclination from the first breath of the new birth). BG 6.43 gives an example.
         </p>
 
         <ShlokaCard
@@ -805,43 +805,42 @@ export default function AtmanNotSoulPage() {
           sanskrit="तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम् । यतते च ततो भूयः संसिद्धौ कुरुनन्दन ॥"
           iast="tatra taṃ buddhisaṃyogaṃ labhate paurvadehikam | yatate ca tato bhūyaḥ saṃsiddhau kurunandana ||"
           meaningLabel="Translation"
-          meaning="There, O son of Kuru, he effortlessly regains the spiritual understanding from his previous life. And from that point, he strives again with greater force toward complete success."
+          meaning="There, O son of Kuru, he regains the understanding of his previous life. And from that point, he strives again with greater force toward complete success."
           insightLabel="What This Teaches"
-          insight="The practitioner who dies before completing the path does not start over. In the next birth, in a family where the conditions are right, the accumulated understanding returns, and the work picks up from where it stopped. 'Paurvadehikam' means 'belonging to the former body.' The understanding was the former body's, but it is not lost with it. This is not the soul's moral ledger being judged and settled at death. It is karma functioning as an across-lives continuity system. What was genuinely built carries forward. What was genuine practice does not waste. The jivatman's spiritual maturity is not a single-life property; it accumulates."
-          essence="Nothing gained in sincere practice is ever lost. The work continues where it stopped."
+          insight="A practitioner who dies before completing the path is reborn in a family where conditions are right (6.41–42), regains the understanding already built, and picks up the work from there. 'Paurvadehikam' means 'belonging to the former body': the understanding outlives the body it was gained in."
+          essence="In the next birth the yogi regains the understanding of the former life and strives again for perfection."
         />
 
         <h3>Different Maps, Different Goals</h3>
         <p>
-          The two maps produce different goals at the level of what each tradition is actually asking the self to pursue.
+          The two maps also set the self different goals.
         </p>
         <p>
-          Salvation in the Christian framework means reaching the right verdict at the one judgment: eternal life, union with God, arrival at the permanent good destination. The soul that achieves this does not cycle back. It has reached what it was made for. The entirety of Christian ethics and theology is organized around making it to that verdict correctly, through faith, grace, the sacraments, and the alignment of will with God&apos;s will.
+          Salvation in the Christian framework means reaching the right verdict at the one judgment: eternal life, union with God, arrival at the permanent good destination. The soul that reaches it has reached what it was made for, through faith, grace, the sacraments, and the alignment of its will with God&apos;s.
         </p>
         <p>
-          Moksha in the Vedantic framework means something structurally different. Not arriving at the right destination but ending the mechanism of destinations altogether. BG 8.15 describes those who reach Krishna as free from <em>punarjanma</em>, again-birth, the very thing that keeps the cycle going. They do not get good swarg. They exit samsara. The Gita&apos;s word for the cycle itself is <em>duḥkhālayam</em>, a dwelling of suffering, and moksha is liberation from that dwelling, not graduation to a better address within it.
+          Moksha in the Vedantic framework means ending the cycle of destinations altogether. BG 8.15 describes those who reach Krishna as free from <em>punarjanma</em>, again-birth, the very thing that keeps the cycle going. They leave samsara. The same verse calls rebirth <em>duḥkhālayam</em>, a dwelling of suffering, and moksha is release from that dwelling.
         </p>
         <p>
-          Aquinas made an observation that sharpens the contrast from the Christian side. In his <em>Commentary on 1 Corinthians 15</em>, he wrote: &ldquo;If my soul is not I, and if the soul alone is saved, then I am not saved.&rdquo; The person is not the soul alone. The person is the soul-body composite. Which is why Christianity insists on the bodily resurrection: salvation of the soul without eventual resurrection of the body is not salvation of the <em>person</em>. The individual, embodied, particular self has permanent theological significance. God does not want to save &ldquo;awareness in general.&rdquo; He wants to save this person, with this body, transformed but preserved.
+          Aquinas made an observation that sharpens the contrast from the Christian side. In his <em>Commentary on 1 Corinthians 15</em>, he wrote: &ldquo;My soul is not I; and if only souls are saved, I am not saved, nor is any man.&rdquo; For Aquinas the person is the soul-body composite, which is why Christianity insists on bodily resurrection: salvation of the soul without the body would not be salvation of the <em>person</em>. The particular, embodied self keeps its theological weight.
         </p>
         <p>
-          The Gita&apos;s metaphor in BG 2.22 goes precisely the other way. The atman discards bodies as a person discards worn-out clothes. The body is not the person. It is the clothes. Moksha is not a transformation of this particular body-and-soul composite. It is the recognition that atman was never the body or the personality at all. The Vedantic path ends not in a resurrection of the self, but in the dissolution of the mistaken idea that the self was ever the thing that needed saving.
+          The Gita&apos;s metaphor in BG 2.22 goes the other way: the atman discards bodies as a person discards worn-out clothes. In the Vedantic reading, moksha is the recognition that atman was never the body or the personality.
         </p>
 
         <h2>A Note on Jivatman, Paramatman, and Tat Tvam Asi</h2>
         <p>
-          The Gita operates between two registers. In one, it speaks of the jivatman, the individual self, the atman as it appears within a particular body and mind. In another, it speaks of the paramatman, the supreme self, the universal witness dwelling in the heart of all beings (BG 13.28: &ldquo;He who sees the supreme Lord dwelling equally in all beings&rdquo;).
+          The Gita operates between two registers. In one, it speaks of the jivatman, the individual self, the atman as it appears within a particular body and mind. In another, it speaks of the paramatman, the supreme self, the universal witness dwelling in every being (BG 13.28 praises the one who sees the supreme Lord dwelling equally in every being).
         </p>
         <p>
-          The Advaita Vedanta reading, most systematically developed by Adi Shankaracharya in the 8th century, holds that this two-register talk is provisional. The jivatman and the paramatman are not two things. They are the same awareness appearing dual because of maya&apos;s operation. The mahavakya <em>tat tvam asi</em> (that thou art, from Chandogya Upanishad 6.8.7) makes this explicit: you, the jivatman, are that, Brahman, the ground of all.
+          The Advaita Vedanta reading, most systematically developed by Adi Shankaracharya in the 8th century, holds that this two-register talk is provisional: the jivatman and the paramatman are one awareness that appears as two because of maya. The mahavakya <em>tat tvam asi</em> (that thou art, from Chandogya Upanishad 6.8.7) makes this explicit: you, the jivatman, are that, Brahman, the ground of all.
         </p>
         <p>
-          No mainstream theological tradition that uses the word &ldquo;soul&rdquo; says the soul is identical to God. That claim would be considered heresy in Christianity and Islam. It is the central realization in Advaita Vedanta. This is why &ldquo;atman = soul&rdquo; does not hold. The translation is not merely imprecise. The concept it imports actively contradicts what the tradition is pointing toward.
+          Mainstream Christian theology treats the claim that the soul is identical to God as heresy. In Advaita Vedanta it is the central realization. That is the strongest reason &ldquo;soul&rdquo; is a poor fit for ātman.
         </p>
 
+      <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the Prabhupada quotation of BG 2.20, the IAST of 2.20 (bhavitā), the Sanskrit term for &ldquo;ever-existing&rdquo; in 2.20 (śāśvata), the Katha Upanishad quotation (2.1.2), the Hebrews 9:28 reference (previously Romans 6:10), the Aquinas quotation, and the claim that every English translation uses &ldquo;soul&rdquo;; noted the dualist reading of 15.7; copy edited.</p>
       </div>
-
-
       <FeedbackWidget pageType="blog" />
       <div className="faq-section" data-mp-section="faq_section">
         <h2>Frequently Asked Questions</h2>
@@ -849,35 +848,35 @@ export default function AtmanNotSoulPage() {
         <div className="faq-item">
           <strong>Is atman the same as the soul?</strong>
           <p>
-            No, not in any precise sense. The English word &ldquo;soul&rdquo; typically refers to an individual entity: created, morally accountable, capable of salvation or damnation, distinct from God. Atman in the Bhagavad Gita is the unchanging witnessing awareness present in all beings, unborn (aja), eternal (nitya), ancient (sanatana), and not-slain when the body is slain. The full Vedantic analysis holds that atman is ultimately identical to Brahman, the ground of all reality. No mainstream use of &ldquo;soul&rdquo; makes that claim. They are structurally different concepts.
+            Only loosely. The English word &ldquo;soul&rdquo; usually refers to an individual entity that is created, morally accountable, capable of salvation or damnation, and distinct from God. Atman in the Bhagavad Gita is the unchanging witnessing awareness present in every being: unborn (aja), eternal (nitya), ancient (purāṇa), and not slain when the body is slain. The full Vedantic analysis holds that atman is ultimately identical to Brahman, the ground of all reality. Mainstream Christian usage of &ldquo;soul&rdquo; does not make that claim.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What does atman mean in the Bhagavad Gita?</strong>
           <p>
-            Atman (आत्मन्) is the indestructible, witnessing self, what remains when everything changeable is stripped away. BG 2.20 gives its most cited definition: unborn, never dying, ever-existing, ancient. The Gita uses atman in two senses, the individual self (jivatman) and the universal self (paramatman), but the core claim is constant: atman is beyond the reach of change, beyond the three gunas, and neither acts nor is stained by any action (BG 13.31).
+            Atman (आत्मन्) is the indestructible, witnessing self, what remains when everything changeable is stripped away. BG 2.20 describes it as unborn, never dying, ever-existing and ancient. The Gita uses atman in two senses, the individual self (jivatman) and the universal self (paramatman), but the core claim is constant: atman is beyond the reach of change, beyond the three gunas, and neither acts nor is stained by any action (BG 13.31).
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What is the difference between jivatman and paramatman?</strong>
           <p>
-            Jivatman is atman as it appears individuated, associated with a particular body, mind, and senses. Paramatman is the supreme atman, the universal witness present in all beings. BG 15.7 describes jivatman as &ldquo;an eternal fragment of me&rdquo; that draws the senses to itself. The Advaita reading holds that the distinction between jivatman and paramatman is itself a product of maya. Ultimately they are the same awareness. What creates the appearance of individuation is the association with a particular sensory apparatus, not any real division in atman itself.
+            Jivatman is atman as it appears individuated, associated with a particular body, mind, and senses. Paramatman is the supreme atman, the universal witness present in every being. BG 15.7 describes jivatman as &ldquo;an eternal fragment of me&rdquo; that draws the senses to itself. The Advaita reading holds that the distinction between jivatman and paramatman is a product of maya, and that the appearance of a separate self comes from association with a particular body and senses. Dualist schools such as Ramanuja&apos;s and Madhva&apos;s keep the two distinct.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>Why does the Gita say atman cannot be killed?</strong>
           <p>
-            BG 2.19-20 make a structural argument: to kill something, that thing must have begun at some point. Atman is aja, unborn, without beginning. If it never began, the question of its ending does not arise. What ends at death is the body (sharira) and the accumulated personality of prakriti. Atman was never part of that structure. BG 2.24 goes further: atman cannot be cut, burned, wetted, or dried. Not because it is hard or indestructible in a material sense, but because it belongs to an entirely different order than the elements that could do those things.
+            BG 2.19–20 argue from origin: atman is aja, unborn, and what never began does not end. What ends at death is the body (sharira). BG 2.23–24 add that weapons, fire, water and wind cannot touch it, because it is not made of the elements that could.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What does tat tvam asi mean?</strong>
           <p>
-            <em>Tat tvam asi</em>, &ldquo;that thou art,&rdquo; is one of the four mahavakyas (great sentences) from the Upanishads, appearing in the Chandogya Upanishad 6.8.7. It teaches that the individual atman (tvam, thou) is identical to Brahman (tat, that), the ground of all reality. This is why translating atman as &ldquo;soul&rdquo; creates problems: in Western theology, the soul is never God. It is always a created entity in relationship with God. But tat tvam asi says the deepest self is the ground itself. The Gita&apos;s teaching on atman points toward this realization, which is why the full import of BG 2.20 is lost when &ldquo;soul&rdquo; stands in for atman.
+            <em>Tat tvam asi</em>, &ldquo;that thou art,&rdquo; is one of the four mahavakyas (great sentences) from the Upanishads, appearing in the Chandogya Upanishad 6.8.7. It teaches that the individual atman (tvam, thou) is identical to Brahman (tat, that), the ground of all reality. This is why translating atman as &ldquo;soul&rdquo; creates problems: in mainstream Christian theology the soul is a created entity, always distinct from God, while tat tvam asi says the deepest self is the ground itself.
           </p>
         </div>
       </div>

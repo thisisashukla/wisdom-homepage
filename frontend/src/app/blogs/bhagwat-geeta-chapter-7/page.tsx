@@ -7,21 +7,21 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 7 Summary – Key Verses & Meaning (Jnana Vijnana Yoga)",
-  description: "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga), 30 verses on knowledge vs. realization, the pearls-on-a-thread teaching, maya, and the four kinds of seekers.",
+  description: "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga): 30 verses on knowledge and realization, the pearls-on-a-thread teaching, maya, and the four kinds of devotees.",
   keywords: "bhagwat geeta chapter 7, bhagavad gita jnana vijnana yoga, bhagwat geeta adhyay 7, pearls on a thread gita, four types of devotees gita, maya in bhagavad gita, vasudeva sarvam iti, jnana vs vijnana, Jnana Vijnana Yoga meaning, Bhagavad Gita 7.7 pearls on a thread, Bhagavad Gita 7.8 taste in water, Vasudeva sarvam iti meaning, four types of devotees Bhagavad Gita, what is maya in Bhagavad Gita",
   openGraph: {
     title: "Bhagavad Gita Chapter 7 Summary – Key Verses & Meaning (Jnana Vijnana Yoga)",
-    description: "All 30 verses of Bhagavad Gita Chapter 7, pearls strung on a thread, four seekers, and the rare realization 'Vasudeva is everything.'",
+    description: "All 30 verses of Bhagavad Gita Chapter 7: pearls strung on a thread, four kinds of devotees, and the rare realization 'Vasudeva is everything.'",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter7.webp", width: 1200, height: 675, alt: "Krishna teaching Arjuna about the two natures, the visible and the imperishable. Chapter 7 of the Bhagavad Gita opens the second half of the text with Jnana Vijnana Yoga: the difference between knowing about something and knowing it through." }],
+    images: [{ url: "https://wisdomquotes.in/assets/chapter7.webp", width: 1200, height: 675, alt: "Krishna teaching Arjuna about the two natures, the visible and the imperishable. Chapter 7 of the Bhagavad Gita, Jnana Vijnana Yoga, opens the middle six chapters." }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 7 Summary – Key Verses & Meaning (Jnana Vijnana Yoga)",
-    description: "All 30 verses of Bhagavad Gita Chapter 7, pearls strung on a thread, four seekers, and the rare realization 'Vasudeva is everything.'",
+    description: "All 30 verses of Bhagavad Gita Chapter 7: pearls strung on a thread, four kinds of devotees, and the rare realization 'Vasudeva is everything.'",
     images: ["https://wisdomquotes.in/assets/chapter7.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7' } },
@@ -261,8 +261,8 @@ const schemas = [
       "Article",
       "LearningResource"
     ],
-    "headline": "Bhagavad Gita Chapter 7 — Jnana Vijnana Yoga: Knowing About vs. Knowing Through",
-    "description": "Bhagavad Gita Chapter 7 — Jnana Vijnana Yoga. All 30 verses on knowledge vs. realization, the pearls-on-a-thread teaching, and the four kinds of seekers.",
+    "headline": "Bhagavad Gita Chapter 7: Jnana Vijnana Yoga",
+    "description": "Bhagavad Gita Chapter 7 — Jnana Vijnana Yoga. All 30 verses on knowledge and realization, the pearls-on-a-thread teaching, and the four kinds of devotees.",
     "alternativeHeadline": "Bhagavad Gita Chapter 7 (Jnana Vijnana Yoga) — All Verses",
     "author": {
     "@type": "Person",
@@ -364,7 +364,7 @@ const schemas = [
         "name": "What is Bhagavad Gita Chapter 7 about?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Chapter 7, called Jnana Vijnana Yoga, marks the seam in the Bhagavad Gita. The first six chapters focused on the seeker's inner discipline. From Chapter 7 onward, Krishna shifts to revealing the nature of reality itself — the two levels of nature, the divine immanence in all things (the pearls-on-a-thread image in 7.7), the four kinds of seekers (7.16-17), and the rare recognition that Vāsudevaḥ sarvam iti — Bhagavan is all this (7.19)."
+          "text": "Chapter 7, called Jnana Vijnana Yoga, begins the Gita's middle six chapters. Chapters 1–6 dealt mostly with Arjuna's own discipline. From Chapter 7 Krishna talks about his own nature: his lower and higher natures (7.4–5), his presence in everything (the pearls on a thread, 7.7), the four kinds of devotees (7.16–17), and the rare recognition vāsudevaḥ sarvam iti, Vasudeva is all this (7.19)."
         }
       },
       {
@@ -372,7 +372,7 @@ const schemas = [
         "name": "What does 'pearls on a thread' mean in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In verse 7.7, Krishna says, 'All this is strung on me as pearls are strung on a thread.' The image describes how every separate thing in the universe — every object, person, event — is held together by the Divine the way pearls are held by a thread. The thread is invisible from outside but it is what makes the collection a unity. It is the Gita's most accessible image of divine immanence."
+          "text": "In verse 7.7, Krishna says, 'All this is strung on me as pearls are strung on a thread.' The image says that every separate thing, object, person or event, is held together by Krishna the way pearls are held by a thread. The thread is hidden inside the pearls, and it is what makes them one necklace."
         }
       },
       {
@@ -380,7 +380,7 @@ const schemas = [
         "name": "What is the difference between jnana and vijnana?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Jnana is knowledge — what you have read, heard, or intellectually understood. Vijnana is realization — knowledge that has actually arrived in you, that has become part of how you see and live. The Gita's interest is in the crossing from one to the other. Most spiritual study stalls at jnana. Chapter 7 is named for this distinction because it teaches not new facts but a new way of perceiving facts you already had."
+          "text": "Jnana is knowledge: what you have read, heard or understood. Vijnana is realization: knowledge that has become part of how you see and live. In 7.2 Krishna promises Arjuna both, after which nothing more remains to be known."
         }
       },
       {
@@ -388,7 +388,7 @@ const schemas = [
         "name": "Who are the four kinds of devotees mentioned in Chapter 7?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verses 7.16-17 describe four kinds of seekers: the distressed (ārta), the curious or knowledge-seeking (jijñāsu), the seeker of material gain (arthārthī), and the wise (jñānī). All four are welcomed. But Krishna calls the wise one — whose devotion is no longer instrumental — the dearest. The verse is generous about who can begin and clear about where the journey leads."
+          "text": "Verses 7.16–17 name four kinds of devotees: the distressed (ārta), the one who wants to know (jijñāsu), the one who wants wealth (arthārthī), and the wise (jñānī). Krishna calls all four noble (7.18), but says the wise one, who wants nothing from him except him, is dearest."
         }
       },
       {
@@ -396,7 +396,7 @@ const schemas = [
         "name": "What does 'Vasudevah sarvam iti' mean?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In verse 7.19, Krishna says that after many lifetimes the wise one surrenders to him, recognising vāsudevaḥ sarvam iti — 'Vasudeva (the Divine) is everything.' This is not pantheism in the simple sense. It is the realization that the Divine does not merely contain or pervade the world but is the very being of the world. The Gita calls this realization rare — su-durlabhaḥ — and the destination of long spiritual maturation."
+          "text": "In verse 7.19, Krishna says that after many lifetimes the wise one surrenders to him, recognising vāsudevaḥ sarvam iti — 'Vasudeva (the Divine) is everything.' Read with 7.7 and 7.12, the line says the world rests in Krishna and has its being from him. The Gita calls such a person rare, su-durlabhaḥ, and places the recognition at the end of many births."
         }
       },
       {
@@ -404,7 +404,7 @@ const schemas = [
         "name": "Why does Krishna say the divine is hidden by maya?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 7.25 says the Divine, veiled by yoga-māyā, is not perceptible to everyone. The deluded mistake the visible form for the whole reality. The teaching is that the problem is not the world's structure but the seer's perception. The veil is on our side, not on reality's side. This is good news, because perception can be trained — and the rest of the Gita is, in many ways, that training."
+          "text": "Verse 7.25 says Krishna, veiled by his yoga-māyā, is not seen by everyone, and the deluded world doesn't know him as unborn and imperishable. In 7.13–14 the veil is the three gunas, and those who take refuge in him get past it."
         }
       }
     ]
@@ -467,7 +467,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Quotation",
     "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.8",
-    "text": "I am the taste in water, Arjuna. I am the light in the moon and the sun. I am the sound of Om in all the Vedas, the sound in space, and the courage in human beings.",
+    "text": "I am the taste in water, Arjuna. I am the light in the moon and the sun. I am the sound of Om in every Veda, the sound in space, and the courage in human beings.",
     "spokenByCharacter": {
       "@type": "Person",
       "name": "Krishna"
@@ -494,7 +494,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Quotation",
     "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.17",
-    "text": "Of these, the wise one — steady, single-pointed in devotion — is the highest. For I am exceedingly dear to the wise one, and that one is dear to me.",
+    "text": "Of these, the wise one — steady, single-pointed in devotion — is the best. For I am exceedingly dear to the wise one, and that one is dear to me.",
     "spokenByCharacter": {
       "@type": "Person",
       "name": "Krishna"
@@ -521,7 +521,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Quotation",
     "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-7#verse-7.19",
-    "text": "After many lifetimes, the wise one surrenders to me, recognising — Vāsudeva is everything. Such a great atman is exceedingly rare.",
+    "text": "After many lifetimes, the wise one surrenders to me, recognising — Vāsudeva is everything. Such a mahātmā, a great soul, is very rare.",
     "spokenByCharacter": {
       "@type": "Person",
       "name": "Krishna"
@@ -578,7 +578,7 @@ export default function ChapterPage7() {
             <em>Jnana Vijnana Yoga</em>
           </h1>
           <p className="article-subtitle">
-            The chapter that changes the whole conversation. The world strung like pearls. Four kinds of seekers. And the difference between information and recognition.
+            Krishna turns to his own nature: the world strung on him like pearls (7.7), the four kinds of devotees (7.16), and the difference between knowing and realizing.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -589,7 +589,7 @@ export default function ChapterPage7() {
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 7 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -600,7 +600,7 @@ export default function ChapterPage7() {
           <figure className="chapter-image">
             <img
               src="/assets/chapter7.webp"
-              alt="Krishna teaching Arjuna about the two natures, the visible and the imperishable. Chapter 7 of the Bhagavad Gita opens the second half of the text with Jnana Vijnana Yoga: the difference between knowing about something and knowing it through."
+              alt="Krishna teaching Arjuna about the two natures, the visible and the imperishable. Chapter 7 of the Bhagavad Gita, Jnana Vijnana Yoga, opens the middle six chapters."
               width="1200"
               height="675"
               loading="eager"
@@ -608,23 +608,23 @@ export default function ChapterPage7() {
           </figure>
 
         <p className="lead">
-          Chapter 7 is the seam in the Bhagavad Gita. The first six chapters were largely about you, your duty, your renunciation, your meditation, your inner climb. Beginning with Chapter 7, the camera pulls back. The teaching shifts from <em>how do I act</em> to <em>what is actually going on</em>. Krishna stops being primarily a coach and becomes, more openly, a metaphysical disclosure. The chapter is short, only thirty verses, but it changes the temperature of the whole book.
+          Chapter 7 begins the Gita&apos;s middle six chapters. Chapters 1–6 were mostly about Arjuna&apos;s own conduct: duty, renunciation, meditation. From Chapter 7 the question becomes <em>what is real</em>, and Krishna talks openly about his own nature. The chapter has thirty verses.
         </p>
 
         <p>
-          The chapter's title, <em>Jnana Vijnana Yoga</em>, is built on a distinction that English flattens. <em>Jnana</em> is knowledge: the part you can read, hear, memorise, defend in conversation. <em>Vijnana</em> is realization: the part that has actually arrived in you, that is no longer theory, that you can no longer un-see. Most spiritual ambition stalls at jnana. The Gita's interest is in the rare crossing into vijnana. Verse 7.3 says, with characteristic bluntness, that of those who strive, almost none arrive. That is not pessimism. It is calibration. The Gita is telling you: this is harder than you think, and the difficulty is not where you assumed it was.
+          The chapter&apos;s title, <em>Jnana Vijnana Yoga</em>, rests on a distinction that English blurs. <em>Jnana</em> is knowledge: what you can read, hear, memorise and argue for. <em>Vijnana</em> is realization: knowledge that has become part of how you see. Verse 7.3 says bluntly that of those who strive, very few arrive.
         </p>
 
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
-            <li><a href="#two-natures">The two natures, what changes and what doesn't</a></li>
-            <li><a href="#pearls">Pearls strung on a thread, 7.7</a></li>
-            <li><a href="#ordinary-sacred">The sacred hiding in ordinary things, 7.8</a></li>
-            <li><a href="#maya-refuge">The way through illusion is not force, but refuge, 7.14</a></li>
-            <li><a href="#four-seekers">The four kinds of seekers, and which one Krishna prefers</a></li>
-            <li><a href="#vasudeva">Vasudeva sarvam iti, the rarest realization</a></li>
-            <li><a href="#veiled">Why the divine remains veiled to most</a></li>
+            <li><a href="#two-natures">How rare real knowing is, 7.3</a></li>
+            <li><a href="#pearls">Pearls strung on a thread: 7.7</a></li>
+            <li><a href="#ordinary-sacred">Krishna in ordinary things: 7.8</a></li>
+            <li><a href="#maya-refuge">Crossing maya by refuge: 7.14</a></li>
+            <li><a href="#four-seekers">The four kinds of devotees: 7.16–18</a></li>
+            <li><a href="#vasudeva">Vasudeva sarvam iti: 7.19</a></li>
+            <li><a href="#veiled">Why Krishna stays veiled: 7.25</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
             <li><a href="#related-reading">Related reading</a></li>
@@ -635,19 +635,19 @@ export default function ChapterPage7() {
         <div className="section-divider">
           <div className="section-divider-line"></div>
           <div className="section-divider-label">
-            Verses 7.1–7.3 · The Calibration
+            Verses 7.1–7.3 · How Few Arrive
           </div>
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="two-natures">How Rare Is What You're Actually Looking For</h2>
+        <h2 id="two-natures">How Rare Real Knowing Is</h2>
 
         <p>
-          Chapter 7 opens with Krishna setting expectations. He is about to teach Arjuna something most people never reach. Not because it is hidden, but because most people stop earlier than they realize. Verse 7.3 contains one of the most quietly devastating sentences in the Gita: among thousands who try, one perhaps strives sincerely; among those who strive, one perhaps actually knows. This is not the bragging of an exclusive club. It is the Gita being honest about how far the journey actually goes.
+          Chapter 7 opens with Krishna setting expectations. He is about to teach Arjuna something few people reach. Verse 7.3 says: among thousands of people, one strives for perfection; among those who strive and succeed, perhaps one knows Krishna as he is.
         </p>
 
         <p>
-          If you have ever felt that your spiritual reading has accumulated but your spiritual seeing has not, this verse names the gap. The Gita is going to spend the next twelve chapters trying to close that gap. But the closing requires a different posture than the one most readers bring, less acquisition, more recognition.
+          If your reading has piled up while your seeing has stayed the same, this verse names the gap. The remaining chapters of the Gita work on closing it.
         </p>
 
                 <ShlokaCard
@@ -656,14 +656,14 @@ export default function ChapterPage7() {
           sanskrit="मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये । यततामपि सिद्धानां कश्चिन्मां वेत्ति तत्त्वतः ॥"
           iast="manuṣyāṇāṃ sahasreṣu kaścid yatati siddhaye | yatatām api siddhānāṃ kaścin māṃ vetti tattvataḥ ||"
           meaning="Among thousands of people, one may strive for perfection. Among those striving, perhaps one knows me in truth."
-          insightLabel="What this verse is actually doing"
-          insight="Krishna is calibrating the conversation. He is not threatening. He is saying: the ratio between effort and arrival is not what you think. You have probably been measuring success in books read, practices logged, hours sat. The Gita's measurement is different, and the gap between the two is the work of the next twelve chapters."
-          essence="True knowing is rarer than striving, even among the successful."
+          insightLabel="What this verse does"
+          insight="Krishna is setting expectations. Effort and arrival are far apart: people measure progress in books read and hours sat, while the verse measures it by knowing Krishna tattvataḥ, as he really is."
+          essence="Among thousands, one strives for perfection; of those who succeed, perhaps one knows Krishna as he is."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>The honest reading of 7.3:</strong> This is not a verse to feel discouraged by. It is a verse to feel relieved by. If realization were easy, you would have to wonder why so many people who have practiced their whole lives still seem unsettled. The verse explains. The difficulty is not unique to you.
+            <strong>Reading 7.3 kindly:</strong> The verse can be a relief. Many people who have practised all their lives still seem unsettled, and the verse says that is the normal case.
           </p>
         </div>
 
@@ -676,14 +676,14 @@ export default function ChapterPage7() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="pearls">Pearls Strung on a Thread, the Gita's Image for Everything</h2>
+        <h2 id="pearls">Pearls Strung on a Thread</h2>
 
         <p>
-          Verse 7.7 contains an image so simple it can be missed. Imagine a string of pearls. The pearls are distinct, beautiful, each in its place. But what holds them in a single line is something you cannot see from the outside, a thread, threaded through every pearl. Without the thread, the pearls scatter. With the thread, they are a necklace.
+          Verse 7.7 has a simple image. On a string of pearls, each pearl is separate and in its place, and what holds them in a line is a thread you can&apos;t see from outside. Without the thread the pearls scatter.
         </p>
 
         <p>
-          Krishna's claim is that reality is the same shape. Every thing you see, each person, each object, each event, is the pearl. The Divine is the thread. The thread is not louder than the pearls. It is not even visible most of the time. But it is what makes the collection of pearls into something coherent. The Gita is not asking you to abandon the world of pearls. It is asking you to notice the thread.
+          Krishna says the world is built the same way. Each person, object and event is a pearl, and he is the thread. The thread is usually out of sight, but it holds the pearls together. The Gita asks you to keep the pearls and notice the thread.
         </p>
 
                 <ShlokaCard
@@ -692,9 +692,9 @@ export default function ChapterPage7() {
           sanskrit="मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय । मयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव ॥"
           iast="mattaḥ parataraṃ nānyat kiñcid asti dhanañjaya | mayi sarvam idaṃ protaṃ sūtre maṇi-gaṇā iva ||"
           meaning="There is nothing higher than me, Arjuna. All this is strung on me, as pearls are strung on a thread."
-          insightLabel="Why this image lasts"
-          insight="Other scriptures make divine immanence sound abstract, Bhagavan is everywhere, Bhagavan is in all things. This verse gives you a picture you can hold. Pearls are individual, distinguishable, and beautiful. They are also, structurally, not separate. The thread changes nothing about how a pearl looks. It only changes whether it belongs."
-          essence="Everything is held in one sustaining reality."
+          insightLabel="Why the image helps"
+          insight="&quot;Bhagavan is everywhere&quot; can sound abstract. This verse gives you a picture to hold. Each pearl stays distinct, and the thread runs through all of them. The thread doesn&apos;t change how a pearl looks; it decides whether the pearl belongs to the necklace."
+          essence="Nothing is higher than Krishna; all this is strung on him like pearls on a thread."
         />
 
         <div className="pull-quote">
@@ -716,11 +716,11 @@ export default function ChapterPage7() {
         <h2 id="ordinary-sacred">Taste in Water, Light in the Sun: the Divine in Ordinary Things</h2>
 
         <p>
-          Right after the pearls-on-a-thread image, Krishna does something extraordinary. He gets specific. He names where exactly the thread is, and the list is not where you would expect. He says: I am the taste in water. The light in the sun and moon. The sound in space. The strength in human beings. Notice what the list is not. There is no temple. No ritual object. No abstract metaphysical category. The Gita's first inventory of divine presence is in the simplest sensory experiences.
+          Right after the pearls, Krishna gets specific about where the thread can be found. He says he is the taste in water, the light of the sun and moon, the sound in space, and the strength in human beings (7.8). The list has no temple or ritual object in it; it starts with ordinary things you taste, see and hear.
         </p>
 
         <p>
-          This is the Gita's quiet, persistent counter-argument to every form of spiritual escapism. The sacred is not somewhere else. It is in the glass of water you drank this morning. The sunlight on your wall. The sound of a conversation in the next room. You do not have to leave your life to find the Divine. You have to notice your life more carefully.
+          So the sacred is close at hand, in the glass of water you drank this morning. Finding Krishna, on this verse, means paying closer attention to ordinary life without leaving it.
         </p>
 
                 <ShlokaCard
@@ -728,10 +728,10 @@ export default function ChapterPage7() {
           speaker="Krishna"
           sanskrit="रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः । प्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु ॥"
           iast="raso'ham apsu kaunteya prabhāsmi śaśi-sūryayoḥ | praṇavaḥ sarva-vedeṣu śabdaḥ khe pauruṣaṃ nṛṣu ||"
-          meaning="I am the taste in water, Arjuna. I am the light in the moon and the sun. I am the sound of Om in all the Vedas, the sound in space, and the courage in human beings."
-          insightLabel="The Gita's anti-escapism"
-          insight="Notice the verse does not say I am behind these things. It says I am these things. The taste of water is not a sign pointing to the Divine. The taste is the Divine, expressed through your tongue. The verse refuses any separation between sacred and ordinary. It places the entire weight of the sacred on the ordinary's shoulder."
-          essence="The sacred is already inside ordinary experience."
+          meaning="I am the taste in water, Arjuna. I am the light in the moon and the sun. I am the sound of Om in every Veda, the sound in space, and the courage in human beings."
+          insightLabel="The ordinary as sacred"
+          insight="The verse says &quot;I am&quot; the taste in water (raso &apos;ham apsu). Krishna is the essential quality of each thing he lists: the taste of water, the light of the sun, the strength of a man."
+          essence="Krishna is the taste in water, the light of moon and sun, Om in the Vedas, strength in men."
         />
 
         {/* DIVIDER */}
@@ -746,11 +746,11 @@ export default function ChapterPage7() {
         <h2 id="maya-refuge">Maya, and Why You Cannot Think Your Way Out</h2>
 
         <p>
-          Halfway through the chapter comes one of the Gita's most psychologically honest verses. Krishna says: my divine māyā, made of the three qualities of nature, is hard to cross. Those who take refuge in me, they cross it. Everyone else stays inside.
+          Halfway through the chapter Krishna says: my divine māyā, made of the three qualities of nature, is hard to cross. Those who take refuge in me cross it (7.14).
         </p>
 
         <p>
-          Note what the verse does not say. It does not say you can <em>think</em> your way out of māyā. It does not say more reading, more practice, more discipline alone can do it. It says the way through illusion is refuge. Not effort. Refuge. This will be controversial to anyone whose spiritual self-image is built on independence. The Gita is making a structural claim: there is a layer of confusion that no amount of self-generated effort can clear, because the effort itself is happening inside the confusion. The only way out is to lean on something outside the system.
+          The verse names refuge as the way through. More reading, practice or discipline isn&apos;t on the list, which will bother anyone whose spiritual self-image rests on independence. The reasoning is that some confusion can&apos;t be cleared by your own effort, because the effort is happening inside the confusion.
         </p>
 
                 <ShlokaCard
@@ -759,14 +759,14 @@ export default function ChapterPage7() {
           sanskrit="दैवी ह्येषा गुणमयी मम माया दुरत्यया । मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ॥"
           iast="daivī hyeṣā guṇa-mayī mama māyā duratyayā | mām eva ye prapadyante māyām etāṃ taranti te ||"
           meaning="This divine māyā of mine, woven of the three qualities, is hard to cross. Only those who take refuge in me cross beyond it."
-          insightLabel="Why &quot;refuge&quot; and not &quot;effort&quot;"
-          insight="The mind that is trying to escape its own confusion is the confused mind doing the escaping. It cannot succeed because it is the problem. Refuge is the act of admitting this, and resting your weight on something that is not the confused mind. The Gita names that something. But the structural point is wider: at some level of difficulty, leaning is the only working move."
-          essence="The way beyond the veil is not force, but refuge."
+          insightLabel="Why refuge"
+          insight="A confused mind trying to escape its confusion is still the confused mind. Refuge means admitting this and resting your weight on Krishna (mām eva ye prapadyante, &quot;those who take refuge in me alone&quot;)."
+          essence="This divine maya made of the gunas is hard to cross; those who take refuge in Krishna cross it."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>If you have ever lain awake at 2 a.m. trying to think yourself out of a loop:</strong> This is the verse for that experience. The Gita is saying, at this level, more thinking will not work. You have already tried that. The way out is a different kind of move altogether: putting the weight down.
+            <strong>If you have tried to think your way out of a loop:</strong> This verse speaks to that. At this level, Krishna says, more thinking won&apos;t help, and the way out is to put the weight down.
           </p>
         </div>
 
@@ -774,19 +774,19 @@ export default function ChapterPage7() {
         <div className="section-divider">
           <div className="section-divider-line"></div>
           <div className="section-divider-label">
-            Verses 7.16–7.17 · The Four Kinds of Seekers
+            Verses 7.16–7.17 · The Four Kinds of Devotees
           </div>
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="four-seekers">The Four Kinds of Seekers, and Why Krishna Loves the Last One</h2>
+        <h2 id="four-seekers">The Four Kinds of Devotees, and Why Krishna Loves the Last One</h2>
 
         <p>
-          Verses 7.16 and 7.17 contain one of the Gita's most generous and most pointed teachings. Krishna says four kinds of people turn to the Divine. The person in distress. The person seeking understanding. The person seeking wealth or material good. And the wise person, the <em>jnani</em>, who has stopped needing anything in particular and turns toward the Divine for the Divine itself.
+          In verses 7.16 and 7.17 Krishna says four kinds of people turn to him: the person in distress, the person who wants to understand, the person who wants wealth, and the wise person, the <em>jnani</em>, who wants nothing in particular and turns to Krishna for his own sake.
         </p>
 
         <p>
-          What is generous about this list: all four are welcomed. The person who prays after a panic attack, the person who reads scripture because they cannot let go of the question, the person who asks for help with a job interview, none of them are turned away. What is pointed: Krishna says the fourth, the wise devotee whose love is no longer instrumental, is dearest. The hierarchy is not moral. It is structural. The first three loves something through the Divine. The fourth loves the Divine. They are different relationships.
+          All four are welcome; Krishna calls them all noble (udārāḥ, 7.18). Someone who prays in a crisis, someone who reads scripture because a question won&apos;t leave them, someone who asks for help with a job, none is turned away. But Krishna says the fourth, who wants nothing from him but him, is dearest. The first three want something through Krishna, and the fourth wants Krishna.
         </p>
 
                 <ShlokaCard
@@ -794,10 +794,10 @@ export default function ChapterPage7() {
           speaker="Krishna"
           sanskrit="चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन । आर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ ॥"
           iast="catur-vidhā bhajante māṃ janāḥ sukṛtino'rjuna | ārto jijñāsur arthārthī jñānī ca bharatarṣabha ||"
-          meaning="Four kinds of good people turn toward me, Arjuna: the distressed, the seeker of knowledge, the seeker of fortune, and the wise one, best of the Bharatas."
+          meaning="Four kinds of good people turn toward me, Arjuna: the distressed, the one who wants knowledge, the one who wants wealth, and the wise one, best of the Bharatas."
           insightLabel="The door is open to all"
-          insight="The Gita does not require purity of motive to begin. It requires only direction. The person who comes from pain is not lesser than the person who comes from wisdom. They are entering through different doors of the same house. The verse is a permission slip for anyone who has thought they needed to be &quot;more spiritual&quot; before they could pray."
-          essence="Different needs can still lead to one real turning toward the divine."
+          insight="The verse asks for direction, without requiring a pure motive. The person who comes in pain and the person who comes from wisdom use different doors into the same house. Nobody has to become &quot;more spiritual&quot; before they can pray."
+          essence="Four kinds of good people worship Krishna: the distressed, the curious, those wanting wealth, the wise."
         />
 
                 <ShlokaCard
@@ -805,10 +805,10 @@ export default function ChapterPage7() {
           speaker="Krishna"
           sanskrit="तेषां ज्ञानी नित्ययुक्त एकभक्तिर्विशिष्यते । प्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः ॥"
           iast="teṣāṃ jñānī nitya-yukta eka-bhaktir viśiṣyate | priyo hi jñānino'tyartham ahaṃ sa ca mama priyaḥ ||"
-          meaning="Of these, the wise one, steady, single-pointed in devotion, is the highest. For I am exceedingly dear to the wise one, and that one is dear to me."
-          insightLabel="When the relationship reverses direction"
-          insight="Notice the symmetry. The wise one finds the Divine dear, and the Divine finds the wise one dear. The relationship becomes mutual. This is a quiet but radical shift, the seeker is no longer just seeking. The seeker is also being sought. The conversation is two-way."
-          essence="Deep knowing and devoted love become a mutual bond."
+          meaning="Of these, the wise one, steady, single-pointed in devotion, is the best. For I am exceedingly dear to the wise one, and that one is dear to me."
+          insightLabel="A two-way bond"
+          insight="The verse is symmetrical: Krishna is dear to the wise one, and the wise one is dear to Krishna. In 7.18 he goes further and calls the wise one his own self (ātmaiva)."
+          essence="Of these the wise one, always steady and devoted to him alone, is best; they are dear to each other."
         />
 
         <div className="pull-quote">
@@ -827,14 +827,14 @@ export default function ChapterPage7() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="vasudeva">After Many Lifetimes: The Recognition That Ends Searching</h2>
+        <h2 id="vasudeva">After Many Lifetimes: Vasudeva Is All</h2>
 
         <p>
-          Verse 7.19 is one of the most quietly weighty verses in the entire book. It says: after many lifetimes, the wise one surrenders, recognising that <em>vāsudevaḥ sarvam iti</em>, Bhagavan is all this. That recognition, Krishna says, makes the person a great atman, and very rare.
+          Verse 7.19 says: after many lifetimes, the wise one surrenders, recognising that <em>vāsudevaḥ sarvam iti</em>, Bhagavan is all this. That recognition, Krishna says, makes the person a mahātmā, a great soul, and very rare.
         </p>
 
         <p>
-          The verse can be read in two ways. The traditional reading is literal, many lifetimes, real ones, before the recognition arrives. The psychological reading is that this is what it feels like even within a single life: that the recognition seems to arrive after enormous distance has been crossed. Either way, the destination is the same and is named clearly: <em>Bhagavan is all this</em>. Not Bhagavan is somewhere, beyond. Bhagavan is here, as this. The thread is the pearls, seen finally as the thread.
+          The traditional reading takes &quot;many lifetimes&quot; literally. Some modern readers also take it as a description of how the recognition feels within one life, as if it came after a long road. Either way, what is recognised is stated plainly: <em>Bhagavan is all this</em>, here, in what is in front of you.
         </p>
 
                 <ShlokaCard
@@ -842,10 +842,10 @@ export default function ChapterPage7() {
           speaker="Krishna"
           sanskrit="बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते । वासुदेवः सर्वमिति स महात्मा सुदुर्लभः ॥"
           iast="bahūnāṃ janmanām ante jñānavān māṃ prapadyate | vāsudevaḥ sarvam iti sa mahātmā su-durlabhaḥ ||"
-          meaning="After many lifetimes, the wise one surrenders to me, recognising, Vāsudeva is everything. Such a great atman is exceedingly rare."
-          insightLabel="The five words that matter"
-          insight="Vāsudevaḥ sarvam iti, Bhagavan is all this. Not Bhagavan is in everything. Not Bhagavan includes everything. Bhagavan is all this. The grammar removes the last layer of distance. The realization of this verse is the destination of every other verse in the book."
-          essence="Deep seeing ends in surrender to the one reality in all things."
+          meaning="After many lifetimes, the wise one surrenders to me, recognising, Vāsudeva is everything. Such a mahātmā, a great soul, is very rare."
+          insightLabel="The three words that matter"
+          insight="Vāsudevaḥ sarvam iti: &quot;Vasudeva is all this.&quot; The grammar is a plain identity, with no &quot;in&quot; or &quot;behind&quot;. Krishna calls the person who sees this a mahātmā and very rare."
+          essence="After many births the wise one takes refuge in Krishna, knowing Vasudeva is all; such a soul is rare."
         />
 
         {/* DIVIDER */}
@@ -860,11 +860,11 @@ export default function ChapterPage7() {
         <h2 id="veiled">Why the Divine Stays Hidden in Plain Sight</h2>
 
         <p>
-          Chapter 7 closes with a recurring question: if the Divine is everywhere, strung through everything like a thread, why does almost no one see it? Krishna's answer is honest and unflinching. The Divine is not absent. The seeing is distorted. The veil is on the seer, not on the world.
+          Chapter 7 closes with a question: if Krishna runs through everything like a thread, why does almost no one see him? His answer is that the seeing is distorted. The veil is on the seer&apos;s side.
         </p>
 
         <p>
-          This matters for how we live. If the problem were absence, we would need to search. The problem being distorted seeing, we need to clean the seeing. Different verb, different practice. The rest of the Gita is, in many ways, a long instruction on how to clean the seeing, through devotion, through equanimity, through service, through trust. Chapter 7 ends by naming the problem precisely. Chapter 8 onward begins to answer it.
+          If the problem is distorted seeing, the practice is to clear the seeing. Much of the rest of the Gita works on that through devotion, equanimity, service and trust.
         </p>
 
                 <ShlokaCard
@@ -872,15 +872,15 @@ export default function ChapterPage7() {
           speaker="Krishna"
           sanskrit="नाहं प्रकाशः सर्वस्य योगमायासमावृतः । मूढोऽयं नाभिजानाति लोको मामजमव्ययम् ॥"
           iast="nāhaṃ prakāśaḥ sarvasya yoga-māyā-samāvṛtaḥ | mūḍho'yaṃ nābhijānāti loko mām ajam avyayam ||"
-          meaning="Veiled by yoga-māyā, I am not visible to everyone. The deluded world does not recognise me as unborn and imperishable."
-          insightLabel="The problem is the seer, not the seen"
-          insight="The Divine is not playing hide-and-seek. The veil is on our side. This is good news, philosophically. If the problem were the world's structure, we would be stuck. The problem being our perception, the perception can change. The Gita's pedagogical strategy assumes this, it spends most of its time training perception, not arguing metaphysics."
-          essence="The hidden divine is missed by confused seeing, not by absence."
+          meaning="Veiled by yoga-māyā, I am hidden from many. The deluded world does not recognise me as unborn and imperishable."
+          insightLabel="The veil is on our side"
+          insight="The veil, yoga-māyā, keeps Krishna from being seen by everyone. Since the problem lies in how we see, it can change, and the Gita spends much of its length training that seeing."
+          essence="Veiled by his yoga-maya, Krishna is hidden from many; the deluded world fails to know him as unborn."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>How Chapter 7 sets up the rest of the Gita:</strong> By Chapter 7, the Gita has stopped trying to give you new information. It is now trying to change what information you can perceive. The pearls have always been on a thread. You are being trained to see it. That training continues for the remaining eleven chapters.
+            <strong>How Chapter 7 sets up the rest of the Gita:</strong> From here the Gita works more on how you see than on adding information. The pearls have always been on a thread, and the remaining eleven chapters train you to notice it.
           </p>
         </div>
 
@@ -900,39 +900,39 @@ export default function ChapterPage7() {
             <tr><th>Verse</th><th>Speaker</th><th>Teaching Essence</th></tr>
           </thead>
           <tbody>
-            <tr><td>7.1</td><td>Krishna</td><td>Refuge and practice open the way to complete knowing</td></tr>
-            <tr><td>7.2</td><td>Krishna</td><td>Real knowing leaves no unfinished hunger for more</td></tr>
-            <tr><td>7.3</td><td>Krishna</td><td>True knowing is rarer than striving, even among the successful</td></tr>
-            <tr><td>7.4</td><td>Krishna</td><td>What changes is not the whole of what you are</td></tr>
-            <tr><td>7.5</td><td>Krishna</td><td>What sustains the world is subtler than what the senses first show</td></tr>
-            <tr><td>7.6</td><td>Krishna</td><td>Everything that appears rises from one source and returns there</td></tr>
-            <tr><td>7.7</td><td>Krishna</td><td>Everything is held in one sustaining reality</td></tr>
-            <tr><td>7.8</td><td>Krishna</td><td>The sacred is already inside ordinary experience</td></tr>
-            <tr><td>7.9</td><td>Krishna</td><td>The sacred is already inside nature, vitality, and discipline</td></tr>
-            <tr><td>7.10</td><td>Krishna</td><td>All brilliance is borrowed from the same source</td></tr>
-            <tr><td>7.11</td><td>Krishna</td><td>Strength becomes clean when desire no longer fights dharma</td></tr>
-            <tr><td>7.12</td><td>Krishna</td><td>All qualities arise in the divine, yet the divine is not bound by any</td></tr>
-            <tr><td>7.13</td><td>Krishna</td><td>Three qualities can hide the imperishable reality from plain sight</td></tr>
-            <tr><td>7.14</td><td>Krishna</td><td>The way beyond the veil is not force, but refuge</td></tr>
-            <tr><td>7.15</td><td>Krishna</td><td>A corrupted mind cannot recognise what would free it</td></tr>
-            <tr><td>7.16</td><td>Krishna</td><td>Different needs can still lead to one real turning toward the divine</td></tr>
-            <tr><td>7.17</td><td>Krishna</td><td>Deep knowing and devoted love become a mutual bond</td></tr>
-            <tr><td>7.18</td><td>Krishna</td><td>Deep knowing turns devotion into identity</td></tr>
-            <tr><td>7.19</td><td>Krishna</td><td>Deep seeing ends in surrender to the one reality in all things</td></tr>
-            <tr><td>7.20</td><td>Krishna</td><td>Desire clouds judgment and sends the mind toward smaller refuges</td></tr>
-            <tr><td>7.21</td><td>Krishna</td><td>Faith becomes firm where the devotee turns</td></tr>
-            <tr><td>7.22</td><td>Krishna</td><td>Faith draws the result, but the deeper order grants it</td></tr>
-            <tr><td>7.23</td><td>Krishna</td><td>Finite worship brings finite results; devotion returns you to Krishna</td></tr>
-            <tr><td>7.24</td><td>Krishna</td><td>Form can hide the imperishable reality beneath it</td></tr>
-            <tr><td>7.25</td><td>Krishna</td><td>The hidden divine is missed by confused seeing, not by absence</td></tr>
-            <tr><td>7.26</td><td>Krishna</td><td>Everything is visible to the divine; the divine remains unseen to ordinary minds</td></tr>
-            <tr><td>7.27</td><td>Krishna</td><td>Desire and aversion turn clear seeing into confusion</td></tr>
-            <tr><td>7.28</td><td>Krishna</td><td>Clear hearts stop wavering and move toward the divine with resolve</td></tr>
-            <tr><td>7.29</td><td>Krishna</td><td>Refuge in the divine opens total understanding of reality, inner life, and action</td></tr>
-            <tr><td>7.30</td><td>Krishna</td><td>Complete understanding remains steady even at the moment of departure</td></tr>
+            <tr><td>7.1</td><td>Krishna</td><td>Krishna tells Arjuna how, mind fixed on him and practising yoga, he will know him fully</td></tr>
+            <tr><td>7.2</td><td>Krishna</td><td>Krishna will teach knowledge with realization, after which nothing more remains to be known</td></tr>
+            <tr><td>7.3</td><td>Krishna</td><td>Among thousands, one strives for perfection; of those who succeed, perhaps one knows Krishna as he is</td></tr>
+            <tr><td>7.4</td><td>Krishna</td><td>Earth, water, fire, air, space, mind, intellect and ego form the eightfold lower nature of Krishna</td></tr>
+            <tr><td>7.5</td><td>Krishna</td><td>Beyond this lower nature is his higher one, the life-principle (jiva) that sustains the world</td></tr>
+            <tr><td>7.6</td><td>Krishna</td><td>All beings come from these two natures; Krishna is the origin and dissolution of the whole world</td></tr>
+            <tr><td>7.7</td><td>Krishna</td><td>Nothing is higher than Krishna; all this is strung on him like pearls on a thread</td></tr>
+            <tr><td>7.8</td><td>Krishna</td><td>Krishna is the taste in water, the light of moon and sun, Om in the Vedas, strength in men</td></tr>
+            <tr><td>7.9</td><td>Krishna</td><td>He is the pure fragrance of earth, the heat in fire, the life in beings, the austerity of ascetics</td></tr>
+            <tr><td>7.10</td><td>Krishna</td><td>Krishna is the eternal seed of all beings, the intelligence of the wise, the splendour of the splendid</td></tr>
+            <tr><td>7.11</td><td>Krishna</td><td>He is the strength of the strong, free of craving, and desire that does not go against dharma</td></tr>
+            <tr><td>7.12</td><td>Krishna</td><td>Sattva, rajas and tamas come from Krishna, but he is not in them; they are in him</td></tr>
+            <tr><td>7.13</td><td>Krishna</td><td>Deluded by the three gunas, the world fails to know Krishna, who is beyond them and imperishable</td></tr>
+            <tr><td>7.14</td><td>Krishna</td><td>This divine maya made of the gunas is hard to cross; those who take refuge in Krishna cross it</td></tr>
+            <tr><td>7.15</td><td>Krishna</td><td>Evildoers and the deluded, their knowledge taken by maya, do not take refuge in him</td></tr>
+            <tr><td>7.16</td><td>Krishna</td><td>Four kinds of good people worship Krishna: the distressed, the curious, those wanting wealth, the wise</td></tr>
+            <tr><td>7.17</td><td>Krishna</td><td>Of these the wise one, always steady and devoted to him alone, is best; they are dear to each other</td></tr>
+            <tr><td>7.18</td><td>Krishna</td><td>All four are noble, but Krishna regards the wise one as his own self</td></tr>
+            <tr><td>7.19</td><td>Krishna</td><td>After many births the wise one takes refuge in Krishna, knowing Vasudeva is all; such a soul is rare</td></tr>
+            <tr><td>7.20</td><td>Krishna</td><td>Those whose judgment is taken by desires turn to other gods and their rites, led by their nature</td></tr>
+            <tr><td>7.21</td><td>Krishna</td><td>Whatever form a devotee wishes to worship with faith, Krishna makes that faith steady</td></tr>
+            <tr><td>7.22</td><td>Krishna</td><td>Worshipping with that faith, he gets what he desires, though Krishna is the one who grants it</td></tr>
+            <tr><td>7.23</td><td>Krishna</td><td>Such fruit is finite; worshippers of the gods go to the gods, and his devotees come to him</td></tr>
+            <tr><td>7.24</td><td>Krishna</td><td>The unwise think the unmanifest Krishna has merely taken a form, not knowing his higher nature</td></tr>
+            <tr><td>7.25</td><td>Krishna</td><td>Veiled by his yoga-maya, Krishna is hidden from many; the deluded world fails to know him as unborn</td></tr>
+            <tr><td>7.26</td><td>Krishna</td><td>Krishna knows all beings past, present and future, but no one knows him</td></tr>
+            <tr><td>7.27</td><td>Krishna</td><td>From birth all beings fall into delusion through the pairs of opposites born of desire and aversion</td></tr>
+            <tr><td>7.28</td><td>Krishna</td><td>Those whose sin has ended, freed from that delusion, worship him with firm resolve</td></tr>
+            <tr><td>7.29</td><td>Krishna</td><td>Those who take refuge in him to be free of old age and death come to know Brahman, the self and action</td></tr>
+            <tr><td>7.30</td><td>Krishna</td><td>Those who know him with adhibhuta, adhidaiva and adhiyajna know him even at the time of death</td></tr>
           </tbody>
         </table>
-
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected &quot;great atman&quot; to mahātmā (7.19), the description of Chapter 7 as opening the second half of the Gita (it opens the middle six chapters), and the verse summaries in the table; copy edited.</p>
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous</div>
@@ -964,37 +964,37 @@ export default function ChapterPage7() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 7 about?</div>
             <div className="faq-a">
-              Chapter 7, called Jnana Vijnana Yoga, marks the seam in the Bhagavad Gita. The first six chapters focused on the seeker's inner discipline. From Chapter 7 onward, Krishna shifts to revealing the nature of reality itself, the two levels of nature, the divine immanence in all things (the pearls-on-a-thread image in 7.7), the four kinds of seekers (7.16-17), and the rare recognition that <em>Vāsudevaḥ sarvam iti</em>, Bhagavan is all this (7.19).
+              Chapter 7, called Jnana Vijnana Yoga, begins the Gita&apos;s middle six chapters. Chapters 1–6 dealt mostly with Arjuna&apos;s own discipline. From Chapter 7 Krishna talks about his own nature: his lower and higher natures (7.4–5), his presence in everything (the pearls on a thread, 7.7), the four kinds of devotees (7.16–17), and the rare recognition <em>vāsudevaḥ sarvam iti</em>, Vasudeva is all this (7.19).
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does 'pearls on a thread' mean in the Bhagavad Gita?</div>
             <div className="faq-a">
-              In verse 7.7, Krishna says, 'All this is strung on me as pearls are strung on a thread.' The image describes how every separate thing in the universe, every object, person, event, is held together by the Divine the way pearls are held by a thread. The thread is invisible from outside but it is what makes the collection a unity. It is the Gita's most accessible image of divine immanence.
+              In verse 7.7, Krishna says, 'All this is strung on me as pearls are strung on a thread.' The image says that every separate thing, object, person or event, is held together by Krishna the way pearls are held by a thread. The thread is hidden inside the pearls, and it is what makes them one necklace.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the difference between jnana and vijnana?</div>
             <div className="faq-a">
-              <em>Jnana</em> is knowledge, what you have read, heard, or intellectually understood. <em>Vijnana</em> is realization, knowledge that has actually arrived in you, that has become part of how you see and live. The Gita's interest is in the crossing from one to the other. Most spiritual study stalls at jnana. Chapter 7 is named for this distinction because it teaches not new facts but a new way of perceiving facts you already had.
+              <em>Jnana</em> is knowledge: what you have read, heard or understood. <em>Vijnana</em> is realization: knowledge that has become part of how you see and live. In 7.2 Krishna promises Arjuna both, after which nothing more remains to be known.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Who are the four kinds of devotees mentioned in Chapter 7?</div>
             <div className="faq-a">
-              Verses 7.16-17 describe four kinds of seekers: the distressed (ārta), the curious or knowledge-seeking (jijñāsu), the seeker of material gain (arthārthī), and the wise (jñānī). All four are welcomed. But Krishna calls the wise one, whose devotion is no longer instrumental, the dearest. The verse is generous about who can begin and clear about where the journey leads.
+              Verses 7.16–17 name four kinds of devotees: the distressed (ārta), the one who wants to know (jijñāsu), the one who wants wealth (arthārthī), and the wise (jñānī). Krishna calls all four noble (7.18), but says the wise one, who wants nothing from him except him, is dearest.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does 'Vasudevah sarvam iti' mean?</div>
             <div className="faq-a">
-              In verse 7.19, Krishna says that after many lifetimes the wise one surrenders to him, recognising <em>vāsudevaḥ sarvam iti</em>, 'Vasudeva (the Divine) is everything.' This is not pantheism in the simple sense. It is the realization that the Divine does not merely contain or pervade the world but <em>is</em> the very being of the world. The Gita calls this realization rare, <em>su-durlabhaḥ</em>, and the destination of long spiritual maturation.
+              In verse 7.19, Krishna says that after many lifetimes the wise one surrenders to him, recognising <em>vāsudevaḥ sarvam iti</em>, 'Vasudeva (the Divine) is everything.' Read with 7.7 and 7.12, the line says the world rests in Krishna and has its being from him. The Gita calls such a person rare, <em>su-durlabhaḥ</em>, and places the recognition at the end of many births.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Why does Krishna say the divine is hidden by maya?</div>
             <div className="faq-a">
-              Verse 7.25 says the Divine, veiled by yoga-māyā, is not perceptible to everyone. The deluded mistake the visible form for the whole reality. The teaching is that the problem is not the world's structure but the seer's perception. The veil is on our side, not on reality's side. This is good news, because perception can be trained, and the rest of the Gita is, in many ways, that training.
+              Verse 7.25 says Krishna, veiled by his yoga-māyā, is not seen by everyone, and the deluded world doesn&apos;t know him as unborn and imperishable. In 7.13–14 the veil is the three gunas, and those who take refuge in him get past it.
             </div>
           </div>
         </div>
@@ -1005,11 +1005,11 @@ export default function ChapterPage7() {
           <div className="related-grid">
           <a href="/blogs/bhagavad-gita-for-beginners" className="related-card">
             <div className="related-card-label">Topic Guide</div>
-            <div className="related-card-title">Bhagavad Gita for beginners, where to start</div>
+            <div className="related-card-title">Bhagavad Gita for beginners: where to start</div>
           </a>
           <a href="/blogs/bhagavad-gita-complete-structure-all-chapters" className="related-card">
             <div className="related-card-label">Topic Guide</div>
-            <div className="related-card-title">The Bhagavad Gita as a story, how the argument builds</div>
+            <div className="related-card-title">How the Bhagavad Gita&apos;s 18 chapters fit together</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-8" className="related-card">
             <div className="related-card-label">Chapter 8</div>
@@ -1041,7 +1041,7 @@ export default function ChapterPage7() {
             rel="noopener"
             data-mp-location="footer"
           >free iPhone app</a>{' '}
-          that tunes the Bhagavad Gita to your life, one verse a day. Made with reverence.
+          that tunes the Bhagavad Gita to your life, one verse a day.
         </p>
         <p style={{ marginTop: '8px' }}>
           <a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>

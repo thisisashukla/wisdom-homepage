@@ -520,8 +520,8 @@ export default function BlogIndexPage() {
         <h1>The Bhagavad Gita,<br /><em>read closely</em></h1>
         <p>
           All 18 chapters. Chapter by chapter, shloka by shloka. Sanskrit, IAST,
-          Hindi, and what the verse is actually saying, including the parts that
-          most summaries skip.
+          Hindi, and what each verse says, including the parts most summaries
+          skip.
         </p>
       </div>
     </div>
@@ -530,11 +530,10 @@ export default function BlogIndexPage() {
       {/* APP BANNER */}
       <div className="app-banner">
         <div>
-          <h3>One verse a day. What it means right now.</h3>
+          <h3>A verse a day for what you&apos;re going through.</h3>
           <p>
-            The Wisdom app delivers one Bhagavad Gita verse each morning:
-            Devanagari, transliteration, English meaning, and a guided
-            reflection practice. Free on iPhone.
+            Tell Wisdom what&apos;s going on and it gives you one verse a day for
+            seven days, read aloud, with the Sanskrit. Week 1 is free on iPhone.
           </p>
         </div>
         <a
@@ -543,7 +542,7 @@ export default function BlogIndexPage() {
           rel="noopener"
           className="app-banner-btn"
           data-mp-location="app_banner"
-          >Download Free →</a
+          >Get it on the App Store →</a
         >
       </div>
 
@@ -567,7 +566,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Grief & Dharma</span>
             </div>
             <div className="card-desc">
-              The most psychologically honest chapter in the Gita begins not with wisdom, but with collapse. Why does the greatest archer in history put down his bow? All 47 verses with Sanskrit, IAST, and modern context.
+              Arjuna looks at the two armies, sees his teachers and cousins, and puts down his bow. All 47 verses with Sanskrit, IAST and notes.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~16 min read</span>
@@ -580,7 +579,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/bhagwat-geeta-chapter-2" className="article-card" data-mp-article="Bhagavad Gita Chapter 2">
           <div className="card-thumb card-thumb-ch2">
             <div className="card-chapter-badge">Bhagavad Gita · Chapter 2 · 72 Verses</div>
-            <div className="card-thumb-title">Sankhya Yoga —<br /><em>The Chapter That Changes Everything</em></div>
+            <div className="card-thumb-title">Sankhya Yoga —<br /><em>Krishna&apos;s First Answer</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -589,7 +588,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Soul & Duty</span>
             </div>
             <div className="card-desc">
-              The philosophical heart of the Gita. The eternal soul, 2.47 (the most quoted verse in the world), the cascade from thought to ruin, and the portrait of a mind that cannot be broken: the sthitaprajna.
+              Krishna&apos;s first answer: the atman that does not die (2.20), 2.47 on action and its fruit, the slide from dwelling on something to ruin (2.62–63), and the person of steady wisdom (2.55–72).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~18 min read</span>
@@ -602,7 +601,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/bhagwat-geeta-chapter-3" className="article-card" data-mp-article="Bhagavad Gita Chapter 3">
           <div className="card-thumb card-thumb-ch3">
             <div className="card-chapter-badge">Bhagavad Gita · Chapter 3 · 43 Verses</div>
-            <div className="card-thumb-title">Karma Yoga —<br /><em>Why You Cannot Run</em></div>
+            <div className="card-thumb-title">Karma Yoga —<br /><em>Why No One Can Stop Acting</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -611,7 +610,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Action & Dharma</span>
             </div>
             <div className="card-desc">
-              Why you cannot not act. The logic of yajna: how action becomes offering. Lokasamgraha: the weight of the example you set. Your own dharma, imperfectly. And why desire is the real enemy.
+              Why no one can stop acting (3.5), how work becomes an offering (yajña), the example you set for others (lokasaṅgraha), your own dharma over another&apos;s (3.35), and desire as the enemy (3.37).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~14 min read</span>
@@ -633,7 +632,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Knowledge & Karma</span>
             </div>
             <div className="card-desc">
-              Yada yada hi dharmasya: the divine promise of renewal. The yoga of knowledge as the highest offering. How wisdom burns away past karma. And the Gita's model for how to learn from a real teacher.
+              Yada yada hi dharmasya (4.7–8), knowledge as the highest offering (4.33) and as a fire that burns karma to ash (4.37), and how to learn from a teacher (4.34).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~13 min read</span>
@@ -655,7 +654,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Renunciation & Peace</span>
             </div>
             <div className="card-desc">
-              The lotus leaf teaching. Equal vision across all beings. Where inner happiness actually lives. And the quietly profound verse 5.29, where Krishna calls himself the sincere friend of all beings.
+              The lotus leaf that water doesn&apos;t wet (5.10), the sage who looks on a scholar, a cow, an elephant and a dog alike (5.18), where lasting happiness is found (5.21), and 5.29, where Krishna calls himself the friend of all beings.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -677,7 +676,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Meditation</span>
             </div>
             <div className="card-desc">
-              The Gita's most practical chapter on meditation. Lift yourself by yourself. The lamp in a windless place. Arjuna's honest objection that the mind is like the wind, and the answer: practice and detachment.
+              Meditation in practice: lift yourself by yourself (6.5), the lamp in a windless place (6.19), Arjuna&apos;s objection that the mind is like the wind (6.34), and Krishna&apos;s answer, practice and letting go.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~14 min read</span>
@@ -699,7 +698,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Knowledge & Realization</span>
             </div>
             <div className="card-desc">
-              The seam in the Gita where the camera pulls back. Pearls strung on a thread. The sacred in the taste of water. The four kinds of seekers. And the rare turning that ends all searching: <em>Vāsudeva is everything</em>.
+              Pearls strung on a thread (7.7), Krishna as the taste of water (7.8), the four kinds of people who turn to him (7.16), and the rare one who sees that <em>Vāsudeva is everything</em> (7.19).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -721,7 +720,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Death & Imperishable</span>
             </div>
             <div className="card-desc">
-              A chapter about death, and therefore about every moment that is not yet death. Whatever state the mind has practiced, that is what you become at the end. Brahma's day and night. The path that does not return.
+              What the mind has practised shapes the end: whatever you remember at death is what you become (8.6). Also Brahma&apos;s day and night, and the path of no return.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~11 min read</span>
@@ -743,7 +742,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Devotion & Refuge</span>
             </div>
             <div className="card-desc">
-              The king of all knowledge, supremely easy to practice. Leaf, flower, fruit, water. Whatever you do, offer it. And the line that has consoled more sufferers than possibly any other in the book: <em>my devotee never perishes</em>.
+              Krishna calls this the royal knowledge and says it is easy to practise (9.2). Offer a leaf, a flower, a fruit or water (9.26), offer whatever you do (9.27), and the promise of 9.31: <em>my devotee never perishes</em>.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~13 min read</span>
@@ -765,7 +764,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Divine Manifestations</span>
             </div>
             <div className="card-desc">
-              Where to look for the Divine: in everything that shines. The lamp lit inside the heart. The Self at the heart of every being. And the closing reveal: the whole universe rests on a single fragment.
+              Where to look for Krishna: in whatever shines (10.41). The Self in the heart of every being (10.20), the long list of &lsquo;among these, I am that&rsquo;, and the last verse: the universe rests on one fragment of him (10.42).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~13 min read</span>
@@ -778,7 +777,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/bhagwat-geeta-chapter-11" className="article-card" data-mp-article="Bhagavad Gita Chapter 11">
           <div className="card-thumb card-thumb-ch11">
             <div className="card-chapter-badge">Bhagavad Gita · Chapter 11 · 55 Verses</div>
-            <div className="card-thumb-title">Vishwarupa Darshana Yoga —<br /><em>The Vision That Cannot Be Looked At</em></div>
+            <div className="card-thumb-title">Vishwarupa Darshana Yoga —<br /><em>The Universal Form</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -787,7 +786,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Cosmic Form</span>
             </div>
             <div className="card-desc">
-              Arjuna asked to see. Krishna gave him what he asked for. A thousand suns. Mouths like fire. <em>I am Time, the destroyer of worlds.</em> And the gentler closing: only devotion sees this.
+              Arjuna asks to see Krishna&apos;s universal form and is shown it: a thousand suns (11.12), mouths like fire, <em>I am Time, the destroyer of worlds</em> (11.32). The chapter ends on devotion as the way to see it (11.54).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~16 min read</span>
@@ -800,7 +799,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/bhagwat-geeta-chapter-12" className="article-card" data-mp-article="Bhagavad Gita Chapter 12">
           <div className="card-thumb card-thumb-ch12">
             <div className="card-chapter-badge">Bhagavad Gita · Chapter 12 · 20 Verses</div>
-            <div className="card-thumb-title">Bhakti Yoga —<br /><em>How a Devotee Actually Lives</em></div>
+            <div className="card-thumb-title">Bhakti Yoga —<br /><em>How a Devotee Lives</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -809,7 +808,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Devotion</span>
             </div>
             <div className="card-desc">
-              The shortest chapter, and one of the most practical. The four-step ladder for when meditation is too hard. And the portrait of the devotee Krishna calls dear: measured by friendliness, not by belief.
+              One of the two shortest chapters, 20 verses. A four-step ladder for when meditation is too hard (12.8–11), and the devotee Krishna calls dear (12.13–20).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~11 min read</span>
@@ -831,7 +830,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Self & Awareness</span>
             </div>
             <div className="card-desc">
-              The Gita's most precise piece of metaphysical work. Your body, your moods, your reactions, all observed. By something that is not them. The foundation underneath every other teaching.
+              The field and the knower of the field: your body, moods and reactions, and the awareness that watches them (13.1–2).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~13 min read</span>
@@ -844,7 +843,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/bhagwat-geeta-chapter-14" className="article-card" data-mp-article="Bhagavad Gita Chapter 14">
           <div className="card-thumb card-thumb-ch14">
             <div className="card-chapter-badge">Bhagavad Gita · Chapter 14 · 27 Verses</div>
-            <div className="card-thumb-title">Gunatraya Vibhaga —<br /><em>The Three Forces of Inner Weather</em></div>
+            <div className="card-thumb-title">Gunatraya Vibhaga —<br /><em>Sattva, Rajas and Tamas</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -853,7 +852,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Three Gunas</span>
             </div>
             <div className="card-desc">
-              Why some days are clear, some restless, some you cannot get off the couch. Sattva, rajas, tamas: the Gita's psychology of mood. And the unwavering devotion that goes beyond all three.
+              Why some days are clear, some restless and some heavy: sattva, rajas and tamas, and the person who goes beyond all three (14.22–26).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -875,7 +874,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Supreme Self</span>
             </div>
             <div className="card-desc">
-              An upside-down tree. The sword of detachment. A spark of the eternal in every being. The fire that digests your dinner. And the name Krishna finally claims: Purushottama, the Self beyond every other self.
+              An upside-down tree (15.1), the weapon of detachment that cuts it (15.3), a part of Krishna in every being (15.7), the fire that digests food (15.14), and the name Purushottama (15.18).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~11 min read</span>
@@ -897,7 +896,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Character & Ego</span>
             </div>
             <div className="card-desc">
-              The qualities that open a life and the ones that close it. The spiral of endless desire. The three gates of ruin: <em>kāma, krodha, lobha</em>. And why dropping them is the only ladder out.
+              The qualities that free you and the ones that bind (16.5), and the three gates to ruin: <em>kāma, krodha, lobha</em>, desire, anger and greed (16.21).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~11 min read</span>
@@ -919,7 +918,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Faith & Action</span>
             </div>
             <div className="card-desc">
-              You are made of your trust. Whatever you trust, that is what you become. Three kinds of food, austerity, giving. Om Tat Sat. And the closing claim: action without trust transforms nothing.
+              Faith comes in three kinds, and a person is made of what they trust (17.3). Food, austerity and giving in three kinds each, and Om Tat Sat (17.23).
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -941,7 +940,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-philosophy">Liberation</span>
             </div>
             <div className="card-desc">
-              Seventy-eight verses to close everything. Five causes of any action. Your own duty over a borrowed perfection. And the most secret verse of all: <em>abandon every duty, take refuge in me alone</em>.
+              The last chapter, 78 verses. Five causes of any action (18.14), your own duty over someone else&apos;s (18.47), and 18.66: <em>abandon every duty, take refuge in me alone</em>.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~20 min read</span>
@@ -962,7 +961,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/best-bhagavad-gita-translation" className="article-card" data-mp-article="Best Bhagavad Gita Translation">
           <div className="card-thumb card-thumb-whichgita">
             <div className="card-chapter-badge">Reader&apos;s Guide · Translations &amp; Commentaries</div>
-            <div className="card-thumb-title">Three Hundred Translations, One Gita —<br /><em>Which One Should You Read?</em></div>
+            <div className="card-thumb-title">Bhagavad Gita Translations —<br /><em>Which One Should You Read?</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -995,7 +994,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Deep Read</span>
             </div>
             <div className="card-desc">
-              The famous WhatsApp &ldquo;Geeta Saar&rdquo; you have read isn&apos;t actually in the Gita. Here is what Krishna really taught &mdash; one core verse for each of the 18 chapters, in Sanskrit, Hindi, and English.
+              The &ldquo;Geeta Saar&rdquo; forwarded on WhatsApp isn&apos;t in the Gita. Here is one core verse from each of the 18 chapters instead, in Sanskrit, Hindi and English.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~15 min read</span>
@@ -1041,7 +1040,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Reference</span>
             </div>
             <div className="card-desc">
-              The twenty Sanskrit shlokas every educated person should know &mdash; from Vakratunda Mahakaya to Asato Ma Sadgamaya to Karmanye Vadhikaraste. Devanagari, IAST, English translation, and Hindi meaning for each.
+              Twenty well-known Sanskrit shlokas, from Vakratunda Mahakaya to Asato Ma Sadgamaya to Karmanye Vadhikaraste, each in Devanagari and IAST with English and Hindi meaning.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~14 min read</span>
@@ -1064,7 +1063,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Deep Read</span>
             </div>
             <div className="card-desc">
-              The most-recited Sanskrit mantra on earth. Word by word: bhur, bhuvah, svah, savitur, vareṇyam, bhargo, dhīmahi. What it actually asks for is not wealth or protection &mdash; it is illumination of the intellect.
+              Rig Veda 3.62.10, word by word: bhur, bhuvah, svah, savitur, vareṇyam, bhargo, dhīmahi. Its request is in the last line, that our minds be inspired, and here is how to chant it.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -1087,7 +1086,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Deep Read</span>
             </div>
             <div className="card-desc">
-              A sixteen-word mantra that George Harrison put on the UK charts in 1969. Chaitanya popularized it in 16th-century Bengal; Prabhupada carried it to New York in 1965. What the words mean, and what nama-kirtan is actually doing.
+              A sixteen-word mantra that George Harrison put on the UK charts in 1969. Chaitanya spread it in 16th-century Bengal; Prabhupada carried it to New York in 1965. What the words mean, and what nama-kirtan is for.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~13 min read</span>
@@ -1110,7 +1109,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Reference</span>
             </div>
             <div className="card-desc">
-              Most Gita quotes online strip away the Sanskrit. This piece restores it. Thirty famous verses across six themes &mdash; karma, atman, bhakti, paramatman, shanti, shoka &mdash; each in Devanagari, IAST, English, and Hindi.
+              Thirty well-known Gita verses with the Sanskrit put back: karma, atman, bhakti, paramatman, shanti and shoka, each in Devanagari, IAST, English and Hindi.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~16 min read</span>
@@ -1133,7 +1132,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Deep Read</span>
             </div>
             <div className="card-desc">
-              In early 2023, a Google engineer launched GitaGPT as a weekend project. Five clones followed in 60 days. Several told users it was fine to kill if it was their dharma. A product teardown of what those bots got wrong, and what a real Krishna assistant needs.
+              In early 2023, a Google engineer launched GitaGPT as a weekend project. Five clones followed in 60 days. Several told users it was fine to kill if it was their dharma. What those bots got wrong, and what a Gita assistant would need to get right.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~14 min read</span>
@@ -1156,7 +1155,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Deep Read</span>
             </div>
             <div className="card-desc">
-              Krishna does not say there is one way. He lays out three: Action, Wisdom, Devotion, each shaped for a different temperament, all converging on the same reality. Grounded in the verses, with parallels from Tulsidas and modern psychology.
+              Krishna describes three ways in: action, knowledge and devotion, suited to different people. The verses for each, with parallels from Tulsidas.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~18 min read</span>
@@ -1179,7 +1178,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Deep Read</span>
             </div>
             <div className="card-desc">
-              The Bhagavad Gita is one voice in a vast chorus. The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each carry their own wisdom for mental peace — and most people have never read a word of them.
+              Ashtavakra, Avadhuta, Ram, Hans, Shakti, Shambhu and Vishnu: seven lesser-known texts called Gita, and what each says about peace of mind.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -1202,7 +1201,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Quick Read</span>
             </div>
             <div className="card-desc">
-              Chapter 1 opens with the world's most famous panic attack. The Gita's teaching on anxiety isn't "calm down" — it's a complete diagnosis of how the spiral begins and where to interrupt it.
+              In Chapter 1 Arjuna is shaking and his mouth is dry. What Chapters 2 and 5 say about where anxiety starts and where to step in.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~6 min read</span>
@@ -1215,7 +1214,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/bhagavad-gita-karma-meaning" className="article-card" data-mp-article="Gita Karma Meaning">
           <div className="card-thumb card-thumb-karma">
             <div className="card-chapter-badge">Topic Guide · Core Teaching</div>
-            <div className="card-thumb-title">Karma —<br /><em>What It Actually Means in the Gita</em></div>
+            <div className="card-thumb-title">Karma —<br /><em>What It Means in the Gita</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -1225,7 +1224,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Quick Read</span>
             </div>
             <div className="card-desc">
-              Karma doesn't mean "what goes around comes around." That's a greeting card. Here's what the Bhagavad Gita actually teaches — and why the real definition is harder, more honest, and more useful.
+              In the Gita, karma means action, not cosmic payback. What Krishna says about it in Chapters 2 to 4, and why it asks more of you than the popular idea.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~5 min read</span>
@@ -1248,7 +1247,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Deep Read</span>
             </div>
             <div className="card-desc">
-              The Gita isn't a random collection of wisdom. It's a structured discourse with a setup, escalation, climax, and payoff. Three acts, 18 chapters, one warrior who sat down and stood back up.
+              How the 18 chapters fit together, from Arjuna sitting down in Chapter 1 to his answer in 18.73.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~15 min read</span>
@@ -1271,7 +1270,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Quick Read</span>
             </div>
             <div className="card-desc">
-              700 verses, 18 chapters — where do you start? Which translation? What is it actually about? A no-nonsense guide for anyone who has heard about the Gita and wants to finally read it properly.
+              700 verses, 18 chapters. Where to start, which translation to pick, and what the Gita is about, for anyone reading it for the first time.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~7 min read</span>
@@ -1284,7 +1283,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/bhagavad-gita-2-47-karmanye-vadhikaraste" className="article-card" data-mp-article="BG 2.47 Karmanye Vadhikaraste">
           <div className="card-thumb card-thumb-247">
             <div className="card-chapter-badge">Verse Deep Dive · Chapter 2, Verse 47</div>
-            <div className="card-thumb-title">Karmanye Vadhikaraste —<br /><em>The Most Misread Line in the Gita</em></div>
+            <div className="card-thumb-title">Karmanye Vadhikaraste —<br /><em>BG 2.47, Word by Word</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -1294,7 +1293,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Verse Guide</span>
             </div>
             <div className="card-desc">
-              Four instructions in 32 syllables. Most people quote the first half. The second half is what changes everything. Full Sanskrit, word-by-word breakdown, and why the fourth clause is the one nobody talks about.
+              Four instructions in 32 syllables, and most people quote only the first two. The full Sanskrit, word by word, and what the other two ask.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~8 min read</span>
@@ -1307,7 +1306,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/sthitaprajna-bhagavad-gita" className="article-card" data-mp-article="Sthitaprajna Bhagavad Gita">
           <div className="card-thumb card-thumb-sthita">
             <div className="card-chapter-badge">Concept Guide · Chapter 2, Verses 55–72</div>
-            <div className="card-thumb-title">Sthitaprajna —<br /><em>The 18-Verse Portrait of an Unshakeable Mind</em></div>
+            <div className="card-thumb-title">Sthitaprajna —<br /><em>The Person of Steady Wisdom</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -1317,7 +1316,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Concept Guide</span>
             </div>
             <div className="card-desc">
-              Arjuna asked: what does a person of steady wisdom actually look like? Krishna answered across 18 consecutive verses. The kachhua image, the cascade from desire to ruin, the ocean that receives rivers without overflowing.
+              Arjuna asks what a person of steady wisdom looks like, and Krishna answers over 18 verses (2.55–72): the tortoise drawing in its limbs, the slide from desire to ruin, the ocean that rivers fill without moving it.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~10 min read</span>
@@ -1340,7 +1339,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Concept Guide</span>
             </div>
             <div className="card-desc">
-              Nishkama karma is not passivity. The Gita explicitly forbids inaction in the same verse it forbids attachment to results. What it actually means, why it is hard, and what changes when you practice it.
+              Action without attachment to the result. The same verse, 2.47, rules out inaction, so this is no excuse to stop working. What it means, and why it is hard.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~9 min read</span>
@@ -1353,7 +1352,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/bhagavad-gita-on-anxiety" className="article-card" data-mp-article="Bhagavad Gita On Anxiety">
           <div className="card-thumb card-thumb-anxiety2">
             <div className="card-chapter-badge">Topic Guide · Mental Peace</div>
-            <div className="card-thumb-title">What the Gita Says About Anxiety —<br /><em>9 Verses That Actually Help</em></div>
+            <div className="card-thumb-title">What the Gita Says About Anxiety —<br /><em>Verses on Fear and Worry</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -1363,7 +1362,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Deep Read</span>
             </div>
             <div className="card-desc">
-              The Gita opens with a panic attack. Arjuna&apos;s hands shake, his bow drops, his voice breaks. Krishna&apos;s 700-verse answer begins here. Nine specific verses on anxiety, the cascade from craving to collapse, and where to interrupt it.
+              Arjuna&apos;s hands shake and his bow slips (1.29–30). The verses where Krishna answers fear and worry, the slide from craving to collapse (2.62–63), and where to interrupt it.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~11 min read</span>
@@ -1376,7 +1375,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/bhagavad-gita-on-death-and-the-soul" className="article-card" data-mp-article="Bhagavad Gita On Death and Soul">
           <div className="card-thumb card-thumb-death">
             <div className="card-chapter-badge">Topic Guide · Chapter 2</div>
-            <div className="card-thumb-title">The Gita on Death and the Soul —<br /><em>What Actually Cannot Be Destroyed</em></div>
+            <div className="card-thumb-title">The Gita on Death and the Soul —<br /><em>What the Gita Says Survives</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -1386,7 +1385,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Concept Guide</span>
             </div>
             <div className="card-desc">
-              Weapons do not cut it. Fire does not burn it. Water does not wet it. Wind does not dry it. The Gita&apos;s first move is a structural claim about the nature of the self — and it changes everything that follows.
+              Weapons do not cut it, fire does not burn it, water does not wet it, wind does not dry it (2.23). What the Gita says survives death, verse by verse.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~9 min read</span>
@@ -1409,7 +1408,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Concept Guide</span>
             </div>
             <div className="card-desc">
-              Dharma appears 72 times in the Gita. It never quite means &quot;duty.&quot; Svadharma, sanatana dharma, the dharma-kshetra, and the final instruction to abandon all dharma: how they fit together.
+              Dharma rarely means only &quot;duty&quot; in the Gita. Svadharma, sanatana dharma, dharma-kshetra, and the last instruction to set all dharmas aside (18.66): how they fit together.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~10 min read</span>
@@ -1432,7 +1431,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Concept Guide</span>
             </div>
             <div className="card-desc">
-              Why some mornings are clear, some restless, and some you cannot get off the couch. Sattva, rajas, tamas: the Gita&apos;s framework for reading your own inner states. And the state beyond all three.
+              Why some mornings are clear, some restless and some heavy. Sattva, rajas and tamas in Chapter 14, how to recognise each in yourself, and the state beyond all three.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~9 min read</span>
@@ -1455,7 +1454,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Practical Guide</span>
             </div>
             <div className="card-desc">
-              The Gita was taught to someone who froze under pressure before the biggest test of his life. Nine lessons specifically for students: results anxiety, effort without attachment, self-mastery, and what to do after failure.
+              Arjuna froze before the biggest test of his life. Nine lessons for students from the Gita: exam nerves, effort without attachment, self-control, and what to do after failing.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~9 min read</span>
@@ -1478,7 +1477,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Concept Guide</span>
             </div>
             <div className="card-desc">
-              Ahankara doesn&apos;t mean pride or arrogance. It means I-maker — the mechanism in the mind that creates the sense of being a separate, bounded self. The Gita diagnoses it as the root misidentification, not a personality flaw.
+              Ahankara means &lsquo;I-maker&rsquo;: the part of the mind that labels experience as mine. Where the Gita uses the word (Chapters 3, 13, 16 and 18), and why it treats it as a mistake about who you are.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~8 min read</span>
@@ -1501,7 +1500,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Concept Guide</span>
             </div>
             <div className="card-desc">
-              Maya doesn&apos;t mean the world is fake. In the Gita it is the divine power that makes the real appear as something other than what it is — composed of the three gunas, and crossed not by argument but by surrender.
+              In the Gita, maya is the power that makes the real look like something else. It is made of the three gunas (7.14), and Krishna says it is crossed by turning to him.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~9 min read</span>
@@ -1514,7 +1513,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/atman-not-soul-bhagavad-gita" className="article-card" data-mp-article="Atman Not Soul Bhagavad Gita">
           <div className="card-thumb card-thumb-atman">
             <div className="card-chapter-badge">Concept Guide · Sanskrit Term</div>
-            <div className="card-thumb-title">Soul Is Not Atman —<br /><em>The Distinction the Gita Actually Draws</em></div>
+            <div className="card-thumb-title">Atman and Soul —<br /><em>Why the Words Differ</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -1524,7 +1523,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Concept Guide</span>
             </div>
             <div className="card-desc">
-              Translating ātman as &ldquo;soul&rdquo; is the most common philosophical error in English-language Indian spirituality. The two words carry different metaphysical premises. Here is what the Gita actually says — verse by verse, with the Bible&apos;s own account of the soul for contrast.
+              Many English translations render ātman as &ldquo;soul&rdquo;, and the two words carry different assumptions. What the Gita says, verse by verse, with the Bible&apos;s account of the soul for contrast.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -1537,7 +1536,7 @@ export default function BlogIndexPage() {
         <a href="/blogs/bhagavad-gita-vs-stoicism" className="article-card" data-mp-article="Bhagavad Gita vs Stoicism">
           <div className="card-thumb card-thumb-stoic">
             <div className="card-chapter-badge">Comparative Philosophy</div>
-            <div className="card-thumb-title">Bhagavad Gita vs Stoicism —<br /><em>9 Teachings That Keep Finding Each Other</em></div>
+            <div className="card-thumb-title">Bhagavad Gita vs Stoicism —<br /><em>Nine Parallels</em></div>
           </div>
           <div className="card-body">
             <div className="card-tags">
@@ -1547,7 +1546,7 @@ export default function BlogIndexPage() {
               <span className="tag tag-chapter">Comparison</span>
             </div>
             <div className="card-desc">
-              Marcus Aurelius and Krishna never met. They reached remarkably similar conclusions about action, equanimity, duty, and the self. Nine parallel teachings, and where the two traditions actually diverge.
+              Marcus Aurelius and Krishna never met, yet they say similar things about action, equanimity, duty and the self. Nine parallels, and where the two disagree.
             </div>
             <div className="card-meta">
               <span className="card-read-time">~12 min read</span>
@@ -1576,7 +1575,7 @@ export default function BlogIndexPage() {
           </div>
           <div className="coming-card">
             <div className="coming-label">Concept Guide</div>
-            <div className="coming-title">Moksha — What Liberation Actually Means in the Gita</div>
+            <div className="coming-title">Moksha — Liberation in the Gita</div>
             <span className="coming-soon-badge">Coming soon</span>
           </div>
           <div className="coming-card">
@@ -1589,11 +1588,7 @@ export default function BlogIndexPage() {
             <div className="coming-title">30 Bhagavad Gita Quotes on Life</div>
             <span className="coming-soon-badge">Coming soon</span>
           </div>
-          <div className="coming-card">
-            <div className="coming-label">Reader&apos;s Guide</div>
-            <div className="coming-title">Which Bhagavad Gita Translation Should You Read?</div>
-            <span className="coming-soon-badge">Coming soon</span>
-          </div>
+          
           <div className="coming-card">
             <div className="coming-label">Story Guide</div>
             <div className="coming-title">Mahabharata Summary — What Happened Before the Gita</div>
@@ -1606,8 +1601,8 @@ export default function BlogIndexPage() {
     <footer>
       <p>
         Wisdom App ·
-        <span>Daily shlokas from the Bhagavad Gita & Hindu scriptures</span>
-        · Free on iPhone
+        <span>One Gita verse a day for 7 days, read aloud</span>
+        · Week 1 free on iPhone
       </p>
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  ·
@@ -1619,7 +1614,7 @@ export default function BlogIndexPage() {
         <a href="mailto:work.ankurshukla@gmail.com">Support</a>
       </p>
       <p style={{marginTop: '6px', fontSize: '11px', opacity: 0.7}}>
-        Wisdom editorial translations. Commentary AI-drafted, human-reviewed. <a href="/methodology">Methodology →</a>
+        Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. <a href="/methodology">Methodology →</a>
       </p>
     </footer>
 

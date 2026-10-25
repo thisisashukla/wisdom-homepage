@@ -106,12 +106,12 @@ export default function DevicePlans({ pageName = 'Home' }: { pageName?: string }
         <div className="dp-body">
           <p className="dp-price">Week 1 free</p>
           <ul className="dp-facts">
-            <li>Answer a few questions and say what&apos;s going on in your own words. The seven verses are chosen for it.</li>
+            <li>Answer a few questions and say what&apos;s going on in your own words. Your week of verses is chosen for it.</li>
             <li>We don&apos;t store what you write.</li>
             <li>Your first verse comes before any sign-in. Then sign in with Google and all seven days come to your inbox. No card needed.</li>
           </ul>
           <CreatePlanLink className="btn-read-gita btn-read-gita-primary" campaign="web_home_devices" location="home_devices_create_plan" pageName={pageName}>
-            Create my 7-day Gita plan · Week 1 free
+            Create my 7-day Gita plan
           </CreatePlanLink>
         </div>
       </div>

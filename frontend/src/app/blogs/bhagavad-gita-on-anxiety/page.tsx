@@ -7,11 +7,11 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita on Anxiety — 9 Verses That Directly Address Fear, Worry & Overthinking",
-  description: "The Gita opens with a panic attack: Arjuna shakes, his bow drops, his vision blurs. 9 verses that directly address anxiety, fear, worry and the restless mind — Sanskrit, English meaning, and what Krishna actually tells him to do.",
+  description: "In chapter 1 Arjuna trembles, his mouth goes dry and his bow slips. Verses on fear, worry and the restless mind, with Sanskrit, English meaning and what Krishna tells him to do.",
   keywords: "bhagavad gita on anxiety, what does bhagavad gita say about anxiety, bhagavad gita verses for anxiety, bhagavad gita stress, bhagavad gita on fear, bhagavad gita mental health, bhagavad gita on worry, bhagavad gita restless mind, bhagavad gita depression",
   openGraph: {
     title: "Bhagavad Gita on Anxiety — 9 Verses That Directly Address Fear, Worry & Overthinking",
-    description: "The Gita opens with a panic attack — Arjuna shakes, his bow drops. 9 verses that directly address anxiety, fear, worry and the restless mind, with Sanskrit and English meaning.",
+    description: "In chapter 1 Arjuna trembles and his bow slips from his hand. Verses on fear, worry and the restless mind, with Sanskrit and English meaning.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-on-anxiety",
     siteName: 'Wisdom',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     site: '@sansearchapp',
     creator: '@thisisashukla',
     title: "Bhagavad Gita on Anxiety — 9 Verses That Directly Address Fear, Worry & Overthinking",
-    description: "The Gita opens with a panic attack — Arjuna shakes, his bow drops. 9 verses that directly address anxiety, fear, worry and the restless mind, with Sanskrit and English meaning.",
+    description: "In chapter 1 Arjuna trembles and his bow slips from his hand. Verses on fear, worry and the restless mind, with Sanskrit and English meaning.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -434,7 +434,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "What the Bhagavad Gita Says About Anxiety: 9 Verses That Help",
-    "description": "The Bhagavad Gita opens with a panic attack. Here are 9 verses specifically about anxiety, fear, and the restless mind.",
+    "description": "The Bhagavad Gita opens with Arjuna trembling and unable to fight. Here are the verses on fear, worry and the restless mind.",
     "datePublished": "2026-06-12",
     "dateModified": "2026-08-01",
     "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
@@ -473,7 +473,7 @@ const schemas = [
         "name": "Does the Bhagavad Gita help with anxiety?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Gita has more to say about anxiety than most people expect, because it begins with a detailed account of what anxiety feels like in the body and mind. Arjuna's collapse in Chapter 1 describes physical symptoms, cognitive distortion, and loss of purpose. Krishna's response across 18 chapters addresses the mechanics of how anxiety arises, specifically the chain from attachment to craving to anger to loss of discernment described in BG 2.62-2.66."
+          "text": "The Gita is a philosophical text, not medical advice, but it begins with a man overwhelmed by fear and grief. In chapter 1 Arjuna trembles, his mouth goes dry and he cannot stand (1.29–30). Krishna replies with, among other things, a chain from dwelling on objects to attachment, desire, anger and the loss of judgment (BG 2.62–63)."
         }
       },
       {
@@ -481,7 +481,7 @@ const schemas = [
         "name": "What does Krishna say about fear in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Krishna addresses fear as something rooted in attachment and impermanence. In BG 2.14 he tells Arjuna that all experiences, painful and pleasant, are temporary and should be endured with patience. In BG 2.56 he describes the steady-minded person as one who is free from fear (veetarāga-bhaya-krodha). Fear, in the Gita's analysis, is not irrational; it arises because something you are attached to feels threatened. The practice is working on the attachment, not suppressing the fear."
+          "text": "In BG 2.14 Krishna tells Arjuna that pleasant and painful experiences come and go and should be borne with patience. In BG 2.56 he describes the steady-minded person as free from attachment, fear and anger (vīta-rāga-bhaya-krodha). The Gita names fear alongside attachment, so its practice works on the attachment."
         }
       },
       {
@@ -489,7 +489,7 @@ const schemas = [
         "name": "What are the best Bhagavad Gita verses for mental peace?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "BG 2.65 for understanding what prasada (serenity) actually is and how it dissolves suffering. BG 6.5 for the recognition that you are your own source of support or distress. BG 6.35 for the practical acknowledgment that the mind is genuinely restless but can be trained. BG 12.15 for the description of a person who neither disturbs others nor is disturbed, free from agitation, fear, and restlessness."
+          "text": "BG 2.65 says that in serenity (prasada) all sorrow ends. BG 6.5 says a person must lift themselves up and is their own friend and enemy. BG 6.35 admits the mind is restless and says practice and detachment can steady it. BG 12.15 describes a person who neither troubles others nor is troubled by them."
         }
       },
       {
@@ -497,7 +497,7 @@ const schemas = [
         "name": "Is the Bhagavad Gita relevant for modern anxiety?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Gita's diagnosis of anxiety remains accurate regardless of era. The cascade from dwelling on objects of desire to attachment to craving to anger to loss of clear thinking described in BG 2.62-2.66 describes what clinical psychology now calls the anxiety-rumination cycle. The Gita does not offer techniques for symptom relief. It offers a structural analysis of why anxiety arises and what internal conditions are required to reduce it."
+          "text": "Many readers find that it is. The chain in BG 2.62–63, from dwelling on an object to attachment, desire, anger and lost judgment, describes a pattern people still recognise. The Gita offers an account of why the mind gets disturbed and what steadies it, and it is no substitute for professional care."
         }
       },
       {
@@ -505,7 +505,7 @@ const schemas = [
         "name": "What is prasada in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Prasada in BG 2.65 refers to an inner clarity or serenity that arises when the mind is no longer pulled between craving and aversion. It is not happiness. It is the absence of the specific suffering caused by wanting things to be other than they are. When prasada arises, the verse says all sorrow dissolves and the intellect becomes steady. It is a byproduct of self-restraint and balance, not something that can be directly produced."
+          "text": "Prasada in BG 2.65 means clarity or serenity. In 2.64 it comes to a person who moves among sense objects without attraction or aversion. When prasada arises, the verse says, all sorrow ends and the intellect soon becomes steady."
         }
       }
     ]
@@ -539,10 +539,10 @@ export default function GitaOnAnxietyPage() {
           </div>
           <h1 className="article-title">
             The Bhagavad Gita on Anxiety:<br />
-            <em>What Krishna Actually Says</em>
+            <em>What Krishna Says</em>
           </h1>
           <p className="article-subtitle">
-            The text opens with a man who cannot breathe. Arjuna&apos;s hands shake, his bow drops, his voice breaks. The entire 700-verse Gita is Krishna&apos;s response to a person in acute psychological distress.
+            In chapter 1 Arjuna trembles, his mouth goes dry and his bow slips from his hand. The rest of the Gita is Krishna&apos;s reply to him.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -551,7 +551,7 @@ export default function GitaOnAnxietyPage() {
             <span className="meta-sep">·</span>
             <span className="meta-item">~8 min read</span>
             <span className="meta-sep">·</span>
-            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -566,30 +566,30 @@ export default function GitaOnAnxietyPage() {
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>The Gita begins with a crisis, not a sermon</figcaption>
+          <figcaption>Arjuna and Krishna at Kurukshetra</figcaption>
         </figure>
 
         <p className="lead">
-          The Bhagavad Gita does not begin with philosophy. It begins with a man who cannot function. Arjuna is on a battlefield, surrounded by people he has spent his life training with and loving. His limbs go heavy. His mouth dries. His skin burns. His bow falls from his hand. He sinks into his chariot and tells Krishna he cannot do this. He does not know what is right anymore. The Gita knows what anxiety feels like, because it begins there.
+          The Bhagavad Gita begins on a battlefield. Arjuna looks across at teachers, cousins and elders he has known all his life, and his body gives way: his limbs fail, his mouth dries, his skin burns and his bow slips from his hand (1.29–30). At the end of chapter 1 he sits down in the chariot, overcome with grief (1.47). In 2.7 he admits he no longer knows what is right and asks Krishna to teach him.
         </p>
         <p>
-          What follows is 18 chapters of response. Not reassurance. Response. Krishna does not tell Arjuna that everything will be fine. He tells him where the feeling comes from, how the mind produces it, what conditions allow it to end, and what a person looks like on the other side of it. These are not separate from the philosophical teaching. They are the philosophical teaching, grounded in a real person&apos;s real collapse.
-        </p>
-
-        <h2>The Original Anxiety: Arjuna&apos;s Collapse</h2>
-        <p>
-          Chapter 1 of the Gita is one of the most honest accounts of psychological crisis in any classical text. Arjuna is not a weak person. He is described as one of the greatest warriors alive. The people arrayed against him are his teachers, his cousins, his friends. He can see their faces. He understands exactly what is about to happen.
-        </p>
-        <p>
-          His symptoms are physical: limbs failing, body shaking, skin on fire, bow slipping. His cognition fractures: he cannot think clearly about duty, cannot weigh consequences, cannot access the reasoning that usually guides him. His sense of self collapses: he does not know who he is in this moment, what he should want, what victory would even mean. He sits down. He is done.
-        </p>
-        <p>
-          This is the person Krishna responds to. Everything in the Gita is addressed to someone in this state. That context matters, because the Gita is sometimes read as an abstract philosophical text. It is not. It is a response to a person who is sitting on a chariot floor, not functioning, asking for help.
+          Krishna never tells Arjuna that everything will be fine. Over the next seventeen chapters he explains where the disturbance comes from, how the mind builds it, what lets it settle, and what a steady person looks like.
         </p>
 
-        <h2>Verse 1: The Source of Fear</h2>
+        <h2>Arjuna in Chapter 1</h2>
         <p>
-          Krishna&apos;s first move is not reassurance. It is redirection of attention. He points to the nature of experience itself.
+          Arjuna is a famous archer, the man who won Draupadi&apos;s hand by hitting a target few could reach. The people arrayed against him include his teacher Drona and his grandfather Bhishma. He has asked Krishna to drive the chariot between the armies so he can see them, and he does.
+        </p>
+        <p>
+          His body fails first: limbs, mouth, skin, the grip on his bow. Then his reasons pile up. He says he wants no victory, kingdom or pleasure bought with his kinsmen&apos;s lives (1.32), and that killing them will destroy families and their traditions (1.39–44).
+        </p>
+        <p>
+          The Gita is sometimes read as abstract philosophy, but every chapter after this one is addressed to the man sitting in that chariot.
+        </p>
+
+        <h2>Bearing What Passes: 2.14</h2>
+        <p>
+          One of Krishna&apos;s first teachings points Arjuna to how sensations behave.
         </p>
 
                 <ShlokaCard
@@ -597,25 +597,25 @@ export default function GitaOnAnxietyPage() {
           sanskrit="मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥"
           iast="mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ | āgamāpāyino'nityāstāṃstitikṣasva bhārata ||"
           meaningLabel="Translation"
-          meaning="The things you feel through your senses, like hot and cold or comfort and discomfort, are just momentary and will pass. Arjuna, be patient and endure them."
+          meaning="The things you feel through your senses, like hot and cold or comfort and discomfort, come and go and do not last. Arjuna, bear them patiently."
           insightLabel="What This Teaches"
-          insight="It inspires the practice of titiksha, patient endurance and equanimity, helping you stay stable no matter what sensations or feelings arise. This is not a command to suppress emotion. It is an observation about impermanence: the thing producing the fear, the discomfort, the dread, will not stay. Today, we often react to uncomfortable situations, whether a stressful meeting, an argument, or physical discomfort. This verse reminds us not to get carried away by these feelings but to patiently allow them to pass."
-          essence="All experiences, pleasant or unpleasant, are fleeting. Develop titiksha, patient endurance."
+          insight="Krishna observes that sensations of heat and cold, pleasure and pain arrive and depart, and asks Arjuna to bear them. The word is titikṣasva, from titiksha, patient endurance. A stressful meeting or an argument works the same way: the discomfort is real, and it passes."
+          essence="Heat and cold, pleasure and pain come and go. Bear them patiently."
         />
 
         <p>
-          The word titiksha is important here. It does not mean ignore or suppress. It means bear with patience, endure without being consumed. The Gita is not asking Arjuna to pretend the fear is not there. It is asking him to hold it without being dissolved by it.
+          Titiksha means to bear something with patience. The fear is allowed to be there; Arjuna is asked to carry it without being carried off by it.
         </p>
 
         <h2>The Cascade from Attachment to Ruin</h2>
         <p>
-          One of the most clinically precise sequences in the Gita appears in Chapter 2, verses 62 through 66. Krishna describes exactly how the mind moves from ordinary dwelling on a problem to full cognitive and emotional collapse. Read this as a chain, each step following from the last.
+          In 2.62–63 Krishna describes how the mind moves from dwelling on something to losing its judgment entirely. Each step follows from the last.
         </p>
 
         <div className="chain-sequence">
-          <h3>The Anxiety Cascade (BG 2.62-2.66)</h3>
+          <h3>From Dwelling to Ruin (BG 2.62–63)</h3>
           <div className="chain-step">
-            <span className="chain-step-label">Dwelling on sense objects (ruminating on what you want or fear)</span>
+            <span className="chain-step-label">Dwelling on sense objects (turning something over and over in the mind)</span>
           </div>
           <div className="chain-step">
             <span className="chain-arrow">↓</span>
@@ -651,12 +651,12 @@ export default function GitaOnAnxietyPage() {
             <span className="chain-arrow">↓</span>
           </div>
           <div className="chain-step">
-            <span className="chain-step-label">Buddhi (discernment) is destroyed. You cannot reason your way out</span>
+            <span className="chain-step-label">Buddhi (discernment) is destroyed, and the person is ruined</span>
           </div>
         </div>
 
         <p>
-          This is what happened to Arjuna in Chapter 1. He had been dwelling on the consequences of the battle. Attachment to his relatives, to his own identity as a good person who does not harm family, had hardened into a craving: I must not do this. When that craving met the reality that he was going to have to act anyway, the cascade followed. By the time Krishna speaks, Arjuna&apos;s discernment is gone. He cannot think. That is why a philosophical dialogue is necessary: he needs his buddhi restored before he can act.
+          Krishna states the chain about desire and anger in general, but it fits Arjuna in chapter 1. He has been dwelling on the faces across the field and on what the battle will cost. By 2.7 he says his mind is confused about dharma. Much of the dialogue that follows is Krishna restoring his buddhi so he can decide.
         </p>
 
                 <ShlokaCard
@@ -664,10 +664,10 @@ export default function GitaOnAnxietyPage() {
           sanskrit="प्रसादे सर्वदुःखानां हानिरस्योपजायते । प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते ॥"
           iast="prasāde sarvaduḥkhānāṃ hānirasyopajāyate | prasannacetaso hyāśu buddhiḥ paryavatiṣṭhate ||"
           meaningLabel="Translation"
-          meaning="When the mind and heart are pure and steady, all sorrow disappears, and your intelligence naturally settles in the highest reality."
+          meaning="When the mind is serene, all sorrow ends, and the intellect of the serene person soon becomes steady."
           insightLabel="What This Teaches"
-          insight="Purifying your chitta through self-restraint and balance brings emotional resilience and sharpness of insight. When prasada arises, it dissolves all distress. When the mind is peaceful and free from agitation, your buddhi (discriminative intelligence) easily and quickly becomes steady. Today, when overwhelmed by stress, emotional ups and downs, or confusion, this teaching reminds us that by practicing self-mastery and keeping the mind calm, clarity and wise decision-making return."
-          essence="Clarity within dissolves sorrow and brings lasting wisdom."
+          insight="In the previous verse, 2.64, Krishna describes a person who moves among sense objects without attraction or aversion and gains prasada, serenity. Here he says what prasada does: sorrow ends, and the buddhi, the faculty that judges, settles quickly."
+          essence="In serenity all sorrow ends, and the intellect soon becomes steady."
         />
 
                 <ShlokaCard
@@ -677,13 +677,13 @@ export default function GitaOnAnxietyPage() {
           meaningLabel="Translation"
           meaning="If you do not have control over your senses and mind, your thinking is unclear, you cannot develop true intention, and without this, you will not find peace or lasting happiness."
           insightLabel="What This Teaches"
-          insight="Building the ability to pause before reacting and keeping the senses in check leads to a clear mind, better decision-making, and inner harmony. The sequence here is exact: without inner discipline, no clarity. Without clarity, no shanti. Without shanti, no sukha. This is not a moral prescription. It is a causal description. In today's world, distractions are everywhere. This verse reminds us that happiness doesn't come from chasing every impulse but from inner discipline."
-          essence="Sukha, true happiness, is born from a peaceful and disciplined inner world."
+          insight="Krishna gives a sequence: without discipline there is no clear understanding, without that no steady contemplation, without contemplation no peace (shanti), and without peace no happiness (sukha). He states it as cause and effect."
+          essence="Without peace, how can there be happiness? Peace needs a disciplined mind."
         />
 
         <h2>You Are Your Own Friend and Enemy</h2>
         <p>
-          Chapter 6 contains a verse that cuts directly against the usual way people relate to their anxiety. It is common to experience anxiety as something that happens to you, something external or at least involuntary. The Gita offers a different framing.
+          Worry often feels like something that happens to you. In chapter 6 Krishna puts the responsibility for lifting the mind on the person who has it.
         </p>
 
                 <ShlokaCard
@@ -693,23 +693,23 @@ export default function GitaOnAnxietyPage() {
           meaningLabel="Translation"
           meaning="Uplift yourself through your own actions and thoughts. Do not let yourself fall, because you alone are your own friend and also your own enemy."
           insightLabel="What This Teaches"
-          insight="This verse teaches self-leadership and responsibility. Practicing self-awareness and positive self-dialogue can help us break past self-made barriers and uplift our own spirit. When facing stress, failure, or low confidence, we often blame others or external situations. This shloka reminds us to strengthen our mind, believe in our own efforts, and practice self-compassion. Our real progress depends on our own inner sankalpa (resolve) and actions."
-          essence="You are your greatest mitra and your own shatru. Choose upliftment."
+          insight="Krishna uses forms of the word atman seven times in two lines: lift the self by the self, do not let the self sink, for the self is its own friend and its own enemy. The next verse, 6.6, adds that the self is a friend to one who has mastered it, and an enemy to one who has not."
+          essence="Lift yourself by yourself. You are your own friend and your own enemy."
         />
 
         <p>
-          This is not a statement of blame. It is a statement of agency. The same mind that produces anxiety can produce steadiness. The question is what you do with it. Arjuna&apos;s mind collapsed because it was running a particular pattern. That pattern can be changed. You are, in the Gita&apos;s framing, capable of both the destruction and the rescue of your own clarity.
+          The verse is about agency. The same mind that produces worry can produce steadiness, and in the Gita&apos;s framing a person can both lose and recover their own clarity.
         </p>
 
         <h2>Prasada: What the Gita Calls Serenity</h2>
         <p>
-          The word prasada appears in BG 2.65 and is often translated as serenity or grace. It is worth pausing on what it actually means. Prasada is not the feeling of happiness. It is a specific inner condition that arises when the mind stops being pulled between what it craves and what it fears. When craving and aversion both quiet down, what remains is prasada.
+          The word prasada appears in BG 2.65 and is often translated as serenity or grace. In 2.64 it is what comes to a person whose senses are free of attraction and aversion. When craving and aversion both settle, what remains is prasada.
         </p>
         <p>
-          This is why the Gita&apos;s response to anxiety is not &ldquo;think positive&rdquo; or &ldquo;be grateful.&rdquo; Those are surface operations. Prasada arises when the underlying structure changes: when the mind is no longer in the constant state of wanting things to be different from how they are.
+          
         </p>
         <p>
-          BG 12.15 describes what a person looks like when prasada is the operating condition.
+          BG 12.15 describes a person who has that kind of steadiness.
         </p>
 
                 <ShlokaCard
@@ -717,15 +717,15 @@ export default function GitaOnAnxietyPage() {
           sanskrit="यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः । हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः ॥"
           iast="yasmānnodvijate loko lokānnodvijate ca yaḥ | harṣāmarṣabhayodvegairmukto yaḥ sa ca me priyaḥ ||"
           meaningLabel="Translation"
-          meaning="A person who does not cause agitation to others, is not disturbed by others, and remains free from excitement, anger, envy, fear, and restlessness, is beloved to Bhagavan."
+          meaning="One by whom the world is not disturbed, who is not disturbed by the world, and who is free from elation, envy, fear and agitation, is dear to me."
           insightLabel="What This Teaches"
-          insight="This verse guides us to develop emotional steadiness and a compassionate approach toward others, skills that enhance psychological resilience and deepen inner tranquility. The person described here is not emotionless. They are free from the specific torments: harsha (excessive excitement), amarsha (agitation), bhaya (fear), udvega (anxiety). Staying free from emotional turbulence preserves mental well-being and spreads a sense of peace."
-          essence="Calmness toward all beings leads to inner harmony and endears us to the Divine."
+          insight="Krishna names four states the devotee is free of: harsha (elation), amarsha (envy or intolerance), bhaya (fear) and udvega (agitation). He also gives a test that works in both directions: this person does not trouble others and is not troubled by them."
+          essence="One who neither troubles the world nor is troubled by it is dear to me."
         />
 
-        <h2>The Practice Verse: The Mind Is Genuinely Hard</h2>
+        <h2>Krishna Agrees the Mind Is Hard: 6.35</h2>
         <p>
-          This is the verse that earns trust, because Krishna admits the obvious. Arjuna, in Chapter 6, has complained that the mind is too restless to control. He is right. Krishna agrees.
+          In 6.33–34 Arjuna complains that the mind is restless and as hard to hold as the wind. Krishna agrees with him.
         </p>
 
                 <ShlokaCard
@@ -735,41 +735,41 @@ export default function GitaOnAnxietyPage() {
           meaningLabel="Translation"
           meaning="Shri Krishna says: Yes, Arjuna, you are right. The mind is restless and hard to control. But it can be brought under control through regular practice (abhyasa) and detachment (vairagya)."
           insightLabel="What This Teaches"
-          insight="This verse builds patience and discipline. It encourages us to keep showing up, accepting that mastery over the mind is a gradual process, not an instant achievement. Through regular habits like meditation, mindful study, or focusing on duty without clinging to results, you can train your mind for focus and calm even in busy or difficult times. The reassurance here is not that it is easy. It is that it is possible."
-          essence="With steady practice and detachment, even the restless mind becomes peaceful."
+          insight="Krishna begins with asaṃśayam, &quot;without doubt&quot;: the mind is restless and hard to control. Then he names two means, abhyasa (practice) and vairagya (detachment). Regular meditation, steady study, and doing one&apos;s work without clinging to results are all forms of abhyasa."
+          essence="The mind is restless, but practice and detachment bring it under control."
         />
 
         <p>
-          Abhyasa means regular practice, showing up again and again. Vairagya means detachment or non-attachment, loosening the grip of craving. The Gita does not promise quick results. It says these two things, practiced over time, work. That is a more honest claim than most systems make, and it is why the Gita has been read for this reason for a long time.
+          Abhyasa means returning to the practice again and again. Vairagya means loosening the grip of craving. Krishna makes no promise about speed.
         </p>
 
-        <h2>What the Gita Is Not Saying</h2>
+        <h2>Two Common Misreadings</h2>
         <p>
-          A few misreadings are worth naming directly, because they make the teaching seem either impossible or useless.
+          Two misreadings make the teaching seem either impossible or useless.
         </p>
 
         <div className="highlight-box">
-          <h3>The Gita Does Not Ask You to Stop Feeling</h3>
+          <h3>Steady Is Different from Unfeeling</h3>
           <p>
-            Arjuna is allowed to grieve. He grieves in Chapter 1 and Krishna does not tell him he should not feel what he is feeling. The teaching is about what to do with feeling, not about eliminating it. Titiksha means patient endurance, not suppression.
+            Krishna does tell Arjuna that he grieves for those who should not be grieved for (2.11). His argument is about the reasons for the grief, and the instruction in 2.14 is to bear what comes and goes.
           </p>
           <p>
-            The steady-minded person described in BG 2.56 is not disturbed by sorrow and does not crave pleasure. That is different from not feeling. The point is that the feeling does not own the person. It arises, it is acknowledged, it passes.
+            The steady-minded person in BG 2.56 stays unshaken in sorrow and free of craving in pleasure. A mind that sorrow cannot shake is one that still meets sorrow.
           </p>
           <p>
-            The Gita does not offer a bypass. Arjuna does not skip the grief and go straight to action. Krishna engages the grief, works through it, and the grief transforms. That is the model.
+            Arjuna also takes a long time to move from grief to action. Krishna answers his arguments over many chapters before Arjuna says his confusion is gone (18.73).
           </p>
         </div>
 
         <h2>On the Specific Anxiety About Outcomes</h2>
         <p>
-          A large portion of contemporary anxiety is specifically about outcomes. Will this work? What if it doesn&apos;t? What will people think of me if it fails? What does failure mean about who I am? This particular anxiety has a specific answer in the Gita.
+          Much everyday worry is about outcomes: whether something will work, and what people will think if it fails. The Gita speaks to this directly.
         </p>
         <p>
-          BG 2.47 addresses it directly: you have a right to act, but not to the fruits. The insight is not that outcomes do not matter. It is that making the anticipated outcome the reason you are acting, and the measure of your worth, creates a particular kind of suffering. You are now dependent on something you cannot fully control. Every moment of work becomes an anxious monitoring of whether the outcome is still on track. The quality of the work suffers, and the quality of your inner state suffers, regardless of whether the outcome arrives.
+          BG 2.47 says your right is to the action, never to its fruits. Outcomes still matter. The trouble starts when the expected result becomes the reason for acting and the measure of your worth, because then you depend on something you cannot fully control, and the work turns into constant checking on whether the result is still on track.
         </p>
         <p>
-          BG 2.38 offers the direct instruction for this state. Treat gain and loss, success and failure, as equal, then act. That is not indifference. It is the specific internal condition that allows you to act without being owned by what might happen.
+          BG 2.38 gives the instruction: treat pleasure and pain, gain and loss, victory and defeat alike, and then fight. Krishna is asking for an even mind while acting, which lets Arjuna act without being ruled by what might happen.
         </p>
 
                 <ShlokaCard
@@ -777,17 +777,17 @@ export default function GitaOnAnxietyPage() {
           sanskrit="सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥"
           iast="sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi ||"
           meaningLabel="Translation"
-          meaning="Keep your mind steady in both good and bad times, whether you win or lose or gain or lose something. Then, do your duty without fear of wrongdoing."
+          meaning="Treat pleasure and pain, gain and loss, victory and defeat alike, then engage in battle. This way you will incur no sin."
           insightLabel="What This Teaches"
-          insight="This verse builds the internal skill of samatva, cultivating emotional resilience, steady focus, and performing one's work without obsession over results. This leads to a calmer, steadier mind. In daily life, we often feel stressed by wins and losses at work or in relationships. This teaching encourages doing our best without getting overly affected by results or others' opinions."
-          essence="Do your kartavya with a balanced mind, unaffected by external outcomes."
+          insight="Krishna lists three pairs, pleasure and pain, gain and loss, victory and defeat, and asks Arjuna to hold them alike before he acts. This evenness is samatva, which 2.48 defines as yoga. At work, it means doing the job well without letting each win or loss decide your mood."
+          essence="Hold gain and loss, victory and defeat alike, then act."
         />
 
         <p>
-          Samatva, the equanimity described here, is not a destination. It is a practice. The Gita does not promise that Arjuna will feel fine immediately. It gives him a different way to hold the situation, and then, across 17 more chapters, fills in the reasoning that supports that way of holding it.
+          Samatva has to be practised. Krishna does not promise that Arjuna will feel fine at once. He gives him a different way to hold the situation and then spends the rest of the Gita giving the reasons for it.
         </p>
         <p>
-          The outcome of the Gita is not that Arjuna becomes unfeeling. He picks up his bow. He is the same person who moments earlier could not function. What changed was his relationship to what he was doing and what it meant. That is what the Gita offers for anxiety: not elimination of feeling, but a change in the structure of how you hold the situation.
+          At the end, Arjuna says his delusion is gone, his memory restored, and that he will do as Krishna says (18.73). He is the same man who sat down in chapter 1. What has changed is how he understands what he is about to do.</p> <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the claim that Krishna does not tell Arjuna to stop grieving (see 2.11), narrowed the dwelling-to-ruin chain to 2.62–63, removed details not in 1.28–30, corrected the translations of 2.38, 2.65 and 12.15, and removed medical framing; copy edited.
         </p>
       </div>
 
@@ -799,35 +799,35 @@ export default function GitaOnAnxietyPage() {
         <div className="faq-item">
           <strong>Does the Bhagavad Gita help with anxiety?</strong>
           <p>
-            The Gita has more to say about anxiety than most people expect, because it begins with a detailed account of what anxiety feels like in the body and mind. Arjuna&apos;s collapse in Chapter 1 describes physical symptoms, cognitive distortion, and loss of purpose. Krishna&apos;s response across 18 chapters addresses the mechanics of how anxiety arises, specifically the chain from attachment to craving to anger to loss of discernment described in BG 2.62-2.66.
+            The Gita is a philosophical text, not medical advice, but it begins with a man overwhelmed by fear and grief. In chapter 1 Arjuna trembles, his mouth goes dry and he cannot stand (1.29–30). Krishna replies with, among other things, a chain from dwelling on objects to attachment, desire, anger and the loss of judgment (BG 2.62–63).
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What does Krishna say about fear in the Bhagavad Gita?</strong>
           <p>
-            Krishna addresses fear as something rooted in attachment and impermanence. In BG 2.14 he tells Arjuna that all experiences, painful and pleasant, are temporary and should be endured with patience. In BG 2.56 he describes the steady-minded person as one who is free from fear. Fear, in the Gita&apos;s analysis, is not irrational; it arises because something you are attached to feels threatened. The practice is working on the attachment, not suppressing the fear.
+            In BG 2.14 Krishna tells Arjuna that pleasant and painful experiences come and go and should be borne with patience. In BG 2.56 he describes the steady-minded person as free from attachment, fear and anger. The Gita names fear alongside attachment, so its practice works on the attachment.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What are the best Bhagavad Gita verses for mental peace?</strong>
           <p>
-            BG 2.65 for understanding what prasada (serenity) actually is and how it dissolves suffering. BG 6.5 for the recognition that you are your own source of support or distress. BG 6.35 for the practical acknowledgment that the mind is genuinely restless but can be trained. BG 12.15 for the description of a person free from agitation, fear, and restlessness.
+            BG 2.65 says that in serenity (prasada) all sorrow ends. BG 6.5 says a person must lift themselves up and is their own friend and enemy. BG 6.35 admits the mind is restless and says practice and detachment can steady it. BG 12.15 describes a person who neither troubles others nor is troubled by them.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>Is the Bhagavad Gita relevant for modern anxiety?</strong>
           <p>
-            The Gita&apos;s diagnosis of anxiety remains accurate regardless of era. The cascade from dwelling on objects of desire to attachment to craving to anger to loss of clear thinking described in BG 2.62-2.66 describes what clinical psychology now calls the anxiety-rumination cycle. The Gita does not offer techniques for symptom relief. It offers a structural analysis of why anxiety arises and what internal conditions are required to reduce it.
+            Many readers find that it is. The chain in BG 2.62–63, from dwelling on an object to attachment, desire, anger and lost judgment, describes a pattern people still recognise. The Gita offers an account of why the mind gets disturbed and what steadies it, and it is no substitute for professional care.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What is prasada in the Bhagavad Gita?</strong>
           <p>
-            Prasada in BG 2.65 refers to an inner clarity or serenity that arises when the mind is no longer pulled between craving and aversion. It is not happiness. It is the absence of the specific suffering caused by wanting things to be other than they are. When prasada arises, the verse says all sorrow dissolves and the intellect becomes steady. It is a byproduct of self-restraint and balance, not something that can be directly manufactured.
+            Prasada in BG 2.65 means clarity or serenity. In 2.64 it comes to a person who moves among sense objects without attraction or aversion. When prasada arises, the verse says, all sorrow ends and the intellect soon becomes steady.
           </p>
         </div>
       </div>

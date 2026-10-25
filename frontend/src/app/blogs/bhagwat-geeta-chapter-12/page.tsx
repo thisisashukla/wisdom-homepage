@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: "bhagwat geeta chapter 12, bhagavad gita bhakti yoga, bhagwat geeta adhyay 12, form versus formless gita, 12.8 mind on me, qualities of a devotee gita, abhyasa yoga gita, renounce fruits of action, Bhakti Yoga meaning Bhagavad Gita, form vs formless worship Bhagavad Gita, Bhagavad Gita 12.13 qualities of a devotee, Bhagavad Gita 12.18 sama shatrau ca mitre ca, what is bhakti according to Bhagavad Gita, four-step practice ladder Bhagavad Gita",
   openGraph: {
     title: "Bhagavad Gita Chapter 12 Summary – Key Verses & Meaning (Bhakti Yoga)",
-    description: "Bhagavad Gita Chapter 12, how a devotee actually lives. The four-step ladder. The qualities of the one Krishna calls dear.",
+    description: "Bhagavad Gita Chapter 12: how a devotee lives, the four-step ladder of practice, and the qualities of the devotee Krishna calls dear.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12",
     siteName: 'Wisdom',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 12 Summary – Key Verses & Meaning (Bhakti Yoga)",
-    description: "Bhagavad Gita Chapter 12, how a devotee actually lives. The four-step ladder. The qualities of the one Krishna calls dear.",
+    description: "Bhagavad Gita Chapter 12: how a devotee lives, the four-step ladder of practice, and the qualities of the devotee Krishna calls dear.",
     images: ["https://wisdomquotes.in/assets/chapter12.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-12' } },
@@ -362,7 +362,7 @@ const schemas = [
         "name": "What is Bhagavad Gita Chapter 12 about?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Chapter 12, called Bhakti Yoga (the Yoga of Devotion), is the shortest chapter in the Gita — only 20 verses — and one of its most practical. Arjuna asks whether worship of the personal form or the formless absolute is higher. Krishna favours the personal form as more accessible for embodied beings, gives a four-step ladder for those who find devotion difficult (12.8-11), and devotes the last seven verses to a portrait of the kind of devotee he calls dear — measured by interpersonal qualities, not by external religiosity."
+          "text": "Chapter 12, called Bhakti Yoga (the Yoga of Devotion), has only 20 verses (Chapter 15 is the same length) and is one of its most practical. Arjuna asks whether worship of the personal form or the formless absolute is higher. Krishna favours the personal form as more accessible for embodied beings, gives a four-step ladder for those who find devotion difficult (12.8-11), and devotes verses 12.13–19 to a portrait of the kind of devotee he calls dear — measured by interpersonal qualities, not by external religiosity."
         }
       },
       {
@@ -370,7 +370,7 @@ const schemas = [
         "name": "Is worship of form better than worship of the formless in the Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In verse 12.2 Krishna says those who fix their minds on his personal form, full of trust, are 'the most united' in his view. In 12.5 he explains why: the unmanifest is harder for embodied beings to reach. The Gita does not deny the validity of the formless path — it acknowledges its difficulty. For most people, devotion to a form provides a workable handle that the formless absolute does not."
+          "text": "In verse 12.2 Krishna says those who fix their minds on his personal form, full of trust, are 'the most united' in his view. In 12.5 he explains why: the unmanifest is harder for embodied beings to reach. The Gita grants that the formless path also reaches him (12.4) and says it is harder. For most people, devotion to a form provides a workable handle that the formless absolute does not."
         }
       },
       {
@@ -378,7 +378,7 @@ const schemas = [
         "name": "What is the four-step ladder of Bhagavad Gita Chapter 12?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verses 12.8 through 12.11 give a four-rung ladder for the seeker. (1) Fix the mind on Krishna directly. (2) If you cannot, practice — abhyāsa-yoga. (3) If practice is too hard, work for the sake of the Divine: offer your actions. (4) If even that is too hard, renounce the fruits of action. Each rung accepts that not everyone can stand on the rung above. The Gita is meeting the reader where they actually are."
+          "text": "Verses 12.8 through 12.11 give a four-step ladder. (1) Fix the mind on Krishna directly. (2) If you cannot, practice — abhyāsa-yoga. (3) If practice is too hard, work for the sake of the Divine: offer your actions. (4) If even that is too hard, renounce the fruits of action. Each step allows that not everyone can manage the one above it."
         }
       },
       {
@@ -386,7 +386,7 @@ const schemas = [
         "name": "What does Bhagavad Gita 12.12 mean?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 12.12 says: knowledge is better than practice; meditation is better than knowledge; renunciation of the fruits of action is better than meditation — and peace follows immediately from such renunciation. The surprising line is the last one. The seemingly lowest rung — letting go of outcomes — turns out to be the most direct path to peace, because the clinging was itself the suffering."
+          "text": "Verse 12.12 says: knowledge is better than practice; meditation is better than knowledge; renunciation of the fruits of action is better than meditation — and peace follows immediately from such renunciation. The last line surprises. The step that looked lowest — letting go of outcomes — is the one Krishna says brings peace at once."
         }
       },
       {
@@ -394,7 +394,7 @@ const schemas = [
         "name": "What are the qualities of a devotee in Chapter 12?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verses 12.13-19 give a long portrait of the devotee Krishna calls dear. Hates no being. Friendly. Compassionate. Free of possessiveness. Equal in pleasure and pain. Forgiving. Disturbs no one, is disturbed by no one. Expects nothing. Equal to friend and enemy, honour and dishonour. The portrait is striking because it is entirely about character and interpersonal texture — not about external religiosity."
+          "text": "Verses 12.13-19 give a long portrait of the devotee Krishna calls dear. The devotee hates no being, is friendly, compassionate, free of possessiveness, even in pleasure and pain, and forgiving; disturbs no one and is disturbed by no one; expects nothing; and is alike to friend and enemy, honour and dishonour. The portrait is about character and how one treats people — not about external religiosity."
         }
       },
       {
@@ -402,7 +402,7 @@ const schemas = [
         "name": "What does it mean to be 'equal to friend and enemy' in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In verse 12.18, Krishna describes the devotee as equal to friend and enemy. The teaching is not about being cold or impartial. It is about being unhijacked. The devotee still cares about the friend and acts well toward the enemy — but neither the friend's affection nor the enemy's hostility takes over the inner life. Equanimity, in the Gita's sense, is the freedom to love deeply without being captured by what others are doing back."
+          "text": "In verse 12.18, Krishna describes the devotee as equal to friend and enemy. The devotee still cares about the friend and acts well toward the enemy — but neither the friend's affection nor the enemy's hostility takes over the inner life. Equanimity here means caring for people without being ruled by how they treat you back."
         }
       }
     ]
@@ -603,7 +603,7 @@ export default function ChapterPage12() {
             <em>Bhakti Yoga</em>
           </h1>
           <p className="article-subtitle">
-            After the cosmic vision, the shortest chapter in the Gita. The four-step ladder for when meditation is too hard. And the most surprising definition of devotion, measured not by how loudly you pray, but by how lightly you walk in other people's lives.
+            After the cosmic vision comes a 20-verse chapter: a four-step ladder for when fixing the mind on Krishna is too hard, and a portrait of the devotee measured by how lightly they walk in other people&apos;s lives.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -614,7 +614,7 @@ export default function ChapterPage12() {
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 12 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -633,22 +633,17 @@ export default function ChapterPage12() {
           </figure>
 
         <p className="lead">
-          Chapter 12 follows the cosmic form of Chapter 11 the way silence follows a thunderclap. After 55 verses of overwhelming theophany, the Gita's next chapter is the shortest in the entire book, only 20 verses, and almost domestic in tone. Krishna stops describing his vast metaphysical body and starts describing what a person who loves him actually looks like, day to day. The chapter is, in a way, the Gita's quiet answer to the question Chapter 11 raised: now that you have seen the largeness, what does ordinary life look like?
+          Chapter 12 follows the cosmic form of Chapter 11 with a change of scale. After 55 verses of overwhelming vision comes a chapter of 20 verses (tied with Chapter 15 as the shortest), almost domestic in tone. Krishna stops describing his vast metaphysical body and starts describing what a person who loves him looks like, day to day. It answers a question Chapter 11 leaves open: after seeing that, how do you live an ordinary day?
         </p>
 
         <p>
-          The chapter opens with a question Arjuna has been holding for some time. Which is better, to worship the Divine as a form, with all the warmth of relationship, or to worship the formless absolute? Krishna's answer is gentler and more practical than most readers expect. He says: the formless path is harder for embodied beings. Therefore, if you are in a body, devotion to a form is more accessible. Then he gives a four-step ladder for anyone who finds even devotion difficult. And then, for the last seven verses, he describes the character of the devotee he calls dear. The portrait is not what most religious traditions describe. It is quieter, more interpersonal, more about the texture of how you live than about the loudness of your belief.
+          The chapter opens with Arjuna&apos;s question: which is better, to worship the Divine as a form, with all the warmth of relationship, or to worship the formless absolute? Krishna&apos;s answer is practical. He says the formless path is harder for embodied beings. Therefore, if you are in a body, devotion to a form is more accessible. Then he gives a four-step ladder for anyone who finds even devotion difficult. Then, in 12.13–19, he describes the character of the devotee he calls dear. The portrait is about how you treat people and how you take what happens, and says little about rituals or beliefs.
         </p>
 
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
             <li><a href="#form-or-formless">Form or formless, Arjuna's old question</a></li>
-            <li><a href="#ladder">The four-step ladder, 12.8 to 12.11</a></li>
-            <li><a href="#renunciation-of-results">Peace follows immediately, 12.12</a></li>
-            <li><a href="#character">What a devotee actually looks like, 12.13</a></li>
-            <li><a href="#no-disturbance">The one who disturbs no one, 12.15</a></li>
-            <li><a href="#equanimity">Equal to friend and enemy, 12.18</a></li>
             <li><a href="#nectar">The nectar-like teaching, 12.20</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
@@ -668,11 +663,11 @@ export default function ChapterPage12() {
         <h2 id="form-or-formless">Form or Formless, Which Devotion Is Higher?</h2>
 
         <p>
-          Arjuna opens Chapter 12 with a question that has been animating Indian philosophical debate for two and a half thousand years. Some devotees worship the personal form of the Divine, with attributes, with a name, with relationship. Others worship the imperishable, formless, unmanifest absolute. Which path is better? Which devotees are more accomplished in yoga?
+          Arjuna opens Chapter 12 with a question Indian philosophers have argued over for centuries. Some devotees worship the personal form of the Divine, with attributes, with a name, with relationship. Others worship the imperishable, formless, unmanifest absolute. Which path is better? Which devotees are more accomplished in yoga?
         </p>
 
         <p>
-          Krishna's answer might surprise readers who expect the formless path to be praised as more advanced. He says, instead, that those who fix their minds on him with supreme trust are, in his view, the most united. Then in 12.5, he adds the practical observation: the formless path is harder for embodied beings, because the unmanifest is, by definition, difficult for a mind that lives inside a body to reach. The verse does not say the formless path is wrong. It says it is harder. For most of us, in most lives, devotion to a form is the accessible door.
+          Readers who expect the formless path to be praised as more advanced may be surprised. Krishna says that those who fix their minds on him with supreme trust are, in his view, the most united. Then in 12.5, he adds the practical observation: the formless path is harder for embodied beings, because the unmanifest is, by definition, difficult for a mind that lives inside a body to reach. Krishna calls the formless path harder, and in 12.4 says those who take it also reach him. For most people, devotion to a form is the easier door.
         </p>
 
                 <ShlokaCard
@@ -680,7 +675,7 @@ export default function ChapterPage12() {
           speaker="Krishna"
           sanskrit="श्रीभगवानुवाच मय्यावेश्य मनो ये मां नित्ययुक्ता उपासते । श्रद्धया परयोपेतास्ते मे युक्ततमा मताः ॥"
           iast="śrī bhagavān uvāca | mayy āveśya mano ye māṃ nitya-yuktā upāsate | śraddhayā parayopetās te me yuktatamā matāḥ ||"
-          essence="Full trust and steady remembrance make devotion complete."
+          essence="Those who fix their minds on me and worship me with supreme faith are, I hold, the most united."
         />
 
                 <ShlokaCard
@@ -688,12 +683,12 @@ export default function ChapterPage12() {
           speaker="Krishna"
           sanskrit="क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम् । अव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते ॥"
           iast="kleśo'dhikataras teṣām avyaktāsakta-cetasām | avyaktā hi gatir duḥkhaṃ dehavadbhir avāpyate ||"
-          essence="The subtlest path is hardest for a body-bound mind."
+          essence="The struggle is greater for minds set on the unmanifest; that goal is hard for the embodied."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>What this means for the modern reader:</strong> Equanimity is not coldness. It is the opposite. Coldness happens when your circuit is so overloaded by your own reactivity that you have nothing left for the other person. Equanimity is what lets you stay present, available, and unhijacked, even when the other person is doing their best to hijack you. That is the kind of presence Krishna calls dear.
+            <strong>What this means for the modern reader:</strong> The devotee of 12.18 is alike to friend and enemy. That describes someone who stays present and kind when another person is trying to provoke them, which is different from coldness. Krishna calls that person dear.
           </p>
         </div>
 
@@ -709,11 +704,11 @@ export default function ChapterPage12() {
         <h2 id="nectar">The Nectar-Like Teaching</h2>
 
         <p>
-          Chapter 12 closes with a verse that names the whole portrait as <em>dharmyāmṛtam idam</em>, this nectar of dharma. The teaching just given is described not as instruction but as nectar: something that nourishes, that heals, that you would want to drink. Those who live by it, with trust, take refuge in Krishna, and are exceedingly dear to him.
+          Chapter 12 closes with a verse that names the whole portrait as <em>dharmyāmṛtam idam</em>, this nectar of dharma. Krishna calls the teaching nectar: something that nourishes, that you would want to drink. Those who live by it, with trust, take refuge in Krishna, and are exceedingly dear to him.
         </p>
 
         <p>
-          Notice the word <em>śraddadhānāḥ</em>, those with śraddhā (trust). Trust is what makes the teaching nectar rather than just information. Without trust, the verse remains a description of a difficult kind of person. With trust, the description becomes a possibility, something one can move toward, slowly, over time. The chapter ends, in this way, the way many of the Gita's most important chapters end. Not with a command. With an invitation.
+          Notice the word <em>śraddadhānāḥ</em>, those with śraddhā (trust). Without trust, 12.13–19 reads as a description of an unusually difficult kind of person. With trust, it becomes something one can move toward, slowly, over time.
         </p>
 
                 <ShlokaCard
@@ -723,8 +718,8 @@ export default function ChapterPage12() {
           iast="ye tu dharmyāmṛtam idaṃ yathoktaṃ paryupāsate | śraddadhānā mat-paramā bhaktās te'tīva me priyāḥ ||"
           meaning="Those devotees who, full of trust, taking me as the supreme, live by this nectar-like dharma that I have spoken, they are exceedingly dear to me."
           insightLabel="Why the teaching is called nectar"
-          insight="Nectar (amṛta) is the substance of immortality in Indian mythology. The Gita calls the qualities of devotion nectar-like because they produce, in the person who embodies them, a kind of inner deathlessness: a steadiness no event can finally undo. The chapter ends with the promise that this nectar is available to anyone willing to trust."
-          essence="Faithful practice turns devotion into closeness."
+          insight="Nectar (amṛta) is the substance of immortality in Indian mythology. The Gita calls this teaching nectar of dharma, and the verse promises that anyone who follows it with faith is exceedingly dear to Krishna."
+          essence="Those who follow this nectar of dharma with faith, holding me highest, are exceedingly dear to me."
         />
 
         {/* DIVIDER */}
@@ -743,26 +738,26 @@ export default function ChapterPage12() {
             <tr><th>Verse</th><th>Speaker</th><th>Teaching Essence</th></tr>
           </thead>
           <tbody>
-            <tr><td>12.1</td><td>Arjuna</td><td>Devotion can face the divine as form or as formless reality</td></tr>
-            <tr><td>12.2</td><td>Krishna</td><td>Full trust and steady remembrance make devotion complete</td></tr>
-            <tr><td>12.3</td><td>Krishna</td><td>The deepest devotion reaches what never changes</td></tr>
-            <tr><td>12.4</td><td>Krishna</td><td>Reach the divine by mastering yourself and caring for everyone</td></tr>
-            <tr><td>12.5</td><td>Krishna</td><td>The subtlest path is hardest for a body-bound mind</td></tr>
-            <tr><td>12.6</td><td>Krishna</td><td>Total devotion turns every action into worship</td></tr>
-            <tr><td>12.7</td><td>Krishna</td><td>A mind fixed on Krishna is met by Krishna's saving presence</td></tr>
-            <tr><td>12.8</td><td>Krishna</td><td>A divided mind settles when both thought and feeling rest in the divine</td></tr>
-            <tr><td>12.9</td><td>Krishna</td><td>Practice can lead the mind where stillness cannot yet go</td></tr>
-            <tr><td>12.10</td><td>Krishna</td><td>Offered action can succeed where practice still fails</td></tr>
-            <tr><td>12.11</td><td>Krishna</td><td>Let go of the result; the action itself is the practice</td></tr>
-            <tr><td>12.12</td><td>Krishna</td><td>Peace begins when you stop clinging to what your action produces</td></tr>
-            <tr><td>12.13</td><td>Krishna</td><td>Devotion shows up as friendliness, forgiveness, and emotional steadiness</td></tr>
-            <tr><td>12.14</td><td>Krishna</td><td>Real devotion is a steady mind already placed beyond itself</td></tr>
-            <tr><td>12.15</td><td>Krishna</td><td>True devotion leaves no wake of disturbance</td></tr>
-            <tr><td>12.16</td><td>Krishna</td><td>True closeness releases craving, anxiety, and compulsive beginning</td></tr>
-            <tr><td>12.17</td><td>Krishna</td><td>Devotion becomes steady when liking and disliking no longer rule the heart</td></tr>
-            <tr><td>12.18</td><td>Krishna</td><td>Real devotion stays even when life feels hostile or kind</td></tr>
-            <tr><td>12.19</td><td>Krishna</td><td>Praise and blame lose power over the one who stands steady</td></tr>
-            <tr><td>12.20</td><td>Krishna</td><td>Faithful practice turns devotion into closeness</td></tr>
+            <tr><td>12.1</td><td>Arjuna</td><td>Who knows yoga better: devotees who worship you, or those who worship the imperishable unmanifest?</td></tr>
+            <tr><td>12.2</td><td>Krishna</td><td>Those who fix their minds on me and worship me with supreme faith are, I hold, the most united</td></tr>
+            <tr><td>12.3</td><td>Krishna</td><td>Those who worship the imperishable, the indefinable, unmanifest, all-pervading, unthinkable and unmoving</td></tr>
+            <tr><td>12.4</td><td>Krishna</td><td>with senses restrained, even-minded everywhere, glad at the good of all beings, they too reach me</td></tr>
+            <tr><td>12.5</td><td>Krishna</td><td>The struggle is greater for minds set on the unmanifest; that goal is hard for the embodied to reach</td></tr>
+            <tr><td>12.6</td><td>Krishna</td><td>But those who give all their actions to me, intent on me, meditating on me with single-minded yoga</td></tr>
+            <tr><td>12.7</td><td>Krishna</td><td>for them, minds fixed on me, I soon become the rescuer from the sea of death and rebirth</td></tr>
+            <tr><td>12.8</td><td>Krishna</td><td>Fix your mind on me alone, rest your understanding in me, and you will live in me</td></tr>
+            <tr><td>12.9</td><td>Krishna</td><td>If you cannot hold your mind steady on me, seek to reach me through repeated practice</td></tr>
+            <tr><td>12.10</td><td>Krishna</td><td>If you cannot practise, make working for me your aim; doing actions for me, you will succeed</td></tr>
+            <tr><td>12.11</td><td>Krishna</td><td>If even that is too hard, take refuge in me, restrain yourself, and give up the fruits of action</td></tr>
+            <tr><td>12.12</td><td>Krishna</td><td>Knowledge beats practice, meditation beats knowledge, giving up fruits beats meditation; peace follows at once</td></tr>
+            <tr><td>12.13</td><td>Krishna</td><td>Whoever hates no being, is friendly and compassionate, free of mine-ness and ego, even in joy and pain, forgiving</td></tr>
+            <tr><td>12.14</td><td>Krishna</td><td>always content, self-controlled, firm in resolve, mind and understanding given to me: that devotee is dear to me</td></tr>
+            <tr><td>12.15</td><td>Krishna</td><td>Whoever disturbs no one and is disturbed by no one, free of elation, envy, fear and agitation, is dear to me</td></tr>
+            <tr><td>12.16</td><td>Krishna</td><td>Whoever expects nothing, is pure, capable, unconcerned and untroubled, and drops self-driven undertakings, is dear to me</td></tr>
+            <tr><td>12.17</td><td>Krishna</td><td>Whoever neither rejoices nor hates, grieves nor craves, and lets go of good and bad alike, is dear to me</td></tr>
+            <tr><td>12.18</td><td>Krishna</td><td>Alike to enemy and friend, honour and dishonour, cold and heat, pleasure and pain, free of attachment</td></tr>
+            <tr><td>12.19</td><td>Krishna</td><td>alike in blame and praise, quiet, content with whatever comes, without a fixed home, steady-minded and devoted: dear to me</td></tr>
+            <tr><td>12.20</td><td>Krishna</td><td>Those who follow this nectar of dharma with faith, holding me highest, are exceedingly dear to me</td></tr>
           </tbody>
         </table>
 
@@ -789,6 +784,8 @@ export default function ChapterPage12() {
         </div>
 
 
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the claim that this is the single shortest chapter (Chapter 15 also has 20 verses) and noted that 12.4 says the formless path also reaches Krishna; copy edited.</p>
+
         <div className="faq-section" id="faq">
           <div className="faq-header">
             <div className="faq-header-label">Common questions</div>
@@ -797,37 +794,37 @@ export default function ChapterPage12() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 12 about?</div>
             <div className="faq-a">
-              Chapter 12, called Bhakti Yoga (the Yoga of Devotion), is the shortest chapter in the Gita, only 20 verses, and one of its most practical. Arjuna asks whether worship of the personal form or the formless absolute is higher. Krishna favours the personal form as more accessible for embodied beings, gives a four-step ladder for those who find devotion difficult (12.8-11), and devotes the last seven verses to a portrait of the kind of devotee he calls dear, measured by interpersonal qualities, not by external religiosity.
+              Chapter 12, called Bhakti Yoga (the Yoga of Devotion), has only 20 verses (Chapter 15 is the same length) and is one of its most practical. Arjuna asks whether worship of the personal form or the formless absolute is higher. Krishna favours the personal form as more accessible for embodied beings, gives a four-step ladder for those who find devotion difficult (12.8-11), and devotes verses 12.13–19 to a portrait of the kind of devotee he calls dear, measured by interpersonal qualities, not by external religiosity.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Is worship of form better than worship of the formless in the Gita?</div>
             <div className="faq-a">
-              In verse 12.2 Krishna says those who fix their minds on his personal form, full of trust, are 'the most united' in his view. In 12.5 he explains why: the unmanifest is harder for embodied beings to reach. The Gita does not deny the validity of the formless path, it acknowledges its difficulty. For most people, devotion to a form provides a workable handle that the formless absolute does not.
+              In verse 12.2 Krishna says those who fix their minds on his personal form, full of trust, are 'the most united' in his view. In 12.5 he explains why: the unmanifest is harder for embodied beings to reach. The Gita grants that the formless path also reaches him (12.4) and says it is harder. For most people, devotion to a form provides a workable handle that the formless absolute does not.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the four-step ladder of Bhagavad Gita Chapter 12?</div>
             <div className="faq-a">
-              Verses 12.8 through 12.11 give a four-rung ladder for the seeker. (1) Fix the mind on Krishna directly. (2) If you cannot, practice (<em>abhyāsa-yoga</em>). (3) If practice is too hard, work for the sake of the Divine: offer your actions. (4) If even that is too hard, renounce the fruits of action. Each rung accepts that not everyone can stand on the rung above. The Gita is meeting the reader where they actually are.
+              Verses 12.8 through 12.11 give a four-step ladder. (1) Fix the mind on Krishna directly. (2) If you cannot, practice (<em>abhyāsa-yoga</em>). (3) If practice is too hard, work for the sake of the Divine: offer your actions. (4) If even that is too hard, renounce the fruits of action. Each step allows that not everyone can manage the one above it.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 12.12 mean?</div>
             <div className="faq-a">
-              Verse 12.12 says: knowledge is better than practice; meditation is better than knowledge; renunciation of the fruits of action is better than meditation, and peace follows immediately from such renunciation. The surprising line is the last one. The seemingly lowest rung, letting go of outcomes, turns out to be the most direct path to peace, because the clinging was itself the suffering.
+              Verse 12.12 says: knowledge is better than practice; meditation is better than knowledge; renunciation of the fruits of action is better than meditation, and peace follows immediately from such renunciation. The last line surprises. The step that looked lowest, letting go of outcomes, is the one Krishna says brings peace at once.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What are the qualities of a devotee in Chapter 12?</div>
             <div className="faq-a">
-              Verses 12.13-19 give a long portrait of the devotee Krishna calls dear. Hates no being. Friendly. Compassionate. Free of possessiveness. Equal in pleasure and pain. Forgiving. Disturbs no one, is disturbed by no one. Expects nothing. Equal to friend and enemy, honour and dishonour. The portrait is striking because it is entirely about character and interpersonal texture, not about external religiosity.
+              Verses 12.13-19 give a long portrait of the devotee Krishna calls dear. The devotee hates no being, is friendly, compassionate, free of possessiveness, even in pleasure and pain, and forgiving; disturbs no one and is disturbed by no one; expects nothing; and is alike to friend and enemy, honour and dishonour. The portrait is about character and how one treats people, not about external religiosity.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does it mean to be 'equal to friend and enemy' in the Bhagavad Gita?</div>
             <div className="faq-a">
-              In verse 12.18, Krishna describes the devotee as equal to friend and enemy. The teaching is not about being cold or impartial. It is about being unhijacked. The devotee still cares about the friend and acts well toward the enemy, but neither the friend's affection nor the enemy's hostility takes over the inner life. Equanimity, in the Gita's sense, is the freedom to love deeply without being captured by what others are doing back.
+              In verse 12.18, Krishna describes the devotee as equal to friend and enemy. The devotee still cares about the friend and acts well toward the enemy, but neither the friend's affection nor the enemy's hostility takes over the inner life. Equanimity here means caring for people without being ruled by how they treat you back.
             </div>
           </div>
         </div>

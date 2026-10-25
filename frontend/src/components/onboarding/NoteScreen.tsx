@@ -182,7 +182,7 @@ export default function NoteScreen({
 
   return (
     <>
-      <Hero title={heading.lead} accent={heading.accent} sub={<>Tap the mic and talk, or type it.<br />Your story shapes your reading plan.</>} />
+      <Hero title={heading.lead} accent={heading.accent} sub={<>Tap the mic and talk, or type it.<br />Your verses are chosen from what you say.</>} />
       <div className={`ob-stage${typing ? ' is-typing' : ''}`}>
         <div className="ob-slot">
           {recording ? (
@@ -273,7 +273,7 @@ export default function NoteScreen({
           onDone(final, final ? (typing ? 'text' : source ?? (recording ? 'voice' : 'text')) : undefined)
         }}
       >
-        Curate my plan
+        Find my verses
       </Cta>
     </>
   )

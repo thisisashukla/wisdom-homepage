@@ -20,7 +20,7 @@ export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: 'आज का गीता ज्ञान — आज का श्लोक अर्थ सहित (Aaj Ka Shlok)',
-  description: 'हर दिन भगवद् गीता का एक श्लोक — संस्कृत, हिन्दी और अंग्रेज़ी में। आज इस श्लोक की कहानी और आपके जीवन से जुड़ाव। आपकी रोज़ की आध्यात्मिक लय।',
+  description: 'हर दिन भगवद् गीता का एक श्लोक — संस्कृत, हिन्दी और अंग्रेज़ी में। साथ में इस श्लोक की कहानी, और यह आज के दिन से कैसे जुड़ता है।',
   alternates: {
     canonical: 'https://wisdomquotes.in/hi/gita/today',
     languages: {

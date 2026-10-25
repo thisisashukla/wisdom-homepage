@@ -120,7 +120,7 @@ export default async function GitaForPage({ params }: { params: { slug: string }
         <section className="section section-alt" id="find">
           <div className="wrap gf-col gf-widget">
             <div className="eyebrow">Your situation is your own</div>
-            <h2 className="heading">Seven verses, picked for <em>your</em> {page.label.toLowerCase()}.</h2>
+            <h2 className="heading">A week of verses, picked for <em>your</em> {page.label.toLowerCase()}.</h2>
             <p className="subtext">
               These verses are for everyone. Tell us a little about yours and Wisdom will pick the one that speaks to it.
             </p>

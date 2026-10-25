@@ -7,21 +7,21 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 5 Summary \u2013 Key Verses & Meaning (Karma Sanyasa Yoga)",
-  description: "Bhagavad Gita Chapter 5 (Karma Sanyasa Yoga) \u2014 29 verses on the lotus leaf teaching, equal vision across all beings, and the quiet recognition that ends in peace.",
+  description: "Bhagavad Gita Chapter 5 (Karma Sanyasa Yoga): 29 verses on renunciation and action, the lotus leaf (5.10), equal vision (5.18), and Krishna as friend of all beings (5.29).",
   keywords: "bhagwat geeta chapter 5, bhagavad gita karma sanyasa yoga, bhagwat geeta adhyay 5, lotus leaf gita teaching, sama-darshitvam meaning, inner peace gita, brahma nirvana gita, gita chapter 5 meaning, sanyasa vs karma yoga, equal vision Bhagavad Gita, padmapatra gita, Karma Sanyasa Yoga summary, Bhagavad Gita 5.29 suhridam sarva-bhutanam, what is renunciation in Bhagavad Gita, how to act without being touched",
   openGraph: {
     title: "Bhagavad Gita Chapter 5 Summary \u2013 Key Verses & Meaning (Karma Sanyasa Yoga)",
-    description: "All 29 verses of Bhagavad Gita Chapter 5 \u2014 the lotus leaf teaching, equal vision across all beings, and where inner happiness actually lives.",
+    description: "All 29 verses of Bhagavad Gita Chapter 5: the lotus leaf teaching, equal vision across all beings, and happiness found within (5.24).",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-5",
     siteName: 'Wisdom',
     locale: 'en_IN',
-    images: [{ url: "https://wisdomquotes.in/assets/chapter5.webp", width: 1200, height: 675, alt: "A lotus leaf untouched by the water it rests on \u2014 Chapter 5 of the Bhagavad Gita, Karma Sanyasa Yoga, on acting in the world without being stained by it." }],
+    images: [{ url: "https://wisdomquotes.in/assets/chapter5.webp", width: 1200, height: 675, alt: "A lotus leaf untouched by the water it rests on \u2014 Chapter 5 of the Bhagavad Gita, Karma Sanyasa Yoga, on acting without being stained by the action." }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 5 Summary \u2013 Key Verses & Meaning (Karma Sanyasa Yoga)",
-    description: "All 29 verses of Bhagavad Gita Chapter 5 \u2014 the lotus leaf, equal vision, and the verse on knowing the Divine as the sincere friend of all beings.",
+    description: "All 29 verses of Bhagavad Gita Chapter 5: the lotus leaf, equal vision, and the verse on knowing Krishna as the friend of all beings.",
     images: ["https://wisdomquotes.in/assets/chapter5.webp"],
   },
   alternates: {
@@ -549,8 +549,8 @@ const schemas = [
   {
     "@context": "https://schema.org",
     "@type": ["Article", "LearningResource"],
-    "headline": "Bhagavad Gita Chapter 5 — Karma Sanyasa Yoga: How to Act Without Being Touched",
-    "description": "Bhagavad Gita Chapter 5 — Karma Sanyasa Yoga. All 29 verses with Sanskrit, transliteration, meaning. The lotus leaf teaching, equal vision across all beings, and the quietly profound 5.29.",
+    "headline": "Bhagavad Gita Chapter 5: Karma Sanyasa Yoga",
+    "description": "Bhagavad Gita Chapter 5 — Karma Sanyasa Yoga. All 29 verses with Sanskrit, transliteration, meaning. The lotus leaf teaching, equal vision across all beings, and 5.29.",
     "alternativeHeadline": "Bhagavad Gita Chapter 5 (Karma Sanyasa Yoga) — Summary & Verses",
     "author": {
       "@type": "Person",
@@ -617,7 +617,7 @@ const schemas = [
       "name": "What is Bhagavad Gita Chapter 5 about?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 5, called Karma Sanyasa Yoga (the Yoga of Renunciation of Action), resolves the tension between renunciation and action that has run through Chapters 2, 3, and 4. Krishna says both paths lead to liberation, but karma yoga—selfless action—is superior for most people. The chapter also contains the teaching of sama-darshitvam (equal vision), the lotus leaf metaphor, and ends with the quietly powerful verse 5.29 on knowing the Divine as the friend of all beings."
+        "text": "Chapter 5, called Karma Sanyasa Yoga (the Yoga of Renunciation of Action), takes up the question of renunciation versus action that runs through Chapters 2, 3 and 4. Krishna says both lead to the highest good, but karma yoga, selfless action, is better (5.2). The chapter also has the teaching of equal vision (5.18) and the lotus leaf image (5.10), and it ends with 5.29, on knowing Krishna as the friend of all beings."
       }
     },
     {
@@ -625,7 +625,7 @@ const schemas = [
       "name": "What is the lotus leaf teaching in the Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Found in verse 5.10. Krishna describes the person who acts with full engagement but without attachment as being like a lotus leaf in water—present in it, sustained by it, but never soaked by it. The leaf remains dry. This is the image for how to be fully in the world—relationships, work, conflict—without being contaminated or claimed by it."
+        "text": "Found in verse 5.10. Krishna says that one who acts without attachment, offering the actions to Brahman, is not stained by sin, as a lotus leaf is not wetted by the water it sits in. The image is for living among work, family and conflict without being stained by them."
       }
     },
     {
@@ -633,7 +633,7 @@ const schemas = [
       "name": "What is 'sama-darshitvam' in the Bhagavad Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sama-darshitvam means 'equal vision' or 'equal-sightedness.' Found in 5.18, it describes the state of the truly wise: they see the divine presence equally in a learned brahmin, a cow, an elephant, a dog, and even an outcast. This is not a refusal to notice difference—it is the refusal to let difference determine the fundamental regard you hold for each being."
+        "text": "Sama-darshitvam means 'equal vision' or 'equal-sightedness.' In 5.18 the wise (paṇḍitāḥ) look with an equal eye on a learned brahmin, a cow, an elephant, a dog and an outcaste. They still see the differences, but those differences don't change how they regard each being."
       }
     },
     {
@@ -641,7 +641,7 @@ const schemas = [
       "name": "What does Gita 5.29 mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Verse 5.29 is the closing verse of Chapter 5: 'One who knows me as the enjoyer of all sacrifices, the Lord of all worlds, and the friend of all beings—attains peace.' The key word is suhṛdam—sincere friend. The Gita ends Chapter 5 with the claim that the universe is not indifferent or hostile but fundamentally friendly. This recognition, not any technique, is what produces peace."
+        "text": "Verse 5.29 is the closing verse of Chapter 5: 'One who knows me as the enjoyer of all sacrifices, the Lord of all worlds, and the friend of all beings—attains peace.' The key word is suhṛdam, well-wishing friend. Chapter 5 ends by saying that knowing Krishna this way brings peace."
       }
     },
     {
@@ -649,7 +649,7 @@ const schemas = [
       "name": "How many verses are in Bhagavad Gita Chapter 5?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 5 has 29 verses, making it one of the shorter chapters. Despite its brevity, it is philosophically complete—resolving the renunciation-vs-action debate, establishing the standard of equal vision, and offering a theory of inner happiness that is independent of external conditions."
+        "text": "Chapter 5 has 29 verses, making it one of the shorter chapters. It covers renunciation versus action, equal vision, and happiness that comes from within (5.21–24)."
       }
     }
   ]
@@ -689,7 +689,7 @@ export default function ChapterFivePage() {
           <em>Karma Sanyasa Yoga</em>
         </h1>
         <p className="article-subtitle">
-          How to be fully in the world without being of the world. The lotus leaf. Equal vision. And the quiet recognition that ends in peace.
+          Krishna weighs renunciation against action, and describes the lotus leaf (5.10), equal vision (5.18) and the peace of knowing him as friend of all beings (5.29).
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -700,7 +700,7 @@ export default function ChapterFivePage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapter 5 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -719,11 +719,11 @@ export default function ChapterFivePage() {
         </figure>
 
         <p className="lead">
-          By the time we reach Chapter 5, the question has been asked in every way possible: should I act, or should I renounce? Krishna has answered it in different registers, philosophically, practically, metaphysically. Chapter 5 gives the final direct answer. Both paths work. But karma yoga, the yoga of selfless action, is the better one for most people. And then it goes deeper, into what it looks like to be truly free from within, while still fully in the middle of things. This is perhaps the most practical chapter in the Gita, because it speaks directly to the confusion of anyone trying to live wisely while still living in the world.
+          Chapter 5 opens with Arjuna asking the question again: should he act, or renounce action (5.1)? Krishna gives a direct answer. Both lead to the highest good, and karma yoga, selfless action, is better (5.2). The rest of the chapter describes someone who is free inside while still in the middle of things.
         </p>
 
         <p>
-          Chapter 5 is also the shortest complete teaching unit in the Gita, just 29 verses. But those 29 verses contain some of the tradition's most potent metaphors. The lotus leaf. The equal vision that sees the learned and the outcast as expressions of the same consciousness. And the final verse, so quiet in its power, that reframes everything: when you know the Divine as the friend of all beings, peace arrives not as an achievement but as recognition.
+          Its 29 verses include the lotus leaf that water doesn't wet (5.10) and the sage who looks with an equal eye (sama-darśinaḥ) on a learned brahmin, a cow, an elephant, a dog and an outcaste (5.18).
         </p>
 
         {/* TABLE OF CONTENTS */}
@@ -731,22 +731,19 @@ export default function ChapterFivePage() {
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
             <li>
-              <a href="#resolution">The resolution, renunciation vs. action settled</a>
+              <a href="#resolution">The answer: renunciation vs. action</a>
             </li>
             <li>
-              <a href="#lotus-leaf">The lotus leaf, being in the world without being of it</a>
+              <a href="#lotus-leaf">The lotus leaf: acting without being stained</a>
             </li>
             <li>
-              <a href="#equal-vision">Equal vision, sama-darshitvam</a>
-            </li>
-            <li>
-              <a href="#where-pleasure">Where pleasure leads</a>
+              <a href="#equal-vision">Equal vision: sama-darshitvam</a>
             </li>
             <li>
               <a href="#happiness-within">Happiness within</a>
             </li>
             <li>
-              <a href="#quiet-ending">The quiet ending, 5.29</a>
+              <a href="#quiet-ending">The ending: 5.29</a>
             </li>
             <li><a href="#all-verses">All 29 shlokas at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
@@ -762,10 +759,10 @@ export default function ChapterFivePage() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="resolution">Both Paths Lead Home, But One Is Shorter</h2>
+        <h2 id="resolution">Both Paths Work, and One Is Better</h2>
 
         <p>
-          Chapter 5 opens with Krishna settling the debate that has animated the last four chapters. By now, Arjuna has heard that he should act without attachment, perform his duty, offer everything to the Divine, and understand the nature of the self. He has also heard teachings that sound like renunciation. So which is it? The answer comes clearly.
+          By now Arjuna has heard that he should act without attachment, do his duty, offer everything to Krishna, and know the self. He has also heard teaching that sounds like renunciation. In 5.1 he asks which it is, and Krishna answers.
         </p>
 
         {/* SHLOKA 5.2 */}
@@ -776,8 +773,8 @@ export default function ChapterFivePage() {
           iast="saṃnyāsaḥ karmayogaśca niḥśreyasakarāvubhau | tayostu karmasaṃnyāsātkarmayogo viśiṣyate ||"
           meaning="Both renunciation and the yoga of action lead to the highest good. But of the two, karma yoga is superior to renunciation of action."
           insightLabel="The practical answer"
-          insight="The resolution of the either/or that has been building since Chapter 2. Both paths work. But for a person still engaged in the world, which most of us are, selfless action is more direct than renunciation. The Gita is saying: don't wait. Begin now, where you are, with what you have."
-          essence="Selfless action is a greater path to growth than mere withdrawal."
+          insight="This settles the either/or that has been building since Chapter 2. Both paths work, and karma yoga is called better (viśiṣyate). In 5.6 Krishna adds that renunciation is hard to reach without yoga."
+          essence="Renunciation and karma yoga both lead to the highest good; karma yoga is better."
         />
 
         {/* SHLOKA 5.3 */}
@@ -788,12 +785,12 @@ export default function ChapterFivePage() {
           iast="jñeyaḥ sa nityasaṃnyāsī yo na dveṣṭi na kāṅkṣati | nirdvandvo hi mahābāho sukhaṃ bandhātpramucyate ||"
           meaning="One who neither hates nor craves for anything is to be known as ever-renounced. Free from all dualities, O Arjuna, one is easily liberated from bondage."
           insightLabel="The deeper understanding"
-          insight="True renunciation is an internal state, not an external status. A person in business clothes who neither craves for gain nor resents loss is more renounced than a monk who silently covets peace. The Gita is describing a state of mind, not a lifestyle choice."
-          essence="Freedom is found by rising above desire and aversion."
+          insight="Krishna defines the renouncer (nitya-sannyāsī) by what goes on inside: no hatred, no craving. A trader who neither craves gain nor resents loss counts as a renouncer by this test, whatever he wears."
+          essence="One who neither hates nor craves is always a renouncer and is easily freed."
         />
 
         <p>
-          This is the Gita's final word on the renunciation question, and it is liberating. You don't need to abandon the world. You need to abandon your desperate grip on it. A householder who acts with detachment is more renounced than an ascetic who secretly wants spiritual prestige. The distinction isn't external. It's the quality of your internal freedom.
+          So Arjuna doesn&apos;t have to leave the world; he has to let go of his grip on it. On this test a householder who acts without attachment is more of a renouncer than an ascetic who wants spiritual prestige.
         </p>
 
         {/* DIVIDER */}
@@ -808,7 +805,7 @@ export default function ChapterFivePage() {
         <h2 id="lotus-leaf">The Lotus Leaf Metaphor: Being in Water Without Getting Wet</h2>
 
         <p>
-          Chapter 5 contains one of the tradition's most beautiful and psychologically precise metaphors. The lotus leaf lives in water, draws nourishment from it, and is never wet. The image speaks to the deepest human desire: how to participate fully in life without being contaminated by it.
+          The lotus leaf sits on water and stays dry. Krishna uses it for a person who takes full part in life without being stained by it.
         </p>
 
         {/* SHLOKA 5.10 */}
@@ -819,19 +816,19 @@ export default function ChapterFivePage() {
           iast="brahmaṇyādhāya karmāṇi saṅgaṃ tyaktvā karoti yaḥ | lipyate na sa pāpena padmapatramivāmbhasā ||"
           meaning="One who acts, offering all actions to Brahman and abandoning attachment, is untouched by sin, like a lotus leaf untouched by water."
           insightLabel="The teaching within the metaphor"
-          insight="The lotus leaf lives in water, draws nourishment from water, and is never wet. You can be fully engaged in the world, relationships, work, creativity, conflict, and remain untouched by its contamination if the attachment is absent. The key is offering, brahmaṇya ādhāya. When you recognize that your actions ultimately belong to something greater than your ego, you become free within them."
-          essence="Act with surrender; let go of attachment, nothing negative can touch you."
+          insight="The condition is in the first half of the verse: brahmaṇy ādhāya karmāṇi, placing the actions in Brahman, and saṅgaṃ tyaktvā, giving up attachment. With those two in place, work, family and conflict don&apos;t stick."
+          essence="Offering actions to Brahman without attachment, one is untouched by sin, like a lotus leaf by water."
         />
 
         <div className="pull-quote">
           <blockquote>
-            "Like a lotus leaf untouched by water, the wise one acts fully engaged but never contaminated."
+            "He is not stained by sin, as a lotus leaf is not wetted by water."
           </blockquote>
           <cite>Bhagavad Gita 5.10</cite>
         </div>
 
         <p>
-          This verse is central to understanding how the Wisdom app works in practice. You're not being asked to withdraw. You're being asked to act with clarity about what you can and cannot control. You do the work. You show up. You engage fully. But you recognize that the outcome belongs to forces larger than your personal effort. That recognition, that surrender, is the lotus leaf's dry surface.
+          Arjuna is still asked to act. He does the work and offers it to Brahman (brahmaṇy ādhāya, 5.10), and what follows from it doesn't stick to him, the way water runs off a lotus leaf.
         </p>
 
         {/* DIVIDER */}
@@ -843,10 +840,10 @@ export default function ChapterFivePage() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="equal-vision">The Radical Teaching of Equal Sight</h2>
+        <h2 id="equal-vision">Equal Vision</h2>
 
         <p>
-          In the middle of Chapter 5 comes one of the Gita's most socially radical verses. It challenges not just spiritual understanding but the fundamental way most people organize their regard for others.
+          In the middle of Chapter 5 comes a verse about how the wise regard others.
         </p>
 
         {/* SHLOKA 5.18 */}
@@ -855,15 +852,15 @@ export default function ChapterFivePage() {
           speaker="Krishna"
           sanskrit="विद्याविनयसंपन्ने ब्राह्मणे गवि हस्तिनि । शुनि चैव श्वपाके च पण्डिताः समदर्शिनः ॥"
           iast="vidyāvinayasaṃpanne brāhmaṇe gavi hastini | śuni caiva śvapāke ca paṇḍitāḥ samadarśinaḥ ||"
-          meaning="The truly learned see with equal vision a learned and humble brahmin, a cow, an elephant, a dog, and even a dog-eater."
+          meaning="The wise see with equal vision a learned and humble brahmin, a cow, an elephant, a dog, and even a dog-eater."
           insightLabel="What equal vision means"
-          insight="Equal vision (sama-darshitvam) is not the same as being blind to difference. It means the wise person's fundamental regard for each being is not affected by the being's social status, species, or appearance. This is one of the Gita's most radical social teachings. The dog-eater was the lowest caste in ancient society. To put that figure in the same sentence of regard as a brahmin was revolutionary."
-          essence="See the Divine in everyone, regardless of outer differences."
+          insight="Equal vision (sama-darśinaḥ) still sees difference. The wise person&apos;s regard for a being doesn&apos;t change with its status, species or looks. The list runs from a learned brahmin to the śvapāka, the dog-eater, an outcaste at the bottom of the social order of the time."
+          essence="The wise look equally on a learned brahmin, a cow, an elephant, a dog and an outcaste."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>A note on social consciousness:</strong> The Gita's teaching on equal vision is one of the most important contributions to ethical thought across traditions. It doesn't deny social difference. It refuses to let social difference determine spiritual worth. The divine presence isn't higher in a brahmin and lower in a dog-eater. It's equally present. The wise person sees this.
+            <strong>A note on social difference:</strong> The verse doesn&apos;t deny social difference, but it says social difference doesn&apos;t decide spiritual worth. In 5.19 Krishna adds that Brahman is flawless and even (nirdoṣaṃ hi samaṃ brahma).
           </p>
         </div>
 
@@ -879,7 +876,7 @@ export default function ChapterFivePage() {
         <h2 id="happiness-within">The Source of Peace Is Internal</h2>
 
         <p>
-          Chapter 5 contains repeated teachings on one point: your real happiness is not in your circumstances. It is inside you. This isn't denial of external life. It's clarity about where your stability comes from.
+          Verses 5.21–24 come back to one point: lasting happiness comes from within, and pleasures born of contact with objects end in pain (5.22).
         </p>
 
         {/* SHLOKA 5.24 */}
@@ -890,8 +887,8 @@ export default function ChapterFivePage() {
           iast="yo'ntaḥsukho'ntarārāmastathāntarjyotireva yaḥ | sa yogī brahmanirvāṇaṃ brahmabhūto'dhigacchati ||"
           meaning="One who finds happiness within, who is pleased within, who is illuminated within, that yogi attains Brahman-nirvana and becomes Brahman."
           insightLabel="The direction of attention"
-          insight="Three &quot;within&quot; words in a single verse: happiness within, delight within, light within. The Gita's consistent message: what you are looking for outside is located inside. This verse is its most concentrated statement of that teaching. You're not seeking something distant. You're recognizing what's already true."
-          essence="Your truest peace and joy are always inside you, never outside."
+          insight="Three &quot;within&quot; words in one verse: antaḥ-sukhaḥ (happiness within), antar-ārāmaḥ (delight within), antar-jyotiḥ (light within). Such a yogi, Krishna says, becomes Brahman."
+          essence="One whose happiness, delight and light are within becomes Brahman and reaches brahma-nirvana."
         />
 
         {/* DIVIDER */}
@@ -903,10 +900,10 @@ export default function ChapterFivePage() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="quiet-ending">The Quiet Recognition That Ends in Peace</h2>
+        <h2 id="quiet-ending">Knowing Krishna as Friend</h2>
 
         <p>
-          Chapter 5 does something remarkable. It doesn't end with a technique. It doesn't end with a discipline or a practice. It ends with a single fact: when you know the Divine as the friend of all beings, peace arrives. Not as a reward. As a natural consequence.
+          Chapter 5 ends with a statement about Krishna himself: whoever knows him as the friend of all beings attains peace.
         </p>
 
         {/* SHLOKA 5.29 */}
@@ -916,13 +913,13 @@ export default function ChapterFivePage() {
           sanskrit="भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम् । सुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति ॥"
           iast="bhoktāraṃ yajñatapasāṃ sarvalokamaheśvaram | suhṛdaṃ sarvabhūtānāṃ jñātvā māṃ śāntimṛcchati ||"
           meaning="Having known me as the enjoyer of all sacrifices and austerities, the great Lord of all the worlds, and the sincere friend of all living beings, one attains peace."
-          insightLabel="The ultimate teaching"
-          insight="The chapter ends not with a technique or a discipline but with recognition. When you truly know, not believe, not hope, but know, that the universe is friendly, that all effort is received and honored, and that you are not alone in it, peace arrives. Not as a reward. As the natural consequence of that knowledge. The key word is suhṛdam, sincere friend. Not indifferent universe. Not hostile force. Friend."
-          essence="Trusting the Divine as the friend of all beings leads to true peace."
+          insightLabel="The key word"
+          insight="The key word is suhṛdam, a well-wishing friend. The same Krishna who receives all sacrifices and rules all worlds is described as the friend of every being, and knowing (jñātvā) him this way brings peace (śāntim)."
+          essence="Knowing Krishna as enjoyer of sacrifices, lord of all worlds and friend of all beings, one finds peace."
         />
 
         <p>
-          This is how Chapter 5 ends. Not with a command. With a promise. When you understand that you are held, that your efforts matter, that your suffering has meaning, that you belong to something larger than your fear, peace becomes inevitable. It's not something you achieve. It's something you recognize. The Wisdom app brings this teaching to you daily because it's the teaching that sustains practice when practice feels difficult. You're not earning salvation. You're remembering that you were never lost.
+          Chapter 5 ends with a promise. In 5.29 Krishna calls himself suhṛdaṃ sarva-bhūtānām, the friend of every being, and says that whoever knows him this way finds peace.
         </p>
 
         {/* DIVIDER */}
@@ -948,151 +945,151 @@ export default function ChapterFivePage() {
             <tr>
               <td>5.1</td>
               <td>Arjuna</td>
-              <td>Confusion before clarity, asking the right question</td>
+              <td>Arjuna says Krishna praises both renouncing action and yoga, and asks which is better</td>
             </tr>
             <tr>
               <td>5.2</td>
               <td>Krishna</td>
-              <td>Selfless action is greater than mere withdrawal</td>
+              <td>Renunciation and karma yoga both lead to the highest good; karma yoga is better</td>
             </tr>
             <tr>
               <td>5.3</td>
               <td>Krishna</td>
-              <td>Freedom is found by rising above desire and aversion</td>
+              <td>One who neither hates nor craves is always a renouncer and is easily freed</td>
             </tr>
             <tr>
               <td>5.4</td>
               <td>Krishna</td>
-              <td>Different sincere paths all lead to the same truth</td>
+              <td>Only the unwise say Sankhya and yoga differ; either, done fully, gives the fruit of both</td>
             </tr>
             <tr>
               <td>5.5</td>
               <td>Krishna</td>
-              <td>Different paths, walked sincerely, arrive at the same goal</td>
+              <td>The state reached by Sankhya is reached by yoga too; who sees them as one sees truly</td>
             </tr>
             <tr>
               <td>5.6</td>
               <td>Krishna</td>
-              <td>Engaging in duties with the right spirit brings peace, no need to run</td>
+              <td>Renunciation is hard to reach without yoga; the sage trained in yoga soon reaches Brahman</td>
             </tr>
             <tr>
               <td>5.7</td>
               <td>Krishna</td>
-              <td>Self-mastery and pure intentions free us from the burden of our actions</td>
+              <td>One trained in yoga, pure and self-controlled, who sees his self in all, is not stained by acting</td>
             </tr>
             <tr>
               <td>5.8</td>
               <td>Krishna</td>
-              <td>Your true self is a witness, not the sum of your actions</td>
+              <td>The knower of truth thinks &quot;I do nothing&quot; while seeing, hearing, eating or breathing</td>
             </tr>
             <tr>
               <td>5.9</td>
               <td>Krishna</td>
-              <td>You are the witnessing Self, not the doer caught in activity</td>
+              <td>Even while speaking or grasping, he knows the senses are moving among their objects</td>
             </tr>
             <tr>
               <td>5.10</td>
               <td>Krishna</td>
-              <td>Act with surrender; let go of attachment, nothing negative can touch you</td>
+              <td>Offering actions to Brahman without attachment, one is untouched by sin, like a lotus leaf by water</td>
             </tr>
             <tr>
               <td>5.11</td>
               <td>Krishna</td>
-              <td>Act selflessly, let go of results, focus on purity of intent</td>
+              <td>Yogis act with body, mind, intellect and senses alone, without attachment, to purify themselves</td>
             </tr>
             <tr>
               <td>5.12</td>
               <td>Krishna</td>
-              <td>Detach from results, find peace in the work itself</td>
+              <td>Giving up the fruits, the yogi finds lasting peace; one driven by desire is bound</td>
             </tr>
             <tr>
               <td>5.13</td>
               <td>Krishna</td>
-              <td>True happiness arises when senses are mastered and action is surrendered</td>
+              <td>Renouncing all actions in the mind, the self-controlled dwells at ease in the city of nine gates</td>
             </tr>
             <tr>
               <td>5.14</td>
               <td>Krishna</td>
-              <td>You are not the sole doer, life naturally unfolds through you</td>
+              <td>The Lord does not create doership, actions or their link to fruits; nature does this</td>
             </tr>
             <tr>
               <td>5.15</td>
               <td>Krishna</td>
-              <td>Ignorance hides the truth; liberation comes from uncovering it</td>
+              <td>The Lord takes on neither the sin nor the merit of anyone; ignorance covers knowledge</td>
             </tr>
             <tr>
               <td>5.16</td>
               <td>Krishna</td>
-              <td>True knowledge lights up your life and uncovers the divine within</td>
+              <td>For those whose ignorance is destroyed by knowledge, it lights up the Supreme like the sun</td>
             </tr>
             <tr>
               <td>5.17</td>
               <td>Krishna</td>
-              <td>True focus anchored in wisdom leads to freedom from rebirth</td>
+              <td>Minds fixed on That, their faults washed off by knowledge, they are not born again</td>
             </tr>
             <tr>
               <td>5.18</td>
               <td>Krishna</td>
-              <td>See the Divine in everyone, regardless of outer differences</td>
+              <td>The wise look equally on a learned brahmin, a cow, an elephant, a dog and an outcaste</td>
             </tr>
             <tr>
               <td>5.19</td>
               <td>Krishna</td>
-              <td>True victory is inner steadiness, equanimity connects you with the Divine</td>
+              <td>Those whose minds rest in equality have conquered rebirth here; Brahman is flawless and even</td>
             </tr>
             <tr>
               <td>5.20</td>
               <td>Krishna</td>
-              <td>True wisdom is remaining steady no matter what life brings</td>
+              <td>Not elated by the pleasant nor upset by the unpleasant, steady and clear, one rests in Brahman</td>
             </tr>
             <tr>
               <td>5.21</td>
               <td>Krishna</td>
-              <td>True happiness is inner, not an external achievement</td>
+              <td>Unattached to outer contacts, one finds happiness in the self, and lasting joy in Brahman</td>
             </tr>
             <tr>
               <td>5.22</td>
               <td>Krishna</td>
-              <td>Short-term pleasures lead to long-term unhappiness, seek what lasts</td>
+              <td>Pleasures born of contact are sources of pain, with a beginning and an end; the wise avoid them</td>
             </tr>
             <tr>
               <td>5.23</td>
               <td>Krishna</td>
-              <td>Mastering desires and anger leads to true happiness</td>
+              <td>One who can withstand the push of desire and anger before death is a yogi and is happy</td>
             </tr>
             <tr>
               <td>5.24</td>
               <td>Krishna</td>
-              <td>Your truest peace and joy are always inside you, not outside</td>
+              <td>One whose happiness, delight and light are within becomes Brahman and reaches brahma-nirvana</td>
             </tr>
             <tr>
               <td>5.25</td>
               <td>Krishna</td>
-              <td>Peace and liberation blossom when you master yourself and live for others</td>
+              <td>Sages free of sin and doubt, devoted to the good of all beings, reach brahma-nirvana</td>
             </tr>
             <tr>
               <td>5.26</td>
               <td>Krishna</td>
-              <td>Lasting peace is found by mastering desire, anger, and the mind</td>
+              <td>For ascetics free of desire and anger, with minds controlled, brahma-nirvana is near</td>
             </tr>
             <tr>
               <td>5.27</td>
               <td>Krishna</td>
-              <td>True liberation begins with mastery over mind, senses, and breath</td>
+              <td>Shut out outer contacts, fix the gaze between the brows, even out the breath</td>
             </tr>
             <tr>
               <td>5.28</td>
               <td>Krishna</td>
-              <td>Self-mastery and absence of desire, fear, and anger are keys to freedom</td>
+              <td>With senses, mind and intellect controlled, free of desire, fear and anger, such a sage is free</td>
             </tr>
             <tr>
               <td>5.29</td>
               <td>Krishna</td>
-              <td>Knowing the Divine as the friend of all beings leads to true peace</td>
+              <td>Knowing Krishna as enjoyer of sacrifices, lord of all worlds and friend of all beings, one finds peace</td>
             </tr>
           </tbody>
         </table>
-
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the reading of 5.2 (it says karma yoga is better, without &quot;for most people&quot;), the 5.10 pull quote, the removed app plugs, and the verse summaries in the table; copy edited.</p>
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 5"} />
 
 
@@ -1117,31 +1114,31 @@ export default function ChapterFivePage() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 5 about?</div>
             <div className="faq-a">
-              Chapter 5, called Karma Sanyasa Yoga (the Yoga of Renunciation of Action), resolves the tension between renunciation and action that has run through Chapters 2, 3, and 4. Krishna says both paths lead to liberation, but karma yoga, selfless action, is superior for most people. The chapter also contains the teaching of sama-darshitvam (equal vision), the lotus leaf metaphor, and ends with the quietly powerful verse 5.29 on knowing the Divine as the friend of all beings.
+              Chapter 5, called Karma Sanyasa Yoga (the Yoga of Renunciation of Action), takes up the question of renunciation versus action that runs through Chapters 2, 3 and 4. Krishna says both lead to the highest good, but karma yoga, selfless action, is better (5.2). The chapter also has the teaching of equal vision (5.18) and the lotus leaf image (5.10), and it ends with 5.29, on knowing Krishna as the friend of all beings.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the lotus leaf teaching in the Gita?</div>
             <div className="faq-a">
-              Found in verse 5.10. Krishna describes the person who acts with full engagement but without attachment as being like a lotus leaf in water, present in it, sustained by it, but never soaked by it. The leaf remains dry. This is the image for how to be fully in the world, relationships, work, conflict, without being contaminated or claimed by it.
+              Found in verse 5.10. Krishna says that one who acts without attachment, offering the actions to Brahman, is not stained by sin, as a lotus leaf is not wetted by the water it sits in. The image is for living among work, family and conflict without being stained by them.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is "sama-darshitvam" in the Bhagavad Gita?</div>
             <div className="faq-a">
-              Sama-darshitvam means "equal vision" or "equal-sightedness." Found in 5.18, it describes the state of the truly wise: they see the divine presence equally in a learned brahmin, a cow, an elephant, a dog, and even an outcast. This is not a refusal to notice difference, it is the refusal to let difference determine the fundamental regard you hold for each being.
+              Sama-darshitvam means "equal vision" or "equal-sightedness." In 5.18 the wise (paṇḍitāḥ) look with an equal eye on a learned brahmin, a cow, an elephant, a dog and an outcaste. They still see the differences, but those differences don&apos;t change how they regard each being.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does Gita 5.29 mean?</div>
             <div className="faq-a">
-              Verse 5.29 is the closing verse of Chapter 5: "One who knows me as the enjoyer of all sacrifices, the Lord of all worlds, and the friend of all beings, attains peace." The key word is suhṛdam, sincere friend. The Gita ends Chapter 5 with the claim that the universe is not indifferent or hostile but fundamentally friendly. This recognition, not any technique, is what produces peace.
+              Verse 5.29 is the closing verse of Chapter 5: "One who knows me as the enjoyer of all sacrifices, the Lord of all worlds, and the friend of all beings, attains peace." The key word is suhṛdam, well-wishing friend. Chapter 5 ends by saying that knowing Krishna this way brings peace.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">How many verses are in Bhagavad Gita Chapter 5?</div>
             <div className="faq-a">
-              Chapter 5 has 29 verses, making it one of the shorter chapters. Despite its brevity, it is philosophically complete, resolving the renunciation-vs-action debate, establishing the standard of equal vision, and offering a theory of inner happiness that is independent of external conditions.
+              Chapter 5 has 29 verses, making it one of the shorter chapters. It covers renunciation versus action, equal vision, and happiness that comes from within (5.21–24).
             </div>
           </div>
         </div>
@@ -1150,7 +1147,7 @@ export default function ChapterFivePage() {
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous</div>
-            <a href="/blogs/bhagwat-geeta-chapter-4" className="ch-nav-title">Chapter 4, Jnana Yoga</a>
+            <a href="/blogs/bhagwat-geeta-chapter-4" className="ch-nav-title">Chapter 4, Jnana Karma Sanyasa Yoga</a>
           </div>
           <div style={{textAlign: 'right'}}>
             <div className="ch-nav-label">Next</div>
@@ -1171,7 +1168,7 @@ export default function ChapterFivePage() {
           data-mp-location="footer"
           >free iPhone app</a
         >
-        that tunes the Bhagavad Gita to your life, one verse a day. Made with reverence.</p><p style={{ marginTop: '8px' }}><a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>
+        that tunes the Bhagavad Gita to your life, one verse a day.</p><p style={{ marginTop: '8px' }}><a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>
       </p>
     </footer>
   

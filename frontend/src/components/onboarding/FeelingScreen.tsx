@@ -16,7 +16,7 @@ import { EMOTIONS, FEELING_ART, emotionById, emotionForNeed, type Emotion, type 
  */
 const NEED_ORDER: NeedId[] = ['quiet', 'nerve', 'replay', 'faith', 'stick', 'gita']
 const IDLE_STEP = 1900
-const WELCOME = "Whatever it is, it's welcome here."
+const WELCOME = "Pick the one that's closest."
 
 export default function FeelingScreen({
   initialEmotion,

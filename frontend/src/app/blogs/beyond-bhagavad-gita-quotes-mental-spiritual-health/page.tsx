@@ -7,11 +7,11 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Beyond the Bhagavad Gita: Best Quotes on Mental & Spiritual Health from 7 Lesser-Known Gitas",
-  description: "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each carry profound wisdom for mental and spiritual health that most people have never encountered.",
+  description: "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each have verses on fear, anger, grief and the restless mind. Sanskrit, translation and a plain reading of each.",
   keywords: "ashtavakra gita quotes, avadhuta gita mental health, ram gita teachings, hans gita philosophy, shakti gita quotes, shambhu gita wisdom, vishnu gita quotes, lesser known gitas, gitas besides bhagavad gita, other gitas mental peace, spiritual health gita quotes",
   openGraph: {
     title: "Beyond the Bhagavad Gita: Best Quotes on Mental & Spiritual Health from 7 Lesser-Known Gitas | Wisdom",
-    description: "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each carry profound wisdom for mental and spiritual health.",
+    description: "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each have verses on fear, anger, grief and the restless mind.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/beyond-bhagavad-gita-quotes-mental-spiritual-health",
     siteName: 'Wisdom',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     site: '@sansearchapp',
     creator: '@thisisashukla',
     title: "Beyond the Bhagavad Gita: Best Quotes on Mental & Spiritual Health from 7 Lesser-Known Gitas | Wisdom",
-    description: "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each carry profound wisdom for mental and spiritual health.",
+    description: "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each have verses on fear, anger, grief and the restless mind.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -435,7 +435,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Beyond the Bhagavad Gita: Best Quotes on Mental & Spiritual Health from 7 Lesser-Known Gitas",
-    "description": "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each carry profound wisdom for mental and spiritual health.",
+    "description": "The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each have verses on fear, anger, grief and the restless mind.",
     "datePublished": "2026-05-20",
     "dateModified": "2026-08-01",
     "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
@@ -466,11 +466,11 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "What is the Ashtavakra Gita and how is it different from the Bhagavad Gita?", "acceptedAnswer": { "@type": "Answer", "text": "The Ashtavakra Gita is a dialogue between the sage Ashtavakra and King Janaka. Unlike the Bhagavad Gita, it is entirely focused on one teaching: you are pure awareness, not the body-mind system. It is often described as the most radical non-dual text in the Indian tradition." } },
-      { "@type": "Question", "name": "What is the Avadhuta Gita about?", "acceptedAnswer": { "@type": "Answer", "text": "The Avadhuta Gita is attributed to Dattatreya and is a first-person declaration of liberation. Its recurring refrain — 'I am the nectar of wisdom, steady and like the sky' — is one of the most psychologically impactful lines in Sanskrit literature." } },
-      { "@type": "Question", "name": "What does the Ram Gita say about fear and mental peace?", "acceptedAnswer": { "@type": "Answer", "text": "The Ram Gita says fear and sorrow are embedded in the beginning, middle, and end of worldly existence. Rama's solution is to turn inward: recognizing the true self as the witness of intellect, separate from and undisturbed by its fluctuations." } },
-      { "@type": "Question", "name": "How many Gitas are there in Hindu philosophy?", "acceptedAnswer": { "@type": "Answer", "text": "The tradition contains dozens of texts called 'Gita.' The Bhagavad Gita is the most widely known, but others include the Ashtavakra Gita, Avadhuta Gita, Uddhava Gita, Ram Gita, Hans Gita, Guru Gita, Shakti Gita, Shambhu Gita, Vishnu Gita, Ribhu Gita, and many more." } },
-      { "@type": "Question", "name": "Are the lesser-known Gitas good for mental health?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The Ashtavakra Gita's teaching on the witness-self speaks to anxiety and self-criticism. The Avadhuta Gita addresses depressive identification. The Hans Gita is the tradition's clearest teaching on anger regulation. The Vishnu Gita's verse on craving and aversion maps closely onto modern ACT therapy." } },
+      { "@type": "Question", "name": "What is the Ashtavakra Gita and how is it different from the Bhagavad Gita?", "acceptedAnswer": { "@type": "Answer", "text": "The Ashtavakra Gita is a dialogue between the sage Ashtavakra and King Janaka. Where the Bhagavad Gita covers duty, action and devotion, it keeps to one teaching: you are pure awareness, the witness of body and mind. It is one of the best-known Advaita texts." } },
+      { "@type": "Question", "name": "What is the Avadhuta Gita about?", "acceptedAnswer": { "@type": "Answer", "text": "The Avadhuta Gita is attributed to Dattatreya and is a first-person declaration of liberation. Chapter 3 repeats the refrain 'I am the nectar of wisdom, the same everywhere, like the sky.'" } },
+      { "@type": "Question", "name": "What does the Ram Gita say about fear and mental peace?", "acceptedAnswer": { "@type": "Answer", "text": "The Ram Gita says worldly existence brings fear and sorrow at its beginning, middle and end. Rama tells Lakshmana to turn inward and recognise the self as the witness of the intellect, separate from its changes." } },
+      { "@type": "Question", "name": "How many Gitas are there in Hindu philosophy?", "acceptedAnswer": { "@type": "Answer", "text": "The tradition contains dozens of texts called 'Gita.' The Bhagavad Gita is the best known, and others include the Ashtavakra Gita, Avadhuta Gita, Uddhava Gita, Ram Gita, Hans Gita, Guru Gita, Shakti Gita, Shambhu Gita, Vishnu Gita, Ribhu Gita, and many more." } },
+      { "@type": "Question", "name": "Are the lesser-known Gitas good for mental health?", "acceptedAnswer": { "@type": "Answer", "text": "These are philosophical texts and no replacement for treatment. Several of them speak to states of mind people struggle with. The Ashtavakra Gita teaches that you are the witness of your thoughts. The Hans Gita has verses on staying calm when insulted. The Vishnu Gita repeats the Bhagavad Gita's warning (3.34) against being ruled by attraction and aversion." } },
       { "@type": "Question", "name": "Where can I read the Ashtavakra Gita in English?", "acceptedAnswer": { "@type": "Answer", "text": "John Richards' translation is freely available online and widely read. Thomas Byrom's rendering, 'The Heart of Awareness,' is more poetic. Swami Nityaswarupananda's commentary edition is thorough for deeper study." } }
     ]
   }
@@ -506,7 +506,7 @@ export default function BeyondBhagavadGitaPage() {
             <em>7 Lesser-Known Gitas on Inner Peace</em>
           </h1>
           <p className="article-subtitle">
-            The Bhagavad Gita is one voice in a vast chorus. The Ashtavakra Gita, Avadhuta Gita, Ram Gita, Hans Gita, Shakti Gita, Shambhu Gita, and Vishnu Gita each carry their own profound wisdom for mental and spiritual health. Most people have never read a word of them.
+            Dozens of Sanskrit texts are called Gita. Here are verses from seven of them, the Ashtavakra, Avadhuta, Ram, Hans, Shakti, Shambhu and Vishnu Gitas, on fear, anger, grief and the restless mind.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -516,7 +516,7 @@ export default function BeyondBhagavadGitaPage() {
             <span className="meta-item">~12 min read</span>
           </div>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
 
@@ -530,41 +530,41 @@ export default function BeyondBhagavadGitaPage() {
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>The Bhagavad Gita is one voice in a vast chorus of Gitas.</figcaption>
+          <figcaption>Many texts in the Sanskrit tradition are called Gita.</figcaption>
         </figure>
 
         <p className="lead">
-          Most people who turn to Indian scripture for mental peace start and end with the Bhagavad Gita. That is understandable, and limiting. The Sanskrit philosophical tradition contains at least a dozen distinct texts called &ldquo;Gita&rdquo; (songs of wisdom) each addressed to a different kind of seeker, each with its own angle on the most pressing questions: how to find peace, how to bear suffering, how to know yourself, and how to stop being controlled by fear and desire. This is a reading of seven of them.
+          Most people who turn to Indian scripture for peace of mind start and end with the Bhagavad Gita. The Sanskrit tradition has at least a dozen other texts called &ldquo;Gita&rdquo; (song), each a teaching given by a sage or deity to a particular listener. Many of them take up the same questions: how to bear suffering, how to know yourself, and how to stop being ruled by fear and desire. This is a reading of seven.
         </p>
 
         <div className="gita-index">
           <h3>Gitas in this article</h3>
           <ol>
-            <li><strong>Ashtavakra Gita</strong>: the radical teaching on pure awareness and identity</li>
-            <li><strong>Avadhuta Gita</strong>: the song of the liberated sage beyond all convention</li>
-            <li><strong>Ram Gita</strong>: Rama&apos;s teaching on the witness-self and liberation through knowledge</li>
-            <li><strong>Hans Gita</strong>: the divine swan&apos;s teaching on anger, tolerance, and inner strength</li>
-            <li><strong>Shakti Gita</strong>: the Goddess&apos;s teaching on consciousness in motion and stillness</li>
-            <li><strong>Shambhu Gita</strong>: Shiva&apos;s instruction on dissolving fear at its very root</li>
-            <li><strong>Vishnu Gita</strong>: Vishnu&apos;s exposition on ignorance, fear, and freedom from the senses</li>
+            <li><strong>Ashtavakra Gita</strong>: the sage Ashtavakra&apos;s teaching to King Janaka on awareness and identity</li>
+            <li><strong>Avadhuta Gita</strong>: Dattatreya&apos;s first-person song of freedom</li>
+            <li><strong>Ram Gita</strong>: Rama&apos;s teaching to Lakshmana on the witness-self</li>
+            <li><strong>Hans Gita</strong>: the swan&apos;s teaching on anger and tolerance</li>
+            <li><strong>Shakti Gita</strong>: the Goddess on consciousness in motion and in stillness</li>
+            <li><strong>Shambhu Gita</strong>: Shiva on how fear and desire fall away</li>
+            <li><strong>Vishnu Gita</strong>: Vishnu on ignorance as the cause of fear</li>
           </ol>
         </div>
 
         <p>
-          None of these texts require you to be a Sanskrit scholar. What they share, and what makes them relevant to modern mental and spiritual health, is a relentless focus on the inner workings of the mind: how suffering arises, where fear comes from, why we are not identical to our thoughts and moods, and what it would feel like to be genuinely free.
+          None of these texts require you to be a Sanskrit scholar. What they share is attention to how the mind works: how suffering arises, where fear comes from, and how a person can stand apart from their own thoughts and moods.
         </p>
 
         {/* ── ASHTAVAKRA GITA ── */}
         <div className="gita-header">
           <span className="gita-badge">1 of 7</span>
-          <h2 className="gita-title">Ashtavakra Gita, You Are the Witness, Not the Witnessed</h2>
+          <h2 className="gita-title">Ashtavakra Gita: You Are the Witness</h2>
         </div>
 
         <p>
-          The Ashtavakra Gita is possibly the most psychologically direct text in the entire Indian tradition. It has no mythology, no ritual, and very little metaphor. It is a dialogue between the sage Ashtavakra and King Janaka, and its central argument is simple and total: you are not your body, not your mind, not your emotions, not your social role. You are the awareness that witnesses all of these. Recognizing this is not a spiritual achievement. It is the end of the search.
+          The Ashtavakra Gita has almost no story, no ritual, and very little metaphor. It is a dialogue between the sage Ashtavakra and King Janaka, and its argument is short: you are the awareness that witnesses body, mind, emotions and social role. For Ashtavakra, seeing this ends the search.
         </p>
         <p>
-          For mental health, this teaching has a very specific implication. The anxiety you feel is real. The grief is real. But you are not identical to them. There is a part of you that watches these states arise and pass, and that part has never been wounded.
+          Applied to everyday life, the teaching leaves your worry and grief real while placing you as the one who watches them arise and pass.
         </p>
 
                 <ShlokaCard
@@ -573,9 +573,9 @@ export default function BeyondBhagavadGitaPage() {
           iast="na tvaṃ viprādiko varṇo nāśramī nākṣagocaraḥ |asaṅgo'si nirākāro viśvasākṣī sukhī bhava ||"
           meaningLabel="Translation"
           meaning="You are not any caste or stage of life. You are not perceived by the senses. You are unattached, formless, the witness of the entire universe. Knowing this, be happy."
-          insightLabel="Why This Matters for Mental Health"
-          insight="Every identity label (profession, status, age, personality type) is something you witness. None of it is the witness itself. Ashtavakra doesn't ask you to improve your identity or upgrade your self-image. He asks you to step back from all of it and recognize what's doing the witnessing. That recognition, he says, is happiness itself, not a reward for achieving it, but the natural state of awareness knowing itself."
-          essence="You witness the universe. No label can contain the witness."
+          insightLabel="What This Says"
+          insight="Ashtavakra sets aside the labels of his day, caste (varna) and stage of life (ashrama), and the modern ones work the same way: profession, status, age. Janaka is asked to recognise what witnesses all of them, and then simply to be happy (sukhī bhava)."
+          essence="You are no caste or stage of life; you are the witness of all. Be happy."
         />
 
                 <ShlokaCard
@@ -584,22 +584,22 @@ export default function BeyondBhagavadGitaPage() {
           iast="nirapekṣo nirvikāro nirbharaḥ śītalāśayaḥ |agādhabuddhirakṣubdho bhava cinmātravāsanaḥ ||"
           meaningLabel="Translation"
           meaning="Be without expectation, without modification, self-sufficient, with a cool heart. Be of unfathomable intelligence, undisturbed, established in pure awareness alone."
-          insightLabel="Why This Matters for Mental Health"
-          insight="This verse is the Ashtavakra Gita's compressed portrait of inner health: no expectations from the world, no reactive modifications, self-complete, cool-hearted, of unfathomable depth, undisturbed. The goal isn't emotional peak performance. It's a baseline so stable that experiences arise and pass through it without shattering it."
-          essence="Coolness, depth, undisturbed awareness: these are one thing, not many."
+          insightLabel="What This Says"
+          insight="The verse is a list of qualities: free of expectation, unchanging, self-sufficient, cool-hearted, of unfathomable understanding, undisturbed. Experiences still arise and pass through such a person, and none of them shake the base."
+          essence="Be free of expectation, cool-hearted, undisturbed, resting in awareness alone."
         />
 
         {/* ── AVADHUTA GITA ── */}
         <div className="gita-header">
           <span className="gita-badge">2 of 7</span>
-          <h2 className="gita-title">Avadhuta Gita, You Are Not Your Pain</h2>
+          <h2 className="gita-title">Avadhuta Gita: Why Do You Weep?</h2>
         </div>
 
         <p>
-          The Avadhuta Gita is attributed to Dattatreya, the wandering sage who lived beyond all social convention. Where the Ashtavakra Gita is a structured dialogue, the Avadhuta Gita is more like a declaration, a statement of what it is like to see clearly when all the conditioning has fallen away. It speaks in the first person: &ldquo;I am not this. I am not that. I am the nectar of wisdom, pure and like the sky.&rdquo;
+          The Avadhuta Gita is attributed to Dattatreya, the wandering sage who lived outside social convention. Where the Ashtavakra Gita is a dialogue, the Avadhuta Gita is mostly a declaration in the first person, and chapter 3 keeps returning to one refrain: &ldquo;I am the nectar of wisdom, the same everywhere, like the sky.&rdquo;
         </p>
         <p>
-          For people in the grip of depression, anxiety, grief, or persistent self-criticism, this text offers something unusual: not advice, but a mirror held up to a different possibility of being. You are not the suffering. You are not the mind that keeps recycling it. Something in you has remained untouched.
+          The text gives little advice. It describes, again and again, a self that suffering, the mind and the ego do not reach.
         </p>
 
                 <ShlokaCard
@@ -607,9 +607,9 @@ export default function BeyondBhagavadGitaPage() {
           sanskrit="सन्तापदुःखजनको न विधिः कदाचित्{'\n'}सन्तापयोगजनितं न मनः कदाचित् ।{'\n'}यस्मादहङ्कृतिरियं न च मे कदाचित्{'\n'}ज्ञानामृतं समरसं गगनोपमोऽहम् ॥"
           meaningLabel="Translation"
           meaning="I am not fate that causes suffering, nor the mind born from suffering; this ego is not mine. I am the nectar of wisdom, steady and like the sky."
-          insightLabel="Why This Matters for Mental Health"
-          insight="Dattatreya strips away three things people typically identify with during psychological suffering: the circumstances that caused the pain, the mind that keeps reliving it, and the ego that makes it feel personal. What remains? Gyanamritam: the nectar of wisdom, steady, unchanging, vast as the sky. This is not spiritual bypassing. It is pointing to a part of you that, regardless of what you have been through, has not been destroyed by it."
-          essence="You are the steady, unifying wisdom beyond pain, mind, and ego."
+          insightLabel="What This Says"
+          insight="Dattatreya sets aside three things a person in pain tends to identify with: the fate that caused it, the mind shaped by it, and the ego that makes it personal. What he says remains is jñānāmṛtam, the nectar of wisdom, the same everywhere, like the sky."
+          essence="I am not fate, the suffering mind or the ego; I am wisdom, like the sky."
         />
 
                 <ShlokaCard
@@ -617,33 +617,31 @@ export default function BeyondBhagavadGitaPage() {
           sanskrit="किं नाम रोदिषि सखे न जरा न मृत्युः{'\n'}किं नाम रोदिषि सखे न च जन्म दुःखम् ।{'\n'}किं नाम रोदिषि सखे न च ते विकारो{'\n'}ज्ञानामृतं समरसं गगनोपमोऽहम् ॥"
           meaningLabel="Translation"
           meaning="Why do you weep, friend? You have no old age, no death, no birth, no suffering, no faults. I am the nectar of wisdom, pure and like the infinite sky beyond all."
-          insightLabel="Why This Matters for Mental Health"
-          insight="The opening question, why do you weep?, is not dismissive. It is genuinely curious. Dattatreya isn't telling you your grief is wrong. He is pointing to a deeper question: what part of you is crying, and is that part actually who you are? The list of things you don't have (old age, death, birth, suffering, flaws) is a claim about what your true nature actually is, underneath the biographical story the mind keeps running."
-          essence="You are timeless wisdom, untouched by birth, death, or suffering."
+          insightLabel="What This Says"
+          insight="Dattatreya asks the question three times: why do you weep, friend? The list that follows, no old age, no death, no birth, no change, describes the self as he sees it, apart from the life story the mind keeps telling."
+          essence="Why weep, friend? You have no old age, death or birth."
         />
 
-        <p className="pull-quote">
-          &ldquo;Why do you weep, friend?&rdquo; The Avadhuta Gita isn&apos;t dismissing your grief. It&apos;s asking you which part of you is actually suffering. The answer might surprise you.
-        </p>
+        
 
         {/* ── RAM GITA ── */}
         <div className="gita-header">
           <span className="gita-badge">3 of 7</span>
-          <h2 className="gita-title">Ram Gita, Fear Is Not in the World, It&apos;s in Misunderstanding It</h2>
+          <h2 className="gita-title">Ram Gita: The Self as Witness</h2>
         </div>
 
         <p>
-          The Ram Gita appears in the Adhyatma Ramayana. It is the teaching that Rama gives to Lakshmana before the final battle with Ravana. Unlike the battlefield setting of the Bhagavad Gita, this context is quieter: a brother sitting with his brother, asking to understand the nature of reality before the great struggle begins.
+          The Ram Gita appears in the Uttara Kanda of the Adhyatma Ramayana. The war with Ravana is over and Rama rules in Ayodhya when Lakshmana asks him about liberation, and Rama answers. The setting is quieter than Kurukshetra: two brothers talking in peacetime.
         </p>
 
                 <ShlokaCard
           verseRef="Ram Gita · Verse 55"
           sanskrit="आदौ च मध्ये च तथैव चान्ततो भवं विदित्वा भयशोककारणम् ।{'\n'}हित्वा समस्तं विधिवादचोदितं भजेत्स्वमात्मानमथाखिलात्मनाम् ॥"
           meaningLabel="Translation"
-          meaning="Knowing that fear and sorrow are the cause of the world's beginning, middle, and end, abandon all prescribed external actions and worship your own inner being as the true self of all beings."
-          insightLabel="Why This Matters for Mental Health"
-          insight="Rama says fear and sorrow are not problems that appear occasionally in an otherwise comfortable world. They are the texture of worldly existence itself: at the beginning, in the middle, and at the end. Once you accept this, you stop being surprised by suffering and start doing the only thing that actually works: turning inward. Not as an escape from the world, but as the only source of stability that isn't subject to the world's constant change."
-          essence="Fear and sorrow underlie all of existence; true refuge is devotion to your own inner self."
+          meaning="Knowing that worldly existence is the cause of fear and sorrow at its beginning, middle and end, give up all actions prompted by ritual injunctions and worship your own self, the self of all beings."
+          insightLabel="What This Says"
+          insight="Rama says worldly existence (bhava) brings fear and sorrow at every stage: at the beginning, in the middle and at the end. Someone who accepts this is less surprised by suffering. His instruction is to set aside ritual action and turn to the self, which he calls the self of all beings."
+          essence="Worldly life breeds fear and sorrow throughout; turn to the self of all."
         />
 
                 <ShlokaCard
@@ -651,19 +649,19 @@ export default function BeyondBhagavadGitaPage() {
           sanskrit="अनाद्यविद्योद्भवबुद्धिबिम्बितो जीवप्रकाशोऽयमितीर्यते चितः ।{'\n'}आत्माधियः साक्षितया पृथक्स्थितो बुध्द्यापरिच्छिन्नपरः स एव हि ॥"
           meaningLabel="Translation"
           meaning="The living being is the light of consciousness reflected in intellect born from beginningless ignorance; the true self is separate from intellect as its witness and beyond its distinctions."
-          insightLabel="Why This Matters for Mental Health"
-          insight="Overthinking, rumination, the restless loop of what if and why did I: all of this belongs to the intellect. And the intellect, Rama says, is like a mirror reflecting consciousness, not consciousness itself. Your true self is the witness watching the intellect, not the intellect itself. When you identify with the thoughts instead of the witness, every swing of the mind feels like a swing in who you are. When you recognize the witness, you find something that doesn't swing."
-          essence="Your true self is the unchanging watcher beyond intellect and its illusions."
+          insightLabel="What This Says"
+          insight="Overthinking, the loop of what-if and why-did-I, belongs to the intellect. Rama compares the jiva to consciousness reflected in the intellect, and places the self apart from it as its witness. If you identify with the thoughts, every swing of the mind feels like a swing in who you are. The witness Rama describes stays still."
+          essence="The self stands apart from the intellect as its witness."
         />
 
         {/* ── HANS GITA ── */}
         <div className="gita-header">
           <span className="gita-badge">4 of 7</span>
-          <h2 className="gita-title">Hans Gita, The Strength That Doesn&apos;t React</h2>
+          <h2 className="gita-title">Hans Gita: Calm Under Harsh Words</h2>
         </div>
 
         <p>
-          The Hans Gita (Hamsa Gita) is a discourse found in the Shanti Parva of the Mahabharata, where the divine swan (a symbol of discernment and purity) instructs on virtue, wisdom, and the qualities of those who have truly cultivated their inner life. Its focus is intensely practical: how does a person with real inner development actually behave when provoked, attacked, or tested?
+          The Hans Gita (Hamsa Gita) is a discourse in the Shanti Parva of the Mahabharata, in which a swan, a symbol of discernment, teaches a group of sages about virtue. Its focus is practical: how a person behaves when insulted or provoked.
         </p>
 
                 <ShlokaCard
@@ -671,56 +669,56 @@ export default function BeyondBhagavadGitaPage() {
           sanskrit="परश्चेदेनमति वादबानैर्भृशं विध्येच्छम एवेह कार्यः ।{'\n'}संरोष्यमाणः प्रतिहृष्यते यः स आदत्ते सुकृतं वै परस्य ॥"
           meaningLabel="Translation"
           meaning="If others fiercely attack the wise person with harsh words like arrows, he remains calm. One who stays inwardly pleased despite another's anger inherits that person's goodness."
-          insightLabel="Why This Matters for Mental Health"
-          insight="What this verse describes is the capacity to remain internally stable when attacked, not numb, not suppressed, but genuinely at rest. The person who cannot do this will have their day wrecked by every difficult interaction. The person who can do this is carrying something that external events cannot easily disturb."
-          essence="Calmness in the face of harsh attack transforms others' anger into your own good."
+          insightLabel="What This Says"
+          insight="The verse describes staying calm when someone attacks you with words, and even feeling glad. Its claim is that the one who stays calm takes the merit of the one who attacks."
+          essence="Stay calm when attacked with harsh words; the attacker&apos;s merit passes to you."
         />
 
                 <ShlokaCard
           verseRef="Hans Gita · Verse 15"
           sanskrit="अक्रोधनः क्रुध्यतां वै विशिष्टस्तथा तितिक्षुरतितिक्षोर्विशिष्टः ।{'\n'}अमानुषान्मानुषो वै विशिष्टस् तथा ज्ञानाज्ज्ञानवान्वै प्रधानः ॥"
           meaningLabel="Translation"
-          meaning="A person who does not get angry at angry people is superior. The tolerant one surpasses the intolerant. Among all beings, the human is distinguished by the capacity for wisdom, and among humans, the wise surpass the ignorant."
-          insightLabel="Why This Matters for Mental Health"
-          insight="The Hans Gita presents a hierarchy not of status but of inner capacity. The highest rung isn't wealth, power, or intelligence. It's the person who can stay calm when others are not. This is what anger management traditions, modern therapeutic frameworks, and cognitive-behavioral approaches converge on: the ability to regulate your own response instead of being governed by the other person's state."
-          essence="True superiority lies in calmness amid anger and wisdom over ignorance."
+          meaning="One free of anger surpasses the angry, and the patient surpass the impatient. Humans surpass non-humans, and those with knowledge surpass those without it."
+          insightLabel="What This Says"
+          insight="The swan ranks people by inner capacity. The one who stays calm among the angry ranks above them, the patient above the impatient, and the wise above the ignorant. Your response is placed in your own hands, whatever state the other person is in."
+          essence="The calm surpass the angry; the patient surpass the impatient."
         />
 
         <div className="highlight-box">
           <h3>What the Hans Gita Says About Anger</h3>
           <p>
-            The text treats anger not as evil but as a test of inner development. Those who respond to anger with more anger are at one level. Those who can bear it without being consumed by it are at another. The text doesn&apos;t moralize. It simply describes what is true about inner life: reactivity is a sign that you are not yet stable in yourself. Stability grows through practice, not through suppression.
+            The text treats anger as a test. Those who answer anger with more anger are at one level, and those who can bear it without being consumed are at another. In the swan&apos;s account, quick reaction shows a person who is not yet steady, and steadiness comes with practice.
           </p>
         </div>
 
         {/* ── SHAKTI GITA ── */}
         <div className="gita-header">
           <span className="gita-badge">5 of 7</span>
-          <h2 className="gita-title">Shakti Gita, Consciousness Is Both the Movement and the Stillness</h2>
+          <h2 className="gita-title">Shakti Gita: Movement and Stillness</h2>
         </div>
 
         <p>
-          The Shakti Gita is the Goddess&apos;s own teaching. It appears within the Devi Bhagavata Purana and presents a vision of divinity entirely woven into every form of existence. Its core insight for mental health is about integration: the recognition that the energy in your restlessness and the stability in your stillness are not opposites. They are two expressions of the same consciousness.
+          The Shakti Gita is the Goddess&apos;s own teaching, and it sees the divine in every form of existence. Its point for daily life is that the energy in your restlessness and the steadiness in your stillness come from the same consciousness.
         </p>
 
                 <ShlokaCard
           verseRef="Shakti Gita 1.80"
           sanskrit="कार्यब्रह्मस्वरूपेत्र विश्वास्मिन जङ्गमे मम ।{'\n'}वर्त्तते चिद्विलासस्तु स्थावरे सद्विलासिता ॥"
           meaningLabel="Translation"
-          meaning="In this universe shaped as the active and the supreme, my conscious play exists in all that moves, and my true presence in all that is still."
-          insightLabel="Why This Matters for Mental Health"
-          insight="The Goddess is saying she is in both: the movement and the stillness, the activity and the rest. We often frame inner peace as the absence of activity: you will be well when the anxious thoughts stop, when life calms down. The Shakti Gita suggests something different: the consciousness that animates your busiest, most scattered day is the same consciousness present in your most peaceful moment. Recognizing this dissolves the internal war between how you are and how you think you should be."
-          essence="True self is present as conscious energy in movement and stable presence in stillness."
+          meaning="In this universe shaped as the active and the supreme, my conscious play exists in whatever moves, and my true presence in whatever is still."
+          insightLabel="What This Says"
+          insight="The Goddess says she is present in both what moves and what stands still. People often picture peace as the end of activity, arriving once the worried thoughts stop. In this verse, the consciousness in a busy, scattered day is the same consciousness present in a quiet one."
+          essence="My play of consciousness is in what moves, my being in what is still."
         />
 
         {/* ── SHAMBHU GITA ── */}
         <div className="gita-header">
           <span className="gita-badge">6 of 7</span>
-          <h2 className="gita-title">Shambhu Gita, Fear Dissolves at Its Own Root</h2>
+          <h2 className="gita-title">Shambhu Gita: Fear Returns to Its Source</h2>
         </div>
 
         <p>
-          The Shambhu Gita is Shiva&apos;s teaching, found within the Skanda Purana. Shiva, as the lord of dissolution and liberation, speaks about what happens to inner obstacles (particularly fear and desire) when genuine liberation is approached. His teaching is precise on what happens to psychological suffering at its deepest level.
+          The Shambhu Gita is Shiva&apos;s teaching. Shiva, lord of dissolution, describes what happens to fear and desire in a person who is liberated while alive (jivanmukta).
         </p>
 
                 <ShlokaCard
@@ -728,23 +726,21 @@ export default function BeyondBhagavadGitaPage() {
           sanskrit="भयमैथुनरूपिण्यो जीवन्मुक्तौ घटत्तयः ।{'\n'}राजसिक्यो विलीयन्ते स्वीयेषु कारणेवलम् ॥"
           meaningLabel="Translation"
           meaning="In the liberated being, the fear and passion-like rajasic tendencies dissolve completely, merging back into their own source."
-          insightLabel="Why This Matters for Mental Health"
-          insight="Shiva does not describe fear as something to be overcome through effort or willpower. He describes it as something that dissolves naturally, by returning to its own origin. Suppressing fear doesn't dissolve it; it pressurizes it. Fighting fear often intensifies it. Shiva's teaching points toward something different: when you trace fear back to where it arises in you, rather than endlessly reacting to it in the world, it loses its grip. The source of fear, when seen clearly, cannot maintain its power."
-          essence="Fears and desires vanish by dissolving naturally into their own origin in liberation."
+          insightLabel="What This Says"
+          insight="Shiva says that in the liberated person, fear and sexual desire, which he classes as rajasic tendencies, dissolve back into their own causes. He describes no struggle and no act of will; they return to where they came from."
+          essence="In the liberated, fear and desire dissolve back into their own source."
         />
 
-        <p className="pull-quote">
-          Shiva&apos;s teaching on fear isn&apos;t about overcoming it through courage. It&apos;s about following it back to where it arises, and finding that at its source, it cannot sustain itself.
-        </p>
+        
 
         {/* ── VISHNU GITA ── */}
         <div className="gita-header">
           <span className="gita-badge">7 of 7</span>
-          <h2 className="gita-title">Vishnu Gita, Ignorance Is the Cause; Clarity Is the Cure</h2>
+          <h2 className="gita-title">Vishnu Gita: Ignorance as the Cause of Fear</h2>
         </div>
 
         <p>
-          The Vishnu Gita appears within the Mahabharata&apos;s Shanti Parva as Vishnu&apos;s direct teaching on the nature of suffering, liberation, and how the senses bind the mind. It is particularly relevant for those caught in cycles of craving and aversion (wanting certain outcomes desperately, pushing others away) who find that this push and pull is the very engine of their anxiety.
+          The Vishnu Gita is Vishnu&apos;s teaching, addressed to the gods, on suffering, liberation and how the senses bind the mind. It speaks to anyone caught between craving some outcomes and pushing others away.
         </p>
 
                 <ShlokaCard
@@ -752,38 +748,35 @@ export default function BeyondBhagavadGitaPage() {
           sanskrit="अज्ञानदेव भीतीनामुत्पत्तिजायते सुरा : ।{'\n'}अज्ञानमेव जन्तूनां हेतुस्तापत्रयस्य वै ॥"
           meaningLabel="Translation"
           meaning="O divine beings, ignorance alone gives rise to fear. Ignorance alone is the cause of the threefold suffering."
-          insightLabel="Why This Matters for Mental Health"
-          insight="Vishnu names ignorance (not circumstance, not bad luck, not other people) as the root of fear and suffering. This is not fatalistic. It is liberating: if ignorance is the cause, then clarity is the cure. Every genuine moment of self-understanding is not just intellectually satisfying. It is actively therapeutic."
-          essence="Fear and suffering arise only from ignorance, not from reality itself."
+          insightLabel="What This Says"
+          insight="Vishnu names ignorance as the root of fear and of the threefold suffering, ahead of circumstance, bad luck or other people. If ignorance is the cause, then understanding is the remedy, and each moment of self-understanding counts."
+          essence="Ignorance alone gives rise to fear and the threefold suffering."
         />
 
                 <ShlokaCard
           verseRef="Vishnu Gita 4.76"
           sanskrit="इन्द्रियम्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ ।{'\n'}तयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ ॥"
           meaningLabel="Translation"
-          meaning="Every sense has attachment for its own objects and aversion for the opposite. One should not be controlled by either, for these two are the obstacles of one who seeks freedom."
-          insightLabel="Why This Matters for Mental Health"
-          insight="Vishnu is precise: the issue is not your senses, not pleasure, not pain. The issue is being controlled by the pull of craving and the push of aversion. This is almost exactly what modern ACT (Acceptance and Commitment Therapy) describes as psychological inflexibility, the state of being governed by emotional reactions rather than freely choosing your response. Craving and aversion are called paripanthi: obstacles, enemies of freedom."
-          essence="Refusing to be controlled by attraction or aversion frees your movement and choice."
+          meaning="Every sense has attachment for its own objects and aversion for the opposite. Let no one fall under their sway, for these two are the obstacles on the path."
+          insightLabel="What This Says"
+          insight="The same verse appears in the Bhagavad Gita as 3.34. Attraction and aversion sit in every sense and its objects, and the instruction is to stay out of their control. The verse calls them paripanthinau, two highwaymen waiting on the road."
+          essence="Attraction and aversion lie in every sense; do not fall under their sway."
         />
 
         <h2>What All These Gitas Share</h2>
         <p>
-          Across seven different texts, from seven different sages, addressing seven different audiences, the same insight appears in different forms. The cause of mental suffering is misidentification: taking yourself to be your circumstances, your mood, your social role, your thoughts, your fears. The relief from suffering begins with recognizing something in you that none of these things have touched.
+          Seven texts with seven different speakers come back to a shared idea: suffering comes from taking yourself to be your circumstances, mood, role, thoughts or fears, and relief begins when you recognise something in you that these do not touch.
         </p>
         <p>
-          This is not the same as saying your circumstances don&apos;t matter. The Ram Gita explicitly acknowledges that fear and sorrow are woven into the structure of worldly existence. The Avadhuta Gita doesn&apos;t say you haven&apos;t suffered. The Hans Gita doesn&apos;t say anger isn&apos;t real. What all of them point toward is a distinction: between the part of you that is in pain and the part of you that can witness the pain without being destroyed by it.
+          Circumstances still matter in these texts. The Ram Gita says outright that worldly life brings fear and sorrow, and the Hans Gita takes anger seriously enough to rank people by how they meet it. Each draws a line between the part of you in pain and the part that can witness the pain.
         </p>
 
         <div className="highlight-box">
           <h3>One Verse Per Day</h3>
           <p>
-            These texts are not meant to be read once and understood. They are meant to be lived with. One verse a day, read slowly, sat with, carried through an ordinary day, allows the teachings to work on you in the way they were designed to. Not as intellectual content but as a lens through which experience gradually looks different.
+            These texts reward slow reading. One verse a day, read carefully and kept in mind through an ordinary day, gives a teaching time to settle.
           </p>
-          <p>
-            The Wisdom app picks one Bhagavad Gita verse a day for what you are going through, with the Sanskrit and what it means for your life. It&apos;s a beginning. These other Gitas are waiting for you.
-          </p>
-        </div>
+          </div> <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the setting of the Ram Gita (Uttara Kanda, after the war) and the translation of its verse 55, noted that Vishnu Gita 4.76 matches Bhagavad Gita 3.34, removed unverified source claims for the Vishnu, Shakti and Shambhu Gitas, and removed therapy comparisons; copy edited.</p>
       </div>
 
       {/* FAQ */}
@@ -794,27 +787,27 @@ export default function BeyondBhagavadGitaPage() {
 
         <div className="faq-item">
           <strong>What is the Ashtavakra Gita and how is it different from the Bhagavad Gita?</strong>
-          <p>The Ashtavakra Gita is a dialogue between the sage Ashtavakra and King Janaka. Unlike the Bhagavad Gita (which covers duty, action, and devotion) the Ashtavakra Gita is entirely focused on one teaching: you are pure awareness, not the body-mind system. It has no mythology, no ritual, and no gradual path. It is often described as the most radical non-dual text in the Indian tradition.</p>
+          <p>The Ashtavakra Gita is a dialogue between the sage Ashtavakra and King Janaka. The Bhagavad Gita covers duty, action and devotion; the Ashtavakra Gita keeps to one teaching, that you are pure awareness, the witness of body and mind. It has almost no story, no ritual and no gradual path, and it is one of the best-known Advaita texts.</p>
         </div>
 
         <div className="faq-item">
           <strong>What is the Avadhuta Gita about?</strong>
-          <p>The Avadhuta Gita is attributed to Dattatreya. An &ldquo;avadhuta&rdquo; is a person who has renounced all social conventions and lives beyond prescribed roles. The Gita is Dattatreya&apos;s song of liberation, a first-person declaration of what it is like to be free from identification with the mind, ego, and circumstances. Its recurring refrain, &ldquo;I am the nectar of wisdom, steady and like the sky,&rdquo; is one of the most psychologically impactful lines in Sanskrit literature.</p>
+          <p>The Avadhuta Gita is attributed to Dattatreya. An &ldquo;avadhuta&rdquo; is a person who has renounced all social conventions and lives beyond prescribed roles. The Gita is Dattatreya&apos;s song of liberation, a first-person declaration of what it is like to be free from identification with the mind, ego, and circumstances. Chapter 3 repeats the refrain &ldquo;I am the nectar of wisdom, the same everywhere, like the sky.&rdquo;</p>
         </div>
 
         <div className="faq-item">
           <strong>What does the Ram Gita say about fear and mental peace?</strong>
-          <p>The Ram Gita is Rama&apos;s teaching to Lakshmana in the Adhyatma Ramayana. Rama says explicitly that fear and sorrow are embedded in the beginning, middle, and end of worldly existence. His solution is not more action or better strategy but turning inward: recognizing the true self as the witness of intellect, separate from and undisturbed by its fluctuations.</p>
+          <p>The Ram Gita is Rama&apos;s teaching to Lakshmana in the Uttara Kanda of the Adhyatma Ramayana. Rama says worldly existence brings fear and sorrow at its beginning, middle and end. He tells Lakshmana to turn inward and recognise the self as the witness of the intellect, separate from its changes.</p>
         </div>
 
         <div className="faq-item">
           <strong>How many Gitas are there in Hindu philosophy?</strong>
-          <p>The tradition contains dozens of texts called &ldquo;Gita.&rdquo; The Bhagavad Gita is by far the most widely known, but others include the Ashtavakra Gita, Avadhuta Gita, Uddhava Gita, Ram Gita, Hans Gita, Guru Gita, Shakti Gita, Shambhu Gita, Vishnu Gita, Ganesha Gita, Devi Gita, Ribhu Gita, and several more. Each is distinct in its philosophical orientation and intended audience.</p>
+          <p>The tradition contains dozens of texts called &ldquo;Gita.&rdquo; The Bhagavad Gita is the best known, and others include the Ashtavakra Gita, Avadhuta Gita, Uddhava Gita, Ram Gita, Hans Gita, Guru Gita, Shakti Gita, Shambhu Gita, Vishnu Gita, Ganesha Gita, Devi Gita, Ribhu Gita, and several more. Each is distinct in its philosophical orientation and intended audience.</p>
         </div>
 
         <div className="faq-item">
           <strong>Are the lesser-known Gitas good for mental health?</strong>
-          <p>Many of them are, in some ways more directly applicable to mental health than parts of the Bhagavad Gita. The Ashtavakra Gita&apos;s teaching on the witness-self speaks directly to the experience of anxiety and self-criticism. The Avadhuta Gita&apos;s refrain addresses depressive identification. The Hans Gita is the tradition&apos;s clearest teaching on anger regulation. The Vishnu Gita&apos;s verse on craving and aversion maps onto modern ACT therapy with remarkable precision.</p>
+          <p>These are philosophical texts and no replacement for treatment. Several of them speak to states of mind people struggle with. The Ashtavakra Gita teaches that you are the witness of your thoughts. The Hans Gita has verses on staying calm when insulted. The Vishnu Gita repeats the Bhagavad Gita&apos;s warning (3.34) against being ruled by attraction and aversion. If you are struggling, please also talk to a professional.</p>
         </div>
 
         <div className="faq-item">

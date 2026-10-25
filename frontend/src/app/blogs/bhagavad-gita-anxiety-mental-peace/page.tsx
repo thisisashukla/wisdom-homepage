@@ -7,11 +7,11 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "What Does the Bhagavad Gita Say About Anxiety and Fear?",
-  description: "The Gita opens with Arjuna mid-panic attack: hands shaking, bow dropped, unable to breathe. Chapter 2 through 6 build a specific answer to anxiety, dread, and mental restlessness, verse by verse.",
-  keywords: "bhagavad gita anxiety, bhagavad gita mental peace, gita quotes for stress, bhagavad gita depression, what does gita say about worry, gita mental health, bhagavad gita peace of mind, bhagavad gita on stress, bhagavad gita on fear, bhagavad gita mental health, bhagavad gita 6.5 meaning, gita on overthinking",
+  description: "In chapter 1 Arjuna's limbs give way and his bow slips from his hand. Verses from chapters 2 and 5 on fear, worry and a restless mind, with Sanskrit and plain meaning.",
+  keywords: "bhagavad gita anxiety, bhagavad gita mental peace, gita quotes for stress, bhagavad gita depression, what does gita say about worry, gita mental health, bhagavad gita peace of mind, bhagavad gita on stress, bhagavad gita on fear, bhagavad gita mental health, gita on overthinking",
   openGraph: {
     title: "What Does the Bhagavad Gita Say About Anxiety and Fear? | Wisdom",
-    description: "The Gita opens with Arjuna mid-panic attack. What follows is a 700-verse answer to anxiety, dread, and mental restlessness. Here are the key verses.",
+    description: "In chapter 1 Arjuna trembles and sets down his bow. Here are the verses from chapters 2 and 5 that answer his fear, with Sanskrit and plain meaning.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-anxiety-mental-peace",
     siteName: 'Wisdom',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     site: '@sansearchapp',
     creator: '@thisisashukla',
     title: "What Does the Bhagavad Gita Say About Anxiety and Fear? | Wisdom",
-    description: "The Gita opens with Arjuna mid-panic attack. What follows is a 700-verse answer to anxiety, dread, and mental restlessness. Here are the key verses.",
+    description: "In chapter 1 Arjuna trembles and sets down his bow. Here are the verses from chapters 2 and 5 that answer his fear, with Sanskrit and plain meaning.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -407,7 +407,7 @@ const schemas = [
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "What the Bhagavad Gita Says About Anxiety, Stress & Mental Peace | Wisdom",
-  "description": "The Bhagavad Gita was written for a man in the middle of a panic attack. Here's what it actually says about anxiety, fear, and the path to mental peace.",
+  "description": "Arjuna trembles and sets down his bow in chapter 1. Here is what chapters 2 and 5 say about fear, worry and a steady mind.",
   "datePublished": "2026-05-05",
   "dateModified": "2026-08-01",
   "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
@@ -446,7 +446,7 @@ const schemas = [
       "name": "Does the Bhagavad Gita help with anxiety?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — and not just as a collection of comforting quotes. The Gita was written for a man in the middle of what we would now call a panic attack. Its entire philosophical framework is designed specifically to address the mental states of fear, grief, confusion, and paralysis."
+        "text": "The Gita is a philosophical text, not medical advice, but it starts with a man overwhelmed by fear and grief, and the rest of the book is Krishna's reply to him. Verses 2.14, 2.56, 2.62–63 and 5.24 speak directly to fear and a restless mind."
       }
     },
     {
@@ -454,7 +454,7 @@ const schemas = [
       "name": "What does the Gita say about mental peace?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Gita doesn't promise the absence of difficulty. It offers a different relationship to it. The teaching of 2.14 says sense-experiences are temporary; 2.56 describes a mind steady in sorrow; and 5.24 points to inner happiness as the source of genuine peace."
+        "text": "Verse 2.14 says sense-experiences come and go and should be borne; 2.56 describes a mind undisturbed in sorrow and free of craving in pleasure; and 5.24 places happiness within a person, apart from outside conditions."
       }
     },
     {
@@ -462,7 +462,7 @@ const schemas = [
       "name": "What does the Gita say about worry and overthinking?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Verses 2.62-2.63 describe the cascade: dwelling on an object leads to attachment, desire, anger, confusion, and collapse. The Gita's analysis is that anxiety begins at dwelling — what you allow your mind to turn toward."
+        "text": "Verses 2.62–63 describe a chain: dwelling on an object leads to attachment, desire, anger, delusion, loss of memory, loss of judgment and ruin. The chain starts with dwelling, so the place to step in is what you keep turning your attention toward."
       }
     }
   ]
@@ -496,11 +496,11 @@ export default function AnxietyMentalPeacePage() {
           <div className="chapter-badge-dot"></div>
         </div>
         <h1 className="article-title">
-          The Bhagavad Gita Was Written for<br />
-          <em>Someone Having a Breakdown</em>
+          The Bhagavad Gita Begins with<br />
+          <em>a Man Putting Down His Bow</em>
         </h1>
         <p className="article-subtitle">
-          Chapter 1 opens with the world&apos;s most famous panic attack. The Gita&apos;s teaching on anxiety isn&apos;t &ldquo;calm down.&rdquo; It&apos;s a complete diagnosis of how the spiral begins and where to interrupt it.
+          In chapter 1 Arjuna&apos;s limbs give way and his bow slips from his hand. Krishna&apos;s reply traces how desire and anger build, and where a person can step in.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -511,7 +511,7 @@ export default function AnxietyMentalPeacePage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapters 1, 2 & 5</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -520,34 +520,34 @@ export default function AnxietyMentalPeacePage() {
         <figure className="chapter-image">
           <img
             src="/assets/chapter6.webp"
-            alt="Krishna on the path of meditation and inner stillness — Bhagavad Gita Chapter 6"
+            alt="Krishna and Arjuna on the chariot at Kurukshetra"
             width={1200}
             height={800}
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>Krishna takes Arjuna&apos;s trembling hands: the moment the Gita begins.</figcaption>
+          <figcaption>Krishna and Arjuna.</figcaption>
         </figure>
         <p className="lead">
-            Most people approach the Bhagavad Gita as spiritual wisdom, timeless, distant, comforting in a philosophical sort of way. But that&apos;s not what the Gita is. The Gita is a crisis management manual for someone in the middle of what we would now call a panic attack. Chapter 1 opens with a detailed clinical description of exactly that: shaking limbs, dry mouth, trembling bow, mind spinning, fear flooding the body. The Gita&apos;s entire philosophical apparatus was designed from the ground up to answer a man in that state. This is not metaphor. This is the foundation of the text.
+            Many people read the Bhagavad Gita as general spiritual comfort. It starts somewhere more specific. In chapter 1, Arjuna looks at the relatives and teachers lined up against him, and his body gives way: his limbs fail, his mouth dries, he trembles, his bow slips from his hand and his mind whirls (1.29–30). By the end of the chapter he sets down his bow and sits in the chariot, overcome with grief (1.47). Krishna&apos;s teaching from chapter 2 onward is his answer to a man in that state.
         </p>
-        <h2>What Arjuna's Breakdown Looks Like</h2>
+        <h2>What Happens to Arjuna in Chapter 1</h2>
         <p>
-            When you read the opening chapter of the Bhagavad Gita, the Vishada Yoga, the "yoga of despair", you are reading a 2,500-year-old description of an anxiety attack so precise it could serve as a clinical checklist today. Arjuna is standing on the battlefield of Kurukshetra, about to fight his own cousins in what will be the greatest war of the age. And something breaks in him.
-        </p>
-        <p>
-            His words tumble out: "My limbs fail me, my mouth goes dry, my skin trembles, my hair stands on end, my bow slips from my hand, and my very mind seems to recoil." He tells Krishna that the thought of killing his own relatives makes him feel physically sick. He cannot do this. He will not do this. He would rather flee than stay.
+            The first chapter is called Arjuna Vishada Yoga, the yoga of Arjuna&apos;s despair. Arjuna stands on the field of Kurukshetra facing an army that includes his cousins, his grandfather Bhishma and his teacher Drona.
         </p>
         <p>
-            What Arjuna is describing is not cowardice. It is psychological shutdown. The body is in dysregulation: trembling, sweating, dry mouth, inability to hold objects, mind spinning. The mind is flooded with catastrophic thinking: "If I kill them, I will have destroyed my family, ruined the tradition, brought shame upon myself." And underneath it all, the foundational fear: "I cannot do what I am called to do."
+            He tells Krishna: &ldquo;My limbs give way, my mouth is dry, my body trembles and my hair stands on end. Gandiva slips from my hand, my skin burns, I cannot stand, and my mind is whirling&rdquo; (1.29–30). He says he would rather be killed, unarmed, by the sons of Dhritarashtra than fight them (1.46).
         </p>
         <p>
-            The genius of the Bhagavad Gita is that it does not dismiss this state. It does not tell Arjuna to "toughen up" or "be a man" or "think positive thoughts." Instead, it takes his mental crisis entirely seriously and then methodically rebuilds the framework through which he understands his situation.
+            Arjuna gives reasons as well as symptoms. If he kills his kinsmen, he says, families will be destroyed, their traditions lost, and the sin will fall on him (1.36–44). Under the arguments is a plainer statement: he does not want to do what he came to do.
+        </p>
+        <p>
+            Krishna gives him one sharp line at the start of chapter 2, telling him to give up this petty weakness of heart and stand up (2.3). Then he spends the rest of the book answering Arjuna&apos;s arguments.
         </p>
 
-        <h2>The Gita's Diagnosis: How Anxiety Arises</h2>
+        <h2>How the Slide Begins: 2.62–63</h2>
         <p>
-            The Gita's most precise analysis of how anxiety and psychological collapse actually happen is contained in verses 2.62-2.63. These two verses outline the entire cascade: from dwelling to attachment to desire to anger to confusion to lost memory to destroyed intelligence to complete disintegration.
+            Verses 2.62–63 lay out a chain of eight steps: dwelling on an object, attachment, desire, anger, delusion, loss of memory, loss of judgment, and ruin.
         </p>
 
                 <ShlokaCard
@@ -557,17 +557,17 @@ export default function AnxietyMentalPeacePage() {
           meaningLabel="Translation"
           meaning="From dwelling on sense objects arises attachment; from attachment arises desire; from desire arises anger. From anger comes delusion; from delusion, loss of memory; from loss of memory, destruction of intelligence; from the destruction of intelligence, one perishes."
           insightLabel="What This Teaches"
-          insight="This is the Gita's cascade model of psychological collapse. Notice where it starts: not with an external event, not with the feeling of fear, but with what the mind dwells on. You dwell on something. Dwelling creates attachment. Attachment creates the need for a particular outcome (desire). When the outcome doesn't match what you want, you become angry. Anger clouds judgment. Loss of judgment means loss of sense. The spiral spirals. But here is the critical insight: the entry point is earlier than you think. You cannot always control your fear response in the moment. But you can control what you allow your mind to dwell on. That's the interruption point."
-          essence="Guard what you dwell on: the anxiety cascade begins at thought, not at feeling."
+          insight="The chain starts with what the mind dwells on, before any desire or anger shows up. Dwelling breeds attachment, attachment turns into wanting a particular outcome, and when that outcome is blocked, anger follows. Anger clouds judgment, and the rest of the chain runs from there. The verses are about desire and anger, though readers often apply them to worry as well. The earliest step, where the attention goes, is the easiest one to change."
+          essence="Dwelling on objects breeds attachment, desire, anger, and finally the loss of judgment."
         />
 
         <p>
-            What makes this analysis powerful is that it doesn't blame the anxiety itself. It traces the actual mechanism. Most people struggling with anxiety experience it as a sudden, irrational event: "I'm feeling anxious and I don't even know why." But the Gita traces it back further. The anxiety has a cause, and that cause is usually what you have been dwelling on, often unconsciously, for some time.
+            Worry often seems to arrive from nowhere. The Gita&apos;s chain suggests looking further back, at what the mind has been circling for days or weeks.
         </p>
 
-        <h2>The Antidote: Endurance Without Suppression</h2>
+        <h2>Bearing What Comes and Goes: 2.14</h2>
         <p>
-            The Gita does not offer to eliminate difficulty or fear. It offers something more useful: a way to bear it. This is the teaching of verse 2.14.
+            Krishna does not promise Arjuna that difficulty will stop. In 2.14 he tells him to bear it.
         </p>
 
                 <ShlokaCard
@@ -577,24 +577,24 @@ export default function AnxietyMentalPeacePage() {
           meaningLabel="Translation"
           meaning="Sense contacts give rise to cold and heat, pleasure and pain. They come and go, O Arjuna, they are impermanent. Bear them patiently."
           insightLabel="What This Teaches"
-          insight="The verse doesn't promise that pain won't come. It doesn't say positive thinking will erase difficulty. It says: sense experiences bring both pleasure and pain, and they are temporary. You will feel things you don't want to feel. The work is not to suppress them or argue with them, but to bear them with the recognition that they will pass. The word used is titiksha, often translated as patience, but more precisely, it means endurance. Not passivity. Not resignation. Active bearing."
-          essence="Endure life's changing experiences with patience. They are temporary."
+          insight="Krishna says contact with the senses brings heat and cold, pleasure and pain, and that these come and go. His instruction is titikṣasva, &quot;bear them&quot;. Titiksha is often translated as patience; endurance is closer, since the word means putting up with something without fighting it or running from it."
+          essence="Heat and cold, pleasure and pain come and go. Bear them, Arjuna."
         />
 
         <p>
-            This is radically different from the popular wisdom of anxiety management. It is not "positive affirmations." It is not "reprogramming your thoughts." It is recognizing that some discomfort is simply part of being alive, and the work is learning to not add suffering on top of the discomfort through resistance, denial, or desperation to make it stop immediately.
+            Endurance in this sense means accepting that some discomfort comes with being alive, and not adding to it by fighting it or demanding that it stop at once.
         </p>
 
         <div className="highlight-box">
-            <h3>The Time-Horizon Shift</h3>
+            <h3>Waiting It Out</h3>
             <p>
-                One of the most practical effects of this teaching: when you deeply understand that the present anxiety is temporary, it changes your entire strategy. You stop trying to escape it (which usually deepens it). Instead, you learn to outlast it. You orient toward time rather than toward the immediate resolution. This alone can dissolve a significant portion of the suffering that anxiety creates.
+                If a feeling is temporary, the task changes from escaping it to waiting it out. The verse calls these contacts āgamāpāyinaḥ, things that arrive and depart. Remembering that word during a hard hour can make the hour easier to sit through.
             </p>
         </div>
 
-        <h2>Equanimity Is Not Numbness</h2>
+        <h2>The Steady Mind: 2.56</h2>
         <p>
-            The next teaching defines what a mentally healthy person actually looks like. It's not someone who never feels anything. It's someone whose happiness doesn't depend on things working out perfectly.
+            In 2.56 Krishna describes the sthitaprajna, the person of steady mind, in three phrases.
         </p>
 
                 <ShlokaCard
@@ -604,21 +604,17 @@ export default function AnxietyMentalPeacePage() {
           meaningLabel="Translation"
           meaning="One whose mind is not disturbed by suffering, who does not crave for pleasure, and who is free from attachment, fear, and anger, such a person is called a sage of steady mind."
           insightLabel="What This Teaches"
-          insight="This verse contains three characteristics of the steadfast person: unshaken in suffering (which doesn't mean numb, it means present with it without panic), not desperately craving pleasure (which doesn't mean joyless, it means not grasping), and free from attachment/fear/anger. This is the Gita's portrait of genuine mental health. Not the absence of difficulty. The presence of steadiness in the face of it."
-          essence="Steadiness in suffering, restraint in pleasure: this is the steady mind."
+          insight="Krishna lists three marks: the mind is not shaken in sorrow, there is no craving in pleasure, and attachment, fear and anger have fallen away. The phrase anudvigna-manāḥ means a mind not agitated by sorrow, which leaves room for the sorrow itself."
+          essence="Unshaken in sorrow, free of craving in pleasure, free of fear and anger."
         />
 
-        <p>
-            Notice what the verse does not say. It does not say "a sage has no negative feelings." It does not say "a steady mind never experiences pain." It says the sage is not disturbed, not destabilized, not fragmented by the experience. The experience can be there. The mind can remain whole.
-        </p>
+        
 
-        <p className="pull-quote">
-            This is the work of emotional regulation, not emotional absence. The Gita is not asking you to become a robot. It's asking you to become anchored in something that doesn't shift when circumstances do.
-        </p>
+        
 
-        <h2>Where Peace Actually Lives</h2>
+        <h2>Happiness Within: 5.24</h2>
         <p>
-            The most profound teaching about peace comes near the end of the Gita. In verses 5.21 and 5.24, Krishna describes where happiness actually exists. Most people are looking for it in the wrong place.
+            In chapter 5 Krishna says where lasting happiness is found. Verse 5.21 describes a person unattached to outside contacts who finds happiness in the self, and 5.24 says it three ways.
         </p>
 
                 <ShlokaCard
@@ -628,22 +624,20 @@ export default function AnxietyMentalPeacePage() {
           meaningLabel="Translation"
           meaning="One who finds happiness within, who is delighted within, who is illuminated within, that yogi attains brahma-nirvana, becoming Brahman."
           insightLabel="What This Teaches"
-          insight="Three times in this verse, Krishna uses the word &quot;antar&quot;: within, inside. The happiness you are searching for outside (in outcomes, in approval, in financial security, in the perfect relationship) is not located outside. It's located inside. The anxiety comes from looking for stability in places that are inherently unstable. Your outcomes change. Other people's approval changes. Money comes and goes. But there is something within you that is not trembling. The work is learning to locate it."
-          essence="The happiness you seek outside is already inside. It was never anywhere else."
+          insight="Krishna uses antar, &quot;within&quot;, three times: happiness within, delight within, light within. Outcomes, approval and money all change. The verse points to a source of happiness that does not depend on them, and says the yogi who finds it attains brahma-nirvana."
+          essence="One whose happiness, delight and light are within reaches the peace of Brahman."
         />
 
         <p>
-            This is not naive idealism. This is not saying that external conditions don't matter. It is saying that the fundamental peace you are after (the peace that actually allows you to handle difficult circumstances) is not found by fixing all external circumstances. It's found by recognizing that there is a part of you that is not destabilized by what happens. That part is what the Gita keeps pointing toward.
+            Krishna says this to a man who still has a war to fight, so outside conditions still matter. His claim is that the steadiness needed to face them comes from within.
         </p>
 
         <h2>The Practice: One Verse at a Time</h2>
         <p>
-            The Gita's teaching on anxiety is not meant to be read once and then filed away. It's meant to be lived with, returned to again and again, allowed to work on you over time. This is why the structure of one verse per day is so powerful. Each morning, a single shloka sits with you all day. You read it while you are calm. Then, when anxiety arises, you remember it. Not as an intellectual idea, but as something that has already become part of how you think.
+            These verses help more when you come back to them than when you read them once. One way is to read a single verse in the morning while you are calm and keep it in mind through the day, so it is familiar by the time you need it.
         </p>
 
-        <p>
-            The verses on dwelling (2.62-63), on endurance (2.14), on steadiness (2.56), and on inner peace (5.24) are not theoretical knowledge. They are practical maps for what to do when the mind starts to spiral. They name the process so that you can recognize it. They offer a different way to relate to what you're experiencing.
-        </p>
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the quotation of 1.29–30, removed the claim that 5.24 comes near the end of the Gita, removed the medical framing of Arjuna&apos;s state and the Gita&apos;s age in years, and fixed the meta description to match the chapters covered; copy edited.</p>
     </div>
 
 
@@ -654,28 +648,28 @@ export default function AnxietyMentalPeacePage() {
         <div className="faq-item">
             <strong>Does the Bhagavad Gita help with anxiety?</strong>
             <p>
-                Yes, and not just as a collection of comforting quotes. The Gita was written for a man in the middle of what we would now call a panic attack. Its entire philosophical framework is designed specifically to address the mental states of fear, grief, confusion, and paralysis. Verses 2.14, 2.56, 2.62-63, and 5.24 are particularly direct in their treatment of how anxiety arises and how to work with it.
+                The Gita is a philosophical text, not medical advice, but it starts with a man overwhelmed by fear and grief, and the rest of the book is Krishna&apos;s reply to him. Verses 2.14, 2.56, 2.62–63 and 5.24 speak directly to fear and a restless mind.
             </p>
         </div>
 
         <div className="faq-item">
             <strong>What does the Gita say about mental peace?</strong>
             <p>
-                The Gita doesn't promise the absence of difficulty. It offers a different relationship to it. The teaching of 2.14 says sense-experiences are temporary; 2.56 describes a mind steady in sorrow and restrained in pleasure; and 5.24 points to inner happiness (antah-sukha) as the source of genuine peace, not external conditions. The peace the Gita points to is built on a shift in where you're looking for stability.
+                Verse 2.14 says sense-experiences come and go and should be borne; 2.56 describes a mind undisturbed in sorrow and free of craving in pleasure; and 5.24 places happiness (antah-sukha) within a person, apart from outside conditions.
             </p>
         </div>
 
         <div className="faq-item">
             <strong>What does the Gita say about worry and overthinking?</strong>
             <p>
-                Verses 2.62-2.63 describe the cascade: dwelling on an object → attachment → desire → anger → confusion → loss of judgment → collapse. The Gita's analysis of overthinking is that it begins at dwelling: what you consistently turn your attention toward. Managing anxiety in the Gita's framework means managing attention first, and working with emotion second. It's about interrupting the spiral at its origin point.
+                Verses 2.62–63 describe a chain: dwelling on an object leads to attachment, desire, anger, delusion, loss of memory, loss of judgment and ruin. The chain starts with dwelling, so the place to step in is what you keep turning your attention toward.
             </p>
         </div>
 
         <div className="faq-item">
             <strong>Is the Bhagavad Gita good for depression?</strong>
             <p>
-                The Gita addresses depressive thinking patterns, particularly the sense of hopelessness and paralysis that Arjuna experiences. While the Gita is philosophical and not a substitute for professional mental health care, its teachings on duty, equanimity, and the eternal nature of the self have resonated with people experiencing depression for centuries. Many find that returning to one verse at a time gives the mind a different framework to work with.
+                Arjuna&apos;s state in chapters 1 and 2 includes hopelessness and a refusal to act, and many readers recognise it. The Gita is a philosophical text and not a substitute for professional mental health care. Some readers find that returning to one verse at a time gives the mind something steady to hold.
             </p>
         </div>
     </div>

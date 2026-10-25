@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: "bhagwat geeta chapter 2, bhagavad gita chapter 2 sankhya yoga, bhagavad gita 2.47, karma without attachment gita, bhagwat geeta adhyay 2, sthitaprajna meaning, nayam hanti na hanyate, karmanyevadhikaras te meaning, eternal atman gita, atman bhagavad gita, nishkama karma, Sankhya Yoga summary, Bhagavad Gita 2.47 meaning, sthitaprajna lakshana, the cascade from attachment to ruin",
   openGraph: {
     title: "Bhagavad Gita Chapter 2 Summary \u2013 Key Verses & Meaning (Sankhya Yoga)",
-    description: "Seventy-two verses. One question about the atman. One teaching on action. One portrait of a mind that cannot be broken.",
+    description: "Chapter 2's 72 verses: Krishna's teaching on the atman, on action without attachment (2.47), and his portrait of the person of steady wisdom.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2",
     siteName: 'Wisdom',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 2 Summary \u2013 Key Verses & Meaning (Sankhya Yoga)",
-    description: "All 72 verses of Bhagavad Gita Chapter 2 \u2014 the eternal atman, action without attachment, and the mind that cannot be broken.",
+    description: "All 72 verses of Bhagavad Gita Chapter 2: the eternal atman, action without attachment, and the person of steady wisdom.",
     images: ["https://wisdomquotes.in/assets/chapter2.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-2" },
@@ -542,7 +542,7 @@ const schemas = [
   {
     "@context": "https://schema.org",
     "@type": ["Article", "LearningResource"],
-    "headline": "Bhagavad Gita Chapter 2 — Sankhya Yoga: The Chapter That Changes Everything",
+    "headline": "Bhagavad Gita Chapter 2: Sankhya Yoga",
     "description": "Bhagavad Gita Chapter 2 — Sankhya Yoga. All 72 verses with Sanskrit, transliteration, meaning. The eternal atman, action without attachment, and the portrait of the sthitaprajna.",
     "alternativeHeadline": "Bhagavad Gita Chapter 2 (Sankhya Yoga) — Summary & Verses",
     "author": {
@@ -610,15 +610,15 @@ const schemas = [
       "name": "What is Bhagavad Gita Chapter 2 about?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 2, called Sankhya Yoga or the Yoga of Knowledge, is the philosophical foundation of the entire Gita. It contains Krishna's first direct teachings to Arjuna — on the eternal nature of the atman, the dharma of a warrior, action without attachment to results, and the portrait of the sthitaprajna or person of steady wisdom. It is the longest chapter of the Gita's first half and arguably its most dense."
+        "text": "Chapter 2, called Sankhya Yoga or the Yoga of Knowledge, contains Krishna's first teachings to Arjuna: on the eternal atman, the dharma of a warrior, action without attachment to results, and the sthitaprajna, the person of steady wisdom. With 72 verses it is the longest chapter in the Gita's first half."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the most important verse in Chapter 2?",
+      "name": "What is the best-known verse in Chapter 2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The most famous is 2.47 — 'karmany evadhikaras te ma phaleshu kadachana' — often translated as 'you have a right to work, not to the fruits of work.' But 2.20 (the atman is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument."
+        "text": "The best known is 2.47, 'karmany evadhikaras te ma phaleshu kadachana' — often translated as 'you have a right to work, not to the fruits of work.' But 2.20 (the atman is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument."
       }
     },
     {
@@ -634,7 +634,7 @@ const schemas = [
       "name": "What does Bhagavad Gita 2.47 mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "2.47 says: you have the right to act, but not to claim the fruits of your actions; do not let the fruits be your motive; and do not fall into the trap of inaction either. Most people quote only the first half. The verse's fourth clause — not being attached to inaction — is what gives it its full force. The Gita is not advocating detachment as passivity. It is advocating engaged action with equanimity."
+        "text": "2.47 says: you have the right to act, but not to claim the fruits of your actions; do not let the fruits be your motive; and do not fall into the trap of inaction either. Most people quote only the first half. The fourth clause, about inaction, rules out reading the verse as permission to do nothing: Krishna wants action done with an even mind."
       }
     },
     {
@@ -642,7 +642,7 @@ const schemas = [
       "name": "How many verses are in Bhagavad Gita Chapter 2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 2 has 72 verses, making it one of the longest chapters in the Gita. It is also philosophically the densest — containing the core teachings on the atman, duty, action, and wisdom that the remaining 16 chapters expand upon."
+        "text": "Chapter 2 has 72 verses; only Chapter 18, with 78, is longer. It sets out the teachings on the atman, duty, action and wisdom that later chapters return to."
       }
     },
     {
@@ -690,7 +690,7 @@ export default function ChapterTwoPage() {
           <em>Sankhya Yoga</em>
         </h1>
         <p className="article-subtitle">
-          Seventy-two verses. One question about the atman. One teaching on action. One portrait of a mind that cannot be broken. A close reading.
+          A close reading of the 72 verses: Krishna on the atman, on action without attachment, and on the person of steady wisdom.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -701,7 +701,7 @@ export default function ChapterTwoPage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapter 2 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -720,11 +720,11 @@ export default function ChapterTwoPage() {
         </figure>
 
         <p className="lead">
-          Chapter 1 ends in silence. Arjuna has put down his bow, sunk into his chariot, and told Krishna he will not fight. For the first and only time in the Gita, the great archer has surrendered, not to an enemy, but to his own grief. Chapter 2 is what happens next. And what happens is that the entire framework of how to think about life, action, death, and identity gets rebuilt from the ground up.
+          Chapter 1 ends with Arjuna putting down his bow and sinking into his chariot (1.47). Early in Chapter 2 he refuses to fight (2.9). The rest of the chapter is Krishna&apos;s answer, covering death, the self, action and what a steady mind looks like.
         </p>
 
         <p>
-          Krishna speaks for the first time. And his opening words are not comforting. They are diagnostic.
+          Krishna&apos;s first words to him are a rebuke (2.2–3).
         </p>
 
         {/* TABLE OF CONTENTS */}
@@ -732,22 +732,22 @@ export default function ChapterTwoPage() {
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
             <li>
-              <a href="#krishna-diagnosis">Krishna's diagnosis, what Arjuna got wrong (2.1–2.11)</a>
+              <a href="#krishna-diagnosis">Krishna&apos;s diagnosis: what Arjuna got wrong (2.1–2.11)</a>
             </li>
             <li>
               <a href="#eternal-atman">The teaching on the eternal atman (2.12–2.30)</a>
             </li>
             <li>
-              <a href="#dharma-argument">Why Arjuna must fight, the dharma argument (2.31–2.38)</a>
+              <a href="#dharma-argument">Why Arjuna must fight: the dharma argument (2.31–2.38)</a>
             </li>
             <li>
-              <a href="#most-quoted">The most quoted verse in history, 2.47</a>
+              <a href="#most-quoted">The verse everyone quotes: 2.47</a>
             </li>
             <li>
-              <a href="#avoiding-duty">What avoiding your duty actually costs you</a>
+              <a href="#avoiding-duty">What avoiding your duty costs you</a>
             </li>
             <li>
-              <a href="#cascade">From thought to ruin, the cascade (2.62–2.63)</a>
+              <a href="#cascade">From thought to ruin: the cascade (2.62–2.63)</a>
             </li>
             <li>
               <a href="#sthitaprajna">The portrait of a sthitaprajna (2.54–2.72)</a>
@@ -771,7 +771,7 @@ export default function ChapterTwoPage() {
         <h2 id="krishna-diagnosis">Krishna's First Words: You Are Wrong</h2>
 
         <p>
-          Krishna doesn't begin with philosophy. He begins with a diagnosis. Look at verse 2.11.
+          His teaching begins with verse 2.11.
         </p>
 
                 <ShlokaCard
@@ -779,11 +779,11 @@ export default function ChapterTwoPage() {
           speaker="Krishna"
           sanskrit="श्री भगवानुवाच अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे । गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः ॥"
           iast="śrī bhagavānuvāca aśocyānanvaśocastvaṃ prajñāvādāṃśca bhāṣase | gatāsūnagatāsūṃśca nānuśocanti paṇḍitāḥ ||"
-          essence="Wise people do not grieve for what is inevitable; they see beyond temporary changes."
+          essence="You grieve for those who need no grief; the wise mourn neither dead nor living."
         />
 
         <p>
-          This is crucial to understand. Krishna's first direct words are not "I understand your pain" or "Let me comfort you." He says, in effect: your grief and your words are in contradiction. You claim to speak wisdom but you're acting as though you believe something you've just said you don't believe. This isn't cruelty. This is clarity. The Gita is fundamentally a text about inconsistency, about seeing where we contradict ourselves.
+          Krishna doesn&apos;t offer sympathy here. He points out that Arjuna&apos;s words and his grief don&apos;t match: Arjuna talks like a wise man while grieving over what the wise don&apos;t grieve over.
         </p>
 
         {/* SECTION 2: ETERNAL SOUL */}
@@ -796,11 +796,11 @@ export default function ChapterTwoPage() {
         <h2 id="eternal-atman">The Foundation: What Cannot Die</h2>
 
         <p>
-          Before Krishna gives Arjuna any practical instruction, he has to establish what kind of thing Arjuna actually is. This is not abstract philosophy. It is the foundation that makes everything else in the Gita make sense. If you don't understand what the self is, you can't understand why certain actions matter and others don't.
+          Before any practical instruction, Krishna sets out what Arjuna is. The later teaching on action depends on this account of the self.
         </p>
 
         <p>
-          Verse 2.20 is the bedrock of the entire Gita.
+          The central verse of this section is 2.20.
         </p>
 
                 <ShlokaCard
@@ -808,11 +808,11 @@ export default function ChapterTwoPage() {
           speaker="Krishna"
           sanskrit="न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"
           iast="na jāyate mriyate vā kadācinnāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||"
-          essence="You are eternal, nothing can destroy your true self."
+          essence="The self is never born and never dies; it is not killed when the body is."
         />
 
         <p>
-          The logic is elegant. If the atman is unborn and eternal, then "birth" and "death" are not absolute events, they are transitions of the body, not the self. They are like changing clothes.
+          If the atman is unborn and eternal, then birth and death happen to the body, and Krishna compares them to changing clothes.
         </p>
 
                 <ShlokaCard
@@ -822,12 +822,12 @@ export default function ChapterTwoPage() {
           iast="vāsāṃsi jīrṇāni yathā vihāya navāni gṛhṇāti naro'parāṇi | tathā śarīrāṇi vihāya jīrṇānyanyāni saṃyāti navāni dehī ||"
           meaning="Just as a person puts on new garments, giving up old ones, similarly, the atman accepts new material bodies, giving up the old and useless ones."
           insightLabel="The metaphor"
-          insight="The garment metaphor is one of the Gita's most concrete images. You don't mourn the death of a shirt when you put on a new one. The shirt was never you. Why should you mourn the death of a body? This is not abstract, it's asking you to think about what you're actually grieving."
-          essence="You are the eternal atman, not the temporary body."
+          insight="Nobody mourns an old shirt when they put on a new one, because the shirt was never them. Krishna asks Arjuna to think about what exactly he is grieving."
+          essence="As we change worn-out clothes, the self leaves old bodies for new ones."
         />
 
         <p>
-          And between these two verses, Krishna gives a third piece of advice: endure what comes. Verse 2.14 speaks to the transient nature of sensation, pain and pleasure come and go, heat and cold come and go. Build the capacity to endure them without being destabilized. What you cannot control, you must outlast.
+          Before these two verses, in 2.14, Krishna gives a practical instruction: pleasure and pain, heat and cold come and go, so endure them.
         </p>
 
                 <ShlokaCard
@@ -837,8 +837,8 @@ export default function ChapterTwoPage() {
           iast="mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ | āgamāpāyino'nityāstāṃstitikṣasva bhārata ||"
           meaning="O Arjuna, the contacts of the senses with objects bring cold and heat, pleasure and pain. They come and go, they are impermanent. Endure them, O descendant of Bharata."
           insightLabel="The practice"
-          insight="This is the practice: watch what comes and goes. Don't cling to pleasure, don't shrink from pain. Both are temporary. The person who can remain stable while everything changes is the person who has understood the difference between the self and the body."
-          essence="Endure life's changing experiences with patience, they are temporary."
+          insight="The practice is to watch what comes and goes without clinging to pleasure or shrinking from pain. In 2.15 Krishna says the person who stays even through both is fit for immortality."
+          essence="Heat and cold, pleasure and pain come and go; endure them."
         />
 
         {/* SECTION 3: DHARMA ARGUMENT */}
@@ -851,12 +851,12 @@ export default function ChapterTwoPage() {
         <h2 id="dharma-argument">The Dharma Argument: Why Arjuna Must Act</h2>
 
         <p>
-          Krishna now shifts from metaphysics to duty. He has established what the self is. Now he establishes what Arjuna's specific obligation is. And the argument is precise: for Arjuna, right now, in this situation, not fighting is the ethical failure.
+          Krishna now turns from the self to duty. His argument is specific: for Arjuna, in this war, refusing to fight is the wrong choice (2.31–33).
         </p>
 
         <div className="highlight-box">
           <p>
-            <strong>Understanding dharma in the Gita:</strong> Dharma is not a universal rule. It is the unique duty that arises from who you are, what your role is, and what the moment demands. For Arjuna, who was born as a kshatriya, a warrior, whose entire training has been in the martial arts, whose family has a righteous claim, and whose opponent is himself leading an unrighteous war, the dharma is to fight. This is not "always fight." This is "for you, now, in this exact moment, this is what duty demands."
+            <strong>Understanding dharma in the Gita:</strong> Here dharma means the duty that comes from who you are, your role, and what the moment asks. Arjuna is a kshatriya, trained as a warrior, with a just claim, facing an opponent who has refused every settlement. For him, here, the dharma is to fight. Krishna is telling Arjuna what his duty is in this war, and he is not saying everyone should always fight.
           </p>
         </div>
 
@@ -867,10 +867,10 @@ export default function ChapterTwoPage() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="most-quoted">The Verse Everyone Quotes (and Misunderstands)</h2>
+        <h2 id="most-quoted">The Verse Everyone Quotes</h2>
 
         <p>
-          2.47 is the most quoted verse of the Gita. In boardrooms, yoga studios, and self-help books, it shows up as a teaching on detachment. But people almost always quote only the first half and miss the verse's full force. The verse has four parts, and they're all equally important.
+          2.47 is one of the Gita&apos;s best-known verses, usually quoted as a teaching on detachment. People tend to quote only the first half, but the verse has four parts.
         </p>
 
                 <ShlokaCard
@@ -880,12 +880,12 @@ export default function ChapterTwoPage() {
           iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
           meaning="You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of the results of your activities, and never be attached to not doing your duty."
           insightLabel="The four parts"
-          insight="This verse is often reduced to &quot;do your duty but don't claim the results.&quot; But it has four distinct moves: (1) do your duty, this is positive; (2) don't claim ownership of outcomes, negative; (3) don't make the fruit your motive, negative; (4) don't use this teaching as an excuse for inaction, negative. The fourth part is almost always ignored. The verse is anti-nihilism as much as it is anti-ambition."
-          essence="Do your duty sincerely, and let go of expectations for the outcome."
+          insight="This verse is often reduced to &quot;do your duty but don't claim the results.&quot; It has four parts: (1) your right is to the action; (2) never to its fruits; (3) don't make the fruit your motive; (4) don't cling to inaction. The fourth part is often left out, and it rules out doing nothing."
+          essence="Your right is to the work, never to its results; do not cling to inaction."
         />
 
         <p>
-          The verse is saying: you must act. You have a right to action. But you have no right to demand the universe give you the outcome you want. Your job is to act with full effort and integrity. The results are not in your control, and trying to control them is the path to suffering. But not acting, using detachment as an excuse for inaction, is the opposite extreme, and the verse explicitly forbids it.
+          So you have a claim on the action and none on the outcome. Do the work with full effort; the results are outside your control. Using detachment as an excuse to do nothing is the opposite mistake, and the verse rules it out.
         </p>
 
         <p>
@@ -899,8 +899,8 @@ export default function ChapterTwoPage() {
           iast="yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya | siddhyasiddhyoḥ samo bhūtvā samatvaṃ yoga ucyate ||"
           meaning="Perform your duties established in yoga, abandoning attachment. Be even-minded in success and failure, for equanimity is called yoga."
           insightLabel="What yoga means"
-          insight="The very next verse after the famous 2.47 defines yoga not as a physical practice but as equanimity of mind in success and failure. This is the operating system behind detachment. It's not numbness or resignation. It's the capacity to remain clear and functional regardless of whether things go your way or not."
-          essence="True yoga is remaining balanced and calm, regardless of success or failure."
+          insight="Right after 2.47, Krishna defines yoga as evenness of mind in success and failure (samatvaṃ yoga ucyate). He means staying clear and able to act whichever way things go."
+          essence="Act steady in yoga, the same in success and failure; that evenness is yoga."
         />
 
         {/* SECTION 5: AVOIDING YOUR DUTY */}
@@ -910,18 +910,18 @@ export default function ChapterTwoPage() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="avoiding-duty">What Avoiding Your Duty Actually Costs You</h2>
+        <h2 id="avoiding-duty">What Avoiding Your Duty Costs You</h2>
 
         <p>
-          Arjuna made several sophisticated-sounding arguments for why he shouldn't fight. He said fighting would create sin. He said destroying families would cause chaos. He said it was better to die unarmed. These weren't simplistic objections, they came from a place of genuine moral concern. And Krishna addresses each one not by dismissing Arjuna's worry, but by showing where his logic fails.
+          In Chapter 1 Arjuna gave serious reasons not to fight: killing kin would be a sin (1.36), destroying families would bring chaos (1.40–43), and it would be better to be killed unarmed (1.46). Krishna takes the worry seriously and shows where the reasoning fails.
         </p>
 
         <p>
-          The Gita is extremely direct here: the desire to step back from your responsibility is often dressed up as moral sensitivity. It looks like wisdom. It sounds like wisdom. But it's a form of self-deception. You're protecting yourself from discomfort and calling it ethics. And the Gita spends all of Chapter 2 and 3 dismantling the specific rationalizations we use to avoid our duty.
+          Krishna&apos;s point is that the wish to step back from a duty can pass itself off as moral sensitivity. He calls Arjuna&apos;s state weakness of heart (2.3), and Chapters 2 and 3 take apart his reasons one by one.
         </p>
 
         <p>
-          This is something most modern discussions of the Gita miss entirely. We want it to be about universal truths, don't be attached, don't grasp at outcomes. But it's equally about particularity: you have a specific duty, arising from who you are. And avoiding it is not noble. It's escape. The Gita doesn't let you off the hook.
+          Modern readings often keep only the general advice: don't be attached, don&apos;t grasp at outcomes. The chapter is just as much about a particular duty that comes from who you are, and about the cost of walking away from it (2.33–36).
         </p>
 
         {/* SECTION 6: CASCADE */}
@@ -934,7 +934,7 @@ export default function ChapterTwoPage() {
         <h2 id="cascade">From Thought to Ruin: The Cascade</h2>
 
         <p>
-          Toward the end of Chapter 2, Krishna gives what is perhaps the Gita's most precise description of psychological collapse. It's a sequence, and understanding it is crucial because it shows you where the break in the chain can happen.
+          Toward the end of Chapter 2, Krishna describes how a mind falls apart, step by step. Laying it out as a chain shows where it can be broken.
         </p>
 
                 <ShlokaCard
@@ -944,8 +944,8 @@ export default function ChapterTwoPage() {
           iast="dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate | saṅgāt saṃjāyate kāmaḥ kāmātkrodho'bhijāyate ||"
           meaning="From thinking about sense objects, attachment develops; from attachment, desire is born; from desire, anger arises."
           insightLabel="The first link"
-          insight="Notice that the cascade begins with thought. You think about something, you dwell on it, replay it, fantasize about it. That dwelling creates attachment. Not the object itself creates attachment, but your repeated thinking about it. This is why the first link is the most important: if you can interrupt it here, the rest of the cascade never begins."
-          essence="Dwelling on desires creates attachment; attachment creates anger."
+          insight="The chain starts with thought (dhyāyataḥ, dwelling on). Attachment grows from repeatedly thinking about the object. If the dwelling stops, the rest of the chain doesn&apos;t start."
+          essence="Dwelling on objects breeds attachment, then desire, and from desire comes anger."
         />
 
                 <ShlokaCard
@@ -955,12 +955,12 @@ export default function ChapterTwoPage() {
           iast="krodhādbhavati saṃmohaḥ saṃmohātsmṛtivibhramaḥ | smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati ||"
           meaning="From anger comes delusion; from delusion, loss of memory; from loss of memory, the destruction of intelligence; from the destruction of intelligence, one perishes."
           insightLabel="The full cascade"
-          insight="The Gita's description of collapse is precise: anger clouds the mind, delusion sets in. You start to forget what matters. Your judgment deteriorates. And finally, your self-destruction follows inevitably. Each step is necessary and flows from the previous one. But they're also preventable, if you can break the chain at any point, you stop the cascade."
-          essence="Anger clouds the mind; a clouded mind destroys intelligence."
+          insight="Anger brings confusion, and confusion makes you forget what you knew. Then judgment (buddhi) goes, and with it the person. Each step follows from the one before, and breaking the chain at any point stops it."
+          essence="Anger brings delusion, then lost memory, lost judgment, and ruin."
         />
 
         <p>
-          This is the Gita's 2500-year-old theory of how the mind falls apart. The sequence is: dwelling on something → attachment → desire → anger (when blocked) → confusion → memory loss → loss of judgment → self-destruction. Each step is both inevitable and avoidable. The key insight is that the interruption point is always the first link: what you allow your mind to dwell on.
+          The full sequence: dwelling on something → attachment → desire → anger (when the desire is blocked) → confusion → loss of memory → loss of judgment → ruin. The easiest place to break it is the first link, what you let your mind dwell on.
         </p>
 
         {/* SECTION 7: STHITAPRAJNA */}
@@ -973,7 +973,7 @@ export default function ChapterTwoPage() {
         <h2 id="sthitaprajna">The Portrait of a Sthitaprajna</h2>
 
         <p>
-          The chapter reaches its culmination in one of the Gita's most important passages. Arjuna asks Krishna a question that is both simple and profound.
+          The chapter closes with Arjuna asking a plain question.
         </p>
 
                 <ShlokaCard
@@ -983,12 +983,12 @@ export default function ChapterTwoPage() {
           iast="sthitaprajñasya kā bhāṣā samādhisthasya keśava | sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim ||"
           meaning="O Krishna, what is the description of one whose wisdom is steady, one established in deep absorption? How does such a person speak, how does such a person sit, how does such a person walk?"
           insightLabel="The sincere question"
-          insight="This is one of the best questions in the entire Gita. Arjuna doesn't ask how to become wise, he asks what it looks like. How can I recognize it? How can I recognize it in myself? He's asking for a portrait, a description of wisdom from the outside. Not an abstract principle, but observable characteristics."
-          essence="The sincere seeker asks: what does true inner balance look like?"
+          insight="Arjuna asks what wisdom looks like from the outside: how such a person talks, sits and walks. He wants something he can recognise, in others and in himself."
+          essence="Arjuna asks how a person of steady wisdom speaks, sits and walks."
         />
 
         <p>
-          And Krishna answers with a portrait that spans verses 2.55 through 2.72. It is not a portrait of a detached saint sitting in a cave. It is a portrait of a person who remains functional, clear, and present even when life is burning around them.
+          Krishna answers across verses 2.55 to 2.72, describing a person who stays clear and able to act in the middle of things.
         </p>
 
                 <ShlokaCard
@@ -998,8 +998,8 @@ export default function ChapterTwoPage() {
           iast="prajahāti yadā kāmān sarvān pārtha manogatān | ātmanyevātmanā tuṣṭaḥ sthitaprajñastadocyate ||"
           meaning="One is called a person of steady wisdom when they abandon all desires of the mind, O Arjuna, and remain satisfied in the self alone by the self."
           insightLabel="Freedom from desire"
-          insight="This is crucial: freedom from desire doesn't mean wanting nothing. It means your sense of wholeness, your sense of being complete, no longer depends on getting anything from the world. You are full without it. The key phrase is &quot;satisfied in the self alone by the self&quot;, your completeness comes from within, not from external acquisition."
-          essence="Freedom from desire brings deep contentment."
+          insight="The key phrase is &quot;satisfied in the self alone by the self&quot; (ātmany evātmanā tuṣṭaḥ). Such a person&apos;s contentment doesn&apos;t depend on getting things from the world."
+          essence="One who gives up all desires and is content in the self has steady wisdom."
         />
 
                 <ShlokaCard
@@ -1009,14 +1009,15 @@ export default function ChapterTwoPage() {
           iast="duḥkheṣvanudvignamanāḥ sukheṣu vigataspṛhaḥ | vītarāgabhayakrodhaḥ sthitadhīrmunirucyate ||"
           meaning="One whose mind is not disturbed even in the threefold miseries, who is not elated when there is happiness, and who is free from attachment, fear and anger, is called a sage of steady mind."
           insightLabel="The three freedoms"
-          insight="The sthitaprajna has three key characteristics: they are undisturbed in suffering, not overjoyed in pleasure, and free from attachment, fear, and anger. Notice that this is not numbness, it's steadiness. They're still experiencing what happens, but they're not being dragged around by it."
-          essence="Steadiness of mind comes from detachment and equanimity, not from the sway of outer circumstances."
+          insight="Three marks: undisturbed in suffering, not craving pleasure, and free of attachment, fear and anger. Such a person still feels what happens without being pulled around by it."
+          essence="Undisturbed in sorrow, not craving pleasure, free of attachment, fear and anger."
         />
 
         <p>
-          This is the portrait. Not an ascetic. Not someone withdrawn from life. But someone who can remain clear, integrated, and functional regardless of what life brings. Someone who has broken the connection between what happens externally and their internal stability.
+          He gives this description to a warrior who still has to fight, so it fits someone in the middle of things whose steadiness no longer depends on what happens outside.
         </p>
 
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the 2.10 speaker (Sanjaya), the gloss of 2.11, the chapter-length claim, and the verse summaries in the table; copy edited.</p>
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 2"} />
 
 
@@ -1047,362 +1048,362 @@ export default function ChapterTwoPage() {
             <tr>
               <td>2.1</td>
               <td>Sanjaya</td>
-              <td>Even heroes feel lost, help arrives at the darkest hour</td>
+              <td>Sanjaya describes Arjuna, eyes full of tears, as Krishna begins to speak</td>
             </tr>
             <tr>
               <td>2.2</td>
               <td>Krishna</td>
-              <td>In moments of challenge, choose courage over retreat</td>
+              <td>Krishna asks where this weakness has come from at such a moment</td>
             </tr>
             <tr>
               <td>2.3</td>
               <td>Krishna</td>
-              <td>Do not let fear dictate your actions; rise with courage</td>
+              <td>Krishna tells Arjuna not to give in to faint-heartedness and to stand up</td>
             </tr>
             <tr>
               <td>2.4</td>
               <td>Arjuna</td>
-              <td>Facing duty can conflict with deep feelings, it's human</td>
+              <td>Arjuna asks how he can shoot arrows at Bhishma and Drona</td>
             </tr>
             <tr>
               <td>2.5</td>
               <td>Arjuna</td>
-              <td>Never achieve your goals at the cost of your principles</td>
+              <td>Arjuna says living on alms is better than killing his teachers</td>
             </tr>
             <tr>
               <td>2.6</td>
               <td>Arjuna</td>
-              <td>Honest self-doubt is a step before clarity</td>
+              <td>Arjuna does not know whether winning or losing this war would be worse</td>
             </tr>
             <tr>
               <td>2.7</td>
               <td>Arjuna</td>
-              <td>Wisdom begins with the willingness to ask for guidance</td>
+              <td>Confused about his dharma, Arjuna asks Krishna to teach him as a disciple</td>
             </tr>
             <tr>
               <td>2.8</td>
               <td>Arjuna</td>
-              <td>Outer achievements cannot heal inner wounds</td>
+              <td>Arjuna says no kingdom, even one over the gods, would end his grief</td>
             </tr>
             <tr>
               <td>2.9</td>
               <td>Sanjaya</td>
-              <td>Even the wisest pause before acting; silence signals a search</td>
+              <td>Arjuna tells Krishna he refuses to fight, then falls silent</td>
             </tr>
             <tr>
               <td>2.10</td>
-              <td>Krishna</td>
-              <td>In darkness, a calm guide restores hope</td>
+              <td>Sanjaya</td>
+              <td>Krishna, smiling, speaks to the grieving Arjuna between the two armies</td>
             </tr>
             <tr>
               <td>2.11</td>
               <td>Krishna</td>
-              <td>Wise people do not grieve for the inevitable</td>
+              <td>You grieve for those who need no grief; the wise mourn neither dead nor living</td>
             </tr>
             <tr>
               <td>2.12</td>
               <td>Krishna</td>
-              <td>You are eternal; your true self never perishes</td>
+              <td>There was never a time when you, I or these kings did not exist</td>
             </tr>
             <tr>
               <td>2.13</td>
               <td>Krishna</td>
-              <td>Our true nature is changeless and eternal</td>
+              <td>As the self passes through childhood, youth and age, it passes to another body</td>
             </tr>
             <tr>
               <td>2.14</td>
               <td>Krishna</td>
-              <td>Endure life's changing experiences, they are temporary</td>
+              <td>Heat and cold, pleasure and pain come and go; endure them</td>
             </tr>
             <tr>
               <td>2.15</td>
               <td>Krishna</td>
-              <td>Equanimity amidst all experiences brings true strength</td>
+              <td>One unshaken by pain and pleasure alike is fit for immortality</td>
             </tr>
             <tr>
               <td>2.16</td>
               <td>Krishna</td>
-              <td>The real endures; the unreal fades away</td>
+              <td>The unreal has no being, and the real never ceases to be</td>
             </tr>
             <tr>
               <td>2.17</td>
               <td>Krishna</td>
-              <td>Your true self is eternal and cannot be destroyed</td>
+              <td>What pervades all this is indestructible; no one can destroy it</td>
             </tr>
             <tr>
               <td>2.18</td>
               <td>Krishna</td>
-              <td>Your true self is beyond destruction, act with courage</td>
+              <td>Bodies come to an end, but the embodied self is eternal, so fight</td>
             </tr>
             <tr>
               <td>2.19</td>
               <td>Krishna</td>
-              <td>Your real self is never harmed by what happens to the body</td>
+              <td>The self neither kills nor is killed</td>
             </tr>
             <tr>
               <td>2.20</td>
               <td>Krishna</td>
-              <td>You are eternal, nothing can destroy your true self</td>
+              <td>The self is never born and never dies; it is not killed when the body is</td>
             </tr>
             <tr>
               <td>2.21</td>
               <td>Krishna</td>
-              <td>You are the eternal atman; unaffected by change</td>
+              <td>How can one who knows the self is indestructible kill anyone?</td>
             </tr>
             <tr>
               <td>2.22</td>
               <td>Krishna</td>
-              <td>You are the eternal atman, not the temporary body</td>
+              <td>As we change worn-out clothes, the self leaves old bodies for new ones</td>
             </tr>
             <tr>
               <td>2.23</td>
               <td>Krishna</td>
-              <td>Your spirit is unbreakable, beyond all external harm</td>
+              <td>Weapons do not cut the self, fire does not burn it, water does not wet it</td>
             </tr>
             <tr>
               <td>2.24</td>
               <td>Krishna</td>
-              <td>The atman is indestructible, nothing can harm your innermost self</td>
+              <td>The self cannot be cut, burnt, wetted or dried; it is eternal and unmoving</td>
             </tr>
             <tr>
               <td>2.25</td>
               <td>Krishna</td>
-              <td>You are the unchanging atman; do not grieve for passing things</td>
+              <td>The self is unmanifest and unchanging; knowing this, do not grieve</td>
             </tr>
             <tr>
               <td>2.26</td>
               <td>Krishna</td>
-              <td>Let go of sorrow over the inevitable; peace lies in acceptance</td>
+              <td>Even if the self were born and died again and again, you should not grieve</td>
             </tr>
             <tr>
               <td>2.27</td>
               <td>Krishna</td>
-              <td>All things change; acceptance brings peace</td>
+              <td>Death is certain for the born and birth for the dead; do not grieve</td>
             </tr>
             <tr>
               <td>2.28</td>
               <td>Krishna</td>
-              <td>Life is a temporary appearance; the true self is beyond birth and death</td>
+              <td>Beings are unseen before birth and after death, seen only in between</td>
             </tr>
             <tr>
               <td>2.29</td>
               <td>Krishna</td>
-              <td>The atman is a wondrous mystery, beyond easy understanding</td>
+              <td>Some see, speak or hear of the self as a wonder, yet none know it</td>
             </tr>
             <tr>
               <td>2.30</td>
               <td>Krishna</td>
-              <td>The atman is eternal, do not grieve over temporary changes</td>
+              <td>The self in every body can never be killed; grieve for no being</td>
             </tr>
             <tr>
               <td>2.31</td>
               <td>Krishna</td>
-              <td>Honoring your unique duty leads to true fulfillment</td>
+              <td>Looking at your own dharma, do not waver; a righteous war suits a kshatriya</td>
             </tr>
             <tr>
               <td>2.32</td>
               <td>Krishna</td>
-              <td>Life's unexpected duties can be your greatest opportunities</td>
+              <td>A war like this, come unsought, is an open door to heaven for a warrior</td>
             </tr>
             <tr>
               <td>2.33</td>
               <td>Krishna</td>
-              <td>True peace comes from courageously walking your path</td>
+              <td>Refusing this righteous war means losing your dharma and honour, and incurring sin</td>
             </tr>
             <tr>
               <td>2.34</td>
               <td>Krishna</td>
-              <td>Honor and integrity are worth more than life itself</td>
+              <td>People will speak of your disgrace, and for the honoured that is worse than death</td>
             </tr>
             <tr>
               <td>2.35</td>
               <td>Krishna</td>
-              <td>How you respond to fear determines your standing in life</td>
+              <td>The great warriors will think you fled the battle out of fear</td>
             </tr>
             <tr>
               <td>2.36</td>
               <td>Krishna</td>
-              <td>Do not let harsh words deter you from your true path</td>
+              <td>Your enemies will mock your ability and say what should not be said</td>
             </tr>
             <tr>
               <td>2.37</td>
               <td>Krishna</td>
-              <td>Take decisive action, growth comes from commitment, not results</td>
+              <td>Killed, you gain heaven; victorious, you rule the earth; so stand and fight</td>
             </tr>
             <tr>
               <td>2.38</td>
               <td>Krishna</td>
-              <td>Act with inner balance; be free from anxiety</td>
+              <td>Treat pleasure and pain, gain and loss, victory and defeat alike, and fight</td>
             </tr>
             <tr>
               <td>2.39</td>
               <td>Krishna</td>
-              <td>Act with inner balance; transcend the bonds of your actions</td>
+              <td>That was Sankhya; now hear the yoga that frees you from the bonds of karma</td>
             </tr>
             <tr>
               <td>2.40</td>
               <td>Krishna</td>
-              <td>Every sincere effort, no matter how small, is never wasted</td>
+              <td>On this path no effort is lost, and a little of it protects from great fear</td>
             </tr>
             <tr>
               <td>2.41</td>
               <td>Krishna</td>
-              <td>True success comes from a focused, unwavering mind</td>
+              <td>A resolute mind is single-pointed; an irresolute one branches endlessly</td>
             </tr>
             <tr>
               <td>2.42</td>
               <td>Krishna</td>
-              <td>Look beyond outward pleasures; seek lasting wisdom within</td>
+              <td>The unwise, attached to the letter of the Vedas, say there is nothing more</td>
             </tr>
             <tr>
               <td>2.43</td>
               <td>Krishna</td>
-              <td>Don't let desire for rewards distract you from deeper fulfillment</td>
+              <td>Full of desire, they aim at heaven and perform rites for pleasure and power</td>
             </tr>
             <tr>
               <td>2.44</td>
               <td>Krishna</td>
-              <td>When the mind obsesses on pleasure, spiritual focus fades</td>
+              <td>Minds caught by pleasure and power cannot settle into steady concentration</td>
             </tr>
             <tr>
               <td>2.45</td>
               <td>Krishna</td>
-              <td>Lasting peace comes from being rooted in your true Self</td>
+              <td>The Vedas deal with the three gunas; rise above them and rest in the self</td>
             </tr>
             <tr>
               <td>2.46</td>
               <td>Krishna</td>
-              <td>True wisdom transcends the need for lesser, fragmented knowledge</td>
+              <td>To one who knows Brahman, the Vedas are as useful as a pond in a flood</td>
             </tr>
             <tr>
               <td>2.47</td>
               <td>Krishna</td>
-              <td>Do your duty; let go of the outcome</td>
+              <td>Your right is to the work, never to its results; do not cling to inaction</td>
             </tr>
             <tr>
               <td>2.48</td>
               <td>Krishna</td>
-              <td>True yoga is remaining balanced in success and failure</td>
+              <td>Act steady in yoga, the same in success and failure; that evenness is yoga</td>
             </tr>
             <tr>
               <td>2.49</td>
               <td>Krishna</td>
-              <td>Let go of attachment to results; act with wisdom</td>
+              <td>Acting for results is far below acting from wisdom; take refuge in wisdom</td>
             </tr>
             <tr>
               <td>2.50</td>
               <td>Krishna</td>
-              <td>Find balance in action; let go of attachment to outcomes</td>
+              <td>Joined to wisdom, one leaves behind good and bad deeds; yoga is skill in action</td>
             </tr>
             <tr>
               <td>2.51</td>
               <td>Krishna</td>
-              <td>Freedom blooms when you let go of demanding specific results</td>
+              <td>The wise who give up the fruits of action are freed from rebirth</td>
             </tr>
             <tr>
               <td>2.52</td>
               <td>Krishna</td>
-              <td>Clarity brings spontaneous peace and detachment</td>
+              <td>When your mind crosses delusion, you will tire of what you have heard and will hear</td>
             </tr>
             <tr>
               <td>2.53</td>
               <td>Krishna</td>
-              <td>A steady mind leads to true spiritual union</td>
+              <td>When your mind, unsettled by conflicting scripture, stands still in samadhi, you reach yoga</td>
             </tr>
             <tr>
               <td>2.54</td>
               <td>Arjuna</td>
-              <td>The sincere seeker asks: what does true inner balance look like?</td>
+              <td>Arjuna asks how a person of steady wisdom speaks, sits and walks</td>
             </tr>
             <tr>
               <td>2.55</td>
               <td>Krishna</td>
-              <td>Freedom from desire brings deep contentment</td>
+              <td>One who gives up all desires and is content in the self has steady wisdom</td>
             </tr>
             <tr>
               <td>2.56</td>
               <td>Krishna</td>
-              <td>Steadiness in suffering and restraint in happiness, this is wisdom</td>
+              <td>Undisturbed in sorrow, not craving pleasure, free of attachment, fear and anger</td>
             </tr>
             <tr>
               <td>2.57</td>
               <td>Krishna</td>
-              <td>A steady mind leads to true wisdom unaffected by life's changes</td>
+              <td>Unattached everywhere, neither elated by good nor upset by bad: that is steady wisdom</td>
             </tr>
             <tr>
               <td>2.58</td>
               <td>Krishna</td>
-              <td>Withdraw from distractions; wisdom grows in self-control</td>
+              <td>The steady one withdraws the senses from objects as a tortoise draws in its limbs</td>
             </tr>
             <tr>
               <td>2.59</td>
               <td>Krishna</td>
-              <td>Inner thirst fades only when quenched by something truly greater</td>
+              <td>Fasting keeps sense objects away while the taste for them stays; seeing the Supreme ends it</td>
             </tr>
             <tr>
               <td>2.60</td>
               <td>Krishna</td>
-              <td>Even the wise must guard their senses</td>
+              <td>The restless senses can carry off the mind even of a wise man who strives</td>
             </tr>
             <tr>
               <td>2.61</td>
               <td>Krishna</td>
-              <td>Steady wisdom comes from controlling the senses</td>
+              <td>Restrain the senses and sit focused on me; then wisdom is steady</td>
             </tr>
             <tr>
               <td>2.62</td>
               <td>Krishna</td>
-              <td>Dwelling on desires creates attachment; attachment creates anger</td>
+              <td>Dwelling on objects breeds attachment, then desire, and from desire comes anger</td>
             </tr>
             <tr>
               <td>2.63</td>
               <td>Krishna</td>
-              <td>Anger clouds the mind; a clouded mind destroys intelligence</td>
+              <td>Anger brings delusion, then lost memory, lost judgment, and ruin</td>
             </tr>
             <tr>
               <td>2.64</td>
               <td>Krishna</td>
-              <td>Self-mastery and freedom from attachment lead to lasting peace</td>
+              <td>Moving among objects without attraction or aversion, the self-controlled finds clarity</td>
             </tr>
             <tr>
               <td>2.65</td>
               <td>Krishna</td>
-              <td>A calm, purified mind is the foundation of peace and wisdom</td>
+              <td>In that clarity sorrows end, and the mind soon becomes steady</td>
             </tr>
             <tr>
               <td>2.66</td>
               <td>Krishna</td>
-              <td>A disciplined mind is the key to unwavering peace</td>
+              <td>Without discipline there is no wisdom or peace, and without peace no happiness</td>
             </tr>
             <tr>
               <td>2.67</td>
               <td>Krishna</td>
-              <td>Guarding the mind from the senses preserves wisdom</td>
+              <td>A mind that follows the senses loses its wisdom, like a ship blown off course by wind</td>
             </tr>
             <tr>
               <td>2.68</td>
               <td>Krishna</td>
-              <td>Master your senses and your mind finds peace</td>
+              <td>One whose senses are withdrawn from their objects has steady wisdom</td>
             </tr>
             <tr>
               <td>2.69</td>
               <td>Krishna</td>
-              <td>True wisdom means waking up to what the world overlooks</td>
+              <td>The sage is awake in what is night for others, and their day is his night</td>
             </tr>
             <tr>
               <td>2.70</td>
               <td>Krishna</td>
-              <td>True peace comes from steadiness, not from fulfilling desires</td>
+              <td>Desires enter him like rivers into the full, still ocean, and he has peace</td>
             </tr>
             <tr>
               <td>2.71</td>
               <td>Krishna</td>
-              <td>Peace comes from letting go of desire, ownership, and ego</td>
+              <td>One who drops desire, longing, &quot;mine&quot; and &quot;I&quot; finds peace</td>
             </tr>
             <tr>
               <td>2.72</td>
               <td>Krishna</td>
-              <td>Unshakeable inner wisdom leads to enduring peace and ultimate freedom</td>
+              <td>This is the state of Brahman; holding it even at death, one reaches brahma-nirvana</td>
             </tr>
           </tbody>
         </table>
@@ -1421,7 +1422,7 @@ export default function ChapterTwoPage() {
             </a>
             <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
               <div className="related-card-label">Deep Dive</div>
-              <div className="related-card-title">Karma, What It Actually Means in the Gita</div>
+              <div className="related-card-title">Karma: What It Means in the Gita</div>
             </a>
           </div>
         </div>
@@ -1437,13 +1438,13 @@ export default function ChapterTwoPage() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 2 about?</div>
             <div className="faq-a">
-              Chapter 2, called Sankhya Yoga or the Yoga of Knowledge, is the philosophical foundation of the entire Gita. It contains Krishna's first direct teachings to Arjuna, on the eternal nature of the atman, the dharma of a warrior, action without attachment to results, and the portrait of the sthitaprajna or person of steady wisdom. It is the longest chapter of the Gita's first half and arguably its most dense.
+              Chapter 2, called Sankhya Yoga or the Yoga of Knowledge, contains Krishna&apos;s first teachings to Arjuna: on the eternal atman, the dharma of a warrior, action without attachment to results, and the sthitaprajna, the person of steady wisdom. With 72 verses it is the longest chapter in the Gita&apos;s first half.
             </div>
           </div>
           <div className="faq-item">
-            <div className="faq-q">What is the most important verse in Chapter 2?</div>
+            <div className="faq-q">What is the best-known verse in Chapter 2?</div>
             <div className="faq-a">
-              The most famous is 2.47, "karmany evadhikaras te ma phaleshu kadachana", often translated as "you have a right to work, not to the fruits of work." But 2.20 (the atman is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument.
+              The best known is 2.47, &quot;karmany evadhikaras te ma phaleshu kadachana&quot;, often translated as &quot;you have a right to work, not to the fruits of work.&quot; But 2.20 (the atman is unborn and eternal) and 2.56 (the description of the sthitaprajna) are equally central to the chapter's argument.
             </div>
           </div>
           <div className="faq-item">
@@ -1455,13 +1456,13 @@ export default function ChapterTwoPage() {
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 2.47 mean?</div>
             <div className="faq-a">
-              2.47 says: you have the right to act, but not to claim the fruits of your actions; do not let the fruits be your motive; and do not fall into the trap of inaction either. Most people quote only the first half. The verse's fourth clause, not being attached to inaction, is what gives it its full force. The Gita is not advocating detachment as passivity. It is advocating engaged action with equanimity.
+              2.47 says: you have the right to act, but not to claim the fruits of your actions; do not let the fruits be your motive; and do not fall into the trap of inaction either. Most people quote only the first half. The fourth clause, about inaction, rules out reading the verse as permission to do nothing: Krishna wants action done with an even mind.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">How many verses are in Bhagavad Gita Chapter 2?</div>
             <div className="faq-a">
-              Chapter 2 has 72 verses, making it one of the longest chapters in the Gita. It is also philosophically the densest, containing the core teachings on the atman, duty, action, and wisdom that the remaining 16 chapters expand upon.
+              Chapter 2 has 72 verses; only Chapter 18, with 78, is longer. It sets out the teachings on the atman, duty, action and wisdom that later chapters return to.
             </div>
           </div>
           <div className="faq-item">
@@ -1478,7 +1479,7 @@ export default function ChapterTwoPage() {
     {/* ── FOOTER ── */}
     <footer>
       <p>
-        Wisdom · Bhagavad Gita, tuned to your life · Week 1 free on iPhone
+        Wisdom · One Gita verse a day for 7 days, read aloud · Week 1 free on iPhone
       </p>
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  ·

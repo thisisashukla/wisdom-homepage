@@ -33,7 +33,7 @@ export const GITA_FOR: GitaForPage[] = [
     h1: 'Bhagavad Gita on overthinking and anxiety',
     keywords: ['bhagavad gita on overthinking', 'bhagavad gita on anxiety', 'gita quotes on overthinking in hindi', 'bhagavad gita on worry'],
     intro:
-      'Arjuna said it first: the mind is restless, stormy and stubborn, as hard to hold as the wind. Krishna did not tell him to stop thinking. He agreed, and then gave him two things to practise. These are the verses where that conversation happens, and the ones around it that explain why a mind replays what it cannot control.',
+      'In 6.34 Arjuna says it first: the mind is restless, stormy and stubborn, as hard to hold as the wind. In 6.35 Krishna agrees with him, and gives him two things to practise: steady effort and letting go. These are the verses where that conversation happens, and the ones around it on why a mind replays what it cannot control.',
     feeling: 'quiet',
     situation: 'overthinking',
     verses: [
@@ -55,7 +55,7 @@ export const GITA_FOR: GitaForPage[] = [
     h1: 'Bhagavad Gita on the death of a loved one',
     keywords: ['bhagavad gita on death of loved ones', 'bhagavad gita on grief', 'gita on losing someone', 'bhagavad gita on death in sanskrit'],
     intro:
-      'The Gita begins with grief. Arjuna sits down in his chariot unable to face the people he loves, and Krishna’s first teaching is about death: what ends, and what does not. These verses do not ask you to stop missing someone. They describe the self, the atman, that was never born and does not die.',
+      'The Gita begins with grief. Arjuna sits down in his chariot unable to face the people he loves, and Krishna’s first teaching (2.11–30) is about death: what ends, and what does not. These verses describe the self, the atman, that was never born and does not die.',
     feeling: 'faith',
     situation: 'someone_lost',
     verses: [
@@ -67,7 +67,7 @@ export const GITA_FOR: GitaForPage[] = [
       { chapter: 2, verse: 28, why: 'Beings are unseen before birth and after death, and seen only in between.' },
     ],
     note:
-      'Grief is not a failure of understanding. If it is making daily life hard for a long time, talking to someone helps. In India you can call Tele-MANAS on 14416, free and confidential.',
+      'If grief is making daily life hard for a long time, talking to someone helps. In India you can call Tele-MANAS on 14416, free and confidential.',
   },
   {
     slug: 'fear-of-failure',
@@ -78,7 +78,7 @@ export const GITA_FOR: GitaForPage[] = [
     h1: 'Bhagavad Gita on fear of failure',
     keywords: ['bhagavad gita on failure', 'bhagavad gita on fear of failure', 'gita quotes for students exam', 'bhagavad gita quotes on failure'],
     intro:
-      'Arjuna’s crisis is a fear of what his action will lead to. Krishna’s answer is the most quoted teaching in the Gita: you have a right to the work, never to its fruit. Read together, these verses separate the effort you control from the result you do not, and say that no honest effort is ever wasted.',
+      'Arjuna’s crisis is a fear of what his action will lead to. Krishna’s answer is 2.47: you have a right to the work, never to its fruit. Read together, these verses separate the effort you control from the result you do not, and say that no honest effort is ever wasted.',
     feeling: 'nerve',
     situation: 'didnt_work_out',
     verses: [
@@ -120,7 +120,7 @@ export const GITA_FOR: GitaForPage[] = [
     h1: 'Bhagavad Gita on anger',
     keywords: ['bhagavad gita on anger', 'gita sloka on anger', 'bhagavad gita anger management', 'krishna on anger'],
     intro:
-      'The Gita gives one of the clearest accounts of anger anywhere: it starts with dwelling on something, grows into wanting it, and turns to anger when the wanting is blocked. From anger comes confusion, and from confusion we lose the very judgement that would have stopped us. These are the verses.',
+      'In 2.62–63 the Gita traces anger step by step: it starts with dwelling on something, grows into wanting it, and turns to anger when the wanting is blocked. From anger comes confusion, and from confusion we lose the very judgement that would have stopped us. These are the verses.',
     feeling: 'replay',
     verses: [
       { chapter: 2, verse: 62, why: 'Dwelling on something becomes attachment, then desire, then anger.' },
@@ -140,7 +140,7 @@ export const GITA_FOR: GitaForPage[] = [
     h1: 'Bhagavad Gita on dealing with difficult people',
     keywords: ['bhagavad gita on dealing with toxic people', 'gita on toxic people', 'bhagavad gita on toxic boss', 'gita on enemies'],
     intro:
-      'The Gita’s whole setting is a conflict with people Arjuna knows well. It never tells him to pretend the harm is not real. It asks him to see clearly, to stay even towards friend and enemy, to do his own duty well, and not to take on the qualities he is facing.',
+      'The Gita’s whole setting is a conflict with people Arjuna knows well. Krishna asks Arjuna to see the harm clearly, to stay even towards friend and enemy (12.18), to do his own duty well, and not to take on the qualities he is facing.',
     feeling: 'replay',
     situation: 'boss',
     verses: [
@@ -160,7 +160,7 @@ export const GITA_FOR: GitaForPage[] = [
     h1: 'Bhagavad Gita for when you are losing hope',
     keywords: ['bhagavad gita on losing hope', 'bhagavad gita for tough times', 'bhagavad gita on depression', 'gita quotes for hard times'],
     intro:
-      'The Gita opens with a man who has given up. Arjuna drops his bow and says he will not go on. Krishna does not lecture him about positivity. He reminds him who he is, promises that nothing done in good faith is wasted, and tells him he is carried.',
+      'The Gita opens with a man who has given up. Arjuna drops his bow and says he will not go on. Krishna reminds him who he is, promises that nothing done in good faith is wasted (6.40), and tells him he is carried (9.22).',
     feeling: 'faith',
     verses: [
       { chapter: 2, verse: 3, why: 'Krishna’s first push: do not give in to this weakness. Stand up.' },
@@ -181,7 +181,7 @@ export const GITA_FOR: GitaForPage[] = [
     h1: 'Bhagavad Gita on money and financial worry',
     keywords: ['bhagavad gita on money', 'bhagavad gita on greed', 'gita on wealth', 'bhagavad gita on financial stress'],
     intro:
-      'The Gita is not against earning. It is against being run by wanting. These verses separate honest work from the restless craving that is never satisfied, and include Krishna’s promise about security to those who rely on him.',
+      'Krishna says nothing against earning a living. His concern is wanting that never stops, which 3.39 calls a fire that is never satisfied. These verses separate honest work from that craving, and include his promise of security to those who rely on him (9.22).',
     feeling: 'nerve',
     situation: 'money_tight',
     verses: [
@@ -201,7 +201,7 @@ export const GITA_FOR: GitaForPage[] = [
     h1: 'Bhagavad Gita on guilt and past mistakes',
     keywords: ['bhagavad gita on guilt', 'bhagavad gita on past mistakes', 'gita on forgiveness', 'gita quotes on guilt'],
     intro:
-      'The Gita is unusually direct about the past. Krishna says that even the worst wrongdoer can cross over on the raft of knowledge, and that one who turns around with a sincere heart should be counted among the good. Guilt is meant to turn you, not to hold you.',
+      'The Gita is unusually direct about the past. Krishna says that even the worst wrongdoer can cross over on the raft of knowledge (4.36), and that one who turns around with a sincere heart should be counted among the good (9.30).',
     feeling: 'replay',
     situation: 'guilt',
     verses: [
@@ -301,7 +301,7 @@ export const GITA_FOR: GitaForPage[] = [
     h1: 'Bhagavad Gita for loneliness and being far from home',
     keywords: ['bhagavad gita on loneliness', 'gita for homesickness', 'bhagavad gita feeling alone', 'gita quotes on loneliness'],
     intro:
-      'The Gita’s answer to loneliness is not a crowd. It is a presence: Krishna says he lives in the heart of every being, and that one who sees him everywhere is never lost to him. For anyone far from family, these verses are a way home.',
+      'Krishna says he lives in the heart of every being (18.61), and that whoever sees him everywhere is never lost to him (6.30). For anyone far from family, these are the verses to keep close.',
     feeling: 'faith',
     situation: 'far_from_home',
     verses: [

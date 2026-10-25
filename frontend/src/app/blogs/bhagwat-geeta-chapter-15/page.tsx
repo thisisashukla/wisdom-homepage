@@ -362,7 +362,7 @@ const schemas = [
         "name": "What is Bhagavad Gita Chapter 15 about?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Chapter 15, called Purushottama Yoga (the Yoga of the Supreme Self), is one of the Gita's most condensed and ambitious chapters. In just twenty verses, Krishna teaches the image of the inverted ashvattha tree (15.1-2), the sword of non-attachment that cuts it down (15.3), the spark of the Divine in every being (15.7), the Divine as the fire that digests food and dwells in every heart (15.14-15), and finally names himself as Purushottama — the Supreme Self beyond both the perishable and the imperishable (15.18)."
+          "text": "Chapter 15, called Purushottama Yoga (the Yoga of the Supreme Self), is short and dense. In twenty verses, Krishna teaches the image of the inverted ashvattha tree (15.1-2), the sword of non-attachment that cuts it down (15.3), the spark of the Divine in every being (15.7), the Divine as the fire that digests food and dwells in every heart (15.14-15), and finally names himself as Purushottama — the Supreme Self beyond both the perishable and the imperishable (15.18)."
         }
       },
       {
@@ -370,7 +370,7 @@ const schemas = [
         "name": "What is the inverted ashvattha tree in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 15.1 describes the world as an ashvattha tree with its roots above and its branches below. The image is borrowed from older Upanishadic literature. The teaching is that the source of the world you experience is not visible from inside the world. The branches — visible circumstances, body, relationships — are downstream. The roots are in a reality you cannot point to from where the branches grow. Understanding this inversion is the beginning of true understanding."
+          "text": "Verse 15.1 describes the world as an ashvattha tree with its roots above and its branches below. The image is borrowed from the Katha Upanishad (6.1). The teaching is that the source of the world you experience cannot be seen from inside it. The branches — visible circumstances, body, relationships — are downstream. The roots are in a reality you cannot point to from where the branches grow. "
         }
       },
       {
@@ -378,7 +378,7 @@ const schemas = [
         "name": "What is the sword of detachment in Bhagavad Gita 15.3?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 15.3 says, 'Cut down this deeply rooted ashvattha tree with the strong sword of non-attachment (asaṅga-śastra).' The sword does not cut the world. It cuts the grasping that keeps consciousness tied to result-driven existence. After the cut, the same world is still there, but the cycle no longer renews itself from your clinging, because the clinging was what was feeding the roots."
+          "text": "Verse 15.3 says, 'Cut down this firmly rooted ashvattha tree with the strong sword of non-attachment (asaṅga-śastra).' The sword cuts the grasping that keeps consciousness tied to result-driven existence. After the cut, the same world is still there, but the cycle no longer renews itself from your clinging, since the clinging was feeding the roots."
         }
       },
       {
@@ -386,7 +386,7 @@ const schemas = [
         "name": "What does Bhagavad Gita 15.7 mean?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 15.7 says, 'A part of myself, eternal, has become the living being in this world.' The Sanskrit word is aṃśa — fragment, portion. Each conscious being is, at the deepest level, a fragment of the Divine. The teaching is the metaphysical basis for compassion: every being you meet is made of the same source you are made of. The verse changes the regard you can hold for any other person in the room."
+          "text": "Verse 15.7 says, 'A part of myself, eternal, has become the living being in this world.' The Sanskrit word is aṃśa — fragment, portion. Each conscious being is, at the deepest level, a fragment of the Divine. On this teaching, every being you meet is made of the same source you are made of, which gives compassion a basis."
         }
       },
       {
@@ -394,7 +394,7 @@ const schemas = [
         "name": "Who is Purushottama in the Bhagavad Gita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Purushottama means 'the Supreme Self' or 'the Highest Person.' In verses 15.16-18, Krishna names two kinds of beings: the perishable (everything that changes) and the imperishable (the steady witness). Then he says there is a third, higher than both. That third is the Supreme Self, who enters all worlds and sustains them. Krishna claims this title for himself in 15.18, the only place in the Gita where he uses this specific name."
+          "text": "Purushottama means 'the Supreme Self' or 'the Highest Person.' In verses 15.16-18, Krishna names two kinds of beings: the perishable (everything that changes) and the imperishable (the steady witness). Then he says there is a third, higher than both. That third is the Supreme Self, who enters all worlds and sustains them. Krishna claims this title for himself in 15.18; Arjuna had used it to address him earlier (8.1, 10.15, 11.3)."
         }
       },
       {
@@ -402,7 +402,7 @@ const schemas = [
         "name": "What does Bhagavad Gita 15.15 mean about memory?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 15.15 says, 'I am seated in the hearts of all beings. From me come memory, knowledge, and the removal of doubt.' The teaching is that the remembering, the understanding, and the dissolving of confusion are not purely your achievements. They are gifts from the Divine already seated at the centre of your own awareness. The verse rewrites the architecture of inner life: you have always had a collaborator; most of us have just not noticed."
+          "text": "Verse 15.15 says, 'I am seated in the hearts of all beings. From me come memory, knowledge, and the removal of doubt.' On this verse, remembering, understanding and the clearing of confusion come partly from the Divine seated at the centre of your own awareness, so you are not their sole author."
         }
       }
     ]
@@ -411,7 +411,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Quotation",
     "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.3",
-    "text": "Its real form is not perceived here, nor its beginning, end, or foundation. With the strong sword of non-attachment, cut down this deeply rooted ashvattha tree.",
+    "text": "Its real form is not perceived here, nor its beginning, end, or foundation. With the strong sword of non-attachment, cut down this firmly rooted ashvattha tree.",
     "spokenByCharacter": {
       "@type": "Person",
       "name": "Krishna"
@@ -546,7 +546,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Quotation",
     "@id": "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-15#verse-15.18",
-    "text": "Because I am beyond the perishable, and higher than even the imperishable — therefore, in the world and in the Vedas, I am celebrated as Purushottama, the Supreme Self.",
+    "text": "Because I am beyond the perishable, and higher than even the imperishable — therefore, among people and in the Vedas, I am celebrated as Purushottama, the Supreme Self.",
     "spokenByCharacter": {
       "@type": "Person",
       "name": "Krishna"
@@ -603,7 +603,7 @@ export default function ChapterPage15() {
             <em>Purushottama Yoga</em>
           </h1>
           <p className="article-subtitle">
-            The Gita's strangest image: a tree growing upside down. The sword of detachment. The spark of the eternal in every embodied being. And the name Krishna finally claims, Purushottama, the Self beyond every other self.
+            A tree growing upside down, the sword of detachment that cuts it, the spark of the eternal in every embodied being, and the name Krishna claims for himself in 15.18: Purushottama, the highest Person.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -614,7 +614,7 @@ export default function ChapterPage15() {
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 15 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -633,11 +633,11 @@ export default function ChapterPage15() {
           </figure>
 
         <p className="lead">
-          Chapter 15 is one of the strangest and most precise chapters in the Bhagavad Gita. It opens with an image that no other scripture quite uses, a tree with its roots above and its branches below. Krishna calls this the imperishable ashvattha. The image is deliberately disorienting, because the truth it points to is also disorienting. The world you experience as solid and obvious is actually inverted. The source is above. What looks like the source, your body, your needs, your social position, is downstream. The tree is the world. Its true roots are not where you have been looking.
+          Chapter 15 opens with a tree that has its roots above and its branches below. Krishna calls it the imperishable ashvattha (the sacred fig). The image comes from the Katha Upanishad (6.1), and it is meant to disorient. The tree is the world of bound existence, samsara, and it hangs from a source above. What looks like the source, your body, your needs, your social position, is downstream.
         </p>
 
         <p>
-          Then Krishna does something even more unusual. He says: cut this tree. Cut it with the sword of detachment. The image is not gentle. The Gita has spent fourteen chapters explaining how the world appears, why it traps, how to live within it skillfully. Chapter 15 says: with all this preparation, you can finally take a sword to its roots. The aim is not violence against the world. It is the precise cutting of the one binding that keeps consciousness tied to the cycle. After the cutting, Krishna offers a series of images of the Divine within ordinary life, and finally names himself, for the first time in the book, as <em>Puruṣottama</em>: the Supreme Self, beyond both the perishable and the imperishable.
+          Then Krishna says: cut this tree with the sword of detachment. The Gita has spent fourteen chapters on how the world appears, why it traps, and how to live in it skillfully. Here it takes a sword to the binding that keeps a person tied to the cycle, and leaves the world itself standing. After that, Krishna gives a series of images of the Divine within ordinary life, and in 15.18 he names himself <em>Puruṣottama</em>: the Supreme Person, beyond both the perishable and the imperishable. Arjuna had used the word to address him before (8.1, 10.15, 11.3).
         </p>
 
         <nav className="toc" aria-label="Table of contents">
@@ -649,7 +649,7 @@ export default function ChapterPage15() {
             <li><a href="#spark">A spark of the Divine in every embodied being</a></li>
             <li><a href="#fire-of-life">The fire that digests your food, 15.14</a></li>
             <li><a href="#in-the-heart">I dwell in the hearts of all beings, 15.15</a></li>
-            <li><a href="#purushottama">The name Krishna finally claims, 15.18</a></li>
+            <li><a href="#purushottama">The name Krishna claims, 15.18</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
             <li><a href="#related-reading">Related reading</a></li>
@@ -668,11 +668,11 @@ export default function ChapterPage15() {
         <h2 id="inverted-tree">A Tree With Its Roots Above and Its Branches Below</h2>
 
         <p>
-          Verse 15.1 begins the chapter with an image so unusual that medieval commentators wrote whole books explaining it. The world, Krishna says, is like an imperishable ashvattha tree, but it grows upside down. Its roots are above. Its branches spread below. The leaves are the Vedas. The one who understands this tree understands the Vedas. The image is borrowed from the older Upanishadic literature, but Chapter 15 sharpens it.
+          Verse 15.1 begins the chapter with the image. The world of bound existence, Krishna says, is like an imperishable ashvattha tree, but it grows upside down. Its roots are above. Its branches spread below. The leaves are the Vedas. The one who understands this tree understands the Vedas. The image is borrowed from the Katha Upanishad (6.1), which also describes an eternal ashvattha with roots above and branches below. Chapter 15 adds the instruction to cut it.
         </p>
 
         <p>
-          What does "roots above" mean? It means the source of the world you experience is not in the world. The visible branches, your circumstances, your body, your relationships, the things you can touch, are not what hold the world together. The roots are above, in a reality not visible from where the branches grow. Verse 15.2 then explains how the visible branches behave. They grow in all directions, nourished by the three gunas, with sense-objects as their fresh shoots. Action-bound roots descend into the human world, tying everything to results. The tree is the cycle of bound existence. It grows endlessly, because each new desire becomes a new shoot.
+          &quot;Roots above&quot; means the source of the world you experience lies outside it. The visible branches, your circumstances, your body, your relationships, hang from roots in a reality you cannot see from where the branches grow. Verse 15.2 then explains how the visible branches behave. They spread downward and upward, nourished by the three gunas, with sense-objects as their fresh shoots. Action-bound roots descend into the human world, tying everything to results. The tree keeps growing, because each new desire becomes a new shoot.
         </p>
 
                 <ShlokaCard
@@ -682,8 +682,8 @@ export default function ChapterPage15() {
           iast="śrī bhagavān uvāca | ūrdhva-mūlam adhaḥ-śākham aśvatthaṃ prāhur avyayam | chandāṃsi yasya parṇāni yas taṃ veda sa veda-vit ||"
           meaning="The Blessed One said: they speak of the imperishable ashvattha tree, with roots above and branches below. Its leaves are the sacred verses. The one who knows this tree knows the Vedas."
           insightLabel="Why the inversion is the point"
-          insight="If the roots were below, as in any normal tree, you could imagine reaching them by digging deeper into ordinary experience. The Gita's image refuses this. The source is not below. It is above. You will not find it by going further into the visible. You find it by recognizing that the visible is dangling from somewhere you cannot point at."
-          essence="Understanding the world-tree is the beginning of true understanding."
+          insight="If the roots were below, as in an ordinary tree, you could imagine reaching them by digging deeper into ordinary experience. The Gita puts them above: you find the source by seeing that the visible hangs from somewhere you cannot point at."
+          essence="They speak of an undying ashvattha, roots above, branches below, hymns for leaves; who knows it knows the Vedas."
         />
 
         {/* DIVIDER */}
@@ -698,11 +698,11 @@ export default function ChapterPage15() {
         <h2 id="sword">Cut It Down, With the Strong Sword of Detachment</h2>
 
         <p>
-          Verse 15.3 contains one of the Gita's most striking instructions. The tree, Krishna says, cannot be perceived in its true form from inside the world. It has no apparent beginning, no apparent end, no fixed base. <em>Therefore</em> (and the therefore matters): cut down this deeply rooted ashvattha with the strong sword of non-attachment. <em>Asaṅga-śastreṇa dṛḍhena chittvā</em>. The strong sword. Non-attachment.
+          Verse 15.3 gives a striking instruction. The tree, Krishna says, cannot be perceived in its true form from inside the world. It has no apparent beginning, no apparent end, no fixed base. <em>Therefore</em> (and the therefore matters): cut down this firmly rooted ashvattha with the strong sword of non-attachment. <em>Asaṅga-śastreṇa dṛḍhena chittvā</em>: with the strong sword of non-attachment.
         </p>
 
         <p>
-          Modern readers sometimes hear this verse as ascetic. It is not. The Gita has spent the previous fourteen chapters arguing against world-rejection. The tree is not the world itself; it is the binding pattern of grasping that keeps consciousness tied to result-driven existence. The sword does not cut down trees, relationships, jobs, or pleasures. It cuts the grasping that turns each of these into another root holding you in the same cycle. After the cut, the same world is still there. Your relationship to it has changed. The cycle no longer renews itself from your grasping, because the grasping is what was feeding the roots.
+          Modern readers sometimes hear this verse as ascetic, though the Gita has argued against abandoning action since Chapter 3. The tree is the world as samsara, held in place by grasping. The sword leaves relationships, jobs and pleasures standing. It cuts the grasping that turns each of these into another root holding you in the same cycle. After the cut, the same world is still there, and the cycle no longer renews itself from your grasping.
         </p>
 
                 <ShlokaCard
@@ -710,15 +710,15 @@ export default function ChapterPage15() {
           speaker="Krishna"
           sanskrit="न रूपमस्येह तथोपलभ्यते नान्तो न चादिर्न च सम्प्रतिष्ठा । अश्वत्थमेनं सुविरूढमूलमसङ्गशस्त्रेण दृढेन छित्त्वा ॥"
           iast="na rūpam asyeha tathopalabhyate nānto na cādir na ca sampratiṣṭhā | aśvattham enaṃ su-virūḍha-mūlam asaṅga-śastreṇa dṛḍhena chittvā ||"
-          meaning="Its real form is not perceived here, nor its beginning, end, or foundation. With the strong sword of non-attachment, cut down this deeply rooted ashvattha tree."
-          insightLabel="What asanga actually cuts"
-          insight="Asaṅga: non-clinging. The sword is not violence. It is the willingness to stop clutching the results. Every time you act without gripping the outcome, you cut a root. The Gita is not asking for a single dramatic act. It is asking for repeated, accurate cuts: the daily reduction of grasping, until the cycle no longer has fuel."
-          essence="What traps you has no fixed form; detachment cuts it cleanly."
+          meaning="Its real form is not perceived here, nor its beginning, end, or foundation. With the strong sword of non-attachment, cut down this firmly rooted ashvattha tree."
+          insightLabel="What asanga cuts"
+          insight="Asaṅga means non-clinging. The sword is the willingness to stop clutching the results. Each time you act without gripping the outcome, you cut a root, and the cutting can happen a little each day."
+          essence="Its form, beginning, end and base are not seen here; cut this firmly rooted tree with the sword of detachment."
         />
 
         <div className="pull-quote">
           <blockquote>
-            "Cut down this deeply rooted tree with the strong sword of non-attachment."
+            "Cut down this firmly rooted tree with the strong sword of non-attachment."
           </blockquote>
           <cite>Bhagavad Gita 15.3</cite>
         </div>
@@ -735,11 +735,11 @@ export default function ChapterPage15() {
         <h2 id="highest-home">Where the Sun and Moon Cannot Reach</h2>
 
         <p>
-          Verse 15.6 names the destination of the chapter. The place Krishna is pointing to is not lit by the sun, the moon, or fire. The verse is making a structural claim: ordinary light cannot reach the source. The source is what makes light visible. To experience it requires a different mode of seeing, what the Upanishads call <em>the eye of knowledge</em>. From outside, this can sound mystical. From inside the chapter, it is just precise. The light source for everything visible cannot itself be one more visible thing.
+          Verse 15.6 names the destination of the chapter. The place Krishna is pointing to is not lit by the sun, the moon, or fire. Ordinary light cannot reach it; 15.12 says the light of sun, moon and fire comes from Krishna in the first place. Seeing it takes what 15.10 calls <em>the eye of knowledge</em>.
         </p>
 
         <p>
-          And then the verse closes with the now-familiar promise: <em>yad gatvā na nivartante</em>: having reached it, beings do not return. That is Krishna's supreme abode. The destination is the same one Chapter 8 named, the same one Chapter 11 hinted at after the cosmic vision. Chapter 15 is just giving it a slightly different angle, framed this time as the source of all visible light. The destination is where the light has been coming from all along.
+          And then the verse closes with the now-familiar promise: <em>yad gatvā na nivartante</em>: having reached it, beings do not return. That is Krishna&apos;s supreme abode, the same one 8.21 describes in nearly the same words.
         </p>
 
                 <ShlokaCard
@@ -748,9 +748,9 @@ export default function ChapterPage15() {
           sanskrit="न तद्भासयते सूर्यो न शशाङ्को न पावकः । यद्गत्वा न निवर्तन्ते तद्धाम परमं मम ॥"
           iast="na tad bhāsayate sūryo na śaśāṅko na pāvakaḥ | yad gatvā na nivartante tad dhāma paramaṃ mama ||"
           meaning="Neither sun, nor moon, nor fire illumines that place. Having reached it, beings do not return. That is my supreme abode."
-          insightLabel="The source of light cannot be lit by light"
-          insight="The verse is teaching, with its very grammar, that the deepest reality is not one more visible thing alongside other visible things. It is the conditioning ground of visibility itself. You cannot search for it with the same eyes that search for objects. The seeing has to deepen before the seen can change."
-          essence="The highest home is beyond every ordinary light and beyond return."
+          insightLabel="Beyond sun, moon and fire"
+          insight="The verse places that abode outside the reach of every light we know. You cannot search for it with the eyes that search for objects."
+          essence="Neither sun, moon nor fire lights it; those who go there do not return; that is my supreme abode."
         />
 
         {/* DIVIDER */}
@@ -765,11 +765,11 @@ export default function ChapterPage15() {
         <h2 id="spark">The Spark of the Divine in Every Embodied Being</h2>
 
         <p>
-          Verse 15.7 contains one of the most personally generous teachings in the Gita. Krishna says: a fragment of myself, eternal, has become the living being in this world. <em>Mamaivāṃśo jīva-loke jīva-bhūtaḥ sanātanaḥ</em>. Each conscious being is, at the deepest level, a fragment of the Divine. The Sanskrit word is <em>aṃśa</em>, meaning part, portion, fragment. The verse is saying that what you most fundamentally are is not your body, not your personality, not your story. It is a piece of something eternal that has temporarily taken up residence in a body.
+          Verse 15.7 is generous. Krishna says: a fragment of myself, eternal, has become the living being in this world. <em>Mamaivāṃśo jīva-loke jīva-bhūtaḥ sanātanaḥ</em>. Each conscious being is, at the deepest level, a fragment of the Divine. The Sanskrit word is <em>aṃśa</em>, meaning part, portion, fragment. On this verse, what you most fundamentally are is a piece of something eternal that has taken up residence in a body for a while.
         </p>
 
         <p>
-          Read carefully, this verse changes how you can look at every other person. Each of them is, by the same teaching, a fragment of the same source. The arrogant colleague. The kind stranger. The difficult relative. Every one of them, in their innermost being, is exactly what you are. The recognition does not erase the difficulty of dealing with them. It changes the regard you hold for the being underneath the difficulty. This is the Gita's working basis for compassion, not a moral injunction, but a metaphysical fact about who is in the room.
+          Read carefully, this verse changes how you can look at other people. Each of them, by the same teaching, is a fragment of the same source, including a relative you find difficult. Dealing with them stays hard, and the regard you hold for the person underneath changes. Compassion here rests on a claim about who is in the room, more than on a rule.
         </p>
 
                 <ShlokaCard
@@ -778,14 +778,14 @@ export default function ChapterPage15() {
           sanskrit="ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥"
           iast="mamaivāṃśo jīva-loke jīva-bhūtaḥ sanātanaḥ | manaḥ-ṣaṣṭhānīndriyāṇi prakṛti-sthāni karṣati ||"
           meaning="A part of myself, eternal, has become the living being in this world. It draws to itself the five senses and the mind, which rest in nature."
-          insightLabel="What this verse changes in how you see others"
-          insight="Every conscious being you encounter is, at the core, the same fragment-of-the-eternal that you are. This is the structural reason compassion is rational, not just kind. You are not being asked to manufacture warmth toward people who do not deserve it. You are being asked to recognize what they are made of, the same thing you are made of, and to let that recognition shape how you treat them."
-          essence="What is eternal gets pulled around by what changes."
+          insightLabel="How this verse affects how you see others"
+          insight="Every conscious being you meet is, at the core, a fragment of the same eternal source. You are asked to recognise what others are made of, the same thing you are made of, and to let that shape how you treat them."
+          essence="An eternal fragment of me becomes the living being and draws to itself the mind and the five senses."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>Why this verse is more radical than it looks:</strong> If every being is a fragment of the same Divine, then social hierarchies, judgments of worth, and competitive ranking are all built on a misperception. The being in front of you is not less than you. The being in front of you is, in some real sense, you, wearing a different costume, having a different day. This is not sentimentality. It is the Gita's structural claim about what is actually present when two people meet.
+            <strong>What follows from this verse:</strong> If every being is a fragment of the same Divine, then judgments of worth between people rest on a misperception. The person in front of you is made of what you are made of, wearing a different body and having a different day.
           </p>
         </div>
 
@@ -801,11 +801,11 @@ export default function ChapterPage15() {
         <h2 id="fire-of-life">The Light of the Sun, the Sweetness of Plants, the Fire That Digests Your Food</h2>
 
         <p>
-          Verses 15.12 through 15.14 are some of the most viscerally embodied verses in the Gita. Krishna names where his presence is operating right now, in your body. The light of the sun, the moon, and fire: mine. Entering the earth, sustaining all beings with energy: me. Becoming the moon that nourishes plants: me. And then the most extraordinary one: <em>I become the digestive fire in the bodies of living beings, joined with the in-breath and the out-breath, and I digest the four kinds of food</em>.
+          Verses 15.12 through 15.14 are physical. Krishna names where his presence is at work, including in your body. The light of the sun, the moon, and fire: mine. Entering the earth, sustaining all beings with energy: me. Becoming the moon that nourishes plants: me. And then: <em>I become the digestive fire in the bodies of living beings, joined with the in-breath and the out-breath, and I digest the four kinds of food</em>.
         </p>
 
         <p>
-          Read this slowly. The metabolism that is, even as you read, processing your last meal, Krishna is naming that as his presence. The breath moving in and out, his presence. The Gita does not put the Divine in temples and step away from the body. The Gita puts the Divine inside the body, in the most mundane physiological processes, and asks you to recognize it. This is the chapter's quiet inversion: you have been searching for the sacred elsewhere; the sacred has been digesting your dinner.
+          Read this slowly. The digestion of your last meal and the breath moving in and out are, on this verse, Krishna&apos;s presence. The Gita places the Divine inside the body, in its most ordinary workings, as well as in temples.
         </p>
 
                 <ShlokaCard
@@ -814,9 +814,9 @@ export default function ChapterPage15() {
           sanskrit="अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः । प्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम् ॥"
           iast="ahaṃ vaiśvānaro bhūtvā prāṇināṃ deham āśritaḥ | prāṇāpāna-samāyuktaḥ pacāmy annaṃ catur-vidham ||"
           meaning="I become the digestive fire in the bodies of living beings, joined with the in-breath and the out-breath, and I digest the four kinds of food."
-          insightLabel="The Divine inside your physiology"
-          insight="If you wanted to undermine every form of body-rejecting spirituality in one verse, this is the verse. The fire that digests your dinner is named as the Divine. Your body is not a problem to escape. It is the local apparatus through which the sacred is currently operating. The Gita is consistent about this, the body is the equipment, and the equipment is, in this verse, given the highest possible compliment."
-          essence="The divine is already working inside your body as life itself."
+          insightLabel="The Divine inside the body"
+          insight="This verse sits badly with any spirituality that treats the body as a problem to escape. The fire that digests food is named as Krishna himself, Vaishvanara."
+          essence="As the digestive fire in living bodies, joined with the in-breath and out-breath, I digest the four kinds of food."
         />
 
         {/* DIVIDER */}
@@ -831,11 +831,11 @@ export default function ChapterPage15() {
         <h2 id="in-the-heart">I Sit in the Heart of All Beings, and Give You Memory</h2>
 
         <p>
-          Verse 15.15 is the chapter's centre of intimacy. Krishna says: I dwell in the hearts of all beings. From me come memory, knowledge, and the removal of doubt. The verse is doing two things at once. First, the placement, the Divine is not somewhere far. It is in the heart of every being, including yours, right now. Second, the function, what you call memory, what you call understanding, what you call the relief when a confusion finally clears, all of these are not your accomplishments. They are arrivals from the source already seated in your heart.
+          Verse 15.15 is the chapter&apos;s most intimate. Krishna says: I dwell in the hearts of all beings. From me come memory, knowledge, and the removal of doubt. The verse does two things. It places the Divine in the heart of every being, including yours. And it traces memory, understanding and the relief when a confusion clears back to that source rather than to you alone.
         </p>
 
         <p>
-          Notice the implication. Every time you have remembered something just when you needed to. Every time a confused situation suddenly became clear. Every time a stubborn doubt finally dissolved. These were not pure mechanism. The verse is naming them as small acts of the Divine, operating from the centre of your own awareness. The chapter is reframing the architecture of inner life. You are not the lone author of your understanding. There is, the verse says, a contributor.
+          So when you remember something just as you need it, or a stubborn doubt clears, the verse names that as Krishna at work from the centre of your own awareness. You are not the sole author of your understanding.
         </p>
 
                 <ShlokaCard
@@ -845,8 +845,8 @@ export default function ChapterPage15() {
           iast="sarvasya cāhaṃ hṛdi sanniviṣṭo mattaḥ smṛtir jñānam apohanaṃ ca | vedaiś ca sarvair aham eva vedyo vedānta-kṛd veda-vid eva cāham ||"
           meaning="I am seated in the hearts of all beings. From me come memory, knowledge, and the removal of doubt. I am what is to be known through all the Vedas; I am the maker of Vedanta and the knower of the Vedas."
           insightLabel="Where memory comes from"
-          insight="The verse is gently rewriting what you thought was personal effort. The remembering, the knowing, the clarifying, they are gifts from the centre already inside you. You did not produce them alone. The recognition does not make you less competent. It makes you less alone. You have always had a collaborator. Most of us have just not noticed who."
-          essence="The deepest knowing comes from the one already dwelling within every heart."
+          insight="Remembering, knowing and clarifying are, on this verse, given from the centre already inside you. You did not produce them alone, which takes nothing from your competence."
+          essence="I am seated in every heart; from me come memory, knowledge and the removal of doubt; I am known through the Vedas."
         />
 
         <div className="pull-quote">
@@ -868,11 +868,11 @@ export default function ChapterPage15() {
         <h2 id="purushottama">Beyond the Changing and the Unchanging, Purushottama</h2>
 
         <p>
-          The chapter's last metaphysical move comes in verses 15.16-18. Krishna names two kinds of beings: the perishable (everything that changes) and the imperishable (the steady witness). Most spiritual traditions stop at the imperishable. The Gita does not. It says there is a third, higher than both. Higher than the changing and higher than the unchanging. That third is the Supreme Self, who enters the three worlds and sustains them. That, Krishna says, is what I am. That is why I am known, in the world and in the Vedas, as <em>Puruṣottama</em>, the Supreme Person, the Self beyond every other self.
+          The chapter&apos;s last argument comes in verses 15.16-18. Krishna names two kinds of beings: the perishable (everything that changes) and the imperishable (the steady witness). Then he names a third, higher than both the changing and the unchanging. That third is the Supreme Self, who enters the three worlds and sustains them. That, Krishna says, is what I am. That is why I am known, among people and in the Vedas, as <em>Puruṣottama</em>, the Supreme Person, the Self beyond every other self.
         </p>
 
         <p>
-          This is the only place in the Gita where Krishna names himself by this specific title. The chapter is called Purushottama Yoga because of this naming. The teaching is not just metaphysical taxonomy. It is the answer to anyone who would stop at impersonal absolute awareness and call that the highest reality. The Gita's claim is that there is something higher even than impersonal awareness, and that higher thing is what was speaking to Arjuna all along. The intimacy of the friendship, the personalness of the teaching, the love that Krishna keeps directing at Arjuna, all of this is real, because what is being expressed through Krishna is not less than the impersonal absolute. It is more.
+          Arjuna has called Krishna Purushottama before (8.1, 10.15, 11.3); here Krishna claims the title himself, and the chapter is named for it. Devotional commentators read 15.16–18 as an answer to anyone who would call impersonal awareness the highest reality: on their reading, what is higher is the Person who has been talking with Arjuna all along, and so the friendship and the love in the dialogue are real.
         </p>
 
                 <ShlokaCard
@@ -880,15 +880,15 @@ export default function ChapterPage15() {
           speaker="Krishna"
           sanskrit="यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः । अतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः ॥"
           iast="yasmāt kṣaram atīto'ham akṣarād api cottamaḥ | ato'smi loke vede ca prathitaḥ puruṣottamaḥ ||"
-          meaning="Because I am beyond the perishable, and higher than even the imperishable, therefore, in the world and in the Vedas, I am celebrated as Purushottama, the Supreme Self."
-          insightLabel="The name Krishna finally claims"
-          insight="Across fifteen chapters, Krishna has been called many things: friend, teacher, Lord, supreme person. This is the only verse where he claims a specific title for himself. Puruṣottama. The Supreme Self. The naming matters because of the structural claim it carries: there is a reality higher than impersonal absolute awareness, and that reality is what has been speaking. The closeness of the conversation is not a downgrade from the highest. It is the highest, in conversation."
-          essence="The highest reality lies beyond both change and permanence."
+          meaning="Because I am beyond the perishable, and higher than even the imperishable, therefore, among people and in the Vedas, I am celebrated as Purushottama, the Supreme Self."
+          insightLabel="The name Krishna claims"
+          insight="Across fifteen chapters Arjuna has called Krishna friend, teacher and Lord, and has addressed him as Puruṣottama. Here Krishna takes the title for himself, and gives the reason: he is beyond the perishable and higher than the imperishable."
+          essence="Since I am beyond the perishable and higher than the imperishable, I am called Purushottama."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>Why this chapter is shorter than its weight:</strong> Only twenty verses. But within them, the Gita does some of its most ambitious metaphysical work. The tree of bound existence. The sword of non-attachment. The spark in every being. The fire in every body. And the naming of the Supreme Self beyond both change and changelessness. The chapter compresses what other chapters spread out. It rewards rereading.
+            <strong>A short chapter:</strong> Chapter 15 has twenty verses, and covers the tree of bound existence, the sword of non-attachment, the spark in every being, the fire in every body, and the Supreme Person beyond both change and changelessness. It rewards rereading.
           </p>
         </div>
 
@@ -908,26 +908,26 @@ export default function ChapterPage15() {
             <tr><th>Verse</th><th>Speaker</th><th>Teaching Essence</th></tr>
           </thead>
           <tbody>
-            <tr><td>15.1</td><td>Krishna</td><td>Understanding the world-tree is the beginning of true understanding</td></tr>
-            <tr><td>15.2</td><td>Krishna</td><td>Craving and action keep the world-tree growing in every direction</td></tr>
-            <tr><td>15.3</td><td>Krishna</td><td>What traps you has no fixed form; detachment cuts it cleanly</td></tr>
-            <tr><td>15.4</td><td>Krishna</td><td>The final refuge is a state where return itself stops</td></tr>
-            <tr><td>15.5</td><td>Krishna</td><td>Freedom begins when pride, craving, and inner division fall away</td></tr>
-            <tr><td>15.6</td><td>Krishna</td><td>The highest home is beyond every ordinary light and beyond return</td></tr>
-            <tr><td>15.7</td><td>Krishna</td><td>What is eternal gets pulled around by what changes</td></tr>
-            <tr><td>15.8</td><td>Krishna</td><td>The body changes, but the carried pattern moves on</td></tr>
-            <tr><td>15.9</td><td>Krishna</td><td>Experience passes through mind and senses; it does not define the true self</td></tr>
-            <tr><td>15.10</td><td>Krishna</td><td>What changes is seen by the wise; the true self is not what moves</td></tr>
-            <tr><td>15.11</td><td>Krishna</td><td>Seeing the supreme reality depends on inner purification, not effort alone</td></tr>
-            <tr><td>15.12</td><td>Krishna</td><td>Every brightness in the world points back to one source</td></tr>
-            <tr><td>15.13</td><td>Krishna</td><td>Life is nourished from within by the same presence that holds it together</td></tr>
-            <tr><td>15.14</td><td>Krishna</td><td>The divine is already working inside your body as life itself</td></tr>
-            <tr><td>15.15</td><td>Krishna</td><td>The deepest knowing comes from the one already dwelling within every heart</td></tr>
-            <tr><td>15.16</td><td>Krishna</td><td>What changes is not the whole of you</td></tr>
-            <tr><td>15.17</td><td>Krishna</td><td>Even the imperishable witness is not the final reality</td></tr>
-            <tr><td>15.18</td><td>Krishna</td><td>The highest reality lies beyond both change and permanence</td></tr>
-            <tr><td>15.19</td><td>Krishna</td><td>Clear seeing of the Supreme Self becomes total devotion</td></tr>
-            <tr><td>15.20</td><td>Krishna</td><td>Secret knowledge makes a person complete</td></tr>
+            <tr><td>15.1</td><td>Krishna</td><td>They speak of an undying ashvattha, roots above, branches below, hymns for leaves; who knows it knows the Vedas</td></tr>
+            <tr><td>15.2</td><td>Krishna</td><td>Its branches spread up and down, fed by the gunas, sense objects their shoots; below, its roots bind people to action</td></tr>
+            <tr><td>15.3</td><td>Krishna</td><td>Its form, beginning, end and base are not seen here; cut this firmly rooted tree with the sword of detachment</td></tr>
+            <tr><td>15.4</td><td>Krishna</td><td>Then seek the place from which none return, taking refuge in the primal Person from whom all activity flowed</td></tr>
+            <tr><td>15.5</td><td>Krishna</td><td>Free of pride, delusion and attachment, desires gone, beyond pleasure and pain, the undeluded reach that undying state</td></tr>
+            <tr><td>15.6</td><td>Krishna</td><td>Neither sun, moon nor fire lights it; those who go there do not return; that is my supreme abode</td></tr>
+            <tr><td>15.7</td><td>Krishna</td><td>An eternal fragment of me becomes the living being and draws to itself the mind and the five senses</td></tr>
+            <tr><td>15.8</td><td>Krishna</td><td>When the lord of the body takes a body or leaves it, it carries these along, as the wind carries scents</td></tr>
+            <tr><td>15.9</td><td>Krishna</td><td>Presiding over ear, eye, touch, taste, smell and mind, it enjoys the objects of the senses</td></tr>
+            <tr><td>15.10</td><td>Krishna</td><td>The deluded do not see it leaving, staying or enjoying; those with the eye of knowledge see it</td></tr>
+            <tr><td>15.11</td><td>Krishna</td><td>Striving yogis see it within themselves; the unprepared and thoughtless do not, even when they strive</td></tr>
+            <tr><td>15.12</td><td>Krishna</td><td>The light of the sun that lights the world, and the light of the moon and fire, know it as mine</td></tr>
+            <tr><td>15.13</td><td>Krishna</td><td>Entering the earth, I sustain beings with my energy; becoming the moon, I nourish all plants</td></tr>
+            <tr><td>15.14</td><td>Krishna</td><td>As the digestive fire in living bodies, joined with the in-breath and out-breath, I digest the four kinds of food</td></tr>
+            <tr><td>15.15</td><td>Krishna</td><td>I am seated in every heart; from me come memory, knowledge and the removal of doubt; I am known through the Vedas</td></tr>
+            <tr><td>15.16</td><td>Krishna</td><td>There are two persons in this world, the perishable and the imperishable: beings perish, the unchanging does not</td></tr>
+            <tr><td>15.17</td><td>Krishna</td><td>But there is another, the highest Person, called the supreme Self, the undying Lord who sustains the three worlds</td></tr>
+            <tr><td>15.18</td><td>Krishna</td><td>Since I am beyond the perishable and higher than the imperishable, I am called Purushottama</td></tr>
+            <tr><td>15.19</td><td>Krishna</td><td>Whoever, undeluded, knows me as Purushottama knows all and worships me with their whole being</td></tr>
+            <tr><td>15.20</td><td>Krishna</td><td>I have told you this secret teaching; knowing it, a person becomes wise and has done what is to be done</td></tr>
           </tbody>
         </table>
 
@@ -954,6 +954,8 @@ export default function ChapterPage15() {
         </div>
 
 
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the claim that the inverted-tree image is unique to the Gita (it comes from Katha Upanishad 6.1), made the description of the tree consistent (samsara, the world of bound existence), noted that Arjuna addresses Krishna as Purushottama before 15.18, and attributed &ldquo;the eye of knowledge&rdquo; to 15.10; copy edited.</p>
+
         <div className="faq-section" id="faq">
           <div className="faq-header">
             <div className="faq-header-label">Common questions</div>
@@ -962,37 +964,37 @@ export default function ChapterPage15() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 15 about?</div>
             <div className="faq-a">
-              Chapter 15, called Purushottama Yoga (the Yoga of the Supreme Self), is one of the Gita's most condensed and ambitious chapters. In just twenty verses, Krishna teaches the image of the inverted ashvattha tree (15.1-2), the sword of non-attachment that cuts it down (15.3), the spark of the Divine in every being (15.7), the Divine as the fire that digests food and dwells in every heart (15.14-15), and finally names himself as Purushottama, the Supreme Self beyond both the perishable and the imperishable (15.18).
+              Chapter 15, called Purushottama Yoga (the Yoga of the Supreme Self), is short and dense. In twenty verses, Krishna teaches the image of the inverted ashvattha tree (15.1-2), the sword of non-attachment that cuts it down (15.3), the spark of the Divine in every being (15.7), the Divine as the fire that digests food and dwells in every heart (15.14-15), and finally names himself as Purushottama, the Supreme Self beyond both the perishable and the imperishable (15.18).
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the inverted ashvattha tree in the Bhagavad Gita?</div>
             <div className="faq-a">
-              Verse 15.1 describes the world as an ashvattha tree with its roots above and its branches below. The image is borrowed from older Upanishadic literature. The teaching is that the source of the world you experience is not visible from inside the world. The branches, visible circumstances, body, relationships, are downstream. The roots are in a reality you cannot point to from where the branches grow. Understanding this inversion is the beginning of true understanding.
+              Verse 15.1 describes the world as an ashvattha tree with its roots above and its branches below. The image is borrowed from the Katha Upanishad (6.1). The teaching is that the source of the world you experience cannot be seen from inside it. The branches, visible circumstances, body, relationships, are downstream. The roots are in a reality you cannot point to from where the branches grow. 
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the sword of detachment in Bhagavad Gita 15.3?</div>
             <div className="faq-a">
-              Verse 15.3 says, 'Cut down this deeply rooted ashvattha tree with the strong sword of non-attachment (<em>asaṅga-śastra</em>).' The sword does not cut the world. It cuts the grasping that keeps consciousness tied to result-driven existence. After the cut, the same world is still there, but the cycle no longer renews itself from your clinging, because the clinging was what was feeding the roots.
+              Verse 15.3 says, 'Cut down this firmly rooted ashvattha tree with the strong sword of non-attachment (<em>asaṅga-śastra</em>).' The sword cuts the grasping that keeps consciousness tied to result-driven existence. After the cut, the same world is still there, but the cycle no longer renews itself from your clinging, since the clinging was feeding the roots.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 15.7 mean?</div>
             <div className="faq-a">
-              Verse 15.7 says, 'A part of myself, eternal, has become the living being in this world.' The Sanskrit word is <em>aṃśa</em>, meaning fragment, portion. Each conscious being is, at the deepest level, a fragment of the Divine. The teaching is the metaphysical basis for compassion: every being you meet is made of the same source you are made of. The verse changes the regard you can hold for any other person in the room.
+              Verse 15.7 says, 'A part of myself, eternal, has become the living being in this world.' The Sanskrit word is <em>aṃśa</em>, meaning fragment, portion. Each conscious being is, at the deepest level, a fragment of the Divine. On this teaching, every being you meet is made of the same source you are made of, which gives compassion a basis.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">Who is Purushottama in the Bhagavad Gita?</div>
             <div className="faq-a">
-              <em>Purushottama</em> means 'the Supreme Self' or 'the Highest Person.' In verses 15.16-18, Krishna names two kinds of beings: the perishable (everything that changes) and the imperishable (the steady witness). Then he says there is a third, higher than both. That third is the Supreme Self, who enters all worlds and sustains them. Krishna claims this title for himself in 15.18, the only place in the Gita where he uses this specific name.
+              <em>Purushottama</em> means 'the Supreme Self' or 'the Highest Person.' In verses 15.16-18, Krishna names two kinds of beings: the perishable (everything that changes) and the imperishable (the steady witness). Then he says there is a third, higher than both. That third is the Supreme Self, who enters all worlds and sustains them. Krishna claims this title for himself in 15.18; Arjuna had used it to address him earlier (8.1, 10.15, 11.3).
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 15.15 mean about memory?</div>
             <div className="faq-a">
-              Verse 15.15 says, 'I am seated in the hearts of all beings. From me come memory, knowledge, and the removal of doubt.' The teaching is that the remembering, the understanding, and the dissolving of confusion are not purely your achievements. They are gifts from the Divine already seated at the centre of your own awareness. The verse rewrites the architecture of inner life: you have always had a collaborator; most of us have just not noticed.
+              Verse 15.15 says, 'I am seated in the hearts of all beings. From me come memory, knowledge, and the removal of doubt.' On this verse, remembering, understanding and the clearing of confusion come partly from the Divine seated at the centre of your own awareness, so you are not their sole author.
             </div>
           </div>
         </div>

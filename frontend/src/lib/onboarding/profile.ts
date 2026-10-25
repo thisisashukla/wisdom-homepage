@@ -97,7 +97,7 @@ export function verseHeadline(stages: StageId[] = [], need?: NeedId | null, used
   return {
     title: stage ? STAGE_LINE[stage]! : 'Right where you are,',
     accent: FEELING_LINE[need ?? 'quiet'],
-    sub: usedNote ? 'We found a verse for exactly what you shared.' : 'We found a verse for exactly where you are.',
+    sub: usedNote ? 'Here is a verse for what you shared.' : 'Here is a verse for where you are.',
   }
 }
 

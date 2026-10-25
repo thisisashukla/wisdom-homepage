@@ -7,11 +7,11 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",
-  description: "The mind is harder to tame than the wind — here's how to do it. Bhagavad Gita Chapter 6 (Dhyana Yoga): Krishna's complete guide to meditation, the restless mind, and the lamp-in-windless-place. All 47 verses in Sanskrit, Hindi and English.",
+  description: "Arjuna says the mind is as hard to hold as the wind (6.34). Bhagavad Gita Chapter 6 (Dhyana Yoga): Krishna on meditation, the restless mind, and the lamp in a windless place (6.19).",
   keywords: "bhagwat geeta chapter 6, bhagavad gita dhyana yoga, bhagwat geeta adhyay 6, lamp in windless place gita, uddharedatmanatmanam, abhyasa vairagya meaning, gita on meditation, restless mind gita, how to meditate bhagavad gita, Dhyana Yoga summary, Bhagavad Gita 6.5 meaning, Bhagavad Gita 6.34 the mind is like the wind, abhyasa vairagya meaning, lamp in windless place Bhagavad Gita, how to meditate according to Bhagavad Gita",
   openGraph: {
     title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",
-    description: "All 47 verses of Bhagavad Gita Chapter 6, meditation, the restless mind, and the lamp that does not flicker.",
+    description: "Bhagavad Gita Chapter 6: meditation, the restless mind, and the lamp that does not flicker.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6",
     siteName: 'Wisdom',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Bhagavad Gita Chapter 6 Summary – Key Verses & Meaning (Dhyana Yoga)",
-    description: "All 47 verses of Bhagavad Gita Chapter 6, meditation, the restless mind, and the lamp that does not flicker.",
+    description: "Bhagavad Gita Chapter 6: meditation, the restless mind, and the lamp that does not flicker.",
     images: ["https://wisdomquotes.in/assets/chapter6.webp"],
   },
   alternates: { canonical: "https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6", languages: { 'x-default': 'https://wisdomquotes.in/blogs/bhagwat-geeta-chapter-6' } },
@@ -259,8 +259,8 @@ const schemas = [
       "Article",
       "LearningResource"
     ],
-    "headline": "Bhagavad Gita Chapter 6 — Dhyana Yoga: The Lamp That Does Not Flicker",
-    "description": "Bhagavad Gita Chapter 6 — Dhyana Yoga (Meditation). All 47 verses with Sanskrit, transliteration, meaning, and the lamp-in-windless-place teaching.",
+    "headline": "Bhagavad Gita Chapter 6: Dhyana Yoga",
+    "description": "Bhagavad Gita Chapter 6, Dhyana Yoga (Meditation): key verses with Sanskrit, transliteration and meaning, including the lamp in a windless place.",
     "alternativeHeadline": "Bhagavad Gita Chapter 6 (Dhyana Yoga) — Summary & Verses",
     "author": {
     "@type": "Person",
@@ -362,7 +362,7 @@ const schemas = [
         "name": "What is Bhagavad Gita Chapter 6 about?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Chapter 6, called Dhyana Yoga (the Yoga of Meditation), is the Gita's most practical chapter on inner discipline. Across 47 verses, Krishna teaches Arjuna how to actually meditate — where to sit, what to eat, what to do when the mind wanders, and how to deal with the inevitable feeling that the practice is too hard. It contains the famous lamp-in-windless-place metaphor (6.19), Arjuna's honest objection that the mind is like the wind (6.34), and Krishna's reply that practice and detachment (abhyāsa and vairāgya) are the only working tools."
+          "text": "Chapter 6, called Dhyana Yoga (the Yoga of Meditation), is Krishna's instruction on meditation. Across 47 verses he tells Arjuna where to sit and how (6.11–14), how much to eat and sleep (6.16–17), and what to do when the mind wanders (6.26). It contains the lamp in a windless place (6.19), Arjuna's objection that the mind is like the wind (6.34), and Krishna's reply that it is held by practice and detachment, abhyāsa and vairāgya (6.35)."
         }
       },
       {
@@ -370,7 +370,7 @@ const schemas = [
         "name": "What does Bhagavad Gita 6.5 mean?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verse 6.5 says, 'Lift yourself by yourself; do not let yourself fall. The self alone is the friend of the self, and the self alone is its enemy.' It is one of the most personally challenging verses in the Gita because it refuses to outsource the work of self-mastery. The same self that can elevate you is the only thing that can drag you down. There is no external rescuer in this verse — and also no external blocker."
+          "text": "Verse 6.5 says, 'Lift yourself by yourself; do not let yourself fall. The self alone is the friend of the self, and the self alone is its enemy.' The verse puts the work on the person: the same self that can lift you can drag you down. In 6.6 Krishna adds that the self is a friend to one who has mastered it and an enemy to one who has not."
         }
       },
       {
@@ -378,7 +378,7 @@ const schemas = [
         "name": "What is the lamp in a windless place metaphor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Found in verse 6.19, this is one of the Gita's most quoted images. Krishna compares the disciplined mind of a yogi to a lamp placed where no wind blows — it does not flicker. The metaphor describes the felt experience of a steady mind: not a forced suppression of thought, but the natural stillness that arises when the conditions that cause flickering are removed."
+          "text": "In verse 6.19 Krishna compares the controlled mind of a yogi in meditation to a lamp in a place with no wind: its flame does not flicker. The image is of stillness that comes once the wind, the pull of desire, has dropped."
         }
       },
       {
@@ -386,7 +386,7 @@ const schemas = [
         "name": "What did Arjuna object to in Chapter 6?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In verses 6.33 and 6.34, Arjuna interrupts Krishna and says the teaching is impractical — the mind is too restless, like the wind. He gives every reader permission to admit the same thing. Krishna's response in 6.35 is one of the most important verses in the Gita: yes, the mind is hard to control, but it is held by abhyāsa (practice) and vairāgya (detachment). Repeated practice without attachment to the result is the only method that has ever worked."
+          "text": "In verses 6.33 and 6.34, Arjuna says he can't see how this yoga of evenness could last: the mind is restless, strong and stubborn, and as hard to hold as the wind. Krishna agrees in 6.35 that the mind is hard to control, and says it is held by abhyāsa (practice) and vairāgya (detachment)."
         }
       },
       {
@@ -394,15 +394,15 @@ const schemas = [
         "name": "What happens if you fail at yoga according to Chapter 6?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verses 6.40 through 6.45 are the Gita's most reassuring passage on incomplete spiritual effort. Krishna tells Arjuna that no one who has done sincere good is ever destroyed. A person who falls from the path of yoga is not lost — they return to it, either in this life or the next, picking up where they left off. The Gita treats sincere effort as cumulative: nothing you put in is wasted."
+          "text": "In 6.37–39 Arjuna asks what becomes of someone who has faith but falls away from yoga. Krishna answers in 6.40–45 that no one who does good comes to a bad end. Such a person is born again into a good family or a family of yogis, regains the understanding of the earlier life, and strives again (6.43)."
         }
       },
       {
         "@type": "Question",
-        "name": "Is meditation in the Bhagavad Gita similar to modern mindfulness?",
+        "name": "Is meditation in the Bhagavad Gita similar to modern meditation practice?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "There is real overlap. Modern mindfulness practices — noticing when the mind wanders, returning attention without judgement, building gradual stability — are exactly what verse 6.26 describes. But the Gita's framing is wider: meditation is not just stress-reduction, it is the training of the entire self toward a stable, equal-visioned, devotionally-anchored way of being. Verse 6.47 makes clear that the deepest yoga is not technique alone but trust."
+          "text": "There is overlap. Noticing when the mind wanders and bringing it back is what verse 6.26 describes. The Gita's frame is wider: it trains the whole person toward steadiness, equal vision (6.29) and devotion, and in 6.47 Krishna ranks the yogi who worships him with faith above all others."
         }
       }
     ]
@@ -576,7 +576,7 @@ export default function ChapterPage6() {
             <em>Dhyana Yoga</em>
           </h1>
           <p className="article-subtitle">
-            Krishna's most practical chapter, how to train a mind that won't sit still. The lamp in a windless place. The friend and enemy inside you. And the steadiness that no argument, message, or memory can shake.
+            Krishna on training a mind that won&apos;t sit still: the self as its own friend and enemy (6.5–6), the lamp in a windless place (6.19), and what happens to someone who tries and falls short (6.40).
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -587,7 +587,7 @@ export default function ChapterPage6() {
             <span className="meta-sep">·</span>
             <span className="meta-item">Chapter 6 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -598,7 +598,7 @@ export default function ChapterPage6() {
           <figure className="chapter-image">
             <img
               src="/assets/chapter6.webp"
-              alt="A yogi seated in meditation at the edge of dawn, the mind, lamp-like, no longer flickers. Chapter 6 of the Bhagavad Gita teaches Dhyana Yoga, the path of meditation."
+              alt="A yogi seated in meditation at dawn. Chapter 6 of the Bhagavad Gita teaches Dhyana Yoga, the path of meditation."
               width="1200"
               height="675"
               loading="eager"
@@ -606,23 +606,17 @@ export default function ChapterPage6() {
           </figure>
 
         <p className="lead">
-          By Chapter 6, the Gita stops talking about meditation in the abstract and starts giving instructions. Where to sit. How to sit. What to eat. What to do when the mind, on cue, refuses to cooperate. This is the most practical chapter in the Gita, and it is the one most often skipped by people who want the philosophy without the seat. That is a mistake. Chapter 6 is where Krishna meets you exactly where most attempts at the inner life actually break, at the part where you try to be still, and you can't.
+          In Chapter 6 Krishna gives instructions for meditation: a clean place, a seat neither too high nor too low, body and head held straight (6.11–13), and moderation in food and sleep (6.16–17). He also deals with the point where most attempts break down, when you try to be still and can&apos;t.
         </p>
 
         <p>
-          Arjuna will be honest enough in this chapter to interrupt Krishna and say: this is impossible. The mind is wind. Trying to hold it is trying to hold the air. Krishna does not deny it. He agrees. Yes, the mind is restless. And then he gives the only answer that has ever worked, in any tradition, anywhere: abhyāsa and vairāgya. Practice and detachment. Repeated return, with diminishing emotional weight. That is the whole technology of inner change, and Chapter 6 is its source text.
+          In 6.34 Arjuna objects that the mind is as hard to hold as the wind. Krishna agrees that it is restless, and says it is held by abhyāsa and vairāgya, practice and detachment (6.35): coming back again and again, while caring less about the result.
         </p>
 
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
             <li><a href="#lift-yourself">Lift yourself by yourself, 6.5</a></li>
-            <li><a href="#friend-enemy">The friend and the enemy are the same person</a></li>
-            <li><a href="#seat-balance">The seat, the food, the sleep, the body matters</a></li>
-            <li><a href="#lamp">The lamp in a windless place, what steadiness looks like</a></li>
-            <li><a href="#wandering-mind">The wandering mind and the practice of return</a></li>
-            <li><a href="#arjuna-objects">Arjuna interrupts, "the mind is like the wind"</a></li>
-            <li><a href="#nothing-lost">Nothing sincere is ever wasted, 6.40 to 6.45</a></li>
             <li><a href="#highest-yogi">The chapter's final word, trust</a></li>
             <li><a href="#all-verses">All verses at a glance</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
@@ -639,14 +633,14 @@ export default function ChapterPage6() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="lift-yourself">Lift Yourself By Yourself, The Most Honest Verse in the Gita</h2>
+        <h2 id="lift-yourself">Lift Yourself by Yourself: The Self as Friend and Enemy</h2>
 
         <p>
-          Chapter 6 opens by clarifying what renunciation actually means, and then, in verse 5, Krishna says something that has no equivalent in any other scripture. The exact translation is blunt: lift yourself, by yourself; do not let yourself fall. The same self that can carry you upward is the only thing that can also drag you down. There is no external rescuer in this verse. There is just you, and the part of you that decides whether to rise.
+          Chapter 6 opens by saying who counts as a renouncer: one who does his duty without depending on its fruit (6.1). Then, in verse 5, Krishna says plainly: lift yourself by yourself; do not let yourself sink. The same self that can carry you upward can also drag you down.
         </p>
 
         <p>
-          Most spiritual teaching softens this point. The Gita does not. It puts the responsibility back in your hands at the very moment you would most like to outsource it, the moment when you are tired, ashamed, or stuck. The Gita's view is unsentimental: nobody else can do the lifting. But also, and this is the same verse, nobody else needs to. You already contain what is required.
+          The verse puts the responsibility on you, including when you are tired, ashamed or stuck. Nobody else can do the lifting, and the verse also says you have what it takes to do it.
         </p>
 
                 <ShlokaCard
@@ -654,7 +648,7 @@ export default function ChapterPage6() {
           speaker="Krishna"
           sanskrit="उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥"
           iast="uddhared ātmanā''tmānaṃ nātmānam avasādayet | ātmaiva hyātmano bandhur ātmaiva ripur ātmanaḥ ||"
-          essence="Your own inner handling makes you rise or collapse."
+          essence="Lift yourself by yourself and don't let yourself sink; the self is its own friend and enemy."
         />
 
                 <ShlokaCard
@@ -662,12 +656,12 @@ export default function ChapterPage6() {
           speaker="Krishna"
           sanskrit="बन्धुरात्माऽऽत्मनस्तस्य येनात्मैवात्मना जितः । अनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत् ॥"
           iast="bandhur ātmā''tmanas tasya yenātmaivātmanā jitaḥ | anātmanas tu śatrutve vartetātmaiva śatruvat ||"
-          essence="The same inner nature that frees you can also fight you."
+          essence="The self is a friend to one who has mastered it, an enemy to one who has not."
         />
 
         <div className="highlight-box">
           <p>
-            <strong>Why this is the chapter's emotional centre:</strong> Most of us quit practices because we feel like the effort isn't working. Chapter 6 is the Gita's response to that despair. The effort is working. You cannot see it yet because you are inside it. But it is being recorded. It is changing what you are. And if you fall, you will start the next attempt from where you fell, not from zero.
+            <strong>What if you fall short:</strong> Many people quit a practice because it doesn&apos;t seem to be working. In 6.37–39 Arjuna asks what happens to someone who tries and falls away. Krishna answers that no one who does good comes to a bad end (6.40), and that such a person later regains the understanding they had and strives again (6.43).
           </p>
         </div>
 
@@ -683,11 +677,11 @@ export default function ChapterPage6() {
         <h2 id="highest-yogi">The Chapter's Surprising Final Word: Trust</h2>
 
         <p>
-          After 46 verses on meditation, posture, breath, balance, and discipline, the chapter ends somewhere unexpected. Krishna says the highest yogi is not the one with the steadiest seat or the longest practice. It is the one whose inner self rests in him, in trust, with love. Bhakti, devotion, quietly takes the crown that one would have expected to go to discipline.
+          After 46 verses on meditation, posture, balance and discipline, Krishna names the highest yogi: the one whose inner self rests in him and who worships him with faith. Devotion, bhakti, ranks above discipline.
         </p>
 
         <p>
-          This sets up the rest of the Gita. Chapters 7 through 12 will go deep into devotion as a practice. But it begins here, at the end of the meditation chapter, with Krishna refusing to let the reader believe that technique is the whole story. The deepest steadiness, he says, comes not from controlling the mind but from giving it somewhere to rest. Trust is the final yoga.
+          This sets up Chapters 7 to 12, which deal with devotion and with Krishna&apos;s own nature. The meditation chapter ends by giving the mind somewhere to rest as well as ways to control it.
         </p>
 
                 <ShlokaCard
@@ -695,7 +689,7 @@ export default function ChapterPage6() {
           speaker="Krishna"
           sanskrit="योगिनामपि सर्वेषां मद्गतेनान्तरात्मना । श्रद्धावान्भजते यो मां स मे युक्ततमो मतः ॥"
           iast="yoginām api sarveṣāṃ madgatenāntar-ātmanā | śraddhāvān bhajate yo māṃ sa me yuktatamo mataḥ ||"
-          essence="Trusting devotion is the highest integration of yoga."
+          essence="Of all yogis, the one who worships Krishna with faith, inner self resting in him, is most united."
         />
 
         <div className="pull-quote">
@@ -721,56 +715,56 @@ export default function ChapterPage6() {
             <tr><th>Verse</th><th>Speaker</th><th>Teaching Essence</th></tr>
           </thead>
           <tbody>
-            <tr><td>6.1</td><td>Krishna</td><td>Renunciation means acting without owning the result</td></tr>
-            <tr><td>6.2</td><td>Krishna</td><td>Yoga begins when the mind stops clutching its own agenda</td></tr>
-            <tr><td>6.3</td><td>Krishna</td><td>You reach steadiness through action, then preserve it through stillness</td></tr>
-            <tr><td>6.4</td><td>Krishna</td><td>Yoga begins when neither pleasure nor action can hook you</td></tr>
-            <tr><td>6.5</td><td>Krishna</td><td>Your own inner handling makes you rise or collapse</td></tr>
-            <tr><td>6.6</td><td>Krishna</td><td>The same inner nature that frees you can also fight you</td></tr>
-            <tr><td>6.7</td><td>Krishna</td><td>Steadiness makes the highest reality feel near in every opposite</td></tr>
-            <tr><td>6.8</td><td>Krishna</td><td>True mastery makes gold and dust feel identical</td></tr>
-            <tr><td>6.9</td><td>Krishna</td><td>Equal vision toward all people marks the highest steadiness</td></tr>
-            <tr><td>6.10</td><td>Krishna</td><td>Steady inward practice begins when desire and possessiveness end</td></tr>
-            <tr><td>6.11</td><td>Krishna</td><td>A steady mind begins with a steady seat</td></tr>
-            <tr><td>6.12</td><td>Krishna</td><td>Meditation begins by gathering the mind and training the senses</td></tr>
-            <tr><td>6.13</td><td>Krishna</td><td>Steady posture is the first gate to a steady mind</td></tr>
-            <tr><td>6.14</td><td>Krishna</td><td>A disciplined mind can rest in devotion without fear</td></tr>
-            <tr><td>6.15</td><td>Krishna</td><td>A steady mind reaches the peace that restlessness can never touch</td></tr>
-            <tr><td>6.16</td><td>Krishna</td><td>Balance makes meditation possible; extremes break it</td></tr>
-            <tr><td>6.17</td><td>Krishna</td><td>Balanced living makes inner practice possible</td></tr>
-            <tr><td>6.18</td><td>Krishna</td><td>Yoga begins when craving loses its grip and the mind comes home</td></tr>
-            <tr><td>6.19</td><td>Krishna</td><td>A trained mind becomes steady enough to stop flickering</td></tr>
-            <tr><td>6.20</td><td>Krishna</td><td>Stillness reveals a completeness that no outside thing can improve</td></tr>
-            <tr><td>6.21</td><td>Krishna</td><td>True joy is deeper than sensation and keeps you from wavering</td></tr>
-            <tr><td>6.22</td><td>Krishna</td><td>True fulfillment leaves nothing more to chase, nothing strong enough to unsettle</td></tr>
-            <tr><td>6.23</td><td>Krishna</td><td>Yoga is the breaking of suffering's grip, practiced steadily</td></tr>
-            <tr><td>6.24</td><td>Krishna</td><td>Desire loses power when the mind stops feeding it</td></tr>
-            <tr><td>6.25</td><td>Krishna</td><td>Stillness comes by degrees when the mind stops feeding itself</td></tr>
-            <tr><td>6.26</td><td>Krishna</td><td>The mind is mastered by repeated return, not by force</td></tr>
-            <tr><td>6.27</td><td>Krishna</td><td>Joy comes when the restless mind finally becomes still</td></tr>
-            <tr><td>6.28</td><td>Krishna</td><td>Repeated union with the supreme yields effortless, lasting joy</td></tr>
-            <tr><td>6.29</td><td>Krishna</td><td>Equal vision dissolves the illusion of separation</td></tr>
-            <tr><td>6.30</td><td>Krishna</td><td>Seeing the divine everywhere ends separation</td></tr>
-            <tr><td>6.31</td><td>Krishna</td><td>Unity turns every action into abiding presence</td></tr>
-            <tr><td>6.32</td><td>Krishna</td><td>Equal vision makes you unshaken by pleasure or pain</td></tr>
-            <tr><td>6.33</td><td>Arjuna</td><td>Restlessness makes even clear teaching feel unreachable</td></tr>
-            <tr><td>6.34</td><td>Arjuna</td><td>The mind resists control like wind resists the hand</td></tr>
-            <tr><td>6.35</td><td>Krishna</td><td>Practice and detachment together master the restless mind</td></tr>
-            <tr><td>6.36</td><td>Krishna</td><td>Yoga becomes reachable when the mind is trained, not merely hoped for</td></tr>
-            <tr><td>6.37</td><td>Arjuna</td><td>Faith without completion still deserves a clear answer</td></tr>
-            <tr><td>6.38</td><td>Arjuna</td><td>Half-finished striving can feel like total ruin</td></tr>
-            <tr><td>6.39</td><td>Arjuna</td><td>Only clear seeing can end confusion completely</td></tr>
-            <tr><td>6.40</td><td>Krishna</td><td>Sincere effort toward the good cannot end in ruin</td></tr>
-            <tr><td>6.41</td><td>Krishna</td><td>A fall from yoga still carries you forward</td></tr>
-            <tr><td>6.42</td><td>Krishna</td><td>A fallen practitioner is not lost; the next birth restarts the work</td></tr>
-            <tr><td>6.43</td><td>Krishna</td><td>Nothing gained in sincere practice is ever truly lost</td></tr>
-            <tr><td>6.44</td><td>Krishna</td><td>Earlier practice keeps pulling you forward, even against resistance</td></tr>
-            <tr><td>6.45</td><td>Krishna</td><td>Persistent striving eventually ripens into the highest fulfillment</td></tr>
-            <tr><td>6.46</td><td>Krishna</td><td>Inner mastery outranks every outer path</td></tr>
-            <tr><td>6.47</td><td>Krishna</td><td>Trusting devotion is the highest integration of yoga</td></tr>
+            <tr><td>6.1</td><td>Krishna</td><td>One who does his duty without depending on its fruit is a renouncer and a yogi</td></tr>
+            <tr><td>6.2</td><td>Krishna</td><td>What is called renunciation is yoga; no one becomes a yogi without giving up selfish intent</td></tr>
+            <tr><td>6.3</td><td>Krishna</td><td>For one climbing to yoga, action is the means; for one who has reached it, stillness is</td></tr>
+            <tr><td>6.4</td><td>Krishna</td><td>One attached neither to sense objects nor to actions, giving up all intent, has reached yoga</td></tr>
+            <tr><td>6.5</td><td>Krishna</td><td>Lift yourself by yourself and do not let yourself sink; the self is its own friend and enemy</td></tr>
+            <tr><td>6.6</td><td>Krishna</td><td>The self is a friend to one who has mastered it, an enemy to one who has not</td></tr>
+            <tr><td>6.7</td><td>Krishna</td><td>The calm, self-controlled person stays steady in cold and heat, pleasure and pain, honour and insult</td></tr>
+            <tr><td>6.8</td><td>Krishna</td><td>Content in knowledge, senses mastered, the yogi sees a clod, a stone and gold as the same</td></tr>
+            <tr><td>6.9</td><td>Krishna</td><td>He regards friends, enemies, the neutral, relatives, the good and the sinful with an equal mind</td></tr>
+            <tr><td>6.10</td><td>Krishna</td><td>The yogi should practise alone in a quiet place, mind controlled, free of hope and possessions</td></tr>
+            <tr><td>6.11</td><td>Krishna</td><td>Set a firm seat in a clean place, neither too high nor too low, with cloth, deerskin and kusha grass</td></tr>
+            <tr><td>6.12</td><td>Krishna</td><td>Seated there, mind on one point, thought and senses controlled, practise yoga to purify the self</td></tr>
+            <tr><td>6.13</td><td>Krishna</td><td>Hold body, head and neck straight and still, gazing at the tip of the nose</td></tr>
+            <tr><td>6.14</td><td>Krishna</td><td>Calm and fearless, keeping the vow of celibacy, the yogi sits with mind fixed on Krishna</td></tr>
+            <tr><td>6.15</td><td>Krishna</td><td>Practising this way, the yogi with a controlled mind reaches the peace that rests in Krishna</td></tr>
+            <tr><td>6.16</td><td>Krishna</td><td>Yoga is not for one who eats too much or too little, or sleeps too much or too little</td></tr>
+            <tr><td>6.17</td><td>Krishna</td><td>Yoga ends sorrow for one moderate in food, recreation, effort, sleep and waking</td></tr>
+            <tr><td>6.18</td><td>Krishna</td><td>When the controlled mind rests in the self alone, free of craving, one is called yukta</td></tr>
+            <tr><td>6.19</td><td>Krishna</td><td>The controlled mind of a yogi is like a lamp in a windless place: it does not flicker</td></tr>
+            <tr><td>6.20</td><td>Krishna</td><td>When the mind, stilled by yoga, comes to rest, one sees the self by the self and is content</td></tr>
+            <tr><td>6.21</td><td>Krishna</td><td>Settled in that boundless joy, known by the intellect beyond the senses, he does not waver</td></tr>
+            <tr><td>6.22</td><td>Krishna</td><td>Having gained it, he values no gain above it, and even heavy sorrow does not move him</td></tr>
+            <tr><td>6.23</td><td>Krishna</td><td>Yoga is the breaking of contact with sorrow; practise it with determination</td></tr>
+            <tr><td>6.24</td><td>Krishna</td><td>Give up all desires born of intention and restrain the senses on every side with the mind</td></tr>
+            <tr><td>6.25</td><td>Krishna</td><td>Little by little, with a steady intellect, fix the mind on the self and think of nothing else</td></tr>
+            <tr><td>6.26</td><td>Krishna</td><td>Wherever the restless mind wanders, bring it back and settle it in the self</td></tr>
+            <tr><td>6.27</td><td>Krishna</td><td>The highest joy comes to the yogi whose mind is calm and passion stilled, who has become Brahman</td></tr>
+            <tr><td>6.28</td><td>Krishna</td><td>Practising this, the sinless yogi easily reaches the boundless joy of contact with Brahman</td></tr>
+            <tr><td>6.29</td><td>Krishna</td><td>The yogi sees the self in every being and every being in the self, with equal vision everywhere</td></tr>
+            <tr><td>6.30</td><td>Krishna</td><td>Krishna is never lost to one who sees him everywhere and all in him, nor is that person lost to him</td></tr>
+            <tr><td>6.31</td><td>Krishna</td><td>One who worships Krishna as dwelling in every being lives in him, however he lives</td></tr>
+            <tr><td>6.32</td><td>Krishna</td><td>The best yogi judges pleasure and pain in others by the same measure as in himself</td></tr>
+            <tr><td>6.33</td><td>Arjuna</td><td>Arjuna says he cannot see how this yoga of evenness can last, the mind being so restless</td></tr>
+            <tr><td>6.34</td><td>Arjuna</td><td>Arjuna says the mind is restless and strong, as hard to hold as the wind</td></tr>
+            <tr><td>6.35</td><td>Krishna</td><td>Krishna agrees the mind is restless, but says it is held by practice and detachment</td></tr>
+            <tr><td>6.36</td><td>Krishna</td><td>Yoga is hard for the undisciplined but reachable by the self-controlled who strive by right means</td></tr>
+            <tr><td>6.37</td><td>Arjuna</td><td>Arjuna asks what becomes of one with faith who strays from yoga before reaching its goal</td></tr>
+            <tr><td>6.38</td><td>Arjuna</td><td>Arjuna asks whether such a person, lost from both paths, perishes like a scattered cloud</td></tr>
+            <tr><td>6.39</td><td>Arjuna</td><td>Arjuna asks Krishna to remove this doubt, since no one else can</td></tr>
+            <tr><td>6.40</td><td>Krishna</td><td>No one who does good comes to a bad end, in this world or the next</td></tr>
+            <tr><td>6.41</td><td>Krishna</td><td>The fallen yogi lives long in the worlds of the virtuous, then is born into a pure, prosperous family</td></tr>
+            <tr><td>6.42</td><td>Krishna</td><td>Or he is born into a family of wise yogis, a birth very hard to obtain</td></tr>
+            <tr><td>6.43</td><td>Krishna</td><td>There he regains the understanding of his past life and strives again for perfection</td></tr>
+            <tr><td>6.44</td><td>Krishna</td><td>His earlier practice carries him on even against his will</td></tr>
+            <tr><td>6.45</td><td>Krishna</td><td>Striving hard over many lives, purified, the yogi reaches the highest goal</td></tr>
+            <tr><td>6.46</td><td>Krishna</td><td>The yogi is greater than ascetics, scholars and ritual workers; so be a yogi, Arjuna</td></tr>
+            <tr><td>6.47</td><td>Krishna</td><td>Of all yogis, the one who worships Krishna with faith, inner self resting in him, is most united</td></tr>
           </tbody>
         </table>
-
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the account of 6.40–45 (the fallen yogi resumes in a later birth, 6.43) and the verse summaries in the table; removed unsupported comparisons with other scriptures; copy edited.</p>
         <div className="chapter-nav">
           <div>
             <div className="ch-nav-label">Previous</div>
@@ -802,37 +796,37 @@ export default function ChapterPage6() {
           <div className="faq-item">
             <div className="faq-q">What is Bhagavad Gita Chapter 6 about?</div>
             <div className="faq-a">
-              Chapter 6, called Dhyana Yoga (the Yoga of Meditation), is the Gita's most practical chapter on inner discipline. Across 47 verses, Krishna teaches Arjuna how to actually meditate, where to sit, what to eat, what to do when the mind wanders, and how to deal with the inevitable feeling that the practice is too hard. It contains the famous lamp-in-windless-place metaphor (6.19), Arjuna's honest objection that the mind is like the wind (6.34), and Krishna's reply that practice and detachment (abhyāsa and vairāgya) are the only working tools.
+              Chapter 6, called Dhyana Yoga (the Yoga of Meditation), is Krishna&apos;s instruction on meditation. Across 47 verses he tells Arjuna where to sit and how (6.11–14), how much to eat and sleep (6.16–17), and what to do when the mind wanders (6.26). It contains the lamp in a windless place (6.19), Arjuna&apos;s objection that the mind is like the wind (6.34), and Krishna&apos;s reply that it is held by practice and detachment, abhyāsa and vairāgya (6.35).
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does Bhagavad Gita 6.5 mean?</div>
             <div className="faq-a">
-              Verse 6.5 says, 'Lift yourself by yourself; do not let yourself fall. The self alone is the friend of the self, and the self alone is its enemy.' It is one of the most personally challenging verses in the Gita because it refuses to outsource the work of self-mastery. The same self that can elevate you is the only thing that can drag you down. There is no external rescuer in this verse, and also no external blocker.
+              Verse 6.5 says, 'Lift yourself by yourself; do not let yourself fall. The self alone is the friend of the self, and the self alone is its enemy.' The verse puts the work on the person: the same self that can lift you can drag you down. In 6.6 Krishna adds that the self is a friend to one who has mastered it and an enemy to one who has not.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is the lamp in a windless place metaphor?</div>
             <div className="faq-a">
-              Found in verse 6.19, this is one of the Gita's most quoted images. Krishna compares the disciplined mind of a yogi to a lamp placed where no wind blows, it does not flicker. The metaphor describes the felt experience of a steady mind: not a forced suppression of thought, but the natural stillness that arises when the conditions that cause flickering are removed.
+              In verse 6.19 Krishna compares the controlled mind of a yogi in meditation to a lamp in a place with no wind: its flame does not flicker. The image is of stillness that comes once the wind, the pull of desire, has dropped.
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What did Arjuna object to in Chapter 6?</div>
             <div className="faq-a">
-              In verses 6.33 and 6.34, Arjuna interrupts Krishna and says the teaching is impractical, the mind is too restless, like the wind. He gives every reader permission to admit the same thing. Krishna's response in 6.35 is one of the most important verses in the Gita: yes, the mind is hard to control, but it is held by abhyāsa (practice) and vairāgya (detachment). Repeated practice without attachment to the result is the only method that has ever worked.
+              In verses 6.33 and 6.34, Arjuna says he can&apos;t see how this yoga of evenness could last: the mind is restless, strong and stubborn, and as hard to hold as the wind. Krishna agrees in 6.35 that the mind is hard to control, and says it is held by abhyāsa (practice) and vairāgya (detachment).
             </div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What happens if you fail at yoga according to Chapter 6?</div>
             <div className="faq-a">
-              Verses 6.40 through 6.45 are the Gita's most reassuring passage on incomplete spiritual effort. Krishna tells Arjuna that no one who has done sincere good is ever destroyed. A person who falls from the path of yoga is not lost, they return to it, either in this life or the next, picking up where they left off. The Gita treats sincere effort as cumulative: nothing you put in is wasted.
+              In 6.37–39 Arjuna asks what becomes of someone who has faith but falls away from yoga. Krishna answers in 6.40–45 that no one who does good comes to a bad end. Such a person is born again into a good family or a family of yogis, regains the understanding of the earlier life, and strives again (6.43).
             </div>
           </div>
           <div className="faq-item">
-            <div className="faq-q">Is meditation in the Bhagavad Gita similar to modern mindfulness?</div>
+            <div className="faq-q">Is meditation in the Bhagavad Gita similar to modern meditation practice?</div>
             <div className="faq-a">
-              There is real overlap. Modern mindfulness practices, noticing when the mind wanders, returning attention without judgement, building gradual stability, are exactly what verse 6.26 describes. But the Gita's framing is wider: meditation is not just stress-reduction, it is the training of the entire self toward a stable, equal-visioned, devotionally-anchored way of being. Verse 6.47 makes clear that the deepest yoga is not technique alone but trust.
+              There is overlap. Noticing when the mind wanders and bringing it back is what verse 6.26 describes. The Gita&apos;s frame is wider: it trains the whole person toward steadiness, equal vision (6.29) and devotion, and in 6.47 Krishna ranks the yogi who worships him with faith above all others.
             </div>
           </div>
         </div>
@@ -847,7 +841,7 @@ export default function ChapterPage6() {
           </a>
           <a href="/blogs/bhagavad-gita-karma-meaning" className="related-card">
             <div className="related-card-label">Topic Guide</div>
-            <div className="related-card-title">Karma, what it actually means in the Gita</div>
+            <div className="related-card-title">Karma: what it means in the Gita</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-5" className="related-card">
             <div className="related-card-label">Chapter 5</div>
@@ -855,7 +849,7 @@ export default function ChapterPage6() {
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-12" className="related-card">
             <div className="related-card-label">Chapter 12</div>
-            <div className="related-card-title">Bhakti Yoga, How a Devotee Actually Lives</div>
+            <div className="related-card-title">Bhakti Yoga: How a Devotee Lives</div>
           </a>
           <a href="/blogs/bhagwat-geeta-chapter-14" className="related-card">
             <div className="related-card-label">Chapter 14</div>
@@ -879,7 +873,7 @@ export default function ChapterPage6() {
             rel="noopener"
             data-mp-location="footer"
           >free iPhone app</a>{' '}
-          that tunes the Bhagavad Gita to your life, one verse a day. Made with reverence.
+          that tunes the Bhagavad Gita to your life, one verse a day.
         </p>
         <p style={{ marginTop: '8px' }}>
           <a href="/">wisdomquotes.in</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:work.ankurshukla@gmail.com">Support</a>

@@ -7,11 +7,11 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Gayatri Mantra — Meaning, Word-by-Word Translation & How to Chant",
-  description: "The Gayatri Mantra is the most-recited Sanskrit mantra on earth. Here is what it actually says — in Sanskrit, Hindi, and English, with a word-by-word breakdown, history, and how to chant it.",
+  description: "What the Gayatri Mantra (Rig Veda 3.62.10) says, in Sanskrit, Hindi and English, with a word-by-word breakdown, its history, and how to chant it.",
   keywords: "gayatri mantra, gayatri mantra meaning, gayatri mantra in sanskrit, gayatri mantra word by word meaning, gayatri mantra in hindi, gayatri mantra benefits, gayatri mantra history, gayatri mantra english translation, how to chant gayatri mantra, gayatri mantra 108 times",
   openGraph: {
     title: "Gayatri Mantra — Meaning, Word-by-Word Translation & How to Chant | Wisdom",
-    description: "What the Gayatri Mantra actually says. Word-by-word Sanskrit translation, history, and how to chant it.",
+    description: "What the Gayatri Mantra says: word-by-word Sanskrit translation, history, and how to chant it.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/gayatri-mantra-meaning",
     siteName: 'Wisdom',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     site: '@sansearchapp',
     creator: '@thisisashukla',
     title: "Gayatri Mantra — Meaning, Word-by-Word Translation & How to Chant | Wisdom",
-    description: "What the Gayatri Mantra actually says. Word-by-word Sanskrit translation, history, and how to chant it.",
+    description: "What the Gayatri Mantra says: word-by-word Sanskrit translation, history, and how to chant it.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -163,7 +163,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Gayatri Mantra — Meaning, Word-by-Word Translation, and How to Recite It",
-    "description": "The Gayatri Mantra is the most-recited Sanskrit mantra on earth. Here is what it actually says — in Sanskrit, Hindi, and English, with a word-by-word breakdown, history, and how to chant it.",
+    "description": "What the Gayatri Mantra (Rig Veda 3.62.10) says, in Sanskrit, Hindi and English, with a word-by-word breakdown, its history, and how to chant it.",
     "datePublished": "2026-07-05",
     "dateModified": "2026-08-01",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://wisdomquotes.in/blogs/gayatri-mantra-meaning" },
@@ -201,7 +201,7 @@ const schemas = [
         "name": "What is the Gayatri Mantra?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Gayatri Mantra is a 24-syllable Sanskrit verse from Rig Veda 3.62.10, attributed to the sage Vishwamitra. It is composed in the Gayatri meter — three padas of eight syllables each — and takes its name from that meter. Prefixed by 'Om' and the three vyahritis (bhur, bhuvah, svah), it asks a single thing: that the divine light illumine our understanding. It is often called 'the mother of the Vedas.'"
+          "text": "The Gayatri Mantra is a 24-syllable Sanskrit verse from Rig Veda 3.62.10, attributed to the sage Vishwamitra. It is composed in the Gayatri meter, three padas of eight syllables each, and takes its name from that meter. Prefixed by 'Om' and the three vyahritis (bhur, bhuvah, svah), it asks a single thing: that the divine light illumine our understanding. It is often called 'the mother of the Vedas.'"
         }
       },
       {
@@ -209,7 +209,7 @@ const schemas = [
         "name": "Who can chant the Gayatri Mantra?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Traditionally, the mantra was reserved for twice-born males (brahmana, kshatriya, vaishya) and formally transmitted at the upanayana (sacred thread) ceremony. Modern reformers — Swami Vivekananda, Swami Dayananda Saraswati, and later Sri Aurobindo — argued for universal access, and today the mantra is widely chanted by people of every background and gender. The verse itself sits openly in the Rig Veda and has been publicly available for millennia."
+          "text": "Traditionally, the mantra was reserved for twice-born males (brahmana, kshatriya, vaishya) and formally transmitted at the upanayana (sacred thread) ceremony. In the nineteenth century Swami Dayananda Saraswati and the Arya Samaj taught it to all castes and to women, and today it is widely chanted by people of every background and gender. The verse itself sits in the Rig Veda, which has been in print since the nineteenth century."
         }
       },
       {
@@ -217,7 +217,7 @@ const schemas = [
         "name": "How many times should I chant the Gayatri Mantra?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The traditional practice is 108 recitations — one full mala. Beginners often start with 3 or 11 repetitions and work upward as pronunciation and concentration develop. What matters is consistency over intensity. Ten recitations every morning, sustained for a year, will do far more than a burst of 108 recitations abandoned after a week."
+          "text": "The traditional practice is 108 recitations, one full mala. Beginners often start with 3 or 11 repetitions and work upward as pronunciation and concentration develop. What matters is consistency over intensity. Ten recitations every morning, sustained for a year, will do far more than a burst of 108 recitations abandoned after a week."
         }
       },
       {
@@ -225,7 +225,7 @@ const schemas = [
         "name": "What is the meaning of 'bhur bhuvah svah'?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The three words — bhur, bhuvah, svah — are called the vyahritis. They name the three lokas or realms of existence: bhur is the earth (physical), bhuvah is the atmospheric or life-force realm (between), and svah is the heavenly or luminous realm (beyond). Reciting them at the start of the mantra is a way of gathering all three worlds into the meditation before addressing the divine source."
+          "text": "The three words bhur, bhuvah and svah are called the vyahritis. They name the three lokas or realms of existence: bhur is the earth (physical), bhuvah is the atmospheric or life-force realm (between), and svah is the heavenly or luminous realm (beyond). Reciting them at the start of the mantra is a way of gathering all three worlds into the meditation before addressing the divine source."
         }
       },
       {
@@ -233,7 +233,7 @@ const schemas = [
         "name": "When is the best time to chant the Gayatri Mantra?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The three traditional times are sunrise, noon, and sunset — collectively called the Sandhya, the 'junctures' of the day. These are the hinge moments when light itself is changing, and the mantra addresses the divine source of light. If you can only choose one, sunrise is the most-practiced. But any consistent time is better than an inconsistent one at the 'ideal' time."
+          "text": "The three traditional times are sunrise, noon, and sunset, collectively called the Sandhya, the 'junctures' of the day. These are the moments when the light changes, and the mantra addresses a god of light. If you can only choose one, sunrise is the usual choice. But any consistent time is better than an inconsistent one at the 'ideal' time."
         }
       },
       {
@@ -241,7 +241,7 @@ const schemas = [
         "name": "What is the difference between the Gayatri Mantra and other mantras?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most well-known mantras — Om Namah Shivaya, Hare Krishna, Om Namo Narayanaya — are name-based invocations of a specific deity. The Gayatri Mantra is different in two ways. First, it does not name a personal deity; it addresses Savitri, the primal source of divine light. Second, it does not ask for protection, wealth, or salvation. It asks for one thing only: the illumination of the intellect. That single-pointed request is why traditional commentators consider it the most philosophically rigorous mantra in the Vedic canon."
+          "text": "Many well-known mantras, such as Om Namah Shivaya, Hare Krishna and Om Namo Narayanaya, are invocations of a deity's name. The Gayatri is a verse of the Rig Veda addressed to Savitṛ, the Vedic god who impels the sun, and it makes a request. The request is for one thing only, the illumination of the intellect, with no mention of protection, wealth or salvation."
         }
       }
     ]
@@ -278,7 +278,7 @@ export default function GayatriMantraPage() {
             <em>Meaning, Word-by-Word, and How to Chant</em>
           </h1>
           <p className="article-subtitle">
-            It is arguably the most-recited Sanskrit mantra on earth. Twenty-four syllables, three thousand years old, chanted at sunrise on every continent. This is what it actually says.
+            Twenty-four syllables from the Rig Veda, recited at sunrise in homes across India and well beyond it. Here is what each word means.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -287,7 +287,7 @@ export default function GayatriMantraPage() {
             <span className="meta-sep">·</span>
             <span className="meta-item">~13 min read</span>
             <span className="meta-sep">·</span>
-            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Published July 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+            <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -302,20 +302,20 @@ export default function GayatriMantraPage() {
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>The Gayatri Mantra addresses Savitri, the divine source of light &mdash; of which the visible sun is only the most accessible symbol</figcaption>
+          <figcaption>The Gayatri Mantra addresses Savitṛ, the Vedic god who impels the sun and all that moves</figcaption>
         </figure>
 
         <p className="lead">
-          If a single Sanskrit verse were to be counted the most-recited on earth, it would probably be this one. Every morning, in millions of homes across India, in temples in Bali and Nepal, in yoga studios in Los Angeles and Berlin, someone opens the day with twenty-four syllables composed roughly three thousand years ago by a sage named Vishwamitra. And yet if you stopped ten of those chanters and asked them what the mantra actually says, you would likely get ten different answers &mdash; and most of them would be wrong.
+          Every morning, in homes across India, in temples in Bali and Nepal, and in yoga studios far from both, someone opens the day with twenty-four syllables that tradition attributes to the sage Vishwamitra. Fewer of them know what each word means.
         </p>
         <p>
-          This is a piece about what the Gayatri Mantra actually says. Not a devotional expansion, not a poster-friendly paraphrase &mdash; the words, in the order the sage placed them, and what each of them means. Because when you learn what it really asks for, you will notice that it is asking for something almost no other mantra asks for. And that single fact is what makes it what tradition calls it: <em>the mother of the Vedas.</em>
+          This piece goes through the words in the order the sage placed them and gives the meaning of each. Tradition calls the mantra <em>vedamātā</em>, the mother of the Vedas.
         </p>
 
         <div className="highlight-box">
           <h3>What you will find in this piece</h3>
           <p>
-            The mantra itself, in Sanskrit, IAST, Hindi, and English. A word-by-word breakdown of each of the fourteen Sanskrit words. The unusual thing it asks for. The history of its composition. How to chant it, and how many times. Three common misunderstandings, and what the text actually says.
+            The mantra itself, in Sanskrit, IAST, Hindi, and English. A word-by-word breakdown of each of the fourteen Sanskrit words. The unusual thing it asks for. The history of its composition. How to chant it, and how many times. Three common misunderstandings.
           </p>
         </div>
 
@@ -331,7 +331,7 @@ export default function GayatriMantraPage() {
           meaningLabel="Translation"
           meaning="We meditate on the effulgent glory of the divine Sun. May that light illumine our understanding."
           insightLabel="Where it comes from"
-          insight="From the Rig Veda 3.62.10, attributed to the sage Vishwamitra. It is called the Gayatri because it is composed in the Gayatri meter (24 syllables in three padas of eight). The three vyahritis at the beginning — bhur, bhuvah, svah — are the three realms: earth, atmosphere, heaven."
+          insight="From the Rig Veda 3.62.10, attributed to the sage Vishwamitra. It is called the Gayatri because it is composed in the Gayatri meter (24 syllables in three padas of eight). The three vyahritis added at the beginning, bhur, bhuvah and svah, name the three realms: earth, atmosphere and heaven."
           essence="May the divine light quicken our understanding."
         />
 
@@ -344,145 +344,145 @@ export default function GayatriMantraPage() {
 
         <h2>The Structure: Vyahritis, Then the Gayatri Proper</h2>
         <p>
-          The mantra as it is commonly recited has three parts. Understanding them separately makes the whole thing considerably clearer.
+          The mantra as it is commonly recited has three parts.
         </p>
         <p>
-          First, <strong>Om</strong> &mdash; the primordial syllable that precedes almost every Vedic mantra. It is not a word so much as the sound-body of the divine itself. In the Mandukya Upanishad, Om is analyzed as the whole of past, present, future, and what lies beyond time.
+          First, <strong>Om</strong>, the syllable placed before many Vedic mantras when they are recited. In the Mandukya Upanishad, Om is analyzed as the whole of past, present, future, and what lies beyond time.
         </p>
         <p>
-          Second, <strong>bhur bhuvah svah</strong> &mdash; the three <em>vyahritis</em>. These are the names of the three <em>lokas</em> or realms: bhur is the earth (physical), bhuvah is the atmosphere or life-force realm (between), svah is the heaven or luminous realm (beyond). Reciting them is a way of gathering all three worlds into the meditation before the mantra proper begins.
+          Second, <strong>bhur bhuvah svah</strong>, the three <em>vyahritis</em>. These are the names of the three <em>lokas</em> or realms: bhur is the earth (physical), bhuvah is the atmosphere or life-force realm (between), svah is the heaven or luminous realm (beyond). Reciting them is a way of gathering all three worlds into the meditation before the mantra proper begins.
         </p>
         <p>
-          Third, the <strong>Gayatri verse</strong> itself: <em>tat savitur vareṇyaṃ bhargo devasya dhīmahi &mdash; dhiyo yo naḥ pracodayāt.</em> This is the twenty-four syllables of Rig Veda 3.62.10. Every other element is preface. This is the mantra.
+          Third, the <strong>Gayatri verse</strong> itself: <em>tat savitur vareṇyaṃ bhargo devasya dhīmahi, dhiyo yo naḥ pracodayāt.</em> These are the twenty-four syllables of Rig Veda 3.62.10, the verse itself; Om and the vyahritis are added before it in recitation.
         </p>
 
         <div className="pull-quote">
-          Om is the sound. Bhur, bhuvah, svah are the worlds. The Gayatri is the ask.
+          Om and the three worlds come first, and the verse itself is the request.
         </div>
 
         <h2>Word-by-Word Translation</h2>
         <p>
-          Below is each Sanskrit word in the order it appears, with its meaning. Fourteen words. Read them slowly &mdash; the mantra is short enough that carrying the meaning of every word is genuinely possible.
+          Below is each of the fourteen Sanskrit words in the order it appears, with its meaning. The mantra is short enough that you can carry the meaning of every word.
         </p>
 
         <ul className="practice-list">
           <li>
-            <span><strong>Om (ॐ)</strong> &mdash; the primordial sound. Not a word with a lexical meaning; it is the sonic form of the absolute. Every Vedic mantra opens with it.</span>
+            <span><strong>Om (ॐ)</strong>:  the primordial sound. Added before the mantra when it is chanted; it is not part of the Rig Veda verse itself.</span>
           </li>
           <li>
-            <span><strong>Bhur (भूः)</strong> &mdash; the earth realm. Physical existence, the body, the material plane. The first of the three vyahritis.</span>
+            <span><strong>Bhur (भूः)</strong>:  the earth realm. Physical existence, the body, the material plane. The first of the three vyahritis.</span>
           </li>
           <li>
-            <span><strong>Bhuvah (भुवः)</strong> &mdash; the atmospheric realm, the life-force (prana), the space between earth and heaven. The second vyahriti.</span>
+            <span><strong>Bhuvah (भुवः)</strong>:  the atmospheric realm, the life-force (prana), the space between earth and heaven. The second vyahriti.</span>
           </li>
           <li>
-            <span><strong>Svah (स्वः)</strong> &mdash; the heavenly realm, the luminous plane, the beyond. The third vyahriti.</span>
+            <span><strong>Svah (स्वः)</strong>:  the heavenly realm, the luminous plane, the beyond. The third vyahriti.</span>
           </li>
           <li>
-            <span><strong>Tat (तत्)</strong> &mdash; &ldquo;that.&rdquo; A pronoun of reverent distance, used to point at the divine without naming it. The same <em>tat</em> appears in the great Upanishadic saying <em>tat tvam asi</em> &mdash; &ldquo;you are that.&rdquo;</span>
+            <span><strong>Tat (तत्)</strong>:  &ldquo;that.&rdquo; A pronoun of reverent distance, used to point at the divine without naming it. The same <em>tat</em> appears in the Upanishadic saying <em>tat tvam asi</em>, &ldquo;you are that.&rdquo;</span>
           </li>
           <li>
-            <span><strong>Savitur (सवितुः)</strong> &mdash; &ldquo;of Savitri.&rdquo; Savitri is not the visible sun. It is the divine principle of enlivening, the source that impels the sun to shine. The name comes from the root <em>su</em>, meaning &ldquo;to impel&rdquo; or &ldquo;to bring forth.&rdquo;</span>
+            <span><strong>Savitur (सवितुः)</strong>:  &ldquo;of Savitṛ.&rdquo; Savitṛ (often written Savitar) is a Vedic solar god, the impeller who sets the sun and all living things in motion. The name comes from the root <em>sū</em>, meaning &ldquo;to impel&rdquo; or &ldquo;to bring forth.&rdquo;</span>
           </li>
           <li>
-            <span><strong>Vareṇyam (वरेण्यं)</strong> &mdash; &ldquo;most worthy of adoration,&rdquo; &ldquo;most excellent,&rdquo; &ldquo;that which is to be chosen.&rdquo; From the root <em>vṛ</em>, &ldquo;to choose.&rdquo;</span>
+            <span><strong>Vareṇyam (वरेण्यं)</strong>:  &ldquo;most worthy of adoration,&rdquo; &ldquo;most excellent,&rdquo; &ldquo;that which is to be chosen.&rdquo; From the root <em>vṛ</em>, &ldquo;to choose.&rdquo;</span>
           </li>
           <li>
-            <span><strong>Bhargo (भर्गो)</strong> &mdash; brilliant effulgence, the burning splendour, the destroyer of ignorance. Bhargo is not gentle light. It is fire that consumes darkness.</span>
+            <span><strong>Bhargo (भर्गो)</strong>:  radiance, splendour. Later commentators read it as the light that burns away ignorance.</span>
           </li>
           <li>
-            <span><strong>Devasya (देवस्य)</strong> &mdash; &ldquo;of the divine,&rdquo; &ldquo;of the shining one.&rdquo; From <em>div</em>, &ldquo;to shine.&rdquo;</span>
+            <span><strong>Devasya (देवस्य)</strong>:  &ldquo;of the divine,&rdquo; &ldquo;of the shining one.&rdquo; From <em>div</em>, &ldquo;to shine.&rdquo;</span>
           </li>
           <li>
-            <span><strong>Dhīmahi (धीमहि)</strong> &mdash; &ldquo;we meditate on.&rdquo; First-person plural, cohortative. Not &ldquo;I&rdquo; but <em>we</em>. The Gayatri is a communal meditation, never a private one.</span>
+            <span><strong>Dhīmahi (धीमहि)</strong>:  &ldquo;we meditate on,&rdquo; or &ldquo;may we meditate on.&rdquo; The verb is plural: <em>we</em>.</span>
           </li>
           <li>
-            <span><strong>Dhiyo (धियो)</strong> &mdash; &ldquo;the intellect,&rdquo; &ldquo;the understanding,&rdquo; &ldquo;the discerning faculty of mind.&rdquo; From <em>dhī</em>, the same root as <em>dhīmahi</em>. This is what the mantra asks to have illumined.</span>
+            <span><strong>Dhiyo (धियो)</strong>:  &ldquo;the intellect,&rdquo; &ldquo;the understanding,&rdquo; &ldquo;the discerning faculty of mind.&rdquo; From <em>dhī</em>, the same root as <em>dhīmahi</em>. This is what the mantra asks to have illumined.</span>
           </li>
           <li>
-            <span><strong>Yo (यो)</strong> &mdash; &ldquo;who,&rdquo; &ldquo;which.&rdquo; A relative pronoun referring back to the divine Savitri.</span>
+            <span><strong>Yo (यो)</strong>:  &ldquo;who,&rdquo; &ldquo;which.&rdquo; A relative pronoun referring back to Savitṛ.</span>
           </li>
           <li>
-            <span><strong>Naḥ (नः)</strong> &mdash; &ldquo;our.&rdquo; Again communal. Not <em>my</em> intellect. <em>Our</em> intellect.</span>
+            <span><strong>Naḥ (नः)</strong>:  &ldquo;our.&rdquo; Plural again: <em>our</em> intellect.</span>
           </li>
           <li>
-            <span><strong>Pracodayāt (प्रचोदयात्)</strong> &mdash; &ldquo;may it inspire,&rdquo; &ldquo;may it propel forward,&rdquo; &ldquo;may it awaken.&rdquo; From the root <em>cud</em>, &ldquo;to impel.&rdquo; The optative mood makes it a prayer, not a demand.</span>
+            <span><strong>Pracodayāt (प्रचोदयात्)</strong>:  &ldquo;may it inspire,&rdquo; &ldquo;may it propel forward,&rdquo; &ldquo;may it awaken.&rdquo; From the root <em>cud</em>, &ldquo;to impel.&rdquo; The form expresses a wish: may he urge on.</span>
           </li>
         </ul>
 
         <p>
-          Read as a single sentence: <em>We meditate on that most-adorable brilliant splendour of the divine Savitri &mdash; may he inspire our understanding.</em> That is the whole ask.
+          Read as a single sentence: <em>We meditate on that most-adorable brilliant splendour of the god Savitṛ; may he inspire our understanding.</em>
         </p>
 
-        <h2>What the Mantra Is Actually Asking For</h2>
+        <h2>What the Mantra Asks For</h2>
         <p>
-          Notice what is missing from that translation. There is no request for wealth. No request for health. No request for protection from enemies. No request for a good spouse, or many sons, or safe travel, or long life. All of these are standard requests in Vedic hymns; the Rig Veda is full of them. The Gayatri asks for none of them.
+          The translation contains no request for wealth, health, protection from enemies, sons, safe travel or long life. Those are standard requests in Vedic hymns, and the Rig Veda is full of them. The Gayatri asks for none of them.
         </p>
         <p>
-          It asks for one thing: that the divine light illumine our <em>dhī</em> &mdash; our intellect, our understanding, our capacity to discern. Not that we be given the right answer. That we be given the light by which we can see the right answer for ourselves. This is a philosophically precise ask, and it is philosophically unusual.
+          It asks for one thing: that the god urge on our <em>dhī</em>, our thought and understanding. It asks for the light to see by, and leaves the answers to us.
         </p>
         <p>
-          Most prayers, in most traditions, ask for a specific outcome. The Gayatri asks for the faculty by which one can navigate any outcome. Give me not the fish, but the light by which I can see the water. This is why traditional commentators call it the mother of all mantras: every other legitimate ask presupposes an intellect illumined enough to know what to ask for.
+          Many prayers ask for a specific outcome. The Gayatri asks for the faculty you use to deal with any outcome.
         </p>
 
         <div className="highlight-box">
           <h3>The unusual ask</h3>
           <p>
-            The Gayatri does not ask for wealth, health, protection, or salvation. It asks only that the divine light quicken the intellect &mdash; the faculty by which every other question can be answered. This is why it is called the mother of the Vedas.
+            The Gayatri asks for no wealth, health, protection or salvation; it asks only that the divine light quicken the intellect, the faculty you use to answer every other question.
           </p>
         </div>
 
-        <h2>The Sun in the Gayatri Is Not the Sun</h2>
+        <h2>Savitṛ and the Sun</h2>
         <p>
-          One of the most common misreadings of the Gayatri is that it is a sun-worship mantra. It is not. The Sanskrit word is <em>Savitri</em>, not <em>Surya</em>. Surya is the name of the visible sun, the disc in the sky. Savitri is something different &mdash; the divine principle of impelling, of bringing forth, of enlivening. Savitri is what makes the sun shine, not the sun itself.
+          The Gayatri is often called a sun mantra. The god it names is <em>Savitṛ</em>, and the Rig Veda has a separate name, <em>Sūrya</em>, for the sun itself. Savitṛ is a solar god whose particular work is impelling: he rouses beings in the morning and sends them to rest at night.
         </p>
         <p>
-          The distinction matters. If the Gayatri were simply a sun-worship verse, its meaning would collapse the moment you stepped indoors or the sun went behind a cloud. But Savitri is not weather-dependent. Savitri is the source of all light &mdash; the light of the sun, yes, but also the light of consciousness, the light of understanding, the light by which anything is seen at all.
+          Later Vedānta readers took the step further and read Savitṛ&apos;s light as the light of consciousness, the light by which anything is understood. That is why a verse addressed to a solar god can ask for understanding.
         </p>
         <p>
-          The visible sun is Savitri&apos;s most accessible metaphor. It is the thing everyone can point to and say <em>that is what illumination looks like</em>. But the mantra addresses the source of which the sun is only the sign. Sri Aurobindo, in his commentary, called Savitri the &ldquo;creator of the truth-consciousness.&rdquo; That is closer to what the sage actually means.
+          The visible sun is the thing everyone can point to and say <em>that is what illumination looks like</em>. That is one reason the mantra is traditionally recited facing the sun at dawn.
         </p>
 
         <div className="pull-quote">
-          The visible sun is what you see. Savitri is why there is anything to see at all.
+          In the hymns, the sun is what you see, and Savitṛ is the god who sets it moving.
         </div>
 
         <h2>History and Tradition</h2>
         <p>
-          The Gayatri sits in the third book of the Rig Veda, verse 3.62.10 &mdash; one of the oldest sections of one of the oldest books in the world. It is attributed to the sage Vishwamitra, the same rishi whose transformation from king to sage is one of the great narratives in Vedic literature. He was, tradition says, once a warrior who out of pride tried to defeat the sage Vasishtha, failed, and turned instead to austerity. The Gayatri is his gift.
+          The Gayatri sits in the third book of the Rig Veda, at 3.62.10. Book 3 is one of the &ldquo;family books&rdquo; (2 to 7) that scholars treat as the oldest core of the collection. It is attributed to the sage Vishwamitra, whose change from king to sage is told in the epics. He was, tradition says, once a warrior who out of pride tried to defeat the sage Vasishtha, failed, and turned instead to austerity. The Gayatri is his gift.
         </p>
         <p>
-          The verse is composed in the Gayatri meter, from which it takes its name. The Gayatri meter has three <em>padas</em> or lines of eight syllables each &mdash; twenty-four syllables total. When Vedic tradition calls this verse <em>the</em> Gayatri, it means: the Gayatri-metered verse so foundational that its meter has become its name.
+          The verse is composed in the Gayatri meter, from which it takes its name. The Gayatri meter has three <em>padas</em> or lines of eight syllables each, twenty-four syllables in all. When tradition calls this verse <em>the</em> Gayatri, it means the one Gayatri-metered verse that took the meter&apos;s name for itself.
         </p>
         <p>
-          Traditionally, the mantra was formally transmitted to a boy at his <em>upanayana</em>, the sacred-thread ceremony that marked his entry into Vedic study. The teacher whispered the mantra into the student&apos;s ear, and from that moment onward the student was expected to recite it three times a day &mdash; at sunrise, noon, and sunset &mdash; for the rest of his life. This practice is called <em>Sandhya vandana</em>: worship at the junctures of the day.
+          Traditionally, the mantra was formally transmitted to a boy at his <em>upanayana</em>, the sacred-thread ceremony that marked his entry into Vedic study. The teacher whispered the mantra into the student&apos;s ear, and from that moment onward the student was expected to recite it three times a day, at sunrise, noon and sunset, for the rest of his life. This practice is called <em>Sandhya vandana</em>: worship at the junctures of the day.
         </p>
         <p>
-          Historically, this transmission was restricted to the three &ldquo;twice-born&rdquo; varnas &mdash; brahmana, kshatriya, vaishya &mdash; and to males within them. But the verse itself sits openly in the Rig Veda, has been transcribed and printed for centuries, and has never actually been secret. Modern reformers &mdash; Swami Dayananda Saraswati of the Arya Samaj, Swami Vivekananda, and later Sri Aurobindo &mdash; argued that the mantra&apos;s restriction was a social accretion, not a scriptural one, and that its blessing was universal. Their view has largely prevailed. Today the Gayatri is chanted by women and men of every background, and the argument for universal access is settled in almost every serious modern school.
+          Historically, this transmission was restricted to the three &ldquo;twice-born&rdquo; varnas (brahmana, kshatriya, vaishya), and to males within them. The verse itself sits in the Rig Veda, which has been in print since the nineteenth century. In the same century Swami Dayananda Saraswati and the Arya Samaj taught the mantra to people of every caste and to women, arguing that the restriction was social custom. Today the Gayatri is chanted by women and men of many backgrounds, though some traditional lineages keep the older rules.
         </p>
 
-        <h3>Two commentaries worth knowing</h3>
+        <h3>Mother of the Vedas</h3>
         <p>
-          Swami Vivekananda taught the Gayatri throughout his American lectures, calling it &ldquo;the essence of the Vedas.&rdquo; His argument was straightforward: any teaching that asks only for the illumination of the intellect cannot rationally be restricted by birth. Sri Aurobindo devoted a substantial part of his <em>Hymns to the Mystic Fire</em> and <em>The Secret of the Veda</em> to unpacking Savitri as the truth-consciousness, arguing that the mantra was the seed of the whole integral yoga.
+          The title <em>vedamātā</em>, mother of the Vedas, goes back to the Atharva Veda (19.71), which praises the boon-giving mother of the Vedas. In the Bhagavad Gita, Krishna names this meter among his own forms: &ldquo;of meters, I am the Gayatri&rdquo; (10.35).
         </p>
 
         <h2>How to Chant It: A Practical Guide</h2>
         <p>
-          The Gayatri rewards technique. Below is the traditional method, stripped of the parts that no longer travel well.
+          Below is the traditional method, in a form that fits a modern morning.
         </p>
 
         <ul className="practice-list">
           <li>
-            <span><strong>Start with pronunciation.</strong> The Sanskrit sounds matter. Learn the IAST guide above and, if possible, listen to a Vedic reciter before you begin. The dentals (t, d), the retroflex (ṇ), the long vowels (ā, ī), and the sibilants (ṣ, ś) each carry the meaning. If your <em>pracodayāt</em> becomes <em>prachodayat</em>, you have said something adjacent but different.</span>
+            <span><strong>Start with pronunciation.</strong> The Sanskrit sounds matter. Learn the IAST guide above and, if possible, listen to a Vedic reciter before you begin. Take care with the dentals (t, d), the retroflex (ṇ) and the long vowels (ā, ī). The &ldquo;ch&rdquo; in the common spelling <em>prachodayat</em> is the English way of writing the Sanskrit <em>c</em>, so both spellings name the same sound.</span>
           </li>
           <li>
             <span><strong>Begin with 3 or 11 recitations.</strong> Do not start with 108. Start with three careful, correctly-pronounced repetitions, done every morning for a month. Then move to eleven. The tradition is patient with beginners.</span>
           </li>
           <li>
-            <span><strong>Work up to 108.</strong> The traditional daily practice is 108 recitations &mdash; one full mala. The number is symbolic (108 has meanings across every Indic tradition) and practically useful: it is roughly the length at which the mind stops resisting and settles into the rhythm.</span>
+            <span><strong>Work up to 108.</strong> The traditional daily practice is 108 recitations, one full mala. The number is traditional, and the mala keeps count so you don&apos;t have to.</span>
           </li>
           <li>
-            <span><strong>Chant at the Sandhya times.</strong> Sunrise, noon, sunset &mdash; the three <em>sandhis</em> or junctures. These are the hinge moments of the day, when light itself is transforming. If you can only do one, sunrise is the traditional choice.</span>
+            <span><strong>Chant at the Sandhya times.</strong> Sunrise, noon and sunset are the three <em>sandhis</em> or junctures of the day, when the light changes. If you can only do one, sunrise is the traditional choice.</span>
           </li>
           <li>
             <span><strong>Focus on meaning during the last third.</strong> For the first sixty or seventy recitations, let the sound do the work. In the last third, let the meaning come forward. <em>May the divine light illumine our understanding.</em> Hold that ask consciously.</span>
@@ -492,50 +492,51 @@ export default function GayatriMantraPage() {
           </li>
         </ul>
 
-        <h2>Benefits &mdash; What Practitioners Report</h2>
+        <h2>Benefits: What Practitioners Report</h2>
         <p>
-          A brief note on benefits, because they are often overclaimed. Traditional texts attribute vast powers to the Gayatri &mdash; purification of karma, awakening of kundalini, protection from all harm. Modern practitioners report something more measured, and the measured report is what is worth passing on.
+          A brief note on benefits, because they are often overclaimed. Traditional texts attribute great powers to the Gayatri, such as purification from sin and protection from harm. Modern practitioners report something more modest.
         </p>
         <p>
-          The most consistent report is <em>clarity before decisions</em>. People who chant the Gayatri daily for months describe a settled quality to the morning &mdash; a sense that the day begins with a small pocket of stillness that carries into the first meeting or the first difficult conversation. This is unsurprising: a five-to-fifteen-minute meditation on a single meaningful phrase, done daily, will produce measurable effects on attention and equanimity in any tradition.
+          A common report is <em>clarity before decisions</em>. People who chant the Gayatri daily for months describe a settled start to the day, a few minutes of stillness that carry into the first meeting or the first hard conversation.
         </p>
         <p>
-          Beyond that: the discipline of ritual (having something you do every morning, regardless of mood), the community connection (chanting the same mantra that millions of others chant at the same time), and the sense of continuity with a very old lineage. These are real benefits. Whether they are &ldquo;spiritual&rdquo; or &ldquo;psychological&rdquo; is a question the Gayatri itself does not require you to settle.
+          Beyond that, people mention the discipline of a daily ritual done regardless of mood, the sense of chanting the same words as many others, and the link to a very old line of practice. You can value these without deciding what kind of benefit they are.
         </p>
 
         <h2>Three Common Misunderstandings</h2>
-        <h3>Misreading 1: &ldquo;It is a sun-worship mantra&rdquo;</h3>
+        <h3>Misreading 1: &ldquo;It is only about the visible sun&rdquo;</h3>
         <p>
-          It is not. The mantra addresses <em>Savitri</em> &mdash; the divine principle of enlivening &mdash; not <em>Surya</em>, the visible sun. The sun is the metaphor because it is the most accessible source of light we can point to, but the ask is directed at the source of which the sun is only the sign. Reading the Gayatri as sun worship is like reading a love letter as a description of the paper it was written on.
+          The mantra addresses <em>Savitṛ</em>, a solar god whose role in the Rig Veda is to impel and enliven, and it asks him for understanding. Vedānta commentators go further and read his light as the light of consciousness. Both readings take the sun as the starting point and the intellect as the thing asked for.
         </p>
 
         <h3>Misreading 2: &ldquo;It grants material wishes&rdquo;</h3>
         <p>
-          This is popular in modern devotional literature and it is textually indefensible. The mantra asks for exactly one thing: the illumination of the intellect. It does not ask for wealth, health, a good spouse, or the removal of enemies. Devotional traditions have added those meanings on top of the text, but the text itself is precise. What it grants is the faculty by which one can navigate one&apos;s life &mdash; not the specific outcomes of it.
+          This is popular in modern devotional literature, and has no basis in the words of the verse. The mantra asks for one thing, the illumination of the intellect. Devotional traditions have added wealth, health and protection on top of the text.
         </p>
 
         <h3>Misreading 3: &ldquo;You need a guru to receive it&rdquo;</h3>
         <p>
-          Traditionally, yes, the mantra was transmitted by a teacher at the upanayana ceremony, and there are still lineages where formal <em>diksha</em> (initiation) is considered essential. But the verse itself sits in the public Rig Veda, has been printed in every serious edition of the text for centuries, and has been publicly taught by Vivekananda, Aurobindo, Dayananda, and every modern reformer of note. If you have access to the mantra, you have access to the practice. A teacher deepens; the absence of one does not disqualify.
+          Traditionally, yes, the mantra was transmitted by a teacher at the upanayana ceremony, and there are still lineages where formal <em>diksha</em> (initiation) is considered essential. But the verse itself sits in the public Rig Veda, appears in every printed edition of the text, and the Arya Samaj has taught it openly since the nineteenth century. If you have access to the mantra, you have access to the practice. A teacher helps, and lacking one is no bar to practice.
         </p>
 
         <h2>The Gayatri Beyond the Gayatri</h2>
         <p>
-          One last thing worth mentioning. The Gayatri meter has been used for other mantras addressed to other deities &mdash; the <em>Ganesha Gayatri</em>, the <em>Krishna Gayatri</em>, the <em>Durga Gayatri</em>, the <em>Shiva Gayatri</em>, and many more. Each follows the same 24-syllable structure across three padas of eight, and each ends with some variant of <em>tanno [deity] pracodayāt</em> &mdash; &ldquo;may that [deity] inspire us.&rdquo;
+          One last thing worth mentioning. The Gayatri meter has been used for other mantras addressed to other deities: the <em>Ganesha Gayatri</em>, the <em>Krishna Gayatri</em>, the <em>Durga Gayatri</em>, the <em>Shiva Gayatri</em>, and many more. Each follows the same 24-syllable structure across three padas of eight, and each ends with some variant of <em>tanno [deity] pracodayāt</em>, &ldquo;may that [deity] inspire us.&rdquo;
         </p>
         <p>
-          These are not the Gayatri. They are Gayatri-metered mantras. When tradition calls this verse <em>the</em> Gayatri &mdash; the mother of the Vedas, the seed mantra &mdash; it means the original: Rig Veda 3.62.10, Vishwamitra&apos;s hymn to Savitri, the twenty-four syllables that ask only that the divine light quicken our understanding. Everything else is descended from it.
+          These are Gayatri-metered mantras. When tradition speaks of <em>the</em> Gayatri, the mother of the Vedas, it means Rig Veda 3.62.10, Vishwamitra&apos;s verse to Savitṛ.
         </p>
 
         <div className="highlight-box">
           <h3>If someone asks you for the Gayatri&apos;s meaning in one sentence</h3>
           <p>
-            <em>May the divine source of all light &mdash; of which the sun is only the visible sign &mdash; illumine our understanding.</em> That is the whole of it. Everything else is commentary.
+            <em>We meditate on the splendour of the god Savitṛ; may he inspire our understanding.</em>
           </p>
         </div>
       </div>
 
 
+      <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the deity&apos;s name to Savitṛ (Savitar), not Savitri; noted that Om is added in recitation and is not part of the Rig Veda verse; removed a claim about the number 108, a false claim that &ldquo;prachodayat&rdquo; is a different word, and unsupported claims about Vivekananda and Sri Aurobindo; copy edited.</p>
       <FeedbackWidget pageType="blog" />
       <div className="faq-section">
         <h2>Frequently Asked Questions</h2>
@@ -543,42 +544,42 @@ export default function GayatriMantraPage() {
         <div className="faq-item">
           <strong>What is the Gayatri Mantra?</strong>
           <p>
-            The Gayatri Mantra is a 24-syllable Sanskrit verse from Rig Veda 3.62.10, attributed to the sage Vishwamitra. It is composed in the Gayatri meter &mdash; three padas of eight syllables each &mdash; and takes its name from that meter. Prefixed by <em>Om</em> and the three vyahritis (bhur, bhuvah, svah), it asks a single thing: that the divine light illumine our understanding. It is often called &ldquo;the mother of the Vedas.&rdquo;
+            The Gayatri Mantra is a 24-syllable Sanskrit verse from Rig Veda 3.62.10, attributed to the sage Vishwamitra. It is composed in the Gayatri meter, three padas of eight syllables each, and takes its name from that meter. Prefixed by <em>Om</em> and the three vyahritis (bhur, bhuvah, svah), it asks a single thing: that the divine light illumine our understanding. It is often called &ldquo;the mother of the Vedas.&rdquo;
           </p>
         </div>
 
         <div className="faq-item">
           <strong>Who can chant the Gayatri Mantra?</strong>
           <p>
-            Traditionally, the mantra was reserved for twice-born males (brahmana, kshatriya, vaishya) and formally transmitted at the upanayana (sacred thread) ceremony. Modern reformers &mdash; Swami Vivekananda, Swami Dayananda Saraswati, and later Sri Aurobindo &mdash; argued for universal access, and today the mantra is widely chanted by people of every background and gender. The verse itself sits openly in the Rig Veda and has been publicly available for millennia.
+            Traditionally, the mantra was reserved for twice-born males (brahmana, kshatriya, vaishya) and formally transmitted at the upanayana (sacred thread) ceremony. In the nineteenth century Swami Dayananda Saraswati and the Arya Samaj taught it to all castes and to women, and today it is widely chanted by people of every background and gender. The verse itself sits in the Rig Veda, which has been in print since the nineteenth century.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>How many times should I chant the Gayatri Mantra?</strong>
           <p>
-            The traditional practice is 108 recitations &mdash; one full mala. Beginners often start with 3 or 11 repetitions and work upward as pronunciation and concentration develop. What matters is consistency over intensity. Ten recitations every morning, sustained for a year, will do far more than a burst of 108 recitations abandoned after a week.
+            The traditional practice is 108 recitations, one full mala. Beginners often start with 3 or 11 repetitions and work upward as pronunciation and concentration develop. What matters is consistency over intensity. Ten recitations every morning, sustained for a year, will do far more than a burst of 108 recitations abandoned after a week.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What is the meaning of &ldquo;bhur bhuvah svah&rdquo;?</strong>
           <p>
-            The three words &mdash; <em>bhur, bhuvah, svah</em> &mdash; are called the vyahritis. They name the three <em>lokas</em> or realms of existence: bhur is the earth (physical), bhuvah is the atmospheric or life-force realm (between), and svah is the heavenly or luminous realm (beyond). Reciting them at the start of the mantra is a way of gathering all three worlds into the meditation before addressing the divine source.
+            The three words <em>bhur, bhuvah</em> and <em>svah</em> are called the vyahritis. They name the three <em>lokas</em> or realms of existence: bhur is the earth (physical), bhuvah is the atmospheric or life-force realm (between), and svah is the heavenly or luminous realm (beyond). Reciting them at the start of the mantra is a way of gathering all three worlds into the meditation before addressing the divine source.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>When is the best time to chant the Gayatri Mantra?</strong>
           <p>
-            The three traditional times are sunrise, noon, and sunset &mdash; collectively called the <em>Sandhya</em>, the &ldquo;junctures&rdquo; of the day. These are the hinge moments when light itself is changing, and the mantra addresses the divine source of light. If you can only choose one, sunrise is the most-practiced. But any consistent time is better than an inconsistent one at the &ldquo;ideal&rdquo; time.
+            The three traditional times are sunrise, noon, and sunset, collectively called the <em>Sandhya</em>, the &ldquo;junctures&rdquo; of the day. These are the moments when the light changes, and the mantra addresses a god of light. If you can only choose one, sunrise is the usual choice. But any consistent time is better than an inconsistent one at the &ldquo;ideal&rdquo; time.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What is the difference between the Gayatri Mantra and other mantras?</strong>
           <p>
-            Most well-known mantras &mdash; <em>Om Namah Shivaya, Hare Krishna, Om Namo Narayanaya</em> &mdash; are name-based invocations of a specific deity. The Gayatri Mantra is different in two ways. First, it does not name a personal deity; it addresses Savitri, the primal source of divine light. Second, it does not ask for protection, wealth, or salvation. It asks for one thing only: the illumination of the intellect. That single-pointed request is why traditional commentators consider it the most philosophically rigorous mantra in the Vedic canon.
+            Many well-known mantras, such as <em>Om Namah Shivaya, Hare Krishna</em> and <em>Om Namo Narayanaya</em>, are invocations of a deity&apos;s name. The Gayatri is a verse of the Rig Veda addressed to Savitṛ, the Vedic god who impels the sun, and it makes a request. The request is for one thing only, the illumination of the intellect, with no mention of protection, wealth or salvation.
           </p>
         </div>
       </div>

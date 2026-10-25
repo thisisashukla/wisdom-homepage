@@ -7,11 +7,11 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "30 Most Famous Bhagavad Gita Quotes in Sanskrit — with English Meaning & Transliteration",
-  description: "The 30 most famous Bhagavad Gita quotes in original Sanskrit (Devanagari), each with IAST transliteration you can read aloud, plain English meaning, and short context. Karma, atman, bhakti, surrender — the verses every seeker returns to.",
+  description: "The 30 most famous Bhagavad Gita quotes in original Sanskrit (Devanagari), each with IAST transliteration you can read aloud, plain English meaning, and short context. Verses on karma, atman, bhakti and surrender.",
   keywords: "bhagavad gita quotes in sanskrit, bhagwat geeta shlok in sanskrit, gita shlok sanskrit, bhagavad gita verses in sanskrit, gita quotes sanskrit with meaning, geeta shloka in sanskrit with hindi meaning, one line gita quotes sanskrit, bhagavad gita famous verses, karmanye vadhikaraste, sarva dharman parityajya",
   openGraph: {
     title: "30 Most Famous Bhagavad Gita Quotes in Sanskrit — with English Meaning | Wisdom",
-    description: "The most famous Gita verses in Devanagari, with IAST, Hindi, and English meaning. Karma, atman, bhakti, and the verses every seeker returns to.",
+    description: "The most famous Gita verses in Devanagari, with IAST, Hindi, and English meaning. Verses on karma, atman, bhakti and surrender.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-quotes-sanskrit",
     siteName: 'Wisdom',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     site: '@sansearchapp',
     creator: '@thisisashukla',
     title: "30 Most Famous Bhagavad Gita Quotes in Sanskrit — with English Meaning | Wisdom",
-    description: "The most famous Gita verses in Devanagari, with IAST, Hindi, and English meaning. Karma, atman, bhakti, and the verses every seeker returns to.",
+    description: "The most famous Gita verses in Devanagari, with IAST, Hindi, and English meaning. Verses on karma, atman, bhakti and surrender.",
     images: ['https://wisdomquotes.in/og-image.webp'],
   },
   alternates: {
@@ -163,7 +163,7 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Bhagavad Gita Quotes in Sanskrit — 30 Famous Verses with Hindi and English Meaning",
-    "description": "The most famous Bhagavad Gita quotes in original Sanskrit (Devanagari), with IAST transliteration, Hindi meaning, and English translation. Karma, atman, bhakti — the verses every seeker returns to.",
+    "description": "The most famous Bhagavad Gita quotes in original Sanskrit (Devanagari), with IAST transliteration, Hindi meaning, and English translation. Verses on karma, atman, bhakti and surrender.",
     "datePublished": "2026-07-05",
     "dateModified": "2026-08-01",
     "image": { "@type": "ImageObject", "url": "https://wisdomquotes.in/og-image.webp", "width": 1200, "height": 630 },
@@ -199,10 +199,10 @@ const schemas = [
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Which is the most famous verse of the Bhagavad Gita in Sanskrit?",
+        "name": "Which Bhagavad Gita verse is best known in Sanskrit?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The most famous Sanskrit verse is BG 2.47: karmaṇyevādhikāraste mā phaleṣu kadācana. In Devanagari: कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। It means, 'You have the right to act, but never to the fruits of action.' It is the seed verse of karma yoga and probably the single most-cited line from any Indian scripture. BG 18.66 (sarva-dharmān parityajya) is a close second because it is Krishna's final instruction — the parting sentence of the entire dialogue."
+          "text": "The verse people quote first is BG 2.47: karmaṇyevādhikāraste mā phaleṣu kadācana. In Devanagari: कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। It means, 'You have the right to act, but never to the fruits of action.' It is the seed verse of karma yoga. BG 18.66 (sarva-dharmān parityajya) is a close second; it is Krishna's last instruction, which he introduces in 18.64 as sarva-guhyatamam, the secret of all secrets."
         }
       },
       {
@@ -210,7 +210,7 @@ const schemas = [
         "name": "Should I read Gita quotes in Sanskrit or Hindi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Both, in that order. The Sanskrit is the source — the meter, the sound, and the exact word-choices Krishna is portrayed as speaking. Reading only the Hindi or English translation is like reading only the sheet music of a raga without hearing it. Chant the Sanskrit first, then read the Hindi meaning to understand, then the English translation to bridge cultures. The Sanskrit carries something the translations cannot: the anuṣṭubh meter itself is part of the teaching."
+          "text": "Both, in that order. The Sanskrit is the source — the meter, the sound, and the exact word-choices Krishna is portrayed as speaking. Reading only a translation is like reading the notation of a raga without hearing it. Chant the Sanskrit first, then read the Hindi meaning, then the English translation. The anuṣṭubh meter and the sound of the words are lost in every translation."
         }
       },
       {
@@ -218,7 +218,7 @@ const schemas = [
         "name": "How do I pronounce Sanskrit Gita verses correctly?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Three quick rules. First, 'a' at the end of a word is short (nearly swallowed) — so कर्म is 'kar-ma,' not 'kar-maa.' Second, aspirated consonants (kh, gh, ch, jh, ṭh, ḍh, ph, bh) genuinely have a breathy release — bhakti has real air after the 'bh.' Third, long vowels (ā, ī, ū) are held twice as long as short vowels. If you can, listen to a Gita Press or Krishnamacharya recording alongside reading. Even a week of listening changes how the shlokas sit in your mouth."
+          "text": "Three quick rules. First, 'a' at the end of a word is short (nearly swallowed) — so कर्म is 'kar-ma,' not 'kar-maa.' Second, aspirated consonants (kh, gh, ch, jh, ṭh, ḍh, ph, bh) genuinely have a breathy release — bhakti has real air after the 'bh.' Third, long vowels (ā, ī, ū) are held twice as long as short vowels. If you can, listen to a recording by a trained chanter while you read. Even a week of listening changes how the shlokas sit in your mouth."
         }
       },
       {
@@ -226,7 +226,7 @@ const schemas = [
         "name": "What does 'karmaṇyevādhikāraste' mean word by word?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Karmaṇi means 'in action.' Eva means 'only.' Adhikāraḥ means 'right' or 'authority.' Te means 'yours.' The whole line — karmaṇyevādhikāraste — literally reads: 'Only in action is your right.' The second half completes the thought: mā phaleṣu kadācana — 'never in the fruits.' Krishna is drawing a clean line: you have jurisdiction over what you do, none over what your action yields. The rest of the shloka closes the escape hatches."
+          "text": "Karmaṇi means 'in action.' Eva means 'only.' Adhikāraḥ means 'right' or 'authority.' Te means 'yours.' The whole line — karmaṇyevādhikāraste — literally reads: 'Only in action is your right.' The second half completes the thought: mā phaleṣu kadācana — 'never in the fruits.' Krishna draws a clean line: you have a say over what you do, and none over what your action yields. The second line of the shloka adds that the fruit should not be your motive and that inaction is no way out."
         }
       },
       {
@@ -234,7 +234,7 @@ const schemas = [
         "name": "What is the difference between a shloka and a mantra?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A shloka (श्लोक) is a Sanskrit verse form — typically two lines of sixteen syllables each, in the anuṣṭubh meter. The Bhagavad Gita is composed almost entirely of shlokas. A mantra (मन्त्र) is a syllable, word, or phrase used as an instrument of consciousness — designed to be repeated, often ritually. All mantras are Sanskrit; not all shlokas are mantras. But many Gita shlokas — 2.47, 15.7, 18.66 — are traditionally used as mantras because chanting them itself is considered transformative."
+          "text": "A shloka (श्लोक) is a Sanskrit verse form — typically two lines of sixteen syllables each, in the anuṣṭubh meter. The Bhagavad Gita is composed almost entirely of shlokas. A mantra (मन्त्र) is a syllable, word or phrase meant to be repeated, often in ritual. Most traditional mantras are in Sanskrit, and only some shlokas are used as mantras. Some Gita verses, 18.66 among them, are chanted daily in particular traditions."
         }
       },
       {
@@ -279,7 +279,7 @@ export default function BhagavadGitaQuotesSanskritPage() {
             <em>30 Famous Verses with Hindi &amp; English Meaning</em>
           </h1>
           <p className="article-subtitle">
-            Most Gita quotes online strip away the Sanskrit. This piece restores it &mdash; thirty of the most-loved verses in Devanagari, with IAST transliteration, Hindi meaning, and English translation.
+            Most Gita quotes online strip away the Sanskrit. Here are thirty well-known verses in Devanagari, with IAST transliteration, Hindi meaning and English translation.
           </p>
           <div className="article-meta">
             <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -288,7 +288,7 @@ export default function BhagavadGitaQuotesSanskritPage() {
             <span className="meta-sep">·</span>
             <span className="meta-item">~18 min read</span>
             <span className="meta-sep">·</span>
-            <span className="meta-item" style={{ fontStyle: 'italic' }}>Sanskrit text follows Gita Press &amp; ISKCON canon. English translations edited by Ankur Shukla. Hindi meaning drafted with AI, human-reviewed. Published July 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+            <span className="meta-item" style={{ fontStyle: 'italic' }}>Sanskrit text follows Gita Press &amp; ISKCON canon. English translations edited by Ankur Shukla. Hindi meaning drafted with AI, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
           </div>
         </div>
       </div>
@@ -303,14 +303,14 @@ export default function BhagavadGitaQuotesSanskritPage() {
             loading="eager"
             fetchPriority="high"
           />
-          <figcaption>The verses in the tongue Krishna is portrayed as speaking &mdash; Sanskrit, first</figcaption>
+          <figcaption>The verses in Sanskrit first, the language of the text</figcaption>
         </figure>
 
         <p className="lead">
-          Almost every Bhagavad Gita quote you have read online has been stripped of its Sanskrit. Someone extracted the English meaning, wrote it on a sunset background, and let the original disappear. What was lost is not decoration. It is the meter, the sound, the exact word Krishna is portrayed as choosing. This piece restores it. Thirty of the most-loved verses in the original Devanagari, with IAST transliteration for pronunciation, a careful Hindi meaning, and an English translation that stays close to the text.
+          Almost every Bhagavad Gita quote you have read online has been stripped of its Sanskrit. Someone extracted the English meaning, wrote it on a sunset background, and let the original disappear. What disappeared with it was the meter, the sound and the exact word Krishna is portrayed as choosing. Below are thirty well-known verses in the original Devanagari, with IAST transliteration for pronunciation, a careful Hindi meaning, and an English translation that stays close to the text.
         </p>
         <p>
-          The Sanskrit matters for three reasons. First, sound. The Gita is composed almost entirely in the <em>anuṣṭubh</em> meter &mdash; two lines of sixteen syllables each. Chanted, it moves like breath. Second, precision. Words like <em>dharma</em>, <em>karma</em>, <em>ātman</em>, and <em>yoga</em> carry ranges of meaning no single English word can hold. Reading them in Sanskrit is reading them at full resolution. Third, roots. Sanskrit is transparent in a way modern languages rarely are &mdash; <em>karmaṇi</em> lets you feel the root <em>kṛ</em> (to do) inside the noun. That transparency is part of the teaching.
+          The Sanskrit matters for three reasons. First, sound. The Gita is composed almost entirely in the <em>anuṣṭubh</em> meter &mdash; two lines of sixteen syllables each. Chanted, it moves like breath. Second, precision. Words like <em>dharma</em>, <em>karma</em>, <em>ātman</em>, and <em>yoga</em> carry ranges of meaning no single English word can hold. Reading them in Sanskrit keeps that range. Third, roots. Sanskrit is transparent in a way modern languages rarely are &mdash; <em>karmaṇi</em> lets you feel the root <em>kṛ</em> (to do) inside the noun. That transparency is part of the teaching.
         </p>
 
         <div className="highlight-box">
@@ -335,7 +335,7 @@ export default function BhagavadGitaQuotesSanskritPage() {
 
         <h3>On Duty and Action (कर्म)</h3>
         <p>
-          The five most-quoted verses of karma yoga. Together they form Krishna&apos;s complete answer to the question Arjuna is really asking: how do I act, when action itself has become unbearable?
+          Five verses on karma yoga. Together they answer the question under Arjuna&apos;s refusal: how do I act when action itself has become unbearable?
         </p>
 
         <ShlokaCard
@@ -345,8 +345,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="You have the right to action alone, never to its fruits. Do not let the fruit be your motive, nor cling to inaction."
           insightLabel="Why It Matters"
-          insight="Thirty-two syllables that contain the whole of karma yoga. Four instructions in one verse: act, do not claim the outcome, do not make the outcome your motive, do not use any of that as an excuse to give up action. The fourth line closes the escape hatch every reader tries to slip through."
-          essence="Perform the action. Release the fruit. Do not disengage."
+          insight="Thirty-two syllables and four instructions: act, do not claim the outcome, do not make the outcome your motive, and do not use any of that as an excuse to give up action. The fourth part closes the escape hatch many readers try to slip through."
+          essence="Your right is to the work, never to its results."
         />
 
         <div className="hindi-block">
@@ -363,8 +363,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="No one, not even for a moment, ever stands without acting. Everyone is helplessly driven to act by the forces born of nature."
           insightLabel="Why It Matters"
-          insight="Krishna closes the door on renunciation-as-escape. The idea that you could simply stop acting is a fantasy. Being embodied means moving, choosing, reacting. The three guṇas keep the body in motion whether you consent or not. The only real question is whether that motion is offering or bondage."
-          essence="You cannot not act. Choose the quality of your action."
+          insight="Krishna closes the door on renunciation as escape. Being embodied means moving, choosing and reacting, and the three guṇas keep the body in motion whether you consent or not. What you can choose is whether that motion becomes an offering or a bond."
+          essence="No one can stay without acting even for a moment; nature drives us."
         />
 
         <div className="hindi-block">
@@ -379,10 +379,10 @@ export default function BhagavadGitaQuotesSanskritPage() {
           sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥"
           iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ||"
           meaningLabel="English"
-          meaning="Better one&apos;s own dharma imperfectly done than another&apos;s dharma done perfectly. Better even to die in one&apos;s own dharma; another&apos;s dharma brings danger."
+          meaning="Better your own dharma, imperfectly done, than another&apos;s done well. Better even to die in your own dharma; another&apos;s dharma brings fear."
           insightLabel="Why It Matters"
-          insight="The Gita&apos;s cure for envy. There is no borrowed life you can live better than your own. Doing your own duty badly is still closer to the truth of you than performing someone else&apos;s brilliantly. This is the verse to remember when you catch yourself measuring your life against someone whose life was never yours to live."
-          essence="Your own duty, imperfectly done, is your only real path."
+          insight="Krishna says this to a warrior who would rather live as a beggar or a renunciant than fight (2.5). The verse is useful when you catch yourself measuring your life against someone else&apos;s and wishing for their path."
+          essence="Better your own dharma, imperfectly done, than another&apos;s done well."
         />
 
         <div className="hindi-block">
@@ -399,8 +399,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Having relinquished attachment to the fruits of action, ever content, dependent on nothing &mdash; though fully engaged in action, such a one does nothing at all."
           insightLabel="Why It Matters"
-          insight="A paradox that unlocks 2.47. Once the craving for outcome is released, action loses its karmic weight. The person is still visibly doing things &mdash; farming, teaching, fighting &mdash; but inwardly nothing is being &lsquo;done&rsquo; because there is no doer clinging to the result. This is what karma yoga looks like from the inside."
-          essence="Release the fruit and even the fullest action leaves no residue."
+          insight="A paradox that explains 2.47. Once the craving for outcome is released, action loses its karmic weight. The person still farms, teaches or fights, and Krishna says that inwardly they do nothing, because no doer is clinging to the result. This is karma yoga seen from the inside."
+          essence="Free of attachment to fruit and always content, the busy person does nothing."
         />
 
         <div className="hindi-block">
@@ -417,8 +417,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Better one&apos;s own dharma imperfectly done than another&apos;s dharma performed well. Performing the work ordained by one&apos;s own nature, one incurs no papa."
           insightLabel="Why It Matters"
-          insight="Krishna returns to sva-dharma near the very end of the Gita, and adds a second half that 3.35 did not have: work rooted in your svabhāva &mdash; your nature &mdash; does not stain you. This is the pastoral version of karma yoga. Do the work that fits your grain. The universe will hold you blameless."
-          essence="The work born of your nature never leaves a stain."
+          insight="Krishna returns to sva-dharma near the end of the Gita with a different second half from 3.35: work that follows from your svabhāva, your nature, incurs no sin. Do the work that fits your grain."
+          essence="Doing the work set by your own nature, you incur no sin."
         />
 
         <div className="hindi-block">
@@ -429,12 +429,12 @@ export default function BhagavadGitaQuotesSanskritPage() {
         </div>
 
         <div className="pull-quote">
-          Five verses on action &mdash; and Krishna keeps circling one instruction: your work is yours, do it, and let go of what comes after.
+          Across these five verses on action, Krishna keeps returning to one instruction: your work is yours, so do it, and let go of what comes after.
         </div>
 
         <h3>On the Eternal Self (आत्मन्)</h3>
         <p>
-          The metaphysical spine of the Gita. Arjuna&apos;s grief in chapter 1 is grief for people he loves. Krishna&apos;s first move is to reset what &ldquo;person&rdquo; even means. Death, in the Gita, is a wardrobe change.
+          Arjuna&apos;s grief in chapter 1 is grief for people he loves. When Krishna begins teaching in 2.11, he starts by changing what &ldquo;person&rdquo; means, and in 2.22 he compares death to a change of clothes.
         </p>
 
         <ShlokaCard
@@ -444,8 +444,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="The Self is never born and never dies. It did not come into being, and it will not come into being again. Unborn, eternal, ever-present, ancient &mdash; it is not slain when the body is slain."
           insightLabel="Why It Matters"
-          insight="Perhaps the most direct statement of the ātman&apos;s nature anywhere in Indian philosophy. Every negation matters: not born, not dying, not becoming, not ceasing. The verse dismantles fear at its root. What you truly are was not made, and cannot be unmade. Everything the body undergoes is undergone by a garment, not by you."
-          essence="You were not born. You will not die. Only the garment changes."
+          insight="A direct statement of the ātman&apos;s nature, built from negations: not born, not dying, not coming into being again. In the Gita&apos;s account, what you are was never made and cannot be unmade, and what happens to the body happens to a garment."
+          essence="The self is never born and never dies; it is not slain when the body is."
         />
 
         <div className="hindi-block">
@@ -462,8 +462,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="As a person casts off worn-out clothes and puts on new ones, so the embodied Self casts off worn-out bodies and enters others that are new."
           insightLabel="Why It Matters"
-          insight="The most tender image in the entire Gita. Krishna is not asking Arjuna to be brave. He is offering him a picture: what he calls &lsquo;death&rsquo; is a change of clothes. The verse is quoted at almost every Hindu funeral. It does not deny loss; it repositions it. The clothes were never who they were."
-          essence="Bodies are garments. The wearer walks on."
+          insight="Here Krishna offers Arjuna a picture in place of an argument: what he calls &lsquo;death&rsquo; is a change of clothes. The verse leaves the loss in place and changes what is lost: the clothes were never who the person was."
+          essence="As we put on new clothes, the embodied self takes on new bodies."
         />
 
         <div className="hindi-block">
@@ -480,8 +480,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Weapons cannot cut it, fire cannot burn it, water cannot wet it, wind cannot dry it."
           insightLabel="Why It Matters"
-          insight="Four elements, four verbs, one message. Whatever tools the world uses to break things &mdash; blade, flame, flood, storm &mdash; touch only what is touchable. The Self is not that. This shloka is chanted at cremations for a reason: it names the one thing the fire cannot claim."
-          essence="No element in the universe can reach what you truly are."
+          insight="Four agents, four verbs: the blade cuts, fire burns, water wets, wind dries. Each acts only on what can be touched, and in 2.24–25 Krishna places the Self beyond touch, unmanifest and beyond thought."
+          essence="Weapons cannot cut it, fire cannot burn it, water cannot wet it."
         />
 
         <div className="hindi-block">
@@ -498,8 +498,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="For the born, death is certain; for the dead, birth is certain. Therefore, over what is unavoidable, you should not grieve."
           insightLabel="Why It Matters"
-          insight="A clean piece of logic Krishna hands Arjuna. The wheel of birth and death turns whether we consent or not. Grieving what cannot be otherwise adds suffering without changing anything. This is not coldness. It is Krishna clearing away wasted anguish so real feeling &mdash; and real action &mdash; can begin."
-          essence="What must happen will happen. Do not grieve the inevitable."
+          insight="A clean piece of logic. Birth and death follow each other whether we consent or not, and grieving what cannot be otherwise adds suffering without changing anything. Krishna is clearing away the grief that rests on a mistake so that Arjuna can act."
+          essence="Death is certain for the born, and birth for the dead. Do not grieve."
         />
 
         <div className="hindi-block">
@@ -514,10 +514,10 @@ export default function BhagavadGitaQuotesSanskritPage() {
           sanskrit="ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥"
           iast="mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ | manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati ||"
           meaningLabel="English"
-          meaning="An eternal fragment of my own being becomes the individual living self in the world of the living, drawing to itself the mind and the five senses that abide in nature."
+          meaning="An eternal fragment of my own being becomes the individual living self in the realm of the living, drawing to itself the mind and the five senses that abide in nature."
           insightLabel="Why It Matters"
-          insight="Vaishnava commentators call this the bīja-shloka &mdash; the seed verse of the Gita. It answers the deepest question the atman verses raise: what am I, ultimately? Krishna says: a sanātana aṃśa, an eternal fragment, of the divine. Not identical with Bhagavan, not separate either. Every teaching about detachment and devotion flows from this claim."
-          essence="You are an eternal fragment of the divine, temporarily embodied."
+          insight="This verse answers a question the atman verses raise: what am I, finally? Krishna says a sanātana aṃśa, an eternal fragment of himself. Vedantic schools disagree over how far that fragment is identical with Bhagavan and how far distinct."
+          essence="An eternal part of me becomes the living being and draws in mind and senses."
         />
 
         <div className="hindi-block">
@@ -529,7 +529,7 @@ export default function BhagavadGitaQuotesSanskritPage() {
 
         <h3>On Devotion (भक्ति)</h3>
         <p>
-          The Gita is often taught as a book of karma yoga. But Krishna calls bhakti the shortest and most complete of the three paths. These five verses are the emotional core of the whole scripture &mdash; the reason millions of readers return to it not for philosophy but for company.
+          The Gita is often taught as a book of karma yoga, but Krishna also says that by devotion alone he can be known and reached (11.54). Many readers come back to the Gita for these verses.
         </p>
 
         <ShlokaCard
@@ -539,8 +539,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="For those who worship me with undivided mind, thinking of nothing else, ever united with me &mdash; I carry what they need and preserve what they have."
           insightLabel="Why It Matters"
-          insight="Yoga-kṣema literally means &lsquo;acquisition and protection.&rsquo; Krishna is saying: for the devotee who has genuinely turned toward me, I take responsibility for the maintenance of their life. This is the closest the Gita comes to a covenant. It is the verse that makes the whole book feel personal rather than philosophical."
-          essence="Turn fully toward the divine, and it carries the weight of your becoming."
+          insight="Yoga-kṣema means &lsquo;acquiring and keeping.&rsquo; For the devotee who has turned fully toward him, Krishna takes responsibility for what they need and what they have. The verse reads like a covenant, and it makes the book personal."
+          essence="To those who worship me alone, I bring what they lack and keep what they have."
         />
 
         <div className="hindi-block">
@@ -557,8 +557,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Whoever offers me with love a leaf, a flower, a fruit, or a little water &mdash; that offering of love, given by a pure heart, I accept."
           insightLabel="Why It Matters"
-          insight="The royal secret of chapter 9. The temple is not the point. The elaborate ritual is not the point. Devotion needs almost nothing to become real. A leaf, a flower, a fruit, water &mdash; the four things anyone can find at their feet. What Krishna receives is not the object; it is the bhāva &mdash; the loving intention &mdash; behind it."
-          essence="A leaf offered with love is more than a temple offered without it."
+          insight="Chapter 9 is called the yoga of the royal knowledge and the royal secret. Here Krishna says devotion needs almost nothing: a leaf, a flower, a fruit or some water, things anyone can find. He accepts what is offered with love (bhakti) by one whose heart is pure."
+          essence="Offer me a leaf, a flower, a fruit or water with love, and I accept it."
         />
 
         <div className="hindi-block">
@@ -575,8 +575,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Quickly such a one becomes righteous and attains lasting peace. Son of Kunti, declare it boldly: my devotee never perishes."
           insightLabel="Why It Matters"
-          insight="One of the most quoted promises Krishna makes. The line pratijānīhi &mdash; &lsquo;declare it, take the vow&rsquo; &mdash; is striking: Krishna asks Arjuna to make the promise himself, on his authority. The devotee&apos;s safety is not a hope; it is a guarantee Krishna is willing to have publicly announced."
-          essence="Declare it openly: the one who loves the divine cannot be lost."
+          insight="A promise people quote often. The word pratijānīhi, &lsquo;declare it, take the vow&rsquo;, has Krishna asking Arjuna to make the promise himself, on Krishna&apos;s authority. Krishna is willing to have the devotee&apos;s safety announced in public."
+          essence="Declare it, Arjuna: my devotee never perishes."
         />
 
         <div className="hindi-block">
@@ -593,8 +593,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Without hatred toward any being, friendly and compassionate, free from possessiveness and ego, equal in sorrow and joy, forgiving &mdash;"
           insightLabel="Why It Matters"
-          insight="The opening line of Krishna&apos;s portrait of the devotee he holds dear. The list is not about belief. It is about how the person treats other beings, how they carry gain and loss, whether they hold friendliness or enmity in their heart. Bhakti here is measured behaviourally &mdash; you can tell a devotee by how they are with the world."
-          essence="Bhakti is measured by how you treat every being."
+          insight="The opening line of Krishna&apos;s portrait of the devotee he holds dear (12.13–20). The list describes conduct: how the person treats other beings, how they carry joy and sorrow, and whether they forgive. You can tell a devotee by how they behave."
+          essence="Without hatred for any being, friendly and compassionate, forgiving."
         />
 
         <div className="hindi-block">
@@ -611,8 +611,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Abandon every dharma and take refuge in me alone. I will free you from all papa. Do not grieve."
           insightLabel="Why It Matters"
-          insight="Traditional commentators call this the charama shloka &mdash; the ultimate verse. It is Krishna&apos;s parting sentence after 700 verses of instruction. Sarva-dharman means every framework: every rule you have used to know what to do. Release them, take refuge, and rest. This is not lawlessness; it is the mature devotee&apos;s move &mdash; the rules brought you to the door, and the door only opens through trust."
-          essence="Let go of every framework. Take refuge. Do not grieve."
+          insight="Sri Vaishnava commentators call this the carama shloka, the final verse, because it is Krishna&apos;s last instruction; he introduces it in 18.64 as sarva-guhyatamam, the secret of all secrets. Sarva-dharmān is read in many ways, often as every rule you have used to know what to do. Krishna asks Arjuna to set them down and take refuge in him. Many devotional readers take it as the step after the rules: they brought you to the door, and trust takes you through."
+          essence="Give up all dharmas and take refuge in me alone. Do not grieve."
         />
 
         <div className="hindi-block">
@@ -622,13 +622,11 @@ export default function BhagavadGitaQuotesSanskritPage() {
           </div>
         </div>
 
-        <div className="pull-quote">
-          Bhakti in the Gita is not a feeling to be manufactured. It is a direction &mdash; the whole self turned toward one point &mdash; and Krishna promises to meet the one who turns.
-        </div>
+        <div className="pull-quote"> Bhakti in the Gita is a direction, the whole self turned toward one point, and Krishna promises to meet the one who turns. </div>
 
         <h3>On the Divine (परमात्मन्)</h3>
         <p>
-          Who is speaking, in the Gita? Not just Krishna the cousin, the charioteer, the friend. These five verses are the moments where the mask lifts and the divine names itself &mdash; without whom &ldquo;take refuge&rdquo; would be a small instruction.
+          Who is speaking in the Gita? Arjuna knows Krishna as a cousin, a charioteer and a friend. In these five verses Krishna names himself as the divine, which is what gives &ldquo;take refuge&rdquo; its weight.
         </p>
 
         <ShlokaCard
@@ -638,7 +636,7 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Whenever there is a decline of dharma, O Bhārata, and a rise of adharma &mdash; then I send forth myself."
           insightLabel="Why It Matters"
-          insight="One of the two verses that state the doctrine of avatāra &mdash; the descent of the divine into embodied form. The word sṛjāmi (I emit, I create) is Krishna in the first person: it is not that a god is sent, it is that the divine itself takes form. Whenever the balance tips, this is the promise: the correction is on the way."
+          insight="One of the two verses that state the doctrine of avatāra &mdash; the descent of the divine into embodied form. The word sṛjāmi (I send forth, I create) is in the first person: the divine itself takes form. Whenever the balance tips, Krishna promises to come."
           essence="Whenever dharma weakens, the divine takes form again."
         />
 
@@ -656,8 +654,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="For the protection of the good, for the destruction of the evil-doers, and for the re-establishment of dharma &mdash; I come into being, age after age."
           insightLabel="Why It Matters"
-          insight="The three purposes of the avatāra, given as a triple infinitive: paritrāṇāya, vināśāya, saṃsthāpanārthāya. Not one, but three. Notice the second purpose is naked &mdash; not the reform of evil-doers, but their destruction. The Gita is delivered on a battlefield; the divine does not always come to reconcile."
-          essence="Age after age, the divine returns to rebalance dharma."
+          insight="The three purposes of the avatāra come as three dative forms: paritrāṇāya, vināśāya, saṃsthāpanārthāya. The second purpose is stated bluntly as destruction of evil-doers, with no mention of reforming them. The Gita is spoken on a battlefield, and here the divine comes to fight."
+          essence="To protect the good, destroy the wicked and restore dharma, I come in every age."
         />
 
         <div className="hindi-block">
@@ -674,7 +672,7 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="There is nothing whatever higher than me, Dhanañjaya. All this is strung upon me like pearls on a thread."
           insightLabel="Why It Matters"
-          insight="One of the great images in the Gita. The world is not chaos and it is not many; it is a garland. Every jewel is distinct, but they are held on a single unseen thread. Take the thread away and the pearls scatter. Krishna is saying: I am that thread. The unity of the world is not an idea; it is Him."
+          insight="A memorable image. The world is a garland: every pearl is distinct, and all are held on a single unseen thread. Take the thread away and the pearls scatter. Krishna says he is that thread."
           essence="The world is strung on the divine like pearls on a single thread."
         />
 
@@ -692,8 +690,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="I am the Self, Guḍākeśa, seated in the heart of every being. I am the beginning, the middle, and also the end of all beings."
           insightLabel="Why It Matters"
-          insight="Guḍākeśa &mdash; &lsquo;conqueror of sleep&rsquo; &mdash; is an epithet for Arjuna, chosen precisely because Krishna is about to wake him further. The verse dissolves distance. The divine is not somewhere else. It is the ātman itself, seated inside every creature that breathes. And it is the timeline: beginning, middle, end. Nothing anywhere is outside it."
-          essence="The divine is the Self within every being, and the shape of all time."
+          insight="Guḍākeśa, often glossed &lsquo;conqueror of sleep&rsquo;, is one of Arjuna&apos;s epithets. Krishna places the divine in two places at once: as the ātman seated in the heart of every creature, and as the beginning, middle and end of all beings."
+          essence="I am the Self in every heart, and the beginning, middle and end of beings."
         />
 
         <div className="hindi-block">
@@ -710,8 +708,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="I am seated in the heart of all. From me come memory, knowledge, and their withdrawal. I alone am to be known by all the Vedas. I am the author of Vedānta, and the knower of the Vedas."
           insightLabel="Why It Matters"
-          insight="The most complete self-declaration in the Gita. Krishna claims all four: the seat inside each being, the source of every cognitive movement, the goal of all scripture, and its author. If any single verse could be called Krishna&apos;s answer to &lsquo;who are you?&rsquo; &mdash; this is it."
-          essence="Seated in every heart, and the meaning of every scripture &mdash; that is who is speaking."
+          insight="A dense self-declaration. Krishna claims four things: the seat inside each being, the source of memory, knowledge and forgetting, the object all the Vedas seek to know, and the author of Vedānta. It works as Krishna&apos;s short answer to &lsquo;who are you?&rsquo;"
+          essence="I am seated in every heart; I am what all the Vedas seek to know."
         />
 
         <div className="hindi-block">
@@ -723,7 +721,7 @@ export default function BhagavadGitaQuotesSanskritPage() {
 
         <h3>On Peace and the Mind (शान्ति)</h3>
         <p>
-          The Gita&apos;s applied psychology. Krishna is remarkably practical about what happens when the mind drifts from its object. These five verses trace the chain and give the way out.
+          Krishna is practical about what happens when the mind drifts. These five verses trace how it slides and how it is brought back.
         </p>
 
         <ShlokaCard
@@ -733,8 +731,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Brooding on sense objects, a person develops attachment to them. From attachment arises desire; from desire arises anger."
           insightLabel="Why It Matters"
-          insight="The Gita&apos;s clearest description of the mechanism of downfall. The chain begins innocuously &mdash; just thinking about something pleasant. But dhyāyataḥ (dwelling on, brooding) creates saṅga (attachment), which creates kāma (craving), which creates krodha (anger) when the craving is thwarted. The place to intervene is at the first link: the dwelling."
-          essence="The fall starts not in action but in what the mind is willing to dwell on."
+          insight="Here the Gita lays out how a person falls. The chain begins innocently, with thinking about something pleasant. But dhyāyataḥ (dwelling on, brooding) creates saṅga (attachment), which creates kāma (craving), which creates krodha (anger) when the craving is thwarted. The place to intervene is at the first link: the dwelling."
+          essence="Dwelling on objects breeds attachment; attachment, desire; desire, anger."
         />
 
         <div className="hindi-block">
@@ -751,8 +749,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="From anger comes delusion, from delusion the confusion of memory, from confusion of memory the destruction of discernment, and from the destruction of discernment one is lost."
           insightLabel="Why It Matters"
-          insight="The second half of the chain. Anger is not the ending; it is the middle. Anger clouds cognition &mdash; sammoha means the mind stops seeing clearly. Then memory scatters &mdash; you forget what you actually value. Then buddhi (discernment) breaks. Then, Krishna says, praṇaśyati &mdash; one perishes. Not physically. As a moral being."
-          essence="Anger is not the fall. It is the middle of the fall."
+          insight="The second half of the chain, with anger in the middle of it. Sammoha, delusion, means the mind stops seeing clearly. Then memory scatters and you forget what you value. Then buddhi, discernment, breaks, and Krishna says praṇaśyati, one is lost. Most commentators read this as moral and spiritual ruin."
+          essence="Anger breeds delusion, then lost memory, lost judgment, and ruin."
         />
 
         <div className="hindi-block">
@@ -769,8 +767,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="For the ungoverned there is no discernment. For the ungoverned there is no steady contemplation. For the uncontemplative there is no peace. And for the peaceless, where is happiness?"
           insightLabel="Why It Matters"
-          insight="A ladder built out of four negations. Ayukta &mdash; not yoked, not disciplined &mdash; is the root. Without discipline, no clear buddhi. Without clear buddhi, no bhāvanā, no capacity for steady inner contemplation. Without contemplation, no peace. Without peace, no possibility of sukha, of happiness. The ladder runs both ways: build the first rung and the others follow."
-          essence="No discipline, no discernment. No peace, no happiness. It is one chain."
+          insight="A ladder of four negations rooted in ayukta, the undisciplined mind. Without discipline there is no clear buddhi; without buddhi, no bhāvanā, steady contemplation; without contemplation, no peace; and without peace, no sukha, happiness. Read upward, the ladder says that building the first rung brings the others within reach."
+          essence="Without peace, where is happiness? Peace needs a disciplined mind."
         />
 
         <div className="hindi-block">
@@ -787,8 +785,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Lift the self by the self. Do not let the self sink. For the self alone is the friend of the self, and the self alone is its enemy."
           insightLabel="Why It Matters"
-          insight="The Gita&apos;s self-help verse, and easily its most quoted. Six occurrences of ātman in two lines. The trap of self-pity is closed the same way the trap of arrogance is closed: no one is coming to rescue you or ruin you. The instrument that saves you is the same one that undid you. Turn it around, and it lifts."
-          essence="Lift yourself by yourself. The saviour and the saboteur are the same instrument."
+          insight="The Gita&apos;s self-help verse, quoted very often. Forms of ātman appear seven times in two lines. Self-pity and arrogance get the same answer: the same self that drags you down is the one that can lift you."
+          essence="Lift yourself by yourself; you are your own friend and your own enemy."
         />
 
         <div className="hindi-block">
@@ -805,8 +803,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Without doubt, mighty-armed one, the mind is hard to restrain and restless. But by practice and by dispassion it can be held."
           insightLabel="Why It Matters"
-          insight="Arjuna had just said the mind is more difficult to control than the wind. Krishna does not disagree. The Gita&apos;s honesty here is remarkable: yes, the mind is hard. But there is a way. Two instruments: abhyāsa (steady, patient practice) and vairāgya (dispassion, non-attachment). Not one; both. This is the operating instruction of every meditation tradition that followed."
-          essence="Practice and dispassion &mdash; two hands are enough to hold the mind."
+          insight="Arjuna has just said the mind is as hard to hold as the wind (6.34). Krishna agrees, and then names two instruments that work together: abhyāsa, steady practice, and vairāgya, dispassion."
+          essence="The mind is restless, but practice and dispassion bring it under control."
         />
 
         <div className="hindi-block">
@@ -818,7 +816,7 @@ export default function BhagavadGitaQuotesSanskritPage() {
 
         <h3>On Fear and Grief (शोक)</h3>
         <p>
-          The Gita opens with a grieving warrior. It closes with him standing again. These five verses are the tools Krishna uses to move a person from paralysis to action &mdash; without pretending the sorrow was not real.
+          The Gita opens with a grieving warrior and ends with him ready to act (18.73). These five verses are among the tools Krishna uses to move him.
         </p>
 
         <ShlokaCard
@@ -828,8 +826,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="The touches of the senses, O son of Kunti, give cold and heat, pleasure and pain. They come and go, they do not last. Bear them, Bhārata."
           insightLabel="Why It Matters"
-          insight="Krishna does not deny that Arjuna is suffering. He says: yes, and it is also weather. The word titikṣasva &mdash; &lsquo;endure them&rsquo; &mdash; is gentle, not dismissive. Experiences arrive and depart. What is asked of the seeker is not to prevent the weather; it is to remember that the weather is weather. The one experiencing it stays."
-          essence="Pain is real. Pain is also weather. Learn to let it pass through."
+          insight="Krishna accepts that Arjuna is suffering, and compares it to weather that comes and goes. The word titikṣasva, &lsquo;bear them&rsquo;, asks for endurance. Experiences arrive and depart while the one experiencing them stays."
+          essence="Heat and cold, pleasure and pain come and go. Bear them, Arjuna."
         />
 
         <div className="hindi-block">
@@ -846,8 +844,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Treating pleasure and pain, gain and loss, victory and defeat as equal &mdash; then engage in battle. Thus you will incur no papa."
           insightLabel="Why It Matters"
-          insight="A working definition of samatva, equipoise. Not indifference. Not numbness. Same-hearted-ness. Krishna is not asking Arjuna to stop feeling pleasure and pain; he is asking him to stop letting either one decide who he becomes. Fight from that place, and the fight leaves no karmic residue."
-          essence="Fight, but from a heart that treats gain and loss the same."
+          insight="A working definition of samatva, evenness of mind. Arjuna will still feel pleasure and pain; Krishna asks him to let neither decide what he does. Fighting from that evenness, he says, incurs no sin."
+          essence="Hold gain and loss, victory and defeat alike, then fight."
         />
 
         <div className="hindi-block">
@@ -864,8 +862,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="One who acts for me, holds me as the highest, is devoted to me, free from attachment, and without enmity toward any being &mdash; that one comes to me, Pāṇḍava."
           insightLabel="Why It Matters"
-          insight="Ramanuja called this the caramaśloka of the Gita &mdash; not 18.66, but this one. It is the concentrated definition of the devotee: five characteristics, one destination. Notice the emotional register: it closes not with knowledge or discipline but with nirvairaḥ &mdash; without enmity. The path ends where hostility ends."
-          essence="Act for the divine, love the divine, hold no enmity &mdash; and you arrive."
+          insight="Shankara, in his commentary, calls this verse the essence of the whole Gita. It defines the devotee in five marks with one destination, and the last mark is nirvairaḥ, without enmity toward any being."
+          essence="Work for me, devoted, unattached, without enmity: that one comes to me."
         />
 
         <div className="hindi-block">
@@ -882,8 +880,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="With your mind fixed on me, you will cross over all obstacles by my grace. But if from ego you do not listen, you will perish."
           insightLabel="Why It Matters"
-          insight="A tender warning near the end of the book. The word sarva-durgāṇi &mdash; &lsquo;every difficult passage&rsquo; &mdash; is comforting: not one obstacle, all of them. The condition is maccittaḥ, mind fixed on Krishna. The alternative is stated plainly: refuse from ego, and the crossing does not happen. The Gita is honest about both sides of the door."
-          essence="With the mind fixed on the divine, every difficult passage is passable."
+          insight="A warning near the end of the book. Sarva-durgāṇi means every difficult passage, all of them. The condition is maccittaḥ, a mind fixed on Krishna, and the other side is stated plainly: refuse out of ego, and you will perish."
+          essence="Mind fixed on me, you will cross every obstacle by my grace."
         />
 
         <div className="hindi-block">
@@ -900,8 +898,8 @@ export default function BhagavadGitaQuotesSanskritPage() {
           meaningLabel="English"
           meaning="Wherever Krishna, the Lord of Yoga, is, and wherever Pārtha, the bearer of the bow, is &mdash; there prosperity, victory, wealth, and firm morality will be. That is my conviction."
           insightLabel="Why It Matters"
-          insight="The closing verse of the entire Bhagavad Gita, spoken not by Krishna or Arjuna but by Sañjaya. The Gita ends not with a doctrinal statement but with an image: the divine and the human, side by side. Wherever devotion (Krishna) and dharmic effort (Arjuna) meet, the four blessings follow. It is the Gita&apos;s promise to the reader who has stayed till the end."
-          essence="Where devotion and dharmic effort meet, victory is certain."
+          insight="The last verse of the Bhagavad Gita, spoken by Sañjaya. The Gita ends with an image of the divine and the human side by side. Many readers take Krishna as devotion and Arjuna as dharmic effort, and the four blessings follow where they meet."
+          essence="Where Krishna and Arjuna stand together, there is fortune, victory and sound conduct."
         />
 
         <div className="hindi-block">
@@ -913,51 +911,50 @@ export default function BhagavadGitaQuotesSanskritPage() {
 
         <h2>The One Verse That Contains All the Others</h2>
         <p>
-          If you had to defend a single verse as the essence of the entire Gita, two candidates stand above the rest. Each has a real claim, and choosing between them tells you what kind of reader you are.
+          If you had to pick one verse to stand for the whole Gita, two candidates come up again and again. Each has a real claim, and which one you pick says something about what you came to the Gita for.
         </p>
         <p>
-          The first is <strong>BG 2.47</strong>: <em>karmaṇyevādhikāraste mā phaleṣu kadācana.</em> This is the verse for the reader who comes to the Gita for guidance about how to live. It is the instruction verse. It fits in a single breath. It contains four commands and no theology. You do not have to accept a metaphysics to use it. You do not have to believe in an avatāra. All you have to do is admit that you have been trying to control outcomes and that this is what has been costing you your peace. If the Gita is a book about action, 2.47 is its answer.
+          The first is <strong>BG 2.47</strong>: <em>karmaṇyevādhikāraste mā phaleṣu kadācana.</em> This is the verse for the reader who comes to the Gita for guidance about how to live. It fits in a single breath and contains four commands and no theology. You can use it without accepting any metaphysics or believing in an avatāra. You only have to admit that you have been trying to control outcomes and that this has been costing you your peace. If the Gita is a book about action, 2.47 is its answer.
         </p>
         <p>
-          The second is <strong>BG 18.66</strong>: <em>sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja.</em> Traditional commentators call this the caramaśloka &mdash; the ultimate verse &mdash; because it is what Krishna says last, and last is not accidental in a text as carefully arranged as the Gita. 18.66 is the verse for the reader who has already tried 2.47 for years and discovered that even karma yoga becomes a subtle claim, another dharma to master. At some point the frameworks themselves need to be released. Then 18.66 opens.
+          The second is <strong>BG 18.66</strong>: <em>sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja.</em> Sri Vaishnava commentators call this the caramaśloka, the final verse, because it is Krishna&apos;s last instruction, introduced in 18.64 as sarva-guhyatamam, the secret of all secrets. 18.66 is the verse for the reader who has already tried 2.47 for years and discovered that even karma yoga becomes a subtle claim, another dharma to master. At some point the frameworks themselves need to be released. Then 18.66 opens.
         </p>
         <p>
-          Perhaps the deepest answer is that both are needed, in that order. 2.47 is what the Gita asks of you at the beginning: act, and let go of the fruit. 18.66 is what it asks of you at the end: let go even of the framework of asking. One verse is for the seeker still climbing. The other is for the seeker at the door.
+          A good answer is that both are needed, in that order. 2.47 is what the Gita asks of you at the beginning: act, and let go of the fruit. 18.66 is what it asks at the end: let go even of the framework of asking.
         </p>
 
         <div className="highlight-box">
           <h3>If someone asks you for a Gita quote in one line</h3>
           <p>
-            <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em> &mdash; you have the right to action, never to its fruits. If they want the ending, not the instruction: <em>sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja</em> &mdash; release every framework and take refuge. Between those two verses, the Gita has said everything it needs to say.
+            <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em> &mdash; you have the right to action, never to its fruits. If they want the ending, not the instruction: <em>sarva-dharmān parityajya mām ekaṃ śaraṇaṃ vraja</em> &mdash; release every framework and take refuge. Between them, the two verses cover where the Gita starts and where it ends.
           </p>
         </div>
 
         <h2>How to Memorize These</h2>
         <p>
-          Reading a shloka once and moving on is not memorization; it is exposure. The verses become yours only when the meter enters the body. Here is a practical way to actually carry a Sanskrit verse in your head, not just recognize it on a page.
+          Reading a shloka once is exposure. A verse becomes yours when you can say it without the page. Here is a practical way to get there.
         </p>
 
         <ul className="practice-list">
           <li>
-            <span><strong>Chant, do not silently read.</strong> The anuṣṭubh meter has a natural rise and fall. Reading in your head loses that; chanting keeps it. Even at low volume, the mouth doing the work is what fixes the verse. Ten repetitions aloud beat a hundred silent readings.</span>
+            <span><strong>Chant aloud.</strong> The anuṣṭubh meter has a natural rise and fall that silent reading loses and chanting keeps. Even at low volume, the mouth doing the work is what fixes the verse. Ten repetitions aloud beat a hundred silent readings.</span>
           </li>
           <li>
-            <span><strong>Learn the meter before the meaning.</strong> Each half-verse is sixteen syllables. Get the beat first &mdash; da-DA-da-DA-da-DA-da-DA &mdash; and the words start to sit inside a scaffold. This is why traditional students learned by ear, from a teacher who chanted a line and had them repeat it three times.</span>
+            <span><strong>Learn the meter before the meaning.</strong> Each half-verse is sixteen syllables, in two groups of eight. Get the rhythm first by listening to a chanter, and the words start to sit inside it. Traditional students learned by ear, repeating each line after a teacher.</span>
           </li>
           <li>
             <span><strong>Use IAST as a scaffold, then discard it.</strong> Transliteration is a training wheel, not a destination. Learn the verse from IAST until you know the syllables, then start reading directly from Devanagari. The script itself carries phonetic information the Roman letters lose.</span>
           </li>
           <li>
-            <span><strong>Understand before you finalize.</strong> Memorizing a verse whose meaning you have not thought about turns Sanskrit into decoration. Read the English translation slowly. Read the Hindi. Look at one word you do not know &mdash; a single root you can carry. Then chant. Meaning-first memorization sticks; sound-only does not.</span>
+            <span><strong>Understand before you finalize.</strong> Memorizing a verse whose meaning you have not thought about turns Sanskrit into decoration. Read the English translation slowly, then the Hindi. Look up one word you do not know, a single root you can carry. Then chant. In my experience, verses learned with their meaning stay longer.</span>
           </li>
           <li>
-            <span><strong>Repeat over weeks, not hours.</strong> The mind consolidates through sleep. Chant a verse three times before bed for a week, and by day seven it will be more securely yours than a verse you drilled for two hours in one sitting. The Gita is a marathon; treat memorization the same way.</span>
+            <span><strong>Spread repetition over weeks.</strong> Sleep helps memory settle. Chant a verse three times before bed for a week, and by day seven it will be more securely yours than a verse you drilled for two hours in one sitting. </span>
           </li>
         </ul>
 
         <p>
-          If you are starting today, start with BG 2.47. Give yourself seven days. Chant it in the morning while your tea is steeping. That is enough. In a week, a verse that lived in a book will live in your mouth. That is what having a shloka actually means.
-        </p>
+          If you are starting today, start with BG 2.47. Give yourself seven days. Chant it in the morning while your tea is steeping, and in a week a verse that lived in a book will be one you can say from memory. </p> <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the wording of 3.35, the 9.26 tagline, the description of 18.66 as Krishna&apos;s parting sentence (it is his last instruction), the attribution for 11.55 (Shankara calls it the essence of the Gita), and the count of ātman in 6.5; removed unsourced claims about funerals, cremations, the bīja-shloka label and the meter&apos;s beat; copy edited.</p>
       </div>
 
 
@@ -966,37 +963,37 @@ export default function BhagavadGitaQuotesSanskritPage() {
         <h2>Frequently Asked Questions</h2>
 
         <div className="faq-item">
-          <strong>Which is the most famous verse of the Bhagavad Gita in Sanskrit?</strong>
+          <strong>Which Bhagavad Gita verse is best known in Sanskrit?</strong>
           <p>
-            The most famous Sanskrit verse is BG 2.47: <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em>. In Devanagari: कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। It means, &ldquo;You have the right to act, but never to the fruits of action.&rdquo; It is the seed verse of karma yoga and probably the single most-cited line from any Indian scripture. BG 18.66 (<em>sarva-dharmān parityajya</em>) is a close second because it is Krishna&apos;s final instruction &mdash; the parting sentence of the entire dialogue.
+            The verse people quote first is BG 2.47: <em>karmaṇyevādhikāraste mā phaleṣu kadācana</em>. In Devanagari: कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। It means, &ldquo;You have the right to act, but never to the fruits of action.&rdquo; It is the seed verse of karma yoga. BG 18.66 (<em>sarva-dharmān parityajya</em>) is a close second; it is Krishna&apos;s last instruction, which he introduces in 18.64 as sarva-guhyatamam, the secret of all secrets.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>Should I read Gita quotes in Sanskrit or Hindi?</strong>
           <p>
-            Both, in that order. The Sanskrit is the source &mdash; the meter, the sound, and the exact word-choices Krishna is portrayed as speaking. Reading only the Hindi or English translation is like reading only the sheet music of a raga without hearing it. Chant the Sanskrit first, then read the Hindi meaning to understand, then the English translation to bridge cultures. The Sanskrit carries something the translations cannot: the <em>anuṣṭubh</em> meter itself is part of the teaching.
+            Both, in that order. The Sanskrit is the source &mdash; the meter, the sound, and the exact word-choices Krishna is portrayed as speaking. Reading only a translation is like reading the notation of a raga without hearing it. Chant the Sanskrit first, then read the Hindi meaning, then the English translation. The <em>anuṣṭubh</em> meter and the sound of the words are lost in every translation.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>How do I pronounce Sanskrit Gita verses correctly?</strong>
           <p>
-            Three quick rules. First, &lsquo;a&rsquo; at the end of a word is short (nearly swallowed) &mdash; so कर्म is &ldquo;kar-ma,&rdquo; not &ldquo;kar-maa.&rdquo; Second, aspirated consonants (kh, gh, ch, jh, ṭh, ḍh, ph, bh) genuinely have a breathy release &mdash; <em>bhakti</em> has real air after the &ldquo;bh.&rdquo; Third, long vowels (ā, ī, ū) are held twice as long as short vowels. If you can, listen to a Gita Press or Krishnamacharya recording alongside reading. Even a week of listening changes how the shlokas sit in your mouth.
+            Three quick rules. First, &lsquo;a&rsquo; at the end of a word is short (nearly swallowed) &mdash; so कर्म is &ldquo;kar-ma,&rdquo; not &ldquo;kar-maa.&rdquo; Second, aspirated consonants (kh, gh, ch, jh, ṭh, ḍh, ph, bh) genuinely have a breathy release &mdash; <em>bhakti</em> has real air after the &ldquo;bh.&rdquo; Third, long vowels (ā, ī, ū) are held twice as long as short vowels. If you can, listen to a recording by a trained chanter while you read. Even a week of listening changes how the shlokas sit in your mouth.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What does &ldquo;karmaṇyevādhikāraste&rdquo; mean word by word?</strong>
           <p>
-            <em>Karmaṇi</em> means &ldquo;in action.&rdquo; <em>Eva</em> means &ldquo;only.&rdquo; <em>Adhikāraḥ</em> means &ldquo;right&rdquo; or &ldquo;authority.&rdquo; <em>Te</em> means &ldquo;yours.&rdquo; The whole line &mdash; <em>karmaṇyevādhikāraste</em> &mdash; literally reads: &ldquo;Only in action is your right.&rdquo; The second half completes the thought: <em>mā phaleṣu kadācana</em> &mdash; &ldquo;never in the fruits.&rdquo; Krishna is drawing a clean line: you have jurisdiction over what you do, none over what your action yields. The rest of the shloka closes the escape hatches.
+            <em>Karmaṇi</em> means &ldquo;in action.&rdquo; <em>Eva</em> means &ldquo;only.&rdquo; <em>Adhikāraḥ</em> means &ldquo;right&rdquo; or &ldquo;authority.&rdquo; <em>Te</em> means &ldquo;yours.&rdquo; The whole line &mdash; <em>karmaṇyevādhikāraste</em> &mdash; literally reads: &ldquo;Only in action is your right.&rdquo; The second half completes the thought: <em>mā phaleṣu kadācana</em> &mdash; &ldquo;never in the fruits.&rdquo; Krishna draws a clean line: you have a say over what you do, and none over what your action yields. The second line of the shloka adds that the fruit should not be your motive and that inaction is no way out.
           </p>
         </div>
 
         <div className="faq-item">
           <strong>What is the difference between a shloka and a mantra?</strong>
           <p>
-            A shloka (श्लोक) is a Sanskrit verse form &mdash; typically two lines of sixteen syllables each, in the <em>anuṣṭubh</em> meter. The Bhagavad Gita is composed almost entirely of shlokas. A mantra (मन्त्र) is a syllable, word, or phrase used as an instrument of consciousness &mdash; designed to be repeated, often ritually. All mantras are Sanskrit; not all shlokas are mantras. But many Gita shlokas &mdash; 2.47, 15.7, 18.66 &mdash; are traditionally used as mantras because chanting them itself is considered transformative.
+            A shloka (श्लोक) is a Sanskrit verse form &mdash; typically two lines of sixteen syllables each, in the <em>anuṣṭubh</em> meter. The Bhagavad Gita is composed almost entirely of shlokas. A mantra (मन्त्र) is a syllable, word or phrase meant to be repeated, often in ritual. Most traditional mantras are in Sanskrit, and only some shlokas are used as mantras. Some Gita verses, 18.66 among them, are chanted daily in particular traditions.
           </p>
         </div>
 

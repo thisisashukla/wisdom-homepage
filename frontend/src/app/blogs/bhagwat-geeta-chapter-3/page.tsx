@@ -7,7 +7,7 @@ import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
   title: "Bhagavad Gita Chapter 3 Summary \u2013 Key Verses & Meaning (Karma Yoga)",
-  description: "Bhagavad Gita Chapter 3 (Karma Yoga) \u2014 43 verses on action as offering, your own dharma over a borrowed perfection, and why desire is the real enemy of the seeker.",
+  description: "Bhagavad Gita Chapter 3 (Karma Yoga) \u2014 43 verses on action as offering, your own dharma over a borrowed perfection, and why desire is the real enemy.",
   keywords: "bhagwat geeta chapter 3, bhagavad gita karma yoga, karma yoga chapter 3, bhagwat geeta adhyay 3, svadharma meaning, lokasamgraha gita, what gita says about duty, karma yoga meaning, yajna gita, desire is the enemy gita, your own dharma imperfectly, Karma Yoga summary, Bhagavad Gita 3.35 sva-dharme nidhanam shreyah, what is karma yoga in Bhagavad Gita",
   openGraph: {
     title: "Bhagavad Gita Chapter 3 Summary \u2013 Key Verses & Meaning (Karma Yoga)",
@@ -593,7 +593,7 @@ const schemas = [
       "name": "What is karma yoga in the Bhagavad Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Karma yoga is the path of selfless action — performing one's duties without attachment to outcomes, treating every action as an offering to something larger than the self. It is described in Chapter 3 as the appropriate path for most people who are active in the world. Unlike renunciation, which withdraws from action, karma yoga transforms action itself into the spiritual path."
+        "text": "Karma yoga is the path of selfless action — performing one's duties without attachment to outcomes, treating every action as an offering. In Chapter 3 Krishna presents it as the path for those inclined to action (3.3) and says action is better than inaction (3.8). Renunciation withdraws from action; karma yoga makes the action itself the path."
       }
     },
     {
@@ -601,7 +601,7 @@ const schemas = [
       "name": "What does svadharma mean in the Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Svadharma means your own duty, your own path, your own nature-driven calling. In 3.35, Krishna says it is better to perform your own dharma imperfectly than to perform another's dharma perfectly. This is not a defense of staying comfortable — it is a teaching about authenticity and the dangers of comparison and imitation."
+        "text": "Svadharma means your own duty, the work that fits your nature and station. In 3.35, Krishna says: better your own dharma, imperfectly done, than another's done well. The verse warns against taking up someone else's path, however well you might walk it, and gives no licence to stay comfortable."
       }
     },
     {
@@ -609,7 +609,7 @@ const schemas = [
       "name": "What does the Gita say about avoiding your responsibility?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Gita is extremely direct on this. In Chapter 3, Krishna argues that no one can avoid action — attempting to do so is itself an action, driven by desire and self-deception. The desire to escape from one's duties is identified not as wisdom or detachment but as a form of delusion (moha). Arjuna's wish to renounce at the start is diagnosed throughout the chapter as an escape mechanism, not a spiritual achievement."
+        "text": "In Chapter 3, Krishna says no one can stop acting even for a moment (3.5), and that someone who holds the body still while the mind runs after sense objects is a hypocrite (3.6). He treats Arjuna's wish to renounce as confusion and asks him to act without attachment (3.19)."
       }
     },
     {
@@ -617,7 +617,7 @@ const schemas = [
       "name": "What is lokasamgraha in the Bhagavad Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lokasamgraha means 'the holding together of the world' or 'the welfare of humanity.' It appears in Chapter 3 as the reason wise and great people must continue to act — not for personal gain, but because their actions set the standard for what others will do. To withdraw from engagement when one has influence is to abandon a responsibility to the larger good."
+        "text": "Lokasamgraha means 'the holding together of the world' or 'the welfare of humanity.' It appears in Chapter 3 as the reason wise and great people must keep acting for the world's sake, since their actions set the standard for what others will do. To withdraw from engagement when one has influence is to abandon a responsibility to the larger good."
       }
     }
   ]
@@ -657,7 +657,7 @@ export default function ChapterThreePage() {
           <em>Karma Yoga: Why You Cannot Run</em>
         </h1>
         <p className="article-subtitle">
-          Arjuna wants out. Not just from the battlefield, from action itself. Chapter 3 is Krishna's answer: action is inescapable. The question is never whether to act, only how. Forty-three verses on duty, desire, and the weight of the example you set.
+          Arjuna wants to step back from the battlefield and from action itself. In Chapter 3 Krishna answers that no one can stop acting, so the question is how to act. Forty-three verses on duty, desire and the example you set.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -668,7 +668,7 @@ export default function ChapterThreePage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">Chapter 3 of 18</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -687,16 +687,14 @@ export default function ChapterThreePage() {
         </figure>
 
         <p className="lead">
-          Arjuna wants out. He has set down his bow, and now he is making his case to Krishna: if knowledge is superior to action, why should he fight? Why not renounce the world, sit quiet in meditation, and let others wage war?
+          Arjuna has set down his bow, and at the start of Chapter 3 he puts his case to Krishna: if understanding is better than action, why push him into this terrible deed (3.1)? Why not renounce the world and let others fight?
         </p>
 
         <p>
-          The question is coherent. The logic is sound. And Chapter 3 is Krishna taking it apart, premise by premise, and rebuilding something harder in its place. Not permission to withdraw. Not validation of the desire to escape. But a teaching that restructures how we think about duty, action, and the spiritual life itself.
+          It is a fair question, and Krishna&apos;s answer gives Arjuna no permission to withdraw. He explains why no one can stop acting, how action can be done without binding you, and what makes it go wrong.
         </p>
 
-        <p>
-          This is where the Gita stops being a philosophical comfort and becomes a challenge.
-        </p>
+        
 
         {/* TABLE OF CONTENTS */}
         <nav className="toc" aria-label="Table of contents">
@@ -721,7 +719,7 @@ export default function ChapterThreePage() {
               <a href="#ego-claims">The ego's claim on action (3.27)</a>
             </li>
             <li>
-              <a href="#svadharma">Your dharma, imperfectly, better than another's perfectly (3.35)</a>
+              <a href="#svadharma">Your own dharma, imperfectly done, over another's done well (3.35)</a>
             </li>
             <li>
               <a href="#desire-anger">The real enemy, desire and anger (3.37)</a>
@@ -746,7 +744,7 @@ export default function ChapterThreePage() {
         <h2 id="arjuna-question">The Question That Cannot Be Dismissed</h2>
 
         <p>
-          Arjuna has watched Chapter 2 with careful attention. He has heard Krishna teach that the Self is eternal, that the body dies but the atman does not, that action without attachment is the path to freedom. And he has listened to all of it. But now he asks Krishna directly:
+          In Chapter 2 Arjuna heard Krishna teach that the Self is eternal, that the body dies and the atman does not, and that action without attachment leads to freedom. Now he asks Krishna directly:
         </p>
 
         <p>
@@ -754,23 +752,23 @@ export default function ChapterThreePage() {
         </p>
 
         <p>
-          The logic seems airtight. If knowledge liberates, why not just gain the knowledge and sit? Why all this slaughter?
+          If knowledge liberates, why not gain the knowledge and sit still?
         </p>
 
         <p>
-          Chapter 3 is Krishna saying: because you're operating on a false premise about what renunciation means. And because action is not something you can opt out of. You're already acting. Even the desire to avoid acting is an action. Even sitting still is action. The only real choice is this: will you act with awareness, or act blindly?
+          Krishna gives two reasons. First, Arjuna has misunderstood renunciation: a person does not reach freedom from action by never starting work, or by renouncing it alone (3.4). Second, no one can stop acting, since even keeping the body alive takes action (3.8). What remains is a choice between acting with attachment and acting without it.
         </p>
 
         <div className="highlight-box">
           <p>
-            <strong>The deeper pattern:</strong> Notice that both Arjuna's collapse in Chapter 1 and his demand for escape in Chapter 3 follow the same impulse, a desire to get out. First out of the battle. Now out of action itself. The Gita is not gentle on this impulse. It names it directly: this is delusion. And what creates the delusion is not cowardice or weakness, but a fundamental misunderstanding of what freedom means.
+            <strong>The deeper pattern:</strong> Arjuna's collapse in Chapter 1 and his question in Chapter 3 come from the same wish to get out, first out of the battle and then out of action itself. In 2.3 Krishna had already called that wish a petty weakness of heart, and in Chapter 3 he treats it as a misunderstanding of what freedom is.
           </p>
         </div>
 
         <div className="section-divider">
           <div className="section-divider-line"></div>
           <div className="section-divider-label">
-            Verses 3.3 · The Two Paths
+            Verse 3.3 · The Two Paths
           </div>
           <div className="section-divider-line"></div>
         </div>
@@ -783,24 +781,24 @@ export default function ChapterThreePage() {
           sanskrit="लोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ । ज्ञानयोगेन सांख्यानां कर्मयोगेन योगिनाम् ॥"
           iast="loke'smindvividhā niṣṭhā purā proktā mayānagha | jñānayogena sāṃkhyānāṃ karmayogena yoginām ||"
           meaning="In this world, I have described two paths of spiritual practice: the path of knowledge for those inclined toward understanding, and the path of action (karma yoga) for those inclined toward doing."
-          insightLabel="The opening truth"
-          insight="Both are legitimate. The Gita doesn't favor mystics over activists or scholars over soldiers. What matters is that the path matches the nature of the person. You don't abandon your nature, you elevate it. This is the key to everything that follows."
-          essence="Both knowledge and action are equally valid paths, choose the one that matches your nature."
+          insightLabel="Two paths"
+          insight="Krishna names two paths he taught long ago: jnana yoga for the contemplative (the Sankhyas) and karma yoga for the active (the yogis). He favours neither in this verse. What matters is that the path suits the person."
+          essence="Krishna taught two paths: knowledge for the contemplative, action for the active."
         />
 
         <p>
-          This verse is Krishna's opening move. He's not dismissing Arjuna's interest in knowledge. He's saying: yes, both paths exist. But for you, someone born into the warrior caste, trained in action your whole life, attempting to forcibly transform yourself into a wandering ascetic is not spirituality. It's escape. It's using the language of spirituality to justify the desire to run away.
+          Krishna takes Arjuna's interest in knowledge seriously and grants that both paths exist. But Arjuna, a kshatriya by birth and training, has spent his life in action. For him, turning into a wandering ascetic in the middle of a battle would be escape dressed in spiritual language.
         </p>
 
         <p>
-          The Gita's argument is sophisticated here. It's saying that your nature, your temperament, your gifts, your conditioning, is not an obstacle to overcome. It's the foundation of your spiritual path. The question is not: how do I become someone else? The question is: how do I fully become myself?
+          Here the Gita treats a person's nature, their temperament, gifts and training, as the ground of their practice. Verse 3.33 makes the same point: even the wise act according to their nature.
         </p>
 
         {/* DIVIDER */}
         <div className="section-divider">
           <div className="section-divider-line"></div>
           <div className="section-divider-label">
-            Verses 3.5 · The Inescapable Fact
+            Verse 3.5 · The Inescapable Fact
           </div>
           <div className="section-divider-line"></div>
         </div>
@@ -814,16 +812,16 @@ export default function ChapterThreePage() {
           iast="na hi kaścitakṣaṇamapi jātu tiṣṭhatyakarmakṛt | kāryate hyavaśaḥ karma sarvaḥ prakṛtijairguṇaiḥ ||"
           meaning="No one can remain without performing some action even for a single moment. Everyone is made to act, helplessly, by the qualities born of material nature."
           insightLabel="The refutation of escape"
-          insight="This is the Gita's decisive blow against the fantasy of complete inaction. You cannot opt out. Even sitting still involves the action of breathing, thinking, wanting. The body will act. The mind will act. The senses will seek. You are not choosing whether to act, you're choosing whether to act consciously."
-          essence="You cannot avoid action, embrace it with awareness instead of denial."
+          insight="Complete inaction is impossible. The gunas of nature keep a person acting, and even sitting still involves breathing, thinking and wanting. The real choice is how to act."
+          essence="No one can stay without acting even for a moment; nature makes everyone act."
         />
 
         <p>
-          This verse is ruthless in its honesty. The person who sits in the forest with closed eyes, claiming non-action, is still breathing. Still thinking. Still experiencing. The breath is action. The thought is action. The experience is action. To claim that you are performing no action is not humility, it's self-deception.
+          The person who sits in the forest with closed eyes and claims to have stopped acting is still breathing and thinking. In the next verse Krishna goes further: someone who holds the body still while the mind dwells on sense objects is a hypocrite (3.6).
         </p>
 
         <p>
-          What Krishna is saying is: the choice has never been between action and inaction. That choice doesn't exist. The only real choice is this: will you perform your actions with consciousness, responsibility, and care? Or will you perform them blindly, in denial, telling yourself that you're not doing what you're obviously doing?
+          So the choice was never between action and inaction. It lies between acting with care and acting blindly while telling yourself you are doing nothing.
         </p>
 
         <div className="pull-quote">
@@ -849,7 +847,7 @@ export default function ChapterThreePage() {
         </p>
 
         <p>
-          Krishna's answer is <em>yajna</em>, often translated as "sacrifice," but meaning something more fundamental: the transformation of action into an offering. When you stop doing something for yourself and start doing it for something larger, the entire quality of the action changes.
+          Krishna's answer is <em>yajna</em>, usually translated as sacrifice. In Chapter 3 it means the ritual offering and, more broadly, any action done as an offering instead of for private gain.
         </p>
 
                 <ShlokaCard
@@ -858,14 +856,12 @@ export default function ChapterThreePage() {
           sanskrit="यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः । तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥"
           iast="yajñārthātkarmaṇo'nyatra loko'yaṃ karmabandhanaḥ | tadarthaṃ karma kaunteya muktasaṃgaḥ samācara ||"
           meaning="Work done as a sacrifice (yajna) does not bind; but work done for selfish purposes is bondage. Perform your duties as an offering, free from attachment."
-          insightLabel="The transformation"
-          insight="The same action, done for yourself, traps you in the results. Done as service, it frees you. This is not magical thinking, it's a precise description of what happens when the ego steps back and something larger becomes the purpose. You're the same person doing the same action, but the quality of your being has shifted."
-          essence="Freedom comes from serving a purpose larger than yourself."
+          insightLabel="Work as offering"
+          insight="The same action binds you when it is done for yourself and leaves you free when it is done as an offering. So Krishna asks Arjuna to work for yajna and drop his attachment."
+          essence="Work done as an offering does not bind; work done for yourself does."
         />
 
-        <p>
-          This is where the Wisdom app becomes relevant to understanding this teaching. Every day, the app picks a shloka for what the user is going through, not for them to profit from or compete over, but to deepen their understanding of what freedom truly means. The same text, received as knowledge rather than as information. The shift from self-serving to service-oriented is everything.
-        </p>
+        
 
         {/* DIVIDER */}
         <div className="section-divider">
@@ -879,7 +875,7 @@ export default function ChapterThreePage() {
         <h2 id="lokasamgraha">The Weight of What Others Will Do</h2>
 
         <p>
-          Now Krishna introduces a concept that cuts deeper than personal liberation. It's not enough to act without attachment. You also have to accept that your actions become a standard. Great people, wise people, those with influence, their actions are watched. Their choices become permissions.
+          Krishna then adds a social reason to act. In 3.20 he cites King Janaka, who reached perfection through action, and tells Arjuna to act for lokasamgraha, the holding together of the world. People with standing are watched, and what they do becomes the standard.
         </p>
 
                 <ShlokaCard
@@ -889,23 +885,23 @@ export default function ChapterThreePage() {
           iast="yadyadācarati śreṣṭhastattadevetaro janaḥ | sa yatpramāṇaṃ kurute lokastadanuvartate ||"
           meaning="Whatever a great person does, ordinary people will follow. Whatever standards they set, the world will adopt."
           insightLabel="The responsibility"
-          insight="This is where personal freedom meets social reality. The desire to withdraw is not just a spiritual failure, it's an abandonment of lokasamgraha, the holding together of the world. If you have gifts, influence, or wisdom, and you choose to hide them out of fear or the desire for peace, the world feels that absence. Others lose a model. Others lose a permission to do their own work."
-          essence="Your actions shape what others believe is possible, lead with awareness."
+          insight="What a respected person does, others copy, and the standard they set is the one the world follows. If someone with gifts or influence withdraws out of fear or a wish for peace, others lose a model for doing their own work."
+          essence="Whatever a great person does, others follow, and the world adopts their standard."
         />
 
         <p>
-          This verse has a sting in it. It means that Arjuna's desire to renounce is not just his own choice. If the greatest warrior of the age puts down his bow and runs to the forest, others will see that and think: renunciation is possible, withdrawal is permissible, the world's problems are not my concern. His refusal to act has ripple effects.
+          For Arjuna this has a sting. His wish to renounce affects more than himself. If a warrior of his standing puts down his bow and leaves for the forest, others will take it as a sign that withdrawal is acceptable and that the world's troubles belong to someone else.
         </p>
 
         <p>
-          Lokasamgraha, the welfare of the world, is not a burden you choose to take on. It's a fact that's already true. You're already setting an example. The only question is whether you'll do it consciously or unconsciously.
+          Krishna applies this to himself in 3.22–24. He has nothing to gain in the three worlds, yet he keeps working, because if he stopped, people would follow his example and the worlds would fall into ruin.
         </p>
 
         {/* DIVIDER */}
         <div className="section-divider">
           <div className="section-divider-line"></div>
           <div className="section-divider-label">
-            Verses 3.27 · The Ego's Great Claim
+            Verse 3.27 · The Ego's Great Claim
           </div>
           <div className="section-divider-line"></div>
         </div>
@@ -919,23 +915,23 @@ export default function ChapterThreePage() {
           iast="prakṛteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśaḥ | ahaṅkāravimūḍhātmā kartā'hamiti manyate ||"
           meaning="All actions are performed by the qualities of material nature, but one who is deluded by ego thinks &quot;I am the doer.&quot;"
           insightLabel="The subtler freedom"
-          insight="The ego's claim on action is where suffering begins. The one who thinks they're the sole author of their successes also becomes the sole bearer of their failures. The Gita offers a different accounting: nature acts through us; we are instruments, not owners. This realization, not as belief, but as lived understanding, is freedom."
-          essence="Freedom begins when you realize you are not the sole doer, nature acts through you."
+          insight="The one who thinks they alone authored their successes also carries their failures alone. Krishna gives a different account: the gunas of nature do the acting, and the confused ego says I am the doer."
+          essence="Nature&apos;s qualities do all the acting; the deluded ego thinks it is the doer."
         />
 
         <p>
-          This is one of the Gita's most paradoxical teachings. It's saying that while you cannot avoid action, you also cannot truly be the sole author of action. The qualities of nature, sattva, rajas, tamas, are constantly acting through you. Your body is made of these qualities. Your mind is made of these qualities. Your preferences and aversions are made of these qualities.
+          The verse sits oddly beside 3.5: you cannot avoid action, yet you are never its sole author. Sattva, rajas and tamas, the qualities of nature, act through you all the time, and your body, mind, likes and dislikes are made of them.
         </p>
 
         <p>
-          So where is the "I" that is doing? The teaching suggests something much subtler: the true self is a witness to all this action, not a participant in it. You can act fully while knowing, at a deeper level, that the action is happening through you, not by you.
+          So where is the I that does things? The teaching points to the Self as the witness of all this action. You can act fully while knowing that the action happens through you.
         </p>
 
         {/* DIVIDER */}
         <div className="section-divider">
           <div className="section-divider-line"></div>
           <div className="section-divider-label">
-            Verses 3.35 · Your Own Dharma
+            Verse 3.35 · Your Own Dharma
           </div>
           <div className="section-divider-line"></div>
         </div>
@@ -947,33 +943,33 @@ export default function ChapterThreePage() {
           speaker="Krishna"
           sanskrit="श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥"
           iast="śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ||"
-          meaning="It is better to perform your own dharma imperfectly than to perform another's dharma perfectly. Even death in one's own dharma is better; another's dharma is full of fear."
-          insightLabel="The radical teaching"
-          insight="This is one of the Gita's most counter-cultural teachings for our age of endless comparison. The impulse to become someone else, to follow another path because it looks better from the outside, is described here as fearful and dangerous. Your path, however imperfect, is yours. It carries authenticity. Another's path, however polished, is a masquerade."
-          essence="Stay true to your own path, your journey is sacred and unchallengeable."
+          meaning="Better your own dharma, imperfectly done, than another's done well. Even death in your own dharma is better; another's dharma brings fear."
+          insightLabel="Your own dharma"
+          insight="Arjuna is a kshatriya, and his dharma is to fight; the ascetic life he is reaching for belongs to someone else. Krishna says that following another's dharma, however well, brings fear, while even dying in your own is better."
+          essence="Better your own dharma, imperfectly done, than another&apos;s done well."
         />
 
         <p>
-          This verse is a salve and a challenge simultaneously. It says: you don't need to be perfect at your own dharma. You can stumble. You can fail. You can be clumsy and uncertain. That's still better than being perfect at someone else's calling.
+          The verse gives comfort and a warning. Doing your own dharma clumsily still beats doing someone else's well.
         </p>
 
         <p>
-          But it also says: the temptation to abandon your path for another's is rooted in fear, not wisdom. Why do you want to follow another's path? Because it looks easier from the outside? Because you admire how well they do it? Because you're afraid you'll fail at your own? Those are the wrong reasons. Your dharma is the only authentic ground you have.
+          The warning is that another's dharma brings fear. It is worth asking why another path attracts you: because it looks easier from outside, because you admire how well someone else walks it, or because you are afraid of failing at your own.
         </p>
 
         {/* DIVIDER */}
         <div className="section-divider">
           <div className="section-divider-line"></div>
           <div className="section-divider-label">
-            Verses 3.37 · The True Enemy
+            Verse 3.37 · The True Enemy
           </div>
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="desire-anger">What Actually Drives Us to Harm</h2>
+        <h2 id="desire-anger">What Drives Us to Do Wrong</h2>
 
         <p>
-          Having established that you cannot avoid action and that your action matters, Krishna now identifies what actually corrupts action. It's not action itself. It's not engagement in the world. It's something more specific: desire and anger.
+          In 3.36 Arjuna asks what drives a person to do wrong, even against their will, as if by force. Krishna names desire and anger.
         </p>
 
                 <ShlokaCard
@@ -983,16 +979,16 @@ export default function ChapterThreePage() {
           iast="kāma eṣa krodha eṣa rajoguṇasamudbhavaḥ | mahāśano mahāpāpmā viddhyenamiha vairiṇam ||"
           meaning="It is desire, it is anger, born of the rajo-guna, all-devouring and greatly harmful (mahāpāpmā), know this as the enemy in this world."
           insightLabel="The diagnosis"
-          insight="After being asked by Arjuna what forces drive a person toward papa, Krishna doesn't say ignorance or circumstance. He says desire and anger, specifically, the restless quality of the mind that creates wanting and reaction. These are described as the real enemies: not the Kauravas across the field, but the forces within."
-          essence="The true battle is within, overcoming desire and anger is the way to lasting peace."
+          insight="Krishna traces wrongdoing to desire (kama) and its other face, anger (krodha), both born of rajas, the restless guna. He calls desire all-devouring and the enemy here, an enemy inside Arjuna as well as across the field."
+          essence="Desire and anger, born of rajas, are the enemy to know and fight."
         />
 
         <p>
-          Here is where Chapter 3 moves from philosophy to psychology. The enemy isn't external. You've been fighting the wrong fight if you think the problem is other people, circumstances, or even your own inaction. The real enemy is the restless wanting in the mind, the craving for what you don't have and the rejection of what you do.
+          So the enemy Krishna points to is inside: the restless wanting in the mind, the craving for what you lack and the anger that comes when it is blocked.
         </p>
 
         <p>
-          Desire is never satisfied. Anger is never resolved by getting what you want. They will consume you from the inside, using action as their tool.
+          In 3.39 Krishna calls desire a fire that is never satisfied, and in 3.40 he says it lives in the senses, the mind and the intellect.
         </p>
 
         {/* DIVIDER */}
@@ -1007,7 +1003,7 @@ export default function ChapterThreePage() {
         <h2 id="hierarchy">The Ladder from Body to Self</h2>
 
         <p>
-          Chapter 3 ends with a structure. It describes the hierarchy of the inner life and shows how freedom is actually constructed.
+          Chapter 3 ends by ranking the parts of a person, from the senses up to the Self.
         </p>
 
                 <ShlokaCard
@@ -1016,17 +1012,17 @@ export default function ChapterThreePage() {
           sanskrit="इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः । मनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः ॥ एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना । जहि शत्रुं महाबाहो कामरूपं दुरासदम् ॥"
           iast="indriyāṇi parāṇyāhurindriyebhyaḥ paraṃ manaḥ | manasastu parā buddhiryo buddheḥ paratastu saḥ || evaṃ buddheḥ paraṃ buddhvā saṃstabhyātmānamātmanā | jahi śatruṃ mahābāho kāmarūpaṃ durāsadam ||"
           meaning="The senses are higher than the body; the mind is higher than the senses; the intellect is higher than the mind. And higher than the intellect is the Self. Knowing the Self to be superior to the intellect, restrain your lower self with your higher Self, and slay this formidable enemy in the form of desire."
-          insightLabel="The architecture"
-          insight="This is not an escape hierarchy. It's a ladder of control. You don't destroy the body or abandon the senses. You use each higher level to govern the lower. Use the intellect to govern the mind, the Self to govern the intellect. Desire is powerful, but you have something more powerful available to you."
+          insightLabel="The ladder"
+          insight="The ladder is for steadying yourself. You keep the body and the senses and use each higher level to govern the one below: the intellect governs the mind, and knowing the Self steadies the intellect. Desire is strong, and the Self is stronger."
           essence="Master your senses through the mind, mind through intellect, intellect through Self."
         />
 
         <p>
-          The chapter ends not with withdrawal but with mastery. Not with escape but with building a structure inside yourself where the higher can govern the lower. Your body wants. Your senses seek. Your mind desires. Your intellect rationalizes. And beyond all of this is the Self, the witness, the awareness that stands free of all of it.
+          The chapter began with Arjuna's wish to escape and ends with mastery of the self. The senses seek, the mind desires and the intellect rationalizes, and beyond all of them is the Self, the witness.
         </p>
 
         <p>
-          To access that freedom, you don't leave the body behind. You stop being run by it. You don't abandon the mind. You stop being unconscious within it. This is the real renunciation: not abandoning action, but abandoning the delusion that you are only the part of yourself that craves and reacts.
+          Reaching that freedom means staying in the body and the mind without being run by them. In this chapter, renunciation means giving up the belief that you are only the part of yourself that craves and reacts.
         </p>
 
         {/* DIVIDER */}
@@ -1067,7 +1063,7 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.4</td>
               <td>Krishna</td>
-              <td>Freedom comes through wise action, not escape.</td>
+              <td>Not starting work does not free you from action, and renouncing it alone does not bring perfection.</td>
             </tr>
             <tr>
               <td>3.5</td>
@@ -1077,77 +1073,77 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.6</td>
               <td>Krishna</td>
-              <td>True self-control means aligning thoughts and actions.</td>
+              <td>Holding the body still while the mind dwells on sense objects is hypocrisy.</td>
             </tr>
             <tr>
               <td>3.7</td>
               <td>Krishna</td>
-              <td>Master your senses; act without attachment.</td>
+              <td>Better is one who governs the senses by the mind and works without attachment.</td>
             </tr>
             <tr>
               <td>3.8</td>
               <td>Krishna</td>
-              <td>Meaningful action matters, even for basic survival.</td>
+              <td>Do your prescribed work; action is better than inaction, and even the body needs it.</td>
             </tr>
             <tr>
               <td>3.9</td>
               <td>Krishna</td>
-              <td>Act as an offering; freedom comes from selfless service.</td>
+              <td>Work not done as yajna binds; work as an offering, free of attachment.</td>
             </tr>
             <tr>
               <td>3.10</td>
               <td>Krishna</td>
-              <td>Through selfless action, the world sustains itself.</td>
+              <td>Prajapati created beings along with yajna and said: prosper by this.</td>
             </tr>
             <tr>
               <td>3.11</td>
               <td>Krishna</td>
-              <td>Through mutual service, you create shared prosperity.</td>
+              <td>Nourish the gods and they will nourish you; serving each other, you reach the highest good.</td>
             </tr>
             <tr>
               <td>3.12</td>
               <td>Krishna</td>
-              <td>What you receive is meant to be shared.</td>
+              <td>Whoever enjoys the gods' gifts without offering anything back is a thief.</td>
             </tr>
             <tr>
               <td>3.13</td>
               <td>Krishna</td>
-              <td>Freedom comes from selfless giving, not hoarding.</td>
+              <td>Those who eat what remains of the offering are freed; those who cook only for themselves eat sin.</td>
             </tr>
             <tr>
               <td>3.14</td>
               <td>Krishna</td>
-              <td>Selfless action nourishes both self and world.</td>
+              <td>Beings come from food, food from rain, rain from yajna, and yajna from action.</td>
             </tr>
             <tr>
               <td>3.15</td>
               <td>Krishna</td>
-              <td>See every action as a sacred offering.</td>
+              <td>Action comes from the Veda, the Veda from the Imperishable; so Brahman rests in yajna.</td>
             </tr>
             <tr>
               <td>3.16</td>
               <td>Krishna</td>
-              <td>To live only for pleasure is to waste your life.</td>
+              <td>Whoever does not keep this wheel turning, living for the senses, lives in vain.</td>
             </tr>
             <tr>
               <td>3.17</td>
               <td>Krishna</td>
-              <td>True contentment is found within, not in external achievement.</td>
+              <td>For one who delights and rests content in the self, no work remains to be done.</td>
             </tr>
             <tr>
               <td>3.18</td>
               <td>Krishna</td>
-              <td>Fulfillment comes from selfless action, not results.</td>
+              <td>That person gains nothing by acting or not acting, and depends on no one.</td>
             </tr>
             <tr>
               <td>3.19</td>
               <td>Krishna</td>
-              <td>Perform your duty without attachment, this leads to freedom.</td>
+              <td>So do the work that must be done, without attachment; that way one reaches the highest.</td>
             </tr>
             <tr>
               <td>3.20</td>
               <td>Krishna</td>
-              <td>Selfless action uplifts both self and society.</td>
+              <td>Janaka and others reached perfection through action; act for the welfare of the world too.</td>
             </tr>
             <tr>
               <td>3.21</td>
@@ -1157,27 +1153,27 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.22</td>
               <td>Krishna</td>
-              <td>Do your duty regardless of gain or need.</td>
+              <td>Krishna has nothing to gain in the three worlds, yet he keeps acting.</td>
             </tr>
             <tr>
               <td>3.23</td>
               <td>Krishna</td>
-              <td>Your actions shape what others believe is possible.</td>
+              <td>If Krishna stopped working, people everywhere would follow his example.</td>
             </tr>
             <tr>
               <td>3.24</td>
               <td>Krishna</td>
-              <td>Your actions echo, lead with awareness.</td>
+              <td>If he stopped, the worlds would fall into ruin and confusion.</td>
             </tr>
             <tr>
               <td>3.25</td>
               <td>Krishna</td>
-              <td>True wisdom serves through action and humble example.</td>
+              <td>The wise should act as hard as the ignorant, but without attachment, for the world's welfare.</td>
             </tr>
             <tr>
               <td>3.26</td>
               <td>Krishna</td>
-              <td>Lead by example with empathy, inspire, don't impose.</td>
+              <td>The wise should leave those attached to action undisturbed, act well themselves, and keep them working.</td>
             </tr>
             <tr>
               <td>3.27</td>
@@ -1187,47 +1183,47 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.28</td>
               <td>Krishna</td>
-              <td>Understanding the nature of action leads to freedom.</td>
+              <td>One who knows that qualities act on qualities stays unattached.</td>
             </tr>
             <tr>
               <td>3.29</td>
               <td>Krishna</td>
-              <td>True wisdom holds space for others' journeys.</td>
+              <td>Those who know the whole should not unsettle those who know only part.</td>
             </tr>
             <tr>
               <td>3.30</td>
               <td>Krishna</td>
-              <td>Offer your actions; let go of attachment; find freedom.</td>
+              <td>Offer all actions to Krishna and fight, free of hope, ownership and fever.</td>
             </tr>
             <tr>
               <td>3.31</td>
               <td>Krishna</td>
-              <td>Faithful, non-judgmental action leads to freedom.</td>
+              <td>Those who follow this teaching with faith, without finding fault, are freed from karma.</td>
             </tr>
             <tr>
               <td>3.32</td>
               <td>Krishna</td>
-              <td>Humility and openness to wisdom lead to progress.</td>
+              <td>Those who sneer at it and do not follow it are lost.</td>
             </tr>
             <tr>
               <td>3.33</td>
               <td>Krishna</td>
-              <td>True transformation comes from working with your nature.</td>
+              <td>Even the wise act according to their nature; repression achieves little.</td>
             </tr>
             <tr>
               <td>3.34</td>
               <td>Krishna</td>
-              <td>Freedom comes from not letting likes and dislikes rule you.</td>
+              <td>Attraction and aversion lie in wait in sense objects; do not fall under their sway.</td>
             </tr>
             <tr>
               <td>3.35</td>
               <td>Krishna</td>
-              <td>Your dharma imperfectly is better than another's perfectly.</td>
+              <td>Better your own dharma, imperfectly done, than another's done well.</td>
             </tr>
             <tr>
               <td>3.36</td>
               <td>Arjuna</td>
-              <td>What forces drive a person toward papa?</td>
+              <td>What drives a person to wrongdoing, even against their will?</td>
             </tr>
             <tr>
               <td>3.37</td>
@@ -1247,25 +1243,27 @@ export default function ChapterThreePage() {
             <tr>
               <td>3.40</td>
               <td>Krishna</td>
-              <td>Guard your senses, mind, and intellect, they're gateways of desire.</td>
+              <td>The senses, mind and intellect are where desire lives.</td>
             </tr>
             <tr>
               <td>3.41</td>
               <td>Krishna</td>
-              <td>Mastery over senses is the foundation of wisdom.</td>
+              <td>So control the senses first and kill desire, the destroyer of knowledge.</td>
             </tr>
             <tr>
               <td>3.42</td>
               <td>Krishna</td>
-              <td>The Self is subtler and more powerful than senses, mind, or intellect.</td>
+              <td>The senses are higher than the body, the mind higher than the senses, the intellect higher still, and the Self beyond it.</td>
             </tr>
             <tr>
               <td>3.43</td>
               <td>Krishna</td>
-              <td>With self-mastery, overcome desire, the formidable inner enemy.</td>
+              <td>Knowing the Self, steady yourself by the Self and kill desire, the hard-to-conquer enemy.</td>
             </tr>
           </tbody>
         </table>
+
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the wording of 3.35, the verse-by-verse summaries in the table (several did not match their verses), and the description of Arjuna as a kshatriya by birth and training; removed an app plug; copy edited.</p>
 
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Bhagwat Geeta Chapter 3"} />
 
@@ -1306,19 +1304,19 @@ export default function ChapterThreePage() {
           </div>
           <div className="faq-item">
             <div className="faq-q">What is karma yoga in the Bhagavad Gita?</div>
-            <div className="faq-a">Karma yoga is the path of selfless action, performing one's duties without attachment to outcomes, treating every action as an offering to something larger than the self. It is described in Chapter 3 as the appropriate path for most people who are active in the world. Unlike renunciation, which withdraws from action, karma yoga transforms action itself into the spiritual path.</div>
+            <div className="faq-a">Karma yoga is the path of selfless action, performing one's duties without attachment to outcomes, treating every action as an offering. In Chapter 3 Krishna presents it as the path for those inclined to action (3.3) and says action is better than inaction (3.8). Renunciation withdraws from action; karma yoga makes the action itself the path.</div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does svadharma mean in the Gita?</div>
-            <div className="faq-a">Svadharma means your own duty, your own path, your own nature-driven calling. In 3.35, Krishna says it is better to perform your own dharma imperfectly than to perform another's dharma perfectly. This is not a defense of staying comfortable, it is a teaching about authenticity and the dangers of comparison and imitation.</div>
+            <div className="faq-a">Svadharma means your own duty, the work that fits your nature and station. In 3.35, Krishna says: better your own dharma, imperfectly done, than another's done well. The verse warns against taking up someone else's path, however well you might walk it, and gives no licence to stay comfortable.</div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What does the Gita say about avoiding your responsibility?</div>
-            <div className="faq-a">The Gita is extremely direct on this. In Chapter 3, Krishna argues that no one can avoid action, attempting to do so is itself an action, driven by desire and self-deception. The desire to escape from one's duties is identified not as wisdom or detachment but as a form of delusion (moha). Arjuna's wish to renounce at the start is diagnosed throughout the chapter as an escape mechanism, not a spiritual achievement.</div>
+            <div className="faq-a">In Chapter 3, Krishna says no one can stop acting even for a moment (3.5), and that someone who holds the body still while the mind runs after sense objects is a hypocrite (3.6). He treats Arjuna's wish to renounce as confusion and asks him to act without attachment (3.19).</div>
           </div>
           <div className="faq-item">
             <div className="faq-q">What is lokasamgraha in the Bhagavad Gita?</div>
-            <div className="faq-a">Lokasamgraha means "the holding together of the world" or "the welfare of humanity." It appears in Chapter 3 as the reason wise and great people must continue to act, not for personal gain, but because their actions set the standard for what others will do. To withdraw from engagement when one has influence is to abandon a responsibility to the larger good.</div>
+            <div className="faq-a">Lokasamgraha means "the holding together of the world" or "the welfare of humanity." It appears in Chapter 3 as the reason wise and great people must keep acting for the world's sake, since their actions set the standard for what others will do. To withdraw from engagement when one has influence is to abandon a responsibility to the larger good.</div>
           </div>
         </div>
       </article>
@@ -1327,7 +1325,7 @@ export default function ChapterThreePage() {
     {/* ── FOOTER ── */}
     <footer>
       <p>
-        Wisdom · Bhagavad Gita, tuned to your life · Week 1 free on iPhone
+        Wisdom · One Gita verse a day for 7 days, read aloud · Week 1 free on iPhone
       </p>
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  ·

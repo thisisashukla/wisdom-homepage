@@ -18,7 +18,7 @@ const KEPT = [
 export default function SignInScreen({ onSignIn, busy, error, weekTitle }: { onSignIn: () => void; busy: boolean; error: string | null; weekTitle?: string | null }) {
   return (
     <>
-      <Hero title="Get your week" accent="by email" sub={weekTitle ? <>Week 1, <i>{weekTitle.toLowerCase()}</i>: seven verses chosen for you, free.</> : 'Seven verses chosen for you, free. Sign in and we send them to you.'} />
+      <Hero title="Get your week" accent="by email" sub={weekTitle ? <>Week 1, <i>{weekTitle.toLowerCase()}</i>: a week of verses chosen for you, free.</> : 'A week of verses chosen for you, free. Sign in and we send them to you.'} />
       <div className="ob-kept ob-rise" style={{ '--d': '320ms', '--dy': '12px' } as React.CSSProperties}>
         {KEPT.map((k) => (
           <div key={k.text} className="ob-kept-row">

@@ -6,12 +6,12 @@ import VerseFunnelCTA from '@/components/funnel/VerseFunnelCTA'
 import { appStoreUrl } from '@/lib/app'
 
 export const metadata: Metadata = {
-  title: "Bhagavad Gita's 18 Chapters: Names, Summary & How It Ends",
-  description: "18 chapters (adhyays) in 3 parts of 6. Every chapter name with a short summary, from Arjuna's despair in Ch 1 to how it ends: total surrender in 18.66.",
+  title: "Bhagavad Gita's 18 Chapters: How They Fit Together & How It Ends",
+  description: "The Gita's 18 chapters (adhyays) in 3 parts of 6, from Arjuna's despair in Ch 1 to Krishna's last instruction, surrender, in 18.66.",
   keywords: "bhagavad gita structure, bhagavad gita all chapters summary, bhagavad gita 18 chapters, how is bhagavad gita organised, bhagavad gita complete guide, bhagavad gita story arc, bhagavad gita vishwarupa, bhagavad gita chapter summary, gita 18.66 meaning, bhagavad gita arc, bhagavad gita 18 chapters summary, bhagavad gita storyline, bhagavad gita 18.66 meaning, bhagavad gita plot, bhagavad gita overview",
   openGraph: {
-    title: "Bhagavad Gita's 18 Chapters: Names, Summary & How It Ends",
-    description: "18 chapters (adhyays) in 3 parts of 6. Every chapter name with a short summary, from Arjuna's despair in Ch 1 to how it ends: total surrender in 18.66.",
+    title: "Bhagavad Gita's 18 Chapters: How They Fit Together & How It Ends",
+    description: "The Gita's 18 chapters (adhyays) in 3 parts of 6, from Arjuna's despair in Ch 1 to Krishna's last instruction, surrender, in 18.66.",
     type: 'article',
     url: "https://wisdomquotes.in/blogs/bhagavad-gita-complete-structure-all-chapters",
     siteName: 'Wisdom',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sansearchapp',
     creator: '@thisisashukla',
-    title: "Bhagavad Gita's 18 Chapters: Names, Summary & How It Ends",
-    description: "18 chapters (adhyays) in 3 parts of 6. Every chapter name with a short summary, from Arjuna's despair in Ch 1 to how it ends: total surrender in 18.66.",
+    title: "Bhagavad Gita's 18 Chapters: How They Fit Together & How It Ends",
+    description: "The Gita's 18 chapters (adhyays) in 3 parts of 6, from Arjuna's despair in Ch 1 to Krishna's last instruction, surrender, in 18.66.",
     images: ['https://wisdomquotes.in/assets/gita-montage.webp'],
   },
   alternates: {
@@ -421,8 +421,8 @@ const schemas = [
   {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "The Bhagavad Gita's Complete Structure — How Krishna Builds His Argument Across 18 Chapters",
-  "description": "A structural reading of the Bhagavad Gita — how Krishna's discourse is organised across 18 chapters, from Arjuna's crisis to the final surrender of 18.66.",
+  "headline": "How the Bhagavad Gita's 18 Chapters Fit Together",
+  "description": "How Krishna's discourse is organised across 18 chapters, from Arjuna's crisis in Chapter 1 to the surrender of 18.66.",
   "author": {
     "@type": "Person",
     "name": "Ankur Shukla",
@@ -496,7 +496,7 @@ const schemas = [
       "name": "How is the Bhagavad Gita structured?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Bhagavad Gita's 18 chapters fall into three broad movements. The first six chapters (the 'karma kanda') deal with action, duty, and the nature of the self — the practical foundation. Chapters 7–12 (the 'bhakti and jnana kanda') shift register dramatically: Krishna reveals his divine nature, culminating in the Vishwarupa (cosmic form) of Chapter 11. Chapters 13–18 systematise the earlier teachings — the field and its knower, the three gunas, divine versus demonic natures, and the grand synthesis of Chapter 18. The arc is: crisis → philosophical foundation → cosmic revelation → intimate surrender."
+        "text": "The Bhagavad Gita's 18 chapters fall into three broad movements. Chapters 1–6 (often called the karma kanda) deal with action, duty and the self. In Chapters 7–12 (the bhakti kanda) Krishna describes his own nature, and in Chapter 11 he shows Arjuna the Vishwarupa, his cosmic form. Chapters 13–18 (the jnana kanda) go back over the earlier teachings: the field and its knower, the three gunas, the divine and demonic natures, and the summing-up of Chapter 18."
       }
     },
     {
@@ -504,7 +504,7 @@ const schemas = [
       "name": "What is the climax of the Bhagavad Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chapter 11 — the Vishwarupa Darshana Yoga — is the Gita's dramatic climax. Arjuna asks to see Krishna's universal form. He is given divine sight. He sees the entire cosmos — all gods, all beings, all time — within Krishna. He sees warriors already dead before the battle begins. He sees Krishna as Kala (Time) itself, devouring all. Arjuna is overwhelmed and begs Krishna to return to his human form. It is the most visually overwhelming moment in all Sanskrit literature. But the Gita's most important verse — 18.66 — comes seven chapters later, in a whisper."
+        "text": "Chapter 11 — the Vishwarupa Darshana Yoga — is the Gita's dramatic climax. Arjuna asks to see Krishna's universal form. He is given divine sight. He sees the entire cosmos — all gods, all beings, all time — within Krishna. He sees warriors already dead before the battle begins. He sees Krishna as Kala, time, devouring all (11.32). Arjuna is overwhelmed and begs Krishna to return to his human form. Krishna's last instruction, 18.66, comes seven chapters later."
       }
     },
     {
@@ -512,7 +512,7 @@ const schemas = [
       "name": "What is the final teaching of the Bhagavad Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The final teaching is 18.66: 'Abandon all dharmas and take refuge in me alone. I will free you from all papa. Do not grieve.' This is the most radical verse in the Gita — and the most intimate. After 17 chapters of philosophy, yoga, cosmic revelation, and metaphysics, Krishna's last instruction is not a technique or a path. It is a relationship. Trust me completely. I will handle the rest."
+        "text": "The final teaching is 18.66: 'Abandon all dharmas and take refuge in me alone. I will free you from all sin. Do not grieve.' Krishna introduces it in 18.64 as sarva-guhyatamam, the secret of secrets. After 17 chapters of philosophy, yoga and the cosmic vision, his last instruction asks Arjuna to trust him."
       }
     },
     {
@@ -520,7 +520,7 @@ const schemas = [
       "name": "What are the three sections of the Bhagavad Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Gita is traditionally divided into three hexads: (1) Chapters 1–6, sometimes called the Karma Kanda or Jnana Kanda — focused on action, self, and meditation; (2) Chapters 7–12, the Bhakti Kanda — focused on devotion, the nature of the Divine, and the cosmic form; (3) Chapters 13–18, the Jnana Vijnana Kanda — focused on the deeper metaphysical distinctions. These aren't airtight divisions, but they track the shift from practical ethics, to theological revelation, to systematic philosophy."
+        "text": "The Gita is traditionally divided into three hexads: (1) Chapters 1–6, the Karma Kanda, on action, the self and meditation; (2) Chapters 7–12, the Bhakti Kanda, on devotion, Krishna's nature and the cosmic form; (3) Chapters 13–18, the Jnana Kanda, on the field and its knower, the gunas and the summing-up. The divisions overlap, but they track a move from practical ethics to devotion to philosophy."
       }
     },
     {
@@ -528,7 +528,7 @@ const schemas = [
       "name": "Why does the Bhagavad Gita have 18 chapters?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Mahabharata (of which the Gita is a part) is structured around the number 18 — 18 days of battle, 18 army divisions, 18 books. The number holds symbolic weight in Hindu tradition. More importantly, 18 chapters is exactly the right length for what the Gita is trying to do: begin with a human crisis, build through practical and philosophical teaching, reach a cosmic revelation, and then — quietly, precisely — arrive at a single act of complete surrender."
+        "text": "The Mahabharata (of which the Gita is a part) is structured around the number 18 — 18 days of battle, 18 army divisions, 18 books. The Gita's 18 chapters match that pattern."
       }
     },
     {
@@ -536,7 +536,7 @@ const schemas = [
       "name": "What does Arjuna say at the end of the Bhagavad Gita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Arjuna's final words are verse 18.73: 'My delusion is destroyed. By your grace, my memory has returned. I am free of doubt. I am steady. I will act according to your word.' The Gita begins with Arjuna sitting down, putting his bow away, overwhelmed and refusing to act. It ends with him standing up, resolute, ready. The discourse hasn't changed the situation — the armies are still there. But the man who faces them is completely different."
+        "text": "Arjuna's final words are verse 18.73: 'My delusion is destroyed. By your grace, my memory has returned. I am free of doubt. I am steady. I will act according to your word.' At the end of Chapter 1 Arjuna sits down in his chariot and drops his bow (1.47). In 18.73 he says he will do as Krishna says. The armies are the same ones."
       }
     }
   ]
@@ -571,10 +571,10 @@ export default function CompleteStructurePage() {
           <div className="chapter-badge-dot"></div>
         </div>
         <h1 className="article-title">
-          The Bhagavad Gita Is a <em>Screenplay.</em><br />Here's How It's Built.
+          How the Bhagavad Gita&apos;s <em>18 Chapters</em> Fit Together
         </h1>
         <p className="article-subtitle">
-          700 verses, 18 chapters, three acts, one devastating climax, and a final line that barely whispers. How Krishna builds his argument from a man sitting in a chariot to the most radical teaching in Sanskrit literature.
+          How the 18 chapters fit together, from Arjuna sitting down in his chariot in Chapter 1 to Krishna&apos;s last instruction in 18.66 and Arjuna&apos;s answer in 18.73.
         </p>
         <div className="article-meta">
           <span className="meta-item">By <a href="/about" rel="author" data-mp-location="byline_author" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.35)' }}>Ankur Shukla</a></span>
@@ -585,7 +585,7 @@ export default function CompleteStructurePage() {
           <span className="meta-sep">·</span>
           <span className="meta-item">Complete structural guide</span>
           <span className="meta-sep">·</span>
-          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed June 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
+          <span className="meta-item" style={{ fontStyle: 'italic' }}>Wisdom translation, edited by Ankur Shukla. Commentary AI-drafted, human-reviewed. Reviewed October 2026. <a href="/methodology" style={{ color: 'var(--gold-light)', borderBottom: '1px solid rgba(200,136,30,0.3)' }}>Methodology →</a></span>
         </div>
       </div>
     </div>
@@ -596,7 +596,7 @@ export default function CompleteStructurePage() {
         <figure className="chapter-image">
           <img
             src="/assets/gita-montage.webp"
-            alt="The Bhagavad Gita across 18 chapters — from Arjuna's collapse to the cosmic Vishwarupa to Krishna's final whispered teaching"
+            alt="The Bhagavad Gita across 18 chapters, from Arjuna's collapse to the cosmic Vishwarupa to Krishna's last instruction"
             width="1200"
             height="675"
             loading="eager"
@@ -606,27 +606,23 @@ export default function CompleteStructurePage() {
         </figure>
 
         <p className="lead">
-          Most people approach the Bhagavad Gita as a quote book. They pick a verse, put it on a poster, and move on. That's like watching only the trailer and thinking you've seen the film. The Gita is a constructed argument, with a beginning, a buildup, a climax that breaks what you thought you knew, and an ending that lands quietly but hits harder than anything that came before it.
+          Many people read the Bhagavad Gita as a book of quotes: pick a verse, put it on a poster. Read in order, it is an argument with a setup, a buildup, a climax in Chapter 11 and a short final instruction in 18.66.
         </p>
 
         <p>
-          Here's what's remarkable: Krishna doesn't start with his biggest claim. He earns it. Over eighteen chapters, he takes a man who is intellectually sharp but emotionally collapsed and rebuilds him, not by comforting him, but by completely restructuring how he understands himself, action, death, and the nature of the universe. By the end, the man who was sitting in a chariot unable to lift his bow says: <em>my confusion is gone, I am ready.</em>
+          Krishna saves his biggest claims for later. Over eighteen chapters he talks Arjuna, a sharp man who has fallen apart, through a new account of the self, action, death and the universe. At the start Arjuna sits in his chariot and won&apos;t lift his bow. At the end (18.73) he says: <em>my confusion is gone, I will do as you say.</em>
         </p>
 
         <p>
-          That transformation is not accidental. It follows a logic. And understanding that logic makes every individual verse richer.
+          Each step depends on the one before it, and knowing the order helps with any single verse.
         </p>
 
         {/* TOC */}
         <nav className="toc" aria-label="Table of contents">
           <div className="toc-label">In this article</div>
           <ol className="toc-list">
-            <li><a href="#setup">The setup, why the conversation even happens</a></li>
-            <li><a href="#act1">Act I, The Inner Foundation (Chapters 1–6)</a></li>
-            <li><a href="#act2">Act II, The Revelation (Chapters 7–12)</a></li>
-            <li><a href="#ch11">Chapter 11, the scene that changes everything</a></li>
-            <li><a href="#act3">Act III, The Philosophy Deepened (Chapters 13–18)</a></li>
-            <li><a href="#1866">18.66, the ending that reframes everything</a></li>
+            <li><a href="#setup">The setup: why the conversation happens</a></li>
+            <li><a href="#ch11">Chapter 11: the cosmic form</a></li>
             <li><a href="#patterns">Five things Krishna does across all 18 chapters</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
           </ol>
@@ -641,7 +637,7 @@ export default function CompleteStructurePage() {
         <h2 id="setup">Before Krishna Speaks a Single Word of Philosophy</h2>
 
         <p>
-          The Bhagavad Gita's first verse is not spoken by Krishna. It is not spoken by Arjuna. It is spoken by a blind king, sitting far from the battlefield, asking his advisor Sanjaya for news.
+          The Bhagavad Gita&apos;s first verse is spoken by Dhritarashtra, the blind king, who sits far from the battlefield and asks his advisor Sanjaya for news.
         </p>
 
                 <ShlokaCard
@@ -649,11 +645,11 @@ export default function CompleteStructurePage() {
           speaker="Dhritarashtra"
           sanskrit="धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥"
           iast="dharmakṣetre kurukṣetre samavetā yuyutsavaḥ | māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya ||"
-          essence="My sons&quot;, not &quot;the Kauravas.&quot; The disease is in the first word."
+          essence="Dhritarashtra asks what his sons and the Pandavas did at Kurukshetra."
         />
 
         <p>
-          Why start with the atman? Because every practical teaching that follows, about action, duty, attachment, peace, rests on this foundation. If the self that you're protecting when you grieve is actually eternal and indestructible, then the nature of "loss" is different. If the atman cannot be killed, then certain arguments about the moral horror of battle need to be re-examined.
+          Krishna&apos;s teaching in Chapter 2 starts with the atman, because what he later says about action, duty and attachment rests on it. If the self Arjuna grieves for is eternal, &quot;loss&quot; means something else. If the atman cannot be killed, Arjuna&apos;s arguments against the battle have to be looked at again.
         </p>
 
                 <ShlokaCard
@@ -661,23 +657,23 @@ export default function CompleteStructurePage() {
           speaker="Krishna"
           sanskrit="न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥"
           iast="na jāyate mriyate vā kadācinnāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato'yaṃ purāṇo na hanyate hanyamāne śarīre ||"
-          essence="The foundation that makes all the other teachings possible."
+          essence="The self is never born and never dies; it is not killed when the body is."
         />
 
         <p>
-          With the metaphysical foundation in place, Krishna moves to the practical. Chapter 2 gives us 2.47, the verse that has probably been quoted more than any other in the Gita. And the reason it lands so hard is exactly because it comes after the atman teaching. Once you understand that you are not the outcome, you can act differently.
+          With the metaphysical foundation in place, Krishna moves to the practical. Chapter 2 gives us 2.47, one of the Gita&apos;s best-known verses. It comes after the atman teaching, and it leans on it: if you are not the outcome, you can act without clinging to it.
         </p>
 
                 <ShlokaCard
-          verseRef="Bhagavad Gita 2.47, The Most Quoted Verse"
+          verseRef="Bhagavad Gita 2.47"
           speaker="Krishna"
           sanskrit="कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"
           iast="karmaṇyevādhikāraste mā phaleṣu kadācana | mā karmaphalaheturbhūrmā te saṅgo'stvakarmaṇi ||"
-          essence="Act fully. Hold lightly. But act."
+          essence="Your right is to the work, never to its results, and don't cling to inaction."
         />
 
         <p>
-          Chapter 8 introduces the idea that what you hold in your mind at death matters, that the quality of consciousness at the moment of departure shapes what follows. Chapter 9 offers what Krishna calls the "royal secret", the most intimate revelation yet: <em>I am in all things and all things are in me. And I accept whatever is offered with genuine love, even a leaf, a flower, a drop of water.</em>
+          Chapter 8 says that what you hold in mind at death shapes what follows (8.5–6). Chapter 9 gives what Krishna calls the &quot;royal secret&quot; (9.2): <em>all beings rest in me, yet I am not in them</em> (9.4), and <em>I accept whatever is offered with love, a leaf, a flower, a fruit, some water</em> (9.26).
         </p>
 
                 <ShlokaCard
@@ -685,15 +681,15 @@ export default function CompleteStructurePage() {
           speaker="Krishna"
           sanskrit="पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति । तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥"
           iast="patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati | tadahaṃ bhaktyupahṛtamaśnāmi prayatātmanaḥ ||"
-          essence="The universe accepting a leaf. The grandest and the most intimate at once."
+          essence="Krishna accepts a leaf, flower, fruit or water offered to him with devotion."
         />
 
         <p>
-          Chapter 10 is Krishna's catalogue of his own divine manifestations. He is the Ganga among rivers, the Himalaya among mountains, the lion among animals, the thunderbolt among weapons, the letter A among alphabets, the spring among seasons. The teaching is that whenever you encounter something of surpassing beauty, power, or excellence, you are glimpsing a fragment of the divine. This is not philosophy, it is a way of training the eyes to see.
+          Chapter 10 is Krishna's catalogue of his own divine manifestations. He is the Ganga among rivers, the Himalaya among mountains, the lion among animals, the thunderbolt among weapons, the letter A among alphabets, the spring among seasons. Whatever has unusual glory, beauty or power, he says, comes from a spark of his splendour (10.41). The chapter trains the reader to look for him in what they see.
         </p>
 
         <div className="highlight-box">
-          <p><strong>The narrative logic of Chapters 7–10:</strong> Krishna is building up to something. He spends four chapters systematically establishing his divine nature, making cosmic claim after cosmic claim, each larger than the last. He is not doing this to be impressive. He is preparing Arjuna for what he is about to be asked to see. When Chapter 11 arrives, the buildup has earned what it's about to show.</p>
+          <p><strong>The narrative logic of Chapters 7–10:</strong> Krishna spends four chapters describing his own nature, each claim larger than the last. This prepares Arjuna for what he asks to see in Chapter 11.</p>
         </div>
 
         {/* CHAPTER 11 */}
@@ -703,7 +699,7 @@ export default function CompleteStructurePage() {
           <div className="section-divider-line"></div>
         </div>
 
-        <h2 id="ch11">Chapter 11, The Scene That Breaks Everything</h2>
+        <h2 id="ch11">Chapter 11: The Cosmic Form</h2>
 
         <figure className="chapter-image">
           <img
@@ -717,11 +713,11 @@ export default function CompleteStructurePage() {
         </figure>
 
         <p>
-          Arjuna asks to see it. After four chapters of Krishna describing his divine nature in words, Arjuna says: show me. If you are everything you say you are, show me your universal form.
+          After four chapters of description, Arjuna asks to see Krishna&apos;s universal form for himself (11.3–4).
         </p>
 
         <p>
-          Krishna gives him divine sight. And what Arjuna sees is the entire cosmos, every god, every being, every world, past and future, contained within one form. He sees the warriors arrayed on both sides of the battle already consumed, already dead. He sees time itself in the shape of his charioteer.
+          Krishna gives him divine sight (11.8). Arjuna sees the entire cosmos, every god, every being, every world, past and future, contained within one form. He sees the warriors arrayed on both sides of the battle already consumed, already dead. He sees time itself in the shape of his charioteer.
         </p>
 
                 <ShlokaCard
@@ -729,7 +725,7 @@ export default function CompleteStructurePage() {
           speaker="Sanjaya (narrating)"
           sanskrit="दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता । यदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः ॥"
           iast="divi sūryasahasrasya bhavedyugapadutthitā | yadi bhāḥ sadṛśī sā syādbhāsastasya mahātmanaḥ ||"
-          essence="A thousand suns, and still an approximation."
+          essence="If a thousand suns rose at once in the sky, that light might match his."
         />
 
         {/* PATTERNS SECTION */}
@@ -742,16 +738,16 @@ export default function CompleteStructurePage() {
         <h2 id="patterns">Five Things Krishna Does Across All 18 Chapters</h2>
 
         <div className="insights-box">
-          <div className="insights-label">The Gita's Craft, What Krishna's Discourse Actually Does</div>
+          <div className="insights-label">How Krishna&apos;s discourse is built</div>
           <ul className="insights-list">
-            <li><strong>He earns every claim.</strong> Krishna doesn't announce his biggest ideas first. He builds a foundation, then a floor, then a wall. The claim "I am time, the destroyer of worlds" lands in Chapter 11 with devastating force precisely because six chapters of philosophy have already been established. The Vishwarupa is not a revelation without context, it is the culmination of an argument.</li>
-            <li><strong>He answers the question behind the question.</strong> Arjuna asks: should I fight? Krishna answers: you don't understand what death is, what the self is, or what action is, so the question you're asking is malformed. He rebuilds the questioner before he answers the question.</li>
-            <li><strong>He alternates between grandeur and intimacy.</strong> The Gita moves rhythmically between cosmic claims and personal warmth. After the terror of the Vishwarupa, the softness of 9.26 (I accept even a leaf). After the systematic philosophy of Chapters 13–17, the tenderness of 18.65 (you are dear to me). The oscillation is intentional, it keeps the teaching from becoming either coldly abstract or sentimentally narrow.</li>
-            <li><strong>He never removes Arjuna's choice.</strong> At the end of the entire discourse, Krishna explicitly says (18.63): "I have told you the most secret wisdom. Now reflect on it fully, and do as you wish." After 700 verses, the autonomy is returned. The Gita is not a command. It is an invitation to clarity, and clarity still requires a choice.</li>
-            <li><strong>The ending is quieter than the climax.</strong> Chapter 11 is the Gita's most spectacular moment. But 18.66, whispered, intimate, radical, is its most important. The Gita builds to thunder and ends in stillness. That is a structural choice, and it is perfect.</li>
+            <li><strong>He builds up to his largest claims.</strong> &quot;I am time, the destroyer of worlds&quot; (11.32) comes in Chapter 11, after ten chapters of teaching have prepared for it. The Vishwarupa arrives as the end point of an argument.</li>
+            <li><strong>He answers the question behind the question.</strong> Arjuna asks: should I fight? Krishna answers that Arjuna has misunderstood death, the self and action, so the question itself is badly posed. He works on the questioner before he answers the question.</li>
+            <li><strong>He moves between the cosmic and the personal.</strong> After the claims of 9.4–10 comes 9.26 (I accept even a leaf). After the philosophy of Chapters 13–17 comes 18.65 (you are dear to me). The teaching stays neither abstract nor sentimental for long.</li>
+            <li><strong>He never removes Arjuna's choice.</strong> At the end of the entire discourse, Krishna explicitly says (18.63): &quot;I have told you wisdom more secret than any secret. Reflect on it fully, then do as you wish.&quot; Near the end of the discourse, the decision is handed back to Arjuna.</li>
+            <li><strong>The ending is quieter than the climax.</strong> Chapter 11 is the Gita&apos;s big spectacle. Krishna&apos;s last instruction, 18.66, is one short verse of personal assurance, and the Gita itself closes with Sanjaya&apos;s words in 18.78.</li>
           </ul>
         </div>
-
+        <p className="errata-note" style={{ fontSize: '13px', fontStyle: 'italic', opacity: 0.7 }}>Revised October 2026: corrected the hexad names (karma, bhakti, jnana), 9.4 (all beings rest in Krishna, he is not in them), the 1.1 note, and the description of how the Gita ends (18.66 is Krishna&apos;s last instruction; 18.78 is the last verse); copy edited.</p>
         <VerseFunnelCTA variant="chapter" locale="en" pageName={"Gita Complete Structure"} />
 
 
@@ -766,32 +762,32 @@ export default function CompleteStructurePage() {
 
           <div className="faq-item">
             <div className="faq-q">How is the Bhagavad Gita structured?</div>
-            <div className="faq-a">The Gita's 18 chapters fall into three broad movements. Chapters 1–6 deal with action, duty, and the self, the practical foundation. Chapters 7–12 shift register dramatically: Krishna reveals his divine nature, culminating in the Vishwarupa (cosmic form) of Chapter 11. Chapters 13–18 systematise and deepen, the field and its knower, the three gunas, divine and demonic natures, and the grand synthesis of Chapter 18. The arc runs from crisis, through philosophical foundation, through cosmic revelation, to intimate surrender.</div>
+            <div className="faq-a">The Gita's 18 chapters fall into three broad movements. Chapters 1–6 deal with action, duty, and the self, the practical foundation. In Chapters 7–12 Krishna describes his own nature, and in Chapter 11 he shows Arjuna the Vishwarupa, his cosmic form. Chapters 13–18 go back over the earlier teachings: the field and its knower, the three gunas, the divine and demonic natures, and the summing-up of Chapter 18.</div>
           </div>
 
           <div className="faq-item">
             <div className="faq-q">What is the climax of the Bhagavad Gita?</div>
-            <div className="faq-a">Chapter 11, the Vishwarupa Darshana Yoga, is the Gita's dramatic climax. Arjuna asks to see Krishna's universal form. He is given divine sight. He sees the entire cosmos, all gods, all beings, all time, within Krishna. He sees warriors already dead before the battle begins. He sees Krishna as Kala (Time) itself. Arjuna is overwhelmed and begs Krishna to return to his human form. But the Gita's most important verse, 18.66, comes seven chapters later, almost in a whisper.</div>
+            <div className="faq-a">Chapter 11, the Vishwarupa Darshana Yoga, is the Gita's dramatic climax. Arjuna asks to see Krishna's universal form. He is given divine sight. He sees the entire cosmos, all gods, all beings, all time, within Krishna. He sees warriors already dead before the battle begins. He sees Krishna as Kala, time (11.32). Arjuna is overwhelmed and begs Krishna to return to his human form. Krishna&apos;s last instruction, 18.66, comes seven chapters later.</div>
           </div>
 
           <div className="faq-item">
             <div className="faq-q">What is the final teaching of the Bhagavad Gita?</div>
-            <div className="faq-a">The final teaching is 18.66: "Abandon all dharmas and take refuge in me alone. I will free you from all papa. Do not grieve." This is the most radical verse in the Gita, and the most intimate. After 17 chapters of philosophy, yoga, cosmic revelation, and metaphysics, Krishna's last instruction is not a technique or a path. It is a relationship. Trust me completely. I will handle the rest.</div>
+            <div className="faq-a">The final teaching is 18.66: &quot;Abandon all dharmas and take refuge in me alone. I will free you from all sin. Do not grieve.&quot; Krishna introduces it in 18.64 as sarva-guhyatamam, the secret of secrets. After 17 chapters of philosophy, yoga and the cosmic vision, his last instruction asks Arjuna to trust him.</div>
           </div>
 
           <div className="faq-item">
             <div className="faq-q">What are the three sections of the Bhagavad Gita?</div>
-            <div className="faq-a">The Gita is traditionally divided into three hexads: (1) Chapters 1–6, the Karma/Jnana Kanda, focused on action, self-knowledge, and meditation; (2) Chapters 7–12, the Bhakti Kanda, focused on devotion, the nature of the Divine, and the cosmic form; (3) Chapters 13–18, the Jnana-Vijnana Kanda, focused on deeper metaphysical distinctions. The arc tracks the shift from practical ethics, to theological revelation, to systematic philosophy and final surrender.</div>
+            <div className="faq-a">The Gita is traditionally divided into three hexads: (1) Chapters 1–6, the Karma Kanda, on action, the self and meditation; (2) Chapters 7–12, the Bhakti Kanda, on devotion, Krishna&apos;s nature and the cosmic form; (3) Chapters 13–18, the Jnana Kanda, on the field and its knower, the gunas and the summing-up. The divisions overlap, but they track a move from practical ethics to devotion to philosophy.</div>
           </div>
 
           <div className="faq-item">
             <div className="faq-q">What does Arjuna say at the end of the Bhagavad Gita?</div>
-            <div className="faq-a">Arjuna's final words are verse 18.73: "My delusion is destroyed. By your grace, my memory has returned. I am free of doubt. I am steady. I will act according to your word." The Gita begins with Arjuna sitting down, putting his bow away, overwhelmed and refusing to act. It ends with him standing up, resolute, ready. The discourse hasn't changed the situation, the armies are still there. But the man who faces them is completely different.</div>
+            <div className="faq-a">Arjuna's final words are verse 18.73: "My delusion is destroyed. By your grace, my memory has returned. I am free of doubt. I am steady. I will act according to your word." At the end of Chapter 1 Arjuna sits down in his chariot and drops his bow (1.47). In 18.73 he says he will do as Krishna says. The armies are the same ones.</div>
           </div>
 
           <div className="faq-item">
             <div className="faq-q">Why does the Gita keep going after Chapter 11?</div>
-            <div className="faq-a">Because the cosmic vision alone is not enough. Arjuna has been shown what Krishna is. But knowledge of what someone is doesn't automatically tell you how to relate to them or how to live with that knowledge. Chapters 12–18 are the Gita's answer to the question: now that you've seen the truth, what do you do with it? They systematise the earlier teachings, deepen the metaphysics, and arrive at the most personal teaching of all, not a framework, but a complete surrender of self.</div>
+            <div className="faq-a">Arjuna has seen what Krishna is, but that doesn&apos;t tell him how to relate to Krishna or how to live. Chapter 12 opens with Arjuna asking which kind of devotee is better, and Chapters 13–18 go back over the earlier teachings before ending in the surrender of 18.66.</div>
           </div>
         </div>
 
@@ -801,23 +797,23 @@ export default function CompleteStructurePage() {
           <div className="related-grid">
             <a href="/blogs/bhagwat-geeta-chapter-1" className="related-card">
               <div className="related-card-label">Chapter 1 · 47 verses</div>
-              <div className="related-card-title">Arjuna Vishada Yoga, When the Warrior Sat Down</div>
+              <div className="related-card-title">Arjuna Vishada Yoga: When the Warrior Sat Down</div>
             </a>
             <a href="/blogs/bhagwat-geeta-chapter-2" className="related-card">
               <div className="related-card-label">Chapter 2 · 72 verses</div>
-              <div className="related-card-title">Sankhya Yoga, The Chapter That Changes Everything</div>
+              <div className="related-card-title">Sankhya Yoga: The Self and Action</div>
             </a>
             <a href="/blogs/bhagwat-geeta-chapter-3" className="related-card">
               <div className="related-card-label">Chapter 3 · 43 verses</div>
-              <div className="related-card-title">Karma Yoga, Why You Cannot Run</div>
+              <div className="related-card-title">Karma Yoga: Why You Cannot Stop Acting</div>
             </a>
             <a href="/blogs/bhagwat-geeta-chapter-4" className="related-card">
               <div className="related-card-label">Chapter 4 · 42 verses</div>
-              <div className="related-card-title">Jnana Yoga, The Fire That Burns Karma</div>
+              <div className="related-card-title">Jnana Karma Sanyasa Yoga: The Fire That Burns Karma</div>
             </a>
             <a href="/blogs/bhagwat-geeta-chapter-5" className="related-card">
               <div className="related-card-label">Chapter 5 · 29 verses</div>
-              <div className="related-card-title">Karma Sanyasa, How to Act Without Being Touched</div>
+              <div className="related-card-title">Karma Sanyasa Yoga: Acting Without Being Touched</div>
             </a>
             <a href="/blogs/bhagavad-gita-for-beginners" className="related-card">
               <div className="related-card-label">Beginner's Guide</div>
@@ -830,11 +826,11 @@ export default function CompleteStructurePage() {
     </div>
 
     <footer>
-      <p>Wisdom App · <span>Daily shlokas from the Bhagavad Gita & Hindu scriptures</span> · Free on iPhone</p>
+      <p>Wisdom App · <span>One Gita verse a day for 7 days, read aloud</span> · Week 1 free on iPhone</p>
       <p style={{marginTop: '8px'}}>
         <a href="/">wisdomquotes.in</a>  · 
         <a href="/blogs">Blog</a>  · 
-        <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Download Free</a>
+        <a href={appStoreUrl('web_blog_footer')} target="_blank" rel="noopener" data-mp-location="footer">Get the app</a>
       </p>
     </footer>
 
